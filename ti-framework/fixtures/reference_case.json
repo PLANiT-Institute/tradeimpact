@@ -1,0 +1,140 @@
+{
+  "firm": "ReferenceCo",
+  "cohort_year": 2024,
+  "analysis_level": "Level 1",
+  "layer1_method": "B",
+  "config": {
+    "scenarios": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "flag_market_rule": "exclude"
+  },
+  "support": {
+    "lifetime_T": 15,
+    "lifetime_sens": 3,
+    "vkt": {
+      "KR": 13000.0,
+      "EU": 12000.0
+    },
+    "uf_band": 0.15,
+    "realworld_range": [
+      0.95,
+      1.25
+    ]
+  },
+  "countries": {
+    "KR": {
+      "name": "South Korea",
+      "grid_intensity": 0.41551,
+      "fleet_intensity_base": 0.165,
+      "r_fleet": {
+        "s1": 0.025,
+        "s2": 0.043441272053699,
+        "s3": 0.07
+      },
+      "r_power": {
+        "s1": 0.03,
+        "s2": 0.05,
+        "s3": 0.09
+      },
+      "status": "COMPUTED",
+      "tier": "A"
+    },
+    "EU": {
+      "name": "European Union",
+      "grid_intensity": 0.21135,
+      "fleet_intensity_base": 0.14,
+      "r_fleet": {
+        "s1": 0.02,
+        "s2": 0.023848569511212,
+        "s3": 0.06
+      },
+      "r_power": {
+        "s1": 0.03,
+        "s2": 0.045,
+        "s3": 0.085
+      },
+      "status": "COMPUTED",
+      "tier": "A"
+    }
+  },
+  "placements": [
+    {
+      "country": "KR",
+      "brand": "Hyundai",
+      "model": "Ioniq5",
+      "powertrain": "BEV",
+      "eta_ev": 0.18,
+      "units": 50000,
+      "tier": "A"
+    },
+    {
+      "country": "KR",
+      "brand": "Hyundai",
+      "model": "Sonata",
+      "powertrain": "ICE",
+      "ice_intensity": 0.16,
+      "units": 50000,
+      "tier": "A"
+    },
+    {
+      "country": "KR",
+      "brand": "Kia",
+      "model": "Sorento",
+      "powertrain": "PHEV",
+      "uf": 0.4,
+      "eta_elec": 0.2,
+      "ice_mode_intensity": 0.18,
+      "units": 20000,
+      "tier": "A"
+    },
+    {
+      "country": "EU",
+      "brand": "Hyundai",
+      "model": "Kona",
+      "powertrain": "BEV",
+      "eta_ev": 0.165,
+      "units": 30000,
+      "tier": "A"
+    }
+  ],
+  "expected": {
+    "cohorts": {
+      "S1": 1077486.453647,
+      "S2": 788686.618125,
+      "S3": 375478.129345
+    },
+    "vehicles": [
+      {
+        "country": "KR",
+        "powertrain": "BEV",
+        "scenario": "S2",
+        "cumulative": 13577.313903
+      },
+      {
+        "country": "KR",
+        "powertrain": "ICE",
+        "scenario": "S2",
+        "cumulative": -7185.918204
+      },
+      {
+        "country": "KR",
+        "powertrain": "PHEV",
+        "scenario": "S2",
+        "cumulative": -1684.481712
+      },
+      {
+        "country": "EU",
+        "powertrain": "BEV",
+        "scenario": "S2",
+        "cumulative": 16760.21558
+      }
+    ],
+    "crossover": {
+      "KR_ICE_S2": 0.6929,
+      "KR_BEV_S2": 115.002
+    }
+  }
+}
