@@ -35,8 +35,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               Trade Impact <span>· PLANiT Institute</span>
             </Link>
             <nav className="topnav">
-              <Link href="/">Firms</Link>
-              <Link href="/calculator">Calculator</Link>
+              <Link href="/">Assessments</Link>
+              <Link href="/calculator">Assumptions</Link>
               <a href="https://transitionarc.climatearc.org">Methodology</a>
             </nav>
           </header>

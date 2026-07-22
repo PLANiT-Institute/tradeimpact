@@ -3,41 +3,44 @@
   "cohort_year": 2024,
   "cohorts": {
     "S1": {
-      "total_tCO2e": 1878832.878494715,
-      "direction": "contribution",
-      "directional_only": false,
+      "total_tCO2e": -1246763.1582684421,
+      "direction": "liability",
+      "directional_only": true,
       "by_country": {
         "KR": -1302061.266039705,
         "EU": -46519.8265139281,
         "AU": -46546.64869902027,
-        "US": 3273960.6197473686
+        "US": 3273960.6197473686,
+        "IN": -2137923.24482546,
+        "CN": -987672.7919376974
       },
       "by_powertrain": {
-        "ICE": -7363879.957334636,
+        "ICE": -10632591.899016242,
         "HEV": 3085995.8817523923,
-        "BEV": 5790416.296239629,
+        "BEV": 5933532.201158078,
         "PHEV": 366300.6578373285
       },
       "annual_tCO2e": [
-        625883.67408,
-        549330.6350760001,
-        474001.6758834002,
-        399875.2510904101,
-        326930.18966983916,
-        255145.69019185036,
-        184501.31598479146,
-        114976.99025274183,
-        46552.99115787998,
-        -20790.053124761394,
-        -87071.16937305756,
-        -152309.04429745005,
-        -216522.02952832336,
-        -279728.1466053285,
-        -341945.09196327714
+        502361.71408000006,
+        412885.1076760001,
+        324827.5034824003,
+        238163.94484034515,
+        152869.90915367292,
+        68921.30216741927,
+        -13705.547795834078,
+        -95033.89563300993,
+        -175086.58528277845,
+        -253886.05556533477,
+        -331454.3460325349,
+        -407813.102821706,
+        -482983.58450689155,
+        -556986.667941719,
+        -629842.8540884714
       ],
       "excluded_flag_markets": {},
       "warnings": [
-        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded.",
+        "TIER_C_SUPPRESSION: Tier-C volume share 60% exceeds threshold 50%; emit directional label only."
       ]
     },
     "S2": {
@@ -73,68 +76,73 @@
         -712806.7491761906
       ],
       "excluded_flag_markets": {
-        "US": "No active NDC — no S2 benchmark derivable"
+        "US": "No active NDC — no S2 benchmark derivable",
+        "IN": "GDP-intensity target — not an absolute emissions path",
+        "CN": "Target vs undefined emissions peak"
       },
       "warnings": [
         "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
       ]
     },
     "S3": {
-      "total_tCO2e": -16961520.96299264,
+      "total_tCO2e": -24345035.62176712,
       "direction": "liability",
-      "directional_only": false,
+      "directional_only": true,
       "by_country": {
         "KR": -5399587.46272253,
         "EU": -3113055.0229714396,
         "AU": -560802.7339801167,
-        "US": -7888075.743318549
+        "US": -7888075.743318549,
+        "IN": -5003206.463389157,
+        "CN": -2380308.1953853215
       },
       "by_powertrain": {
-        "ICE": -20801673.24753391,
+        "ICE": -28327401.73265889,
         "HEV": -801489.1437301813,
-        "BEV": 4577506.88820298,
+        "BEV": 4719720.714553478,
         "PHEV": 64134.54006847466
       },
       "annual_tCO2e": [
-        625883.67408,
-        307554.36852120014,
-        7536.792190218335,
-        -275203.8961645752,
-        -541646.324285925,
-        -792715.6999290832,
-        -1029286.4954235166,
-        -1252185.0238394553,
-        -1462191.907896872,
-        -1660044.4432317154,
-        -1846438.8580276202,
-        -2022032.471341482,
-        -2187445.7527075545,
-        -2343264.285805532,
-        -2490040.6391307237
+        502361.71408000006,
+        118444.68652120019,
+        -243693.0469897817,
+        -585267.4355223753,
+        -907429.0386351233,
+        -1211266.2527830936,
+        -1497808.411886322,
+        -1768028.7628702964,
+        -2022847.317616393,
+        -2263133.5832816293,
+        -2489709.1733762654,
+        -2703350.302336396,
+        -2904790.166606879,
+        -3094721.215467146,
+        -3273797.314996613
       ],
       "excluded_flag_markets": {},
       "warnings": [
-        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded.",
+        "TIER_C_SUPPRESSION: Tier-C volume share 60% exceeds threshold 50%; emit directional label only."
       ]
     }
   },
   "portfolio": {
     "S1": [
-      625883.67408,
-      1175214.3091560001,
-      1649215.9850394004,
-      2049091.2361298106,
-      2376021.4257996497,
-      2631167.1159915,
-      2815668.431976292,
-      2930645.4222290334,
-      2977198.4133869135,
-      2956408.3602621523,
-      2869337.1908890945,
-      2717028.1465916443,
-      2500506.1170633207,
-      2220777.970457992,
-      1878832.8784947149
+      502361.71408000006,
+      915246.8217560002,
+      1240074.3252384006,
+      1478238.2700787457,
+      1631108.1792324185,
+      1700029.4813998379,
+      1686323.9336040039,
+      1591290.037970994,
+      1416203.4526882155,
+      1162317.3971228807,
+      830863.0510903457,
+      423049.94826863974,
+      -59933.63623825181,
+      -616920.3041799708,
+      -1246763.1582684421
     ],
     "S2": [
       204064.60008000012,
@@ -154,21 +162,21 @@
       -4380279.648561381
     ],
     "S3": [
-      625883.67408,
-      933438.0426012002,
-      940974.8347914185,
-      665770.9386268433,
-      124124.61434091826,
-      -668591.085588165,
-      -1697877.5810116816,
-      -2950062.604851137,
-      -4412254.512748009,
-      -6072298.9559797235,
-      -7918737.814007344,
-      -9940770.285348825,
-      -12128216.03805638,
-      -14471480.323861912,
-      -16961520.962992635
+      502361.71408000006,
+      620806.4006012003,
+      377113.3536114186,
+      -208154.08191095665,
+      -1115583.12054608,
+      -2326849.373329174,
+      -3824657.785215496,
+      -5592686.548085792,
+      -7615533.865702185,
+      -9878667.448983815,
+      -12368376.62236008,
+      -15071726.924696477,
+      -17976517.091303356,
+      -21071238.306770504,
+      -24345035.62176712
     ]
   },
   "crossover": [
@@ -291,6 +299,38 @@
       "crossover_year": null,
       "reason": "no sign change over lifetime",
       "TI_per_vehicle_kgCO2e": 19297.62307428855
+    },
+    {
+      "country": "IN",
+      "powertrain": "ICE",
+      "scenario": "S1",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -3667.931892765253
+    },
+    {
+      "country": "IN",
+      "powertrain": "BEV",
+      "scenario": "S1",
+      "crossover_year": 7.991833232093283,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 2615.6571906039126
+    },
+    {
+      "country": "CN",
+      "powertrain": "ICE",
+      "scenario": "S1",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -4602.633853958778
+    },
+    {
+      "country": "CN",
+      "powertrain": "BEV",
+      "scenario": "S1",
+      "crossover_year": 34.1951503784556,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 11695.933301240922
     },
     {
       "country": "KR",
@@ -499,6 +539,38 @@
       "crossover_year": null,
       "reason": "no sign change over lifetime",
       "TI_per_vehicle_kgCO2e": 9910.887315923625
+    },
+    {
+      "country": "IN",
+      "powertrain": "ICE",
+      "scenario": "S3",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -8545.57198415359
+    },
+    {
+      "country": "IN",
+      "powertrain": "BEV",
+      "scenario": "S3",
+      "crossover_year": 1.8765965069344066,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 3868.100726146161
+    },
+    {
+      "country": "CN",
+      "powertrain": "ICE",
+      "scenario": "S3",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -10349.337560309827
+    },
+    {
+      "country": "CN",
+      "powertrain": "BEV",
+      "scenario": "S3",
+      "crossover_year": 12.129256629807648,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 10353.28190890368
     }
   ],
   "data_quality": {
@@ -510,7 +582,9 @@
       "KR": "B",
       "EU": "B",
       "AU": "B",
-      "US": "C"
+      "US": "C",
+      "CN": "C",
+      "IN": "C"
     },
     "layer2_tiers": {
       "Hyundai ICE mix (Avante/Sonata/SUV)": "B",
@@ -524,13 +598,19 @@
       "Hyundai ICE mix": "B",
       "Hyundai Ioniq5 / Kona EV": "C",
       "Hyundai ICE mix (incl. SUV)": "B",
-      "Hyundai Ioniq5/6": "B"
+      "Hyundai Ioniq5/6": "B",
+      "Hyundai ICE mix (Creta/i20/Venue)": "B",
+      "Hyundai Ioniq5/Creta EV": "C",
+      "Hyundai ICE mix (Beijing-Hyundai)": "C",
+      "Hyundai BEV mix": "C"
     },
     "volume_tiers": {
       "KR": "A",
       "EU": "A",
       "AU": "A",
-      "US": "A"
+      "US": "A",
+      "IN": "A",
+      "CN": "A"
     },
     "lifetime_T": 15,
     "lifetime_sens": 3,
@@ -541,79 +621,82 @@
     },
     "missing_inputs": [],
     "warnings": [
-      "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+      "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded.",
+      "TIER_C_SUPPRESSION: Tier-C volume share 60% exceeds threshold 50%; emit directional label only."
     ],
     "flag_markets": {
-      "US": "No active NDC — no S2 benchmark derivable"
+      "US": "No active NDC — no S2 benchmark derivable",
+      "IN": "GDP-intensity target — not an absolute emissions path",
+      "CN": "Target vs undefined emissions peak"
     }
   },
   "sensitivity": {
     "lifetime": {
       "T_minus": {
-        "S1": 2717028.146591644,
+        "S1": 423049.94826863916,
         "S2": -2395576.890204952,
-        "S3": -9940770.285348827
+        "S3": -15071726.924696479
       },
       "T_central": {
-        "S1": 1878832.878494715,
+        "S1": -1246763.1582684421,
         "S2": -4380279.648561381,
-        "S3": -16961520.96299264
+        "S3": -24345035.62176712
       },
       "T_plus": {
-        "S1": 489328.8890667098,
+        "S1": -3562259.64774495,
         "S2": -6804010.173706683,
-        "S3": -25229523.57993842
+        "S3": -35141389.31760442
       }
     },
     "uf": {
       "UF_central": {
-        "S1": 1878832.878494715,
+        "S1": -1246763.1582684421,
         "S2": -4380279.648561381,
-        "S3": -16961520.96299264
+        "S3": -24345035.62176712
       },
       "UF_lower": {
-        "S1": 1723043.0118279154,
+        "S1": -1402553.024935242,
         "S2": -4498439.209210716,
-        "S3": -17142158.944643866
+        "S3": -24525673.603418343
       },
       "UF_upper": {
-        "S1": 2034622.7451615147,
+        "S1": -1090973.2916016427,
         "S2": -4262120.0879120445,
-        "S3": -16780882.981341414
+        "S3": -24164397.640115894
       }
     },
     "realworld": {
       "RW_low": {
-        "S1": 5693438.530975209,
+        "S1": 3602801.4160927692,
         "S2": -2695066.918607313,
-        "S3": -13202232.38410789
+        "S3": -19556055.188972123
       },
       "RW_central": {
-        "S1": 1878832.878494715,
+        "S1": -1246763.1582684421,
         "S2": -4380279.648561381,
-        "S3": -16961520.96299264
+        "S3": -24345035.62176712
       },
       "RW_high": {
-        "S1": -17194195.38390773,
+        "S1": -25494586.03007447,
         "S2": -12806343.298331704,
-        "S3": -35757963.85741635
+        "S3": -48289937.785742044
       }
     },
     "scenario_spread": {
-      "S1": 1878832.878494715,
+      "S1": -1246763.1582684421,
       "S2": -4380279.648561381,
-      "S3": -16961520.96299264
+      "S3": -24345035.62176712
     },
     "sector_split": {
       "uncorrected": {
-        "S1": 1878832.878494715,
+        "S1": -1246763.1582684421,
         "S2": -4380279.648561381,
-        "S3": -16961520.96299264
+        "S3": -24345035.62176712
       },
       "corrected": {
-        "S1": 1878832.878494715,
+        "S1": -1246763.1582684421,
         "S2": -4380279.648561381,
-        "S3": -16961520.96299264
+        "S3": -24345035.62176712
       }
     }
   },
@@ -637,7 +720,9 @@
         "KR": 13000.0,
         "EU": 12000.0,
         "AU": 13800.0,
-        "US": 18000.0
+        "US": 18000.0,
+        "CN": 12000.0,
+        "IN": 10000.0
       },
       "uf_band": 0.15,
       "realworld_range": [
@@ -724,6 +809,38 @@
         "status": "FLAG_NO_BENCHMARK",
         "tier": "C",
         "source": "No active NDC (revoked) — no S2 benchmark derivable (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
+      },
+      "CN": {
+        "name": "China",
+        "grid_intensity": 0.5554,
+        "fleet_intensity_base": 0.16,
+        "r_fleet": {
+          "s1": 0.02,
+          "s3": 0.06
+        },
+        "r_power": {
+          "s1": 0.035,
+          "s3": 0.1
+        },
+        "status": "FLAG_PEAK",
+        "tier": "C",
+        "source": "2035 target vs undefined emissions peak — no S2 benchmark derivable (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
+      },
+      "IN": {
+        "name": "India",
+        "grid_intensity": 0.7054,
+        "fleet_intensity_base": 0.13,
+        "r_fleet": {
+          "s1": 0.005,
+          "s3": 0.05
+        },
+        "r_power": {
+          "s1": 0.015,
+          "s3": 0.09
+        },
+        "status": "FLAG_INTENSITY",
+        "tier": "C",
+        "source": "GDP-intensity target — not an absolute emissions path (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
       }
     },
     "placements": [
@@ -882,13 +999,53 @@
         "units": 10000,
         "tier": "C",
         "source": "SAE J2841 UF; overstatement caveat"
+      },
+      {
+        "country": "IN",
+        "brand": "Hyundai",
+        "model": "ICE mix (Creta/i20/Venue)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.15,
+        "units": 590000,
+        "tier": "B",
+        "source": "SIAM/HMIL 2024 rough"
+      },
+      {
+        "country": "IN",
+        "brand": "Hyundai",
+        "model": "Ioniq5/Creta EV",
+        "powertrain": "BEV",
+        "eta_ev": 0.17,
+        "units": 10000,
+        "tier": "C",
+        "source": "rough"
+      },
+      {
+        "country": "CN",
+        "brand": "Hyundai",
+        "model": "ICE mix (Beijing-Hyundai)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.165,
+        "units": 240000,
+        "tier": "C",
+        "source": "press 2024 rough"
+      },
+      {
+        "country": "CN",
+        "brand": "Hyundai",
+        "model": "BEV mix",
+        "powertrain": "BEV",
+        "eta_ev": 0.17,
+        "units": 10000,
+        "tier": "C",
+        "source": "rough"
       }
     ]
   },
   "provenance": {
     "engine_version": "0.1.0",
-    "engine_git_sha": "c55eca77fb18d4edf2a4dfa3940c4a5e776b4e65",
+    "engine_git_sha": "eabc23a5d646d3a211fbf90b3407dadea4b30423",
     "workbook": "TI_Data_Workbook_v0.1.xlsx",
-    "build_date": "2026-07-22T07:48:33+00:00"
+    "build_date": "2026-07-22T10:28:31+00:00"
   }
 }
