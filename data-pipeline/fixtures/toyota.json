@@ -3,21 +3,47 @@
   "cohort_year": 2024,
   "analysis_level": "Level 1",
   "layer1_method": "B",
-  "config": { "scenarios": ["S1", "S2", "S3"], "flag_market_rule": "exclude" },
+  "config": {
+    "scenarios": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "flag_market_rule": "exclude"
+  },
   "support": {
     "lifetime_T": 15,
     "lifetime_sens": 3,
-    "vkt": { "JP": 9500.0, "EU": 12000.0, "AU": 13800.0, "KR": 13000.0, "US": 18000.0 },
+    "vkt": {
+      "JP": 9500.0,
+      "EU": 12000.0,
+      "AU": 13800.0,
+      "KR": 13000.0,
+      "US": 18000.0,
+      "CN": 12000.0,
+      "IN": 10000.0
+    },
     "uf_band": 0.15,
-    "realworld_range": [0.95, 1.25]
+    "realworld_range": [
+      0.95,
+      1.25
+    ]
   },
   "countries": {
     "JP": {
       "name": "Japan",
       "grid_intensity": 0.48343,
       "fleet_intensity_base": 0.15,
-      "r_fleet": { "s1": 0.024, "s2": 0.0407941521740232, "s3": 0.065 },
-      "r_power": { "s1": 0.025, "s2": 0.0407941521740232, "s3": 0.08 },
+      "r_fleet": {
+        "s1": 0.024,
+        "s2": 0.0407941521740232,
+        "s3": 0.065
+      },
+      "r_power": {
+        "s1": 0.025,
+        "s2": 0.0407941521740232,
+        "s3": 0.08
+      },
       "status": "COMPUTED",
       "tier": "B",
       "source": "S2: UNFCCC JP 2035 NDC (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C (ESTIMATES.md). Grid: Ember 2024.",
@@ -29,8 +55,16 @@
       "name": "European Union",
       "grid_intensity": 0.21135,
       "fleet_intensity_base": 0.14,
-      "r_fleet": { "s1": 0.014, "s2": 0.023848569511212, "s3": 0.06 },
-      "r_power": { "s1": 0.04, "s2": 0.023848569511212, "s3": 0.1 },
+      "r_fleet": {
+        "s1": 0.014,
+        "s2": 0.023848569511212,
+        "s3": 0.06
+      },
+      "r_power": {
+        "s1": 0.04,
+        "s2": 0.023848569511212,
+        "s3": 0.1
+      },
       "status": "COMPUTED",
       "tier": "B",
       "source": "S2: UNFCCC EU 2035 NDC (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
@@ -42,8 +76,16 @@
       "name": "Australia",
       "grid_intensity": 0.55383,
       "fleet_intensity_base": 0.185,
-      "r_fleet": { "s1": 0.019, "s2": 0.0317382262873848, "s3": 0.06 },
-      "r_power": { "s1": 0.05, "s2": 0.0317382262873848, "s3": 0.11 },
+      "r_fleet": {
+        "s1": 0.019,
+        "s2": 0.0317382262873848,
+        "s3": 0.06
+      },
+      "r_power": {
+        "s1": 0.05,
+        "s2": 0.0317382262873848,
+        "s3": 0.11
+      },
       "status": "COMPUTED",
       "tier": "B",
       "source": "S2: UNFCCC AU 2nd NDC 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
@@ -55,8 +97,16 @@
       "name": "South Korea",
       "grid_intensity": 0.41551,
       "fleet_intensity_base": 0.165,
-      "r_fleet": { "s1": 0.025, "s2": 0.043441272053699, "s3": 0.07 },
-      "r_power": { "s1": 0.03, "s2": 0.043441272053699, "s3": 0.09 },
+      "r_fleet": {
+        "s1": 0.025,
+        "s2": 0.043441272053699,
+        "s3": 0.07
+      },
+      "r_power": {
+        "s1": 0.03,
+        "s2": 0.043441272053699,
+        "s3": 0.09
+      },
       "status": "COMPUTED",
       "tier": "B",
       "source": "S2: UNFCCC KR 2035 NDC Dec 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
@@ -68,30 +118,277 @@
       "name": "United States",
       "grid_intensity": 0.38378,
       "fleet_intensity_base": 0.2,
-      "r_fleet": { "s1": 0.01, "s3": 0.055 },
-      "r_power": { "s1": 0.02, "s3": 0.095 },
+      "r_fleet": {
+        "s1": 0.01,
+        "s3": 0.055
+      },
+      "r_power": {
+        "s1": 0.02,
+        "s3": 0.095
+      },
       "status": "FLAG_NO_BENCHMARK",
       "tier": "C",
       "source": "No active NDC (revoked) — no S2 benchmark derivable (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
+    },
+    "CN": {
+      "name": "China",
+      "grid_intensity": 0.5554,
+      "fleet_intensity_base": 0.16,
+      "r_fleet": {
+        "s1": 0.02,
+        "s3": 0.06
+      },
+      "r_power": {
+        "s1": 0.035,
+        "s3": 0.1
+      },
+      "status": "FLAG_PEAK",
+      "tier": "C",
+      "source": "2035 target vs undefined emissions peak — no S2 benchmark derivable (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
+    },
+    "IN": {
+      "name": "India",
+      "grid_intensity": 0.7054,
+      "fleet_intensity_base": 0.13,
+      "r_fleet": {
+        "s1": 0.005,
+        "s3": 0.05
+      },
+      "r_power": {
+        "s1": 0.015,
+        "s3": 0.09
+      },
+      "status": "FLAG_INTENSITY",
+      "tier": "C",
+      "source": "GDP-intensity target — not an absolute emissions path (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
     }
   },
   "placements": [
-    { "country": "JP", "brand": "Toyota", "model": "HEV mix (Corolla/Yaris/RAV4)", "powertrain": "HEV", "ice_intensity": 0.115, "units": 750000, "tier": "B", "source": "JADA/JAMA 2024 sales, rough powertrain split; WLTC + real-world uplift" },
-    { "country": "JP", "brand": "Toyota", "model": "ICE mix", "powertrain": "ICE", "ice_intensity": 0.17, "units": 600000, "tier": "B", "source": "JADA 2024 rough split" },
-    { "country": "JP", "brand": "Toyota", "model": "bZ4X", "powertrain": "BEV", "eta_ev": 0.18, "units": 20000, "tier": "B", "source": "cert. efficiency + real-world uplift; JADA rough" },
-    { "country": "JP", "brand": "Toyota", "model": "Prius PHEV", "powertrain": "PHEV", "uf": 0.45, "eta_elec": 0.19, "ice_mode_intensity": 0.14, "units": 30000, "tier": "C", "source": "regulatory UF, real-world overstatement caveat applies" },
-    { "country": "EU", "brand": "Toyota", "model": "HEV mix", "powertrain": "HEV", "ice_intensity": 0.11, "units": 800000, "tier": "B", "source": "ACEA/JATO 2024 rough; WLTP + ICCT uplift" },
-    { "country": "EU", "brand": "Toyota", "model": "ICE mix", "powertrain": "ICE", "ice_intensity": 0.16, "units": 280000, "tier": "B", "source": "ACEA 2024 rough" },
-    { "country": "EU", "brand": "Toyota", "model": "bZ4X", "powertrain": "BEV", "eta_ev": 0.175, "units": 40000, "tier": "B", "source": "WLTP + real-world uplift" },
-    { "country": "EU", "brand": "Toyota", "model": "RAV4 PHEV", "powertrain": "PHEV", "uf": 0.45, "eta_elec": 0.2, "ice_mode_intensity": 0.15, "units": 30000, "tier": "C", "source": "WLTP UF; overstatement caveat" },
-    { "country": "AU", "brand": "Toyota", "model": "HEV mix (RAV4/Corolla)", "powertrain": "HEV", "ice_intensity": 0.12, "units": 120000, "tier": "B", "source": "VFACTS 2024 rough" },
-    { "country": "AU", "brand": "Toyota", "model": "ICE mix (incl. HiLux)", "powertrain": "ICE", "ice_intensity": 0.21, "units": 115000, "tier": "B", "source": "VFACTS 2024 rough; ute-heavy mix" },
-    { "country": "AU", "brand": "Toyota", "model": "bZ4X", "powertrain": "BEV", "eta_ev": 0.185, "units": 3000, "tier": "C", "source": "VFACTS rough" },
-    { "country": "KR", "brand": "Toyota", "model": "HEV mix", "powertrain": "HEV", "ice_intensity": 0.115, "units": 8000, "tier": "C", "source": "KAIDA 2024 rough" },
-    { "country": "KR", "brand": "Toyota", "model": "ICE mix", "powertrain": "ICE", "ice_intensity": 0.17, "units": 1000, "tier": "C", "source": "KAIDA 2024 rough" },
-    { "country": "US", "brand": "Toyota", "model": "HEV mix", "powertrain": "HEV", "ice_intensity": 0.125, "units": 700000, "tier": "B", "source": "US sales reports 2024 rough; EPA real-world" },
-    { "country": "US", "brand": "Toyota", "model": "ICE mix (incl. trucks)", "powertrain": "ICE", "ice_intensity": 0.22, "units": 1550000, "tier": "B", "source": "US sales reports 2024 rough" },
-    { "country": "US", "brand": "Toyota", "model": "bZ4X", "powertrain": "BEV", "eta_ev": 0.19, "units": 15000, "tier": "B", "source": "EPA + sales reports rough" },
-    { "country": "US", "brand": "Toyota", "model": "RAV4 Prime", "powertrain": "PHEV", "uf": 0.5, "eta_elec": 0.2, "ice_mode_intensity": 0.15, "units": 40000, "tier": "C", "source": "SAE J2841 UF; overstatement caveat" }
+    {
+      "country": "JP",
+      "brand": "Toyota",
+      "model": "HEV mix (Corolla/Yaris/RAV4)",
+      "powertrain": "HEV",
+      "ice_intensity": 0.115,
+      "units": 750000,
+      "tier": "B",
+      "source": "JADA/JAMA 2024 sales, rough powertrain split; WLTC + real-world uplift"
+    },
+    {
+      "country": "JP",
+      "brand": "Toyota",
+      "model": "ICE mix",
+      "powertrain": "ICE",
+      "ice_intensity": 0.17,
+      "units": 600000,
+      "tier": "B",
+      "source": "JADA 2024 rough split"
+    },
+    {
+      "country": "JP",
+      "brand": "Toyota",
+      "model": "bZ4X",
+      "powertrain": "BEV",
+      "eta_ev": 0.18,
+      "units": 20000,
+      "tier": "B",
+      "source": "cert. efficiency + real-world uplift; JADA rough"
+    },
+    {
+      "country": "JP",
+      "brand": "Toyota",
+      "model": "Prius PHEV",
+      "powertrain": "PHEV",
+      "uf": 0.45,
+      "eta_elec": 0.19,
+      "ice_mode_intensity": 0.14,
+      "units": 30000,
+      "tier": "C",
+      "source": "regulatory UF, real-world overstatement caveat applies"
+    },
+    {
+      "country": "EU",
+      "brand": "Toyota",
+      "model": "HEV mix",
+      "powertrain": "HEV",
+      "ice_intensity": 0.11,
+      "units": 800000,
+      "tier": "B",
+      "source": "ACEA/JATO 2024 rough; WLTP + ICCT uplift"
+    },
+    {
+      "country": "EU",
+      "brand": "Toyota",
+      "model": "ICE mix",
+      "powertrain": "ICE",
+      "ice_intensity": 0.16,
+      "units": 280000,
+      "tier": "B",
+      "source": "ACEA 2024 rough"
+    },
+    {
+      "country": "EU",
+      "brand": "Toyota",
+      "model": "bZ4X",
+      "powertrain": "BEV",
+      "eta_ev": 0.175,
+      "units": 40000,
+      "tier": "B",
+      "source": "WLTP + real-world uplift"
+    },
+    {
+      "country": "EU",
+      "brand": "Toyota",
+      "model": "RAV4 PHEV",
+      "powertrain": "PHEV",
+      "uf": 0.45,
+      "eta_elec": 0.2,
+      "ice_mode_intensity": 0.15,
+      "units": 30000,
+      "tier": "C",
+      "source": "WLTP UF; overstatement caveat"
+    },
+    {
+      "country": "AU",
+      "brand": "Toyota",
+      "model": "HEV mix (RAV4/Corolla)",
+      "powertrain": "HEV",
+      "ice_intensity": 0.12,
+      "units": 120000,
+      "tier": "B",
+      "source": "VFACTS 2024 rough"
+    },
+    {
+      "country": "AU",
+      "brand": "Toyota",
+      "model": "ICE mix (incl. HiLux)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.21,
+      "units": 115000,
+      "tier": "B",
+      "source": "VFACTS 2024 rough; ute-heavy mix"
+    },
+    {
+      "country": "AU",
+      "brand": "Toyota",
+      "model": "bZ4X",
+      "powertrain": "BEV",
+      "eta_ev": 0.185,
+      "units": 3000,
+      "tier": "C",
+      "source": "VFACTS rough"
+    },
+    {
+      "country": "KR",
+      "brand": "Toyota",
+      "model": "HEV mix",
+      "powertrain": "HEV",
+      "ice_intensity": 0.115,
+      "units": 8000,
+      "tier": "C",
+      "source": "KAIDA 2024 rough"
+    },
+    {
+      "country": "KR",
+      "brand": "Toyota",
+      "model": "ICE mix",
+      "powertrain": "ICE",
+      "ice_intensity": 0.17,
+      "units": 1000,
+      "tier": "C",
+      "source": "KAIDA 2024 rough"
+    },
+    {
+      "country": "US",
+      "brand": "Toyota",
+      "model": "HEV mix",
+      "powertrain": "HEV",
+      "ice_intensity": 0.125,
+      "units": 700000,
+      "tier": "B",
+      "source": "US sales reports 2024 rough; EPA real-world"
+    },
+    {
+      "country": "US",
+      "brand": "Toyota",
+      "model": "ICE mix (incl. trucks)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.22,
+      "units": 1550000,
+      "tier": "B",
+      "source": "US sales reports 2024 rough"
+    },
+    {
+      "country": "US",
+      "brand": "Toyota",
+      "model": "bZ4X",
+      "powertrain": "BEV",
+      "eta_ev": 0.19,
+      "units": 15000,
+      "tier": "B",
+      "source": "EPA + sales reports rough"
+    },
+    {
+      "country": "US",
+      "brand": "Toyota",
+      "model": "RAV4 Prime",
+      "powertrain": "PHEV",
+      "uf": 0.5,
+      "eta_elec": 0.2,
+      "ice_mode_intensity": 0.15,
+      "units": 40000,
+      "tier": "C",
+      "source": "SAE J2841 UF; overstatement caveat"
+    },
+    {
+      "country": "CN",
+      "brand": "Toyota",
+      "model": "ICE mix",
+      "powertrain": "ICE",
+      "ice_intensity": 0.175,
+      "units": 1300000,
+      "tier": "C",
+      "source": "CAAM/press 2024 rough split"
+    },
+    {
+      "country": "CN",
+      "brand": "Toyota",
+      "model": "HEV mix",
+      "powertrain": "HEV",
+      "ice_intensity": 0.12,
+      "units": 450000,
+      "tier": "C",
+      "source": "CAAM/press 2024 rough"
+    },
+    {
+      "country": "CN",
+      "brand": "Toyota",
+      "model": "bZ series",
+      "powertrain": "BEV",
+      "eta_ev": 0.17,
+      "units": 30000,
+      "tier": "C",
+      "source": "rough"
+    },
+    {
+      "country": "IN",
+      "brand": "Toyota",
+      "model": "ICE mix (Innova/Glanza)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.16,
+      "units": 220000,
+      "tier": "C",
+      "source": "SIAM 2024 rough"
+    },
+    {
+      "country": "IN",
+      "brand": "Toyota",
+      "model": "HEV mix (Hyryder)",
+      "powertrain": "HEV",
+      "ice_intensity": 0.11,
+      "units": 30000,
+      "tier": "C",
+      "source": "SIAM 2024 rough"
+    }
   ]
 }

@@ -1,7 +1,71 @@
 import Link from "next/link";
 import GapHero from "@/components/GapHero";
 import { getCountryViews } from "@/lib/country";
-import { getFirms, getMeta } from "@/lib/data";
+import { fmtTI, getFirmResult, getFirms, getMeta, SCENARIOS } from "@/lib/data";
+
+function FirmTable() {
+  const rows = getFirms()
+    .filter((f) => f.runnable && !f.illustrative)
+    .map((f) => ({ f, r: getFirmResult(f.slug) }));
+  return (
+    <div className="panel table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Firm</th>
+            <th>Markets</th>
+            <th className="num">S1 STEPS</th>
+            <th className="num">S2 NDC (headline)</th>
+            <th className="num">S3 NZE</th>
+            <th>Direction (S2)</th>
+            <th>Basis</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map(({ f, r }) => {
+            const excl = Object.keys(r.cohorts.S2?.excluded_flag_markets ?? {});
+            const markets = new Set<string>();
+            for (const s of SCENARIOS)
+              for (const c of Object.keys(r.cohorts[s]?.by_country ?? {})) markets.add(c);
+            const s2 = r.cohorts.S2?.total_tCO2e;
+            return (
+              <tr key={f.slug}>
+                <td>
+                  <Link href={`/report/${f.slug}`}>
+                    <strong>{r.firm}</strong>
+                  </Link>
+                </td>
+                <td className="mono" style={{ fontSize: 12.5 }}>
+                  {[...markets].join(" ")}
+                  {excl.length > 0 && (
+                    <span style={{ color: "var(--ink-3)" }}> (S2 excl. {excl.join(" ")})</span>
+                  )}
+                </td>
+                {SCENARIOS.map((s) => (
+                  <td className="num" key={s}>
+                    {r.cohorts[s] ? fmtTI(r.cohorts[s].total_tCO2e) : "—"}
+                  </td>
+                ))}
+                <td>
+                  <span className={`direction-chip ${(s2 ?? 0) >= 0 ? "pos" : "neg"}`}>
+                    {(s2 ?? 0) >= 0 ? "net contribution" : "net lock-in liability"}
+                  </span>
+                </td>
+                <td style={{ fontSize: 13, color: "var(--ink-3)" }}>
+                  {f.basis === "estimated" ? "Tier B/C estimates" : "collected"}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <p className="panel-note" style={{ marginTop: 10 }}>
+        tCO₂e over the 2024 cohort&apos;s lifetime. Values are per-firm comparisons
+        against shared benchmarks — not summable across firms (Whitepaper §9.2).
+      </p>
+    </div>
+  );
+}
 
 export default function Home() {
   const firms = getFirms();
@@ -32,7 +96,15 @@ export default function Home() {
         {meta.collection_status.missing_inputs.length} inputs still to collect
       </div>
 
-      <h2>TI case-study firms</h2>
+      <h2>Firm assessments</h2>
+      <p className="panel-note">
+        The core output: each firm evaluated on the data available today, against every
+        operating country&apos;s committed path. FLAG markets (no derivable NDC benchmark)
+        are excluded from the S2 headline, never silently defaulted.
+      </p>
+      <FirmTable />
+
+      <h3 style={{ marginTop: 36 }}>All case-study candidates</h3>
       <p className="panel-note">
         Firms marked <span className="mono">awaiting data</span> have no collected
         registration or vehicle-parameter data yet — the framework never fabricates a

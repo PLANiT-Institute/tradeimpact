@@ -3,21 +3,46 @@
   "cohort_year": 2024,
   "analysis_level": "Level 1",
   "layer1_method": "B",
-  "config": { "scenarios": ["S1", "S2", "S3"], "flag_market_rule": "exclude" },
+  "config": {
+    "scenarios": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "flag_market_rule": "exclude"
+  },
   "support": {
     "lifetime_T": 15,
     "lifetime_sens": 3,
-    "vkt": { "KR": 13000.0, "EU": 12000.0, "AU": 13800.0, "US": 18000.0 },
+    "vkt": {
+      "KR": 13000.0,
+      "EU": 12000.0,
+      "AU": 13800.0,
+      "US": 18000.0,
+      "CN": 12000.0,
+      "IN": 10000.0
+    },
     "uf_band": 0.15,
-    "realworld_range": [0.95, 1.25]
+    "realworld_range": [
+      0.95,
+      1.25
+    ]
   },
   "countries": {
     "KR": {
       "name": "South Korea",
       "grid_intensity": 0.41551,
       "fleet_intensity_base": 0.165,
-      "r_fleet": { "s1": 0.025, "s2": 0.043441272053699, "s3": 0.07 },
-      "r_power": { "s1": 0.03, "s2": 0.043441272053699, "s3": 0.09 },
+      "r_fleet": {
+        "s1": 0.025,
+        "s2": 0.043441272053699,
+        "s3": 0.07
+      },
+      "r_power": {
+        "s1": 0.03,
+        "s2": 0.043441272053699,
+        "s3": 0.09
+      },
       "status": "COMPUTED",
       "tier": "B",
       "source": "S2: UNFCCC KR 2035 NDC Dec 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C (ESTIMATES.md). Grid: Ember 2024.",
@@ -29,8 +54,16 @@
       "name": "European Union",
       "grid_intensity": 0.21135,
       "fleet_intensity_base": 0.14,
-      "r_fleet": { "s1": 0.014, "s2": 0.023848569511212, "s3": 0.06 },
-      "r_power": { "s1": 0.04, "s2": 0.023848569511212, "s3": 0.1 },
+      "r_fleet": {
+        "s1": 0.014,
+        "s2": 0.023848569511212,
+        "s3": 0.06
+      },
+      "r_power": {
+        "s1": 0.04,
+        "s2": 0.023848569511212,
+        "s3": 0.1
+      },
       "status": "COMPUTED",
       "tier": "B",
       "source": "S2: UNFCCC EU 2035 NDC (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
@@ -42,8 +75,16 @@
       "name": "Australia",
       "grid_intensity": 0.55383,
       "fleet_intensity_base": 0.185,
-      "r_fleet": { "s1": 0.019, "s2": 0.0317382262873848, "s3": 0.06 },
-      "r_power": { "s1": 0.05, "s2": 0.0317382262873848, "s3": 0.11 },
+      "r_fleet": {
+        "s1": 0.019,
+        "s2": 0.0317382262873848,
+        "s3": 0.06
+      },
+      "r_power": {
+        "s1": 0.05,
+        "s2": 0.0317382262873848,
+        "s3": 0.11
+      },
       "status": "COMPUTED",
       "tier": "B",
       "source": "S2: UNFCCC AU 2nd NDC 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
@@ -55,28 +96,247 @@
       "name": "United States",
       "grid_intensity": 0.38378,
       "fleet_intensity_base": 0.2,
-      "r_fleet": { "s1": 0.01, "s3": 0.055 },
-      "r_power": { "s1": 0.02, "s3": 0.095 },
+      "r_fleet": {
+        "s1": 0.01,
+        "s3": 0.055
+      },
+      "r_power": {
+        "s1": 0.02,
+        "s3": 0.095
+      },
       "status": "FLAG_NO_BENCHMARK",
       "tier": "C",
       "source": "No active NDC (revoked) — no S2 benchmark derivable (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
+    },
+    "CN": {
+      "name": "China",
+      "grid_intensity": 0.5554,
+      "fleet_intensity_base": 0.16,
+      "r_fleet": {
+        "s1": 0.02,
+        "s3": 0.06
+      },
+      "r_power": {
+        "s1": 0.035,
+        "s3": 0.1
+      },
+      "status": "FLAG_PEAK",
+      "tier": "C",
+      "source": "2035 target vs undefined emissions peak — no S2 benchmark derivable (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
+    },
+    "IN": {
+      "name": "India",
+      "grid_intensity": 0.7054,
+      "fleet_intensity_base": 0.13,
+      "r_fleet": {
+        "s1": 0.005,
+        "s3": 0.05
+      },
+      "r_power": {
+        "s1": 0.015,
+        "s3": 0.09
+      },
+      "status": "FLAG_INTENSITY",
+      "tier": "C",
+      "source": "GDP-intensity target — not an absolute emissions path (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
     }
   },
   "placements": [
-    { "country": "KR", "brand": "Hyundai", "model": "ICE mix (Avante/Sonata/SUV)", "powertrain": "ICE", "ice_intensity": 0.175, "units": 420000, "tier": "B", "source": "KAMA 2024 domestic sales, rough split; KEA cert + uplift" },
-    { "country": "KR", "brand": "Hyundai", "model": "HEV mix (Grandeur/Santa Fe)", "powertrain": "HEV", "ice_intensity": 0.125, "units": 140000, "tier": "B", "source": "KAMA 2024 rough" },
-    { "country": "KR", "brand": "Hyundai", "model": "Ioniq5/6, Kona EV", "powertrain": "BEV", "eta_ev": 0.18, "units": 80000, "tier": "B", "source": "KAMA 2024 rough; KEA cert + uplift" },
-    { "country": "KR", "brand": "Hyundai", "model": "PHEV mix", "powertrain": "PHEV", "uf": 0.4, "eta_elec": 0.2, "ice_mode_intensity": 0.15, "units": 10000, "tier": "C", "source": "regulatory UF; overstatement caveat" },
-    { "country": "EU", "brand": "Hyundai", "model": "ICE mix (Tucson/i-range)", "powertrain": "ICE", "ice_intensity": 0.16, "units": 300000, "tier": "B", "source": "ACEA 2024 rough; WLTP + ICCT uplift" },
-    { "country": "EU", "brand": "Hyundai", "model": "HEV mix", "powertrain": "HEV", "ice_intensity": 0.12, "units": 130000, "tier": "B", "source": "ACEA 2024 rough" },
-    { "country": "EU", "brand": "Hyundai", "model": "Kona EV / Ioniq5", "powertrain": "BEV", "eta_ev": 0.17, "units": 80000, "tier": "B", "source": "WLTP + real-world uplift" },
-    { "country": "EU", "brand": "Hyundai", "model": "Tucson PHEV", "powertrain": "PHEV", "uf": 0.4, "eta_elec": 0.2, "ice_mode_intensity": 0.15, "units": 30000, "tier": "C", "source": "WLTP UF; overstatement caveat" },
-    { "country": "AU", "brand": "Hyundai", "model": "ICE mix", "powertrain": "ICE", "ice_intensity": 0.19, "units": 50000, "tier": "B", "source": "VFACTS 2024 rough" },
-    { "country": "AU", "brand": "Hyundai", "model": "HEV mix", "powertrain": "HEV", "ice_intensity": 0.125, "units": 12000, "tier": "C", "source": "VFACTS 2024 rough" },
-    { "country": "AU", "brand": "Hyundai", "model": "Ioniq5 / Kona EV", "powertrain": "BEV", "eta_ev": 0.185, "units": 8000, "tier": "C", "source": "VFACTS 2024 rough" },
-    { "country": "US", "brand": "Hyundai", "model": "ICE mix (incl. SUV)", "powertrain": "ICE", "ice_intensity": 0.2, "units": 650000, "tier": "B", "source": "US sales reports 2024 rough; EPA real-world" },
-    { "country": "US", "brand": "Hyundai", "model": "HEV mix", "powertrain": "HEV", "ice_intensity": 0.13, "units": 160000, "tier": "B", "source": "US sales reports 2024 rough" },
-    { "country": "US", "brand": "Hyundai", "model": "Ioniq5/6", "powertrain": "BEV", "eta_ev": 0.19, "units": 90000, "tier": "B", "source": "EPA + sales reports rough" },
-    { "country": "US", "brand": "Hyundai", "model": "Tucson PHEV", "powertrain": "PHEV", "uf": 0.5, "eta_elec": 0.21, "ice_mode_intensity": 0.16, "units": 10000, "tier": "C", "source": "SAE J2841 UF; overstatement caveat" }
+    {
+      "country": "KR",
+      "brand": "Hyundai",
+      "model": "ICE mix (Avante/Sonata/SUV)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.175,
+      "units": 420000,
+      "tier": "B",
+      "source": "KAMA 2024 domestic sales, rough split; KEA cert + uplift"
+    },
+    {
+      "country": "KR",
+      "brand": "Hyundai",
+      "model": "HEV mix (Grandeur/Santa Fe)",
+      "powertrain": "HEV",
+      "ice_intensity": 0.125,
+      "units": 140000,
+      "tier": "B",
+      "source": "KAMA 2024 rough"
+    },
+    {
+      "country": "KR",
+      "brand": "Hyundai",
+      "model": "Ioniq5/6, Kona EV",
+      "powertrain": "BEV",
+      "eta_ev": 0.18,
+      "units": 80000,
+      "tier": "B",
+      "source": "KAMA 2024 rough; KEA cert + uplift"
+    },
+    {
+      "country": "KR",
+      "brand": "Hyundai",
+      "model": "PHEV mix",
+      "powertrain": "PHEV",
+      "uf": 0.4,
+      "eta_elec": 0.2,
+      "ice_mode_intensity": 0.15,
+      "units": 10000,
+      "tier": "C",
+      "source": "regulatory UF; overstatement caveat"
+    },
+    {
+      "country": "EU",
+      "brand": "Hyundai",
+      "model": "ICE mix (Tucson/i-range)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.16,
+      "units": 300000,
+      "tier": "B",
+      "source": "ACEA 2024 rough; WLTP + ICCT uplift"
+    },
+    {
+      "country": "EU",
+      "brand": "Hyundai",
+      "model": "HEV mix",
+      "powertrain": "HEV",
+      "ice_intensity": 0.12,
+      "units": 130000,
+      "tier": "B",
+      "source": "ACEA 2024 rough"
+    },
+    {
+      "country": "EU",
+      "brand": "Hyundai",
+      "model": "Kona EV / Ioniq5",
+      "powertrain": "BEV",
+      "eta_ev": 0.17,
+      "units": 80000,
+      "tier": "B",
+      "source": "WLTP + real-world uplift"
+    },
+    {
+      "country": "EU",
+      "brand": "Hyundai",
+      "model": "Tucson PHEV",
+      "powertrain": "PHEV",
+      "uf": 0.4,
+      "eta_elec": 0.2,
+      "ice_mode_intensity": 0.15,
+      "units": 30000,
+      "tier": "C",
+      "source": "WLTP UF; overstatement caveat"
+    },
+    {
+      "country": "AU",
+      "brand": "Hyundai",
+      "model": "ICE mix",
+      "powertrain": "ICE",
+      "ice_intensity": 0.19,
+      "units": 50000,
+      "tier": "B",
+      "source": "VFACTS 2024 rough"
+    },
+    {
+      "country": "AU",
+      "brand": "Hyundai",
+      "model": "HEV mix",
+      "powertrain": "HEV",
+      "ice_intensity": 0.125,
+      "units": 12000,
+      "tier": "C",
+      "source": "VFACTS 2024 rough"
+    },
+    {
+      "country": "AU",
+      "brand": "Hyundai",
+      "model": "Ioniq5 / Kona EV",
+      "powertrain": "BEV",
+      "eta_ev": 0.185,
+      "units": 8000,
+      "tier": "C",
+      "source": "VFACTS 2024 rough"
+    },
+    {
+      "country": "US",
+      "brand": "Hyundai",
+      "model": "ICE mix (incl. SUV)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.2,
+      "units": 650000,
+      "tier": "B",
+      "source": "US sales reports 2024 rough; EPA real-world"
+    },
+    {
+      "country": "US",
+      "brand": "Hyundai",
+      "model": "HEV mix",
+      "powertrain": "HEV",
+      "ice_intensity": 0.13,
+      "units": 160000,
+      "tier": "B",
+      "source": "US sales reports 2024 rough"
+    },
+    {
+      "country": "US",
+      "brand": "Hyundai",
+      "model": "Ioniq5/6",
+      "powertrain": "BEV",
+      "eta_ev": 0.19,
+      "units": 90000,
+      "tier": "B",
+      "source": "EPA + sales reports rough"
+    },
+    {
+      "country": "US",
+      "brand": "Hyundai",
+      "model": "Tucson PHEV",
+      "powertrain": "PHEV",
+      "uf": 0.5,
+      "eta_elec": 0.21,
+      "ice_mode_intensity": 0.16,
+      "units": 10000,
+      "tier": "C",
+      "source": "SAE J2841 UF; overstatement caveat"
+    },
+    {
+      "country": "IN",
+      "brand": "Hyundai",
+      "model": "ICE mix (Creta/i20/Venue)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.15,
+      "units": 590000,
+      "tier": "B",
+      "source": "SIAM/HMIL 2024 rough"
+    },
+    {
+      "country": "IN",
+      "brand": "Hyundai",
+      "model": "Ioniq5/Creta EV",
+      "powertrain": "BEV",
+      "eta_ev": 0.17,
+      "units": 10000,
+      "tier": "C",
+      "source": "rough"
+    },
+    {
+      "country": "CN",
+      "brand": "Hyundai",
+      "model": "ICE mix (Beijing-Hyundai)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.165,
+      "units": 240000,
+      "tier": "C",
+      "source": "press 2024 rough"
+    },
+    {
+      "country": "CN",
+      "brand": "Hyundai",
+      "model": "BEV mix",
+      "powertrain": "BEV",
+      "eta_ev": 0.17,
+      "units": 10000,
+      "tier": "C",
+      "source": "rough"
+    }
   ]
 }
