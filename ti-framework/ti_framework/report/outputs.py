@@ -156,6 +156,7 @@ def to_json_dict(run: RunResult) -> dict:
                 "scenario": vr.scenario.value,
                 "crossover_year": vr.crossover_year,
                 "reason": vr.crossover_reason,
+                "TI_per_vehicle_kgCO2e": vr.cumulative,
             }
             for vr in run.vehicle_results
         ],
