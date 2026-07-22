@@ -90,7 +90,7 @@ real-world accuracy of the inputs. Fixture inputs are flagged illustrative in
   a directional ("contribution"/"liability") label is emitted instead of a number. Default off.
 
 ## 4. Crossover (t\*) treatment
-
+<a id="rule-n4-crossover"></a>
 - ICE/HEV (constant vs exponential benchmark): closed form
   `t* = ln(E_prod / (I₀·D)) / ln(1 − r_fleet)`.
 - BEV (two exponentials): closed form

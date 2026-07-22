@@ -73,7 +73,7 @@ The fleet benchmark declines as three processes operate simultaneously: (1) flee
 ### 2.3 Methods for deriving I_fleet,seg,c(t)
 
 #### Method A — Fleet stock model
-
+<a id="eq-g2.3a-weibull"></a>
 Builds the fleet average by tracking each annual cohort of vehicles as it enters, ages, and scraps out.
 
 **Surviving stock of vintage y at year t:**
@@ -98,7 +98,7 @@ New entrant intensity `I_new,seg,c(y)` is derived from the IEA WEO scenario-cons
 **Use Method A when:** Mature OECD market; fleet age distribution data available by vintage year; at least 15 years of historical fleet emission data.
 
 #### Method B — Transport NDC trajectory
-
+<a id="eq-g2.3b-ndc-trajectory"></a>
 Treats the country's transport NDC commitment as the authoritative trajectory.
 
 **Base year fleet-average segment intensity:**
@@ -132,7 +132,7 @@ Three-scenario rates: S1 from IEA STEPS transport; S2 from UNFCCC NDC unconditio
 **Use Method B when:** NDC available; fleet age data sparse; all non-OECD markets (default).
 
 #### Method C — Volume-weighted two-bin approximation
-
+<a id="eq-g2.3c-two-bin"></a>
 ```
 I_fleet,seg,c(t) = RR_c × I_new,seg,c(t) + (1 − RR_c) × I_fleet,seg,c(t−1) × (1 + δ_scrap,c)
 ```
@@ -158,7 +158,7 @@ Layer 2 is the actual use-phase emissions of the sold vehicle under the specific
 **Level 2 volume data V_p,c,v:** Model-to-factory mapping using firm IR materials. Where a model has a single production source, operating country registration volumes directly imply production country. Where multiple factories produce the same model, allocate by factory production volume ratios from firm IR materials.
 
 ### 3.3 Case 1 — ICE and non-plug-in HEV
-
+<a id="eq-g3.3-ice"></a>
 ```
 E_prod,ICE,c(t) = I_export,ICE × D_c        [constant for all t]
 ```
@@ -168,7 +168,7 @@ E_prod,ICE,c(t) = I_export,ICE × D_c        [constant for all t]
 The ICE TI_gap starts positive (new ICE is cleaner than the fleet average, which includes many older vehicles) and narrows progressively as the fleet benchmark declines. This is the carbon lock-in signal: the vehicle's fixed emissions become an increasingly large liability relative to the committed fleet trajectory.
 
 ### 3.4 Case 2 — BEV
-
+<a id="eq-g3.4-bev"></a>
 ```
 E_prod,BEV,c(t) = η_EV × G_c(t) × D_c
 G_c(t) = G_c(0) × (1 − r_power,c)^t
@@ -180,7 +180,7 @@ r_power,c = 1 − ( G_target,c / G_c(0) )^( 1 / (Y_target − Y_base) )
 `r_power,c` is derived **independently** from `r_fleet,c` — power sector and transport sector NDC targets are separate policy variables and must never be set equal.
 
 ### 3.5 Case 3 — PHEV
-
+<a id="eq-g3.5-phev"></a>
 ```
 E_prod,PHEV,c(t) = [ (UF × η_elec × G_c(t)) + ((1 − UF) × I_ICE_mode) ] × D_c
 ```
@@ -243,7 +243,7 @@ TI_portfolio,F,τ,S = Σ_{Y₀=τ−T+1}^{τ} TI_annual,F,Y₀,τ,S        [tCO�
 This is the firm's total annual climate impact from all vehicles currently in operation worldwide.
 
 ### 4.7 Three-scenario architecture
-
+<a id="rule-g4.7-three-scenarios"></a>
 All results reported under three scenarios. Each scenario specifies r_fleet,c and r_power,c independently:
 
 | Scenario | Label | r_fleet,c source | r_power,c source |
@@ -266,7 +266,7 @@ Never report S2 alone. Always report S1, S2, S3.
 4. **Decomposition by operating country and powertrain** — mandatory alongside all headline numbers
 
 ### 5.2 Mandatory sensitivity parameters
-
+<a id="rule-g5.2-sensitivity"></a>
 | Parameter | Sensitivity range |
 |---|---|
 | Vehicle lifetime T | T ± 3 years minimum |
@@ -276,7 +276,7 @@ Never report S2 alone. Always report S1, S2, S3.
 | Segment intensity ratio | Range per Appendix A |
 
 ### 5.3 Data quality declaration template
-
+<a id="rule-g5.3-declaration"></a>
 ```
 Firm: [F] | Cohort year: [Y₀] | Analysis level: [Level 1 / Level 2]
 
@@ -313,7 +313,7 @@ TI must never net out or reduce the firm's Scope 3 Category 11 absolute emission
 ## 6. Selecting the Layer 1 Method
 
 ### 6.1 Method selection criteria
-
+<a id="rule-g6.1-bc-divergence"></a>
 **Use Method A when:** Mature OECD market; fleet age distribution data available by vintage year; at least 15 years of historical fleet emission data; IEA WEO scenario projections used for new entrant intensity.
 
 **Use Method B when:** Fleet age data unavailable or sparse; developing or emerging market; quantified transport NDC or whole-economy NDC exists. Default for all non-OECD markets.

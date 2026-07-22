@@ -1,0 +1,987 @@
+{
+  "firm": "Toyota",
+  "cohort_year": 2024,
+  "cohorts": {
+    "S1": {
+      "total_tCO2e": -1451370.982648777,
+      "direction": "liability",
+      "directional_only": false,
+      "by_country": {
+        "JP": -2127941.531836599,
+        "EU": 1674107.1846901623,
+        "AU": -29016.710333362113,
+        "KR": 31449.226607538047,
+        "US": -999969.1517765168
+      },
+      "by_powertrain": {
+        "HEV": 16496388.513988405,
+        "ICE": -20438943.940350242,
+        "BEV": 1418994.0568962786,
+        "PHEV": 1072190.3868167803
+      },
+      "annual_tCO2e": [
+        1000662.7155050002,
+        833577.792946625,
+        668995.2865496469,
+        506872.4744126645,
+        347167.4323318315,
+        189839.0186261428,
+        34846.85922312794,
+        -117848.66699755765,
+        -268286.442605279,
+        -416504.62576698605,
+        -562540.664145991,
+        -706431.3085538037,
+        -848212.6263579356,
+        -987920.0146486461,
+        -1125588.2131676164
+      ],
+      "excluded_flag_markets": {},
+      "warnings": [
+        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+      ]
+    },
+    "S2": {
+      "total_tCO2e": -5495605.971502995,
+      "direction": "liability",
+      "directional_only": false,
+      "by_country": {
+        "JP": -4756361.364462313,
+        "EU": -54765.16257729019,
+        "AU": -688056.1806266583,
+        "KR": 3576.736163266438
+      },
+      "by_powertrain": {
+        "HEV": 1894243.4461623703,
+        "ICE": -8330010.534324696,
+        "BEV": 807391.4260086355,
+        "PHEV": 132769.69065069605
+      },
+      "annual_tCO2e": [
+        516982.7895050001,
+        371276.14045367745,
+        230571.43681926947,
+        94688.41937211168,
+        -36546.42650947241,
+        -163300.13016183474,
+        -285733.48479724,
+        -404001.286906998,
+        -518252.566293689,
+        -628630.807104171,
+        -735274.1602201851,
+        -838315.6473490914,
+        -937883.3571435845,
+        -1034100.6336660624,
+        -1127086.257500725
+      ],
+      "excluded_flag_markets": {
+        "US": "No active NDC — no S2 benchmark derivable"
+      },
+      "warnings": [
+        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+      ]
+    },
+    "S3": {
+      "total_tCO2e": -45502892.86050113,
+      "direction": "liability",
+      "directional_only": false,
+      "by_country": {
+        "JP": -7914713.9400558015,
+        "EU": -5073255.754407569,
+        "AU": -1887877.8086248252,
+        "KR": -29621.573455805938,
+        "US": -30597423.783957135
+      },
+      "by_powertrain": {
+        "HEV": -1471119.033158199,
+        "ICE": -45598304.99654307,
+        "BEV": 1113297.1635398113,
+        "PHEV": 453234.0056603257
+      },
+      "annual_tCO2e": [
+        1000662.7155050002,
+        270556.70569370023,
+        -417687.37990524614,
+        -1066467.8617502304,
+        -1678046.2346214345,
+        -2254554.892647693,
+        -2798004.42774174,
+        -3310290.5239402098,
+        -3793200.4690749315,
+        -4248419.304169863,
+        -4677535.629963911,
+        -5082047.089003724,
+        -5463365.540832341,
+        -5822821.946918764,
+        -6161670.98112974
+      ],
+      "excluded_flag_markets": {},
+      "warnings": [
+        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+      ]
+    }
+  },
+  "portfolio": {
+    "S1": [
+      1000662.7155050002,
+      1834240.5084516252,
+      2503235.795001272,
+      3010108.2694139364,
+      3357275.701745768,
+      3547114.720371911,
+      3581961.5795950387,
+      3464112.912597481,
+      3195826.4699922022,
+      2779321.844225216,
+      2216781.1800792255,
+      1510349.8715254217,
+      662137.2451674861,
+      -325782.76948116,
+      -1451370.9826487764
+    ],
+    "S2": [
+      516982.7895050001,
+      888258.9299586776,
+      1118830.3667779472,
+      1213518.7861500587,
+      1176972.3596405864,
+      1013672.2294787517,
+      727938.7446815117,
+      323937.45777451363,
+      -194315.10851917538,
+      -822945.9156233463,
+      -1558220.0758435314,
+      -2396535.723192623,
+      -3334419.0803362075,
+      -4368519.71400227,
+      -5495605.971502995
+    ],
+    "S3": [
+      1000662.7155050002,
+      1271219.4211987006,
+      853532.0412934544,
+      -212935.82045677607,
+      -1890982.0550782105,
+      -4145536.9477259032,
+      -6943541.375467643,
+      -10253831.899407852,
+      -14047032.368482783,
+      -18295451.672652647,
+      -22972987.30261656,
+      -28055034.391620282,
+      -33518399.932452623,
+      -39341221.87937139,
+      -45502892.86050113
+    ]
+  },
+  "crossover": [
+    {
+      "country": "JP",
+      "powertrain": "HEV",
+      "scenario": "S1",
+      "crossover_year": 10.9375757741891,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 1744.4392734196215
+    },
+    {
+      "country": "JP",
+      "powertrain": "ICE",
+      "scenario": "S1",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -6093.060726580381
+    },
+    {
+      "country": "JP",
+      "powertrain": "BEV",
+      "scenario": "S1",
+      "crossover_year": 531.1862326337947,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 7683.573882935891
+    },
+    {
+      "country": "JP",
+      "powertrain": "PHEV",
+      "scenario": "S1",
+      "crossover_year": null,
+      "reason": "no sign change over lifetime",
+      "TI_per_vehicle_kgCO2e": 2196.4657129398474
+    },
+    {
+      "country": "EU",
+      "powertrain": "HEV",
+      "scenario": "S1",
+      "crossover_year": 17.104996829936365,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 3074.119227490328
+    },
+    {
+      "country": "EU",
+      "powertrain": "ICE",
+      "scenario": "S1",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -5925.880772509672
+    },
+    {
+      "country": "EU",
+      "powertrain": "BEV",
+      "scenario": "S1",
+      "crossover_year": 49.810751296317775,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 17793.166937629496
+    },
+    {
+      "country": "EU",
+      "powertrain": "PHEV",
+      "scenario": "S1",
+      "crossover_year": null,
+      "reason": "no sign change over lifetime",
+      "TI_per_vehicle_kgCO2e": 5411.058049847612
+    },
+    {
+      "country": "AU",
+      "powertrain": "HEV",
+      "scenario": "S1",
+      "crossover_year": 22.565196121158834,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 8758.173709226778
+    },
+    {
+      "country": "AU",
+      "powertrain": "ICE",
+      "scenario": "S1",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -9871.82629077322
+    },
+    {
+      "country": "AU",
+      "powertrain": "BEV",
+      "scenario": "S1",
+      "crossover_year": 18.402016758373104,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 18420.82266611493
+    },
+    {
+      "country": "KR",
+      "powertrain": "HEV",
+      "scenario": "S1",
+      "crossover_year": 14.259265484648001,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 4686.0251786153385
+    },
+    {
+      "country": "KR",
+      "powertrain": "ICE",
+      "scenario": "S1",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -6038.9748213846615
+    },
+    {
+      "country": "US",
+      "powertrain": "HEV",
+      "scenario": "S1",
+      "crossover_year": 46.764967469419474,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 16628.99232913613
+    },
+    {
+      "country": "US",
+      "powertrain": "ICE",
+      "scenario": "S1",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -9021.00767086387
+    },
+    {
+      "country": "US",
+      "powertrain": "BEV",
+      "scenario": "S1",
+      "crossover_year": 99.3835878842811,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 33222.22891560241
+    },
+    {
+      "country": "US",
+      "powertrain": "PHEV",
+      "scenario": "S1",
+      "crossover_year": null,
+      "reason": "no sign change over lifetime",
+      "TI_per_vehicle_kgCO2e": 21099.11684832891
+    },
+    {
+      "country": "JP",
+      "powertrain": "HEV",
+      "scenario": "S2",
+      "crossover_year": 6.379492275524792,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": -158.28828216381453
+    },
+    {
+      "country": "JP",
+      "powertrain": "ICE",
+      "scenario": "S2",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -7995.788282163818
+    },
+    {
+      "country": "JP",
+      "powertrain": "BEV",
+      "scenario": "S2",
+      "crossover_year": null,
+      "reason": "r_fleet == r_power: parallel trajectories, no finite crossover",
+      "TI_per_vehicle_kgCO2e": 6814.386332931928
+    },
+    {
+      "country": "JP",
+      "powertrain": "PHEV",
+      "scenario": "S2",
+      "crossover_year": 8.275045502191773,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 784.6696600066608
+    },
+    {
+      "country": "EU",
+      "powertrain": "HEV",
+      "scenario": "S2",
+      "crossover_year": 9.991157042523692,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 1598.332243351636
+    },
+    {
+      "country": "EU",
+      "powertrain": "ICE",
+      "scenario": "S2",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -7401.667756648365
+    },
+    {
+      "country": "EU",
+      "powertrain": "BEV",
+      "scenario": "S2",
+      "crossover_year": null,
+      "reason": "r_fleet == r_power: parallel trajectories, no finite crossover",
+      "TI_per_vehicle_kgCO2e": 15745.160343811176
+    },
+    {
+      "country": "EU",
+      "powertrain": "PHEV",
+      "scenario": "S2",
+      "crossover_year": null,
+      "reason": "no sign change over lifetime",
+      "TI_per_vehicle_kgCO2e": 3640.9866950165406
+    },
+    {
+      "country": "AU",
+      "powertrain": "HEV",
+      "scenario": "S2",
+      "crossover_year": 13.420976490341529,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 6013.176739471454
+    },
+    {
+      "country": "AU",
+      "powertrain": "ICE",
+      "scenario": "S2",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -12616.823260528547
+    },
+    {
+      "country": "AU",
+      "powertrain": "BEV",
+      "scenario": "S2",
+      "crossover_year": null,
+      "reason": "r_fleet == r_power: parallel trajectories, no finite crossover",
+      "TI_per_vehicle_kgCO2e": 13765.761865849976
+    },
+    {
+      "country": "KR",
+      "powertrain": "HEV",
+      "scenario": "S2",
+      "crossover_year": 8.128534168290006,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 1589.081795918493
+    },
+    {
+      "country": "KR",
+      "powertrain": "ICE",
+      "scenario": "S2",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -9135.918204081507
+    },
+    {
+      "country": "JP",
+      "powertrain": "HEV",
+      "scenario": "S3",
+      "crossover_year": 3.953401408967149,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": -2464.159367073815
+    },
+    {
+      "country": "JP",
+      "powertrain": "ICE",
+      "scenario": "S3",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -10301.659367073818
+    },
+    {
+      "country": "JP",
+      "powertrain": "BEV",
+      "scenario": "S3",
+      "crossover_year": 33.669197707703894,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 6548.426000737648
+    },
+    {
+      "country": "JP",
+      "powertrain": "PHEV",
+      "scenario": "S3",
+      "crossover_year": 5.61546362645448,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": -552.243817363372
+    },
+    {
+      "country": "EU",
+      "powertrain": "HEV",
+      "scenario": "S3",
+      "crossover_year": 3.8975431645772245,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": -2868.1703652710944
+    },
+    {
+      "country": "EU",
+      "powertrain": "ICE",
+      "scenario": "S3",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -11868.170365271095
+    },
+    {
+      "country": "EU",
+      "powertrain": "BEV",
+      "scenario": "S3",
+      "crossover_year": 30.610389194806515,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 13407.296540861193
+    },
+    {
+      "country": "EU",
+      "powertrain": "PHEV",
+      "scenario": "S3",
+      "crossover_year": 6.830464685275283,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 269.2126150255077
+    },
+    {
+      "country": "AU",
+      "powertrain": "HEV",
+      "scenario": "S3",
+      "crossover_year": 6.995737502876982,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 890.3339627755299
+    },
+    {
+      "country": "AU",
+      "powertrain": "ICE",
+      "scenario": "S3",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -17739.66603722447
+    },
+    {
+      "country": "AU",
+      "powertrain": "BEV",
+      "scenario": "S3",
+      "crossover_year": 10.810732897195136,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 15114.570040975026
+    },
+    {
+      "country": "KR",
+      "powertrain": "HEV",
+      "scenario": "S3",
+      "crossover_year": 4.974643777467649,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": -2099.6192728673263
+    },
+    {
+      "country": "KR",
+      "powertrain": "ICE",
+      "scenario": "S3",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -12824.619272867327
+    },
+    {
+      "country": "US",
+      "powertrain": "HEV",
+      "scenario": "S3",
+      "crossover_year": 8.30830314607748,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 3687.848090019875
+    },
+    {
+      "country": "US",
+      "powertrain": "ICE",
+      "scenario": "S3",
+      "crossover_year": null,
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "TI_per_vehicle_kgCO2e": -21962.151909980126
+    },
+    {
+      "country": "US",
+      "powertrain": "BEV",
+      "scenario": "S3",
+      "crossover_year": 23.32900531103426,
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 26712.87145117903
+    },
+    {
+      "country": "US",
+      "powertrain": "PHEV",
+      "scenario": "S3",
+      "crossover_year": null,
+      "reason": "no sign change over lifetime",
+      "TI_per_vehicle_kgCO2e": 11543.12354326154
+    }
+  ],
+  "data_quality": {
+    "firm": "Toyota",
+    "cohort_year": 2024,
+    "analysis_level": "Level 1",
+    "layer1_method": "B",
+    "benchmark_tiers": {
+      "JP": "B",
+      "EU": "B",
+      "AU": "B",
+      "KR": "B",
+      "US": "C"
+    },
+    "layer2_tiers": {
+      "Toyota HEV mix (Corolla/Yaris/RAV4)": "B",
+      "Toyota ICE mix": "C",
+      "Toyota bZ4X": "B",
+      "Toyota Prius PHEV": "C",
+      "Toyota HEV mix": "B",
+      "Toyota RAV4 PHEV": "C",
+      "Toyota HEV mix (RAV4/Corolla)": "B",
+      "Toyota ICE mix (incl. HiLux)": "B",
+      "Toyota ICE mix (incl. trucks)": "B",
+      "Toyota RAV4 Prime": "C"
+    },
+    "volume_tiers": {
+      "JP": "A",
+      "EU": "A",
+      "AU": "A",
+      "KR": "A",
+      "US": "A"
+    },
+    "lifetime_T": 15,
+    "lifetime_sens": 3,
+    "scenario_sources": {
+      "S1": "IEA WEO STEPS (transport & electricity)",
+      "S2": "UNFCCC NDC unconditional (pro-rata, economy-wide)",
+      "S3": "IEA NZE (transport & electricity)"
+    },
+    "missing_inputs": [],
+    "warnings": [
+      "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+    ],
+    "flag_markets": {
+      "US": "No active NDC — no S2 benchmark derivable"
+    }
+  },
+  "sensitivity": {
+    "lifetime": {
+      "T_minus": {
+        "S1": 1510349.8715254208,
+        "S2": -2396535.7231926224,
+        "S3": -28055034.391620293
+      },
+      "T_central": {
+        "S1": -1451370.982648777,
+        "S2": -5495605.971502995,
+        "S3": -45502892.86050113
+      },
+      "T_plus": {
+        "S1": -5634260.560924953,
+        "S2": -9404152.655289857,
+        "S3": -65832264.23851194
+      }
+    },
+    "uf": {
+      "UF_central": {
+        "S1": -1451370.982648777,
+        "S2": -5495605.971502995,
+        "S3": -45502892.86050113
+      },
+      "UF_lower": {
+        "S1": -1721527.1294978675,
+        "S2": -5633087.095441349,
+        "S3": -45836274.1512401
+      },
+      "UF_upper": {
+        "S1": -1181214.8357996903,
+        "S2": -5358124.84756464,
+        "S3": -45169511.56976216
+      }
+    },
+    "realworld": {
+      "RW_low": {
+        "S1": 7423892.265606846,
+        "S2": -2476417.608678718,
+        "S3": -36649484.78131531
+      },
+      "RW_central": {
+        "S1": -1451370.982648777,
+        "S2": -5495605.971502995,
+        "S3": -45502892.86050113
+      },
+      "RW_high": {
+        "S1": -45827687.22392689,
+        "S2": -20591547.785624377,
+        "S3": -89769933.25643028
+      }
+    },
+    "scenario_spread": {
+      "S1": -1451370.982648777,
+      "S2": -5495605.971502995,
+      "S3": -45502892.86050113
+    },
+    "sector_split": {
+      "uncorrected": {
+        "S1": -1451370.982648777,
+        "S2": -5495605.971502995,
+        "S3": -45502892.86050113
+      },
+      "corrected": {
+        "S1": -1451370.982648777,
+        "S2": -5495605.971502995,
+        "S3": -45502892.86050113
+      }
+    }
+  },
+  "inputs": {
+    "firm": "Toyota",
+    "cohort_year": 2024,
+    "analysis_level": "Level 1",
+    "layer1_method": "B",
+    "config": {
+      "scenarios": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "flag_market_rule": "exclude"
+    },
+    "support": {
+      "lifetime_T": 15,
+      "lifetime_sens": 3,
+      "vkt": {
+        "JP": 9500.0,
+        "EU": 12000.0,
+        "AU": 13800.0,
+        "KR": 13000.0,
+        "US": 18000.0
+      },
+      "uf_band": 0.15,
+      "realworld_range": [
+        0.95,
+        1.25
+      ]
+    },
+    "countries": {
+      "JP": {
+        "name": "Japan",
+        "grid_intensity": 0.48343,
+        "fleet_intensity_base": 0.15,
+        "r_fleet": {
+          "s1": 0.024,
+          "s2": 0.0407941521740232,
+          "s3": 0.065
+        },
+        "r_power": {
+          "s1": 0.025,
+          "s2": 0.0407941521740232,
+          "s3": 0.08
+        },
+        "status": "COMPUTED",
+        "tier": "B",
+        "source": "S2: UNFCCC JP 2035 NDC (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C (ESTIMATES.md). Grid: Ember 2024.",
+        "warnings": [
+          "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+        ]
+      },
+      "EU": {
+        "name": "European Union",
+        "grid_intensity": 0.21135,
+        "fleet_intensity_base": 0.14,
+        "r_fleet": {
+          "s1": 0.014,
+          "s2": 0.023848569511212,
+          "s3": 0.06
+        },
+        "r_power": {
+          "s1": 0.04,
+          "s2": 0.023848569511212,
+          "s3": 0.1
+        },
+        "status": "COMPUTED",
+        "tier": "B",
+        "source": "S2: UNFCCC EU 2035 NDC (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+        "warnings": [
+          "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+        ]
+      },
+      "AU": {
+        "name": "Australia",
+        "grid_intensity": 0.55383,
+        "fleet_intensity_base": 0.185,
+        "r_fleet": {
+          "s1": 0.019,
+          "s2": 0.0317382262873848,
+          "s3": 0.06
+        },
+        "r_power": {
+          "s1": 0.05,
+          "s2": 0.0317382262873848,
+          "s3": 0.11
+        },
+        "status": "COMPUTED",
+        "tier": "B",
+        "source": "S2: UNFCCC AU 2nd NDC 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+        "warnings": [
+          "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+        ]
+      },
+      "KR": {
+        "name": "South Korea",
+        "grid_intensity": 0.41551,
+        "fleet_intensity_base": 0.165,
+        "r_fleet": {
+          "s1": 0.025,
+          "s2": 0.043441272053699,
+          "s3": 0.07
+        },
+        "r_power": {
+          "s1": 0.03,
+          "s2": 0.043441272053699,
+          "s3": 0.09
+        },
+        "status": "COMPUTED",
+        "tier": "B",
+        "source": "S2: UNFCCC KR 2035 NDC Dec 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+        "warnings": [
+          "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+        ]
+      },
+      "US": {
+        "name": "United States",
+        "grid_intensity": 0.38378,
+        "fleet_intensity_base": 0.2,
+        "r_fleet": {
+          "s1": 0.01,
+          "s3": 0.055
+        },
+        "r_power": {
+          "s1": 0.02,
+          "s3": 0.095
+        },
+        "status": "FLAG_NO_BENCHMARK",
+        "tier": "C",
+        "source": "No active NDC (revoked) — no S2 benchmark derivable (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
+      }
+    },
+    "placements": [
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "HEV mix (Corolla/Yaris/RAV4)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.115,
+        "units": 750000,
+        "tier": "B",
+        "source": "JADA/JAMA 2024 sales, rough powertrain split; WLTC + real-world uplift"
+      },
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.17,
+        "units": 600000,
+        "tier": "B",
+        "source": "JADA 2024 rough split"
+      },
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.18,
+        "units": 20000,
+        "tier": "B",
+        "source": "cert. efficiency + real-world uplift; JADA rough"
+      },
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "Prius PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.45,
+        "eta_elec": 0.19,
+        "ice_mode_intensity": 0.14,
+        "units": 30000,
+        "tier": "C",
+        "source": "regulatory UF, real-world overstatement caveat applies"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.11,
+        "units": 800000,
+        "tier": "B",
+        "source": "ACEA/JATO 2024 rough; WLTP + ICCT uplift"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.16,
+        "units": 280000,
+        "tier": "B",
+        "source": "ACEA 2024 rough"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.175,
+        "units": 40000,
+        "tier": "B",
+        "source": "WLTP + real-world uplift"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "RAV4 PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.45,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 30000,
+        "tier": "C",
+        "source": "WLTP UF; overstatement caveat"
+      },
+      {
+        "country": "AU",
+        "brand": "Toyota",
+        "model": "HEV mix (RAV4/Corolla)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.12,
+        "units": 120000,
+        "tier": "B",
+        "source": "VFACTS 2024 rough"
+      },
+      {
+        "country": "AU",
+        "brand": "Toyota",
+        "model": "ICE mix (incl. HiLux)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.21,
+        "units": 115000,
+        "tier": "B",
+        "source": "VFACTS 2024 rough; ute-heavy mix"
+      },
+      {
+        "country": "AU",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.185,
+        "units": 3000,
+        "tier": "C",
+        "source": "VFACTS rough"
+      },
+      {
+        "country": "KR",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.115,
+        "units": 8000,
+        "tier": "C",
+        "source": "KAIDA 2024 rough"
+      },
+      {
+        "country": "KR",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.17,
+        "units": 1000,
+        "tier": "C",
+        "source": "KAIDA 2024 rough"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.125,
+        "units": 700000,
+        "tier": "B",
+        "source": "US sales reports 2024 rough; EPA real-world"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "ICE mix (incl. trucks)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.22,
+        "units": 1550000,
+        "tier": "B",
+        "source": "US sales reports 2024 rough"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.19,
+        "units": 15000,
+        "tier": "B",
+        "source": "EPA + sales reports rough"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "RAV4 Prime",
+        "powertrain": "PHEV",
+        "uf": 0.5,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 40000,
+        "tier": "C",
+        "source": "SAE J2841 UF; overstatement caveat"
+      }
+    ]
+  },
+  "provenance": {
+    "engine_version": "0.1.0",
+    "engine_git_sha": "b6b544e3393024a04309f5741dffacdf2c75acef",
+    "workbook": "TI_Data_Workbook_v0.1.xlsx",
+    "build_date": "2026-07-22T07:44:20+00:00"
+  }
+}

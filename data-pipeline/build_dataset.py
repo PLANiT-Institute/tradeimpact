@@ -38,10 +38,23 @@ from ti_framework.io.fixtures import load_fixture  # noqa: E402
 from ti_framework.io.workbook import load_workbook_inputs  # noqa: E402
 from ti_framework.report.outputs import to_json_dict  # noqa: E402
 
-# firm slug -> fixture powering its report. Only ReferenceCo is runnable until
-# collection lands (COLLECTION_STATUS.md); real firms join here as their data arrives.
+# firm slug -> fixture powering its report. ReferenceCo is the validation fixture;
+# Toyota/Hyundai run on rough documented Tier B/C estimates (ESTIMATES.md) until
+# collection lands (COLLECTION_STATUS.md is the backlog).
 FIXTURES: dict[str, Path] = {
     "referenceco": ENGINE_DIR / "fixtures" / "reference_case.json",
+    "toyota": REPO / "data-pipeline" / "fixtures" / "toyota.json",
+    "hyundai": REPO / "data-pipeline" / "fixtures" / "hyundai.json",
+}
+
+# provenance note surfaced on the report page for estimate-based firms
+NOTES_BY_SLUG = {
+    "toyota": "Estimated-input case: NDC rates and grid intensities are collected (Tier A/B); "
+    "volumes, vehicle parameters and S1/S3 rates are rough documented estimates "
+    "(data-pipeline/ESTIMATES.md, Tier B/C). Replace with collected data as it lands.",
+    "hyundai": "Estimated-input case: NDC rates and grid intensities are collected (Tier A/B); "
+    "volumes, vehicle parameters and S1/S3 rates are rough documented estimates "
+    "(data-pipeline/ESTIMATES.md, Tier B/C). Replace with collected data as it lands.",
 }
 
 
@@ -79,14 +92,17 @@ def build_universe() -> list[dict]:
     ]
     for r in _rows(REPO / "TI_CaseStudy_Target_Companies.xlsx", "Sector"):
         name = r["Company (candidate)"]
+        slug = slugify(name)
         firms.append(
             {
-                "slug": slugify(name),
+                "slug": slug,
                 "name": name,
                 "sector": r["Sector"],
                 "country": r["Country"],
                 "project": "TI",
-                "runnable": slugify(name) in FIXTURES,
+                "runnable": slug in FIXTURES,
+                "basis": "estimated" if slug in NOTES_BY_SLUG else None,
+                "note": NOTES_BY_SLUG.get(slug),
                 "status": r.get("Status", ""),
                 "selection_criteria": r.get("Selection criteria", ""),
             }

@@ -46,7 +46,13 @@ export default function Home() {
                 {f.sector} · {f.country}
               </div>
               <div className={`fc-state ${f.runnable ? "ready" : "waiting"}`}>
-                {f.runnable ? (f.illustrative ? "REPORT · illustrative" : "REPORT") : "awaiting data"}
+                {f.runnable
+                  ? f.illustrative
+                    ? "REPORT · illustrative"
+                    : f.basis === "estimated"
+                      ? "REPORT · estimated"
+                      : "REPORT"
+                  : "awaiting data"}
               </div>
             </>
           );

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Annual TI flow and rolling portfolio TI (Guideline §4.5, §4.6).
+"""Annual TI flow and rolling portfolio TI (Whitepaper §3.8 [eq-3.8-portfolio], Guideline §4.5, §4.6).
 
     TI_annual,F,Y0,tau,S  = sum_v sum_c [ V_c,v * TI_gap,v,c(tau - Y0) ]   [tCO2e/yr]
     TI_portfolio,F,tau,S  = sum_{Y0 = tau-T+1}^{tau} TI_annual,F,Y0,tau,S   [tCO2e/yr]

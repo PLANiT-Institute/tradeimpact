@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Single-cohort firm-level aggregation with mandatory decomposition (Guideline §4.4).
+"""Single-cohort firm-level aggregation with mandatory decomposition
+(Whitepaper §3.6 [eq-3.6-cohort], §3.7 [eq-3.7-annual-flow], Guideline §4.4).
 
     TI_cohort,F,Y0,S = sum_v sum_c [ V_c,v * TI_vehicle,v,c,S ]   [tCO2e]
     decomposition:  TI_cohort = sum_c TI_country,c = sum_v TI_powertrain,v   (mandatory)

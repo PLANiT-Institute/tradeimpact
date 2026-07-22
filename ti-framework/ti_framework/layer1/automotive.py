@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Automotive Layer 1 — fleet benchmark intensity (Guideline §2.3).
+"""Automotive Layer 1 — fleet benchmark intensity (Whitepaper §3.1 [eq-3.1-benchmark], Guideline §2.3 [eq-g2.3b-ndc-trajectory]).
 
 Three methods:
     Method B  — Transport NDC trajectory (exponential decline). DEFAULT.
@@ -61,7 +61,7 @@ class MethodBBenchmark(Benchmark):
 
 @dataclass
 class MethodABenchmark(Benchmark):
-    """Method A — fleet stock model with Weibull survival (Guideline §2.3 Method A).
+    """Method A — fleet stock model with Weibull survival (Guideline §2.3 [eq-g2.3a-weibull]).
 
     I_fleet(t) = sum_y [ S(y,t) * I_new(y) ] / sum_y S(y,t),
     S(y,t) = N_new(y) * SR(t - y),  SR(age) = exp(-(age/alpha)^beta).
@@ -124,7 +124,7 @@ class MethodABenchmark(Benchmark):
 
 @dataclass
 class MethodCBenchmark(Benchmark):
-    """Method C — volume-weighted two-bin approximation (Guideline §2.3 Method C).
+    """Method C — volume-weighted two-bin approximation (Guideline §2.3 [eq-g2.3c-two-bin]).
 
     I(t) = RR * I_new(t) + (1 - RR) * I(t-1) * (1 + delta_scrap), with I(0) = intensity_base.
     ``i_new`` is the new-entrant intensity trajectory (callable of t or a sequence).
@@ -151,7 +151,7 @@ class MethodCBenchmark(Benchmark):
 
 
 def bc_divergence(b: Benchmark, c: Benchmark, T: int) -> dict[str, object]:
-    """Method B vs Method C divergence check (Guideline §2.3, §6.1).
+    """Method B vs Method C divergence check (Guideline §6.1 [rule-g6.1-bc-divergence]).
 
     Returns max relative divergence over t=0..T-1 and a flag if it exceeds 30% at any year.
     """

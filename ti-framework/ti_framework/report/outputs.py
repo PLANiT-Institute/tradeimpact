@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""CSV/JSON writers and the data-quality declaration (Guideline §5.1, §5.3).
+"""CSV/JSON writers and the data-quality declaration (Guideline §5.1, §5.3 [rule-g5.3-declaration];
+Whitepaper §5.1 [rule-5.1-tiers], §5.3 [rule-5.3-no-netting]).
 
 Required outputs (Guideline §5.1):
   1. TI_cohort,F,Y0,S [tCO2e], S1/S2/S3

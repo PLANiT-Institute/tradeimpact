@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Annual TI gap per vehicle (Guideline §4.1).
+"""Annual TI gap per vehicle (Whitepaper §3.3 [eq-3.3-annual-gap], Guideline §4.1).
 
     TI_gap,v,c(t) = E_ref,c(t) - E_prod,v,c(t)   [kgCO2e/vehicle/yr]
 

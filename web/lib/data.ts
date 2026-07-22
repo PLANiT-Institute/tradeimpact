@@ -14,6 +14,7 @@ export interface Firm {
   project: "TI" | "CAP";
   runnable: boolean;
   illustrative?: boolean;
+  basis?: "estimated" | null;
   note?: string;
   status?: string;
   selection_criteria?: string;

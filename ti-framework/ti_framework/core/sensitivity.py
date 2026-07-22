@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Sensitivity sweeps and uncertainty propagation (Guideline §5.2, build brief §5).
+"""Sensitivity sweeps and uncertainty propagation (Guideline §5.2 [rule-g5.2-sensitivity], build brief §5).
 
 Mandatory sweeps:
   * vehicle lifetime T ± 3 yr

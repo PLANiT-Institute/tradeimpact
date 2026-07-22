@@ -15,7 +15,9 @@
     "sector": "Automotive",
     "country": "Japan",
     "project": "TI",
-    "runnable": false,
+    "runnable": true,
+    "basis": "estimated",
+    "note": "Estimated-input case: NDC rates and grid intensities are collected (Tier A/B); volumes, vehicle parameters and S1/S3 rates are rough documented estimates (data-pipeline/ESTIMATES.md, Tier B/C). Replace with collected data as it lands.",
     "status": "Candidate (e.g.)",
     "selection_criteria": "Global sales volume; data availability; contrasting powertrain mix (ICE-heavy vs BEV-heavy)"
   },
@@ -25,7 +27,9 @@
     "sector": "Automotive",
     "country": "Korea",
     "project": "TI",
-    "runnable": false,
+    "runnable": true,
+    "basis": "estimated",
+    "note": "Estimated-input case: NDC rates and grid intensities are collected (Tier A/B); volumes, vehicle parameters and S1/S3 rates are rough documented estimates (data-pipeline/ESTIMATES.md, Tier B/C). Replace with collected data as it lands.",
     "status": "Candidate (e.g.)",
     "selection_criteria": "Global sales volume; data availability; contrasting powertrain mix (ICE-heavy vs BEV-heavy)"
   },
@@ -36,6 +40,8 @@
     "country": "Japan",
     "project": "TI",
     "runnable": false,
+    "basis": null,
+    "note": null,
     "status": "Candidate (e.g.)",
     "selection_criteria": "Vessel type mix; alternative-fuel order book; contrasting operating profile"
   },
@@ -46,6 +52,8 @@
     "country": "Japan",
     "project": "TI",
     "runnable": false,
+    "basis": null,
+    "note": null,
     "status": "Candidate (e.g.)",
     "selection_criteria": "Vessel type mix; alternative-fuel order book; contrasting operating profile"
   },
@@ -56,6 +64,8 @@
     "country": "Korea",
     "project": "TI",
     "runnable": false,
+    "basis": null,
+    "note": null,
     "status": "Candidate (e.g.)",
     "selection_criteria": "Vessel type mix; alternative-fuel order book; contrasting operating profile"
   },
@@ -66,6 +76,8 @@
     "country": "Korea",
     "project": "TI",
     "runnable": false,
+    "basis": null,
+    "note": null,
     "status": "Candidate (e.g.)",
     "selection_criteria": "Vessel type mix; alternative-fuel order book; contrasting operating profile"
   },
@@ -76,6 +88,8 @@
     "country": "Japan",
     "project": "TI",
     "runnable": false,
+    "basis": null,
+    "note": null,
     "status": "Candidate (e.g.)",
     "selection_criteria": "Mixed generation portfolio (coal+gas+nuclear+renewables); contrasting decarbonisation plans under NDC"
   },
@@ -86,6 +100,8 @@
     "country": "Japan",
     "project": "TI",
     "runnable": false,
+    "basis": null,
+    "note": null,
     "status": "Candidate (e.g.)",
     "selection_criteria": "Mixed generation portfolio (coal+gas+nuclear+renewables); contrasting decarbonisation plans under NDC"
   },
@@ -96,6 +112,8 @@
     "country": "Korea",
     "project": "TI",
     "runnable": false,
+    "basis": null,
+    "note": null,
     "status": "Candidate (e.g.)",
     "selection_criteria": "Mixed generation portfolio (coal+gas+nuclear+renewables); contrasting decarbonisation plans under NDC"
   },
@@ -106,6 +124,8 @@
     "country": "Korea",
     "project": "TI",
     "runnable": false,
+    "basis": null,
+    "note": null,
     "status": "Candidate (e.g.)",
     "selection_criteria": "Mixed generation portfolio (coal+gas+nuclear+renewables); contrasting decarbonisation plans under NDC"
   },
