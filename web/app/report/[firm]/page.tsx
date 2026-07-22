@@ -46,6 +46,11 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
           ±1% against an independent hand calculation; the inputs are not real-firm data.
         </p>
       )}
+      {meta?.basis === "estimated" && (
+        <p className="panel-note">
+          <strong>Estimated inputs.</strong> {meta.note}
+        </p>
+      )}
 
       <ScenarioCards
         totals={totals}

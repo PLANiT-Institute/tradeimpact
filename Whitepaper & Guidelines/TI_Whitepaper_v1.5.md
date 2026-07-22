@@ -76,7 +76,7 @@ The NDC benchmark is therefore not one choice among possible baselines. It is th
 ## 3. Mathematical Model
 
 ### 3.1 Layer 1 — NDC sector benchmark
-
+<a id="eq-3.1-benchmark"></a>
 The operating country's sector-average emission intensity per unit of service, declining along the NDC-committed path:
 
 ```
@@ -94,7 +94,7 @@ Three-scenario rates for r_sector,c:
 - **S3:** 1.5°C-aligned — IEA NZE sector trajectory
 
 ### 3.2 Layer 2 — Sold product emissions
-
+<a id="eq-3.2-product"></a>
 The actual use-phase emissions of the sold product of type v in operating country c at year t:
 
 ```
@@ -108,7 +108,7 @@ For clean-technology products: declines over time as the operating country's ene
 For hybrid products: a weighted composite of the above, with operating-country-specific weighting parameters.
 
 ### 3.3 Annual TI gap per product
-
+<a id="eq-3.3-annual-gap"></a>
 ```
 TI_gap,v,c(t) = E_ref,c(t) − E_prod,v,c(t)        [kgCO₂e / product / year]
 ```
@@ -117,11 +117,11 @@ Positive: the product emits less than the sector benchmark in year t — a clima
 Negative: the product emits more than the benchmark — a carbon lock-in liability.
 
 ### 3.4 Summation convention
-
+<a id="rule-3.4-summation"></a>
 T = total number of operating years. t runs from 0 to T−1 (T terms, inclusive).
 
 ### 3.5 Per-product cumulative TI
-
+<a id="eq-3.5-cumulative"></a>
 ```
 TI_product,v,c,S = Σ_{t=0}^{T−1} TI_gap,v,c(t)        [kgCO₂e / product over lifetime]
 ```
@@ -130,7 +130,7 @@ Positive: net contribution over the product's operational life.
 Negative: net lock-in liability over the product's operational life.
 
 ### 3.6 Single-cohort firm-level TI
-
+<a id="eq-3.6-cohort"></a>
 All products sold in cohort year Y₀, across all operating countries c and product types v:
 
 ```
@@ -154,7 +154,7 @@ TI_production,p,S = Σ_v Σ_c [ V_p,c,v × TI_product,v,c,S ]
 Where V_p,c,v = products produced in country p of type v operating in country c.
 
 ### 3.7 Annual TI flow from a single cohort
-
+<a id="eq-3.7-annual-flow"></a>
 ```
 TI_annual,F,Y₀,τ,S = Σ_v Σ_c [ V_c,v × TI_gap,v,c(τ − Y₀) ]        [tCO₂e / year]
 ```
@@ -162,7 +162,7 @@ TI_annual,F,Y₀,τ,S = Σ_v Σ_c [ V_c,v × TI_gap,v,c(τ − Y₀) ]        [t
 This time-series shows how the annual climate impact of one year's sales decisions evolves over the product lifetime. For clean-technology products, this typically narrows over time as the sector benchmark converges toward product emission levels. For conventional products, it turns negative as the benchmark falls below fixed emissions.
 
 ### 3.8 Rolling portfolio TI — primary disclosure metric
-
+<a id="eq-3.8-portfolio"></a>
 ```
 TI_portfolio,F,τ,S = Σ_{Y₀=τ−T+1}^{τ} TI_annual,F,Y₀,τ,S        [tCO₂e / year]
 ```
@@ -204,7 +204,7 @@ Manufacturing and end-of-life emissions are outside the TI boundary, consistent 
 ## 5. Data Quality and Transparency
 
 ### 5.1 Three-tier data quality hierarchy
-
+<a id="rule-5.1-tiers"></a>
 **Tier A (Firm-verified):** Direct product-level or market-level data from firm sustainability reports, CDP responses, or verified ESG databases.
 
 **Tier B (Estimated):** Cross-referenced from operating-country deployment registries, firm regional disclosures, and market data.
@@ -223,7 +223,7 @@ Every reported TI output must carry:
 - Decomposition by operating country and by product type — mandatory
 
 ### 5.3 Separation from Scope 3
-
+<a id="rule-5.3-no-netting"></a>
 TI must never net out or reduce the firm's reported Scope 3 Category 11 absolute emissions. TI is a separate additional disclosure only.
 
 ---

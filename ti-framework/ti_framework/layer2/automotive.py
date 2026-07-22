@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Automotive Layer 2 — sold-vehicle emissions (Guideline §3).
+"""Automotive Layer 2 — sold-vehicle emissions (Whitepaper §3.2 [eq-3.2-product], Guideline §3).
 
 Three cases:
     ICEEmissions  — ICE / non-plug-in HEV: E = I_export,ICE * D_c   (fixed at sale-year).
@@ -30,7 +30,7 @@ class GridTrajectory:
 
 @dataclass
 class ICEEmissions(ProductEmissions):
-    """ICE / non-plug-in HEV — fixed at sale-year efficiency (Guideline §3.3)."""
+    """ICE / non-plug-in HEV — fixed at sale-year efficiency (Guideline §3.3 [eq-g3.3-ice])."""
 
     ice_intensity: float  # I_export,ICE [kgCO2e/km], real-world corrected
     distance: float
@@ -41,7 +41,7 @@ class ICEEmissions(ProductEmissions):
 
 @dataclass
 class BEVEmissions(ProductEmissions):
-    """BEV — grid-declining emissions (Guideline §3.4)."""
+    """BEV — grid-declining emissions (Guideline §3.4 [eq-g3.4-bev])."""
 
     eta_ev: float  # kWh/km
     grid: GridTrajectory
@@ -53,7 +53,7 @@ class BEVEmissions(ProductEmissions):
 
 @dataclass
 class PHEVEmissions(ProductEmissions):
-    """PHEV — Utility-Factor composite of EV-mode grid and ICE-mode combustion (Guideline §3.5).
+    """PHEV — Utility-Factor composite of EV-mode grid and ICE-mode combustion (Guideline §3.5 [eq-g3.5-phev]).
 
     UF is the share of distance driven electrically. Mandatory sensitivity UF ± 0.15;
     regulatory UF overstates real-world electric share, so central results are upper bounds.

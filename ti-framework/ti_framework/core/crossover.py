@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Crossover point t* — the year TI_gap changes sign (Guideline §3.3, build brief §3).
+"""Crossover point t* — the year TI_gap changes sign (NOTES.md §4 [rule-n4-crossover], Guideline §3.3).
 
 Closed form where the gap is linear-in-exponentials:
   * ICE/HEV (constant E_prod vs exponential benchmark):

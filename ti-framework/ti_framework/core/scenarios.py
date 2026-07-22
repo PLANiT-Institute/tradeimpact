@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Three-scenario runner (Guideline §4.7) and the high-level engine entry point.
+"""Three-scenario runner (Guideline §4.7 [rule-g4.7-three-scenarios]) and the high-level engine entry point.
 
 Runs the full Layer 1->2->3 computation under S1/S2/S3 and assembles a ``RunResult`` with
 the required outputs and a data-quality declaration. Never reports S2 alone.
