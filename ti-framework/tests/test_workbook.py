@@ -8,9 +8,9 @@ from ti_framework.io.schema import is_placeholder, parse_rate_fraction, parse_st
 from ti_framework.io.workbook import load_reference_db, load_workbook_inputs
 from ti_framework.models import BenchmarkStatus
 
-_TRADE = Path(__file__).resolve().parents[2]
-_WORKBOOK = _TRADE / "TI_Data_Workbook_v0.1.xlsx"
-_REFDB = _TRADE / "TI_CaseStudy_Reference_DB_v0.1.xlsx"
+_DATA = Path(__file__).resolve().parents[1] / "data"
+_WORKBOOK = _DATA / "TI_Data_Workbook_v0.1.xlsx"
+_REFDB = _DATA / "TI_CaseStudy_Reference_DB_v0.1.xlsx"
 
 
 def test_is_placeholder():

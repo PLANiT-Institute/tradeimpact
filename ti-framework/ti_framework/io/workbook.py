@@ -11,8 +11,10 @@ Both are tolerant of the template's empty / placeholder cells: missing inputs be
 
 from __future__ import annotations
 
+from collections.abc import Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Protocol
 
 import openpyxl
 
@@ -25,6 +27,12 @@ from ti_framework.models import (
     Vehicle,
     Volume,
 )
+
+
+class RowSource(Protocol):
+    """Anything yielding sheet rows as value tuples — openpyxl worksheets and the CSV shim."""
+
+    def iter_rows(self, values_only: bool = ...) -> Iterator[tuple]: ...
 
 PRORATA_IDENTITY_WARNING = (
     "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). "
@@ -44,7 +52,7 @@ class WorkbookInputs:
     warnings: list[str] = field(default_factory=list)
 
 
-def _header_map(ws: openpyxl.worksheet.worksheet.Worksheet) -> dict[str, int]:
+def _header_map(ws: RowSource) -> dict[str, int]:
     header = next(ws.iter_rows(values_only=True))
     out: dict[str, int] = {}
     for i, c in enumerate(header):
@@ -95,7 +103,7 @@ def _apply_ndc_defaults(country: Country) -> None:
                 country.tier = DataTier.B  # downgrade
 
 
-def _load_layer1(ws: openpyxl.worksheet.worksheet.Worksheet) -> dict[str, Country]:
+def _load_layer1(ws: RowSource) -> dict[str, Country]:
     hm = _header_map(ws)
 
     def col(name: str) -> int | None:
@@ -146,7 +154,7 @@ def _load_layer1(ws: openpyxl.worksheet.worksheet.Worksheet) -> dict[str, Countr
     return out
 
 
-def _load_layer2(ws: openpyxl.worksheet.worksheet.Worksheet) -> list[Vehicle]:
+def _load_layer2(ws: RowSource) -> list[Vehicle]:
     hm = _header_map(ws)
 
     def get(row: tuple, name: str) -> object:
@@ -180,7 +188,7 @@ def _load_layer2(ws: openpyxl.worksheet.worksheet.Worksheet) -> list[Vehicle]:
     return out
 
 
-def _load_volumes(ws: openpyxl.worksheet.worksheet.Worksheet) -> list[Volume]:
+def _load_volumes(ws: RowSource) -> list[Volume]:
     hm = _header_map(ws)
 
     def get(row: tuple, name: str) -> object:
@@ -212,7 +220,7 @@ def _load_volumes(ws: openpyxl.worksheet.worksheet.Worksheet) -> list[Volume]:
     return out
 
 
-def _load_support(ws: openpyxl.worksheet.worksheet.Worksheet | None) -> SupportParams:
+def _load_support(ws: RowSource | None) -> SupportParams:
     sp = SupportParams()
     if ws is None:
         return sp
@@ -233,6 +241,20 @@ def _load_support(ws: openpyxl.worksheet.worksheet.Worksheet | None) -> SupportP
     return sp
 
 
+def _collect_missing(inputs: WorkbookInputs) -> None:
+    """Collect warnings and missing-input markers (shared by the xlsx and CSV paths)."""
+    for c in inputs.countries.values():
+        inputs.warnings.extend(f"[{c.code}] {w}" for w in c.warnings)
+        if c.is_flag:
+            inputs.missing_inputs.append(f"[{c.code}] benchmark FLAG: {c.status.value}")
+    if not any(v.units for v in inputs.volumes):
+        inputs.missing_inputs.append("Registration_Vcv: no volume units collected")
+    if not any(v.eta_ev or v.ice_intensity for v in inputs.vehicles):
+        inputs.missing_inputs.append("Layer2_vehicle_params: no vehicle parameters collected")
+    if inputs.support.lifetime_T is None:
+        inputs.missing_inputs.append("Support_params: vehicle lifetime T not collected")
+
+
 def load_workbook_inputs(path: str | Path) -> WorkbookInputs:
     """Load the TI_Data_Workbook template into validated models, tolerant of empty cells."""
     wb = openpyxl.load_workbook(path, data_only=True)
@@ -246,17 +268,7 @@ def load_workbook_inputs(path: str | Path) -> WorkbookInputs:
         inputs.volumes = _load_volumes(wb[S.SHEET_REG])
     inputs.support = _load_support(wb[S.SHEET_SUPPORT] if S.SHEET_SUPPORT in wb.sheetnames else None)
 
-    # Collect warnings and missing-input markers.
-    for c in inputs.countries.values():
-        inputs.warnings.extend(f"[{c.code}] {w}" for w in c.warnings)
-        if c.is_flag:
-            inputs.missing_inputs.append(f"[{c.code}] benchmark FLAG: {c.status.value}")
-    if not any(v.units for v in inputs.volumes):
-        inputs.missing_inputs.append("Registration_Vcv: no volume units collected")
-    if not any(v.eta_ev or v.ice_intensity for v in inputs.vehicles):
-        inputs.missing_inputs.append("Layer2_vehicle_params: no vehicle parameters collected")
-    if inputs.support.lifetime_T is None:
-        inputs.missing_inputs.append("Support_params: vehicle lifetime T not collected")
+    _collect_missing(inputs)
     return inputs
 
 
