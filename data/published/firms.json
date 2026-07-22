@@ -1,0 +1,193 @@
+[
+  {
+    "slug": "referenceco",
+    "name": "ReferenceCo",
+    "sector": "Automotive",
+    "country": "—",
+    "project": "TI",
+    "runnable": true,
+    "illustrative": true,
+    "note": "Committed validation fixture with illustrative parameters (NOTES.md D4). Demonstrates the full report until real-firm data is collected."
+  },
+  {
+    "slug": "toyota",
+    "name": "Toyota",
+    "sector": "Automotive",
+    "country": "Japan",
+    "project": "TI",
+    "runnable": false,
+    "status": "Candidate (e.g.)",
+    "selection_criteria": "Global sales volume; data availability; contrasting powertrain mix (ICE-heavy vs BEV-heavy)"
+  },
+  {
+    "slug": "hyundai",
+    "name": "Hyundai",
+    "sector": "Automotive",
+    "country": "Korea",
+    "project": "TI",
+    "runnable": false,
+    "status": "Candidate (e.g.)",
+    "selection_criteria": "Global sales volume; data availability; contrasting powertrain mix (ICE-heavy vs BEV-heavy)"
+  },
+  {
+    "slug": "kawasaki-heavy-industries",
+    "name": "Kawasaki Heavy Industries",
+    "sector": "Shipping",
+    "country": "Japan",
+    "project": "TI",
+    "runnable": false,
+    "status": "Candidate (e.g.)",
+    "selection_criteria": "Vessel type mix; alternative-fuel order book; contrasting operating profile"
+  },
+  {
+    "slug": "mitsui",
+    "name": "Mitsui",
+    "sector": "Shipping",
+    "country": "Japan",
+    "project": "TI",
+    "runnable": false,
+    "status": "Candidate (e.g.)",
+    "selection_criteria": "Vessel type mix; alternative-fuel order book; contrasting operating profile"
+  },
+  {
+    "slug": "hd-hyundai-heavy-industries",
+    "name": "HD Hyundai Heavy Industries",
+    "sector": "Shipping",
+    "country": "Korea",
+    "project": "TI",
+    "runnable": false,
+    "status": "Candidate (e.g.)",
+    "selection_criteria": "Vessel type mix; alternative-fuel order book; contrasting operating profile"
+  },
+  {
+    "slug": "samsung-heavy-industries",
+    "name": "Samsung Heavy Industries",
+    "sector": "Shipping",
+    "country": "Korea",
+    "project": "TI",
+    "runnable": false,
+    "status": "Candidate (e.g.)",
+    "selection_criteria": "Vessel type mix; alternative-fuel order book; contrasting operating profile"
+  },
+  {
+    "slug": "jera",
+    "name": "JERA",
+    "sector": "Power",
+    "country": "Japan",
+    "project": "TI",
+    "runnable": false,
+    "status": "Candidate (e.g.)",
+    "selection_criteria": "Mixed generation portfolio (coal+gas+nuclear+renewables); contrasting decarbonisation plans under NDC"
+  },
+  {
+    "slug": "tepco",
+    "name": "TEPCO",
+    "sector": "Power",
+    "country": "Japan",
+    "project": "TI",
+    "runnable": false,
+    "status": "Candidate (e.g.)",
+    "selection_criteria": "Mixed generation portfolio (coal+gas+nuclear+renewables); contrasting decarbonisation plans under NDC"
+  },
+  {
+    "slug": "kepco",
+    "name": "KEPCO",
+    "sector": "Power",
+    "country": "Korea",
+    "project": "TI",
+    "runnable": false,
+    "status": "Candidate (e.g.)",
+    "selection_criteria": "Mixed generation portfolio (coal+gas+nuclear+renewables); contrasting decarbonisation plans under NDC"
+  },
+  {
+    "slug": "korea-southern-power-kospo",
+    "name": "Korea Southern Power (KOSPO)",
+    "sector": "Power",
+    "country": "Korea",
+    "project": "TI",
+    "runnable": false,
+    "status": "Candidate (e.g.)",
+    "selection_criteria": "Mixed generation portfolio (coal+gas+nuclear+renewables); contrasting decarbonisation plans under NDC"
+  },
+  {
+    "slug": "posco-posco-holdings",
+    "name": "POSCO (POSCO Holdings)",
+    "sector": "Steel",
+    "country": "Korea",
+    "project": "CAP",
+    "runnable": false,
+    "ticker": "KRX 005490"
+  },
+  {
+    "slug": "hyundai-steel",
+    "name": "Hyundai Steel",
+    "sector": "Steel",
+    "country": "Korea",
+    "project": "CAP",
+    "runnable": false,
+    "ticker": "KRX 004020"
+  },
+  {
+    "slug": "nippon-steel",
+    "name": "Nippon Steel",
+    "sector": "Steel",
+    "country": "Japan",
+    "project": "CAP",
+    "runnable": false,
+    "ticker": "TSE 5401"
+  },
+  {
+    "slug": "jfe-steel-jfe-holdings",
+    "name": "JFE Steel (JFE Holdings)",
+    "sector": "Steel",
+    "country": "Japan",
+    "project": "CAP",
+    "runnable": false,
+    "ticker": "TSE 5411"
+  },
+  {
+    "slug": "lg-chem",
+    "name": "LG Chem",
+    "sector": "Petrochemical",
+    "country": "Korea",
+    "project": "CAP",
+    "runnable": false,
+    "ticker": "KRX 051910"
+  },
+  {
+    "slug": "lotte-chemical",
+    "name": "Lotte Chemical",
+    "sector": "Petrochemical",
+    "country": "Korea",
+    "project": "CAP",
+    "runnable": false,
+    "ticker": "KRX 011170"
+  },
+  {
+    "slug": "mitsubishi-chemical-group",
+    "name": "Mitsubishi Chemical Group",
+    "sector": "Petrochemical",
+    "country": "Japan",
+    "project": "CAP",
+    "runnable": false,
+    "ticker": "TSE 4188"
+  },
+  {
+    "slug": "sumitomo-chemical",
+    "name": "Sumitomo Chemical",
+    "sector": "Petrochemical",
+    "country": "Japan",
+    "project": "CAP",
+    "runnable": false,
+    "ticker": "TSE 4005"
+  },
+  {
+    "slug": "mitsui-chemicals",
+    "name": "Mitsui Chemicals",
+    "sector": "Petrochemical",
+    "country": "Japan",
+    "project": "CAP",
+    "runnable": false,
+    "ticker": "TSE 4183"
+  }
+]
