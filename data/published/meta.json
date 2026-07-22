@@ -1,10 +1,10 @@
 {
   "engine": "ti_framework",
   "engine_version": "0.1.0",
-  "engine_git_sha": "2a9938ef2f490832db6381e05ea56fd16381fc8a",
+  "engine_git_sha": "f44c12e937681cf344727e60aee870649f9710f0",
   "workbook": "TI_Data_Workbook_v0.1.xlsx",
   "workbook_sha256": "cca5fe38f26beb1e",
-  "build_date": "2026-07-22T00:54:33+00:00",
+  "build_date": "2026-07-22T01:01:24+00:00",
   "collection_status": {
     "countries_loaded": 9,
     "missing_inputs": [

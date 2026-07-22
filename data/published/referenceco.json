@@ -161,84 +161,96 @@
       "powertrain": "BEV",
       "scenario": "S1",
       "crossover_year": 153.89530040089326,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 15224.776903277078
     },
     {
       "country": "KR",
       "powertrain": "ICE",
       "scenario": "S1",
       "crossover_year": 1.215415595451548,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": -4088.9748213846606
     },
     {
       "country": "KR",
       "powertrain": "PHEV",
       "scenario": "S1",
       "crossover_year": 8.268750994358593,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 768.2481673538878
     },
     {
       "country": "EU",
       "powertrain": "BEV",
       "scenario": "S1",
       "crossover_year": 135.51764032769412,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 16844.379540174057
     },
     {
       "country": "KR",
       "powertrain": "BEV",
       "scenario": "S2",
       "crossover_year": 115.00204691754534,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 13577.31390316268
     },
     {
       "country": "KR",
       "powertrain": "ICE",
       "scenario": "S2",
       "crossover_year": 0.6928510593296057,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": -7185.918204081507
     },
     {
       "country": "KR",
       "powertrain": "PHEV",
       "scenario": "S2",
       "crossover_year": 4.660300929908441,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": -1684.4817119729803
     },
     {
       "country": "EU",
       "powertrain": "BEV",
       "scenario": "S2",
       "crossover_year": 63.44892161993812,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 16760.215580343625
     },
     {
       "country": "KR",
       "powertrain": "BEV",
       "scenario": "S3",
       "crossover_year": 36.395478701579506,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 12147.401229463068
     },
     {
       "country": "KR",
       "powertrain": "ICE",
       "scenario": "S3",
       "crossover_year": 0.424023217427278,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": -10874.619272867327
     },
     {
       "country": "KR",
       "powertrain": "PHEV",
       "scenario": "S3",
       "crossover_year": 2.956018440097106,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": -4369.276827387151
     },
     {
       "country": "EU",
       "powertrain": "BEV",
       "scenario": "S3",
       "crossover_year": 51.56352939383363,
-      "reason": null
+      "reason": null,
+      "TI_per_vehicle_kgCO2e": 13307.485602109084
     }
   ],
   "data_quality": {
@@ -446,8 +458,8 @@
   },
   "provenance": {
     "engine_version": "0.1.0",
-    "engine_git_sha": "2a9938ef2f490832db6381e05ea56fd16381fc8a",
+    "engine_git_sha": "f44c12e937681cf344727e60aee870649f9710f0",
     "workbook": "TI_Data_Workbook_v0.1.xlsx",
-    "build_date": "2026-07-22T00:54:33+00:00"
+    "build_date": "2026-07-22T01:01:24+00:00"
   }
 }

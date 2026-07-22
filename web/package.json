@@ -1,0 +1,23 @@
+{
+  "name": "ti-web",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "prebuild": "node scripts/prepare.mjs",
+    "predev": "node scripts/prepare.mjs",
+    "dev": "next dev",
+    "dev:local": "node scripts/prepare.mjs && TI_COMPUTE_URL=http://127.0.0.1:8901/ next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.3.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "typescript": "^5"
+  }
+}
