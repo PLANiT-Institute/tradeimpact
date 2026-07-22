@@ -1,0 +1,27 @@
+{
+  "engine": "ti_framework",
+  "engine_version": "0.1.0",
+  "engine_git_sha": "2a9938ef2f490832db6381e05ea56fd16381fc8a",
+  "workbook": "TI_Data_Workbook_v0.1.xlsx",
+  "workbook_sha256": "cca5fe38f26beb1e",
+  "build_date": "2026-07-22T00:54:33+00:00",
+  "collection_status": {
+    "countries_loaded": 9,
+    "missing_inputs": [
+      "[US] benchmark FLAG: FLAG_NO_BENCHMARK",
+      "[IN] benchmark FLAG: FLAG_INTENSITY",
+      "[ID] benchmark FLAG: FLAG_BAU",
+      "[SA] benchmark FLAG: FLAG_NO_BASELINE",
+      "[CN] benchmark FLAG: FLAG_PEAK",
+      "Registration_Vcv: no volume units collected",
+      "Layer2_vehicle_params: no vehicle parameters collected",
+      "Support_params: vehicle lifetime T not collected"
+    ],
+    "warnings": [
+      "[AU] PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded.",
+      "[EU] PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded.",
+      "[JP] PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded.",
+      "[KR] PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+    ]
+  }
+}

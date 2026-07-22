@@ -52,8 +52,11 @@ def _tier(s: str | None) -> DataTier:
 
 
 def load_fixture(path: str | Path) -> FixtureRun:
-    raw = json.loads(Path(path).read_text())
+    return parse_fixture(json.loads(Path(path).read_text()))
 
+
+def parse_fixture(raw: dict) -> FixtureRun:
+    """Build a FixtureRun from an already-parsed dict (file loads and API payloads alike)."""
     countries: dict[str, Country] = {}
     for code, c in raw.get("countries", {}).items():
         countries[code] = Country(

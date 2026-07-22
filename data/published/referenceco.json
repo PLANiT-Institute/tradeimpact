@@ -1,0 +1,453 @@
+{
+  "firm": "ReferenceCo",
+  "cohort_year": 2024,
+  "cohorts": {
+    "S1": {
+      "total_tCO2e": 1077486.4536469202,
+      "direction": "contribution",
+      "directional_only": false,
+      "by_country": {
+        "KR": 572155.0674416985,
+        "EU": 505331.3862052217
+      },
+      "by_powertrain": {
+        "BEV": 1266570.2313690756,
+        "ICE": -204448.74106923302,
+        "PHEV": 15364.963347077755
+      },
+      "annual_tCO2e": [
+        105908.532,
+        100559.87604,
+        95329.4247588,
+        90214.63799103603,
+        85213.02763492992,
+        80322.15667375637,
+        75539.63821248445,
+        70863.13452948502,
+        66290.35614319099,
+        61819.0608935898,
+        57447.05303842621,
+        53172.182363986954,
+        48992.34331033643,
+        44905.47411086758,
+        40909.55594603057
+      ],
+      "excluded_flag_markets": {},
+      "warnings": []
+    },
+    "S2": {
+      "total_tCO2e": 788686.6181249078,
+      "direction": "contribution",
+      "directional_only": false,
+      "by_country": {
+        "KR": 285880.15071459906,
+        "EU": 502806.4674103088
+      },
+      "by_powertrain": {
+        "BEV": 1181672.1625684428,
+        "ICE": -359295.91020407534,
+        "PHEV": -33689.63423945961
+      },
+      "annual_tCO2e": [
+        105908.532,
+        96952.58312001287,
+        88342.4849212507,
+        80064.7533028344,
+        72106.42781128097,
+        64455.0516393603,
+        57098.65236524306,
+        50025.72340599311,
+        43225.206160278794,
+        36686.472815980036,
+        30399.3097991482,
+        24353.90184153714,
+        18540.816644664417,
+        12950.990119082657,
+        7575.712178241123
+      ],
+      "excluded_flag_markets": {},
+      "warnings": []
+    },
+    "S3": {
+      "total_tCO2e": 375478.12934531656,
+      "direction": "contribution",
+      "directional_only": false,
+      "by_country": {
+        "KR": -23746.43871795594,
+        "EU": 399224.5680632725
+      },
+      "by_powertrain": {
+        "BEV": 1006594.6295364259,
+        "ICE": -543730.9636433664,
+        "PHEV": -87385.536547743
+      },
+      "annual_tCO2e": [
+        105908.532,
+        91086.79317000002,
+        77153.26636544998,
+        64058.22738394574,
+        51754.373394508984,
+        40196.74493647652,
+        29342.645389031935,
+        19151.55879155018,
+        9585.066771091471,
+        606.7652237464827,
+        -7817.818700392774,
+        -15721.308844416748,
+        -23134.561135105327,
+        -30086.743194232444,
+        -36605.41220633744
+      ],
+      "excluded_flag_markets": {},
+      "warnings": []
+    }
+  },
+  "portfolio": {
+    "S1": [
+      105908.532,
+      206468.40804,
+      301797.8327988,
+      392012.470789836,
+      477225.49842476594,
+      557547.6550985223,
+      633087.2933110067,
+      703950.4278404918,
+      770240.7839836827,
+      832059.8448772725,
+      889506.8979156987,
+      942679.0802796857,
+      991671.4235900221,
+      1036576.8977008897,
+      1077486.4536469204
+    ],
+    "S2": [
+      105908.532,
+      202861.1151200129,
+      291203.6000412636,
+      371268.353344098,
+      443374.781155379,
+      507829.83279473934,
+      564928.4851599825,
+      614954.2085659755,
+      658179.4147262543,
+      694865.8875422344,
+      725265.1973413826,
+      749619.0991829197,
+      768159.9158275841,
+      781110.9059466667,
+      788686.6181249078
+    ],
+    "S3": [
+      105908.532,
+      196995.32517000003,
+      274148.59153545,
+      338206.81891939574,
+      389961.1923139047,
+      430157.9372503812,
+      459500.5826394131,
+      478652.1414309633,
+      488237.2082020548,
+      488843.97342580126,
+      481026.1547254085,
+      465304.8458809917,
+      442170.2847458864,
+      412083.54155165394,
+      375478.1293453165
+    ]
+  },
+  "crossover": [
+    {
+      "country": "KR",
+      "powertrain": "BEV",
+      "scenario": "S1",
+      "crossover_year": 153.89530040089326,
+      "reason": null
+    },
+    {
+      "country": "KR",
+      "powertrain": "ICE",
+      "scenario": "S1",
+      "crossover_year": 1.215415595451548,
+      "reason": null
+    },
+    {
+      "country": "KR",
+      "powertrain": "PHEV",
+      "scenario": "S1",
+      "crossover_year": 8.268750994358593,
+      "reason": null
+    },
+    {
+      "country": "EU",
+      "powertrain": "BEV",
+      "scenario": "S1",
+      "crossover_year": 135.51764032769412,
+      "reason": null
+    },
+    {
+      "country": "KR",
+      "powertrain": "BEV",
+      "scenario": "S2",
+      "crossover_year": 115.00204691754534,
+      "reason": null
+    },
+    {
+      "country": "KR",
+      "powertrain": "ICE",
+      "scenario": "S2",
+      "crossover_year": 0.6928510593296057,
+      "reason": null
+    },
+    {
+      "country": "KR",
+      "powertrain": "PHEV",
+      "scenario": "S2",
+      "crossover_year": 4.660300929908441,
+      "reason": null
+    },
+    {
+      "country": "EU",
+      "powertrain": "BEV",
+      "scenario": "S2",
+      "crossover_year": 63.44892161993812,
+      "reason": null
+    },
+    {
+      "country": "KR",
+      "powertrain": "BEV",
+      "scenario": "S3",
+      "crossover_year": 36.395478701579506,
+      "reason": null
+    },
+    {
+      "country": "KR",
+      "powertrain": "ICE",
+      "scenario": "S3",
+      "crossover_year": 0.424023217427278,
+      "reason": null
+    },
+    {
+      "country": "KR",
+      "powertrain": "PHEV",
+      "scenario": "S3",
+      "crossover_year": 2.956018440097106,
+      "reason": null
+    },
+    {
+      "country": "EU",
+      "powertrain": "BEV",
+      "scenario": "S3",
+      "crossover_year": 51.56352939383363,
+      "reason": null
+    }
+  ],
+  "data_quality": {
+    "firm": "ReferenceCo",
+    "cohort_year": 2024,
+    "analysis_level": "Level 1",
+    "layer1_method": "B",
+    "benchmark_tiers": {
+      "KR": "A",
+      "EU": "A"
+    },
+    "layer2_tiers": {
+      "Hyundai Ioniq5": "A",
+      "Hyundai Sonata": "A",
+      "Kia Sorento": "A",
+      "Hyundai Kona": "A"
+    },
+    "volume_tiers": {
+      "KR": "A",
+      "EU": "A"
+    },
+    "lifetime_T": 15,
+    "lifetime_sens": 3,
+    "scenario_sources": {
+      "S1": "IEA WEO STEPS (transport & electricity)",
+      "S2": "UNFCCC NDC unconditional (pro-rata, economy-wide)",
+      "S3": "IEA NZE (transport & electricity)"
+    },
+    "missing_inputs": [],
+    "warnings": [],
+    "flag_markets": {}
+  },
+  "sensitivity": {
+    "lifetime": {
+      "T_minus": {
+        "S1": 942679.0802796858,
+        "S2": 749619.0991829197,
+        "S3": 465304.8458809918
+      },
+      "T_central": {
+        "S1": 1077486.4536469202,
+        "S2": 788686.6181249078,
+        "S3": 375478.12934531656
+      },
+      "T_plus": {
+        "S1": 1177119.7192456615,
+        "S2": 781183.9769273975,
+        "S3": 230503.36216935675
+      }
+    },
+    "uf": {
+      "UF_central": {
+        "S1": 1077486.4536469202,
+        "S2": 788686.6181249078,
+        "S3": 375478.12934531656
+      },
+      "UF_lower": {
+        "S1": 1011807.2812313811,
+        "S2": 718175.8444340938,
+        "S3": 297438.06100421515
+      },
+      "UF_upper": {
+        "S1": 1143165.6260624593,
+        "S2": 859197.3918157218,
+        "S3": 453518.1976864179
+      }
+    },
+    "realworld": {
+      "RW_low": {
+        "S1": 1219218.5751029456,
+        "S2": 925434.2763592007,
+        "S3": 504054.2516929403
+      },
+      "RW_central": {
+        "S1": 1077486.4536469202,
+        "S2": 788686.6181249078,
+        "S3": 375478.12934531656
+      },
+      "RW_high": {
+        "S1": 368825.8463667949,
+        "S2": 104948.32695344277,
+        "S3": -267402.4823928012
+      }
+    },
+    "scenario_spread": {
+      "S1": 1077486.4536469202,
+      "S2": 788686.6181249078,
+      "S3": 375478.12934531656
+    },
+    "sector_split": {
+      "uncorrected": {
+        "S1": 1077486.4536469202,
+        "S2": 788686.6181249078,
+        "S3": 375478.12934531656
+      },
+      "corrected": {
+        "S1": 1077486.4536469202,
+        "S2": 788686.6181249078,
+        "S3": 375478.12934531656
+      }
+    }
+  },
+  "inputs": {
+    "firm": "ReferenceCo",
+    "cohort_year": 2024,
+    "analysis_level": "Level 1",
+    "layer1_method": "B",
+    "config": {
+      "scenarios": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "flag_market_rule": "exclude"
+    },
+    "support": {
+      "lifetime_T": 15,
+      "lifetime_sens": 3,
+      "vkt": {
+        "KR": 13000.0,
+        "EU": 12000.0
+      },
+      "uf_band": 0.15,
+      "realworld_range": [
+        0.95,
+        1.25
+      ]
+    },
+    "countries": {
+      "KR": {
+        "name": "South Korea",
+        "grid_intensity": 0.41551,
+        "fleet_intensity_base": 0.165,
+        "r_fleet": {
+          "s1": 0.025,
+          "s2": 0.043441272053699,
+          "s3": 0.07
+        },
+        "r_power": {
+          "s1": 0.03,
+          "s2": 0.05,
+          "s3": 0.09
+        },
+        "status": "COMPUTED",
+        "tier": "A"
+      },
+      "EU": {
+        "name": "European Union",
+        "grid_intensity": 0.21135,
+        "fleet_intensity_base": 0.14,
+        "r_fleet": {
+          "s1": 0.02,
+          "s2": 0.023848569511212,
+          "s3": 0.06
+        },
+        "r_power": {
+          "s1": 0.03,
+          "s2": 0.045,
+          "s3": 0.085
+        },
+        "status": "COMPUTED",
+        "tier": "A"
+      }
+    },
+    "placements": [
+      {
+        "country": "KR",
+        "brand": "Hyundai",
+        "model": "Ioniq5",
+        "powertrain": "BEV",
+        "eta_ev": 0.18,
+        "units": 50000,
+        "tier": "A"
+      },
+      {
+        "country": "KR",
+        "brand": "Hyundai",
+        "model": "Sonata",
+        "powertrain": "ICE",
+        "ice_intensity": 0.16,
+        "units": 50000,
+        "tier": "A"
+      },
+      {
+        "country": "KR",
+        "brand": "Kia",
+        "model": "Sorento",
+        "powertrain": "PHEV",
+        "uf": 0.4,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.18,
+        "units": 20000,
+        "tier": "A"
+      },
+      {
+        "country": "EU",
+        "brand": "Hyundai",
+        "model": "Kona",
+        "powertrain": "BEV",
+        "eta_ev": 0.165,
+        "units": 30000,
+        "tier": "A"
+      }
+    ]
+  },
+  "provenance": {
+    "engine_version": "0.1.0",
+    "engine_git_sha": "2a9938ef2f490832db6381e05ea56fd16381fc8a",
+    "workbook": "TI_Data_Workbook_v0.1.xlsx",
+    "build_date": "2026-07-22T00:54:33+00:00"
+  }
+}
