@@ -3,7 +3,6 @@
   "framework": "nextjs",
   "functions": {
     "api/compute.py": {
-      "memory": 1024,
       "maxDuration": 30
     }
   }
