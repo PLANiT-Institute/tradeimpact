@@ -10,6 +10,11 @@ const repo = dirname(web);
 
 const published = join(repo, "data", "published");
 if (!existsSync(published)) {
+  // CLI deploys upload only web/ — the copies were made locally before upload.
+  if (existsSync(join(web, "public", "data")) && existsSync(join(web, "api", "_engine"))) {
+    console.log("prepare: repo sources absent, keeping pre-copied public/data + api/_engine");
+    process.exit(0);
+  }
   console.error("data/published missing — run data-pipeline/build_dataset.py first");
   process.exit(1);
 }
