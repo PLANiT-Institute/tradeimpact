@@ -143,8 +143,37 @@ def build_meta() -> dict:
     }
 
 
+# slugs whose fixture country benchmarks are refreshed from the workbook at build time —
+# the workbook stays the single source of truth for Layer 1 (grid, S2 rates, status).
+# ReferenceCo is excluded: it is the frozen validation case (NOTES.md D4).
+MERGE_WORKBOOK = {"toyota", "hyundai"}
+
+
+def merge_workbook_benchmarks(fx, workbook_countries) -> None:
+    """Overwrite fixture Layer-1 values with collected workbook values where present.
+
+    Fixture keeps anything the workbook has not collected (e.g. Tier C S1/S3 estimates)
+    — no collected value is ever shadowed by an estimate, and no empty workbook cell
+    ever erases a documented estimate.
+    """
+    for code, c in fx.countries.items():
+        wb = workbook_countries.get(code)
+        if wb is None:
+            continue
+        if wb.grid_intensity is not None:
+            c.grid_intensity = wb.grid_intensity
+        for attr in ("r_fleet", "r_power"):
+            for s in ("s1", "s2", "s3", "s2_upper"):
+                v = getattr(getattr(wb, attr), s)
+                if v is not None:
+                    setattr(getattr(c, attr), s, v)
+        c.status = wb.status
+
+
 def run_firm(slug: str, fixture_path: Path) -> dict:
     fx = load_fixture(fixture_path)
+    if slug in MERGE_WORKBOOK:
+        merge_workbook_benchmarks(fx, load_workbook_inputs(WORKBOOK).countries)
     result = run(
         fx.firm, fx.cohort_year, fx.placements, fx.countries, fx.support, fx.config,
         analysis_level=fx.analysis_level, layer1_method=fx.layer1_method,
