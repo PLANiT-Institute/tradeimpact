@@ -1,10 +1,12 @@
 import Link from "next/link";
 import GapHero from "@/components/GapHero";
+import { getCountryViews } from "@/lib/country";
 import { getFirms, getMeta } from "@/lib/data";
 
 export default function Home() {
   const firms = getFirms();
   const meta = getMeta();
+  const countries = getCountryViews();
   const ti = firms.filter((f) => f.project === "TI");
   const cap = firms.filter((f) => f.project === "CAP");
 
@@ -66,6 +68,27 @@ export default function Home() {
             </div>
           );
         })}
+      </div>
+
+      <h2>By operating country</h2>
+      <p className="panel-note">
+        The country-first read: each firm&apos;s net effect on that country&apos;s
+        NDC-committed path, side by side (never summed — Whitepaper §9.2).
+      </p>
+      <div className="firm-grid">
+        {countries.map((c) => (
+          <Link className="firm-card" href={`/country/${c.code}`} key={c.code}>
+            <div className="fc-name">
+              {c.name} <span className="mono" style={{ color: "var(--ink-3)" }}>{c.code}</span>
+            </div>
+            <div className="fc-sub">
+              {c.firms.length} firm{c.firms.length > 1 ? "s" : ""} assessed
+            </div>
+            <div className={`fc-state ${c.benchmarkStatus === "COMPUTED" ? "ready" : "waiting"}`}>
+              {c.benchmarkStatus === "COMPUTED" ? "NDC BENCHMARK" : "FLAG — no S2 benchmark"}
+            </div>
+          </Link>
+        ))}
       </div>
 
       <h2>CAP candidates (separate project)</h2>
