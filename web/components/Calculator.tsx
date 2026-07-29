@@ -73,8 +73,8 @@ export default function Calculator({ template }: { template: Inputs }) {
         setStatus("");
         setResult(null);
         setError(
-          "Compute request failed. On a local machine, start scripts/dev_compute.py and " +
-            "run dev with TI_COMPUTE_URL set. Detail: " +
+          "Compute request failed. On a local machine, run the app with `npm run dev:local` " +
+            "(starts the compute sidecar automatically). Detail: " +
             String(e).slice(0, 200),
         );
       } finally {

@@ -354,7 +354,7 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
                       <td className="mono">{row.year}{row.year === result.cohort_year ? " (published cohort)" : ""}</td>
                       <td className="num">{row.units.toLocaleString("en-US")}</td>
                       <td className="num">{s2 ? (s2.directional_only ? "direction only" : compactCarbon(s2.total_tCO2e)) : "—"}</td>
-                      <td className="num">{delta === undefined ? "—" : `${delta > 0 ? "+" : "−"}${compactCarbon(Math.abs(delta))}`}</td>
+                      <td className="num">{delta === undefined ? "—" : delta === 0 ? "0" : `${delta > 0 ? "+" : "−"}${compactCarbon(Math.abs(delta))}`}</td>
                       <td><span className={`direction-chip ${directionClass(direction)}`}>{ndcImpactLabel(direction)}</span></td>
                     </tr>
                   );
