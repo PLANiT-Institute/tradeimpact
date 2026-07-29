@@ -2856,3 +2856,77 @@ footer.site .planit-mark {
     display: none;
   }
 }
+
+/* --- brand logo (PLANiT) in the top bar --- */
+.brand-logo {
+  display: block;
+  width: auto;
+}
+
+/* --- Korea dashboard --- */
+.korea-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin: 22px 0 6px;
+}
+.korea-facts > div {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.korea-facts strong {
+  display: block;
+  font: 600 22px/1.2 var(--font-display), serif;
+}
+.korea-facts span {
+  color: var(--ink-3);
+  font-size: 12px;
+}
+.korea-firm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 18px;
+}
+.korea-firm-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.korea-firm-card h3 {
+  margin: 0;
+}
+.korea-firm-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+.korea-year-row {
+  display: grid;
+  grid-template-columns: 44px 90px 1fr 90px;
+  gap: 10px;
+  align-items: center;
+  font-size: 12.5px;
+}
+.korea-year-row .mono {
+  color: var(--ink-2);
+}
+.korea-bar {
+  height: 12px;
+  border-radius: 6px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.korea-bar span {
+  display: block;
+  height: 100%;
+}
+.korea-bar span.pos { background: var(--pos); }
+.korea-bar span.neg { background: var(--neg); }
