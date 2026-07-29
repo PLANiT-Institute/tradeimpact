@@ -4,7 +4,13 @@ from pathlib import Path
 
 import pytest
 
-from ti_framework.io.schema import is_placeholder, parse_rate_fraction, parse_status
+from ti_framework.io.schema import (
+    SchemaError,
+    is_placeholder,
+    parse_rate_fraction,
+    parse_rate_percent,
+    parse_status,
+)
 from ti_framework.io.workbook import load_reference_db, load_workbook_inputs
 from ti_framework.models import BenchmarkStatus
 
@@ -24,9 +30,16 @@ def test_is_placeholder():
 
 
 def test_parse_rate_fraction():
-    assert parse_rate_fraction(4.34) == pytest.approx(0.0434)
     assert parse_rate_fraction(0.0434) == pytest.approx(0.0434)
     assert parse_rate_fraction("TO EXTRACT") is None
+    with pytest.raises(SchemaError):
+        parse_rate_fraction(4.34)  # percent in a fraction column: loud, never rescaled
+
+
+def test_parse_rate_percent():
+    assert parse_rate_percent(4.34) == pytest.approx(0.0434)
+    assert parse_rate_percent(0.5) == pytest.approx(0.005)  # 0.5 %/yr, not rescaled
+    assert parse_rate_percent("TO EXTRACT") is None
 
 
 def test_parse_status():

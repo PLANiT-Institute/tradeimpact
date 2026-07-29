@@ -5,3 +5,4 @@ next-env.d.ts
 public/data/
 api/_engine/
 .vercel
+.prepared-manifest.json

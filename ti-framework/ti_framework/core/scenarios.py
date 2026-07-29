@@ -8,10 +8,12 @@ the required outputs and a data-quality declaration. Never reports S2 alone.
 from __future__ import annotations
 
 from ti_framework.core.aggregate import Placement, compute_cohort
+from ti_framework.core.portfolio import rolling_portfolio
 from ti_framework.models import (
     CohortResult,
     Country,
     DataQuality,
+    DataTier,
     EngineConfig,
     RunResult,
     Scenario,
@@ -28,18 +30,20 @@ _SCENARIO_SOURCE_DEFAULT = {
 }
 
 
-def _portfolio_rampup(annual: list[float]) -> list[float]:
-    """Illustrative rolling-portfolio series for identical repeated cohorts.
+def _portfolio_rampup(annual: list[float], cohort_year: int) -> list[float]:
+    """Rolling-portfolio ramp-up for identical repeated cohorts (WP §3.8).
 
-    portfolio[n] = sum_{t=0}^{n} annual[t], building up to the steady-state value
-    (= TI_cohort) as cohorts accumulate. See core/portfolio.py for the general multi-cohort form.
+    Assumes a cohort identical to this one is sold every year from ``cohort_year``
+    onward and evaluates ``core.portfolio.rolling_portfolio`` — the general
+    multi-cohort form — over the first T calendar years. The series builds up to
+    the steady-state value (= TI_cohort) as cohorts accumulate.
     """
-    out: list[float] = []
-    running = 0.0
-    for a in annual:
-        running += a
-        out.append(running)
-    return out
+    T = len(annual)
+    if T == 0:
+        return []
+    cohorts = {cohort_year + i: annual for i in range(T)}
+    series = rolling_portfolio(cohorts, range(cohort_year, cohort_year + T))
+    return [series[tau] for tau in range(cohort_year, cohort_year + T)]
 
 
 def run(
@@ -66,7 +70,7 @@ def run(
         cohorts[scenario] = cohort
         all_vehicle_results.extend(vrs)
         missing.extend(miss)
-        portfolio[scenario] = _portfolio_rampup(cohort.annual)
+        portfolio[scenario] = _portfolio_rampup(cohort.annual, cohort_year)
 
     # De-duplicate missing while preserving order.
     missing_unique = list(dict.fromkeys(missing))
@@ -77,15 +81,14 @@ def run(
     for sc in cohorts.values():
         flag_markets.update(sc.excluded_flag_markets)
     layer2_tiers: dict[str, str] = {}
-    volume_tiers: dict[str, str] = {}
+    volume_tier_values: dict[str, DataTier] = {}
     warnings: list[str] = []
     for p in placements:
         key = f"{p.vehicle.brand} {p.vehicle.model or ''}".strip()
         layer2_tiers[key] = p.vehicle.tier.value
-        volume_tiers[p.country_code] = max(
-            volume_tiers.get(p.country_code, "A"),
-            "A",  # placeholder; refined below
-        )
+        current = volume_tier_values.get(p.country_code, DataTier.A)
+        if p.volume_tier.rank >= current.rank:
+            volume_tier_values[p.country_code] = p.volume_tier
     for c in countries.values():
         warnings.extend(c.warnings)
     for sc in cohorts.values():
@@ -100,7 +103,7 @@ def run(
         layer1_method=layer1_method,
         benchmark_tiers=benchmark_tiers,
         layer2_tiers=layer2_tiers,
-        volume_tiers=volume_tiers,
+        volume_tiers={code: tier.value for code, tier in volume_tier_values.items()},
         lifetime_T=support.lifetime_T,
         lifetime_sens=support.lifetime_sens,
         scenario_sources=scenario_sources,
@@ -120,9 +123,7 @@ def run(
     )
 
 
-def placements_from_volumes(
-    volumes: list[Volume], vehicles: list[Vehicle]
-) -> list[Placement]:
+def placements_from_volumes(volumes: list[Volume], vehicles: list[Vehicle]) -> list[Placement]:
     """Assemble placements by matching registration volumes to vehicle parameter rows.
 
     Matches on (brand, model, powertrain), falling back to (brand, powertrain). Volumes with
@@ -144,7 +145,19 @@ def placements_from_volumes(
             (vol.brand, None, vol.powertrain)
         )
         if veh is None:
-            veh = Vehicle(brand=vol.brand or "", model=vol.model, powertrain=vol.powertrain,
-                          tier=vol.tier)
-        out.append(Placement(country_code=vol.country_code, vehicle=veh, units=vol.units))
+            veh = Vehicle(
+                brand=vol.brand or "",
+                model=vol.model,
+                powertrain=vol.powertrain,
+                tier=DataTier.UNKNOWN,
+            )
+        out.append(
+            Placement(
+                country_code=vol.country_code,
+                vehicle=veh,
+                units=vol.units,
+                volume_tier=vol.tier,
+                volume_source=vol.source,
+            )
+        )
     return out

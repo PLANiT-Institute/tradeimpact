@@ -42,9 +42,7 @@ class FixtureRun:
 
 def _rate(d: dict | None) -> ScenarioRate:
     d = d or {}
-    return ScenarioRate(
-        s1=d.get("s1"), s2=d.get("s2"), s3=d.get("s3"), s2_upper=d.get("s2_upper")
-    )
+    return ScenarioRate(s1=d.get("s1"), s2=d.get("s2"), s3=d.get("s3"), s2_upper=d.get("s2_upper"))
 
 
 def _tier(s: str | None) -> DataTier:
@@ -101,15 +99,26 @@ def parse_fixture(raw: dict) -> FixtureRun:
             eta_elec=p.get("eta_elec"),
             ice_mode_intensity=p.get("ice_mode_intensity"),
             realworld_correction=p.get("realworld_correction"),
-            tier=_tier(p.get("tier")),
-            source=p.get("source"),
+            tier=_tier(p.get("vehicle_tier", p.get("tier"))),
+            source=p.get("vehicle_source", p.get("source")),
         )
         placements.append(
-            Placement(country_code=p["country"], vehicle=veh, units=p.get("units"))
+            Placement(
+                country_code=p["country"],
+                vehicle=veh,
+                units=p.get("units"),
+                # Older fixtures used one tier/source for the whole placement. Keep
+                # that as a compatibility fallback while allowing the two inputs to
+                # be audited independently going forward.
+                volume_tier=_tier(p.get("volume_tier", p.get("tier"))),
+                volume_source=p.get("volume_source", p.get("source")),
+            )
         )
 
     cfg = raw.get("config", {})
-    scenarios = tuple(Scenario(x) for x in cfg["scenarios"]) if "scenarios" in cfg else ALL_SCENARIOS
+    scenarios = (
+        tuple(Scenario(x) for x in cfg["scenarios"]) if "scenarios" in cfg else ALL_SCENARIOS
+    )
     config = EngineConfig(
         scenarios=scenarios,
         flag_market_rule=cfg.get("flag_market_rule", "exclude"),

@@ -146,23 +146,19 @@ class Volume:
 
 
 @dataclass
-class WeibullParams:
-    alpha: float
-    beta: float
-
-
-@dataclass
 class SupportParams:
-    """Sector-wide support parameters and sensitivity bands (Support_params sheet)."""
+    """Sector-wide support parameters and sensitivity bands (Support_params sheet).
+
+    Method A (Weibull) and Method C (renewal/scrappage) inputs are passed directly to
+    their benchmark classes (layer1/automotive.py) — no loader collects them yet, so
+    they deliberately have no fields here until a data path exists.
+    """
 
     lifetime_T: int | None = None  # central T
     lifetime_sens: int = 3  # +/- years
     vkt: dict[str, float] = field(default_factory=dict)  # D_c per country code [km/yr]
     uf_band: float = 0.15  # +/- UF sensitivity
     realworld_range: tuple[float, float] | None = None
-    weibull: dict[str, WeibullParams] = field(default_factory=dict)  # per country
-    renewal_rate: dict[str, float] = field(default_factory=dict)  # RR_c
-    scrappage: dict[str, float] = field(default_factory=dict)  # delta_scrap,c
 
     def vkt_for(self, code: str) -> float | None:
         return self.vkt.get(code)

@@ -12,7 +12,7 @@ license = { text = "GPL-3.0-or-later" }
 authors = [{ name = "PLANiT Institute" }]
 keywords = ["climate", "NDC", "trade", "emissions", "automotive", "decarbonisation"]
 dependencies = [
-    "numpy>=1.24",
+    "numpy>=1.24,<2.4",
     "pandas>=2.0",
     "matplotlib>=3.7",
     "openpyxl>=3.1",

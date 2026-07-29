@@ -22,29 +22,41 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Trade Impact Framework — PLANiT Institute",
   description:
-    "Firm-level climate direction: does a company's product portfolio contribute to or undermine each operating country's NDC-committed decarbonisation path?",
+    "How represented product sales contribute to or lock in emissions against assessed operating countries' NDC commitments.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
-      <body>
+      <body className="dark-app">
         <div className="shell">
           <header className="topbar">
             <Link href="/" className="wordmark">
-              Trade Impact <span>· PLANiT Institute</span>
+              <span className="brand-mark" aria-hidden="true">TI</span>
+              <span className="brand-lockup">
+                Trade Impact
+                <small>product impact on NDC delivery</small>
+              </span>
             </Link>
-            <nav className="topnav">
-              <Link href="/">Assessments</Link>
-              <Link href="/calculator">Assumptions</Link>
-              <a href="https://transitionarc.climatearc.org">Methodology</a>
+            <nav className="topnav" aria-label="Primary navigation">
+              <Link href="/">Story</Link>
+              <Link href="/#assessments">Assessments</Link>
+              <Link href="/#markets">Markets</Link>
+              <a href="https://transitionarc.climatearc.org">Method</a>
+              <Link href="/calculator" className="nav-cta">NDC impact lab</Link>
             </nav>
           </header>
           {children}
           <footer className="site">
-            TI is a separate additional disclosure alongside Scope 3 Category 11 — never
-            netted against it. All results report the full S1/S2/S3 scenario triplet.
-            Published under GNU GPL v3 · © 2026 PLANiT Institute.
+            <div>
+              <strong>Trade Impact</strong>
+              <p>Product-level impact on national NDC delivery.</p>
+            </div>
+            <p>
+              TI is a separate additional disclosure alongside Scope 3 Category 11 — never
+              netted against it. All results report the full S1/S2/S3 scenario triplet.
+              Published under GNU GPL v3 · © 2026 PLANiT Institute.
+            </p>
           </footer>
         </div>
       </body>

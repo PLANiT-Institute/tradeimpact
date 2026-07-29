@@ -17,7 +17,7 @@ Docs: `Whitepaper & Guidelines/TI_Whitepaper_v1.5.md` (WP),
 | [eq-g2.3b-ndc-trajectory] GL §2.3 Method B | `ti_framework/layer1/automotive.py` | `tests/test_layer1.py::test_method_b_series_length` |
 | [eq-g2.3a-weibull] GL §2.3 Method A Weibull stock | `ti_framework/layer1/automotive.py` | `tests/test_layer1.py::test_method_a_fleet_stock_average` |
 | [eq-g2.3c-two-bin] GL §2.3 Method C two-bin | `ti_framework/layer1/automotive.py` | `tests/test_layer1.py::test_method_c_two_bin_recursion` |
-| [rule-g6.1-bc-divergence] GL §6.1 B/C >30% trip-wire | `ti_framework/layer1/automotive.py` | `tests/test_layer1.py::test_bc_divergence_flag` |
+| [rule-g6.1-bc-divergence] GL §6.1 B/C >30% trip-wire (validation utility — production runs Method B only until Method C inputs are collected) | `ti_framework/layer1/automotive.py` | `tests/test_layer1.py::test_bc_divergence_flag` |
 | [eq-3.2-product] WP §3.2 sold-product emissions | `ti_framework/layer2/automotive.py` | `tests/test_layer2.py::test_grid_trajectory_declines` |
 | [eq-g3.3-ice] GL §3.3 ICE fixed at sale | `ti_framework/layer2/automotive.py` | `tests/test_layer2.py::test_ice_is_constant` |
 | [eq-g3.4-bev] GL §3.4 BEV grid-declining | `ti_framework/layer2/automotive.py` | `tests/test_layer2.py::test_bev_tracks_grid` |

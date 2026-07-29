@@ -39,5 +39,30 @@ jobs:
         with: { node-version: "22" }
       - run: pip install -e "ti-framework"
       - run: python data-pipeline/build_dataset.py
+      - run: python data-pipeline/check_published.py
+      # Fails on modified AND untracked output — git diff alone is blind to
+      # files build_dataset.py creates that were never committed.
+      - name: Published data must be committed and fresh
+        run: |
+          status=$(git status --porcelain -- data/published)
+          if [ -n "$status" ]; then
+            echo "data/published is stale or has uncommitted output:"
+            echo "$status"
+            exit 1
+          fi
+      - run: npm ci --prefix web
+      - run: npm test --prefix web
+      - run: python -c "import sys; sys.path.insert(0, 'web/api'); import compute"
+      - run: npm run build --prefix web
+
+  # The web app must build from committed files alone — no engine, no
+  # build_dataset.py. This is exactly what Vercel does; if this job fails,
+  # production deploys are broken even when dataset-and-web is green.
+  web-clean-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
       - run: npm ci --prefix web
       - run: npm run build --prefix web

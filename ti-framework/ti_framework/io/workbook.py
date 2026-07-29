@@ -18,7 +18,7 @@ from typing import Protocol
 
 import openpyxl
 
-from ti_framework.io import schema as S
+import ti_framework.io.schema as S
 from ti_framework.models import (
     Country,
     DataTier,
@@ -133,8 +133,8 @@ def _load_layer1(ws: RowSource) -> dict[str, Country]:
             target_year=int(S.num(get(row, "Target yr")) or 0) or None,
             reduction_low=S.num(get(row, "Reduction low (frac)")),
             reduction_high=S.num(get(row, "Reduction high (frac)")),
-            econ_rate_low=S.parse_rate_fraction(get(row, "Econ-wide rate low (%/yr)")),
-            econ_rate_high=S.parse_rate_fraction(get(row, "Econ-wide rate high (%/yr)")),
+            econ_rate_low=S.parse_rate_percent(get(row, "Econ-wide rate low (%/yr)")),
+            econ_rate_high=S.parse_rate_percent(get(row, "Econ-wide rate high (%/yr)")),
             r_fleet=ScenarioRate(
                 s1=S.parse_rate_fraction(get(row, "r_fleet S1 (STEPS)")),
                 s2=S.parse_rate_fraction(get(row, "r_fleet S2 (NDC)")),
