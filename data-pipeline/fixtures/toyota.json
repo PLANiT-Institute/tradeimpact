@@ -21,7 +21,9 @@
       "KR": 13000.0,
       "US": 18000.0,
       "CN": 12000.0,
-      "IN": 10000.0
+      "IN": 10000.0,
+      "CA": 15366.0,
+      "UK": 11426.0
     },
     "uf_band": 0.15,
     "realworld_range": [
@@ -161,6 +163,48 @@
       "status": "FLAG_INTENSITY",
       "tier": "C",
       "source": "GDP-intensity target — not an absolute emissions path (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
+    },
+    "CA": {
+      "name": "Canada",
+      "grid_intensity": 0.18535,
+      "fleet_intensity_base": 0.19,
+      "r_fleet": {
+        "s1": 0.012,
+        "s2": 0.019730651845791147,
+        "s3": 0.06
+      },
+      "r_power": {
+        "s1": 0.035,
+        "s2": 0.019730651845791147,
+        "s3": 0.09
+      },
+      "status": "COMPUTED",
+      "tier": "B",
+      "source": "S2: UNFCCC CA 2035 NDC Feb 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+      "warnings": [
+        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+      ]
+    },
+    "UK": {
+      "name": "United Kingdom",
+      "grid_intensity": 0.2165,
+      "fleet_intensity_base": 0.145,
+      "r_fleet": {
+        "s1": 0.022,
+        "s2": 0.03623244400122316,
+        "s3": 0.065
+      },
+      "r_power": {
+        "s1": 0.05,
+        "s2": 0.03623244400122316,
+        "s3": 0.1
+      },
+      "status": "COMPUTED",
+      "tier": "B",
+      "source": "S2: UNFCCC UK 2035 NDC Jan 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+      "warnings": [
+        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+      ]
     }
   },
   "placements": [
@@ -395,6 +439,663 @@
       "vehicle_source": "Analyst fixed-emission proxy; 0.155 kgCO2e/km assumption documented in ESTIMATES.md",
       "volume_source": "Toyota Kirloskar Motor CY2024 domestic sales release (2025-01-01), 300,159 units: https://www.toyotabharat.com/news/2025/tkm-records-its-highest-ever-calendar-year-sales-in-2024-by-selling-326329-units.html",
       "source": "TKM CY2024 domestic total; vehicle intensity is a Tier C analyst proxy (ESTIMATES.md)"
+    },
+    {
+      "country": "CA",
+      "brand": "Toyota",
+      "model": "ICE mix (incl. trucks/SUV)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.2,
+      "units": 131433,
+      "tier": "C",
+      "source": "Toyota Canada 2024 total 238,933 (media.toyota.ca); split is Tier C analyst allocation"
+    },
+    {
+      "country": "CA",
+      "brand": "Toyota",
+      "model": "HEV mix (RAV4/Corolla)",
+      "powertrain": "HEV",
+      "ice_intensity": 0.13,
+      "units": 100000,
+      "tier": "C",
+      "source": "Toyota Canada 2024 record electrified sales; HEV share Tier C allocation"
+    },
+    {
+      "country": "CA",
+      "brand": "Toyota",
+      "model": "bZ4X / Lexus BEV",
+      "powertrain": "BEV",
+      "eta_ev": 0.19,
+      "units": 7500,
+      "tier": "C",
+      "source": "Tier C allocation constrained to official total"
+    },
+    {
+      "country": "UK",
+      "brand": "Toyota",
+      "model": "HEV mix (Yaris/Corolla/C-HR)",
+      "powertrain": "HEV",
+      "ice_intensity": 0.115,
+      "units": 82000,
+      "tier": "C",
+      "source": "SMMT 2024 Toyota+Lexus 118,095; UK Toyota HEV-dominant, Tier C allocation"
+    },
+    {
+      "country": "UK",
+      "brand": "Toyota",
+      "model": "ICE mix",
+      "powertrain": "ICE",
+      "ice_intensity": 0.17,
+      "units": 30095,
+      "tier": "C",
+      "source": "Tier C allocation constrained to SMMT total"
+    },
+    {
+      "country": "UK",
+      "brand": "Toyota",
+      "model": "bZ4X",
+      "powertrain": "BEV",
+      "eta_ev": 0.18,
+      "units": 6000,
+      "tier": "C",
+      "source": "Tier C allocation constrained to SMMT total"
     }
-  ]
+  ],
+  "placements_by_year": {
+    "2022": [
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "HEV mix (Corolla/Yaris/RAV4)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.115,
+        "units": 421371,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8941 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.17,
+        "units": 811471,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8941 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.18,
+        "units": 3127,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8941 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "Prius PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.45,
+        "eta_elec": 0.19,
+        "ice_mode_intensity": 0.14,
+        "units": 15753,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8941 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.125,
+        "units": 397597,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9039 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "ICE mix (incl. trucks)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.22,
+        "units": 1662289,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9039 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.19,
+        "units": 2371,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9039 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "RAV4 Prime",
+        "powertrain": "PHEV",
+        "uf": 0.5,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 21235,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9039 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.11,
+        "units": 444878,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8850 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.16,
+        "units": 551050,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8850 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.175,
+        "units": 6191,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8850 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "RAV4 PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.45,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 15593,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8850 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CN",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.175,
+        "units": 1630254,
+        "tier": "C",
+        "vehicle_tier": "C",
+        "volume_tier": "C",
+        "vehicle_source": "Analyst powertrain/intensity proxy documented in ESTIMATES.md",
+        "volume_source": "Analyst allocation constrained to Toyota 2024 country total in official detailed sales data: https://global.toyota/en/company/profile/production-sales-figures/202412.html",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 1.0927 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CN",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.12,
+        "units": 308979,
+        "tier": "C",
+        "vehicle_tier": "C",
+        "volume_tier": "C",
+        "vehicle_source": "Analyst powertrain/intensity proxy documented in ESTIMATES.md",
+        "volume_source": "Analyst allocation constrained to Toyota 2024 country total in official detailed sales data: https://global.toyota/en/company/profile/production-sales-figures/202412.html",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 1.0927 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CN",
+        "brand": "Toyota",
+        "model": "bZ series",
+        "powertrain": "BEV",
+        "eta_ev": 0.17,
+        "units": 5733,
+        "tier": "C",
+        "vehicle_tier": "C",
+        "volume_tier": "C",
+        "vehicle_source": "Analyst BEV-efficiency proxy documented in ESTIMATES.md",
+        "volume_source": "Analyst allocation constrained to Toyota 2024 country total in official detailed sales data: https://global.toyota/en/company/profile/production-sales-figures/202412.html",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 1.0927 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "IN",
+        "brand": "Toyota",
+        "model": "2024 domestic fixed-emission mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.155,
+        "units": 156952,
+        "tier": "C",
+        "vehicle_tier": "C",
+        "volume_tier": "A",
+        "vehicle_source": "Analyst fixed-emission proxy; 0.155 kgCO2e/km assumption documented in ESTIMATES.md",
+        "volume_source": "Toyota Kirloskar Motor CY2024 domestic sales release (2025-01-01), 300,159 units: https://www.toyotabharat.com/news/2025/tkm-records-its-highest-ever-calendar-year-sales-in-2024-by-selling-326329-units.html",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.5229 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Toyota",
+        "model": "HEV mix (RAV4/Corolla)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.12,
+        "units": 70438,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9341 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Toyota",
+        "model": "ICE mix (incl. HiLux)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.21,
+        "units": 151392,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9341 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.185,
+        "units": 490,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9341 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "KR",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.115,
+        "units": 2940,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.5848 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "KR",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.17,
+        "units": 2323,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.5848 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Toyota",
+        "model": "ICE mix (incl. trucks/SUV)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.2,
+        "units": 146452,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8379 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Toyota",
+        "model": "HEV mix (RAV4/Corolla)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.13,
+        "units": 52653,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8379 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Toyota",
+        "model": "bZ4X / Lexus BEV",
+        "powertrain": "BEV",
+        "eta_ev": 0.19,
+        "units": 1099,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.8379 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Toyota",
+        "model": "HEV mix (Yaris/Corolla/C-HR)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.115,
+        "units": 49241,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9556 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.17,
+        "units": 62612,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9556 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.18,
+        "units": 1003,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9556 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      }
+    ],
+    "2023": [
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "HEV mix (Corolla/Yaris/RAV4)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.115,
+        "units": 718480,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 1.1603 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.17,
+        "units": 860479,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 1.1603 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.18,
+        "units": 17255,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 1.1603 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "JP",
+        "brand": "Toyota",
+        "model": "Prius PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.45,
+        "eta_elec": 0.19,
+        "ice_mode_intensity": 0.14,
+        "units": 28207,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 1.1603 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.125,
+        "units": 557089,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9639 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "ICE mix (incl. trucks)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.22,
+        "units": 1622766,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9639 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.19,
+        "units": 10751,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9639 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Toyota",
+        "model": "RAV4 Prime",
+        "powertrain": "PHEV",
+        "uf": 0.5,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 31244,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9639 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.11,
+        "units": 635814,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9626 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.16,
+        "units": 419174,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9626 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.175,
+        "units": 28631,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9626 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Toyota",
+        "model": "RAV4 PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.45,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 23401,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9626 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CN",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.175,
+        "units": 1488869,
+        "tier": "C",
+        "vehicle_tier": "C",
+        "volume_tier": "C",
+        "vehicle_source": "Analyst powertrain/intensity proxy documented in ESTIMATES.md",
+        "volume_source": "Analyst allocation constrained to Toyota 2024 country total in official detailed sales data: https://global.toyota/en/company/profile/production-sales-figures/202412.html",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 1.0741 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CN",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.12,
+        "units": 399060,
+        "tier": "C",
+        "vehicle_tier": "C",
+        "volume_tier": "C",
+        "vehicle_source": "Analyst powertrain/intensity proxy documented in ESTIMATES.md",
+        "volume_source": "Analyst allocation constrained to Toyota 2024 country total in official detailed sales data: https://global.toyota/en/company/profile/production-sales-figures/202412.html",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 1.0741 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CN",
+        "brand": "Toyota",
+        "model": "bZ series",
+        "powertrain": "BEV",
+        "eta_ev": 0.17,
+        "units": 23960,
+        "tier": "C",
+        "vehicle_tier": "C",
+        "volume_tier": "C",
+        "vehicle_source": "Analyst BEV-efficiency proxy documented in ESTIMATES.md",
+        "volume_source": "Analyst allocation constrained to Toyota 2024 country total in official detailed sales data: https://global.toyota/en/company/profile/production-sales-figures/202412.html",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 1.0741 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "IN",
+        "brand": "Toyota",
+        "model": "2024 domestic fixed-emission mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.155,
+        "units": 222030,
+        "tier": "C",
+        "vehicle_tier": "C",
+        "volume_tier": "A",
+        "vehicle_source": "Analyst fixed-emission proxy; 0.155 kgCO2e/km assumption documented in ESTIMATES.md",
+        "volume_source": "Toyota Kirloskar Motor CY2024 domestic sales release (2025-01-01), 300,159 units: https://www.toyotabharat.com/news/2025/tkm-records-its-highest-ever-calendar-year-sales-in-2024-by-selling-326329-units.html",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.7397 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Toyota",
+        "model": "HEV mix (RAV4/Corolla)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.12,
+        "units": 89555,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9039 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Toyota",
+        "model": "ICE mix (incl. HiLux)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.21,
+        "units": 123560,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9039 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.185,
+        "units": 2016,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9039 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "KR",
+        "brand": "Toyota",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.115,
+        "units": 6152,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9314 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "KR",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.17,
+        "units": 2231,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9314 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Toyota",
+        "model": "ICE mix (incl. trucks/SUV)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.2,
+        "units": 143553,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9520 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Toyota",
+        "model": "HEV mix (RAV4/Corolla)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.13,
+        "units": 78598,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9520 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Toyota",
+        "model": "bZ4X / Lexus BEV",
+        "powertrain": "BEV",
+        "eta_ev": 0.19,
+        "units": 5309,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 0.9520 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Toyota",
+        "model": "HEV mix (Yaris/Corolla/C-HR)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.115,
+        "units": 72134,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 1.0655 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Toyota",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.17,
+        "units": 48940,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 1.0655 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Toyota",
+        "model": "bZ4X",
+        "powertrain": "BEV",
+        "eta_ev": 0.18,
+        "units": 4753,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): Tier A market ratio 1.0655 x Tier A global powertrain-mix ratio; ICE residual to market total"
+      }
+    ]
+  },
+  "netzero": {
+    "target_year": 2050,
+    "scope": "Life-cycle carbon neutrality by 2050 (Toyota Environmental Challenge 2050); Scope 1+2 -68% by 2035 vs 2019 (SBTi-validated)",
+    "interim": "New-vehicle gCO2e/km -33.3% by 2030 and >50% by 2035 vs 2019 (Scope 3 cat.11) · BEV 1.5M/yr by 2026, 3.5M/yr by 2030 · all plants carbon neutral by 2035",
+    "source": "https://global.toyota/en/newsroom/corporate/39013233.html",
+    "announced": "2015-10"
+  }
 }

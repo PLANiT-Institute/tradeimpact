@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScenarioCards from "@/components/ScenarioCards";
 import { getCountryView, getCountryViews } from "@/lib/country";
-import { getMeta } from "@/lib/data";
+import { getMeta, SCENARIO_LABELS, SCENARIOS } from "@/lib/data";
 
 export function generateStaticParams() {
   return getCountryViews().map((v) => ({ code: v.code }));
@@ -76,6 +76,40 @@ export default async function CountryPage({ params }: { params: Promise<{ code: 
           Benchmark source: {v.source}
         </p>
       )}
+
+      <details className="table-view" style={{ marginTop: 16 }}>
+        <summary>Sector benchmark parameters (transport · power)</summary>
+        <div className="table-scroll" style={{ marginTop: 8 }}>
+          <table>
+            <thead>
+              <tr>
+                <th>Scenario</th>
+                <th className="num">Transport fleet reduction (%/yr)</th>
+                <th className="num">Power sector reduction (%/yr)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {SCENARIOS.map((s) => {
+                const key = s.toLowerCase();
+                const fleet = v.rFleet?.[key];
+                const power = v.rPower?.[key];
+                return (
+                  <tr key={s}>
+                    <td>{SCENARIO_LABELS[s]}{s === "S2" ? " (NDC)" : ""}</td>
+                    <td className="num">{fleet === undefined ? "—" : (fleet * 100).toFixed(2)}</td>
+                    <td className="num">{power === undefined ? "—" : (power * 100).toFixed(2)}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        <p className="panel-note" style={{ marginTop: 8 }}>
+          Grid intensity {v.gridIntensity === undefined ? "—" : `${(v.gridIntensity * 1000).toFixed(0)} gCO₂/kWh`} ·
+          annual driving distance {v.vkt == null ? "—" : `${v.vkt.toLocaleString("en-US")} km`}.
+          Transport rates benchmark ICE/HEV products; power rates drive the grid trajectory behind BEV/PHEV products.
+        </p>
+      </details>
 
       {v.firms.map((f) => (
         <section className="market-firm-section" key={f.slug}>

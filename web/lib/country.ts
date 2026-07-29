@@ -32,6 +32,10 @@ export interface CountryView {
   source?: string;
   /** Annual km driven from the published support contract (null when not supplied). */
   vkt?: number | null;
+  /** Sector benchmark parameters from the canonical country contract. */
+  gridIntensity?: number;
+  rFleet: Record<string, number>;
+  rPower: Record<string, number>;
   warnings: string[];
   firms: CountryFirmRow[];
 }
@@ -61,6 +65,9 @@ export function getCountryViews(): CountryView[] {
           flagReason: country.flag_reason,
           source: country.source,
           vkt: country.vkt,
+          gridIntensity: country.grid_intensity,
+          rFleet: country.r_fleet,
+          rPower: country.r_power,
           warnings: country.warnings ?? [],
           firms: [],
         };

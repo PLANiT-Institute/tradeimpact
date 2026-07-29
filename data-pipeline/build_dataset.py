@@ -32,7 +32,7 @@ sys.path.insert(0, str(ENGINE_DIR))
 
 from ti_framework.core.scenarios import run  # noqa: E402
 from ti_framework.core.sensitivity import run_sensitivity  # noqa: E402
-from ti_framework.io.fixtures import load_fixture  # noqa: E402
+from ti_framework.io.fixtures import load_fixture, parse_fixture  # noqa: E402
 from ti_framework.io.schema import FLAG_REASONS  # noqa: E402
 from ti_framework.io.workbook import load_workbook_inputs  # noqa: E402
 from ti_framework.models import BenchmarkStatus  # noqa: E402
@@ -361,6 +361,67 @@ def build_contract(payloads: dict[str, dict]) -> dict:
     return contract
 
 
+BY_YEAR_NOTE = (
+    "Benchmarks and support parameters held at the current workbook vintage; "
+    "year-over-year differences isolate export volume and powertrain-mix changes."
+)
+
+
+def build_by_year(raw: dict, fx) -> dict:
+    """Run the engine once per historical cohort year (``placements_by_year``).
+
+    Benchmarks and support parameters are held at the current workbook vintage, so
+    differences across years isolate the export volume / powertrain-mix effect —
+    they are NOT restated historical benchmarks. The primary cohort year is always
+    included so the series is complete. Reused verbatim by check_published.py.
+    """
+    by_year_placements = raw.get("placements_by_year") or {}
+    series: list[dict] = []
+    for year_str in sorted({*by_year_placements, str(fx.cohort_year)}):
+        year = int(year_str)
+        if year == fx.cohort_year:
+            placements = fx.placements
+        else:
+            # Only the placements differ per year — countries/support come from the
+            # already-merged fx, so no workbook re-merge is needed here.
+            placements = parse_fixture(
+                {**raw, "cohort_year": year, "placements": by_year_placements[year_str]}
+            ).placements
+        result = run(
+            fx.firm,
+            year,
+            placements,
+            fx.countries,
+            fx.support,
+            fx.config,
+            analysis_level=fx.analysis_level,
+            layer1_method=fx.layer1_method,
+        )
+        year_payload = to_json_dict(result)
+        series.append(
+            {
+                "year": year,
+                "units": sum(p.units or 0 for p in placements),
+                "units_by_country": _units_by_country(placements),
+                "cohorts": {
+                    scenario: {
+                        key: cohort[key]
+                        for key in ("total_tCO2e", "direction", "directional_only", "by_country")
+                    }
+                    for scenario, cohort in year_payload["cohorts"].items()
+                },
+            }
+        )
+    return {"note": BY_YEAR_NOTE, "series": series}
+
+
+def _units_by_country(placements) -> dict[str, float]:
+    out: dict[str, float] = {}
+    for p in placements:
+        out[p.country_code] = out.get(p.country_code, 0.0) + (p.units or 0)
+    return out
+
+
 def run_firm(slug: str, fixture_path: Path) -> dict:
     fx = load_fixture(fixture_path)
     if slug in MERGE_WORKBOOK:
@@ -380,6 +441,9 @@ def run_firm(slug: str, fixture_path: Path) -> dict:
         fx.firm, fx.cohort_year, fx.placements, fx.countries, fx.support, fx.config
     )
     payload["inputs"] = effective_inputs(fx, fixture_path)
+    # by_year runs from the effective (post-merge) inputs so check_published can
+    # recompute it from the published payload alone.
+    payload["by_year"] = build_by_year(payload["inputs"], fx)
     return payload
 
 
@@ -405,6 +469,9 @@ def main() -> int:
         } | {"input_sha256": input_sha}
         payloads[firm["slug"]] = payload
         firm["cohort_year"] = payload["cohort_year"]
+        # Net-zero commitment lives in the fixture (with sources); surfaced on the
+        # firm card so TI direction can be read against the firm's own target.
+        firm["netzero"] = payload["inputs"].get("netzero")
         coverage = COVERAGE_BY_SLUG.get(firm["slug"])
         if coverage:
             assessed_units = sum(p.get("units") or 0 for p in payload["inputs"]["placements"])

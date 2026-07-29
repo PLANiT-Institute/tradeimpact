@@ -86,6 +86,8 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
   const support =
     (result.inputs?.support as { lifetime_T?: number; vkt?: Record<string, number> } | undefined) ??
     {};
+  const yearSeries = result.by_year?.series ?? [];
+  const hasTrend = yearSeries.length > 1;
   const representedUnits =
     meta?.assessed_units ??
     placements.reduce((total, placement) => total + (placement.units ?? 0), 0);
@@ -165,6 +167,7 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
         <span>Jump to</span>
         <Link href="#finding">Finding</Link>
         <Link href="#country-impact">Markets</Link>
+        {hasTrend && <Link href="#trend">Trend</Link>}
         <Link href="#scenarios">Sensitivities</Link>
         {!central.directional_only && <Link href="#drivers">Drivers</Link>}
         <Link href="#details">Details</Link>
@@ -198,6 +201,17 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
           <strong>{markets.size - excludedMarkets.length} of {markets.size} markets</strong>
           <p>{excludedMarkets.length ? `${excludedMarkets.join(", ")} are excluded from the NDC total.` : "All assessed markets are included."}</p>
         </article>
+        {meta?.netzero && (
+          <article>
+            <span>Company commitment</span>
+            <strong>Carbon neutral by {meta.netzero.target_year}</strong>
+            <p>
+              {meta.netzero.scope}
+              {meta.netzero.interim ? ` · ${meta.netzero.interim}` : ""}
+              {meta.netzero.source && <> · <a href={meta.netzero.source}>Source</a></>}
+            </p>
+          </article>
+        )}
       </section>
 
       <div className="use-result-note">
@@ -305,6 +319,52 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
           lock-in effects are not allowed to cancel each other in the comparison.
         </p>
       </section>
+
+      {hasTrend && (
+        <section className="simple-report-section" id="trend">
+          <p className="eyebrow">Export volume trend</p>
+          <h2>How does the NDC impact move as the export mix changes?</h2>
+          <p className="section-lede">
+            Each year&apos;s represented sales are re-run against the <em>same current</em> NDC
+            benchmarks, so the differences below isolate the effect of export volume and
+            powertrain-mix changes — they are not restated historical assessments.
+          </p>
+          <div className="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sales year</th>
+                  <th className="num">Represented units</th>
+                  <th className="num">NDC impact (S2)</th>
+                  <th className="num">Change vs prior year</th>
+                  <th>Direction</th>
+                </tr>
+              </thead>
+              <tbody>
+                {yearSeries.map((row, index) => {
+                  const s2 = row.cohorts.S2;
+                  const previous = index > 0 ? yearSeries[index - 1].cohorts.S2 : undefined;
+                  const delta =
+                    s2 && previous && !s2.directional_only && !previous.directional_only
+                      ? s2.total_tCO2e - previous.total_tCO2e
+                      : undefined;
+                  const direction = directionOf(s2?.total_tCO2e);
+                  return (
+                    <tr key={row.year}>
+                      <td className="mono">{row.year}{row.year === result.cohort_year ? " (published cohort)" : ""}</td>
+                      <td className="num">{row.units.toLocaleString("en-US")}</td>
+                      <td className="num">{s2 ? (s2.directional_only ? "direction only" : compactCarbon(s2.total_tCO2e)) : "—"}</td>
+                      <td className="num">{delta === undefined ? "—" : `${delta > 0 ? "+" : "−"}${compactCarbon(Math.abs(delta))}`}</td>
+                      <td><span className={`direction-chip ${directionClass(direction)}`}>{ndcImpactLabel(direction)}</span></td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          <p className="plain-footnote">{result.by_year?.note}</p>
+        </section>
+      )}
 
       <section className="simple-report-section" id="scenarios">
         <p className="eyebrow">NDC result and sensitivities</p>

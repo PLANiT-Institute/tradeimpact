@@ -23,6 +23,9 @@ Snapshot date: 2026-07-22 · Workbook: `TI_Data_Workbook_v0.1.xlsx` · Loaded: 9
 | S2 benchmark | CN — `FLAG_PEAK` | Target vs undefined peak | idem |
 | S1/S3 rates | all markets | r_fleet/r_power from IEA STEPS & NZE ("TO EXTRACT") | IEA WEO |
 | Fleet base intensity | all markets | I_fleet,seg,c(0) = IEA transport CO₂ ÷ (OICA fleet × VKT) | IEA / OICA / national VKT |
+| VKT refresh | CA | Only official per-vehicle figure is NRCan CVS 2009 (15,366 km) — stale; replace when a current source exists | StatCan / NRCan |
+| CA/UK powertrain splits | CA, UK | 2024 volume totals are Tier A/B; model/powertrain allocation is Tier C — collect registration-level splits | DesRosiers, SMMT |
+| Export-gap candidates | UAE, MX, TH | Absolute 2035 NDCs exist (NDC 3.0); derivable if ME/LatAm/ASEAN coverage wanted. SA stays FLAG_NO_BASELINE | UNFCCC registry |
 
 ## Warnings (data-quality, not blockers)
 
