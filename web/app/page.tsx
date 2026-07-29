@@ -125,6 +125,7 @@ function AssessmentCards({ rows }: { rows: AssessmentRow[] }) {
 
 function FirmTable({ rows }: { rows: AssessmentRow[] }) {
   const cohortYear = rows[0]?.r.cohort_year;
+  const hasTrend = rows.some((row) => (row.r.by_year?.series.length ?? 0) > 1);
   return (
     <div className="panel table-scroll comparison-table">
       <table>
@@ -137,6 +138,7 @@ function FirmTable({ rows }: { rows: AssessmentRow[] }) {
             <th className="num">1.5°C sensitivity</th>
             <th className="num">NDC / vehicle</th>
             <th>NDC direction</th>
+            {hasTrend && <th>NDC impact by sales year</th>}
             <th>Coverage</th>
           </tr>
         </thead>
@@ -164,6 +166,17 @@ function FirmTable({ rows }: { rows: AssessmentRow[] }) {
                     : `${(s2 / s2Units).toLocaleString("en-US", { maximumFractionDigits: 2 })} t`}
                 </td>
                 <td><span className={`direction-chip ${directionClass(direction)}`}>{businessDirection(direction)}</span></td>
+                {hasTrend && (
+                  <td className="mono" style={{ fontSize: 12.5 }}>
+                    {(r.by_year?.series ?? [])
+                      .map((year) =>
+                        year.cohorts.S2
+                          ? `${year.year}: ${year.cohorts.S2.directional_only ? year.cohorts.S2.direction : compactCarbon(year.cohorts.S2.total_tCO2e)}`
+                          : `${year.year}: —`,
+                      )
+                      .join(" · ") || "—"}
+                  </td>
+                )}
                 <td className="num">{f.coverage_ratio === undefined ? "—" : `${(f.coverage_ratio * 100).toFixed(1)}%`}</td>
               </tr>
             );

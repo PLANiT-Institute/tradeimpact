@@ -4,6 +4,7 @@
     "country": "—",
     "illustrative": true,
     "name": "ReferenceCo",
+    "netzero": null,
     "note": "Committed validation fixture with illustrative parameters (NOTES.md D4). Demonstrates the full report until real-firm data is collected.",
     "project": "TI",
     "runnable": true,
@@ -11,14 +12,21 @@
     "slug": "referenceco"
   },
   {
-    "assessed_units": 7182159,
+    "assessed_units": 7539187,
     "basis": "estimated",
     "cohort_year": 2024,
     "country": "Japan",
-    "coverage_ratio": 0.7069054133858268,
+    "coverage_ratio": 0.7420459645669292,
     "coverage_scope": "Toyota + Lexus global 2024 sales; fixture uses selected Toyota/Lexus market mixes",
     "coverage_source": "https://global.toyota/pages/fact-data/fact-data_001_06_en.pdf",
     "name": "Toyota",
+    "netzero": {
+      "announced": "2015-10",
+      "interim": "New-vehicle gCO2e/km -33.3% by 2030 and >50% by 2035 vs 2019 (Scope 3 cat.11) · BEV 1.5M/yr by 2026, 3.5M/yr by 2030 · all plants carbon neutral by 2035",
+      "scope": "Life-cycle carbon neutrality by 2050 (Toyota Environmental Challenge 2050); Scope 1+2 -68% by 2035 vs 2019 (SBTi-validated)",
+      "source": "https://global.toyota/en/newsroom/corporate/39013233.html",
+      "target_year": 2050
+    },
     "note": "Estimated-input case: NDC rates and grid intensities are collected (Tier A/B); volumes, vehicle parameters and S1/S3 rates are rough documented estimates (data-pipeline/ESTIMATES.md, Tier B/C). Replace with collected data as it lands.",
     "project": "TI",
     "reported_units": 10160000,
@@ -29,14 +37,21 @@
     "status": "Candidate (e.g.)"
   },
   {
-    "assessed_units": 2775433,
+    "assessed_units": 2998956,
     "basis": "estimated",
     "cohort_year": 2024,
     "country": "Korea",
-    "coverage_ratio": 0.6700773716012157,
+    "coverage_ratio": 0.7240428985414873,
     "coverage_scope": "Hyundai Motor global 2024 wholesale sales; fixture covers selected operating markets",
     "coverage_source": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000000897",
     "name": "Hyundai",
+    "netzero": {
+      "announced": "2021-09",
+      "interim": "30% ZEV share of global sales by 2030 · 2M BEV/yr by 2030 · ICE sales end in Europe from 2035 · RE100",
+      "scope": "Company-wide carbon neutrality across the value chain; interim -75% emissions vs 2019 by 2040",
+      "source": "https://www.hyundainews.com/en-us/releases/3390",
+      "target_year": 2045
+    },
     "note": "Estimated-input case: NDC rates and grid intensities are collected (Tier A/B); volumes, vehicle parameters and S1/S3 rates are rough documented estimates (data-pipeline/ESTIMATES.md, Tier B/C). Replace with collected data as it lands.",
     "project": "TI",
     "reported_units": 4141959,

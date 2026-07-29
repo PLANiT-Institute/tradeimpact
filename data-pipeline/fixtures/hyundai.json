@@ -20,7 +20,9 @@
       "AU": 13800.0,
       "US": 18000.0,
       "CN": 12000.0,
-      "IN": 10000.0
+      "IN": 10000.0,
+      "CA": 15366.0,
+      "UK": 11426.0
     },
     "uf_band": 0.15,
     "realworld_range": [
@@ -139,6 +141,48 @@
       "status": "FLAG_INTENSITY",
       "tier": "C",
       "source": "GDP-intensity target — not an absolute emissions path (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024."
+    },
+    "CA": {
+      "name": "Canada",
+      "grid_intensity": 0.18535,
+      "fleet_intensity_base": 0.19,
+      "r_fleet": {
+        "s1": 0.012,
+        "s2": 0.019730651845791147,
+        "s3": 0.06
+      },
+      "r_power": {
+        "s1": 0.035,
+        "s2": 0.019730651845791147,
+        "s3": 0.09
+      },
+      "status": "COMPUTED",
+      "tier": "B",
+      "source": "S2: UNFCCC CA 2035 NDC Feb 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+      "warnings": [
+        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+      ]
+    },
+    "UK": {
+      "name": "United Kingdom",
+      "grid_intensity": 0.2165,
+      "fleet_intensity_base": 0.145,
+      "r_fleet": {
+        "s1": 0.022,
+        "s2": 0.03623244400122316,
+        "s3": 0.065
+      },
+      "r_power": {
+        "s1": 0.05,
+        "s2": 0.03623244400122316,
+        "s3": 0.1
+      },
+      "status": "COMPUTED",
+      "tier": "B",
+      "source": "S2: UNFCCC UK 2035 NDC Jan 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+      "warnings": [
+        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+      ]
     }
   },
   "placements": [
@@ -311,6 +355,611 @@
       "vehicle_source": "Analyst fixed-emission proxy; 0.150 kgCO2e/km assumption documented in ESTIMATES.md",
       "volume_source": "Hyundai Motor India CY2024 domestic sales release (2025-01-01), 605,433 units: https://www.hyundai.com/content/dam/hyundai/in/en/data/hyundai-story/announcements/Press-release-Intimation-of-press-release-by-Hyundai-Motor-India-Limited-Sales-Units-in-December-2024.pdf",
       "source": "HMIL CY2024 domestic total; vehicle intensity is a Tier C analyst proxy (ESTIMATES.md)"
+    },
+    {
+      "country": "CA",
+      "brand": "Hyundai",
+      "model": "ICE mix (Elantra/Tucson/SUV)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.195,
+      "units": 92000,
+      "tier": "C",
+      "source": "Hyundai Canada 2024 total 131,715 (hyundainews.ca); split Tier C allocation"
+    },
+    {
+      "country": "CA",
+      "brand": "Hyundai",
+      "model": "HEV mix",
+      "powertrain": "HEV",
+      "ice_intensity": 0.13,
+      "units": 20000,
+      "tier": "C",
+      "source": "Tier C allocation constrained to official total"
+    },
+    {
+      "country": "CA",
+      "brand": "Hyundai",
+      "model": "Ioniq5/Kona EV",
+      "powertrain": "BEV",
+      "eta_ev": 0.19,
+      "units": 16715,
+      "tier": "C",
+      "source": "Tier C allocation constrained to official total"
+    },
+    {
+      "country": "CA",
+      "brand": "Hyundai",
+      "model": "Tucson/Santa Fe PHEV",
+      "powertrain": "PHEV",
+      "uf": 0.5,
+      "eta_elec": 0.21,
+      "ice_mode_intensity": 0.16,
+      "units": 3000,
+      "tier": "C",
+      "source": "SAE J2841 UF; Tier C allocation; overstatement caveat"
+    },
+    {
+      "country": "UK",
+      "brand": "Hyundai",
+      "model": "ICE mix (i10/i20/Tucson)",
+      "powertrain": "ICE",
+      "ice_intensity": 0.155,
+      "units": 55808,
+      "tier": "C",
+      "source": "SMMT 2024 Hyundai 91,808 (via best-selling-cars); split Tier C allocation"
+    },
+    {
+      "country": "UK",
+      "brand": "Hyundai",
+      "model": "HEV mix",
+      "powertrain": "HEV",
+      "ice_intensity": 0.12,
+      "units": 20000,
+      "tier": "C",
+      "source": "Tier C allocation constrained to SMMT total"
+    },
+    {
+      "country": "UK",
+      "brand": "Hyundai",
+      "model": "Ioniq5/Kona EV",
+      "powertrain": "BEV",
+      "eta_ev": 0.17,
+      "units": 13000,
+      "tier": "C",
+      "source": "Tier C allocation constrained to SMMT total"
+    },
+    {
+      "country": "UK",
+      "brand": "Hyundai",
+      "model": "Tucson PHEV",
+      "powertrain": "PHEV",
+      "uf": 0.4,
+      "eta_elec": 0.2,
+      "ice_mode_intensity": 0.15,
+      "units": 3000,
+      "tier": "C",
+      "source": "WLTP UF; Tier C allocation; overstatement caveat"
     }
-  ]
+  ],
+  "placements_by_year": {
+    "2022": [
+      {
+        "country": "KR",
+        "brand": "Hyundai",
+        "model": "ICE mix (Avante/Sonata/SUV)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.175,
+        "units": 481355,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9771 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "KR",
+        "brand": "Hyundai",
+        "model": "HEV mix (Grandeur/Santa Fe)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.125,
+        "units": 73523,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9771 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "KR",
+        "brand": "Hyundai",
+        "model": "Ioniq5/6, Kona EV",
+        "powertrain": "BEV",
+        "eta_ev": 0.18,
+        "units": 69763,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9771 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "KR",
+        "brand": "Hyundai",
+        "model": "PHEV mix",
+        "powertrain": "PHEV",
+        "uf": 0.4,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 10491,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9771 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Hyundai",
+        "model": "ICE mix (incl. SUV)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.2,
+        "units": 634378,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8655 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Hyundai",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.13,
+        "units": 74429,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8655 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Hyundai",
+        "model": "Ioniq5/6",
+        "powertrain": "BEV",
+        "eta_ev": 0.19,
+        "units": 69519,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8655 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Hyundai",
+        "model": "Tucson PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.5,
+        "eta_elec": 0.21,
+        "ice_mode_intensity": 0.16,
+        "units": 9293,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8655 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Hyundai",
+        "model": "ICE mix (Tucson/i-range)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.16,
+        "units": 355689,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9704 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Hyundai",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.12,
+        "units": 67805,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9704 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Hyundai",
+        "model": "Kona EV / Ioniq5",
+        "powertrain": "BEV",
+        "eta_ev": 0.17,
+        "units": 69286,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9704 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Hyundai",
+        "model": "Tucson PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.4,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 31259,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9704 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Hyundai",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.19,
+        "units": 57734,
+        "tier": "B",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 1.0235 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Hyundai",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.125,
+        "units": 6601,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 1.0235 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Hyundai",
+        "model": "Ioniq5 / Kona EV",
+        "powertrain": "BEV",
+        "eta_ev": 0.185,
+        "units": 7307,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 1.0235 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "IN",
+        "brand": "Hyundai",
+        "model": "2024 domestic fixed-emission mix (ICE/CNG)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.15,
+        "units": 552511,
+        "tier": "C",
+        "vehicle_tier": "C",
+        "volume_tier": "A",
+        "vehicle_source": "Analyst fixed-emission proxy; 0.150 kgCO2e/km assumption documented in ESTIMATES.md",
+        "volume_source": "Hyundai Motor India CY2024 domestic sales release (2025-01-01), 605,433 units: https://www.hyundai.com/content/dam/hyundai/in/en/data/hyundai-story/announcements/Press-release-Intimation-of-press-release-by-Hyundai-Motor-India-Limited-Sales-Units-in-December-2024.pdf",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9126 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Hyundai",
+        "model": "ICE mix (Elantra/Tucson/SUV)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.195,
+        "units": 87872,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8546 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Hyundai",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.13,
+        "units": 9186,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8546 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Hyundai",
+        "model": "Ioniq5/Kona EV",
+        "powertrain": "BEV",
+        "eta_ev": 0.19,
+        "units": 12748,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8546 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Hyundai",
+        "model": "Tucson/Santa Fe PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.5,
+        "eta_elec": 0.21,
+        "ice_mode_intensity": 0.16,
+        "units": 2753,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8546 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Hyundai",
+        "model": "ICE mix (i10/i20/Tucson)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.155,
+        "units": 58018,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8759 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Hyundai",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.12,
+        "units": 9416,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8759 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Hyundai",
+        "model": "Ioniq5/Kona EV",
+        "powertrain": "BEV",
+        "eta_ev": 0.17,
+        "units": 10163,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8759 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Hyundai",
+        "model": "Tucson PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.4,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 2822,
+        "tier": "C",
+        "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8759 x global powertrain-mix ratio; ICE residual to market total"
+      }
+    ],
+    "2023": [
+      {
+        "country": "KR",
+        "brand": "Hyundai",
+        "model": "ICE mix (Avante/Sonata/SUV)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.175,
+        "units": 468744,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0809 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "KR",
+        "brand": "Hyundai",
+        "model": "HEV mix (Grandeur/Santa Fe)",
+        "powertrain": "HEV",
+        "ice_intensity": 0.125,
+        "units": 113912,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0809 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "KR",
+        "brand": "Hyundai",
+        "model": "Ioniq5/6, Kona EV",
+        "powertrain": "BEV",
+        "eta_ev": 0.18,
+        "units": 106377,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0809 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "KR",
+        "brand": "Hyundai",
+        "model": "PHEV mix",
+        "powertrain": "PHEV",
+        "uf": 0.4,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 13581,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0809 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Hyundai",
+        "model": "ICE mix (incl. SUV)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.2,
+        "units": 637936,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9574 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Hyundai",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.13,
+        "units": 115312,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9574 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Hyundai",
+        "model": "Ioniq5/6",
+        "powertrain": "BEV",
+        "eta_ev": 0.19,
+        "units": 106001,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9574 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "US",
+        "brand": "Hyundai",
+        "model": "Tucson PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.5,
+        "eta_elec": 0.21,
+        "ice_mode_intensity": 0.16,
+        "units": 12029,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9574 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Hyundai",
+        "model": "ICE mix (Tucson/i-range)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.16,
+        "units": 306012,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9999 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Hyundai",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.12,
+        "units": 97845,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9999 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Hyundai",
+        "model": "Kona EV / Ioniq5",
+        "powertrain": "BEV",
+        "eta_ev": 0.17,
+        "units": 98401,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9999 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "EU",
+        "brand": "Hyundai",
+        "model": "Tucson PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.4,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 37688,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9999 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Hyundai",
+        "model": "ICE mix",
+        "powertrain": "ICE",
+        "ice_intensity": 0.19,
+        "units": 53637,
+        "tier": "B",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0491 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Hyundai",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.125,
+        "units": 9476,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0491 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "AU",
+        "brand": "Hyundai",
+        "model": "Ioniq5 / Kona EV",
+        "powertrain": "BEV",
+        "eta_ev": 0.185,
+        "units": 10324,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0491 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "IN",
+        "brand": "Hyundai",
+        "model": "2024 domestic fixed-emission mix (ICE/CNG)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.15,
+        "units": 602111,
+        "tier": "C",
+        "vehicle_tier": "C",
+        "volume_tier": "A",
+        "vehicle_source": "Analyst fixed-emission proxy; 0.150 kgCO2e/km assumption documented in ESTIMATES.md",
+        "volume_source": "Hyundai Motor India CY2024 domestic sales release (2025-01-01), 605,433 units: https://www.hyundai.com/content/dam/hyundai/in/en/data/hyundai-story/announcements/Press-release-Intimation-of-press-release-by-Hyundai-Motor-India-Limited-Sales-Units-in-December-2024.pdf",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9945 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Hyundai",
+        "model": "ICE mix (Elantra/Tucson/SUV)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.195,
+        "units": 81081,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.8782 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Hyundai",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.13,
+        "units": 13220,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.8782 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Hyundai",
+        "model": "Ioniq5/Kona EV",
+        "powertrain": "BEV",
+        "eta_ev": 0.19,
+        "units": 18057,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.8782 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "CA",
+        "brand": "Hyundai",
+        "model": "Tucson/Santa Fe PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.5,
+        "eta_elec": 0.21,
+        "ice_mode_intensity": 0.16,
+        "units": 3310,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.8782 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Hyundai",
+        "model": "ICE mix (i10/i20/Tucson)",
+        "powertrain": "ICE",
+        "ice_intensity": 0.155,
+        "units": 54077,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9488 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Hyundai",
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "ice_intensity": 0.12,
+        "units": 14285,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9488 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Hyundai",
+        "model": "Ioniq5/Kona EV",
+        "powertrain": "BEV",
+        "eta_ev": 0.17,
+        "units": 15174,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9488 x global powertrain-mix ratio; ICE residual to market total"
+      },
+      {
+        "country": "UK",
+        "brand": "Hyundai",
+        "model": "Tucson PHEV",
+        "powertrain": "PHEV",
+        "uf": 0.4,
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "units": 3576,
+        "tier": "C",
+        "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9488 x global powertrain-mix ratio; ICE residual to market total"
+      }
+    ]
+  },
+  "netzero": {
+    "target_year": 2045,
+    "scope": "Company-wide carbon neutrality across the value chain; interim -75% emissions vs 2019 by 2040",
+    "interim": "30% ZEV share of global sales by 2030 · 2M BEV/yr by 2030 · ICE sales end in Europe from 2035 · RE100",
+    "source": "https://www.hyundainews.com/en-us/releases/3390",
+    "announced": "2021-09"
+  }
 }

@@ -40,6 +40,27 @@ export interface Firm {
   coverage_ratio?: number;
   coverage_source?: string;
   coverage_scope?: string;
+  /** Firm's own decarbonisation commitment, sourced in the fixture. */
+  netzero?: NetZeroPlan | null;
+}
+
+export interface NetZeroPlan {
+  target_year: number;
+  scope: string;
+  interim?: string;
+  source?: string;
+  announced?: string;
+}
+
+/** One historical cohort year re-run against current benchmarks (volume/mix effect). */
+export interface YearResult {
+  year: number;
+  units: number;
+  units_by_country: Record<string, number>;
+  cohorts: Record<
+    Scenario,
+    Pick<CohortResult, "total_tCO2e" | "direction" | "directional_only" | "by_country">
+  >;
 }
 
 export interface CohortResult {
@@ -87,6 +108,7 @@ export interface FirmResult {
   data_quality: DataQuality;
   sensitivity?: Record<string, unknown>;
   inputs?: Record<string, unknown>;
+  by_year?: { note: string; series: YearResult[] };
   provenance: {
     engine_version: string;
     engine_source_sha256: string;
@@ -143,6 +165,7 @@ export interface Meta {
 // interface at compile time; the exhaustiveness asserts below fail the build if a
 // key is added to an interface but not listed here (or vice versa).
 export const FIRM_RESULT_KEYS = [
+  "by_year",
   "cohort_year",
   "cohorts",
   "crossover",

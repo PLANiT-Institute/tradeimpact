@@ -14,7 +14,7 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "ti-framework"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_dataset import build_contract, build_countries  # noqa: E402
+from build_dataset import build_by_year, build_contract, build_countries  # noqa: E402
 from ti_framework.core.scenarios import run  # noqa: E402
 from ti_framework.core.sensitivity import run_sensitivity  # noqa: E402
 from ti_framework.io.fixtures import parse_fixture  # noqa: E402
@@ -128,6 +128,7 @@ def main() -> int:
             fx.support,
             fx.config,
         )
+        recomputed["by_year"] = build_by_year(payload["inputs"], fx)
         for key in (
             "firm",
             "cohort_year",
@@ -136,6 +137,7 @@ def main() -> int:
             "crossover",
             "data_quality",
             "sensitivity",
+            "by_year",
         ):
             compare_values(recomputed[key], payload.get(key), f"{slug}.{key}", errors)
 

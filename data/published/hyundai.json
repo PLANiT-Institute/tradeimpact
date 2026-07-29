@@ -1,74 +1,248 @@
 {
+  "by_year": {
+    "note": "Benchmarks and support parameters held at the current workbook vintage; year-over-year differences isolate export volume and powertrain-mix changes.",
+    "series": [
+      {
+        "cohorts": {
+          "S1": {
+            "by_country": {
+              "AU": -145339.63819559343,
+              "CA": 169223.817157804,
+              "EU": -642482.9785492043,
+              "IN": -2026572.7180036227,
+              "KR": -2068041.8583132492,
+              "UK": -112075.06445796842,
+              "US": 1329021.4590511203
+            },
+            "direction": "liability",
+            "directional_only": true,
+            "total_tCO2e": -3496266.981310714
+          },
+          "S2": {
+            "by_country": {
+              "AU": -355953.5475123382,
+              "CA": -73176.96612765238,
+              "EU": -1462543.8759947326,
+              "KR": -3960505.2971831,
+              "UK": -271921.0653504015
+            },
+            "direction": "liability",
+            "directional_only": false,
+            "total_tCO2e": -6124100.752168225
+          },
+          "S3": {
+            "by_country": {
+              "AU": -675675.8962154317,
+              "CA": -1028420.4716894624,
+              "EU": -3629476.5379810934,
+              "IN": -4721522.522536684,
+              "KR": -6101831.414115163,
+              "UK": -515019.45353539457,
+              "US": -8383507.122615887
+            },
+            "direction": "liability",
+            "directional_only": true,
+            "total_tCO2e": -25055453.418689117
+          }
+        },
+        "units": 2763921,
+        "units_by_country": {
+          "AU": 71642.0,
+          "CA": 112559.0,
+          "EU": 524039.0,
+          "IN": 552511.0,
+          "KR": 635132.0,
+          "UK": 80419.0,
+          "US": 787619.0
+        },
+        "year": 2022
+      },
+      {
+        "cohorts": {
+          "S1": {
+            "by_country": {
+              "AU": -44076.59948459981,
+              "CA": 432643.50627758715,
+              "EU": 240421.36292818768,
+              "IN": -2208502.139884779,
+              "KR": -1298423.5325279627,
+              "UK": -367.97932898238287,
+              "US": 3205600.6091805203
+            },
+            "direction": "contribution",
+            "directional_only": true,
+            "total_tCO2e": 327295.2271599705
+          },
+          "S2": {
+            "by_country": {
+              "AU": -265380.440938703,
+              "CA": 179965.83662088524,
+              "EU": -620980.7841239793,
+              "KR": -3361847.382528271,
+              "UK": -175369.31574773867
+            },
+            "direction": "liability",
+            "directional_only": false,
+            "total_tCO2e": -4243612.086717807
+          },
+          "S3": {
+            "by_country": {
+              "AU": -574773.3215043218,
+              "CA": -788423.687569326,
+              "EU": -2792501.4990419806,
+              "IN": -5145382.892950702,
+              "KR": -5649254.705057938,
+              "UK": -431668.7547173839,
+              "US": -7345201.851669033
+            },
+            "direction": "liability",
+            "directional_only": true,
+            "total_tCO2e": -22727206.712510683
+          }
+        },
+        "units": 2992166,
+        "units_by_country": {
+          "AU": 73437.0,
+          "CA": 115668.0,
+          "EU": 539946.0,
+          "IN": 602111.0,
+          "KR": 702614.0,
+          "UK": 87112.0,
+          "US": 871278.0
+        },
+        "year": 2023
+      },
+      {
+        "cohorts": {
+          "S1": {
+            "by_country": {
+              "AU": -46546.64869902027,
+              "CA": 400810.4859299127,
+              "EU": -46519.8265139281,
+              "IN": -2220687.0096325455,
+              "KR": -1302061.266039705,
+              "UK": -43633.788421440346,
+              "US": 3273960.6197473686
+            },
+            "direction": "contribution",
+            "directional_only": true,
+            "total_tCO2e": 15322.56637064187
+          },
+          "S2": {
+            "by_country": {
+              "AU": -253976.94722597004,
+              "CA": 116007.727162959,
+              "EU": -895762.0194052452,
+              "KR": -3230540.6819301657,
+              "UK": -226660.50647632164
+            },
+            "direction": "liability",
+            "directional_only": false,
+            "total_tCO2e": -4490932.427874745
+          },
+          "S3": {
+            "by_country": {
+              "AU": -560802.7339801167,
+              "CA": -997559.1137646756,
+              "EU": -3113055.0229714396,
+              "IN": -5173771.2830820605,
+              "KR": -5399587.46272253,
+              "UK": -502124.25621896976,
+              "US": -7888075.743318549
+            },
+            "direction": "liability",
+            "directional_only": true,
+            "total_tCO2e": -23634975.61605835
+          }
+        },
+        "units": 2998956,
+        "units_by_country": {
+          "AU": 70000.0,
+          "CA": 131715.0,
+          "EU": 540000.0,
+          "IN": 605433.0,
+          "KR": 650000.0,
+          "UK": 91808.0,
+          "US": 910000.0
+        },
+        "year": 2024
+      }
+    ]
+  },
   "cohort_year": 2024,
   "cohorts": {
     "S1": {
       "annual_tCO2e": [
-        504797.07408000005,
-        424308.7205760001,
-        345064.12345590035,
-        267041.63892504765,
-        190219.9980653035,
-        114578.30204533733,
-        40096.01727901102,
-        -33247.02945950984,
-        -105470.65595581035,
-        -176594.32950288334,
-        -246637.17186928878,
-        -315617.9642812002,
-        -383555.15241215465,
-        -450466.8513747407,
-        -516370.8507088422
+        576795.5987061152,
+        488997.3848799311,
+        402544.5900859369,
+        317414.4702740294,
+        233584.6470774771,
+        151033.10455976892,
+        69738.1858149727,
+        -10321.410564777254,
+        -89166.63414182622,
+        -166818.08639352384,
+        -243296.02456935978,
+        -318620.3656340448,
+        -392810.6902865068,
+        -465886.2470453841,
+        -537865.9563921661
       ],
       "by_country": {
         "AU": -46546.64869902027,
+        "CA": 400810.4859299127,
         "EU": -46519.8265139281,
         "IN": -2220687.0096325455,
         "KR": -1302061.266039705,
+        "UK": -43633.788421440346,
         "US": 3273960.6197473686
       },
       "by_powertrain": {
-        "BEV": 5790416.296239629,
-        "HEV": 3085995.8817523923,
-        "ICE": -9584566.96696718,
-        "PHEV": 366300.6578373285
+        "BEV": 6576107.58407176,
+        "HEV": 3308693.2512162086,
+        "ICE": -10302197.74803719,
+        "PHEV": 432719.47911986243
       },
-      "direction": "liability",
+      "direction": "contribution",
       "directional_only": true,
       "excluded_flag_markets": {},
-      "total_tCO2e": -341854.13113783044,
+      "total_tCO2e": 15322.56637064187,
       "warnings": [
         "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded.",
-        "TIER_C_SUPPRESSION: Tier-C/unknown affected-unit share 57% exceeds threshold 50%; emit directional label only."
+        "TIER_C_SUPPRESSION: Tier-C/unknown affected-unit share 60% exceeds threshold 50%; emit directional label only."
       ]
     },
     "S2": {
       "annual_tCO2e": [
-        204064.60008000012,
-        121082.74215377949,
-        41238.6087450097,
-        -35592.47635588367,
-        -109530.06620643532,
-        -180688.8057880043,
-        -249178.63793255505,
-        -315105.0004926658,
-        -378569.0151301888,
-        -439667.66808280034,
-        -498493.9832522117,
-        -555137.1879429966,
-        -609682.871566835,
-        -662213.1376134031,
-        -712806.7491761906
+        276063.1247061151,
+        180398.53185617365,
+        88209.22195876218,
+        -639.3052537017961,
+        -86276.11842912248,
+        -168825.07991127562,
+        -248405.06155375083,
+        -325130.1514370061,
+        -399109.85187592247,
+        -470449.2690886389,
+        -539249.2948815634,
+        -605606.7806902506,
+        -669614.704301293,
+        -731362.3295664373,
+        -790935.3594068321
       ],
       "by_country": {
         "AU": -253976.94722597004,
+        "CA": 116007.727162959,
         "EU": -895762.0194052452,
-        "KR": -3230540.6819301657
+        "KR": -3230540.6819301657,
+        "UK": -226660.50647632164
       },
       "by_powertrain": {
-        "BEV": 2432971.7762445323,
-        "HEV": -17007.236062040873,
-        "ICE": -6890927.13573517,
-        "PHEV": 94682.94699129713
+        "BEV": 3142137.923296013,
+        "HEV": 125804.89098740049,
+        "ICE": -7906264.386572907,
+        "PHEV": 147389.14441474897
       },
       "direction": "liability",
       "directional_only": false,
@@ -76,49 +250,51 @@
         "IN": "GDP-intensity target — not an absolute emissions path",
         "US": "No active NDC — no S2 benchmark derivable"
       },
-      "total_tCO2e": -4380279.648561381,
+      "total_tCO2e": -4490932.427874745,
       "warnings": [
         "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
       ]
     },
     "S3": {
       "annual_tCO2e": [
-        504797.07408000005,
-        147114.62352120015,
-        -190288.44055978165,
-        -508545.3422770753,
-        -808728.1730928002,
-        -1091850.9312956147,
-        -1358872.4402217213,
-        -1610699.14639775,
-        -1848187.7993272517,
-        -2072148.0150905764,
-        -2283344.726293538,
-        -2482500.521194104,
-        -2670297.8750675456,
-        -2847381.2770475233,
-        -3014359.2558106156
+        576795.5987061152,
+        187654.37332686476,
+        -179321.59165951688,
+        -525377.0457939311,
+        -851689.1654432543,
+        -1159370.9494741603,
+        -1449474.4756007474,
+        -1722994.01932593,
+        -1980869.0379292236,
+        -2223987.0223890324,
+        -2453186.2204782953,
+        -2669258.234549321,
+        -2872950.4977365197,
+        -3064968.6324631963,
+        -3245978.695248194
       ],
       "by_country": {
         "AU": -560802.7339801167,
+        "CA": -997559.1137646756,
         "EU": -3113055.0229714396,
         "IN": -5173771.2830820605,
         "KR": -5399587.46272253,
+        "UK": -502124.25621896976,
         "US": -7888075.743318549
       },
       "by_powertrain": {
-        "BEV": 4577506.88820298,
-        "HEV": -801489.1437301813,
-        "ICE": -25975444.53061597,
-        "PHEV": 64134.54006847466
+        "BEV": 5160288.198441335,
+        "HEV": -899850.9980553656,
+        "ICE": -27982531.166113555,
+        "PHEV": 87118.34966924155
       },
       "direction": "liability",
       "directional_only": true,
       "excluded_flag_markets": {},
-      "total_tCO2e": -22135292.2460747,
+      "total_tCO2e": -23634975.61605835,
       "warnings": [
         "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded.",
-        "TIER_C_SUPPRESSION: Tier-C/unknown affected-unit share 57% exceeds threshold 50%; emit directional label only."
+        "TIER_C_SUPPRESSION: Tier-C/unknown affected-unit share 60% exceeds threshold 50%; emit directional label only."
       ]
     }
   },
@@ -252,6 +428,70 @@
       "scenario": "S1"
     },
     {
+      "TI_per_vehicle_kgCO2e": -4646.490296801544,
+      "country": "CA",
+      "crossover_year": null,
+      "powertrain": "ICE",
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "scenario": "S1"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 10335.359703198454,
+      "country": "CA",
+      "crossover_year": 31.434008547209757,
+      "powertrain": "HEV",
+      "reason": null,
+      "scenario": "S1"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 33898.43723399879,
+      "country": "CA",
+      "crossover_year": 71.55755590657584,
+      "powertrain": "BEV",
+      "reason": null,
+      "scenario": "S1"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 18322.67360179864,
+      "country": "CA",
+      "crossover_year": null,
+      "powertrain": "PHEV",
+      "reason": "no sign change over lifetime",
+      "scenario": "S1"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": -5199.141230007639,
+      "country": "UK",
+      "crossover_year": null,
+      "powertrain": "ICE",
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "scenario": "S1"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 799.5087699923613,
+      "country": "UK",
+      "crossover_year": 8.506937260592691,
+      "powertrain": "HEV",
+      "reason": null,
+      "scenario": "S1"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 16852.223805064674,
+      "country": "UK",
+      "crossover_year": 47.2016966629273,
+      "powertrain": "BEV",
+      "reason": null,
+      "scenario": "S1"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 3816.933492379331,
+      "country": "UK",
+      "crossover_year": null,
+      "powertrain": "PHEV",
+      "reason": "no sign change over lifetime",
+      "scenario": "S1"
+    },
+    {
       "TI_per_vehicle_kgCO2e": -10110.918204081507,
       "country": "KR",
       "crossover_year": null,
@@ -337,6 +577,70 @@
       "crossover_year": null,
       "powertrain": "BEV",
       "reason": "r_fleet == r_power: parallel trajectories, no finite crossover",
+      "scenario": "S2"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": -6713.098644907655,
+      "country": "CA",
+      "crossover_year": null,
+      "powertrain": "ICE",
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "scenario": "S2"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 8268.751355092341,
+      "country": "CA",
+      "crossover_year": 19.04313155050244,
+      "powertrain": "HEV",
+      "reason": null,
+      "scenario": "S2"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 31146.06649642597,
+      "country": "CA",
+      "crossover_year": null,
+      "powertrain": "BEV",
+      "reason": "r_fleet == r_power: parallel trajectories, no finite crossover",
+      "scenario": "S2"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 15877.091301618824,
+      "country": "CA",
+      "crossover_year": null,
+      "powertrain": "PHEV",
+      "reason": "no sign change over lifetime",
+      "scenario": "S2"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": -7126.795002620273,
+      "country": "UK",
+      "crossover_year": null,
+      "powertrain": "ICE",
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "scenario": "S2"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": -1128.1450026202726,
+      "country": "UK",
+      "crossover_year": 5.127795484756197,
+      "powertrain": "HEV",
+      "reason": null,
+      "scenario": "S2"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 14504.588120286202,
+      "country": "UK",
+      "crossover_year": null,
+      "powertrain": "BEV",
+      "reason": "r_fleet == r_power: parallel trajectories, no finite crossover",
+      "scenario": "S2"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 1691.6411728651267,
+      "country": "UK",
+      "crossover_year": 9.480722423980607,
+      "powertrain": "PHEV",
+      "reason": null,
       "scenario": "S2"
     },
     {
@@ -466,16 +770,82 @@
       "powertrain": "ICE",
       "reason": "crossover before sale year (product already above benchmark at t=0)",
       "scenario": "S3"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": -15521.05363584737,
+      "country": "CA",
+      "crossover_year": null,
+      "powertrain": "ICE",
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "scenario": "S3"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": -539.2036358473715,
+      "country": "CA",
+      "crossover_year": 6.133125586281558,
+      "powertrain": "HEV",
+      "reason": null,
+      "scenario": "S3"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 24872.984282534275,
+      "country": "CA",
+      "crossover_year": 51.96531585588603,
+      "powertrain": "BEV",
+      "reason": null,
+      "scenario": "S3"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 8469.987055889853,
+      "country": "CA",
+      "crossover_year": 12.853572325907185,
+      "powertrain": "PHEV",
+      "reason": null,
+      "scenario": "S3"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": -10377.53908041185,
+      "country": "UK",
+      "crossover_year": null,
+      "powertrain": "ICE",
+      "reason": "crossover before sale year (product already above benchmark at t=0)",
+      "scenario": "S3"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": -4378.889080411848,
+      "country": "UK",
+      "crossover_year": 2.815734565836917,
+      "powertrain": "HEV",
+      "reason": null,
+      "scenario": "S3"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": 12848.413688907269,
+      "country": "UK",
+      "crossover_year": 35.93804905886009,
+      "powertrain": "BEV",
+      "reason": null,
+      "scenario": "S3"
+    },
+    {
+      "TI_per_vehicle_kgCO2e": -808.717188967558,
+      "country": "UK",
+      "crossover_year": 5.593199016847628,
+      "powertrain": "PHEV",
+      "reason": null,
+      "scenario": "S3"
     }
   ],
   "data_quality": {
     "analysis_level": "Level 1",
     "benchmark_tiers": {
       "AU": "B",
+      "CA": "B",
       "CN": "C",
       "EU": "B",
       "IN": "C",
       "KR": "B",
+      "UK": "B",
       "US": "C"
     },
     "cohort_year": 2024,
@@ -487,18 +857,22 @@
     "layer1_method": "B",
     "layer2_tiers": {
       "Hyundai 2024 domestic fixed-emission mix (ICE/CNG)": "C",
-      "Hyundai HEV mix": "B",
+      "Hyundai HEV mix": "C",
       "Hyundai HEV mix (Grandeur/Santa Fe)": "B",
       "Hyundai ICE mix": "B",
       "Hyundai ICE mix (Avante/Sonata/SUV)": "B",
+      "Hyundai ICE mix (Elantra/Tucson/SUV)": "C",
       "Hyundai ICE mix (Tucson/i-range)": "B",
+      "Hyundai ICE mix (i10/i20/Tucson)": "C",
       "Hyundai ICE mix (incl. SUV)": "B",
       "Hyundai Ioniq5 / Kona EV": "C",
       "Hyundai Ioniq5/6": "B",
       "Hyundai Ioniq5/6, Kona EV": "B",
+      "Hyundai Ioniq5/Kona EV": "C",
       "Hyundai Kona EV / Ioniq5": "B",
       "Hyundai PHEV mix": "C",
-      "Hyundai Tucson PHEV": "C"
+      "Hyundai Tucson PHEV": "C",
+      "Hyundai Tucson/Santa Fe PHEV": "C"
     },
     "lifetime_T": 15,
     "lifetime_sens": 3,
@@ -510,14 +884,16 @@
     },
     "volume_tiers": {
       "AU": "C",
+      "CA": "C",
       "EU": "C",
       "IN": "A",
       "KR": "C",
+      "UK": "C",
       "US": "C"
     },
     "warnings": [
       "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded.",
-      "TIER_C_SUPPRESSION: Tier-C/unknown affected-unit share 57% exceeds threshold 50%; emit directional label only."
+      "TIER_C_SUPPRESSION: Tier-C/unknown affected-unit share 60% exceeds threshold 50%; emit directional label only."
     ]
   },
   "firm": "Hyundai",
@@ -539,17 +915,40 @@
         "name": "Australia",
         "r_fleet": {
           "s1": 0.019,
-          "s2": 0.0317382262873848,
-          "s2_upper": 0.0393377867047728,
+          "s2": 0.031738226287384756,
+          "s2_upper": 0.039337786704772844,
           "s3": 0.06
         },
         "r_power": {
           "s1": 0.05,
-          "s2": 0.0317382262873848,
-          "s2_upper": 0.0393377867047728,
+          "s2": 0.031738226287384756,
+          "s2_upper": 0.039337786704772844,
           "s3": 0.11
         },
         "source": "S2: UNFCCC AU 2nd NDC 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+        "status": "COMPUTED",
+        "tier": "B",
+        "warnings": [
+          "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+        ]
+      },
+      "CA": {
+        "fleet_intensity_base": 0.19,
+        "grid_intensity": 0.18535,
+        "name": "Canada",
+        "r_fleet": {
+          "s1": 0.012,
+          "s2": 0.01973065184579115,
+          "s2_upper": 0.02284003156575409,
+          "s3": 0.06
+        },
+        "r_power": {
+          "s1": 0.035,
+          "s2": 0.01973065184579115,
+          "s2_upper": 0.02284003156575409,
+          "s3": 0.09
+        },
+        "source": "S2: UNFCCC CA 2035 NDC Feb 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
         "status": "COMPUTED",
         "tier": "B",
         "warnings": [
@@ -578,14 +977,14 @@
         "name": "European Union",
         "r_fleet": {
           "s1": 0.014,
-          "s2": 0.023848569511212,
-          "s2_upper": 0.0282809284763779,
+          "s2": 0.023848569511211948,
+          "s2_upper": 0.02828092847637786,
           "s3": 0.06
         },
         "r_power": {
           "s1": 0.04,
-          "s2": 0.023848569511212,
-          "s2_upper": 0.0282809284763779,
+          "s2": 0.023848569511211948,
+          "s2_upper": 0.02828092847637786,
           "s3": 0.1
         },
         "source": "S2: UNFCCC EU 2035 NDC (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
@@ -617,17 +1016,40 @@
         "name": "South Korea",
         "r_fleet": {
           "s1": 0.025,
-          "s2": 0.043441272053699,
-          "s2_upper": 0.0538827149423172,
+          "s2": 0.04344127205369896,
+          "s2_upper": 0.053882714942317216,
           "s3": 0.07
         },
         "r_power": {
           "s1": 0.03,
-          "s2": 0.043441272053699,
-          "s2_upper": 0.0538827149423172,
+          "s2": 0.04344127205369896,
+          "s2_upper": 0.053882714942317216,
           "s3": 0.09
         },
         "source": "S2: UNFCCC KR 2035 NDC Dec 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+        "status": "COMPUTED",
+        "tier": "B",
+        "warnings": [
+          "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+        ]
+      },
+      "UK": {
+        "fleet_intensity_base": 0.145,
+        "grid_intensity": 0.2165,
+        "name": "United Kingdom",
+        "r_fleet": {
+          "s1": 0.022,
+          "s2": 0.036232444001223156,
+          "s2_upper": 0.036232444001223156,
+          "s3": 0.065
+        },
+        "r_power": {
+          "s1": 0.05,
+          "s2": 0.036232444001223156,
+          "s2_upper": 0.036232444001223156,
+          "s3": 0.1
+        },
+        "source": "S2: UNFCCC UK 2035 NDC Jan 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
         "status": "COMPUTED",
         "tier": "B",
         "warnings": [
@@ -653,6 +1075,13 @@
     },
     "firm": "Hyundai",
     "layer1_method": "B",
+    "netzero": {
+      "announced": "2021-09",
+      "interim": "30% ZEV share of global sales by 2030 · 2M BEV/yr by 2030 · ICE sales end in Europe from 2035 · RE100",
+      "scope": "Company-wide carbon neutrality across the value chain; interim -75% emissions vs 2019 by 2040",
+      "source": "https://www.hyundainews.com/en-us/releases/3390",
+      "target_year": 2045
+    },
     "placements": [
       {
         "brand": "Hyundai",
@@ -883,8 +1312,638 @@
         "vehicle_tier": "C",
         "volume_source": "Hyundai Motor India CY2024 domestic sales release (2025-01-01), 605,433 units: https://www.hyundai.com/content/dam/hyundai/in/en/data/hyundai-story/announcements/Press-release-Intimation-of-press-release-by-Hyundai-Motor-India-Limited-Sales-Units-in-December-2024.pdf",
         "volume_tier": "A"
+      },
+      {
+        "brand": "Hyundai",
+        "country": "CA",
+        "ice_intensity": 0.195,
+        "model": "ICE mix (Elantra/Tucson/SUV)",
+        "powertrain": "ICE",
+        "source": "Hyundai Canada 2024 total 131,715 (hyundainews.ca); split Tier C allocation",
+        "tier": "C",
+        "units": 92000,
+        "vehicle_source": "Hyundai Canada 2024 total 131,715 (hyundainews.ca); split Tier C allocation",
+        "vehicle_tier": "C",
+        "volume_source": "Hyundai Canada 2024 total 131,715 (hyundainews.ca); split Tier C allocation",
+        "volume_tier": "C"
+      },
+      {
+        "brand": "Hyundai",
+        "country": "CA",
+        "ice_intensity": 0.13,
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "source": "Tier C allocation constrained to official total",
+        "tier": "C",
+        "units": 20000,
+        "vehicle_source": "Tier C allocation constrained to official total",
+        "vehicle_tier": "C",
+        "volume_source": "Tier C allocation constrained to official total",
+        "volume_tier": "C"
+      },
+      {
+        "brand": "Hyundai",
+        "country": "CA",
+        "eta_ev": 0.19,
+        "model": "Ioniq5/Kona EV",
+        "powertrain": "BEV",
+        "source": "Tier C allocation constrained to official total",
+        "tier": "C",
+        "units": 16715,
+        "vehicle_source": "Tier C allocation constrained to official total",
+        "vehicle_tier": "C",
+        "volume_source": "Tier C allocation constrained to official total",
+        "volume_tier": "C"
+      },
+      {
+        "brand": "Hyundai",
+        "country": "CA",
+        "eta_elec": 0.21,
+        "ice_mode_intensity": 0.16,
+        "model": "Tucson/Santa Fe PHEV",
+        "powertrain": "PHEV",
+        "source": "SAE J2841 UF; Tier C allocation; overstatement caveat",
+        "tier": "C",
+        "uf": 0.5,
+        "units": 3000,
+        "vehicle_source": "SAE J2841 UF; Tier C allocation; overstatement caveat",
+        "vehicle_tier": "C",
+        "volume_source": "SAE J2841 UF; Tier C allocation; overstatement caveat",
+        "volume_tier": "C"
+      },
+      {
+        "brand": "Hyundai",
+        "country": "UK",
+        "ice_intensity": 0.155,
+        "model": "ICE mix (i10/i20/Tucson)",
+        "powertrain": "ICE",
+        "source": "SMMT 2024 Hyundai 91,808 (via best-selling-cars); split Tier C allocation",
+        "tier": "C",
+        "units": 55808,
+        "vehicle_source": "SMMT 2024 Hyundai 91,808 (via best-selling-cars); split Tier C allocation",
+        "vehicle_tier": "C",
+        "volume_source": "SMMT 2024 Hyundai 91,808 (via best-selling-cars); split Tier C allocation",
+        "volume_tier": "C"
+      },
+      {
+        "brand": "Hyundai",
+        "country": "UK",
+        "ice_intensity": 0.12,
+        "model": "HEV mix",
+        "powertrain": "HEV",
+        "source": "Tier C allocation constrained to SMMT total",
+        "tier": "C",
+        "units": 20000,
+        "vehicle_source": "Tier C allocation constrained to SMMT total",
+        "vehicle_tier": "C",
+        "volume_source": "Tier C allocation constrained to SMMT total",
+        "volume_tier": "C"
+      },
+      {
+        "brand": "Hyundai",
+        "country": "UK",
+        "eta_ev": 0.17,
+        "model": "Ioniq5/Kona EV",
+        "powertrain": "BEV",
+        "source": "Tier C allocation constrained to SMMT total",
+        "tier": "C",
+        "units": 13000,
+        "vehicle_source": "Tier C allocation constrained to SMMT total",
+        "vehicle_tier": "C",
+        "volume_source": "Tier C allocation constrained to SMMT total",
+        "volume_tier": "C"
+      },
+      {
+        "brand": "Hyundai",
+        "country": "UK",
+        "eta_elec": 0.2,
+        "ice_mode_intensity": 0.15,
+        "model": "Tucson PHEV",
+        "powertrain": "PHEV",
+        "source": "WLTP UF; Tier C allocation; overstatement caveat",
+        "tier": "C",
+        "uf": 0.4,
+        "units": 3000,
+        "vehicle_source": "WLTP UF; Tier C allocation; overstatement caveat",
+        "vehicle_tier": "C",
+        "volume_source": "WLTP UF; Tier C allocation; overstatement caveat",
+        "volume_tier": "C"
       }
     ],
+    "placements_by_year": {
+      "2022": [
+        {
+          "brand": "Hyundai",
+          "country": "KR",
+          "ice_intensity": 0.175,
+          "model": "ICE mix (Avante/Sonata/SUV)",
+          "powertrain": "ICE",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9771 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 481355
+        },
+        {
+          "brand": "Hyundai",
+          "country": "KR",
+          "ice_intensity": 0.125,
+          "model": "HEV mix (Grandeur/Santa Fe)",
+          "powertrain": "HEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9771 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 73523
+        },
+        {
+          "brand": "Hyundai",
+          "country": "KR",
+          "eta_ev": 0.18,
+          "model": "Ioniq5/6, Kona EV",
+          "powertrain": "BEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9771 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 69763
+        },
+        {
+          "brand": "Hyundai",
+          "country": "KR",
+          "eta_elec": 0.2,
+          "ice_mode_intensity": 0.15,
+          "model": "PHEV mix",
+          "powertrain": "PHEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9771 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "uf": 0.4,
+          "units": 10491
+        },
+        {
+          "brand": "Hyundai",
+          "country": "US",
+          "ice_intensity": 0.2,
+          "model": "ICE mix (incl. SUV)",
+          "powertrain": "ICE",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8655 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 634378
+        },
+        {
+          "brand": "Hyundai",
+          "country": "US",
+          "ice_intensity": 0.13,
+          "model": "HEV mix",
+          "powertrain": "HEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8655 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 74429
+        },
+        {
+          "brand": "Hyundai",
+          "country": "US",
+          "eta_ev": 0.19,
+          "model": "Ioniq5/6",
+          "powertrain": "BEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8655 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 69519
+        },
+        {
+          "brand": "Hyundai",
+          "country": "US",
+          "eta_elec": 0.21,
+          "ice_mode_intensity": 0.16,
+          "model": "Tucson PHEV",
+          "powertrain": "PHEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8655 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "uf": 0.5,
+          "units": 9293
+        },
+        {
+          "brand": "Hyundai",
+          "country": "EU",
+          "ice_intensity": 0.16,
+          "model": "ICE mix (Tucson/i-range)",
+          "powertrain": "ICE",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9704 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 355689
+        },
+        {
+          "brand": "Hyundai",
+          "country": "EU",
+          "ice_intensity": 0.12,
+          "model": "HEV mix",
+          "powertrain": "HEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9704 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 67805
+        },
+        {
+          "brand": "Hyundai",
+          "country": "EU",
+          "eta_ev": 0.17,
+          "model": "Kona EV / Ioniq5",
+          "powertrain": "BEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9704 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 69286
+        },
+        {
+          "brand": "Hyundai",
+          "country": "EU",
+          "eta_elec": 0.2,
+          "ice_mode_intensity": 0.15,
+          "model": "Tucson PHEV",
+          "powertrain": "PHEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9704 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "uf": 0.4,
+          "units": 31259
+        },
+        {
+          "brand": "Hyundai",
+          "country": "AU",
+          "ice_intensity": 0.19,
+          "model": "ICE mix",
+          "powertrain": "ICE",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 1.0235 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 57734
+        },
+        {
+          "brand": "Hyundai",
+          "country": "AU",
+          "ice_intensity": 0.125,
+          "model": "HEV mix",
+          "powertrain": "HEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 1.0235 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 6601
+        },
+        {
+          "brand": "Hyundai",
+          "country": "AU",
+          "eta_ev": 0.185,
+          "model": "Ioniq5 / Kona EV",
+          "powertrain": "BEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 1.0235 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 7307
+        },
+        {
+          "brand": "Hyundai",
+          "country": "IN",
+          "ice_intensity": 0.15,
+          "model": "2024 domestic fixed-emission mix (ICE/CNG)",
+          "powertrain": "ICE",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9126 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 552511,
+          "vehicle_source": "Analyst fixed-emission proxy; 0.150 kgCO2e/km assumption documented in ESTIMATES.md",
+          "vehicle_tier": "C",
+          "volume_source": "Hyundai Motor India CY2024 domestic sales release (2025-01-01), 605,433 units: https://www.hyundai.com/content/dam/hyundai/in/en/data/hyundai-story/announcements/Press-release-Intimation-of-press-release-by-Hyundai-Motor-India-Limited-Sales-Units-in-December-2024.pdf",
+          "volume_tier": "A"
+        },
+        {
+          "brand": "Hyundai",
+          "country": "CA",
+          "ice_intensity": 0.195,
+          "model": "ICE mix (Elantra/Tucson/SUV)",
+          "powertrain": "ICE",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8546 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 87872
+        },
+        {
+          "brand": "Hyundai",
+          "country": "CA",
+          "ice_intensity": 0.13,
+          "model": "HEV mix",
+          "powertrain": "HEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8546 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 9186
+        },
+        {
+          "brand": "Hyundai",
+          "country": "CA",
+          "eta_ev": 0.19,
+          "model": "Ioniq5/Kona EV",
+          "powertrain": "BEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8546 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 12748
+        },
+        {
+          "brand": "Hyundai",
+          "country": "CA",
+          "eta_elec": 0.21,
+          "ice_mode_intensity": 0.16,
+          "model": "Tucson/Santa Fe PHEV",
+          "powertrain": "PHEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8546 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "uf": 0.5,
+          "units": 2753
+        },
+        {
+          "brand": "Hyundai",
+          "country": "UK",
+          "ice_intensity": 0.155,
+          "model": "ICE mix (i10/i20/Tucson)",
+          "powertrain": "ICE",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8759 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 58018
+        },
+        {
+          "brand": "Hyundai",
+          "country": "UK",
+          "ice_intensity": 0.12,
+          "model": "HEV mix",
+          "powertrain": "HEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8759 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 9416
+        },
+        {
+          "brand": "Hyundai",
+          "country": "UK",
+          "eta_ev": 0.17,
+          "model": "Ioniq5/Kona EV",
+          "powertrain": "BEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8759 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 10163
+        },
+        {
+          "brand": "Hyundai",
+          "country": "UK",
+          "eta_elec": 0.2,
+          "ice_mode_intensity": 0.15,
+          "model": "Tucson PHEV",
+          "powertrain": "PHEV",
+          "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.8759 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "uf": 0.4,
+          "units": 2822
+        }
+      ],
+      "2023": [
+        {
+          "brand": "Hyundai",
+          "country": "KR",
+          "ice_intensity": 0.175,
+          "model": "ICE mix (Avante/Sonata/SUV)",
+          "powertrain": "ICE",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0809 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 468744
+        },
+        {
+          "brand": "Hyundai",
+          "country": "KR",
+          "ice_intensity": 0.125,
+          "model": "HEV mix (Grandeur/Santa Fe)",
+          "powertrain": "HEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0809 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 113912
+        },
+        {
+          "brand": "Hyundai",
+          "country": "KR",
+          "eta_ev": 0.18,
+          "model": "Ioniq5/6, Kona EV",
+          "powertrain": "BEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0809 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 106377
+        },
+        {
+          "brand": "Hyundai",
+          "country": "KR",
+          "eta_elec": 0.2,
+          "ice_mode_intensity": 0.15,
+          "model": "PHEV mix",
+          "powertrain": "PHEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0809 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "uf": 0.4,
+          "units": 13581
+        },
+        {
+          "brand": "Hyundai",
+          "country": "US",
+          "ice_intensity": 0.2,
+          "model": "ICE mix (incl. SUV)",
+          "powertrain": "ICE",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9574 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 637936
+        },
+        {
+          "brand": "Hyundai",
+          "country": "US",
+          "ice_intensity": 0.13,
+          "model": "HEV mix",
+          "powertrain": "HEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9574 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 115312
+        },
+        {
+          "brand": "Hyundai",
+          "country": "US",
+          "eta_ev": 0.19,
+          "model": "Ioniq5/6",
+          "powertrain": "BEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9574 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 106001
+        },
+        {
+          "brand": "Hyundai",
+          "country": "US",
+          "eta_elec": 0.21,
+          "ice_mode_intensity": 0.16,
+          "model": "Tucson PHEV",
+          "powertrain": "PHEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9574 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "uf": 0.5,
+          "units": 12029
+        },
+        {
+          "brand": "Hyundai",
+          "country": "EU",
+          "ice_intensity": 0.16,
+          "model": "ICE mix (Tucson/i-range)",
+          "powertrain": "ICE",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9999 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 306012
+        },
+        {
+          "brand": "Hyundai",
+          "country": "EU",
+          "ice_intensity": 0.12,
+          "model": "HEV mix",
+          "powertrain": "HEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9999 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 97845
+        },
+        {
+          "brand": "Hyundai",
+          "country": "EU",
+          "eta_ev": 0.17,
+          "model": "Kona EV / Ioniq5",
+          "powertrain": "BEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9999 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 98401
+        },
+        {
+          "brand": "Hyundai",
+          "country": "EU",
+          "eta_elec": 0.2,
+          "ice_mode_intensity": 0.15,
+          "model": "Tucson PHEV",
+          "powertrain": "PHEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9999 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "uf": 0.4,
+          "units": 37688
+        },
+        {
+          "brand": "Hyundai",
+          "country": "AU",
+          "ice_intensity": 0.19,
+          "model": "ICE mix",
+          "powertrain": "ICE",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0491 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "B",
+          "units": 53637
+        },
+        {
+          "brand": "Hyundai",
+          "country": "AU",
+          "ice_intensity": 0.125,
+          "model": "HEV mix",
+          "powertrain": "HEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0491 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 9476
+        },
+        {
+          "brand": "Hyundai",
+          "country": "AU",
+          "eta_ev": 0.185,
+          "model": "Ioniq5 / Kona EV",
+          "powertrain": "BEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0491 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 10324
+        },
+        {
+          "brand": "Hyundai",
+          "country": "IN",
+          "ice_intensity": 0.15,
+          "model": "2024 domestic fixed-emission mix (ICE/CNG)",
+          "powertrain": "ICE",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9945 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 602111,
+          "vehicle_source": "Analyst fixed-emission proxy; 0.150 kgCO2e/km assumption documented in ESTIMATES.md",
+          "vehicle_tier": "C",
+          "volume_source": "Hyundai Motor India CY2024 domestic sales release (2025-01-01), 605,433 units: https://www.hyundai.com/content/dam/hyundai/in/en/data/hyundai-story/announcements/Press-release-Intimation-of-press-release-by-Hyundai-Motor-India-Limited-Sales-Units-in-December-2024.pdf",
+          "volume_tier": "A"
+        },
+        {
+          "brand": "Hyundai",
+          "country": "CA",
+          "ice_intensity": 0.195,
+          "model": "ICE mix (Elantra/Tucson/SUV)",
+          "powertrain": "ICE",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.8782 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 81081
+        },
+        {
+          "brand": "Hyundai",
+          "country": "CA",
+          "ice_intensity": 0.13,
+          "model": "HEV mix",
+          "powertrain": "HEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.8782 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 13220
+        },
+        {
+          "brand": "Hyundai",
+          "country": "CA",
+          "eta_ev": 0.19,
+          "model": "Ioniq5/Kona EV",
+          "powertrain": "BEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.8782 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 18057
+        },
+        {
+          "brand": "Hyundai",
+          "country": "CA",
+          "eta_elec": 0.21,
+          "ice_mode_intensity": 0.16,
+          "model": "Tucson/Santa Fe PHEV",
+          "powertrain": "PHEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.8782 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "uf": 0.5,
+          "units": 3310
+        },
+        {
+          "brand": "Hyundai",
+          "country": "UK",
+          "ice_intensity": 0.155,
+          "model": "ICE mix (i10/i20/Tucson)",
+          "powertrain": "ICE",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9488 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 54077
+        },
+        {
+          "brand": "Hyundai",
+          "country": "UK",
+          "ice_intensity": 0.12,
+          "model": "HEV mix",
+          "powertrain": "HEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9488 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 14285
+        },
+        {
+          "brand": "Hyundai",
+          "country": "UK",
+          "eta_ev": 0.17,
+          "model": "Ioniq5/Kona EV",
+          "powertrain": "BEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9488 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "units": 15174
+        },
+        {
+          "brand": "Hyundai",
+          "country": "UK",
+          "eta_elec": 0.2,
+          "ice_mode_intensity": 0.15,
+          "model": "Tucson PHEV",
+          "powertrain": "PHEV",
+          "source": "2023 scaled estimate (ESTIMATES.md): market ratio 0.9488 x global powertrain-mix ratio; ICE residual to market total",
+          "tier": "C",
+          "uf": 0.4,
+          "units": 3576
+        }
+      ]
+    },
     "support": {
       "lifetime_T": 15,
       "lifetime_sens": 3,
@@ -895,142 +1954,144 @@
       "uf_band": 0.15,
       "vkt": {
         "AU": 13800.0,
+        "CA": 15366.0,
         "CN": 12000.0,
         "EU": 12000.0,
         "IN": 10000.0,
         "KR": 13000.0,
+        "UK": 11426.0,
         "US": 18000.0
       }
     }
   },
   "portfolio": {
     "S1": [
-      504797.07408000005,
-      929105.7946560001,
-      1274169.9181119003,
-      1541211.5570369484,
-      1731431.5551022515,
-      1846009.8571475889,
-      1886105.8744266,
-      1852858.84496709,
-      1747388.18901128,
-      1570793.8595083966,
-      1324156.6876391075,
-      1008538.7233579075,
-      624983.570945753,
-      174516.719571012,
-      -341854.13113783055
+      576795.5987061152,
+      1065792.9835860464,
+      1468337.573671983,
+      1785752.0439460124,
+      2019336.6910234895,
+      2170369.7955832584,
+      2240107.9813982313,
+      2229786.570833454,
+      2140619.936691628,
+      1973801.8502981039,
+      1730505.8257287443,
+      1411885.4600946996,
+      1019074.7698081927,
+      553188.5227628085,
+      15322.56637064193
     ],
     "S2": [
-      204064.60008000012,
-      325147.3422337796,
-      366385.9509787893,
-      330793.4746229056,
-      221263.4084164703,
-      40574.60262846603,
-      -208604.03530408908,
-      -523709.03579675476,
-      -902278.0509269434,
-      -1341945.719009744,
-      -1840439.702261956,
-      -2395576.8902049526,
-      -3005259.7617717874,
-      -3667472.89938519,
-      -4380279.648561381
+      276063.1247061151,
+      456461.65656228876,
+      544670.8785210509,
+      544031.5732673492,
+      457755.45483822667,
+      288930.374926951,
+      40525.313373200246,
+      -284604.83806380583,
+      -683714.6899397282,
+      -1154163.9590283672,
+      -1693413.2539099306,
+      -2299020.0346001815,
+      -2968634.738901474,
+      -3699997.068467912,
+      -4490932.427874744
     ],
     "S3": [
-      504797.07408000005,
-      651911.6976012002,
-      461623.2570414186,
-      -46922.085235656705,
-      -855650.2583284568,
-      -1947501.1896240716,
-      -3306373.629845793,
-      -4917072.776243543,
-      -6765260.575570795,
-      -8837408.590661373,
-      -11120753.31695491,
-      -13603253.838149015,
-      -16273551.713216556,
-      -19120932.99026408,
-      -22135292.2460747
+      576795.5987061152,
+      764449.97203298,
+      585128.380373463,
+      59751.33457953192,
+      -791937.8308637223,
+      -1951308.7803378832,
+      -3400783.2559386306,
+      -5123777.27526456,
+      -7104646.313193784,
+      -9328633.335582817,
+      -11781819.556061113,
+      -14451077.790610433,
+      -17324028.288346954,
+      -20388996.920810144,
+      -23634975.61605834
     ]
   },
   "provenance": {
-    "dataset_sha256": "4e93d72f9dad9ef3a59f5fb52ec03b83840edc6626b3f5fcdb125dd13774b7b6",
+    "dataset_sha256": "450a92d1db59294810567cd5b9794844ac956c9803b552b25dfa4f3e4036b08f",
     "engine_source_sha256": "ef40fa0400cdab86a4a5627f735b9d7082d8beec19b40261090b2395def5f87a",
     "engine_version": "0.1.0",
-    "input_sha256": "8a7934d3c2edf8a2551d92843890ece2b8bbcc423d56e815209240991cf41a6d",
+    "input_sha256": "014ef2a41e9838ef3de444ed5dc01704953c1d543b64477e4ba87a9ba19054b9",
     "workbook": "TI_Data_Workbook_v0.1.xlsx",
-    "workbook_sha256": "cca5fe38f26beb1e510a5f5d7ce99d1b91de283578e756a5d575cca6e0b9130e"
+    "workbook_sha256": "3d0c3230ac0424c64736894e21c74b0e19dbcfb37fb8397b5cca30599be7781c"
   },
   "sensitivity": {
     "lifetime": {
       "T_central": {
-        "S1": -341854.13113783044,
-        "S2": -4380279.648561381,
-        "S3": -22135292.2460747
+        "S1": 15322.56637064187,
+        "S2": -4490932.427874745,
+        "S3": -23634975.61605835
       },
       "T_minus": {
-        "S1": 1008538.723357907,
-        "S2": -2395576.890204952,
-        "S3": -13603253.838149013
+        "S1": 1411885.4600946987,
+        "S2": -2299020.034600181,
+        "S3": -14451077.790610433
       },
       "T_plus": {
-        "S1": -2276573.8283815063,
-        "S2": -6804010.173706683,
-        "S3": -32087609.648083404
+        "S1": -2019472.1209236518,
+        "S2": -7200645.5504380865,
+        "S3": -34358110.267462835
       }
     },
     "realworld": {
       "RW_central": {
-        "S1": -341854.13113783044,
-        "S2": -4380279.648561381,
-        "S3": -22135292.2460747
+        "S1": 15322.56637064187,
+        "S2": -4490932.427874745,
+        "S3": -23634975.61605835
       },
       "RW_high": {
-        "S1": -22820443.018540278,
-        "S2": -12806343.298331704,
-        "S3": -44337295.76549841
+        "S1": -24191369.327745244,
+        "S2": -14649762.114532264,
+        "S3": -47552356.79405545
       },
       "RW_low": {
-        "S1": 4153863.646342665,
-        "S2": -2695066.918607313,
-        "S3": -17694891.54218995
+        "S1": 4856660.945193826,
+        "S2": -2459166.4905432374,
+        "S3": -18851499.380458914
       }
     },
     "scenario_spread": {
-      "S1": -341854.13113783044,
-      "S2": -4380279.648561381,
-      "S3": -22135292.2460747
+      "S1": 15322.56637064187,
+      "S2": -4490932.427874745,
+      "S3": -23634975.61605835
     },
     "sector_split": {
       "corrected": {
-        "S1": -341854.13113783044,
-        "S2": -4380279.648561381,
-        "S3": -22135292.2460747
+        "S1": 15322.56637064187,
+        "S2": -4490932.427874745,
+        "S3": -23634975.61605835
       },
       "uncorrected": {
-        "S1": -341854.13113783044,
-        "S2": -4380279.648561381,
-        "S3": -22135292.2460747
+        "S1": 15322.56637064187,
+        "S2": -4490932.427874745,
+        "S3": -23634975.61605835
       }
     },
     "uf": {
       "UF_central": {
-        "S1": -341854.13113783044,
-        "S2": -4380279.648561381,
-        "S3": -22135292.2460747
+        "S1": 15322.56637064187,
+        "S2": -4490932.427874745,
+        "S3": -23634975.61605835
       },
       "UF_lower": {
-        "S1": -497643.9978046301,
-        "S2": -4498439.209210716,
-        "S3": -22315930.227725927
+        "S1": -163058.12811758328,
+        "S2": -4631119.396423374,
+        "S3": -23839745.95521001
       },
       "UF_upper": {
-        "S1": -186064.2644710308,
-        "S2": -4262120.0879120445,
-        "S3": -21954654.264423475
+        "S1": 193703.26085886706,
+        "S2": -4350745.459326113,
+        "S3": -23430205.276906688
       }
     }
   }
