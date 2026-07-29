@@ -36,6 +36,47 @@ type PlacementIn = {
 // The compute API returns the same shape the published reports use (to_json_dict).
 type Result = { cohorts: Partial<Record<Scenario, CohortResult>> };
 
+// One-tap what-if scenarios. Each edits the inputs the same way the sliders do.
+const PRESETS: { label: string; hint: string; apply: (d: Inputs) => void }[] = [
+  {
+    label: "Double the EVs",
+    hint: "Twice as many battery-electric vehicles sold",
+    apply: (d) => {
+      for (const p of d.placements) {
+        if (p.powertrain === "BEV" && p.units) p.units = Math.round(p.units * 2);
+      }
+    },
+  },
+  {
+    label: "Drive 20% less",
+    hint: "Every market's annual driving distance drops a fifth",
+    apply: (d) => {
+      for (const code of Object.keys(d.support.vkt)) {
+        d.support.vkt[code] = Math.round(d.support.vkt[code] * 0.8);
+      }
+    },
+  },
+  {
+    label: "Cars last longer",
+    hint: "Vehicle lifetime +5 years",
+    apply: (d) => {
+      d.support.lifetime_T = Math.min(d.support.lifetime_T + 5, 22);
+    },
+  },
+  {
+    label: "Grids clean up faster",
+    hint: "Power-sector reduction rates ×1.5 everywhere",
+    apply: (d) => {
+      for (const c of Object.values(d.countries)) {
+        for (const s of ["s1", "s2", "s3"] as const) {
+          const v = c.r_power?.[s];
+          if (typeof v === "number") c.r_power[s] = Math.min(v * 1.5, 0.2);
+        }
+      }
+    },
+  },
+];
+
 export default function Calculator({ template }: { template: Inputs }) {
   const [inputs, setInputs] = useState<Inputs>(template);
   const [result, setResult] = useState<Result | null>(null);
@@ -51,10 +92,10 @@ export default function Calculator({ template }: { template: Inputs }) {
     const sequence = ++requestSequence.current;
     setError("");
     setStatus("updating…");
-    timer.current = setTimeout(async () => {
+    const attempt = async (retriesLeft: number) => {
       const activeController = new AbortController();
       controller.current = activeController;
-      setStatus("computing…");
+      setStatus("calculating…");
       try {
         const res = await fetch("/api/compute", {
           method: "POST",
@@ -70,17 +111,25 @@ export default function Calculator({ template }: { template: Inputs }) {
         setStatus("");
       } catch (e) {
         if (activeController.signal.aborted || sequence !== requestSequence.current) return;
+        if (retriesLeft > 0) {
+          // The engine can take a moment to come up; one quiet retry covers it.
+          timer.current = setTimeout(() => attempt(retriesLeft - 1), 1000);
+          return;
+        }
         setStatus("");
         setResult(null);
         setError(
-          "Compute request failed. On a local machine, run the app with `npm run dev:local` " +
-            "(starts the compute sidecar automatically). Detail: " +
+          "The calculation engine didn't respond. Move a slider to try again. " +
+            "(Local development: run the app with `npm run dev:local`.) Detail: " +
             String(e).slice(0, 200),
         );
       } finally {
-        if (sequence === requestSequence.current) controller.current = null;
+        if (sequence === requestSequence.current && controller.current === activeController) {
+          controller.current = null;
+        }
       }
-    }, 350);
+    };
+    timer.current = setTimeout(() => attempt(1), 350);
   }, []);
 
   useEffect(() => {
@@ -128,7 +177,7 @@ export default function Calculator({ template }: { template: Inputs }) {
     <div className="calc-layout">
       <aside className="calc-controls">
         <div className="calc-control-header">
-          <div><span>Working assumptions</span><h3>NDC impact inputs</h3></div>
+          <div><span>Fine-tune</span><h3>Every input, one slider each</h3></div>
           <button type="button" className="reset-button" onClick={reset}>Reset</button>
         </div>
 
@@ -294,18 +343,35 @@ export default function Calculator({ template }: { template: Inputs }) {
 
       <section className="calc-results">
         <div className="calc-result-header">
-          <div><span>Impact of represented {inputs.cohort_year} sales</span><h2>National NDC result</h2></div>
+          <div><span>{inputs.firm} · {inputs.cohort_year} sales</span><h2>Trade Impact result</h2></div>
           <span
             className={`live-status ${error ? "error" : status ? "busy" : ""}`}
             role="status"
             aria-live="polite"
           >
-            {error ? "Service unavailable" : status || (result ? "Up to date" : "Starting engine")}
+            {error ? "Engine unavailable" : status || (result ? "Up to date" : "Starting engine")}
           </span>
+        </div>
+        <div className="preset-row" role="group" aria-label="One-tap scenarios">
+          <span className="preset-row-label">Try a scenario</span>
+          {PRESETS.map((preset) => (
+            <button
+              key={preset.label}
+              type="button"
+              className="preset-chip"
+              title={preset.hint}
+              onClick={() => update(preset.apply)}
+            >
+              {preset.label}
+            </button>
+          ))}
+          <button type="button" className="preset-chip preset-reset" onClick={reset}>
+            Back to published numbers
+          </button>
         </div>
         {error && (
           <div className="panel" role="alert">
-            <p className="calc-error" style={{ fontSize: 13 }}><strong>Calculation service unavailable.</strong> The source report is unchanged.</p>
+            <p className="calc-error" style={{ fontSize: 13 }}><strong>The engine didn&apos;t respond.</strong> Tap a scenario or move a slider to try again — the published report is unaffected.</p>
             <details className="table-view"><summary>Technical detail</summary><p className="mono panel-note">{error}</p></details>
           </div>
         )}
@@ -317,9 +383,10 @@ export default function Calculator({ template }: { template: Inputs }) {
               directionalOnly={directionalOnly}
             />
             <p className="panel-note">
-              NDC is the primary result. Current-policy and 1.5°C cases show how sensitive
-              that conclusion is to a slower or faster transition. Plug-in hybrid results
-              should be read as upper-bound estimates.
+              The highlighted card is the headline: these sales measured against each
+              country&apos;s climate pledge (NDC). The two side cards test the same sales
+              against a slower and a faster energy transition. Plug-in hybrid results are
+              upper-bound estimates.
             </p>
           </>
         )}

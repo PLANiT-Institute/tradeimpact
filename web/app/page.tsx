@@ -225,7 +225,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <Link className="button primary" href="#assessments">Read the {cohortYear} assessments</Link>
-              <Link className="button secondary" href="/calculator">Open the NDC impact lab</Link>
+              <Link className="button secondary" href="/calculator">Try the Trade Impact Calculator</Link>
             </div>
             <div className="trust-row" aria-label="Dataset controls">
               <span>Engine computed</span>
@@ -317,7 +317,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="story-chapter">
+      <section className="story-chapter" id="method">
         <div className="story-frame story-frame-wide">
           <header className="story-chapter-head">
             <p className="chapter-index"><b>03</b><span>/ the measurement discipline</span></p>
@@ -349,8 +349,7 @@ export default function Home() {
             </article>
           </div>
           <div className="story-actions">
-            <Link className="button primary" href="/calculator">Test the assumptions →</Link>
-            <a className="button secondary" href="https://transitionarc.climatearc.org">Read the methodology</a>
+            <Link className="button primary" href="/calculator">Try the Trade Impact Calculator →</Link>
           </div>
         </div>
       </section>
