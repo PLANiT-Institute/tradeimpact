@@ -42,8 +42,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/">Story</Link>
               <Link href="/#assessments">Assessments</Link>
               <Link href="/#markets">Markets</Link>
-              <a href="https://transitionarc.climatearc.org">Method</a>
-              <Link href="/calculator" className="nav-cta">NDC impact lab</Link>
+              <Link href="/#method">Method</Link>
+              <Link href="/calculator" className="nav-cta">Trade Impact Calculator</Link>
             </nav>
           </header>
           {children}
