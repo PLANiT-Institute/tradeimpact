@@ -46,9 +46,11 @@ requests return `413`.
 ```bash
 cd ti-framework && python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"
 cd ../web && npm install
-../ti-framework/.venv/bin/python scripts/dev_compute.py &   # compute on :8901
-npm run dev:local                                           # Next dev with /api/compute rewrite
+npm run dev:local   # prepares data, starts the :8901 compute sidecar AND next dev; cleans up on exit
 ```
+
+Override the sidecar's Python with `TI_PYTHON=/path/to/python` if the engine venv
+lives elsewhere.
 
 ## CI
 
