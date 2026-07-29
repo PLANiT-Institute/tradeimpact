@@ -1,0 +1,54 @@
+{
+  "cohort": [
+    "annual_tCO2e",
+    "by_country",
+    "by_powertrain",
+    "direction",
+    "directional_only",
+    "excluded_flag_markets",
+    "total_tCO2e",
+    "warnings"
+  ],
+  "crossover": [
+    "TI_per_vehicle_kgCO2e",
+    "country",
+    "crossover_year",
+    "powertrain",
+    "reason",
+    "scenario"
+  ],
+  "data_quality": [
+    "analysis_level",
+    "benchmark_tiers",
+    "cohort_year",
+    "firm",
+    "flag_markets",
+    "layer1_method",
+    "layer2_tiers",
+    "lifetime_T",
+    "lifetime_sens",
+    "missing_inputs",
+    "scenario_sources",
+    "volume_tiers",
+    "warnings"
+  ],
+  "firm_result": [
+    "cohort_year",
+    "cohorts",
+    "crossover",
+    "data_quality",
+    "firm",
+    "inputs",
+    "portfolio",
+    "provenance",
+    "sensitivity"
+  ],
+  "provenance": [
+    "dataset_sha256",
+    "engine_source_sha256",
+    "engine_version",
+    "input_sha256",
+    "workbook",
+    "workbook_sha256"
+  ]
+}

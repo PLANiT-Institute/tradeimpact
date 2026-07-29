@@ -348,7 +348,11 @@
       "ice_intensity": 0.175,
       "units": 1300000,
       "tier": "C",
-      "source": "CAAM/press 2024 rough split"
+      "vehicle_tier": "C",
+      "volume_tier": "C",
+      "vehicle_source": "Analyst powertrain/intensity proxy documented in ESTIMATES.md",
+      "volume_source": "Analyst allocation constrained to Toyota 2024 country total in official detailed sales data: https://global.toyota/en/company/profile/production-sales-figures/202412.html",
+      "source": "Toyota 2024 detailed sales total; Tier C analyst powertrain allocation"
     },
     {
       "country": "CN",
@@ -358,7 +362,11 @@
       "ice_intensity": 0.12,
       "units": 450000,
       "tier": "C",
-      "source": "CAAM/press 2024 rough"
+      "vehicle_tier": "C",
+      "volume_tier": "C",
+      "vehicle_source": "Analyst powertrain/intensity proxy documented in ESTIMATES.md",
+      "volume_source": "Analyst allocation constrained to Toyota 2024 country total in official detailed sales data: https://global.toyota/en/company/profile/production-sales-figures/202412.html",
+      "source": "Toyota 2024 detailed sales total; Tier C analyst powertrain allocation"
     },
     {
       "country": "CN",
@@ -368,27 +376,25 @@
       "eta_ev": 0.17,
       "units": 30000,
       "tier": "C",
-      "source": "rough"
+      "vehicle_tier": "C",
+      "volume_tier": "C",
+      "vehicle_source": "Analyst BEV-efficiency proxy documented in ESTIMATES.md",
+      "volume_source": "Analyst allocation constrained to Toyota 2024 country total in official detailed sales data: https://global.toyota/en/company/profile/production-sales-figures/202412.html",
+      "source": "Toyota 2024 detailed sales total; Tier C analyst powertrain allocation"
     },
     {
       "country": "IN",
       "brand": "Toyota",
-      "model": "ICE mix (Innova/Glanza)",
+      "model": "2024 domestic fixed-emission mix",
       "powertrain": "ICE",
-      "ice_intensity": 0.16,
-      "units": 220000,
+      "ice_intensity": 0.155,
+      "units": 300159,
       "tier": "C",
-      "source": "SIAM 2024 rough"
-    },
-    {
-      "country": "IN",
-      "brand": "Toyota",
-      "model": "HEV mix (Hyryder)",
-      "powertrain": "HEV",
-      "ice_intensity": 0.11,
-      "units": 30000,
-      "tier": "C",
-      "source": "SIAM 2024 rough"
+      "vehicle_tier": "C",
+      "volume_tier": "A",
+      "vehicle_source": "Analyst fixed-emission proxy; 0.155 kgCO2e/km assumption documented in ESTIMATES.md",
+      "volume_source": "Toyota Kirloskar Motor CY2024 domestic sales release (2025-01-01), 300,159 units: https://www.toyotabharat.com/news/2025/tkm-records-its-highest-ever-calendar-year-sales-in-2024-by-selling-326329-units.html",
+      "source": "TKM CY2024 domestic total; vehicle intensity is a Tier C analyst proxy (ESTIMATES.md)"
     }
   ]
 }

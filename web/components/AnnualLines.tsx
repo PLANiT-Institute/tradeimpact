@@ -1,10 +1,7 @@
 "use client";
 // Multi-scenario line chart with crosshair + tooltip. Renders engine time-series only.
 import { useMemo, useRef, useState } from "react";
-import type { Scenario } from "@/lib/shared";
-
-const COLORS: Record<Scenario, string> = { S1: "#b37f2e", S2: "#2d5698", S3: "#1b9e85" };
-const LABELS: Record<Scenario, string> = { S1: "S1 STEPS", S2: "S2 NDC", S3: "S3 NZE" };
+import { SCENARIO_COLORS as COLORS, SCENARIO_LABELS as LABELS, type Scenario } from "@/lib/shared";
 
 export default function AnnualLines({
   series,

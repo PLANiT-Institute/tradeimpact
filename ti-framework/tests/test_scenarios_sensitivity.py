@@ -26,10 +26,14 @@ from ti_framework.models import (
 def _countries():
     return {
         "KR": Country(
-            name="South Korea", code="KR", grid_intensity=0.4, fleet_intensity_base=0.18,
+            name="South Korea",
+            code="KR",
+            grid_intensity=0.4,
+            fleet_intensity_base=0.18,
             r_fleet=ScenarioRate(s1=0.025, s2=0.045, s3=0.07),
             r_power=ScenarioRate(s1=0.03, s2=0.05, s3=0.09),
-            status=BenchmarkStatus.COMPUTED, tier=DataTier.A,
+            status=BenchmarkStatus.COMPUTED,
+            tier=DataTier.A,
         )
     }
 
@@ -41,8 +45,19 @@ def _support():
 def _placements():
     return [
         Placement("KR", Vehicle("H", "BEV", Powertrain.BEV, eta_ev=0.18, tier=DataTier.A), 50000),
-        Placement("KR", Vehicle("K", "PHEV", Powertrain.PHEV, uf=0.4, eta_elec=0.2,
-                                 ice_mode_intensity=0.18, tier=DataTier.A), 20000),
+        Placement(
+            "KR",
+            Vehicle(
+                "K",
+                "PHEV",
+                Powertrain.PHEV,
+                uf=0.4,
+                eta_elec=0.2,
+                ice_mode_intensity=0.18,
+                tier=DataTier.A,
+            ),
+            20000,
+        ),
     ]
 
 
@@ -58,6 +73,15 @@ def test_run_data_quality_declaration_present():
     dq = res.data_quality
     assert dq.lifetime_T == 15
     assert "S2" in dq.scenario_sources
+    assert dq.volume_tiers == {"KR": "?"}
+
+
+def test_run_reports_worst_volume_tier_by_country():
+    placements = _placements()
+    placements[0].volume_tier = DataTier.B
+    placements[1].volume_tier = DataTier.C
+    res = run("F", 2024, placements, _countries(), _support(), EngineConfig())
+    assert res.data_quality.volume_tiers == {"KR": "C"}
 
 
 def test_lifetime_sweep_has_three_points():

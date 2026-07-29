@@ -13,7 +13,7 @@ import csv
 from collections.abc import Iterator
 from pathlib import Path
 
-from ti_framework.io import schema as S
+import ti_framework.io.schema as S
 from ti_framework.io.workbook import (
     WorkbookInputs,
     _collect_missing,

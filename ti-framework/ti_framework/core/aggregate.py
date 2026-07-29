@@ -42,6 +42,10 @@ class Placement:
     vehicle: Vehicle
     units: float | None
     uf_override: float | None = None  # used by sensitivity sweeps (PHEV)
+    # Volume provenance is independent from the vehicle-parameter tier. A public
+    # registration count can be Tier A even when efficiency is proxied (or vice versa).
+    volume_tier: DataTier = DataTier.UNKNOWN
+    volume_source: str | None = None
 
 
 @dataclass
@@ -122,7 +126,9 @@ def _compute_cell(
     grid = None
     if pt in (Powertrain.BEV, Powertrain.PHEV):
         if country.grid_intensity is None or r_power is None:
-            missing.append(f"[{country.code}/{scenario.value}] grid G0 or r_power missing for {pt.value}")
+            missing.append(
+                f"[{country.code}/{scenario.value}] grid G0 or r_power missing for {pt.value}"
+            )
             return None
         grid = GridTrajectory(g0=country.grid_intensity, r_power=r_power)
 
@@ -140,12 +146,17 @@ def _compute_cell(
         product = BEVEmissions(eta_ev=v.eta_ev, grid=grid, distance=distance)
     else:  # PHEV
         if uf is None or v.eta_elec is None or v.ice_mode_intensity is None:
-            missing.append(f"[{country.code}] PHEV params (UF/eta_elec/I_ICE_mode) missing for '{v.brand} {v.model}'")
+            missing.append(
+                f"[{country.code}] PHEV params (UF/eta_elec/I_ICE_mode) missing for '{v.brand} {v.model}'"
+            )
             return None
         assert grid is not None
         product = PHEVEmissions(
-            uf=uf, eta_elec=v.eta_elec, ice_mode_intensity=v.ice_mode_intensity,
-            grid=grid, distance=distance,
+            uf=uf,
+            eta_elec=v.eta_elec,
+            ice_mode_intensity=v.ice_mode_intensity,
+            grid=grid,
+            distance=distance,
         )
 
     gap = ti_gap_series(benchmark, product, T)
@@ -155,10 +166,16 @@ def _compute_cell(
     if config.s_curve:
         t_star, reason = crossover_numeric(gap)
     elif pt.is_fixed:
-        t_star, reason = crossover_ice(country.fleet_intensity_base, r_fleet, distance, product.emissions(0))
+        t_star, reason = crossover_ice(
+            country.fleet_intensity_base, r_fleet, distance, product.emissions(0)
+        )
     elif pt is Powertrain.BEV:
         assert grid is not None
-        t_star, reason = crossover_bev(country.fleet_intensity_base, r_fleet, v.eta_ev, grid.g0, r_power)  # type: ignore[arg-type]
+        assert v.eta_ev is not None
+        assert r_power is not None
+        t_star, reason = crossover_bev(
+            country.fleet_intensity_base, r_fleet, v.eta_ev, grid.g0, r_power
+        )
     else:
         t_star, reason = crossover_numeric(gap)
 
@@ -175,8 +192,11 @@ def _compute_cell(
     units = placement.units or 0.0
     ti_tco2e = cumulative * units / 1000.0
     annual = [(g * units / 1000.0) for g in gap.tolist()]
-    # cell data tier = worse of vehicle tier and country tier
-    cell_tier = v.tier if v.tier.rank >= country.tier.rank else country.tier
+    # Cell quality is the worst of benchmark, vehicle parameter, and volume inputs.
+    tiers = [v.tier, country.tier]
+    if placement.volume_tier is not DataTier.UNKNOWN:
+        tiers.append(placement.volume_tier)
+    cell_tier = max(tiers, key=lambda tier: tier.rank)
     return _CellOutput(vehicle_result=vr, ti_tco2e=ti_tco2e, annual_tco2e=annual, tier=cell_tier)
 
 
@@ -194,8 +214,16 @@ def compute_cohort(
     T = support.lifetime_T
     if T is None or T < 1:
         missing.append("Support_params: vehicle lifetime T missing — cohort not computable")
-        empty = CohortResult(firm=firm, cohort_year=cohort_year, scenario=scenario, total=0.0,
-                             by_country={}, by_powertrain={}, annual=[], warnings=list(missing))
+        empty = CohortResult(
+            firm=firm,
+            cohort_year=cohort_year,
+            scenario=scenario,
+            total=0.0,
+            by_country={},
+            by_powertrain={},
+            annual=[],
+            warnings=list(missing),
+        )
         return empty, [], missing
 
     by_country: dict[str, float] = {}
@@ -206,7 +234,7 @@ def compute_cohort(
     vehicle_results: list[VehicleResult] = []
     warnings: list[str] = []
 
-    tierc_units = 0.0
+    low_confidence_units = 0.0
     total_units = 0.0
 
     for p in placements:
@@ -239,14 +267,17 @@ def compute_cohort(
 
         u = p.units or 0.0
         total_units += u
-        if cell.tier is DataTier.C:
-            tierc_units += u
+        if cell.tier.rank >= DataTier.C.rank:
+            low_confidence_units += u
         warnings.extend(w for w in country.warnings if w not in warnings)
 
-    directional_only = total_units > 0 and (tierc_units / total_units) > config.tier_c_threshold
+    directional_only = (
+        total_units > 0 and (low_confidence_units / total_units) > config.tier_c_threshold
+    )
     if directional_only:
         warnings.append(
-            f"TIER_C_SUPPRESSION: Tier-C volume share {tierc_units/total_units:.0%} exceeds "
+            "TIER_C_SUPPRESSION: Tier-C/unknown affected-unit share "
+            f"{low_confidence_units / total_units:.0%} exceeds "
             f"threshold {config.tier_c_threshold:.0%}; emit directional label only."
         )
 

@@ -1,10 +1,4 @@
 {
-  "engine": "ti_framework",
-  "engine_version": "0.1.0",
-  "engine_git_sha": "eabc23a5d646d3a211fbf90b3407dadea4b30423",
-  "workbook": "TI_Data_Workbook_v0.1.xlsx",
-  "workbook_sha256": "cca5fe38f26beb1e",
-  "build_date": "2026-07-22T10:28:31+00:00",
   "collection_status": {
     "countries_loaded": 9,
     "missing_inputs": [
@@ -23,5 +17,34 @@
       "[JP] PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded.",
       "[KR] PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
     ]
-  }
+  },
+  "compute_service_sha256": "c6a4548404f3c1769391021add4cae2067a172c0b2622e8875b1e561efc65b57",
+  "dataset_sha256": "4e93d72f9dad9ef3a59f5fb52ec03b83840edc6626b3f5fcdb125dd13774b7b6",
+  "engine": "ti_framework",
+  "engine_source_sha256": "ef40fa0400cdab86a4a5627f735b9d7082d8beec19b40261090b2395def5f87a",
+  "engine_version": "0.1.0",
+  "support_contract": {
+    "lifetime_T": 15,
+    "lifetime_sens": 3,
+    "realworld_range": [
+      0.95,
+      1.25
+    ],
+    "uf_band": 0.15,
+    "vkt": {
+      "AU": 13800.0,
+      "CN": 12000.0,
+      "EU": 12000.0,
+      "IN": 10000.0,
+      "JP": 9500.0,
+      "KR": 13000.0,
+      "US": 18000.0
+    }
+  },
+  "target_sources_sha256": {
+    "CAP_Target_Companies_Draft.xlsx": "4e5041709a98dead6ea5d1bbf51e2cbf0d51cd3c327edaf4de216346f1a624be",
+    "TI_CaseStudy_Target_Companies.xlsx": "883e5e5e4aeb3009e02e6e17771dc85897d3a2d668ced366be0e3220055fb9e4"
+  },
+  "workbook": "TI_Data_Workbook_v0.1.xlsx",
+  "workbook_sha256": "cca5fe38f26beb1e510a5f5d7ce99d1b91de283578e756a5d575cca6e0b9130e"
 }

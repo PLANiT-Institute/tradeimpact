@@ -1,0 +1,166 @@
+[
+  {
+    "code": "AU",
+    "flag_reason": null,
+    "fleet_intensity_base": 0.185,
+    "grid_intensity": 0.55383,
+    "name": "Australia",
+    "r_fleet": {
+      "s1": 0.019,
+      "s2": 0.0317382262873848,
+      "s2_upper": 0.0393377867047728,
+      "s3": 0.06
+    },
+    "r_power": {
+      "s1": 0.05,
+      "s2": 0.0317382262873848,
+      "s2_upper": 0.0393377867047728,
+      "s3": 0.11
+    },
+    "source": "S2: UNFCCC AU 2nd NDC 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+    "status": "COMPUTED",
+    "tier": "B",
+    "vkt": 13800.0,
+    "warnings": [
+      "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+    ]
+  },
+  {
+    "code": "CN",
+    "flag_reason": "Target vs undefined emissions peak",
+    "fleet_intensity_base": 0.16,
+    "grid_intensity": 0.5554,
+    "name": "China",
+    "r_fleet": {
+      "s1": 0.02,
+      "s3": 0.06
+    },
+    "r_power": {
+      "s1": 0.035,
+      "s3": 0.1
+    },
+    "source": "2035 target vs undefined emissions peak — no S2 benchmark derivable (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+    "status": "FLAG_PEAK",
+    "tier": "C",
+    "vkt": 12000.0,
+    "warnings": []
+  },
+  {
+    "code": "EU",
+    "flag_reason": null,
+    "fleet_intensity_base": 0.14,
+    "grid_intensity": 0.21134999999999998,
+    "name": "European Union",
+    "r_fleet": {
+      "s1": 0.014,
+      "s2": 0.023848569511212,
+      "s2_upper": 0.0282809284763779,
+      "s3": 0.06
+    },
+    "r_power": {
+      "s1": 0.04,
+      "s2": 0.023848569511212,
+      "s2_upper": 0.0282809284763779,
+      "s3": 0.1
+    },
+    "source": "S2: UNFCCC EU 2035 NDC (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+    "status": "COMPUTED",
+    "tier": "B",
+    "vkt": 12000.0,
+    "warnings": [
+      "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+    ]
+  },
+  {
+    "code": "IN",
+    "flag_reason": "GDP-intensity target — not an absolute emissions path",
+    "fleet_intensity_base": 0.13,
+    "grid_intensity": 0.7054,
+    "name": "India",
+    "r_fleet": {
+      "s1": 0.005,
+      "s3": 0.05
+    },
+    "r_power": {
+      "s1": 0.015,
+      "s3": 0.09
+    },
+    "source": "GDP-intensity target — not an absolute emissions path (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+    "status": "FLAG_INTENSITY",
+    "tier": "C",
+    "vkt": 10000.0,
+    "warnings": []
+  },
+  {
+    "code": "JP",
+    "flag_reason": null,
+    "fleet_intensity_base": 0.15,
+    "grid_intensity": 0.48343,
+    "name": "Japan",
+    "r_fleet": {
+      "s1": 0.024,
+      "s2": 0.0407941521740232,
+      "s2_upper": 0.0407941521740232,
+      "s3": 0.065
+    },
+    "r_power": {
+      "s1": 0.025,
+      "s2": 0.0407941521740232,
+      "s2_upper": 0.0407941521740232,
+      "s3": 0.08
+    },
+    "source": "S2: UNFCCC JP 2035 NDC (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C (ESTIMATES.md). Grid: Ember 2024.",
+    "status": "COMPUTED",
+    "tier": "B",
+    "vkt": 9500.0,
+    "warnings": [
+      "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+    ]
+  },
+  {
+    "code": "KR",
+    "flag_reason": null,
+    "fleet_intensity_base": 0.165,
+    "grid_intensity": 0.41551,
+    "name": "South Korea",
+    "r_fleet": {
+      "s1": 0.025,
+      "s2": 0.043441272053699,
+      "s2_upper": 0.0538827149423172,
+      "s3": 0.07
+    },
+    "r_power": {
+      "s1": 0.03,
+      "s2": 0.043441272053699,
+      "s2_upper": 0.0538827149423172,
+      "s3": 0.09
+    },
+    "source": "S2: UNFCCC KR 2035 NDC Dec 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+    "status": "COMPUTED",
+    "tier": "B",
+    "vkt": 13000.0,
+    "warnings": [
+      "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
+    ]
+  },
+  {
+    "code": "US",
+    "flag_reason": "No active NDC — no S2 benchmark derivable",
+    "fleet_intensity_base": 0.2,
+    "grid_intensity": 0.38377999999999995,
+    "name": "United States",
+    "r_fleet": {
+      "s1": 0.01,
+      "s3": 0.055
+    },
+    "r_power": {
+      "s1": 0.02,
+      "s3": 0.095
+    },
+    "source": "No active NDC (revoked) — no S2 benchmark derivable (NOTES.md D3); excluded from S2 headline. S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+    "status": "FLAG_NO_BENCHMARK",
+    "tier": "C",
+    "vkt": 18000.0,
+    "warnings": []
+  }
+]

@@ -43,10 +43,11 @@ Canonical firm list for the TI pipeline lives in `data-pipeline/firms.json` (bui
   project, no TI sector implementation; carried in the universe as `project: "CAP"`,
   `runnable: false`, for one canonical list rather than two.
 
-No firm currently has collected registration + vehicle-parameter data, so no real-firm TI
-is computable yet. `ReferenceCo` (committed fixture, illustrative parameters — see
-`ti-framework/fixtures/README.md` and NOTES.md D4) is the only end-to-end runnable case
-and drives the demo report until collection lands.
+No firm currently has complete collected registration + vehicle-parameter data. Toyota and
+Hyundai therefore run as explicitly estimated Tier B/C assessments with visible coverage
+and directional-only suppression where the Tier C share exceeds the threshold.
+`ReferenceCo` remains a separate illustrative validation fixture and is excluded from
+country comparisons and firm-assessment headlines.
 
 ## Three-tier collection rule (Whitepaper §5.1)
 

@@ -26,26 +26,26 @@ export default function GapHero() {
     }).join("L")}Z`;
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label="TI gap: the NDC benchmark declines past a fixed ICE line while a BEV stays below it">
-      <path d={bevArea} fill="#1b9e85" opacity={0.12} />
-      <path d={liab} fill="#c05b3a" opacity={0.16} />
-      <polyline points={line(bench)} fill="none" stroke="#16243d" strokeWidth={2.5} />
-      <line x1={sx(0)} y1={sy(iceV)} x2={sx(N - 1)} y2={sy(iceV)} stroke="#c05b3a" strokeWidth={2} />
-      <polyline points={line(bev)} fill="none" stroke="#1b9e85" strokeWidth={2} />
-      <line x1={40} y1={H - 30} x2={W - 20} y2={H - 30} stroke="#d9dfe7" />
-      <text x={sx(1)} y={sy(bench(0)) - 10} fontSize="12" fill="#16243d" fontFamily="var(--font-mono)">
-        NDC benchmark E_ref(t)
+    <svg className="gap-hero-chart" viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label="An NDC-derived sector benchmark declines over time; a combustion vehicle locks in emissions above it while an electric vehicle contributes below it">
+      <path className="gap-area contribution" d={bevArea} />
+      <path className="gap-area lockin" d={liab} />
+      <polyline className="gap-line benchmark" points={line(bench)} fill="none" strokeWidth={2.5} />
+      <line className="gap-line lockin" x1={sx(0)} y1={sy(iceV)} x2={sx(N - 1)} y2={sy(iceV)} strokeWidth={2} />
+      <polyline className="gap-line contribution" points={line(bev)} fill="none" strokeWidth={2} />
+      <line className="gap-axis" x1={40} y1={H - 30} x2={W - 20} y2={H - 30} />
+      <text className="gap-label benchmark" x={sx(1)} y={sy(bench(0)) - 10} fontSize="12" fontFamily="var(--font-mono)">
+        NDC sector benchmark
       </text>
-      <text x={sx(N - 1)} y={sy(iceV) - 8} fontSize="12" fill="#c05b3a" textAnchor="end" fontFamily="var(--font-mono)">
-        ICE — fixed at sale
+      <text className="gap-label lockin" x={sx(N - 1)} y={sy(iceV) - 8} fontSize="12" textAnchor="end" fontFamily="var(--font-mono)">
+        Combustion · lock-in
       </text>
-      <text x={sx(N - 1)} y={sy(bev(N - 1)) + 18} fontSize="12" fill="#1b9e85" textAnchor="end" fontFamily="var(--font-mono)">
-        BEV — declines with grid
+      <text className="gap-label contribution" x={sx(N - 1)} y={sy(bev(N - 1)) + 18} fontSize="12" textAnchor="end" fontFamily="var(--font-mono)">
+        Electric · contribution
       </text>
-      <text x={40} y={H - 12} fontSize="11" fill="#6b7c90">
+      <text className="gap-label axis" x={40} y={H - 12} fontSize="11">
         t = 0 (sale)
       </text>
-      <text x={W - 20} y={H - 12} fontSize="11" fill="#6b7c90" textAnchor="end">
+      <text className="gap-label axis" x={W - 20} y={H - 12} fontSize="11" textAnchor="end">
         t = T−1
       </text>
     </svg>

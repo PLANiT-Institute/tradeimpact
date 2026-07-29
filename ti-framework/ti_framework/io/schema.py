@@ -139,18 +139,30 @@ def parse_powertrain(value: object) -> Powertrain | None:
     return None
 
 
-def parse_rate_fraction(value: object) -> float | None:
-    """Normalise a reduction rate to a fraction/yr.
+def parse_rate_percent(value: object) -> float | None:
+    """Parse a %/yr cell (column header declares the unit) into a fraction/yr."""
+    v = num(value)
+    if v is None or v < 0:
+        return None
+    return v / 100.0
 
-    Workbook rates are given as %/yr (e.g. 4.34 means 0.0434). Values already < 1 are
-    treated as fractions and passed through. Heuristic logged by caller via the return.
+
+def parse_rate_fraction(value: object) -> float | None:
+    """Parse a fraction/yr cell (e.g. 0.0434 = 4.34 %/yr).
+
+    The unit is declared by the column contract, never guessed from magnitude:
+    a value >= 1 in a fraction column is a unit error (probably percent) and
+    raises rather than silently rescaling by 100x.
     """
     v = num(value)
-    if v is None:
+    if v is None or v < 0:
         return None
-    if v < 0:
-        return None
-    return v / 100.0 if v >= 1.0 else v
+    if v >= 1.0:
+        raise SchemaError(
+            f"rate {v!r} is not a fraction/yr (>= 1). This column takes fractions "
+            "(e.g. 0.0434 for 4.34 %/yr); percent values belong in '(%/yr)' columns."
+        )
+    return v
 
 
 def parse_status(value: object) -> BenchmarkStatus:
@@ -189,15 +201,3 @@ def gco2_per_km_to_kg(value: float | None) -> float | None:
 
 def gco2_per_kwh_to_kg(value: float | None) -> float | None:
     return None if value is None else value / 1000.0
-
-
-def validate_headers(actual: list[object], expected: list[str], sheet: str) -> None:
-    """Validate a header row against the expected contract (prefix match, tolerant of trailing)."""
-    norm = [text(c) or "" for c in actual]
-    for i, exp in enumerate(expected):
-        if i >= len(norm) or norm[i].strip() != exp:
-            got = norm[i] if i < len(norm) else "<missing>"
-            raise SchemaError(
-                f"Sheet '{sheet}' column {i}: expected '{exp}', got '{got}'. "
-                "Workbook schema does not match the contract in io/schema.py."
-            )
