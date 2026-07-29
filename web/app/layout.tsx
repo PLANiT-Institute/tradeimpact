@@ -32,7 +32,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="shell">
           <header className="topbar">
             <Link href="/" className="wordmark">
-              <span className="brand-mark" aria-hidden="true">TI</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img className="brand-logo" src="/planit-logo-white.png" alt="PLANiT Institute" height={22} />
               <span className="brand-lockup">
                 Trade Impact
                 <small>product impact on NDC delivery</small>
@@ -42,12 +43,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/">Story</Link>
               <Link href="/#assessments">Assessments</Link>
               <Link href="/#markets">Markets</Link>
+              <Link href="/korea">Korea</Link>
               <Link href="/#method">Method</Link>
               <Link href="/calculator" className="nav-cta">Trade Impact Calculator</Link>
-              <a className="planit-mark" href="https://planit.institute" aria-label="PLANiT Institute">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/planit-logo-white.png" alt="PLANiT Institute" height={16} />
-              </a>
             </nav>
           </header>
           {children}
