@@ -44,11 +44,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/#markets">Markets</Link>
               <Link href="/#method">Method</Link>
               <Link href="/calculator" className="nav-cta">Trade Impact Calculator</Link>
+              <a className="planit-mark" href="https://planit.institute" aria-label="PLANiT Institute">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/planit-logo-white.png" alt="PLANiT Institute" height={16} />
+              </a>
             </nav>
           </header>
           {children}
           <footer className="site">
             <div>
+              <a className="planit-mark" href="https://planit.institute" aria-label="PLANiT Institute">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/planit-logo-white.png" alt="PLANiT Institute" height={20} />
+              </a>
               <strong>Trade Impact</strong>
               <p>Product-level impact on national NDC delivery.</p>
             </div>

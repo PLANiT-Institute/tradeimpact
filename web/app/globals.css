@@ -2828,3 +2828,31 @@ footer.site p {
     transform: none;
   }
 }
+
+/* --- PLANiT logo mark --- */
+.planit-mark {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.9;
+  transition: opacity 120ms ease;
+}
+.planit-mark:hover {
+  opacity: 1;
+}
+.planit-mark img {
+  display: block;
+  width: auto;
+}
+.topnav .planit-mark {
+  margin-left: 14px;
+  padding-left: 16px;
+  border-left: 1px solid var(--line-strong);
+}
+footer.site .planit-mark {
+  margin-bottom: 8px;
+}
+@media (max-width: 720px) {
+  .topnav .planit-mark {
+    display: none;
+  }
+}
