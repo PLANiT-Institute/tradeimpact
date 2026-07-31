@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnnualLines from "@/components/AnnualLines";
+import CumulativeLines from "@/components/CumulativeLines";
 import DecompBars from "@/components/DecompBars";
 import ScenarioCards from "@/components/ScenarioCards";
 import {
@@ -88,6 +89,36 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
     {};
   const yearSeries = result.by_year?.series ?? [];
   const hasTrend = yearSeries.length > 1;
+  // fixed country→color assignment (same country = same color on every report);
+  // palette validated against the app surface (dataviz six-checks, 2026-07-30)
+  const COUNTRY_COLORS: Record<string, string> = {
+    EU: "#3987e5",
+    JP: "#d95926",
+    AU: "#199e70",
+    CA: "#c98500",
+    KR: "#d55181",
+    UK: "#9085e9",
+  };
+  const countryNamesForChart = new Map(
+    getCountries().map((country) => [country.code, country.name]),
+  );
+  const trendYears = [...yearSeries].sort((a, b) => a.year - b.year);
+  const countryCumulative = new Map<string, number[]>();
+  for (const row of trendYears) {
+    for (const [code, value] of Object.entries(row.cohorts.S2?.by_country ?? {})) {
+      const prev = countryCumulative.get(code) ?? [];
+      countryCumulative.set(code, [...prev, (prev[prev.length - 1] ?? 0) + value]);
+    }
+  }
+  const countryCumulativeSeries = [...countryCumulative.entries()]
+    .filter(([, values]) => values.length === trendYears.length)
+    .sort((a, b) => Math.abs(b[1][b[1].length - 1]) - Math.abs(a[1][a[1].length - 1]))
+    .map(([code, values]) => ({
+      key: code,
+      label: countryNamesForChart.get(code) ?? code,
+      color: COUNTRY_COLORS[code] ?? "#8ab8f6",
+      values,
+    }));
   const representedUnits =
     meta?.assessed_units ??
     placements.reduce((total, placement) => total + (placement.units ?? 0), 0);
@@ -362,6 +393,24 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
               </tbody>
             </table>
           </div>
+          {countryCumulativeSeries.length > 0 && (
+            <>
+              <h3 className="subsection-title">Where the impact is accruing, country by country</h3>
+              <p className="section-lede">
+                Cumulative NDC impact (S2) of the {trendYears[0]?.year}–{result.cohort_year} sales
+                cohorts per operating market — each line runs the total forward as sales years
+                accumulate.
+              </p>
+              <div className="quiet-panel">
+                <CumulativeLines
+                  years={trendYears.map((row) => row.year)}
+                  series={countryCumulativeSeries}
+                  ariaLabel={`Cumulative S2 NDC impact by country across sales years ${trendYears[0]?.year}–${result.cohort_year}`}
+                  caption="tCO₂e, cumulative across sales-year cohorts · negative = NDC lock-in accumulating"
+                />
+              </div>
+            </>
+          )}
           <p className="plain-footnote">{result.by_year?.note}</p>
         </section>
       )}

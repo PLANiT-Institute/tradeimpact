@@ -5,7 +5,15 @@ import { fmtTI } from "@/lib/shared";
 const POS = "var(--pos)";
 const NEG = "var(--neg)";
 
-export default function DecompBars({ data, unit }: { data: Record<string, number>; unit: string }) {
+export default function DecompBars({
+  data,
+  unit,
+  caption,
+}: {
+  data: Record<string, number>;
+  unit: string;
+  caption?: string;
+}) {
   const entries = Object.entries(data).sort((a, b) => b[1] - a[1]);
   if (!entries.length) return <p className="panel-note">No decomposition available.</p>;
   const maxAbs = Math.max(...entries.map(([, v]) => Math.abs(v)), 1);
@@ -19,7 +27,7 @@ export default function DecompBars({ data, unit }: { data: Record<string, number
 
   return (
     <div className="chart-wrap">
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ minWidth: 460, display: "block" }} role="img" aria-label={`Contribution to the NDC impact result, ${unit}`}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ minWidth: 430, display: "block" }} role="img" aria-label={`Contribution to the NDC impact result, ${unit}`}>
         <line x1={zero} x2={zero} y1={4} y2={H - 16} stroke="var(--ink-3)" strokeWidth={1.2} />
         {entries.map(([key, v], i) => {
           const y = i * rowH + 10;
@@ -29,7 +37,7 @@ export default function DecompBars({ data, unit }: { data: Record<string, number
           return (
             <g key={key}>
               <title>{`${key}: ${fmtTI(v)} ${unit}`}</title>
-              <text x={labelW - 10} y={y + 15} textAnchor="end" fontSize="12.5" fill="var(--ink-2)" fontFamily="var(--font-mono)">
+              <text x={labelW - 10} y={y + 15} textAnchor="end" fontSize="13.5" fill="var(--ink-2)" fontFamily="var(--font-mono)">
                 {key}
               </text>
               <rect x={x} y={y} width={Math.max(w, 1.5)} height={16} fill={color} rx={3} />
@@ -37,7 +45,7 @@ export default function DecompBars({ data, unit }: { data: Record<string, number
                 x={v >= 0 ? zero + w + 8 : zero - w - 8}
                 y={y + 13}
                 textAnchor={v >= 0 ? "start" : "end"}
-                fontSize="12"
+                fontSize="13"
                 fill="var(--ink)"
                 fontFamily="var(--font-mono)"
               >
@@ -46,8 +54,8 @@ export default function DecompBars({ data, unit }: { data: Record<string, number
             </g>
           );
         })}
-        <text x={W - 4} y={H - 4} textAnchor="end" fontSize="11" fill="var(--ink-3)">
-          {unit} · green = NDC contribution · rust = NDC lock-in
+        <text x={W - 4} y={H - 4} textAnchor="end" fontSize="12" fill="var(--ink-3)">
+          {caption ?? `${unit} · green = NDC contribution · rust = NDC lock-in`}
         </text>
       </svg>
     </div>

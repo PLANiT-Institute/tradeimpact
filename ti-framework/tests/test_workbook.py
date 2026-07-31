@@ -55,10 +55,14 @@ def test_load_real_workbook_partial_data():
     assert set(inp.countries) >= {"AU", "US", "EU", "JP", "KR", "IN", "ID", "SA", "CN"}
     # US is a FLAG market (no NDC)
     assert inp.countries["US"].is_flag
-    # D1: KR gets the pro-rata identity warning and a tier downgrade
+    # KR carries collected sectoral S2 rates (기본계획 2024→2030) — no pro-rata identity
     kr = inp.countries["KR"]
-    assert kr.r_fleet.s2 == kr.r_power.s2
-    assert any("PRORATA_IDENTITY" in w for w in kr.warnings)
+    assert kr.r_fleet.s2 != kr.r_power.s2
+    assert not any("PRORATA_IDENTITY" in w for w in kr.warnings)
+    # D1 still applies where only the economy-wide rate exists (AU S2 stays pro-rata)
+    au = inp.countries["AU"]
+    assert au.r_fleet.s2 == au.r_power.s2
+    assert any("PRORATA_IDENTITY" in w for w in au.warnings)
     # missing inputs are surfaced, not fabricated
     assert inp.missing_inputs
 

@@ -8,7 +8,7 @@
   --text: #e8edf5;
   --text-strong: #ffffff;
   --muted: #a8b4c5;
-  --quiet: #718097;
+  --quiet: #8fa0b8;
   --hairline: rgba(255, 255, 255, 0.11);
   --hairline-strong: rgba(255, 255, 255, 0.18);
   --accent: #d97706;
@@ -134,7 +134,7 @@ select:focus-visible {
 }
 .brand-lockup small {
   color: var(--ink-3);
-  font-size: 9px;
+  font-size: 10.5px;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -201,7 +201,7 @@ select:focus-visible {
   margin-right: 5px;
   color: var(--ink-3);
   font-family: var(--font-mono), monospace;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -346,7 +346,7 @@ h2 em {
 .scenario-card .sc-label,
 .sc-code {
   font-family: var(--font-mono), monospace;
-  font-size: 10.5px;
+  font-size: 11.5px;
   letter-spacing: 0.08em;
   color: var(--ink-3);
 }
@@ -356,7 +356,7 @@ h2 em {
   border-radius: 999px;
   color: var(--navy-2);
   background: var(--navy-3);
-  font-size: 9px;
+  font-size: 10.5px;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -431,7 +431,7 @@ h2 em {
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.14);
 }
 .panel-note {
-  font-size: 13.5px;
+  font-size: 14px;
   color: var(--ink-3);
   max-width: 70ch;
 }
@@ -488,6 +488,9 @@ th.num {
 }
 .table-scroll {
   overflow-x: auto;
+  /* anchor absolutely-positioned descendants (e.g. .sr-only) inside the clip,
+     so they cannot widen the page scroll area */
+  position: relative;
 }
 
 details.table-view summary {
@@ -723,7 +726,7 @@ details.table-view summary {
 }
 .figure-heading div span {
   color: var(--ink-3);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -742,7 +745,7 @@ details.table-view summary {
   background: var(--paper);
   color: var(--ink-3);
   font-family: var(--font-mono), monospace;
-  font-size: 10px;
+  font-size: 11px;
   padding: 3px 8px;
 }
 .metric-grid {
@@ -860,7 +863,7 @@ details.table-view summary {
   align-items: center;
   white-space: nowrap;
   border-radius: 999px;
-  font-size: 10.5px;
+  font-size: 11.5px;
   font-weight: 600;
   padding: 4px 9px;
 }
@@ -884,7 +887,7 @@ details.table-view summary {
   grid-column: 1 / -1;
   margin-bottom: 5px;
   color: var(--ink-3);
-  font-size: 10.5px;
+  font-size: 11.5px;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -915,7 +918,7 @@ details.table-view summary {
 }
 .assessment-metrics dt {
   color: var(--ink-3);
-  font-size: 10.5px;
+  font-size: 11.5px;
   line-height: 1.25;
 }
 .assessment-metrics dd {
@@ -933,7 +936,7 @@ details.table-view summary {
   justify-content: space-between;
   gap: 20px;
   color: var(--ink-3);
-  font-size: 10.5px;
+  font-size: 11.5px;
 }
 .coverage-label b {
   color: var(--ink-2);
@@ -1186,7 +1189,7 @@ details.table-view summary {
 }
 .executive-signal > span {
   color: var(--ink-3);
-  font-size: 10.5px;
+  font-size: 11.5px;
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1217,7 +1220,7 @@ details.table-view summary {
 }
 .executive-metrics dt {
   color: var(--ink-3);
-  font-size: 10.5px;
+  font-size: 11.5px;
 }
 .executive-metrics dd {
   margin: 4px 0 0;
@@ -1275,7 +1278,7 @@ details.table-view summary {
   max-width: 70ch;
   margin: -3px 0 16px;
   color: var(--ink-3);
-  font-size: 13.5px;
+  font-size: 14px;
 }
 #trajectory,
 #drivers,
@@ -1309,12 +1312,12 @@ details.table-view summary {
 }
 .market-summary dt {
   color: var(--ink-3);
-  font-size: 10.5px;
+  font-size: 11.5px;
 }
 .market-summary dd {
   margin: 4px 0 0;
   color: var(--navy);
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 600;
 }
 .market-firm-section {
@@ -1420,7 +1423,7 @@ details.table-view summary {
 }
 .answer-strip article > span {
   color: var(--ink-3);
-  font-size: 10.5px;
+  font-size: 11.5px;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -1531,7 +1534,7 @@ details.table-view summary {
   max-width: 220px;
   margin-top: 4px;
   color: var(--ink-3);
-  font-size: 10.5px;
+  font-size: 11.5px;
   line-height: 1.35;
 }
 .country-impact-table .country-excluded td {
@@ -1555,7 +1558,7 @@ details.table-view summary {
 }
 .country-identity strong {
   color: var(--navy);
-  font-size: 13.5px;
+  font-size: 14px;
 }
 .ndc-effect {
   display: inline-flex;
@@ -1797,7 +1800,7 @@ details.table-view summary {
   .country-impact-table td::before {
     content: attr(data-label);
     color: var(--ink-3);
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -2006,7 +2009,7 @@ details.table-view summary {
 }
 .lab-scope > span {
   color: var(--ink-3);
-  font-size: 10.5px;
+  font-size: 11.5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -2074,7 +2077,7 @@ details.table-view summary {
 .calc-control-header span,
 .calc-result-header span:first-child {
   color: var(--ink-3);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -2100,7 +2103,7 @@ details.table-view summary {
 .control-section-title {
   margin: 15px 4px 7px;
   color: var(--ink-3);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -2137,7 +2140,7 @@ details.table-view summary {
 }
 .control-disclosure > summary small {
   color: var(--ink-3);
-  font-size: 9.5px;
+  font-size: 11px;
   font-weight: 500;
   text-align: right;
 }
@@ -2167,7 +2170,7 @@ details.table-view summary {
   border-radius: 999px;
   color: #10735f;
   background: #e5f5f1;
-  font-size: 10.5px;
+  font-size: 11.5px;
   font-weight: 600;
 }
 .live-status::before {
@@ -2419,7 +2422,7 @@ details.table-view summary {
   margin: 0 0 18px;
   color: var(--quiet);
   font-family: var(--font-mono), monospace;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -2522,7 +2525,7 @@ details.table-view summary {
 .principle-grid article > span {
   color: var(--accent);
   font-family: var(--font-mono), monospace;
-  font-size: 9.5px;
+  font-size: 11px;
   letter-spacing: 0.11em;
   text-transform: uppercase;
 }
@@ -2782,7 +2785,7 @@ footer.site p {
 }
 .preset-row-label {
   color: var(--ink-3);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   margin-right: 2px;
@@ -2930,3 +2933,34 @@ footer.site .planit-mark {
 }
 .korea-bar span.pos { background: var(--pos); }
 .korea-bar span.neg { background: var(--neg); }
+
+/* --- mobile refinements (design review 2026-07-30) --- */
+@media (max-width: 760px) {
+  /* scroll-hint fade on horizontally scrollable panels */
+  .table-scroll,
+  .chart-wrap {
+    -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 26px), transparent);
+    mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 26px), transparent);
+  }
+  /* compact header: drop the tagline line, tighten height */
+  .brand-lockup small {
+    display: none;
+  }
+  .topbar {
+    min-height: 52px;
+  }
+}
+@media (max-width: 540px) {
+  .report-section-nav,
+  .topnav {
+    -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 30px), transparent);
+    mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 30px), transparent);
+  }
+}
+
+.subsection-title {
+  margin: 30px 0 6px;
+  font-family: var(--font-serif);
+  font-size: 21px;
+  font-weight: 600;
+}

@@ -62,7 +62,7 @@ export default function AnnualLines({
           ref={svgRef}
           viewBox={`0 0 ${W} ${H}`}
           width="100%"
-          style={{ minWidth: 520, display: "block" }}
+          style={{ minWidth: 460, display: "block" }}
           role="img"
           aria-label={`${yLabel} by ${xLabel}, scenarios ${keys.join(", ")}`}
           onPointerMove={onMove}
@@ -78,17 +78,17 @@ export default function AnnualLines({
                 stroke={v === 0 ? "#46586e" : "#e4e8ee"}
                 strokeWidth={v === 0 ? 1.2 : 1}
               />
-              <text x={M.l - 8} y={sy(v) + 4} textAnchor="end" fontSize="11" fill="#6b7c90">
+              <text x={M.l - 8} y={sy(v) + 4} textAnchor="end" fontSize="12.5" fill="#6b7c90">
                 {compact(v)}
               </text>
             </g>
           ))}
           {[0, Math.floor((n - 1) / 2), n - 1].map((i) => (
-            <text key={i} x={sx(i)} y={H - 10} textAnchor="middle" fontSize="11" fill="#6b7c90">
+            <text key={i} x={sx(i)} y={H - 10} textAnchor="middle" fontSize="12.5" fill="#6b7c90">
               {x0 + i}
             </text>
           ))}
-          <text x={8} y={H - 10} textAnchor="start" fontSize="11" fill="#6b7c90">
+          <text x={8} y={H - 10} textAnchor="start" fontSize="12.5" fill="#6b7c90">
             {xLabel}
           </text>
           {keys.map((k) => (
@@ -173,13 +173,13 @@ function TooltipBox({
   return (
     <g transform={`translate(${bx},14)`} pointerEvents="none">
       <rect width={bw} height={bh} rx={4} fill="#16243d" opacity={0.94} />
-      <text x={10} y={17} fontSize="11" fill="#c8d2de" fontFamily="var(--font-mono)">
+      <text x={10} y={17} fontSize="12.5" fill="#c8d2de" fontFamily="var(--font-mono)">
         {title}
       </text>
       {rows.map((r, i) => (
         <g key={r.label} transform={`translate(10,${32 + i * 18})`}>
           <rect width={9} height={9} y={-8} rx={2} fill={r.color} />
-          <text x={15} fontSize="11.5" fill="#fff" fontFamily="var(--font-mono)">
+          <text x={15} fontSize="12.5" fill="#fff" fontFamily="var(--font-mono)">
             {r.label}  {r.value === undefined ? "—" : compact(r.value)}
           </text>
         </g>

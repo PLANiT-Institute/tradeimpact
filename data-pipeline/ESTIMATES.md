@@ -15,19 +15,32 @@ through the same loader/engine as any collected data.
 | S2 economy-wide reduction rates AU / EU / JP / KR | UNFCCC 2035 NDCs via workbook (pro-rata, D1 identity warning applies) | B |
 | US = no S2 benchmark | NDC revoked — FLAG per NOTES.md D3, excluded from S2 headline | — |
 
+## Collected 2026-07-30 — no longer estimates (see SECTORAL_SOURCES.md for full provenance)
+
+| Parameter | Values now used | Source | Tier |
+|---|---|---|---|
+| r_fleet/r_power **S2 sectoral** JP/KR/EU/UK | JP 3.69/5.14 · KR 6.05/6.50 · EU 4.35/7.24 · UK 8.17/14.76 %/yr | 지구온난화대책계획 2025 · 1차 탄소중립기본계획 2023 · SWD(2024)63 · CCC 7th Carbon Budget (workbook `Layer1_NDC_benchmark`) | A (UK: B — CCC는 법정 자문) |
+| r_fleet/r_power **S1 sectoral** CA/AU | CA 1.95/9.91 · AU 1.75/11.03 %/yr | ECCC 2025 ERP Progress Report (WM) · DCCEEW emissions projections 2025 (baseline), →2035 CAGR | A(공식 투영) |
+| Vehicle params (model-level) | workbook `Layer2_vehicle_params` 17 rows | EEA CO2 monitoring 2022P · EPA fueleconomy.gov MY2024 · MLIT 燃費一覧 令和8年3月 · KEA 표시연비 2026-04 | A |
+
+Fixture corrections applied from the official anchors (label/cert × documented real-world
+gap): Toyota EU HEV 0.11→**0.125**, Toyota US HEV 0.125→**0.145**, Hyundai KR HEV
+(그랜저/싼타페 믹스) 0.125→**0.145** kgCO₂e/km. All other mix intensities checked within
+~±10% of anchors and kept (source strings now cite the anchor).
+
 ## Estimated (replace when collected)
 
 | Parameter | Values used | Rationale | Tier |
 |---|---|---|---|
-| r_fleet S1 (STEPS) | JP 2.4, EU 1.4, AU 1.9, KR 2.5, US 1.0 %/yr | ~0.6× the S2 pro-rata rate; transport under current policies decarbonises slower than NDC ambition | C |
-| r_power S1 (STEPS) | JP 2.5, EU 4.0, AU 5.0, KR 3.0, US 2.0 %/yr | IEA STEPS direction: EU/AU grids decarbonising fast on current policy, JP/KR/US slower | C |
+| r_fleet S1 (STEPS) | JP 2.4, EU 1.4, KR 2.5, US 1.0 %/yr (CA/AU: collected, see above) | ~0.6× the S2 pro-rata rate; transport under current policies decarbonises slower than NDC ambition | C |
+| r_power S1 (STEPS) | JP 2.5, EU 4.0, KR 3.0, US 2.0 %/yr (CA/AU: collected) | IEA STEPS direction: EU grids decarbonising fast on current policy, JP/KR/US slower | C |
 | r_fleet S3 (NZE) | 5.5–7 %/yr by market | IEA NZE transport pathway magnitude | C |
 | r_power S3 (NZE) | 8–11 %/yr by market | IEA NZE electricity pathway magnitude | C |
 | Fleet base intensity I_fleet(0) | JP 0.150, EU 0.140, AU 0.185, KR 0.165, US 0.200, CN 0.160, IN 0.130 kgCO₂e/km | In-use all-vintage fleet average: EU cleanest, AU/US ute/truck-heavy, IN small-car-dominated | C |
 | Annual distance D_c | JP 9,500; EU 12,000; AU 13,800; KR 13,000; US 18,000; CN 12,000; IN 10,000 km/yr | National VKT statistics magnitudes (MLIT, EEA, BITRE, KTDB, FHWA; CN/IN regional defaults) | B/C |
 | Vehicle lifetime T | 15 yr (± 3 sensitivity) | Mean fleet age magnitude, OECD markets | B |
 | ICE real-world intensity | 0.16–0.22 kgCO₂e/km by market mix | Certification values + ICCT Mind-the-Gap uplift; AU/US higher (utes, trucks) | B |
-| HEV real-world intensity | 0.11–0.13 kgCO₂e/km | Toyota/Hyundai hybrid fleet averages, real-world corrected | B |
+| HEV real-world intensity | 0.115–0.145 kgCO₂e/km | Toyota/Hyundai hybrid fleet averages, real-world corrected; 3 mixes re-anchored to EEA/EPA/KEA official values 2026-07-30 (see above) | B |
 | BEV efficiency η_EV | 0.17–0.19 kWh/km | bZ4X / Ioniq5 certification + real-world uplift | B |
 | PHEV UF / η_elec / ICE-mode | UF 0.40–0.50; 0.19–0.21 kWh/km; 0.14–0.16 kgCO₂e/km | Regulatory UF — **structural overstatement caveat applies** (Guideline §3.5); engine reports UF−0.15 lower bound side by side | C |
 | 2024 volumes V_c,v | per-fixture placements | Public annual sales totals where available; model/powertrain allocations remain B/C and are tiered independently from the vehicle parameters | A/B/C |

@@ -115,9 +115,17 @@ result's `missing_inputs` list and the data-quality declaration, rather than cra
 
 ## 7. Outstanding doc conflicts / items still open
 
+- **2026-07-30 update:** JP/KR/EU/UK now carry independently derived sectoral S2 rates in
+  the workbook (official government sectoral pathways — SECTORAL_SOURCES.md), so the D1
+  pro-rata identity no longer applies there. It still applies to AU/CA S2 (no official
+  sectoral NDC decomposition exists; their official sectoral projections are
+  current-policy and feed S1). **D2 caveat:** the sectoral pathways are single central
+  paths — no sectoral decomposition of the conditional NDC range exists, so `s2_upper`
+  is not populated for sectoral-S2 markets.
 - The sector-split correction factor's *derivation* (IEA WEO sector pathways) is not in the
   workbook; the switch is implemented but the factor must be supplied by the analyst.
-- S1/S3 rates ("TO EXTRACT from IEA") are absent from both workbooks; the engine accepts them
-  as inputs and, where absent, runs S2-only and marks S1/S3 missing.
+- S1/S3 rates ("TO EXTRACT from IEA") remain estimates except CA/AU S1 (official
+  projections, 2026-07-30); the engine accepts them as inputs and, where absent, runs
+  S2-only and marks S1/S3 missing.
 - Base-year fleet intensity `I_fleet,seg,c(0)` and segment ratio require IEA transport CO₂ ÷
   (OICA fleet × VKT), none of which are in the workbook → supplied via inputs/fixtures.

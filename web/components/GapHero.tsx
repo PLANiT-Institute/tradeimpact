@@ -33,19 +33,19 @@ export default function GapHero() {
       <line className="gap-line lockin" x1={sx(0)} y1={sy(iceV)} x2={sx(N - 1)} y2={sy(iceV)} strokeWidth={2} />
       <polyline className="gap-line contribution" points={line(bev)} fill="none" strokeWidth={2} />
       <line className="gap-axis" x1={40} y1={H - 30} x2={W - 20} y2={H - 30} />
-      <text className="gap-label benchmark" x={sx(1)} y={sy(bench(0)) - 10} fontSize="12" fontFamily="var(--font-mono)">
+      <text className="gap-label benchmark" x={sx(1)} y={sy(bench(0)) - 10} fontSize="13" fontFamily="var(--font-mono)">
         NDC sector benchmark
       </text>
-      <text className="gap-label lockin" x={sx(N - 1)} y={sy(iceV) - 8} fontSize="12" textAnchor="end" fontFamily="var(--font-mono)">
+      <text className="gap-label lockin" x={sx(N - 1)} y={sy(iceV) - 8} fontSize="13" textAnchor="end" fontFamily="var(--font-mono)">
         Combustion · lock-in
       </text>
-      <text className="gap-label contribution" x={sx(N - 1)} y={sy(bev(N - 1)) + 18} fontSize="12" textAnchor="end" fontFamily="var(--font-mono)">
+      <text className="gap-label contribution" x={sx(N - 1)} y={sy(bev(N - 1)) + 18} fontSize="13" textAnchor="end" fontFamily="var(--font-mono)">
         Electric · contribution
       </text>
-      <text className="gap-label axis" x={40} y={H - 12} fontSize="11">
+      <text className="gap-label axis" x={40} y={H - 12} fontSize="12">
         t = 0 (sale)
       </text>
-      <text className="gap-label axis" x={W - 20} y={H - 12} fontSize="11" textAnchor="end">
+      <text className="gap-label axis" x={W - 20} y={H - 12} fontSize="12" textAnchor="end">
         t = T−1
       </text>
     </svg>
