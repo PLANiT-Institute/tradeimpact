@@ -32,7 +32,12 @@ test("country views use the canonical contract and exclude illustrative firms", 
   const kr = views.find((view) => view.code === "KR");
   assert.ok(kr);
   assert.match(kr.source ?? "", /UNFCCC KR/);
-  assert.ok(kr.warnings.some((warning) => warning.includes("PRORATA_IDENTITY")));
+  // KR carries collected sectoral S2 rates — the pro-rata identity is broken there,
+  // but AU still runs on the economy-wide pro-rata rate and keeps the warning.
+  assert.ok(!kr.warnings.some((warning) => warning.includes("PRORATA_IDENTITY")));
+  const au = views.find((view) => view.code === "AU");
+  assert.ok(au);
+  assert.ok(au.warnings.some((warning) => warning.includes("PRORATA_IDENTITY")));
 });
 
 test("country rows preserve scenario-level directional suppression", () => {

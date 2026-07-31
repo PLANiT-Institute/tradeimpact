@@ -1,8 +1,42 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CumulativeLines from "@/components/CumulativeLines";
 import ScenarioCards from "@/components/ScenarioCards";
 import { getCountryView, getCountryViews } from "@/lib/country";
-import { getMeta, SCENARIO_LABELS, SCENARIOS } from "@/lib/data";
+import { getFirmResult, getMeta, SCENARIO_LABELS, SCENARIOS } from "@/lib/data";
+
+// fixed firm→color assignment (same firm = same color on every page);
+// palette validated against the app surface (dataviz six-checks, 2026-07-30)
+const FIRM_COLORS: Record<string, string> = {
+  toyota: "#3987e5",
+  hyundai: "#d95926",
+};
+const FIRM_FALLBACK = "#199e70";
+
+/** Per-firm cumulative S2 impact in `code` across re-run sales years. */
+function firmCumulativeSeries(code: string, slugs: string[]) {
+  let years: number[] | null = null;
+  const series = [];
+  for (const slug of slugs) {
+    const result = getFirmResult(slug);
+    const rows = [...(result.by_year?.series ?? [])].sort((a, b) => a.year - b.year);
+    const values: number[] = [];
+    for (const row of rows) {
+      const value = row.cohorts.S2?.by_country?.[code];
+      if (value === undefined) break;
+      values.push((values[values.length - 1] ?? 0) + value);
+    }
+    if (values.length !== rows.length || rows.length < 2) continue;
+    years ??= rows.map((row) => row.year);
+    series.push({
+      key: result.firm,
+      label: result.firm,
+      color: FIRM_COLORS[slug] ?? FIRM_FALLBACK,
+      values,
+    });
+  }
+  return { years: years ?? [], series };
+}
 
 export function generateStaticParams() {
   return getCountryViews().map((v) => ({ code: v.code }));
@@ -23,6 +57,9 @@ export default async function CountryPage({ params }: { params: Promise<{ code: 
   const v = getCountryView(code)!;
   const meta = getMeta();
   const isFlag = v.benchmarkStatus !== "COMPUTED";
+  const cumulative = isFlag
+    ? { years: [], series: [] }
+    : firmCumulativeSeries(code, v.firms.map((f) => f.slug));
 
   return (
     <main>
@@ -110,6 +147,26 @@ export default async function CountryPage({ params }: { params: Promise<{ code: 
           Transport rates benchmark ICE/HEV products; power rates drive the grid trajectory behind BEV/PHEV products.
         </p>
       </details>
+
+      {cumulative.series.length > 0 && (
+        <section className="market-firm-section">
+          <h2>Cumulative NDC impact by firm</h2>
+          <p className="panel-note">
+            Each firm&apos;s {cumulative.years[0]}–{cumulative.years[cumulative.years.length - 1]} sales
+            cohorts in {v.code}, run against today&apos;s benchmark and accumulated — the slope shows
+            whether a firm&apos;s yearly contribution is growing or easing. Lines are independent
+            comparisons, not shares of one total.
+          </p>
+          <div className="quiet-panel">
+            <CumulativeLines
+              years={cumulative.years}
+              series={cumulative.series}
+              ariaLabel={`Cumulative S2 NDC impact in ${v.code} by firm across sales years`}
+              caption="tCO₂e, cumulative across sales-year cohorts · negative = NDC lock-in accumulating"
+            />
+          </div>
+        </section>
+      )}
 
       {v.firms.map((f) => (
         <section className="market-firm-section" key={f.slug}>

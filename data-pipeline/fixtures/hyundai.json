@@ -37,20 +37,18 @@
       "fleet_intensity_base": 0.165,
       "r_fleet": {
         "s1": 0.025,
-        "s2": 0.043441272053699,
+        "s2": 0.060491,
         "s3": 0.07
       },
       "r_power": {
         "s1": 0.03,
-        "s2": 0.043441272053699,
+        "s2": 0.065024,
         "s3": 0.09
       },
       "status": "COMPUTED",
-      "tier": "B",
-      "source": "S2: UNFCCC KR 2035 NDC Dec 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
-      "warnings": [
-        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
-      ]
+      "tier": "A",
+      "source": "S2: UNFCCC KR 2035 NDC Dec 2025 (sectoral, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C (ESTIMATES.md). Grid: Ember 2024. · S2 sectoral: 제1차 탄소중립·녹색성장 기본계획(2023.4) 연도별 경로 수송 88.7(2024)→61.0(2030), 전환 218.4→145.9 MtCO2eq; pcccr.go.kr. 2035 NDC(-53~61%)는 부문분해 미발표 — 2024→2030 CAGR 사용.",
+      "warnings": []
     },
     "EU": {
       "name": "European Union",
@@ -58,38 +56,36 @@
       "fleet_intensity_base": 0.14,
       "r_fleet": {
         "s1": 0.014,
-        "s2": 0.023848569511212,
+        "s2": 0.043451,
         "s3": 0.06
       },
       "r_power": {
         "s1": 0.04,
-        "s2": 0.023848569511212,
+        "s2": 0.072431,
         "s3": 0.1
       },
       "status": "COMPUTED",
-      "tier": "B",
-      "source": "S2: UNFCCC EU 2035 NDC (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
-      "warnings": [
-        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
-      ]
+      "tier": "A",
+      "source": "S2: UNFCCC EU 2035 NDC (sectoral, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C (ESTIMATES.md). Grid: Ember 2024. · S2 sectoral: SWD(2024)63 Pt.3 Table 3 (Fit-for-55 경로) domestic transport 795.6(2023, Eurostat env_air_gge)→583(2030), power&DH 573.8(CRF1A1A)→339 MtCO2e; 2023→2030 CAGR. 2035 부문치 공식 부재. PRIMES-CRF 정의차 ±0.5pp/yr.",
+      "warnings": []
     },
     "AU": {
       "name": "Australia",
       "grid_intensity": 0.55383,
       "fleet_intensity_base": 0.185,
       "r_fleet": {
-        "s1": 0.019,
+        "s1": 0.017473,
         "s2": 0.0317382262873848,
         "s3": 0.06
       },
       "r_power": {
-        "s1": 0.05,
+        "s1": 0.110288,
         "s2": 0.0317382262873848,
         "s3": 0.11
       },
       "status": "COMPUTED",
       "tier": "B",
-      "source": "S2: UNFCCC AU 2nd NDC 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+      "source": "S2: UNFCCC AU 2nd NDC 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024. · S1 sectoral: DCCEEW Australia's emissions projections 2025 baseline, transport 99(2025)→83(2035), electricity 148→46 MtCO2e; 2025→2035 CAGR (82% RE 2030 가정). 2035 NDC 추가 감축분 부문 미배분.",
       "warnings": [
         "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
       ]
@@ -147,18 +143,18 @@
       "grid_intensity": 0.18535,
       "fleet_intensity_base": 0.19,
       "r_fleet": {
-        "s1": 0.012,
+        "s1": 0.019472,
         "s2": 0.019730651845791147,
         "s3": 0.06
       },
       "r_power": {
-        "s1": 0.035,
+        "s1": 0.099132,
         "s2": 0.019730651845791147,
         "s3": 0.09
       },
       "status": "COMPUTED",
       "tier": "B",
-      "source": "S2: UNFCCC CA 2035 NDC Feb 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
+      "source": "S2: UNFCCC CA 2035 NDC Feb 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024. · S1 sectoral: ECCC 2025 ERP Progress Report, With-Measures projection transport 157(2023)→124(2035), electricity 49→14 MtCO2e; 2023→2035 CAGR. CER 최종안은 2035 넷제로 그리드 아님(2050).",
       "warnings": [
         "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
       ]
@@ -169,20 +165,18 @@
       "fleet_intensity_base": 0.145,
       "r_fleet": {
         "s1": 0.022,
-        "s2": 0.03623244400122316,
+        "s2": 0.081672,
         "s3": 0.065
       },
       "r_power": {
         "s1": 0.05,
-        "s2": 0.03623244400122316,
+        "s2": 0.147623,
         "s3": 0.1
       },
       "status": "COMPUTED",
       "tier": "B",
-      "source": "S2: UNFCCC UK 2035 NDC Jan 2025 (economy-wide pro-rata, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C. Grid: Ember 2024.",
-      "warnings": [
-        "PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
-      ]
+      "source": "S2: UNFCCC UK 2035 NDC Jan 2025 (sectoral, workbook). S1/S3: rough IEA STEPS/NZE estimates, Tier C (ESTIMATES.md). Grid: Ember 2024. · S2 sectoral: CCC 7th Carbon Budget Balanced Pathway (법정 자문, 정부 채택 아님) surface transport 102.8(2023)→36.98(2035), electricity supply 37.8→5.56 MtCO2e; full-dataset.xlsx, 2023→2035 CAGR.",
+      "warnings": []
     }
   },
   "placements": [
@@ -201,10 +195,10 @@
       "brand": "Hyundai",
       "model": "HEV mix (Grandeur/Santa Fe)",
       "powertrain": "HEV",
-      "ice_intensity": 0.125,
+      "ice_intensity": 0.145,
       "units": 140000,
       "tier": "B",
-      "source": "KAMA 2024 rough"
+      "source": "KAMA 2024 rough · anchored: KEA 표시연비 2026-04: 그랜저 HEV 14.9-15.9, 싼타페 HEV ~14-15 km/L → ≈150 gCO2/km (2,347 gCO2/L); label 기준"
     },
     {
       "country": "KR",
@@ -236,7 +230,7 @@
       "ice_intensity": 0.16,
       "units": 300000,
       "tier": "B",
-      "source": "ACEA 2024 rough; WLTP + ICCT uplift"
+      "source": "ACEA 2024 rough; WLTP + ICCT uplift · anchored: EEA 2022P cert-weighted Hyundai EU ICE ~128 gCO2/km x 1.19 OBFCM — consistent"
     },
     {
       "country": "EU",
@@ -308,7 +302,7 @@
       "ice_intensity": 0.2,
       "units": 650000,
       "tier": "B",
-      "source": "US sales reports 2024 rough; EPA real-world"
+      "source": "US sales reports 2024 rough; EPA real-world · anchored: EPA MY2024 ICE trim avg 211 g/km label — consistent"
     },
     {
       "country": "US",
@@ -318,7 +312,7 @@
       "ice_intensity": 0.13,
       "units": 160000,
       "tier": "B",
-      "source": "US sales reports 2024 rough"
+      "source": "US sales reports 2024 rough · anchored: EPA MY2024 hybrid trim avg 135 g/km label — consistent"
     },
     {
       "country": "US",
@@ -458,7 +452,7 @@
         "brand": "Hyundai",
         "model": "HEV mix (Grandeur/Santa Fe)",
         "powertrain": "HEV",
-        "ice_intensity": 0.125,
+        "ice_intensity": 0.145,
         "units": 73523,
         "tier": "B",
         "source": "2022 scaled estimate (ESTIMATES.md): market ratio 0.9771 x global powertrain-mix ratio; ICE residual to market total"
@@ -714,7 +708,7 @@
         "brand": "Hyundai",
         "model": "HEV mix (Grandeur/Santa Fe)",
         "powertrain": "HEV",
-        "ice_intensity": 0.125,
+        "ice_intensity": 0.145,
         "units": 113912,
         "tier": "B",
         "source": "2023 scaled estimate (ESTIMATES.md): market ratio 1.0809 x global powertrain-mix ratio; ICE residual to market total"
