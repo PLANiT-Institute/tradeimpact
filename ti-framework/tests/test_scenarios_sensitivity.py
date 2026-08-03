@@ -8,6 +8,7 @@ from ti_framework.core.sensitivity import (
     monte_carlo,
     run_sensitivity,
     sweep_lifetime,
+    sweep_s2_ndc_range,
     sweep_uf,
 )
 from ti_framework.models import (
@@ -102,6 +103,17 @@ def test_sector_split_side_by_side():
     assert "uncorrected" in ss and "corrected" in ss
     # slower fleet benchmark (factor<1) lowers the benchmark -> changes TI
     assert ss["uncorrected"]["S2"] != ss["corrected"]["S2"]
+
+
+def test_s2_conditional_upper_is_used():
+    countries = _countries()
+    countries["KR"].r_fleet.s2_upper = 0.06
+    countries["KR"].r_power.s2_upper = 0.07
+    out = sweep_s2_ndc_range(
+        "F", 2024, _placements(), countries, _support(), EngineConfig()
+    )
+    assert set(out) == {"S2_unconditional", "S2_conditional_upper"}
+    assert out["S2_unconditional"] != out["S2_conditional_upper"]
 
 
 def test_monte_carlo_band_ordering():

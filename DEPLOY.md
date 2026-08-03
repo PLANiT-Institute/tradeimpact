@@ -19,17 +19,16 @@ The Python function is bundled from `web/api/compute.py` with deps from
 ## Data flow / redeploy
 
 ```
-edit TI_Data_Workbook_v0.1.xlsx (or a fixture / ESTIMATES value)
+edit a source snapshot/adapter or TI_Data_Workbook_v0.1.xlsx with sourced values
   → ti-framework/.venv/bin/python data-pipeline/build_dataset.py   # reruns engine, stamps meta.json
   → commit data/published/ + push                                  # Vercel redeploys
 ```
 
 `data/published/` is committed and deterministically generated. `meta.json` records
-content hashes for the engine source, workbook, target workbooks, effective firm inputs,
-and complete dataset — every report page shows the short hashes. Firm benchmarks (grid,
-S2 NDC rates, FLAG status) merge from the workbook at
-build-dataset time, so a workbook change flows to the published firm results with zero
-code edits (verified: doubling KR grid moved Hyundai S2 from −4.38 to −5.30 MtCO₂e).
+content hashes for the engine source, workbook, target workbooks, compute service, and
+complete dataset. An accepted adapter change flows to the company evidence pages; a workbook
+change flows to the country evidence pages. Unsupported company reports remain absent until the
+publication gate is satisfied.
 
 For a Vercel CLI deploy, run `npm run deploy:vercel` from `web/`. It refreshes the copied
 dataset and engine and writes a byte-level manifest immediately before upload. A remote
@@ -55,6 +54,9 @@ lives elsewhere.
 ## CI
 
 `.github/workflows/ci.yml`: engine (ruff, mypy, pytest on 3.11/3.12), theory-sync
-(`scripts/check_sync.py`), deterministic published-data freshness, full report recomputation
-(cohorts, decompositions, annual/portfolio series, crossover, sensitivity, data quality and
-provenance), web data-contract tests, and the production web build.
+(`scripts/check_sync.py`), deterministic published-data freshness, source/coverage/comparison
+contract validation, MCP tests, web data-contract tests, and the production web build.
+
+The read-only MCP server is deployed separately from the static web app. Local `stdio` and
+loopback HTTP usage, plus remote-service security gates, are documented in
+[`docs/MCP.md`](docs/MCP.md) and [`mcp-server/README.md`](mcp-server/README.md).

@@ -134,7 +134,7 @@
     ],
     "crossover": {
       "KR_ICE_S2": 0.6929,
-      "KR_BEV_S2": 115.002
+      "KR_BEV_S2": null
     }
   }
 }

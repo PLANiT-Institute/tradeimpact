@@ -1,0 +1,38 @@
+{
+  "accessed_date": "2026-08-03",
+  "adapter_version": "jera-japan-fy2024-v1",
+  "assurance": {
+    "assurance_date": "2025-09-30",
+    "document_sha256": "9e935dca9f9c5a12b64d6f219f863965e7514f30817c589f799c2387672f0c1d",
+    "intensity_kgco2e_per_kwh": 0.52,
+    "net_generation_billion_kwh": 242,
+    "provider": "SOCOTEC Certification Japan",
+    "url": "https://www.jera.co.jp/static/files/sustainability/pdf/JERA_Independent_Assurance_Report_20250930.pdf"
+  },
+  "company": {
+    "boundary": "Domestic / JERA Group (*12), including joint ventures on a proportionate basis",
+    "company_id": "jera",
+    "fiscal_year": 2024,
+    "generation_basis": "net electricity generation (sending-end power)",
+    "geography": "JP",
+    "intensity_kgco2e_per_kwh": 0.52,
+    "net_generation_billion_kwh": 242.0,
+    "reporting_period_end": "2025-03-31",
+    "reporting_period_start": "2024-04-01",
+    "source_page_sha256": "41a9c2716ddcc91a1e898a8a6a1bc18020bea649220a0768e059d5f99ad5877b",
+    "source_url": "https://www.jera.co.jp/en/sustainability/data/e"
+  },
+  "content_sha256": "54704a0625305cb73e88154baa146eb69171ccce61484271efa08678bb7006b8",
+  "policy": {
+    "cabinet_decision_date": "2025-02-18",
+    "electricity_use_end_factor_2030_kgco2_per_kwh": 0.25,
+    "renewable_generation_share_2040": {
+      "max": 0.5,
+      "min": 0.4
+    },
+    "thermal_generation_share_2040": {
+      "max": 0.4,
+      "min": 0.3
+    }
+  }
+}

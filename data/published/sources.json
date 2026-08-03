@@ -1,0 +1,107 @@
+[
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "regulatory_dataset",
+    "license": "EEA CC-BY/re-use policy; acknowledge EEA and check item-specific terms",
+    "notes": "Exact EEA API filter: 2024, Final, Mk=TOYOTA, EU27. The committed artifact contains aggregate results, not individual registration rows.",
+    "published_date": null,
+    "publisher": "European Environment Agency",
+    "query_sha256": "47289d050a9035b9576052cfcdc9e74c53a0c0709c82b892ee0ad8b610700ae9",
+    "snapshot_sha256": "253354f82ed2077e3f696c3068aa827a2757674fa2465d3eada849b0a4a78a19",
+    "source_id": "eea-co2-cars-2024-final-toyota-eu27",
+    "title": "Monitoring of CO2 emissions from new passenger cars, 2024 final",
+    "url": "https://co2cars.apps.eea.europa.eu/"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "official_primary",
+    "license": "EEA CC-BY unless otherwise indicated",
+    "notes": "Publishes EU-wide WLTP fleet targets of 93.6 g/km for 2025-2029 and 49.5 g/km for 2030-2034.",
+    "published_date": null,
+    "publisher": "European Environment Agency",
+    "source_id": "eea-eu-new-car-fleet-targets",
+    "title": "CO2 emissions performance of new passenger cars in Europe",
+    "url": "https://www.eea.europa.eu/en/analysis/indicators/co2-performance-of-new-passenger"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "official_primary",
+    "license": "EU law/public document; EUR-Lex reuse notice applies",
+    "notes": "Legal basis for EU fleet-wide and manufacturer-specific CO2 performance standards.",
+    "published_date": "2025-07-09",
+    "publisher": "European Parliament and Council of the European Union",
+    "source_id": "eu-regulation-2019-631",
+    "title": "Regulation (EU) 2019/631, consolidated text",
+    "url": "https://eur-lex.europa.eu/eli/reg/2019/631/2025-07-09/eng"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "company_reported",
+    "license": "JERA website terms; extracted facts only, source linked",
+    "notes": "Domestic/JERA Group boundary; joint ventures are proportionately included. The source marks FY2024 net generation and intensity as externally assured.",
+    "published_date": null,
+    "publisher": "JERA Co., Inc.",
+    "snapshot_sha256": "41a9c2716ddcc91a1e898a8a6a1bc18020bea649220a0768e059d5f99ad5877b",
+    "source_id": "jera-environmental-data-fy2024",
+    "title": "JERA Environmental Data — FY2024 domestic group",
+    "url": "https://www.jera.co.jp/en/sustainability/data/e"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "independent_secondary",
+    "license": "Copyright holder terms; extracted facts only, source linked",
+    "notes": "Appendix table 2 confirms 242 billion kWh and 0.520 kg-CO2e/kWh.",
+    "published_date": "2025-09-30",
+    "publisher": "SOCOTEC Certification Japan",
+    "snapshot_sha256": "9e935dca9f9c5a12b64d6f219f863965e7514f30817c589f799c2387672f0c1d",
+    "source_id": "jera-independent-assurance-fy2024",
+    "title": "Independent Assurance Report on JERA environmental data FY2024",
+    "url": "https://www.jera.co.jp/static/files/sustainability/pdf/JERA_Independent_Assurance_Report_20250930.pdf"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "official_primary",
+    "license": "Government of Japan Standard Terms of Use 2.0",
+    "notes": "The Cabinet-decided outlook gives national FY2040 generation ranges: renewables 40–50% and thermal power 30–40%.",
+    "published_date": "2025-02-18",
+    "publisher": "Ministry of Economy, Trade and Industry, Government of Japan",
+    "source_id": "jp-seventh-strategic-energy-plan",
+    "title": "Seventh Strategic Energy Plan and FY2040 power-mix outlook",
+    "url": "https://www.enecho.meti.go.jp/en/category/others/basic_plan/pdf/7th_outline.pdf"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "official_primary",
+    "license": "Government of Japan Standard Terms of Use 2.0",
+    "notes": "Records the national 0.25 kg-CO2/kWh FY2030 outlook at the point of use; it is not a generator-boundary limit.",
+    "published_date": "2022-12-21",
+    "publisher": "Ministry of Economy, Trade and Industry, Government of Japan",
+    "source_id": "jp-power-action-plan-2030",
+    "title": "Power-sector carbon-neutral action plan — FY2030 review response",
+    "url": "https://www.meti.go.jp/shingikai/sankoshin/sangyo_gijutsu/chikyu_kankyo/shigen_wg/pdf/2022_001_s01_00.pdf"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "company_reported",
+    "license": "KOEN website terms; extracted facts only, source linked",
+    "notes": "The page reports 2024 generation and Scope 1/2 totals. The displayed plant rows differ from the reported totals by -2,000 tCO2e for Scope 1 and -269 tCO2e for Scope 2. No independent assurance statement was identified for this web table.",
+    "published_date": null,
+    "publisher": "Korea South-East Power Co., Ltd. (KOEN)",
+    "snapshot_sha256": "5b583126db098aa7ed8261457350f0cc530d402ccb4e448aa4c57323c2cec9a4",
+    "source_id": "koen-esg-data-2024",
+    "title": "KOEN ESG Data Center — 2024 generation and GHG emissions",
+    "url": "https://www.koenergy.kr/kosep/hw/fr/st/sthw41/main.do?menuCd=FN060101"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "official_primary",
+    "license": "Korea Open Government License; item-specific terms apply",
+    "notes": "Official notice and attached Eleventh Electricity Plan. The plan gives the national 2030 transition-sector emissions level and 2030/2038 generation mix.",
+    "published_date": "2025-02-21",
+    "publisher": "Ministry of Trade, Industry and Resources, Republic of Korea",
+    "snapshot_sha256": "3d778abcf289bcad6e6d34f9746913f7dcf1801001ef1ccd6578d2b9f3b1315f",
+    "source_id": "kr-eleventh-electricity-plan",
+    "title": "Eleventh Basic Plan for Long-Term Electricity Supply and Demand (2024-2038)",
+    "url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view"
+  }
+]

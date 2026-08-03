@@ -100,6 +100,11 @@ def _compute_cell(
     pt = v.powertrain
     r_fleet, r_power, _ = _scenario_rates(country, scenario, config)
 
+    if placement.units is None:
+        missing.append(
+            f"[{country.code}] registration units missing for '{v.brand} {v.model}'"
+        )
+        return None
     if country.fleet_intensity_base is None:
         missing.append(f"[{country.code}] fleet_intensity_base (I_fleet,seg,c(0)) missing")
         return None
@@ -189,7 +194,7 @@ def _compute_cell(
         crossover_reason=reason,
     )
 
-    units = placement.units or 0.0
+    units = placement.units
     ti_tco2e = cumulative * units / 1000.0
     annual = [(g * units / 1000.0) for g in gap.tolist()]
     # Cell quality is the worst of benchmark, vehicle parameter, and volume inputs.

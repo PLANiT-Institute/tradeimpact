@@ -64,8 +64,9 @@ lifetime **T = 15 yr**. Two operating countries (Korea, EU), four vehicle placem
 **Crossover (closed form), KR S2:**
 - ICE: `t* = ln(2080 / 2145) / ln(1 − 0.04344) = 0.693 yr` — crosses into liability almost
   immediately (new ICE only marginally below the fleet average at sale).
-- BEV: `t* = ln(0.165 / (0.18×0.41551)) / ln((1−0.04344)/(1−0.05)) = 115.0 yr` — far beyond the
-  15-yr lifetime, i.e. the BEV never becomes a liability within its operational life.
+- BEV: `t* = ln((0.18×0.41551) / 0.165) / ln((1−0.04344)/(1−0.05)) = −115.0 yr`.
+  The equality lies before the sale year; because the grid decarbonises faster than the
+  fleet benchmark, there is no future crossover and the BEV stays below the benchmark.
 
 ---
 

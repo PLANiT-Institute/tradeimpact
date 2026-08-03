@@ -1,15 +1,11 @@
-# Sectoral decarbonization rates & vehicle-parameter sources — collected 2026-07-30
+# Sectoral decarbonization rates & vehicle-parameter source catalog
 
-Research pass answering two backlog items in COLLECTION_STATUS.md: (1) real sectoral
-(transport / power) decarbonization rates to replace the PRORATA_IDENTITY pro-rata
-construction (NOTES.md D1), and (2) official model-level vehicle parameter databases to
-replace the Tier C analyst estimates in ESTIMATES.md. All primary sources were opened and
-values read from the government documents themselves unless flagged. **Integrated
-2026-07-30**: JP/KR/EU/UK sectoral S2 + CA/AU sectoral S1 are in
-`Layer1_NDC_benchmark`; 17 model-level vehicle rows in `Layer2_vehicle_params`; dataset
-republished and all gates re-passed. Mapping decision taken: target/NDC-aligned pathways
-→ S2, current-policy projections → S1; AU/CA S2 stays pro-rata (no sectoral NDC
-decomposition exists) with the D1 warning retained.
+This catalog records the official or primary documents behind workbook benchmark and
+vehicle-parameter rows. JP/KR/EU/UK sectoral S2 and CA/AU sectoral S1 rates are integrated
+in `Layer1_NDC_benchmark`; 17 certification rows are retained in
+`Layer2_vehicle_params`. The certification rows are not aggregated into company emissions
+without observed registration mapping. AU/CA S2 remains a labelled economy-wide pro-rata
+derivation because neither NDC supplies a sectoral decomposition.
 
 ## 1. Sectoral emission pathways (official, MtCO2e)
 
@@ -22,8 +18,8 @@ actual/pathway year.
 | JP | Energy conversion (배분후) | 81.0 (FY2023) | 56 (target) | — (2040: 10–20) | **5.1** | NDC-aligned target | High |
 | KR | 수송 | 88.7 (2024 경로) | 61.0 (target) | — | **6.05** | NDC-aligned target, annual path table exists | High |
 | KR | 전환 | 218.4 (2024 경로) | 145.9 (target) | — | **6.50** | NDC-aligned target, annual path table exists | High |
-| EU | Domestic transport | 795.6 (2023) | 583 (FF55 path) | ≈289 (interpolated — no official 2035) | **4.3** | Fit-for-55 pathway (PRIMES) | High (2035: Low) |
-| EU | Power & district heating | 573.8 (2023, CRF1A1A) | 339 (FF55 path) | ≈119 (interpolated) | **7.2** | Fit-for-55 pathway | High (2035: Low) |
+| EU | Domestic transport | 795.6 (2023) | 583 (FF55 path) | — (no official 2035 sector value) | **4.3** | Fit-for-55 pathway (PRIMES) | High for stated years |
+| EU | Power & district heating | 573.8 (2023, CRF1A1A) | 339 (FF55 path) | — (no official 2035 sector value) | **7.2** | Fit-for-55 pathway | High for stated years |
 | UK | Surface transport | 102.8 (2023) | 68.6 | 37.0 | **5.6** (→2035: 8.2) | CCC 7CB Balanced Pathway — statutory advice, NOT adopted policy | High |
 | UK | Electricity supply | 37.8 (2023) | 9.8 | 5.6 | **17.6** (→2035: 14.8) | CCC 7CB Balanced Pathway | High |
 | CA | Transport | 157 (2023) | 137 (WM proj.) | 124 (WM proj.) | **1.9** | Current-policy projection (ERP 2025 Progress Report) | High |
@@ -45,7 +41,29 @@ targets are *faster* than our current Tier C S1 guesses.
 - **CA**: 2025 Progress Report on the 2030 ERP (ECCC, 2025-12), Tables 2-2/2-3 — https://www.canada.ca/en/services/environment/weather/climatechange/climate-plan/climate-plan-overview/emissions-reduction-2030/2025-progress-report.html . 주의: 최종 Clean Electricity Regulations (2024-12)는 2035 넷제로 그리드 아님 (65 tCO2/GWh from 2035, 넷제로는 2050). 2035 NDC 부문 분해 없음.
 - **AU**: Australia's emissions projections 2025 (DCCEEW, 2025-11) — https://www.dcceew.gov.au/climate-change/publications/australias-emissions-projections-2025 ; 실적: Quarterly Update Dec 2025. 주의: baseline은 2035 NDC (−62~70%)에 60–100 Mt 미달 — NDC 추가 감축분은 부문 미배분. Transport Net Zero Roadmap에 정량 Mt 목표 없음 (확인됨).
 
-## 2. Vehicle-parameter databases (model-level, official)
+## 2. Published company-market pilots
+
+- **Toyota / EU27 / 2024**: EEA final CO2 monitoring data —
+  https://co2cars.apps.eea.europa.eu/ ; EU new-car fleet targets —
+  https://eur-lex.europa.eu/eli/reg/2019/631/2025-07-09/eng . The result is a
+  registration-weighted certified WLTP snapshot, not a vehicle-lifetime estimate or a
+  manufacturer-specific compliance ruling.
+- **JERA / Japan / FY2024**: JERA Environmental Data —
+  https://www.jera.co.jp/en/sustainability/data/e ; independent assurance —
+  https://www.jera.co.jp/static/files/sustainability/pdf/JERA_Independent_Assurance_Report_20250930.pdf .
+  Japan's Seventh Strategic Energy Plan was Cabinet-decided on 2025-02-18 —
+  https://www.meti.go.jp/english/press/2025/0218_001.html . The 2030 use-end factor and 2040
+  national generation ranges remain `context_only` because they do not share JERA's
+  domestic-group generator boundary.
+- **KOEN / Korea / 2024**: KOEN ESG Data Center —
+  https://www.koenergy.kr/kosep/hw/fr/st/sthw41/main.do?menuCd=FN060101 ; Korea's Eleventh Basic
+  Plan for Long-Term Electricity Supply and Demand —
+  https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view . Reported generation and Scope 1/2
+  totals are published, but generation intensity is not: gross/net basis is unstated and the
+  displayed plant rows do not reconcile with the reported totals. National 2030/2038 values
+  remain `context_only` because no KOEN allocation is disclosed.
+
+## 3. Vehicle-parameter databases (model-level, official)
 
 | Market | Source | Granularity | Latest | Access |
 |---|---|---|---|---|
@@ -56,11 +74,11 @@ targets are *faster* than our current Tier C S1 guesses.
 | KR | 에너지공단 자동차 표시연비 (data.go.kr 15083023) — https://www.data.go.kr/data/15083023/fileData.do | 모델별 복합/도심/고속 연비, EV 주행거리 (~2,800 모델) | 2026-04 갱신 | CSV/API |
 | 실주행 갭 | ICCT real-world CO2 (2026-06) — https://theicct.org/publication/real-world-co2-emission-values-vehicles-europe-jun26/ | ICE/HEV 갭 ~19%, PHEV 실주행 ≈ 공인치 4–5배 (실주행 UF ~0.25–0.30) | OBFCM 2021–23 | PDF (직접 열람 실패 — 검색 발췌 기반, flag) |
 
-EU OBFCM 공식 결과: 휘발유 +19.8~21.1%, 디젤 +17.1~18.2%, **PHEV 실주행 = 공인치 3.5배** (+99 g/km, 실주행 전기주행 비율 ~27% vs 규제 가정 ~84%). 현행 fixture의
-ICE ×1.19 보정과 PHEV UF−0.15 하한 병기는 방향은 맞으나, PHEV는 공식 데이터 기준 하한을
-UF≈0.27로 당길 근거 확보.
+EU OBFCM findings can inform a future real-world correction sensitivity, but no such
+correction is published as a company result until its scope and registration mapping are
+fully specified.
 
-## 3. Integration mapping (반영 전 결정 필요)
+## 4. Publication boundary
 
 - **시나리오 매핑이 관건**: JP/KR/EU/UK 수치는 목표·NDC 정합 경로 → **S2 벤치마크** 대체
   (pro-rata → 실제 부문 경로; PRORATA_IDENTITY 경고 해소, Tier 상향). CA/AU 수치는
@@ -69,7 +87,7 @@ UF≈0.27로 당길 근거 확보.
 - 시작점 불일치 주의: 각 시장 실적 연도가 다름 (FY2023/CY2023/CY2025). 엔진은 2024 기점
   — 경로표(KR) 또는 CAGR 재계산으로 2024 정렬 필요.
 - 부문 정의 차이: JP 배분후 vs 발전 총배출; EU PRIMES vs CRF — 워크북에 정의 주석 필수.
-- 차량 파라미터는 EEA/EPA/MLIT/KEA CSV에서 Toyota·Hyundai 모델별 추출 →
-  `Layer2_vehicle_params` 시트 채우는 별도 수집 작업 (fixture Tier C → Tier A/B 승격).
+- 차량 파라미터는 EEA/EPA/MLIT/KEA의 공식 인증 행으로 보존하되, 관측 등록대수와
+  연결되기 전에는 Toyota·Hyundai의 판매구성 또는 평균 배출원단위로 해석하지 않는다.
 - 반영 시 전체 재발행 필요: workbook 수정 → build_dataset.py → check_published →
   50_build_integrated_audit.py 재실행.

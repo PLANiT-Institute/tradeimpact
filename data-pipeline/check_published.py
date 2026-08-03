@@ -14,7 +14,7 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "ti-framework"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_dataset import build_by_year, build_contract, build_countries  # noqa: E402
+from build_dataset import build_alignment_data, build_contract_schema, build_countries  # noqa: E402
 from ti_framework.core.scenarios import run  # noqa: E402
 from ti_framework.core.sensitivity import run_sensitivity  # noqa: E402
 from ti_framework.io.fixtures import parse_fixture  # noqa: E402
@@ -79,6 +79,10 @@ def main() -> int:
     firms = json.loads((published / "firms.json").read_text())
     meta = json.loads((published / "meta.json").read_text())
     countries = json.loads((published / "countries.json").read_text())
+    alignment = {
+        name: json.loads((published / f"{name}.json").read_text())
+        for name in ("sectors", "benchmarks", "company_metrics", "sources")
+    }
     errors: list[str] = []
     runnable = [firm for firm in firms if firm["runnable"]]
     expected_files = {
@@ -86,6 +90,10 @@ def main() -> int:
         "countries.json",
         "firms.json",
         "meta.json",
+        "sectors.json",
+        "benchmarks.json",
+        "company_metrics.json",
+        "sources.json",
         *(f"{firm['slug']}.json" for firm in runnable),
     }
     actual_files = {path.name for path in published.glob("*.json")}
@@ -128,7 +136,6 @@ def main() -> int:
             fx.support,
             fx.config,
         )
-        recomputed["by_year"] = build_by_year(payload["inputs"], fx)
         for key in (
             "firm",
             "cohort_year",
@@ -137,7 +144,6 @@ def main() -> int:
             "crossover",
             "data_quality",
             "sensitivity",
-            "by_year",
         ):
             compare_values(recomputed[key], payload.get(key), f"{slug}.{key}", errors)
 
@@ -156,35 +162,43 @@ def main() -> int:
             errors,
         )
 
-    real_payloads = {
-        firm["slug"]: payloads[firm["slug"]]
-        for firm in runnable
-        if not firm.get("illustrative") and firm["slug"] in payloads
-    }
     try:
-        recomputed_countries, recomputed_support = build_countries(real_payloads)
+        recomputed_countries, recomputed_support = build_countries()
     except ValueError as exc:
         errors.append(str(exc))
         recomputed_countries, recomputed_support = [], {}
     compare_values(recomputed_countries, countries, "countries", errors)
     compare_values(recomputed_support, meta.get("support_contract"), "meta.support_contract", errors)
-    if payloads:
-        try:
-            recomputed_contract = build_contract(payloads)
-        except ValueError as exc:
-            errors.append(str(exc))
-            recomputed_contract = {}
-        contract = json.loads((published / "contract.json").read_text())
-        compare_values(recomputed_contract, contract, "contract", errors)
+    recomputed_alignment = build_alignment_data()
+    compare_values(recomputed_alignment, alignment, "alignment", errors)
+    expected_alignment_contract = {
+        "version": "alignment-v2",
+        "sectors_registered": len(alignment["sectors"]),
+        "direct_benchmarks": sum(
+            row["comparison_mode"] == "direct" for row in alignment["benchmarks"]
+        ),
+        "contextual_benchmarks": sum(
+            row["comparison_mode"] == "contextual" for row in alignment["benchmarks"]
+        ),
+        "company_metrics": len(alignment["company_metrics"]),
+        "rule": "direct arithmetic requires matching sector, metric definition, geography, and unit",
+    }
+    compare_values(
+        expected_alignment_contract,
+        meta.get("alignment_contract"),
+        "meta.alignment_contract",
+        errors,
+    )
+    recomputed_contract = build_contract_schema()
+    contract = json.loads((published / "contract.json").read_text())
+    compare_values(recomputed_contract, contract, "contract", errors)
 
     expected_dataset_sha = json_sha256(
         {
             "countries": countries,
             "firms": firms,
-            "inputs": {
-                slug: payload["provenance"]["input_sha256"]
-                for slug, payload in sorted(payloads.items())
-            },
+            **alignment,
+            "inputs": {},
             "engine_source_sha256": meta["engine_source_sha256"],
             "workbook_sha256": meta["workbook_sha256"],
         }
@@ -206,6 +220,9 @@ def main() -> int:
     for name, expected_hash in meta["target_sources_sha256"].items():
         if expected_hash != file_sha256(REPO / name):
             errors.append(f"meta.target_sources_sha256.{name} mismatch")
+    for name, expected_hash in meta["alignment_inputs_sha256"].items():
+        if expected_hash != file_sha256(REPO / name):
+            errors.append(f"meta.alignment_inputs_sha256.{name} mismatch")
 
     if errors:
         print(f"check_published: FAIL ({len(errors)} problems)")
@@ -213,8 +230,8 @@ def main() -> int:
             print(f"  - {error}")
         return 1
     print(
-        "check_published: OK — inventory, provenance, country contract, and every "
-        "runnable report fully recompute from published inputs"
+        "check_published: OK — source-backed sector contract, evidence links, public inventory, "
+        "schema, and provenance are reproducible"
     )
     return 0
 

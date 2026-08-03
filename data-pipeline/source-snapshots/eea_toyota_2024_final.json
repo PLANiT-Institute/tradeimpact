@@ -1,0 +1,1669 @@
+{
+  "accessed_date": "2026-08-03",
+  "adapter_version": "eea-toyota-eu27-v1",
+  "api_endpoint": "https://co2cars.apps.eea.europa.eu/tools/api",
+  "brand_filter": "Mk=TOYOTA",
+  "dataset_status": "Final",
+  "dataset_year": 2024,
+  "geography": "EU27",
+  "query": {
+    "aggs": {
+      "co2_mapped": {
+        "aggs": {
+          "registrations": {
+            "sum": {
+              "field": "r"
+            }
+          },
+          "weighted_average": {
+            "weighted_avg": {
+              "value": {
+                "field": "Ewltp__g_km_"
+              },
+              "weight": {
+                "field": "r"
+              }
+            }
+          }
+        },
+        "filter": {
+          "exists": {
+            "field": "Ewltp__g_km_"
+          }
+        }
+      },
+      "countries": {
+        "aggs": {
+          "co2_mapped": {
+            "aggs": {
+              "registrations": {
+                "sum": {
+                  "field": "r"
+                }
+              },
+              "weighted_average": {
+                "weighted_avg": {
+                  "value": {
+                    "field": "Ewltp__g_km_"
+                  },
+                  "weight": {
+                    "field": "r"
+                  }
+                }
+              }
+            },
+            "filter": {
+              "exists": {
+                "field": "Ewltp__g_km_"
+              }
+            }
+          },
+          "powertrains": {
+            "aggs": {
+              "registrations": {
+                "sum": {
+                  "field": "r"
+                }
+              }
+            },
+            "filters": {
+              "filters": {
+                "BEV": {
+                  "term": {
+                    "Fm": "E"
+                  }
+                },
+                "FCEV": {
+                  "term": {
+                    "Ft": "hydrogen"
+                  }
+                },
+                "HEV": {
+                  "term": {
+                    "Fm": "H"
+                  }
+                },
+                "ICE_OTHER": {
+                  "bool": {
+                    "must_not": [
+                      {
+                        "terms": {
+                          "Fm": [
+                            "E",
+                            "P",
+                            "H"
+                          ]
+                        }
+                      },
+                      {
+                        "term": {
+                          "Ft": "hydrogen"
+                        }
+                      }
+                    ]
+                  }
+                },
+                "PHEV": {
+                  "term": {
+                    "Fm": "P"
+                  }
+                }
+              }
+            }
+          },
+          "registrations": {
+            "sum": {
+              "field": "r"
+            }
+          }
+        },
+        "terms": {
+          "field": "MS",
+          "order": {
+            "_key": "asc"
+          },
+          "size": 30
+        }
+      },
+      "powertrains": {
+        "aggs": {
+          "registrations": {
+            "sum": {
+              "field": "r"
+            }
+          }
+        },
+        "filters": {
+          "filters": {
+            "BEV": {
+              "term": {
+                "Fm": "E"
+              }
+            },
+            "FCEV": {
+              "term": {
+                "Ft": "hydrogen"
+              }
+            },
+            "HEV": {
+              "term": {
+                "Fm": "H"
+              }
+            },
+            "ICE_OTHER": {
+              "bool": {
+                "must_not": [
+                  {
+                    "terms": {
+                      "Fm": [
+                        "E",
+                        "P",
+                        "H"
+                      ]
+                    }
+                  },
+                  {
+                    "term": {
+                      "Ft": "hydrogen"
+                    }
+                  }
+                ]
+              }
+            },
+            "PHEV": {
+              "term": {
+                "Fm": "P"
+              }
+            }
+          }
+        }
+      },
+      "registrations": {
+        "sum": {
+          "field": "r"
+        }
+      }
+    },
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "term": {
+              "year": 2024
+            }
+          },
+          {
+            "match": {
+              "scStatus": "Final"
+            }
+          },
+          {
+            "term": {
+              "Mk": "TOYOTA"
+            }
+          },
+          {
+            "terms": {
+              "MS": [
+                "AT",
+                "BE",
+                "BG",
+                "HR",
+                "CY",
+                "CZ",
+                "DK",
+                "EE",
+                "FI",
+                "FR",
+                "DE",
+                "GR",
+                "HU",
+                "IE",
+                "IT",
+                "LV",
+                "LT",
+                "LU",
+                "MT",
+                "NL",
+                "PL",
+                "PT",
+                "RO",
+                "SK",
+                "SI",
+                "ES",
+                "SE"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "size": 0,
+    "track_total_hits": true
+  },
+  "query_sha256": "47289d050a9035b9576052cfcdc9e74c53a0c0709c82b892ee0ad8b610700ae9",
+  "response": {
+    "_shards": {
+      "failed": 0,
+      "skipped": 0,
+      "successful": 1,
+      "total": 1
+    },
+    "aggregations": {
+      "co2_mapped": {
+        "doc_count": 803042,
+        "registrations": {
+          "value": 803042.0
+        },
+        "weighted_average": {
+          "value": 107.07329255505938
+        }
+      },
+      "countries": {
+        "buckets": [
+          {
+            "co2_mapped": {
+              "doc_count": 11120,
+              "registrations": {
+                "value": 11120.0
+              },
+              "weighted_average": {
+                "value": 115.08408273381295
+              }
+            },
+            "doc_count": 11120,
+            "key": "AT",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 110,
+                  "registrations": {
+                    "value": 110.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 1,
+                  "registrations": {
+                    "value": 1.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 8765,
+                  "registrations": {
+                    "value": 8765.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 1893,
+                  "registrations": {
+                    "value": 1893.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 351,
+                  "registrations": {
+                    "value": 351.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 11120.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 23647,
+              "registrations": {
+                "value": 23647.0
+              },
+              "weighted_average": {
+                "value": 105.02668414598047
+              }
+            },
+            "doc_count": 23650,
+            "key": "BE",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 816,
+                  "registrations": {
+                    "value": 816.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 4,
+                  "registrations": {
+                    "value": 4.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 16805,
+                  "registrations": {
+                    "value": 16805.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 5102,
+                  "registrations": {
+                    "value": 5102.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 923,
+                  "registrations": {
+                    "value": 923.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 23650.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 5253,
+              "registrations": {
+                "value": 5253.0
+              },
+              "weighted_average": {
+                "value": 112.13896820864268
+              }
+            },
+            "doc_count": 5253,
+            "key": "BG",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 28,
+                  "registrations": {
+                    "value": 28.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 3783,
+                  "registrations": {
+                    "value": 3783.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 1150,
+                  "registrations": {
+                    "value": 1150.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 292,
+                  "registrations": {
+                    "value": 292.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 5253.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 14,
+              "registrations": {
+                "value": 14.0
+              },
+              "weighted_average": {
+                "value": 78.0
+              }
+            },
+            "doc_count": 14,
+            "key": "CY",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 6,
+                  "registrations": {
+                    "value": 6.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 1,
+                  "registrations": {
+                    "value": 1.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 7,
+                  "registrations": {
+                    "value": 7.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 14.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 18911,
+              "registrations": {
+                "value": 18911.0
+              },
+              "weighted_average": {
+                "value": 125.57812913119349
+              }
+            },
+            "doc_count": 18911,
+            "key": "CZ",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 183,
+                  "registrations": {
+                    "value": 183.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 11337,
+                  "registrations": {
+                    "value": 11337.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 6908,
+                  "registrations": {
+                    "value": 6908.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 483,
+                  "registrations": {
+                    "value": 483.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 18911.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 95218,
+              "registrations": {
+                "value": 95218.0
+              },
+              "weighted_average": {
+                "value": 111.71147262072297
+              }
+            },
+            "doc_count": 95267,
+            "key": "DE",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 1652,
+                  "registrations": {
+                    "value": 1652.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 148,
+                  "registrations": {
+                    "value": 148.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 62343,
+                  "registrations": {
+                    "value": 62343.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 29278,
+                  "registrations": {
+                    "value": 29278.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 1846,
+                  "registrations": {
+                    "value": 1846.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 95267.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 13187,
+              "registrations": {
+                "value": 13187.0
+              },
+              "weighted_average": {
+                "value": 89.03480700690073
+              }
+            },
+            "doc_count": 13187,
+            "key": "DK",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 1841,
+                  "registrations": {
+                    "value": 1841.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 7786,
+                  "registrations": {
+                    "value": 7786.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 3066,
+                  "registrations": {
+                    "value": 3066.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 494,
+                  "registrations": {
+                    "value": 494.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 13187.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 4448,
+              "registrations": {
+                "value": 4448.0
+              },
+              "weighted_average": {
+                "value": 123.22526978417267
+              }
+            },
+            "doc_count": 4448,
+            "key": "EE",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 81,
+                  "registrations": {
+                    "value": 81.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 5,
+                  "registrations": {
+                    "value": 5.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 3490,
+                  "registrations": {
+                    "value": 3490.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 704,
+                  "registrations": {
+                    "value": 704.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 168,
+                  "registrations": {
+                    "value": 168.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 4448.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 100873,
+              "registrations": {
+                "value": 100873.0
+              },
+              "weighted_average": {
+                "value": 109.64632756039772
+              }
+            },
+            "doc_count": 100873,
+            "key": "ES",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 539,
+                  "registrations": {
+                    "value": 539.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 82083,
+                  "registrations": {
+                    "value": 82083.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 14662,
+                  "registrations": {
+                    "value": 14662.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 3589,
+                  "registrations": {
+                    "value": 3589.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 100873.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 12449,
+              "registrations": {
+                "value": 12449.0
+              },
+              "weighted_average": {
+                "value": 94.21391276407743
+              }
+            },
+            "doc_count": 12449,
+            "key": "FI",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 283,
+                  "registrations": {
+                    "value": 283.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 10734,
+                  "registrations": {
+                    "value": 10734.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 311,
+                  "registrations": {
+                    "value": 311.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 1121,
+                  "registrations": {
+                    "value": 1121.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 12449.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 134994,
+              "registrations": {
+                "value": 134994.0
+              },
+              "weighted_average": {
+                "value": 100.17171874305525
+              }
+            },
+            "doc_count": 134994,
+            "key": "FR",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 2215,
+                  "registrations": {
+                    "value": 2215.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 530,
+                  "registrations": {
+                    "value": 530.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 109158,
+                  "registrations": {
+                    "value": 109158.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 19183,
+                  "registrations": {
+                    "value": 19183.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 3908,
+                  "registrations": {
+                    "value": 3908.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 134994.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 23480,
+              "registrations": {
+                "value": 23480.0
+              },
+              "weighted_average": {
+                "value": 104.65170357751278
+              }
+            },
+            "doc_count": 23480,
+            "key": "GR",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 52,
+                  "registrations": {
+                    "value": 52.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 17825,
+                  "registrations": {
+                    "value": 17825.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 5241,
+                  "registrations": {
+                    "value": 5241.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 362,
+                  "registrations": {
+                    "value": 362.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 23480.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 4224,
+              "registrations": {
+                "value": 4224.0
+              },
+              "weighted_average": {
+                "value": 113.98413825757575
+              }
+            },
+            "doc_count": 4224,
+            "key": "HR",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 8,
+                  "registrations": {
+                    "value": 8.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 2444,
+                  "registrations": {
+                    "value": 2444.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 1675,
+                  "registrations": {
+                    "value": 1675.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 97,
+                  "registrations": {
+                    "value": 97.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 4224.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 14275,
+              "registrations": {
+                "value": 14275.0
+              },
+              "weighted_average": {
+                "value": 114.12896672504378
+              }
+            },
+            "doc_count": 14275,
+            "key": "HU",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 69,
+                  "registrations": {
+                    "value": 69.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 1,
+                  "registrations": {
+                    "value": 1.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 10936,
+                  "registrations": {
+                    "value": 10936.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 3049,
+                  "registrations": {
+                    "value": 3049.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 220,
+                  "registrations": {
+                    "value": 220.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 14275.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 17079,
+              "registrations": {
+                "value": 17079.0
+              },
+              "weighted_average": {
+                "value": 101.95989226535511
+              }
+            },
+            "doc_count": 17079,
+            "key": "IE",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 394,
+                  "registrations": {
+                    "value": 394.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 14719,
+                  "registrations": {
+                    "value": 14719.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 1037,
+                  "registrations": {
+                    "value": 1037.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 929,
+                  "registrations": {
+                    "value": 929.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 17079.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 122925,
+              "registrations": {
+                "value": 122925.0
+              },
+              "weighted_average": {
+                "value": 103.56992475086435
+              }
+            },
+            "doc_count": 122925,
+            "key": "IT",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 338,
+                  "registrations": {
+                    "value": 338.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 1,
+                  "registrations": {
+                    "value": 1.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 95995,
+                  "registrations": {
+                    "value": 95995.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 23900,
+                  "registrations": {
+                    "value": 23900.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 2691,
+                  "registrations": {
+                    "value": 2691.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 122925.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 6119,
+              "registrations": {
+                "value": 6119.0
+              },
+              "weighted_average": {
+                "value": 115.54289916653047
+              }
+            },
+            "doc_count": 6119,
+            "key": "LT",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 35,
+                  "registrations": {
+                    "value": 35.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 4943,
+                  "registrations": {
+                    "value": 4943.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 767,
+                  "registrations": {
+                    "value": 767.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 374,
+                  "registrations": {
+                    "value": 374.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 6119.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 1210,
+              "registrations": {
+                "value": 1210.0
+              },
+              "weighted_average": {
+                "value": 117.45867768595042
+              }
+            },
+            "doc_count": 1210,
+            "key": "LU",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 21,
+                  "registrations": {
+                    "value": 21.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 802,
+                  "registrations": {
+                    "value": 802.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 361,
+                  "registrations": {
+                    "value": 361.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 26,
+                  "registrations": {
+                    "value": 26.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 1210.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 2838,
+              "registrations": {
+                "value": 2838.0
+              },
+              "weighted_average": {
+                "value": 121.70930232558139
+              }
+            },
+            "doc_count": 2838,
+            "key": "LV",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 37,
+                  "registrations": {
+                    "value": 37.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 2289,
+                  "registrations": {
+                    "value": 2289.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 426,
+                  "registrations": {
+                    "value": 426.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 86,
+                  "registrations": {
+                    "value": 86.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 2838.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 1054,
+              "registrations": {
+                "value": 1054.0
+              },
+              "weighted_average": {
+                "value": 103.99620493358634
+              }
+            },
+            "doc_count": 1054,
+            "key": "MT",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 644,
+                  "registrations": {
+                    "value": 644.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 401,
+                  "registrations": {
+                    "value": 401.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 9,
+                  "registrations": {
+                    "value": 9.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 1054.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 29853,
+              "registrations": {
+                "value": 29853.0
+              },
+              "weighted_average": {
+                "value": 97.95434294710749
+              }
+            },
+            "doc_count": 29853,
+            "key": "NL",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 1149,
+                  "registrations": {
+                    "value": 1149.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 19279,
+                  "registrations": {
+                    "value": 19279.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 8202,
+                  "registrations": {
+                    "value": 8202.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 1223,
+                  "registrations": {
+                    "value": 1223.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 29853.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 103174,
+              "registrations": {
+                "value": 103174.0
+              },
+              "weighted_average": {
+                "value": 114.19835423653247
+              }
+            },
+            "doc_count": 103174,
+            "key": "PL",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 79886,
+                  "registrations": {
+                    "value": 79886.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 21966,
+                  "registrations": {
+                    "value": 21966.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 1322,
+                  "registrations": {
+                    "value": 1322.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 103174.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 11149,
+              "registrations": {
+                "value": 11149.0
+              },
+              "weighted_average": {
+                "value": 95.30863754596825
+              }
+            },
+            "doc_count": 11149,
+            "key": "PT",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 307,
+                  "registrations": {
+                    "value": 307.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 8265,
+                  "registrations": {
+                    "value": 8265.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 1544,
+                  "registrations": {
+                    "value": 1544.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 1033,
+                  "registrations": {
+                    "value": 1033.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 11149.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 12799,
+              "registrations": {
+                "value": 12799.0
+              },
+              "weighted_average": {
+                "value": 110.551996249707
+              }
+            },
+            "doc_count": 12799,
+            "key": "RO",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 76,
+                  "registrations": {
+                    "value": 76.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 10986,
+                  "registrations": {
+                    "value": 10986.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 1151,
+                  "registrations": {
+                    "value": 1151.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 586,
+                  "registrations": {
+                    "value": 586.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 12799.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 20143,
+              "registrations": {
+                "value": 20143.0
+              },
+              "weighted_average": {
+                "value": 103.65685349749293
+              }
+            },
+            "doc_count": 20143,
+            "key": "SE",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 569,
+                  "registrations": {
+                    "value": 569.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 17163,
+                  "registrations": {
+                    "value": 17163.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 924,
+                  "registrations": {
+                    "value": 924.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 1487,
+                  "registrations": {
+                    "value": 1487.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 20143.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 3394,
+              "registrations": {
+                "value": 3394.0
+              },
+              "weighted_average": {
+                "value": 116.15939893930465
+              }
+            },
+            "doc_count": 3394,
+            "key": "SI",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 28,
+                  "registrations": {
+                    "value": 28.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 2112,
+                  "registrations": {
+                    "value": 2112.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 1151,
+                  "registrations": {
+                    "value": 1151.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 103,
+                  "registrations": {
+                    "value": 103.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 3394.0
+            }
+          },
+          {
+            "co2_mapped": {
+              "doc_count": 9212,
+              "registrations": {
+                "value": 9212.0
+              },
+              "weighted_average": {
+                "value": 122.67672600955275
+              }
+            },
+            "doc_count": 9212,
+            "key": "SK",
+            "powertrains": {
+              "buckets": {
+                "BEV": {
+                  "doc_count": 51,
+                  "registrations": {
+                    "value": 51.0
+                  }
+                },
+                "FCEV": {
+                  "doc_count": 0,
+                  "registrations": {
+                    "value": 0.0
+                  }
+                },
+                "HEV": {
+                  "doc_count": 6303,
+                  "registrations": {
+                    "value": 6303.0
+                  }
+                },
+                "ICE_OTHER": {
+                  "doc_count": 2677,
+                  "registrations": {
+                    "value": 2677.0
+                  }
+                },
+                "PHEV": {
+                  "doc_count": 181,
+                  "registrations": {
+                    "value": 181.0
+                  }
+                }
+              }
+            },
+            "registrations": {
+              "value": 9212.0
+            }
+          }
+        ],
+        "doc_count_error_upper_bound": 0,
+        "sum_other_doc_count": 0
+      },
+      "powertrains": {
+        "buckets": {
+          "BEV": {
+            "doc_count": 10882,
+            "registrations": {
+              "value": 10882.0
+            }
+          },
+          "FCEV": {
+            "doc_count": 690,
+            "registrations": {
+              "value": 690.0
+            }
+          },
+          "HEV": {
+            "doc_count": 610881,
+            "registrations": {
+              "value": 610881.0
+            }
+          },
+          "ICE_OTHER": {
+            "doc_count": 156730,
+            "registrations": {
+              "value": 156730.0
+            }
+          },
+          "PHEV": {
+            "doc_count": 23911,
+            "registrations": {
+              "value": 23911.0
+            }
+          }
+        }
+      },
+      "registrations": {
+        "value": 803094.0
+      }
+    },
+    "hits": {
+      "hits": [],
+      "max_score": null,
+      "total": {
+        "relation": "eq",
+        "value": 803094
+      }
+    },
+    "timed_out": false,
+    "took": 1529
+  },
+  "response_sha256": "253354f82ed2077e3f696c3068aa827a2757674fa2465d3eada849b0a4a78a19",
+  "source_page": "https://co2cars.apps.eea.europa.eu/"
+}

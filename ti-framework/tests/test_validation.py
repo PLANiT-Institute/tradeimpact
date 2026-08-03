@@ -60,4 +60,5 @@ def test_crossover_closed_forms_match_expected(result_and_expected):
     ice = by_key[("KR", "ICE", "S2")]
     assert ice == pytest.approx(xref["KR_ICE_S2"], rel=TOL)
     bev = by_key[("KR", "BEV", "S2")]
-    assert bev is None or bev == pytest.approx(xref["KR_BEV_S2"], rel=TOL)
+    assert bev is None
+    assert xref["KR_BEV_S2"] is None

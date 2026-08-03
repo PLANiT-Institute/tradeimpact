@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnnualLines from "@/components/AnnualLines";
-import CumulativeLines from "@/components/CumulativeLines";
 import DecompBars from "@/components/DecompBars";
 import ScenarioCards from "@/components/ScenarioCards";
 import {
@@ -87,38 +86,6 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
   const support =
     (result.inputs?.support as { lifetime_T?: number; vkt?: Record<string, number> } | undefined) ??
     {};
-  const yearSeries = result.by_year?.series ?? [];
-  const hasTrend = yearSeries.length > 1;
-  // fixed country→color assignment (same country = same color on every report);
-  // palette validated against the app surface (dataviz six-checks, 2026-07-30)
-  const COUNTRY_COLORS: Record<string, string> = {
-    EU: "#3987e5",
-    JP: "#d95926",
-    AU: "#199e70",
-    CA: "#c98500",
-    KR: "#d55181",
-    UK: "#9085e9",
-  };
-  const countryNamesForChart = new Map(
-    getCountries().map((country) => [country.code, country.name]),
-  );
-  const trendYears = [...yearSeries].sort((a, b) => a.year - b.year);
-  const countryCumulative = new Map<string, number[]>();
-  for (const row of trendYears) {
-    for (const [code, value] of Object.entries(row.cohorts.S2?.by_country ?? {})) {
-      const prev = countryCumulative.get(code) ?? [];
-      countryCumulative.set(code, [...prev, (prev[prev.length - 1] ?? 0) + value]);
-    }
-  }
-  const countryCumulativeSeries = [...countryCumulative.entries()]
-    .filter(([, values]) => values.length === trendYears.length)
-    .sort((a, b) => Math.abs(b[1][b[1].length - 1]) - Math.abs(a[1][a[1].length - 1]))
-    .map(([code, values]) => ({
-      key: code,
-      label: countryNamesForChart.get(code) ?? code,
-      color: COUNTRY_COLORS[code] ?? "#8ab8f6",
-      values,
-    }));
   const representedUnits =
     meta?.assessed_units ??
     placements.reduce((total, placement) => total + (placement.units ?? 0), 0);
@@ -188,7 +155,7 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
           </p>
         </div>
         <div className="report-meta-line">
-          <span>{meta?.basis === "estimated" ? "Estimated inputs" : meta?.illustrative ? "Illustrative case" : "Published inputs"}</span>
+          <span>{meta?.illustrative ? "Illustrative case" : "Source-backed inputs"}</span>
           <span>{markets.size} markets</span>
           <span>{representedUnits.toLocaleString("en-US")} vehicles</span>
         </div>
@@ -198,7 +165,6 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
         <span>Jump to</span>
         <Link href="#finding">Finding</Link>
         <Link href="#country-impact">Markets</Link>
-        {hasTrend && <Link href="#trend">Trend</Link>}
         <Link href="#scenarios">Sensitivities</Link>
         {!central.directional_only && <Link href="#drivers">Drivers</Link>}
         <Link href="#details">Details</Link>
@@ -251,7 +217,6 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
           <p>
             The result compares represented product sales with national commitments. The
             exact total depends on sales coverage.
-            {meta?.basis === "estimated" && " This assessment currently includes estimated inputs."}
             {meta?.illustrative && " This is an illustrative validation case, not a real-firm assessment."}
           </p>
         </div>
@@ -350,70 +315,6 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
           lock-in effects are not allowed to cancel each other in the comparison.
         </p>
       </section>
-
-      {hasTrend && (
-        <section className="simple-report-section" id="trend">
-          <p className="eyebrow">Export volume trend</p>
-          <h2>How does the NDC impact move as the export mix changes?</h2>
-          <p className="section-lede">
-            Each year&apos;s represented sales are re-run against the <em>same current</em> NDC
-            benchmarks, so the differences below isolate the effect of export volume and
-            powertrain-mix changes — they are not restated historical assessments.
-          </p>
-          <div className="table-scroll">
-            <table>
-              <thead>
-                <tr>
-                  <th>Sales year</th>
-                  <th className="num">Represented units</th>
-                  <th className="num">NDC impact (S2)</th>
-                  <th className="num">Change vs prior year</th>
-                  <th>Direction</th>
-                </tr>
-              </thead>
-              <tbody>
-                {yearSeries.map((row, index) => {
-                  const s2 = row.cohorts.S2;
-                  const previous = index > 0 ? yearSeries[index - 1].cohorts.S2 : undefined;
-                  const delta =
-                    s2 && previous && !s2.directional_only && !previous.directional_only
-                      ? s2.total_tCO2e - previous.total_tCO2e
-                      : undefined;
-                  const direction = directionOf(s2?.total_tCO2e);
-                  return (
-                    <tr key={row.year}>
-                      <td className="mono">{row.year}{row.year === result.cohort_year ? " (published cohort)" : ""}</td>
-                      <td className="num">{row.units.toLocaleString("en-US")}</td>
-                      <td className="num">{s2 ? (s2.directional_only ? "direction only" : compactCarbon(s2.total_tCO2e)) : "—"}</td>
-                      <td className="num">{delta === undefined ? "—" : delta === 0 ? "0" : `${delta > 0 ? "+" : "−"}${compactCarbon(Math.abs(delta))}`}</td>
-                      <td><span className={`direction-chip ${directionClass(direction)}`}>{ndcImpactLabel(direction)}</span></td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-          {countryCumulativeSeries.length > 0 && (
-            <>
-              <h3 className="subsection-title">Where the impact is accruing, country by country</h3>
-              <p className="section-lede">
-                Cumulative NDC impact (S2) of the {trendYears[0]?.year}–{result.cohort_year} sales
-                cohorts per operating market — each line runs the total forward as sales years
-                accumulate.
-              </p>
-              <div className="quiet-panel">
-                <CumulativeLines
-                  years={trendYears.map((row) => row.year)}
-                  series={countryCumulativeSeries}
-                  ariaLabel={`Cumulative S2 NDC impact by country across sales years ${trendYears[0]?.year}–${result.cohort_year}`}
-                  caption="tCO₂e, cumulative across sales-year cohorts · negative = NDC lock-in accumulating"
-                />
-              </div>
-            </>
-          )}
-          <p className="plain-footnote">{result.by_year?.note}</p>
-        </section>
-      )}
 
       <section className="simple-report-section" id="scenarios">
         <p className="eyebrow">NDC result and sensitivities</p>
@@ -551,9 +452,8 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
             </div>
             <p className="panel-note">
               Sector-wide assumptions: vehicle lifetime {support.lifetime_T ?? quality.lifetime_T} years ·
-              per-market annual distance shown above. Estimated inputs are audited in{" "}
-              <span className="mono">data-pipeline/ESTIMATES.md</span>; the collection backlog is{" "}
-              <span className="mono">data-pipeline/COLLECTION_STATUS.md</span>.
+              per-market annual distance shown above. The collection backlog and evidence
+              gate are documented in <span className="mono">data-pipeline/COLLECTION_STATUS.md</span>.
             </p>
           </div>
         </details>
@@ -562,7 +462,6 @@ export default async function Report({ params }: { params: Promise<{ firm: strin
           <summary><span>Coverage and provenance</span><small>What is represented and how to reproduce the result</small></summary>
           <div className="detail-body">
             {meta?.illustrative && <p><strong>Illustrative case.</strong> {meta.note}</p>}
-            {meta?.basis === "estimated" && <p><strong>Estimated inputs.</strong> {meta.note}</p>}
             {meta?.coverage_ratio !== undefined && <p><strong>Coverage.</strong> {meta.assessed_units?.toLocaleString("en-US")} vehicles, or {(meta.coverage_ratio * 100).toFixed(1)}% of the disclosed {result.cohort_year} global-sales denominator. {meta.coverage_scope}. {meta.coverage_source && <a href={meta.coverage_source}>Source</a>}</p>}
             <p className="mono provenance-copy">engine {result.provenance.engine_version} #{result.provenance.engine_source_sha256.slice(0, 12)} · input #{result.provenance.input_sha256.slice(0, 12)} · dataset #{result.provenance.dataset_sha256.slice(0, 12)} · workbook #{result.provenance.workbook_sha256.slice(0, 12)}</p>
           </div>

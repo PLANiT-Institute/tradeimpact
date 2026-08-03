@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 """Build the published dataset the web app renders.
 
-    workbook.xlsx / *.csv + fixtures + firm universe
-        -> data/published/{firms.json, {firm}.json, meta.json}
+    workbook.xlsx + firm universe + sector registry
+        -> data/published/{firms,countries,sectors,benchmarks,company_metrics,sources,...}.json
 
-All numbers originate in ti_framework (build brief §1 boundary rule); this script only
-orchestrates runs and serialises. Firms run only from collected inputs or explicitly
-documented estimates; firms without either are published as ``runnable: false``.
+The public dataset contains source-backed benchmark data only. A firm report is not
+published until registration volumes, vehicle mapping, fleet baselines, support
+parameters, and scenario rates are collected. The illustrative reference fixture is
+used only to pin the engine/web schema; it is never emitted as a public assessment.
 
 Usage:  ti-framework/.venv/bin/python data-pipeline/build_dataset.py
 """
@@ -19,6 +20,7 @@ import json
 import re
 import sys
 from importlib.metadata import version as pkg_version
+from math import isfinite
 from pathlib import Path
 
 import openpyxl
@@ -32,55 +34,42 @@ sys.path.insert(0, str(ENGINE_DIR))
 
 from ti_framework.core.scenarios import run  # noqa: E402
 from ti_framework.core.sensitivity import run_sensitivity  # noqa: E402
-from ti_framework.io.fixtures import load_fixture, parse_fixture  # noqa: E402
+from ti_framework.alignment.registry import list_sector_profiles  # noqa: E402
+from ti_framework.io.fixtures import load_fixture  # noqa: E402
 from ti_framework.io.schema import FLAG_REASONS  # noqa: E402
 from ti_framework.io.workbook import load_workbook_inputs  # noqa: E402
 from ti_framework.models import BenchmarkStatus  # noqa: E402
 from ti_framework.report.outputs import to_json_dict  # noqa: E402
 
-# firm slug -> fixture powering its report. ReferenceCo is the validation fixture;
-# Toyota/Hyundai run on rough documented Tier B/C estimates (ESTIMATES.md) until
-# collection lands (COLLECTION_STATUS.md is the backlog).
-FIXTURES: dict[str, Path] = {
-    "referenceco": ENGINE_DIR / "fixtures" / "reference_case.json",
-    "toyota": REPO / "data-pipeline" / "fixtures" / "toyota.json",
-    "hyundai": REPO / "data-pipeline" / "fixtures" / "hyundai.json",
-}
+from adapters.automotive_eea import SNAPSHOT as EEA_AUTOMOTIVE_SNAPSHOT  # noqa: E402
+from adapters.automotive_eea import build_records as build_eea_automotive_records  # noqa: E402
+from adapters.power_jera import SNAPSHOT as JERA_POWER_SNAPSHOT  # noqa: E402
+from adapters.power_jera import build_records as build_jera_power_records  # noqa: E402
+from adapters.power_koen import SNAPSHOT as KOEN_POWER_SNAPSHOT  # noqa: E402
+from adapters.power_koen import build_records as build_koen_power_records  # noqa: E402
 
-# provenance note surfaced on the report page for estimate-based firms
-NOTES_BY_SLUG = {
-    "toyota": "Estimated-input case: NDC rates and grid intensities are collected (Tier A/B); "
-    "volumes, vehicle parameters and S1/S3 rates are rough documented estimates "
-    "(data-pipeline/ESTIMATES.md, Tier B/C). Replace with collected data as it lands.",
-    "hyundai": "Estimated-input case: NDC rates and grid intensities are collected (Tier A/B); "
-    "volumes, vehicle parameters and S1/S3 rates are rough documented estimates "
-    "(data-pipeline/ESTIMATES.md, Tier B/C). Replace with collected data as it lands.",
-}
+VALIDATION_FIXTURE = ENGINE_DIR / "fixtures" / "reference_case.json"
 
-# Published coverage denominators. These do not enter the TI calculation; they make
-# the visible firm comparison honest about how much of the firm's reported cohort-year
-# sales is represented by the placement rows. URLs and scope notes are audited in
-# ESTIMATES.md. Field names are cohort-neutral: the year lives in cohort_year.
-COVERAGE_BY_SLUG = {
-    "toyota": {
-        "reported_units": 10_160_000,
-        "source": "https://global.toyota/pages/fact-data/fact-data_001_06_en.pdf",
-        "scope": "Toyota + Lexus global 2024 sales; fixture uses selected Toyota/Lexus market mixes",
-    },
-    "hyundai": {
-        "reported_units": 4_141_959,
-        "source": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000000897",
-        "scope": "Hyundai Motor global 2024 wholesale sales; fixture covers selected operating markets",
-    },
-}
+ASSESSMENT_GATE_NOTE = (
+    "Company assessment withheld: source-backed country/year/model/powertrain registration "
+    "volumes and the remaining calculation inputs have not been collected. Estimated vehicle "
+    "mix and reconstructed historical cohorts were removed on 2026-08-03."
+)
+TOYOTA_ALIGNMENT_NOTE = (
+    "Evidence-first alignment snapshot available for Toyota-brand 2024 EU27 passenger-car "
+    "registrations. The legacy lifetime greenhouse-gas assessment remains withheld."
+)
+JERA_ALIGNMENT_NOTE = (
+    "Evidence-first FY2024 Japan power snapshot available from independently assured company "
+    "data. National 2030/2040 targets are context only because their boundaries do not match."
+)
+KOEN_ALIGNMENT_NOTE = (
+    "Evidence-first 2024 Korea power snapshot available from KOEN's official ESG table. "
+    "Generation basis, plant-total reconciliation, and assurance limitations prevent an "
+    "emissions-intensity or target-gap calculation."
+)
 
 RATE_FIELDS = ("s1", "s2", "s3", "s2_upper")
-
-# Sector-wide support parameters (models.SupportParams). These are country/sector
-# properties, not firm properties — every real firm must agree on them, exactly like
-# the country benchmark contract below.
-SUPPORT_SCALARS = ("lifetime_T", "lifetime_sens", "uf_band", "realworld_range")
-
 
 def _sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
@@ -139,19 +128,7 @@ def _rows(path: Path, expect_first_header: str) -> list[dict]:
 
 
 def build_universe() -> list[dict]:
-    firms: list[dict] = [
-        {
-            "slug": "referenceco",
-            "name": "ReferenceCo",
-            "sector": "Automotive",
-            "country": "—",
-            "project": "TI",
-            "runnable": True,
-            "illustrative": True,
-            "note": "Committed validation fixture with illustrative parameters (NOTES.md D4). "
-            "Demonstrates the full report until real-firm data is collected.",
-        }
-    ]
+    firms: list[dict] = []
     for r in _rows(REPO / "TI_CaseStudy_Target_Companies.xlsx", "Sector"):
         name = r["Company (candidate)"]
         slug = slugify(name)
@@ -162,9 +139,8 @@ def build_universe() -> list[dict]:
                 "sector": r["Sector"],
                 "country": r["Country"],
                 "project": "TI",
-                "runnable": slug in FIXTURES,
-                "basis": "estimated" if slug in NOTES_BY_SLUG else None,
-                "note": NOTES_BY_SLUG.get(slug),
+                "runnable": False,
+                "note": ASSESSMENT_GATE_NOTE if slug in {"toyota", "hyundai"} else None,
                 "status": r.get("Status", ""),
                 "selection_criteria": r.get("Selection criteria", ""),
             }
@@ -180,6 +156,23 @@ def build_universe() -> list[dict]:
                 "project": "CAP",
                 "runnable": False,
                 "ticker": r.get("Ticker/Listing", ""),
+            }
+        )
+    if not any(firm["slug"] == "koen" for firm in firms):
+        firms.append(
+            {
+                "slug": "koen",
+                "name": "Korea South-East Power (KOEN)",
+                "sector": "Power",
+                "country": "Korea",
+                "project": "TI",
+                "runnable": False,
+                "note": None,
+                "status": "Evidence pilot",
+                "selection_criteria": (
+                    "Second power company and second operating geography with official "
+                    "generation and plant-level emissions disclosure"
+                ),
             }
         )
     return firms
@@ -208,6 +201,22 @@ def build_meta() -> dict:
                 REPO / "CAP_Target_Companies_Draft.xlsx"
             ),
         },
+        "alignment_inputs_sha256": {
+            str(EEA_AUTOMOTIVE_SNAPSHOT.relative_to(REPO)): _file_sha256(
+                EEA_AUTOMOTIVE_SNAPSHOT
+            ),
+            "data-pipeline/adapters/automotive_eea.py": _file_sha256(
+                REPO / "data-pipeline" / "adapters" / "automotive_eea.py"
+            ),
+            str(JERA_POWER_SNAPSHOT.relative_to(REPO)): _file_sha256(JERA_POWER_SNAPSHOT),
+            "data-pipeline/adapters/power_jera.py": _file_sha256(
+                REPO / "data-pipeline" / "adapters" / "power_jera.py"
+            ),
+            str(KOEN_POWER_SNAPSHOT.relative_to(REPO)): _file_sha256(KOEN_POWER_SNAPSHOT),
+            "data-pipeline/adapters/power_koen.py": _file_sha256(
+                REPO / "data-pipeline" / "adapters" / "power_koen.py"
+            ),
+        },
         "collection_status": {
             "countries_loaded": len(wb_inputs.countries),
             "missing_inputs": wb_inputs.missing_inputs,
@@ -216,37 +225,8 @@ def build_meta() -> dict:
     }
 
 
-# slugs whose fixture country benchmarks are refreshed from the workbook at build time —
-# the workbook is the source of truth for the Layer-1 fields it carries (grid, S2 rates,
-# status). fleet_intensity_base has no workbook column (io/schema.py LAYER1_COLUMNS), so
-# fixtures remain its source; build_countries rejects cross-firm drift on it.
-# ReferenceCo is excluded: it is the frozen validation case (NOTES.md D4).
-MERGE_WORKBOOK = {"toyota", "hyundai"}
-
-
-def merge_workbook_benchmarks(fx, workbook_countries) -> None:
-    """Overwrite fixture Layer-1 values with collected workbook values where present.
-
-    Fixture keeps anything the workbook has not collected (e.g. Tier C S1/S3 estimates)
-    — no collected value is ever shadowed by an estimate, and no empty workbook cell
-    ever erases a documented estimate.
-    """
-    for code, c in fx.countries.items():
-        wb = workbook_countries.get(code)
-        if wb is None:
-            continue
-        if wb.grid_intensity is not None:
-            c.grid_intensity = wb.grid_intensity
-        for attr in ("r_fleet", "r_power"):
-            for s in ("s1", "s2", "s3", "s2_upper"):
-                v = getattr(getattr(wb, attr), s)
-                if v is not None:
-                    setattr(getattr(c, attr), s, v)
-        c.status = wb.status
-
-
 def effective_inputs(fx, fixture_path: Path) -> dict:
-    """Serialise the exact post-merge inputs used by the engine and calculator."""
+    """Serialise internal validation inputs used only to pin the report schema."""
     raw = json.loads(fixture_path.read_text())
     raw.pop("expected", None)
     for code, c in fx.countries.items():
@@ -270,70 +250,206 @@ def effective_inputs(fx, fixture_path: Path) -> dict:
     return raw
 
 
-def build_countries(real_payloads: dict[str, dict]) -> tuple[list[dict], dict]:
-    """Build one canonical country contract and reject firm-specific benchmark drift.
+def _published_rates(rate) -> dict[str, float]:
+    return {
+        key: value
+        for key in RATE_FIELDS
+        if (value := getattr(rate, key)) is not None
+    }
 
-    Guards the full shared-input surface: country benchmarks (``inputs.countries``)
-    AND sector-wide support parameters (``inputs.support``) — a per-country VKT or a
-    lifetime that differs between two firms would silently benchmark them against
-    different pathways, so any divergence fails the build.
 
-    Returns ``(countries, support_contract)`` where ``support_contract`` is the agreed
-    scalar block plus the merged per-country ``vkt`` map.
+def build_countries() -> tuple[list[dict], dict]:
+    """Publish only workbook-backed operating-country benchmark fields.
+
+    Vehicle fleet baselines, VKT, lifetime, utility-factor bands, and other support
+    defaults are deliberately omitted/null until their workbook cells are sourced.
     """
-    countries: dict[str, dict] = {}
-    owner: dict[str, str] = {}
-    support_contract: dict | None = None
-    support_owner = ""
-    vkt: dict[str, float] = {}
-    vkt_owner: dict[str, str] = {}
-    for slug, payload in real_payloads.items():
-        support = payload["inputs"].get("support") or {}
-        scalars = {key: support.get(key) for key in SUPPORT_SCALARS}
-        if support_contract is None:
-            support_contract, support_owner = scalars, slug
-        elif support_contract != scalars:
-            differing = sorted(
-                key for key in SUPPORT_SCALARS if support_contract.get(key) != scalars.get(key)
-            )
-            raise ValueError(
-                f"support contract drift: {support_owner} vs {slug}; fields={differing}"
-            )
-        for code, value in (support.get("vkt") or {}).items():
-            if code in vkt and vkt[code] != value:
-                raise ValueError(
-                    f"support contract drift for vkt.{code}: "
-                    f"{vkt_owner[code]}={vkt[code]} vs {slug}={value}"
-                )
-            vkt[code] = value
-            vkt_owner[code] = slug
-        for code, country in payload["inputs"]["countries"].items():
-            status = BenchmarkStatus(country["status"])
-            candidate = {
+    inputs = load_workbook_inputs(WORKBOOK)
+    countries = []
+    for code, country in sorted(inputs.countries.items()):
+        status = BenchmarkStatus(country.status)
+        countries.append(
+            {
                 "code": code,
-                **country,
-                "warnings": country.get("warnings") or [],
+                "name": country.name,
+                "grid_intensity": country.grid_intensity,
+                "r_fleet": _published_rates(country.r_fleet),
+                "r_power": _published_rates(country.r_power),
+                "status": status.value,
+                "tier": country.tier.value,
+                "source": country.source,
+                "warnings": country.warnings,
                 "flag_reason": FLAG_REASONS.get(status) if status.is_flag else None,
             }
-            previous = countries.get(code)
-            if previous is not None and previous != candidate:
-                differing = sorted(
-                    key
-                    for key in previous.keys() | candidate.keys()
-                    if previous.get(key) != candidate.get(key)
-                )
+        )
+    support_contract = {
+        "lifetime_T": inputs.support.lifetime_T,
+        "lifetime_sens": None,
+        "uf_band": None,
+        "realworld_range": None,
+        "vkt": {},
+    }
+    return countries, support_contract
+
+
+def build_alignment_data() -> dict[str, list[dict]]:
+    """Build the sector-neutral public contract without inventing observations.
+
+    Sector adapters may add records only after source, scope, unit, and mapping coverage pass
+    their validation. No adapter may fill unmatched activity with an estimated mix.
+    """
+    adapters = [
+        build_eea_automotive_records(),
+        build_jera_power_records(),
+        build_koen_power_records(),
+    ]
+    result = {
+        "sectors": list_sector_profiles(),
+        "benchmarks": [row for adapter in adapters for row in adapter["benchmarks"]],
+        "company_metrics": [row for adapter in adapters for row in adapter["company_metrics"]],
+        "sources": [row for adapter in adapters for row in adapter["sources"]],
+    }
+    _require_unique(result["sources"], "source_id")
+    _require_unique(result["benchmarks"], "benchmark_id")
+    metric_keys = [
+        (
+            row["company_id"],
+            row["sector"],
+            row["geography"],
+            row["observation_year"],
+            row["metric_id"],
+            json.dumps(row.get("scope", {}), sort_keys=True),
+        )
+        for row in result["company_metrics"]
+    ]
+    if len(metric_keys) != len(set(metric_keys)):
+        raise ValueError("duplicate alignment company metric identity")
+    _validate_alignment_data(result)
+    return result
+
+
+def _require_unique(rows: list[dict], key: str) -> None:
+    values = [row[key] for row in rows]
+    if len(values) != len(set(values)):
+        raise ValueError(f"duplicate alignment {key}")
+
+
+def _validate_alignment_data(alignment: dict[str, list[dict]]) -> None:
+    """Fail publication when evidence links or comparison contracts are inconsistent."""
+    source_ids = {row["source_id"] for row in alignment["sources"]}
+    sector_metrics: dict[str, dict[str, str]] = {}
+    sector_direct_metrics: dict[str, dict[str, str]] = {}
+    for sector in alignment["sectors"]:
+        direct = {row["metric_id"]: row["unit"] for row in sector["direct_metrics"]}
+        descriptive = {
+            row["metric_id"]: row["unit"] for row in sector["descriptive_metrics"]
+        }
+        if set(direct) & set(descriptive):
+            raise ValueError(f"sector {sector['sector_id']} repeats a metric definition")
+        sector_direct_metrics[sector["sector_id"]] = direct
+        sector_metrics[sector["sector_id"]] = {**direct, **descriptive}
+
+    for source in alignment["sources"]:
+        if not str(source.get("url", "")).startswith("https://"):
+            raise ValueError(f"source {source['source_id']} must use an HTTPS URL")
+
+    for metric in alignment["company_metrics"]:
+        registered = sector_metrics.get(metric["sector"], {})
+        expected_unit = registered.get(metric["metric_id"])
+        if expected_unit is None:
+            raise ValueError(
+                f"unregistered company metric {metric['sector']}.{metric['metric_id']}"
+            )
+        if metric["unit"] != expected_unit:
+            raise ValueError(
+                f"company metric {metric['metric_id']} uses {metric['unit']}, "
+                f"expected {expected_unit}"
+            )
+        missing_sources = set(metric.get("source_ids", [])) - source_ids
+        if missing_sources or not metric.get("source_ids"):
+            raise ValueError(
+                f"company metric {metric['metric_id']} has invalid sources {sorted(missing_sources)}"
+            )
+        coverage = metric.get("coverage", {})
+        mapped = coverage.get("mapped_activity")
+        reported = coverage.get("reported_activity")
+        if (
+            not isinstance(mapped, (int, float))
+            or not isinstance(reported, (int, float))
+            or mapped < 0
+            or reported <= 0
+            or mapped > reported
+        ):
+            raise ValueError(f"company metric {metric['metric_id']} has invalid coverage")
+        if not coverage.get("activity_unit"):
+            raise ValueError(f"company metric {metric['metric_id']} lacks a coverage unit")
+
+    for benchmark in alignment["benchmarks"]:
+        if benchmark["sector"] not in sector_metrics:
+            raise ValueError(
+                f"benchmark {benchmark['benchmark_id']} uses an unregistered sector"
+            )
+        missing_sources = set(benchmark.get("source_ids", [])) - source_ids
+        if missing_sources or not benchmark.get("source_ids"):
+            raise ValueError(
+                f"benchmark {benchmark['benchmark_id']} has invalid sources "
+                f"{sorted(missing_sources)}"
+            )
+        if benchmark["comparison_mode"] == "direct":
+            expected_unit = sector_direct_metrics[benchmark["sector"]].get(
+                benchmark["metric_id"]
+            )
+            if expected_unit is None:
                 raise ValueError(
-                    f"country contract drift for {code}: {owner[code]} vs {slug}; "
-                    f"fields={differing}"
+                    f"benchmark {benchmark['benchmark_id']} is not a registered direct metric"
                 )
-            countries[code] = candidate
-            owner[code] = slug
-    for code, country in countries.items():
-        country["vkt"] = vkt.get(code)
-    return (
-        [countries[code] for code in sorted(countries)],
-        {**(support_contract or {}), "vkt": {code: vkt[code] for code in sorted(vkt)}},
-    )
+            if benchmark.get("unit") != expected_unit:
+                raise ValueError(
+                    f"benchmark {benchmark['benchmark_id']} uses an incompatible unit"
+                )
+            if benchmark.get("value") is None or benchmark.get("target_year") is None:
+                raise ValueError(
+                    f"benchmark {benchmark['benchmark_id']} lacks a direct target value/year"
+                )
+            if benchmark.get("relation") not in {"at_least", "at_most"}:
+                raise ValueError(
+                    f"benchmark {benchmark['benchmark_id']} lacks a direct target relation"
+                )
+        elif benchmark["comparison_mode"] == "contextual":
+            if benchmark.get("relation") != "context_only":
+                raise ValueError(
+                    f"contextual benchmark {benchmark['benchmark_id']} must be context_only"
+                )
+            value = benchmark.get("value")
+            value_min = benchmark.get("value_min")
+            value_max = benchmark.get("value_max")
+            if (value_min is None) != (value_max is None):
+                raise ValueError(
+                    f"contextual benchmark {benchmark['benchmark_id']} has a partial range"
+                )
+            numeric_values = [item for item in (value, value_min, value_max) if item is not None]
+            if any(not isinstance(item, (int, float)) or not isfinite(item) for item in numeric_values):
+                raise ValueError(
+                    f"contextual benchmark {benchmark['benchmark_id']} has a non-finite value"
+                )
+            if value_min is not None and value_min > value_max:
+                raise ValueError(
+                    f"contextual benchmark {benchmark['benchmark_id']} has an inverted range"
+                )
+            if numeric_values and (
+                not benchmark.get("unit") or benchmark.get("target_year") is None
+            ):
+                raise ValueError(
+                    f"contextual benchmark {benchmark['benchmark_id']} lacks a unit/year"
+                )
+            if not numeric_values and not benchmark.get("notes"):
+                raise ValueError(
+                    f"contextual benchmark {benchmark['benchmark_id']} lacks context"
+                )
+        else:
+            raise ValueError(
+                f"benchmark {benchmark['benchmark_id']} has an unknown comparison mode"
+            )
 
 
 def build_contract(payloads: dict[str, dict]) -> dict:
@@ -361,71 +477,8 @@ def build_contract(payloads: dict[str, dict]) -> dict:
     return contract
 
 
-BY_YEAR_NOTE = (
-    "Benchmarks and support parameters held at the current workbook vintage; "
-    "year-over-year differences isolate export volume and powertrain-mix changes."
-)
-
-
-def build_by_year(raw: dict, fx) -> dict:
-    """Run the engine once per historical cohort year (``placements_by_year``).
-
-    Benchmarks and support parameters are held at the current workbook vintage, so
-    differences across years isolate the export volume / powertrain-mix effect —
-    they are NOT restated historical benchmarks. The primary cohort year is always
-    included so the series is complete. Reused verbatim by check_published.py.
-    """
-    by_year_placements = raw.get("placements_by_year") or {}
-    series: list[dict] = []
-    for year_str in sorted({*by_year_placements, str(fx.cohort_year)}):
-        year = int(year_str)
-        if year == fx.cohort_year:
-            placements = fx.placements
-        else:
-            # Only the placements differ per year — countries/support come from the
-            # already-merged fx, so no workbook re-merge is needed here.
-            placements = parse_fixture(
-                {**raw, "cohort_year": year, "placements": by_year_placements[year_str]}
-            ).placements
-        result = run(
-            fx.firm,
-            year,
-            placements,
-            fx.countries,
-            fx.support,
-            fx.config,
-            analysis_level=fx.analysis_level,
-            layer1_method=fx.layer1_method,
-        )
-        year_payload = to_json_dict(result)
-        series.append(
-            {
-                "year": year,
-                "units": sum(p.units or 0 for p in placements),
-                "units_by_country": _units_by_country(placements),
-                "cohorts": {
-                    scenario: {
-                        key: cohort[key]
-                        for key in ("total_tCO2e", "direction", "directional_only", "by_country")
-                    }
-                    for scenario, cohort in year_payload["cohorts"].items()
-                },
-            }
-        )
-    return {"note": BY_YEAR_NOTE, "series": series}
-
-
-def _units_by_country(placements) -> dict[str, float]:
-    out: dict[str, float] = {}
-    for p in placements:
-        out[p.country_code] = out.get(p.country_code, 0.0) + (p.units or 0)
-    return out
-
-
-def run_firm(slug: str, fixture_path: Path) -> dict:
+def run_firm(_slug: str, fixture_path: Path) -> dict:
     fx = load_fixture(fixture_path)
-    if slug in MERGE_WORKBOOK:
-        merge_workbook_benchmarks(fx, load_workbook_inputs(WORKBOOK).countries)
     result = run(
         fx.firm,
         fx.cohort_year,
@@ -441,90 +494,85 @@ def run_firm(slug: str, fixture_path: Path) -> dict:
         fx.firm, fx.cohort_year, fx.placements, fx.countries, fx.support, fx.config
     )
     payload["inputs"] = effective_inputs(fx, fixture_path)
-    # by_year runs from the effective (post-merge) inputs so check_published can
-    # recompute it from the published payload alone.
-    payload["by_year"] = build_by_year(payload["inputs"], fx)
     return payload
+
+
+def build_contract_schema() -> dict:
+    """Derive the web contract from the internal validation case without publishing it."""
+    payload = run_firm("validation", VALIDATION_FIXTURE)
+    payload["provenance"] = {
+        "engine_version": "",
+        "engine_source_sha256": "",
+        "workbook": "",
+        "workbook_sha256": "",
+        "input_sha256": "",
+        "dataset_sha256": "",
+    }
+    return build_contract({"validation": payload})
 
 
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     meta = build_meta()
     firms = build_universe()
-    payloads: dict[str, dict] = {}
-
+    countries, support_contract = build_countries()
+    alignment = build_alignment_data()
+    available_company_ids = {row["company_id"] for row in alignment["company_metrics"]}
     for firm in firms:
-        if not firm["runnable"]:
-            continue
-        payload = run_firm(firm["slug"], FIXTURES[firm["slug"]])
-        input_sha = _json_sha256(payload["inputs"])
-        payload["provenance"] = {
-            key: meta[key]
-            for key in (
-                "engine_version",
-                "engine_source_sha256",
-                "workbook",
-                "workbook_sha256",
-            )
-        } | {"input_sha256": input_sha}
-        payloads[firm["slug"]] = payload
-        firm["cohort_year"] = payload["cohort_year"]
-        # Net-zero commitment lives in the fixture (with sources); surfaced on the
-        # firm card so TI direction can be read against the firm's own target.
-        firm["netzero"] = payload["inputs"].get("netzero")
-        coverage = COVERAGE_BY_SLUG.get(firm["slug"])
-        if coverage:
-            assessed_units = sum(p.get("units") or 0 for p in payload["inputs"]["placements"])
-            firm["assessed_units"] = assessed_units
-            firm["reported_units"] = coverage["reported_units"]
-            firm["coverage_ratio"] = assessed_units / coverage["reported_units"]
-            firm["coverage_source"] = coverage["source"]
-            firm["coverage_scope"] = coverage["scope"]
-        print(
-            f"built {firm['slug']}.json  (TI_cohort S2 = "
-            f"{payload['cohorts']['S2']['total_tCO2e']:,.1f} tCO2e)"
-        )
-
-    real_payloads = {
-        firm["slug"]: payloads[firm["slug"]]
-        for firm in firms
-        if firm["runnable"] and not firm.get("illustrative")
-    }
-    countries, support_contract = build_countries(real_payloads)
+        firm["alignment_available"] = firm["slug"] in available_company_ids
+        if firm["slug"] == "toyota":
+            firm["note"] = TOYOTA_ALIGNMENT_NOTE
+        elif firm["slug"] == "jera":
+            firm["note"] = JERA_ALIGNMENT_NOTE
+        elif firm["slug"] == "koen":
+            firm["note"] = KOEN_ALIGNMENT_NOTE
     meta["support_contract"] = support_contract
+    meta["alignment_contract"] = {
+        "version": "alignment-v2",
+        "sectors_registered": len(alignment["sectors"]),
+        "direct_benchmarks": sum(
+            row["comparison_mode"] == "direct" for row in alignment["benchmarks"]
+        ),
+        "contextual_benchmarks": sum(
+            row["comparison_mode"] == "contextual" for row in alignment["benchmarks"]
+        ),
+        "company_metrics": len(alignment["company_metrics"]),
+        "rule": "direct arithmetic requires matching sector, metric definition, geography, and unit",
+    }
     meta["dataset_sha256"] = _json_sha256(
         {
             "countries": countries,
             "firms": firms,
-            "inputs": {
-                slug: payload["provenance"]["input_sha256"]
-                for slug, payload in sorted(payloads.items())
-            },
+            **alignment,
+            "inputs": {},
             "engine_source_sha256": meta["engine_source_sha256"],
             "workbook_sha256": meta["workbook_sha256"],
         }
     )
-    for payload in payloads.values():
-        payload["provenance"]["dataset_sha256"] = meta["dataset_sha256"]
     expected_names = {
         "contract.json",
         "countries.json",
         "firms.json",
         "meta.json",
-        *(f"{slug}.json" for slug in payloads),
+        "sectors.json",
+        "benchmarks.json",
+        "company_metrics.json",
+        "sources.json",
     }
     removed = _prune_stale_json_outputs(expected_names)
     if removed:
         print(f"removed stale published outputs: {', '.join(removed)}")
-    for slug, payload in payloads.items():
-        _write_json(OUT / f"{slug}.json", payload)
-    _write_json(OUT / "contract.json", build_contract(payloads))
+    _write_json(OUT / "contract.json", build_contract_schema())
     _write_json(OUT / "countries.json", countries)
     _write_json(OUT / "firms.json", firms)
+    for name, rows in alignment.items():
+        _write_json(OUT / f"{name}.json", rows)
     _write_json(OUT / "meta.json", meta)
     print(
         f"built firms.json ({len(firms)} firms, "
-        f"{sum(f['runnable'] for f in firms)} runnable) and meta.json -> {OUT}"
+        f"{sum(f['runnable'] for f in firms)} legacy reports runnable; "
+        f"{len(available_company_ids)} evidence alignment snapshot) "
+        f"and meta.json -> {OUT}"
     )
     return 0
 

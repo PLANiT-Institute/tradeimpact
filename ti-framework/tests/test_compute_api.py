@@ -45,6 +45,7 @@ def test_engine_imports_in_a_clean_process():
         (lambda p: p["support"].update(lifetime_T=51), "support.lifetime_T"),
         (lambda p: p["placements"].__imul__(501), "placements"),
         (lambda p: p["placements"][0].update(units=-1), "units"),
+        (lambda p: p["placements"][0].update(units=None), "units"),
         (lambda p: p["countries"]["KR"]["r_fleet"].update(s2=1.1), "r_fleet.s2"),
         (lambda p: p["placements"][0].update(country="ZZ"), "included country"),
     ],

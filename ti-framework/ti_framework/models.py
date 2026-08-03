@@ -45,7 +45,7 @@ class Powertrain(StrEnum):
 class DataTier(StrEnum):
     """Three-tier data quality hierarchy (Whitepaper §5.1)."""
 
-    A = "A"  # firm-verified
+    A = "A"  # primary/official or firm-verified
     B = "B"  # estimated
     C = "C"  # proxy-based fallback
     UNKNOWN = "?"

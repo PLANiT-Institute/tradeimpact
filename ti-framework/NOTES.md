@@ -124,8 +124,10 @@ result's `missing_inputs` list and the data-quality declaration, rather than cra
   is not populated for sectoral-S2 markets.
 - The sector-split correction factor's *derivation* (IEA WEO sector pathways) is not in the
   workbook; the switch is implemented but the factor must be supplied by the analyst.
-- S1/S3 rates ("TO EXTRACT from IEA") remain estimates except CA/AU S1 (official
-  projections, 2026-07-30); the engine accepts them as inputs and, where absent, runs
-  S2-only and marks S1/S3 missing.
+- Public S1/S3 fields remain empty unless a country-specific source is present (CA/AU S1
+  are official projections). Illustrative S1/S3 values exist only in the internal engine
+  validation fixture and are not public assessments.
 - Base-year fleet intensity `I_fleet,seg,c(0)` and segment ratio require IEA transport CO₂ ÷
-  (OICA fleet × VKT), none of which are in the workbook → supplied via inputs/fixtures.
+  (OICA fleet × VKT), none of which are in the workbook. Public company reports are
+  withheld until these fields are sourced; only the internal validation fixture supplies
+  illustrative values.

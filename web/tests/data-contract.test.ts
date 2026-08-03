@@ -5,107 +5,147 @@ import {
   COHORT_KEYS,
   DATA_QUALITY_KEYS,
   FIRM_RESULT_KEYS,
-  getCalculatorFirm,
   getContract,
+  getBenchmarks,
+  getCompanyMetrics,
   getCountries,
-  getFirmResult,
   getFirms,
   getMeta,
-  SCENARIOS,
+  getSectors,
+  getSources,
 } from "../lib/data";
 
 test("published contract.json matches the TypeScript data contract", () => {
-  // contract.json is generated from the Python emitter (to_json_dict); the *_KEYS
-  // arrays are compile-time-bound to the TS interfaces. This is the single test
-  // that fails when either side renames a field.
   const contract = getContract();
   assert.deepEqual(contract.firm_result, [...FIRM_RESULT_KEYS]);
   assert.deepEqual(contract.cohort, [...COHORT_KEYS]);
   assert.deepEqual(contract.data_quality, [...DATA_QUALITY_KEYS]);
+  assert.ok(!contract.firm_result.includes("by_year"));
 });
 
-test("country views use the canonical contract and exclude illustrative firms", () => {
+test("all source-backed countries remain visible without company reports", () => {
   const views = getCountryViews();
-  assert.ok(views.length > 0);
-  assert.ok(views.every((view) => view.firms.every((firm) => firm.slug !== "referenceco")));
+  assert.equal(views.length, 11);
+  assert.ok(views.every((view) => view.firms.length === 0));
 
   const kr = views.find((view) => view.code === "KR");
   assert.ok(kr);
-  assert.match(kr.source ?? "", /UNFCCC KR/);
-  // KR carries collected sectoral S2 rates — the pro-rata identity is broken there,
-  // but AU still runs on the economy-wide pro-rata rate and keeps the warning.
+  assert.match(kr.source ?? "", /UNFCCC.*KR/);
   assert.ok(!kr.warnings.some((warning) => warning.includes("PRORATA_IDENTITY")));
+
   const au = views.find((view) => view.code === "AU");
   assert.ok(au);
   assert.ok(au.warnings.some((warning) => warning.includes("PRORATA_IDENTITY")));
 });
 
-test("country rows preserve scenario-level directional suppression", () => {
-  // The country regrouping must carry each scenario's directional_only flag
-  // through unchanged from the firm report it came from.
-  const rows = getCountryViews().flatMap((view) => view.firms);
-  assert.ok(rows.length > 0);
-  for (const row of rows) {
-    const report = getFirmResult(row.slug);
-    for (const scenario of SCENARIOS) {
-      if (report.cohorts[scenario]) {
-        assert.equal(row.directionalOnly[scenario], report.cohorts[scenario].directional_only);
-      }
-    }
+test("vehicle-fleet estimates are absent from the public country contract", () => {
+  for (const country of getCountries()) {
+    assert.equal("fleet_intensity_base" in country, false);
+    assert.equal("vkt" in country, false);
   }
 });
 
-test("published provenance is content-addressed and coverage is explicit", () => {
+test("sector registry, Toyota, JERA, and KOEN records share one evidence contract", () => {
+  const sectors = getSectors();
+  const metrics = getCompanyMetrics();
+  const benchmarks = getBenchmarks();
+  const sources = getSources();
+
+  assert.deepEqual(
+    sectors.map((sector) => sector.sector_id),
+    ["automotive", "power", "shipping", "steel", "petrochemicals"],
+  );
+  assert.equal(metrics.length, 201);
+  assert.equal(benchmarks.length, 8);
+  assert.equal(sources.length, 9);
+
+  const euIntensity = metrics.find(
+    (metric) =>
+      metric.company_id === "toyota" &&
+      metric.geography === "EU27" &&
+      metric.metric_id === "new_vehicle_tailpipe_intensity",
+  );
+  assert.ok(euIntensity);
+  assert.ok(Math.abs(euIntensity.value - 107.07329255505938) < 1e-12);
+  assert.equal(euIntensity.coverage.mapped_activity, 803_042);
+  assert.equal(euIntensity.coverage.reported_activity, 803_094);
+  const direct = benchmarks.filter((row) => row.comparison_mode === "direct");
+  const contextual = benchmarks.filter((row) => row.comparison_mode === "contextual");
+  assert.deepEqual(direct.map((row) => row.target_year), [2025, 2030]);
+  assert.equal(contextual.length, 6);
+  assert.ok(contextual.every((row) => row.relation === "context_only"));
+
+  const jeraIntensity = metrics.find(
+    (metric) =>
+      metric.company_id === "jera" &&
+      metric.geography === "JP" &&
+      metric.metric_id === "generation_emissions_intensity",
+  );
+  assert.ok(jeraIntensity);
+  assert.equal(jeraIntensity.value, 520);
+  assert.equal(jeraIntensity.coverage.reported_activity, 242_000_000);
+
+  const koenMetrics = metrics.filter((metric) => metric.company_id === "koen");
+  assert.deepEqual(
+    koenMetrics.map((metric) => metric.metric_id).sort(),
+    ["reported_generation", "scope1_emissions", "scope2_emissions"],
+  );
+  assert.ok(!koenMetrics.some((metric) => metric.metric_id === "generation_emissions_intensity"));
+
+  const automotiveSerialized = JSON.stringify(
+    metrics.filter((metric) => metric.sector === "automotive"),
+  ).toLowerCase();
+  assert.ok(!automotiveSerialized.includes("lifetime"));
+  assert.ok(!automotiveSerialized.includes("vkt"));
+  assert.ok(!automotiveSerialized.includes("tco2"));
+  assert.deepEqual(
+    koenMetrics.filter((metric) => metric.metric_id.endsWith("_emissions")).map((metric) => metric.unit),
+    ["tCO2e", "tCO2e"],
+  );
+});
+
+test("no company assessment is runnable until the evidence gate is met", () => {
+  const firms = getFirms();
+  assert.ok(firms.length > 0);
+  assert.ok(firms.every((firm) => !firm.runnable));
+  assert.ok(firms.every((firm) => !firm.illustrative));
+  const toyota = firms.find((item) => item.slug === "toyota");
+  assert.ok(toyota);
+  assert.equal(toyota.alignment_available, true);
+  assert.match(toyota.note ?? "", /alignment snapshot available.*legacy lifetime/s);
+
+  const hyundai = firms.find((item) => item.slug === "hyundai");
+  assert.ok(hyundai);
+  assert.equal(hyundai.alignment_available, false);
+  assert.match(hyundai.note ?? "", /Estimated vehicle mix.*removed/);
+
+  const jera = firms.find((item) => item.slug === "jera");
+  assert.ok(jera);
+  assert.equal(jera.alignment_available, true);
+  assert.match(jera.note ?? "", /context only.*boundaries do not match/s);
+
+  const koen = firms.find((item) => item.slug === "koen");
+  assert.ok(koen);
+  assert.equal(koen.alignment_available, true);
+  assert.match(koen.note ?? "", /plant-total reconciliation.*prevent/s);
+});
+
+test("published provenance is content-addressed and unsourced support stays null", () => {
   const meta = getMeta();
   assert.match(meta.engine_source_sha256, /^[a-f0-9]{64}$/);
   assert.match(meta.dataset_sha256, /^[a-f0-9]{64}$/);
+  assert.equal(meta.alignment_contract.company_metrics, 201);
+  assert.equal(meta.alignment_contract.direct_benchmarks, 2);
+  assert.equal(meta.alignment_contract.contextual_benchmarks, 6);
+  assert.equal(Object.keys(meta.alignment_inputs_sha256).length, 6);
   assert.equal("build_date" in meta, false);
   assert.equal("engine_git_sha" in meta, false);
-
-  const covered = getFirms().filter((firm) => firm.coverage_ratio !== undefined);
-  assert.ok(covered.length > 0);
-  for (const firm of covered) {
-    assert.ok(firm.coverage_ratio! > 0 && firm.coverage_ratio! < 1);
-    assert.ok(firm.coverage_source);
-    assert.equal(getFirmResult(firm.slug).provenance.dataset_sha256, meta.dataset_sha256);
-  }
-});
-
-test("effective calculator inputs agree with the published country contract", () => {
-  // No frozen engine floats: assert linkage instead — each firm's effective
-  // country inputs must equal the canonical countries.json values.
-  const countries = new Map(getCountries().map((country) => [country.code, country]));
-  const firms = getFirms().filter((firm) => firm.runnable && !firm.illustrative);
-  assert.ok(firms.length > 0);
-  for (const firm of firms) {
-    const inputs = getFirmResult(firm.slug).inputs?.countries as Record<
-      string,
-      { r_fleet: Record<string, number>; r_power: Record<string, number> }
-    >;
-    assert.ok(inputs);
-    for (const [code, country] of Object.entries(inputs)) {
-      const canonical = countries.get(code);
-      assert.ok(canonical, `countries.json missing ${code}`);
-      assert.deepEqual(country.r_fleet, canonical.r_fleet);
-      assert.deepEqual(country.r_power, canonical.r_power);
-    }
-  }
-});
-
-test("support contract is published and covers every country with a vkt", () => {
-  const support = getMeta().support_contract;
-  assert.ok(support.lifetime_T > 0);
-  assert.ok(Object.keys(support.vkt).length > 0);
-  for (const country of getCountries()) {
-    if (country.vkt != null) {
-      assert.equal(support.vkt[country.code], country.vkt);
-    }
-  }
-});
-
-test("calculator defaults to a real assessment but still permits an explicit validation case", () => {
-  const fallback = getCalculatorFirm();
-  assert.equal(fallback.illustrative, undefined);
-  assert.equal(fallback.runnable, true);
-  assert.equal(getCalculatorFirm("referenceco").illustrative, true);
+  assert.equal(meta.support_contract.lifetime_T, null);
+  assert.equal(meta.support_contract.lifetime_sens, null);
+  assert.equal(meta.support_contract.uf_band, null);
+  assert.equal(meta.support_contract.realworld_range, null);
+  assert.deepEqual(meta.support_contract.vkt, {});
+  assert.ok(
+    meta.collection_status.missing_inputs.includes("Registration_Vcv: no volume units collected"),
+  );
 });

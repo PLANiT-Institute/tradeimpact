@@ -1,4 +1,13 @@
-# TI Framework — Calculation Engine (Automotive)
+# TI Framework — alignment contract and calculation research engine
+
+The public product API is `ti_framework.alignment`: a sector-neutral, evidence-first contract that
+compares observed company metrics with official targets only when sector, metric, geography, and
+unit match. It currently registers automotive, power, shipping, steel, and petrochemicals; see
+[`../docs/PRODUCT_CONTRACT.md`](../docs/PRODUCT_CONTRACT.md).
+
+The remainder of this document describes the original automotive lifetime calculation engine. It
+is retained for methodology research and arithmetic validation, but no estimated company result or
+reconstructed historical cohort is published from it.
 
 Open-source calculation engine for the **Trade Impact (TI) Framework**, a firm-level metric
 that scores whether a company's products help or hinder each operating country's NDC-committed

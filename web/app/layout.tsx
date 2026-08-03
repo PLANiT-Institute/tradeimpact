@@ -22,7 +22,7 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Trade Impact Framework — PLANiT Institute",
   description:
-    "How represented product sales contribute to or lock in emissions against assessed operating countries' NDC commitments.",
+    "Evidence-backed company activity and market climate-target alignment across sectors.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -36,16 +36,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <img className="brand-logo" src="/planit-logo-white.png" alt="PLANiT Institute" height={22} />
               <span className="brand-lockup">
                 Trade Impact
-                <small>product impact on NDC delivery</small>
+                <small>company activity × market targets</small>
               </span>
             </Link>
             <nav className="topnav" aria-label="Primary navigation">
               <Link href="/">Story</Link>
-              <Link href="/#assessments">Assessments</Link>
+              <Link href="/analysis/toyota">Analysis</Link>
               <Link href="/#markets">Markets</Link>
-              <Link href="/korea">Korea</Link>
+              <Link href="/#sectors">Sectors</Link>
               <Link href="/#method">Method</Link>
-              <Link href="/calculator" className="nav-cta">Trade Impact Calculator</Link>
+              <Link href="/calculator" className="nav-cta">Research calculator</Link>
             </nav>
           </header>
           {children}
@@ -56,12 +56,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <img src="/planit-logo-white.png" alt="PLANiT Institute" height={20} />
               </a>
               <strong>Trade Impact</strong>
-              <p>Product-level impact on national NDC delivery.</p>
+              <p>Company activity mapped to comparable market climate targets.</p>
             </div>
             <p>
-              TI is a separate additional disclosure alongside Scope 3 Category 11 — never
-              netted against it. All results report the full S1/S2/S3 scenario triplet.
-              Published under GNU GPL v3 · © 2026 PLANiT Institute.
+              Direct arithmetic is published only when sector, metric definition, geography,
+              and unit match. Contextual pathways remain context. Published under GNU GPL v3 ·
+              © 2026 PLANiT Institute.
             </p>
           </footer>
         </div>

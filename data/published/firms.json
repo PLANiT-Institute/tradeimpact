@@ -1,68 +1,30 @@
 [
   {
-    "cohort_year": 2024,
-    "country": "—",
-    "illustrative": true,
-    "name": "ReferenceCo",
-    "netzero": null,
-    "note": "Committed validation fixture with illustrative parameters (NOTES.md D4). Demonstrates the full report until real-firm data is collected.",
-    "project": "TI",
-    "runnable": true,
-    "sector": "Automotive",
-    "slug": "referenceco"
-  },
-  {
-    "assessed_units": 7539187,
-    "basis": "estimated",
-    "cohort_year": 2024,
+    "alignment_available": true,
     "country": "Japan",
-    "coverage_ratio": 0.7420459645669292,
-    "coverage_scope": "Toyota + Lexus global 2024 sales; fixture uses selected Toyota/Lexus market mixes",
-    "coverage_source": "https://global.toyota/pages/fact-data/fact-data_001_06_en.pdf",
     "name": "Toyota",
-    "netzero": {
-      "announced": "2015-10",
-      "interim": "New-vehicle gCO2e/km -33.3% by 2030 and >50% by 2035 vs 2019 (Scope 3 cat.11) · BEV 1.5M/yr by 2026, 3.5M/yr by 2030 · all plants carbon neutral by 2035",
-      "scope": "Life-cycle carbon neutrality by 2050 (Toyota Environmental Challenge 2050); Scope 1+2 -68% by 2035 vs 2019 (SBTi-validated)",
-      "source": "https://global.toyota/en/newsroom/corporate/39013233.html",
-      "target_year": 2050
-    },
-    "note": "Estimated-input case: NDC rates and grid intensities are collected (Tier A/B); volumes, vehicle parameters and S1/S3 rates are rough documented estimates (data-pipeline/ESTIMATES.md, Tier B/C). Replace with collected data as it lands.",
+    "note": "Evidence-first alignment snapshot available for Toyota-brand 2024 EU27 passenger-car registrations. The legacy lifetime greenhouse-gas assessment remains withheld.",
     "project": "TI",
-    "reported_units": 10160000,
-    "runnable": true,
+    "runnable": false,
     "sector": "Automotive",
     "selection_criteria": "Global sales volume; data availability; contrasting powertrain mix (ICE-heavy vs BEV-heavy)",
     "slug": "toyota",
     "status": "Candidate (e.g.)"
   },
   {
-    "assessed_units": 2998956,
-    "basis": "estimated",
-    "cohort_year": 2024,
+    "alignment_available": false,
     "country": "Korea",
-    "coverage_ratio": 0.7240428985414873,
-    "coverage_scope": "Hyundai Motor global 2024 wholesale sales; fixture covers selected operating markets",
-    "coverage_source": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000000897",
     "name": "Hyundai",
-    "netzero": {
-      "announced": "2021-09",
-      "interim": "30% ZEV share of global sales by 2030 · 2M BEV/yr by 2030 · ICE sales end in Europe from 2035 · RE100",
-      "scope": "Company-wide carbon neutrality across the value chain; interim -75% emissions vs 2019 by 2040",
-      "source": "https://www.hyundainews.com/en-us/releases/3390",
-      "target_year": 2045
-    },
-    "note": "Estimated-input case: NDC rates and grid intensities are collected (Tier A/B); volumes, vehicle parameters and S1/S3 rates are rough documented estimates (data-pipeline/ESTIMATES.md, Tier B/C). Replace with collected data as it lands.",
+    "note": "Company assessment withheld: source-backed country/year/model/powertrain registration volumes and the remaining calculation inputs have not been collected. Estimated vehicle mix and reconstructed historical cohorts were removed on 2026-08-03.",
     "project": "TI",
-    "reported_units": 4141959,
-    "runnable": true,
+    "runnable": false,
     "sector": "Automotive",
     "selection_criteria": "Global sales volume; data availability; contrasting powertrain mix (ICE-heavy vs BEV-heavy)",
     "slug": "hyundai",
     "status": "Candidate (e.g.)"
   },
   {
-    "basis": null,
+    "alignment_available": false,
     "country": "Japan",
     "name": "Kawasaki Heavy Industries",
     "note": null,
@@ -74,7 +36,7 @@
     "status": "Candidate (e.g.)"
   },
   {
-    "basis": null,
+    "alignment_available": false,
     "country": "Japan",
     "name": "Mitsui",
     "note": null,
@@ -86,7 +48,7 @@
     "status": "Candidate (e.g.)"
   },
   {
-    "basis": null,
+    "alignment_available": false,
     "country": "Korea",
     "name": "HD Hyundai Heavy Industries",
     "note": null,
@@ -98,7 +60,7 @@
     "status": "Candidate (e.g.)"
   },
   {
-    "basis": null,
+    "alignment_available": false,
     "country": "Korea",
     "name": "Samsung Heavy Industries",
     "note": null,
@@ -110,10 +72,10 @@
     "status": "Candidate (e.g.)"
   },
   {
-    "basis": null,
+    "alignment_available": true,
     "country": "Japan",
     "name": "JERA",
-    "note": null,
+    "note": "Evidence-first FY2024 Japan power snapshot available from independently assured company data. National 2030/2040 targets are context only because their boundaries do not match.",
     "project": "TI",
     "runnable": false,
     "sector": "Power",
@@ -122,7 +84,7 @@
     "status": "Candidate (e.g.)"
   },
   {
-    "basis": null,
+    "alignment_available": false,
     "country": "Japan",
     "name": "TEPCO",
     "note": null,
@@ -134,7 +96,7 @@
     "status": "Candidate (e.g.)"
   },
   {
-    "basis": null,
+    "alignment_available": false,
     "country": "Korea",
     "name": "KEPCO",
     "note": null,
@@ -146,7 +108,7 @@
     "status": "Candidate (e.g.)"
   },
   {
-    "basis": null,
+    "alignment_available": false,
     "country": "Korea",
     "name": "Korea Southern Power (KOSPO)",
     "note": null,
@@ -158,6 +120,7 @@
     "status": "Candidate (e.g.)"
   },
   {
+    "alignment_available": false,
     "country": "Korea",
     "name": "POSCO (POSCO Holdings)",
     "project": "CAP",
@@ -167,6 +130,7 @@
     "ticker": "KRX 005490"
   },
   {
+    "alignment_available": false,
     "country": "Korea",
     "name": "Hyundai Steel",
     "project": "CAP",
@@ -176,6 +140,7 @@
     "ticker": "KRX 004020"
   },
   {
+    "alignment_available": false,
     "country": "Japan",
     "name": "Nippon Steel",
     "project": "CAP",
@@ -185,6 +150,7 @@
     "ticker": "TSE 5401"
   },
   {
+    "alignment_available": false,
     "country": "Japan",
     "name": "JFE Steel (JFE Holdings)",
     "project": "CAP",
@@ -194,6 +160,7 @@
     "ticker": "TSE 5411"
   },
   {
+    "alignment_available": false,
     "country": "Korea",
     "name": "LG Chem",
     "project": "CAP",
@@ -203,6 +170,7 @@
     "ticker": "KRX 051910"
   },
   {
+    "alignment_available": false,
     "country": "Korea",
     "name": "Lotte Chemical",
     "project": "CAP",
@@ -212,6 +180,7 @@
     "ticker": "KRX 011170"
   },
   {
+    "alignment_available": false,
     "country": "Japan",
     "name": "Mitsubishi Chemical Group",
     "project": "CAP",
@@ -221,6 +190,7 @@
     "ticker": "TSE 4188"
   },
   {
+    "alignment_available": false,
     "country": "Japan",
     "name": "Sumitomo Chemical",
     "project": "CAP",
@@ -230,6 +200,7 @@
     "ticker": "TSE 4005"
   },
   {
+    "alignment_available": false,
     "country": "Japan",
     "name": "Mitsui Chemicals",
     "project": "CAP",
@@ -237,5 +208,17 @@
     "sector": "Petrochemical",
     "slug": "mitsui-chemicals",
     "ticker": "TSE 4183"
+  },
+  {
+    "alignment_available": true,
+    "country": "Korea",
+    "name": "Korea South-East Power (KOEN)",
+    "note": "Evidence-first 2024 Korea power snapshot available from KOEN's official ESG table. Generation basis, plant-total reconciliation, and assurance limitations prevent an emissions-intensity or target-gap calculation.",
+    "project": "TI",
+    "runnable": false,
+    "sector": "Power",
+    "selection_criteria": "Second power company and second operating geography with official generation and plant-level emissions disclosure",
+    "slug": "koen",
+    "status": "Evidence pilot"
   }
 ]
