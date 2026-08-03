@@ -1,0 +1,259 @@
+[
+  {
+    "activity_basis": "new vehicle registrations by vehicle class, model, and powertrain",
+    "boundary_risks": [
+      "manufacturer group versus brand",
+      "sales versus registrations",
+      "policy-specific PHEV and FCEV eligibility"
+    ],
+    "contextual_pathways": [
+      "road transport GHG pathway",
+      "transport NDC pathway"
+    ],
+    "descriptive_metrics": [
+      {
+        "description": "Observed registrations for the exact brand, geography, and reporting year.",
+        "label": "New passenger-car registrations",
+        "metric_id": "new_vehicle_registrations",
+        "unit": "registrations"
+      },
+      {
+        "description": "Registration share for one disclosed powertrain classification.",
+        "label": "Powertrain sales share",
+        "metric_id": "powertrain_sales_share",
+        "unit": "fraction"
+      }
+    ],
+    "direct_metrics": [
+      {
+        "description": "Registration-weighted share using each policy's eligibility definition.",
+        "label": "Policy-eligible ZEV sales share",
+        "metric_id": "zev_sales_share",
+        "unit": "fraction"
+      },
+      {
+        "description": "Registration-weighted certified value within one test regime and vehicle class.",
+        "label": "New-vehicle certified tailpipe intensity",
+        "metric_id": "new_vehicle_tailpipe_intensity",
+        "unit": "gCO2/km"
+      }
+    ],
+    "implementation_status": "pilot",
+    "name": "Automotive",
+    "operating_boundary": "vehicle registration or use country",
+    "required_dimensions": [
+      "company boundary",
+      "operating geography",
+      "reporting year",
+      "activity volume and unit",
+      "source and evidence class",
+      "mapping status",
+      "vehicle class",
+      "model",
+      "powertrain",
+      "certification regime"
+    ],
+    "sector_id": "automotive"
+  },
+  {
+    "activity_basis": "net generation by plant, technology, and fuel",
+    "boundary_risks": [
+      "generation versus consumption country",
+      "cross-border electricity trade",
+      "company average masking coal and zero-carbon assets"
+    ],
+    "contextual_pathways": [
+      "power-sector emissions pathway",
+      "economy-wide NDC"
+    ],
+    "descriptive_metrics": [
+      {
+        "description": "Observed net generation; plant and technology decomposition retained when disclosed.",
+        "label": "Net generation",
+        "metric_id": "net_generation",
+        "unit": "MWh"
+      },
+      {
+        "description": "Observed generation where the source does not identify a gross or net basis.",
+        "label": "Reported generation",
+        "metric_id": "reported_generation",
+        "unit": "MWh"
+      },
+      {
+        "description": "Company-reported direct emissions retained without denominator conversion.",
+        "label": "Reported Scope 1 emissions",
+        "metric_id": "scope1_emissions",
+        "unit": "tCO2e"
+      },
+      {
+        "description": "Company-reported indirect purchased-energy emissions on its stated method.",
+        "label": "Reported Scope 2 emissions",
+        "metric_id": "scope2_emissions",
+        "unit": "tCO2e"
+      }
+    ],
+    "direct_metrics": [
+      {
+        "description": "Reported or derived direct intensity on one declared net-generation boundary.",
+        "label": "Generation emissions intensity",
+        "metric_id": "generation_emissions_intensity",
+        "unit": "kgCO2e/MWh"
+      },
+      {
+        "description": "Share calculated with the applicable policy's technology eligibility rules.",
+        "label": "Policy-defined clean generation share",
+        "metric_id": "clean_generation_share",
+        "unit": "fraction"
+      }
+    ],
+    "implementation_status": "pilot",
+    "name": "Power generation",
+    "operating_boundary": "generation country and connected grid; consumption attribution separate",
+    "required_dimensions": [
+      "company boundary",
+      "operating geography",
+      "reporting year",
+      "activity volume and unit",
+      "source and evidence class",
+      "mapping status",
+      "plant",
+      "generation technology",
+      "fuel",
+      "net generation MWh"
+    ],
+    "sector_id": "power"
+  },
+  {
+    "activity_basis": "transport work by vessel type and fuel",
+    "boundary_risks": [
+      "flag state versus voyage geography",
+      "tank-to-wake versus well-to-wake",
+      "ship-type-specific CII denominators"
+    ],
+    "contextual_pathways": [
+      "IMO GHG strategy",
+      "served-country transport pathways"
+    ],
+    "descriptive_metrics": [
+      {
+        "description": "Observed cargo-mass transport work within the stated voyage boundary.",
+        "label": "Shipping transport work",
+        "metric_id": "shipping_transport_work",
+        "unit": "tonne-nm"
+      }
+    ],
+    "direct_metrics": [
+      {
+        "description": "Cargo-mass transport intensity only where vessel coverage and accounting boundary match.",
+        "label": "Shipping carbon intensity",
+        "metric_id": "shipping_carbon_intensity",
+        "unit": "gCO2e/tonne-nm"
+      }
+    ],
+    "implementation_status": "planned",
+    "name": "Commercial shipping",
+    "operating_boundary": "voyage and IMO jurisdiction; flag state reported separately",
+    "required_dimensions": [
+      "company boundary",
+      "operating geography",
+      "reporting year",
+      "activity volume and unit",
+      "source and evidence class",
+      "mapping status",
+      "vessel",
+      "vessel type",
+      "fuel",
+      "voyage",
+      "transport work"
+    ],
+    "sector_id": "shipping"
+  },
+  {
+    "activity_basis": "crude steel production by plant and production route",
+    "boundary_risks": [
+      "crude steel versus finished product denominator",
+      "Scope 1 versus Scope 1+2",
+      "scrap allocation and process-route comparability"
+    ],
+    "contextual_pathways": [
+      "industry or steel pathway",
+      "economy-wide NDC"
+    ],
+    "descriptive_metrics": [
+      {
+        "description": "Observed plant production retaining production-route detail.",
+        "label": "Crude steel production",
+        "metric_id": "crude_steel_production",
+        "unit": "t_crude_steel"
+      }
+    ],
+    "direct_metrics": [
+      {
+        "description": "Plant- and route-specific intensity on one declared emissions boundary.",
+        "label": "Crude steel emissions intensity",
+        "metric_id": "steel_emissions_intensity",
+        "unit": "tCO2e/t_crude_steel"
+      }
+    ],
+    "implementation_status": "planned",
+    "name": "Steel",
+    "operating_boundary": "production plant country",
+    "required_dimensions": [
+      "company boundary",
+      "operating geography",
+      "reporting year",
+      "activity volume and unit",
+      "source and evidence class",
+      "mapping status",
+      "plant",
+      "production route",
+      "crude steel tonnes",
+      "emissions boundary"
+    ],
+    "sector_id": "steel"
+  },
+  {
+    "activity_basis": "production by plant and chemical product",
+    "boundary_risks": [
+      "non-comparable chemical products",
+      "feedstock carbon versus energy emissions",
+      "joint-product allocation"
+    ],
+    "contextual_pathways": [
+      "chemicals or industry pathway",
+      "economy-wide NDC"
+    ],
+    "descriptive_metrics": [
+      {
+        "description": "Observed output for one named chemical product and plant boundary.",
+        "label": "Chemical product output",
+        "metric_id": "chemical_production",
+        "unit": "t_product"
+      }
+    ],
+    "direct_metrics": [
+      {
+        "description": "Intensity is comparable only within the same product and emissions boundary.",
+        "label": "Product-specific production intensity",
+        "metric_id": "petrochemical_emissions_intensity",
+        "unit": "tCO2e/t_product"
+      }
+    ],
+    "implementation_status": "planned",
+    "name": "Petrochemicals",
+    "operating_boundary": "production plant country",
+    "required_dimensions": [
+      "company boundary",
+      "operating geography",
+      "reporting year",
+      "activity volume and unit",
+      "source and evidence class",
+      "mapping status",
+      "plant",
+      "chemical product",
+      "production tonnes",
+      "emissions boundary"
+    ],
+    "sector_id": "petrochemicals"
+  }
+]

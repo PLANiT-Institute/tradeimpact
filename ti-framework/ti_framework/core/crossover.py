@@ -5,7 +5,7 @@ Closed form where the gap is linear-in-exponentials:
   * ICE/HEV (constant E_prod vs exponential benchmark):
         t* = ln(E_prod / (I0 * D)) / ln(1 - r_fleet)
   * BEV (two exponentials):
-        t* = ln(I0 / (eta * G0)) / ln((1 - r_power) / (1 - r_fleet))
+        t* = ln((eta * G0) / I0) / ln((1 - r_fleet) / (1 - r_power))
 Numeric bisection fallback for the general case (e.g. PHEV: constant + exponential mix).
 """
 
@@ -53,7 +53,8 @@ def crossover_bev(
         return None, "degenerate decline rate"
     if abs(a - b) < 1e-12:
         return None, "r_fleet == r_power: parallel trajectories, no finite crossover"
-    t_star = math.log(intensity_base / e_prod0) / math.log(a / b)
+    # I0*a^t = E0*b^t  =>  (a/b)^t = E0/I0.
+    t_star = math.log(e_prod0 / intensity_base) / math.log(a / b)
     if t_star < 0:
         return None, "crossover before sale year"
     return t_star, None

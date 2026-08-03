@@ -29,6 +29,17 @@ jobs:
       - uses: actions/checkout@v4
       - run: python3 scripts/check_sync.py
 
+  mcp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -e "ti-framework[dev]"
+      - run: pip install -e "mcp-server[dev]"
+      - run: ruff check mcp-server ti-framework/ti_framework/alignment
+      - run: pytest -q mcp-server/tests ti-framework/tests/test_alignment.py ti-framework/tests/test_alignment_service.py
+
   dataset-and-web:
     runs-on: ubuntu-latest
     steps:

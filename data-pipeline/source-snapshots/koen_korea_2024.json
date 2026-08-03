@@ -1,0 +1,44 @@
+{
+  "accessed_date": "2026-08-03",
+  "adapter_version": "koen-korea-2024-v1",
+  "company": {
+    "company_id": "koen",
+    "generation_basis": "reported generation amount; gross/net basis is not stated",
+    "generation_gwh": 39660,
+    "geography": "KR",
+    "observation_year": 2024,
+    "reporting_boundary": "KOEN ESG data center; general company data are labelled consolidated, while emissions are shown for headquarters and five Korean plants",
+    "scope1_plant_tco2e": {
+      "본사": 28,
+      "분당": 1179273,
+      "삼천포": 8382398,
+      "여수": 2666632,
+      "영동": 35973,
+      "영흥": 18344281
+    },
+    "scope1_reported_total_tco2e": 30606585,
+    "scope2_plant_tco2e": {
+      "본사": 2829,
+      "분당": 8528,
+      "삼천포": 46542,
+      "여수": 11220,
+      "영동": 14239,
+      "영흥": 20663
+    },
+    "scope2_reported_total_tco2e": 103752,
+    "source_page_sha256": "5b583126db098aa7ed8261457350f0cc530d402ccb4e448aa4c57323c2cec9a4",
+    "source_url": "https://www.koenergy.kr/kosep/hw/fr/st/sthw41/main.do?menuCd=FN060101"
+  },
+  "content_sha256": "c8768cbc0d9bc0657443ea8b593ccf96eb1f1b4111ea70f19fc1ab59e27ffcfc",
+  "policy": {
+    "carbon_free_generation_share_2030": 0.53,
+    "carbon_free_generation_share_2038": 0.707,
+    "notice_date": "2025-02-21",
+    "notice_page_sha256": "3d778abcf289bcad6e6d34f9746913f7dcf1801001ef1ccd6578d2b9f3b1315f",
+    "notice_url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view",
+    "plan_name": "Eleventh Basic Plan for Long-Term Electricity Supply and Demand (2024-2038)",
+    "renewable_generation_share_2030": 0.188,
+    "transition_sector_emissions_2030_mtco2e": 145.9,
+    "transition_sector_emissions_2038_mtco2e": 83.1
+  }
+}

@@ -127,10 +127,9 @@ def validate_payload(payload: object) -> dict:
         powertrain = placement.get("powertrain")
         if powertrain not in {"ICE", "HEV", "BEV", "PHEV"}:
             raise ValueError(f"{path}.powertrain is invalid")
-        if placement.get("units") is not None:
-            _finite_number(
-                placement["units"], f"{path}.units", minimum=0, maximum=100_000_000
-            )
+        _finite_number(
+            placement.get("units"), f"{path}.units", minimum=0, maximum=100_000_000
+        )
         _validate_optional_numbers(
             placement,
             (

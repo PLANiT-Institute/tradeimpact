@@ -155,6 +155,45 @@ def sector_split_comparison(
     }
 
 
+def sweep_s2_ndc_range(
+    firm: str,
+    cohort_year: int,
+    placements: list[Placement],
+    countries: dict[str, Country],
+    support: SupportParams,
+    config: EngineConfig,
+) -> dict[str, float]:
+    """Compare unconditional S2 rates with published conditional upper bounds.
+
+    Countries without an upper bound retain their central S2 value. This makes the
+    workbook's ``s2_upper`` field an explicit sensitivity input instead of dead data.
+    """
+    central = _total(
+        firm, cohort_year, Scenario.S2, placements, countries, support, config
+    )
+    upper_countries = copy.deepcopy(countries)
+    changed = False
+    for country in upper_countries.values():
+        for rate in (country.r_fleet, country.r_power):
+            if rate.s2_upper is not None:
+                rate.s2 = rate.s2_upper
+                changed = True
+    if not changed:
+        return {"S2_unconditional": central}
+    return {
+        "S2_unconditional": central,
+        "S2_conditional_upper": _total(
+            firm,
+            cohort_year,
+            Scenario.S2,
+            placements,
+            upper_countries,
+            support,
+            config,
+        ),
+    }
+
+
 def monte_carlo(
     firm: str,
     cohort_year: int,
@@ -241,6 +280,9 @@ def run_sensitivity(
             sc.value: _total(firm, cohort_year, sc, placements, countries, support, config)
             for sc in config.scenarios
         },
+        "s2_ndc_range": sweep_s2_ndc_range(
+            firm, cohort_year, placements, countries, support, config
+        ),
     }
     # sector-split side-by-side is always informative given universal pro-rata
     out["sector_split"] = sector_split_comparison(

@@ -26,12 +26,10 @@ export interface CountryFirmRow {
 export interface CountryView {
   code: string;
   name: string;
-  cohortYear: number;
+  cohortYear?: number;
   benchmarkStatus: string;
   flagReason?: string;
   source?: string;
-  /** Annual km driven from the published support contract (null when not supplied). */
-  vkt?: number | null;
   /** Sector benchmark parameters from the canonical country contract. */
   gridIntensity?: number;
   rFleet: Record<string, number>;
@@ -41,7 +39,23 @@ export interface CountryView {
 }
 
 export function getCountryViews(): CountryView[] {
-  const views = new Map<string, CountryView>();
+  const views = new Map<string, CountryView>(
+    getCountries().map((country) => [
+      country.code,
+      {
+        code: country.code,
+        name: country.name,
+        benchmarkStatus: country.status,
+        flagReason: country.flag_reason,
+        source: country.source,
+        gridIntensity: country.grid_intensity,
+        rFleet: country.r_fleet,
+        rPower: country.r_power,
+        warnings: country.warnings ?? [],
+        firms: [],
+      },
+    ]),
+  );
   const countryContract = new Map(getCountries().map((country) => [country.code, country]));
   for (const f of getFirms().filter((x) => x.runnable && !x.illustrative)) {
     const r = getFirmResult(f.slug);
@@ -56,23 +70,8 @@ export function getCountryViews(): CountryView[] {
       const country = countryContract.get(code);
       if (!country) throw new Error(`published country contract missing ${code}`);
       let v = views.get(code);
-      if (!v) {
-        v = {
-          code,
-          name: country.name,
-          cohortYear: r.cohort_year,
-          benchmarkStatus: country.status,
-          flagReason: country.flag_reason,
-          source: country.source,
-          vkt: country.vkt,
-          gridIntensity: country.grid_intensity,
-          rFleet: country.r_fleet,
-          rPower: country.r_power,
-          warnings: country.warnings ?? [],
-          firms: [],
-        };
-        views.set(code, v);
-      }
+      if (!v) throw new Error(`published country view missing ${code}`);
+      v.cohortYear = r.cohort_year;
       const byScenario: Partial<Record<Scenario, number>> = {};
       const directionalOnly: Partial<Record<Scenario, boolean>> = {};
       for (const s of SCENARIOS) {

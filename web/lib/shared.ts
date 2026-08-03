@@ -27,8 +27,9 @@ export interface Firm {
   country: string;
   project: "TI" | "CAP";
   runnable: boolean;
+  alignment_available?: boolean;
   illustrative?: boolean;
-  basis?: "estimated" | null;
+  basis?: "source-backed" | null;
   note?: string;
   status?: string;
   selection_criteria?: string;
@@ -50,17 +51,6 @@ export interface NetZeroPlan {
   interim?: string;
   source?: string;
   announced?: string;
-}
-
-/** One historical cohort year re-run against current benchmarks (volume/mix effect). */
-export interface YearResult {
-  year: number;
-  units: number;
-  units_by_country: Record<string, number>;
-  cohorts: Record<
-    Scenario,
-    Pick<CohortResult, "total_tCO2e" | "direction" | "directional_only" | "by_country">
-  >;
 }
 
 export interface CohortResult {
@@ -108,7 +98,6 @@ export interface FirmResult {
   data_quality: DataQuality;
   sensitivity?: Record<string, unknown>;
   inputs?: Record<string, unknown>;
-  by_year?: { note: string; series: YearResult[] };
   provenance: {
     engine_version: string;
     engine_source_sha256: string;
@@ -123,7 +112,6 @@ export interface PublishedCountry {
   code: string;
   name: string;
   grid_intensity?: number;
-  fleet_intensity_base?: number;
   r_fleet: Record<string, number>;
   r_power: Record<string, number>;
   status: string;
@@ -131,16 +119,89 @@ export interface PublishedCountry {
   source?: string;
   warnings?: string[];
   flag_reason?: string;
-  /** Annual km driven (sector-wide support contract; null when no firm supplied it). */
-  vkt?: number | null;
+}
+
+export interface MetricDefinition {
+  metric_id: string;
+  label: string;
+  unit: string;
+  description: string;
+}
+
+export interface SectorProfile {
+  sector_id: string;
+  name: string;
+  implementation_status: "pilot" | "next" | "planned";
+  operating_boundary: string;
+  activity_basis: string;
+  direct_metrics: MetricDefinition[];
+  descriptive_metrics: MetricDefinition[];
+  contextual_pathways: string[];
+  required_dimensions: string[];
+  boundary_risks: string[];
+}
+
+export interface AlignmentCoverage {
+  mapped_activity: number;
+  reported_activity: number;
+  activity_unit: string;
+  unmatched_records: number;
+}
+
+export interface CompanyMetric {
+  metric_id: string;
+  sector: string;
+  company_id: string;
+  geography: string;
+  observation_year: number;
+  value: number;
+  unit: string;
+  source_ids: string[];
+  evidence_class: string;
+  scope: Record<string, string>;
+  derivation: string;
+  coverage: AlignmentCoverage;
+}
+
+export interface AlignmentBenchmark {
+  benchmark_id: string;
+  metric_id: string;
+  sector: string;
+  geography: string;
+  benchmark_type: string;
+  authority_status: string;
+  comparison_mode: "direct" | "contextual";
+  relation: "at_least" | "at_most" | "context_only";
+  source_ids: string[];
+  value: number | null;
+  value_min?: number | null;
+  value_max?: number | null;
+  unit: string | null;
+  target_year: number | null;
+  applicable_geographies: string[];
+  notes?: string;
+}
+
+export interface SourceRecord {
+  source_id: string;
+  title: string;
+  publisher: string;
+  url: string;
+  evidence_class: string;
+  published_date?: string | null;
+  accessed_date?: string | null;
+  license?: string | null;
+  snapshot_sha256?: string;
+  query_sha256?: string;
+  notes?: string;
 }
 
 /** Sector-wide support parameters every real firm must agree on (see meta.json). */
 export interface SupportContract {
-  lifetime_T: number;
-  lifetime_sens: number;
-  uf_band: number;
-  realworld_range: [number, number];
+  lifetime_T: number | null;
+  lifetime_sens: number | null;
+  uf_band: number | null;
+  realworld_range: [number, number] | null;
   vkt: Record<string, number>;
 }
 
@@ -154,6 +215,15 @@ export interface Meta {
   dataset_sha256: string;
   support_contract: SupportContract;
   target_sources_sha256: Record<string, string>;
+  alignment_inputs_sha256: Record<string, string>;
+  alignment_contract: {
+    version: string;
+    sectors_registered: number;
+    direct_benchmarks: number;
+    contextual_benchmarks: number;
+    company_metrics: number;
+    rule: string;
+  };
   collection_status: {
     countries_loaded: number;
     missing_inputs: string[];
@@ -165,7 +235,6 @@ export interface Meta {
 // interface at compile time; the exhaustiveness asserts below fail the build if a
 // key is added to an interface but not listed here (or vice versa).
 export const FIRM_RESULT_KEYS = [
-  "by_year",
   "cohort_year",
   "cohorts",
   "crossover",

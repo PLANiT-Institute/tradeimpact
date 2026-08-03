@@ -1,0 +1,5367 @@
+[
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 803094.0,
+      "reported_activity": 803094.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "EU27",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 803094.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 803042.0,
+      "reported_activity": 803094.0,
+      "unmatched_records": 52
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "EU27",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 107.07329255505938
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 803094.0,
+      "reported_activity": 803094.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "EU27",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.013550095007558268
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 803094.0,
+      "reported_activity": 803094.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "EU27",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0008591771324402872
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 803094.0,
+      "reported_activity": 803094.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "EU27",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.029773600599680736
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 803094.0,
+      "reported_activity": 803094.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "EU27",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.7606593997713842
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 803094.0,
+      "reported_activity": 803094.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "EU27",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.19515772748893653
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11120.0,
+      "reported_activity": 11120.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "AT",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 11120.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11120.0,
+      "reported_activity": 11120.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "AT",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 115.08408273381295
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11120.0,
+      "reported_activity": 11120.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "AT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.009892086330935251
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11120.0,
+      "reported_activity": 11120.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "AT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 8.992805755395684e-05
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11120.0,
+      "reported_activity": 11120.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "AT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.03156474820143885
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11120.0,
+      "reported_activity": 11120.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "AT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.7882194244604317
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11120.0,
+      "reported_activity": 11120.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "AT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.1702338129496403
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23650.0,
+      "reported_activity": 23650.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "BE",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 23650.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23647.0,
+      "reported_activity": 23650.0,
+      "unmatched_records": 3
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "BE",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 105.02668414598047
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23650.0,
+      "reported_activity": 23650.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "BE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.034503171247357294
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23650.0,
+      "reported_activity": 23650.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "BE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.00016913319238900633
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23650.0,
+      "reported_activity": 23650.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "BE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.03902748414376321
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23650.0,
+      "reported_activity": 23650.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "BE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.7105708245243129
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23650.0,
+      "reported_activity": 23650.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "BE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.21572938689217758
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 5253.0,
+      "reported_activity": 5253.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "BG",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 5253.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 5253.0,
+      "reported_activity": 5253.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "BG",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 112.13896820864268
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 5253.0,
+      "reported_activity": 5253.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "BG",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.00533028745478774
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 5253.0,
+      "reported_activity": 5253.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "BG",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 5253.0,
+      "reported_activity": 5253.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "BG",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.05558728345707215
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 5253.0,
+      "reported_activity": 5253.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "BG",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.7201599086236437
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 5253.0,
+      "reported_activity": 5253.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "BG",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.21892252046449648
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14.0,
+      "reported_activity": 14.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "CY",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 14.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14.0,
+      "reported_activity": 14.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "CY",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 78.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14.0,
+      "reported_activity": 14.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "CY",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14.0,
+      "reported_activity": 14.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "CY",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14.0,
+      "reported_activity": 14.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "CY",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.5
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14.0,
+      "reported_activity": 14.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "CY",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.42857142857142855
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14.0,
+      "reported_activity": 14.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "CY",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.07142857142857142
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 18911.0,
+      "reported_activity": 18911.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "CZ",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 18911.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 18911.0,
+      "reported_activity": 18911.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "CZ",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 125.57812913119349
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 18911.0,
+      "reported_activity": 18911.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "CZ",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.00967690761990376
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 18911.0,
+      "reported_activity": 18911.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "CZ",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 18911.0,
+      "reported_activity": 18911.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "CZ",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.025540690603352546
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 18911.0,
+      "reported_activity": 18911.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "CZ",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.5994923589445297
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 18911.0,
+      "reported_activity": 18911.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "CZ",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.36529004283221406
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 95267.0,
+      "reported_activity": 95267.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "DE",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 95267.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 95218.0,
+      "reported_activity": 95267.0,
+      "unmatched_records": 49
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "DE",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 111.71147262072297
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 95267.0,
+      "reported_activity": 95267.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "DE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.01734073708629431
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 95267.0,
+      "reported_activity": 95267.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "DE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.001553528504099006
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 95267.0,
+      "reported_activity": 95267.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "DE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.019377119044370034
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 95267.0,
+      "reported_activity": 95267.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "DE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.6544028887232725
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 95267.0,
+      "reported_activity": 95267.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "DE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.30732572664196417
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 13187.0,
+      "reported_activity": 13187.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "DK",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 13187.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 13187.0,
+      "reported_activity": 13187.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "DK",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 89.03480700690073
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 13187.0,
+      "reported_activity": 13187.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "DK",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.13960718889815726
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 13187.0,
+      "reported_activity": 13187.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "DK",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 13187.0,
+      "reported_activity": 13187.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "DK",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.03746113596724046
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 13187.0,
+      "reported_activity": 13187.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "DK",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.5904299689087738
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 13187.0,
+      "reported_activity": 13187.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "DK",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.23250170622582847
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4448.0,
+      "reported_activity": 4448.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "EE",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 4448.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4448.0,
+      "reported_activity": 4448.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "EE",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 123.22526978417267
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4448.0,
+      "reported_activity": 4448.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "EE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.01821043165467626
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4448.0,
+      "reported_activity": 4448.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "EE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0011241007194244604
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4448.0,
+      "reported_activity": 4448.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "EE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.03776978417266187
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4448.0,
+      "reported_activity": 4448.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "EE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.7846223021582733
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4448.0,
+      "reported_activity": 4448.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "EE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.15827338129496402
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 100873.0,
+      "reported_activity": 100873.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "ES",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 100873.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 100873.0,
+      "reported_activity": 100873.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "ES",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 109.64632756039772
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 100873.0,
+      "reported_activity": 100873.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "ES",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.005343352532392216
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 100873.0,
+      "reported_activity": 100873.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "ES",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 100873.0,
+      "reported_activity": 100873.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "ES",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.03557939190863759
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 100873.0,
+      "reported_activity": 100873.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "ES",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.8137261705312621
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 100873.0,
+      "reported_activity": 100873.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "ES",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.1453510850277081
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12449.0,
+      "reported_activity": 12449.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "FI",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 12449.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12449.0,
+      "reported_activity": 12449.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "FI",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 94.21391276407743
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12449.0,
+      "reported_activity": 12449.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "FI",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.022732749618443248
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12449.0,
+      "reported_activity": 12449.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "FI",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12449.0,
+      "reported_activity": 12449.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "FI",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.09004739336492891
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12449.0,
+      "reported_activity": 12449.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "FI",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.8622379307574906
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12449.0,
+      "reported_activity": 12449.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "FI",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.02498192625913728
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 134994.0,
+      "reported_activity": 134994.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "FR",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 134994.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 134994.0,
+      "reported_activity": 134994.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "FR",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 100.17171874305525
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 134994.0,
+      "reported_activity": 134994.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "FR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.016408136657925537
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 134994.0,
+      "reported_activity": 134994.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "FR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.003926100419277894
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 134994.0,
+      "reported_activity": 134994.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "FR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.028949434789694358
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 134994.0,
+      "reported_activity": 134994.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "FR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.8086137161651629
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 134994.0,
+      "reported_activity": 134994.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "FR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.14210261196793933
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23480.0,
+      "reported_activity": 23480.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "GR",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 23480.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23480.0,
+      "reported_activity": 23480.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "GR",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 104.65170357751278
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23480.0,
+      "reported_activity": 23480.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "GR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.002214650766609881
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23480.0,
+      "reported_activity": 23480.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "GR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23480.0,
+      "reported_activity": 23480.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "GR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.015417376490630323
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23480.0,
+      "reported_activity": 23480.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "GR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.7591567291311755
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 23480.0,
+      "reported_activity": 23480.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "GR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.22321124361158431
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4224.0,
+      "reported_activity": 4224.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "HR",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 4224.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4224.0,
+      "reported_activity": 4224.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "HR",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 113.98413825757575
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4224.0,
+      "reported_activity": 4224.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "HR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.001893939393939394
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4224.0,
+      "reported_activity": 4224.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "HR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4224.0,
+      "reported_activity": 4224.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "HR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.022964015151515152
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4224.0,
+      "reported_activity": 4224.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "HR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.5785984848484849
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 4224.0,
+      "reported_activity": 4224.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "HR",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.3965435606060606
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14275.0,
+      "reported_activity": 14275.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "HU",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 14275.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14275.0,
+      "reported_activity": 14275.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "HU",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 114.12896672504378
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14275.0,
+      "reported_activity": 14275.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "HU",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.004833625218914186
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14275.0,
+      "reported_activity": 14275.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "HU",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 7.005253940455341e-05
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14275.0,
+      "reported_activity": 14275.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "HU",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.015411558669001752
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14275.0,
+      "reported_activity": 14275.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "HU",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.7660945709281961
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 14275.0,
+      "reported_activity": 14275.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "HU",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.21359019264448337
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 17079.0,
+      "reported_activity": 17079.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "IE",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 17079.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 17079.0,
+      "reported_activity": 17079.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "IE",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 101.95989226535511
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 17079.0,
+      "reported_activity": 17079.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "IE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.023069266350488903
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 17079.0,
+      "reported_activity": 17079.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "IE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 17079.0,
+      "reported_activity": 17079.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "IE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.05439428537970607
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 17079.0,
+      "reported_activity": 17079.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "IE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.8618186076468177
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 17079.0,
+      "reported_activity": 17079.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "IE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.060717840622987296
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 122925.0,
+      "reported_activity": 122925.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "IT",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 122925.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 122925.0,
+      "reported_activity": 122925.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "IT",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 103.56992475086435
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 122925.0,
+      "reported_activity": 122925.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "IT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.002749644091925971
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 122925.0,
+      "reported_activity": 122925.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "IT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 8.135041692088673e-06
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 122925.0,
+      "reported_activity": 122925.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "IT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.021891397193410617
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 122925.0,
+      "reported_activity": 122925.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "IT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.780923327232052
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 122925.0,
+      "reported_activity": 122925.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "IT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.19442749644091925
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 6119.0,
+      "reported_activity": 6119.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "LT",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 6119.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 6119.0,
+      "reported_activity": 6119.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "LT",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 115.54289916653047
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 6119.0,
+      "reported_activity": 6119.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.005719888870730511
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 6119.0,
+      "reported_activity": 6119.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 6119.0,
+      "reported_activity": 6119.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.061121098218663183
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 6119.0,
+      "reported_activity": 6119.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.8078117339434548
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 6119.0,
+      "reported_activity": 6119.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.1253472789671515
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1210.0,
+      "reported_activity": 1210.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "LU",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 1210.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1210.0,
+      "reported_activity": 1210.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "LU",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 117.45867768595042
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1210.0,
+      "reported_activity": 1210.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LU",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.017355371900826446
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1210.0,
+      "reported_activity": 1210.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LU",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1210.0,
+      "reported_activity": 1210.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LU",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.021487603305785124
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1210.0,
+      "reported_activity": 1210.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LU",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.6628099173553719
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1210.0,
+      "reported_activity": 1210.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LU",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.2983471074380165
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 2838.0,
+      "reported_activity": 2838.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "LV",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 2838.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 2838.0,
+      "reported_activity": 2838.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "LV",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 121.70930232558139
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 2838.0,
+      "reported_activity": 2838.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LV",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.013037350246652573
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 2838.0,
+      "reported_activity": 2838.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LV",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 2838.0,
+      "reported_activity": 2838.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LV",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.030303030303030304
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 2838.0,
+      "reported_activity": 2838.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LV",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.806553911205074
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 2838.0,
+      "reported_activity": 2838.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "LV",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.15010570824524314
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1054.0,
+      "reported_activity": 1054.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "MT",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 1054.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1054.0,
+      "reported_activity": 1054.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "MT",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 103.99620493358634
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1054.0,
+      "reported_activity": 1054.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "MT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1054.0,
+      "reported_activity": 1054.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "MT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1054.0,
+      "reported_activity": 1054.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "MT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.008538899430740038
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1054.0,
+      "reported_activity": 1054.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "MT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.6110056925996205
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 1054.0,
+      "reported_activity": 1054.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "MT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.38045540796963945
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 29853.0,
+      "reported_activity": 29853.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "NL",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 29853.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 29853.0,
+      "reported_activity": 29853.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "NL",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 97.95434294710749
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 29853.0,
+      "reported_activity": 29853.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "NL",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.03848859411114461
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 29853.0,
+      "reported_activity": 29853.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "NL",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 29853.0,
+      "reported_activity": 29853.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "NL",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.040967406960774465
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 29853.0,
+      "reported_activity": 29853.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "NL",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.6457977422704586
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 29853.0,
+      "reported_activity": 29853.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "NL",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.27474625665762237
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 103174.0,
+      "reported_activity": 103174.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "PL",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 103174.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 103174.0,
+      "reported_activity": 103174.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "PL",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 114.19835423653247
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 103174.0,
+      "reported_activity": 103174.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "PL",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 103174.0,
+      "reported_activity": 103174.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "PL",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 103174.0,
+      "reported_activity": 103174.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "PL",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.012813305677787039
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 103174.0,
+      "reported_activity": 103174.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "PL",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.7742842188923565
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 103174.0,
+      "reported_activity": 103174.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "PL",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.21290247542985635
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11149.0,
+      "reported_activity": 11149.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "PT",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 11149.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11149.0,
+      "reported_activity": 11149.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "PT",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 95.30863754596825
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11149.0,
+      "reported_activity": 11149.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "PT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.027536101892546416
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11149.0,
+      "reported_activity": 11149.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "PT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11149.0,
+      "reported_activity": 11149.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "PT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.09265404969055521
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11149.0,
+      "reported_activity": 11149.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "PT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.7413220916674141
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 11149.0,
+      "reported_activity": 11149.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "PT",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.13848775674948427
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12799.0,
+      "reported_activity": 12799.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "RO",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 12799.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12799.0,
+      "reported_activity": 12799.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "RO",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 110.551996249707
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12799.0,
+      "reported_activity": 12799.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "RO",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.005937963903429955
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12799.0,
+      "reported_activity": 12799.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "RO",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12799.0,
+      "reported_activity": 12799.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "RO",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.04578482693960466
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12799.0,
+      "reported_activity": 12799.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "RO",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.8583483084615986
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 12799.0,
+      "reported_activity": 12799.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "RO",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.08992890069536683
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 20143.0,
+      "reported_activity": 20143.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "SE",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 20143.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 20143.0,
+      "reported_activity": 20143.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "SE",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 103.65685349749293
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 20143.0,
+      "reported_activity": 20143.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.028248026609740358
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 20143.0,
+      "reported_activity": 20143.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 20143.0,
+      "reported_activity": 20143.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.07382217147396118
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 20143.0,
+      "reported_activity": 20143.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.852057786824207
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 20143.0,
+      "reported_activity": 20143.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SE",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.045872015092091545
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 3394.0,
+      "reported_activity": 3394.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "SI",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 3394.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 3394.0,
+      "reported_activity": 3394.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "SI",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 116.15939893930465
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 3394.0,
+      "reported_activity": 3394.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SI",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.008249852681202121
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 3394.0,
+      "reported_activity": 3394.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SI",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 3394.0,
+      "reported_activity": 3394.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SI",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.030347672362993516
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 3394.0,
+      "reported_activity": 3394.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SI",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.6222746022392457
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 3394.0,
+      "reported_activity": 3394.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SI",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.33912787271655864
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 9212.0,
+      "reported_activity": 9212.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum of EEA total-new-registration field r",
+    "evidence_class": "project_derived",
+    "geography": "SK",
+    "metric_id": "new_vehicle_registrations",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "registrations",
+    "value": 9212.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 9212.0,
+      "reported_activity": 9212.0,
+      "unmatched_records": 0
+    },
+    "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+    "evidence_class": "project_derived",
+    "geography": "SK",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "adjustments": "none",
+      "brand": "TOYOTA",
+      "dataset_status": "Final",
+      "test_regime": "WLTP",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "gCO2/km",
+    "value": 122.67672600955275
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 9212.0,
+      "reported_activity": 9212.0,
+      "unmatched_records": 0
+    },
+    "derivation": "BEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SK",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "BEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.005536257056013895
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 9212.0,
+      "reported_activity": 9212.0,
+      "unmatched_records": 0
+    },
+    "derivation": "FCEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SK",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "FCEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.0
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 9212.0,
+      "reported_activity": 9212.0,
+      "unmatched_records": 0
+    },
+    "derivation": "PHEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SK",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "PHEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.019648284845853233
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 9212.0,
+      "reported_activity": 9212.0,
+      "unmatched_records": 0
+    },
+    "derivation": "HEV classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SK",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "HEV",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.6842162396873643
+  },
+  {
+    "company_id": "toyota",
+    "coverage": {
+      "activity_unit": "registrations",
+      "mapped_activity": 9212.0,
+      "reported_activity": 9212.0,
+      "unmatched_records": 0
+    },
+    "derivation": "ICE_OTHER classified registrations / all Toyota registrations",
+    "evidence_class": "project_derived",
+    "geography": "SK",
+    "metric_id": "powertrain_sales_share",
+    "observation_year": 2024,
+    "scope": {
+      "brand": "TOYOTA",
+      "classification": "EEA fuel mode/fuel type adapter v1",
+      "dataset_status": "Final",
+      "powertrain": "ICE_OTHER",
+      "vehicle_class": "EEA monitored new passenger cars"
+    },
+    "sector": "automotive",
+    "source_ids": [
+      "eea-co2-cars-2024-final-toyota-eu27"
+    ],
+    "unit": "fraction",
+    "value": 0.2905992184107686
+  },
+  {
+    "company_id": "jera",
+    "coverage": {
+      "activity_unit": "MWh",
+      "mapped_activity": 242000000.0,
+      "reported_activity": 242000000.0,
+      "unmatched_records": 0
+    },
+    "derivation": "reported billion kWh × 1,000,000 MWh/billion kWh",
+    "evidence_class": "company_reported",
+    "geography": "JP",
+    "metric_id": "net_generation",
+    "observation_year": 2024,
+    "scope": {
+      "assurance": "independent limited assurance; appendix table 2",
+      "company_boundary": "Domestic / JERA Group (*12), including joint ventures on a proportionate basis",
+      "generation_basis": "net electricity generation (sending-end power)",
+      "reporting_period": "2024-04-01/2025-03-31"
+    },
+    "sector": "power",
+    "source_ids": [
+      "jera-environmental-data-fy2024",
+      "jera-independent-assurance-fy2024"
+    ],
+    "unit": "MWh",
+    "value": 242000000.0
+  },
+  {
+    "company_id": "jera",
+    "coverage": {
+      "activity_unit": "MWh",
+      "mapped_activity": 242000000.0,
+      "reported_activity": 242000000.0,
+      "unmatched_records": 0
+    },
+    "derivation": "reported kg-CO2e/kWh × 1,000 kWh/MWh; not recomputed from rounded totals",
+    "evidence_class": "company_reported",
+    "geography": "JP",
+    "metric_id": "generation_emissions_intensity",
+    "observation_year": 2024,
+    "scope": {
+      "assurance": "independent limited assurance; appendix table 2",
+      "company_boundary": "Domestic / JERA Group (*12), including joint ventures on a proportionate basis",
+      "generation_basis": "net electricity generation (sending-end power)",
+      "reporting_period": "2024-04-01/2025-03-31"
+    },
+    "sector": "power",
+    "source_ids": [
+      "jera-environmental-data-fy2024",
+      "jera-independent-assurance-fy2024"
+    ],
+    "unit": "kgCO2e/MWh",
+    "value": 520.0
+  },
+  {
+    "company_id": "koen",
+    "coverage": {
+      "activity_unit": "MWh",
+      "mapped_activity": 39660000.0,
+      "reported_activity": 39660000.0,
+      "unmatched_records": 0
+    },
+    "derivation": "reported GWh × 1,000 MWh/GWh; gross/net basis is not stated",
+    "evidence_class": "company_reported",
+    "geography": "KR",
+    "metric_id": "reported_generation",
+    "observation_year": 2024,
+    "scope": {
+      "assurance": "not identified for the web table",
+      "company_boundary": "KOEN ESG data center; general company data are labelled consolidated, while emissions are shown for headquarters and five Korean plants",
+      "generation_basis": "reported generation amount; gross/net basis is not stated"
+    },
+    "sector": "power",
+    "source_ids": [
+      "koen-esg-data-2024"
+    ],
+    "unit": "MWh",
+    "value": 39660000.0
+  },
+  {
+    "company_id": "koen",
+    "coverage": {
+      "activity_unit": "reported company total",
+      "mapped_activity": 1,
+      "reported_activity": 1,
+      "unmatched_records": 0
+    },
+    "derivation": "reported total retained without re-summing plant rows; displayed plant-row difference is -2,000 tCO2e",
+    "evidence_class": "company_reported",
+    "geography": "KR",
+    "metric_id": "scope1_emissions",
+    "observation_year": 2024,
+    "scope": {
+      "assurance": "not identified for the web table",
+      "company_boundary": "KOEN ESG data center; general company data are labelled consolidated, while emissions are shown for headquarters and five Korean plants",
+      "generation_basis": "reported generation amount; gross/net basis is not stated"
+    },
+    "sector": "power",
+    "source_ids": [
+      "koen-esg-data-2024"
+    ],
+    "unit": "tCO2e",
+    "value": 30606585.0
+  },
+  {
+    "company_id": "koen",
+    "coverage": {
+      "activity_unit": "reported company total",
+      "mapped_activity": 1,
+      "reported_activity": 1,
+      "unmatched_records": 0
+    },
+    "derivation": "reported total retained without re-summing plant rows; displayed plant-row difference is -269 tCO2e",
+    "evidence_class": "company_reported",
+    "geography": "KR",
+    "metric_id": "scope2_emissions",
+    "observation_year": 2024,
+    "scope": {
+      "assurance": "not identified for the web table",
+      "company_boundary": "KOEN ESG data center; general company data are labelled consolidated, while emissions are shown for headquarters and five Korean plants",
+      "generation_basis": "reported generation amount; gross/net basis is not stated"
+    },
+    "sector": "power",
+    "source_ids": [
+      "koen-esg-data-2024"
+    ],
+    "unit": "tCO2e",
+    "value": 103752.0
+  }
+]

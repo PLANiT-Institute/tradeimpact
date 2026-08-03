@@ -1,0 +1,152 @@
+[
+  {
+    "applicable_geographies": [],
+    "authority_status": "adopted regulation",
+    "benchmark_id": "eu27-new-car-fleet-2025",
+    "benchmark_type": "EU-wide new passenger car fleet CO2 target",
+    "comparison_mode": "direct",
+    "geography": "EU27",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "notes": "EU-wide new-passenger-car fleet target. It is directly comparable as a portfolio intensity pathway but is not Toyota's manufacturer-specific compliance target; the 2024 company snapshot is unadjusted for eco-innovation or pooling.",
+    "relation": "at_most",
+    "sector": "automotive",
+    "source_ids": [
+      "eea-eu-new-car-fleet-targets",
+      "eu-regulation-2019-631"
+    ],
+    "target_year": 2025,
+    "unit": "gCO2/km",
+    "value": 93.6
+  },
+  {
+    "applicable_geographies": [],
+    "authority_status": "adopted regulation",
+    "benchmark_id": "eu27-new-car-fleet-2030",
+    "benchmark_type": "EU-wide new passenger car fleet CO2 target",
+    "comparison_mode": "direct",
+    "geography": "EU27",
+    "metric_id": "new_vehicle_tailpipe_intensity",
+    "notes": "EU-wide new-passenger-car fleet target. It is directly comparable as a portfolio intensity pathway but is not Toyota's manufacturer-specific compliance target; the 2024 company snapshot is unadjusted for eco-innovation or pooling.",
+    "relation": "at_most",
+    "sector": "automotive",
+    "source_ids": [
+      "eea-eu-new-car-fleet-targets",
+      "eu-regulation-2019-631"
+    ],
+    "target_year": 2030,
+    "unit": "gCO2/km",
+    "value": 49.5
+  },
+  {
+    "applicable_geographies": [],
+    "authority_status": "industry action plan aligned with government outlook",
+    "benchmark_id": "jp-use-end-grid-factor-2030",
+    "benchmark_type": "national electricity factor outlook at point of use",
+    "comparison_mode": "contextual",
+    "geography": "JP",
+    "metric_id": "electricity_use_end_emissions_factor",
+    "notes": "National-system context only. JERA's company-generation boundary cannot be treated as the entire Japanese power system or as electricity delivered at the point of use. Original source unit is kg-CO2/kWh.",
+    "relation": "context_only",
+    "sector": "power",
+    "source_ids": [
+      "jp-power-action-plan-2030"
+    ],
+    "target_year": 2030,
+    "unit": "kgCO2/MWh",
+    "value": 250.0
+  },
+  {
+    "applicable_geographies": [],
+    "authority_status": "Cabinet-decided Strategic Energy Plan outlook",
+    "benchmark_id": "jp-renewable-generation-share-2040",
+    "benchmark_type": "national renewable generation share outlook",
+    "comparison_mode": "contextual",
+    "geography": "JP",
+    "metric_id": "renewable_generation_share",
+    "notes": "National-system context only. JERA's company-generation boundary cannot be treated as the entire Japanese power system or as electricity delivered at the point of use. JERA does not publish renewable generation MWh on this domestic-group boundary.",
+    "relation": "context_only",
+    "sector": "power",
+    "source_ids": [
+      "jp-seventh-strategic-energy-plan"
+    ],
+    "target_year": 2040,
+    "unit": "fraction",
+    "value": null,
+    "value_max": 0.5,
+    "value_min": 0.4
+  },
+  {
+    "applicable_geographies": [],
+    "authority_status": "Cabinet-decided Strategic Energy Plan outlook",
+    "benchmark_id": "jp-thermal-generation-share-2040",
+    "benchmark_type": "national thermal generation share outlook",
+    "comparison_mode": "contextual",
+    "geography": "JP",
+    "metric_id": "thermal_generation_share",
+    "notes": "National-system context only. JERA's company-generation boundary cannot be treated as the entire Japanese power system or as electricity delivered at the point of use.",
+    "relation": "context_only",
+    "sector": "power",
+    "source_ids": [
+      "jp-seventh-strategic-energy-plan"
+    ],
+    "target_year": 2040,
+    "unit": "fraction",
+    "value": null,
+    "value_max": 0.4,
+    "value_min": 0.3
+  },
+  {
+    "applicable_geographies": [],
+    "authority_status": "adopted Eleventh Electricity Plan aligned with the 2030 NDC",
+    "benchmark_id": "kr-transition-sector-emissions-2030",
+    "benchmark_type": "national transition-sector emissions target",
+    "comparison_mode": "contextual",
+    "geography": "KR",
+    "metric_id": "power_sector_emissions",
+    "notes": "National power-system context only. KOEN is one generation company, and the company data do not disclose a policy-compatible carbon-free share or a matching national-total allocation.",
+    "relation": "context_only",
+    "sector": "power",
+    "source_ids": [
+      "kr-eleventh-electricity-plan"
+    ],
+    "target_year": 2030,
+    "unit": "MtCO2e",
+    "value": 145.9
+  },
+  {
+    "applicable_geographies": [],
+    "authority_status": "adopted Eleventh Electricity Plan",
+    "benchmark_id": "kr-carbon-free-generation-share-2030",
+    "benchmark_type": "national carbon-free generation share outlook",
+    "comparison_mode": "contextual",
+    "geography": "KR",
+    "metric_id": "carbon_free_generation_share",
+    "notes": "National power-system context only. KOEN is one generation company, and the company data do not disclose a policy-compatible carbon-free share or a matching national-total allocation. The plan defines carbon-free generation as nuclear, renewable, clean hydrogen, and ammonia generation.",
+    "relation": "context_only",
+    "sector": "power",
+    "source_ids": [
+      "kr-eleventh-electricity-plan"
+    ],
+    "target_year": 2030,
+    "unit": "fraction",
+    "value": 0.53
+  },
+  {
+    "applicable_geographies": [],
+    "authority_status": "adopted Eleventh Electricity Plan; post-2030 pathway outlook",
+    "benchmark_id": "kr-carbon-free-generation-share-2038",
+    "benchmark_type": "national carbon-free generation share outlook",
+    "comparison_mode": "contextual",
+    "geography": "KR",
+    "metric_id": "carbon_free_generation_share",
+    "notes": "National power-system context only. KOEN is one generation company, and the company data do not disclose a policy-compatible carbon-free share or a matching national-total allocation. The plan states that the national post-2030 emissions pathway was not yet set and applies a linear path consistent with the prior plan.",
+    "relation": "context_only",
+    "sector": "power",
+    "source_ids": [
+      "kr-eleventh-electricity-plan"
+    ],
+    "target_year": 2038,
+    "unit": "fraction",
+    "value": 0.707
+  }
+]

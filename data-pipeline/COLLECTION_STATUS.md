@@ -1,71 +1,87 @@
 # Data Collection Status
 
-Mirrors `ti run --workbook ti-framework/data/TI_Data_Workbook_v0.1.xlsx` (engine-reported
-`missing_inputs` + warnings). Regenerate any time with:
+Snapshot date: 2026-08-03 · Workbook: `TI_Data_Workbook_v0.1.xlsx` · Loaded: 11
+operating-country rows, 17 official vehicle-parameter rows, and three evidence-first company
+snapshots: Toyota-brand 2024 EU27 passenger-car registrations, JERA FY2024 Japan generation, and
+KOEN 2024 Korea generation and reported Scope 1/2 emissions.
 
-```bash
-cd ti-framework && ti run --workbook data/TI_Data_Workbook_v0.1.xlsx
-```
+The public dataset contains source-backed operating-country fields and reporting-year company
+activity metrics. There are no vehicle-lifetime greenhouse-gas estimates or reconstructed
+historical cohorts.
 
-Snapshot date: 2026-07-30 · Workbook: `TI_Data_Workbook_v0.1.xlsx` · Loaded: 11 countries, 17 vehicle rows (collected 2026-07-30), 8 volume rows.
+## Automotive alignment snapshot
 
-## Collected 2026-07-30 (cleared from the backlog)
+- Scope: `Mk=TOYOTA`, 2024 final, EEA-monitored new passenger cars, EU27.
+- Registrations: 803,094; WLTP values mapped for 803,042 (99.994%).
+- Registration-weighted certified WLTP intensity: 107.073 gCO2/km.
+- Powertrain shares are derived from EEA fuel-mode/fuel-type codes and retain the classification
+  rule and registration denominator.
+- Direct benchmarks: EU-wide fleet targets 93.6 gCO2/km (2025) and 49.5 gCO2/km (2030).
+- Interpretation: distance to an EU-wide fleet pathway, not Toyota's manufacturer-specific
+  compliance result. No use-phase tonnes, lifetime, VKT, or historical series is calculated.
 
-- **Sectoral S2 benchmarks JP/KR/EU/UK** — official transport/power pathways now in
-  `Layer1_NDC_benchmark` (PRORATA_IDENTITY cleared for these markets). Provenance:
-  `SECTORAL_SOURCES.md`.
-- **Sectoral S1 CA/AU** — official current-policy projections (ECCC ERP 2025 / DCCEEW 2025).
-- **Vehicle parameters** — 17 model-level rows in `Layer2_vehicle_params` from EEA CO2
-  monitoring (2022P), EPA fueleconomy.gov (MY2024), MLIT 燃費一覧 (令和8年3月), KEA 표시연비
-  (2026-04). Fixture mix intensities cross-checked; 3 corrections applied (ESTIMATES.md).
+## Power evidence snapshots
 
-## Missing / not-yet-collected inputs (collection backlog)
+### JERA · Japan · FY2024
 
-| Item | Sheet / market | What to collect | Source (Guideline Appendix B) |
-|---|---|---|---|
-| Volume data V_c,v | `Registration_Vcv` — no units collected | Model-level registrations by country, year, powertrain (2024 market totals are collected in fixtures, Tier A; the model/powertrain split is what remains) | VFACTS, KBA, SMMT, KAICA, SIAM, GAIKINDO, etc. |
-| Vehicle lifetime T | `Support_params` | Central T + sensitivity per market fleet age (15±3 yr Tier B estimate in use) | National transport statistics |
-| S2 sectoral 2035 | JP, EU | No official 2035 sectoral decomposition exists (JP: 2030/2040 目安 only; EU: FF55 2030 only) — structural gap, not collectable today | 차기 정부 발표 대기 |
-| S2 sectoral | KR 2035 NDC | 부문별 분해 미발표 (2025-12 제출 NDC 명시: 추후 로드맵) — 2030 기본계획 경로 사용 중 | 관계부처 후속 로드맵 |
-| S2 sectoral | CA, AU | NDC에 부문 분해 없음; 공식 부문 수치는 현행정책 투영뿐(S1에 반영). S2는 pro-rata 유지 + 경고 | 차기 정부 발표 대기 |
-| S2 benchmark | US — `FLAG_NO_BENCHMARK` | No active NDC; excluded from S2 headline (NOTES.md D3) | S1/S3 via IEA STEPS/NZE if collected |
-| S2 benchmark | IN — `FLAG_INTENSITY` | GDP-intensity target, not absolute path | idem |
-| S2 benchmark | ID — `FLAG_BAU` | Target vs BAU projection, no base-year level | idem |
-| S2 benchmark | SA — `FLAG_NO_BASELINE` | Absolute avoided target, unstated baseline | idem |
-| S2 benchmark | CN — `FLAG_PEAK` | Target vs undefined peak | idem |
-| S1/S3 rates | JP/KR/EU/UK/US S1; all S3 | r_fleet/r_power from IEA STEPS & NZE ("TO EXTRACT"; CA/AU S1은 공식 투영으로 수집 완료) | IEA WEO |
-| Fleet base intensity | all markets | I_fleet,seg,c(0) = IEA transport CO₂ ÷ (OICA fleet × VKT) | IEA / OICA / national VKT |
-| VKT refresh | CA | Only official per-vehicle figure is NRCan CVS 2009 (15,366 km) — stale; replace when a current source exists | StatCan / NRCan |
-| CA/UK powertrain splits | CA, UK | 2024 volume totals are Tier A/B; model/powertrain allocation is Tier C — collect registration-level splits | DesRosiers, SMMT |
-| Export-gap candidates | UAE, MX, TH | Absolute 2035 NDCs exist (NDC 3.0); derivable if ME/LatAm/ASEAN coverage wanted. SA stays FLAG_NO_BASELINE | UNFCCC registry |
+- Scope: JERA Domestic / JERA Group, FY2024, joint ventures proportionately consolidated.
+- Net generation: 242 billion kWh (242 TWh), sending-end power.
+- Reported generation intensity: 0.520 kgCO2e/kWh (520 kgCO2e/MWh).
+- Evidence: JERA environmental data plus SOCOTEC Certification Japan's independent limited-
+  assurance appendix.
+- Policy context: Japan FY2030 use-end factor 250 kgCO2/MWh; FY2040 renewables 40–50% and
+  thermal 30–40% of national generation.
+- Interpretation: all national values are `context_only`; no JERA distance-to-target is computed
+  because generator, point-of-use, and national-system boundaries differ.
 
-## Warnings (data-quality, not blockers)
+### KOEN · Korea · 2024
 
-`PRORATA_IDENTITY` on AU, CA only (2026-07-30: JP/KR/EU/UK cleared via collected sectoral
-S2). AU/CA S2 stays economy-wide pro-rata because neither NDC has a sectoral decomposition;
-their official sectoral numbers are current-policy projections and live in S1 instead.
+- Reported generation: 39,660 GWh (39.66 TWh); gross/net basis is not stated.
+- Reported Scope 1: 30,606,585 tCO2e. Displayed headquarters/plant rows sum 2,000 tCO2e higher.
+- Reported Scope 2: 103,752 tCO2e. Displayed headquarters/plant rows sum 269 tCO2e higher.
+- Evidence: KOEN ESG Data Center; no independent assurance statement was identified for this web
+  table.
+- Policy context: Korea's Eleventh Electricity Plan gives 145.9 MtCO2e transition-sector
+  emissions in 2030 and carbon-free generation shares of 53.0% in 2030 and 70.7% in 2038.
+- Interpretation: reported totals are retained; no intensity or KOEN target gap is computed. All
+  national values are `context_only`.
 
-## Firm universe reconciliation
+## What is sourced
 
-Canonical firm list for the TI pipeline lives in `data-pipeline/firms.json` (built by
-`build_dataset.py` from the two source workbooks):
+- Grid intensity and NDC headline data for 11 operating-country rows.
+- Sectoral S2 pathways for JP/KR/EU/UK, and current-policy S1 pathways for CA/AU.
+- Seventeen model or powertrain certification rows from EEA, EPA/fueleconomy.gov, MLIT,
+  and the Korea Energy Agency. These are parameter records, not company-fleet averages.
 
-- `TI_CaseStudy_Target_Companies.xlsx` — TI case-study candidates. **Automotive (Toyota,
-  Hyundai)** are the only firms in the implemented sector; shipping (KHI, Mitsui, HHI, SHI)
-  and power (JERA, TEPCO, KEPCO, KOSPO) firms map to engine stub sectors and are carried
-  as `runnable: false`.
-- `CAP_Target_Companies_Draft.xlsx` — CAP project (steel, petrochemical). Different
-  project, no TI sector implementation; carried in the universe as `project: "CAP"`,
-  `runnable: false`, for one canonical list rather than two.
+## What still blocks company calculation
 
-No firm currently has complete collected registration + vehicle-parameter data. Toyota and
-Hyundai therefore run as explicitly estimated Tier B/C assessments with visible coverage
-and directional-only suppression where the Tier C share exceeds the threshold.
-`ReferenceCo` remains a separate illustrative validation fixture and is excluded from
-country comparisons and firm-assessment headlines.
+| Required input | Current state | Publication rule |
+|---|---|---|
+| Registration volumes `V_c,v` | Toyota EU27 brand aggregate collected; exact model-level mapping remains uncollected | Require country/year/model/powertrain units from an official or licensed registry |
+| Vehicle-to-registration mapping | Not present | Require exact keys or a disclosed aggregation rule; no analyst mix allocation |
+| Fleet base intensity | Not present in the workbook | Require a sourced operating-country/segment baseline |
+| Annual distance (VKT) | Not present | Require a current national statistic and unit |
+| Vehicle lifetime `T` | Not present | Require central value and sensitivity range |
+| S1/S3 pathways | Partial | Publish only source-specific rates; leave other cells empty |
+| S2 sectoral path | AU/CA remain economy-wide pro-rata; US/IN/ID/SA/CN flagged | Keep warnings/flags; do not present pro-rata as an observed sector rate |
 
-## Three-tier collection rule (Whitepaper §5.1)
+`PRORATA_IDENTITY` remains on AU and CA. It is a transparent derived benchmark with a tier
+downgrade, not an independently observed transport or power pathway.
 
-Record `Source` and `Tier` (A measured / B modelled / C proxy) for every row. Empty cell ≠
-zero: the loader records gaps in `missing_inputs` and downgrades confidence; it never
-defaults.
+## Firm universe
+
+The canonical list is `data/published/firms.json`, generated from
+`TI_CaseStudy_Target_Companies.xlsx` and `CAP_Target_Companies_Draft.xlsx`. All firms are
+currently `runnable: false` for the legacy lifetime report. Toyota, JERA, and KOEN have
+`alignment_available: true` for their reporting-year evidence snapshots; Hyundai and all other
+candidates remain at the evidence gate.
+
+The internal `ti-framework/fixtures/reference_case.json` remains only for engine arithmetic
+validation. It is illustrative, is not copied to `data/published`, and does not appear as a
+firm, country comparison, or calculator starting point.
+
+## Quality rule
+
+Every numerical row must record source, unit, geography, year, and evidence tier. Empty is
+not zero. Missing registration units now stop a calculation cell instead of silently
+contributing zero.

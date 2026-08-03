@@ -24,9 +24,9 @@ from ti_framework.models import (
 )
 
 _SCENARIO_SOURCE_DEFAULT = {
-    Scenario.S1: "IEA WEO STEPS (transport & electricity)",
-    Scenario.S2: "UNFCCC NDC unconditional (pro-rata, economy-wide)",
-    Scenario.S3: "IEA NZE (transport & electricity)",
+    Scenario.S1: "Current-policy transport and power pathways; country-specific source required",
+    Scenario.S2: "National commitment pathway; country-specific source and method required",
+    Scenario.S3: "1.5°C transport and power pathways; country-specific source required",
 }
 
 

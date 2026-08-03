@@ -1,4 +1,20 @@
 {
+  "alignment_contract": {
+    "company_metrics": 201,
+    "contextual_benchmarks": 6,
+    "direct_benchmarks": 2,
+    "rule": "direct arithmetic requires matching sector, metric definition, geography, and unit",
+    "sectors_registered": 5,
+    "version": "alignment-v2"
+  },
+  "alignment_inputs_sha256": {
+    "data-pipeline/adapters/automotive_eea.py": "bea0b3885bbc354383250be6f6b6a029d9ede8e37df068bdce06e4c04a7f0232",
+    "data-pipeline/adapters/power_jera.py": "ba05070634de61914c54b2e5e7219dae7731d37b1fce441b612909670d1993e2",
+    "data-pipeline/adapters/power_koen.py": "1d3d87a27cbe23f50dbfd019640d0f95576a529631b3cd2e38941a0f9dc41ad0",
+    "data-pipeline/source-snapshots/eea_toyota_2024_final.json": "22071ab2d73fb9e82f86b1699696d7024f5a58cfa863135d782c8a91b1155a64",
+    "data-pipeline/source-snapshots/jera_japan_fy2024.json": "c9dc1086efec3624eecd26c3c5f00fedb8b5686284c93b1eaaa4c8efe40833c2",
+    "data-pipeline/source-snapshots/koen_korea_2024.json": "6f232b08e42fb975d01239dea27a392e0a4e140ffc4e214b830b59504aa182a4"
+  },
   "collection_status": {
     "countries_loaded": 11,
     "missing_inputs": [
@@ -15,35 +31,22 @@
       "[CA] PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
     ]
   },
-  "compute_service_sha256": "c6a4548404f3c1769391021add4cae2067a172c0b2622e8875b1e561efc65b57",
-  "dataset_sha256": "be91d2195499a3fa159e94dc7f7a0df8889ac373e332a3abf6592d53524a3bfb",
+  "compute_service_sha256": "37032b1f5d67a2e63f169271ae28a203a2151a437208e35b4432b858623c4d3f",
+  "dataset_sha256": "1e51e18781d6b1a0e43e39433e3d7fc9ae9230d46eefaf09f239573279705cb7",
   "engine": "ti_framework",
-  "engine_source_sha256": "ef40fa0400cdab86a4a5627f735b9d7082d8beec19b40261090b2395def5f87a",
+  "engine_source_sha256": "68be2183035211210400c5fd4aba53493c1d253e3b922dad752c271f5675e001",
   "engine_version": "0.1.0",
   "support_contract": {
-    "lifetime_T": 15,
-    "lifetime_sens": 3,
-    "realworld_range": [
-      0.95,
-      1.25
-    ],
-    "uf_band": 0.15,
-    "vkt": {
-      "AU": 13800.0,
-      "CA": 15366.0,
-      "CN": 12000.0,
-      "EU": 12000.0,
-      "IN": 10000.0,
-      "JP": 9500.0,
-      "KR": 13000.0,
-      "UK": 11426.0,
-      "US": 18000.0
-    }
+    "lifetime_T": null,
+    "lifetime_sens": null,
+    "realworld_range": null,
+    "uf_band": null,
+    "vkt": {}
   },
   "target_sources_sha256": {
     "CAP_Target_Companies_Draft.xlsx": "4e5041709a98dead6ea5d1bbf51e2cbf0d51cd3c327edaf4de216346f1a624be",
     "TI_CaseStudy_Target_Companies.xlsx": "883e5e5e4aeb3009e02e6e17771dc85897d3a2d668ced366be0e3220055fb9e4"
   },
   "workbook": "TI_Data_Workbook_v0.1.xlsx",
-  "workbook_sha256": "886bce0ca5fbdc7cbc4688c6eab98389e7734e47bcdf5cb16982acc7f7de207d"
+  "workbook_sha256": "dfdbdb7181185336b787f28dfea69fec9f95e0eed67e144d3a978d697a59a00d"
 }

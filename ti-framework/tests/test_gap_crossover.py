@@ -70,8 +70,17 @@ def test_crossover_bev_closed_form_matches_numeric():
     b = MethodBBenchmark(intensity_base=I0, r_fleet=rf, distance=D)
     bev = BEVEmissions(eta_ev=eta, grid=GridTrajectory(g0=g0, r_power=rp), distance=D)
     num, _ = crossover_numeric(ti_gap_series(b, bev, 200))
-    if t_star is not None and num is not None:
-        assert t_star == pytest.approx(num, rel=1e-2)
+    assert reason is None
+    assert num is not None
+    assert t_star == pytest.approx(num, rel=1e-2)
+
+
+def test_crossover_bev_closed_form_has_correct_sign():
+    # Product starts cleaner but its grid declines slower; crossover is in the future.
+    t_star, reason = crossover_bev(0.2, 0.05, 0.18, 0.4, 0.02)
+    expected = math.log((0.18 * 0.4) / 0.2) / math.log(0.95 / 0.98)
+    assert reason is None
+    assert t_star == pytest.approx(expected)
 
 
 def test_crossover_bev_parallel_no_crossover():
