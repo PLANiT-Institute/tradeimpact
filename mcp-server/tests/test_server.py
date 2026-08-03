@@ -93,6 +93,25 @@ def test_mcp_calls_shared_service_for_available_and_missing_company_data() -> No
             assert korea_benchmarks.structured_content is not None
             assert len(korea_benchmarks.structured_content["benchmarks"]) == 3
 
+            shipping_snapshot = await client.call_tool(
+                "get_company_snapshot",
+                {"company_id": "mitsui", "year": 2024, "geography": "GLOBAL"},
+            )
+            assert shipping_snapshot.structured_content is not None
+            assert shipping_snapshot.structured_content["status"] == "available"
+            assert shipping_snapshot.structured_content["metrics"][0]["value"] == 10.95
+
+            shipping_benchmarks = await client.call_tool(
+                "get_market_benchmarks",
+                {"sector_id": "shipping", "geography": "GLOBAL"},
+            )
+            assert shipping_benchmarks.structured_content is not None
+            assert len(shipping_benchmarks.structured_content["benchmarks"]) == 3
+            assert all(
+                row["comparison_mode"] == "contextual"
+                for row in shipping_benchmarks.structured_content["benchmarks"]
+            )
+
             missing = await client.call_tool(
                 "get_company_snapshot",
                 {"company_id": "hyundai", "year": 2024, "geography": "EU27"},

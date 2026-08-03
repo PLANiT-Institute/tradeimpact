@@ -13,6 +13,7 @@ the source boundary. It is not a claim that every desired company-market compari
 | Toyota · EU27 · 2024 | 803,094 EEA registrations; 803,042 with WLTP; 107.073 gCO2/km | EU 2025 and 2030 new-car fleet values are direct pathway comparators | Source-backed and reproducible for a Toyota-brand EU27 portfolio snapshot; not manufacturer compliance and not lifetime GHG |
 | JERA · Japan · FY2024 | 242 TWh net sending-end generation; 520 kgCO2e/MWh | Japan 2030 use-end factor and 2040 national mix ranges are context only | Company observations are independently assured; no company target gap is logically available |
 | KOEN · Korea · 2024 | 39,660 GWh reported generation; 30,606,585 tCO2e Scope 1; 103,752 tCO2e Scope 2 | Korea 2030 transition-sector emissions and 2030/2038 carbon-free shares are context only | Company totals are source-backed but not independently assured in the reviewed web table; missing gross/net basis and row-total discrepancies block intensity and target-gap calculations |
+| MOL · Global fleet · FY2024 | 10.95 gCO2e/ton-mile lifecycle EEOI; 783 vessels | IMO 2030 carbon-intensity, absolute-GHG, and zero/near-zero-energy ambitions are context only | The company metric is independently assured, but its FY2019 Standard Method anchor, WtW boundary, and company fleet aggregation do not match IMO's 2008 international-shipping average CO2 target |
 
 The public dataset contains no vehicle-lifetime greenhouse-gas estimate, reconstructed company
 history, inferred fleet mix, avoided-emissions claim, or universal cross-sector score.
@@ -74,6 +75,28 @@ The company values are primary company reporting, not independent observations. 
 is official primary policy evidence. That evidence is sufficient to publish reported facts,
 source quality, and national context, but not to claim a KOEN intensity or alignment margin.
 
+## MOL evidence chain
+
+1. [MOL Environmental Data](https://www.mol.co.jp/en/sustainability/data/pdf/environmental/data.pdf)
+   reports FY2024 energy efficiency operational indicator (EEOI) of 10.95 gCO2e/ton-mile for MOL
+   and major ocean-going vessels operated by group subsidiaries in Japan and overseas.
+2. [ClassNK's independent assurance statement](https://www.mol.co.jp/en/sustainability/data/pdf/environmental/assurance-statement.pdf)
+   confirms the value, lifecycle-GHG boundary, Standard Method, and FY2024 period. Its
+   [appendix](https://www.mol.co.jp/en/sustainability/data/pdf/environmental/appendix.pdf) records
+   783 applicable vessels and the transport-work denominator.
+3. The adapter retains the source's `ton-mile` unit and current FY2024 observation. It does not
+   convert the result to tonne-nautical-mile, reconstruct a trend, or attribute the fleet average
+   to an individual customer.
+4. The [2023 IMO GHG Strategy](https://www.imo.org/en/ourwork/environment/pages/2023-imo-strategy-on-reduction-of-ghg-emissions-from-ships.aspx)
+   supplies 2030 ambitions for carbon intensity, absolute GHG, and zero/near-zero-GHG energy.
+5. All three remain `context_only`: the carbon-intensity ambition is an international-shipping
+   average CO2 measure against 2008, whereas MOL reports company-fleet lifecycle GHG under a
+   Standard Method anchored to FY2019. The other IMO ambitions use different numerators.
+
+MOL's observation is company-reported and independently assured, and the IMO strategy is official
+primary evidence. This supports a traceable operating-efficiency snapshot and policy context, but
+not a numeric MOL-to-IMO gap or compliance verdict.
+
 ## Excluded conflicting or incomplete values
 
 - JERA's current environmental webpage displays a Scope 1 value that differs from the assurance
@@ -89,6 +112,13 @@ source quality, and national context, but not to claim a KOEN intensity or align
 - KOEN does not state whether 39,660 GWh is gross or net generation on the ESG data page. The
   platform therefore leaves generation emissions intensity unavailable even though division is
   mathematically possible.
+- MOL states that customer allocation makes the published fleet EEOI unsuitable for calculating
+  a particular customer's GHG emissions. The platform preserves that caveat and publishes no
+  customer-level attribution.
+- MOL's current EEOI and IMO's carbon-intensity ambition do not share a baseline year, emissions
+  boundary, or aggregation population. The platform therefore does not manufacture a target
+  level from the percentage ambition or substitute headquarters/flag-state policy for voyage and
+  international-shipping jurisdiction.
 - Country pathway rates in `countries.json` remain sector context; they are not silently converted
   into company activity targets.
 - The Japanese policy URLs and extracted values are recorded and the adapter snapshot is
@@ -118,5 +148,8 @@ source quality, and national context, but not to claim a KOEN intensity or align
    portfolio composition instead of relying on a company average.
 3. Source a generator-boundary policy target or an exact policy-defined clean-generation measure
    before calculating a JERA or KOEN target distance.
-4. Extend the same acceptance gates to shipping, steel, and petrochemicals; do not reuse automotive
-   or power denominators across sectors.
+4. Add a second shipping company and reproducible voyage- or route-level transport work before
+   promoting shipping beyond `pilot`; retain IMO context as non-arithmetic until a like-for-like
+   company metric and baseline are available.
+5. Extend the same acceptance gates to steel and petrochemicals; do not reuse automotive, power,
+   or shipping denominators across sectors.

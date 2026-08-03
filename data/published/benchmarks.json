@@ -148,5 +148,63 @@
     "target_year": 2038,
     "unit": "fraction",
     "value": 0.707
+  },
+  {
+    "applicable_geographies": [],
+    "authority_status": "adopted 2023 IMO GHG Strategy",
+    "benchmark_id": "imo-carbon-intensity-reduction-2030",
+    "benchmark_type": "international-shipping carbon-intensity reduction ambition",
+    "comparison_mode": "contextual",
+    "geography": "GLOBAL",
+    "metric_id": "shipping_carbon_intensity_reduction",
+    "notes": "International-shipping context only. MOL reports lifecycle GHG EEOI using a FY2019 company standard method, while the IMO ambition uses an international-shipping average CO2/transport-work baseline from 2008. No company gap is calculated.",
+    "relation": "context_only",
+    "sector": "shipping",
+    "source_ids": [
+      "imo-2023-ghg-strategy"
+    ],
+    "target_year": 2030,
+    "unit": "fraction",
+    "value": 0.4
+  },
+  {
+    "applicable_geographies": [],
+    "authority_status": "adopted 2023 IMO GHG Strategy; at least 20%, striving for 30%",
+    "benchmark_id": "imo-absolute-ghg-reduction-2030",
+    "benchmark_type": "international-shipping absolute GHG reduction checkpoint",
+    "comparison_mode": "contextual",
+    "geography": "GLOBAL",
+    "metric_id": "shipping_absolute_ghg_reduction",
+    "notes": "International-shipping context only. MOL reports lifecycle GHG EEOI using a FY2019 company standard method, while the IMO ambition uses an international-shipping average CO2/transport-work baseline from 2008. No company gap is calculated.",
+    "relation": "context_only",
+    "sector": "shipping",
+    "source_ids": [
+      "imo-2023-ghg-strategy"
+    ],
+    "target_year": 2030,
+    "unit": "fraction",
+    "value": null,
+    "value_max": 0.3,
+    "value_min": 0.2
+  },
+  {
+    "applicable_geographies": [],
+    "authority_status": "adopted 2023 IMO GHG Strategy; at least 5%, striving for 10%",
+    "benchmark_id": "imo-zero-near-zero-energy-share-2030",
+    "benchmark_type": "zero/near-zero GHG energy uptake ambition",
+    "comparison_mode": "contextual",
+    "geography": "GLOBAL",
+    "metric_id": "zero_near_zero_energy_share",
+    "notes": "International-shipping context only. MOL reports lifecycle GHG EEOI using a FY2019 company standard method, while the IMO ambition uses an international-shipping average CO2/transport-work baseline from 2008. No company gap is calculated. MOL's policy-compatible energy share is not disclosed on the same assured boundary.",
+    "relation": "context_only",
+    "sector": "shipping",
+    "source_ids": [
+      "imo-2023-ghg-strategy"
+    ],
+    "target_year": 2030,
+    "unit": "fraction",
+    "value": null,
+    "value_max": 0.1,
+    "value_min": 0.05
   }
 ]

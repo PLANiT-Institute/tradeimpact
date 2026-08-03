@@ -20,8 +20,8 @@ export default function Home() {
             <h1>See where company activity meets <em>market climate targets.</em></h1>
             <p className="lede">
               Start with observed company activity, retain the country and sector boundary,
-              then compare only like-for-like metrics. Automotive and power are live pilots;
-              shipping, steel, and petrochemicals use the same evidence contract next.
+              then compare only like-for-like metrics. Automotive, power, and shipping are live
+              pilots; steel and petrochemicals use the same evidence contract next.
             </p>
             <div className="hero-actions">
               <Link className="button primary" href="/analysis/toyota">Open Toyota · EU27 pilot</Link>
@@ -62,12 +62,14 @@ export default function Home() {
             <p className="chapter-index"><b>01</b><span>/ company-market evidence pilots</span></p>
             <div className="chapter-heading-row">
               <div>
-                <h2>Three snapshots, <em>one evidence discipline.</em></h2>
+                <h2>Four snapshots, <em>one evidence discipline.</em></h2>
                 <p>
                   Toyota uses official registration records and a directly comparable EU fleet
                   pathway. JERA uses independently assured generation data. KOEN preserves
                   company-reported totals but blocks intensity calculations where the denominator
-                  and row reconciliation cannot be verified.
+                  and row reconciliation cannot be verified. MOL adds an independently assured
+                  international-shipping EEOI without treating a flag or headquarters country as
+                  its operating geography.
                 </p>
               </div>
               <span className="as-of">FY2024 · source-backed</span>
@@ -85,6 +87,10 @@ export default function Home() {
             <div className="declaration pilot-declaration">
               <div><h3>KOEN · Republic of Korea</h3><p className="panel-note">Reported generation and emissions → data-quality gate → national context only.</p></div>
               <Link className="button secondary" href="/analysis/koen">Inspect KOEN evidence →</Link>
+            </div>
+            <div className="declaration pilot-declaration">
+              <div><h3>Mitsui O.S.K. Lines · International shipping</h3><p className="panel-note">Assured lifecycle EEOI → voyage-boundary gate → IMO context only.</p></div>
+              <Link className="button secondary" href="/analysis/mitsui">Inspect shipping evidence →</Link>
             </div>
           </div>
         </div>
@@ -141,6 +147,7 @@ export default function Home() {
                 <p>{sector.activity_basis}</p>
                 <small>{sector.direct_metrics.map((metric) => `${metric.label} · ${metric.unit}`).join(" / ")}</small>
                 {sector.sector_id === "power" ? <><Link href="/analysis/jera">Open JERA · Japan →</Link><Link href="/analysis/koen">Open KOEN · Korea →</Link></> : null}
+                {sector.sector_id === "shipping" ? <Link href="/analysis/mitsui">Open MOL · Global →</Link> : null}
               </article>
             ))}
           </div>

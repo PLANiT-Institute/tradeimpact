@@ -5363,5 +5363,35 @@
     ],
     "unit": "tCO2e",
     "value": 103752.0
+  },
+  {
+    "company_id": "mitsui",
+    "coverage": {
+      "activity_unit": "applicable vessels",
+      "mapped_activity": 783.0,
+      "reported_activity": 783.0,
+      "unmatched_records": 0
+    },
+    "derivation": "reported and independently assured value; no project recomputation",
+    "evidence_class": "company_reported",
+    "geography": "GLOBAL",
+    "metric_id": "shipping_eeoi",
+    "observation_year": 2024,
+    "scope": {
+      "allocation_caveat": "The disclosed intensity accounts for allocation of low-emission transport activity to selected customers and is not appropriate for customer-specific GHG calculations.",
+      "assurance": "ClassNK independent assurance; 783 vessels; sample at least 392 vessels",
+      "calculation_method": "Company-wide standard method: FY2019 segment EEOI changes are weighted by FY2024 segment energy consumption and applied to the FY2019 company intensity.",
+      "company_boundary": "Mitsui O.S.K. Lines, Ltd. and major ocean-going vessels of MOL Group subsidiaries in Japan and overseas",
+      "metric_boundary": "lifecycle GHG emissions divided by cargo tonnes multiplied by distance sailed in miles; company-wide standard-method average",
+      "reporting_period": "2024-04-01/2025-03-31"
+    },
+    "sector": "shipping",
+    "source_ids": [
+      "mol-environmental-data-fy2024",
+      "mol-classnk-eeoi-assurance-fy2024",
+      "mol-classnk-eeoi-appendix-fy2024"
+    ],
+    "unit": "gCO2e/ton-mile",
+    "value": 10.95
   }
 ]

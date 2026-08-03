@@ -148,9 +148,15 @@
         "label": "Shipping carbon intensity",
         "metric_id": "shipping_carbon_intensity",
         "unit": "gCO2e/tonne-nm"
+      },
+      {
+        "description": "Source-defined lifecycle-GHG EEOI; the disclosed ton-mile denominator is preserved.",
+        "label": "Energy Efficiency Operational Indicator",
+        "metric_id": "shipping_eeoi",
+        "unit": "gCO2e/ton-mile"
       }
     ],
-    "implementation_status": "planned",
+    "implementation_status": "pilot",
     "name": "Commercial shipping",
     "operating_boundary": "voyage and IMO jurisdiction; flag state reported separately",
     "required_dimensions": [

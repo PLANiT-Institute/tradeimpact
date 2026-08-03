@@ -154,7 +154,7 @@ SECTOR_PROFILES: tuple[SectorProfile, ...] = (
     SectorProfile(
         sector_id="shipping",
         name="Commercial shipping",
-        implementation_status="planned",
+        implementation_status="pilot",
         operating_boundary="voyage and IMO jurisdiction; flag state reported separately",
         activity_basis="transport work by vessel type and fuel",
         direct_metrics=(
@@ -163,6 +163,12 @@ SECTOR_PROFILES: tuple[SectorProfile, ...] = (
                 "Shipping carbon intensity",
                 "gCO2e/tonne-nm",
                 "Cargo-mass transport intensity only where vessel coverage and accounting boundary match.",
+            ),
+            MetricDefinition(
+                "shipping_eeoi",
+                "Energy Efficiency Operational Indicator",
+                "gCO2e/ton-mile",
+                "Source-defined lifecycle-GHG EEOI; the disclosed ton-mile denominator is preserved.",
             ),
         ),
         descriptive_metrics=(

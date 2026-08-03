@@ -2,7 +2,7 @@
 
 Trade Impact connects observed company activity in an operating geography with directly
 comparable official sector targets, while showing broader sector and NDC pathways as context.
-Automotive and power are the first data pilots; shipping, steel, and petrochemicals share the
+Automotive, power, and shipping are the first data pilots; steel and petrochemicals share the
 evidence, coverage, query, web, and MCP contract but retain sector-specific units and boundaries.
 
 | Piece | Where | What |
@@ -10,7 +10,7 @@ evidence, coverage, query, web, and MCP contract but retain sector-specific unit
 | Engine (source of truth for numbers) | [`ti-framework/`](ti-framework/) | Python package `ti_framework`, CLI `ti`, pytest suite; xlsx **and** CSV inputs against one schema |
 | Alignment contract | [`ti-framework/ti_framework/alignment/`](ti-framework/ti_framework/alignment/) | Sector registry, like-for-like comparison rules, coverage, and shared read-only query service |
 | Data pipeline | [`data-pipeline/`](data-pipeline/) | `build_dataset.py` publishes source-backed benchmark data and provenance; [collection backlog](data-pipeline/COLLECTION_STATUS.md); [removed-estimate record](data-pipeline/ESTIMATES.md) |
-| Web app (Vercel) | [`web/`](web/) | Next.js Toyota/EU27, JERA/Japan, and KOEN/Korea evidence pages plus an explicit publication gate. No estimated firm result is rendered |
+| Web app (Vercel) | [`web/`](web/) | Next.js Toyota/EU27, JERA/Japan, KOEN/Korea, and MOL/global evidence pages plus an explicit publication gate. No estimated firm result is rendered |
 | MCP server | [`mcp-server/`](mcp-server/) | Read-only tools/resources/prompts over the same published data used by the web app |
 | Product contract | [`docs/PRODUCT_CONTRACT.md`](docs/PRODUCT_CONTRACT.md) | Multi-sector comparison boundary and publication rules; [sector expansion](docs/SECTOR_EXPANSION.md); [evidence audit](docs/EVIDENCE_AUDIT.md) |
 | Theory ↔ code contract | [`theory/SYNC.md`](theory/SYNC.md) | Anchors ↔ docstring tokens ↔ tests, enforced by [`scripts/check_sync.py`](scripts/check_sync.py) in CI |
