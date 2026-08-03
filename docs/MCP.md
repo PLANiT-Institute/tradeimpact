@@ -52,6 +52,11 @@ failure mode: the MCP returns reported generation and Scope 1/2 facts, but leave
 company gap unavailable because the denominator basis and displayed row reconciliation cannot be
 verified.
 
+MOL adds a sector-boundary failure mode: the MCP returns an assured current fleet EEOI and IMO
+2030 context, but refuses a gap because MOL's FY2019-anchored lifecycle-GHG Standard Method and
+IMO's 2008 international-shipping average CO2 measure are not interchangeable. It also preserves
+the source warning that fleet EEOI must not be treated as a customer-specific emissions value.
+
 ## Deployment stages
 
 1. Local `stdio` server for development and review.

@@ -1,9 +1,9 @@
 # Data Collection Status
 
 Snapshot date: 2026-08-03 · Workbook: `TI_Data_Workbook_v0.1.xlsx` · Loaded: 11
-operating-country rows, 17 official vehicle-parameter rows, and three evidence-first company
-snapshots: Toyota-brand 2024 EU27 passenger-car registrations, JERA FY2024 Japan generation, and
-KOEN 2024 Korea generation and reported Scope 1/2 emissions.
+operating-country rows, 17 official vehicle-parameter rows, and four evidence-first company
+snapshots: Toyota-brand 2024 EU27 passenger-car registrations, JERA FY2024 Japan generation,
+KOEN 2024 Korea generation and reported Scope 1/2 emissions, and MOL FY2024 global-fleet EEOI.
 
 The public dataset contains source-backed operating-country fields and reporting-year company
 activity metrics. There are no vehicle-lifetime greenhouse-gas estimates or reconstructed
@@ -46,6 +46,22 @@ historical cohorts.
 - Interpretation: reported totals are retained; no intensity or KOEN target gap is computed. All
   national values are `context_only`.
 
+## Shipping evidence snapshot
+
+### MOL · Global fleet · FY2024
+
+- Reported EEOI: 10.95 gCO2e/ton-mile on a lifecycle/Well-to-Wake GHG boundary.
+- Scope: MOL and major ocean-going vessels operated by group subsidiaries in Japan and overseas;
+  783 applicable vessels.
+- Evidence: MOL environmental data independently assured by ClassNK; the appendix records the
+  EEOI method, transport-work denominator, and assurance sampling threshold.
+- Policy context: IMO 2030 carbon-intensity reduction of at least 40%, absolute-GHG reduction of
+  at least 20% while striving for 30%, and zero/near-zero-GHG energy uptake of at least 5% while
+  striving for 10%.
+- Interpretation: all IMO values are `context_only`. MOL and IMO do not share the baseline year,
+  emissions boundary, or aggregation population, so no company target gap is computed. The value
+  is not allocated to individual customers and no historical series is reconstructed.
+
 ## What is sourced
 
 - Grid intensity and NDC headline data for 11 operating-country rows.
@@ -72,7 +88,7 @@ downgrade, not an independently observed transport or power pathway.
 
 The canonical list is `data/published/firms.json`, generated from
 `TI_CaseStudy_Target_Companies.xlsx` and `CAP_Target_Companies_Draft.xlsx`. All firms are
-currently `runnable: false` for the legacy lifetime report. Toyota, JERA, and KOEN have
+currently `runnable: false` for the legacy lifetime report. Toyota, JERA, KOEN, and MOL have
 `alignment_available: true` for their reporting-year evidence snapshots; Hyundai and all other
 candidates remain at the evidence gate.
 

@@ -103,5 +103,53 @@
     "source_id": "kr-eleventh-electricity-plan",
     "title": "Eleventh Basic Plan for Long-Term Electricity Supply and Demand (2024-2038)",
     "url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "company_reported",
+    "license": "MOL website terms; extracted facts only, source linked",
+    "notes": "Reports FY2024 company-wide standard-method EEOI of 10.95 gCO2e/ton-mile for MOL and major ocean-going vessels of group subsidiaries.",
+    "published_date": null,
+    "publisher": "Mitsui O.S.K. Lines, Ltd.",
+    "snapshot_sha256": "9b05bd911f4cc9c566fd5cc9a041f9ab005beea3c1f2a2689914b5d43a0e5265",
+    "source_id": "mol-environmental-data-fy2024",
+    "title": "MOL Environmental Data — FY2024 GHG emissions intensity",
+    "url": "https://www.mol.co.jp/en/sustainability/data/pdf/environmental/data.pdf"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "independent_secondary",
+    "license": "Copyright holder terms; extracted facts only, source linked",
+    "notes": "ClassNK confirms 10.95 gCO2e/ton-mile and the standard-method calculation.",
+    "published_date": "2025-06-20",
+    "publisher": "Nippon Kaiji Kyokai (ClassNK)",
+    "snapshot_sha256": "7315623c73025f9f54efff6d7bf841d6df221d4a53bf6d38b20429d5c15ba6bc",
+    "source_id": "mol-classnk-eeoi-assurance-fy2024",
+    "title": "Independent Assurance Statement — MOL FY2024 GHG emissions intensity",
+    "url": "https://www.mol.co.jp/en/sustainability/data/pdf/environmental/assurance-statement.pdf"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "independent_secondary",
+    "license": "Copyright holder terms; extracted facts only, source linked",
+    "notes": "Defines lifecycle-GHG EEOI and the 783-vessel scope. At least 392 vessels and 5,893,386 tCO2e were sampled.",
+    "published_date": "2025-06-20",
+    "publisher": "Nippon Kaiji Kyokai (ClassNK)",
+    "snapshot_sha256": "164acd1a475ccb19470710aca4faad624a6fb6a3b2db064c722f76669fad4e11",
+    "source_id": "mol-classnk-eeoi-appendix-fy2024",
+    "title": "ClassNK assurance appendix — MOL FY2024 EEOI method and fleet",
+    "url": "https://www.mol.co.jp/en/sustainability/data/pdf/environmental/appendix.pdf"
+  },
+  {
+    "accessed_date": "2026-08-03",
+    "evidence_class": "official_primary",
+    "license": "IMO website terms; extracted facts only, source linked",
+    "notes": "Official international-shipping strategy: 2030 carbon-intensity ambition, absolute-GHG checkpoint, and zero/near-zero energy ambition.",
+    "published_date": "2023-07",
+    "publisher": "International Maritime Organization",
+    "snapshot_sha256": "9779c686d289500701c34cae7089ac2ef4c54073488c8b5d47d3993c0debfe6b",
+    "source_id": "imo-2023-ghg-strategy",
+    "title": "2023 IMO Strategy on Reduction of GHG Emissions from Ships",
+    "url": "https://www.imo.org/en/ourwork/environment/pages/2023-imo-strategy-on-reduction-of-ghg-emissions-from-ships.aspx"
   }
 ]

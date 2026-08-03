@@ -85,6 +85,26 @@ def test_published_koen_snapshot_exposes_data_quality_without_derived_intensity(
     assert "no directly comparable benchmark" in alignment["reason"]
 
 
+def test_published_mol_snapshot_is_assured_and_imo_targets_are_context_only() -> None:
+    service = TradeImpactService(REPO / "data" / "published")
+
+    snapshot = service.get_company_snapshot("mitsui", 2024, "GLOBAL")
+    benchmarks = service.get_market_benchmarks("shipping", "GLOBAL")
+    alignment = service.assess_company_alignment(
+        "mitsui", "shipping", "GLOBAL", 2024, "shipping_eeoi", 2030
+    )
+
+    assert snapshot["status"] == "available"
+    assert len(snapshot["metrics"]) == 1
+    assert snapshot["metrics"][0]["value"] == 10.95
+    assert snapshot["metrics"][0]["coverage"]["reported_activity"] == 783
+    assert benchmarks["status"] == "available"
+    assert len(benchmarks["benchmarks"]) == 3
+    assert all(row["comparison_mode"] == "contextual" for row in benchmarks["benchmarks"])
+    assert alignment["status"] == "not_available"
+    assert "no directly comparable benchmark" in alignment["reason"]
+
+
 def test_missing_company_data_stays_missing() -> None:
     service = TradeImpactService(REPO / "data" / "published")
 

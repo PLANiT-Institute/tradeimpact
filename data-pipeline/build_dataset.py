@@ -47,6 +47,8 @@ from adapters.power_jera import SNAPSHOT as JERA_POWER_SNAPSHOT  # noqa: E402
 from adapters.power_jera import build_records as build_jera_power_records  # noqa: E402
 from adapters.power_koen import SNAPSHOT as KOEN_POWER_SNAPSHOT  # noqa: E402
 from adapters.power_koen import build_records as build_koen_power_records  # noqa: E402
+from adapters.shipping_mol import SNAPSHOT as MOL_SHIPPING_SNAPSHOT  # noqa: E402
+from adapters.shipping_mol import build_records as build_mol_shipping_records  # noqa: E402
 
 VALIDATION_FIXTURE = ENGINE_DIR / "fixtures" / "reference_case.json"
 
@@ -67,6 +69,11 @@ KOEN_ALIGNMENT_NOTE = (
     "Evidence-first 2024 Korea power snapshot available from KOEN's official ESG table. "
     "Generation basis, plant-total reconciliation, and assurance limitations prevent an "
     "emissions-intensity or target-gap calculation."
+)
+MOL_ALIGNMENT_NOTE = (
+    "Evidence-first FY2024 global-shipping snapshot available from independently assured MOL "
+    "EEOI data. IMO 2030 ambitions are context only because baseline, GHG scope, and aggregation "
+    "method do not match."
 )
 
 RATE_FIELDS = ("s1", "s2", "s3", "s2_upper")
@@ -132,6 +139,8 @@ def build_universe() -> list[dict]:
     for r in _rows(REPO / "TI_CaseStudy_Target_Companies.xlsx", "Sector"):
         name = r["Company (candidate)"]
         slug = slugify(name)
+        if slug == "mitsui" and r["Sector"] == "Shipping":
+            name = "Mitsui O.S.K. Lines (MOL)"
         firms.append(
             {
                 "slug": slug,
@@ -215,6 +224,10 @@ def build_meta() -> dict:
             str(KOEN_POWER_SNAPSHOT.relative_to(REPO)): _file_sha256(KOEN_POWER_SNAPSHOT),
             "data-pipeline/adapters/power_koen.py": _file_sha256(
                 REPO / "data-pipeline" / "adapters" / "power_koen.py"
+            ),
+            str(MOL_SHIPPING_SNAPSHOT.relative_to(REPO)): _file_sha256(MOL_SHIPPING_SNAPSHOT),
+            "data-pipeline/adapters/shipping_mol.py": _file_sha256(
+                REPO / "data-pipeline" / "adapters" / "shipping_mol.py"
             ),
         },
         "collection_status": {
@@ -302,6 +315,7 @@ def build_alignment_data() -> dict[str, list[dict]]:
         build_eea_automotive_records(),
         build_jera_power_records(),
         build_koen_power_records(),
+        build_mol_shipping_records(),
     ]
     result = {
         "sectors": list_sector_profiles(),
@@ -526,6 +540,8 @@ def main() -> int:
             firm["note"] = JERA_ALIGNMENT_NOTE
         elif firm["slug"] == "koen":
             firm["note"] = KOEN_ALIGNMENT_NOTE
+        elif firm["slug"] == "mitsui":
+            firm["note"] = MOL_ALIGNMENT_NOTE
     meta["support_contract"] = support_contract
     meta["alignment_contract"] = {
         "version": "alignment-v2",

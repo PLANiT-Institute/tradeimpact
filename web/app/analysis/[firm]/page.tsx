@@ -224,6 +224,87 @@ function KoenAnalysis({ name, metrics }: { name: string; metrics: CompanyMetric[
   );
 }
 
+function MolAnalysis({ name, metrics }: { name: string; metrics: CompanyMetric[] }) {
+  const headlineMetrics = metrics.filter(
+    (row) => row.geography === "GLOBAL" && row.observation_year === 2024,
+  );
+  const eeoi = metricById(headlineMetrics, "shipping_eeoi");
+  const benchmarks = getBenchmarks()
+    .filter((row) => row.sector === "shipping" && row.geography === "GLOBAL")
+    .sort((a, b) => a.benchmark_id.localeCompare(b.benchmark_id));
+  const sourceIds = new Set([
+    ...headlineMetrics.flatMap((row) => row.source_ids),
+    ...benchmarks.flatMap((row) => row.source_ids),
+  ]);
+  const sources = getSources().filter((source) => sourceIds.has(source.source_id));
+
+  return (
+    <main className="alignment-report">
+      <div className="alignment-breadcrumb"><Link href="/">Trade Impact</Link><span>/</span><span>Company analysis</span></div>
+      <section className="alignment-hero">
+        <div>
+          <p className="eyebrow">Shipping pilot · International voyages · FY2024</p>
+          <h1>{name} <em>transport-work boundary</em></h1>
+          <p className="lede">
+            One independently assured lifecycle-GHG EEOI observation for MOL&apos;s global
+            operating fleet, placed beside the adopted IMO 2030 strategy without turning
+            incompatible baselines into a company score.
+          </p>
+        </div>
+        <div className="alignment-badge"><span>Evidence status</span><strong>Independently assured</strong><small>ClassNK · 783 applicable vessels</small></div>
+      </section>
+
+      <div className="alignment-facts" aria-label="Headline MOL shipping evidence metrics">
+        <div><span>FY2024 EEOI</span><strong>{eeoi.value.toFixed(2)}</strong><small>gCO₂e/ton-mile · lifecycle GHG</small></div>
+        <div><span>Applicable fleet</span><strong>{formatCount(eeoi.coverage.reported_activity)}</strong><small>vessels · Japan and overseas</small></div>
+        <div><span>Assurance sample</span><strong>≥392</strong><small>vessels · at least 50% of lifecycle GHG</small></div>
+      </div>
+
+      <section className="alignment-section" id="boundary">
+        <header><div><p className="eyebrow">01 / jurisdiction and metric gate</p><h2>International voyages, <em>not a flag-state shortcut</em></h2></div><p>Shipping activity is governed through voyage and IMO boundaries. MOL&apos;s headquarters country is not used as a proxy for where its vessels operate.</p></header>
+        <div className="boundary-flow" role="img" aria-label="MOL lifecycle EEOI passes through a comparability gate before global IMO strategy context; no direct target gap is calculated">
+          <article><span>Company observation</span><strong>MOL · FY2024</strong><p>10.95 gCO₂e/ton-mile<br />WtW lifecycle GHG · standard method</p></article>
+          <i aria-hidden="true">→</i>
+          <article className="gate"><span>Comparability gate</span><strong>Direct subtraction blocked</strong><p>FY2019 company method ≠ 2008 international-shipping average CO₂ baseline</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>Policy context</span><strong>IMO · 2030</strong><p>International carbon intensity, absolute GHG, and zero-energy ambitions</p></article>
+        </div>
+      </section>
+
+      <section className="alignment-section" id="quality">
+        <header><div><p className="eyebrow">02 / metric anatomy</p><h2>What the assured number <em>does and does not mean</em></h2></div><p>The platform preserves MOL&apos;s disclosed unit and method. It does not relabel ton-mile as tonne-nautical-mile or use the value for a customer shipment.</p></header>
+        <div className="quality-grid">
+          <article><span>Emissions boundary</span><strong>Well-to-Wake</strong><p>Lifecycle fuel GHG under IMO 2024 LCA guidance and FuelEU factors where applicable.</p></article>
+          <article><span>Aggregation</span><strong>Standard method</strong><p>FY2019 segment changes are weighted by FY2024 segment energy use; this is not a simple company-total ratio.</p></article>
+          <article><span>Use restriction</span><strong>No customer attribution</strong><p>The disclosed value reflects selected low-emission transport allocation and is not suitable for customer-specific GHG calculations.</p></article>
+        </div>
+      </section>
+
+      <section className="alignment-section" id="context">
+        <header><div><p className="eyebrow">03 / international outlook</p><h2>IMO ambitions shown as <em>context only</em></h2></div><p>These values describe international shipping as a whole. No MOL alignment margin is published without a matching 2008 company baseline and metric definition.</p></header>
+        <div className="context-grid">
+          {benchmarks.map((benchmark) => (
+            <article key={benchmark.benchmark_id}>
+              <div><span>{benchmark.target_year} · {benchmark.comparison_mode}</span><b>No subtraction</b></div>
+              <h3>{benchmark.benchmark_type}</h3>
+              <strong>{contextValue(benchmark)}</strong>
+              <p>{benchmark.notes}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="alignment-section" id="evidence">
+        <header><div><p className="eyebrow">04 / audit trail</p><h2>Company disclosure, assurance, and policy <em>stay separate</em></h2></div><p>MOL reports the value; ClassNK verifies the dataset, fleet, and method; IMO supplies only the international policy context.</p></header>
+        <div className="evidence-grid">
+          {sources.map((source) => <article key={source.source_id}><span>{source.evidence_class.replaceAll("_", " ")}</span><h3>{source.title}</h3><p>{source.publisher}</p><a href={source.url}>Open primary source ↗</a><small>Accessed {source.accessed_date ?? "not recorded"}{source.snapshot_sha256 ? ` · snapshot ${source.snapshot_sha256.slice(0, 12)}…` : ""}</small></article>)}
+        </div>
+        <div className="method-note"><strong>Assured method, not a project estimate</strong><code>Segment EEOI = Σ lifecycle GHG ÷ Σ(distance sailed × cargo tonnes)</code><code>FY2024 company EEOI = 10.95 gCO₂e/ton-mile · reported and assured</code><code>IMO company alignment margin = not_available</code><p>{eeoi.derivation}. Only the FY2024 observation is published; the source&apos;s historical values are not reconstructed into a company trend.</p></div>
+      </section>
+    </main>
+  );
+}
+
 export default async function CompanyAnalysis({
   params,
 }: {
@@ -236,6 +317,7 @@ export default async function CompanyAnalysis({
   const allMetrics = getCompanyMetrics().filter((row) => row.company_id === slug);
   if (slug === "jera") return <JeraAnalysis name={firm.name} metrics={allMetrics} />;
   if (slug === "koen") return <KoenAnalysis name={firm.name} metrics={allMetrics} />;
+  if (slug === "mitsui") return <MolAnalysis name={firm.name} metrics={allMetrics} />;
   const headlineMetrics = allMetrics.filter(
     (row) => row.geography === "EU27" && row.observation_year === 2024,
   );

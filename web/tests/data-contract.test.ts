@@ -45,7 +45,7 @@ test("vehicle-fleet estimates are absent from the public country contract", () =
   }
 });
 
-test("sector registry, Toyota, JERA, and KOEN records share one evidence contract", () => {
+test("Toyota, JERA, KOEN, and MOL share one sector-neutral evidence contract", () => {
   const sectors = getSectors();
   const metrics = getCompanyMetrics();
   const benchmarks = getBenchmarks();
@@ -55,9 +55,9 @@ test("sector registry, Toyota, JERA, and KOEN records share one evidence contrac
     sectors.map((sector) => sector.sector_id),
     ["automotive", "power", "shipping", "steel", "petrochemicals"],
   );
-  assert.equal(metrics.length, 201);
-  assert.equal(benchmarks.length, 8);
-  assert.equal(sources.length, 9);
+  assert.equal(metrics.length, 202);
+  assert.equal(benchmarks.length, 11);
+  assert.equal(sources.length, 13);
 
   const euIntensity = metrics.find(
     (metric) =>
@@ -72,7 +72,7 @@ test("sector registry, Toyota, JERA, and KOEN records share one evidence contrac
   const direct = benchmarks.filter((row) => row.comparison_mode === "direct");
   const contextual = benchmarks.filter((row) => row.comparison_mode === "contextual");
   assert.deepEqual(direct.map((row) => row.target_year), [2025, 2030]);
-  assert.equal(contextual.length, 6);
+  assert.equal(contextual.length, 9);
   assert.ok(contextual.every((row) => row.relation === "context_only"));
 
   const jeraIntensity = metrics.find(
@@ -102,6 +102,14 @@ test("sector registry, Toyota, JERA, and KOEN records share one evidence contrac
     koenMetrics.filter((metric) => metric.metric_id.endsWith("_emissions")).map((metric) => metric.unit),
     ["tCO2e", "tCO2e"],
   );
+
+  const molEeoi = metrics.find(
+    (metric) => metric.company_id === "mitsui" && metric.metric_id === "shipping_eeoi",
+  );
+  assert.ok(molEeoi);
+  assert.equal(molEeoi.value, 10.95);
+  assert.equal(molEeoi.unit, "gCO2e/ton-mile");
+  assert.equal(molEeoi.coverage.reported_activity, 783);
 });
 
 test("no company assessment is runnable until the evidence gate is met", () => {
@@ -128,16 +136,22 @@ test("no company assessment is runnable until the evidence gate is met", () => {
   assert.ok(koen);
   assert.equal(koen.alignment_available, true);
   assert.match(koen.note ?? "", /plant-total reconciliation.*prevent/s);
+
+  const mol = firms.find((item) => item.slug === "mitsui");
+  assert.ok(mol);
+  assert.equal(mol.name, "Mitsui O.S.K. Lines (MOL)");
+  assert.equal(mol.alignment_available, true);
+  assert.match(mol.note ?? "", /IMO 2030 ambitions are context only/s);
 });
 
 test("published provenance is content-addressed and unsourced support stays null", () => {
   const meta = getMeta();
   assert.match(meta.engine_source_sha256, /^[a-f0-9]{64}$/);
   assert.match(meta.dataset_sha256, /^[a-f0-9]{64}$/);
-  assert.equal(meta.alignment_contract.company_metrics, 201);
+  assert.equal(meta.alignment_contract.company_metrics, 202);
   assert.equal(meta.alignment_contract.direct_benchmarks, 2);
-  assert.equal(meta.alignment_contract.contextual_benchmarks, 6);
-  assert.equal(Object.keys(meta.alignment_inputs_sha256).length, 6);
+  assert.equal(meta.alignment_contract.contextual_benchmarks, 9);
+  assert.equal(Object.keys(meta.alignment_inputs_sha256).length, 8);
   assert.equal("build_date" in meta, false);
   assert.equal("engine_git_sha" in meta, false);
   assert.equal(meta.support_contract.lifetime_T, null);

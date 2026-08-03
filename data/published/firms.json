@@ -36,10 +36,10 @@
     "status": "Candidate (e.g.)"
   },
   {
-    "alignment_available": false,
+    "alignment_available": true,
     "country": "Japan",
-    "name": "Mitsui",
-    "note": null,
+    "name": "Mitsui O.S.K. Lines (MOL)",
+    "note": "Evidence-first FY2024 global-shipping snapshot available from independently assured MOL EEOI data. IMO 2030 ambitions are context only because baseline, GHG scope, and aggregation method do not match.",
     "project": "TI",
     "runnable": false,
     "sector": "Shipping",

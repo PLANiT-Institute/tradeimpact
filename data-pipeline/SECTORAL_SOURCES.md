@@ -62,6 +62,15 @@ targets are *faster* than our current Tier C S1 guesses.
   totals are published, but generation intensity is not: gross/net basis is unstated and the
   displayed plant rows do not reconcile with the reported totals. National 2030/2038 values
   remain `context_only` because no KOEN allocation is disclosed.
+- **MOL / global fleet / FY2024**: MOL environmental data —
+  https://www.mol.co.jp/en/sustainability/data/pdf/environmental/data.pdf ; ClassNK assurance and
+  method appendix —
+  https://www.mol.co.jp/en/sustainability/data/pdf/environmental/assurance-statement.pdf and
+  https://www.mol.co.jp/en/sustainability/data/pdf/environmental/appendix.pdf ; 2023 IMO GHG
+  Strategy —
+  https://www.imo.org/en/ourwork/environment/pages/2023-imo-strategy-on-reduction-of-ghg-emissions-from-ships.aspx .
+  The assured 10.95 gCO2e/ton-mile EEOI covers 783 vessels. IMO 2030 ambitions remain
+  `context_only` because the baseline, emissions boundary, and aggregation population differ.
 
 ## 3. Vehicle-parameter databases (model-level, official)
 
@@ -89,5 +98,7 @@ fully specified.
 - 부문 정의 차이: JP 배분후 vs 발전 총배출; EU PRIMES vs CRF — 워크북에 정의 주석 필수.
 - 차량 파라미터는 EEA/EPA/MLIT/KEA의 공식 인증 행으로 보존하되, 관측 등록대수와
   연결되기 전에는 Toyota·Hyundai의 판매구성 또는 평균 배출원단위로 해석하지 않는다.
+- 해운은 판매국이나 본사국으로 귀속하지 않는다. 운항·수송작업과 IMO 관할을 사용하며,
+  고객별 배분 또는 tonne-nautical-mile 변환은 출처가 명시되기 전까지 수행하지 않는다.
 - 반영 시 전체 재발행 필요: workbook 수정 → build_dataset.py → check_published →
   50_build_integrated_audit.py 재실행.

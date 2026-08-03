@@ -1,0 +1,43 @@
+{
+  "accessed_date": "2026-08-03",
+  "adapter_version": "mol-global-fy2024-v1",
+  "assurance": {
+    "appendix_sha256": "164acd1a475ccb19470710aca4faad624a6fb6a3b2db064c722f76669fad4e11",
+    "appendix_url": "https://www.mol.co.jp/en/sustainability/data/pdf/environmental/appendix.pdf",
+    "applicable_vessels": 783,
+    "assurance_date": "2025-06-20",
+    "intensity_gco2e_per_ton_mile": 10.95,
+    "minimum_sampled_lifecycle_ghg_tco2e": 5893386,
+    "minimum_sampled_vessels": 392,
+    "provider": "Nippon Kaiji Kyokai (ClassNK)",
+    "statement_sha256": "7315623c73025f9f54efff6d7bf841d6df221d4a53bf6d38b20429d5c15ba6bc",
+    "statement_url": "https://www.mol.co.jp/en/sustainability/data/pdf/environmental/assurance-statement.pdf"
+  },
+  "company": {
+    "allocation_caveat": "The disclosed intensity accounts for allocation of low-emission transport activity to selected customers and is not appropriate for customer-specific GHG calculations.",
+    "applicable_vessels": 783,
+    "calculation_method": "Company-wide standard method: FY2019 segment EEOI changes are weighted by FY2024 segment energy consumption and applied to the FY2019 company intensity.",
+    "company_id": "mitsui",
+    "eeoi_gco2e_per_ton_mile": 10.95,
+    "geography": "GLOBAL",
+    "metric_boundary": "lifecycle GHG emissions divided by cargo tonnes multiplied by distance sailed in miles; company-wide standard-method average",
+    "observation_year": 2024,
+    "reporting_boundary": "Mitsui O.S.K. Lines, Ltd. and major ocean-going vessels of MOL Group subsidiaries in Japan and overseas",
+    "reporting_period_end": "2025-03-31",
+    "reporting_period_start": "2024-04-01",
+    "source_document_sha256": "9b05bd911f4cc9c566fd5cc9a041f9ab005beea3c1f2a2689914b5d43a0e5265",
+    "source_url": "https://www.mol.co.jp/en/sustainability/data/pdf/environmental/data.pdf"
+  },
+  "content_sha256": "e17e7819c6009a6ff0df85635b9a16235e6ad9fbc8ae519916555882b2b964dd",
+  "policy": {
+    "absolute_ghg_reduction_2030_max": 0.3,
+    "absolute_ghg_reduction_2030_min": 0.2,
+    "adoption_month": "2023-07",
+    "carbon_intensity_reduction_2030": 0.4,
+    "source_page_sha256": "9779c686d289500701c34cae7089ac2ef4c54073488c8b5d47d3993c0debfe6b",
+    "source_url": "https://www.imo.org/en/ourwork/environment/pages/2023-imo-strategy-on-reduction-of-ghg-emissions-from-ships.aspx",
+    "strategy_name": "2023 IMO Strategy on Reduction of GHG Emissions from Ships",
+    "zero_near_zero_energy_share_2030_max": 0.1,
+    "zero_near_zero_energy_share_2030_min": 0.05
+  }
+}

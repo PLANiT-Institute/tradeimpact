@@ -1,7 +1,7 @@
 {
   "alignment_contract": {
-    "company_metrics": 201,
-    "contextual_benchmarks": 6,
+    "company_metrics": 202,
+    "contextual_benchmarks": 9,
     "direct_benchmarks": 2,
     "rule": "direct arithmetic requires matching sector, metric definition, geography, and unit",
     "sectors_registered": 5,
@@ -11,9 +11,11 @@
     "data-pipeline/adapters/automotive_eea.py": "bea0b3885bbc354383250be6f6b6a029d9ede8e37df068bdce06e4c04a7f0232",
     "data-pipeline/adapters/power_jera.py": "ba05070634de61914c54b2e5e7219dae7731d37b1fce441b612909670d1993e2",
     "data-pipeline/adapters/power_koen.py": "1d3d87a27cbe23f50dbfd019640d0f95576a529631b3cd2e38941a0f9dc41ad0",
+    "data-pipeline/adapters/shipping_mol.py": "0be6ecb7260fb5cc6582221bbdf4bfa8d95bcbedcace986c7e07977b97d1d2c8",
     "data-pipeline/source-snapshots/eea_toyota_2024_final.json": "22071ab2d73fb9e82f86b1699696d7024f5a58cfa863135d782c8a91b1155a64",
     "data-pipeline/source-snapshots/jera_japan_fy2024.json": "c9dc1086efec3624eecd26c3c5f00fedb8b5686284c93b1eaaa4c8efe40833c2",
-    "data-pipeline/source-snapshots/koen_korea_2024.json": "6f232b08e42fb975d01239dea27a392e0a4e140ffc4e214b830b59504aa182a4"
+    "data-pipeline/source-snapshots/koen_korea_2024.json": "6f232b08e42fb975d01239dea27a392e0a4e140ffc4e214b830b59504aa182a4",
+    "data-pipeline/source-snapshots/mol_global_fy2024.json": "725c767e4f96a87665f2ad19190af744865f531ac21cd5a31d83396ce305ae17"
   },
   "collection_status": {
     "countries_loaded": 11,
@@ -32,9 +34,9 @@
     ]
   },
   "compute_service_sha256": "37032b1f5d67a2e63f169271ae28a203a2151a437208e35b4432b858623c4d3f",
-  "dataset_sha256": "1e51e18781d6b1a0e43e39433e3d7fc9ae9230d46eefaf09f239573279705cb7",
+  "dataset_sha256": "a0c8ee09d705afda7aec1a3072d6c72b17e721b825c1b54547247a6010b05267",
   "engine": "ti_framework",
-  "engine_source_sha256": "68be2183035211210400c5fd4aba53493c1d253e3b922dad752c271f5675e001",
+  "engine_source_sha256": "9f0aa3fa5260cc4854afe0c5802f8771a050dda0b1c2fcb664187486cb7ed06f",
   "engine_version": "0.1.0",
   "support_contract": {
     "lifetime_T": null,

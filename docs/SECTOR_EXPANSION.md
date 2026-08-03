@@ -58,6 +58,24 @@ Plant, technology, fuel, net generation, direct emissions, emissions boundary, a
 remain the preferred full power dataset because a company average can hide simultaneous fossil
 lock-in and zero-carbon generation.
 
+## Shipping pilot: MOL global fleet
+
+The first shipping adapter publishes MOL's independently assured FY2024 lifecycle-GHG EEOI of
+10.95 gCO2e/ton-mile. The reporting scope covers MOL and major ocean-going vessels operated by
+group subsidiaries in Japan and overseas; ClassNK records 783 applicable vessels. The platform
+retains the source unit, WtW/lifecycle boundary, Standard Method, FY2019 method anchor, assurance
+status, and warning against customer-specific allocation. It does not rebuild a historical series.
+
+The operating boundary is voyage and IMO jurisdiction, not headquarters, flag state, or a vehicle-
+style sales country. IMO's 2030 ambitions are published as `context_only`: its carbon-intensity
+measure is average international-shipping CO2 per transport work against 2008, while MOL's value is
+company-fleet lifecycle GHG under a different method and baseline. Absolute-GHG reduction and
+zero/near-zero-energy share also use different numerators. No MOL alignment margin is calculated.
+
+Shipping remains a `pilot`. Promotion requires at least a second company and operating geography,
+plus a directly compatible intensity definition or source-backed voyage allocation without hidden
+conversion between ton-mile and tonne-nautical-mile.
+
 ## Cross-sector product rule
 
 Cross-sector views may compare:
