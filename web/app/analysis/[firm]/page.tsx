@@ -52,6 +52,10 @@ function formatCount(value: number): string {
   return value.toLocaleString("en-US", { maximumFractionDigits: 0 });
 }
 
+function formatTonnes(value: number): string {
+  return value.toLocaleString("en-US", { maximumFractionDigits: 1 });
+}
+
 function contextValue(benchmark: AlignmentBenchmark): string {
   if (benchmark.value_min != null && benchmark.value_max != null) {
     if (benchmark.unit === "fraction") {
@@ -325,6 +329,7 @@ export default async function CompanyAnalysis({
 
   const registrations = metricById(headlineMetrics, "new_vehicle_registrations");
   const intensity = metricById(headlineMetrics, "new_vehicle_tailpipe_intensity");
+  const normalizedLoad = metricById(headlineMetrics, "normalized_tailpipe_co2_load");
   const powertrains = headlineMetrics
     .filter((row) => row.metric_id === "powertrain_sales_share")
     .sort((a, b) => b.value - a.value);
@@ -343,18 +348,30 @@ export default async function CompanyAnalysis({
   );
   const countries = allMetrics
     .filter((row) => row.metric_id === "new_vehicle_registrations" && row.geography !== "EU27")
-    .map((registration) => ({
-      code: registration.geography,
-      registrations: registration.value,
-      intensity: allMetrics.find(
+    .map((registration) => {
+      const countryIntensity = allMetrics.find(
         (row) =>
           row.geography === registration.geography &&
           row.metric_id === "new_vehicle_tailpipe_intensity",
-      )?.value,
-    }))
-    .sort((a, b) => b.registrations - a.registrations);
+      );
+      const countryLoad = allMetrics.find(
+        (row) =>
+          row.geography === registration.geography &&
+          row.metric_id === "normalized_tailpipe_co2_load",
+      );
+      return {
+        code: registration.geography,
+        registrations: registration.value,
+        mappedRegistrations: countryIntensity?.coverage.mapped_activity ?? 0,
+        intensity: countryIntensity?.value,
+        normalizedLoad: countryLoad?.value ?? 0,
+      };
+    })
+    .sort((a, b) => b.normalizedLoad - a.normalizedLoad);
   const coverage = intensity.coverage.mapped_activity / intensity.coverage.reported_activity;
   const chartMax = Math.max(intensity.value, ...benchmarks.map((row) => row.value ?? 0)) * 1.08;
+  const topImpactMarkets = countries.slice(0, 5);
+  const topMarket = topImpactMarkets[0];
 
   return (
     <main className="alignment-report">
@@ -401,7 +418,7 @@ export default async function CompanyAnalysis({
       </section>
 
       <section className="alignment-section" id="mix">
-        <header><div><p className="eyebrow">02 / observed composition</p><h2>Powertrain mix, <em>without an inferred fleet</em></h2></div><p>Shares reconcile to all 803,094 registrations. Categories follow the disclosed EEA fuel-mode adapter.</p></header>
+        <header><div><p className="eyebrow">02 / observed composition</p><h2>Powertrain mix, <em>without an inferred fleet</em></h2></div><p>Shares reconcile to all 803,094 registrations. Categories follow the disclosed EEA fuel-mode adapter; displayed percentages are rounded individually.</p></header>
         <div className="mix-panel">
           <div className="mix-bar" aria-label="Powertrain registration shares">
             {powertrains.map((row) => <span key={row.scope.powertrain} style={{ width: `${row.value * 100}%`, background: POWERTRAIN_COLORS[row.scope.powertrain] }} title={`${POWERTRAIN_LABELS[row.scope.powertrain]} ${(row.value * 100).toFixed(2)}%`} />)}
@@ -412,21 +429,46 @@ export default async function CompanyAnalysis({
         </div>
       </section>
 
+      <section className="alignment-section" id="impact">
+        <header><div><p className="eyebrow">03 / geography-weighted impact</p><h2>Which markets carry the <em>certified CO₂ load</em></h2></div><p>Country contribution equals WLTP-mapped registrations multiplied by that market&apos;s certified average. The fixed 1,000 km distance makes countries comparable without inventing annual use or vehicle lifetime.</p></header>
+        <div className="impact-facts" aria-label="Normalized certified tailpipe CO2 load">
+          <article><span>EU27 normalized load</span><strong>{formatTonnes(normalizedLoad.value)}</strong><small>tCO₂ · every mapped vehicle drives 1,000 km</small></article>
+          <article><span>Largest contribution</span><strong>{topMarket.code} · {(topMarket.normalizedLoad / normalizedLoad.value * 100).toFixed(2)}%</strong><small>{formatTonnes(topMarket.normalizedLoad)} tCO₂ on the same fixed-distance basis</small></article>
+          <article><span>Measurement boundary</span><strong>{formatCount(normalizedLoad.coverage.mapped_activity)}</strong><small>WLTP-mapped registrations · {formatCount(normalizedLoad.coverage.unmatched_records)} unavailable</small></article>
+        </div>
+        <div className="impact-panel">
+          <div className="impact-ranking" role="img" aria-label="Top five country shares of Toyota EU27 normalized certified tailpipe CO2 load">
+            <div className="impact-ranking-head"><span>Top markets</span><span>Share of EU27 certified load</span></div>
+            {topImpactMarkets.map((country) => {
+              const share = country.normalizedLoad / normalizedLoad.value;
+              return <div className="impact-row" key={country.code}><strong>{country.code}</strong><div><i style={{ width: `${share / (topMarket.normalizedLoad / normalizedLoad.value) * 100}%` }} /></div><span>{(share * 100).toFixed(2)}%</span></div>;
+            })}
+          </div>
+          <div className="impact-boundary">
+            <article><span>Computed from evidence</span><strong>Certified tailpipe CO₂</strong><p>2024 registration country × mapped registrations × WLTP gCO₂/km × exactly 1,000 km.</p></article>
+            <article><span>Still hidden · not claimed</span><strong>Actual annual and lifecycle GHG</strong><p>Annual distance, real-world correction, upstream fuel or electricity, vehicle production, and lifetime remain unavailable—not zero.</p></article>
+          </div>
+        </div>
+      </section>
+
       <section className="alignment-section" id="countries">
-        <header><div><p className="eyebrow">03 / operating markets</p><h2>Where the registrations <em>actually occurred</em></h2></div><p>Country records preserve exposure for later national-target mapping. No national company gap is calculated until a compatible country benchmark is sourced.</p></header>
+        <header><div><p className="eyebrow">04 / operating markets</p><h2>Country totals, <em>line by line</em></h2></div><p>Every market retains observed registrations, mapped coverage, certified intensity, and its share of the normalized load. No national company gap is calculated until a compatible country benchmark is sourced.</p></header>
         <div className="exposure-table-wrap">
-          <table className="exposure-table"><thead><tr><th>Market</th><th>Registrations</th><th>Share of EU27</th><th>WLTP gCO₂/km</th><th>Direct target</th></tr></thead><tbody>
-            {countries.map((country) => <tr key={country.code}><td><strong>{country.code}</strong></td><td>{formatCount(country.registrations)}</td><td><div className="exposure-share"><i style={{ width: `${(country.registrations / registrations.value) * 100 * 4}%` }} /><span>{((country.registrations / registrations.value) * 100).toFixed(1)}%</span></div></td><td>{country.intensity?.toFixed(1) ?? "—"}</td><td><span className="pending-target">Pending comparable source</span></td></tr>)}
+          <table className="exposure-table"><thead><tr><th>Market</th><th>Registrations</th><th>WLTP mapped</th><th>WLTP gCO₂/km</th><th>Certified tCO₂ · 1,000 km each</th><th>Share of certified load</th><th>Direct target</th></tr></thead><tbody>
+            {countries.map((country) => {
+              const loadShare = country.normalizedLoad / normalizedLoad.value;
+              return <tr key={country.code}><td><strong>{country.code}</strong></td><td>{formatCount(country.registrations)}</td><td>{formatCount(country.mappedRegistrations)}</td><td>{country.intensity?.toFixed(1) ?? "—"}</td><td>{formatTonnes(country.normalizedLoad)}</td><td><div className="exposure-share"><i style={{ width: `${loadShare / (topMarket.normalizedLoad / normalizedLoad.value) * 100}%` }} /><span>{(loadShare * 100).toFixed(2)}%</span></div></td><td><span className="pending-target">Pending comparable source</span></td></tr>;
+            })}
           </tbody></table>
         </div>
       </section>
 
       <section className="alignment-section" id="evidence">
-        <header><div><p className="eyebrow">04 / audit trail</p><h2>Every number has <em>a traceable origin</em></h2></div></header>
+        <header><div><p className="eyebrow">05 / audit trail</p><h2>Every number has <em>a traceable origin</em></h2></div></header>
         <div className="evidence-grid">
           {sources.map((source) => <article key={source.source_id}><span>{source.evidence_class.replaceAll("_", " ")}</span><h3>{source.title}</h3><p>{source.publisher}</p><a href={source.url}>Open primary source ↗</a><small>Accessed {source.accessed_date ?? "not recorded"}{source.snapshot_sha256 ? ` · snapshot ${source.snapshot_sha256.slice(0, 12)}…` : ""}</small></article>)}
         </div>
-        <div className="method-note"><strong>Calculation</strong><code>Σ(registrations × WLTP gCO₂/km) ÷ Σ(mapped registrations)</code><p>{intensity.derivation}. The raw-to-aggregate query and response hashes are committed; individual registration rows are not republished.</p></div>
+        <div className="method-note"><strong>Calculations</strong><code>Intensity = Σ(registrations × WLTP gCO₂/km) ÷ Σ(mapped registrations)</code><code>Normalized load = mapped registrations × intensity × 1,000 km ÷ 1,000,000 g/t</code><p>{normalizedLoad.derivation}. The raw-to-aggregate query and response hashes are committed; individual registration rows are not republished.</p></div>
       </section>
     </main>
   );

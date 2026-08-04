@@ -10,7 +10,7 @@ the source boundary. It is not a claim that every desired company-market compari
 
 | Pilot | Published observation | Target treatment | Assessment |
 |---|---|---|---|
-| Toyota · EU27 · 2024 | 803,094 EEA registrations; 803,042 with WLTP; 107.073 gCO2/km | EU 2025 and 2030 new-car fleet values are direct pathway comparators | Source-backed and reproducible for a Toyota-brand EU27 portfolio snapshot; not manufacturer compliance and not lifetime GHG |
+| Toyota · EU27 · 2024 | 803,094 EEA registrations; 803,042 with WLTP; 107.073 gCO2/km; 85,984.351 tCO2 at a fixed 1,000 km per mapped vehicle | EU 2025 and 2030 new-car fleet values are direct pathway comparators | Source-backed and reproducible for a Toyota-brand EU27 portfolio snapshot; normalized load is certified tailpipe CO2, not actual annual, lifetime, or lifecycle GHG |
 | JERA · Japan · FY2024 | 242 TWh net sending-end generation; 520 kgCO2e/MWh | Japan 2030 use-end factor and 2040 national mix ranges are context only | Company observations are independently assured; no company target gap is logically available |
 | KOEN · Korea · 2024 | 39,660 GWh reported generation; 30,606,585 tCO2e Scope 1; 103,752 tCO2e Scope 2 | Korea 2030 transition-sector emissions and 2030/2038 carbon-free shares are context only | Company totals are source-backed but not independently assured in the reviewed web table; missing gross/net basis and row-total discrepancies block intensity and target-gap calculations |
 | MOL · Global fleet · FY2024 | 10.95 gCO2e/ton-mile lifecycle EEOI; 783 vessels | IMO 2030 carbon-intensity, absolute-GHG, and zero/near-zero-energy ambitions are context only | The company metric is independently assured, but its FY2019 Standard Method anchor, WtW boundary, and company fleet aggregation do not match IMO's 2008 international-shipping average CO2 target |
@@ -24,15 +24,19 @@ history, inferred fleet mix, avoided-emissions claim, or universal cross-sector 
    Toyota-brand new passenger-car registration records.
 2. The adapter aggregates observed registrations and computes the WLTP-weighted average only for
    records with a reported WLTP value. Coverage remains explicit: 52 registrations are unmatched.
-3. [Regulation (EU) 2019/631](https://eur-lex.europa.eu/eli/reg/2019/631/2025-07-09/eng)
+3. The adapter also multiplies each country's mapped registrations by its certified intensity
+   and exactly 1,000 km. The 27 country loads reconcile to 85,984.351 tCO2 for EU27. This is a
+   fixed-distance normalization, not an estimate of how far vehicles actually drive.
+4. [Regulation (EU) 2019/631](https://eur-lex.europa.eu/eli/reg/2019/631/2025-07-09/eng)
    supplies the EU-wide 2025 and 2030 new-car fleet pathway values.
-4. The platform reports distance to that fleet pathway. It does not label the result Toyota's
+5. The platform reports distance to that fleet pathway. It does not label the result Toyota's
    manufacturer-specific legal target or compliance status.
 
 The observation is regulatory data and the target is adopted law. The aggregation is
 project-derived but reproducible and content-addressed. Remaining limitations are the
 brand-versus-manufacturer-group boundary, certified tailpipe CO2 rather than lifecycle GHG, and
-the absence of directly comparable country-specific targets for the 27 market rows.
+the absence of actual distance, real-world correction, upstream energy, vehicle-production data,
+and directly comparable country-specific targets for the 27 market rows.
 
 ## JERA evidence chain
 

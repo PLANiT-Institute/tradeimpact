@@ -3281,6 +3281,110 @@ footer.site .planit-mark {
   color: var(--text-strong);
   font: 600 16px var(--font-mono), monospace;
 }
+.impact-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--surface);
+}
+.impact-facts article {
+  min-height: 130px;
+  padding: 24px;
+  border-right: 1px solid var(--line);
+}
+.impact-facts article:last-child {
+  border-right: 0;
+}
+.impact-facts span,
+.impact-ranking-head,
+.impact-boundary span {
+  color: var(--quiet);
+  font: 10px var(--font-mono), monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.impact-facts strong {
+  display: block;
+  margin: 10px 0 6px;
+  color: var(--text-strong);
+  font: 600 28px/1.05 var(--font-display), serif;
+  font-variant-numeric: tabular-nums;
+}
+.impact-facts small {
+  color: var(--muted);
+  font-size: 11px;
+}
+.impact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(360px, 0.75fr);
+  gap: 18px;
+}
+.impact-ranking,
+.impact-boundary {
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--surface);
+}
+.impact-ranking {
+  padding: 24px;
+}
+.impact-ranking-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+.impact-row {
+  display: grid;
+  grid-template-columns: 40px minmax(140px, 1fr) 62px;
+  gap: 14px;
+  align-items: center;
+  margin-top: 17px;
+}
+.impact-row strong,
+.impact-row span {
+  color: var(--text-strong);
+  font: 600 13px var(--font-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}
+.impact-row span {
+  text-align: right;
+}
+.impact-row > div {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--surface-2);
+}
+.impact-row i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent-soft);
+}
+.impact-boundary {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.impact-boundary article {
+  padding: 22px;
+}
+.impact-boundary article + article {
+  border-top: 1px solid var(--line);
+}
+.impact-boundary strong {
+  display: block;
+  margin: 8px 0;
+  color: var(--text-strong);
+  font: 600 19px var(--font-display), serif;
+}
+.impact-boundary p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
 .exposure-table-wrap {
   overflow-x: auto;
   border: 1px solid var(--line);
@@ -3288,7 +3392,7 @@ footer.site .planit-mark {
 }
 .exposure-table {
   width: 100%;
-  min-width: 820px;
+  min-width: 1060px;
   border-collapse: collapse;
   background: var(--surface);
   font-size: 12px;

@@ -31,13 +31,18 @@ def test_published_toyota_eu27_snapshot_is_source_backed() -> None:
     payload = service.get_company_snapshot("toyota", 2024, "EU27")
 
     assert payload["status"] == "available"
-    assert len(payload["metrics"]) == 7
+    assert len(payload["metrics"]) == 8
     intensity = next(
         row for row in payload["metrics"] if row["metric_id"] == "new_vehicle_tailpipe_intensity"
     )
     assert intensity["value"] == pytest.approx(107.07329255505938)
     assert intensity["coverage"]["mapped_activity"] == 803_042
     assert intensity["coverage"]["reported_activity"] == 803_094
+    normalized_load = next(
+        row for row in payload["metrics"] if row["metric_id"] == "normalized_tailpipe_co2_load"
+    )
+    assert normalized_load["value"] == pytest.approx(85_984.351)
+    assert normalized_load["unit"] == "tCO2/cohort-1000km"
 
 
 def test_published_jera_snapshot_is_assured_and_policy_is_context_only() -> None:

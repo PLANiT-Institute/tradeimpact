@@ -22,7 +22,7 @@ def test_eea_snapshot_is_aggregated_hashed_and_reproducible() -> None:
     assert snapshot["query_sha256"]
     assert snapshot["response_sha256"]
     assert records["sources"][0]["snapshot_sha256"] == snapshot["response_sha256"]
-    assert len(records["company_metrics"]) == 28 * 7
+    assert len(records["company_metrics"]) == 28 * 8
 
 
 def test_eea_eu27_metrics_reconcile_without_vehicle_use_estimates() -> None:
@@ -32,6 +32,9 @@ def test_eea_eu27_metrics_reconcile_without_vehicle_use_estimates() -> None:
     registrations = next(row for row in metrics if row["metric_id"] == "new_vehicle_registrations")
     intensity = next(
         row for row in metrics if row["metric_id"] == "new_vehicle_tailpipe_intensity"
+    )
+    normalized_load = next(
+        row for row in metrics if row["metric_id"] == "normalized_tailpipe_co2_load"
     )
     shares = [row for row in metrics if row["metric_id"] == "powertrain_sales_share"]
 
@@ -45,11 +48,41 @@ def test_eea_eu27_metrics_reconcile_without_vehicle_use_estimates() -> None:
     }
     assert {row["scope"]["powertrain"] for row in shares} == set(POWERTRAINS)
     assert sum(row["value"] for row in shares) == pytest.approx(1.0)
+    assert normalized_load["value"] == pytest.approx(85_984.351)
+    assert normalized_load["unit"] == "tCO2/cohort-1000km"
+    assert normalized_load["coverage"] == intensity["coverage"]
+    assert "1,000 km" in normalized_load["scope"]["normalization"]
+    assert "actual annual distance" in normalized_load["scope"]["emissions_boundary"]
+    assert "lifetime" in normalized_load["scope"]["emissions_boundary"]
+    metric_ids = {row["metric_id"] for row in metrics}
+    assert not any("lifetime" in metric_id for metric_id in metric_ids)
+    assert not any("vkt" in metric_id for metric_id in metric_ids)
     serialized = json.dumps(metrics).lower()
-    assert "lifetime" not in serialized
     assert "vkt" not in serialized
     assert "vehicle_km" not in serialized
-    assert "tco2" not in serialized
+    assert "tco2e" not in serialized
+
+
+def test_eea_country_normalized_loads_reconcile_to_eu27() -> None:
+    metrics = build_records()["company_metrics"]
+    eu27 = next(
+        row
+        for row in metrics
+        if row["geography"] == "EU27"
+        and row["metric_id"] == "normalized_tailpipe_co2_load"
+    )
+    countries = [
+        row
+        for row in metrics
+        if row["geography"] != "EU27"
+        and row["metric_id"] == "normalized_tailpipe_co2_load"
+    ]
+
+    assert len(countries) == 27
+    assert sum(row["value"] for row in countries) == pytest.approx(eu27["value"])
+    france = next(row for row in countries if row["geography"] == "FR")
+    assert france["value"] == pytest.approx(13_522.581)
+    assert france["value"] / eu27["value"] == pytest.approx(0.15726793123088179)
 
 
 def test_eea_benchmarks_are_adopted_direct_intensity_targets() -> None:
