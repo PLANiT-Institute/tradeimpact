@@ -14,11 +14,14 @@ historical cohorts.
 - Scope: `Mk=TOYOTA`, 2024 final, EEA-monitored new passenger cars, EU27.
 - Registrations: 803,094; WLTP values mapped for 803,042 (99.994%).
 - Registration-weighted certified WLTP intensity: 107.073 gCO2/km.
+- Fixed-distance normalized tailpipe load: 85,984.351 tCO2 if every WLTP-mapped registration
+  travels exactly 1,000 km. The 27 country values reconcile to this EU27 total.
 - Powertrain shares are derived from EEA fuel-mode/fuel-type codes and retain the classification
   rule and registration denominator.
 - Direct benchmarks: EU-wide fleet targets 93.6 gCO2/km (2025) and 49.5 gCO2/km (2030).
 - Interpretation: distance to an EU-wide fleet pathway, not Toyota's manufacturer-specific
-  compliance result. No use-phase tonnes, lifetime, VKT, or historical series is calculated.
+  compliance result. The normalized load is not actual annual use, lifetime, real-world,
+  upstream-energy, production, or lifecycle GHG; no historical series is calculated.
 
 ## Power evidence snapshots
 

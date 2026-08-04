@@ -86,6 +86,12 @@ SECTOR_PROFILES: tuple[SectorProfile, ...] = (
                 "fraction",
                 "Registration share for one disclosed powertrain classification.",
             ),
+            MetricDefinition(
+                "normalized_tailpipe_co2_load",
+                "Normalized certified tailpipe CO2 load",
+                "tCO2/cohort-1000km",
+                "Certified tailpipe CO2 if every WLTP-mapped registration travels exactly 1,000 km; not an annual, lifetime, or lifecycle inventory.",
+            ),
         ),
         contextual_pathways=("road transport GHG pathway", "transport NDC pathway"),
         required_dimensions=_COMMON_DIMENSIONS

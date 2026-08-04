@@ -1,6 +1,6 @@
 {
   "alignment_contract": {
-    "company_metrics": 202,
+    "company_metrics": 230,
     "contextual_benchmarks": 9,
     "direct_benchmarks": 2,
     "rule": "direct arithmetic requires matching sector, metric definition, geography, and unit",
@@ -8,7 +8,7 @@
     "version": "alignment-v2"
   },
   "alignment_inputs_sha256": {
-    "data-pipeline/adapters/automotive_eea.py": "bea0b3885bbc354383250be6f6b6a029d9ede8e37df068bdce06e4c04a7f0232",
+    "data-pipeline/adapters/automotive_eea.py": "46df6862a940e9062258973bda1a8d577f9e6dfdffa92efb418d9c3f99449c11",
     "data-pipeline/adapters/power_jera.py": "ba05070634de61914c54b2e5e7219dae7731d37b1fce441b612909670d1993e2",
     "data-pipeline/adapters/power_koen.py": "1d3d87a27cbe23f50dbfd019640d0f95576a529631b3cd2e38941a0f9dc41ad0",
     "data-pipeline/adapters/shipping_mol.py": "0be6ecb7260fb5cc6582221bbdf4bfa8d95bcbedcace986c7e07977b97d1d2c8",
@@ -34,9 +34,9 @@
     ]
   },
   "compute_service_sha256": "37032b1f5d67a2e63f169271ae28a203a2151a437208e35b4432b858623c4d3f",
-  "dataset_sha256": "a0c8ee09d705afda7aec1a3072d6c72b17e721b825c1b54547247a6010b05267",
+  "dataset_sha256": "f9b385b7bd5f2308aa31846e446cfe7a2729ad1628a9f82300421f833d6c77de",
   "engine": "ti_framework",
-  "engine_source_sha256": "9f0aa3fa5260cc4854afe0c5802f8771a050dda0b1c2fcb664187486cb7ed06f",
+  "engine_source_sha256": "6745d6ac5fca690b785764fc94160deed70d84af20626313fe5cad372fb4e362",
   "engine_version": "0.1.0",
   "support_contract": {
     "lifetime_T": null,

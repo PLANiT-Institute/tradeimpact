@@ -55,7 +55,7 @@ test("Toyota, JERA, KOEN, and MOL share one sector-neutral evidence contract", (
     sectors.map((sector) => sector.sector_id),
     ["automotive", "power", "shipping", "steel", "petrochemicals"],
   );
-  assert.equal(metrics.length, 202);
+  assert.equal(metrics.length, 230);
   assert.equal(benchmarks.length, 11);
   assert.equal(sources.length, 13);
 
@@ -69,6 +69,28 @@ test("Toyota, JERA, KOEN, and MOL share one sector-neutral evidence contract", (
   assert.ok(Math.abs(euIntensity.value - 107.07329255505938) < 1e-12);
   assert.equal(euIntensity.coverage.mapped_activity, 803_042);
   assert.equal(euIntensity.coverage.reported_activity, 803_094);
+  const euNormalizedLoad = metrics.find(
+    (metric) =>
+      metric.company_id === "toyota" &&
+      metric.geography === "EU27" &&
+      metric.metric_id === "normalized_tailpipe_co2_load",
+  );
+  assert.ok(euNormalizedLoad);
+  assert.ok(Math.abs(euNormalizedLoad.value - 85_984.351) < 1e-9);
+  assert.equal(euNormalizedLoad.unit, "tCO2/cohort-1000km");
+  const countryNormalizedLoads = metrics.filter(
+    (metric) =>
+      metric.company_id === "toyota" &&
+      metric.geography !== "EU27" &&
+      metric.metric_id === "normalized_tailpipe_co2_load",
+  );
+  assert.equal(countryNormalizedLoads.length, 27);
+  assert.ok(
+    Math.abs(
+      countryNormalizedLoads.reduce((sum, metric) => sum + metric.value, 0) -
+        euNormalizedLoad.value,
+    ) < 1e-9,
+  );
   const direct = benchmarks.filter((row) => row.comparison_mode === "direct");
   const contextual = benchmarks.filter((row) => row.comparison_mode === "contextual");
   assert.deepEqual(direct.map((row) => row.target_year), [2025, 2030]);
@@ -95,9 +117,20 @@ test("Toyota, JERA, KOEN, and MOL share one sector-neutral evidence contract", (
   const automotiveSerialized = JSON.stringify(
     metrics.filter((metric) => metric.sector === "automotive"),
   ).toLowerCase();
-  assert.ok(!automotiveSerialized.includes("lifetime"));
+  assert.ok(
+    !metrics.some(
+      (metric) => metric.sector === "automotive" && metric.metric_id.includes("lifetime"),
+    ),
+  );
   assert.ok(!automotiveSerialized.includes("vkt"));
-  assert.ok(!automotiveSerialized.includes("tco2"));
+  assert.ok(!automotiveSerialized.includes("tco2e"));
+  assert.equal(
+    metrics.filter(
+      (metric) =>
+        metric.sector === "automotive" && metric.unit === "tCO2/cohort-1000km",
+    ).length,
+    28,
+  );
   assert.deepEqual(
     koenMetrics.filter((metric) => metric.metric_id.endsWith("_emissions")).map((metric) => metric.unit),
     ["tCO2e", "tCO2e"],
@@ -148,7 +181,7 @@ test("published provenance is content-addressed and unsourced support stays null
   const meta = getMeta();
   assert.match(meta.engine_source_sha256, /^[a-f0-9]{64}$/);
   assert.match(meta.dataset_sha256, /^[a-f0-9]{64}$/);
-  assert.equal(meta.alignment_contract.company_metrics, 202);
+  assert.equal(meta.alignment_contract.company_metrics, 230);
   assert.equal(meta.alignment_contract.direct_benchmarks, 2);
   assert.equal(meta.alignment_contract.contextual_benchmarks, 9);
   assert.equal(Object.keys(meta.alignment_inputs_sha256).length, 8);

@@ -52,6 +52,10 @@ Missing and unmatched activity is never assigned a modelled mix. Project-derived
 must retain their source rows and formula. A result is not an official statistic merely because
 its inputs are official.
 
+A fixed-distance normalized load may be published when it is a direct linear transformation of
+observed activity and certified intensity, the normalization distance is explicit, and coverage
+is retained. It must not be labelled as actual annual, lifetime, use-phase, or lifecycle GHG.
+
 ## Publication boundary
 
 The first release reports reporting-year snapshots and future policy targets. It does not publish:

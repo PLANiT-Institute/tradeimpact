@@ -55,7 +55,14 @@ def test_mcp_calls_shared_service_for_available_and_missing_company_data() -> No
             )
             assert snapshot.structured_content is not None
             assert snapshot.structured_content["status"] == "available"
-            assert len(snapshot.structured_content["metrics"]) == 7
+            assert len(snapshot.structured_content["metrics"]) == 8
+            normalized_load = next(
+                row
+                for row in snapshot.structured_content["metrics"]
+                if row["metric_id"] == "normalized_tailpipe_co2_load"
+            )
+            assert normalized_load["value"] == 85_984.351
+            assert normalized_load["unit"] == "tCO2/cohort-1000km"
 
             power_snapshot = await client.call_tool(
                 "get_company_snapshot",

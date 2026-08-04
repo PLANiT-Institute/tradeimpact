@@ -4,8 +4,9 @@
 
 The remote EEA API is used only by ``--refresh``. Normal dataset builds transform the committed
 aggregation snapshot, so CI and reviewers reproduce the same result without a live dependency.
-The adapter publishes reporting-year registrations, powertrain shares, and registration-weighted
-WLTP intensity. It does not estimate vehicle use, lifetime, or greenhouse-gas tonnes.
+The adapter publishes reporting-year registrations, powertrain shares, registration-weighted
+WLTP intensity, and a fixed-distance certified tailpipe load. The load is normalized to exactly
+1,000 km per mapped registration; it does not estimate annual use, lifetime, or lifecycle GHG.
 """
 
 from __future__ import annotations
@@ -302,6 +303,32 @@ def _metrics_for_geography(
                 "dataset_status": "Final",
             },
             "derivation": "sum(r × Ewltp) / sum(r) for registrations with Ewltp",
+            "coverage": {
+                "mapped_activity": mapped,
+                "reported_activity": total,
+                "activity_unit": "registrations",
+                "unmatched_records": int(total - mapped),
+            },
+        },
+        {
+            **common,
+            "metric_id": "normalized_tailpipe_co2_load",
+            "value": mapped * average * 1_000 / 1_000_000,
+            "unit": "tCO2/cohort-1000km",
+            "scope": {
+                "brand": "TOYOTA",
+                "vehicle_class": "EEA monitored new passenger cars",
+                "test_regime": "WLTP",
+                "normalization": "1,000 km driven by every WLTP-mapped registration",
+                "emissions_boundary": (
+                    "certified tailpipe CO2 only; excludes actual annual distance, lifetime, "
+                    "real-world correction, upstream energy, and vehicle production"
+                ),
+                "dataset_status": "Final",
+            },
+            "derivation": (
+                "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t"
+            ),
             "coverage": {
                 "mapped_activity": mapped,
                 "reported_activity": total,
