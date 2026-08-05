@@ -1,159 +1,97 @@
 # Evidence and logic audit
 
-Audit date: 2026-08-03 · Public contract: `alignment-v2`
+Audit date: 2026-08-05 · Public contract: `export-impact-v1`
 
-This audit evaluates whether the current public company snapshots are source-backed, whether the
-sources are sufficiently independent for the claim made, and whether each calculation preserves
-the source boundary. It is not a claim that every desired company-market comparison is available.
+## Conclusion
 
-## Audit conclusion
+The project's whitepaper and lifetime engine match the intended research question: sold-product
+use-phase emissions are evaluated over time against the operating country's NDC-derived sector
+path. The previous public `alignment-v2` presentation did not. It reduced Toyota to a current WLTP
+average and EU regulatory target distance, and introduced a fixed-1,000km load unrelated to
+vehicle lifetime or destination use. That metric and the corresponding visual narrative have been
+removed.
 
-| Pilot | Published observation | Target treatment | Assessment |
-|---|---|---|---|
-| Toyota · EU27 · 2024 | 803,094 EEA registrations; 803,042 with WLTP; 107.073 gCO2/km; 85,984.351 tCO2 at a fixed 1,000 km per mapped vehicle | EU 2025 and 2030 new-car fleet values are direct pathway comparators | Source-backed and reproducible for a Toyota-brand EU27 portfolio snapshot; normalized load is certified tailpipe CO2, not actual annual, lifetime, or lifecycle GHG |
-| JERA · Japan · FY2024 | 242 TWh net sending-end generation; 520 kgCO2e/MWh | Japan 2030 use-end factor and 2040 national mix ranges are context only | Company observations are independently assured; no company target gap is logically available |
-| KOEN · Korea · 2024 | 39,660 GWh reported generation; 30,606,585 tCO2e Scope 1; 103,752 tCO2e Scope 2 | Korea 2030 transition-sector emissions and 2030/2038 carbon-free shares are context only | Company totals are source-backed but not independently assured in the reviewed web table; missing gross/net basis and row-total discrepancies block intensity and target-gap calculations |
-| MOL · Global fleet · FY2024 | 10.95 gCO2e/ton-mile lifecycle EEOI; 783 vessels | IMO 2030 carbon-intensity, absolute-GHG, and zero/near-zero-energy ambitions are context only | The company metric is independently assured, but its FY2019 Standard Method anchor, WtW boundary, and company fleet aggregation do not match IMO's 2008 international-shipping average CO2 target |
+The corrected Toyota pilot now publishes what the evidence supports and withholds what it does
+not:
 
-The public dataset contains no vehicle-lifetime greenhouse-gas estimate, reconstructed company
-history, inferred fleet mix, avoided-emissions claim, or universal cross-sector score.
+| Claim | Evidence status | Publication decision |
+|---|---|---|
+| 803,094 Toyota-brand EU27 first registrations in 2024 | EEA final regulatory dataset | publish |
+| Destination × commercial name × powertrain composition | reproducible EEA aggregation; 660 rows | publish with mapping coverage |
+| Production/export origin | not present in EEA registration data | do not infer |
+| Certified WLTP tailpipe/electricity fields | EEA regulatory fields where reported | publish as product parameters, not lifetime GHG |
+| EU collective 2035 NDC | official UNFCCC NDC submission | publish as economy-wide fallback context |
+| EU 2030 domestic-transport path | Eurostat base plus Commission pathway | publish as regional sector proxy with boundary caveat |
+| Country-specific passenger-car pathways | not collected for 27 destinations | mark missing |
+| Actual annual or lifetime GHG and TI | use, survival, real-world, and country pathways incomplete | withhold |
 
 ## Toyota evidence chain
 
-1. The [EEA CO2 monitoring dataset](https://co2cars.apps.eea.europa.eu/) supplies final 2024
-   Toyota-brand new passenger-car registration records.
-2. The adapter aggregates observed registrations and computes the WLTP-weighted average only for
-   records with a reported WLTP value. Coverage remains explicit: 52 registrations are unmatched.
-3. The adapter also multiplies each country's mapped registrations by its certified intensity
-   and exactly 1,000 km. The 27 country loads reconcile to 85,984.351 tCO2 for EU27. This is a
-   fixed-distance normalization, not an estimate of how far vehicles actually drive.
-4. [Regulation (EU) 2019/631](https://eur-lex.europa.eu/eli/reg/2019/631/2025-07-09/eng)
-   supplies the EU-wide 2025 and 2030 new-car fleet pathway values.
-5. The platform reports distance to that fleet pathway. It does not label the result Toyota's
-   manufacturer-specific legal target or compliance status.
+1. The [EEA passenger-car monitoring dataset](https://co2cars.apps.eea.europa.eu/) is queried for
+   final 2024 Toyota-brand records in the EU27.
+2. The committed aggregate response and exact query are content-addressed. Builds do not depend
+   on a live API.
+3. Registration field `r` is aggregated by destination `MS`, commercial name `Cn`, and a disclosed
+   powertrain classification based on fuel mode/type.
+4. Certified tailpipe `Ewltp` and electricity-use `z` fields are registration weighted only over
+   records where they are reported; mapped units remain explicit.
+5. The 660 published evidence rows reconcile exactly to 803,094 registrations. Two registrations
+   lack a usable commercial name and 52 lack WLTP tailpipe values.
+6. The data establishes operating destination, not manufacturing or export origin. Level 2
+   production attribution remains missing.
 
-The observation is regulatory data and the target is adopted law. The aggregation is
-project-derived but reproducible and content-addressed. Remaining limitations are the
-brand-versus-manufacturer-group boundary, certified tailpipe CO2 rather than lifecycle GHG, and
-the absence of actual distance, real-world correction, upstream energy, vehicle-production data,
-and directly comparable country-specific targets for the 27 market rows.
+## Target hierarchy audit
 
-## JERA evidence chain
+The [EU and Member States' 2025 NDC](https://unfccc.int/sites/default/files/2025-11/DK-2025-11-05%20EU%20NDC.pdf)
+is a collective economy-wide commitment. Its 2035 range cannot be subtracted directly from a
+vehicle intensity.
 
-1. [JERA Environmental Data](https://www.jera.co.jp/en/sustainability/data/e) reports FY2024
-   domestic-group net generation and generation emissions intensity, with joint ventures included
-   proportionately.
-2. [SOCOTEC Certification Japan's independent assurance report](https://www.jera.co.jp/static/files/sustainability/pdf/JERA_Independent_Assurance_Report_20250930.pdf)
-   confirms 242 billion kWh and 0.520 kgCO2e/kWh on the same stated boundary.
-3. The adapter applies transparent unit conversions to 242,000,000 MWh and 520 kgCO2e/MWh. It
-   does not recompute intensity from a differently rounded or differently bounded emissions total.
-4. Japan's [Seventh Strategic Energy Plan](https://www.meti.go.jp/english/press/2025/0218_001.html)
-   provides the FY2040 national renewable and thermal generation ranges. The METI FY2030 review
-   response provides a national electricity factor at the point of use.
-5. These policy values remain `context_only`: JERA's generator boundary is not the whole national
-   system, and sending-end generation is not electricity at the point of use.
+The European Commission 2040-target impact assessment reports a 2030 domestic-transport pathway.
+Combined with the 2023 Eurostat domestic-transport inventory, it supports a transparent regional
+sector-rate proxy. It still differs from the desired benchmark because it covers all domestic
+transport, not passenger-car service intensity, and it is regional rather than country-specific.
+The data contract labels it `sector_proxy` and `proxy_requires_disclosure`.
 
-The company observation is company-reported but independently assured. The policy context is
-official primary evidence. This supports publishing the observations and context, but not a
-numeric JERA alignment margin.
+The calculation hierarchy therefore remains:
 
-## KOEN evidence chain
+1. destination-country passenger-car or road-transport path — missing;
+2. EU domestic-transport regional proxy — available with caveat;
+3. EU collective economy-wide NDC — context only.
 
-1. The [KOEN ESG Data Center](https://www.koenergy.kr/kosep/hw/fr/st/sthw41/main.do?menuCd=FN060101)
-   reports 2024 generation and Scope 1/2 emissions for headquarters and five Korean plants.
-2. The adapter converts only 39,660 GWh to 39,660,000 MWh. It retains KOEN's reported Scope 1
-   and Scope 2 totals and does not replace them with sums of the displayed plant rows.
-3. The Scope 1 plant rows sum to 30,608,585 tCO2e, 2,000 above the reported total. The Scope 2
-   rows sum to 104,021 tCO2e, 269 above the reported total. Both discrepancies are published in
-   derivation and source notes.
-4. The page does not identify reported generation as gross or net, and no independent assurance
-   statement was identified for this web table. A generation emissions intensity is therefore
-   not calculated.
-5. Korea's [Eleventh Basic Plan for Long-Term Electricity Supply and Demand](https://www.motir.go.kr/kor/article/ATCLc01b2801b/70083/view)
-   supplies the adopted national context: 145.9 MtCO2e transition-sector emissions in 2030 and
-   carbon-free generation shares of 53.0% in 2030 and 70.7% in 2038.
-6. These values remain `context_only`: they describe the national system and are not allocated to
-   KOEN. The plan also notes that the post-2030 national emissions pathway had not yet been set.
+No proxy is relabelled as an observed country target.
 
-The company values are primary company reporting, not independent observations. The Korean plan
-is official primary policy evidence. That evidence is sufficient to publish reported facts,
-source quality, and national context, but not to claim a KOEN intensity or alignment margin.
+## Logic audit
 
-## MOL evidence chain
+The engine correctly implements:
 
-1. [MOL Environmental Data](https://www.mol.co.jp/en/sustainability/data/pdf/environmental/data.pdf)
-   reports FY2024 energy efficiency operational indicator (EEOI) of 10.95 gCO2e/ton-mile for MOL
-   and major ocean-going vessels operated by group subsidiaries in Japan and overseas.
-2. [ClassNK's independent assurance statement](https://www.mol.co.jp/en/sustainability/data/pdf/environmental/assurance-statement.pdf)
-   confirms the value, lifecycle-GHG boundary, Standard Method, and FY2024 period. Its
-   [appendix](https://www.mol.co.jp/en/sustainability/data/pdf/environmental/appendix.pdf) records
-   783 applicable vessels and the transport-work denominator.
-3. The adapter retains the source's `ton-mile` unit and current FY2024 observation. It does not
-   convert the result to tonne-nautical-mile, reconstruct a trend, or attribute the fleet average
-   to an individual customer.
-4. The [2023 IMO GHG Strategy](https://www.imo.org/en/ourwork/environment/pages/2023-imo-strategy-on-reduction-of-ghg-emissions-from-ships.aspx)
-   supplies 2030 ambitions for carbon intensity, absolute GHG, and zero/near-zero-GHG energy.
-5. All three remain `context_only`: the carbon-intensity ambition is an international-shipping
-   average CO2 measure against 2008, whereas MOL reports company-fleet lifecycle GHG under a
-   Standard Method anchored to FY2019. The other IMO ambitions use different numerators.
+- a dynamic destination benchmark rather than a static product comparator;
+- distinct product emissions trajectories for combustion, BEV, and PHEV channels;
+- independent transport and power decarbonisation rates;
+- lifetime summation over `t = 0…T−1`;
+- mandatory decomposition by destination and powertrain;
+- S1/S2/S3 scenarios and missing-input propagation.
 
-MOL's observation is company-reported and independently assured, and the IMO strategy is official
-primary evidence. This supports a traceable operating-efficiency snapshot and policy context, but
-not a numeric MOL-to-IMO gap or compliance verdict.
+The arithmetic is logically coherent, but a coherent formula does not make unsourced inputs
+objective. The public readiness gate now prevents the validation fixture, proxy VKT, assumed
+lifetime, or reconstructed history from becoming a company result.
 
-## Excluded conflicting or incomplete values
+## Remaining risks and controls
 
-- JERA's current environmental webpage displays a Scope 1 value that differs from the assurance
-  appendix and is not marked as externally assured. The public adapter does not publish it.
-- A JERA Integrated Report 2025 generation graphic contains a total that does not reconcile with
-  its displayed fuel components and the financial table. The public adapter does not publish that
-  total or infer a fuel mix from the graphic.
-- JERA does not disclose renewable generation MWh on the same assured domestic-group boundary.
-  The platform therefore leaves company renewable and thermal shares unavailable.
-- KOEN's displayed 2024 Scope 1 and Scope 2 plant rows do not reconcile to the reported totals.
-  The platform retains the reported totals, exposes the differences, and does not silently
-  recompute them.
-- KOEN does not state whether 39,660 GWh is gross or net generation on the ESG data page. The
-  platform therefore leaves generation emissions intensity unavailable even though division is
-  mathematically possible.
-- MOL states that customer allocation makes the published fleet EEOI unsuitable for calculating
-  a particular customer's GHG emissions. The platform preserves that caveat and publishes no
-  customer-level attribution.
-- MOL's current EEOI and IMO's carbon-intensity ambition do not share a baseline year, emissions
-  boundary, or aggregation population. The platform therefore does not manufacture a target
-  level from the percentage ambition or substitute headquarters/flag-state policy for voyage and
-  international-shipping jurisdiction.
-- Country pathway rates in `countries.json` remain sector context; they are not silently converted
-  into company activity targets.
-- The Japanese policy URLs and extracted values are recorded and the adapter snapshot is
-  content-addressed, but the source servers block unattended PDF downloads. The raw policy PDFs
-  are therefore not vendored or byte-hashed; they need a fresh document review when the policy
-  source changes.
+- **Brand boundary:** `TOYOTA` registrations are not the full consolidated group. The company
+  boundary is explicit.
+- **Commercial-name quality:** EEA strings need normalization before model-family or factory
+  mapping. Raw names are retained.
+- **Hybrid interpretation:** HEV and PHEV are not labelled zero-emission. PHEV needs a real-world
+  utility factor.
+- **Energy transfer:** BEV use emissions move from road transport tailpipe to the power sector;
+  zero certified tailpipe is not zero use-phase GHG.
+- **Regional proxy:** the EU transport rate is broader than passenger cars. A final country result
+  requires country-specific evidence or a prominently disclosed proxy decision.
+- **Scope relationship:** TI is additional to Scope 3 Category 11 and is never netted against it.
 
-## Calculation and publication controls
+## Next evidence priority
 
-- Direct arithmetic requires matching sector, metric definition, applicable geography, and unit.
-- Contextual values and ranges never enter the alignment-margin function.
-- Every company metric carries source IDs, derivation, evidence class, scope, and mapped/reported
-  activity coverage.
-- Source snapshots, adapters, engine files, workbook, and the complete published dataset are
-  content-addressed in `meta.json`.
-- The dataset build rejects missing sources, non-HTTPS source links, unregistered company metrics,
-  unit mismatches, invalid coverage, partial or inverted contextual ranges, and invalid target
-  relations.
-- Web and MCP clients read the same published JSON and use the same Python query/comparison service.
-
-## Remaining verification backlog
-
-1. The second power company and geography gate is now met by JERA/Japan and KOEN/Korea, but the
-   power method is not yet `supported`: neither pilot has a directly comparable company-policy
-   benchmark, and KOEN lacks a verified generation denominator.
-2. Obtain plant- or technology-level generation on a consistent company boundary to reveal
-   portfolio composition instead of relying on a company average.
-3. Source a generator-boundary policy target or an exact policy-defined clean-generation measure
-   before calculating a JERA or KOEN target distance.
-4. Add a second shipping company and reproducible voyage- or route-level transport work before
-   promoting shipping beyond `pilot`; retain IMO context as non-arithmetic until a like-for-like
-   company metric and baseline are available.
-5. Extend the same acceptance gates to steel and petrochemicals; do not reuse automotive, power,
-   or shipping denominators across sectors.
+Collect country-specific vehicle use and survival first for the largest destination shares, then
+country road-transport and grid pathways, followed by real-world product parameters. This order
+turns the largest observed cohort coverage into calculation-ready coverage without inventing a
+complete EU27 result.

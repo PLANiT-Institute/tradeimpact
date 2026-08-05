@@ -63,12 +63,9 @@ jobs:
           fi
       - run: npm ci --prefix web
       - run: npm test --prefix web
-      - run: python -c "import sys; sys.path.insert(0, 'web/api'); import compute"
       - run: npm run build --prefix web
 
-  # The web app must build from committed files alone — no engine, no
-  # build_dataset.py. This is exactly what Vercel does; if this job fails,
-  # production deploys are broken even when dataset-and-web is green.
+  # The static web app must build from the committed published dataset alone.
   web-clean-build:
     runs-on: ubuntu-latest
     steps:

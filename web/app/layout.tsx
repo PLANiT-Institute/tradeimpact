@@ -22,7 +22,7 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Trade Impact Framework — PLANiT Institute",
   description:
-    "Evidence-backed company activity and market climate-target alignment across sectors.",
+    "Company sold-product cohorts mapped to lifetime use-phase emissions and destination climate pathways.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -40,16 +40,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <img className="brand-logo" src="/planit-logo-white.png" alt="PLANiT Institute" height={22} />
               <span className="brand-lockup">
                 Trade Impact
-                <small>company activity × market targets</small>
+                <small>sold products × destination NDCs</small>
               </span>
             </Link>
             <nav className="topnav" aria-label="Primary navigation">
-              <Link href="/">Story</Link>
-              <Link href="/analysis/toyota">Analysis</Link>
-              <Link href="/#markets">Markets</Link>
+              <Link href="/#purpose">Purpose</Link>
+              <Link href="/analysis/toyota">Toyota pilot</Link>
               <Link href="/#sectors">Sectors</Link>
               <Link href="/#method">Method</Link>
-              <Link href="/calculator" className="nav-cta">Research calculator</Link>
             </nav>
           </header>
           {children}
@@ -60,12 +58,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <img src="/planit-logo-white.png" alt="PLANiT Institute" height={20} />
               </a>
               <strong>Trade Impact</strong>
-              <p>Company activity mapped to comparable market climate targets.</p>
+              <p>Sold-product lifetime emissions mapped to destination climate pathways.</p>
             </div>
             <p>
-              Direct arithmetic is published only when sector, metric definition, geography,
-              and unit match. Contextual pathways remain context. Published under GNU GPL v3 ·
-              © 2026 PLANiT Institute.
+              Observed activity, sourced scenarios, and derived results remain separate. Missing
+              lifetime inputs never become zero or an invented estimate. Published under GNU GPL
+              v3 · © 2026 PLANiT Institute.
             </p>
           </footer>
         </div>

@@ -1,5 +1,9 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Read-only query service shared by the web application and MCP adapter."""
+"""Read-only query service shared by the web application and MCP adapter.
+
+The exported-product cohort methods are the primary Trade Impact surface. The older alignment
+queries remain available as a supporting evidence layer for sector pilots.
+"""
 
 from __future__ import annotations
 
@@ -47,6 +51,119 @@ class TradeImpactService:
             wanted = sector_id.strip().lower()
             firms = [firm for firm in firms if _sector_id(firm.get("sector", "")) == wanted]
         return {"status": "available", "companies": firms}
+
+    def list_product_cohorts(
+        self,
+        company_id: str | None = None,
+        sector_id: str | None = None,
+        year: int | None = None,
+    ) -> dict[str, object]:
+        """List observed company sales/deployment cohorts without returning every product row."""
+        cohorts = self._read("product_cohorts.json")
+        matches = [
+            row
+            for row in cohorts
+            if (company_id is None or row.get("company_id") == company_id)
+            and (sector_id is None or row.get("sector") == sector_id)
+            and (year is None or row.get("cohort_year") == year)
+        ]
+        summaries = []
+        for row in matches:
+            summary = {key: value for key, value in row.items() if key != "records"}
+            summary["record_count"] = len(row.get("records", []))
+            summary["destination_count"] = len(
+                {record["destination_geography"] for record in row.get("records", [])}
+            )
+            summary["product_name_count"] = len(
+                {record["product_name"] for record in row.get("records", [])}
+            )
+            summaries.append(summary)
+        return {
+            "status": "available" if summaries else "not_available",
+            "cohorts": summaries,
+            "reason": None if summaries else "no observed product cohort for this scope",
+        }
+
+    def get_product_cohort(
+        self,
+        cohort_id: str,
+        destination_geography: str | None = None,
+        product_type: str | None = None,
+        product_name: str | None = None,
+    ) -> dict[str, object]:
+        """Return source-backed cohort rows, optionally filtered by destination and product."""
+        cohorts = self._read("product_cohorts.json")
+        cohort = next((row for row in cohorts if row.get("cohort_id") == cohort_id), None)
+        if cohort is None:
+            return {"status": "not_available", "reason": f"unknown cohort: {cohort_id}"}
+        records = [
+            row
+            for row in cohort.get("records", [])
+            if (
+                destination_geography is None
+                or row.get("destination_geography") == destination_geography
+            )
+            and (product_type is None or row.get("product_type") == product_type)
+            and (product_name is None or row.get("product_name") == product_name)
+        ]
+        result = {key: value for key, value in cohort.items() if key != "records"}
+        result["records"] = records
+        result["selection"] = {
+            "destination_geography": destination_geography,
+            "product_type": product_type,
+            "product_name": product_name,
+            "selected_units": sum(row["units"] for row in records),
+            "record_count": len(records),
+        }
+        return {"status": "available", "cohort": result}
+
+    def get_impact_readiness(self, cohort_id: str) -> dict[str, object]:
+        """Explain whether a lifetime TI result is publishable and list every missing input."""
+        records = self._read("impact_readiness.json")
+        readiness = next((row for row in records if row.get("cohort_id") == cohort_id), None)
+        if readiness is None:
+            return {
+                "status": "not_available",
+                "reason": f"no readiness assessment for cohort: {cohort_id}",
+            }
+        return {"status": readiness["status"], "readiness": readiness}
+
+    def get_destination_pathway(
+        self,
+        geography: str,
+        sector_id: str,
+    ) -> dict[str, object]:
+        """Return the target hierarchy for one destination without collapsing proxy levels."""
+        try:
+            get_sector_profile(sector_id)
+        except KeyError as exc:
+            return {"status": "not_available", "reason": str(exc)}
+        pathways = self._read("pathways.json")
+        matches = [
+            row
+            for row in pathways
+            if (row.get("geography") == geography or geography in row.get("applies_to", []))
+            and row.get("sector") in {sector_id, "economy_wide"}
+        ]
+        matches.sort(
+            key=lambda row: (
+                row.get("geography") != geography,
+                row.get("sector") == "economy_wide",
+                row.get("target_year", 9999),
+            )
+        )
+        return {
+            "status": "available" if matches else "not_available",
+            "geography": geography,
+            "sector": sector_id,
+            "pathways": matches,
+            "preferred_level": "destination-country sector pathway",
+            "reason": (
+                None
+                if matches
+                else "no destination, regional-sector, or economy-wide pathway is available"
+            ),
+        }
 
     def get_company_snapshot(
         self,

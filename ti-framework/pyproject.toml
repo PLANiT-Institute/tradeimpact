@@ -5,12 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ti_framework"
 version = "0.1.0"
-description = "Open-source calculation engine for the Trade Impact (TI) Framework — automotive sector"
+description = "Open-source lifetime impact engine for exported-product cohorts and destination climate pathways"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "GPL-3.0-or-later" }
 authors = [{ name = "PLANiT Institute" }]
-keywords = ["climate", "NDC", "trade", "emissions", "automotive", "decarbonisation"]
+keywords = ["climate", "NDC", "trade", "emissions", "products", "decarbonisation"]
 dependencies = [
     "numpy>=1.24,<2.4",
     "pandas>=2.0",

@@ -28,6 +28,8 @@ export interface Firm {
   project: "TI" | "CAP";
   runnable: boolean;
   alignment_available?: boolean;
+  cohort_available?: boolean;
+  lifetime_result_available?: boolean;
   illustrative?: boolean;
   basis?: "source-backed" | null;
   note?: string;
@@ -196,6 +198,79 @@ export interface SourceRecord {
   notes?: string;
 }
 
+export interface ProductCohortRecord {
+  destination_geography: string;
+  product_name: string;
+  product_type: string;
+  units: number;
+  unit: "registrations" | string;
+  certified_tailpipe_gco2_per_km: number | null;
+  tailpipe_mapped_units: number;
+  certified_electricity_kwh_per_km: number | null;
+  electricity_mapped_units: number;
+  use_phase_channel: string;
+  destination_inventory_sector: string;
+  source_ids: string[];
+}
+
+export interface ProductCohort {
+  cohort_id: string;
+  contract_version: "export-impact-v1" | string;
+  company_id: string;
+  company_name: string;
+  company_boundary: string;
+  sector: string;
+  cohort_year: number;
+  product_class: string;
+  activity_basis: string;
+  destination_scope: string;
+  origin_mapping_status: string;
+  origin_mapping_note: string;
+  source_ids: string[];
+  coverage: {
+    reported_units: number;
+    mapped_destination_units: number;
+    mapped_product_name_units: number;
+    mapped_product_type_units: number;
+    unit: string;
+  };
+  records: ProductCohortRecord[];
+}
+
+export interface DestinationPathway {
+  pathway_id: string;
+  sector: string;
+  geography: string;
+  applies_to: string[];
+  policy_level: string;
+  authority_status: string;
+  scenario: Scenario;
+  baseline_year: number;
+  target_year: number;
+  baseline_value?: number;
+  target_value?: number;
+  reduction_min?: number;
+  reduction_max?: number;
+  annual_reduction_rate?: number;
+  unit: string;
+  comparison_role: "sector_proxy" | "fallback_context";
+  calculation_status: string;
+  source_ids: string[];
+  notes: string;
+}
+
+export interface ImpactReadiness {
+  cohort_id: string;
+  method_version: string;
+  status: "available" | "inputs_incomplete" | string;
+  observed_inputs: string[];
+  missing_required_inputs: string[];
+  available_target_level: string;
+  preferred_target_level: string;
+  publication_decision: string;
+  publication_reason: string;
+}
+
 /** Sector-wide support parameters every real firm must agree on (see meta.json). */
 export interface SupportContract {
   lifetime_T: number | null;
@@ -211,7 +286,6 @@ export interface Meta {
   engine_source_sha256: string;
   workbook: string;
   workbook_sha256: string;
-  compute_service_sha256: string;
   dataset_sha256: string;
   support_contract: SupportContract;
   target_sources_sha256: Record<string, string>;
@@ -222,6 +296,14 @@ export interface Meta {
     direct_benchmarks: number;
     contextual_benchmarks: number;
     company_metrics: number;
+    rule: string;
+  };
+  impact_contract: {
+    version: string;
+    product_cohorts: number;
+    cohort_records: number;
+    destination_pathways: number;
+    published_lifetime_results: number;
     rule: string;
   };
   collection_status: {

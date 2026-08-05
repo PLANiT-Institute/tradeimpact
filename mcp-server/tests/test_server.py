@@ -7,7 +7,7 @@ from mcp import Client
 from tradeimpact_mcp.server import mcp
 
 
-def test_mcp_discovers_read_only_tools_resources_and_prompt() -> None:
+def test_mcp_discovers_read_only_export_impact_contract() -> None:
     async def run() -> None:
         async with Client(mcp) as client:
             tools = await client.list_tools()
@@ -16,10 +16,10 @@ def test_mcp_discovers_read_only_tools_resources_and_prompt() -> None:
                 "list_sectors",
                 "get_sector_requirements",
                 "list_companies",
-                "get_company_snapshot",
-                "get_market_context",
-                "get_market_benchmarks",
-                "assess_company_alignment",
+                "list_product_cohorts",
+                "get_product_cohort",
+                "get_destination_pathway",
+                "get_impact_readiness",
                 "trace_source",
             }
             for tool in tools.tools:
@@ -34,121 +34,85 @@ def test_mcp_discovers_read_only_tools_resources_and_prompt() -> None:
             templates = await client.list_resource_templates()
             assert {template.uri_template for template in templates.resource_templates} == {
                 "ti://methodology/sectors/{sector_id}",
-                "ti://markets/{geography}/{sector_id}",
+                "ti://cohorts/{cohort_id}",
+                "ti://destinations/{geography}/{sector_id}",
             }
             prompts = await client.list_prompts()
-            assert {prompt.name for prompt in prompts.prompts} == {"company_market_audit"}
+            assert {prompt.name for prompt in prompts.prompts} == {
+                "exported_product_impact_audit"
+            }
 
     asyncio.run(run())
 
 
-def test_mcp_calls_shared_service_for_available_and_missing_company_data() -> None:
+def test_mcp_queries_observed_cohort_and_destination() -> None:
     async def run() -> None:
         async with Client(mcp) as client:
-            sectors = await client.call_tool("list_sectors", {})
-            assert sectors.structured_content is not None
-            assert len(sectors.structured_content["sectors"]) == 5
+            cohorts = await client.call_tool(
+                "list_product_cohorts",
+                {"company_id": "toyota", "sector_id": "automotive", "year": 2024},
+            )
+            assert cohorts.structured_content is not None
+            assert cohorts.structured_content["status"] == "available"
+            summary = cohorts.structured_content["cohorts"][0]
+            assert summary["cohort_id"] == "toyota-eu27-passenger-cars-2024"
+            assert summary["record_count"] == 660
+            assert summary["destination_count"] == 27
 
-            snapshot = await client.call_tool(
-                "get_company_snapshot",
-                {"company_id": "toyota", "year": 2024, "geography": "EU27"},
-            )
-            assert snapshot.structured_content is not None
-            assert snapshot.structured_content["status"] == "available"
-            assert len(snapshot.structured_content["metrics"]) == 8
-            normalized_load = next(
-                row
-                for row in snapshot.structured_content["metrics"]
-                if row["metric_id"] == "normalized_tailpipe_co2_load"
-            )
-            assert normalized_load["value"] == 85_984.351
-            assert normalized_load["unit"] == "tCO2/cohort-1000km"
-
-            power_snapshot = await client.call_tool(
-                "get_company_snapshot",
-                {"company_id": "jera", "year": 2024, "geography": "JP"},
-            )
-            assert power_snapshot.structured_content is not None
-            assert power_snapshot.structured_content["status"] == "available"
-            assert len(power_snapshot.structured_content["metrics"]) == 2
-
-            power_benchmarks = await client.call_tool(
-                "get_market_benchmarks",
-                {"sector_id": "power", "geography": "JP"},
-            )
-            assert power_benchmarks.structured_content is not None
-            assert len(power_benchmarks.structured_content["benchmarks"]) == 3
-            assert all(
-                row["comparison_mode"] == "contextual"
-                for row in power_benchmarks.structured_content["benchmarks"]
-            )
-
-            koen_snapshot = await client.call_tool(
-                "get_company_snapshot",
-                {"company_id": "koen", "year": 2024, "geography": "KR"},
-            )
-            assert koen_snapshot.structured_content is not None
-            assert koen_snapshot.structured_content["status"] == "available"
-            assert {
-                row["metric_id"] for row in koen_snapshot.structured_content["metrics"]
-            } == {"reported_generation", "scope1_emissions", "scope2_emissions"}
-
-            korea_benchmarks = await client.call_tool(
-                "get_market_benchmarks",
-                {"sector_id": "power", "geography": "KR"},
-            )
-            assert korea_benchmarks.structured_content is not None
-            assert len(korea_benchmarks.structured_content["benchmarks"]) == 3
-
-            shipping_snapshot = await client.call_tool(
-                "get_company_snapshot",
-                {"company_id": "mitsui", "year": 2024, "geography": "GLOBAL"},
-            )
-            assert shipping_snapshot.structured_content is not None
-            assert shipping_snapshot.structured_content["status"] == "available"
-            assert shipping_snapshot.structured_content["metrics"][0]["value"] == 10.95
-
-            shipping_benchmarks = await client.call_tool(
-                "get_market_benchmarks",
-                {"sector_id": "shipping", "geography": "GLOBAL"},
-            )
-            assert shipping_benchmarks.structured_content is not None
-            assert len(shipping_benchmarks.structured_content["benchmarks"]) == 3
-            assert all(
-                row["comparison_mode"] == "contextual"
-                for row in shipping_benchmarks.structured_content["benchmarks"]
-            )
-
-            missing = await client.call_tool(
-                "get_company_snapshot",
-                {"company_id": "hyundai", "year": 2024, "geography": "EU27"},
-            )
-            assert missing.structured_content is not None
-            assert missing.structured_content["status"] == "not_available"
-            assert missing.structured_content["metrics"] == []
-
-            alignment = await client.call_tool(
-                "assess_company_alignment",
+            france_bev = await client.call_tool(
+                "get_product_cohort",
                 {
-                    "company_id": "toyota",
-                    "sector_id": "automotive",
-                    "geography": "EU27",
-                    "observation_year": 2024,
-                    "metric_id": "new_vehicle_tailpipe_intensity",
-                    "target_year": 2025,
+                    "cohort_id": "toyota-eu27-passenger-cars-2024",
+                    "destination_geography": "FR",
+                    "product_type": "BEV",
                 },
             )
-            assert alignment.structured_content is not None
-            assert alignment.structured_content["status"] == "available"
-            assert alignment.structured_content["meets_target"] is False
-            assert alignment.structured_content["alignment_margin"] < 0
-
-            context = await client.call_tool(
-                "get_market_context",
-                {"geography": "KR", "sector_id": "power"},
+            assert france_bev.structured_content is not None
+            cohort = france_bev.structured_content["cohort"]
+            assert cohort["selection"]["selected_units"] > 0
+            assert cohort["records"]
+            assert all(
+                row["destination_geography"] == "FR" and row["product_type"] == "BEV"
+                for row in cohort["records"]
             )
-            assert context.structured_content is not None
-            assert context.structured_content["status"] == "context_only"
-            assert context.structured_content["pathway_rates"]["s2"] == 0.065024
+
+    asyncio.run(run())
+
+
+def test_mcp_preserves_target_hierarchy_and_lifetime_gate() -> None:
+    async def run() -> None:
+        async with Client(mcp) as client:
+            pathways = await client.call_tool(
+                "get_destination_pathway",
+                {"geography": "FR", "sector_id": "automotive"},
+            )
+            assert pathways.structured_content is not None
+            assert pathways.structured_content["status"] == "available"
+            rows = pathways.structured_content["pathways"]
+            assert [row["comparison_role"] for row in rows] == [
+                "sector_proxy",
+                "fallback_context",
+            ]
+            assert rows[0]["calculation_status"] == "proxy_requires_disclosure"
+            assert rows[1]["calculation_status"] == "not_directly_usable"
+
+            readiness = await client.call_tool(
+                "get_impact_readiness",
+                {"cohort_id": "toyota-eu27-passenger-cars-2024"},
+            )
+            assert readiness.structured_content is not None
+            assert readiness.structured_content["status"] == "inputs_incomplete"
+            gate = readiness.structured_content["readiness"]
+            assert gate["publication_decision"] == "withhold_lifetime_ti"
+            assert len(gate["missing_required_inputs"]) == 9
+
+            source = await client.call_tool(
+                "trace_source", {"source_id": "unfccc-eu-ndc-2025"}
+            )
+            assert source.structured_content is not None
+            assert source.structured_content["status"] == "available"
+            assert source.structured_content["source"]["publisher"].startswith(
+                "European Union"
+            )
 
     asyncio.run(run())

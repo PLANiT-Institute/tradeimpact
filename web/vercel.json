@@ -1,9 +1,4 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "nextjs",
-  "functions": {
-    "api/compute.py": {
-      "maxDuration": 30
-    }
-  }
+  "framework": "nextjs"
 }

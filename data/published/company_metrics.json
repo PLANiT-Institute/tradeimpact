@@ -55,34 +55,6 @@
     "company_id": "toyota",
     "coverage": {
       "activity_unit": "registrations",
-      "mapped_activity": 803042.0,
-      "reported_activity": 803094.0,
-      "unmatched_records": 52
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "EU27",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 85984.351
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
       "mapped_activity": 803094.0,
       "reported_activity": 803094.0,
       "unmatched_records": 0
@@ -274,34 +246,6 @@
       "reported_activity": 11120.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "AT",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 1279.735
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 11120.0,
-      "reported_activity": 11120.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "AT",
@@ -480,34 +424,6 @@
     ],
     "unit": "gCO2/km",
     "value": 105.02668414598047
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 23647.0,
-      "reported_activity": 23650.0,
-      "unmatched_records": 3
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "BE",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 2483.566
   },
   {
     "company_id": "toyota",
@@ -704,34 +620,6 @@
       "reported_activity": 5253.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "BG",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 589.066
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 5253.0,
-      "reported_activity": 5253.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "BG",
@@ -910,34 +798,6 @@
     ],
     "unit": "gCO2/km",
     "value": 78.0
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 14.0,
-      "reported_activity": 14.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "CY",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 1.092
   },
   {
     "company_id": "toyota",
@@ -1134,34 +994,6 @@
       "reported_activity": 18911.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "CZ",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 2374.808
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 18911.0,
-      "reported_activity": 18911.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "CZ",
@@ -1340,34 +1172,6 @@
     ],
     "unit": "gCO2/km",
     "value": 111.71147262072297
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 95218.0,
-      "reported_activity": 95267.0,
-      "unmatched_records": 49
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "DE",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 10636.943
   },
   {
     "company_id": "toyota",
@@ -1564,34 +1368,6 @@
       "reported_activity": 13187.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "DK",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 1174.102
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 13187.0,
-      "reported_activity": 13187.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "DK",
@@ -1770,34 +1546,6 @@
     ],
     "unit": "gCO2/km",
     "value": 123.22526978417267
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 4448.0,
-      "reported_activity": 4448.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "EE",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 548.106
   },
   {
     "company_id": "toyota",
@@ -1994,34 +1742,6 @@
       "reported_activity": 100873.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "ES",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 11060.354
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 100873.0,
-      "reported_activity": 100873.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "ES",
@@ -2200,34 +1920,6 @@
     ],
     "unit": "gCO2/km",
     "value": 94.21391276407743
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 12449.0,
-      "reported_activity": 12449.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "FI",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 1172.869
   },
   {
     "company_id": "toyota",
@@ -2424,34 +2116,6 @@
       "reported_activity": 134994.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "FR",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 13522.581
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 134994.0,
-      "reported_activity": 134994.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "FR",
@@ -2630,34 +2294,6 @@
     ],
     "unit": "gCO2/km",
     "value": 104.65170357751278
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 23480.0,
-      "reported_activity": 23480.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "GR",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 2457.222
   },
   {
     "company_id": "toyota",
@@ -2854,34 +2490,6 @@
       "reported_activity": 4224.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "HR",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 481.469
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 4224.0,
-      "reported_activity": 4224.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "HR",
@@ -3060,34 +2668,6 @@
     ],
     "unit": "gCO2/km",
     "value": 114.12896672504378
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 14275.0,
-      "reported_activity": 14275.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "HU",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 1629.191
   },
   {
     "company_id": "toyota",
@@ -3284,34 +2864,6 @@
       "reported_activity": 17079.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "IE",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 1741.373
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 17079.0,
-      "reported_activity": 17079.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "IE",
@@ -3490,34 +3042,6 @@
     ],
     "unit": "gCO2/km",
     "value": 103.56992475086435
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 122925.0,
-      "reported_activity": 122925.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "IT",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 12731.333
   },
   {
     "company_id": "toyota",
@@ -3714,34 +3238,6 @@
       "reported_activity": 6119.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "LT",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 707.007
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 6119.0,
-      "reported_activity": 6119.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "LT",
@@ -3920,34 +3416,6 @@
     ],
     "unit": "gCO2/km",
     "value": 117.45867768595042
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 1210.0,
-      "reported_activity": 1210.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "LU",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 142.125
   },
   {
     "company_id": "toyota",
@@ -4144,34 +3612,6 @@
       "reported_activity": 2838.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "LV",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 345.411
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 2838.0,
-      "reported_activity": 2838.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "LV",
@@ -4350,34 +3790,6 @@
     ],
     "unit": "gCO2/km",
     "value": 103.99620493358634
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 1054.0,
-      "reported_activity": 1054.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "MT",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 109.612
   },
   {
     "company_id": "toyota",
@@ -4574,34 +3986,6 @@
       "reported_activity": 29853.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "NL",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 2924.231
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 29853.0,
-      "reported_activity": 29853.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "NL",
@@ -4780,34 +4164,6 @@
     ],
     "unit": "gCO2/km",
     "value": 114.19835423653247
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 103174.0,
-      "reported_activity": 103174.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "PL",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 11782.301
   },
   {
     "company_id": "toyota",
@@ -5004,34 +4360,6 @@
       "reported_activity": 11149.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "PT",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 1062.596
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 11149.0,
-      "reported_activity": 11149.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "PT",
@@ -5210,34 +4538,6 @@
     ],
     "unit": "gCO2/km",
     "value": 110.551996249707
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 12799.0,
-      "reported_activity": 12799.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "RO",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 1414.955
   },
   {
     "company_id": "toyota",
@@ -5434,34 +4734,6 @@
       "reported_activity": 20143.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "SE",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 2087.96
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 20143.0,
-      "reported_activity": 20143.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "SE",
@@ -5649,34 +4921,6 @@
       "reported_activity": 3394.0,
       "unmatched_records": 0
     },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "SI",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 394.245
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 3394.0,
-      "reported_activity": 3394.0,
-      "unmatched_records": 0
-    },
     "derivation": "BEV classified registrations / all Toyota registrations",
     "evidence_class": "project_derived",
     "geography": "SI",
@@ -5855,34 +5099,6 @@
     ],
     "unit": "gCO2/km",
     "value": 122.67672600955275
-  },
-  {
-    "company_id": "toyota",
-    "coverage": {
-      "activity_unit": "registrations",
-      "mapped_activity": 9212.0,
-      "reported_activity": 9212.0,
-      "unmatched_records": 0
-    },
-    "derivation": "mapped registrations × weighted-average Ewltp × 1,000 km / 1,000,000 g per t",
-    "evidence_class": "project_derived",
-    "geography": "SK",
-    "metric_id": "normalized_tailpipe_co2_load",
-    "observation_year": 2024,
-    "scope": {
-      "brand": "TOYOTA",
-      "dataset_status": "Final",
-      "emissions_boundary": "certified tailpipe CO2 only; excludes actual annual distance, lifetime, real-world correction, upstream energy, and vehicle production",
-      "normalization": "1,000 km driven by every WLTP-mapped registration",
-      "test_regime": "WLTP",
-      "vehicle_class": "EEA monitored new passenger cars"
-    },
-    "sector": "automotive",
-    "source_ids": [
-      "eea-co2-cars-2024-final-toyota-eu27"
-    ],
-    "unit": "tCO2/cohort-1000km",
-    "value": 1130.098
   },
   {
     "company_id": "toyota",

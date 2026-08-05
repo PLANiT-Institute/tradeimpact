@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Read-only MCP adapter over the shared Trade Impact query service."""
+"""Read-only MCP adapter for exported-product lifetime and destination-NDC analysis."""
 
 from __future__ import annotations
 
@@ -55,49 +55,41 @@ def list_companies(sector_id: str | None = None) -> dict[str, Any]:
 
 
 @mcp.tool(annotations=READ_ONLY)
-def get_company_snapshot(
-    company_id: str,
-    year: int,
-    geography: str | None = None,
+def list_product_cohorts(
+    company_id: str | None = None,
+    sector_id: str | None = None,
+    year: int | None = None,
 ) -> dict[str, Any]:
-    """Return source-backed company metrics for one reporting-year snapshot, if available."""
-    return service.get_company_snapshot(company_id, year, geography)
+    """List observed sales/deployment cohorts and their destination and product coverage."""
+    return service.list_product_cohorts(company_id, sector_id, year)
 
 
 @mcp.tool(annotations=READ_ONLY)
-def get_market_context(geography: str, sector_id: str) -> dict[str, Any]:
-    """Return a sector pathway as context without pretending it is a direct company target."""
-    return service.get_market_context(geography, sector_id)
-
-
-@mcp.tool(annotations=READ_ONLY)
-def get_market_benchmarks(
-    sector_id: str,
-    geography: str,
-    metric_id: str | None = None,
+def get_product_cohort(
+    cohort_id: str,
+    destination_geography: str | None = None,
+    product_type: str | None = None,
+    product_name: str | None = None,
 ) -> dict[str, Any]:
-    """Return direct and contextual policy or regulatory benchmarks for an exact scope."""
-    return service.get_market_benchmarks(sector_id, geography, metric_id)
-
-
-@mcp.tool(annotations=READ_ONLY)
-def assess_company_alignment(
-    company_id: str,
-    sector_id: str,
-    geography: str,
-    observation_year: int,
-    metric_id: str,
-    target_year: int,
-) -> dict[str, Any]:
-    """Compare one company metric with a compatible benchmark and expose coverage and sources."""
-    return service.assess_company_alignment(
-        company_id,
-        sector_id,
-        geography,
-        observation_year,
-        metric_id,
-        target_year,
+    """Get observed destination × product rows for a cohort, with optional exact filters."""
+    return service.get_product_cohort(
+        cohort_id,
+        destination_geography,
+        product_type,
+        product_name,
     )
+
+
+@mcp.tool(annotations=READ_ONLY)
+def get_destination_pathway(geography: str, sector_id: str) -> dict[str, Any]:
+    """Return destination-sector, regional-proxy, and economy-wide NDC levels separately."""
+    return service.get_destination_pathway(geography, sector_id)
+
+
+@mcp.tool(annotations=READ_ONLY)
+def get_impact_readiness(cohort_id: str) -> dict[str, Any]:
+    """Show whether lifetime TI is publishable and which sourced inputs are still missing."""
+    return service.get_impact_readiness(cohort_id)
 
 
 @mcp.tool(annotations=READ_ONLY)
@@ -120,28 +112,38 @@ def sector_resource(sector_id: str) -> str:
     )
 
 
-@mcp.resource("ti://markets/{geography}/{sector_id}")
-def market_context_resource(geography: str, sector_id: str) -> str:
-    """Market pathway context for one geography and sector."""
+@mcp.resource("ti://destinations/{geography}/{sector_id}")
+def destination_pathway_resource(geography: str, sector_id: str) -> str:
+    """Target hierarchy for one product-use destination and sector."""
     return json.dumps(
-        service.get_market_context(geography, sector_id), ensure_ascii=False, sort_keys=True
+        service.get_destination_pathway(geography, sector_id),
+        ensure_ascii=False,
+        sort_keys=True,
+    )
+
+
+@mcp.resource("ti://cohorts/{cohort_id}")
+def product_cohort_resource(cohort_id: str) -> str:
+    """Observed destination × product records for one company cohort."""
+    return json.dumps(
+        service.get_product_cohort(cohort_id), ensure_ascii=False, sort_keys=True
     )
 
 
 @mcp.prompt()
-def company_market_audit(
+def exported_product_impact_audit(
     company_id: str,
     sector_id: str,
-    geography: str,
     year: int,
 ) -> str:
-    """Guide a source-first audit without filling data gaps with estimates."""
+    """Guide a source-first cohort and destination-NDC audit."""
     return (
-        f"Audit {company_id} in {geography} for {year} in the {sector_id} sector. "
-        "First inspect sector requirements, then retrieve the company snapshot, market "
-        "benchmarks, market context, coverage, and every cited source. Calculate a margin only "
-        "when metric definition, unit, geography, and policy scope match. Report missing or "
-        "unmatched activity explicitly and do not estimate it."
+        f"Audit {company_id}'s {year} sold-product cohort in the {sector_id} sector. "
+        "First inspect sector requirements and list matching cohorts. Then retrieve destination "
+        "and product records, inspect each destination's target hierarchy, and check impact "
+        "readiness. Separate observed inputs, sourced scenario inputs, and derived results. "
+        "Do not publish lifetime impact when the readiness gate is incomplete; list missing "
+        "inputs and trace every source instead."
     )
 
 

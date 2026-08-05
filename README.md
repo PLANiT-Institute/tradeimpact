@@ -1,31 +1,79 @@
-# Trade Impact (TI) — evidence-first multi-sector analysis product
+# Trade Impact (TI) — exported-product climate exposure
 
-Trade Impact connects observed company activity in an operating geography with directly
-comparable official sector targets, while showing broader sector and NDC pathways as context.
-Automotive, power, and shipping are the first data pilots; steel and petrochemicals share the
-evidence, coverage, query, web, and MCP contract but retain sector-specific units and boundaries.
+Trade Impact asks a specific question: **when a company sells a product into a destination
+market, will that product's use-phase emissions over its operating life help or obstruct the
+destination's sector pathway and NDC?**
 
-| Piece | Where | What |
+The framework begins with observed company sales or deployment cohorts, keeps product technology
+and destination geography attached, builds an annual use-phase trajectory, and compares that
+trajectory with the destination's policy-committed sector benchmark. It is additional to Scope 3
+Category 11 and must never be used to reduce or offset a company's GHG inventory.
+
+## Analytical chain
+
+```text
+company × cohort year × destination × product
+    → product emissions channel and efficiency
+    → destination use, survival, fuel/grid pathway
+    → destination sector benchmark (NDC fallback disclosed)
+    → annual and cumulative contribution / carbon lock-in
+    → decomposition by destination and product type
+```
+
+Observed inputs, sourced scenario inputs, and derived outputs are separate objects. Missing
+lifetime, use, energy, or policy inputs produce an unavailable result—not zero and not an invented
+estimate.
+
+## Current implementation
+
+| Piece | Where | Role |
 |---|---|---|
-| Engine (source of truth for numbers) | [`ti-framework/`](ti-framework/) | Python package `ti_framework`, CLI `ti`, pytest suite; xlsx **and** CSV inputs against one schema |
-| Alignment contract | [`ti-framework/ti_framework/alignment/`](ti-framework/ti_framework/alignment/) | Sector registry, like-for-like comparison rules, coverage, and shared read-only query service |
-| Data pipeline | [`data-pipeline/`](data-pipeline/) | `build_dataset.py` publishes source-backed benchmark data and provenance; [collection backlog](data-pipeline/COLLECTION_STATUS.md); [removed-estimate record](data-pipeline/ESTIMATES.md) |
-| Web app (Vercel) | [`web/`](web/) | Next.js Toyota/EU27, JERA/Japan, KOEN/Korea, and MOL/global evidence pages plus an explicit publication gate. No estimated firm result is rendered |
-| MCP server | [`mcp-server/`](mcp-server/) | Read-only tools/resources/prompts over the same published data used by the web app |
-| Product contract | [`docs/PRODUCT_CONTRACT.md`](docs/PRODUCT_CONTRACT.md) | Multi-sector comparison boundary and publication rules; [sector expansion](docs/SECTOR_EXPANSION.md); [evidence audit](docs/EVIDENCE_AUDIT.md) |
-| Theory ↔ code contract | [`theory/SYNC.md`](theory/SYNC.md) | Anchors ↔ docstring tokens ↔ tests, enforced by [`scripts/check_sync.py`](scripts/check_sync.py) in CI |
-| Assumption / conflict log | [`ti-framework/NOTES.md`](ti-framework/NOTES.md) | Every default, fallback, and doc conflict (D1–D4) |
+| Calculation engine | [`ti-framework/`](ti-framework/) | S1/S2/S3 lifetime cohort engine with country and product decomposition |
+| Exported-product contract | [`docs/PRODUCT_CONTRACT.md`](docs/PRODUCT_CONTRACT.md) | Required dimensions, target hierarchy, readiness gate, and publication rules |
+| Data pipeline | [`data-pipeline/`](data-pipeline/) | Reproducible source snapshots and published cohort/pathway/readiness JSON |
+| Toyota pilot | [`data-pipeline/adapters/automotive_eea.py`](data-pipeline/adapters/automotive_eea.py) | 2024 Toyota-brand EU27 registrations by destination, commercial name, and powertrain |
+| Web application | [`web/`](web/) | Visual cohort, portfolio, destination exposure, target hierarchy, and data gaps |
+| MCP server | [`mcp-server/`](mcp-server/) | Read-only cohort, destination-pathway, readiness, and source queries |
+| Whitepaper and automotive method | [`Whitepaper & Guidelines/`](Whitepaper%20%26%20Guidelines/) | Theory, equations, scenario architecture, and sector-specific rules |
 
-Deploy: see [DEPLOY.md](DEPLOY.md). Method rules that never bend: S1/S2/S3 always
-reported together; TI never netted against Scope 3; missing inputs stay missing and
-flagged — never fabricated.
+The first live cohort contains 803,094 Toyota-brand 2024 EU27 first registrations, resolved into
+660 destination × commercial-name × powertrain evidence rows. It establishes destination and
+product mix but does not prove production/export origin. A lifetime TI result is currently
+withheld because destination VKT, survival, real-world correction, country-level transport/grid
+pathways, PHEV utility factors, and hydrogen intensity are not yet source-complete.
 
-Published data is content-addressed: metadata records hashes for the engine source,
-workbook, target-company sources, compute service, and complete dataset. `countries.json`
-contains only workbook-backed country fields. Unsourced support parameters remain null in
-`meta.json`; `contract.json` pins the future report schema without publishing the internal
-illustrative validation fixture.
+## Published data
 
-The legacy compute API still accepts bounded, user-supplied inputs for methodology validation,
-but it is not the public alignment contract. Public direct comparisons fail closed unless sector,
-metric definition, applicable geography, and unit match. Missing activity remains missing.
+`data/published/` contains:
+
+- `product_cohorts.json` — observed sold/deployed product cohorts and mapping coverage;
+- `pathways.json` — destination target hierarchy, proxy role, and source IDs;
+- `impact_readiness.json` — observed and missing inputs plus publication decision;
+- `sources.json` — structured provenance;
+- `sectors.json` — sector-specific boundaries and data requirements;
+- `company_metrics.json` and `benchmarks.json` — supporting current-period evidence;
+- `meta.json` — method versions, content hashes, and inventory counts.
+
+Build and verify the dataset:
+
+```bash
+ti-framework/.venv/bin/python data-pipeline/build_dataset.py
+ti-framework/.venv/bin/python data-pipeline/check_published.py
+```
+
+Run the web app:
+
+```bash
+cd web
+npm run dev:local
+```
+
+Run the MCP server:
+
+```bash
+tradeimpact-mcp --transport stdio
+# or local HTTP
+tradeimpact-mcp --transport streamable-http --host 127.0.0.1 --port 8000
+```
+
+Deployment notes are in [`DEPLOY.md`](DEPLOY.md). Code is published under GNU GPL v3.
