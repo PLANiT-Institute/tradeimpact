@@ -14,6 +14,17 @@
   },
   {
     "accessed_date": "2026-08-05",
+    "evidence_class": "company_reported_context",
+    "license": "Company website; source terms apply",
+    "notes": "Toyota reports that about seven in ten Toyota vehicles sold in Europe are built at European production centres. This company-level statement does not map the 2024 EU27 registration cohort to individual factories or origin countries.",
+    "published_date": null,
+    "publisher": "Toyota Europe",
+    "source_id": "toyota-europe-manufacturing-context",
+    "title": "Toyota manufacturing in Europe",
+    "url": "https://www.toyota-europe.com/about-us/toyota-in-europe/european-manufacturing-plants"
+  },
+  {
+    "accessed_date": "2026-08-05",
     "evidence_class": "official_primary",
     "license": "EEA CC-BY unless otherwise indicated",
     "notes": "Publishes EU-wide WLTP fleet targets of 93.6 g/km for 2025-2029 and 49.5 g/km for 2030-2034.",
@@ -66,6 +77,30 @@
     "source_id": "eurostat-env-air-gge-2023",
     "title": "Greenhouse gas emissions by source sector (env_air_gge)",
     "url": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table?lang=en"
+  },
+  {
+    "accessed_date": "2026-08-05",
+    "evidence_class": "regulatory_dataset",
+    "license": "EEA CC-BY/re-use policy; acknowledge EEA and check item-specific terms",
+    "notes": "Exact EEA API filter: 2024, Final, Mk=HYUNDAI, EU27. The committed artifact contains aggregate results, not individual registration rows.",
+    "published_date": null,
+    "publisher": "European Environment Agency",
+    "query_sha256": "25cce2c09b2fc671aaa34cc77180a0df6fd883dbc0ea72912f86d13652b94ef5",
+    "snapshot_sha256": "0bae29be0a7a0b27c23153cb5cffb7467782594ff65d904dfcbba0012cb7592e",
+    "source_id": "eea-co2-cars-2024-final-hyundai-eu27",
+    "title": "Monitoring of CO2 emissions from new passenger cars, 2024 final",
+    "url": "https://co2cars.apps.eea.europa.eu/"
+  },
+  {
+    "accessed_date": "2026-08-05",
+    "evidence_class": "company_reported_context",
+    "license": "Company website; source terms apply",
+    "notes": "Hyundai reports that around 80% of its European sales in the first three quarters of 2024 were built at its Türkiye and Czech Republic plants. This scope is broader than EU27 and does not map individual registrations to an origin factory.",
+    "published_date": null,
+    "publisher": "Hyundai Europe",
+    "source_id": "hyundai-europe-manufacturing-context",
+    "title": "Hyundai manufacturing in Europe",
+    "url": "https://www.hyundai.com/eu/en/about-hyundai/company/made-in-europe.html"
   },
   {
     "accessed_date": "2026-08-03",

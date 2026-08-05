@@ -45,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Link>
             <nav className="topnav" aria-label="Primary navigation">
               <Link href="/#purpose">Purpose</Link>
-              <Link href="/analysis/toyota">Toyota pilot</Link>
+              <Link href="/compare/automotive">Auto compare</Link>
               <Link href="/#sectors">Sectors</Link>
               <Link href="/#method">Method</Link>
             </nav>

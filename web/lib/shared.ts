@@ -226,6 +226,12 @@ export interface ProductCohort {
   destination_scope: string;
   origin_mapping_status: string;
   origin_mapping_note: string;
+  origin_context?: {
+    status: string;
+    source_ids: string[];
+    comparability: string;
+    notes: string;
+  };
   source_ids: string[];
   coverage: {
     reported_units: number;

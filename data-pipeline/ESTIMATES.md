@@ -30,7 +30,7 @@ it is not an input source and contains no active estimate table.
 A company becomes `runnable: true` only after all of the following are collected with a
 source, unit, geography, year, and mapping rule:
 
-1. country/year/model/powertrain registration units (Toyota EU27 now collected);
+1. country/year/model/powertrain registration units (Toyota and Hyundai EU27 now collected);
 2. an exact or explicitly disclosed mapping to official certification parameters;
 3. operating-country fleet base intensity and annual distance;
 4. vehicle lifetime and required uncertainty ranges;

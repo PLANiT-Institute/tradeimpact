@@ -76,6 +76,16 @@ def test_mcp_queries_observed_cohort_and_destination() -> None:
                 for row in cohort["records"]
             )
 
+            hyundai_cohorts = await client.call_tool(
+                "list_product_cohorts",
+                {"company_id": "hyundai", "sector_id": "automotive", "year": 2024},
+            )
+            assert hyundai_cohorts.structured_content is not None
+            hyundai = hyundai_cohorts.structured_content["cohorts"][0]
+            assert hyundai["cohort_id"] == "hyundai-eu27-passenger-cars-2024"
+            assert hyundai["coverage"]["reported_units"] == 429_936
+            assert hyundai["record_count"] == 626
+
     asyncio.run(run())
 
 

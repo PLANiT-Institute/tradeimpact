@@ -42,7 +42,7 @@ type ModelSummary = {
 };
 
 export function generateStaticParams() {
-  return [{ firm: "toyota" }];
+  return [{ firm: "toyota" }, { firm: "hyundai" }];
 }
 
 export async function generateMetadata({
@@ -51,11 +51,11 @@ export async function generateMetadata({
   params: Promise<{ firm: string }>;
 }): Promise<Metadata> {
   const { firm } = await params;
+  const companyName = firm === "toyota" ? "Toyota" : firm === "hyundai" ? "Hyundai" : null;
   return {
-    title:
-      firm === "toyota"
-        ? "Toyota 2024 destination cohort — Trade Impact"
-        : "Trade Impact analysis",
+    title: companyName
+      ? `${companyName} 2024 destination cohort — Trade Impact`
+      : "Trade Impact analysis",
   };
 }
 
@@ -115,7 +115,7 @@ export default async function CompanyAnalysis({
   params: Promise<{ firm: string }>;
 }) {
   const { firm: slug } = await params;
-  if (slug !== "toyota") notFound();
+  if (slug !== "toyota" && slug !== "hyundai") notFound();
 
   const firm = getFirms().find((row) => row.slug === slug);
   const cohort = getProductCohorts().find((row) => row.company_id === slug);
@@ -144,10 +144,14 @@ export default async function CompanyAnalysis({
   );
   const zeroTailpipeUnits = typeUnits.BEV + typeUnits.FCEV;
   const combustionDependentUnits = total - zeroTailpipeUnits;
+  const [dominantType, dominantUnits] = Object.entries(typeUnits).sort(
+    (a, b) => b[1] - a[1],
+  )[0];
   const topCountry = countries[0];
   const topModels = models.slice(0, 10);
   const sourceIds = new Set([
     ...cohort.source_ids,
+    ...(cohort.origin_context?.source_ids ?? []),
     ...pathways.flatMap((pathway) => pathway.source_ids),
   ]);
   const sources = getSources().filter((source) => sourceIds.has(source.source_id));
@@ -161,7 +165,7 @@ export default async function CompanyAnalysis({
       <section className="alignment-hero cohort-hero">
         <div>
           <p className="eyebrow">Automotive pilot · 2024 sales cohort · 27 destinations</p>
-          <h1>{firm.name} <em>exported-product exposure</em></h1>
+          <h1>{cohort.company_name} <em>sold-product destination exposure</em></h1>
           <p className="lede">
             This analysis starts with the vehicles that entered use in each EU country, classifies
             their technology, and prepares the evidence chain needed to estimate how their
@@ -179,7 +183,7 @@ export default async function CompanyAnalysis({
         </div>
       </section>
 
-      <div className="alignment-facts" aria-label="Toyota cohort facts">
+      <div className="alignment-facts" aria-label={`${cohort.company_name} cohort facts`}>
         <div><span>Observed cohort</span><strong>{formatCount(total)}</strong><small>destination registrations</small></div>
         <div><span>Product resolution</span><strong>{models.length}</strong><small>commercial names · {cohort.records.length} evidence rows</small></div>
         <div><span>Zero-tailpipe share</span><strong>{pct(zeroTailpipeUnits, total)}</strong><small>BEV + FCEV · descriptive, not lifecycle zero</small></div>
@@ -191,7 +195,7 @@ export default async function CompanyAnalysis({
           <p>The framework keeps company action, physical operation, and destination policy as separate evidence layers.</p>
         </header>
         <div className="cohort-flow" role="img" aria-label="Observed sales cohort passes through product classification, destination use, lifetime emissions and NDC comparison">
-          <article className="done"><span>Observed</span><strong>Company cohort</strong><p>{formatCount(total)} Toyota-brand registrations in 2024</p></article>
+          <article className="done"><span>Observed</span><strong>Company cohort</strong><p>{formatCount(total)} {cohort.company_name}-brand registrations in 2024</p></article>
           <i>→</i>
           <article className="done"><span>Observed</span><strong>Product × destination</strong><p>{models.length} names · {countries.length} markets · 5 powertrain groups</p></article>
           <i>→</i>
@@ -225,7 +229,7 @@ export default async function CompanyAnalysis({
         <div className="capability-grid">
           <article><span>Zero tailpipe</span><strong>{formatCount(zeroTailpipeUnits)}</strong><p>{pct(zeroTailpipeUnits, total)} BEV + FCEV. Electricity or hydrogen supply emissions still belong in the use-phase model.</p></article>
           <article><span>Combustion-dependent</span><strong>{formatCount(combustionDependentUnits)}</strong><p>{pct(combustionDependentUnits, total)} PHEV + HEV + other combustion. Hybrid is not classified as zero-emission.</p></article>
-          <article><span>Dominant technology</span><strong>HEV · {pct(typeUnits.HEV, total)}</strong><p>A strong hybrid position can reduce certified tailpipe intensity while retaining fuel-combustion lock-in.</p></article>
+          <article><span>Dominant technology</span><strong>{dominantType} · {pct(dominantUnits, total)}</strong><p>The dominant powertrain determines the main use-phase emissions channel and the inputs required for a defensible lifetime comparison.</p></article>
         </div>
       </section>
 
@@ -235,7 +239,7 @@ export default async function CompanyAnalysis({
           <p>This ranking is sales exposure, not estimated greenhouse gas. Emissions ranking stays withheld until country-use inputs are sourced.</p>
         </header>
         <div className="destination-summary">
-          <div className="impact-ranking" role="img" aria-label="Top destination shares of Toyota registrations">
+          <div className="impact-ranking" role="img" aria-label={`Top destination shares of ${cohort.company_name} registrations`}>
             <div className="impact-ranking-head"><span>Top destinations</span><span>Share of observed cohort</span></div>
             {countries.slice(0, 7).map((country) => (
               <div className="impact-row" key={country.code}>
@@ -335,6 +339,7 @@ export default async function CompanyAnalysis({
           <code>Country WLTP = Σ(mapped registrations × certified gCO₂/km) ÷ mapped registrations</code>
           <code>Lifetime TI = not published while readiness.status = inputs_incomplete</code>
           <p>{cohort.origin_mapping_note}</p>
+          {cohort.origin_context ? <p><strong>Company-reported production context:</strong> {cohort.origin_context.notes}</p> : null}
         </div>
       </section>
     </main>

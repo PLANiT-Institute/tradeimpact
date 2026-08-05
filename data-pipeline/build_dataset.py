@@ -41,8 +41,8 @@ from ti_framework.io.workbook import load_workbook_inputs  # noqa: E402
 from ti_framework.models import BenchmarkStatus  # noqa: E402
 from ti_framework.report.outputs import to_json_dict  # noqa: E402
 
-from adapters.automotive_eea import SNAPSHOT as EEA_AUTOMOTIVE_SNAPSHOT  # noqa: E402
-from adapters.automotive_eea import build_records as build_eea_automotive_records  # noqa: E402
+from adapters.automotive_eea import HYUNDAI_SNAPSHOT, TOYOTA_SNAPSHOT  # noqa: E402
+from adapters.automotive_eea import build_all_records as build_eea_automotive_records  # noqa: E402
 from adapters.power_jera import SNAPSHOT as JERA_POWER_SNAPSHOT  # noqa: E402
 from adapters.power_jera import build_records as build_jera_power_records  # noqa: E402
 from adapters.power_koen import SNAPSHOT as KOEN_POWER_SNAPSHOT  # noqa: E402
@@ -61,6 +61,10 @@ TOYOTA_ALIGNMENT_NOTE = (
     "Observed Toyota-brand 2024 EU27 destination cohort available by country, commercial name, "
     "and powertrain. Lifetime TI remains withheld until destination-use and pathway inputs are "
     "source-complete."
+)
+HYUNDAI_ALIGNMENT_NOTE = (
+    "Observed Hyundai-brand 2024 EU27 destination cohort available by country, commercial name, "
+    "and powertrain. Lifetime TI and production-to-destination origin mapping remain withheld."
 )
 JERA_ALIGNMENT_NOTE = (
     "Evidence-first FY2024 Japan power snapshot available from independently assured company "
@@ -208,9 +212,8 @@ def build_meta() -> dict:
             ),
         },
         "alignment_inputs_sha256": {
-            str(EEA_AUTOMOTIVE_SNAPSHOT.relative_to(REPO)): _file_sha256(
-                EEA_AUTOMOTIVE_SNAPSHOT
-            ),
+            str(TOYOTA_SNAPSHOT.relative_to(REPO)): _file_sha256(TOYOTA_SNAPSHOT),
+            str(HYUNDAI_SNAPSHOT.relative_to(REPO)): _file_sha256(HYUNDAI_SNAPSHOT),
             "data-pipeline/adapters/automotive_eea.py": _file_sha256(
                 REPO / "data-pipeline" / "adapters" / "automotive_eea.py"
             ),
@@ -355,6 +358,9 @@ def _validate_impact_data(data: dict[str, list[dict]]) -> None:
         cohort_ids.add(cohort_id)
         if set(cohort.get("source_ids", [])) - source_ids:
             raise ValueError(f"product cohort {cohort_id} has invalid sources")
+        origin_context = cohort.get("origin_context", {})
+        if set(origin_context.get("source_ids", [])) - source_ids:
+            raise ValueError(f"product cohort {cohort_id} has invalid origin-context sources")
         records = cohort.get("records", [])
         if not records or sum(row["units"] for row in records) != cohort["coverage"]["reported_units"]:
             raise ValueError(f"product cohort {cohort_id} does not reconcile")
@@ -581,6 +587,8 @@ def main() -> int:
         firm["lifetime_result_available"] = firm["slug"] in lifetime_company_ids
         if firm["slug"] == "toyota":
             firm["note"] = TOYOTA_ALIGNMENT_NOTE
+        elif firm["slug"] == "hyundai":
+            firm["note"] = HYUNDAI_ALIGNMENT_NOTE
         elif firm["slug"] == "jera":
             firm["note"] = JERA_ALIGNMENT_NOTE
         elif firm["slug"] == "koen":

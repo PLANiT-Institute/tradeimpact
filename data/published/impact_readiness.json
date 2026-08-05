@@ -25,5 +25,32 @@
     "publication_decision": "withhold_lifetime_ti",
     "publication_reason": "A lifetime TI value would currently be driven by unsourced assumptions rather than the observed sales cohort. Missing inputs remain visible and are not assigned zero.",
     "status": "inputs_incomplete"
+  },
+  {
+    "available_target_level": "EU regional sector proxy and collective economy-wide NDC",
+    "cohort_id": "hyundai-eu27-passenger-cars-2024",
+    "method_version": "export-impact-v1",
+    "missing_required_inputs": [
+      "production/export origin mapping",
+      "destination-country annual vehicle-kilometres travelled",
+      "destination-country vehicle survival and operating lifetime",
+      "real-world correction by powertrain and market",
+      "destination-country passenger-car fleet service-intensity baseline",
+      "destination-country S1/S2/S3 road-transport pathway",
+      "destination-country S1/S2/S3 grid pathway",
+      "PHEV real-world utility factor",
+      "FCEV hydrogen supply emissions intensity"
+    ],
+    "observed_inputs": [
+      "destination-country registration volume",
+      "commercial name",
+      "powertrain classification",
+      "certified WLTP tailpipe intensity where reported",
+      "certified WLTP electricity consumption where reported"
+    ],
+    "preferred_target_level": "destination-country road-transport or passenger-car pathway",
+    "publication_decision": "withhold_lifetime_ti",
+    "publication_reason": "A lifetime TI value would currently be driven by unsourced assumptions rather than the observed sales cohort. Missing inputs remain visible and are not assigned zero.",
+    "status": "inputs_incomplete"
   }
 ]

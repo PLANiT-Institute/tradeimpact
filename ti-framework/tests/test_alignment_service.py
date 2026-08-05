@@ -145,14 +145,26 @@ def test_published_mol_snapshot_is_assured_and_imo_targets_are_context_only() ->
     assert "no directly comparable benchmark" in alignment["reason"]
 
 
-def test_missing_company_data_stays_missing() -> None:
+def test_published_hyundai_cohort_uses_same_eu27_boundary() -> None:
     service = TradeImpactService(REPO / "data" / "published")
 
     payload = service.get_company_snapshot("hyundai", 2024, "EU27")
 
-    assert payload["status"] == "not_available"
-    assert payload["metrics"] == []
-    assert "withheld" in payload["reason"]
+    assert payload["status"] == "available"
+    assert len(payload["metrics"]) == 7
+    registrations = next(
+        row for row in payload["metrics"] if row["metric_id"] == "new_vehicle_registrations"
+    )
+    intensity = next(
+        row for row in payload["metrics"] if row["metric_id"] == "new_vehicle_tailpipe_intensity"
+    )
+    assert registrations["value"] == 429_936
+    assert intensity["value"] == pytest.approx(112.8914806759633)
+
+    cohorts = service.list_product_cohorts("hyundai", "automotive", 2024)
+    assert cohorts["status"] == "available"
+    assert cohorts["cohorts"][0]["record_count"] == 626
+    assert cohorts["cohorts"][0]["destination_count"] == 27
 
 
 def test_toyota_target_distance_is_not_labeled_compliance() -> None:

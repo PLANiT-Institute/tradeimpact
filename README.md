@@ -31,16 +31,19 @@ estimate.
 | Calculation engine | [`ti-framework/`](ti-framework/) | S1/S2/S3 lifetime cohort engine with country and product decomposition |
 | Exported-product contract | [`docs/PRODUCT_CONTRACT.md`](docs/PRODUCT_CONTRACT.md) | Required dimensions, target hierarchy, readiness gate, and publication rules |
 | Data pipeline | [`data-pipeline/`](data-pipeline/) | Reproducible source snapshots and published cohort/pathway/readiness JSON |
-| Toyota pilot | [`data-pipeline/adapters/automotive_eea.py`](data-pipeline/adapters/automotive_eea.py) | 2024 Toyota-brand EU27 registrations by destination, commercial name, and powertrain |
+| Automotive comparison | [`data-pipeline/adapters/automotive_eea.py`](data-pipeline/adapters/automotive_eea.py) | 2024 Toyota- and Hyundai-brand EU27 registrations on one destination, product, and powertrain boundary |
 | Web application | [`web/`](web/) | Visual cohort, portfolio, destination exposure, target hierarchy, and data gaps |
 | MCP server | [`mcp-server/`](mcp-server/) | Read-only cohort, destination-pathway, readiness, and source queries |
 | Whitepaper and automotive method | [`Whitepaper & Guidelines/`](Whitepaper%20%26%20Guidelines/) | Theory, equations, scenario architecture, and sector-specific rules |
 
-The first live cohort contains 803,094 Toyota-brand 2024 EU27 first registrations, resolved into
-660 destination × commercial-name × powertrain evidence rows. It establishes destination and
-product mix but does not prove production/export origin. A lifetime TI result is currently
-withheld because destination VKT, survival, real-world correction, country-level transport/grid
-pathways, PHEV utility factors, and hydrogen intensity are not yet source-complete.
+The first comparison contains 803,094 Toyota-brand and 429,936 Hyundai-brand 2024 EU27 first
+registrations, resolved into 1,286 destination × commercial-name × powertrain evidence rows. It
+establishes destination and product mix but does not prove Japanese or Korean export origin.
+Toyota reports that about seven in ten European sales are produced in Europe; Hyundai reports
+around 80% for its broader European scope in the first three quarters of 2024. These company-level
+claims are context only, not registration-to-factory mappings. Lifetime TI remains withheld until
+destination VKT, survival, real-world correction, country transport/grid pathways, PHEV utility
+factors, and hydrogen intensity are source-complete.
 
 ## Published data
 
