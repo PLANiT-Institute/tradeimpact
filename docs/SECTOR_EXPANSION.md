@@ -30,8 +30,9 @@ without hidden allocation.
 
 ## Current status
 
-Automotive is the only active exported-product cohort pilot. Toyota EU27 has observed product and
-destination resolution but is not yet lifetime-result ready. Existing JERA, KOEN, and MOL
+Automotive is the only active sold-product destination-cohort pilot. Toyota and Hyundai EU27 now
+share the same observed product and destination boundary, but neither is lifetime-result ready and
+neither registration cohort proves production/export origin. Existing JERA, KOEN, and MOL
 snapshots remain useful source research, but they do not yet contain the complete product/asset ×
 destination × cohort dimensions and are not presented as equivalent Trade Impact assessments.
 

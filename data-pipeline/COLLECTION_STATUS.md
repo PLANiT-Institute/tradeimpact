@@ -2,25 +2,28 @@
 
 Snapshot date: 2026-08-05 · Public contract: `export-impact-v1`
 
-## Toyota automotive cohort
+## Automotive comparison cohorts
 
-Source scope: EEA final 2024 monitoring data, `Mk=TOYOTA`, new passenger cars first registered in
-the EU27.
+Source scope: EEA final 2024 monitoring data, `Mk=TOYOTA` and `Mk=HYUNDAI`, new passenger cars
+first registered in the EU27. Both companies use the same query and classification boundary.
 
-| Dimension | Status | Coverage |
-|---|---|---:|
-| Destination country | observed | 803,094 / 803,094 registrations |
-| Commercial name | observed as reported | 803,092 / 803,094 |
-| Powertrain group | project-classified from EEA fields | 803,094 / 803,094 |
-| Certified WLTP tailpipe CO2 | observed where reported | 803,042 / 803,094 |
-| Certified electricity use | observed where reported | 34,776 / 803,094 |
-| Destination × name × powertrain rows | published | 660 rows |
-| Production/export origin | not collected | 0 |
-| Lifetime TI result | withheld | required scenario inputs incomplete |
+| Dimension | Toyota | Hyundai |
+|---|---:|---:|
+| Destination registrations | 803,094 | 429,936 |
+| Commercial-name mapped units | 803,092 | 429,928 |
+| Powertrain-mapped units | 803,094 | 429,936 |
+| Certified WLTP tailpipe mapped | 803,042 | 429,905 |
+| Certified electricity-use mapped | 34,776 | 60,152 |
+| Destination × name × powertrain rows | 660 | 626 |
+| Commercial-name strings | 72 | 67 |
+| Production/export origin | not collected | not collected |
+| Lifetime TI result | withheld | withheld |
 
-The adapter retains 72 commercial-name strings across 27 destination countries. These are
-regulatory data labels, not yet normalized model families. Destination registration does not
-prove manufacturing country or export origin.
+The adapter covers 27 destination countries for each company. Commercial names are regulatory
+data labels, not normalized model families. Destination registration does not prove manufacturing
+country or export origin. Toyota's reported European-production share and Hyundai's reported
+Türkiye/Czech production share are retained as company-level context only and are not assigned to
+individual registrations.
 
 The previous fixed-1,000km certified tailpipe load was removed. Multiplying registrations by an
 arbitrary distance did not answer the project's lifetime and destination-NDC question.
@@ -32,7 +35,7 @@ arbitrary distance did not answer the project's lifetime and destination-NDC que
 - EU domestic-transport pathway: 2023 inventory base and 2030 Commission pathway imply a 4.344%
   annual decline. This is a regional all-transport proxy, not a country-specific passenger-car
   target.
-- Country-specific passenger-car or road-transport pathways: not yet collected for the 27 Toyota
+- Country-specific passenger-car or road-transport pathways: not yet collected for the 27 shared
   destinations. These remain the preferred benchmark.
 
 ## Inputs still blocking lifetime TI

@@ -14,12 +14,12 @@
     "status": "Candidate (e.g.)"
   },
   {
-    "alignment_available": false,
-    "cohort_available": false,
+    "alignment_available": true,
+    "cohort_available": true,
     "country": "Korea",
     "lifetime_result_available": false,
     "name": "Hyundai",
-    "note": "Company assessment withheld: source-backed country/year/model/powertrain registration volumes and the remaining calculation inputs have not been collected. Estimated vehicle mix and reconstructed historical cohorts were removed on 2026-08-03.",
+    "note": "Observed Hyundai-brand 2024 EU27 destination cohort available by country, commercial name, and powertrain. Lifetime TI and production-to-destination origin mapping remain withheld.",
     "project": "TI",
     "runnable": false,
     "sector": "Automotive",

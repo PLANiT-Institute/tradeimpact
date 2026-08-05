@@ -11,13 +11,14 @@ average and EU regulatory target distance, and introduced a fixed-1,000km load u
 vehicle lifetime or destination use. That metric and the corresponding visual narrative have been
 removed.
 
-The corrected Toyota pilot now publishes what the evidence supports and withholds what it does
-not:
+The corrected Toyota–Hyundai comparison now publishes what the evidence supports and withholds
+what it does not:
 
 | Claim | Evidence status | Publication decision |
 |---|---|---|
 | 803,094 Toyota-brand EU27 first registrations in 2024 | EEA final regulatory dataset | publish |
-| Destination × commercial name × powertrain composition | reproducible EEA aggregation; 660 rows | publish with mapping coverage |
+| 429,936 Hyundai-brand EU27 first registrations in 2024 | EEA final regulatory dataset | publish |
+| Destination × commercial name × powertrain composition | reproducible EEA aggregation; 1,286 rows | publish with mapping coverage |
 | Production/export origin | not present in EEA registration data | do not infer |
 | Certified WLTP tailpipe/electricity fields | EEA regulatory fields where reported | publish as product parameters, not lifetime GHG |
 | EU collective 2035 NDC | official UNFCCC NDC submission | publish as economy-wide fallback context |
@@ -25,18 +26,18 @@ not:
 | Country-specific passenger-car pathways | not collected for 27 destinations | mark missing |
 | Actual annual or lifetime GHG and TI | use, survival, real-world, and country pathways incomplete | withhold |
 
-## Toyota evidence chain
+## Toyota and Hyundai evidence chain
 
 1. The [EEA passenger-car monitoring dataset](https://co2cars.apps.eea.europa.eu/) is queried for
-   final 2024 Toyota-brand records in the EU27.
+   final 2024 `TOYOTA` and `HYUNDAI` brand records in the EU27 using separate exact queries.
 2. The committed aggregate response and exact query are content-addressed. Builds do not depend
    on a live API.
 3. Registration field `r` is aggregated by destination `MS`, commercial name `Cn`, and a disclosed
    powertrain classification based on fuel mode/type.
 4. Certified tailpipe `Ewltp` and electricity-use `z` fields are registration weighted only over
    records where they are reported; mapped units remain explicit.
-5. The 660 published evidence rows reconcile exactly to 803,094 registrations. Two registrations
-   lack a usable commercial name and 52 lack WLTP tailpipe values.
+5. Toyota's 660 rows reconcile to 803,094 registrations; Hyundai's 626 rows reconcile to 429,936.
+   Mapping coverage is retained separately for each company.
 6. The data establishes operating destination, not manufacturing or export origin. Level 2
    production attribution remains missing.
 
@@ -77,8 +78,11 @@ lifetime, or reconstructed history from becoming a company result.
 
 ## Remaining risks and controls
 
-- **Brand boundary:** `TOYOTA` registrations are not the full consolidated group. The company
-  boundary is explicit.
+- **Brand boundary:** `TOYOTA` and `HYUNDAI` registration filters are not consolidated-group
+  boundaries. Each brand boundary is explicit.
+- **Origin boundary:** company-reported European production shares are broader aggregate context,
+  not factory assignments for the EEA registration rows. National export comparisons remain
+  unavailable.
 - **Commercial-name quality:** EEA strings need normalization before model-family or factory
   mapping. Raw names are retained.
 - **Hybrid interpretation:** HEV and PHEV are not labelled zero-emission. PHEV needs a real-world

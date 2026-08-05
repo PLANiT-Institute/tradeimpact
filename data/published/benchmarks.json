@@ -7,7 +7,7 @@
     "comparison_mode": "direct",
     "geography": "EU27",
     "metric_id": "new_vehicle_tailpipe_intensity",
-    "notes": "EU-wide new-passenger-car fleet target. It is directly comparable as a portfolio intensity pathway but is not Toyota's manufacturer-specific compliance target; the 2024 company snapshot is unadjusted for eco-innovation or pooling.",
+    "notes": "EU-wide new-passenger-car fleet target. It is directly comparable as a portfolio intensity pathway but is not the company's manufacturer-specific compliance target; the 2024 company snapshot is unadjusted for eco-innovation or pooling.",
     "relation": "at_most",
     "sector": "automotive",
     "source_ids": [
@@ -26,7 +26,7 @@
     "comparison_mode": "direct",
     "geography": "EU27",
     "metric_id": "new_vehicle_tailpipe_intensity",
-    "notes": "EU-wide new-passenger-car fleet target. It is directly comparable as a portfolio intensity pathway but is not Toyota's manufacturer-specific compliance target; the 2024 company snapshot is unadjusted for eco-innovation or pooling.",
+    "notes": "EU-wide new-passenger-car fleet target. It is directly comparable as a portfolio intensity pathway but is not the company's manufacturer-specific compliance target; the 2024 company snapshot is unadjusted for eco-innovation or pooling.",
     "relation": "at_most",
     "sector": "automotive",
     "source_ids": [

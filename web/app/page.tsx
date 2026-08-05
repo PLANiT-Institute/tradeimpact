@@ -8,13 +8,16 @@ import {
 
 export default function Home() {
   const meta = getMeta();
-  const cohort = getProductCohorts()[0];
+  const cohorts = getProductCohorts();
   const readiness = getImpactReadiness()[0];
   const sectors = getSectors();
   const destinations = new Set(
-    cohort.records.map((record) => record.destination_geography),
+    cohorts.flatMap((cohort) => cohort.records.map((record) => record.destination_geography)),
   ).size;
-  const productNames = new Set(cohort.records.map((record) => record.product_name)).size;
+  const observedUnits = cohorts.reduce(
+    (sum, cohort) => sum + cohort.coverage.reported_units,
+    0,
+  );
 
   return (
     <main className="story-home impact-home">
@@ -32,8 +35,8 @@ export default function Home() {
               trajectory against the destination&apos;s sector pathway and NDC.
             </p>
             <div className="hero-actions">
-              <Link className="button primary" href="/analysis/toyota">
-                Open Toyota destination cohort
+              <Link className="button primary" href="/compare/automotive">
+                Compare Toyota and Hyundai
               </Link>
               <Link className="button secondary" href="#method">
                 See the calculation boundary
@@ -58,11 +61,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="story-facts" aria-label="Current Toyota cohort coverage">
+      <section className="story-facts" aria-label="Current automotive cohort coverage">
         <div className="story-frame story-fact-grid four">
-          <div><strong>{cohort.coverage.reported_units.toLocaleString("en-US")}</strong><span>observed 2024 registrations</span></div>
+          <div><strong>{observedUnits.toLocaleString("en-US")}</strong><span>observed 2024 registrations</span></div>
+          <div><strong>{cohorts.length}</strong><span>company cohorts on one boundary</span></div>
           <div><strong>{destinations}</strong><span>destination countries mapped</span></div>
-          <div><strong>{productNames}</strong><span>commercial names observed</span></div>
           <div><strong>{meta.impact_contract.published_lifetime_results}</strong><span>lifetime results released before evidence gate</span></div>
         </div>
       </section>
@@ -98,26 +101,32 @@ export default function Home() {
             <p className="chapter-index"><b>02</b><span>/ first implementation</span></p>
             <div className="chapter-heading-row">
               <div>
-                <h2>Toyota EU27 is a <em>destination-cohort pilot</em>, not the final answer.</h2>
+                <h2>Toyota and Hyundai now form a <em>like-for-like destination comparison.</em></h2>
                 <p>
-                  Official EEA monitoring data now resolves the 2024 Toyota-brand cohort into
+                  Official EEA monitoring data resolves both 2024 brand cohorts into
                   {` ${meta.impact_contract.cohort_records.toLocaleString("en-US")} `}
-                  destination × commercial-name × powertrain records. It establishes where the
-                  vehicles entered use and what technology they carry. It does not prove export
-                  origin and it does not justify a lifetime estimate on its own.
+                  destination × commercial-name × powertrain records on the same boundary. This
+                  establishes where vehicles entered use and what technology they carry. It does
+                  not prove Japanese or Korean export origin.
                 </p>
               </div>
               <span className="as-of">EEA final · 2024</span>
             </div>
           </header>
           <div className="pilot-list">
-            <div className="declaration pilot-declaration impact-pilot-card">
-              <div>
-                <span className="status-chip observed">Observed</span>
-                <h3>Toyota · EU27 passenger cars</h3>
-                <p className="panel-note">Destination registrations → product classification → use-phase input gate → destination pathway.</p>
+            {cohorts.map((cohort) => (
+              <div className="declaration pilot-declaration impact-pilot-card" key={cohort.cohort_id}>
+                <div>
+                  <span className="status-chip observed">Observed</span>
+                  <h3>{cohort.company_name} · EU27 passenger cars</h3>
+                  <p className="panel-note">{cohort.coverage.reported_units.toLocaleString("en-US")} registrations · destination → product → use-phase input gate.</p>
+                </div>
+                <Link className="button secondary" href={`/analysis/${cohort.company_id}`}>Inspect cohort →</Link>
               </div>
-              <Link className="button primary" href="/analysis/toyota">Inspect the cohort →</Link>
+            ))}
+            <div className="declaration pilot-declaration impact-pilot-card">
+              <div><span className="status-chip observed">Comparable boundary</span><h3>Toyota vs Hyundai</h3><p className="panel-note">Sales scale, technology mix, destination exposure, and origin-data caveats.</p></div>
+              <Link className="button primary" href="/compare/automotive">Open comparison →</Link>
             </div>
             <div className="readiness-line">
               <strong>Current publication decision</strong>

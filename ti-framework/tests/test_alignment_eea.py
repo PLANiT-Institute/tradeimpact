@@ -9,7 +9,13 @@ import pytest
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "data-pipeline"))
 
-from adapters.automotive_eea import POWERTRAINS, SNAPSHOT, build_records  # noqa: E402
+from adapters.automotive_eea import (  # noqa: E402
+    HYUNDAI_SNAPSHOT,
+    POWERTRAINS,
+    SNAPSHOT,
+    build_all_records,
+    build_records,
+)
 
 
 def test_eea_snapshot_is_aggregated_hashed_and_reproducible() -> None:
@@ -108,3 +114,38 @@ def test_readiness_gate_withholds_lifetime_result() -> None:
     assert readiness["publication_decision"] == "withhold_lifetime_ti"
     assert len(readiness["missing_required_inputs"]) == 9
     assert "unsourced assumptions" in readiness["publication_reason"]
+
+
+def test_hyundai_uses_the_same_eea_boundary_without_claiming_korean_exports() -> None:
+    snapshot = json.loads(HYUNDAI_SNAPSHOT.read_text())
+    payload = build_records(company_id="hyundai", include_shared=False)
+    cohort = payload["product_cohorts"][0]
+    metrics = [row for row in payload["company_metrics"] if row["geography"] == "EU27"]
+
+    assert snapshot["adapter_version"] == "eea-hyundai-eu27-v2"
+    assert snapshot["brand_filter"] == "Mk=HYUNDAI"
+    assert cohort["cohort_id"] == "hyundai-eu27-passenger-cars-2024"
+    assert cohort["coverage"]["reported_units"] == 429_936
+    assert len(cohort["records"]) == 626
+    assert len({row["destination_geography"] for row in cohort["records"]}) == 27
+    assert len({row["product_name"] for row in cohort["records"]}) == 67
+    assert cohort["origin_mapping_status"] == "not_collected"
+    assert cohort["origin_context"]["comparability"] == "context_only_not_cohort_mapping"
+    assert "does not map individual registrations" in cohort["origin_context"]["notes"]
+    registrations = next(row for row in metrics if row["metric_id"] == "new_vehicle_registrations")
+    intensity = next(row for row in metrics if row["metric_id"] == "new_vehicle_tailpipe_intensity")
+    assert registrations["value"] == 429_936
+    assert intensity["value"] == pytest.approx(112.8914806759633)
+
+
+def test_combined_automotive_adapter_publishes_shared_policy_sources_once() -> None:
+    payload = build_all_records()
+
+    assert {row["company_id"] for row in payload["product_cohorts"]} == {
+        "toyota",
+        "hyundai",
+    }
+    assert len(payload["impact_readiness"]) == 2
+    assert len(payload["pathways"]) == 2
+    source_ids = [row["source_id"] for row in payload["sources"]]
+    assert len(source_ids) == len(set(source_ids))

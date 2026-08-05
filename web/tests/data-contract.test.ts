@@ -22,8 +22,9 @@ test("internal engine result schema remains pinned", () => {
 
 test("Toyota product cohort reconciles by destination, product, and powertrain", () => {
   const cohorts = getProductCohorts();
-  assert.equal(cohorts.length, 1);
-  const cohort = cohorts[0];
+  assert.equal(cohorts.length, 2);
+  const cohort = cohorts.find((row) => row.company_id === "toyota");
+  assert.ok(cohort);
   assert.equal(cohort.contract_version, "export-impact-v1");
   assert.equal(cohort.cohort_id, "toyota-eu27-passenger-cars-2024");
   assert.equal(cohort.coverage.reported_units, 803_094);
@@ -40,6 +41,19 @@ test("Toyota product cohort reconciles by destination, product, and powertrain",
   );
   assert.equal(cohort.origin_mapping_status, "not_collected");
   assert.match(cohort.origin_mapping_note, /do not.*prove|not.*produced/i);
+});
+
+test("Hyundai cohort is comparable on the same EEA boundary", () => {
+  const cohort = getProductCohorts().find((row) => row.company_id === "hyundai");
+  assert.ok(cohort);
+  assert.equal(cohort.cohort_id, "hyundai-eu27-passenger-cars-2024");
+  assert.equal(cohort.coverage.reported_units, 429_936);
+  assert.equal(cohort.records.length, 626);
+  assert.equal(new Set(cohort.records.map((row) => row.destination_geography)).size, 27);
+  assert.equal(new Set(cohort.records.map((row) => row.product_name)).size, 67);
+  assert.equal(cohort.origin_mapping_status, "not_collected");
+  assert.equal(cohort.origin_context?.comparability, "context_only_not_cohort_mapping");
+  assert.match(cohort.origin_context?.notes ?? "", /does not map individual registrations/i);
 });
 
 test("zero-tailpipe classification stays distinct from lifetime GHG", () => {
@@ -103,7 +117,8 @@ test("readiness gate blocks unsourced lifetime results", () => {
 
   const meta = getMeta();
   assert.equal(meta.impact_contract.version, "export-impact-v1");
-  assert.equal(meta.impact_contract.cohort_records, 660);
+  assert.equal(meta.impact_contract.product_cohorts, 2);
+  assert.equal(meta.impact_contract.cohort_records, 1_286);
   assert.equal(meta.impact_contract.published_lifetime_results, 0);
   assert.match(meta.engine_source_sha256, /^[a-f0-9]{64}$/);
   assert.match(meta.dataset_sha256, /^[a-f0-9]{64}$/);
@@ -111,11 +126,15 @@ test("readiness gate blocks unsourced lifetime results", () => {
 
 test("cohort and pathway records cite published sources", () => {
   const sourceIds = new Set(getSources().map((source) => source.source_id));
-  const cohort = getProductCohorts()[0];
-  for (const sourceId of cohort.source_ids) assert.ok(sourceIds.has(sourceId));
-  for (const row of cohort.records) {
-    assert.ok(row.source_ids.length > 0);
-    for (const sourceId of row.source_ids) assert.ok(sourceIds.has(sourceId));
+  for (const cohort of getProductCohorts()) {
+    for (const sourceId of cohort.source_ids) assert.ok(sourceIds.has(sourceId));
+    for (const sourceId of cohort.origin_context?.source_ids ?? []) {
+      assert.ok(sourceIds.has(sourceId));
+    }
+    for (const row of cohort.records) {
+      assert.ok(row.source_ids.length > 0);
+      for (const sourceId of row.source_ids) assert.ok(sourceIds.has(sourceId));
+    }
   }
   for (const pathway of getDestinationPathways()) {
     assert.ok(pathway.source_ids.length > 0);

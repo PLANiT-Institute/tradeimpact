@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""EEA passenger-car adapter for the Toyota 2024 EU27 destination cohort.
+"""EEA passenger-car adapter for company 2024 EU27 destination cohorts.
 
 The remote EEA API is used only by ``--refresh``. Normal dataset builds transform the committed
 aggregation snapshot, so CI and reviewers reproduce the same result without a live dependency.
@@ -23,7 +23,10 @@ from pathlib import Path
 from typing import Any
 
 REPO = Path(__file__).resolve().parents[2]
-SNAPSHOT = REPO / "data-pipeline" / "source-snapshots" / "eea_toyota_2024_final.json"
+TOYOTA_SNAPSHOT = REPO / "data-pipeline" / "source-snapshots" / "eea_toyota_2024_final.json"
+HYUNDAI_SNAPSHOT = REPO / "data-pipeline" / "source-snapshots" / "eea_hyundai_2024_final.json"
+# Backwards-compatible default for callers that request the original Toyota cohort.
+SNAPSHOT = TOYOTA_SNAPSHOT
 API = "https://co2cars.apps.eea.europa.eu/tools/api"
 DATASET_URL = "https://co2cars.apps.eea.europa.eu/"
 TARGET_URL = (
@@ -40,6 +43,12 @@ EU_TRANSPORT_PATHWAY_URL = (
 )
 EUROSTAT_GHG_URL = (
     "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table?lang=en"
+)
+TOYOTA_EUROPE_PRODUCTION_URL = (
+    "https://www.toyota-europe.com/about-us/toyota-in-europe/european-manufacturing-plants"
+)
+HYUNDAI_EUROPE_PRODUCTION_URL = (
+    "https://www.hyundai.com/eu/en/about-hyundai/company/made-in-europe.html"
 )
 EU27 = (
     "AT",
@@ -71,6 +80,32 @@ EU27 = (
     "SE",
 )
 POWERTRAINS = ("BEV", "FCEV", "PHEV", "HEV", "ICE_OTHER")
+COMPANIES: dict[str, dict[str, str | Path]] = {
+    "toyota": {
+        "brand": "TOYOTA",
+        "company_name": "Toyota",
+        "snapshot": TOYOTA_SNAPSHOT,
+        "origin_source_id": "toyota-europe-manufacturing-context",
+        "origin_source_url": TOYOTA_EUROPE_PRODUCTION_URL,
+        "origin_note": (
+            "Toyota reports that about seven in ten Toyota vehicles sold in Europe are built "
+            "at European production centres. This company-level statement does not map the "
+            "2024 EU27 registration cohort to individual factories or origin countries."
+        ),
+    },
+    "hyundai": {
+        "brand": "HYUNDAI",
+        "company_name": "Hyundai",
+        "snapshot": HYUNDAI_SNAPSHOT,
+        "origin_source_id": "hyundai-europe-manufacturing-context",
+        "origin_source_url": HYUNDAI_EUROPE_PRODUCTION_URL,
+        "origin_note": (
+            "Hyundai reports that around 80% of its European sales in the first three quarters "
+            "of 2024 were built at its Türkiye and Czech Republic plants. This scope is broader "
+            "than EU27 and does not map individual registrations to an origin factory."
+        ),
+    },
+}
 
 
 def _canonical_bytes(value: object) -> bytes:
@@ -81,7 +116,14 @@ def _sha256(value: object) -> str:
     return hashlib.sha256(_canonical_bytes(value)).hexdigest()
 
 
-def build_query() -> dict[str, Any]:
+def _company(company_id: str) -> dict[str, str | Path]:
+    try:
+        return COMPANIES[company_id]
+    except KeyError as exc:
+        raise ValueError(f"unsupported EEA company: {company_id}") from exc
+
+
+def build_query(brand: str = "TOYOTA") -> dict[str, Any]:
     powertrain_filters = {
         "BEV": {"term": {"Fm": "E"}},
         "FCEV": {"term": {"Ft": "hydrogen"}},
@@ -158,7 +200,7 @@ def build_query() -> dict[str, Any]:
                 "must": [
                     {"term": {"year": 2024}},
                     {"match": {"scStatus": "Final"}},
-                    {"term": {"Mk": "TOYOTA"}},
+                    {"term": {"Mk": brand}},
                     {"terms": {"MS": list(EU27)}},
                 ]
             }
@@ -173,18 +215,25 @@ def build_query() -> dict[str, Any]:
     }
 
 
-def refresh_snapshot(path: Path = SNAPSHOT, accessed_date: str = "2026-08-03") -> None:
-    query = build_query()
+def refresh_snapshot(
+    path: Path | None = None,
+    accessed_date: str = "2026-08-05",
+    company_id: str = "toyota",
+) -> None:
+    company = _company(company_id)
+    brand = str(company["brand"])
+    path = path or Path(company["snapshot"])
+    query = build_query(brand)
     url = f"{API}?source={urllib.parse.quote(json.dumps(query, separators=(',', ':')))}"
     request = urllib.request.Request(url, headers={"User-Agent": "tradeimpact/0.1 source audit"})
     with urllib.request.urlopen(request, timeout=300) as response:  # noqa: S310
         body = json.load(response)
     payload = {
-        "adapter_version": "eea-toyota-eu27-v2",
+        "adapter_version": f"eea-{company_id}-eu27-v2",
         "accessed_date": accessed_date,
         "dataset_status": "Final",
         "dataset_year": 2024,
-        "brand_filter": "Mk=TOYOTA",
+        "brand_filter": f"Mk={brand}",
         "geography": "EU27",
         "source_page": DATASET_URL,
         "api_endpoint": API,
@@ -197,26 +246,37 @@ def refresh_snapshot(path: Path = SNAPSHOT, accessed_date: str = "2026-08-03") -
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False, sort_keys=True) + "\n")
 
 
-def build_records(path: Path = SNAPSHOT) -> dict[str, list[dict[str, Any]]]:
+def build_records(
+    path: Path | None = None,
+    company_id: str = "toyota",
+    *,
+    include_shared: bool = True,
+) -> dict[str, list[dict[str, Any]]]:
+    company = _company(company_id)
+    brand = str(company["brand"])
+    path = path or Path(company["snapshot"])
     snapshot = json.loads(path.read_text())
     if snapshot["query_sha256"] != _sha256(snapshot["query"]):
         raise ValueError("EEA snapshot query hash mismatch")
     if snapshot["response_sha256"] != _sha256(snapshot["response"]):
         raise ValueError("EEA snapshot response hash mismatch")
-    if snapshot["query"] != build_query():
+    if snapshot["query"] != build_query(brand):
         raise ValueError("EEA snapshot was not produced by the current adapter query")
+    if snapshot["brand_filter"] != f"Mk={brand}":
+        raise ValueError("EEA snapshot brand filter does not match the requested company")
     response = snapshot["response"]
     if response.get("timed_out") or response.get("_shards", {}).get("failed"):
         raise ValueError("EEA query was incomplete")
     aggregations = response["aggregations"]
     _validate_aggregate(aggregations, expected_countries=set(EU27))
 
-    source_id = "eea-co2-cars-2024-final-toyota-eu27"
+    source_id = f"eea-co2-cars-2024-final-{company_id}-eu27"
     target_source_id = "eea-eu-new-car-fleet-targets"
     regulation_source_id = "eu-regulation-2019-631"
     ndc_source_id = "unfccc-eu-ndc-2025"
     transport_pathway_source_id = "ec-2040-impact-assessment-transport-pathway"
     eurostat_source_id = "eurostat-env-air-gge-2023"
+    origin_source_id = str(company["origin_source_id"])
     sources = [
         {
             "source_id": source_id,
@@ -230,9 +290,20 @@ def build_records(path: Path = SNAPSHOT) -> dict[str, list[dict[str, Any]]]:
             "snapshot_sha256": snapshot["response_sha256"],
             "query_sha256": snapshot["query_sha256"],
             "notes": (
-                "Exact EEA API filter: 2024, Final, Mk=TOYOTA, EU27. The committed artifact "
+                f"Exact EEA API filter: 2024, Final, Mk={brand}, EU27. The committed artifact "
                 "contains aggregate results, not individual registration rows."
             ),
+        },
+        {
+            "source_id": origin_source_id,
+            "title": f"{company['company_name']} manufacturing in Europe",
+            "publisher": f"{company['company_name']} Europe",
+            "url": str(company["origin_source_url"]),
+            "evidence_class": "company_reported_context",
+            "published_date": None,
+            "accessed_date": snapshot["accessed_date"],
+            "license": "Company website; source terms apply",
+            "notes": str(company["origin_note"]),
         },
         {
             "source_id": target_source_id,
@@ -299,15 +370,23 @@ def build_records(path: Path = SNAPSHOT) -> dict[str, list[dict[str, Any]]]:
             ),
         },
     ]
+    if not include_shared:
+        sources = sources[:2]
 
     metrics: list[dict[str, Any]] = []
-    metrics.extend(_metrics_for_geography("EU27", aggregations, source_id))
+    metrics.extend(
+        _metrics_for_geography("EU27", aggregations, source_id, company_id, brand)
+    )
     for bucket in aggregations["countries"]["buckets"]:
-        metrics.extend(_metrics_for_geography(bucket["key"], bucket, source_id))
+        metrics.extend(
+            _metrics_for_geography(
+                bucket["key"], bucket, source_id, company_id, brand
+            )
+        )
 
     benchmark_note = (
         "EU-wide new-passenger-car fleet target. It is directly comparable as a portfolio "
-        "intensity pathway but is not Toyota's manufacturer-specific compliance target; the "
+        "intensity pathway but is not the company's manufacturer-specific compliance target; the "
         "2024 company snapshot is unadjusted for eco-innovation or pooling."
     )
     benchmarks = [
@@ -344,11 +423,17 @@ def build_records(path: Path = SNAPSHOT) -> dict[str, list[dict[str, Any]]]:
             "notes": benchmark_note,
         },
     ]
-    product_cohorts = [_build_product_cohort(snapshot, source_id)]
-    pathways = _build_pathways(
-        ndc_source_id,
-        transport_pathway_source_id,
-        eurostat_source_id,
+    if not include_shared:
+        benchmarks = []
+    product_cohorts = [_build_product_cohort(snapshot, source_id, company_id, company)]
+    pathways = (
+        _build_pathways(
+            ndc_source_id,
+            transport_pathway_source_id,
+            eurostat_source_id,
+        )
+        if include_shared
+        else []
     )
     readiness = [_build_readiness(product_cohorts[0]["cohort_id"])]
     return {
@@ -365,13 +450,15 @@ def _metrics_for_geography(
     geography: str,
     aggregate: dict[str, Any],
     source_id: str,
+    company_id: str,
+    brand: str,
 ) -> list[dict[str, Any]]:
     total = float(aggregate["registrations"]["value"])
     mapped = float(aggregate["co2_mapped"]["registrations"]["value"])
     average = float(aggregate["co2_mapped"]["weighted_average"]["value"])
     common = {
         "sector": "automotive",
-        "company_id": "toyota",
+        "company_id": company_id,
         "geography": geography,
         "observation_year": 2024,
         "source_ids": [source_id],
@@ -390,7 +477,7 @@ def _metrics_for_geography(
             "value": total,
             "unit": "registrations",
             "scope": {
-                "brand": "TOYOTA",
+                "brand": brand,
                 "vehicle_class": "EEA monitored new passenger cars",
                 "dataset_status": "Final",
             },
@@ -403,7 +490,7 @@ def _metrics_for_geography(
             "value": average,
             "unit": "gCO2/km",
             "scope": {
-                "brand": "TOYOTA",
+                "brand": brand,
                 "vehicle_class": "EEA monitored new passenger cars",
                 "test_regime": "WLTP",
                 "adjustments": "none",
@@ -429,13 +516,13 @@ def _metrics_for_geography(
                 "value": registrations / total,
                 "unit": "fraction",
                 "scope": {
-                    "brand": "TOYOTA",
+                    "brand": brand,
                     "vehicle_class": "EEA monitored new passenger cars",
                     "powertrain": powertrain,
                     "classification": "EEA fuel mode/fuel type adapter v1",
                     "dataset_status": "Final",
                 },
-                "derivation": f"{powertrain} classified registrations / all Toyota registrations",
+                "derivation": f"{powertrain} classified registrations / all {brand} registrations",
                 "coverage": full_coverage,
             }
         )
@@ -462,7 +549,12 @@ def _impact_channel(powertrain: str) -> tuple[str, str]:
     return channels[powertrain]
 
 
-def _build_product_cohort(snapshot: dict[str, Any], source_id: str) -> dict[str, Any]:
+def _build_product_cohort(
+    snapshot: dict[str, Any],
+    source_id: str,
+    company_id: str,
+    company: dict[str, str | Path],
+) -> dict[str, Any]:
     records: list[dict[str, Any]] = []
     countries = snapshot["response"]["aggregations"]["countries"]["buckets"]
     for country in countries:
@@ -509,12 +601,14 @@ def _build_product_cohort(snapshot: dict[str, Any], source_id: str) -> dict[str,
     total = float(snapshot["response"]["aggregations"]["registrations"]["value"])
     if sum(row["units"] for row in records) != total:
         raise ValueError("product cohort records do not reconcile to EU27 registrations")
+    brand = str(company["brand"])
+    company_name = str(company["company_name"])
     return {
-        "cohort_id": "toyota-eu27-passenger-cars-2024",
+        "cohort_id": f"{company_id}-eu27-passenger-cars-2024",
         "contract_version": "export-impact-v1",
-        "company_id": "toyota",
-        "company_name": "Toyota",
-        "company_boundary": "TOYOTA brand; not the consolidated Toyota Motor group",
+        "company_id": company_id,
+        "company_name": company_name,
+        "company_boundary": f"{brand} brand; not the consolidated corporate group",
         "sector": "automotive",
         "cohort_year": 2024,
         "product_class": "new passenger cars",
@@ -526,6 +620,12 @@ def _build_product_cohort(snapshot: dict[str, Any], source_id: str) -> dict[str,
             "or whether a cross-border export occurred. Production-to-destination mapping is a "
             "separate Level 2 input."
         ),
+        "origin_context": {
+            "status": "company_reported_aggregate_only",
+            "source_ids": [str(company["origin_source_id"])],
+            "comparability": "context_only_not_cohort_mapping",
+            "notes": str(company["origin_note"]),
+        },
         "source_ids": [source_id],
         "coverage": {
             "reported_units": total,
@@ -629,6 +729,20 @@ def _build_readiness(cohort_id: str) -> dict[str, Any]:
     }
 
 
+def build_all_records() -> dict[str, list[dict[str, Any]]]:
+    """Combine company cohorts while publishing shared EU pathways and benchmarks once."""
+    toyota = build_records(company_id="toyota", include_shared=True)
+    hyundai = build_records(company_id="hyundai", include_shared=False)
+    return {
+        "company_metrics": toyota["company_metrics"] + hyundai["company_metrics"],
+        "benchmarks": toyota["benchmarks"],
+        "sources": toyota["sources"] + hyundai["sources"],
+        "product_cohorts": toyota["product_cohorts"] + hyundai["product_cohorts"],
+        "pathways": toyota["pathways"],
+        "impact_readiness": toyota["impact_readiness"] + hyundai["impact_readiness"],
+    }
+
+
 def _validate_aggregate(
     aggregate: dict[str, Any],
     expected_countries: set[str] | None = None,
@@ -660,14 +774,22 @@ def _validate_aggregate(
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true", help="refresh the committed EEA snapshot")
-    parser.add_argument("--accessed-date", default="2026-08-03")
+    parser.add_argument("--accessed-date", default="2026-08-05")
+    parser.add_argument(
+        "--company",
+        choices=[*COMPANIES, "all"],
+        default="all",
+        help="company snapshot to refresh; normal builds combine all configured companies",
+    )
     args = parser.parse_args()
     if args.refresh:
-        refresh_snapshot(accessed_date=args.accessed_date)
-    records = build_records()
+        selected = COMPANIES if args.company == "all" else {args.company: COMPANIES[args.company]}
+        for company_id in selected:
+            refresh_snapshot(accessed_date=args.accessed_date, company_id=company_id)
+    records = build_all_records()
     print(
-        f"Toyota EEA adapter: {len(records['company_metrics'])} metrics, "
-        f"{len(records['benchmarks'])} benchmarks, {len(records['sources'])} sources"
+        f"EEA automotive adapter: {len(records['product_cohorts'])} cohorts, "
+        f"{len(records['company_metrics'])} metrics, {len(records['sources'])} sources"
     )
     return 0
 

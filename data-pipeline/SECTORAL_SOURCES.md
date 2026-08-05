@@ -43,12 +43,12 @@ targets are *faster* than our current Tier C S1 guesses.
 
 ## 2. Published cohort and supporting sector evidence
 
-- **Toyota / EU27 / 2024**: EEA final CO2 monitoring data —
+- **Toyota and Hyundai / EU27 / 2024**: EEA final CO2 monitoring data —
   https://co2cars.apps.eea.europa.eu/ ; EU new-car fleet targets —
   https://eur-lex.europa.eu/eli/reg/2019/631/2025-07-09/eng ; EU 2035 NDC —
   https://unfccc.int/sites/default/files/2025-11/DK-2025-11-05%20EU%20NDC.pdf . The observed
-  cohort is resolved by destination, commercial name, and powertrain. Production origin and
-  lifetime TI remain unavailable until their required inputs are sourced.
+  both cohorts are resolved on the same destination, commercial-name, and powertrain boundary.
+  Production origin and lifetime TI remain unavailable until their required inputs are sourced.
 - **JERA / Japan / FY2024**: JERA Environmental Data —
   https://www.jera.co.jp/en/sustainability/data/e ; independent assurance —
   https://www.jera.co.jp/static/files/sustainability/pdf/JERA_Independent_Assurance_Report_20250930.pdf .
