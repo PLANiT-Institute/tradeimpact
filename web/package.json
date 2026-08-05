@@ -6,7 +6,7 @@
     "prebuild": "node scripts/prepare.mjs",
     "predev": "node scripts/prepare.mjs",
     "dev": "next dev",
-    "dev:local": "node scripts/prepare.mjs && sh scripts/dev_local.sh",
+    "dev:local": "node scripts/prepare.mjs && next dev",
     "package:deploy": "node scripts/prepare.mjs",
     "deploy:vercel": "node scripts/prepare.mjs && vercel",
     "pretest": "node scripts/prepare.mjs",

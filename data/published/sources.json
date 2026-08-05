@@ -1,19 +1,19 @@
 [
   {
-    "accessed_date": "2026-08-03",
+    "accessed_date": "2026-08-05",
     "evidence_class": "regulatory_dataset",
     "license": "EEA CC-BY/re-use policy; acknowledge EEA and check item-specific terms",
     "notes": "Exact EEA API filter: 2024, Final, Mk=TOYOTA, EU27. The committed artifact contains aggregate results, not individual registration rows.",
     "published_date": null,
     "publisher": "European Environment Agency",
-    "query_sha256": "47289d050a9035b9576052cfcdc9e74c53a0c0709c82b892ee0ad8b610700ae9",
-    "snapshot_sha256": "253354f82ed2077e3f696c3068aa827a2757674fa2465d3eada849b0a4a78a19",
+    "query_sha256": "5f5983d8d4fc795bf92971a038d4eda3865790e6af1888d6449ac52d90899a4f",
+    "snapshot_sha256": "e6f297e2b87bf80789bb26a7bde1c4f97ad42c24924147984b6349d6e8f1522c",
     "source_id": "eea-co2-cars-2024-final-toyota-eu27",
     "title": "Monitoring of CO2 emissions from new passenger cars, 2024 final",
     "url": "https://co2cars.apps.eea.europa.eu/"
   },
   {
-    "accessed_date": "2026-08-03",
+    "accessed_date": "2026-08-05",
     "evidence_class": "official_primary",
     "license": "EEA CC-BY unless otherwise indicated",
     "notes": "Publishes EU-wide WLTP fleet targets of 93.6 g/km for 2025-2029 and 49.5 g/km for 2030-2034.",
@@ -24,7 +24,7 @@
     "url": "https://www.eea.europa.eu/en/analysis/indicators/co2-performance-of-new-passenger"
   },
   {
-    "accessed_date": "2026-08-03",
+    "accessed_date": "2026-08-05",
     "evidence_class": "official_primary",
     "license": "EU law/public document; EUR-Lex reuse notice applies",
     "notes": "Legal basis for EU fleet-wide and manufacturer-specific CO2 performance standards.",
@@ -33,6 +33,39 @@
     "source_id": "eu-regulation-2019-631",
     "title": "Regulation (EU) 2019/631, consolidated text",
     "url": "https://eur-lex.europa.eu/eli/reg/2019/631/2025-07-09/eng"
+  },
+  {
+    "accessed_date": "2026-08-05",
+    "evidence_class": "official_primary",
+    "license": "UNFCCC public document; source terms apply",
+    "notes": "Collective EU NDC: at least 55% net GHG reduction by 2030 and an indicative 66.25%-72.5% reduction range by 2035, relative to 1990.",
+    "published_date": "2025-11-05",
+    "publisher": "European Union and its Member States / UNFCCC NDC Registry",
+    "source_id": "unfccc-eu-ndc-2025",
+    "title": "The NDC of the European Union and its Member States",
+    "url": "https://unfccc.int/sites/default/files/2025-11/DK-2025-11-05%20EU%20NDC.pdf"
+  },
+  {
+    "accessed_date": "2026-08-05",
+    "evidence_class": "official_primary",
+    "license": "EU public document; EUR-Lex reuse notice applies",
+    "notes": "Table 3 reports a 2030 domestic-transport pathway value of 583 MtCO2e. It covers domestic transport, not passenger cars alone.",
+    "published_date": "2024-02-06",
+    "publisher": "European Commission",
+    "source_id": "ec-2040-impact-assessment-transport-pathway",
+    "title": "Impact assessment accompanying the EU 2040 climate target",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024SC0063"
+  },
+  {
+    "accessed_date": "2026-08-05",
+    "evidence_class": "official_primary",
+    "license": "Eurostat reuse policy applies",
+    "notes": "2023 EU domestic-transport total used as the base observation for the regional sector-pathway proxy.",
+    "published_date": null,
+    "publisher": "Eurostat",
+    "source_id": "eurostat-env-air-gge-2023",
+    "title": "Greenhouse gas emissions by source sector (env_air_gge)",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table?lang=en"
   },
   {
     "accessed_date": "2026-08-03",

@@ -41,13 +41,14 @@ targets are *faster* than our current Tier C S1 guesses.
 - **CA**: 2025 Progress Report on the 2030 ERP (ECCC, 2025-12), Tables 2-2/2-3 — https://www.canada.ca/en/services/environment/weather/climatechange/climate-plan/climate-plan-overview/emissions-reduction-2030/2025-progress-report.html . 주의: 최종 Clean Electricity Regulations (2024-12)는 2035 넷제로 그리드 아님 (65 tCO2/GWh from 2035, 넷제로는 2050). 2035 NDC 부문 분해 없음.
 - **AU**: Australia's emissions projections 2025 (DCCEEW, 2025-11) — https://www.dcceew.gov.au/climate-change/publications/australias-emissions-projections-2025 ; 실적: Quarterly Update Dec 2025. 주의: baseline은 2035 NDC (−62~70%)에 60–100 Mt 미달 — NDC 추가 감축분은 부문 미배분. Transport Net Zero Roadmap에 정량 Mt 목표 없음 (확인됨).
 
-## 2. Published company-market pilots
+## 2. Published cohort and supporting sector evidence
 
 - **Toyota / EU27 / 2024**: EEA final CO2 monitoring data —
   https://co2cars.apps.eea.europa.eu/ ; EU new-car fleet targets —
-  https://eur-lex.europa.eu/eli/reg/2019/631/2025-07-09/eng . The result is a
-  registration-weighted certified WLTP snapshot, not a vehicle-lifetime estimate or a
-  manufacturer-specific compliance ruling.
+  https://eur-lex.europa.eu/eli/reg/2019/631/2025-07-09/eng ; EU 2035 NDC —
+  https://unfccc.int/sites/default/files/2025-11/DK-2025-11-05%20EU%20NDC.pdf . The observed
+  cohort is resolved by destination, commercial name, and powertrain. Production origin and
+  lifetime TI remain unavailable until their required inputs are sourced.
 - **JERA / Japan / FY2024**: JERA Environmental Data —
   https://www.jera.co.jp/en/sustainability/data/e ; independent assurance —
   https://www.jera.co.jp/static/files/sustainability/pdf/JERA_Independent_Assurance_Report_20250930.pdf .

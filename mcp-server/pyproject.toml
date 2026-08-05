@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tradeimpact-mcp"
 version = "0.1.0"
-description = "Read-only MCP server for evidence-backed Trade Impact sector alignment data"
+description = "Read-only MCP server for exported-product cohorts and destination climate pathways"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "GPL-3.0-or-later" }

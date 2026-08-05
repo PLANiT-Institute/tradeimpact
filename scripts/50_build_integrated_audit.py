@@ -258,7 +258,6 @@ def main() -> int:
         ["workbook", meta["workbook"], "원본 데이터 워크북 파일명"],
         ["workbook_sha256", meta["workbook_sha256"], "워크북 파일 해시"],
         ["dataset_sha256", meta["dataset_sha256"], "발행 데이터셋 전체 해시"],
-        ["compute_service_sha256", meta["compute_service_sha256"], "공개 계산 API (api/compute.py) 해시"],
         ["generated_utc", meta.get("generated_utc"), "발행 시각 (UTC)"],
     ] + [[f"target_sources_sha256.{k}", v, "대상기업 원본 워크북 해시"]
          for k, v in meta.get("target_sources_sha256", {}).items()]

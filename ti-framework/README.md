@@ -1,13 +1,14 @@
-# TI Framework — alignment contract and calculation research engine
+# TI Framework — exported-product lifetime impact engine
 
-The public product API is `ti_framework.alignment`: a sector-neutral, evidence-first contract that
-compares observed company metrics with official targets only when sector, metric, geography, and
-unit match. It currently registers automotive, power, shipping, steel, and petrochemicals; see
+The lifetime engine is the core of Trade Impact. `ti_framework.alignment.TradeImpactService` now
+serves the observed product cohorts, destination target hierarchy, calculation readiness, and
+sources required to use it without hidden assumptions. The older exact-metric alignment queries
+remain a supporting evidence layer. See
 [`../docs/PRODUCT_CONTRACT.md`](../docs/PRODUCT_CONTRACT.md).
 
-The remainder of this document describes the original automotive lifetime calculation engine. It
-is retained for methodology research and arithmetic validation, but no estimated company result or
-reconstructed historical cohort is published from it.
+No company lifetime result is published until the observed cohort and destination-use, survival,
+energy, real-world, and S1/S2/S3 policy inputs pass the readiness gate. The internal reference
+fixture validates arithmetic only; it is not a public company assessment.
 
 Open-source calculation engine for the **Trade Impact (TI) Framework**, a firm-level metric
 that scores whether a company's products help or hinder each operating country's NDC-committed

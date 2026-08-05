@@ -11,6 +11,7 @@ reconstructed historical sales cohorts.
 - Toyota and Hyundai `data/published/{firm}.json` reports
 - the public illustrative `ReferenceCo` report and calculator template
 - the `placements_by_year` input and `by_year` published result contract
+- the fixed-1,000km normalized Toyota tailpipe load and its country ranking (removed 2026-08-05)
 
 | Removed object | Public state after 2026-08-03 |
 |---|---|
@@ -19,6 +20,7 @@ reconstructed historical sales cohorts.
 | ReferenceCo public report/template | Deleted; internal arithmetic fixture only |
 | Reconstructed 2022–2023 cohorts | Deleted from input and output contracts |
 | Proxy fleet baseline, VKT, lifetime, UF band | Omitted or null until sourced |
+| Fixed-1,000km tailpipe load | Deleted; unrelated to actual use or lifetime impact |
 
 The deletions are preserved in Git history. This file remains only as a governance record;
 it is not an input source and contains no active estimate table.
@@ -28,7 +30,7 @@ it is not an input source and contains no active estimate table.
 A company becomes `runnable: true` only after all of the following are collected with a
 source, unit, geography, year, and mapping rule:
 
-1. country/year/model/powertrain registration units;
+1. country/year/model/powertrain registration units (Toyota EU27 now collected);
 2. an exact or explicitly disclosed mapping to official certification parameters;
 3. operating-country fleet base intensity and annual distance;
 4. vehicle lifetime and required uncertainty ranges;

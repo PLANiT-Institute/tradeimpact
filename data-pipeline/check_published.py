@@ -81,7 +81,15 @@ def main() -> int:
     countries = json.loads((published / "countries.json").read_text())
     alignment = {
         name: json.loads((published / f"{name}.json").read_text())
-        for name in ("sectors", "benchmarks", "company_metrics", "sources")
+        for name in (
+            "sectors",
+            "benchmarks",
+            "company_metrics",
+            "sources",
+            "product_cohorts",
+            "pathways",
+            "impact_readiness",
+        )
     }
     errors: list[str] = []
     runnable = [firm for firm in firms if firm["runnable"]]
@@ -93,6 +101,9 @@ def main() -> int:
         "sectors.json",
         "benchmarks.json",
         "company_metrics.json",
+        "product_cohorts.json",
+        "pathways.json",
+        "impact_readiness.json",
         "sources.json",
         *(f"{firm['slug']}.json" for firm in runnable),
     }
@@ -189,6 +200,27 @@ def main() -> int:
         "meta.alignment_contract",
         errors,
     )
+    expected_impact_contract = {
+        "version": "export-impact-v1",
+        "product_cohorts": len(alignment["product_cohorts"]),
+        "cohort_records": sum(
+            len(cohort["records"]) for cohort in alignment["product_cohorts"]
+        ),
+        "destination_pathways": len(alignment["pathways"]),
+        "published_lifetime_results": sum(
+            row["status"] == "available" for row in alignment["impact_readiness"]
+        ),
+        "rule": (
+            "company × cohort year × destination × product type is computed only after "
+            "destination-use, survival, energy, and policy-pathway inputs are sourced"
+        ),
+    }
+    compare_values(
+        expected_impact_contract,
+        meta.get("impact_contract"),
+        "meta.impact_contract",
+        errors,
+    )
     recomputed_contract = build_contract_schema()
     contract = json.loads((published / "contract.json").read_text())
     compare_values(recomputed_contract, contract, "contract", errors)
@@ -215,8 +247,6 @@ def main() -> int:
     workbook = engine_dir / "data" / meta["workbook"]
     if meta["workbook_sha256"] != file_sha256(workbook):
         errors.append("meta.workbook_sha256 mismatch")
-    if meta["compute_service_sha256"] != file_sha256(REPO / "api" / "compute.py"):
-        errors.append("meta.compute_service_sha256 mismatch")
     for name, expected_hash in meta["target_sources_sha256"].items():
         if expected_hash != file_sha256(REPO / name):
             errors.append(f"meta.target_sources_sha256.{name} mismatch")

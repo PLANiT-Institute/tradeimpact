@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Build the published dataset the web app renders.
+"""Build the published dataset the web app and MCP server query.
 
     workbook.xlsx + firm universe + sector registry
         -> data/published/{firms,countries,sectors,benchmarks,company_metrics,sources,...}.json
 
-The public dataset contains source-backed benchmark data only. A firm report is not
-published until registration volumes, vehicle mapping, fleet baselines, support
-parameters, and scenario rates are collected. The illustrative reference fixture is
-used only to pin the engine/web schema; it is never emitted as a public assessment.
+Observed product cohorts, destination pathways, and calculation readiness are published as
+separate objects. A lifetime result is not published until activity, product, destination-use,
+survival, energy, and scenario inputs pass the evidence gate. The illustrative reference fixture
+is used only to pin the engine schema; it is never emitted as a public assessment.
 
 Usage:  ti-framework/.venv/bin/python data-pipeline/build_dataset.py
 """
@@ -58,8 +58,9 @@ ASSESSMENT_GATE_NOTE = (
     "mix and reconstructed historical cohorts were removed on 2026-08-03."
 )
 TOYOTA_ALIGNMENT_NOTE = (
-    "Evidence-first alignment snapshot available for Toyota-brand 2024 EU27 passenger-car "
-    "registrations. The legacy lifetime greenhouse-gas assessment remains withheld."
+    "Observed Toyota-brand 2024 EU27 destination cohort available by country, commercial name, "
+    "and powertrain. Lifetime TI remains withheld until destination-use and pathway inputs are "
+    "source-complete."
 )
 JERA_ALIGNMENT_NOTE = (
     "Evidence-first FY2024 Japan power snapshot available from independently assured company "
@@ -198,10 +199,6 @@ def build_meta() -> dict:
         "engine_source_sha256": _tree_sha256(engine_paths),
         "workbook": WORKBOOK.name,
         "workbook_sha256": _file_sha256(WORKBOOK),
-        # The public calculator's validation boundary is content-addressed too —
-        # api/compute.py can change engine-facing behaviour without touching
-        # ti_framework, so it gets its own hash.
-        "compute_service_sha256": _file_sha256(REPO / "api" / "compute.py"),
         "target_sources_sha256": {
             "TI_CaseStudy_Target_Companies.xlsx": _file_sha256(
                 REPO / "TI_CaseStudy_Target_Companies.xlsx"
@@ -306,13 +303,14 @@ def build_countries() -> tuple[list[dict], dict]:
 
 
 def build_alignment_data() -> dict[str, list[dict]]:
-    """Build the sector-neutral public contract without inventing observations.
+    """Build the shared evidence and exported-product contracts without inventing inputs.
 
     Sector adapters may add records only after source, scope, unit, and mapping coverage pass
     their validation. No adapter may fill unmatched activity with an estimated mix.
     """
+    automotive = build_eea_automotive_records()
     adapters = [
-        build_eea_automotive_records(),
+        automotive,
         build_jera_power_records(),
         build_koen_power_records(),
         build_mol_shipping_records(),
@@ -322,6 +320,9 @@ def build_alignment_data() -> dict[str, list[dict]]:
         "benchmarks": [row for adapter in adapters for row in adapter["benchmarks"]],
         "company_metrics": [row for adapter in adapters for row in adapter["company_metrics"]],
         "sources": [row for adapter in adapters for row in adapter["sources"]],
+        "product_cohorts": automotive["product_cohorts"],
+        "pathways": automotive["pathways"],
+        "impact_readiness": automotive["impact_readiness"],
     }
     _require_unique(result["sources"], "source_id")
     _require_unique(result["benchmarks"], "benchmark_id")
@@ -339,7 +340,38 @@ def build_alignment_data() -> dict[str, list[dict]]:
     if len(metric_keys) != len(set(metric_keys)):
         raise ValueError("duplicate alignment company metric identity")
     _validate_alignment_data(result)
+    _validate_impact_data(result)
     return result
+
+
+def _validate_impact_data(data: dict[str, list[dict]]) -> None:
+    """Fail publication when a cohort, pathway, or readiness record loses provenance."""
+    source_ids = {row["source_id"] for row in data["sources"]}
+    cohort_ids: set[str] = set()
+    for cohort in data["product_cohorts"]:
+        cohort_id = cohort["cohort_id"]
+        if cohort_id in cohort_ids:
+            raise ValueError(f"duplicate product cohort {cohort_id}")
+        cohort_ids.add(cohort_id)
+        if set(cohort.get("source_ids", [])) - source_ids:
+            raise ValueError(f"product cohort {cohort_id} has invalid sources")
+        records = cohort.get("records", [])
+        if not records or sum(row["units"] for row in records) != cohort["coverage"]["reported_units"]:
+            raise ValueError(f"product cohort {cohort_id} does not reconcile")
+        if any(not row.get("destination_geography") or not row.get("product_type") for row in records):
+            raise ValueError(f"product cohort {cohort_id} has an unmapped destination/product type")
+        if any(set(row.get("source_ids", [])) - source_ids for row in records):
+            raise ValueError(f"product cohort {cohort_id} record has invalid sources")
+    for pathway in data["pathways"]:
+        if set(pathway.get("source_ids", [])) - source_ids or not pathway.get("source_ids"):
+            raise ValueError(f"pathway {pathway['pathway_id']} has invalid sources")
+        if pathway.get("comparison_role") not in {"sector_proxy", "fallback_context"}:
+            raise ValueError(f"pathway {pathway['pathway_id']} has invalid comparison role")
+    for readiness in data["impact_readiness"]:
+        if readiness.get("cohort_id") not in cohort_ids:
+            raise ValueError("impact readiness references an unknown cohort")
+        if readiness.get("status") == "available" and readiness.get("missing_required_inputs"):
+            raise ValueError("an available impact result cannot retain required missing inputs")
 
 
 def _require_unique(rows: list[dict], key: str) -> None:
@@ -532,8 +564,21 @@ def main() -> int:
     countries, support_contract = build_countries()
     alignment = build_alignment_data()
     available_company_ids = {row["company_id"] for row in alignment["company_metrics"]}
+    cohort_company_ids = {row["company_id"] for row in alignment["product_cohorts"]}
+    ready_cohort_ids = {
+        row["cohort_id"]
+        for row in alignment["impact_readiness"]
+        if row["status"] == "available"
+    }
+    lifetime_company_ids = {
+        row["company_id"]
+        for row in alignment["product_cohorts"]
+        if row["cohort_id"] in ready_cohort_ids
+    }
     for firm in firms:
         firm["alignment_available"] = firm["slug"] in available_company_ids
+        firm["cohort_available"] = firm["slug"] in cohort_company_ids
+        firm["lifetime_result_available"] = firm["slug"] in lifetime_company_ids
         if firm["slug"] == "toyota":
             firm["note"] = TOYOTA_ALIGNMENT_NOTE
         elif firm["slug"] == "jera":
@@ -555,6 +600,21 @@ def main() -> int:
         "company_metrics": len(alignment["company_metrics"]),
         "rule": "direct arithmetic requires matching sector, metric definition, geography, and unit",
     }
+    meta["impact_contract"] = {
+        "version": "export-impact-v1",
+        "product_cohorts": len(alignment["product_cohorts"]),
+        "cohort_records": sum(
+            len(cohort["records"]) for cohort in alignment["product_cohorts"]
+        ),
+        "destination_pathways": len(alignment["pathways"]),
+        "published_lifetime_results": sum(
+            row["status"] == "available" for row in alignment["impact_readiness"]
+        ),
+        "rule": (
+            "company × cohort year × destination × product type is computed only after "
+            "destination-use, survival, energy, and policy-pathway inputs are sourced"
+        ),
+    }
     meta["dataset_sha256"] = _json_sha256(
         {
             "countries": countries,
@@ -573,6 +633,9 @@ def main() -> int:
         "sectors.json",
         "benchmarks.json",
         "company_metrics.json",
+        "product_cohorts.json",
+        "pathways.json",
+        "impact_readiness.json",
         "sources.json",
     }
     removed = _prune_stale_json_outputs(expected_names)
@@ -584,10 +647,15 @@ def main() -> int:
     for name, rows in alignment.items():
         _write_json(OUT / f"{name}.json", rows)
     _write_json(OUT / "meta.json", meta)
+    cohort_count = len(alignment["product_cohorts"])
+    lifetime_result_count = sum(
+        1 for row in alignment["impact_readiness"] if row["status"] == "available"
+    )
     print(
         f"built firms.json ({len(firms)} firms, "
-        f"{sum(f['runnable'] for f in firms)} legacy reports runnable; "
-        f"{len(available_company_ids)} evidence alignment snapshot) "
+        f"{cohort_count} observed product cohort; "
+        f"{lifetime_result_count} lifetime impact result; "
+        f"{len(available_company_ids)} companies with supporting evidence) "
         f"and meta.json -> {OUT}"
     )
     return 0

@@ -6,9 +6,12 @@ import { join } from "node:path";
 import type {
   AlignmentBenchmark,
   CompanyMetric,
+  DestinationPathway,
   Firm,
   FirmResult,
+  ImpactReadiness,
   Meta,
+  ProductCohort,
   PublishedCountry,
   SectorProfile,
   SourceRecord,
@@ -31,6 +34,12 @@ export const getCompanyMetrics = (): CompanyMetric[] =>
 export const getBenchmarks = (): AlignmentBenchmark[] =>
   read<AlignmentBenchmark[]>("benchmarks.json");
 export const getSources = (): SourceRecord[] => read<SourceRecord[]>("sources.json");
+export const getProductCohorts = (): ProductCohort[] =>
+  read<ProductCohort[]>("product_cohorts.json");
+export const getDestinationPathways = (): DestinationPathway[] =>
+  read<DestinationPathway[]>("pathways.json");
+export const getImpactReadiness = (): ImpactReadiness[] =>
+  read<ImpactReadiness[]>("impact_readiness.json");
 export const getContract = (): Record<string, string[]> =>
   read<Record<string, string[]>>("contract.json");
 export const getFirmResult = (slug: string): FirmResult =>

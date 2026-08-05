@@ -4,11 +4,13 @@
     "boundary_risks": [
       "manufacturer group versus brand",
       "sales versus registrations",
+      "destination registration versus verified export origin",
       "policy-specific PHEV and FCEV eligibility"
     ],
     "contextual_pathways": [
-      "road transport GHG pathway",
-      "transport NDC pathway"
+      "destination passenger-car or road-transport pathway",
+      "destination grid pathway",
+      "economy-wide NDC fallback"
     ],
     "descriptive_metrics": [
       {
@@ -22,12 +24,6 @@
         "label": "Powertrain sales share",
         "metric_id": "powertrain_sales_share",
         "unit": "fraction"
-      },
-      {
-        "description": "Certified tailpipe CO2 if every WLTP-mapped registration travels exactly 1,000 km; not an annual, lifetime, or lifecycle inventory.",
-        "label": "Normalized certified tailpipe CO2 load",
-        "metric_id": "normalized_tailpipe_co2_load",
-        "unit": "tCO2/cohort-1000km"
       }
     ],
     "direct_metrics": [

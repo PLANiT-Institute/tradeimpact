@@ -1,9 +1,11 @@
 [
   {
     "alignment_available": true,
+    "cohort_available": true,
     "country": "Japan",
+    "lifetime_result_available": false,
     "name": "Toyota",
-    "note": "Evidence-first alignment snapshot available for Toyota-brand 2024 EU27 passenger-car registrations. The legacy lifetime greenhouse-gas assessment remains withheld.",
+    "note": "Observed Toyota-brand 2024 EU27 destination cohort available by country, commercial name, and powertrain. Lifetime TI remains withheld until destination-use and pathway inputs are source-complete.",
     "project": "TI",
     "runnable": false,
     "sector": "Automotive",
@@ -13,7 +15,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Korea",
+    "lifetime_result_available": false,
     "name": "Hyundai",
     "note": "Company assessment withheld: source-backed country/year/model/powertrain registration volumes and the remaining calculation inputs have not been collected. Estimated vehicle mix and reconstructed historical cohorts were removed on 2026-08-03.",
     "project": "TI",
@@ -25,7 +29,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Japan",
+    "lifetime_result_available": false,
     "name": "Kawasaki Heavy Industries",
     "note": null,
     "project": "TI",
@@ -37,7 +43,9 @@
   },
   {
     "alignment_available": true,
+    "cohort_available": false,
     "country": "Japan",
+    "lifetime_result_available": false,
     "name": "Mitsui O.S.K. Lines (MOL)",
     "note": "Evidence-first FY2024 global-shipping snapshot available from independently assured MOL EEOI data. IMO 2030 ambitions are context only because baseline, GHG scope, and aggregation method do not match.",
     "project": "TI",
@@ -49,7 +57,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Korea",
+    "lifetime_result_available": false,
     "name": "HD Hyundai Heavy Industries",
     "note": null,
     "project": "TI",
@@ -61,7 +71,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Korea",
+    "lifetime_result_available": false,
     "name": "Samsung Heavy Industries",
     "note": null,
     "project": "TI",
@@ -73,7 +85,9 @@
   },
   {
     "alignment_available": true,
+    "cohort_available": false,
     "country": "Japan",
+    "lifetime_result_available": false,
     "name": "JERA",
     "note": "Evidence-first FY2024 Japan power snapshot available from independently assured company data. National 2030/2040 targets are context only because their boundaries do not match.",
     "project": "TI",
@@ -85,7 +99,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Japan",
+    "lifetime_result_available": false,
     "name": "TEPCO",
     "note": null,
     "project": "TI",
@@ -97,7 +113,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Korea",
+    "lifetime_result_available": false,
     "name": "KEPCO",
     "note": null,
     "project": "TI",
@@ -109,7 +127,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Korea",
+    "lifetime_result_available": false,
     "name": "Korea Southern Power (KOSPO)",
     "note": null,
     "project": "TI",
@@ -121,7 +141,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Korea",
+    "lifetime_result_available": false,
     "name": "POSCO (POSCO Holdings)",
     "project": "CAP",
     "runnable": false,
@@ -131,7 +153,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Korea",
+    "lifetime_result_available": false,
     "name": "Hyundai Steel",
     "project": "CAP",
     "runnable": false,
@@ -141,7 +165,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Japan",
+    "lifetime_result_available": false,
     "name": "Nippon Steel",
     "project": "CAP",
     "runnable": false,
@@ -151,7 +177,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Japan",
+    "lifetime_result_available": false,
     "name": "JFE Steel (JFE Holdings)",
     "project": "CAP",
     "runnable": false,
@@ -161,7 +189,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Korea",
+    "lifetime_result_available": false,
     "name": "LG Chem",
     "project": "CAP",
     "runnable": false,
@@ -171,7 +201,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Korea",
+    "lifetime_result_available": false,
     "name": "Lotte Chemical",
     "project": "CAP",
     "runnable": false,
@@ -181,7 +213,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Japan",
+    "lifetime_result_available": false,
     "name": "Mitsubishi Chemical Group",
     "project": "CAP",
     "runnable": false,
@@ -191,7 +225,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Japan",
+    "lifetime_result_available": false,
     "name": "Sumitomo Chemical",
     "project": "CAP",
     "runnable": false,
@@ -201,7 +237,9 @@
   },
   {
     "alignment_available": false,
+    "cohort_available": false,
     "country": "Japan",
+    "lifetime_result_available": false,
     "name": "Mitsui Chemicals",
     "project": "CAP",
     "runnable": false,
@@ -211,7 +249,9 @@
   },
   {
     "alignment_available": true,
+    "cohort_available": false,
     "country": "Korea",
+    "lifetime_result_available": false,
     "name": "Korea South-East Power (KOEN)",
     "note": "Evidence-first 2024 Korea power snapshot available from KOEN's official ESG table. Generation basis, plant-total reconciliation, and assurance limitations prevent an emissions-intensity or target-gap calculation.",
     "project": "TI",

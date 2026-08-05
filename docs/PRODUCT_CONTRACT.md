@@ -1,82 +1,95 @@
-# Trade Impact public product contract
+# Trade Impact exported-product contract
 
-Version: `alignment-v2` · Status: implementation contract
+Version: `export-impact-v1` · Status: implementation contract
 
-Trade Impact is an evidence-first company-to-market alignment platform. It connects a firm's
-observed activity in an operating geography with the most directly comparable official sector
-target, and then exposes broader sector and NDC pathways as context. It is designed to expand
-across sectors without forcing unlike activities into one universal unit.
+## Purpose
 
-## Non-negotiable comparison rule
+Trade Impact evaluates the climate direction embedded in a company's sold-product portfolio. For
+each cohort, it asks whether a product's use-phase emissions in its destination market stay below
+or rise above the sector pathway that the destination is committed to under its NDC.
 
-A numeric alignment margin is calculated only when all four fields match:
+The public unit of analysis is:
 
-1. sector and activity boundary;
-2. metric definition;
-3. applicable geography;
-4. unit.
+```text
+company × cohort year × destination geography × product / technology
+```
 
-The target relation must also be explicit:
+Production origin is an optional Level 2 dimension and must not be inferred from destination
+registrations. Where it is collected, the full unit becomes `production origin × destination ×
+product × cohort year`.
 
-- `at_least`: company value minus target value;
-- `at_most`: target value minus company value.
+## Three evidence layers
 
-In both cases a positive margin means the target is met or exceeded. A company snapshot may be
-compared with a future target, but the result must be labelled as distance to target, not proof of
-current regulatory compliance.
+1. **Observed activity** — units sold or deployed, destination, product/model, technology,
+   certified or measured performance, coverage, and source.
+2. **Sourced scenario inputs** — use, survival, lifetime, real-world correction, fuel/grid
+   intensity, and destination policy pathways, each with sensitivity and provenance.
+3. **Derived results** — annual product gap, cumulative cohort TI, and mandatory decomposition by
+   destination and product type.
 
-Sector-total emissions pathways and economy-wide NDC targets are `contextual` unless a separate,
-source-backed method translates them to the same activity metric. Contextual benchmarks never
-produce a numeric company gap. Contextual numerical ranges use `value_min` and `value_max`
-together; they are neither collapsed to a midpoint nor used in alignment arithmetic.
+The layers cannot be silently collapsed. A project-derived result is not an official statistic
+merely because one or more of its inputs are official.
 
-## Public objects
+## Calculation
 
-| Object | Purpose | Required provenance |
-|---|---|---|
-| Sector profile | Defines operating boundary, activity basis, metrics, and risks | Method version |
-| Company metric | One observed company/year/geography snapshot | Source IDs, derivation, evidence class |
-| Benchmark | One official target or contextual pathway | Source IDs, authority status, target relation |
-| Coverage | Shows mapped versus reported activity | Numerator, denominator, unit, unmatched count |
-| Source | Allows evidence tracing | Publisher, URL, date, evidence class, licence |
-| Alignment result | Compares an exact metric/benchmark pair | All objects above plus warnings |
+For product type `v`, destination `c`, and years since sale `t`:
 
-## Result statuses
+```text
+TI_gap,v,c(t) = E_ref,c(t) − E_product,v,c(t)
+TI_product,v,c = Σ[t=0…T−1] TI_gap,v,c(t)
+TI_cohort,F,Y0 = Σc Σv V_c,v × TI_product,v,c
+```
 
-- `available`: a direct, unit-compatible comparison was calculated;
-- `context_only`: the benchmark is relevant policy context but cannot be subtracted;
-- `not_comparable`: data exists but sector, metric, geography, or unit differs;
-- `not_available`: the required observation or benchmark is missing.
+Positive TI is a contribution relative to the pathway. Negative TI is carbon lock-in. Headline
+results must reconcile to both country and product decompositions. S1 current-policy, S2 national
+commitment, and S3 1.5°C scenarios are reported together; the transport and power pathways are
+derived independently.
 
-Missing and unmatched activity is never assigned a modelled mix. Project-derived aggregations
-must retain their source rows and formula. A result is not an official statistic merely because
-its inputs are official.
+## Destination target hierarchy
 
-A fixed-distance normalized load may be published when it is a direct linear transformation of
-observed activity and certified intensity, the normalization distance is explicit, and coverage
-is retained. It must not be labelled as actual annual, lifetime, use-phase, or lifecycle GHG.
+Use the most specific source-backed level available and disclose all fallbacks:
 
-## Publication boundary
+1. passenger-car, road-transport, or exact destination-sector pathway;
+2. broader destination transport/sector pathway;
+3. regional sector pathway that legally or analytically applies to the destination;
+4. economy-wide NDC translated with a documented allocation method;
+5. economy-wide NDC as context only when no defensible sector translation exists.
 
-The first release reports reporting-year snapshots and future policy targets. It does not publish:
+A regional or economy-wide proxy is never relabelled as a country-specific product target.
 
-- vehicle-, asset-, or product-lifetime greenhouse-gas estimates;
-- reconstructed company history;
-- avoided-emissions claims;
-- a universal cross-sector company score;
-- arithmetic between a company activity metric and an incompatible sector-total NDC value.
+## Publication gate
 
-The original lifetime calculation engine remains an internal research and arithmetic-validation
-surface until its empirical inputs and sector methods pass a separate publication review.
+A lifetime result is published only when the following are source-complete for the affected
+activity:
 
-## Machine-readable files
+- observed destination volume and product classification;
+- product use-phase efficiency or emissions channel;
+- destination annual use and survival/lifetime;
+- real-world performance correction;
+- destination sector benchmark base and S1/S2/S3 pathway;
+- destination energy-system pathway for electricity, hydrogen, or other indirect energy;
+- technology-specific parameters such as PHEV utility factor;
+- mapping coverage and uncertainty/sensitivity bounds.
 
-The reproducible dataset builder emits:
+If a required input is missing, the result status is `inputs_incomplete`. The application may
+publish the observed cohort, target hierarchy, and missing-input list, but not a lifetime value,
+avoided-emissions claim, or firm score.
 
-- `sectors.json`: sector boundaries and required data;
-- `company_metrics.json`: source-backed snapshots;
-- `benchmarks.json`: direct and contextual target records;
-- `sources.json`: structured provenance;
-- `countries.json`: existing operating-country pathway evidence;
-- `firms.json`: candidate company universe and publication gate;
-- `meta.json`: hashes, versions, inventory counts, and method contract.
+## Scope position
+
+Trade Impact is additional to Scope 3 Category 11. It does not remove, offset, or net against a
+company's absolute inventory. Manufacturing and end-of-life emissions are outside the primary
+use-phase boundary and should be disclosed separately where material.
+
+## Sector expansion
+
+The common contract is company × product × destination × cohort. Physical models remain
+sector-specific:
+
+- automotive: vehicle-km, powertrain, fuel/grid/hydrogen, fleet pathway;
+- power equipment and generation: MWh or service output, asset life, connected grid, power path;
+- shipping: tonne-nautical-mile, vessel/fuel/voyage, IMO or served-market path;
+- steel and petrochemicals: product tonnes, downstream use or production location as defined by
+  the sector method, route/technology, and industry pathway.
+
+No universal physical denominator is imposed across sectors.

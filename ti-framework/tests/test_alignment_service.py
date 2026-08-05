@@ -31,18 +31,53 @@ def test_published_toyota_eu27_snapshot_is_source_backed() -> None:
     payload = service.get_company_snapshot("toyota", 2024, "EU27")
 
     assert payload["status"] == "available"
-    assert len(payload["metrics"]) == 8
+    assert len(payload["metrics"]) == 7
     intensity = next(
         row for row in payload["metrics"] if row["metric_id"] == "new_vehicle_tailpipe_intensity"
     )
     assert intensity["value"] == pytest.approx(107.07329255505938)
     assert intensity["coverage"]["mapped_activity"] == 803_042
     assert intensity["coverage"]["reported_activity"] == 803_094
-    normalized_load = next(
-        row for row in payload["metrics"] if row["metric_id"] == "normalized_tailpipe_co2_load"
+    assert not any(
+        row["metric_id"] == "normalized_tailpipe_co2_load" for row in payload["metrics"]
     )
-    assert normalized_load["value"] == pytest.approx(85_984.351)
-    assert normalized_load["unit"] == "tCO2/cohort-1000km"
+
+
+def test_published_service_exposes_product_cohort_and_filters() -> None:
+    service = TradeImpactService(REPO / "data" / "published")
+
+    listed = service.list_product_cohorts("toyota", "automotive", 2024)
+    assert listed["status"] == "available"
+    assert listed["cohorts"][0]["record_count"] == 660
+    assert listed["cohorts"][0]["destination_count"] == 27
+    assert listed["cohorts"][0]["product_name_count"] == 72
+
+    france_bev = service.get_product_cohort(
+        "toyota-eu27-passenger-cars-2024", "FR", "BEV"
+    )
+    assert france_bev["status"] == "available"
+    assert france_bev["cohort"]["selection"]["selected_units"] > 0
+    assert france_bev["cohort"]["records"]
+    assert all(
+        row["destination_geography"] == "FR" and row["product_type"] == "BEV"
+        for row in france_bev["cohort"]["records"]
+    )
+
+
+def test_published_service_exposes_target_hierarchy_and_readiness() -> None:
+    service = TradeImpactService(REPO / "data" / "published")
+
+    pathway = service.get_destination_pathway("FR", "automotive")
+    assert pathway["status"] == "available"
+    assert [row["comparison_role"] for row in pathway["pathways"]] == [
+        "sector_proxy",
+        "fallback_context",
+    ]
+    assert pathway["pathways"][0]["geography"] == "EU27"
+
+    readiness = service.get_impact_readiness("toyota-eu27-passenger-cars-2024")
+    assert readiness["status"] == "inputs_incomplete"
+    assert readiness["readiness"]["publication_decision"] == "withhold_lifetime_ti"
 
 
 def test_published_jera_snapshot_is_assured_and_policy_is_context_only() -> None:

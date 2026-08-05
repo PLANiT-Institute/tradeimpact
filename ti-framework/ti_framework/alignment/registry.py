@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Sector registry for the evidence-first Trade Impact product."""
+"""Sector registry for exported-product lifetime impact analysis."""
 
 from __future__ import annotations
 
@@ -86,19 +86,18 @@ SECTOR_PROFILES: tuple[SectorProfile, ...] = (
                 "fraction",
                 "Registration share for one disclosed powertrain classification.",
             ),
-            MetricDefinition(
-                "normalized_tailpipe_co2_load",
-                "Normalized certified tailpipe CO2 load",
-                "tCO2/cohort-1000km",
-                "Certified tailpipe CO2 if every WLTP-mapped registration travels exactly 1,000 km; not an annual, lifetime, or lifecycle inventory.",
-            ),
         ),
-        contextual_pathways=("road transport GHG pathway", "transport NDC pathway"),
+        contextual_pathways=(
+            "destination passenger-car or road-transport pathway",
+            "destination grid pathway",
+            "economy-wide NDC fallback",
+        ),
         required_dimensions=_COMMON_DIMENSIONS
         + ("vehicle class", "model", "powertrain", "certification regime"),
         boundary_risks=(
             "manufacturer group versus brand",
             "sales versus registrations",
+            "destination registration versus verified export origin",
             "policy-specific PHEV and FCEV eligibility",
         ),
     ),

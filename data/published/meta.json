@@ -1,6 +1,6 @@
 {
   "alignment_contract": {
-    "company_metrics": 230,
+    "company_metrics": 202,
     "contextual_benchmarks": 9,
     "direct_benchmarks": 2,
     "rule": "direct arithmetic requires matching sector, metric definition, geography, and unit",
@@ -8,11 +8,11 @@
     "version": "alignment-v2"
   },
   "alignment_inputs_sha256": {
-    "data-pipeline/adapters/automotive_eea.py": "46df6862a940e9062258973bda1a8d577f9e6dfdffa92efb418d9c3f99449c11",
+    "data-pipeline/adapters/automotive_eea.py": "d9f9b361090ff5864cebfe0d9e67e746447929ca30268f37cf3968b350ed6757",
     "data-pipeline/adapters/power_jera.py": "ba05070634de61914c54b2e5e7219dae7731d37b1fce441b612909670d1993e2",
     "data-pipeline/adapters/power_koen.py": "1d3d87a27cbe23f50dbfd019640d0f95576a529631b3cd2e38941a0f9dc41ad0",
     "data-pipeline/adapters/shipping_mol.py": "0be6ecb7260fb5cc6582221bbdf4bfa8d95bcbedcace986c7e07977b97d1d2c8",
-    "data-pipeline/source-snapshots/eea_toyota_2024_final.json": "22071ab2d73fb9e82f86b1699696d7024f5a58cfa863135d782c8a91b1155a64",
+    "data-pipeline/source-snapshots/eea_toyota_2024_final.json": "e379e2ab1ea41aa0d3f939a3264321c6479231f2d8d93106b70a72e456ba1625",
     "data-pipeline/source-snapshots/jera_japan_fy2024.json": "c9dc1086efec3624eecd26c3c5f00fedb8b5686284c93b1eaaa4c8efe40833c2",
     "data-pipeline/source-snapshots/koen_korea_2024.json": "6f232b08e42fb975d01239dea27a392e0a4e140ffc4e214b830b59504aa182a4",
     "data-pipeline/source-snapshots/mol_global_fy2024.json": "725c767e4f96a87665f2ad19190af744865f531ac21cd5a31d83396ce305ae17"
@@ -33,11 +33,18 @@
       "[CA] PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
     ]
   },
-  "compute_service_sha256": "37032b1f5d67a2e63f169271ae28a203a2151a437208e35b4432b858623c4d3f",
-  "dataset_sha256": "f9b385b7bd5f2308aa31846e446cfe7a2729ad1628a9f82300421f833d6c77de",
+  "dataset_sha256": "cc00697f7dc175cb35db4188152ef1dbb9be1d3f1706386789ff8e3989a43fce",
   "engine": "ti_framework",
-  "engine_source_sha256": "6745d6ac5fca690b785764fc94160deed70d84af20626313fe5cad372fb4e362",
+  "engine_source_sha256": "6605afe834585ba4c4a74508faf4af7974bbb3fc4a96bfbb8d5b1dea39bf6138",
   "engine_version": "0.1.0",
+  "impact_contract": {
+    "cohort_records": 660,
+    "destination_pathways": 2,
+    "product_cohorts": 1,
+    "published_lifetime_results": 0,
+    "rule": "company × cohort year × destination × product type is computed only after destination-use, survival, energy, and policy-pathway inputs are sourced",
+    "version": "export-impact-v1"
+  },
   "support_contract": {
     "lifetime_T": null,
     "lifetime_sens": null,
