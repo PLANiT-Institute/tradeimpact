@@ -25,7 +25,10 @@ PUBLISHED = REPO / "data" / "published"
 sys.path.insert(0, str(REPO / "ti-framework"))
 sys.path.insert(0, str(REPO / "data-pipeline"))
 
-from adapters.destination_eu import REALWORLD_GAP, build_records as build_destination_records
+from adapters.destination_eu import (  # noqa: E402
+    REALWORLD_GAP,
+    build_records as build_destination_records,
+)
 
 # Registration-database product types mapped onto the engine's emission models.
 _POWERTRAIN = {"ICE_OTHER": "ICE", "HEV": "HEV", "BEV": "BEV"}

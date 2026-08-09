@@ -13,7 +13,7 @@
     "data-pipeline/adapters/power_jera.py": "ba05070634de61914c54b2e5e7219dae7731d37b1fce441b612909670d1993e2",
     "data-pipeline/adapters/power_koen.py": "1d3d87a27cbe23f50dbfd019640d0f95576a529631b3cd2e38941a0f9dc41ad0",
     "data-pipeline/adapters/shipping_mol.py": "0be6ecb7260fb5cc6582221bbdf4bfa8d95bcbedcace986c7e07977b97d1d2c8",
-    "data-pipeline/lifetime_run.py": "66971dad3940c58416eac6e6c35c5286a7c885561b63f45df982c5bcab91305f",
+    "data-pipeline/lifetime_run.py": "b2ae52299276decd5962e801a5b08ea4f22091b4bc0371f36fe2a3070e1b18f5",
     "data-pipeline/source-snapshots/destination_eu27_inputs.json": "c0fdf59310c2588025f890b789bc08427654f3f9121472405875a1a5b1c8c5ff",
     "data-pipeline/source-snapshots/eea_hyundai_2024_final.json": "364de07370357e835fe588a077159b6a23491c4697a20b66607211964a00683b",
     "data-pipeline/source-snapshots/eea_toyota_2024_final.json": "e379e2ab1ea41aa0d3f939a3264321c6479231f2d8d93106b70a72e456ba1625",
@@ -37,9 +37,9 @@
       "[CA] PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
     ]
   },
-  "dataset_sha256": "480df511d97068b824e545a924bc667d2588f20090330a79e3206d05a2a1cd65",
+  "dataset_sha256": "448d21878471472e651bbfb1fc691fb6f8597ede37c937decbf7324a68f4a804",
   "engine": "ti_framework",
-  "engine_source_sha256": "4aaa9363bba0c2e47596bd2406e64a6b1287a157bc570a2bd9ef0b5d059fd4b4",
+  "engine_source_sha256": "ff34c1dfe3b7305108eca46bfbcef049faeceeec48942d477c06f3aecdcb2adb",
   "engine_version": "0.1.0",
   "impact_contract": {
     "cohort_records": 1286,
