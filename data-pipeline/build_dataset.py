@@ -94,8 +94,35 @@ def _file_sha256(path: Path) -> str:
     return _sha256_bytes(path.read_bytes())
 
 
+# Eight digits is five orders of magnitude finer than any Tier A input here, and far coarser
+# than the ~1e-14 relative spread that accumulating 1,286 terms produces across platforms.
+PUBLISHED_SIGNIFICANT_DIGITS = 8
+
+
+def canonical_floats(value: object) -> object:
+    """Round every float to a fixed significance before it is hashed or written.
+
+    ``pow`` and ``exp`` are allowed to differ in their last bits between platforms, so a full
+    17-digit float makes the published artifact machine-dependent for no analytical gain — none
+    of these inputs carry twelve significant digits, let alone seventeen.
+    """
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, float):
+        if not isfinite(value):
+            raise ValueError(f"refusing to publish a non-finite value: {value!r}")
+        return float(f"{value:.{PUBLISHED_SIGNIFICANT_DIGITS}g}")
+    if isinstance(value, dict):
+        return {key: canonical_floats(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [canonical_floats(item) for item in value]
+    return value
+
+
 def _json_sha256(value: object) -> str:
-    canonical = json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+    canonical = json.dumps(
+        canonical_floats(value), sort_keys=True, separators=(",", ":"), ensure_ascii=False
+    )
     return _sha256_bytes(canonical.encode())
 
 
@@ -111,7 +138,9 @@ def _tree_sha256(paths: list[Path]) -> str:
 
 def _write_json(path: Path, value: object) -> None:
     """One canonical JSON writer for reviewable, reproducible published artifacts."""
-    path.write_text(json.dumps(value, indent=2, ensure_ascii=False, sort_keys=True) + "\n")
+    path.write_text(
+        json.dumps(canonical_floats(value), indent=2, ensure_ascii=False, sort_keys=True) + "\n"
+    )
 
 
 def _prune_stale_json_outputs(expected_names: set[str]) -> list[str]:

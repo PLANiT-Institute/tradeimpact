@@ -51,16 +51,20 @@ jobs:
       - run: pip install -e "ti-framework"
       - run: python data-pipeline/build_dataset.py
       - run: python data-pipeline/check_published.py
-      # Fails on modified AND untracked output — git diff alone is blind to
-      # files build_dataset.py creates that were never committed.
-      - name: Published data must be committed and fresh
+      # check_published.py above owns staleness: it recomputes every value and compares with a
+      # numeric tolerance, which is the right test for floats that libm may round differently
+      # on another machine. This step covers what git diff cannot see — an output file the
+      # build creates that was never committed.
+      - name: Published data must have no uncommitted output files
         run: |
-          status=$(git status --porcelain -- data/published)
-          if [ -n "$status" ]; then
-            echo "data/published is stale or has uncommitted output:"
-            echo "$status"
+          untracked=$(git ls-files --others --exclude-standard -- data/published)
+          if [ -n "$untracked" ]; then
+            echo "build_dataset.py produced files that are not committed:"
+            echo "$untracked"
             exit 1
           fi
+          echo "tracked drift (informational; check_published.py is the gate):"
+          git status --porcelain -- data/published || true
       - run: npm ci --prefix web
       - run: npm test --prefix web
       - run: npm run build --prefix web

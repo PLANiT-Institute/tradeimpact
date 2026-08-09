@@ -49,7 +49,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 107.07329255505938
+    "value": 107.07329
   },
   {
     "company_id": "toyota",
@@ -76,7 +76,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.013550095007558268
+    "value": 0.013550095
   },
   {
     "company_id": "toyota",
@@ -103,7 +103,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.0008591771324402872
+    "value": 0.00085917713
   },
   {
     "company_id": "toyota",
@@ -130,7 +130,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.029773600599680736
+    "value": 0.029773601
   },
   {
     "company_id": "toyota",
@@ -157,7 +157,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.7606593997713842
+    "value": 0.7606594
   },
   {
     "company_id": "toyota",
@@ -184,7 +184,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.19515772748893653
+    "value": 0.19515773
   },
   {
     "company_id": "toyota",
@@ -236,7 +236,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 115.08408273381295
+    "value": 115.08408
   },
   {
     "company_id": "toyota",
@@ -263,7 +263,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.009892086330935251
+    "value": 0.0098920863
   },
   {
     "company_id": "toyota",
@@ -290,7 +290,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 8.992805755395684e-05
+    "value": 8.9928058e-05
   },
   {
     "company_id": "toyota",
@@ -317,7 +317,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.03156474820143885
+    "value": 0.031564748
   },
   {
     "company_id": "toyota",
@@ -344,7 +344,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.7882194244604317
+    "value": 0.78821942
   },
   {
     "company_id": "toyota",
@@ -371,7 +371,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.1702338129496403
+    "value": 0.17023381
   },
   {
     "company_id": "toyota",
@@ -423,7 +423,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 105.02668414598047
+    "value": 105.02668
   },
   {
     "company_id": "toyota",
@@ -450,7 +450,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.034503171247357294
+    "value": 0.034503171
   },
   {
     "company_id": "toyota",
@@ -477,7 +477,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.00016913319238900633
+    "value": 0.00016913319
   },
   {
     "company_id": "toyota",
@@ -504,7 +504,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.03902748414376321
+    "value": 0.039027484
   },
   {
     "company_id": "toyota",
@@ -531,7 +531,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.7105708245243129
+    "value": 0.71057082
   },
   {
     "company_id": "toyota",
@@ -558,7 +558,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.21572938689217758
+    "value": 0.21572939
   },
   {
     "company_id": "toyota",
@@ -610,7 +610,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 112.13896820864268
+    "value": 112.13897
   },
   {
     "company_id": "toyota",
@@ -637,7 +637,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.00533028745478774
+    "value": 0.0053302875
   },
   {
     "company_id": "toyota",
@@ -691,7 +691,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.05558728345707215
+    "value": 0.055587283
   },
   {
     "company_id": "toyota",
@@ -718,7 +718,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.7201599086236437
+    "value": 0.72015991
   },
   {
     "company_id": "toyota",
@@ -745,7 +745,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.21892252046449648
+    "value": 0.21892252
   },
   {
     "company_id": "toyota",
@@ -905,7 +905,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.42857142857142855
+    "value": 0.42857143
   },
   {
     "company_id": "toyota",
@@ -932,7 +932,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.07142857142857142
+    "value": 0.071428571
   },
   {
     "company_id": "toyota",
@@ -984,7 +984,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 125.57812913119349
+    "value": 125.57813
   },
   {
     "company_id": "toyota",
@@ -1011,7 +1011,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.00967690761990376
+    "value": 0.0096769076
   },
   {
     "company_id": "toyota",
@@ -1065,7 +1065,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.025540690603352546
+    "value": 0.025540691
   },
   {
     "company_id": "toyota",
@@ -1092,7 +1092,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.5994923589445297
+    "value": 0.59949236
   },
   {
     "company_id": "toyota",
@@ -1119,7 +1119,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.36529004283221406
+    "value": 0.36529004
   },
   {
     "company_id": "toyota",
@@ -1171,7 +1171,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 111.71147262072297
+    "value": 111.71147
   },
   {
     "company_id": "toyota",
@@ -1198,7 +1198,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.01734073708629431
+    "value": 0.017340737
   },
   {
     "company_id": "toyota",
@@ -1225,7 +1225,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.001553528504099006
+    "value": 0.0015535285
   },
   {
     "company_id": "toyota",
@@ -1252,7 +1252,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.019377119044370034
+    "value": 0.019377119
   },
   {
     "company_id": "toyota",
@@ -1279,7 +1279,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6544028887232725
+    "value": 0.65440289
   },
   {
     "company_id": "toyota",
@@ -1306,7 +1306,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.30732572664196417
+    "value": 0.30732573
   },
   {
     "company_id": "toyota",
@@ -1358,7 +1358,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 89.03480700690073
+    "value": 89.034807
   },
   {
     "company_id": "toyota",
@@ -1385,7 +1385,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.13960718889815726
+    "value": 0.13960719
   },
   {
     "company_id": "toyota",
@@ -1439,7 +1439,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.03746113596724046
+    "value": 0.037461136
   },
   {
     "company_id": "toyota",
@@ -1466,7 +1466,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.5904299689087738
+    "value": 0.59042997
   },
   {
     "company_id": "toyota",
@@ -1493,7 +1493,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.23250170622582847
+    "value": 0.23250171
   },
   {
     "company_id": "toyota",
@@ -1545,7 +1545,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 123.22526978417267
+    "value": 123.22527
   },
   {
     "company_id": "toyota",
@@ -1572,7 +1572,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.01821043165467626
+    "value": 0.018210432
   },
   {
     "company_id": "toyota",
@@ -1599,7 +1599,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.0011241007194244604
+    "value": 0.0011241007
   },
   {
     "company_id": "toyota",
@@ -1626,7 +1626,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.03776978417266187
+    "value": 0.037769784
   },
   {
     "company_id": "toyota",
@@ -1653,7 +1653,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.7846223021582733
+    "value": 0.7846223
   },
   {
     "company_id": "toyota",
@@ -1680,7 +1680,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.15827338129496402
+    "value": 0.15827338
   },
   {
     "company_id": "toyota",
@@ -1732,7 +1732,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 109.64632756039772
+    "value": 109.64633
   },
   {
     "company_id": "toyota",
@@ -1759,7 +1759,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.005343352532392216
+    "value": 0.0053433525
   },
   {
     "company_id": "toyota",
@@ -1813,7 +1813,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.03557939190863759
+    "value": 0.035579392
   },
   {
     "company_id": "toyota",
@@ -1840,7 +1840,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.8137261705312621
+    "value": 0.81372617
   },
   {
     "company_id": "toyota",
@@ -1867,7 +1867,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.1453510850277081
+    "value": 0.14535109
   },
   {
     "company_id": "toyota",
@@ -1919,7 +1919,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 94.21391276407743
+    "value": 94.213913
   },
   {
     "company_id": "toyota",
@@ -1946,7 +1946,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.022732749618443248
+    "value": 0.02273275
   },
   {
     "company_id": "toyota",
@@ -2000,7 +2000,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.09004739336492891
+    "value": 0.090047393
   },
   {
     "company_id": "toyota",
@@ -2027,7 +2027,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.8622379307574906
+    "value": 0.86223793
   },
   {
     "company_id": "toyota",
@@ -2054,7 +2054,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.02498192625913728
+    "value": 0.024981926
   },
   {
     "company_id": "toyota",
@@ -2106,7 +2106,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 100.17171874305525
+    "value": 100.17172
   },
   {
     "company_id": "toyota",
@@ -2133,7 +2133,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.016408136657925537
+    "value": 0.016408137
   },
   {
     "company_id": "toyota",
@@ -2160,7 +2160,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.003926100419277894
+    "value": 0.0039261004
   },
   {
     "company_id": "toyota",
@@ -2187,7 +2187,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.028949434789694358
+    "value": 0.028949435
   },
   {
     "company_id": "toyota",
@@ -2214,7 +2214,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.8086137161651629
+    "value": 0.80861372
   },
   {
     "company_id": "toyota",
@@ -2241,7 +2241,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.14210261196793933
+    "value": 0.14210261
   },
   {
     "company_id": "toyota",
@@ -2293,7 +2293,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 104.65170357751278
+    "value": 104.6517
   },
   {
     "company_id": "toyota",
@@ -2320,7 +2320,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.002214650766609881
+    "value": 0.0022146508
   },
   {
     "company_id": "toyota",
@@ -2374,7 +2374,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.015417376490630323
+    "value": 0.015417376
   },
   {
     "company_id": "toyota",
@@ -2401,7 +2401,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.7591567291311755
+    "value": 0.75915673
   },
   {
     "company_id": "toyota",
@@ -2428,7 +2428,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.22321124361158431
+    "value": 0.22321124
   },
   {
     "company_id": "toyota",
@@ -2480,7 +2480,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 113.98413825757575
+    "value": 113.98414
   },
   {
     "company_id": "toyota",
@@ -2507,7 +2507,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.001893939393939394
+    "value": 0.0018939394
   },
   {
     "company_id": "toyota",
@@ -2561,7 +2561,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.022964015151515152
+    "value": 0.022964015
   },
   {
     "company_id": "toyota",
@@ -2588,7 +2588,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.5785984848484849
+    "value": 0.57859848
   },
   {
     "company_id": "toyota",
@@ -2615,7 +2615,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3965435606060606
+    "value": 0.39654356
   },
   {
     "company_id": "toyota",
@@ -2667,7 +2667,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 114.12896672504378
+    "value": 114.12897
   },
   {
     "company_id": "toyota",
@@ -2694,7 +2694,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.004833625218914186
+    "value": 0.0048336252
   },
   {
     "company_id": "toyota",
@@ -2721,7 +2721,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 7.005253940455341e-05
+    "value": 7.0052539e-05
   },
   {
     "company_id": "toyota",
@@ -2748,7 +2748,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.015411558669001752
+    "value": 0.015411559
   },
   {
     "company_id": "toyota",
@@ -2775,7 +2775,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.7660945709281961
+    "value": 0.76609457
   },
   {
     "company_id": "toyota",
@@ -2802,7 +2802,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.21359019264448337
+    "value": 0.21359019
   },
   {
     "company_id": "toyota",
@@ -2854,7 +2854,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 101.95989226535511
+    "value": 101.95989
   },
   {
     "company_id": "toyota",
@@ -2881,7 +2881,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.023069266350488903
+    "value": 0.023069266
   },
   {
     "company_id": "toyota",
@@ -2935,7 +2935,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.05439428537970607
+    "value": 0.054394285
   },
   {
     "company_id": "toyota",
@@ -2962,7 +2962,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.8618186076468177
+    "value": 0.86181861
   },
   {
     "company_id": "toyota",
@@ -2989,7 +2989,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.060717840622987296
+    "value": 0.060717841
   },
   {
     "company_id": "toyota",
@@ -3041,7 +3041,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 103.56992475086435
+    "value": 103.56992
   },
   {
     "company_id": "toyota",
@@ -3068,7 +3068,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.002749644091925971
+    "value": 0.0027496441
   },
   {
     "company_id": "toyota",
@@ -3095,7 +3095,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 8.135041692088673e-06
+    "value": 8.1350417e-06
   },
   {
     "company_id": "toyota",
@@ -3122,7 +3122,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.021891397193410617
+    "value": 0.021891397
   },
   {
     "company_id": "toyota",
@@ -3149,7 +3149,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.780923327232052
+    "value": 0.78092333
   },
   {
     "company_id": "toyota",
@@ -3176,7 +3176,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.19442749644091925
+    "value": 0.1944275
   },
   {
     "company_id": "toyota",
@@ -3228,7 +3228,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 115.54289916653047
+    "value": 115.5429
   },
   {
     "company_id": "toyota",
@@ -3255,7 +3255,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.005719888870730511
+    "value": 0.0057198889
   },
   {
     "company_id": "toyota",
@@ -3309,7 +3309,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.061121098218663183
+    "value": 0.061121098
   },
   {
     "company_id": "toyota",
@@ -3336,7 +3336,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.8078117339434548
+    "value": 0.80781173
   },
   {
     "company_id": "toyota",
@@ -3363,7 +3363,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.1253472789671515
+    "value": 0.12534728
   },
   {
     "company_id": "toyota",
@@ -3415,7 +3415,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 117.45867768595042
+    "value": 117.45868
   },
   {
     "company_id": "toyota",
@@ -3442,7 +3442,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.017355371900826446
+    "value": 0.017355372
   },
   {
     "company_id": "toyota",
@@ -3496,7 +3496,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.021487603305785124
+    "value": 0.021487603
   },
   {
     "company_id": "toyota",
@@ -3523,7 +3523,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6628099173553719
+    "value": 0.66280992
   },
   {
     "company_id": "toyota",
@@ -3550,7 +3550,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.2983471074380165
+    "value": 0.29834711
   },
   {
     "company_id": "toyota",
@@ -3602,7 +3602,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 121.70930232558139
+    "value": 121.7093
   },
   {
     "company_id": "toyota",
@@ -3629,7 +3629,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.013037350246652573
+    "value": 0.01303735
   },
   {
     "company_id": "toyota",
@@ -3683,7 +3683,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.030303030303030304
+    "value": 0.03030303
   },
   {
     "company_id": "toyota",
@@ -3710,7 +3710,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.806553911205074
+    "value": 0.80655391
   },
   {
     "company_id": "toyota",
@@ -3737,7 +3737,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.15010570824524314
+    "value": 0.15010571
   },
   {
     "company_id": "toyota",
@@ -3789,7 +3789,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 103.99620493358634
+    "value": 103.9962
   },
   {
     "company_id": "toyota",
@@ -3870,7 +3870,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.008538899430740038
+    "value": 0.0085388994
   },
   {
     "company_id": "toyota",
@@ -3897,7 +3897,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6110056925996205
+    "value": 0.61100569
   },
   {
     "company_id": "toyota",
@@ -3924,7 +3924,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.38045540796963945
+    "value": 0.38045541
   },
   {
     "company_id": "toyota",
@@ -3976,7 +3976,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 97.95434294710749
+    "value": 97.954343
   },
   {
     "company_id": "toyota",
@@ -4003,7 +4003,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.03848859411114461
+    "value": 0.038488594
   },
   {
     "company_id": "toyota",
@@ -4057,7 +4057,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.040967406960774465
+    "value": 0.040967407
   },
   {
     "company_id": "toyota",
@@ -4084,7 +4084,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6457977422704586
+    "value": 0.64579774
   },
   {
     "company_id": "toyota",
@@ -4111,7 +4111,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.27474625665762237
+    "value": 0.27474626
   },
   {
     "company_id": "toyota",
@@ -4163,7 +4163,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 114.19835423653247
+    "value": 114.19835
   },
   {
     "company_id": "toyota",
@@ -4244,7 +4244,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.012813305677787039
+    "value": 0.012813306
   },
   {
     "company_id": "toyota",
@@ -4271,7 +4271,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.7742842188923565
+    "value": 0.77428422
   },
   {
     "company_id": "toyota",
@@ -4298,7 +4298,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.21290247542985635
+    "value": 0.21290248
   },
   {
     "company_id": "toyota",
@@ -4350,7 +4350,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 95.30863754596825
+    "value": 95.308638
   },
   {
     "company_id": "toyota",
@@ -4377,7 +4377,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.027536101892546416
+    "value": 0.027536102
   },
   {
     "company_id": "toyota",
@@ -4431,7 +4431,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.09265404969055521
+    "value": 0.09265405
   },
   {
     "company_id": "toyota",
@@ -4458,7 +4458,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.7413220916674141
+    "value": 0.74132209
   },
   {
     "company_id": "toyota",
@@ -4485,7 +4485,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.13848775674948427
+    "value": 0.13848776
   },
   {
     "company_id": "toyota",
@@ -4537,7 +4537,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 110.551996249707
+    "value": 110.552
   },
   {
     "company_id": "toyota",
@@ -4564,7 +4564,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.005937963903429955
+    "value": 0.0059379639
   },
   {
     "company_id": "toyota",
@@ -4618,7 +4618,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.04578482693960466
+    "value": 0.045784827
   },
   {
     "company_id": "toyota",
@@ -4645,7 +4645,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.8583483084615986
+    "value": 0.85834831
   },
   {
     "company_id": "toyota",
@@ -4672,7 +4672,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.08992890069536683
+    "value": 0.089928901
   },
   {
     "company_id": "toyota",
@@ -4724,7 +4724,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 103.65685349749293
+    "value": 103.65685
   },
   {
     "company_id": "toyota",
@@ -4751,7 +4751,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.028248026609740358
+    "value": 0.028248027
   },
   {
     "company_id": "toyota",
@@ -4805,7 +4805,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.07382217147396118
+    "value": 0.073822171
   },
   {
     "company_id": "toyota",
@@ -4832,7 +4832,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.852057786824207
+    "value": 0.85205779
   },
   {
     "company_id": "toyota",
@@ -4859,7 +4859,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.045872015092091545
+    "value": 0.045872015
   },
   {
     "company_id": "toyota",
@@ -4911,7 +4911,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 116.15939893930465
+    "value": 116.1594
   },
   {
     "company_id": "toyota",
@@ -4938,7 +4938,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.008249852681202121
+    "value": 0.0082498527
   },
   {
     "company_id": "toyota",
@@ -4992,7 +4992,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.030347672362993516
+    "value": 0.030347672
   },
   {
     "company_id": "toyota",
@@ -5019,7 +5019,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6222746022392457
+    "value": 0.6222746
   },
   {
     "company_id": "toyota",
@@ -5046,7 +5046,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.33912787271655864
+    "value": 0.33912787
   },
   {
     "company_id": "toyota",
@@ -5098,7 +5098,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 122.67672600955275
+    "value": 122.67673
   },
   {
     "company_id": "toyota",
@@ -5125,7 +5125,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.005536257056013895
+    "value": 0.0055362571
   },
   {
     "company_id": "toyota",
@@ -5179,7 +5179,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.019648284845853233
+    "value": 0.019648285
   },
   {
     "company_id": "toyota",
@@ -5206,7 +5206,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6842162396873643
+    "value": 0.68421624
   },
   {
     "company_id": "toyota",
@@ -5233,7 +5233,7 @@
       "eea-co2-cars-2024-final-toyota-eu27"
     ],
     "unit": "fraction",
-    "value": 0.2905992184107686
+    "value": 0.29059922
   },
   {
     "company_id": "hyundai",
@@ -5285,7 +5285,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 112.8914806759633
+    "value": 112.89148
   },
   {
     "company_id": "hyundai",
@@ -5312,7 +5312,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.09671672062818652
+    "value": 0.096716721
   },
   {
     "company_id": "hyundai",
@@ -5339,7 +5339,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 5.117040675821518e-05
+    "value": 5.1170407e-05
   },
   {
     "company_id": "hyundai",
@@ -5366,7 +5366,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.04331807524840907
+    "value": 0.043318075
   },
   {
     "company_id": "hyundai",
@@ -5393,7 +5393,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3980964608685944
+    "value": 0.39809646
   },
   {
     "company_id": "hyundai",
@@ -5420,7 +5420,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.4618175728480518
+    "value": 0.46181757
   },
   {
     "company_id": "hyundai",
@@ -5472,7 +5472,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 118.00123196057726
+    "value": 118.00123
   },
   {
     "company_id": "hyundai",
@@ -5499,7 +5499,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.0703977472720873
+    "value": 0.070397747
   },
   {
     "company_id": "hyundai",
@@ -5553,7 +5553,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.03977472720872932
+    "value": 0.039774727
   },
   {
     "company_id": "hyundai",
@@ -5580,7 +5580,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.2531678986272439
+    "value": 0.2531679
   },
   {
     "company_id": "hyundai",
@@ -5607,7 +5607,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6366596268919394
+    "value": 0.63665963
   },
   {
     "company_id": "hyundai",
@@ -5659,7 +5659,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 101.54222917352651
+    "value": 101.54223
   },
   {
     "company_id": "hyundai",
@@ -5686,7 +5686,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.12132685817762778
+    "value": 0.12132686
   },
   {
     "company_id": "hyundai",
@@ -5713,7 +5713,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.00016462260268334841
+    "value": 0.0001646226
   },
   {
     "company_id": "hyundai",
@@ -5740,7 +5740,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.10173676845830933
+    "value": 0.10173677
   },
   {
     "company_id": "hyundai",
@@ -5767,7 +5767,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.4509013087496913
+    "value": 0.45090131
   },
   {
     "company_id": "hyundai",
@@ -5794,7 +5794,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3258704420116882
+    "value": 0.32587044
   },
   {
     "company_id": "hyundai",
@@ -5846,7 +5846,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 118.46147260273973
+    "value": 118.46147
   },
   {
     "company_id": "hyundai",
@@ -5873,7 +5873,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.08476027397260275
+    "value": 0.084760274
   },
   {
     "company_id": "hyundai",
@@ -5927,7 +5927,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.0684931506849315
+    "value": 0.068493151
   },
   {
     "company_id": "hyundai",
@@ -5954,7 +5954,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3681506849315068
+    "value": 0.36815068
   },
   {
     "company_id": "hyundai",
@@ -5981,7 +5981,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.4785958904109589
+    "value": 0.47859589
   },
   {
     "company_id": "hyundai",
@@ -6033,7 +6033,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 118.08432835820895
+    "value": 118.08433
   },
   {
     "company_id": "hyundai",
@@ -6060,7 +6060,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.0880597014925373
+    "value": 0.088059701
   },
   {
     "company_id": "hyundai",
@@ -6114,7 +6114,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.04701492537313433
+    "value": 0.047014925
   },
   {
     "company_id": "hyundai",
@@ -6141,7 +6141,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6141791044776119
+    "value": 0.6141791
   },
   {
     "company_id": "hyundai",
@@ -6168,7 +6168,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.2507462686567164
+    "value": 0.25074627
   },
   {
     "company_id": "hyundai",
@@ -6220,7 +6220,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 133.67073050345508
+    "value": 133.67073
   },
   {
     "company_id": "hyundai",
@@ -6247,7 +6247,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.02403751233958539
+    "value": 0.024037512
   },
   {
     "company_id": "hyundai",
@@ -6301,7 +6301,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.013919052319842053
+    "value": 0.013919052
   },
   {
     "company_id": "hyundai",
@@ -6328,7 +6328,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3240868706811451
+    "value": 0.32408687
   },
   {
     "company_id": "hyundai",
@@ -6355,7 +6355,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6379565646594274
+    "value": 0.63795656
   },
   {
     "company_id": "hyundai",
@@ -6407,7 +6407,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 108.446759836952
+    "value": 108.44676
   },
   {
     "company_id": "hyundai",
@@ -6434,7 +6434,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.17565727235869555
+    "value": 0.17565727
   },
   {
     "company_id": "hyundai",
@@ -6461,7 +6461,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.00010395766843741228
+    "value": 0.00010395767
   },
   {
     "company_id": "hyundai",
@@ -6488,7 +6488,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.045200794236586864
+    "value": 0.045200794
   },
   {
     "company_id": "hyundai",
@@ -6515,7 +6515,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3590593910159783
+    "value": 0.35905939
   },
   {
     "company_id": "hyundai",
@@ -6542,7 +6542,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.4199785847203019
+    "value": 0.41997858
   },
   {
     "company_id": "hyundai",
@@ -6594,7 +6594,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 58.85649013499481
+    "value": 58.85649
   },
   {
     "company_id": "hyundai",
@@ -6621,7 +6621,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.4797507788161994
+    "value": 0.47975078
   },
   {
     "company_id": "hyundai",
@@ -6675,7 +6675,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.052336448598130844
+    "value": 0.052336449
   },
   {
     "company_id": "hyundai",
@@ -6702,7 +6702,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.04610591900311527
+    "value": 0.046105919
   },
   {
     "company_id": "hyundai",
@@ -6729,7 +6729,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.42180685358255454
+    "value": 0.42180685
   },
   {
     "company_id": "hyundai",
@@ -6781,7 +6781,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 110.32773109243698
+    "value": 110.32773
   },
   {
     "company_id": "hyundai",
@@ -6808,7 +6808,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.16246498599439776
+    "value": 0.16246499
   },
   {
     "company_id": "hyundai",
@@ -6862,7 +6862,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.036414565826330535
+    "value": 0.036414566
   },
   {
     "company_id": "hyundai",
@@ -6889,7 +6889,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6288515406162465
+    "value": 0.62885154
   },
   {
     "company_id": "hyundai",
@@ -6916,7 +6916,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.1722689075630252
+    "value": 0.17226891
   },
   {
     "company_id": "hyundai",
@@ -6968,7 +6968,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 121.47554129911788
+    "value": 121.47554
   },
   {
     "company_id": "hyundai",
@@ -6995,7 +6995,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.023101597680587255
+    "value": 0.023101598
   },
   {
     "company_id": "hyundai",
@@ -7022,7 +7022,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.00010795139103078156
+    "value": 0.00010795139
   },
   {
     "company_id": "hyundai",
@@ -7049,7 +7049,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.040281290481771634
+    "value": 0.04028129
   },
   {
     "company_id": "hyundai",
@@ -7076,7 +7076,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.4393467398679909
+    "value": 0.43934674
   },
   {
     "company_id": "hyundai",
@@ -7103,7 +7103,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.4971624205786195
+    "value": 0.49716242
   },
   {
     "company_id": "hyundai",
@@ -7155,7 +7155,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 69.48629474363109
+    "value": 69.486295
   },
   {
     "company_id": "hyundai",
@@ -7182,7 +7182,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.344727507255724
+    "value": 0.34472751
   },
   {
     "company_id": "hyundai",
@@ -7236,7 +7236,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.11802644308287649
+    "value": 0.11802644
   },
   {
     "company_id": "hyundai",
@@ -7263,7 +7263,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.2092873266688165
+    "value": 0.20928733
   },
   {
     "company_id": "hyundai",
@@ -7290,7 +7290,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.32795872299258305
+    "value": 0.32795872
   },
   {
     "company_id": "hyundai",
@@ -7342,7 +7342,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 102.58572493102129
+    "value": 102.58572
   },
   {
     "company_id": "hyundai",
@@ -7369,7 +7369,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.12218798461321571
+    "value": 0.12218798
   },
   {
     "company_id": "hyundai",
@@ -7396,7 +7396,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 2.0139770003826557e-05
+    "value": 2.013977e-05
   },
   {
     "company_id": "hyundai",
@@ -7423,7 +7423,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.04946327512939802
+    "value": 0.049463275
   },
   {
     "company_id": "hyundai",
@@ -7450,7 +7450,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.5995609530139165
+    "value": 0.59956095
   },
   {
     "company_id": "hyundai",
@@ -7477,7 +7477,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.22876764747346584
+    "value": 0.22876765
   },
   {
     "company_id": "hyundai",
@@ -7529,7 +7529,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 123.14134474602996
+    "value": 123.14134
   },
   {
     "company_id": "hyundai",
@@ -7556,7 +7556,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.023989187971618427
+    "value": 0.023989188
   },
   {
     "company_id": "hyundai",
@@ -7610,7 +7610,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.010361527199008897
+    "value": 0.010361527
   },
   {
     "company_id": "hyundai",
@@ -7637,7 +7637,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.27458047077373576
+    "value": 0.27458047
   },
   {
     "company_id": "hyundai",
@@ -7664,7 +7664,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6910688140556369
+    "value": 0.69106881
   },
   {
     "company_id": "hyundai",
@@ -7716,7 +7716,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 126.57941437444543
+    "value": 126.57941
   },
   {
     "company_id": "hyundai",
@@ -7743,7 +7743,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.04673173617272996
+    "value": 0.046731736
   },
   {
     "company_id": "hyundai",
@@ -7797,7 +7797,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.013013901212658977
+    "value": 0.013013901
   },
   {
     "company_id": "hyundai",
@@ -7824,7 +7824,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.2425317953268264
+    "value": 0.2425318
   },
   {
     "company_id": "hyundai",
@@ -7851,7 +7851,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.6977225672877847
+    "value": 0.69772257
   },
   {
     "company_id": "hyundai",
@@ -7903,7 +7903,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 111.39575005259836
+    "value": 111.39575
   },
   {
     "company_id": "hyundai",
@@ -7930,7 +7930,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.11845150431306543
+    "value": 0.1184515
   },
   {
     "company_id": "hyundai",
@@ -7984,7 +7984,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.06900904691773617
+    "value": 0.069009047
   },
   {
     "company_id": "hyundai",
@@ -8011,7 +8011,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3187460551230802
+    "value": 0.31874606
   },
   {
     "company_id": "hyundai",
@@ -8038,7 +8038,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.49379339364611824
+    "value": 0.49379339
   },
   {
     "company_id": "hyundai",
@@ -8090,7 +8090,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 100.44252361432899
+    "value": 100.44252
   },
   {
     "company_id": "hyundai",
@@ -8117,7 +8117,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.12778470860809124
+    "value": 0.12778471
   },
   {
     "company_id": "hyundai",
@@ -8171,7 +8171,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.11637854214934949
+    "value": 0.11637854
   },
   {
     "company_id": "hyundai",
@@ -8198,7 +8198,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.20406344680092675
+    "value": 0.20406345
   },
   {
     "company_id": "hyundai",
@@ -8225,7 +8225,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.5517733024416325
+    "value": 0.5517733
   },
   {
     "company_id": "hyundai",
@@ -8277,7 +8277,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 120.47503540360105
+    "value": 120.47504
   },
   {
     "company_id": "hyundai",
@@ -8304,7 +8304,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.010196237102973902
+    "value": 0.010196237
   },
   {
     "company_id": "hyundai",
@@ -8358,7 +8358,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.01302852518713332
+    "value": 0.013028525
   },
   {
     "company_id": "hyundai",
@@ -8385,7 +8385,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.39514464899858387
+    "value": 0.39514465
   },
   {
     "company_id": "hyundai",
@@ -8412,7 +8412,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.5816305887113089
+    "value": 0.58163059
   },
   {
     "company_id": "hyundai",
@@ -8464,7 +8464,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 113.50471063257066
+    "value": 113.50471
   },
   {
     "company_id": "hyundai",
@@ -8491,7 +8491,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.1063257065948856
+    "value": 0.10632571
   },
   {
     "company_id": "hyundai",
@@ -8545,7 +8545,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.06460296096904442
+    "value": 0.064602961
   },
   {
     "company_id": "hyundai",
@@ -8572,7 +8572,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.5450874831763123
+    "value": 0.54508748
   },
   {
     "company_id": "hyundai",
@@ -8599,7 +8599,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.2839838492597577
+    "value": 0.28398385
   },
   {
     "company_id": "hyundai",
@@ -8651,7 +8651,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 79.03831982313928
+    "value": 79.03832
   },
   {
     "company_id": "hyundai",
@@ -8678,7 +8678,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3640383198231393
+    "value": 0.36403832
   },
   {
     "company_id": "hyundai",
@@ -8732,7 +8732,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.0655858511422255
+    "value": 0.065585851
   },
   {
     "company_id": "hyundai",
@@ -8759,7 +8759,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.29108327192336036
+    "value": 0.29108327
   },
   {
     "company_id": "hyundai",
@@ -8786,7 +8786,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.2792925571112749
+    "value": 0.27929256
   },
   {
     "company_id": "hyundai",
@@ -8838,7 +8838,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 114.79790419161677
+    "value": 114.7979
   },
   {
     "company_id": "hyundai",
@@ -8865,7 +8865,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.11077844311377245
+    "value": 0.11077844
   },
   {
     "company_id": "hyundai",
@@ -8919,7 +8919,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.03143712574850299
+    "value": 0.031437126
   },
   {
     "company_id": "hyundai",
@@ -8946,7 +8946,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.5254491017964071
+    "value": 0.5254491
   },
   {
     "company_id": "hyundai",
@@ -8973,7 +8973,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3323353293413174
+    "value": 0.33233533
   },
   {
     "company_id": "hyundai",
@@ -9133,7 +9133,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.06133333333333333
+    "value": 0.061333333
   },
   {
     "company_id": "hyundai",
@@ -9160,7 +9160,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.8186666666666667
+    "value": 0.81866667
   },
   {
     "company_id": "hyundai",
@@ -9212,7 +9212,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 80.2054521599689
+    "value": 80.205452
   },
   {
     "company_id": "hyundai",
@@ -9239,7 +9239,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.21415034744156664
+    "value": 0.21415035
   },
   {
     "company_id": "hyundai",
@@ -9293,7 +9293,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.10258030030613732
+    "value": 0.1025803
   },
   {
     "company_id": "hyundai",
@@ -9320,7 +9320,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3851013168764274
+    "value": 0.38510132
   },
   {
     "company_id": "hyundai",
@@ -9347,7 +9347,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.2981680353758686
+    "value": 0.29816804
   },
   {
     "company_id": "hyundai",
@@ -9399,7 +9399,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 132.49746356909756
+    "value": 132.49746
   },
   {
     "company_id": "hyundai",
@@ -9426,7 +9426,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.014927784419528902
+    "value": 0.014927784
   },
   {
     "company_id": "hyundai",
@@ -9480,7 +9480,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.005492907686839639
+    "value": 0.0054929077
   },
   {
     "company_id": "hyundai",
@@ -9507,7 +9507,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.4905489676564671
+    "value": 0.49054897
   },
   {
     "company_id": "hyundai",
@@ -9534,7 +9534,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.48903034023716435
+    "value": 0.48903034
   },
   {
     "company_id": "hyundai",
@@ -9586,7 +9586,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 109.12976356050069
+    "value": 109.12976
   },
   {
     "company_id": "hyundai",
@@ -9613,7 +9613,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.12155771905424201
+    "value": 0.12155772
   },
   {
     "company_id": "hyundai",
@@ -9667,7 +9667,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.036022253129346316
+    "value": 0.036022253
   },
   {
     "company_id": "hyundai",
@@ -9694,7 +9694,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.09388038942976357
+    "value": 0.093880389
   },
   {
     "company_id": "hyundai",
@@ -9721,7 +9721,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.7485396383866482
+    "value": 0.74853964
   },
   {
     "company_id": "hyundai",
@@ -9773,7 +9773,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 120.84938584519399
+    "value": 120.84939
   },
   {
     "company_id": "hyundai",
@@ -9800,7 +9800,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.05924770999805106
+    "value": 0.05924771
   },
   {
     "company_id": "hyundai",
@@ -9854,7 +9854,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.05603196258039368
+    "value": 0.056031963
   },
   {
     "company_id": "hyundai",
@@ -9881,7 +9881,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.40713311245371275
+    "value": 0.40713311
   },
   {
     "company_id": "hyundai",
@@ -9908,7 +9908,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.4775872149678425
+    "value": 0.47758721
   },
   {
     "company_id": "hyundai",
@@ -9960,7 +9960,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 84.64545896066052
+    "value": 84.645459
   },
   {
     "company_id": "hyundai",
@@ -9987,7 +9987,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.12918892666342885
+    "value": 0.12918893
   },
   {
     "company_id": "hyundai",
@@ -10014,7 +10014,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.0009713453132588635
+    "value": 0.00097134531
   },
   {
     "company_id": "hyundai",
@@ -10041,7 +10041,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.23457989315201555
+    "value": 0.23457989
   },
   {
     "company_id": "hyundai",
@@ -10068,7 +10068,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.33414278776104905
+    "value": 0.33414279
   },
   {
     "company_id": "hyundai",
@@ -10095,7 +10095,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.30111704711024767
+    "value": 0.30111705
   },
   {
     "company_id": "hyundai",
@@ -10147,7 +10147,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 119.63875857091303
+    "value": 119.63876
   },
   {
     "company_id": "hyundai",
@@ -10174,7 +10174,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.07722843738722483
+    "value": 0.077228437
   },
   {
     "company_id": "hyundai",
@@ -10228,7 +10228,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.04114038253338145
+    "value": 0.041140383
   },
   {
     "company_id": "hyundai",
@@ -10255,7 +10255,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3107181522915915
+    "value": 0.31071815
   },
   {
     "company_id": "hyundai",
@@ -10282,7 +10282,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.5709130277878023
+    "value": 0.57091303
   },
   {
     "company_id": "hyundai",
@@ -10334,7 +10334,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "gCO2/km",
-    "value": 131.64676373424692
+    "value": 131.64676
   },
   {
     "company_id": "hyundai",
@@ -10361,7 +10361,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.014680694886224614
+    "value": 0.014680695
   },
   {
     "company_id": "hyundai",
@@ -10415,7 +10415,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.009175434303890385
+    "value": 0.0091754343
   },
   {
     "company_id": "hyundai",
@@ -10442,7 +10442,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.3832884756545143
+    "value": 0.38328848
   },
   {
     "company_id": "hyundai",
@@ -10469,7 +10469,7 @@
       "eea-co2-cars-2024-final-hyundai-eu27"
     ],
     "unit": "fraction",
-    "value": 0.5928553951553707
+    "value": 0.5928554
   },
   {
     "company_id": "jera",

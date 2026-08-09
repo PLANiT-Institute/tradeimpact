@@ -6,13 +6,13 @@
     "name": "Australia",
     "r_fleet": {
       "s1": 0.017473,
-      "s2": 0.031738226287384756,
-      "s2_upper": 0.039337786704772844
+      "s2": 0.031738226,
+      "s2_upper": 0.039337787
     },
     "r_power": {
       "s1": 0.110288,
-      "s2": 0.031738226287384756,
-      "s2_upper": 0.039337786704772844
+      "s2": 0.031738226,
+      "s2_upper": 0.039337787
     },
     "source": "UNFCCC NDC Registry; AU 2nd NDC 2025 · S1 sectoral: DCCEEW Australia's emissions projections 2025 baseline, transport 99(2025)→83(2035), electricity 148→46 MtCO2e; 2025→2035 CAGR (82% RE 2030 가정). 2035 NDC 추가 감축분 부문 미배분.",
     "status": "COMPUTED",
@@ -28,13 +28,13 @@
     "name": "Canada",
     "r_fleet": {
       "s1": 0.019472,
-      "s2": 0.01973065184579115,
-      "s2_upper": 0.02284003156575409
+      "s2": 0.019730652,
+      "s2_upper": 0.022840032
     },
     "r_power": {
       "s1": 0.099132,
-      "s2": 0.01973065184579115,
-      "s2_upper": 0.02284003156575409
+      "s2": 0.019730652,
+      "s2_upper": 0.022840032
     },
     "source": "UNFCCC NDC Registry; CA 2035 NDC Feb 2025 (canada.ca); Grid: Ember 2024 · S1 sectoral: ECCC 2025 ERP Progress Report, With-Measures projection transport 157(2023)→124(2035), electricity 49→14 MtCO2e; 2023→2035 CAGR. CER 최종안은 2035 넷제로 그리드 아님(2050).",
     "status": "COMPUTED",
@@ -58,7 +58,7 @@
   {
     "code": "EU",
     "flag_reason": null,
-    "grid_intensity": 0.21134999999999998,
+    "grid_intensity": 0.21135,
     "name": "European Union",
     "r_fleet": {
       "s2": 0.043451
@@ -130,7 +130,7 @@
   {
     "code": "SA",
     "flag_reason": "Absolute avoided target — no stated baseline",
-    "grid_intensity": 0.6919500000000001,
+    "grid_intensity": 0.69195,
     "name": "Saudi Arabia",
     "r_fleet": {},
     "r_power": {},
@@ -158,7 +158,7 @@
   {
     "code": "US",
     "flag_reason": "No active NDC — no S2 benchmark derivable",
-    "grid_intensity": 0.38377999999999995,
+    "grid_intensity": 0.38378,
     "name": "United States",
     "r_fleet": {},
     "r_power": {},

@@ -14,7 +14,12 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "ti-framework"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_dataset import build_alignment_data, build_contract_schema, build_countries  # noqa: E402
+from build_dataset import (  # noqa: E402
+    build_alignment_data,
+    build_contract_schema,
+    build_countries,
+    canonical_floats,
+)
 from lifetime_run import run_lifetime  # noqa: E402
 from ti_framework.core.scenarios import run  # noqa: E402
 from ti_framework.core.sensitivity import run_sensitivity  # noqa: E402
@@ -42,7 +47,17 @@ def tree_sha256(paths: list[Path]) -> str:
 
 
 def compare_values(actual: object, expected: object, path: str, errors: list[str]) -> None:
-    """Deep comparison with tight numeric tolerance and useful JSON paths."""
+    """Compare a recomputed value against its published form.
+
+    The recomputed side is put through the same rounding the publisher applies, so this
+    compares like with like: a published file cannot carry more significance than
+    ``build_dataset`` writes into it, and libm's last-bit differences between machines are
+    not mistaken for drift.
+    """
+    _compare(canonical_floats(actual), expected, path, errors)
+
+
+def _compare(actual: object, expected: object, path: str, errors: list[str]) -> None:
     if isinstance(actual, dict) and isinstance(expected, dict):
         actual_keys = set(actual)
         expected_keys = set(expected)
@@ -53,14 +68,14 @@ def compare_values(actual: object, expected: object, path: str, errors: list[str
             )
             return
         for key in sorted(actual_keys):
-            compare_values(actual[key], expected[key], f"{path}.{key}", errors)
+            _compare(actual[key], expected[key], f"{path}.{key}", errors)
         return
     if isinstance(actual, list) and isinstance(expected, list):
         if len(actual) != len(expected):
             errors.append(f"{path}: length differs ({len(actual)} != {len(expected)})")
             return
         for index, (actual_item, expected_item) in enumerate(zip(actual, expected, strict=True)):
-            compare_values(actual_item, expected_item, f"{path}[{index}]", errors)
+            _compare(actual_item, expected_item, f"{path}[{index}]", errors)
         return
     if (
         isinstance(actual, Real)
