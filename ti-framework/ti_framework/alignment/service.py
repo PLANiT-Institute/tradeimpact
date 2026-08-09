@@ -128,6 +128,113 @@ class TradeImpactService:
             }
         return {"status": readiness["status"], "readiness": readiness}
 
+    def list_lifetime_results(self) -> dict[str, object]:
+        """Headline TI per scenario for every cohort whose inputs resolved, with its coverage."""
+        results = self._read("lifetime_results.json")
+        rows = [
+            {
+                "cohort_id": cohort_id,
+                "firm": payload["firm"],
+                "cohort_year": payload["cohort_year"],
+                "covered_unit_share": payload["coverage"]["covered_share"],
+                "operating_lifetime_years": payload["data_quality"]["lifetime_T"],
+                "scenarios": {
+                    scenario: {
+                        "TI_cohort_tCO2e": cohort["total_tCO2e"],
+                        "TI_per_vehicle_kgCO2e": (
+                            cohort["total_tCO2e"] * 1000 / payload["coverage"]["covered_units"]
+                        ),
+                        "direction": cohort["direction"],
+                    }
+                    for scenario, cohort in sorted(payload["cohorts"].items())
+                },
+            }
+            for cohort_id, payload in sorted(results.items())
+        ]
+        return {
+            "status": "available" if rows else "not_available",
+            "results": rows,
+            "reporting_rule": (
+                "Never report one scenario alone. A positive value is a contribution against "
+                "that pathway, a negative value is carbon lock-in, and the value is additional "
+                "to Scope 3 Category 11 rather than netted against it."
+            ),
+        }
+
+    def get_lifetime_result(
+        self,
+        cohort_id: str,
+        scenario: str | None = None,
+        decomposition: str | None = None,
+    ) -> dict[str, object]:
+        """Full lifetime result for one cohort: totals, decomposition, coverage, sensitivity.
+
+        ``decomposition`` selects ``destination`` or ``product_type``; omitted returns both.
+        """
+        results = self._read("lifetime_results.json")
+        payload = results.get(cohort_id)
+        if payload is None:
+            return {
+                "status": "not_available",
+                "reason": f"no published lifetime result for cohort: {cohort_id}",
+                "available_cohorts": sorted(results),
+            }
+        wanted = [scenario] if scenario else sorted(payload["cohorts"])
+        unknown = [name for name in wanted if name not in payload["cohorts"]]
+        if unknown:
+            return {
+                "status": "not_available",
+                "reason": f"unknown scenario(s): {', '.join(unknown)}",
+                "available_scenarios": sorted(payload["cohorts"]),
+            }
+        if scenario:
+            # Refusing a single-scenario answer is the whole point of the S1/S2/S3 rule.
+            wanted = sorted(payload["cohorts"])
+        axes = {"destination": "by_country", "product_type": "by_powertrain"}
+        selected = [decomposition] if decomposition in axes else list(axes)
+        return {
+            "status": "available",
+            "cohort_id": cohort_id,
+            "firm": payload["firm"],
+            "cohort_year": payload["cohort_year"],
+            "scenarios": {
+                name: {
+                    "TI_cohort_tCO2e": payload["cohorts"][name]["total_tCO2e"],
+                    "direction": payload["cohorts"][name]["direction"],
+                    "directional_only": payload["cohorts"][name]["directional_only"],
+                    "annual_tCO2e": payload["cohorts"][name]["annual_tCO2e"],
+                    **{
+                        axis: payload["cohorts"][name][axes[axis]]
+                        for axis in selected
+                    },
+                }
+                for name in wanted
+            },
+            "coverage": payload["coverage"],
+            "sensitivity": payload.get("sensitivity", {}),
+            "data_quality": payload["data_quality"],
+            "decomposition_identity_holds": payload["decomposition_identity_holds"],
+            "requested_scenario_note": (
+                "All three scenarios are returned regardless of the requested one: a single "
+                "scenario is not a reportable Trade Impact figure."
+                if scenario
+                else None
+            ),
+        }
+
+    def get_destination_inputs(self, country_code: str | None = None) -> dict[str, object]:
+        """Sourced destination-market use, energy, and pathway inputs with tier and derivation."""
+        rows = self._read("destination_inputs.json")
+        if country_code:
+            wanted = country_code.strip().upper()
+            rows = [row for row in rows if row.get("country_code") == wanted]
+            if not rows:
+                return {
+                    "status": "not_available",
+                    "reason": f"no destination inputs for: {country_code}",
+                }
+        return {"status": "available", "destinations": rows}
+
     def get_destination_pathway(
         self,
         geography: str,

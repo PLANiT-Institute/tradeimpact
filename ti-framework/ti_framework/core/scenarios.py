@@ -55,8 +55,13 @@ def run(
     config: EngineConfig | None = None,
     analysis_level: str = "Level 1",
     layer1_method: str = "B",
+    scenario_sources: dict[str, str] | None = None,
 ) -> RunResult:
-    """Run the engine across the configured scenarios and assemble all required outputs."""
+    """Run the engine across the configured scenarios and assemble all required outputs.
+
+    ``scenario_sources`` documents where each pathway rate came from. The defaults say
+    "source required" on purpose: a declaration that names no source must read as incomplete.
+    """
     config = config or EngineConfig()
     cohorts: dict[Scenario, CohortResult] = {}
     all_vehicle_results: list[VehicleResult] = []
@@ -94,7 +99,10 @@ def run(
     for sc in cohorts.values():
         warnings.extend(w for w in sc.warnings if w not in warnings)
 
-    scenario_sources = {sc.value: _SCENARIO_SOURCE_DEFAULT[sc] for sc in config.scenarios}
+    supplied = scenario_sources or {}
+    scenario_sources = {
+        sc.value: supplied.get(sc.value, _SCENARIO_SOURCE_DEFAULT[sc]) for sc in config.scenarios
+    }
 
     dq = DataQuality(
         firm=firm,

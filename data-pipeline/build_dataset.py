@@ -43,6 +43,9 @@ from ti_framework.report.outputs import to_json_dict  # noqa: E402
 
 from adapters.automotive_eea import HYUNDAI_SNAPSHOT, TOYOTA_SNAPSHOT  # noqa: E402
 from adapters.automotive_eea import build_all_records as build_eea_automotive_records  # noqa: E402
+from adapters.destination_eu import SNAPSHOT as DESTINATION_SNAPSHOT  # noqa: E402
+from adapters.destination_eu import build_records as build_destination_records  # noqa: E402
+from lifetime_run import build_fixtures, run_lifetime  # noqa: E402
 from adapters.power_jera import SNAPSHOT as JERA_POWER_SNAPSHOT  # noqa: E402
 from adapters.power_jera import build_records as build_jera_power_records  # noqa: E402
 from adapters.power_koen import SNAPSHOT as KOEN_POWER_SNAPSHOT  # noqa: E402
@@ -229,6 +232,11 @@ def build_meta() -> dict:
             "data-pipeline/adapters/shipping_mol.py": _file_sha256(
                 REPO / "data-pipeline" / "adapters" / "shipping_mol.py"
             ),
+            str(DESTINATION_SNAPSHOT.relative_to(REPO)): _file_sha256(DESTINATION_SNAPSHOT),
+            "data-pipeline/adapters/destination_eu.py": _file_sha256(
+                REPO / "data-pipeline" / "adapters" / "destination_eu.py"
+            ),
+            "data-pipeline/lifetime_run.py": _file_sha256(REPO / "data-pipeline" / "lifetime_run.py"),
         },
         "collection_status": {
             "countries_loaded": len(wb_inputs.countries),
@@ -311,9 +319,17 @@ def build_alignment_data() -> dict[str, list[dict]]:
     Sector adapters may add records only after source, scope, unit, and mapping coverage pass
     their validation. No adapter may fill unmatched activity with an estimated mix.
     """
-    automotive = build_eea_automotive_records()
+    destination = build_destination_records()
+    destination_rows = destination["destination_inputs"]
+    # Readiness is decided by what the join actually resolved, so the fixtures are built first.
+    coverage = {
+        cohort_id: fixture["coverage"]
+        for cohort_id, fixture in build_fixtures(destination=destination_rows).items()
+    }
+    automotive = build_eea_automotive_records(destination_rows, coverage)
     adapters = [
         automotive,
+        {"benchmarks": [], "company_metrics": [], "sources": destination["sources"]},
         build_jera_power_records(),
         build_koen_power_records(),
         build_mol_shipping_records(),
@@ -326,6 +342,7 @@ def build_alignment_data() -> dict[str, list[dict]]:
         "product_cohorts": automotive["product_cohorts"],
         "pathways": automotive["pathways"],
         "impact_readiness": automotive["impact_readiness"],
+        "destination_inputs": destination_rows,
     }
     _require_unique(result["sources"], "source_id")
     _require_unique(result["benchmarks"], "benchmark_id")
@@ -569,6 +586,7 @@ def main() -> int:
     firms = build_universe()
     countries, support_contract = build_countries()
     alignment = build_alignment_data()
+    lifetime = run_lifetime()
     available_company_ids = {row["company_id"] for row in alignment["company_metrics"]}
     cohort_company_ids = {row["company_id"] for row in alignment["product_cohorts"]}
     ready_cohort_ids = {
@@ -628,6 +646,7 @@ def main() -> int:
             "countries": countries,
             "firms": firms,
             **alignment,
+            "lifetime_results": lifetime,
             "inputs": {},
             "engine_source_sha256": meta["engine_source_sha256"],
             "workbook_sha256": meta["workbook_sha256"],
@@ -645,6 +664,8 @@ def main() -> int:
         "pathways.json",
         "impact_readiness.json",
         "sources.json",
+        "destination_inputs.json",
+        "lifetime_results.json",
     }
     removed = _prune_stale_json_outputs(expected_names)
     if removed:
@@ -654,6 +675,7 @@ def main() -> int:
     _write_json(OUT / "firms.json", firms)
     for name, rows in alignment.items():
         _write_json(OUT / f"{name}.json", rows)
+    _write_json(OUT / "lifetime_results.json", lifetime)
     _write_json(OUT / "meta.json", meta)
     cohort_count = len(alignment["product_cohorts"])
     lifetime_result_count = sum(

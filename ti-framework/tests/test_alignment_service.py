@@ -76,8 +76,37 @@ def test_published_service_exposes_target_hierarchy_and_readiness() -> None:
     assert pathway["pathways"][0]["geography"] == "EU27"
 
     readiness = service.get_impact_readiness("toyota-eu27-passenger-cars-2024")
-    assert readiness["status"] == "inputs_incomplete"
-    assert readiness["readiness"]["publication_decision"] == "withhold_lifetime_ti"
+    assert readiness["status"] == "available"
+    assert readiness["readiness"]["publication_decision"] == "publish_partial_lifetime_ti"
+
+
+def test_published_service_returns_every_scenario_and_an_exact_decomposition() -> None:
+    service = TradeImpactService(REPO / "data" / "published")
+
+    listing = service.list_lifetime_results()
+    assert listing["status"] == "available"
+    assert len(listing["results"]) == 2
+    assert "never" in listing["reporting_rule"].lower()
+
+    # Asking for one scenario must still return all three: a single scenario is not a
+    # reportable Trade Impact figure.
+    result = service.get_lifetime_result("toyota-eu27-passenger-cars-2024", scenario="S2")
+    assert set(result["scenarios"]) == {"S1", "S2", "S3"}
+    assert result["requested_scenario_note"]
+    assert result["decomposition_identity_holds"] is True
+    for scenario in result["scenarios"].values():
+        total = scenario["TI_cohort_tCO2e"]
+        tolerance = max(1.0, abs(total)) * 1e-9
+        assert abs(sum(scenario["destination"].values()) - total) < tolerance
+        assert abs(sum(scenario["product_type"].values()) - total) < tolerance
+
+    unknown = service.get_lifetime_result("no-such-cohort")
+    assert unknown["status"] == "not_available"
+    assert unknown["available_cohorts"]
+
+    destinations = service.get_destination_inputs()
+    assert len(destinations["destinations"]) == 27
+    assert all(row["missing_required_inputs"] == [] for row in destinations["destinations"])
 
 
 def test_published_jera_snapshot_is_assured_and_policy_is_context_only() -> None:

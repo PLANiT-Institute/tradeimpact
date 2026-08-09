@@ -38,6 +38,7 @@ class FixtureRun:
     analysis_level: str = "Level 1"
     layer1_method: str = "B"
     expected: dict | None = None
+    scenario_sources: dict[str, str] | None = None
 
 
 def _rate(d: dict | None) -> ScenarioRate:
@@ -82,6 +83,7 @@ def parse_fixture(raw: dict) -> FixtureRun:
         lifetime_T=s.get("lifetime_T"),
         lifetime_sens=s.get("lifetime_sens", 3),
         vkt=dict(s.get("vkt", {})),
+        lifetime_by_country={k: int(v) for k, v in s.get("lifetime_by_country", {}).items()},
         uf_band=s.get("uf_band", 0.15),
         realworld_range=tuple(rw) if rw else None,
     )
@@ -141,4 +143,5 @@ def parse_fixture(raw: dict) -> FixtureRun:
         analysis_level=raw.get("analysis_level", "Level 1"),
         layer1_method=raw.get("layer1_method", "B"),
         expected=raw.get("expected"),
+        scenario_sources=raw.get("scenario_sources"),
     )

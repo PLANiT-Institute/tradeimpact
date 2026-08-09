@@ -107,13 +107,47 @@ def test_target_hierarchy_retains_proxy_and_ndc_roles() -> None:
     assert len(sector["applies_to"]) == 27
 
 
-def test_readiness_gate_withholds_lifetime_result() -> None:
+def test_readiness_gate_withholds_lifetime_result_without_destination_inputs() -> None:
+    """The gate is derived, not declared: with no destination records nothing is publishable."""
     readiness = build_records()["impact_readiness"][0]
 
     assert readiness["status"] == "inputs_incomplete"
     assert readiness["publication_decision"] == "withhold_lifetime_ti"
-    assert len(readiness["missing_required_inputs"]) == 9
+    assert len(readiness["missing_required_inputs"]) == 6
     assert "unsourced assumptions" in readiness["publication_reason"]
+
+
+def test_readiness_gate_opens_once_every_destination_input_resolves() -> None:
+    from adapters.destination_eu import build_records as build_destination_records
+
+    destination = build_destination_records()["destination_inputs"]
+    coverage = {
+        "toyota-eu27-passenger-cars-2024": {
+            "covered_share": 0.9,
+            "withheld_product_types": {
+                "PHEV": {"units": 1.0, "share": 0.1, "reason": "no utility factor"}
+            },
+        }
+    }
+    readiness = build_records(
+        destination_rows=destination, coverage_by_cohort=coverage
+    )["impact_readiness"][0]
+
+    assert readiness["status"] == "available"
+    assert readiness["missing_required_inputs"] == []
+    assert readiness["publication_decision"] == "publish_partial_lifetime_ti"
+    # A partial result must still say what it does not cover.
+    assert readiness["withheld_product_types"]["PHEV"]["units"] == 1.0
+    assert "not an export claim" in readiness["publication_reason"]
+
+    # Drop one country's distance and the gate must close again.
+    broken = [dict(row) for row in destination]
+    broken[0]["vkt_km_per_year"] = None
+    closed = build_records(destination_rows=broken, coverage_by_cohort=coverage)[
+        "impact_readiness"
+    ][0]
+    assert closed["status"] == "inputs_incomplete"
+    assert any("vehicle-kilometres" in gap for gap in closed["missing_required_inputs"])
 
 
 def test_hyundai_uses_the_same_eea_boundary_without_claiming_korean_exports() -> None:

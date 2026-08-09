@@ -4,10 +4,13 @@ import {
   COHORT_KEYS,
   DATA_QUALITY_KEYS,
   FIRM_RESULT_KEYS,
+  SCENARIOS,
   getCompanyMetrics,
   getContract,
+  getDestinationInputs,
   getDestinationPathways,
   getImpactReadiness,
+  getLifetimeResults,
   getMeta,
   getProductCohorts,
   getSources,
@@ -108,20 +111,58 @@ test("destination pathways preserve proxy hierarchy", () => {
   assert.equal(ndc.calculation_status, "not_directly_usable");
 });
 
-test("readiness gate blocks unsourced lifetime results", () => {
-  const readiness = getImpactReadiness()[0];
-  assert.equal(readiness.status, "inputs_incomplete");
-  assert.equal(readiness.publication_decision, "withhold_lifetime_ti");
-  assert.equal(readiness.missing_required_inputs.length, 9);
-  assert.match(readiness.publication_reason, /unsourced assumptions/i);
+test("readiness gate opens only on sourced inputs and still bounds the result", () => {
+  for (const readiness of getImpactReadiness()) {
+    assert.equal(readiness.status, "available");
+    assert.equal(readiness.publication_decision, "publish_partial_lifetime_ti");
+    // The gate opens only when nothing required is missing. What cannot be modelled is
+    // withheld by product type with its unit count, never absorbed into the headline.
+    assert.equal(readiness.missing_required_inputs.length, 0);
+    assert.deepEqual(Object.keys(readiness.withheld_product_types ?? {}).sort(), [
+      "FCEV",
+      "PHEV",
+    ]);
+    assert.ok((readiness.covered_unit_share ?? 0) > 0.9);
+    assert.match(readiness.origin_mapping_status ?? "", /not_collected/);
+  }
 
   const meta = getMeta();
   assert.equal(meta.impact_contract.version, "export-impact-v1");
   assert.equal(meta.impact_contract.product_cohorts, 2);
   assert.equal(meta.impact_contract.cohort_records, 1_286);
-  assert.equal(meta.impact_contract.published_lifetime_results, 0);
+  assert.equal(meta.impact_contract.published_lifetime_results, 2);
   assert.match(meta.engine_source_sha256, /^[a-f0-9]{64}$/);
   assert.match(meta.dataset_sha256, /^[a-f0-9]{64}$/);
+});
+
+test("lifetime results decompose exactly and never rest on an unsourced input", () => {
+  const destinations = getDestinationInputs();
+  assert.equal(destinations.length, 27);
+  for (const row of destinations) {
+    assert.deepEqual(row.missing_required_inputs, []);
+    // The pro-rata identity r_fleet = r_power is the framework's first modelling error;
+    // the two rates must come from independent sources.
+    assert.notEqual(row.r_fleet_s1, row.r_power_s1);
+    assert.ok(row.vkt_km_per_year !== null && row.vkt_km_per_year > 3_000);
+    assert.ok(["A", "B", "C"].includes(row.vkt_tier ?? ""));
+  }
+
+  for (const result of Object.values(getLifetimeResults())) {
+    assert.ok(result.decomposition_identity_holds);
+    for (const scenario of SCENARIOS) {
+      const cohort = result.cohorts[scenario];
+      const byCountry = Object.values(cohort.by_country).reduce((a, b) => a + b, 0);
+      const byProduct = Object.values(cohort.by_powertrain).reduce((a, b) => a + b, 0);
+      const tolerance = Math.max(1, Math.abs(cohort.total_tCO2e)) * 1e-9;
+      assert.ok(Math.abs(byCountry - cohort.total_tCO2e) < tolerance);
+      assert.ok(Math.abs(byProduct - cohort.total_tCO2e) < tolerance);
+      // The reporting horizon is the longest destination lifetime, so it is at least the
+      // units-weighted central T that the declaration reports.
+      assert.ok(cohort.annual_tCO2e.length >= (result.data_quality.lifetime_T ?? 0));
+    }
+    assert.ok(result.coverage.real_world_correction.applied);
+    assert.ok(result.coverage.covered_units < result.coverage.total_units);
+  }
 });
 
 test("cohort and pathway records cite published sources", () => {

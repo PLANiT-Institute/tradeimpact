@@ -216,7 +216,14 @@ def compute_cohort(
 ) -> tuple[CohortResult, list[VehicleResult], list[str]]:
     """Compute single-cohort firm TI for one scenario, with mandatory decomposition."""
     missing: list[str] = []
-    T = support.lifetime_T
+    horizons = {
+        p.country_code: support.lifetime_for(p.country_code)
+        for p in placements
+        if support.lifetime_for(p.country_code) is not None
+    }
+    # The cohort's reporting horizon is the longest destination lifetime; shorter destinations
+    # simply stop contributing after their own T.
+    T = max(horizons.values(), default=support.lifetime_T)
     if T is None or T < 1:
         missing.append("Support_params: vehicle lifetime T missing — cohort not computable")
         empty = CohortResult(
@@ -251,6 +258,10 @@ def compute_cohort(
         if distance is None:
             missing.append(f"[{p.country_code}] VKT (D_c) missing")
             continue
+        horizon = support.lifetime_for(p.country_code)
+        if horizon is None or horizon < 1:
+            missing.append(f"[{p.country_code}] operating lifetime T missing")
+            continue
 
         # FLAG exclusion for S2 headline (D3)
         _, _, excl = _scenario_rates(country, scenario, config)
@@ -258,7 +269,7 @@ def compute_cohort(
             excluded[p.country_code] = excl
             continue
 
-        cell = _compute_cell(p, country, scenario, distance, T, config, missing)
+        cell = _compute_cell(p, country, scenario, distance, horizon, config, missing)
         if cell is None:
             continue
 
@@ -267,7 +278,7 @@ def compute_cohort(
         by_country[p.country_code] = by_country.get(p.country_code, 0.0) + cell.ti_tco2e
         ptkey = cell.vehicle_result.powertrain.value
         by_powertrain[ptkey] = by_powertrain.get(ptkey, 0.0) + cell.ti_tco2e
-        for t in range(T):
+        for t in range(horizon):
             annual[t] += cell.annual_tco2e[t]
 
         u = p.units or 0.0

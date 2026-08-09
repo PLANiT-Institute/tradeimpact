@@ -103,6 +103,84 @@
     "url": "https://www.hyundai.com/eu/en/about-hyundai/company/made-in-europe.html"
   },
   {
+    "accessed_date": "2026-08-09",
+    "evidence_class": "official_primary",
+    "license": "Eurostat reuse policy applies",
+    "notes": "Million vehicle-kilometres by passenger cars; the denominator of the distance-per-car derivation.",
+    "published_date": null,
+    "publisher": "Eurostat",
+    "snapshot_sha256": "2e15f65971df7533d5aa8e5f5f0794b5b47b2f5dbbd10b92a8553731ff9023e7",
+    "source_id": "eurostat-road-tf-veh",
+    "title": "Road traffic performance by vehicle category (road_tf_veh, road_tf_vehmov)",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/road_tf_veh/default/table?lang=en"
+  },
+  {
+    "accessed_date": "2026-08-09",
+    "evidence_class": "official_primary",
+    "license": "Eurostat reuse policy applies",
+    "notes": "Registered passenger-car stock per country.",
+    "published_date": null,
+    "publisher": "Eurostat",
+    "source_id": "eurostat-road-eqs-carpda",
+    "title": "Passenger cars by type of motor energy (road_eqs_carpda)",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/road_eqs_carpda/default/table?lang=en"
+  },
+  {
+    "accessed_date": "2026-08-09",
+    "evidence_class": "official_primary",
+    "license": "Eurostat reuse policy applies",
+    "notes": "Age-class distribution behind the operating-lifetime derivation.",
+    "published_date": null,
+    "publisher": "Eurostat",
+    "source_id": "eurostat-road-eqs-carage",
+    "title": "Passenger cars by age (road_eqs_carage)",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/road_eqs_carage/default/table?lang=en"
+  },
+  {
+    "accessed_date": "2026-08-09",
+    "evidence_class": "official_primary",
+    "license": "Eurostat reuse policy applies",
+    "notes": "National inventory CO2 from cars and from public electricity and heat production, used for the fleet baseline and the power pathway.",
+    "published_date": null,
+    "publisher": "Eurostat",
+    "source_id": "eurostat-env-air-gge-crf",
+    "title": "Greenhouse gas emissions by source sector (env_air_gge), CRF 1.A.3.b.i and 1.A.1.a",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table?lang=en"
+  },
+  {
+    "accessed_date": "2026-08-09",
+    "evidence_class": "official_primary",
+    "license": "Ember CC-BY-4.0; Our World in Data CC-BY",
+    "notes": "Country-level gCO2/kWh. Primary compilation: https://ember-energy.org/data/yearly-electricity-data/. Regional averages are never substituted for a country value.",
+    "published_date": null,
+    "publisher": "Ember, via Our World in Data",
+    "source_id": "ember-owid-grid-intensity",
+    "title": "Carbon intensity of electricity generation",
+    "url": "https://ourworldindata.org/grapher/carbon-intensity-electricity"
+  },
+  {
+    "accessed_date": "2026-08-09",
+    "evidence_class": "official_primary",
+    "license": "EUR-Lex reuse notice applies",
+    "notes": "-55% by 2030 and the recommended -90% by 2040 (https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024DC0063), used only for the pro-rata pathways that have no sector sub-target.",
+    "published_date": null,
+    "publisher": "European Union",
+    "source_id": "eu-climate-law-2021-1119",
+    "title": "Regulation (EU) 2021/1119 (European Climate Law) and COM(2024) 63",
+    "url": "https://eur-lex.europa.eu/eli/reg/2021/1119/oj/eng"
+  },
+  {
+    "accessed_date": "2026-08-09",
+    "evidence_class": "official_primary",
+    "license": "EEA reuse policy applies",
+    "notes": "On-board monitoring gap for model-year 2022 registrations: petrol 21.1%, diesel 17.1%, PHEV 3.14x the type-approval value. Announcement: https://climate.ec.europa.eu/news-other-reads/news/publication-real-world-co2-emissions-and-fuel-consumption-cars-and-vans-collected-2022-2024-07-26_en",
+    "published_date": "2024-07-26",
+    "publisher": "European Environment Agency / European Commission",
+    "source_id": "eea-real-world-obfcm",
+    "title": "Real-world CO2 emissions and fuel consumption of cars and vans",
+    "url": "https://climate-energy.eea.europa.eu/topics/transport/real-world-emissions/data"
+  },
+  {
     "accessed_date": "2026-08-03",
     "evidence_class": "company_reported",
     "license": "JERA website terms; extracted facts only, source linked",

@@ -3736,3 +3736,132 @@ footer.site .planit-mark {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* --- lifetime impact report (/impact) ------------------------------------ */
+.ti-impact .pos { color: var(--pos); }
+.ti-impact .neg { color: var(--neg); }
+.ti-impact .sc-sub {
+  color: var(--ink-3);
+  font-size: 13px;
+  margin-top: 6px;
+}
+.ti-compare-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+.ti-compare-strip a {
+  flex: 1 1 240px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: inherit;
+  background: var(--paper);
+}
+.ti-compare-strip a:hover { border-color: var(--line-strong); }
+.ti-compare-strip strong { display: block; font-size: 15px; }
+.ti-compare-strip span {
+  display: flex;
+  gap: 14px;
+  margin: 6px 0 2px;
+  font-family: var(--font-mono), monospace;
+  font-size: 18px;
+  font-style: normal;
+}
+.ti-compare-strip em { font-style: normal; }
+.ti-compare-strip small { color: var(--ink-3); font-size: 11.5px; letter-spacing: 0.05em; }
+.ti-rules { margin: 0; padding-left: 18px; }
+.ti-rules li { margin-bottom: 10px; color: var(--ink-2); }
+.ti-rules strong { color: var(--ink); }
+.ti-flag {
+  border-left: 3px solid var(--accent);
+  padding: 10px 14px;
+  background: rgba(217, 119, 6, 0.07);
+  color: var(--ink-2);
+  font-size: 14px;
+}
+.ti-cohort { border-top: 1px solid var(--line-strong); padding-top: 28px; }
+.ti-cohort-head h2 { margin: 4px 0 8px; }
+.ti-panel { margin-top: 28px; }
+.ti-panel h3 { margin-bottom: 4px; }
+.ti-panel > .muted { margin-top: 0; font-size: 14px; max-width: 68ch; }
+.ti-chart { margin-top: 14px; display: grid; gap: 6px; }
+.ti-chart-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) 1fr minmax(190px, 240px);
+  align-items: center;
+  gap: 12px;
+}
+.ti-chart-label { display: flex; align-items: center; gap: 8px; font-size: 13.5px; }
+.ti-chart-label i { width: 9px; height: 9px; border-radius: 2px; flex: none; }
+.ti-chart-svg { width: 100%; height: 40px; overflow: visible; }
+.ti-axis { stroke: var(--line-strong); stroke-width: 0.4; }
+.ti-axis-note { fill: var(--ink-3); font-size: 9px; font-family: var(--font-mono), monospace; }
+.ti-chart-values {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+}
+.ti-chart-values .pos { color: var(--pos); }
+.ti-chart-values .neg { color: var(--neg); }
+.ti-trajectory { width: 100%; height: auto; margin-top: 12px; }
+.ti-trajectory .ti-axis { stroke-width: 1; stroke-dasharray: 3 3; }
+.ti-trajectory .ti-axis-note { font-size: 10px; }
+.ti-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13.5px; }
+.ti-table caption { text-align: left; color: var(--ink-3); font-size: 13px; padding-bottom: 8px; }
+.ti-table th, .ti-table td { border-bottom: 1px solid var(--line); padding: 7px 8px; text-align: left; }
+.ti-table td.num, .ti-table th.num { text-align: right; font-family: var(--font-mono), monospace; }
+.ti-table thead th { color: var(--ink-3); font-weight: 500; font-size: 12px; letter-spacing: 0.04em; }
+.ti-details { margin-top: 16px; }
+.ti-details summary { cursor: pointer; color: var(--ink-2); font-size: 13.5px; }
+.tier {
+  font-family: var(--font-mono), monospace;
+  font-size: 11.5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 1px 7px;
+}
+.tier-C { border-color: var(--accent); color: var(--accent); }
+.ti-gaps ul { padding-left: 18px; color: var(--ink-2); font-size: 14px; }
+.ti-gaps li { margin-bottom: 8px; }
+.ti-sources { padding-left: 18px; font-size: 14px; }
+.ti-sources li { margin-bottom: 6px; }
+@media (max-width: 720px) {
+  .ti-chart-row { grid-template-columns: 1fr; gap: 2px; }
+  .ti-chart-values { justify-content: flex-start; }
+}
+.ti-impact .ti-headline {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.ti-impact .ti-headline .scenario-card.central {
+  grid-column: auto;
+  padding: 20px;
+}
+.ti-impact .ti-headline .scenario-card .sc-value {
+  font-size: clamp(26px, 3vw, 34px);
+  margin-top: 14px;
+}
+@media (max-width: 860px) {
+  .ti-impact .ti-headline { grid-template-columns: 1fr; }
+}
+.ti-legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 12px 0 2px;
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+.ti-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.ti-legend i { width: 14px; height: 4px; border-radius: 2px; }
+.ti-directional {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--accent);
+  border-top: 1px dashed var(--line-strong);
+  padding-top: 8px;
+}

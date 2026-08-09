@@ -93,6 +93,32 @@ def get_impact_readiness(cohort_id: str) -> dict[str, Any]:
 
 
 @mcp.tool(annotations=READ_ONLY)
+def list_lifetime_results() -> dict[str, Any]:
+    """List published lifetime TI per cohort across S1/S2/S3, with per-vehicle values."""
+    return service.list_lifetime_results()
+
+
+@mcp.tool(annotations=READ_ONLY)
+def get_lifetime_result(
+    cohort_id: str,
+    scenario: str | None = None,
+    decomposition: str | None = None,
+) -> dict[str, Any]:
+    """Lifetime TI for one cohort: totals, annual path, decomposition, coverage, sensitivity.
+
+    ``decomposition`` selects "destination" or "product_type". All three scenarios are always
+    returned: a single-scenario Trade Impact figure is not reportable.
+    """
+    return service.get_lifetime_result(cohort_id, scenario, decomposition)
+
+
+@mcp.tool(annotations=READ_ONLY)
+def get_destination_inputs(country_code: str | None = None) -> dict[str, Any]:
+    """Sourced destination distance, lifetime, fleet baseline, grid, and pathway rates by tier."""
+    return service.get_destination_inputs(country_code)
+
+
+@mcp.tool(annotations=READ_ONLY)
 def trace_source(source_id: str) -> dict[str, Any]:
     """Return the publisher, URL, evidence class, date, licence, and notes for one source."""
     return service.trace_source(source_id)
@@ -128,6 +154,20 @@ def product_cohort_resource(cohort_id: str) -> str:
     return json.dumps(
         service.get_product_cohort(cohort_id), ensure_ascii=False, sort_keys=True
     )
+
+
+@mcp.resource("ti://impact/{cohort_id}")
+def lifetime_result_resource(cohort_id: str) -> str:
+    """Published lifetime TI, decomposition, coverage, and sensitivity for one cohort."""
+    return json.dumps(
+        service.get_lifetime_result(cohort_id), ensure_ascii=False, sort_keys=True
+    )
+
+
+@mcp.resource("ti://destinations/inputs")
+def destination_inputs_resource() -> str:
+    """Sourced destination-market inputs with tier, reference year, and derivation."""
+    return json.dumps(service.get_destination_inputs(), ensure_ascii=False, sort_keys=True)
 
 
 @mcp.prompt()

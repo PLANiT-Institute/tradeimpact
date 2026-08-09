@@ -62,7 +62,7 @@ def sweep_lifetime(
     for label, Tv in (("T_minus", T - delta), ("T_central", T), ("T_plus", T + delta)):
         if Tv < 1:
             continue
-        sup = replace(support, lifetime_T=Tv)
+        sup = support.with_lifetime(Tv)
         out[label] = {
             sc.value: _total(firm, cohort_year, sc, placements, countries, sup, config)
             for sc in config.scenarios
@@ -228,7 +228,7 @@ def monte_carlo(
         Tv = int(rng.integers(max(1, T - support.lifetime_sens), T + support.lifetime_sens + 1))
         uf_delta = float(rng.uniform(-band, band))
         rw_f = float(rng.uniform(rw[0], rw[1]))
-        sup = replace(support, lifetime_T=Tv)
+        sup = support.with_lifetime(Tv)
         pl = []
         for p in placements:
             v = p.vehicle

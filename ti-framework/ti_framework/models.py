@@ -18,13 +18,21 @@ from enum import StrEnum
 class Scenario(StrEnum):
     """The three mandatory scenarios (Guideline §4.7). Never report S2 alone."""
 
-    S1 = "S1"  # Low — current policies (IEA WEO STEPS)
-    S2 = "S2"  # Central — NDC unconditional (UNFCCC)
-    S3 = "S3"  # High — 1.5C (IEA NZE)
+    # The labels name the *ambition level*, not a particular publisher's scenario. Which
+    # pathway fills each level is a per-run sourcing decision, recorded in
+    # DataQuality.scenario_sources — hard-coding "STEPS" or "NZE" here would mislabel a run
+    # that sourced its rates from national inventories or an EU pathway instead.
+    S1 = "S1"  # Low — the trajectory currently being realised
+    S2 = "S2"  # Central — the trajectory that has been committed to
+    S3 = "S3"  # High — a 1.5C-aligned trajectory
 
     @property
     def label(self) -> str:
-        return {"S1": "Low (STEPS)", "S2": "Central (NDC)", "S3": "High (NZE)"}[self.value]
+        return {
+            "S1": "Low (current trajectory)",
+            "S2": "Central (committed policy)",
+            "S3": "High (1.5°C aligned)",
+        }[self.value]
 
 
 ALL_SCENARIOS: tuple[Scenario, ...] = (Scenario.S1, Scenario.S2, Scenario.S3)
@@ -157,11 +165,34 @@ class SupportParams:
     lifetime_T: int | None = None  # central T
     lifetime_sens: int = 3  # +/- years
     vkt: dict[str, float] = field(default_factory=dict)  # D_c per country code [km/yr]
+    # Per-destination operating lifetime. A fleet that is scrapped at 12 years and one scrapped
+    # at 25 do not share a horizon, so a country value overrides the central T where sourced.
+    lifetime_by_country: dict[str, int] = field(default_factory=dict)
     uf_band: float = 0.15  # +/- UF sensitivity
     realworld_range: tuple[float, float] | None = None
 
     def vkt_for(self, code: str) -> float | None:
         return self.vkt.get(code)
+
+    def lifetime_for(self, code: str) -> int | None:
+        return self.lifetime_by_country.get(code, self.lifetime_T)
+
+    def with_lifetime(self, central: int) -> SupportParams:
+        """Move the central lifetime, carrying every per-country value by the same shift.
+
+        Sensitivity sweeps vary one horizon; without the shift they would silently discard the
+        per-country lifetimes and sweep only the countries that never had one.
+        """
+        from dataclasses import replace
+
+        delta = 0 if self.lifetime_T is None else central - self.lifetime_T
+        return replace(
+            self,
+            lifetime_T=central,
+            lifetime_by_country={
+                code: max(1, years + delta) for code, years in self.lifetime_by_country.items()
+            },
+        )
 
 
 @dataclass
