@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
+  SCENARIOS,
+  SCENARIO_LABELS,
   getImpactReadiness,
+  getLifetimeResults,
   getProductCohorts,
   getSources,
   type ProductCohort,
 } from "@/lib/data";
+import { kg, mt } from "@/components/cohort-report";
 
 export const metadata: Metadata = {
   title: "Toyota vs Hyundai EU27 cohort — Trade Impact",
@@ -78,6 +82,8 @@ export default function AutomotiveComparison() {
   const toyota = summarize(toyotaCohort);
   const hyundai = summarize(hyundaiCohort);
   const readiness = getImpactReadiness();
+  const results = getLifetimeResults();
+  const lifetimeOf = (cohort: ProductCohort) => results[cohort.cohort_id];
   const sourceIds = new Set([
     ...(toyotaCohort.origin_context?.source_ids ?? []),
     ...(hyundaiCohort.origin_context?.source_ids ?? []),
@@ -116,9 +122,14 @@ export default function AutomotiveComparison() {
           </p>
         </div>
         <div className="alignment-badge caution">
-          <span>Lifetime GHG comparison</span>
-          <strong>Withheld</strong>
-          <small>sales and technology can be compared; hidden GHG cannot yet</small>
+          <span>Lifetime TI · S2 national commitments</span>
+          <strong>
+            {mt(lifetimeOf(toyotaCohort).cohorts.S2.total_tCO2e, 1)} vs{" "}
+            {mt(lifetimeOf(hyundaiCohort).cohorts.S2.total_tCO2e, 1)} Mt
+          </strong>
+          <small>
+            Toyota vs Hyundai. Cohort sizes differ, so compare the per-vehicle figures below.
+          </small>
         </div>
       </section>
 
@@ -150,13 +161,77 @@ export default function AutomotiveComparison() {
                 <div key={type}><i style={{ background: COLORS[type] }} /><span>{LABELS[type]}</span><strong>{percent(company.byType[type], company.total)}</strong></div>
               ))}
             </div>
+            <div className="comparison-kpis">
+              {SCENARIOS.map((s) => {
+                const result = lifetimeOf(company.cohort);
+                const perVehicle =
+                  (result.cohorts[s].total_tCO2e * 1000) / result.coverage.covered_units;
+                return (
+                  <div key={s}>
+                    <span>{s} · per vehicle</span>
+                    <strong className={perVehicle >= 0 ? "pos" : "neg"}>
+                      {kg(perVehicle)} kg
+                    </strong>
+                  </div>
+                );
+              })}
+            </div>
           </article>
         ))}
       </section>
 
+      <section className="alignment-section" id="lifetime-comparison">
+        <header>
+          <div><p className="eyebrow">00 / lifetime result</p><h2>Same boundary, same pathways, <em>two different lock-in profiles</em></h2></div>
+          <p>
+            Per-vehicle lifetime TI removes the cohort-size difference, so what remains is the
+            portfolio decision itself. Both are reported under all three pathways; neither is
+            reported alone.
+          </p>
+        </header>
+        <div className="exposure-table-wrap">
+          <table className="exposure-table comparison-table">
+            <thead>
+              <tr>
+                <th>Pathway</th>
+                <th>Toyota total</th><th>Toyota per vehicle</th>
+                <th>Hyundai total</th><th>Hyundai per vehicle</th>
+              </tr>
+            </thead>
+            <tbody>
+              {SCENARIOS.map((s) => (
+                <tr key={s}>
+                  <td><strong>{s}</strong> {SCENARIO_LABELS[s]}</td>
+                  {[toyotaCohort, hyundaiCohort].map((cohort) => {
+                    const result = lifetimeOf(cohort);
+                    const totalTi = result.cohorts[s].total_tCO2e;
+                    const perVehicle = (totalTi * 1000) / result.coverage.covered_units;
+                    return [
+                      <td key={`${cohort.company_id}-total`} className={totalTi >= 0 ? "pos" : "neg"}>
+                        {mt(totalTi)} Mt
+                      </td>,
+                      <td key={`${cohort.company_id}-per`} className={perVehicle >= 0 ? "pos" : "neg"}>
+                        {kg(perVehicle)} kg
+                      </td>,
+                    ];
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="table-footnote">
+          Coverage differs: {percent(lifetimeOf(toyotaCohort).coverage.covered_units, toyota.total)} of
+          the Toyota cohort and{" "}
+          {percent(lifetimeOf(hyundaiCohort).coverage.covered_units, hyundai.total)} of the Hyundai
+          cohort are priced. PHEV and FCEV units are withheld with their counts on both sides, so
+          the two figures rest on the same rule.
+        </p>
+      </section>
+
       <section className="alignment-section comparison-findings">
         <header>
-          <div><p className="eyebrow">01 / observed contrast</p><h2>What can be said <em>without inventing lifetime emissions</em></h2></div>
+          <div><p className="eyebrow">01 / observed contrast</p><h2>What the registration record shows <em>before any lifetime model runs</em></h2></div>
         </header>
         <div className="capability-grid">
           <article><span>Scale</span><strong>{(toyota.total / hyundai.total).toFixed(2)}×</strong><p>Toyota has the larger observed EU27 passenger-car cohort in this exact EEA boundary.</p></article>
@@ -168,21 +243,31 @@ export default function AutomotiveComparison() {
       <section className="alignment-section" id="country-comparison">
         <header>
           <div><p className="eyebrow">02 / destination comparison</p><h2>The two cohorts enter <em>different national exposure patterns</em></h2></div>
-          <p>Country counts are observed registrations. Hidden GHG remains unavailable for both companies.</p>
+          <p>
+            Country counts are observed registrations; the last two columns are the lifetime TI
+            those registrations carry under national commitments (S2).
+          </p>
         </header>
         <div className="exposure-table-wrap">
           <table className="exposure-table comparison-table">
-            <thead><tr><th>Destination</th><th>Toyota registrations</th><th>Toyota share</th><th>Hyundai registrations</th><th>Hyundai share</th><th>Lifetime comparison</th></tr></thead>
+            <thead><tr><th>Destination</th><th>Toyota registrations</th><th>Toyota share</th><th>Toyota TI (S2)</th><th>Hyundai registrations</th><th>Hyundai share</th><th>Hyundai TI (S2)</th></tr></thead>
             <tbody>
               {countryCodes.map((code) => {
                 const toyotaUnits = toyota.countries.find(([key]) => key === code)?.[1] ?? 0;
                 const hyundaiUnits = hyundai.countries.find(([key]) => key === code)?.[1] ?? 0;
+                const toyotaTi = lifetimeOf(toyotaCohort).cohorts.S2.by_country[code];
+                const hyundaiTi = lifetimeOf(hyundaiCohort).cohorts.S2.by_country[code];
                 return (
                   <tr key={code}>
                     <td><strong>{code}</strong></td>
                     <td>{count(toyotaUnits)}</td><td>{percent(toyotaUnits, toyota.total)}</td>
+                    <td className={toyotaTi == null ? undefined : toyotaTi >= 0 ? "pos" : "neg"}>
+                      {toyotaTi == null ? <span className="pending-target">not covered</span> : `${mt(toyotaTi, 3)} Mt`}
+                    </td>
                     <td>{count(hyundaiUnits)}</td><td>{percent(hyundaiUnits, hyundai.total)}</td>
-                    <td><span className="pending-target">Inputs incomplete</span></td>
+                    <td className={hyundaiTi == null ? undefined : hyundaiTi >= 0 ? "pos" : "neg"}>
+                      {hyundaiTi == null ? <span className="pending-target">not covered</span> : `${mt(hyundaiTi, 3)} Mt`}
+                    </td>
                   </tr>
                 );
               })}
@@ -216,12 +301,22 @@ export default function AutomotiveComparison() {
 
       <section className="alignment-section">
         <header>
-          <div><p className="eyebrow">04 / publication gate</p><h2>Both companies face the <em>same missing-input rule</em></h2></div>
+          <div><p className="eyebrow">04 / publication gate</p><h2>Both companies face the <em>same publication rule</em></h2></div>
+          <p>
+            The same gate decided both results: publish the share of the cohort whose inputs are
+            sourced, withhold the rest by product type with its unit count, and never substitute a
+            zero for a missing input.
+          </p>
         </header>
         <div className="readiness-grid">
           {readiness.filter((row) => [toyotaCohort.cohort_id, hyundaiCohort.cohort_id].includes(row.cohort_id)).map((row) => (
-            <article className="missing-inputs" key={row.cohort_id}>
-              <span>{row.cohort_id.startsWith("toyota") ? "Toyota" : "Hyundai"} · {row.missing_required_inputs.length} required groups</span>
+            <article className={row.missing_required_inputs.length ? "missing-inputs" : "ready-inputs"} key={row.cohort_id}>
+              <span>
+                {row.cohort_id.startsWith("toyota") ? "Toyota" : "Hyundai"} ·{" "}
+                {row.missing_required_inputs.length
+                  ? `${row.missing_required_inputs.length} required groups outstanding`
+                  : `${((row.covered_unit_share ?? 0) * 100).toFixed(1)}% of units covered`}
+              </span>
               <p>{row.publication_reason}</p>
             </article>
           ))}

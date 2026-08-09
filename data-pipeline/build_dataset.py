@@ -62,12 +62,15 @@ ASSESSMENT_GATE_NOTE = (
 )
 TOYOTA_ALIGNMENT_NOTE = (
     "Observed Toyota-brand 2024 EU27 destination cohort available by country, commercial name, "
-    "and powertrain. Lifetime TI remains withheld until destination-use and pathway inputs are "
-    "source-complete."
+    "and powertrain. Lifetime TI is published for the covered share of the cohort under S1/S2/S3; "
+    "PHEV and FCEV units stay withheld with their counts, and production-to-destination origin "
+    "mapping is not collected, so this is a destination-cohort impact and not an export claim."
 )
 HYUNDAI_ALIGNMENT_NOTE = (
     "Observed Hyundai-brand 2024 EU27 destination cohort available by country, commercial name, "
-    "and powertrain. Lifetime TI and production-to-destination origin mapping remain withheld."
+    "and powertrain. Lifetime TI is published for the covered share of the cohort under S1/S2/S3; "
+    "PHEV and FCEV units stay withheld with their counts, and production-to-destination origin "
+    "mapping is not collected, so this is a destination-cohort impact and not an export claim."
 )
 JERA_ALIGNMENT_NOTE = (
     "Evidence-first FY2024 Japan power snapshot available from independently assured company "
