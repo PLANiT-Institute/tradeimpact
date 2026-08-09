@@ -175,6 +175,47 @@ function TrajectoryChart({ result }: { result: LifetimeResult }) {
   );
 }
 
+/** Benchmark against product, per surviving vehicle. The crossing is the lock-in signal. */
+function CrossingChart({ result, scenario }: { result: LifetimeResult; scenario: Scenario }) {
+  const series = result.trajectory.scenarios[scenario];
+  const points = series.benchmark.length;
+  const values = [...series.benchmark, ...series.product].filter(
+    (v): v is number => v != null,
+  );
+  const max = Math.max(...values, 1);
+  const W = 320;
+  const HGT = 150;
+  const pad = { l: 6, r: 6, t: 16, b: 18 };
+  const x = (i: number) => pad.l + (i / Math.max(points - 1, 1)) * (W - pad.l - pad.r);
+  const y = (v: number) => pad.t + (1 - v / max) * (HGT - pad.t - pad.b);
+  const line = (arr: (number | null)[]) =>
+    arr.map((v, i) => (v == null ? null : `${x(i)},${y(v)}`)).filter(Boolean).join(" ");
+  const crossing = series.benchmark.findIndex(
+    (b, i) => b != null && series.product[i] != null && b < (series.product[i] as number),
+  );
+
+  return (
+    <figure className="ti-crossing">
+      <figcaption>
+        <span className="sc-code">{scenario}</span> {SCENARIO_LABELS[scenario]}
+        {crossing >= 0 ? <em> · crosses in year {crossing}</em> : <em> · never crosses</em>}
+      </figcaption>
+      <svg viewBox={`0 0 ${W} ${HGT}`} role="img"
+        aria-label={`${SCENARIO_LABELS[scenario]}: destination benchmark against the cohort's own emissions per surviving vehicle`}>
+        <line x1={pad.l} y1={HGT - pad.b} x2={W - pad.r} y2={HGT - pad.b} className="ti-axis" />
+        {crossing >= 0 ? (
+          <line x1={x(crossing)} y1={pad.t} x2={x(crossing)} y2={HGT - pad.b}
+            stroke="var(--accent)" strokeWidth={1} strokeDasharray="3 3" />
+        ) : null}
+        <polyline points={line(series.benchmark)} fill="none" stroke={SCENARIO_COLORS[scenario]}
+          strokeWidth={2.2} />
+        <polyline points={line(series.product)} fill="none" stroke="var(--neg)" strokeWidth={1.8}
+          strokeDasharray="5 3" />
+      </svg>
+    </figure>
+  );
+}
+
 function ScenarioHeadline({ result }: { result: LifetimeResult }) {
   const covered = result.coverage.covered_units;
   return (
@@ -381,6 +422,22 @@ function CohortSection({
           competitive at sale and stops being so as the benchmark tightens.
         </p>
         <TrajectoryChart result={result} />
+      </div>
+
+      <div className="ti-panel">
+        <h3>Why the gap opens</h3>
+        <p className="muted">
+          The solid line is the destination fleet benchmark the cohort is measured against; the
+          dashed line is what the cohort itself emits, fixed at its sale-year efficiency and
+          corrected to real world. Both are per surviving vehicle, so retirement does not
+          masquerade as decarbonisation. The marker is the year the benchmark passes below the
+          product — everything after it is lock-in against that pathway.
+        </p>
+        <div className="ti-crossing-row">
+          {SCENARIOS.map((s) => (
+            <CrossingChart key={s} result={result} scenario={s} />
+          ))}
+        </div>
       </div>
 
       <div className="ti-panel">

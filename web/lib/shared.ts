@@ -341,10 +341,19 @@ export interface LifetimeCoverage {
   };
 }
 
+/** Where the gap comes from: benchmark and product per *surviving* vehicle, per year. */
+export interface LifetimeTrajectory {
+  unit: string;
+  surviving_vehicles: number[];
+  scenarios: Record<Scenario, { benchmark: (number | null)[]; product: (number | null)[] }>;
+}
+
 export type LifetimeResult = Omit<FirmResult, "provenance"> & {
   cohort_id: string;
   coverage: LifetimeCoverage;
   decomposition_identity_holds: boolean;
+  trajectory: LifetimeTrajectory;
+  portfolio_withheld?: { reason: string; unblocked_by: string };
 };
 
 /** Sector-wide support parameters every real firm must agree on (see meta.json). */
