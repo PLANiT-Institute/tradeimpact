@@ -80,8 +80,35 @@ _PLACEHOLDER_TOKENS = (
 )
 
 
+SUPPORT_COLUMNS = [
+    "Parameter",
+    "Sector",
+    "Symbol",
+    "Central value",
+    "Sensitivity range",
+    "Unit",
+    "Source",
+    "Status",
+]
+
+
 class SchemaError(ValueError):
     """Raised when a sheet's header row does not match the expected contract."""
+
+
+def require_headers(sheet: str, header_map: dict[str, int], expected: list[str]) -> None:
+    """Fail loudly when a declared column is absent from a sheet's header row.
+
+    Without this the loaders read a missing column as ``None`` for every row, so a renamed or
+    mistyped header is indistinguishable from a column of uncollected data — the one confusion
+    the whole missing-input discipline exists to prevent.
+    """
+    missing = [name for name in expected if name not in header_map]
+    if missing:
+        raise SchemaError(
+            f"sheet {sheet!r} is missing required column(s): {', '.join(missing)}. "
+            f"Found: {', '.join(sorted(header_map)) or '(no header row)'}"
+        )
 
 
 def is_placeholder(value: object) -> bool:

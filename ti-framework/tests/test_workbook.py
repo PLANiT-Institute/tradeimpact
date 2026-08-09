@@ -81,3 +81,34 @@ def test_load_reference_db():
     assert countries["KR"].grid_intensity == pytest.approx(0.41551, rel=1e-3)
     # FLAG markets carry their status from the reference DB too
     assert countries["US"].is_flag
+
+
+def test_mistyped_header_fails_loudly_instead_of_loading_as_missing(tmp_path):
+    """A renamed column must raise, not silently read as a column of uncollected data."""
+    import csv as _csv
+
+    import pytest
+
+    from ti_framework.io.csv_adapter import load_csv_inputs
+    from ti_framework.io.schema import (
+        LAYER1_COLUMNS,
+        REG_COLUMNS,
+        SHEET_LAYER1,
+        SHEET_REG,
+        SchemaError,
+    )
+
+    def write(name: str, header: list[str]) -> None:
+        with (tmp_path / f"{name}.csv").open("w", newline="", encoding="utf-8") as fh:
+            _csv.writer(fh).writerow(header)
+
+    write(SHEET_REG, REG_COLUMNS)
+    broken = list(LAYER1_COLUMNS)
+    broken[broken.index("Grid intensity G_c(0) gCO2/kWh (2024)")] = "Grid intensity"
+    write(SHEET_LAYER1, broken)
+
+    with pytest.raises(SchemaError, match="Grid intensity G_c"):
+        load_csv_inputs(tmp_path)
+
+    write(SHEET_LAYER1, LAYER1_COLUMNS)
+    assert load_csv_inputs(tmp_path).countries == {}

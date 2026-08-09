@@ -105,6 +105,7 @@ def _apply_ndc_defaults(country: Country) -> None:
 
 def _load_layer1(ws: RowSource) -> dict[str, Country]:
     hm = _header_map(ws)
+    S.require_headers(S.SHEET_LAYER1, hm, S.LAYER1_COLUMNS)
 
     def col(name: str) -> int | None:
         return hm.get(name)
@@ -156,6 +157,7 @@ def _load_layer1(ws: RowSource) -> dict[str, Country]:
 
 def _load_layer2(ws: RowSource) -> list[Vehicle]:
     hm = _header_map(ws)
+    S.require_headers(S.SHEET_LAYER2, hm, S.LAYER2_COLUMNS)
 
     def get(row: tuple, name: str) -> object:
         idx = hm.get(name)
@@ -190,6 +192,7 @@ def _load_layer2(ws: RowSource) -> list[Vehicle]:
 
 def _load_volumes(ws: RowSource) -> list[Volume]:
     hm = _header_map(ws)
+    S.require_headers(S.SHEET_REG, hm, S.REG_COLUMNS)
 
     def get(row: tuple, name: str) -> object:
         idx = hm.get(name)
@@ -225,6 +228,7 @@ def _load_support(ws: RowSource | None) -> SupportParams:
     if ws is None:
         return sp
     hm = _header_map(ws)
+    S.require_headers(S.SHEET_SUPPORT, hm, S.SUPPORT_COLUMNS)
 
     def get(row: tuple, name: str) -> object:
         idx = hm.get(name)
