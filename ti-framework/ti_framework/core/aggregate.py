@@ -216,14 +216,14 @@ def compute_cohort(
 ) -> tuple[CohortResult, list[VehicleResult], list[str]]:
     """Compute single-cohort firm TI for one scenario, with mandatory decomposition."""
     missing: list[str] = []
-    horizons = {
-        p.country_code: support.lifetime_for(p.country_code)
+    horizons = [
+        years
         for p in placements
-        if support.lifetime_for(p.country_code) is not None
-    }
+        if (years := support.lifetime_for(p.country_code)) is not None
+    ]
     # The cohort's reporting horizon is the longest destination lifetime; shorter destinations
     # simply stop contributing after their own T.
-    T = max(horizons.values(), default=support.lifetime_T)
+    T = max(horizons, default=None) if horizons else support.lifetime_T
     if T is None or T < 1:
         missing.append("Support_params: vehicle lifetime T missing — cohort not computable")
         empty = CohortResult(
