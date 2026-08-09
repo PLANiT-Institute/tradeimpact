@@ -80,7 +80,7 @@ def test_published_service_exposes_target_hierarchy_and_readiness() -> None:
     assert readiness["readiness"]["publication_decision"] == "publish_partial_lifetime_ti"
 
 
-def test_published_service_returns_every_scenario_and_an_exact_decomposition() -> None:
+def test_published_service_returns_every_scenario_and_a_reconciling_decomposition() -> None:
     service = TradeImpactService(REPO / "data" / "published")
 
     listing = service.list_lifetime_results()
@@ -96,7 +96,11 @@ def test_published_service_returns_every_scenario_and_an_exact_decomposition() -
     assert result["decomposition_identity_holds"] is True
     for scenario in result["scenarios"].values():
         total = scenario["TI_cohort_tCO2e"]
-        tolerance = max(1.0, abs(total)) * 1e-9
+        # The engine asserts the identity exactly before publication (run_lifetime raises if it
+        # breaks). Published values are rounded to a fixed significance so the artifact does not
+        # depend on which machine built it, so re-checking the identity here can only hold to
+        # that significance — accumulated over the 27 destination terms.
+        tolerance = max(1.0, abs(total)) * 1e-6
         assert abs(sum(scenario["destination"].values()) - total) < tolerance
         assert abs(sum(scenario["product_type"].values()) - total) < tolerance
 

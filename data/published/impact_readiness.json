@@ -2,7 +2,7 @@
   {
     "available_target_level": "EU regional sector proxy and collective economy-wide NDC",
     "cohort_id": "toyota-eu27-passenger-cars-2024",
-    "covered_unit_share": 0.9693273763718817,
+    "covered_unit_share": 0.96932738,
     "method_version": "export-impact-v1",
     "missing_required_inputs": [],
     "observed_inputs": [
@@ -20,12 +20,12 @@
     "withheld_product_types": {
       "FCEV": {
         "reason": "FCEV needs a hydrogen supply emissions intensity for the destination market.",
-        "share_of_cohort": 0.0008591771324402872,
+        "share_of_cohort": 0.00085917713,
         "units": 690.0
       },
       "PHEV": {
         "reason": "PHEV needs the charge-depleting and charge-sustaining split and a real-world utility factor. The registration dataset publishes only the weighted combined values, so no utility factor can be recovered without assuming one.",
-        "share_of_cohort": 0.029773600599680736,
+        "share_of_cohort": 0.029773601,
         "units": 23911.0
       }
     }
@@ -33,7 +33,7 @@
   {
     "available_target_level": "EU regional sector proxy and collective economy-wide NDC",
     "cohort_id": "hyundai-eu27-passenger-cars-2024",
-    "covered_unit_share": 0.956479569052138,
+    "covered_unit_share": 0.95647957,
     "method_version": "export-impact-v1",
     "missing_required_inputs": [],
     "observed_inputs": [
@@ -51,12 +51,12 @@
     "withheld_product_types": {
       "FCEV": {
         "reason": "FCEV needs a hydrogen supply emissions intensity for the destination market.",
-        "share_of_cohort": 5.117040675821518e-05,
+        "share_of_cohort": 5.1170407e-05,
         "units": 22.0
       },
       "PHEV": {
         "reason": "PHEV needs the charge-depleting and charge-sustaining split and a real-world utility factor. The registration dataset publishes only the weighted combined values, so no utility factor can be recovered without assuming one.",
-        "share_of_cohort": 0.04331807524840907,
+        "share_of_cohort": 0.043318075,
         "units": 18624.0
       }
     }

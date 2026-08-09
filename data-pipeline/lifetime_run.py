@@ -310,6 +310,56 @@ def _sweep_vkt_proxy(raw: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _trajectory(raw: dict[str, Any], payload: dict[str, Any]) -> dict[str, Any]:
+    """Benchmark and product emissions per *surviving* vehicle, per year, per scenario.
+
+    The cohort totals say how large the gap is; this says where it comes from. Dividing by the
+    vehicles still on the road at year t keeps the two lines comparable — otherwise retirement
+    would pull both down and look like decarbonisation.
+    """
+    countries = raw["countries"]
+    units_by_destination: dict[str, float] = {}
+    for placement in raw["placements"]:
+        units_by_destination[placement["country"]] = (
+            units_by_destination.get(placement["country"], 0.0) + placement["units"]
+        )
+    lifetimes = raw["support"]["lifetime_by_country"]
+    vkt = raw["support"]["vkt"]
+    horizon = max((lifetimes[code] for code in units_by_destination if code in lifetimes), default=0)
+
+    surviving = [
+        sum(u for code, u in units_by_destination.items() if lifetimes.get(code, 0) > t)
+        for t in range(horizon)
+    ]
+    out: dict[str, Any] = {
+        "unit": "kgCO2e per surviving vehicle per year",
+        "surviving_vehicles": surviving,
+        "scenarios": {},
+    }
+    for scenario, cohort in payload["cohorts"].items():
+        rate_key = f"s{scenario[1]}"
+        benchmark, product = [], []
+        for t in range(horizon):
+            active = surviving[t]
+            if not active:
+                benchmark.append(None)
+                product.append(None)
+                continue
+            total = sum(
+                u
+                * (countries[code]["fleet_intensity_base"])
+                * ((1 - countries[code]["r_fleet"][rate_key]) ** t)
+                * vkt[code]
+                for code, u in units_by_destination.items()
+                if lifetimes.get(code, 0) > t
+            )
+            gap = cohort["annual_tCO2e"][t] * 1000 / active if t < len(cohort["annual_tCO2e"]) else 0.0
+            benchmark.append(round(total / active, 1))
+            product.append(round(total / active - gap, 1))
+        out["scenarios"][scenario] = {"benchmark": benchmark, "product": product}
+    return out
+
+
 def run_lifetime(fixtures: dict[str, dict[str, Any]] | None = None) -> dict[str, dict[str, Any]]:
     """Run every fixture through the engine and return publishable payloads."""
     from ti_framework.core.aggregate import decomposition_identity_holds
@@ -352,6 +402,7 @@ def run_lifetime(fixtures: dict[str, dict[str, Any]] | None = None) -> dict[str,
         payload["coverage"] = raw["coverage"]
         payload["cohort_id"] = cohort_id
         payload["sensitivity"]["vkt_proxy"] = _sweep_vkt_proxy(raw)
+        payload["trajectory"] = _trajectory(raw, payload)
         payload["decomposition_identity_holds"] = all(
             decomposition_identity_holds(cohort) for cohort in result.cohorts.values()
         )

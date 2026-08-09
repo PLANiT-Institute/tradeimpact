@@ -104,7 +104,8 @@ test("destination pathways preserve proxy hierarchy", () => {
   assert.ok(ndc);
   assert.equal(sector.policy_level, "regional_sector_pathway");
   assert.equal(sector.calculation_status, "proxy_requires_disclosure");
-  assert.ok(Math.abs((sector.annual_reduction_rate ?? 0) - 0.04344369190911768) < 1e-12);
+  // Published to the dataset's fixed significance, not to the bit — see canonical_floats.
+  assert.ok(Math.abs((sector.annual_reduction_rate ?? 0) - 0.043443692) < 1e-9);
   assert.equal(ndc.policy_level, "ndc");
   assert.equal(ndc.reduction_min, 0.6625);
   assert.equal(ndc.reduction_max, 0.725);
@@ -153,7 +154,10 @@ test("lifetime results decompose exactly and never rest on an unsourced input", 
       const cohort = result.cohorts[scenario];
       const byCountry = Object.values(cohort.by_country).reduce((a, b) => a + b, 0);
       const byProduct = Object.values(cohort.by_powertrain).reduce((a, b) => a + b, 0);
-      const tolerance = Math.max(1, Math.abs(cohort.total_tCO2e)) * 1e-9;
+      // Published floats are rounded to a fixed significance so the dataset does not depend on
+      // the machine that built it. The engine checks the identity exactly before publishing;
+      // here it can only reconcile to that significance across the destination terms.
+      const tolerance = Math.max(1, Math.abs(cohort.total_tCO2e)) * 1e-6;
       assert.ok(Math.abs(byCountry - cohort.total_tCO2e) < tolerance);
       assert.ok(Math.abs(byProduct - cohort.total_tCO2e) < tolerance);
       // The reporting horizon is the longest destination lifetime, so it is at least the

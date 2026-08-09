@@ -136,8 +136,12 @@ def test_mcp_preserves_target_hierarchy_and_lifetime_gate() -> None:
             assert set(payload["scenarios"]) == {"S1", "S2", "S3"}
             assert payload["decomposition_identity_holds"] is True
             s2 = payload["scenarios"]["S2"]
-            assert abs(sum(s2["destination"].values()) - s2["TI_cohort_tCO2e"]) < 1e-6
-            assert abs(sum(s2["product_type"].values()) - s2["TI_cohort_tCO2e"]) < 1e-6
+            # Published values are rounded to a fixed significance so the artifact is machine
+            # independent; the identity therefore reconciles to that significance, not to the
+            # bit. The engine checks it exactly before anything is published.
+            tolerance = abs(s2["TI_cohort_tCO2e"]) * 1e-6
+            assert abs(sum(s2["destination"].values()) - s2["TI_cohort_tCO2e"]) < tolerance
+            assert abs(sum(s2["product_type"].values()) - s2["TI_cohort_tCO2e"]) < tolerance
 
             inputs = await client.call_tool("get_destination_inputs", {"country_code": "DE"})
             assert inputs.structured_content is not None
