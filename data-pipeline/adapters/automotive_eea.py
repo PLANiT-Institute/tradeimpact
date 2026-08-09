@@ -251,6 +251,8 @@ def build_records(
     company_id: str = "toyota",
     *,
     include_shared: bool = True,
+    destination_rows: list[dict[str, Any]] | None = None,
+    coverage_by_cohort: dict[str, dict[str, Any]] | None = None,
 ) -> dict[str, list[dict[str, Any]]]:
     company = _company(company_id)
     brand = str(company["brand"])
@@ -435,7 +437,16 @@ def build_records(
         if include_shared
         else []
     )
-    readiness = [_build_readiness(product_cohorts[0]["cohort_id"])]
+    cohort_id = product_cohorts[0]["cohort_id"]
+    coverage = (coverage_by_cohort or {}).get(cohort_id, {})
+    readiness = [
+        _build_readiness(
+            cohort_id,
+            destination_rows,
+            coverage.get("withheld_product_types"),
+            coverage.get("covered_share"),
+        )
+    ]
     return {
         "company_metrics": metrics,
         "benchmarks": benchmarks,
@@ -696,43 +707,107 @@ def _build_pathways(
     ]
 
 
-def _build_readiness(cohort_id: str) -> dict[str, Any]:
+OBSERVED_COHORT_INPUTS = [
+    "destination-country registration volume",
+    "commercial name",
+    "powertrain classification",
+    "certified WLTP tailpipe intensity where reported",
+    "certified WLTP electricity consumption where reported",
+]
+# Inputs the lifetime calculation needs from outside the registration dataset. Each is checked
+# against the destination adapter's published records, never assumed present.
+DESTINATION_REQUIRED_INPUTS = {
+    "destination-country annual vehicle-kilometres travelled": "vkt_km_per_year",
+    "destination-country vehicle survival and operating lifetime": "operating_lifetime_years",
+    "destination-country passenger-car fleet service-intensity baseline": (
+        "fleet_intensity_base_gco2_per_km"
+    ),
+    "destination-country grid carbon intensity": "grid_intensity_gco2_per_kwh",
+    "destination-country S1/S2/S3 road-transport pathway": ("r_fleet_s1", "r_fleet_s2", "r_fleet_s3"),
+    "destination-country S1/S2/S3 grid pathway": ("r_power_s1", "r_power_s2", "r_power_s3"),
+}
+# Origin mapping is required for an *export* claim, not for the destination-cohort result that
+# is published. It is reported separately so the headline wording stays honest.
+ORIGIN_INPUT = "production/export origin mapping"
+
+
+def _destination_gaps(destination_rows: list[dict[str, Any]] | None) -> list[str]:
+    """Which destination inputs are still unsourced, derived from the published records."""
+    if not destination_rows:
+        return sorted(DESTINATION_REQUIRED_INPUTS)
+    gaps: list[str] = []
+    for label, fields in DESTINATION_REQUIRED_INPUTS.items():
+        names = (fields,) if isinstance(fields, str) else fields
+        unsourced = [
+            row["country_code"]
+            for row in destination_rows
+            if any(row.get(name) is None for name in names)
+        ]
+        if unsourced:
+            gaps.append(f"{label} ({', '.join(sorted(unsourced))})")
+    return gaps
+
+
+def _build_readiness(
+    cohort_id: str,
+    destination_rows: list[dict[str, Any]] | None = None,
+    withheld_product_types: dict[str, Any] | None = None,
+    covered_share: float | None = None,
+) -> dict[str, Any]:
+    """Derive publication readiness from the inputs that actually resolved."""
+    missing = _destination_gaps(destination_rows)
+    withheld = withheld_product_types or {}
+    ready = not missing
     return {
         "cohort_id": cohort_id,
         "method_version": "export-impact-v1",
-        "status": "inputs_incomplete",
-        "observed_inputs": [
-            "destination-country registration volume",
-            "commercial name",
-            "powertrain classification",
-            "certified WLTP tailpipe intensity where reported",
-            "certified WLTP electricity consumption where reported",
-        ],
-        "missing_required_inputs": [
-            "production/export origin mapping",
-            "destination-country annual vehicle-kilometres travelled",
-            "destination-country vehicle survival and operating lifetime",
-            "real-world correction by powertrain and market",
-            "destination-country passenger-car fleet service-intensity baseline",
-            "destination-country S1/S2/S3 road-transport pathway",
-            "destination-country S1/S2/S3 grid pathway",
-            "PHEV real-world utility factor",
-            "FCEV hydrogen supply emissions intensity",
-        ],
+        "status": "available" if ready else "inputs_incomplete",
+        "observed_inputs": OBSERVED_COHORT_INPUTS,
+        "missing_required_inputs": missing,
+        # Product types whose emission model needs an input the registration dataset cannot
+        # supply. These do not block the covered result; they bound it, and the bound is
+        # published rather than absorbed into the headline.
+        "withheld_product_types": {
+            product: {
+                "units": entry["units"],
+                "share_of_cohort": entry["share"],
+                "reason": entry["reason"],
+            }
+            for product, entry in sorted(withheld.items())
+        },
+        "covered_unit_share": covered_share,
+        "origin_mapping_status": f"not_collected — {ORIGIN_INPUT}",
         "available_target_level": "EU regional sector proxy and collective economy-wide NDC",
         "preferred_target_level": "destination-country road-transport or passenger-car pathway",
-        "publication_decision": "withhold_lifetime_ti",
+        "publication_decision": (
+            ("publish_partial_lifetime_ti" if withheld else "publish_lifetime_ti")
+            if ready
+            else "withhold_lifetime_ti"
+        ),
         "publication_reason": (
-            "A lifetime TI value would currently be driven by unsourced assumptions rather than "
-            "the observed sales cohort. Missing inputs remain visible and are not assigned zero."
+            (
+                "Every destination-use, energy, and policy-pathway input resolved to a sourced "
+                f"value with a tier. The result covers {covered_share:.1%} of the cohort's units; "
+                "the remainder is withheld by product type rather than assumed. The result is a "
+                "destination-cohort impact, not an export claim: registrations are not mapped to "
+                "production origin."
+            )
+            if ready and covered_share is not None
+            else "A lifetime TI value would currently be driven by unsourced assumptions rather "
+            "than the observed sales cohort. Missing inputs remain visible and are not assigned "
+            "zero."
         ),
     }
 
 
-def build_all_records() -> dict[str, list[dict[str, Any]]]:
+def build_all_records(
+    destination_rows: list[dict[str, Any]] | None = None,
+    coverage_by_cohort: dict[str, dict[str, Any]] | None = None,
+) -> dict[str, list[dict[str, Any]]]:
     """Combine company cohorts while publishing shared EU pathways and benchmarks once."""
-    toyota = build_records(company_id="toyota", include_shared=True)
-    hyundai = build_records(company_id="hyundai", include_shared=False)
+    shared = {"destination_rows": destination_rows, "coverage_by_cohort": coverage_by_cohort}
+    toyota = build_records(company_id="toyota", include_shared=True, **shared)
+    hyundai = build_records(company_id="hyundai", include_shared=False, **shared)
     return {
         "company_metrics": toyota["company_metrics"] + hyundai["company_metrics"],
         "benchmarks": toyota["benchmarks"],

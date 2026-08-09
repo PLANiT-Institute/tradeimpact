@@ -20,6 +20,9 @@ def test_mcp_discovers_read_only_export_impact_contract() -> None:
                 "get_product_cohort",
                 "get_destination_pathway",
                 "get_impact_readiness",
+                "list_lifetime_results",
+                "get_lifetime_result",
+                "get_destination_inputs",
                 "trace_source",
             }
             for tool in tools.tools:
@@ -29,13 +32,15 @@ def test_mcp_discovers_read_only_export_impact_contract() -> None:
 
             resources = await client.list_resources()
             assert {str(resource.uri) for resource in resources.resources} == {
-                "ti://methodology/sectors"
+                "ti://methodology/sectors",
+                "ti://destinations/inputs",
             }
             templates = await client.list_resource_templates()
             assert {template.uri_template for template in templates.resource_templates} == {
                 "ti://methodology/sectors/{sector_id}",
                 "ti://cohorts/{cohort_id}",
                 "ti://destinations/{geography}/{sector_id}",
+                "ti://impact/{cohort_id}",
             }
             prompts = await client.list_prompts()
             assert {prompt.name for prompt in prompts.prompts} == {
@@ -111,10 +116,36 @@ def test_mcp_preserves_target_hierarchy_and_lifetime_gate() -> None:
                 {"cohort_id": "toyota-eu27-passenger-cars-2024"},
             )
             assert readiness.structured_content is not None
-            assert readiness.structured_content["status"] == "inputs_incomplete"
+            assert readiness.structured_content["status"] == "available"
             gate = readiness.structured_content["readiness"]
-            assert gate["publication_decision"] == "withhold_lifetime_ti"
-            assert len(gate["missing_required_inputs"]) == 9
+            assert gate["publication_decision"] == "publish_partial_lifetime_ti"
+            # Every destination-side input resolved; the product types that cannot be modelled
+            # are withheld with their unit counts rather than folded into the headline.
+            assert gate["missing_required_inputs"] == []
+            assert set(gate["withheld_product_types"]) == {"FCEV", "PHEV"}
+            assert 0.9 < gate["covered_unit_share"] < 1.0
+
+            lifetime = await client.call_tool(
+                "get_lifetime_result",
+                {"cohort_id": "toyota-eu27-passenger-cars-2024", "scenario": "S2"},
+            )
+            assert lifetime.structured_content is not None
+            payload = lifetime.structured_content
+            assert payload["status"] == "available"
+            # A single-scenario request must still return all three.
+            assert set(payload["scenarios"]) == {"S1", "S2", "S3"}
+            assert payload["decomposition_identity_holds"] is True
+            s2 = payload["scenarios"]["S2"]
+            assert abs(sum(s2["destination"].values()) - s2["TI_cohort_tCO2e"]) < 1e-6
+            assert abs(sum(s2["product_type"].values()) - s2["TI_cohort_tCO2e"]) < 1e-6
+
+            inputs = await client.call_tool("get_destination_inputs", {"country_code": "DE"})
+            assert inputs.structured_content is not None
+            german = inputs.structured_content["destinations"][0]
+            assert german["country_code"] == "DE"
+            assert german["vkt_km_per_year"] > 0
+            assert german["vkt_tier"] in {"A", "B", "C"}
+            assert german["r_fleet_s1"] != german["r_power_s1"]
 
             source = await client.call_tool(
                 "trace_source", {"source_id": "unfccc-eu-ndc-2025"}

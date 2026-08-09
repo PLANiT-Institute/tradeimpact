@@ -271,11 +271,81 @@ export interface ImpactReadiness {
   status: "available" | "inputs_incomplete" | string;
   observed_inputs: string[];
   missing_required_inputs: string[];
+  withheld_product_types?: Record<
+    string,
+    { units: number; share_of_cohort: number; reason: string }
+  >;
+  covered_unit_share?: number | null;
+  origin_mapping_status?: string;
   available_target_level: string;
   preferred_target_level: string;
   publication_decision: string;
   publication_reason: string;
 }
+
+/** One destination market's sourced use, energy, and pathway inputs (destination_inputs.json). */
+export interface DestinationInput {
+  country_code: string;
+  cohort_year: number;
+  vkt_km_per_year: number | null;
+  vkt_tier: string | null;
+  vkt_reference_year: number | null;
+  vkt_derivation: string | null;
+  car_stock: number | null;
+  car_co2_kt: number | null;
+  fleet_intensity_base_gco2_per_km: number | null;
+  fleet_intensity_tier: string;
+  fleet_intensity_derivation: string;
+  grid_intensity_gco2_per_kwh: number | null;
+  grid_intensity_reference_year: number | null;
+  grid_intensity_tier: string;
+  operating_lifetime_years: number | null;
+  operating_lifetime_low_years: number | null;
+  operating_lifetime_high_years: number | null;
+  operating_lifetime_tier: string;
+  operating_lifetime_derivation: string;
+  mean_car_age_years: number | null;
+  r_fleet_s1: number | null;
+  r_fleet_s2: number | null;
+  r_fleet_s3: number | null;
+  r_power_s1: number | null;
+  r_power_s2: number | null;
+  r_power_s3: number | null;
+  r_fleet_s1_window: string | null;
+  r_power_s1_window: string | null;
+  prorata_used: string;
+  target_level: number;
+  warnings: string[];
+  missing_required_inputs: string[];
+  source_ids: string[];
+}
+
+/** What share of a cohort the published lifetime result actually covers. */
+export interface LifetimeCoverage {
+  cohort_id: string;
+  company_id: string;
+  total_units: number;
+  covered_units: number;
+  covered_share: number;
+  withheld_product_types: Record<
+    string,
+    { units: number; share: number; reason: string; destinations: string[] }
+  >;
+  unmatched_records: { destination: string; product_type: string; units: number }[];
+  real_world_correction: {
+    applied: boolean;
+    factors: Record<string, number>;
+    sensitivity_range: [number, number];
+    source_id: string;
+    note: string;
+  };
+}
+
+export type LifetimeResult = Omit<FirmResult, "provenance"> & {
+  cohort_id: string;
+  coverage: LifetimeCoverage;
+  decomposition_identity_holds: boolean;
+};
 
 /** Sector-wide support parameters every real firm must agree on (see meta.json). */
 export interface SupportContract {

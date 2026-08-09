@@ -15,6 +15,7 @@ sys.path.insert(0, str(REPO / "ti-framework"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_dataset import build_alignment_data, build_contract_schema, build_countries  # noqa: E402
+from lifetime_run import run_lifetime  # noqa: E402
 from ti_framework.core.scenarios import run  # noqa: E402
 from ti_framework.core.sensitivity import run_sensitivity  # noqa: E402
 from ti_framework.io.fixtures import parse_fixture  # noqa: E402
@@ -89,8 +90,10 @@ def main() -> int:
             "product_cohorts",
             "pathways",
             "impact_readiness",
+            "destination_inputs",
         )
     }
+    lifetime = json.loads((published / "lifetime_results.json").read_text())
     errors: list[str] = []
     runnable = [firm for firm in firms if firm["runnable"]]
     expected_files = {
@@ -105,6 +108,8 @@ def main() -> int:
         "pathways.json",
         "impact_readiness.json",
         "sources.json",
+        "destination_inputs.json",
+        "lifetime_results.json",
         *(f"{firm['slug']}.json" for firm in runnable),
     }
     actual_files = {path.name for path in published.glob("*.json")}
@@ -225,11 +230,14 @@ def main() -> int:
     contract = json.loads((published / "contract.json").read_text())
     compare_values(recomputed_contract, contract, "contract", errors)
 
+    compare_values(run_lifetime(), lifetime, "lifetime_results", errors)
+
     expected_dataset_sha = json_sha256(
         {
             "countries": countries,
             "firms": firms,
             **alignment,
+            "lifetime_results": lifetime,
             "inputs": {},
             "engine_source_sha256": meta["engine_source_sha256"],
             "workbook_sha256": meta["workbook_sha256"],

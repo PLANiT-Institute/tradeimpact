@@ -35,7 +35,10 @@ export default function Home() {
               trajectory against the destination&apos;s sector pathway and NDC.
             </p>
             <div className="hero-actions">
-              <Link className="button primary" href="/compare/automotive">
+              <Link className="button primary" href="/impact">
+                See the lifetime result
+              </Link>
+              <Link className="button secondary" href="/compare/automotive">
                 Compare Toyota and Hyundai
               </Link>
               <Link className="button secondary" href="#method">

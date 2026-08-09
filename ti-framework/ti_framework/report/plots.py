@@ -85,10 +85,17 @@ def plot_single_cohort(run: RunResult, path: str | Path) -> Path:
 
 
 def write_plots(run: RunResult, outdir: str | Path) -> list[Path]:
+    """Write the report charts.
+
+    The rolling-portfolio band is drawn only when the run actually carries a portfolio series.
+    With a single observed cohort that series is a counterfactual (the same cohort repeated),
+    so the caller withholds it and the chart is skipped rather than drawn from an assumption.
+    """
     out = Path(outdir)
     out.mkdir(parents=True, exist_ok=True)
-    return [
-        plot_portfolio_band(run, out / "portfolio_band.png"),
-        plot_decomposition(run, out / "decomposition.png"),
-        plot_single_cohort(run, out / "single_cohort.png"),
-    ]
+    paths = []
+    if any(run.portfolio.values()):
+        paths.append(plot_portfolio_band(run, out / "portfolio_band.png"))
+    paths.append(plot_decomposition(run, out / "decomposition.png"))
+    paths.append(plot_single_cohort(run, out / "single_cohort.png"))
+    return paths

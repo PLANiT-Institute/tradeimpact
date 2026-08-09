@@ -6,7 +6,9 @@ import { join } from "node:path";
 import type {
   AlignmentBenchmark,
   CompanyMetric,
+  DestinationInput,
   DestinationPathway,
+  LifetimeResult,
   Firm,
   FirmResult,
   ImpactReadiness,
@@ -44,3 +46,7 @@ export const getContract = (): Record<string, string[]> =>
   read<Record<string, string[]>>("contract.json");
 export const getFirmResult = (slug: string): FirmResult =>
   read<FirmResult>(`${slug}.json`);
+export const getDestinationInputs = (): DestinationInput[] =>
+  read<DestinationInput[]>("destination_inputs.json");
+export const getLifetimeResults = (): Record<string, LifetimeResult> =>
+  read<Record<string, LifetimeResult>>("lifetime_results.json");
