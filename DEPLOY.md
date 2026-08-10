@@ -7,11 +7,24 @@ provided through the MCP server.
 
 ## Vercel setup
 
-1. Import this GitHub repository.
-2. Set the root directory to `web`.
-3. Keep “Include source files outside of the Root Directory” enabled so the build can copy
-   `data/published`.
-4. No environment variable is required for the static site.
+The project (`plan-i-t/tradeimpact`) is **not connected to the GitHub repository**: its `link`
+is null, so pushing to `main` deploys nothing. Every production release so far has been a CLI
+deploy from `web/`, and that is the supported path until someone connects the repository.
+
+Deploy a release from `web/`:
+
+```bash
+npm run package:deploy   # copies data/published into public/data and stamps a manifest
+npx vercel --prod
+```
+
+`prepare.mjs` runs again on Vercel, finds no `../data/published` in the uploaded root, and falls
+back to the packaged copy — which it accepts only if the manifest is under two hours old and its
+data and dataset hashes match. Package immediately before deploying, or the build fails closed.
+
+To switch to Git-triggered deploys instead, connect the repository, set the root directory to
+`web`, and keep “Include source files outside of the Root Directory” enabled so the build can
+read `data/published` directly. No environment variable is required either way.
 
 ## Data flow
 
@@ -26,8 +39,8 @@ source snapshot / adapter / workbook
 `meta.json` records engine, workbook, source-adapter, and complete-dataset hashes. Unsupported
 lifetime results remain absent until the evidence gate is complete.
 
-For a Vercel CLI deploy, run `npm run deploy:vercel` from `web`. A packaged copy is accepted for
-two hours and only when its data and dataset hashes match.
+`npm run deploy:vercel` is the same flow without `--prod`, which produces a preview URL and
+leaves production alone.
 
 ## Local development
 
