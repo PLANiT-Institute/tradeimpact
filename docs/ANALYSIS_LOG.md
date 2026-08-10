@@ -168,7 +168,6 @@ disagrees_with_a_margin`이 KR-BEV와 US-BEV 사이로 1 tCO2e를 옮겨도 총�
    4개 항 + 순액 5행이 전부 큼직하게 읽힌다. 기존 `DivergingBars`를 그대로 재사용해서
    **세 시나리오를 한 화면에** 실었다. 새 컴포넌트 삭제, 별도 시나리오 테이블도 삭제
    (차트가 그 내용을 이미 담음). "S2 단독 보고 금지"도 차트 자체로 충족.
-"S2 단독 보고 금지"는 테이블이 세 시나리오를 전부 싣는 것으로 충족.
 
 **발견.** 세 시나리오를 한 차트에 놓으니 사이클 2의 관찰이 더 또렷해진다 — 믹스 두 항은
 시나리오에 따라 움직이는데(목적지 +232→+853→+970, 파워트레인 +1,035→+853→+1,123;
@@ -413,3 +412,64 @@ x축 최대가 도요타 109,158대 vs 현대 40,381대라 같은 가로 위치�
    읽지 않고 손으로 쓴 상태·결정 문구를 웹 전체에서 찾아 데이터 파생으로 바꿀 것.
 2. **롤링 포트폴리오** — EEA 2022·2023 재수집. 별도 데이터 작업.
 3. **PHEV·FCEV 보류 해제** — UF·수소강도 미수집.
+
+---
+
+## 사이클 10 — 2026-08-10 15:40~15:50 KST (마무리 2026-08-11 01:31)
+
+**과제.** 사이클 9가 남긴 1번 — 손으로 쓴 상태 문구 전수 점검.
+
+**스윕 결과.** 렌더되는 카피에서 데이터와 어긋날 수 있는 곳 3건. 나머지 히트는 정당:
+방법 서술("A missing input produces an unavailable result"), `ti == null`에서 파생되는
+"not covered", `coverage.withheld_product_types`를 순회하는 제외분 목록.
+
+| 위치 | 하드코딩 | 파생으로 |
+|---|---|---|
+| compare §00b | "seven times Toyota's BEV share" | `{bevRatio.toFixed(1)}×` → **7.2×** |
+| compare §00b | "nine in ten covered units" | ICE+HEV 대수비중 최솟값 → **at least 90%** |
+| compare 각주 | "PHEV and FCEV units are withheld" | `withheld_product_types` 키 → **Fuel cell and Plug-in hybrid** |
+
+기업 페이지의 "remainder withheld, not zeroed"도 `covered_share < 1`일 때만 나오도록 가드.
+커버리지가 100%가 되면 문장이 저절로 사라진다.
+
+**TDZ 버그를 브라우저가 잡았다.** 파생 상수를 `byScenario` 정의 **앞**에 넣어서
+`Cannot access 'byScenario' before initialization`으로 페이지가 500. **tsc는 통과했다** —
+const TDZ는 타입 오류가 아니다. 사이클 규칙의 "브라우저로 실제 렌더 확인"이 없었으면
+그대로 커밋됐을 것. 블록을 `gapRows` 뒤로 이동해 해결.
+
+**검증.** pytest 101/101 · `check_published.py` OK · web 9/9 · tsc OK · `next build` OK ·
+콘솔 에러 0. 렌더된 본문에서 `seven times`·`nine in ten`·`PHEV and FCEV units are withheld`
+전부 부재 확인.
+
+---
+
+## 배포 — 2026-08-10 15:35 KST
+
+프로덕션 배포 요청받아 실행. **선택된 경로가 존재하지 않았다.** Vercel 프로젝트
+`plan-i-t/tradeimpact`의 `link`가 null이고 GitHub deployments 0건 — Git 연결이 없어
+`git push`는 아무것도 배포하지 않는다. 기존 프로덕션 7건 전부 CLI 배포였다.
+DEPLOY.md 첫 줄이 "Import this GitHub repository"라 그렇게 믿고 있었던 것.
+
+푸시(커밋 9개)는 완료했고, 라이브는 `npm run package:deploy && vercel --prod`로 반영
+(33초, target production). 별칭 `tradeimpact.vercel.app` 갱신. 4개 페이지 curl 200 +
+새 문구 확인. DEPLOY.md를 실제 경로로 교정해 커밋(`a29712f`).
+
+---
+
+## 루프 종료 — 2026-08-11 01:31 KST
+
+`/loop 20m` cron `0f15dea9`(09:47 등록, 마감 16:00)를 `CronDelete`로 삭제.
+
+**실측.** 20분 주기로 예정된 약 19회 중 실제 진행은 사이클 3·5·6·7·8·9·10 — 세션이
+간헐적으로만 살아 있었기 때문이다. cron은 REPL이 유휴 상태로 떠 있을 때만 발화한다.
+30분 루프(사이클 1~2) 때와 같은 한계이고, 세션이 꺼져도 도는 반복이 필요하면
+`/schedule`(클라우드) 쪽이어야 한다.
+
+**남긴 과제 (데이터 확보가 선행 조건).**
+
+1. **롤링 포트폴리오** — 백서 §3.8이 "주력 공시 지표"로 지정. `automotive_eea.py`가
+   `year: 2024` 단일 질의라 2022·2023 EEA 재수집 + 해시 고정 스냅샷 + tier 선언 필요.
+2. **PHEV·FCEV 보류 해제** — 현대 4.3%·도요타 3.0%. charge-depleting/sustaining 분리값,
+   실주행 UF, 수소 공급강도 미수집.
+3. **원산지 매핑(Level 2)** — 지금 결과는 전부 판매 코호트 영향이지 수출 영향이 아니다.
+   모델×공장 배정이 있어야 "무역 프로젝트"의 수출 주장이 성립한다.
