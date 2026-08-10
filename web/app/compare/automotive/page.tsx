@@ -4,6 +4,7 @@ import {
   SCENARIOS,
   SCENARIO_LABELS,
   getCohortComparison,
+  getDestinationInputs,
   getImpactReadiness,
   getLifetimeResults,
   getProductCohorts,
@@ -12,6 +13,7 @@ import {
   type Scenario,
 } from "@/lib/data";
 import { DivergingBars, POWERTRAIN_LABELS, kg, mt, type Row } from "@/components/cohort-report";
+import { MarketDumbbell } from "@/components/market-dumbbell";
 
 export const metadata: Metadata = {
   title: "Toyota vs Hyundai EU27 cohort — Trade Impact",
@@ -87,6 +89,7 @@ export default function AutomotiveComparison() {
   const results = getLifetimeResults();
   const lifetimeOf = (cohort: ProductCohort) => results[cohort.cohort_id];
   const comparison = getCohortComparison();
+  const destinationInputs = getDestinationInputs();
   const byScenario = Object.fromEntries(comparison.map((row) => [row.scenario, row]));
   // Each term under all three pathways. Reading them together is what shows that the two
   // favourable terms grow with ambition while the unfavourable one does not move at all.
@@ -343,9 +346,16 @@ export default function AutomotiveComparison() {
           <div><p className="eyebrow">02 / destination comparison</p><h2>The two cohorts enter <em>different national exposure patterns</em></h2></div>
           <p>
             Country counts are observed registrations; the last two columns are the lifetime TI
-            those registrations carry under national commitments (S2).
+            those registrations carry under national commitments (S2). Totals follow cohort
+            size, so the chart below divides each market by the units placed in it — the
+            like-for-like reading of what one vehicle does there.
           </p>
         </header>
+        <MarketDumbbell
+          baseline={lifetimeOf(toyotaCohort)}
+          compared={lifetimeOf(hyundaiCohort)}
+          destinations={destinationInputs}
+        />
         <div className="exposure-table-wrap">
           <table className="exposure-table comparison-table">
             <thead><tr><th>Destination</th><th>Toyota registrations</th><th>Toyota share</th><th>Toyota TI (S2)</th><th>Hyundai registrations</th><th>Hyundai share</th><th>Hyundai TI (S2)</th></tr></thead>
