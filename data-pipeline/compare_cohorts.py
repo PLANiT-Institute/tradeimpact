@@ -18,10 +18,10 @@ This splits the per-vehicle gap between two cohorts into exactly those three par
 Averaging the weights across the two cohorts is what keeps the three terms summing to the
 gap; the leftover interaction is reported as a residual rather than silently absorbed.
 
-Cells are rebuilt from the published fixture with the engine's own Layer-1/Layer-2
-primitives and reconciled against the published cohort total before anything is
-decomposed. The crossover table cannot stand in for this: it carries one row per
-(destination, powertrain), while per-vehicle TI varies by model inside a powertrain.
+Cells come from the engine's own published joint (``cohorts[S].by_cell``), which the engine
+holds to the decomposition identity against both margins before it is written. The crossover
+table cannot stand in for it: that carries one row per (destination, powertrain), while
+per-vehicle TI varies by model inside a powertrain.
 """
 
 from __future__ import annotations
@@ -34,66 +34,34 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "ti-framework"))
 sys.path.insert(0, str(REPO / "data-pipeline"))
 
-from lifetime_run import build_fixtures, run_lifetime  # noqa: E402
+from lifetime_run import run_lifetime  # noqa: E402
 
 RECONCILE_TOL = 1e-6
 
 
-def _cells(raw: dict[str, Any], scenario: str) -> dict[tuple[str, str], tuple[float, float]]:
+def _cells(payload: dict[str, Any], scenario: str) -> dict[tuple[str, str], tuple[float, float]]:
     """(destination, powertrain) -> (covered units, units-weighted per-vehicle TI in kg)."""
-    from ti_framework.core.cumulative import ti_cumulative
-    from ti_framework.core.gap import ti_gap_series
-    from ti_framework.layer1.automotive import MethodBBenchmark
-    from ti_framework.layer2.automotive import BEVEmissions, GridTrajectory, ICEEmissions
-
-    rate = f"s{scenario[1]}"
-    acc: dict[tuple[str, str], list[float]] = {}
-    for placement in raw["placements"]:
-        code, powertrain = placement["country"], placement["powertrain"]
-        country = raw["countries"][code]
-        distance = raw["support"]["vkt"][code]
-        horizon = raw["support"]["lifetime_by_country"][code]
-        benchmark = MethodBBenchmark(
-            intensity_base=country["fleet_intensity_base"],
-            r_fleet=country["r_fleet"][rate],
-            distance=distance,
-            horizon=horizon,
-        )
-        if powertrain == "BEV":
-            if placement.get("eta_ev") is None:
-                continue  # unpriced: the engine drops it, so it is not a covered unit
-            product = BEVEmissions(
-                eta_ev=placement["eta_ev"],
-                grid=GridTrajectory(g0=country["grid_intensity"], r_power=country["r_power"][rate]),
-                distance=distance,
-            )
-        else:
-            if placement.get("ice_intensity") is None:
-                continue
-            product = ICEEmissions(ice_intensity=placement["ice_intensity"], distance=distance)
-        cumulative = ti_cumulative(ti_gap_series(benchmark, product, horizon))
-        cell = acc.setdefault((code, powertrain), [0.0, 0.0])
-        cell[0] += placement["units"]
-        cell[1] += placement["units"] * cumulative
-    return {key: (units, ti / units) for key, (units, ti) in acc.items() if units}
+    return {
+        (cell["country"], cell["powertrain"]): (cell["units"], cell["TI_per_vehicle_kgCO2e"])
+        for cell in payload["cohorts"][scenario]["by_cell"]
+        if cell["units"]
+    }
 
 
 def decompose(
     cohort_a: str,
     cohort_b: str,
     scenario: str = "S2",
-    fixtures: dict[str, dict[str, Any]] | None = None,
     published: dict[str, dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     """Split cohort B's per-vehicle TI gap against cohort A into its three sources."""
-    fixtures = fixtures if fixtures is not None else build_fixtures()
-    published = published if published is not None else run_lifetime(fixtures)
+    published = published if published is not None else run_lifetime()
 
     units: dict[str, dict[tuple[str, str], float]] = {}
     per_vehicle: dict[str, dict[tuple[str, str], float]] = {}
     reconciliation: dict[str, float] = {}
     for cohort_id in (cohort_a, cohort_b):
-        built = _cells(fixtures[cohort_id], scenario)
+        built = _cells(published[cohort_id], scenario)
         units[cohort_id] = {key: value[0] for key, value in built.items()}
         per_vehicle[cohort_id] = {key: value[1] for key, value in built.items()}
         rebuilt = sum(u * per_vehicle[cohort_id][k] for k, u in units[cohort_id].items()) / 1000.0
@@ -101,9 +69,9 @@ def decompose(
         relative = abs(rebuilt - reference) / abs(reference)
         if relative > RECONCILE_TOL:
             raise ValueError(
-                f"{cohort_id}/{scenario}: rebuilt cells give {rebuilt:,.0f} tCO2e against the "
-                f"published {reference:,.0f} (relative {relative:.2e}). The decomposition would "
-                "describe a run that was never published."
+                f"{cohort_id}/{scenario}: the published cells give {rebuilt:,.0f} tCO2e against "
+                f"the published total {reference:,.0f} (relative {relative:.2e}). The "
+                "decomposition would describe a run that was never published."
             )
         reconciliation[cohort_id] = relative
 
@@ -264,19 +232,18 @@ def main() -> int:
 
 def _self_check() -> None:
     """The three terms must reconstruct the gap, and a cohort must not differ from itself."""
-    fixtures = build_fixtures()
-    published = run_lifetime(fixtures)
+    published = run_lifetime()
     toyota, hyundai = (
         "toyota-eu27-passenger-cars-2024",
         "hyundai-eu27-passenger-cars-2024",
     )
     for scenario in ("S1", "S2", "S3"):
-        result = decompose(toyota, hyundai, scenario, fixtures, published)
+        result = decompose(toyota, hyundai, scenario, published)
         assert abs(result["residual"]) < 0.01 * abs(result["gap"]), (
             f"{scenario}: residual {result['residual']:,.0f} exceeds 1% of the "
             f"{result['gap']:,.0f} gap — the weighting no longer closes"
         )
-        identical = decompose(toyota, toyota, scenario, fixtures, published)
+        identical = decompose(toyota, toyota, scenario, published)
         assert abs(identical["gap"]) < 1e-9, f"{scenario}: a cohort differs from itself"
         assert all(abs(v) < 1e-9 for v in identical["terms"].values()), (
             f"{scenario}: a cohort compared with itself produced a non-zero term"

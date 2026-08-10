@@ -232,6 +232,27 @@ class VehicleResult:
 
 
 @dataclass
+class CellTotal:
+    """One (destination, powertrain) cell of the decomposition, with the volume behind it.
+
+    ``by_country`` and ``by_powertrain`` are the two margins the Guideline requires. The
+    margins alone cannot say whether a market looks bad because of where it is or because
+    of what was sold into it — that needs the joint, and the per-vehicle figure needs the
+    units, so both travel together.
+    """
+
+    country_code: str
+    powertrain: Powertrain
+    ti_tco2e: float
+    units: float
+
+    @property
+    def ti_per_vehicle_kg(self) -> float | None:
+        """Cumulative lifetime TI per vehicle in this cell, kgCO2e. None when unpopulated."""
+        return self.ti_tco2e * 1000.0 / self.units if self.units else None
+
+
+@dataclass
 class CohortResult:
     """Single-cohort firm-level TI for one scenario, with mandatory decomposition."""
 
@@ -242,6 +263,7 @@ class CohortResult:
     by_country: dict[str, float]  # tCO2e
     by_powertrain: dict[str, float]  # tCO2e
     annual: list[float]  # TI_annual time-series, tCO2e/yr, t=0..T-1
+    by_cell: list[CellTotal] = field(default_factory=list)  # joint of the two margins
     excluded_flag_markets: dict[str, str] = field(default_factory=dict)  # code -> reason
     warnings: list[str] = field(default_factory=list)
     directional_only: bool = False  # set when Tier-C share exceeds threshold

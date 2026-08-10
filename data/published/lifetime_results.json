@@ -31,6 +31,575 @@
           -9238.0388,
           -6108.2369
         ],
+        "by_cell": [
+          {
+            "TI_per_vehicle_kgCO2e": 27150.532,
+            "TI_tCO2e": 21720.425,
+            "country": "AT",
+            "powertrain": "BEV",
+            "units": 800.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -189.40367,
+            "TI_tCO2e": -544.91437,
+            "country": "AT",
+            "powertrain": "HEV",
+            "units": 2877.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 1592.4026,
+            "TI_tCO2e": 11521.033,
+            "country": "AT",
+            "powertrain": "ICE",
+            "units": 7235.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 20279.384,
+            "TI_tCO2e": 29891.812,
+            "country": "BE",
+            "powertrain": "BEV",
+            "units": 1474.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6535.2068,
+            "TI_tCO2e": -35799.863,
+            "country": "BE",
+            "powertrain": "HEV",
+            "units": 5478.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -5552.7567,
+            "TI_tCO2e": -21983.364,
+            "country": "BE",
+            "powertrain": "ICE",
+            "units": 3959.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 35916.053,
+            "TI_tCO2e": 7111.3785,
+            "country": "BG",
+            "powertrain": "BEV",
+            "units": 198.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 5156.7711,
+            "TI_tCO2e": 4434.8231,
+            "country": "BG",
+            "powertrain": "HEV",
+            "units": 860.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 8240.0636,
+            "TI_tCO2e": 9212.3911,
+            "country": "BG",
+            "powertrain": "ICE",
+            "units": 1118.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17552.448,
+            "TI_tCO2e": 2071.1889,
+            "country": "CY",
+            "powertrain": "BEV",
+            "units": 118.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6220.0168,
+            "TI_tCO2e": -5119.0738,
+            "country": "CY",
+            "powertrain": "HEV",
+            "units": 823.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3169.6807,
+            "TI_tCO2e": -1065.0127,
+            "country": "CY",
+            "powertrain": "ICE",
+            "units": 336.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 19066.294,
+            "TI_tCO2e": 9285.2852,
+            "country": "CZ",
+            "powertrain": "BEV",
+            "units": 487.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -1110.7047,
+            "TI_tCO2e": -7292.887,
+            "country": "CZ",
+            "powertrain": "HEV",
+            "units": 6566.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 433.71282,
+            "TI_tCO2e": 5605.7382,
+            "country": "CZ",
+            "powertrain": "ICE",
+            "units": 12925.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 15060.541,
+            "TI_tCO2e": 253815.29,
+            "country": "DE",
+            "powertrain": "BEV",
+            "units": 16853.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6728.0495,
+            "TI_tCO2e": -232366.65,
+            "country": "DE",
+            "powertrain": "HEV",
+            "units": 34537.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7412.3,
+            "TI_tCO2e": -299316.08,
+            "country": "DE",
+            "powertrain": "ICE",
+            "units": 40381.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 19584.885,
+            "TI_tCO2e": 45241.083,
+            "country": "DK",
+            "powertrain": "BEV",
+            "units": 2310.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9780.9117,
+            "TI_tCO2e": -2171.3624,
+            "country": "DK",
+            "powertrain": "HEV",
+            "units": 222.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -4034.3683,
+            "TI_tCO2e": -8193.8021,
+            "country": "DK",
+            "powertrain": "ICE",
+            "units": 2031.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 20096.784,
+            "TI_tCO2e": 2331.2269,
+            "country": "EE",
+            "powertrain": "BEV",
+            "units": 116.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -2503.931,
+            "TI_tCO2e": -1124.265,
+            "country": "EE",
+            "powertrain": "HEV",
+            "units": 449.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 131.84513,
+            "TI_tCO2e": 16.216951,
+            "country": "EE",
+            "powertrain": "ICE",
+            "units": 123.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 30136.659,
+            "TI_tCO2e": 45144.715,
+            "country": "ES",
+            "powertrain": "BEV",
+            "units": 1498.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -4498.5855,
+            "TI_tCO2e": -128160.2,
+            "country": "ES",
+            "powertrain": "HEV",
+            "units": 28489.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7045.6326,
+            "TI_tCO2e": -227137.1,
+            "country": "ES",
+            "powertrain": "ICE",
+            "units": 32238.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 11898.255,
+            "TI_tCO2e": 12719.235,
+            "country": "FI",
+            "powertrain": "BEV",
+            "units": 1069.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -22798.52,
+            "TI_tCO2e": -14796.239,
+            "country": "FI",
+            "powertrain": "HEV",
+            "units": 649.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -23712.524,
+            "TI_tCO2e": -24115.637,
+            "country": "FI",
+            "powertrain": "ICE",
+            "units": 1017.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 23194.41,
+            "TI_tCO2e": 140720.48,
+            "country": "FR",
+            "powertrain": "BEV",
+            "units": 6067.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -4864.6892,
+            "TI_tCO2e": -144821.8,
+            "country": "FR",
+            "powertrain": "HEV",
+            "units": 29770.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -4245.508,
+            "TI_tCO2e": -48224.726,
+            "country": "FR",
+            "powertrain": "ICE",
+            "units": 11359.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 11664.511,
+            "TI_tCO2e": 2484.5408,
+            "country": "GR",
+            "powertrain": "BEV",
+            "units": 213.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -16845.57,
+            "TI_tCO2e": -41069.5,
+            "country": "GR",
+            "powertrain": "HEV",
+            "units": 2438.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -13980.089,
+            "TI_tCO2e": -85781.827,
+            "country": "GR",
+            "powertrain": "ICE",
+            "units": 6136.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 46765.725,
+            "TI_tCO2e": 7388.9845,
+            "country": "HR",
+            "powertrain": "BEV",
+            "units": 158.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 7885.9414,
+            "TI_tCO2e": 6466.472,
+            "country": "HR",
+            "powertrain": "HEV",
+            "units": 820.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10938.455,
+            "TI_tCO2e": 25803.816,
+            "country": "HR",
+            "powertrain": "ICE",
+            "units": 2359.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 34593.331,
+            "TI_tCO2e": 19476.046,
+            "country": "HU",
+            "powertrain": "BEV",
+            "units": 563.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -5624.5577,
+            "TI_tCO2e": -8521.2049,
+            "country": "HU",
+            "powertrain": "HEV",
+            "units": 1515.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -4761.6049,
+            "TI_tCO2e": -11175.487,
+            "country": "HU",
+            "powertrain": "ICE",
+            "units": 2347.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 23411.692,
+            "TI_tCO2e": 33572.366,
+            "country": "IE",
+            "powertrain": "BEV",
+            "units": 1434.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6440.7445,
+            "TI_tCO2e": -14749.305,
+            "country": "IE",
+            "powertrain": "HEV",
+            "units": 2290.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9148.2441,
+            "TI_tCO2e": -56645.927,
+            "country": "IE",
+            "powertrain": "ICE",
+            "units": 6192.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 16824.649,
+            "TI_tCO2e": 8479.6229,
+            "country": "IT",
+            "powertrain": "BEV",
+            "units": 504.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8412.1514,
+            "TI_tCO2e": -164306.14,
+            "country": "IT",
+            "powertrain": "HEV",
+            "units": 19532.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6570.9991,
+            "TI_tCO2e": -188916.22,
+            "country": "IT",
+            "powertrain": "ICE",
+            "units": 28750.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 24646.138,
+            "TI_tCO2e": 1947.0449,
+            "country": "LT",
+            "powertrain": "BEV",
+            "units": 79.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12633.798,
+            "TI_tCO2e": -5116.6881,
+            "country": "LT",
+            "powertrain": "HEV",
+            "units": 405.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7596.0022,
+            "TI_tCO2e": -1602.7565,
+            "country": "LT",
+            "powertrain": "ICE",
+            "units": 211.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 42506.488,
+            "TI_tCO2e": 20998.205,
+            "country": "LU",
+            "powertrain": "BEV",
+            "units": 494.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 21943.328,
+            "TI_tCO2e": 8667.6144,
+            "country": "LU",
+            "powertrain": "HEV",
+            "units": 395.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 20624.237,
+            "TI_tCO2e": 7816.5857,
+            "country": "LU",
+            "powertrain": "ICE",
+            "units": 379.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 28077.878,
+            "TI_tCO2e": 2077.763,
+            "country": "LV",
+            "powertrain": "BEV",
+            "units": 74.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -14384.692,
+            "TI_tCO2e": -5049.0268,
+            "country": "LV",
+            "powertrain": "HEV",
+            "units": 351.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11775.861,
+            "TI_tCO2e": -2614.241,
+            "country": "LV",
+            "powertrain": "ICE",
+            "units": 222.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 18630.929,
+            "TI_tCO2e": 1453.2124,
+            "country": "MT",
+            "powertrain": "BEV",
+            "units": 78.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 6364.8156,
+            "TI_tCO2e": 292.78152,
+            "country": "MT",
+            "powertrain": "HEV",
+            "units": 46.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 6215.836,
+            "TI_tCO2e": 3816.5233,
+            "country": "MT",
+            "powertrain": "ICE",
+            "units": 614.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 14212.729,
+            "TI_tCO2e": 62635.496,
+            "country": "NL",
+            "powertrain": "BEV",
+            "units": 4407.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10510.298,
+            "TI_tCO2e": -83294.113,
+            "country": "NL",
+            "powertrain": "HEV",
+            "units": 7925.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9115.2128,
+            "TI_tCO2e": -55930.946,
+            "country": "NL",
+            "powertrain": "ICE",
+            "units": 6136.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 20914.807,
+            "TI_tCO2e": 9662.6408,
+            "country": "PL",
+            "powertrain": "BEV",
+            "units": 462.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6388.7677,
+            "TI_tCO2e": -96994.271,
+            "country": "PL",
+            "powertrain": "HEV",
+            "units": 15182.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -4948.1403,
+            "TI_tCO2e": -74890.103,
+            "country": "PL",
+            "powertrain": "ICE",
+            "units": 15135.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 26878.729,
+            "TI_tCO2e": 23492.009,
+            "country": "PT",
+            "powertrain": "BEV",
+            "units": 874.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9989.8875,
+            "TI_tCO2e": -6743.1741,
+            "country": "PT",
+            "powertrain": "HEV",
+            "units": 675.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10077.002,
+            "TI_tCO2e": -54234.424,
+            "country": "PT",
+            "powertrain": "ICE",
+            "units": 5382.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 24860.992,
+            "TI_tCO2e": 15115.483,
+            "country": "RO",
+            "powertrain": "BEV",
+            "units": 608.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17498.753,
+            "TI_tCO2e": -73109.791,
+            "country": "RO",
+            "powertrain": "HEV",
+            "units": 4178.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -15555.653,
+            "TI_tCO2e": -76222.7,
+            "country": "RO",
+            "powertrain": "ICE",
+            "units": 4900.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 22737.09,
+            "TI_tCO2e": 6048.0661,
+            "country": "SE",
+            "powertrain": "BEV",
+            "units": 266.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7582.4611,
+            "TI_tCO2e": -5216.7333,
+            "country": "SE",
+            "powertrain": "HEV",
+            "units": 688.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7055.5201,
+            "TI_tCO2e": -4374.4225,
+            "country": "SE",
+            "powertrain": "ICE",
+            "units": 620.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 40704.932,
+            "TI_tCO2e": 8710.8556,
+            "country": "SI",
+            "powertrain": "BEV",
+            "units": 214.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 4060.4583,
+            "TI_tCO2e": 3496.0546,
+            "country": "SI",
+            "powertrain": "HEV",
+            "units": 861.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 6755.226,
+            "TI_tCO2e": 10686.767,
+            "country": "SI",
+            "powertrain": "ICE",
+            "units": 1582.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 24747.672,
+            "TI_tCO2e": 2969.7207,
+            "country": "SK",
+            "powertrain": "BEV",
+            "units": 120.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8520.3888,
+            "TI_tCO2e": -26694.378,
+            "country": "SK",
+            "powertrain": "HEV",
+            "units": 3133.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7527.6744,
+            "TI_tCO2e": -36479.11,
+            "country": "SK",
+            "powertrain": "ICE",
+            "units": 4846.0
+          }
+        ],
         "by_country": {
           "AT": 32696.544,
           "BE": -27891.414,
@@ -104,6 +673,575 @@
           -56872.735,
           -13308.76
         ],
+        "by_cell": [
+          {
+            "TI_per_vehicle_kgCO2e": 23260.861,
+            "TI_tCO2e": 18608.689,
+            "country": "AT",
+            "powertrain": "BEV",
+            "units": 800.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3247.5304,
+            "TI_tCO2e": -9343.145,
+            "country": "AT",
+            "powertrain": "HEV",
+            "units": 2877.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -1465.7241,
+            "TI_tCO2e": -10604.514,
+            "country": "AT",
+            "powertrain": "ICE",
+            "units": 7235.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17296.006,
+            "TI_tCO2e": 25494.312,
+            "country": "BE",
+            "powertrain": "BEV",
+            "units": 1474.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8572.8943,
+            "TI_tCO2e": -46962.315,
+            "country": "BE",
+            "powertrain": "HEV",
+            "units": 5478.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7590.4442,
+            "TI_tCO2e": -30050.569,
+            "country": "BE",
+            "powertrain": "ICE",
+            "units": 3959.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 15724.927,
+            "TI_tCO2e": 3113.5355,
+            "country": "BG",
+            "powertrain": "BEV",
+            "units": 198.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11912.459,
+            "TI_tCO2e": -10244.715,
+            "country": "BG",
+            "powertrain": "HEV",
+            "units": 860.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8829.1669,
+            "TI_tCO2e": -9871.0086,
+            "country": "BG",
+            "powertrain": "ICE",
+            "units": 1118.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 7003.947,
+            "TI_tCO2e": 826.46575,
+            "country": "CY",
+            "powertrain": "BEV",
+            "units": 118.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -13219.253,
+            "TI_tCO2e": -10879.445,
+            "country": "CY",
+            "powertrain": "HEV",
+            "units": 823.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10168.917,
+            "TI_tCO2e": -3416.7561,
+            "country": "CY",
+            "powertrain": "ICE",
+            "units": 336.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9851.9472,
+            "TI_tCO2e": 4797.8983,
+            "country": "CZ",
+            "powertrain": "BEV",
+            "units": 487.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7986.3512,
+            "TI_tCO2e": -52438.382,
+            "country": "CZ",
+            "powertrain": "HEV",
+            "units": 6566.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6441.9337,
+            "TI_tCO2e": -83261.993,
+            "country": "CZ",
+            "powertrain": "ICE",
+            "units": 12925.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10268.822,
+            "TI_tCO2e": 173060.45,
+            "country": "DE",
+            "powertrain": "BEV",
+            "units": 16853.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9140.3841,
+            "TI_tCO2e": -315681.45,
+            "country": "DE",
+            "powertrain": "HEV",
+            "units": 34537.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9824.6345,
+            "TI_tCO2e": -396728.57,
+            "country": "DE",
+            "powertrain": "ICE",
+            "units": 40381.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17250.087,
+            "TI_tCO2e": 39847.701,
+            "country": "DK",
+            "powertrain": "BEV",
+            "units": 2310.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10394.604,
+            "TI_tCO2e": -2307.602,
+            "country": "DK",
+            "powertrain": "HEV",
+            "units": 222.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -4648.0602,
+            "TI_tCO2e": -9440.2103,
+            "country": "DK",
+            "powertrain": "ICE",
+            "units": 2031.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 13568.721,
+            "TI_tCO2e": 1573.9717,
+            "country": "EE",
+            "powertrain": "BEV",
+            "units": 116.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -4906.1266,
+            "TI_tCO2e": -2202.8508,
+            "country": "EE",
+            "powertrain": "HEV",
+            "units": 449.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -2270.3504,
+            "TI_tCO2e": -279.2531,
+            "country": "EE",
+            "powertrain": "ICE",
+            "units": 123.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 21589.912,
+            "TI_tCO2e": 32341.689,
+            "country": "ES",
+            "powertrain": "BEV",
+            "units": 1498.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10092.836,
+            "TI_tCO2e": -287534.81,
+            "country": "ES",
+            "powertrain": "HEV",
+            "units": 28489.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12639.883,
+            "TI_tCO2e": -407484.55,
+            "country": "ES",
+            "powertrain": "ICE",
+            "units": 32238.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17219.376,
+            "TI_tCO2e": 18407.512,
+            "country": "FI",
+            "powertrain": "BEV",
+            "units": 1069.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -15718.135,
+            "TI_tCO2e": -10201.07,
+            "country": "FI",
+            "powertrain": "HEV",
+            "units": 649.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -16632.14,
+            "TI_tCO2e": -16914.886,
+            "country": "FI",
+            "powertrain": "ICE",
+            "units": 1017.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 19101.202,
+            "TI_tCO2e": 115886.99,
+            "country": "FR",
+            "powertrain": "BEV",
+            "units": 6067.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8697.0517,
+            "TI_tCO2e": -258911.23,
+            "country": "FR",
+            "powertrain": "HEV",
+            "units": 29770.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8077.8705,
+            "TI_tCO2e": -91756.531,
+            "country": "FR",
+            "powertrain": "ICE",
+            "units": 11359.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 3706.8922,
+            "TI_tCO2e": 789.56803,
+            "country": "GR",
+            "powertrain": "BEV",
+            "units": 213.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -19920.345,
+            "TI_tCO2e": -48565.802,
+            "country": "GR",
+            "powertrain": "HEV",
+            "units": 2438.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17054.864,
+            "TI_tCO2e": -104648.65,
+            "country": "GR",
+            "powertrain": "ICE",
+            "units": 6136.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 30079.131,
+            "TI_tCO2e": 4752.5027,
+            "country": "HR",
+            "powertrain": "BEV",
+            "units": 158.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6693.2382,
+            "TI_tCO2e": -5488.4553,
+            "country": "HR",
+            "powertrain": "HEV",
+            "units": 820.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3640.7242,
+            "TI_tCO2e": -8588.4683,
+            "country": "HR",
+            "powertrain": "ICE",
+            "units": 2359.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 18264.723,
+            "TI_tCO2e": 10283.039,
+            "country": "HU",
+            "powertrain": "BEV",
+            "units": 563.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -18476.155,
+            "TI_tCO2e": -27991.375,
+            "country": "HU",
+            "powertrain": "HEV",
+            "units": 1515.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17613.202,
+            "TI_tCO2e": -41338.186,
+            "country": "HU",
+            "powertrain": "ICE",
+            "units": 2347.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17299.348,
+            "TI_tCO2e": 24807.266,
+            "country": "IE",
+            "powertrain": "BEV",
+            "units": 1434.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8890.5774,
+            "TI_tCO2e": -20359.422,
+            "country": "IE",
+            "powertrain": "HEV",
+            "units": 2290.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11598.077,
+            "TI_tCO2e": -71815.293,
+            "country": "IE",
+            "powertrain": "ICE",
+            "units": 6192.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10280.277,
+            "TI_tCO2e": 5181.2597,
+            "country": "IT",
+            "powertrain": "BEV",
+            "units": 504.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12888.142,
+            "TI_tCO2e": -251731.2,
+            "country": "IT",
+            "powertrain": "HEV",
+            "units": 19532.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11046.99,
+            "TI_tCO2e": -317600.96,
+            "country": "IT",
+            "powertrain": "ICE",
+            "units": 28750.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 19457.871,
+            "TI_tCO2e": 1537.1718,
+            "country": "LT",
+            "powertrain": "BEV",
+            "units": 79.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -15409.314,
+            "TI_tCO2e": -6240.7721,
+            "country": "LT",
+            "powertrain": "HEV",
+            "units": 405.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10371.518,
+            "TI_tCO2e": -2188.3904,
+            "country": "LT",
+            "powertrain": "ICE",
+            "units": 211.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 41483.943,
+            "TI_tCO2e": 20493.068,
+            "country": "LU",
+            "powertrain": "BEV",
+            "units": 494.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 21909.762,
+            "TI_tCO2e": 8654.3562,
+            "country": "LU",
+            "powertrain": "HEV",
+            "units": 395.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 20590.671,
+            "TI_tCO2e": 7803.8645,
+            "country": "LU",
+            "powertrain": "ICE",
+            "units": 379.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 21901.539,
+            "TI_tCO2e": 1620.7139,
+            "country": "LV",
+            "powertrain": "BEV",
+            "units": 74.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17669.632,
+            "TI_tCO2e": -6202.041,
+            "country": "LV",
+            "powertrain": "HEV",
+            "units": 351.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -15060.801,
+            "TI_tCO2e": -3343.4979,
+            "country": "LV",
+            "powertrain": "ICE",
+            "units": 222.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 6991.6561,
+            "TI_tCO2e": 545.34918,
+            "country": "MT",
+            "powertrain": "BEV",
+            "units": 78.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3205.0707,
+            "TI_tCO2e": -147.43325,
+            "country": "MT",
+            "powertrain": "HEV",
+            "units": 46.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3354.0503,
+            "TI_tCO2e": -2059.3869,
+            "country": "MT",
+            "powertrain": "ICE",
+            "units": 614.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9685.4446,
+            "TI_tCO2e": 42683.754,
+            "country": "NL",
+            "powertrain": "BEV",
+            "units": 4407.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11387.574,
+            "TI_tCO2e": -90246.523,
+            "country": "NL",
+            "powertrain": "HEV",
+            "units": 7925.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9992.4885,
+            "TI_tCO2e": -61313.91,
+            "country": "NL",
+            "powertrain": "ICE",
+            "units": 6136.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -5113.4312,
+            "TI_tCO2e": -2362.4052,
+            "country": "PL",
+            "powertrain": "BEV",
+            "units": 462.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -24164.886,
+            "TI_tCO2e": -366871.3,
+            "country": "PL",
+            "powertrain": "HEV",
+            "units": 15182.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -22724.259,
+            "TI_tCO2e": -343931.66,
+            "country": "PL",
+            "powertrain": "ICE",
+            "units": 15135.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 18643.966,
+            "TI_tCO2e": 16294.826,
+            "country": "PT",
+            "powertrain": "BEV",
+            "units": 874.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -15368.69,
+            "TI_tCO2e": -10373.866,
+            "country": "PT",
+            "powertrain": "HEV",
+            "units": 675.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -15455.805,
+            "TI_tCO2e": -83183.141,
+            "country": "PT",
+            "powertrain": "ICE",
+            "units": 5382.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9392.7782,
+            "TI_tCO2e": 5710.8091,
+            "country": "RO",
+            "powertrain": "BEV",
+            "units": 608.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -28371.299,
+            "TI_tCO2e": -118535.29,
+            "country": "RO",
+            "powertrain": "HEV",
+            "units": 4178.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -26428.199,
+            "TI_tCO2e": -129498.18,
+            "country": "RO",
+            "powertrain": "ICE",
+            "units": 4900.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 21665.36,
+            "TI_tCO2e": 5762.9858,
+            "country": "SE",
+            "powertrain": "BEV",
+            "units": 266.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8519.4448,
+            "TI_tCO2e": -5861.378,
+            "country": "SE",
+            "powertrain": "HEV",
+            "units": 688.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7992.5038,
+            "TI_tCO2e": -4955.3524,
+            "country": "SE",
+            "powertrain": "ICE",
+            "units": 620.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 27371.773,
+            "TI_tCO2e": 5857.5594,
+            "country": "SI",
+            "powertrain": "BEV",
+            "units": 214.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6507.7214,
+            "TI_tCO2e": -5603.1481,
+            "country": "SI",
+            "powertrain": "HEV",
+            "units": 861.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3812.9537,
+            "TI_tCO2e": -6032.0928,
+            "country": "SI",
+            "powertrain": "ICE",
+            "units": 1582.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 18409.482,
+            "TI_tCO2e": 2209.1378,
+            "country": "SK",
+            "powertrain": "BEV",
+            "units": 120.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -13459.981,
+            "TI_tCO2e": -42170.12,
+            "country": "SK",
+            "powertrain": "HEV",
+            "units": 3133.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12467.266,
+            "TI_tCO2e": -60416.373,
+            "country": "SK",
+            "powertrain": "ICE",
+            "units": 4846.0
+          }
+        ],
         "by_country": {
           "AT": -1338.9704,
           "BE": -51518.572,
@@ -176,6 +1314,575 @@
           -86388.283,
           -76874.971,
           -17211.617
+        ],
+        "by_cell": [
+          {
+            "TI_per_vehicle_kgCO2e": 13668.084,
+            "TI_tCO2e": 10934.468,
+            "country": "AT",
+            "powertrain": "BEV",
+            "units": 800.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -14106.329,
+            "TI_tCO2e": -40583.91,
+            "country": "AT",
+            "powertrain": "HEV",
+            "units": 2877.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12324.523,
+            "TI_tCO2e": -89167.925,
+            "country": "AT",
+            "powertrain": "ICE",
+            "units": 7235.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10466.397,
+            "TI_tCO2e": 15427.469,
+            "country": "BE",
+            "powertrain": "BEV",
+            "units": 1474.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -16997.436,
+            "TI_tCO2e": -93111.954,
+            "country": "BE",
+            "powertrain": "HEV",
+            "units": 5478.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -16014.986,
+            "TI_tCO2e": -63403.329,
+            "country": "BE",
+            "powertrain": "ICE",
+            "units": 3959.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 8724.5967,
+            "TI_tCO2e": 1727.4702,
+            "country": "BG",
+            "powertrain": "BEV",
+            "units": 198.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -23551.0,
+            "TI_tCO2e": -20253.86,
+            "country": "BG",
+            "powertrain": "HEV",
+            "units": 860.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -20467.707,
+            "TI_tCO2e": -22882.897,
+            "country": "BG",
+            "powertrain": "ICE",
+            "units": 1118.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 4263.1129,
+            "TI_tCO2e": 503.04733,
+            "country": "CY",
+            "powertrain": "BEV",
+            "units": 118.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -27358.866,
+            "TI_tCO2e": -22516.346,
+            "country": "CY",
+            "powertrain": "HEV",
+            "units": 823.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -24308.53,
+            "TI_tCO2e": -8167.6659,
+            "country": "CY",
+            "powertrain": "ICE",
+            "units": 336.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 5781.6679,
+            "TI_tCO2e": 2815.6723,
+            "country": "CZ",
+            "powertrain": "BEV",
+            "units": 487.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17108.813,
+            "TI_tCO2e": -112336.47,
+            "country": "CZ",
+            "powertrain": "HEV",
+            "units": 6566.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -15564.396,
+            "TI_tCO2e": -201169.81,
+            "country": "CZ",
+            "powertrain": "ICE",
+            "units": 12925.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 6128.188,
+            "TI_tCO2e": 103278.35,
+            "country": "DE",
+            "powertrain": "BEV",
+            "units": 16853.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17527.003,
+            "TI_tCO2e": -605330.12,
+            "country": "DE",
+            "powertrain": "HEV",
+            "units": 34537.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -18211.254,
+            "TI_tCO2e": -735388.64,
+            "country": "DE",
+            "powertrain": "ICE",
+            "units": 40381.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10152.752,
+            "TI_tCO2e": 23452.857,
+            "country": "DK",
+            "powertrain": "BEV",
+            "units": 2310.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -19080.318,
+            "TI_tCO2e": -4235.8306,
+            "country": "DK",
+            "powertrain": "HEV",
+            "units": 222.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -13333.775,
+            "TI_tCO2e": -27080.896,
+            "country": "DK",
+            "powertrain": "ICE",
+            "units": 2031.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 6987.6556,
+            "TI_tCO2e": 810.56805,
+            "country": "EE",
+            "powertrain": "BEV",
+            "units": 116.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17005.747,
+            "TI_tCO2e": -7635.5802,
+            "country": "EE",
+            "powertrain": "HEV",
+            "units": 449.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -14369.97,
+            "TI_tCO2e": -1767.5064,
+            "country": "EE",
+            "powertrain": "ICE",
+            "units": 123.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 11096.827,
+            "TI_tCO2e": 16623.047,
+            "country": "ES",
+            "powertrain": "BEV",
+            "units": 1498.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -23624.778,
+            "TI_tCO2e": -673046.31,
+            "country": "ES",
+            "powertrain": "HEV",
+            "units": 28489.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -26171.826,
+            "TI_tCO2e": -843727.31,
+            "country": "ES",
+            "powertrain": "ICE",
+            "units": 32238.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 8311.4074,
+            "TI_tCO2e": 8884.8945,
+            "country": "FI",
+            "powertrain": "BEV",
+            "units": 1069.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -26191.746,
+            "TI_tCO2e": -16998.443,
+            "country": "FI",
+            "powertrain": "HEV",
+            "units": 649.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -27105.75,
+            "TI_tCO2e": -27566.548,
+            "country": "FI",
+            "powertrain": "ICE",
+            "units": 1017.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10627.807,
+            "TI_tCO2e": 64478.904,
+            "country": "FR",
+            "powertrain": "BEV",
+            "units": 6067.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17727.665,
+            "TI_tCO2e": -527752.59,
+            "country": "FR",
+            "powertrain": "HEV",
+            "units": 29770.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17108.484,
+            "TI_tCO2e": -194335.27,
+            "country": "FR",
+            "powertrain": "ICE",
+            "units": 11359.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 2253.957,
+            "TI_tCO2e": 480.09284,
+            "country": "GR",
+            "powertrain": "BEV",
+            "units": 213.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -26783.668,
+            "TI_tCO2e": -65298.582,
+            "country": "GR",
+            "powertrain": "HEV",
+            "units": 2438.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -23918.187,
+            "TI_tCO2e": -146761.99,
+            "country": "GR",
+            "powertrain": "ICE",
+            "units": 6136.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 15734.63,
+            "TI_tCO2e": 2486.0715,
+            "country": "HR",
+            "powertrain": "BEV",
+            "units": 158.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -24573.702,
+            "TI_tCO2e": -20150.436,
+            "country": "HR",
+            "powertrain": "HEV",
+            "units": 820.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -21521.188,
+            "TI_tCO2e": -50768.483,
+            "country": "HR",
+            "powertrain": "ICE",
+            "units": 2359.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9193.3379,
+            "TI_tCO2e": 5175.8492,
+            "country": "HU",
+            "powertrain": "BEV",
+            "units": 563.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -32126.071,
+            "TI_tCO2e": -48670.997,
+            "country": "HU",
+            "powertrain": "HEV",
+            "units": 1515.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -31263.118,
+            "TI_tCO2e": -73374.538,
+            "country": "HU",
+            "powertrain": "ICE",
+            "units": 2347.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9601.5316,
+            "TI_tCO2e": 13768.596,
+            "country": "IE",
+            "powertrain": "BEV",
+            "units": 1434.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -21765.508,
+            "TI_tCO2e": -49843.013,
+            "country": "IE",
+            "powertrain": "HEV",
+            "units": 2290.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -24473.007,
+            "TI_tCO2e": -151536.86,
+            "country": "IE",
+            "powertrain": "ICE",
+            "units": 6192.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 5778.8334,
+            "TI_tCO2e": 2912.532,
+            "country": "IT",
+            "powertrain": "BEV",
+            "units": 504.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -22064.587,
+            "TI_tCO2e": -430965.51,
+            "country": "IT",
+            "powertrain": "HEV",
+            "units": 19532.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -20223.435,
+            "TI_tCO2e": -581423.74,
+            "country": "IT",
+            "powertrain": "ICE",
+            "units": 28750.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9617.538,
+            "TI_tCO2e": 759.7855,
+            "country": "LT",
+            "powertrain": "BEV",
+            "units": 79.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -27764.029,
+            "TI_tCO2e": -11244.432,
+            "country": "LT",
+            "powertrain": "HEV",
+            "units": 405.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -22726.234,
+            "TI_tCO2e": -4795.2354,
+            "country": "LT",
+            "powertrain": "ICE",
+            "units": 211.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 26633.6,
+            "TI_tCO2e": 13156.998,
+            "country": "LU",
+            "powertrain": "BEV",
+            "units": 494.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 5948.4757,
+            "TI_tCO2e": 2349.6479,
+            "country": "LU",
+            "powertrain": "HEV",
+            "units": 395.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 4629.3847,
+            "TI_tCO2e": 1754.5368,
+            "country": "LU",
+            "powertrain": "ICE",
+            "units": 379.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10888.396,
+            "TI_tCO2e": 805.74127,
+            "country": "LV",
+            "powertrain": "BEV",
+            "units": 74.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -32357.337,
+            "TI_tCO2e": -11357.425,
+            "country": "LV",
+            "powertrain": "HEV",
+            "units": 351.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -29748.505,
+            "TI_tCO2e": -6604.1682,
+            "country": "LV",
+            "powertrain": "ICE",
+            "units": 222.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 3904.1168,
+            "TI_tCO2e": 304.52111,
+            "country": "MT",
+            "powertrain": "BEV",
+            "units": 78.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12745.06,
+            "TI_tCO2e": -586.27276,
+            "country": "MT",
+            "powertrain": "HEV",
+            "units": 46.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12894.04,
+            "TI_tCO2e": -7916.9403,
+            "country": "MT",
+            "powertrain": "ICE",
+            "units": 614.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 5640.3858,
+            "TI_tCO2e": 24857.18,
+            "country": "NL",
+            "powertrain": "BEV",
+            "units": 4407.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -19059.927,
+            "TI_tCO2e": -151049.92,
+            "country": "NL",
+            "powertrain": "HEV",
+            "units": 7925.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17664.842,
+            "TI_tCO2e": -108391.47,
+            "country": "NL",
+            "powertrain": "ICE",
+            "units": 6136.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -1142.7068,
+            "TI_tCO2e": -527.93053,
+            "country": "PL",
+            "powertrain": "BEV",
+            "units": 462.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -36338.456,
+            "TI_tCO2e": -551690.44,
+            "country": "PL",
+            "powertrain": "HEV",
+            "units": 15182.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -34897.828,
+            "TI_tCO2e": -528178.63,
+            "country": "PL",
+            "powertrain": "ICE",
+            "units": 15135.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9564.3092,
+            "TI_tCO2e": 8359.2062,
+            "country": "PT",
+            "powertrain": "BEV",
+            "units": 874.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -26784.376,
+            "TI_tCO2e": -18079.454,
+            "country": "PT",
+            "powertrain": "HEV",
+            "units": 675.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -26871.49,
+            "TI_tCO2e": -144622.36,
+            "country": "PT",
+            "powertrain": "ICE",
+            "units": 5382.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 4963.1696,
+            "TI_tCO2e": 3017.6071,
+            "country": "RO",
+            "powertrain": "BEV",
+            "units": 608.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -39624.385,
+            "TI_tCO2e": -165550.68,
+            "country": "RO",
+            "powertrain": "HEV",
+            "units": 4178.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -37681.284,
+            "TI_tCO2e": -184638.29,
+            "country": "RO",
+            "powertrain": "ICE",
+            "units": 4900.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 12370.491,
+            "TI_tCO2e": 3290.5507,
+            "country": "SE",
+            "powertrain": "BEV",
+            "units": 266.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -18350.304,
+            "TI_tCO2e": -12625.009,
+            "country": "SE",
+            "powertrain": "HEV",
+            "units": 688.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17823.363,
+            "TI_tCO2e": -11050.485,
+            "country": "SE",
+            "powertrain": "ICE",
+            "units": 620.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 15028.549,
+            "TI_tCO2e": 3216.1094,
+            "country": "SI",
+            "powertrain": "BEV",
+            "units": 214.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -23466.56,
+            "TI_tCO2e": -20204.708,
+            "country": "SI",
+            "powertrain": "HEV",
+            "units": 861.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -20771.792,
+            "TI_tCO2e": -32860.975,
+            "country": "SI",
+            "powertrain": "ICE",
+            "units": 1582.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10043.334,
+            "TI_tCO2e": 1205.2001,
+            "country": "SK",
+            "powertrain": "BEV",
+            "units": 120.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -23520.253,
+            "TI_tCO2e": -73688.954,
+            "country": "SK",
+            "powertrain": "HEV",
+            "units": 3133.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -22527.539,
+            "TI_tCO2e": -109168.45,
+            "country": "SK",
+            "powertrain": "ICE",
+            "units": 4846.0
+          }
         ],
         "by_country": {
           "AT": -118817.37,
@@ -14071,6 +15778,554 @@
           4192.4932,
           -5733.1759
         ],
+        "by_cell": [
+          {
+            "TI_per_vehicle_kgCO2e": 26810.044,
+            "TI_tCO2e": 2949.1049,
+            "country": "AT",
+            "powertrain": "BEV",
+            "units": 110.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 5395.4451,
+            "TI_tCO2e": 47291.076,
+            "country": "AT",
+            "powertrain": "HEV",
+            "units": 8765.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -5756.3864,
+            "TI_tCO2e": -10896.839,
+            "country": "AT",
+            "powertrain": "ICE",
+            "units": 1893.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 20415.77,
+            "TI_tCO2e": 16638.853,
+            "country": "BE",
+            "powertrain": "BEV",
+            "units": 815.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -1513.4072,
+            "TI_tCO2e": -25432.807,
+            "country": "BE",
+            "powertrain": "HEV",
+            "units": 16805.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7437.2879,
+            "TI_tCO2e": -37945.043,
+            "country": "BE",
+            "powertrain": "ICE",
+            "units": 5102.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 36072.999,
+            "TI_tCO2e": 1010.044,
+            "country": "BG",
+            "powertrain": "BEV",
+            "units": 28.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 13963.867,
+            "TI_tCO2e": 52825.309,
+            "country": "BG",
+            "powertrain": "HEV",
+            "units": 3783.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 4382.3401,
+            "TI_tCO2e": 5039.6911,
+            "country": "BG",
+            "powertrain": "ICE",
+            "units": 1150.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3743.0539,
+            "TI_tCO2e": -22.458323,
+            "country": "CY",
+            "powertrain": "HEV",
+            "units": 6.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -22573.199,
+            "TI_tCO2e": -22.573199,
+            "country": "CY",
+            "powertrain": "ICE",
+            "units": 1.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17930.811,
+            "TI_tCO2e": 3281.3383,
+            "country": "CZ",
+            "powertrain": "BEV",
+            "units": 183.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 4563.1725,
+            "TI_tCO2e": 51732.686,
+            "country": "CZ",
+            "powertrain": "HEV",
+            "units": 11337.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3185.1264,
+            "TI_tCO2e": -22002.853,
+            "country": "CZ",
+            "powertrain": "ICE",
+            "units": 6908.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 15493.83,
+            "TI_tCO2e": 25487.351,
+            "country": "DE",
+            "powertrain": "BEV",
+            "units": 1645.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -265.56621,
+            "TI_tCO2e": -16553.539,
+            "country": "DE",
+            "powertrain": "HEV",
+            "units": 62333.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7227.1038,
+            "TI_tCO2e": -211493.96,
+            "country": "DE",
+            "powertrain": "ICE",
+            "units": 29264.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 19604.602,
+            "TI_tCO2e": 36092.072,
+            "country": "DK",
+            "powertrain": "BEV",
+            "units": 1841.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -983.98436,
+            "TI_tCO2e": -7661.3022,
+            "country": "DK",
+            "powertrain": "HEV",
+            "units": 7786.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3256.3228,
+            "TI_tCO2e": -9983.8857,
+            "country": "DK",
+            "powertrain": "ICE",
+            "units": 3066.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 20670.419,
+            "TI_tCO2e": 1674.304,
+            "country": "EE",
+            "powertrain": "BEV",
+            "units": 81.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 2251.6554,
+            "TI_tCO2e": 7858.2775,
+            "country": "EE",
+            "powertrain": "HEV",
+            "units": 3490.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -14772.81,
+            "TI_tCO2e": -10400.058,
+            "country": "EE",
+            "powertrain": "ICE",
+            "units": 704.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 29692.206,
+            "TI_tCO2e": 16004.099,
+            "country": "ES",
+            "powertrain": "BEV",
+            "units": 539.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 306.15371,
+            "TI_tCO2e": 25130.015,
+            "country": "ES",
+            "powertrain": "HEV",
+            "units": 82083.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12012.314,
+            "TI_tCO2e": -176124.54,
+            "country": "ES",
+            "powertrain": "ICE",
+            "units": 14662.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 11956.164,
+            "TI_tCO2e": 3383.5944,
+            "country": "FI",
+            "powertrain": "BEV",
+            "units": 283.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17817.293,
+            "TI_tCO2e": -191250.83,
+            "country": "FI",
+            "powertrain": "HEV",
+            "units": 10734.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -31526.444,
+            "TI_tCO2e": -9804.7239,
+            "country": "FI",
+            "powertrain": "ICE",
+            "units": 311.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 22974.297,
+            "TI_tCO2e": 50888.068,
+            "country": "FR",
+            "powertrain": "BEV",
+            "units": 2215.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -167.05459,
+            "TI_tCO2e": -18235.345,
+            "country": "FR",
+            "powertrain": "HEV",
+            "units": 109158.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3499.194,
+            "TI_tCO2e": -67125.038,
+            "country": "FR",
+            "powertrain": "ICE",
+            "units": 19183.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 11100.333,
+            "TI_tCO2e": 577.21734,
+            "country": "GR",
+            "powertrain": "BEV",
+            "units": 52.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8436.7391,
+            "TI_tCO2e": -150384.87,
+            "country": "GR",
+            "powertrain": "HEV",
+            "units": 17825.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -13479.876,
+            "TI_tCO2e": -70648.03,
+            "country": "GR",
+            "powertrain": "ICE",
+            "units": 5241.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 46077.92,
+            "TI_tCO2e": 368.62336,
+            "country": "HR",
+            "powertrain": "BEV",
+            "units": 8.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 18206.894,
+            "TI_tCO2e": 44497.648,
+            "country": "HR",
+            "powertrain": "HEV",
+            "units": 2444.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 11499.7,
+            "TI_tCO2e": 19261.998,
+            "country": "HR",
+            "powertrain": "ICE",
+            "units": 1675.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 34266.444,
+            "TI_tCO2e": 2364.3846,
+            "country": "HU",
+            "powertrain": "BEV",
+            "units": 69.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 2585.804,
+            "TI_tCO2e": 28278.352,
+            "country": "HU",
+            "powertrain": "HEV",
+            "units": 10936.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -5943.1279,
+            "TI_tCO2e": -18120.597,
+            "country": "HU",
+            "powertrain": "ICE",
+            "units": 3049.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 23835.055,
+            "TI_tCO2e": 9391.0118,
+            "country": "IE",
+            "powertrain": "BEV",
+            "units": 394.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -2931.6841,
+            "TI_tCO2e": -43151.459,
+            "country": "IE",
+            "powertrain": "HEV",
+            "units": 14719.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -5749.0465,
+            "TI_tCO2e": -5961.7613,
+            "country": "IE",
+            "powertrain": "ICE",
+            "units": 1037.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 15873.863,
+            "TI_tCO2e": 5365.3657,
+            "country": "IT",
+            "powertrain": "BEV",
+            "units": 338.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -2280.3582,
+            "TI_tCO2e": -218902.98,
+            "country": "IT",
+            "powertrain": "HEV",
+            "units": 95995.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6064.5267,
+            "TI_tCO2e": -144942.19,
+            "country": "IT",
+            "powertrain": "ICE",
+            "units": 23900.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 24823.838,
+            "TI_tCO2e": 868.83433,
+            "country": "LT",
+            "powertrain": "BEV",
+            "units": 35.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -5047.1677,
+            "TI_tCO2e": -24948.15,
+            "country": "LT",
+            "powertrain": "HEV",
+            "units": 4943.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -24081.907,
+            "TI_tCO2e": -18470.823,
+            "country": "LT",
+            "powertrain": "ICE",
+            "units": 767.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 42633.691,
+            "TI_tCO2e": 895.30751,
+            "country": "LU",
+            "powertrain": "BEV",
+            "units": 21.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 26440.376,
+            "TI_tCO2e": 21205.181,
+            "country": "LU",
+            "powertrain": "HEV",
+            "units": 802.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17154.575,
+            "TI_tCO2e": 6192.8015,
+            "country": "LU",
+            "powertrain": "ICE",
+            "units": 361.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 28501.19,
+            "TI_tCO2e": 1054.544,
+            "country": "LV",
+            "powertrain": "BEV",
+            "units": 37.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7198.9842,
+            "TI_tCO2e": -16478.475,
+            "country": "LV",
+            "powertrain": "HEV",
+            "units": 2289.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -34132.585,
+            "TI_tCO2e": -14540.481,
+            "country": "LV",
+            "powertrain": "ICE",
+            "units": 426.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9576.5653,
+            "TI_tCO2e": 6167.308,
+            "country": "MT",
+            "powertrain": "HEV",
+            "units": 644.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 7407.8959,
+            "TI_tCO2e": 2970.5663,
+            "country": "MT",
+            "powertrain": "ICE",
+            "units": 401.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 14001.973,
+            "TI_tCO2e": 16088.266,
+            "country": "NL",
+            "powertrain": "BEV",
+            "units": 1149.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7661.13,
+            "TI_tCO2e": -147698.93,
+            "country": "NL",
+            "powertrain": "HEV",
+            "units": 19279.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9136.0775,
+            "TI_tCO2e": -74934.108,
+            "country": "NL",
+            "powertrain": "ICE",
+            "units": 8202.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 3092.7334,
+            "TI_tCO2e": 247066.1,
+            "country": "PL",
+            "powertrain": "HEV",
+            "units": 79886.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6784.1122,
+            "TI_tCO2e": -149019.81,
+            "country": "PL",
+            "powertrain": "ICE",
+            "units": 21966.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 26864.414,
+            "TI_tCO2e": 8247.3752,
+            "country": "PT",
+            "powertrain": "BEV",
+            "units": 307.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -2450.6936,
+            "TI_tCO2e": -20254.983,
+            "country": "PT",
+            "powertrain": "HEV",
+            "units": 8265.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11164.559,
+            "TI_tCO2e": -17238.079,
+            "country": "PT",
+            "powertrain": "ICE",
+            "units": 1544.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 23517.084,
+            "TI_tCO2e": 1787.2984,
+            "country": "RO",
+            "powertrain": "BEV",
+            "units": 76.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8782.9499,
+            "TI_tCO2e": -96489.488,
+            "country": "RO",
+            "powertrain": "HEV",
+            "units": 10986.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -20090.258,
+            "TI_tCO2e": -23123.887,
+            "country": "RO",
+            "powertrain": "ICE",
+            "units": 1151.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 22751.033,
+            "TI_tCO2e": 12945.338,
+            "country": "SE",
+            "powertrain": "BEV",
+            "units": 569.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -4783.3273,
+            "TI_tCO2e": -82096.246,
+            "country": "SE",
+            "powertrain": "HEV",
+            "units": 17163.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17651.959,
+            "TI_tCO2e": -16310.41,
+            "country": "SE",
+            "powertrain": "ICE",
+            "units": 924.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 40010.43,
+            "TI_tCO2e": 1120.292,
+            "country": "SI",
+            "powertrain": "BEV",
+            "units": 28.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 13384.868,
+            "TI_tCO2e": 28268.841,
+            "country": "SI",
+            "powertrain": "HEV",
+            "units": 2112.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 3866.1479,
+            "TI_tCO2e": 4449.9363,
+            "country": "SI",
+            "powertrain": "ICE",
+            "units": 1151.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 24673.296,
+            "TI_tCO2e": 1258.3381,
+            "country": "SK",
+            "powertrain": "BEV",
+            "units": 51.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -2442.1339,
+            "TI_tCO2e": -15392.77,
+            "country": "SK",
+            "powertrain": "HEV",
+            "units": 6303.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -13335.483,
+            "TI_tCO2e": -35699.087,
+            "country": "SK",
+            "powertrain": "ICE",
+            "units": 2677.0
+          }
+        ],
         "by_country": {
           "AT": 39343.341,
           "BE": -46738.998,
@@ -14144,6 +16399,554 @@
           -136728.68,
           -14600.31
         ],
+        "by_cell": [
+          {
+            "TI_per_vehicle_kgCO2e": 22788.675,
+            "TI_tCO2e": 2506.7542,
+            "country": "AT",
+            "powertrain": "BEV",
+            "units": 110.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 2337.3183,
+            "TI_tCO2e": 20486.595,
+            "country": "AT",
+            "powertrain": "HEV",
+            "units": 8765.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8814.5132,
+            "TI_tCO2e": -16685.873,
+            "country": "AT",
+            "powertrain": "ICE",
+            "units": 1893.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17475.347,
+            "TI_tCO2e": 14242.408,
+            "country": "BE",
+            "powertrain": "BEV",
+            "units": 815.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3551.0947,
+            "TI_tCO2e": -59676.146,
+            "country": "BE",
+            "powertrain": "HEV",
+            "units": 16805.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9474.9754,
+            "TI_tCO2e": -48341.325,
+            "country": "BE",
+            "powertrain": "ICE",
+            "units": 5102.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 15956.922,
+            "TI_tCO2e": 446.79382,
+            "country": "BG",
+            "powertrain": "BEV",
+            "units": 28.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3105.3634,
+            "TI_tCO2e": -11747.59,
+            "country": "BG",
+            "powertrain": "HEV",
+            "units": 3783.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12686.89,
+            "TI_tCO2e": -14589.924,
+            "country": "BG",
+            "powertrain": "ICE",
+            "units": 1150.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10742.29,
+            "TI_tCO2e": -64.453741,
+            "country": "CY",
+            "powertrain": "HEV",
+            "units": 6.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -29572.435,
+            "TI_tCO2e": -29.572435,
+            "country": "CY",
+            "powertrain": "ICE",
+            "units": 1.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 8422.4815,
+            "TI_tCO2e": 1541.3141,
+            "country": "CZ",
+            "powertrain": "BEV",
+            "units": 183.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -2312.4741,
+            "TI_tCO2e": -26216.519,
+            "country": "CZ",
+            "powertrain": "HEV",
+            "units": 11337.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10060.773,
+            "TI_tCO2e": -69499.82,
+            "country": "CZ",
+            "powertrain": "ICE",
+            "units": 6908.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10837.416,
+            "TI_tCO2e": 17827.549,
+            "country": "DE",
+            "powertrain": "BEV",
+            "units": 1645.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -2677.9008,
+            "TI_tCO2e": -166921.59,
+            "country": "DE",
+            "powertrain": "HEV",
+            "units": 62333.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9639.4383,
+            "TI_tCO2e": -282088.52,
+            "country": "DE",
+            "powertrain": "ICE",
+            "units": 29264.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17286.609,
+            "TI_tCO2e": 31824.647,
+            "country": "DK",
+            "powertrain": "BEV",
+            "units": 1841.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -1597.6762,
+            "TI_tCO2e": -12439.507,
+            "country": "DK",
+            "powertrain": "HEV",
+            "units": 7786.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3870.0147,
+            "TI_tCO2e": -11865.465,
+            "country": "DK",
+            "powertrain": "ICE",
+            "units": 3066.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 14551.613,
+            "TI_tCO2e": 1178.6806,
+            "country": "EE",
+            "powertrain": "BEV",
+            "units": 81.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -150.54013,
+            "TI_tCO2e": -525.38506,
+            "country": "EE",
+            "powertrain": "HEV",
+            "units": 3490.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17175.006,
+            "TI_tCO2e": -12091.204,
+            "country": "EE",
+            "powertrain": "ICE",
+            "units": 704.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 20676.096,
+            "TI_tCO2e": 11144.416,
+            "country": "ES",
+            "powertrain": "BEV",
+            "units": 539.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -5288.0969,
+            "TI_tCO2e": -434062.86,
+            "country": "ES",
+            "powertrain": "HEV",
+            "units": 82083.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17606.564,
+            "TI_tCO2e": -258147.45,
+            "country": "ES",
+            "powertrain": "ICE",
+            "units": 14662.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17380.488,
+            "TI_tCO2e": 4918.6781,
+            "country": "FI",
+            "powertrain": "BEV",
+            "units": 283.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10736.909,
+            "TI_tCO2e": -115249.98,
+            "country": "FI",
+            "powertrain": "HEV",
+            "units": 10734.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -24446.059,
+            "TI_tCO2e": -7602.7243,
+            "country": "FI",
+            "powertrain": "ICE",
+            "units": 311.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 18820.196,
+            "TI_tCO2e": 41686.735,
+            "country": "FR",
+            "powertrain": "BEV",
+            "units": 2215.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3999.4171,
+            "TI_tCO2e": -436568.37,
+            "country": "FR",
+            "powertrain": "HEV",
+            "units": 109158.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7331.5565,
+            "TI_tCO2e": -140641.25,
+            "country": "FR",
+            "powertrain": "ICE",
+            "units": 19183.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 2710.5465,
+            "TI_tCO2e": 140.94842,
+            "country": "GR",
+            "powertrain": "BEV",
+            "units": 52.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11511.514,
+            "TI_tCO2e": -205192.74,
+            "country": "GR",
+            "powertrain": "HEV",
+            "units": 17825.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -16554.651,
+            "TI_tCO2e": -86762.926,
+            "country": "GR",
+            "powertrain": "ICE",
+            "units": 5241.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 29088.051,
+            "TI_tCO2e": 232.70441,
+            "country": "HR",
+            "powertrain": "BEV",
+            "units": 8.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 3627.7141,
+            "TI_tCO2e": 8866.1332,
+            "country": "HR",
+            "powertrain": "HEV",
+            "units": 2444.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -3079.4796,
+            "TI_tCO2e": -5158.1283,
+            "country": "HR",
+            "powertrain": "ICE",
+            "units": 1675.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17698.252,
+            "TI_tCO2e": 1221.1794,
+            "country": "HU",
+            "powertrain": "BEV",
+            "units": 69.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10265.794,
+            "TI_tCO2e": -112266.72,
+            "country": "HU",
+            "powertrain": "HEV",
+            "units": 10936.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -18794.725,
+            "TI_tCO2e": -57305.118,
+            "country": "HU",
+            "powertrain": "ICE",
+            "units": 3049.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17940.816,
+            "TI_tCO2e": 7068.6815,
+            "country": "IE",
+            "powertrain": "BEV",
+            "units": 394.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -5381.5171,
+            "TI_tCO2e": -79210.55,
+            "country": "IE",
+            "powertrain": "HEV",
+            "units": 14719.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8198.8795,
+            "TI_tCO2e": -8502.238,
+            "country": "IE",
+            "powertrain": "ICE",
+            "units": 1037.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9072.7142,
+            "TI_tCO2e": 3066.5774,
+            "country": "IT",
+            "powertrain": "BEV",
+            "units": 338.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6756.3491,
+            "TI_tCO2e": -648575.73,
+            "country": "IT",
+            "powertrain": "HEV",
+            "units": 95995.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10540.518,
+            "TI_tCO2e": -251918.37,
+            "country": "IT",
+            "powertrain": "ICE",
+            "units": 23900.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 19839.543,
+            "TI_tCO2e": 694.38402,
+            "country": "LT",
+            "powertrain": "BEV",
+            "units": 35.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7822.6839,
+            "TI_tCO2e": -38667.527,
+            "country": "LT",
+            "powertrain": "HEV",
+            "units": 4943.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -26857.423,
+            "TI_tCO2e": -20599.644,
+            "country": "LT",
+            "powertrain": "ICE",
+            "units": 767.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 41670.923,
+            "TI_tCO2e": 875.08938,
+            "country": "LU",
+            "powertrain": "BEV",
+            "units": 21.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 26406.811,
+            "TI_tCO2e": 21178.262,
+            "country": "LU",
+            "powertrain": "HEV",
+            "units": 802.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 17121.01,
+            "TI_tCO2e": 6180.6845,
+            "country": "LU",
+            "powertrain": "ICE",
+            "units": 361.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 22655.071,
+            "TI_tCO2e": 838.23762,
+            "country": "LV",
+            "powertrain": "BEV",
+            "units": 37.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10483.925,
+            "TI_tCO2e": -23997.704,
+            "country": "LV",
+            "powertrain": "HEV",
+            "units": 2289.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -37417.526,
+            "TI_tCO2e": -15939.866,
+            "country": "LV",
+            "powertrain": "ICE",
+            "units": 426.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 6.6789897,
+            "TI_tCO2e": 4.3012694,
+            "country": "MT",
+            "powertrain": "HEV",
+            "units": 644.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -2161.9904,
+            "TI_tCO2e": -866.95815,
+            "country": "MT",
+            "powertrain": "ICE",
+            "units": 401.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9304.2908,
+            "TI_tCO2e": 10690.63,
+            "country": "NL",
+            "powertrain": "BEV",
+            "units": 1149.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8538.4058,
+            "TI_tCO2e": -164611.92,
+            "country": "NL",
+            "powertrain": "HEV",
+            "units": 19279.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10013.353,
+            "TI_tCO2e": -82129.523,
+            "country": "NL",
+            "powertrain": "ICE",
+            "units": 8202.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -14683.385,
+            "TI_tCO2e": -1172996.9,
+            "country": "PL",
+            "powertrain": "HEV",
+            "units": 79886.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -24560.231,
+            "TI_tCO2e": -539490.03,
+            "country": "PL",
+            "powertrain": "ICE",
+            "units": 21966.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 18603.494,
+            "TI_tCO2e": 5711.2726,
+            "country": "PT",
+            "powertrain": "BEV",
+            "units": 307.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7829.4964,
+            "TI_tCO2e": -64710.788,
+            "country": "PT",
+            "powertrain": "HEV",
+            "units": 8265.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -16543.361,
+            "TI_tCO2e": -25542.95,
+            "country": "PT",
+            "powertrain": "ICE",
+            "units": 1544.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 7181.0059,
+            "TI_tCO2e": 545.75645,
+            "country": "RO",
+            "powertrain": "BEV",
+            "units": 76.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -19655.496,
+            "TI_tCO2e": -215935.28,
+            "country": "RO",
+            "powertrain": "HEV",
+            "units": 10986.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -30962.804,
+            "TI_tCO2e": -35638.188,
+            "country": "RO",
+            "powertrain": "ICE",
+            "units": 1151.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 21681.056,
+            "TI_tCO2e": 12336.521,
+            "country": "SE",
+            "powertrain": "BEV",
+            "units": 569.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -5720.311,
+            "TI_tCO2e": -98177.697,
+            "country": "SE",
+            "powertrain": "HEV",
+            "units": 17163.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -18588.943,
+            "TI_tCO2e": -17176.183,
+            "country": "SE",
+            "powertrain": "ICE",
+            "units": 924.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 26396.467,
+            "TI_tCO2e": 739.10109,
+            "country": "SI",
+            "powertrain": "BEV",
+            "units": 28.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 2816.6881,
+            "TI_tCO2e": 5948.8453,
+            "country": "SI",
+            "powertrain": "HEV",
+            "units": 2112.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -6702.0318,
+            "TI_tCO2e": -7714.0386,
+            "country": "SI",
+            "powertrain": "ICE",
+            "units": 1151.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 18286.184,
+            "TI_tCO2e": 932.59539,
+            "country": "SK",
+            "powertrain": "BEV",
+            "units": 51.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -7381.7257,
+            "TI_tCO2e": -46527.017,
+            "country": "SK",
+            "powertrain": "HEV",
+            "units": 6303.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -18275.075,
+            "TI_tCO2e": -48922.375,
+            "country": "SK",
+            "powertrain": "ICE",
+            "units": 2677.0
+          }
+        ],
         "by_country": {
           "AT": 6307.476,
           "BE": -93775.063,
@@ -14216,6 +17019,554 @@
           -236762.45,
           -197778.72,
           -19801.224
+        ],
+        "by_cell": [
+          {
+            "TI_per_vehicle_kgCO2e": 13396.409,
+            "TI_tCO2e": 1473.605,
+            "country": "AT",
+            "powertrain": "BEV",
+            "units": 110.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -8521.4807,
+            "TI_tCO2e": -74690.779,
+            "country": "AT",
+            "powertrain": "HEV",
+            "units": 8765.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -19673.312,
+            "TI_tCO2e": -37241.58,
+            "country": "AT",
+            "powertrain": "ICE",
+            "units": 1893.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10573.293,
+            "TI_tCO2e": 8617.2334,
+            "country": "BE",
+            "powertrain": "BEV",
+            "units": 815.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11975.636,
+            "TI_tCO2e": -201250.57,
+            "country": "BE",
+            "powertrain": "HEV",
+            "units": 16805.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17899.517,
+            "TI_tCO2e": -91323.336,
+            "country": "BE",
+            "powertrain": "ICE",
+            "units": 5102.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 8845.0913,
+            "TI_tCO2e": 247.66256,
+            "country": "BG",
+            "powertrain": "BEV",
+            "units": 28.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -14743.904,
+            "TI_tCO2e": -55776.188,
+            "country": "BG",
+            "powertrain": "HEV",
+            "units": 3783.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -24325.431,
+            "TI_tCO2e": -27974.246,
+            "country": "BG",
+            "powertrain": "ICE",
+            "units": 1150.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -24881.903,
+            "TI_tCO2e": -149.29142,
+            "country": "CY",
+            "powertrain": "HEV",
+            "units": 6.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -43712.047,
+            "TI_tCO2e": -43.712047,
+            "country": "CY",
+            "powertrain": "ICE",
+            "units": 1.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 4987.2782,
+            "TI_tCO2e": 912.67192,
+            "country": "CZ",
+            "powertrain": "BEV",
+            "units": 183.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11434.936,
+            "TI_tCO2e": -129637.87,
+            "country": "CZ",
+            "powertrain": "HEV",
+            "units": 11337.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -19183.235,
+            "TI_tCO2e": -132517.79,
+            "country": "CZ",
+            "powertrain": "ICE",
+            "units": 6908.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 6455.3327,
+            "TI_tCO2e": 10619.022,
+            "country": "DE",
+            "powertrain": "BEV",
+            "units": 1645.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11064.52,
+            "TI_tCO2e": -689684.73,
+            "country": "DE",
+            "powertrain": "HEV",
+            "units": 62333.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -18026.058,
+            "TI_tCO2e": -527514.55,
+            "country": "DE",
+            "powertrain": "ICE",
+            "units": 29264.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10173.765,
+            "TI_tCO2e": 18729.901,
+            "country": "DK",
+            "powertrain": "BEV",
+            "units": 1841.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -10283.391,
+            "TI_tCO2e": -80066.479,
+            "country": "DK",
+            "powertrain": "HEV",
+            "units": 7786.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12555.729,
+            "TI_tCO2e": -38495.865,
+            "country": "DK",
+            "powertrain": "ICE",
+            "units": 3066.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 7423.1463,
+            "TI_tCO2e": 601.27485,
+            "country": "EE",
+            "powertrain": "BEV",
+            "units": 81.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -12250.16,
+            "TI_tCO2e": -42753.059,
+            "country": "EE",
+            "powertrain": "HEV",
+            "units": 3490.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -29274.626,
+            "TI_tCO2e": -20609.336,
+            "country": "EE",
+            "powertrain": "ICE",
+            "units": 704.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10666.103,
+            "TI_tCO2e": 5749.0293,
+            "country": "ES",
+            "powertrain": "BEV",
+            "units": 539.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -18820.039,
+            "TI_tCO2e": -1544805.3,
+            "country": "ES",
+            "powertrain": "HEV",
+            "units": 82083.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -31138.507,
+            "TI_tCO2e": -456552.79,
+            "country": "ES",
+            "powertrain": "ICE",
+            "units": 14662.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 8380.6745,
+            "TI_tCO2e": 2371.7309,
+            "country": "FI",
+            "powertrain": "BEV",
+            "units": 283.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -21210.519,
+            "TI_tCO2e": -227673.71,
+            "country": "FI",
+            "powertrain": "HEV",
+            "units": 10734.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -34919.67,
+            "TI_tCO2e": -10860.017,
+            "country": "FI",
+            "powertrain": "ICE",
+            "units": 311.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10476.882,
+            "TI_tCO2e": 23206.294,
+            "country": "FR",
+            "powertrain": "BEV",
+            "units": 2215.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -13030.031,
+            "TI_tCO2e": -1422332.1,
+            "country": "FR",
+            "powertrain": "HEV",
+            "units": 109158.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -16362.17,
+            "TI_tCO2e": -313875.51,
+            "country": "FR",
+            "powertrain": "ICE",
+            "units": 19183.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 1736.4711,
+            "TI_tCO2e": 90.296496,
+            "country": "GR",
+            "powertrain": "BEV",
+            "units": 52.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -18374.837,
+            "TI_tCO2e": -327531.47,
+            "country": "GR",
+            "powertrain": "HEV",
+            "units": 17825.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -23417.974,
+            "TI_tCO2e": -122733.6,
+            "country": "GR",
+            "powertrain": "ICE",
+            "units": 5241.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 15252.406,
+            "TI_tCO2e": 122.01925,
+            "country": "HR",
+            "powertrain": "BEV",
+            "units": 8.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -14252.75,
+            "TI_tCO2e": -34833.721,
+            "country": "HR",
+            "powertrain": "HEV",
+            "units": 2444.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -20959.944,
+            "TI_tCO2e": -35107.906,
+            "country": "HR",
+            "powertrain": "ICE",
+            "units": 1675.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 8942.3509,
+            "TI_tCO2e": 617.02221,
+            "country": "HU",
+            "powertrain": "BEV",
+            "units": 69.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -23915.709,
+            "TI_tCO2e": -261542.19,
+            "country": "HU",
+            "powertrain": "HEV",
+            "units": 10936.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -32444.641,
+            "TI_tCO2e": -98923.71,
+            "country": "HU",
+            "powertrain": "ICE",
+            "units": 3049.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9934.6995,
+            "TI_tCO2e": 3914.2716,
+            "country": "IE",
+            "powertrain": "BEV",
+            "units": 394.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -18256.447,
+            "TI_tCO2e": -268716.65,
+            "country": "IE",
+            "powertrain": "HEV",
+            "units": 14719.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -21073.81,
+            "TI_tCO2e": -21853.541,
+            "country": "IE",
+            "powertrain": "ICE",
+            "units": 1037.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 5151.6446,
+            "TI_tCO2e": 1741.2559,
+            "country": "IT",
+            "powertrain": "BEV",
+            "units": 338.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -15932.794,
+            "TI_tCO2e": -1529468.5,
+            "country": "IT",
+            "powertrain": "HEV",
+            "units": 95995.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -19716.962,
+            "TI_tCO2e": -471235.4,
+            "country": "IT",
+            "powertrain": "ICE",
+            "units": 23900.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9786.6458,
+            "TI_tCO2e": 342.5326,
+            "country": "LT",
+            "powertrain": "BEV",
+            "units": 35.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -20177.4,
+            "TI_tCO2e": -99736.886,
+            "country": "LT",
+            "powertrain": "HEV",
+            "units": 4943.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -39212.139,
+            "TI_tCO2e": -30075.711,
+            "country": "LT",
+            "powertrain": "ICE",
+            "units": 767.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 26753.431,
+            "TI_tCO2e": 561.82205,
+            "country": "LU",
+            "powertrain": "BEV",
+            "units": 21.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 10445.524,
+            "TI_tCO2e": 8377.3101,
+            "country": "LU",
+            "powertrain": "HEV",
+            "units": 802.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 1159.723,
+            "TI_tCO2e": 418.66,
+            "country": "LU",
+            "powertrain": "ICE",
+            "units": 361.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 11222.263,
+            "TI_tCO2e": 415.22375,
+            "country": "LV",
+            "powertrain": "BEV",
+            "units": 37.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -25171.629,
+            "TI_tCO2e": -57617.859,
+            "country": "LV",
+            "powertrain": "HEV",
+            "units": 2289.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -52105.23,
+            "TI_tCO2e": -22196.828,
+            "country": "LV",
+            "powertrain": "ICE",
+            "units": 426.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -9533.3103,
+            "TI_tCO2e": -6139.4518,
+            "country": "MT",
+            "powertrain": "HEV",
+            "units": 644.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -11701.98,
+            "TI_tCO2e": -4692.4938,
+            "country": "MT",
+            "powertrain": "ICE",
+            "units": 401.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 5428.5691,
+            "TI_tCO2e": 6237.4259,
+            "country": "NL",
+            "powertrain": "BEV",
+            "units": 1149.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -16210.759,
+            "TI_tCO2e": -312527.22,
+            "country": "NL",
+            "powertrain": "HEV",
+            "units": 19279.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17685.706,
+            "TI_tCO2e": -145058.16,
+            "country": "NL",
+            "powertrain": "ICE",
+            "units": 8202.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -26856.955,
+            "TI_tCO2e": -2145494.7,
+            "country": "PL",
+            "powertrain": "HEV",
+            "units": 79886.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -36733.8,
+            "TI_tCO2e": -806894.66,
+            "country": "PL",
+            "powertrain": "ICE",
+            "units": 21966.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9545.233,
+            "TI_tCO2e": 2930.3865,
+            "country": "PT",
+            "powertrain": "BEV",
+            "units": 307.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -19245.182,
+            "TI_tCO2e": -159061.43,
+            "country": "PT",
+            "powertrain": "HEV",
+            "units": 8265.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -27959.047,
+            "TI_tCO2e": -43168.769,
+            "country": "PT",
+            "powertrain": "ICE",
+            "units": 1544.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 4039.9699,
+            "TI_tCO2e": 307.03771,
+            "country": "RO",
+            "powertrain": "BEV",
+            "units": 76.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -30908.581,
+            "TI_tCO2e": -339561.67,
+            "country": "RO",
+            "powertrain": "HEV",
+            "units": 10986.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -42215.889,
+            "TI_tCO2e": -48590.489,
+            "country": "RO",
+            "powertrain": "ICE",
+            "units": 1151.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 12379.214,
+            "TI_tCO2e": 7043.7726,
+            "country": "SE",
+            "powertrain": "BEV",
+            "units": 569.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -15551.17,
+            "TI_tCO2e": -266904.74,
+            "country": "SE",
+            "powertrain": "HEV",
+            "units": 17163.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -28419.802,
+            "TI_tCO2e": -26259.897,
+            "country": "SE",
+            "powertrain": "ICE",
+            "units": 924.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 14521.991,
+            "TI_tCO2e": 406.61574,
+            "country": "SI",
+            "powertrain": "BEV",
+            "units": 28.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -14142.15,
+            "TI_tCO2e": -29868.221,
+            "country": "SI",
+            "powertrain": "HEV",
+            "units": 2112.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -23660.87,
+            "TI_tCO2e": -27233.662,
+            "country": "SI",
+            "powertrain": "ICE",
+            "units": 1151.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": 9979.2956,
+            "TI_tCO2e": 508.94408,
+            "country": "SK",
+            "powertrain": "BEV",
+            "units": 51.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -17441.999,
+            "TI_tCO2e": -109936.92,
+            "country": "SK",
+            "powertrain": "HEV",
+            "units": 6303.0
+          },
+          {
+            "TI_per_vehicle_kgCO2e": -28335.347,
+            "TI_tCO2e": -75853.725,
+            "country": "SK",
+            "powertrain": "ICE",
+            "units": 2677.0
+          }
         ],
         "by_country": {
           "AT": -110458.75,

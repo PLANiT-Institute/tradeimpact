@@ -1,0 +1,815 @@
+[
+  {
+    "baseline_cohort": "toyota-eu27-passenger-cars-2024",
+    "by_destination": {
+      "AT": {
+        "destination_mix": 21.038124,
+        "powertrain_mix": -15.027453,
+        "product_intensity": 1.759703,
+        "share_baseline": 0.013832421,
+        "share_compared": 0.026535352,
+        "ti_per_vehicle_average": 1656.163
+      },
+      "BE": {
+        "destination_mix": 7.0810297,
+        "powertrain_mix": 57.854885,
+        "product_intensity": -71.764937,
+        "share_baseline": 0.02918836,
+        "share_compared": 0.02653292,
+        "ti_per_vehicle_average": -2666.6124
+      },
+      "BG": {
+        "destination_mix": -10.409158,
+        "powertrain_mix": 7.8147648,
+        "product_intensity": -21.390779,
+        "share_baseline": 0.0063728305,
+        "share_compared": 0.0052915071,
+        "ti_per_vehicle_average": 9626.3134
+      },
+      "CY": {
+        "destination_mix": -17.159945,
+        "powertrain_mix": 1.7648941,
+        "product_intensity": 3.2372543,
+        "share_baseline": 8.9921011e-06,
+        "share_compared": 0.0031053559,
+        "ti_per_vehicle_average": -5541.9667
+      },
+      "CZ": {
+        "destination_mix": 10.689066,
+        "powertrain_mix": -21.738788,
+        "product_intensity": -29.237663,
+        "share_baseline": 0.023672348,
+        "share_compared": 0.048581677,
+        "ti_per_vehicle_average": 429.11901
+      },
+      "DE": {
+        "destination_mix": -315.15998,
+        "powertrain_mix": 451.67976,
+        "product_intensity": -598.35991,
+        "share_baseline": 0.11977736,
+        "share_compared": 0.22316493,
+        "ti_per_vehicle_average": -3048.3351
+      },
+      "DK": {
+        "destination_mix": -17.438084,
+        "powertrain_mix": 128.45052,
+        "product_intensity": -43.644839,
+        "share_baseline": 0.016305248,
+        "share_compared": 0.011096115,
+        "ti_per_vehicle_average": 3347.598
+      },
+      "EE": {
+        "destination_mix": -2.1449133,
+        "powertrain_mix": 10.632299,
+        "product_intensity": -3.5364438,
+        "share_baseline": 0.0054916046,
+        "share_compared": 0.00167305,
+        "ti_per_vehicle_average": 561.70817
+      },
+      "ES": {
+        "destination_mix": -108.22487,
+        "powertrain_mix": -295.2578,
+        "product_intensity": -201.61209,
+        "share_baseline": 0.12496965,
+        "share_compared": 0.15131619,
+        "ti_per_vehicle_average": -4107.7454
+      },
+      "FI": {
+        "destination_mix": 119.02997,
+        "powertrain_mix": 98.338233,
+        "product_intensity": -14.873787,
+        "share_baseline": 0.014551789,
+        "share_compared": 0.0066508602,
+        "ti_per_vehicle_average": -15065.314
+      },
+      "FR": {
+        "destination_mix": 48.502366,
+        "powertrain_mix": 385.4988,
+        "product_intensity": -504.79762,
+        "share_baseline": 0.16771039,
+        "share_compared": 0.11476929,
+        "ti_per_vehicle_average": -916.15703
+      },
+      "GR": {
+        "destination_mix": 106.83484,
+        "powertrain_mix": 0.37824208,
+        "product_intensity": -118.27163,
+        "share_baseline": 0.029697056,
+        "share_compared": 0.021367864,
+        "ti_per_vehicle_average": -12826.555
+      },
+      "HR": {
+        "destination_mix": 36.156934,
+        "powertrain_mix": 6.4761849,
+        "product_intensity": -30.987731,
+        "share_baseline": 0.0053014859,
+        "share_compared": 0.008114779,
+        "ti_per_vehicle_average": 12852.175
+      },
+      "HU": {
+        "destination_mix": 4.2042004,
+        "powertrain_mix": 46.044196,
+        "product_intensity": -59.599291,
+        "share_baseline": 0.01805357,
+        "share_compared": 0.010760533,
+        "ti_per_vehicle_average": -576.46769
+      },
+      "IE": {
+        "destination_mix": -10.927022,
+        "powertrain_mix": 41.623351,
+        "product_intensity": -72.009918,
+        "share_baseline": 0.020746062,
+        "share_compared": 0.02411332,
+        "ti_per_vehicle_average": -3245.0799
+      },
+      "IT": {
+        "destination_mix": 200.07434,
+        "powertrain_mix": -29.528552,
+        "product_intensity": -528.23269,
+        "share_baseline": 0.15444961,
+        "share_compared": 0.11863578,
+        "ti_per_vehicle_average": -5586.5106
+      },
+      "LT": {
+        "destination_mix": 47.564459,
+        "powertrain_mix": 10.98186,
+        "product_intensity": -8.534304,
+        "share_baseline": 0.0073799458,
+        "share_compared": 0.0016900723,
+        "ti_per_vehicle_average": -8359.4933
+      },
+      "LU": {
+        "destination_mix": 41.147458,
+        "powertrain_mix": 15.806604,
+        "product_intensity": -2.7671262,
+        "share_baseline": 0.0015209497,
+        "share_compared": 0.0030834701,
+        "ti_per_vehicle_average": 26334.028
+      },
+      "LV": {
+        "destination_mix": 22.212082,
+        "powertrain_mix": 4.2246657,
+        "product_intensity": 1.5359724,
+        "share_baseline": 0.0035351803,
+        "share_compared": 0.0015733479,
+        "ti_per_vehicle_average": -11322.11
+      },
+      "MT": {
+        "destination_mix": 3.5409208,
+        "powertrain_mix": 0.95248567,
+        "product_intensity": -2.8458262,
+        "share_baseline": 0.0013423922,
+        "share_compared": 0.001794638,
+        "ti_per_vehicle_average": 7829.6389
+      },
+      "NL": {
+        "destination_mix": -47.69758,
+        "powertrain_mix": 187.95902,
+        "product_intensity": -62.686149,
+        "share_baseline": 0.036777693,
+        "share_compared": 0.044909721,
+        "ti_per_vehicle_average": -5865.3982
+      },
+      "PL": {
+        "destination_mix": 166.3266,
+        "powertrain_mix": -84.927349,
+        "product_intensity": -556.10641,
+        "share_baseline": 0.13083764,
+        "share_compared": 0.074847103,
+        "ti_per_vehicle_average": -2970.6199
+      },
+      "PT": {
+        "destination_mix": -21.907557,
+        "powertrain_mix": 6.3166071,
+        "product_intensity": -43.887482,
+        "share_baseline": 0.012994871,
+        "share_compared": 0.01685452,
+        "ti_per_vehicle_average": -5676.0485
+      },
+      "RO": {
+        "destination_mix": -104.27918,
+        "powertrain_mix": 3.602277,
+        "product_intensity": -86.192572,
+        "share_baseline": 0.015688647,
+        "share_compared": 0.023554015,
+        "ti_per_vehicle_average": -13258.017
+      },
+      "SE": {
+        "destination_mix": 93.955371,
+        "powertrain_mix": 26.142145,
+        "product_intensity": 6.2350006,
+        "share_baseline": 0.023965234,
+        "share_compared": 0.0038275883,
+        "ti_per_vehicle_average": -4665.6582
+      },
+      "SI": {
+        "destination_mix": 19.02768,
+        "powertrain_mix": 7.6990325,
+        "product_intensity": -16.602459,
+        "share_baseline": 0.0042275721,
+        "share_compared": 0.0064611831,
+        "ti_per_vehicle_average": 8518.7978
+      },
+      "SK": {
+        "destination_mix": -59.7886,
+        "powertrain_mix": -19.055591,
+        "product_intensity": -10.91698,
+        "share_baseline": 0.011601095,
+        "share_compared": 0.019694814,
+        "ti_per_vehicle_average": -7387.0365
+      }
+    },
+    "by_powertrain": {
+      "BEV": {
+        "hyundai-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": 19176.758,
+          "unit_share": 0.1010104
+        },
+        "toyota-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": 20207.929,
+          "unit_share": 0.013968587
+        }
+      },
+      "HEV": {
+        "hyundai-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -6308.3763,
+          "unit_share": 0.41620524
+        },
+        "toyota-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -842.45911,
+          "unit_share": 0.78471625
+        }
+      },
+      "ICE": {
+        "hyundai-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -6066.6228,
+          "unit_share": 0.48278436
+        },
+        "toyota-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -7063.0554,
+          "unit_share": 0.20131516
+        }
+      }
+    },
+    "compared_cohort": "hyundai-eu27-passenger-cars-2024",
+    "gap": -1816.6827,
+    "per_vehicle": {
+      "hyundai-eu27-passenger-cars-2024": -3617.398,
+      "toyota-eu27-passenger-cars-2024": -1800.7153
+    },
+    "reconciliation_relative_error": {
+      "hyundai-eu27-passenger-cars-2024": 0.0,
+      "toyota-eu27-passenger-cars-2024": 3.3219128e-16
+    },
+    "residual": -7.5458364,
+    "scenario": "S1",
+    "terms": {
+      "destination_mix": 232.24854,
+      "powertrain_mix": 1034.7053,
+      "product_intensity": -3076.0907
+    },
+    "unit": "kgCO2e per covered vehicle"
+  },
+  {
+    "baseline_cohort": "toyota-eu27-passenger-cars-2024",
+    "by_destination": {
+      "AT": {
+        "destination_mix": -18.285146,
+        "powertrain_mix": -16.170346,
+        "product_intensity": 1.8707211,
+        "share_baseline": 0.013832421,
+        "share_compared": 0.026535352,
+        "ti_per_vehicle_average": -1439.4431
+      },
+      "BE": {
+        "destination_mix": 12.701773,
+        "powertrain_mix": 55.299931,
+        "product_intensity": -71.867237,
+        "share_baseline": 0.02918836,
+        "share_compared": 0.02653292,
+        "ti_per_vehicle_average": -4783.3023
+      },
+      "BG": {
+        "destination_mix": 8.209352,
+        "powertrain_mix": 6.2794648,
+        "product_intensity": -21.411928,
+        "share_baseline": 0.0063728305,
+        "share_compared": 0.0052915071,
+        "ti_per_vehicle_average": -7591.9488
+      },
+      "CY": {
+        "destination_mix": -39.339879,
+        "powertrain_mix": 1.2541932,
+        "product_intensity": 3.2372543,
+        "share_baseline": 8.9921011e-06,
+        "share_compared": 0.0031053559,
+        "ti_per_vehicle_average": -12705.186
+      },
+      "CZ": {
+        "destination_mix": -161.64077,
+        "powertrain_mix": -23.036072,
+        "product_intensity": -29.055479,
+        "share_baseline": 0.023672348,
+        "share_compared": 0.048581677,
+        "ti_per_vehicle_average": -6489.1663
+      },
+      "DE": {
+        "destination_mix": -588.61931,
+        "powertrain_mix": 385.87829,
+        "product_intensity": -600.69489,
+        "share_baseline": 0.11977736,
+        "share_compared": 0.22316493,
+        "ti_per_vehicle_average": -5693.3272
+      },
+      "DK": {
+        "destination_mix": -11.335989,
+        "powertrain_mix": 119.97477,
+        "product_intensity": -43.719814,
+        "share_baseline": 0.016305248,
+        "share_compared": 0.011096115,
+        "ti_per_vehicle_average": 2176.1758
+      },
+      "EE": {
+        "destination_mix": 8.4321533,
+        "powertrain_mix": 8.5300391,
+        "product_intensity": -3.6739279,
+        "share_baseline": 0.0054916046,
+        "share_compared": 0.00167305,
+        "ti_per_vehicle_average": -2208.2055
+      },
+      "ES": {
+        "destination_mix": -256.85738,
+        "powertrain_mix": -303.41782,
+        "product_intensity": -200.652,
+        "share_baseline": 0.12496965,
+        "share_compared": 0.15131619,
+        "ti_per_vehicle_average": -9749.1891
+      },
+      "FI": {
+        "destination_mix": 65.893649,
+        "powertrain_mix": 91.714587,
+        "product_intensity": -15.101273,
+        "share_baseline": 0.014551789,
+        "share_compared": 0.0066508602,
+        "ti_per_vehicle_average": -8339.988
+      },
+      "FR": {
+        "destination_mix": 252.51389,
+        "powertrain_mix": 380.90805,
+        "product_intensity": -504.17186,
+        "share_baseline": 0.16771039,
+        "share_compared": 0.11476929,
+        "ti_per_vehicle_average": -4769.7132
+      },
+      "GR": {
+        "destination_mix": 133.00773,
+        "powertrain_mix": -2.4847294,
+        "product_intensity": -118.12548,
+        "share_baseline": 0.029697056,
+        "share_compared": 0.021367864,
+        "ti_per_vehicle_average": -15968.864
+      },
+      "HR": {
+        "destination_mix": -5.0151881,
+        "powertrain_mix": 5.7880489,
+        "product_intensity": -30.937596,
+        "share_baseline": 0.0053014859,
+        "share_compared": 0.008114779,
+        "ti_per_vehicle_average": -1782.6753
+      },
+      "HU": {
+        "destination_mix": 99.664519,
+        "powertrain_mix": 39.705553,
+        "product_intensity": -59.371235,
+        "share_baseline": 0.01805357,
+        "share_compared": 0.010760533,
+        "ti_per_vehicle_average": -13665.708
+      },
+      "IE": {
+        "destination_mix": -20.187385,
+        "powertrain_mix": 32.041581,
+        "product_intensity": -72.42332,
+        "share_baseline": 0.020746062,
+        "share_compared": 0.02411332,
+        "ti_per_vehicle_average": -5995.1997
+      },
+      "IT": {
+        "destination_mix": 360.89369,
+        "powertrain_mix": -31.784084,
+        "product_intensity": -528.0023,
+        "share_baseline": 0.15444961,
+        "share_compared": 0.11863578,
+        "ti_per_vehicle_average": -10076.937
+      },
+      "LT": {
+        "destination_mix": 64.144103,
+        "powertrain_mix": 9.8545257,
+        "product_intensity": -8.5896947,
+        "share_baseline": 0.0073799458,
+        "share_compared": 0.0016900723,
+        "ti_per_vehicle_average": -11273.38
+      },
+      "LU": {
+        "destination_mix": 40.789802,
+        "powertrain_mix": 14.985541,
+        "product_intensity": -2.7951542,
+        "share_baseline": 0.0015209497,
+        "share_compared": 0.0030834701,
+        "ti_per_vehicle_average": 26105.132
+      },
+      "LV": {
+        "destination_mix": 28.998405,
+        "powertrain_mix": 3.5218286,
+        "product_intensity": 1.4820667,
+        "share_baseline": 0.0035351803,
+        "share_compared": 0.0015733479,
+        "ti_per_vehicle_average": -14781.286
+      },
+      "MT": {
+        "destination_mix": -0.83647608,
+        "powertrain_mix": 0.60942693,
+        "product_intensity": -2.8458262,
+        "share_baseline": 0.0013423922,
+        "share_compared": 0.001794638,
+        "ti_per_vehicle_average": -1849.6052
+      },
+      "NL": {
+        "destination_mix": -59.065277,
+        "powertrain_mix": 157.67649,
+        "product_intensity": -61.716105,
+        "share_baseline": 0.036777693,
+        "share_compared": 0.044909721,
+        "ti_per_vehicle_average": -7263.2903
+      },
+      "PL": {
+        "destination_mix": 1165.0887,
+        "powertrain_mix": -97.666048,
+        "product_intensity": -556.10641,
+        "share_baseline": 0.13083764,
+        "share_compared": 0.074847103,
+        "ti_per_vehicle_average": -20808.671
+      },
+      "PT": {
+        "destination_mix": -43.534063,
+        "powertrain_mix": 2.2165442,
+        "product_intensity": -43.856944,
+        "share_baseline": 0.012994871,
+        "share_compared": 0.01685452,
+        "ti_per_vehicle_average": -11279.279
+      },
+      "RO": {
+        "destination_mix": -191.16045,
+        "powertrain_mix": -1.9783142,
+        "product_intensity": -85.605135,
+        "share_baseline": 0.015688647,
+        "share_compared": 0.023554015,
+        "ti_per_vehicle_average": -24304.069
+      },
+      "SE": {
+        "destination_mix": 113.09292,
+        "powertrain_mix": 25.884498,
+        "product_intensity": 6.2325706,
+        "share_baseline": 0.023965234,
+        "share_compared": 0.0038275883,
+        "ti_per_vehicle_average": -5615.9951
+      },
+      "SI": {
+        "destination_mix": -4.8664666,
+        "powertrain_mix": 6.5805291,
+        "product_intensity": -16.535639,
+        "share_baseline": 0.0042275721,
+        "share_compared": 0.0064611831,
+        "ti_per_vehicle_average": -2178.7441
+      },
+      "SK": {
+        "destination_mix": -99.88612,
+        "powertrain_mix": -19.259776,
+        "product_intensity": -10.909148,
+        "share_baseline": 0.011601095,
+        "share_compared": 0.019694814,
+        "ti_per_vehicle_average": -12341.189
+      }
+    },
+    "by_powertrain": {
+      "BEV": {
+        "hyundai-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": 13966.147,
+          "unit_share": 0.1010104
+        },
+        "toyota-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": 15855.403,
+          "unit_share": 0.013968587
+        }
+      },
+      "HEV": {
+        "hyundai-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -11711.329,
+          "unit_share": 0.41620524
+        },
+        "toyota-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -6675.4828,
+          "unit_share": 0.78471625
+        }
+      },
+      "ICE": {
+        "hyundai-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -11549.307,
+          "unit_share": 0.48278436
+        },
+        "toyota-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -13138.856,
+          "unit_share": 0.20131516
+        }
+      }
+    },
+    "compared_cohort": "hyundai-eu27-passenger-cars-2024",
+    "gap": -1377.4819,
+    "per_vehicle": {
+      "hyundai-eu27-passenger-cars-2024": -9039.4151,
+      "toyota-eu27-passenger-cars-2024": -7661.9332
+    },
+    "reconciliation_relative_error": {
+      "hyundai-eu27-passenger-cars-2024": 3.7581279e-16,
+      "toyota-eu27-passenger-cars-2024": 0.0
+    },
+    "residual": -7.8435626,
+    "scenario": "S2",
+    "terms": {
+      "destination_mix": 852.80077,
+      "powertrain_mix": 852.9067,
+      "product_intensity": -3075.3458
+    },
+    "unit": "kgCO2e per covered vehicle"
+  },
+  {
+    "baseline_cohort": "toyota-eu27-passenger-cars-2024",
+    "by_destination": {
+      "AT": {
+        "destination_mix": -155.49887,
+        "powertrain_mix": -14.430296,
+        "product_intensity": 1.7016964,
+        "share_baseline": 0.013832421,
+        "share_compared": 0.026535352,
+        "ti_per_vehicle_average": -12241.18
+      },
+      "BE": {
+        "destination_mix": 34.71883,
+        "powertrain_mix": 59.608928,
+        "product_intensity": -71.694705,
+        "share_baseline": 0.02918836,
+        "share_compared": 0.02653292,
+        "ti_per_vehicle_average": -13074.604
+      },
+      "BG": {
+        "destination_mix": 20.554955,
+        "powertrain_mix": 8.5604648,
+        "product_intensity": -21.380507,
+        "share_baseline": 0.0063728305,
+        "share_compared": 0.0052915071,
+        "ti_per_vehicle_average": -19009.072
+      },
+      "CY": {
+        "destination_mix": -81.490574,
+        "powertrain_mix": 2.8943546,
+        "product_intensity": 3.2372543,
+        "share_baseline": 8.9921011e-06,
+        "share_compared": 0.0031053559,
+        "ti_per_vehicle_average": -26318.152
+      },
+      "CZ": {
+        "destination_mix": -386.58076,
+        "powertrain_mix": -20.233611,
+        "product_intensity": -29.449043,
+        "share_baseline": 0.023672348,
+        "share_compared": 0.048581677,
+        "ti_per_vehicle_average": -15519.518
+      },
+      "DE": {
+        "destination_mix": -1412.7677,
+        "powertrain_mix": 503.30031,
+        "product_intensity": -596.52814,
+        "share_baseline": 0.11977736,
+        "share_compared": 0.22316493,
+        "ti_per_vehicle_average": -13664.772
+      },
+      "DK": {
+        "destination_mix": 31.227809,
+        "powertrain_mix": 127.7969,
+        "product_intensity": -43.650621,
+        "share_baseline": 0.016305248,
+        "share_compared": 0.011096115,
+        "ti_per_vehicle_average": -5994.8187
+      },
+      "EE": {
+        "destination_mix": 52.757089,
+        "powertrain_mix": 11.341917,
+        "product_intensity": -3.490036,
+        "share_baseline": 0.0054916046,
+        "share_compared": 0.00167305,
+        "ti_per_vehicle_average": -13815.984
+      },
+      "ES": {
+        "destination_mix": -612.09746,
+        "powertrain_mix": -295.01912,
+        "product_intensity": -201.64017,
+        "share_baseline": 0.12496965,
+        "share_compared": 0.15131619,
+        "ti_per_vehicle_average": -23232.558
+      },
+      "FI": {
+        "destination_mix": 146.14835,
+        "powertrain_mix": 97.609246,
+        "product_intensity": -14.898824,
+        "share_baseline": 0.014551789,
+        "share_compared": 0.0066508602,
+        "ti_per_vehicle_average": -18497.617
+      },
+      "FR": {
+        "destination_mix": 728.2077,
+        "powertrain_mix": 390.71484,
+        "product_intensity": -505.50861,
+        "share_baseline": 0.16771039,
+        "share_compared": 0.11476929,
+        "ti_per_vehicle_average": -13755.053
+      },
+      "GR": {
+        "destination_mix": 189.55038,
+        "powertrain_mix": 0.68755824,
+        "product_intensity": -118.28742,
+        "share_baseline": 0.029697056,
+        "share_compared": 0.021367864,
+        "ti_per_vehicle_average": -22757.356
+      },
+      "HR": {
+        "destination_mix": -55.055393,
+        "powertrain_mix": 6.9426501,
+        "product_intensity": -31.021715,
+        "share_baseline": 0.0053014859,
+        "share_compared": 0.008114779,
+        "ti_per_vehicle_average": -19569.732
+      },
+      "HU": {
+        "destination_mix": 196.93166,
+        "powertrain_mix": 48.052283,
+        "product_intensity": -59.671539,
+        "share_baseline": 0.01805357,
+        "share_compared": 0.010760533,
+        "ti_per_vehicle_average": -27002.695
+      },
+      "IE": {
+        "destination_mix": -62.111306,
+        "powertrain_mix": 45.585818,
+        "product_intensity": -71.838959,
+        "share_baseline": 0.020746062,
+        "share_compared": 0.02411332,
+        "ti_per_vehicle_average": -18445.662
+      },
+      "IT": {
+        "destination_mix": 688.36883,
+        "powertrain_mix": -26.686078,
+        "product_intensity": -528.52303,
+        "share_baseline": 0.15444961,
+        "share_compared": 0.11863578,
+        "ti_per_vehicle_average": -19220.755
+      },
+      "LT": {
+        "destination_mix": 133.6204,
+        "powertrain_mix": 11.029346,
+        "product_intensity": -8.5319708,
+        "share_baseline": 0.0073799458,
+        "share_compared": 0.0016900723,
+        "ti_per_vehicle_average": -23483.897
+      },
+      "LU": {
+        "destination_mix": 16.192814,
+        "powertrain_mix": 15.90786,
+        "product_intensity": -2.7636697,
+        "share_baseline": 0.0015209497,
+        "share_compared": 0.0030834701,
+        "ti_per_vehicle_average": 10363.265
+      },
+      "LV": {
+        "destination_mix": 57.378813,
+        "powertrain_mix": 4.4150356,
+        "product_intensity": 1.5505732,
+        "share_baseline": 0.0035351803,
+        "share_compared": 0.0015733479,
+        "ti_per_vehicle_average": -29247.561
+      },
+      "MT": {
+        "destination_mix": -4.9966874,
+        "powertrain_mix": 1.6791013,
+        "product_intensity": -2.8458262,
+        "share_baseline": 0.0013423922,
+        "share_compared": 0.001794638,
+        "ti_per_vehicle_average": -11048.611
+      },
+      "NL": {
+        "destination_mix": -117.24974,
+        "powertrain_mix": 187.77057,
+        "product_intensity": -62.680113,
+        "share_baseline": 0.036777693,
+        "share_compared": 0.044909721,
+        "ti_per_vehicle_average": -14418.267
+      },
+      "PL": {
+        "destination_mix": 1839.9093,
+        "powertrain_mix": -72.744293,
+        "product_intensity": -556.10641,
+        "share_baseline": 0.13083764,
+        "share_compared": 0.074847103,
+        "ti_per_vehicle_average": -32861.076
+      },
+      "PT": {
+        "destination_mix": -86.886089,
+        "powertrain_mix": 5.5701856,
+        "product_intensity": -43.881923,
+        "share_baseline": 0.012994871,
+        "share_compared": 0.01685452,
+        "ti_per_vehicle_average": -22511.394
+      },
+      "RO": {
+        "destination_mix": -277.64387,
+        "powertrain_mix": 6.3075396,
+        "product_intensity": -86.477339,
+        "share_baseline": 0.015688647,
+        "share_compared": 0.023554015,
+        "ti_per_vehicle_average": -35299.539
+      },
+      "SE": {
+        "destination_mix": 309.99365,
+        "powertrain_mix": 26.909358,
+        "product_intensity": 6.2422365,
+        "share_baseline": 0.023965234,
+        "share_compared": 0.0038275883,
+        "ti_per_vehicle_average": -15393.738
+      },
+      "SI": {
+        "destination_mix": -42.263575,
+        "powertrain_mix": 8.4476601,
+        "product_intensity": -16.647182,
+        "share_baseline": 0.0042275721,
+        "share_compared": 0.0064611831,
+        "ti_per_vehicle_average": -18921.637
+      },
+      "SK": {
+        "destination_mix": -181.16839,
+        "powertrain_mix": -19.012447,
+        "product_intensity": -10.918635,
+        "share_baseline": 0.011601095,
+        "share_compared": 0.019694814,
+        "ti_per_vehicle_average": -22383.824
+      }
+    },
+    "by_powertrain": {
+      "BEV": {
+        "hyundai-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": 7997.6133,
+          "unit_share": 0.1010104
+        },
+        "toyota-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": 8990.9005,
+          "unit_share": 0.013968587
+        }
+      },
+      "HEV": {
+        "hyundai-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -21924.452,
+          "unit_share": 0.41620524
+        },
+        "toyota-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -17040.233,
+          "unit_share": 0.78471625
+        }
+      },
+      "ICE": {
+        "hyundai-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -21935.879,
+          "unit_share": 0.48278436
+        },
+        "toyota-eu27-passenger-cars-2024": {
+          "ti_per_vehicle": -23204.195,
+          "unit_share": 0.20131516
+        }
+      }
+    },
+    "compared_cohort": "hyundai-eu27-passenger-cars-2024",
+    "gap": -990.01499,
+    "per_vehicle": {
+      "hyundai-eu27-passenger-cars-2024": -18907.529,
+      "toyota-eu27-passenger-cars-2024": -17917.514
+    },
+    "reconciliation_relative_error": {
+      "hyundai-eu27-passenger-cars-2024": 9.5824339e-16,
+      "toyota-eu27-passenger-cars-2024": 9.3478891e-16
+    },
+    "residual": -7.066647,
+    "scenario": "S3",
+    "terms": {
+      "destination_mix": 969.75021,
+      "powertrain_mix": 1123.0061,
+      "product_intensity": -3075.7046
+    },
+    "unit": "kgCO2e per covered vehicle"
+  }
+]

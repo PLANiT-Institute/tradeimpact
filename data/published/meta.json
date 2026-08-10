@@ -37,9 +37,9 @@
       "[CA] PRORATA_IDENTITY: r_fleet=r_power=economy-wide rate (sector-split factor 1.0). Derive independently to break the identity (NOTES.md D1). Benchmark tier downgraded."
     ]
   },
-  "dataset_sha256": "4cc4dcf35e3cfe60d0ee7e6367f0e0e17ba8adb3a03fe846e8d49211d9fb01aa",
+  "dataset_sha256": "6ada0c94059304c288e4f7f5e62cf3f6728ee6a190b134606514a8db00db9828",
   "engine": "ti_framework",
-  "engine_source_sha256": "ff34c1dfe3b7305108eca46bfbcef049faeceeec48942d477c06f3aecdcb2adb",
+  "engine_source_sha256": "57624cc7cfacfb1b04104af8cfa455d522e45c05c25f4eb2f85fbbdff2c0423a",
   "engine_version": "0.1.0",
   "impact_contract": {
     "cohort_records": 1286,

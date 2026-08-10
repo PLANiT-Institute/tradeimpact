@@ -55,12 +55,22 @@ export interface NetZeroPlan {
   announced?: string;
 }
 
+/** One (destination, powertrain) cell — the joint behind the two required margins. */
+export interface CohortCell {
+  country: string;
+  powertrain: string;
+  TI_tCO2e: number;
+  units: number;
+  TI_per_vehicle_kgCO2e: number | null;
+}
+
 export interface CohortResult {
   total_tCO2e: number;
   direction: string;
   directional_only: boolean;
   by_country: Record<string, number>;
   by_powertrain: Record<string, number>;
+  by_cell: CohortCell[];
   annual_tCO2e: number[];
   excluded_flag_markets: Record<string, string>;
   warnings: string[];
@@ -356,6 +366,44 @@ export type LifetimeResult = Omit<FirmResult, "provenance"> & {
   portfolio_withheld?: { reason: string; unblocked_by: string };
 };
 
+/**
+ * Why two published cohorts differ in lifetime TI per vehicle, for one scenario.
+ * Produced by data-pipeline/compare_cohorts.py; the three terms plus the residual
+ * reconstruct `gap` exactly.
+ */
+export interface CohortComparison {
+  scenario: Scenario;
+  baseline_cohort: string;
+  compared_cohort: string;
+  unit: string;
+  /** cohort_id -> lifetime TI per covered vehicle, kgCO2e. */
+  per_vehicle: Record<string, number>;
+  /** compared minus baseline, kgCO2e per covered vehicle. */
+  gap: number;
+  terms: {
+    destination_mix: number;
+    powertrain_mix: number;
+    product_intensity: number;
+  };
+  residual: number;
+  by_destination: Record<
+    string,
+    {
+      destination_mix: number;
+      powertrain_mix: number;
+      product_intensity: number;
+      share_baseline: number;
+      share_compared: number;
+      ti_per_vehicle_average: number;
+    }
+  >;
+  by_powertrain: Record<
+    string,
+    Record<string, { unit_share: number; ti_per_vehicle: number | null }>
+  >;
+  reconciliation_relative_error: Record<string, number>;
+}
+
 /** Sector-wide support parameters every real firm must agree on (see meta.json). */
 export interface SupportContract {
   lifetime_T: number | null;
@@ -415,6 +463,7 @@ export const FIRM_RESULT_KEYS = [
 
 export const COHORT_KEYS = [
   "annual_tCO2e",
+  "by_cell",
   "by_country",
   "by_powertrain",
   "direction",

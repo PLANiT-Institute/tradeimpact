@@ -22,6 +22,7 @@ from ti_framework.layer1.automotive import MethodBBenchmark
 from ti_framework.layer2.automotive import BEVEmissions, GridTrajectory, ICEEmissions, PHEVEmissions
 from ti_framework.layer2.base import ProductEmissions
 from ti_framework.models import (
+    CellTotal,
     CohortResult,
     Country,
     DataTier,
@@ -240,6 +241,7 @@ def compute_cohort(
 
     by_country: dict[str, float] = {}
     by_powertrain: dict[str, float] = {}
+    by_cell: dict[tuple[str, Powertrain], list[float]] = {}
     annual = [0.0] * T
     total = 0.0
     excluded: dict[str, str] = {}
@@ -282,6 +284,9 @@ def compute_cohort(
             annual[t] += cell.annual_tco2e[t]
 
         u = p.units or 0.0
+        joint = by_cell.setdefault((p.country_code, cell.vehicle_result.powertrain), [0.0, 0.0])
+        joint[0] += cell.ti_tco2e
+        joint[1] += u
         total_units += u
         if cell.tier.rank >= DataTier.C.rank:
             low_confidence_units += u
@@ -304,6 +309,12 @@ def compute_cohort(
         total=total,
         by_country=by_country,
         by_powertrain=by_powertrain,
+        by_cell=[
+            CellTotal(country_code=code, powertrain=pt, ti_tco2e=ti, units=units)
+            for (code, pt), (ti, units) in sorted(
+                by_cell.items(), key=lambda item: (item[0][0], item[0][1].value)
+            )
+        ],
         annual=annual,
         excluded_flag_markets=excluded,
         warnings=warnings,
@@ -313,12 +324,34 @@ def compute_cohort(
 
 
 def decomposition_identity_holds(result: CohortResult, tol: float = 1e-6) -> bool:
-    """Verify the mandatory identity TI_cohort = sum_c = sum_v (Guideline §4.4)."""
-    s_country = sum(result.by_country.values())
-    s_pt = sum(result.by_powertrain.values())
-    return abs(s_country - result.total) <= tol * max(1.0, abs(result.total)) and abs(
-        s_pt - result.total
-    ) <= tol * max(1.0, abs(result.total))
+    """Verify the mandatory identity TI_cohort = sum_c = sum_v (Guideline §4.4).
+
+    The joint is held to the same identity against *both* margins, not just the total: two
+    margins that each sum correctly can still disagree about which cell carries the weight,
+    and that is exactly the error a joint is published to rule out.
+    """
+    scale = max(1.0, abs(result.total))
+
+    def close(value: float, target: float) -> bool:
+        return abs(value - target) <= tol * scale
+
+    if not close(sum(result.by_country.values()), result.total):
+        return False
+    if not close(sum(result.by_powertrain.values()), result.total):
+        return False
+    if not result.by_cell:
+        return True
+    if not close(sum(cell.ti_tco2e for cell in result.by_cell), result.total):
+        return False
+    for code, value in result.by_country.items():
+        row = sum(c.ti_tco2e for c in result.by_cell if c.country_code == code)
+        if not close(row, value):
+            return False
+    for key, value in result.by_powertrain.items():
+        column = sum(c.ti_tco2e for c in result.by_cell if c.powertrain.value == key)
+        if not close(column, value):
+            return False
+    return True
 
 
 def direction_label(value: float) -> str:
