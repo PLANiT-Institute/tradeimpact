@@ -16,6 +16,8 @@ import {
   type Scenario,
 } from "@/lib/shared";
 
+const BADGE_R = 7.5;
+
 const POWERTRAIN_COLORS: Record<string, string> = {
   BEV: "#5d9cec",
   HEV: "#d9a441",
@@ -70,18 +72,39 @@ function kg(value: number): string {
   return `${value >= 0 ? "+" : "−"}${Math.abs(Math.round(value)).toLocaleString("en-US")}`;
 }
 
-export function CellScatter({ result }: { result: LifetimeResult }) {
+/**
+ * Axis and area domains. Two cohorts drawn on their own domains cannot be read against each
+ * other — the same bubble size would mean a different number of tonnes on each. Pages that
+ * show more than one cohort pass a shared domain built with {@link cellDomain}.
+ */
+export type CellDomain = { maxUnits: number; yMin: number; yMax: number; maxTi: number };
+
+export function cellDomain(results: LifetimeResult[]): CellDomain {
+  const cells = results.flatMap(collect);
+  const values = cells.flatMap((c) => [c.low, c.central, c.high]);
+  return {
+    maxUnits: Math.max(...cells.map((c) => c.units), 1),
+    yMax: Math.max(...values, 0),
+    yMin: Math.min(...values, 0),
+    maxTi: Math.max(...cells.map((c) => Math.abs(c.ti)), 1),
+  };
+}
+
+export function CellScatter({
+  result,
+  domain,
+}: {
+  result: LifetimeResult;
+  domain?: CellDomain;
+}) {
   const cells = collect(result);
   if (cells.length === 0) return null;
 
   const W = 720;
   const H = 360;
   const pad = { l: 52, r: 34, t: 16, b: 42 };
-  const maxUnits = Math.max(...cells.map((c) => c.units));
-  const values = cells.flatMap((c) => [c.low, c.central, c.high]);
-  const yMax = Math.max(...values, 0);
-  const yMin = Math.min(...values, 0);
-  const maxTi = Math.max(...cells.map((c) => Math.abs(c.ti)), 1);
+  const scale = domain ?? cellDomain([result]);
+  const { maxUnits, yMin, yMax, maxTi } = scale;
 
   // Volume spans four orders of magnitude across cells, so a linear axis would stack almost
   // every cell against the left edge and hide the small-but-terrible ones.
@@ -92,6 +115,29 @@ export function CellScatter({ result }: { result: LifetimeResult }) {
 
   const ranked = [...cells].sort((a, b) => Math.abs(b.ti) - Math.abs(a.ti));
   const ticks = [10, 100, 1_000, 10_000, 100_000].filter((t) => t <= maxUnits * 1.4);
+
+  // Place each badge up-and-right of its bubble, then walk it around a small circle until it
+  // clears every badge already placed. Four badges at most, so the search is trivial.
+  const badges = ranked.slice(0, 4).map((cell, i) => {
+    const anchorX = x(cell.units);
+    const anchorY = y(cell.central);
+    const reach = r(cell.ti) * 0.72 + BADGE_R;
+    let cx = anchorX + reach;
+    let cy = anchorY - reach;
+    return { key: cell.key, rank: i + 1, anchorX, anchorY, reach, cx, cy };
+  });
+  badges.forEach((badge, i) => {
+    for (let step = 0; step < 12; step += 1) {
+      const angle = -Math.PI / 4 + step * (Math.PI / 6);
+      const spread = badge.reach + Math.floor(step / 12) * BADGE_R;
+      badge.cx = badge.anchorX + Math.cos(angle) * spread;
+      badge.cy = badge.anchorY + Math.sin(angle) * spread;
+      const clash = badges
+        .slice(0, i)
+        .some((other) => Math.hypot(other.cx - badge.cx, other.cy - badge.cy) < BADGE_R * 2.3);
+      if (!clash) break;
+    }
+  });
   const powertrains = [...new Set(cells.map((c) => c.powertrain))].sort();
 
   return (
@@ -103,7 +149,9 @@ export function CellScatter({ result }: { result: LifetimeResult }) {
             {pt}
           </span>
         ))}
-        <span className="ti-cells-scale">bubble area ∝ share of the cohort result</span>
+        <span className="ti-cells-scale">
+          bubble area ∝ tCO₂e the cell contributes{domain ? ", on one scale for both cohorts" : ""}
+        </span>
       </div>
       <svg
         viewBox={`0 0 ${W} ${H}`}
@@ -178,22 +226,27 @@ export function CellScatter({ result }: { result: LifetimeResult }) {
             );
           })}
         {/* The heaviest cells sit on top of each other, so they carry a numbered badge and
-            the reading goes in the list below rather than in colliding in-chart labels. */}
-        {ranked.slice(0, 4).map((cell, i) => (
-          <g key={cell.key}>
-            <circle
-              cx={x(cell.units) + r(cell.ti) * 0.72 + 7}
-              cy={y(cell.central) - r(cell.ti) * 0.72 - 7}
-              r={7.5}
-              className="ti-cells-badge"
+            the reading goes in the list below rather than in colliding in-chart labels. Two
+            cells can also sell near-identical volumes — Hyundai's Polish hybrids and Polish
+            combustion are 47 units apart — which lands their badges on the same spot, so each
+            badge is pushed clear of the ones already placed. */}
+        {badges.map((badge) => (
+          <g key={badge.key}>
+            <line
+              x1={badge.anchorX}
+              y1={badge.anchorY}
+              x2={badge.cx}
+              y2={badge.cy}
+              className="ti-cells-leader"
             />
+            <circle cx={badge.cx} cy={badge.cy} r={BADGE_R} className="ti-cells-badge" />
             <text
-              x={x(cell.units) + r(cell.ti) * 0.72 + 7}
-              y={y(cell.central) - r(cell.ti) * 0.72 - 4}
+              x={badge.cx}
+              y={badge.cy + 3.5}
               textAnchor="middle"
               className="ti-cells-badge-text"
             >
-              {i + 1}
+              {badge.rank}
             </text>
           </g>
         ))}

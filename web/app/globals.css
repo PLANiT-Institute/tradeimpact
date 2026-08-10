@@ -3991,3 +3991,9 @@ footer.site .planit-mark {
 .ti-cells-top strong { min-width: 6.5rem; }
 .ti-cells-top span { color: var(--ink-2); }
 .ti-cells-top em { color: var(--ink-3); font-style: normal; }
+
+.ti-cells-leader {
+  stroke: var(--ink-3);
+  stroke-width: 0.7;
+  opacity: 0.55;
+}
