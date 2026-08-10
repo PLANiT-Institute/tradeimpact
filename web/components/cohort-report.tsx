@@ -1,6 +1,7 @@
 // Renderers for one published lifetime result. Shared by the combined /impact report and the
 // per-company /analysis/[firm] report so a cohort is presented identically wherever it appears.
 // Types come from lib/shared (no node imports) — the engine emitter stays the source of truth.
+import { CellScatter } from "@/components/cell-scatter";
 import {
   SCENARIOS,
   SCENARIO_COLORS,
@@ -431,6 +432,17 @@ export function CohortSection({
             <CrossingChart key={s} result={result} scenario={s} />
           ))}
         </div>
+      </div>
+
+      <div className="ti-panel">
+        <h3>Which market-and-powertrain combinations carry it</h3>
+        <p className="muted">
+          The two decompositions above are margins: they say which destinations matter and which
+          products matter, but not which pairing of the two does. This is the joint. A cell far
+          to the right sells in volume; a cell far below the line emits far above the benchmark
+          it is measured against; a cell that is both is where the result actually comes from.
+        </p>
+        <CellScatter result={result} />
       </div>
 
       <div className="ti-panel">
