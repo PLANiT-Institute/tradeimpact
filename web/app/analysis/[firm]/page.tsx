@@ -224,7 +224,10 @@ export default async function CompanyAnalysis({
         </div>
         <div>
           <span>Result coverage</span><strong>{(result.coverage.covered_share * 100).toFixed(1)}%</strong>
-          <small>{count(result.coverage.covered_units)} units priced · remainder withheld, not zeroed</small>
+          <small>
+            {count(result.coverage.covered_units)} units priced
+            {result.coverage.covered_share < 1 ? " · remainder withheld, not zeroed" : ""}
+          </small>
         </div>
         <div>
           <span>Per vehicle (S2)</span><strong>{kg(perVehicle)}</strong>

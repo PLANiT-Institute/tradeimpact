@@ -115,6 +115,30 @@ export default function AutomotiveComparison() {
       ]),
     ) as Record<Scenario, number>,
   }));
+
+  // Every quantity in the prose below is derived. A hand-typed "seven times" or "PHEV and
+  // FCEV" survives the dataset moving underneath it; three such strings had already gone
+  // stale elsewhere on the site before this sweep.
+  const withheldTypes = [
+    ...new Set(
+      [toyotaCohort, hyundaiCohort].flatMap((c) =>
+        Object.keys(lifetimeOf(c).coverage.withheld_product_types),
+      ),
+    ),
+  ].sort();
+  const bevShareOf = (c: ProductCohort) =>
+    byScenario.S2.by_powertrain.BEV?.[c.cohort_id]?.unit_share ?? 0;
+  const bevRatio = bevShareOf(hyundaiCohort) / (bevShareOf(toyotaCohort) || 1);
+  // ICE and non-plug-in hybrid emit at their sale-year rate for life, which is what makes the
+  // product-intensity term scenario-independent.
+  const fixedShare = Math.min(
+    ...[toyotaCohort, hyundaiCohort].map((c) =>
+      ["ICE", "HEV"].reduce(
+        (sum, pt) => sum + (byScenario.S2.by_powertrain[pt]?.[c.cohort_id]?.unit_share ?? 0),
+        0,
+      ),
+    ),
+  );
   const sourceIds = new Set([
     ...(toyotaCohort.origin_context?.source_ids ?? []),
     ...(hyundaiCohort.origin_context?.source_ids ?? []),
@@ -255,8 +279,9 @@ export default function AutomotiveComparison() {
           Coverage differs: {percent(lifetimeOf(toyotaCohort).coverage.covered_units, toyota.total)} of
           the Toyota cohort and{" "}
           {percent(lifetimeOf(hyundaiCohort).coverage.covered_units, hyundai.total)} of the Hyundai
-          cohort are priced. PHEV and FCEV units are withheld with their counts on both sides, so
-          the two figures rest on the same rule.
+          cohort are priced.{" "}
+          {withheldTypes.map((t) => POWERTRAIN_LABELS[t] ?? t).join(" and ")} units are withheld
+          with their counts on both sides, so the two figures rest on the same rule.
         </p>
       </section>
 
@@ -267,14 +292,15 @@ export default function AutomotiveComparison() {
             <h2>A cleaner powertrain mix, <em>spent on higher-emitting vehicles</em></h2>
           </div>
           <p>
-            Hyundai sells seven times Toyota&apos;s battery-electric share and lands in the
-            gentler destination mix, and still finishes further behind per vehicle. Splitting
+            Hyundai sells {bevRatio.toFixed(1)}× Toyota&apos;s battery-electric share and lands
+            in the gentler destination mix, and still finishes further behind per vehicle. Splitting
             the gap into the three decisions behind it — which markets, which powertrains, which
             vehicles — shows why: the first two help, and the third more than spends them. It
             also shows which of the three depends on how ambitious the pathway is. Both
             favourable terms move with the scenario; the unfavourable one is the same number
-            under all three, because nine in ten covered units emit at a rate fixed on the day
-            they were sold and the benchmark they are measured against is common to both.
+            under all three, because at least {percent(fixedShare, 1, 0)} of each cohort&apos;s
+            covered units emit at a rate fixed on the day they were sold and the benchmark they
+            are measured against is common to both.
           </p>
         </header>
         <DivergingBars rows={gapRows} unit="kg" height={34} />
