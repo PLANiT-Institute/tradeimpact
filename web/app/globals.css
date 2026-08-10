@@ -3997,3 +3997,38 @@ footer.site .planit-mark {
   stroke-width: 0.7;
   opacity: 0.55;
 }
+
+/* --- Market dumbbell (components/market-dumbbell.tsx) --------------------- */
+
+.ti-dumbbell { margin: 1rem 0 1.25rem; }
+
+.ti-dumbbell svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.ti-dumbbell p.muted {
+  font-size: 0.76rem;
+  margin: 0.5rem 0 0;
+  max-width: 80ch;
+}
+
+.ti-dumbbell .ti-legend i.dot-baseline,
+.ti-dumbbell .ti-legend i.dot-compared {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+}
+
+.ti-dumbbell .ti-legend i.dot-baseline { background: var(--ink-2); }
+.ti-dumbbell .ti-legend i.dot-compared { background: var(--accent-soft); }
+
+.ti-dot-baseline { fill: var(--ink-2); }
+.ti-dot-compared { fill: var(--accent-soft); }
+
+.ti-dumbbell-label {
+  font-size: 10px;
+  font-weight: 600;
+  fill: var(--ink-3);
+}
