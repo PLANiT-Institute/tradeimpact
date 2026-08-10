@@ -232,57 +232,10 @@ export default async function CompanyAnalysis({
         </div>
       </div>
 
-      <section className="alignment-section" id="logic">
-        <header>
-          <div>
-            <p className="eyebrow">01 / analytical logic</p>
-            <h2>From one sale to a <em>multi-year NDC consequence</em></h2>
-          </div>
-          <p>
-            The framework keeps company action, physical operation, and destination policy as
-            separate evidence layers. Each step below is sourced before the next one runs.
-          </p>
-        </header>
-        <div className="cohort-flow" role="img" aria-label="Observed sales cohort passes through product classification, destination use, lifetime emissions and pathway comparison">
-          <article className="done"><span>Observed</span><strong>Company cohort</strong><p>{count(total)} {cohort.company_name}-brand registrations in {cohort.cohort_year}</p></article>
-          <i>→</i>
-          <article className="done"><span>Observed</span><strong>Product × destination</strong><p>{models.length} names · {countries.length} markets · 5 powertrain groups</p></article>
-          <i>→</i>
-          <article className="done"><span>Sourced</span><strong>Lifetime use path</strong><p>distance × survival × real-world product emissions, per destination</p></article>
-          <i>→</i>
-          <article className="done"><span>Sourced · proxy disclosed</span><strong>Destination pathway</strong><p>EU sector proxy and pro-rata power path, S1/S2/S3</p></article>
-        </div>
-        <div className="formula-stack compact">
-          <code>Annual TI<sub>v,c</sub>(t) = destination benchmark<sub>c</sub>(t) − product emissions<sub>v,c</sub>(t)</code>
-          <code>Cohort TI = Σ<sub>country c</sub> Σ<sub>product v</sub> sold units<sub>c,v</sub> × Σ<sub>life t</sub> Annual TI<sub>v,c</sub>(t)</code>
-        </div>
-      </section>
-
-      <section className="alignment-section" id="result">
-        <header>
-          <div>
-            <p className="eyebrow">02 / lifetime result</p>
-            <h2>
-              What {cohort.company_name}&apos;s {cohort.cohort_year} sales{" "}
-              <em>do to the markets that bought them</em>
-            </h2>
-          </div>
-          <p>
-            Reported under all three pathways, never S2 alone, and always with the decomposition
-            that shows which markets and which powertrains carry the number.
-            {" "}
-            <strong>{PRODUCT_LABELS[bestType] ?? bestType}</strong> is the most favourable product
-            group under national commitments and{" "}
-            <strong>{PRODUCT_LABELS[worstType] ?? worstType}</strong> the least.
-          </p>
-        </header>
-        <CohortSection result={result} destinations={destinations} />
-      </section>
-
       <section className="alignment-section" id="portfolio">
         <header>
           <div>
-            <p className="eyebrow">03 / portfolio capability</p>
+            <p className="eyebrow">01 / what was sold</p>
             <h2>Technology mix shows <em>what kind of emissions are locked in</em></h2>
           </div>
           <p>
@@ -309,10 +262,86 @@ export default async function CompanyAnalysis({
         </div>
       </section>
 
+      <section className="alignment-section" id="products">
+        <header>
+          <div>
+            <p className="eyebrow">02 / products in the cohort</p>
+            <h2>Commercial names are visible, <em>not inferred from a brand average</em></h2>
+          </div>
+          <p>
+            EEA commercial-name strings are preserved as reported. They still require
+            model-family normalization before model-to-factory export mapping.
+          </p>
+        </header>
+        <div className="exposure-table-wrap">
+          <table className="exposure-table product-table">
+            <thead><tr><th>Commercial name</th><th>Registrations</th><th>Cohort share</th><th>Observed powertrains</th></tr></thead>
+            <tbody>
+              {topModels.map((model) => (
+                <tr key={model.name}>
+                  <td><strong>{model.name}</strong></td>
+                  <td>{count(model.units)}</td>
+                  <td>{pct(model.units, total)}</td>
+                  <td>{[...model.types].sort().map((type) => PRODUCT_LABELS[type]).join(" · ")}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="table-footnote">Top 10 of {models.length} observed commercial names. Full records remain available through the published JSON and MCP.</p>
+      </section>
+
+      <section className="alignment-section" id="logic">
+        <header>
+          <div>
+            <p className="eyebrow">03 / how the result is produced</p>
+            <h2>From one sale to a <em>multi-year NDC consequence</em></h2>
+          </div>
+          <p>
+            The framework keeps company action, physical operation, and destination policy as
+            separate evidence layers. Each step below is sourced before the next one runs.
+          </p>
+        </header>
+        <div className="cohort-flow" role="img" aria-label="Observed sales cohort passes through product classification, destination use, lifetime emissions and pathway comparison">
+          <article className="done"><span>Observed</span><strong>Company cohort</strong><p>{count(total)} {cohort.company_name}-brand registrations in {cohort.cohort_year}</p></article>
+          <i>→</i>
+          <article className="done"><span>Observed</span><strong>Product × destination</strong><p>{models.length} names · {countries.length} markets · 5 powertrain groups</p></article>
+          <i>→</i>
+          <article className="done"><span>Sourced</span><strong>Lifetime use path</strong><p>distance × survival × real-world product emissions, per destination</p></article>
+          <i>→</i>
+          <article className="done"><span>Sourced · proxy disclosed</span><strong>Destination pathway</strong><p>EU sector proxy and pro-rata power path, S1/S2/S3</p></article>
+        </div>
+        <div className="formula-stack compact">
+          <code>Annual TI<sub>v,c</sub>(t) = destination benchmark<sub>c</sub>(t) − product emissions<sub>v,c</sub>(t)</code>
+          <code>Cohort TI = Σ<sub>country c</sub> Σ<sub>product v</sub> sold units<sub>c,v</sub> × Σ<sub>life t</sub> Annual TI<sub>v,c</sub>(t)</code>
+        </div>
+      </section>
+
+      <section className="alignment-section" id="result">
+        <header>
+          <div>
+            <p className="eyebrow">04 / lifetime result</p>
+            <h2>
+              What {cohort.company_name}&apos;s {cohort.cohort_year} sales{" "}
+              <em>do to the markets that bought them</em>
+            </h2>
+          </div>
+          <p>
+            Reported under all three pathways, never S2 alone, and always with the decomposition
+            that shows which markets and which powertrains carry the number.
+            {" "}
+            <strong>{PRODUCT_LABELS[bestType] ?? bestType}</strong> is the most favourable product
+            group under national commitments and{" "}
+            <strong>{PRODUCT_LABELS[worstType] ?? worstType}</strong> the least.
+          </p>
+        </header>
+        <CohortSection result={result} destinations={destinations} />
+      </section>
+
       <section className="alignment-section" id="destinations">
         <header>
           <div>
-            <p className="eyebrow">04 / destination exposure</p>
+            <p className="eyebrow">05 / market-by-market detail</p>
             <h2>Where the {cohort.cohort_year} cohort <em>enters national inventories</em></h2>
           </div>
           <p>
@@ -363,35 +392,6 @@ export default async function CompanyAnalysis({
             </tbody>
           </table>
         </div>
-      </section>
-
-      <section className="alignment-section" id="products">
-        <header>
-          <div>
-            <p className="eyebrow">05 / product evidence</p>
-            <h2>Commercial names are visible, <em>not inferred from a brand average</em></h2>
-          </div>
-          <p>
-            EEA commercial-name strings are preserved as reported. They still require
-            model-family normalization before model-to-factory export mapping.
-          </p>
-        </header>
-        <div className="exposure-table-wrap">
-          <table className="exposure-table product-table">
-            <thead><tr><th>Commercial name</th><th>Registrations</th><th>Cohort share</th><th>Observed powertrains</th></tr></thead>
-            <tbody>
-              {topModels.map((model) => (
-                <tr key={model.name}>
-                  <td><strong>{model.name}</strong></td>
-                  <td>{count(model.units)}</td>
-                  <td>{pct(model.units, total)}</td>
-                  <td>{[...model.types].sort().map((type) => PRODUCT_LABELS[type]).join(" · ")}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p className="table-footnote">Top 10 of {models.length} observed commercial names. Full records remain available through the published JSON and MCP.</p>
       </section>
 
       <section className="alignment-section" id="gate">
