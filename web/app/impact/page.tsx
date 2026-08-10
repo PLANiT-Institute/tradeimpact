@@ -9,6 +9,7 @@ import {
   getSources,
 } from "@/lib/data";
 import { CohortSection, mt } from "@/components/cohort-report";
+import { cellDomain } from "@/components/cell-scatter";
 
 export const metadata: Metadata = {
   title: "Lifetime impact of the 2024 EU27 cohorts — Trade Impact",
@@ -30,6 +31,7 @@ export default function ImpactPage() {
   const pathwayWarning = destinations[0]?.warnings.find((w) =>
     w.startsWith("PATHWAY_ALREADY_MET"),
   );
+  const sharedCells = cellDomain(ordered);
 
   return (
     <main className="plain-report ti-impact">
@@ -96,8 +98,16 @@ export default function ImpactPage() {
         ) : null}
       </section>
 
+      {/* Both cohorts on one scale: this page puts them next to each other, and per-cohort
+          domains would make a Hyundai bubble and a Toyota bubble of equal size mean different
+          tonnages. */}
       {ordered.map((result) => (
-        <CohortSection key={result.cohort_id} result={result} destinations={destinations} />
+        <CohortSection
+          key={result.cohort_id}
+          result={result}
+          destinations={destinations}
+          cellDomain={sharedCells}
+        />
       ))}
 
       <section id="provenance">

@@ -1,7 +1,7 @@
 // Renderers for one published lifetime result. Shared by the combined /impact report and the
 // per-company /analysis/[firm] report so a cohort is presented identically wherever it appears.
 // Types come from lib/shared (no node imports) — the engine emitter stays the source of truth.
-import { CellScatter } from "@/components/cell-scatter";
+import { CellScatter, type CellDomain } from "@/components/cell-scatter";
 import {
   SCENARIOS,
   SCENARIO_COLORS,
@@ -367,9 +367,12 @@ export function decompositionRows(
 export function CohortSection({
   result,
   destinations,
+  cellDomain,
 }: {
   result: LifetimeResult;
   destinations: DestinationInput[];
+  /** Supplied when more than one cohort is on the page, so the scatters share a scale. */
+  cellDomain?: CellDomain;
 }) {
   const byCode = new Map(destinations.map((row) => [row.country_code, row]));
   const powertrainRows = decompositionRows(result, "by_powertrain");
@@ -498,7 +501,7 @@ export function CohortSection({
           to the right sells in volume; a cell far below the line emits far above the benchmark
           it is measured against; a cell that is both is where the result actually comes from.
         </p>
-        <CellScatter result={result} />
+        <CellScatter result={result} domain={cellDomain} />
       </div>
 
       <div className="ti-panel">
