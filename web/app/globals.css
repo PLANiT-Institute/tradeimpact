@@ -4032,3 +4032,42 @@ footer.site .planit-mark {
   font-weight: 600;
   fill: var(--ink-3);
 }
+
+/* --- Home cohort scenario strip (app/page.tsx) ---------------------------- */
+
+.home-scenario-strip {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: flex;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+}
+
+.home-scenario-strip li {
+  display: grid;
+  gap: 0.05rem;
+}
+
+.home-scenario-strip span {
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+}
+
+.home-scenario-strip strong {
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.home-scenario-strip small {
+  font-size: 0.66rem;
+  color: var(--ink-3);
+}
+
+.home-scenario-strip strong em {
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--ink-3);
+}
