@@ -20,6 +20,7 @@ from build_dataset import (  # noqa: E402
     build_countries,
     canonical_floats,
 )
+from build_dataset import build_cohort_comparison  # noqa: E402
 from lifetime_run import run_lifetime  # noqa: E402
 from ti_framework.core.scenarios import run  # noqa: E402
 from ti_framework.core.sensitivity import run_sensitivity  # noqa: E402
@@ -109,6 +110,7 @@ def main() -> int:
         )
     }
     lifetime = json.loads((published / "lifetime_results.json").read_text())
+    comparison = json.loads((published / "cohort_comparison.json").read_text())
     errors: list[str] = []
     runnable = [firm for firm in firms if firm["runnable"]]
     expected_files = {
@@ -125,6 +127,7 @@ def main() -> int:
         "sources.json",
         "destination_inputs.json",
         "lifetime_results.json",
+        "cohort_comparison.json",
         *(f"{firm['slug']}.json" for firm in runnable),
     }
     actual_files = {path.name for path in published.glob("*.json")}
@@ -245,7 +248,13 @@ def main() -> int:
     contract = json.loads((published / "contract.json").read_text())
     compare_values(recomputed_contract, contract, "contract", errors)
 
-    compare_values(run_lifetime(), lifetime, "lifetime_results", errors)
+    recomputed_lifetime = run_lifetime()
+    compare_values(recomputed_lifetime, lifetime, "lifetime_results", errors)
+    # Recomputed from the recomputed run, not from the published file: a comparison that
+    # merely re-read the published cells would agree with itself even if the run had drifted.
+    compare_values(
+        build_cohort_comparison(recomputed_lifetime), comparison, "cohort_comparison", errors
+    )
 
     expected_dataset_sha = json_sha256(
         {
@@ -253,6 +262,7 @@ def main() -> int:
             "firms": firms,
             **alignment,
             "lifetime_results": lifetime,
+            "cohort_comparison": comparison,
             "inputs": {},
             "engine_source_sha256": meta["engine_source_sha256"],
             "workbook_sha256": meta["workbook_sha256"],

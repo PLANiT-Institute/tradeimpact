@@ -3,13 +3,15 @@ import Link from "next/link";
 import {
   SCENARIOS,
   SCENARIO_LABELS,
+  getCohortComparison,
   getImpactReadiness,
   getLifetimeResults,
   getProductCohorts,
   getSources,
   type ProductCohort,
 } from "@/lib/data";
-import { kg, mt } from "@/components/cohort-report";
+import { POWERTRAIN_LABELS, kg, mt } from "@/components/cohort-report";
+import { GapWaterfall } from "@/components/gap-waterfall";
 
 export const metadata: Metadata = {
   title: "Toyota vs Hyundai EU27 cohort — Trade Impact",
@@ -84,6 +86,10 @@ export default function AutomotiveComparison() {
   const readiness = getImpactReadiness();
   const results = getLifetimeResults();
   const lifetimeOf = (cohort: ProductCohort) => results[cohort.cohort_id];
+  const comparison = getCohortComparison();
+  const cohortNames = Object.fromEntries(
+    Object.values(results).map((row) => [row.cohort_id, row.firm]),
+  );
   const sourceIds = new Set([
     ...(toyotaCohort.origin_context?.source_ids ?? []),
     ...(hyundaiCohort.origin_context?.source_ids ?? []),
@@ -226,6 +232,107 @@ export default function AutomotiveComparison() {
           {percent(lifetimeOf(hyundaiCohort).coverage.covered_units, hyundai.total)} of the Hyundai
           cohort are priced. PHEV and FCEV units are withheld with their counts on both sides, so
           the two figures rest on the same rule.
+        </p>
+      </section>
+
+      <section className="alignment-section" id="gap-sources">
+        <header>
+          <div>
+            <p className="eyebrow">00b / where the per-vehicle gap comes from</p>
+            <h2>A cleaner powertrain mix, <em>spent on higher-emitting vehicles</em></h2>
+          </div>
+          <p>
+            Hyundai sells seven times Toyota&apos;s battery-electric share and lands in the
+            gentler destination mix, and still finishes further behind per vehicle. Splitting
+            the gap into the three decisions behind it — which markets, which powertrains, which
+            vehicles — shows why: the first two help, and the third more than spends them.
+          </p>
+        </header>
+        <GapWaterfall
+          comparison={comparison.find((row) => row.scenario === "S2") ?? comparison[0]}
+          names={cohortNames}
+        />
+        <div className="exposure-table-wrap">
+          <table className="exposure-table comparison-table">
+            <caption>
+              The same split under all three pathways. Destination and powertrain mix move with
+              ambition; product intensity does not, because nine in ten covered units emit at a
+              rate fixed on the day they were sold.
+            </caption>
+            <thead>
+              <tr>
+                <th>Pathway</th>
+                <th>Gap</th>
+                <th>Destination mix</th>
+                <th>Powertrain mix</th>
+                <th>Product intensity</th>
+                <th>Residual</th>
+              </tr>
+            </thead>
+            <tbody>
+              {comparison.map((row) => (
+                <tr key={row.scenario}>
+                  <td><strong>{row.scenario}</strong> {SCENARIO_LABELS[row.scenario]}</td>
+                  <td className={row.gap >= 0 ? "pos" : "neg"}>{kg(row.gap)} kg</td>
+                  <td className={row.terms.destination_mix >= 0 ? "pos" : "neg"}>
+                    {kg(row.terms.destination_mix)} kg
+                  </td>
+                  <td className={row.terms.powertrain_mix >= 0 ? "pos" : "neg"}>
+                    {kg(row.terms.powertrain_mix)} kg
+                  </td>
+                  <td className={row.terms.product_intensity >= 0 ? "pos" : "neg"}>
+                    {kg(row.terms.product_intensity)} kg
+                  </td>
+                  <td>{kg(row.residual)} kg</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="exposure-table-wrap">
+          <table className="exposure-table comparison-table">
+            <caption>
+              Per-vehicle lifetime TI inside each powertrain, and each cohort&apos;s share of
+              covered units. The product-intensity term is this table, weighted.
+            </caption>
+            <thead>
+              <tr>
+                <th>Powertrain</th>
+                <th>Toyota share</th><th>Toyota per vehicle (S2)</th>
+                <th>Hyundai share</th><th>Hyundai per vehicle (S2)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Object.entries(
+                comparison.find((row) => row.scenario === "S2")?.by_powertrain ?? {},
+              ).map(([powertrain, rows]) => (
+                <tr key={powertrain}>
+                  <td><strong>{POWERTRAIN_LABELS[powertrain] ?? powertrain}</strong></td>
+                  {[toyotaCohort, hyundaiCohort].flatMap((cohort) => {
+                    const row = rows[cohort.cohort_id];
+                    const value = row?.ti_per_vehicle;
+                    return [
+                      <td key={`${cohort.company_id}-share`}>
+                        {row ? percent(row.unit_share, 1) : "—"}
+                      </td>,
+                      <td
+                        key={`${cohort.company_id}-ti`}
+                        className={value == null ? undefined : value >= 0 ? "pos" : "neg"}
+                      >
+                        {value == null ? "—" : `${kg(value)} kg`}
+                      </td>,
+                    ];
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="table-footnote">
+          The three terms use weights averaged across the two cohorts, which is what makes them
+          sum to the gap; whatever interaction is left over is published as the residual rather
+          than absorbed into a term. Reproduced by{" "}
+          <code>data-pipeline/compare_cohorts.py</code> and re-checked on every dataset build.
         </p>
       </section>
 

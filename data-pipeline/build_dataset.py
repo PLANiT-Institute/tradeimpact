@@ -52,6 +52,7 @@ from adapters.power_koen import SNAPSHOT as KOEN_POWER_SNAPSHOT  # noqa: E402
 from adapters.power_koen import build_records as build_koen_power_records  # noqa: E402
 from adapters.shipping_mol import SNAPSHOT as MOL_SHIPPING_SNAPSHOT  # noqa: E402
 from adapters.shipping_mol import build_records as build_mol_shipping_records  # noqa: E402
+from compare_cohorts import decompose  # noqa: E402
 
 VALIDATION_FIXTURE = ENGINE_DIR / "fixtures" / "reference_case.json"
 
@@ -612,6 +613,26 @@ def build_contract_schema() -> dict:
     return build_contract({"validation": payload})
 
 
+
+def build_cohort_comparison(lifetime: dict[str, dict]) -> list[dict]:
+    """Why two published cohorts differ per vehicle, one record per scenario.
+
+    Only pairs on the same sector, cohort year, and destination scope are comparable, so the
+    pairing is derived from the cohort ids rather than configured. The larger cohort is the
+    baseline: the sign of the gap then reads as "what the smaller seller does differently".
+    """
+    ready = sorted(
+        lifetime.values(), key=lambda payload: payload["coverage"]["total_units"], reverse=True
+    )
+    if len(ready) < 2:
+        return []
+    baseline, compared = ready[0]["cohort_id"], ready[1]["cohort_id"]
+    return [
+        decompose(baseline, compared, scenario, published=lifetime)
+        for scenario in ("S1", "S2", "S3")
+    ]
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     meta = build_meta()
@@ -619,6 +640,7 @@ def main() -> int:
     countries, support_contract = build_countries()
     alignment = build_alignment_data()
     lifetime = run_lifetime()
+    comparison = build_cohort_comparison(lifetime)
     available_company_ids = {row["company_id"] for row in alignment["company_metrics"]}
     cohort_company_ids = {row["company_id"] for row in alignment["product_cohorts"]}
     ready_cohort_ids = {
@@ -679,6 +701,7 @@ def main() -> int:
             "firms": firms,
             **alignment,
             "lifetime_results": lifetime,
+            "cohort_comparison": comparison,
             "inputs": {},
             "engine_source_sha256": meta["engine_source_sha256"],
             "workbook_sha256": meta["workbook_sha256"],
@@ -698,6 +721,7 @@ def main() -> int:
         "sources.json",
         "destination_inputs.json",
         "lifetime_results.json",
+        "cohort_comparison.json",
     }
     removed = _prune_stale_json_outputs(expected_names)
     if removed:
@@ -708,6 +732,7 @@ def main() -> int:
     for name, rows in alignment.items():
         _write_json(OUT / f"{name}.json", rows)
     _write_json(OUT / "lifetime_results.json", lifetime)
+    _write_json(OUT / "cohort_comparison.json", comparison)
     _write_json(OUT / "meta.json", meta)
     cohort_count = len(alignment["product_cohorts"])
     lifetime_result_count = sum(

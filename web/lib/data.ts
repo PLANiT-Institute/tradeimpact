@@ -5,6 +5,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type {
   AlignmentBenchmark,
+  CohortComparison,
   CompanyMetric,
   DestinationInput,
   DestinationPathway,
@@ -48,5 +49,7 @@ export const getFirmResult = (slug: string): FirmResult =>
   read<FirmResult>(`${slug}.json`);
 export const getDestinationInputs = (): DestinationInput[] =>
   read<DestinationInput[]>("destination_inputs.json");
+export const getCohortComparison = (): CohortComparison[] =>
+  read<CohortComparison[]>("cohort_comparison.json");
 export const getLifetimeResults = (): Record<string, LifetimeResult> =>
   read<Record<string, LifetimeResult>>("lifetime_results.json");

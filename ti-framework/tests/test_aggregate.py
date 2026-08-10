@@ -56,6 +56,86 @@ def test_decomposition_identity_holds():
     assert sum(cohort.by_powertrain.values()) == pytest.approx(cohort.total)
 
 
+def _us() -> Country:
+    return Country(
+        name="United States",
+        code="US",
+        grid_intensity=0.37,
+        fleet_intensity_base=0.22,
+        r_fleet=ScenarioRate(s1=0.015, s2=0.03, s3=0.06),
+        r_power=ScenarioRate(s1=0.02, s2=0.04, s3=0.08),
+        status=BenchmarkStatus.COMPUTED,
+        tier=DataTier.A,
+    )
+
+
+def _two_market_placements() -> list[Placement]:
+    """Two markets, two powertrains, and two models sharing one cell."""
+    return [
+        Placement("KR", Vehicle("H", "BEV1", Powertrain.BEV, eta_ev=0.18, tier=DataTier.A), 1000),
+        Placement(
+            "KR", Vehicle("H", "ICE1", Powertrain.ICE, ice_intensity=0.16, tier=DataTier.A), 1500
+        ),
+        Placement(
+            "KR", Vehicle("H", "ICE2", Powertrain.ICE, ice_intensity=0.21, tier=DataTier.A), 500
+        ),
+        Placement("US", Vehicle("H", "BEV1", Powertrain.BEV, eta_ev=0.18, tier=DataTier.A), 800),
+    ]
+
+
+def test_cell_decomposition_reconstructs_both_margins():
+    cohort, _, _ = compute_cohort(
+        "F",
+        2024,
+        Scenario.S2,
+        _two_market_placements(),
+        {"KR": _kr(), "US": _us()},
+        _support(),
+        _cfg(),
+    )
+
+    # Two models in the same market and powertrain collapse into one cell carrying both volumes.
+    assert [(c.country_code, c.powertrain.value) for c in cohort.by_cell] == [
+        ("KR", "BEV"),
+        ("KR", "ICE"),
+        ("US", "BEV"),
+    ]
+    kr_ice = next(c for c in cohort.by_cell if (c.country_code, c.powertrain) == ("KR", Powertrain.ICE))
+    assert kr_ice.units == pytest.approx(2000)
+    assert kr_ice.ti_per_vehicle_kg == pytest.approx(kr_ice.ti_tco2e * 1000 / 2000)
+
+    assert sum(c.ti_tco2e for c in cohort.by_cell) == pytest.approx(cohort.total)
+    for code, value in cohort.by_country.items():
+        row = sum(c.ti_tco2e for c in cohort.by_cell if c.country_code == code)
+        assert row == pytest.approx(value)
+    for key, value in cohort.by_powertrain.items():
+        column = sum(c.ti_tco2e for c in cohort.by_cell if c.powertrain.value == key)
+        assert column == pytest.approx(value)
+
+
+def test_identity_rejects_a_joint_that_disagrees_with_a_margin():
+    """Two margins can both sum to the total while the joint moves weight between them."""
+    cohort, _, _ = compute_cohort(
+        "F",
+        2024,
+        Scenario.S2,
+        _two_market_placements(),
+        {"KR": _kr(), "US": _us()},
+        _support(),
+        _cfg(),
+    )
+    assert decomposition_identity_holds(cohort)
+
+    kr_bev = next(c for c in cohort.by_cell if (c.country_code, c.powertrain) == ("KR", Powertrain.BEV))
+    us_bev = next(c for c in cohort.by_cell if (c.country_code, c.powertrain) == ("US", Powertrain.BEV))
+    shift = 1.0
+    kr_bev.ti_tco2e += shift
+    us_bev.ti_tco2e -= shift
+    # Total and the powertrain margin still reconcile; the country margin no longer does.
+    assert sum(c.ti_tco2e for c in cohort.by_cell) == pytest.approx(cohort.total)
+    assert not decomposition_identity_holds(cohort)
+
+
 def test_zero_volume_contributes_nothing():
     placements = [
         Placement("KR", Vehicle("H", "BEV1", Powertrain.BEV, eta_ev=0.18, tier=DataTier.A), 0),

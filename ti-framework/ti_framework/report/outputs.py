@@ -63,12 +63,26 @@ def portfolio_df(run: RunResult) -> pd.DataFrame:
 
 
 def decomposition_df(run: RunResult) -> pd.DataFrame:
-    rows = []
+    # A cell with no volume has no per-vehicle figure, so the column is nullable.
+    rows: list[dict[str, object]] = []
     for sc, cohort in run.cohorts.items():
         for code, val in cohort.by_country.items():
             rows.append({"scenario": sc.value, "axis": "country", "key": code, "TI_tCO2e": val})
         for pt, val in cohort.by_powertrain.items():
             rows.append({"scenario": sc.value, "axis": "powertrain", "key": pt, "TI_tCO2e": val})
+        # The joint. An analyst reading only the margins cannot tell a bad market from a bad
+        # product sold into it; these rows are what separates the two.
+        for cell in cohort.by_cell:
+            rows.append(
+                {
+                    "scenario": sc.value,
+                    "axis": "cell",
+                    "key": f"{cell.country_code}|{cell.powertrain.value}",
+                    "TI_tCO2e": cell.ti_tco2e,
+                    "units": cell.units,
+                    "TI_per_vehicle_kgCO2e": cell.ti_per_vehicle_kg,
+                }
+            )
     return pd.DataFrame(rows)
 
 
@@ -143,6 +157,16 @@ def to_json_dict(run: RunResult) -> dict:
                 "directional_only": c.directional_only,
                 "by_country": c.by_country,
                 "by_powertrain": c.by_powertrain,
+                "by_cell": [
+                    {
+                        "country": cell.country_code,
+                        "powertrain": cell.powertrain.value,
+                        "TI_tCO2e": cell.ti_tco2e,
+                        "units": cell.units,
+                        "TI_per_vehicle_kgCO2e": cell.ti_per_vehicle_kg,
+                    }
+                    for cell in c.by_cell
+                ],
                 "annual_tCO2e": c.annual,
                 "excluded_flag_markets": c.excluded_flag_markets,
                 "warnings": c.warnings,

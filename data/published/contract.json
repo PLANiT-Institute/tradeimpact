@@ -1,6 +1,7 @@
 {
   "cohort": [
     "annual_tCO2e",
+    "by_cell",
     "by_country",
     "by_powertrain",
     "direction",
