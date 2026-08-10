@@ -1,15 +1,20 @@
 import Link from "next/link";
 import {
+  SCENARIOS,
+  SCENARIO_LABELS,
   getImpactReadiness,
+  getLifetimeResults,
   getMeta,
   getProductCohorts,
   getSectors,
 } from "@/lib/data";
+import { kg, mt } from "@/components/cohort-report";
 
 export default function Home() {
   const meta = getMeta();
   const cohorts = getProductCohorts();
   const readiness = getImpactReadiness()[0];
+  const results = getLifetimeResults();
   const sectors = getSectors();
   const destinations = new Set(
     cohorts.flatMap((cohort) => cohort.records.map((record) => record.destination_geography)),
@@ -69,7 +74,7 @@ export default function Home() {
           <div><strong>{observedUnits.toLocaleString("en-US")}</strong><span>observed 2024 registrations</span></div>
           <div><strong>{cohorts.length}</strong><span>company cohorts on one boundary</span></div>
           <div><strong>{destinations}</strong><span>destination countries mapped</span></div>
-          <div><strong>{meta.impact_contract.published_lifetime_results}</strong><span>lifetime results released before evidence gate</span></div>
+          <div><strong>{meta.impact_contract.published_lifetime_results}</strong><span>lifetime results past the evidence gate</span></div>
         </div>
       </section>
 
@@ -120,9 +125,31 @@ export default function Home() {
             {cohorts.map((cohort) => (
               <div className="declaration pilot-declaration impact-pilot-card" key={cohort.cohort_id}>
                 <div>
-                  <span className="status-chip observed">Observed</span>
+                  <span className="status-chip observed">Lifetime result published</span>
                   <h3>{cohort.company_name} · EU27 passenger cars</h3>
-                  <p className="panel-note">{cohort.coverage.reported_units.toLocaleString("en-US")} registrations · destination → product → use-phase input gate.</p>
+                  <p className="panel-note">
+                    {cohort.coverage.reported_units.toLocaleString("en-US")} registrations ·{" "}
+                    {(results[cohort.cohort_id].coverage.covered_share * 100).toFixed(1)}% covered ·{" "}
+                    {kg(
+                      (results[cohort.cohort_id].cohorts.S2.total_tCO2e * 1000) /
+                        results[cohort.cohort_id].coverage.covered_units,
+                    )}{" "}
+                    kgCO₂e per vehicle under national commitments.
+                  </p>
+                  <ul className="home-scenario-strip">
+                    {SCENARIOS.map((scenario) => {
+                      const value = results[cohort.cohort_id].cohorts[scenario].total_tCO2e;
+                      return (
+                        <li key={scenario}>
+                          <span>{scenario}</span>
+                          <strong className={value >= 0 ? "pos" : "neg"}>
+                            {mt(value, 1)} <em>Mt</em>
+                          </strong>
+                          <small>{SCENARIO_LABELS[scenario]}</small>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
                 <Link className="button secondary" href={`/analysis/${cohort.company_id}`}>Inspect cohort →</Link>
               </div>
@@ -133,7 +160,7 @@ export default function Home() {
             </div>
             <div className="readiness-line">
               <strong>Current publication decision</strong>
-              <span>Lifetime TI withheld</span>
+              <span>{readiness.publication_decision.replaceAll("_", " ")}</span>
               <p>{readiness.publication_reason}</p>
             </div>
           </div>

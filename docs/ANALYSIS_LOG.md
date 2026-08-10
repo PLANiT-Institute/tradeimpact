@@ -372,3 +372,44 @@ x축 최대가 도요타 109,158대 vs 현대 40,381대라 같은 가로 위치�
 1. **롤링 포트폴리오** — EEA 2022·2023 재수집. 별도 데이터 작업.
 2. **PHEV·FCEV 보류 해제** — UF·수소강도 미수집.
 3. 홈(`/`)이 아직 재설계 이전 문구 — "hidden GHG" 류 표현이 남아 있는지 점검.
+
+---
+
+## 사이클 9 — 2026-08-10 15:20~15:35 KST
+
+**과제.** 사이클 8이 남긴 3번 — 홈(`/`)의 재설계 이전 문구 점검.
+
+**발견 — 홈이 사이클 1의 기업 페이지와 같은 병을 앓고 있었다.**
+
+1. `<span>Lifetime TI withheld</span>` — "현재 공표 결정: lifetime TI 보류". **거짓.**
+   두 코호트 모두 공표 중이고 같은 카드 아래 `readiness.publication_reason`은
+   "publish_partial_lifetime_ti" 근거를 설명하고 있었다. 라벨과 근거가 서로 반대.
+2. `lifetime results released before evidence gate` — 게이트를 **통과하기 전에** 결과를
+   냈다는 뜻으로 읽힌다. 실제 의미는 반대(게이트를 통과한 결과 수).
+3. 두 회사 결과가 홈 어디에도 없었다. 사이트 첫 화면이 자기 주요 발견을 안 보여주고
+   "See the lifetime result" 버튼으로만 안내.
+
+**조치.**
+
+- 공표 결정 라벨을 `readiness.publication_decision`에서 직접 렌더 → "publish partial
+  lifetime ti". 손으로 쓴 문구가 데이터와 어긋날 자리를 없앰.
+- 팩트 스트립 4번째 셀을 "lifetime results **past** the evidence gate"로.
+- 코호트 카드에 칩을 "Observed" → "Lifetime result published"로 바꾸고, 커버율·대당값과
+  **S1/S2/S3 밴드**를 카드 안에 실었다. 도요타 −1.4 / −6.0 / −13.9 Mt, 현대 −1.5 /
+  −3.7 / −7.8 Mt. 백서 §3.9의 "S1–S3 폭 = 정책리스크 노출도"가 첫 화면에서 바로 보인다.
+- 남은 "withheld" 1건은 정당 — PHEV·FCEV를 대수와 함께 보류한다는 공표 사유 본문.
+
+**패턴.** 사이클 1(기업 페이지), 사이클 6(섹션 순서), 사이클 9(홈)가 전부 같은 원인이다.
+**손으로 쓴 상태 문구가 데이터가 바뀔 때 따라오지 않는다.** 이번엔 라벨을 데이터에서
+직접 렌더하는 쪽으로 고쳤다. 남은 하드코딩 상태 문구를 한 번 훑을 가치가 있다.
+
+**검증.** pytest 101/101 · `check_published.py` OK · web 9/9 · tsc OK · `next build` OK ·
+새 탭 콘솔 에러 0. 홈 본문에서 stale 문구 스캔(`withheld`/`before evidence gate`/
+`Inputs incomplete`) — 정당한 1건만 남음.
+
+**남긴 과제.**
+
+1. **하드코딩 상태 문구 전수 점검.** 세 번 같은 병이 나왔으므로 `data/published`를
+   읽지 않고 손으로 쓴 상태·결정 문구를 웹 전체에서 찾아 데이터 파생으로 바꿀 것.
+2. **롤링 포트폴리오** — EEA 2022·2023 재수집. 별도 데이터 작업.
+3. **PHEV·FCEV 보류 해제** — UF·수소강도 미수집.
