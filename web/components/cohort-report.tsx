@@ -435,17 +435,6 @@ export function CohortSection({
       </div>
 
       <div className="ti-panel">
-        <h3>Which market-and-powertrain combinations carry it</h3>
-        <p className="muted">
-          The two decompositions above are margins: they say which destinations matter and which
-          products matter, but not which pairing of the two does. This is the joint. A cell far
-          to the right sells in volume; a cell far below the line emits far above the benchmark
-          it is measured against; a cell that is both is where the result actually comes from.
-        </p>
-        <CellScatter result={result} />
-      </div>
-
-      <div className="ti-panel">
         <h3>Where the exposure sits</h3>
         <p className="muted">Top 12 destinations by national commitments (S2) exposure.</p>
         <DivergingBars rows={destinationRows} unit="Mt" height={18} />
@@ -499,6 +488,17 @@ export function CohortSection({
             </tbody>
           </table>
         </details>
+      </div>
+
+      <div className="ti-panel">
+        <h3>Which market-and-powertrain combinations carry it</h3>
+        <p className="muted">
+          The two decompositions above are margins: they say which destinations matter and which
+          products matter, but not which pairing of the two does. This is the joint. A cell far
+          to the right sells in volume; a cell far below the line emits far above the benchmark
+          it is measured against; a cell that is both is where the result actually comes from.
+        </p>
+        <CellScatter result={result} />
       </div>
 
       <div className="ti-panel">
