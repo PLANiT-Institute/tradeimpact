@@ -9,9 +9,9 @@ import {
   getProductCohorts,
   getSources,
   type ProductCohort,
+  type Scenario,
 } from "@/lib/data";
-import { POWERTRAIN_LABELS, kg, mt } from "@/components/cohort-report";
-import { GapWaterfall } from "@/components/gap-waterfall";
+import { DivergingBars, POWERTRAIN_LABELS, kg, mt, type Row } from "@/components/cohort-report";
 
 export const metadata: Metadata = {
   title: "Toyota vs Hyundai EU27 cohort — Trade Impact",
@@ -87,9 +87,31 @@ export default function AutomotiveComparison() {
   const results = getLifetimeResults();
   const lifetimeOf = (cohort: ProductCohort) => results[cohort.cohort_id];
   const comparison = getCohortComparison();
-  const cohortNames = Object.fromEntries(
-    Object.values(results).map((row) => [row.cohort_id, row.firm]),
-  );
+  const byScenario = Object.fromEntries(comparison.map((row) => [row.scenario, row]));
+  // Each term under all three pathways. Reading them together is what shows that the two
+  // favourable terms grow with ambition while the unfavourable one does not move at all.
+  const gapRows: Row[] = (
+    [
+      ["destination_mix", "Destination mix"],
+      ["powertrain_mix", "Powertrain mix"],
+      ["product_intensity", "Product intensity"],
+      ["residual", "Residual"],
+      ["gap", "Net per-vehicle gap"],
+    ] as const
+  ).map(([key, label]) => ({
+    key,
+    label,
+    values: Object.fromEntries(
+      SCENARIOS.map((s) => [
+        s,
+        key === "gap"
+          ? byScenario[s].gap
+          : key === "residual"
+            ? byScenario[s].residual
+            : byScenario[s].terms[key],
+      ]),
+    ) as Record<Scenario, number>,
+  }));
   const sourceIds = new Set([
     ...(toyotaCohort.origin_context?.source_ids ?? []),
     ...(hyundaiCohort.origin_context?.source_ids ?? []),
@@ -245,50 +267,21 @@ export default function AutomotiveComparison() {
             Hyundai sells seven times Toyota&apos;s battery-electric share and lands in the
             gentler destination mix, and still finishes further behind per vehicle. Splitting
             the gap into the three decisions behind it — which markets, which powertrains, which
-            vehicles — shows why: the first two help, and the third more than spends them.
+            vehicles — shows why: the first two help, and the third more than spends them. It
+            also shows which of the three depends on how ambitious the pathway is. Both
+            favourable terms move with the scenario; the unfavourable one is the same number
+            under all three, because nine in ten covered units emit at a rate fixed on the day
+            they were sold and the benchmark they are measured against is common to both.
           </p>
         </header>
-        <GapWaterfall
-          comparison={comparison.find((row) => row.scenario === "S2") ?? comparison[0]}
-          names={cohortNames}
-        />
-        <div className="exposure-table-wrap">
-          <table className="exposure-table comparison-table">
-            <caption>
-              The same split under all three pathways. Destination and powertrain mix move with
-              ambition; product intensity does not, because nine in ten covered units emit at a
-              rate fixed on the day they were sold.
-            </caption>
-            <thead>
-              <tr>
-                <th>Pathway</th>
-                <th>Gap</th>
-                <th>Destination mix</th>
-                <th>Powertrain mix</th>
-                <th>Product intensity</th>
-                <th>Residual</th>
-              </tr>
-            </thead>
-            <tbody>
-              {comparison.map((row) => (
-                <tr key={row.scenario}>
-                  <td><strong>{row.scenario}</strong> {SCENARIO_LABELS[row.scenario]}</td>
-                  <td className={row.gap >= 0 ? "pos" : "neg"}>{kg(row.gap)} kg</td>
-                  <td className={row.terms.destination_mix >= 0 ? "pos" : "neg"}>
-                    {kg(row.terms.destination_mix)} kg
-                  </td>
-                  <td className={row.terms.powertrain_mix >= 0 ? "pos" : "neg"}>
-                    {kg(row.terms.powertrain_mix)} kg
-                  </td>
-                  <td className={row.terms.product_intensity >= 0 ? "pos" : "neg"}>
-                    {kg(row.terms.product_intensity)} kg
-                  </td>
-                  <td>{kg(row.residual)} kg</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <DivergingBars rows={gapRows} unit="kg" height={34} />
+        <p className="muted ti-gap-note">
+          Bars are kgCO₂e per covered vehicle over the operating life. Right of the axis means
+          Hyundai gains against Toyota on that count; left means it loses. The first four rows
+          add up to the fifth. Toyota&apos;s own result is{" "}
+          {kg(byScenario.S2.per_vehicle[toyotaCohort.cohort_id])} kg per vehicle under S2 and
+          Hyundai&apos;s is {kg(byScenario.S2.per_vehicle[hyundaiCohort.cohort_id])} kg.
+        </p>
         <div className="exposure-table-wrap">
           <table className="exposure-table comparison-table">
             <caption>
@@ -303,9 +296,7 @@ export default function AutomotiveComparison() {
               </tr>
             </thead>
             <tbody>
-              {Object.entries(
-                comparison.find((row) => row.scenario === "S2")?.by_powertrain ?? {},
-              ).map(([powertrain, rows]) => (
+              {Object.entries(byScenario.S2.by_powertrain).map(([powertrain, rows]) => (
                 <tr key={powertrain}>
                   <td><strong>{POWERTRAIN_LABELS[powertrain] ?? powertrain}</strong></td>
                   {[toyotaCohort, hyundaiCohort].flatMap((cohort) => {
