@@ -30,6 +30,7 @@ standard), `S3` 1.5 °C-aligned. Always reported together.
 | file | source | how obtained | note |
 |---|---|---|---|
 | `eu_climate_targets.csv` | EU legislation and Commission documents (links below) | **hand-transcribed** table of the target anchors: 2030 −55 % and 2040 −90 % economy-wide vs 1990, EU domestic transport 2023 → 2030 pathway (795.6 → 583.0 MtCO2e) | targets are legal texts, not downloadable series; the row's `source_id` links the text |
+| `ndc_anchors.csv` | UNFCCC NDC Registry (`unfccc_ndc_registry`) | **hand-transcribed** NDC status for the non-EU importers: US = FLAG market (no NDC in force after the 2025 Paris withdrawal took effect), AU = 43 % below 2005 by 2030 | every row carries `verified = no` until checked against the registry text; nothing downstream consumes an unverified row |
 
 ## Sources
 

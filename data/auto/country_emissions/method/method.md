@@ -33,14 +33,20 @@ World in Data, downloaded 2026-08-09. Source ids `eurostat_env_air_gge_crf1a3b1`
 resolve in [`../../sources.csv`](../../sources.csv); the file hash is in
 [`../../raw_files.csv`](../../raw_files.csv).
 
-To collect for the other importers: US — EPA GHG Inventory (passenger cars) and eGRID or
-Ember for grid; Australia — DCCEEW National Inventory and AEMO or Ember for grid.
+Second raw file: `owid_carbon_intensity_electricity.csv` — the full OWID grapher export of
+Ember grid intensity (all entities), downloaded 2026-09-04; used for the United States and
+Australia (`source_id` `owid_ember_grid_intensity`, hash in `raw_files.csv`).
+
+Still to collect: US passenger-car CO2 (EPA GHG Inventory, transport / light-duty) and
+Australia passenger-car CO2 (DCCEEW National Inventory, transport). Grid intensity for both
+is done.
 
 ## Processed files
 
 | processed file | script | content |
 |---|---|---|
 | `country_emissions_eu27.csv` | `script/auto/country_emissions/extract_eu27_snapshot.py` | `car_co2` and `grid_intensity` for 27 markets, EU27 `power_co2` and `transport_ghg` from 1990 |
+| `country_emissions_owid_grid.csv` | `script/auto/country_emissions/extract_owid_grid.py` | `grid_intensity` for US and AU, all years Ember publishes |
 
 ## Processing method
 
