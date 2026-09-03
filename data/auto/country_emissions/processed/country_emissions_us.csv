@@ -1,0 +1,8 @@
+country,series,year,value,unit,source_id,source_file
+US,car_co2,1990,632600.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_table_3_13.csv
+US,car_co2,2005,529100.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_table_3_13.csv
+US,car_co2,2019,361300.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_table_3_13.csv
+US,car_co2,2020,299800.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_table_3_13.csv
+US,car_co2,2021,316100.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_table_3_13.csv
+US,car_co2,2022,298500.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_table_3_13.csv
+US,car_co2,2023,295400.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_table_3_13.csv

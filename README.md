@@ -60,16 +60,12 @@ proxy (tier C), so under guideline §5.3 their figures are published as a **dire
 magnitude** (`ti_data_quality_eu27.csv`, `directional_only`); Hyundai (48.6 %) and Kia
 (48.4 %) sit just under the 50 % rule and are magnitude-bearing but proxy-heavy.
 
-Setup and full run:
+Setup and full run (every extraction, derivation and model step, then lint and tests; stops
+at the first failure):
 
 ```bash
-uv venv .venv && uv pip install -e ".[dev]" --python .venv/bin/python
-for s in sales/extract_eea_registrations sales/extract_kia_ir sales/extract_hyundai_ir \
-         vehicle_technology/extract_eea_certified vehicle_usage/extract_eu27_eurostat \
-         country_emissions/extract_eu27_snapshot emission_targets/derive_eu27_rates \
-         model/build_reference model/build_ti model/build_sensitivity model/aggregate_country \
-         model/build_data_quality model/build_database; do
-  .venv/bin/python script/auto/$s.py; done
+uv venv .venv && uv pip install pandas openpyxl ruff pytest --python .venv/bin/python
+.venv/bin/python script/auto/run_all.py
 ```
 
 ## Naming convention

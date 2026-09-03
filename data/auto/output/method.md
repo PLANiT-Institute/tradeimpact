@@ -69,15 +69,10 @@ use the 1-Jan-2025 partition while stock uses 2024.
 
 ## Run order
 
-```bash
-.venv/bin/python script/auto/emission_targets/derive_eu27_rates.py
-.venv/bin/python script/auto/model/build_reference.py
-.venv/bin/python script/auto/model/build_ti.py
-.venv/bin/python script/auto/model/build_sensitivity.py
-.venv/bin/python script/auto/model/aggregate_country.py
-.venv/bin/python script/auto/model/build_data_quality.py
-.venv/bin/python script/auto/model/build_database.py
-```
+`script/auto/run_all.py` runs everything (extraction, `derive_eu27_rates.py`,
+`build_reference.py`, `build_ti.py`, `build_sensitivity.py`, `aggregate_country.py`,
+`build_data_quality.py`, `build_database.py`, then ruff and pytest) and exits non-zero at the
+first failure. The model scripts can also be run individually in that order.
 
 The last step writes `data/auto/tradeimpact_auto.sqlite` — every input, lookup, processed
 dataset, output table, the source registry and raw-file provenance in one database.
