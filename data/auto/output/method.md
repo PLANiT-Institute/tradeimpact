@@ -10,6 +10,8 @@ nothing here is edited by hand. EU27 × 2024 × {Toyota, Hyundai} is the first c
 | `ti_by_model_eu27.csv` | 4 | `build_ti.py` | company × destination × model × powertrain × scenario: units, lifetime, distance + tier, real-world factor, year-0 product and benchmark emissions, `ti_per_vehicle_kgco2e`, `ti_tco2e` |
 | `ti_annual_eu27.csv` | 4 | `build_ti.py` | company × scenario × t: annual TI flow (tCO2e) and surviving vehicles |
 | `ti_withheld_eu27.csv` | 4 | `build_ti.py` | units carrying no result and why (PHEV: no utility factor; FCEV: no hydrogen intensity; no certified value) |
+| `ti_crossover_eu27.csv` | 4b | `build_sensitivity.py` | company × destination × model × powertrain × scenario: closed-form crossover year (years after sale and calendar year) or the reason there is none |
+| `ti_sensitivity_eu27.csv` | 4b | `build_sensitivity.py` | company × scenario × dimension (lifetime ±3 y, real-world factor low/high, proxied-distance quartiles) × variant: cohort total |
 | `ti_country_eu27.csv` | 5 | `aggregate_country.py` | company × destination × scenario: units, `ti_tco2e`, per-vehicle, direction |
 | `ti_powertrain_eu27.csv` | 5 | `aggregate_country.py` | company × powertrain × scenario |
 | `ti_company_eu27.csv` | 5 | `aggregate_country.py` | company × scenario: covered/withheld units, total, per-vehicle, direction, decomposition identity check |
@@ -32,6 +34,7 @@ Destination parameters (distance, fleet intensity, grid, lifetime, tiers) match
 .venv/bin/python script/auto/emission_targets/derive_eu27_rates.py
 .venv/bin/python script/auto/model/build_reference.py
 .venv/bin/python script/auto/model/build_ti.py
+.venv/bin/python script/auto/model/build_sensitivity.py
 .venv/bin/python script/auto/model/aggregate_country.py
 .venv/bin/python script/auto/model/build_database.py
 ```
