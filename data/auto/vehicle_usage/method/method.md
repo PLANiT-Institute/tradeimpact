@@ -34,11 +34,23 @@ Only `road_tf_veh` (TER_REGNAT: traffic by cars registered in the country) is us
 distance — it is the same population as the stock denominator; `road_tf_vehmov` counts all
 traffic on the territory and is kept only as a documented series, never divided by stock.
 
+United States: `fhwa_vm1_2023.xlsx` — FHWA Highway Statistics Table VM-1 (`fhwa_vm1_2023`),
+vehicle-miles and registrations by vehicle class for 2023 and 2022. FHWA classes light-duty
+vehicles by wheelbase, not body type: the short-WB class (cars, light vans, small SUVs) is the
+closest match to the EU M1 population and is published as `car_stock` / `car_traffic` (tier B
+for the definitional mismatch); the long-WB class (pickups, large SUVs) is kept as separate
+`ldv_long_wb_*` series. No age-band series is in VM-1, so US operating life needs another
+source (BTS / Argonne VISION survival tables) before a US result can run.
+
+Australia: still to collect — ABS Motor Vehicle Census (stock, last edition 31 Jan 2021) and
+BITRE yearbook (passenger-vehicle km); both are report-shaped downloads.
+
 ## Processed files
 
 | processed file | script | content |
 |---|---|---|
 | `vehicle_usage_eu27.csv` | `script/auto/vehicle_usage/extract_eu27_eurostat.py` | all four series, all 27 markets, 2015 onward, long format |
+| `vehicle_usage_us.csv` | `script/auto/vehicle_usage/extract_fhwa_vm1.py` | US `car_stock`, `car_traffic` (short WB) and `ldv_long_wb_*`, 2022–2023 |
 
 ## Sources for the gaps
 
