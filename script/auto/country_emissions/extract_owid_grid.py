@@ -33,11 +33,17 @@ def main() -> None:
             code = IMPORTERS.get(row["Code"])
             if code is None or row["Carbon intensity"] == "":
                 continue
-            out.append({
-                "country": code, "series": "grid_intensity", "year": int(row["Year"]),
-                "value": float(row["Carbon intensity"]), "unit": "gCO2_per_kWh",
-                "source_id": SOURCE_ID, "source_file": RAW.name,
-            })
+            out.append(
+                {
+                    "country": code,
+                    "series": "grid_intensity",
+                    "year": int(row["Year"]),
+                    "value": float(row["Carbon intensity"]),
+                    "unit": "gCO2_per_kWh",
+                    "source_id": SOURCE_ID,
+                    "source_file": RAW.name,
+                }
+            )
     out.sort(key=lambda r: (str(r["country"]), int(str(r["year"]))))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w", newline="") as f:
@@ -46,7 +52,9 @@ def main() -> None:
         w.writerows(out)
     for code in IMPORTERS.values():
         years = [int(str(r["year"])) for r in out if r["country"] == code]
-        print(f"{code}: {len(years)} years, {min(years)}-{max(years)}" if years else f"{code}: none")
+        print(
+            f"{code}: {len(years)} years, {min(years)}-{max(years)}" if years else f"{code}: none"
+        )
     print(f"{OUT.relative_to(REPO)}: {len(out)} rows")
 
 
