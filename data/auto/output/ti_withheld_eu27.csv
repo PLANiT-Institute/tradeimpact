@@ -1,0 +1,180 @@
+company,destination,model,powertrain,units,reason
+hyundai,DE,,BEV,8,the registration dataset reports no certified intensity for this cell
+hyundai,DE,AX1,BEV,8,the registration dataset reports no certified intensity for this cell
+hyundai,DE,CE,BEV,2,the registration dataset reports no certified intensity for this cell
+hyundai,DE,CE EV,BEV,1,the registration dataset reports no certified intensity for this cell
+hyundai,DE,CE N,BEV,6,the registration dataset reports no certified intensity for this cell
+hyundai,DE,CE PE,BEV,1,the registration dataset reports no certified intensity for this cell
+hyundai,DE,CV E GT,BEV,1,the registration dataset reports no certified intensity for this cell
+hyundai,DE,IONIQ9,BEV,1,the registration dataset reports no certified intensity for this cell
+hyundai,DE,JW,BEV,1,the registration dataset reports no certified intensity for this cell
+hyundai,DE,JW1 EV,BEV,1,the registration dataset reports no certified intensity for this cell
+hyundai,DE,ME,BEV,4,the registration dataset reports no certified intensity for this cell
+hyundai,DE,NE PE,BEV,5,the registration dataset reports no certified intensity for this cell
+hyundai,DE,NE-N,BEV,2,the registration dataset reports no certified intensity for this cell
+hyundai,DE,SX2,BEV,1,the registration dataset reports no certified intensity for this cell
+hyundai,DE,SX2 E,BEV,2,the registration dataset reports no certified intensity for this cell
+hyundai,BE,NEXO,FCEV,2,no sourced hydrogen supply emissions intensity for the destination
+hyundai,DE,NEXO,FCEV,8,no sourced hydrogen supply emissions intensity for the destination
+hyundai,DE,NH2,FCEV,2,no sourced hydrogen supply emissions intensity for the destination
+hyundai,ES,NEXO,FCEV,7,no sourced hydrogen supply emissions intensity for the destination
+hyundai,FR,NEXO,FCEV,1,no sourced hydrogen supply emissions intensity for the destination
+hyundai,SE,NEXO,FCEV,2,no sourced hydrogen supply emissions intensity for the destination
+hyundai,DE,PALISADE,HEV,2,the registration dataset reports no certified intensity for this cell
+hyundai,DE,I20 N RALLY 2,ICE,17,the registration dataset reports no certified intensity for this cell
+hyundai,DE,PALISADE,ICE,1,the registration dataset reports no certified intensity for this cell
+hyundai,RO,TUCSON IX35 LM,ICE,1,the registration dataset reports no certified intensity for this cell
+hyundai,AT,SANTA FE,PHEV,140,no sourced utility factor: the registration data publish only combined values
+hyundai,AT,TUCSON IX35,PHEV,312,no sourced utility factor: the registration data publish only combined values
+hyundai,BE,SANTA FE,PHEV,44,no sourced utility factor: the registration data publish only combined values
+hyundai,BE,TUCSON IX35,PHEV,1192,no sourced utility factor: the registration data publish only combined values
+hyundai,BG,SANTA FE,PHEV,31,no sourced utility factor: the registration data publish only combined values
+hyundai,BG,TUCSON IX35,PHEV,129,no sourced utility factor: the registration data publish only combined values
+hyundai,CY,SANTA FE,PHEV,4,no sourced utility factor: the registration data publish only combined values
+hyundai,CY,TUCSON IX35,PHEV,59,no sourced utility factor: the registration data publish only combined values
+hyundai,CZ,SANTA FE,PHEV,63,no sourced utility factor: the registration data publish only combined values
+hyundai,CZ,TUCSON IX35,PHEV,219,no sourced utility factor: the registration data publish only combined values
+hyundai,DE,MX-5,PHEV,2,no sourced utility factor: the registration data publish only combined values
+hyundai,DE,SANTA FE,PHEV,845,no sourced utility factor: the registration data publish only combined values
+hyundai,DE,TUCSON IX35,PHEV,3501,no sourced utility factor: the registration data publish only combined values
+hyundai,DK,SANTA FE,PHEV,47,no sourced utility factor: the registration data publish only combined values
+hyundai,DK,TUCSON IX35,PHEV,205,no sourced utility factor: the registration data publish only combined values
+hyundai,EE,SANTA FE,PHEV,7,no sourced utility factor: the registration data publish only combined values
+hyundai,EE,TUCSON IX35,PHEV,19,no sourced utility factor: the registration data publish only combined values
+hyundai,ES,SANTA FE,PHEV,363,no sourced utility factor: the registration data publish only combined values
+hyundai,ES,TUCSON IX35,PHEV,2249,no sourced utility factor: the registration data publish only combined values
+hyundai,FI,SANTA FE,PHEV,29,no sourced utility factor: the registration data publish only combined values
+hyundai,FI,TUCSON IX35,PHEV,337,no sourced utility factor: the registration data publish only combined values
+hyundai,FR,SANTA FE,PHEV,814,no sourced utility factor: the registration data publish only combined values
+hyundai,FR,TUCSON IX35,PHEV,1642,no sourced utility factor: the registration data publish only combined values
+hyundai,GR,SANTA FE,PHEV,8,no sourced utility factor: the registration data publish only combined values
+hyundai,GR,TUCSON IX35,PHEV,84,no sourced utility factor: the registration data publish only combined values
+hyundai,HR,SANTA FE,PHEV,3,no sourced utility factor: the registration data publish only combined values
+hyundai,HR,TUCSON IX35,PHEV,41,no sourced utility factor: the registration data publish only combined values
+hyundai,HU,SANTA FE,PHEV,33,no sourced utility factor: the registration data publish only combined values
+hyundai,HU,TUCSON IX35,PHEV,295,no sourced utility factor: the registration data publish only combined values
+hyundai,IE,SANTA FE,PHEV,258,no sourced utility factor: the registration data publish only combined values
+hyundai,IE,TUCSON IX35,PHEV,1048,no sourced utility factor: the registration data publish only combined values
+hyundai,IT,SANTA FE,PHEV,30,no sourced utility factor: the registration data publish only combined values
+hyundai,IT,TUCSON IX35,PHEV,614,no sourced utility factor: the registration data publish only combined values
+hyundai,LT,SANTA FE,PHEV,7,no sourced utility factor: the registration data publish only combined values
+hyundai,LT,TUCSON IX35,PHEV,41,no sourced utility factor: the registration data publish only combined values
+hyundai,LU,SANTA FE,PHEV,6,no sourced utility factor: the registration data publish only combined values
+hyundai,LU,TUCSON IX35,PHEV,83,no sourced utility factor: the registration data publish only combined values
+hyundai,LV,SANTA FE,PHEV,14,no sourced utility factor: the registration data publish only combined values
+hyundai,LV,TUCSON IX35,PHEV,7,no sourced utility factor: the registration data publish only combined values
+hyundai,MT,TUCSON IX35,PHEV,12,no sourced utility factor: the registration data publish only combined values
+hyundai,NL,SANTA FE,PHEV,173,no sourced utility factor: the registration data publish only combined values
+hyundai,NL,TUCSON IX35,PHEV,1938,no sourced utility factor: the registration data publish only combined values
+hyundai,PL,SANTA FE,PHEV,96,no sourced utility factor: the registration data publish only combined values
+hyundai,PL,TUCSON IX35,PHEV,74,no sourced utility factor: the registration data publish only combined values
+hyundai,PT,SANTA FE,PHEV,46,no sourced utility factor: the registration data publish only combined values
+hyundai,PT,TUCSON IX35,PHEV,213,no sourced utility factor: the registration data publish only combined values
+hyundai,RO,SANTA FE,PHEV,85,no sourced utility factor: the registration data publish only combined values
+hyundai,RO,TUCSON IX35,PHEV,490,no sourced utility factor: the registration data publish only combined values
+hyundai,SE,SANTA FE,PHEV,149,no sourced utility factor: the registration data publish only combined values
+hyundai,SE,TUCSON IX35,PHEV,334,no sourced utility factor: the registration data publish only combined values
+hyundai,SI,SANTA FE,PHEV,19,no sourced utility factor: the registration data publish only combined values
+hyundai,SI,TUCSON / 1.6 / T-GDI PHEV AUT. 4WD,PHEV,3,no sourced utility factor: the registration data publish only combined values
+hyundai,SI,TUCSON IX35,PHEV,92,no sourced utility factor: the registration data publish only combined values
+hyundai,SK,SANTA FE,PHEV,36,no sourced utility factor: the registration data publish only combined values
+hyundai,SK,TUCSON IX35,PHEV,39,no sourced utility factor: the registration data publish only combined values
+toyota,BE,BZ4X,BEV,1,the registration dataset reports no certified intensity for this cell
+toyota,DE,PROACE VERSO,BEV,7,the registration dataset reports no certified intensity for this cell
+toyota,AT,TOYOTA MIRAI,FCEV,1,no sourced hydrogen supply emissions intensity for the destination
+toyota,BE,TOYOTA MIRAI,FCEV,4,no sourced hydrogen supply emissions intensity for the destination
+toyota,DE,TOYOTA MIRAI,FCEV,148,no sourced hydrogen supply emissions intensity for the destination
+toyota,EE,TOYOTA MIRAI,FCEV,5,no sourced hydrogen supply emissions intensity for the destination
+toyota,FR,TOYOTA MIRAI,FCEV,530,no sourced hydrogen supply emissions intensity for the destination
+toyota,HU,TOYOTA MIRAI,FCEV,1,no sourced hydrogen supply emissions intensity for the destination
+toyota,IT,TOYOTA MIRAI,FCEV,1,no sourced hydrogen supply emissions intensity for the destination
+toyota,DE,SEQUOIA HYBRID,HEV,3,the registration dataset reports no certified intensity for this cell
+toyota,DE,SEQUOIA TRD PRO HYBRID,HEV,1,the registration dataset reports no certified intensity for this cell
+toyota,DE,TOYOTA SEQUOIA,HEV,1,the registration dataset reports no certified intensity for this cell
+toyota,DE,TOYOTA SEQUOIA HYBRID,HEV,5,the registration dataset reports no certified intensity for this cell
+toyota,DE,CAMRY LE,ICE,6,the registration dataset reports no certified intensity for this cell
+toyota,DE,CAMRY SE,ICE,1,the registration dataset reports no certified intensity for this cell
+toyota,DE,COROLLA GR,ICE,1,the registration dataset reports no certified intensity for this cell
+toyota,DE,HIGHLANDER XLE,ICE,1,the registration dataset reports no certified intensity for this cell
+toyota,DE,LAND CRUISER 300 SERIES,ICE,3,the registration dataset reports no certified intensity for this cell
+toyota,DE,TOYOTA 4-RUNNER,ICE,1,the registration dataset reports no certified intensity for this cell
+toyota,DE,TOYOTA COROLLA GR,ICE,1,the registration dataset reports no certified intensity for this cell
+toyota,AT,TOYOTA C-HR,PHEV,96,no sourced utility factor: the registration data publish only combined values
+toyota,AT,TOYOTA PRIUS PHEV,PHEV,59,no sourced utility factor: the registration data publish only combined values
+toyota,AT,TOYOTA RAV4,PHEV,196,no sourced utility factor: the registration data publish only combined values
+toyota,BE,TOYOTA C-HR,PHEV,158,no sourced utility factor: the registration data publish only combined values
+toyota,BE,TOYOTA PRIUS PHEV,PHEV,74,no sourced utility factor: the registration data publish only combined values
+toyota,BE,TOYOTA RAV4,PHEV,691,no sourced utility factor: the registration data publish only combined values
+toyota,BG,TOYOTA C-HR,PHEV,66,no sourced utility factor: the registration data publish only combined values
+toyota,BG,TOYOTA PRIUS PHEV,PHEV,11,no sourced utility factor: the registration data publish only combined values
+toyota,BG,TOYOTA RAV4,PHEV,215,no sourced utility factor: the registration data publish only combined values
+toyota,CY,RAV4,PHEV,1,no sourced utility factor: the registration data publish only combined values
+toyota,CY,TOYOTA RAV4,PHEV,6,no sourced utility factor: the registration data publish only combined values
+toyota,CZ,TOYOTA C-HR,PHEV,96,no sourced utility factor: the registration data publish only combined values
+toyota,CZ,TOYOTA PRIUS PHEV,PHEV,85,no sourced utility factor: the registration data publish only combined values
+toyota,CZ,TOYOTA RAV4,PHEV,302,no sourced utility factor: the registration data publish only combined values
+toyota,DE,TOYOTA C-HR,PHEV,946,no sourced utility factor: the registration data publish only combined values
+toyota,DE,TOYOTA PRIUS PHEV,PHEV,198,no sourced utility factor: the registration data publish only combined values
+toyota,DE,TOYOTA RAV4,PHEV,702,no sourced utility factor: the registration data publish only combined values
+toyota,DK,TOYOTA C-HR,PHEV,171,no sourced utility factor: the registration data publish only combined values
+toyota,DK,TOYOTA PRIUS PHEV,PHEV,55,no sourced utility factor: the registration data publish only combined values
+toyota,DK,TOYOTA RAV4,PHEV,268,no sourced utility factor: the registration data publish only combined values
+toyota,EE,TOYOTA C-HR,PHEV,32,no sourced utility factor: the registration data publish only combined values
+toyota,EE,TOYOTA PRIUS PHEV,PHEV,17,no sourced utility factor: the registration data publish only combined values
+toyota,EE,TOYOTA RAV4,PHEV,119,no sourced utility factor: the registration data publish only combined values
+toyota,ES,TOYOTA C-HR,PHEV,2154,no sourced utility factor: the registration data publish only combined values
+toyota,ES,TOYOTA RAV4,PHEV,1435,no sourced utility factor: the registration data publish only combined values
+toyota,FI,TOYOTA C-HR,PHEV,252,no sourced utility factor: the registration data publish only combined values
+toyota,FI,TOYOTA PRIUS PHEV,PHEV,131,no sourced utility factor: the registration data publish only combined values
+toyota,FI,TOYOTA RAV4,PHEV,738,no sourced utility factor: the registration data publish only combined values
+toyota,FR,TOYOTA C-HR,PHEV,1383,no sourced utility factor: the registration data publish only combined values
+toyota,FR,TOYOTA PRIUS PHEV,PHEV,639,no sourced utility factor: the registration data publish only combined values
+toyota,FR,TOYOTA RAV4,PHEV,1886,no sourced utility factor: the registration data publish only combined values
+toyota,GR,TOYOTA C-HR,PHEV,226,no sourced utility factor: the registration data publish only combined values
+toyota,GR,TOYOTA PRIUS PHEV,PHEV,7,no sourced utility factor: the registration data publish only combined values
+toyota,GR,TOYOTA RAV4,PHEV,129,no sourced utility factor: the registration data publish only combined values
+toyota,HR,RAV 4,PHEV,1,no sourced utility factor: the registration data publish only combined values
+toyota,HR,TOYOTA C-HR,PHEV,32,no sourced utility factor: the registration data publish only combined values
+toyota,HR,TOYOTA PRIUS PHEV,PHEV,16,no sourced utility factor: the registration data publish only combined values
+toyota,HR,TOYOTA RAV4,PHEV,48,no sourced utility factor: the registration data publish only combined values
+toyota,HU,TOYOTA C-HR,PHEV,105,no sourced utility factor: the registration data publish only combined values
+toyota,HU,TOYOTA PRIUS PHEV,PHEV,41,no sourced utility factor: the registration data publish only combined values
+toyota,HU,TOYOTA PRIUS PHV,PHEV,1,no sourced utility factor: the registration data publish only combined values
+toyota,HU,TOYOTA RAV4,PHEV,73,no sourced utility factor: the registration data publish only combined values
+toyota,IE,TOYOTA C-HR,PHEV,236,no sourced utility factor: the registration data publish only combined values
+toyota,IE,TOYOTA PRIUS PHEV,PHEV,151,no sourced utility factor: the registration data publish only combined values
+toyota,IE,TOYOTA RAV4,PHEV,542,no sourced utility factor: the registration data publish only combined values
+toyota,IT,TOYOTA C-HR,PHEV,1805,no sourced utility factor: the registration data publish only combined values
+toyota,IT,TOYOTA PRIUS PHEV,PHEV,226,no sourced utility factor: the registration data publish only combined values
+toyota,IT,TOYOTA RAV4,PHEV,660,no sourced utility factor: the registration data publish only combined values
+toyota,LT,TOYOTA C-HR,PHEV,29,no sourced utility factor: the registration data publish only combined values
+toyota,LT,TOYOTA PRIUS PHEV,PHEV,8,no sourced utility factor: the registration data publish only combined values
+toyota,LT,TOYOTA RAV4,PHEV,337,no sourced utility factor: the registration data publish only combined values
+toyota,LU,TOYOTA C-HR,PHEV,3,no sourced utility factor: the registration data publish only combined values
+toyota,LU,TOYOTA PRIUS PHEV,PHEV,2,no sourced utility factor: the registration data publish only combined values
+toyota,LU,TOYOTA RAV4,PHEV,21,no sourced utility factor: the registration data publish only combined values
+toyota,LV,TOYOTA C-HR,PHEV,14,no sourced utility factor: the registration data publish only combined values
+toyota,LV,TOYOTA PRIUS PHEV,PHEV,6,no sourced utility factor: the registration data publish only combined values
+toyota,LV,TOYOTA RAV4,PHEV,66,no sourced utility factor: the registration data publish only combined values
+toyota,MT,TOYOTA C-HR,PHEV,5,no sourced utility factor: the registration data publish only combined values
+toyota,MT,TOYOTA RAV4,PHEV,4,no sourced utility factor: the registration data publish only combined values
+toyota,NL,TOYOTA C-HR,PHEV,697,no sourced utility factor: the registration data publish only combined values
+toyota,NL,TOYOTA PRIUS PHEV,PHEV,149,no sourced utility factor: the registration data publish only combined values
+toyota,NL,TOYOTA RAV4,PHEV,377,no sourced utility factor: the registration data publish only combined values
+toyota,PL,TOYOTA C-HR,PHEV,409,no sourced utility factor: the registration data publish only combined values
+toyota,PL,TOYOTA PRIUS PHEV,PHEV,136,no sourced utility factor: the registration data publish only combined values
+toyota,PL,TOYOTA RAV4,PHEV,777,no sourced utility factor: the registration data publish only combined values
+toyota,PT,TOYOTA C-HR,PHEV,358,no sourced utility factor: the registration data publish only combined values
+toyota,PT,TOYOTA PRIUS PHEV,PHEV,145,no sourced utility factor: the registration data publish only combined values
+toyota,PT,TOYOTA RAV4,PHEV,530,no sourced utility factor: the registration data publish only combined values
+toyota,RO,TOYOTA C-HR,PHEV,64,no sourced utility factor: the registration data publish only combined values
+toyota,RO,TOYOTA PRIUS PHEV,PHEV,22,no sourced utility factor: the registration data publish only combined values
+toyota,RO,TOYOTA RAV4,PHEV,500,no sourced utility factor: the registration data publish only combined values
+toyota,SE,TOYOTA C-HR,PHEV,542,no sourced utility factor: the registration data publish only combined values
+toyota,SE,TOYOTA RAV4,PHEV,945,no sourced utility factor: the registration data publish only combined values
+toyota,SI,TOYOTA C-HR,PHEV,41,no sourced utility factor: the registration data publish only combined values
+toyota,SI,TOYOTA PRIUS PHEV,PHEV,17,no sourced utility factor: the registration data publish only combined values
+toyota,SI,TOYOTA RAV4,PHEV,45,no sourced utility factor: the registration data publish only combined values
+toyota,SK,TOYOTA C-HR,PHEV,49,no sourced utility factor: the registration data publish only combined values
+toyota,SK,TOYOTA PRIUS PHEV,PHEV,37,no sourced utility factor: the registration data publish only combined values
+toyota,SK,TOYOTA RAV4,PHEV,95,no sourced utility factor: the registration data publish only combined values

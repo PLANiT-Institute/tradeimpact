@@ -6,16 +6,20 @@ One directory per dataset, mirroring `data/auto/`. A script reads only from its 
 `data/auto/output/`.
 
 ```text
-sales/                raw sales/registration files -> processed/sales.csv
-country_emissions/    inventories + grid series    -> processed/country_emissions.csv
-emission_targets/     NDC + sector standards       -> processed/emission_targets.csv
-vehicle_usage/        VKT, lifetime, stock         -> processed/vehicle_usage.csv
-vehicle_technology/   intensities, RW correction   -> processed/vehicle_technology.csv
+sales/                extract_eea_registrations.py, extract_kia_ir.py, extract_hyundai_ir.py
+country_emissions/    extract_eu27_snapshot.py
+emission_targets/     derive_eu27_rates.py          S1/S2/S3 r_fleet, r_power per market
+vehicle_usage/        extract_eu27_eurostat.py
+vehicle_technology/   extract_eea_certified.py
 model/
-  build_reference.py    step 3: dynamic sector benchmark per importer x scenario
-  build_ti.py           step 4: lifetime avoidance/addition per model x market x scenario
-  aggregate_country.py  step 5: country and company totals + decomposition check
+  build_reference.py    step 3: destination parameters + dynamic benchmark E_ref(t), G(t)
+  build_ti.py           step 4: lifetime TI per company x market x model x powertrain x scenario
+  aggregate_country.py  step 5: country, powertrain and company totals + decomposition check
+  build_database.py     final: every CSV under data/auto -> data/auto/tradeimpact_auto.sqlite
 ```
+
+Run order: the five extract/derive scripts (any order except `derive_eu27_rates.py` after
+the two EU27 extractors), then `model/` top to bottom. See `data/auto/output/method.md`.
 
 Conventions
 

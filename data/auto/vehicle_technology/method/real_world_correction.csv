@@ -1,0 +1,4 @@
+powertrain,factor,derivation,source_id
+ICE,1.191,midpoint of the EEA OBFCM real-world gap for petrol (+21.1%) and diesel (+17.1%) model-year 2022 cars; ICE registrations pool both fuels,eea_obfcm_real_world_2022
+HEV,1.211,EEA OBFCM real-world gap for petrol cars (+21.1%); the Toyota and Hyundai hybrids in the EU27 cohort are petrol hybrids,eea_obfcm_real_world_2022
+BEV,1.0,no official real-world gap is published for battery-electric energy consumption; certified value passed through (optimistic end),eea_obfcm_real_world_2022

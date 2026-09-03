@@ -27,17 +27,14 @@ Real-world correction factors and PHEV utility factors are separate small inputs
 per powertrain, with their own `source_id`), added to this dataset when sourced; they are
 applied in the model step, never folded into the certified columns.
 
-## Raw files
+## Raw files and sources
 
-| file | source | how obtained | sha256 |
-|---|---|---|---|
-| `../sales/raw/eea_toyota_2024_final.json`, `../sales/raw/eea_hyundai_2024_final.json` (shared, not copied) | EEA CO2 monitoring database, certified WLTP CO2 (`Ewltp__g_km_`) and electric energy consumption per registration, aggregated per country × model × powertrain — <https://co2cars.apps.eea.europa.eu/> | downloaded 2026-08-05 by the archived adapter | see `../sales/method/method.md` |
-
-## Sources
-
-| source_id | dataset | link |
-|---|---|---|
-| `eea_co2_monitoring_2024` | EEA monitoring of CO2 emissions from new passenger cars, 2024 final | <https://co2cars.apps.eea.europa.eu/> |
+Raw files: `../sales/raw/eea_toyota_2024_final.json` and `eea_hyundai_2024_final.json`
+(shared, not copied) — certified WLTP CO2 (`Ewltp__g_km_`) and electric energy
+consumption (`z__Wh_km_`) per registration, aggregated by the EEA API per country × model ×
+powertrain (`source_id` `eea_co2_monitoring_2024`). Real-world correction factors:
+`method/real_world_correction.csv` (`eea_obfcm_real_world_2022`). Both resolve in
+[`../../sources.csv`](../../sources.csv).
 
 ## Processed files
 

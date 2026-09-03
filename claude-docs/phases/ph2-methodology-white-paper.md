@@ -47,19 +47,19 @@ phases, and submits the paper for open-access peer review.
 - [ ] `C-05`'s range commitment either delivered as a propagated band or formally renegotiated
       through `consultant`; `B-07` closed either way.
 - [ ] Every equation changed in the paper has its `theory` anchor, implementation and test moved
-      together (see [`st12`](../stages/st12-methodology-maintenance.md)).
+      together (see [`st12`](../stages/st12-15-outputs.md)).
 - [ ] TAG feedback log exists with a response per item.
-- [ ] Submission confirmed, with the journal and date recorded in `log/transitions.md`.
+- [ ] Submission confirmed, with the journal and date recorded in [`../log/README.md`](../log/README.md).
 
 ## Stages serving this phase
 
 | Stage | Evidences objective |
 |---|---|
-| [`st12`](../stages/st12-methodology-maintenance.md) | 1, 2, 3, 4, 5 |
-| [`st08`](../stages/st08-benchmark-construction.md) | 2, 5 (supplies the empirical test) |
-| [`st09`](../stages/st09-impact-computation.md) | 3, 4 (supplies the sensitivity behaviour) |
+| [`st12`](../stages/st12-15-outputs.md) | 1, 2, 3, 4, 5 |
+| [`st08`](../stages/st08-10-analysis.md) | 2, 5 (supplies the empirical test) |
+| [`st09`](../stages/st08-10-analysis.md) | 3, 4 (supplies the sensitivity behaviour) |
 | [`st11`](../stages/st11-verification.md) | 2, 3, 4 (adequacy of the resolution) |
-| [`st14`](../stages/st14-publication.md) | 7 |
+| [`st14`](../stages/st12-15-outputs.md) | 7 |
 
 ## Traceability
 
