@@ -15,22 +15,37 @@ Importers: EU27 member states, United States, Australia.
 
 | field | type | unit | note |
 |---|---|---|---|
-| country | text | ISO 3166-1 alpha-2 | |
-| series | text | — | `car_co2` or `grid_intensity` |
+| country | text | ISO 3166-1 alpha-2, or `EU27` for the aggregate series | |
+| series | text | — | `car_co2`, `grid_intensity` (per country); `power_co2`, `transport_ghg` (EU27 aggregate, for pro-rata pathways) |
 | year | int | year | reference year of the observation |
-| value | real | ktCO2e (car_co2) / gCO2e_per_kWh (grid_intensity) | |
-| source_id | text | — | row in `method/sources.md` |
+| value | real | see `unit` | |
+| unit | text | — | `ktCO2`, `gCO2_per_kWh`, `MtCO2e` |
+| source_id | text | — | row in the sources table below |
+| source_file | text | — | raw file the row came from |
 
-## Sources (to register per country in `sources.md` as collected)
+## Raw files
 
-- EU27 car CO2: EEA national GHG inventories (CRF 1.A.3.b.i passenger cars) or UNFCCC CRT.
-- EU27 grid intensity: EEA electricity CO2 intensity series, or Ember yearly data.
-- US: EPA GHG Inventory (transport, passenger cars); eGRID / Ember for grid.
-- Australia: DCCEEW National Inventory; AEMO / Ember for grid.
-- The archived pipeline's `destination_eu27_inputs.json` (now in `vehicle_usage/raw/`)
-  already carries sourced `car_co2_kt` and `grid_intensity_gco2_per_kwh` per EU27 market
-  with tiers and derivations — reuse those values and their citations rather than
-  re-collecting.
+| file | source | how obtained | sha256 |
+|---|---|---|---|
+| `../vehicle_usage/raw/destination_eu27_inputs.json` (shared, not copied) | Eurostat GHG inventory series and Ember grid intensity via Our World in Data (links below) | downloaded by the archived adapter on 2026-08-09 into one hash-pinned JSON | `c0fdf593…c1c5ff` |
+
+## Sources
+
+| source_id | dataset | link |
+|---|---|---|
+| `eurostat_env_air_gge_crf1a3b1` | GHG inventory, CO2, source sector CRF 1.A.3.b.i passenger cars, thousand tonnes | <https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table?lang=en> |
+| `eurostat_env_air_gge_crf1a1a` | GHG inventory, CO2, CRF 1.A.1.a public electricity and heat, EU27, thousand tonnes | same dataset |
+| `eurostat_env_air_gge_crf1a3` | GHG inventory, all GHG, CRF 1.A.3 transport, EU27, million tonnes | same dataset |
+| `owid_ember_grid_intensity` | Carbon intensity of electricity (gCO2e/kWh), Ember Yearly Electricity Data as published by Our World in Data | <https://ourworldindata.org/grapher/carbon-intensity-electricity> (Ember: <https://ember-energy.org/data/yearly-electricity-data/>) |
+
+To collect for the other importers: US — EPA GHG Inventory (passenger cars) and eGRID or
+Ember for grid; Australia — DCCEEW National Inventory and AEMO or Ember for grid.
+
+## Processed files
+
+| processed file | script | content |
+|---|---|---|
+| `country_emissions_eu27.csv` | `script/auto/country_emissions/extract_eu27_snapshot.py` | `car_co2` and `grid_intensity` for 27 markets, EU27 `power_co2` and `transport_ghg` from 1990 |
 
 ## Processing method
 

@@ -1,0 +1,114 @@
+company,destination,destination_level,origin,cohort_year,period,model,powertrain,units,basis,source_file
+hyundai,BR,country,BR,2025,2025-01..2025-12,Creta (SU2b),,75120,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,BR,country,BR,2025,2025-01..2025-12,HB20 (BR2),,122993,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,BR,2025,2025-01..2025-12,Creta (SU2b),,2405,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,BR,2025,2025-01..2025-12,HB20 (BR2),,12915,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,,,391,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,Custo (KU),,18603,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,Elantra (CN7c),,62792,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,Elexio (OE EV),,1216,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,La festa (SQ),,478,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,Mistra (DU2 EV),,1,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,Mufasa (NU2),,4758,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,Santa Fe (MX5c),,1834,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,Santa Fe (TMc),,2,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,Sonata (DN8c),,14829,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,Tucson (NX4c),,23493,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,CN,country,CN,2025,2025-01..2025-12,Tucson HEV (NX4c HEV),,2,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,KR,country,CN,2025,2025-01..2025-12,Sonata (DN8c),,16492,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CN,2025,2025-01..2025-12,,,1252,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CN,2025,2025-01..2025-12,Custo (KU),,1443,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CN,2025,2025-01..2025-12,Elantra (CN7c),,31818,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CN,2025,2025-01..2025-12,Elexio (OE EV),,38,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CN,2025,2025-01..2025-12,Mufasa (NU2),,7703,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CN,2025,2025-01..2025-12,Santa Fe (MX5c),,2339,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CN,2025,2025-01..2025-12,Tucson (NX4c HEV),,200,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CN,2025,2025-01..2025-12,Tucson (NX4c),,6181,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CZ,2025,2025-01..2025-12,Kona EV (SX2e EV),,34966,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CZ,2025,2025-01..2025-12,Tucson (NX4e),,107695,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CZ,2025,2025-01..2025-12,Tucson HEV (NX4e HEV),,73909,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CZ,2025,2025-01..2025-12,Tucson PHEV (NX4e PHEV),,30244,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CZ,2025,2025-01..2025-12,i30 (PDe),,29150,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,CZ,2025,2025-01..2025-12,i30 (Pde N),,1141,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,ID,country,ID,2025,2025-01..2025-12,Creta (SU2id),,4492,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,ID,country,ID,2025,2025-01..2025-12,IONIQ5 (NEid N),,20,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,ID,country,ID,2025,2025-01..2025-12,IONIQ5 (NEid),,22,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,ID,country,ID,2025,2025-01..2025-12,IONIQ9 (MEid EV),,2,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,ID,country,ID,2025,2025-01..2025-12,Kona EV (SX2id EV),,670,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,ID,country,ID,2025,2025-01..2025-12,Santa-Fe (MX5id HEV),,1387,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,ID,country,ID,2025,2025-01..2025-12,Santa-Fe (MX5id),,333,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,ID,country,ID,2025,2025-01..2025-12,Santa-Fe (TMid),,1,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,ID,country,ID,2025,2025-01..2025-12,Stargazer (KS),,8224,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,ID,2025,2025-01..2025-12,Creta (SU2id),,45719,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,ID,2025,2025-01..2025-12,Kona EV (SX2id EV),,1,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,ID,2025,2025-01..2025-12,Stargazer (KS),,8455,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,Creta (SU2i EV),,8057,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,Creta (SU2i LWB),,13636,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,Creta (SU2i),,193065,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,Exter (AI3 SUV),,67908,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,Grand i10 (AI3 5DR),,53660,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,IONIQ5 (NEi),,234,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,Tucson (NX4i),,682,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,Venue (QU2i),,29870,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,Venue (QXi),,85485,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,Verna (BN7i),,11057,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,Xcent (AI3 4DR),,61951,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,IN,country,IN,2025,2025-01..2025-12,i20 (BI3 5DR),,46273,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,IN,2025,2025-01..2025-12,Creta EV (SU2i EV),,412,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,IN,2025,2025-01..2025-12,Creta(SU2i LWB),,10951,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,IN,2025,2025-01..2025-12,Creta(SU2i),,5349,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,IN,2025,2025-01..2025-12,Exter(AI3 SUV),,4267,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,IN,2025,2025-01..2025-12,Grand i10 (AI3 5DR),,49110,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,IN,2025,2025-01..2025-12,Venue (QU2i),,8,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,IN,2025,2025-01..2025-12,Venue(QXi),,6679,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,IN,2025,2025-01..2025-12,Verna (BN7i),,63253,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,IN,2025,2025-01..2025-12,Xcent (AI3 4DR),,41530,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,IN,2025,2025-01..2025-12,i20 (BI3 5DR),,4969,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,MX,2025,2025-01..2025-12,NX4m,,19125,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,SG,country,SG,2025,2025-01..2025-12,IONIQ5 (NE),,171,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,SG,country,SG,2025,2025-01..2025-12,IONIQ6 (CE),,63,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,SG,2025,2025-01..2025-12,IONIQ5 Robotaxi (NE R),,40,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,TR,country,TR,2025,2025-01..2025-12,Bayon (BC3 CUV),,17410,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,TR,country,TR,2025,2025-01..2025-12,i10 (AC3),,1804,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,TR,country,TR,2025,2025-01..2025-12,i20 (BC3),,22073,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,TR,2025,2025-01..2025-12,Bayon (BC3 CUV),,23372,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,TR,2025,2025-01..2025-12,i10 (AC3),,62206,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,TR,2025,2025-01..2025-12,i20 (BC3),,69784,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,TR,2025,2025-01..2025-12,i20 N (BC3 N),,1138,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,US,country,US,2025,2025-01..2025-12,GV70 (JKa),,22582,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,US,country,US,2025,2025-01..2025-12,GV70 EV (Jka EV),,1369,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,US,country,US,2025,2025-01..2025-12,Ioniq5 (NEa),,51567,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,US,country,US,2025,2025-01..2025-12,Ioniq9 (MEa EV),,10433,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,US,country,US,2025,2025-01..2025-12,Santa-Fe (MX5a HEV),,69151,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,US,country,US,2025,2025-01..2025-12,Santa-Fe (MX5a),,73035,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,US,country,US,2025,2025-01..2025-12,Tucson (NX4a),,150328,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,US,country,US,2025,2025-01..2025-12,Tucson OB (NX4a OB),,27665,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,US,2025,2025-01..2025-12,GV70 EV (Jka EV),,13,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,US,2025,2025-01..2025-12,Santa-Fe (MX5a HEV),,55,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,US,2025,2025-01..2025-12,Santa-Fe (MX5a),,4683,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,US,2025,2025-01..2025-12,Tucson (NX4a),,8157,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,US,2025,2025-01..2025-12,Tucson OB (NX4a OB),,2578,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Accent (BN7v),,5181,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,County (CSv),,385,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Creta (SU2v),,7988,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Custo (KUv),,1366,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Elantra (CN7v),,743,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Mighty (LTv),,2340,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Mighty (QTv),,64,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Mighty (VTv),,3113,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Palisade (LX2v),,999,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Porter (HRv),,4082,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Santa Fe (MX5v),,2028,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,SantaFe HEV (MX5v HEV),,30,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Solati (Euv),,1777,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Tucson (NX4v),,8886,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Universe (PYv),,9,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,Venue (QXv),,2265,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,i10(AI3v 4DR),,240,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,VN,country,VN,2025,2025-01..2025-12,i10(AI3v 5DR),,3094,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,VN,2025,2025-01..2025-12,Mighty (LTv),,270,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,VN,2025,2025-01..2025-12,Palisade (LX2v),,332,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,VN,2025,2025-01..2025-12,Santa Fe HEV (MX5v HEV),,399,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,VN,2025,2025-01..2025-12,Solati (Euv),,236,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,ckd,2025,2025-01..2025-12,CV,,311,plant_sales,hyundai_2025_global_plant_sales.xlsx
+hyundai,export,unknown,ckd,2025,2025-01..2025-12,PV,,72159,plant_sales,hyundai_2025_global_plant_sales.xlsx
