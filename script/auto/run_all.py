@@ -35,7 +35,7 @@ EXTRACT = [
     "country_emissions/extract_owid_grid.py",
     "country_emissions/extract_epa_inventory.py",
 ]
-DERIVE = ["emission_targets/derive_eu27_rates.py"]
+DERIVE = ["emission_targets/derive_eu27_rates.py", "emission_targets/derive_us_rates.py"]
 MODEL = [
     "model/build_reference.py",
     "model/build_ti.py",
