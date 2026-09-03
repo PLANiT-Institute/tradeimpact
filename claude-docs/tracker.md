@@ -24,9 +24,11 @@ US is a FLAG market with no NDC in force; US light-duty stock and distance from 
 197 million short-wheelbase vehicles at ~17,700 km/yr, tier B for the wheelbase-not-body-type
 definition; US passenger-car CO2 from EPA Inventory Table 3-13 for 1990, 2005 and 2019–2023 —
 295 MtCO2 in 2023 — transcribed from the PDF text with page reference, plus the annex Table A-91
-annual GHG series 2013–2023 that makes a US S1 trend derivable). Still to collect: US operating
-life (survival tables), US S1/S3 rates from IEA WEO (the US is a FLAG market so S2 is excluded),
-Australian passenger-car CO2, stock and distance (the ABS, BITRE and DCCEEW sites refused automated
+annual GHG series 2013–2023; US scenario rates derived — S1 observed 3.8 %/yr fleet and 2.9 %/yr
+grid, S2 `flag_no_ndc` with no rate, S3 world-NZE pro-rata 10.0 %/yr fleet and 19.5 %/yr power
+from IEA WEO 2024 anchors transcribed from the Drive PDF). Still to collect: US operating life
+(survival tables), US model-level 2024 sales by powertrain, Australian passenger-car CO2, stock and
+distance (the ABS, BITRE and DCCEEW sites refused automated
 access on 2026-09-04 — hand-gathered files), and model-level sales for both markets — so neither can
 enter a result yet. `script/auto/run_all.py` now runs the whole
 chain fail-fast before any commit. Their absence is counted, not
