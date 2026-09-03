@@ -32,9 +32,11 @@ Registered in [`../../raw_files.csv`](../../raw_files.csv) (file, original name,
 `source_id`) and [`../../sources.csv`](../../sources.csv) (publisher, title, link, how
 obtained, access date, licence). In short:
 
-- `eea_toyota_2024_final.json`, `eea_hyundai_2024_final.json` — EEA CO2 monitoring
-  database, 2024 final, downloaded via the API (<https://co2cars.apps.eea.europa.eu/>);
-  each JSON holds the exact query and response hash.
+- `eea_toyota_2024_final.json`, `eea_hyundai_2024_final.json`, `eea_kia_2024_final.json`,
+  `eea_honda_2024_final.json` — EEA CO2 monitoring database, 2024 final, downloaded via the
+  API (<https://co2cars.apps.eea.europa.eu/>) with one shared query (brand term swapped) by
+  `script/auto/sales/fetch_eea_registrations.py`; each JSON holds the exact query and
+  response hash. All four exporters are therefore on one EU27 boundary for 2024.
 - `kia_2026_retail_sales_by_model_market.xlsx`, `hyundai_2025_global_plant_sales.xlsx` —
   **local files only, gathered by hand** from the Kia and Hyundai IR sales-results pages
   into Google Drive `Trade/Arc_Trade_Data/Auto/`; exact download links not recorded.
@@ -45,7 +47,7 @@ All share the schema above; one file per raw source, written by the script named
 
 | processed file | script | rows | note |
 |---|---|---|---|
-| `sales_eea_eu27_2024.csv` | `script/auto/sales/extract_eea_registrations.py` | 1,286 | Toyota 803,094 + Hyundai 429,936 registrations; powertrain from EEA; `ICE_OTHER` → `ICE` |
+| `sales_eea_eu27_2024.csv` | `script/auto/sales/extract_eea_registrations.py` | see script output | Toyota 803,094, Hyundai 429,936, Kia 414,677, Honda 40,270 registrations; powertrain from EEA; `ICE_OTHER` → `ICE` |
 | `sales_kia_ir_2026.csv` | `script/auto/sales/extract_kia_ir.py` | 287 | Jan–Jun 2026 year-to-date; markets are IR regions except KR/US/CA/MX/IN/CN; `origin` = plant block; zero cells dropped |
 | `sales_hyundai_plant_2025.csv` | `script/auto/sales/extract_hyundai_ir.py` | 113 | overseas plants only, 2025; destination known for Domestic (plant country) and Korea segments, `export` otherwise |
 
