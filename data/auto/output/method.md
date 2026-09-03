@@ -15,6 +15,7 @@ nothing here is edited by hand. EU27 × 2024 × {Toyota, Hyundai} is the first c
 | `ti_country_eu27.csv` | 5 | `aggregate_country.py` | company × destination × scenario: units, `ti_tco2e`, per-vehicle, direction |
 | `ti_powertrain_eu27.csv` | 5 | `aggregate_country.py` | company × powertrain × scenario |
 | `ti_company_eu27.csv` | 5 | `aggregate_country.py` | company × scenario: covered/withheld units, total, per-vehicle, direction, decomposition identity check |
+| `ti_data_quality_eu27.csv` | 5b | `build_data_quality.py` | company: analysis level, benchmark method, covered/withheld units, tier-C unit share and the `directional_only` flag (guideline §5.3, threshold 50 %), central lifetime, markets by distance tier, withheld reasons, warnings |
 
 Sign convention: positive TI = the product emits less than the destination's committed
 benchmark over its lifetime (contribution); negative = lock-in liability. Unit: tCO2e over
@@ -43,6 +44,7 @@ they are 13–24 % wider and are not reproduced.
 .venv/bin/python script/auto/model/build_ti.py
 .venv/bin/python script/auto/model/build_sensitivity.py
 .venv/bin/python script/auto/model/aggregate_country.py
+.venv/bin/python script/auto/model/build_data_quality.py
 .venv/bin/python script/auto/model/build_database.py
 ```
 
