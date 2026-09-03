@@ -173,8 +173,9 @@ def main() -> None:
                 "target_year": S3_TARGET_YEAR,
                 "derivation": (
                     f"IEA WEO 2024 {S3_SCENARIO} world {sector.replace('_', ' ')} CO2 "
-                    f"{base:,.0f} -> {target:,.0f} Mt ({S3_BASE_YEAR}-{S3_TARGET_YEAR}), compound "
-                    "annual decline applied pro-rata; no US-specific NZE path in the report on hand."
+                    f"{base:,.0f} -> {target:,.0f} Mt ({S3_BASE_YEAR}-{S3_TARGET_YEAR}), "
+                    "compound annual decline applied pro-rata; no US-specific NZE path in the "
+                    "report on hand."
                 ),
                 "source_id": weo_source,
             }
