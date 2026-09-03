@@ -6,3 +6,17 @@ US,car_co2,2020,299800.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_tab
 US,car_co2,2021,316100.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_table_3_13.csv
 US,car_co2,2022,298500.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_table_3_13.csv
 US,car_co2,2023,295400.0,ktCO2,epa_ghg_inventory_2025,epa_ghg_inventory_2025_table_3_13.csv
+US,car_ghg_co2e,1990,658700.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2000,585100.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2010,476800.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2013,392300.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2014,402000.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2015,392300.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2016,394000.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2017,380800.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2018,374500.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2019,364300.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2020,302100.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2021,318400.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2022,300700.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
+US,car_ghg_co2e,2023,297600.0,ktCO2e,epa_ghg_inventory_2025_annexes,epa_ghg_inventory_2025_table_a_91.csv
