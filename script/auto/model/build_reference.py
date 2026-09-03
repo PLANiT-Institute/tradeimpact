@@ -131,9 +131,9 @@ def age_bands_by_year(
 
 
 def mean_age(by_year: dict[int, dict[str, float]], not_after: int) -> tuple[float, int] | None:
-    """Stock-weighted mean age from the latest complete year (stock is published a year ahead)."""
+    """Stock-weighted mean age from the latest complete year at or before the cohort year."""
     for year in sorted(by_year, reverse=True):
-        if year > not_after + 1:
+        if year > not_after:
             continue
         bands = by_year[year]
         total = sum(bands.values())
@@ -150,7 +150,7 @@ def pooled_age_bands(
     contributors: dict[int, int] = {}
     for country in countries:
         for year, bands in age_bands_by_year(usage, country).items():
-            if year > not_after + 1:
+            if year > not_after:
                 continue
             bucket = per_year.setdefault(year, dict.fromkeys(AGE_BAND_MIDPOINT, 0.0))
             for band in AGE_BAND_MIDPOINT:

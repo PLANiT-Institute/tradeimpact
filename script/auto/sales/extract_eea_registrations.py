@@ -16,10 +16,14 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
 DATASET = REPO / "data" / "auto" / "sales"
-# Every pinned brand snapshot; the company is the EEA make (Mk) in lower case.
+SCOPE = DATASET / "method" / "companies.csv"
+IN_SCOPE = {r["company"] for r in csv.DictReader(SCOPE.open(newline="")) if r["in_scope"] == "yes"}
+# Every pinned brand snapshot whose company is in scope (EEA make Mk, lower case).
 RAW = {
-    json.loads(p.read_text())["brand_filter"].split("=", 1)[1].lower(): p
+    brand: p
     for p in sorted((DATASET / "raw").glob("eea_*_final.json"))
+    for brand in [json.loads(p.read_text())["brand_filter"].split("=", 1)[1].lower()]
+    if brand in IN_SCOPE
 }
 OUT = DATASET / "processed" / "sales_eea_eu27_2024.csv"
 

@@ -58,14 +58,26 @@ the benchmark per vehicle fixed (distance cancels in CO2 per car) and scales onl
 side, so it is narrower than the archived band; and the real-world range is applied as a
 replacement of the central factor, never on top of it.
 
-Open review items for the project lead (not code defects): LU's fleet intensity (391 g/km)
-is flagged implausible and tiered C yet still drives a positive LU result — withhold or report
-separately; two markets (BG, PL) show a *rising* observed per-car CO2 trend, so their S1
-benchmark grows (now flagged `OBSERVED_INCREASE` in `emission_targets_eu27.csv`); the
-guideline's segment-intensity ratio is not applied (all-car fleet average, conservative for
-crossover-heavy portfolios); S2 grid is held flat at 2024 intensity because the EU power
-target is already met on an absolute basis, which makes BEV S2 lower than BEV S1; age bands
-use the 1-Jan-2025 partition while stock uses 2024.
+## Methodological decisions (2026-09-04, project lead: "most plausible")
+
+1. **Luxembourg** — its fleet intensity (391 gCO2/km) fails the 80–320 plausibility band
+   because fuel sold in LU is burned by cars registered elsewhere. The market is withheld
+   from every company result with its unit count (`ti_withheld_eu27.csv`, reason
+   "destination benchmark withheld"), the same treatment as PHEV/FCEV.
+2. **Segment intensity ratio** — set to 1.0 (all-passenger-car fleet average) and disclosed;
+   no sourced segment split exists for the EU27 in-use fleet. For crossover-heavy portfolios
+   this understates the benchmark and is therefore conservative for the exporter.
+3. **S2 grid when the pro-rata target is already met** — committed policy is never read as
+   less ambitious than the current trajectory: S2 power is floored at each market's observed
+   S1 grid trend (`target_level = ndc_prorata_s1_floor`) instead of being held flat. BEV S2
+   is therefore no longer below BEV S1.
+4. **Age-band year** — the mean-age partition is taken at or before the cohort year, the
+   same cap as stock, CO2 and grid; the "one year ahead" exception is gone.
+5. **Exporters in scope** — Hyundai and Kia only for now (`companies.csv`); the Toyota and
+   Honda snapshots stay pinned and re-enter with one flag change.
+
+Two markets (BG, PL) show a rising observed per-car CO2 trend, so their S1 benchmark grows;
+this is flagged `OBSERVED_INCREASE` in `emission_targets_eu27.csv` and left as observed.
 
 ## Run order
 

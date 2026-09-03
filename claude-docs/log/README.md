@@ -53,3 +53,13 @@ premise and sends work back is the process working; the entry states the trigger
   intensity ratio not applied; S2 grid held flat (absolute target already met) makes BEV S2
   below BEV S1; age bands use the 2025 partition while stock uses 2024; PHEV utility factor
   route (Appendix C.2) not yet taken.
+
+## 2026-09-04 — five methodological decisions taken by the lead ("most plausible")
+
+- Luxembourg withheld from all results (implausible national benchmark), reported with units.
+- Segment intensity ratio = 1.0, disclosed as assumption; conservative for crossover portfolios.
+- S2 grid floored at the observed S1 trend where the EU pro-rata power target is already met.
+- Age bands capped at the cohort year, consistent with stock, CO2 and grid.
+- Exporters in scope: Hyundai and Kia; Toyota and Honda deferred (snapshots pinned,
+  `companies.csv` `in_scope = no`). US and Australian inputs are being downloaded by the
+  automated pipeline where sites allow it (ABS census and use survey obtained 2026-09-04).

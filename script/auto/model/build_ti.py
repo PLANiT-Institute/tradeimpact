@@ -48,6 +48,11 @@ WITHHELD_REASON = {
     "FCEV": "no sourced hydrogen supply emissions intensity for the destination",
 }
 NO_CERTIFIED = "the registration dataset reports no certified intensity for this cell"
+IMPLAUSIBLE_BENCHMARK = (
+    "destination benchmark withheld: the national car CO2 inventory and the registered stock "
+    "cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible "
+    "benchmark exists; market reported separately"
+)
 
 CELL_FIELDS = [
     "company",
@@ -112,6 +117,9 @@ def main() -> None:
             withheld.append({**base, "units": units, "reason": NO_CERTIFIED})
             continue
         p = params[key[1]]
+        if "FLEET_INTENSITY_IMPLAUSIBLE" in p["warnings"]:
+            withheld.append({**base, "units": units, "reason": IMPLAUSIBLE_BENCHMARK})
+            continue
         vkt, life = float(p["vkt_km"]), int(p["lifetime_years"])
         rw = factor[pt]
         for t in range(life):

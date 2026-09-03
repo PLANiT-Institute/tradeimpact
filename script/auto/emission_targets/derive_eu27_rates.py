@@ -13,8 +13,10 @@ Scenarios
                             intensity (power) over the trend window, pandemic years excluded.
     S2 committed policy     EU-wide pro-rata: transport 2023 -> 2030 pathway (fleet); public
                             electricity CO2 from its latest observation to the 2030 economy-wide
-                            target applied to the 1990 level (power). A negative power rate
-                            (target already met) is held at zero and flagged.
+                            target applied to the 1990 level (power). Where that rate is negative
+                            (target already met) S2 power is floored at each market's observed
+                            S1 grid trend and flagged: committed policy is never read as less
+                            ambitious than the current trajectory.
     S3 1.5C-aligned         same construction against the 2040 economy-wide target.
 
 Algorithm:
@@ -155,7 +157,8 @@ def main() -> None:
             f" PATHWAY_ALREADY_MET: EU public electricity CO2 in {power_year} "
             f"({power_now / 1000:.0f} Mt) is below the pro-rata 2030 level "
             f"({power_1990 * (1 - float(t30['reduction_vs_base'])) / 1000:.0f} Mt); implied rate "
-            f"{r_power_s2_raw:+.4f}/yr, held at zero rather than allowed to rise."
+            f"{r_power_s2_raw:+.4f}/yr. Committed policy cannot be less ambitious than the "
+            "current trajectory, so S2 power is floored at each market's observed S1 grid trend."
         )
 
     eu_rows = [
@@ -245,13 +248,21 @@ def main() -> None:
                 }
             )
         for scenario, rate, value, y0, y1, derivation, source_id in eu_rows:
+            target_level = "ndc_prorata" if scenario == "S2" else "1p5c_prorata"
+            if scenario == "S2" and rate == "r_power" and power_flag:
+                value = max(grid_trend[0], 0.0)
+                target_level = "ndc_prorata_s1_floor"
+                derivation += (
+                    f" Applied here as the observed grid trend {value:+.4f}/yr "
+                    f"({grid_trend[1]}-{grid_trend[2]})."
+                )
             out.append(
                 {
                     "country": country,
                     "scenario": scenario,
                     "rate": rate,
                     "value": round(value, 9),
-                    "target_level": "ndc_prorata" if scenario == "S2" else "1p5c_prorata",
+                    "target_level": target_level,
                     "base_year": y0,
                     "target_year": y1,
                     "derivation": derivation,

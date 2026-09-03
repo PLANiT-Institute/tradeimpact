@@ -31,6 +31,8 @@ EXTRACT = [
     "vehicle_technology/extract_eea_certified.py",
     "vehicle_usage/extract_eu27_eurostat.py",
     "vehicle_usage/extract_fhwa_vm1.py",
+    "vehicle_usage/extract_abs_mvc.py",
+    "vehicle_usage/extract_abs_smvu.py",
     "country_emissions/extract_eu27_snapshot.py",
     "country_emissions/extract_owid_grid.py",
     "country_emissions/extract_epa_inventory.py",
