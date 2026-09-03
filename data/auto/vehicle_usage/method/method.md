@@ -40,7 +40,11 @@ vehicles by wheelbase, not body type: the short-WB class (cars, light vans, smal
 closest match to the EU M1 population and is published as `car_stock` / `car_traffic` (tier B
 for the definitional mismatch); the long-WB class (pickups, large SUVs) is kept as separate
 `ldv_long_wb_*` series. No age-band series is in VM-1, so US operating life needs another
-source (BTS / Argonne VISION survival tables) before a US result can run.
+source before a US result can run: BTS National Transportation Statistics Table 1-26 (average
+age of automobiles and light trucks in operation) is the intended input for the same
+mean-age → lifetime rule used for the EU27; the BTS site refused automated access on
+2026-09-04, so the table is a hand-gathered file (drop the xlsx into the Drive folder
+`Trade/Arc_Trade_Data/Auto/` and it is pinned like the IR workbooks).
 
 Australia: still to collect — ABS Motor Vehicle Census (stock, last edition 31 Jan 2021) and
 BITRE yearbook (passenger-vehicle km); both are report-shaped downloads.
