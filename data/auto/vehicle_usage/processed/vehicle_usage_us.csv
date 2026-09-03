@@ -1,0 +1,9 @@
+country,series,year,value,unit,source_id,source_file
+US,car_stock,2022,196467427.0,vehicles,fhwa_vm1_2023,fhwa_vm1_2023.xlsx
+US,car_stock,2023,197134299.0,vehicles,fhwa_vm1_2023,fhwa_vm1_2023.xlsx
+US,car_traffic,2022,3440464.255,million_vkm,fhwa_vm1_2023,fhwa_vm1_2023.xlsx
+US,car_traffic,2023,3497998.47,million_vkm,fhwa_vm1_2023,fhwa_vm1_2023.xlsx
+US,ldv_long_wb_stock,2022,61273790.0,vehicles,fhwa_vm1_2023,fhwa_vm1_2023.xlsx
+US,ldv_long_wb_stock,2023,62103995.0,vehicles,fhwa_vm1_2023,fhwa_vm1_2023.xlsx
+US,ldv_long_wb_traffic,2022,1102173.027,million_vkm,fhwa_vm1_2023,fhwa_vm1_2023.xlsx
+US,ldv_long_wb_traffic,2023,1135425.937,million_vkm,fhwa_vm1_2023,fhwa_vm1_2023.xlsx
