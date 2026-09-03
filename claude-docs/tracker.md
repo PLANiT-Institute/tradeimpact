@@ -19,11 +19,13 @@ Kia, Honda, the United States and Australia remain in the target set as later ac
 absence is counted, not assumed away: the Kia and Hyundai IR tables are processed but cannot enter
 a country-level result as they stand (regions and plant-side sales respectively).
 
-Built only when needed, and therefore still absent: crossover output, sensitivity runs, an
-independent re-derivation of any figure, and any dashboard. The regression check against the
-archived published baseline has run and passed (all 189 destination parameters exact; company ×
-scenario totals within 2 × 10⁻⁷). Phase exit is blocked by the missing crossover and sensitivity
-outputs, the independent re-derivation, and `B-03`, `B-04`, `B-07`.
+Crossover years per cell and the lifetime, real-world and proxied-distance sensitivities now
+exist (`ti_crossover_eu27.csv`, `ti_sensitivity_eu27.csv`, both in the database). Built only
+when needed, and therefore still absent: an independent re-derivation of any figure, a P10/P50/P90
+treatment of the crossover (`B-07`), and any dashboard. The regression check against the archived
+published baseline has run and passed (all 189 destination parameters exact; company × scenario
+totals within 2 × 10⁻⁷; crossover and lifetime sensitivities agree). Phase exit is blocked by the
+independent re-derivation and `B-03`, `B-04`, `B-07`.
 
 ## 2. Phases
 
@@ -38,9 +40,9 @@ outputs, the independent re-derivation, and `B-03`, `B-04`, `B-07`.
 **Judgement.** The week's work moved PH1 objectives 2, 3 and 4 from unserved to partial — a real
 advance, and faster than expected. The regression against the archived baseline has now run and
 passed, which shows the new scripts reproduce the old engine — not that either is right: no figure
-has been independently re-derived and no sensitivity exists. The next units of work are the
-crossover and sensitivity outputs the guideline requires, then the Kia and Honda registrations from
-the same EEA source. A result set that grows faster than its verification is the failure mode this
+has been independently re-derived. Crossover and the three guideline sensitivities exist. The next
+unit of work is the Kia and Honda registrations from the same EEA source, which turns the EU27
+result into the Korea-versus-Japan comparison the proposal promises. A result set that grows faster than its verification is the failure mode this
 phase has to avoid.
 
 ## 3. Stages
@@ -55,7 +57,7 @@ phase has to avoid.
 | [ST06 `vehicle_technology`](stages/st02-06-datasets.md) | PH1, PH2 | EU27 certified values and the real-world factors done; no PHEV utility factor | `vehicle_technology_eea_2024.csv` (1,286), `method/real_world_correction.csv` (3) | `[compute]` |
 | [ST07 provenance](stages/st01-targets-and-provenance.md) | all | In progress — catalogue and assumptions established; licence verdicts outstanding | `toolbox/catalogue.md`, `toolbox/assumptions.md` | — |
 | [ST08 benchmark](stages/st08-10-analysis.md) | PH1, PH2, PH4 | Run, EU27 only | `destination_parameters_eu27.csv` (27), `reference_trajectories_eu27.csv` (1,899) | `[compute]` |
-| [ST09 impact](stages/st08-10-analysis.md) | PH1, PH2, PH3, PH4 | Run, EU27 only; crossover not yet an output | `ti_by_model_eu27.csv` (3,321), `ti_annual_eu27.csv` (150), `ti_withheld_eu27.csv` (179) | `[compute]` |
+| [ST09 impact](stages/st08-10-analysis.md) | PH1, PH2, PH3, PH4 | Run, EU27 only; crossover and sensitivities output | `ti_by_model_eu27.csv` (3,321), `ti_annual_eu27.csv` (150), `ti_withheld_eu27.csv` (179), `ti_crossover_eu27.csv` (3,321), `ti_sensitivity_eu27.csv` (54) | `[compute]` |
 | [ST10 aggregation](stages/st08-10-analysis.md) | PH1, PH3, PH4 | Run, EU27 only; identity holds for all six company × scenario rows; `tradeimpact_auto.sqlite` built | `ti_country_eu27.csv` (162), `ti_powertrain_eu27.csv` (18), `ti_company_eu27.csv` (6), `tradeimpact_auto.sqlite` (21 tables) | `[compute]` |
 | [ST11 verification](stages/st11-verification.md) | all | Regression against `SRC-24` run and passed (parameters exact, totals within 2 × 10⁻⁷); independent re-derivation not done | regression noted in `data/auto/output/method.md` | — |
 | [ST12 methodology](stages/st12-15-outputs.md) | PH1, PH2, PH4, PH5 | Not started; three methodology documents in place as inputs | none | — |
@@ -75,7 +77,7 @@ baseline.
 | PH1/1 targets fixed | ST01 | partial — named, criteria unevaluated, no `target_set.csv` |
 | PH1/2 inputs acquired and registered | ST02–ST07 | partial — complete for EU27, absent for US and Australia |
 | PH1/3 reference benchmark built | ST08 | partial — 27 markets × 3 scenarios exist, unverified |
-| PH1/4 impact built | ST09 | partial — per-cell TI exists; **crossover missing**, sensitivity missing |
+| PH1/4 impact built | ST09 | partial — per-cell TI, crossover year and the three guideline sensitivities exist for EU27; no P10/P50/P90 range (`B-07`) |
 | PH1/5 aggregated to country and company | ST10 | partial — EU27 country, powertrain and company tables exist, identity holds |
 | PH1/6 verified | ST11 | partial — regression against the archived baseline passed; no independent re-derivation |
 | PH1/7 published | ST14 | **unserved** |
