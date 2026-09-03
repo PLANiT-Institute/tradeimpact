@@ -19,7 +19,7 @@ standard), `S3` 1.5 °C-aligned. Always reported together.
 | scenario | text | — | `S1` / `S2` / `S3` |
 | rate | text | — | `r_fleet` or `r_power` |
 | value | real | 1/year | annual decline fraction; positive = falling |
-| target_level | text | — | `observed_trend` (S1), `sector_country`, `sector_regional`, `ndc_prorata`, `regional_prorata`, `1p5c_prorata`, `none` — a proxy is never relabelled as a country target |
+| target_level | text | — | `observed_trend` (S1), `sector_country`, `sector_regional`, `ndc_prorata`, `regional_prorata`, `1p5c_prorata`, `world_prorata` (IEA world scenario applied pro-rata), `flag_no_ndc` (no rate; S2 excluded from the headline), `none` — a proxy is never relabelled as a country target |
 | base_year | int | year | |
 | target_year | int | year | |
 | derivation | text | — | how the rate was computed, including any flag (e.g. `PATHWAY_ALREADY_MET`) |
@@ -30,7 +30,8 @@ standard), `S3` 1.5 °C-aligned. Always reported together.
 | file | source | how obtained | note |
 |---|---|---|---|
 | `eu_climate_targets.csv` | EU legislation and Commission documents (links below) | **hand-transcribed** table of the target anchors: 2030 −55 % and 2040 −90 % economy-wide vs 1990, EU domestic transport 2023 → 2030 pathway (795.6 → 583.0 MtCO2e) | targets are legal texts, not downloadable series; the row's `source_id` links the text |
-| `ndc_anchors.csv` | UNFCCC NDC Registry (`unfccc_ndc_registry`) | **hand-transcribed** NDC status for the non-EU importers: US = FLAG market (no NDC in force after the 2025 Paris withdrawal took effect), AU = 43 % below 2005 by 2030 | every row carries `verified = no` until checked against the registry text; nothing downstream consumes an unverified row |
+| `ndc_anchors.csv` | UNFCCC NDC Registry (`unfccc_ndc_registry`) | **hand-transcribed** NDC status for the non-EU importers: US = FLAG market (no NDC in force after the 2025 Paris withdrawal took effect), AU = 43 % below 2005 by 2030 | every row carries `verified = no` until checked against the registry text; the US derivation uses only the FLAG status and prints the verified flag into the row |
+| `iea_weo_2024_world_co2.csv` | IEA World Energy Outlook 2024, Annex A Tables A.4a–c (`iea_weo_2024`; local PDF in the Drive References folder) | world CO2 for electricity and heat, transport and passenger cars under STEPS, APS and NZE at 2010, 2022, 2023, 2030, 2035, 2040, 2050 — extracted from the PDF text with table and page per row | anchor values only; the world NZE path is the S3 proxy (`world_prorata`) for importers without a published regional NZE path |
 
 ## Sources
 
@@ -43,7 +44,10 @@ S1/S3 (`References/IEA_2024_WEO_Full_Report.pdf` in the Drive folder).
 
 ## Processing method
 
-`script/auto/emission_targets/derive_eu27_rates.py` → `processed/emission_targets_eu27.csv`.
+`script/auto/emission_targets/derive_eu27_rates.py` → `processed/emission_targets_eu27.csv`;
+`script/auto/emission_targets/derive_us_rates.py` → `processed/emission_targets_us.csv` (S1
+observed trends from the EPA annex series and Ember grid; S2 `flag_no_ndc` with no rate; S3
+world NZE pro-rata 2023 → 2040 for passenger cars and for electricity and heat).
 
 - S1: log-linear trend of per-car CO2 (car CO2 ÷ stock) and of grid intensity, 2015–2024
   excluding 2020–2021.
