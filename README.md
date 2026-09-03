@@ -42,15 +42,16 @@ archive/           the previous application build (engine, web, MCP, pipeline) �
 
 Datasets: `sales`, `country_emissions`, `emission_targets`, `vehicle_usage`,
 `vehicle_technology`. Current result set: EU27 × 2024 × {Toyota, Honda, Hyundai, Kia}, all
-from one EEA registration query; the Toyota and Hyundai cohorts reproduce the previously
-published lifetime result to 2 × 10⁻⁷ (see `data/auto/output/method.md`).
+from one EEA registration query. The engine reproduces the previously published lifetime
+result exactly when fed the archived inputs; a review-driven fix to the distance derivation
+moved the totals 1–13 % (see `data/auto/output/method.md`, Verification).
 
 | Exporter (EU27, 2024) | Registrations | Covered | S1 current | S2 committed | S3 1.5 °C |
 |---|---|---|---|---|---|
-| Toyota | 803,094 | 96.9 % | −1.40 MtCO₂e | −5.96 | −13.95 |
-| Honda | 40,270 | 96.3 % | −0.14 | −0.35 | −0.74 |
-| Hyundai | 429,936 | 95.6 % | −1.49 | −3.72 | −7.78 |
-| Kia | 414,677 | 91.7 % | −1.35 | −3.40 | −7.16 |
+| Toyota | 803,094 | 96.9 % | −1.59 MtCO₂e | −6.15 | −14.14 |
+| Honda | 40,270 | 96.3 % | −0.14 | −0.36 | −0.75 |
+| Hyundai | 429,936 | 95.6 % | −1.57 | −3.80 | −7.86 |
+| Kia | 414,677 | 91.7 % | −1.44 | −3.50 | −7.25 |
 
 Negative = lifetime emissions above the destination's committed benchmark (lock-in
 liability). Withheld units (PHEV, FCEV, no certified value) are listed, not absorbed. Toyota

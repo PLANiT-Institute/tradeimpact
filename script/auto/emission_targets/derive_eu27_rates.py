@@ -226,6 +226,11 @@ def main() -> None:
                 f"Log-linear trend of {what}, {y0}-{y1} excluding "
                 f"{TREND_EXCLUDE[0]}-{TREND_EXCLUDE[1]}."
             )
+            if value < 0:
+                derivation += (
+                    f" OBSERVED_INCREASE: the series is rising ({value:+.4f}/yr), so the S1 "
+                    "benchmark grows over the lifetime and no crossover can occur."
+                )
             out.append(
                 {
                     "country": country,

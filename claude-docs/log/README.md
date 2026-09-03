@@ -36,3 +36,20 @@ two that are not.
 
 Backward moves are recorded here with the same weight as forward ones. A finding that invalidates a
 premise and sends work back is the process working; the entry states the trigger and what it cost.
+
+## 2026-09-04 — independent review of the EU27 result (ST11)
+
+- **Decision:** distance per car is the traffic series divided by the stock of the *same*
+  year (`build_reference.py`). The archived pipeline mixed years; LT was 17 % low. Totals move
+  1–13 % more negative; the archive is kept as the engine baseline only.
+- **Decision:** the real-world sensitivity applies the documented OBFCM range 1.171–1.211 to
+  ICE and HEV as a replacement of the central factor (`real_world_correction.csv` gained
+  `factor_low`/`factor_high`). BEV stays 1.0 at both ends — a disclosed one-sided bias.
+- **Decision:** BEV cells with t* < 0 are labelled "never crosses" when below the benchmark at
+  sale, "before sale year" only when above it.
+- **Decision:** negative observed S1 trends (BG, PL) are flagged `OBSERVED_INCREASE` in the
+  rates table and left in the result, not clamped.
+- **Open for the lead:** LU implausible fleet intensity carried into the headline; segment
+  intensity ratio not applied; S2 grid held flat (absolute target already met) makes BEV S2
+  below BEV S1; age bands use the 2025 partition while stock uses 2024; PHEV utility factor
+  route (Appendix C.2) not yet taken.

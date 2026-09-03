@@ -201,16 +201,24 @@ def main() -> None:
 
         vkt = vkt_year = vkt_tier = None
         vkt_derivation = ""
-        if stock and traffic:
-            candidate = traffic[1] * 1e6 / stock[1]
+        # Distance per car divides the traffic series by the stock of the SAME year: both
+        # describe nationally registered cars, and mixing years mis-states the ratio.
+        stock_same_year = usage.get((c, "car_stock"), {}).get(traffic[0]) if traffic else None
+        if traffic and stock_same_year:
+            candidate = traffic[1] * 1e6 / stock_same_year
             if VKT_MIN_KM <= candidate <= VKT_MAX_KM:
                 vkt, vkt_year = candidate, traffic[0]
                 vkt_tier = "A" if traffic[0] >= year0 - 2 else "B"
                 vkt_derivation = (
                     "Eurostat road_tf_veh (TER_REGNAT) car vehicle-kilometres divided by the "
-                    "registered car stock."
+                    f"registered car stock of the same year ({traffic[0]})."
                 )
                 sources.insert(0, "eurostat_road_tf_veh")
+            else:
+                warnings.append(
+                    f"VKT_IMPLAUSIBLE: national series gives {candidate:.0f} km/yr, outside "
+                    f"{VKT_MIN_KM:.0f}-{VKT_MAX_KM:.0f}; series not used, EU average proxy applied."
+                )
 
         age = mean_age(age_bands_by_year(usage, c), year0)
         age_tier = "A"

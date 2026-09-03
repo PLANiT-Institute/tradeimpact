@@ -28,7 +28,10 @@ OUT_COUNTRY = OUT_DIR / "ti_country_eu27.csv"
 OUT_POWERTRAIN = OUT_DIR / "ti_powertrain_eu27.csv"
 OUT_COMPANY = OUT_DIR / "ti_company_eu27.csv"
 
-IDENTITY_TOL = 1e-6
+# Summands are 4-dp-rounded values summed in different orders; the true float error is
+# ~1e-10 relative, so anything looser than this would let a dropped small cell through.
+IDENTITY_TOL = 1e-9
+ANNUAL = OUT_DIR / "ti_annual_eu27.csv"
 
 GROUP_FIELDS = [
     "company",
@@ -97,6 +100,12 @@ def main() -> None:
         withheld_units: dict[str, int] = defaultdict(int)
         for r in csv.DictReader(f):
             withheld_units[r["company"]] += int(r["units"])
+    # Independent recomputation: the annual flow (eq 3.7) summed over years must equal the
+    # cell totals (eq 3.5-3.6) — a different aggregation path, not a re-ordering of the same one.
+    with ANNUAL.open(newline="") as f:
+        annual_total: dict[tuple[str, str], float] = defaultdict(float)
+        for r in csv.DictReader(f):
+            annual_total[(r["company"], r["scenario"])] += float(r["ti_tco2e"])
 
     by_country = group(cells, "destination")
     by_powertrain = group(cells, "powertrain")
@@ -123,6 +132,7 @@ def main() -> None:
             holds = (
                 abs(row_sum - total) <= IDENTITY_TOL * scale
                 and abs(col_sum - total) <= IDENTITY_TOL * scale
+                and abs(annual_total[(company, scenario)] - total) <= 1e-6 * scale
             )
             held = withheld_units[company]
             company_rows.append(

@@ -42,10 +42,12 @@ independent re-derivation and `B-03`, `B-04`, `B-07`.
 **Judgement.** The week's work moved PH1 objectives 2, 3 and 4 from unserved to partial — a real
 advance, and faster than expected. The regression against the archived baseline has now run and
 passed, which shows the new scripts reproduce the old engine — not that either is right: no figure
-has been independently re-derived. Crossover and the three guideline sensitivities exist, and the
-EU27 result now covers all four exporters — the Korea-versus-Japan comparison the proposal
-promises, on one market boundary. The next units of work are an independent re-derivation of one
-company's figures (ST11 proper) and the United States and Australia inputs. A result set that grows faster than its verification is the failure mode this
+had been independently re-derived — until 2026-09-04, when the Honda cohort was: the engine is
+exact, and the review surfaced a distance-year mismatch inherited from the archived pipeline that
+moved every total 1–13 % more negative once fixed. Crossover and the three guideline
+sensitivities exist, and the EU27 result covers all four exporters — the Korea-versus-Japan
+comparison the proposal promises, on one market boundary. The next units of work are the lead's
+decisions on the four open review items and the United States and Australia inputs. A result set that grows faster than its verification is the failure mode this
 phase has to avoid.
 
 ## 3. Stages
@@ -62,7 +64,7 @@ phase has to avoid.
 | [ST08 benchmark](stages/st08-10-analysis.md) | PH1, PH2, PH4 | Run, EU27 only | `destination_parameters_eu27.csv` (27), `reference_trajectories_eu27.csv` (1,899) | `[compute]` |
 | [ST09 impact](stages/st08-10-analysis.md) | PH1, PH2, PH3, PH4 | Run, EU27 only; crossover and sensitivities output | `ti_by_model_eu27.csv` (3,321), `ti_annual_eu27.csv` (150), `ti_withheld_eu27.csv` (179), `ti_crossover_eu27.csv` (3,321), `ti_sensitivity_eu27.csv` (54) | `[compute]` |
 | [ST10 aggregation](stages/st08-10-analysis.md) | PH1, PH3, PH4 | Run, EU27, four exporters; identity holds for all twelve company × scenario rows; guideline §5.3 data-quality declaration written (Toyota and Honda `directional_only`: tier-C unit share 53.6 % and 53.8 %); `tradeimpact_auto.sqlite` built | `ti_country_eu27.csv` (324), `ti_powertrain_eu27.csv` (36), `ti_company_eu27.csv` (12), `ti_data_quality_eu27.csv` (4), `tradeimpact_auto.sqlite` (24 tables) | `[compute]` |
-| [ST11 verification](stages/st11-verification.md) | all | Regression against `SRC-24` run and passed (parameters exact, totals within 2 × 10⁻⁷); independent re-derivation not done | regression noted in `data/auto/output/method.md` | — |
+| [ST11 verification](stages/st11-verification.md) | all | Independent re-derivation of the Honda cohort done 2026-09-04 (engine reproduced to 6 × 10⁻⁷; three input defects found and fixed: distance year mismatch, real-world range, BEV crossover label); `tests/test_model.py` (5 checks) passes; archive remains the engine baseline, no longer the input baseline | `data/auto/output/method.md` §Verification, `tests/test_model.py` | `[verified-engine]` |
 | [ST12 methodology](stages/st12-15-outputs.md) | PH1, PH2, PH4, PH5 | Not started; three methodology documents in place as inputs | none | — |
 | [ST13 tool and dashboard](stages/st12-15-outputs.md) | PH3, PH5 | Not started; `B-08` open | none | — |
 | [ST14 publication](stages/st12-15-outputs.md) | PH1, PH2, PH4, PH5 | Not started | none | — |
@@ -82,7 +84,7 @@ baseline.
 | PH1/3 reference benchmark built | ST08 | partial — 27 markets × 3 scenarios exist, unverified |
 | PH1/4 impact built | ST09 | partial — per-cell TI, crossover year and the three guideline sensitivities exist for EU27; no P10/P50/P90 range (`B-07`) |
 | PH1/5 aggregated to country and company | ST10 | partial — EU27 country, powertrain and company tables exist, identity holds |
-| PH1/6 verified | ST11 | partial — regression against the archived baseline passed; no independent re-derivation |
+| PH1/6 verified | ST11 | partial — engine independently re-derived (Honda, exact); inputs corrected once; open review items (LU implausible benchmark, rising-trend markets, segment ratio, flat S2 grid) await a lead decision |
 | PH1/7 published | ST14 | **unserved** |
 | PH2/1–7 | ST12, ST14 | **unserved** |
 | PH3/1–4 | ST13 | **unserved** |
