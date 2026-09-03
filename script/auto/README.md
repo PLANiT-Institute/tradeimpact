@@ -20,8 +20,10 @@ model/
   build_database.py     final: every CSV under data/auto -> data/auto/tradeimpact_auto.sqlite
 ```
 
-Run order: the five extract/derive scripts (any order except `derive_eu27_rates.py` after
-the two EU27 extractors), then `model/` top to bottom. See `data/auto/output/method.md`.
+`run_all.py` runs every step above in order, then `ruff check` and `pytest`, and stops at the
+first failure — use it before every commit. Individual scripts run in the order listed.
+`sales/fetch_eea_registrations.py <BRAND>` is the only network step and is run by hand when a
+new brand is added; snapshots are pinned once obtained.
 
 Conventions
 

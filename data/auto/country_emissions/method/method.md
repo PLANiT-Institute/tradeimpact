@@ -37,9 +37,12 @@ Second raw file: `owid_carbon_intensity_electricity.csv` — the full OWID graph
 Ember grid intensity (all entities), downloaded 2026-09-04; used for the United States and
 Australia (`source_id` `owid_ember_grid_intensity`, hash in `raw_files.csv`).
 
-Still to collect: US passenger-car CO2 (EPA GHG Inventory, transport / light-duty) and
-Australia passenger-car CO2 (DCCEEW National Inventory, transport). Grid intensity for both
-is done.
+Third raw file: `epa_ghg_inventory_2025_table_3_13.csv` — the passenger-car rows of EPA GHG
+Inventory Table 3-13 (`epa_ghg_inventory_2025`), extracted from the inventory PDF text for
+1990, 2005 and 2019–2023 (gasoline and diesel). The main text reports only those years; the
+full annual series lives in the inventory annex and is still to collect, so the US S1 trend
+cannot yet be derived. Australia passenger-car CO2 (DCCEEW National Inventory) is still to
+collect. Grid intensity for both is done.
 
 ## Processed files
 
@@ -47,6 +50,7 @@ is done.
 |---|---|---|
 | `country_emissions_eu27.csv` | `script/auto/country_emissions/extract_eu27_snapshot.py` | `car_co2` and `grid_intensity` for 27 markets, EU27 `power_co2` and `transport_ghg` from 1990 |
 | `country_emissions_owid_grid.csv` | `script/auto/country_emissions/extract_owid_grid.py` | `grid_intensity` for US and AU, all years Ember publishes |
+| `country_emissions_us.csv` | `script/auto/country_emissions/extract_epa_inventory.py` | US `car_co2` (gasoline + diesel passenger cars, ktCO2) for the seven years the main text reports |
 
 ## Processing method
 
