@@ -26,11 +26,16 @@ definition; US passenger-car CO2 from EPA Inventory Table 3-13 for 1990, 2005 an
 295 MtCO2 in 2023 — transcribed from the PDF text with page reference, plus the annex Table A-91
 annual GHG series 2013–2023; US scenario rates derived — S1 observed 3.8 %/yr fleet and 2.9 %/yr
 grid, S2 `flag_no_ndc` with no rate, S3 world-NZE pro-rata 10.0 %/yr fleet and 19.5 %/yr power
-from IEA WEO 2024 anchors transcribed from the Drive PDF). Still to collect: US operating life
-(survival tables), US model-level 2024 sales by powertrain, Australian passenger-car CO2, stock and
-distance (the ABS, BITRE and DCCEEW sites refused automated
-access on 2026-09-04 — hand-gathered files), and model-level sales for both markets — so neither can
-enter a result yet. `script/auto/run_all.py` now runs the whole
+from IEA WEO 2024 anchors transcribed from the Drive PDF). Every remaining US and Australian input
+is a **hand-gathered file** — the BTS, ABS, BITRE and DCCEEW sites all refused automated access on
+2026-09-04 and model-level sales are company releases. Files to drop into the Drive folder
+`Trade/Arc_Trade_Data/Auto/`, each pinned on arrival like the IR workbooks: (1) BTS Table 1-26
+average age of light vehicles (US operating life); (2) 2024 US sales by model and powertrain for
+Toyota, Honda, Hyundai and Kia, with EPA certification values for the technology dataset;
+(3) ABS Motor Vehicle Census 9309.0 data cube (AU stock and age); (4) BITRE yearbook road-transport
+passenger-vehicle km (AU distance); (5) DCCEEW National Inventory transport tables (AU passenger-car
+CO2); (6) 2024 AU sales by model and powertrain. Neither market can enter a result until then; the
+automated loop was stopped on 2026-09-04 for that reason. `script/auto/run_all.py` now runs the whole
 chain fail-fast before any commit. Their absence is counted, not
 assumed away: the Kia and Hyundai IR tables are processed but cannot enter
 a country-level result as they stand (regions and plant-side sales respectively).
