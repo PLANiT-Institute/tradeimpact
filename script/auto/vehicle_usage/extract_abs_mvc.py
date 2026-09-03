@@ -106,10 +106,8 @@ def main() -> None:
         r["value"] for r in out if r["series"] == "car_mean_age_years" and r["year"] == latest
     )
     print(
-        print(
-            f"{OUT.relative_to(REPO)}: {len(out)} rows; AU {latest}: {stock:,.0f} passenger "
-            f"vehicles, mean age {age} y"
-        )
+        f"{OUT.relative_to(REPO)}: {len(out)} rows; AU {latest}: {stock:,.0f} passenger "
+        f"vehicles, mean age {age} y"
     )
 
 

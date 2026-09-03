@@ -29,7 +29,12 @@ applied in the model step, never folded into the certified columns.
 
 ## Raw files and sources
 
-Raw files: `../sales/raw/eea_toyota_2024_final.json` and `eea_hyundai_2024_final.json`
+United States: `epa_fueleconomy_vehicles.csv` — the complete EPA/DOE fueleconomy.gov vehicle
+dataset (`epa_fueleconomy_vehicles`; 50,242 model-year trims, 1984 onward, 84 columns)
+downloaded verbatim from <https://www.fueleconomy.gov/feg/epadata/vehicles.csv>; EPA
+combined-cycle values, so never mixed with WLTP rows without an explicit conversion.
+
+EU27: `../sales/raw/eea_*_2024_final.json`
 (shared, not copied) — certified WLTP CO2 (`Ewltp__g_km_`) and electric energy
 consumption (`z__Wh_km_`) per registration, aggregated by the EEA API per country × model ×
 powertrain (`source_id` `eea_co2_monitoring_2024`). Real-world correction factors:
@@ -40,7 +45,8 @@ powertrain (`source_id` `eea_co2_monitoring_2024`). Real-world correction factor
 
 | processed file | script | content |
 |---|---|---|
-| `vehicle_technology_eea_2024.csv` | `script/auto/vehicle_technology/extract_eea_certified.py` | one row per company × destination × model × powertrain (Toyota, Honda, Hyundai, Kia; EU27 2024); rows without a certified value are kept with an empty value and withheld downstream |
+| `vehicle_technology_eea_2024.csv` | `script/auto/vehicle_technology/extract_eea_certified.py` | one row per company × destination × model × powertrain for the companies in scope (EU27 2024; WLTP); rows without a certified value are kept with an empty value and withheld downstream |
+| `vehicle_technology_us_epa.csv` | `script/auto/vehicle_technology/extract_epa_fueleconomy.py` | one row per company × model year (2024–2025) × EPA model name × powertrain for the companies in scope; EPA combined-cycle CO2 (g/mile → g/km) and electricity (kWh/100 mi → Wh/km), unweighted mean over trims with the trim count; `base_model` is the join key to model-level sales |
 
 ## Sources
 

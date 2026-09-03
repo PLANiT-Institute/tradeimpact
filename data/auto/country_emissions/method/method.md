@@ -25,13 +25,14 @@ Importers: EU27 member states, United States, Australia.
 
 ## Raw files and sources
 
-Raw file: `../vehicle_usage/raw/destination_eu27_inputs.json` (shared, not copied) —
-Eurostat GHG inventory `env_air_gge` (CRF 1.A.3.b.i passenger cars per country; EU27
-CRF 1.A.1.a public electricity and CRF 1.A.3 transport) and Ember grid intensity via Our
-World in Data, downloaded 2026-08-09. Source ids `eurostat_env_air_gge_crf1a3b1`,
-`eurostat_env_air_gge_crf1a1a`, `eurostat_env_air_gge_crf1a3`, `owid_ember_grid_intensity`
-resolve in [`../../sources.csv`](../../sources.csv); the file hash is in
-[`../../raw_files.csv`](../../raw_files.csv).
+EU27: three Eurostat GHG-inventory cubes (`env_air_gge`) fetched directly from the Eurostat API
+as JSON-stat 2.0 by `script/auto/vehicle_usage/fetch_eurostat.py` — `eurostat_env_air_gge_car_co2.json`
+(CO2, CRF 1.A.3.b.i passenger cars, per country), `eurostat_env_air_gge_eu_power_co2.json`
+(CO2, CRF 1.A.1.a public electricity and heat, EU27 aggregate) and
+`eurostat_env_air_gge_eu_transport.json` (all GHG, CRF 1.A.3 transport, EU27 aggregate) — plus
+the OWID/Ember grid-intensity CSV (`owid_carbon_intensity_electricity.csv`, all entities) for
+every member state. Links, access dates and hashes: [`../../raw_files.csv`](../../raw_files.csv),
+[`../../sources.csv`](../../sources.csv).
 
 Second raw file: `owid_carbon_intensity_electricity.csv` — the full OWID grapher export of
 Ember grid intensity (all entities), downloaded 2026-09-04; used for the United States and

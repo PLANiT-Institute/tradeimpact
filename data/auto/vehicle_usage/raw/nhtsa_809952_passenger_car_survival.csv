@@ -1,0 +1,26 @@
+vehicle_age_years,survival_probability,annual_vmt_miles,weighted_annual_vmt_miles,source_id,document,table,pdf_page_index,extraction
+1,0.9900,14231,14089,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+2,0.9831,13961,13725,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+3,0.9731,13669,13300,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+4,0.9593,13357,12813,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+5,0.9413,13028,12262,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+6,0.9188,12683,11652,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+7,0.8918,12325,10991,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+8,0.8604,11956,10287,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+9,0.8252,11578,9554,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+10,0.7866,11193,8804,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+11,0.7170,10804,7746,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+12,0.6125,10413,6378,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+13,0.5094,10022,5105,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+14,0.4142,9633,3990,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+15,0.3308,9249,3060,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+16,0.2604,8871,2310,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+17,0.2028,8502,1724,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+18,0.1565,8144,1275,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+19,0.1200,7799,936,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+20,0.0916,7469,684,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+21,0.0696,7157,498,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+22,0.0527,6866,362,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+23,0.0399,6596,263,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+24,0.0301,6350,191,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04
+25,0.0227,6131,139,nhtsa_809952,DOT HS 809 952 Vehicle Survivability and Travel Mileage Schedules,Table 7,24,pypdf text extraction 2026-09-04

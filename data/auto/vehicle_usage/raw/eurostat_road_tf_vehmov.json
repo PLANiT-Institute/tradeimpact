@@ -1,0 +1,448 @@
+{
+ "accessed_date": "2026-09-04",
+ "dataset": "road_tf_vehmov",
+ "dataset_page": "https://ec.europa.eu/eurostat/databrowser/view/road_tf_vehmov/default/table?lang=en",
+ "description": "road traffic on the national territory by cars, million vehicle-km (fallback only)",
+ "filters": {
+  "regisveh": "TERNAT_REG",
+  "sinceTimePeriod": "2015",
+  "unit": "MIO_VKM",
+  "vehicle": "CAR"
+ },
+ "request_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/road_tf_vehmov?format=JSON&lang=EN&vehicle=CAR&regisveh=TERNAT_REG&unit=MIO_VKM&sinceTimePeriod=2015",
+ "response": {
+  "class": "dataset",
+  "dimension": {
+   "freq": {
+    "category": {
+     "index": {
+      "A": 0
+     },
+     "label": {
+      "A": "Annual"
+     }
+    },
+    "label": "Time frequency"
+   },
+   "geo": {
+    "category": {
+     "index": {
+      "AT": 16,
+      "BE": 0,
+      "BG": 1,
+      "CH": 25,
+      "CZ": 2,
+      "DE": 4,
+      "DK": 3,
+      "EE": 5,
+      "ES": 7,
+      "FI": 22,
+      "FR": 8,
+      "HR": 9,
+      "HU": 13,
+      "IE": 6,
+      "LT": 11,
+      "LU": 12,
+      "LV": 10,
+      "ME": 27,
+      "MK": 28,
+      "MT": 14,
+      "NL": 15,
+      "NO": 24,
+      "PL": 17,
+      "PT": 18,
+      "RO": 19,
+      "SE": 23,
+      "SI": 20,
+      "SK": 21,
+      "TR": 29,
+      "UA": 30,
+      "UK": 26
+     },
+     "label": {
+      "AT": "Austria",
+      "BE": "Belgium",
+      "BG": "Bulgaria",
+      "CH": "Switzerland",
+      "CZ": "Czechia",
+      "DE": "Germany",
+      "DK": "Denmark",
+      "EE": "Estonia",
+      "ES": "Spain",
+      "FI": "Finland",
+      "FR": "France",
+      "HR": "Croatia",
+      "HU": "Hungary",
+      "IE": "Ireland",
+      "LT": "Lithuania",
+      "LU": "Luxembourg",
+      "LV": "Latvia",
+      "ME": "Montenegro",
+      "MK": "North Macedonia",
+      "MT": "Malta",
+      "NL": "Netherlands",
+      "NO": "Norway",
+      "PL": "Poland",
+      "PT": "Portugal",
+      "RO": "Romania",
+      "SE": "Sweden",
+      "SI": "Slovenia",
+      "SK": "Slovakia",
+      "TR": "T\u00fcrkiye",
+      "UA": "Ukraine",
+      "UK": "United Kingdom"
+     }
+    },
+    "label": "Geopolitical entity (reporting)"
+   },
+   "regisveh": {
+    "category": {
+     "index": {
+      "TERNAT_REG": 0
+     },
+     "label": {
+      "TERNAT_REG": "Traffic performed on the national territory by vehicles registered in the reporting country or in foreign countries"
+     }
+    },
+    "label": "Category of vehicle registration and traffic"
+   },
+   "time": {
+    "category": {
+     "index": {
+      "2015": 0,
+      "2016": 1,
+      "2017": 2,
+      "2018": 3,
+      "2019": 4,
+      "2020": 5,
+      "2021": 6,
+      "2022": 7,
+      "2023": 8,
+      "2024": 9
+     },
+     "label": {
+      "2015": "2015",
+      "2016": "2016",
+      "2017": "2017",
+      "2018": "2018",
+      "2019": "2019",
+      "2020": "2020",
+      "2021": "2021",
+      "2022": "2022",
+      "2023": "2023",
+      "2024": "2024"
+     }
+    },
+    "label": "Time"
+   },
+   "unit": {
+    "category": {
+     "index": {
+      "MIO_VKM": 0
+     },
+     "label": {
+      "MIO_VKM": "Million vehicle-kilometres (VKM)"
+     }
+    },
+    "label": "Unit of measure"
+   },
+   "vehicle": {
+    "category": {
+     "index": {
+      "CAR": 0
+     },
+     "label": {
+      "CAR": "Passenger cars"
+     }
+    },
+    "label": "Vehicles"
+   }
+  },
+  "extension": {
+   "agencyId": "ESTAT",
+   "annotation": [
+    {
+     "date": "2023-11-14T18:32:04+0100",
+     "type": "CREATED"
+    },
+    {
+     "title": "<adms:identifier xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core.html\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"><adms:Identifier rdf:about=\"https://doi.org/10.2908/ROAD_TF_VEHMOV\"><skos:notation rdf:datatype=\"http://purl.org/spar/datacite/doi\">10.2908/ROAD_TF_VEHMOV</skos:notation><dct:creator rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/ESTAT\"/><dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2023-01-19</dct:issued></adms:Identifier></adms:identifier>",
+     "type": "DISSEMINATION_DOI_XML"
+    },
+    {
+     "title": "DATASET",
+     "type": "DISSEMINATION_OBJECT_TYPE"
+    },
+    {
+     "date": "2026-07-29T23:00:00+0200",
+     "type": "DISSEMINATION_TIMESTAMP_DATA"
+    },
+    {
+     "date": "2026-07-29T23:00:00+0200",
+     "type": "DISSEMINATION_TIMESTAMP_GLOBAL"
+    },
+    {
+     "date": "2026-07-29T23:00:00+0200",
+     "type": "DISSEMINATION_TIMESTAMP_PLANNED"
+    },
+    {
+     "title": "1728",
+     "type": "OBS_COUNT"
+    },
+    {
+     "title": "2024",
+     "type": "OBS_PERIOD_OVERALL_LATEST"
+    },
+    {
+     "title": "2008",
+     "type": "OBS_PERIOD_OVERALL_OLDEST"
+    },
+    {
+     "text": "Eurostat",
+     "type": "SOURCE_INSTITUTIONS"
+    },
+    {
+     "date": "2026-07-29T23:00:00+0200",
+     "type": "UPDATE_DATA"
+    },
+    {
+     "date": "2025-12-12T11:00:00+0100",
+     "type": "UPDATE_STRUCTURE"
+    }
+   ],
+   "datastructure": {
+    "agencyId": "ESTAT",
+    "id": "ROAD_TF_VEHMOV",
+    "version": "49.0"
+   },
+   "id": "ROAD_TF_VEHMOV",
+   "lang": "EN",
+   "positions-with-no-data": {
+    "freq": [],
+    "geo": [
+     1,
+     2,
+     3,
+     4,
+     8,
+     10,
+     12,
+     14,
+     18,
+     21,
+     30
+    ],
+    "regisveh": [],
+    "time": [],
+    "unit": [],
+    "vehicle": []
+   },
+   "status": {
+    "label": {
+     "b": "break in time series",
+     "e": "estimated",
+     "p": "provisional"
+    }
+   },
+   "version": "1.0"
+  },
+  "id": [
+   "freq",
+   "regisveh",
+   "unit",
+   "vehicle",
+   "geo",
+   "time"
+  ],
+  "label": "Road motor vehicle traffic performance by traffic and registration location and type of vehicle",
+  "size": [
+   1,
+   1,
+   1,
+   1,
+   31,
+   10
+  ],
+  "source": "ESTAT",
+  "status": {
+   "132": "e",
+   "133": "e",
+   "134": "e",
+   "170": "e",
+   "200": "p",
+   "203": "p",
+   "206": "b",
+   "207": "b",
+   "209": "p",
+   "221": "b",
+   "240": "e",
+   "241": "e",
+   "242": "e",
+   "243": "e",
+   "244": "e",
+   "271": "e",
+   "272": "e",
+   "285": "e",
+   "287": "e",
+   "289": "e",
+   "50": "e",
+   "51": "e",
+   "52": "e",
+   "53": "e",
+   "54": "e"
+  },
+  "updated": "2026-07-29T23:00:00+0200",
+  "value": {
+   "0": 78730,
+   "114": 10084,
+   "115": 9413,
+   "116": 9668,
+   "117": 10132.6,
+   "130": 26707.2,
+   "131": 28333.49,
+   "132": 30245.27,
+   "133": 31577.99,
+   "134": 32935.96,
+   "135": 28903.22,
+   "136": 32284.47,
+   "137": 34718.25,
+   "138": 34891.69,
+   "139": 43098.61,
+   "150": 105089,
+   "151": 107708,
+   "152": 108936,
+   "153": 109337,
+   "154": 109087,
+   "155": 91723,
+   "156": 96989,
+   "157": 102680,
+   "158": 106811,
+   "159": 109894,
+   "160": 67951,
+   "161": 69921,
+   "162": 71250,
+   "168": 71452,
+   "169": 72769,
+   "170": 180158,
+   "190": 39798,
+   "191": 40948,
+   "192": 42133,
+   "193": 43354,
+   "194": 44613,
+   "195": 45911,
+   "196": 47249,
+   "197": 48628,
+   "198": 50050,
+   "199": 51516,
+   "200": 17986,
+   "201": 17679,
+   "202": 18328,
+   "203": 18749,
+   "204": 19087,
+   "205": 14614,
+   "206": 15424,
+   "207": 16801,
+   "208": 17715,
+   "209": 18206,
+   "220": 47355,
+   "221": 40719,
+   "222": 40614,
+   "223": 40718,
+   "224": 40718,
+   "225": 39092,
+   "227": 38385,
+   "228": 38592,
+   "229": 38619,
+   "230": 65877,
+   "231": 67417,
+   "232": 68325,
+   "233": 68646,
+   "234": 67888,
+   "235": 62162,
+   "236": 63929,
+   "237": 65387,
+   "238": 65851,
+   "239": 67046,
+   "240": 34435,
+   "241": 34848,
+   "242": 35407,
+   "243": 35989,
+   "244": 35504,
+   "245": 33873,
+   "246": 35098,
+   "250": 56620,
+   "251": 57737,
+   "252": 58735,
+   "253": 59344,
+   "254": 59833,
+   "255": 48400,
+   "256": 51385,
+   "257": 54982,
+   "258": 56576,
+   "259": 57045,
+   "260": 398626,
+   "261": 404982,
+   "262": 409408,
+   "264": 447769,
+   "265": 337240,
+   "267": 392670,
+   "268": 404428,
+   "271": 1927.02,
+   "272": 2021,
+   "280": 3455,
+   "281": 3544,
+   "282": 3777,
+   "283": 3725,
+   "284": 3834.4,
+   "285": 3862.764,
+   "286": 4300.38,
+   "287": 4351.338,
+   "288": 4975.767,
+   "289": 5221.89,
+   "290": 81578,
+   "291": 87276,
+   "299": 122029,
+   "50": 8476,
+   "51": 8670.2,
+   "52": 8876.1,
+   "53": 8924.1,
+   "54": 9397.2,
+   "55": 9263.3,
+   "56": 9393.4,
+   "57": 9705.4,
+   "58": 10026.4,
+   "59": 10333.6,
+   "60": 35020,
+   "61": 36623,
+   "62": 37181,
+   "63": 36817,
+   "64": 36301,
+   "65": 26654,
+   "66": 30677,
+   "67": 34952,
+   "68": 35820,
+   "70": 189171.33,
+   "71": 196467,
+   "72": 198262,
+   "73": 202954,
+   "74": 203817,
+   "75": 158247,
+   "76": 189939.58,
+   "77": 204527,
+   "78": 206577,
+   "79": 209244,
+   "90": 18850,
+   "91": 19360,
+   "92": 19905,
+   "93": 20310,
+   "94": 20840,
+   "95": 16810,
+   "96": 19780,
+   "97": 20880,
+   "98": 290,
+   "99": 300
+  },
+  "version": "2.0"
+ },
+ "source_id": "eurostat_road_tf_vehmov"
+}
