@@ -82,11 +82,16 @@ def main() -> None:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
         w.writerows(out)
-    stock = next(r for r in out if r["series"] == "car_stock" and r["year"] == 2023)
-    traffic = next(r for r in out if r["series"] == "car_traffic" and r["year"] == 2023)
-    vkt = float(str(traffic["value"])) * 1e6 / float(str(stock["value"]))
+    latest = max(int(str(r["year"])) for r in out)
+    stock = float(
+        str(next(r["value"] for r in out if r["series"] == "car_stock" and r["year"] == latest))
+    )
+    traffic = float(
+        str(next(r["value"] for r in out if r["series"] == "car_traffic" and r["year"] == latest))
+    )
     print(
-        f"{OUT.relative_to(REPO)}: {len(out)} rows; US short-WB 2023: {float(str(stock['value'])):,.0f} vehicles, {vkt:,.0f} km/vehicle/yr"
+        f"{OUT.relative_to(REPO)}: {len(out)} rows; US short-WB {latest}: "
+        f"{stock:,.0f} vehicles, {traffic * 1e6 / stock:,.0f} km/vehicle/yr"
     )
 
 
