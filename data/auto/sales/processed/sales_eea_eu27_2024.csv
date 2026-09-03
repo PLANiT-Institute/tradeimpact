@@ -1,4 +1,244 @@
 company,destination,destination_level,origin,cohort_year,period,model,powertrain,units,basis,source_file
+honda,AT,country,,2024,2024-01..2024-12,CIVIC E:HEV 2.0 ADVA,HEV,34,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,CIVIC E:HEV 2.0 ELEG,HEV,57,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,CIVIC E:HEV 2.0 SPOR,HEV,28,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,CIVIC TYPE R 2.0 TYP,ICE,12,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,CR-V E:HEV 2WD 2.0 E,HEV,21,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,CR-V E:HEV 4WD 2.0 A,HEV,82,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,CR-V E:HEV 4WD 2.0 E,HEV,45,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,CR-V PHEV 2.0 ADVANC,PHEV,35,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,E:NY1 EV ADVANCE,BEV,109,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,E:NY1 EV ELEGANCE,BEV,18,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,HONDA E EV ADVANCE,BEV,1,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,HR-V E:HEV 1.5 ADVAN,HEV,227,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,HR-V E:HEV 1.5 ELEGA,HEV,109,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,JAZZ 1.5 ADVANCE,HEV,46,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,JAZZ 1.5 ADVANCE SPO,HEV,22,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,JAZZ 1.5 ELEGANCE,HEV,41,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,JAZZ CROSSTAR 1.5 AD,HEV,63,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,UNASSIGNED,BEV,4,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,ZR-V 2.0 ADVANCE,HEV,49,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,ZR-V 2.0 ELEGANCE,HEV,17,registrations,eea_honda_2024_final.json
+honda,AT,country,,2024,2024-01..2024-12,ZR-V 2.0 SPORT,HEV,84,registrations,eea_honda_2024_final.json
+honda,BE,country,,2024,2024-01..2024-12,CIVIC,HEV,283,registrations,eea_honda_2024_final.json
+honda,BE,country,,2024,2024-01..2024-12,CIVIC 5DR,ICE,1,registrations,eea_honda_2024_final.json
+honda,BE,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,38,registrations,eea_honda_2024_final.json
+honda,BE,country,,2024,2024-01..2024-12,CR-V,HEV,249,registrations,eea_honda_2024_final.json
+honda,BE,country,,2024,2024-01..2024-12,CR-V,PHEV,117,registrations,eea_honda_2024_final.json
+honda,BE,country,,2024,2024-01..2024-12,E:NY1,BEV,139,registrations,eea_honda_2024_final.json
+honda,BE,country,,2024,2024-01..2024-12,HR-V,HEV,513,registrations,eea_honda_2024_final.json
+honda,BE,country,,2024,2024-01..2024-12,JAZZ,HEV,220,registrations,eea_honda_2024_final.json
+honda,BE,country,,2024,2024-01..2024-12,ZR-V,HEV,233,registrations,eea_honda_2024_final.json
+honda,BG,country,,2024,2024-01..2024-12,CIVIC,HEV,28,registrations,eea_honda_2024_final.json
+honda,BG,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,4,registrations,eea_honda_2024_final.json
+honda,BG,country,,2024,2024-01..2024-12,HONDA CR V,HEV,8,registrations,eea_honda_2024_final.json
+honda,BG,country,,2024,2024-01..2024-12,HONDA CRV,HEV,60,registrations,eea_honda_2024_final.json
+honda,BG,country,,2024,2024-01..2024-12,HONDA CRV,PHEV,4,registrations,eea_honda_2024_final.json
+honda,BG,country,,2024,2024-01..2024-12,HONDA HRV,HEV,20,registrations,eea_honda_2024_final.json
+honda,BG,country,,2024,2024-01..2024-12,HONDA ZRV,HEV,38,registrations,eea_honda_2024_final.json
+honda,BG,country,,2024,2024-01..2024-12,JAZZ,HEV,12,registrations,eea_honda_2024_final.json
+honda,CY,country,,2024,2024-01..2024-12,CIVIC,HEV,15,registrations,eea_honda_2024_final.json
+honda,CY,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,1,registrations,eea_honda_2024_final.json
+honda,CY,country,,2024,2024-01..2024-12,CR-V,HEV,26,registrations,eea_honda_2024_final.json
+honda,CY,country,,2024,2024-01..2024-12,E:NY1,BEV,5,registrations,eea_honda_2024_final.json
+honda,CY,country,,2024,2024-01..2024-12,HR-V,HEV,81,registrations,eea_honda_2024_final.json
+honda,CY,country,,2024,2024-01..2024-12,JAZZ,HEV,5,registrations,eea_honda_2024_final.json
+honda,CY,country,,2024,2024-01..2024-12,ZR-V,HEV,8,registrations,eea_honda_2024_final.json
+honda,CZ,country,,2024,2024-01..2024-12,CIVIC,HEV,123,registrations,eea_honda_2024_final.json
+honda,CZ,country,,2024,2024-01..2024-12,CIVIC 5DR,ICE,1,registrations,eea_honda_2024_final.json
+honda,CZ,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,30,registrations,eea_honda_2024_final.json
+honda,CZ,country,,2024,2024-01..2024-12,CR-V,HEV,604,registrations,eea_honda_2024_final.json
+honda,CZ,country,,2024,2024-01..2024-12,CR-V,PHEV,64,registrations,eea_honda_2024_final.json
+honda,CZ,country,,2024,2024-01..2024-12,HR-V,HEV,300,registrations,eea_honda_2024_final.json
+honda,CZ,country,,2024,2024-01..2024-12,JAZZ,HEV,44,registrations,eea_honda_2024_final.json
+honda,CZ,country,,2024,2024-01..2024-12,ZR-V,HEV,226,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,,HEV,3,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,,ICE,1,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,CIVIC,HEV,823,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,CIVIC,ICE,1,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,CIVIC SPORT,ICE,3,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,123,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,E:NY1,BEV,796,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,HONDA CR-V,HEV,1349,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,HONDA CR-V,ICE,2,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,HONDA CR-V,PHEV,267,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,HONDA E,BEV,4,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,HONDA HR-V,ICE,1,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,HR-V,HEV,1661,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,JAZZ,HEV,1173,registrations,eea_honda_2024_final.json
+honda,DE,country,,2024,2024-01..2024-12,ZR-V,HEV,855,registrations,eea_honda_2024_final.json
+honda,DK,country,,2024,2024-01..2024-12,CIVIC E:HEV,HEV,35,registrations,eea_honda_2024_final.json
+honda,DK,country,,2024,2024-01..2024-12,CIVIC E:HEV,ICE,1,registrations,eea_honda_2024_final.json
+honda,DK,country,,2024,2024-01..2024-12,CR-V E:PHEV,PHEV,103,registrations,eea_honda_2024_final.json
+honda,DK,country,,2024,2024-01..2024-12,E:NY1,BEV,510,registrations,eea_honda_2024_final.json
+honda,DK,country,,2024,2024-01..2024-12,HR-V E:HEV,HEV,161,registrations,eea_honda_2024_final.json
+honda,DK,country,,2024,2024-01..2024-12,HR-V E:HEV,ICE,1,registrations,eea_honda_2024_final.json
+honda,DK,country,,2024,2024-01..2024-12,JAZZ E:HEV,HEV,51,registrations,eea_honda_2024_final.json
+honda,EE,country,,2024,2024-01..2024-12,CIVIC,HEV,39,registrations,eea_honda_2024_final.json
+honda,EE,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,8,registrations,eea_honda_2024_final.json
+honda,EE,country,,2024,2024-01..2024-12,CR-V,HEV,217,registrations,eea_honda_2024_final.json
+honda,EE,country,,2024,2024-01..2024-12,CR-V,PHEV,25,registrations,eea_honda_2024_final.json
+honda,EE,country,,2024,2024-01..2024-12,E:NY1,BEV,3,registrations,eea_honda_2024_final.json
+honda,EE,country,,2024,2024-01..2024-12,HR-V,HEV,87,registrations,eea_honda_2024_final.json
+honda,EE,country,,2024,2024-01..2024-12,JAZZ,HEV,37,registrations,eea_honda_2024_final.json
+honda,EE,country,,2024,2024-01..2024-12,ZR-V,HEV,119,registrations,eea_honda_2024_final.json
+honda,ES,country,,2024,2024-01..2024-12,CIVIC,HEV,922,registrations,eea_honda_2024_final.json
+honda,ES,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,46,registrations,eea_honda_2024_final.json
+honda,ES,country,,2024,2024-01..2024-12,CR-V,HEV,429,registrations,eea_honda_2024_final.json
+honda,ES,country,,2024,2024-01..2024-12,CR-V,PHEV,91,registrations,eea_honda_2024_final.json
+honda,ES,country,,2024,2024-01..2024-12,E:NY1,BEV,35,registrations,eea_honda_2024_final.json
+honda,ES,country,,2024,2024-01..2024-12,HONDA E,BEV,15,registrations,eea_honda_2024_final.json
+honda,ES,country,,2024,2024-01..2024-12,HR-V,HEV,1188,registrations,eea_honda_2024_final.json
+honda,ES,country,,2024,2024-01..2024-12,JAZZ,HEV,474,registrations,eea_honda_2024_final.json
+honda,ES,country,,2024,2024-01..2024-12,ZR-V,HEV,644,registrations,eea_honda_2024_final.json
+honda,FI,country,,2024,2024-01..2024-12,CIVIC,HEV,22,registrations,eea_honda_2024_final.json
+honda,FI,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,1,registrations,eea_honda_2024_final.json
+honda,FI,country,,2024,2024-01..2024-12,CR-V,HEV,57,registrations,eea_honda_2024_final.json
+honda,FI,country,,2024,2024-01..2024-12,CR-V,PHEV,37,registrations,eea_honda_2024_final.json
+honda,FI,country,,2024,2024-01..2024-12,E:NY1,BEV,2,registrations,eea_honda_2024_final.json
+honda,FI,country,,2024,2024-01..2024-12,HR-V,HEV,21,registrations,eea_honda_2024_final.json
+honda,FI,country,,2024,2024-01..2024-12,JAZZ,HEV,33,registrations,eea_honda_2024_final.json
+honda,FI,country,,2024,2024-01..2024-12,ZR-V,HEV,30,registrations,eea_honda_2024_final.json
+honda,FR,country,,2024,2024-01..2024-12,CIVIC,HEV,1190,registrations,eea_honda_2024_final.json
+honda,FR,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,5,registrations,eea_honda_2024_final.json
+honda,FR,country,,2024,2024-01..2024-12,CR-V,HEV,149,registrations,eea_honda_2024_final.json
+honda,FR,country,,2024,2024-01..2024-12,CR-V,PHEV,167,registrations,eea_honda_2024_final.json
+honda,FR,country,,2024,2024-01..2024-12,E:NY1,BEV,437,registrations,eea_honda_2024_final.json
+honda,FR,country,,2024,2024-01..2024-12,HR-V,HEV,1265,registrations,eea_honda_2024_final.json
+honda,FR,country,,2024,2024-01..2024-12,JAZZ,HEV,814,registrations,eea_honda_2024_final.json
+honda,FR,country,,2024,2024-01..2024-12,ZR-V,HEV,760,registrations,eea_honda_2024_final.json
+honda,GR,country,,2024,2024-01..2024-12,CIVIC,HEV,42,registrations,eea_honda_2024_final.json
+honda,GR,country,,2024,2024-01..2024-12,CIVIC TYPE R,HEV,1,registrations,eea_honda_2024_final.json
+honda,GR,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,9,registrations,eea_honda_2024_final.json
+honda,GR,country,,2024,2024-01..2024-12,CR-V,HEV,44,registrations,eea_honda_2024_final.json
+honda,GR,country,,2024,2024-01..2024-12,CR-V,PHEV,7,registrations,eea_honda_2024_final.json
+honda,GR,country,,2024,2024-01..2024-12,E:NY1,BEV,29,registrations,eea_honda_2024_final.json
+honda,GR,country,,2024,2024-01..2024-12,HR-V,HEV,136,registrations,eea_honda_2024_final.json
+honda,GR,country,,2024,2024-01..2024-12,JAZZ,HEV,114,registrations,eea_honda_2024_final.json
+honda,GR,country,,2024,2024-01..2024-12,ZR-V,HEV,57,registrations,eea_honda_2024_final.json
+honda,HR,country,,2024,2024-01..2024-12,CIVIC,HEV,30,registrations,eea_honda_2024_final.json
+honda,HR,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,5,registrations,eea_honda_2024_final.json
+honda,HR,country,,2024,2024-01..2024-12,CR-V,HEV,49,registrations,eea_honda_2024_final.json
+honda,HR,country,,2024,2024-01..2024-12,CR-V,PHEV,6,registrations,eea_honda_2024_final.json
+honda,HR,country,,2024,2024-01..2024-12,HONDA E,BEV,1,registrations,eea_honda_2024_final.json
+honda,HR,country,,2024,2024-01..2024-12,HR-V,HEV,27,registrations,eea_honda_2024_final.json
+honda,HR,country,,2024,2024-01..2024-12,JAZZ,HEV,10,registrations,eea_honda_2024_final.json
+honda,HR,country,,2024,2024-01..2024-12,ZR-V,HEV,34,registrations,eea_honda_2024_final.json
+honda,HU,country,,2024,2024-01..2024-12,CIVIC,HEV,140,registrations,eea_honda_2024_final.json
+honda,HU,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,5,registrations,eea_honda_2024_final.json
+honda,HU,country,,2024,2024-01..2024-12,CR-V,HEV,119,registrations,eea_honda_2024_final.json
+honda,HU,country,,2024,2024-01..2024-12,CR-V,PHEV,29,registrations,eea_honda_2024_final.json
+honda,HU,country,,2024,2024-01..2024-12,E:NY1,BEV,96,registrations,eea_honda_2024_final.json
+honda,HU,country,,2024,2024-01..2024-12,HONDA E,BEV,3,registrations,eea_honda_2024_final.json
+honda,HU,country,,2024,2024-01..2024-12,HR-V,HEV,179,registrations,eea_honda_2024_final.json
+honda,HU,country,,2024,2024-01..2024-12,JAZZ,HEV,60,registrations,eea_honda_2024_final.json
+honda,HU,country,,2024,2024-01..2024-12,ZR-V,HEV,104,registrations,eea_honda_2024_final.json
+honda,IE,country,,2024,2024-01..2024-12,CIVIC,HEV,61,registrations,eea_honda_2024_final.json
+honda,IE,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,3,registrations,eea_honda_2024_final.json
+honda,IE,country,,2024,2024-01..2024-12,CR-V,HEV,10,registrations,eea_honda_2024_final.json
+honda,IE,country,,2024,2024-01..2024-12,CR-V,PHEV,39,registrations,eea_honda_2024_final.json
+honda,IE,country,,2024,2024-01..2024-12,E:NY1,BEV,5,registrations,eea_honda_2024_final.json
+honda,IE,country,,2024,2024-01..2024-12,HONDA E,BEV,1,registrations,eea_honda_2024_final.json
+honda,IE,country,,2024,2024-01..2024-12,HR-V,HEV,18,registrations,eea_honda_2024_final.json
+honda,IE,country,,2024,2024-01..2024-12,JAZZ,HEV,83,registrations,eea_honda_2024_final.json
+honda,IE,country,,2024,2024-01..2024-12,ZR-V,HEV,23,registrations,eea_honda_2024_final.json
+honda,IT,country,,2024,2024-01..2024-12,CIVIC,HEV,440,registrations,eea_honda_2024_final.json
+honda,IT,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,52,registrations,eea_honda_2024_final.json
+honda,IT,country,,2024,2024-01..2024-12,CR-V,HEV,841,registrations,eea_honda_2024_final.json
+honda,IT,country,,2024,2024-01..2024-12,CR-V,PHEV,76,registrations,eea_honda_2024_final.json
+honda,IT,country,,2024,2024-01..2024-12,HR-V,HEV,3188,registrations,eea_honda_2024_final.json
+honda,IT,country,,2024,2024-01..2024-12,JAZZ,HEV,1262,registrations,eea_honda_2024_final.json
+honda,IT,country,,2024,2024-01..2024-12,ZR-V,HEV,1588,registrations,eea_honda_2024_final.json
+honda,LT,country,,2024,2024-01..2024-12,CIVIC,HEV,10,registrations,eea_honda_2024_final.json
+honda,LT,country,,2024,2024-01..2024-12,CIVIC TYPE-R,ICE,5,registrations,eea_honda_2024_final.json
+honda,LT,country,,2024,2024-01..2024-12,CR-V,HEV,55,registrations,eea_honda_2024_final.json
+honda,LT,country,,2024,2024-01..2024-12,CR-V,PHEV,8,registrations,eea_honda_2024_final.json
+honda,LT,country,,2024,2024-01..2024-12,HR-V,HEV,38,registrations,eea_honda_2024_final.json
+honda,LT,country,,2024,2024-01..2024-12,JAZZ,HEV,19,registrations,eea_honda_2024_final.json
+honda,LT,country,,2024,2024-01..2024-12,ZR-V,HEV,24,registrations,eea_honda_2024_final.json
+honda,LU,country,,2024,2024-01..2024-12,CIVIC,HEV,38,registrations,eea_honda_2024_final.json
+honda,LU,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,17,registrations,eea_honda_2024_final.json
+honda,LU,country,,2024,2024-01..2024-12,CR-V,HEV,39,registrations,eea_honda_2024_final.json
+honda,LU,country,,2024,2024-01..2024-12,CR-V,PHEV,4,registrations,eea_honda_2024_final.json
+honda,LU,country,,2024,2024-01..2024-12,E:NY1,BEV,19,registrations,eea_honda_2024_final.json
+honda,LU,country,,2024,2024-01..2024-12,HR-V,HEV,28,registrations,eea_honda_2024_final.json
+honda,LU,country,,2024,2024-01..2024-12,JAZZ,HEV,21,registrations,eea_honda_2024_final.json
+honda,LU,country,,2024,2024-01..2024-12,ZR-V,HEV,31,registrations,eea_honda_2024_final.json
+honda,LV,country,,2024,2024-01..2024-12,CIVIC,HEV,5,registrations,eea_honda_2024_final.json
+honda,LV,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,2,registrations,eea_honda_2024_final.json
+honda,LV,country,,2024,2024-01..2024-12,CR-V,HEV,63,registrations,eea_honda_2024_final.json
+honda,LV,country,,2024,2024-01..2024-12,CR-V,PHEV,5,registrations,eea_honda_2024_final.json
+honda,LV,country,,2024,2024-01..2024-12,E:NY1,BEV,1,registrations,eea_honda_2024_final.json
+honda,LV,country,,2024,2024-01..2024-12,HRV,HEV,25,registrations,eea_honda_2024_final.json
+honda,LV,country,,2024,2024-01..2024-12,JAZZ,HEV,5,registrations,eea_honda_2024_final.json
+honda,LV,country,,2024,2024-01..2024-12,ZR-V,HEV,25,registrations,eea_honda_2024_final.json
+honda,MT,country,,2024,2024-01..2024-12,CIVIC,HEV,3,registrations,eea_honda_2024_final.json
+honda,MT,country,,2024,2024-01..2024-12,CR-V,HEV,1,registrations,eea_honda_2024_final.json
+honda,MT,country,,2024,2024-01..2024-12,CR-V,PHEV,1,registrations,eea_honda_2024_final.json
+honda,MT,country,,2024,2024-01..2024-12,E NY1,BEV,11,registrations,eea_honda_2024_final.json
+honda,MT,country,,2024,2024-01..2024-12,HR-V,HEV,1,registrations,eea_honda_2024_final.json
+honda,MT,country,,2024,2024-01..2024-12,JAZZ,HEV,9,registrations,eea_honda_2024_final.json
+honda,MT,country,,2024,2024-01..2024-12,ZR-V,HEV,4,registrations,eea_honda_2024_final.json
+honda,NL,country,,2024,2024-01..2024-12,CIVIC,HEV,202,registrations,eea_honda_2024_final.json
+honda,NL,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,1,registrations,eea_honda_2024_final.json
+honda,NL,country,,2024,2024-01..2024-12,CR-V,HEV,60,registrations,eea_honda_2024_final.json
+honda,NL,country,,2024,2024-01..2024-12,CR-V,PHEV,117,registrations,eea_honda_2024_final.json
+honda,NL,country,,2024,2024-01..2024-12,E:NY1,BEV,118,registrations,eea_honda_2024_final.json
+honda,NL,country,,2024,2024-01..2024-12,HR-V,HEV,311,registrations,eea_honda_2024_final.json
+honda,NL,country,,2024,2024-01..2024-12,JAZZ,HEV,218,registrations,eea_honda_2024_final.json
+honda,NL,country,,2024,2024-01..2024-12,ZR-V,HEV,56,registrations,eea_honda_2024_final.json
+honda,PL,country,,2024,2024-01..2024-12,CIVIC,HEV,423,registrations,eea_honda_2024_final.json
+honda,PL,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,51,registrations,eea_honda_2024_final.json
+honda,PL,country,,2024,2024-01..2024-12,CR-V,HEV,997,registrations,eea_honda_2024_final.json
+honda,PL,country,,2024,2024-01..2024-12,CR-V,PHEV,133,registrations,eea_honda_2024_final.json
+honda,PL,country,,2024,2024-01..2024-12,HR-V,HEV,1604,registrations,eea_honda_2024_final.json
+honda,PL,country,,2024,2024-01..2024-12,JAZZ,HEV,199,registrations,eea_honda_2024_final.json
+honda,PL,country,,2024,2024-01..2024-12,ZR-V,HEV,608,registrations,eea_honda_2024_final.json
+honda,PT,country,,2024,2024-01..2024-12,CIVIC,HEV,11,registrations,eea_honda_2024_final.json
+honda,PT,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,18,registrations,eea_honda_2024_final.json
+honda,PT,country,,2024,2024-01..2024-12,CR-V,HEV,19,registrations,eea_honda_2024_final.json
+honda,PT,country,,2024,2024-01..2024-12,CR-V,PHEV,61,registrations,eea_honda_2024_final.json
+honda,PT,country,,2024,2024-01..2024-12,E:NY1,BEV,34,registrations,eea_honda_2024_final.json
+honda,PT,country,,2024,2024-01..2024-12,HR-V,HEV,410,registrations,eea_honda_2024_final.json
+honda,PT,country,,2024,2024-01..2024-12,JAZZ,HEV,133,registrations,eea_honda_2024_final.json
+honda,PT,country,,2024,2024-01..2024-12,ZR-V,HEV,41,registrations,eea_honda_2024_final.json
+honda,RO,country,,2024,2024-01..2024-12,CIVIC,HEV,283,registrations,eea_honda_2024_final.json
+honda,RO,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,19,registrations,eea_honda_2024_final.json
+honda,RO,country,,2024,2024-01..2024-12,CR-V,HEV,360,registrations,eea_honda_2024_final.json
+honda,RO,country,,2024,2024-01..2024-12,CR-V,PHEV,29,registrations,eea_honda_2024_final.json
+honda,RO,country,,2024,2024-01..2024-12,E:NY1,BEV,3,registrations,eea_honda_2024_final.json
+honda,RO,country,,2024,2024-01..2024-12,HR-V,HEV,234,registrations,eea_honda_2024_final.json
+honda,RO,country,,2024,2024-01..2024-12,JAZZ,HEV,28,registrations,eea_honda_2024_final.json
+honda,RO,country,,2024,2024-01..2024-12,ZR-V,HEV,142,registrations,eea_honda_2024_final.json
+honda,SE,country,,2024,2024-01..2024-12,CIVIC,HEV,116,registrations,eea_honda_2024_final.json
+honda,SE,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,12,registrations,eea_honda_2024_final.json
+honda,SE,country,,2024,2024-01..2024-12,CR-V,HEV,113,registrations,eea_honda_2024_final.json
+honda,SE,country,,2024,2024-01..2024-12,CR-V,PHEV,43,registrations,eea_honda_2024_final.json
+honda,SE,country,,2024,2024-01..2024-12,E:NY1,BEV,326,registrations,eea_honda_2024_final.json
+honda,SE,country,,2024,2024-01..2024-12,HR-V,HEV,207,registrations,eea_honda_2024_final.json
+honda,SE,country,,2024,2024-01..2024-12,JAZZ,HEV,120,registrations,eea_honda_2024_final.json
+honda,SE,country,,2024,2024-01..2024-12,ZR-V,HEV,58,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,CIVIC / 5 VRAT / 2.0 / HEV,HEV,54,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,CIVIC / 5 VRAT / 2.0 / TYPE R,ICE,1,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,CR-V / 2.0 / 4WD / E-CVT / HIBRID,HEV,1,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,CR-V / 2.0 / FHEV / AVT / 2WD,HEV,17,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,CR-V / 2.0 / FHEV / AVT / 4WD,HEV,42,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,CR-V / 2.0 / PHEV / AVT / 2WD,PHEV,2,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,HR-V / 1.5 / E-CVT / FHEV,HEV,39,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,HR-V / 1.5 / E-CVT FHEV,HEV,2,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,JAZZ / 1.5 / HIBRID,HEV,5,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,JAZZ / 1.5 / HIBRID / CROSS,HEV,8,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,JAZZ / 1.5 / HIBRID CROSS,HEV,4,registrations,eea_honda_2024_final.json
+honda,SI,country,,2024,2024-01..2024-12,ZR-V / 2.0 / EHEV / AVT /,HEV,71,registrations,eea_honda_2024_final.json
+honda,SK,country,,2024,2024-01..2024-12,CIVIC,HEV,44,registrations,eea_honda_2024_final.json
+honda,SK,country,,2024,2024-01..2024-12,CIVIC 5DR,ICE,1,registrations,eea_honda_2024_final.json
+honda,SK,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,6,registrations,eea_honda_2024_final.json
+honda,SK,country,,2024,2024-01..2024-12,CR-V,HEV,232,registrations,eea_honda_2024_final.json
+honda,SK,country,,2024,2024-01..2024-12,CR-V,PHEV,26,registrations,eea_honda_2024_final.json
+honda,SK,country,,2024,2024-01..2024-12,HR-V,HEV,188,registrations,eea_honda_2024_final.json
+honda,SK,country,,2024,2024-01..2024-12,HR-V.,HEV,1,registrations,eea_honda_2024_final.json
+honda,SK,country,,2024,2024-01..2024-12,JAZZ,HEV,31,registrations,eea_honda_2024_final.json
+honda,SK,country,,2024,2024-01..2024-12,ZR-V,HEV,137,registrations,eea_honda_2024_final.json
 hyundai,AT,country,,2024,2024-01..2024-12,BAYON,HEV,60,registrations,eea_hyundai_2024_final.json
 hyundai,AT,country,,2024,2024-01..2024-12,BAYON,ICE,705,registrations,eea_hyundai_2024_final.json
 hyundai,AT,country,,2024,2024-01..2024-12,G70 GENESIS G70,ICE,1,registrations,eea_hyundai_2024_final.json
@@ -625,6 +865,606 @@ hyundai,SK,country,,2024,2024-01..2024-12,STARIA,ICE,38,registrations,eea_hyunda
 hyundai,SK,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,1062,registrations,eea_hyundai_2024_final.json
 hyundai,SK,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,448,registrations,eea_hyundai_2024_final.json
 hyundai,SK,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,39,registrations,eea_hyundai_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,CEED,HEV,431,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,CEED,ICE,1946,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,CEED,PHEV,1,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,EV3,BEV,85,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,EV3 LONG RANGE,BEV,1,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,EV6,BEV,587,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,EV9,BEV,157,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,EV9 AWD,BEV,1,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,NIRO,BEV,421,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,NIRO,HEV,74,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,NIRO,PHEV,11,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,PICANTO,ICE,506,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,PROCEED,HEV,57,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,PROCEED,ICE,46,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,RIO,HEV,3,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,RIO,ICE,75,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,SORENTO,HEV,1,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,SORENTO,ICE,73,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,SORENTO,PHEV,27,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,SOUL,BEV,24,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,SPORTAGE,HEV,729,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,SPORTAGE,ICE,291,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,88,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,STONIC,HEV,31,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,STONIC,ICE,929,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,XCEED,HEV,155,registrations,eea_kia_2024_final.json
+kia,AT,country,,2024,2024-01..2024-12,XCEED,ICE,280,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,CEED,HEV,672,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,CEED,ICE,1390,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,CEED,PHEV,1255,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,EV3,BEV,182,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,EV6,BEV,1417,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,EV9,BEV,886,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,NIRO,BEV,619,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,NIRO,HEV,906,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,NIRO,PHEV,779,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,PICANTO,ICE,1684,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,PROCEED,ICE,406,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,RIO,ICE,31,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,SORENTO,HEV,88,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,SORENTO,ICE,39,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,SORENTO,PHEV,154,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,SOUL,BEV,4,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,SPORTAGE,HEV,2323,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,SPORTAGE,ICE,422,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,671,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,STINGER,ICE,1,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,STONIC,HEV,44,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,STONIC,ICE,2453,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,XCEED,HEV,47,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,XCEED,ICE,676,registrations,eea_kia_2024_final.json
+kia,BE,country,,2024,2024-01..2024-12,XCEED,PHEV,456,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,CEED,HEV,15,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,CEED,ICE,646,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,EV3,BEV,5,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,EV6,BEV,13,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,EV9,BEV,17,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,NIRO,BEV,46,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,NIRO,HEV,66,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,NIRO,PHEV,3,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,PICANTO,ICE,70,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,PROCEED,ICE,109,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,RIO,ICE,26,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,SORENTO,HEV,25,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,SORENTO,ICE,66,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,SORENTO,PHEV,5,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,SPORTAGE,HEV,969,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,SPORTAGE,ICE,127,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,46,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,STONIC,HEV,7,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,STONIC,ICE,248,registrations,eea_kia_2024_final.json
+kia,BG,country,,2024,2024-01..2024-12,XCEED,ICE,197,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,CEED,HEV,26,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,CEED,ICE,43,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,EV3,BEV,3,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,EV6,BEV,25,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,EV9,BEV,14,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,NIRO,BEV,16,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,NIRO,HEV,29,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,PICANTO,ICE,381,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,RIO,ICE,10,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,SORENTO,ICE,7,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,SPORTAGE,HEV,612,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,SPORTAGE,ICE,230,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,79,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,STONIC,ICE,1079,registrations,eea_kia_2024_final.json
+kia,CY,country,,2024,2024-01..2024-12,XCEED,ICE,286,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,CEED,HEV,36,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,CEED,ICE,4928,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,CEED,PHEV,7,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,EV3,BEV,6,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,EV6,BEV,114,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,EV9,BEV,68,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,NIRO,BEV,86,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,NIRO,HEV,81,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,NIRO,PHEV,1,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,PICANTO,ICE,246,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,PROCEED,ICE,743,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,RIO,HEV,2,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,RIO,ICE,78,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,SORENTO,HEV,49,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,SORENTO,ICE,191,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,SORENTO,PHEV,15,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,SPORTAGE,HEV,1507,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,SPORTAGE,ICE,762,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,30,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,STINGER,ICE,3,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,STONIC,ICE,1000,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,XCEED,ICE,755,registrations,eea_kia_2024_final.json
+kia,CZ,country,,2024,2024-01..2024-12,XCEED,PHEV,3,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,,BEV,7,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,CD,ICE,5,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,CEED,HEV,1800,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,CEED,ICE,9432,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,CEED,PHEV,986,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,CL4,ICE,9,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,CT,BEV,5,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,CV,BEV,13,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,CV E GT,BEV,2,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,CV GT,BEV,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,CVE GT,BEV,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,EV3,BEV,471,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,EV6,BEV,5180,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,EV9,BEV,1411,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,JA,ICE,2,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,K4,ICE,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,KIA MOTOR (ROK),BEV,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,KIA TELLURIDE,ICE,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,MQ4,HEV,2,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,MQ4,ICE,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,MQ4,PHEV,4,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,MV,BEV,5,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,MV GT,BEV,4,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,NIRO,BEV,4045,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,NIRO,HEV,1134,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,NIRO,PHEV,598,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,NQ5,HEV,8,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,NQ5,ICE,7,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,NQ5 - PE,HEV,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,NQ5-PE,ICE,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,NQ5E,HEV,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,NQ5E,ICE,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,PICANTO,ICE,9884,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,PROCEED,ICE,4435,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,QV,BEV,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,RAY,ICE,3,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,RIO,HEV,12,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,RIO,ICE,77,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SG2,BEV,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SG2,HEV,3,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SG2,PHEV,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SORENTO,HEV,638,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SORENTO,ICE,2172,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SORENTO,PHEV,536,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SOUL,BEV,670,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SP3,ICE,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SPORTAGE,HEV,13187,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SPORTAGE,ICE,508,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,1948,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,STINGER,ICE,53,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,STONIC,HEV,2200,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,STONIC,ICE,3329,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SV,BEV,10,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SW,BEV,2,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SW1,BEV,1,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,SZ1,BEV,3,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,TELLURIDE,ICE,2,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,TK,ICE,2,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,XCEED,HEV,148,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,XCEED,ICE,3370,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,XCEED,PHEV,242,registrations,eea_kia_2024_final.json
+kia,DE,country,,2024,2024-01..2024-12,YB,ICE,2,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,CEED,HEV,1,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,CEED,ICE,316,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,CEED,PHEV,121,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,EV3,BEV,572,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,EV6,BEV,792,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,EV9,BEV,158,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,NIRO,BEV,1405,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,NIRO,PHEV,22,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,PICANTO,ICE,685,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,PROCEED,ICE,144,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,RIO,ICE,1,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,SORENTO,PHEV,66,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,SPORTAGE,HEV,43,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,SPORTAGE,ICE,2,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,105,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,STONIC,HEV,5,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,STONIC,ICE,85,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,XCEED,ICE,40,registrations,eea_kia_2024_final.json
+kia,DK,country,,2024,2024-01..2024-12,XCEED,PHEV,51,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,CEED,HEV,30,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,CEED,ICE,317,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,EV3,BEV,14,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,EV6,BEV,33,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,EV9,BEV,24,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,NIRO,BEV,8,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,NIRO,HEV,73,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,PICANTO,ICE,23,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,PROCEED,ICE,104,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,RIO,ICE,6,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,SORENTO,HEV,1,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,SORENTO,ICE,106,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,SORENTO,PHEV,5,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,SPORTAGE,HEV,686,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,SPORTAGE,ICE,58,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,29,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,STONIC,HEV,5,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,STONIC,ICE,62,registrations,eea_kia_2024_final.json
+kia,EE,country,,2024,2024-01..2024-12,XCEED,ICE,98,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,CEED,HEV,2325,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,CEED,ICE,3706,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,CEED,PHEV,200,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,EV3,BEV,776,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,EV6,BEV,771,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,EV9,BEV,178,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,NIRO,BEV,1092,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,NIRO,HEV,8616,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,NIRO,PHEV,528,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,PICANTO,ICE,3125,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,PROCEED,HEV,85,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,PROCEED,ICE,37,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,RIO,HEV,1,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,RIO,ICE,41,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,SORENTO,HEV,730,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,SORENTO,ICE,143,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,SORENTO,PHEV,345,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,SPORTAGE,HEV,13057,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,SPORTAGE,ICE,4161,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,1116,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,STONIC,HEV,7620,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,STONIC,ICE,3162,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,XCEED,HEV,3744,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,XCEED,ICE,3951,registrations,eea_kia_2024_final.json
+kia,ES,country,,2024,2024-01..2024-12,XCEED,PHEV,391,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,CEED,HEV,599,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,CEED,ICE,579,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,CEED,PHEV,273,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,EV3,BEV,82,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,EV6,BEV,328,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,EV9,BEV,219,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,NIRO,BEV,186,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,NIRO,HEV,376,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,NIRO,PHEV,133,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,PICANTO,ICE,241,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,PROCEED,HEV,3,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,PROCEED,ICE,164,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,RIO,HEV,16,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,RIO,ICE,285,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,SORENTO,HEV,35,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,SORENTO,ICE,9,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,SORENTO,PHEV,131,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,SOUL,BEV,15,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,SPORTAGE,HEV,121,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,SPORTAGE,ICE,7,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,430,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,STONIC,HEV,63,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,STONIC,ICE,764,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,XCEED,HEV,31,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,XCEED,ICE,123,registrations,eea_kia_2024_final.json
+kia,FI,country,,2024,2024-01..2024-12,XCEED,PHEV,101,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,CEED,HEV,433,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,CEED,ICE,2074,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,CEED,PHEV,122,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,EV3,BEV,345,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,EV6,BEV,1695,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,EV9,BEV,354,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,NIRO,BEV,2497,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,NIRO,HEV,4773,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,NIRO,PHEV,610,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,PICANTO,ICE,8789,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,PROCEED,ICE,596,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,RIO,ICE,97,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,SORENTO,HEV,59,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,SORENTO,PHEV,774,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,SOUL,BEV,19,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,SPORTAGE,HEV,12899,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,SPORTAGE,ICE,195,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,2684,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,STONIC,HEV,1315,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,STONIC,ICE,5610,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,XCEED,HEV,160,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,XCEED,ICE,882,registrations,eea_kia_2024_final.json
+kia,FR,country,,2024,2024-01..2024-12,XCEED,PHEV,158,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,EV3,BEV,13,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,EV6,BEV,29,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,EV9,BEV,12,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,NIRO,BEV,48,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,NIRO,HEV,13,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,NIRO,PHEV,31,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,PICANTO,ICE,1883,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,SPORTAGE,HEV,725,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,85,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,STONIC,HEV,76,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,STONIC,ICE,1288,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,XCEED,HEV,366,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,XCEED,ICE,128,registrations,eea_kia_2024_final.json
+kia,GR,country,,2024,2024-01..2024-12,XCEED,PHEV,67,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,CEED,HEV,5,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,CEED,ICE,554,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,EV6,BEV,4,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,EV9,BEV,1,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,NIRO,HEV,4,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,PICANTO,ICE,245,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,PROCEED,ICE,34,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,RIO,ICE,73,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,SORENTO,HEV,11,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,SORENTO,ICE,17,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,SORENTO,PHEV,1,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,SPORTAGE,HEV,313,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,SPORTAGE,ICE,436,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,3,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,STONIC,HEV,7,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,STONIC,ICE,1138,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,XCEED,ICE,432,registrations,eea_kia_2024_final.json
+kia,HR,country,,2024,2024-01..2024-12,XCEED,PHEV,2,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,CEED,ICE,2560,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,CEED,PHEV,37,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,EV3,BEV,26,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,EV6,BEV,32,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,EV9,BEV,45,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,NIRO,BEV,106,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,NIRO,HEV,173,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,NIRO,PHEV,42,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,PICANTO,ICE,156,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,PROCEED,ICE,449,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,SORENTO,HEV,50,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,SORENTO,ICE,185,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,SORENTO,PHEV,47,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,SOUL,BEV,1,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,SPORTAGE,HEV,585,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,SPORTAGE,ICE,1348,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,88,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,STINGER,ICE,1,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,STONIC,HEV,2,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,STONIC,ICE,129,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,XCEED,ICE,410,registrations,eea_kia_2024_final.json
+kia,HU,country,,2024,2024-01..2024-12,XCEED,PHEV,6,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,CEED,HEV,277,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,CEED,ICE,383,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,CEED,PHEV,25,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,EV3,BEV,20,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,EV6,BEV,749,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,EV9,BEV,278,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,NIRO,BEV,440,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,NIRO,HEV,453,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,NIRO,PHEV,269,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,PICANTO,ICE,471,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,SORENTO,ICE,559,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,SORENTO,PHEV,247,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,SPORTAGE,HEV,1256,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,SPORTAGE,ICE,1847,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,696,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,STONIC,HEV,110,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,STONIC,ICE,688,registrations,eea_kia_2024_final.json
+kia,IE,country,,2024,2024-01..2024-12,XCEED,PHEV,215,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,CEED,HEV,134,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,CEED,ICE,24,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,CEED,PHEV,78,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,EV3,BEV,191,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,EV6,BEV,134,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,EV9,BEV,109,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,NIRO,BEV,110,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,NIRO,HEV,1863,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,NIRO,ICE,112,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,NIRO,PHEV,224,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,PICANTO,ICE,12428,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,PROCEED,HEV,65,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,PROCEED,ICE,142,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,SORENTO,HEV,222,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,SORENTO,ICE,491,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,SORENTO,PHEV,57,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,SOUL,ICE,1,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,SPORTAGE,HEV,18540,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,SPORTAGE,ICE,2937,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,641,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,STONIC,HEV,1794,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,STONIC,ICE,5062,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,XCEED,HEV,1182,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,XCEED,ICE,1047,registrations,eea_kia_2024_final.json
+kia,IT,country,,2024,2024-01..2024-12,XCEED,PHEV,39,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,CEED,HEV,2,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,CEED,ICE,445,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,EV3,BEV,6,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,EV6,BEV,19,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,EV9,BEV,10,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,NIRO,BEV,24,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,NIRO,HEV,44,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,PICANTO,ICE,27,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,PROCEED,ICE,327,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,RIO,ICE,2,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,SORENTO,ICE,23,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,SORENTO,PHEV,4,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,SPORTAGE,HEV,1044,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,SPORTAGE,ICE,45,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,91,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,STONIC,ICE,57,registrations,eea_kia_2024_final.json
+kia,LT,country,,2024,2024-01..2024-12,XCEED,ICE,71,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,CEED,HEV,36,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,CEED,ICE,102,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,CEED,PHEV,16,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,EV3,BEV,34,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,EV6,BEV,204,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,EV9,BEV,57,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,NIRO,BEV,64,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,NIRO,HEV,38,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,NIRO,PHEV,13,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,PICANTO,ICE,266,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,PROCEED,ICE,34,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,SORENTO,HEV,19,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,SORENTO,ICE,11,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,SORENTO,PHEV,10,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,SOUL,BEV,5,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,SPORTAGE,HEV,257,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,SPORTAGE,ICE,4,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,51,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,STONIC,HEV,10,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,STONIC,ICE,234,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,XCEED,HEV,18,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,XCEED,ICE,50,registrations,eea_kia_2024_final.json
+kia,LU,country,,2024,2024-01..2024-12,XCEED,PHEV,7,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,CEED,HEV,7,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,CEED,ICE,252,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,EV3,BEV,4,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,EV6,BEV,11,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,EV9,BEV,12,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,NIRO,BEV,23,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,NIRO,HEV,11,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,PICANTO,ICE,15,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,PROCEED,ICE,27,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,RIO,ICE,2,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,SORENTO,ICE,17,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,SORENTO,PHEV,4,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,SPORTAGE,HEV,288,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,SPORTAGE,ICE,35,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,27,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,STONIC,HEV,2,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,STONIC,ICE,31,registrations,eea_kia_2024_final.json
+kia,LV,country,,2024,2024-01..2024-12,XCEED,ICE,33,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,CEED,HEV,5,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,CEED,ICE,3,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,EV6,BEV,4,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,EV9,BEV,3,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,NIRO,BEV,21,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,NIRO,HEV,8,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,PICANTO,ICE,319,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,SORENTO,PHEV,2,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,SPORTAGE,HEV,10,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,17,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,STONIC,ICE,113,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,XCEED,HEV,4,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,XCEED,ICE,4,registrations,eea_kia_2024_final.json
+kia,MT,country,,2024,2024-01..2024-12,XCEED,PHEV,2,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,CEED,HEV,228,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,CEED,ICE,2900,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,CEED,PHEV,445,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,EV3,BEV,126,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,EV6,BEV,2717,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,EV9,BEV,1044,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,NIRO,BEV,5373,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,NIRO,HEV,4977,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,NIRO,PHEV,513,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,PICANTO,ICE,8373,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,PROCEED,ICE,669,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,RIO,HEV,10,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,SORENTO,HEV,56,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,SORENTO,PHEV,417,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,SOUL,BEV,90,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,SPORTAGE,HEV,2615,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,1333,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,STONIC,HEV,2628,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,XCEED,ICE,206,registrations,eea_kia_2024_final.json
+kia,NL,country,,2024,2024-01..2024-12,XCEED,PHEV,54,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,CEED,HEV,16,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,CEED,ICE,5111,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,CEED,PHEV,270,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,EV3,BEV,107,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,EV6,BEV,427,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,NIRO,BEV,374,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,NIRO,HEV,869,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,NIRO,PHEV,53,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,PICANTO,ICE,1446,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,PROCEED,ICE,1393,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,RIO,ICE,51,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,SORENTO,HEV,1216,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,SORENTO,ICE,263,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,SORENTO,PHEV,117,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,SOUL,BEV,12,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,SPORTAGE,HEV,5406,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,SPORTAGE,ICE,8384,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,326,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,STONIC,HEV,85,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,STONIC,ICE,2947,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,XCEED,ICE,4119,registrations,eea_kia_2024_final.json
+kia,PL,country,,2024,2024-01..2024-12,XCEED,PHEV,141,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,CEED,HEV,139,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,CEED,ICE,314,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,CEED,PHEV,274,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,EV3,BEV,237,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,EV6,BEV,275,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,EV9,BEV,129,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,NIRO,BEV,337,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,NIRO,HEV,166,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,PICANTO,ICE,832,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,PROCEED,ICE,14,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,SORENTO,HEV,30,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,SORENTO,ICE,6,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,SORENTO,PHEV,84,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,SPORTAGE,HEV,162,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,SPORTAGE,ICE,410,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,417,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,STONIC,HEV,46,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,STONIC,ICE,2541,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,XCEED,HEV,75,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,XCEED,ICE,687,registrations,eea_kia_2024_final.json
+kia,PT,country,,2024,2024-01..2024-12,XCEED,PHEV,324,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,CEED,HEV,24,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,CEED,ICE,632,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,EV3,BEV,3,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,EV6,BEV,26,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,EV9,BEV,13,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,NIRO,BEV,31,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,NIRO,HEV,22,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,NIRO,PHEV,7,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,PICANTO,ICE,38,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,PROCEED,HEV,3,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,PROCEED,ICE,30,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,RIO,HEV,3,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,RIO,ICE,97,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,SORENTO,HEV,20,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,SORENTO,ICE,9,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,SORENTO,PHEV,10,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,SOUL,BEV,1,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,SPORTAGE,HEV,2112,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,SPORTAGE,ICE,386,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,118,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,STONIC,HEV,7,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,STONIC,ICE,209,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,XCEED,HEV,66,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,XCEED,ICE,352,registrations,eea_kia_2024_final.json
+kia,RO,country,,2024,2024-01..2024-12,XCEED,PHEV,149,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,CEED,ICE,1063,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,CEED,PHEV,3463,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,EV3,BEV,1401,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,EV6,BEV,2515,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,EV6 GT,BEV,2,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,EV9,BEV,1786,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,NIRO,BEV,1154,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,NIRO,HEV,351,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,NIRO,PHEV,1465,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,PICANTO,ICE,807,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,SORENTO,PHEV,458,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,SPORTAGE,HEV,135,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,SPORTAGE,ICE,204,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,3636,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,STONIC,HEV,686,registrations,eea_kia_2024_final.json
+kia,SE,country,,2024,2024-01..2024-12,XCEED,PHEV,439,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,CEED,HEV,1,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,CEED,ICE,452,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,CEED / 1.0 / T,ICE,1,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,EV3,BEV,1,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,EV6,BEV,12,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,EV9,BEV,4,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,NIRO,BEV,6,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,NIRO,HEV,3,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,PICANTO,ICE,265,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,PROCEED,ICE,27,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,RIO,ICE,11,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,SORENTO,HEV,18,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,SORENTO,ICE,21,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,SPORTAGE,HEV,264,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,SPORTAGE,ICE,425,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,3,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,STONIC,HEV,7,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,STONIC,ICE,467,registrations,eea_kia_2024_final.json
+kia,SI,country,,2024,2024-01..2024-12,XCEED,ICE,301,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,CEED,HEV,145,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,CEED,ICE,2871,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,CEED,PHEV,14,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,EV3,BEV,7,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,EV6,BEV,142,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,EV9,BEV,65,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,NIRO,BEV,44,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,NIRO,HEV,102,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,NIRO,PHEV,7,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,PICANTO,ICE,114,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,PROCEED,ICE,402,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,RIO,ICE,13,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,SORENTO,HEV,76,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,SORENTO,ICE,286,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,SORENTO,PHEV,17,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,SPORTAGE,HEV,1185,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,SPORTAGE,ICE,1395,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,SPORTAGE,PHEV,104,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,STINGER,ICE,6,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,STONIC,HEV,8,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,STONIC,ICE,918,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,XCEED,HEV,4,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,XCEED,ICE,764,registrations,eea_kia_2024_final.json
+kia,SK,country,,2024,2024-01..2024-12,XCEED,PHEV,7,registrations,eea_kia_2024_final.json
 toyota,AT,country,,2024,2024-01..2024-12,GR YARIS 16,ICE,1,registrations,eea_toyota_2024_final.json
 toyota,AT,country,,2024,2024-01..2024-12,PROACE,BEV,13,registrations,eea_toyota_2024_final.json
 toyota,AT,country,,2024,2024-01..2024-12,PROACE,ICE,348,registrations,eea_toyota_2024_final.json

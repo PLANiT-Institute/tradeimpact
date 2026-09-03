@@ -21,9 +21,10 @@ import json
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
+# Every pinned brand snapshot in the sales dataset; company = EEA make (Mk) in lower case.
 RAW = {
-    "toyota": REPO / "data" / "auto" / "sales" / "raw" / "eea_toyota_2024_final.json",
-    "hyundai": REPO / "data" / "auto" / "sales" / "raw" / "eea_hyundai_2024_final.json",
+    json.loads(p.read_text())["brand_filter"].split("=", 1)[1].lower(): p
+    for p in sorted((REPO / "data" / "auto" / "sales" / "raw").glob("eea_*_final.json"))
 }
 OUT = (
     REPO / "data" / "auto" / "vehicle_technology" / "processed" / "vehicle_technology_eea_2024.csv"

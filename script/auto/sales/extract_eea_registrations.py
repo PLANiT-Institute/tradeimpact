@@ -16,9 +16,10 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
 DATASET = REPO / "data" / "auto" / "sales"
+# Every pinned brand snapshot; the company is the EEA make (Mk) in lower case.
 RAW = {
-    "toyota": DATASET / "raw" / "eea_toyota_2024_final.json",
-    "hyundai": DATASET / "raw" / "eea_hyundai_2024_final.json",
+    json.loads(p.read_text())["brand_filter"].split("=", 1)[1].lower(): p
+    for p in sorted((DATASET / "raw").glob("eea_*_final.json"))
 }
 OUT = DATASET / "processed" / "sales_eea_eu27_2024.csv"
 

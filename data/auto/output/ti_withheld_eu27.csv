@@ -1,4 +1,37 @@
 company,destination,model,powertrain,units,reason
+honda,BE,CIVIC 5DR,ICE,1,the registration dataset reports no certified intensity for this cell
+honda,CZ,CIVIC 5DR,ICE,1,the registration dataset reports no certified intensity for this cell
+honda,DE,,ICE,1,the registration dataset reports no certified intensity for this cell
+honda,DE,CIVIC SPORT,ICE,3,the registration dataset reports no certified intensity for this cell
+honda,DE,HONDA CR-V,ICE,2,the registration dataset reports no certified intensity for this cell
+honda,DE,HONDA HR-V,ICE,1,the registration dataset reports no certified intensity for this cell
+honda,SK,CIVIC 5DR,ICE,1,the registration dataset reports no certified intensity for this cell
+honda,AT,CR-V PHEV 2.0 ADVANC,PHEV,35,no sourced utility factor: the registration data publish only combined values
+honda,BE,CR-V,PHEV,117,no sourced utility factor: the registration data publish only combined values
+honda,BG,HONDA CRV,PHEV,4,no sourced utility factor: the registration data publish only combined values
+honda,CZ,CR-V,PHEV,64,no sourced utility factor: the registration data publish only combined values
+honda,DE,HONDA CR-V,PHEV,267,no sourced utility factor: the registration data publish only combined values
+honda,DK,CR-V E:PHEV,PHEV,103,no sourced utility factor: the registration data publish only combined values
+honda,EE,CR-V,PHEV,25,no sourced utility factor: the registration data publish only combined values
+honda,ES,CR-V,PHEV,91,no sourced utility factor: the registration data publish only combined values
+honda,FI,CR-V,PHEV,37,no sourced utility factor: the registration data publish only combined values
+honda,FR,CR-V,PHEV,167,no sourced utility factor: the registration data publish only combined values
+honda,GR,CR-V,PHEV,7,no sourced utility factor: the registration data publish only combined values
+honda,HR,CR-V,PHEV,6,no sourced utility factor: the registration data publish only combined values
+honda,HU,CR-V,PHEV,29,no sourced utility factor: the registration data publish only combined values
+honda,IE,CR-V,PHEV,39,no sourced utility factor: the registration data publish only combined values
+honda,IT,CR-V,PHEV,76,no sourced utility factor: the registration data publish only combined values
+honda,LT,CR-V,PHEV,8,no sourced utility factor: the registration data publish only combined values
+honda,LU,CR-V,PHEV,4,no sourced utility factor: the registration data publish only combined values
+honda,LV,CR-V,PHEV,5,no sourced utility factor: the registration data publish only combined values
+honda,MT,CR-V,PHEV,1,no sourced utility factor: the registration data publish only combined values
+honda,NL,CR-V,PHEV,117,no sourced utility factor: the registration data publish only combined values
+honda,PL,CR-V,PHEV,133,no sourced utility factor: the registration data publish only combined values
+honda,PT,CR-V,PHEV,61,no sourced utility factor: the registration data publish only combined values
+honda,RO,CR-V,PHEV,29,no sourced utility factor: the registration data publish only combined values
+honda,SE,CR-V,PHEV,43,no sourced utility factor: the registration data publish only combined values
+honda,SI,CR-V / 2.0 / PHEV / AVT / 2WD,PHEV,2,no sourced utility factor: the registration data publish only combined values
+honda,SK,CR-V,PHEV,26,no sourced utility factor: the registration data publish only combined values
 hyundai,DE,,BEV,8,the registration dataset reports no certified intensity for this cell
 hyundai,DE,AX1,BEV,8,the registration dataset reports no certified intensity for this cell
 hyundai,DE,CE,BEV,2,the registration dataset reports no certified intensity for this cell
@@ -79,6 +112,133 @@ hyundai,SI,TUCSON / 1.6 / T-GDI PHEV AUT. 4WD,PHEV,3,no sourced utility factor: 
 hyundai,SI,TUCSON IX35,PHEV,92,no sourced utility factor: the registration data publish only combined values
 hyundai,SK,SANTA FE,PHEV,36,no sourced utility factor: the registration data publish only combined values
 hyundai,SK,TUCSON IX35,PHEV,39,no sourced utility factor: the registration data publish only combined values
+kia,DE,,BEV,7,the registration dataset reports no certified intensity for this cell
+kia,DE,CT,BEV,5,the registration dataset reports no certified intensity for this cell
+kia,DE,CV,BEV,13,the registration dataset reports no certified intensity for this cell
+kia,DE,CV E GT,BEV,2,the registration dataset reports no certified intensity for this cell
+kia,DE,CV GT,BEV,1,the registration dataset reports no certified intensity for this cell
+kia,DE,CVE GT,BEV,1,the registration dataset reports no certified intensity for this cell
+kia,DE,KIA MOTOR (ROK),BEV,1,the registration dataset reports no certified intensity for this cell
+kia,DE,MV,BEV,5,the registration dataset reports no certified intensity for this cell
+kia,DE,MV GT,BEV,4,the registration dataset reports no certified intensity for this cell
+kia,DE,QV,BEV,1,the registration dataset reports no certified intensity for this cell
+kia,DE,SG2,BEV,1,the registration dataset reports no certified intensity for this cell
+kia,DE,SV,BEV,10,the registration dataset reports no certified intensity for this cell
+kia,DE,SW,BEV,2,the registration dataset reports no certified intensity for this cell
+kia,DE,SW1,BEV,1,the registration dataset reports no certified intensity for this cell
+kia,DE,SZ1,BEV,3,the registration dataset reports no certified intensity for this cell
+kia,DE,KIA TELLURIDE,ICE,1,the registration dataset reports no certified intensity for this cell
+kia,DE,RAY,ICE,3,the registration dataset reports no certified intensity for this cell
+kia,DE,TELLURIDE,ICE,2,the registration dataset reports no certified intensity for this cell
+kia,AT,CEED,PHEV,1,no sourced utility factor: the registration data publish only combined values
+kia,AT,NIRO,PHEV,11,no sourced utility factor: the registration data publish only combined values
+kia,AT,SORENTO,PHEV,27,no sourced utility factor: the registration data publish only combined values
+kia,AT,SPORTAGE,PHEV,88,no sourced utility factor: the registration data publish only combined values
+kia,BE,CEED,PHEV,1255,no sourced utility factor: the registration data publish only combined values
+kia,BE,NIRO,PHEV,779,no sourced utility factor: the registration data publish only combined values
+kia,BE,SORENTO,PHEV,154,no sourced utility factor: the registration data publish only combined values
+kia,BE,SPORTAGE,PHEV,671,no sourced utility factor: the registration data publish only combined values
+kia,BE,XCEED,PHEV,456,no sourced utility factor: the registration data publish only combined values
+kia,BG,NIRO,PHEV,3,no sourced utility factor: the registration data publish only combined values
+kia,BG,SORENTO,PHEV,5,no sourced utility factor: the registration data publish only combined values
+kia,BG,SPORTAGE,PHEV,46,no sourced utility factor: the registration data publish only combined values
+kia,CY,SPORTAGE,PHEV,79,no sourced utility factor: the registration data publish only combined values
+kia,CZ,CEED,PHEV,7,no sourced utility factor: the registration data publish only combined values
+kia,CZ,NIRO,PHEV,1,no sourced utility factor: the registration data publish only combined values
+kia,CZ,SORENTO,PHEV,15,no sourced utility factor: the registration data publish only combined values
+kia,CZ,SPORTAGE,PHEV,30,no sourced utility factor: the registration data publish only combined values
+kia,CZ,XCEED,PHEV,3,no sourced utility factor: the registration data publish only combined values
+kia,DE,CEED,PHEV,986,no sourced utility factor: the registration data publish only combined values
+kia,DE,MQ4,PHEV,4,no sourced utility factor: the registration data publish only combined values
+kia,DE,NIRO,PHEV,598,no sourced utility factor: the registration data publish only combined values
+kia,DE,SG2,PHEV,1,no sourced utility factor: the registration data publish only combined values
+kia,DE,SORENTO,PHEV,536,no sourced utility factor: the registration data publish only combined values
+kia,DE,SPORTAGE,PHEV,1948,no sourced utility factor: the registration data publish only combined values
+kia,DE,XCEED,PHEV,242,no sourced utility factor: the registration data publish only combined values
+kia,DK,CEED,PHEV,121,no sourced utility factor: the registration data publish only combined values
+kia,DK,NIRO,PHEV,22,no sourced utility factor: the registration data publish only combined values
+kia,DK,SORENTO,PHEV,66,no sourced utility factor: the registration data publish only combined values
+kia,DK,SPORTAGE,PHEV,105,no sourced utility factor: the registration data publish only combined values
+kia,DK,XCEED,PHEV,51,no sourced utility factor: the registration data publish only combined values
+kia,EE,SORENTO,PHEV,5,no sourced utility factor: the registration data publish only combined values
+kia,EE,SPORTAGE,PHEV,29,no sourced utility factor: the registration data publish only combined values
+kia,ES,CEED,PHEV,200,no sourced utility factor: the registration data publish only combined values
+kia,ES,NIRO,PHEV,528,no sourced utility factor: the registration data publish only combined values
+kia,ES,SORENTO,PHEV,345,no sourced utility factor: the registration data publish only combined values
+kia,ES,SPORTAGE,PHEV,1116,no sourced utility factor: the registration data publish only combined values
+kia,ES,XCEED,PHEV,391,no sourced utility factor: the registration data publish only combined values
+kia,FI,CEED,PHEV,273,no sourced utility factor: the registration data publish only combined values
+kia,FI,NIRO,PHEV,133,no sourced utility factor: the registration data publish only combined values
+kia,FI,SORENTO,PHEV,131,no sourced utility factor: the registration data publish only combined values
+kia,FI,SPORTAGE,PHEV,430,no sourced utility factor: the registration data publish only combined values
+kia,FI,XCEED,PHEV,101,no sourced utility factor: the registration data publish only combined values
+kia,FR,CEED,PHEV,122,no sourced utility factor: the registration data publish only combined values
+kia,FR,NIRO,PHEV,610,no sourced utility factor: the registration data publish only combined values
+kia,FR,SORENTO,PHEV,774,no sourced utility factor: the registration data publish only combined values
+kia,FR,SPORTAGE,PHEV,2684,no sourced utility factor: the registration data publish only combined values
+kia,FR,XCEED,PHEV,158,no sourced utility factor: the registration data publish only combined values
+kia,GR,NIRO,PHEV,31,no sourced utility factor: the registration data publish only combined values
+kia,GR,SPORTAGE,PHEV,85,no sourced utility factor: the registration data publish only combined values
+kia,GR,XCEED,PHEV,67,no sourced utility factor: the registration data publish only combined values
+kia,HR,SORENTO,PHEV,1,no sourced utility factor: the registration data publish only combined values
+kia,HR,SPORTAGE,PHEV,3,no sourced utility factor: the registration data publish only combined values
+kia,HR,XCEED,PHEV,2,no sourced utility factor: the registration data publish only combined values
+kia,HU,CEED,PHEV,37,no sourced utility factor: the registration data publish only combined values
+kia,HU,NIRO,PHEV,42,no sourced utility factor: the registration data publish only combined values
+kia,HU,SORENTO,PHEV,47,no sourced utility factor: the registration data publish only combined values
+kia,HU,SPORTAGE,PHEV,88,no sourced utility factor: the registration data publish only combined values
+kia,HU,XCEED,PHEV,6,no sourced utility factor: the registration data publish only combined values
+kia,IE,CEED,PHEV,25,no sourced utility factor: the registration data publish only combined values
+kia,IE,NIRO,PHEV,269,no sourced utility factor: the registration data publish only combined values
+kia,IE,SORENTO,PHEV,247,no sourced utility factor: the registration data publish only combined values
+kia,IE,SPORTAGE,PHEV,696,no sourced utility factor: the registration data publish only combined values
+kia,IE,XCEED,PHEV,215,no sourced utility factor: the registration data publish only combined values
+kia,IT,CEED,PHEV,78,no sourced utility factor: the registration data publish only combined values
+kia,IT,NIRO,PHEV,224,no sourced utility factor: the registration data publish only combined values
+kia,IT,SORENTO,PHEV,57,no sourced utility factor: the registration data publish only combined values
+kia,IT,SPORTAGE,PHEV,641,no sourced utility factor: the registration data publish only combined values
+kia,IT,XCEED,PHEV,39,no sourced utility factor: the registration data publish only combined values
+kia,LT,SORENTO,PHEV,4,no sourced utility factor: the registration data publish only combined values
+kia,LT,SPORTAGE,PHEV,91,no sourced utility factor: the registration data publish only combined values
+kia,LU,CEED,PHEV,16,no sourced utility factor: the registration data publish only combined values
+kia,LU,NIRO,PHEV,13,no sourced utility factor: the registration data publish only combined values
+kia,LU,SORENTO,PHEV,10,no sourced utility factor: the registration data publish only combined values
+kia,LU,SPORTAGE,PHEV,51,no sourced utility factor: the registration data publish only combined values
+kia,LU,XCEED,PHEV,7,no sourced utility factor: the registration data publish only combined values
+kia,LV,SORENTO,PHEV,4,no sourced utility factor: the registration data publish only combined values
+kia,LV,SPORTAGE,PHEV,27,no sourced utility factor: the registration data publish only combined values
+kia,MT,SORENTO,PHEV,2,no sourced utility factor: the registration data publish only combined values
+kia,MT,SPORTAGE,PHEV,17,no sourced utility factor: the registration data publish only combined values
+kia,MT,XCEED,PHEV,2,no sourced utility factor: the registration data publish only combined values
+kia,NL,CEED,PHEV,445,no sourced utility factor: the registration data publish only combined values
+kia,NL,NIRO,PHEV,513,no sourced utility factor: the registration data publish only combined values
+kia,NL,SORENTO,PHEV,417,no sourced utility factor: the registration data publish only combined values
+kia,NL,SPORTAGE,PHEV,1333,no sourced utility factor: the registration data publish only combined values
+kia,NL,XCEED,PHEV,54,no sourced utility factor: the registration data publish only combined values
+kia,PL,CEED,PHEV,270,no sourced utility factor: the registration data publish only combined values
+kia,PL,NIRO,PHEV,53,no sourced utility factor: the registration data publish only combined values
+kia,PL,SORENTO,PHEV,117,no sourced utility factor: the registration data publish only combined values
+kia,PL,SPORTAGE,PHEV,326,no sourced utility factor: the registration data publish only combined values
+kia,PL,XCEED,PHEV,141,no sourced utility factor: the registration data publish only combined values
+kia,PT,CEED,PHEV,274,no sourced utility factor: the registration data publish only combined values
+kia,PT,SORENTO,PHEV,84,no sourced utility factor: the registration data publish only combined values
+kia,PT,SPORTAGE,PHEV,417,no sourced utility factor: the registration data publish only combined values
+kia,PT,XCEED,PHEV,324,no sourced utility factor: the registration data publish only combined values
+kia,RO,NIRO,PHEV,7,no sourced utility factor: the registration data publish only combined values
+kia,RO,SORENTO,PHEV,10,no sourced utility factor: the registration data publish only combined values
+kia,RO,SPORTAGE,PHEV,118,no sourced utility factor: the registration data publish only combined values
+kia,RO,XCEED,PHEV,149,no sourced utility factor: the registration data publish only combined values
+kia,SE,CEED,PHEV,3463,no sourced utility factor: the registration data publish only combined values
+kia,SE,NIRO,PHEV,1465,no sourced utility factor: the registration data publish only combined values
+kia,SE,SORENTO,PHEV,458,no sourced utility factor: the registration data publish only combined values
+kia,SE,SPORTAGE,PHEV,3636,no sourced utility factor: the registration data publish only combined values
+kia,SE,XCEED,PHEV,439,no sourced utility factor: the registration data publish only combined values
+kia,SI,SPORTAGE,PHEV,3,no sourced utility factor: the registration data publish only combined values
+kia,SK,CEED,PHEV,14,no sourced utility factor: the registration data publish only combined values
+kia,SK,NIRO,PHEV,7,no sourced utility factor: the registration data publish only combined values
+kia,SK,SORENTO,PHEV,17,no sourced utility factor: the registration data publish only combined values
+kia,SK,SPORTAGE,PHEV,104,no sourced utility factor: the registration data publish only combined values
+kia,SK,XCEED,PHEV,7,no sourced utility factor: the registration data publish only combined values
 toyota,BE,BZ4X,BEV,1,the registration dataset reports no certified intensity for this cell
 toyota,DE,PROACE VERSO,BEV,7,the registration dataset reports no certified intensity for this cell
 toyota,AT,TOYOTA MIRAI,FCEV,1,no sourced hydrogen supply emissions intensity for the destination

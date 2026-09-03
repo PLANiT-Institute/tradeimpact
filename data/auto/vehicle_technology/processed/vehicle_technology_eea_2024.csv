@@ -1,4 +1,244 @@
 company,destination,model,powertrain,cohort_year,tailpipe_gco2_km,tailpipe_units,energy_wh_km,energy_units,units,test_cycle,source_id,source_file
+honda,AT,CIVIC E:HEV 2.0 ADVA,HEV,2024,114.2059,34,,0,34,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CIVIC E:HEV 2.0 ELEG,HEV,2024,108.0702,57,,0,57,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CIVIC E:HEV 2.0 SPOR,HEV,2024,113.0357,28,,0,28,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CIVIC TYPE R 2.0 TYP,ICE,2024,186.25,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CR-V E:HEV 2WD 2.0 E,HEV,2024,134.2381,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CR-V E:HEV 4WD 2.0 A,HEV,2024,151.0366,82,,0,82,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CR-V E:HEV 4WD 2.0 E,HEV,2024,151.0,45,,0,45,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CR-V PHEV 2.0 ADVANC,PHEV,2024,18.1143,35,155.8,35,35,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,E:NY1 EV ADVANCE,BEV,2024,0.0,109,182.0,109,109,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,E:NY1 EV ELEGANCE,BEV,2024,0.0,18,182.0,18,18,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,HONDA E EV ADVANCE,BEV,2024,0.0,1,178.0,1,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,HR-V E:HEV 1.5 ADVAN,HEV,2024,122.0,227,,0,227,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,HR-V E:HEV 1.5 ELEGA,HEV,2024,122.0,109,,0,109,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,JAZZ 1.5 ADVANCE,HEV,2024,104.0,46,,0,46,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,JAZZ 1.5 ADVANCE SPO,HEV,2024,106.0,22,,0,22,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,JAZZ 1.5 ELEGANCE,HEV,2024,102.0244,41,,0,41,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,JAZZ CROSSTAR 1.5 AD,HEV,2024,108.0635,63,,0,63,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,UNASSIGNED,BEV,2024,0.0,4,182.0,4,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,ZR-V 2.0 ADVANCE,HEV,2024,132.1633,49,,0,49,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,ZR-V 2.0 ELEGANCE,HEV,2024,130.1176,17,,0,17,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,ZR-V 2.0 SPORT,HEV,2024,131.0714,84,,0,84,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,CIVIC,HEV,2024,113.0424,283,,0,283,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,CIVIC 5DR,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,CIVIC TYPE R,ICE,2024,186.1579,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,CR-V,HEV,2024,142.6988,249,,0,249,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,CR-V,PHEV,2024,18.3333,117,155.9915,117,117,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,E:NY1,BEV,2024,0.0,139,182.0,139,139,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,HR-V,HEV,2024,122.0,513,,0,513,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,JAZZ,HEV,2024,105.5955,220,,0,220,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,ZR-V,HEV,2024,131.6781,233,,0,233,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,CIVIC,HEV,2024,112.7143,28,,0,28,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,CIVIC TYPE R,ICE,2024,186.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,HONDA CR V,HEV,2024,134.0,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,HONDA CRV,HEV,2024,150.45,60,,0,60,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,HONDA CRV,PHEV,2024,18.75,4,167.0,4,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,HONDA HRV,HEV,2024,122.0,20,,0,20,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,HONDA ZRV,HEV,2024,131.3421,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,JAZZ,HEV,2024,108.0,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,CIVIC,HEV,2024,118.2,15,,0,15,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,CIVIC TYPE R,ICE,2024,186.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,CR-V,HEV,2024,147.6923,26,,0,26,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,E:NY1,BEV,2024,0.0,5,182.0,5,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,HR-V,HEV,2024,122.0,81,,0,81,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,JAZZ,HEV,2024,105.6,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,ZR-V,HEV,2024,131.125,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,CIVIC,HEV,2024,111.4634,123,,0,123,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,CIVIC 5DR,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,CIVIC TYPE R,ICE,2024,186.0,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,CR-V,HEV,2024,149.8709,604,,0,604,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,CR-V,PHEV,2024,18.0,64,156.0,64,64,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,HR-V,HEV,2024,122.0,300,,0,300,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,JAZZ,HEV,2024,106.7273,44,,0,44,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,ZR-V,HEV,2024,131.2345,226,,0,226,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,,HEV,2024,120.0,1,,0,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,CIVIC,HEV,2024,111.2564,823,,0,823,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,CIVIC,ICE,2024,191.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,CIVIC SPORT,ICE,2024,,0,,0,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,CIVIC TYPE R,ICE,2024,186.2195,123,,0,123,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,E:NY1,BEV,2024,0.0,796,182.0,796,796,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HONDA CR-V,HEV,2024,146.5512,1348,,0,1349,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HONDA CR-V,ICE,2024,,0,,0,2,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HONDA CR-V,PHEV,2024,18.3034,267,155.9963,267,267,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HONDA E,BEV,2024,0.0,4,178.0,4,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HONDA HR-V,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HR-V,HEV,2024,122.0,1661,,0,1661,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,JAZZ,HEV,2024,105.3061,1173,,0,1173,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,ZR-V,HEV,2024,131.5216,855,,0,855,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,CIVIC E:HEV,HEV,2024,109.6,35,,0,35,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,CIVIC E:HEV,ICE,2024,108.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,CR-V E:PHEV,PHEV,2024,18.0,103,155.0,103,103,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,E:NY1,BEV,2024,0.0,510,182.0,510,510,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,HR-V E:HEV,HEV,2024,122.0,161,,0,161,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,HR-V E:HEV,ICE,2024,122.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,JAZZ E:HEV,HEV,2024,106.3922,51,,0,51,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,CIVIC,HEV,2024,112.5128,39,,0,39,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,CIVIC TYPE R,ICE,2024,186.0,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,CR-V,HEV,2024,146.2535,217,,0,217,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,CR-V,PHEV,2024,18.0,25,155.0,25,25,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,E:NY1,BEV,2024,0.0,3,182.0,3,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,HR-V,HEV,2024,122.0,87,,0,87,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,JAZZ,HEV,2024,106.027,37,,0,37,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,ZR-V,HEV,2024,131.2857,119,,0,119,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,CIVIC,HEV,2024,110.5781,922,,0,922,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,CIVIC TYPE R,ICE,2024,187.2391,46,,0,46,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,CR-V,HEV,2024,137.324,429,,0,429,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,CR-V,PHEV,2024,18.0,91,155.956,91,91,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,E:NY1,BEV,2024,0.0,35,182.0,35,35,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,HONDA E,BEV,2024,0.0,15,176.4,15,15,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,HR-V,HEV,2024,122.0,1188,,0,1188,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,JAZZ,HEV,2024,105.1941,474,,0,474,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,ZR-V,HEV,2024,131.4689,644,,0,644,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,CIVIC,HEV,2024,112.8636,22,,0,22,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,CIVIC TYPE R,ICE,2024,186.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,CR-V,HEV,2024,147.1404,57,,0,57,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,CR-V,PHEV,2024,18.0,37,155.0,37,37,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,E:NY1,BEV,2024,0.0,2,182.0,2,2,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,HR-V,HEV,2024,122.0,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,JAZZ,HEV,2024,105.6061,33,,0,33,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,ZR-V,HEV,2024,131.3333,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,CIVIC,HEV,2024,111.9244,1190,,0,1190,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,CIVIC TYPE R,ICE,2024,186.6,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,CR-V,HEV,2024,140.7114,149,,0,149,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,CR-V,PHEV,2024,18.0898,167,156.0,167,167,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,E:NY1,BEV,2024,0.0,437,182.0,437,437,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,HR-V,HEV,2024,122.0,1265,,0,1265,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,JAZZ,HEV,2024,105.543,814,,0,814,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,ZR-V,HEV,2024,131.6342,760,,0,760,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,CIVIC,HEV,2024,110.9286,42,,0,42,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,CIVIC TYPE R,HEV,2024,113.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,CIVIC TYPE R,ICE,2024,186.0,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,CR-V,HEV,2024,149.9318,44,,0,44,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,CR-V,PHEV,2024,18.2857,7,159.5714,7,7,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,E:NY1,BEV,2024,0.0,29,182.0,29,29,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,HR-V,HEV,2024,122.0,136,,0,136,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,JAZZ,HEV,2024,104.6491,114,,0,114,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,ZR-V,HEV,2024,130.9298,57,,0,57,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,CIVIC,HEV,2024,112.6667,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,CIVIC TYPE R,ICE,2024,186.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,CR-V,HEV,2024,147.1837,49,,0,49,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,CR-V,PHEV,2024,18.6667,6,165.6667,6,6,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,HONDA E,BEV,2024,0.0,1,182.0,1,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,HR-V,HEV,2024,122.0,27,,0,27,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,JAZZ,HEV,2024,105.8,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,ZR-V,HEV,2024,131.4118,34,,0,34,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,CIVIC,HEV,2024,110.8643,140,,0,140,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,CIVIC TYPE R,ICE,2024,186.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,CR-V,HEV,2024,146.7143,119,,0,119,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,CR-V,PHEV,2024,18.0,29,156.0,29,29,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,E:NY1,BEV,2024,0.0,96,182.0,96,96,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,HONDA E,BEV,2024,0.0,3,178.0,3,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,HR-V,HEV,2024,122.0,179,,0,179,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,JAZZ,HEV,2024,105.7,60,,0,60,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,ZR-V,HEV,2024,131.1346,104,,0,104,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,CIVIC,HEV,2024,114.0,61,,0,61,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,CIVIC TYPE R,ICE,2024,186.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,CR-V,HEV,2024,150.5,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,CR-V,PHEV,2024,18.0513,39,155.8718,39,39,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,E:NY1,BEV,2024,0.0,5,182.0,5,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,HONDA E,BEV,2024,0.0,1,172.0,1,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,HR-V,HEV,2024,122.0,18,,0,18,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,JAZZ,HEV,2024,104.3373,83,,0,83,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,ZR-V,HEV,2024,131.2609,23,,0,23,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,CIVIC,HEV,2024,110.9159,440,,0,440,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,CIVIC TYPE R,ICE,2024,185.9808,52,,0,52,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,CR-V,HEV,2024,146.1094,841,,0,841,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,CR-V,PHEV,2024,18.0,76,156.0,76,76,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,HR-V,HEV,2024,122.0,3188,,0,3188,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,JAZZ,HEV,2024,105.4675,1262,,0,1262,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,ZR-V,HEV,2024,131.3734,1588,,0,1588,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,CIVIC,HEV,2024,113.3,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,CIVIC TYPE-R,ICE,2024,186.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,CR-V,HEV,2024,147.6545,55,,0,55,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,CR-V,PHEV,2024,18.0,8,155.0,8,8,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,HR-V,HEV,2024,122.0,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,JAZZ,HEV,2024,106.5263,19,,0,19,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,ZR-V,HEV,2024,131.2917,24,,0,24,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,CIVIC,HEV,2024,113.1579,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,CIVIC TYPE R,ICE,2024,186.0,17,,0,17,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,CR-V,HEV,2024,148.641,39,,0,39,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,CR-V,PHEV,2024,18.0,4,156.0,4,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,E:NY1,BEV,2024,0.0,19,182.0,19,19,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,HR-V,HEV,2024,122.0,28,,0,28,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,JAZZ,HEV,2024,106.381,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,ZR-V,HEV,2024,131.4839,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,CIVIC,HEV,2024,112.6,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,CIVIC TYPE R,ICE,2024,186.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,CR-V,HEV,2024,147.2222,63,,0,63,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,CR-V,PHEV,2024,18.0,5,155.0,5,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,E:NY1,BEV,2024,0.0,1,182.0,1,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,HRV,HEV,2024,122.0,25,,0,25,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,JAZZ,HEV,2024,106.4,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,ZR-V,HEV,2024,131.84,25,,0,25,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,CIVIC,HEV,2024,113.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,CR-V,HEV,2024,151.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,CR-V,PHEV,2024,18.0,1,155.0,1,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,E NY1,BEV,2024,0.0,11,182.0,11,11,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,HR-V,HEV,2024,122.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,JAZZ,HEV,2024,105.7778,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,ZR-V,HEV,2024,131.75,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,CIVIC,HEV,2024,112.8515,202,,0,202,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,CIVIC TYPE R,ICE,2024,186.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,CR-V,HEV,2024,140.9667,60,,0,60,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,CR-V,PHEV,2024,18.1795,117,155.9915,117,117,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,E:NY1,BEV,2024,0.0,118,182.0,118,118,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,HR-V,HEV,2024,122.0,311,,0,311,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,JAZZ,HEV,2024,105.4679,218,,0,218,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,ZR-V,HEV,2024,131.6429,56,,0,56,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,CIVIC,HEV,2024,112.5319,423,,0,423,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,CIVIC TYPE R,ICE,2024,186.1765,51,,0,51,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,CR-V,HEV,2024,148.4243,997,,0,997,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,CR-V,PHEV,2024,18.0,133,156.0,133,133,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,HR-V,HEV,2024,122.0,1604,,0,1604,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,JAZZ,HEV,2024,108.0,199,,0,199,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,ZR-V,HEV,2024,131.4572,608,,0,608,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,CIVIC,HEV,2024,113.3636,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,CIVIC TYPE R,ICE,2024,186.0,18,,0,18,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,CR-V,HEV,2024,134.0,19,,0,19,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,CR-V,PHEV,2024,18.0,61,155.0,61,61,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,E:NY1,BEV,2024,0.0,34,182.0,34,34,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,HR-V,HEV,2024,122.0,410,,0,410,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,JAZZ,HEV,2024,104.782,133,,0,133,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,ZR-V,HEV,2024,131.2439,41,,0,41,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,CIVIC,HEV,2024,113.1413,283,,0,283,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,CIVIC TYPE R,ICE,2024,186.0,19,,0,19,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,CR-V,HEV,2024,143.6111,360,,0,360,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,CR-V,PHEV,2024,18.0345,29,155.5517,29,29,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,E:NY1,BEV,2024,0.0,3,182.0,3,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,HR-V,HEV,2024,122.0,234,,0,234,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,JAZZ,HEV,2024,105.0714,28,,0,28,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,ZR-V,HEV,2024,131.3239,142,,0,142,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,CIVIC,HEV,2024,111.2759,116,,0,116,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,CIVIC TYPE R,ICE,2024,186.25,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,CR-V,HEV,2024,141.0973,113,,0,113,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,CR-V,PHEV,2024,18.2326,43,156.0,43,43,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,E:NY1,BEV,2024,0.0,326,182.0,326,326,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,HR-V,HEV,2024,122.0,207,,0,207,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,JAZZ,HEV,2024,105.1917,120,,0,120,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,ZR-V,HEV,2024,131.1724,58,,0,58,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CIVIC / 5 VRAT / 2.0 / HEV,HEV,2024,112.3519,54,,0,54,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CIVIC / 5 VRAT / 2.0 / TYPE R,ICE,2024,186.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CR-V / 2.0 / 4WD / E-CVT / HIBRID,HEV,2024,163.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CR-V / 2.0 / FHEV / AVT / 2WD,HEV,2024,134.0,17,,0,17,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CR-V / 2.0 / FHEV / AVT / 4WD,HEV,2024,151.0,42,,0,42,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CR-V / 2.0 / PHEV / AVT / 2WD,PHEV,2024,19.0,2,171.0,2,2,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,HR-V / 1.5 / E-CVT / FHEV,HEV,2024,122.0,39,,0,39,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,HR-V / 1.5 / E-CVT FHEV,HEV,2024,122.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,JAZZ / 1.5 / HIBRID,HEV,2024,103.6,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,JAZZ / 1.5 / HIBRID / CROSS,HEV,2024,108.0,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,JAZZ / 1.5 / HIBRID CROSS,HEV,2024,108.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,ZR-V / 2.0 / EHEV / AVT /,HEV,2024,131.0986,71,,0,71,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,CIVIC,HEV,2024,111.0227,44,,0,44,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,CIVIC 5DR,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,CIVIC TYPE R,ICE,2024,186.0,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,CR-V,HEV,2024,150.0,232,,0,232,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,CR-V,PHEV,2024,18.0,26,156.0,26,26,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,HR-V,HEV,2024,122.0,188,,0,188,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,HR-V.,HEV,2024,122.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,JAZZ,HEV,2024,105.7097,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,ZR-V,HEV,2024,131.2409,137,,0,137,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
 hyundai,AT,BAYON,HEV,2024,121.0,60,,0,60,WLTP,eea_co2_monitoring_2024,eea_hyundai_2024_final.json
 hyundai,AT,BAYON,ICE,2024,125.573,705,,0,705,WLTP,eea_co2_monitoring_2024,eea_hyundai_2024_final.json
 hyundai,AT,G70 GENESIS G70,ICE,2024,216.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_hyundai_2024_final.json
@@ -625,6 +865,606 @@ hyundai,SK,STARIA,ICE,2024,232.0,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_hyund
 hyundai,SK,TUCSON IX35,HEV,2024,148.1478,1062,,0,1062,WLTP,eea_co2_monitoring_2024,eea_hyundai_2024_final.json
 hyundai,SK,TUCSON IX35,ICE,2024,155.3638,448,,0,448,WLTP,eea_co2_monitoring_2024,eea_hyundai_2024_final.json
 hyundai,SK,TUCSON IX35,PHEV,2024,29.3077,39,184.2051,39,39,WLTP,eea_co2_monitoring_2024,eea_hyundai_2024_final.json
+kia,AT,CEED,HEV,2024,124.1624,431,,0,431,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,CEED,ICE,2024,123.63,1946,,0,1946,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,CEED,PHEV,2024,29.0,1,116.0,1,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,EV3,BEV,2024,0.0,85,152.1882,85,85,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,EV3 LONG RANGE,BEV,2024,0.0,1,149.0,1,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,EV6,BEV,2024,0.0,587,172.8654,587,587,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,EV9,BEV,2024,0.0,157,224.0637,157,157,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,EV9 AWD,BEV,2024,0.0,1,228.0,1,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,NIRO,BEV,2024,0.0,421,162.0,421,421,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,NIRO,HEV,2024,101.2703,74,,0,74,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,NIRO,PHEV,2024,18.6364,11,129.4545,11,11,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,PICANTO,ICE,2024,115.7589,506,,0,506,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,PROCEED,HEV,2024,129.1053,57,,0,57,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,PROCEED,ICE,2024,142.8261,46,,0,46,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,RIO,HEV,2024,126.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,RIO,ICE,2024,121.24,75,,0,75,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,SORENTO,HEV,2024,160.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,SORENTO,ICE,2024,172.7534,73,,0,73,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,SORENTO,PHEV,2024,37.7778,27,183.5556,27,27,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,SOUL,BEV,2024,0.0,24,157.0,24,24,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,SPORTAGE,HEV,2024,145.4774,729,,0,729,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,SPORTAGE,ICE,2024,155.0241,291,,0,291,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,SPORTAGE,PHEV,2024,25.6023,88,173.2614,88,88,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,STONIC,HEV,2024,127.129,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,STONIC,ICE,2024,126.2659,929,,0,929,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,XCEED,HEV,2024,136.4581,155,,0,155,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,AT,XCEED,ICE,2024,137.1464,280,,0,280,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,CEED,HEV,2024,124.3601,672,,0,672,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,CEED,ICE,2024,128.1532,1390,,0,1390,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,CEED,PHEV,2024,29.6088,1255,117.3697,1255,1255,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,EV3,BEV,2024,0.0,182,152.5714,182,182,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,EV6,BEV,2024,0.0,1417,168.5229,1417,1417,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,EV9,BEV,2024,0.0,886,220.0023,886,886,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,NIRO,BEV,2024,0.0,619,162.0,619,619,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,NIRO,HEV,2024,101.8974,906,,0,906,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,NIRO,PHEV,2024,19.5109,779,130.706,779,779,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,PICANTO,ICE,2024,119.2785,1684,,0,1684,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,PROCEED,ICE,2024,136.5985,406,,0,406,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,RIO,ICE,2024,124.5484,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,SORENTO,HEV,2024,161.1136,88,,0,88,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,SORENTO,ICE,2024,171.641,39,,0,39,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,SORENTO,PHEV,2024,37.7403,154,183.4805,154,154,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,SOUL,BEV,2024,0.0,4,157.0,4,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,SPORTAGE,HEV,2024,141.1201,2323,,0,2323,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,SPORTAGE,ICE,2024,153.9621,422,,0,422,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,SPORTAGE,PHEV,2024,25.3636,671,171.8212,671,671,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,STINGER,ICE,2024,247.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,STONIC,HEV,2024,129.0,44,,0,44,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,STONIC,ICE,2024,131.331,2453,,0,2453,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,XCEED,HEV,2024,130.0213,47,,0,47,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,XCEED,ICE,2024,140.2618,676,,0,676,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BE,XCEED,PHEV,2024,33.1842,456,124.7763,456,456,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,CEED,HEV,2024,122.6,15,,0,15,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,CEED,ICE,2024,134.3591,646,,0,646,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,EV3,BEV,2024,0.0,5,153.4,5,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,EV6,BEV,2024,0.0,13,179.1538,13,13,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,EV9,BEV,2024,0.0,17,227.0588,17,17,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,NIRO,BEV,2024,0.0,46,162.0,46,46,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,NIRO,HEV,2024,102.7727,66,,0,66,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,NIRO,PHEV,2024,19.3333,3,131.3333,3,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,PICANTO,ICE,2024,120.5,70,,0,70,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,PROCEED,ICE,2024,142.9908,109,,0,109,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,RIO,ICE,2024,128.5769,26,,0,26,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,SORENTO,HEV,2024,164.8,25,,0,25,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,SORENTO,ICE,2024,173.3182,66,,0,66,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,SORENTO,PHEV,2024,37.2,5,182.4,5,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,SPORTAGE,HEV,2024,149.5851,969,,0,969,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,SPORTAGE,ICE,2024,156.5906,127,,0,127,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,SPORTAGE,PHEV,2024,26.3696,46,178.5217,46,46,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,STONIC,HEV,2024,129.0,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,STONIC,ICE,2024,130.9194,248,,0,248,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,BG,XCEED,ICE,2024,142.4264,197,,0,197,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,CEED,HEV,2024,122.0,26,,0,26,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,CEED,ICE,2024,133.0465,43,,0,43,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,EV3,BEV,2024,0.0,3,151.3333,3,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,EV6,BEV,2024,0.0,25,177.32,25,25,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,EV9,BEV,2024,0.0,14,224.2857,14,14,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,NIRO,BEV,2024,0.0,16,162.0,16,16,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,NIRO,HEV,2024,105.1379,29,,0,29,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,PICANTO,ICE,2024,120.6404,381,,0,381,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,RIO,ICE,2024,126.0,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,SORENTO,ICE,2024,174.0,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,SPORTAGE,HEV,2024,141.6601,612,,0,612,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,SPORTAGE,ICE,2024,162.3609,230,,0,230,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,SPORTAGE,PHEV,2024,26.7595,79,181.9494,79,79,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,STONIC,ICE,2024,130.8767,1079,,0,1079,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CY,XCEED,ICE,2024,141.8846,286,,0,286,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,CEED,HEV,2024,120.8333,36,,0,36,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,CEED,ICE,2024,131.6015,4928,,0,4928,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,CEED,PHEV,2024,29.0,7,116.0,7,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,EV3,BEV,2024,0.0,6,154.5,6,6,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,EV6,BEV,2024,0.0,114,185.8509,114,114,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,EV9,BEV,2024,0.0,68,226.2353,68,68,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,NIRO,BEV,2024,0.0,86,162.0,86,86,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,NIRO,HEV,2024,101.5432,81,,0,81,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,NIRO,PHEV,2024,22.0,1,136.0,1,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,PICANTO,ICE,2024,121.378,246,,0,246,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,PROCEED,ICE,2024,147.6676,743,,0,743,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,RIO,HEV,2024,126.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,RIO,ICE,2024,122.2436,78,,0,78,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,SORENTO,HEV,2024,161.1224,49,,0,49,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,SORENTO,ICE,2024,173.0209,191,,0,191,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,SORENTO,PHEV,2024,37.2,15,182.4,15,15,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,SPORTAGE,HEV,2024,146.6656,1507,,0,1507,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,SPORTAGE,ICE,2024,156.0499,762,,0,762,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,SPORTAGE,PHEV,2024,26.3333,30,178.6,30,30,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,STINGER,ICE,2024,247.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,STONIC,ICE,2024,130.271,1000,,0,1000,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,XCEED,ICE,2024,141.3311,755,,0,755,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,CZ,XCEED,PHEV,2024,32.0,3,123.0,3,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,,BEV,2024,0.0,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,CD,ICE,2024,192.2,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,CEED,HEV,2024,123.7428,1800,,0,1800,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,CEED,ICE,2024,137.5648,9432,,0,9432,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,CEED,PHEV,2024,29.9148,986,117.8731,985,986,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,CL4,ICE,2024,176.5556,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,CT,BEV,2024,0.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,CV,BEV,2024,0.0,13,,0,13,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,CV E GT,BEV,2024,0.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,CV GT,BEV,2024,0.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,CVE GT,BEV,2024,0.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,EV3,BEV,2024,0.0,471,154.5769,468,471,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,EV6,BEV,2024,0.0,5180,178.6394,5174,5180,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,EV9,BEV,2024,0.0,1411,226.9426,1410,1411,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,JA,ICE,2024,134.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,K4,ICE,2024,185.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,KIA MOTOR (ROK),BEV,2024,0.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,KIA TELLURIDE,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,MQ4,HEV,2024,185.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,MQ4,ICE,2024,255.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,MQ4,PHEV,2024,183.5,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,MV,BEV,2024,0.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,MV GT,BEV,2024,0.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,NIRO,BEV,2024,0.0,4045,162.0,4045,4045,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,NIRO,HEV,2024,102.5529,1134,,0,1134,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,NIRO,PHEV,2024,20.198,596,132.6862,596,598,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,NQ5,HEV,2024,166.375,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,NQ5,ICE,2024,214.8571,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,NQ5 - PE,HEV,2024,154.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,NQ5-PE,ICE,2024,253.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,NQ5E,HEV,2024,152.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,NQ5E,ICE,2024,243.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,PICANTO,ICE,2024,117.4392,9882,,0,9884,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,PROCEED,ICE,2024,150.9867,4435,,0,4435,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,QV,BEV,2024,0.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,RAY,ICE,2024,,0,,0,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,RIO,HEV,2024,125.8333,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,RIO,ICE,2024,123.2597,77,,0,77,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SG2,BEV,2024,0.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SG2,HEV,2024,168.6667,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SG2,PHEV,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SORENTO,HEV,2024,164.2198,637,,0,638,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SORENTO,ICE,2024,172.6326,2172,,0,2172,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SORENTO,PHEV,2024,37.6748,535,183.3495,535,536,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SOUL,BEV,2024,0.0,670,156.991,670,670,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SP3,ICE,2024,173.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SPORTAGE,HEV,2024,145.3518,13185,,0,13187,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SPORTAGE,ICE,2024,155.8661,508,,0,508,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SPORTAGE,PHEV,2024,25.845,1948,175.3665,1948,1948,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,STINGER,ICE,2024,247.0,53,,0,53,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,STONIC,HEV,2024,128.2336,2200,,0,2200,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,STONIC,ICE,2024,127.1172,3329,,0,3329,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SV,BEV,2024,0.0,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SW,BEV,2024,0.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SW1,BEV,2024,0.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,SZ1,BEV,2024,0.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,TELLURIDE,ICE,2024,,0,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,TK,ICE,2024,287.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,XCEED,HEV,2024,129.7568,148,,0,148,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,XCEED,ICE,2024,144.6478,3370,,0,3370,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,XCEED,PHEV,2024,34.3306,242,126.4959,242,242,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DE,YB,ICE,2024,157.5,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,CEED,HEV,2024,122.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,CEED,ICE,2024,123.6171,316,,0,316,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,CEED,PHEV,2024,32.8017,121,124.5537,121,121,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,EV3,BEV,2024,0.0,572,151.8094,572,572,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,EV6,BEV,2024,0.0,792,175.4129,792,792,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,EV9,BEV,2024,0.0,158,220.8924,158,158,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,NIRO,BEV,2024,0.0,1405,162.0,1405,1405,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,NIRO,PHEV,2024,20.5909,22,134.0909,22,22,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,PICANTO,ICE,2024,112.0803,685,,0,685,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,PROCEED,ICE,2024,145.8403,144,,0,144,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,RIO,ICE,2024,123.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,SORENTO,PHEV,2024,38.0,66,184.0,66,66,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,SPORTAGE,HEV,2024,151.186,43,,0,43,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,SPORTAGE,ICE,2024,152.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,SPORTAGE,PHEV,2024,25.0857,105,169.9429,105,105,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,STONIC,HEV,2024,128.6,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,STONIC,ICE,2024,125.9059,85,,0,85,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,XCEED,ICE,2024,135.7,40,,0,40,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,DK,XCEED,PHEV,2024,33.8824,51,125.8235,51,51,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,CEED,HEV,2024,122.3,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,CEED,ICE,2024,135.4763,317,,0,317,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,EV3,BEV,2024,0.0,14,153.4286,14,14,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,EV6,BEV,2024,0.0,33,179.2121,33,33,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,EV9,BEV,2024,0.0,24,227.6667,24,24,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,NIRO,BEV,2024,0.0,8,162.0,8,8,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,NIRO,HEV,2024,104.1233,73,,0,73,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,PICANTO,ICE,2024,126.6522,23,,0,23,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,PROCEED,ICE,2024,141.7885,104,,0,104,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,RIO,ICE,2024,124.6667,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,SORENTO,HEV,2024,169.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,SORENTO,ICE,2024,173.6509,106,,0,106,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,SORENTO,PHEV,2024,37.6,5,183.2,5,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,SPORTAGE,HEV,2024,144.3469,686,,0,686,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,SPORTAGE,ICE,2024,154.9828,58,,0,58,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,SPORTAGE,PHEV,2024,26.6207,29,181.5517,29,29,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,STONIC,HEV,2024,129.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,STONIC,ICE,2024,128.1613,62,,0,62,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,EE,XCEED,ICE,2024,141.3776,98,,0,98,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,CEED,HEV,2024,122.8645,2325,,0,2325,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,CEED,ICE,2024,121.1732,3706,,0,3706,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,CEED,PHEV,2024,29.78,200,117.755,200,200,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,EV3,BEV,2024,0.0,776,150.2899,776,776,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,EV6,BEV,2024,0.0,771,168.8742,771,771,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,EV9,BEV,2024,0.0,178,227.8652,178,178,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,NIRO,BEV,2024,0.0,1092,162.0,1092,1092,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,NIRO,HEV,2024,101.2631,8616,,0,8616,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,NIRO,PHEV,2024,19.2178,528,130.0739,528,528,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,PICANTO,ICE,2024,118.1418,3125,,0,3125,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,PROCEED,HEV,2024,129.8,85,,0,85,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,PROCEED,ICE,2024,149.9459,37,,0,37,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,RIO,HEV,2024,116.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,RIO,ICE,2024,129.8293,41,,0,41,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,SORENTO,HEV,2024,153.789,730,,0,730,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,SORENTO,ICE,2024,166.8462,143,,0,143,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,SORENTO,PHEV,2024,37.5826,345,183.1652,345,345,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,SPORTAGE,HEV,2024,136.3008,13057,,0,13057,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,SPORTAGE,ICE,2024,153.8378,4161,,0,4161,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,SPORTAGE,PHEV,2024,25.7733,1116,176.2616,1116,1116,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,STONIC,HEV,2024,122.851,7620,,0,7620,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,STONIC,ICE,2024,130.7242,3162,,0,3162,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,XCEED,HEV,2024,136.5593,3744,,0,3744,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,XCEED,ICE,2024,136.0152,3951,,0,3951,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,ES,XCEED,PHEV,2024,34.7928,391,127.1893,391,391,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,CEED,HEV,2024,125.6528,599,,0,599,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,CEED,ICE,2024,128.7496,579,,0,579,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,CEED,PHEV,2024,29.293,273,116.6593,273,273,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,EV3,BEV,2024,0.0,82,153.0488,82,82,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,EV6,BEV,2024,0.0,328,175.8506,328,328,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,EV9,BEV,2024,0.0,219,227.4521,219,219,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,NIRO,BEV,2024,0.0,186,162.0,186,186,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,NIRO,HEV,2024,100.516,376,,0,376,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,NIRO,PHEV,2024,18.7444,133,129.203,133,133,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,PICANTO,ICE,2024,116.4896,241,,0,241,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,PROCEED,HEV,2024,129.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,PROCEED,ICE,2024,133.3171,164,,0,164,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,RIO,HEV,2024,120.125,16,,0,16,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,RIO,ICE,2024,126.4105,285,,0,285,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,SORENTO,HEV,2024,159.1143,35,,0,35,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,SORENTO,ICE,2024,172.3333,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,SORENTO,PHEV,2024,37.7481,131,183.4962,131,131,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,SOUL,BEV,2024,0.0,15,157.0,15,15,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,SPORTAGE,HEV,2024,133.8678,121,,0,121,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,SPORTAGE,ICE,2024,152.8571,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,SPORTAGE,PHEV,2024,25.4186,430,172.4884,430,430,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,STONIC,HEV,2024,121.3492,63,,0,63,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,STONIC,ICE,2024,126.3914,764,,0,764,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,XCEED,HEV,2024,137.7742,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,XCEED,ICE,2024,140.2276,123,,0,123,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FI,XCEED,PHEV,2024,32.2376,101,123.3564,101,101,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,CEED,HEV,2024,118.8868,433,,0,433,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,CEED,ICE,2024,133.2927,2074,,0,2074,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,CEED,PHEV,2024,29.623,122,117.4016,122,122,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,EV3,BEV,2024,0.0,345,152.8899,345,345,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,EV6,BEV,2024,0.0,1695,168.1215,1695,1695,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,EV9,BEV,2024,0.0,354,224.1977,354,354,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,NIRO,BEV,2024,0.0,2497,162.0,2497,2497,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,NIRO,HEV,2024,101.6824,4773,,0,4773,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,NIRO,PHEV,2024,18.9918,610,130.9459,610,610,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,PICANTO,ICE,2024,120.9731,8789,,0,8789,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,PROCEED,ICE,2024,135.703,596,,0,596,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,RIO,ICE,2024,125.7526,97,,0,97,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,SORENTO,HEV,2024,151.4407,59,,0,59,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,SORENTO,PHEV,2024,37.0698,774,182.1395,774,774,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,SOUL,BEV,2024,0.0,19,156.9474,19,19,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,SPORTAGE,HEV,2024,130.4248,12899,,0,12899,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,SPORTAGE,ICE,2024,151.6564,195,,0,195,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,SPORTAGE,PHEV,2024,25.8551,2684,175.9594,2684,2684,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,STONIC,HEV,2024,127.7194,1315,,0,1315,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,STONIC,ICE,2024,129.1406,5610,,0,5610,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,XCEED,HEV,2024,130.3,160,,0,160,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,XCEED,ICE,2024,141.034,882,,0,882,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,FR,XCEED,PHEV,2024,33.9747,158,125.962,158,158,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,EV3,BEV,2024,0.0,13,149.3846,13,13,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,EV6,BEV,2024,0.0,29,176.6552,29,29,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,EV9,BEV,2024,0.0,12,227.5833,12,12,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,NIRO,BEV,2024,0.0,48,162.0,48,48,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,NIRO,HEV,2024,105.0,13,,0,13,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,NIRO,PHEV,2024,18.2903,31,128.6774,31,31,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,PICANTO,ICE,2024,118.3871,1883,,0,1883,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,SPORTAGE,HEV,2024,142.1945,725,,0,725,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,SPORTAGE,PHEV,2024,25.6235,85,176.8588,85,85,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,STONIC,HEV,2024,123.9211,76,,0,76,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,STONIC,ICE,2024,131.2321,1288,,0,1288,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,XCEED,HEV,2024,138.8497,366,,0,366,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,XCEED,ICE,2024,141.2031,128,,0,128,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,GR,XCEED,PHEV,2024,38.0,67,132.0,67,67,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,CEED,HEV,2024,128.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,CEED,ICE,2024,131.9819,554,,0,554,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,EV6,BEV,2024,0.0,4,252.0,4,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,EV9,BEV,2024,0.0,1,228.0,1,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,NIRO,HEV,2024,100.75,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,PICANTO,ICE,2024,116.2367,245,,0,245,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,PROCEED,ICE,2024,137.8529,34,,0,34,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,RIO,ICE,2024,129.0411,73,,0,73,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,SORENTO,HEV,2024,162.4545,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,SORENTO,ICE,2024,172.5294,17,,0,17,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,SORENTO,PHEV,2024,37.0,1,182.0,1,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,SPORTAGE,HEV,2024,142.1917,313,,0,313,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,SPORTAGE,ICE,2024,154.8853,436,,0,436,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,SPORTAGE,PHEV,2024,70.3333,3,190.6667,3,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,STONIC,HEV,2024,119.2857,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,STONIC,ICE,2024,129.1098,1138,,0,1138,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,XCEED,ICE,2024,141.5116,432,,0,432,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HR,XCEED,PHEV,2024,32.0,2,123.0,2,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,CEED,ICE,2024,133.5211,2560,,0,2560,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,CEED,PHEV,2024,29.3243,37,116.7297,37,37,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,EV3,BEV,2024,0.0,26,154.0385,26,26,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,EV6,BEV,2024,0.0,32,174.8125,32,32,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,EV9,BEV,2024,0.0,45,226.8444,45,45,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,NIRO,BEV,2024,0.0,106,162.0,106,106,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,NIRO,HEV,2024,102.7572,173,,0,173,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,NIRO,PHEV,2024,20.4524,42,134.381,42,42,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,PICANTO,ICE,2024,119.6603,156,,0,156,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,PROCEED,ICE,2024,140.6437,449,,0,449,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,SORENTO,HEV,2024,155.36,50,,0,50,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,SORENTO,ICE,2024,171.3297,185,,0,185,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,SORENTO,PHEV,2024,37.5319,47,183.0638,47,47,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,SOUL,BEV,2024,0.0,1,157.0,1,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,SPORTAGE,HEV,2024,140.6889,585,,0,585,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,SPORTAGE,ICE,2024,159.4592,1348,,0,1348,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,SPORTAGE,PHEV,2024,26.25,88,178.8409,88,88,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,STINGER,ICE,2024,247.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,STONIC,HEV,2024,128.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,STONIC,ICE,2024,128.3643,129,,0,129,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,XCEED,ICE,2024,141.9732,410,,0,410,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,HU,XCEED,PHEV,2024,38.0,6,132.0,6,6,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,CEED,HEV,2024,117.3935,277,,0,277,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,CEED,ICE,2024,126.4778,383,,0,383,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,CEED,PHEV,2024,29.0,25,116.0,25,25,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,EV3,BEV,2024,0.0,20,152.2,20,20,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,EV6,BEV,2024,0.0,749,170.1442,749,749,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,EV9,BEV,2024,0.0,278,221.1727,278,278,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,NIRO,BEV,2024,0.0,440,162.0,440,440,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,NIRO,HEV,2024,105.0,453,,0,453,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,NIRO,PHEV,2024,21.0,269,135.5539,269,269,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,PICANTO,ICE,2024,116.6561,471,,0,471,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,SORENTO,ICE,2024,162.9678,559,,0,559,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,SORENTO,PHEV,2024,37.0364,247,182.0729,247,247,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,SPORTAGE,HEV,2024,129.6568,1256,,0,1256,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,SPORTAGE,ICE,2024,139.9968,1847,,0,1847,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,SPORTAGE,PHEV,2024,25.5661,696,173.5287,696,696,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,STONIC,HEV,2024,129.0,110,,0,110,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,STONIC,ICE,2024,125.0,688,,0,688,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IE,XCEED,PHEV,2024,37.0791,215,130.6186,215,215,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,CEED,HEV,2024,122.597,134,,0,134,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,CEED,ICE,2024,147.3333,24,,0,24,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,CEED,PHEV,2024,33.0,78,125.0,78,78,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,EV3,BEV,2024,0.0,191,153.0314,191,191,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,EV6,BEV,2024,0.0,134,182.0597,134,134,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,EV9,BEV,2024,0.0,109,228.0,109,109,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,NIRO,BEV,2024,0.0,110,162.0,110,110,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,NIRO,HEV,2024,104.0483,1863,,0,1863,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,NIRO,ICE,2024,102.7411,112,,0,112,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,NIRO,PHEV,2024,20.567,224,134.2143,224,224,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,PICANTO,ICE,2024,116.3173,12428,,0,12428,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,PROCEED,HEV,2024,128.9385,65,,0,65,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,PROCEED,ICE,2024,141.2887,142,,0,142,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,SORENTO,HEV,2024,160.1802,222,,0,222,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,SORENTO,ICE,2024,171.1731,491,,0,491,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,SORENTO,PHEV,2024,37.2982,57,182.5965,57,57,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,SOUL,ICE,2024,168.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,SPORTAGE,HEV,2024,134.596,18540,,0,18540,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,SPORTAGE,ICE,2024,142.825,2937,,0,2937,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,SPORTAGE,PHEV,2024,25.7785,641,177.9392,641,641,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,STONIC,HEV,2024,124.961,1794,,0,1794,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,STONIC,ICE,2024,123.7256,5062,,0,5062,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,XCEED,HEV,2024,134.3993,1182,,0,1182,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,XCEED,ICE,2024,132.5158,1047,,0,1047,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,IT,XCEED,PHEV,2024,38.0,39,132.0,39,39,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,CEED,HEV,2024,122.5,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,CEED,ICE,2024,134.9213,445,,0,445,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,EV3,BEV,2024,0.0,6,153.3333,6,6,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,EV6,BEV,2024,0.0,19,179.7895,19,19,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,EV9,BEV,2024,0.0,10,228.0,10,10,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,NIRO,BEV,2024,0.0,24,162.0,24,24,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,NIRO,HEV,2024,103.8182,44,,0,44,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,PICANTO,ICE,2024,126.963,27,,0,27,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,PROCEED,ICE,2024,143.2171,327,,0,327,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,RIO,ICE,2024,129.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,SORENTO,ICE,2024,173.4783,23,,0,23,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,SORENTO,PHEV,2024,37.75,4,183.5,4,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,SPORTAGE,HEV,2024,143.4425,1044,,0,1044,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,SPORTAGE,ICE,2024,154.7333,45,,0,45,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,SPORTAGE,PHEV,2024,26.2857,91,178.7473,91,91,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,STONIC,ICE,2024,129.0351,57,,0,57,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LT,XCEED,ICE,2024,141.3662,71,,0,71,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,CEED,HEV,2024,121.5833,36,,0,36,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,CEED,ICE,2024,134.6961,102,,0,102,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,CEED,PHEV,2024,31.0,16,120.5,16,16,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,EV3,BEV,2024,0.0,34,151.7059,34,34,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,EV6,BEV,2024,0.0,204,172.6078,204,204,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,EV9,BEV,2024,0.0,57,225.8947,57,57,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,NIRO,BEV,2024,0.0,64,162.0,64,64,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,NIRO,HEV,2024,103.1842,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,NIRO,PHEV,2024,20.3077,13,133.0,13,13,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,PICANTO,ICE,2024,118.4286,266,,0,266,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,PROCEED,ICE,2024,147.2353,34,,0,34,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,SORENTO,HEV,2024,161.5789,19,,0,19,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,SORENTO,ICE,2024,172.7273,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,SORENTO,PHEV,2024,37.6,10,183.2,10,10,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,SOUL,BEV,2024,0.0,5,157.0,5,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,SPORTAGE,HEV,2024,140.0428,257,,0,257,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,SPORTAGE,ICE,2024,155.5,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,SPORTAGE,PHEV,2024,25.6667,51,174.1961,51,51,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,STONIC,HEV,2024,129.0,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,STONIC,ICE,2024,129.735,234,,0,234,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,XCEED,HEV,2024,129.2222,18,,0,18,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,XCEED,ICE,2024,146.02,50,,0,50,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LU,XCEED,PHEV,2024,35.4286,7,128.1429,7,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,CEED,HEV,2024,123.4286,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,CEED,ICE,2024,134.131,252,,0,252,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,EV3,BEV,2024,0.0,4,150.5,4,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,EV6,BEV,2024,0.0,11,176.2727,11,11,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,EV9,BEV,2024,0.0,12,227.3333,12,12,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,NIRO,BEV,2024,0.0,23,162.0,23,23,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,NIRO,HEV,2024,105.0,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,PICANTO,ICE,2024,126.2667,15,,0,15,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,PROCEED,ICE,2024,146.7407,27,,0,27,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,RIO,ICE,2024,126.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,SORENTO,ICE,2024,173.6471,17,,0,17,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,SORENTO,PHEV,2024,37.25,4,182.5,4,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,SPORTAGE,HEV,2024,140.9479,288,,0,288,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,SPORTAGE,ICE,2024,155.3429,35,,0,35,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,SPORTAGE,PHEV,2024,26.1852,27,178.037,27,27,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,STONIC,HEV,2024,129.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,STONIC,ICE,2024,128.6452,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,LV,XCEED,ICE,2024,141.3636,33,,0,33,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,CEED,HEV,2024,125.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,CEED,ICE,2024,132.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,EV6,BEV,2024,0.0,4,184.5,4,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,EV9,BEV,2024,0.0,3,228.0,3,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,NIRO,BEV,2024,0.0,21,162.0,21,21,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,NIRO,HEV,2024,102.25,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,PICANTO,ICE,2024,118.7398,319,,0,319,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,SORENTO,PHEV,2024,37.0,2,182.0,2,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,SPORTAGE,HEV,2024,131.4,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,SPORTAGE,PHEV,2024,27.0588,17,182.2353,17,17,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,STONIC,ICE,2024,129.5575,113,,0,113,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,XCEED,HEV,2024,135.5,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,XCEED,ICE,2024,140.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,MT,XCEED,PHEV,2024,35.0,2,127.5,2,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,CEED,HEV,2024,125.6404,228,,0,228,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,CEED,ICE,2024,127.3059,2900,,0,2900,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,CEED,PHEV,2024,30.1865,445,118.6697,445,445,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,EV3,BEV,2024,0.0,126,153.2302,126,126,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,EV6,BEV,2024,0.0,2717,168.5462,2717,2717,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,EV9,BEV,2024,0.0,1044,219.16,1044,1044,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,NIRO,BEV,2024,0.0,5373,162.0,5373,5373,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,NIRO,HEV,2024,100.8344,4977,,0,4977,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,NIRO,PHEV,2024,19.3918,513,131.2963,513,513,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,PICANTO,ICE,2024,112.5951,8373,,0,8373,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,PROCEED,ICE,2024,136.6726,669,,0,669,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,RIO,HEV,2024,117.3,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,SORENTO,HEV,2024,152.0893,56,,0,56,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,SORENTO,PHEV,2024,37.458,417,182.9161,417,417,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,SOUL,BEV,2024,0.0,90,157.0,90,90,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,SPORTAGE,HEV,2024,131.7098,2615,,0,2615,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,SPORTAGE,PHEV,2024,25.7217,1333,174.7299,1333,1333,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,STONIC,HEV,2024,121.9136,2628,,0,2628,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,XCEED,ICE,2024,141.4369,206,,0,206,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,NL,XCEED,PHEV,2024,33.2222,54,124.8333,54,54,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,CEED,HEV,2024,117.6875,16,,0,16,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,CEED,ICE,2024,132.8623,5111,,0,5111,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,CEED,PHEV,2024,31.0593,270,120.6333,270,270,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,EV3,BEV,2024,0.0,107,154.1215,107,107,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,EV6,BEV,2024,0.0,427,179.3372,427,427,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,NIRO,BEV,2024,0.0,374,162.0,374,374,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,NIRO,HEV,2024,101.6709,869,,0,869,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,NIRO,PHEV,2024,19.2264,53,130.7358,53,53,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,PICANTO,ICE,2024,117.8562,1446,,0,1446,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,PROCEED,ICE,2024,138.799,1393,,0,1393,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,RIO,ICE,2024,120.6471,51,,0,51,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,SORENTO,HEV,2024,165.6735,1216,,0,1216,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,SORENTO,ICE,2024,173.0608,263,,0,263,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,SORENTO,PHEV,2024,37.6752,117,183.3504,117,117,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,SOUL,BEV,2024,0.0,12,156.8333,12,12,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,SPORTAGE,HEV,2024,139.606,5406,,0,5406,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,SPORTAGE,ICE,2024,158.0258,8384,,0,8384,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,SPORTAGE,PHEV,2024,25.5031,326,173.181,326,326,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,STONIC,HEV,2024,127.7647,85,,0,85,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,STONIC,ICE,2024,130.7004,2947,,0,2947,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,XCEED,ICE,2024,141.9228,4119,,0,4119,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PL,XCEED,PHEV,2024,37.8723,141,131.8085,141,141,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,CEED,HEV,2024,120.0,139,,0,139,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,CEED,ICE,2024,127.4013,314,,0,314,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,CEED,PHEV,2024,29.0,274,116.0,274,274,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,EV3,BEV,2024,0.0,237,151.3165,237,237,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,EV6,BEV,2024,0.0,275,165.7455,275,275,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,EV9,BEV,2024,0.0,129,210.6822,129,129,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,NIRO,BEV,2024,0.0,337,162.0,337,337,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,NIRO,HEV,2024,105.0,166,,0,166,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,PICANTO,ICE,2024,117.4087,832,,0,832,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,PROCEED,ICE,2024,133.5714,14,,0,14,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,SORENTO,HEV,2024,152.5333,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,SORENTO,ICE,2024,169.0,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,SORENTO,PHEV,2024,37.3571,84,182.7143,84,84,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,SPORTAGE,HEV,2024,132.7531,162,,0,162,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,SPORTAGE,ICE,2024,155.8951,410,,0,410,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,SPORTAGE,PHEV,2024,26.1894,417,179.1559,417,417,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,STONIC,HEV,2024,128.3696,46,,0,46,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,STONIC,ICE,2024,132.0236,2541,,0,2541,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,XCEED,HEV,2024,138.0,75,,0,75,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,XCEED,ICE,2024,137.1834,687,,0,687,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,PT,XCEED,PHEV,2024,32.0,324,123.0,324,324,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,CEED,HEV,2024,129.25,24,,0,24,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,CEED,ICE,2024,132.0158,632,,0,632,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,EV3,BEV,2024,0.0,3,155.0,3,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,EV6,BEV,2024,0.0,26,174.7692,26,26,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,EV9,BEV,2024,0.0,13,228.0,13,13,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,NIRO,BEV,2024,0.0,31,162.0,31,31,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,NIRO,HEV,2024,101.6818,22,,0,22,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,NIRO,PHEV,2024,20.7143,7,134.4286,7,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,PICANTO,ICE,2024,118.5526,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,PROCEED,HEV,2024,129.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,PROCEED,ICE,2024,145.6,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,RIO,HEV,2024,119.6667,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,RIO,ICE,2024,129.3711,97,,0,97,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,SORENTO,HEV,2024,164.6,20,,0,20,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,SORENTO,ICE,2024,173.5556,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,SORENTO,PHEV,2024,38.0,10,184.0,10,10,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,SOUL,BEV,2024,0.0,1,156.0,1,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,SPORTAGE,HEV,2024,143.679,2112,,0,2112,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,SPORTAGE,ICE,2024,153.7974,385,,0,386,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,SPORTAGE,PHEV,2024,25.322,118,171.7373,118,118,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,STONIC,HEV,2024,125.0,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,STONIC,ICE,2024,134.7703,209,,0,209,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,XCEED,HEV,2024,137.4242,66,,0,66,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,XCEED,ICE,2024,139.7614,352,,0,352,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,RO,XCEED,PHEV,2024,35.5839,149,128.3758,149,149,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,CEED,ICE,2024,132.3415,1063,,0,1063,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,CEED,PHEV,2024,29.9113,3463,118.0505,3463,3463,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,EV3,BEV,2024,0.0,1401,152.6017,1401,1401,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,EV6,BEV,2024,0.0,2515,172.07,2515,2515,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,EV6 GT,BEV,2024,0.0,2,209.0,2,2,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,EV9,BEV,2024,0.0,1786,225.1187,1786,1786,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,NIRO,BEV,2024,0.0,1154,162.0,1154,1154,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,NIRO,HEV,2024,100.5157,351,,0,351,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,NIRO,PHEV,2024,18.6218,1465,129.6218,1465,1465,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,PICANTO,ICE,2024,117.6642,807,,0,807,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,SORENTO,PHEV,2024,37.0,458,182.0,458,458,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,SPORTAGE,HEV,2024,136.9481,135,,0,135,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,SPORTAGE,ICE,2024,167.3922,204,,0,204,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,SPORTAGE,PHEV,2024,26.4609,3636,180.5726,3636,3636,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,STONIC,HEV,2024,122.9009,686,,0,686,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SE,XCEED,PHEV,2024,38.0,439,132.0,439,439,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,CEED,HEV,2024,121.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,CEED,ICE,2024,131.8164,452,,0,452,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,CEED / 1.0 / T,ICE,2024,134.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,EV3,BEV,2024,0.0,1,150.0,1,1,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,EV6,BEV,2024,0.0,12,173.6667,12,12,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,EV9,BEV,2024,0.0,4,228.0,4,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,NIRO,BEV,2024,0.0,6,162.0,6,6,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,NIRO,HEV,2024,100.6667,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,PICANTO,ICE,2024,117.7057,265,,0,265,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,PROCEED,ICE,2024,142.7037,27,,0,27,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,RIO,ICE,2024,129.2727,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,SORENTO,HEV,2024,162.0,18,,0,18,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,SORENTO,ICE,2024,172.7143,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,SPORTAGE,HEV,2024,145.0341,264,,0,264,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,SPORTAGE,ICE,2024,154.6212,425,,0,425,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,SPORTAGE,PHEV,2024,27.0,3,181.6667,3,3,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,STONIC,HEV,2024,119.0,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,STONIC,ICE,2024,128.1627,467,,0,467,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SI,XCEED,ICE,2024,141.6611,301,,0,301,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,CEED,HEV,2024,119.1517,145,,0,145,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,CEED,ICE,2024,132.0111,2870,,0,2871,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,CEED,PHEV,2024,29.8571,14,117.9286,14,14,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,EV3,BEV,2024,0.0,7,154.1429,7,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,EV6,BEV,2024,0.0,142,178.1056,142,142,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,EV9,BEV,2024,0.0,65,227.2,65,65,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,NIRO,BEV,2024,0.0,44,162.0,44,44,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,NIRO,HEV,2024,104.2941,102,,0,102,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,NIRO,PHEV,2024,20.7143,7,134.5714,7,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,PICANTO,ICE,2024,120.8509,114,,0,114,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,PROCEED,ICE,2024,141.505,402,,0,402,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,RIO,ICE,2024,122.0,13,,0,13,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,SORENTO,HEV,2024,161.8553,76,,0,76,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,SORENTO,ICE,2024,172.8357,286,,0,286,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,SORENTO,PHEV,2024,37.4706,17,182.9412,17,17,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,SPORTAGE,HEV,2024,144.7165,1185,,0,1185,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,SPORTAGE,ICE,2024,162.9677,1395,,0,1395,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,SPORTAGE,PHEV,2024,25.5673,104,173.5769,104,104,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,STINGER,ICE,2024,247.0,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,STONIC,HEV,2024,128.0,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,STONIC,ICE,2024,128.927,918,,0,918,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,XCEED,HEV,2024,129.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,XCEED,ICE,2024,140.2762,764,,0,764,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+kia,SK,XCEED,PHEV,2024,34.5714,7,126.8571,7,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
 toyota,AT,GR YARIS 16,ICE,2024,186.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
 toyota,AT,PROACE,BEV,2024,0.0,13,264.2308,13,13,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
 toyota,AT,PROACE,ICE,2024,195.3103,348,,0,348,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
