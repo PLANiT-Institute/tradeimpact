@@ -1,0 +1,1287 @@
+company,destination,destination_level,origin,cohort_year,period,model,powertrain,units,basis,source_file
+hyundai,AT,country,,2024,2024-01..2024-12,BAYON,HEV,60,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,BAYON,ICE,705,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,G70 GENESIS G70,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,G90 GENESIS G90,HEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,GV70 GENESIS GV70,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,GV70 GENESIS GV70,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,I 30,HEV,324,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,I 30,ICE,1631,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,I 30 N,ICE,17,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,I10,ICE,1575,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,I20,ICE,2058,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,I20 N,ICE,42,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,IONIQ5,BEV,144,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,77,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,IONIQ6,BEV,51,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,527,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,630,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,451,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,SANTA FE,HEV,11,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,SANTA FE,ICE,8,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,SANTA FE,PHEV,140,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,STARIA,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,STARIA,ICE,17,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,STARIA PREMIUM,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,1849,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,727,registrations,eea_hyundai_2024_final.json
+hyundai,AT,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,312,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,BAYON,HEV,309,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,BAYON,ICE,493,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,G80 GENESIS G80,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,G90 GENESIS G90,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,I 30,HEV,542,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,I 30,ICE,157,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,I 30 N,ICE,42,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,I10,ICE,1255,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,I20,HEV,5,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,I20,ICE,1171,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,I20 N,ICE,48,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,IONIQ5,BEV,468,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,71,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,IONIQ6,BEV,347,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,588,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,1274,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,576,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,KONA N KAUAI N,ICE,5,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,NEXO,FCEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,SANTA FE,HEV,38,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,SANTA FE,PHEV,44,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,STARIA,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,STARIA,ICE,12,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,STARIA PREMIUM,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,STARIA PREMIUM,ICE,3,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,3307,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,196,registrations,eea_hyundai_2024_final.json
+hyundai,BE,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,1192,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,BAYON,HEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,BAYON,ICE,121,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,ELANTRA,ICE,37,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,GV80 GENESIS GV80,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,I 30,HEV,29,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,I 30,ICE,236,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,I 30 N,ICE,5,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,I10,ICE,284,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,I20,ICE,253,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,I20 N,ICE,5,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,IONIQ5,BEV,24,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,23,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,IONIQ6,BEV,30,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,121,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,142,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,85,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,SANTA FE,HEV,52,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,SANTA FE,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,SANTA FE,PHEV,31,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,STARIA,HEV,3,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,STARIA,ICE,13,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,STARIA PREMIUM,ICE,28,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,632,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,48,registrations,eea_hyundai_2024_final.json
+hyundai,BG,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,129,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,BAYON,ICE,91,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,I 30,HEV,9,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,I 30,ICE,5,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,I 30 N,ICE,6,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,I10,ICE,60,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,I20,ICE,108,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,I20 N,ICE,11,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,IONIQ5,BEV,63,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,IONIQ6,BEV,19,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,34,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,54,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,46,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,KONA N KAUAI N,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,SANTA FE,PHEV,4,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,760,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,8,registrations,eea_hyundai_2024_final.json
+hyundai,CY,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,59,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,BAYON,HEV,13,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,BAYON,ICE,1575,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,G80 GENESIS G80,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,GV80 GENESIS GV80,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,I 10,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,I 20,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,I 30,HEV,3154,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,I 30,ICE,5588,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,I10,ICE,773,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,I20,HEV,3,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,I20,ICE,1736,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,IONIQ5,BEV,146,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,IONIQ6,BEV,31,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,310,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,37,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,747,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,SANTA FE,HEV,145,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,SANTA FE,ICE,33,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,SANTA FE,PHEV,63,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,STARIA,HEV,9,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,STARIA,ICE,154,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,TUCSON,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,3205,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,2312,registrations,eea_hyundai_2024_final.json
+hyundai,CZ,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,219,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,,BEV,8,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,AX1,BEV,8,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,BAYON,HEV,2799,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,BAYON,ICE,1626,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,BC3,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,CE,BEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,CE EV,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,CE N,BEV,6,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,CE PE,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,CV E GT,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,G70 GENESIS G70,ICE,119,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,G80 GENESIS G80,BEV,16,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,G80 GENESIS G80,ICE,28,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,G90 GENESIS G90,HEV,35,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,GENESIS RS4,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,GV60 GENESIS GV60,BEV,110,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,GV70 GENESIS GV70,BEV,124,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,GV70 GENESIS GV70,ICE,460,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,GV80 GENESIS GV80,ICE,126,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,I 30,HEV,7647,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,I 30,ICE,3771,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,I 30 N,ICE,2735,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,I10,ICE,15021,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,I20,HEV,4421,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,I20,ICE,5642,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,I20 N,ICE,1792,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,I20 N RALLY 2,ICE,17,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,INSTER,BEV,28,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,IONIQ,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,IONIQ5,BEV,6449,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,1171,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,IONIQ6,BEV,2450,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,IONIQ9,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,JW,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,JW1 EV,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,KONA,HEV,3,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,6505,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,2601,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,4389,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,KONA N KAUAI N,ICE,84,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,ME,BEV,4,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,MX-5,PHEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,MX5 PHEV,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,NE PE,BEV,5,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,NE-N,BEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,NEXO,FCEV,8,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,NH2,FCEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,NX4,HEV,4,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,NX4,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,NX4E,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,PALISADE,HEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,PALISADE,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,SANTA FE,HEV,731,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,SANTA FE,ICE,119,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,SANTA FE,PHEV,845,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,STARIA,HEV,266,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,STARIA,ICE,1598,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,STARIA PREMIUM,ICE,661,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,SX2,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,SX2,HEV,3,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,SX2,ICE,6,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,SX2 E,BEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,TUCSON,HEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,16018,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,2198,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,3501,registrations,eea_hyundai_2024_final.json
+hyundai,DE,country,,2024,2024-01..2024-12,US4,HEV,5,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,BAYON,ICE,49,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,I 30,HEV,24,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,I 30,ICE,173,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,I10,ICE,776,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,I20,ICE,763,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,I20 N,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,IONIQ,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,IONIQ 5,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,IONIQ5,BEV,790,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,IONIQ6,BEV,377,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,1141,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,252,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,SANTA FE,PHEV,47,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,STARIA PREMIUM,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,198,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,15,registrations,eea_hyundai_2024_final.json
+hyundai,DK,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,205,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,BAYON,HEV,33,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,BAYON,ICE,16,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,G90 GENESIS G90,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,I 30,HEV,20,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,I 30,ICE,26,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,I 30 N,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,I10,ICE,3,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,I20,HEV,12,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,I20,ICE,65,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,I20 N,ICE,4,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,IONIQ5,BEV,61,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,9,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,IONIQ6,BEV,19,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,27,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,40,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,KONA N KAUAI N,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,SANTA FE,HEV,29,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,SANTA FE,PHEV,7,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,314,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,7,registrations,eea_hyundai_2024_final.json
+hyundai,EE,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,19,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,BAYON,HEV,3167,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,BAYON,ICE,1912,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,G90 GENESIS G90,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,GV70 GENESIS GV70,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,GV80 GENESIS GV80,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,I 30,HEV,2095,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,I 30,ICE,3669,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,I 30 N,ICE,596,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,I10,ICE,5388,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,I20,HEV,2700,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,I20,ICE,8440,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,I20 N,ICE,888,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,INSTER,BEV,74,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,IONIQ5,BEV,377,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,23,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,IONIQ6,BEV,156,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,868,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,8739,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,3204,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,NEXO,FCEV,7,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,SANTA FE,HEV,310,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,SANTA FE,ICE,84,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,SANTA FE,PHEV,363,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,STARIA,HEV,82,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,STARIA,ICE,102,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,STARIA PREMIUM,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,11395,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,7952,registrations,eea_hyundai_2024_final.json
+hyundai,ES,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,2249,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,BAYON,HEV,212,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,BAYON,ICE,30,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,I 30,HEV,95,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,I 30,ICE,388,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,I10,ICE,223,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,I20,HEV,26,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,I20,ICE,370,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,I20 N,ICE,3,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,IONIQ5,BEV,534,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,24,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,IONIQ6,BEV,139,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,372,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,209,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,SANTA FE,PHEV,29,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,107,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,3,registrations,eea_hyundai_2024_final.json
+hyundai,FI,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,337,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,BAYON,HEV,3492,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,BAYON,ICE,1975,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,G90 GENESIS G90,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,GV70 GENESIS GV70,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,GV80 GENESIS GV80,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,I 30,HEV,618,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,I 30,ICE,322,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,I10,ICE,3811,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,I20,HEV,2266,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,I20,ICE,4634,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,I20 N,ICE,91,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,IONIQ5,BEV,735,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,123,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,IONIQ6,BEV,291,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,4918,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,7905,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,509,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,NEXO,FCEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,SANTA FE,HEV,257,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,SANTA FE,ICE,7,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,SANTA FE,PHEV,814,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,15231,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,8,registrations,eea_hyundai_2024_final.json
+hyundai,FR,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,1642,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,BAYON,HEV,102,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,BAYON,ICE,1138,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,I 30,HEV,525,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,I 30,ICE,960,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,I 30 N,ICE,12,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,I10,ICE,1610,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,I20,HEV,44,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,I20,ICE,2155,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,I20 N,ICE,88,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,IONIQ5,BEV,84,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,8,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,IONIQ6,BEV,13,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,108,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,721,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,173,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,SANTA FE,PHEV,8,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,1046,registrations,eea_hyundai_2024_final.json
+hyundai,GR,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,84,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,BAYON,HEV,4,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,BAYON,ICE,372,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,I 30,HEV,40,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,I 30,ICE,548,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,I 30 N,ICE,10,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,I10,ICE,164,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,I20,ICE,563,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,I20 N,ICE,5,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,I30,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,IONIQ5,BEV,48,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,IONIQ6,BEV,30,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,KONA,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,KONA,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,80,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,50,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,225,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,SANTA FE,HEV,6,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,SANTA FE,PHEV,3,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,TUCSON,HEV,4,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,715,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,469,registrations,eea_hyundai_2024_final.json
+hyundai,HR,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,41,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,BAYON,ICE,181,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,I 30,HEV,266,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,I 30,ICE,899,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,I 30 N,ICE,33,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,I10,ICE,153,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,I20,HEV,90,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,I20,ICE,588,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,I20 N,ICE,36,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,IONIQ5,BEV,115,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,32,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,IONIQ6,BEV,136,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,280,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,139,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,201,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,KONA N KAUAI N,ICE,4,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,SANTA FE,HEV,20,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,SANTA FE,PHEV,33,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,STARIA,HEV,5,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,STARIA PREMIUM,HEV,6,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,STARIA PREMIUM,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,989,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,251,registrations,eea_hyundai_2024_final.json
+hyundai,HU,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,295,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,BAYON,ICE,416,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,I 30,ICE,214,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,I 30 N,ICE,3,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,I10,ICE,502,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,I20,ICE,1457,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,I20 N,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,IONIQ5,BEV,462,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,7,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,IONIQ6,BEV,226,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,739,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,870,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,889,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,SANTA FE,PHEV,258,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,1420,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,2710,registrations,eea_hyundai_2024_final.json
+hyundai,IE,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,1048,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,BAYON,HEV,718,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,BAYON,ICE,1508,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,BAYON BI-FUEL,ICE,1475,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,GV70 GENESIS GV70,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,GV80 GENESIS GV80,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,I 30,HEV,122,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,I 30,ICE,12,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,I 30 N,ICE,26,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,I10,ICE,13611,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,I10 BI-FUEL,ICE,2139,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,I20,HEV,2268,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,I20,ICE,5314,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,I20 BI-FUEL,ICE,2087,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,I20 I20 ACTIVE,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,I20 N,ICE,886,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,IONIQ5,BEV,46,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,27,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,IONIQ6,BEV,90,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,341,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,5143,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,1076,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,SANTA FE,HEV,276,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,SANTA FE,PHEV,30,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,STARIA,HEV,4,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,STARIA,ICE,296,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,STARIA PREMIUM,HEV,4,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,STARIA PREMIUM,ICE,43,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,10997,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,272,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,614,registrations,eea_hyundai_2024_final.json
+hyundai,IT,country,,2024,2024-01..2024-12,VERACRUZIX55,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,BAYON,HEV,11,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,BAYON,ICE,8,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,G90 GENESIS G90,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,I 30,HEV,11,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,I 30,ICE,28,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,I 30 N,ICE,3,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,I10,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,I20,HEV,3,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,I20,ICE,163,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,I20 N,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,IONIQ5,BEV,46,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,IONIQ6,BEV,13,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,19,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,30,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,SANTA FE,HEV,11,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,SANTA FE,PHEV,7,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,338,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,6,registrations,eea_hyundai_2024_final.json
+hyundai,LT,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,41,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,BAYON,HEV,11,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,BAYON,ICE,23,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,G80 GENESIS G80,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,G90 GENESIS G90,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,GV60 GENESIS GV60,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,I 30,HEV,42,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,I 30,ICE,8,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,I 30 N,ICE,51,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,I10,ICE,71,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,I20,ICE,103,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,I20 N,ICE,8,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,IONIQ5,BEV,168,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,18,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,IONIQ6,BEV,76,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,231,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,92,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,97,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,KONA N KAUAI N,ICE,6,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,SANTA FE,HEV,3,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,SANTA FE,PHEV,6,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,STARIA,ICE,4,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,STARIA PREMIUM,ICE,7,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,246,registrations,eea_hyundai_2024_final.json
+hyundai,LU,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,83,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,BAYON,HEV,55,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,BAYON,ICE,11,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,I 30,HEV,27,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,I 30,ICE,118,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,I10,ICE,4,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,I20,HEV,7,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,I20,ICE,75,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,I20 N,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,IONIQ5,BEV,53,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,IONIQ6,BEV,7,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,12,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,25,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,KONA N KAUAI N,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,SANTA FE,HEV,12,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,SANTA FE,PHEV,14,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,225,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,11,registrations,eea_hyundai_2024_final.json
+hyundai,LV,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,7,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,BAYON,HEV,15,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,BAYON,ICE,18,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,I10,ICE,377,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,I20,HEV,9,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,I20,ICE,198,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,IONIQ5,BEV,4,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,IONIQ6,BEV,5,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,68,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,14,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,21,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,8,registrations,eea_hyundai_2024_final.json
+hyundai,MT,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,12,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,BAYON,HEV,968,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,GV60 GENESIS GV60,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,I 30,HEV,354,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,I10,ICE,5977,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,I20,HEV,1407,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,I20,ICE,159,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,INSTER,BEV,33,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,IONIQ5,BEV,667,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,59,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,IONIQ6,BEV,587,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,3060,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,3898,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,SANTA FE,HEV,67,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,SANTA FE,PHEV,173,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,1231,registrations,eea_hyundai_2024_final.json
+hyundai,NL,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,1938,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,BAYON,ICE,1421,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,ELANTRA,ICE,1077,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,G80 GENESIS G80,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,GV80 GENESIS GV80,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,I 30,HEV,3221,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,I 30,ICE,2019,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,I 30 N,ICE,4,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,I10,ICE,868,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,I20,ICE,4275,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,I20 N,ICE,51,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,IONIQ5,BEV,165,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,7,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,290,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,1562,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,2057,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,SANTA FE,HEV,594,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,SANTA FE,PHEV,96,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,STARIA,HEV,41,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,STARIA PREMIUM,HEV,17,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,9747,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,3360,registrations,eea_hyundai_2024_final.json
+hyundai,PL,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,74,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,BAYON,ICE,1090,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,I 30,ICE,432,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,I 30 N,ICE,31,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,I10,ICE,447,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,I20,ICE,1982,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,I20 N,ICE,73,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,IONIQ5,BEV,369,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,IONIQ6,BEV,128,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,377,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,181,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,715,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,SANTA FE,HEV,45,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,SANTA FE,ICE,38,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,SANTA FE,PHEV,46,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,449,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,574,registrations,eea_hyundai_2024_final.json
+hyundai,PT,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,213,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,BAYON,HEV,209,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,BAYON,ICE,421,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,ELANTRA,ICE,850,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,G80 GENESIS G80,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,GV60 GENESIS GV60,BEV,8,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,GV70 GENESIS GV70,BEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,GV70 GENESIS GV70,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,GV80 GENESIS GV80,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,I 30,HEV,531,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,I 30,ICE,1134,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,I 30 N,ICE,9,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,I10,ICE,542,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,I20,HEV,238,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,I20,ICE,1072,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,IONIQ5,BEV,161,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,IONIQ6,BEV,71,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,366,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,451,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,314,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,SANTA FE,HEV,41,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,SANTA FE,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,SANTA FE,PHEV,85,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,2708,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,553,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,490,registrations,eea_hyundai_2024_final.json
+hyundai,RO,country,,2024,2024-01..2024-12,TUCSON IX35 LM,ICE,1,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,BAYON,HEV,104,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,BAYON,ICE,95,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,I 30,HEV,52,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,I10,ICE,359,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,I20,HEV,144,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,I20,ICE,129,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,I20 N,ICE,15,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,50,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,IONIQ6,BEV,8,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,208,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,201,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,22,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,NEXO,FCEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,SANTA FE,PHEV,149,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,187,registrations,eea_hyundai_2024_final.json
+hyundai,SE,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,334,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,BAYON,HEV,18,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,BAYON,ICE,383,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,I 30,HEV,130,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,I 30,ICE,131,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,I 30 N,ICE,11,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,I10,ICE,208,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,I20,HEV,20,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,I20,ICE,344,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,I20 N,ICE,31,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,IONIQ5,BEV,58,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,3,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,IONIQ6,BEV,30,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,123,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,64,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,176,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,SANTA FE,HEV,16,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,SANTA FE,PHEV,19,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,SANTA FE / 1.6 / T-GDI HEV AUT. 4WD,HEV,2,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,STARIA / 2.2. / CRDI AUT. 4WD,ICE,2,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,TUCSON / 1.6 / CRDI HP DCT 4WD 48V N LINE,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,TUCSON / 1.6 / T-GDI DCT 48V,HEV,1,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,TUCSON / 1.6 / T-GDI PHEV AUT. 4WD,PHEV,3,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,609,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,296,registrations,eea_hyundai_2024_final.json
+hyundai,SI,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,92,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,BAYON,ICE,478,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,I 30,HEV,1859,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,I 30,ICE,1537,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,I 30 N,ICE,63,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,I10,ICE,269,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,I20,ICE,1394,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,IONIQ5,BEV,47,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,IONIQ5 N,BEV,6,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,IONIQ6,BEV,32,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,KONA KAUAI,BEV,35,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,KONA KAUAI,HEV,104,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,KONA KAUAI,ICE,576,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,SANTA FE,HEV,105,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,SANTA FE,ICE,43,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,SANTA FE,PHEV,36,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,STARIA,HEV,3,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,STARIA,ICE,38,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,TUCSON IX35,HEV,1062,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,TUCSON IX35,ICE,448,registrations,eea_hyundai_2024_final.json
+hyundai,SK,country,,2024,2024-01..2024-12,TUCSON IX35,PHEV,39,registrations,eea_hyundai_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,GR YARIS 16,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,PROACE,BEV,13,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,PROACE,ICE,348,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,298,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,20,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,SIENNA XLE HYBRID,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,536,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,77,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,972,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,96,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,103,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,2496,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,31,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,122,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,118,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,197,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,63,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA MIRAI,FCEV,1,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,59,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,1345,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,196,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,12,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,1309,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,226,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,2421,registrations,eea_toyota_2024_final.json
+toyota,AT,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,58,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,BZ4X,BEV,1,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,PROACE,BEV,6,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,PROACE,ICE,548,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,923,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,5,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,2879,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,804,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,2189,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,158,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,153,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,5169,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,54,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,185,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,68,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,37,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,59,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA MIRAI,FCEV,4,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,74,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,1426,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,691,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,19,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,3355,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,360,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,4445,registrations,eea_toyota_2024_final.json
+toyota,BE,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,38,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,PROACE,ICE,40,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,34,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,156,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,28,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,724,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,66,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,109,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,1487,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,318,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,4,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,120,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,63,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,84,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER 150 SERIES,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,11,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,388,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,18,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,215,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,501,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,227,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,454,registrations,eea_toyota_2024_final.json
+toyota,BG,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,205,registrations,eea_toyota_2024_final.json
+toyota,CY,country,,2024,2024-01..2024-12,PROACE,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,CY,country,,2024,2024-01..2024-12,RAV4,PHEV,1,registrations,eea_toyota_2024_final.json
+toyota,CY,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,6,registrations,eea_toyota_2024_final.json
+toyota,CY,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,6,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,C-HR,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,GR YARIS,ICE,2,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,PROACE,BEV,13,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,PROACE,ICE,1202,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,2046,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,70,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,885,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,100,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,1126,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,96,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,470,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,3997,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,837,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,63,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,205,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,397,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,302,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,79,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,85,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,2724,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,12,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,302,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,14,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,800,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,727,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,1822,registrations,eea_toyota_2024_final.json
+toyota,CZ,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,534,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,,HEV,2,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,CAMRY LE,ICE,6,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,CAMRY SE,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,COROLLA GR,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,FJ CRUISER,ICE,9,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,HIGHLANDER XLE,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,LAND CRUISER,ICE,19,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,LAND CRUISER 300 SERIES,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,LAND CRUISER I-FORCE MAX,HEV,2,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,PROACE,BEV,28,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,PROACE,ICE,2756,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,2944,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,67,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,PROACE VERSO,BEV,7,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,PROACE VERSO,ICE,14,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,SEQUOIA HYBRID,HEV,3,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,SEQUOIA TRD PRO HYBRID,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA 4-RUNNER,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA AYGO,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA AYGO X,HEV,2,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,18051,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,1550,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,10014,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,946,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,52,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA CARMY,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,17111,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,4,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA COROLLA GR,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,553,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,2100,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,90,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,972,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,538,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER 150,ICE,2,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER 250,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA LANDCRUISER 300,ICE,2,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA MIRAI,FCEV,148,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,198,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,5201,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,6,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,702,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA SEQUOIA,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA SEQUOIA HYBRID,HEV,5,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,219,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,13344,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,1073,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,16507,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,DE,country,,2024,2024-01..2024-12,YARIS CROSS,HEV,5,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,COROLLA CROSS,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,LAND CRUISER 150,ICE,13,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,LAND CRUISER 250,ICE,8,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,PROACE,BEV,41,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,PROACE,ICE,58,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,57,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,8,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,RAV 4,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,SIENNA,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,2540,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,1792,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,796,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,171,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,6,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,2081,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,6,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,5,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,55,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,470,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,21,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,268,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,2208,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,355,registrations,eea_toyota_2024_final.json
+toyota,DK,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,2224,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,COROLLA,HEV,5,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,PROACE,ICE,126,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,97,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,RAV4,HEV,2,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,81,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,382,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,32,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,136,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,1245,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,38,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,46,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,161,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,237,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,8,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA MIRAI,FCEV,5,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,17,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,839,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,62,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,119,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,203,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,51,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,516,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,39,registrations,eea_toyota_2024_final.json
+toyota,EE,country,,2024,2024-01..2024-12,YARIS CROSS,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,LAND CRUISER,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,PROACE,BEV,59,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,PROACE,ICE,1236,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,3949,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,126,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,4103,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,354,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,16422,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,2154,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,110,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,22982,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,133,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,453,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,330,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,708,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,984,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA LANDCRUISER 150,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA LANDCRUISER(1,ICE,30,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,11176,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,8,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,1435,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,12,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,12734,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,2999,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,18329,registrations,eea_toyota_2024_final.json
+toyota,ES,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,45,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,PROACE,BEV,5,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,PROACE,ICE,60,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,39,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,9,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,RAV4,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,93,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,269,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,1087,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,252,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,87,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,3714,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,31,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,12,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,1,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,131,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,652,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,738,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,2298,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,69,registrations,eea_toyota_2024_final.json
+toyota,FI,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,2895,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,PROACE,BEV,834,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,PROACE,ICE,975,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,608,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,26,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,PROACE OR PROACE VERSO,BEV,1,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,14791,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,1354,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,16091,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,1383,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,626,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,13780,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,6,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,38,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,124,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,22,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,56,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA MIRAI,FCEV,530,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,639,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,7238,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,1886,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,13,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,36104,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,2406,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,35195,registrations,eea_toyota_2024_final.json
+toyota,FR,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,267,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,PROACE,BEV,7,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,PROACE,ICE,101,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,PROACE CITY,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,324,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,9,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,2187,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,36,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,2695,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,226,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,2338,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,160,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,21,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,11,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,7,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,266,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,129,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,2,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,4714,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,2079,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,7812,registrations,eea_toyota_2024_final.json
+toyota,GR,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,352,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,C-HR,HEV,2,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,COROLLA,HEV,6,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,PROACE,ICE,19,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,PROACE CITY,ICE,2,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,64,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,RAV 4,PHEV,1,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,120,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,8,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,485,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,32,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,9,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,529,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,554,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,4,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,15,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,12,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,16,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,288,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,48,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,263,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,459,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,722,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,429,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,YARIS,HEV,48,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,YARIS,ICE,7,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,YARIS CROSS,HEV,77,registrations,eea_toyota_2024_final.json
+toyota,HR,country,,2024,2024-01..2024-12,YARIS CROSS,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,PROACE,BEV,4,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,PROACE,ICE,230,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,309,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,12,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,835,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,53,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,2229,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,105,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,400,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,3903,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,619,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,43,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,19,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,211,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,101,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,20,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA MIRAI,FCEV,1,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,41,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHV,PHEV,1,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,1300,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,73,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,5,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,1034,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,598,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,1859,registrations,eea_toyota_2024_final.json
+toyota,HU,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,267,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,PROACE,ICE,37,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,415,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,394,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,1916,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,236,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,117,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,4686,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,21,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,151,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,2866,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,542,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,1763,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,582,registrations,eea_toyota_2024_final.json
+toyota,IE,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,3350,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,IQ,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,PROACE,BEV,69,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,PROACE,ICE,463,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,978,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,20,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,PROACE F-STYLE WAV,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,RAV4,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,RAV4,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,21278,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,249,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,14580,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA C-HR,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,1805,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,8591,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,40,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,617,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,164,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,396,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,9,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA MIRAI,FCEV,1,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,226,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,4688,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,660,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,82,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,31619,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,31,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,36351,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS VAN,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,IT,country,,2024,2024-01..2024-12,YARIS GR,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,PROACE,BEV,1,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,PROACE,ICE,99,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,289,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,34,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,731,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,29,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,87,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,1353,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,2,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,18,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,130,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,152,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,39,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,8,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,1050,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,66,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,337,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,274,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,63,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,1318,registrations,eea_toyota_2024_final.json
+toyota,LT,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,38,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,LAND CRUISER,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,PROACE,ICE,24,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,102,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,89,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,21,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,93,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,3,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,11,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,244,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,15,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,77,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,3,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,7,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,15,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,2,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,80,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,21,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,6,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,276,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,21,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,95,registrations,eea_toyota_2024_final.json
+toyota,LU,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,4,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,LAND CRUISER,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,PROACE,ICE,87,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,PROACE CITY,ICE,5,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,85,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,1,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,36,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,226,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,14,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,57,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,789,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,2,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,11,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,73,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,114,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,14,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,6,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,561,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,42,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,66,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,123,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,30,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,460,registrations,eea_toyota_2024_final.json
+toyota,LV,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,35,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,AYGO X,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,COROLLA,HEV,2,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,376,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,27,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,5,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,33,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,2,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,4,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,253,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,20,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,325,registrations,eea_toyota_2024_final.json
+toyota,MT,country,,2024,2024-01..2024-12,YARIS,HEV,4,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,PROACE,BEV,110,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,9,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,7,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,7871,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,1032,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,2053,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,697,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,9,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,5329,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,2,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,7,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,62,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,7,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,27,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,149,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,663,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,377,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,5503,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,201,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,5660,registrations,eea_toyota_2024_final.json
+toyota,NL,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,74,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,AURIS-TMPL,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,AYGO X,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,C-HR,HEV,2,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,C-HR,ICE,9,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,CAMRY,HEV,3,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,COROLLA,HEV,18,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,COROLLA,ICE,12,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,HIGHLANDER,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,PROACE,ICE,1499,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,PROACE AMF-BRUNS,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,PROACE CITY AMF-BRUNS,ICE,11,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,2888,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,PROACE VERSO,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,PROCITY VERSO,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,RAV4,HEV,8,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,RAV4,ICE,5,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,4400,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,14089,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA C-HR,ICE,4,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,409,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,3090,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,28503,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,5202,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,480,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,1808,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,ICE,4,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,883,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,11,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,136,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,9439,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,159,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,777,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,10,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,8570,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,5132,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,14350,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,1244,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,YARIS,HEV,2,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,YARIS,ICE,2,registrations,eea_toyota_2024_final.json
+toyota,PL,country,,2024,2024-01..2024-12,YARIS CROSS,HEV,4,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,PROACE,BEV,22,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,PROACE,ICE,256,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,114,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,26,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,964,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,259,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,1123,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,358,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,4,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,1664,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,61,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,4,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,7,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,145,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,158,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,530,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,2085,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,107,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,3227,registrations,eea_toyota_2024_final.json
+toyota,PT,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,31,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,PROACE,BEV,10,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,PROACE,ICE,111,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,35,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,18,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,391,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,48,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,1799,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,64,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,284,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,3561,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,203,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,12,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,321,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,23,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,114,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,22,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,2357,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,11,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,500,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,7,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,784,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,164,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,1880,registrations,eea_toyota_2024_final.json
+toyota,RO,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,80,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,PROACE,BEV,27,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,PROACE,ICE,292,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,11,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,448,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,531,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,1217,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,542,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,138,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,6113,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,74,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,103,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,3808,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,945,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,7,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,2750,registrations,eea_toyota_2024_final.json
+toyota,SE,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,3137,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,PROACE,BEV,4,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,PROACE,ICE,53,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,192,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,2,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,26,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,22,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,362,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,41,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,4,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,717,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,131,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA GR 86 /,ICE,1,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,25,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,28,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,30,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,3,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,17,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,244,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,6,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,45,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,3,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,184,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,296,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,573,registrations,eea_toyota_2024_final.json
+toyota,SI,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,385,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,COROLLA,HEV,1,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,PROACE,BEV,2,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,PROACE,ICE,383,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,PROACE CITY VERSO,ICE,884,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,PROACE CITY VERSO ELECTRIC,BEV,13,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA AYGO X,ICE,218,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA BZ4X,BEV,36,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA C-HR,HEV,1143,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA C-HR,PHEV,49,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA CAMRY,HEV,105,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA COROLLA,HEV,2166,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA COROLLA,ICE,364,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA GR 86,ICE,87,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA GR YARIS,ICE,55,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA HIGHLANDER,HEV,209,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER,ICE,128,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA LAND CRUISER (150 SERIES),ICE,28,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA PRIUS PHEV,PHEV,37,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA RAV4,HEV,979,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA RAV4,ICE,65,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA RAV4,PHEV,95,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA SUPRA,ICE,12,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA YARIS,HEV,652,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA YARIS,ICE,307,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,HEV,1048,registrations,eea_toyota_2024_final.json
+toyota,SK,country,,2024,2024-01..2024-12,TOYOTA YARIS CROSS,ICE,146,registrations,eea_toyota_2024_final.json

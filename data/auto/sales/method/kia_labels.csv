@@ -1,0 +1,23 @@
+kind,label,code,level
+market,Korea,KR,country
+market,U.S.A,US,country
+market,Canada,CA,country
+market,Mexico,MX,country
+market,*Europe,europe,region
+market,Eastern Europe,eastern_europe,region
+market,Latin America,latin_america,region
+market,Middle East,middle_east,region
+market,Africa,africa,region
+market,Asia Pacific,asia_pacific,region
+market,India,IN,country
+market,China,CN,country
+plant,Korea Plants,KR,country
+plant,U.S. Plant,US,country
+plant,Slovakia Plant,SK,country
+plant,Mexico Plant,MX,country
+plant,*Russia Plant (HMMR),RU,country
+plant,China Plant,CN,country
+plant,India Plant,IN,country
+plant,HMGICs Plant,SG,country
+plant,CKD,ckd,kit
+plant,Special Vehicle,special_vehicle,other
