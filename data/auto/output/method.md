@@ -23,18 +23,49 @@ the operating lifetime, per-vehicle values in kgCO2e.
 
 ## Verification
 
-The pipeline reproduces the previously published EU27 2024 result
-(`archive/data/published/lifetime_results.json`) to a relative error below 2 × 10⁻⁷ on every
-company × scenario total, and every destination × powertrain cell agrees to rounding.
-Destination parameters (distance, fleet intensity, grid, lifetime, tiers) match
-`archive/data/published/destination_inputs.json` exactly for all 27 markets. Crossover years
-agree with the archived run on every matched cell (3,191 of 3,321; the rest differ only in
-the rounding used to match them) and the lifetime ±3-year sensitivities agree to 3 × 10⁻⁷.
+**Tests** (`tests/test_model.py`, run with `.venv/bin/python -m pytest`): every ICE/HEV cell
+satisfies the closed-form geometric-series sum from its own published year-0 values; the
+annual flow summed over years equals the cell totals; company totals equal the country and
+powertrain sums; processed sales totals equal the snapshot totals; covered + withheld =
+registrations.
 
-One deliberate deviation: the proxied-distance sensitivity here holds the benchmark per
-vehicle fixed (distance cancels in CO2 per car, as the archived run's own warning text says)
-and scales only the product side; the archived numbers let the benchmark move as well, so
-they are 13–24 % wider and are not reproduced.
+**Independent re-derivation (2026-09-04).** A reviewer re-derived the Honda EU27 cohort from
+the processed inputs with code written from the whitepaper before reading the scripts. Fed
+the pipeline's destination parameters, the independent engine reproduced all 621 Honda cells
+to 6 × 10⁻⁷ and the cohort totals to 3 × 10⁻⁹ — the TI equations, `t = 0..T−1` convention,
+unit chain and sign are implemented as documented. The review found three input-side defects,
+all fixed the same day:
+
+1. Distance per car divided the latest traffic observation by the latest *stock*
+   observation, which for LT, BE, IE and EE were different years. Now the stock of the traffic
+   year is used. LT moved +20.9 % (10,110 → 12,224 km/yr), BE +5.2 %, IE +5.4 %, EE +0.4 %,
+   and the EU-average proxy the 13 tier-C markets use +0.6 %.
+2. The real-world sensitivity never used the documented diesel end (1.171); the low variant
+   moved only HEV. It now applies the documented range 1.171–1.211 to both ICE and HEV.
+3. The BEV crossover label read "before sale year" for cells that in fact never cross
+   because the grid decarbonises faster than the fleet benchmark; the two cases are now named.
+
+**Relation to the archived published result** (`archive/data/published/lifetime_results.json`).
+Before fix 1 the pipeline reproduced the archived Toyota and Hyundai totals to 2 × 10⁻⁷ (the
+archived run carried the same year mismatch). After it, totals are 1–13 % more negative:
+Toyota S1 −1.40 → −1.59 MtCO₂e, S2 −5.96 → −6.15, S3 −13.95 → −14.14; Hyundai S1 −1.49 →
+−1.57, S2 −3.72 → −3.80, S3 −7.78 → −7.86. The archive remains the regression baseline for
+the *engine* (the pipeline reproduces it exactly when fed the archived parameters); it is no
+longer the baseline for the *inputs*.
+
+Two further deliberate deviations from the archive: the proxied-distance sensitivity holds
+the benchmark per vehicle fixed (distance cancels in CO2 per car) and scales only the product
+side, so it is narrower than the archived band; and the real-world range is applied as a
+replacement of the central factor, never on top of it.
+
+Open review items for the project lead (not code defects): LU's fleet intensity (391 g/km)
+is flagged implausible and tiered C yet still drives a positive LU result — withhold or report
+separately; two markets (BG, PL) show a *rising* observed per-car CO2 trend, so their S1
+benchmark grows (now flagged `OBSERVED_INCREASE` in `emission_targets_eu27.csv`); the
+guideline's segment-intensity ratio is not applied (all-car fleet average, conservative for
+crossover-heavy portfolios); S2 grid is held flat at 2024 intensity because the EU power
+target is already met on an absolute basis, which makes BEV S2 lower than BEV S1; age bands
+use the 1-Jan-2025 partition while stock uses 2024.
 
 ## Run order
 

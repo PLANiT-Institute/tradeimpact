@@ -40,7 +40,7 @@ powertrain (`source_id` `eea_co2_monitoring_2024`). Real-world correction factor
 
 | processed file | script | content |
 |---|---|---|
-| `vehicle_technology_eea_2024.csv` | `script/auto/vehicle_technology/extract_eea_certified.py` | 177 company × model × powertrain rows (Toyota, Hyundai, EU27 2024); 15 rows carry no certified CO2 value |
+| `vehicle_technology_eea_2024.csv` | `script/auto/vehicle_technology/extract_eea_certified.py` | one row per company × destination × model × powertrain (Toyota, Honda, Hyundai, Kia; EU27 2024); rows without a certified value are kept with an empty value and withheld downstream |
 
 ## Sources
 
@@ -56,8 +56,11 @@ powertrain (`source_id` `eea_co2_monitoring_2024`). Real-world correction factor
 ## Processing method
 
 Scripts in `script/auto/vehicle_technology/`; output `processed/vehicle_technology.csv`.
-Certified values are corrected to real-world **once**, at processing time, with the factor
-and its source recorded per row — never inside the model scripts.
+Certified values stay certified in this dataset. The real-world correction is applied
+**once**, in the model step (`script/auto/model/build_ti.py`), reading the factor and its
+range per powertrain from `method/real_world_correction.csv`; the factor used is recorded on
+every result row (`real_world_factor` in `ti_by_model_eu27.csv`), so it can never be applied
+twice.
 
 ## Rules
 

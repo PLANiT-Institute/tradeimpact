@@ -20,7 +20,7 @@ Rules: [`sales/method/method.md`](../../data/auto/sales/method/method.md).
 
 | File | Status | Rows |
 |---|---|---|
-| `sales/processed/sales_eea_eu27_2024.csv` | exists | 1,286 — Toyota and Hyundai EU27 first registrations, 2024 |
+| `sales/processed/sales_eea_eu27_2024.csv` | exists | 2,126 — Toyota, Honda, Hyundai and Kia EU27 first registrations, 2024 |
 | `sales/processed/sales_kia_ir_2026.csv` | exists | 287 — Kia IR retail sales, 2026 year to date |
 | `sales/processed/sales_hyundai_plant_2025.csv` | exists | 113 — Hyundai IR plant-side sales, 2025 |
 
@@ -126,7 +126,7 @@ Rules: [`vehicle_technology/method/method.md`](../../data/auto/vehicle_technolog
 
 | File | Status | Rows |
 |---|---|---|
-| `vehicle_technology/processed/vehicle_technology_eea_2024.csv` | exists | 1,286 — certified values per company × destination × model × powertrain, 2024 |
+| `vehicle_technology/processed/vehicle_technology_eea_2024.csv` | exists | 2,126 — certified values per company × destination × model × powertrain, four brands, 2024 |
 | `vehicle_technology/method/real_world_correction.csv` | exists | 3 — the real-world correction factor per powertrain, with derivation and `source_id` |
 
 | Column | Type | Unit | Allowed values |
@@ -164,11 +164,13 @@ correction separately. Tracked in [`../tracker.md`](../tracker.md) §6.
 | `ti_by_model_eu27.csv` | exists, 3,321 rows | company + destination + model + powertrain + scenario + cohort_year | `units`, `lifetime_years`, `vkt_km`, `vkt_tier`, `real_world_factor`, `e_prod_year0_kgco2e`, `e_ref_year0_kgco2e`, `ti_per_vehicle_kgco2e`, `ti_tco2e` |
 | `ti_annual_eu27.csv` | exists, 150 rows | company + scenario + t | `calendar_year`, `surviving_vehicles`, `ti_tco2e` — the annual TI flow of the cohort |
 | `ti_withheld_eu27.csv` | exists, 179 rows | company + destination + model + powertrain | `units`, `reason` — every cell that produced no result, with its unit count (`N-02`) |
-| `ti_country_eu27.csv` | planned (`aggregate_country.py`) | company + destination + scenario | `ti_tco2e`, units covered and withheld, tiers |
-| `ti_powertrain_eu27.csv` | planned | company + powertrain + scenario | as above |
-| `ti_company_eu27.csv` | planned | company + scenario | `ti_tco2e` plus the decomposition check |
+| `ti_country_eu27.csv` | exists (`aggregate_country.py`) | company + destination + scenario | `units`, `ti_tco2e`, `ti_per_vehicle_kgco2e`, `direction` |
+| `ti_powertrain_eu27.csv` | exists | company + powertrain + scenario | as above |
+| `ti_company_eu27.csv` | exists | company + scenario | covered/withheld units, `ti_tco2e`, per-vehicle, `direction`, `decomposition_identity_holds` |
+| `ti_crossover_eu27.csv` | exists (`build_sensitivity.py`) | as `ti_by_model` | `crossover_year` (years after sale), `crossover_calendar_year`, `reason`; the `C-05` range treatment waits on `B-07` |
+| `ti_sensitivity_eu27.csv` | exists (`build_sensitivity.py`) | company + scenario + dimension + variant | `parameter`, `ti_tco2e` — lifetime ±3 y, real-world factor range, proxied-distance quartiles |
+| `ti_data_quality_eu27.csv` | exists (`build_data_quality.py`) | company | analysis level, benchmark method, covered/withheld units, `tier_c_share`, `directional_only`, central lifetime, markets by tier, withheld reasons, warnings |
 | `target_set.csv` | planned (ST01) | company + destination + cohort_year | segment, lifetime and its bracket, criteria met, exclusion reason |
-| `crossover` per cell | planned (ST09) | as `ti_by_model` | The year the annual gap changes sign, and the `C-05` range treatment once `B-07` closes |
 
 Sign convention throughout: positive TI is displacement relative to the importing country's
 benchmark, negative TI is lock-in. Every output carries all three scenarios (`N-05`); no

@@ -11,7 +11,11 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "ruff>=0.6",
+    "pytest>=8.0",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 # Runnable scripts only; nothing is installed as a package.
 [tool.uv]

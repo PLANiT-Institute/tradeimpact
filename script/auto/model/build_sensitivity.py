@@ -80,7 +80,15 @@ def crossover(
         if abs(a - b) < 1e-12:
             return None, "r_fleet == r_power: parallel trajectories, no finite crossover"
         t = math.log(eta_g0 / i0) / math.log(a / b)
-        return (t, None) if t >= 0 else (None, "crossover before sale year")
+        if t >= 0:
+            return t, None
+        # t* < 0 has two different meanings for a BEV, so name the right one.
+        if eta_g0 > i0:
+            return None, "crossover before sale year (product already above benchmark at t=0)"
+        return None, (
+            "never crosses: below benchmark at sale and the grid decarbonises at least as fast "
+            "as the fleet benchmark"
+        )
     if rf <= 0:
         return None, "r_fleet <= 0: benchmark non-declining, no crossover"
     if e_prod0 <= 0:
@@ -98,12 +106,12 @@ def main() -> None:
     tech = {
         (r["company"], r["destination"], r["model"], r["powertrain"]): r for r in read_csv(TECH)
     }
-    factor = {r["powertrain"]: float(r["factor"]) for r in read_csv(CORRECTION)}
-    rw_low, rw_high = (
-        min(v for k, v in factor.items() if k != "BEV"),
-        max(v for k, v in factor.items() if k != "BEV"),
-    )
-    # The two combustion factors are the diesel-midpoint and petrol ends of the OBFCM gap.
+    correction = read_csv(CORRECTION)
+    factor = {r["powertrain"]: float(r["factor"]) for r in correction}
+    # The documented OBFCM range per powertrain (diesel end to petrol end for combustion;
+    # BEV has no published gap and stays at 1.0 at both ends).
+    factor_low = {r["powertrain"]: float(r["factor_low"]) for r in correction}
+    factor_high = {r["powertrain"]: float(r["factor_high"]) for r in correction}
     params = {r["country"]: r for r in read_csv(PARAMS)}
     rates: dict[tuple[str, str], tuple[float, float]] = {}
     for r in read_csv(REFERENCE):
@@ -203,18 +211,23 @@ def main() -> None:
         ("lifetime", "central", "T_c", {}),
         ("lifetime", "minus", f"T_c - {LIFETIME_DELTA_Y}", {"life_delta": -LIFETIME_DELTA_Y}),
         ("lifetime", "plus", f"T_c + {LIFETIME_DELTA_Y}", {"life_delta": LIFETIME_DELTA_Y}),
-        ("realworld", "central", "ICE 1.191, HEV 1.211, BEV 1.0", {}),
+        (
+            "realworld",
+            "central",
+            ", ".join(f"{k} {v}" for k, v in sorted(factor.items())),
+            {},
+        ),
         (
             "realworld",
             "low",
-            f"ICE and HEV {rw_low}, BEV 1.0",
-            {"rw": {"ICE": rw_low, "HEV": rw_low, "BEV": 1.0}},
+            ", ".join(f"{k} {v}" for k, v in sorted(factor_low.items())),
+            {"rw": factor_low},
         ),
         (
             "realworld",
             "high",
-            f"ICE and HEV {rw_high}, BEV 1.0",
-            {"rw": {"ICE": rw_high, "HEV": rw_high, "BEV": 1.0}},
+            ", ".join(f"{k} {v}" for k, v in sorted(factor_high.items())),
+            {"rw": factor_high},
         ),
         ("vkt_proxy", "central", "EU stock-weighted mean for tier-C markets", {}),
         ("vkt_proxy", "low", "lower quartile of measured distances", {"vkt_key": "vkt_low_km"}),

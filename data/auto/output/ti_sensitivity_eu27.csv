@@ -1,109 +1,109 @@
 company,scenario,dimension,variant,parameter,ti_tco2e
-honda,S1,lifetime,central,T_c,-135468.9
-honda,S1,lifetime,minus,T_c - 3,-94262.4
-honda,S1,lifetime,plus,T_c + 3,-184205.9
-honda,S1,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-135468.9
-honda,S1,realworld,high,"ICE and HEV 1.211, BEV 1.0",-135850.5
-honda,S1,realworld,low,"ICE and HEV 1.191, BEV 1.0",-116123.8
-honda,S1,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-135468.9
-honda,S1,vkt_proxy,high,upper quartile of measured distances,-213899.9
-honda,S1,vkt_proxy,low,lower quartile of measured distances,-36686.0
-honda,S2,lifetime,central,T_c,-354768.7
-honda,S2,lifetime,minus,T_c - 3,-257831.9
-honda,S2,lifetime,plus,T_c + 3,-464347.9
-honda,S2,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-354768.7
-honda,S2,realworld,high,"ICE and HEV 1.211, BEV 1.0",-355150.3
-honda,S2,realworld,low,"ICE and HEV 1.191, BEV 1.0",-335423.6
-honda,S2,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-354768.7
-honda,S2,vkt_proxy,high,upper quartile of measured distances,-433416.0
-honda,S2,vkt_proxy,low,lower quartile of measured distances,-255713.4
-honda,S3,lifetime,central,T_c,-740128.3
-honda,S3,lifetime,minus,T_c - 3,-566253.9
-honda,S3,lifetime,plus,T_c + 3,-921609.7
-honda,S3,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-740128.3
-honda,S3,realworld,high,"ICE and HEV 1.211, BEV 1.0",-740509.8
-honda,S3,realworld,low,"ICE and HEV 1.191, BEV 1.0",-720783.2
-honda,S3,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-740128.3
-honda,S3,vkt_proxy,high,upper quartile of measured distances,-818541.7
-honda,S3,vkt_proxy,low,lower quartile of measured distances,-641367.6
-hyundai,S1,lifetime,central,T_c,-1487564.8
-hyundai,S1,lifetime,minus,T_c - 3,-1025867.0
-hyundai,S1,lifetime,plus,T_c + 3,-2031777.9
-hyundai,S1,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-1487564.8
-hyundai,S1,realworld,high,"ICE and HEV 1.211, BEV 1.0",-1601296.9
-hyundai,S1,realworld,low,"ICE and HEV 1.191, BEV 1.0",-1391669.5
-hyundai,S1,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-1487564.8
-hyundai,S1,vkt_proxy,high,upper quartile of measured distances,-2261256.1
-hyundai,S1,vkt_proxy,low,lower quartile of measured distances,-513110.3
-hyundai,S2,lifetime,central,T_c,-3717233.8
-hyundai,S2,lifetime,minus,T_c - 3,-2677711.5
-hyundai,S2,lifetime,plus,T_c + 3,-4892895.9
-hyundai,S2,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-3717233.8
-hyundai,S2,realworld,high,"ICE and HEV 1.211, BEV 1.0",-3830965.9
-hyundai,S2,realworld,low,"ICE and HEV 1.191, BEV 1.0",-3621338.5
-hyundai,S2,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-3717233.8
-hyundai,S2,vkt_proxy,high,upper quartile of measured distances,-4493483.8
-hyundai,S2,vkt_proxy,low,lower quartile of measured distances,-2739556.6
-hyundai,S3,lifetime,central,T_c,-7775248.9
-hyundai,S3,lifetime,minus,T_c - 3,-5924076.9
-hyundai,S3,lifetime,plus,T_c + 3,-9706830.1
-hyundai,S3,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-7775248.9
-hyundai,S3,realworld,high,"ICE and HEV 1.211, BEV 1.0",-7888981.0
-hyundai,S3,realworld,low,"ICE and HEV 1.191, BEV 1.0",-7679353.6
-hyundai,S3,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-7775248.9
-hyundai,S3,vkt_proxy,high,upper quartile of measured distances,-8548074.7
-hyundai,S3,vkt_proxy,low,lower quartile of measured distances,-6801884.6
-kia,S1,lifetime,central,T_c,-1348180.9
-kia,S1,lifetime,minus,T_c - 3,-931748.0
-kia,S1,lifetime,plus,T_c + 3,-1841054.8
-kia,S1,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-1348180.9
-kia,S1,realworld,high,"ICE and HEV 1.211, BEV 1.0",-1460696.0
-kia,S1,realworld,low,"ICE and HEV 1.191, BEV 1.0",-1267803.8
-kia,S1,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-1348180.9
-kia,S1,vkt_proxy,high,upper quartile of measured distances,-2073551.5
-kia,S1,vkt_proxy,low,lower quartile of measured distances,-434585.8
-kia,S2,lifetime,central,T_c,-3403512.7
-kia,S2,lifetime,minus,T_c - 3,-2459208.7
-kia,S2,lifetime,plus,T_c + 3,-4472710.5
-kia,S2,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-3403512.7
-kia,S2,realworld,high,"ICE and HEV 1.211, BEV 1.0",-3516027.8
-kia,S2,realworld,low,"ICE and HEV 1.191, BEV 1.0",-3323135.6
-kia,S2,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-3403512.7
-kia,S2,vkt_proxy,high,upper quartile of measured distances,-4132134.0
-kia,S2,vkt_proxy,low,lower quartile of measured distances,-2485823.4
-kia,S3,lifetime,central,T_c,-7156971.9
-kia,S3,lifetime,minus,T_c - 3,-5473271.0
-kia,S3,lifetime,plus,T_c + 3,-8912874.8
-kia,S3,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-7156971.9
-kia,S3,realworld,high,"ICE and HEV 1.211, BEV 1.0",-7269487.0
-kia,S3,realworld,low,"ICE and HEV 1.191, BEV 1.0",-7076594.7
-kia,S3,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-7156971.9
-kia,S3,vkt_proxy,high,upper quartile of measured distances,-7881237.1
-kia,S3,vkt_proxy,low,lower quartile of measured distances,-6244769.0
-toyota,S1,lifetime,central,T_c,-1401786.6
-toyota,S1,lifetime,minus,T_c - 3,-769826.7
-toyota,S1,lifetime,plus,T_c + 3,-2173955.7
-toyota,S1,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-1401786.6
-toyota,S1,realworld,high,"ICE and HEV 1.211, BEV 1.0",-1493886.5
-toyota,S1,realworld,low,"ICE and HEV 1.191, BEV 1.0",-1110677.5
-toyota,S1,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-1401786.6
-toyota,S1,vkt_proxy,high,upper quartile of measured distances,-2870776.2
-toyota,S1,vkt_proxy,low,lower quartile of measured distances,448387.3
-toyota,S2,lifetime,central,T_c,-5964516.1
-toyota,S2,lifetime,minus,T_c - 3,-4195318.5
-toyota,S2,lifetime,plus,T_c + 3,-7977241.1
-toyota,S2,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-5964516.1
-toyota,S2,realworld,high,"ICE and HEV 1.211, BEV 1.0",-6056616.1
-toyota,S2,realworld,low,"ICE and HEV 1.191, BEV 1.0",-5673407.0
-toyota,S2,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-5964516.1
-toyota,S2,vkt_proxy,high,upper quartile of measured distances,-7434349.9
-toyota,S2,vkt_proxy,low,lower quartile of measured distances,-4113279.0
-toyota,S3,lifetime,central,T_c,-13948085.9
-toyota,S3,lifetime,minus,T_c - 3,-10639151.0
-toyota,S3,lifetime,plus,T_c + 3,-17399113.9
-toyota,S3,realworld,central,"ICE 1.191, HEV 1.211, BEV 1.0",-13948085.9
-toyota,S3,realworld,high,"ICE and HEV 1.211, BEV 1.0",-14040185.8
-toyota,S3,realworld,low,"ICE and HEV 1.191, BEV 1.0",-13656976.7
-toyota,S3,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-13948085.9
-toyota,S3,vkt_proxy,high,upper quartile of measured distances,-15416961.0
-toyota,S3,vkt_proxy,low,lower quartile of measured distances,-12098056.1
+honda,S1,lifetime,central,T_c,-144149.6
+honda,S1,lifetime,minus,T_c - 3,-101516.9
+honda,S1,lifetime,plus,T_c + 3,-194312.0
+honda,S1,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-144149.6
+honda,S1,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-144535.1
+honda,S1,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-104796.5
+honda,S1,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-144149.6
+honda,S1,vkt_proxy,high,upper quartile of measured distances,-217859.5
+honda,S1,vkt_proxy,low,lower quartile of measured distances,-70014.8
+honda,S2,lifetime,central,T_c,-363471.6
+honda,S2,lifetime,minus,T_c - 3,-265101.6
+honda,S2,lifetime,plus,T_c + 3,-474484.0
+honda,S2,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-363471.6
+honda,S2,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-363857.1
+honda,S2,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-324118.4
+honda,S2,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-363471.6
+honda,S2,vkt_proxy,high,upper quartile of measured distances,-437384.7
+honda,S2,vkt_proxy,low,lower quartile of measured distances,-289132.3
+honda,S3,lifetime,central,T_c,-748802.1
+honda,S3,lifetime,minus,T_c - 3,-573503.5
+honda,S3,lifetime,plus,T_c + 3,-931706.9
+honda,S3,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-748802.1
+honda,S3,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-749187.6
+honda,S3,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-709448.9
+honda,S3,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-748802.1
+honda,S3,vkt_proxy,high,upper quartile of measured distances,-822495.4
+honda,S3,vkt_proxy,low,lower quartile of measured distances,-674683.9
+hyundai,S1,lifetime,central,T_c,-1572170.6
+hyundai,S1,lifetime,minus,T_c - 3,-1096794.8
+hyundai,S1,lifetime,plus,T_c + 3,-2130044.5
+hyundai,S1,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-1572170.6
+hyundai,S1,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-1686694.8
+hyundai,S1,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-1264654.5
+hyundai,S1,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-1572170.6
+hyundai,S1,vkt_proxy,high,upper quartile of measured distances,-2299289.6
+hyundai,S1,vkt_proxy,low,lower quartile of measured distances,-840859.3
+hyundai,S2,lifetime,central,T_c,-3802392.8
+hyundai,S2,lifetime,minus,T_c - 3,-2749039.0
+hyundai,S2,lifetime,plus,T_c + 3,-4991886.5
+hyundai,S2,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-3802392.8
+hyundai,S2,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-3916917.0
+hyundai,S2,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-3494876.8
+hyundai,S2,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-3802392.8
+hyundai,S2,vkt_proxy,high,upper quartile of measured distances,-4531916.5
+hyundai,S2,vkt_proxy,low,lower quartile of measured distances,-3068663.0
+hyundai,S3,lifetime,central,T_c,-7859632.8
+hyundai,S3,lifetime,minus,T_c - 3,-5994834.3
+hyundai,S3,lifetime,plus,T_c + 3,-9804823.8
+hyundai,S3,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-7859632.8
+hyundai,S3,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-7974157.0
+hyundai,S3,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-7552116.7
+hyundai,S3,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-7859632.8
+hyundai,S3,vkt_proxy,high,upper quartile of measured distances,-8585938.3
+hyundai,S3,vkt_proxy,low,lower quartile of measured distances,-7129139.7
+kia,S1,lifetime,central,T_c,-1441024.3
+kia,S1,lifetime,minus,T_c - 3,-1009837.8
+kia,S1,lifetime,plus,T_c + 3,-1948625.8
+kia,S1,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-1441024.3
+kia,S1,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-1554418.0
+kia,S1,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-1165588.6
+kia,S1,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-1441024.3
+kia,S1,vkt_proxy,high,upper quartile of measured distances,-2122731.2
+kia,S1,vkt_proxy,low,lower quartile of measured distances,-755386.9
+kia,S2,lifetime,central,T_c,-3497090.8
+kia,S2,lifetime,minus,T_c - 3,-2537820.5
+kia,S2,lifetime,plus,T_c + 3,-4581254.9
+kia,S2,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-3497090.8
+kia,S2,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-3610484.6
+kia,S2,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-3221655.1
+kia,S2,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-3497090.8
+kia,S2,vkt_proxy,high,upper quartile of measured distances,-4181852.8
+kia,S2,vkt_proxy,low,lower quartile of measured distances,-2808380.8
+kia,S3,lifetime,central,T_c,-7249491.1
+kia,S3,lifetime,minus,T_c - 3,-5551116.7
+kia,S3,lifetime,plus,T_c + 3,-9020041.7
+kia,S3,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-7249491.1
+kia,S3,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-7362884.8
+kia,S3,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-6974055.4
+kia,S3,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-7249491.1
+kia,S3,vkt_proxy,high,upper quartile of measured distances,-7930159.2
+kia,S3,vkt_proxy,low,lower quartile of measured distances,-6564898.5
+toyota,S1,lifetime,central,T_c,-1590464.7
+toyota,S1,lifetime,minus,T_c - 3,-928972.3
+toyota,S1,lifetime,plus,T_c + 3,-2392160.2
+toyota,S1,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-1590464.7
+toyota,S1,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-1683217.0
+toyota,S1,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-910556.7
+toyota,S1,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-1590464.7
+toyota,S1,vkt_proxy,high,upper quartile of measured distances,-2971028.5
+toyota,S1,vkt_proxy,low,lower quartile of measured distances,-201941.2
+toyota,S2,lifetime,central,T_c,-6153374.3
+toyota,S2,lifetime,minus,T_c - 3,-4354592.1
+toyota,S2,lifetime,plus,T_c + 3,-8195683.8
+toyota,S2,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-6153374.3
+toyota,S2,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-6246126.6
+toyota,S2,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-5473466.3
+toyota,S2,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-6153374.3
+toyota,S2,vkt_proxy,high,upper quartile of measured distances,-7534731.5
+toyota,S2,vkt_proxy,low,lower quartile of measured distances,-4764052.8
+toyota,S3,lifetime,central,T_c,-14136699.4
+toyota,S3,lifetime,minus,T_c - 3,-10798248.7
+toyota,S3,lifetime,plus,T_c + 3,-17617237.0
+toyota,S3,realworld,central,"BEV 1.0, HEV 1.211, ICE 1.191",-14136699.4
+toyota,S3,realworld,high,"BEV 1.0, HEV 1.211, ICE 1.211",-14229451.6
+toyota,S3,realworld,low,"BEV 1.0, HEV 1.171, ICE 1.171",-13456791.3
+toyota,S3,vkt_proxy,central,EU stock-weighted mean for tier-C markets,-14136699.4
+toyota,S3,vkt_proxy,high,upper quartile of measured distances,-15517155.7
+toyota,S3,vkt_proxy,low,lower quartile of measured distances,-12748283.9
