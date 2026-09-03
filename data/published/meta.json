@@ -57,8 +57,8 @@
     "vkt": {}
   },
   "target_sources_sha256": {
-    "CAP_Target_Companies_Draft.xlsx": "4e5041709a98dead6ea5d1bbf51e2cbf0d51cd3c327edaf4de216346f1a624be",
-    "TI_CaseStudy_Target_Companies.xlsx": "883e5e5e4aeb3009e02e6e17771dc85897d3a2d668ced366be0e3220055fb9e4"
+    "data/workbooks/CAP_Target_Companies_Draft.xlsx": "4e5041709a98dead6ea5d1bbf51e2cbf0d51cd3c327edaf4de216346f1a624be",
+    "data/workbooks/TI_CaseStudy_Target_Companies.xlsx": "883e5e5e4aeb3009e02e6e17771dc85897d3a2d668ced366be0e3220055fb9e4"
   },
   "workbook": "TI_Data_Workbook_v0.1.xlsx",
   "workbook_sha256": "dfdbdb7181185336b787f28dfea69fec9f95e0eed67e144d3a978d697a59a00d"

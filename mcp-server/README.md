@@ -27,4 +27,4 @@ tradeimpact-mcp --transport streamable-http --host 127.0.0.1 --port 8000
 Set `TRADEIMPACT_DATA_DIR` if `data/published` is elsewhere. Remote deployment requires
 authentication, rate limits, observability, and source-licence review.
 
-The query flow and complete tool/resource contract are documented in [`../docs/MCP.md`](../docs/MCP.md).
+The query flow and complete tool/resource contract are documented in [`../docs/mcp.md`](../docs/mcp.md).

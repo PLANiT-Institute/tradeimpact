@@ -5,7 +5,7 @@
 >
 > 사이클마다 (1) 직전 사이클이 남긴 과제 확인 → (2) 하나 구현·분석 → (3) pytest ·
 > `check_published.py` · web 빌드로 검증 → (4) 발견과 다음 과제를 여기에 기록.
-> 상태 총괄은 [PROJECT_STATUS.md](PROJECT_STATUS.md), 설계는 [REBUILD_SPEC.md](REBUILD_SPEC.md).
+> 상태 총괄은 [project-status.md](project-status.md), 설계는 [rebuild-spec.md](rebuild-spec.md).
 
 ---
 
@@ -448,11 +448,11 @@ const TDZ는 타입 오류가 아니다. 사이클 규칙의 "브라우저로 �
 프로덕션 배포 요청받아 실행. **선택된 경로가 존재하지 않았다.** Vercel 프로젝트
 `plan-i-t/tradeimpact`의 `link`가 null이고 GitHub deployments 0건 — Git 연결이 없어
 `git push`는 아무것도 배포하지 않는다. 기존 프로덕션 7건 전부 CLI 배포였다.
-DEPLOY.md 첫 줄이 "Import this GitHub repository"라 그렇게 믿고 있었던 것.
+docs/deploy.md 첫 줄이 "Import this GitHub repository"라 그렇게 믿고 있었던 것.
 
 푸시(커밋 9개)는 완료했고, 라이브는 `npm run package:deploy && vercel --prod`로 반영
 (33초, target production). 별칭 `tradeimpact.vercel.app` 갱신. 4개 페이지 curl 200 +
-새 문구 확인. DEPLOY.md를 실제 경로로 교정해 커밋(`a29712f`).
+새 문구 확인. docs/deploy.md를 실제 경로로 교정해 커밋(`a29712f`).
 
 ---
 

@@ -29,14 +29,33 @@ estimate.
 | Piece | Where | Role |
 |---|---|---|
 | Calculation engine | [`ti-framework/`](ti-framework/) | S1/S2/S3 lifetime cohort engine with country and product decomposition |
-| Exported-product contract | [`docs/PRODUCT_CONTRACT.md`](docs/PRODUCT_CONTRACT.md) | Required dimensions, target hierarchy, readiness gate, and publication rules |
+| Exported-product contract | [`docs/product-contract.md`](docs/product-contract.md) | Required dimensions, target hierarchy, readiness gate, and publication rules |
 | Data pipeline | [`data-pipeline/`](data-pipeline/) | Reproducible source snapshots and published cohort/pathway/readiness JSON |
 | Automotive comparison | [`data-pipeline/adapters/automotive_eea.py`](data-pipeline/adapters/automotive_eea.py) | 2024 Toyota- and Hyundai-brand EU27 registrations on one destination, product, and powertrain boundary |
 | Destination inputs | [`data-pipeline/adapters/destination_eu.py`](data-pipeline/adapters/destination_eu.py) | Distance, operating life, fleet baseline, grid intensity, and S1/S2/S3 pathways per EU27 market, each with a tier and a stated derivation |
 | Lifetime run | [`data-pipeline/lifetime_run.py`](data-pipeline/lifetime_run.py) | Joins observed cohorts to destination inputs, runs the engine, and writes the report bundle |
 | Web application | [`web/`](web/) | Lifetime result, decomposition, destination exposure, sensitivity, target hierarchy, and data gaps |
 | MCP server | [`mcp-server/`](mcp-server/) | Read-only lifetime-result, destination-input, cohort, pathway, readiness, and source queries |
-| Whitepaper and automotive method | [`Whitepaper & Guidelines/`](Whitepaper%20%26%20Guidelines/) | Theory, equations, scenario architecture, and sector-specific rules |
+| Whitepaper and automotive method | [`methodology/`](methodology/) | Theory, equations, scenario architecture, and sector-specific rules |
+
+## Repository layout
+
+```text
+methodology/     whitepaper + sector technical guidelines (methodology truth source)
+theory/          SYNC.md — theory ↔ code ↔ test contract, checked in CI
+claude-docs/     research governance: charter, phases, stages, process, tracker
+ti-framework/    calculation engine (Python package, tests, workbook inputs)
+data-pipeline/   source adapters, hash-pinned snapshots, dataset/db builders
+data/
+  workbooks/     hand-maintained target-company workbooks
+  published/     published JSON dataset (web + MCP read this)
+  db/            generated SQLite research database + HTML dashboard
+  TI_integrated_audit.xlsx   generated integrated audit workbook
+web/             public Next.js application
+mcp-server/      read-only MCP query server
+docs/            specs, status, analysis log, deployment notes
+scripts/         audit workbook builder, theory-sync check
+```
 
 The first comparison contains 803,094 Toyota-brand and 429,936 Hyundai-brand 2024 EU27 first
 registrations, resolved into 1,286 destination × commercial-name × powertrain evidence rows. It
@@ -108,4 +127,4 @@ tradeimpact-mcp --transport stdio
 tradeimpact-mcp --transport streamable-http --host 127.0.0.1 --port 8000
 ```
 
-Deployment notes are in [`DEPLOY.md`](DEPLOY.md). Code is published under GNU GPL v3.
+Deployment notes are in [`docs/deploy.md`](docs/deploy.md). Code is published under GNU GPL v3.

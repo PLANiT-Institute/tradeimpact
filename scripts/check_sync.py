@@ -20,8 +20,8 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 SYNC = REPO / "theory" / "SYNC.md"
 DOCS = [
-    REPO / "Whitepaper & Guidelines" / "TI_Whitepaper_v1.5.md",
-    REPO / "Whitepaper & Guidelines" / "TI_Automotive_Technical_Guideline_v1.8.md",
+    REPO / "methodology" / "TI_Whitepaper_v1.5.md",
+    REPO / "methodology" / "TI_Automotive_Technical_Guideline_v1.8.md",
     REPO / "ti-framework" / "NOTES.md",
 ]
 ENGINE = REPO / "ti-framework" / "ti_framework"

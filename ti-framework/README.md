@@ -4,7 +4,7 @@ The lifetime engine is the core of Trade Impact. `ti_framework.alignment.TradeIm
 serves the observed product cohorts, destination target hierarchy, calculation readiness, and
 sources required to use it without hidden assumptions. The older exact-metric alignment queries
 remain a supporting evidence layer. See
-[`../docs/PRODUCT_CONTRACT.md`](../docs/PRODUCT_CONTRACT.md).
+[`../docs/product-contract.md`](../docs/product-contract.md).
 
 No company lifetime result is published until the observed cohort and destination-use, survival,
 energy, real-world, and S1/S2/S3 policy inputs pass the readiness gate. The internal reference
@@ -26,7 +26,7 @@ firm-level signal of the climate direction embedded in the firm's trade.
 This engine implements the **automotive** sector fully (Layer 1 → Layer 2 → Layer 3, three
 scenarios, mandatory decomposition and sensitivities, Level 1 operating-country basis). Shipping
 and power are interface stubs; Level 2 production attribution is a stub. The source of truth is
-the methodology in `Whitepaper & Guidelines/` — see `NOTES.md` for every assumption and doc
+the methodology in `methodology/` — see `NOTES.md` for every assumption and doc
 conflict.
 
 ## Install

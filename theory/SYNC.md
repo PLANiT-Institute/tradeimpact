@@ -7,8 +7,8 @@ A theory rule with no code + test, or a code token with no table row, fails the 
 Conflicts are never resolved here — they go to `ti-framework/NOTES.md` with a dated
 decision (D1–D4), which this file points to.
 
-Docs: `Whitepaper & Guidelines/TI_Whitepaper_v1.5.md` (WP),
-`Whitepaper & Guidelines/TI_Automotive_Technical_Guideline_v1.8.md` (GL),
+Docs: `methodology/TI_Whitepaper_v1.5.md` (WP),
+`methodology/TI_Automotive_Technical_Guideline_v1.8.md` (GL),
 `ti-framework/NOTES.md` (N). Code and tests live under `ti-framework/`.
 
 | Theory anchor | Code | Test |

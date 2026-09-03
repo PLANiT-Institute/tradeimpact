@@ -4,7 +4,7 @@
 > 무엇이 막고 있는지를 한 문서로 관리한다. 상태 갱신은 이 파일에서만 한다.
 >
 > 1차 목표: **절대 배출량 기반 lifetime TI** — "회사가 2024년에 판 차들이 수명 동안 뿜을
-> 배출량"을 판매국 정책경로와 비교. 설계는 [REBUILD_SPEC.md](REBUILD_SPEC.md).
+> 배출량"을 판매국 정책경로와 비교. 설계는 [rebuild-spec.md](rebuild-spec.md).
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 단계 | 내용 | 상태 | 확인 방법 |
 |---|---|---|---|
-| 0 | 프로젝트 이해·해부 | ✅ 완료 | REBUILD_SPEC.md §0 |
-| 1 | 데이터셋·프로세스·아웃풋 정의 | ✅ 완료 | REBUILD_SPEC.md §1–3 |
+| 0 | 프로젝트 이해·해부 | ✅ 완료 | rebuild-spec.md §0 |
+| 1 | 데이터셋·프로세스·아웃풋 정의 | ✅ 완료 | rebuild-spec.md §1–3 |
 | 2 | 입력 데이터 수집 | ✅ 완료 | `destination_inputs.json` 27/27 결측 0 |
 | 3 | 실행·검증 | ✅ 완료 | `check_published.py` → OK, `lifetime_results.json` |
 | 4 | GitHub 공개 | 🟡 커밋 대기 | README 갱신 완료, 푸시 남음 |
