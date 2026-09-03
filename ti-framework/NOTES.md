@@ -116,7 +116,7 @@ result's `missing_inputs` list and the data-quality declaration, rather than cra
 ## 7. Outstanding doc conflicts / items still open
 
 - **2026-07-30 update:** JP/KR/EU/UK now carry independently derived sectoral S2 rates in
-  the workbook (official government sectoral pathways — SECTORAL_SOURCES.md), so the D1
+  the workbook (official government sectoral pathways — sectoral-sources.md), so the D1
   pro-rata identity no longer applies there. It still applies to AU/CA S2 (no official
   sectoral NDC decomposition exists; their official sectoral projections are
   current-policy and feed S1). **D2 caveat:** the sectoral pathways are single central

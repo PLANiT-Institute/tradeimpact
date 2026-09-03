@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build TI_통합파일.xlsx — the team-facing integrated audit workbook.
+"""Build data/TI_integrated_audit.xlsx — the team-facing integrated audit workbook.
 
 Full-value dump of every number behind the published TI dataset, plus a live
 verification gate. Never edit the xlsx by hand; regenerate with:
@@ -27,7 +27,7 @@ sys.path.insert(0, str(REPO / "data-pipeline"))
 
 PUBLISHED = REPO / "data" / "published"
 WORKBOOK = REPO / "ti-framework" / "data" / "TI_Data_Workbook_v0.1.xlsx"
-OUT = REPO / "TI_통합파일.xlsx"
+OUT = REPO / "data" / "TI_integrated_audit.xlsx"
 
 REQUIRED = [
     PUBLISHED / "meta.json",
@@ -35,9 +35,9 @@ REQUIRED = [
     PUBLISHED / "countries.json",
     PUBLISHED / "contract.json",
     WORKBOOK,
-    REPO / "data-pipeline" / "ESTIMATES.md",
-    REPO / "data-pipeline" / "COLLECTION_STATUS.md",
-    REPO / "data-pipeline" / "SECTORAL_SOURCES.md",
+    REPO / "data-pipeline" / "estimates.md",
+    REPO / "data-pipeline" / "collection-status.md",
+    REPO / "data-pipeline" / "sectoral-sources.md",
 ]
 
 GREEN = PatternFill("solid", fgColor="C6EFCE")
@@ -112,7 +112,24 @@ def check_publication_gate() -> tuple[str, str]:
     firms = json.loads((PUBLISHED / "firms.json").read_text())
     countries = json.loads((PUBLISHED / "countries.json").read_text())
     contract = json.loads((PUBLISHED / "contract.json").read_text())
-    expected = {"contract.json", "countries.json", "firms.json", "meta.json"}
+    # The published inventory follows docs/product-contract.md: lifetime results, cohorts,
+    # destination inputs and pathways are deliberately public once every input is sourced.
+    expected = {
+        "benchmarks.json",
+        "cohort_comparison.json",
+        "company_metrics.json",
+        "contract.json",
+        "countries.json",
+        "destination_inputs.json",
+        "firms.json",
+        "impact_readiness.json",
+        "lifetime_results.json",
+        "meta.json",
+        "pathways.json",
+        "product_cohorts.json",
+        "sectors.json",
+        "sources.json",
+    }
     actual = {path.name for path in PUBLISHED.glob("*.json")}
     problems = []
     if actual != expected:
@@ -222,9 +239,9 @@ def main() -> int:
         ["03_국가벤치마크", "11개국 NDC 벤치마크 전량 (출처·Tier·경고 포함)"],
         ["04_지원파라미터", "부문 공통 파라미터 (VKT, 수명, UF 밴드, 실주행 보정)"],
         ["05_기업유니버스", "TI/CAP 대상기업 전체 목록과 실행 가능 여부"],
-        ["06_제거기록", "ESTIMATES.md — 제거된 추정 입력과 재게시 증거 게이트"],
-        ["07_수집백로그", "COLLECTION_STATUS.md — 미수집 항목과 데이터 경고"],
-        ["08_부문별출처", "SECTORAL_SOURCES.md — 국가 경로·차량 인증 파라미터 출처"],
+        ["06_제거기록", "estimates.md — 제거된 추정 입력과 재게시 증거 게이트"],
+        ["07_수집백로그", "collection-status.md — 미수집 항목과 데이터 경고"],
+        ["08_부문별출처", "sectoral-sources.md — 국가 경로·차량 인증 파라미터 출처"],
         ["WB_*", "원본 데이터 워크북 시트 전량 덤프"],
         ["99_체크리스트", "팀 확인란 (노랑 칸에 확인일·서명 기입)"],
         ["", ""],
@@ -297,9 +314,9 @@ def main() -> int:
 
     # 제거 기록 / 수집 백로그 / 출처
     for sheet_name, md in (
-        ("06_제거기록", REPO / "data-pipeline" / "ESTIMATES.md"),
-        ("07_수집백로그", REPO / "data-pipeline" / "COLLECTION_STATUS.md"),
-        ("08_부문별출처", REPO / "data-pipeline" / "SECTORAL_SOURCES.md"),
+        ("06_제거기록", REPO / "data-pipeline" / "estimates.md"),
+        ("07_수집백로그", REPO / "data-pipeline" / "collection-status.md"),
+        ("08_부문별출처", REPO / "data-pipeline" / "sectoral-sources.md"),
     ):
         ws = wb.create_sheet(sheet_name)
         r = 1

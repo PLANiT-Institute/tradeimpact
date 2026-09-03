@@ -1422,7 +1422,7 @@ add("Step 18 · The gate", slide(
       </div>
     </div>
     <div class="takeaway">A gate, not a disclaimer: if a required input is missing the status is <b>inputs_incomplete</b>, and the application may publish the observed cohort and the missing-input list — but no lifetime value and no firm score.</div>''',
-    "docs/PRODUCT_CONTRACT.md · export-impact-v1"))
+    "docs/product-contract.md · export-impact-v1"))
 
 # ============================================================ PART D — WHERE IT GOES
 add("Where the pipeline stands", slide(

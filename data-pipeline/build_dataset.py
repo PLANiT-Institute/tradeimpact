@@ -177,7 +177,7 @@ def _rows(path: Path, expect_first_header: str) -> list[dict]:
 
 def build_universe() -> list[dict]:
     firms: list[dict] = []
-    for r in _rows(REPO / "TI_CaseStudy_Target_Companies.xlsx", "Sector"):
+    for r in _rows(REPO / "data" / "workbooks" / "TI_CaseStudy_Target_Companies.xlsx", "Sector"):
         name = r["Company (candidate)"]
         slug = slugify(name)
         if slug == "mitsui" and r["Sector"] == "Shipping":
@@ -195,7 +195,7 @@ def build_universe() -> list[dict]:
                 "selection_criteria": r.get("Selection criteria", ""),
             }
         )
-    for r in _rows(REPO / "CAP_Target_Companies_Draft.xlsx", "Sector"):
+    for r in _rows(REPO / "data" / "workbooks" / "CAP_Target_Companies_Draft.xlsx", "Sector"):
         name = r["Company (candidate)"]
         firms.append(
             {
@@ -240,11 +240,11 @@ def build_meta() -> dict:
         "workbook": WORKBOOK.name,
         "workbook_sha256": _file_sha256(WORKBOOK),
         "target_sources_sha256": {
-            "TI_CaseStudy_Target_Companies.xlsx": _file_sha256(
-                REPO / "TI_CaseStudy_Target_Companies.xlsx"
+            "data/workbooks/TI_CaseStudy_Target_Companies.xlsx": _file_sha256(
+                REPO / "data" / "workbooks" / "TI_CaseStudy_Target_Companies.xlsx"
             ),
-            "CAP_Target_Companies_Draft.xlsx": _file_sha256(
-                REPO / "CAP_Target_Companies_Draft.xlsx"
+            "data/workbooks/CAP_Target_Companies_Draft.xlsx": _file_sha256(
+                REPO / "data" / "workbooks" / "CAP_Target_Companies_Draft.xlsx"
             ),
         },
         "alignment_inputs_sha256": {

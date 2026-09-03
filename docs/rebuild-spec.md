@@ -9,7 +9,7 @@
 > (`adapters/destination_eu.py`)가 Eurostat·Ember에서 직접 수집해 해시 고정 스냅샷으로
 > 커밋하고, `lifetime_run.py`가 이를 엔진 fixture로 조인한다. 워크북/CSV 경로는
 > 수동 수집용으로 남아 있으나 1차 결과의 임계경로가 아니다. 결과와 남은 한계는
-> [PROJECT_STATUS.md](PROJECT_STATUS.md).
+> [project-status.md](project-status.md).
 
 ---
 
@@ -67,12 +67,12 @@
 
 1. **롤링 포트폴리오(백서 §3.8 "주력 공시 지표")는 현재 데이터로 산출 불가.**
    다년 코호트가 필요한데 확보된 것은 2024 단일 코호트뿐이고, 2022–23 재구성 코호트는
-   의도적으로 삭제됨(`ESTIMATES.md`). 엔진의 `_portfolio_rampup`은 동일 코호트 T회
+   의도적으로 삭제됨(`estimates.md`). 엔진의 `_portfolio_rampup`은 동일 코호트 T회
    반복 가정이라 단일 코호트로 돌리면 가상의 숫자가 나옴. → **다년 등록 데이터 확보
    전까지 포트폴리오 지표는 보고 대상에서 제외**, 백서 산출물 1·2·4(코호트, 연간
    시계열, 분해)만 공표.
 2. **"Layer" 용어 충돌.** 백서 Layer 1/2 = 벤치마크/제품 배출. 계약 문서
-   (`PRODUCT_CONTRACT.md`)의 3-layer = 관측/시나리오입력/도출결과. 재설계 문서·시트명
+   (`product-contract.md`)의 3-layer = 관측/시나리오입력/도출결과. 재설계 문서·시트명
    에서는 벤치마크/제품 쪽을 Layer로 유지하고 계약 쪽은 "증거 계층"으로 부를 것.
 3. **백서에는 없는 후속 규칙 2개가 계약에 추가됨** (백서보다 엄격, 계약이 우선):
    5단계 목적지 타깃 위계(§1 Sheet 3의 `prorata_used`를 `target_level 1–5`로 확장

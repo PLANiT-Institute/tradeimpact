@@ -57,4 +57,4 @@ reconciliation, source and target roles, MCP queries, web data contracts, and th
 Next.js build.
 
 The MCP server is deployed separately. Local `stdio`, loopback HTTP, and remote security gates are
-documented in [`docs/MCP.md`](docs/MCP.md) and [`mcp-server/README.md`](mcp-server/README.md).
+documented in [`docs/mcp.md`](docs/mcp.md) and [`mcp-server/README.md`](mcp-server/README.md).
