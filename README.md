@@ -53,7 +53,11 @@ published lifetime result to 2 × 10⁻⁷ (see `data/auto/output/method.md`).
 | Kia | 414,677 | 91.7 % | −1.35 | −3.40 | −7.16 |
 
 Negative = lifetime emissions above the destination's committed benchmark (lock-in
-liability). Withheld units (PHEV, FCEV, no certified value) are listed, not absorbed.
+liability). Withheld units (PHEV, FCEV, no certified value) are listed, not absorbed. Toyota
+and Honda have more than half their covered units in markets whose distance is an EU-average
+proxy (tier C), so under guideline §5.3 their figures are published as a **direction, not a
+magnitude** (`ti_data_quality_eu27.csv`, `directional_only`); Hyundai (48.6 %) and Kia
+(48.4 %) sit just under the 50 % rule and are magnitude-bearing but proxy-heavy.
 
 Setup and full run:
 
