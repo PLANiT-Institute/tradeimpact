@@ -20,8 +20,11 @@ Kia and Honda EU27 2024 registrations were acquired on 2026-09-04 from the same 
 four exporters now sit on one destination boundary (Kia 414,677 and Honda 40,270 registrations;
 both net liabilities in every scenario). For the United States and Australia the first inputs exist
 (Ember grid intensity 2000–2025 for both; NDC anchors hand-transcribed with `verified = no` — the
-US is a FLAG market with no NDC in force); passenger-car CO2, stock, distance and model-level sales
-are still to collect, so neither market can enter a result yet. Their absence is counted, not
+US is a FLAG market with no NDC in force; US light-duty stock and distance from FHWA VM-1 2023,
+197 million short-wheelbase vehicles at ~17,700 km/yr, tier B for the wheelbase-not-body-type
+definition). Still to collect: passenger-car CO2 (EPA, DCCEEW), US operating life (survival
+tables), all Australian stock and distance, and model-level sales for both markets — so neither
+can enter a result yet. Their absence is counted, not
 assumed away: the Kia and Hyundai IR tables are processed but cannot enter
 a country-level result as they stand (regions and plant-side sales respectively).
 
