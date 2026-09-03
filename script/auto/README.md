@@ -16,6 +16,7 @@ model/
   build_ti.py           step 4: lifetime TI per company x market x model x powertrain x scenario
   build_sensitivity.py  step 4b: crossover year per cell; lifetime, real-world, distance sensitivities
   aggregate_country.py  step 5: country, powertrain and company totals + decomposition check
+  build_data_quality.py step 5b: guideline §5.3 data-quality declaration per company
   build_database.py     final: every CSV under data/auto -> data/auto/tradeimpact_auto.sqlite
 ```
 

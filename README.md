@@ -63,7 +63,7 @@ for s in sales/extract_eea_registrations sales/extract_kia_ir sales/extract_hyun
          vehicle_technology/extract_eea_certified vehicle_usage/extract_eu27_eurostat \
          country_emissions/extract_eu27_snapshot emission_targets/derive_eu27_rates \
          model/build_reference model/build_ti model/build_sensitivity model/aggregate_country \
-         model/build_database; do
+         model/build_data_quality model/build_database; do
   .venv/bin/python script/auto/$s.py; done
 ```
 
