@@ -30,15 +30,30 @@ data/auto/         one directory per dataset, each with:
   <dataset>/raw/         source files exactly as obtained — never edited
   <dataset>/processed/   tidy CSV produced only by scripts
   <dataset>/method/      method.md: what it is, fields, sources, rules
-  output/                model results (steps 3–5)
+  output/                model results (steps 3–5), with output/method.md
+  sources.csv            source registry: every source_id with link, access date, licence
+  raw_files.csv          raw-file provenance: original name, SHA-256, source_id
+  tradeimpact_auto.sqlite   THE deliverable: every input, lookup, output and source in one DB
 script/auto/       all Python, one directory per dataset plus model/
-  <dataset>/             processing scripts: raw/ -> processed/
-  model/                 build_reference.py, build_ti.py, aggregate_country.py
+  <dataset>/             extraction scripts: raw/ -> processed/
+  model/                 build_reference, build_ti, aggregate_country, build_database
 archive/           the previous application build (engine, web, MCP, pipeline) — read-only
 ```
 
 Datasets: `sales`, `country_emissions`, `emission_targets`, `vehicle_usage`,
-`vehicle_technology`.
+`vehicle_technology`. Current result set: EU27 × 2024 × {Toyota, Hyundai}; it reproduces
+the previously published lifetime result to 2 × 10⁻⁷ (see `data/auto/output/method.md`).
+
+Setup and full run:
+
+```bash
+uv venv .venv && uv pip install -e ".[dev]" --python .venv/bin/python
+for s in sales/extract_eea_registrations sales/extract_kia_ir sales/extract_hyundai_ir \
+         vehicle_technology/extract_eea_certified vehicle_usage/extract_eu27_eurostat \
+         country_emissions/extract_eu27_snapshot emission_targets/derive_eu27_rates \
+         model/build_reference model/build_ti model/aggregate_country model/build_database; do
+  .venv/bin/python script/auto/$s.py; done
+```
 
 ## Naming convention
 

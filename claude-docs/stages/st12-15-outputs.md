@@ -61,7 +61,8 @@ the archive already provides.
 
 **Phases served.** PH3/1–4; PH5/3.
 
-**Consumes.** `ti_cells.csv`, `ti_country.csv`, `ti_company.csv`, `ti_annual.csv`, `withheld.csv`
+**Consumes.** `ti_by_model_eu27.csv`, `ti_annual_eu27.csv`, `ti_withheld_eu27.csv` and the
+`ti_country` / `ti_powertrain` / `ti_company` tables
 (ST09, ST10); the licence verdicts from ST07; the verification verdicts from ST11.
 
 **Produces.** The released repository and dashboard, and `D-05` as a specification document.

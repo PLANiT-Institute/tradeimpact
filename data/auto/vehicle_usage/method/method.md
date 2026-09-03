@@ -23,20 +23,16 @@ Derived quantities the model needs — annual distance per car (`car_traffic` ×
 fallback series exists), and operating life from the age bands — are computed in the model
 step from these rows, not stored here, so the tier is always reproducible.
 
-## Raw files
+## Raw files and sources
 
-| file | source | how obtained | sha256 |
-|---|---|---|---|
-| `destination_eu27_inputs.json` | Eurostat, four datasets (links in the sources table) plus Ember grid intensity via Our World in Data; the file also carries the emissions series used by `country_emissions` | downloaded by the archived adapter (`archive/data-pipeline/adapters/destination_eu.py`) on 2026-08-09 into one hash-pinned JSON; each series is stored exactly as returned by the Eurostat API | `c0fdf593…c1c5ff` |
-
-## Sources
-
-| source_id | dataset | link |
-|---|---|---|
-| `eurostat_road_eqs_carpda` | Passenger cars by motor energy (stock, `mot_nrg=TOTAL`) | <https://ec.europa.eu/eurostat/databrowser/view/road_eqs_carpda/default/table?lang=en> |
-| `eurostat_road_tf_veh` | Road traffic performance by vehicle type, cars, national territory, million vehicle-km | <https://ec.europa.eu/eurostat/databrowser/view/road_tf_veh/default/table?lang=en> |
-| `eurostat_road_tf_vehmov` | Road traffic performance (vehicle movements), cars — fallback where `road_tf_veh` is empty | <https://ec.europa.eu/eurostat/databrowser/view/road_tf_vehmov/default/table?lang=en> |
-| `eurostat_road_eqs_carage` | Passenger cars by age class | <https://ec.europa.eu/eurostat/databrowser/view/road_eqs_carage/default/table?lang=en> |
+`destination_eu27_inputs.json` — one hash-pinned JSON holding four Eurostat datasets
+(`road_eqs_carpda` stock, `road_tf_veh` traffic of nationally registered cars,
+`road_tf_vehmov` fallback, `road_eqs_carage` age bands) plus the emissions series used by
+`country_emissions`, each exactly as returned by the API on 2026-08-09. Links, licence and
+hash: [`../../sources.csv`](../../sources.csv), [`../../raw_files.csv`](../../raw_files.csv).
+Only `road_tf_veh` (TER_REGNAT: traffic by cars registered in the country) is used for
+distance — it is the same population as the stock denominator; `road_tf_vehmov` counts all
+traffic on the territory and is kept only as a documented series, never divided by stock.
 
 ## Processed files
 

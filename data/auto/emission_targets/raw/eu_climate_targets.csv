@@ -1,0 +1,4 @@
+target_id,geography,scope,base_year,base_value,target_year,target_value,unit,reduction_vs_base,source_id,note
+eu_2030_economy,EU27,economy_wide_ghg,1990,,2030,,fraction,0.55,eu_climate_law_2021_1119,"Regulation (EU) 2021/1119 Art. 4(1): net domestic reduction of at least 55% by 2030 vs 1990"
+eu_2040_economy,EU27,economy_wide_ghg,1990,,2040,,fraction,0.90,ec_2040_com_2024_63,"COM(2024) 63: recommended 90% net reduction by 2040 vs 1990"
+eu_2030_transport,EU27,domestic_transport_ghg,2023,795.6,2030,583.0,MtCO2e,,ec_2040_impact_assessment_transport,"EU domestic transport GHG pathway consistent with the 2030 target; base 2023 and 2030 level as used in the 2040 impact assessment transport pathway"

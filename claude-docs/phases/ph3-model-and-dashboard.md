@@ -5,8 +5,9 @@
 Make the methodology operable by someone who is not its author. The proposal promises an
 open-source TI model on GitHub (`D-06`), a prototype dashboard released publicly and
 "validated against the three case study sectors" (`D-08`), and a specification for TI as an
-additional analytical layer on Climate Arc's Transition Arc (`D-05`). The test of this phase
-is replication without the research team: "researchers, national statistics agencies, and data
+additional analytical layer on Climate Arc's Transition Arc (`D-05`). Nothing in this phase has started: at 2026-09-04 there is no model beyond the extraction scripts,
+no dashboard and no database, and each is built only when the step before it has an output to
+package. The test of this phase is replication without the research team: "researchers, national statistics agencies, and data
 providers can replicate and extend the framework without any involvement from the original
 research team."
 
@@ -36,7 +37,7 @@ research team."
   present.
 - `B-08` resolved: rebuild from `data/auto/output/` or resurrect the archived web application.
 - Licence terms of every redistributed source recorded in
-  [`../toolbox/data/register.md`](../toolbox/data/register.md).
+  [`../toolbox/catalogue.md`](../toolbox/catalogue.md).
 
 ## Exit criteria
 
@@ -53,11 +54,11 @@ research team."
 
 | Stage | Evidences objective |
 |---|---|
-| [`st13`](../stages/st13-tool-and-dashboard.md) | 1, 2, 3, 4 |
-| [`st09`](../stages/st09-impact-computation.md) | 1 (the computation being packaged) |
-| [`st10`](../stages/st10-country-aggregation.md) | 2 (what the dashboard presents) |
+| [`st13`](../stages/st12-15-outputs.md) | 1, 2, 3, 4 |
+| [`st09`](../stages/st08-10-analysis.md) | 1 (the computation being packaged) |
+| [`st10`](../stages/st08-10-analysis.md) | 2 (what the dashboard presents) |
 | [`st11`](../stages/st11-verification.md) | 1, 4 |
-| [`st07`](../stages/st07-source-registration.md) | 4 (licence clearance) |
+| [`st07`](../stages/st01-targets-and-provenance.md) | 4 (licence clearance) |
 
 ## Traceability
 

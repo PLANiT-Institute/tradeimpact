@@ -23,20 +23,15 @@ Importers: EU27 member states, United States, Australia.
 | source_id | text | — | row in the sources table below |
 | source_file | text | — | raw file the row came from |
 
-## Raw files
+## Raw files and sources
 
-| file | source | how obtained | sha256 |
-|---|---|---|---|
-| `../vehicle_usage/raw/destination_eu27_inputs.json` (shared, not copied) | Eurostat GHG inventory series and Ember grid intensity via Our World in Data (links below) | downloaded by the archived adapter on 2026-08-09 into one hash-pinned JSON | `c0fdf593…c1c5ff` |
-
-## Sources
-
-| source_id | dataset | link |
-|---|---|---|
-| `eurostat_env_air_gge_crf1a3b1` | GHG inventory, CO2, source sector CRF 1.A.3.b.i passenger cars, thousand tonnes | <https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table?lang=en> |
-| `eurostat_env_air_gge_crf1a1a` | GHG inventory, CO2, CRF 1.A.1.a public electricity and heat, EU27, thousand tonnes | same dataset |
-| `eurostat_env_air_gge_crf1a3` | GHG inventory, all GHG, CRF 1.A.3 transport, EU27, million tonnes | same dataset |
-| `owid_ember_grid_intensity` | Carbon intensity of electricity (gCO2e/kWh), Ember Yearly Electricity Data as published by Our World in Data | <https://ourworldindata.org/grapher/carbon-intensity-electricity> (Ember: <https://ember-energy.org/data/yearly-electricity-data/>) |
+Raw file: `../vehicle_usage/raw/destination_eu27_inputs.json` (shared, not copied) —
+Eurostat GHG inventory `env_air_gge` (CRF 1.A.3.b.i passenger cars per country; EU27
+CRF 1.A.1.a public electricity and CRF 1.A.3 transport) and Ember grid intensity via Our
+World in Data, downloaded 2026-08-09. Source ids `eurostat_env_air_gge_crf1a3b1`,
+`eurostat_env_air_gge_crf1a1a`, `eurostat_env_air_gge_crf1a3`, `owid_ember_grid_intensity`
+resolve in [`../../sources.csv`](../../sources.csv); the file hash is in
+[`../../raw_files.csv`](../../raw_files.csv).
 
 To collect for the other importers: US — EPA GHG Inventory (passenger cars) and eGRID or
 Ember for grid; Australia — DCCEEW National Inventory and AEMO or Ember for grid.

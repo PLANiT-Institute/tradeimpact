@@ -4,8 +4,10 @@
 
 Test whether the framework is sector-agnostic in practice, not only in claim. Power generation
 is a **primary** validation vehicle alongside automotive and shares its Month 7 milestone;
-shipbuilding is cross-validation at Month 10 (`X-08`). Each sector stresses a structural
-challenge the automotive case cannot reach: power tests grid attribution and mixed-portfolio
+shipbuilding is cross-validation at Month 10 (`X-08`). Neither sector has started, deliberately: the five-step
+process is proven once on automotive before a second sector is opened, because two sectors debugged
+at once leaves neither with a baseline. Each sector stresses a structural challenge the automotive
+case cannot reach: power tests grid attribution and mixed-portfolio
 aggregation masking (challenges Challenge 6), shipping tests the operating-country boundary
 itself (Challenge 5).
 
@@ -54,14 +56,14 @@ itself (Challenge 5).
 
 | Stage | Evidences objective |
 |---|---|
-| [`st15`](../stages/st15-sector-onboarding.md) | 1, 4 |
-| [`st01`](../stages/st01-target-selection.md) | 4 |
-| [`st02`](../stages/st02-sales-data.md) … [`st07`](../stages/st07-source-registration.md) | 2, 3 (sector equivalents of the five datasets) |
-| [`st08`](../stages/st08-benchmark-construction.md) | 2, 3 |
-| [`st09`](../stages/st09-impact-computation.md) | 2, 3 |
-| [`st10`](../stages/st10-country-aggregation.md) | 2, 3 |
+| [`st15`](../stages/st12-15-outputs.md) | 1, 4 |
+| [`st01`](../stages/st01-targets-and-provenance.md) | 4 |
+| [`st02`](../stages/st02-06-datasets.md) … [`st07`](../stages/st01-targets-and-provenance.md) | 2, 3 (sector equivalents of the five datasets) |
+| [`st08`](../stages/st08-10-analysis.md) | 2, 3 |
+| [`st09`](../stages/st08-10-analysis.md) | 2, 3 |
+| [`st10`](../stages/st08-10-analysis.md) | 2, 3 |
 | [`st11`](../stages/st11-verification.md) | 2, 3 |
-| [`st14`](../stages/st14-publication.md) | 2, 3 |
+| [`st14`](../stages/st12-15-outputs.md) | 2, 3 |
 
 ## Traceability
 

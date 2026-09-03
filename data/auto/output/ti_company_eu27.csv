@@ -1,0 +1,7 @@
+company,scenario,cohort_year,covered_units,withheld_units,covered_share,ti_tco2e,ti_per_vehicle_kgco2e,direction,decomposition_identity_holds
+hyundai,S1,2024,411225,18711,0.95648,-1487564.7841,-3617.3987,liability,True
+hyundai,S2,2024,411225,18711,0.95648,-3717233.7577,-9039.4158,liability,True
+hyundai,S3,2024,411225,18711,0.95648,-7775248.9259,-18907.5298,liability,True
+toyota,S1,2024,778461,24633,0.969327,-1401786.5779,-1800.7152,liability,True
+toyota,S2,2024,778461,24633,0.969327,-5964516.0991,-7661.9331,liability,True
+toyota,S3,2024,778461,24633,0.969327,-13948085.8508,-17917.514,liability,True

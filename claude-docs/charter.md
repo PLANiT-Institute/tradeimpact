@@ -45,7 +45,7 @@ track to deploy."
 
 The operational equation set that implements this formula is the whitepaper's §3.1–§3.8 and
 the automotive guideline's §2–§4; it is not restated here (one home per fact). See
-[`toolbox/methods/`](toolbox/methods/layer1-benchmark.md).
+[`toolbox/references-and-archive.md`](toolbox/references-and-archive.md).
 
 ---
 
@@ -115,7 +115,7 @@ These bind every stage. A result that breaches one is not published, whatever it
 |---|---|---|
 | `N-01` | TI is additional to Scope 3 Category 11 and never nets, offsets or reduces it. | Whitepaper §5.3, guideline §5.4 |
 | `N-02` | A missing input produces an **unavailable** result — never zero, never a silent default. Withheld units are counted and reported. | Repo `README.md`; whitepaper §5.2 |
-| `N-03` | Every figure traces to a registered `source_id` or a numbered assumption in [`toolbox/data/assumptions.md`](toolbox/data/assumptions.md). A number with neither does not exist. | `C-04`, `C-02` |
+| `N-03` | Every figure traces to a registered `source_id` or a numbered assumption in [`toolbox/assumptions.md`](toolbox/assumptions.md). A number with neither does not exist. | `C-04`, `C-02` |
 | `N-04` | Results on proxied (Tier C) inputs are published as directions and ranges, never as point estimates; tiers are declared per layer. | `C-04`, `C-05`, whitepaper §5.1 |
 | `N-05` | S1, S2 and S3 are always reported together. "Never report S2 alone." | Guideline §4.7 |
 | `N-06` | Every headline carries its decomposition by operating country and by powertrain; the identity `TI_cohort = Σ_c TI_country = Σ_v TI_type` holds. | Whitepaper §3.6 |
@@ -132,7 +132,7 @@ These bind every stage. A result that breaches one is not published, whatever it
 | `B-01` | No project start date is stated, so "Month 7 / 10 / 12" cannot be converted to calendar dates. Every milestone in this set is therefore relative. | `consultant` → Climate Arc (grant agreement) |
 | `B-02` | "AMOUNT REQUESTED" is blank in the proposal copy; the researcher hire in `C-12` has no confirmed budget. | Project lead |
 | `B-03` | `C-11` bounds the work at six firms across three sectors. The current automotive direction names four exporters (Hyundai, Kia, Toyota, Honda), which consumes four of the six. Either the firm count is per sector or the automotive set must shrink. | Project lead, then `consultant` via change control |
-| `B-04` | The importer set (EU27, United States, Australia) is a project-lead decision, not a proposal commitment. The United States has no active NDC as of the June 2026 scan, so it has no S2 benchmark at all (challenges Ch1). The decision rule — exclude from the headline, or substitute an IEA sector trajectory as the S2 proxy — is unmade. | Project lead + `climate-risk-modeller`; records in `log/decisions.md` |
+| `B-04` | The importer set (EU27, United States, Australia) is a project-lead decision, not a proposal commitment. The United States has no active NDC as of the June 2026 scan, so it has no S2 benchmark at all (challenges Ch1). The decision rule — exclude from the headline, or substitute an IEA sector trajectory as the S2 proxy — is unmade. | Project lead + `climate-risk-modeller`; recorded in [`log/README.md`](log/README.md) |
 | `B-05` | No countersigned grant agreement located. If one exists and differs from the proposal, this charter is wrong and Pass 3 must re-run. | `consultant` |
 | `B-06` | The Technical Advisory Group (`C-07`) is not convened, and the proposal ties its feedback to "the methodology design and pilot stages" — both of which are now live. | Project lead |
 | `B-07` | `C-05` promises Crossover Points as **P10/P50/P90 ranges**. The methodology delivers three deterministic scenarios plus parameter-by-parameter sensitivity, and the challenges document (Challenge 3) records that no uncertainty-propagation method exists yet. Either a propagation procedure is built or the commitment is renegotiated. | `climate-risk-modeller` + `math-reviewer`; `consultant` if renegotiated |

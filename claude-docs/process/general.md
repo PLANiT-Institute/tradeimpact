@@ -20,7 +20,8 @@ a value is registered before it is used, not after a result needs justifying.
   `processed/` is written only by scripts under `script/auto/`.
 - **Deterministic.** The same raw inputs produce byte-identical processed outputs. No timestamps
   in outputs, no unpinned ordering, no unseeded randomness.
-- **Every processed row carries a `source_id`.** A row that cannot carry one is not written.
+- **Every processed row carries its provenance** — a `source_id`, or the `source_file` whose hash
+  is registered in the dataset's `method/method.md`. A row that can carry neither is not written.
 - **No hardcoded domain values.** Parameters arrive from `processed/` tables, each row with its
   `source_id`; anything genuinely configurable goes to config and is mirrored into `.env.example`.
 - **A missing input yields an unavailable result** — never zero, never a silent default. Withheld
@@ -49,8 +50,10 @@ challenges document); this governance set links to it and never restates its equ
 
 **Build one thing when it is needed.** A script, a table, a dashboard or a database is created at
 the moment the preceding step produces something it must consume, and not before. As of
-2026-09-04 that means: the five raw files are in, so the ST02 processing scripts are next; no
-model, dashboard or database exists, and the plan does not pretend otherwise.
+2026-09-04 that means: the raw sales and usage files are in and the `sales` and
+`vehicle_technology` extraction scripts are written, so the next build is whatever ST08 needs from
+`country_emissions` and `emission_targets`. No model, dashboard or database exists, and the plan
+does not pretend otherwise.
 
 ## 5. Verification
 
@@ -115,7 +118,7 @@ downstream stays fresh and propagation stops there.
 | Stage | Process document | Status |
 |---|---|---|
 | ST02–ST06 | [`dataset-acquisition.md`](dataset-acquisition.md) | Written — this is the live procedure |
-| ST01, ST07 | This document plus the stage sections in [`../stages/st01-07-inputs.md`](../stages/st01-07-inputs.md) | Sufficient at current scope |
+| ST01, ST07 | This document plus the stage sections in [`../stages/st01-targets-and-provenance.md`](../stages/st01-targets-and-provenance.md) | Sufficient at current scope |
 | ST08, ST09, ST10 | Written at stage entry, triggered by the first processed table that makes the stage computable | Deferred |
 | ST11 | Written at the first stage exit that needs a gate | Deferred |
 | ST12, ST13, ST14, ST15 | Written at their phase entry (PH2, PH3, PH4, PH5) | Deferred |

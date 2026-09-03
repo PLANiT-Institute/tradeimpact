@@ -52,11 +52,11 @@ explained, not merely finished.
 
 | Stage | Evidences objective |
 |---|---|
-| [`st14`](../stages/st14-publication.md) | 1, 2, 3, 4 |
-| [`st12`](../stages/st12-methodology-maintenance.md) | 1, 2 |
+| [`st14`](../stages/st12-15-outputs.md) | 1, 2, 3, 4 |
+| [`st12`](../stages/st12-15-outputs.md) | 1, 2 |
 | [`st11`](../stages/st11-verification.md) | 3, 5 |
-| [`st13`](../stages/st13-tool-and-dashboard.md) | 3 |
-| [`st07`](../stages/st07-source-registration.md) | 3 (licence and traceability clearance) |
+| [`st13`](../stages/st12-15-outputs.md) | 3 |
+| [`st07`](../stages/st01-targets-and-provenance.md) | 3 (licence and traceability clearance) |
 
 ## Traceability
 

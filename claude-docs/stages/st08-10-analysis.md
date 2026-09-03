@@ -1,11 +1,12 @@
 # Stages ST08–ST10 — benchmark, impact, aggregation
 
-Steps 3 to 5 of the research process. All three are **specifications only** as of 2026-09-04: no
-script exists under `script/auto/model/`, and none is written until the step before it has real
-processed data to feed it. One thing is built when it is needed — a benchmark for the markets that
-are ready, not a framework for markets that are not.
+Steps 3 to 5 of the research process, in `script/auto/model/`. All three are running **EU27 only**
+as of 2026-09-04, on the markets the data supports: `build_reference.py` and `build_ti.py` have
+produced their outputs, `aggregate_country.py` exists and has not yet written its own. One thing is
+built when it is needed — a benchmark for the markets that are ready, not a framework for markets
+that are not.
 
-Output column schemas: [`../toolbox/data-schema.md`](../toolbox/data-schema.md) §6.
+Output column schemas and current row counts: [`../toolbox/data-schema.md`](../toolbox/data-schema.md) §6.
 
 ---
 
@@ -14,6 +15,8 @@ Output column schemas: [`../toolbox/data-schema.md`](../toolbox/data-schema.md) 
 **Main goal.** Per importer and scenario, the dynamic Layer 1 benchmark
 `E_ref,c(t) = I_fleet,seg,c(t) × D_c` over the vehicle lifetime — the reference every TI result is
 measured against.
+
+**Script.** `script/auto/model/build_reference.py`.
 
 **Activity.** Select the Layer 1 method per market against guideline §6.1 and record why. Compute
 the base-year fleet intensity as sector emissions ÷ (stock × distance); derive `r_fleet` per
@@ -26,11 +29,15 @@ from.
 **Phases served.** PH1/3 (the benchmark table); PH2/2 and PH2/5 (pro-rata and non-linearity
 evidence); PH4/2–3 (grid-intensity and IMO CII benchmarks).
 
-**Consumes.** `country_emissions.csv` (ST03, ktCO2e and gCO2e/kWh), `emission_targets.csv` (ST04,
-fraction per year), `vehicle_usage.csv` (ST05, km/year, years, vehicles), `target_set.csv` (ST01);
+**Consumes.** `country_emissions_eu27.csv` (ST03, ktCO2 and gCO2e/kWh), `emission_targets_eu27.csv`
+(ST04, fraction per year), `vehicle_usage_eu27.csv` (ST05, vehicles and traffic), `target_set.csv`
+(ST01, planned);
 assumptions `A-01`, `A-02`, `A-03`, `A-07`, `A-09`, `A-11`.
 
-**Produces.** `data/auto/output/reference.csv`. Consumed by ST09, ST10, ST11, ST12, ST14.
+**Produces.** `data/auto/output/destination_parameters_eu27.csv` (27 rows — the derived distance,
+fleet intensity base, grid intensity, mean fleet age and lifetime bracket per market, each with its
+tier, reference year, derivation and warnings) and `reference_trajectories_eu27.csv` (1,899 rows —
+`E_ref(t)` and `G(t)` per market × scenario × year). Consumed by ST09, ST10, ST11, ST12, ST14.
 
 **Methodology.** Whitepaper §3.1; guideline §2.1–§2.3 (Methods A, B, C), §4.7 (scenario sources),
 §6.1–§6.2 (method selection and the five-step NDC verification). Failure modes and the validation
@@ -58,6 +65,8 @@ Neither is resolved by choosing a more convenient rate.
 **Main goal.** Per model × market × powertrain × scenario: the annual TI gap over the lifetime,
 the cumulative lifetime avoidance or addition, and the Crossover Point.
 
+**Script.** `script/auto/model/build_ti.py`.
+
 **Activity.** Build the Layer 2 trajectory per powertrain case — ICE and non-plug-in HEV fixed at
 sale-year efficiency, BEV declining with the grid, PHEV as the utility-factor composite — subtract
 it from the Layer 1 benchmark to get `TI_gap,v,c(t)`, sum over `t = 0 … T−1` (T terms, inclusive),
@@ -67,12 +76,16 @@ counted as withheld with its units (`N-02`).
 **Phases served.** PH1/4; PH2/3–4 (the sensitivity behaviour the propagation rule is built on);
 PH3/1 (the computation the open-source model packages); PH4/2–3.
 
-**Consumes.** `reference.csv` (ST08, kgCO2e/vehicle/year), `sales.csv` (ST02, vehicles),
-`vehicle_technology.csv` (ST06, gCO2/km, kWh/100km, fraction, multiplier), `vehicle_usage.csv`
-(ST05, km/year, years), `emission_targets.csv` (ST04, `r_power` per scenario); assumptions `A-02`,
+**Consumes.** `reference_trajectories_eu27.csv` and `destination_parameters_eu27.csv` (ST08),
+`sales_eea_eu27_2024.csv` (ST02, vehicles), `vehicle_technology_eea_2024.csv` and
+`method/real_world_correction.csv` (ST06, gCO2/km, Wh/km, multiplier); assumptions `A-02`,
 `A-04`, `A-05`, `A-06`, `A-08`.
 
-**Produces.** `data/auto/output/ti_cells.csv`, `ti_annual.csv`, `withheld.csv`. Consumed by ST10,
+**Produces.** `data/auto/output/ti_by_model_eu27.csv` (3,321 rows — per cell and scenario, with
+`e_prod_year0`, `e_ref_year0`, per-vehicle and total TI), `ti_annual_eu27.csv` (150 rows — the
+annual TI flow with surviving vehicles) and `ti_withheld_eu27.csv` (179 rows — every cell that
+produced no result, with its unit count and reason). **Crossover year is not yet an output** — it
+is required by `D-01`'s Month 7 activity and is the next addition here (`F-06`). Consumed by ST10,
 ST11, ST13, ST14.
 
 **Methodology.** Whitepaper §3.2–§3.5, §3.7; guideline §3.3–§3.5, §4.1–§4.3. Crossover closed
@@ -101,6 +114,8 @@ directionally indeterminate and does not become a headline.
 **Main goal.** Importer-country and exporter-company totals with the decomposition identity
 intact, tiers declared and withheld units visible.
 
+**Script.** `script/auto/model/aggregate_country.py` — written, not yet run to output.
+
 **Activity.** Sum `V_c,v × TI_product,v,c,S` to country, powertrain and company level; check the
 identity `TI_cohort = Σ_c TI_country = Σ_v TI_type` numerically rather than by construction; attach
 the per-layer data-quality declaration (guideline §5.3); and report withheld units beside every
@@ -110,11 +125,11 @@ never merged into a country total.
 
 **Phases served.** PH1/5; PH3/2 (what the dashboard presents); PH4/2–3.
 
-**Consumes.** `ti_cells.csv`, `ti_annual.csv`, `withheld.csv` (ST09); `vehicle_usage.csv` (ST05)
-for the tier declaration.
+**Consumes.** `ti_by_model_eu27.csv`, `ti_annual_eu27.csv`, `ti_withheld_eu27.csv` (ST09);
+`destination_parameters_eu27.csv` (ST08) for the tier declaration.
 
-**Produces.** `data/auto/output/ti_country.csv`, `ti_company.csv`, and the data-quality
-declaration. Consumed by ST11, ST13, ST14.
+**Produces.** `data/auto/output/ti_country_eu27.csv`, `ti_powertrain_eu27.csv`,
+`ti_company_eu27.csv`, and the data-quality declaration. Consumed by ST11, ST13, ST14.
 
 **Methodology.** Whitepaper §3.6–§3.8; guideline §4.4–§4.6, §5.1, §5.3.
 

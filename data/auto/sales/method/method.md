@@ -26,14 +26,18 @@ formula and the anchor of the whole analysis (research process step 1–2).
 | basis | text | — | `registrations` (EEA), `retail_sales` (Kia IR), `plant_sales` (Hyundai IR: production-side by plant) — never mixed silently |
 | source_file | text | — | raw file the row came from |
 
-## Raw files
+## Raw files and sources
 
-| file | source | how obtained | sha256 |
-|---|---|---|---|
-| `eea_toyota_2024_final.json` | EEA "CO2 emissions from new passenger cars" monitoring database, 2024 final dataset, brand filter `Mk=TOYOTA`, EU27 — <https://co2cars.apps.eea.europa.eu/> (API: <https://co2cars.apps.eea.europa.eu/tools/api>) | downloaded by the archived adapter on 2026-08-05; the JSON holds the exact query and the response hash | `e379e2ab…56ba1625` |
-| `eea_hyundai_2024_final.json` | same database, brand filter `Mk=HYUNDAI` | same, 2026-08-05 | `364de073…4a00683b` |
-| `kia_2026_retail_sales_by_model_market.xlsx` | Kia Corporation IR, "Retail Sales by Country" monthly sales results (original file name `(기아차) 2026 현지판매실적.xlsx`) — IR page: <https://worldwide.kia.com/int/company/ir> | **local file only, gathered by hand** into Google Drive `Trade/Arc_Trade_Data/Auto/`; the exact download link was not recorded | `6b54b241…1f1cf8a` |
-| `hyundai_2025_global_plant_sales.xlsx` | Hyundai Motor Company IR, "Global Plant Sales" monthly sales results, Dec 2025 edition (original file name `(현대차) hmc-global-plant-sales-dec-y2025.xlsx`) — IR page: <https://www.hyundai.com/worldwide/en/company/ir> | **local file only, gathered by hand** into the same Drive folder; exact download link not recorded | `527e658b…578a3a2` |
+Registered in [`../../raw_files.csv`](../../raw_files.csv) (file, original name, SHA-256,
+`source_id`) and [`../../sources.csv`](../../sources.csv) (publisher, title, link, how
+obtained, access date, licence). In short:
+
+- `eea_toyota_2024_final.json`, `eea_hyundai_2024_final.json` — EEA CO2 monitoring
+  database, 2024 final, downloaded via the API (<https://co2cars.apps.eea.europa.eu/>);
+  each JSON holds the exact query and response hash.
+- `kia_2026_retail_sales_by_model_market.xlsx`, `hyundai_2025_global_plant_sales.xlsx` —
+  **local files only, gathered by hand** from the Kia and Hyundai IR sales-results pages
+  into Google Drive `Trade/Arc_Trade_Data/Auto/`; exact download links not recorded.
 
 ## Processed files
 
