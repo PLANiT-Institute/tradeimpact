@@ -23,10 +23,12 @@ both net liabilities in every scenario). For the United States and Australia the
 US is a FLAG market with no NDC in force; US light-duty stock and distance from FHWA VM-1 2023,
 197 million short-wheelbase vehicles at ~17,700 km/yr, tier B for the wheelbase-not-body-type
 definition; US passenger-car CO2 from EPA Inventory Table 3-13 for 1990, 2005 and 2019–2023 —
-295 MtCO2 in 2023 — transcribed from the PDF text with page reference). Still to collect: the EPA
-annex annual series (the main text has too few trend-window years for a US S1 rate), US operating
-life (survival tables), Australian passenger-car CO2, stock and distance, and model-level sales for
-both markets — so neither can enter a result yet. `script/auto/run_all.py` now runs the whole
+295 MtCO2 in 2023 — transcribed from the PDF text with page reference, plus the annex Table A-91
+annual GHG series 2013–2023 that makes a US S1 trend derivable). Still to collect: US operating
+life (survival tables), US S1/S3 rates from IEA WEO (the US is a FLAG market so S2 is excluded),
+Australian passenger-car CO2, stock and distance (the ABS, BITRE and DCCEEW sites refused automated
+access on 2026-09-04 — hand-gathered files), and model-level sales for both markets — so neither can
+enter a result yet. `script/auto/run_all.py` now runs the whole
 chain fail-fast before any commit. Their absence is counted, not
 assumed away: the Kia and Hyundai IR tables are processed but cannot enter
 a country-level result as they stand (regions and plant-side sales respectively).
