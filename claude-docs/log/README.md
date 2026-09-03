@@ -63,3 +63,16 @@ premise and sends work back is the process working; the entry states the trigger
 - Exporters in scope: Hyundai and Kia; Toyota and Honda deferred (snapshots pinned,
   `companies.csv` `in_scope = no`). US and Australian inputs are being downloaded by the
   automated pipeline where sites allow it (ABS census and use survey obtained 2026-09-04).
+
+## 2026-09-04 — source-of-truth policy and direct fetches
+
+- **Policy (lead):** every raw file under `data/auto` must trace to its source of truth by link;
+  archived compilations are not sources; JSON is fine when the source publishes JSON; an HTML
+  page is never a raw file; company sales come only from the IR workbooks the lead gathered.
+- **Applied:** the archived `destination_eu27_inputs.json` was replaced by seven Eurostat cubes
+  fetched directly from the Eurostat API (`fetch_eurostat.py`; values reproduce the archive
+  exactly); the Hyundai EEA snapshot was re-fetched directly; a Kia America press-release scrape
+  was removed; ABS census and use survey, NHTSA survival schedule, EPA inventory tables, FHWA
+  VM-1 and OWID/Ember grid were obtained directly and registered with links and hashes.
+- **Deliverable (lead):** one SQLite holding raw, lookup, processed and output tables with
+  stage, source and column types, and an HTML pivot dashboard over it.

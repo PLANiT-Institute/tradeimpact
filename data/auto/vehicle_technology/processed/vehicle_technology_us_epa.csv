@@ -1,0 +1,148 @@
+company,model_year,model,base_model,powertrain,tailpipe_gco2_km,energy_wh_km,n_trims,test_cycle,source_id,source_file
+hyundai,2024,Elantra,Elantra,ICE,163.83,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Elantra Hybrid,Elantra,HEV,109.98,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Elantra Hybrid Blue,Elantra,HEV,102.53,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Elantra N,Elantra,ICE,235.5,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Ioniq 5 Long range AWD,Ioniq 5,BEV,,211.39,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Ioniq 5 Long range RWD,Ioniq 5,BEV,,186.41,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Ioniq 5 Standard range RWD,Ioniq 5,BEV,,192.63,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Ioniq 6 Long range AWD (18 inch Wheels),Ioniq 6,BEV,,169.18,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Ioniq 6 Long range AWD (20 inch Wheels),Ioniq 6,BEV,,205.05,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Ioniq 6 Long range RWD (18 inch Wheels),Ioniq 6,BEV,,149.13,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Ioniq 6 Long range RWD (20 inch Wheels),Ioniq 6,BEV,,180.2,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Ioniq 6 Standard Range RWD,Ioniq 6,BEV,,155.34,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Kona AWD,Kona,ICE,202.77,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Kona Electric Long Range,Kona,BEV,,180.71,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Kona Electric Standard Range,Kona,BEV,,177.29,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Kona FWD,Kona,ICE,183.1,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Nexo,Nexo,FCEV,,347.97,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Nexo Blue,Nexo,FCEV,,372.82,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Palisade AWD,Palisade,ICE,260.98,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Palisade FWD,Palisade,ICE,251.03,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Santa Cruz AWD,Santa Cruz,ICE,246.37,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Santa Cruz FWD,Santa Cruz,ICE,236.74,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Santa Fe AWD,Santa Fe,ICE,243.58,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Santa Fe AWD XRT,Santa Fe,ICE,254.14,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Santa Fe FWD,Santa Fe,ICE,234.26,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Santa Fe Hybrid AWD,Santa Fe,HEV,160.31,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Santa Fe Hybrid FWD,Santa Fe,HEV,154.72,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Sonata AWD,Sonata,ICE,196.35,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Sonata FWD,Sonata,ICE,198.22,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Sonata Hybrid,Sonata,HEV,116.82,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Tucson AWD,Tucson,ICE,216.86,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Tucson FWD,Tucson,ICE,200.7,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Tucson Hybrid,Tucson,HEV,152.24,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Tucson Hybrid Blue,Tucson,HEV,147.89,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Tucson Plug-in Hybrid,Tucson,PHEV,62.14,260.98,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2024,Venue,Venue,ICE,180.82,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Elantra,Elantra,ICE,165.08,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Elantra Hybrid,Elantra,HEV,109.98,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Elantra Hybrid Blue,Elantra,HEV,102.53,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Elantra N,Elantra,ICE,235.5,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 5 AWD (19 inch Wheels),Ioniq 5,BEV,,196.77,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 5 AWD (20 inch Wheels),Ioniq 5,BEV,,214.35,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 5 AWD XRT,Ioniq 5,BEV,,222.22,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 5 N,Ioniq 5,BEV,,267.19,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 5 RWD,Ioniq 5,BEV,,186.41,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 5 Robo taxi,Ioniq 5,BEV,,295.32,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 5 Standard range,Ioniq 5,BEV,,180.2,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 6 AWD (18 inch Wheels),Ioniq 6,BEV,,173.98,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 6 AWD (20 inch Wheels),Ioniq 6,BEV,,202.07,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 6 RWD (18 inch Wheels),Ioniq 6,BEV,,161.56,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 6 RWD (20 inch Wheels),Ioniq 6,BEV,,184.99,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Ioniq 6 Standard Range,Ioniq 6,BEV,,155.34,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Kona AWD,Kona,ICE,203.19,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Kona Electric (17 inch Wheels),Kona,BEV,,180.71,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Kona Electric (19 inch Wheels),Kona,BEV,,192.63,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Kona Electric Standard Range,Kona,BEV,,177.29,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Kona FWD,Kona,ICE,183.72,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Nexo,Nexo,FCEV,,347.97,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Nexo Blue,Nexo,FCEV,,372.82,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Palisade AWD,Palisade,ICE,260.98,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Palisade FWD,Palisade,ICE,250.41,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Santa Cruz AWD,Santa Cruz,ICE,240.16,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Santa Cruz FWD,Santa Cruz,ICE,221.21,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Santa Cruz XRT AWD,Santa Cruz,ICE,260.35,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Santa Fe AWD,Santa Fe,ICE,242.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Santa Fe AWD XRT,Santa Fe,ICE,254.14,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Santa Fe FWD,Santa Fe,ICE,233.64,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Santa Fe Hybrid AWD,Santa Fe,HEV,160.31,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Santa Fe Hybrid FWD,Santa Fe,HEV,154.72,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Sonata AWD,Sonata,ICE,196.35,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Sonata FWD,Sonata,ICE,190.35,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Sonata Hybrid,Sonata,HEV,116.82,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Tucson AWD,Tucson,ICE,210.64,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Tucson FWD,Tucson,ICE,200.08,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Tucson Hybrid,Tucson,HEV,157.21,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Tucson Hybrid Blue,Tucson,HEV,145.4,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Tucson Plug-in Hybrid,Tucson,PHEV,64.0,273.4,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+hyundai,2025,Venue,Venue,ICE,180.82,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Carnival,Carnival,ICE,253.52,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,EV6 AWD GT,EV6,BEV,,254.76,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,EV6 Long Range AWD (19 inch Wheels),EV6,BEV,,192.99,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,EV6 Long Range AWD (20 inch Wheels),EV6,BEV,,217.48,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,EV6 Long Range RWD,EV6,BEV,,180.2,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,EV6 Standard Range RWD,EV6,BEV,,180.2,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,EV9 Long Range AWD,EV9,BEV,,254.76,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,EV9 Long Range AWD GT-Line,EV9,BEV,,260.98,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,EV9 Long Range RWD,EV9,BEV,,236.12,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,EV9 Standard Range RWD,EV9,BEV,,236.12,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Forte,Forte,ICE,190.76,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Forte FE,Forte,ICE,162.18,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,K5,K5,ICE,194.18,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,K5 AWD,K5,ICE,196.35,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Niro,Niro,HEV,112.47,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Niro Electric,Niro,BEV,,180.2,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Niro FE,Niro,HEV,103.77,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Seltos AWD,Seltos,ICE,202.57,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Seltos FWD,Seltos,ICE,178.95,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sorento AWD,Sorento,ICE,231.77,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sorento FWD,Sorento,ICE,224.0,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sorento Hybrid AWD,Sorento,HEV,162.8,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sorento Hybrid FWD,Sorento,HEV,150.37,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sorento Plug-in Hybrid,Sorento,PHEV,65.24,267.19,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Soul,Soul,ICE,187.65,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Soul Eco dynamics,Soul,ICE,178.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sportage AWD,Sportage,ICE,225.56,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sportage FWD,Sportage,ICE,195.73,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sportage Hybrid AWD,Sportage,HEV,146.02,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sportage Hybrid FWD,Sportage,HEV,128.0,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sportage Plug-in Hybrid,Sportage,PHEV,59.65,248.55,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Sportage X-pro,Sportage,ICE,213.75,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Telluride AWD,Telluride,ICE,274.65,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2024,Telluride FWD,Telluride,ICE,247.31,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Carnival,Carnival,ICE,264.7,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Carnival Hybrid,Carnival,HEV,170.26,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,EV6 AWD GT,EV6,BEV,,248.55,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,EV6 Long Range AWD (19 inch Wheels),EV6,BEV,,198.84,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,EV6 Long Range AWD (20 inch Wheels),EV6,BEV,,214.9,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,EV6 Long Range RWD,EV6,BEV,,183.81,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,EV6 Standard Range RWD,EV6,BEV,,181.59,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,EV9 Long Range AWD,EV9,BEV,,254.76,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,EV9 Long Range AWD GT-Line,EV9,BEV,,260.98,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,EV9 Long Range RWD,EV9,BEV,,236.12,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,EV9 Standard Range RWD,EV9,BEV,,236.12,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,K4,K4,ICE,173.98,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,K5,K5,ICE,194.49,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,K5 AWD,K5,ICE,204.43,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Niro,Niro,HEV,112.47,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Niro Electric,Niro,BEV,,186.41,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Niro FE,Niro,HEV,103.77,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Niro Plug-in Hybrid,Niro,PHEV,44.12,192.63,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Seltos AWD,Seltos,ICE,204.74,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Seltos FWD,Seltos,ICE,178.95,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sorento AWD,Sorento,ICE,231.77,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sorento FWD,Sorento,ICE,224.0,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sorento Hybrid AWD,Sorento,HEV,163.42,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sorento Hybrid FWD,Sorento,HEV,152.86,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sorento Plug-in Hybrid,Sorento,PHEV,68.97,279.62,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Soul,Soul,ICE,187.65,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Soul Eco dynamics,Soul,ICE,178.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sportage AWD,Sportage,ICE,224.32,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sportage FWD,Sportage,ICE,196.97,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sportage Hybrid AWD,Sportage,HEV,146.02,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sportage Hybrid FWD,Sportage,HEV,128.0,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sportage Plug-in Hybrid,Sportage,PHEV,34.18,248.55,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Sportage X-pro,Sportage,ICE,213.75,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Telluride AWD,Telluride,ICE,274.65,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+kia,2025,Telluride FWD,Telluride,ICE,247.31,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv

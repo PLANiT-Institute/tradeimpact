@@ -1,0 +1,290 @@
+{
+ "accessed_date": "2026-09-04",
+ "dataset": "env_air_gge",
+ "dataset_page": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table?lang=en",
+ "description": "GHG inventory: all GHG from transport (CRF 1.A.3), EU27, million tonnes CO2e",
+ "filters": {
+  "airpol": "GHG",
+  "geo": "EU27_2020",
+  "sinceTimePeriod": "1990",
+  "src_crf": "CRF1A3",
+  "unit": "MIO_T"
+ },
+ "request_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_air_gge?format=JSON&lang=EN&airpol=GHG&src_crf=CRF1A3&unit=MIO_T&geo=EU27_2020&sinceTimePeriod=1990",
+ "response": {
+  "class": "dataset",
+  "dimension": {
+   "airpol": {
+    "category": {
+     "index": {
+      "GHG": 0
+     },
+     "label": {
+      "GHG": "Greenhouse gases (CO2, N2O in CO2 equivalent, CH4 in CO2 equivalent, HFC in CO2 equivalent, PFC in CO2 equivalent, SF6 in CO2 equivalent, NF3 in CO2 equivalent)"
+     }
+    },
+    "label": "Air pollutants and greenhouse gases"
+   },
+   "freq": {
+    "category": {
+     "index": {
+      "A": 0
+     },
+     "label": {
+      "A": "Annual"
+     }
+    },
+    "label": "Time frequency"
+   },
+   "geo": {
+    "category": {
+     "index": {
+      "EU27_2020": 0
+     },
+     "label": {
+      "EU27_2020": "European Union - 27 countries (from 2020)"
+     }
+    },
+    "label": "Geopolitical entity (reporting)"
+   },
+   "src_crf": {
+    "category": {
+     "index": {
+      "CRF1A3": 0
+     },
+     "label": {
+      "CRF1A3": "Fuel combustion in transport"
+     }
+    },
+    "label": "Source sectors for greenhouse gas emissions (Common reporting format, UNFCCC)"
+   },
+   "time": {
+    "category": {
+     "index": {
+      "1990": 0,
+      "1991": 1,
+      "1992": 2,
+      "1993": 3,
+      "1994": 4,
+      "1995": 5,
+      "1996": 6,
+      "1997": 7,
+      "1998": 8,
+      "1999": 9,
+      "2000": 10,
+      "2001": 11,
+      "2002": 12,
+      "2003": 13,
+      "2004": 14,
+      "2005": 15,
+      "2006": 16,
+      "2007": 17,
+      "2008": 18,
+      "2009": 19,
+      "2010": 20,
+      "2011": 21,
+      "2012": 22,
+      "2013": 23,
+      "2014": 24,
+      "2015": 25,
+      "2016": 26,
+      "2017": 27,
+      "2018": 28,
+      "2019": 29,
+      "2020": 30,
+      "2021": 31,
+      "2022": 32,
+      "2023": 33,
+      "2024": 34
+     },
+     "label": {
+      "1990": "1990",
+      "1991": "1991",
+      "1992": "1992",
+      "1993": "1993",
+      "1994": "1994",
+      "1995": "1995",
+      "1996": "1996",
+      "1997": "1997",
+      "1998": "1998",
+      "1999": "1999",
+      "2000": "2000",
+      "2001": "2001",
+      "2002": "2002",
+      "2003": "2003",
+      "2004": "2004",
+      "2005": "2005",
+      "2006": "2006",
+      "2007": "2007",
+      "2008": "2008",
+      "2009": "2009",
+      "2010": "2010",
+      "2011": "2011",
+      "2012": "2012",
+      "2013": "2013",
+      "2014": "2014",
+      "2015": "2015",
+      "2016": "2016",
+      "2017": "2017",
+      "2018": "2018",
+      "2019": "2019",
+      "2020": "2020",
+      "2021": "2021",
+      "2022": "2022",
+      "2023": "2023",
+      "2024": "2024"
+     }
+    },
+    "label": "Time"
+   },
+   "unit": {
+    "category": {
+     "index": {
+      "MIO_T": 0
+     },
+     "label": {
+      "MIO_T": "Million tonnes"
+     }
+    },
+    "label": "Unit of measure"
+   }
+  },
+  "extension": {
+   "agencyId": "ESTAT",
+   "annotation": [
+    {
+     "date": "2015-12-07T08:50:25+0100",
+     "type": "CREATED"
+    },
+    {
+     "title": "<adms:identifier xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core.html\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"><adms:Identifier rdf:about=\"https://doi.org/10.2908/ENV_AIR_GGE\"><skos:notation rdf:datatype=\"http://purl.org/spar/datacite/doi\">10.2908/ENV_AIR_GGE</skos:notation><dct:creator rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/ESTAT\"/><dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2023-01-19</dct:issued></adms:Identifier></adms:identifier>",
+     "type": "DISSEMINATION_DOI_XML"
+    },
+    {
+     "title": "DATASET",
+     "type": "DISSEMINATION_OBJECT_TYPE"
+    },
+    {
+     "date": "2026-06-02T23:00:00+0200",
+     "type": "DISSEMINATION_TIMESTAMP_DATA"
+    },
+    {
+     "date": "2026-06-02T23:00:00+0200",
+     "type": "DISSEMINATION_TIMESTAMP_GLOBAL"
+    },
+    {
+     "date": "2026-06-02T23:00:00+0200",
+     "type": "DISSEMINATION_TIMESTAMP_PLANNED"
+    },
+    {
+     "href": "https://ec.europa.eu/eurostat/cache/metadata/en/env_air_gge_esms.htm",
+     "title": "Explanatory texts (metadata)",
+     "type": "ESMS_HTML"
+    },
+    {
+     "href": "https://ec.europa.eu/eurostat/api/dissemination/files?file=metadata/env_air_gge_esms.sdmx.zip",
+     "title": "Explanatory texts (metadata)",
+     "type": "ESMS_SDMX"
+    },
+    {
+     "title": "1670738",
+     "type": "OBS_COUNT"
+    },
+    {
+     "title": "2024",
+     "type": "OBS_PERIOD_OVERALL_LATEST"
+    },
+    {
+     "title": "1990",
+     "type": "OBS_PERIOD_OVERALL_OLDEST"
+    },
+    {
+     "text": "European Environment Agency (EEA)",
+     "type": "SOURCE_INSTITUTIONS"
+    },
+    {
+     "date": "2026-06-02T23:00:00+0200",
+     "type": "UPDATE_DATA"
+    },
+    {
+     "date": "2026-06-02T23:00:00+0200",
+     "type": "UPDATE_STRUCTURE"
+    }
+   ],
+   "datastructure": {
+    "agencyId": "ESTAT",
+    "id": "ENV_AIR_GGE",
+    "version": "31.0"
+   },
+   "id": "ENV_AIR_GGE",
+   "lang": "EN",
+   "positions-with-no-data": {
+    "airpol": [],
+    "freq": [],
+    "geo": [],
+    "src_crf": [],
+    "time": [],
+    "unit": []
+   },
+   "version": "1.0"
+  },
+  "id": [
+   "freq",
+   "unit",
+   "airpol",
+   "src_crf",
+   "geo",
+   "time"
+  ],
+  "label": "Greenhouse gas emissions by source sector",
+  "size": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   35
+  ],
+  "source": "ESTAT",
+  "updated": "2026-06-02T23:00:00+0200",
+  "value": {
+   "0": 674.68434,
+   "1": 683.32806,
+   "10": 800.23326,
+   "11": 814.06309,
+   "12": 822.8655,
+   "13": 832.08326,
+   "14": 850.50647,
+   "15": 849.89427,
+   "16": 863.13506,
+   "17": 864.55823,
+   "18": 845.60689,
+   "19": 824.00453,
+   "2": 705.11242,
+   "20": 818.10922,
+   "21": 808.60274,
+   "22": 779.04862,
+   "23": 772.93707,
+   "24": 778.79305,
+   "25": 794.32041,
+   "26": 811.89651,
+   "27": 826.65504,
+   "28": 829.42263,
+   "29": 834.82783,
+   "3": 708.57912,
+   "30": 722.49599,
+   "31": 783.78403,
+   "32": 804.7494,
+   "33": 795.64038,
+   "34": 804.76405,
+   "4": 713.86608,
+   "5": 726.7333,
+   "6": 748.86042,
+   "7": 758.53867,
+   "8": 787.59979,
+   "9": 804.15821
+  },
+  "version": "2.0"
+ },
+ "source_id": "eurostat_env_air_gge"
+}

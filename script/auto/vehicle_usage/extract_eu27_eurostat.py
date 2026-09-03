@@ -1,9 +1,12 @@
-"""Extract EU27 passenger-car stock, traffic and age-band series into the usage schema.
+"""Extract EU27 passenger-car stock, traffic and age-band series from the Eurostat cubes.
 
-Reads ``data/auto/vehicle_usage/raw/destination_eu27_inputs.json`` — a hash-pinned copy
-of four Eurostat datasets (see method.md for the links) fetched on the recorded
-``accessed_date`` — and writes ``data/auto/vehicle_usage/processed/vehicle_usage_eu27.csv``
-in long format: one row per country x series x year.
+Inputs  data/auto/vehicle_usage/raw/eurostat_<dataset>.json — JSON-stat 2.0 responses fetched
+        directly from the Eurostat API by ``fetch_eurostat.py`` (request URL, dataset page and
+        response hash inside each file): road_eqs_carpda (stock), road_tf_veh (traffic by cars
+        registered in the country), road_tf_vehmov (traffic on the territory, fallback only),
+        road_eqs_carage (stock by age class).
+Output  data/auto/vehicle_usage/processed/vehicle_usage_eu27.csv — long format, one row per
+        country x series x year, EU27 member states only (Eurostat ``EL`` recoded to ``GR``).
 
 Run from the repository root:  .venv/bin/python script/auto/vehicle_usage/extract_eu27_eurostat.py
 """
@@ -16,67 +19,97 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
 DATASET = REPO / "data" / "auto" / "vehicle_usage"
-RAW = DATASET / "raw" / "destination_eu27_inputs.json"
 OUT = DATASET / "processed" / "vehicle_usage_eu27.csv"
 
-# raw key -> (series name, unit, source_id); source_id resolves in method/method.md
-SERIES = {
-    "car_stock": ("car_stock", "vehicles", "eurostat_road_eqs_carpda"),
-    "car_traffic_mio_vkm": ("car_traffic", "million_vkm", "eurostat_road_tf_veh"),
-    "car_traffic_fallback_mio_vkm": (
-        "car_traffic_fallback",
-        "million_vkm",
-        "eurostat_road_tf_vehmov",
-    ),
+EU27 = {
+    "AT",
+    "BE",
+    "BG",
+    "HR",
+    "CY",
+    "CZ",
+    "DK",
+    "EE",
+    "FI",
+    "FR",
+    "DE",
+    "GR",
+    "HU",
+    "IE",
+    "IT",
+    "LV",
+    "LT",
+    "LU",
+    "MT",
+    "NL",
+    "PL",
+    "PT",
+    "RO",
+    "SK",
+    "SI",
+    "ES",
+    "SE",
 }
-AGE_BANDS = ("car_age_bands", "vehicles", "eurostat_road_eqs_carage")
-
+GEO_RECODE = {"EL": "GR"}
+# raw file -> (series, unit, extra dimension used as a series suffix or None)
+CUBES = {
+    "eurostat_road_eqs_carpda.json": ("car_stock", "vehicles", None),
+    "eurostat_road_tf_veh.json": ("car_traffic", "million_vkm", None),
+    "eurostat_road_tf_vehmov.json": ("car_traffic_fallback", "million_vkm", None),
+    "eurostat_road_eqs_carage.json": ("car_stock_age", "vehicles", "age"),
+}
 FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_file"]
 
 
+def flatten(payload: dict) -> list[tuple[dict[str, str], float]]:
+    """JSON-stat 2.0 cube -> [({dimension: category}, value)]."""
+    ids: list[str] = payload["id"]
+    sizes: list[int] = payload["size"]
+    lookup = [
+        {pos: key for key, pos in payload["dimension"][name]["category"]["index"].items()}
+        for name in ids
+    ]
+    out = []
+    for position, value in payload["value"].items():
+        remainder = int(position)
+        cats: list[str] = []
+        for size, table in zip(reversed(sizes), reversed(lookup), strict=True):
+            cats.append(table[remainder % size])
+            remainder //= size
+        out.append((dict(zip(ids, reversed(cats), strict=True)), float(value)))
+    return out
+
+
 def main() -> None:
-    """Flatten the nested country -> year (-> band) dictionaries to long rows."""
-    snap = json.loads(RAW.read_text())
-    raw = snap["raw"]
+    """Flatten the four cubes to long rows for the 27 member states."""
     out: list[dict[str, object]] = []
-
-    def add(country: str, series: str, year: str, value: object, unit: str, source_id: str) -> None:
-        if value is None:
-            return
-        out.append(
-            {
-                "country": country,
-                "series": series,
-                "year": int(year),
-                "value": float(value),
-                "unit": unit,
-                "source_id": source_id,
-                "source_file": RAW.name,
-            }
-        )
-
-    for key, (series, unit, source_id) in SERIES.items():
-        for country, years in raw[key].items():
-            for year, value in years.items():
-                add(country, series, year, value, unit, source_id)
-
-    key, unit, source_id = AGE_BANDS
-    for country, years in raw[key].items():
-        for year, bands in years.items():
-            for band, value in bands.items():
-                add(country, f"car_stock_age_{band.lower()}", year, value, unit, source_id)
-
+    for name, (series, unit, suffix_dim) in CUBES.items():
+        path = DATASET / "raw" / name
+        snap = json.loads(path.read_text())
+        for cats, value in flatten(snap["response"]):
+            country = GEO_RECODE.get(cats["geo"], cats["geo"])
+            if country not in EU27:
+                continue
+            label = series if suffix_dim is None else f"{series}_{cats[suffix_dim].lower()}"
+            out.append(
+                {
+                    "country": country,
+                    "series": label,
+                    "year": int(cats["time"]),
+                    "value": value,
+                    "unit": unit,
+                    "source_id": snap["source_id"],
+                    "source_file": name,
+                }
+            )
     out.sort(key=lambda r: (str(r["country"]), str(r["series"]), int(str(r["year"]))))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDS)
-        writer.writeheader()
-        writer.writerows(out)
+        w = csv.DictWriter(f, fieldnames=FIELDS)
+        w.writeheader()
+        w.writerows(out)
     countries = {r["country"] for r in out}
-    print(
-        f"{OUT.relative_to(REPO)}: {len(out)} rows, {len(countries)} countries, "
-        f"accessed {snap['accessed_date']}"
-    )
+    print(f"{OUT.relative_to(REPO)}: {len(out)} rows, {len(countries)} countries")
 
 
 if __name__ == "__main__":

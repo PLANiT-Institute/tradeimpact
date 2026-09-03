@@ -1,0 +1,479 @@
+{
+ "accessed_date": "2026-09-04",
+ "dataset": "road_tf_veh",
+ "dataset_page": "https://ec.europa.eu/eurostat/databrowser/view/road_tf_veh/default/table?lang=en",
+ "description": "road traffic by cars registered in the reporting country, million vehicle-km",
+ "filters": {
+  "mot_nrg": "TOTAL",
+  "regisveh": "TER_REGNAT",
+  "sinceTimePeriod": "2015",
+  "unit": "MIO_VKM",
+  "vehicle": "CAR"
+ },
+ "request_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/road_tf_veh?format=JSON&lang=EN&vehicle=CAR&mot_nrg=TOTAL&regisveh=TER_REGNAT&unit=MIO_VKM&sinceTimePeriod=2015",
+ "response": {
+  "class": "dataset",
+  "dimension": {
+   "freq": {
+    "category": {
+     "index": {
+      "A": 0
+     },
+     "label": {
+      "A": "Annual"
+     }
+    },
+    "label": "Time frequency"
+   },
+   "geo": {
+    "category": {
+     "index": {
+      "AT": 17,
+      "BE": 0,
+      "BG": 1,
+      "CH": 26,
+      "CY": 11,
+      "CZ": 2,
+      "DE": 4,
+      "DK": 3,
+      "EE": 5,
+      "ES": 7,
+      "FI": 22,
+      "FR": 8,
+      "GE": 29,
+      "HR": 9,
+      "HU": 14,
+      "IE": 6,
+      "IS": 24,
+      "IT": 10,
+      "LT": 13,
+      "LV": 12,
+      "MK": 28,
+      "MT": 15,
+      "NL": 16,
+      "NO": 25,
+      "PL": 18,
+      "PT": 19,
+      "RO": 20,
+      "SE": 23,
+      "SI": 21,
+      "TR": 30,
+      "UA": 31,
+      "UK": 27
+     },
+     "label": {
+      "AT": "Austria",
+      "BE": "Belgium",
+      "BG": "Bulgaria",
+      "CH": "Switzerland",
+      "CY": "Cyprus",
+      "CZ": "Czechia",
+      "DE": "Germany",
+      "DK": "Denmark",
+      "EE": "Estonia",
+      "ES": "Spain",
+      "FI": "Finland",
+      "FR": "France",
+      "GE": "Georgia",
+      "HR": "Croatia",
+      "HU": "Hungary",
+      "IE": "Ireland",
+      "IS": "Iceland",
+      "IT": "Italy",
+      "LT": "Lithuania",
+      "LV": "Latvia",
+      "MK": "North Macedonia",
+      "MT": "Malta",
+      "NL": "Netherlands",
+      "NO": "Norway",
+      "PL": "Poland",
+      "PT": "Portugal",
+      "RO": "Romania",
+      "SE": "Sweden",
+      "SI": "Slovenia",
+      "TR": "T\u00fcrkiye",
+      "UA": "Ukraine",
+      "UK": "United Kingdom"
+     }
+    },
+    "label": "Geopolitical entity (reporting)"
+   },
+   "mot_nrg": {
+    "category": {
+     "index": {
+      "TOTAL": 0
+     },
+     "label": {
+      "TOTAL": "Total"
+     }
+    },
+    "label": "Motor energy"
+   },
+   "regisveh": {
+    "category": {
+     "index": {
+      "TER_REGNAT": 0
+     },
+     "label": {
+      "TER_REGNAT": "Traffic performed on the national or foreign territory by vehicles registered in the reporting country"
+     }
+    },
+    "label": "Category of vehicle registration and traffic"
+   },
+   "time": {
+    "category": {
+     "index": {
+      "2015": 0,
+      "2016": 1,
+      "2017": 2,
+      "2018": 3,
+      "2019": 4,
+      "2020": 5,
+      "2021": 6,
+      "2022": 7,
+      "2023": 8,
+      "2024": 9
+     },
+     "label": {
+      "2015": "2015",
+      "2016": "2016",
+      "2017": "2017",
+      "2018": "2018",
+      "2019": "2019",
+      "2020": "2020",
+      "2021": "2021",
+      "2022": "2022",
+      "2023": "2023",
+      "2024": "2024"
+     }
+    },
+    "label": "Time"
+   },
+   "unit": {
+    "category": {
+     "index": {
+      "MIO_VKM": 0
+     },
+     "label": {
+      "MIO_VKM": "Million vehicle-kilometres (VKM)"
+     }
+    },
+    "label": "Unit of measure"
+   },
+   "vehicle": {
+    "category": {
+     "index": {
+      "CAR": 0
+     },
+     "label": {
+      "CAR": "Passenger cars"
+     }
+    },
+    "label": "Vehicles"
+   }
+  },
+  "extension": {
+   "agencyId": "ESTAT",
+   "annotation": [
+    {
+     "date": "2023-11-14T17:54:33+0100",
+     "type": "CREATED"
+    },
+    {
+     "title": "<adms:identifier xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core.html\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"><adms:Identifier rdf:about=\"https://doi.org/10.2908/ROAD_TF_VEH\"><skos:notation rdf:datatype=\"http://purl.org/spar/datacite/doi\">10.2908/ROAD_TF_VEH</skos:notation><dct:creator rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/ESTAT\"/><dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2023-01-19</dct:issued></adms:Identifier></adms:identifier>",
+     "type": "DISSEMINATION_DOI_XML"
+    },
+    {
+     "title": "DATASET",
+     "type": "DISSEMINATION_OBJECT_TYPE"
+    },
+    {
+     "date": "2026-03-26T23:00:00+0100",
+     "type": "DISSEMINATION_TIMESTAMP_DATA"
+    },
+    {
+     "date": "2026-07-16T23:00:00+0200",
+     "type": "DISSEMINATION_TIMESTAMP_GLOBAL"
+    },
+    {
+     "date": "2026-07-16T23:00:00+0200",
+     "type": "DISSEMINATION_TIMESTAMP_PLANNED"
+    },
+    {
+     "title": "6791",
+     "type": "OBS_COUNT"
+    },
+    {
+     "title": "2024",
+     "type": "OBS_PERIOD_OVERALL_LATEST"
+    },
+    {
+     "title": "2011",
+     "type": "OBS_PERIOD_OVERALL_OLDEST"
+    },
+    {
+     "text": "Eurostat",
+     "type": "SOURCE_INSTITUTIONS"
+    },
+    {
+     "date": "2026-03-26T23:00:00+0100",
+     "type": "UPDATE_DATA"
+    },
+    {
+     "date": "2025-12-12T11:00:00+0100",
+     "type": "UPDATE_STRUCTURE"
+    }
+   ],
+   "datastructure": {
+    "agencyId": "ESTAT",
+    "id": "ROAD_TF_VEH",
+    "version": "51.0"
+   },
+   "id": "ROAD_TF_VEH",
+   "lang": "EN",
+   "positions-with-no-data": {
+    "freq": [],
+    "geo": [
+     1,
+     3,
+     7,
+     10,
+     11,
+     14,
+     17,
+     18,
+     19,
+     20,
+     26,
+     29,
+     31
+    ],
+    "mot_nrg": [],
+    "regisveh": [],
+    "time": [],
+    "unit": [],
+    "vehicle": []
+   },
+   "status": {
+    "label": {
+     "b": "break in time series",
+     "e": "estimated",
+     "p": "provisional"
+    }
+   },
+   "version": "1.0"
+  },
+  "id": [
+   "freq",
+   "mot_nrg",
+   "regisveh",
+   "vehicle",
+   "unit",
+   "geo",
+   "time"
+  ],
+  "label": "Road traffic performance by category of vehicle registration and traffic, type of vehicle and motor energy",
+  "size": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   32,
+   10
+  ],
+  "source": "ESTAT",
+  "status": {
+   "150": "e",
+   "151": "e",
+   "152": "e",
+   "153": "e",
+   "154": "e",
+   "158": "e",
+   "210": "p",
+   "213": "p",
+   "219": "p",
+   "244": "e",
+   "250": "e",
+   "251": "e",
+   "252": "e",
+   "253": "e",
+   "254": "e",
+   "27": "e",
+   "28": "p",
+   "29": "p",
+   "40": "e",
+   "41": "e",
+   "42": "e",
+   "43": "e",
+   "44": "e",
+   "45": "e",
+   "46": "e",
+   "47": "e",
+   "48": "e",
+   "49": "e",
+   "50": "e",
+   "51": "e",
+   "53": "e",
+   "54": "e",
+   "58": "b"
+  },
+  "updated": "2026-03-26T23:00:00+0100",
+  "value": {
+   "0": 84225,
+   "1": 84306,
+   "120": 9673.3,
+   "121": 9925.1,
+   "122": 10699.2,
+   "123": 10897.6,
+   "124": 11072,
+   "125": 10553.5,
+   "126": 9596.8,
+   "127": 9067.2,
+   "128": 9573.5,
+   "129": 9699.1,
+   "130": 13196.8,
+   "131": 14049.2,
+   "132": 16822.8,
+   "133": 17487,
+   "150": 2132.01,
+   "151": 2681.68,
+   "152": 2744.39,
+   "153": 2622.31,
+   "154": 2408.39,
+   "155": 1878.6,
+   "156": 2290.31,
+   "157": 2321.01,
+   "158": 2391.621,
+   "159": 2349.356,
+   "160": 115913,
+   "161": 118725,
+   "162": 120026,
+   "163": 120339,
+   "164": 121232,
+   "165": 99651,
+   "166": 105425,
+   "167": 114617,
+   "168": 119552,
+   "169": 121957,
+   "2": 84095,
+   "210": 16356,
+   "211": 15990,
+   "212": 16593,
+   "213": 16976,
+   "214": 17263,
+   "215": 14202,
+   "216": 15245,
+   "217": 16606,
+   "218": 17543,
+   "219": 18029,
+   "223": 40718,
+   "224": 40718,
+   "225": 39092,
+   "226": 38771,
+   "227": 38385,
+   "228": 38592,
+   "229": 38619,
+   "230": 65312,
+   "231": 67176,
+   "232": 68082,
+   "233": 68664,
+   "234": 67142,
+   "235": 62823.778,
+   "236": 63850.109,
+   "237": 64851.448,
+   "238": 65057.124,
+   "239": 66146.705,
+   "242": 1530,
+   "243": 1566,
+   "244": 1380,
+   "245": 1599,
+   "250": 34324,
+   "251": 34848,
+   "252": 35301,
+   "253": 35989,
+   "254": 35504,
+   "255": 33873,
+   "256": 35098,
+   "257": 35310,
+   "258": 35676,
+   "259": 35443,
+   "27": 67594.71,
+   "271": 397711,
+   "274": 447077,
+   "275": 336726,
+   "28": 67318.604,
+   "280": 3454.497,
+   "281": 3554.406,
+   "282": 3629.844,
+   "283": 3735.558,
+   "284": 3834.405,
+   "285": 3862.764,
+   "286": 4300.38,
+   "287": 4351.338,
+   "288": 4975.767,
+   "289": 5221.89,
+   "29": 70485.75,
+   "300": 135694.58,
+   "301": 148294.699,
+   "302": 160336.42,
+   "303": 165751.546,
+   "304": 162483.416,
+   "305": 160231.579,
+   "306": 172843.059,
+   "307": 191777.763,
+   "308": 199814.107,
+   "309": 218061.539,
+   "40": 619099,
+   "41": 625915,
+   "42": 630837,
+   "43": 630843,
+   "44": 627950,
+   "45": 622728,
+   "46": 606795,
+   "47": 594477,
+   "48": 591132,
+   "49": 594136,
+   "50": 8476,
+   "51": 8670.2,
+   "52": 8876.1,
+   "53": 8924.1,
+   "54": 9397.2,
+   "55": 9263.3,
+   "56": 9393.4,
+   "57": 9705.4,
+   "58": 6396,
+   "60": 35874,
+   "61": 37488,
+   "62": 38039,
+   "63": 36817,
+   "64": 36300,
+   "65": 26654,
+   "66": 30677,
+   "67": 35583,
+   "68": 35820,
+   "80": 472077.332,
+   "81": 479454.804,
+   "82": 477750.53,
+   "83": 475501.481,
+   "84": 478131.69,
+   "85": 387719.68,
+   "86": 427431.883,
+   "87": 463797.791,
+   "88": 457306.974,
+   "89": 458271.797,
+   "90": 19444,
+   "91": 20809,
+   "92": 21473,
+   "93": 22322,
+   "94": 21463,
+   "95": 20740,
+   "96": 21875,
+   "97": 23381,
+   "98": 24598,
+   "99": 25617
+  },
+  "version": "2.0"
+ },
+ "source_id": "eurostat_road_tf_veh"
+}

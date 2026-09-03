@@ -25,29 +25,36 @@ step from these rows, not stored here, so the tier is always reproducible.
 
 ## Raw files and sources
 
-`destination_eu27_inputs.json` — one hash-pinned JSON holding four Eurostat datasets
-(`road_eqs_carpda` stock, `road_tf_veh` traffic of nationally registered cars,
-`road_tf_vehmov` fallback, `road_eqs_carage` age bands) plus the emissions series used by
-`country_emissions`, each exactly as returned by the API on 2026-08-09. Links, licence and
-hash: [`../../sources.csv`](../../sources.csv), [`../../raw_files.csv`](../../raw_files.csv).
-Only `road_tf_veh` (TER_REGNAT: traffic by cars registered in the country) is used for
-distance — it is the same population as the stock denominator; `road_tf_vehmov` counts all
-traffic on the territory and is kept only as a documented series, never divided by stock.
+EU27: four Eurostat cubes fetched directly from the Eurostat API as JSON-stat 2.0 by
+`script/auto/vehicle_usage/fetch_eurostat.py` (request URL, dataset page, access date and hash
+in [`../../raw_files.csv`](../../raw_files.csv); publisher and licence in
+[`../../sources.csv`](../../sources.csv)): `eurostat_road_eqs_carpda.json` (stock),
+`eurostat_road_tf_veh.json` (traffic by cars registered in the country — the same population
+as the stock denominator, so the only series used for distance), `eurostat_road_tf_vehmov.json`
+(traffic on the territory by any car; kept as a documented series, never divided by stock),
+`eurostat_road_eqs_carage.json` (stock by age class). Fetched values reproduce the previously
+archived compilation exactly, which is therefore no longer kept.
 
 United States: `fhwa_vm1_2023.xlsx` — FHWA Highway Statistics Table VM-1 (`fhwa_vm1_2023`),
 vehicle-miles and registrations by vehicle class for 2023 and 2022. FHWA classes light-duty
 vehicles by wheelbase, not body type: the short-WB class (cars, light vans, small SUVs) is the
 closest match to the EU M1 population and is published as `car_stock` / `car_traffic` (tier B
 for the definitional mismatch); the long-WB class (pickups, large SUVs) is kept as separate
-`ldv_long_wb_*` series. No age-band series is in VM-1, so US operating life needs another
-source before a US result can run: BTS National Transportation Statistics Table 1-26 (average
-age of automobiles and light trucks in operation) is the intended input for the same
-mean-age → lifetime rule used for the EU27; the BTS site refused automated access on
-2026-09-04, so the table is a hand-gathered file (drop the xlsx into the Drive folder
-`Trade/Arc_Trade_Data/Auto/` and it is pinned like the IR workbooks).
+`ldv_long_wb_*` series. No age-band series is in VM-1; US operating life comes from
+`nhtsa_809952_passenger_car_survival.csv` — NHTSA DOT HS 809 952 Table 7 (passenger-car
+survival probability and annual miles by age, 1977–2002 registrations), transcribed from the
+report PDF with page reference (`nhtsa_809952`; tier C for its age) — from which the expected
+and median lifetime are derived. The BTS average-age table (Table 1-26) would be the
+preferred, current input; the BTS site refuses automated access, so it stays a hand-gathered
+option.
 
-Australia: still to collect — ABS Motor Vehicle Census (stock, last edition 31 Jan 2021) and
-BITRE yearbook (passenger-vehicle km); both are report-shaped downloads.
+Australia: `abs_motor_vehicle_census_2021.xls` — ABS Motor Vehicle Census 31 Jan 2021 data
+cube (`abs_motor_vehicle_census_2021`; passenger-vehicle stock, estimated average age and fuel
+mix for 2016, 2020, 2021; the final edition of the census) and
+`abs_survey_motor_vehicle_use_2020.xls` — ABS Survey of Motor Vehicle Use, 12 months to 30
+June 2020 (`abs_survey_motor_vehicle_use_2020`; passenger-vehicle kilometres, vehicles and
+average km per vehicle for 2012–2020; the final edition of the survey). Both downloaded
+directly from the ABS site (links and hashes in `raw_files.csv`).
 
 ## Processed files
 
@@ -55,22 +62,18 @@ BITRE yearbook (passenger-vehicle km); both are report-shaped downloads.
 |---|---|---|
 | `vehicle_usage_eu27.csv` | `script/auto/vehicle_usage/extract_eu27_eurostat.py` | all four series, all 27 markets, 2015 onward, long format |
 | `vehicle_usage_us.csv` | `script/auto/vehicle_usage/extract_fhwa_vm1.py` | US `car_stock`, `car_traffic` (short WB) and `ldv_long_wb_*`, 2022–2023 |
-
-## Sources for the gaps
-
-- US: FHWA VMT statistics; Bureau of Transportation Statistics vehicle survival tables.
-- Australia: ABS Survey of Motor Vehicle Use (discontinued 2020 — last edition + BITRE).
-- EU: already covered by the raw snapshot above (Odyssee-Mure / Eurostat derivations).
+| `vehicle_usage_us_lifetime.csv` | `script/auto/vehicle_usage/extract_nhtsa_survival.py` | US `car_expected_lifetime_years`, `car_median_lifetime_years`, `car_lifetime_distance_km` from the NHTSA survival schedule |
+| `vehicle_usage_au.csv` | `script/auto/vehicle_usage/extract_abs_mvc.py` | AU `car_stock`, `car_mean_age_years`, `car_stock_petrol/diesel/other_fuel`, 2016–2021 |
+| `vehicle_usage_au_smvu.csv` | `script/auto/vehicle_usage/extract_abs_smvu.py` | AU `car_traffic` (million vkm), `car_stock_smvu`, `car_vkt_avg` (km), survey years 2012–2020 |
 
 ## Processing method
 
-Scripts in `script/auto/vehicle_usage/`; output `processed/vehicle_usage.csv`. The EU27
-snapshot is flattened as-is, keeping tier and derivation text; US and Australia rows are
-added by their own scripts as collected.
+Scripts in `script/auto/vehicle_usage/`, one per raw file, each writing its own processed file
+in the long format above. `fetch_eurostat.py` is the only network step for the EU27 and is run
+by hand when a cube must be refreshed (raw files are pinned once obtained).
 
 ## Rules
 
-- More than half of EU27 units currently sit on a proxied (tier C) distance — any result
-  built on this dataset is published as a **direction, not a precise magnitude**, until
-  tiers improve.
+- Just under half of the covered EU27 units sit on a proxied (tier C) distance; above the
+  50 % threshold a result is published as a **direction, not a precise magnitude**.
 - Missing usage input for a market → that market's result is unavailable, never defaulted.

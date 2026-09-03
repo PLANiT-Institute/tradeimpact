@@ -1,0 +1,4 @@
+country,series,year,value,unit,source_id,source_file
+US,car_expected_lifetime_years,2002,12.76,years,nhtsa_809952,nhtsa_809952_passenger_car_survival.csv
+US,car_median_lifetime_years,2002,13.099,years,nhtsa_809952,nhtsa_809952_passenger_car_survival.csv
+US,car_lifetime_distance_km,2002,244851.0,km,nhtsa_809952,nhtsa_809952_passenger_car_survival.csv
