@@ -37,12 +37,16 @@ Second raw file: `owid_carbon_intensity_electricity.csv` — the full OWID graph
 Ember grid intensity (all entities), downloaded 2026-09-04; used for the United States and
 Australia (`source_id` `owid_ember_grid_intensity`, hash in `raw_files.csv`).
 
-Third raw file: `epa_ghg_inventory_2025_table_3_13.csv` — the passenger-car rows of EPA GHG
-Inventory Table 3-13 (`epa_ghg_inventory_2025`), extracted from the inventory PDF text for
-1990, 2005 and 2019–2023 (gasoline and diesel). The main text reports only those years; the
-full annual series lives in the inventory annex and is still to collect, so the US S1 trend
-cannot yet be derived. Australia passenger-car CO2 (DCCEEW National Inventory) is still to
-collect. Grid intensity for both is done.
+Third and fourth raw files, United States: `epa_ghg_inventory_2025_table_3_13.csv` — the
+passenger-car rows of EPA GHG Inventory main-text Table 3-13 (`epa_ghg_inventory_2025`; CO2
+from fuel combustion; 1990, 2005, 2019–2023) — and `epa_ghg_inventory_2025_table_a_91.csv` —
+the passenger-car rows of Annex 3 Table A-91 (`epa_ghg_inventory_2025_annexes`; total GHG by
+fuel, i.e. CO2 plus CH4 and N2O; 1990, 2000, 2010 and every year 2013–2023). Both were
+extracted from the PDF text with the table and page recorded per row. The level series is
+`car_co2` (comparable with the EU CRF CO2); the annual trend series is `car_ghg_co2e`, which
+sits within 0.5 % of `car_co2` where both exist. Australia passenger-car CO2 (DCCEEW National
+Inventory) is still to collect; the ABS, BITRE and DCCEEW sites refused automated access on
+2026-09-04, so those files will be gathered by hand. Grid intensity for both is done.
 
 ## Processed files
 
@@ -50,7 +54,7 @@ collect. Grid intensity for both is done.
 |---|---|---|
 | `country_emissions_eu27.csv` | `script/auto/country_emissions/extract_eu27_snapshot.py` | `car_co2` and `grid_intensity` for 27 markets, EU27 `power_co2` and `transport_ghg` from 1990 |
 | `country_emissions_owid_grid.csv` | `script/auto/country_emissions/extract_owid_grid.py` | `grid_intensity` for US and AU, all years Ember publishes |
-| `country_emissions_us.csv` | `script/auto/country_emissions/extract_epa_inventory.py` | US `car_co2` (gasoline + diesel passenger cars, ktCO2) for the seven years the main text reports |
+| `country_emissions_us.csv` | `script/auto/country_emissions/extract_epa_inventory.py` | US `car_co2` (ktCO2; seven years from Table 3-13) and `car_ghg_co2e` (ktCO2e; 14 years incl. 2013–2023 from Table A-91), gasoline + diesel (+ alternative fuel) passenger cars |
 
 ## Processing method
 
