@@ -1,8 +1,9 @@
 # Stages ST08–ST10 — benchmark, impact, aggregation
 
 Steps 3 to 5 of the research process, in `script/auto/model/`. All three are running **EU27 only**
-as of 2026-09-04, on the markets the data supports: `build_reference.py` and `build_ti.py` have
-produced their outputs, `aggregate_country.py` exists and has not yet written its own. One thing is
+as of 2026-09-04, on the markets the data supports: `build_reference.py`, `build_ti.py` and
+`aggregate_country.py` have all produced their outputs, and `build_database.py` has loaded them into
+`data/auto/tradeimpact_auto.sqlite`. One thing is
 built when it is needed — a benchmark for the markets that are ready, not a framework for markets
 that are not.
 
@@ -114,7 +115,9 @@ directionally indeterminate and does not become a headline.
 **Main goal.** Importer-country and exporter-company totals with the decomposition identity
 intact, tiers declared and withheld units visible.
 
-**Script.** `script/auto/model/aggregate_country.py` — written, not yet run to output.
+**Script.** `script/auto/model/aggregate_country.py` — run 2026-09-04; the decomposition identity
+holds for all six company × scenario rows. `script/auto/model/build_database.py` then loads every
+CSV under `data/auto/` into the single deliverable database.
 
 **Activity.** Sum `V_c,v × TI_product,v,c,S` to country, powertrain and company level; check the
 identity `TI_cohort = Σ_c TI_country = Σ_v TI_type` numerically rather than by construction; attach

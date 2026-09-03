@@ -28,7 +28,11 @@ two that are not.
 | 2026-09-03 | ST02 `sales` | Entered | Four raw files acquired: two EEA snapshots, two IR workbooks | Processing scripts written for all three sources |
 | 2026-09-03 | ST06 `vehicle_technology` | Entered | EEA snapshots carry certified WLTP values on the same rows as the volumes | `vehicle_technology_eea_2024.csv` written; correction and utility factor still unsourced |
 | 2026-09-04 | ST07 provenance | Entered | First processed tables exist | Catalogue and assumptions established; `source_id` gap on the sales tables raised |
-| 2026-09-04 | ST05 `vehicle_usage` | Raw acquired, not processed | Archived EU27 snapshot copied into `raw/` | Processing waits on ST08's need for it |
+| 2026-09-04 | ST05 `vehicle_usage` | Entered and processed | Archived EU27 snapshot in `raw/`; ST08 needed the parameters | `vehicle_usage_eu27.csv` — long-format observations; distance, tier and lifetime bracket derived downstream in ST08 |
+| 2026-09-04 | ST03 `country_emissions` | Entered and processed, EU27 | ST08 needed a base-year level and a grid intensity | `country_emissions_eu27.csv`, four series |
+| 2026-09-04 | ST04 `emission_targets` | Entered and processed, EU27 | ST08 needed the benchmark slopes | `emission_targets_eu27.csv` — S1 observed trend, S2 NDC pro-rata, S3 1.5C pro-rata, `r_fleet` and `r_power` separately |
+| 2026-09-04 | ST08 benchmark | Run, EU27 only | All three input datasets present | `destination_parameters_eu27.csv`, `reference_trajectories_eu27.csv`. Process document was **not** written first — recorded as finding `F-12` |
+| 2026-09-04 | ST09 impact | Run, EU27 only | Benchmark plus volumes and certified values available | `ti_by_model_eu27.csv`, `ti_annual_eu27.csv`, `ti_withheld_eu27.csv` (179 withheld cells). Crossover not emitted — finding `F-06` |
 
 Backward moves are recorded here with the same weight as forward ones. A finding that invalidates a
 premise and sends work back is the process working; the entry states the trigger and what it cost.
