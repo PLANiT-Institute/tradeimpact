@@ -26,7 +26,14 @@ The pipeline reproduces the previously published EU27 2024 result
 (`archive/data/published/lifetime_results.json`) to a relative error below 2 × 10⁻⁷ on every
 company × scenario total, and every destination × powertrain cell agrees to rounding.
 Destination parameters (distance, fleet intensity, grid, lifetime, tiers) match
-`archive/data/published/destination_inputs.json` exactly for all 27 markets.
+`archive/data/published/destination_inputs.json` exactly for all 27 markets. Crossover years
+agree with the archived run on every matched cell (3,191 of 3,321; the rest differ only in
+the rounding used to match them) and the lifetime ±3-year sensitivities agree to 3 × 10⁻⁷.
+
+One deliberate deviation: the proxied-distance sensitivity here holds the benchmark per
+vehicle fixed (distance cancels in CO2 per car, as the archived run's own warning text says)
+and scales only the product side; the archived numbers let the benchmark move as well, so
+they are 13–24 % wider and are not reproduced.
 
 ## Run order
 
