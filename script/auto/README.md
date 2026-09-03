@@ -14,6 +14,7 @@ vehicle_technology/   extract_eea_certified.py
 model/
   build_reference.py    step 3: destination parameters + dynamic benchmark E_ref(t), G(t)
   build_ti.py           step 4: lifetime TI per company x market x model x powertrain x scenario
+  build_sensitivity.py  step 4b: crossover year per cell; lifetime, real-world, distance sensitivities
   aggregate_country.py  step 5: country, powertrain and company totals + decomposition check
   build_database.py     final: every CSV under data/auto -> data/auto/tradeimpact_auto.sqlite
 ```
