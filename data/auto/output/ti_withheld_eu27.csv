@@ -1,37 +1,4 @@
 company,destination,model,powertrain,units,reason
-honda,BE,CIVIC 5DR,ICE,1,the registration dataset reports no certified intensity for this cell
-honda,CZ,CIVIC 5DR,ICE,1,the registration dataset reports no certified intensity for this cell
-honda,DE,,ICE,1,the registration dataset reports no certified intensity for this cell
-honda,DE,CIVIC SPORT,ICE,3,the registration dataset reports no certified intensity for this cell
-honda,DE,HONDA CR-V,ICE,2,the registration dataset reports no certified intensity for this cell
-honda,DE,HONDA HR-V,ICE,1,the registration dataset reports no certified intensity for this cell
-honda,SK,CIVIC 5DR,ICE,1,the registration dataset reports no certified intensity for this cell
-honda,AT,CR-V PHEV 2.0 ADVANC,PHEV,35,no sourced utility factor: the registration data publish only combined values
-honda,BE,CR-V,PHEV,117,no sourced utility factor: the registration data publish only combined values
-honda,BG,HONDA CRV,PHEV,4,no sourced utility factor: the registration data publish only combined values
-honda,CZ,CR-V,PHEV,64,no sourced utility factor: the registration data publish only combined values
-honda,DE,HONDA CR-V,PHEV,267,no sourced utility factor: the registration data publish only combined values
-honda,DK,CR-V E:PHEV,PHEV,103,no sourced utility factor: the registration data publish only combined values
-honda,EE,CR-V,PHEV,25,no sourced utility factor: the registration data publish only combined values
-honda,ES,CR-V,PHEV,91,no sourced utility factor: the registration data publish only combined values
-honda,FI,CR-V,PHEV,37,no sourced utility factor: the registration data publish only combined values
-honda,FR,CR-V,PHEV,167,no sourced utility factor: the registration data publish only combined values
-honda,GR,CR-V,PHEV,7,no sourced utility factor: the registration data publish only combined values
-honda,HR,CR-V,PHEV,6,no sourced utility factor: the registration data publish only combined values
-honda,HU,CR-V,PHEV,29,no sourced utility factor: the registration data publish only combined values
-honda,IE,CR-V,PHEV,39,no sourced utility factor: the registration data publish only combined values
-honda,IT,CR-V,PHEV,76,no sourced utility factor: the registration data publish only combined values
-honda,LT,CR-V,PHEV,8,no sourced utility factor: the registration data publish only combined values
-honda,LU,CR-V,PHEV,4,no sourced utility factor: the registration data publish only combined values
-honda,LV,CR-V,PHEV,5,no sourced utility factor: the registration data publish only combined values
-honda,MT,CR-V,PHEV,1,no sourced utility factor: the registration data publish only combined values
-honda,NL,CR-V,PHEV,117,no sourced utility factor: the registration data publish only combined values
-honda,PL,CR-V,PHEV,133,no sourced utility factor: the registration data publish only combined values
-honda,PT,CR-V,PHEV,61,no sourced utility factor: the registration data publish only combined values
-honda,RO,CR-V,PHEV,29,no sourced utility factor: the registration data publish only combined values
-honda,SE,CR-V,PHEV,43,no sourced utility factor: the registration data publish only combined values
-honda,SI,CR-V / 2.0 / PHEV / AVT / 2WD,PHEV,2,no sourced utility factor: the registration data publish only combined values
-honda,SK,CR-V,PHEV,26,no sourced utility factor: the registration data publish only combined values
 hyundai,DE,,BEV,8,the registration dataset reports no certified intensity for this cell
 hyundai,DE,AX1,BEV,8,the registration dataset reports no certified intensity for this cell
 hyundai,DE,CE,BEV,2,the registration dataset reports no certified intensity for this cell
@@ -47,6 +14,11 @@ hyundai,DE,NE PE,BEV,5,the registration dataset reports no certified intensity f
 hyundai,DE,NE-N,BEV,2,the registration dataset reports no certified intensity for this cell
 hyundai,DE,SX2,BEV,1,the registration dataset reports no certified intensity for this cell
 hyundai,DE,SX2 E,BEV,2,the registration dataset reports no certified intensity for this cell
+hyundai,LU,GV60 GENESIS GV60,BEV,1,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,IONIQ5,BEV,168,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,IONIQ5 N,BEV,18,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,IONIQ6,BEV,76,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,KONA KAUAI,BEV,231,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
 hyundai,BE,NEXO,FCEV,2,no sourced hydrogen supply emissions intensity for the destination
 hyundai,DE,NEXO,FCEV,8,no sourced hydrogen supply emissions intensity for the destination
 hyundai,DE,NH2,FCEV,2,no sourced hydrogen supply emissions intensity for the destination
@@ -54,8 +26,25 @@ hyundai,ES,NEXO,FCEV,7,no sourced hydrogen supply emissions intensity for the de
 hyundai,FR,NEXO,FCEV,1,no sourced hydrogen supply emissions intensity for the destination
 hyundai,SE,NEXO,FCEV,2,no sourced hydrogen supply emissions intensity for the destination
 hyundai,DE,PALISADE,HEV,2,the registration dataset reports no certified intensity for this cell
+hyundai,LU,BAYON,HEV,11,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,G90 GENESIS G90,HEV,1,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,I 30,HEV,42,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,KONA KAUAI,HEV,92,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,SANTA FE,HEV,3,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,TUCSON IX35,HEV,246,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
 hyundai,DE,I20 N RALLY 2,ICE,17,the registration dataset reports no certified intensity for this cell
 hyundai,DE,PALISADE,ICE,1,the registration dataset reports no certified intensity for this cell
+hyundai,LU,BAYON,ICE,23,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,G80 GENESIS G80,ICE,1,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,I 30,ICE,8,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,I 30 N,ICE,51,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,I10,ICE,71,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,I20,ICE,103,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,I20 N,ICE,8,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,KONA KAUAI,ICE,97,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,KONA N KAUAI N,ICE,6,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,STARIA,ICE,4,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+hyundai,LU,STARIA PREMIUM,ICE,7,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
 hyundai,RO,TUCSON IX35 LM,ICE,1,the registration dataset reports no certified intensity for this cell
 hyundai,AT,SANTA FE,PHEV,140,no sourced utility factor: the registration data publish only combined values
 hyundai,AT,TUCSON IX35,PHEV,312,no sourced utility factor: the registration data publish only combined values
@@ -127,9 +116,27 @@ kia,DE,SV,BEV,10,the registration dataset reports no certified intensity for thi
 kia,DE,SW,BEV,2,the registration dataset reports no certified intensity for this cell
 kia,DE,SW1,BEV,1,the registration dataset reports no certified intensity for this cell
 kia,DE,SZ1,BEV,3,the registration dataset reports no certified intensity for this cell
+kia,LU,EV3,BEV,34,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,EV6,BEV,204,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,EV9,BEV,57,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,NIRO,BEV,64,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,SOUL,BEV,5,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,CEED,HEV,36,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,NIRO,HEV,38,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,SORENTO,HEV,19,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,SPORTAGE,HEV,257,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,STONIC,HEV,10,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,XCEED,HEV,18,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
 kia,DE,KIA TELLURIDE,ICE,1,the registration dataset reports no certified intensity for this cell
 kia,DE,RAY,ICE,3,the registration dataset reports no certified intensity for this cell
 kia,DE,TELLURIDE,ICE,2,the registration dataset reports no certified intensity for this cell
+kia,LU,CEED,ICE,102,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,PICANTO,ICE,266,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,PROCEED,ICE,34,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,SORENTO,ICE,11,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,SPORTAGE,ICE,4,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,STONIC,ICE,234,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
+kia,LU,XCEED,ICE,50,"destination benchmark withheld: the national car CO2 inventory and the registered stock cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible benchmark exists; market reported separately"
 kia,AT,CEED,PHEV,1,no sourced utility factor: the registration data publish only combined values
 kia,AT,NIRO,PHEV,11,no sourced utility factor: the registration data publish only combined values
 kia,AT,SORENTO,PHEV,27,no sourced utility factor: the registration data publish only combined values
@@ -239,102 +246,3 @@ kia,SK,NIRO,PHEV,7,no sourced utility factor: the registration data publish only
 kia,SK,SORENTO,PHEV,17,no sourced utility factor: the registration data publish only combined values
 kia,SK,SPORTAGE,PHEV,104,no sourced utility factor: the registration data publish only combined values
 kia,SK,XCEED,PHEV,7,no sourced utility factor: the registration data publish only combined values
-toyota,BE,BZ4X,BEV,1,the registration dataset reports no certified intensity for this cell
-toyota,DE,PROACE VERSO,BEV,7,the registration dataset reports no certified intensity for this cell
-toyota,AT,TOYOTA MIRAI,FCEV,1,no sourced hydrogen supply emissions intensity for the destination
-toyota,BE,TOYOTA MIRAI,FCEV,4,no sourced hydrogen supply emissions intensity for the destination
-toyota,DE,TOYOTA MIRAI,FCEV,148,no sourced hydrogen supply emissions intensity for the destination
-toyota,EE,TOYOTA MIRAI,FCEV,5,no sourced hydrogen supply emissions intensity for the destination
-toyota,FR,TOYOTA MIRAI,FCEV,530,no sourced hydrogen supply emissions intensity for the destination
-toyota,HU,TOYOTA MIRAI,FCEV,1,no sourced hydrogen supply emissions intensity for the destination
-toyota,IT,TOYOTA MIRAI,FCEV,1,no sourced hydrogen supply emissions intensity for the destination
-toyota,DE,SEQUOIA HYBRID,HEV,3,the registration dataset reports no certified intensity for this cell
-toyota,DE,SEQUOIA TRD PRO HYBRID,HEV,1,the registration dataset reports no certified intensity for this cell
-toyota,DE,TOYOTA SEQUOIA,HEV,1,the registration dataset reports no certified intensity for this cell
-toyota,DE,TOYOTA SEQUOIA HYBRID,HEV,5,the registration dataset reports no certified intensity for this cell
-toyota,DE,CAMRY LE,ICE,6,the registration dataset reports no certified intensity for this cell
-toyota,DE,CAMRY SE,ICE,1,the registration dataset reports no certified intensity for this cell
-toyota,DE,COROLLA GR,ICE,1,the registration dataset reports no certified intensity for this cell
-toyota,DE,HIGHLANDER XLE,ICE,1,the registration dataset reports no certified intensity for this cell
-toyota,DE,LAND CRUISER 300 SERIES,ICE,3,the registration dataset reports no certified intensity for this cell
-toyota,DE,TOYOTA 4-RUNNER,ICE,1,the registration dataset reports no certified intensity for this cell
-toyota,DE,TOYOTA COROLLA GR,ICE,1,the registration dataset reports no certified intensity for this cell
-toyota,AT,TOYOTA C-HR,PHEV,96,no sourced utility factor: the registration data publish only combined values
-toyota,AT,TOYOTA PRIUS PHEV,PHEV,59,no sourced utility factor: the registration data publish only combined values
-toyota,AT,TOYOTA RAV4,PHEV,196,no sourced utility factor: the registration data publish only combined values
-toyota,BE,TOYOTA C-HR,PHEV,158,no sourced utility factor: the registration data publish only combined values
-toyota,BE,TOYOTA PRIUS PHEV,PHEV,74,no sourced utility factor: the registration data publish only combined values
-toyota,BE,TOYOTA RAV4,PHEV,691,no sourced utility factor: the registration data publish only combined values
-toyota,BG,TOYOTA C-HR,PHEV,66,no sourced utility factor: the registration data publish only combined values
-toyota,BG,TOYOTA PRIUS PHEV,PHEV,11,no sourced utility factor: the registration data publish only combined values
-toyota,BG,TOYOTA RAV4,PHEV,215,no sourced utility factor: the registration data publish only combined values
-toyota,CY,RAV4,PHEV,1,no sourced utility factor: the registration data publish only combined values
-toyota,CY,TOYOTA RAV4,PHEV,6,no sourced utility factor: the registration data publish only combined values
-toyota,CZ,TOYOTA C-HR,PHEV,96,no sourced utility factor: the registration data publish only combined values
-toyota,CZ,TOYOTA PRIUS PHEV,PHEV,85,no sourced utility factor: the registration data publish only combined values
-toyota,CZ,TOYOTA RAV4,PHEV,302,no sourced utility factor: the registration data publish only combined values
-toyota,DE,TOYOTA C-HR,PHEV,946,no sourced utility factor: the registration data publish only combined values
-toyota,DE,TOYOTA PRIUS PHEV,PHEV,198,no sourced utility factor: the registration data publish only combined values
-toyota,DE,TOYOTA RAV4,PHEV,702,no sourced utility factor: the registration data publish only combined values
-toyota,DK,TOYOTA C-HR,PHEV,171,no sourced utility factor: the registration data publish only combined values
-toyota,DK,TOYOTA PRIUS PHEV,PHEV,55,no sourced utility factor: the registration data publish only combined values
-toyota,DK,TOYOTA RAV4,PHEV,268,no sourced utility factor: the registration data publish only combined values
-toyota,EE,TOYOTA C-HR,PHEV,32,no sourced utility factor: the registration data publish only combined values
-toyota,EE,TOYOTA PRIUS PHEV,PHEV,17,no sourced utility factor: the registration data publish only combined values
-toyota,EE,TOYOTA RAV4,PHEV,119,no sourced utility factor: the registration data publish only combined values
-toyota,ES,TOYOTA C-HR,PHEV,2154,no sourced utility factor: the registration data publish only combined values
-toyota,ES,TOYOTA RAV4,PHEV,1435,no sourced utility factor: the registration data publish only combined values
-toyota,FI,TOYOTA C-HR,PHEV,252,no sourced utility factor: the registration data publish only combined values
-toyota,FI,TOYOTA PRIUS PHEV,PHEV,131,no sourced utility factor: the registration data publish only combined values
-toyota,FI,TOYOTA RAV4,PHEV,738,no sourced utility factor: the registration data publish only combined values
-toyota,FR,TOYOTA C-HR,PHEV,1383,no sourced utility factor: the registration data publish only combined values
-toyota,FR,TOYOTA PRIUS PHEV,PHEV,639,no sourced utility factor: the registration data publish only combined values
-toyota,FR,TOYOTA RAV4,PHEV,1886,no sourced utility factor: the registration data publish only combined values
-toyota,GR,TOYOTA C-HR,PHEV,226,no sourced utility factor: the registration data publish only combined values
-toyota,GR,TOYOTA PRIUS PHEV,PHEV,7,no sourced utility factor: the registration data publish only combined values
-toyota,GR,TOYOTA RAV4,PHEV,129,no sourced utility factor: the registration data publish only combined values
-toyota,HR,RAV 4,PHEV,1,no sourced utility factor: the registration data publish only combined values
-toyota,HR,TOYOTA C-HR,PHEV,32,no sourced utility factor: the registration data publish only combined values
-toyota,HR,TOYOTA PRIUS PHEV,PHEV,16,no sourced utility factor: the registration data publish only combined values
-toyota,HR,TOYOTA RAV4,PHEV,48,no sourced utility factor: the registration data publish only combined values
-toyota,HU,TOYOTA C-HR,PHEV,105,no sourced utility factor: the registration data publish only combined values
-toyota,HU,TOYOTA PRIUS PHEV,PHEV,41,no sourced utility factor: the registration data publish only combined values
-toyota,HU,TOYOTA PRIUS PHV,PHEV,1,no sourced utility factor: the registration data publish only combined values
-toyota,HU,TOYOTA RAV4,PHEV,73,no sourced utility factor: the registration data publish only combined values
-toyota,IE,TOYOTA C-HR,PHEV,236,no sourced utility factor: the registration data publish only combined values
-toyota,IE,TOYOTA PRIUS PHEV,PHEV,151,no sourced utility factor: the registration data publish only combined values
-toyota,IE,TOYOTA RAV4,PHEV,542,no sourced utility factor: the registration data publish only combined values
-toyota,IT,TOYOTA C-HR,PHEV,1805,no sourced utility factor: the registration data publish only combined values
-toyota,IT,TOYOTA PRIUS PHEV,PHEV,226,no sourced utility factor: the registration data publish only combined values
-toyota,IT,TOYOTA RAV4,PHEV,660,no sourced utility factor: the registration data publish only combined values
-toyota,LT,TOYOTA C-HR,PHEV,29,no sourced utility factor: the registration data publish only combined values
-toyota,LT,TOYOTA PRIUS PHEV,PHEV,8,no sourced utility factor: the registration data publish only combined values
-toyota,LT,TOYOTA RAV4,PHEV,337,no sourced utility factor: the registration data publish only combined values
-toyota,LU,TOYOTA C-HR,PHEV,3,no sourced utility factor: the registration data publish only combined values
-toyota,LU,TOYOTA PRIUS PHEV,PHEV,2,no sourced utility factor: the registration data publish only combined values
-toyota,LU,TOYOTA RAV4,PHEV,21,no sourced utility factor: the registration data publish only combined values
-toyota,LV,TOYOTA C-HR,PHEV,14,no sourced utility factor: the registration data publish only combined values
-toyota,LV,TOYOTA PRIUS PHEV,PHEV,6,no sourced utility factor: the registration data publish only combined values
-toyota,LV,TOYOTA RAV4,PHEV,66,no sourced utility factor: the registration data publish only combined values
-toyota,MT,TOYOTA C-HR,PHEV,5,no sourced utility factor: the registration data publish only combined values
-toyota,MT,TOYOTA RAV4,PHEV,4,no sourced utility factor: the registration data publish only combined values
-toyota,NL,TOYOTA C-HR,PHEV,697,no sourced utility factor: the registration data publish only combined values
-toyota,NL,TOYOTA PRIUS PHEV,PHEV,149,no sourced utility factor: the registration data publish only combined values
-toyota,NL,TOYOTA RAV4,PHEV,377,no sourced utility factor: the registration data publish only combined values
-toyota,PL,TOYOTA C-HR,PHEV,409,no sourced utility factor: the registration data publish only combined values
-toyota,PL,TOYOTA PRIUS PHEV,PHEV,136,no sourced utility factor: the registration data publish only combined values
-toyota,PL,TOYOTA RAV4,PHEV,777,no sourced utility factor: the registration data publish only combined values
-toyota,PT,TOYOTA C-HR,PHEV,358,no sourced utility factor: the registration data publish only combined values
-toyota,PT,TOYOTA PRIUS PHEV,PHEV,145,no sourced utility factor: the registration data publish only combined values
-toyota,PT,TOYOTA RAV4,PHEV,530,no sourced utility factor: the registration data publish only combined values
-toyota,RO,TOYOTA C-HR,PHEV,64,no sourced utility factor: the registration data publish only combined values
-toyota,RO,TOYOTA PRIUS PHEV,PHEV,22,no sourced utility factor: the registration data publish only combined values
-toyota,RO,TOYOTA RAV4,PHEV,500,no sourced utility factor: the registration data publish only combined values
-toyota,SE,TOYOTA C-HR,PHEV,542,no sourced utility factor: the registration data publish only combined values
-toyota,SE,TOYOTA RAV4,PHEV,945,no sourced utility factor: the registration data publish only combined values
-toyota,SI,TOYOTA C-HR,PHEV,41,no sourced utility factor: the registration data publish only combined values
-toyota,SI,TOYOTA PRIUS PHEV,PHEV,17,no sourced utility factor: the registration data publish only combined values
-toyota,SI,TOYOTA RAV4,PHEV,45,no sourced utility factor: the registration data publish only combined values
-toyota,SK,TOYOTA C-HR,PHEV,49,no sourced utility factor: the registration data publish only combined values
-toyota,SK,TOYOTA PRIUS PHEV,PHEV,37,no sourced utility factor: the registration data publish only combined values
-toyota,SK,TOYOTA RAV4,PHEV,95,no sourced utility factor: the registration data publish only combined values

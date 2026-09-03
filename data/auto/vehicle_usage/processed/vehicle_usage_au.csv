@@ -1,0 +1,16 @@
+country,series,year,value,unit,source_id,source_file
+AU,car_mean_age_years,2016,9.8,years,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_mean_age_years,2020,10.1,years,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_mean_age_years,2021,10.4,years,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock,2016,13815107.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock,2020,14679249.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock,2021,14850675.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock_diesel,2016,1464429.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock_diesel,2020,1948298.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock_diesel,2021,2036876.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock_other_fuel,2016,297948.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock_other_fuel,2020,261001.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock_other_fuel,2021,289203.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock_petrol,2016,12052730.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock_petrol,2020,12469950.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls
+AU,car_stock_petrol,2021,12524596.0,vehicles,abs_motor_vehicle_census_2021,abs_motor_vehicle_census_2021.xls

@@ -21,10 +21,14 @@ import json
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
-# Every pinned brand snapshot in the sales dataset; company = EEA make (Mk) in lower case.
+SCOPE = REPO / "data" / "auto" / "sales" / "method" / "companies.csv"
+IN_SCOPE = {r["company"] for r in csv.DictReader(SCOPE.open(newline="")) if r["in_scope"] == "yes"}
+# Every pinned brand snapshot whose company is in scope (EEA make Mk, lower case).
 RAW = {
-    json.loads(p.read_text())["brand_filter"].split("=", 1)[1].lower(): p
+    brand: p
     for p in sorted((REPO / "data" / "auto" / "sales" / "raw").glob("eea_*_final.json"))
+    for brand in [json.loads(p.read_text())["brand_filter"].split("=", 1)[1].lower()]
+    if brand in IN_SCOPE
 }
 OUT = (
     REPO / "data" / "auto" / "vehicle_technology" / "processed" / "vehicle_technology_eea_2024.csv"

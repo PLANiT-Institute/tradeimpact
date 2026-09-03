@@ -8,8 +8,10 @@ the engagement is governed by the Climate Arc grant proposal (see `claude-docs/`
 
 ## Research process
 
-1. **Targets** — exporters: Hyundai, Kia (Korea); Toyota, Honda (Japan). Importers: EU27
-   member states, United States, Australia.
+1. **Targets** — exporters: Hyundai and Kia (Korea) now; the Japanese exporters are
+   deferred (their EEA snapshots stay pinned, `in_scope = no` in
+   `data/auto/sales/method/companies.csv`). Importers: EU27 member states, United States,
+   Australia.
 2. **Gather data** — per importer: sector and electricity emissions, emission targets
    (NDC and sector standards); vehicle usage (distance, lifetime, stock); vehicle
    technology (certified intensity, real-world correction, utility factors); and the
@@ -48,25 +50,16 @@ moved the totals 1–13 % (see `data/auto/output/method.md`, Verification).
 
 | Exporter (EU27, 2024) | Registrations | Covered | S1 current | S2 committed | S3 1.5 °C |
 |---|---|---|---|---|---|
-| Toyota | 803,094 | 96.9 % | −1.59 MtCO₂e | −6.15 | −14.14 |
-| Honda | 40,270 | 96.3 % | −0.14 | −0.36 | −0.75 |
-| Hyundai | 429,936 | 95.6 % | −1.57 | −3.80 | −7.86 |
-| Kia | 414,677 | 91.7 % | −1.44 | −3.50 | −7.25 |
+| Hyundai | 429,936 | 95.4 % | −1.66 MtCO₂e | −3.82 | −8.00 |
+| Kia | 414,677 | 91.4 % | −1.52 | −3.49 | −7.37 |
 
 Negative = lifetime emissions above the destination's committed benchmark (lock-in
-liability). Withheld units (PHEV, FCEV, no certified value) are listed, not absorbed. Toyota
-and Honda have more than half their covered units in markets whose distance is an EU-average
-proxy (tier C), so under guideline §5.3 their figures are published as a **direction, not a
-magnitude** (`ti_data_quality_eu27.csv`, `directional_only`); Hyundai (48.6 %) and Kia
-(48.4 %) sit just under the 50 % rule and are magnitude-bearing but proxy-heavy.
-
-Setup and full run (every extraction, derivation and model step, then lint and tests; stops
-at the first failure):
-
-```bash
-uv venv .venv && uv pip install pandas openpyxl ruff pytest --python .venv/bin/python
-.venv/bin/python script/auto/run_all.py
-```
+liability). Withheld units (PHEV, FCEV, no certified value, and Luxembourg's 2,711 units
+whose national benchmark is implausible) are listed, not absorbed. Both brands have just
+under half their covered units in markets whose distance is an EU-average proxy (tier C:
+48.5 % and 48.2 %), so magnitudes are published but proxy-heavy (guideline §5.3 threshold
+50 %). Five methodological calls made on 2026-09-04 are recorded in
+`data/auto/output/method.md` and `claude-docs/log/README.md`.
 
 ## Naming convention
 

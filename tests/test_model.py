@@ -90,6 +90,8 @@ def test_sales_totals_match_snapshots() -> None:
     for path in SALES_RAW.glob("eea_*_final.json"):
         snap = json.loads(path.read_text())
         brand = snap["brand_filter"].split("=", 1)[1].lower()
+        if brand not in sales:
+            continue  # pinned but out of scope
         assert sales[brand] == int(snap["response"]["aggregations"]["registrations"]["value"]), (
             brand
         )

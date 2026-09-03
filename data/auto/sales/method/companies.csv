@@ -1,0 +1,5 @@
+company,country,in_scope,note
+hyundai,KR,yes,Hyundai Motor Company brand (EEA Mk=HYUNDAI)
+kia,KR,yes,Kia Corporation brand (EEA Mk=KIA)
+toyota,JP,no,deferred by the project lead on 2026-09-04; snapshot stays pinned for later
+honda,JP,no,deferred by the project lead on 2026-09-04; snapshot stays pinned for later

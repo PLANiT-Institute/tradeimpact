@@ -35,7 +35,7 @@ Toyota, Honda, Hyundai and Kia, with EPA certification values for the technology
 (3) ABS Motor Vehicle Census 9309.0 data cube (AU stock and age); (4) BITRE yearbook road-transport
 passenger-vehicle km (AU distance); (5) DCCEEW National Inventory transport tables (AU passenger-car
 CO2); (6) 2024 AU sales by model and powertrain. Neither market can enter a result until then; the
-automated loop was stopped on 2026-09-04 for that reason. `script/auto/run_all.py` now runs the whole
+automated loop was stopped on 2026-09-04; later the same day the lead asked for the files to be fetched by the pipeline where sites permit: the ABS Motor Vehicle Census 2021 (stock 14.85 million passenger vehicles, mean age 10.4 y) and Survey of Motor Vehicle Use 2020 (11,100 km/vehicle in 2020; 12,600 in 2018) were obtained; BTS, BITRE and DCCEEW still refuse automated access; EPA and FHWA were obtained earlier. `script/auto/run_all.py` now runs the whole
 chain fail-fast before any commit. Their absence is counted, not
 assumed away: the Kia and Hyundai IR tables are processed but cannot enter
 a country-level result as they stand (regions and plant-side sales respectively).
@@ -103,7 +103,7 @@ baseline.
 | PH1/3 reference benchmark built | ST08 | partial — 27 markets × 3 scenarios exist, unverified |
 | PH1/4 impact built | ST09 | partial — per-cell TI, crossover year and the three guideline sensitivities exist for EU27; no P10/P50/P90 range (`B-07`) |
 | PH1/5 aggregated to country and company | ST10 | partial — EU27 country, powertrain and company tables exist, identity holds |
-| PH1/6 verified | ST11 | partial — engine independently re-derived (Honda, exact); inputs corrected once; open review items (LU implausible benchmark, rising-trend markets, segment ratio, flat S2 grid) await a lead decision |
+| PH1/6 verified | ST11 | partial — engine independently re-derived (Honda, exact); inputs corrected once; the lead's five decisions of 2026-09-04 are applied (LU withheld, segment ratio 1.0 disclosed, S2 grid floored at the S1 trend, age bands capped at the cohort year, Japanese exporters deferred) |
 | PH1/7 published | ST14 | **unserved** |
 | PH2/1–7 | ST12, ST14 | **unserved** |
 | PH3/1–4 | ST13 | **unserved** |
