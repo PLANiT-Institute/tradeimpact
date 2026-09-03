@@ -4,8 +4,9 @@ The single live tracking document. Current state only — history is in
 [`log/README.md`](log/README.md), specifications are in `phases/`, `stages/` and `process/`.
 
 **Last pass:** 2026-09-04 (design, conformance and state; state refreshed after ST10 and the
-database build the same day; refreshed again after the Kia and Honda EU27 acquisition). **Next
-pass due:** at the first United States or Australia input table, or at any charter change.
+database build the same day; refreshed after the Kia and Honda EU27 acquisition, the independent
+review, and the first US/AU inputs). **Next pass due:** when US or AU passenger-car CO2, stock
+or distance series land, or at any charter change.
 
 ## 1. Where we are
 
@@ -17,8 +18,11 @@ lookup, output and source table into `data/auto/tradeimpact_auto.sqlite` (21 tab
 
 Kia and Honda EU27 2024 registrations were acquired on 2026-09-04 from the same EEA query, so all
 four exporters now sit on one destination boundary (Kia 414,677 and Honda 40,270 registrations;
-both net liabilities in every scenario). The United States and Australia remain later acquisition.
-Their absence is counted, not assumed away: the Kia and Hyundai IR tables are processed but cannot enter
+both net liabilities in every scenario). For the United States and Australia the first inputs exist
+(Ember grid intensity 2000–2025 for both; NDC anchors hand-transcribed with `verified = no` — the
+US is a FLAG market with no NDC in force); passenger-car CO2, stock, distance and model-level sales
+are still to collect, so neither market can enter a result yet. Their absence is counted, not
+assumed away: the Kia and Hyundai IR tables are processed but cannot enter
 a country-level result as they stand (regions and plant-side sales respectively).
 
 Crossover years per cell and the lifetime, real-world and proxied-distance sensitivities now
