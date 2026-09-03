@@ -9,9 +9,11 @@ Outputs  output/ti_crossover_eu27.csv     per company x destination x model x po
 Algorithm:
     Crossover t* is the year the annual gap changes sign (closed form, whitepaper §3.3 note,
     guideline §3.3):
-    $$ t^*_{ICE} = \\frac{\\ln\\big(E_{prod}/E_{ref}(0)\\big)}{\\ln(1-r_{fleet})},\\qquad
-       t^*_{BEV} = \\frac{\\ln\\big(\\eta G_0 / I_0\\big)}{\\ln\\big((1-r_{fleet})/(1-r_{power})\\big)} $$
-    ASCII: t_ice = ln(E_prod/E_ref0)/ln(1-r_fleet); t_bev = ln(eta*G0/I0)/ln((1-r_fleet)/(1-r_power))
+    $$ t^*_{ICE} = \\frac{\\ln\\big(E_{prod}/E_{ref}(0)\\big)}{\\ln(1-r_{fleet})} $$
+    $$ t^*_{BEV} = \\frac{\\ln\\big(\\eta G_0 / I_0\\big)}
+                        {\\ln\\big((1-r_{fleet})/(1-r_{power})\\big)} $$
+    ASCII: t_ice = ln(E_prod/E_ref0)/ln(1-r_fleet)
+           t_bev = ln(eta*G0/I0)/ln((1-r_fleet)/(1-r_power))
     Negative t* means the product is already above (ICE) or below (BEV) the benchmark at sale.
     Sensitivities recompute the cohort total with one input moved at a time:
       lifetime   T_c -/+ 3 years (guideline §5.2; each market's own T, floor 1)
