@@ -4,8 +4,8 @@ The single live tracking document. Current state only — history is in
 [`log/README.md`](log/README.md), specifications are in `phases/`, `stages/` and `process/`.
 
 **Last pass:** 2026-09-04 (design, conformance and state; state refreshed after ST10 and the
-database build the same day). **Next pass due:** at the first Kia or Honda registration table,
-or at any charter change.
+database build the same day; refreshed again after the Kia and Honda EU27 acquisition). **Next
+pass due:** at the first United States or Australia input table, or at any charter change.
 
 ## 1. Where we are
 
@@ -15,8 +15,10 @@ held: all five datasets have a processed table, `build_reference.py`, `build_ti.
 `aggregate_country.py` have written their outputs, and `build_database.py` has loaded every input,
 lookup, output and source table into `data/auto/tradeimpact_auto.sqlite` (21 tables).
 
-Kia, Honda, the United States and Australia remain in the target set as later acquisition. Their
-absence is counted, not assumed away: the Kia and Hyundai IR tables are processed but cannot enter
+Kia and Honda EU27 2024 registrations were acquired on 2026-09-04 from the same EEA query, so all
+four exporters now sit on one destination boundary (Kia 414,677 and Honda 40,270 registrations;
+both net liabilities in every scenario). The United States and Australia remain later acquisition.
+Their absence is counted, not assumed away: the Kia and Hyundai IR tables are processed but cannot enter
 a country-level result as they stand (regions and plant-side sales respectively).
 
 Crossover years per cell and the lifetime, real-world and proxied-distance sensitivities now
@@ -40,9 +42,10 @@ independent re-derivation and `B-03`, `B-04`, `B-07`.
 **Judgement.** The week's work moved PH1 objectives 2, 3 and 4 from unserved to partial — a real
 advance, and faster than expected. The regression against the archived baseline has now run and
 passed, which shows the new scripts reproduce the old engine — not that either is right: no figure
-has been independently re-derived. Crossover and the three guideline sensitivities exist. The next
-unit of work is the Kia and Honda registrations from the same EEA source, which turns the EU27
-result into the Korea-versus-Japan comparison the proposal promises. A result set that grows faster than its verification is the failure mode this
+has been independently re-derived. Crossover and the three guideline sensitivities exist, and the
+EU27 result now covers all four exporters — the Korea-versus-Japan comparison the proposal
+promises, on one market boundary. The next units of work are an independent re-derivation of one
+company's figures (ST11 proper) and the United States and Australia inputs. A result set that grows faster than its verification is the failure mode this
 phase has to avoid.
 
 ## 3. Stages
@@ -50,7 +53,7 @@ phase has to avoid.
 | Stage | Phases served | Status | Latest output | Figures |
 |---|---|---|---|---|
 | [ST01 targets](stages/st01-targets-and-provenance.md) | PH1, PH4 | Partial — set named by direction; §6.3 criteria not evaluated; `target_set.csv` not written; `B-03` open | none | — |
-| [ST02 `sales`](stages/st02-06-datasets.md) | PH1, PH4 | In progress — 3 of 6 sources processed | `sales_eea_eu27_2024.csv` (1,286), `sales_kia_ir_2026.csv` (287), `sales_hyundai_plant_2025.csv` (113) | `[compute]` |
+| [ST02 `sales`](stages/st02-06-datasets.md) | PH1, PH4 | In progress — EU27 complete for all four exporters (four EEA snapshots); US and Australia not started | `sales_eea_eu27_2024.csv` (2,126), `sales_kia_ir_2026.csv` (287), `sales_hyundai_plant_2025.csv` (113) | `[compute]` |
 | [ST03 `country_emissions`](stages/st02-06-datasets.md) | PH1, PH4 | EU27 done; US and Australia not started | `country_emissions_eu27.csv` (1,312) | `[compute]` |
 | [ST04 `emission_targets`](stages/st02-06-datasets.md) | PH1, PH2, PH4 | EU27 done; US and Australia not started | `emission_targets_eu27.csv` (162) | `[compute]` |
 | [ST05 `vehicle_usage`](stages/st02-06-datasets.md) | PH1, PH2 | EU27 done; US and Australia not started | `vehicle_usage_eu27.csv` (2,092) | `[compute]` |
