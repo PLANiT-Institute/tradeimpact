@@ -55,6 +55,7 @@ Inventory) is still to collect; the ABS, BITRE and DCCEEW sites refused automate
 |---|---|---|
 | `country_emissions_eu27.csv` | `script/auto/country_emissions/extract_eu27_snapshot.py` | `car_co2` and `grid_intensity` for 27 markets, EU27 `power_co2` and `transport_ghg` from 1990 |
 | `country_emissions_owid_grid.csv` | `script/auto/country_emissions/extract_owid_grid.py` | `grid_intensity` for US and AU, all years Ember publishes |
+| `country_emissions_au.csv` | `script/auto/country_emissions/extract_anga_inventory.py` | AU `car_co2`, `car_ghg_co2e`, `power_co2`, `transport_ghg` 1990–2024 (kt) |
 | `country_emissions_us.csv` | `script/auto/country_emissions/extract_epa_inventory.py` | US `car_co2` (ktCO2; seven years from Table 3-13) and `car_ghg_co2e` (ktCO2e; 14 years incl. 2013–2023 from Table A-91), gasoline + diesel (+ alternative fuel) passenger cars |
 
 ## Processing method
