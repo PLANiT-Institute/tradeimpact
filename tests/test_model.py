@@ -266,9 +266,11 @@ def test_sensitivity_central_equals_the_published_total(company_rows: list[dict[
 def test_annual_by_model_sums_to_company_annual_flow() -> None:
     """The year-by-year cell table aggregates exactly to the company x market x scenario flow."""
     by_cells: dict[tuple[str, str, str, str, str], float] = defaultdict(float)
+    cells_per_key: dict[tuple[str, str, str, str, str], int] = defaultdict(int)
     for r in rows(OUT / "ti_annual_by_model.csv"):
         key = (r["market"], r["company"], r["cohort_year"], r["scenario"], r["calendar_year"])
         by_cells[key] += float(r["ti_tco2e"])
+        cells_per_key[key] += 1
     flow = {
         (r["market"], r["company"], r["cohort_year"], r["scenario"], r["calendar_year"]): float(
             r["ti_tco2e"]
@@ -277,7 +279,11 @@ def test_annual_by_model_sums_to_company_annual_flow() -> None:
     }
     assert by_cells.keys() == flow.keys()
     for key, total in flow.items():
-        assert abs(by_cells[key] - total) <= 1e-6 * max(1.0, abs(total)), key
+        # Each cell is published rounded to 4 dp, so a sum of n cells may differ from the
+        # once-rounded flow by up to n half-units of the last place. That bound, not a bare
+        # relative tolerance, is what the identity actually promises.
+        tolerance = 1e-6 * max(1.0, abs(total)) + 5e-5 * cells_per_key[key]
+        assert abs(by_cells[key] - total) <= tolerance, key
 
 
 TIERS = {"A", "B", "C"}

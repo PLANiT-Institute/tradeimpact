@@ -1,4 +1,51 @@
 company,model_year,model,base_model,powertrain,tailpipe_gco2_km,energy_wh_km,n_trims,test_cycle,source_id,source_file
+honda,2024,Accord,Accord,ICE,172.12,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Accord Hybrid,Accord,HEV,114.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Accord Hybrid Sport/Touring,Accord,HEV,124.9,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,CR-V AWD,CR-V,HEV,147.26,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,CR-V AWD,CR-V,ICE,189.52,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,CR-V FWD,CR-V,HEV,138.57,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,CR-V FWD,CR-V,ICE,180.2,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Civic 4Dr,Civic,ICE,162.55,,5,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Civic 5Dr,Civic,ICE,179.4,,7,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,HR-V AWD,HR-V,ICE,202.57,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,HR-V FWD,HR-V,ICE,192.0,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Odyssey,Odyssey,ICE,244.82,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Passport AWD,Passport,ICE,258.49,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Pilot AWD,Pilot,ICE,257.87,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Pilot AWD Touring/Elite/Black,Pilot,ICE,262.22,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Pilot AWD TrailSport,Pilot,ICE,274.65,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Pilot FWD,Pilot,ICE,249.79,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Prologue AWD Elite,Prologue,BEV,,228.42,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Prologue AWD Touring,Prologue,BEV,,220.76,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Prologue FWD,Prologue,BEV,,211.07,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Ridgeline AWD,Ridgeline,ICE,274.02,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2024,Ridgeline AWD TrailSport,Ridgeline,ICE,277.13,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Accord,Accord,ICE,172.12,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Accord Hybrid,Accord,HEV,114.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Accord Hybrid Sport/Touring,Accord,HEV,124.9,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,CR-V AWD,CR-V,HEV,147.26,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,CR-V AWD,CR-V,ICE,193.87,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,CR-V FWD,CR-V,HEV,138.57,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,CR-V FWD,CR-V,ICE,180.2,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,CR-V e-FCEV,CR-V,FCEV,,242.33,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Civic 4Dr,Civic,HEV,112.47,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Civic 4Dr,Civic,ICE,164.25,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Civic 5Dr,Civic,HEV,115.58,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Civic 5Dr,Civic,ICE,193.87,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,HR-V AWD,HR-V,ICE,202.57,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,HR-V FWD,HR-V,ICE,193.25,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Odyssey,Odyssey,ICE,245.44,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Passport AWD,Passport,ICE,258.49,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Pilot AWD,Pilot,ICE,257.87,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Pilot AWD Touring/Elite/Black,Pilot,ICE,262.22,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Pilot AWD TrailSport,Pilot,ICE,275.89,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Pilot FWD,Pilot,ICE,249.79,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Prologue AWD Elite,Prologue,BEV,,219.31,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Prologue AWD Touring,Prologue,BEV,,209.88,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Prologue FWD,Prologue,BEV,,202.23,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Ridgeline AWD,Ridgeline,ICE,266.57,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+honda,2025,Ridgeline AWD TrailSport,Ridgeline,ICE,277.13,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 hyundai,2024,Elantra,Elantra,ICE,163.83,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 hyundai,2024,Elantra Hybrid,Elantra,HEV,109.98,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 hyundai,2024,Elantra Hybrid Blue,Elantra,HEV,102.53,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
@@ -146,3 +193,140 @@ kia,2025,Sportage Plug-in Hybrid,Sportage,PHEV,34.18,248.55,1,EPA,epa_fueleconom
 kia,2025,Sportage X-pro,Sportage,ICE,213.75,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 kia,2025,Telluride AWD,Telluride,ICE,274.65,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 kia,2025,Telluride FWD,Telluride,ICE,247.31,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,4Runner 2WD,4Runner,ICE,312.55,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,4Runner 4WD,4Runner,ICE,320.94,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Camry,Camry,ICE,210.02,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Camry AWD LE/SE,Camry,ICE,192.63,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Camry AWD XLE/XSE,Camry,ICE,195.73,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Camry Hybrid LE,Camry,HEV,105.63,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Camry Hybrid SE/XLE/XSE,Camry,HEV,121.17,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Camry LE/SE,Camry,ICE,173.98,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Camry TRD,Camry,ICE,219.97,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Camry XLE/XSE,Camry,ICE,177.71,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Camry XSE,Camry,ICE,214.37,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Corolla,Corolla,ICE,159.07,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Corolla Cross,Corolla Cross,ICE,171.5,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Corolla Cross AWD,Corolla Cross,ICE,182.68,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Corolla Cross Hybrid AWD,Corolla Cross,HEV,129.87,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Corolla Hatchback,Corolla,ICE,157.83,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Corolla Hatchback XSE,Corolla,ICE,165.28,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Corolla Hybrid,Corolla,HEV,112.47,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Corolla Hybrid AWD,Corolla,HEV,118.68,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Crown AWD,Crown,HEV,157.52,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,GR 86,GR 86,ICE,238.3,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,GR Corolla,Corolla,ICE,228.66,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,GR Supra,GR Supra,ICE,222.66,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Grand Highlander AWD LE/XLE,Grand Highlander,ICE,235.5,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Grand Highlander AWD Limited/Platinum,Grand Highlander,ICE,248.55,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Grand Highlander Hybrid,Grand Highlander,HEV,152.86,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Grand Highlander Hybrid AWD,Grand Highlander,HEV,183.62,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Grand Highlander Hybrid Limited,Grand Highlander,HEV,159.07,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Grand Highlander LE/XLE,Grand Highlander,ICE,230.53,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Grand Highlander Limited,Grand Highlander,ICE,227.42,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Highlander,Highlander,ICE,226.49,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Highlander AWD,Highlander,ICE,230.53,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Highlander Hybrid,Highlander,HEV,152.24,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Highlander Hybrid AWD,Highlander,HEV,157.83,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Highlander Hybrid AWD LTD/PLAT,Highlander,HEV,157.21,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Land Cruiser,Land Cruiser,HEV,236.12,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Mirai Limited,Mirai,FCEV,,397.68,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Mirai XLE,Mirai,FCEV,,447.39,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Prius,Prius,HEV,96.31,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Prius AWD,Prius,HEV,101.28,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Prius AWD XLE/LTD,Prius,HEV,111.23,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Prius Prime,Prius Prime,PHEV,37.28,180.2,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Prius Prime SE,Prius Prime,PHEV,31.07,161.56,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Prius XLE/LTD,Prius,HEV,105.01,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,RAV4,RAV4,ICE,181.44,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,RAV4 AWD,RAV4,ICE,192.63,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,RAV4 AWD LE,RAV4,ICE,183.93,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,RAV4 AWD TRD OFFROAD,RAV4,ICE,200.7,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,RAV4 Hybrid AWD,RAV4,HEV,139.19,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,RAV4 Hybrid AWD Woodland Edition,RAV4,HEV,149.13,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,RAV4 Prime 4WD,RAV4 Prime,PHEV,44.74,223.69,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Sequoia 2WD,Sequoia,HEV,245.44,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Sequoia 4WD,Sequoia,HEV,272.78,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Sienna 2WD,Sienna,HEV,152.86,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Sienna AWD,Sienna,HEV,157.21,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tacoma 2WD,Tacoma,ICE,244.82,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tacoma 4WD,Tacoma,ICE,263.46,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tacoma 4WD MT,Tacoma,ICE,280.86,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tacoma Hybrid 4WD,Tacoma,HEV,238.3,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tacoma SR5/Sport/Off-Road/Limited 4WD,Tacoma,ICE,264.5,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tacoma SR5/Sport/PreRunner 2WD,Tacoma,ICE,247.93,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tundra 2WD,Tundra,HEV,253.52,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tundra 2WD,Tundra,ICE,276.82,,4,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tundra 4WD,Tundra,HEV,272.78,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tundra 4WD,Tundra,ICE,285.42,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Tundra 4WD PRO,Tundra,HEV,286.45,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,Venza AWD,Venza,HEV,141.05,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,bZ4X,bZ4X,BEV,,175.95,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,bZ4X AWD,bZ4X,BEV,,198.84,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,bZ4X Limited,bZ4X,BEV,,187.27,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2024,bZ4X Limited AWD,bZ4X,BEV,,205.05,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,4Runner 2WD,4Runner,ICE,249.48,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,4Runner 4WD,4Runner,HEV,236.12,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,4Runner 4WD,4Runner,ICE,258.49,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Camry HEV AWD LE,Camry,HEV,109.98,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Camry HEV AWD SE/XLE,Camry,HEV,117.44,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Camry HEV AWD XSE,Camry,HEV,123.65,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Camry HEV FF LE,Camry,HEV,107.5,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Camry HEV FF SE/XLE/XSE,Camry,HEV,115.58,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Corolla,Corolla,ICE,160.73,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Corolla Cross,Corolla Cross,ICE,171.5,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Corolla Cross AWD,Corolla Cross,ICE,182.68,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Corolla Cross Hybrid AWD,Corolla Cross,HEV,129.87,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Corolla FX,Corolla,ICE,162.18,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Corolla Hatchback,Corolla,ICE,157.83,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Corolla Hatchback XSE,Corolla,ICE,165.28,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Corolla Hybrid,Corolla,HEV,111.54,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Corolla Hybrid AWD,Corolla,HEV,117.44,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Crown AWD,Crown,HEV,157.52,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Crown Signia AWD,Crown Signia,HEV,143.54,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,GR 86,GR 86,ICE,238.3,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,GR Corolla,Corolla,ICE,237.05,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,GR Supra,GR Supra,ICE,222.66,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Grand Highlander AWD LE/XLE,Grand Highlander,ICE,235.5,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Grand Highlander AWD Limited/Platinum,Grand Highlander,ICE,248.55,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Grand Highlander Hybrid,Grand Highlander,HEV,152.86,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Grand Highlander Hybrid AWD,Grand Highlander,HEV,183.3,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Grand Highlander LE/XLE,Grand Highlander,ICE,230.53,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Grand Highlander Limited,Grand Highlander,ICE,227.42,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Highlander,Highlander,ICE,226.49,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Highlander AWD,Highlander,ICE,230.53,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Highlander Hybrid AWD,Highlander,HEV,157.83,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Highlander Hybrid AWD LTD/PLAT,Highlander,HEV,157.21,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Land Cruiser,Land Cruiser,HEV,236.74,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Mirai XLE,Mirai,FCEV,,447.39,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Prius,Prius,HEV,96.31,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Prius AWD,Prius,HEV,101.28,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Prius AWD XLE/LTD,Prius,HEV,111.23,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Prius PHEV,Prius,PHEV,37.28,180.2,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Prius PHEV SE,Prius,PHEV,31.07,161.56,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Prius XLE/LTD,Prius,HEV,105.01,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,RAV4,RAV4,ICE,181.44,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,RAV4 AWD,RAV4,ICE,192.94,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,RAV4 AWD LE,RAV4,ICE,183.93,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,RAV4 Hybrid AWD,RAV4,HEV,139.19,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,RAV4 Hybrid AWD Woodland Edition,RAV4,HEV,149.13,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,RAV4 PHEV AWD,RAV4,PHEV,44.74,223.69,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Sequoia 2WD,Sequoia,HEV,250.41,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Sequoia 4WD,Sequoia,HEV,272.78,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Sienna 2WD,Sienna,HEV,152.86,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Sienna AWD,Sienna,HEV,157.21,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tacoma 2WD,Tacoma,ICE,244.82,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tacoma 4WD,Tacoma,ICE,263.46,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tacoma 4WD MT,Tacoma,ICE,280.86,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tacoma Hybrid 4WD,Tacoma,HEV,237.99,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tacoma SR5/Sport/Off-Road/Limited 4WD,Tacoma,ICE,264.5,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tacoma SR5/Sport/PreRunner 2WD,Tacoma,ICE,247.62,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tundra 2WD,Tundra,HEV,254.14,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tundra 2WD,Tundra,ICE,277.13,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tundra 4WD,Tundra,HEV,272.78,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tundra 4WD,Tundra,ICE,288.32,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,Tundra 4WD PRO,Tundra,HEV,286.45,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,bZ4X,bZ4X,BEV,,175.95,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,bZ4X AWD (18inch Wheels),bZ4X,BEV,,192.63,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,bZ4X AWD (20inch Wheels),bZ4X,BEV,,198.84,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,bZ4X LIMITED,bZ4X,BEV,,187.27,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+toyota,2025,bZ4X LIMITED AWD,bZ4X,BEV,,198.84,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv

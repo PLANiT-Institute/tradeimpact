@@ -31,6 +31,8 @@ two that are not.
 | 2026-09-04 | Dashboard Map view; registry and deliverables moved into `data/auto/registry/`, `data/auto/database/`, `data/auto/dashboard/` | Lead: map-based view by country; no loose files under data/auto | map geometry stored in the database so the page needs one file only |
 | 2026-09-04 | No launcher script: `serve_dashboard.py --open` is the one command, and it answers the opaque `null` origin so a double-clicked dashboard.html connects itself while it runs | Lead: the page must get the file by default, without a launcher; browsers forbid a file:// page from reading a sibling file | Picker kept as the no-server fallback |
 
+| 2026-09-04 | Toyota and Honda brought into scope; Lexus treated as a separate company like Genesis; Nissan, Suzuki, Mazda, Mitsubishi, Subaru pinned out of scope | Lead asked for Toyota and the second Japanese maker; Honda is second worldwide, Nissan second in the EU27, so the choice is recorded rather than assumed | EU27 results for four companies; one flag moves Nissan in |
+
 ## Transitions
 
 | Date | Stage or phase | Event | Trigger | Consequence |

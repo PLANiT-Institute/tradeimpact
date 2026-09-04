@@ -1,4 +1,7 @@
 company,market,scenario,cohort_year,status,covered_units,withheld_units,covered_share,ti_tco2e,ti_per_vehicle_kgco2e,direction,decomposition_identity_holds,exclusion_reason
+honda,EU27,S1,2024,reported,38571,1699,0.95781,-154457.9357,-4004.5095,liability,True,
+honda,EU27,S2,2024,reported,38571,1699,0.95781,-372148.8265,-9648.4101,liability,True,
+honda,EU27,S3,2024,reported,38571,1699,0.95781,-764521.5876,-19821.1503,liability,True,
 hyundai,EU27,S1,2024,reported,409957,19979,0.95353,-1656970.1006,-4041.8144,liability,True,
 hyundai,EU27,S2,2024,reported,409957,19979,0.95353,-3823874.6637,-9327.5018,liability,True,
 hyundai,EU27,S3,2024,reported,409957,19979,0.95353,-7999120.4771,-19512.0963,liability,True,
@@ -29,3 +32,6 @@ kia,US,S3,2025,reported,836571,15584,0.981712,-14960290.5035,-17882.8701,liabili
 kia,US,S1,2026,reported,422171,8556,0.980136,-490360.5502,-1161.5212,liability,True,
 kia,US,S2,2026,excluded,422171,8556,,,,,,"flag_no_ndc: FLAG market: Guideline FLAG-market case: the United States notified withdrawal from the Paris Agreement on 2025-01-27, effective one year later; no NDC in force for the lifetime of any current cohort under committed policy. S2 excluded from the headline and reported separately; S1/S3 require IEA WEO STEPS/NZE rates. S2 is excluded from the headline and reported separately. Anchor verified: no."
 kia,US,S3,2026,reported,422171,8556,0.980136,-8105275.2755,-19199.0337,liability,True,
+toyota,EU27,S1,2024,reported,777277,25817,0.967853,-1681919.1765,-2163.8607,liability,True,
+toyota,EU27,S2,2024,reported,777277,25817,0.967853,-6291264.8098,-8093.9804,liability,True,
+toyota,EU27,S3,2024,reported,777277,25817,0.967853,-14369773.622,-18487.3264,liability,True,
