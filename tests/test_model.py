@@ -375,6 +375,44 @@ def test_cumulative_annual_flow_reaches_the_lifetime_total(
     assert checked
 
 
+REPORT = DATA / "report" / "ti_automotive_report.html"
+
+
+def test_report_is_self_contained_and_offline() -> None:
+    """The analysis report is one file that loads nothing: no script, no image, no stylesheet.
+
+    The report is a build artefact like any CSV, so what is tested is the property that makes it
+    trustworthy to hand on: it renders from its own bytes, so what a reader sees is what the
+    build produced.
+    """
+    assert REPORT.exists(), REPORT
+    html = REPORT.read_text(encoding="utf-8")
+    for forbidden in ("<script", "<img", "<link", "<iframe", "@import", "url("):
+        assert forbidden not in html, forbidden
+    assert html.count("<svg") >= 8, "the report should carry its charts as inline SVG"
+
+
+def test_report_states_the_published_result_set(company_rows: list[dict[str, str]]) -> None:
+    """The report's headline figures are the published ones, to the digit it prints.
+
+    This is the guard on the report having no data of its own: the totals it states are
+    recomputed here from ti_company.csv and must appear in the file verbatim.
+    """
+    html = REPORT.read_text(encoding="utf-8")
+    reported = [r for r in company_rows if r["status"] == "reported"]
+    cohorts = len({(r["market"], r["company"], r["cohort_year"]) for r in reported})
+    assert f"{cohorts} cohorts" in html or f"{cohorts} of them here" in html
+    for scenario in sorted({r["scenario"] for r in reported}):
+        total = sum(
+            float(r["ti_tco2e"]) for r in reported if r["scenario"] == scenario
+        )
+        assert f"{total / 1e6:+,.1f}" in html or f"{total / 1e6:+,.2f}" in html, scenario
+    liabilities = sum(
+        1 for r in reported if r["scenario"] == "S2" and float(r["ti_tco2e"]) < 0
+    )
+    assert f"{liabilities} out of" in html or f"{liabilities} of {liabilities}" in html
+
+
 TIERS = {"A", "B", "C"}
 
 
