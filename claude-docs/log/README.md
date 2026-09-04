@@ -120,3 +120,14 @@ premise and sends work back is the process working; the entry states the trigger
   dependency; vendoring it would make the page fully offline.
 - New result table `ti_annual_by_model` gives the year-by-year TI flow at cell grain; the
   dashboard's "Results by year" view lands on it.
+
+## 2026-09-04 — team roster refreshed against the pack update
+
+- Four user-level agents added to the pack (`claude-md` 798e47d) and rostered here:
+  `ir-disclosure-analyst` (ST02 basis map and build-vs-buy; the 2026-09-03 rejection of the role is
+  withdrawn — every PH1 stall since was an IR workbook on the wrong basis), `transport-emissions-reviewer`
+  (ST11/ST12 review chain and the ST14 publication gate; owns the design of the `B-07` propagation),
+  `esg-disclosure-analyst` (ST12 `C-06` overview, ST14 `D-09` standard-setter text — white-paper stage,
+  not now), `policy-analyst` (ST01/ST04 target anatomy and the `B-04` no-target rule; `D-09` storyline).
+- Financial IR (valuation, guidance) explicitly out of scope: the framework never touches company financials.
+- Tracker F-01 owner updated accordingly. No project-scoped agent created.

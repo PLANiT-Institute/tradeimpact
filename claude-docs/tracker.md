@@ -146,7 +146,7 @@ From the 2026-09-04 conformance pass against the proposal.
 
 | # | Finding | Charter id | Verdict | Action | Owner |
 |---|---|---|---|---|---|
-| F-01 | Crossover Points are promised as P10/P50/P90 ranges; the methodology gives three deterministic scenarios and no propagation method exists | `C-05`, `B-07` | gap | Build a propagation procedure in PH2/3, or renegotiate the wording | `climate-risk-modeller`, then `consultant` |
+| F-01 | Crossover Points are promised as P10/P50/P90 ranges; the methodology gives three deterministic scenarios and no propagation method exists | `C-05`, `B-07` | gap | Build a propagation procedure in PH2/3, or renegotiate the wording | `transport-emissions-reviewer` (design), `data-scientist` + `math-reviewer` (build), then `consultant` |
 | F-02 | Four automotive exporters against a six-firm bound across three sectors | `C-11`, `B-03` | drift | Decide: six per programme or two per sector, through change control | `consultant` |
 | F-03 | The power generation case study shares the Month 7 milestone with automotive, while automotive absorbs all capacity | `D-03` | unpriced | Sequence explicitly with Climate Arc, or accept a milestone slip in writing | `consultant` |
 | F-04 | The United States has no active NDC, so it has no S2 benchmark; the substitution rule is unmade | `B-04` | gap | Decide before ST08 runs on any non-EU market | `climate-risk-modeller` |
