@@ -51,7 +51,8 @@ archive/           the previous application build (engine, web, MCP, pipeline) â
 ```
 
 Datasets: `sales`, `country_emissions`, `emission_targets`, `vehicle_usage`,
-`vehicle_technology`. Current result set: Hyundai and Kia in the EU27 (2024 registrations)
+`vehicle_technology`, `trade_flows` (official HS 8703 trade statistics by powertrain class,
+country-level, from Eurostat Comext and UN Comtrade â€” free sources first). Current result set: Hyundai and Kia in the EU27 (2024 registrations)
 and the United States (the cohorts in the gathered IR workbooks). The engine reproduces the
 previously published EU27 result exactly when fed the archived inputs (see
 `data/auto/output/method.md`, Verification).
