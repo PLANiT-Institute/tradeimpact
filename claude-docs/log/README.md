@@ -25,6 +25,8 @@ two that are not.
 
 | 2026-09-04 | Korea benchmark from free official statistics; passenger-car CO2 = GIR road CO2 × KOTSA share (tier C); S1 trend on the GIR road series, not the drifting share; lifetime by the EU27 mean-age rule on the MOLIT model-year distribution; S3 mixes the 2050 scenarios (transport A안, power B안) | No Korean publisher issues passenger-car CO2 as a file; the KOTSA share drifts 0.49 → 0.58; the A안 power endpoint is zero | `build_reference_kr.py`, `derive_kr_rates.py`, `kr_labels.csv`, `kr_model_map.csv`; Korea priced for Hyundai (2024, 2025) and Kia (2026 H1) |
 
+| 2026-09-04 | India benchmark not built; recorded as `no_benchmark` with the reasons | Free inputs partial (>50 % proxies, S2 FLAG), no free model-level sales | Coverage group IN counted, not priced; unlock conditions listed in output/method.md |
+
 ## Transitions
 
 | Date | Stage or phase | Event | Trigger | Consequence |
