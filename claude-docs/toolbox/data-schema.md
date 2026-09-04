@@ -170,29 +170,39 @@ its two files are named for the market they describe.
 |---|---|---|---|
 | `cohorts.csv` | exists, 1,180 rows | market + company + destination + model + powertrain + cohort_year + variant | `period`, `units`, `basis`, `tailpipe_gco2_km`, `energy_wh_km`, `test_cycle`, `technology_source`, `sales_source_file`, `powertrain_rule`, `coverage_note` — sales joined to product technology per market (`build_cohorts.py`). `variant = central` is the published cohort; other variants are sensitivity repricings of the same cell |
 | `cohorts_withheld.csv` | exists, 210 rows | market + company + destination + model | `units`, `reason`, `coverage_note` — volumes that cannot be joined to a product parameter |
-| `destination_parameters_eu27.csv` | exists, 27 rows | market + country + cohort_year | `vkt_km` with low/high bracket, `vkt_tier`, `vkt_derivation`, `car_stock`, `car_co2_kt`, `fleet_intensity_gco2_km` + tier, `grid_gco2_kwh` + tier, `mean_car_age_years` + tier, `lifetime_years` with low/high, `scenarios_excluded`, `scenario_exclusion_reason`, `warnings`, `source_ids` — each value with its reference year |
+| `destination_parameters_eu27.csv` | exists, 27 rows | market + country + segment + cohort_year | `vkt_km` with low/high bracket, `vkt_tier`, `vkt_derivation`, `stock`, `co2_kt`, `fleet_intensity_gco2_km` + tier, `grid_gco2_kwh` + tier, `mean_age_years` + tier, `lifetime_years` with low/high, `scenarios_excluded`, `scenario_exclusion_reason`, `warnings`, `source_ids` — each value with its reference year |
 | `destination_parameters_us.csv` | exists, 1 row | as above | identical columns (`build_reference_us.py`); distance tier B (FHWA wheelbase classes), lifetime tier C (NHTSA schedule), `scenarios_excluded = S2` |
 | `reference_trajectories_eu27.csv` | exists, 1,890 rows | market + country + scenario + t | `calendar_year`, `r_fleet`, `r_power`, `fleet_intensity_gco2_km`, `e_ref_kgco2_per_vehicle`, `grid_kgco2_per_kwh` |
-| `reference_trajectories_us.csv` | exists, 32 rows | as above | S1 and S3 only; no S2 trajectory exists for the US |
+| `reference_trajectories_us.csv` | exists, 32 rows | as above | S1 and S2; the US S2 anchor is the NDC communicated 2024-12-19 |
+| `destination_parameters_kr.csv` | exists (`build_reference_kr.py`) | market + country + segment | as EU27, one row per Korean segment (passenger car, freight, bus) |
+| `reference_trajectories_kr.csv` | exists, 102 rows | as above | S1 and S2 per segment |
+| `destination_parameters_jp.csv` | exists (`build_reference_jp.py`) | market + country + segment | as EU27; distance and implied stock come from one table at one date, lifetime is AIRIA's published mean years of use |
+| `reference_trajectories_jp.csv` | exists, 70 rows | as above | S1 and S2, passenger car and freight; buses not built |
 | `ti_by_model.csv` | exists, 2,971 rows | market + company + destination + model + powertrain + scenario + cohort_year | `units`, `lifetime_years`, `vkt_km`, `vkt_tier`, `test_cycle`, `real_world_factor`, `e_prod_year0_kgco2e`, `e_ref_year0_kgco2e`, `ti_per_vehicle_kgco2e`, `ti_tco2e` |
 | `ti_annual_by_model.csv` | exists (`build_ti.py`) | market + company + destination + cohort_year + model + powertrain + scenario + t | `calendar_year`, `units`, `e_ref_kgco2e_per_vehicle`, `e_prod_kgco2e_per_vehicle`, `gap_kgco2e_per_vehicle`, `ti_tco2e` |
-| `ti_annual.csv` | exists, 182 rows | market + company + scenario + t | `calendar_year`, `surviving_vehicles`, `ti_tco2e` — the annual TI flow of the cohort |
+| `ti_annual.csv` | exists, 616 rows | market + company + cohort_year + scenario + calendar_year | `surviving_vehicles`, `e_ref_tco2e`, `e_prod_tco2e`, `ti_tco2e`, `cumulative_ti_tco2e` and all three per surviving vehicle — both sides of the comparison in every year, not only its result |
 | `ti_withheld.csv` | exists, 250 rows | market + company + destination + model + powertrain | `units`, `reason`, `coverage_note` — every cell that produced no result, with its unit count (`N-02`) |
 | `ti_exclusions.csv` | exists, 2 rows | market + company + scenario | `cohort_year`, `units_affected`, `reason` — a scenario the market publishes no benchmark for, never a silent gap (`N-05`) |
 | `ti_country.csv` | exists (`aggregate_country.py`) | company + market + destination + scenario | `units`, `ti_tco2e`, `ti_per_vehicle_kgco2e`, `direction` |
 | `ti_powertrain.csv` | exists | company + market + powertrain + scenario | as above |
+| `ti_annual_country.csv` | exists (`aggregate_country.py`) | company + market + cohort_year + destination + scenario + calendar_year | `units`, `e_ref_tco2e`, `e_prod_tco2e`, `ti_tco2e`, `cumulative_ti_tco2e`, the three per-vehicle values, `direction` |
+| `ti_annual_powertrain.csv` | exists | as above by powertrain | as above; both roll-ups must reproduce the company annual flow year by year |
 | `ti_company.csv` | exists | company + market + scenario | `status` (reported/excluded), covered/withheld units, `ti_tco2e`, per-vehicle, `direction`, `decomposition_identity_holds`, `exclusion_reason` |
 | `ti_crossover.csv` | exists (`build_sensitivity.py`) | as `ti_by_model` | `crossover_year` (years after sale), `crossover_calendar_year`, `reason`; the `C-05` range treatment waits on `B-07` |
 | `ti_sensitivity.csv` | exists (`build_sensitivity.py`) | company + market + scenario + dimension + variant | `parameter`, `ti_tco2e` — lifetime ±3 y, real-world factor range (per test cycle), proxied-distance quartiles, powertrain mix (`all_hev`) |
-| `ti_global_coverage.csv` | exists (`build_global_coverage.py`) | company + cohort_year | `global_units`, `global_basis`, `global_derived`, `brands_in_denominator`, `brands_out_of_scope`, `priced_units`, `priced_share_of_global`, `priced_markets`, `priced_countries`, `held_units`, `held_share_of_global` |
+| `ti_global_coverage.csv` | exists (`build_global_coverage.py`) | company + cohort_year | `global_units`, `global_basis`, `global_derived`, `brands_in_denominator`, `brands_out_of_scope`, `assessed_units`, `assessed_share_of_global`, `assessed_markets`, `assessed_countries`, `held_units`, `held_share_of_global` |
 | `sales/processed/global_sales_totals.csv` | exists | 15 — each company's worldwide sales per calendar year with the brands it covers and whether it is derived |
 | `ti_source_reconciliation.csv` | exists (`build_reconciliation.py`) | company + destination + cohort_year + source_file | `source_id`, `basis`, `basis_side`, `units`, `in_scope`, `boundary_companies`, `used_by_cohort`, `spread_vs_used_pct` |
-| `ti_coverage.csv` | exists (`build_coverage.py`) | company + destination + destination_level + cohort_year + basis + source_file | `destination_group` (EU27, US, the company's home country code, IN, others), `home_country`, `period`, `units`, `priced_units`, `withheld_units`, `status` (priced, withheld, no_benchmark, plant_side_only, region_unpriced, destination_unknown, not_in_cohort), `market`, `note` |
-| `ti_data_quality.csv` | exists (`build_data_quality.py`) | company + market | analysis level, benchmark method, `sales_basis`, `test_cycles`, covered/withheld units, `tier_c_share`, `directional_only`, central lifetime, `scenarios_reported`, `scenarios_excluded`, markets by tier, withheld reasons, `coverage_notes`, warnings |
+| `ti_coverage.csv` | exists (`build_coverage.py`) | company + destination + destination_level + cohort_year + basis + source_file | `destination_group` (EU27, US, the company's home country code, IN, others), `home_country`, `period`, `units`, `assessed_units`, `withheld_units`, `status` (assessed, withheld, no_benchmark, plant_side_only, region_unassessed, destination_unknown, not_in_cohort), `market`, `note` |
+| `ti_data_quality.csv` | exists (`build_data_quality.py`) | company + market | analysis level, benchmark method, `sales_basis`, `test_cycles`, covered/withheld units, `vkt_tier_c_share` (drives `directional_only`) and `cell_tier_c_share` (worst-of), `directional_only`, central lifetime, `scenarios_reported`, `scenarios_excluded`, markets by tier, withheld reasons, `coverage_notes`, warnings |
 | `target_set.csv` | planned (ST01) | company + destination + cohort_year | segment, lifetime and its bracket, criteria met, exclusion reason |
 
-Sign convention throughout: positive TI is displacement relative to the importing country's
-benchmark, negative TI is lock-in. Every output carries every scenario the market has a
+Sign convention throughout (reversed 2026-09-04, whitepaper v1.6 §3.3): TI is the product's
+emissions **minus** the benchmark's, so **positive TI is emissions added** — the lock-in — and
+**negative TI is emissions avoided** against the importing country's benchmark. The `direction`
+column keeps its words attached to those meanings: `liability` for a positive figure,
+`contribution` for a negative one. The charter quotes the contract's original wording, which
+used the opposite ordering. Every output carries every scenario the market has a
 benchmark for (`N-05`); a scenario a market cannot support is published in `ti_exclusions.csv`
 with its reason and the units affected, never dropped. No single-scenario headline is ever
 published.

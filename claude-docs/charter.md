@@ -43,6 +43,15 @@ emissions relative to the importing country's baseline. A negative TI score indi
 lock-in: the exported product is more carbon-intensive than what the importing market is on
 track to deploy."
 
+> **Sign convention superseded, 2026-09-04.** The quotation above is the contract's wording and
+> stays as written. The framework has since reversed the ordering: whitepaper v1.6 §3.3 defines
+> TI_gap as `E_prod − E_ref`, so in every current output a **positive** figure is emissions
+> **added** — the lock-in the contract describes as negative — and a **negative** figure is the
+> displacement it describes as positive. The magnitudes are unchanged; only the sign is. The
+> reason is that TI is reported in tonnes of CO₂e and a positive number of tonnes should mean
+> tonnes emitted. Any deliverable that quotes the contract's wording must say which convention
+> its figures use.
+
 The operational equation set that implements this formula is the whitepaper's §3.1–§3.8 and
 the automotive guideline's §2–§4; it is not restated here (one home per fact). See
 [`toolbox/references-and-archive.md`](toolbox/references-and-archive.md).
