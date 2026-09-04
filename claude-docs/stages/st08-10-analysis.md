@@ -1,11 +1,13 @@
 # Stages ST08–ST10 — benchmark, impact, aggregation
 
-Steps 3 to 5 of the research process, in `script/auto/model/`. All three are running **EU27 only**
-as of 2026-09-04, on the markets the data supports: `build_reference.py`, `build_ti.py` and
-`aggregate_country.py` have all produced their outputs, and `build_database.py` has loaded them into
-`data/auto/tradeimpact_auto.sqlite`. One thing is
-built when it is needed — a benchmark for the markets that are ready, not a framework for markets
-that are not.
+Steps 3 to 5 of the research process, in `script/auto/model/`. As of 2026-09-04 the chain runs for
+**two markets, EU27 and the United States**, for the exporters in scope (Hyundai, Kia):
+`build_cohorts.py` joins sales to technology per market, `build_reference.py` and
+`build_reference_us.py` build each market's parameters and benchmark, and `build_ti.py`,
+`build_sensitivity.py`, `aggregate_country.py`, `build_data_quality.py` read every market from one
+cohort table and write generic output files with a `market` column; `build_database.py` and
+`build_dashboard.py` load them. One thing is built when it is needed — Australia's inputs are in the
+database but its benchmark is not built until the lead asks for it.
 
 Output column schemas and current row counts: [`../toolbox/data-schema.md`](../toolbox/data-schema.md) §6.
 
@@ -82,11 +84,12 @@ PH3/1 (the computation the open-source model packages); PH4/2–3.
 `method/real_world_correction.csv` (ST06, gCO2/km, Wh/km, multiplier); assumptions `A-02`,
 `A-04`, `A-05`, `A-06`, `A-08`.
 
-**Produces.** `data/auto/output/ti_by_model_eu27.csv` (3,321 rows — per cell and scenario, with
-`e_prod_year0`, `e_ref_year0`, per-vehicle and total TI), `ti_annual_eu27.csv` (150 rows — the
-annual TI flow with surviving vehicles) and `ti_withheld_eu27.csv` (179 rows — every cell that
-produced no result, with its unit count and reason). **Crossover year is not yet an output** — it
-is required by `D-01`'s Month 7 activity and is the next addition here (`F-06`). Consumed by ST10,
+**Produces.** `data/auto/output/ti_by_model.csv` (3,321 rows — per cell and scenario, with
+`e_prod_year0`, `e_ref_year0`, per-vehicle and total TI), `ti_annual.csv` (150 rows — the
+annual TI flow with surviving vehicles) and `ti_withheld.csv` (179 rows — every cell that
+produced no result, with its unit count and reason). Crossover year per cell is output by `build_sensitivity.py`
+(`ti_crossover.csv`), deterministic per scenario; the `C-05` P10/P50/P90 range treatment still
+waits on `B-07`. Consumed by ST10,
 ST11, ST13, ST14.
 
 **Methodology.** Whitepaper §3.2–§3.5, §3.7; guideline §3.3–§3.5, §4.1–§4.3. Crossover closed
@@ -128,11 +131,11 @@ never merged into a country total.
 
 **Phases served.** PH1/5; PH3/2 (what the dashboard presents); PH4/2–3.
 
-**Consumes.** `ti_by_model_eu27.csv`, `ti_annual_eu27.csv`, `ti_withheld_eu27.csv` (ST09);
+**Consumes.** `ti_by_model.csv`, `ti_annual.csv`, `ti_withheld.csv` (ST09);
 `destination_parameters_eu27.csv` (ST08) for the tier declaration.
 
-**Produces.** `data/auto/output/ti_country_eu27.csv`, `ti_powertrain_eu27.csv`,
-`ti_company_eu27.csv`, and the data-quality declaration. Consumed by ST11, ST13, ST14.
+**Produces.** `data/auto/output/ti_country.csv`, `ti_powertrain.csv`,
+`ti_company.csv`, and the data-quality declaration. Consumed by ST11, ST13, ST14.
 
 **Methodology.** Whitepaper §3.6–§3.8; guideline §4.4–§4.6, §5.1, §5.3.
 

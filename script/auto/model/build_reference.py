@@ -28,6 +28,8 @@ import argparse
 import csv
 from pathlib import Path
 
+from model_io import PARAM_FIELDS, REF_FIELDS, latest, read_long
+
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
 USAGE = DATA / "vehicle_usage" / "processed" / "vehicle_usage_eu27.csv"
@@ -56,62 +58,6 @@ AGE_BAND_MIDPOINT = {
     "car_stock_age_y_gt20": 25.0,
 }
 POOLED_MIN_CONTRIBUTORS = 15
-
-PARAM_FIELDS = [
-    "country",
-    "cohort_year",
-    "vkt_km",
-    "vkt_low_km",
-    "vkt_high_km",
-    "vkt_tier",
-    "vkt_year",
-    "vkt_derivation",
-    "car_stock",
-    "car_stock_year",
-    "car_co2_kt",
-    "car_co2_year",
-    "fleet_intensity_gco2_km",
-    "fleet_intensity_tier",
-    "grid_gco2_kwh",
-    "grid_year",
-    "grid_tier",
-    "mean_car_age_years",
-    "mean_car_age_year",
-    "mean_car_age_tier",
-    "lifetime_years",
-    "lifetime_low_years",
-    "lifetime_high_years",
-    "warnings",
-    "source_ids",
-]
-REF_FIELDS = [
-    "country",
-    "scenario",
-    "t",
-    "calendar_year",
-    "r_fleet",
-    "r_power",
-    "fleet_intensity_gco2_km",
-    "e_ref_kgco2_per_vehicle",
-    "grid_kgco2_per_kwh",
-]
-
-
-def read_long(path: Path) -> dict[tuple[str, str], dict[int, float]]:
-    """(country, series) -> {year: value} from a long-format CSV."""
-    out: dict[tuple[str, str], dict[int, float]] = {}
-    with path.open(newline="") as f:
-        for row in csv.DictReader(f):
-            out.setdefault((row["country"], row["series"]), {})[int(row["year"])] = float(
-                row["value"]
-            )
-    return out
-
-
-def latest(series: dict[int, float], not_after: int) -> tuple[int, float] | None:
-    """Most recent (year, value) at or before ``not_after``."""
-    pairs = [(y, v) for y, v in series.items() if y <= not_after]
-    return max(pairs) if pairs else None
 
 
 def clamp_life(years: float) -> int:
@@ -229,6 +175,7 @@ def main() -> None:
 
         rows.append(
             {
+                "market": EU,
                 "country": c,
                 "cohort_year": year0,
                 "vkt_km": vkt,
@@ -293,6 +240,8 @@ def main() -> None:
         r["lifetime_years"] = clamp_life(LIFETIME_CENTRAL_MULTIPLE * mean) if mean else None  # type: ignore[operator]
         r["lifetime_low_years"] = clamp_life(mean) if mean else None  # type: ignore[arg-type]
         r["lifetime_high_years"] = clamp_life(2 * mean) if mean else None  # type: ignore[operator]
+        r["scenarios_excluded"] = ""
+        r["scenario_exclusion_reason"] = ""
         r["warnings"] = " | ".join(r.pop("_warnings"))  # type: ignore[arg-type]
         r["source_ids"] = ";".join(r.pop("_sources"))  # type: ignore[arg-type]
 
@@ -319,6 +268,7 @@ def main() -> None:
             for t in range(int(life)):
                 ref_rows.append(
                     {
+                        "market": EU,
                         "country": c,
                         "scenario": s,
                         "t": t,

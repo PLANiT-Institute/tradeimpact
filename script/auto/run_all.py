@@ -47,7 +47,9 @@ DERIVE = [
     "emission_targets/derive_au_rates.py",
 ]
 MODEL = [
+    "model/build_cohorts.py",
     "model/build_reference.py",
+    "model/build_reference_us.py",
     "model/build_ti.py",
     "model/build_sensitivity.py",
     "model/aggregate_country.py",

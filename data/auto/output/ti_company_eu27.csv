@@ -1,7 +1,0 @@
-company,scenario,cohort_year,covered_units,withheld_units,covered_share,ti_tco2e,ti_per_vehicle_kgco2e,direction,decomposition_identity_holds
-hyundai,S1,2024,409957,19979,0.95353,-1656970.1006,-4041.8144,liability,True
-hyundai,S2,2024,409957,19979,0.95353,-3823874.6637,-9327.5018,liability,True
-hyundai,S3,2024,409957,19979,0.95353,-7999120.4771,-19512.0963,liability,True
-kia,S1,2024,379021,35656,0.914015,-1520276.4969,-4011.0614,liability,True
-kia,S2,2024,379021,35656,0.914015,-3490384.6966,-9208.948,liability,True
-kia,S3,2024,379021,35656,0.914015,-7372121.6593,-19450.4306,liability,True
