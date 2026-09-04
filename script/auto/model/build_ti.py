@@ -13,6 +13,8 @@ Inputs
 Outputs (data/auto/output/)
     ti_by_model.csv    one row per cell x scenario: units, per-vehicle and total TI
     ti_annual.csv      annual TI flow per company x market x scenario over the cohort horizon
+    ti_annual_by_model.csv  the same flow at cell grain: per market x company x destination x
+                       model x powertrain x scenario x year (benchmark, product, gap, TI)
     ti_withheld.csv    units that carry no result and why (from step 3a, plus benchmark holds)
     ti_exclusions.csv  market x scenario combinations with no benchmark, and the units affected
 
@@ -53,6 +55,7 @@ from model_io import (
 
 OUT_CELLS = OUT_DIR / "ti_by_model.csv"
 OUT_ANNUAL = OUT_DIR / "ti_annual.csv"
+OUT_ANNUAL_CELLS = OUT_DIR / "ti_annual_by_model.csv"
 OUT_WITHHELD = OUT_DIR / "ti_withheld.csv"
 OUT_EXCLUSIONS = OUT_DIR / "ti_exclusions.csv"
 
@@ -94,6 +97,22 @@ ANNUAL_FIELDS = [
     "surviving_vehicles",
     "ti_tco2e",
 ]
+ANNUAL_CELL_FIELDS = [
+    "market",
+    "company",
+    "destination",
+    "cohort_year",
+    "model",
+    "powertrain",
+    "scenario",
+    "t",
+    "calendar_year",
+    "units",
+    "e_ref_kgco2e_per_vehicle",
+    "e_prod_kgco2e_per_vehicle",
+    "gap_kgco2e_per_vehicle",
+    "ti_tco2e",
+]
 WITHHELD_FIELDS = [
     "market",
     "company",
@@ -125,6 +144,8 @@ def main() -> None:
     scenarios = scenarios_by_market(reference)
 
     cells: list[dict[str, object]] = []
+
+    annual_cells: list[dict[str, object]] = []
     annual: dict[tuple[str, str, str], dict[int, float]] = defaultdict(lambda: defaultdict(float))
     surviving: dict[tuple[str, str], dict[int, float]] = defaultdict(lambda: defaultdict(float))
 
@@ -181,6 +202,19 @@ def main() -> None:
                 gap = e_ref - e_prod
                 cumulative += gap
                 annual[(market, c["company"], scenario)][cohort_year + t] += gap * units / 1000.0
+                annual_cells.append(
+                    {
+                        **identity,
+                        "scenario": scenario,
+                        "t": t,
+                        "calendar_year": cohort_year + t,
+                        "units": units,
+                        "e_ref_kgco2e_per_vehicle": round(e_ref, 4),
+                        "e_prod_kgco2e_per_vehicle": round(e_prod, 4),
+                        "gap_kgco2e_per_vehicle": round(gap, 4),
+                        "ti_tco2e": round(gap * units / 1000.0, 4),
+                    }
+                )
             cells.append(
                 {
                     **identity,
@@ -222,6 +256,18 @@ def main() -> None:
                 }
             )
     write_csv(OUT_ANNUAL, ANNUAL_FIELDS, annual_rows)
+    annual_cells.sort(
+        key=lambda r: (
+            str(r["market"]),
+            str(r["company"]),
+            str(r["scenario"]),
+            str(r["destination"]),
+            str(r["model"]),
+            str(r["powertrain"]),
+            int(str(r["t"])),
+        )
+    )
+    write_csv(OUT_ANNUAL_CELLS, ANNUAL_CELL_FIELDS, annual_cells)
 
     withheld.sort(
         key=lambda r: tuple(

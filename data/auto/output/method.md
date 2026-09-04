@@ -15,6 +15,7 @@ different test cycles and different national benchmarks.
 | `reference_trajectories_eu27.csv` | 3 | `build_reference.py` | market × country × scenario × t: `e_ref_kgco2_per_vehicle` (benchmark per vehicle-year), `grid_kgco2_per_kwh` |
 | `reference_trajectories_us.csv` | 3 | `build_reference_us.py` | the same columns for the US market (S1 and S3 only — see *United States* below) |
 | `ti_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario: units, lifetime, distance + tier, test cycle, real-world factor, year-0 product and benchmark emissions, `ti_per_vehicle_kgco2e`, `ti_tco2e` |
+| `ti_annual_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario × year: benchmark and product emissions per vehicle, the annual gap, and the cell's TI flow that year (tCO2e) — the year-by-year view at any aggregation level |
 | `ti_annual.csv` | 4 | `build_ti.py` | market × company × scenario × t: annual TI flow (tCO2e) and surviving vehicles |
 | `ti_withheld.csv` | 4 | `build_ti.py` | units carrying no result and why — the step-3a rows plus the markets whose benchmark is withheld |
 | `ti_exclusions.csv` | 4 | `build_ti.py` | market × company × scenario that the market publishes no benchmark for, with the units affected and the sourced reason |

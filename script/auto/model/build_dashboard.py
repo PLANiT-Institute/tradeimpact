@@ -56,7 +56,10 @@ DATASET_ORDER = (
 MODEL_STEPS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("3a cohorts", ("cohorts",)),
     ("3 reference", ("destination_parameters", "reference_trajectories")),
-    ("4 impact", ("ti_by_model", "ti_annual", "ti_withheld", "ti_exclusions")),
+    (
+        "4 impact",
+        ("ti_by_model", "ti_annual_by_model", "ti_annual", "ti_withheld", "ti_exclusions"),
+    ),
     ("4b crossover and sensitivity", ("ti_crossover", "ti_sensitivity")),
     ("5 aggregates and data quality", ("ti_country", "ti_powertrain", "ti_company", "ti_data")),
 )
@@ -69,6 +72,17 @@ DEFAULT_PIVOT = {
     "rows": ["market", "company", "powertrain", "model"],
     "table": "ti_by_model",
     "vals": ["ti_tco2e"],
+}
+
+#: The pivot the "Results by year" navigation entry lands on: the same cells, one column per
+#: calendar year of the operating life (filter on scenario to read one pathway at a time).
+YEARLY_PIVOT = {
+    "agg": "sum",
+    "cols": "calendar_year",
+    "rows": ["market", "company", "powertrain", "model"],
+    "table": "ti_annual_by_model",
+    "vals": ["ti_tco2e"],
+    "filters": [["scenario", "=", "S1"]],
 }
 
 
@@ -407,6 +421,7 @@ const SEP = String.fromCharCode(1);
 const VIEWS = [
   {id: 'lineage', label: 'Lineage'},
   {id: 'results', label: 'Results'},
+  {id: 'results_year', label: 'Results by year'},
   {id: 'pivot', label: 'Pivot'},
   {id: 'browse', label: 'Browse'},
   {id: 'sql', label: 'SQL'}
@@ -474,11 +489,16 @@ function isNumeric(table, column) {
   return !!c && (c.sqlite_type === 'INTEGER' || c.sqlite_type === 'REAL');
 }
 
+function presetFor(table) {
+  return [M.default, M.yearly].find((d) => d && d.table === table) || null;
+}
+
 function defaultPivot(table) {
-  const d = M.default;
-  if (table === d.table) {
+  const d = presetFor(table);
+  if (d) {
+    const filters = (d.filters || []).map((f) => ({col: f[0], op: f[1], val: String(f[2])}));
     return {rows: d.rows.slice(), cols: d.cols, vals: d.vals.slice(), agg: d.agg,
-      filters: [], sort: null};
+      filters: filters, sort: null};
   }
   const cs = colsOf(table);
   const dims = cs.filter((c) => c.sqlite_type === 'TEXT').map((c) => c.column);
@@ -1184,12 +1204,13 @@ function applyHash() {
   const parts = raw.split('/');
   const view = parts[0] || 'lineage';
   const table = parts[1] ? decodeURIComponent(parts[1]) : null;
-  if (view === 'results') {
-    state.table = M.default.table;
-    state.pivot = defaultPivot(M.default.table);
+  if (view === 'results' || view === 'results_year') {
+    const preset = view === 'results' ? M.default : M.yearly;
+    state.table = preset.table;
+    state.pivot = defaultPivot(preset.table);
     state.view = 'pivot';
     shellKey = '';
-    go('#/pivot/' + encodeURIComponent(M.default.table));
+    go('#/pivot/' + encodeURIComponent(preset.table));
     return;
   }
   if (['lineage', 'pivot', 'browse', 'sql'].indexOf(view) < 0) {
@@ -1224,7 +1245,7 @@ document.getElementById('nav').addEventListener('click', (e) => {
   const b = e.target.closest('[data-view]');
   if (!b) return;
   const v = b.getAttribute('data-view');
-  if (v === 'results') go('#/results');
+  if (v === 'results' || v === 'results_year') go('#/' + v);
   else if (v === 'pivot' || v === 'browse') go('#/' + v + '/' + encodeURIComponent(state.table));
   else go('#/' + v);
 });
@@ -1647,6 +1668,7 @@ def build_manifest(conn: sqlite3.Connection, db_bytes: int, gz_bytes: int) -> di
         "db_bytes": db_bytes,
         "gz_bytes": gz_bytes,
         "default": DEFAULT_PIVOT,
+        "yearly": YEARLY_PIVOT,
         "sources": sources,
         "sqljs_version": SQLJS_VERSION,
         "stages": list(STAGES),
