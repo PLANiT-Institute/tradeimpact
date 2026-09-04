@@ -83,3 +83,19 @@ premise and sends work back is the process working; the entry states the trigger
   `data/auto/dashboard.html`: lineage raw → method → processed → output per data type with source
   links, pivot table with generated SQL, browse, read-only SQL console. Opens from disk; sql.js
   1.10.3 from cdnjs is the only network dependency. Added as the last `run_all.py` step.
+
+## 2026-09-04 — gap review before the US build
+
+- Toyota EEA snapshot re-fetched directly from the EEA API: no raw file now originates from the
+  archived pipeline. CSV is preferred but JSON from a source of truth is acceptable (lead).
+- US benchmark population fixed: EPA passenger cars alone are narrower than FHWA's short-wheelbase
+  class, so the light-duty totals (cars + light-duty trucks; EPA Tables 3-13, A-91, A-93) are used
+  against FHWA's all-light-duty stock and distance; the US S1 fleet trend is re-derived on that
+  series (1.1 %/yr).
+- US cohorts come from the lead's IR workbooks only: Kia U.S.A column (Jan–Jun 2026, model level,
+  no powertrain split) and Hyundai US plants' Domestic segment (US-built cars only). Model names
+  map to EPA base models through `us_model_map.csv`; mixed ICE/HEV models take ICE centrally with
+  an all-HEV sensitivity bound; Genesis is out of scope; Ioniq 9 waits for an EPA row.
+- EPA label values are 5-cycle adjusted, so the real-world factor for the EPA cycle is 1.0
+  (`real_world_correction.csv` keyed on test cycle).
+- Australia deferred by the lead; its inputs stay in the database.

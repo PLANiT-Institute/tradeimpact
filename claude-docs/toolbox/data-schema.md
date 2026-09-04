@@ -192,3 +192,22 @@ single-scenario headline is ever published.
 Rows that cannot join — a region-level destination, an unknown destination, a missing powertrain, a
 model with no certified intensity — are counted into `ti_withheld_eu27.csv` with their units. That
 count is part of every published result, not an internal detail.
+
+## 7. Processed files added for the United States and Australia (2026-09-04)
+
+Same long-format conventions as sections 2–5 (`country`, `series`, `year`, `value`, `unit`, `source_id`, `source_file`) unless a different header is shown.
+
+| file | rows | columns |
+|---|---|---|
+| `country_emissions/processed/country_emissions_au.csv` | 140 | country, series, year, value, unit, source_id, source_file |
+| `country_emissions/processed/country_emissions_owid_grid.csv` | 52 | country, series, year, value, unit, source_id, source_file |
+| `country_emissions/processed/country_emissions_us.csv` | 62 | country, series, year, value, unit, source_id, source_file |
+| `emission_targets/processed/emission_targets_au.csv` | 6 | country, scenario, rate, value, target_level, base_year, target_year, derivation, source_id |
+| `emission_targets/processed/emission_targets_us.csv` | 6 | country, scenario, rate, value, target_level, base_year, target_year, derivation, source_id |
+| `vehicle_technology/processed/vehicle_technology_us_epa.csv` | 147 | company, model_year, model, base_model, powertrain, tailpipe_gco2_km, energy_wh_km, n_trims, test_cycle, source_id, source_file |
+| `vehicle_usage/processed/vehicle_usage_au.csv` | 15 | country, series, year, value, unit, source_id, source_file |
+| `vehicle_usage/processed/vehicle_usage_au_smvu.csv` | 15 | country, series, year, value, unit, source_id, source_file |
+| `vehicle_usage/processed/vehicle_usage_us.csv` | 8 | country, series, year, value, unit, source_id, source_file |
+| `vehicle_usage/processed/vehicle_usage_us_lifetime.csv` | 3 | country, series, year, value, unit, source_id, source_file |
+
+Lookups added: `sales/method/companies.csv` (exporter scope), `sales/method/us_model_map.csv` (IR model → EPA base model, powertrain, powertrain_rule), `vehicle_technology/method/real_world_correction.csv` now keyed on `test_cycle` × `powertrain` with `factor_low`/`factor_high`.
