@@ -11,15 +11,16 @@ Scenarios
     S1 current trajectory   log-linear trend of observed road-transport CO2 (GIR 1.A.3.b) and of
                             grid intensity, 2015 onward excluding 2020-2021; the KOTSA car share is
                             not used for the trend because it drifts over time
-    S2 committed policy     1st National Carbon Neutrality Basic Plan (2023): transport (1.A.3)
-                            annual path 2023 -> 2030 (93.7 -> 61.0 MtCO2e) for the fleet; power
-                            sector 2018 -> 2030 (269.6 -> 145.9 MtCO2e) for the grid, floored at
-                            the observed S1 grid trend where that trend is already steeper
-                            (committed policy is never read as less ambitious than what is
-                            observed, the same rule as the EU27 build)
-    S3 1.5C-aligned         2050 carbon-neutral scenarios (2021): transport 98.1 -> 2.8 MtCO2e
-                            (A안) for the fleet; power 269.6 -> 20.7 (B안) for the grid, because
-                            the A안 power endpoint is zero and a compound decline cannot reach it
+    S2 committed policy     2050 탄소중립 시나리오 (2021), the government's own pathway to net zero:
+                            transport (수송) 98.1 -> 2.8 MtCO2e (A안) for the fleet; power (전환)
+                            269.6 -> 20.7 MtCO2e (B안) for the grid, because the A안 power endpoint
+                            is zero and a compound decline cannot reach zero. The 2030 NDC waypoint
+                            is not used to set the rate: a vehicle sold today is driven for 11 to
+                            25 years, so a rate fitted to a 7-year window and then extrapolated
+                            over a lifetime would describe a policy nobody stated. Floored at the
+                            observed S1 grid trend where that trend is already steeper (committed
+                            policy is never read as less ambitious than what is observed, the same
+                            rule as the EU27 build).
 
 Algorithm
     $$ r = 1 - \\left(\\frac{V_{target}}{V_{base}}\\right)^{1/(y_{target}-y_{base})} $$
@@ -127,68 +128,19 @@ def main() -> None:
             }
         )
 
-    path = targets["kr_2030_transport_path"]
-    fleet_s2 = cagr_decline(
-        float(path["base_value"]),
-        float(path["target_value"]),
-        int(path["target_year"]) - int(path["base_year"]),
-    )
-    out.append(
-        {
-            "country": COUNTRY,
-            "scenario": "S2",
-            "rate": "r_fleet",
-            "value": round(fleet_s2, 9),
-            "target_level": "ndc_prorata",
-            "base_year": path["base_year"],
-            "target_year": path["target_year"],
-            "derivation": (
-                "1st National Carbon Neutrality Basic Plan (2023) transport (1.A.3) annual path "
-                f"{path['base_value']} -> {path['target_value']} MtCO2e "
-                f"({path['base_year']}-{path['target_year']}), "
-                "compound annual decline applied pro-rata to passenger cars; 수송 covers road, "
-                "domestic aviation, rail and navigation, not cars alone."
-            ),
-            "source_id": path["source_id"],
-        }
-    )
-    power = targets["kr_2030_power"]
-    power_s2 = cagr_decline(
-        float(power["base_value"]),
-        float(power["target_value"]),
-        int(power["target_year"]) - int(power["base_year"]),
-    )
-    level, note = "ndc_prorata", ""
-    if s1["r_power"] > power_s2:
-        level = "ndc_prorata_s1_floor"
-        note = (
-            f" PATHWAY_ALREADY_MET: the pro-rata power rate {power_s2:.4f}/yr is below the "
-            "observed "
-            f"S1 grid trend {s1['r_power']:.4f}/yr, so S2 power is floored at the S1 trend."
-        )
-        power_s2 = s1["r_power"]
-    out.append(
-        {
-            "country": COUNTRY,
-            "scenario": "S2",
-            "rate": "r_power",
-            "value": round(power_s2, 9),
-            "target_level": level,
-            "base_year": power["base_year"],
-            "target_year": power["target_year"],
-            "derivation": (
-                "1st National Carbon Neutrality Basic Plan (2023) power sector (전환) "
-                f"{power['base_value']} -> {power['target_value']} MtCO2e "
-                f"({power['base_year']}-{power['target_year']}), "
-                "compound annual decline applied to grid intensity." + note
-            ),
-            "source_id": power["source_id"],
-        }
-    )
-
-    for rate, key, label in (
-        ("r_fleet", "kr_2050_transport_a", "transport (1.A.3) A안"),
-        ("r_power", "kr_2050_power_b", "power sector (전환) B안"),
+    for rate, key, label, note_extra in (
+        (
+            "r_fleet",
+            "kr_2050_transport_a",
+            "transport (수송) A안",
+            "수송 covers road, domestic aviation, rail and navigation, not cars alone.",
+        ),
+        (
+            "r_power",
+            "kr_2050_power_b",
+            "power sector (전환) B안",
+            "B안 anchors the power rate because the A안 endpoint is zero.",
+        ),
     ):
         t = targets[key]
         value = cagr_decline(
@@ -196,25 +148,30 @@ def main() -> None:
             float(t["target_value"]),
             int(t["target_year"]) - int(t["base_year"]),
         )
+        level, floor_note = "net_zero_2050", ""
+        if rate == "r_power" and s1["r_power"] > value:
+            level = "net_zero_2050_s1_floor"
+            floor_note = (
+                f" PATHWAY_ALREADY_MET: the pathway power rate {value:.4f}/yr is below the "
+                f"observed S1 grid trend {s1['r_power']:.4f}/yr, so S2 power is floored at the "
+                "S1 trend."
+            )
+            value = s1["r_power"]
         out.append(
             {
                 "country": COUNTRY,
-                "scenario": "S3",
+                "scenario": "S2",
                 "rate": rate,
                 "value": round(value, 9),
-                "target_level": "1p5c_prorata",
+                "target_level": level,
                 "base_year": t["base_year"],
                 "target_year": t["target_year"],
                 "derivation": (
-                    f"2050 carbon-neutral scenarios (2021) {label} {t['base_value']} -> "
-                    f"{t['target_value']} "
-                    f"MtCO2e ({t['base_year']}-{t['target_year']}), compound annual decline "
-                    "applied pro-rata. "
-                    + (
-                        "B안 anchors the power rate because the A안 endpoint is zero."
-                        if rate == "r_power"
-                        else "B안 (9.2 MtCO2e) is the published upper end of the range."
-                    )
+                    f"2050 탄소중립 시나리오 (2021) {label} {t['base_value']} -> "
+                    f"{t['target_value']} MtCO2e ({t['base_year']}-{t['target_year']}), compound "
+                    "annual decline applied pro-rata over the whole vehicle-lifetime horizon. "
+                    + note_extra
+                    + floor_note
                 ),
                 "source_id": t["source_id"],
             }

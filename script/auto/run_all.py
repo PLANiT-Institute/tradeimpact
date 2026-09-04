@@ -2,7 +2,7 @@
 
 Steps (each is a standalone script; see script/auto/README.md):
     extraction   raw/ -> processed/ for every dataset
-    derivation   S1/S2/S3 rates per market
+    derivation   S1/S2 rates per market
     model        reference, impact, sensitivity, aggregation, data quality
     database     every CSV under data/auto -> data/auto/database/tradeimpact_auto.sqlite
     dashboard    static reader of the database file -> data/auto/database/dashboard.html

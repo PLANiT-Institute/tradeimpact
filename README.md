@@ -66,33 +66,33 @@ and the United States (the cohorts in the gathered IR workbooks). The engine rep
 previously published EU27 result exactly when fed the archived inputs (see
 `data/auto/output/method.md`, Verification).
 
-| Market, cohort | Company | Covered | S1 current | S2 committed | S3 1.5 °C |
-|---|---|---|---|---|---|
-| EU27, 2024 registrations | Toyota | 96.8 % | −1.68 MtCO₂e | −6.29 | −14.37 |
-| EU27, 2024 registrations | Hyundai | 95.4 % | −1.66 | −3.82 | −8.00 |
-| EU27, 2024 registrations | Kia | 91.4 % | −1.52 | −3.49 | −7.37 |
-| EU27, 2024 registrations | Nissan | 99.8 % | −1.44 | −2.38 | −4.43 |
-| US, 2024 brand sales | Toyota | 97.8 % | **+5.53** | excluded (no NDC in force) | −29.92 |
-| US, 2025 brand sales | Toyota | 98.3 % | **+8.07** | excluded (no NDC in force) | −30.50 |
-| US, 2024 brand sales | Nissan | 99.9 % | **+2.26** | excluded (no NDC in force) | −13.32 |
-| US, 2025 brand sales | Nissan | 100.0 % | **+1.36** | excluded (no NDC in force) | −14.46 |
-| US, 2024 brand sales | Hyundai | 99.0 % | **+1.56** | excluded (no NDC in force) | −13.13 |
-| US, 2025 brand sales | Hyundai | 98.4 % | **+1.50** | excluded (no NDC in force) | −14.20 |
-| US, 2024 brand sales | Kia | 98.0 % | **+1.01** | excluded (no NDC in force) | −12.77 |
-| US, 2025 brand sales | Kia | 98.2 % | **+0.00** | excluded (no NDC in force) | −14.96 |
-| US, Jan–Jun 2026 retail | Kia | 98.0 % | −0.49 | excluded (no NDC in force) | −8.11 |
-| Korea, 2024 domestic sales | Hyundai | 99.3 % | **+1.89** | −0.96 | −2.49 |
-| Korea, 2025 domestic sales | Hyundai | 98.8 % | **+2.17** | −0.92 | −2.56 |
-| Korea, Jan–Jun 2026 retail | Kia | 93.3 % | **+1.30** | −0.53 | −1.50 |
+| Market, cohort | Company | Covered | S1 current | S2 committed policy |
+|---|---|---|---|---|
+| EU27, 2024 registrations | Toyota | 96.8 % | −1.68 MtCO₂e | −14.37 |
+| EU27, 2024 registrations | Hyundai | 95.4 % | −1.66 | −8.00 |
+| EU27, 2024 registrations | Kia | 91.4 % | −1.52 | −7.37 |
+| EU27, 2024 registrations | Nissan | 99.8 % | −1.44 | −4.43 |
+| US, 2024 brand sales | Toyota | 97.8 % | **+5.53** | −19.00 |
+| US, 2024 brand sales | Hyundai | 99.0 % | **+1.56** | −8.84 |
+| US, 2024 brand sales | Kia | 98.0 % | **+1.01** | −8.77 |
+| US, 2024 brand sales | Nissan | 99.9 % | **+2.26** | −8.63 |
+| US, 2025 brand sales | Toyota | 98.3 % | **+8.07** | −18.60 |
+| US, 2025 brand sales | Hyundai | 98.4 % | **+1.50** | −9.63 |
+| US, 2025 brand sales | Kia | 98.2 % | **+0.001** | −10.52 |
+| US, 2025 brand sales | Nissan | 100.0 % | **+1.36** | −9.65 |
+| US, Jan–Jun 2026 retail | Kia | 98.0 % | −0.49 | −5.81 |
+| Korea, 2024 domestic sales | Hyundai | 94.7 % | **+5.02** | −4.24 |
+| Korea, 2025 domestic sales | Hyundai | 94.4 % | **+4.84** | −4.06 |
+| Korea, Jan–Jun 2026 retail | Kia | 98.7 % | **+1.86** | −1.65 |
 
 ### How much of worldwide sales this captures
 
 | Company | Cohort | Worldwide sales | Priced | Held | Countries priced |
 |---|---|---|---|---|---|
 | Toyota | 2024 | 10.16 M | 26.8 % | 42.6 % | 27 |
-| Hyundai | 2024 | 3.98 M | 41.6 % | 47.5 % | 28 |
+| Hyundai | 2024 | 4.17 M | 42.4 % | 48.7 % | 28 |
 | Nissan | 2024 | 3.35 M | 31.7 % | 40.3 % | 27 |
-| Kia | 2026 H1 | 1.62 M | 43.2 % | 100 % | 2 |
+| Kia | 2026 H1 | 1.62 M | 44.2 % | 100 % | 2 |
 
 `Priced` is units carrying a result over the company's own worldwide figure; `Held` is every
 unit the project holds for those brands, priced or not, so the gap between the two is sales we
@@ -126,11 +126,13 @@ by powertrain are divided with EPA Automotive Trends MY2024 production shares (a
 A-US-PT in `data/auto/output/method.md`) with an all-HEV bound (`ti_sensitivity.csv`,
 dimension `powertrain_mix`). Cohort years are never pooled: each row above is one sale year.
 Korea is priced on free Korean official statistics (MOLIT stock and age, KOTSA distance, GIR
-inventory, KEA label fuel economy, the 2023 Basic Plan and the 2050 scenarios); its fleet
+inventory, KEA label fuel economy, the 2050 carbon-neutral scenarios); its fleet
 intensity is tier C because the national inventory has no passenger-car split (see
-`data/auto/output/method.md`, Korea). The US S2 scenario is excluded because no
-NDC is in force; the exclusion is a row in `ti_company.csv` and `ti_exclusions.csv`, never a
-silent gap. EU27 magnitudes are proxy-heavy (48 % of covered units on an EU-average distance,
+`data/auto/output/method.md`, Korea). The US S2 benchmark is the NDC the United States
+communicated on 2024-12-19 (61 % below 2005 net GHG by 2035) — the last pathway its own
+government stated, a month before it notified withdrawal from the Paris Agreement; the
+`target_level` column carries that status, and a market whose rate were ever empty would still
+appear as a row in `ti_company.csv` and `ti_exclusions.csv`, never as a silent gap. EU27 magnitudes are proxy-heavy (48 % of covered units on an EU-average distance,
 guideline §5.3 threshold 50 %).
 
 ## Naming convention
@@ -149,7 +151,7 @@ The only capitalised files are `README.md` and `LICENSE`. Raw files are renamed 
 - Proxies and tiers are disclosed: every input value carries a tier (A directly sourced,
   B estimated or derived, C proxy) in the database, and every result cell carries its Layer 1,
   Layer 2 and worst tier (`data/auto/registry/tiers.csv`, `value_tiers.csv`). Results on
-  proxied inputs are directions, not precise magnitudes. Always report S1/S2/S3 together.
+  proxied inputs are directions, not precise magnitudes. Always report S1 and S2 together.
 
 ## License
 

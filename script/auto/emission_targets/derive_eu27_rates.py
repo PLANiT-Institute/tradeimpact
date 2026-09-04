@@ -1,4 +1,4 @@
-"""Derive S1/S2/S3 annual decline rates per EU27 market (whitepaper §3.1, guideline §2.3 B).
+"""Derive S1 and S2 annual decline rates per EU27 market (whitepaper §3.1, guideline §2.3 B).
 
 Inputs
     data/auto/emission_targets/raw/eu_climate_targets.csv   EU policy anchors (hand-transcribed
@@ -11,13 +11,14 @@ Output
 Scenarios
     S1 current trajectory   log-linear trend of observed per-car CO2 (fleet) and of grid
                             intensity (power) over the trend window, pandemic years excluded.
-    S2 committed policy     EU-wide pro-rata: transport 2023 -> 2030 pathway (fleet); public
-                            electricity CO2 from its latest observation to the 2030 economy-wide
-                            target applied to the 1990 level (power). Where that rate is negative
-                            (target already met) S2 power is floored at each market's observed
-                            S1 grid trend and flagged: committed policy is never read as less
-                            ambitious than the current trajectory.
-    S3 1.5C-aligned         same construction against the 2040 economy-wide target.
+    S2 committed policy     EU-wide pro-rata against the European Climate Law's furthest
+                            target, 90% below 1990 by 2040: transport from its 2023 level, and
+                            public electricity CO2 from its latest observation. The 2040 anchor
+                            is used rather than the 2030 one so that a car's whole operating life
+                            (up to 25 years) sits inside the target horizon. Where the power rate
+                            comes out negative (target already met) it is floored at each
+                            market's observed S1 grid trend and flagged: committed policy is
+                            never read as less ambitious than the current trajectory.
 
 Algorithm:
     $$ r = 1 - \\left(\\frac{V_{target}}{V_{base}}\\right)^{1/(y_{target}-y_{base})} $$
@@ -124,27 +125,16 @@ def main() -> None:
     if power_year is None:
         raise SystemExit("EU27 power_co2 has no observation at or before the cohort year")
 
-    t30, t40, tr = (
-        targets["eu_2030_economy"],
-        targets["eu_2040_economy"],
-        targets["eu_2030_transport"],
-    )
+    t40, tr = targets["eu_2040_economy"], targets["eu_2030_transport"]
+    # The committed pathway is taken to the furthest year the European Climate Law sets, so a
+    # car's whole operating life sits inside the target horizon instead of extrapolating a
+    # seven-year window over two decades.
     r_fleet_s2 = cagr_decline(
-        float(tr["base_value"]),
-        float(tr["target_value"]),
-        int(tr["target_year"]) - int(tr["base_year"]),
-    )
-    r_fleet_s3 = cagr_decline(
         float(tr["base_value"]),
         transport_1990 * (1.0 - float(t40["reduction_vs_base"])),
         int(t40["target_year"]) - int(tr["base_year"]),
     )
     r_power_s2_raw = cagr_decline(
-        power_now,
-        power_1990 * (1.0 - float(t30["reduction_vs_base"])),
-        int(t30["target_year"]) - power_year,
-    )
-    r_power_s3 = cagr_decline(
         power_now,
         power_1990 * (1.0 - float(t40["reduction_vs_base"])),
         int(t40["target_year"]) - power_year,
@@ -155,8 +145,8 @@ def main() -> None:
         r_power_s2 = 0.0
         power_flag = (
             f" PATHWAY_ALREADY_MET: EU public electricity CO2 in {power_year} "
-            f"({power_now / 1000:.0f} Mt) is below the pro-rata 2030 level "
-            f"({power_1990 * (1 - float(t30['reduction_vs_base'])) / 1000:.0f} Mt); implied rate "
+            f"({power_now / 1000:.0f} Mt) is below the pro-rata 2040 level "
+            f"({power_1990 * (1 - float(t40['reduction_vs_base'])) / 1000:.0f} Mt); implied rate "
             f"{r_power_s2_raw:+.4f}/yr. Committed policy cannot be less ambitious than the "
             "current trajectory, so S2 power is floored at each market's observed S1 grid trend."
         )
@@ -167,19 +157,10 @@ def main() -> None:
             "r_fleet",
             r_fleet_s2,
             int(tr["base_year"]),
-            int(tr["target_year"]),
-            "EU domestic transport pathway 2023 -> 2030, compound annual decline, applied pro-rata "
-            "to every member state's car fleet.",
-            tr["source_id"],
-        ),
-        (
-            "S3",
-            "r_fleet",
-            r_fleet_s3,
-            int(tr["base_year"]),
             int(t40["target_year"]),
-            "EU transport 2023 level to 10% of its 1990 level by 2040 (economy-wide 2040 target "
-            "applied pro-rata to transport), compound annual decline.",
+            "EU transport 2023 level to 10% of its 1990 level by 2040 (the European Climate Law's "
+            "furthest target, 90% below 1990, applied pro-rata to transport), compound annual "
+            "decline applied to every member state's car fleet.",
             f"{t40['source_id']};eurostat_env_air_gge_crf1a3",
         ),
         (
@@ -187,19 +168,9 @@ def main() -> None:
             "r_power",
             r_power_s2,
             power_year,
-            int(t30["target_year"]),
-            "EU public electricity and heat CO2 from its latest observation to 45% of 1990 by 2030 "
-            "(economy-wide 2030 target applied pro-rata), compound annual decline." + power_flag,
-            f"{t30['source_id']};eurostat_env_air_gge_crf1a1a",
-        ),
-        (
-            "S3",
-            "r_power",
-            r_power_s3,
-            power_year,
             int(t40["target_year"]),
             "EU public electricity and heat CO2 from its latest observation to 10% of 1990 by "
-            "2040, compound annual decline.",
+            "2040, compound annual decline." + power_flag,
             f"{t40['source_id']};eurostat_env_air_gge_crf1a1a",
         ),
     ]
@@ -248,7 +219,7 @@ def main() -> None:
                 }
             )
         for scenario, rate, value, y0, y1, derivation, source_id in eu_rows:
-            target_level = "ndc_prorata" if scenario == "S2" else "1p5c_prorata"
+            target_level = "ndc_prorata"
             if scenario == "S2" and rate == "r_power" and power_flag:
                 value = max(grid_trend[0], 0.0)
                 target_level = "ndc_prorata_s1_floor"
@@ -277,8 +248,8 @@ def main() -> None:
         writer.writerows(out)
     print(
         f"{OUT.relative_to(REPO)}: {len(out)} rows, {len(countries) - len(skipped)} countries; "
-        f"r_fleet S2 {r_fleet_s2:.4f} S3 {r_fleet_s3:.4f}; r_power S2 {r_power_s2:.4f} "
-        f"S3 {r_power_s3:.4f}" + (f"; skipped (no trend): {skipped}" if skipped else "")
+        f"r_fleet S2 {r_fleet_s2:.4f}; r_power S2 {r_power_s2:.4f}"
+        + (f"; skipped (no trend): {skipped}" if skipped else "")
     )
 
 

@@ -3,7 +3,7 @@
 Inputs (processed datasets)
     vehicle_usage/processed/vehicle_usage_eu27.csv          stock, traffic, age bands
     country_emissions/processed/country_emissions_eu27.csv  car CO2, grid intensity
-    emission_targets/processed/emission_targets_eu27.csv    S1/S2/S3 r_fleet, r_power
+    emission_targets/processed/emission_targets_eu27.csv    S1/S2 r_fleet, r_power
 Outputs (data/auto/output/)
     destination_parameters_eu27.csv   per market: distance, fleet intensity base, grid, lifetime,
                                       each with tier, reference year, derivation and warnings
@@ -40,7 +40,7 @@ OUT_PARAMS = OUT_DIR / "destination_parameters_eu27.csv"
 OUT_REF = OUT_DIR / "reference_trajectories_eu27.csv"
 
 EU = "EU27"
-SCENARIOS = ("S1", "S2", "S3")
+SCENARIOS = ("S1", "S2")
 # Plausibility bands: outside them the traffic/stock or inventory/stock series describe
 # different populations, so the value is not published as a clean national parameter.
 VKT_MIN_KM, VKT_MAX_KM = 3_000.0, 30_000.0

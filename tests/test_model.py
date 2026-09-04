@@ -230,7 +230,10 @@ def test_excluded_scenarios_are_published_not_silent(cells: list[dict[str, str]]
     for path in sorted(OUT.glob("destination_parameters_*.csv")):
         for r in rows(path):
             excluded[r["market"]] |= {s for s in r["scenarios_excluded"].split(";") if s}
-    assert excluded[US] == {"S2"}
+    # Every market now carries both scenarios: S2 for the US is the NDC it communicated in
+    # December 2024, so no market drops a scenario. The publication rule is still tested, so
+    # that a future empty rate cannot pass as a silent gap.
+    assert not any(excluded.values()), dict(excluded)
     exclusions = rows(OUT / "ti_exclusions.csv")
     company_table = rows(OUT / "ti_company.csv")
     for market, scenarios in excluded.items():
