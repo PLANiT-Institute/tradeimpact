@@ -160,6 +160,30 @@ government stated, a month before it notified withdrawal from the Paris Agreemen
 appear as a row in `ti_company.csv` and `ti_exclusions.csv`, never as a silent gap. EU27 magnitudes are proxy-heavy (48 % of covered units on an EU-average distance,
 guideline §5.3 threshold 50 %).
 
+## The analysis report
+
+`data/auto/report/ti_automotive_report.html` is a 38-page analysis of the result set, built from
+the database by `script/auto/report/build_report.py` and rebuilt by `run_all.py` with everything
+else. It is one self-contained file: nine inline-SVG charts, sixteen tables, no script, no image,
+no network request, and it prints to A4. Like every other artefact here it holds no data of its
+own — the prose interpolates the same queries the charts use, so a sentence cannot outlive the
+table under it, and a rebuild after a data change moves the words as well as the figures.
+
+Its six findings, in the order the report makes them:
+
+1. Under each destination's own committed pathway, **none** of the 20 cohorts emits less over
+   its lifetime than the fleet it joins; under the observed trajectory 15 of 20 do.
+2. Under committed policy a cohort stops beating its benchmark 4.7 to 5.6 years after sale, in
+   every market — against 23 years in the United States under the observed trend.
+3. Hybrids are the largest single contribution against the observed trend and almost nothing
+   against committed policy; battery-electric is the only powertrain positive under both.
+4. The same nameplate and powertrain is a contribution in one market and a multi-tonne
+   liability in another, on market parameters alone.
+5. Inside the EU27 the per-vehicle result spans 28 tonnes between member states — wider than
+   the gap between any two powertrains in the same country.
+6. The result is most sensitive to vehicle lifetime (47 % to 131 % of the central value), which
+   is also the least-sourced input in three of the four markets.
+
 ## Naming convention
 
 Everything is lowercase `snake_case` — directories, Python files, data files, CSV columns.

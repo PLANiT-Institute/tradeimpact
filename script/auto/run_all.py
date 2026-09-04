@@ -6,6 +6,7 @@ Steps (each is a standalone script; see script/auto/README.md):
     model        reference, impact, sensitivity, aggregation, data quality
     database     every CSV under data/auto -> data/auto/database/tradeimpact_auto.sqlite
     dashboard    static reader of the database file -> data/auto/database/dashboard.html
+    report       the analysis report read out of the database -> data/auto/report/
     checks       ruff (lint) and pytest (numerical and consistency tests)
 
 Exit status is non-zero if any step fails, so `run_all.py && git commit` can never commit a
@@ -80,6 +81,7 @@ MODEL = [
     "model/build_global_coverage.py",
     "model/build_database.py",
     "model/build_dashboard.py",
+    "report/build_report.py",
 ]
 CHECKS = [
     [PY, "-m", "ruff", "check", "script", "tests"],
