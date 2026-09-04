@@ -1,10 +1,10 @@
 # output — model results (research process steps 3–5)
 
 Written only by `script/auto/model/`. Every file is regenerated from the processed datasets;
-nothing here is edited by hand. Two markets are in scope — **EU27** (2024 registrations) and the
-**United States** (2025/2026 exporter sales) — for Hyundai and Kia. Every result table carries a
-`market` column and the markets are never summed together: they rest on different sales bases,
-different test cycles and different national benchmarks.
+nothing here is edited by hand. Four markets are in scope — **EU27** (2024 registrations), the
+**United States**, **Japan** and **Korea** — for Hyundai, Kia, Toyota and Nissan. Every result
+table carries a `market` column and the markets are never summed together: they rest on
+different sales bases, different test cycles and different national benchmarks.
 
 | file | step | script | grain |
 |---|---|---|---|
@@ -13,18 +13,22 @@ different test cycles and different national benchmarks.
 | `destination_parameters_eu27.csv` | 3 | `build_reference.py` | importer market: distance (km/yr, tier, band), car stock, car CO2, fleet intensity base (gCO2/km, tier), grid intensity (gCO2/kWh), mean car age, operating lifetime (central/low/high), excluded scenarios, warnings, source ids |
 | `destination_parameters_us.csv` | 3 | `build_reference_us.py` | the same columns for the US market |
 | `destination_parameters_kr.csv` | 3 | `build_reference_kr.py` | the same columns for the Korean market |
+| `destination_parameters_jp.csv` | 3 | `build_reference_jp.py` | the same columns for the Japanese market |
 | `reference_trajectories_eu27.csv` | 3 | `build_reference.py` | market × country × scenario × t: `e_ref_kgco2_per_vehicle` (benchmark per vehicle-year), `grid_kgco2_per_kwh` |
 | `reference_trajectories_us.csv` | 3 | `build_reference_us.py` | the same columns for the US market (S1, S2) |
 | `reference_trajectories_kr.csv` | 3 | `build_reference_kr.py` | the same columns for the Korean market (S1, S2) |
+| `reference_trajectories_jp.csv` | 3 | `build_reference_jp.py` | the same columns for the Japanese market (S1, S2) |
 | `ti_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario: units, lifetime, distance + tier, test cycle, real-world factor, year-0 product and benchmark emissions, `ti_per_vehicle_kgco2e`, `ti_tco2e`, and the whitepaper §5.2 tier declaration: `fleet_intensity_tier`, `grid_tier`, `lifetime_tier`, `rate_tier`, `layer1_tier` (benchmark), `technology_tier`, `powertrain_tier`, `layer2_tier` (product), `tier` (worst of both) |
-| `ti_annual_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario × year: benchmark and product emissions per vehicle, the annual gap, and the cell's TI flow that year (tCO2e) — the year-by-year view at any aggregation level |
-| `ti_annual.csv` | 4 | `build_ti.py` | market × company × cohort_year × scenario × t: annual TI flow (tCO2e) and surviving vehicles |
+| `ti_annual_by_model.csv` | 4 | `build_ti.py` | the same grain × calendar year: benchmark and product emissions per vehicle and in total (`e_ref_tco2e`, `e_prod_tco2e`), the annual gap, and the cell's TI that year |
+| `ti_annual.csv` | 4 | `build_ti.py` | market × company × cohort_year × scenario × calendar year: surviving vehicles, what the scenario benchmark would have emitted (`e_ref_tco2e`), what the products emit (`e_prod_tco2e`), their difference (`ti_tco2e`), the running total (`cumulative_ti_tco2e`), and all three per surviving vehicle |
 | `ti_withheld.csv` | 4 | `build_ti.py` | units carrying no result and why — the step-3a rows plus the markets whose benchmark is withheld |
 | `ti_exclusions.csv` | 4 | `build_ti.py` | market × company × scenario that the market publishes no benchmark for, with the units affected and the sourced reason |
 | `ti_crossover.csv` | 4b | `build_sensitivity.py` | market × company × destination × model × powertrain × scenario: closed-form crossover year (years after sale and calendar year) or the reason there is none |
 | `ti_sensitivity.csv` | 4b | `build_sensitivity.py` | company × market × scenario × dimension (lifetime ±3 y, real-world factor low/high, proxied-distance quartiles, powertrain mix) × variant: cohort total |
 | `ti_country.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × destination × scenario: units, `ti_tco2e`, per-vehicle, direction |
 | `ti_powertrain.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × powertrain × scenario |
+| `ti_annual_country.csv` | 5 | `aggregate_country.py` | the destination roll-up by calendar year: units, `e_ref_tco2e`, `e_prod_tco2e`, `ti_tco2e`, `cumulative_ti_tco2e` and the three per-vehicle values |
+| `ti_annual_powertrain.csv` | 5 | `aggregate_country.py` | the same by powertrain |
 | `ti_company.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × scenario: `status` (reported / excluded), covered/withheld units, total, per-vehicle, direction, decomposition identity check, exclusion reason |
 | `ti_global_coverage.csv` | 5e | `build_global_coverage.py` | company × cohort year: the company's own worldwide sales and what covers it, units assessed and their share of worldwide, the markets and country count assessed, units held and their share, and the brands inside the denominator that the cohorts hold apart |
 | `ti_source_reconciliation.csv` | 5d | `build_reconciliation.py` | company × destination × cohort year × source file: units, basis and which side of the market it counts, whether the cohort was built from it, the brands a group figure covers, and the like-for-like spread against the file used |
@@ -39,6 +43,19 @@ reuses this join instead of repeating it.
 Sign convention: positive TI = the product emits less than the destination's committed
 benchmark over its lifetime (contribution); negative = lock-in liability. Unit: tCO2e over
 the operating lifetime, per-vehicle values in kgCO2e.
+
+**Reading a result year by year.** Every lifetime total in `ti_company.csv`, `ti_country.csv`
+and `ti_powertrain.csv` has an annual twin — `ti_annual.csv`, `ti_annual_country.csv`,
+`ti_annual_powertrain.csv` — and each annual row carries both sides of the comparison rather
+than only its result: `e_ref_tco2e` is what the surviving fleet would have emitted on the
+scenario's benchmark that calendar year, `e_prod_tco2e` is what it actually emits, `ti_tco2e` is
+the difference, and `cumulative_ti_tco2e` is the running total that ends at the published
+lifetime figure. Because the benchmark declines each year (S1 at the observed trend, S2 at the
+government's committed rate) while a sold vehicle's intensity is fixed, the annual gap shrinks
+and usually changes sign; `ti_crossover.csv` gives the year it does. Four tests hold the
+arithmetic together: the identity `ti = e_ref - e_prod` at every annual grain, both roll-ups
+reproducing the company flow year by year, the cell table summing to the company flow, and the
+last cumulative value equalling the published lifetime total.
 
 ## Language, and the one exception
 

@@ -375,10 +375,10 @@ const SERVE_PORT = 8765;
 const SERVE_URL = 'then open http://127.0.0.1:8765/database/dashboard.html';
 const SERVED_DB = 'http://127.0.0.1:8765/database/tradeimpact_auto.sqlite';
 const DEFAULT_PIVOT = {"agg":"sum","cols":"scenario","rows":["market","company","powertrain","model"],"table":"ti_by_model","vals":["ti_tco2e"]};
-const YEARLY_PIVOT = {"agg":"sum","cols":"calendar_year","filters":[["scenario","=","S1"]],"rows":["market","company","powertrain","model"],"table":"ti_annual_by_model","vals":["ti_tco2e"]};
+const YEARLY_PIVOT = {"agg":"sum","cols":"calendar_year","rows":["market","company","cohort_year","scenario"],"table":"ti_annual","vals":["e_ref_tco2e","e_prod_tco2e","ti_tco2e"]};
 const STAGES = ["raw","method","processed","output"];
 const DATASET_ORDER = ["sales","vehicle_technology","vehicle_usage","country_emissions","emission_targets","model","auto"];
-const MODEL_STEPS = [["3a cohorts",["cohorts"]],["3 reference",["destination_parameters","reference_trajectories"]],["4 impact",["ti_by_model","ti_annual_by_model","ti_annual","ti_withheld","ti_exclusions"]],["4b crossover and sensitivity",["ti_crossover","ti_sensitivity"]],["5 aggregates and data quality",["ti_country","ti_powertrain","ti_company","ti_data","ti_coverage","ti_source","ti_global"]]];
+const MODEL_STEPS = [["3a cohorts",["cohorts"]],["3 reference",["destination_parameters","reference_trajectories"]],["4 impact",["ti_by_model","ti_annual_by_model","ti_annual","ti_withheld","ti_exclusions"]],["4b crossover and sensitivity",["ti_crossover","ti_sensitivity"]],["5 aggregates and data quality",["ti_country","ti_powertrain","ti_company","ti_annual_country","ti_annual_powertrain","ti_data","ti_coverage","ti_source","ti_global"]]];
 
 const SEP = String.fromCharCode(1);
 /* Views that render the pivot: the two presets keep their own address and their own place in
@@ -1624,16 +1624,27 @@ function buildDatasets(tables, rawFiles) {
     const outputs = stages.output.slice();
     const steps = [];
     if (dataset === 'model' && outputs.length) {
-      const taken = new Set();
-      for (const step of MODEL_STEPS) {
-        const hit = [];
-        for (const p of step[1]) {
-          for (const t of outputs) if (t.indexOf(p) === 0) hit.push(t);
+      // Longest prefix wins, so a table lands in exactly one step: ti_annual_country belongs
+      // to the aggregates step even though "ti_annual" also matches it.
+      const owner = new Map();
+      for (const t of outputs) {
+        let best = null;
+        let length = -1;
+        for (const step of MODEL_STEPS) {
+          for (const p of step[1]) {
+            if (t.indexOf(p) === 0 && p.length > length) {
+              best = step[0];
+              length = p.length;
+            }
+          }
         }
-        hit.forEach((t) => taken.add(t));
+        if (best !== null) owner.set(t, best);
+      }
+      for (const step of MODEL_STEPS) {
+        const hit = outputs.filter((t) => owner.get(t) === step[0]);
         if (hit.length) steps.push({label: step[0], tables: hit});
       }
-      const rest = outputs.filter((t) => !taken.has(t));
+      const rest = outputs.filter((t) => !owner.has(t));
       if (rest.length) steps.push({label: 'other', tables: rest});
     }
     return {

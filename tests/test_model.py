@@ -301,6 +301,80 @@ def test_annual_by_model_sums_to_company_annual_flow() -> None:
         assert abs(by_cells[key] - total) <= tolerance, key
 
 
+def test_annual_tables_state_both_sides_of_the_comparison() -> None:
+    """Every annual grain publishes benchmark, product and their difference, and they agree.
+
+    The point of the annual tables is that a reader can see what is being compared in each
+    calendar year, not only the net result, so the identity ti = e_ref - e_prod is asserted at
+    all three grains: the cohort cell, the company roll-up, and the destination and powertrain
+    roll-ups.
+    """
+    files = (
+        "ti_annual.csv",
+        "ti_annual_by_model.csv",
+        "ti_annual_country.csv",
+        "ti_annual_powertrain.csv",
+    )
+    for name in files:
+        table = rows(OUT / name)
+        assert table, name
+        for r in table:
+            e_ref, e_prod, ti = (
+                float(r["e_ref_tco2e"]),
+                float(r["e_prod_tco2e"]),
+                float(r["ti_tco2e"]),
+            )
+            # Three independently rounded 4-dp values, so the identity holds to half a step
+            # each way on either side of the subtraction.
+            assert abs((e_ref - e_prod) - ti) <= 1.5e-4, (name, r)
+
+
+def test_annual_roll_ups_reproduce_the_company_flow_year_by_year() -> None:
+    """The destination and powertrain annual roll-ups each sum to the company annual flow."""
+    flow = {
+        (r["market"], r["company"], r["cohort_year"], r["scenario"], r["calendar_year"]): float(
+            r["ti_tco2e"]
+        )
+        for r in rows(OUT / "ti_annual.csv")
+    }
+    cells_per_key: dict[tuple[str, str, str, str, str], int] = defaultdict(int)
+    for r in rows(OUT / "ti_annual_by_model.csv"):
+        cells_per_key[
+            (r["market"], r["company"], r["cohort_year"], r["scenario"], r["calendar_year"])
+        ] += 1
+    for name in ("ti_annual_country.csv", "ti_annual_powertrain.csv"):
+        totals: dict[tuple[str, str, str, str, str], float] = defaultdict(float)
+        for r in rows(OUT / name):
+            totals[
+                (r["market"], r["company"], r["cohort_year"], r["scenario"], r["calendar_year"])
+            ] += float(r["ti_tco2e"])
+        assert totals.keys() == flow.keys(), name
+        for key, published in flow.items():
+            tolerance = 1e-6 * max(1.0, abs(published)) + 5e-5 * cells_per_key[key]
+            assert abs(totals[key] - published) <= tolerance, (name, key)
+
+
+def test_cumulative_annual_flow_reaches_the_lifetime_total(
+    company_rows: list[dict[str, str]],
+) -> None:
+    """The last cumulative value of a cohort's annual flow is its published lifetime total."""
+    last: dict[tuple[str, str, str, str], tuple[int, float]] = {}
+    for r in rows(OUT / "ti_annual.csv"):
+        key = (r["market"], r["company"], r["cohort_year"], r["scenario"])
+        year = int(r["calendar_year"])
+        if key not in last or year > last[key][0]:
+            last[key] = (year, float(r["cumulative_ti_tco2e"]))
+    checked = 0
+    for r in company_rows:
+        if r["status"] != "reported":
+            continue
+        key = (r["market"], r["company"], r["cohort_year"], r["scenario"])
+        total = float(r["ti_tco2e"])
+        assert abs(last[key][1] - total) <= 1e-6 * max(1.0, abs(total)) + 0.05, key
+        checked += 1
+    assert checked
+
+
 TIERS = {"A", "B", "C"}
 
 

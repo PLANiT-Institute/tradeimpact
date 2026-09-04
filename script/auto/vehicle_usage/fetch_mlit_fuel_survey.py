@@ -62,8 +62,7 @@ def main() -> None:
         {
             "source_id": SOURCE_ID,
             "publisher": (
-                "Ministry of Land, Infrastructure, Transport and Tourism (MLIT), Japan, "
-                "via e-Stat"
+                "Ministry of Land, Infrastructure, Transport and Tourism (MLIT), Japan, via e-Stat"
             ),
             "title": (
                 "Motor Vehicle Fuel Consumption Survey, Table 1 (summary by fuel and "
