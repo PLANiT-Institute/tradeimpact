@@ -1,4 +1,7 @@
-powertrain,factor,factor_low,factor_high,derivation,source_id
-ICE,1.191,1.171,1.211,midpoint of the EEA OBFCM real-world gap for petrol (+21.1%) and diesel (+17.1%) model-year 2022 cars; ICE registrations pool both fuels; range = diesel end to petrol end,eea_obfcm_real_world_2022
-HEV,1.211,1.171,1.211,EEA OBFCM real-world gap for petrol cars (+21.1%); the Japanese and Korean brand hybrids in the EU27 cohorts are petrol hybrids; no hybrid-specific gap is published so the combustion range (1.171-1.211) is carried as the band,eea_obfcm_real_world_2022
-BEV,1.0,1.0,1.0,no official real-world gap is published for battery-electric energy consumption; certified value passed through at both ends (optimistic; a one-sided bias in the only positive powertrain),eea_obfcm_real_world_2022
+test_cycle,powertrain,factor,factor_low,factor_high,derivation,source_id
+WLTP,ICE,1.191,1.171,1.211,midpoint of the EEA OBFCM real-world gap for petrol (+21.1%) and diesel (+17.1%) model-year 2022 cars; ICE registrations pool both fuels; range = diesel end to petrol end,eea_obfcm_real_world_2022
+WLTP,HEV,1.211,1.171,1.211,EEA OBFCM real-world gap for petrol cars (+21.1%); the Korean brand hybrids in the EU27 cohorts are petrol hybrids; no hybrid-specific gap is published so the combustion range (1.171-1.211) is carried as the band,eea_obfcm_real_world_2022
+WLTP,BEV,1.0,1.0,1.0,no official real-world gap is published for battery-electric energy consumption; certified value passed through at both ends (optimistic; a one-sided bias in the only positive powertrain),eea_obfcm_real_world_2022
+EPA,ICE,1.0,1.0,1.0,EPA label (5-cycle adjusted) values already approximate real-world use; no further correction; no published band,epa_fuel_economy_label
+EPA,HEV,1.0,1.0,1.0,EPA label (5-cycle adjusted) values already approximate real-world use; no further correction; no published band,epa_fuel_economy_label
+EPA,BEV,1.0,1.0,1.0,EPA label (5-cycle adjusted) values already approximate real-world use; no further correction; no published band,epa_fuel_economy_label

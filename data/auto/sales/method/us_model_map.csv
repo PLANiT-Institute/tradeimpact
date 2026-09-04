@@ -1,0 +1,21 @@
+company,ir_model,epa_base_model,powertrain,powertrain_rule,note
+kia,Carnival,Carnival,ICE,mixed_central_ice,sold as ICE and HEV in the US; the IR file does not split powertrains
+kia,EV6,EV6,BEV,explicit,
+kia,EV9,EV9,BEV,explicit,
+kia,K4,K4,ICE,explicit,
+kia,K5,K5,ICE,explicit,
+kia,Niro,Niro,HEV,mixed_central_ice,sold as HEV and PHEV in the US; central case HEV (no ICE Niro exists); all-HEV bound identical
+kia,Niro EV,Niro,BEV,explicit,
+kia,Seltos,Seltos,ICE,explicit,
+kia,Sorento,Sorento,ICE,mixed_central_ice,sold as ICE HEV and PHEV in the US; the IR file does not split powertrains
+kia,Soul,Soul,ICE,explicit,
+kia,Sportage,Sportage,ICE,mixed_central_ice,sold as ICE HEV and PHEV in the US; the IR file does not split powertrains
+kia,Telluride,Telluride,ICE,explicit,
+hyundai,GV70 (JKa),,,out_of_scope,Genesis brand (EPA make Genesis) is outside the Hyundai brand scope
+hyundai,GV70 EV (Jka EV),,,out_of_scope,Genesis brand (EPA make Genesis) is outside the Hyundai brand scope
+hyundai,Ioniq5 (NEa),Ioniq 5,BEV,explicit,
+hyundai,Ioniq9 (MEa EV),Ioniq 9,BEV,explicit,no 2024-2025 EPA row exists yet; withheld until the technology row lands
+hyundai,Santa-Fe (MX5a HEV),Santa Fe,HEV,explicit,
+hyundai,Santa-Fe (MX5a),Santa Fe,ICE,explicit,
+hyundai,Tucson (NX4a),Tucson,ICE,mixed_central_ice,plant code does not separate ICE from the hybrid variants built on the same line
+hyundai,Tucson OB (NX4a OB),Tucson,ICE,mixed_central_ice,plant code does not separate ICE from the hybrid variants built on the same line

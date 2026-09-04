@@ -1,0 +1,15 @@
+vehicle_type,year,value_mmt_co2e,source_id,document,table,pdf_page_index,extraction
+light_duty_trucks,1990,289.7,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2000,571.4,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2012,683.7,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2013,669.3,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2014,693.7,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2015,693.8,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2016,711.7,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2017,717.0,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2018,733.3,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2019,729.8,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2020,636.9,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2021,705.8,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2022,704.5,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
+light_duty_trucks,2023,726.2,epa_ghg_inventory_2025_annexes,us-ghg-inventory-2025-annexes.pdf,Table A-93,182,pypdf text extraction 2026-09-04
