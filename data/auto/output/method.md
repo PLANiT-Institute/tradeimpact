@@ -179,7 +179,13 @@ the per-market reference builders cannot drift apart on schema.
 `build_database.py` writes `data/auto/tradeimpact_auto.sqlite` — every raw table, lookup,
 processed dataset and output table, the source registry, raw-file provenance, a `tables`
 manifest (dataset, stage, source path, rows, hash) and a `columns` dictionary (type, non-null,
-distinct, example). `build_dashboard.py` embeds that database (gzip + base64) in
-`data/auto/dashboard.html`: a lineage view per data type (raw → method → processed → output
-with source links), a pivot table over any table, a browse view and a read-only SQL console;
-it opens from disk and needs the network only for the sql.js engine (pinned on cdnjs).
+distinct, example). `build_dashboard.py` writes `data/auto/dashboard.html`, a reader for that
+database carrying no data of its own (about 55 KB): it fetches `tradeimpact_auto.sqlite` from
+its own directory and reads the manifest, the dictionary, the source registry and the raw-file
+provenance out of it with SQL. Views: lineage per data type (raw → method → processed → output
+with source links), results and results by year, a pivot over any table, a browse view and a
+read-only SQL console. Serve the directory with `.venv/bin/python
+script/auto/serve_dashboard.py` and open <http://127.0.0.1:8765/dashboard.html>; opened
+straight from disk the browser blocks the sibling read, so the page then offers a file picker
+and a drag-and-drop zone for the database instead. The network is needed only for the sql.js
+engine (pinned on cdnjs).

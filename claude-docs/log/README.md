@@ -109,3 +109,14 @@ premise and sends work back is the process working; the entry states the trigger
   S3 −8.53. Caveats recorded in README and output/method.md: cohorts from the lead's IR workbooks
   (Hyundai US-built only, Kia half year), all-light-duty benchmark with segment ratio 1.0, unsplit
   models priced as ICE with an all-HEV bound, EPA label values uncorrected.
+
+## 2026-09-04 — dashboard reads the database instead of carrying it
+
+- `data/auto/dashboard.html` (55 KB) embeds no data: it fetches the sibling
+  `tradeimpact_auto.sqlite` when served by `script/auto/serve_dashboard.py`
+  (http://127.0.0.1:8765/dashboard.html) and offers a file picker when opened from disk.
+  Navigation, lineage, column panel and presets are built from the database's own `tables`,
+  `columns`, `sources` and `raw_files` tables. sql.js (cdnjs 1.10.3) remains the only network
+  dependency; vendoring it would make the page fully offline.
+- New result table `ti_annual_by_model` gives the year-by-year TI flow at cell grain; the
+  dashboard's "Results by year" view lands on it.
