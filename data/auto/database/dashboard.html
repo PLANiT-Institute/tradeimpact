@@ -378,7 +378,7 @@ const DEFAULT_PIVOT = {"agg":"sum","cols":"scenario","rows":["market","company",
 const YEARLY_PIVOT = {"agg":"sum","cols":"calendar_year","filters":[["scenario","=","S1"]],"rows":["market","company","powertrain","model"],"table":"ti_annual_by_model","vals":["ti_tco2e"]};
 const STAGES = ["raw","method","processed","output"];
 const DATASET_ORDER = ["sales","vehicle_technology","vehicle_usage","country_emissions","emission_targets","model","auto"];
-const MODEL_STEPS = [["3a cohorts",["cohorts"]],["3 reference",["destination_parameters","reference_trajectories"]],["4 impact",["ti_by_model","ti_annual_by_model","ti_annual","ti_withheld","ti_exclusions"]],["4b crossover and sensitivity",["ti_crossover","ti_sensitivity"]],["5 aggregates and data quality",["ti_country","ti_powertrain","ti_company","ti_data","ti_coverage","ti_source"]]];
+const MODEL_STEPS = [["3a cohorts",["cohorts"]],["3 reference",["destination_parameters","reference_trajectories"]],["4 impact",["ti_by_model","ti_annual_by_model","ti_annual","ti_withheld","ti_exclusions"]],["4b crossover and sensitivity",["ti_crossover","ti_sensitivity"]],["5 aggregates and data quality",["ti_country","ti_powertrain","ti_company","ti_data","ti_coverage","ti_source","ti_global"]]];
 
 const SEP = String.fromCharCode(1);
 /* Views that render the pivot: the two presets keep their own address and their own place in

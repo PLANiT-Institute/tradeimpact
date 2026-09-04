@@ -1,0 +1,16 @@
+company,cohort_year,units,basis,brands_covered,derived,derivation,source_id,source_file
+hyundai,2024,3978567,worldwide_sales_derived,hyundai;genesis,yes,"Korea domestic 548,729 plus shipments exported from Korea 1,126,698 plus overseas plant sales 2,303,140; the export leg is shipments rather than sales, so the total is approximate",hyundai_ir_sales_results,sales_hyundai_kr.csv;hyundai_2024_global_plant_sales.xlsx
+hyundai,2025,3940709,worldwide_sales_derived,hyundai;genesis,yes,"Korea domestic 574,543 plus shipments exported from Korea 1,094,932 plus overseas plant sales 2,271,234; the export leg is shipments rather than sales, so the total is approximate",hyundai_ir_sales_results,sales_hyundai_kr.csv;hyundai_2025_global_plant_sales.xlsx
+kia,2026,1619037,worldwide_retail,kia,yes,"every destination in the retail workbook summed, period 2026-01..2026-06; the workbook is the company's own every-market release, so the sum is its worldwide retail for that period",kia_ir_retail_sales,sales_kia_ir_2026.csv
+nissan,2024,3348692,worldwide_sales,nissan;infiniti,no,"release row 'Global sales', column units_cy_prior",nissan_global_sales,nissan_global_sales_2025.csv
+nissan,2025,3202137,worldwide_sales,nissan;infiniti,no,"release row 'Global sales', column units_cy",nissan_global_sales,nissan_global_sales_2025.csv
+toyota,2016,9223727,worldwide_sales,toyota;lexus,no,"sheet Sales, Toyota (incl. Lexus) block, row Worldwide sales, column 2016.0",toyota_global_sales,toyota_global_sales_202512.xlsx
+toyota,2017,9383780,worldwide_sales,toyota;lexus,no,"sheet Sales, Toyota (incl. Lexus) block, row Worldwide sales, column 2017.0",toyota_global_sales,toyota_global_sales_202512.xlsx
+toyota,2018,9541748,worldwide_sales,toyota;lexus,no,"sheet Sales, Toyota (incl. Lexus) block, row Worldwide sales, column 2018.0",toyota_global_sales,toyota_global_sales_202512.xlsx
+toyota,2019,9714253,worldwide_sales,toyota;lexus,no,"sheet Sales, Toyota (incl. Lexus) block, row Worldwide sales, column 2019.0",toyota_global_sales,toyota_global_sales_202512.xlsx
+toyota,2020,8692168,worldwide_sales,toyota;lexus,no,"sheet Sales, Toyota (incl. Lexus) block, row Worldwide sales, column 2020.0",toyota_global_sales,toyota_global_sales_202512.xlsx
+toyota,2021,9615157,worldwide_sales,toyota;lexus,no,"sheet Sales, Toyota (incl. Lexus) block, row Worldwide sales, column 2021.0",toyota_global_sales,toyota_global_sales_202512.xlsx
+toyota,2022,9567184,worldwide_sales,toyota;lexus,no,"sheet Sales, Toyota (incl. Lexus) block, row Worldwide sales, column 2022.0",toyota_global_sales,toyota_global_sales_202512.xlsx
+toyota,2023,10307395,worldwide_sales,toyota;lexus,no,"sheet Sales, Toyota (incl. Lexus) block, row Worldwide sales, column 2023.0",toyota_global_sales,toyota_global_sales_202512.xlsx
+toyota,2024,10159336,worldwide_sales,toyota;lexus,no,"sheet Sales, Toyota (incl. Lexus) block, row Worldwide sales, column 2024.0",toyota_global_sales,toyota_global_sales_202512.xlsx
+toyota,2025,10536807,worldwide_sales,toyota;lexus,no,"sheet Sales, Toyota (incl. Lexus) block, row Worldwide sales, column 2025 Cumulative Total",toyota_global_sales,toyota_global_sales_202512.xlsx
