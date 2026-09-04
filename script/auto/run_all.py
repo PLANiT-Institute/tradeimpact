@@ -40,6 +40,7 @@ EXTRACT = [
     "country_emissions/extract_owid_grid.py",
     "country_emissions/extract_epa_inventory.py",
     "country_emissions/extract_anga_inventory.py",
+    "trade_flows/extract_trade_flows.py",
 ]
 DERIVE = [
     "emission_targets/derive_eu27_rates.py",

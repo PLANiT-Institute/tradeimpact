@@ -131,3 +131,13 @@ premise and sends work back is the process working; the entry states the trigger
   not now), `policy-analyst` (ST01/ST04 target anatomy and the `B-04` no-target rule; `D-09` storyline).
 - Financial IR (valuation, guidance) explicitly out of scope: the framework never touches company financials.
 - Tracker F-01 owner updated accordingly. No project-scoped agent created.
+
+## 2026-09-04 — free sources first: trade statistics as a new data type
+
+- Lead's order: exhaust free sources before any licensed sales dataset. New dataset
+  `trade_flows`: EU member-state imports of HS 8703 passenger cars from Korea and Japan (Eurostat
+  Comext, units and euros) and both sides of the KR/JP → US/AU flows (UN Comtrade public API),
+  2022–2025, by HS six-digit sub-heading mapped to ICE/HEV/PHEV/BEV. Country-level; it bounds
+  the Korean-built share of registrations and gives each exporter's powertrain mix per market,
+  and it is the only free coverage of Japan and Australia so far. A dossier of free model-level
+  sales releases for the four brands is in progress.

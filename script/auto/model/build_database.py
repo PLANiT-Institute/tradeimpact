@@ -28,7 +28,14 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
 OUT = DATA / "tradeimpact_auto.sqlite"
-DATASETS = ("sales", "country_emissions", "emission_targets", "vehicle_usage", "vehicle_technology")
+DATASETS = (
+    "sales",
+    "country_emissions",
+    "emission_targets",
+    "vehicle_usage",
+    "vehicle_technology",
+    "trade_flows",
+)
 
 
 def sha256(path: Path) -> str:

@@ -221,3 +221,24 @@ Same long-format conventions as sections 2–5 (`country`, `series`, `year`, `va
 | `vehicle_usage/processed/vehicle_usage_us_lifetime.csv` | 3 | country, series, year, value, unit, source_id, source_file |
 
 Lookups added: `sales/method/companies.csv` (exporter scope), `sales/method/us_model_map.csv` (IR model → EPA base model, powertrain, powertrain_rule), `vehicle_technology/method/real_world_correction.csv` now keyed on `test_cycle` × `powertrain` with `factor_low`/`factor_high`.
+
+## 8. `trade_flows` — passenger-car trade by exporter, importer and powertrain class (added 2026-09-04)
+
+Rules: [`trade_flows/method/method.md`](../../data/auto/trade_flows/method/method.md). Country-level
+only — never a company or model figure. File: `trade_flows/processed/trade_flows.csv`, long format.
+
+| Column | Type | Unit | Allowed values |
+|---|---|---|---|
+| `reporter` | text | — | ISO 3166-1 alpha-2 of the reporting customs authority, or `EU27` |
+| `flow` | text | — | `imports` (importer-reported) · `exports` (exporter-reported) |
+| `exporter` | text | — | `KR` · `JP` |
+| `importer` | text | — | EU member state, `EU27`, `US`, `AU` |
+| `year` | int | year | 2022–2025 |
+| `hs6` | text | — | HS 2022 six-digit sub-heading of 8703 (`method/hs_passenger_cars.csv`) |
+| `powertrain_class` | text | — | `ICE` · `HEV` · `PHEV` · `BEV` · `OTHER` |
+| `units` | int | vehicles | empty when the reporter gave no quantity |
+| `quantity_flag` | text | — | `reported` · `estimated` · `not_reported` |
+| `value` | real | per `currency` | trade value as reported |
+| `currency` | text | — | `EUR` (Comext) · `USD` (Comtrade) |
+| `source_id` | text | — | `eurostat_comext_ds045409` · `un_comtrade_public` |
+| `source_file` | text | — | raw file behind the row |
