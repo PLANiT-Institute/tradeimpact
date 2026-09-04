@@ -5,8 +5,8 @@ The single live tracking document. Current state only — history is in
 
 **Last pass:** 2026-09-04 (design, conformance and state; state refreshed after ST10 and the
 database build the same day; refreshed after the Kia and Honda EU27 acquisition, the independent
-review, and the first US/AU inputs). **Next pass due:** when US or AU passenger-car CO2, stock
-or distance series land, or at any charter change.
+review, and the first US/AU inputs). **Next pass due:** when a Hyundai US sales-by-model file (imports
+included) or a full-year Kia US file lands, on a segment-ratio decision, or at any charter change.
 
 ## 1. Where we are
 
@@ -42,9 +42,9 @@ a country-level result as they stand (regions and plant-side sales respectively)
 
 Crossover years per cell and the lifetime, real-world and proxied-distance sensitivities exist
 (`ti_crossover.csv`, `ti_sensitivity.csv`, both in the database). The deliverable database
-(`data/auto/tradeimpact_auto.sqlite`, 40 tables: raw, lookup, processed, output, sources, raw-file
-provenance, tables manifest, column dictionary) and the pivot dashboard over it
-(`data/auto/dashboard.html`: lineage per data type, pivot, browse, read-only SQL) were built on
+(`data/auto/tradeimpact_auto.sqlite`, 50 tables: raw, lookup, processed, output incl. the year-by-year
+cell table, sources, raw-file provenance, tables manifest, column dictionary) and the pivot dashboard over it
+(`data/auto/dashboard.html`, 55 KB, reads the database file over a local server or via a file picker: lineage per data type, lifetime and year-by-year pivots, browse, read-only SQL) were built on
 2026-09-04. Still absent by design: a P10/P50/P90 treatment of the crossover (`B-07`). The regression check against the archived
 published baseline has run and passed (all 189 destination parameters exact; company × scenario
 totals within 2 × 10⁻⁷; crossover and lifetime sensitivities agree). Phase exit is blocked by the
@@ -66,9 +66,9 @@ passed, which shows the new scripts reproduce the old engine — not that either
 had been independently re-derived — until 2026-09-04, when the Honda cohort was: the engine is
 exact, and the review surfaced a distance-year mismatch inherited from the archived pipeline that
 moved every total 1–13 % more negative once fixed. Crossover and the three guideline
-sensitivities exist, and the EU27 result covers all four exporters — the Korea-versus-Japan
-comparison the proposal promises, on one market boundary. The next units of work are the lead's
-decisions on the four open review items and the United States and Australia inputs. A result set that grows faster than its verification is the failure mode this
+sensitivities exist, and the result set now covers Hyundai and Kia in the EU27 and the United States, with the US
+caveats disclosed in every table. The next units of work are a Hyundai US sales-by-model file, a
+segment-ratio decision, and the return of the Japanese exporters and Australia when the lead asks. A result set that grows faster than its verification is the failure mode this
 phase has to avoid.
 
 ## 3. Stages

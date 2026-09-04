@@ -37,13 +37,16 @@ data/auto/         one directory per dataset, each with:
   raw_files.csv          raw-file provenance: original name, SHA-256, source_id
   tradeimpact_auto.sqlite   the database: raw, lookup, processed and output tables, sources,
                             raw-file provenance, a tables manifest and a column dictionary
-  dashboard.html            the database embedded in one page: lineage raw -> processed -> output
-                            per data type, pivot table, browse and read-only SQL (open from disk)
+  dashboard.html            reader for that database, no data of its own: lineage
+                            raw -> processed -> output per data type, pivot table, browse and
+                            read-only SQL (serve data/auto, or open it and pick the file)
 script/auto/       all Python, one directory per dataset plus model/
   <dataset>/             extraction scripts: raw/ -> processed/
   model/                 build_cohorts, build_reference (EU27), build_reference_us, build_ti,
                          build_sensitivity, aggregate_country, build_data_quality,
                          build_database, build_dashboard
+  serve_dashboard.py     serves data/auto on http://127.0.0.1:8765 so dashboard.html can read
+                         the database beside it
 archive/           the previous application build (engine, web, MCP, pipeline) — read-only
 ```
 

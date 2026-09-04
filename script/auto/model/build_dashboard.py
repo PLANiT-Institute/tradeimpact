@@ -1,27 +1,31 @@
-"""Build the single-file HTML dashboard over the automotive SQLite database.
+"""Write the HTML dashboard that reads the automotive SQLite database at view time.
 
-Reads ``data/auto/tradeimpact_auto.sqlite``, base64-embeds the whole database file into a
-self-contained HTML page and writes ``data/auto/dashboard.html``. The bytes are gzipped before
-they are base64-encoded (the database is mostly text and compresses about six-fold) and the
-page inflates them with the browser's native ``DecompressionStream``. It then opens them with
-sql.js (WebAssembly, loaded from a version-pinned CDN) and offers four views: lineage, pivot,
+The page carries no data. It writes ``data/auto/dashboard.html``, which loads sql.js
+(WebAssembly, from a version-pinned CDN with subresource integrity), fetches the sibling file
+``tradeimpact_auto.sqlite`` relative to itself and reads everything else — the ``tables``
+manifest, the ``columns`` dictionary, the source registry and the raw-file provenance — out of
+that database with SQL once it is open. Six views: lineage, results, results by year, pivot,
 browse and free-text read-only SQL.
 
-The ``tables`` manifest, the ``columns`` dictionary, the source registry and the raw-file
-provenance are also embedded as JSON, so the navigation, the lineage flow and the source links
-render immediately and still render when the CDN is unreachable.
+The relative fetch needs the directory to be served over HTTP:
 
-The build is deterministic: nothing time-dependent is written, every query is ordered and every
-JSON object is emitted with sorted keys. Stdlib only.
+    .venv/bin/python script/auto/serve_dashboard.py   ->  http://127.0.0.1:8765/dashboard.html
+
+Opened from ``file://`` the browser refuses to read the sibling file, so the page then shows an
+"Open the database" panel with a file picker and a drag-and-drop zone instead.
+
+The only data embedded in the page are constants: the sql.js URL and hash, the two pivot
+presets, the pipeline stage order, the dataset order and the model step list. The build is
+therefore deterministic and independent of the database contents; it only checks that the
+database exists and carries a ``tables`` manifest. Stdlib only.
 
 Run from the repository root:  .venv/bin/python script/auto/model/build_dashboard.py
 """
 
 from __future__ import annotations
 
-import base64
-import gzip
 import json
+import re
 import sqlite3
 from pathlib import Path
 from typing import Any
@@ -29,6 +33,11 @@ from typing import Any
 REPO = Path(__file__).resolve().parents[3]
 DB = REPO / "data" / "auto" / "tradeimpact_auto.sqlite"
 OUT = REPO / "data" / "auto" / "dashboard.html"
+
+#: How the page tells the reader to serve its own directory; matches serve_dashboard.py.
+SERVE_PORT = 8765
+SERVE_CMD = ".venv/bin/python script/auto/serve_dashboard.py"
+SERVE_URL = f"then open http://127.0.0.1:{SERVE_PORT}/{OUT.name}"
 
 #: sql.js pinned on cdnjs; ``locateFile`` resolves sql-wasm.wasm inside the same directory.
 SQLJS_VERSION = "1.10.3"
@@ -92,6 +101,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Trade Impact - automotive database</title>
+<link rel="icon" href="data:,">
 <style>
 :root {
   color-scheme: light dark;
@@ -365,6 +375,21 @@ button.primary { background: var(--accent-bg); border-color: var(--accent); colo
 }
 .note { font-size: 12px; color: var(--muted); margin-top: 6px; }
 .empty { padding: 14px; color: var(--muted); }
+.opener { max-width: 720px; }
+.opener .sqlbox { white-space: pre-wrap; overflow-wrap: anywhere; }
+.drop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 16px 14px;
+  margin-top: 8px;
+  border: 2px dashed var(--border);
+  border-radius: var(--r);
+  background: var(--bg);
+}
+.drop.over { border-color: var(--accent); background: var(--accent-bg); }
+.drop label { font-size: 12px; color: var(--muted); }
 table.srctable { font-size: 12px; width: 100%; table-layout: fixed; }
 table.srctable th, table.srctable td { white-space: normal; overflow-wrap: anywhere; }
 table.srctable th:nth-child(1), table.srctable td:nth-child(1) { width: 15%; }
@@ -385,7 +410,7 @@ table.srctable th:nth-child(7), table.srctable td:nth-child(7) { width: 13%; }
 <body>
 <header class="topbar">
   <h1>Trade Impact <span class="sub">automotive database</span></h1>
-  <div class="status" id="status">loading the SQL engine</div>
+  <div class="status" id="status">starting</div>
 </header>
 <div class="shell">
   <nav class="side" aria-label="Views">
@@ -401,8 +426,6 @@ table.srctable th:nth-child(7), table.srctable td:nth-child(7) { width: 13%; }
   </nav>
   <main id="main" tabindex="-1"></main>
 </div>
-<script type="application/json" id="manifest">__MANIFEST__</script>
-<script type="application/octet-stream" id="dbb64">__DB_B64__</script>
 <script
   src="__SQLJS_SRC__"
   integrity="__SQLJS_SRI__"
@@ -413,10 +436,19 @@ table.srctable th:nth-child(7), table.srctable td:nth-child(7) { width: 13%; }
 (function () {
 'use strict';
 
-const M = JSON.parse(document.getElementById('manifest').textContent);
-const TBL = new Map(M.tables.map((t) => [t.table, t]));
-const COLS = M.columns;
+/* Constants written by the builder; every other value on this page is read from the
+   database at view time. */
 const CDN_DIR = '__SQLJS_DIR__';
+const SQLJS_VERSION = '__SQLJS_VERSION__';
+const DB_FILE = '__DB_FILE__';
+const SERVE_CMD = '__SERVE_CMD__';
+const SERVE_URL = '__SERVE_URL__';
+const DEFAULT_PIVOT = __DEFAULT_PIVOT__;
+const YEARLY_PIVOT = __YEARLY_PIVOT__;
+const STAGES = __STAGES__;
+const DATASET_ORDER = __DATASET_ORDER__;
+const MODEL_STEPS = __MODEL_STEPS__;
+
 const SEP = String.fromCharCode(1);
 const VIEWS = [
   {id: 'lineage', label: 'Lineage'},
@@ -433,10 +465,16 @@ const NO_VALUE_OPS = {'is null': 1, 'is not null': 1};
 const PAGE = 100;
 const BLOCKED = /\b(insert|update|delete|drop|alter|create|attach|detach|pragma|vacuum)\b/i;
 
+let SQL = null;
 let DB = null;
 let dbError = null;
+let ready = false;
 let shellKey = '';
 let debounce = null;
+let TBL = new Map();
+
+/* Everything the chrome needs, read out of the database once it is open. */
+const meta = {file: '', bytes: 0, tables: [], columns: {}, sources: [], datasets: []};
 
 /* ---------- shared helpers ---------- */
 
@@ -481,7 +519,7 @@ function lit(v) {
 }
 
 function colsOf(table) {
-  return COLS[table] || [];
+  return meta.columns[table] || [];
 }
 
 function isNumeric(table, column) {
@@ -490,7 +528,7 @@ function isNumeric(table, column) {
 }
 
 function presetFor(table) {
-  return [M.default, M.yearly].find((d) => d && d.table === table) || null;
+  return [DEFAULT_PIVOT, YEARLY_PIVOT].find((d) => d && d.table === table) || null;
 }
 
 function defaultPivot(table) {
@@ -509,8 +547,8 @@ function defaultPivot(table) {
 
 const state = {
   view: 'lineage',
-  table: M.default.table,
-  pivot: defaultPivot(M.default.table),
+  table: DEFAULT_PIVOT.table,
+  pivot: defaultPivot(DEFAULT_PIVOT.table),
   browse: {page: 0, sort: null, dir: 'asc', q: ''},
   sql: {text: 'SELECT market, company, powertrain, model, scenario,\n'
         + '       SUM(units) AS units, SUM(ti_tco2e) AS ti_tco2e\n'
@@ -523,8 +561,7 @@ function errBox(msg) {
 }
 
 function engineBox() {
-  const why = dbError || 'The SQL engine has not finished loading.';
-  return errBox(why + ' The lineage view still works from the embedded manifest.');
+  return errBox(dbError || 'No database is loaded yet.');
 }
 
 function query(sql) {
@@ -545,48 +582,61 @@ function selected(el) {
 
 /* ---------- chrome ---------- */
 
-function setStatus() {
+function fmtMB(bytes) {
+  return (bytes / 1e6).toFixed(2) + ' MB';
+}
+
+/* Pass text to show a transient message; with no argument the line is derived from state. */
+function setStatus(text, bad) {
   const el = document.getElementById('status');
-  const mb = (M.db_bytes / 1e6).toFixed(2) + ' MB';
-  const gz = (M.gz_bytes / 1e6).toFixed(2) + ' MB';
-  if (dbError) {
-    el.className = 'status bad';
-    el.textContent = 'SQL engine unavailable - lineage only (' + gz + ' embedded)';
+  if (text) {
+    el.className = 'status' + (bad ? ' bad' : '');
+    el.textContent = text;
+    return;
+  }
+  if (!ready) {
+    el.className = 'status' + (dbError ? ' bad' : '');
+    el.textContent = dbError ? 'no database loaded' : 'waiting for the database';
     return;
   }
   el.className = 'status';
-  el.textContent = DB
-    ? 'sql.js ' + M.sqljs_version + ' - ' + M.tables.length + ' tables - ' + mb +
-      ' database, ' + gz + ' embedded'
-    : 'loading the SQL engine';
+  el.textContent = meta.file + ' - ' + fmtMB(meta.bytes) + ' - ' +
+    fmtInt(meta.tables.length) + ' tables - sql.js ' + SQLJS_VERSION;
 }
 
 function renderNav() {
-  document.getElementById('nav').innerHTML = VIEWS.map((v) => {
-    const on = v.id === state.view;
-    return '<button class="navlink" data-view="' + v.id + '"' +
-      (on ? ' aria-current="page"' : '') + '>' + esc(v.label) + '</button>';
-  }).join('');
+  document.getElementById('nav').innerHTML = ready
+    ? VIEWS.map((v) => {
+      const on = v.id === state.view;
+      return '<button class="navlink" data-view="' + v.id + '"' +
+        (on ? ' aria-current="page"' : '') + '>' + esc(v.label) + '</button>';
+    }).join('')
+    : '<p class="muted">The views appear once the database is open.</p>';
 }
 
 function renderLegend() {
-  const items = M.stages.concat(['registry']);
-  document.getElementById('legend').innerHTML = items
+  document.getElementById('legend').innerHTML = STAGES.concat(['registry'])
     .map((s) => '<li><span class="chip chip-' + s + '">' + esc(s) + '</span></li>')
     .join('');
 }
 
 function renderDbMeta() {
-  const rows = M.tables.reduce((a, t) => a + (t.rows || 0), 0);
-  const cols = Object.keys(COLS).reduce((a, k) => a + COLS[k].length, 0);
+  const el = document.getElementById('dbmeta');
+  if (!ready) {
+    el.innerHTML = '<div><dt>file</dt><dd>not loaded</dd></div>';
+    return;
+  }
+  const rows = meta.tables.reduce((a, t) => a + (t.rows || 0), 0);
+  const cols = Object.keys(meta.columns).reduce((a, k) => a + meta.columns[k].length, 0);
   const parts = [
-    ['tables', fmtInt(M.tables.length)],
+    ['file', meta.file],
+    ['tables', fmtInt(meta.tables.length)],
     ['rows', fmtInt(rows)],
     ['columns', fmtInt(cols)],
-    ['sources', fmtInt(M.sources.length)],
-    ['size', (M.db_bytes / 1e6).toFixed(2) + ' MB']
+    ['sources', fmtInt(meta.sources.length)],
+    ['size', fmtMB(meta.bytes)]
   ];
-  document.getElementById('dbmeta').innerHTML = parts
+  el.innerHTML = parts
     .map((p) => '<div><dt>' + esc(p[0]) + '</dt><dd>' + esc(p[1]) + '</dd></div>')
     .join('');
 }
@@ -659,9 +709,9 @@ function rawFilesTable(files) {
 function renderLineage() {
   let h = '<p class="muted">Every table in the deliverable, by data type and pipeline stage. ' +
     'A chip opens that table in the pivot.</p>';
-  for (const d of M.datasets) {
+  for (const d of meta.datasets) {
     h += '<section class="card"><h2>' + esc(d.dataset) + '</h2>';
-    const anyStage = M.stages.some((s) => d.stages[s].length);
+    const anyStage = STAGES.some((s) => d.stages[s].length);
     if (d.steps.length) {
       h += '<div class="flow">';
       d.steps.forEach((s, i) => {
@@ -673,7 +723,7 @@ function renderLineage() {
       h += '<div class="flow">' + stageBox('registry', d.registry, 'registry') + '</div>';
     } else {
       h += '<div class="flow">';
-      M.stages.forEach((s, i) => {
+      STAGES.forEach((s, i) => {
         if (i) h += '<div class="arrow" aria-hidden="true">-&gt;</div>';
         h += stageBox(s, d.stages[s], s);
       });
@@ -690,7 +740,7 @@ function renderLineage() {
 function tableSelect() {
   let h = '<select id="tablesel" aria-label="Table">';
   const seen = [];
-  for (const t of M.tables) {
+  for (const t of meta.tables) {
     const key = t.kind + ' / ' + t.dataset;
     if (seen.indexOf(key) < 0) {
       if (seen.length) h += '</optgroup>';
@@ -1134,8 +1184,8 @@ function renderSqlOut() {
 function renderSqlShell() {
   document.getElementById('main').innerHTML = tableHeadHtml() +
     '<section class="card"><h2>Read-only SQL</h2>' +
-    '<p class="muted">One SELECT or WITH statement against the embedded database. ' +
-    'Nothing is written back: the database in the page is a copy held in memory.</p>' +
+    '<p class="muted">One SELECT or WITH statement against the loaded database. ' +
+    'Nothing is written back: the page holds a copy in memory.</p>' +
     '<label for="sql-text" class="muted">statement</label>' +
     '<textarea id="sql-text" spellcheck="false">' + esc(state.sql.text) + '</textarea>' +
     '<div class="row"><button data-act="runsql" class="primary">Run</button>' +
@@ -1182,9 +1232,189 @@ function copyTsv() {
   }
 }
 
+/* ---------- metadata, read out of the database with SQL ---------- */
+
+function rowsOf(sql) {
+  return query(sql).values;
+}
+
+function tableNames() {
+  return rowsOf("SELECT name FROM sqlite_master WHERE type = 'table' ORDER BY name")
+    .map((r) => String(r[0]));
+}
+
+function pragmaColumns(table) {
+  return rowsOf('PRAGMA table_info(' + qq(table) + ')')
+    .map((r) => ({column: String(r[1]), sqlite_type: String(r[2] === null ? '' : r[2])}));
+}
+
+function text(v) {
+  return v === null || v === undefined ? '' : String(v);
+}
+
+function readTables() {
+  const order = "CASE kind WHEN 'raw' THEN 0 WHEN 'method' THEN 1 WHEN 'processed' THEN 2" +
+    " WHEN 'output' THEN 3 ELSE 4 END";
+  return rowsOf('SELECT "table", dataset, kind, source_path, rows, sha256 FROM "tables"' +
+    ' ORDER BY ' + order + ', dataset, "table"')
+    .map((r) => ({
+      table: text(r[0]),
+      dataset: text(r[1]),
+      kind: text(r[2]),
+      source_path: text(r[3]),
+      rows: r[4],
+      sha256: text(r[5])
+    }));
+}
+
+/* Fallback when the columns dictionary is missing a table: one pass per column. */
+function deriveColumns(table) {
+  const t = qq(table);
+  return pragmaColumns(table).map((c) => {
+    const q = qq(c.column);
+    const r = rowsOf('SELECT COUNT(' + q + '), COUNT(DISTINCT ' + q + '), (SELECT ' + q +
+      ' FROM ' + t + ' WHERE ' + q + ' IS NOT NULL LIMIT 1) FROM ' + t)[0] || [0, 0, null];
+    return {column: c.column, sqlite_type: c.sqlite_type, non_null: r[0], distinct: r[1],
+      example: text(r[2]).slice(0, 80)};
+  });
+}
+
+/* The dictionary names its distinct count distinct_values in the current builder and distinct
+   in earlier ones; both are accepted. Column order follows the physical table order. */
+function readColumns(tables, names) {
+  const stored = new Map();
+  if (names.indexOf('columns') >= 0) {
+    const own = pragmaColumns('columns').map((c) => c.column);
+    const dcol = own.indexOf('distinct_values') >= 0 ? 'distinct_values' : 'distinct';
+    for (const r of rowsOf('SELECT "table", "column", sqlite_type, non_null, ' + qq(dcol) +
+        ', example FROM "columns"')) {
+      const key = text(r[0]);
+      if (!stored.has(key)) stored.set(key, new Map());
+      stored.get(key).set(text(r[1]), {column: text(r[1]), sqlite_type: text(r[2]),
+        non_null: r[3], distinct: r[4], example: text(r[5]).slice(0, 80)});
+    }
+  }
+  const out = {};
+  for (const t of tables) {
+    const physical = pragmaColumns(t.table).map((c) => c.column);
+    const have = stored.get(t.table);
+    out[t.table] = have && physical.every((c) => have.has(c))
+      ? physical.map((c) => have.get(c))
+      : deriveColumns(t.table);
+  }
+  return out;
+}
+
+const SOURCE_KEYS = ['source_id', 'publisher', 'title', 'url', 'how_obtained', 'accessed_date',
+  'license', 'used_by'];
+
+function readSources(names) {
+  if (names.indexOf('sources') < 0) return [];
+  return rowsOf('SELECT ' + SOURCE_KEYS.map(qq).join(', ') +
+    ' FROM "sources" ORDER BY source_id').map((r) => {
+    const o = {};
+    SOURCE_KEYS.forEach((k, i) => {
+      o[k] = text(r[i]);
+    });
+    return o;
+  });
+}
+
+/* raw_files.source_id holds one or more ids separated by semicolons; each is resolved against
+   the registry so the lineage view can render publisher, title, link and licence. */
+function readRawFiles(names, sources) {
+  const out = {};
+  if (names.indexOf('raw_files') < 0) return out;
+  const byId = new Map(sources.map((s) => [s.source_id, s]));
+  for (const r of rowsOf('SELECT dataset, file, source_id, original_name, sha256, note ' +
+      'FROM "raw_files" ORDER BY dataset, file')) {
+    const dataset = text(r[0]);
+    const ids = text(r[2]).split(';').map((s) => s.trim()).filter((s) => s);
+    if (!out[dataset]) out[dataset] = [];
+    out[dataset].push({
+      file: text(r[1]),
+      original_name: text(r[3]),
+      sha256: text(r[4]).slice(0, 12),
+      note: text(r[5]),
+      sources: ids.map((i) => byId.get(i) || {source_id: i, publisher: '', title: '', url: ''})
+    });
+  }
+  return out;
+}
+
+function buildDatasets(tables, rawFiles) {
+  const seen = new Set(tables.map((t) => t.dataset));
+  Object.keys(rawFiles).forEach((d) => seen.add(d));
+  const names = Array.from(seen).sort();
+  const ordered = DATASET_ORDER.filter((d) => names.indexOf(d) >= 0)
+    .concat(names.filter((d) => DATASET_ORDER.indexOf(d) < 0));
+  return ordered.map((dataset) => {
+    const mine = tables.filter((t) => t.dataset === dataset);
+    const stages = {};
+    for (const s of STAGES) stages[s] = mine.filter((t) => t.kind === s).map((t) => t.table);
+    const outputs = stages.output.slice();
+    const steps = [];
+    if (dataset === 'model' && outputs.length) {
+      const taken = new Set();
+      for (const step of MODEL_STEPS) {
+        const hit = [];
+        for (const p of step[1]) {
+          for (const t of outputs) if (t.indexOf(p) === 0) hit.push(t);
+        }
+        hit.forEach((t) => taken.add(t));
+        if (hit.length) steps.push({label: step[0], tables: hit});
+      }
+      const rest = outputs.filter((t) => !taken.has(t));
+      if (rest.length) steps.push({label: 'other', tables: rest});
+    }
+    return {
+      dataset: dataset,
+      stages: stages,
+      registry: mine.filter((t) => t.kind === 'registry').map((t) => t.table),
+      steps: steps,
+      raw_files: rawFiles[dataset] || []
+    };
+  });
+}
+
+function loadMeta() {
+  const names = tableNames();
+  if (names.indexOf('tables') < 0) {
+    throw new Error('this database has no "tables" manifest: build_database.py writes it');
+  }
+  meta.tables = readTables();
+  if (!meta.tables.length) throw new Error('the "tables" manifest is empty');
+  meta.columns = readColumns(meta.tables, names);
+  meta.sources = readSources(names);
+  meta.datasets = buildDatasets(meta.tables, readRawFiles(names, meta.sources));
+  TBL = new Map(meta.tables.map((t) => [t.table, t]));
+}
+
+/* ---------- the open-database panel ---------- */
+
+function renderOpener() {
+  document.getElementById('main').innerHTML =
+    '<section class="card opener"><h2>Open the database</h2>' +
+    (dbError ? errBox(dbError) : '') +
+    '<p class="muted">This page holds no data. It reads <span class="mono">' + esc(DB_FILE) +
+    '</span> from the directory it is served from, so serve that directory and reload:</p>' +
+    '<pre class="sqlbox" tabindex="0">' + esc(SERVE_CMD) + '\n' + esc(SERVE_URL) + '</pre>' +
+    '<p class="muted">Opened straight from disk the browser refuses that read. Pick the ' +
+    'database file instead - it stays on your machine, nothing is uploaded.</p>' +
+    '<div class="drop" id="drop">' +
+    '<label for="dbfile">Database file</label>' +
+    '<input type="file" id="dbfile" accept=".sqlite,.db">' +
+    '<span class="muted">or drag <span class="mono">' + esc(DB_FILE) +
+    '</span> onto this box</span></div></section>';
+}
+
 /* ---------- routing and rendering ---------- */
 
 function render() {
+  if (!ready) {
+    renderOpener();
+    return;
+  }
   const key = state.view + '|' + state.table;
   if (key !== shellKey) {
     shellKey = key;
@@ -1200,12 +1430,16 @@ function render() {
 }
 
 function applyHash() {
+  if (!ready) {
+    renderOpener();
+    return;
+  }
   const raw = (location.hash || '#/lineage').replace(/^#\/?/, '');
   const parts = raw.split('/');
   const view = parts[0] || 'lineage';
   const table = parts[1] ? decodeURIComponent(parts[1]) : null;
   if (view === 'results' || view === 'results_year') {
-    const preset = view === 'results' ? M.default : M.yearly;
+    const preset = view === 'results' ? DEFAULT_PIVOT : YEARLY_PIVOT;
     state.table = preset.table;
     state.pivot = defaultPivot(preset.table);
     state.view = 'pivot';
@@ -1316,6 +1550,10 @@ main.addEventListener('click', (e) => {
 
 main.addEventListener('change', (e) => {
   const t = e.target;
+  if (t.id === 'dbfile') {
+    if (t.files && t.files.length) openFile(t.files[0]);
+    return;
+  }
   if (t.id === 'tablesel') {
     if (state.view === 'browse') go('#/browse/' + encodeURIComponent(t.value));
     else openTable(t.value);
@@ -1369,45 +1607,121 @@ main.addEventListener('input', (e) => {
   }, 250);
 });
 
-window.addEventListener('hashchange', applyHash);
-
-/* ---------- boot ---------- */
-
-/* The database is embedded gzipped; the browser inflates it natively. */
-function dbBytes() {
-  const b64 = document.getElementById('dbb64').textContent.trim();
-  const bin = atob(b64);
-  const packed = new Uint8Array(bin.length);
-  for (let i = 0; i < bin.length; i++) packed[i] = bin.charCodeAt(i);
-  if (typeof DecompressionStream !== 'function') {
-    return Promise.reject(new Error('this browser has no DecompressionStream (gzip)'));
-  }
-  const stream = new Blob([packed]).stream().pipeThrough(new DecompressionStream('gzip'));
-  return new Response(stream).arrayBuffer().then((buf) => new Uint8Array(buf));
+/* Drag and drop onto the open-database panel. */
+function dropZone(e) {
+  return e.target && e.target.closest ? e.target.closest('#drop') : null;
 }
 
-function boot() {
+main.addEventListener('dragover', (e) => {
+  const z = dropZone(e);
+  if (!z) return;
+  e.preventDefault();
+  z.classList.add('over');
+});
+
+main.addEventListener('dragleave', (e) => {
+  const z = dropZone(e);
+  if (z) z.classList.remove('over');
+});
+
+main.addEventListener('drop', (e) => {
+  const z = dropZone(e);
+  if (!z) return;
+  e.preventDefault();
+  z.classList.remove('over');
+  const f = e.dataTransfer && e.dataTransfer.files[0];
+  if (f) openFile(f);
+});
+
+/* A file dropped beside the zone would otherwise navigate the tab away from the page. */
+window.addEventListener('dragover', (e) => {
+  if (!ready) e.preventDefault();
+});
+
+window.addEventListener('drop', (e) => {
+  if (!ready) e.preventDefault();
+});
+
+window.addEventListener('hashchange', applyHash);
+
+/* ---------- boot: load the engine, then the sibling database ---------- */
+
+function engineReady() {
+  if (SQL) return Promise.resolve(SQL);
   if (window.__sqljsFailed || typeof window.initSqlJs !== 'function') {
-    dbError = 'sql.js ' + M.sqljs_version + ' could not be loaded from cdnjs (no network?).';
-    setStatus();
-    render();
-    return;
+    return Promise.reject(new Error('sql.js ' + SQLJS_VERSION +
+      ' could not be loaded from cdnjs - is this machine offline?'));
   }
-  Promise.all([window.initSqlJs({locateFile: (f) => CDN_DIR + f}), dbBytes()]).then((r) => {
-    DB = new r[0].Database(r[1]);
-    setStatus();
-    render();
-  }).catch((e) => {
-    dbError = 'The SQL engine failed to start: ' + e.message;
-    setStatus();
-    render();
+  return window.initSqlJs({locateFile: (f) => CDN_DIR + f}).then((m) => {
+    SQL = m;
+    return m;
   });
 }
 
-renderLegend();
-renderDbMeta();
-setStatus();
-applyHash();
+function failOpen(message) {
+  DB = null;
+  ready = false;
+  dbError = message;
+  setStatus();
+  renderNav();
+  renderDbMeta();
+  renderOpener();
+}
+
+/* Open an ArrayBuffer as the database, read its metadata and hand over to the views. */
+function openBytes(buffer, name) {
+  return engineReady().then((sql) => {
+    const db = new sql.Database(new Uint8Array(buffer));
+    db.exec('SELECT 1');
+    DB = db;
+    dbError = null;
+    ready = true;
+    meta.file = name;
+    meta.bytes = buffer.byteLength;
+    try {
+      loadMeta();
+    } catch (e) {
+      db.close();
+      throw e;
+    }
+    state.table = TBL.has(DEFAULT_PIVOT.table) ? DEFAULT_PIVOT.table : meta.tables[0].table;
+    state.pivot = defaultPivot(state.table);
+    state.browse = {page: 0, sort: null, dir: 'asc', q: ''};
+    shellKey = '';
+    setStatus();
+    renderDbMeta();
+    renderNav();
+    applyHash();
+  });
+}
+
+function openFile(file) {
+  setStatus('reading ' + file.name);
+  file.arrayBuffer()
+    .then((buf) => openBytes(buf, file.name))
+    .catch((e) => failOpen('Could not open ' + file.name + ': ' + e.message));
+}
+
+function boot() {
+  renderLegend();
+  renderDbMeta();
+  renderNav();
+  renderOpener();
+  if (location.protocol === 'file:') {
+    failOpen('This page was opened from the file system, where the browser blocks reading ' +
+      DB_FILE + ' next to it.');
+    return;
+  }
+  setStatus('loading ' + DB_FILE);
+  fetch(DB_FILE, {cache: 'no-store'})
+    .then((res) => {
+      if (!res.ok) throw new Error('HTTP ' + res.status + ' ' + res.statusText);
+      return res.arrayBuffer();
+    })
+    .then((buf) => openBytes(buf, DB_FILE))
+    .catch((e) => failOpen('Could not load ' + DB_FILE + ' from this directory: ' + e.message));
+}
+
 boot();
 })();
 </script>
@@ -1416,315 +1730,104 @@ boot();
 """
 
 
-def has_table(conn: sqlite3.Connection, name: str) -> bool:
-    """Return True when ``name`` exists as a table in the database.
+#: Any ``__NAME__`` token left in the rendered page is an unfilled placeholder.
+PLACEHOLDER = re.compile(r"__[A-Z0-9_]+__")
+
+
+def js(value: Any) -> str:
+    """Serialise a build-time constant as a JavaScript literal.
+
+    Keys are sorted and ``<`` is escaped, so the literal is deterministic between runs and can
+    never close the surrounding ``<script>`` element early.
 
     Args:
-        conn: Open connection to the automotive database.
-        name: Table name to look for.
+        value: Any JSON-serialisable constant.
 
     Returns:
-        True if a table of that name exists.
+        The JSON text to paste into the page.
     """
-    row = conn.execute(
-        "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = ?", (name,)
-    ).fetchone()
-    return row is not None
+    blob = json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=True)
+    return blob.replace("<", "\\u003c")
 
 
-def read_tables(conn: sqlite3.Connection) -> list[dict[str, Any]]:
-    """Read the ``tables`` manifest, ordered by stage then dataset then table name.
-
-    Args:
-        conn: Open connection to the automotive database.
-
-    Returns:
-        One dictionary per table with keys table, dataset, kind, source_path, rows, sha256.
-    """
-    order = "CASE kind WHEN 'raw' THEN 0 WHEN 'method' THEN 1 WHEN 'processed' THEN 2 "
-    order += "WHEN 'output' THEN 3 ELSE 4 END"
-    rows = conn.execute(
-        f'SELECT "table", dataset, kind, source_path, rows, sha256 FROM "tables" '
-        f'ORDER BY {order}, dataset, "table"'
-    ).fetchall()
-    return [
-        {
-            "table": r[0],
-            "dataset": r[1],
-            "kind": r[2],
-            "source_path": r[3],
-            "rows": r[4],
-            "sha256": r[5] or "",
-        }
-        for r in rows
-    ]
-
-
-def derive_columns(conn: sqlite3.Connection, table: str) -> list[dict[str, Any]]:
-    """Describe one table's columns from PRAGMA table_info plus per-column counts.
-
-    Used only when the ``columns`` dictionary table is absent; it reproduces the same fields.
-
-    Args:
-        conn: Open connection to the automotive database.
-        table: Table to describe.
-
-    Returns:
-        One dictionary per column with keys column, sqlite_type, non_null, distinct, example.
-    """
-    out: list[dict[str, Any]] = []
-    for _cid, col, ctype, *_rest in conn.execute(f'PRAGMA table_info("{table}")'):
-        non_null, distinct, example = conn.execute(
-            f'SELECT COUNT("{col}"), COUNT(DISTINCT "{col}"), '
-            f'(SELECT "{col}" FROM "{table}" WHERE "{col}" IS NOT NULL LIMIT 1) FROM "{table}"'
-        ).fetchone()
-        out.append(
-            {
-                "column": col,
-                "sqlite_type": ctype,
-                "non_null": non_null,
-                "distinct": distinct,
-                "example": None if example is None else str(example)[:80],
-            }
-        )
-    return out
-
-
-def read_columns(conn: sqlite3.Connection, tables: list[dict[str, Any]]) -> dict[str, list[dict]]:
-    """Read the ``columns`` dictionary, falling back to PRAGMA when the table is absent.
-
-    The dictionary table names its distinct-count column ``distinct_values`` in the current
-    builder and ``distinct`` in earlier ones; both are accepted and normalised to ``distinct``.
-    Column order follows the physical table order (PRAGMA table_info), not the dictionary's.
-
-    Args:
-        conn: Open connection to the automotive database.
-        tables: The manifest rows, used for the table list and their physical column order.
-
-    Returns:
-        Mapping of table name to its ordered list of column descriptions.
-    """
-    stored: dict[str, dict[str, dict[str, Any]]] = {}
-    if has_table(conn, "columns"):
-        names = [r[1] for r in conn.execute('PRAGMA table_info("columns")')]
-        distinct_col = "distinct_values" if "distinct_values" in names else "distinct"
-        sql = f'SELECT "table", "column", sqlite_type, non_null, "{distinct_col}", example '
-        sql += 'FROM "columns"'
-        for tname, col, ctype, non_null, distinct, example in conn.execute(sql):
-            stored.setdefault(tname, {})[col] = {
-                "column": col,
-                "sqlite_type": ctype,
-                "non_null": non_null,
-                "distinct": distinct,
-                "example": None if example is None else str(example)[:80],
-            }
-
-    out: dict[str, list[dict[str, Any]]] = {}
-    for entry in tables:
-        name = entry["table"]
-        physical = [r[1] for r in conn.execute(f'PRAGMA table_info("{name}")')]
-        if name in stored and all(c in stored[name] for c in physical):
-            out[name] = [stored[name][c] for c in physical]
-        else:
-            out[name] = derive_columns(conn, name)
-    return out
-
-
-def read_sources(conn: sqlite3.Connection) -> list[dict[str, Any]]:
-    """Read the source registry ordered by source_id.
-
-    Args:
-        conn: Open connection to the automotive database.
-
-    Returns:
-        One dictionary per source with the registry's eight fields; empty when the table is
-        absent, so a partially built database still produces a page.
-    """
-    if not has_table(conn, "sources"):
-        return []
-    rows = conn.execute(
-        "SELECT source_id, publisher, title, url, how_obtained, accessed_date, license, used_by "
-        'FROM "sources" ORDER BY source_id'
-    ).fetchall()
-    keys = (
-        "source_id",
-        "publisher",
-        "title",
-        "url",
-        "how_obtained",
-        "accessed_date",
-        "license",
-        "used_by",
-    )
-    return [dict(zip(keys, r, strict=True)) for r in rows]
-
-
-def read_raw_files(
-    conn: sqlite3.Connection, sources: list[dict[str, Any]]
-) -> dict[str, list[dict[str, Any]]]:
-    """Read raw-file provenance per dataset with each file's sources resolved.
-
-    ``raw_files.source_id`` holds one or more ids separated by semicolons; each is looked up in
-    the source registry so the lineage view can render publisher, title, link and licence
-    without a join at view time.
-
-    Args:
-        conn: Open connection to the automotive database.
-        sources: The source registry as returned by :func:`read_sources`.
-
-    Returns:
-        Mapping of dataset name to its ordered list of raw-file descriptions; empty when the
-        table is absent.
-    """
-    by_id = {s["source_id"]: s for s in sources}
-    out: dict[str, list[dict[str, Any]]] = {}
-    if not has_table(conn, "raw_files"):
-        return out
-    rows = conn.execute(
-        'SELECT dataset, file, source_id, original_name, sha256, note FROM "raw_files" '
-        "ORDER BY dataset, file"
-    ).fetchall()
-    for dataset, file, source_id, original_name, sha256, note in rows:
-        ids = [s.strip() for s in (source_id or "").split(";") if s.strip()]
-        resolved = [
-            by_id.get(i, {"source_id": i, "publisher": "", "title": "", "url": ""}) for i in ids
-        ]
-        out.setdefault(dataset, []).append(
-            {
-                "file": file,
-                "original_name": original_name or "",
-                "sha256": (sha256 or "")[:12],
-                "note": note or "",
-                "sources": resolved,
-            }
-        )
-    return out
-
-
-def build_datasets(
-    tables: list[dict[str, Any]], raw_files: dict[str, list[dict[str, Any]]]
-) -> list[dict[str, Any]]:
-    """Group the manifest into per-dataset lineage cards.
-
-    Each card carries the tables present at every stage, the raw files behind the dataset and,
-    for the model dataset, the whitepaper step order 3 -> 4 -> 4b -> 5 over the output tables.
-
-    Args:
-        tables: The manifest rows.
-        raw_files: Raw-file provenance keyed by dataset.
-
-    Returns:
-        One dictionary per dataset in :data:`DATASET_ORDER`, unknown datasets appended sorted.
-    """
-    names = sorted({t["dataset"] for t in tables} | set(raw_files))
-    ordered = [d for d in DATASET_ORDER if d in names]
-    ordered += [d for d in names if d not in DATASET_ORDER]
-
-    cards: list[dict[str, Any]] = []
-    for dataset in ordered:
-        mine = [t for t in tables if t["dataset"] == dataset]
-        stages = {stage: [t["table"] for t in mine if t["kind"] == stage] for stage in STAGES}
-        registry = [t["table"] for t in mine if t["kind"] == "registry"]
-        outputs = list(stages["output"])
-        steps: list[dict[str, Any]] = []
-        if dataset == "model" and outputs:
-            taken: set[str] = set()
-            for label, prefixes in MODEL_STEPS:
-                hit = [t for p in prefixes for t in outputs if t.startswith(p)]
-                taken |= set(hit)
-                if hit:
-                    steps.append({"label": label, "tables": hit})
-            rest = [t for t in outputs if t not in taken]
-            if rest:
-                steps.append({"label": "other", "tables": rest})
-        cards.append(
-            {
-                "dataset": dataset,
-                "stages": stages,
-                "registry": registry,
-                "steps": steps,
-                "raw_files": raw_files.get(dataset, []),
-            }
-        )
-    return cards
-
-
-def build_manifest(conn: sqlite3.Connection, db_bytes: int, gz_bytes: int) -> dict[str, Any]:
-    """Assemble everything the page needs before the WASM engine is available.
-
-    Args:
-        conn: Open connection to the automotive database.
-        db_bytes: Size of the database file, embedded for the status line.
-        gz_bytes: Size of the gzipped database, embedded for the status line.
-
-    Returns:
-        The manifest dictionary that is serialised into the page as JSON.
-    """
-    tables = read_tables(conn)
-    sources = read_sources(conn)
-    return {
-        "columns": read_columns(conn, tables),
-        "datasets": build_datasets(tables, read_raw_files(conn, sources)),
-        "db_bytes": db_bytes,
-        "gz_bytes": gz_bytes,
-        "default": DEFAULT_PIVOT,
-        "yearly": YEARLY_PIVOT,
-        "sources": sources,
-        "sqljs_version": SQLJS_VERSION,
-        "stages": list(STAGES),
-        "tables": tables,
-    }
-
-
-def render(manifest: dict[str, Any], db_b64: str) -> str:
-    """Fill the HTML template with the manifest JSON and the base64 database.
-
-    ``<`` is escaped as ``\\u003c`` in the JSON so the embedded blob can never close the script
-    element early; the base64 alphabet cannot contain ``<`` at all.
-
-    Args:
-        manifest: The manifest dictionary.
-        db_b64: The gzipped database file, base64-encoded.
+def render() -> str:
+    """Fill the template with the build-time constants.
 
     Returns:
         The complete HTML document.
+
+    Raises:
+        SystemExit: If a placeholder is left unfilled.
     """
-    blob = json.dumps(manifest, sort_keys=True, separators=(",", ":"), ensure_ascii=True)
-    blob = blob.replace("<", "\\u003c")
+    substitutions = {
+        "__SQLJS_SRC__": SQLJS_DIR + "sql-wasm.js",
+        "__SQLJS_SRI__": SQLJS_SRI,
+        "__SQLJS_DIR__": SQLJS_DIR,
+        "__SQLJS_VERSION__": SQLJS_VERSION,
+        "__DB_FILE__": DB.name,
+        "__SERVE_CMD__": SERVE_CMD,
+        "__SERVE_URL__": SERVE_URL,
+        "__DEFAULT_PIVOT__": js(DEFAULT_PIVOT),
+        "__YEARLY_PIVOT__": js(YEARLY_PIVOT),
+        "__STAGES__": js(list(STAGES)),
+        "__DATASET_ORDER__": js(list(DATASET_ORDER)),
+        "__MODEL_STEPS__": js([[label, list(prefixes)] for label, prefixes in MODEL_STEPS]),
+    }
     html = TEMPLATE
-    html = html.replace("__SQLJS_SRC__", SQLJS_DIR + "sql-wasm.js")
-    html = html.replace("__SQLJS_SRI__", SQLJS_SRI)
-    html = html.replace("__SQLJS_DIR__", SQLJS_DIR)
-    html = html.replace("__MANIFEST__", blob)
-    html = html.replace("__DB_B64__", db_b64)
+    for token, value in substitutions.items():
+        html = html.replace(token, value)
+    left = PLACEHOLDER.search(html)
+    if left is not None:
+        raise SystemExit(f"unfilled placeholder in the template: {left.group(0)}")
     return html
 
 
-def main() -> None:
-    """Read the database, embed it and write data/auto/dashboard.html."""
-    if not DB.exists():
-        raise SystemExit(f"database not found: {DB}")
-    raw = DB.read_bytes()
-    # mtime=0 keeps the gzip header, and so the whole page, byte-identical between runs.
-    packed = gzip.compress(raw, compresslevel=9, mtime=0)
-    conn = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
+def manifest_rows(db: Path) -> int:
+    """Count the rows of the database's ``tables`` manifest.
+
+    The page reads that manifest itself; the build only checks it is there, so a page is never
+    written against a database the viewer cannot navigate.
+
+    Args:
+        db: Path to the automotive SQLite database.
+
+    Returns:
+        Number of rows in the ``tables`` manifest.
+
+    Raises:
+        SystemExit: If the database has no ``tables`` manifest or the manifest is empty.
+    """
+    conn = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
     try:
-        if not has_table(conn, "tables"):
-            raise SystemExit(f"{DB} has no 'tables' manifest: run build_database.py first")
-        manifest = build_manifest(conn, len(raw), len(packed))
+        present = conn.execute(
+            "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'tables'"
+        ).fetchone()
+        if present is None:
+            raise SystemExit(f"{db} has no 'tables' manifest: run build_database.py first")
+        rows: int = conn.execute('SELECT COUNT(*) FROM "tables"').fetchone()[0]
     finally:
         conn.close()
-    if not manifest["tables"]:
-        raise SystemExit(f"{DB} lists no tables: is build_database.py still running?")
-    html = render(manifest, base64.b64encode(packed).decode("ascii"))
-    OUT.write_text(html, encoding="utf-8")
-    n_tables = len(manifest["tables"])
-    n_cols = sum(len(v) for v in manifest["columns"].values())
+    if not rows:
+        raise SystemExit(f"{db} lists no tables: is build_database.py still running?")
+    return rows
+
+
+def main() -> None:
+    """Write data/auto/dashboard.html, the reader for the sibling SQLite database.
+
+    Raises:
+        SystemExit: If the database is missing or carries no ``tables`` manifest.
+    """
+    if not DB.exists():
+        raise SystemExit(f"database not found: {DB}")
+    rows = manifest_rows(DB)
+    OUT.write_text(render(), encoding="utf-8")
     print(
-        f"{DB.relative_to(REPO)}: {len(raw) / 1e6:.2f} MB, {n_tables} tables, {n_cols} columns; "
-        f"gzipped to {len(packed) / 1e6:.2f} MB"
+        f"{DB.relative_to(REPO)}: {DB.stat().st_size / 1e6:.2f} MB, {rows} tables "
+        "(read by the page at view time, not embedded)"
     )
-    print(f"{OUT.relative_to(REPO)}: {OUT.stat().st_size / 1e6:.2f} MB")
+    print(f"{OUT.relative_to(REPO)}: {OUT.stat().st_size / 1024:.0f} KB")
+    print(f"serve it with: {SERVE_CMD}  ->  {SERVE_URL}")
 
 
 if __name__ == "__main__":
