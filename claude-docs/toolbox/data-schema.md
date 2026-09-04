@@ -237,7 +237,7 @@ only — never a company or model figure. File: `trade_flows/processed/trade_flo
 | `hs6` | text | — | HS 2022 six-digit sub-heading of 8703 (`method/hs_passenger_cars.csv`) |
 | `powertrain_class` | text | — | `ICE` · `HEV` · `PHEV` · `BEV` · `OTHER` |
 | `units` | int | vehicles | empty when the reporter gave no quantity |
-| `quantity_flag` | text | — | `reported` · `estimated` · `not_reported` |
+| `quantity_flag` | text | — | `reported` · `estimated` · `member_state_sum` (EU27 row) · `not_reported` |
 | `value` | real | per `currency` | trade value as reported |
 | `currency` | text | — | `EUR` (Comext) · `USD` (Comtrade) |
 | `source_id` | text | — | `eurostat_comext_ds045409` · `un_comtrade_public` |
