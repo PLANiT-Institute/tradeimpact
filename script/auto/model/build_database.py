@@ -64,10 +64,13 @@ def infer_type(values: list[str]) -> str:
 
 def load_csv(conn: sqlite3.Connection, path: Path) -> int:
     """Create a table named after the file stem and load every row; return the row count."""
-    with path.open(newline="") as f:
-        reader = csv.reader(f)
-        header = next(reader)
-        rows = list(reader)
+    try:
+        text = path.read_text(encoding="utf-8-sig")
+    except UnicodeDecodeError:
+        text = path.read_text(encoding="cp949")  # Korean open-data CSVs (KOTSA, NIER)
+    reader = csv.reader(text.splitlines())
+    header = next(reader)
+    rows = list(reader)
     bad = [i + 2 for i, r in enumerate(rows) if len(r) != len(header)]
     if bad:
         raise SystemExit(

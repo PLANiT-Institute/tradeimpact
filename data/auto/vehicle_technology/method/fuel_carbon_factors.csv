@@ -1,0 +1,4 @@
+fuel,gco2_per_litre,derivation,source_id
+gasoline,2348,"EPA: 8,887 gCO2 per gallon of gasoline (tailpipe, complete combustion) / 3.78541 L per gallon",epa_ghg_typical_vehicle
+diesel,2689,"EPA: 10,180 gCO2 per gallon of diesel / 3.78541 L per gallon",epa_ghg_typical_vehicle
+lpg,1511,"EPA Emission Factors Hub: propane 5.72 kgCO2 per gallon / 3.78541 L per gallon (automotive LPG in Korea is propane-butane; propane factor used)",epa_emission_factors_hub

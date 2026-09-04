@@ -68,3 +68,23 @@ printed; S3 world NZE pro-rata).
   presented as a national sector target.
 - Markets with no usable NDC anchor are FLAGGED and excluded from the S2 headline, reported
   separately (guideline FLAG-market rule).
+
+## Korea (added 2026-09-04)
+
+| file | content |
+|---|---|
+| `raw/kr_climate_targets.csv` | hand-transcribed anchors with document, table and URL: 2030 NDC (40 % below 2018, 727.6 → 436.6 MtCO2e), transport (1.A.3) 98.1 → 61.0 with the annual path 2023–2030, power (전환) 269.6 → 145.9, 2050 scenarios A/B for transport (2.8 / 9.2) and power (0 / 20.7), and the 2035 NDC (53–61 % below 2018 net 742.3, no transport target; recorded, not used) |
+| `processed/emission_targets_kr.csv` | `derive_kr_rates.py`: S1 observed (GIR road CO2 −0.2 %/yr; Ember grid 2.2 %/yr, 2015–2024 excl. 2020–21); S2 `ndc_prorata` fleet 5.9 %/yr (transport path 93.7 → 61.0, 2023–2030) and power 5.0 %/yr (2018–2030), floored at S1 where already met; S3 `1p5c_prorata` fleet 10.5 %/yr (98.1 → 2.8 by 2050, A안) and power 7.7 %/yr (269.6 → 20.7, B안) |
+
+Sources: 탄소중립·녹색성장 국가전략 및 제1차 국가 기본계획 (`kr_basic_plan_2023`,
+https://www.pcccr.go.kr/storage/board/base/2023/07/04/BOARD_ATTACH_1688433504249.pdf); 2050
+탄소중립 시나리오 (`kr_2050_scenarios_2021`, portal reproduction
+https://www.gihoo.or.kr/gallery.es?mid=a30202000000&bid=0010&act=view&list_no=551); Republic of
+Korea's 2035 NDC (`kr_ndc_2035`, UNFCCC PDF). All PDF-only; transcribed with table names.
+
+Traps. 수송 is IPCC 1.A.3 in full (road, domestic aviation, rail, navigation), so every
+transport rate is a pro-rata. The 2018 transport anchor 98.1 MtCO2e is fixed on the 1996-guideline
+inventory vintage and is not reproducible from the current inventory (98.88 on the 2006
+guidelines). The 2035 NDC restates the 2018 base year to 742.3 net (from 727.6 gross). The 2050
+scenario A power endpoint is zero, which a compound decline cannot reach; scenario B anchors the
+S3 power rate and A anchors the S3 fleet rate, so the S3 pair mixes the two published scenarios.

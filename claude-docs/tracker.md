@@ -5,8 +5,9 @@ The single live tracking document. Current state only — history is in
 
 **Last pass:** 2026-09-04 (design, conformance and state; state refreshed after ST10 and the
 database build the same day; refreshed after the Kia and Honda EU27 acquisition, the independent
-review, and the first US/AU inputs). **Next pass due:** when the Korea benchmark is built (scout dossier pending), on the India
-verdict, on a segment-ratio decision, or at any charter change.
+review, and the first US/AU inputs). **Next pass due:** on the India verdict (scout running), on the hand fetch of Korea's UNFCCC
+common reporting tables (passenger-car CO2 row), on a segment-ratio decision, or at any charter
+change.
 
 ## 1. Where we are
 
@@ -73,6 +74,16 @@ Jan–Jun 2026 −0.49; S3 between −8 and −15 per cohort; coverage 98–99 %
 others: Hyundai 2025 — US 902k priced, KR 456k no benchmark yet, IN 572k plant-side only, others
 1.28M plant-side; Kia 2026 H1 — US 431k priced, KR 296k and IN 157k no benchmark, others 735k of
 which 596k region-level. Scouts for the Korea and India benchmark inputs are running.
+
+**Korea benchmark built (2026-09-04, free sources only).** Every input came from keyless,
+machine-readable Korean official files (licence 제한 없음): MOLIT registration workbooks (승용 stock
+21.77 M in 2024, model-year distribution), KOTSA TMACS inspection odometers (260 billion vkm,
+11,963 km per car, tier A), the GIR national inventory (road CO2 92 Mt 2023) with the KOTSA
+passenger-car share (tier C, the only split that exists), KEA label fuel economy per trim, the 2023
+Basic Plan and the 2050 scenarios. Results: Hyundai Korea 2024 S1 +1.89 MtCO2e / S2 −0.96 / S3
+−2.49; 2025 +2.17 / −0.92 / −2.56; Kia Jan–Jun 2026 +1.30 / −0.53 / −1.50 (coverage 93–99 %).
+Open: the passenger-car CO2 row of Korea's 2024 UNFCCC CRT (hand fetch) would lift the fleet
+intensity from tier C; the 13–26 % GIR-vs-KOTSA level gap is recorded for reconciliation.
 
 ## 2. Phases
 

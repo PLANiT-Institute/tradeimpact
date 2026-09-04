@@ -206,6 +206,14 @@ EU27,kia,SK,2024,NIRO,PHEV,7,no sourced utility factor: the sales data publish o
 EU27,kia,SK,2024,SORENTO,PHEV,17,no sourced utility factor: the sales data publish only combined values,
 EU27,kia,SK,2024,SPORTAGE,PHEV,104,no sourced utility factor: the sales data publish only combined values,
 EU27,kia,SK,2024,XCEED,PHEV,7,no sourced utility factor: the sales data publish only combined values,
+KR,hyundai,KR,2025,NEXO  (NH2),FCEV,5003,no sourced hydrogen supply emissions intensity for the destination,Korea domestic sales as published in the exporter's IR release
+KR,hyundai,KR,2024,NEXO (FE),FCEV,2751,no sourced hydrogen supply emissions intensity for the destination,Korea domestic sales as published in the exporter's IR release
+KR,hyundai,KR,2025,NEXO (FE),FCEV,675,no sourced hydrogen supply emissions intensity for the destination,Korea domestic sales as published in the exporter's IR release
+KR,kia,KR,2026,Bongo,,14037,out_of_scope: light truck (화물),"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2026-01..2026-06 only, not the full cohort year"
+KR,kia,KR,2026,Bongo EV,,2378,out_of_scope: light truck (화물),"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2026-01..2026-06 only, not the full cohort year"
+KR,kia,KR,2026,Bus,,699,out_of_scope: buses (승합),"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2026-01..2026-06 only, not the full cohort year"
+KR,kia,KR,2026,Millitary,,700,out_of_scope: military vehicles as labelled in the IR file,"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2026-01..2026-06 only, not the full cohort year"
+KR,kia,KR,2026,Tasman,,1976,out_of_scope: pickup truck: 화물 registration class outside the passenger-car benchmark,"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2026-01..2026-06 only, not the full cohort year"
 US,hyundai,US,2024,IONIQ 5 Robo Taxi,,49,out_of_scope: fleet robotaxi vehicles (16 and 49 units); not a retail passenger-car cohort,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
 US,hyundai,US,2025,IONIQ 5 Robo Taxi,,16,out_of_scope: fleet robotaxi vehicles (16 and 49 units); not a retail passenger-car cohort,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
 US,hyundai,US,2025,IONIQ 9,BEV,5189,no EPA technology row for Ioniq 9 BEV at or before model year 2025 in vehicle_technology_us_epa.csv,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)

@@ -19,8 +19,8 @@ hyundai,others,no,ID,country,2025,2025-01..2025-12,plant_sales,15151,0,0,plant_s
 hyundai,EU27,no,IE,country,2024,2024-01..2024-12,registrations,11222,9916,1306,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
 hyundai,IN,no,IN,country,2025,2025-01..2025-12,plant_sales,571878,0,0,plant_side_only,,hyundai_2025_global_plant_sales.xlsx,only a plant-side source covers this destination: units built at the local plant and sold there; imports from other plants are not in the source
 hyundai,EU27,no,IT,country,2024,2024-01..2024-12,registrations,49430,48786,644,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,KR,yes,KR,country,2024,2024-01..2024-12,domestic_sales,418055,0,0,no_benchmark,,hyundai_2024_sales_by_model.xlsx,no destination benchmark built yet for this country
-hyundai,KR,yes,KR,country,2025,2025-01..2025-12,domestic_sales,456148,0,0,no_benchmark,,hyundai_2025_sales_by_model.xlsx,no destination benchmark built yet for this country
+hyundai,KR,yes,KR,country,2024,2024-01..2024-12,domestic_sales,418055,415304,2751,priced,KR,hyundai_2024_sales_by_model.xlsx,no sourced hydrogen supply emissions intensity for the desti
+hyundai,KR,yes,KR,country,2025,2025-01..2025-12,domestic_sales,456148,450470,5678,priced,KR,hyundai_2025_sales_by_model.xlsx,no sourced hydrogen supply emissions intensity for the desti
 hyundai,EU27,no,LT,country,2024,2024-01..2024-12,registrations,743,695,48,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
 hyundai,EU27,no,LU,country,2024,2024-01..2024-12,registrations,1357,0,1357,withheld,EU27,eea_hyundai_2024_final.json,destination benchmark withheld; no sourced utility factor
 hyundai,EU27,no,LV,country,2024,2024-01..2024-12,registrations,668,647,21,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
@@ -57,7 +57,7 @@ kia,EU27,no,HU,country,2024,2024-01..2024-12,registrations,6478,6258,220,priced,
 kia,EU27,no,IE,country,2024,2024-01..2024-12,registrations,8983,7531,1452,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
 kia,IN,no,IN,country,2026,2026-01..2026-06,retail_sales,156523,0,0,no_benchmark,,kia_2026_retail_sales_by_model_market.xlsx,no destination benchmark built yet for this country
 kia,EU27,no,IT,country,2024,2024-01..2024-12,registrations,47627,46588,1039,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,KR,yes,KR,country,2026,2026-01..2026-06,retail_sales,296479,0,0,no_benchmark,,kia_2026_retail_sales_by_model_market.xlsx,no destination benchmark built yet for this country
+kia,KR,yes,KR,country,2026,2026-01..2026-06,retail_sales,296479,276689,19790,priced,KR,kia_2026_retail_sales_by_model_market.xlsx,out_of_scope
 kia,EU27,no,LT,country,2024,2024-01..2024-12,registrations,2241,2146,95,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
 kia,EU27,no,LU,country,2024,2024-01..2024-12,registrations,1540,0,1540,withheld,EU27,eea_kia_2024_final.json,destination benchmark withheld; no sourced utility factor
 kia,EU27,no,LV,country,2024,2024-01..2024-12,registrations,801,770,31,priced,EU27,eea_kia_2024_final.json,no sourced utility factor

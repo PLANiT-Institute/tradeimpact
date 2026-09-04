@@ -1,0 +1,53 @@
+company,label_base,model,powertrain,powertrain_rule,note
+hyundai,Avante,Avante,,stated,powertrain from the IR trim code (CN7 / CN7 HEV / CN7 N)
+hyundai,Sonata,Sonata,,stated,
+hyundai,Grandeur,Grandeur,,stated,
+hyundai,IONIQ 6,IONIQ 6,BEV,explicit,
+hyundai,IONIQ 6 N,IONIQ 6,BEV,explicit,N performance variant priced on the IONIQ 6 label values
+hyundai,IONIQ 5,IONIQ 5,BEV,explicit,
+hyundai,IONIQ 5 N,IONIQ 5,BEV,explicit,N performance variant priced on the IONIQ 5 label values
+hyundai,IONIQ 9,IONIQ 9,BEV,explicit,
+hyundai,IONIQ,IONIQ,,stated,first-generation Ioniq (zero units in 2024-2025)
+hyundai,Casper,Casper,,stated,
+hyundai,Casper EV,Casper,BEV,explicit,
+hyundai,Venue,Venue,ICE,explicit,
+hyundai,Kona,Kona,,stated,
+hyundai,Kona N,Kona,ICE,explicit,
+hyundai,Tucson,Tucson,,stated,
+hyundai,NEXO,NEXO,FCEV,explicit,withheld downstream (no hydrogen supply intensity)
+hyundai,Santa-Fe,Santa-Fe,,stated,
+hyundai,Palisade,Palisade,,stated,
+hyundai,Veloster,Veloster,ICE,explicit,
+hyundai,Accent,Accent,ICE,explicit,
+genesis,G70,G70,,stated,
+genesis,G70 S/B,G70,ICE,explicit,shooting brake priced on the G70 label values
+genesis,G80,G80,,stated,
+genesis,G90,G90,ICE,explicit,
+genesis,GV60,GV60,BEV,explicit,
+genesis,GV70,GV70,,stated,
+genesis,GV80,GV80,ICE,explicit,
+genesis,GV80 Coupe,GV80,ICE,explicit,
+genesis,Genesis Coupe,,,out_of_scope,discontinued; zero units
+kia,Carnival,Carnival,,unsplit,Kia IR reports one row for ICE and HEV; central ICE with an all-HEV bound
+kia,EV3,EV3,BEV,explicit,
+kia,EV4,EV4,BEV,explicit,
+kia,EV5,EV5,BEV,explicit,
+kia,EV6,EV6,BEV,explicit,
+kia,EV9,EV9,BEV,explicit,
+kia,K5,K5,,unsplit,ICE and HEV on one row
+kia,K8,K8,,unsplit,ICE and HEV on one row
+kia,K9,K9,ICE,explicit,
+kia,Morning / Picanto,Morning / Picanto,ICE,explicit,
+kia,Niro,Niro,HEV,explicit,the Korean Niro is hybrid only; the EV is a separate IR row
+kia,Niro EV,Niro,BEV,explicit,
+kia,PV5,PV5,BEV,explicit,passenger PV5 is certified as 승용차
+kia,Ray,Ray,ICE,explicit,
+kia,Ray EV,Ray,BEV,explicit,
+kia,Seltos,Seltos,,unsplit,ICE and (from 2026) HEV on one row
+kia,Sorento,Sorento,,unsplit,ICE and HEV on one row
+kia,Sportage,Sportage,,unsplit,ICE and HEV on one row
+kia,Tasman,,,out_of_scope,pickup truck: 화물 registration class outside the passenger-car benchmark
+kia,Bongo,,,out_of_scope,light truck (화물)
+kia,Bongo EV,,,out_of_scope,light truck (화물)
+kia,Bus,,,out_of_scope,buses (승합)
+kia,Millitary,,,out_of_scope,military vehicles as labelled in the IR file

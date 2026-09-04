@@ -108,3 +108,11 @@ Scripts in `script/auto/sales/`. One script per raw source; each writes a CSV to
 
 - Raw files are never edited; every processed row keeps `source_file`.
 - A missing market or powertrain yields **no row**, never zero.
+
+## Korea label map
+
+`method/kr_labels.csv` resolves every Korea sales label to a KEA model and a powertrain rule:
+`stated` (Hyundai IR trim codes carry the powertrain), `explicit` (single-powertrain labels such
+as EV3, Ray EV, Niro), `unsplit` (Kia IR labels that fold ICE and HEV: Carnival, K5, K8, Seltos,
+Sorento, Sportage — priced as ICE centrally with an all-HEV bound) and `out_of_scope` (Bongo,
+Bus, Tasman, military vehicles: outside the 승용 class).

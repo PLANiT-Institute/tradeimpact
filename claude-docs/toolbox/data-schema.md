@@ -125,6 +125,7 @@ Rules: [`vehicle_technology/method/method.md`](../../data/auto/vehicle_technolog
 
 | File | Status | Rows |
 |---|---|---|
+| `vehicle_technology/processed/vehicle_technology_kr_kea.csv` | exists | 72 — KEA label-derived intensity per company × model × powertrain, Korea |
 | `vehicle_technology/processed/epa_trends_powertrain_share_my2024.csv` | exists | 42 — EPA Automotive Trends MY2024 production shares per make × nameplate × powertrain (Hyundai, Kia, Genesis) |
 | `vehicle_technology/processed/vehicle_technology_eea_2024.csv` | exists | 1,226 — certified values per company × destination × model × powertrain, in-scope brands, 2024 |
 | `vehicle_technology/method/real_world_correction.csv` | exists | 6 — real-world factor with low/high range per test cycle (WLTP, EPA) × powertrain, with derivation and `source_id` |
@@ -164,7 +165,7 @@ its two files are named for the market they describe.
 
 | File | Status | Key | Payload |
 |---|---|---|---|
-| `cohorts.csv` | exists, 1,108 rows | market + company + destination + model + powertrain + cohort_year + variant | `period`, `units`, `basis`, `tailpipe_gco2_km`, `energy_wh_km`, `test_cycle`, `technology_source`, `sales_source_file`, `powertrain_rule`, `coverage_note` — sales joined to product technology per market (`build_cohorts.py`). `variant = central` is the published cohort; other variants are sensitivity repricings of the same cell |
+| `cohorts.csv` | exists, 1,180 rows | market + company + destination + model + powertrain + cohort_year + variant | `period`, `units`, `basis`, `tailpipe_gco2_km`, `energy_wh_km`, `test_cycle`, `technology_source`, `sales_source_file`, `powertrain_rule`, `coverage_note` — sales joined to product technology per market (`build_cohorts.py`). `variant = central` is the published cohort; other variants are sensitivity repricings of the same cell |
 | `cohorts_withheld.csv` | exists, 210 rows | market + company + destination + model | `units`, `reason`, `coverage_note` — volumes that cannot be joined to a product parameter |
 | `destination_parameters_eu27.csv` | exists, 27 rows | market + country + cohort_year | `vkt_km` with low/high bracket, `vkt_tier`, `vkt_derivation`, `car_stock`, `car_co2_kt`, `fleet_intensity_gco2_km` + tier, `grid_gco2_kwh` + tier, `mean_car_age_years` + tier, `lifetime_years` with low/high, `scenarios_excluded`, `scenario_exclusion_reason`, `warnings`, `source_ids` — each value with its reference year |
 | `destination_parameters_us.csv` | exists, 1 row | as above | identical columns (`build_reference_us.py`); distance tier B (FHWA wheelbase classes), lifetime tier C (NHTSA schedule), `scenarios_excluded = S2` |

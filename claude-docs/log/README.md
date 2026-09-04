@@ -23,6 +23,8 @@ two that are not.
 | 2026-09-04 | Unit of analysis is a company's sales to every destination country, filtered by the reader; coverage reported by group EU27 / US / home country (HQ country, KR or JP) / IN / others | Lead's clarification: the project is not about exports as such | `ti_coverage.csv` with `destination_group`; plant-side files never a cohort where a market-side file exists |
 | 2026-09-04 | US cohorts from the companies' own market-side releases (Hyundai IR US sheet 2024–2025, Kia America 2024–2025, Kia IR 2026 H1); nameplates split by EPA Automotive Trends MY2024 production shares (A-US-PT); Genesis listed as an out-of-scope company | Free publisher files close the import and full-year gaps; the releases do not split powertrains | `mixed_central_ice` rule retired; all-HEV bound kept; cohort years never pooled |
 
+| 2026-09-04 | Korea benchmark from free official statistics; passenger-car CO2 = GIR road CO2 × KOTSA share (tier C); S1 trend on the GIR road series, not the drifting share; lifetime by the EU27 mean-age rule on the MOLIT model-year distribution; S3 mixes the 2050 scenarios (transport A안, power B안) | No Korean publisher issues passenger-car CO2 as a file; the KOTSA share drifts 0.49 → 0.58; the A안 power endpoint is zero | `build_reference_kr.py`, `derive_kr_rates.py`, `kr_labels.csv`, `kr_model_map.csv`; Korea priced for Hyundai (2024, 2025) and Kia (2026 H1) |
+
 ## Transitions
 
 | Date | Stage or phase | Event | Trigger | Consequence |

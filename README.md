@@ -13,8 +13,8 @@ the engagement is governed by the Climate Arc grant proposal (see `claude-docs/`
    `data/auto/sales/method/companies.csv`). Destinations: a company's sales to every
    country worldwide (whitepaper Level 1, operating-country basis) — the reader filters
    destinations in the dashboard (US only, everything except Korea, …). Benchmarks exist
-   today for the EU27 member states and the United States; `ti_coverage.csv` shows every
-   other destination in the sales files with the reason it is not yet priced.
+   today for the EU27 member states, the United States and Korea; `ti_coverage.csv` shows
+   every other destination in the sales files with the reason it is not yet priced.
 2. **Gather data** — per importer: sector and electricity emissions, emission targets
    (NDC and sector standards); vehicle usage (distance, lifetime, stock); vehicle
    technology (certified intensity, real-world correction, utility factors); and the
@@ -69,9 +69,12 @@ previously published EU27 result exactly when fed the archived inputs (see
 | US, 2024 brand sales | Kia | 98.0 % | **+1.01** | excluded (no NDC in force) | −12.77 |
 | US, 2025 brand sales | Kia | 98.2 % | **+0.00** | excluded (no NDC in force) | −14.96 |
 | US, Jan–Jun 2026 retail | Kia | 98.0 % | −0.49 | excluded (no NDC in force) | −8.11 |
+| Korea, 2024 domestic sales | Hyundai | 99.3 % | **+1.89** | −0.96 | −2.49 |
+| Korea, 2025 domestic sales | Hyundai | 98.8 % | **+2.17** | −0.92 | −2.56 |
+| Korea, Jan–Jun 2026 retail | Kia | 93.3 % | **+1.30** | −0.53 | −1.50 |
 
 Negative = lifetime emissions above the destination's committed benchmark (lock-in
-liability); positive = below it (contribution). EU27 and US are never summed: different sales
+liability); positive = below it (contribution). Markets are never summed: different sales
 bases, test cycles and benchmarks. Withheld units (PHEV, FCEV, no certified value, Luxembourg's
 implausible benchmark, the Genesis brand, Ioniq 9 without an EPA row) are listed, not absorbed.
 
@@ -83,7 +86,11 @@ ratio set to 1.0, which is why compact crossovers and hybrids sit below it — a
 benchmark would lower or reverse the S1 contributions; and nameplates the releases do not split
 by powertrain are divided with EPA Automotive Trends MY2024 production shares (assumption
 A-US-PT in `data/auto/output/method.md`) with an all-HEV bound (`ti_sensitivity.csv`,
-dimension `powertrain_mix`). Cohort years are never pooled: each row above is one sale year. The US S2 scenario is excluded because no
+dimension `powertrain_mix`). Cohort years are never pooled: each row above is one sale year.
+Korea is priced on free Korean official statistics (MOLIT stock and age, KOTSA distance, GIR
+inventory, KEA label fuel economy, the 2023 Basic Plan and the 2050 scenarios); its fleet
+intensity is tier C because the national inventory has no passenger-car split (see
+`data/auto/output/method.md`, Korea). The US S2 scenario is excluded because no
 NDC is in force; the exclusion is a row in `ti_company.csv` and `ti_exclusions.csv`, never a
 silent gap. EU27 magnitudes are proxy-heavy (48 % of covered units on an EU-average distance,
 guideline §5.3 threshold 50 %).

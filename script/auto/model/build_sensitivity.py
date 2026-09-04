@@ -57,6 +57,7 @@ OUT_SENS = OUT_DIR / "ti_sensitivity.csv"
 
 LIFETIME_DELTA_Y = 3
 MIXED_RULE = "epa_share_my2024"
+MIXED_PREFIXES = (MIXED_RULE, "kr_unsplit_central_ice")
 
 CROSS_FIELDS = [
     "market",
@@ -197,7 +198,7 @@ def all_hev_cells(
     done: set[tuple[str, str, str, str, str]] = set()
     for c in cells:
         key = (c.market, c.company, c.destination, str(c.cohort_year), c.model)
-        if c.rule.startswith(MIXED_RULE) and key in overrides:
+        if c.rule.startswith(MIXED_PREFIXES) and key in overrides:
             if key not in done:
                 out.append(overrides[key])
                 done.add(key)

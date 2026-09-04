@@ -22,9 +22,11 @@ DATA = REPO / "data" / "auto"
 OUT = DATA / "output"
 SALES = DATA / "sales" / "processed"
 SALES_RAW = DATA / "sales" / "raw"
-EU27, US = "EU27", "US"
+EU27, US, KR = "EU27", "US", "KR"
 #: Processed sales files behind the US market cohort, and the destination they contribute.
 US_SALES_FILES = ("sales_hyundai_us.csv", "sales_kia_us.csv", "sales_kia_ir_2026.csv")
+#: Processed sales files behind the Korea market cohort (destination KR rows).
+KR_SALES_FILES = ("sales_hyundai_kr.csv", "sales_kia_ir_2026.csv")
 
 
 def rows(path: Path) -> list[dict[str, str]]:
@@ -136,9 +138,9 @@ def test_company_totals_equal_country_and_powertrain_sums(
 
 def test_markets_are_never_summed_together(company_rows: list[dict[str, str]]) -> None:
     """Each published company row belongs to exactly one market."""
-    assert {r["market"] for r in company_rows} == {EU27, US}
+    assert {r["market"] for r in company_rows} == {EU27, US, KR}
     for r in company_rows:
-        assert r["market"] in (EU27, US)
+        assert r["market"] in (EU27, US, KR)
 
 
 def test_sales_totals_match_snapshots() -> None:
@@ -197,6 +199,10 @@ def test_cohorts_cover_every_sales_row_exactly_once() -> None:
         for r in rows(SALES / name):
             if r["destination"] == US and r["company"] in in_scope:
                 source[(US, r["company"])] += int(r["units"])
+    for name in KR_SALES_FILES:
+        for r in rows(SALES / name):
+            if r["destination"] == KR and r["company"] in in_scope:
+                source[(KR, r["company"])] += int(r["units"])
     assert cohorts == source
 
 
