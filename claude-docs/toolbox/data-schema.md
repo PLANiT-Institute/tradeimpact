@@ -23,6 +23,7 @@ Rules: [`sales/method/method.md`](../../data/auto/sales/method/method.md).
 | `sales/processed/sales_eea_eu27_2024.csv` | exists | 1,226 — Hyundai and Kia EU27 first registrations, 2024 (Toyota and Honda snapshots pinned, out of scope) |
 | `sales/processed/sales_kia_ir_2026.csv` | exists | 287 — Kia IR retail sales, 2026 year to date |
 | `sales/processed/sales_hyundai_plant_2025.csv` | exists | 113 — Hyundai IR plant-side sales, 2025 |
+| `sales/method/us_model_map.csv` | exists | 20 — IR model name → EPA `base_model` + powertrain for the US market, with `powertrain_rule` (`explicit` · `mixed_central_ice` · `out_of_scope`) and a note |
 
 | Column | Type | Unit | Allowed values |
 |---|---|---|---|
@@ -152,24 +153,36 @@ correction separately. Tracked in [`../tracker.md`](../tracker.md) §6.
 
 ## 6. Outputs — `data/auto/output/`
 
+Two markets are built: **EU27** (2024 registrations) and **US** (2025/2026 exporter sales).
+Every result table carries a `market` column; EU27 and US figures are never summed together.
+Output file names carry no market suffix — the reference step is the only per-market script and
+its two files are named for the market they describe.
+
 | File | Status | Key | Payload |
 |---|---|---|---|
-| `destination_parameters_eu27.csv` | exists, 27 rows | country + cohort_year | `vkt_km` with low/high bracket, `vkt_tier`, `vkt_derivation`, `car_stock`, `car_co2_kt`, `fleet_intensity_gco2_km` + tier, `grid_gco2_kwh` + tier, `mean_car_age_years` + tier, `lifetime_years` with low/high, `warnings`, `source_ids` — each value with its reference year |
-| `reference_trajectories_eu27.csv` | exists, 1,899 rows | country + scenario + t | `calendar_year`, `r_fleet`, `r_power`, `fleet_intensity_gco2_km`, `e_ref_kgco2_per_vehicle`, `grid_kgco2_per_kwh` |
-| `ti_by_model_eu27.csv` | exists, 3,321 rows | company + destination + model + powertrain + scenario + cohort_year | `units`, `lifetime_years`, `vkt_km`, `vkt_tier`, `real_world_factor`, `e_prod_year0_kgco2e`, `e_ref_year0_kgco2e`, `ti_per_vehicle_kgco2e`, `ti_tco2e` |
-| `ti_annual_eu27.csv` | exists, 150 rows | company + scenario + t | `calendar_year`, `surviving_vehicles`, `ti_tco2e` — the annual TI flow of the cohort |
-| `ti_withheld_eu27.csv` | exists, 179 rows | company + destination + model + powertrain | `units`, `reason` — every cell that produced no result, with its unit count (`N-02`) |
-| `ti_country_eu27.csv` | exists (`aggregate_country.py`) | company + destination + scenario | `units`, `ti_tco2e`, `ti_per_vehicle_kgco2e`, `direction` |
-| `ti_powertrain_eu27.csv` | exists | company + powertrain + scenario | as above |
-| `ti_company_eu27.csv` | exists | company + scenario | covered/withheld units, `ti_tco2e`, per-vehicle, `direction`, `decomposition_identity_holds` |
-| `ti_crossover_eu27.csv` | exists (`build_sensitivity.py`) | as `ti_by_model` | `crossover_year` (years after sale), `crossover_calendar_year`, `reason`; the `C-05` range treatment waits on `B-07` |
-| `ti_sensitivity_eu27.csv` | exists (`build_sensitivity.py`) | company + scenario + dimension + variant | `parameter`, `ti_tco2e` — lifetime ±3 y, real-world factor range, proxied-distance quartiles |
-| `ti_data_quality_eu27.csv` | exists (`build_data_quality.py`) | company | analysis level, benchmark method, covered/withheld units, `tier_c_share`, `directional_only`, central lifetime, markets by tier, withheld reasons, warnings |
+| `cohorts.csv` | exists, 1,042 rows | market + company + destination + model + powertrain + cohort_year + variant | `period`, `units`, `basis`, `tailpipe_gco2_km`, `energy_wh_km`, `test_cycle`, `technology_source`, `sales_source_file`, `powertrain_rule`, `coverage_note` — sales joined to product technology per market (`build_cohorts.py`). `variant = central` is the published cohort; other variants are sensitivity repricings of the same cell |
+| `cohorts_withheld.csv` | exists, 210 rows | market + company + destination + model | `units`, `reason`, `coverage_note` — volumes that cannot be joined to a product parameter |
+| `destination_parameters_eu27.csv` | exists, 27 rows | market + country + cohort_year | `vkt_km` with low/high bracket, `vkt_tier`, `vkt_derivation`, `car_stock`, `car_co2_kt`, `fleet_intensity_gco2_km` + tier, `grid_gco2_kwh` + tier, `mean_car_age_years` + tier, `lifetime_years` with low/high, `scenarios_excluded`, `scenario_exclusion_reason`, `warnings`, `source_ids` — each value with its reference year |
+| `destination_parameters_us.csv` | exists, 1 row | as above | identical columns (`build_reference_us.py`); distance tier B (FHWA wheelbase classes), lifetime tier C (NHTSA schedule), `scenarios_excluded = S2` |
+| `reference_trajectories_eu27.csv` | exists, 1,890 rows | market + country + scenario + t | `calendar_year`, `r_fleet`, `r_power`, `fleet_intensity_gco2_km`, `e_ref_kgco2_per_vehicle`, `grid_kgco2_per_kwh` |
+| `reference_trajectories_us.csv` | exists, 32 rows | as above | S1 and S3 only; no S2 trajectory exists for the US |
+| `ti_by_model.csv` | exists, 2,971 rows | market + company + destination + model + powertrain + scenario + cohort_year | `units`, `lifetime_years`, `vkt_km`, `vkt_tier`, `test_cycle`, `real_world_factor`, `e_prod_year0_kgco2e`, `e_ref_year0_kgco2e`, `ti_per_vehicle_kgco2e`, `ti_tco2e` |
+| `ti_annual.csv` | exists, 182 rows | market + company + scenario + t | `calendar_year`, `surviving_vehicles`, `ti_tco2e` — the annual TI flow of the cohort |
+| `ti_withheld.csv` | exists, 250 rows | market + company + destination + model + powertrain | `units`, `reason`, `coverage_note` — every cell that produced no result, with its unit count (`N-02`) |
+| `ti_exclusions.csv` | exists, 2 rows | market + company + scenario | `cohort_year`, `units_affected`, `reason` — a scenario the market publishes no benchmark for, never a silent gap (`N-05`) |
+| `ti_country.csv` | exists (`aggregate_country.py`) | company + market + destination + scenario | `units`, `ti_tco2e`, `ti_per_vehicle_kgco2e`, `direction` |
+| `ti_powertrain.csv` | exists | company + market + powertrain + scenario | as above |
+| `ti_company.csv` | exists | company + market + scenario | `status` (reported/excluded), covered/withheld units, `ti_tco2e`, per-vehicle, `direction`, `decomposition_identity_holds`, `exclusion_reason` |
+| `ti_crossover.csv` | exists (`build_sensitivity.py`) | as `ti_by_model` | `crossover_year` (years after sale), `crossover_calendar_year`, `reason`; the `C-05` range treatment waits on `B-07` |
+| `ti_sensitivity.csv` | exists (`build_sensitivity.py`) | company + market + scenario + dimension + variant | `parameter`, `ti_tco2e` — lifetime ±3 y, real-world factor range (per test cycle), proxied-distance quartiles, powertrain mix (`all_hev`) |
+| `ti_data_quality.csv` | exists (`build_data_quality.py`) | company + market | analysis level, benchmark method, `sales_basis`, `test_cycles`, covered/withheld units, `tier_c_share`, `directional_only`, central lifetime, `scenarios_reported`, `scenarios_excluded`, markets by tier, withheld reasons, `coverage_notes`, warnings |
 | `target_set.csv` | planned (ST01) | company + destination + cohort_year | segment, lifetime and its bracket, criteria met, exclusion reason |
 
 Sign convention throughout: positive TI is displacement relative to the importing country's
-benchmark, negative TI is lock-in. Every output carries all three scenarios (`N-05`); no
-single-scenario headline is ever published.
+benchmark, negative TI is lock-in. Every output carries every scenario the market has a
+benchmark for (`N-05`); a scenario a market cannot support is published in `ti_exclusions.csv`
+with its reason and the units affected, never dropped. No single-scenario headline is ever
+published.
 
 ---
 
@@ -177,16 +190,17 @@ single-scenario headline is ever published.
 
 | From | To | Key | Note |
 |---|---|---|---|
-| `sales` | `vehicle_technology` | company + model + powertrain (+ destination + cohort_year for the EEA tables) | Where `sales.powertrain` is empty (Kia and Hyundai IR), the join supplies it; unmatched models are counted into `ti_withheld`, never dropped silently |
+| `sales` | `vehicle_technology` | EU27: company + destination + model + powertrain. US: company + `us_model_map.ir_model` → `epa_base_model` + powertrain, then EPA `model_year` ≤ cohort year | Where `sales.powertrain` is empty (Kia and Hyundai IR), `sales/method/us_model_map.csv` supplies it; unmatched models are counted into `cohorts_withheld` and carried into `ti_withheld`, never dropped silently |
 | `sales` | `vehicle_usage`, `country_emissions`, `emission_targets` | destination → country | Only for `destination_level = country` |
-| `country_emissions` + `vehicle_usage` | `destination_parameters` | country | `fleet_intensity = car_co2 ÷ (car_stock × vkt)`; the age bands give the lifetime bracket |
-| `emission_targets` | `reference_trajectories` | country + scenario (+ `rate`) | `r_fleet` drives the benchmark, `r_power` the grid |
-| `reference_trajectories` | `ti_by_model` | country + scenario + t | Benchmark minus product emissions, per year |
-| `ti_by_model` | `ti_country` / `ti_powertrain` / `ti_company` | company + destination / powertrain + scenario | The decomposition identity must hold (`N-06`) |
+| `country_emissions` + `vehicle_usage` | `destination_parameters` | market + country | `fleet_intensity = co2 ÷ (stock × vkt)` on one consistent fleet definition per market (EU27: passenger cars; US: all light-duty). EU27 takes the lifetime bracket from the age bands, the US from the NHTSA expected lifetime ±3 y |
+| `emission_targets` | `reference_trajectories` | market + country + scenario (+ `rate`) | `r_fleet` drives the benchmark, `r_power` the grid; a scenario with no rate builds no trajectory and lands in `ti_exclusions.csv` |
+| `cohorts` + `reference_trajectories` | `ti_by_model` | market + country + scenario + t | Benchmark minus product emissions, per year |
+| `ti_by_model` | `ti_country` / `ti_powertrain` / `ti_company` | company + market + destination / powertrain + scenario | The decomposition identity must hold within a market (`N-06`); markets are never summed |
 
 Rows that cannot join — a region-level destination, an unknown destination, a missing powertrain, a
-model with no certified intensity — are counted into `ti_withheld_eu27.csv` with their units. That
-count is part of every published result, not an internal detail.
+model with no certified intensity, an IR model name with no `us_model_map.csv` row — are counted
+into `ti_withheld.csv` with their units. That count is part of every published result, not an
+internal detail.
 
 ## 7. Processed files added for the United States and Australia (2026-09-04)
 

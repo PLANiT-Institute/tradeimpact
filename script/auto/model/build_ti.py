@@ -1,26 +1,33 @@
-"""Step 4 — lifetime trade impact per company x destination x model x powertrain x scenario.
+"""Step 4 — lifetime trade impact per market x company x destination x model x powertrain.
+
+Market-neutral: the cohort table carries the volumes and the certified product parameters for
+every market, and every ``destination_parameters_*.csv`` / ``reference_trajectories_*.csv``
+pair on disk is read. EU27 and US results live in the same tables, keyed by ``market``, and
+are never summed together.
 
 Inputs
-    sales/processed/sales_eea_eu27_2024.csv                        volumes (registrations)
-    vehicle_technology/processed/vehicle_technology_eea_2024.csv   certified WLTP values
-    vehicle_technology/method/real_world_correction.csv            factor per powertrain
-    output/destination_parameters_eu27.csv                         distance, lifetime per market
-    output/reference_trajectories_eu27.csv                         E_ref(t), G(t) per scenario
+    output/cohorts.csv, output/cohorts_withheld.csv       volumes + certified values (step 3a)
+    output/destination_parameters_*.csv                   distance, lifetime per market
+    output/reference_trajectories_*.csv                   E_ref(t), G(t) per market x scenario
+    vehicle_technology/method/real_world_correction.csv   factor per test cycle x powertrain
 Outputs (data/auto/output/)
-    ti_by_model_eu27.csv    one row per cell x scenario: units, per-vehicle and total TI
-    ti_annual_eu27.csv      annual TI flow per company x scenario over the cohort horizon
-    ti_withheld_eu27.csv    units that carry no result and why (PHEV, FCEV, no certified value)
+    ti_by_model.csv    one row per cell x scenario: units, per-vehicle and total TI
+    ti_annual.csv      annual TI flow per company x market x scenario over the cohort horizon
+    ti_withheld.csv    units that carry no result and why (from step 3a, plus benchmark holds)
+    ti_exclusions.csv  market x scenario combinations with no benchmark, and the units affected
 
 Algorithm (whitepaper §3.2-3.5, guideline §3.3-3.4, §4):
     $$ E_{prod}(t) = \\begin{cases} I_{cert}\\,f_{rw}\\,D_c & \\text{ICE, HEV}\\\\
-       \\eta_{cert}\\, G_c(t)\\, D_c & \\text{BEV} \\end{cases},\\qquad
+       \\eta_{cert}\\,f_{rw}\\, G_c(t)\\, D_c & \\text{BEV} \\end{cases},\\qquad
        TI_{v} = \\sum_{t=0}^{T_c-1}\\big(E_{ref,c}(t)-E_{prod}(t)\\big),\\qquad
        TI_{cell} = TI_v \\cdot N / 1000 $$
     ASCII: E_prod = tailpipe_gco2_km*factor/1000*vkt [kgCO2e/vehicle-yr] for ICE/HEV;
-           E_prod(t) = energy_wh_km/1000 * G(t) * vkt for BEV (G in kgCO2e/kWh);
+           E_prod(t) = energy_wh_km/1000 * factor * G(t) * vkt for BEV (G in kgCO2e/kWh);
            TI_v = sum_{t=0}^{T-1} (E_ref(t) - E_prod(t)) [kgCO2e/vehicle]; TI = TI_v*units/1000 [t]
-    I_cert  certified tailpipe intensity (gCO2/km), f_rw real-world factor (-), D_c annual
-    distance (km/yr), eta_cert certified consumption (Wh/km), T_c operating life (years).
+    I_cert  certified tailpipe intensity (gCO2/km), eta_cert certified consumption (Wh/km),
+    f_rw    real-world factor (-) looked up on (test cycle, powertrain): WLTP values carry the
+            published OBFCM gap, EPA label values are already 5-cycle adjusted (factor 1.0),
+    D_c     annual distance (km/yr), T_c operating life (years).
     Positive TI = contribution below the destination benchmark; negative = lock-in liability.
 
 Run from the repository root:  .venv/bin/python script/auto/model/build_ti.py
@@ -28,33 +35,39 @@ Run from the repository root:  .venv/bin/python script/auto/model/build_ti.py
 
 from __future__ import annotations
 
-import csv
 from collections import defaultdict
-from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[3]
-DATA = REPO / "data" / "auto"
-SALES = DATA / "sales" / "processed" / "sales_eea_eu27_2024.csv"
-TECH = DATA / "vehicle_technology" / "processed" / "vehicle_technology_eea_2024.csv"
-CORRECTION = DATA / "vehicle_technology" / "method" / "real_world_correction.csv"
-PARAMS = DATA / "output" / "destination_parameters_eu27.csv"
-REFERENCE = DATA / "output" / "reference_trajectories_eu27.csv"
-OUT_CELLS = DATA / "output" / "ti_by_model_eu27.csv"
-OUT_ANNUAL = DATA / "output" / "ti_annual_eu27.csv"
-OUT_WITHHELD = DATA / "output" / "ti_withheld_eu27.csv"
+from model_io import (
+    COHORTS_WITHHELD,
+    OUT_DIR,
+    REPO,
+    certified,
+    load_cohorts,
+    load_params,
+    load_real_world,
+    load_reference,
+    read_csv,
+    scenarios_by_market,
+    write_csv,
+)
 
-WITHHELD_REASON = {
-    "PHEV": "no sourced utility factor: the registration data publish only combined values",
-    "FCEV": "no sourced hydrogen supply emissions intensity for the destination",
-}
-NO_CERTIFIED = "the registration dataset reports no certified intensity for this cell"
+OUT_CELLS = OUT_DIR / "ti_by_model.csv"
+OUT_ANNUAL = OUT_DIR / "ti_annual.csv"
+OUT_WITHHELD = OUT_DIR / "ti_withheld.csv"
+OUT_EXCLUSIONS = OUT_DIR / "ti_exclusions.csv"
+
 IMPLAUSIBLE_BENCHMARK = (
     "destination benchmark withheld: the national car CO2 inventory and the registered stock "
     "cover different driving populations (FLEET_INTENSITY_IMPLAUSIBLE), so no defensible "
     "benchmark exists; market reported separately"
 )
+NO_PARAMETERS = (
+    "no destination parameters for this market and country: the reference step publishes no "
+    "distance, benchmark or lifetime for it"
+)
 
 CELL_FIELDS = [
+    "market",
     "company",
     "destination",
     "model",
@@ -65,92 +78,121 @@ CELL_FIELDS = [
     "lifetime_years",
     "vkt_km",
     "vkt_tier",
+    "test_cycle",
     "real_world_factor",
     "e_prod_year0_kgco2e",
     "e_ref_year0_kgco2e",
     "ti_per_vehicle_kgco2e",
     "ti_tco2e",
 ]
-ANNUAL_FIELDS = ["company", "scenario", "t", "calendar_year", "surviving_vehicles", "ti_tco2e"]
-WITHHELD_FIELDS = ["company", "destination", "model", "powertrain", "units", "reason"]
-
-
-def read_csv(path: Path) -> list[dict[str, str]]:
-    """All rows of a CSV as dicts."""
-    with path.open(newline="") as f:
-        return list(csv.DictReader(f))
+ANNUAL_FIELDS = [
+    "market",
+    "company",
+    "scenario",
+    "t",
+    "calendar_year",
+    "surviving_vehicles",
+    "ti_tco2e",
+]
+WITHHELD_FIELDS = [
+    "market",
+    "company",
+    "destination",
+    "cohort_year",
+    "model",
+    "powertrain",
+    "units",
+    "reason",
+    "coverage_note",
+]
+EXCLUSION_FIELDS = [
+    "market",
+    "company",
+    "scenario",
+    "cohort_year",
+    "units_affected",
+    "reason",
+]
 
 
 def main() -> None:
-    """Compute the per-cell lifetime TI and the cohort annual flow for every scenario."""
-    tech = {
-        (r["company"], r["destination"], r["model"], r["powertrain"]): r for r in read_csv(TECH)
-    }
-    factor = {r["powertrain"]: float(r["factor"]) for r in read_csv(CORRECTION)}
-    params = {r["country"]: r for r in read_csv(PARAMS)}
-    reference: dict[tuple[str, str], dict[int, tuple[float, float]]] = defaultdict(dict)
-    for r in read_csv(REFERENCE):
-        reference[(r["country"], r["scenario"])][int(r["t"])] = (
-            float(r["e_ref_kgco2_per_vehicle"]),
-            float(r["grid_kgco2_per_kwh"]),
-        )
-    scenarios = sorted({s for (_, s) in reference})
+    """Compute the per-cell lifetime TI and the cohort annual flow for every market."""
+    cohorts = load_cohorts()
+    withheld: list[dict[str, object]] = [dict(r) for r in read_csv(COHORTS_WITHHELD)]
+    params = load_params()
+    reference = load_reference()
+    factors = load_real_world()
+    scenarios = scenarios_by_market(reference)
 
     cells: list[dict[str, object]] = []
-    withheld: list[dict[str, object]] = []
-    annual: dict[tuple[str, str], dict[int, float]] = defaultdict(lambda: defaultdict(float))
-    surviving: dict[str, dict[int, float]] = defaultdict(lambda: defaultdict(float))
+    annual: dict[tuple[str, str, str], dict[int, float]] = defaultdict(lambda: defaultdict(float))
+    surviving: dict[tuple[str, str], dict[int, float]] = defaultdict(lambda: defaultdict(float))
 
-    for s in read_csv(SALES):
-        key = (s["company"], s["destination"], s["model"], s["powertrain"])
-        units = int(s["units"])
-        pt = s["powertrain"]
-        base = {"company": key[0], "destination": key[1], "model": key[2], "powertrain": pt}
-        if pt in WITHHELD_REASON:
-            withheld.append({**base, "units": units, "reason": WITHHELD_REASON[pt]})
+    for c in cohorts:
+        market, country = c["market"], c["destination"]
+        units, powertrain = int(c["units"]), c["powertrain"]
+        cohort_year = int(c["cohort_year"])
+        identity = {
+            "market": market,
+            "company": c["company"],
+            "destination": country,
+            "cohort_year": cohort_year,
+            "model": c["model"],
+            "powertrain": powertrain,
+        }
+        p = params.get((market, country))
+        if p is None:
+            withheld.append(
+                {
+                    **identity,
+                    "units": units,
+                    "reason": NO_PARAMETERS,
+                    "coverage_note": c["coverage_note"],
+                }
+            )
             continue
-        t_row = tech.get(key)
-        cert = None
-        if t_row is not None:
-            cert = t_row["energy_wh_km"] if pt == "BEV" else t_row["tailpipe_gco2_km"]
-        if not cert:
-            withheld.append({**base, "units": units, "reason": NO_CERTIFIED})
-            continue
-        p = params[key[1]]
         if "FLEET_INTENSITY_IMPLAUSIBLE" in p["warnings"]:
-            withheld.append({**base, "units": units, "reason": IMPLAUSIBLE_BENCHMARK})
+            withheld.append(
+                {
+                    **identity,
+                    "units": units,
+                    "reason": IMPLAUSIBLE_BENCHMARK,
+                    "coverage_note": c["coverage_note"],
+                }
+            )
             continue
         vkt, life = float(p["vkt_km"]), int(p["lifetime_years"])
-        rw = factor[pt]
+        cert = certified(c)
+        rw = factors[(c["test_cycle"], powertrain)]["factor"]
         for t in range(life):
-            surviving[key[0]][t] += units
-        for sc in scenarios:
-            ref = reference[(key[1], sc)]
+            surviving[(market, c["company"])][cohort_year + t] += units
+        for scenario in scenarios[market]:
+            trajectory = reference[(market, country, scenario)]
             cumulative = 0.0
             e_prod0 = 0.0
             for t in range(life):
-                e_ref, grid = ref[t]
-                if pt == "BEV":
-                    e_prod = float(cert) / 1000.0 * rw * grid * vkt
+                e_ref, grid = trajectory[t]
+                if powertrain == "BEV":
+                    e_prod = cert / 1000.0 * rw * grid * vkt
                 else:
-                    e_prod = float(cert) * rw / 1000.0 * vkt
+                    e_prod = cert * rw / 1000.0 * vkt
                 if t == 0:
                     e_prod0 = e_prod
                 gap = e_ref - e_prod
                 cumulative += gap
-                annual[(key[0], sc)][t] += gap * units / 1000.0
+                annual[(market, c["company"], scenario)][cohort_year + t] += gap * units / 1000.0
             cells.append(
                 {
-                    **base,
-                    "scenario": sc,
-                    "cohort_year": int(s["cohort_year"]),
+                    **identity,
+                    "scenario": scenario,
                     "units": units,
                     "lifetime_years": life,
                     "vkt_km": round(vkt, 3),
                     "vkt_tier": p["vkt_tier"],
+                    "test_cycle": c["test_cycle"],
                     "real_world_factor": rw,
                     "e_prod_year0_kgco2e": round(e_prod0, 4),
-                    "e_ref_year0_kgco2e": round(ref[0][0], 4),
+                    "e_ref_year0_kgco2e": round(trajectory[0][0], 4),
                     "ti_per_vehicle_kgco2e": round(cumulative, 4),
                     "ti_tco2e": round(cumulative * units / 1000.0, 4),
                 }
@@ -158,54 +200,123 @@ def main() -> None:
 
     cells.sort(
         key=lambda r: tuple(
-            str(r[k]) for k in ("company", "scenario", "destination", "model", "powertrain")
+            str(r[k])
+            for k in ("market", "company", "scenario", "destination", "model", "powertrain")
         )
     )
-    with OUT_CELLS.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=CELL_FIELDS)
-        w.writeheader()
-        w.writerows(cells)
+    write_csv(OUT_CELLS, CELL_FIELDS, cells)
 
-    year0 = int(cells[0]["cohort_year"]) if cells else 0
-    annual_rows = [
-        {
-            "company": c,
-            "scenario": sc,
-            "t": t,
-            "calendar_year": year0 + t,
-            "surviving_vehicles": int(surviving[c][t]),
-            "ti_tco2e": round(v, 4),
-        }
-        for (c, sc), series in sorted(annual.items())
-        for t, v in sorted(series.items())
-    ]
-    with OUT_ANNUAL.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=ANNUAL_FIELDS)
-        w.writeheader()
-        w.writerows(annual_rows)
+    annual_rows: list[dict[str, object]] = []
+    for (market, company, scenario), series in sorted(annual.items()):
+        year0 = min(series)
+        for calendar_year, value in sorted(series.items()):
+            annual_rows.append(
+                {
+                    "market": market,
+                    "company": company,
+                    "scenario": scenario,
+                    "t": calendar_year - year0,
+                    "calendar_year": calendar_year,
+                    "surviving_vehicles": int(surviving[(market, company)][calendar_year]),
+                    "ti_tco2e": round(value, 4),
+                }
+            )
+    write_csv(OUT_ANNUAL, ANNUAL_FIELDS, annual_rows)
 
     withheld.sort(
-        key=lambda r: tuple(str(r[k]) for k in ("company", "powertrain", "destination", "model"))
+        key=lambda r: tuple(
+            str(r[k]) for k in ("market", "company", "powertrain", "destination", "model")
+        )
     )
-    with OUT_WITHHELD.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=WITHHELD_FIELDS)
-        w.writeheader()
-        w.writerows(withheld)
+    write_csv(OUT_WITHHELD, WITHHELD_FIELDS, withheld)
 
-    for c in sorted({str(r["company"]) for r in cells}):
-        mine = [r for r in cells if r["company"] == c]
-        totals = {
-            sc: sum(float(r["ti_tco2e"]) for r in mine if r["scenario"] == sc) for sc in scenarios
-        }
-        covered = sum(int(r["units"]) for r in mine if r["scenario"] == scenarios[0])
-        held = sum(int(r["units"]) for r in withheld if r["company"] == c)
+    exclusions = build_exclusions(params, cells)
+    write_csv(OUT_EXCLUSIONS, EXCLUSION_FIELDS, exclusions)
+
+    report(cells, withheld, exclusions, scenarios)
+
+
+def build_exclusions(
+    params: dict[tuple[str, str], dict[str, str]], cells: list[dict[str, object]]
+) -> list[dict[str, object]]:
+    """One row per company x market x scenario that the market publishes no benchmark for.
+
+    The reference step records the excluded scenarios on the destination parameters; this turns
+    that flag into an explicit published row carrying the units it affects, so a missing
+    scenario is never a silent gap in the result tables.
+
+    Args:
+        params: (market, country) -> destination parameters.
+        cells: Priced cells, used for the affected unit counts and cohort years.
+
+    Returns:
+        Exclusion rows sorted by market, company, scenario.
+    """
+    reasons: dict[str, dict[str, str]] = defaultdict(dict)
+    for (market, _country), p in params.items():
+        for entry in filter(None, p["scenario_exclusion_reason"].split(" | ")):
+            scenario, _, reason = entry.partition(": ")
+            reasons[market][scenario] = reason
+        for scenario in filter(None, p["scenarios_excluded"].split(";")):
+            reasons[market].setdefault(scenario, "no rate published for this scenario")
+    rows: list[dict[str, object]] = []
+    for market, per_scenario in reasons.items():
+        priced = [c for c in cells if c["market"] == market]
+        companies = sorted({str(c["company"]) for c in priced})
+        first = sorted({str(c["scenario"]) for c in priced})[:1]
+        for company in companies:
+            mine = [c for c in priced if c["company"] == company and c["scenario"] in first]
+            for scenario, reason in sorted(per_scenario.items()):
+                rows.append(
+                    {
+                        "market": market,
+                        "company": company,
+                        "scenario": scenario,
+                        "cohort_year": min(int(str(c["cohort_year"])) for c in mine)
+                        if mine
+                        else None,
+                        "units_affected": sum(int(str(c["units"])) for c in mine),
+                        "reason": reason,
+                    }
+                )
+    rows.sort(key=lambda r: (str(r["market"]), str(r["company"]), str(r["scenario"])))
+    return rows
+
+
+def report(
+    cells: list[dict[str, object]],
+    withheld: list[dict[str, object]],
+    exclusions: list[dict[str, object]],
+    scenarios: dict[str, list[str]],
+) -> None:
+    """Print one line per company x market plus the file sizes."""
+    for market in sorted(scenarios):
+        for company in sorted({str(c["company"]) for c in cells if c["market"] == market}):
+            mine = [c for c in cells if c["market"] == market and c["company"] == company]
+            totals = {
+                s: sum(float(str(c["ti_tco2e"])) for c in mine if c["scenario"] == s)
+                for s in scenarios[market]
+            }
+            covered = sum(
+                int(str(c["units"])) for c in mine if c["scenario"] == scenarios[market][0]
+            )
+            held = sum(
+                int(str(w["units"]))
+                for w in withheld
+                if w["market"] == market and w["company"] == company
+            )
+            print(
+                f"{market} {company}: covered {covered:,} units, withheld {held:,}; TI tCO2e "
+                + ", ".join(f"{s} {v:,.0f}" for s, v in totals.items())
+            )
+    for e in exclusions:
         print(
-            f"{c}: covered {covered:,} units, withheld {held:,}; TI tCO2e "
-            + ", ".join(f"{sc} {v:,.0f}" for sc, v in totals.items())
+            f"{e['market']} {e['company']} {e['scenario']}: excluded, "
+            f"{int(str(e['units_affected'])):,} units affected"
         )
     print(
-        f"{OUT_CELLS.relative_to(REPO)}: {len(cells)} rows; {OUT_ANNUAL.name}: "
-        f"{len(annual_rows)}; {OUT_WITHHELD.name}: {len(withheld)}"
+        f"{OUT_CELLS.relative_to(REPO)}: {len(cells)} rows; {OUT_WITHHELD.name}: "
+        f"{len(withheld)}; {OUT_EXCLUSIONS.name}: {len(exclusions)}"
     )
 
 

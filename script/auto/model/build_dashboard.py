@@ -54,8 +54,9 @@ DATASET_ORDER = (
 
 #: Model step order (whitepaper steps 3, 4, 4b, 5), matched on output table-name prefixes.
 MODEL_STEPS: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ("3a cohorts", ("cohorts",)),
     ("3 reference", ("destination_parameters", "reference_trajectories")),
-    ("4 impact", ("ti_by_model", "ti_annual", "ti_withheld")),
+    ("4 impact", ("ti_by_model", "ti_annual", "ti_withheld", "ti_exclusions")),
     ("4b crossover and sensitivity", ("ti_crossover", "ti_sensitivity")),
     ("5 aggregates and data quality", ("ti_country", "ti_powertrain", "ti_company", "ti_data")),
 )
@@ -65,8 +66,8 @@ MODEL_STEPS: tuple[tuple[str, tuple[str, ...]], ...] = (
 DEFAULT_PIVOT = {
     "agg": "sum",
     "cols": "scenario",
-    "rows": ["company", "powertrain", "model"],
-    "table": "ti_by_model_eu27",
+    "rows": ["market", "company", "powertrain", "model"],
+    "table": "ti_by_model",
     "vals": ["ti_tco2e"],
 }
 
@@ -491,9 +492,9 @@ const state = {
   table: M.default.table,
   pivot: defaultPivot(M.default.table),
   browse: {page: 0, sort: null, dir: 'asc', q: ''},
-  sql: {text: 'SELECT company, powertrain, model, scenario,\n'
+  sql: {text: 'SELECT market, company, powertrain, model, scenario,\n'
         + '       SUM(units) AS units, SUM(ti_tco2e) AS ti_tco2e\n'
-        + '  FROM ti_by_model_eu27\n GROUP BY 1, 2, 3, 4\n ORDER BY 1, 2, 3, 4'},
+        + '  FROM ti_by_model\n GROUP BY 1, 2, 3, 4, 5\n ORDER BY 1, 2, 3, 4, 5'},
   tsv: ''
 };
 

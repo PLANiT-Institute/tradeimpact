@@ -1,14 +1,19 @@
 """Step 5 — aggregate the per-cell lifetime TI to importer country and exporter company.
 
-Input   data/auto/output/ti_by_model_eu27.csv
-Outputs data/auto/output/ti_country_eu27.csv     company x destination x scenario
-        data/auto/output/ti_powertrain_eu27.csv  company x powertrain x scenario
-        data/auto/output/ti_company_eu27.csv     company x scenario, with the decomposition check
+Every roll-up is per company **x market**: EU27 and US cohorts rest on different sales bases,
+different test cycles and different benchmarks, so they are never summed into one figure.
+
+Input   data/auto/output/ti_by_model.csv, ti_annual.csv, ti_withheld.csv, ti_exclusions.csv
+Outputs data/auto/output/ti_country.csv     company x market x destination x scenario
+        data/auto/output/ti_powertrain.csv  company x market x powertrain x scenario
+        data/auto/output/ti_company.csv     company x market x scenario, with the decomposition
+                                            check and one explicit row per excluded scenario
 
 Algorithm (whitepaper §3.6-3.7):
-    $$ TI_{firm,S} = \\sum_{c}\\sum_{p} TI_{c,p,S},\\qquad
-       \\sum_c TI_{c,S} = \\sum_p TI_{p,S} = TI_{firm,S} $$
-    ASCII: total = sum over destinations = sum over powertrains (identity checked to 1e-6 rel).
+    $$ TI_{firm,m,S} = \\sum_{c}\\sum_{p} TI_{m,c,p,S},\\qquad
+       \\sum_c TI_{m,c,S} = \\sum_p TI_{m,p,S} = TI_{firm,m,S} $$
+    ASCII: total = sum over destinations = sum over powertrains, within one market
+           (identity checked to 1e-9 relative, and against the annual flow to 1e-6).
     Per-vehicle values are units-weighted means (kgCO2e per covered vehicle).
 
 Run from the repository root:  .venv/bin/python script/auto/model/aggregate_country.py
@@ -16,25 +21,29 @@ Run from the repository root:  .venv/bin/python script/auto/model/aggregate_coun
 
 from __future__ import annotations
 
-import csv
 from collections import defaultdict
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[3]
-OUT_DIR = REPO / "data" / "auto" / "output"
-CELLS = OUT_DIR / "ti_by_model_eu27.csv"
-WITHHELD = OUT_DIR / "ti_withheld_eu27.csv"
-OUT_COUNTRY = OUT_DIR / "ti_country_eu27.csv"
-OUT_POWERTRAIN = OUT_DIR / "ti_powertrain_eu27.csv"
-OUT_COMPANY = OUT_DIR / "ti_company_eu27.csv"
+from model_io import OUT_DIR, read_csv, write_csv
+
+CELLS = OUT_DIR / "ti_by_model.csv"
+WITHHELD = OUT_DIR / "ti_withheld.csv"
+ANNUAL = OUT_DIR / "ti_annual.csv"
+EXCLUSIONS = OUT_DIR / "ti_exclusions.csv"
+OUT_COUNTRY = OUT_DIR / "ti_country.csv"
+OUT_POWERTRAIN = OUT_DIR / "ti_powertrain.csv"
+OUT_COMPANY = OUT_DIR / "ti_company.csv"
 
 # Summands are 4-dp-rounded values summed in different orders; the true float error is
 # ~1e-10 relative, so anything looser than this would let a dropped small cell through.
 IDENTITY_TOL = 1e-9
-ANNUAL = OUT_DIR / "ti_annual_eu27.csv"
+ANNUAL_TOL = 1e-6
+
+REPORTED, EXCLUDED = "reported", "excluded"
 
 GROUP_FIELDS = [
     "company",
+    "market",
     "key",
     "scenario",
     "units",
@@ -44,8 +53,10 @@ GROUP_FIELDS = [
 ]
 COMPANY_FIELDS = [
     "company",
+    "market",
     "scenario",
     "cohort_year",
+    "status",
     "covered_units",
     "withheld_units",
     "covered_share",
@@ -53,6 +64,7 @@ COMPANY_FIELDS = [
     "ti_per_vehicle_kgco2e",
     "direction",
     "decomposition_identity_holds",
+    "exclusion_reason",
 ]
 
 
@@ -62,18 +74,19 @@ def direction(value: float) -> str:
 
 
 def group(cells: list[dict[str, str]], by: str) -> list[dict[str, object]]:
-    """Sum TI and units over ``by`` (destination or powertrain) per company x scenario."""
-    ti: dict[tuple[str, str, str], float] = defaultdict(float)
-    units: dict[tuple[str, str, str], int] = defaultdict(int)
+    """Sum TI and units over ``by`` (destination or powertrain) per company x market x scenario."""
+    ti: dict[tuple[str, str, str, str], float] = defaultdict(float)
+    units: dict[tuple[str, str, str, str], int] = defaultdict(int)
     for c in cells:
-        k = (c["company"], c[by], c["scenario"])
+        k = (c["company"], c["market"], c[by], c["scenario"])
         ti[k] += float(c["ti_tco2e"])
         units[k] += int(c["units"])
     return [
         {
             "company": k[0],
-            "key": k[1],
-            "scenario": k[2],
+            "market": k[1],
+            "key": k[2],
+            "scenario": k[3],
             "units": units[k],
             "ti_tco2e": round(ti[k], 4),
             "ti_per_vehicle_kgco2e": round(ti[k] * 1000.0 / units[k], 4) if units[k] else None,
@@ -83,63 +96,63 @@ def group(cells: list[dict[str, str]], by: str) -> list[dict[str, object]]:
     ]
 
 
-def write(path: Path, fields: list[str], rows: list[dict[str, object]], key_name: str) -> None:
-    """Write rows, renaming the generic ``key`` column to its meaning."""
-    with path.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=[key_name if x == "key" else x for x in fields])
-        w.writeheader()
-        for r in rows:
-            w.writerow({(key_name if k == "key" else k): v for k, v in r.items()})
+def write_group(path: Path, rows: list[dict[str, object]], key_name: str) -> None:
+    """Write a grouped table, renaming the generic ``key`` column to its meaning."""
+    fields = [key_name if x == "key" else x for x in GROUP_FIELDS]
+    write_csv(
+        path, fields, [{(key_name if k == "key" else k): v for k, v in r.items()} for r in rows]
+    )
 
 
 def main() -> None:
-    """Aggregate and verify the decomposition identity for every company x scenario."""
-    with CELLS.open(newline="") as f:
-        cells = list(csv.DictReader(f))
-    with WITHHELD.open(newline="") as f:
-        withheld_units: dict[str, int] = defaultdict(int)
-        for r in csv.DictReader(f):
-            withheld_units[r["company"]] += int(r["units"])
+    """Aggregate and verify the decomposition identity for every company x market x scenario."""
+    cells = read_csv(CELLS)
+    withheld_units: dict[tuple[str, str], int] = defaultdict(int)
+    for r in read_csv(WITHHELD):
+        withheld_units[(r["company"], r["market"])] += int(r["units"])
     # Independent recomputation: the annual flow (eq 3.7) summed over years must equal the
     # cell totals (eq 3.5-3.6) — a different aggregation path, not a re-ordering of the same one.
-    with ANNUAL.open(newline="") as f:
-        annual_total: dict[tuple[str, str], float] = defaultdict(float)
-        for r in csv.DictReader(f):
-            annual_total[(r["company"], r["scenario"])] += float(r["ti_tco2e"])
+    annual_total: dict[tuple[str, str, str], float] = defaultdict(float)
+    for r in read_csv(ANNUAL):
+        annual_total[(r["company"], r["market"], r["scenario"])] += float(r["ti_tco2e"])
+    exclusions = read_csv(EXCLUSIONS)
 
     by_country = group(cells, "destination")
     by_powertrain = group(cells, "powertrain")
-    write(OUT_COUNTRY, GROUP_FIELDS, by_country, "destination")
-    write(OUT_POWERTRAIN, GROUP_FIELDS, by_powertrain, "powertrain")
+    write_group(OUT_COUNTRY, by_country, "destination")
+    write_group(OUT_POWERTRAIN, by_powertrain, "powertrain")
 
     company_rows: list[dict[str, object]] = []
-    for company in sorted({c["company"] for c in cells}):
-        for scenario in sorted({c["scenario"] for c in cells}):
-            mine = [c for c in cells if c["company"] == company and c["scenario"] == scenario]
+    for company, market in sorted({(c["company"], c["market"]) for c in cells}):
+        theirs = [c for c in cells if c["company"] == company and c["market"] == market]
+        held = withheld_units[(company, market)]
+        for scenario in sorted({c["scenario"] for c in theirs}):
+            mine = [c for c in theirs if c["scenario"] == scenario]
             total = sum(float(c["ti_tco2e"]) for c in mine)
             covered = sum(int(c["units"]) for c in mine)
             row_sum = sum(
-                float(r["ti_tco2e"])
+                float(str(r["ti_tco2e"]))
                 for r in by_country
-                if r["company"] == company and r["scenario"] == scenario
+                if (r["company"], r["market"], r["scenario"]) == (company, market, scenario)
             )
             col_sum = sum(
-                float(r["ti_tco2e"])
+                float(str(r["ti_tco2e"]))
                 for r in by_powertrain
-                if r["company"] == company and r["scenario"] == scenario
+                if (r["company"], r["market"], r["scenario"]) == (company, market, scenario)
             )
             scale = max(1.0, abs(total))
             holds = (
                 abs(row_sum - total) <= IDENTITY_TOL * scale
                 and abs(col_sum - total) <= IDENTITY_TOL * scale
-                and abs(annual_total[(company, scenario)] - total) <= 1e-6 * scale
+                and abs(annual_total[(company, market, scenario)] - total) <= ANNUAL_TOL * scale
             )
-            held = withheld_units[company]
             company_rows.append(
                 {
                     "company": company,
+                    "market": market,
                     "scenario": scenario,
-                    "cohort_year": mine[0]["cohort_year"],
+                    "cohort_year": min(int(c["cohort_year"]) for c in mine),
+                    "status": REPORTED,
                     "covered_units": covered,
                     "withheld_units": held,
                     "covered_share": round(covered / (covered + held), 6)
@@ -151,20 +164,44 @@ def main() -> None:
                     else None,
                     "direction": direction(total),
                     "decomposition_identity_holds": holds,
+                    "exclusion_reason": "",
                 }
             )
             if not holds:
-                raise SystemExit(f"decomposition identity fails for {company} {scenario}")
-    with OUT_COMPANY.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=COMPANY_FIELDS)
-        w.writeheader()
-        w.writerows(company_rows)
+                raise SystemExit(f"decomposition identity fails for {company} {market} {scenario}")
+        # An excluded scenario is published as its own row so the gap is never silent.
+        for e in exclusions:
+            if (e["company"], e["market"]) != (company, market):
+                continue
+            company_rows.append(
+                {
+                    "company": company,
+                    "market": market,
+                    "scenario": e["scenario"],
+                    "cohort_year": e["cohort_year"],
+                    "status": EXCLUDED,
+                    "covered_units": int(e["units_affected"]),
+                    "withheld_units": held,
+                    "covered_share": None,
+                    "ti_tco2e": None,
+                    "ti_per_vehicle_kgco2e": None,
+                    "direction": None,
+                    "decomposition_identity_holds": None,
+                    "exclusion_reason": e["reason"],
+                }
+            )
+    company_rows.sort(key=lambda r: (str(r["company"]), str(r["market"]), str(r["scenario"])))
+    write_csv(OUT_COMPANY, COMPANY_FIELDS, company_rows)
 
-    for r in company_rows:
+    for published in company_rows:
+        label = f"{published['company']} {published['market']} {published['scenario']}"
+        if published["status"] == EXCLUDED:
+            print(f"{label}: excluded (no benchmark)")
+            continue
         print(
-            f"{r['company']} {r['scenario']}: {float(r['ti_tco2e']):>14,.0f} tCO2e  "
-            f"({r['ti_per_vehicle_kgco2e']} kg/vehicle, {r['direction']}, "
-            f"covered {r['covered_share']:.1%})"
+            f"{label}: {float(str(published['ti_tco2e'])):>14,.0f} tCO2e  "
+            f"({published['ti_per_vehicle_kgco2e']} kg/vehicle, {published['direction']}, "
+            f"covered {float(str(published['covered_share'])):.1%})"
         )
     print(
         f"{OUT_COUNTRY.name}: {len(by_country)} rows; {OUT_POWERTRAIN.name}: {len(by_powertrain)}; "

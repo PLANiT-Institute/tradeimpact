@@ -41,29 +41,40 @@ data/auto/         one directory per dataset, each with:
                             per data type, pivot table, browse and read-only SQL (open from disk)
 script/auto/       all Python, one directory per dataset plus model/
   <dataset>/             extraction scripts: raw/ -> processed/
-  model/                 build_reference, build_ti, build_sensitivity, aggregate_country,
-                         build_data_quality, build_database, build_dashboard
+  model/                 build_cohorts, build_reference (EU27), build_reference_us, build_ti,
+                         build_sensitivity, aggregate_country, build_data_quality,
+                         build_database, build_dashboard
 archive/           the previous application build (engine, web, MCP, pipeline) — read-only
 ```
 
 Datasets: `sales`, `country_emissions`, `emission_targets`, `vehicle_usage`,
-`vehicle_technology`. Current result set: EU27 × 2024 × {Toyota, Honda, Hyundai, Kia}, all
-from one EEA registration query. The engine reproduces the previously published lifetime
-result exactly when fed the archived inputs; a review-driven fix to the distance derivation
-moved the totals 1–13 % (see `data/auto/output/method.md`, Verification).
+`vehicle_technology`. Current result set: Hyundai and Kia in the EU27 (2024 registrations)
+and the United States (the cohorts in the gathered IR workbooks). The engine reproduces the
+previously published EU27 result exactly when fed the archived inputs (see
+`data/auto/output/method.md`, Verification).
 
-| Exporter (EU27, 2024) | Registrations | Covered | S1 current | S2 committed | S3 1.5 °C |
+| Market, cohort | Exporter | Covered | S1 current | S2 committed | S3 1.5 °C |
 |---|---|---|---|---|---|
-| Hyundai | 429,936 | 95.4 % | −1.66 MtCO₂e | −3.82 | −8.00 |
-| Kia | 414,677 | 91.4 % | −1.52 | −3.49 | −7.37 |
+| EU27, 2024 registrations | Hyundai | 95.4 % | −1.66 MtCO₂e | −3.82 | −8.00 |
+| EU27, 2024 registrations | Kia | 91.4 % | −1.52 | −3.49 | −7.37 |
+| US, 2025 US-built sold in US | Hyundai | 91.5 % | **+1.53** | excluded (no NDC in force) | −4.80 |
+| US, Jan–Jun 2026 retail | Kia | 100 % | −0.76 | excluded (no NDC in force) | −8.53 |
 
 Negative = lifetime emissions above the destination's committed benchmark (lock-in
-liability). Withheld units (PHEV, FCEV, no certified value, and Luxembourg's 2,711 units
-whose national benchmark is implausible) are listed, not absorbed. Both brands have just
-under half their covered units in markets whose distance is an EU-average proxy (tier C:
-48.5 % and 48.2 %), so magnitudes are published but proxy-heavy (guideline §5.3 threshold
-50 %). Five methodological calls made on 2026-09-04 are recorded in
-`data/auto/output/method.md` and `claude-docs/log/README.md`.
+liability); positive = below it (contribution). EU27 and US are never summed: different sales
+bases, test cycles and benchmarks. Withheld units (PHEV, FCEV, no certified value, Luxembourg's
+implausible benchmark, the Genesis brand, Ioniq 9 without an EPA row) are listed, not absorbed.
+
+Read the US rows with their caveats: the Hyundai cohort is US-built cars only (Korean-built
+imports are not in the gathered file) and the Kia cohort is a half year; the US S1 benchmark
+is the all-light-duty fleet including pickups (217 gCO₂/km, declining 1.1 %/yr) with the
+segment ratio set to 1.0, which is why compact crossovers and hybrids sit below it — a
+segment-matched benchmark would lower or reverse Hyundai's S1 contribution; and models the IR
+files do not split by powertrain are priced as ICE centrally with an all-HEV bound
+(`ti_sensitivity.csv`, dimension `powertrain_mix`). The US S2 scenario is excluded because no
+NDC is in force; the exclusion is a row in `ti_company.csv` and `ti_exclusions.csv`, never a
+silent gap. EU27 magnitudes are proxy-heavy (48 % of covered units on an EU-average distance,
+guideline §5.3 threshold 50 %).
 
 ## Naming convention
 

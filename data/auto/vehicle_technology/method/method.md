@@ -67,7 +67,7 @@ Scripts in `script/auto/vehicle_technology/`; output `processed/vehicle_technolo
 Certified values stay certified in this dataset. The real-world correction is applied
 **once**, in the model step (`script/auto/model/build_ti.py`), reading the factor and its
 range per powertrain from `method/real_world_correction.csv`; the factor used is recorded on
-every result row (`real_world_factor` in `ti_by_model_eu27.csv`), so it can never be applied
+every result row (`real_world_factor` in `ti_by_model.csv`), so it can never be applied
 twice.
 
 ## Rules

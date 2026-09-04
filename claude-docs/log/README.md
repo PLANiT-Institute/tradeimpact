@@ -99,3 +99,13 @@ premise and sends work back is the process working; the entry states the trigger
 - EPA label values are 5-cycle adjusted, so the real-world factor for the EPA cycle is 1.0
   (`real_world_correction.csv` keyed on test cycle).
 - Australia deferred by the lead; its inputs stay in the database.
+
+## 2026-09-04 — United States built for Hyundai and Kia
+
+- Model generalised: `build_cohorts.py` (sales × technology per market), `build_reference_us.py`,
+  generic outputs with a `market` column, US S2 carried as an explicit exclusion row. EU27
+  headline unchanged to the last digit; the sensitivity now withholds Luxembourg like the headline.
+- US results: Hyundai S1 +1.53 MtCO2e (BEV +1.57, HEV +0.73, ICE −0.78), S3 −4.80; Kia S1 −0.76,
+  S3 −8.53. Caveats recorded in README and output/method.md: cohorts from the lead's IR workbooks
+  (Hyundai US-built only, Kia half year), all-light-duty benchmark with segment ratio 1.0, unsplit
+  models priced as ICE with an all-HEV bound, EPA label values uncorrected.
