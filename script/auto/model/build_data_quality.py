@@ -54,6 +54,9 @@ FIELDS = [
     "lifetime_t_central_years",
     "scenarios_reported",
     "scenarios_excluded",
+    "countries_covered",
+    "countries",
+    "countries_withheld",
     "markets_covered",
     "markets_vkt_tier_a",
     "markets_vkt_tier_b",
@@ -165,6 +168,11 @@ def main() -> None:
                         and e["market"] == market
                         and int(e["cohort_year"]) == cohort_year
                     )
+                ),
+                "countries_covered": len(countries),
+                "countries": ";".join(sorted(countries)),
+                "countries_withheld": ";".join(
+                    sorted({w["destination"] for w in held} - countries)
                 ),
                 "markets_covered": len(countries),
                 "markets_vkt_tier_a": vkt_tiers.get("A", 0),

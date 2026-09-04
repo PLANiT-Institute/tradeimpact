@@ -1,0 +1,13 @@
+company,cohort_year,origin,body,units,source_id,source_file
+nissan,2025,north_american_produced,total,760213,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2025,north_american_produced,car,301819,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2025,north_american_produced,truck,458394,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2025,import,total,113094,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2025,import,car,5526,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2025,import,truck,107568,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2024,north_american_produced,total,728962,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2024,north_american_produced,car,321314,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2024,north_american_produced,truck,407648,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2024,import,total,136976,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2024,import,car,3431,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,2024,import,truck,133545,nissan_us_sales_release,nissan_us_sales_2025.csv

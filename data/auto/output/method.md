@@ -26,8 +26,9 @@ different test cycles and different national benchmarks.
 | `ti_country.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × destination × scenario: units, `ti_tco2e`, per-vehicle, direction |
 | `ti_powertrain.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × powertrain × scenario |
 | `ti_company.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × scenario: `status` (reported / excluded), covered/withheld units, total, per-vehicle, direction, decomposition identity check, exclusion reason |
+| `ti_source_reconciliation.csv` | 5d | `build_reconciliation.py` | company × destination × cohort year × source file: units, basis and which side of the market it counts, whether the cohort was built from it, the brands a group figure covers, and the like-for-like spread against the file used |
 | `ti_coverage.csv` | 5c | `build_coverage.py` | company × destination (every destination in the market-side sales files, worldwide) × cohort year × basis: `destination_group` (EU27, US, the company's home country KR or JP, IN, others), `home_country`, units, priced units, withheld units, status (`priced`, `withheld`, `no_benchmark`, `plant_side_only`, `region_unpriced`, `destination_unknown`), market — the coverage picture a reader filters countries from |
-| `ti_data_quality.csv` | 5b | `build_data_quality.py` | company × market: analysis level, benchmark method, sales basis, test cycles, covered/withheld units, tier-C unit share and the `directional_only` flag (guideline §5.3, threshold 50 %), central lifetime, scenarios reported and excluded, markets by distance tier, withheld reasons, coverage notes, warnings |
+| `ti_data_quality.csv` | 5b | `build_data_quality.py` | company × market × cohort year, including `countries` (the destination codes covered), `countries_covered`, `countries_withheld` and `covered_share` (the sales coverage): analysis level, benchmark method, sales basis, test cycles, covered/withheld units, tier-C unit share and the `directional_only` flag (guideline §5.3, threshold 50 %), central lifetime, scenarios reported and excluded, markets by distance tier, withheld reasons, coverage notes, warnings |
 
 `cohorts.csv` carries a `variant` column. `central` is the published cohort; every other value
 is a sensitivity variant of the same cell (currently `all_hev`, see *United States*). Only
@@ -255,6 +256,51 @@ Nissan's at −13,509. The reason is the cars underneath: Toyota's hybrid fleet 
 105.7 gCO₂/km (Yaris 90.9, Corolla 106.2, Yaris Cross 104.4) while Nissan's averages
 132.0 (Qashqai 134.5, X-Trail 143.8). Nissan's European hybrid is a larger crossover, so the
 same powertrain label carries a quarter more carbon per kilometre.
+
+## United States, Toyota and Nissan (added 2026-09-04)
+
+Both companies publish a US sales table by model, so both are priced on their own release rather
+than on an investor summary.
+
+**Toyota** prints models by division and, in a second table, model by powertrain. The two are an
+overlay, not two sets of rows: the Camry appears in both because every Camry sold is a hybrid, so
+combustion volume is the model total minus its electrified rows and never a sum of the tables.
+The extractor enforces that, checks each division's models against the published division total,
+and keeps the small difference the release itself leaves unprinted (6 units in 2025, 15 in 2024)
+as its own row rather than dropping it. Lexus is held out as its own company, exactly as Genesis
+is held out of Hyundai. Result: 2,111,810 covered units in 2025 (98.3 %), S1 +8.07 MtCO₂e,
+S3 −30.50; 2024 +5.53 and −29.92. The large current-path contribution is the same segment-ratio
+artefact described above, amplified: Toyota's cohort is hybrid-heavy and the US benchmark is the
+all-light-duty fleet including pickups.
+
+**Nissan** prints models but no powertrain. It needs no assumption anyway: its US line-up in
+these years is combustion except the LEAF and the Ariya, which the EPA certification data
+confirms, so every nameplate is priced explicitly. Infiniti is held out as its own company.
+Result: 873,293 covered units in 2025 (100.0 %), S1 +1.36 MtCO₂e, S3 −14.46. Nissan also
+publishes the split of its US volumes into North American production and imports
+(`us_release_origin_split.csv`, 760,213 against 113,094 in 2025), which no other company in
+scope discloses.
+
+## A company against its own second publication
+
+`ti_source_reconciliation.csv` puts every source held for the same company, destination and year
+side by side, and compares a group figure against the same set of brands rather than against a
+narrower cohort. All five overlaps agree exactly:
+
+| Company | Year | Cohort source | Second publication | Covers | Spread |
+|---|---|---|---|---|---|
+| Toyota | 2025 | 2,147,811 (Toyota) + 370,260 (Lexus) | 2,518,071 group workbook | Toyota, Lexus | 0.0 % |
+| Nissan | 2025 | 873,307 (Nissan) + 52,846 (Infiniti) | 926,153 group release | Nissan, Infiniti | 0.0 % |
+| Hyundai | 2024 | 836,802 investor sheet | 836,802 US subsidiary release | Hyundai | 0.0 % |
+| Genesis | 2024 | 75,003 investor sheet | 75,003 US subsidiary release | Genesis | 0.0 % |
+| Kia | 2024 | 796,488 sales workbook | 796,488 press release | Kia | 0.0 % |
+
+So the Korean makers stand on the same class of source as the Japanese ones: a market-side count
+the company itself published. Kia's is its US newsroom workbook, and Hyundai's is its
+investor-relations sheet because the US subsidiary's release index is script-rendered and offers
+no file. The reconciliation shows the choice costs nothing: the investor sheet and the subsidiary
+release carry the same number. What differs between publications is the brand boundary, not the
+data, and that is why the table records which brands each figure covers.
 
 ## Data-quality tiers (whitepaper §5.1, every value flagged)
 

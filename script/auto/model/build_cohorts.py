@@ -58,6 +58,8 @@ SALES_US = (
     DATA / "sales" / "processed" / "sales_hyundai_us.csv",
     DATA / "sales" / "processed" / "sales_kia_us.csv",
     DATA / "sales" / "processed" / "sales_kia_ir_2026.csv",
+    DATA / "sales" / "processed" / "sales_toyota_us.csv",
+    DATA / "sales" / "processed" / "sales_nissan_us.csv",
 )
 SHARES_US = DATA / "vehicle_technology" / "processed" / "epa_trends_powertrain_share_my2024.csv"
 TECH_EU27 = DATA / "vehicle_technology" / "processed" / "vehicle_technology_eea_2024.csv"
@@ -77,7 +79,10 @@ EU27, US, KR = "EU27", "US", "KR"
 UNSPLIT_RULE = "kr_unsplit_central_ice"
 CENTRAL, ALL_HEV = "central", "all_hev"
 SHARE_RULE = "epa_share_my2024"
+STATED_RULE = "stated"
 OUT_OF_SCOPE = "out_of_scope"
+#: Rules that hold their volume out of the cohort with the map row's own reason.
+HELD_RULES = (OUT_OF_SCOPE, "unallocated")
 HEV = "HEV"
 
 #: Powertrains that carry no defensible product intensity anywhere yet (guideline A-06).
@@ -411,8 +416,16 @@ def build_us(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
                 hold(s, s.get("powertrain", ""), units, NO_MAP_ROW, note)
                 continue
             rule = m["powertrain_rule"]
-            if rule == OUT_OF_SCOPE:
+            if rule in HELD_RULES:
                 hold(s, "", units, f"{rule}: {m['note']}", note)
+                continue
+            if rule == STATED_RULE:
+                # The release prints the powertrain on the sales row itself (Toyota's US
+                # electrified table), so the row governs and the map only resolves the name.
+                if not s["powertrain"]:
+                    hold(s, "", units, f"{STATED_RULE}: the sales row states no powertrain", note)
+                    continue
+                price(s, m, s["powertrain"], rule, note)
                 continue
             if rule != SHARE_RULE:
                 price(s, m, m["powertrain"], rule, note)

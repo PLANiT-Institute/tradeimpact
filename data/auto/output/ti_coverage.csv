@@ -108,6 +108,8 @@ nissan,EU27,no,RO,country,2024,2024-01..2024-12,registrations,1205,1202,3,priced
 nissan,EU27,no,SE,country,2024,2024-01..2024-12,registrations,3506,3506,0,priced,EU27,eea_nissan_2024_final.json,
 nissan,EU27,no,SI,country,2024,2024-01..2024-12,registrations,969,969,0,priced,EU27,eea_nissan_2024_final.json,
 nissan,EU27,no,SK,country,2024,2024-01..2024-12,registrations,1736,1736,0,priced,EU27,eea_nissan_2024_final.json,
+nissan,US,no,US,country,2024,2024-01..2024-12,brand_total_sales,865938,864996,942,priced,US,nissan_us_sales_2025.csv,no EPA technology row for Maxima ICE at or before model year
+nissan,US,no,US,country,2025,2025-01..2025-12,brand_total_sales,873307,873293,14,priced,US,nissan_us_sales_2025.csv,no EPA technology row for Maxima ICE at or before model year
 toyota,EU27,no,AT,country,2024,2024-01..2024-12,registrations,11120,10768,352,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
 toyota,EU27,no,BE,country,2024,2024-01..2024-12,registrations,23650,22722,928,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; the registration dataset reports no certified intensity for 
 toyota,EU27,no,BG,country,2024,2024-01..2024-12,registrations,5253,4961,292,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
@@ -137,3 +139,5 @@ toyota,EU27,no,RO,country,2024,2024-01..2024-12,registrations,12799,12213,586,pr
 toyota,EU27,no,SE,country,2024,2024-01..2024-12,registrations,20143,18656,1487,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
 toyota,EU27,no,SI,country,2024,2024-01..2024-12,registrations,3394,3291,103,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
 toyota,EU27,no,SK,country,2024,2024-01..2024-12,registrations,9212,9031,181,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,US,no,US,country,2024,2024-01..2024-12,brand_total_sales,1986954,1942640,44314,priced,US,tmna_us_sales_2025.csv,no EPA technology row for Sequoia ICE at or before model yea; no EPA technology row for Sienna ICE at or before model year; no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; unallocated
+toyota,US,no,US,country,2025,2025-01..2025-12,brand_total_sales,2147811,2111810,36001,priced,US,tmna_us_sales_2025.csv,no EPA technology row for Sienna ICE at or before model year; no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; unallocated

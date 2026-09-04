@@ -1,0 +1,43 @@
+company,destination,destination_level,origin,cohort_year,period,model,powertrain,units,basis,source_id,source_file
+nissan,US,country,,2025,2025-01..2025-12,Versa,,51310,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Sentra,,152578,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Altima,,93268,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Maxima,,14,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Z,,5487,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,GT-R,,39,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Kicks,,103575,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,LEAF,BEV,5149,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Frontier,,65232,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Titan,,2043,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Pathfinder,,101598,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Armada,,17465,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Rogue,,217896,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Ariya,BEV,14906,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2025,2025-01..2025-12,Murano,,42747,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2025,2025-01..2025-12,Infiniti Q50,,529,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2025,2025-01..2025-12,Infiniti Q60,,0,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2025,2025-01..2025-12,Infiniti QX50,,5901,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2025,2025-01..2025-12,Infiniti QX55,,2288,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2025,2025-01..2025-12,Infiniti QX60,,30538,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2025,2025-01..2025-12,Infiniti QX80,,13590,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Versa,,42589,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Sentra,,152659,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Altima,,113898,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Maxima,,942,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Z,,3164,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,GT-R,,267,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Kicks,,77356,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,LEAF,BEV,11226,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Frontier,,68155,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Titan,,14662,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Pathfinder,,80915,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Armada,,15267,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Rogue,,245724,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Ariya,BEV,19798,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+nissan,US,country,,2024,2024-01..2024-12,Murano,,19316,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2024,2024-01..2024-12,Infiniti Q50,,5428,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2024,2024-01..2024-12,Infiniti Q60,,52,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2024,2024-01..2024-12,Infiniti QX50,,10722,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2024,2024-01..2024-12,Infiniti QX55,,3721,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2024,2024-01..2024-12,Infiniti QX60,,27808,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv
+infiniti,US,country,,2024,2024-01..2024-12,Infiniti QX80,,10339,brand_total_sales,nissan_us_sales_release,nissan_us_sales_2025.csv

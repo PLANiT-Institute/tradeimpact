@@ -72,6 +72,10 @@ previously published EU27 result exactly when fed the archived inputs (see
 | EU27, 2024 registrations | Hyundai | 95.4 % | −1.66 | −3.82 | −8.00 |
 | EU27, 2024 registrations | Kia | 91.4 % | −1.52 | −3.49 | −7.37 |
 | EU27, 2024 registrations | Nissan | 99.8 % | −1.44 | −2.38 | −4.43 |
+| US, 2024 brand sales | Toyota | 97.8 % | **+5.53** | excluded (no NDC in force) | −29.92 |
+| US, 2025 brand sales | Toyota | 98.3 % | **+8.07** | excluded (no NDC in force) | −30.50 |
+| US, 2024 brand sales | Nissan | 99.9 % | **+2.26** | excluded (no NDC in force) | −13.32 |
+| US, 2025 brand sales | Nissan | 100.0 % | **+1.36** | excluded (no NDC in force) | −14.46 |
 | US, 2024 brand sales | Hyundai | 99.0 % | **+1.56** | excluded (no NDC in force) | −13.13 |
 | US, 2025 brand sales | Hyundai | 98.4 % | **+1.50** | excluded (no NDC in force) | −14.20 |
 | US, 2024 brand sales | Kia | 98.0 % | **+1.01** | excluded (no NDC in force) | −12.77 |
@@ -80,6 +84,13 @@ previously published EU27 result exactly when fed the archived inputs (see
 | Korea, 2024 domestic sales | Hyundai | 99.3 % | **+1.89** | −0.96 | −2.49 |
 | Korea, 2025 domestic sales | Hyundai | 98.8 % | **+2.17** | −0.92 | −2.56 |
 | Korea, Jan–Jun 2026 retail | Kia | 93.3 % | **+1.30** | −0.53 | −1.50 |
+
+The `Covered` column is the sales coverage: units carrying a result over units in the source.
+Every EU27 row covers 26 of the 27 member states (Luxembourg is withheld, its fleet intensity
+being implausible); every US and Korean row covers one country. `ti_data_quality.csv` lists the
+country codes themselves in `countries`, with `countries_covered` and `countries_withheld`
+beside them, and `ti_source_reconciliation.csv` puts every source a company published for the
+same cell side by side.
 
 Negative = lifetime emissions above the destination's committed benchmark (lock-in
 liability); positive = below it (contribution). Markets are never summed: different sales
