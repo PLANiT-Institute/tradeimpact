@@ -48,6 +48,8 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
+from model_io import LIGHT_DUTY, PASSENGER_CAR
+
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
 COMPANIES = DATA / "sales" / "method" / "companies.csv"
@@ -104,6 +106,7 @@ COHORT_FIELDS = [
     "market",
     "company",
     "destination",
+    "segment",
     "cohort_year",
     "period",
     "model",
@@ -123,6 +126,7 @@ WITHHELD_FIELDS = [
     "market",
     "company",
     "destination",
+    "segment",
     "cohort_year",
     "model",
     "powertrain",
@@ -222,6 +226,7 @@ def build_eu27(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[
         note = coverage_note(s["basis"], s["period"])
         identity = {
             "market": EU27,
+            "segment": PASSENGER_CAR,
             "company": s["company"],
             "destination": s["destination"],
             "cohort_year": int(s["cohort_year"]),
@@ -374,6 +379,7 @@ def build_us(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
         withheld.append(
             {
                 "market": US,
+                "segment": LIGHT_DUTY,
                 "company": s["company"],
                 "destination": US,
                 "cohort_year": int(s["cohort_year"]),
@@ -486,6 +492,7 @@ def us_cohort_row(
         return None
     return {
         "market": US,
+        "segment": LIGHT_DUTY,
         "company": s["company"],
         "destination": US,
         "cohort_year": cohort_year,
@@ -509,9 +516,11 @@ def us_cohort_row(
     }
 
 
-def kr_technology(tech: list[dict[str, str]]) -> dict[tuple[str, str, str], dict[str, str]]:
-    """{(company, model, powertrain): KEA row} for the Korean market."""
-    return {(r["company"], r["model"], r["powertrain"]): r for r in tech}
+def kr_technology(
+    tech: list[dict[str, str]],
+) -> dict[tuple[str, str, str, str], dict[str, str]]:
+    """{(company, segment, model, powertrain): KEA row}: one nameplate can sit in two classes."""
+    return {(r["company"], r["segment"], r["model"], r["powertrain"]): r for r in tech}
 
 
 def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
@@ -539,6 +548,7 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
         withheld.append(
             {
                 "market": KR,
+                "segment": segment,
                 "company": s["company"],
                 "destination": KR,
                 "cohort_year": int(s["cohort_year"]),
@@ -553,7 +563,7 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
     def row(
         s: dict[str, str], model: str, pt: str, rule: str, note: str, variant: str = CENTRAL
     ) -> dict[str, object] | None:
-        t = tech.get((s["company"], model, pt))
+        t = tech.get((s["company"], segment, model, pt))
         if t is None:
             return None
         certified = t["energy_wh_km"] if pt == "BEV" else t["tailpipe_gco2_km"]
@@ -561,6 +571,7 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
             return None
         return {
             "market": KR,
+            "segment": segment,
             "company": s["company"],
             "destination": KR,
             "cohort_year": int(s["cohort_year"]),
@@ -589,6 +600,7 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
             note = coverage_note(s["basis"], s["period"])
             base = s["model"].split(" (")[0].strip()
             m = labels.get((s["company"], base))
+            segment = (m or {}).get("segment") or PASSENGER_CAR
             if m is None:
                 hold(s, s.get("powertrain", ""), NO_KR_LABEL, note)
                 continue

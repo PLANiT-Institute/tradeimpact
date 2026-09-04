@@ -41,7 +41,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from model_io import PARAM_FIELDS, REF_FIELDS, latest, read_csv, read_long, write_csv
+from model_io import LIGHT_DUTY, PARAM_FIELDS, REF_FIELDS, latest, read_csv, read_long, write_csv
 
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
@@ -219,6 +219,7 @@ def main() -> None:
     params = {
         "market": MARKET,
         "country": COUNTRY,
+        "segment": LIGHT_DUTY,
         "cohort_year": year0,
         "vkt_km": vkt,
         "vkt_low_km": None,
@@ -230,18 +231,18 @@ def main() -> None:
             f"{cap}; the cohorts they price were sold in {year0} and later, and the "
             "trajectories are indexed on t = years after sale, not on calendar year."
         ),
-        "car_stock": stock_same_year[1],
-        "car_stock_year": stock_same_year[0],
-        "car_co2_kt": co2_kt,
-        "car_co2_year": co2_year,
+        "stock": stock_same_year[1],
+        "stock_year": stock_same_year[0],
+        "co2_kt": co2_kt,
+        "co2_year": co2_year,
         "fleet_intensity_gco2_km": fleet_intensity,
         "fleet_intensity_tier": fleet_tier,
         "grid_gco2_kwh": grid[1],
         "grid_year": grid[0],
         "grid_tier": GRID_TIER,
-        "mean_car_age_years": None,
-        "mean_car_age_year": None,
-        "mean_car_age_tier": None,
+        "mean_age_years": None,
+        "mean_age_year": None,
+        "mean_age_tier": None,
         "lifetime_years": life,
         "lifetime_low_years": life - LIFETIME_DELTA_Y,
         "lifetime_high_years": life + LIFETIME_DELTA_Y,
@@ -262,6 +263,7 @@ def main() -> None:
                 {
                     "market": MARKET,
                     "country": COUNTRY,
+                    "segment": LIGHT_DUTY,
                     "scenario": scenario,
                     "t": t,
                     "calendar_year": year0 + t,

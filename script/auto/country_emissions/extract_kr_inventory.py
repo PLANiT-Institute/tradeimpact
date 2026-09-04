@@ -6,11 +6,12 @@ Inputs
     raw/kotsa_road_ghg_by_vehicle_type.csv   road GHG by vehicle type x province, ktCO2e, 2012-2024
 Output
     processed/country_emissions_kr.csv (long format: country, series, year, value, unit, ...)
-        road_co2           GIR 1.A.3.b 도로수송, ktCO2 (fuel-sales basis, national inventory)
-        kotsa_car_ghg      KOTSA 승용 national sum, ktCO2e (bottom-up; level not comparable)
-        kotsa_road_ghg     KOTSA all classes national sum, ktCO2e
-        car_share_road     KOTSA 승용 / KOTSA all classes (fraction)
-        car_co2            road_co2 x car_share_road, ktCO2 — the benchmark numerator, TIER C
+        road_co2                  GIR 1.A.3.b 도로수송, ktCO2 (fuel-sales basis, national)
+        kotsa_ghg_<segment>       KOTSA national sum per vehicle class, ktCO2e (bottom-up)
+        kotsa_road_ghg            KOTSA all classes national sum, ktCO2e
+        share_road_<segment>      that class's share of the KOTSA road total (fraction)
+        co2_<segment>             road_co2 x the class share, ktCO2 — the benchmark numerator
+                                  of that segment, TIER C
 
 Why the share and not the level. The national inventory publishes no vehicle-type split; the
 KOTSA local inventory does, but its national total sits 13-26 % below the GIR road total (2018:
@@ -36,6 +37,8 @@ KOTSA = DATA / "raw" / "kotsa_road_ghg_by_vehicle_type.csv"
 OUT = DATA / "processed" / "country_emissions_kr.csv"
 ROAD_ROW = "A 연료연소_3 수송_b 도로수송"
 FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_file"]
+#: KOTSA vehicle classes -> the project's segment names.
+SEGMENTS = {"승용": "passenger_car", "승합": "bus", "화물": "freight", "특수": "special"}
 
 
 def main() -> None:
@@ -70,50 +73,44 @@ def main() -> None:
     national = kotsa.groupby("년도")[["승용", "승합", "화물", "특수"]].sum()
     for year, r in national.iterrows():
         total = float(r.sum())
-        car = float(r["승용"])
-        share = car / total
         y = int(year)
-        rows += [
-            {
-                "country": "KR",
-                "series": "kotsa_car_ghg",
-                "year": y,
-                "value": round(car, 3),
-                "unit": "ktCO2e",
-                "source_id": "kotsa_road_ghg_vehicle_type",
-                "source_file": KOTSA.name,
-            },
-            {
-                "country": "KR",
-                "series": "kotsa_road_ghg",
-                "year": y,
-                "value": round(total, 3),
-                "unit": "ktCO2e",
-                "source_id": "kotsa_road_ghg_vehicle_type",
-                "source_file": KOTSA.name,
-            },
-            {
-                "country": "KR",
-                "series": "car_share_road",
-                "year": y,
-                "value": round(share, 6),
-                "unit": "fraction",
-                "source_id": "kotsa_road_ghg_vehicle_type",
-                "source_file": KOTSA.name,
-            },
-        ]
-        if y in road_co2:
+        for korean, segment in SEGMENTS.items():
+            value = float(r[korean])
+            share = value / total
             rows.append(
                 {
                     "country": "KR",
-                    "series": "car_co2",
+                    "series": f"kotsa_ghg_{segment}",
                     "year": y,
-                    "value": round(road_co2[y] * share, 3),
-                    "unit": "ktCO2",
-                    "source_id": "gir_inventory_co2;kotsa_road_ghg_vehicle_type",
-                    "source_file": f"{GIR.name};{KOTSA.name}",
+                    "value": round(value, 3),
+                    "unit": "ktCO2e",
+                    "source_id": "kotsa_road_ghg_vehicle_type",
+                    "source_file": KOTSA.name,
                 }
             )
+            rows.append(
+                {
+                    "country": "KR",
+                    "series": f"share_road_{segment}",
+                    "year": y,
+                    "value": round(share, 6),
+                    "unit": "fraction",
+                    "source_id": "kotsa_road_ghg_vehicle_type",
+                    "source_file": KOTSA.name,
+                }
+            )
+            if y in road_co2:
+                rows.append(
+                    {
+                        "country": "KR",
+                        "series": f"co2_{segment}",
+                        "year": y,
+                        "value": round(road_co2[y] * share, 3),
+                        "unit": "ktCO2",
+                        "source_id": "gir_inventory_co2;kotsa_road_ghg_vehicle_type",
+                        "source_file": f"{GIR.name};{KOTSA.name}",
+                    }
+                )
     rows.sort(key=lambda r: (str(r["series"]), int(str(r["year"]))))
     with OUT.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)

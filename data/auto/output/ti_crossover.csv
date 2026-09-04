@@ -5268,6 +5268,8 @@ KR,hyundai,KR,Kona (SX2 HEV),HEV,S1,7863,10461.6903,,,"r_fleet <= 0: benchmark n
 KR,hyundai,KR,Kona (SX2 HEV),HEV,S1,8387,10461.6903,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,hyundai,KR,Kona (SX2),ICE,S1,17592,2297.394,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,hyundai,KR,Kona (SX2),ICE,S1,20274,2297.394,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+KR,hyundai,KR,LCV,ICE,S1,111373,28061.8015,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+KR,hyundai,KR,LCV,ICE,S1,95147,28061.8015,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,hyundai,KR,Palisade (LX2),ICE,S1,20967,-5791.8917,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,hyundai,KR,Palisade (LX2),ICE,S1,1403,-5791.8917,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,hyundai,KR,Palisade (LX3 HEV),HEV,S1,38112,2423.7274,,,"r_fleet <= 0: benchmark non-declining, no crossover"
@@ -5316,6 +5318,8 @@ KR,hyundai,KR,Kona (SX2 HEV),HEV,S2,7863,3498.089,7.82,2031.8,within lifetime
 KR,hyundai,KR,Kona (SX2 HEV),HEV,S2,8387,3498.089,7.82,2032.8,within lifetime
 KR,hyundai,KR,Kona (SX2),ICE,S2,17592,-4666.2072,1.283,2025.3,within lifetime
 KR,hyundai,KR,Kona (SX2),ICE,S2,20274,-4666.2072,1.283,2026.3,within lifetime
+KR,hyundai,KR,LCV,ICE,S2,111373,-1097.9124,5.314,2029.3,within lifetime
+KR,hyundai,KR,LCV,ICE,S2,95147,-1097.9124,5.314,2030.3,within lifetime
 KR,hyundai,KR,Palisade (LX2),ICE,S2,20967,-12755.493,,,crossover before sale year (product already above benchmark at t=0)
 KR,hyundai,KR,Palisade (LX2),ICE,S2,1403,-12755.493,,,crossover before sale year (product already above benchmark at t=0)
 KR,hyundai,KR,Palisade (LX3 HEV),HEV,S2,38112,-4539.8738,1.367,2026.4,within lifetime
@@ -5364,6 +5368,8 @@ KR,hyundai,KR,Kona (SX2 HEV),HEV,S3,7863,-249.2795,4.315,2028.3,within lifetime
 KR,hyundai,KR,Kona (SX2 HEV),HEV,S3,8387,-249.2795,4.315,2029.3,within lifetime
 KR,hyundai,KR,Kona (SX2),ICE,S3,17592,-8413.5757,0.708,2024.7,within lifetime
 KR,hyundai,KR,Kona (SX2),ICE,S3,20274,-8413.5757,0.708,2025.7,within lifetime
+KR,hyundai,KR,LCV,ICE,S3,111373,-15755.1055,2.932,2026.9,within lifetime
+KR,hyundai,KR,LCV,ICE,S3,95147,-15755.1055,2.932,2027.9,within lifetime
 KR,hyundai,KR,Palisade (LX2),ICE,S3,20967,-16502.8615,,,crossover before sale year (product already above benchmark at t=0)
 KR,hyundai,KR,Palisade (LX2),ICE,S3,1403,-16502.8615,,,crossover before sale year (product already above benchmark at t=0)
 KR,hyundai,KR,Palisade (LX3 HEV),HEV,S3,38112,-8287.2423,0.754,2025.8,within lifetime
@@ -5384,6 +5390,7 @@ KR,hyundai,KR,Tucson (NX4),ICE,S3,26677,-9833.5106,0.206,2024.2,within lifetime
 KR,hyundai,KR,Tucson (NX4),ICE,S3,28980,-9833.5106,0.206,2025.2,within lifetime
 KR,hyundai,KR,Venue (QX),ICE,S3,4645,-6625.1685,1.384,2025.4,within lifetime
 KR,hyundai,KR,Venue (QX),ICE,S3,12165,-6625.1685,1.384,2026.4,within lifetime
+KR,kia,KR,Bongo,ICE,S1,14037,34898.924,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,kia,KR,Carnival,ICE,S1,30202,-5985.3397,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,kia,KR,EV3,BEV,S1,18431,17146.1787,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
 KR,kia,KR,EV4,BEV,S1,7726,17795.7004,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
@@ -5402,6 +5409,8 @@ KR,kia,KR,Ray EV,BEV,S1,5718,17394.1065,,,never crosses: below benchmark at sale
 KR,kia,KR,Seltos,ICE,S1,23545,2180.2725,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,kia,KR,Sorento,ICE,S1,55426,-1146.5072,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,kia,KR,Sportage,ICE,S1,31263,1339.3657,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+KR,kia,KR,Tasman,ICE,S1,1976,31343.8009,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+KR,kia,KR,Bongo,ICE,S2,14037,5739.2101,6.996,2033.0,within lifetime
 KR,kia,KR,Carnival,ICE,S2,30202,-12948.941,,,crossover before sale year (product already above benchmark at t=0)
 KR,kia,KR,EV3,BEV,S2,18431,11429.8674,87.564,2113.6,after lifetime
 KR,kia,KR,EV4,BEV,S2,7726,11997.3444,94.268,2120.3,after lifetime
@@ -5420,6 +5429,8 @@ KR,kia,KR,Ray EV,BEV,S2,5718,11646.478,90.07,2116.1,after lifetime
 KR,kia,KR,Seltos,ICE,S2,23545,-4783.3288,1.206,2027.2,within lifetime
 KR,kia,KR,Sorento,ICE,S2,55426,-8110.1084,,,crossover before sale year (product already above benchmark at t=0)
 KR,kia,KR,Sportage,ICE,S2,31263,-5624.2355,0.663,2026.7,within lifetime
+KR,kia,KR,Tasman,ICE,S2,1976,2184.087,6.1,2032.1,within lifetime
+KR,kia,KR,Bongo,ICE,S3,14037,-8917.983,3.86,2029.9,within lifetime
 KR,kia,KR,Carnival,ICE,S3,30202,-16696.3095,,,crossover before sale year (product already above benchmark at t=0)
 KR,kia,KR,EV3,BEV,S3,18431,8706.226,28.74,2054.7,after lifetime
 KR,kia,KR,EV4,BEV,S3,7726,9206.364,30.94,2056.9,after lifetime
@@ -5438,6 +5449,7 @@ KR,kia,KR,Ray EV,BEV,S3,5718,8897.1328,29.562,2055.6,after lifetime
 KR,kia,KR,Seltos,ICE,S3,23545,-8530.6973,0.666,2026.7,within lifetime
 KR,kia,KR,Sorento,ICE,S3,55426,-11857.477,,,crossover before sale year (product already above benchmark at t=0)
 KR,kia,KR,Sportage,ICE,S3,31263,-9371.6041,0.366,2026.4,within lifetime
+KR,kia,KR,Tasman,ICE,S3,1976,-12473.1062,3.366,2029.4,within lifetime
 US,hyundai,US,Elantra,HEV,S1,14482,22508.8322,64.131,2088.1,after lifetime
 US,hyundai,US,Elantra,HEV,S1,15700,22508.8322,64.131,2089.1,after lifetime
 US,hyundai,US,Elantra,ICE,S1,122216,2468.4784,10.747,2034.7,within lifetime

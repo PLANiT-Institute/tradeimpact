@@ -24,6 +24,32 @@ COHORTS = OUT_DIR / "cohorts.csv"
 COHORTS_WITHHELD = OUT_DIR / "cohorts_withheld.csv"
 REAL_WORLD = DATA / "vehicle_technology" / "method" / "real_world_correction.csv"
 
+#: Vehicle segments. A segment is the population a destination's benchmark describes, named
+#: for the class the destination's own statistics use, because a benchmark and the sales it
+#: prices must always cover the same population:
+#:     passenger_car  cars (EU27 M1, Korea 승용, Japan 乗用車)
+#:     light_duty     cars and light trucks together (the United States, where the distance
+#:                    statistics split by wheelbase and cannot be cut by body type)
+#:     freight        goods vehicles (Korea 화물, N1 to N3)
+#:     bus            buses and minibuses (Korea 승합)
+PASSENGER_CAR = "passenger_car"
+LIGHT_DUTY = "light_duty"
+FREIGHT = "freight"
+BUS = "bus"
+SEGMENTS = (PASSENGER_CAR, LIGHT_DUTY, FREIGHT, BUS)
+
+#: Plausible fleet-intensity band per segment (gCO2/km). Outside it the numerator and the
+#: denominator describe different driving populations and the ratio is not a national
+#: parameter, so the builder tiers the value down to C and says so. The car band is the one
+#: the guideline gives; the others are set from the same reasoning at the scale of the class
+#: (a laden truck or a bus burns several times what a car does per kilometre).
+INTENSITY_BAND = {
+    PASSENGER_CAR: (80.0, 320.0),
+    LIGHT_DUTY: (100.0, 400.0),
+    FREIGHT: (150.0, 1200.0),
+    BUS: (250.0, 1600.0),
+}
+
 #: Glob patterns for the per-market reference outputs; one pair per market.
 PARAMS_GLOB = "destination_parameters_*.csv"
 REFERENCE_GLOB = "reference_trajectories_*.csv"
@@ -35,6 +61,7 @@ ALL_HEV = "all_hev"
 PARAM_FIELDS = [
     "market",
     "country",
+    "segment",
     "cohort_year",
     "vkt_km",
     "vkt_low_km",
@@ -42,18 +69,18 @@ PARAM_FIELDS = [
     "vkt_tier",
     "vkt_year",
     "vkt_derivation",
-    "car_stock",
-    "car_stock_year",
-    "car_co2_kt",
-    "car_co2_year",
+    "stock",
+    "stock_year",
+    "co2_kt",
+    "co2_year",
     "fleet_intensity_gco2_km",
     "fleet_intensity_tier",
     "grid_gco2_kwh",
     "grid_year",
     "grid_tier",
-    "mean_car_age_years",
-    "mean_car_age_year",
-    "mean_car_age_tier",
+    "mean_age_years",
+    "mean_age_year",
+    "mean_age_tier",
     "lifetime_years",
     "lifetime_low_years",
     "lifetime_high_years",
@@ -68,6 +95,7 @@ PARAM_FIELDS = [
 REF_FIELDS = [
     "market",
     "country",
+    "segment",
     "scenario",
     "t",
     "calendar_year",
@@ -99,23 +127,24 @@ def latest(series: dict[int, float], not_after: int) -> tuple[int, float] | None
     return max(pairs) if pairs else None
 
 
-def load_params() -> dict[tuple[str, str], dict[str, str]]:
-    """(market, country) -> destination parameters, pooled over every market file."""
-    out: dict[tuple[str, str], dict[str, str]] = {}
+def load_params() -> dict[tuple[str, str, str], dict[str, str]]:
+    """(market, country, segment) -> destination parameters, pooled over every market file."""
+    out: dict[tuple[str, str, str], dict[str, str]] = {}
     for path in sorted(OUT_DIR.glob(PARAMS_GLOB)):
         for row in read_csv(path):
-            out[(row["market"], row["country"])] = row
+            out[(row["market"], row["country"], row["segment"])] = row
     if not out:
         raise SystemExit(f"no {PARAMS_GLOB} in {OUT_DIR}: run the reference builders first")
     return out
 
 
-def load_reference() -> dict[tuple[str, str, str], dict[int, tuple[float, float]]]:
-    """(market, country, scenario) -> {t: (e_ref kgCO2e/vehicle-year, grid kgCO2e/kWh)}."""
-    out: dict[tuple[str, str, str], dict[int, tuple[float, float]]] = defaultdict(dict)
+def load_reference() -> dict[tuple[str, str, str, str], dict[int, tuple[float, float]]]:
+    """(market, country, segment, scenario) -> {t: (e_ref kgCO2e/vehicle-year, grid kg/kWh)}."""
+    out: dict[tuple[str, str, str, str], dict[int, tuple[float, float]]] = defaultdict(dict)
     for path in sorted(OUT_DIR.glob(REFERENCE_GLOB)):
         for row in read_csv(path):
-            out[(row["market"], row["country"], row["scenario"])][int(row["t"])] = (
+            key = (row["market"], row["country"], row["segment"], row["scenario"])
+            out[key][int(row["t"])] = (
                 float(row["e_ref_kgco2_per_vehicle"]),
                 float(row["grid_kgco2_per_kwh"]),
             )
@@ -124,31 +153,31 @@ def load_reference() -> dict[tuple[str, str, str], dict[int, tuple[float, float]
     return dict(out)
 
 
-def load_rates() -> dict[tuple[str, str, str], tuple[float, float]]:
-    """(market, country, scenario) -> (r_fleet, r_power), read off the year-0 trajectory row."""
-    out: dict[tuple[str, str, str], tuple[float, float]] = {}
+def load_rates() -> dict[tuple[str, str, str, str], tuple[float, float]]:
+    """(market, country, segment, scenario) -> (r_fleet, r_power) from the year-0 row."""
+    out: dict[tuple[str, str, str, str], tuple[float, float]] = {}
     for path in sorted(OUT_DIR.glob(REFERENCE_GLOB)):
         for row in read_csv(path):
-            out[(row["market"], row["country"], row["scenario"])] = (
+            out[(row["market"], row["country"], row["segment"], row["scenario"])] = (
                 float(row["r_fleet"]),
                 float(row["r_power"]),
             )
     return out
 
 
-def scenarios_by_market(keys: Iterable[tuple[str, str, str]]) -> dict[str, list[str]]:
+def scenarios_by_market(keys: Iterable[tuple[str, ...]]) -> dict[str, list[str]]:
     """market -> sorted scenarios that market publishes a trajectory for.
 
     Args:
-        keys: Any iterable of (market, country, scenario) keys — a loaded trajectory or rate
-            mapping iterates as exactly that.
+        keys: Any iterable whose first element is the market and last the scenario — a loaded
+            trajectory or rate mapping iterates as exactly that.
 
     Returns:
         One sorted scenario list per market.
     """
     out: dict[str, set[str]] = defaultdict(set)
-    for market, _country, scenario in keys:
-        out[market].add(scenario)
+    for key in keys:
+        out[key[0]].add(key[-1])
     return {m: sorted(s) for m, s in out.items()}
 
 

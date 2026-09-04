@@ -28,7 +28,7 @@ import argparse
 import csv
 from pathlib import Path
 
-from model_io import PARAM_FIELDS, REF_FIELDS, latest, read_long
+from model_io import PARAM_FIELDS, PASSENGER_CAR, REF_FIELDS, latest, read_long
 
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
@@ -177,6 +177,7 @@ def main() -> None:
             {
                 "market": EU,
                 "country": c,
+                "segment": PASSENGER_CAR,
                 "cohort_year": year0,
                 "vkt_km": vkt,
                 "vkt_low_km": None,
@@ -184,26 +185,26 @@ def main() -> None:
                 "vkt_tier": vkt_tier,
                 "vkt_year": vkt_year,
                 "vkt_derivation": vkt_derivation,
-                "car_stock": stock[1] if stock else None,
-                "car_stock_year": stock[0] if stock else None,
-                "car_co2_kt": co2[1] if co2 else None,
-                "car_co2_year": co2[0] if co2 else None,
+                "stock": stock[1] if stock else None,
+                "stock_year": stock[0] if stock else None,
+                "co2_kt": co2[1] if co2 else None,
+                "co2_year": co2[0] if co2 else None,
                 "grid_gco2_kwh": grid[1] if grid else None,
                 "grid_year": grid[0] if grid else None,
                 "grid_tier": "A" if grid else None,
-                "mean_car_age_years": age[0] if age else None,
-                "mean_car_age_year": age[1] if age else None,
-                "mean_car_age_tier": age_tier if age else None,
+                "mean_age_years": age[0] if age else None,
+                "mean_age_year": age[1] if age else None,
+                "mean_age_tier": age_tier if age else None,
                 "_warnings": warnings,
                 "_sources": sources,
             }
         )
 
     # EU-average distance (stock-weighted over measured markets) stands in for the rest.
-    measured = [r for r in rows if r["vkt_km"] and r["car_stock"]]
+    measured = [r for r in rows if r["vkt_km"] and r["stock"]]
     if measured:
-        fallback = sum(r["vkt_km"] * r["car_stock"] for r in measured) / sum(  # type: ignore[operator]
-            r["car_stock"]
+        fallback = sum(r["vkt_km"] * r["stock"] for r in measured) / sum(  # type: ignore[operator]
+            r["stock"]
             for r in measured  # type: ignore[misc]
         )
         sorted_vkt = sorted(float(r["vkt_km"]) for r in measured)  # type: ignore[arg-type]
@@ -224,7 +225,7 @@ def main() -> None:
                 )
 
     for r in rows:
-        stock_v, vkt_v, co2_v = r["car_stock"], r["vkt_km"], r["car_co2_kt"]
+        stock_v, vkt_v, co2_v = r["stock"], r["vkt_km"], r["co2_kt"]
         fleet = co2_v * 1e9 / (stock_v * vkt_v) if stock_v and vkt_v and co2_v is not None else None  # type: ignore[operator]
         fleet_tier = "A" if r["vkt_tier"] == "A" else (r["vkt_tier"] or "C")
         if fleet is not None and not FLEET_INTENSITY_MIN <= fleet <= FLEET_INTENSITY_MAX:
@@ -236,11 +237,11 @@ def main() -> None:
             )
         r["fleet_intensity_gco2_km"] = fleet
         r["fleet_intensity_tier"] = fleet_tier if fleet is not None else None
-        mean = r["mean_car_age_years"]
+        mean = r["mean_age_years"]
         r["lifetime_years"] = clamp_life(LIFETIME_CENTRAL_MULTIPLE * mean) if mean else None  # type: ignore[operator]
         r["lifetime_low_years"] = clamp_life(mean) if mean else None  # type: ignore[arg-type]
         r["lifetime_high_years"] = clamp_life(2 * mean) if mean else None  # type: ignore[operator]
-        r["lifetime_tier"] = ("C" if r["mean_car_age_tier"] == "C" else "B") if mean else None
+        r["lifetime_tier"] = ("C" if r["mean_age_tier"] == "C" else "B") if mean else None
         r["scenarios_excluded"] = ""
         r["scenario_exclusion_reason"] = ""
         r["warnings"] = " | ".join(r.pop("_warnings"))  # type: ignore[arg-type]
@@ -271,6 +272,7 @@ def main() -> None:
                     {
                         "market": EU,
                         "country": c,
+                        "segment": PASSENGER_CAR,
                         "scenario": s,
                         "t": t,
                         "calendar_year": year0 + t,

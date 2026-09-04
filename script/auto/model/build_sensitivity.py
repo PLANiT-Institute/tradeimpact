@@ -92,6 +92,7 @@ class Cell:
         market: Market key, e.g. `EU27` or `US`.
         company: Exporter.
         destination: Importing country (ISO 3166-1 alpha-2).
+        segment: Vehicle segment, which decides the benchmark the cell is priced against.
         model: Commercial model name as the sales source reports it.
         powertrain: ICE / HEV / BEV.
         cohort_year: Sale year.
@@ -104,6 +105,7 @@ class Cell:
     market: str
     company: str
     destination: str
+    segment: str
     model: str
     powertrain: str
     cohort_year: int
@@ -119,6 +121,7 @@ def to_cell(row: dict[str, str]) -> Cell:
         market=row["market"],
         company=row["company"],
         destination=row["destination"],
+        segment=row["segment"],
         model=row["model"],
         powertrain=row["powertrain"],
         cohort_year=int(row["cohort_year"]),
@@ -174,12 +177,12 @@ def crossover(
 
 
 def priced_cells(
-    cohorts: list[dict[str, str]], params: dict[tuple[str, str], dict[str, str]]
+    cohorts: list[dict[str, str]], params: dict[tuple[str, str, str], dict[str, str]]
 ) -> list[Cell]:
     """Cohort rows that carry a published result — the same rule step 4 applies."""
     out: list[Cell] = []
     for row in cohorts:
-        p = params.get((row["market"], row["destination"]))
+        p = params.get((row["market"], row["destination"], row["segment"]))
         if p is None or "FLEET_INTENSITY_IMPLAUSIBLE" in p["warnings"]:
             continue
         out.append(to_cell(row))
@@ -238,14 +241,14 @@ def cohort_total(
     for c in cells:
         if c.market != market:
             continue
-        p = params[(c.market, c.destination)]
+        p = params[(c.market, c.destination, c.segment)]
         vkt = float(p["vkt_km"])
         if vkt_key and p["vkt_tier"] == "C" and p[vkt_key]:
             vkt = float(p[vkt_key])
         i0 = float(p["fleet_intensity_gco2_km"]) / 1000.0
         e_ref0 = i0 * float(p["vkt_km"])  # benchmark per car: distance cancels
         life = max(1, int(p["lifetime_years"]) + life_delta)
-        rf, rp = rates[(c.market, c.destination, scenario)]
+        rf, rp = rates[(c.market, c.destination, c.segment, scenario)]
         rw = factors[(c.test_cycle, c.powertrain)][rw_key]
         g0 = float(p["grid_gco2_kwh"]) / 1000.0
         cumulative = 0.0
@@ -279,14 +282,14 @@ def build_crossovers(
     """Closed-form crossover year and lifetime gap for every priced cell x scenario."""
     rows: list[dict[str, object]] = []
     for c in cells:
-        p = params[(c.market, c.destination)]
+        p = params[(c.market, c.destination, c.segment)]
         vkt = float(p["vkt_km"])
         i0 = float(p["fleet_intensity_gco2_km"]) / 1000.0
         g0 = float(p["grid_gco2_kwh"]) / 1000.0
         life = int(p["lifetime_years"])
         rw = factors[(c.test_cycle, c.powertrain)]["factor"]
         for scenario in scenarios[c.market]:
-            rf, rp = rates[(c.market, c.destination, scenario)]
+            rf, rp = rates[(c.market, c.destination, c.segment, scenario)]
             e_prod_const = c.cert * rw / 1000.0 * vkt
             eta_g0 = c.cert / 1000.0 * rw * g0
             ratio = e_prod_const / (i0 * vkt) if c.powertrain != "BEV" else 0.0

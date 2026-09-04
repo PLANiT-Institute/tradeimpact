@@ -8,7 +8,9 @@ Output  one row per (company, block, model label, cohort year):
         Export   -> destination ``export`` (level unknown), basis ``export_shipments``
                     (plant-side shipments from Korea, destination not stated; kept for
                     reconciliation with trade statistics, never priced).
-        Commercial vehicles (LCV, HCV) are outside the passenger-car scope and skipped.
+        Commercial rows (LCV, HCV) are emitted with their class as the model label so that
+        sales/method/kr_labels.csv can route them to the freight benchmark, or withhold them
+        with a reason where no certified value exists.
 
 Powertrain is read from the trim code: PHEV, HEV, EV (BEV), NEXO (FCEV); N performance trims
 and everything else are ICE. Genesis nameplates carry ``company = genesis``.
@@ -47,7 +49,8 @@ BLOCKS = {
     "Domestic": ("KR", "country", "domestic_sales"),
     "Export": ("export", "unknown", "export_shipments"),
 }
-SKIP_CLASSES = {"CV"}
+#: Commercial rows carry the class as their label, so the Korea label map can route them.
+CV_LABELS = {"LCV", "HCV"}
 
 
 def powertrain(label: str) -> str:
@@ -77,7 +80,7 @@ def extract(path: Path, year: int) -> list[dict[str, object]]:
     header = df.iloc[header_row].astype(str).str.strip()
     total_col = df.columns[header == "Total"][0]
     rows: list[dict[str, object]] = []
-    block = vclass = None
+    block = None
     block_total: dict[str, int] = {}
     seen: dict[str, int] = {}
     for i in range(header_row + 1, len(df)):
@@ -89,15 +92,15 @@ def extract(path: Path, year: int) -> list[dict[str, object]]:
         if isinstance(col1, str) and col1.strip() == "Total" and block:
             block_total[block] = int(df.iat[i, total_col])
             continue
-        if isinstance(col1, str) and col1.strip():
-            vclass = col1.strip()
+        # The class column (PC / RV / CV) is not needed any more: the label itself carries the
+        # class for commercial rows and the Korea label map routes every label to a segment.
         if block is None or not isinstance(label, str) or label.strip() in {"Sub-total"}:
             continue
         model = label.strip()
         value = pd.to_numeric(df.iat[i, total_col], errors="coerce")
         units = 0 if pd.isna(value) else int(value)
         seen[block] = seen.get(block, 0) + units
-        if vclass in SKIP_CLASSES or units == 0:
+        if units == 0:
             continue
         dest, level, basis = BLOCKS[block]
         rows.append(
@@ -109,7 +112,7 @@ def extract(path: Path, year: int) -> list[dict[str, object]]:
                 "cohort_year": year,
                 "period": f"{year}-01..{year}-12",
                 "model": model,
-                "powertrain": powertrain(model),
+                "powertrain": "" if model in CV_LABELS else powertrain(model),
                 "units": units,
                 "basis": basis,
                 "source_id": SOURCE_ID,

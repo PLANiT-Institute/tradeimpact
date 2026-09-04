@@ -34,84 +34,96 @@ FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_fil
 SHEET_YEARLY = "19.연도별 자동차 등록현황"
 SHEET_AGE = "15.차령별_차종별_용도별 등록현황"
 BANDS = (("le2", 0, 2), ("2_5", 2, 5), ("5_10", 5, 10), ("10_20", 10, 20), ("gt20", 20, 200))
+#: MOLIT vehicle classes -> the project's segment names.
+SEGMENTS = {"승용": "passenger_car", "승합": "bus", "화물": "freight", "특수": "special"}
 
 
-def car_total_column(df: pd.DataFrame) -> int:
-    """Column index of the 승용 '계' (all uses) block in a MOLIT sheet."""
+def total_columns(df: pd.DataFrame) -> dict[str, int]:
+    """{segment: column index of that vehicle class's '계' (all uses) block}."""
     classes = df.iloc[2].astype(str).str.replace(" ", "")
     uses = df.iloc[3].astype(str).str.strip()
-    start = [i for i, v in enumerate(classes) if v == "승용"][0]
-    for i in range(start, len(uses)):
-        if uses.iloc[i] == "계":
-            return i
-    raise SystemExit("no 승용 계 column")
+    starts = {v: i for i, v in enumerate(classes) if v in SEGMENTS}
+    out: dict[str, int] = {}
+    for korean, start in starts.items():
+        for i in range(start, len(uses)):
+            if uses.iloc[i] == "계":
+                out[SEGMENTS[korean]] = i
+                break
+    missing = set(SEGMENTS.values()) - set(out)
+    if missing:
+        raise SystemExit(f"no 계 column for {sorted(missing)}")
+    return out
 
 
 def yearly_stock(path: Path) -> list[dict[str, object]]:
-    """car_stock rows from the yearly sheet of one workbook."""
+    """Year-end stock per vehicle class from the yearly sheet of one workbook."""
     df = pd.read_excel(path, sheet_name=SHEET_YEARLY, header=None)
-    col = car_total_column(df)
+    columns = total_columns(df)
     rows = []
     for i in range(4, len(df)):
         year = pd.to_numeric(df.iat[i, 0], errors="coerce")
         if pd.isna(year):
             continue
-        rows.append(
-            {
-                "country": "KR",
-                "series": "car_stock",
-                "year": int(year),
-                "value": int(df.iat[i, col]),
-                "unit": "vehicles",
-                "source_id": SOURCE_ID,
-                "source_file": path.name,
-            }
-        )
+        for segment, col in columns.items():
+            rows.append(
+                {
+                    "country": "KR",
+                    "series": f"stock_{segment}",
+                    "year": int(year),
+                    "value": int(df.iat[i, col]),
+                    "unit": "vehicles",
+                    "source_id": SOURCE_ID,
+                    "source_file": path.name,
+                }
+            )
     return rows
 
 
 def age_rows(path: Path, snapshot_year: int) -> list[dict[str, object]]:
-    """Mean age and age bands from the model-year sheet of one December workbook."""
+    """Mean age per class, and the age bands of the passenger-car class, from one workbook."""
     df = pd.read_excel(path, sheet_name=SHEET_AGE, header=None)
-    col = car_total_column(df)
-    weights: dict[int, int] = {}
-    total = None
-    for i in range(4, len(df)):
-        label = str(df.iat[i, 0]).strip()
-        if label == "총계":
-            total = int(df.iat[i, col])
-            continue
-        my = pd.to_numeric(label, errors="coerce")
-        if pd.isna(my):
-            continue
-        weights[int(my)] = int(df.iat[i, col])
-    if total is None or sum(weights.values()) != total:
-        raise SystemExit(f"{path.name}: model-year rows do not sum to 총계")
-    ages = {snapshot_year - my: w for my, w in weights.items()}
-    mean_age = sum(a * w for a, w in ages.items()) / total
-    rows: list[dict[str, object]] = [
-        {
-            "country": "KR",
-            "series": "car_mean_age_years",
-            "year": snapshot_year,
-            "value": round(mean_age, 4),
-            "unit": "years",
-            "source_id": SOURCE_ID,
-            "source_file": path.name,
-        }
-    ]
-    for name, lo, hi in BANDS:
+    columns = total_columns(df)
+    rows: list[dict[str, object]] = []
+    for segment, col in columns.items():
+        weights: dict[int, int] = {}
+        total = None
+        for i in range(4, len(df)):
+            label = str(df.iat[i, 0]).strip()
+            if label == "총계":
+                total = int(df.iat[i, col])
+                continue
+            my = pd.to_numeric(label, errors="coerce")
+            if pd.isna(my):
+                continue
+            weights[int(my)] = int(df.iat[i, col])
+        if total is None or sum(weights.values()) != total:
+            raise SystemExit(f"{path.name} {segment}: model-year rows do not sum to 총계")
+        ages = {snapshot_year - my: w for my, w in weights.items()}
         rows.append(
             {
                 "country": "KR",
-                "series": f"car_stock_age_{name}",
+                "series": f"mean_age_{segment}",
                 "year": snapshot_year,
-                "value": sum(w for a, w in ages.items() if lo <= a < hi),
-                "unit": "vehicles",
+                "value": round(sum(a * w for a, w in ages.items()) / total, 4),
+                "unit": "years",
                 "source_id": SOURCE_ID,
                 "source_file": path.name,
             }
         )
+        if segment != "passenger_car":
+            continue
+        for name, lo, hi in BANDS:
+            rows.append(
+                {
+                    "country": "KR",
+                    "series": f"stock_age_{segment}_{name}",
+                    "year": snapshot_year,
+                    "value": sum(w for a, w in ages.items() if lo <= a < hi),
+                    "unit": "vehicles",
+                    "source_id": SOURCE_ID,
+                    "source_file": path.name,
+                }
+            )
     return rows
 
 
@@ -128,13 +140,26 @@ def main() -> None:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
         w.writerows(rows)
-    stock = {r["year"]: r["value"] for r in rows if r["series"] == "car_stock"}
-    ages = {r["year"]: r["value"] for r in rows if r["series"] == "car_mean_age_years"}
+    latest = max(int(str(r["year"])) for r in rows if str(r["series"]).startswith("stock_"))
+    stock = {
+        str(r["series"])[6:]: r["value"]
+        for r in rows
+        if str(r["series"]).startswith("stock_")
+        and r["year"] == latest
+        and "age" not in str(r["series"])
+    }
+    ages = {
+        str(r["series"])[9:]: r["value"]
+        for r in rows
+        if str(r["series"]).startswith("mean_age_")
+        and r["year"]
+        == max(int(str(x["year"])) for x in rows if str(x["series"]).startswith("mean_age_"))
+    }
     print(
-        f"{OUT.relative_to(REPO)}: {len(rows)} rows; 승용 stock "
-        + ", ".join(f"{y} {v:,}" for y, v in sorted(stock.items()) if y >= 2022)
+        f"{OUT.relative_to(REPO)}: {len(rows)} rows; {latest} stock "
+        + ", ".join(f"{k} {v:,}" for k, v in sorted(stock.items()))
         + "; mean age "
-        + ", ".join(f"{y} {v}" for y, v in sorted(ages.items()))
+        + ", ".join(f"{k} {v}" for k, v in sorted(ages.items()))
     )
 
 
