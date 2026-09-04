@@ -27,7 +27,7 @@ vehicle_technology_us_epa,test_cycle,EPA,A,EPA fuel economy label values per mod
 vehicle_technology_kr_kea,test_cycle,KR_5CYCLE,B,KEA label km/L converted to gCO2/km with EPA fuel carbon factors; km/kWh inverted to Wh/km (documented conversion of an authoritative label)
 epa_trends_powertrain_share_my2024,make,.*,B,EPA certification production volumes for one model year used as powertrain shares of calendar-year sales
 sales_eea_eu27_2024,basis,registrations,A,EEA first registrations by member state (registration authority)
-sales_hyundai_us|sales_kia_us|sales_hyundai_kr,basis,brand_total_sales|domestic_sales,A,company's own market-side monthly release for the destination
+sales_hyundai_us|sales_kia_us|sales_hyundai_kr|sales_toyota_us|sales_nissan_us,basis,brand_total_sales|domestic_sales,A,company's own market-side release for the destination
 sales_hyundai_kr,basis,export_shipments,C,plant-side shipments without a stated destination; reconciliation only
 sales_kia_ir_2026,basis,retail_sales,A,company's own market-side IR release (regions and countries as published)
 sales_hyundai_plant_2025,basis,plant_sales,B,plant-side sales: units built at the destination's plants; imports from other plants are not in the source
@@ -52,3 +52,5 @@ destination_parameters_.*,lifetime_tier,C,C,operating life from an old survival 
 sales_jada_jp,basis,registrations,A,"JADA new-vehicle registrations, the standard market-side count in Japan; the nameplate list is the published top 50 with kei cars and foreign brands excluded, which limits coverage rather than quality"
 jada_fuel_mix_jp,powertrain,.*,A,"JADA registrations by maker and fuel as published; kei cars excluded, Lexus folded into Toyota, and Japanese-brand cars built abroad counted as imports"
 jada_brand_registrations_jp,company,.*,A,"JADA registrations by brand including kei cars, with the imported part as published; the kei and import rows are preliminary until the kei association confirms them"
+us_release_origin_split,origin,.*,A,"the company's own published split of its US volumes into North American production and imports"
+company_us_totals_cross_check,basis,brand_total_sales,A,"a second figure published by the same company for the same market and year, transcribed with its URL to make the spread between its own publications visible"

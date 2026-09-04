@@ -123,6 +123,18 @@ row in two agreeing sources, and certified gCO2/km per model comes from MLIT; th
 stock age distribution (paid book), battery-electric consumption, and a transport sector target
 (the 2025 plan publishes none, so S2 would use the superseded 2021 plan).
 
+**United States built for Toyota and Nissan, and the source cross-check (2026-09-04).** Both
+companies publish a US table by model, so both are priced on their own release: Toyota 2025
+2,111,810 covered units (98.3 %) S1 +8.07 MtCO2e / S3 −30.50; Nissan 873,293 (100.0 %) +1.36 /
+−14.46. Toyota's electrified table is an overlay on its model table, so combustion is the model
+total minus its electrified rows; Nissan needs no powertrain assumption because its US line-up is
+combustion plus the LEAF and Ariya. Lexus and Infiniti are held out as their own companies.
+`ti_source_reconciliation.csv` compares every source a company published for the same cell, like
+for like on brand boundary: all five overlaps agree to 0.0 %, which settles that the Korean makers
+stand on the same class of source as the Japanese ones. `ti_data_quality.csv` now names the
+countries covered (`countries`, `countries_covered`, `countries_withheld`) alongside the sales
+coverage share.
+
 ## 2. Phases
 
 | Phase | Objectives met | Deliverables accepted | Status | Gate verdict |

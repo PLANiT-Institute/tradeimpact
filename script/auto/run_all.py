@@ -33,6 +33,7 @@ EXTRACT = [
     "sales/extract_hyundai_sales_by_model.py",
     "sales/extract_kia_america.py",
     "sales/extract_jada.py",
+    "sales/extract_us_releases.py",
     "vehicle_technology/extract_eea_certified.py",
     "vehicle_technology/extract_epa_fueleconomy.py",
     "vehicle_technology/extract_epa_trends.py",
@@ -68,6 +69,7 @@ MODEL = [
     "model/aggregate_country.py",
     "model/build_data_quality.py",
     "model/build_coverage.py",
+    "model/build_reconciliation.py",
     "model/build_database.py",
     "model/build_dashboard.py",
 ]

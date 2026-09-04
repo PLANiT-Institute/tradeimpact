@@ -5582,3 +5582,169 @@ US,kia,US,Sportage,ICE,S3,75882,-20311.4937,0.233,2026.2,within lifetime
 US,kia,US,Telluride,ICE,S3,115504,-31766.4437,,,crossover before sale year (product already above benchmark at t=0)
 US,kia,US,Telluride,ICE,S3,123281,-31766.4437,,,crossover before sale year (product already above benchmark at t=0)
 US,kia,US,Telluride,ICE,S3,73602,-31766.4437,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Altima,ICE,S1,93268,4606.1162,15.146,2040.1,after lifetime
+US,nissan,US,Altima,ICE,S1,113898,4603.7927,15.141,2039.1,after lifetime
+US,nissan,US,Ariya,BEV,S1,14906,30417.6554,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,nissan,US,Ariya,BEV,S1,19798,30634.6229,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,nissan,US,Armada,ICE,S1,17465,-28696.8856,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Armada,ICE,S1,15267,-35964.8539,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Frontier,ICE,S1,65232,-20034.8057,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Frontier,ICE,S1,68155,-17483.5816,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,GT-R,ICE,S1,39,-23982.465,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,GT-R,ICE,S1,267,-23982.465,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Kicks,ICE,S1,103575,6097.8156,18.349,2043.3,after lifetime
+US,nissan,US,Kicks,ICE,S1,77356,8358.5998,23.431,2047.4,after lifetime
+US,nissan,US,LEAF,BEV,S1,5149,32919.1629,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,nissan,US,LEAF,BEV,S1,11226,32919.1629,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,nissan,US,Murano,ICE,S1,42747,-8677.4435,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Murano,ICE,S1,19316,-9181.6472,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Pathfinder,ICE,S1,101598,-10085.4962,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Pathfinder,ICE,S1,80915,-10013.4671,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Rogue,ICE,S1,217896,5963.0514,18.055,2043.1,after lifetime
+US,nissan,US,Rogue,ICE,S1,245724,6734.4598,19.751,2043.8,after lifetime
+US,nissan,US,Sentra,ICE,S1,152578,8790.7744,24.436,2049.4,after lifetime
+US,nissan,US,Sentra,ICE,S1,152659,8790.7744,24.436,2048.4,after lifetime
+US,nissan,US,Titan,ICE,S1,2043,-28601.6213,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Titan,ICE,S1,14662,-28601.6213,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Versa,ICE,S1,51310,7563.9562,21.612,2046.6,after lifetime
+US,nissan,US,Versa,ICE,S1,42589,7491.9271,21.449,2045.4,after lifetime
+US,nissan,US,Z,ICE,S1,5487,-15801.3536,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Z,ICE,S1,3164,-15801.3536,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Altima,ICE,S3,93268,-13717.346,1.595,2026.6,within lifetime
+US,nissan,US,Altima,ICE,S3,113898,-13719.6695,1.594,2025.6,within lifetime
+US,nissan,US,Ariya,BEV,S3,14906,21472.6074,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,nissan,US,Ariya,BEV,S3,19798,21568.3005,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,nissan,US,Armada,ICE,S3,17465,-47020.3477,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Armada,ICE,S3,15267,-54288.316,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Frontier,ICE,S3,65232,-38358.2679,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Frontier,ICE,S3,68155,-35807.0437,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,GT-R,ICE,S3,39,-42305.9271,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,GT-R,ICE,S3,267,-42305.9271,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Kicks,ICE,S3,103575,-12225.6466,1.932,2026.9,within lifetime
+US,nissan,US,Kicks,ICE,S3,77356,-9964.8623,2.467,2026.5,within lifetime
+US,nissan,US,LEAF,BEV,S3,5149,22575.8924,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,nissan,US,LEAF,BEV,S3,11226,22575.8924,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,nissan,US,Murano,ICE,S3,42747,-27000.9056,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Murano,ICE,S3,19316,-27505.1093,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Pathfinder,ICE,S3,101598,-28408.9583,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Pathfinder,ICE,S3,80915,-28336.9292,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Rogue,ICE,S3,217896,-12360.4107,1.901,2026.9,within lifetime
+US,nissan,US,Rogue,ICE,S3,245724,-11589.0023,2.08,2026.1,within lifetime
+US,nissan,US,Sentra,ICE,S3,152578,-9532.6877,2.573,2027.6,within lifetime
+US,nissan,US,Sentra,ICE,S3,152659,-9532.6877,2.573,2026.6,within lifetime
+US,nissan,US,Titan,ICE,S3,2043,-46925.0834,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Titan,ICE,S3,14662,-46925.0834,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Versa,ICE,S3,51310,-10759.5059,2.276,2027.3,within lifetime
+US,nissan,US,Versa,ICE,S3,42589,-10831.535,2.258,2026.3,within lifetime
+US,nissan,US,Z,ICE,S3,5487,-34124.8157,,,crossover before sale year (product already above benchmark at t=0)
+US,nissan,US,Z,ICE,S3,3164,-34124.8157,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,4RUNNER,HEV,S1,21456,-7666.7126,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,4RUNNER,ICE,S1,77349,-11818.8416,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,4RUNNER,ICE,S1,92156,-26724.2177,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,BZ,BEV,S1,15609,32878.6223,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,toyota,US,BZ,BEV,S1,18570,32798.2918,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,toyota,US,CAMRY,HEV,S1,316115,20515.2527,57.155,2082.2,after lifetime
+US,toyota,US,CAMRY,HEV,S1,205156,20847.5159,58.281,2082.3,after lifetime
+US,toyota,US,CAMRY,ICE,S1,70,1243.9838,8.321,2033.3,within lifetime
+US,toyota,US,CAMRY,ICE,S1,104720,1243.9838,8.321,2032.3,within lifetime
+US,toyota,US,COROLLA,HEV,S1,50245,20594.2523,57.421,2082.4,after lifetime
+US,toyota,US,COROLLA,HEV,S1,50190,20340.9887,56.57,2080.6,after lifetime
+US,toyota,US,COROLLA,ICE,S1,197843,5326.4072,16.679,2041.7,after lifetime
+US,toyota,US,COROLLA,ICE,S1,182718,6771.6361,19.834,2043.8,after lifetime
+US,toyota,US,COROLLA CROSS,HEV,S1,29422,17020.6797,46.099,2071.1,after lifetime
+US,toyota,US,COROLLA CROSS,HEV,S1,35289,17020.6797,46.099,2070.1,after lifetime
+US,toyota,US,COROLLA CROSS,ICE,S1,70376,6049.0216,18.242,2043.2,after lifetime
+US,toyota,US,COROLLA CROSS,ICE,S1,57732,6049.0216,18.242,2042.2,after lifetime
+US,toyota,US,CROWN,HEV,S1,12309,10596.1489,28.761,2053.8,after lifetime
+US,toyota,US,CROWN,HEV,S1,19648,10596.1489,28.761,2052.8,after lifetime
+US,toyota,US,CROWN SIGNIA,HEV,S1,20550,13844.4288,37.11,2062.1,after lifetime
+US,toyota,US,CROWN SIGNIA,HEV,S1,10263,13844.4288,37.11,2061.1,after lifetime
+US,toyota,US,GR86 (INCL FR-S),ICE,S1,9940,-8173.2398,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,GR86 (INCL FR-S),ICE,S1,11426,-8173.2398,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,GRAND HIGHLANDER,HEV,S1,69210,6964.4882,20.263,2045.3,after lifetime
+US,toyota,US,GRAND HIGHLANDER,HEV,S1,26119,7745.1907,22.024,2046.0,after lifetime
+US,toyota,US,GRAND HIGHLANDER,ICE,S1,67591,-7522.6544,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,GRAND HIGHLANDER,ICE,S1,45602,-7522.6544,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,HIGHLANDER,HEV,S1,24720,10596.1489,28.761,2053.8,after lifetime
+US,toyota,US,HIGHLANDER,HEV,S1,24777,11005.0883,29.771,2053.8,after lifetime
+US,toyota,US,HIGHLANDER,ICE,S1,31488,-5742.8387,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,HIGHLANDER,ICE,S1,64881,-5742.8387,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,LAND CRUISER,HEV,S1,43946,-7810.7708,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,LAND CRUISER,HEV,S1,29113,-7666.7126,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,PRIUS,HEV,S1,40985,23157.0941,66.521,2091.5,after lifetime
+US,toyota,US,PRIUS,HEV,S1,32039,23157.0941,66.521,2090.5,after lifetime
+US,toyota,US,RAV4,HEV,S1,181433,13700.3706,36.722,2061.7,after lifetime
+US,toyota,US,RAV4,HEV,S1,208356,13700.3706,36.722,2060.7,after lifetime
+US,toyota,US,RAV4,ICE,S1,277583,3558.209,12.963,2038.0,within lifetime
+US,toyota,US,RAV4,ICE,S1,235744,2986.6232,11.794,2035.8,within lifetime
+US,toyota,US,SEQUOIA,HEV,S1,26186,-13584.7162,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,SEQUOIA,HEV,S1,26091,-13008.4834,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,SIENNA,HEV,S1,101476,11172.3816,30.187,2055.2,after lifetime
+US,toyota,US,SIENNA,HEV,S1,75008,11172.3816,30.187,2054.2,after lifetime
+US,toyota,US,SUPRA,ICE,S1,2953,-4539.2557,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,SUPRA,ICE,S1,2615,-4539.2557,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TACOMA,HEV,S1,30493,-8101.2107,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TACOMA,HEV,S1,9444,-8173.2398,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TACOMA,ICE,S1,244145,-13154.8652,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TACOMA,ICE,S1,183369,-13171.1298,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TUNDRA,HEV,S1,30549,-15799.0301,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TUNDRA,HEV,S1,37010,-15752.5597,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TUNDRA,ICE,S1,117061,-18496.636,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TUNDRA,ICE,S1,122518,-17980.8147,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,VENZA,HEV,S1,707,14422.9851,38.681,2063.7,after lifetime
+US,toyota,US,VENZA,HEV,S1,32086,14422.9851,38.681,2062.7,after lifetime
+US,toyota,US,4RUNNER,HEV,S3,21456,-25990.1748,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,4RUNNER,ICE,S3,77349,-30142.3037,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,4RUNNER,ICE,S3,92156,-45047.6799,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,BZ,BEV,S3,15609,22558.012,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,toyota,US,BZ,BEV,S3,18570,22522.5824,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,toyota,US,CAMRY,HEV,S3,316115,2191.7905,6.018,2031.0,within lifetime
+US,toyota,US,CAMRY,HEV,S3,205156,2524.0538,6.136,2030.1,within lifetime
+US,toyota,US,CAMRY,ICE,S3,70,-17079.4783,0.876,2025.9,within lifetime
+US,toyota,US,CAMRY,ICE,S3,104720,-17079.4783,0.876,2024.9,within lifetime
+US,toyota,US,COROLLA,HEV,S3,50245,2270.7902,6.046,2031.0,within lifetime
+US,toyota,US,COROLLA,HEV,S3,50190,2017.5266,5.956,2030.0,within lifetime
+US,toyota,US,COROLLA,ICE,S3,197843,-12997.055,1.756,2026.8,within lifetime
+US,toyota,US,COROLLA,ICE,S3,182718,-11551.826,2.088,2026.1,within lifetime
+US,toyota,US,COROLLA CROSS,HEV,S3,29422,-1302.7825,4.854,2029.9,within lifetime
+US,toyota,US,COROLLA CROSS,HEV,S3,35289,-1302.7825,4.854,2028.9,within lifetime
+US,toyota,US,COROLLA CROSS,ICE,S3,70376,-12274.4405,1.921,2026.9,within lifetime
+US,toyota,US,COROLLA CROSS,ICE,S3,57732,-12274.4405,1.921,2025.9,within lifetime
+US,toyota,US,CROWN,HEV,S3,12309,-7727.3133,3.028,2028.0,within lifetime
+US,toyota,US,CROWN,HEV,S3,19648,-7727.3133,3.028,2027.0,within lifetime
+US,toyota,US,CROWN SIGNIA,HEV,S3,20550,-4479.0333,3.907,2028.9,within lifetime
+US,toyota,US,CROWN SIGNIA,HEV,S3,10263,-4479.0333,3.907,2027.9,within lifetime
+US,toyota,US,GR86 (INCL FR-S),ICE,S3,9940,-26496.702,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,GR86 (INCL FR-S),ICE,S3,11426,-26496.702,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,GRAND HIGHLANDER,HEV,S3,69210,-11358.9739,2.134,2027.1,within lifetime
+US,toyota,US,GRAND HIGHLANDER,HEV,S3,26119,-10578.2714,2.319,2026.3,within lifetime
+US,toyota,US,GRAND HIGHLANDER,ICE,S3,67591,-25846.1166,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,GRAND HIGHLANDER,ICE,S3,45602,-25846.1166,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,HIGHLANDER,HEV,S3,24720,-7727.3133,3.028,2028.0,within lifetime
+US,toyota,US,HIGHLANDER,HEV,S3,24777,-7318.3739,3.135,2027.1,within lifetime
+US,toyota,US,HIGHLANDER,ICE,S3,31488,-24066.3008,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,HIGHLANDER,ICE,S3,64881,-24066.3008,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,LAND CRUISER,HEV,S3,43946,-26134.233,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,LAND CRUISER,HEV,S3,29113,-25990.1748,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,PRIUS,HEV,S3,40985,4833.6319,7.004,2032.0,within lifetime
+US,toyota,US,PRIUS,HEV,S3,32039,4833.6319,7.004,2031.0,within lifetime
+US,toyota,US,RAV4,HEV,S3,181433,-4623.0915,3.867,2028.9,within lifetime
+US,toyota,US,RAV4,HEV,S3,208356,-4623.0915,3.867,2027.9,within lifetime
+US,toyota,US,RAV4,ICE,S3,277583,-14765.2531,1.365,2026.4,within lifetime
+US,toyota,US,RAV4,ICE,S3,235744,-15336.8389,1.242,2025.2,within lifetime
+US,toyota,US,SEQUOIA,HEV,S3,26186,-31908.1784,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,SEQUOIA,HEV,S3,26091,-31331.9456,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,SIENNA,HEV,S3,101476,-7151.0805,3.178,2028.2,within lifetime
+US,toyota,US,SIENNA,HEV,S3,75008,-7151.0805,3.178,2027.2,within lifetime
+US,toyota,US,SUPRA,ICE,S3,2953,-22862.7178,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,SUPRA,ICE,S3,2615,-22862.7178,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TACOMA,HEV,S3,30493,-26424.6729,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TACOMA,HEV,S3,9444,-26496.702,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TACOMA,ICE,S3,244145,-31478.3273,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TACOMA,ICE,S3,183369,-31494.5919,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TUNDRA,HEV,S3,30549,-34122.4922,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TUNDRA,HEV,S3,37010,-34076.0218,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TUNDRA,ICE,S3,117061,-36820.0981,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,TUNDRA,ICE,S3,122518,-36304.2768,,,crossover before sale year (product already above benchmark at t=0)
+US,toyota,US,VENZA,HEV,S3,707,-3900.477,4.073,2029.1,within lifetime
+US,toyota,US,VENZA,HEV,S3,32086,-3900.477,4.073,2028.1,within lifetime

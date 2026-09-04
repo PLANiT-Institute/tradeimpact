@@ -24,7 +24,13 @@ SALES = DATA / "sales" / "processed"
 SALES_RAW = DATA / "sales" / "raw"
 EU27, US, KR = "EU27", "US", "KR"
 #: Processed sales files behind the US market cohort, and the destination they contribute.
-US_SALES_FILES = ("sales_hyundai_us.csv", "sales_kia_us.csv", "sales_kia_ir_2026.csv")
+US_SALES_FILES = (
+    "sales_hyundai_us.csv",
+    "sales_kia_us.csv",
+    "sales_kia_ir_2026.csv",
+    "sales_toyota_us.csv",
+    "sales_nissan_us.csv",
+)
 #: Processed sales files behind the Korea market cohort (destination KR rows).
 KR_SALES_FILES = ("sales_hyundai_kr.csv", "sales_kia_ir_2026.csv")
 

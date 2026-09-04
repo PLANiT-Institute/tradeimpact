@@ -78,7 +78,14 @@ MODEL_STEPS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("4b crossover and sensitivity", ("ti_crossover", "ti_sensitivity")),
     (
         "5 aggregates and data quality",
-        ("ti_country", "ti_powertrain", "ti_company", "ti_data", "ti_coverage"),
+        (
+            "ti_country",
+            "ti_powertrain",
+            "ti_company",
+            "ti_data",
+            "ti_coverage",
+            "ti_source",
+        ),
     ),
 )
 

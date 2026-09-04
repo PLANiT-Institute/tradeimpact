@@ -32,6 +32,18 @@ kia,US,S3,2026,reported,422171,8556,0.980136,-8105275.2755,-19199.0337,liability
 nissan,EU27,S1,2024,reported,197588,460,0.997677,-1442476.8525,-7300.4274,liability,True,
 nissan,EU27,S2,2024,reported,197588,460,0.997677,-2383804.3871,-12064.52,liability,True,
 nissan,EU27,S3,2024,reported,197588,460,0.997677,-4433575.1399,-22438.4838,liability,True,
+nissan,US,S1,2024,reported,864996,942,0.998912,2258871.2412,2611.4239,contribution,True,
+nissan,US,S2,2024,excluded,864996,942,,,,,,"flag_no_ndc: FLAG market: Guideline FLAG-market case: the United States notified withdrawal from the Paris Agreement on 2025-01-27, effective one year later; no NDC in force for the lifetime of any current cohort under committed policy. S2 excluded from the headline and reported separately; S1/S3 require IEA WEO STEPS/NZE rates. S2 is excluded from the headline and reported separately. Anchor verified: no."
+nissan,US,S3,2024,reported,864996,942,0.998912,-13317991.7215,-15396.5934,liability,True,
+nissan,US,S1,2025,reported,873293,14,0.999984,1363028.3216,1560.7915,contribution,True,
+nissan,US,S2,2025,excluded,873293,14,,,,,,"flag_no_ndc: FLAG market: Guideline FLAG-market case: the United States notified withdrawal from the Paris Agreement on 2025-01-27, effective one year later; no NDC in force for the lifetime of any current cohort under committed policy. S2 excluded from the headline and reported separately; S1/S3 require IEA WEO STEPS/NZE rates. S2 is excluded from the headline and reported separately. Anchor verified: no."
+nissan,US,S3,2025,reported,873293,14,0.999984,-14457838.2422,-16555.5412,liability,True,
 toyota,EU27,S1,2024,reported,777277,25817,0.967853,-1681919.1765,-2163.8607,liability,True,
 toyota,EU27,S2,2024,reported,777277,25817,0.967853,-6291264.8098,-8093.9804,liability,True,
 toyota,EU27,S3,2024,reported,777277,25817,0.967853,-14369773.622,-18487.3264,liability,True,
+toyota,US,S1,2024,reported,1942640,44314,0.977698,5526361.5162,2844.7687,contribution,True,
+toyota,US,S2,2024,excluded,1942640,44314,,,,,,"flag_no_ndc: FLAG market: Guideline FLAG-market case: the United States notified withdrawal from the Paris Agreement on 2025-01-27, effective one year later; no NDC in force for the lifetime of any current cohort under committed policy. S2 excluded from the headline and reported separately; S1/S3 require IEA WEO STEPS/NZE rates. S2 is excluded from the headline and reported separately. Anchor verified: no."
+toyota,US,S3,2024,reported,1942640,44314,0.977698,-29920082.1812,-15401.7637,liability,True,
+toyota,US,S1,2025,reported,2111810,36001,0.983238,8070605.6113,3821.6533,contribution,True,
+toyota,US,S2,2025,excluded,2111810,36001,,,,,,"flag_no_ndc: FLAG market: Guideline FLAG-market case: the United States notified withdrawal from the Paris Agreement on 2025-01-27, effective one year later; no NDC in force for the lifetime of any current cohort under committed policy. S2 excluded from the headline and reported separately; S1/S3 require IEA WEO STEPS/NZE rates. S2 is excluded from the headline and reported separately. Anchor verified: no."
+toyota,US,S3,2025,reported,2111810,36001,0.983238,-30500148.4285,-14442.6574,liability,True,

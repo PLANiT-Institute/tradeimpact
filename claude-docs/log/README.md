@@ -36,6 +36,9 @@ two that are not.
 | 2026-09-04 | Nissan in scope as the second Japanese maker, Honda pinned out | Lead's choice after the ranking was shown to depend on the basis: Honda second worldwide, Suzuki second on production and on Japanese sales with kei, Nissan second in the markets this project prices | EU27 result for Toyota, Hyundai, Kia, Nissan |
 | 2026-09-04 | Japan sales from JADA: nameplate registrations, maker fuel mix, brand registrations with the imported part | Free, machine-readable, the standard Japanese registration statistic; no Japanese publisher crosses model with fuel | Japan counted and unpriced until the benchmark is built; the fuel mix is the future powertrain-split assumption |
 
+| 2026-09-04 | US cohorts for Toyota and Nissan from their own US releases, transcribed to CSV with the publisher URL recorded; Lexus and Infiniti held out as separate companies | The lead limited the Japanese makers to the US and EU27; both companies publish a US model table, Toyota with powertrain | Toyota's overlay subtraction rule and the unprinted residual kept as a row; Nissan priced explicitly with no assumption |
+| 2026-09-04 | `ti_source_reconciliation.csv`: every source a company published for the same cell, compared like for like on brand boundary | Lead asked whether the Korean makers can stand on the same source class and how far a company's own figures differ | All five overlaps agree to 0.0 %; the apparent 17 % and 6 % gaps were Lexus and Infiniti, not data |
+
 ## Transitions
 
 | Date | Stage or phase | Event | Trigger | Consequence |

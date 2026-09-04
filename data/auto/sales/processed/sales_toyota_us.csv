@@ -1,0 +1,111 @@
+company,destination,destination_level,origin,cohort_year,period,model,powertrain,units,basis,source_id,source_file
+toyota,US,country,,2025,2025-01..2025-12,COROLLA,HEV,50245,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,COROLLA,ICE,197843,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,SUPRA,ICE,2953,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,GR86 (INCL FR-S),ICE,9940,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,MIRAI,FCEV,210,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,CROWN,HEV,12309,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,PRIUS,HEV,40985,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,PRIUS,PHEV,15503,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,CAMRY,HEV,316115,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,CAMRY,ICE,70,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,IS,ICE,19714,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,RC,ICE,1349,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,ES,HEV,16063,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,ES,ICE,23863,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,LS,HEV,38,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,LS,ICE,1044,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,LC,HEV,10,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,LC,ICE,1276,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,BZ,BEV,15609,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,RAV4,HEV,181433,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,RAV4,PHEV,20272,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,RAV4,ICE,277583,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,COROLLA CROSS,HEV,29422,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,COROLLA CROSS,ICE,70376,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,CROWN SIGNIA,HEV,20550,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,VENZA,HEV,707,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,HIGHLANDER,HEV,24720,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,HIGHLANDER,ICE,31488,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,GRAND HIGHLANDER,HEV,69210,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,GRAND HIGHLANDER,ICE,67591,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,4RUNNER,HEV,21456,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,4RUNNER,ICE,77349,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,SEQUOIA,HEV,26186,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,LAND CRUISER,HEV,43946,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,SIENNA,HEV,101476,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,SIENNA,ICE,10,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,TACOMA,HEV,30493,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,TACOMA,ICE,244145,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,TUNDRA,HEV,30549,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,TUNDRA,ICE,117061,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,UX,HEV,8421,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,NX,HEV,30203,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,NX,PHEV,7008,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,NX,ICE,39625,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,RZ,BEV,6400,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,RX,HEV,43259,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,RX,PHEV,5873,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,RX,ICE,64124,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,TX,HEV,10740,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,TX,PHEV,953,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,TX,ICE,45653,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,GX,ICE,37180,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,LX,HEV,2883,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2025,2025-01..2025-12,LX,ICE,4581,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2025,2025-01..2025-12,OTHER (NOT PRINTED AS A MODEL ROW),,6,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,COROLLA,HEV,50190,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,COROLLA,ICE,182718,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,SUPRA,ICE,2615,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,GR86 (INCL FR-S),ICE,11426,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,MIRAI,FCEV,499,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,CROWN,HEV,19648,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,PRIUS,HEV,32039,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,PRIUS,PHEV,12672,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,CAMRY,HEV,205156,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,CAMRY,ICE,104720,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,IS,ICE,18946,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,RC,ICE,1854,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,ES,HEV,18481,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,ES,ICE,24675,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,LS,HEV,94,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,LS,ICE,2069,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,LC,HEV,18,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,LC,ICE,1446,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,BZ,BEV,18570,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,RAV4,HEV,208356,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,RAV4,PHEV,31093,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,RAV4,ICE,235744,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,COROLLA CROSS,HEV,35289,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,COROLLA CROSS,ICE,57732,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,CROWN SIGNIA,HEV,10263,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,VENZA,HEV,32086,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,HIGHLANDER,HEV,24777,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,HIGHLANDER,ICE,64881,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,GRAND HIGHLANDER,HEV,26119,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,GRAND HIGHLANDER,ICE,45602,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,4RUNNER,ICE,92156,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,SEQUOIA,HEV,26091,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,SEQUOIA,ICE,6,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,LAND CRUISER,HEV,29113,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,SIENNA,HEV,75008,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,SIENNA,ICE,29,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,TACOMA,HEV,9444,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,TACOMA,ICE,183369,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,TUNDRA,HEV,37010,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,TUNDRA,ICE,122518,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,UX,HEV,8877,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,NX,HEV,27129,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,NX,PHEV,6301,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,NX,ICE,41058,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,RZ,BEV,9697,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,RX,HEV,42876,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,RX,PHEV,4248,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,RX,ICE,71512,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,TX,HEV,4812,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,TX,PHEV,502,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,TX,ICE,23326,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,GX,ICE,30914,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,LX,ICE,6830,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+toyota,US,country,,2024,2024-01..2024-12,OTHER (NOT PRINTED AS A MODEL ROW),,15,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
+lexus,US,country,,2024,2024-01..2024-12,OTHER (NOT PRINTED AS A MODEL ROW),,4,brand_total_sales,tmna_us_sales_release,tmna_us_sales_2025.csv
