@@ -1,0 +1,43 @@
+make,base_model,powertrain,model_year,production_volume,share,label_comb_mpg_weighted,carlines,source_id,source_file
+GENESIS,G70,ICE,2024,5984,1.0,22.4,G70 AWD; G70 RWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+GENESIS,G80,BEV,2024,430,0.086921,101.0,Electrified G80,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+GENESIS,G80,ICE,2024,4517,0.913079,21.9,G80 AWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+GENESIS,G90,ICE,2024,1419,1.0,20.1,G90 AWD; G90 MHEV,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+GENESIS,GV60,BEV,2024,2820,1.0,81.6,GV60 Advanced (19'' Wheels); GV60 Advanced (20'' Wheels); GV60 Performance; GV60 Standard,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+GENESIS,GV70,BEV,2024,2703,0.139625,91.0,Electrified GV70,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+GENESIS,GV70,ICE,2024,16656,0.860375,22.1,GV70 AWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+GENESIS,GV80,ICE,2024,22993,1.0,20.7,GV80 AWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Elantra,HEV,2024,14023,0.10594,52.2,Elantra Hybrid; Elantra Hybrid Blue,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Elantra,ICE,2024,118344,0.89406,34.1,Elantra; Elantra N,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,IONIQ 5,BEV,2024,50409,1.0,64.1,Ioniq 5 Long range AWD; Ioniq 5 Long range RWD; Ioniq 5 Standard range RWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,IONIQ 5 Robo Taxi,BEV,2024,50,1.0,48.0,Ioniq 5 Robo taxi,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,IONIQ 6,BEV,2024,11866,1.0,60.3,Ioniq 6 Long range AWD (18'' Wheels); Ioniq 6 Long range AWD (20'' Wheels); Ioniq 6 Long range RWD (18'' Wheels); Ioniq 6 Long range RWD (20'' Wheels); Ioniq 6 Standard Range RWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Kona,BEV,2024,4368,0.050582,29.0,Kona Electric Long Range; Kona Electric Standard Range,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Kona,ICE,2024,81987,0.949418,28.4,Kona AWD; Kona FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Palisade,ICE,2024,117443,1.0,21.4,Palisade AWD; Palisade FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Santa Cruz(Tucson O/B),ICE,2024,43179,1.0,22.6,Santa Cruz AWD; Santa Cruz FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Santa Fe,HEV,2024,17098,0.219955,34.6,Santa Fe Hybrid AWD; Santa Fe Hybrid FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Santa Fe,ICE,2024,60636,0.780045,23.2,Santa Fe AWD; Santa Fe AWD XRT; Santa Fe FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Sonata,HEV,2024,12702,0.235715,47.0,Sonata Hybrid,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Sonata,ICE,2024,41185,0.764285,28.6,Sonata AWD; Sonata FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Tucson,HEV,2024,62127,0.262643,37.2,Tucson Hybrid; Tucson Hybrid Blue,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Tucson,ICE,2024,164741,0.696447,26.4,Tucson AWD; Tucson FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Tucson,PHEV,2024,9677,0.04091,35.0,Tucson Plug-in Hybrid,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+HYUNDAI,Venue,ICE,2024,31897,1.0,31.0,Venue,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Carnival,ICE,2024,56196,1.0,22.0,Carnival,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,EV6,BEV,2024,26354,1.0,70.4,EV6 AWD GT; EV6 Long Range AWD (19'' Wheels); EV6 Long Range AWD (20'' Wheels); EV6 Long Range RWD; EV6 Standard Range RWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,EV9,BEV,2024,22993,1.0,79.1,EV9 Long Range AWD; EV9 Long Range AWD GT-Line; EV9 Long Range RWD; EV9 Standard Range RWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,K4/Forte,ICE,2024,128221,1.0,31.7,Forte; Forte FE,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,K5,ICE,2024,38855,1.0,29.9,K5; K5 AWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Niro,BEV,2024,13927,0.411251,29.0,Niro Electric,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Niro,HEV,2024,16353,0.482888,51.8,Niro; Niro FE,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Niro,PHEV,2024,3585,0.105862,48.0,Niro Plug-in Hybrid,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Seltos,ICE,2024,89416,1.0,29.0,Seltos AWD; Seltos FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Sorento,HEV,2024,4799,0.08508,34.5,Sorento Hybrid AWD; Sorento Hybrid FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Sorento,ICE,2024,50609,0.897227,24.4,Sorento AWD; Sorento FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Sorento,PHEV,2024,998,0.017693,34.0,Sorento Plug-in Hybrid,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Soul,ICE,2024,47112,1.0,30.1,Soul; Soul Eco dynamics,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Sportage,HEV,2024,21052,0.142456,38.4,Sportage Hybrid AWD; Sportage Hybrid FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Sportage,ICE,2024,118154,0.799532,26.4,Sportage AWD; Sportage FWD; Sportage X-pro,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Sportage,PHEV,2024,8573,0.058012,35.0,Sportage Plug-in Hybrid,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv
+KIA,Telluride,ICE,2024,147554,1.0,20.4,Telluride AWD; Telluride FWD,epa_automotive_trends_my2024,epa_automotive_trends_my2024.csv

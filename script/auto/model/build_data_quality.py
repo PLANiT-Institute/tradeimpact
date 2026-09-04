@@ -74,13 +74,26 @@ def main() -> None:
     cohorts = load_cohorts()
 
     rows: list[dict[str, object]] = []
-    for company, market in sorted({(c["company"], c["market"]) for c in cells}):
-        theirs = [c for c in cells if c["company"] == company and c["market"] == market]
+    grains = sorted({(c["company"], c["market"], int(c["cohort_year"])) for c in cells})
+    for company, market, cohort_year in grains:
+        theirs = [
+            c
+            for c in cells
+            if c["company"] == company
+            and c["market"] == market
+            and int(c["cohort_year"]) == cohort_year
+        ]
         scenarios = sorted({c["scenario"] for c in theirs})
         # Units are scenario-invariant; count them once.
         mine = [c for c in theirs if c["scenario"] == scenarios[0]]
         covered = sum(int(c["units"]) for c in mine)
-        held = [w for w in withheld if w["company"] == company and w["market"] == market]
+        held = [
+            w
+            for w in withheld
+            if w["company"] == company
+            and w["market"] == market
+            and int(w["cohort_year"]) == cohort_year
+        ]
         held_units = sum(int(w["units"]) for w in held)
         tier_c = sum(int(c["units"]) for c in mine if c["vkt_tier"] == "C")
         life_weighted = sum(int(c["units"]) * int(c["lifetime_years"]) for c in mine)
@@ -95,7 +108,10 @@ def main() -> None:
             {
                 c["coverage_note"]
                 for c in cohorts
-                if c["company"] == company and c["market"] == market and c["coverage_note"]
+                if c["company"] == company
+                and c["market"] == market
+                and int(c["cohort_year"]) == cohort_year
+                and c["coverage_note"]
             }
             | {w["coverage_note"] for w in held if w["coverage_note"]}
         )
@@ -112,7 +128,7 @@ def main() -> None:
             {
                 "company": company,
                 "market": market,
-                "cohort_year": min(int(c["cohort_year"]) for c in mine),
+                "cohort_year": cohort_year,
                 "analysis_level": ANALYSIS_LEVEL,
                 "layer1_method": LAYER1_METHOD,
                 "sales_basis": ";".join(
@@ -120,7 +136,9 @@ def main() -> None:
                         {
                             c["basis"]
                             for c in cohorts
-                            if c["company"] == company and c["market"] == market
+                            if c["company"] == company
+                            and c["market"] == market
+                            and int(c["cohort_year"]) == cohort_year
                         }
                     )
                 ),
@@ -139,7 +157,9 @@ def main() -> None:
                     sorted(
                         e["scenario"]
                         for e in exclusions
-                        if e["company"] == company and e["market"] == market
+                        if e["company"] == company
+                        and e["market"] == market
+                        and int(e["cohort_year"]) == cohort_year
                     )
                 ),
                 "markets_covered": len(countries),
@@ -156,7 +176,8 @@ def main() -> None:
     write_csv(OUT, FIELDS, rows)
     for r in rows:
         print(
-            f"{r['company']} {r['market']}: tier-C share {float(r['tier_c_share']):.1%}, "  # type: ignore[arg-type]
+            f"{r['company']} {r['market']} {r['cohort_year']}: "
+            f"tier-C share {float(r['tier_c_share']):.1%}, "  # type: ignore[arg-type]
             f"directional_only={r['directional_only']}, T central "
             f"{r['lifetime_t_central_years']} y, excluded [{r['scenarios_excluded']}]"
         )

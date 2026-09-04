@@ -16,15 +16,15 @@ different test cycles and different national benchmarks.
 | `reference_trajectories_us.csv` | 3 | `build_reference_us.py` | the same columns for the US market (S1 and S3 only — see *United States* below) |
 | `ti_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario: units, lifetime, distance + tier, test cycle, real-world factor, year-0 product and benchmark emissions, `ti_per_vehicle_kgco2e`, `ti_tco2e` |
 | `ti_annual_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario × year: benchmark and product emissions per vehicle, the annual gap, and the cell's TI flow that year (tCO2e) — the year-by-year view at any aggregation level |
-| `ti_annual.csv` | 4 | `build_ti.py` | market × company × scenario × t: annual TI flow (tCO2e) and surviving vehicles |
+| `ti_annual.csv` | 4 | `build_ti.py` | market × company × cohort_year × scenario × t: annual TI flow (tCO2e) and surviving vehicles |
 | `ti_withheld.csv` | 4 | `build_ti.py` | units carrying no result and why — the step-3a rows plus the markets whose benchmark is withheld |
 | `ti_exclusions.csv` | 4 | `build_ti.py` | market × company × scenario that the market publishes no benchmark for, with the units affected and the sourced reason |
 | `ti_crossover.csv` | 4b | `build_sensitivity.py` | market × company × destination × model × powertrain × scenario: closed-form crossover year (years after sale and calendar year) or the reason there is none |
 | `ti_sensitivity.csv` | 4b | `build_sensitivity.py` | company × market × scenario × dimension (lifetime ±3 y, real-world factor low/high, proxied-distance quartiles, powertrain mix) × variant: cohort total |
-| `ti_country.csv` | 5 | `aggregate_country.py` | company × market × destination × scenario: units, `ti_tco2e`, per-vehicle, direction |
-| `ti_powertrain.csv` | 5 | `aggregate_country.py` | company × market × powertrain × scenario |
-| `ti_company.csv` | 5 | `aggregate_country.py` | company × market × scenario: `status` (reported / excluded), covered/withheld units, total, per-vehicle, direction, decomposition identity check, exclusion reason |
-| `ti_coverage.csv` | 5c | `build_coverage.py` | company × destination (every destination in the sales files, worldwide) × cohort year × basis: units, priced units, withheld units, status (`priced`, `withheld`, `no_benchmark`, `region_unpriced`, `destination_unknown`), market — the coverage picture a reader filters countries from |
+| `ti_country.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × destination × scenario: units, `ti_tco2e`, per-vehicle, direction |
+| `ti_powertrain.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × powertrain × scenario |
+| `ti_company.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × scenario: `status` (reported / excluded), covered/withheld units, total, per-vehicle, direction, decomposition identity check, exclusion reason |
+| `ti_coverage.csv` | 5c | `build_coverage.py` | company × destination (every destination in the market-side sales files, worldwide) × cohort year × basis: `destination_group` (EU27, US, the company's home country KR or JP, IN, others), `home_country`, units, priced units, withheld units, status (`priced`, `withheld`, `no_benchmark`, `plant_side_only`, `region_unpriced`, `destination_unknown`), market — the coverage picture a reader filters countries from |
 | `ti_data_quality.csv` | 5b | `build_data_quality.py` | company × market: analysis level, benchmark method, sales basis, test cycles, covered/withheld units, tier-C unit share and the `directional_only` flag (guideline §5.3, threshold 50 %), central lifetime, scenarios reported and excluded, markets by distance tier, withheld reasons, coverage notes, warnings |
 
 `cohorts.csv` carries a `variant` column. `central` is the published cohort; every other value
@@ -95,7 +95,24 @@ replacement of the central factor, never on top of it.
 4. **Age-band year** — the mean-age partition is taken at or before the cohort year, the
    same cap as stock, CO2 and grid; the "one year ahead" exception is gone.
 5. **Exporters in scope** — Hyundai and Kia only for now (`companies.csv`); the Toyota and
-   Honda snapshots stay pinned and re-enter with one flag change.
+   Honda snapshots stay pinned and re-enter with one flag change. Genesis is listed as its own
+   company with `in_scope = no`, so Genesis nameplates inside Hyundai's IR files (US and Korea)
+   are counted and excluded, never folded into the Hyundai brand.
+6. **A-US-PT: powertrain split of US nameplates** — the company US releases publish one row per
+   nameplate (Tucson, Santa Fe, Sportage, Sorento, Niro, Elantra, Sonata, Kona, Carnival) and
+   do not split ICE, HEV and PHEV. The units are divided with the EPA Automotive Trends
+   model-year-2024 production-for-US-sale shares of the same nameplate
+   (`vehicle_technology/processed/epa_trends_powertrain_share_my2024.csv`, rule
+   `epa_share_my2024` in `us_model_map.csv`, largest-remainder rounding so the parts sum to the
+   published units). Two caveats travel with it: production volume is not calendar-year sales
+   (the brand totals differ by −0.2 % for Kia and +0.6 % for Hyundai against the MY2024 volumes),
+   and MY2024 shares are applied to the 2024, 2025 and 2026 cohorts alike, so a hybrid ramp after
+   MY2024 (Carnival Hybrid, Palisade Hybrid) is not in the central case. The `powertrain_mix`
+   sensitivity keeps the all-hybrid bound for every split nameplate. Where a release separates
+   the electric variant (Kia IR: Niro EV) only the remaining shares are applied.
+7. **Cohort years are never pooled.** Every aggregate (`ti_annual`, `ti_country`,
+   `ti_powertrain`, `ti_company`, `ti_sensitivity`, `ti_data_quality`, `ti_exclusions`) carries
+   `cohort_year`; a 2024 full year, a 2025 full year and a 2026 half year are separate rows.
 
 Two markets (BG, PL) show a rising observed per-car CO2 trend, so their S1 benchmark grows;
 this is flagged `OBSERVED_INCREASE` in `emission_targets_eu27.csv` and left as observed.
@@ -109,32 +126,37 @@ authority, so its coverage caveats are part of the result and travel on every ro
 
 **Cohort caveats.**
 
-1. **Kia US is a partial year.** `sales_kia_ir_2026.csv` is the Jan–Jun 2026 retail-sales
-   release; the cohort is six months of sales, not a calendar year, and must never be compared
-   with a full-year EU27 cohort at face value.
-2. **Hyundai US is US-built cars only.** `sales_hyundai_plant_2025.csv` is production-side
-   plant sales; the Domestic segment of the US plants is what lands in the US market. Vehicles
-   sold in the US but built in Korea or elsewhere are not in the source and are therefore not
-   in the cohort.
-3. **Origin is pooled.** The Kia release splits one destination across production origins
+1. **Three market-side sources, three cohort years.** Hyundai: the IR "US Retail Sales by
+   Model" workbooks for 2024 and 2025 (`sales_hyundai_us.csv`; imports and US-built together;
+   the sheet is labelled retail but equals the brand total including fleet, proven against the
+   HMA and Genesis releases). Kia: the Kia America December exports for 2024 and 2025
+   (`sales_kia_us.csv`, brand total) and the Kia Corporation IR release for Jan–Jun 2026
+   (`sales_kia_ir_2026.csv`, retail, a half year that must never be read against a full-year
+   cohort at face value). The plant-side file `sales_hyundai_plant_2025.csv` is no longer a US
+   cohort source; it remains the only source for Hyundai's other plant countries.
+2. **Genesis is counted and excluded.** Genesis nameplates in the Hyundai sheets carry
+   `company = genesis`, which `companies.csv` puts out of scope (75,003 units in 2024 and
+   82,331 in 2025); the IONIQ 5 Robo Taxi rows (49 and 16 units) are `out_of_scope` fleet
+   vehicles.
+3. **Origin is pooled.** The Kia IR release splits one destination across production origins
    (KR, MX, US); Level 1 does not establish production origin, so the volumes are summed into
    one cohort row per model.
-4. **Powertrain is joined, not reported.** Neither release states the powertrain.
-   `sales/method/us_model_map.csv` resolves each commercial name to an EPA `base_model` and a
-   powertrain. Where the name fixes the powertrain the rule is `explicit`; where the same name
-   covers several powertrains and the release does not split them the rule is
-   `mixed_central_ice` — the central case prices those units on the rule's powertrain and the
-   `powertrain_mix` sensitivity reprices every one of them as a hybrid, which is the honest
-   upper bound of the cohort. Genesis-brand rows are `out_of_scope` and withheld with their
-   units.
+4. **Powertrain is joined, not reported.** The releases state the powertrain only where the
+   nameplate carries it (IONIQ 5/6/9, EV6, EV9, Nexo). `sales/method/us_model_map.csv`
+   resolves every published name to an EPA `base_model` and either fixes the powertrain
+   (`explicit`) or splits the nameplate with the EPA Automotive Trends MY2024 production shares
+   (`epa_share_my2024`, decision 6 above); the PHEV part of a split is withheld like every
+   PHEV, and the `powertrain_mix` sensitivity reprices every split nameplate as all-hybrid.
+   Rio (1,917 units, 2024) and IONIQ 9 (5,189 units, 2025) are withheld because no EPA
+   technology row exists at or before their cohort year.
 5. **Technology is EPA label data.** `vehicle_technology_us_epa.csv` values are trim-weighted
    means over the EPA model names of the base model, taken from the latest model year at or
    before the cohort year. EPA label values are already 5-cycle adjusted toward real-world use,
    so the real-world correction for `test_cycle = EPA` is 1.0 at the central value and at both
    ends of the band — the real-world sensitivity therefore does not move the US result.
-6. **Parameters lag the cohort.** The sale years are 2025 (Hyundai) and 2026 (Kia); the
-   destination parameters are the latest observations at or before 2024 (stock, traffic and
-   inventory 2023; grid 2024). Trajectories are indexed on `t` = years after sale, not on
+6. **Parameters lag the cohort.** The sale years are 2024, 2025 and 2026; the destination
+   parameters are the latest observations at or before 2024 (stock, traffic and inventory
+   2023; grid 2024). Trajectories are indexed on `t` = years after sale, not on
    calendar year, so the lag affects the level of the benchmark, not its alignment.
 
 **Benchmark.** Distance and stock are all light-duty vehicles — FHWA VM-1 short- plus

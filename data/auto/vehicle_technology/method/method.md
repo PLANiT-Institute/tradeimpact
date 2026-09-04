@@ -48,6 +48,7 @@ powertrain (`source_id` `eea_co2_monitoring_2024`). Real-world correction factor
 | processed file | script | content |
 |---|---|---|
 | `vehicle_technology_eea_2024.csv` | `script/auto/vehicle_technology/extract_eea_certified.py` | one row per company × destination × model × powertrain for the companies in scope (EU27 2024; WLTP); rows without a certified value are kept with an empty value and withheld downstream |
+| `epa_trends_powertrain_share_my2024.csv` | `script/auto/vehicle_technology/extract_epa_trends.py` | one row per make × nameplate × powertrain from the EPA Automotive Trends MY2024 carline file: certification production volume (deduplicated on CAFE manufacturer, division, carline code and model-type index), share within the nameplate, volume-weighted label combined MPG; nameplates mapped through `method/epa_carline_map.csv` to the labels the company sales releases use. Supplies the powertrain split the releases withhold (assumption A-US-PT in `output/method.md`); production volumes are never a cohort |
 | `vehicle_technology_us_epa.csv` | `script/auto/vehicle_technology/extract_epa_fueleconomy.py` | one row per company × model year (2024–2025) × EPA model name × powertrain for the companies in scope; EPA combined-cycle CO2 (g/mile → g/km) and electricity (kWh/100 mi → Wh/km), unweighted mean over trims with the trim count; `base_model` is the join key to model-level sales |
 
 ## Sources

@@ -44,6 +44,7 @@ REPORTED, EXCLUDED = "reported", "excluded"
 GROUP_FIELDS = [
     "company",
     "market",
+    "cohort_year",
     "key",
     "scenario",
     "units",
@@ -75,18 +76,19 @@ def direction(value: float) -> str:
 
 def group(cells: list[dict[str, str]], by: str) -> list[dict[str, object]]:
     """Sum TI and units over ``by`` (destination or powertrain) per company x market x scenario."""
-    ti: dict[tuple[str, str, str, str], float] = defaultdict(float)
-    units: dict[tuple[str, str, str, str], int] = defaultdict(int)
+    ti: dict[tuple[str, str, int, str, str], float] = defaultdict(float)
+    units: dict[tuple[str, str, int, str, str], int] = defaultdict(int)
     for c in cells:
-        k = (c["company"], c["market"], c[by], c["scenario"])
+        k = (c["company"], c["market"], int(c["cohort_year"]), c[by], c["scenario"])
         ti[k] += float(c["ti_tco2e"])
         units[k] += int(c["units"])
     return [
         {
             "company": k[0],
             "market": k[1],
-            "key": k[2],
-            "scenario": k[3],
+            "cohort_year": k[2],
+            "key": k[3],
+            "scenario": k[4],
             "units": units[k],
             "ti_tco2e": round(ti[k], 4),
             "ti_per_vehicle_kgco2e": round(ti[k] * 1000.0 / units[k], 4) if units[k] else None,
@@ -107,14 +109,15 @@ def write_group(path: Path, rows: list[dict[str, object]], key_name: str) -> Non
 def main() -> None:
     """Aggregate and verify the decomposition identity for every company x market x scenario."""
     cells = read_csv(CELLS)
-    withheld_units: dict[tuple[str, str], int] = defaultdict(int)
+    withheld_units: dict[tuple[str, str, int], int] = defaultdict(int)
     for r in read_csv(WITHHELD):
-        withheld_units[(r["company"], r["market"])] += int(r["units"])
+        withheld_units[(r["company"], r["market"], int(r["cohort_year"]))] += int(r["units"])
     # Independent recomputation: the annual flow (eq 3.7) summed over years must equal the
     # cell totals (eq 3.5-3.6) — a different aggregation path, not a re-ordering of the same one.
-    annual_total: dict[tuple[str, str, str], float] = defaultdict(float)
+    annual_total: dict[tuple[str, str, int, str], float] = defaultdict(float)
     for r in read_csv(ANNUAL):
-        annual_total[(r["company"], r["market"], r["scenario"])] += float(r["ti_tco2e"])
+        key = (r["company"], r["market"], int(r["cohort_year"]), r["scenario"])
+        annual_total[key] += float(r["ti_tco2e"])
     exclusions = read_csv(EXCLUSIONS)
 
     by_country = group(cells, "destination")
@@ -123,9 +126,17 @@ def main() -> None:
     write_group(OUT_POWERTRAIN, by_powertrain, "powertrain")
 
     company_rows: list[dict[str, object]] = []
-    for company, market in sorted({(c["company"], c["market"]) for c in cells}):
-        theirs = [c for c in cells if c["company"] == company and c["market"] == market]
-        held = withheld_units[(company, market)]
+    grains = sorted({(c["company"], c["market"], int(c["cohort_year"])) for c in cells})
+    for company, market, cohort_year in grains:
+        theirs = [
+            c
+            for c in cells
+            if c["company"] == company
+            and c["market"] == market
+            and int(c["cohort_year"]) == cohort_year
+        ]
+        held = withheld_units[(company, market, cohort_year)]
+        grain = (company, market, cohort_year)
         for scenario in sorted({c["scenario"] for c in theirs}):
             mine = [c for c in theirs if c["scenario"] == scenario]
             total = sum(float(c["ti_tco2e"]) for c in mine)
@@ -133,25 +144,27 @@ def main() -> None:
             row_sum = sum(
                 float(str(r["ti_tco2e"]))
                 for r in by_country
-                if (r["company"], r["market"], r["scenario"]) == (company, market, scenario)
+                if (r["company"], r["market"], r["cohort_year"], r["scenario"])
+                == (*grain, scenario)
             )
             col_sum = sum(
                 float(str(r["ti_tco2e"]))
                 for r in by_powertrain
-                if (r["company"], r["market"], r["scenario"]) == (company, market, scenario)
+                if (r["company"], r["market"], r["cohort_year"], r["scenario"])
+                == (*grain, scenario)
             )
             scale = max(1.0, abs(total))
             holds = (
                 abs(row_sum - total) <= IDENTITY_TOL * scale
                 and abs(col_sum - total) <= IDENTITY_TOL * scale
-                and abs(annual_total[(company, market, scenario)] - total) <= ANNUAL_TOL * scale
+                and abs(annual_total[(*grain, scenario)] - total) <= ANNUAL_TOL * scale
             )
             company_rows.append(
                 {
                     "company": company,
                     "market": market,
                     "scenario": scenario,
-                    "cohort_year": min(int(c["cohort_year"]) for c in mine),
+                    "cohort_year": cohort_year,
                     "status": REPORTED,
                     "covered_units": covered,
                     "withheld_units": held,
@@ -168,10 +181,12 @@ def main() -> None:
                 }
             )
             if not holds:
-                raise SystemExit(f"decomposition identity fails for {company} {market} {scenario}")
+                raise SystemExit(
+                    f"decomposition identity fails for {company} {market} {cohort_year} {scenario}"
+                )
         # An excluded scenario is published as its own row so the gap is never silent.
         for e in exclusions:
-            if (e["company"], e["market"]) != (company, market):
+            if (e["company"], e["market"], int(e["cohort_year"])) != grain:
                 continue
             company_rows.append(
                 {
@@ -190,11 +205,21 @@ def main() -> None:
                     "exclusion_reason": e["reason"],
                 }
             )
-    company_rows.sort(key=lambda r: (str(r["company"]), str(r["market"]), str(r["scenario"])))
+    company_rows.sort(
+        key=lambda r: (
+            str(r["company"]),
+            str(r["market"]),
+            str(r["cohort_year"]),
+            str(r["scenario"]),
+        )
+    )
     write_csv(OUT_COMPANY, COMPANY_FIELDS, company_rows)
 
     for published in company_rows:
-        label = f"{published['company']} {published['market']} {published['scenario']}"
+        label = (
+            f"{published['company']} {published['market']} {published['cohort_year']} "
+            f"{published['scenario']}"
+        )
         if published["status"] == EXCLUDED:
             print(f"{label}: excluded (no benchmark)")
             continue

@@ -24,12 +24,21 @@ SALES = DATA / "sales" / "processed"
 SALES_RAW = DATA / "sales" / "raw"
 EU27, US = "EU27", "US"
 #: Processed sales files behind the US market cohort, and the destination they contribute.
-US_SALES_FILES = ("sales_kia_ir_2026.csv", "sales_hyundai_plant_2025.csv")
+US_SALES_FILES = ("sales_hyundai_us.csv", "sales_kia_us.csv", "sales_kia_ir_2026.csv")
 
 
 def rows(path: Path) -> list[dict[str, str]]:
     with path.open(newline="") as f:
         return list(csv.DictReader(f))
+
+
+def in_scope_companies() -> set[str]:
+    """Companies flagged in scope in sales/method/companies.csv."""
+    return {
+        r["company"]
+        for r in rows(SALES.parent / "method" / "companies.csv")
+        if r["in_scope"] == "yes"
+    }
 
 
 @pytest.fixture(scope="module")
@@ -91,12 +100,16 @@ def test_ice_hev_cells_match_closed_form(
 
 
 def test_annual_flow_equals_cell_totals(cells: list[dict[str, str]]) -> None:
-    by_cells: dict[tuple[str, str, str], float] = defaultdict(float)
+    by_cells: dict[tuple[str, str, str, str], float] = defaultdict(float)
     for c in cells:
-        by_cells[(c["company"], c["market"], c["scenario"])] += float(c["ti_tco2e"])
-    by_annual: dict[tuple[str, str, str], float] = defaultdict(float)
+        by_cells[(c["company"], c["market"], c["cohort_year"], c["scenario"])] += float(
+            c["ti_tco2e"]
+        )
+    by_annual: dict[tuple[str, str, str, str], float] = defaultdict(float)
     for r in rows(OUT / "ti_annual.csv"):
-        by_annual[(r["company"], r["market"], r["scenario"])] += float(r["ti_tco2e"])
+        by_annual[(r["company"], r["market"], r["cohort_year"], r["scenario"])] += float(
+            r["ti_tco2e"]
+        )
     assert by_cells.keys() == by_annual.keys()
     for key, total in by_cells.items():
         assert abs(by_annual[key] - total) <= 1e-6 * max(1.0, abs(total)), key
@@ -106,12 +119,15 @@ def test_company_totals_equal_country_and_powertrain_sums(
     company_rows: list[dict[str, str]],
 ) -> None:
     company = {
-        (r["company"], r["market"], r["scenario"]): float(r["ti_tco2e"]) for r in company_rows
+        (r["company"], r["market"], r["cohort_year"], r["scenario"]): float(r["ti_tco2e"])
+        for r in company_rows
     }
     for name in ("ti_country.csv", "ti_powertrain.csv"):
-        sums: dict[tuple[str, str, str], float] = defaultdict(float)
+        sums: dict[tuple[str, str, str, str], float] = defaultdict(float)
         for r in rows(OUT / name):
-            sums[(r["company"], r["market"], r["scenario"])] += float(r["ti_tco2e"])
+            sums[(r["company"], r["market"], r["cohort_year"], r["scenario"])] += float(
+                r["ti_tco2e"]
+            )
         assert sums.keys() == company.keys(), name
         for key, total in company.items():
             assert abs(sums[key] - total) <= 1e-9 * max(1.0, abs(total)), (name, key)
@@ -154,7 +170,7 @@ def test_us_covered_plus_withheld_equals_sales(cells: list[dict[str, str]]) -> N
     sales: dict[str, int] = defaultdict(int)
     for name in US_SALES_FILES:
         for r in rows(SALES / name):
-            if r["destination"] == US:
+            if r["destination"] == US and r["company"] in in_scope_companies():
                 sales[r["company"]] += int(r["units"])
     assert sales
     for company, units in sales.items():
@@ -172,9 +188,14 @@ def test_cohorts_cover_every_sales_row_exactly_once() -> None:
     source: dict[tuple[str, str], int] = defaultdict(int)
     for r in rows(SALES / "sales_eea_eu27_2024.csv"):
         source[(EU27, r["company"])] += int(r["units"])
+    in_scope = {
+        r["company"]
+        for r in rows(SALES.parent / "method" / "companies.csv")
+        if r["in_scope"] == "yes"
+    }
     for name in US_SALES_FILES:
         for r in rows(SALES / name):
-            if r["destination"] == US:
+            if r["destination"] == US and r["company"] in in_scope:
                 source[(US, r["company"])] += int(r["units"])
     assert cohorts == source
 
@@ -223,13 +244,14 @@ def test_excluded_scenarios_are_published_not_silent(cells: list[dict[str, str]]
 def test_sensitivity_central_equals_the_published_total(company_rows: list[dict[str, str]]) -> None:
     """Every sensitivity dimension's central variant reproduces the headline cohort total."""
     published = {
-        (r["company"], r["market"], r["scenario"]): float(r["ti_tco2e"]) for r in company_rows
+        (r["company"], r["market"], r["cohort_year"], r["scenario"]): float(r["ti_tco2e"])
+        for r in company_rows
     }
     checked = 0
     for r in rows(OUT / "ti_sensitivity.csv"):
         if r["variant"] != "central":
             continue
-        key = (r["company"], r["market"], r["scenario"])
+        key = (r["company"], r["market"], r["cohort_year"], r["scenario"])
         assert abs(float(r["ti_tco2e"]) - published[key]) <= 0.1 + 1e-6 * abs(published[key]), r
         checked += 1
     assert checked > 0
@@ -237,12 +259,14 @@ def test_sensitivity_central_equals_the_published_total(company_rows: list[dict[
 
 def test_annual_by_model_sums_to_company_annual_flow() -> None:
     """The year-by-year cell table aggregates exactly to the company x market x scenario flow."""
-    by_cells: dict[tuple[str, str, str, str], float] = defaultdict(float)
+    by_cells: dict[tuple[str, str, str, str, str], float] = defaultdict(float)
     for r in rows(OUT / "ti_annual_by_model.csv"):
-        key = (r["market"], r["company"], r["scenario"], r["calendar_year"])
+        key = (r["market"], r["company"], r["cohort_year"], r["scenario"], r["calendar_year"])
         by_cells[key] += float(r["ti_tco2e"])
     flow = {
-        (r["market"], r["company"], r["scenario"], r["calendar_year"]): float(r["ti_tco2e"])
+        (r["market"], r["company"], r["cohort_year"], r["scenario"], r["calendar_year"]): float(
+            r["ti_tco2e"]
+        )
         for r in rows(OUT / "ti_annual.csv")
     }
     assert by_cells.keys() == flow.keys()
