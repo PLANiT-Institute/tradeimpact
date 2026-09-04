@@ -37,7 +37,7 @@ OUT = REPO / "data" / "auto" / "database" / "dashboard.html"
 #: How the page tells the reader to serve its own directory; matches serve_dashboard.py.
 SERVE_PORT = 8765
 SERVE_CMD = ".venv/bin/python script/auto/serve_dashboard.py"
-SERVE_URL = f"then open http://127.0.0.1:{SERVE_PORT}/{OUT.name}"
+SERVE_URL = f"then open http://127.0.0.1:{SERVE_PORT}/{OUT.parent.name}/{OUT.name}"
 
 #: sql.js pinned on cdnjs; ``locateFile`` resolves sql-wasm.wasm inside the same directory.
 SQLJS_VERSION = "1.10.3"
@@ -46,8 +46,6 @@ D3_SRC = "https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"
 D3_SRI = "sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
 TOPOJSON_SRC = "https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"
 TOPOJSON_SRI = "sha384-9dCJK6nh7skY14HrcvlLYlFga9/MehJjL9ONWRflmiXNRuf8p2jiF4Y5PR881PTq"
-#: World geometry served beside the database (geometry only; every value comes from the DB).
-GEOMETRY_FILE = "../dashboard/raw/countries-110m.json"
 SQLJS_SRI = (
     "sha512-+6Q7hv5pGUBXOuHWw8OdQx3ac7DzM3oJhYqz7SHDku0yl9EBd"
     "MqegoPed4GsHRoNF/VQYK2LTYewAIEBrEf/3w=="
@@ -475,7 +473,6 @@ const SQLJS_VERSION = '__SQLJS_VERSION__';
 const DB_FILE = '__DB_FILE__';
 const SERVE_CMD = '__SERVE_CMD__';
 const SERVE_URL = '__SERVE_URL__';
-const GEOMETRY_FILE = '__GEOMETRY_FILE__';
 const DEFAULT_PIVOT = __DEFAULT_PIVOT__;
 const YEARLY_PIVOT = __YEARLY_PIVOT__;
 const STAGES = __STAGES__;
@@ -847,6 +844,8 @@ function mapFilters() {
   };
 }
 
+/* The geometry is a row in the database (table map_geometry), so the map works wherever the
+   database does - including a page opened straight from disk. */
 function loadGeometry(done) {
   if (GEO || geoError) { done(); return; }
   if (window.__d3Failed || typeof d3 === 'undefined' || typeof topojson === 'undefined') {
@@ -854,14 +853,18 @@ function loadGeometry(done) {
     done();
     return;
   }
-  fetch(GEOMETRY_FILE).then((r) => {
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    return r.json();
-  }).then((topo) => { GEO = topo; done(); }).catch((e) => {
-    geoError = 'the world geometry ' + GEOMETRY_FILE + ' could not be read (' + e.message +
-      '); serve data/auto with "' + SERVE_CMD + '" so the map can fetch it beside the database';
+  if (!TBL.has('map_geometry')) {
+    geoError = 'this database carries no map_geometry table - rebuild it with ' +
+      'script/auto/model/build_database.py';
     done();
-  });
+    return;
+  }
+  try {
+    GEO = JSON.parse(query('SELECT topojson FROM map_geometry LIMIT 1').values[0][0]);
+  } catch (e) {
+    geoError = 'the map_geometry row could not be parsed: ' + (e.message || e);
+  }
+  done();
 }
 
 function loadCodes() {
@@ -1738,19 +1741,25 @@ function loadMeta() {
 /* ---------- the open-database panel ---------- */
 
 function renderOpener() {
-  document.getElementById('main').innerHTML =
-    '<section class="card opener"><h2>Open the database</h2>' +
-    (dbError ? errBox(dbError) : '') +
-    '<p class="muted">This page holds no data. It reads <span class="mono">' + esc(DB_FILE) +
-    '</span> from the directory it is served from, so serve that directory and reload:</p>' +
-    '<pre class="sqlbox" tabindex="0">' + esc(SERVE_CMD) + '\n' + esc(SERVE_URL) + '</pre>' +
-    '<p class="muted">Opened straight from disk the browser refuses that read. Pick the ' +
-    'database file instead - it stays on your machine, nothing is uploaded.</p>' +
-    '<div class="drop" id="drop">' +
+  const onDisk = location.protocol === 'file:';
+  const picker = '<div class="drop" id="drop">' +
     '<label for="dbfile">Database file</label>' +
     '<input type="file" id="dbfile" accept=".sqlite,.db">' +
     '<span class="muted">or drag <span class="mono">' + esc(DB_FILE) +
-    '</span> onto this box</span></div></section>';
+    '</span> onto this box</span></div>';
+  const served = '<details><summary class="muted">Prefer it to open by itself?</summary>' +
+    '<p class="muted">Serve this folder once and the page loads the database on every ' +
+    'reload, no clicking:</p><pre class="sqlbox" tabindex="0">' + esc(SERVE_CMD) + '\n' +
+    esc(SERVE_URL) + '</pre></details>';
+  document.getElementById('main').innerHTML =
+    '<section class="card opener"><h2>Open the database</h2>' +
+    (dbError && !onDisk ? errBox(dbError) : '') +
+    '<p>This page holds no data of its own. Choose <span class="mono">' + esc(DB_FILE) +
+    '</span> from this folder and everything - lineage, results, map, pivot, SQL - reads from ' +
+    'it. The file never leaves your machine.</p>' + picker +
+    (onDisk ? '<p class="muted">A page opened from disk cannot read a file beside it on its ' +
+      'own: that is the browser\'s rule, not a missing piece here.</p>' : '') +
+    served + '</section>';
 }
 
 /* ---------- routing and rendering ---------- */
@@ -2116,7 +2125,6 @@ def render() -> str:
         "__D3_SRI__": D3_SRI,
         "__TOPOJSON_SRC__": TOPOJSON_SRC,
         "__TOPOJSON_SRI__": TOPOJSON_SRI,
-        "__GEOMETRY_FILE__": GEOMETRY_FILE,
         "__DB_FILE__": DB.name,
         "__SERVE_CMD__": SERVE_CMD,
         "__SERVE_URL__": SERVE_URL,

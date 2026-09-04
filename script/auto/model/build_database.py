@@ -32,6 +32,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
 REGISTRY = DATA / "registry"
+GEOMETRY = DATA / "dashboard" / "raw" / "countries-110m.json"
 OUT = DATA / "database" / "tradeimpact_auto.sqlite"
 DATASETS = (
     "sales",
@@ -150,6 +151,25 @@ def load_csv(
     return len(rows)
 
 
+def load_geometry(conn: sqlite3.Connection) -> int:
+    """Load the world TopoJSON as one row so the dashboard map needs no second file.
+
+    The map view reads its geometry out of the database like every other value, which is what
+    lets the page work when it is opened straight from disk and handed the database file.
+    """
+    if not GEOMETRY.exists():
+        raise SystemExit(
+            f"{GEOMETRY.relative_to(REPO)} is missing: run "
+            "script/auto/dashboard/fetch_map_assets.py"
+        )
+    conn.execute('CREATE TABLE "map_geometry" (name TEXT, sha256 TEXT, topojson TEXT)')
+    conn.execute(
+        'INSERT INTO "map_geometry" VALUES (?, ?, ?)',
+        (GEOMETRY.name, sha256(GEOMETRY), GEOMETRY.read_text()),
+    )
+    return 1
+
+
 def main() -> None:
     """Rebuild the database from every CSV under data/auto."""
     plan: list[tuple[Path, str, str]] = [
@@ -181,13 +201,25 @@ def main() -> None:
             (path.stem, dataset, kind, str(path.relative_to(REPO)), n, sha256(path)),
         )
         print(f"{path.stem:40s} {kind:9s} {n:>7,d} rows")
+    rows_geo = load_geometry(conn)
+    conn.execute(
+        'INSERT INTO "tables" VALUES (?, ?, ?, ?, ?, ?)',
+        (
+            "map_geometry",
+            "dashboard",
+            "raw",
+            str(GEOMETRY.relative_to(REPO)),
+            rows_geo,
+            sha256(GEOMETRY),
+        ),
+    )
+    print(f"{'map_geometry':40s} {'raw':9s} {rows_geo:>7,d} rows")
     conn.execute(
         'CREATE TABLE "columns" ("table" TEXT, "column" TEXT, sqlite_type TEXT, '
         "non_null INTEGER, distinct_values INTEGER, example TEXT, "
         'PRIMARY KEY ("table", "column"))'
     )
-    for path, _kind, _dataset in plan:
-        name = path.stem
+    for name in [p.stem for p, _k, _d in plan] + ["map_geometry"]:
         for _cid, col, ctype, *_rest in conn.execute(f'PRAGMA table_info("{name}")'):
             non_null, distinct, example = conn.execute(
                 f'SELECT COUNT("{col}"), COUNT(DISTINCT "{col}"), '

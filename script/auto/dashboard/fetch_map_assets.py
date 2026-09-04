@@ -9,7 +9,7 @@ Sources of truth
         https://github.com/mledoze/world-countries   file via https://cdn.jsdelivr.net/npm/world-countries@5.1.0/countries.json
 
 Outputs
-    data/auto/dashboard/raw/countries-110m.json          geometry, served beside the database
+    data/auto/dashboard/raw/countries-110m.json          geometry, loaded into the database
     data/auto/dashboard/raw/world_countries.json         code list as published
     data/auto/dashboard/method/country_codes.csv         iso_numeric, alpha2, alpha3, name (lookup)
 
@@ -83,7 +83,7 @@ def main() -> None:
             ),
             "accessed_date": accessed,
             "license": "ISC (world-atlas); Natural Earth data public domain",
-            "used_by": "dashboard.html map view (geometry only, no data)",
+            "used_by": "build_database.py (table map_geometry); dashboard map view",
         }
     )
     d1 = upsert_raw_file(
