@@ -1,7 +1,8 @@
 """Upsert helpers for the two provenance registries under data/auto.
 
-sources.csv    one row per source_id: publisher, title, link, how obtained, access date, licence
-raw_files.csv  one row per raw file: dataset, file, source_id, original name, SHA-256, note
+registry/registry/sources.csv    one row per source_id: publisher, title, link, how obtained, access
+                        date, licence
+registry/raw_files.csv  one row per raw file: dataset, file, source_id, original name, SHA-256, note
 
 Fetchers import this module (sys.path insert of script/auto) so that every raw file written to
 disk is registered in the same call that writes it.
@@ -15,8 +16,9 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 DATA = REPO / "data" / "auto"
-SOURCES = DATA / "sources.csv"
-RAW_FILES = DATA / "raw_files.csv"
+REGISTRY = DATA / "registry"
+SOURCES = REGISTRY / "sources.csv"
+RAW_FILES = REGISTRY / "raw_files.csv"
 
 
 def _rewrite(path: Path, rows: list[dict[str, str]]) -> None:

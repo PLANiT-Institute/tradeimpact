@@ -1,7 +1,7 @@
 """Extract US light-duty emissions from the EPA GHG Inventory transcriptions.
 
 Inputs (hand-checked transcriptions of PDF text; the PDFs are not stored — URLs and SHA-256 in
-data/auto/raw_files.csv)
+data/auto/registry/raw_files.csv)
     raw/epa_ghg_inventory_2025_table_3_13.csv   main text Table 3-13: CO2 from fossil fuel
         combustion by fuel and vehicle type (passenger cars, light-duty trucks), MMT CO2 eq.;
         1990, 2005, 2019-2023

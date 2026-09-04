@@ -21,7 +21,7 @@ model/
                         powertrain-mix sensitivities
   aggregate_country.py  step 5: country, powertrain and company x market totals + decomposition
   build_data_quality.py step 5b: guideline §5.3 data-quality declaration per company x market
-  build_database.py     final: every CSV under data/auto -> data/auto/tradeimpact_auto.sqlite
+  build_database.py     final: every CSV under data/auto -> data/auto/database/tradeimpact_auto.sqlite
 ```
 
 `run_all.py` runs every step above in order, then `ruff check` and `pytest`, and stops at the

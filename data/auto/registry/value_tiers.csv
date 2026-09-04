@@ -1,0 +1,51 @@
+table_pattern,column,value_pattern,tier,reason
+country_emissions_eu27,series,car_co2,A,Eurostat env_air_gge CRF 1.A.3.b.i passenger cars per member state (national inventories as submitted)
+country_emissions_eu27,series,power_co2|transport_ghg|grid_intensity,A,Eurostat env_air_gge national inventory series
+country_emissions_us,series,car_co2|ldt_co2|ldv_co2|car_ghg_co2e|ldt_ghg_co2e|ldv_ghg_co2e,A,EPA Inventory of US GHG Emissions and Sinks tables transcribed with page references
+country_emissions_au,series,car_co2|car_ghg_co2e|power_co2|transport_ghg,A,Australian National Greenhouse Accounts (ANGA) OData as published
+country_emissions_kr,series,road_co2,A,GIR national inventory IPCC 1.A.3.b road transport as published
+country_emissions_kr,series,kotsa_car_ghg|kotsa_road_ghg|car_share_road,C,KOTSA bottom-up local inventory whose national level sits 13-26 % below the GIR road total; only its passenger-car share is used
+country_emissions_kr,series,car_co2,C,GIR road CO2 multiplied by the KOTSA passenger-car share; the national inventory has no car split
+country_emissions_owid_grid,series,grid_intensity,A,Ember yearly electricity data (via Our World in Data) generation-based CO2 intensity as published
+vehicle_usage_eu27,series,car_stock|car_stock_age_.*,A,Eurostat road_eqs_carpda and road_eqs_carage registrations per member state
+vehicle_usage_eu27,series,car_traffic,A,Eurostat road_tf_vehmov passenger-car vehicle-kilometres reported by the member state
+vehicle_usage_eu27,series,car_traffic_fallback,C,EU-average distance applied to member states that report no vehicle-kilometres (proxied distance)
+vehicle_usage_us,series,car_stock|car_traffic|ldv_long_wb_stock|ldv_long_wb_traffic,B,FHWA VM-1 partitions light-duty vehicles by wheelbase not body type; stock and distance are consistent with each other but not the passenger-car registration class
+vehicle_usage_us_lifetime,series,car_expected_lifetime_years|car_median_lifetime_years|car_lifetime_distance_km,C,NHTSA survival schedule fitted to 1977-2002 passenger-car registrations not to the current fleet
+vehicle_usage_au,series,car_stock.*|car_mean_age_years,A,ABS Motor Vehicle Census as published
+vehicle_usage_au_smvu,series,car_stock_smvu|car_traffic|car_vkt_avg,B,ABS Survey of Motor Vehicle Use: sample survey estimates rather than registration or odometer counts
+vehicle_usage_kr,series,car_stock|car_stock_age_.*,A,MOLIT vehicle registration statistics (승용 class) as published
+vehicle_usage_kr,series,car_mean_age_years,C,mean of a model-year distribution whose oldest band is open-ended (2005 and earlier) so the mean is biased low
+vehicle_usage_kr_traffic,series,car_traffic|car_daily_km,A,KOTSA inspection odometer readings grossed up to the registered 승용 fleet
+emission_targets_.*,target_level,observed_trend,A,log-linear trend of the country's own observed series
+emission_targets_.*,target_level,ndc_prorata|ndc_prorata_s1_floor,B,national committed target applied pro-rata to passenger cars or to the grid
+emission_targets_.*,target_level,1p5c_prorata,B,national 1.5 C or net-zero pathway applied pro-rata
+emission_targets_.*,target_level,world_prorata,C,IEA world net-zero pathway used because no national 1.5 C sector pathway exists
+emission_targets_.*,target_level,flag_no_ndc,C,no NDC in force: scenario excluded (FLAG market)
+vehicle_technology_eea_2024,test_cycle,WLTP,A,EEA type-approval CO2 and energy consumption recorded on the registration itself
+vehicle_technology_us_epa,test_cycle,EPA,A,EPA fuel economy label values per model year and trim
+vehicle_technology_kr_kea,test_cycle,KR_5CYCLE,B,KEA label km/L converted to gCO2/km with EPA fuel carbon factors; km/kWh inverted to Wh/km (documented conversion of an authoritative label)
+epa_trends_powertrain_share_my2024,make,.*,B,EPA certification production volumes for one model year used as powertrain shares of calendar-year sales
+sales_eea_eu27_2024,basis,registrations,A,EEA first registrations by member state (registration authority)
+sales_hyundai_us|sales_kia_us|sales_hyundai_kr,basis,brand_total_sales|domestic_sales,A,company's own market-side monthly release for the destination
+sales_hyundai_kr,basis,export_shipments,C,plant-side shipments without a stated destination; reconciliation only
+sales_kia_ir_2026,basis,retail_sales,A,company's own market-side IR release (regions and countries as published)
+sales_hyundai_plant_2025,basis,plant_sales,B,plant-side sales: units built at the destination's plants; imports from other plants are not in the source
+trade_flows,quantity_flag,reported,A,customs declarations as reported to UN Comtrade
+trade_flows,quantity_flag,estimated|member_state_sum|not_reported,B,quantity estimated by Comtrade or summed from member-state reporters
+cohorts|ti_by_model|ti_annual_by_model|ti_crossover,test_cycle,WLTP|EPA,A,certified value from the destination's own type-approval or label authority
+cohorts|ti_by_model|ti_annual_by_model|ti_crossover,test_cycle,KR_5CYCLE,B,label fuel economy converted to gCO2/km with published fuel carbon factors
+cohorts,powertrain_rule,explicit|stated,A,powertrain stated by the sales release or the nameplate
+cohorts,powertrain_rule,epa_share_my2024.*,B,nameplate split with EPA MY2024 production shares (assumption A-US-PT)
+cohorts,powertrain_rule,kr_unsplit_central_ice.*,C,nameplate not split by the release; priced as ICE centrally with an all-HEV bound
+cohorts,basis,registrations|brand_total_sales|domestic_sales|retail_sales,A,market-side volumes from the registration authority or the company's own release
+ti_by_model|ti_annual_by_model|ti_crossover,vkt_tier,A,A,destination distance observed for the passenger-car population
+ti_by_model|ti_annual_by_model|ti_crossover,vkt_tier,B,B,destination distance from a consistent but broader population (all light-duty vehicles)
+ti_by_model|ti_annual_by_model|ti_crossover,vkt_tier,C,C,destination distance proxied (EU average or survey)
+destination_parameters_.*,vkt_tier,A,A,distance observed for the passenger-car population
+destination_parameters_.*,vkt_tier,B,B,distance from a consistent but broader population
+destination_parameters_.*,vkt_tier,C,C,distance proxied
+destination_parameters_.*,fleet_intensity_tier,B,B,fleet intensity on a broader but consistent population
+destination_parameters_.*,fleet_intensity_tier,C,C,fleet intensity from a proxied share or an implausible ratio
+destination_parameters_.*,mean_car_age_tier,C,C,mean age from a pooled or biased distribution
+destination_parameters_.*,lifetime_tier,C,C,operating life from an old survival schedule or a biased mean age

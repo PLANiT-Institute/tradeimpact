@@ -61,6 +61,10 @@ FIELDS = [
     "markets_fleet_tier_c",
     "withheld_reasons",
     "coverage_notes",
+    "units_tier_a",
+    "units_tier_b",
+    "units_tier_c",
+    "tier_c_units_share",
     "warnings",
 ]
 
@@ -169,6 +173,14 @@ def main() -> None:
                 "markets_fleet_tier_c": fleet_c,
                 "withheld_reasons": "; ".join(f"{k} {v:,}" for k, v in sorted(reasons.items())),
                 "coverage_notes": " | ".join(notes),
+                "units_tier_a": sum(int(c["units"]) for c in mine if c["tier"] == "A"),
+                "units_tier_b": sum(int(c["units"]) for c in mine if c["tier"] == "B"),
+                "units_tier_c": sum(int(c["units"]) for c in mine if c["tier"] == "C"),
+                "tier_c_units_share": round(
+                    sum(int(c["units"]) for c in mine if c["tier"] == "C") / covered, 6
+                )
+                if covered
+                else None,
                 "warnings": "; ".join(market_warnings),
             }
         )

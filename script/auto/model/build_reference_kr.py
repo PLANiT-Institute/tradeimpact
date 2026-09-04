@@ -185,6 +185,7 @@ def main() -> None:
         "lifetime_years": life,
         "lifetime_low_years": clamp_life(mean_age),
         "lifetime_high_years": clamp_life(2 * mean_age),
+        "lifetime_tier": "C",
         "scenarios_excluded": ";".join(sorted(excluded)),
         "scenario_exclusion_reason": " | ".join(f"{s}: {r}" for s, r in sorted(excluded.items())),
         "warnings": " | ".join(warnings),

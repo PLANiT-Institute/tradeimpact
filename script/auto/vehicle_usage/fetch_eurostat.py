@@ -2,7 +2,8 @@
 
 Each cube is the API's JSON-stat 2.0 response saved verbatim as a raw file (the source of
 truth publishes JSON); the
-request URL, dataset page, access date and file hash are recorded in data/auto/raw_files.csv
+request URL, dataset page, access date and file hash are recorded in
+data/auto/registry/raw_files.csv
 on every fetch:
     vehicle_usage/raw/eurostat_road_eqs_carpda.json    passenger-car stock by motor energy
     vehicle_usage/raw/eurostat_road_tf_veh.json        traffic by cars registered in the country
@@ -117,8 +118,8 @@ def fetch(dataset: str, filters: dict[str, str]) -> tuple[str, dict]:
 
 
 def register(path: Path, dataset: str, url: str, description: str, accessed: str) -> None:
-    """Upsert this file's row in data/auto/raw_files.csv (link, hash, access date)."""
-    registry = DATA / "raw_files.csv"
+    """Upsert this file's row in data/auto/registry/raw_files.csv (link, hash, access date)."""
+    registry = DATA / "registry" / "raw_files.csv"
     rows = list(csv.DictReader(registry.open(newline="")))
     digest = hashlib.sha256(path.read_bytes()).hexdigest()
     row = {

@@ -1,6 +1,6 @@
 """Write the HTML dashboard that reads the automotive SQLite database at view time.
 
-The page carries no data. It writes ``data/auto/dashboard.html``, which loads sql.js
+The page carries no data. It writes ``data/auto/database/dashboard.html``, which loads sql.js
 (WebAssembly, from a version-pinned CDN with subresource integrity), fetches the sibling file
 ``tradeimpact_auto.sqlite`` relative to itself and reads everything else — the ``tables``
 manifest, the ``columns`` dictionary, the source registry and the raw-file provenance — out of
@@ -9,7 +9,7 @@ browse and free-text read-only SQL.
 
 The relative fetch needs the directory to be served over HTTP:
 
-    .venv/bin/python script/auto/serve_dashboard.py   ->  http://127.0.0.1:8765/dashboard.html
+    .venv/bin/python script/auto/serve_dashboard.py   ->  http://127.0.0.1:8765/database/dashboard.html
 
 Opened from ``file://`` the browser refuses to read the sibling file, so the page then shows an
 "Open the database" panel with a file picker and a drag-and-drop zone instead.
@@ -31,8 +31,8 @@ from pathlib import Path
 from typing import Any
 
 REPO = Path(__file__).resolve().parents[3]
-DB = REPO / "data" / "auto" / "tradeimpact_auto.sqlite"
-OUT = REPO / "data" / "auto" / "dashboard.html"
+DB = REPO / "data" / "auto" / "database" / "tradeimpact_auto.sqlite"
+OUT = REPO / "data" / "auto" / "database" / "dashboard.html"
 
 #: How the page tells the reader to serve its own directory; matches serve_dashboard.py.
 SERVE_PORT = 8765
@@ -42,6 +42,12 @@ SERVE_URL = f"then open http://127.0.0.1:{SERVE_PORT}/{OUT.name}"
 #: sql.js pinned on cdnjs; ``locateFile`` resolves sql-wasm.wasm inside the same directory.
 SQLJS_VERSION = "1.10.3"
 SQLJS_DIR = f"https://cdnjs.cloudflare.com/ajax/libs/sql.js/{SQLJS_VERSION}/"
+D3_SRC = "https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"
+D3_SRI = "sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
+TOPOJSON_SRC = "https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"
+TOPOJSON_SRI = "sha384-9dCJK6nh7skY14HrcvlLYlFga9/MehJjL9ONWRflmiXNRuf8p2jiF4Y5PR881PTq"
+#: World geometry served beside the database (geometry only; every value comes from the DB).
+GEOMETRY_FILE = "../dashboard/raw/countries-110m.json"
 SQLJS_SRI = (
     "sha512-+6Q7hv5pGUBXOuHWw8OdQx3ac7DzM3oJhYqz7SHDku0yl9EBd"
     "MqegoPed4GsHRoNF/VQYK2LTYewAIEBrEf/3w=="
@@ -408,6 +414,25 @@ table.srctable th:nth-child(7), table.srctable td:nth-child(7) { width: 13%; }
   .side { position: static; }
   .navgroup { flex-direction: row; flex-wrap: wrap; }
 }
+.map .ctl { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: end; margin-bottom: 10px; }
+.map .ctl label { display: flex; flex-direction: column; gap: 2px; font-size: 12px; color:
+var(--muted); }
+.map svg { width: 100%; height: auto; display: block; background: var(--panel); border-radius:
+8px; }
+.map path.country { stroke: var(--bg); stroke-width: 0.4; cursor: pointer; }
+.map path.country.selected { stroke: var(--fg); stroke-width: 1.2; }
+.map .legend { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 12px; margin: 8px 0;
+align-items: center; }
+.map .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px;
+vertical-align: -2px; margin-right: 4px; }
+.map .tip { position: fixed; pointer-events: none; background: var(--fg); color: var(--bg);
+padding: 6px 8px; border-radius: 6px; font-size: 12px; max-width: 320px; z-index: 5; display:
+none; }
+.tier { display: inline-block; padding: 0 6px; border-radius: 10px; font-size: 11px;
+font-weight: 600; }
+.tier-A { background: #cfe8d6; color: #14532d; }
+.tier-B { background: #fde7b6; color: #7c4a03; }
+.tier-C { background: #f8cfcf; color: #7f1d1d; }
 </style>
 </head>
 <body>
@@ -435,6 +460,10 @@ table.srctable th:nth-child(7), table.srctable td:nth-child(7) { width: 13%; }
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
   onerror="window.__sqljsFailed = true;"></script>
+<script src="__D3_SRC__" integrity="__D3_SRI__" crossorigin="anonymous"
+  referrerpolicy="no-referrer" onerror="window.__d3Failed = true;"></script>
+<script src="__TOPOJSON_SRC__" integrity="__TOPOJSON_SRI__" crossorigin="anonymous"
+  referrerpolicy="no-referrer" onerror="window.__d3Failed = true;"></script>
 <script>
 (function () {
 'use strict';
@@ -446,6 +475,7 @@ const SQLJS_VERSION = '__SQLJS_VERSION__';
 const DB_FILE = '__DB_FILE__';
 const SERVE_CMD = '__SERVE_CMD__';
 const SERVE_URL = '__SERVE_URL__';
+const GEOMETRY_FILE = '__GEOMETRY_FILE__';
 const DEFAULT_PIVOT = __DEFAULT_PIVOT__;
 const YEARLY_PIVOT = __YEARLY_PIVOT__;
 const STAGES = __STAGES__;
@@ -457,6 +487,7 @@ const VIEWS = [
   {id: 'lineage', label: 'Lineage'},
   {id: 'results', label: 'Results'},
   {id: 'results_year', label: 'Results by year'},
+  {id: 'map', label: 'Map'},
   {id: 'pivot', label: 'Pivot'},
   {id: 'browse', label: 'Browse'},
   {id: 'sql', label: 'SQL'}
@@ -553,6 +584,7 @@ const state = {
   table: DEFAULT_PIVOT.table,
   pivot: defaultPivot(DEFAULT_PIVOT.table),
   browse: {page: 0, sort: null, dir: 'asc', q: ''},
+  map: {metric: 'coverage_units', company: '', year: '', scenario: 'S1', selected: ''},
   sql: {text: 'SELECT market, company, powertrain, model, scenario,\n'
         + '       SUM(units) AS units, SUM(ti_tco2e) AS ti_tco2e\n'
         + '  FROM ti_by_model\n GROUP BY 1, 2, 3, 4, 5\n ORDER BY 1, 2, 3, 4, 5'},
@@ -736,6 +768,316 @@ function renderLineage() {
     h += '</section>';
   }
   document.getElementById('main').innerHTML = tableHeadHtml() + h;
+}
+
+/* ---------- map view: one value per country, read from the database ---------- */
+
+let GEO = null;
+let geoError = null;
+let CODES = null;
+
+const TIER_COLOR = {A: '#2e7d4f', B: '#d68a00', C: '#c62828'};
+const STATUS_COLOR = {
+  priced: '#2e7d4f', withheld: '#d68a00', no_benchmark: '#8d99ae',
+  plant_side_only: '#6c757d', region_unpriced: '#adb5bd', destination_unknown: '#adb5bd'
+};
+const COV = ' FROM ti_coverage WHERE destination_level = "country"';
+
+/* Every metric is a SQL query returning (destination, value); the WHERE clauses come from
+   the map filters. No value is embedded in the page. */
+const MAP_METRICS = [
+  {id: 'coverage_units', label: 'sales units in the sales files', kind: 'seq', unit: 'vehicles',
+   sql: (f) => 'SELECT destination, SUM(units)' + COV + f.company + f.year + ' GROUP BY 1'},
+  {id: 'priced_units', label: 'units carrying a result', kind: 'seq', unit: 'vehicles',
+   sql: (f) => 'SELECT destination, SUM(priced_units)' + COV + f.company + f.year +
+     ' GROUP BY 1'},
+  {id: 'priced_share', label: 'share of units priced', kind: 'seq', unit: 'fraction',
+   sql: (f) => 'SELECT destination, SUM(priced_units) * 1.0 / SUM(units)' + COV + f.company +
+     f.year + ' GROUP BY 1'},
+  {id: 'coverage_status', label: 'coverage status', kind: 'cat', palette: STATUS_COLOR,
+   sql: (f) => 'SELECT destination, MIN(status)' + COV + f.company + f.year + ' GROUP BY 1'},
+  {id: 'ti_tco2e', label: 'lifetime TI (tCO2e), scenario', kind: 'div', unit: 'tCO2e',
+   sql: (f) => 'SELECT destination, SUM(ti_tco2e) FROM ti_country WHERE scenario = ' +
+     lit(f.scenarioVal) + f.company + f.year + ' GROUP BY 1'},
+  {id: 'ti_per_vehicle', label: 'TI per vehicle (kgCO2e), scenario', kind: 'div',
+   unit: 'kgCO2e per vehicle',
+   sql: (f) => 'SELECT destination, SUM(ti_tco2e) * 1000.0 / SUM(units) FROM ti_country ' +
+     'WHERE scenario = ' + lit(f.scenarioVal) + f.company + f.year + ' GROUP BY 1'},
+  {id: 'fleet_intensity', label: 'benchmark fleet intensity (gCO2/km)', kind: 'seq',
+   unit: 'gCO2/km', params: 'fleet_intensity_gco2_km'},
+  {id: 'vkt', label: 'benchmark distance (km per car-year)', kind: 'seq', unit: 'km/yr',
+   params: 'vkt_km'},
+  {id: 'grid', label: 'grid intensity (gCO2/kWh)', kind: 'seq', unit: 'gCO2/kWh',
+   params: 'grid_gco2_kwh'},
+  {id: 'lifetime', label: 'operating lifetime T (years)', kind: 'seq', unit: 'years',
+   params: 'lifetime_years'},
+  {id: 'tier_vkt', label: 'tier: distance', kind: 'cat', palette: TIER_COLOR,
+   params: 'vkt_tier'},
+  {id: 'tier_fleet', label: 'tier: fleet intensity', kind: 'cat', palette: TIER_COLOR,
+   params: 'fleet_intensity_tier'},
+  {id: 'tier_grid', label: 'tier: grid', kind: 'cat', palette: TIER_COLOR, params: 'grid_tier'},
+  {id: 'tier_lifetime', label: 'tier: lifetime', kind: 'cat', palette: TIER_COLOR,
+   params: 'lifetime_tier'},
+  {id: 'tier_cell', label: 'tier: worst input behind the result', kind: 'cat',
+   palette: TIER_COLOR,
+   sql: (f) => 'SELECT destination, CASE WHEN SUM(CASE WHEN tier = "C" THEN units ELSE 0 END)' +
+     ' > 0 THEN "C" WHEN SUM(CASE WHEN tier = "B" THEN units ELSE 0 END) > 0 THEN "B" ' +
+     'ELSE "A" END FROM ti_by_model WHERE scenario = ' + lit(f.scenarioVal) + f.company +
+     f.year + ' GROUP BY 1'}
+];
+
+function paramTables() {
+  return meta.tables.filter((t) => /^destination_parameters_/.test(t.table))
+    .map((t) => t.table);
+}
+
+function paramsUnionSql(column) {
+  const tables = paramTables();
+  if (!tables.length) return null;
+  return tables.map((t) => 'SELECT country AS destination, ' + qq(column) + ' AS v FROM ' +
+    qq(t)).join(' UNION ALL ');
+}
+
+function mapFilters() {
+  const m = state.map;
+  return {
+    company: m.company ? ' AND company = ' + lit(m.company) : '',
+    year: m.year ? ' AND cohort_year = ' + lit(m.year) : '',
+    scenarioVal: m.scenario || 'S1'
+  };
+}
+
+function loadGeometry(done) {
+  if (GEO || geoError) { done(); return; }
+  if (window.__d3Failed || typeof d3 === 'undefined' || typeof topojson === 'undefined') {
+    geoError = 'd3 or topojson could not be loaded from cdnjs - is this machine offline?';
+    done();
+    return;
+  }
+  fetch(GEOMETRY_FILE).then((r) => {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }).then((topo) => { GEO = topo; done(); }).catch((e) => {
+    geoError = 'the world geometry ' + GEOMETRY_FILE + ' could not be read (' + e.message +
+      '); serve data/auto with "' + SERVE_CMD + '" so the map can fetch it beside the database';
+    done();
+  });
+}
+
+function loadCodes() {
+  if (CODES) return CODES;
+  CODES = new Map();
+  if (!TBL.has('country_codes')) return CODES;
+  for (const r of query('SELECT iso_numeric, alpha2, name FROM country_codes').values) {
+    CODES.set(String(r[0]).padStart(3, '0'), {alpha2: r[1], name: r[2]});
+  }
+  return CODES;
+}
+
+function distinctList(sql) {
+  return TBL.has('ti_coverage') ? query(sql).values.map((r) => String(r[0])) : [];
+}
+
+function renderMapShell() {
+  const m = state.map;
+  const companies = distinctList('SELECT DISTINCT company FROM ti_coverage ORDER BY 1');
+  const years = distinctList('SELECT DISTINCT cohort_year FROM ti_coverage ORDER BY 1');
+  const sel = (id, label, options) =>
+    '<label>' + label + '<select id="' + id + '">' + options + '</select></label>';
+  let h = '<section class="card map"><h2>Map</h2>' +
+    '<p class="muted">One value per destination country, read from the database at view ' +
+    'time. Hover for the value; click a country for every row and tier flag behind it.</p>' +
+    '<div class="ctl">' +
+    sel('map-metric', 'metric',
+      MAP_METRICS.map((x) => opt(x.id, x.label, x.id === m.metric)).join('')) +
+    sel('map-company', 'company', opt('', 'all companies', !m.company) +
+      companies.map((c) => opt(c, c, c === m.company)).join('')) +
+    sel('map-year', 'cohort year', opt('', 'all years', !m.year) +
+      years.map((y) => opt(y, y, y === m.year)).join('')) +
+    sel('map-scenario', 'scenario',
+      ['S1', 'S2', 'S3'].map((sc) => opt(sc, sc, sc === m.scenario)).join('')) +
+    '</div><div id="map-legend" class="legend"></div><div id="map-out"></div>' +
+    '<div id="map-tip" class="tip"></div><div id="map-detail"></div></section>';
+  document.getElementById('main').innerHTML = tableHeadHtml() + h;
+  for (const id of ['map-metric', 'map-company', 'map-year', 'map-scenario']) {
+    document.getElementById(id).addEventListener('change', (e) => {
+      state.map[id.slice(4)] = e.target.value;
+      renderMapOut();
+    });
+  }
+}
+
+function metricValues(metric) {
+  const f = mapFilters();
+  let sql;
+  if (metric.params) {
+    const inner = paramsUnionSql(metric.params);
+    if (!inner) return new Map();
+    sql = 'SELECT destination, v FROM (' + inner + ') WHERE v IS NOT NULL';
+  } else {
+    sql = metric.sql(f);
+  }
+  const out = new Map();
+  for (const r of query(sql).values) {
+    if (r[0] != null && r[1] != null) out.set(String(r[0]), r[1]);
+  }
+  return out;
+}
+
+function mapColor(metric, nums) {
+  if (metric.kind === 'cat') return (v) => metric.palette[v] || '#adb5bd';
+  if (metric.kind === 'div') {
+    const amp = Math.max(1e-9, ...nums.map((v) => Math.abs(v)));
+    return d3.scaleSequential([-amp, amp], d3.interpolateRdBu);
+  }
+  return d3.scaleSequential([Math.min(0, ...nums), Math.max(1e-9, ...nums)],
+    d3.interpolateBlues);
+}
+
+function renderMapOut() {
+  const out = document.getElementById('map-out');
+  if (!out) return;
+  loadGeometry(() => {
+    if (geoError) { out.innerHTML = errBox(geoError); return; }
+    const metric = MAP_METRICS.find((x) => x.id === state.map.metric) || MAP_METRICS[0];
+    let values;
+    try {
+      values = metricValues(metric);
+    } catch (e) {
+      out.innerHTML = errBox(String(e.message || e));
+      return;
+    }
+    const codes = loadCodes();
+    const features = topojson.feature(GEO, GEO.objects.countries).features;
+    const width = 960, height = 500;
+    const projection = d3.geoNaturalEarth1().fitSize([width, height], {type: 'Sphere'});
+    const path = d3.geoPath(projection);
+    const nums = [...values.values()].filter((v) => typeof v === 'number');
+    const color = mapColor(metric, nums);
+    let svg = '<svg viewBox="0 0 ' + width + ' ' + height + '" role="img" ' +
+      'aria-label="world map"><path d="' + path({type: 'Sphere'}) +
+      '" fill="var(--panel)" stroke="var(--border)"/>';
+    for (const ft of features) {
+      const code = codes.get(String(ft.id).padStart(3, '0'));
+      const a2 = code ? code.alpha2 : '';
+      const v = a2 && values.has(a2) ? values.get(a2) : null;
+      const fill = v === null ? 'var(--border)' : color(v);
+      const sel = a2 && a2 === state.map.selected ? ' selected' : '';
+      svg += '<path class="country' + sel + '" data-a2="' + esc(a2) + '" data-name="' +
+        esc(ft.properties.name) + '" data-v="' + (v === null ? '' : esc(String(v))) +
+        '" d="' + path(ft) + '" fill="' + fill + '"/>';
+    }
+    out.innerHTML = svg + '</svg>';
+    renderMapLegend(metric, color, nums);
+    renderMapDetail();
+    const tip = document.getElementById('map-tip');
+    out.querySelectorAll('path.country').forEach((el) => {
+      el.addEventListener('mousemove', (e) => {
+        const v = el.getAttribute('data-v');
+        const a2 = el.getAttribute('data-a2');
+        const shown = v === '' ? 'no value in the database'
+          : (metric.kind === 'cat' ? v
+            : fmtNum(Number(v)) + (metric.unit ? ' ' + metric.unit : ''));
+        tip.style.display = 'block';
+        tip.style.left = (e.clientX + 12) + 'px';
+        tip.style.top = (e.clientY + 12) + 'px';
+        tip.textContent = el.getAttribute('data-name') + (a2 ? ' (' + a2 + ')' : '') +
+          ': ' + shown;
+      });
+      el.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+      el.addEventListener('click', () => {
+        state.map.selected = el.getAttribute('data-a2');
+        renderMapOut();
+      });
+    });
+  });
+}
+
+function swatch(colour, label) {
+  return '<span><span class="swatch" style="background:' + colour + '"></span>' + label +
+    '</span>';
+}
+
+function renderMapLegend(metric, color, nums) {
+  const el = document.getElementById('map-legend');
+  if (metric.kind === 'cat') {
+    el.innerHTML = Object.keys(metric.palette).map((k) => swatch(metric.palette[k], esc(k)))
+      .join('') + swatch('var(--border)', 'no value');
+    return;
+  }
+  if (!nums.length) {
+    el.innerHTML = '<span class="muted">no values for this selection</span>';
+    return;
+  }
+  const amp = Math.max(...nums.map((v) => Math.abs(v)));
+  const lo = metric.kind === 'div' ? -amp : Math.min(0, ...nums);
+  const hi = metric.kind === 'div' ? amp : Math.max(...nums);
+  const stops = [0, 0.25, 0.5, 0.75, 1].map((q) => lo + q * (hi - lo));
+  el.innerHTML = stops.map((v) => swatch(color(v), fmtNum(v))).join('') +
+    ' <span class="muted">' + esc(metric.unit || '') +
+    (metric.kind === 'div' ? ' (red = liability, blue = contribution)' : '') + '</span>' +
+    swatch('var(--border)', 'no value');
+}
+
+function tierChip(t) {
+  return t ? '<span class="tier tier-' + esc(t) + '">' + esc(t) + '</span>' : '';
+}
+
+function smallTable(r, tiers) {
+  let h = '<div class="scroll sm"><table class="data"><thead><tr>' +
+    r.columns.map((c) => '<th scope="col">' + esc(c) + '</th>').join('') +
+    '</tr></thead><tbody>';
+  for (const row of r.values) {
+    h += '<tr>' + row.map((v, i) => '<td>' +
+      (tiers && /tier/.test(r.columns[i]) ? tierChip(v) : fmtCell(v)) + '</td>').join('') +
+      '</tr>';
+  }
+  return h + '</tbody></table></div>';
+}
+
+function renderMapDetail() {
+  const el = document.getElementById('map-detail');
+  const a2 = state.map.selected;
+  if (!a2) {
+    el.innerHTML = '<p class="muted">Click a country to list its coverage rows, benchmark ' +
+      'parameters and tier flags.</p>';
+    return;
+  }
+  let h = '<h3>' + esc(a2) + '</h3>';
+  const f = mapFilters();
+  if (TBL.has('ti_coverage')) {
+    const r = query('SELECT company, cohort_year, period, basis, units, priced_units, ' +
+      'withheld_units, status, note FROM ti_coverage WHERE destination = ' + lit(a2) +
+      f.company + f.year + ' ORDER BY 1, 2');
+    h += '<h4>coverage</h4>' + smallTable(r);
+  }
+  for (const t of paramTables()) {
+    const r = query('SELECT * FROM ' + qq(t) + ' WHERE country = ' + lit(a2));
+    if (!r.values.length) continue;
+    h += '<h4>' + esc(t) + '</h4><table class="data"><tbody>';
+    r.columns.forEach((c, i) => {
+      const v = r.values[0][i];
+      h += '<tr><th scope="row">' + esc(c) + '</th><td>' +
+        (/_tier$/.test(c) ? tierChip(v) : fmtCell(v)) + '</td></tr>';
+    });
+    h += '</tbody></table>';
+  }
+  if (TBL.has('ti_country')) {
+    const r = query('SELECT company, cohort_year, scenario, units, ti_tco2e, ' +
+      'ti_per_vehicle_kgco2e, direction FROM ti_country WHERE destination = ' + lit(a2) +
+      f.company + f.year + ' ORDER BY 1, 2, 3');
+    if (r.values.length) h += '<h4>results (ti_country)</h4>' + smallTable(r);
+  }
+  if (TBL.has('ti_by_model')) {
+    const r = query('SELECT tier, layer1_tier, layer2_tier, SUM(units) AS units FROM ' +
+      'ti_by_model WHERE destination = ' + lit(a2) + ' AND scenario = ' + lit(f.scenarioVal) +
+      f.company + f.year + ' GROUP BY 1, 2, 3 ORDER BY 1');
+    if (r.values.length) {
+      h += '<h4>units by tier of the worst input (' + esc(f.scenarioVal) + ')</h4>' +
+        smallTable(r, true);
+    }
+  }
+  el.innerHTML = h;
 }
 
 /* ---------- table selector and column panel ---------- */
@@ -1424,11 +1766,13 @@ function render() {
     if (state.view === 'pivot') renderPivotShell();
     else if (state.view === 'browse') renderBrowseShell();
     else if (state.view === 'sql') renderSqlShell();
+    else if (state.view === 'map') renderMapShell();
     else renderLineage();
   }
   if (state.view === 'pivot') renderPivotOut();
   else if (state.view === 'browse') renderBrowseOut();
   else if (state.view === 'sql') renderSqlOut();
+  else if (state.view === 'map') renderMapOut();
   renderNav();
 }
 
@@ -1450,7 +1794,7 @@ function applyHash() {
     go('#/pivot/' + encodeURIComponent(preset.table));
     return;
   }
-  if (['lineage', 'pivot', 'browse', 'sql'].indexOf(view) < 0) {
+  if (['lineage', 'map', 'pivot', 'browse', 'sql'].indexOf(view) < 0) {
     go('#/lineage');
     return;
   }
@@ -1712,7 +2056,8 @@ function boot() {
   renderOpener();
   if (location.protocol === 'file:') {
     failOpen('This page was opened from the file system, where the browser blocks reading ' +
-      DB_FILE + ' next to it.');
+      DB_FILE + ' next to it. Double-click open_dashboard.command in this folder (it starts ' +
+      'the local server and opens the connected page), or pick the database file below.');
     return;
   }
   setStatus('loading ' + DB_FILE);
@@ -1767,6 +2112,11 @@ def render() -> str:
         "__SQLJS_SRI__": SQLJS_SRI,
         "__SQLJS_DIR__": SQLJS_DIR,
         "__SQLJS_VERSION__": SQLJS_VERSION,
+        "__D3_SRC__": D3_SRC,
+        "__D3_SRI__": D3_SRI,
+        "__TOPOJSON_SRC__": TOPOJSON_SRC,
+        "__TOPOJSON_SRI__": TOPOJSON_SRI,
+        "__GEOMETRY_FILE__": GEOMETRY_FILE,
         "__DB_FILE__": DB.name,
         "__SERVE_CMD__": SERVE_CMD,
         "__SERVE_URL__": SERVE_URL,
@@ -1816,7 +2166,7 @@ def manifest_rows(db: Path) -> int:
 
 
 def main() -> None:
-    """Write data/auto/dashboard.html, the reader for the sibling SQLite database.
+    """Write data/auto/database/dashboard.html, the reader for the sibling SQLite database.
 
     Raises:
         SystemExit: If the database is missing or carries no ``tables`` manifest.

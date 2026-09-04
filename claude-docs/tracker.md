@@ -15,7 +15,7 @@ PH1 (automotive case study) entered 2026-09-03 and is the only live phase. The f
 runs end to end for the first pass — **EU27, Toyota and Hyundai, cohort 2024** — on data already
 held: all five datasets have a processed table, `build_reference.py`, `build_ti.py` and
 `aggregate_country.py` have written their outputs, and `build_database.py` has loaded every input,
-lookup, output and source table into `data/auto/tradeimpact_auto.sqlite` (21 tables).
+lookup, output and source table into `data/auto/database/tradeimpact_auto.sqlite` (21 tables).
 
 Kia and Honda EU27 2024 registrations were acquired on 2026-09-04 from the same EEA query, so all
 four exporters now sit on one destination boundary (Kia 414,677 and Honda 40,270 registrations;
@@ -43,9 +43,9 @@ a country-level result as they stand (regions and plant-side sales respectively)
 
 Crossover years per cell and the lifetime, real-world and proxied-distance sensitivities exist
 (`ti_crossover.csv`, `ti_sensitivity.csv`, both in the database). The deliverable database
-(`data/auto/tradeimpact_auto.sqlite`, 50 tables: raw, lookup, processed, output incl. the year-by-year
+(`data/auto/database/tradeimpact_auto.sqlite`, 50 tables: raw, lookup, processed, output incl. the year-by-year
 cell table, sources, raw-file provenance, tables manifest, column dictionary) and the pivot dashboard over it
-(`data/auto/dashboard.html`, 55 KB, reads the database file over a local server or via a file picker: lineage per data type, lifetime and year-by-year pivots, browse, read-only SQL) were built on
+(`data/auto/database/dashboard.html`, 55 KB, reads the database file over a local server or via a file picker: lineage per data type, lifetime and year-by-year pivots, browse, read-only SQL) were built on
 2026-09-04. Still absent by design: a P10/P50/P90 treatment of the crossover (`B-07`). The regression check against the archived
 published baseline has run and passed (all 189 destination parameters exact; company × scenario
 totals within 2 × 10⁻⁷; crossover and lifetime sensitivities agree). Phase exit is blocked by the
@@ -91,6 +91,15 @@ NDC is an intensity target (S2 FLAG). A result would be direction-only (guidelin
 model-level sales exist (SIAM paid, Vahan model hidden). Recorded in `destination_notes.csv` and the
 output method note; India stays a counted, unpriced coverage group.
 
+**Per-value tiers and the country map (2026-09-04).** Whitepaper §5.1's A/B/C hierarchy is now a
+registry (`registry/tiers.csv`, `value_tiers.csv`): every processed input row in the database carries
+`tier` and `tier_reason`, every destination parameter its tier, every result cell its Layer 1, Layer 2
+and worst tier, and `ti_data_quality` counts units by tier. The dashboard gained a Map view (d3 +
+world-atlas geometry served beside the database): coverage, priced share, TI by scenario, benchmark
+parameters and every tier flag per country, with a per-country detail panel. `data/auto/` now holds
+only sub-directories: `registry/` (sources, raw files, tiers), `database/` (the SQLite, the page and
+a double-click launcher), `dashboard/` (map assets).
+
 ## 2. Phases
 
 | Phase | Objectives met | Deliverables accepted | Status | Gate verdict |
@@ -129,7 +138,7 @@ phase has to avoid.
 | [ST10 aggregation](stages/st08-10-analysis.md) | PH1, PH3, PH4 | Run for EU27 and US, two exporters; identity holds for every reported company × market × scenario row; guideline §5.3 data-quality declaration written (Toyota and Honda `directional_only`: tier-C unit share 53.6 % and 53.8 %); `tradeimpact_auto.sqlite` built | `ti_country.csv` (324), `ti_powertrain.csv` (36), `ti_company.csv` (12), `ti_data_quality.csv` (4), `tradeimpact_auto.sqlite` (24 tables) | `[compute]` |
 | [ST11 verification](stages/st11-verification.md) | all | Independent re-derivation of the Honda cohort done 2026-09-04 (engine reproduced to 6 × 10⁻⁷; three input defects found and fixed: distance year mismatch, real-world range, BEV crossover label); `tests/test_model.py` (5 checks) passes; archive remains the engine baseline, no longer the input baseline | `data/auto/output/method.md` §Verification, `tests/test_model.py` | `[verified-engine]` |
 | [ST12 methodology](stages/st12-15-outputs.md) | PH1, PH2, PH4, PH5 | Not started; three methodology documents in place as inputs | none | — |
-| [ST13 tool and dashboard](stages/st12-15-outputs.md) | PH3, PH5 | Prototype built 2026-09-04: `build_dashboard.py` → `data/auto/dashboard.html` (embedded SQLite, sql.js from cdnjs); `B-08` (public release) open | `dashboard.html` (4.7 MB) | — |
+| [ST13 tool and dashboard](stages/st12-15-outputs.md) | PH3, PH5 | Prototype built 2026-09-04: `build_dashboard.py` → `data/auto/database/dashboard.html` (embedded SQLite, sql.js from cdnjs); `B-08` (public release) open | `dashboard.html` (4.7 MB) | — |
 | [ST14 publication](stages/st12-15-outputs.md) | PH1, PH2, PH4, PH5 | Not started | none | — |
 | [ST15 sector onboarding](stages/st12-15-outputs.md) | PH3, PH4, PH5 | Not started | none | — |
 
@@ -175,7 +184,7 @@ baseline.
 | Stage | Process document | Deviations and open items |
 |---|---|---|
 | ST02–ST06 | [`process/dataset-acquisition.md`](process/dataset-acquisition.md) | One processed file per source or market scope, by design. **Open:** the three sales tables carry `source_file` but no `source_id` — provenance holds only through the raw-file hash in `method.md` |
-| ST02, ST05, ST06 | as above | Resolved 2026-09-04: the three method files were rewritten to the shape the data has (`plant_sales`, long-format usage, `energy_wh_km` plus the separate correction file); sources and raw-file provenance moved to `data/auto/sources.csv` and `raw_files.csv` as their single home |
+| ST02, ST05, ST06 | as above | Resolved 2026-09-04: the three method files were rewritten to the shape the data has (`plant_sales`, long-format usage, `energy_wh_km` plus the separate correction file); sources and raw-file provenance moved to `data/auto/registry/sources.csv` and `raw_files.csv` as their single home |
 | ST08, ST09 | **Missing** — the scripts ran before their process document was written | Write both at the next re-run, or accept that the method-before-implementation rule (`process/general.md` §4) was inverted here. Recorded rather than excused |
 | ST10, ST11 | Deferred, written at stage entry | ST10 has run and ST11's regression has run without a process document for either — same inversion as ST08/ST09, recorded here |
 | ST01, ST07 | [`process/general.md`](process/general.md) plus the stage sections | Sufficient at current scope |
