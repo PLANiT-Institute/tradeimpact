@@ -1,0 +1,14 @@
+hs6,description,powertrain_class,note
+870321,"Spark-ignition reciprocating piston engine, cylinder capacity <= 1000 cc",ICE,petrol
+870322,"Spark-ignition, > 1000 cc and <= 1500 cc",ICE,petrol
+870323,"Spark-ignition, > 1500 cc and <= 3000 cc",ICE,petrol
+870324,"Spark-ignition, > 3000 cc",ICE,petrol
+870331,"Compression-ignition (diesel), <= 1500 cc",ICE,diesel
+870332,"Compression-ignition (diesel), > 1500 cc and <= 2500 cc",ICE,diesel
+870333,"Compression-ignition (diesel), > 2500 cc",ICE,diesel
+870340,"Spark-ignition engine and electric motor, not capable of being charged by plugging in",HEV,petrol hybrid (HS 2017/2022 heading)
+870350,"Compression-ignition engine and electric motor, not capable of being charged by plugging in",HEV,diesel hybrid
+870360,"Spark-ignition engine and electric motor, capable of being charged by plugging in",PHEV,petrol plug-in hybrid
+870370,"Compression-ignition engine and electric motor, capable of being charged by plugging in",PHEV,diesel plug-in hybrid
+870380,"Electric motor only for propulsion",BEV,battery electric
+870390,"Other",OTHER,includes fuel cell and unclassified
