@@ -259,7 +259,7 @@ def cohort_total(
                 if c.powertrain == "BEV"
                 else (c.cert * rw / 1000.0 * vkt)
             )
-            cumulative += e_ref - e_prod
+            cumulative += e_prod - e_ref
         out[(c.company, c.cohort_year)] += cumulative * c.units / 1000.0
     return dict(out)
 

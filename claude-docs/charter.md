@@ -9,8 +9,8 @@ No countersigned grant agreement has been located; the proposal is therefore tre
 governing (see `B-05`).
 
 **Methodology truth source** (subordinate to the proposal, and itself a deliverable):
-[`../methodology/TI_Whitepaper_v1.5.md`](../methodology/TI_Whitepaper_v1.5.md),
-[`../methodology/TI_Automotive_Technical_Guideline_v1.8.md`](../methodology/TI_Automotive_Technical_Guideline_v1.8.md),
+[`../methodology/TI_Whitepaper_v1.6.md`](../methodology/TI_Whitepaper_v1.6.md),
+[`../methodology/TI_Automotive_Technical_Guideline_v1.9.md`](../methodology/TI_Automotive_Technical_Guideline_v1.9.md),
 [`../methodology/TI_Methodological_Challenges_v1.md`](../methodology/TI_Methodological_Challenges_v1.md).
 
 Grantee: PLANiT, South Korea. Duration: "12 Months". Primary contact: Sanghyun Hong, Co-founder.

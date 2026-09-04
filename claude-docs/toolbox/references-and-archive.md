@@ -7,8 +7,8 @@ and what it is used for.
 
 | Document | Governs |
 |---|---|
-[`methodology/TI_Whitepaper_v1.5.md`](../../methodology/TI_Whitepaper_v1.5.md) | The framework: Layer 1 and Layer 2 definitions, the equation set (§3.1–§3.8), boundary conditions (§4), the three-tier data hierarchy and the no-netting rule (§5), required outputs (§7), limitations (§9) |
-[`methodology/TI_Automotive_Technical_Guideline_v1.8.md`](../../methodology/TI_Automotive_Technical_Guideline_v1.8.md) | Automotive implementation: Layer 1 Methods A/B/C (§2.3), Layer 2 by powertrain (§3.3–§3.5), scenario architecture (§4.7), reporting and the data-quality declaration (§5), method and parameter selection (§6–§7), Appendices A–G |
+[`methodology/TI_Whitepaper_v1.6.md`](../../methodology/TI_Whitepaper_v1.6.md) | The framework: Layer 1 and Layer 2 definitions, the equation set (§3.1–§3.8), boundary conditions (§4), the three-tier data hierarchy and the no-netting rule (§5), required outputs (§7), limitations (§9) |
+[`methodology/TI_Automotive_Technical_Guideline_v1.9.md`](../../methodology/TI_Automotive_Technical_Guideline_v1.9.md) | Automotive implementation: Layer 1 Methods A/B/C (§2.3), Layer 2 by powertrain (§3.3–§3.5), scenario architecture (§4.7), reporting and the data-quality declaration (§5), method and parameter selection (§6–§7), Appendices A–G |
 [`methodology/TI_Methodological_Challenges_v1.md`](../../methodology/TI_Methodological_Challenges_v1.md) | The open questions, each with a resolution criterion and the case study that tests it — the work programme for PH2 |
 
 ## 2. Dataset method files (in repository)

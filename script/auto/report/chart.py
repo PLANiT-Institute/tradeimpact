@@ -113,7 +113,7 @@ def diverging_bars(
     unit: str,
     label: str,
     dp: int = 1,
-    colours: tuple[str, str] = ("var(--pos)", "var(--neg)"),
+    colours: tuple[str, str] = ("var(--added)", "var(--avoided)"),
     label_width: int = 190,
 ) -> str:
     """Horizontal bars around a zero line, one row per label.
@@ -123,7 +123,8 @@ def diverging_bars(
         unit: Axis unit, written under the axis.
         label: Accessible description of the whole chart.
         dp: Decimal places on the tick labels and the value annotations.
-        colours: (positive, negative) CSS colour expressions.
+        colours: (positive, negative) CSS colour expressions. TI is emissions minus
+            benchmark, so positive is added emissions and negative is avoided.
         label_width: User units reserved for the row labels.
 
     Returns:
@@ -399,7 +400,7 @@ def dots(
     for i, (name, value) in enumerate(rows):
         y = PAD_TOP + i * row_h + row_h / 2
         x = zero + value * scale
-        colour = highlight.get(name, "var(--pos)" if value >= 0 else "var(--neg)")
+        colour = highlight.get(name, "var(--added)" if value >= 0 else "var(--avoided)")
         parts.append(f'<line x1="{zero:.1f}" y1="{y:.1f}" x2="{x:.1f}" y2="{y:.1f}" class="stem"/>')
         parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.4" fill="{colour}"/>')
         parts.append(

@@ -1,7 +1,9 @@
 # Measuring Climate Direction: The Trade Impact (TI) Framework
 
-**Version 1.5 · May 2026 · PLANiT Institute**
+**Version 1.6 · September 2026 · PLANiT Institute**
 
+> **Changes in v1.6 — sign convention reversed.** TI_gap is now `E_prod − E_ref`, the product's emissions minus the benchmark's, where v1.5 had `E_ref − E_prod`. A **positive** TI is therefore emissions **added** — the lock-in liability — and a **negative** TI is emissions **avoided** against the benchmark. Nothing else in the calculation changed: every v1.5 figure is the v1.6 figure with its sign reversed. The reason is legibility. TI is reported in tonnes of CO₂e, and under the old ordering a positive number of tonnes meant tonnes *not* emitted, which reads against the grain of every emissions inventory and was a standing source of misreading. The opposite convention is common in avoided-emissions reporting; this framework does not follow it. All interpretation text, worked signs and the disclosure guidance in §3.9 and §5 are updated accordingly.
+>
 > **Changes in v1.5.** Framework simplified to a single TI metric built on the NDC-derived sector benchmark. The Technology Contribution (TC) lens and the TC/NAC two-lens structure are removed. Section 2 introduces the dynamic benchmark rationale. All sector-specific content is consolidated in sector Technical Guidelines.
 
 ---
@@ -12,7 +14,7 @@ International trade and global production embed climate consequences that existi
 
 The Trade Impact (TI) Framework quantifies this climate direction. For every product a firm sells, in every country it operates in, the framework asks: does this product's emission trajectory over its operational lifetime contribute to or undermine the operating country's NDC-committed decarbonisation path?
 
-The result is a single metric — the TI score — that is positive when a firm's product portfolio is contributing to a country's NDC commitment, and negative when it is entrenching emissions above the committed trajectory. Aggregated across all operating countries and all product types, weighted by actual sales volumes, it produces a firm-level signal of the climate direction embedded in the firm's trade activities.
+The result is a single metric — the TI score, in tonnes of CO₂e — that is negative when a firm's product portfolio avoids emissions against a country's NDC commitment, and positive when it adds them, entrenching emissions above the committed trajectory. Aggregated across all operating countries and all product types, weighted by actual sales volumes, it produces a firm-level signal of the climate direction embedded in the firm's trade activities.
 
 The TI Framework does not replace Scope 3 Category 11 absolute emissions reporting. It is an additional disclosure that sits alongside the absolute GHG inventory.
 
@@ -38,8 +40,8 @@ Both gaps share a root cause: existing frameworks do not measure a sold product 
 | Operating country awareness | None | Low | High — country-specific NDC commitment |
 | Baseline evolution over time | None | None | Year-by-year along NDC path |
 | Early mover signal | None | None | Yes — earlier adoption contributes more |
-| Conventional product lock-in signal | None | Partial | Yes — liability grows as sector decarbonises |
-| Scope position | Scope 3 (absolute liability) | Scope 4 (additional positive) | Scope 4 (additional, positive or negative) |
+| Conventional product lock-in signal | None | Partial | Yes — the added quantity grows as the sector decarbonises |
+| Scope position | Scope 3 (absolute liability) | Scope 4 (avoided only) | Scope 4 (added or avoided, one signed metric) |
 
 ---
 
@@ -51,7 +53,7 @@ For every product a firm sells, in every country it operates in, in every year o
 
 > *Does this product emit more or less than what the operating country's sector is committed to emitting in that year under its NDC?*
 
-If less — a climate contribution in that year. If more — a liability. The cumulative answer across the product's lifetime is the per-product TI. The sum across all products, all operating countries, and all product types — weighted by actual sales volumes — is the firm-level TI.
+If less — emissions avoided in that year, a negative TI. If more — emissions added, a positive TI and a lock-in liability. The cumulative answer across the product's lifetime is the per-product TI. The sum across all products, all operating countries, and all product types — weighted by actual sales volumes — is the firm-level TI.
 
 ### 2.2 Why the NDC benchmark, not a fixed product comparison
 
@@ -110,11 +112,13 @@ For hybrid products: a weighted composite of the above, with operating-country-s
 ### 3.3 Annual TI gap per product
 <a id="eq-3.3-annual-gap"></a>
 ```
-TI_gap,v,c(t) = E_ref,c(t) − E_prod,v,c(t)        [kgCO₂e / product / year]
+TI_gap,v,c(t) = E_prod,v,c(t) − E_ref,c(t)        [kgCO₂e / product / year]
 ```
 
-Positive: the product emits less than the sector benchmark in year t — a climate contribution.
-Negative: the product emits more than the benchmark — a carbon lock-in liability.
+Negative: the product emits less than the sector benchmark in year t — emissions avoided, a climate contribution.
+Positive: the product emits more than the benchmark — emissions added, a carbon lock-in liability.
+
+The ordering is product minus benchmark so that the metric reads as an emissions figure: a positive number of tonnes is a number of tonnes emitted.
 
 ### 3.4 Summation convention
 <a id="rule-3.4-summation"></a>
@@ -126,8 +130,8 @@ T = total number of operating years. t runs from 0 to T−1 (T terms, inclusive)
 TI_product,v,c,S = Σ_{t=0}^{T−1} TI_gap,v,c(t)        [kgCO₂e / product over lifetime]
 ```
 
-Positive: net contribution over the product's operational life.
-Negative: net lock-in liability over the product's operational life.
+Negative: net emissions avoided over the product's operational life — a contribution.
+Positive: net emissions added over the product's operational life — a lock-in liability.
 
 ### 3.6 Single-cohort firm-level TI
 <a id="eq-3.6-cohort"></a>
@@ -159,7 +163,7 @@ Where V_p,c,v = products produced in country p of type v operating in country c.
 TI_annual,F,Y₀,τ,S = Σ_v Σ_c [ V_c,v × TI_gap,v,c(τ − Y₀) ]        [tCO₂e / year]
 ```
 
-This time-series shows how the annual climate impact of one year's sales decisions evolves over the product lifetime. For clean-technology products, this typically narrows over time as the sector benchmark converges toward product emission levels. For conventional products, it turns negative as the benchmark falls below fixed emissions.
+This time-series shows how the annual climate impact of one year's sales decisions evolves over the product lifetime. For clean-technology products, the avoided quantity typically narrows over time as the sector benchmark converges toward product emission levels. For conventional products, it turns positive — from avoided to added — as the benchmark falls below fixed emissions.
 
 ### 3.8 Rolling portfolio TI — primary disclosure metric
 <a id="eq-3.8-portfolio"></a>
@@ -171,11 +175,11 @@ This is the firm's total annual climate impact from all products currently in op
 
 ### 3.9 Interpretation
 
-**Positive TI:** The firm's active product fleet emits less in aggregate than the operating countries' committed sector benchmarks. The firm's trade activities are contributing to NDC achievement.
+**Negative TI:** The firm's active product fleet emits less in aggregate than the operating countries' committed sector benchmarks. The firm's trade activities avoid emissions against those benchmarks and are contributing to NDC achievement.
 
-**Negative TI:** The firm's active product fleet emits more than the benchmarks. Trade activities represent a net lock-in liability relative to the countries' NDC commitments.
+**Positive TI:** The firm's active product fleet emits more than the benchmarks. Trade activities add emissions and represent a net lock-in liability relative to the countries' NDC commitments.
 
-**Declining TI (even if still positive):** The firm's portfolio is not keeping pace with the operating countries' decarbonisation commitments. The S1–S3 spread signals the degree of policy risk exposure: a wide spread means the firm's TI position is highly sensitive to how ambitiously operating countries implement their NDCs.
+**Rising TI (even if still negative):** The firm's portfolio is not keeping pace with the operating countries' decarbonisation commitments. The S1–S3 spread signals the degree of policy risk exposure: a wide spread means the firm's TI position is highly sensitive to how ambitiously operating countries implement their NDCs.
 
 ---
 
@@ -269,13 +273,13 @@ All methodology documents, sector Technical Guidelines, and reference data are p
 
 ### 9.1 NDC quality and the implementation gap
 
-TI relies on NDC trajectories as the authoritative sector benchmark. A minority of NDCs include explicit sector sub-targets; most require pro-rata allocation of whole-economy targets, which assumes all sectors decarbonise at equal rates. This overstates sector benchmark decline speed in markets without explicit sector targets, understating lock-in liability for conventional products.
+TI relies on NDC trajectories as the authoritative sector benchmark. A minority of NDCs include explicit sector sub-targets; most require pro-rata allocation of whole-economy targets, which assumes all sectors decarbonise at equal rates. This overstates sector benchmark decline speed in markets without explicit sector targets, overstating the avoided quantity and understating lock-in liability for conventional products.
 
 A gap exists between stated NDC ambitions and enacted policy. TI S2 results represent the policy-committed trajectory, not the policy-implemented trajectory. S1 (current policies, IEA STEPS) provides a more conservative bound and should always be reported alongside S2.
 
 ### 9.2 Attribution across multiple producers
 
-TI measures one firm's portfolio in isolation. If multiple firms all report positive TI simultaneously, individual claims do not physically sum — each firm's TI is a comparative metric against a shared benchmark, not a physical attribution of sector-level changes.
+TI measures one firm's portfolio in isolation. If multiple firms all report negative TI — avoided emissions — simultaneously, individual claims do not physically sum — each firm's TI is a comparative metric against a shared benchmark, not a physical attribution of sector-level changes.
 
 ### 9.3 Manufacturing emissions excluded
 

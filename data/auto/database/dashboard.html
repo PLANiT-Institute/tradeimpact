@@ -214,7 +214,7 @@ table.data thead th {
 table.data thead tr:nth-child(2) th { top: 25px; }
 table.data tbody tr:hover td { background: var(--panel); }
 table.data td.num, table.data th.num { text-align: right; font-family: var(--mono); }
-table.data td.neg { color: var(--neg); }
+table.data td.neg { color: var(--muted); }
 table.data tr.total td, table.data tr.total th {
   background: var(--panel2);
   font-weight: 650;
@@ -699,11 +699,12 @@ const MAP_METRICS = [
      f.year + ' GROUP BY 1'},
   {id: 'coverage_status', label: 'coverage status', kind: 'cat', palette: STATUS_COLOR,
    sql: (f) => 'SELECT destination, MIN(status)' + COV + f.company + f.year + ' GROUP BY 1'},
-  {id: 'ti_tco2e', label: 'lifetime TI (tCO2e), scenario', kind: 'div', unit: 'tCO2e',
+  {id: 'ti_tco2e', label: 'lifetime TI (tCO2e), + added / - avoided', kind: 'div',
+   unit: 'tCO2e',
    sql: (f) => 'SELECT destination, SUM(ti_tco2e) FROM ti_country WHERE scenario = ' +
      lit(f.scenarioVal) + f.company + f.year + ' GROUP BY 1'},
-  {id: 'ti_per_vehicle', label: 'TI per vehicle (kgCO2e), scenario', kind: 'div',
-   unit: 'kgCO2e per vehicle',
+  {id: 'ti_per_vehicle', label: 'TI per vehicle (kgCO2e), + added / - avoided',
+   kind: 'div', unit: 'kgCO2e per vehicle',
    sql: (f) => 'SELECT destination, SUM(ti_tco2e) * 1000.0 / SUM(units) FROM ti_country ' +
      'WHERE scenario = ' + lit(f.scenarioVal) + f.company + f.year + ' GROUP BY 1'},
   {id: 'fleet_intensity', label: 'benchmark fleet intensity (gCO2/km)', kind: 'seq',
@@ -837,7 +838,9 @@ function mapColor(metric, nums) {
   if (metric.kind === 'cat') return (v) => metric.palette[v] || '#adb5bd';
   if (metric.kind === 'div') {
     const amp = Math.max(1e-9, ...nums.map((v) => Math.abs(v)));
-    return d3.scaleSequential([-amp, amp], d3.interpolateRdBu);
+    // TI is emissions minus benchmark, so the positive end is emissions added: red. The
+    // domain runs high-to-low because interpolateRdBu puts red at its low end.
+    return d3.scaleSequential([amp, -amp], d3.interpolateRdBu);
   }
   return d3.scaleSequential([Math.min(0, ...nums), Math.max(1e-9, ...nums)],
     d3.interpolateBlues);
@@ -939,7 +942,8 @@ function renderMapLegend(metric, color, nums) {
   const stops = [0, 0.25, 0.5, 0.75, 1].map((q) => lo + q * (hi - lo));
   el.innerHTML = stops.map((v) => swatch(color(v), fmtNum(v))).join('') +
     ' <span class="muted">' + esc(metric.unit || '') +
-    (metric.kind === 'div' ? ' (red = liability, blue = contribution)' : '') + '</span>' +
+    (metric.kind === 'div'
+      ? ' (red = emissions added, blue = emissions avoided)' : '') + '</span>' +
     swatch('var(--border)', 'no value');
 }
 
