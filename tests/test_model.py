@@ -102,7 +102,9 @@ def test_ice_hev_cells_match_closed_form(
         T = int(c["lifetime_years"])
         e_ref0, e_prod = float(c["e_ref_year0_kgco2e"]), float(c["e_prod_year0_kgco2e"])
         geometric = T if abs(r) < 1e-15 else (1 - (1 - r) ** T) / r
-        expected = e_ref0 * geometric - T * e_prod
+        # TI is the product's emissions minus the benchmark's: a fixed product over T years
+        # against a benchmark declining geometrically at r.
+        expected = T * e_prod - e_ref0 * geometric
         # year-0 values are published to 4 dp; a T-term sum inherits at most T * 1e-4 of that
         assert abs(float(c["ti_per_vehicle_kgco2e"]) - expected) <= 2e-4 * T + 1e-6, c
         checked += 1
@@ -305,7 +307,7 @@ def test_annual_tables_state_both_sides_of_the_comparison() -> None:
     """Every annual grain publishes benchmark, product and their difference, and they agree.
 
     The point of the annual tables is that a reader can see what is being compared in each
-    calendar year, not only the net result, so the identity ti = e_ref - e_prod is asserted at
+    calendar year, not only the net result, so the identity ti = e_prod - e_ref is asserted at
     all three grains: the cohort cell, the company roll-up, and the destination and powertrain
     roll-ups.
     """
@@ -326,7 +328,7 @@ def test_annual_tables_state_both_sides_of_the_comparison() -> None:
             )
             # Three independently rounded 4-dp values, so the identity holds to half a step
             # each way on either side of the subtraction.
-            assert abs((e_ref - e_prod) - ti) <= 1.5e-4, (name, r)
+            assert abs((e_prod - e_ref) - ti) <= 1.5e-4, (name, r)
 
 
 def test_annual_roll_ups_reproduce_the_company_flow_year_by_year() -> None:
@@ -442,10 +444,12 @@ def test_report_states_the_published_result_set(company_rows: list[dict[str, str
             float(r["ti_tco2e"]) for r in reported if r["scenario"] == scenario
         )
         assert f"{total / 1e6:+,.1f}" in html or f"{total / 1e6:+,.2f}" in html, scenario
-    liabilities = sum(
-        1 for r in reported if r["scenario"] == "S2" and float(r["ti_tco2e"]) < 0
+    # TI is emissions minus benchmark, so a cohort that adds emissions is the positive one.
+    adding = sum(1 for r in reported if r["scenario"] == "S2" and float(r["ti_tco2e"]) > 0)
+    total = len({(r["market"], r["company"], r["cohort_year"]) for r in reported})
+    assert f"all\n{adding} of {total} add emissions" in html or (
+        f"{adding} of {total} add" in html
     )
-    assert f"{liabilities} out of" in html or f"{liabilities} of {liabilities}" in html
 
 
 TIERS = {"A", "B", "C"}

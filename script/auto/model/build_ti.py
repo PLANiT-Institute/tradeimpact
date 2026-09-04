@@ -24,16 +24,20 @@ Outputs (data/auto/output/)
 Algorithm (whitepaper §3.2-3.5, guideline §3.3-3.4, §4):
     $$ E_{prod}(t) = \\begin{cases} I_{cert}\\,f_{rw}\\,D_c & \\text{ICE, HEV}\\\\
        \\eta_{cert}\\,f_{rw}\\, G_c(t)\\, D_c & \\text{BEV} \\end{cases},\\qquad
-       TI_{v} = \\sum_{t=0}^{T_c-1}\\big(E_{ref,c}(t)-E_{prod}(t)\\big),\\qquad
+       TI_{v} = \\sum_{t=0}^{T_c-1}\\big(E_{prod}(t)-E_{ref,c}(t)\\big),\\qquad
        TI_{cell} = TI_v \\cdot N / 1000 $$
     ASCII: E_prod = tailpipe_gco2_km*factor/1000*vkt [kgCO2e/vehicle-yr] for ICE/HEV;
            E_prod(t) = energy_wh_km/1000 * factor * G(t) * vkt for BEV (G in kgCO2e/kWh);
-           TI_v = sum_{t=0}^{T-1} (E_ref(t) - E_prod(t)) [kgCO2e/vehicle]; TI = TI_v*units/1000 [t]
+           TI_v = sum_{t=0}^{T-1} (E_prod(t) - E_ref(t)) [kgCO2e/vehicle];
+           TI = TI_v*units/1000 [t]
     I_cert  certified tailpipe intensity (gCO2/km), eta_cert certified consumption (Wh/km),
     f_rw    real-world factor (-) looked up on (test cycle, powertrain): WLTP values carry the
             published OBFCM gap, EPA label values are already 5-cycle adjusted (factor 1.0),
     D_c     annual distance (km/yr), T_c operating life (years).
-    Positive TI = contribution below the destination benchmark; negative = lock-in liability.
+    Sign convention: TI is the product's emissions minus the benchmark's, so a POSITIVE TI
+    is additional emissions the destination is locked into and a NEGATIVE TI is emissions
+    avoided against the benchmark. The unit is tCO2e, and it reads the way an inventory
+    reads: a positive number of tonnes is tonnes emitted.
 
 Run from the repository root:  .venv/bin/python script/auto/model/build_ti.py
 """
@@ -273,7 +277,7 @@ def main() -> None:
                     e_prod = cert * rw / 1000.0 * vkt
                 if t == 0:
                     e_prod0 = e_prod
-                gap = e_ref - e_prod
+                gap = e_prod - e_ref
                 cumulative += gap
                 bucket = annual[(market, c["company"], cohort_year, scenario)][cohort_year + t]
                 bucket["e_ref"] += e_ref * units / 1000.0
@@ -325,7 +329,7 @@ def main() -> None:
         cumulative = 0.0
         for calendar_year, side in sorted(series.items()):
             fleet = surviving[(market, company, cohort_year)][calendar_year]
-            flow = side["e_ref"] - side["e_prod"]
+            flow = side["e_prod"] - side["e_ref"]
             cumulative += flow
             annual_rows.append(
                 {

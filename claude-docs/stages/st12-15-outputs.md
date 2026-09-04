@@ -20,7 +20,7 @@ together whenever any of the three changes; and date every rule change with its 
 **Phases served.** PH2/1–6 (this stage is that phase's engine); PH1/3–4 (the rules ST08 and ST09
 obey); PH4/1 (drafting the power and shipping guidelines); PH5/1–2.
 
-**Consumes.** `methodology/TI_Whitepaper_v1.5.md`, `TI_Automotive_Technical_Guideline_v1.8.md`,
+**Consumes.** `methodology/TI_Whitepaper_v1.6.md`, `TI_Automotive_Technical_Guideline_v1.9.md`,
 `TI_Methodological_Challenges_v1.md`; case-study evidence from ST08–ST10 and adequacy findings
 from ST11; `SRC-25` (GHG Protocol Scope 3 standard and Chapter 11 technical guidance) and the
 PCAF and Scope 4 literature in

@@ -4,9 +4,11 @@ The report has no numbers of its own. This module holds the queries; the report 
 the prose and the layout, and interpolates from here — so a rebuild after a data change moves
 the sentences as well as the charts, and a claim cannot drift away from the table it rests on.
 
-One convention runs through it. Cross-market comparisons use the 2024 cohorts, the only sale
+Two conventions run through it. Cross-market comparisons use the 2024 cohorts, the only sale
 year every market has, because cohort years are never pooled: a 2024 and a 2025 cohort are
-different vehicles sold into a benchmark at different levels.
+different vehicles sold into a benchmark at different levels. And TI is the product's emissions
+minus the benchmark's, so a positive figure is emissions added and a negative figure is
+emissions avoided; the words "liability" and "contribution" stay attached to those meanings.
 """
 
 from __future__ import annotations
@@ -238,8 +240,10 @@ def derive(f: Facts) -> dict[str, object]:
     }
     for scenario, group in by_scenario.items():
         out[f"{scenario}_total_mt"] = sum(float(r["ti_tco2e"]) for r in group) / 1e6
-        out[f"{scenario}_contributions"] = sum(1 for r in group if float(r["ti_tco2e"]) > 0)
-        out[f"{scenario}_liabilities"] = sum(1 for r in group if float(r["ti_tco2e"]) < 0)
+        # TI is emissions minus benchmark: a negative cohort avoided emissions against its
+        # benchmark, a positive one added them.
+        out[f"{scenario}_contributions"] = sum(1 for r in group if float(r["ti_tco2e"]) < 0)
+        out[f"{scenario}_liabilities"] = sum(1 for r in group if float(r["ti_tco2e"]) > 0)
         out[f"{scenario}_n"] = len(group)
     out["scenarios"] = sorted(by_scenario)
 
@@ -259,10 +263,10 @@ def derive(f: Facts) -> dict[str, object]:
             (r["powertrain"], r["scenario"]), 0.0
         ) + float(r["ti"])
     out["powertrain_totals"] = pt
-    out["bev_markets_positive_s2"] = sum(
+    out["bev_markets_avoiding_s2"] = sum(
         1
         for r in f.powertrain
-        if r["powertrain"] == "BEV" and r["scenario"] == "S2" and float(r["ti"]) > 0
+        if r["powertrain"] == "BEV" and r["scenario"] == "S2" and float(r["ti"]) < 0
     )
     out["bev_markets_s2"] = sum(
         1 for r in f.powertrain if r["powertrain"] == "BEV" and r["scenario"] == "S2"

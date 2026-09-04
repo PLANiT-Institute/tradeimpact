@@ -1,8 +1,11 @@
 # Trade Impact (TI) Framework
 ## Automotive Sector — Implementation Technical Guideline
 
-**Version 1.8 · May 2026 · PLANiT Institute**
+**Version 1.9 · September 2026 · PLANiT Institute**
 
+> **What changed in v1.9 — sign convention reversed.**
+> TI_gap is now `E_prod,v,c(t) − E_ref,c(t)`, the vehicle's emissions minus the fleet benchmark's, where v1.8 had the reverse. A **positive** TI is therefore emissions **added** — the lock-in liability — and a **negative** TI is emissions **avoided** against the benchmark. Nothing else in the calculation changed: every v1.8 figure is the v1.9 figure with its sign reversed. TI is reported in tonnes of CO₂e, and under the old ordering a positive number of tonnes meant tonnes *not* emitted, which reads against the grain of every emissions inventory. See whitepaper v1.6 §3.3. All interpretation text and the sign statements in §1.1, §3.3, §4.1 and Appendix F are updated accordingly.
+>
 > **What changed in v1.8.**
 > Technology Contribution (TC) lens removed. Framework simplified to a single TI metric: TI_gap = E_ref,c(t) − E_prod,v,c(t). Layer 1A (TC baseline) removed throughout. All TC-related formulas, outputs, and data quality fields removed. Worked examples removed. Appendices retain data source references and methodological guidance only.
 
@@ -16,11 +19,11 @@
 
 ### 1.1 What the TI score measures
 
-The TI score measures whether a firm's vehicle sales, in aggregate across all operating countries and all powertrain types, are a net climate contribution or a net carbon lock-in liability relative to the operating countries' NDC-committed fleet decarbonisation trajectories.
+The TI score measures whether a firm's vehicle sales, in aggregate across all operating countries and all powertrain types, add emissions or avoid them relative to the operating countries' NDC-committed fleet decarbonisation trajectories. It is reported in tonnes of CO₂e and signed as an emissions figure: positive means tonnes added — a net carbon lock-in liability — and negative means tonnes avoided, a net climate contribution.
 
 The unit of analysis is the **operating country** — the country where the vehicle is actually driven. The framework asks, year by year over a vehicle's operational lifetime: does this vehicle emit more or less than what the operating country's in-use fleet is committed to emitting under its NDC in that year?
 
-If less — a climate contribution in that year. If more — a carbon lock-in liability. The cumulative answer across the vehicle's lifetime is the per-vehicle TI. The sum across all vehicles, all operating countries, and all powertrain types — weighted by actual sales volumes — is the firm-level TI.
+If less — emissions avoided in that year, a negative TI. If more — emissions added, a positive TI and a carbon lock-in liability. The cumulative answer across the vehicle's lifetime is the per-vehicle TI. The sum across all vehicles, all operating countries, and all powertrain types — weighted by actual sales volumes — is the firm-level TI.
 
 The framework defines two analysis levels:
 
@@ -165,7 +168,7 @@ E_prod,ICE,c(t) = I_export,ICE × D_c        [constant for all t]
 
 `I_export,ICE` = real-world emission intensity with certification correction applied (see Appendix C).
 
-The ICE TI_gap starts positive (new ICE is cleaner than the fleet average, which includes many older vehicles) and narrows progressively as the fleet benchmark declines. This is the carbon lock-in signal: the vehicle's fixed emissions become an increasingly large liability relative to the committed fleet trajectory.
+The ICE TI_gap starts negative — emissions avoided, because a new ICE is cleaner than a fleet average that includes many older vehicles — narrows as the fleet benchmark declines, and crosses to positive. That crossing is the carbon lock-in signal: the vehicle's fixed emissions become an increasingly large addition relative to the committed fleet trajectory.
 
 ### 3.4 Case 2 — BEV
 <a id="eq-g3.4-bev"></a>
@@ -196,14 +199,16 @@ UF = Utility Factor — the fraction of distance driven in electric mode, market
 ### 4.1 Annual TI gap per vehicle
 
 ```
-TI_gap,v,c(t) = E_ref,c(t) − E_prod,v,c(t)        [kgCO₂e / vehicle / year]
+TI_gap,v,c(t) = E_prod,v,c(t) − E_ref,c(t)        [kgCO₂e / vehicle / year]
 ```
 
 `E_ref,c(t)` carries no powertrain subscript — the fleet benchmark is powertrain-agnostic.
 `E_prod,v,c(t)` carries subscript v — Layer 2 differs by powertrain type.
 
-Positive: vehicle emits less than the benchmark in year t — a contribution.
-Negative: vehicle emits more than the benchmark — a liability.
+Negative: vehicle emits less than the benchmark in year t — emissions avoided, a contribution.
+Positive: vehicle emits more than the benchmark — emissions added, a liability.
+
+The ordering is vehicle minus benchmark so that the metric reads as an emissions figure: a positive number of tonnes is a number of tonnes emitted.
 
 Plot this time-series for t = 0 to T−1. It is the most informative single visualisation of TI output.
 
@@ -506,7 +511,7 @@ Source: national VKT statistics (FHWA — USA; BITRE — Australia; EEA Transpor
 | TI_annual,F,Y₀,τ,S | Annual TI from cohort Y₀ in calendar year τ, scenario S | tCO₂e/yr |
 | TI_portfolio,F,τ,S | Rolling portfolio TI in calendar year τ, scenario S | tCO₂e/yr |
 | TI_vehicle,v,c,S | Cumulative lifetime TI per vehicle, type v, country c, scenario S | kgCO₂e |
-| TI_gap,v,c(t) | Annual TI gap: E_ref,c(t) − E_prod,v,c(t) | kgCO₂e/vehicle/yr |
+| TI_gap,v,c(t) | Annual TI gap: E_prod,v,c(t) − E_ref,c(t); positive = added, negative = avoided | kgCO₂e/vehicle/yr |
 | E_ref,c(t) | Layer 1: fleet benchmark emissions in country c at year t | kgCO₂e/vehicle/yr |
 | E_prod,v,c(t) | Layer 2: sold vehicle emissions in country c at year t | kgCO₂e/vehicle/yr |
 | I_fleet,seg,c(t) | Fleet-average segment emission intensity at year t | kgCO₂e/km |
@@ -555,10 +560,10 @@ Source: national VKT statistics (FHWA — USA; BITRE — Australia; EEA Transpor
 ## Appendix F — Methodological Caveats
 
 **F.1 NDC quality and pro-rata allocation bias**
-Where transport sub-targets are absent, pro-rata allocation overstates transport sector benchmark decline speed. Transport typically decarbonises more slowly than electricity. This understates TI lock-in liability for ICE vehicles in affected markets. Disclose; use S1 as conservative cross-check.
+Where transport sub-targets are absent, pro-rata allocation overstates transport sector benchmark decline speed. Transport typically decarbonises more slowly than electricity. This overstates the added quantity — the TI lock-in liability — for ICE vehicles in affected markets. Disclose; use S1 as conservative cross-check.
 
 **F.2 PHEV Utility Factor structural overstatement**
-Regulatory UF values consistently overstate real-world electric driving share. PHEV TI contributions should be treated as upper-bound estimates.
+Regulatory UF values consistently overstate real-world electric driving share, so a PHEV's avoided quantity is an upper bound and its added quantity a lower bound. Treat PHEV TI as a bound, not an estimate.
 
 **F.3 Exponential model non-linearity**
 Methods B and C model benchmark evolution as a smooth exponential decline. Real EV adoption follows S-curve dynamics. In markets with rapidly accelerating EV adoption, the model may underestimate near-term benchmark decline.

@@ -100,8 +100,13 @@ COMPANY_FIELDS = [
 
 
 def direction(value: float) -> str:
-    """Sign label used in every published table."""
-    return "contribution" if value > 0 else ("liability" if value < 0 else "neutral")
+    """Sign label used in every published table.
+
+    TI is the product's emissions minus the benchmark's, so a positive figure is emissions the
+    destination is locked into and a negative figure is emissions avoided. The words stay
+    attached to the meaning, not to the sign.
+    """
+    return "liability" if value > 0 else ("contribution" if value < 0 else "neutral")
 
 
 def group(cells: list[dict[str, str]], by: str) -> list[dict[str, object]]:
@@ -170,7 +175,7 @@ def group_annual(cells: list[dict[str, str]], by: str) -> list[dict[str, object]
     for key in sorted(sums):
         company, market, cohort_year, group_key, scenario, calendar_year = key
         bucket = sums[key]
-        units, flow = bucket["units"], bucket["e_ref"] - bucket["e_prod"]
+        units, flow = bucket["units"], bucket["e_prod"] - bucket["e_ref"]
         running = cumulative[(company, market, cohort_year, group_key, scenario)] + flow
         cumulative[(company, market, cohort_year, group_key, scenario)] = running
         rows.append(

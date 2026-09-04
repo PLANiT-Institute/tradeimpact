@@ -2,8 +2,8 @@
 
 Does a company's exported product help or obstruct the importing country's committed
 decarbonisation path over the product's operating lifetime? The methodology is the
-[TI whitepaper](methodology/TI_Whitepaper_v1.5.md) and the
-[automotive technical guideline](methodology/TI_Automotive_Technical_Guideline_v1.8.md);
+[TI whitepaper](methodology/TI_Whitepaper_v1.6.md) and the
+[automotive technical guideline](methodology/TI_Automotive_Technical_Guideline_v1.9.md);
 the engagement is governed by the Climate Arc grant proposal (see `claude-docs/`).
 
 ## Research process
@@ -70,26 +70,26 @@ previously published EU27 result exactly when fed the archived inputs (see
 
 | Market, cohort | Company | Covered | S1 current | S2 committed policy |
 |---|---|---|---|---|
-| EU27, 2024 registrations | Toyota | 96.8 % | −1.68 MtCO₂e | −14.37 |
-| EU27, 2024 registrations | Hyundai | 95.4 % | −1.66 | −8.00 |
-| EU27, 2024 registrations | Kia | 91.4 % | −1.52 | −7.37 |
-| EU27, 2024 registrations | Nissan | 99.8 % | −1.44 | −4.43 |
-| US, 2024 brand sales | Toyota | 97.8 % | **+5.53** | −19.00 |
-| US, 2024 brand sales | Hyundai | 99.0 % | **+1.56** | −8.84 |
-| US, 2024 brand sales | Kia | 98.0 % | **+1.01** | −8.77 |
-| US, 2024 brand sales | Nissan | 99.9 % | **+2.26** | −8.63 |
-| US, 2025 brand sales | Toyota | 98.3 % | **+8.07** | −18.60 |
-| US, 2025 brand sales | Hyundai | 98.4 % | **+1.50** | −9.63 |
-| US, 2025 brand sales | Kia | 98.2 % | **+0.001** | −10.52 |
-| US, 2025 brand sales | Nissan | 100.0 % | **+1.36** | −9.65 |
-| US, Jan–Jun 2026 retail | Kia | 98.0 % | −0.49 | −5.81 |
-| Japan, 2024 registrations | Toyota | 99.3 % | **+1.07** | −3.50 |
-| Japan, 2024 registrations | Nissan | 93.7 % | **+0.35** | −0.47 |
-| Japan, 2025 registrations | Toyota | 100.0 % | **+1.13** | −3.53 |
-| Japan, 2025 registrations | Nissan | 94.6 % | **+0.24** | −0.41 |
-| Korea, 2024 domestic sales | Hyundai | 94.7 % | **+5.02** | −4.24 |
-| Korea, 2025 domestic sales | Hyundai | 94.4 % | **+4.84** | −4.06 |
-| Korea, Jan–Jun 2026 retail | Kia | 98.7 % | **+1.86** | −1.65 |
+| EU27, 2024 registrations | Toyota | 96.8 % | **+1.68 MtCO₂e** | **+14.37** |
+| EU27, 2024 registrations | Hyundai | 95.4 % | **+1.66** | **+8.00** |
+| EU27, 2024 registrations | Kia | 91.4 % | **+1.52** | **+7.37** |
+| EU27, 2024 registrations | Nissan | 99.8 % | **+1.44** | **+4.43** |
+| US, 2024 brand sales | Toyota | 97.8 % | −5.53 | **+19.00** |
+| US, 2024 brand sales | Hyundai | 99.0 % | −1.56 | **+8.84** |
+| US, 2024 brand sales | Kia | 98.0 % | −1.01 | **+8.77** |
+| US, 2024 brand sales | Nissan | 99.9 % | −2.26 | **+8.63** |
+| US, 2025 brand sales | Toyota | 98.3 % | −8.07 | **+18.60** |
+| US, 2025 brand sales | Hyundai | 98.4 % | −1.50 | **+9.63** |
+| US, 2025 brand sales | Kia | 98.2 % | −0.001 | **+10.52** |
+| US, 2025 brand sales | Nissan | 100.0 % | −1.36 | **+9.65** |
+| US, Jan–Jun 2026 retail | Kia | 98.0 % | **+0.49** | **+5.81** |
+| Japan, 2024 registrations | Toyota | 99.3 % | −1.07 | **+3.50** |
+| Japan, 2024 registrations | Nissan | 93.7 % | −0.35 | **+0.47** |
+| Japan, 2025 registrations | Toyota | 100.0 % | −1.13 | **+3.53** |
+| Japan, 2025 registrations | Nissan | 94.6 % | −0.24 | **+0.41** |
+| Korea, 2024 domestic sales | Hyundai | 94.7 % | −5.02 | **+4.24** |
+| Korea, 2025 domestic sales | Hyundai | 94.4 % | −4.84 | **+4.06** |
+| Korea, Jan–Jun 2026 retail | Kia | 98.7 % | −1.86 | **+1.65** |
 
 ### How much of worldwide sales this captures
 
@@ -117,9 +117,11 @@ country codes themselves in `countries`, with `countries_covered` and `countries
 beside them, and `ti_source_reconciliation.csv` puts every source a company published for the
 same cell side by side.
 
-Negative = lifetime emissions above the destination's committed benchmark (lock-in
-liability); positive = below it (contribution). Markets are never summed: different sales
-bases, test cycles and benchmarks. Withheld units (PHEV, FCEV, no certified value, Luxembourg's
+**Sign convention.** TI is the product's emissions minus the benchmark's, so it reads the way
+an inventory reads: **positive = tonnes added** over the vehicles' lifetime, emissions the
+destination is locked into (bold in the table above); **negative = tonnes avoided** against the
+benchmark. The opposite convention is common in avoided-emissions reporting — this project does
+not use it. Markets are never summed: different sales bases, test cycles and benchmarks. Withheld units (PHEV, FCEV, no certified value, Luxembourg's
 implausible benchmark, the Genesis brand, Ioniq 9 without an EPA row) are listed, not absorbed.
 
 The tables above are lifetime totals. Every one of them has an annual twin that carries both
@@ -136,7 +138,7 @@ IR "US Retail Sales" 2024 and 2025, imports included, brand total despite the la
 America full years 2024 and 2025; Kia IR Jan–Jun 2026, a half year); the US S1 benchmark is
 the all-light-duty fleet including pickups (217 gCO₂/km, declining 1.1 %/yr) with the segment
 ratio set to 1.0, which is why compact crossovers and hybrids sit below it — a segment-matched
-benchmark would lower or reverse the S1 contributions; and nameplates the releases do not split
+benchmark would raise or reverse the S1 avoidances; and nameplates the releases do not split
 by powertrain are divided with EPA Automotive Trends MY2024 production shares (assumption
 A-US-PT in `data/auto/output/method.md`) with an all-HEV bound (`ti_sensitivity.csv`,
 dimension `powertrain_mix`). Cohort years are never pooled: each row above is one sale year.
@@ -172,13 +174,14 @@ table under it, and a rebuild after a data change moves the words as well as the
 Its six findings, in the order the report makes them:
 
 1. Under each destination's own committed pathway, **none** of the 20 cohorts emits less over
-   its lifetime than the fleet it joins; under the observed trajectory 15 of 20 do.
+   its lifetime than the fleet it joins — all 20 add emissions, +151.5 MtCO₂e; under the
+   observed trajectory 15 of 20 avoid, −29.0 MtCO₂e net.
 2. Under committed policy a cohort stops beating its benchmark 4.7 to 5.6 years after sale, in
    every market — against 23 years in the United States under the observed trend.
-3. Hybrids are the largest single contribution against the observed trend and almost nothing
-   against committed policy; battery-electric is the only powertrain positive under both.
-4. The same nameplate and powertrain is a contribution in one market and a multi-tonne
-   liability in another, on market parameters alone.
+3. Hybrids avoid more than any other powertrain against the observed trend and add emissions
+   against committed policy; battery-electric is the only powertrain that avoids under both.
+4. The same nameplate and powertrain avoids emissions in one market and adds several tonnes
+   a vehicle in another, on market parameters alone.
 5. Inside the EU27 the per-vehicle result spans 28 tonnes between member states — wider than
    the gap between any two powertrains in the same country.
 6. The result is most sensitive to vehicle lifetime (47 % to 131 % of the central value), which

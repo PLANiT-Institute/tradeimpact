@@ -62,7 +62,7 @@ CSS = """
 :root {
   color-scheme: light;
   --ink: #14161a; --muted: #5b6472; --rule: #d7dce3; --bg: #ffffff; --panel: #f6f8fa;
-  --pos: #1f7a5a; --neg: #b03030; --band: #c9d4e055;
+  --added: #b03030; --avoided: #1f7a5a; --band: #c9d4e055;
   --c-s1: #4a6fa5; --c-s2: #b06a1f;
   --c-ice: #8a8f98; --c-hev: #3f7fb3; --c-bev: #1f7a5a; --c-phev: #9a6fb0; --c-fcev: #b0894a;
   --accent: #1f4e79;
@@ -71,7 +71,7 @@ CSS = """
   :root:not([data-theme="light"]) {
     color-scheme: dark;
     --ink: #e6e9ee; --muted: #9aa4b2; --rule: #333a45; --bg: #14171c; --panel: #1b1f26;
-    --pos: #4cbf95; --neg: #e0736b; --band: #3a4a5e55;
+    --added: #e0736b; --avoided: #4cbf95; --band: #3a4a5e55;
     --c-s1: #7fa8dd; --c-s2: #dda45f;
     --c-ice: #9aa0aa; --c-hev: #62a8dc; --c-bev: #4cbf95; --c-phev: #b78fd0; --c-fcev: #d0a86a;
     --accent: #9dc4ea;
@@ -106,7 +106,7 @@ th, td { text-align: right; padding: 3.5px 6px; border-bottom: 1px solid var(--r
 th:first-child, td:first-child, th.l, td.l { text-align: left; }
 thead th { border-bottom: 1.2px solid var(--ink); font-weight: 600; }
 tbody tr:nth-child(even) { background: var(--panel); }
-td.pos { color: var(--pos); } td.neg { color: var(--neg); }
+td.added { color: var(--added); } td.avoided { color: var(--avoided); }
 tfoot td { font-weight: 600; border-top: 1.2px solid var(--ink); border-bottom: none; }
 figure { margin: 14px 0 16px; }
 figcaption { font-size: 8.7pt; color: var(--muted); margin-top: 5px; }
@@ -187,9 +187,17 @@ def signed(value: float, dp: int = 0) -> str:
 
 
 def cell(value: float, dp: int = 2, scale: float = 1.0) -> str:
-    """A table cell coloured by sign."""
-    klass = "pos" if value > 0 else ("neg" if value < 0 else "")
-    return f'<td class="{klass} fmono">{value / scale:+,.{dp}f}</td>'
+    """A table cell coloured by what its sign means: added emissions, or avoided.
+
+    A figure too small to show at the column's precision gets more decimals rather than being
+    printed as a signed zero, which reads as an error rather than as a small number.
+    """
+    klass = "added" if value > 0 else ("avoided" if value < 0 else "")
+    shown = value / scale
+    places = dp
+    while places < dp + 3 and shown and abs(round(shown, places)) < 10.0**-places:
+        places += 1
+    return f'<td class="{klass} fmono">{shown:+,.{places}f}</td>'
 
 
 def maybe(value: object, dp: int = 1) -> str:
@@ -301,22 +309,29 @@ def summary(f: Facts) -> str:
     body = f"""
 <p class="lead">Four carmakers sold {num(d["units"])} vehicles into four destination markets in
 {min(years)}&ndash;{max(years)}.
-Measured against what each destination's own government has committed to, those sales are a
-lifetime liability of {mt(abs(d["S2_total_mt"] * 1e6), 0)[1:]} MtCO&#8322;e. Measured against
-what each destination is actually doing, the same sales are a net contribution of
-{mt(d["S1_total_mt"] * 1e6, 1)} MtCO&#8322;e. Both numbers come from the same cars. The gap
-between them is the finding.</p>
+Measured against what each destination's own government has committed to, those sales add
+{abs(d["S2_total_mt"]):,.1f} MtCO&#8322;e over their operating lifetimes. Measured against what
+each destination is actually doing, the same sales avoid
+{abs(d["S1_total_mt"]):,.1f} MtCO&#8322;e. Both numbers come from the same cars. The gap between
+them is the finding.</p>
+
+<p class="small muted"><b>Sign convention.</b> Trade impact is the product's emissions minus the
+benchmark's, so it reads the way an inventory reads: a <b>positive</b> figure is tonnes of
+CO&#8322;e <b>added</b> &mdash; emissions the destination is locked into &mdash; and a
+<b>negative</b> figure is tonnes <b>avoided</b> against the benchmark. Throughout this report
+"liability" means a positive figure and "contribution" a negative one.</p>
 
 <div class="callout"><p><b>The one-sentence result.</b> Under the observed trajectory
 (S1) {d["S1_contributions"]} of {d["S1_n"]} cohorts emit less over their lifetime than the fleet
-they join; under each government's own committed pathway (S2) <b>none of them do</b> &mdash;
-{d["S2_liabilities"]} out of {d["S2_n"]}, without exception, in every market and for every
-company.</p></div>
+they join; under each government's own committed pathway (S2) <b>none of them do</b> &mdash; all
+{d["S2_liabilities"]} of {d["S2_n"]} add emissions, without exception, in every market and for
+every company.</p></div>
 
 <h3 class="finding">1. Against committed policy there are no good cohorts, only slower ones</h3>
-<p>S2 turns every cohort negative: {mt(d["S2_total_mt"] * 1e6, 1)} MtCO&#8322;e across
-{d["cohorts"]} cohorts, from {mt(min(s2_values), 1)} to {mt(max(s2_values), 2)}
-MtCO&#8322;e. The ranking that remains is a ranking of exposure, not of alignment.</p>
+<p>S2 puts every cohort on the wrong side of zero: {mt(d["S2_total_mt"] * 1e6, 1)}
+MtCO&#8322;e added across {d["cohorts"]} cohorts, the smallest
+{mt(min(s2_values), 2)} and the largest {mt(max(s2_values), 1)} MtCO&#8322;e. The ranking that
+remains is a ranking of exposure, not of alignment.</p>
 
 <h3 class="finding">2. Five years is the half-life of a good-news story</h3>
 <p>A vehicle's emissions are fixed on the day it is sold; the benchmark it is measured against
@@ -327,12 +342,12 @@ observed trend. The committed pathway does not change the car. It changes how lo
 good.</p>
 
 <h3 class="finding">3. Hybrids beat the trend; only battery-electric beats the target</h3>
-<p>On the {COMMON_COHORT} cohorts, hybrids are the largest single contribution under S1
-({mt(pt[("HEV", "S1")], 1)} MtCO&#8322;e) and all but vanish under S2
-({mt(pt[("HEV", "S2")], 1)}). Battery-electric vehicles stay positive under both
+<p>On the {COMMON_COHORT} cohorts, hybrids avoid more than any other powertrain under S1
+({mt(pt[("HEV", "S1")], 1)} MtCO&#8322;e) and turn into an addition under S2
+({mt(pt[("HEV", "S2")], 1)}). Battery-electric vehicles avoid emissions under both
 ({mt(pt[("BEV", "S1")], 1)} and {mt(pt[("BEV", "S2")], 1)}), and are the only powertrain that
-does, in {d["bev_markets_positive_s2"]} of the {d["bev_markets_s2"]} markets where they appear.
-Combustion is the liability that dominates the total ({mt(pt[("ICE", "S2")], 1)}).</p>
+does, in {d["bev_markets_avoiding_s2"]} of the {d["bev_markets_s2"]} markets where they appear.
+Combustion dominates the committed-policy total ({mt(pt[("ICE", "S2")], 1)}).</p>
 
 <h3 class="finding">4. The same car gets opposite verdicts in different markets</h3>
 <p>{corolla}</p>
@@ -372,30 +387,41 @@ def lifetime_bands(f: Facts) -> dict[str, float]:
 def nameplate_across_markets(
     f: Facts, company: str, names: tuple[str, ...], powertrain: str
 ) -> str:
-    """One sentence contrasting the same nameplate and powertrain in different markets."""
-    hits = [
-        r
-        for r in f.nameplates
-        if r["company"] == company
-        and r["powertrain"] == powertrain
-        and r["scenario"] == "S2"
-        and r["model"] in names
-    ]
-    hits.sort(key=lambda r: -r["per_vehicle"])
-    if not hits:
+    """One sentence contrasting the same nameplate and powertrain in different markets.
+
+    Where a market labels the same nameplate twice — the EEA registration data carries a stray
+    short label beside the full one — only the larger row speaks for that market, so a handful
+    of units cannot stand in for a hundred thousand.
+    """
+    hits: dict[str, object] = {}
+    for r in f.nameplates:
+        if (
+            r["company"] != company
+            or r["powertrain"] != powertrain
+            or r["scenario"] != "S2"
+            or r["model"] not in names
+        ):
+            continue
+        held = hits.get(r["market"])
+        if held is None or int(r["units"]) > int(held["units"]):  # type: ignore[index]
+            hits[r["market"]] = r
+    ordered = sorted(hits.values(), key=lambda r: -r["per_vehicle"])  # type: ignore[index]
+    if len(ordered) < 2:
         return ""
+    hardest, easiest = ordered[0], ordered[-1]
     parts = [
         f"{MARKETS[r['market']]} {signed(r['per_vehicle'] / 1000, 1)} tCO&#8322;e per vehicle"
-        for r in hits
+        for r in ordered
     ]
-    best, worst = hits[0], hits[-1]
     return (
-        f"A {COMPANIES[company]} {best['model'].title()} {powertrain} sold in "
-        f"{COMMON_COHORT} is assessed at " + ", ".join(parts) + " under committed policy. The "
+        f"A {COMPANIES[company]} {easiest['model'].title()} {powertrain} sold in "
+        f"{COMMON_COHORT} is assessed at " + ", ".join(parts) + " under committed policy — "
+        f"emissions added where the figure is positive, avoided where it is negative. The "
         f"product is the same class of technology in each; the verdict differs by "
-        f"{num((best['per_vehicle'] - worst['per_vehicle']) / 1000, 1)} tonnes per vehicle "
-        f"because {MARKETS[worst['market']]} sets a benchmark that falls faster and holds a "
-        f"vehicle for {worst['life']:.0f} years against {best['life']:.0f}."
+        f"{num((hardest['per_vehicle'] - easiest['per_vehicle']) / 1000, 1)} tonnes per vehicle "
+        f"because {MARKETS[hardest['market']]} sets a benchmark that falls faster and holds a "
+        f"vehicle for {hardest['life']:.0f} years against "
+        f"{easiest['life']:.0f} in {MARKETS[easiest['market']]}."
     )
 
 
@@ -433,11 +459,16 @@ government published one, and the claim being made is a comparison against commi
 against a consultant's pathway.</p>
 {rate_summary}
 <h3>Reading the sign</h3>
-<p>Positive TI means the vehicles emit less over their lifetime than the benchmark fleet would
-have: a contribution. Negative means more: a lock-in liability, emissions the destination is
-committed to for as long as the vehicles stay on the road. TI is additional to Scope 3
-Category 11 and never offsets it; it is a measure of what a trade flow commits a market to, not
-a credit against a company's own inventory.</p>
+<p>TI is the product's emissions minus the benchmark's, in that order, so the figure reads the
+way an inventory reads. <b>Positive</b> means the vehicles emit more over their lifetime than
+the benchmark fleet would have: tonnes added, a lock-in liability the destination carries for as
+long as the vehicles stay on the road. <b>Negative</b> means they emit less: tonnes avoided
+against the benchmark, a contribution.</p>
+<p>The ordering matters enough to state, because the opposite convention is common in
+avoided-emissions reporting, where a benefit is written as a positive number. This report does
+not use it: a number of tonnes carrying a plus sign here is a number of tonnes emitted. TI is
+additional to Scope 3 Category 11 and never offsets it; it measures what a trade flow commits a
+market to, not a credit against a company's own inventory.</p>
 """
     return page("definition", "What the number means", body, number="2")
 
@@ -487,7 +518,7 @@ def market_rate_table(f: Facts) -> str:
 def scope(f: Facts) -> str:
     """Who and where, and how much of each company's worldwide sales this speaks for."""
     palette = {
-        "assessed": "var(--pos)",
+        "assessed": "var(--avoided)",
         "counted, not assessed": "var(--c-hev)",
         "outside the data": "var(--c-ice)",
     }
@@ -627,7 +658,8 @@ one.</p>
             "4.1",
             "Lifetime trade impact of every cohort, MtCO&#8322;e, under the observed "
             "trajectory (S1) "
-            "and committed policy (S2). Positive is a contribution, negative a lock-in liability. "
+            "and committed policy (S2). Positive is emissions added, negative emissions "
+            "avoided. "
             "Source: <code>ti_company.csv</code>.",
             legend=chart.legend([(SCENARIO_NAME[s], SC_COLOUR[s]) for s in ("S1", "S2")]),
         )
@@ -684,7 +716,7 @@ def finding_committed(f: Facts) -> str:
             )
             for r in reported
         ),
-        key=lambda kv: kv[1],
+        key=lambda kv: -kv[1],
     )
     svg = chart.diverging_bars(
         rows,
@@ -694,7 +726,9 @@ def finding_committed(f: Facts) -> str:
     )
     d = f.derived
     s1 = [r for r in f.company_results if r["status"] == "reported" and r["scenario"] == "S1"]
-    s1_neg = sorted((r for r in s1 if float(r["ti_tco2e"]) < 0), key=lambda r: float(r["ti_tco2e"]))
+    s1_neg = sorted(
+        (r for r in s1 if float(r["ti_tco2e"]) > 0), key=lambda r: -float(r["ti_tco2e"])
+    )
     neg_markets = sorted({r["market"] for r in s1_neg})
     neg_list = "; ".join(
         f"{COMPANIES[r['company']]} {r['cohort_year']} {mt(float(r['ti_tco2e']), 2)} Mt"
@@ -709,9 +743,9 @@ def finding_committed(f: Facts) -> str:
         figure(
             svg,
             "5.1",
-            "Per-vehicle lifetime trade impact under committed policy, worst to best. Every cohort "
-            "is negative; the spread is a ranking of exposure, not of alignment. Source: "
-            "<code>ti_company.csv</code>.",
+            "Per-vehicle lifetime trade impact under committed policy, worst to best. Every "
+            "cohort adds emissions; the spread is a ranking of exposure, not of alignment. "
+            "Source: <code>ti_company.csv</code>.",
         )
     }
 
@@ -722,8 +756,8 @@ the same product mix sold into a market with a steeper commitment and a longer-l
 produces a larger liability, and no product decision inside the company changes the slope of a
 national target.</p>
 
-<h3>The five cohorts already negative under the observed trend</h3>
-<p>Under S1, {d["S1_liabilities"]} of {d["S1_n"]} cohorts are already liabilities, all of them in
+<h3>The cohorts that add emissions even against the observed trend</h3>
+<p>Under S1, {d["S1_liabilities"]} of {d["S1_n"]} cohorts already add emissions, all of them in
 {" and ".join(MARKETS[m] for m in neg_markets)}:
 {neg_list}.
 Europe is the only market where the observed trend alone is enough to make a 2024 sale a
@@ -731,11 +765,11 @@ liability, for two compounding reasons: its observed per-car CO&#8322; intensity
 faster than any other market's, and its fleets are the oldest, so a car sold in 2024 is measured
 against an improving benchmark for up to two decades.</p>
 
-<div class="callout"><p><b>What would change this.</b> Not a marginally better hybrid. A cohort
-turns positive under S2 only if its product intensity starts far enough below the benchmark that
-the benchmark's decline cannot catch it within the vehicle's life &mdash; which in practice means
-a zero-tailpipe product in a market whose grid is also decarbonising, or a much shorter assumed
-vehicle life. Section 9 shows the arithmetic on a single nameplate.</p></div>
+<div class="callout"><p><b>What would change this.</b> Not a marginally better hybrid. A
+cohort avoids emissions under S2 only if its product intensity starts far enough below the
+benchmark that the benchmark's decline cannot catch it within the vehicle's life &mdash; which
+in practice means a zero-tailpipe product in a market whose grid is also decarbonising, or a
+much shorter assumed vehicle life. Section 9 shows the arithmetic on a single nameplate.</p></div>
 """
     return page(
         "committed", "Against committed policy, there are no good cohorts", body, number="5"
@@ -835,8 +869,10 @@ def finding_profile(f: Facts) -> str:
         dp=2,
         label_width=70,
     )
-    first_neg = next((r for r in s2 if float(r["ti_tco2e"]) < 0), None)
-    peak = max(s2, key=lambda r: float(r["cumulative_ti_tco2e"]))
+    # The turn is the first year the cohort adds emissions instead of avoiding them, and the
+    # best the cumulative figure ever gets is its most negative point.
+    first_add = next((r for r in s2 if float(r["ti_tco2e"]) > 0), None)
+    best = min(s2, key=lambda r: float(r["cumulative_ti_tco2e"]))
     last = s2[-1]
     body = f"""
 <p class="kicker">Finding 3</p>
@@ -873,20 +909,21 @@ same window. That asymmetry is the whole mechanism.</p>
         figure(
             flow,
             "7.2",
-            "The same cohort's annual trade impact under committed policy: a contribution for the "
-            f"first years, a liability from {first_neg['calendar_year'] if first_neg else 'n/a'} "
-            "onward, growing every year the vehicles stay on the road. Source: "
-            "<code>ti_annual.csv</code>.",
+            "The same cohort's annual trade impact under committed policy: emissions "
+            "avoided in the first years, emissions added from "
+            f"{first_add['calendar_year'] if first_add else 'n/a'} onward, growing every year "
+            "the vehicles stay on the road. Source: <code>ti_annual.csv</code>.",
         )
     }
 
-<p>Read the two figures together. Cumulative trade impact peaks at
-{mt(float(peak["cumulative_ti_tco2e"]), 2)} MtCO&#8322;e in {peak["calendar_year"]}, and by
-{last["calendar_year"]} it has fallen to {mt(float(last["cumulative_ti_tco2e"]), 2)}. A report
-that stopped at the peak would call this cohort a contribution. A report that stops at the end
-of the vehicles' life &mdash; which is what the whitepaper requires, and what a lock-in claim
-means &mdash; calls it a liability. Both numbers are in
-<code>ti_annual.csv</code>; the choice of horizon is the difference between them.</p>
+<p>Read the two figures together. The cumulative figure is at its best in
+{best["calendar_year"]}, {mt(float(best["cumulative_ti_tco2e"]), 2)} MtCO&#8322;e &mdash;
+emissions avoided &mdash; and by {last["calendar_year"]} it has crossed to
+{mt(float(last["cumulative_ti_tco2e"]), 2)}. A report that stopped at the best year would call
+this cohort a contribution. A report that stops at the end of the vehicles' life &mdash; which
+is what the whitepaper requires, and what a lock-in claim means &mdash; calls it a liability.
+Both numbers are in <code>ti_annual.csv</code>; the choice of horizon is the difference between
+them.</p>
 """
     return page("profile", "The flat line and the falling line", body, number="7")
 
@@ -937,9 +974,9 @@ def finding_powertrain(f: Facts) -> str:
         )
     body = f"""
 <p class="kicker">Finding 4</p>
-<p class="lead">Hybrids are the largest contribution against what markets are doing, and almost
-nothing against what they have promised. Battery-electric is the only powertrain that stays
-positive under both.</p>
+<p class="lead">Hybrids avoid more than any other powertrain against what markets are doing,
+and add emissions against what they have promised. Battery-electric is the only powertrain that
+avoids under both.</p>
 
 {
         figure(
@@ -958,18 +995,18 @@ positive under both.</p>
         )
     }
 
-<p>The hybrid result is the one worth pausing on. Across the {COMMON_COHORT} cohorts, hybrids
-carry {mt(pt[("HEV", "S1")], 1)} MtCO&#8322;e against the observed trend and
-{mt(pt[("HEV", "S2")], 1)} against committed policy. A technology that looks like the main
-decarbonisation lever in the first framing disappears entirely in the second. Nothing about the
-vehicles changed between the two columns; only the yardstick did.</p>
+<p>The hybrid result is the one worth pausing on. Across the {COMMON_COHORT} cohorts,
+hybrids avoid {abs(pt[("HEV", "S1")]) / 1e6:,.1f} MtCO&#8322;e against the observed trend and
+add {abs(pt[("HEV", "S2")]) / 1e6:,.1f} MtCO&#8322;e against committed policy. A technology that
+looks like the main decarbonisation lever in the first framing changes sign in the second.
+Nothing about the vehicles changed between the two columns; only the yardstick did.</p>
 
 <p>The mechanism is the fixed intensity again. A hybrid's advantage over the fleet a market
-currently runs is real, and over a lifetime it is worth {hev_s1_per_vehicle:,.1f} tonnes a
-vehicle. Measured against the pathway the same markets have committed to, those vehicles are a
-{abs(hev_s2_per_vehicle):,.1f} tonne liability each instead: the committed pathway spends the
-margin in a handful of years, and the hybrid then sits above the benchmark for the rest of its
-life.
+currently runs is real, and over a lifetime it is worth
+{abs(hev_s1_per_vehicle):,.1f} tonnes avoided a vehicle. Measured against the pathway the same
+markets have committed to, those vehicles add {abs(hev_s2_per_vehicle):,.1f} tonnes each
+instead: the committed pathway spends the margin in a handful of years, and the hybrid then sits
+above the benchmark for the rest of its life.
 Battery-electric products escape this because their emissions fall with the grid: they are the
 only product in the cohort whose intensity is not fixed at the point of sale.</p>
 
@@ -1017,7 +1054,7 @@ def finding_market(f: Facts) -> str:
     body = f"""
 <p class="kicker">Finding 5</p>
 <p class="lead">The same nameplate, the same powertrain, sold in the same year into three
-markets, is assessed as a contribution in one and a multi-tonne liability in another.</p>
+markets, avoids emissions in one and adds several tonnes a vehicle in another.</p>
 
 {
         table(
@@ -1046,7 +1083,7 @@ starts far below it; Japan's fleet average already contains the hybrids and kei 
 Japanese cohort look clean elsewhere, so the same hybrid starts barely below it.</li>
 <li><b>Annual distance.</b> Every kilogram per kilometre is multiplied by it. US light-duty
 vehicles travel roughly twice as far each year as Japanese cars, so both the margin and the
-later liability are about twice the size.</li>
+later addition are about twice the size.</li>
 <li><b>Vehicle life.</b> Europe holds a car for close to two decades and Japan and the US for
 about thirteen years, which decides how many years of a falling benchmark the vehicle has to
 survive.</li>
@@ -1057,7 +1094,7 @@ against another's.</li>
 
 <div class="callout"><p><b>What this means for a company's strategy.</b> Product planning cannot
 be separated from destination planning. The same model line, shifted between two markets in the
-mix, changes the assessed lifetime liability by more than a full powertrain generation of
+mix, changes the assessed lifetime addition by more than a full powertrain generation of
 efficiency improvement would. It also means a company cannot be ranked on trade impact without
 stating where it sells, which is why every table in this report carries a market column and no
 table sums across markets.</p></div>
@@ -1262,13 +1299,13 @@ are a large share of Korean domestic volume. Measured against Korean goods vehic
 {freight_params["lifetime_years"]} years, against
 {num(float(car_params["fleet_intensity_gco2_km"]), 0)} gCO&#8322;/km over
 {num(float(car_params["vkt_km"]), 0)} km for {car_params["lifetime_years"]} years for cars
-&mdash; the freight cohort is the single largest per-vehicle contribution in the whole report
-under S1 ({num(float(kr[("freight", "S1")]["per_vehicle"]) / 1000, 1)} tCO&#8322;e per vehicle)
-and a substantial liability under S2
-({num(float(kr[("freight", "S2")]["per_vehicle"]) / 1000, 1)}).</p>
+&mdash; the freight cohort avoids more per vehicle than any other cohort in this report
+under S1 ({abs(float(kr[("freight", "S1")]["per_vehicle"]) / 1000):,.1f} tCO&#8322;e a vehicle)
+and adds {abs(float(kr[("freight", "S2")]["per_vehicle"]) / 1000):,.1f} tCO&#8322;e a vehicle
+under S2.</p>
 
 <p>That pair of numbers is a warning about segment benchmarks in general. A goods vehicle
-travels further and emits more per kilometre than a car, so both the margin and the liability
+travels further and emits more per kilometre than a car, so both the margin and the addition
 scale up together; the per-vehicle figure is large in whichever direction the scenario points.
 Heavy trucks and coaches above 3.5 tonnes are counted and withheld, because Korea's fuel-economy
 labelling scheme does not certify them and no product intensity exists to measure them with.
@@ -1500,10 +1537,10 @@ pricing every unit of the affected nameplates as a hybrid moves the cohort resul
 at most &mdash; large enough that the assumption is named in the method document and carried as
 a variant rather than buried.</p>
 
-<div class="callout"><p><b>What no sensitivity variant does.</b> None of them flips a
-committed-policy result from liability to contribution. Taking three years off every vehicle's
-life &mdash; the most favourable single variant in the model &mdash; reduces the liabilities but
-does not remove one of them. The finding in section 5 is robust to every parameter the model is
+<div class="callout"><p><b>What no sensitivity variant does.</b> None of them turns a
+committed-policy addition into an avoidance. Taking three years off every vehicle's life
+&mdash; the most favourable single variant in the model &mdash; shrinks the additions but does
+not remove one of them. The finding in section 5 is robust to every parameter the model is
 willing to vary.</p></div>
 """
     return page("sensitivity", "What would change the answer", body, number="15")

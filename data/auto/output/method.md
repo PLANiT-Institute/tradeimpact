@@ -40,9 +40,17 @@ is a sensitivity variant of the same cell (currently `all_hev`, see *United Stat
 `variant = central` rows are summed into a result — the variants exist so the sensitivity step
 reuses this join instead of repeating it.
 
-Sign convention: positive TI = the product emits less than the destination's committed
-benchmark over its lifetime (contribution); negative = lock-in liability. Unit: tCO2e over
-the operating lifetime, per-vehicle values in kgCO2e.
+**Sign convention (changed 2026-09-04).** TI is the product's emissions **minus** the
+benchmark's, in that order, so the figure reads the way an inventory reads: **positive = tonnes
+added**, emissions the destination is locked into; **negative = tonnes avoided** against the
+benchmark. Unit: tCO2e over the operating lifetime, per-vehicle values in kgCO2e. The words in
+the `direction` column stay attached to those meanings — `liability` for a positive figure,
+`contribution` for a negative one.
+
+The ordering is worth stating because the opposite convention is common in avoided-emissions
+reporting, where a benefit is written positive. This project does not use it: a number of tonnes
+carrying a plus sign here is a number of tonnes emitted. The change reversed the sign of every
+published figure on 2026-09-04; nothing else about the calculation moved.
 
 **Reading a result year by year.** Every lifetime total in `ti_company.csv`, `ti_country.csv`
 and `ti_powertrain.csv` has an annual twin — `ti_annual.csv`, `ti_annual_country.csv`,
@@ -53,7 +61,7 @@ the difference, and `cumulative_ti_tco2e` is the running total that ends at the 
 lifetime figure. Because the benchmark declines each year (S1 at the observed trend, S2 at the
 government's committed rate) while a sold vehicle's intensity is fixed, the annual gap shrinks
 and usually changes sign; `ti_crossover.csv` gives the year it does. Four tests hold the
-arithmetic together: the identity `ti = e_ref - e_prod` at every annual grain, both roll-ups
+arithmetic together: the identity `ti = e_prod - e_ref` at every annual grain, both roll-ups
 reproducing the company flow year by year, the cell table summing to the company flow, and the
 last cumulative value equalling the published lifetime total.
 
@@ -114,8 +122,10 @@ all fixed the same day:
 Before fix 1 the pipeline reproduced the archived Toyota and Hyundai totals to 2 × 10⁻⁷ (the
 archived run carried the same year mismatch). After it, totals are 1–13 % more negative:
 Toyota S1 −1.40 → −1.59 MtCO₂e and the archive's 1.5 °C column −13.95 → −14.14; Hyundai
-S1 −1.49 → −1.57 and −7.78 → −7.86. The archive's S2 column is not comparable to the
-current S2, which was re-anchored on 2026-09-04 (see *Scenarios* below). The archive remains the regression baseline for
+S1 −1.49 → −1.57 and −7.78 → −7.86. Those are the archive's own signs, on the convention in
+force when it was published (positive = contribution); the current build reverses them, and the
+archive's S2 column is not comparable to the current S2 either, which was re-anchored on
+2026-09-04 (see *Scenarios* below). The archive remains the regression baseline for
 the *engine* (the pipeline reproduces it exactly when fed the archived parameters); it is no
 longer the baseline for the *inputs*.
 
@@ -270,10 +280,10 @@ the MOLIT model-year distribution (tier C, biased low) gives an operating life o
 (−0.2 %/yr) and grid −2.2 %/yr; S2: the 2050 Carbon Neutrality Scenarios (2021), transport
 scenario A 98.1 → 2.8 MtCO2e (−10.5 %/yr) and power scenario B 269.6 → 20.7 (−7.7 %/yr).
 
-**Reading the result.** Because the observed Korean fleet trend is flat, S1 is a contribution
+**Reading the result.** Because the observed Korean fleet trend is flat, S1 avoids emissions
 for both companies (their label-basis product intensities sit below the 203 gCO2/km fleet
-average), while S2 turns every cohort into a liability: the government's own net-zero
-pathway declines faster than the products' fixed intensities. The lifetime sensitivity moves the Korean
+average), while S2 turns every cohort into an addition: the government's own net-zero pathway
+declines faster than the products' fixed intensities. The lifetime sensitivity moves the Korean
 S1 by about ±30 % because the operating life is short and uncertain.
 
 ## Japan (added 2026-09-04)
@@ -372,10 +382,11 @@ numerator and the intensity would be biased high. The bus rows are published in
    in 2024, 9,595 in 2025) was withdrawn before either edition on hand. Both sit in
    `cohorts_withheld.csv` with those reasons.
 
-**Reading the result.** S1 is a contribution for both companies — a Toyota cohort at roughly
+**Reading the result.** S1 avoids emissions for both companies — a Toyota cohort at roughly
 85 gCO2/km hybrid and 120 petrol, corrected to real-world, sits well below a 170 gCO2/km fleet
-average that is falling only 1.9 %/yr — while S2 turns both into a liability, the GX 2040 pathway
-(−6.8 %/yr transport) outrunning a fixed product intensity. Japan's S1 contribution is far smaller
+average that is falling only 1.9 %/yr — while S2 turns both into an addition, the GX 2040
+pathway (−6.8 %/yr transport) outrunning a fixed product intensity. Japan's S1 avoidance is far
+smaller
 than Korea's or the United States' for the same reason the fleet intensity is low: the Japanese
 fleet average already contains the hybrids and kei cars that make a Japanese cohort look clean
 elsewhere.
@@ -427,15 +438,15 @@ combustion volume is the model total minus its electrified rows and never a sum 
 The extractor enforces that, checks each division's models against the published division total,
 and keeps the small difference the release itself leaves unprinted (6 units in 2025, 15 in 2024)
 as its own row rather than dropping it. Lexus is held out as its own company, exactly as Genesis
-is held out of Hyundai. Result: 2,111,810 covered units in 2025 (98.3 %), S1 +8.07 MtCO₂e,
-S2 −18.60; 2024 +5.53 and −19.00. The large current-path contribution is the same segment-ratio
+is held out of Hyundai. Result: 2,111,810 covered units in 2025 (98.3 %), S1 −8.07 MtCO₂e,
+S2 +18.60; 2024 −5.53 and +19.00. The large current-path avoidance is the same segment-ratio
 artefact described above, amplified: Toyota's cohort is hybrid-heavy and the US benchmark is the
 all-light-duty fleet including pickups.
 
 **Nissan** prints models but no powertrain. It needs no assumption anyway: its US line-up in
 these years is combustion except the LEAF and the Ariya, which the EPA certification data
 confirms, so every nameplate is assessed explicitly. Infiniti is held out as its own company.
-Result: 873,293 covered units in 2025 (100.0 %), S1 +1.36 MtCO₂e, S2 −9.65. Nissan also
+Result: 873,293 covered units in 2025 (100.0 %), S1 −1.36 MtCO₂e, S2 +9.65. Nissan also
 publishes the split of its US volumes into North American production and imports
 (`us_release_origin_split.csv`, 760,213 against 113,094 in 2025), which no other company in
 scope discloses.
@@ -577,7 +588,7 @@ published under the same four registration classes:
 | bus | 20,630 km/yr | 690.6 gCO₂/km | 14 y |
 
 That is what lets Hyundai's Porter class (111,373 units in 2024) be measured against Korean
-goods vehicles instead of against cars: S1 +3.13 MtCO₂e, S2 −0.12. Heavy trucks and coaches
+goods vehicles instead of against cars: S1 −3.13 MtCO₂e, S2 +1.75. Heavy trucks and coaches
 above 3.5 t are counted and withheld (26,864 units in 2024) because Korea's fuel-economy
 labelling scheme does not certify them, so no product intensity exists.
 
