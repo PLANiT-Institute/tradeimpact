@@ -314,14 +314,17 @@ var(--muted); }
 .map svg { width: 100%; height: auto; display: block; background: var(--panel); border-radius:
 8px; }
 .map path.country { stroke: var(--bg); stroke-width: 0.4; cursor: pointer; }
-.map path.country.selected { stroke: var(--fg); stroke-width: 1.2; }
+.map path.country.selected { stroke: var(--text); stroke-width: 1.2; }
 .map .legend { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 12px; margin: 8px 0;
 align-items: center; }
 .map .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px;
 vertical-align: -2px; margin-right: 4px; }
-.map .tip { position: fixed; pointer-events: none; background: var(--fg); color: var(--bg);
-padding: 6px 8px; border-radius: 6px; font-size: 12px; max-width: 320px; z-index: 5; display:
-none; }
+.map .tip {
+  position: fixed; pointer-events: none; z-index: 5; display: none;
+  background: var(--bg); color: var(--text); border: 1px solid var(--border);
+  padding: 6px 8px; border-radius: 6px; font-size: 12px; max-width: 320px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
 .tier { display: inline-block; padding: 0 6px; border-radius: 10px; font-size: 11px;
 font-weight: 600; }
 .tier-A { background: #cfe8d6; color: #14532d; }
@@ -879,11 +882,9 @@ function renderMapOut() {
         const shown = v === '' ? 'no value in the database'
           : (metric.kind === 'cat' ? v
             : fmtNum(Number(v)) + (metric.unit ? ' ' + metric.unit : ''));
-        tip.style.display = 'block';
-        tip.style.left = (e.clientX + 12) + 'px';
-        tip.style.top = (e.clientY + 12) + 'px';
         tip.textContent = el.getAttribute('data-name') + (a2 ? ' (' + a2 + ')' : '') +
           ': ' + shown;
+        placeTip(tip, e.clientX, e.clientY);
       });
       el.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
       el.addEventListener('click', () => {
@@ -892,6 +893,23 @@ function renderMapOut() {
       });
     });
   });
+}
+
+/* Keep the hover chip inside the window: it sits right of the cursor until that would run
+   past the edge, then flips to the left, and the same vertically. */
+function placeTip(tip, x, y) {
+  const gap = 12;
+  tip.style.display = 'block';
+  tip.style.left = '0px';
+  tip.style.top = '0px';
+  const w = tip.offsetWidth;
+  const h = tip.offsetHeight;
+  const right = Math.min(x + gap, window.innerWidth - w - 4);
+  const left = x - gap - w;
+  tip.style.left = Math.max(4, x + gap + w > window.innerWidth && left > 4 ? left : right) + 'px';
+  const below = Math.min(y + gap, window.innerHeight - h - 4);
+  const above = y - gap - h;
+  tip.style.top = Math.max(4, y + gap + h > window.innerHeight && above > 4 ? above : below) + 'px';
 }
 
 function swatch(colour, label) {
