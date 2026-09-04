@@ -141,3 +141,17 @@ premise and sends work back is the process working; the entry states the trigger
   the Korean-built share of registrations and gives each exporter's powertrain mix per market,
   and it is the only free coverage of Japan and Australia so far. A dossier of free model-level
   sales releases for the four brands is in progress.
+
+## 2026-09-04 — trade flows: what the free statistics say
+
+- Korea → EU27 imports 2024 (27 member states as Comtrade reporters, aggregate rows): BEV 68,965,
+  HEV 91,625, ICE 159,720, PHEV 28,184 vehicles, against Hyundai + Kia EU27 registrations of
+  91,086 / 311,175 / 389,556 / 52,774 — an upper bound on the Korean-built share of about 0.76 /
+  0.29 / 0.41 / 0.53 (Korean exports to the EU include other brands, so the true Hyundai–Kia share
+  is at or below these ratios). Level 2 (production origin) is therefore boundable without any
+  paid dataset.
+- Korea → US 2024 (US-reported): ICE 1,179,630, HEV 238,126, BEV 108,718, PHEV 27,581; exporter-
+  reported figures differ (BEV 135,202; ICE 860,722) — both sides are published.
+- Korea → Australia 2024 (AU-reported): ICE 125,892, HEV 25,310, BEV 5,404, PHEV 159.
+- Fix: the Comtrade preview mixes mode-of-transport breakdowns with aggregates; only aggregate
+  rows are kept (the Australian side had been double counted).
