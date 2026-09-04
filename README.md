@@ -8,10 +8,13 @@ the engagement is governed by the Climate Arc grant proposal (see `claude-docs/`
 
 ## Research process
 
-1. **Targets** — exporters: Hyundai and Kia (Korea) now; the Japanese exporters are
+1. **Targets** — companies: Hyundai and Kia (Korea) now; the Japanese companies are
    deferred (their EEA snapshots stay pinned, `in_scope = no` in
-   `data/auto/sales/method/companies.csv`). Importers: EU27 member states, United States,
-   Australia.
+   `data/auto/sales/method/companies.csv`). Destinations: a company's sales to every
+   country worldwide (whitepaper Level 1, operating-country basis) — the reader filters
+   destinations in the dashboard (US only, everything except Korea, …). Benchmarks exist
+   today for the EU27 member states and the United States; `ti_coverage.csv` shows every
+   other destination in the sales files with the reason it is not yet priced.
 2. **Gather data** — per importer: sector and electricity emissions, emission targets
    (NDC and sector standards); vehicle usage (distance, lifetime, stock); vehicle
    technology (certified intensity, real-world correction, utility factors); and the

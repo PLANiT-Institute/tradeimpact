@@ -50,6 +50,17 @@ published baseline has run and passed (all 189 destination parameters exact; com
 totals within 2 × 10⁻⁷; crossover and lifetime sensitivities agree). Phase exit is blocked by the
 independent re-derivation and `B-03`, `B-04`, `B-07`.
 
+**Scope clarification (lead, 2026-09-04).** The analysis is a company's sales to every destination
+country, filtered by the reader — not exports. Destination priority for the next benchmarks, by
+volume in the gathered files and by free-data availability: (1) Korea — Kia 296k H1-2026 and
+Hyundai's home market; national inventory (GIR), registrations by age (KOSIS), distance (KOTSA),
+grid (Ember), NDC 2030 −40 % vs 2018 (UNFCCC); (2) India — Kia 157k, Hyundai 572k plant-domestic;
+inventory via UNFCCC BUR/BTR, registrations via Vahan, grid via Ember, NDC intensity target (FLAG
+candidate under the guideline); (3) Canada and Mexico — Kia 48k and 55k; national inventories,
+StatCan/INEGI registrations, Ember grid, NDCs; (4) China — Kia 36k, Hyundai 128k plant-domestic;
+inventory and registrations less accessible. Region-level rows (Kia's Europe, Asia Pacific, Middle
+East, Latin America, Africa, Eastern Europe) stay unpriced until a country split exists.
+
 ## 2. Phases
 
 | Phase | Objectives met | Deliverables accepted | Status | Gate verdict |

@@ -70,7 +70,10 @@ MODEL_STEPS: tuple[tuple[str, tuple[str, ...]], ...] = (
         ("ti_by_model", "ti_annual_by_model", "ti_annual", "ti_withheld", "ti_exclusions"),
     ),
     ("4b crossover and sensitivity", ("ti_crossover", "ti_sensitivity")),
-    ("5 aggregates and data quality", ("ti_country", "ti_powertrain", "ti_company", "ti_data")),
+    (
+        "5 aggregates and data quality",
+        ("ti_country", "ti_powertrain", "ti_company", "ti_data", "ti_coverage"),
+    ),
 )
 
 #: The pivot the "Results" navigation entry lands on: results by vehicle model and powertrain
