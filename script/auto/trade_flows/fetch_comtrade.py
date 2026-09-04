@@ -38,6 +38,38 @@ SOURCE_PAGE = "https://comtradeplus.un.org/"
 SOURCE_ID = "un_comtrade_public"
 USER_AGENT = "tradeimpact/0.2 source acquisition"
 COUNTRIES = {"KR": 410, "JP": 392, "US": 842, "AU": 36}
+# EU member states as importer-side reporters (Comext publishes no unit counts at HS6 via its API).
+EU_REPORTERS = {
+    "AT": 40,
+    "BE": 56,
+    "BG": 100,
+    "HR": 191,
+    "CY": 196,
+    "CZ": 203,
+    "DK": 208,
+    "EE": 233,
+    "FI": 246,
+    "FR": 251,
+    "DE": 276,
+    "GR": 300,
+    "HU": 348,
+    "IE": 372,
+    "IT": 381,
+    "LV": 428,
+    "LT": 440,
+    "LU": 442,
+    "MT": 470,
+    "NL": 528,
+    "PL": 616,
+    "PT": 620,
+    "RO": 642,
+    "SK": 703,
+    "SI": 705,
+    "ES": 724,
+    "SE": 752,
+}
+# Aggregate rows only: total customs procedures, all modes of transport, no second partner.
+AGGREGATE = {"customsCode": "C00", "motCode": "0", "partner2Code": "0"}
 EXPORTERS, IMPORTERS = ("KR", "JP"), ("US", "AU")
 PERIODS = ("2022", "2023", "2024", "2025")
 PAUSE_S = 2.0
@@ -117,6 +149,54 @@ def main() -> None:
                         "reporter": reporter,
                         "flow": flow,
                         "partner": partner,
+                        "period": year,
+                        "response": payload,
+                    },
+                    sort_keys=True,
+                )
+                + "\n"
+            )
+            register(out, url, accessed, note)
+            print(f"{out.relative_to(REPO)}: {payload.get('count')} records")
+            time.sleep(PAUSE_S)
+    fetch_eu_members(args, codes, context)
+
+
+def fetch_eu_members(args: argparse.Namespace, codes: str, context: ssl.SSLContext) -> None:
+    """EU member states' reported imports from each exporter, one file per exporter x year."""
+    accessed = date.today().isoformat()
+    reporters = ",".join(str(c) for c in EU_REPORTERS.values())
+    for exp in EXPORTERS:
+        for year in PERIODS:
+            out = RAW / f"comtrade_eu27_m_{exp.lower()}_{year}.json"
+            if out.exists() and not args.force:
+                print(f"{out.relative_to(REPO)}: pinned, skipped")
+                continue
+            params = {
+                "reporterCode": reporters,
+                "period": year,
+                "partnerCode": COUNTRIES[exp],
+                "cmdCode": codes,
+                "flowCode": "M",
+                **AGGREGATE,
+            }
+            url = f"{API}?{urllib.parse.urlencode(params)}"
+            payload = fetch(url, context)
+            note = (
+                f"27 EU member states reported imports from {exp}, HS 8703 sub-headings, "
+                f"{year}, {payload.get('count')} records"
+            )
+            out.write_text(
+                json.dumps(
+                    {
+                        "accessed_date": accessed,
+                        "source_id": SOURCE_ID,
+                        "source_page": SOURCE_PAGE,
+                        "request_url": url,
+                        "reporter": "EU27_members",
+                        "reporters": EU_REPORTERS,
+                        "flow": "M",
+                        "partner": exp,
                         "period": year,
                         "response": payload,
                     },
