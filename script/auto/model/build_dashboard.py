@@ -491,7 +491,9 @@ const state = {
   table: M.default.table,
   pivot: defaultPivot(M.default.table),
   browse: {page: 0, sort: null, dir: 'asc', q: ''},
-  sql: {text: 'SELECT company, powertrain, model, scenario, SUM(units) AS units, SUM(ti_tco2e) AS ti_tco2e\n  FROM ti_by_model_eu27\n GROUP BY 1, 2, 3, 4\n ORDER BY 1, 2, 3, 4'},
+  sql: {text: 'SELECT company, powertrain, model, scenario,\n'
+        + '       SUM(units) AS units, SUM(ti_tco2e) AS ti_tco2e\n'
+        + '  FROM ti_by_model_eu27\n GROUP BY 1, 2, 3, 4\n ORDER BY 1, 2, 3, 4'},
   tsv: ''
 };
 
