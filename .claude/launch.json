@@ -2,11 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "ti-web",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev:local", "--prefix", "web"],
-      "port": 3000,
-      "autoPort": true
+      "name": "dashboard",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": ["script/auto/serve_dashboard.py"],
+      "port": 8765
     }
   ]
 }
