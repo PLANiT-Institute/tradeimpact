@@ -47,14 +47,19 @@ S1/S3 (`References/IEA_2024_WEO_Full_Report.pdf` in the Drive folder).
 `script/auto/emission_targets/derive_eu27_rates.py` → `processed/emission_targets_eu27.csv`;
 `script/auto/emission_targets/derive_us_rates.py` → `processed/emission_targets_us.csv` (S1
 observed trends from the EPA annex series and Ember grid; S2 `flag_no_ndc` with no rate; S3
-world NZE pro-rata 2023 → 2040 for passenger cars and for electricity and heat).
+world NZE pro-rata 2023 → 2040 for passenger cars and for electricity and heat);
+`script/auto/emission_targets/derive_au_rates.py` → `processed/emission_targets_au.csv` (S1
+observed trends from the ANGA inventory and Ember grid; S2 the 43 %-below-2005-by-2030 NDC
+applied pro-rata per sector, floored at S1 where already met, with the anchor's `verified` flag
+printed; S3 world NZE pro-rata).
 
 - S1: log-linear trend of per-car CO2 (car CO2 ÷ stock) and of grid intensity, 2015–2024
   excluding 2020–2021.
 - S2 fleet: compound annual decline of the EU transport pathway 2023 → 2030, applied
   pro-rata to every member state (`ndc_prorata`). S2 power: EU public electricity CO2 from
-  its latest observation to 45 % of 1990 by 2030; a negative rate (already met) is held at 0
-  and flagged.
+  its latest observation to 45 % of 1990 by 2030; where that rate is negative (already met)
+  S2 power is floored at the market's observed S1 grid trend (`ndc_prorata_s1_floor`) and
+  flagged `PATHWAY_ALREADY_MET`.
 - S3: same construction against the 2040 −90 % target (`1p5c_prorata`).
 
 ## Rules
