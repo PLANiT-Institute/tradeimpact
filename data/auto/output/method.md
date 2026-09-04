@@ -231,6 +231,96 @@ average), while S2 turns every cohort into a liability: the government's own net
 pathway declines faster than the products' fixed intensities. The lifetime sensitivity moves the Korean
 S1 by about ±30 % because the operating life is short and uncertain.
 
+## Japan (added 2026-09-04)
+
+Japan is priced entirely on Japanese official statistics, with no licensed dataset and no
+cross-market transfer except one disclosed factor. It is also the market where the sources fit
+the method best: distance and stock come from one table at one date, the vehicle life is
+published rather than derived, and the emissions numerator is already split by vehicle type.
+
+**Cohorts.** JADA's 乗用車ブランド通称名別順位 (`sales_jada_jp.csv`), the annual 1月～12月 edition.
+Two properties of that source shape the coverage. It is a top-50 ranking, so a nameplate outside
+the top 50 is not in the cohort at all — which is why Toyota's coverage of its own registered
+volume is 99.0 % (2024) and 97.7 % (2025) while Nissan's is 57.4 % and 54.0 %: Nissan has only
+four nameplates in the top 50. And it excludes 軽自動車 and foreign brands by construction (its
+own note), so no kei unit can enter a cohort, which matters for the benchmark below. JADA's
+ブランド通称名 sums every variant of one 車名 including units built abroad, so カローラ is the whole
+Corolla family and the certified value pooled against it must be too (`jp_labels.csv`).
+
+**Technology.** MLIT 自動車燃費一覧, which publishes 1km走行におけるCO2排出量 in gCO2/km per
+certified grade — the only market in the project where the product value needs no conversion from
+fuel economy at all. Two editions are read (令和7年3月 and 令和8年3月) because the publication lists
+only what is type-approved on its own date: a nameplate withdrawn during the cohort year is in the
+older edition and gone from the newer one, so the newest edition that carries a nameplate wins and
+the older one supplies only what the newer one dropped. A nameplate's value is the grade-weighted
+mean over its family, weighting by certified grades exactly as the US build weights over EPA trim
+names. Test cycle `WLTC_JP`.
+
+**Powertrain (assumption A-JP-PT).** The ranking publishes no powertrain, so what a nameplate is
+sold as comes from the certificates: where every grade is a hybrid (Prius, Aqua, Note, X-Trail)
+all its units are hybrid (`powertrain_rule = jp_certified_single`), and where a nameplate is
+certified both ways its units are divided by the maker's own JADA fuel mix for that year,
+restricted to the powertrains that nameplate offers and renormalised
+(`jp_jada_fuel_share`; Toyota 2024 is 65.6 % hybrid, 30.6 % petrol, 2.0 % diesel, 1.6 % plug-in,
+0.14 % battery-electric). A maker-wide share applied nameplate by nameplate is the weak link — the
+real hybrid share of a Corolla is higher than that of an Alphard — so every divided nameplate
+carries an `all_hev` variant that the sensitivity step prices (`ti_sensitivity.csv`, dimension
+`powertrain_mix`). A hybrid grade is identified by the Ｈ token in 主要燃費改善対策, cross-checked
+against 原動機 listing （内燃機関）plus a motor code; a 原動機 that lists two power sources without
+an Ｈ token stops the extractor.
+
+**Benchmark.** 自動車燃料消費量調査 第１表 prints 走行キロ and １日１車当たり走行キロ on the same
+row, and the survey defines the second as vehicle-kilometres over surveyed vehicles times
+*calendar* days. Annual distance per vehicle is therefore that figure times 365, and the vehicles
+behind a row are its 走行キロ divided by the same product. The implied fleet is what confirms the
+reading: 61.7 M cars and 15.0 M goods vehicles against the 62 M and 14.6 M AIRIA publishes, where
+a working-day reading would have overstated the car fleet by 47 %. Fiscal 2024 throughout, matched
+to the emissions year rather than taken as the latest observation (the survey has fiscal 2025, the
+inventory does not).
+
+| Segment | Distance | Fleet intensity | Life | Numerator |
+|---|---|---|---|---|
+| passenger_car | 8,107 km/yr | 170.0 gCO2/km | 13 y [10, 16] | GIO/NIES 乗用車 84,972 kt |
+| freight | 11,918 km/yr | 394.2 gCO2/km | 16 y [13, 19] | GIO/NIES 貨物自動車 70,672 kt |
+
+The life is AIRIA's 平均使用年数 — 13.35 years for cars, 16.29 for goods vehicles — a published
+expected life, which neither the EU27 nor the Korean build can source and both have to derive from
+mean age. It is tier B rather than A only because AIRIA counts a 一時抹消登録 as an ending, making
+it a floor; it is bracketed ±3 years. Grid 483.4 gCO2/kWh (Ember 2024).
+
+**Buses are not built.** The distance survey separates diesel buses but bundles petrol buses into
+the car and special-vehicle rows, so a bus denominator would be diesel-only against an all-bus
+numerator and the intensity would be biased high. The bus rows are published in
+`vehicle_usage_jp.csv`; no company in scope sells buses in Japan.
+
+**Four things are disclosed rather than smoothed over.**
+
+1. *No battery-electric unit is priced.* 自動車燃費一覧 is a fuel-consumption publication and
+   carries no 電力消費率, so a Japanese battery-electric nameplate has no certified value here.
+   None of the cohort nameplates is battery-electric, so nothing is withheld on this ground — but
+   the moment a BEV nameplate enters the top 50 it will be, and the bias runs against the company,
+   since its cleanest product is the one that cannot be counted.
+2. *The real-world correction is borrowed.* Japan publishes no official real-world gap, so the EEA
+   OBFCM gap for the same WLTP/WLTC procedure is carried across (1.191 ICE, 1.211 HEV). Japan's
+   WLTC omits the Extra-High phase, so the true Japanese gap is likely larger and this factor
+   understates real-world product emissions — which flatters the company.
+3. *The benchmark includes kei cars, the cohort cannot.* The fleet intensity is the whole national
+   fleet, 軽自動車 included, while the ranking excludes them. Kei cars are lower-emitting, so the
+   fleet average is harder for a registered car to beat than a registered-car-only average would
+   be. The segment ratio stays 1.0, as in every other market.
+4. *Two nameplates are counted and left unpriced.* ＪＰＮ　ＴＡＸＩ (8,103 units in 2024) is an LPG
+   hybrid certified in the LPガス乗用車 workbook, which this build does not read; キックス (14,346
+   in 2024, 9,595 in 2025) was withdrawn before either edition on hand. Both sit in
+   `cohorts_withheld.csv` with those reasons.
+
+**Reading the result.** S1 is a contribution for both companies — a Toyota cohort at roughly
+85 gCO2/km hybrid and 120 petrol, corrected to real-world, sits well below a 170 gCO2/km fleet
+average that is falling only 1.9 %/yr — while S2 turns both into a liability, the GX 2040 pathway
+(−6.8 %/yr transport) outrunning a fixed product intensity. Japan's S1 contribution is far smaller
+than Korea's or the United States' for the same reason the fleet intensity is low: the Japanese
+fleet average already contains the hybrids and kei cars that make a Japanese cohort look clean
+elsewhere.
+
 ## India (assessed 2026-09-04, not built)
 
 The lead's scope puts India in its own coverage group where data allow. The free-source scout
@@ -397,9 +487,9 @@ benchmark it is priced against is the one built for that same population.
 
 | Segment | What it is | Where it is used |
 |---|---|---|
-| `passenger_car` | cars: EU27 M1, Korea 승용, Japan 乗用車 | EU27, Korea |
+| `passenger_car` | cars: EU27 M1, Korea 승용, Japan 乗用車 | EU27, Korea, Japan |
 | `light_duty` | cars and light trucks together | the United States |
-| `freight` | goods vehicles: Korea 화물 | Korea |
+| `freight` | goods vehicles: Korea 화물, Japan 貨物自動車 | Korea, Japan |
 | `bus` | buses and minibuses: Korea 승합 | Korea |
 
 **Why the United States is one segment and not two.** The EPA inventory does publish passenger
@@ -431,6 +521,12 @@ That is what lets Hyundai's Porter class (111,373 units in 2024) be measured aga
 goods vehicles instead of against cars: S1 +3.13 MtCO₂e, S2 −0.12. Heavy trucks and coaches
 above 3.5 t are counted and withheld (26,864 units in 2024) because Korea's fuel-economy
 labelling scheme does not certify them, so no product intensity exists.
+
+**Japan carries two of the three.** Its inventory publishes 乗用車, バス and 貨物自動車
+separately, so the numerator is there for all three, but the distance survey bundles petrol buses
+into the car and special-vehicle rows. A bus benchmark would then divide an all-bus numerator by a
+diesel-only denominator, so buses are not built and the reason is on the row (see *Japan* above).
+The two that are built are matched on both sides: 乗用車 against 乗用車, 貨物自動車 against 貨物車.
 
 **Where a country publishes no split**, the rule is to fall back to the road-transport sector as
 a whole and to tier the value down to C, saying so on the row. No market needs that fallback
@@ -486,17 +582,20 @@ the whole dashboard, map included: the world geometry is a row in the database
 ## Run order
 
 `script/auto/run_all.py` runs everything and exits non-zero at the first failure: extraction,
-the rate derivations (`derive_eu27_rates.py`, `derive_us_rates.py`, `derive_au_rates.py`), then
-the model in this order —
+the rate derivations (`derive_eu27_rates.py`, `derive_us_rates.py`, `derive_au_rates.py`,
+`derive_kr_rates.py`, `derive_jp_rates.py`), then the model in this order —
 
 1. `build_cohorts.py` — sales × technology per market → `cohorts.csv`, `cohorts_withheld.csv`
 2. `build_reference.py` — EU27 destination parameters and trajectories
-3. `build_reference_us.py` — US destination parameters and trajectories
+3. `build_reference_us.py`, `build_reference_kr.py`, `build_reference_jp.py` — the same for the
+   single-country markets
 4. `build_ti.py` — per-cell lifetime TI, annual flow, withheld and excluded tables
 5. `build_sensitivity.py` — crossover years and the four sensitivity dimensions
 6. `aggregate_country.py` — country, powertrain and company × market roll-ups
 7. `build_data_quality.py` — the §5.3 declaration per company × market
-8. `build_database.py`, `build_dashboard.py`
+8. `build_coverage.py`, `build_reconciliation.py`, `build_global_coverage.py` — coverage and
+   source agreement
+9. `build_database.py`, `build_dashboard.py`
 
 then ruff and pytest. The model scripts can also be run individually in that order. Steps 2 and
 3 are independent of each other and of step 1; steps 4 onward read every

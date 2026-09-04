@@ -61,8 +61,10 @@ archive/           the previous application build (engine, web, MCP, pipeline) �
 
 Datasets: `sales`, `country_emissions`, `emission_targets`, `vehicle_usage`,
 `vehicle_technology`, `trade_flows` (official HS 8703 trade statistics by powertrain class,
-country-level, from Eurostat Comext and UN Comtrade — free sources first). Current result set: Hyundai and Kia in the EU27 (2024 registrations)
-and the United States (the cohorts in the gathered IR workbooks). The engine reproduces the
+country-level, from Eurostat Comext and UN Comtrade — free sources first). Current
+result set: four companies across four destination markets — the EU27 (2024
+registrations), the United States, Japan and Korea, each priced on that market's own
+official statistics. The engine reproduces the
 previously published EU27 result exactly when fed the archived inputs (see
 `data/auto/output/method.md`, Verification).
 
@@ -81,6 +83,10 @@ previously published EU27 result exactly when fed the archived inputs (see
 | US, 2025 brand sales | Kia | 98.2 % | **+0.001** | −10.52 |
 | US, 2025 brand sales | Nissan | 100.0 % | **+1.36** | −9.65 |
 | US, Jan–Jun 2026 retail | Kia | 98.0 % | −0.49 | −5.81 |
+| Japan, 2024 registrations | Toyota | 99.3 % | **+1.07** | −3.50 |
+| Japan, 2024 registrations | Nissan | 93.7 % | **+0.35** | −0.47 |
+| Japan, 2025 registrations | Toyota | 100.0 % | **+1.13** | −3.53 |
+| Japan, 2025 registrations | Nissan | 94.6 % | **+0.24** | −0.41 |
 | Korea, 2024 domestic sales | Hyundai | 94.7 % | **+5.02** | −4.24 |
 | Korea, 2025 domestic sales | Hyundai | 94.4 % | **+4.84** | −4.06 |
 | Korea, Jan–Jun 2026 retail | Kia | 98.7 % | **+1.86** | −1.65 |
@@ -89,10 +95,10 @@ previously published EU27 result exactly when fed the archived inputs (see
 
 | Company | Cohort | Worldwide sales | Priced | Held | Countries priced |
 |---|---|---|---|---|---|
-| Toyota | 2024 | 10.16 M | 26.8 % | 42.6 % | 27 |
+| Toyota | 2024 | 10.16 M | 38.5 % | 42.6 % | 28 |
 | Hyundai | 2024 | 4.17 M | 42.4 % | 48.7 % | 28 |
-| Nissan | 2024 | 3.35 M | 31.7 % | 40.3 % | 27 |
-| Kia | 2026 H1 | 1.62 M | 44.2 % | 100 % | 2 |
+| Nissan | 2024 | 3.35 M | 38.1 % | 40.3 % | 28 |
+| Kia | 2026 H1 | 1.62 M | 44.2 % | 100.0 % | 2 |
 
 `Priced` is units carrying a result over the company's own worldwide figure; `Held` is every
 unit the project holds for those brands, priced or not, so the gap between the two is sales we
@@ -106,7 +112,7 @@ cohorts where only the United States is priced, is in `ti_global_coverage.csv`.
 The `Covered` column in the tables above is the sales coverage within a market: units carrying a
 result over units in the source.
 Every EU27 row covers 26 of the 27 member states (Luxembourg is withheld, its fleet intensity
-being implausible); every US and Korean row covers one country. `ti_data_quality.csv` lists the
+being implausible); every US, Japanese and Korean row covers one country. `ti_data_quality.csv` lists the
 country codes themselves in `countries`, with `countries_covered` and `countries_withheld`
 beside them, and `ti_source_reconciliation.csv` puts every source a company published for the
 same cell side by side.
@@ -128,7 +134,15 @@ dimension `powertrain_mix`). Cohort years are never pooled: each row above is on
 Korea is priced on free Korean official statistics (MOLIT stock and age, KOTSA distance, GIR
 inventory, KEA label fuel economy, the 2050 carbon-neutral scenarios); its fleet
 intensity is tier C because the national inventory has no passenger-car split (see
-`data/auto/output/method.md`, Korea). The US S2 benchmark is the NDC the United States
+`data/auto/output/method.md`, Korea). Japan is priced the same way, on Japanese official statistics
+only: the JADA nameplate ranking for volumes (top 50 nameplates, kei and foreign brands
+excluded by the source), MLIT's 自動車燃費一覧 for the certified gCO₂/km of every grade,
+MLIT's 自動車燃料消費量調査 for distance, AIRIA's 平均使用年数 for the vehicle life, the
+GIO/NIES inventory for road CO₂ by vehicle type, and the GX 2040 target for S2. Japan is the
+only market whose distance and stock come from one table at one date and whose lifetime is
+published rather than derived — and the only one where battery-electric units cannot be priced
+at all, because 自動車燃費一覧 is a fuel-consumption publication and carries no electricity
+rating. The US S2 benchmark is the NDC the United States
 communicated on 2024-12-19 (61 % below 2005 net GHG by 2035) — the last pathway its own
 government stated, a month before it notified withdrawal from the Paris Agreement; the
 `target_level` column carries that status, and a market whose rate were ever empty would still

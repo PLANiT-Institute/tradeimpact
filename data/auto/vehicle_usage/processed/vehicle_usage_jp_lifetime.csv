@@ -1,0 +1,7 @@
+country,series,year,value,unit,source_id,source_file
+JP,mean_age_bus,2025,13.06,years,airia_vehicle_age,airia_mean_age_2025.pdf
+JP,mean_age_freight,2025,12.13,years,airia_vehicle_age,airia_mean_age_2025.pdf
+JP,mean_age_passenger_car,2025,9.44,years,airia_vehicle_age,airia_mean_age_2025.pdf
+JP,mean_use_years_bus,2025,17.96,years,airia_vehicle_age,airia_mean_use_years_2025.pdf
+JP,mean_use_years_freight,2025,16.29,years,airia_vehicle_age,airia_mean_use_years_2025.pdf
+JP,mean_use_years_passenger_car,2025,13.35,years,airia_vehicle_age,airia_mean_use_years_2025.pdf

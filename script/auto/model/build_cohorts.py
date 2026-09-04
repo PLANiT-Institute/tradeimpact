@@ -45,6 +45,8 @@ Run from the repository root:  .venv/bin/python script/auto/model/build_cohorts.
 from __future__ import annotations
 
 import csv
+import re
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
@@ -73,14 +75,21 @@ SALES_KR = (
 )
 KR_LABELS = DATA / "sales" / "method" / "kr_labels.csv"
 TECH_KR = DATA / "vehicle_technology" / "processed" / "vehicle_technology_kr_kea.csv"
+#: Japan: the JADA nameplate ranking, the maker fuel mix that splits it, and the MLIT 燃費一覧.
+SALES_JP = DATA / "sales" / "processed" / "sales_jada_jp.csv"
+FUEL_MIX_JP = DATA / "sales" / "processed" / "jada_fuel_mix_jp.csv"
+JP_LABELS = DATA / "sales" / "method" / "jp_labels.csv"
+TECH_JP = DATA / "vehicle_technology" / "processed" / "vehicle_technology_jp_mlit.csv"
 OUT_DIR = DATA / "output"
 OUT_COHORTS = OUT_DIR / "cohorts.csv"
 OUT_WITHHELD = OUT_DIR / "cohorts_withheld.csv"
 
-EU27, US, KR = "EU27", "US", "KR"
+EU27, US, KR, JP = "EU27", "US", "KR", "JP"
 UNSPLIT_RULE = "kr_unsplit_central_ice"
 CENTRAL, ALL_HEV = "central", "all_hev"
 SHARE_RULE = "epa_share_my2024"
+JP_SINGLE_RULE = "jp_certified_single"
+JP_SHARE_RULE = "jp_jada_fuel_share"
 STATED_RULE = "stated"
 OUT_OF_SCOPE = "out_of_scope"
 #: Rules that hold their volume out of the cohort with the map row's own reason.
@@ -96,6 +105,14 @@ NO_CERTIFIED_EU27 = "the registration dataset reports no certified intensity for
 NO_KR_LABEL = (
     "no row in sales/method/kr_labels.csv: the IR label is not resolved to a KEA model, so no "
     "certified intensity can be attached"
+)
+NO_JP_LABEL = (
+    "no row in sales/method/jp_labels.csv: the JADA nameplate is not resolved to a 燃費一覧 "
+    "nameplate, so no certified intensity can be attached"
+)
+NO_JP_CERTIFIED = (
+    "no certified row in either 自動車燃費一覧 edition on hand for this nameplate, so the units "
+    "are counted and left unpriced"
 )
 NO_MAP_ROW = (
     "no row in sales/method/us_model_map.csv: the IR model name is not resolved to an EPA "
@@ -633,6 +650,190 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
     return aggregate_units(central) + aggregate_units(variants), withheld
 
 
+def jp_label_key(text: str) -> str:
+    """A nameplate written the same way on both sides of the join.
+
+    JADA prints ＲＡＶ４ and ＪＰＮ　ＴＡＸＩ in full-width characters with an ideographic space,
+    MLIT prints RAV4 and ヤリス　クロス; normalising the width and dropping the spaces makes the
+    two comparable without a per-nameplate alias.
+    """
+    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", text))
+
+
+def jp_technology(
+    tech: list[dict[str, str]], models: list[str]
+) -> dict[str, tuple[float, int, int]]:
+    """{powertrain: (grade-weighted mean gCO2/km, grades, newest edition)} over ``models``.
+
+    A nameplate family is pooled by grade count, the same weighting the US build uses over EPA
+    trim names, so a variant with many grades counts for more than one with a single grade.
+    """
+    pooled: dict[str, tuple[float, int, int]] = {}
+    for powertrain in sorted({r["powertrain"] for r in tech}):
+        rows = [
+            r for r in tech if r["powertrain"] == powertrain and jp_label_key(r["model"]) in models
+        ]
+        if not rows:
+            continue
+        weights = [int(r["n_trims"]) for r in rows]
+        total = sum(weights)
+        if not total:
+            continue
+        mean = (
+            sum(float(r["tailpipe_gco2_km"]) * w for r, w in zip(rows, weights, strict=True))
+            / total
+        )
+        pooled[powertrain] = (mean, total, max(int(r["edition"]) for r in rows))
+    return pooled
+
+
+def jp_fuel_shares() -> dict[tuple[str, str], dict[str, float]]:
+    """{(company, cohort_year): {powertrain: share}} from the JADA fuel mix by maker."""
+    shares: dict[tuple[str, str], dict[str, float]] = defaultdict(dict)
+    for r in read_csv(FUEL_MIX_JP):
+        if not r["share"]:
+            continue
+        key = (r["company"], r["cohort_year"])
+        shares[key][r["powertrain"]] = shares[key].get(r["powertrain"], 0.0) + float(r["share"])
+    return shares
+
+
+def build_jp(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    """Join the JADA nameplate ranking to the MLIT 燃費一覧 through the Japan label map.
+
+    The ranking publishes units per 車名 and no powertrain, and 燃費一覧 publishes the certified
+    gCO2/km per grade. What a nameplate is actually sold as comes from the certificates
+    themselves: where every grade of a nameplate is a hybrid (Prius, Aqua, Note, X-Trail) all its
+    units are hybrid, and where a nameplate is certified both ways its units are divided by the
+    maker's own JADA fuel mix for that year, restricted to the powertrains that nameplate offers
+    and renormalised (assumption A-JP-PT in output/method.md). An ``all_hev`` variant carries the
+    upper bound for every divided nameplate.
+
+    Args:
+        companies: Exporters in scope.
+
+    Returns:
+        cohorts: Central rows plus the ``all_hev`` variant of every divided cohort.
+        withheld: Volumes with no label-map row, no certified row, or an unpriceable powertrain.
+    """
+    labels = {(r["company"], jp_label_key(r["jada_label"])): r for r in read_csv(JP_LABELS)}
+    tech = read_csv(TECH_JP)
+    shares = jp_fuel_shares()
+    central: list[dict[str, object]] = []
+    variants: list[dict[str, object]] = []
+    withheld: list[dict[str, object]] = []
+
+    for s in read_csv(SALES_JP):
+        if s["company"] not in companies or s["destination"] != JP:
+            continue
+        note = coverage_note(s["basis"], s["period"])
+        label = labels.get((s["company"], jp_label_key(s["model"])))
+        segment = (label or {}).get("segment") or PASSENGER_CAR
+
+        def hold(
+            reason: str,
+            s: dict[str, str] = s,
+            segment: str = segment,
+            note: str = note,
+        ) -> None:
+            withheld.append(
+                {
+                    "market": JP,
+                    "company": s["company"],
+                    "destination": JP,
+                    "segment": segment,
+                    "cohort_year": int(s["cohort_year"]),
+                    "model": s["model"],
+                    "powertrain": "",
+                    "units": int(s["units"]),
+                    "reason": reason,
+                    "coverage_note": note,
+                }
+            )
+
+        if label is None:
+            hold(NO_JP_LABEL)
+            continue
+        models = [jp_label_key(m) for m in label["mlit_models"].split(";") if m]
+        pooled = jp_technology(tech, models) if models else {}
+        if not pooled:
+            hold(f"{NO_JP_CERTIFIED} ({label['note']})" if label["note"] else NO_JP_CERTIFIED)
+            continue
+
+        units = int(s["units"])
+        if len(pooled) == 1:
+            rule = JP_SINGLE_RULE
+            split = {next(iter(pooled)): units}
+        else:
+            rule = JP_SHARE_RULE
+            mix = shares.get((s["company"], s["cohort_year"]), {})
+            offered = {pt: mix.get(pt, 0.0) for pt in pooled}
+            if not sum(offered.values()):
+                hold("the JADA fuel mix carries no share for the powertrains this nameplate offers")
+                continue
+            split = allocate(units, offered)
+
+        for powertrain, part in sorted(split.items()):
+            if not part:
+                continue
+            mean, grades, edition = pooled[powertrain]
+            central.append(
+                {
+                    "market": JP,
+                    "company": s["company"],
+                    "destination": JP,
+                    "segment": segment,
+                    "cohort_year": int(s["cohort_year"]),
+                    "period": s["period"],
+                    "model": s["model"],
+                    "powertrain": powertrain,
+                    "units": part,
+                    "basis": s["basis"],
+                    "tailpipe_gco2_km": round(mean, 2),
+                    "energy_wh_km": "",
+                    "test_cycle": tech[0]["test_cycle"],
+                    "technology_source": (
+                        f"mlit_fuel_economy_list (edition {edition}): "
+                        f"{label['mlit_models']} {powertrain}, {grades} certified grades, "
+                        "grade-weighted mean of the published 1km走行におけるCO2排出量"
+                    ),
+                    "sales_source_file": s["source_file"],
+                    "powertrain_rule": rule,
+                    "coverage_note": note,
+                    "variant": CENTRAL,
+                }
+            )
+        if rule == JP_SHARE_RULE and HEV in pooled:
+            mean, grades, edition = pooled[HEV]
+            variants.append(
+                {
+                    "market": JP,
+                    "company": s["company"],
+                    "destination": JP,
+                    "segment": segment,
+                    "cohort_year": int(s["cohort_year"]),
+                    "period": s["period"],
+                    "model": s["model"],
+                    "powertrain": HEV,
+                    "units": units,
+                    "basis": s["basis"],
+                    "tailpipe_gco2_km": round(mean, 2),
+                    "energy_wh_km": "",
+                    "test_cycle": tech[0]["test_cycle"],
+                    "technology_source": (
+                        f"mlit_fuel_economy_list (edition {edition}): "
+                        f"{label['mlit_models']} {HEV}, {grades} certified grades, "
+                        "grade-weighted mean; upper bound with every unit on the hybrid grade"
+                    ),
+                    "sales_source_file": s["source_file"],
+                    "powertrain_rule": f"{JP_SHARE_RULE}_all_hev",
+                    "coverage_note": note,
+                    "variant": ALL_HEV,
+                }
+            )
+    return aggregate_units(central) + aggregate_units(variants), withheld
+
+
 def round_or_blank(value: object) -> object:
     """Round a pooled certified value to 2 dp, or return an empty cell when absent."""
     return "" if value is None else round(float(str(value)), 2)
@@ -644,8 +845,9 @@ def main() -> None:
     eu_cohorts, eu_withheld = build_eu27(companies)
     us_cohorts, us_withheld = build_us(companies)
     kr_cohorts, kr_withheld = build_kr(companies)
-    cohorts = eu_cohorts + us_cohorts + kr_cohorts
-    withheld = eu_withheld + us_withheld + kr_withheld
+    jp_cohorts, jp_withheld = build_jp(companies)
+    cohorts = eu_cohorts + us_cohorts + kr_cohorts + jp_cohorts
+    withheld = eu_withheld + us_withheld + kr_withheld + jp_withheld
 
     order = ("market", "variant", "company", "destination", "model", "powertrain")
     cohorts.sort(key=lambda r: tuple(str(r[k]) for k in order))
