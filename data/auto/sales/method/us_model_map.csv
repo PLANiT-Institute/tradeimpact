@@ -1,21 +1,33 @@
-company,ir_model,epa_base_model,powertrain,powertrain_rule,note
-kia,Carnival,Carnival,ICE,mixed_central_ice,sold as ICE and HEV in the US; the IR file does not split powertrains
-kia,EV6,EV6,BEV,explicit,
-kia,EV9,EV9,BEV,explicit,
-kia,K4,K4,ICE,explicit,
-kia,K5,K5,ICE,explicit,
-kia,Niro,Niro,HEV,mixed_central_ice,sold as HEV and PHEV in the US; central case HEV (no ICE Niro exists); all-HEV bound identical
-kia,Niro EV,Niro,BEV,explicit,
-kia,Seltos,Seltos,ICE,explicit,
-kia,Sorento,Sorento,ICE,mixed_central_ice,sold as ICE HEV and PHEV in the US; the IR file does not split powertrains
-kia,Soul,Soul,ICE,explicit,
-kia,Sportage,Sportage,ICE,mixed_central_ice,sold as ICE HEV and PHEV in the US; the IR file does not split powertrains
-kia,Telluride,Telluride,ICE,explicit,
-hyundai,GV70 (JKa),,,out_of_scope,Genesis brand (EPA make Genesis) is outside the Hyundai brand scope
-hyundai,GV70 EV (Jka EV),,,out_of_scope,Genesis brand (EPA make Genesis) is outside the Hyundai brand scope
-hyundai,Ioniq5 (NEa),Ioniq 5,BEV,explicit,
-hyundai,Ioniq9 (MEa EV),Ioniq 9,BEV,explicit,no 2024-2025 EPA row exists yet; withheld until the technology row lands
-hyundai,Santa-Fe (MX5a HEV),Santa Fe,HEV,explicit,
-hyundai,Santa-Fe (MX5a),Santa Fe,ICE,explicit,
-hyundai,Tucson (NX4a),Tucson,ICE,mixed_central_ice,plant code does not separate ICE from the hybrid variants built on the same line
-hyundai,Tucson OB (NX4a OB),Tucson,ICE,mixed_central_ice,plant code does not separate ICE from the hybrid variants built on the same line
+company,ir_model,epa_base_model,share_model,share_powertrains,powertrain,powertrain_rule,note,basis
+hyundai,Elantra,Elantra,Elantra,,,epa_share_my2024,US release folds ICE and HEV; split with EPA MY2024 production shares,
+hyundai,Sonata,Sonata,Sonata,,,epa_share_my2024,US release folds ICE and HEV,
+hyundai,Venue,Venue,,,ICE,explicit,,
+hyundai,Kona,Kona,Kona,,,epa_share_my2024,US release folds ICE and the Kona Electric,
+hyundai,Tucson,Tucson,Tucson,,,epa_share_my2024,US release folds ICE HEV and PHEV; the PHEV part is withheld (no utility factor),
+hyundai,Santa Cruz(Tucson O/B),Santa Cruz,,,ICE,explicit,pickup accounted as a Tucson off-branch in the IR sheet,
+hyundai,Santa Fe,Santa Fe,Santa Fe,,,epa_share_my2024,US release folds ICE and HEV,
+hyundai,Palisade,Palisade,,,ICE,explicit,the 2026 Palisade Hybrid is not in the MY2024 share table,
+hyundai,Nexo,Nexo,,,FCEV,explicit,withheld downstream: no hydrogen supply intensity,
+hyundai,IONIQ 5,Ioniq 5,,,BEV,explicit,,
+hyundai,IONIQ 5 Robo Taxi,,,,,out_of_scope,fleet robotaxi vehicles (16 and 49 units); not a retail passenger-car cohort,
+hyundai,IONIQ 6,Ioniq 6,,,BEV,explicit,,
+hyundai,IONIQ 9,Ioniq 9,,,BEV,explicit,withheld until an EPA technology row at or before the cohort year exists,
+hyundai,Accent,Accent,,,ICE,explicit,zero units in 2024 and 2025,
+hyundai,Veloster,Veloster,,,ICE,explicit,zero units in 2024 and 2025,
+hyundai,IONIQ,Ioniq,,,,out_of_scope,first-generation Ioniq (HEV PHEV EV); zero units in 2024 and 2025,
+kia,Carnival,Carnival,Carnival,,,epa_share_my2024,Kia America release folds ICE and HEV (MY2024 shares carry only ICE; the Carnival Hybrid arrived in MY2025),
+kia,EV6,EV6,,,BEV,explicit,,
+kia,EV9,EV9,,,BEV,explicit,,
+kia,K4/Forte,K4,,,ICE,explicit,Kia America reports K4 and Forte on one row; both ICE only,
+kia,K4,K4,,,ICE,explicit,Kia IR label,
+kia,K5,K5,,,ICE,explicit,,
+kia,Niro,Niro,Niro,,,epa_share_my2024,Kia America release folds HEV PHEV and EV on one row,
+kia,Niro EV,Niro,,,BEV,explicit,Kia IR label (the IR file separates the EV),
+kia,Rio,Rio,,,ICE,explicit,run-out volume in 2024,
+kia,Seltos,Seltos,,,ICE,explicit,,
+kia,Sorento,Sorento,Sorento,,,epa_share_my2024,release folds ICE HEV and PHEV,
+kia,Soul,Soul,,,ICE,explicit,,
+kia,Sportage,Sportage,Sportage,,,epa_share_my2024,release folds ICE HEV and PHEV,
+kia,Telluride,Telluride,,,ICE,explicit,,
+kia,Stinger,Stinger,,,ICE,explicit,discontinued; zero units in 2024 and 2025,
+kia,Niro,Niro,Niro,HEV|PHEV,,epa_share_my2024,Kia IR label: the IR file reports Niro EV separately so only the HEV and PHEV shares apply,retail_sales

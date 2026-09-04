@@ -25,7 +25,7 @@ Algorithm:
                      distances; the benchmark per vehicle is unchanged because distance cancels
                      in CO2 per car. Only markets whose parameters publish the quartiles move.
       powertrain_mix cohort rows whose sales source does not split the powertrain
-                     (``powertrain_rule = mixed_central_ice``) are repriced with the hybrid
+                     (``powertrain_rule = epa_share_my2024``) are repriced with the hybrid
                      technology of the same base model; the central case prices them as ICE.
     Symbols: E in kgCO2e per vehicle-year, I0 fleet intensity (kg/km), G0 grid (kg/kWh), eta
     consumption (kWh/km), r in 1/year, T in years.
@@ -56,7 +56,7 @@ OUT_CROSS = OUT_DIR / "ti_crossover.csv"
 OUT_SENS = OUT_DIR / "ti_sensitivity.csv"
 
 LIFETIME_DELTA_Y = 3
-MIXED_RULE = "mixed_central_ice"
+MIXED_RULE = "epa_share_my2024"
 
 CROSS_FIELDS = [
     "market",
@@ -74,6 +74,7 @@ CROSS_FIELDS = [
 SENS_FIELDS = [
     "company",
     "market",
+    "cohort_year",
     "scenario",
     "dimension",
     "variant",
@@ -187,13 +188,22 @@ def priced_cells(
 def all_hev_cells(
     cells: list[Cell], overrides: dict[tuple[str, str, str, str, str], Cell]
 ) -> list[Cell]:
-    """The cohort with every mixed-powertrain cell repriced as a hybrid."""
-    return [
-        overrides.get((c.market, c.company, c.destination, str(c.cohort_year), c.model), c)
-        if c.rule.startswith(MIXED_RULE)
-        else c
-        for c in cells
-    ]
+    """The cohort with every share-split nameplate repriced as a hybrid.
+
+    A share-split nameplate appears as several central cells (one per powertrain); the
+    all-hybrid bound replaces the whole group with the single ``all_hev`` cell once.
+    """
+    out: list[Cell] = []
+    done: set[tuple[str, str, str, str, str]] = set()
+    for c in cells:
+        key = (c.market, c.company, c.destination, str(c.cohort_year), c.model)
+        if c.rule.startswith(MIXED_RULE) and key in overrides:
+            if key not in done:
+                out.append(overrides[key])
+                done.add(key)
+            continue
+        out.append(c)
+    return out
 
 
 def cohort_total(
@@ -206,8 +216,8 @@ def cohort_total(
     life_delta: int = 0,
     rw_key: str = "factor",
     vkt_key: str | None = None,
-) -> dict[str, float]:
-    """Cohort total (tCO2e) per company for one market x scenario with one input moved.
+) -> dict[tuple[str, int], float]:
+    """Cohort total (tCO2e) per company x cohort year for one market x scenario, one input moved.
 
     Args:
         cells: Priced cells of every market; those outside ``market`` are ignored.
@@ -221,9 +231,9 @@ def cohort_total(
         vkt_key: Parameter column to substitute for the distance in tier-C markets.
 
     Returns:
-        company -> lifetime TI of the cohort (tCO2e).
+        (company, cohort_year) -> lifetime TI of the cohort (tCO2e).
     """
-    out: dict[str, float] = defaultdict(float)
+    out: dict[tuple[str, int], float] = defaultdict(float)
     for c in cells:
         if c.market != market:
             continue
@@ -246,7 +256,7 @@ def cohort_total(
                 else (c.cert * rw / 1000.0 * vkt)
             )
             cumulative += e_ref - e_prod
-        out[c.company] += cumulative * c.units / 1000.0
+        out[(c.company, c.cohort_year)] += cumulative * c.units / 1000.0
     return dict(out)
 
 
@@ -402,11 +412,12 @@ def main() -> None:
                     factors,
                     **kwargs,  # type: ignore[arg-type]
                 )
-                for company, value in sorted(totals.items()):
+                for (company, cohort_year), value in sorted(totals.items()):
                     sens_rows.append(
                         {
                             "company": company,
                             "market": market,
+                            "cohort_year": cohort_year,
                             "scenario": scenario,
                             "dimension": dimension,
                             "variant": variant,
@@ -416,7 +427,8 @@ def main() -> None:
                     )
     sens_rows.sort(
         key=lambda r: tuple(
-            str(r[k]) for k in ("company", "market", "scenario", "dimension", "variant")
+            str(r[k])
+            for k in ("company", "market", "cohort_year", "scenario", "dimension", "variant")
         )
     )
     write_csv(OUT_SENS, SENS_FIELDS, sens_rows)
@@ -425,12 +437,20 @@ def main() -> None:
     print(f"{OUT_CROSS.relative_to(REPO)}: {len(cross_rows)} cells, {within} cross within lifetime")
     for market in sorted(scenarios):
         headline = scenarios[market][-1]
-        for company in sorted({str(r["company"]) for r in sens_rows if r["market"] == market}):
+        grains = sorted(
+            {
+                (str(r["company"]), int(str(r["cohort_year"])))
+                for r in sens_rows
+                if r["market"] == market
+            }
+        )
+        for company, cohort_year in grains:
             for dimension in ("lifetime", "realworld", "vkt_proxy", "powertrain_mix"):
                 values = {
                     r["variant"]: r["ti_tco2e"]
                     for r in sens_rows
                     if r["company"] == company
+                    and r["cohort_year"] == cohort_year
                     and r["market"] == market
                     and r["scenario"] == headline
                     and r["dimension"] == dimension

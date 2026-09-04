@@ -22,7 +22,10 @@ Rules: [`sales/method/method.md`](../../data/auto/sales/method/method.md).
 |---|---|---|
 | `sales/processed/sales_eea_eu27_2024.csv` | exists | 1,226 — Hyundai and Kia EU27 first registrations, 2024 (Toyota and Honda snapshots pinned, out of scope) |
 | `sales/processed/sales_kia_ir_2026.csv` | exists | 287 — Kia IR retail sales, 2026 year to date |
-| `sales/processed/sales_hyundai_plant_2025.csv` | exists | 113 — Hyundai IR plant-side sales, 2025 |
+| `sales/processed/sales_hyundai_plant_2025.csv` | exists | 113 — Hyundai IR plant-side sales, 2025 (reconciliation and non-US destinations only) |
+| `sales/processed/sales_hyundai_us.csv` | exists | 41 — Hyundai IR US sales by model 2024 and 2025, Hyundai and Genesis, brand total incl. fleet |
+| `sales/processed/sales_kia_us.csv` | exists | 23 — Kia America US sales by model, full-year 2024 and 2025 |
+| `sales/processed/sales_hyundai_kr.csv` | exists | 146 — Hyundai IR Korea domestic sales and Korea export shipments by model and trim code, 2024 and 2025 |
 | `sales/method/us_model_map.csv` | exists | 20 — IR model name → EPA `base_model` + powertrain for the US market, with `powertrain_rule` (`explicit` · `mixed_central_ice` · `out_of_scope`) and a note |
 
 | Column | Type | Unit | Allowed values |
@@ -122,6 +125,7 @@ Rules: [`vehicle_technology/method/method.md`](../../data/auto/vehicle_technolog
 
 | File | Status | Rows |
 |---|---|---|
+| `vehicle_technology/processed/epa_trends_powertrain_share_my2024.csv` | exists | 42 — EPA Automotive Trends MY2024 production shares per make × nameplate × powertrain (Hyundai, Kia, Genesis) |
 | `vehicle_technology/processed/vehicle_technology_eea_2024.csv` | exists | 1,226 — certified values per company × destination × model × powertrain, in-scope brands, 2024 |
 | `vehicle_technology/method/real_world_correction.csv` | exists | 6 — real-world factor with low/high range per test cycle (WLTP, EPA) × powertrain, with derivation and `source_id` |
 
@@ -160,7 +164,7 @@ its two files are named for the market they describe.
 
 | File | Status | Key | Payload |
 |---|---|---|---|
-| `cohorts.csv` | exists, 1,042 rows | market + company + destination + model + powertrain + cohort_year + variant | `period`, `units`, `basis`, `tailpipe_gco2_km`, `energy_wh_km`, `test_cycle`, `technology_source`, `sales_source_file`, `powertrain_rule`, `coverage_note` — sales joined to product technology per market (`build_cohorts.py`). `variant = central` is the published cohort; other variants are sensitivity repricings of the same cell |
+| `cohorts.csv` | exists, 1,108 rows | market + company + destination + model + powertrain + cohort_year + variant | `period`, `units`, `basis`, `tailpipe_gco2_km`, `energy_wh_km`, `test_cycle`, `technology_source`, `sales_source_file`, `powertrain_rule`, `coverage_note` — sales joined to product technology per market (`build_cohorts.py`). `variant = central` is the published cohort; other variants are sensitivity repricings of the same cell |
 | `cohorts_withheld.csv` | exists, 210 rows | market + company + destination + model | `units`, `reason`, `coverage_note` — volumes that cannot be joined to a product parameter |
 | `destination_parameters_eu27.csv` | exists, 27 rows | market + country + cohort_year | `vkt_km` with low/high bracket, `vkt_tier`, `vkt_derivation`, `car_stock`, `car_co2_kt`, `fleet_intensity_gco2_km` + tier, `grid_gco2_kwh` + tier, `mean_car_age_years` + tier, `lifetime_years` with low/high, `scenarios_excluded`, `scenario_exclusion_reason`, `warnings`, `source_ids` — each value with its reference year |
 | `destination_parameters_us.csv` | exists, 1 row | as above | identical columns (`build_reference_us.py`); distance tier B (FHWA wheelbase classes), lifetime tier C (NHTSA schedule), `scenarios_excluded = S2` |
@@ -176,7 +180,7 @@ its two files are named for the market they describe.
 | `ti_company.csv` | exists | company + market + scenario | `status` (reported/excluded), covered/withheld units, `ti_tco2e`, per-vehicle, `direction`, `decomposition_identity_holds`, `exclusion_reason` |
 | `ti_crossover.csv` | exists (`build_sensitivity.py`) | as `ti_by_model` | `crossover_year` (years after sale), `crossover_calendar_year`, `reason`; the `C-05` range treatment waits on `B-07` |
 | `ti_sensitivity.csv` | exists (`build_sensitivity.py`) | company + market + scenario + dimension + variant | `parameter`, `ti_tco2e` — lifetime ±3 y, real-world factor range (per test cycle), proxied-distance quartiles, powertrain mix (`all_hev`) |
-| `ti_coverage.csv` | exists (`build_coverage.py`) | company + destination + destination_level + cohort_year + basis | `units`, `priced_units`, `withheld_units`, `status`, `market`, `note` |
+| `ti_coverage.csv` | exists (`build_coverage.py`) | company + destination + destination_level + cohort_year + basis + source_file | `destination_group` (EU27, US, the company's home country code, IN, others), `home_country`, `period`, `units`, `priced_units`, `withheld_units`, `status` (priced, withheld, no_benchmark, plant_side_only, region_unpriced, destination_unknown, not_in_cohort), `market`, `note` |
 | `ti_data_quality.csv` | exists (`build_data_quality.py`) | company + market | analysis level, benchmark method, `sales_basis`, `test_cycles`, covered/withheld units, `tier_c_share`, `directional_only`, central lifetime, `scenarios_reported`, `scenarios_excluded`, markets by tier, withheld reasons, `coverage_notes`, warnings |
 | `target_set.csv` | planned (ST01) | company + destination + cohort_year | segment, lifetime and its bracket, criteria met, exclusion reason |
 
@@ -192,7 +196,7 @@ published.
 
 | From | To | Key | Note |
 |---|---|---|---|
-| `sales` | `vehicle_technology` | EU27: company + destination + model + powertrain. US: company + `us_model_map.ir_model` → `epa_base_model` + powertrain, then EPA `model_year` ≤ cohort year | Where `sales.powertrain` is empty (Kia and Hyundai IR), `sales/method/us_model_map.csv` supplies it; unmatched models are counted into `cohorts_withheld` and carried into `ti_withheld`, never dropped silently |
+| `sales` | `vehicle_technology` | EU27: company + destination + model + powertrain. US: company + `us_model_map.ir_model` → `epa_base_model` + powertrain, then EPA `model_year` ≤ cohort year | Where `sales.powertrain` is empty (US company releases), `sales/method/us_model_map.csv` either states it (`explicit`) or splits the nameplate with the EPA Automotive Trends MY2024 production shares (`epa_share_my2024`, largest-remainder rounding); unmatched models are counted into `cohorts_withheld` and carried into `ti_withheld`, never dropped silently |
 | `sales` | `vehicle_usage`, `country_emissions`, `emission_targets` | destination → country | Only for `destination_level = country` |
 | `country_emissions` + `vehicle_usage` | `destination_parameters` | market + country | `fleet_intensity = co2 ÷ (stock × vkt)` on one consistent fleet definition per market (EU27: passenger cars; US: all light-duty). EU27 takes the lifetime bracket from the age bands, the US from the NHTSA expected lifetime ±3 y |
 | `emission_targets` | `reference_trajectories` | market + country + scenario (+ `rate`) | `r_fleet` drives the benchmark, `r_power` the grid; a scenario with no rate builds no trajectory and lands in `ti_exclusions.csv` |

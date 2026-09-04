@@ -32,10 +32,12 @@ Algorithm:
     n_m      number of certified trims behind EPA model name m (-)
     I_m      EPA label tailpipe intensity of model m (gCO2/km)
     eta_m    EPA label electric consumption of model m (Wh/km)
-    Where the IR name covers several powertrains (``powertrain_rule = mixed_central_ice``) the
-    central case takes the rule's powertrain and a second row is written under
-    ``variant = all_hev`` with the hybrid technology of the same base model, so the sensitivity
-    step can price the upper bound without repeating this join.
+    Where the sales release does not split a nameplate by powertrain
+    (``powertrain_rule = epa_share_my2024``) the units are divided with the EPA Automotive
+    Trends model-year-2024 production shares of that nameplate (largest-remainder rounding, so
+    the parts sum exactly to the published units); a second row per nameplate is written under
+    ``variant = all_hev`` with every unit on the hybrid technology, the upper bound the
+    sensitivity step prices. Assumption A-US-PT in output/method.md.
 
 Run from the repository root:  .venv/bin/python script/auto/model/build_cohorts.py
 """
@@ -51,10 +53,13 @@ DATA = REPO / "data" / "auto"
 COMPANIES = DATA / "sales" / "method" / "companies.csv"
 US_MODEL_MAP = DATA / "sales" / "method" / "us_model_map.csv"
 SALES_EU27 = DATA / "sales" / "processed" / "sales_eea_eu27_2024.csv"
+#: Market-side US sales files (plant-side files are reconciliation only, never cohorts).
 SALES_US = (
+    DATA / "sales" / "processed" / "sales_hyundai_us.csv",
+    DATA / "sales" / "processed" / "sales_kia_us.csv",
     DATA / "sales" / "processed" / "sales_kia_ir_2026.csv",
-    DATA / "sales" / "processed" / "sales_hyundai_plant_2025.csv",
 )
+SHARES_US = DATA / "vehicle_technology" / "processed" / "epa_trends_powertrain_share_my2024.csv"
 TECH_EU27 = DATA / "vehicle_technology" / "processed" / "vehicle_technology_eea_2024.csv"
 TECH_US = DATA / "vehicle_technology" / "processed" / "vehicle_technology_us_epa.csv"
 OUT_DIR = DATA / "output"
@@ -63,7 +68,8 @@ OUT_WITHHELD = OUT_DIR / "cohorts_withheld.csv"
 
 EU27, US = "EU27", "US"
 CENTRAL, ALL_HEV = "central", "all_hev"
-MIXED_RULE = "mixed_central_ice"
+SHARE_RULE = "epa_share_my2024"
+OUT_OF_SCOPE = "out_of_scope"
 HEV = "HEV"
 
 #: Powertrains that carry no defensible product intensity anywhere yet (guideline A-06).
@@ -127,7 +133,7 @@ def coverage_note(basis: str, period: str) -> str:
     so a new sales file inherits the right caveat without a per-file branch.
 
     Args:
-        basis: `registrations`, `retail_sales` or `plant_sales`.
+        basis: `registrations`, `retail_sales`, `brand_total_sales` or `plant_sales`.
         period: Months covered, e.g. `2026-01..2026-06`.
 
     Returns:
@@ -141,6 +147,11 @@ def coverage_note(basis: str, period: str) -> str:
         )
     if basis == "retail_sales":
         notes.append("retail sales as published by the exporter's investor-relations release")
+    if basis == "brand_total_sales":
+        notes.append(
+            "brand total sales including fleet as published by the company's US release (the "
+            "Hyundai IR sheet is labelled retail but equals the brand total)"
+        )
     months = [p for p in period.split("..") if p]
     if len(months) == 2 and not (months[0].endswith("-01") and months[1].endswith("-12")):
         notes.append(f"partial year: the source covers {period} only, not the full cohort year")
@@ -294,81 +305,136 @@ def pick_model_year(
     return year, by_year[year]
 
 
+def load_shares() -> dict[tuple[str, str], dict[str, float]]:
+    """EPA Automotive Trends production shares: {(company, nameplate): {powertrain: share}}."""
+    shares: dict[tuple[str, str], dict[str, float]] = defaultdict(dict)
+    for r in read_csv(SHARES_US):
+        shares[(r["make"].lower(), r["base_model"])][r["powertrain"]] = float(r["share"])
+    return shares
+
+
+def allocate(units: int, shares: dict[str, float]) -> dict[str, int]:
+    """Largest-remainder split of integer units by share; the parts sum exactly to ``units``.
+
+    Args:
+        units: Published volume of one nameplate.
+        shares: {powertrain: share}, renormalised here so partial share sets also sum to 1.
+
+    Returns:
+        {powertrain: units}, zero parts dropped.
+    """
+    total_share = sum(shares.values())
+    raw = {pt: units * s / total_share for pt, s in shares.items()}
+    parts = {pt: int(v) for pt, v in raw.items()}
+    for pt in sorted(raw, key=lambda p: raw[p] - parts[p], reverse=True)[
+        : units - sum(parts.values())
+    ]:
+        parts[pt] += 1
+    return {pt: n for pt, n in parts.items() if n > 0}
+
+
 def build_us(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
-    """Join the US IR sales to the EPA label values through the US model map.
+    """Join the market-side US sales to the EPA label values through the US model map.
 
     Args:
         companies: Exporters in scope.
 
     Returns:
-        cohorts: Central-variant rows plus the ``all_hev`` variant of every mixed cohort.
-        withheld: Volumes with no map row, no EPA technology or an unpriceable powertrain.
+        cohorts: Central-variant rows plus the ``all_hev`` variant of every share-split cohort.
+        withheld: Volumes with no map row, no EPA technology, no share row or an unpriceable
+            powertrain.
     """
-    mapping = {(r["company"], r["ir_model"]): r for r in read_csv(US_MODEL_MAP)}
+    mapping = {(r["company"], r["ir_model"], r["basis"]): r for r in read_csv(US_MODEL_MAP)}
     pooled = epa_technology(read_csv(TECH_US))
+    shares = load_shares()
     central: list[dict[str, object]] = []
     variants: list[dict[str, object]] = []
     withheld: list[dict[str, object]] = []
+
+    def hold(s: dict[str, str], pt: str, units: int, reason: str, note: str) -> None:
+        withheld.append(
+            {
+                "market": US,
+                "company": s["company"],
+                "destination": US,
+                "cohort_year": int(s["cohort_year"]),
+                "model": s["model"],
+                "powertrain": pt,
+                "units": units,
+                "reason": reason,
+                "coverage_note": note,
+            }
+        )
+
+    def price(s: dict[str, str], m: dict[str, str], pt: str, rule: str, note: str) -> None:
+        units = int(s["units"])
+        if pt in WITHHELD_POWERTRAIN:
+            hold(s, pt, units, WITHHELD_POWERTRAIN[pt], note)
+            return
+        row = us_cohort_row(s, m, pt, pooled, note, rule)
+        if row is None:
+            hold(
+                s,
+                pt,
+                units,
+                f"no EPA technology row for {m['epa_base_model']} {pt} at or before model year "
+                f"{s['cohort_year']} in vehicle_technology_us_epa.csv",
+                note,
+            )
+            return
+        central.append(row)
 
     for path in SALES_US:
         for s in read_csv(path):
             if s["company"] not in companies or s["destination"] != US:
                 continue
             note = coverage_note(s["basis"], s["period"])
-            cohort_year = int(s["cohort_year"])
-            m = mapping.get((s["company"], s["model"]))
-            identity = {
-                "market": US,
-                "company": s["company"],
-                "destination": US,
-                "cohort_year": cohort_year,
-                "model": s["model"],
-                "powertrain": (m or {}).get("powertrain", ""),
-            }
             units = int(s["units"])
+            m = mapping.get((s["company"], s["model"], s["basis"])) or mapping.get(
+                (s["company"], s["model"], "")
+            )
             if m is None:
-                withheld.append(
-                    {**identity, "units": units, "reason": NO_MAP_ROW, "coverage_note": note}
+                hold(s, s.get("powertrain", ""), units, NO_MAP_ROW, note)
+                continue
+            rule = m["powertrain_rule"]
+            if rule == OUT_OF_SCOPE:
+                hold(s, "", units, f"{rule}: {m['note']}", note)
+                continue
+            if rule != SHARE_RULE:
+                price(s, m, m["powertrain"], rule, note)
+                continue
+            share = shares.get((s["company"], m["share_model"]))
+            if m["share_powertrains"] and share:
+                share = {
+                    pt: v for pt, v in share.items() if pt in m["share_powertrains"].split("|")
+                }
+            if not share:
+                hold(
+                    s,
+                    "",
+                    units,
+                    f"no EPA Automotive Trends share row for {m['share_model']} in "
+                    f"{SHARES_US.name}",
+                    note,
                 )
                 continue
-            pt, rule = m["powertrain"], m["powertrain_rule"]
-            if not pt:
-                withheld.append(
-                    {
-                        **identity,
-                        "units": units,
-                        "reason": f"{rule}: {m['note']}",
-                        "coverage_note": note,
-                    }
+            split_note = (
+                f"{note}; " if note else ""
+            ) + "powertrain split with EPA Automotive Trends MY2024 production shares (A-US-PT)"
+            for pt, n in allocate(units, share).items():
+                price(
+                    {**s, "units": n},
+                    m,
+                    pt,
+                    f"{SHARE_RULE}: {pt} share {share[pt] / sum(share.values()):.3f}",
+                    split_note,
                 )
-                continue
-            if pt in WITHHELD_POWERTRAIN:
-                withheld.append(
-                    {
-                        **identity,
-                        "units": units,
-                        "reason": WITHHELD_POWERTRAIN[pt],
-                        "coverage_note": note,
-                    }
+            if HEV in share:
+                bound = us_cohort_row(
+                    s, m, HEV, pooled, split_note, f"{SHARE_RULE}_all_hev", ALL_HEV
                 )
-                continue
-            row = us_cohort_row(s, m, pt, pooled, note)
-            if row is None:
-                withheld.append(
-                    {
-                        **identity,
-                        "units": units,
-                        "reason": (
-                            f"no EPA technology row for {m['epa_base_model']} {pt} at or before "
-                            f"model year {cohort_year} in vehicle_technology_us_epa.csv"
-                        ),
-                        "coverage_note": note,
-                    }
-                )
-                continue
-            central.append(row)
-            if rule == MIXED_RULE:
-                variants.append(all_hev_variant(s, m, pt, pooled, note, row))
+                if bound is not None:
+                    variants.append(bound)
 
     return aggregate_units(central) + aggregate_units(variants), withheld
 
@@ -379,6 +445,7 @@ def us_cohort_row(
     powertrain: str,
     pooled: dict[tuple[str, str, str], dict[int, dict[str, object]]],
     note: str,
+    rule: str,
     variant: str = CENTRAL,
 ) -> dict[str, object] | None:
     """One US cohort row, or None when the base model has no EPA technology at all."""
@@ -409,32 +476,10 @@ def us_cohort_row(
             f"{values['n_trims']} trims, trim-weighted mean"
         ),
         "sales_source_file": s["source_file"],
-        "powertrain_rule": m["powertrain_rule"],
+        "powertrain_rule": rule,
         "coverage_note": note,
         "variant": variant,
     }
-
-
-def all_hev_variant(
-    s: dict[str, str],
-    m: dict[str, str],
-    powertrain: str,
-    pooled: dict[tuple[str, str, str], dict[int, dict[str, object]]],
-    note: str,
-    central_row: dict[str, object],
-) -> dict[str, object]:
-    """The all-hybrid bound of a mixed cohort row.
-
-    Falls back to the central row when the base model has no hybrid on the EPA table; the
-    fallback is named in ``powertrain_rule`` so the bound is never silently the central case.
-    """
-    row = us_cohort_row(s, m, HEV, pooled, note, variant=ALL_HEV)
-    if row is not None:
-        return row
-    fallback = dict(central_row)
-    fallback["variant"] = ALL_HEV
-    fallback["powertrain_rule"] = f"{MIXED_RULE}_no_hev_on_epa_table"
-    return fallback
 
 
 def round_or_blank(value: object) -> object:

@@ -91,6 +91,7 @@ CELL_FIELDS = [
 ANNUAL_FIELDS = [
     "market",
     "company",
+    "cohort_year",
     "scenario",
     "t",
     "calendar_year",
@@ -146,8 +147,12 @@ def main() -> None:
     cells: list[dict[str, object]] = []
 
     annual_cells: list[dict[str, object]] = []
-    annual: dict[tuple[str, str, str], dict[int, float]] = defaultdict(lambda: defaultdict(float))
-    surviving: dict[tuple[str, str], dict[int, float]] = defaultdict(lambda: defaultdict(float))
+    annual: dict[tuple[str, str, int, str], dict[int, float]] = defaultdict(
+        lambda: defaultdict(float)
+    )
+    surviving: dict[tuple[str, str, int], dict[int, float]] = defaultdict(
+        lambda: defaultdict(float)
+    )
 
     for c in cohorts:
         market, country = c["market"], c["destination"]
@@ -186,7 +191,7 @@ def main() -> None:
         cert = certified(c)
         rw = factors[(c["test_cycle"], powertrain)]["factor"]
         for t in range(life):
-            surviving[(market, c["company"])][cohort_year + t] += units
+            surviving[(market, c["company"], cohort_year)][cohort_year + t] += units
         for scenario in scenarios[market]:
             trajectory = reference[(market, country, scenario)]
             cumulative = 0.0
@@ -201,7 +206,9 @@ def main() -> None:
                     e_prod0 = e_prod
                 gap = e_ref - e_prod
                 cumulative += gap
-                annual[(market, c["company"], scenario)][cohort_year + t] += gap * units / 1000.0
+                annual[(market, c["company"], cohort_year, scenario)][cohort_year + t] += (
+                    gap * units / 1000.0
+                )
                 annual_cells.append(
                     {
                         **identity,
@@ -241,17 +248,19 @@ def main() -> None:
     write_csv(OUT_CELLS, CELL_FIELDS, cells)
 
     annual_rows: list[dict[str, object]] = []
-    for (market, company, scenario), series in sorted(annual.items()):
-        year0 = min(series)
+    for (market, company, cohort_year, scenario), series in sorted(annual.items()):
         for calendar_year, value in sorted(series.items()):
             annual_rows.append(
                 {
                     "market": market,
                     "company": company,
+                    "cohort_year": cohort_year,
                     "scenario": scenario,
-                    "t": calendar_year - year0,
+                    "t": calendar_year - cohort_year,
                     "calendar_year": calendar_year,
-                    "surviving_vehicles": int(surviving[(market, company)][calendar_year]),
+                    "surviving_vehicles": int(
+                        surviving[(market, company, cohort_year)][calendar_year]
+                    ),
                     "ti_tco2e": round(value, 4),
                 }
             )
@@ -312,20 +321,27 @@ def build_exclusions(
         first = sorted({str(c["scenario"]) for c in priced})[:1]
         for company in companies:
             mine = [c for c in priced if c["company"] == company and c["scenario"] in first]
-            for scenario, reason in sorted(per_scenario.items()):
-                rows.append(
-                    {
-                        "market": market,
-                        "company": company,
-                        "scenario": scenario,
-                        "cohort_year": min(int(str(c["cohort_year"])) for c in mine)
-                        if mine
-                        else None,
-                        "units_affected": sum(int(str(c["units"])) for c in mine),
-                        "reason": reason,
-                    }
-                )
-    rows.sort(key=lambda r: (str(r["market"]), str(r["company"]), str(r["scenario"])))
+            for cohort_year in sorted({int(str(c["cohort_year"])) for c in mine}):
+                year_cells = [c for c in mine if int(str(c["cohort_year"])) == cohort_year]
+                for scenario, reason in sorted(per_scenario.items()):
+                    rows.append(
+                        {
+                            "market": market,
+                            "company": company,
+                            "scenario": scenario,
+                            "cohort_year": cohort_year,
+                            "units_affected": sum(int(str(c["units"])) for c in year_cells),
+                            "reason": reason,
+                        }
+                    )
+    rows.sort(
+        key=lambda r: (
+            str(r["market"]),
+            str(r["company"]),
+            str(r["cohort_year"]),
+            str(r["scenario"]),
+        )
+    )
     return rows
 
 

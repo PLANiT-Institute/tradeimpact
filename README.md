@@ -60,25 +60,30 @@ and the United States (the cohorts in the gathered IR workbooks). The engine rep
 previously published EU27 result exactly when fed the archived inputs (see
 `data/auto/output/method.md`, Verification).
 
-| Market, cohort | Exporter | Covered | S1 current | S2 committed | S3 1.5 °C |
+| Market, cohort | Company | Covered | S1 current | S2 committed | S3 1.5 °C |
 |---|---|---|---|---|---|
 | EU27, 2024 registrations | Hyundai | 95.4 % | −1.66 MtCO₂e | −3.82 | −8.00 |
 | EU27, 2024 registrations | Kia | 91.4 % | −1.52 | −3.49 | −7.37 |
-| US, 2025 US-built sold in US | Hyundai | 91.5 % | **+1.53** | excluded (no NDC in force) | −4.80 |
-| US, Jan–Jun 2026 retail | Kia | 100 % | −0.76 | excluded (no NDC in force) | −8.53 |
+| US, 2024 brand sales | Hyundai | 99.0 % | **+1.56** | excluded (no NDC in force) | −13.13 |
+| US, 2025 brand sales | Hyundai | 98.4 % | **+1.50** | excluded (no NDC in force) | −14.20 |
+| US, 2024 brand sales | Kia | 98.0 % | **+1.01** | excluded (no NDC in force) | −12.77 |
+| US, 2025 brand sales | Kia | 98.2 % | **+0.00** | excluded (no NDC in force) | −14.96 |
+| US, Jan–Jun 2026 retail | Kia | 98.0 % | −0.49 | excluded (no NDC in force) | −8.11 |
 
 Negative = lifetime emissions above the destination's committed benchmark (lock-in
 liability); positive = below it (contribution). EU27 and US are never summed: different sales
 bases, test cycles and benchmarks. Withheld units (PHEV, FCEV, no certified value, Luxembourg's
 implausible benchmark, the Genesis brand, Ioniq 9 without an EPA row) are listed, not absorbed.
 
-Read the US rows with their caveats: the Hyundai cohort is US-built cars only (Korean-built
-imports are not in the gathered file) and the Kia cohort is a half year; the US S1 benchmark
-is the all-light-duty fleet including pickups (217 gCO₂/km, declining 1.1 %/yr) with the
-segment ratio set to 1.0, which is why compact crossovers and hybrids sit below it — a
-segment-matched benchmark would lower or reverse Hyundai's S1 contribution; and models the IR
-files do not split by powertrain are priced as ICE centrally with an all-HEV bound
-(`ti_sensitivity.csv`, dimension `powertrain_mix`). The US S2 scenario is excluded because no
+Read the US rows with their caveats: the cohorts are the companies' own US releases (Hyundai
+IR "US Retail Sales" 2024 and 2025, imports included, brand total despite the label; Kia
+America full years 2024 and 2025; Kia IR Jan–Jun 2026, a half year); the US S1 benchmark is
+the all-light-duty fleet including pickups (217 gCO₂/km, declining 1.1 %/yr) with the segment
+ratio set to 1.0, which is why compact crossovers and hybrids sit below it — a segment-matched
+benchmark would lower or reverse the S1 contributions; and nameplates the releases do not split
+by powertrain are divided with EPA Automotive Trends MY2024 production shares (assumption
+A-US-PT in `data/auto/output/method.md`) with an all-HEV bound (`ti_sensitivity.csv`,
+dimension `powertrain_mix`). Cohort years are never pooled: each row above is one sale year. The US S2 scenario is excluded because no
 NDC is in force; the exclusion is a row in `ti_company.csv` and `ti_exclusions.csv`, never a
 silent gap. EU27 magnitudes are proxy-heavy (48 % of covered units on an EU-average distance,
 guideline §5.3 threshold 50 %).

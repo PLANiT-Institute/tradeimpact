@@ -1,0 +1,42 @@
+company,destination,destination_level,origin,cohort_year,period,model,powertrain,units,basis,source_id,source_file
+hyundai,US,country,,2024,2024-01..2024-12,Elantra,,136698,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,Sonata,,69343,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+genesis,US,country,,2024,2024-01..2024-12,G70,,12258,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+genesis,US,country,,2024,2024-01..2024-12,G80 (RG3),,3758,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+genesis,US,country,,2024,2024-01..2024-12,G80 (RG3 EV),BEV,397,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+genesis,US,country,,2024,2024-01..2024-12,G90,,1503,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,Venue,,24607,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,Kona,,82172,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,Tucson,,206126,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,Santa Cruz(Tucson O/B),,32033,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,Nexo,FCEV,94,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,IONIQ 5,BEV,44351,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,IONIQ 5 Robo Taxi,BEV,49,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,IONIQ 6,BEV,12264,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,Santa Fe,,119010,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2024,2024-01..2024-12,Palisade,,110055,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+genesis,US,country,,2024,2024-01..2024-12,GV60,,2866,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+genesis,US,country,,2024,2024-01..2024-12,GV70,,26944,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+genesis,US,country,,2024,2024-01..2024-12,GV70 EV,BEV,2976,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+genesis,US,country,,2024,2024-01..2024-12,GV80,,24301,brand_total_sales,hyundai_ir_sales_results,hyundai_2024_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,Elantra,,148200,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,IONIQ 6,BEV,10478,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,Sonata,,60094,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+genesis,US,country,,2025,2025-01..2025-12,G70,,11511,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+genesis,US,country,,2025,2025-01..2025-12,G80 (RG3),,3782,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+genesis,US,country,,2025,2025-01..2025-12,G80 (RG3 EV),BEV,92,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+genesis,US,country,,2025,2025-01..2025-12,G90,,1605,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,Venue,,29805,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,Kona,,74814,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,Tucson,,234230,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,Santa Cruz(Tucson O/B),,25499,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,Nexo,FCEV,5,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,IONIQ 5,BEV,47023,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,IONIQ 5 Robo Taxi,BEV,16,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,IONIQ 9,BEV,5189,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,Santa Fe,,142404,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+hyundai,US,country,,2025,2025-01..2025-12,Palisade,,123929,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+genesis,US,country,,2025,2025-01..2025-12,GV60,,1873,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+genesis,US,country,,2025,2025-01..2025-12,GV70,,33876,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+genesis,US,country,,2025,2025-01..2025-12,GV70 EV,BEV,1919,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx
+genesis,US,country,,2025,2025-01..2025-12,GV80,,27673,brand_total_sales,hyundai_ir_sales_results,hyundai_2025_us_retail_sales.xlsx

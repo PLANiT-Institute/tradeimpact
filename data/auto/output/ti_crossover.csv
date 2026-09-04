@@ -2936,37 +2936,147 @@ EU27,kia,SK,STONIC,HEV,S3,8,-23515.1655,,,crossover before sale year (product al
 EU27,kia,SK,STONIC,ICE,S3,918,-23181.5721,,,crossover before sale year (product already above benchmark at t=0)
 EU27,kia,SK,XCEED,HEV,S3,4,-23792.6362,,,crossover before sale year (product already above benchmark at t=0)
 EU27,kia,SK,XCEED,ICE,S3,764,-26278.635,,,crossover before sale year (product already above benchmark at t=0)
-US,hyundai,US,Ioniq5 (NEa),BEV,S1,51567,30438.6764,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-US,hyundai,US,Santa-Fe (MX5a HEV),HEV,S1,69151,10598.4724,28.767,2053.8,after lifetime
-US,hyundai,US,Santa-Fe (MX5a),ICE,S1,73035,-9351.2641,,,crossover before sale year (product already above benchmark at t=0)
-US,hyundai,US,Tucson (NX4a),ICE,S1,150328,-519.5673,4.939,2029.9,within lifetime
-US,hyundai,US,Tucson OB (NX4a OB),ICE,S1,27665,-519.5673,4.939,2029.9,within lifetime
-US,hyundai,US,Ioniq5 (NEa),BEV,S3,51567,21481.8787,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-US,hyundai,US,Santa-Fe (MX5a HEV),HEV,S3,69151,-7724.9897,3.029,2028.0,within lifetime
-US,hyundai,US,Santa-Fe (MX5a),ICE,S3,73035,-27674.7262,,,crossover before sale year (product already above benchmark at t=0)
-US,hyundai,US,Tucson (NX4a),ICE,S3,150328,-18843.0295,0.52,2025.5,within lifetime
-US,hyundai,US,Tucson OB (NX4a OB),ICE,S3,27665,-18843.0295,0.52,2025.5,within lifetime
+US,hyundai,US,Elantra,HEV,S1,14482,22508.8322,64.131,2088.1,after lifetime
+US,hyundai,US,Elantra,HEV,S1,15700,22508.8322,64.131,2089.1,after lifetime
+US,hyundai,US,Elantra,ICE,S1,122216,2468.4784,10.747,2034.7,within lifetime
+US,hyundai,US,Elantra,ICE,S1,132500,2294.2145,10.398,2035.4,within lifetime
+US,hyundai,US,IONIQ 5,BEV,S1,44351,32420.6632,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,IONIQ 5,BEV,S1,47023,30438.6764,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,IONIQ 6,BEV,S1,12264,34299.7969,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,IONIQ 6,BEV,S1,10478,34013.7602,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,Kona,BEV,S1,4156,33757.7535,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,Kona,BEV,S1,3784,33416.9119,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,Kona,ICE,S1,78016,2366.2436,10.542,2034.5,within lifetime
+US,hyundai,US,Kona,ICE,S1,71030,2245.4206,10.301,2035.3,within lifetime
+US,hyundai,US,Palisade,ICE,S1,110055,-12285.869,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Palisade,ICE,S1,123929,-12213.8399,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Santa Cruz(Tucson O/B),ICE,S1,32033,-9302.4702,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Santa Cruz(Tucson O/B),ICE,S1,25499,-8677.4435,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Santa Fe,HEV,S1,26177,10598.4724,28.767,2052.8,after lifetime
+US,hyundai,US,Santa Fe,HEV,S1,31322,10598.4724,28.767,2053.8,after lifetime
+US,hyundai,US,Santa Fe,ICE,S1,92833,-9495.3223,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Santa Fe,ICE,S1,111082,-9351.2641,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Sonata,HEV,S1,16345,20052.8723,55.612,2079.6,after lifetime
+US,hyundai,US,Sonata,HEV,S1,14165,20052.8723,55.612,2080.6,after lifetime
+US,hyundai,US,Sonata,ICE,S1,52998,1283.4836,8.399,2032.4,within lifetime
+US,hyundai,US,Sonata,ICE,S1,45929,2619.5072,11.051,2036.1,within lifetime
+US,hyundai,US,Tucson,HEV,S1,54137,12329.4942,33.119,2057.1,after lifetime
+US,hyundai,US,Tucson,HEV,S1,61519,12039.0543,32.374,2057.4,after lifetime
+US,hyundai,US,Tucson,ICE,S1,143556,-1314.2109,3.455,2027.5,within lifetime
+US,hyundai,US,Tucson,ICE,S1,163129,-519.5673,4.939,2029.9,within lifetime
+US,hyundai,US,Venue,ICE,S1,24607,5182.349,16.37,2040.4,after lifetime
+US,hyundai,US,Venue,ICE,S1,29805,5182.349,16.37,2041.4,after lifetime
+US,hyundai,US,Elantra,HEV,S3,14482,4185.3701,6.752,2030.8,within lifetime
+US,hyundai,US,Elantra,HEV,S3,15700,4185.3701,6.752,2031.8,within lifetime
+US,hyundai,US,Elantra,ICE,S3,122216,-15854.9837,1.132,2025.1,within lifetime
+US,hyundai,US,Elantra,ICE,S3,132500,-16029.2476,1.095,2026.1,within lifetime
+US,hyundai,US,IONIQ 5,BEV,S3,44351,22356.0301,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,IONIQ 5,BEV,S3,47023,21481.8787,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,IONIQ 6,BEV,S3,12264,23184.8183,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,IONIQ 6,BEV,S3,10478,23058.6623,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,Kona,BEV,S3,4156,22945.7511,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,Kona,BEV,S3,3784,22795.4236,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,hyundai,US,Kona,ICE,S3,78016,-15957.2185,1.11,2025.1,within lifetime
+US,hyundai,US,Kona,ICE,S3,71030,-16078.0415,1.085,2026.1,within lifetime
+US,hyundai,US,Palisade,ICE,S3,110055,-30609.3311,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Palisade,ICE,S3,123929,-30537.302,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Santa Cruz(Tucson O/B),ICE,S3,32033,-27625.9323,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Santa Cruz(Tucson O/B),ICE,S3,25499,-27000.9056,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Santa Fe,HEV,S3,26177,-7724.9897,3.029,2027.0,within lifetime
+US,hyundai,US,Santa Fe,HEV,S3,31322,-7724.9897,3.029,2028.0,within lifetime
+US,hyundai,US,Santa Fe,ICE,S3,92833,-27818.7844,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Santa Fe,ICE,S3,111082,-27674.7262,,,crossover before sale year (product already above benchmark at t=0)
+US,hyundai,US,Sonata,HEV,S3,16345,1729.4102,5.855,2029.9,within lifetime
+US,hyundai,US,Sonata,HEV,S3,14165,1729.4102,5.855,2030.9,within lifetime
+US,hyundai,US,Sonata,ICE,S3,52998,-17039.9785,0.884,2024.9,within lifetime
+US,hyundai,US,Sonata,ICE,S3,45929,-15703.9549,1.164,2026.2,within lifetime
+US,hyundai,US,Tucson,HEV,S3,54137,-5993.9679,3.487,2027.5,within lifetime
+US,hyundai,US,Tucson,HEV,S3,61519,-6284.4078,3.409,2028.4,within lifetime
+US,hyundai,US,Tucson,ICE,S3,143556,-19637.6731,0.364,2024.4,within lifetime
+US,hyundai,US,Tucson,ICE,S3,163129,-18843.0295,0.52,2025.5,within lifetime
+US,hyundai,US,Venue,ICE,S3,24607,-13141.1132,1.724,2025.7,within lifetime
+US,hyundai,US,Venue,ICE,S3,29805,-13141.1132,1.724,2026.7,within lifetime
+US,kia,US,Carnival,ICE,S1,49726,-11709.6362,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Carnival,ICE,S1,71917,-14307.3307,,,crossover before sale year (product already above benchmark at t=0)
 US,kia,US,Carnival,ICE,S1,40068,-14307.3307,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,EV6,BEV,S1,21715,31796.0371,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,EV6,BEV,S1,12933,31765.2562,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
 US,kia,US,EV6,BEV,S1,4043,31765.2562,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,EV9,BEV,S1,22017,28652.6361,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,EV9,BEV,S1,15051,28652.6361,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
 US,kia,US,EV9,BEV,S1,7035,28652.6361,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
 US,kia,US,K4,ICE,S1,73579,6771.6361,19.834,2045.8,after lifetime
+US,kia,US,K4/Forte,ICE,S1,139778,6771.6361,19.834,2043.8,after lifetime
+US,kia,US,K4/Forte,ICE,S1,140514,6771.6361,19.834,2044.8,after lifetime
+US,kia,US,K5,ICE,S1,46311,1910.8338,9.635,2033.6,within lifetime
+US,kia,US,K5,ICE,S1,72751,1427.5418,8.681,2033.7,within lifetime
 US,kia,US,K5,ICE,S1,38394,1427.5418,8.681,2034.7,within lifetime
-US,kia,US,Niro,HEV,S1,12114,22074.3341,62.563,2088.6,after lifetime
+US,kia,US,Niro,BEV,S1,12376,33667.6632,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,Niro,BEV,S1,12824,33201.4459,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,Niro,HEV,S1,14532,22074.3341,62.563,2086.6,after lifetime
+US,kia,US,Niro,HEV,S1,15057,22074.3341,62.563,2087.6,after lifetime
+US,kia,US,Niro,HEV,S1,9936,22074.3341,62.563,2088.6,after lifetime
 US,kia,US,Niro EV,BEV,S1,1653,33201.4459,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,Seltos,ICE,S1,59958,1957.3042,9.727,2033.7,within lifetime
+US,kia,US,Seltos,ICE,S1,56798,1622.7174,9.065,2034.1,within lifetime
 US,kia,US,Seltos,ICE,S1,32504,1622.7174,9.065,2035.1,within lifetime
-US,kia,US,Sorento,ICE,S1,49348,-5752.1328,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Sorento,HEV,S1,8096,10812.2362,29.293,2053.3,after lifetime
+US,kia,US,Sorento,HEV,S1,8063,10452.0907,28.408,2053.4,after lifetime
+US,kia,US,Sorento,HEV,S1,4199,10452.0907,28.408,2054.4,after lifetime
+US,kia,US,Sorento,ICE,S1,85375,-5752.1328,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Sorento,ICE,S1,85032,-5752.1328,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Sorento,ICE,S1,44276,-5752.1328,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Soul,ICE,S1,52397,4678.1453,15.298,2039.3,after lifetime
+US,kia,US,Soul,ICE,S1,50133,4678.1453,15.298,2040.3,after lifetime
 US,kia,US,Soul,ICE,S1,3480,4678.1453,15.298,2041.3,after lifetime
-US,kia,US,Sportage,ICE,S1,94907,-1988.0315,2.216,2028.2,within lifetime
+US,kia,US,Sportage,HEV,S1,23066,15361.6869,41.292,2065.3,after lifetime
+US,kia,US,Sportage,HEV,S1,26044,15361.6869,41.292,2066.3,after lifetime
+US,kia,US,Sportage,HEV,S1,13520,15361.6869,41.292,2067.3,after lifetime
+US,kia,US,Sportage,ICE,S1,129458,-1988.0315,2.216,2026.2,within lifetime
+US,kia,US,Sportage,ICE,S1,146173,-1988.0315,2.216,2027.2,within lifetime
+US,kia,US,Sportage,ICE,S1,75882,-1988.0315,2.216,2028.2,within lifetime
+US,kia,US,Telluride,ICE,S1,115504,-13442.9816,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Telluride,ICE,S1,123281,-13442.9816,,,crossover before sale year (product already above benchmark at t=0)
 US,kia,US,Telluride,ICE,S1,73602,-13442.9816,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Carnival,ICE,S3,49726,-30033.0983,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Carnival,ICE,S3,71917,-32630.7928,,,crossover before sale year (product already above benchmark at t=0)
 US,kia,US,Carnival,ICE,S3,40068,-32630.7928,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,EV6,BEV,S3,21715,22080.5399,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,EV6,BEV,S3,12933,22066.9641,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
 US,kia,US,EV6,BEV,S3,4043,22066.9641,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,EV9,BEV,S3,22017,20694.1491,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,EV9,BEV,S3,15051,20694.1491,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
 US,kia,US,EV9,BEV,S3,7035,20694.1491,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
 US,kia,US,K4,ICE,S3,73579,-11551.826,2.088,2028.1,within lifetime
+US,kia,US,K4/Forte,ICE,S3,139778,-11551.826,2.088,2026.1,within lifetime
+US,kia,US,K4/Forte,ICE,S3,140514,-11551.826,2.088,2027.1,within lifetime
+US,kia,US,K5,ICE,S3,46311,-16412.6283,1.014,2025.0,within lifetime
+US,kia,US,K5,ICE,S3,72751,-16895.9203,0.914,2025.9,within lifetime
 US,kia,US,K5,ICE,S3,38394,-16895.9203,0.914,2026.9,within lifetime
-US,kia,US,Niro,HEV,S3,12114,3750.872,6.587,2032.6,within lifetime
+US,kia,US,Niro,BEV,S3,12376,22906.017,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,Niro,BEV,S3,12824,22700.3927,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,Niro,HEV,S3,14532,3750.872,6.587,2030.6,within lifetime
+US,kia,US,Niro,HEV,S3,15057,3750.872,6.587,2031.6,within lifetime
+US,kia,US,Niro,HEV,S3,9936,3750.872,6.587,2032.6,within lifetime
 US,kia,US,Niro EV,BEV,S3,1653,22700.3927,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+US,kia,US,Seltos,ICE,S3,59958,-16366.1579,1.024,2025.0,within lifetime
+US,kia,US,Seltos,ICE,S3,56798,-16700.7447,0.954,2026.0,within lifetime
 US,kia,US,Seltos,ICE,S3,32504,-16700.7447,0.954,2027.0,within lifetime
-US,kia,US,Sorento,ICE,S3,49348,-24075.5949,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Sorento,HEV,S3,8096,-7511.226,3.084,2027.1,within lifetime
+US,kia,US,Sorento,HEV,S3,8063,-7871.3715,2.991,2028.0,within lifetime
+US,kia,US,Sorento,HEV,S3,4199,-7871.3715,2.991,2029.0,within lifetime
+US,kia,US,Sorento,ICE,S3,85375,-24075.5949,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Sorento,ICE,S3,85032,-24075.5949,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Sorento,ICE,S3,44276,-24075.5949,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Soul,ICE,S3,52397,-13645.3169,1.611,2025.6,within lifetime
+US,kia,US,Soul,ICE,S3,50133,-13645.3169,1.611,2026.6,within lifetime
 US,kia,US,Soul,ICE,S3,3480,-13645.3169,1.611,2027.6,within lifetime
-US,kia,US,Sportage,ICE,S3,94907,-20311.4937,0.233,2026.2,within lifetime
+US,kia,US,Sportage,HEV,S3,23066,-2961.7752,4.348,2028.3,within lifetime
+US,kia,US,Sportage,HEV,S3,26044,-2961.7752,4.348,2029.3,within lifetime
+US,kia,US,Sportage,HEV,S3,13520,-2961.7752,4.348,2030.3,within lifetime
+US,kia,US,Sportage,ICE,S3,129458,-20311.4937,0.233,2024.2,within lifetime
+US,kia,US,Sportage,ICE,S3,146173,-20311.4937,0.233,2025.2,within lifetime
+US,kia,US,Sportage,ICE,S3,75882,-20311.4937,0.233,2026.2,within lifetime
+US,kia,US,Telluride,ICE,S3,115504,-31766.4437,,,crossover before sale year (product already above benchmark at t=0)
+US,kia,US,Telluride,ICE,S3,123281,-31766.4437,,,crossover before sale year (product already above benchmark at t=0)
 US,kia,US,Telluride,ICE,S3,73602,-31766.4437,,,crossover before sale year (product already above benchmark at t=0)

@@ -1,0 +1,147 @@
+company,destination,destination_level,origin,cohort_year,period,model,powertrain,units,basis,source_id,source_file
+hyundai,KR,country,KR,2024,2024-01..2024-12,Avante (CN7),ICE,50188,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Avante (CN7 HEV),HEV,5605,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Avante (CN7 N),ICE,1097,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Sonata (LF),ICE,30,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Sonata (DN8),ICE,29378,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Sonata (DN8 HEV),HEV,9903,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Grandeur (GN7),ICE,33387,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Grandeur (GN7 HEV),HEV,38269,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,IONIQ 6 (CE),BEV,4957,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,KR,country,KR,2024,2024-01..2024-12,G70 (IK),ICE,2181,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,KR,country,KR,2024,2024-01..2024-12,G70 S/B (IK S/B),ICE,180,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,KR,country,KR,2024,2024-01..2024-12,G80 (RG3),ICE,45373,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,KR,country,KR,2024,2024-01..2024-12,G80 (RG3 EV),BEV,481,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,KR,country,KR,2024,2024-01..2024-12,G90 (RS4),ICE,8031,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Casper (AX),ICE,33917,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Casper (AX EV),BEV,7871,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Venue (QX),ICE,4645,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Kona (SX2),ICE,17592,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Kona (SX2 HEV),HEV,7863,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Kona (SX2 EV),BEV,3004,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Tucson (NX4),ICE,26677,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Tucson (NX4 HEV),HEV,28580,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,NEXO (FE),FCEV,2751,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,IONIQ 5 (NE),BEV,13862,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,IONIQ 5 N (NE N),BEV,351,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Santa-Fe (TM),ICE,2,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Santa-Fe (MX5),ICE,21312,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Santa-Fe (MX5 HEV),HEV,55847,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,Palisade (LX2),ICE,20967,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,KR,country,KR,2024,2024-01..2024-12,GV60 (JW),ICE,590,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,KR,country,KR,2024,2024-01..2024-12,GV70 (JK),ICE,33983,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,KR,country,KR,2024,2024-01..2024-12,GV70 (JK EV),BEV,486,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,KR,country,KR,2024,2024-01..2024-12,GV80 (JX),ICE,36253,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,KR,country,KR,2024,2024-01..2024-12,GV80 Coupe (JX Coupe),ICE,3116,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Avante (CN7),ICE,190548,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Avante (CN7 HEV),HEV,33116,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Avante (CN7 N),ICE,7405,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,i30 (PD),ICE,67,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Sonata (DN8),ICE,72670,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Sonata (DN8 HEV),HEV,22869,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Grandeur (GN7),ICE,3528,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Grandeur (GN7 HEV),HEV,418,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,IONIQ 6 (CE),BEV,22977,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,export,unknown,KR,2024,2024-01..2024-12,G70 (IK),ICE,13781,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,export,unknown,KR,2024,2024-01..2024-12,G70 S/B (IK S/B),ICE,121,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,export,unknown,KR,2024,2024-01..2024-12,G80 (RG3),ICE,6904,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,export,unknown,KR,2024,2024-01..2024-12,G80 (RG3 EV),BEV,286,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,export,unknown,KR,2024,2024-01..2024-12,G90 (RS4),ICE,2080,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Casper (AX),ICE,2,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Casper EV (AX EV),BEV,8657,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Venue (QX),ICE,57246,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Kona (OS EV),BEV,40,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Kona (SX2),ICE,136797,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Kona (SX2 HEV),HEV,70353,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Kona (SX2 EV),BEV,15102,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Tucson (NX4),ICE,47588,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Tucson (NX4 HEV),HEV,93547,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Tucson (NX4 PHEV),PHEV,10036,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,NEXO (FE),FCEV,23,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,IONIQ 5 (NE),BEV,68227,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,IONIQ 5 N (NE N),BEV,6376,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,IONIQ New Car (ME),ICE,8,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Santa-Fe (MX5),ICE,17080,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Santa-Fe (MX5 HEV),HEV,18463,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Santa-Fe (MX5 PHEV),PHEV,5760,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,Palisade (LX2),ICE,143079,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,export,unknown,KR,2024,2024-01..2024-12,GV60 (JW),ICE,3696,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,export,unknown,KR,2024,2024-01..2024-12,GV70 (JK),ICE,18183,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,export,unknown,KR,2024,2024-01..2024-12,GV70 EV (JK EV),BEV,1008,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,export,unknown,KR,2024,2024-01..2024-12,GV80 (JX),ICE,25314,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+genesis,export,unknown,KR,2024,2024-01..2024-12,GV80 Coupe (JX Coupe),ICE,3343,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Avante (CN7),ICE,62854,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Avante (CN7 HEV),HEV,14782,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Avante (CN7 N),ICE,1699,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Sonata (DN8),ICE,26681,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Sonata (DN8 HEV),HEV,9289,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Grandeur (GN7),ICE,32602,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Grandeur (GN7 HEV),HEV,39173,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,IONIQ 6 (CE),BEV,4979,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,IONIQ 6 N (CE N),BEV,102,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,KR,country,KR,2025,2025-01..2025-12,G70 (IK),ICE,1775,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,KR,country,KR,2025,2025-01..2025-12,G70 S/B (IK S/B),ICE,98,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,KR,country,KR,2025,2025-01..2025-12,G80 (RG3),ICE,40164,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,KR,country,KR,2025,2025-01..2025-12,G80 (RG3 EV),BEV,1127,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,KR,country,KR,2025,2025-01..2025-12,G90 (RS4),ICE,7347,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Casper (AX),ICE,9750,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Casper (AX EV),BEV,8519,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Venue (QX),ICE,12165,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Kona (SX2),ICE,20274,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Kona (SX2 HEV),HEV,8387,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Kona (SX2 EV),BEV,4077,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Tucson (NX4),ICE,28980,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Tucson (NX4 HEV),HEV,24921,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,NEXO (FE),FCEV,675,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,NEXO  (NH2),FCEV,5003,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,IONIQ 5 (NE),BEV,13914,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,IONIQ 5 N (NE N),BEV,297,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,IONIQ 9 (ME EV),BEV,8227,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Santa-Fe (MX5),ICE,14827,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Santa-Fe (MX5 HEV),HEV,43062,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Palisade (LX2),ICE,1403,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Palisade (LX3),ICE,21394,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,Palisade (LX3 HEV),HEV,38112,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,KR,country,KR,2025,2025-01..2025-12,GV60 (JW EV),BEV,778,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,KR,country,KR,2025,2025-01..2025-12,GV70 (JK),ICE,33568,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,KR,country,KR,2025,2025-01..2025-12,GV70 (JK EV),BEV,1142,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,KR,country,KR,2025,2025-01..2025-12,GV80 (JX),ICE,30797,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,KR,country,KR,2025,2025-01..2025-12,GV80 Coupe (JX Coupe),ICE,1599,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Avante (CN7),ICE,137678,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Avante (CN7 HEV),HEV,42840,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Avante (CN7 N),ICE,8936,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Sonata (DN8),ICE,63014,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Sonata (DN8 HEV),HEV,24148,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Grandeur (GN7),ICE,2526,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Grandeur (GN7 HEV),HEV,46,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,IONIQ 6 (CE),BEV,14263,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,IONIQ 6 N (CE EV N),BEV,42,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,export,unknown,KR,2025,2025-01..2025-12,G70 (IK),ICE,11261,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,export,unknown,KR,2025,2025-01..2025-12,G70 S/B (IK S/B),ICE,45,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,export,unknown,KR,2025,2025-01..2025-12,G80 (RG3),ICE,7870,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,export,unknown,KR,2025,2025-01..2025-12,G80 (RG3 EV),BEV,96,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,export,unknown,KR,2025,2025-01..2025-12,G90 (RS4),ICE,1987,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Casper EV (AX EV),BEV,43247,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Venue (QX),ICE,69988,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Kona (SX2),ICE,149989,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Kona (SX2 HEV),HEV,79825,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Kona (SX2 EV),BEV,7419,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Tucson (NX4),ICE,35108,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Tucson (NX4 HEV),HEV,103435,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Tucson (NX4 PHEV),PHEV,6968,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,NEXO (FE),FCEV,15,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,NEXO (NH2),FCEV,16,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,IONIQ 5 (NE),BEV,29292,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,IONIQ 5 N (NE N),BEV,2221,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,IONIQ 9 (ME),BEV,8479,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Santa-Fe (MX5),ICE,5091,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Santa-Fe (MX5 HEV),HEV,23731,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Santa-Fe (MX5 PHEV),PHEV,9248,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Palisade (LX2),ICE,47367,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Palisade (LX3),ICE,73574,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,Palisade (LX3 HEV),HEV,28034,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,export,unknown,KR,2025,2025-01..2025-12,GV60 (JW),ICE,1859,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,export,unknown,KR,2025,2025-01..2025-12,GV70 (JK),ICE,20991,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,export,unknown,KR,2025,2025-01..2025-12,GV70 EV (JK EV),BEV,839,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,export,unknown,KR,2025,2025-01..2025-12,GV80 (JX),ICE,28483,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+genesis,export,unknown,KR,2025,2025-01..2025-12,GV80 Coupe (JX Coupe),ICE,4961,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
