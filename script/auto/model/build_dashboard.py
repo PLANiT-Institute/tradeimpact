@@ -38,6 +38,8 @@ OUT = REPO / "data" / "auto" / "database" / "dashboard.html"
 SERVE_PORT = 8765
 SERVE_CMD = ".venv/bin/python script/auto/serve_dashboard.py"
 SERVE_URL = f"then open http://127.0.0.1:{SERVE_PORT}/{OUT.parent.name}/{OUT.name}"
+#: Where a page opened from disk looks for a running server before offering the reader.
+SERVED_DB = f"http://127.0.0.1:{SERVE_PORT}/{OUT.parent.name}/{DB.name}"
 
 #: sql.js pinned on cdnjs; ``locateFile`` resolves sql-wasm.wasm inside the same directory.
 SQLJS_VERSION = "1.10.3"
@@ -472,7 +474,9 @@ const CDN_DIR = '__SQLJS_DIR__';
 const SQLJS_VERSION = '__SQLJS_VERSION__';
 const DB_FILE = '__DB_FILE__';
 const SERVE_CMD = '__SERVE_CMD__';
+const SERVE_PORT = __SERVE_PORT__;
 const SERVE_URL = '__SERVE_URL__';
+const SERVED_DB = '__SERVED_DB__';
 const DEFAULT_PIVOT = __DEFAULT_PIVOT__;
 const YEARLY_PIVOT = __YEARLY_PIVOT__;
 const STAGES = __STAGES__;
@@ -1747,19 +1751,19 @@ function renderOpener() {
     '<input type="file" id="dbfile" accept=".sqlite,.db">' +
     '<span class="muted">or drag <span class="mono">' + esc(DB_FILE) +
     '</span> onto this box</span></div>';
-  const served = '<details><summary class="muted">Prefer it to open by itself?</summary>' +
-    '<p class="muted">Serve this folder once and the page loads the database on every ' +
-    'reload, no clicking:</p><pre class="sqlbox" tabindex="0">' + esc(SERVE_CMD) + '\n' +
-    esc(SERVE_URL) + '</pre></details>';
+  const served = '<p>Run this once and the page connects itself from then on - from the ' +
+    'server address, and from this file too, with no clicking:</p>' +
+    '<pre class="sqlbox" tabindex="0">' + esc(SERVE_CMD) + ' --open</pre>';
   document.getElementById('main').innerHTML =
     '<section class="card opener"><h2>Open the database</h2>' +
     (dbError && !onDisk ? errBox(dbError) : '') +
-    '<p>This page holds no data of its own. Choose <span class="mono">' + esc(DB_FILE) +
-    '</span> from this folder and everything - lineage, results, map, pivot, SQL - reads from ' +
-    'it. The file never leaves your machine.</p>' + picker +
-    (onDisk ? '<p class="muted">A page opened from disk cannot read a file beside it on its ' +
-      'own: that is the browser\'s rule, not a missing piece here.</p>' : '') +
-    served + '</section>';
+    '<p>This page holds no data of its own; it reads <span class="mono">' + esc(DB_FILE) +
+    '</span>.</p>' + (onDisk ? served : '') +
+    '<p class="muted">Or open the file yourself, once, right now - it never leaves your ' +
+    'machine:</p>' + picker +
+    (onDisk ? '<p class="muted">A page opened from disk may not read a file beside it on its ' +
+      'own. Every browser blocks that; the server above is the way around it.</p>' : '') +
+    '</section>';
 }
 
 /* ---------- routing and rendering ---------- */
@@ -2064,9 +2068,22 @@ function boot() {
   renderNav();
   renderOpener();
   if (location.protocol === 'file:') {
-    failOpen('This page was opened from the file system, where the browser blocks reading ' +
-      DB_FILE + ' next to it. Double-click open_dashboard.command in this folder (it starts ' +
-      'the local server and opens the connected page), or pick the database file below.');
+    /* A page opened from disk may not read the file beside it, but it may read the loopback
+       server if one is running - so try that before asking the reader for anything. */
+    setStatus('looking for a local server');
+    const stop = new AbortController();
+    const timer = setTimeout(() => stop.abort(), 2000);
+    fetch(SERVED_DB, {cache: 'no-store', signal: stop.signal})
+      .then((res) => {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.arrayBuffer();
+      })
+      .then((buf) => { clearTimeout(timer); return openBytes(buf, DB_FILE); })
+      .catch(() => {
+        clearTimeout(timer);
+        failOpen('This page was opened from the file system, where the browser blocks reading ' +
+          DB_FILE + ' next to it, and no local server answered on port ' + SERVE_PORT + '.');
+      });
     return;
   }
   setStatus('loading ' + DB_FILE);
@@ -2127,7 +2144,9 @@ def render() -> str:
         "__TOPOJSON_SRI__": TOPOJSON_SRI,
         "__DB_FILE__": DB.name,
         "__SERVE_CMD__": SERVE_CMD,
+        "__SERVE_PORT__": str(SERVE_PORT),
         "__SERVE_URL__": SERVE_URL,
+        "__SERVED_DB__": SERVED_DB,
         "__DEFAULT_PIVOT__": js(DEFAULT_PIVOT),
         "__YEARLY_PIVOT__": js(YEARLY_PIVOT),
         "__STAGES__": js(list(STAGES)),

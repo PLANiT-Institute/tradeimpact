@@ -29,6 +29,8 @@ ROOT = REPO / "data" / "auto"
 PAGE = "database/dashboard.html"
 HOST = "127.0.0.1"
 PORT = 8765
+#: Origins allowed to read this server: a page opened from disk, and the server itself.
+ALLOWED_ORIGINS = frozenset({"null", f"http://{HOST}:{PORT}", f"http://localhost:{PORT}"})
 
 
 class NoStoreHandler(SimpleHTTPRequestHandler):
@@ -51,9 +53,15 @@ class NoStoreHandler(SimpleHTTPRequestHandler):
     }
 
     def end_headers(self) -> None:
-        """Add the no-store headers before the header block is closed."""
+        """Add the no-store and loopback CORS headers before the header block is closed."""
         self.send_header("Cache-Control", "no-store, max-age=0")
         self.send_header("Pragma", "no-cache")
+        origin = self.headers.get("Origin")
+        if origin in ALLOWED_ORIGINS:
+            # A dashboard.html opened by double-click has the opaque origin "null" and cannot
+            # read the database beside it; letting that one origin read this loopback server
+            # is what makes the page connect itself with no click.
+            self.send_header("Access-Control-Allow-Origin", origin)
         super().end_headers()
 
     def log_message(self, format: str, *args: object) -> None:  # noqa: A002
@@ -100,7 +108,7 @@ def bind(handler: object, port: int) -> ThreadingHTTPServer:
         except OSError as exc:
             if exc.errno not in (errno.EADDRINUSE, errno.EACCES):
                 raise
-            print(f"port {candidate} is in use, trying {candidate + 1}")
+            print(f"port {candidate} is in use, trying {candidate + 1}", flush=True)
     raise SystemExit(f"no free port between {port} and {port + 9}")
 
 
@@ -121,8 +129,8 @@ def serve(port: int = PORT, open_browser: bool = False) -> None:
     handler = functools.partial(NoStoreHandler, directory=str(ROOT))
     with bind(handler, port) as httpd:
         port = httpd.server_address[1]
-        print(f"serving {ROOT.relative_to(REPO)} at http://{HOST}:{port}/{PAGE}")
-        print("Ctrl-C to stop")
+        print(f"serving {ROOT.relative_to(REPO)} at http://{HOST}:{port}/{PAGE}", flush=True)
+        print("Ctrl-C to stop", flush=True)
         if open_browser:
             threading.Timer(0.5, webbrowser.open, [f"http://{HOST}:{port}/{PAGE}"]).start()
         try:
