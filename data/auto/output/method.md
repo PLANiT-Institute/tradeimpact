@@ -259,13 +259,23 @@ which input is responsible; the single `tier` says how far the cell is from full
 
 ## Reading the dashboard
 
-`data/auto/database/dashboard.html` is a plain HTML file with no data of its own. Open it by
-double-clicking and choose `tradeimpact_auto.sqlite` from the same folder: a page opened from
-disk cannot read a file beside it on its own, which is the browser's rule, so one click stands
-in for it. Everything then works offline of any server, the map included, because the world
-geometry is a row in the database (`map_geometry`) rather than a second file. Serving the
-folder (`.venv/bin/python script/auto/serve_dashboard.py`) skips that click and reloads the
-database on every refresh; the server falls back to the next free port when one is busy.
+`data/auto/database/dashboard.html` is a plain HTML file with no data of its own; it reads
+`tradeimpact_auto.sqlite`. One command connects it and keeps it connected:
+
+```bash
+.venv/bin/python script/auto/serve_dashboard.py --open
+```
+
+That serves `data/auto` on 127.0.0.1:8765 (the next free port if one is busy) and opens the
+page already loaded. It also makes the file itself work: a `dashboard.html` opened by
+double-click has the opaque origin `null`, so the browser forbids it from reading the database
+beside it, but the server answers that one origin (`Access-Control-Allow-Origin: null`, no
+other site), and the page tries the server for two seconds before offering its file reader. So
+with the server running, double-clicking the HTML file also opens with data.
+
+Without any server the page offers its reader and one click on `tradeimpact_auto.sqlite` gives
+the whole dashboard, map included: the world geometry is a row in the database
+(`map_geometry`), not a second file, so nothing else has to be fetched.
 
 ## Run order
 

@@ -28,7 +28,8 @@ two that are not.
 | 2026-09-04 | India benchmark not built; recorded as `no_benchmark` with the reasons | Free inputs partial (>50 % proxies, S2 FLAG), no free model-level sales | Coverage group IN counted, not priced; unlock conditions listed in output/method.md |
 
 | 2026-09-04 | Tier flags on every value: A directly sourced / B estimated or derived / C proxy, per whitepaper §5.1, applied by rule at database build and declared per cell (Layer 1, Layer 2, worst) | Lead: every value must be flagged; the guideline names the tiers | `registry/tiers.csv`, `registry/value_tiers.csv`; `ti_by_model` tier columns; tests |
-| 2026-09-04 | Dashboard Map view; registry and deliverables moved into `data/auto/registry/`, `data/auto/database/`, `data/auto/dashboard/` | Lead: map-based view by country; no loose files under data/auto | `open_dashboard.command` launcher beside the page |
+| 2026-09-04 | Dashboard Map view; registry and deliverables moved into `data/auto/registry/`, `data/auto/database/`, `data/auto/dashboard/` | Lead: map-based view by country; no loose files under data/auto | map geometry stored in the database so the page needs one file only |
+| 2026-09-04 | No launcher script: `serve_dashboard.py --open` is the one command, and it answers the opaque `null` origin so a double-clicked dashboard.html connects itself while it runs | Lead: the page must get the file by default, without a launcher; browsers forbid a file:// page from reading a sibling file | Picker kept as the no-server fallback |
 
 ## Transitions
 
