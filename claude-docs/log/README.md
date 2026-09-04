@@ -76,3 +76,10 @@ premise and sends work back is the process working; the entry states the trigger
   VM-1 and OWID/Ember grid were obtained directly and registered with links and hashes.
 - **Deliverable (lead):** one SQLite holding raw, lookup, processed and output tables with
   stage, source and column types, and an HTML pivot dashboard over it.
+
+## 2026-09-04 — dashboard prototype
+
+- `script/auto/model/build_dashboard.py` embeds `tradeimpact_auto.sqlite` (gzip + base64) in
+  `data/auto/dashboard.html`: lineage raw → method → processed → output per data type with source
+  links, pivot table with generated SQL, browse, read-only SQL console. Opens from disk; sql.js
+  1.10.3 from cdnjs is the only network dependency. Added as the last `run_all.py` step.

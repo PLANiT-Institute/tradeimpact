@@ -40,10 +40,12 @@ chain fail-fast before any commit. Their absence is counted, not
 assumed away: the Kia and Hyundai IR tables are processed but cannot enter
 a country-level result as they stand (regions and plant-side sales respectively).
 
-Crossover years per cell and the lifetime, real-world and proxied-distance sensitivities now
-exist (`ti_crossover_eu27.csv`, `ti_sensitivity_eu27.csv`, both in the database). Built only
-when needed, and therefore still absent: an independent re-derivation of any figure, a P10/P50/P90
-treatment of the crossover (`B-07`), and any dashboard. The regression check against the archived
+Crossover years per cell and the lifetime, real-world and proxied-distance sensitivities exist
+(`ti_crossover_eu27.csv`, `ti_sensitivity_eu27.csv`, both in the database). The deliverable database
+(`data/auto/tradeimpact_auto.sqlite`, 40 tables: raw, lookup, processed, output, sources, raw-file
+provenance, tables manifest, column dictionary) and the pivot dashboard over it
+(`data/auto/dashboard.html`: lineage per data type, pivot, browse, read-only SQL) were built on
+2026-09-04. Still absent by design: a P10/P50/P90 treatment of the crossover (`B-07`). The regression check against the archived
 published baseline has run and passed (all 189 destination parameters exact; company × scenario
 totals within 2 × 10⁻⁷; crossover and lifetime sensitivities agree). Phase exit is blocked by the
 independent re-derivation and `B-03`, `B-04`, `B-07`.
@@ -85,7 +87,7 @@ phase has to avoid.
 | [ST10 aggregation](stages/st08-10-analysis.md) | PH1, PH3, PH4 | Run, EU27, four exporters; identity holds for all twelve company × scenario rows; guideline §5.3 data-quality declaration written (Toyota and Honda `directional_only`: tier-C unit share 53.6 % and 53.8 %); `tradeimpact_auto.sqlite` built | `ti_country_eu27.csv` (324), `ti_powertrain_eu27.csv` (36), `ti_company_eu27.csv` (12), `ti_data_quality_eu27.csv` (4), `tradeimpact_auto.sqlite` (24 tables) | `[compute]` |
 | [ST11 verification](stages/st11-verification.md) | all | Independent re-derivation of the Honda cohort done 2026-09-04 (engine reproduced to 6 × 10⁻⁷; three input defects found and fixed: distance year mismatch, real-world range, BEV crossover label); `tests/test_model.py` (5 checks) passes; archive remains the engine baseline, no longer the input baseline | `data/auto/output/method.md` §Verification, `tests/test_model.py` | `[verified-engine]` |
 | [ST12 methodology](stages/st12-15-outputs.md) | PH1, PH2, PH4, PH5 | Not started; three methodology documents in place as inputs | none | — |
-| [ST13 tool and dashboard](stages/st12-15-outputs.md) | PH3, PH5 | Not started; `B-08` open | none | — |
+| [ST13 tool and dashboard](stages/st12-15-outputs.md) | PH3, PH5 | Prototype built 2026-09-04: `build_dashboard.py` → `data/auto/dashboard.html` (embedded SQLite, sql.js from cdnjs); `B-08` (public release) open | `dashboard.html` (4.7 MB) | — |
 | [ST14 publication](stages/st12-15-outputs.md) | PH1, PH2, PH4, PH5 | Not started | none | — |
 | [ST15 sector onboarding](stages/st12-15-outputs.md) | PH3, PH4, PH5 | Not started | none | — |
 
