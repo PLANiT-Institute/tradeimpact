@@ -1,21 +1,21 @@
 """Download JADA's free Japan new-vehicle registration statistics (annual editions).
 
-Source of truth: 一般社団法人 日本自動車販売協会連合会 (Japan Automobile Dealers Association),
-統計データ. Each statistics page lists one workbook per period; the link labels carry the period,
-so this script reads the page and takes the annual (1月-12月) editions of the years asked for.
-The file ids in the URLs are opaque and change when a workbook is reissued, which is why the page
-is read rather than a URL constructed.
+Source of truth: Japan Automobile Dealers Association (JADA), statistics pages. Each page
+lists one workbook per period and the link labels carry the period, so this script reads the page
+and takes the annual (January to December) editions of the years asked for. The file ids in the
+URLs are opaque and change when a workbook is reissued, which is why the page is read rather
+than a URL constructed.
 
-    pages/340  ブランド通称名別ランキング   nameplate ranking, passenger cars, top 50
-               (kei cars and foreign brands excluded; Lexus is a brand of its own)
-    pages/342  燃料別登録台数              registrations by maker and fuel (petrol, HEV, PHEV,
-               diesel, BEV, FCEV, other); kei excluded; Lexus folded into Toyota
-    pages/337  ブランド別登録台数（確報）    registrations by brand with an 内輸入 column, the
-               units built outside Japan and sold in Japan
+    pages/340  nameplate ranking, passenger cars, top 50 (kei vehicles and foreign brands
+               excluded; Lexus is a brand of its own)
+    pages/342  registrations by maker and fuel (petrol, hybrid, plug-in hybrid, diesel,
+               battery-electric, fuel-cell, other); kei excluded; Lexus folded into Toyota
+    pages/337  registrations by brand, with a column for the units built outside Japan and sold
+               in Japan
 
-All three are registrations (market-side, ナンバーベース). JADA sells the back-series as paid
-books (pages/517), so republication of these rows is a licence question for the provenance
-audit; the files themselves are free to download.
+All three are registrations, so market-side and counted on number plates. JADA sells the back
+series as paid books (pages/517), so republication of these rows is a licence question for the
+provenance audit; the files themselves are free to download.
 
 Run from the repository root:
     .venv/bin/python script/auto/sales/fetch_jada.py 2024 2025
@@ -48,11 +48,12 @@ HEADERS = {
 }
 #: page id -> (file stem, what the workbook holds)
 PAGES = {
-    "340": ("jada_model_ranking", "ブランド通称名別ランキング: passenger-car nameplate ranking"),
-    "342": ("jada_fuel_by_maker", "燃料別登録台数: registrations by maker and fuel"),
-    "337": ("jada_brand_registrations", "ブランド別登録台数（確報）: registrations by brand"),
+    "340": ("jada_model_ranking", "passenger-car nameplate ranking"),
+    "342": ("jada_fuel_by_maker", "registrations by maker and fuel"),
+    "337": ("jada_brand_registrations", "registrations by brand, confirmed edition"),
 }
-#: An annual edition labels itself 1月-12月 (the tilde is written two different ways).
+#: An annual edition labels itself January to December in the page's own characters; the
+#: tilde between the two months is written two different ways.
 ANNUAL = re.compile(r"(20\d\d)年\s*1月\s*[~～-]\s*12月")
 LINK = re.compile(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', re.S)
 
@@ -91,11 +92,10 @@ def main() -> None:
     upsert_source(
         {
             "source_id": SOURCE_ID,
-            "publisher": (
-                "一般社団法人 日本自動車販売協会連合会 JADA (Japan Automobile Dealers Association)"
-            ),
+            "publisher": ("Japan Automobile Dealers Association (JADA)"),
             "title": (
-                "統計データ: new-vehicle registrations in Japan. Nameplate ranking (top 50, kei "
+                "Statistics data: new-vehicle registrations in Japan. Nameplate ranking "
+                "(top 50, kei "
                 "and foreign brands excluded), registrations by maker and fuel, and registrations "
                 "by brand with the imported share"
             ),

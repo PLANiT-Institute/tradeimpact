@@ -1,7 +1,8 @@
 """Step 3 — destination parameters and reference benchmarks for Korea, one per vehicle segment.
 
 Korea publishes emissions, stock, distance and vehicle age under the same four registration
-classes (승용, 승합, 화물, 특수), so a benchmark can be built for each one against exactly the
+classes (passenger car, bus, goods, special), so a benchmark can be built for each one
+against exactly the
 population it prices. That is what lets a Porter or a Bongo be measured against Korean goods
 vehicles instead of against cars.
 
@@ -65,7 +66,7 @@ OUT_PARAMS = OUT_DIR / "destination_parameters_kr.csv"
 OUT_REF = OUT_DIR / "reference_trajectories_kr.csv"
 
 MARKET = COUNTRY = "KR"
-#: The segments Korean statistics support, in reporting order. 특수 (special vehicles) is left
+#: The segments Korean statistics support, in reporting order. Special vehicles are left
 #: out: no company in scope sells them and they are 0.7 % of the road fleet.
 BUILT_SEGMENTS = (PASSENGER_CAR, FREIGHT, BUS)
 LIFETIME_MIN_Y, LIFETIME_MAX_Y = 10, 25
@@ -87,7 +88,8 @@ WARN_AGE_TIER = (
 )
 WARN_VKT_BREAK = (
     "VKT_SERIES_BREAK_2021: KOTSA per-vehicle distance shows an 11 % discontinuity in 2021 "
-    "(total row relabelled 평균 -> 계); the latest year is used and the S1 trend excludes "
+    "(the total row is relabelled from mean to sum); the latest year is used and the S1 "
+    "trend excludes "
     "2020-2021."
 )
 SOURCE_IDS = (

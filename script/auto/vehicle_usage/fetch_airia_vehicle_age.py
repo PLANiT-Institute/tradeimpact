@@ -1,17 +1,18 @@
-"""Download AIRIA's 平均車齢 and 平均使用年数 releases (Japanese fleet age and vehicle life).
+"""Download AIRIA's mean-vehicle-age and mean-years-of-use releases for Japan.
 
-Source of truth: 一般財団法人 自動車検査登録情報協会 AIRIA, わが国の自動車保有動向
+Source of truth: Automobile Inspection and Registration Information Association (AIRIA),
+Wagakuni no Jidosha Hoyu Doko / Vehicle Ownership Trends in Japan
 (https://www.airia.or.jp/publish/statistics/trend.html). Two of its annual releases carry what
 the benchmark needs, both as of 31 March of the stated year:
 
-    平均車齢     mean age of the vehicles on the road (car_age equivalent)
-    平均使用年数  mean years from first registration to deregistration — a published expected
-                 vehicle life, which is what the lifetime horizon needs and what neither the
-                 EU27 nor the Korean build can source directly
+    mean vehicle age     mean years since first registration of the vehicles on the road
+    mean years of use    mean years from first registration to deregistration — a published
+                         expected vehicle life, which neither the EU27 nor the Korean build
+                         can source directly
 
-Both exclude 軽自動車 (kei vehicles), which is the same population as the JADA registration
-statistics the Japanese cohorts are built from, so the life applies to the cohort without a
-kei correction. AIRIA asks that it be named as the source; the licence field records that.
+Both exclude kei vehicles, which is the same population as the JADA registration statistics the
+Japanese cohorts are built from, so the life applies to the cohort without a kei correction.
+AIRIA asks to be named as the source; the licence field records that.
 
 The URLs are minted per year and are not derivable from the year (2023 sits under a hashed
 directory, 2024 under a hashed filename, 2025 under a readable one), so they are read off the
@@ -42,8 +43,11 @@ PAGE = "https://www.airia.or.jp/publish/statistics/trend.html"
 BASE = "https://www.airia.or.jp/publish/file/"
 #: local name -> (remote file, what the release reports)
 FILES = {
-    "airia_mean_use_years_2025.pdf": ("shiyounensuu_2025.pdf", "平均使用年数 as of 2025-03-31"),
-    "airia_mean_age_2025.pdf": ("syarei_2025.pdf", "平均車齢 as of 2025-03-31"),
+    "airia_mean_use_years_2025.pdf": (
+        "shiyounensuu_2025.pdf",
+        "mean years of use as of 2025-03-31",
+    ),
+    "airia_mean_age_2025.pdf": ("syarei_2025.pdf", "mean vehicle age as of 2025-03-31"),
 }
 HEADERS = {"User-Agent": "Mozilla/5.0 (tradeimpact fetcher)"}
 
@@ -59,10 +63,13 @@ def main() -> None:
     upsert_source(
         {
             "source_id": SOURCE_ID,
-            "publisher": "一般財団法人 自動車検査登録情報協会 AIRIA",
+            "publisher": (
+                "Automobile Inspection and Registration Information Association (AIRIA), Japan"
+            ),
             "title": (
-                "わが国の自動車保有動向: 車種別の平均車齢推移表 and 車種別の平均使用年数推移表, "
-                "as of 31 March each year, excluding kei vehicles"
+                "Vehicle Ownership Trends in Japan: the mean-vehicle-age and "
+                "mean-years-of-use tables by vehicle type, as of 31 March each year, excluding "
+                "kei vehicles"
             ),
             "url": PAGE,
             "how_obtained": (
@@ -72,8 +79,8 @@ def main() -> None:
             ),
             "accessed_date": accessed,
             "license": (
-                "free to use with attribution; AIRIA requires 出所・出典 to name "
-                "一般財団法人自動車検査登録情報協会"
+                "free to use with attribution; AIRIA requires the source line to name the "
+                "Automobile Inspection and Registration Information Association"
             ),
             "used_by": "extract_airia_vehicle_age.py",
         }

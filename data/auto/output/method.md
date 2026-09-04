@@ -26,9 +26,9 @@ different test cycles and different national benchmarks.
 | `ti_country.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × destination × scenario: units, `ti_tco2e`, per-vehicle, direction |
 | `ti_powertrain.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × powertrain × scenario |
 | `ti_company.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × scenario: `status` (reported / excluded), covered/withheld units, total, per-vehicle, direction, decomposition identity check, exclusion reason |
-| `ti_global_coverage.csv` | 5e | `build_global_coverage.py` | company × cohort year: the company's own worldwide sales and what covers it, units priced and their share of worldwide, the markets and country count priced, units held and their share, and the brands inside the denominator that the cohorts hold apart |
+| `ti_global_coverage.csv` | 5e | `build_global_coverage.py` | company × cohort year: the company's own worldwide sales and what covers it, units assessed and their share of worldwide, the markets and country count assessed, units held and their share, and the brands inside the denominator that the cohorts hold apart |
 | `ti_source_reconciliation.csv` | 5d | `build_reconciliation.py` | company × destination × cohort year × source file: units, basis and which side of the market it counts, whether the cohort was built from it, the brands a group figure covers, and the like-for-like spread against the file used |
-| `ti_coverage.csv` | 5c | `build_coverage.py` | company × destination (every destination in the market-side sales files, worldwide) × cohort year × basis: `destination_group` (EU27, US, the company's home country KR or JP, IN, others), `home_country`, units, priced units, withheld units, status (`priced`, `withheld`, `no_benchmark`, `plant_side_only`, `region_unpriced`, `destination_unknown`), market — the coverage picture a reader filters countries from |
+| `ti_coverage.csv` | 5c | `build_coverage.py` | company × destination (every destination in the market-side sales files, worldwide) × cohort year × basis: `destination_group` (EU27, US, the company's home country KR or JP, IN, others), `home_country`, units, assessed units, withheld units, status (`assessed`, `withheld`, `no_benchmark`, `plant_side_only`, `region_unassessed`, `destination_unknown`), market — the coverage picture a reader filters countries from |
 | `ti_data_quality.csv` | 5b | `build_data_quality.py` | company × market × cohort year, including `countries` (the destination codes covered), `countries_covered`, `countries_withheld` and `covered_share` (the sales coverage): analysis level, benchmark method, sales basis, test cycles, covered/withheld units, tier-C unit share and the `directional_only` flag (guideline §5.3, threshold 50 %), central lifetime, scenarios reported and excluded, markets by distance tier, withheld reasons, coverage notes, warnings |
 
 `cohorts.csv` carries a `variant` column. `central` is the published cohort; every other value
@@ -39,6 +39,32 @@ reuses this join instead of repeating it.
 Sign convention: positive TI = the product emits less than the destination's committed
 benchmark over its lifetime (contribution); negative = lock-in liability. Unit: tCO2e over
 the operating lifetime, per-vehicle values in kgCO2e.
+
+## Language, and the one exception
+
+Everything the project writes is in English: every docstring, comment, note, derivation, column
+name, method document and output value. A source's own title is given in English — the
+publisher's own English name where it has one, otherwise a translation — and the URL, not the
+title, is what locates it.
+
+The exception is a string that has to match a source byte for byte: a spreadsheet column header,
+a sheet name, a vehicle-class label, a file name the portal serves, an API parameter the portal
+expects. Translating one of those would break the join, so they stay verbatim, and each is
+handled the same way in three places:
+
+- in code, they sit in a named constant or a dict key with a comment giving the English reading
+  (`COLUMNS`, `CLASSES`, `KEYWORDS`, `POWERTRAIN_WORDS`, `NAMEPLATE_HEADER`, and so on), never
+  inline in a sentence;
+- in a lookup table, the verbatim key sits beside an English column that reads it
+  (`jada_brands.csv` has `brand_en`, `jp_maker_map.csv` has `make_en`, `jp_segment_map.csv` has
+  `row_en`, `kr_model_map.csv` and `jp_model_names.csv` have `model_en`);
+- in an output table, the English name is the value and the source string travels beside it in
+  `source_label`, so `sales_jada_jp.csv` and `vehicle_technology_jp_mlit.csv` join in English
+  and still say what they were read from.
+
+`registry/raw_files.csv` keeps each file's original name as the source served it, which is
+provenance rather than prose, and `registry/sources.csv` gives every publisher and title in
+English.
 
 ## Verification
 
@@ -88,7 +114,7 @@ replacement of the central factor, never on top of it.
    from every company result with its unit count (`ti_withheld.csv`, reason
    "destination benchmark withheld"), the same treatment as PHEV/FCEV. The sensitivity step
    applies the same rule, so each dimension's central variant now equals the published total
-   (before the two-market generalisation the sensitivity still priced Luxembourg and its
+   (before the two-market generalisation the sensitivity still assessed Luxembourg and its
    central variant sat about 1 % above the headline).
 2. **Segment intensity ratio** — set to 1.0 (all-passenger-car fleet average) and disclosed;
    no sourced segment split exists for the EU27 in-use fleet. For crossover-heavy portfolios
@@ -199,31 +225,33 @@ all four, and that no market currently drops a scenario.
 
 ## Korea
 
-Korea is the home market of both companies in scope and the first destination priced on free,
+Korea is the home market of both companies in scope and the first destination assessed on free,
 keyless, machine-readable Korean official statistics (all data.go.kr and portal files carry
-licence 제한 없음).
+and every file carries no restriction on use).
 
 **Cohorts.** Hyundai: the IR "Unit Sales by Model" Korea domestic block for 2024 and 2025
 (`sales_hyundai_kr.csv`, `domestic_sales`), with the powertrain read from the trim code
-(CN7 HEV, SX2 EV, ...), so every Hyundai unit is priced on its stated powertrain; Genesis
+(CN7 HEV, SX2 EV, ...), so every Hyundai unit is assessed on its stated powertrain; Genesis
 nameplates carry `company = genesis` and are out of scope. Kia: the IR Jan–Jun 2026 release
 (`sales_kia_ir_2026.csv`, `retail_sales`, a half year); its labels do not split ICE from HEV, so
-Carnival, K5, K8, Seltos, Sorento and Sportage are priced as ICE centrally with an all-HEV bound
+Carnival, K5, K8, Seltos, Sorento and Sportage are assessed as ICE centrally with an all-HEV bound
 (`powertrain_rule = kr_unsplit_central_ice`, sensitivity `powertrain_mix`). Bongo, Bus, Tasman
-and military vehicles are outside the 승용 registration class and are withheld as out of scope
+and military vehicles are outside the passenger-car registration class and are measured
+against their own segment or withheld as out of scope
 (19,790 units); Nexo is withheld like every FCEV.
 
 **Technology.** KEA label fuel economy per trim (5-cycle corrected, `test_cycle = KR_5CYCLE`,
 real-world factor 1.0), converted to gCO2/km with EPA fuel carbon factors and to Wh/km for BEVs;
 trim means per model × powertrain (`vehicle_technology_kr_kea.csv`).
 
-**Benchmark.** Distance 11,963 km/yr (tier A: KOTSA inspection odometers over the MOLIT 승용
+**Benchmark.** Distance 11,963 km/yr (tier A: KOTSA inspection odometers over the MOLIT
+passenger-car
 stock, 2024). Fleet intensity 203 gCO2/km (2023, tier C: GIR road CO2 × the KOTSA passenger-car
 share, see country_emissions/method). Grid 415.5 gCO2/kWh (Ember 2024). Mean age 7.3 years from
 the MOLIT model-year distribution (tier C, biased low) gives an operating life of 11 years
 [10, 15] under the EU27 rule (1.5 × mean age, clamped). S1: GIR road CO2 nearly flat
-(−0.2 %/yr) and grid −2.2 %/yr; S2: the 2050 탄소중립 시나리오 (2021), transport A안
-98.1 → 2.8 MtCO2e (−10.5 %/yr) and power B안 269.6 → 20.7 (−7.7 %/yr).
+(−0.2 %/yr) and grid −2.2 %/yr; S2: the 2050 Carbon Neutrality Scenarios (2021), transport
+scenario A 98.1 → 2.8 MtCO2e (−10.5 %/yr) and power scenario B 269.6 → 20.7 (−7.7 %/yr).
 
 **Reading the result.** Because the observed Korean fleet trend is flat, S1 is a contribution
 for both companies (their label-basis product intensities sit below the 203 gCO2/km fleet
@@ -233,23 +261,29 @@ S1 by about ±30 % because the operating life is short and uncertain.
 
 ## Japan (added 2026-09-04)
 
-Japan is priced entirely on Japanese official statistics, with no licensed dataset and no
+Japan is assessed entirely on Japanese official statistics, with no licensed dataset and no
 cross-market transfer except one disclosed factor. It is also the market where the sources fit
 the method best: distance and stock come from one table at one date, the vehicle life is
 published rather than derived, and the emissions numerator is already split by vehicle type.
 
-**Cohorts.** JADA's 乗用車ブランド通称名別順位 (`sales_jada_jp.csv`), the annual 1月～12月 edition.
+**Cohorts.** JADA's passenger-car nameplate ranking (`sales_jada_jp.csv`), the annual
+January-to-December edition.
 Two properties of that source shape the coverage. It is a top-50 ranking, so a nameplate outside
 the top 50 is not in the cohort at all — which is why Toyota's coverage of its own registered
 volume is 99.0 % (2024) and 97.7 % (2025) while Nissan's is 57.4 % and 54.0 %: Nissan has only
-four nameplates in the top 50. And it excludes 軽自動車 and foreign brands by construction (its
+four nameplates in the top 50. And it excludes kei vehicles and foreign brands by
+construction (its
 own note), so no kei unit can enter a cohort, which matters for the benchmark below. JADA's
-ブランド通称名 sums every variant of one 車名 including units built abroad, so カローラ is the whole
-Corolla family and the certified value pooled against it must be too (`jp_labels.csv`).
+ranking sums every variant of one nameplate, including units built abroad, so Corolla is the
+whole Corolla family and the certified value pooled against it must be too (`jp_labels.csv`).
+Every nameplate enters the tables under its English name, with the string the source prints
+kept beside it in `source_label` (`jp_model_names.csv` is the one home for that mapping).
 
-**Technology.** MLIT 自動車燃費一覧, which publishes 1km走行におけるCO2排出量 in gCO2/km per
+**Technology.** The MLIT fuel-economy list, which publishes CO2 emissions per kilometre in
+gCO2/km per
 certified grade — the only market in the project where the product value needs no conversion from
-fuel economy at all. Two editions are read (令和7年3月 and 令和8年3月) because the publication lists
+fuel economy at all. Two editions are read (March 2025 and March 2026) because the
+publication lists
 only what is type-approved on its own date: a nameplate withdrawn during the cohort year is in the
 older edition and gone from the newer one, so the newest edition that carries a nameplate wins and
 the older one supplies only what the newer one dropped. A nameplate's value is the grade-weighted
@@ -265,14 +299,17 @@ restricted to the powertrains that nameplate offers and renormalised
 0.14 % battery-electric). A maker-wide share applied nameplate by nameplate is the weak link — the
 real hybrid share of a Corolla is higher than that of an Alphard — so every divided nameplate
 carries an `all_hev` variant that the sensitivity step prices (`ti_sensitivity.csv`, dimension
-`powertrain_mix`). A hybrid grade is identified by the Ｈ token in 主要燃費改善対策, cross-checked
-against 原動機 listing （内燃機関）plus a motor code; a 原動機 that lists two power sources without
-an Ｈ token stops the extractor.
+`powertrain_mix`). A hybrid grade is identified by the H code in the
+fuel-economy-improvement column, cross-checked against the engine column listing an
+internal-combustion engine plus a motor code; an engine cell that lists two power sources
+without an H code stops the extractor.
 
-**Benchmark.** 自動車燃料消費量調査 第１表 prints 走行キロ and １日１車当たり走行キロ on the same
-row, and the survey defines the second as vehicle-kilometres over surveyed vehicles times
+**Benchmark.** The Motor Vehicle Fuel Consumption Survey, Table 1, prints total
+vehicle-kilometres and kilometres per vehicle-day on the same row, and the survey defines the
+second as vehicle-kilometres over surveyed vehicles times
 *calendar* days. Annual distance per vehicle is therefore that figure times 365, and the vehicles
-behind a row are its 走行キロ divided by the same product. The implied fleet is what confirms the
+behind a row are its vehicle-kilometres divided by the same product. The implied fleet is what
+confirms the
 reading: 61.7 M cars and 15.0 M goods vehicles against the 62 M and 14.6 M AIRIA publishes, where
 a working-day reading would have overstated the car fleet by 47 %. Fiscal 2024 throughout, matched
 to the emissions year rather than taken as the latest observation (the survey has fiscal 2025, the
@@ -280,12 +317,14 @@ inventory does not).
 
 | Segment | Distance | Fleet intensity | Life | Numerator |
 |---|---|---|---|---|
-| passenger_car | 8,107 km/yr | 170.0 gCO2/km | 13 y [10, 16] | GIO/NIES 乗用車 84,972 kt |
-| freight | 11,918 km/yr | 394.2 gCO2/km | 16 y [13, 19] | GIO/NIES 貨物自動車 70,672 kt |
+| passenger_car | 8,107 km/yr | 170.0 gCO2/km | 13 y [10, 16] | GIO/NIES Passenger Vehicle 84,972 kt |
+| freight | 11,918 km/yr | 394.2 gCO2/km | 16 y [13, 19] | GIO/NIES Truck and Lorry 70,672 kt |
 
-The life is AIRIA's 平均使用年数 — 13.35 years for cars, 16.29 for goods vehicles — a published
+The life is AIRIA's mean years of use — 13.35 years for cars, 16.29 for goods vehicles — a
+published
 expected life, which neither the EU27 nor the Korean build can source and both have to derive from
-mean age. It is tier B rather than A only because AIRIA counts a 一時抹消登録 as an ending, making
+mean age. It is tier B rather than A only because AIRIA counts a temporary deregistration as
+an ending, making
 it a floor; it is bracketed ±3 years. Grid 483.4 gCO2/kWh (Ember 2024).
 
 **Buses are not built.** The distance survey separates diesel buses but bundles petrol buses into
@@ -295,8 +334,9 @@ numerator and the intensity would be biased high. The bus rows are published in
 
 **Four things are disclosed rather than smoothed over.**
 
-1. *No battery-electric unit is priced.* 自動車燃費一覧 is a fuel-consumption publication and
-   carries no 電力消費率, so a Japanese battery-electric nameplate has no certified value here.
+1. *No battery-electric unit is assessed.* The fuel-economy list is a fuel-consumption
+   publication and carries no electricity-consumption rating, so a Japanese battery-electric
+   nameplate has no certified value here.
    None of the cohort nameplates is battery-electric, so nothing is withheld on this ground — but
    the moment a BEV nameplate enters the top 50 it will be, and the bias runs against the company,
    since its cleanest product is the one that cannot be counted.
@@ -305,11 +345,13 @@ numerator and the intensity would be biased high. The bus rows are published in
    WLTC omits the Extra-High phase, so the true Japanese gap is likely larger and this factor
    understates real-world product emissions — which flatters the company.
 3. *The benchmark includes kei cars, the cohort cannot.* The fleet intensity is the whole national
-   fleet, 軽自動車 included, while the ranking excludes them. Kei cars are lower-emitting, so the
+   fleet, kei vehicles included, while the ranking excludes them. Kei cars are lower-emitting,
+   so the
    fleet average is harder for a registered car to beat than a registered-car-only average would
    be. The segment ratio stays 1.0, as in every other market.
-4. *Two nameplates are counted and left unpriced.* ＪＰＮ　ＴＡＸＩ (8,103 units in 2024) is an LPG
-   hybrid certified in the LPガス乗用車 workbook, which this build does not read; キックス (14,346
+4. *Two nameplates are counted and left unassessed.* The JPN Taxi (8,103 units in 2024) is an
+   LPG hybrid certified in the LPG passenger-car workbook, which this build does not read; the
+   Kicks (14,346
    in 2024, 9,595 in 2025) was withdrawn before either edition on hand. Both sit in
    `cohorts_withheld.csv` with those reasons.
 
@@ -335,12 +377,12 @@ are not free either: Hyundai Motor India and Kia India publish company totals, S
 model data, and Vahan's public report hides the model. India therefore stays `no_benchmark` in
 `ti_coverage.csv` with this reasoning in `sales/method/destination_notes.csv`; Hyundai's Indian
 plant-side domestic sales (571,878 in 2025) and Kia's Indian retail (156,523 in Jan–Jun 2026)
-are counted, not priced. What would change the verdict: the BTR1 CRT workbook (hand fetch), the
+are counted, not assessed. What would change the verdict: the BTR1 CRT workbook (hand fetch), the
 2020-21/2021-22 Year Book (hand fetch) and a Vahan maker-level active-stock export.
 
 ## Toyota and Nissan (EU27, added 2026-09-04)
 
-Both were priced from the EEA snapshots already on disk, so nothing new was acquired: the
+Both were assessed from the EEA snapshots already on disk, so nothing new was acquired: the
 registration dataset carries the volumes and the certified values on the same rows. Toyota
 covers 777,277 units (96.8 %) and Nissan 197,588 (99.8 %, the highest coverage of the four).
 
@@ -359,7 +401,7 @@ same powertrain label carries a quarter more carbon per kilometre.
 
 ## United States, Toyota and Nissan (added 2026-09-04)
 
-Both companies publish a US sales table by model, so both are priced on their own release rather
+Both companies publish a US sales table by model, so both are assessed on their own release rather
 than on an investor summary.
 
 **Toyota** prints models by division and, in a second table, model by powertrain. The two are an
@@ -375,7 +417,7 @@ all-light-duty fleet including pickups.
 
 **Nissan** prints models but no powertrain. It needs no assumption anyway: its US line-up in
 these years is combustion except the LEAF and the Ariya, which the EPA certification data
-confirms, so every nameplate is priced explicitly. Infiniti is held out as its own company.
+confirms, so every nameplate is assessed explicitly. Infiniti is held out as its own company.
 Result: 873,293 covered units in 2025 (100.0 %), S1 +1.36 MtCO₂e, S2 −9.65. Nissan also
 publishes the split of its US volumes into North American production and imports
 (`us_release_origin_split.csv`, 760,213 against 113,094 in 2025), which no other company in
@@ -404,13 +446,13 @@ data, and that is why the table records which brands each figure covers.
 
 ## Global coverage
 
-`ti_global_coverage.csv` answers how much of a company's worldwide sales the priced markets
-speak for. Two shares sit side by side: `priced_share_of_global`, the units carrying a result
+`ti_global_coverage.csv` answers how much of a company's worldwide sales the assessed markets
+speak for. Two shares sit side by side: `assessed_share_of_global`, the units carrying a result
 over the company's own worldwide figure, and `held_share_of_global`, every unit the project
-holds for those brands whether priced or not. The gap between them is sales acquired but not yet
+holds for those brands whether assessed or not. The gap between them is sales acquired but not yet
 priceable, which `ti_coverage.csv` lists destination by destination.
 
-| Company | Cohort | Worldwide | Priced | Held | Countries |
+| Company | Cohort | Worldwide | Assessed | Held | Countries |
 |---|---|---|---|---|---|
 | Toyota | 2024 | 10,159,336 | 26.8 % | 42.6 % | 27 |
 | Toyota | 2025 | 10,536,807 | 20.0 % | 35.4 % | 1 |
@@ -422,7 +464,7 @@ priceable, which `ti_coverage.csv` lists destination by destination.
 
 The 2025 rows are lower than the 2024 rows for one reason only: the EU27 cohort is a 2024
 registration year, so a 2025 row is the United States alone. Kia's held share is 100 % because
-its retail release covers every market it sells in, and 43.2 % of that is priced.
+its retail release covers every market it sells in, and 43.2 % of that is assessed.
 
 **Where each denominator comes from, and what it counts** (`global_sales_totals.csv`).
 
@@ -439,7 +481,7 @@ its retail release covers every market it sells in, and 43.2 % of that is priced
 
 **The brand boundary is stated, never assumed.** A group denominator covers brands the cohorts
 hold apart, so Lexus, Infiniti and Genesis units are counted in `held_units` and named in
-`brands_out_of_scope`. A priced share is therefore always the brand in scope measured against
+`brands_out_of_scope`. A assessed share is therefore always the brand in scope measured against
 the group total, which understates it: Toyota's 26.8 % would be higher against the Toyota brand
 alone, and the Lexus worldwide figure needed for that is on the workbook's own Lexus sheet.
 
@@ -459,11 +501,11 @@ year the policy itself sets, so the whole cohort lifetime sits inside the target
 | Market | S2 anchor | Transport pathway | Power pathway |
 |---|---|---|---|
 | EU27 | European Climate Law, 90 % below 1990 by 2040 | 13.51 %/yr | 8.56 %/yr |
-| Korea | 2050 탄소중립 시나리오 (2021), transport A안 / power B안 | 10.52 | 7.71 |
+| Korea | 2050 Carbon Neutrality Scenarios (2021), transport scenario A / power scenario B | 10.52 | 7.71 |
 | US | NDC communicated 2024-12-19, 61 % below 2005 by 2035 | 6.61 | 4.33 |
 
 Australia's table is built the same way (43 % below 2005 by 2030, pro-rata) but no Australian
-cohort is priced, so it produces no result.
+cohort is assessed, so it produces no result.
 
 The transport rate moves the benchmark; the power rate moves the grid a battery-electric car
 charges from, so its product emissions fall year by year (Korea S2: 0.4155 kgCO₂/kWh in 2024,
@@ -480,17 +522,17 @@ re-basing possible; it is deliberately not used. The project lead settled this o
 
 ## Vehicle segments, and why a benchmark is chosen per segment (2026-09-04)
 
-These companies do not only sell cars, so a result that priced everything against a car
+These companies do not only sell cars, so a result that assessed everything against a car
 benchmark would be wrong twice: it would leave trucks out, and it would measure the trucks it
 did keep against the wrong fleet. Every cohort row therefore carries a `segment`, and the
-benchmark it is priced against is the one built for that same population.
+benchmark it is assessed against is the one built for that same population.
 
 | Segment | What it is | Where it is used |
 |---|---|---|
-| `passenger_car` | cars: EU27 M1, Korea 승용, Japan 乗用車 | EU27, Korea, Japan |
+| `passenger_car` | cars: EU27 M1 and the Korean and Japanese passenger-car classes | EU27, Korea, Japan |
 | `light_duty` | cars and light trucks together | the United States |
-| `freight` | goods vehicles: Korea 화물, Japan 貨物自動車 | Korea, Japan |
-| `bus` | buses and minibuses: Korea 승합 | Korea |
+| `freight` | goods vehicles: the Korean goods class, the Japanese goods class | Korea, Japan |
+| `bus` | buses and minibuses: the Korean bus class | Korea |
 
 **Why the United States is one segment and not two.** The EPA inventory does publish passenger
 cars (295,400 ktCO₂ in 2023) and light-duty trucks (709,900) separately, so segment emissions
@@ -513,20 +555,22 @@ published under the same four registration classes:
 
 | Segment | Distance | Intensity | Lifetime |
 |---|---|---|---|
-| 승용 passenger car | 11,963 km/yr | 203.3 gCO₂/km | 11 y |
-| 화물 freight | 17,363 km/yr | 428.1 gCO₂/km | 13 y |
-| 승합 bus | 20,630 km/yr | 690.6 gCO₂/km | 14 y |
+| passenger car | 11,963 km/yr | 203.3 gCO₂/km | 11 y |
+| goods vehicle | 17,363 km/yr | 428.1 gCO₂/km | 13 y |
+| bus | 20,630 km/yr | 690.6 gCO₂/km | 14 y |
 
 That is what lets Hyundai's Porter class (111,373 units in 2024) be measured against Korean
 goods vehicles instead of against cars: S1 +3.13 MtCO₂e, S2 −0.12. Heavy trucks and coaches
 above 3.5 t are counted and withheld (26,864 units in 2024) because Korea's fuel-economy
 labelling scheme does not certify them, so no product intensity exists.
 
-**Japan carries two of the three.** Its inventory publishes 乗用車, バス and 貨物自動車
+**Japan carries two of the three.** Its inventory publishes passenger vehicles, buses and
+goods vehicles
 separately, so the numerator is there for all three, but the distance survey bundles petrol buses
 into the car and special-vehicle rows. A bus benchmark would then divide an all-bus numerator by a
 diesel-only denominator, so buses are not built and the reason is on the row (see *Japan* above).
-The two that are built are matched on both sides: 乗用車 against 乗用車, 貨物自動車 against 貨物車.
+The two that are built are matched on both sides, cars against cars and goods vehicles
+against goods vehicles.
 
 **Where a country publishes no split**, the rule is to fall back to the road-transport sector as
 a whole and to tier the value down to C, saying so on the row. No market needs that fallback

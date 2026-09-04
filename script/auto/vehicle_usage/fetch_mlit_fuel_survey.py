@@ -1,22 +1,23 @@
-"""Download Japan's 自動車燃料消費量調査 第１表 (vehicle-kilometres by fuel and vehicle type).
+"""Download Japan's Motor Vehicle Fuel Consumption Survey, Table 1 (vehicle-kilometres).
 
-Source of truth: 国土交通省 自動車燃料消費量調査 (Motor Vehicle Fuel Consumption Survey), published
-through e-Stat, survey code 00600370
-(https://www.e-stat.go.jp/stat-search/files?toukei=00600370). 第１表 燃料別・車種別 総括表 is the
-only table that carries all three quantities the benchmark needs in one place, per fuel x 業態
-(commercial or private) x 用途 (goods or passenger) x 車種:
+Source of truth: Ministry of Land, Infrastructure, Transport and Tourism (MLIT), Jidosha Nenryo
+Shohiryo Chosa / Motor Vehicle Fuel Consumption Survey, published through e-Stat under survey
+code 00600370 (https://www.e-stat.go.jp/stat-search/files?toukei=00600370). Table 1, the summary
+by fuel and vehicle type, is the only table that carries all three quantities the benchmark needs
+in one place, per fuel x operation (commercial or private) x use (goods or passenger) x vehicle
+type:
 
-    走行キロ（千km）          total vehicle-kilometres
-    １日１車当たり走行キロ      kilometres per vehicle per working day
-    稼働率（％）              working days as a share of calendar days
+    vehicle-kilometres            thousand km per fiscal year
+    kilometres per vehicle-day    km per vehicle per calendar day
+    working-day rate              working days as a share of calendar days
 
-so annual distance per vehicle is the product of the last two with 365, and the implied stock is
-the first divided by that — no separate registration series has to be joined to a distance series
-at a possibly different date. Fiscal years (April to March).
+so annual distance per vehicle is the second times 365, and the implied stock is the first
+divided by that — no separate registration series has to be joined to a distance series at a
+possibly different date. Fiscal years (April to March).
 
 One e-Stat quirk: a table is addressed by ``statInfId``, which is minted per release, so the id
 differs for every fiscal year and cannot be derived from the year. The ids below were read off
-the survey's own file list (the 年度次 links) and are pinned here with the year they belong to.
+the survey's own annual file list and are pinned here with the year they belong to.
 
 Run from the repository root:
     .venv/bin/python script/auto/vehicle_usage/fetch_mlit_fuel_survey.py
@@ -41,7 +42,7 @@ RAW = REPO / "data" / "auto" / "vehicle_usage" / "raw"
 SOURCE_ID = "mlit_fuel_consumption_survey"
 PAGE = "https://www.e-stat.go.jp/stat-search/files?toukei=00600370"
 DOWNLOAD = "https://www.e-stat.go.jp/stat-search/file-download?statInfId={stat_inf_id}&fileKind=4"
-#: fiscal year -> the e-Stat statInfId of that year's 第１表.
+#: fiscal year -> the e-Stat statInfId of that year's Table 1.
 TABLES = {
     2024: "000040284813",
     2025: "000040468862",
@@ -61,13 +62,14 @@ def main() -> None:
         {
             "source_id": SOURCE_ID,
             "publisher": (
-                "国土交通省 Ministry of Land, Infrastructure, Transport and Tourism, via e-Stat"
+                "Ministry of Land, Infrastructure, Transport and Tourism (MLIT), Japan, "
+                "via e-Stat"
             ),
             "title": (
-                "自動車燃料消費量調査 第１表 燃料別・車種別 総括表: fuel consumption, "
-                "vehicle-kilometres, kilometres per vehicle per working day and working-day rate "
-                "by fuel, commercial or private use, goods or passenger use and vehicle type, "
-                "fiscal years"
+                "Motor Vehicle Fuel Consumption Survey, Table 1 (summary by fuel and "
+                "vehicle type): fuel consumption, vehicle-kilometres, kilometres per vehicle-day "
+                "and the working-day rate, by fuel, commercial or private operation, goods or "
+                "passenger use and vehicle type, fiscal years"
             ),
             "url": PAGE,
             "how_obtained": (
@@ -78,8 +80,8 @@ def main() -> None:
             ),
             "accessed_date": accessed,
             "license": (
-                "government statistics; e-Stat terms of use (free use with attribution, "
-                "政府統計の総合窓口)"
+                "government statistics; e-Stat terms of use (free use with attribution; e-Stat "
+                "is the portal of official statistics of Japan)"
             ),
             "used_by": "extract_mlit_fuel_survey.py",
         }
@@ -99,7 +101,7 @@ def main() -> None:
             "vehicle_usage",
             dest,
             SOURCE_ID,
-            f"第１表 燃料別・車種別 総括表 (statInfId {stat_inf_id})",
+            f"Table 1, summary by fuel and vehicle type (statInfId {stat_inf_id})",
             f"fiscal {year} (April {year} to March {year + 1}); {status} {accessed} from {url}",
         )
         print(f"{status} {dest.name} {dest.stat().st_size:,} B {digest[:12]}")

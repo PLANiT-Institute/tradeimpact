@@ -12,7 +12,8 @@ Scenarios
                             goods vehicles, GIO/NIES sheet 3) and of grid intensity, 2015 onward
                             excluding 2020-2021, the same window as every other market.
     S2 committed policy     the target the cabinet adopted on 2025-02-18 as the GX 2040 Vision and
-                            the 地球温暖化対策計画, and communicated as Japan's NDC: 73 % below
+                            the Plan for Global Warming Countermeasures, and communicated
+                            as Japan's NDC: 73 % below
                             FY2013 by FY2040, "on a straight pathway towards the achievement of
                             net zero by 2050". Applied pro-rata: each series runs from its latest
                             observation to 27 % of its FY2013 level by 2040. The 2035 anchor
@@ -176,7 +177,8 @@ def main() -> None:
         level, value = "gx_2040_prorata", raw
         text = (
             f"Japan {reduction:.0%} below FY{base_year} by FY{target_year} (GX 2040 Vision and "
-            f"地球温暖化対策計画, cabinet decision 2025-02-18, communicated as Japan's NDC), "
+            "Plan for Global Warming Countermeasures, cabinet decision 2025-02-18, "
+            "communicated as Japan's NDC), "
             f"applied pro-rata to {what}: {series[latest_year]:,.1f} {unit} ({latest_year}) -> "
             f"{target:,.1f} {unit}, compound annual decline. Anchor verified: yes."
         )

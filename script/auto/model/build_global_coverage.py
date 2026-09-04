@@ -1,4 +1,4 @@
-"""Step 5e — how much of each company's worldwide sales the priced markets actually capture.
+"""Step 5e — how much of each company's worldwide sales the assessed markets actually capture.
 
 Inputs
     sales/processed/global_sales_totals.csv   the company's own worldwide figure for that year
@@ -9,12 +9,12 @@ Output
     output/ti_global_coverage.csv
 
     global_units            the company's worldwide sales, and the brands that figure covers
-    priced_units            units carrying a result, in the markets with a benchmark
-    priced_share_of_global  priced_units / global_units
-    held_units              every unit held for those brands, priced or not
+    assessed_units            units carrying a result, in the markets with a benchmark
+    assessed_share_of_global  assessed_units / global_units
+    held_units              every unit held for those brands, assessed or not
     held_share_of_global    held_units / global_units
 
-Read the two shares together. The priced share is what the result speaks for; the held share is
+Read the two shares together. The assessed share is what the result speaks for; the held share is
 how far the data reaches. The gap between them is the sales we have but cannot yet price, market
 by market, which ``ti_coverage.csv`` lists by destination.
 
@@ -48,10 +48,10 @@ FIELDS = [
     "global_derived",
     "brands_in_denominator",
     "brands_out_of_scope",
-    "priced_units",
-    "priced_share_of_global",
-    "priced_markets",
-    "priced_countries",
+    "assessed_units",
+    "assessed_share_of_global",
+    "assessed_markets",
+    "assessed_countries",
     "held_units",
     "held_share_of_global",
     "source_id",
@@ -82,14 +82,14 @@ def main() -> None:
         scenario = c["scenario"]
         if key not in first_scenario or scenario < first_scenario[key]:
             first_scenario[key] = scenario
-    priced: dict[tuple[str, int], int] = defaultdict(int)
+    assessed: dict[tuple[str, int], int] = defaultdict(int)
     markets: dict[tuple[str, int], set[str]] = defaultdict(set)
     countries: dict[tuple[str, int], set[str]] = defaultdict(set)
     for c in cells:
         key = (c["company"], int(c["cohort_year"]))
         if c["scenario"] != first_scenario[key]:
             continue
-        priced[key] += int(c["units"])
+        assessed[key] += int(c["units"])
         markets[key].add(c["market"])
         countries[key].add(c["destination"])
 
@@ -102,8 +102,8 @@ def main() -> None:
         total = int(g["units"])
         brands = [b for b in g["brands_covered"].split(";") if b]
         held_units = sum(held.get((brand, year), 0) for brand in brands)
-        priced_units = priced.get(key, 0)
-        if not priced_units and not held_units:
+        assessed_units = assessed.get(key, 0)
+        if not assessed_units and not held_units:
             continue
         rows.append(
             {
@@ -114,10 +114,10 @@ def main() -> None:
                 "global_derived": g["derived"],
                 "brands_in_denominator": g["brands_covered"],
                 "brands_out_of_scope": ";".join(b for b in brands if b not in in_scope),
-                "priced_units": priced_units,
-                "priced_share_of_global": round(priced_units / total, 6) if total else None,
-                "priced_markets": ";".join(sorted(markets.get(key, set()))),
-                "priced_countries": len(countries.get(key, set())),
+                "assessed_units": assessed_units,
+                "assessed_share_of_global": round(assessed_units / total, 6) if total else None,
+                "assessed_markets": ";".join(sorted(markets.get(key, set()))),
+                "assessed_countries": len(countries.get(key, set())),
                 "held_units": held_units,
                 "held_share_of_global": round(held_units / total, 6) if total else None,
                 "source_id": g["source_id"],
@@ -131,10 +131,10 @@ def main() -> None:
         writer.writerows(rows)
     for r in rows:
         print(
-            f"{r['company']} {r['cohort_year']}: priced "
-            f"{float(str(r['priced_share_of_global'])):.1%} of {int(str(r['global_units'])):,} "
+            f"{r['company']} {r['cohort_year']}: assessed "
+            f"{float(str(r['assessed_share_of_global'])):.1%} of {int(str(r['global_units'])):,} "
             f"worldwide, held {float(str(r['held_share_of_global'])):.1%} "
-            f"({r['priced_countries']} countries priced in {r['priced_markets']})"
+            f"({r['assessed_countries']} countries assessed in {r['assessed_markets']})"
         )
     print(f"{OUT.relative_to(REPO)}: {len(rows)} rows")
 

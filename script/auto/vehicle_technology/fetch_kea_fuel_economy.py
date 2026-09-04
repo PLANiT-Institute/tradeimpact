@@ -1,16 +1,22 @@
 """Download Korea's certified label fuel economy by model and trim (KEA) and the NIER fleet CO2
 table.
 
-Sources of truth (data.go.kr keyless file downloads, licence 제한 없음):
+Sources of truth (data.go.kr keyless file downloads, no restriction on use):
 
-    한국에너지공단 자동차 표시연비 정보  https://www.data.go.kr/data/15083023/fileData.do
-        One row per trim certified for sale: 모델명, 제조(수입사), 차종, 유형, 복합_연비 (km/L, or
-        km/kWh for BEV/PHEV in the same column), 1회충전주행거리 (km, BEV/PHEV only), 도심/고속도로
-        연비, 등급. The label value is 5-cycle corrected (Korea adopted the US 5-cycle method in
-        2012), so it is the sibling of the EPA label value, not of WLTP. No CO2 and no fuel column.
-    국립환경과학원 제작사별 연도별 판매자동차 온실가스 배출기준 및 실적  https://www.data.go.kr/data/15042041/fileData.do
+    Korea Energy Agency (KEA), Vehicle Label Fuel Economy Information
+    https://www.data.go.kr/data/15083023/fileData.do
+        One row per trim certified for sale, with the model name, the maker or importer, the
+        vehicle class, the body type, the combined fuel economy (km/L, or km/kWh for BEV and
+        PHEV in the same column), the single-charge range (km, BEV and PHEV only), the city and
+        highway values and the efficiency grade. The label value is 5-cycle corrected (Korea
+        adopted the US 5-cycle method in 2012), so it is the sibling of the EPA label value, not
+        of WLTP. No CO2 column and no fuel column.
+
+    National Institute of Environmental Research (NIER), Greenhouse Gas Emission Standards and
+    Performance of Vehicles Sold, by Manufacturer and Year
+    https://www.data.go.kr/data/15042041/fileData.do
         Per-manufacturer sales-weighted new-car CO2 (g/km, 2-cycle regulatory basis) and fuel
-        economy, standard vs achieved, 2012-2020. Context and cross-check only.
+        economy, standard against achieved, 2012-2020. Context and cross-check only.
 
 Run from the repository root:
     .venv/bin/python script/auto/vehicle_technology/fetch_kea_fuel_economy.py
@@ -40,19 +46,19 @@ FILES = {
         "file_id": "FILE_000000003644543",
         "source": {
             "source_id": "kea_fuel_economy_labels",
-            "publisher": "한국에너지공단 KEA (Korea Energy Agency), via data.go.kr",
+            "publisher": "Korea Energy Agency (KEA), via data.go.kr",
             "title": (
-                "자동차 표시연비 정보: certified label fuel economy by model and trim for "
-                "vehicles on sale "
-                "(km/L; km/kWh and range for BEV/PHEV), 5-cycle corrected, edition 2026-04-24"
+                "Vehicle Label Fuel Economy Information: certified label fuel economy by "
+                "model and trim for vehicles on sale (km/L; km/kWh and range for BEV and PHEV), "
+                "5-cycle corrected, edition 2026-04-24"
             ),
             "url": "https://www.data.go.kr/data/15083023/fileData.do",
-            "license": "공공데이터포털 이용허락범위 제한 없음 (KOGL type 1 equivalent)",
+            "license": ("public data portal, no restriction on use (equivalent to KOGL type 1)"),
             "used_by": "extract_kea_fuel_economy.py",
         },
         "note": (
-            "CSV UTF-8 BOM, 4,203 rows; 복합_연비 is km/L or km/kWh in one column (BEV/PHEV rows "
-            "carry 1회충전주행거리)"
+            "CSV UTF-8 BOM, 4,203 rows; the combined-fuel-economy column is km/L or km/kWh "
+            "in one column, and BEV and PHEV rows also carry a single-charge range"
         ),
     },
     "nier_manufacturer_fleet_co2_2012_2020.csv": {
@@ -60,18 +66,22 @@ FILES = {
         "source": {
             "source_id": "nier_manufacturer_fleet_co2",
             "publisher": (
-                "국립환경과학원 NIER (National Institute of Environmental Research), via data.go.kr"
+                "National Institute of Environmental Research (NIER), Korea, via data.go.kr"
             ),
             "title": (
-                "제작사별 연도별 판매자동차 온실가스 배출기준 및 실적: per-manufacturer "
-                "sales-weighted new-car CO2 "
-                "(g/km, 2-cycle regulatory basis) and fuel economy, standard vs achieved, 2012-2020"
+                "Greenhouse Gas Emission Standards and Performance of Vehicles Sold, by "
+                "Manufacturer and Year: per-manufacturer sales-weighted new-car CO2 (g/km, "
+                "2-cycle regulatory basis) and fuel economy, standard against achieved, "
+                "2012-2020"
             ),
             "url": "https://www.data.go.kr/data/15042041/fileData.do",
-            "license": "공공데이터포털 이용허락범위 제한 없음 (KOGL type 1 equivalent)",
+            "license": ("public data portal, no restriction on use (equivalent to KOGL type 1)"),
             "used_by": "method note cross-check only",
         },
-        "note": "CSV cp949; ends 2020; 실적(100) vs 실적(비율) are different bases",
+        "note": (
+            "CSV cp949; ends 2020; the two achievement columns (indexed to 100 and as a ratio) "
+            "are different bases"
+        ),
     },
 }
 

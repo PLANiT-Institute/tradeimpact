@@ -9,7 +9,7 @@ Input    sales/processed/sales_*.csv, sales/method/companies.csv
 Output   output/ti_source_reconciliation.csv
 
     basis_side          market (registrations, retail, brand total, domestic sales) or plant
-    used_by_cohort      yes where this file feeds the priced cohort for that market
+    used_by_cohort      yes where this file feeds the assessed cohort for that market
     spread_vs_used_pct  difference from the used file, market-side sources only; blank where the
                         bases are not comparable
 

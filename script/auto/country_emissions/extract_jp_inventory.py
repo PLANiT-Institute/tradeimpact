@@ -2,10 +2,10 @@
 
 Input   raw/gio_nies_inventory_co2_by_sector.xlsx, sheet ``3.Allocated_CO2-sector``
 Output  processed/country_emissions_jp.csv
-        co2_passenger_car   　乗用車 Passenger Vehicle, ktCO2, fiscal years
-        co2_bus             　バス Bus
-        co2_freight         貨物自動車/トラック Truck and Lorry
-        road_co2_passenger  自動車（旅客）Road Transportation, the parent of cars and buses
+        co2_passenger_car   row "Passenger Vehicle", ktCO2, fiscal years
+        co2_bus             row "Bus"
+        co2_freight         row "Truck and Lorry"
+        road_co2_passenger  row "Road Transportation", the parent of cars and buses
 
 Japan publishes the vehicle-type split directly, which Korea does not: there the split had to
 be borrowed from a bottom-up local inventory. These rows are therefore tier A.
@@ -34,8 +34,9 @@ OUT = DATA / "processed" / "country_emissions_jp.csv"
 SHEET = "3.Allocated_CO2-sector"
 SOURCE_ID = "gio_nies_inventory"
 FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_file"]
-#: The English label of each row we take -> the series name. English is used as the key because
-#: the Japanese labels carry furigana and leading spaces that differ between editions.
+#: The English label of each row taken -> the series name. The sheet prints a Japanese and an
+#: English label per row; English is the key because the Japanese one carries furigana and
+#: leading spaces that differ between editions.
 ROWS = {
     "Passenger Vehicle": "co2_passenger_car",
     "Bus": "co2_bus",

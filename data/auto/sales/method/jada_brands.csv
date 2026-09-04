@@ -1,18 +1,18 @@
-jada_brand,company,note
-トヨタ,toyota,
-レクサス,lexus,separate brand in JADA's brand and nameplate tables; folded into Toyota in the fuel table
-日産,nissan,
-ホンダ,honda,
-マツダ,mazda,
-スバル,subaru,
-SUBARU,subaru,the ranking workbook writes Subaru in Latin script while every other brand is in katakana
-スズキ,suzuki,
-三菱,mitsubishi,
-ダイハツ,daihatsu,Toyota subsidiary reported as its own brand
-日野,hino,commercial vehicles
-いすゞ,isuzu,commercial vehicles
-三菱ふそう,fuso,commercial vehicles
-ＵＤトラックス,ud,commercial vehicles
-UDトラックス,ud,commercial vehicles
-その他,other,residual row in the JADA tables
-輸入車,imported,foreign brands as a single row
+jada_brand,brand_en,company,note
+トヨタ,Toyota,toyota,
+レクサス,Lexus,lexus,separate brand in JADA's brand and nameplate tables; folded into Toyota in the fuel table
+日産,Nissan,nissan,
+ホンダ,Honda,honda,
+マツダ,Mazda,mazda,
+スバル,Subaru,subaru,
+SUBARU,Subaru,subaru,the ranking workbook writes Subaru in Latin script while every other brand is in katakana
+スズキ,Suzuki,suzuki,
+三菱,Mitsubishi,mitsubishi,
+ダイハツ,Daihatsu,daihatsu,Toyota subsidiary reported as its own brand
+日野,Hino,hino,commercial vehicles
+いすゞ,Isuzu,isuzu,commercial vehicles
+三菱ふそう,Mitsubishi Fuso,fuso,commercial vehicles
+ＵＤトラックス,UD Trucks,ud,commercial vehicles
+UDトラックス,UD Trucks,ud,commercial vehicles
+その他,other,other,residual row in the JADA tables
+輸入車,imported,imported,foreign brands as a single row

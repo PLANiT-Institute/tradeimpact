@@ -14,9 +14,9 @@ vehicle_usage_us,series,car_stock|car_traffic|ldv_long_wb_stock|ldv_long_wb_traf
 vehicle_usage_us_lifetime,series,car_expected_lifetime_years|car_median_lifetime_years|car_lifetime_distance_km,C,NHTSA survival schedule fitted to 1977-2002 passenger-car registrations not to the current fleet
 vehicle_usage_au,series,car_stock.*|car_mean_age_years,A,ABS Motor Vehicle Census as published
 vehicle_usage_au_smvu,series,car_stock_smvu|car_traffic|car_vkt_avg,B,ABS Survey of Motor Vehicle Use: sample survey estimates rather than registration or odometer counts
-vehicle_usage_kr,series,stock_.*,A,MOLIT vehicle registration statistics (승용 class) as published
+vehicle_usage_kr,series,stock_.*,A,MOLIT vehicle registration statistics (passenger-car class) as published
 vehicle_usage_kr,series,mean_age_.*,C,mean of a model-year distribution whose oldest band is open-ended (2005 and earlier) so the mean is biased low
-vehicle_usage_kr_traffic,series,traffic_.*|daily_km_.*,A,KOTSA inspection odometer readings grossed up to the registered 승용 fleet
+vehicle_usage_kr_traffic,series,traffic_.*|daily_km_.*,A,KOTSA inspection odometer readings grossed up to the registered fleet of that class
 emission_targets_.*,target_level,observed_trend,A,log-linear trend of the country's own observed series
 emission_targets_.*,target_level,ndc_prorata|ndc_prorata_s1_floor,B,national committed target applied pro-rata to passenger cars or to the grid
 emission_targets_.*,target_level,net_zero_2050|net_zero_2050_s1_floor,B,the government's own carbon-neutral pathway to 2050 applied pro-rata to the sector
@@ -35,7 +35,7 @@ cohorts|ti_by_model|ti_annual_by_model|ti_crossover,test_cycle,WLTP|EPA,A,certif
 cohorts|ti_by_model|ti_annual_by_model|ti_crossover,test_cycle,KR_5CYCLE,B,label fuel economy converted to gCO2/km with published fuel carbon factors
 cohorts,powertrain_rule,explicit|stated,A,powertrain stated by the sales release or the nameplate
 cohorts,powertrain_rule,epa_share_my2024.*,B,nameplate split with EPA MY2024 production shares (assumption A-US-PT)
-cohorts,powertrain_rule,kr_unsplit_central_ice.*,C,nameplate not split by the release; priced as ICE centrally with an all-HEV bound
+cohorts,powertrain_rule,kr_unsplit_central_ice.*,C,nameplate not split by the release; assessed as ICE centrally with an all-HEV bound
 cohorts,basis,registrations|brand_total_sales|domestic_sales|retail_sales,A,market-side volumes from the registration authority or the company's own release
 ti_by_model|ti_annual_by_model|ti_crossover,vkt_tier,A,A,destination distance observed for the passenger-car population
 ti_by_model|ti_annual_by_model|ti_crossover,vkt_tier,B,B,destination distance from a consistent but broader population (all light-duty vehicles)
@@ -56,8 +56,8 @@ global_sales_totals,basis,worldwide_sales,A,"the company's own published worldwi
 global_sales_totals,basis,worldwide_retail|worldwide_sales_derived,B,"a worldwide figure built from the company's own releases because it publishes no single total: Hyundai as Korea domestic plus exports plus overseas plant sales (the export leg being shipments), Kia as the sum of every destination in its retail workbook"
 country_emissions_jp,series,co2_passenger_car|co2_bus|co2_freight|road_co2_passenger,A,GIO/NIES national inventory sheet 3.Allocated_CO2-sector as published; Japan prints the road split by vehicle type so no proxy is needed
 emission_targets_.*,target_level,gx_2040_prorata|gx_2040_prorata_s1_floor,B,Japan's GX 2040 target (73 % below FY2013) applied pro-rata to the sector
-vehicle_usage_jp,series,traffic_.*|distance_.*|stock_.*,B,"MLIT 自動車燃料消費量調査 第１表 as published for traffic; distance is the survey's own per-calendar-day figure times 365 and the stock is implied by the two, and the survey covers fuel-burning vehicles only"
-vehicle_usage_jp_lifetime,series,mean_age_.*,A,AIRIA 平均車齢 as published
-vehicle_usage_jp_lifetime,series,mean_use_years_.*,B,"AIRIA 平均使用年数 as published, but it counts a temporary deregistration as an ending, so it is a floor on years to scrappage"
-vehicle_technology_jp_mlit,powertrain,ICE|HEV,A,MLIT 自動車燃費一覧 published 1km走行におけるCO2排出量 per certified grade; the model value is the grade-weighted mean
-sales_jada_jp,basis,registrations,A,JADA 乗用車ブランド通称名別順位 as published (top 50 nameplates; kei and foreign brands excluded by the source)
+vehicle_usage_jp,series,traffic_.*|distance_.*|stock_.*,B,"MLIT Motor Vehicle Fuel Consumption Survey Table 1 as published for traffic; distance is the survey's own per-calendar-day figure times 365 and the stock is implied by the two, and the survey covers fuel-burning vehicles only"
+vehicle_usage_jp_lifetime,series,mean_age_.*,A,AIRIA mean vehicle age as published
+vehicle_usage_jp_lifetime,series,mean_use_years_.*,B,"AIRIA mean years of use as published, but it counts a temporary deregistration as an ending, so it is a floor on years to scrappage"
+vehicle_technology_jp_mlit,powertrain,ICE|HEV,A,"MLIT fuel-economy list: the published CO2 emissions per kilometre for each certified grade, and the model value is the grade-weighted mean over them"
+sales_jada_jp,basis,registrations,A,JADA passenger-car nameplate ranking as published (top 50 nameplates; kei and foreign brands excluded by the source)

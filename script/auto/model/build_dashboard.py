@@ -795,8 +795,8 @@ let CODES = null;
 
 const TIER_COLOR = {A: '#2e7d4f', B: '#d68a00', C: '#c62828'};
 const STATUS_COLOR = {
-  priced: '#2e7d4f', withheld: '#d68a00', no_benchmark: '#8d99ae',
-  plant_side_only: '#6c757d', region_unpriced: '#adb5bd', destination_unknown: '#adb5bd'
+  assessed: '#2e7d4f', withheld: '#d68a00', no_benchmark: '#8d99ae',
+  plant_side_only: '#6c757d', region_unassessed: '#adb5bd', destination_unknown: '#adb5bd'
 };
 const COV = ' FROM ti_coverage WHERE destination_level = "country"';
 
@@ -805,11 +805,11 @@ const COV = ' FROM ti_coverage WHERE destination_level = "country"';
 const MAP_METRICS = [
   {id: 'coverage_units', label: 'sales units in the sales files', kind: 'seq', unit: 'vehicles',
    sql: (f) => 'SELECT destination, SUM(units)' + COV + f.company + f.year + ' GROUP BY 1'},
-  {id: 'priced_units', label: 'units carrying a result', kind: 'seq', unit: 'vehicles',
-   sql: (f) => 'SELECT destination, SUM(priced_units)' + COV + f.company + f.year +
+  {id: 'assessed_units', label: 'units carrying a result', kind: 'seq', unit: 'vehicles',
+   sql: (f) => 'SELECT destination, SUM(assessed_units)' + COV + f.company + f.year +
      ' GROUP BY 1'},
-  {id: 'priced_share', label: 'share of units priced', kind: 'seq', unit: 'fraction',
-   sql: (f) => 'SELECT destination, SUM(priced_units) * 1.0 / SUM(units)' + COV + f.company +
+  {id: 'assessed_share', label: 'share of units assessed', kind: 'seq', unit: 'fraction',
+   sql: (f) => 'SELECT destination, SUM(assessed_units) * 1.0 / SUM(units)' + COV + f.company +
      f.year + ' GROUP BY 1'},
   {id: 'coverage_status', label: 'coverage status', kind: 'cat', palette: STATUS_COLOR,
    sql: (f) => 'SELECT destination, MIN(status)' + COV + f.company + f.year + ' GROUP BY 1'},
@@ -1084,7 +1084,7 @@ function renderMapDetail() {
   let h = '<h3>' + esc(a2) + '</h3>';
   const f = mapFilters();
   if (TBL.has('ti_coverage')) {
-    const r = query('SELECT company, cohort_year, period, basis, units, priced_units, ' +
+    const r = query('SELECT company, cohort_year, period, basis, units, assessed_units, ' +
       'withheld_units, status, note FROM ti_coverage WHERE destination = ' + lit(a2) +
       f.company + f.year + ' ORDER BY 1, 2');
     h += '<h4>coverage</h4>' + smallTable(r);

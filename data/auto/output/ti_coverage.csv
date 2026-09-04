@@ -1,143 +1,143 @@
-company,destination_group,home_country,destination,destination_level,cohort_year,period,basis,units,priced_units,withheld_units,status,market,source_file,note
-hyundai,EU27,no,AT,country,2024,2024-01..2024-12,registrations,11364,10912,452,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,BE,country,2024,2024-01..2024-12,registrations,12149,10911,1238,priced,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
-hyundai,EU27,no,BG,country,2024,2024-01..2024-12,registrations,2336,2176,160,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+company,destination_group,home_country,destination,destination_level,cohort_year,period,basis,units,assessed_units,withheld_units,status,market,source_file,note
+hyundai,EU27,no,AT,country,2024,2024-01..2024-12,registrations,11364,10912,452,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,BE,country,2024,2024-01..2024-12,registrations,12149,10911,1238,assessed,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+hyundai,EU27,no,BG,country,2024,2024-01..2024-12,registrations,2336,2176,160,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
 hyundai,others,no,BR,country,2025,2025-01..2025-12,plant_sales,198113,0,0,plant_side_only,,hyundai_2025_global_plant_sales.xlsx,only a plant-side source covers this destination: units built at the local plant and sold there; imports from other plants are not in the source
 hyundai,others,no,CN,country,2025,2025-01..2025-12,plant_sales,128399,0,0,plant_side_only,,hyundai_2025_global_plant_sales.xlsx,only a plant-side source covers this destination: units built at the local plant and sold there; imports from other plants are not in the source
-hyundai,EU27,no,CY,country,2024,2024-01..2024-12,registrations,1340,1277,63,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,CZ,country,2024,2024-01..2024-12,registrations,20260,19978,282,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,DE,country,2024,2024-01..2024-12,registrations,96193,91771,4422,priced,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; the registration dataset reports no certified intensity for 
-hyundai,EU27,no,DK,country,2024,2024-01..2024-12,registrations,4815,4563,252,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,EE,country,2024,2024-01..2024-12,registrations,714,688,26,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,ES,country,2024,2024-01..2024-12,registrations,64844,62225,2619,priced,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
-hyundai,EU27,no,FI,country,2024,2024-01..2024-12,registrations,3101,2735,366,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,FR,country,2024,2024-01..2024-12,registrations,49653,47196,2457,priced,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
-hyundai,EU27,no,GR,country,2024,2024-01..2024-12,registrations,8879,8787,92,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,HR,country,2024,2024-01..2024-12,registrations,3381,3337,44,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,HU,country,2024,2024-01..2024-12,registrations,4753,4425,328,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,CY,country,2024,2024-01..2024-12,registrations,1340,1277,63,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,CZ,country,2024,2024-01..2024-12,registrations,20260,19978,282,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,DE,country,2024,2024-01..2024-12,registrations,96193,91771,4422,assessed,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; the registration dataset reports no certified intensity for 
+hyundai,EU27,no,DK,country,2024,2024-01..2024-12,registrations,4815,4563,252,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,EE,country,2024,2024-01..2024-12,registrations,714,688,26,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,ES,country,2024,2024-01..2024-12,registrations,64844,62225,2619,assessed,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+hyundai,EU27,no,FI,country,2024,2024-01..2024-12,registrations,3101,2735,366,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,FR,country,2024,2024-01..2024-12,registrations,49653,47196,2457,assessed,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+hyundai,EU27,no,GR,country,2024,2024-01..2024-12,registrations,8879,8787,92,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,HR,country,2024,2024-01..2024-12,registrations,3381,3337,44,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,HU,country,2024,2024-01..2024-12,registrations,4753,4425,328,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
 hyundai,others,no,ID,country,2025,2025-01..2025-12,plant_sales,15151,0,0,plant_side_only,,hyundai_2025_global_plant_sales.xlsx,only a plant-side source covers this destination: units built at the local plant and sold there; imports from other plants are not in the source
-hyundai,EU27,no,IE,country,2024,2024-01..2024-12,registrations,11222,9916,1306,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,IE,country,2024,2024-01..2024-12,registrations,11222,9916,1306,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
 hyundai,IN,no,IN,country,2025,2025-01..2025-12,plant_sales,571878,0,0,plant_side_only,,hyundai_2025_global_plant_sales.xlsx,"benchmark not built: free official inputs are partial and mostly proxies. Sourced: grid intensity (CEA CO2 baseline database xlsx, Ember), car stock 1991-2020 (MoRTH Road Transport Year Book Table 2.1, data.gov.in GODL API to 2017), NDC anchor (2022 updated NDC, intensity target only). Missing or proxy-only: passenger-car CO2 (UNFCCC BUR/BTR give whole road transport at 2016, 2020, 2022 only, no car split; BTR1 CRT xlsx must be fetched by hand from unfccc.int/documents/656940), annual km per car (no survey; Goel et al. 2015 Delhi 12,200 km), vehicle age (none published), certified technology by model (BEE CAFE reports OEM averages only; MIDC cycle). S2 would be FLAG (no absolute or sector target). More than half the inputs proxied, so any result would be direction-only under guideline 5.3. Model-level sales are not free: Hyundai Motor India and Kia India publish company totals only, SIAM model data is paid, Vahan's public report hides the model and exports by hand behind a CAPTCHA.; only a plant-side source covers this destination: units built at the local plant and sold there; imports from other plants are not in the source"
-hyundai,EU27,no,IT,country,2024,2024-01..2024-12,registrations,49430,48786,644,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,KR,yes,KR,country,2024,2024-01..2024-12,domestic_sales,556292,526677,29615,priced,KR,hyundai_2024_sales_by_model.xlsx,no sourced hydrogen supply emissions intensity for the desti; out_of_scope
-hyundai,KR,yes,KR,country,2025,2025-01..2025-12,domestic_sales,578094,545617,32477,priced,KR,hyundai_2025_sales_by_model.xlsx,no sourced hydrogen supply emissions intensity for the desti; out_of_scope
-hyundai,EU27,no,LT,country,2024,2024-01..2024-12,registrations,743,695,48,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,IT,country,2024,2024-01..2024-12,registrations,49430,48786,644,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,KR,yes,KR,country,2024,2024-01..2024-12,domestic_sales,556292,526677,29615,assessed,KR,hyundai_2024_sales_by_model.xlsx,no sourced hydrogen supply emissions intensity for the desti; out_of_scope
+hyundai,KR,yes,KR,country,2025,2025-01..2025-12,domestic_sales,578094,545617,32477,assessed,KR,hyundai_2025_sales_by_model.xlsx,no sourced hydrogen supply emissions intensity for the desti; out_of_scope
+hyundai,EU27,no,LT,country,2024,2024-01..2024-12,registrations,743,695,48,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
 hyundai,EU27,no,LU,country,2024,2024-01..2024-12,registrations,1357,0,1357,withheld,EU27,eea_hyundai_2024_final.json,destination benchmark withheld; no sourced utility factor
-hyundai,EU27,no,LV,country,2024,2024-01..2024-12,registrations,668,647,21,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,MT,country,2024,2024-01..2024-12,registrations,750,738,12,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,NL,country,2024,2024-01..2024-12,registrations,20579,18468,2111,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,PL,country,2024,2024-01..2024-12,registrations,30949,30779,170,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,PT,country,2024,2024-01..2024-12,registrations,7190,6931,259,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,RO,country,2024,2024-01..2024-12,registrations,10262,9686,576,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor; the registration dataset reports no certified intensity for 
-hyundai,EU27,no,SE,country,2024,2024-01..2024-12,registrations,2059,1574,485,priced,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+hyundai,EU27,no,LV,country,2024,2024-01..2024-12,registrations,668,647,21,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,MT,country,2024,2024-01..2024-12,registrations,750,738,12,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,NL,country,2024,2024-01..2024-12,registrations,20579,18468,2111,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,PL,country,2024,2024-01..2024-12,registrations,30949,30779,170,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,PT,country,2024,2024-01..2024-12,registrations,7190,6931,259,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,RO,country,2024,2024-01..2024-12,registrations,10262,9686,576,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor; the registration dataset reports no certified intensity for 
+hyundai,EU27,no,SE,country,2024,2024-01..2024-12,registrations,2059,1574,485,assessed,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
 hyundai,others,no,SG,country,2025,2025-01..2025-12,plant_sales,234,0,0,plant_side_only,,hyundai_2025_global_plant_sales.xlsx,only a plant-side source covers this destination: units built at the local plant and sold there; imports from other plants are not in the source
-hyundai,EU27,no,SI,country,2024,2024-01..2024-12,registrations,2771,2657,114,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
-hyundai,EU27,no,SK,country,2024,2024-01..2024-12,registrations,8174,8099,75,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,SI,country,2024,2024-01..2024-12,registrations,2771,2657,114,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
+hyundai,EU27,no,SK,country,2024,2024-01..2024-12,registrations,8174,8099,75,assessed,EU27,eea_hyundai_2024_final.json,no sourced utility factor
 hyundai,others,no,TR,country,2025,2025-01..2025-12,plant_sales,41287,0,0,plant_side_only,,hyundai_2025_global_plant_sales.xlsx,only a plant-side source covers this destination: units built at the local plant and sold there; imports from other plants are not in the source
-hyundai,US,no,US,country,2024,2024-01..2024-12,brand_total_sales,836802,828226,8576,priced,US,hyundai_2024_us_retail_sales.xlsx,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; out_of_scope
-hyundai,US,no,US,country,2025,2025-01..2025-12,brand_total_sales,901686,886894,14792,priced,US,hyundai_2025_us_retail_sales.xlsx,no EPA technology row for Ioniq 9 BEV at or before model yea; no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; out_of_scope
+hyundai,US,no,US,country,2024,2024-01..2024-12,brand_total_sales,836802,828226,8576,assessed,US,hyundai_2024_us_retail_sales.xlsx,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; out_of_scope
+hyundai,US,no,US,country,2025,2025-01..2025-12,brand_total_sales,901686,886894,14792,assessed,US,hyundai_2025_us_retail_sales.xlsx,no EPA technology row for Ioniq 9 BEV at or before model yea; no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; out_of_scope
 hyundai,others,no,VN,country,2025,2025-01..2025-12,plant_sales,44590,0,0,plant_side_only,,hyundai_2025_global_plant_sales.xlsx,only a plant-side source covers this destination: units built at the local plant and sold there; imports from other plants are not in the source
 hyundai,others,no,export,unknown,2025,2025-01..2025-12,plant_sales,848960,0,0,plant_side_only,,hyundai_2025_global_plant_sales.xlsx,only a plant-side source covers this destination: units built at the local plant and sold there; imports from other plants are not in the source
-kia,EU27,no,AT,country,2024,2024-01..2024-12,registrations,7030,6903,127,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,BE,country,2024,2024-01..2024-12,registrations,17605,14290,3315,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,BG,country,2024,2024-01..2024-12,registrations,2706,2652,54,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,AT,country,2024,2024-01..2024-12,registrations,7030,6903,127,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,BE,country,2024,2024-01..2024-12,registrations,17605,14290,3315,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,BG,country,2024,2024-01..2024-12,registrations,2706,2652,54,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
 kia,others,no,CA,country,2026,2026-01..2026-06,retail_sales,48336,0,0,no_benchmark,,kia_2026_retail_sales_by_model_market.xlsx,no destination benchmark built yet for this country
 kia,others,no,CN,country,2026,2026-01..2026-06,retail_sales,36000,0,0,no_benchmark,,kia_2026_retail_sales_by_model_market.xlsx,no destination benchmark built yet for this country
-kia,EU27,no,CY,country,2024,2024-01..2024-12,registrations,2840,2761,79,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,CZ,country,2024,2024-01..2024-12,registrations,10711,10655,56,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,DE,country,2024,2024-01..2024-12,registrations,68581,64203,4378,priced,EU27,eea_kia_2024_final.json,no sourced utility factor; the registration dataset reports no certified intensity for 
-kia,EU27,no,DK,country,2024,2024-01..2024-12,registrations,4614,4249,365,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,EE,country,2024,2024-01..2024-12,registrations,1682,1648,34,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,ES,country,2024,2024-01..2024-12,registrations,59901,57321,2580,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,FI,country,2024,2024-01..2024-12,registrations,5314,4246,1068,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,FR,country,2024,2024-01..2024-12,registrations,47140,42792,4348,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,GR,country,2024,2024-01..2024-12,registrations,4764,4581,183,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,HR,country,2024,2024-01..2024-12,registrations,3280,3274,6,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,HU,country,2024,2024-01..2024-12,registrations,6478,6258,220,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,IE,country,2024,2024-01..2024-12,registrations,8983,7531,1452,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,CY,country,2024,2024-01..2024-12,registrations,2840,2761,79,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,CZ,country,2024,2024-01..2024-12,registrations,10711,10655,56,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,DE,country,2024,2024-01..2024-12,registrations,68581,64203,4378,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor; the registration dataset reports no certified intensity for 
+kia,EU27,no,DK,country,2024,2024-01..2024-12,registrations,4614,4249,365,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,EE,country,2024,2024-01..2024-12,registrations,1682,1648,34,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,ES,country,2024,2024-01..2024-12,registrations,59901,57321,2580,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,FI,country,2024,2024-01..2024-12,registrations,5314,4246,1068,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,FR,country,2024,2024-01..2024-12,registrations,47140,42792,4348,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,GR,country,2024,2024-01..2024-12,registrations,4764,4581,183,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,HR,country,2024,2024-01..2024-12,registrations,3280,3274,6,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,HU,country,2024,2024-01..2024-12,registrations,6478,6258,220,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,IE,country,2024,2024-01..2024-12,registrations,8983,7531,1452,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
 kia,IN,no,IN,country,2026,2026-01..2026-06,retail_sales,156523,0,0,no_benchmark,,kia_2026_retail_sales_by_model_market.xlsx,"benchmark not built: free official inputs are partial and mostly proxies. Sourced: grid intensity (CEA CO2 baseline database xlsx, Ember), car stock 1991-2020 (MoRTH Road Transport Year Book Table 2.1, data.gov.in GODL API to 2017), NDC anchor (2022 updated NDC, intensity target only). Missing or proxy-only: passenger-car CO2 (UNFCCC BUR/BTR give whole road transport at 2016, 2020, 2022 only, no car split; BTR1 CRT xlsx must be fetched by hand from unfccc.int/documents/656940), annual km per car (no survey; Goel et al. 2015 Delhi 12,200 km), vehicle age (none published), certified technology by model (BEE CAFE reports OEM averages only; MIDC cycle). S2 would be FLAG (no absolute or sector target). More than half the inputs proxied, so any result would be direction-only under guideline 5.3. Model-level sales are not free: Hyundai Motor India and Kia India publish company totals only, SIAM model data is paid, Vahan's public report hides the model and exports by hand behind a CAPTCHA."
-kia,EU27,no,IT,country,2024,2024-01..2024-12,registrations,47627,46588,1039,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,KR,yes,KR,country,2026,2026-01..2026-06,retail_sales,296479,292702,3777,priced,KR,kia_2026_retail_sales_by_model_market.xlsx,no KEA label row for Bongo EV ICE in vehicle_technology_kr_k; no KEA label row for Bus ICE in vehicle_technology_kr_kea.cs; out_of_scope
-kia,EU27,no,LT,country,2024,2024-01..2024-12,registrations,2241,2146,95,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,IT,country,2024,2024-01..2024-12,registrations,47627,46588,1039,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,KR,yes,KR,country,2026,2026-01..2026-06,retail_sales,296479,292702,3777,assessed,KR,kia_2026_retail_sales_by_model_market.xlsx,no KEA label row for Bongo EV ICE in vehicle_technology_kr_k; no KEA label row for Bus ICE in vehicle_technology_kr_kea.cs; out_of_scope
+kia,EU27,no,LT,country,2024,2024-01..2024-12,registrations,2241,2146,95,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
 kia,EU27,no,LU,country,2024,2024-01..2024-12,registrations,1540,0,1540,withheld,EU27,eea_kia_2024_final.json,destination benchmark withheld; no sourced utility factor
-kia,EU27,no,LV,country,2024,2024-01..2024-12,registrations,801,770,31,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,MT,country,2024,2024-01..2024-12,registrations,515,494,21,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,LV,country,2024,2024-01..2024-12,registrations,801,770,31,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,MT,country,2024,2024-01..2024-12,registrations,515,494,21,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
 kia,others,no,MX,country,2026,2026-01..2026-06,retail_sales,54852,0,0,no_benchmark,,kia_2026_retail_sales_by_model_market.xlsx,no destination benchmark built yet for this country
-kia,EU27,no,NL,country,2024,2024-01..2024-12,registrations,34774,32012,2762,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,PL,country,2024,2024-01..2024-12,registrations,33133,32226,907,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,PT,country,2024,2024-01..2024-12,registrations,7499,6400,1099,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,RO,country,2024,2024-01..2024-12,registrations,4368,4084,284,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,SE,country,2024,2024-01..2024-12,registrations,19565,10104,9461,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,SI,country,2024,2024-01..2024-12,registrations,2289,2286,3,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,EU27,no,SK,country,2024,2024-01..2024-12,registrations,8696,8547,149,priced,EU27,eea_kia_2024_final.json,no sourced utility factor
-kia,US,no,US,country,2024,2024-01..2024-12,brand_total_sales,796488,780309,16179,priced,US,kia_america_2024_sales_by_month.xlsx,no EPA technology row for Rio ICE at or before model year 20; no sourced utility factor
-kia,US,no,US,country,2025,2025-01..2025-12,brand_total_sales,852155,836571,15584,priced,US,kia_america_2025_sales_by_month.xlsx,no sourced utility factor
-kia,US,no,US,country,2026,2026-01..2026-06,retail_sales,430727,422171,8556,priced,US,kia_2026_retail_sales_by_model_market.xlsx,no sourced utility factor
-kia,others,no,africa,region,2026,2026-01..2026-06,retail_sales,26802,0,0,region_unpriced,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
-kia,others,no,asia_pacific,region,2026,2026-01..2026-06,retail_sales,84850,0,0,region_unpriced,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
-kia,others,no,eastern_europe,region,2026,2026-01..2026-06,retail_sales,38572,0,0,region_unpriced,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
-kia,others,no,europe,region,2026,2026-01..2026-06,retail_sales,290820,0,0,region_unpriced,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
-kia,others,no,latin_america,region,2026,2026-01..2026-06,retail_sales,83951,0,0,region_unpriced,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
-kia,others,no,middle_east,region,2026,2026-01..2026-06,retail_sales,71125,0,0,region_unpriced,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
-nissan,EU27,no,AT,country,2024,2024-01..2024-12,registrations,2799,2799,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,BE,country,2024,2024-01..2024-12,registrations,8628,8628,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,BG,country,2024,2024-01..2024-12,registrations,1205,1205,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,CY,country,2024,2024-01..2024-12,registrations,1460,1460,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,CZ,country,2024,2024-01..2024-12,registrations,1287,1287,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,DE,country,2024,2024-01..2024-12,registrations,29203,29185,18,priced,EU27,eea_nissan_2024_final.json,the registration dataset reports no certified intensity for 
-nissan,EU27,no,DK,country,2024,2024-01..2024-12,registrations,5721,5721,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,EE,country,2024,2024-01..2024-12,registrations,525,525,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,ES,country,2024,2024-01..2024-12,registrations,32631,32631,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,FI,country,2024,2024-01..2024-12,registrations,2955,2955,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,FR,country,2024,2024-01..2024-12,registrations,29572,29572,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,GR,country,2024,2024-01..2024-12,registrations,4296,4296,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,HR,country,2024,2024-01..2024-12,registrations,847,847,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,HU,country,2024,2024-01..2024-12,registrations,5589,5589,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,IE,country,2024,2024-01..2024-12,registrations,4809,4809,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,IT,country,2024,2024-01..2024-12,registrations,34933,34933,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,JP,yes,JP,country,2024,2024-01..2024-12,registrations,228787,214441,14346,priced,JP,jada_model_ranking_2024.xlsx,no certified row in either 自動車燃費一覧 edition on hand for this 
-nissan,JP,yes,JP,country,2025,2025-01..2025-12,registrations,179123,169528,9595,priced,JP,jada_model_ranking_2025.xlsx,no certified row in either 自動車燃費一覧 edition on hand for this 
-nissan,EU27,no,LT,country,2024,2024-01..2024-12,registrations,1051,1051,0,priced,EU27,eea_nissan_2024_final.json,
+kia,EU27,no,NL,country,2024,2024-01..2024-12,registrations,34774,32012,2762,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,PL,country,2024,2024-01..2024-12,registrations,33133,32226,907,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,PT,country,2024,2024-01..2024-12,registrations,7499,6400,1099,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,RO,country,2024,2024-01..2024-12,registrations,4368,4084,284,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,SE,country,2024,2024-01..2024-12,registrations,19565,10104,9461,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,SI,country,2024,2024-01..2024-12,registrations,2289,2286,3,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,EU27,no,SK,country,2024,2024-01..2024-12,registrations,8696,8547,149,assessed,EU27,eea_kia_2024_final.json,no sourced utility factor
+kia,US,no,US,country,2024,2024-01..2024-12,brand_total_sales,796488,780309,16179,assessed,US,kia_america_2024_sales_by_month.xlsx,no EPA technology row for Rio ICE at or before model year 20; no sourced utility factor
+kia,US,no,US,country,2025,2025-01..2025-12,brand_total_sales,852155,836571,15584,assessed,US,kia_america_2025_sales_by_month.xlsx,no sourced utility factor
+kia,US,no,US,country,2026,2026-01..2026-06,retail_sales,430727,422171,8556,assessed,US,kia_2026_retail_sales_by_model_market.xlsx,no sourced utility factor
+kia,others,no,africa,region,2026,2026-01..2026-06,retail_sales,26802,0,0,region_unassessed,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
+kia,others,no,asia_pacific,region,2026,2026-01..2026-06,retail_sales,84850,0,0,region_unassessed,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
+kia,others,no,eastern_europe,region,2026,2026-01..2026-06,retail_sales,38572,0,0,region_unassessed,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
+kia,others,no,europe,region,2026,2026-01..2026-06,retail_sales,290820,0,0,region_unassessed,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
+kia,others,no,latin_america,region,2026,2026-01..2026-06,retail_sales,83951,0,0,region_unassessed,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
+kia,others,no,middle_east,region,2026,2026-01..2026-06,retail_sales,71125,0,0,region_unassessed,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
+nissan,EU27,no,AT,country,2024,2024-01..2024-12,registrations,2799,2799,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,BE,country,2024,2024-01..2024-12,registrations,8628,8628,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,BG,country,2024,2024-01..2024-12,registrations,1205,1205,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,CY,country,2024,2024-01..2024-12,registrations,1460,1460,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,CZ,country,2024,2024-01..2024-12,registrations,1287,1287,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,DE,country,2024,2024-01..2024-12,registrations,29203,29185,18,assessed,EU27,eea_nissan_2024_final.json,the registration dataset reports no certified intensity for 
+nissan,EU27,no,DK,country,2024,2024-01..2024-12,registrations,5721,5721,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,EE,country,2024,2024-01..2024-12,registrations,525,525,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,ES,country,2024,2024-01..2024-12,registrations,32631,32631,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,FI,country,2024,2024-01..2024-12,registrations,2955,2955,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,FR,country,2024,2024-01..2024-12,registrations,29572,29572,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,GR,country,2024,2024-01..2024-12,registrations,4296,4296,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,HR,country,2024,2024-01..2024-12,registrations,847,847,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,HU,country,2024,2024-01..2024-12,registrations,5589,5589,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,IE,country,2024,2024-01..2024-12,registrations,4809,4809,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,IT,country,2024,2024-01..2024-12,registrations,34933,34933,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,JP,yes,JP,country,2024,2024-01..2024-12,registrations,228787,214441,14346,assessed,JP,jada_model_ranking_2024.xlsx,no certified row in either fuel-economy-list edition on hand
+nissan,JP,yes,JP,country,2025,2025-01..2025-12,registrations,179123,169528,9595,assessed,JP,jada_model_ranking_2025.xlsx,no certified row in either fuel-economy-list edition on hand
+nissan,EU27,no,LT,country,2024,2024-01..2024-12,registrations,1051,1051,0,assessed,EU27,eea_nissan_2024_final.json,
 nissan,EU27,no,LU,country,2024,2024-01..2024-12,registrations,439,0,439,withheld,EU27,eea_nissan_2024_final.json,destination benchmark withheld
-nissan,EU27,no,LV,country,2024,2024-01..2024-12,registrations,687,687,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,MT,country,2024,2024-01..2024-12,registrations,230,230,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,NL,country,2024,2024-01..2024-12,registrations,5470,5470,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,PL,country,2024,2024-01..2024-12,registrations,8763,8763,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,PT,country,2024,2024-01..2024-12,registrations,7532,7532,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,RO,country,2024,2024-01..2024-12,registrations,1205,1202,3,priced,EU27,eea_nissan_2024_final.json,the registration dataset reports no certified intensity for 
-nissan,EU27,no,SE,country,2024,2024-01..2024-12,registrations,3506,3506,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,SI,country,2024,2024-01..2024-12,registrations,969,969,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,EU27,no,SK,country,2024,2024-01..2024-12,registrations,1736,1736,0,priced,EU27,eea_nissan_2024_final.json,
-nissan,US,no,US,country,2024,2024-01..2024-12,brand_total_sales,865938,864996,942,priced,US,nissan_us_sales_2025.csv,no EPA technology row for Maxima ICE at or before model year
-nissan,US,no,US,country,2025,2025-01..2025-12,brand_total_sales,873307,873293,14,priced,US,nissan_us_sales_2025.csv,no EPA technology row for Maxima ICE at or before model year
-toyota,EU27,no,AT,country,2024,2024-01..2024-12,registrations,11120,10768,352,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
-toyota,EU27,no,BE,country,2024,2024-01..2024-12,registrations,23650,22722,928,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; the registration dataset reports no certified intensity for 
-toyota,EU27,no,BG,country,2024,2024-01..2024-12,registrations,5253,4961,292,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,CY,country,2024,2024-01..2024-12,registrations,14,7,7,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,CZ,country,2024,2024-01..2024-12,registrations,18911,18428,483,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,DE,country,2024,2024-01..2024-12,registrations,95267,93242,2025,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; the registration dataset reports no certified intensity for 
-toyota,EU27,no,DK,country,2024,2024-01..2024-12,registrations,13187,12693,494,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,EE,country,2024,2024-01..2024-12,registrations,4448,4275,173,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
-toyota,EU27,no,ES,country,2024,2024-01..2024-12,registrations,100873,97284,3589,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,FI,country,2024,2024-01..2024-12,registrations,12449,11328,1121,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,FR,country,2024,2024-01..2024-12,registrations,134994,130556,4438,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
-toyota,EU27,no,GR,country,2024,2024-01..2024-12,registrations,23480,23118,362,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,HR,country,2024,2024-01..2024-12,registrations,4224,4127,97,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,HU,country,2024,2024-01..2024-12,registrations,14275,14054,221,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
-toyota,EU27,no,IE,country,2024,2024-01..2024-12,registrations,17079,16150,929,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,IT,country,2024,2024-01..2024-12,registrations,122925,120233,2692,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
-toyota,JP,yes,JP,country,2024,2024-01..2024-12,registrations,1197210,1189107,8103,priced,JP,jada_model_ranking_2024.xlsx,no certified row in either 自動車燃費一覧 edition on hand for this 
-toyota,JP,yes,JP,country,2025,2025-01..2025-12,registrations,1212140,1212140,0,priced,JP,jada_model_ranking_2025.xlsx,
-toyota,EU27,no,LT,country,2024,2024-01..2024-12,registrations,6119,5745,374,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+nissan,EU27,no,LV,country,2024,2024-01..2024-12,registrations,687,687,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,MT,country,2024,2024-01..2024-12,registrations,230,230,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,NL,country,2024,2024-01..2024-12,registrations,5470,5470,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,PL,country,2024,2024-01..2024-12,registrations,8763,8763,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,PT,country,2024,2024-01..2024-12,registrations,7532,7532,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,RO,country,2024,2024-01..2024-12,registrations,1205,1202,3,assessed,EU27,eea_nissan_2024_final.json,the registration dataset reports no certified intensity for 
+nissan,EU27,no,SE,country,2024,2024-01..2024-12,registrations,3506,3506,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,SI,country,2024,2024-01..2024-12,registrations,969,969,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,EU27,no,SK,country,2024,2024-01..2024-12,registrations,1736,1736,0,assessed,EU27,eea_nissan_2024_final.json,
+nissan,US,no,US,country,2024,2024-01..2024-12,brand_total_sales,865938,864996,942,assessed,US,nissan_us_sales_2025.csv,no EPA technology row for Maxima ICE at or before model year
+nissan,US,no,US,country,2025,2025-01..2025-12,brand_total_sales,873307,873293,14,assessed,US,nissan_us_sales_2025.csv,no EPA technology row for Maxima ICE at or before model year
+toyota,EU27,no,AT,country,2024,2024-01..2024-12,registrations,11120,10768,352,assessed,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+toyota,EU27,no,BE,country,2024,2024-01..2024-12,registrations,23650,22722,928,assessed,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; the registration dataset reports no certified intensity for 
+toyota,EU27,no,BG,country,2024,2024-01..2024-12,registrations,5253,4961,292,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,CY,country,2024,2024-01..2024-12,registrations,14,7,7,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,CZ,country,2024,2024-01..2024-12,registrations,18911,18428,483,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,DE,country,2024,2024-01..2024-12,registrations,95267,93242,2025,assessed,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; the registration dataset reports no certified intensity for 
+toyota,EU27,no,DK,country,2024,2024-01..2024-12,registrations,13187,12693,494,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,EE,country,2024,2024-01..2024-12,registrations,4448,4275,173,assessed,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+toyota,EU27,no,ES,country,2024,2024-01..2024-12,registrations,100873,97284,3589,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,FI,country,2024,2024-01..2024-12,registrations,12449,11328,1121,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,FR,country,2024,2024-01..2024-12,registrations,134994,130556,4438,assessed,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+toyota,EU27,no,GR,country,2024,2024-01..2024-12,registrations,23480,23118,362,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,HR,country,2024,2024-01..2024-12,registrations,4224,4127,97,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,HU,country,2024,2024-01..2024-12,registrations,14275,14054,221,assessed,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+toyota,EU27,no,IE,country,2024,2024-01..2024-12,registrations,17079,16150,929,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,IT,country,2024,2024-01..2024-12,registrations,122925,120233,2692,assessed,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+toyota,JP,yes,JP,country,2024,2024-01..2024-12,registrations,1197210,1189107,8103,assessed,JP,jada_model_ranking_2024.xlsx,no certified row in either fuel-economy-list edition on hand
+toyota,JP,yes,JP,country,2025,2025-01..2025-12,registrations,1212140,1212140,0,assessed,JP,jada_model_ranking_2025.xlsx,
+toyota,EU27,no,LT,country,2024,2024-01..2024-12,registrations,6119,5745,374,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
 toyota,EU27,no,LU,country,2024,2024-01..2024-12,registrations,1210,0,1210,withheld,EU27,eea_toyota_2024_final.json,destination benchmark withheld; no sourced utility factor
-toyota,EU27,no,LV,country,2024,2024-01..2024-12,registrations,2838,2752,86,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,MT,country,2024,2024-01..2024-12,registrations,1054,1045,9,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,NL,country,2024,2024-01..2024-12,registrations,29853,28630,1223,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,PL,country,2024,2024-01..2024-12,registrations,103174,101852,1322,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,PT,country,2024,2024-01..2024-12,registrations,11149,10116,1033,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,RO,country,2024,2024-01..2024-12,registrations,12799,12213,586,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,SE,country,2024,2024-01..2024-12,registrations,20143,18656,1487,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,SI,country,2024,2024-01..2024-12,registrations,3394,3291,103,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,EU27,no,SK,country,2024,2024-01..2024-12,registrations,9212,9031,181,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
-toyota,US,no,US,country,2024,2024-01..2024-12,brand_total_sales,1986954,1942640,44314,priced,US,tmna_us_sales_2025.csv,no EPA technology row for Sequoia ICE at or before model yea; no EPA technology row for Sienna ICE at or before model year; no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; unallocated
-toyota,US,no,US,country,2025,2025-01..2025-12,brand_total_sales,2147811,2111810,36001,priced,US,tmna_us_sales_2025.csv,no EPA technology row for Sienna ICE at or before model year; no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; unallocated
+toyota,EU27,no,LV,country,2024,2024-01..2024-12,registrations,2838,2752,86,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,MT,country,2024,2024-01..2024-12,registrations,1054,1045,9,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,NL,country,2024,2024-01..2024-12,registrations,29853,28630,1223,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,PL,country,2024,2024-01..2024-12,registrations,103174,101852,1322,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,PT,country,2024,2024-01..2024-12,registrations,11149,10116,1033,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,RO,country,2024,2024-01..2024-12,registrations,12799,12213,586,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,SE,country,2024,2024-01..2024-12,registrations,20143,18656,1487,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,SI,country,2024,2024-01..2024-12,registrations,3394,3291,103,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,SK,country,2024,2024-01..2024-12,registrations,9212,9031,181,assessed,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,US,no,US,country,2024,2024-01..2024-12,brand_total_sales,1986954,1942640,44314,assessed,US,tmna_us_sales_2025.csv,no EPA technology row for Sequoia ICE at or before model yea; no EPA technology row for Sienna ICE at or before model year; no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; unallocated
+toyota,US,no,US,country,2025,2025-01..2025-12,brand_total_sales,2147811,2111810,36001,assessed,US,tmna_us_sales_2025.csv,no EPA technology row for Sienna ICE at or before model year; no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; unallocated

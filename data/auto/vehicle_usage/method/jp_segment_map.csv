@@ -1,27 +1,27 @@
-fuel,operation,use,vehicle_type,segment,note
-ガソリン,営業用,貨物,普通・小型・特種車,freight,
-ガソリン,営業用,貨物,軽自動車,freight,kei goods vehicles
-ガソリン,営業用,旅客,バス・乗用車,passenger_car,"the survey bundles commercial petrol buses with taxis and rental cars on one row; petrol buses are a rounding error in Japan, so the row is read as passenger cars"
-ガソリン,自家用,貨物,普通車,freight,
-ガソリン,自家用,貨物,小型車,freight,
-ガソリン,自家用,貨物,軽自動車,freight,kei goods vehicles
-ガソリン,自家用,旅客,バス・特種車,unallocated,"private petrol buses bundled with special-purpose vehicles: neither a car nor a goods vehicle, so it is counted and left out of both benchmarks"
-ガソリン,自家用,旅客,普通車,passenger_car,
-ガソリン,自家用,旅客,小型車,passenger_car,
-ガソリン,自家用,旅客,乗用車(ハイブリッド),passenger_car,the survey gives hybrids their own row
-ガソリン,自家用,旅客,軽自動車,passenger_car,kei passenger cars
-軽油,営業用,貨物,普通車,freight,
-軽油,営業用,貨物,小型車,freight,
-軽油,営業用,貨物,特種車,freight,
-軽油,営業用,旅客,バス,bus,
-軽油,営業用,旅客,乗用車,passenger_car,
-軽油,自家用,貨物,普通車,freight,
-軽油,自家用,貨物,小型車,freight,
-軽油,自家用,貨物,特種車(貨物),freight,
-軽油,自家用,旅客,バス,bus,
-軽油,自家用,旅客,普通車,passenger_car,
-軽油,自家用,旅客,小型車,passenger_car,
-軽油,自家用,旅客,特種車(非貨物),unallocated,special-purpose vehicles carrying people; neither a car nor a goods vehicle
-LPG,営業用乗用車,,,passenger_car,LPG taxis; the survey prints no 用途 or 車種 for LPG
-LPG,その他LPG車,,,unallocated,"other LPG vehicles, not split by use"
-CNG,(注1),,CNG計,unallocated,"one CNG line only, mostly goods vehicles and buses but not split; 0.008 % of national vehicle-kilometres"
+fuel,operation,use,vehicle_type,row_en,segment,note
+ガソリン,営業用,貨物,普通・小型・特種車,"petrol, commercial, goods, standard, small and special vehicles",freight,
+ガソリン,営業用,貨物,軽自動車,"petrol, commercial, goods, kei vehicle",freight,kei goods vehicles
+ガソリン,営業用,旅客,バス・乗用車,"petrol, commercial, passenger, bus and passenger car",passenger_car,"the survey bundles commercial petrol buses with taxis and rental cars on one row; petrol buses are a rounding error in Japan, so the row is read as passenger cars"
+ガソリン,自家用,貨物,普通車,"petrol, private, goods, standard vehicle",freight,
+ガソリン,自家用,貨物,小型車,"petrol, private, goods, small vehicle",freight,
+ガソリン,自家用,貨物,軽自動車,"petrol, private, goods, kei vehicle",freight,kei goods vehicles
+ガソリン,自家用,旅客,バス・特種車,"petrol, private, passenger, bus and special vehicle",unallocated,"private petrol buses bundled with special-purpose vehicles: neither a car nor a goods vehicle, so it is counted and left out of both benchmarks"
+ガソリン,自家用,旅客,普通車,"petrol, private, passenger, standard vehicle",passenger_car,
+ガソリン,自家用,旅客,小型車,"petrol, private, passenger, small vehicle",passenger_car,
+ガソリン,自家用,旅客,乗用車(ハイブリッド),"petrol, private, passenger, passenger car (hybrid)",passenger_car,the survey gives hybrids their own row
+ガソリン,自家用,旅客,軽自動車,"petrol, private, passenger, kei vehicle",passenger_car,kei passenger cars
+軽油,営業用,貨物,普通車,"diesel, commercial, goods, standard vehicle",freight,
+軽油,営業用,貨物,小型車,"diesel, commercial, goods, small vehicle",freight,
+軽油,営業用,貨物,特種車,"diesel, commercial, goods, special vehicle",freight,
+軽油,営業用,旅客,バス,"diesel, commercial, passenger, bus",bus,
+軽油,営業用,旅客,乗用車,"diesel, commercial, passenger, passenger car",passenger_car,
+軽油,自家用,貨物,普通車,"diesel, private, goods, standard vehicle",freight,
+軽油,自家用,貨物,小型車,"diesel, private, goods, small vehicle",freight,
+軽油,自家用,貨物,特種車(貨物),"diesel, private, goods, special vehicle (goods)",freight,
+軽油,自家用,旅客,バス,"diesel, private, passenger, bus",bus,
+軽油,自家用,旅客,普通車,"diesel, private, passenger, standard vehicle",passenger_car,
+軽油,自家用,旅客,小型車,"diesel, private, passenger, small vehicle",passenger_car,
+軽油,自家用,旅客,特種車(非貨物),"diesel, private, passenger, special vehicle (non-goods)",unallocated,special-purpose vehicles carrying people; neither a car nor a goods vehicle
+LPG,営業用乗用車,,,"LPG, commercial passenger car",passenger_car,LPG taxis; the survey prints no 用途 or 車種 for LPG
+LPG,その他LPG車,,,"LPG, other LPG vehicle",unallocated,"other LPG vehicles, not split by use"
+CNG,(注1),,CNG計,"CNG, see the sheet's note 1, CNG total",unallocated,"one CNG line only, mostly goods vehicles and buses but not split; 0.008 % of national vehicle-kilometres"

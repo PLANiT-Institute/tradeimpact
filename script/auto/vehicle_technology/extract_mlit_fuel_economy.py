@@ -1,23 +1,32 @@
-"""自動車燃費一覧 -> vehicle_technology_jp_mlit.csv (certified gCO2/km per nameplate x powertrain).
+"""MLIT fuel-economy list -> vehicle_technology_jp_mlit.csv (certified gCO2/km per nameplate).
 
-Input   raw/mlit_fuel_economy_petrol_car_wltc.xlsx   maker sheets, petrol and petrol-hybrid cars
-        raw/mlit_fuel_economy_diesel_car_wltc.xlsx   maker sheets suffixed _WLTC, diesel cars
-        method/jp_maker_map.csv                      MLIT 車名 -> the project's company
+Input   raw/mlit_fuel_economy_petrol_car_wltc_<edition>.xlsx   petrol and petrol-hybrid cars
+        raw/mlit_fuel_economy_diesel_car_wltc_<edition>.xlsx   diesel cars
+        method/jp_maker_map.csv        make as the workbook writes it -> company, and whether
+                                       its sheet is read at all
+        ../../sales/method/jp_model_names.csv   nameplate as the workbook writes it -> English
+                                       name (one home for the fact, shared with the sales side)
 Output  processed/vehicle_technology_jp_mlit.csv
-        one row per company x 通称名 x powertrain: the unweighted mean of that group's grade
-        values, the grade count, and the range across grades
+        one row per company x model x powertrain: the mean of that group's grade values, the
+        grade count, and the range across grades. ``model`` is the English nameplate and
+        ``source_label`` the string the workbook prints.
 
-The published quantity is 1km走行におけるCO2排出量 (gCO2/km) on the WLTC cycle, so nothing is
+Only the sheets of makers marked ``read = yes`` are read — the companies in scope and nothing
+else — so every nameplate that reaches the output has an English name in the map, and one that
+does not stops the extractor rather than passing through in Japanese.
+
+The published quantity is CO2 emissions per kilometre (gCO2/km) on the WLTC cycle, so nothing is
 converted: the value that enters the model is the value the certificate carries.
 
-Powertrain comes from 主要燃費改善対策, where an Ｈ token marks a hybrid. The 原動機 column is
-the corroborating signal — a hybrid there prints its engine code followed by （内燃機関） and then
-a motor code — but it is not universal: Daihatsu's e-SMART grades print one code and carry the Ｈ
-token, so Ｈ is the definitive test and a 原動機 that lists （内燃機関） without an Ｈ token stops
-the extractor. Plug-in hybrids are certified in hybrid
-mode and the workbook does not separate them, so a plug-in grade sits inside its nameplate's HEV
-mean — recorded here, and the cohort's own plug-in share is withheld rather than priced, because
-no utility factor is sourced.
+Powertrain comes from the fuel-economy-improvement column, where an H code marks a hybrid. The
+engine column is the corroborating signal — a hybrid there prints its engine code, a marker that
+it is an internal-combustion engine, and then a motor code — but it is not universal: Daihatsu's
+e-SMART grades print one code and carry the H code, so H is the definitive test and an engine
+cell that lists two power sources without an H code stops the extractor.
+
+Plug-in hybrids are certified in hybrid mode and the workbook does not separate them, so a
+plug-in grade sits inside its nameplate's HEV mean — recorded here, and the cohort's own plug-in
+share is withheld rather than assessed, because no utility factor is sourced.
 
 Run from the repository root:
     .venv/bin/python script/auto/vehicle_technology/extract_mlit_fuel_economy.py
@@ -36,6 +45,7 @@ REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto" / "vehicle_technology"
 RAW = DATA / "raw"
 MAKERS = DATA / "method" / "jp_maker_map.csv"
+MODEL_NAMES = REPO / "data" / "auto" / "sales" / "method" / "jp_model_names.csv"
 OUT = DATA / "processed" / "vehicle_technology_jp_mlit.csv"
 SOURCE_ID = "mlit_fuel_economy_list"
 TEST_CYCLE = "WLTC_JP"
@@ -44,6 +54,7 @@ FIELDS = [
     "company",
     "segment",
     "model",
+    "source_label",
     "powertrain",
     "tailpipe_gco2_km",
     "tailpipe_low_gco2_km",
@@ -54,9 +65,11 @@ FIELDS = [
     "source_id",
     "source_file",
 ]
-#: the OEM marks a sheet writes beside a nameplate it did not build.
+#: The marks a sheet writes beside a nameplate the maker did not build itself (join keys).
 OEM_MARKS = ("※2", "※1", "※")
-#: header keyword -> the column it marks.
+#: Verbatim header keyword of the source workbook -> the column it marks. These are join keys,
+#: not prose; in English they read "make", "nameplate", "engine", "CO2 per kilometre" and
+#: "principal fuel-economy improvements".
 KEYWORDS = {
     "車名": "make",
     "通称名": "model",
@@ -64,6 +77,8 @@ KEYWORDS = {
     "1km走行": "co2",
     "主要燃費改善": "measures",
 }
+#: Verbatim marker in the engine cell meaning "internal-combustion engine", printed only where
+#: the grade also lists an electric motor.
 HYBRID_ENGINE = "内燃機関"
 HYBRID_MEASURE = "H"
 #: rows the header block occupies in every maker sheet of this edition.
@@ -81,9 +96,10 @@ def nameplates(first: object, second: object) -> list[str]:
     """The nameplates a 通称名 cell pair names.
 
     Three things happen in these two merged columns. A nameplate can be written in either of
-    them. Twins share one block, written as two lines in one cell (ヴォクシー / ノア,
-    アルファード / ヴェルファイア), and the block's certified values belong to both. And an OEM
-    nameplate carries a ※ mark, which sits in the first column with the name in the second.
+    them. Twins share one block, written as two lines in one cell (Voxy and Noah, Alphard and
+    Vellfire), and the block's certified values belong to both. And a nameplate the maker did
+    not build itself carries an OEM mark, which sits in the first column with the name in the
+    second.
     """
     out: list[str] = []
     for value in (first, second):
@@ -100,11 +116,12 @@ def nameplates(first: object, second: object) -> list[str]:
 
 
 def tokens(value: object) -> set[str]:
-    """The codes in a 主要燃費改善対策 cell.
+    """The codes in a fuel-economy-improvement cell.
 
     The cell separates its codes with newlines on some sheets and commas on others, so the
-    reader splits on anything that is not a letter or digit rather than on one of them. Ｈ is a
-    code in its own right, and normalising the newlines away would bury it inside ＶＩEPＨBC.
+    reader splits on anything that is not a letter or digit rather than on one of them. H is a
+    code in its own right, and normalising the newlines away would bury it inside a run like
+    VIEPHBC.
     """
     if value is None or (isinstance(value, float) and pd.isna(value)):
         return set()
@@ -116,7 +133,7 @@ def columns(df: pd.DataFrame, where_from: str) -> dict[str, int]:
     """{role: column index} for one maker sheet.
 
     A header label is read down a column, not across a row: the Nissan and Honda sheets break
-    主要燃費改善対策 over three lines (主要 / 燃費 / 改善) in the same column, while every other
+    the fuel-economy-improvement label over three lines in the same column, while every other
     sheet writes it in one cell. Joining the header block down each column reads both. The join
     also picks up the sheet title above the label, so a keyword is searched for anywhere in the
     joined text rather than at its start.
@@ -141,9 +158,16 @@ def columns(df: pd.DataFrame, where_from: str) -> dict[str, int]:
 
 def main() -> None:
     """One row per company, nameplate and powertrain."""
-    makers = {norm(r["mlit_make"]): r["company"] for r in csv.DictReader(MAKERS.open(newline=""))}
+    makers = {
+        norm(r["mlit_make"]): r["company"]
+        for r in csv.DictReader(MAKERS.open(newline=""))
+        if r["read"] == "yes"
+    }
+    names = {
+        norm(r["source_label"]): r["model_en"] for r in csv.DictReader(MODEL_NAMES.open(newline=""))
+    }
     groups: dict[tuple[str, str, str, int], list[float]] = {}
-    sources: dict[tuple[str, str, str, int], str] = {}
+    sources: dict[tuple[str, str, str, int], tuple[str, str]] = {}
     for path in sorted(RAW.glob("mlit_fuel_economy_*_wltc_*.xlsx")):
         name = path.name
         edition = int(path.stem.rsplit("_", 1)[1])
@@ -185,14 +209,21 @@ def main() -> None:
                 hybrid = HYBRID_MEASURE in measures
                 if HYBRID_ENGINE in engine and not hybrid:
                     raise SystemExit(
-                        f"{name} {sheet} row {i + 1}: 原動機 lists {HYBRID_ENGINE} (so the grade "
-                        f"has more than one power source) but 主要燃費改善対策 has no "
-                        f"{HYBRID_MEASURE} token ({engine!r}, {sorted(measures)})"
+                        f"{name} {sheet} row {i + 1}: the engine cell marks an "
+                        "internal-combustion engine (so the grade has more than one power "
+                        f"source) but the improvement codes have no {HYBRID_MEASURE} token "
+                        f"({engine!r}, {sorted(measures)})"
                     )
                 for model in models:
-                    key = (company, model, "HEV" if hybrid else "ICE", edition)
+                    model_en = names.get(model)
+                    if model_en is None:
+                        raise SystemExit(
+                            f"{name} {sheet} row {i + 1}: nameplate {model!r} is not in "
+                            f"{MODEL_NAMES.name}"
+                        )
+                    key = (company, model_en, "HEV" if hybrid else "ICE", edition)
                     groups.setdefault(key, []).append(float(co2))
-                    sources[key] = name
+                    sources[key] = (name, model)
 
     # A certified value does not change between editions; only the list of what is still
     # type-approved does. So the newest edition that carries a nameplate wins, and an older
@@ -204,11 +235,13 @@ def main() -> None:
     rows: list[dict[str, object]] = []
     for (company, model, powertrain), edition in sorted(newest.items()):
         values = groups[(company, model, powertrain, edition)]
+        source_file, source_label = sources[(company, model, powertrain, edition)]
         rows.append(
             {
                 "company": company,
                 "segment": SEGMENT,
                 "model": model,
+                "source_label": source_label,
                 "powertrain": powertrain,
                 "tailpipe_gco2_km": round(sum(values) / len(values), 3),
                 "tailpipe_low_gco2_km": round(min(values), 3),
@@ -217,7 +250,7 @@ def main() -> None:
                 "edition": edition,
                 "test_cycle": TEST_CYCLE,
                 "source_id": SOURCE_ID,
-                "source_file": sources[(company, model, powertrain, edition)],
+                "source_file": source_file,
             }
         )
     with OUT.open("w", newline="") as f:
