@@ -33,6 +33,8 @@ genesis,KR,country,KR,2024,2024-01..2024-12,GV70 (JK),ICE,33983,domestic_sales,h
 genesis,KR,country,KR,2024,2024-01..2024-12,GV70 (JK EV),BEV,486,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
 genesis,KR,country,KR,2024,2024-01..2024-12,GV80 (JX),ICE,36253,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
 genesis,KR,country,KR,2024,2024-01..2024-12,GV80 Coupe (JX Coupe),ICE,3116,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,LCV,,111373,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,KR,country,KR,2024,2024-01..2024-12,HCV,,26864,domestic_sales,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
 hyundai,export,unknown,KR,2024,2024-01..2024-12,Avante (CN7),ICE,190548,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
 hyundai,export,unknown,KR,2024,2024-01..2024-12,Avante (CN7 HEV),HEV,33116,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
 hyundai,export,unknown,KR,2024,2024-01..2024-12,Avante (CN7 N),ICE,7405,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
@@ -70,6 +72,8 @@ genesis,export,unknown,KR,2024,2024-01..2024-12,GV70 (JK),ICE,18183,export_shipm
 genesis,export,unknown,KR,2024,2024-01..2024-12,GV70 EV (JK EV),BEV,1008,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
 genesis,export,unknown,KR,2024,2024-01..2024-12,GV80 (JX),ICE,25314,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
 genesis,export,unknown,KR,2024,2024-01..2024-12,GV80 Coupe (JX Coupe),ICE,3343,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,LCV,,43362,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
+hyundai,export,unknown,KR,2024,2024-01..2024-12,HCV,,5377,export_shipments,hyundai_ir_sales_results,hyundai_2024_sales_by_model.xlsx
 hyundai,KR,country,KR,2025,2025-01..2025-12,Avante (CN7),ICE,62854,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
 hyundai,KR,country,KR,2025,2025-01..2025-12,Avante (CN7 HEV),HEV,14782,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
 hyundai,KR,country,KR,2025,2025-01..2025-12,Avante (CN7 N),ICE,1699,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
@@ -107,6 +111,8 @@ genesis,KR,country,KR,2025,2025-01..2025-12,GV70 (JK),ICE,33568,domestic_sales,h
 genesis,KR,country,KR,2025,2025-01..2025-12,GV70 (JK EV),BEV,1142,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
 genesis,KR,country,KR,2025,2025-01..2025-12,GV80 (JX),ICE,30797,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
 genesis,KR,country,KR,2025,2025-01..2025-12,GV80 Coupe (JX Coupe),ICE,1599,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,LCV,,95147,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,KR,country,KR,2025,2025-01..2025-12,HCV,,26799,domestic_sales,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
 hyundai,export,unknown,KR,2025,2025-01..2025-12,Avante (CN7),ICE,137678,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
 hyundai,export,unknown,KR,2025,2025-01..2025-12,Avante (CN7 HEV),HEV,42840,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
 hyundai,export,unknown,KR,2025,2025-01..2025-12,Avante (CN7 N),ICE,8936,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
@@ -145,3 +151,5 @@ genesis,export,unknown,KR,2025,2025-01..2025-12,GV70 (JK),ICE,20991,export_shipm
 genesis,export,unknown,KR,2025,2025-01..2025-12,GV70 EV (JK EV),BEV,839,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
 genesis,export,unknown,KR,2025,2025-01..2025-12,GV80 (JX),ICE,28483,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
 genesis,export,unknown,KR,2025,2025-01..2025-12,GV80 Coupe (JX Coupe),ICE,4961,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,LCV,,43092,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx
+hyundai,export,unknown,KR,2025,2025-01..2025-12,HCV,,4635,export_shipments,hyundai_ir_sales_results,hyundai_2025_sales_by_model.xlsx

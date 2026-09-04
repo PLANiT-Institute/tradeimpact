@@ -105,8 +105,11 @@ def main() -> None:
         tier_c = sum(int(c["units"]) for c in mine if c["vkt_tier"] == "C")
         life_weighted = sum(int(c["units"]) * int(c["lifetime_years"]) for c in mine)
         countries = {c["destination"] for c in mine}
-        vkt_tiers = Counter(params[(market, m)]["vkt_tier"] for m in countries)
-        fleet_c = sum(1 for m in countries if params[(market, m)]["fleet_intensity_tier"] == "C")
+        # Every priced cell names its own (destination, segment), and each of those has its
+        # own benchmark row, so the tier counts are taken over those pairs.
+        keys = {(market, c["destination"], c["segment"]) for c in mine}
+        vkt_tiers = Counter(params[k]["vkt_tier"] for k in keys)
+        fleet_c = sum(1 for k in keys if params[k]["fleet_intensity_tier"] == "C")
         reasons: dict[str, int] = defaultdict(int)
         for w in held:
             key = w["powertrain"] if w["powertrain"] in PRICED_POWERTRAIN_REASONS else OTHER_REASON
@@ -125,7 +128,7 @@ def main() -> None:
         market_warnings = sorted(
             {
                 w.split(":")[0]
-                for (m, _c), p in params.items()
+                for (m, _c, _seg), p in params.items()
                 if m == market
                 for w in p["warnings"].split(" | ")
                 if w

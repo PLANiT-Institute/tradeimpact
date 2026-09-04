@@ -344,6 +344,54 @@ hold apart, so Lexus, Infiniti and Genesis units are counted in `held_units` and
 the group total, which understates it: Toyota's 26.8 % would be higher against the Toyota brand
 alone, and the Lexus worldwide figure needed for that is on the workbook's own Lexus sheet.
 
+## Vehicle segments, and why a benchmark is chosen per segment (2026-09-04)
+
+These companies do not only sell cars, so a result that priced everything against a car
+benchmark would be wrong twice: it would leave trucks out, and it would measure the trucks it
+did keep against the wrong fleet. Every cohort row therefore carries a `segment`, and the
+benchmark it is priced against is the one built for that same population.
+
+| Segment | What it is | Where it is used |
+|---|---|---|
+| `passenger_car` | cars: EU27 M1, Korea 승용, Japan 乗用車 | EU27, Korea |
+| `light_duty` | cars and light trucks together | the United States |
+| `freight` | goods vehicles: Korea 화물 | Korea |
+| `bus` | buses and minibuses: Korea 승합 | Korea |
+
+**Why the United States is one segment and not two.** The EPA inventory does publish passenger
+cars (295,400 ktCO₂ in 2023) and light-duty trucks (709,900) separately, so segment emissions
+are not missing. The distance and stock statistics are the problem: FHWA VM-1 splits the fleet
+by **wheelbase**, not by body type. Cars are 29 % of light-duty CO₂ while the short-wheelbase
+class holds 76 % of the vehicles, so dividing the car numerator by the short-wheelbase
+denominator gives 84 gCO₂/km, below the plausibility floor and plainly wrong. Pairing like with
+like gives 217 gCO₂/km. The consequence is stated because it flatters the companies: a benchmark
+that includes pickups and large SUVs is higher than a car-only benchmark would be, and a higher
+benchmark makes any product look better. This is the same disclosure as the segment ratio of
+1.0 and is why US pickups (Tacoma, Tundra, Frontier, Santa Cruz) sit inside the cohort rather
+than beside it.
+
+**Europe needs no such compromise.** Its numerator is Eurostat CRF 1.A.3.b.i, passenger cars
+alone rather than transport as a whole, and its denominator is passenger-car stock and
+passenger-car vehicle-kilometres. Both sides describe the same population.
+
+**Korea carries all three segments** because emissions, stock, distance and vehicle age are all
+published under the same four registration classes:
+
+| Segment | Distance | Intensity | Lifetime |
+|---|---|---|---|
+| 승용 passenger car | 11,963 km/yr | 203.3 gCO₂/km | 11 y |
+| 화물 freight | 17,363 km/yr | 428.1 gCO₂/km | 13 y |
+| 승합 bus | 20,630 km/yr | 690.6 gCO₂/km | 14 y |
+
+That is what lets Hyundai's Porter class (111,373 units in 2024) be measured against Korean
+goods vehicles instead of against cars: S1 +3.13 MtCO₂e, S2 −0.12. Heavy trucks and coaches
+above 3.5 t are counted and withheld (26,864 units in 2024) because Korea's fuel-economy
+labelling scheme does not certify them, so no product intensity exists.
+
+**Where a country publishes no split**, the rule is to fall back to the road-transport sector as
+a whole and to tier the value down to C, saying so on the row. No market needs that fallback
+today; it is recorded here so the choice is not reinvented later.
+
 ## Data-quality tiers (whitepaper §5.1, every value flagged)
 
 Three tiers, defined in `data/auto/registry/tiers.csv` with the whitepaper wording and the

@@ -46,8 +46,11 @@ FUEL = DATA / "method" / "fuel_carbon_factors.csv"
 OUT = DATA / "processed" / "vehicle_technology_kr_kea.csv"
 SOURCE_ID = "kea_fuel_economy_labels"
 TEST_CYCLE = "KR_5CYCLE"
+#: KEA vehicle classes -> the project's segments. All three are certified in the same file.
+VEHICLE_CLASS = {"승용차": "passenger_car", "화물차": "freight", "승합차": "bus"}
 FIELDS = [
     "company",
+    "segment",
     "model",
     "powertrain",
     "tailpipe_gco2_km",
@@ -89,7 +92,10 @@ def main() -> None:
     raw = pd.read_csv(RAW, encoding="utf-8-sig")
     mapping = pd.read_csv(MAP)
     factors = {r["fuel"]: float(r["gco2_per_litre"]) for r in csv.DictReader(FUEL.open())}
-    df = raw[(raw["차종"] == "승용차") & ~raw["모델명"].str.contains("개조차", na=False)].copy()
+    df = raw[
+        raw["차종"].isin(VEHICLE_CLASS) & ~raw["모델명"].str.contains("개조차", na=False)
+    ].copy()
+    df["segment"] = df["차종"].map(VEHICLE_CLASS)
     df["kea_base"] = df["모델명"].str.extract(BASE)[0]
     df = df.merge(
         mapping,
@@ -113,7 +119,7 @@ def main() -> None:
 
     df["tailpipe"] = df.apply(tailpipe, axis=1)
     df["wh_km"] = df.apply(lambda r: 1000.0 / r["fe"] if r["powertrain"] == "BEV" else None, axis=1)
-    grp = df.groupby(["company", "model_en", "powertrain"], as_index=False).agg(
+    grp = df.groupby(["company", "segment", "model_en", "powertrain"], as_index=False).agg(
         tailpipe_gco2_km=("tailpipe", "mean"),
         energy_wh_km=("wh_km", "mean"),
         n_trims=("모델명", "size"),
@@ -123,6 +129,7 @@ def main() -> None:
         rows.append(
             {
                 "company": r["company"],
+                "segment": r["segment"],
                 "model": r["model_en"],
                 "powertrain": r["powertrain"],
                 "tailpipe_gco2_km": ""
@@ -141,7 +148,9 @@ def main() -> None:
         w.writerows(rows)
     unmapped = sorted(
         set(
-            raw[(raw["차종"] == "승용차") & raw["제조(수입사)"].isin({"현대", "기아"})]["모델명"]
+            raw[raw["차종"].isin(VEHICLE_CLASS) & raw["제조(수입사)"].isin({"현대", "기아"})][
+                "모델명"
+            ]
             .str.extract(BASE)[0]
             .dropna()
         )

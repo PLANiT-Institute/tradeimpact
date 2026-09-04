@@ -1,5 +1,5 @@
 company,kea_make,kea_base,model_en,note
-hyundai,현대,아반떼,Avante,IR label "Avante (CN7 ...)"
+hyundai,현대,아반떼,Avante,"IR label ""Avante (CN7 ...)"""
 hyundai,현대,쏘나타,Sonata,
 hyundai,현대,그랜저,Grandeur,
 hyundai,현대,아이오닉5,IONIQ 5,
@@ -11,7 +11,7 @@ hyundai,현대,베뉴,Venue,
 hyundai,현대,코나,Kona,
 hyundai,현대,투싼,Tucson,
 hyundai,현대,넥쏘,NEXO,hydrogen fuel cell; km/kg in the 복합_연비 column
-hyundai,현대,싼타페,Santa-Fe,IR label "Santa-Fe (MX5 ...)"
+hyundai,현대,싼타페,Santa-Fe,"IR label ""Santa-Fe (MX5 ...)"""
 hyundai,현대,팰리세이드,Palisade,
 hyundai,현대,벨로스터,Veloster,
 hyundai,현대,엑센트,Accent,
@@ -37,8 +37,8 @@ kia,기아,K7,K7,
 kia,기아,K8,K8,
 kia,기아,K9,K9,
 kia,기아,PV5,PV5,
-kia,기아,니로,Niro,HEV trims; the EV is the IR label "Niro EV"
-kia,기아,레이,Ray,the EV is the IR label "Ray EV"
+kia,기아,니로,Niro,"HEV trims; the EV is the IR label ""Niro EV"""
+kia,기아,레이,Ray,"the EV is the IR label ""Ray EV"""
 kia,기아,모닝,Morning / Picanto,IR label as published
 kia,기아,모하비,Mohave,
 kia,기아,셀토스,Seltos,
@@ -48,3 +48,13 @@ kia,기아,스포티지,Sportage,
 kia,기아,쏘렌토,Sorento,
 kia,기아,쏘울,Soul,
 kia,기아,스타리아,Staria,Kia-badged row in the KEA file; ignored
+hyundai,현대,포터,Porter,1-tonne truck; the IR file reports it inside LCV
+hyundai,현대,포터2.5디젤,Porter,same nameplate written without a space
+hyundai,현대,포터일렉트릭,Porter,battery-electric Porter
+hyundai,현대,그랜드,Grand Starex,Grand Starex written short in the freight list
+hyundai,현대,엠티알ST1승합자동차,ST1,ST1 van
+hyundai,현대,엠티알ST1어린이운송승합차,ST1,ST1 school-bus variant
+hyundai,현대,한국상용1톤롱바디EV트럭,Korean Commercial 1t EV,converter-built electric truck
+hyundai,현대,한국상용0.9톤롱바디EV내장탑트럭,Korean Commercial 0.9t EV,converter-built electric truck
+kia,기아,봉고,Bongo,1-tonne truck
+kia,기아,타스만,Tasman,pickup truck

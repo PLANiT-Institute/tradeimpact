@@ -74,6 +74,7 @@ CELL_FIELDS = [
     "market",
     "company",
     "destination",
+    "segment",
     "model",
     "powertrain",
     "scenario",
@@ -113,6 +114,7 @@ ANNUAL_CELL_FIELDS = [
     "company",
     "destination",
     "cohort_year",
+    "segment",
     "model",
     "powertrain",
     "scenario",
@@ -130,6 +132,7 @@ WITHHELD_FIELDS = [
     "company",
     "destination",
     "cohort_year",
+    "segment",
     "model",
     "powertrain",
     "units",
@@ -205,18 +208,19 @@ def main() -> None:
     )
 
     for c in cohorts:
-        market, country = c["market"], c["destination"]
+        market, country, segment = c["market"], c["destination"], c["segment"]
         units, powertrain = int(c["units"]), c["powertrain"]
         cohort_year = int(c["cohort_year"])
         identity = {
             "market": market,
+            "segment": segment,
             "company": c["company"],
             "destination": country,
             "cohort_year": cohort_year,
             "model": c["model"],
             "powertrain": powertrain,
         }
-        p = params.get((market, country))
+        p = params.get((market, country, segment))
         if p is None:
             withheld.append(
                 {
@@ -243,7 +247,7 @@ def main() -> None:
         for t in range(life):
             surviving[(market, c["company"], cohort_year)][cohort_year + t] += units
         for scenario in scenarios[market]:
-            trajectory = reference[(market, country, scenario)]
+            trajectory = reference[(market, country, segment, scenario)]
             tier_flags = tiers(p, c, country, scenario, rate_tiers)
             cumulative = 0.0
             e_prod0 = 0.0
@@ -394,7 +398,7 @@ def build_exclusions(
         Exclusion rows sorted by market, company, scenario.
     """
     reasons: dict[str, dict[str, str]] = defaultdict(dict)
-    for (market, _country), p in params.items():
+    for (market, _country, _segment), p in params.items():
         for entry in filter(None, p["scenario_exclusion_reason"].split(" | ")):
             scenario, _, reason = entry.partition(": ")
             reasons[market][scenario] = reason

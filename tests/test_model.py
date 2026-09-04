@@ -60,13 +60,14 @@ def company_rows() -> list[dict[str, str]]:
 
 
 @pytest.fixture(scope="module")
-def rates() -> dict[tuple[str, str, str], float]:
-    """(market, country, scenario) -> r_fleet, read off the year-0 trajectory row."""
-    out: dict[tuple[str, str, str], float] = {}
+def rates() -> dict[tuple[str, str, str, str], float]:
+    """(market, country, segment, scenario) -> r_fleet, from the year-0 trajectory row."""
+    out: dict[tuple[str, str, str, str], float] = {}
     for path in sorted(OUT.glob("reference_trajectories_*.csv")):
         for r in rows(path):
             if r["t"] == "0":
-                out[(r["market"], r["country"], r["scenario"])] = float(r["r_fleet"])
+                key = (r["market"], r["country"], r["segment"], r["scenario"])
+                out[key] = float(r["r_fleet"])
     return out
 
 
@@ -90,13 +91,13 @@ def withheld_units(market: str) -> dict[str, int]:
 
 
 def test_ice_hev_cells_match_closed_form(
-    cells: list[dict[str, str]], rates: dict[tuple[str, str, str], float]
+    cells: list[dict[str, str]], rates: dict[tuple[str, str, str, str], float]
 ) -> None:
     checked = 0
     for c in cells:
         if c["powertrain"] not in ("ICE", "HEV"):
             continue
-        r = rates[(c["market"], c["destination"], c["scenario"])]
+        r = rates[(c["market"], c["destination"], c["segment"], c["scenario"])]
         T = int(c["lifetime_years"])
         e_ref0, e_prod = float(c["e_ref_year0_kgco2e"]), float(c["e_prod_year0_kgco2e"])
         geometric = T if abs(r) < 1e-15 else (1 - (1 - r) ** T) / r
