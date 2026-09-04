@@ -8,9 +8,10 @@ the engagement is governed by the Climate Arc grant proposal (see `claude-docs/`
 
 ## Research process
 
-1. **Targets** — companies: Hyundai and Kia (Korea) now; the Japanese companies are
-   deferred (their EEA snapshots stay pinned, `in_scope = no` in
-   `data/auto/sales/method/companies.csv`). Destinations: a company's sales to every
+1. **Targets** — companies: Hyundai and Kia (Korea) and Toyota and Honda (Japan). Lexus,
+   Genesis, Nissan, Suzuki, Mazda, Mitsubishi and Subaru have pinned EEA snapshots and sit
+   out of scope (`in_scope = no` in `data/auto/sales/method/companies.csv`), so any of them
+   enters on one flag. Destinations: a company's sales to every
    country worldwide (whitepaper Level 1, operating-country basis) — the reader filters
    destinations in the dashboard (US only, everything except Korea, …). Benchmarks exist
    today for the EU27 member states, the United States and Korea; `ti_coverage.csv` shows
@@ -67,8 +68,10 @@ previously published EU27 result exactly when fed the archived inputs (see
 
 | Market, cohort | Company | Covered | S1 current | S2 committed | S3 1.5 °C |
 |---|---|---|---|---|---|
-| EU27, 2024 registrations | Hyundai | 95.4 % | −1.66 MtCO₂e | −3.82 | −8.00 |
+| EU27, 2024 registrations | Toyota | 96.8 % | −1.68 MtCO₂e | −6.29 | −14.37 |
+| EU27, 2024 registrations | Hyundai | 95.4 % | −1.66 | −3.82 | −8.00 |
 | EU27, 2024 registrations | Kia | 91.4 % | −1.52 | −3.49 | −7.37 |
+| EU27, 2024 registrations | Honda | 95.8 % | −0.15 | −0.37 | −0.76 |
 | US, 2024 brand sales | Hyundai | 99.0 % | **+1.56** | excluded (no NDC in force) | −13.13 |
 | US, 2025 brand sales | Hyundai | 98.4 % | **+1.50** | excluded (no NDC in force) | −14.20 |
 | US, 2024 brand sales | Kia | 98.0 % | **+1.01** | excluded (no NDC in force) | −12.77 |

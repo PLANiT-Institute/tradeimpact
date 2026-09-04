@@ -1,4 +1,31 @@
 company,destination_group,home_country,destination,destination_level,cohort_year,period,basis,units,priced_units,withheld_units,status,market,source_file,note
+honda,EU27,no,AT,country,2024,2024-01..2024-12,registrations,1104,1069,35,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,BE,country,2024,2024-01..2024-12,registrations,1793,1675,118,priced,EU27,eea_honda_2024_final.json,no sourced utility factor; the registration dataset reports no certified intensity for 
+honda,EU27,no,BG,country,2024,2024-01..2024-12,registrations,174,170,4,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,CY,country,2024,2024-01..2024-12,registrations,141,141,0,priced,EU27,eea_honda_2024_final.json,
+honda,EU27,no,CZ,country,2024,2024-01..2024-12,registrations,1392,1327,65,priced,EU27,eea_honda_2024_final.json,no sourced utility factor; the registration dataset reports no certified intensity for 
+honda,EU27,no,DE,country,2024,2024-01..2024-12,registrations,7062,6788,274,priced,EU27,eea_honda_2024_final.json,no sourced utility factor; the registration dataset reports no certified intensity for 
+honda,EU27,no,DK,country,2024,2024-01..2024-12,registrations,862,759,103,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,EE,country,2024,2024-01..2024-12,registrations,535,510,25,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,ES,country,2024,2024-01..2024-12,registrations,3844,3753,91,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,FI,country,2024,2024-01..2024-12,registrations,203,166,37,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,FR,country,2024,2024-01..2024-12,registrations,4787,4620,167,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,GR,country,2024,2024-01..2024-12,registrations,439,432,7,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,HR,country,2024,2024-01..2024-12,registrations,162,156,6,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,HU,country,2024,2024-01..2024-12,registrations,735,706,29,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,IE,country,2024,2024-01..2024-12,registrations,243,204,39,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,IT,country,2024,2024-01..2024-12,registrations,7447,7371,76,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,LT,country,2024,2024-01..2024-12,registrations,159,151,8,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,LU,country,2024,2024-01..2024-12,registrations,197,0,197,withheld,EU27,eea_honda_2024_final.json,destination benchmark withheld; no sourced utility factor
+honda,EU27,no,LV,country,2024,2024-01..2024-12,registrations,131,126,5,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,MT,country,2024,2024-01..2024-12,registrations,30,29,1,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,NL,country,2024,2024-01..2024-12,registrations,1083,966,117,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,PL,country,2024,2024-01..2024-12,registrations,4015,3882,133,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,PT,country,2024,2024-01..2024-12,registrations,727,666,61,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,RO,country,2024,2024-01..2024-12,registrations,1098,1069,29,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,SE,country,2024,2024-01..2024-12,registrations,995,952,43,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,SI,country,2024,2024-01..2024-12,registrations,246,244,2,priced,EU27,eea_honda_2024_final.json,no sourced utility factor
+honda,EU27,no,SK,country,2024,2024-01..2024-12,registrations,666,639,27,priced,EU27,eea_honda_2024_final.json,no sourced utility factor; the registration dataset reports no certified intensity for 
 hyundai,EU27,no,AT,country,2024,2024-01..2024-12,registrations,11364,10912,452,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
 hyundai,EU27,no,BE,country,2024,2024-01..2024-12,registrations,12149,10911,1238,priced,EU27,eea_hyundai_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
 hyundai,EU27,no,BG,country,2024,2024-01..2024-12,registrations,2336,2176,160,priced,EU27,eea_hyundai_2024_final.json,no sourced utility factor
@@ -79,3 +106,30 @@ kia,others,no,eastern_europe,region,2026,2026-01..2026-06,retail_sales,38572,0,0
 kia,others,no,europe,region,2026,2026-01..2026-06,retail_sales,290820,0,0,region_unpriced,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
 kia,others,no,latin_america,region,2026,2026-01..2026-06,retail_sales,83951,0,0,region_unpriced,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
 kia,others,no,middle_east,region,2026,2026-01..2026-06,retail_sales,71125,0,0,region_unpriced,,kia_2026_retail_sales_by_model_market.xlsx,sales source reports a region; a country benchmark cannot be applied
+toyota,EU27,no,AT,country,2024,2024-01..2024-12,registrations,11120,10768,352,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+toyota,EU27,no,BE,country,2024,2024-01..2024-12,registrations,23650,22722,928,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; the registration dataset reports no certified intensity for 
+toyota,EU27,no,BG,country,2024,2024-01..2024-12,registrations,5253,4961,292,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,CY,country,2024,2024-01..2024-12,registrations,14,7,7,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,CZ,country,2024,2024-01..2024-12,registrations,18911,18428,483,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,DE,country,2024,2024-01..2024-12,registrations,95267,93242,2025,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; the registration dataset reports no certified intensity for 
+toyota,EU27,no,DK,country,2024,2024-01..2024-12,registrations,13187,12693,494,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,EE,country,2024,2024-01..2024-12,registrations,4448,4275,173,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+toyota,EU27,no,ES,country,2024,2024-01..2024-12,registrations,100873,97284,3589,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,FI,country,2024,2024-01..2024-12,registrations,12449,11328,1121,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,FR,country,2024,2024-01..2024-12,registrations,134994,130556,4438,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+toyota,EU27,no,GR,country,2024,2024-01..2024-12,registrations,23480,23118,362,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,HR,country,2024,2024-01..2024-12,registrations,4224,4127,97,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,HU,country,2024,2024-01..2024-12,registrations,14275,14054,221,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+toyota,EU27,no,IE,country,2024,2024-01..2024-12,registrations,17079,16150,929,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,IT,country,2024,2024-01..2024-12,registrations,122925,120233,2692,priced,EU27,eea_toyota_2024_final.json,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+toyota,EU27,no,LT,country,2024,2024-01..2024-12,registrations,6119,5745,374,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,LU,country,2024,2024-01..2024-12,registrations,1210,0,1210,withheld,EU27,eea_toyota_2024_final.json,destination benchmark withheld; no sourced utility factor
+toyota,EU27,no,LV,country,2024,2024-01..2024-12,registrations,2838,2752,86,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,MT,country,2024,2024-01..2024-12,registrations,1054,1045,9,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,NL,country,2024,2024-01..2024-12,registrations,29853,28630,1223,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,PL,country,2024,2024-01..2024-12,registrations,103174,101852,1322,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,PT,country,2024,2024-01..2024-12,registrations,11149,10116,1033,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,RO,country,2024,2024-01..2024-12,registrations,12799,12213,586,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,SE,country,2024,2024-01..2024-12,registrations,20143,18656,1487,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,SI,country,2024,2024-01..2024-12,registrations,3394,3291,103,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor
+toyota,EU27,no,SK,country,2024,2024-01..2024-12,registrations,9212,9031,181,priced,EU27,eea_toyota_2024_final.json,no sourced utility factor

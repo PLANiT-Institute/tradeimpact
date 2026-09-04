@@ -1,6 +1,12 @@
 company,country,in_scope,note
 hyundai,KR,yes,Hyundai Motor Company brand (EEA Mk=HYUNDAI)
 kia,KR,yes,Kia Corporation brand (EEA Mk=KIA)
-toyota,JP,no,deferred by the project lead on 2026-09-04; snapshot stays pinned for later
-honda,JP,no,deferred by the project lead on 2026-09-04; snapshot stays pinned for later
+toyota,JP,yes,Toyota Motor Corporation brand (EEA Mk=TOYOTA); Lexus is a separate make and a separate row here
+honda,JP,yes,Honda Motor brand (EEA Mk=HONDA); second Japanese maker by worldwide volume
 genesis,KR,no,Genesis brand of Hyundai Motor Company; reported inside Hyundai's IR files (US and Korea) and as EEA Mk=GENESIS; outside the Hyundai brand scope
+lexus,JP,no,Lexus brand of Toyota Motor Corporation (EEA Mk=LEXUS); held out of the Toyota brand scope the same way Genesis is held out of Hyundai's; 57496 EU27 registrations in 2024
+nissan,JP,no,Nissan Motor (EEA Mk=NISSAN); snapshot pinned 2026-09-04; the largest Japanese brand after Toyota in the EU27 (198048 registrations in 2024) though third worldwide
+suzuki,JP,no,Suzuki Motor (EEA Mk=SUZUKI); snapshot pinned 2026-09-04; 174450 EU27 registrations in 2024
+mazda,JP,no,Mazda Motor (EEA Mk=MAZDA); snapshot pinned 2026-09-04; 138054 EU27 registrations in 2024
+mitsubishi,JP,no,Mitsubishi Motors (EEA Mk=MITSUBISHI); snapshot pinned 2026-09-04; 47647 EU27 registrations in 2024
+subaru,JP,no,Subaru Corporation (EEA Mk=SUBARU); snapshot pinned 2026-09-04; 19525 EU27 registrations in 2024

@@ -100,6 +100,16 @@ parameters and every tier flag per country, with a per-country detail panel. `da
 only sub-directories: `registry/` (sources, raw files, tiers), `database/` (the SQLite, the page and
 a double-click launcher), `dashboard/` (map assets).
 
+**Toyota and Honda priced in the EU27 (2026-09-04).** Both entered on the `companies.csv` flag
+with no new acquisition: Toyota 777,277 covered units, S1 −1.68 MtCO2e / S2 −6.29 / S3 −14.37;
+Honda 38,571 units, −0.15 / −0.37 / −0.76. Both are `directional_only` (tier-C unit share 53.6 %
+against the 50 % threshold) because their volumes concentrate in member states on the EU-average
+distance proxy. EEA snapshots for Nissan (198,048 EU27 registrations, the largest Japanese brand
+after Toyota in Europe), Suzuki (174,450), Mazda (138,054), Mitsubishi (47,647), Subaru (19,525)
+and Lexus (57,496) are pinned out of scope; the second-Japanese-maker choice differs between the
+worldwide basis (Honda) and the EU27 basis (Nissan). Scouts are running on the Japan destination
+benchmark and on free model-level sales for Toyota and Honda.
+
 ## 2. Phases
 
 | Phase | Objectives met | Deliverables accepted | Status | Gate verdict |

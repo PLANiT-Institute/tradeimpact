@@ -1,4 +1,244 @@
 company,destination,model,powertrain,cohort_year,tailpipe_gco2_km,tailpipe_units,energy_wh_km,energy_units,units,test_cycle,source_id,source_file
+honda,AT,CIVIC E:HEV 2.0 ADVA,HEV,2024,114.2059,34,,0,34,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CIVIC E:HEV 2.0 ELEG,HEV,2024,108.0702,57,,0,57,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CIVIC E:HEV 2.0 SPOR,HEV,2024,113.0357,28,,0,28,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CIVIC TYPE R 2.0 TYP,ICE,2024,186.25,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CR-V E:HEV 2WD 2.0 E,HEV,2024,134.2381,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CR-V E:HEV 4WD 2.0 A,HEV,2024,151.0366,82,,0,82,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CR-V E:HEV 4WD 2.0 E,HEV,2024,151.0,45,,0,45,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,CR-V PHEV 2.0 ADVANC,PHEV,2024,18.1143,35,155.8,35,35,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,E:NY1 EV ADVANCE,BEV,2024,0.0,109,182.0,109,109,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,E:NY1 EV ELEGANCE,BEV,2024,0.0,18,182.0,18,18,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,HONDA E EV ADVANCE,BEV,2024,0.0,1,178.0,1,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,HR-V E:HEV 1.5 ADVAN,HEV,2024,122.0,227,,0,227,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,HR-V E:HEV 1.5 ELEGA,HEV,2024,122.0,109,,0,109,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,JAZZ 1.5 ADVANCE,HEV,2024,104.0,46,,0,46,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,JAZZ 1.5 ADVANCE SPO,HEV,2024,106.0,22,,0,22,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,JAZZ 1.5 ELEGANCE,HEV,2024,102.0244,41,,0,41,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,JAZZ CROSSTAR 1.5 AD,HEV,2024,108.0635,63,,0,63,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,UNASSIGNED,BEV,2024,0.0,4,182.0,4,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,ZR-V 2.0 ADVANCE,HEV,2024,132.1633,49,,0,49,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,ZR-V 2.0 ELEGANCE,HEV,2024,130.1176,17,,0,17,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,AT,ZR-V 2.0 SPORT,HEV,2024,131.0714,84,,0,84,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,CIVIC,HEV,2024,113.0424,283,,0,283,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,CIVIC 5DR,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,CIVIC TYPE R,ICE,2024,186.1579,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,CR-V,HEV,2024,142.6988,249,,0,249,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,CR-V,PHEV,2024,18.3333,117,155.9915,117,117,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,E:NY1,BEV,2024,0.0,139,182.0,139,139,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,HR-V,HEV,2024,122.0,513,,0,513,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,JAZZ,HEV,2024,105.5955,220,,0,220,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BE,ZR-V,HEV,2024,131.6781,233,,0,233,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,CIVIC,HEV,2024,112.7143,28,,0,28,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,CIVIC TYPE R,ICE,2024,186.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,HONDA CR V,HEV,2024,134.0,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,HONDA CRV,HEV,2024,150.45,60,,0,60,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,HONDA CRV,PHEV,2024,18.75,4,167.0,4,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,HONDA HRV,HEV,2024,122.0,20,,0,20,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,HONDA ZRV,HEV,2024,131.3421,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,BG,JAZZ,HEV,2024,108.0,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,CIVIC,HEV,2024,118.2,15,,0,15,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,CIVIC TYPE R,ICE,2024,186.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,CR-V,HEV,2024,147.6923,26,,0,26,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,E:NY1,BEV,2024,0.0,5,182.0,5,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,HR-V,HEV,2024,122.0,81,,0,81,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,JAZZ,HEV,2024,105.6,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CY,ZR-V,HEV,2024,131.125,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,CIVIC,HEV,2024,111.4634,123,,0,123,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,CIVIC 5DR,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,CIVIC TYPE R,ICE,2024,186.0,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,CR-V,HEV,2024,149.8709,604,,0,604,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,CR-V,PHEV,2024,18.0,64,156.0,64,64,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,HR-V,HEV,2024,122.0,300,,0,300,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,JAZZ,HEV,2024,106.7273,44,,0,44,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,CZ,ZR-V,HEV,2024,131.2345,226,,0,226,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,,HEV,2024,120.0,1,,0,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,CIVIC,HEV,2024,111.2564,823,,0,823,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,CIVIC,ICE,2024,191.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,CIVIC SPORT,ICE,2024,,0,,0,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,CIVIC TYPE R,ICE,2024,186.2195,123,,0,123,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,E:NY1,BEV,2024,0.0,796,182.0,796,796,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HONDA CR-V,HEV,2024,146.5512,1348,,0,1349,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HONDA CR-V,ICE,2024,,0,,0,2,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HONDA CR-V,PHEV,2024,18.3034,267,155.9963,267,267,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HONDA E,BEV,2024,0.0,4,178.0,4,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HONDA HR-V,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,HR-V,HEV,2024,122.0,1661,,0,1661,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,JAZZ,HEV,2024,105.3061,1173,,0,1173,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DE,ZR-V,HEV,2024,131.5216,855,,0,855,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,CIVIC E:HEV,HEV,2024,109.6,35,,0,35,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,CIVIC E:HEV,ICE,2024,108.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,CR-V E:PHEV,PHEV,2024,18.0,103,155.0,103,103,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,E:NY1,BEV,2024,0.0,510,182.0,510,510,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,HR-V E:HEV,HEV,2024,122.0,161,,0,161,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,HR-V E:HEV,ICE,2024,122.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,DK,JAZZ E:HEV,HEV,2024,106.3922,51,,0,51,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,CIVIC,HEV,2024,112.5128,39,,0,39,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,CIVIC TYPE R,ICE,2024,186.0,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,CR-V,HEV,2024,146.2535,217,,0,217,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,CR-V,PHEV,2024,18.0,25,155.0,25,25,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,E:NY1,BEV,2024,0.0,3,182.0,3,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,HR-V,HEV,2024,122.0,87,,0,87,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,JAZZ,HEV,2024,106.027,37,,0,37,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,EE,ZR-V,HEV,2024,131.2857,119,,0,119,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,CIVIC,HEV,2024,110.5781,922,,0,922,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,CIVIC TYPE R,ICE,2024,187.2391,46,,0,46,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,CR-V,HEV,2024,137.324,429,,0,429,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,CR-V,PHEV,2024,18.0,91,155.956,91,91,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,E:NY1,BEV,2024,0.0,35,182.0,35,35,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,HONDA E,BEV,2024,0.0,15,176.4,15,15,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,HR-V,HEV,2024,122.0,1188,,0,1188,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,JAZZ,HEV,2024,105.1941,474,,0,474,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,ES,ZR-V,HEV,2024,131.4689,644,,0,644,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,CIVIC,HEV,2024,112.8636,22,,0,22,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,CIVIC TYPE R,ICE,2024,186.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,CR-V,HEV,2024,147.1404,57,,0,57,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,CR-V,PHEV,2024,18.0,37,155.0,37,37,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,E:NY1,BEV,2024,0.0,2,182.0,2,2,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,HR-V,HEV,2024,122.0,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,JAZZ,HEV,2024,105.6061,33,,0,33,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FI,ZR-V,HEV,2024,131.3333,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,CIVIC,HEV,2024,111.9244,1190,,0,1190,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,CIVIC TYPE R,ICE,2024,186.6,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,CR-V,HEV,2024,140.7114,149,,0,149,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,CR-V,PHEV,2024,18.0898,167,156.0,167,167,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,E:NY1,BEV,2024,0.0,437,182.0,437,437,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,HR-V,HEV,2024,122.0,1265,,0,1265,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,JAZZ,HEV,2024,105.543,814,,0,814,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,FR,ZR-V,HEV,2024,131.6342,760,,0,760,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,CIVIC,HEV,2024,110.9286,42,,0,42,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,CIVIC TYPE R,HEV,2024,113.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,CIVIC TYPE R,ICE,2024,186.0,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,CR-V,HEV,2024,149.9318,44,,0,44,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,CR-V,PHEV,2024,18.2857,7,159.5714,7,7,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,E:NY1,BEV,2024,0.0,29,182.0,29,29,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,HR-V,HEV,2024,122.0,136,,0,136,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,JAZZ,HEV,2024,104.6491,114,,0,114,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,GR,ZR-V,HEV,2024,130.9298,57,,0,57,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,CIVIC,HEV,2024,112.6667,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,CIVIC TYPE R,ICE,2024,186.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,CR-V,HEV,2024,147.1837,49,,0,49,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,CR-V,PHEV,2024,18.6667,6,165.6667,6,6,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,HONDA E,BEV,2024,0.0,1,182.0,1,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,HR-V,HEV,2024,122.0,27,,0,27,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,JAZZ,HEV,2024,105.8,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HR,ZR-V,HEV,2024,131.4118,34,,0,34,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,CIVIC,HEV,2024,110.8643,140,,0,140,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,CIVIC TYPE R,ICE,2024,186.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,CR-V,HEV,2024,146.7143,119,,0,119,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,CR-V,PHEV,2024,18.0,29,156.0,29,29,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,E:NY1,BEV,2024,0.0,96,182.0,96,96,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,HONDA E,BEV,2024,0.0,3,178.0,3,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,HR-V,HEV,2024,122.0,179,,0,179,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,JAZZ,HEV,2024,105.7,60,,0,60,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,HU,ZR-V,HEV,2024,131.1346,104,,0,104,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,CIVIC,HEV,2024,114.0,61,,0,61,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,CIVIC TYPE R,ICE,2024,186.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,CR-V,HEV,2024,150.5,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,CR-V,PHEV,2024,18.0513,39,155.8718,39,39,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,E:NY1,BEV,2024,0.0,5,182.0,5,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,HONDA E,BEV,2024,0.0,1,172.0,1,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,HR-V,HEV,2024,122.0,18,,0,18,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,JAZZ,HEV,2024,104.3373,83,,0,83,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IE,ZR-V,HEV,2024,131.2609,23,,0,23,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,CIVIC,HEV,2024,110.9159,440,,0,440,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,CIVIC TYPE R,ICE,2024,185.9808,52,,0,52,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,CR-V,HEV,2024,146.1094,841,,0,841,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,CR-V,PHEV,2024,18.0,76,156.0,76,76,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,HR-V,HEV,2024,122.0,3188,,0,3188,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,JAZZ,HEV,2024,105.4675,1262,,0,1262,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,IT,ZR-V,HEV,2024,131.3734,1588,,0,1588,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,CIVIC,HEV,2024,113.3,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,CIVIC TYPE-R,ICE,2024,186.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,CR-V,HEV,2024,147.6545,55,,0,55,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,CR-V,PHEV,2024,18.0,8,155.0,8,8,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,HR-V,HEV,2024,122.0,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,JAZZ,HEV,2024,106.5263,19,,0,19,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LT,ZR-V,HEV,2024,131.2917,24,,0,24,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,CIVIC,HEV,2024,113.1579,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,CIVIC TYPE R,ICE,2024,186.0,17,,0,17,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,CR-V,HEV,2024,148.641,39,,0,39,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,CR-V,PHEV,2024,18.0,4,156.0,4,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,E:NY1,BEV,2024,0.0,19,182.0,19,19,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,HR-V,HEV,2024,122.0,28,,0,28,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,JAZZ,HEV,2024,106.381,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LU,ZR-V,HEV,2024,131.4839,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,CIVIC,HEV,2024,112.6,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,CIVIC TYPE R,ICE,2024,186.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,CR-V,HEV,2024,147.2222,63,,0,63,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,CR-V,PHEV,2024,18.0,5,155.0,5,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,E:NY1,BEV,2024,0.0,1,182.0,1,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,HRV,HEV,2024,122.0,25,,0,25,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,JAZZ,HEV,2024,106.4,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,LV,ZR-V,HEV,2024,131.84,25,,0,25,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,CIVIC,HEV,2024,113.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,CR-V,HEV,2024,151.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,CR-V,PHEV,2024,18.0,1,155.0,1,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,E NY1,BEV,2024,0.0,11,182.0,11,11,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,HR-V,HEV,2024,122.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,JAZZ,HEV,2024,105.7778,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,MT,ZR-V,HEV,2024,131.75,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,CIVIC,HEV,2024,112.8515,202,,0,202,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,CIVIC TYPE R,ICE,2024,186.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,CR-V,HEV,2024,140.9667,60,,0,60,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,CR-V,PHEV,2024,18.1795,117,155.9915,117,117,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,E:NY1,BEV,2024,0.0,118,182.0,118,118,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,HR-V,HEV,2024,122.0,311,,0,311,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,JAZZ,HEV,2024,105.4679,218,,0,218,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,NL,ZR-V,HEV,2024,131.6429,56,,0,56,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,CIVIC,HEV,2024,112.5319,423,,0,423,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,CIVIC TYPE R,ICE,2024,186.1765,51,,0,51,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,CR-V,HEV,2024,148.4243,997,,0,997,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,CR-V,PHEV,2024,18.0,133,156.0,133,133,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,HR-V,HEV,2024,122.0,1604,,0,1604,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,JAZZ,HEV,2024,108.0,199,,0,199,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PL,ZR-V,HEV,2024,131.4572,608,,0,608,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,CIVIC,HEV,2024,113.3636,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,CIVIC TYPE R,ICE,2024,186.0,18,,0,18,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,CR-V,HEV,2024,134.0,19,,0,19,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,CR-V,PHEV,2024,18.0,61,155.0,61,61,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,E:NY1,BEV,2024,0.0,34,182.0,34,34,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,HR-V,HEV,2024,122.0,410,,0,410,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,JAZZ,HEV,2024,104.782,133,,0,133,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,PT,ZR-V,HEV,2024,131.2439,41,,0,41,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,CIVIC,HEV,2024,113.1413,283,,0,283,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,CIVIC TYPE R,ICE,2024,186.0,19,,0,19,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,CR-V,HEV,2024,143.6111,360,,0,360,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,CR-V,PHEV,2024,18.0345,29,155.5517,29,29,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,E:NY1,BEV,2024,0.0,3,182.0,3,3,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,HR-V,HEV,2024,122.0,234,,0,234,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,JAZZ,HEV,2024,105.0714,28,,0,28,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,RO,ZR-V,HEV,2024,131.3239,142,,0,142,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,CIVIC,HEV,2024,111.2759,116,,0,116,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,CIVIC TYPE R,ICE,2024,186.25,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,CR-V,HEV,2024,141.0973,113,,0,113,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,CR-V,PHEV,2024,18.2326,43,156.0,43,43,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,E:NY1,BEV,2024,0.0,326,182.0,326,326,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,HR-V,HEV,2024,122.0,207,,0,207,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,JAZZ,HEV,2024,105.1917,120,,0,120,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SE,ZR-V,HEV,2024,131.1724,58,,0,58,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CIVIC / 5 VRAT / 2.0 / HEV,HEV,2024,112.3519,54,,0,54,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CIVIC / 5 VRAT / 2.0 / TYPE R,ICE,2024,186.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CR-V / 2.0 / 4WD / E-CVT / HIBRID,HEV,2024,163.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CR-V / 2.0 / FHEV / AVT / 2WD,HEV,2024,134.0,17,,0,17,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CR-V / 2.0 / FHEV / AVT / 4WD,HEV,2024,151.0,42,,0,42,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,CR-V / 2.0 / PHEV / AVT / 2WD,PHEV,2024,19.0,2,171.0,2,2,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,HR-V / 1.5 / E-CVT / FHEV,HEV,2024,122.0,39,,0,39,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,HR-V / 1.5 / E-CVT FHEV,HEV,2024,122.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,JAZZ / 1.5 / HIBRID,HEV,2024,103.6,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,JAZZ / 1.5 / HIBRID / CROSS,HEV,2024,108.0,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,JAZZ / 1.5 / HIBRID CROSS,HEV,2024,108.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SI,ZR-V / 2.0 / EHEV / AVT /,HEV,2024,131.0986,71,,0,71,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,CIVIC,HEV,2024,111.0227,44,,0,44,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,CIVIC 5DR,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,CIVIC TYPE R,ICE,2024,186.0,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,CR-V,HEV,2024,150.0,232,,0,232,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,CR-V,PHEV,2024,18.0,26,156.0,26,26,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,HR-V,HEV,2024,122.0,188,,0,188,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,HR-V.,HEV,2024,122.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,JAZZ,HEV,2024,105.7097,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
+honda,SK,ZR-V,HEV,2024,131.2409,137,,0,137,WLTP,eea_co2_monitoring_2024,eea_honda_2024_final.json
 hyundai,AT,BAYON,HEV,2024,121.0,60,,0,60,WLTP,eea_co2_monitoring_2024,eea_hyundai_2024_final.json
 hyundai,AT,BAYON,ICE,2024,125.573,705,,0,705,WLTP,eea_co2_monitoring_2024,eea_hyundai_2024_final.json
 hyundai,AT,G70 GENESIS G70,ICE,2024,216.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_hyundai_2024_final.json
@@ -1225,3 +1465,663 @@ kia,SK,STONIC,ICE,2024,128.927,918,,0,918,WLTP,eea_co2_monitoring_2024,eea_kia_2
 kia,SK,XCEED,HEV,2024,129.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
 kia,SK,XCEED,ICE,2024,140.2762,764,,0,764,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
 kia,SK,XCEED,PHEV,2024,34.5714,7,126.8571,7,7,WLTP,eea_co2_monitoring_2024,eea_kia_2024_final.json
+toyota,AT,GR YARIS 16,ICE,2024,186.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,PROACE,BEV,2024,0.0,13,264.2308,13,13,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,PROACE,ICE,2024,195.3103,348,,0,348,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,PROACE CITY VERSO,ICE,2024,145.4463,298,,0,298,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,20,203.35,20,20,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,SIENNA XLE HYBRID,HEV,2024,179.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA AYGO X,ICE,2024,109.3974,536,,0,536,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA BZ4X,BEV,2024,0.0,77,167.8442,77,77,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA C-HR,HEV,2024,110.8272,972,,0,972,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA C-HR,PHEV,2024,19.0,96,152.2396,96,96,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA CAMRY,HEV,2024,124.7573,103,,0,103,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA COROLLA,HEV,2024,109.7736,2496,,0,2496,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA COROLLA,ICE,2024,134.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA GR 86,ICE,2024,199.5484,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA GR YARIS,ICE,2024,200.7377,122,,0,122,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA HIGHLANDER,HEV,2024,158.0932,118,,0,118,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA LAND CRUISER,ICE,2024,278.4772,197,,0,197,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,250.2381,63,,0,63,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA MIRAI,FCEV,2024,0.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA PRIUS PHEV,PHEV,2024,15.5254,59,126.322,59,59,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA RAV4,HEV,2024,129.5026,1345,,0,1345,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA RAV4,PHEV,2024,22.0,196,169.4694,196,196,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA SUPRA,ICE,2024,189.3333,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA YARIS,HEV,2024,92.5294,1309,,0,1309,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA YARIS,ICE,2024,125.9513,226,,0,226,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA YARIS CROSS,HEV,2024,104.898,2421,,0,2421,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,AT,TOYOTA YARIS CROSS,ICE,2024,133.0,58,,0,58,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,BZ4X,BEV,2024,0.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,PROACE,BEV,2024,0.0,6,250.3333,6,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,PROACE,ICE,2024,192.9033,548,,0,548,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,PROACE CITY VERSO,ICE,2024,147.9361,923,,0,923,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,5,184.25,4,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA AYGO X,ICE,2024,109.9184,2879,,0,2879,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA BZ4X,BEV,2024,0.0,804,152.8781,804,804,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA C-HR,HEV,2024,109.3061,2189,,0,2189,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA C-HR,PHEV,2024,19.0065,155,152.1548,155,158,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA CAMRY,HEV,2024,125.0,153,,0,153,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA COROLLA,HEV,2024,109.26,5169,,0,5169,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA GR 86,ICE,2024,199.6852,54,,0,54,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA GR YARIS,ICE,2024,193.0216,185,,0,185,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA HIGHLANDER,HEV,2024,158.5588,68,,0,68,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA LAND CRUISER,ICE,2024,277.8108,37,,0,37,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,248.1864,59,,0,59,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA MIRAI,FCEV,2024,0.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA PRIUS PHEV,PHEV,2024,16.0135,74,126.473,74,74,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA RAV4,HEV,2024,130.3268,1426,,0,1426,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA RAV4,PHEV,2024,22.0,691,170.4211,691,691,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA SUPRA,ICE,2024,175.3684,19,,0,19,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA YARIS,HEV,2024,89.6256,3355,,0,3355,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA YARIS,ICE,2024,120.0,360,,0,360,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA YARIS CROSS,HEV,2024,103.9435,4445,,0,4445,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BE,TOYOTA YARIS CROSS,ICE,2024,133.2632,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,PROACE,ICE,2024,195.5,40,,0,40,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,PROACE CITY VERSO,ICE,2024,150.2647,34,,0,34,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA AYGO X,ICE,2024,109.9936,156,,0,156,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA BZ4X,BEV,2024,0.0,28,156.6071,28,28,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA C-HR,HEV,2024,111.8011,724,,0,724,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA C-HR,PHEV,2024,19.0,66,151.9697,66,66,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA CAMRY,HEV,2024,121.9358,109,,0,109,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA COROLLA,HEV,2024,105.6268,1487,,0,1487,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA COROLLA,ICE,2024,131.2767,318,,0,318,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA GR YARIS,ICE,2024,198.75,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA HIGHLANDER,HEV,2024,158.7,120,,0,120,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA LAND CRUISER,ICE,2024,278.4286,63,,0,63,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,254.0119,84,,0,84,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA LAND CRUISER 150 SERIES,ICE,2024,255.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA PRIUS PHEV,PHEV,2024,14.5455,11,126.9091,11,11,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA RAV4,HEV,2024,130.3247,388,,0,388,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA RAV4,ICE,2024,163.7778,18,,0,18,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA RAV4,PHEV,2024,22.0,215,170.8372,215,215,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA YARIS,HEV,2024,88.5309,501,,0,501,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA YARIS,ICE,2024,124.2511,227,,0,227,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA YARIS CROSS,HEV,2024,104.0793,454,,0,454,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,BG,TOYOTA YARIS CROSS,ICE,2024,134.0927,205,,0,205,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CY,PROACE,ICE,2024,194.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CY,RAV4,PHEV,2024,16.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CY,TOYOTA RAV4,HEV,2024,129.0,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CY,TOYOTA RAV4,PHEV,2024,18.0,6,171.0,2,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,C-HR,HEV,2024,111.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,GR YARIS,ICE,2024,180.5,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,PROACE,BEV,2024,0.0,13,266.6154,13,13,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,PROACE,ICE,2024,193.5724,1202,,0,1202,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,PROACE CITY VERSO,ICE,2024,148.3744,2046,,0,2046,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,70,203.3,70,70,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA AYGO X,ICE,2024,110.6328,885,,0,885,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA BZ4X,BEV,2024,0.0,100,155.91,100,100,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA C-HR,HEV,2024,110.571,1126,,0,1126,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA C-HR,PHEV,2024,19.0312,96,152.3438,96,96,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA CAMRY,HEV,2024,121.5426,470,,0,470,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA COROLLA,HEV,2024,106.7318,3997,,0,3997,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA COROLLA,ICE,2024,131.2354,837,,0,837,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA GR 86,ICE,2024,199.7302,63,,0,63,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA GR YARIS,ICE,2024,200.2878,205,,0,205,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA HIGHLANDER,HEV,2024,158.1184,397,,0,397,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA LAND CRUISER,ICE,2024,276.957,302,,0,302,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,252.0253,79,,0,79,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA PRIUS PHEV,PHEV,2024,15.8118,85,126.3412,85,85,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA RAV4,HEV,2024,131.0841,2724,,0,2724,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA RAV4,ICE,2024,162.3333,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA RAV4,PHEV,2024,22.0,302,170.8841,302,302,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA SUPRA,ICE,2024,182.0,14,,0,14,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA YARIS,HEV,2024,92.3025,800,,0,800,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA YARIS,ICE,2024,124.6726,727,,0,727,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA YARIS CROSS,HEV,2024,106.9687,1822,,0,1822,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,CZ,TOYOTA YARIS CROSS,ICE,2024,133.6573,534,,0,534,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,,HEV,2024,275.0,1,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,CAMRY LE,ICE,2024,,0,,0,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,CAMRY SE,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,COROLLA GR,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,FJ CRUISER,ICE,2024,268.5,2,,0,9,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,HIGHLANDER XLE,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,LAND CRUISER,ICE,2024,302.375,8,,0,19,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,LAND CRUISER 300 SERIES,ICE,2024,,0,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,LAND CRUISER I-FORCE MAX,HEV,2024,244.0,1,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,PROACE,BEV,2024,0.0,28,259.7143,28,28,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,PROACE,ICE,2024,193.2431,2756,,0,2756,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,PROACE CITY VERSO,ICE,2024,146.7245,2944,,0,2944,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,67,195.3485,66,67,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,PROACE VERSO,BEV,2024,0.0,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,PROACE VERSO,ICE,2024,189.5,14,,0,14,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,SEQUOIA HYBRID,HEV,2024,,0,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,SEQUOIA TRD PRO HYBRID,HEV,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA 4-RUNNER,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA AYGO,HEV,2024,93.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA AYGO X,HEV,2024,93.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA AYGO X,ICE,2024,110.0902,18051,,0,18051,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA BZ4X,BEV,2024,0.0,1550,151.5845,1550,1550,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA C-HR,HEV,2024,109.1767,10014,,0,10014,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA C-HR,PHEV,2024,19.0063,946,151.686,946,946,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA CAMRY,HEV,2024,123.6346,52,,0,52,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA CARMY,HEV,2024,107.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA COROLLA,HEV,2024,107.1328,17111,,0,17111,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA COROLLA,ICE,2024,114.0,1,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA COROLLA GR,ICE,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA GR 86,ICE,2024,199.7577,553,,0,553,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA GR YARIS,ICE,2024,196.5241,2099,,0,2100,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA HIGHLANDER,HEV,2024,158.9333,90,,0,90,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA HIGHLANDER,ICE,2024,157.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA LAND CRUISER,ICE,2024,275.8539,972,,0,972,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,251.3309,538,,0,538,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA LAND CRUISER 150,ICE,2024,255.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA LAND CRUISER 250,HEV,2024,276.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA LANDCRUISER 300,ICE,2024,300.0,1,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA MIRAI,FCEV,2024,0.0,148,,0,148,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA PRIUS PHEV,PHEV,2024,15.7374,198,127.3636,198,198,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA RAV4,HEV,2024,129.3042,5201,,0,5201,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA RAV4,ICE,2024,160.0,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA RAV4,PHEV,2024,22.0,702,170.4587,702,702,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA SEQUOIA,HEV,2024,,0,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA SEQUOIA HYBRID,HEV,2024,,0,,0,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA SUPRA,ICE,2024,184.9954,219,,0,219,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA YARIS,HEV,2024,91.2586,13344,,0,13344,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA YARIS,ICE,2024,126.6207,1073,,0,1073,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA YARIS CROSS,HEV,2024,102.9209,16507,,0,16507,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,TOYOTA YARIS CROSS,ICE,2024,134.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DE,YARIS CROSS,HEV,2024,122.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,COROLLA CROSS,ICE,2024,114.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,LAND CRUISER 150,ICE,2024,258.6154,13,,0,13,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,LAND CRUISER 250,ICE,2024,277.25,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,PROACE,BEV,2024,0.0,41,251.7561,41,41,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,PROACE,ICE,2024,193.6552,58,,0,58,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,PROACE CITY VERSO,ICE,2024,149.0702,57,,0,57,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,8,201.25,8,8,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,RAV 4,HEV,2024,129.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,SIENNA,ICE,2024,402.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA AYGO X,ICE,2024,110.5465,2540,,0,2540,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA BZ4X,BEV,2024,0.0,1792,154.0162,1792,1792,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA C-HR,HEV,2024,109.0879,796,,0,796,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA C-HR,PHEV,2024,19.0,171,151.2281,171,171,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA CAMRY,HEV,2024,125.0,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA COROLLA,HEV,2024,110.791,2081,,0,2081,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA GR 86,ICE,2024,199.1667,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA GR YARIS,ICE,2024,205.8,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA PRIUS PHEV,PHEV,2024,15.1818,55,124.4182,55,55,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA RAV4,HEV,2024,129.0468,470,,0,470,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA RAV4,ICE,2024,160.0,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA RAV4,PHEV,2024,22.0,268,169.3955,268,268,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA SUPRA,ICE,2024,198.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA YARIS,HEV,2024,90.6214,2208,,0,2208,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA YARIS,ICE,2024,123.0648,355,,0,355,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,DK,TOYOTA YARIS CROSS,HEV,2024,102.9793,2224,,0,2224,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,COROLLA,HEV,2024,101.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,PROACE,ICE,2024,193.881,126,,0,126,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,PROACE CITY VERSO,ICE,2024,147.7526,97,,0,97,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,RAV4,HEV,2024,127.5,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA BZ4X,BEV,2024,0.0,81,153.642,81,81,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA C-HR,HEV,2024,108.5759,382,,0,382,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA C-HR,PHEV,2024,19.0,32,152.2812,32,32,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA CAMRY,HEV,2024,116.9044,136,,0,136,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA COROLLA,HEV,2024,109.9614,1245,,0,1245,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA COROLLA,ICE,2024,130.2632,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA GR YARIS,ICE,2024,196.3261,46,,0,46,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA HIGHLANDER,HEV,2024,157.3354,161,,0,161,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA LAND CRUISER,ICE,2024,277.1899,237,,0,237,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,258.25,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA MIRAI,FCEV,2024,0.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA PRIUS PHEV,PHEV,2024,15.5882,17,125.5294,17,17,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA RAV4,HEV,2024,130.3159,839,,0,839,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA RAV4,ICE,2024,161.2419,62,,0,62,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA RAV4,PHEV,2024,22.0,119,170.4538,119,119,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA YARIS,HEV,2024,91.3744,203,,0,203,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA YARIS,ICE,2024,123.8235,51,,0,51,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA YARIS CROSS,HEV,2024,105.0446,516,,0,516,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,TOYOTA YARIS CROSS,ICE,2024,134.4615,39,,0,39,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,EE,YARIS CROSS,HEV,2024,102.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,LAND CRUISER,ICE,2024,267.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,PROACE,BEV,2024,0.0,59,267.7288,59,59,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,PROACE,ICE,2024,193.9604,1236,,0,1236,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,PROACE CITY VERSO,ICE,2024,145.2142,3949,,0,3949,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,126,194.4286,126,126,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA AYGO X,ICE,2024,110.3405,4103,,0,4103,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA BZ4X,BEV,2024,0.0,354,161.8785,354,354,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA C-HR,HEV,2024,108.4116,16422,,0,16422,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA C-HR,PHEV,2024,19.072,2154,151.4995,2154,2154,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA CAMRY,HEV,2024,120.1364,110,,0,110,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA COROLLA,HEV,2024,102.4695,22982,,0,22982,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA GR 86,ICE,2024,198.015,133,,0,133,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA GR YARIS,ICE,2024,201.5784,453,,0,453,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA HIGHLANDER,HEV,2024,158.9061,330,,0,330,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA LAND CRUISER,ICE,2024,277.2331,708,,0,708,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,251.0213,984,,0,984,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA LANDCRUISER 150,ICE,2024,267.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA LANDCRUISER(1,ICE,2024,267.0,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA RAV4,HEV,2024,129.567,11176,,0,11176,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA RAV4,ICE,2024,159.125,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA RAV4,PHEV,2024,22.0,1435,170.8606,1435,1435,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA SUPRA,ICE,2024,194.9167,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA YARIS,HEV,2024,93.4707,12734,,0,12734,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA YARIS,ICE,2024,118.0544,2999,,0,2999,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA YARIS CROSS,HEV,2024,106.3631,18329,,0,18329,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,ES,TOYOTA YARIS CROSS,ICE,2024,130.6889,45,,0,45,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,PROACE,BEV,2024,0.0,5,262.6,5,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,PROACE,ICE,2024,193.0167,60,,0,60,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,PROACE CITY VERSO,ICE,2024,148.641,39,,0,39,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,9,195.7778,9,9,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,RAV4,HEV,2024,131.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA AYGO X,ICE,2024,111.4086,93,,0,93,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA BZ4X,BEV,2024,0.0,269,153.9814,269,269,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA C-HR,HEV,2024,108.3247,1087,,0,1087,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA C-HR,PHEV,2024,19.0,252,151.4524,252,252,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA CAMRY,HEV,2024,123.908,87,,0,87,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA COROLLA,HEV,2024,104.5835,3714,,0,3714,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA GR YARIS,ICE,2024,198.871,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA LAND CRUISER,ICE,2024,278.25,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,251.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA PRIUS PHEV,PHEV,2024,15.8092,131,126.1069,131,131,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA RAV4,HEV,2024,126.911,652,,0,652,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA RAV4,ICE,2024,157.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA RAV4,PHEV,2024,22.0,738,170.4106,738,738,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA SUPRA,ICE,2024,175.6667,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA YARIS,HEV,2024,89.1275,2298,,0,2298,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA YARIS,ICE,2024,123.2174,69,,0,69,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FI,TOYOTA YARIS CROSS,HEV,2024,102.9831,2895,,0,2895,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,PROACE,BEV,2024,0.0,834,250.6331,834,834,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,PROACE,ICE,2024,195.0082,975,,0,975,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,PROACE CITY VERSO,ICE,2024,146.1086,608,,0,608,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,26,191.9231,26,26,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,PROACE OR PROACE VERSO,BEV,2024,0.0,1,244.0,1,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA AYGO X,ICE,2024,109.9991,14791,,0,14791,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA BZ4X,BEV,2024,0.0,1354,147.8154,1354,1354,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA C-HR,HEV,2024,109.2141,16091,,0,16091,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA C-HR,PHEV,2024,19.0853,1383,152.4541,1383,1383,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA CAMRY,HEV,2024,122.9073,626,,0,626,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA COROLLA,HEV,2024,104.0432,13780,,0,13780,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA COROLLA,ICE,2024,137.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA GR 86,ICE,2024,199.6667,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA GR YARIS,ICE,2024,203.5789,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA HIGHLANDER,HEV,2024,158.9274,124,,0,124,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA LAND CRUISER,ICE,2024,275.5455,22,,0,22,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,246.0714,56,,0,56,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA MIRAI,FCEV,2024,0.0,530,,0,530,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA PRIUS PHEV,PHEV,2024,14.6322,639,125.4116,639,639,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA RAV4,HEV,2024,129.2865,7238,,0,7238,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA RAV4,PHEV,2024,22.0,1886,170.5705,1886,1886,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA SUPRA,ICE,2024,161.0,13,,0,13,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA YARIS,HEV,2024,90.4812,36104,,0,36104,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA YARIS,ICE,2024,123.4709,2406,,0,2406,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA YARIS CROSS,HEV,2024,104.6898,35195,,0,35195,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,FR,TOYOTA YARIS CROSS,ICE,2024,136.7528,267,,0,267,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,PROACE,BEV,2024,0.0,7,258.5714,7,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,PROACE,ICE,2024,196.4752,101,,0,101,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,PROACE CITY,ICE,2024,151.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,PROACE CITY VERSO,ICE,2024,149.463,324,,0,324,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,9,206.5556,9,9,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA AYGO X,ICE,2024,110.4161,2187,,0,2187,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA BZ4X,BEV,2024,0.0,36,153.2222,36,36,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA C-HR,HEV,2024,107.7091,2695,,0,2695,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA C-HR,PHEV,2024,19.0575,226,151.3451,226,226,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA COROLLA,HEV,2024,111.2139,2338,,0,2338,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA COROLLA,ICE,2024,129.175,160,,0,160,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA GR YARIS,ICE,2024,205.4762,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA LAND CRUISER,ICE,2024,279.0909,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA PRIUS PHEV,PHEV,2024,16.0,7,131.0,7,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA RAV4,HEV,2024,129.8271,266,,0,266,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA RAV4,ICE,2024,162.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA RAV4,PHEV,2024,22.0,129,167.4729,129,129,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA SUPRA,ICE,2024,183.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA YARIS,HEV,2024,90.4313,4714,,0,4714,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA YARIS,ICE,2024,123.7047,2079,,0,2079,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA YARIS CROSS,HEV,2024,101.8635,7812,,0,7812,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,GR,TOYOTA YARIS CROSS,ICE,2024,133.8011,352,,0,352,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,C-HR,HEV,2024,111.0,2,183.0,1,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,COROLLA,HEV,2024,106.6667,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,PROACE,ICE,2024,194.9474,19,,0,19,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,PROACE CITY,ICE,2024,141.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,PROACE CITY VERSO,ICE,2024,144.9375,64,,0,64,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,RAV 4,PHEV,2024,149.0,1,199.0,1,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA AYGO X,ICE,2024,109.5333,120,,0,120,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA BZ4X,BEV,2024,0.0,8,179.0,8,8,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA C-HR,HEV,2024,107.5897,485,,0,485,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA C-HR,PHEV,2024,19.0312,32,151.5625,32,32,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA CAMRY,HEV,2024,125.7778,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA COROLLA,HEV,2024,108.397,529,,0,529,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA COROLLA,ICE,2024,129.7455,554,,0,554,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA GR YARIS,ICE,2024,203.25,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA HIGHLANDER,HEV,2024,158.9333,15,,0,15,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA LAND CRUISER,ICE,2024,275.9167,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA PRIUS PHEV,PHEV,2024,16.0,16,126.4375,16,16,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA RAV4,HEV,2024,129.9896,288,,0,288,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA RAV4,ICE,2024,159.6667,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA RAV4,PHEV,2024,22.0,48,170.1667,48,48,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA SUPRA,ICE,2024,198.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA YARIS,HEV,2024,90.0875,263,,0,263,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA YARIS,ICE,2024,123.9891,459,,0,459,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA YARIS CROSS,HEV,2024,102.09,722,,0,722,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,TOYOTA YARIS CROSS,ICE,2024,133.2564,429,,0,429,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,YARIS,HEV,2024,91.0,48,,0,48,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,YARIS,ICE,2024,163.0,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,YARIS CROSS,HEV,2024,101.974,77,,0,77,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HR,YARIS CROSS,ICE,2024,134.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,PROACE,BEV,2024,0.0,4,252.5,4,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,PROACE,ICE,2024,194.9304,230,,0,230,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,PROACE CITY VERSO,ICE,2024,147.9482,309,,0,309,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,12,203.25,12,12,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA AYGO X,ICE,2024,109.9461,835,,0,835,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA BZ4X,BEV,2024,0.0,53,159.9623,53,53,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA C-HR,HEV,2024,109.9035,2229,,0,2229,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA C-HR,PHEV,2024,19.0286,105,152.5429,105,105,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA CAMRY,HEV,2024,118.5825,400,,0,400,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA COROLLA,HEV,2024,107.3546,3903,,0,3903,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA COROLLA,ICE,2024,131.3683,619,,0,619,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA GR 86,ICE,2024,199.9767,43,,0,43,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA GR YARIS,ICE,2024,194.4211,19,,0,19,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA HIGHLANDER,HEV,2024,158.8057,211,,0,211,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA LAND CRUISER,ICE,2024,278.6238,101,,0,101,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,251.75,20,,0,20,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA MIRAI,FCEV,2024,0.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA PRIUS PHEV,PHEV,2024,15.5122,41,125.8537,41,41,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA PRIUS PHV,PHEV,2024,28.0,1,100.0,1,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA RAV4,HEV,2024,130.2031,1300,,0,1300,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA RAV4,ICE,2024,161.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA RAV4,PHEV,2024,22.0,73,170.9315,73,73,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA SUPRA,ICE,2024,165.4,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA YARIS,HEV,2024,92.5445,1034,,0,1034,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA YARIS,ICE,2024,124.6104,598,,0,598,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA YARIS CROSS,HEV,2024,104.582,1859,,0,1859,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,HU,TOYOTA YARIS CROSS,ICE,2024,133.5618,267,,0,267,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,PROACE,ICE,2024,195.0,37,,0,37,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA AYGO X,ICE,2024,109.6337,415,,0,415,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA BZ4X,BEV,2024,0.0,394,147.0,394,394,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA C-HR,HEV,2024,108.523,1916,,0,1916,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA C-HR,PHEV,2024,19.0551,236,151.5847,236,236,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA CAMRY,HEV,2024,125.0,117,,0,117,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA COROLLA,HEV,2024,106.9767,4686,,0,4686,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA GR 86,ICE,2024,200.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA GR YARIS,ICE,2024,197.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA HIGHLANDER,HEV,2024,158.7619,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA LAND CRUISER,ICE,2024,279.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA PRIUS PHEV,PHEV,2024,16.0,151,126.0,151,151,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA RAV4,HEV,2024,128.6022,2866,,0,2866,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA RAV4,PHEV,2024,22.0,542,170.9354,542,542,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA YARIS,HEV,2024,89.0176,1763,,0,1763,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA YARIS,ICE,2024,121.5756,582,,0,582,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IE,TOYOTA YARIS CROSS,HEV,2024,103.1928,3350,,0,3350,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,IQ,ICE,2024,113.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,PROACE,BEV,2024,0.0,69,269.0435,69,69,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,PROACE,ICE,2024,192.8164,463,,0,463,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,PROACE CITY VERSO,ICE,2024,146.6278,978,,0,978,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,20,193.5,20,20,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,PROACE F-STYLE WAV,ICE,2024,147.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,RAV4,HEV,2024,132.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,RAV4,ICE,2024,190.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA AYGO X,ICE,2024,110.0632,21278,,0,21278,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA BZ4X,BEV,2024,0.0,249,154.4699,249,249,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA C-HR,HEV,2024,109.0734,14580,,0,14580,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA C-HR,ICE,2024,111.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA C-HR,PHEV,2024,19.0,1805,151.5169,1805,1805,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA COROLLA,HEV,2024,109.2416,8591,,0,8591,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA GR 86,ICE,2024,199.15,40,,0,40,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA GR YARIS,ICE,2024,209.3647,617,,0,617,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA HIGHLANDER,HEV,2024,158.1098,164,,0,164,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA LAND CRUISER,ICE,2024,276.6919,396,,0,396,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,247.1111,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA MIRAI,FCEV,2024,0.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA PRIUS PHEV,PHEV,2024,15.7478,226,127.8363,226,226,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA RAV4,HEV,2024,129.247,4688,,0,4688,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA RAV4,PHEV,2024,22.0,660,170.8788,660,660,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA SUPRA,ICE,2024,171.1829,82,,0,82,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA YARIS,HEV,2024,90.6829,31619,,0,31619,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA YARIS,ICE,2024,122.6452,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA YARIS CROSS,HEV,2024,104.7709,36351,,0,36351,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA YARIS CROSS,ICE,2024,135.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,TOYOTA YARIS CROSS VAN,HEV,2024,101.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,IT,YARIS GR,ICE,2024,197.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,PROACE,BEV,2024,0.0,1,270.0,1,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,PROACE,ICE,2024,194.8485,99,,0,99,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,PROACE CITY VERSO,ICE,2024,144.6021,289,,0,289,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA BZ4X,BEV,2024,0.0,34,149.2941,34,34,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA C-HR,HEV,2024,108.5978,731,,0,731,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA C-HR,PHEV,2024,19.0,29,152.2414,29,29,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA CAMRY,HEV,2024,119.8506,87,,0,87,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA COROLLA,HEV,2024,109.4124,1353,,0,1353,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA COROLLA,ICE,2024,129.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA GR 86,ICE,2024,200.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA GR YARIS,ICE,2024,204.6111,18,,0,18,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA HIGHLANDER,HEV,2024,157.5923,130,,0,130,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA LAND CRUISER,ICE,2024,276.3487,152,,0,152,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,256.2564,39,,0,39,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA PRIUS PHEV,PHEV,2024,16.0,8,126.875,8,8,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA RAV4,HEV,2024,130.0676,1050,,0,1050,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA RAV4,ICE,2024,160.8485,66,,0,66,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA RAV4,PHEV,2024,22.0,337,169.3086,337,337,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA YARIS,HEV,2024,89.9489,274,,0,274,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA YARIS,ICE,2024,123.1905,63,,0,63,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA YARIS CROSS,HEV,2024,105.148,1318,,0,1318,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LT,TOYOTA YARIS CROSS,ICE,2024,134.4737,38,,0,38,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,LAND CRUISER,ICE,2024,251.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,PROACE,ICE,2024,194.8333,24,,0,24,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,PROACE CITY VERSO,ICE,2024,149.7843,102,,0,102,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA AYGO X,ICE,2024,111.0337,89,,0,89,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA BZ4X,BEV,2024,0.0,21,152.619,21,21,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA C-HR,HEV,2024,109.3548,93,,0,93,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA C-HR,PHEV,2024,19.3333,3,153.3333,3,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA CAMRY,HEV,2024,125.0,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA COROLLA,HEV,2024,108.7951,244,,0,244,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA GR 86,ICE,2024,199.8667,15,,0,15,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA GR YARIS,ICE,2024,194.0649,77,,0,77,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA HIGHLANDER,HEV,2024,159.3333,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA LAND CRUISER,ICE,2024,277.5714,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,248.3333,15,,0,15,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA PRIUS PHEV,PHEV,2024,16.0,2,129.5,2,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA RAV4,HEV,2024,131.0875,80,,0,80,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA RAV4,PHEV,2024,22.0,21,171.0,21,21,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA SUPRA,ICE,2024,188.0,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA YARIS,HEV,2024,89.2065,276,,0,276,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA YARIS,ICE,2024,120.0,21,,0,21,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA YARIS CROSS,HEV,2024,105.4316,95,,0,95,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LU,TOYOTA YARIS CROSS,ICE,2024,134.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,LAND CRUISER,ICE,2024,277.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,PROACE,ICE,2024,194.1379,87,,0,87,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,PROACE CITY,ICE,2024,160.0,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,PROACE CITY VERSO,ICE,2024,145.3412,85,,0,85,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,1,183.0,1,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA BZ4X,BEV,2024,0.0,36,152.9444,36,36,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA C-HR,HEV,2024,108.6239,226,,0,226,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA C-HR,PHEV,2024,19.0,14,151.7143,14,14,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA CAMRY,HEV,2024,119.0702,57,,0,57,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA COROLLA,HEV,2024,107.6958,789,,0,789,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA GR 86,ICE,2024,200.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA GR YARIS,ICE,2024,201.5455,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA HIGHLANDER,HEV,2024,157.2055,73,,0,73,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA LAND CRUISER,ICE,2024,276.9298,114,,0,114,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,256.9286,14,,0,14,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA PRIUS PHEV,PHEV,2024,15.3333,6,124.1667,6,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA RAV4,HEV,2024,130.2014,561,,0,561,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA RAV4,ICE,2024,160.119,42,,0,42,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA RAV4,PHEV,2024,22.0,66,170.5455,66,66,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA YARIS,HEV,2024,89.5447,123,,0,123,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA YARIS,ICE,2024,124.8,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA YARIS CROSS,HEV,2024,105.3652,460,,0,460,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,LV,TOYOTA YARIS CROSS,ICE,2024,134.8,35,,0,35,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,AYGO X,ICE,2024,112.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,COROLLA,HEV,2024,104.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,TOYOTA AYGO X,ICE,2024,111.4202,376,,0,376,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,TOYOTA C-HR,HEV,2024,109.9259,27,,0,27,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,TOYOTA C-HR,PHEV,2024,19.0,5,151.6,5,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,TOYOTA COROLLA,HEV,2024,102.7576,33,,0,33,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,TOYOTA LAND CRUISER,ICE,2024,279.5,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,TOYOTA RAV4,PHEV,2024,22.0,4,171.0,4,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,TOYOTA YARIS,HEV,2024,92.9209,253,,0,253,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,TOYOTA YARIS,ICE,2024,124.65,20,,0,20,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,TOYOTA YARIS CROSS,HEV,2024,103.7015,325,,0,325,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,MT,YARIS,HEV,2024,92.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,PROACE,BEV,2024,0.0,110,267.6273,110,110,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,PROACE CITY VERSO,ICE,2024,146.1111,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,7,199.4286,7,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA AYGO X,ICE,2024,109.5985,7871,,0,7871,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA BZ4X,BEV,2024,0.0,1032,149.9709,1032,1032,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA C-HR,HEV,2024,108.3629,2053,,0,2053,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA C-HR,PHEV,2024,19.0387,697,151.8924,697,697,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA CAMRY,HEV,2024,124.4444,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA COROLLA,HEV,2024,110.237,5329,,0,5329,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA COROLLA,ICE,2024,142.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA GR 86,ICE,2024,199.5,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA GR YARIS,ICE,2024,200.7143,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA HIGHLANDER,HEV,2024,157.6935,62,,0,62,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA LAND CRUISER,ICE,2024,277.5714,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,249.1111,27,,0,27,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA PRIUS PHEV,PHEV,2024,15.4295,149,126.2215,149,149,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA RAV4,HEV,2024,130.1418,663,,0,663,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA RAV4,PHEV,2024,22.0,377,170.5358,377,377,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA SUPRA,ICE,2024,188.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA YARIS,HEV,2024,90.4428,5503,,0,5503,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA YARIS,ICE,2024,121.2388,201,,0,201,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA YARIS CROSS,HEV,2024,103.5622,5660,,0,5660,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,NL,TOYOTA YARIS CROSS,ICE,2024,133.5541,74,,0,74,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,AURIS-TMPL,ICE,2024,179.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,AYGO X,ICE,2024,106.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,C-HR,HEV,2024,109.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,C-HR,ICE,2024,103.7778,9,,0,9,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,CAMRY,HEV,2024,114.3333,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,COROLLA,HEV,2024,102.2222,18,,0,18,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,COROLLA,ICE,2024,109.9167,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,HIGHLANDER,ICE,2024,148.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,PROACE,ICE,2024,194.3389,1499,,0,1499,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,PROACE AMF-BRUNS,ICE,2024,180.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,PROACE CITY AMF-BRUNS,ICE,2024,141.3636,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,PROACE CITY VERSO,ICE,2024,146.9533,2888,,0,2888,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,PROACE VERSO,ICE,2024,180.6667,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,PROCITY VERSO,ICE,2024,140.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,RAV4,HEV,2024,125.75,8,,0,8,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,RAV4,ICE,2024,123.2,5,,0,5,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA AYGO X,ICE,2024,109.9739,4400,,0,4400,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA C-HR,HEV,2024,109.1175,14089,,0,14089,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA C-HR,ICE,2024,106.75,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA C-HR,PHEV,2024,19.0905,409,152.5281,409,409,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA CAMRY,HEV,2024,119.7987,3090,,0,3090,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA COROLLA,HEV,2024,104.4844,28503,,0,28503,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA COROLLA,ICE,2024,131.3729,5202,,0,5202,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA GR 86,ICE,2024,199.3333,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA GR YARIS,ICE,2024,201.9313,480,,0,480,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA HIGHLANDER,HEV,2024,158.0028,1808,,0,1808,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA HIGHLANDER,ICE,2024,150.75,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA LAND CRUISER,ICE,2024,277.1189,883,,0,883,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,251.8182,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA PRIUS PHEV,PHEV,2024,15.4485,136,126.3162,136,136,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA RAV4,HEV,2024,130.8271,9439,,0,9439,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA RAV4,ICE,2024,162.9371,159,,0,159,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA RAV4,PHEV,2024,22.0,777,170.6847,777,777,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA SUPRA,ICE,2024,163.2,10,,0,10,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA YARIS,HEV,2024,90.7725,8570,,0,8570,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA YARIS,ICE,2024,123.665,5132,,0,5132,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA YARIS CROSS,HEV,2024,104.7857,14350,,0,14350,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,TOYOTA YARIS CROSS,ICE,2024,133.7629,1244,,0,1244,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,YARIS,HEV,2024,85.0,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,YARIS,ICE,2024,102.5,2,,0,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PL,YARIS CROSS,HEV,2024,98.0,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,PROACE,BEV,2024,0.0,22,256.2727,22,22,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,PROACE,ICE,2024,195.6133,256,,0,256,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,PROACE CITY VERSO,ICE,2024,142.0,114,,0,114,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,26,189.3077,26,26,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA AYGO X,ICE,2024,109.0934,964,,0,964,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA BZ4X,BEV,2024,0.0,259,149.0927,259,259,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA C-HR,HEV,2024,107.7836,1123,,0,1123,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA C-HR,PHEV,2024,18.9358,358,151.1536,358,358,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA CAMRY,HEV,2024,122.5,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA COROLLA,HEV,2024,106.9165,1664,,0,1664,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA GR 86,ICE,2024,199.6667,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA GR YARIS,ICE,2024,199.7869,61,,0,61,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA HIGHLANDER,HEV,2024,158.25,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA LAND CRUISER,ICE,2024,279.8571,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA PRIUS PHEV,PHEV,2024,15.0759,145,124.4069,145,145,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA RAV4,HEV,2024,129.1519,158,,0,158,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA RAV4,PHEV,2024,22.0,530,170.9811,530,530,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA SUPRA,ICE,2024,198.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA YARIS,HEV,2024,89.6969,2085,,0,2085,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA YARIS,ICE,2024,126.6449,107,,0,107,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA YARIS CROSS,HEV,2024,102.3917,3227,,0,3227,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,PT,TOYOTA YARIS CROSS,ICE,2024,133.2581,31,,0,31,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,PROACE,BEV,2024,0.0,10,279.0,10,10,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,PROACE,ICE,2024,194.6396,111,,0,111,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,PROACE CITY VERSO,ICE,2024,143.6857,35,,0,35,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,18,205.0,18,18,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA AYGO X,ICE,2024,109.9514,391,,0,391,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA BZ4X,BEV,2024,0.0,48,157.8333,48,48,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA C-HR,HEV,2024,112.214,1799,,0,1799,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA C-HR,PHEV,2024,19.0,64,152.1719,64,64,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA CAMRY,HEV,2024,122.9859,284,,0,284,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA COROLLA,HEV,2024,105.3712,3561,,0,3561,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA COROLLA,ICE,2024,131.1232,203,,0,203,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA GR YARIS,ICE,2024,188.4167,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA HIGHLANDER,HEV,2024,158.1059,321,,0,321,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA LAND CRUISER,ICE,2024,277.9565,23,,0,23,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,253.9035,114,,0,114,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA PRIUS PHEV,PHEV,2024,15.0909,22,126.3636,22,22,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA RAV4,HEV,2024,130.4578,2357,,0,2357,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA RAV4,ICE,2024,161.4545,11,,0,11,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA RAV4,PHEV,2024,22.0,500,170.29,500,500,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA SUPRA,ICE,2024,183.2857,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA YARIS,HEV,2024,89.3163,784,,0,784,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA YARIS,ICE,2024,124.1524,164,,0,164,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA YARIS CROSS,HEV,2024,103.2617,1880,,0,1880,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,RO,TOYOTA YARIS CROSS,ICE,2024,134.0,80,,0,80,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,PROACE,BEV,2024,0.0,27,249.7778,27,27,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,PROACE,ICE,2024,193.411,292,,0,292,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,11,203.5455,11,11,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA AYGO X,ICE,2024,110.4509,448,,0,448,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA BZ4X,BEV,2024,0.0,531,154.9623,531,531,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA C-HR,HEV,2024,110.0378,1217,,0,1217,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA C-HR,PHEV,2024,19.0,542,151.7066,542,542,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA CAMRY,HEV,2024,121.5942,138,,0,138,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA COROLLA,HEV,2024,111.2634,6113,,0,6113,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA GR YARIS,ICE,2024,204.3108,74,,0,74,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA LAND CRUISER,ICE,2024,279.9126,103,,0,103,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA RAV4,HEV,2024,130.3367,3808,,0,3808,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA RAV4,PHEV,2024,22.0,945,170.7143,945,945,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA SUPRA,ICE,2024,193.7143,7,,0,7,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA YARIS,HEV,2024,89.8189,2750,,0,2750,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SE,TOYOTA YARIS CROSS,HEV,2024,105.6535,3137,,0,3137,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,PROACE,BEV,2024,0.0,4,271.0,4,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,PROACE,ICE,2024,193.6604,53,,0,53,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,PROACE CITY VERSO,ICE,2024,147.0312,192,,0,192,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,2,186.0,2,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA AYGO X,ICE,2024,110.2692,26,,0,26,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA BZ4X,BEV,2024,0.0,22,159.0,22,22,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA C-HR,HEV,2024,108.1271,362,,0,362,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA C-HR,PHEV,2024,18.9512,41,151.4878,41,41,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA CAMRY,HEV,2024,125.5,4,,0,4,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA COROLLA,HEV,2024,109.2399,717,,0,717,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA COROLLA,ICE,2024,130.6183,131,,0,131,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA GR 86 /,ICE,2024,200.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA GR YARIS,ICE,2024,198.36,25,,0,25,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA HIGHLANDER,HEV,2024,159.2857,28,,0,28,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA LAND CRUISER,ICE,2024,276.9,30,,0,30,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,250.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA PRIUS PHEV,PHEV,2024,15.7059,17,126.5294,17,17,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA RAV4,HEV,2024,130.2951,244,,0,244,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA RAV4,ICE,2024,161.3333,6,,0,6,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA RAV4,PHEV,2024,22.0,45,169.6667,45,45,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA SUPRA,ICE,2024,193.0,3,,0,3,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA YARIS,HEV,2024,89.5924,184,,0,184,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA YARIS,ICE,2024,124.5439,296,,0,296,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA YARIS CROSS,HEV,2024,102.7086,573,,0,573,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SI,TOYOTA YARIS CROSS,ICE,2024,133.9039,385,,0,385,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,COROLLA,HEV,2024,113.0,1,,0,1,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,PROACE,BEV,2024,0.0,2,253.0,2,2,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,PROACE,ICE,2024,193.3969,383,,0,383,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,PROACE CITY VERSO,ICE,2024,149.2455,884,,0,884,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,PROACE CITY VERSO ELECTRIC,BEV,2024,0.0,13,203.0769,13,13,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA AYGO X,ICE,2024,110.844,218,,0,218,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA BZ4X,BEV,2024,0.0,36,160.8056,36,36,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA C-HR,HEV,2024,111.5932,1143,,0,1143,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA C-HR,PHEV,2024,18.9388,49,152.3061,49,49,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA CAMRY,HEV,2024,121.381,105,,0,105,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA COROLLA,HEV,2024,107.404,2166,,0,2166,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA COROLLA,ICE,2024,130.4231,364,,0,364,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA GR 86,ICE,2024,199.954,87,,0,87,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA GR YARIS,ICE,2024,195.2364,55,,0,55,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA HIGHLANDER,HEV,2024,157.866,209,,0,209,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA LAND CRUISER,ICE,2024,277.875,128,,0,128,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA LAND CRUISER (150 SERIES),ICE,2024,251.3929,28,,0,28,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA PRIUS PHEV,PHEV,2024,15.2432,37,124.4324,37,37,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA RAV4,HEV,2024,131.2911,979,,0,979,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA RAV4,ICE,2024,162.8923,65,,0,65,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA RAV4,PHEV,2024,22.0,95,171.0,95,95,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA SUPRA,ICE,2024,182.5833,12,,0,12,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA YARIS,HEV,2024,92.2653,652,,0,652,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA YARIS,ICE,2024,124.8436,307,,0,307,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA YARIS CROSS,HEV,2024,107.5744,1048,,0,1048,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json
+toyota,SK,TOYOTA YARIS CROSS,ICE,2024,133.9589,146,,0,146,WLTP,eea_co2_monitoring_2024,eea_toyota_2024_final.json

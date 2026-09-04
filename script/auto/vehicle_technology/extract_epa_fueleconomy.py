@@ -47,6 +47,7 @@ POWERTRAIN = {
     "Plug-in Hybrid": "PHEV",
     "EV": "BEV",
     "FCV": "FCEV",
+    "eFCV": "FCEV",  # plug-in fuel cell (Honda CR-V e:FCEV); withheld like every FCEV
 }
 FIELDS = [
     "company",
