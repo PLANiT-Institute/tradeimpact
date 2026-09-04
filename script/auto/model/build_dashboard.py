@@ -487,6 +487,11 @@ const DATASET_ORDER = __DATASET_ORDER__;
 const MODEL_STEPS = __MODEL_STEPS__;
 
 const SEP = String.fromCharCode(1);
+/* Views that render the pivot: the two presets keep their own address and their own place in
+   the navigation, so clicking one lands there rather than on Pivot. */
+const PIVOT_VIEWS = {pivot: 1, results: 1, results_year: 1};
+const PRESET_VIEWS = {results: 'DEFAULT', results_year: 'YEARLY'};
+
 const VIEWS = [
   {id: 'lineage', label: 'Lineage'},
   {id: 'results', label: 'Results'},
@@ -1794,13 +1799,13 @@ function render() {
   const key = state.view + '|' + state.table;
   if (key !== shellKey) {
     shellKey = key;
-    if (state.view === 'pivot') renderPivotShell();
+    if (PIVOT_VIEWS[state.view]) renderPivotShell();
     else if (state.view === 'browse') renderBrowseShell();
     else if (state.view === 'sql') renderSqlShell();
     else if (state.view === 'map') renderMapShell();
     else renderLineage();
   }
-  if (state.view === 'pivot') renderPivotOut();
+  if (PIVOT_VIEWS[state.view]) renderPivotOut();
   else if (state.view === 'browse') renderBrowseOut();
   else if (state.view === 'sql') renderSqlOut();
   else if (state.view === 'map') renderMapOut();
@@ -1816,13 +1821,15 @@ function applyHash() {
   const parts = raw.split('/');
   const view = parts[0] || 'lineage';
   const table = parts[1] ? decodeURIComponent(parts[1]) : null;
-  if (view === 'results' || view === 'results_year') {
+  if (PRESET_VIEWS[view]) {
     const preset = view === 'results' ? DEFAULT_PIVOT : YEARLY_PIVOT;
-    state.table = preset.table;
-    state.pivot = defaultPivot(preset.table);
-    state.view = 'pivot';
-    shellKey = '';
-    go('#/pivot/' + encodeURIComponent(preset.table));
+    if (state.view !== view) {  /* arriving: lay the preset out; staying: keep any tweaks */
+      state.table = preset.table;
+      state.pivot = defaultPivot(preset.table);
+      state.view = view;
+      shellKey = '';
+    }
+    render();
     return;
   }
   if (['lineage', 'map', 'pivot', 'browse', 'sql'].indexOf(view) < 0) {
