@@ -39,6 +39,8 @@ two that are not.
 | 2026-09-04 | US cohorts for Toyota and Nissan from their own US releases, transcribed to CSV with the publisher URL recorded; Lexus and Infiniti held out as separate companies | The lead limited the Japanese makers to the US and EU27; both companies publish a US model table, Toyota with powertrain | Toyota's overlay subtraction rule and the unprinted residual kept as a row; Nissan priced explicitly with no assumption |
 | 2026-09-04 | `ti_source_reconciliation.csv`: every source a company published for the same cell, compared like for like on brand boundary | Lead asked whether the Korean makers can stand on the same source class and how far a company's own figures differ | All five overlaps agree to 0.0 %; the apparent 17 % and 6 % gaps were Lexus and Infiniti, not data |
 
+| 2026-09-04 | Global coverage as its own output: priced and held units against each company's worldwide sales, with the brands in the denominator named | Lead asked what share of global sales the analysis captures | Toyota's and Nissan's worldwide figures fetched from their own publications; Hyundai's and Kia's derived from theirs and marked derived |
+
 ## Transitions
 
 | Date | Stage or phase | Event | Trigger | Consequence |

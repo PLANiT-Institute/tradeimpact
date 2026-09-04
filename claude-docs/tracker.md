@@ -135,6 +135,15 @@ stand on the same class of source as the Japanese ones. `ti_data_quality.csv` no
 countries covered (`countries`, `countries_covered`, `countries_withheld`) alongside the sales
 coverage share.
 
+**Global coverage measured (2026-09-04).** `ti_global_coverage.csv` sets the priced units against
+each company's own worldwide sales: Toyota 2024 26.8 % of 10.16 M priced and 42.6 % held, Hyundai
+41.6 % and 47.5 % of 3.98 M, Nissan 31.7 % and 40.3 % of 3.35 M, Kia 43.2 % of 1.62 M with 100 %
+held. Denominators are the companies' own published figures for Toyota and Nissan, derived from
+their own workbooks for Hyundai (Korea domestic plus exports plus overseas plants, about 4 % below
+the earnings figure and marked derived) and Kia (every destination in its retail release). The
+brands a group figure covers are named, so Lexus, Infiniti and Genesis sit in the held units and
+never inflate a priced share silently.
+
 ## 2. Phases
 
 | Phase | Objectives met | Deliverables accepted | Status | Gate verdict |

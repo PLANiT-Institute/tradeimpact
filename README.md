@@ -85,7 +85,26 @@ previously published EU27 result exactly when fed the archived inputs (see
 | Korea, 2025 domestic sales | Hyundai | 98.8 % | **+2.17** | −0.92 | −2.56 |
 | Korea, Jan–Jun 2026 retail | Kia | 93.3 % | **+1.30** | −0.53 | −1.50 |
 
-The `Covered` column is the sales coverage: units carrying a result over units in the source.
+### How much of worldwide sales this captures
+
+| Company | Cohort | Worldwide sales | Priced | Held | Countries priced |
+|---|---|---|---|---|---|
+| Toyota | 2024 | 10.16 M | 26.8 % | 42.6 % | 27 |
+| Hyundai | 2024 | 3.98 M | 41.6 % | 47.5 % | 28 |
+| Nissan | 2024 | 3.35 M | 31.7 % | 40.3 % | 27 |
+| Kia | 2026 H1 | 1.62 M | 43.2 % | 100 % | 2 |
+
+`Priced` is units carrying a result over the company's own worldwide figure; `Held` is every
+unit the project holds for those brands, priced or not, so the gap between the two is sales we
+have but cannot yet price. The denominator covers the brands the company reports together, and
+the cohorts hold Lexus, Infiniti and Genesis apart, so those units sit in `Held` and are named
+in `brands_out_of_scope`. Toyota's and Nissan's worldwide figures are their own published
+totals; Hyundai's is derived from its three workbooks because it publishes no single total, and
+Kia's is the sum of every destination in its retail release. Full detail, including the 2025
+cohorts where only the United States is priced, is in `ti_global_coverage.csv`.
+
+The `Covered` column in the tables above is the sales coverage within a market: units carrying a
+result over units in the source.
 Every EU27 row covers 26 of the 27 member states (Luxembourg is withheld, its fleet intensity
 being implausible); every US and Korean row covers one country. `ti_data_quality.csv` lists the
 country codes themselves in `countries`, with `countries_covered` and `countries_withheld`

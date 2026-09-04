@@ -26,6 +26,7 @@ different test cycles and different national benchmarks.
 | `ti_country.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × destination × scenario: units, `ti_tco2e`, per-vehicle, direction |
 | `ti_powertrain.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × powertrain × scenario |
 | `ti_company.csv` | 5 | `aggregate_country.py` | company × market × cohort_year × scenario: `status` (reported / excluded), covered/withheld units, total, per-vehicle, direction, decomposition identity check, exclusion reason |
+| `ti_global_coverage.csv` | 5e | `build_global_coverage.py` | company × cohort year: the company's own worldwide sales and what covers it, units priced and their share of worldwide, the markets and country count priced, units held and their share, and the brands inside the denominator that the cohorts hold apart |
 | `ti_source_reconciliation.csv` | 5d | `build_reconciliation.py` | company × destination × cohort year × source file: units, basis and which side of the market it counts, whether the cohort was built from it, the brands a group figure covers, and the like-for-like spread against the file used |
 | `ti_coverage.csv` | 5c | `build_coverage.py` | company × destination (every destination in the market-side sales files, worldwide) × cohort year × basis: `destination_group` (EU27, US, the company's home country KR or JP, IN, others), `home_country`, units, priced units, withheld units, status (`priced`, `withheld`, `no_benchmark`, `plant_side_only`, `region_unpriced`, `destination_unknown`), market — the coverage picture a reader filters countries from |
 | `ti_data_quality.csv` | 5b | `build_data_quality.py` | company × market × cohort year, including `countries` (the destination codes covered), `countries_covered`, `countries_withheld` and `covered_share` (the sales coverage): analysis level, benchmark method, sales basis, test cycles, covered/withheld units, tier-C unit share and the `directional_only` flag (guideline §5.3, threshold 50 %), central lifetime, scenarios reported and excluded, markets by distance tier, withheld reasons, coverage notes, warnings |
@@ -301,6 +302,47 @@ investor-relations sheet because the US subsidiary's release index is script-ren
 no file. The reconciliation shows the choice costs nothing: the investor sheet and the subsidiary
 release carry the same number. What differs between publications is the brand boundary, not the
 data, and that is why the table records which brands each figure covers.
+
+## Global coverage
+
+`ti_global_coverage.csv` answers how much of a company's worldwide sales the priced markets
+speak for. Two shares sit side by side: `priced_share_of_global`, the units carrying a result
+over the company's own worldwide figure, and `held_share_of_global`, every unit the project
+holds for those brands whether priced or not. The gap between them is sales acquired but not yet
+priceable, which `ti_coverage.csv` lists destination by destination.
+
+| Company | Cohort | Worldwide | Priced | Held | Countries |
+|---|---|---|---|---|---|
+| Toyota | 2024 | 10,159,336 | 26.8 % | 42.6 % | 27 |
+| Toyota | 2025 | 10,536,807 | 20.0 % | 35.4 % | 1 |
+| Hyundai | 2024 | 3,978,567 | 41.6 % | 47.5 % | 28 |
+| Hyundai | 2025 | 3,940,709 | 33.9 % | 39.6 % | 2 |
+| Nissan | 2024 | 3,348,692 | 31.7 % | 40.3 % | 27 |
+| Nissan | 2025 | 3,202,137 | 27.3 % | 34.5 % | 1 |
+| Kia | 2026 H1 | 1,619,037 | 43.2 % | 100 % | 2 |
+
+The 2025 rows are lower than the 2024 rows for one reason only: the EU27 cohort is a 2024
+registration year, so a 2025 row is the United States alone. Kia's held share is 100 % because
+its retail release covers every market it sells in, and 43.2 % of that is priced.
+
+**Where each denominator comes from, and what it counts** (`global_sales_totals.csv`).
+
+1. **Toyota**: the group workbook's worldwide-sales row for Toyota including Lexus. Daihatsu and
+   Hino are separate blocks and are outside it.
+2. **Nissan**: the global release's "Global sales" row, covering Nissan and Infiniti.
+3. **Hyundai**: derived, and marked so, because Hyundai publishes no worldwide total. Korea
+   domestic sales plus shipments exported from Korea plus sales by the overseas plants, each
+   from its own Hyundai workbook. The export leg is shipments rather than sales, so the figure
+   is approximate; it lands about 4 % below the figure Hyundai quotes in its earnings material,
+   which is the direction that under-statement predicts.
+4. **Kia**: the sum of every destination in its retail workbook, which is its own worldwide
+   retail for that half year.
+
+**The brand boundary is stated, never assumed.** A group denominator covers brands the cohorts
+hold apart, so Lexus, Infiniti and Genesis units are counted in `held_units` and named in
+`brands_out_of_scope`. A priced share is therefore always the brand in scope measured against
+the group total, which understates it: Toyota's 26.8 % would be higher against the Toyota brand
+alone, and the Lexus worldwide figure needed for that is on the workbook's own Lexus sheet.
 
 ## Data-quality tiers (whitepaper §5.1, every value flagged)
 

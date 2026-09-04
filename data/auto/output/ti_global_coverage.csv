@@ -1,0 +1,8 @@
+company,cohort_year,global_units,global_basis,global_derived,brands_in_denominator,brands_out_of_scope,priced_units,priced_share_of_global,priced_markets,priced_countries,held_units,held_share_of_global,source_id
+hyundai,2024,3978567,worldwide_sales_derived,yes,hyundai;genesis,genesis,1653487,0.415599,EU27;KR;US,28,1890470,0.475164,hyundai_ir_sales_results
+hyundai,2025,3940709,worldwide_sales_derived,yes,hyundai;genesis,genesis,1337364,0.339371,KR;US,2,1558560,0.395502,hyundai_ir_sales_results
+kia,2026,1619037,worldwide_retail,yes,kia,,698860,0.431652,KR;US,2,1619037,1.0,kia_ir_retail_sales
+nissan,2024,3348692,worldwide_sales,no,nissan;infiniti,infiniti,1062584,0.317313,EU27;US,27,1350843,0.403394,nissan_global_sales
+nissan,2025,3202137,worldwide_sales,no,nissan;infiniti,infiniti,873293,0.272722,US,1,1105276,0.345168,nissan_global_sales
+toyota,2024,10159336,worldwide_sales,no,toyota;lexus,lexus,2719917,0.267726,EU27;US,27,4332927,0.426497,toyota_global_sales
+toyota,2025,10536807,worldwide_sales,no,toyota;lexus,lexus,2111810,0.200422,US,1,3730211,0.354017,toyota_global_sales

@@ -85,6 +85,7 @@ MODEL_STEPS: tuple[tuple[str, tuple[str, ...]], ...] = (
             "ti_data",
             "ti_coverage",
             "ti_source",
+            "ti_global",
         ),
     ),
 )
