@@ -32,6 +32,7 @@ EXTRACT = [
     "sales/extract_hyundai_us_retail.py",
     "sales/extract_hyundai_sales_by_model.py",
     "sales/extract_kia_america.py",
+    "sales/extract_jada.py",
     "vehicle_technology/extract_eea_certified.py",
     "vehicle_technology/extract_epa_fueleconomy.py",
     "vehicle_technology/extract_epa_trends.py",

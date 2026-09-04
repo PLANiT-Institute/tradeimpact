@@ -1,244 +1,4 @@
 company,destination,destination_level,origin,cohort_year,period,model,powertrain,units,basis,source_file
-honda,AT,country,,2024,2024-01..2024-12,CIVIC E:HEV 2.0 ADVA,HEV,34,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,CIVIC E:HEV 2.0 ELEG,HEV,57,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,CIVIC E:HEV 2.0 SPOR,HEV,28,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,CIVIC TYPE R 2.0 TYP,ICE,12,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,CR-V E:HEV 2WD 2.0 E,HEV,21,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,CR-V E:HEV 4WD 2.0 A,HEV,82,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,CR-V E:HEV 4WD 2.0 E,HEV,45,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,CR-V PHEV 2.0 ADVANC,PHEV,35,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,E:NY1 EV ADVANCE,BEV,109,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,E:NY1 EV ELEGANCE,BEV,18,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,HONDA E EV ADVANCE,BEV,1,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,HR-V E:HEV 1.5 ADVAN,HEV,227,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,HR-V E:HEV 1.5 ELEGA,HEV,109,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,JAZZ 1.5 ADVANCE,HEV,46,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,JAZZ 1.5 ADVANCE SPO,HEV,22,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,JAZZ 1.5 ELEGANCE,HEV,41,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,JAZZ CROSSTAR 1.5 AD,HEV,63,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,UNASSIGNED,BEV,4,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,ZR-V 2.0 ADVANCE,HEV,49,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,ZR-V 2.0 ELEGANCE,HEV,17,registrations,eea_honda_2024_final.json
-honda,AT,country,,2024,2024-01..2024-12,ZR-V 2.0 SPORT,HEV,84,registrations,eea_honda_2024_final.json
-honda,BE,country,,2024,2024-01..2024-12,CIVIC,HEV,283,registrations,eea_honda_2024_final.json
-honda,BE,country,,2024,2024-01..2024-12,CIVIC 5DR,ICE,1,registrations,eea_honda_2024_final.json
-honda,BE,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,38,registrations,eea_honda_2024_final.json
-honda,BE,country,,2024,2024-01..2024-12,CR-V,HEV,249,registrations,eea_honda_2024_final.json
-honda,BE,country,,2024,2024-01..2024-12,CR-V,PHEV,117,registrations,eea_honda_2024_final.json
-honda,BE,country,,2024,2024-01..2024-12,E:NY1,BEV,139,registrations,eea_honda_2024_final.json
-honda,BE,country,,2024,2024-01..2024-12,HR-V,HEV,513,registrations,eea_honda_2024_final.json
-honda,BE,country,,2024,2024-01..2024-12,JAZZ,HEV,220,registrations,eea_honda_2024_final.json
-honda,BE,country,,2024,2024-01..2024-12,ZR-V,HEV,233,registrations,eea_honda_2024_final.json
-honda,BG,country,,2024,2024-01..2024-12,CIVIC,HEV,28,registrations,eea_honda_2024_final.json
-honda,BG,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,4,registrations,eea_honda_2024_final.json
-honda,BG,country,,2024,2024-01..2024-12,HONDA CR V,HEV,8,registrations,eea_honda_2024_final.json
-honda,BG,country,,2024,2024-01..2024-12,HONDA CRV,HEV,60,registrations,eea_honda_2024_final.json
-honda,BG,country,,2024,2024-01..2024-12,HONDA CRV,PHEV,4,registrations,eea_honda_2024_final.json
-honda,BG,country,,2024,2024-01..2024-12,HONDA HRV,HEV,20,registrations,eea_honda_2024_final.json
-honda,BG,country,,2024,2024-01..2024-12,HONDA ZRV,HEV,38,registrations,eea_honda_2024_final.json
-honda,BG,country,,2024,2024-01..2024-12,JAZZ,HEV,12,registrations,eea_honda_2024_final.json
-honda,CY,country,,2024,2024-01..2024-12,CIVIC,HEV,15,registrations,eea_honda_2024_final.json
-honda,CY,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,1,registrations,eea_honda_2024_final.json
-honda,CY,country,,2024,2024-01..2024-12,CR-V,HEV,26,registrations,eea_honda_2024_final.json
-honda,CY,country,,2024,2024-01..2024-12,E:NY1,BEV,5,registrations,eea_honda_2024_final.json
-honda,CY,country,,2024,2024-01..2024-12,HR-V,HEV,81,registrations,eea_honda_2024_final.json
-honda,CY,country,,2024,2024-01..2024-12,JAZZ,HEV,5,registrations,eea_honda_2024_final.json
-honda,CY,country,,2024,2024-01..2024-12,ZR-V,HEV,8,registrations,eea_honda_2024_final.json
-honda,CZ,country,,2024,2024-01..2024-12,CIVIC,HEV,123,registrations,eea_honda_2024_final.json
-honda,CZ,country,,2024,2024-01..2024-12,CIVIC 5DR,ICE,1,registrations,eea_honda_2024_final.json
-honda,CZ,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,30,registrations,eea_honda_2024_final.json
-honda,CZ,country,,2024,2024-01..2024-12,CR-V,HEV,604,registrations,eea_honda_2024_final.json
-honda,CZ,country,,2024,2024-01..2024-12,CR-V,PHEV,64,registrations,eea_honda_2024_final.json
-honda,CZ,country,,2024,2024-01..2024-12,HR-V,HEV,300,registrations,eea_honda_2024_final.json
-honda,CZ,country,,2024,2024-01..2024-12,JAZZ,HEV,44,registrations,eea_honda_2024_final.json
-honda,CZ,country,,2024,2024-01..2024-12,ZR-V,HEV,226,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,,HEV,3,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,,ICE,1,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,CIVIC,HEV,823,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,CIVIC,ICE,1,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,CIVIC SPORT,ICE,3,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,123,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,E:NY1,BEV,796,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,HONDA CR-V,HEV,1349,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,HONDA CR-V,ICE,2,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,HONDA CR-V,PHEV,267,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,HONDA E,BEV,4,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,HONDA HR-V,ICE,1,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,HR-V,HEV,1661,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,JAZZ,HEV,1173,registrations,eea_honda_2024_final.json
-honda,DE,country,,2024,2024-01..2024-12,ZR-V,HEV,855,registrations,eea_honda_2024_final.json
-honda,DK,country,,2024,2024-01..2024-12,CIVIC E:HEV,HEV,35,registrations,eea_honda_2024_final.json
-honda,DK,country,,2024,2024-01..2024-12,CIVIC E:HEV,ICE,1,registrations,eea_honda_2024_final.json
-honda,DK,country,,2024,2024-01..2024-12,CR-V E:PHEV,PHEV,103,registrations,eea_honda_2024_final.json
-honda,DK,country,,2024,2024-01..2024-12,E:NY1,BEV,510,registrations,eea_honda_2024_final.json
-honda,DK,country,,2024,2024-01..2024-12,HR-V E:HEV,HEV,161,registrations,eea_honda_2024_final.json
-honda,DK,country,,2024,2024-01..2024-12,HR-V E:HEV,ICE,1,registrations,eea_honda_2024_final.json
-honda,DK,country,,2024,2024-01..2024-12,JAZZ E:HEV,HEV,51,registrations,eea_honda_2024_final.json
-honda,EE,country,,2024,2024-01..2024-12,CIVIC,HEV,39,registrations,eea_honda_2024_final.json
-honda,EE,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,8,registrations,eea_honda_2024_final.json
-honda,EE,country,,2024,2024-01..2024-12,CR-V,HEV,217,registrations,eea_honda_2024_final.json
-honda,EE,country,,2024,2024-01..2024-12,CR-V,PHEV,25,registrations,eea_honda_2024_final.json
-honda,EE,country,,2024,2024-01..2024-12,E:NY1,BEV,3,registrations,eea_honda_2024_final.json
-honda,EE,country,,2024,2024-01..2024-12,HR-V,HEV,87,registrations,eea_honda_2024_final.json
-honda,EE,country,,2024,2024-01..2024-12,JAZZ,HEV,37,registrations,eea_honda_2024_final.json
-honda,EE,country,,2024,2024-01..2024-12,ZR-V,HEV,119,registrations,eea_honda_2024_final.json
-honda,ES,country,,2024,2024-01..2024-12,CIVIC,HEV,922,registrations,eea_honda_2024_final.json
-honda,ES,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,46,registrations,eea_honda_2024_final.json
-honda,ES,country,,2024,2024-01..2024-12,CR-V,HEV,429,registrations,eea_honda_2024_final.json
-honda,ES,country,,2024,2024-01..2024-12,CR-V,PHEV,91,registrations,eea_honda_2024_final.json
-honda,ES,country,,2024,2024-01..2024-12,E:NY1,BEV,35,registrations,eea_honda_2024_final.json
-honda,ES,country,,2024,2024-01..2024-12,HONDA E,BEV,15,registrations,eea_honda_2024_final.json
-honda,ES,country,,2024,2024-01..2024-12,HR-V,HEV,1188,registrations,eea_honda_2024_final.json
-honda,ES,country,,2024,2024-01..2024-12,JAZZ,HEV,474,registrations,eea_honda_2024_final.json
-honda,ES,country,,2024,2024-01..2024-12,ZR-V,HEV,644,registrations,eea_honda_2024_final.json
-honda,FI,country,,2024,2024-01..2024-12,CIVIC,HEV,22,registrations,eea_honda_2024_final.json
-honda,FI,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,1,registrations,eea_honda_2024_final.json
-honda,FI,country,,2024,2024-01..2024-12,CR-V,HEV,57,registrations,eea_honda_2024_final.json
-honda,FI,country,,2024,2024-01..2024-12,CR-V,PHEV,37,registrations,eea_honda_2024_final.json
-honda,FI,country,,2024,2024-01..2024-12,E:NY1,BEV,2,registrations,eea_honda_2024_final.json
-honda,FI,country,,2024,2024-01..2024-12,HR-V,HEV,21,registrations,eea_honda_2024_final.json
-honda,FI,country,,2024,2024-01..2024-12,JAZZ,HEV,33,registrations,eea_honda_2024_final.json
-honda,FI,country,,2024,2024-01..2024-12,ZR-V,HEV,30,registrations,eea_honda_2024_final.json
-honda,FR,country,,2024,2024-01..2024-12,CIVIC,HEV,1190,registrations,eea_honda_2024_final.json
-honda,FR,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,5,registrations,eea_honda_2024_final.json
-honda,FR,country,,2024,2024-01..2024-12,CR-V,HEV,149,registrations,eea_honda_2024_final.json
-honda,FR,country,,2024,2024-01..2024-12,CR-V,PHEV,167,registrations,eea_honda_2024_final.json
-honda,FR,country,,2024,2024-01..2024-12,E:NY1,BEV,437,registrations,eea_honda_2024_final.json
-honda,FR,country,,2024,2024-01..2024-12,HR-V,HEV,1265,registrations,eea_honda_2024_final.json
-honda,FR,country,,2024,2024-01..2024-12,JAZZ,HEV,814,registrations,eea_honda_2024_final.json
-honda,FR,country,,2024,2024-01..2024-12,ZR-V,HEV,760,registrations,eea_honda_2024_final.json
-honda,GR,country,,2024,2024-01..2024-12,CIVIC,HEV,42,registrations,eea_honda_2024_final.json
-honda,GR,country,,2024,2024-01..2024-12,CIVIC TYPE R,HEV,1,registrations,eea_honda_2024_final.json
-honda,GR,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,9,registrations,eea_honda_2024_final.json
-honda,GR,country,,2024,2024-01..2024-12,CR-V,HEV,44,registrations,eea_honda_2024_final.json
-honda,GR,country,,2024,2024-01..2024-12,CR-V,PHEV,7,registrations,eea_honda_2024_final.json
-honda,GR,country,,2024,2024-01..2024-12,E:NY1,BEV,29,registrations,eea_honda_2024_final.json
-honda,GR,country,,2024,2024-01..2024-12,HR-V,HEV,136,registrations,eea_honda_2024_final.json
-honda,GR,country,,2024,2024-01..2024-12,JAZZ,HEV,114,registrations,eea_honda_2024_final.json
-honda,GR,country,,2024,2024-01..2024-12,ZR-V,HEV,57,registrations,eea_honda_2024_final.json
-honda,HR,country,,2024,2024-01..2024-12,CIVIC,HEV,30,registrations,eea_honda_2024_final.json
-honda,HR,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,5,registrations,eea_honda_2024_final.json
-honda,HR,country,,2024,2024-01..2024-12,CR-V,HEV,49,registrations,eea_honda_2024_final.json
-honda,HR,country,,2024,2024-01..2024-12,CR-V,PHEV,6,registrations,eea_honda_2024_final.json
-honda,HR,country,,2024,2024-01..2024-12,HONDA E,BEV,1,registrations,eea_honda_2024_final.json
-honda,HR,country,,2024,2024-01..2024-12,HR-V,HEV,27,registrations,eea_honda_2024_final.json
-honda,HR,country,,2024,2024-01..2024-12,JAZZ,HEV,10,registrations,eea_honda_2024_final.json
-honda,HR,country,,2024,2024-01..2024-12,ZR-V,HEV,34,registrations,eea_honda_2024_final.json
-honda,HU,country,,2024,2024-01..2024-12,CIVIC,HEV,140,registrations,eea_honda_2024_final.json
-honda,HU,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,5,registrations,eea_honda_2024_final.json
-honda,HU,country,,2024,2024-01..2024-12,CR-V,HEV,119,registrations,eea_honda_2024_final.json
-honda,HU,country,,2024,2024-01..2024-12,CR-V,PHEV,29,registrations,eea_honda_2024_final.json
-honda,HU,country,,2024,2024-01..2024-12,E:NY1,BEV,96,registrations,eea_honda_2024_final.json
-honda,HU,country,,2024,2024-01..2024-12,HONDA E,BEV,3,registrations,eea_honda_2024_final.json
-honda,HU,country,,2024,2024-01..2024-12,HR-V,HEV,179,registrations,eea_honda_2024_final.json
-honda,HU,country,,2024,2024-01..2024-12,JAZZ,HEV,60,registrations,eea_honda_2024_final.json
-honda,HU,country,,2024,2024-01..2024-12,ZR-V,HEV,104,registrations,eea_honda_2024_final.json
-honda,IE,country,,2024,2024-01..2024-12,CIVIC,HEV,61,registrations,eea_honda_2024_final.json
-honda,IE,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,3,registrations,eea_honda_2024_final.json
-honda,IE,country,,2024,2024-01..2024-12,CR-V,HEV,10,registrations,eea_honda_2024_final.json
-honda,IE,country,,2024,2024-01..2024-12,CR-V,PHEV,39,registrations,eea_honda_2024_final.json
-honda,IE,country,,2024,2024-01..2024-12,E:NY1,BEV,5,registrations,eea_honda_2024_final.json
-honda,IE,country,,2024,2024-01..2024-12,HONDA E,BEV,1,registrations,eea_honda_2024_final.json
-honda,IE,country,,2024,2024-01..2024-12,HR-V,HEV,18,registrations,eea_honda_2024_final.json
-honda,IE,country,,2024,2024-01..2024-12,JAZZ,HEV,83,registrations,eea_honda_2024_final.json
-honda,IE,country,,2024,2024-01..2024-12,ZR-V,HEV,23,registrations,eea_honda_2024_final.json
-honda,IT,country,,2024,2024-01..2024-12,CIVIC,HEV,440,registrations,eea_honda_2024_final.json
-honda,IT,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,52,registrations,eea_honda_2024_final.json
-honda,IT,country,,2024,2024-01..2024-12,CR-V,HEV,841,registrations,eea_honda_2024_final.json
-honda,IT,country,,2024,2024-01..2024-12,CR-V,PHEV,76,registrations,eea_honda_2024_final.json
-honda,IT,country,,2024,2024-01..2024-12,HR-V,HEV,3188,registrations,eea_honda_2024_final.json
-honda,IT,country,,2024,2024-01..2024-12,JAZZ,HEV,1262,registrations,eea_honda_2024_final.json
-honda,IT,country,,2024,2024-01..2024-12,ZR-V,HEV,1588,registrations,eea_honda_2024_final.json
-honda,LT,country,,2024,2024-01..2024-12,CIVIC,HEV,10,registrations,eea_honda_2024_final.json
-honda,LT,country,,2024,2024-01..2024-12,CIVIC TYPE-R,ICE,5,registrations,eea_honda_2024_final.json
-honda,LT,country,,2024,2024-01..2024-12,CR-V,HEV,55,registrations,eea_honda_2024_final.json
-honda,LT,country,,2024,2024-01..2024-12,CR-V,PHEV,8,registrations,eea_honda_2024_final.json
-honda,LT,country,,2024,2024-01..2024-12,HR-V,HEV,38,registrations,eea_honda_2024_final.json
-honda,LT,country,,2024,2024-01..2024-12,JAZZ,HEV,19,registrations,eea_honda_2024_final.json
-honda,LT,country,,2024,2024-01..2024-12,ZR-V,HEV,24,registrations,eea_honda_2024_final.json
-honda,LU,country,,2024,2024-01..2024-12,CIVIC,HEV,38,registrations,eea_honda_2024_final.json
-honda,LU,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,17,registrations,eea_honda_2024_final.json
-honda,LU,country,,2024,2024-01..2024-12,CR-V,HEV,39,registrations,eea_honda_2024_final.json
-honda,LU,country,,2024,2024-01..2024-12,CR-V,PHEV,4,registrations,eea_honda_2024_final.json
-honda,LU,country,,2024,2024-01..2024-12,E:NY1,BEV,19,registrations,eea_honda_2024_final.json
-honda,LU,country,,2024,2024-01..2024-12,HR-V,HEV,28,registrations,eea_honda_2024_final.json
-honda,LU,country,,2024,2024-01..2024-12,JAZZ,HEV,21,registrations,eea_honda_2024_final.json
-honda,LU,country,,2024,2024-01..2024-12,ZR-V,HEV,31,registrations,eea_honda_2024_final.json
-honda,LV,country,,2024,2024-01..2024-12,CIVIC,HEV,5,registrations,eea_honda_2024_final.json
-honda,LV,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,2,registrations,eea_honda_2024_final.json
-honda,LV,country,,2024,2024-01..2024-12,CR-V,HEV,63,registrations,eea_honda_2024_final.json
-honda,LV,country,,2024,2024-01..2024-12,CR-V,PHEV,5,registrations,eea_honda_2024_final.json
-honda,LV,country,,2024,2024-01..2024-12,E:NY1,BEV,1,registrations,eea_honda_2024_final.json
-honda,LV,country,,2024,2024-01..2024-12,HRV,HEV,25,registrations,eea_honda_2024_final.json
-honda,LV,country,,2024,2024-01..2024-12,JAZZ,HEV,5,registrations,eea_honda_2024_final.json
-honda,LV,country,,2024,2024-01..2024-12,ZR-V,HEV,25,registrations,eea_honda_2024_final.json
-honda,MT,country,,2024,2024-01..2024-12,CIVIC,HEV,3,registrations,eea_honda_2024_final.json
-honda,MT,country,,2024,2024-01..2024-12,CR-V,HEV,1,registrations,eea_honda_2024_final.json
-honda,MT,country,,2024,2024-01..2024-12,CR-V,PHEV,1,registrations,eea_honda_2024_final.json
-honda,MT,country,,2024,2024-01..2024-12,E NY1,BEV,11,registrations,eea_honda_2024_final.json
-honda,MT,country,,2024,2024-01..2024-12,HR-V,HEV,1,registrations,eea_honda_2024_final.json
-honda,MT,country,,2024,2024-01..2024-12,JAZZ,HEV,9,registrations,eea_honda_2024_final.json
-honda,MT,country,,2024,2024-01..2024-12,ZR-V,HEV,4,registrations,eea_honda_2024_final.json
-honda,NL,country,,2024,2024-01..2024-12,CIVIC,HEV,202,registrations,eea_honda_2024_final.json
-honda,NL,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,1,registrations,eea_honda_2024_final.json
-honda,NL,country,,2024,2024-01..2024-12,CR-V,HEV,60,registrations,eea_honda_2024_final.json
-honda,NL,country,,2024,2024-01..2024-12,CR-V,PHEV,117,registrations,eea_honda_2024_final.json
-honda,NL,country,,2024,2024-01..2024-12,E:NY1,BEV,118,registrations,eea_honda_2024_final.json
-honda,NL,country,,2024,2024-01..2024-12,HR-V,HEV,311,registrations,eea_honda_2024_final.json
-honda,NL,country,,2024,2024-01..2024-12,JAZZ,HEV,218,registrations,eea_honda_2024_final.json
-honda,NL,country,,2024,2024-01..2024-12,ZR-V,HEV,56,registrations,eea_honda_2024_final.json
-honda,PL,country,,2024,2024-01..2024-12,CIVIC,HEV,423,registrations,eea_honda_2024_final.json
-honda,PL,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,51,registrations,eea_honda_2024_final.json
-honda,PL,country,,2024,2024-01..2024-12,CR-V,HEV,997,registrations,eea_honda_2024_final.json
-honda,PL,country,,2024,2024-01..2024-12,CR-V,PHEV,133,registrations,eea_honda_2024_final.json
-honda,PL,country,,2024,2024-01..2024-12,HR-V,HEV,1604,registrations,eea_honda_2024_final.json
-honda,PL,country,,2024,2024-01..2024-12,JAZZ,HEV,199,registrations,eea_honda_2024_final.json
-honda,PL,country,,2024,2024-01..2024-12,ZR-V,HEV,608,registrations,eea_honda_2024_final.json
-honda,PT,country,,2024,2024-01..2024-12,CIVIC,HEV,11,registrations,eea_honda_2024_final.json
-honda,PT,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,18,registrations,eea_honda_2024_final.json
-honda,PT,country,,2024,2024-01..2024-12,CR-V,HEV,19,registrations,eea_honda_2024_final.json
-honda,PT,country,,2024,2024-01..2024-12,CR-V,PHEV,61,registrations,eea_honda_2024_final.json
-honda,PT,country,,2024,2024-01..2024-12,E:NY1,BEV,34,registrations,eea_honda_2024_final.json
-honda,PT,country,,2024,2024-01..2024-12,HR-V,HEV,410,registrations,eea_honda_2024_final.json
-honda,PT,country,,2024,2024-01..2024-12,JAZZ,HEV,133,registrations,eea_honda_2024_final.json
-honda,PT,country,,2024,2024-01..2024-12,ZR-V,HEV,41,registrations,eea_honda_2024_final.json
-honda,RO,country,,2024,2024-01..2024-12,CIVIC,HEV,283,registrations,eea_honda_2024_final.json
-honda,RO,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,19,registrations,eea_honda_2024_final.json
-honda,RO,country,,2024,2024-01..2024-12,CR-V,HEV,360,registrations,eea_honda_2024_final.json
-honda,RO,country,,2024,2024-01..2024-12,CR-V,PHEV,29,registrations,eea_honda_2024_final.json
-honda,RO,country,,2024,2024-01..2024-12,E:NY1,BEV,3,registrations,eea_honda_2024_final.json
-honda,RO,country,,2024,2024-01..2024-12,HR-V,HEV,234,registrations,eea_honda_2024_final.json
-honda,RO,country,,2024,2024-01..2024-12,JAZZ,HEV,28,registrations,eea_honda_2024_final.json
-honda,RO,country,,2024,2024-01..2024-12,ZR-V,HEV,142,registrations,eea_honda_2024_final.json
-honda,SE,country,,2024,2024-01..2024-12,CIVIC,HEV,116,registrations,eea_honda_2024_final.json
-honda,SE,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,12,registrations,eea_honda_2024_final.json
-honda,SE,country,,2024,2024-01..2024-12,CR-V,HEV,113,registrations,eea_honda_2024_final.json
-honda,SE,country,,2024,2024-01..2024-12,CR-V,PHEV,43,registrations,eea_honda_2024_final.json
-honda,SE,country,,2024,2024-01..2024-12,E:NY1,BEV,326,registrations,eea_honda_2024_final.json
-honda,SE,country,,2024,2024-01..2024-12,HR-V,HEV,207,registrations,eea_honda_2024_final.json
-honda,SE,country,,2024,2024-01..2024-12,JAZZ,HEV,120,registrations,eea_honda_2024_final.json
-honda,SE,country,,2024,2024-01..2024-12,ZR-V,HEV,58,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,CIVIC / 5 VRAT / 2.0 / HEV,HEV,54,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,CIVIC / 5 VRAT / 2.0 / TYPE R,ICE,1,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,CR-V / 2.0 / 4WD / E-CVT / HIBRID,HEV,1,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,CR-V / 2.0 / FHEV / AVT / 2WD,HEV,17,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,CR-V / 2.0 / FHEV / AVT / 4WD,HEV,42,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,CR-V / 2.0 / PHEV / AVT / 2WD,PHEV,2,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,HR-V / 1.5 / E-CVT / FHEV,HEV,39,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,HR-V / 1.5 / E-CVT FHEV,HEV,2,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,JAZZ / 1.5 / HIBRID,HEV,5,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,JAZZ / 1.5 / HIBRID / CROSS,HEV,8,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,JAZZ / 1.5 / HIBRID CROSS,HEV,4,registrations,eea_honda_2024_final.json
-honda,SI,country,,2024,2024-01..2024-12,ZR-V / 2.0 / EHEV / AVT /,HEV,71,registrations,eea_honda_2024_final.json
-honda,SK,country,,2024,2024-01..2024-12,CIVIC,HEV,44,registrations,eea_honda_2024_final.json
-honda,SK,country,,2024,2024-01..2024-12,CIVIC 5DR,ICE,1,registrations,eea_honda_2024_final.json
-honda,SK,country,,2024,2024-01..2024-12,CIVIC TYPE R,ICE,6,registrations,eea_honda_2024_final.json
-honda,SK,country,,2024,2024-01..2024-12,CR-V,HEV,232,registrations,eea_honda_2024_final.json
-honda,SK,country,,2024,2024-01..2024-12,CR-V,PHEV,26,registrations,eea_honda_2024_final.json
-honda,SK,country,,2024,2024-01..2024-12,HR-V,HEV,188,registrations,eea_honda_2024_final.json
-honda,SK,country,,2024,2024-01..2024-12,HR-V.,HEV,1,registrations,eea_honda_2024_final.json
-honda,SK,country,,2024,2024-01..2024-12,JAZZ,HEV,31,registrations,eea_honda_2024_final.json
-honda,SK,country,,2024,2024-01..2024-12,ZR-V,HEV,137,registrations,eea_honda_2024_final.json
 hyundai,AT,country,,2024,2024-01..2024-12,BAYON,HEV,60,registrations,eea_hyundai_2024_final.json
 hyundai,AT,country,,2024,2024-01..2024-12,BAYON,ICE,705,registrations,eea_hyundai_2024_final.json
 hyundai,AT,country,,2024,2024-01..2024-12,G70 GENESIS G70,ICE,1,registrations,eea_hyundai_2024_final.json
@@ -1465,6 +1225,250 @@ kia,SK,country,,2024,2024-01..2024-12,STONIC,ICE,918,registrations,eea_kia_2024_
 kia,SK,country,,2024,2024-01..2024-12,XCEED,HEV,4,registrations,eea_kia_2024_final.json
 kia,SK,country,,2024,2024-01..2024-12,XCEED,ICE,764,registrations,eea_kia_2024_final.json
 kia,SK,country,,2024,2024-01..2024-12,XCEED,PHEV,7,registrations,eea_kia_2024_final.json
+nissan,AT,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,208,registrations,eea_nissan_2024_final.json
+nissan,AT,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,158,registrations,eea_nissan_2024_final.json
+nissan,AT,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,449,registrations,eea_nissan_2024_final.json
+nissan,AT,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,19,registrations,eea_nissan_2024_final.json
+nissan,AT,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1370,registrations,eea_nissan_2024_final.json
+nissan,AT,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,270,registrations,eea_nissan_2024_final.json
+nissan,AT,country,,2024,2024-01..2024-12,PRIMASTAR,ICE,57,registrations,eea_nissan_2024_final.json
+nissan,AT,country,,2024,2024-01..2024-12,TOWNSTAR,BEV,31,registrations,eea_nissan_2024_final.json
+nissan,AT,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,237,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,401,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,1006,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,1454,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,149,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,91,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,NISSAN MICRA,ICE,4,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,3664,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,1232,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,PRIMASTAR,ICE,232,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,TOWNSTAR,BEV,44,registrations,eea_nissan_2024_final.json
+nissan,BE,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,351,registrations,eea_nissan_2024_final.json
+nissan,BG,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,18,registrations,eea_nissan_2024_final.json
+nissan,BG,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,35,registrations,eea_nissan_2024_final.json
+nissan,BG,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,129,registrations,eea_nissan_2024_final.json
+nissan,BG,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,3,registrations,eea_nissan_2024_final.json
+nissan,BG,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,3,registrations,eea_nissan_2024_final.json
+nissan,BG,country,,2024,2024-01..2024-12,NISSAN MICRA,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,BG,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,724,registrations,eea_nissan_2024_final.json
+nissan,BG,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,292,registrations,eea_nissan_2024_final.json
+nissan,CY,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,121,registrations,eea_nissan_2024_final.json
+nissan,CY,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,130,registrations,eea_nissan_2024_final.json
+nissan,CY,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,319,registrations,eea_nissan_2024_final.json
+nissan,CY,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,1,registrations,eea_nissan_2024_final.json
+nissan,CY,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,11,registrations,eea_nissan_2024_final.json
+nissan,CY,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,670,registrations,eea_nissan_2024_final.json
+nissan,CY,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,208,registrations,eea_nissan_2024_final.json
+nissan,CZ,country,,2024,2024-01..2024-12,GT-R,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,CZ,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,5,registrations,eea_nissan_2024_final.json
+nissan,CZ,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,21,registrations,eea_nissan_2024_final.json
+nissan,CZ,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,169,registrations,eea_nissan_2024_final.json
+nissan,CZ,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,4,registrations,eea_nissan_2024_final.json
+nissan,CZ,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,3,registrations,eea_nissan_2024_final.json
+nissan,CZ,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,778,registrations,eea_nissan_2024_final.json
+nissan,CZ,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,243,registrations,eea_nissan_2024_final.json
+nissan,CZ,country,,2024,2024-01..2024-12,TOWNSTAR,BEV,9,registrations,eea_nissan_2024_final.json
+nissan,CZ,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,54,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,,ICE,2,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,826,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,3221,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,3452,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN LEAF 40 KWH,BEV,231,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN LEAF 62 KWH,BEV,257,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN MICRA,ICE,9,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN PATHFINDER,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,12300,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN QASHQAI,ICE,2,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,5150,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,NISSAN Z,ICE,10,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,PATHFINDER,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,PRIMASTAR,ICE,1378,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,TOWNSTAR,BEV,104,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,2255,registrations,eea_nissan_2024_final.json
+nissan,DE,country,,2024,2024-01..2024-12,Z,ICE,3,registrations,eea_nissan_2024_final.json
+nissan,DK,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,1976,registrations,eea_nissan_2024_final.json
+nissan,DK,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,44,registrations,eea_nissan_2024_final.json
+nissan,DK,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,495,registrations,eea_nissan_2024_final.json
+nissan,DK,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,20,registrations,eea_nissan_2024_final.json
+nissan,DK,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,23,registrations,eea_nissan_2024_final.json
+nissan,DK,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,2750,registrations,eea_nissan_2024_final.json
+nissan,DK,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,412,registrations,eea_nissan_2024_final.json
+nissan,DK,country,,2024,2024-01..2024-12,QASHQAI,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,EE,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,40,registrations,eea_nissan_2024_final.json
+nissan,EE,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,32,registrations,eea_nissan_2024_final.json
+nissan,EE,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,48,registrations,eea_nissan_2024_final.json
+nissan,EE,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,2,registrations,eea_nissan_2024_final.json
+nissan,EE,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,275,registrations,eea_nissan_2024_final.json
+nissan,EE,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,127,registrations,eea_nissan_2024_final.json
+nissan,EE,country,,2024,2024-01..2024-12,X-TRAIL,HEV,1,registrations,eea_nissan_2024_final.json
+nissan,ES,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,234,registrations,eea_nissan_2024_final.json
+nissan,ES,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,2711,registrations,eea_nissan_2024_final.json
+nissan,ES,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,6671,registrations,eea_nissan_2024_final.json
+nissan,ES,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,82,registrations,eea_nissan_2024_final.json
+nissan,ES,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,98,registrations,eea_nissan_2024_final.json
+nissan,ES,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,18059,registrations,eea_nissan_2024_final.json
+nissan,ES,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,3636,registrations,eea_nissan_2024_final.json
+nissan,ES,country,,2024,2024-01..2024-12,PRIMASTAR,ICE,297,registrations,eea_nissan_2024_final.json
+nissan,ES,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,843,registrations,eea_nissan_2024_final.json
+nissan,FI,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,255,registrations,eea_nissan_2024_final.json
+nissan,FI,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,221,registrations,eea_nissan_2024_final.json
+nissan,FI,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,320,registrations,eea_nissan_2024_final.json
+nissan,FI,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,168,registrations,eea_nissan_2024_final.json
+nissan,FI,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,28,registrations,eea_nissan_2024_final.json
+nissan,FI,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1761,registrations,eea_nissan_2024_final.json
+nissan,FI,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,200,registrations,eea_nissan_2024_final.json
+nissan,FI,country,,2024,2024-01..2024-12,PRIMASTAR,ICE,2,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,JUKE,HEV,1,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,653,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,7917,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,3586,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,634,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,31,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,NISSAN MICRA,ICE,6,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,13610,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,2255,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,PRIMASTAR,ICE,815,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,TOWNSTAR,BEV,18,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,44,registrations,eea_nissan_2024_final.json
+nissan,FR,country,,2024,2024-01..2024-12,X-TRAIL,HEV,2,registrations,eea_nissan_2024_final.json
+nissan,GR,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,20,registrations,eea_nissan_2024_final.json
+nissan,GR,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,438,registrations,eea_nissan_2024_final.json
+nissan,GR,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,1630,registrations,eea_nissan_2024_final.json
+nissan,GR,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,5,registrations,eea_nissan_2024_final.json
+nissan,GR,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,3,registrations,eea_nissan_2024_final.json
+nissan,GR,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1928,registrations,eea_nissan_2024_final.json
+nissan,GR,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,218,registrations,eea_nissan_2024_final.json
+nissan,GR,country,,2024,2024-01..2024-12,PRIMASTAR,ICE,54,registrations,eea_nissan_2024_final.json
+nissan,HR,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,11,registrations,eea_nissan_2024_final.json
+nissan,HR,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,11,registrations,eea_nissan_2024_final.json
+nissan,HR,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,129,registrations,eea_nissan_2024_final.json
+nissan,HR,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,546,registrations,eea_nissan_2024_final.json
+nissan,HR,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,144,registrations,eea_nissan_2024_final.json
+nissan,HR,country,,2024,2024-01..2024-12,QASHQAI,HEV,3,registrations,eea_nissan_2024_final.json
+nissan,HR,country,,2024,2024-01..2024-12,X-TRAIL,HEV,2,registrations,eea_nissan_2024_final.json
+nissan,HR,country,,2024,2024-01..2024-12,X-TRAIL,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,HU,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,61,registrations,eea_nissan_2024_final.json
+nissan,HU,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,142,registrations,eea_nissan_2024_final.json
+nissan,HU,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,417,registrations,eea_nissan_2024_final.json
+nissan,HU,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,299,registrations,eea_nissan_2024_final.json
+nissan,HU,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,71,registrations,eea_nissan_2024_final.json
+nissan,HU,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,3340,registrations,eea_nissan_2024_final.json
+nissan,HU,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,1241,registrations,eea_nissan_2024_final.json
+nissan,HU,country,,2024,2024-01..2024-12,TOWNSTAR,BEV,2,registrations,eea_nissan_2024_final.json
+nissan,HU,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,16,registrations,eea_nissan_2024_final.json
+nissan,IE,country,,2024,2024-01..2024-12,INTERSTAR,ICE,7,registrations,eea_nissan_2024_final.json
+nissan,IE,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,239,registrations,eea_nissan_2024_final.json
+nissan,IE,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,667,registrations,eea_nissan_2024_final.json
+nissan,IE,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,1156,registrations,eea_nissan_2024_final.json
+nissan,IE,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,388,registrations,eea_nissan_2024_final.json
+nissan,IE,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,37,registrations,eea_nissan_2024_final.json
+nissan,IE,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1870,registrations,eea_nissan_2024_final.json
+nissan,IE,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,445,registrations,eea_nissan_2024_final.json
+nissan,IT,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,248,registrations,eea_nissan_2024_final.json
+nissan,IT,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,6067,registrations,eea_nissan_2024_final.json
+nissan,IT,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,5933,registrations,eea_nissan_2024_final.json
+nissan,IT,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,327,registrations,eea_nissan_2024_final.json
+nissan,IT,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,34,registrations,eea_nissan_2024_final.json
+nissan,IT,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,17662,registrations,eea_nissan_2024_final.json
+nissan,IT,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,3471,registrations,eea_nissan_2024_final.json
+nissan,IT,country,,2024,2024-01..2024-12,PRIMASTAR,ICE,514,registrations,eea_nissan_2024_final.json
+nissan,IT,country,,2024,2024-01..2024-12,TOWNSTAR,BEV,1,registrations,eea_nissan_2024_final.json
+nissan,IT,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,676,registrations,eea_nissan_2024_final.json
+nissan,LT,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,65,registrations,eea_nissan_2024_final.json
+nissan,LT,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,52,registrations,eea_nissan_2024_final.json
+nissan,LT,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,110,registrations,eea_nissan_2024_final.json
+nissan,LT,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,3,registrations,eea_nissan_2024_final.json
+nissan,LT,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,12,registrations,eea_nissan_2024_final.json
+nissan,LT,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,599,registrations,eea_nissan_2024_final.json
+nissan,LT,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,210,registrations,eea_nissan_2024_final.json
+nissan,LU,country,,2024,2024-01..2024-12,LEAF 40KWH,BEV,1,registrations,eea_nissan_2024_final.json
+nissan,LU,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,6,registrations,eea_nissan_2024_final.json
+nissan,LU,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,65,registrations,eea_nissan_2024_final.json
+nissan,LU,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,63,registrations,eea_nissan_2024_final.json
+nissan,LU,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,5,registrations,eea_nissan_2024_final.json
+nissan,LU,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,207,registrations,eea_nissan_2024_final.json
+nissan,LU,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,73,registrations,eea_nissan_2024_final.json
+nissan,LU,country,,2024,2024-01..2024-12,PRIMASTAR,ICE,2,registrations,eea_nissan_2024_final.json
+nissan,LU,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,15,registrations,eea_nissan_2024_final.json
+nissan,LU,country,,2024,2024-01..2024-12,X-TRAIL,HEV,2,registrations,eea_nissan_2024_final.json
+nissan,LV,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,38,registrations,eea_nissan_2024_final.json
+nissan,LV,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,27,registrations,eea_nissan_2024_final.json
+nissan,LV,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,74,registrations,eea_nissan_2024_final.json
+nissan,LV,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,17,registrations,eea_nissan_2024_final.json
+nissan,LV,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,3,registrations,eea_nissan_2024_final.json
+nissan,LV,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,336,registrations,eea_nissan_2024_final.json
+nissan,LV,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,192,registrations,eea_nissan_2024_final.json
+nissan,MT,country,,2024,2024-01..2024-12,ARIYA,BEV,1,registrations,eea_nissan_2024_final.json
+nissan,MT,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,56,registrations,eea_nissan_2024_final.json
+nissan,MT,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,25,registrations,eea_nissan_2024_final.json
+nissan,MT,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,51,registrations,eea_nissan_2024_final.json
+nissan,MT,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,40,registrations,eea_nissan_2024_final.json
+nissan,MT,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,6,registrations,eea_nissan_2024_final.json
+nissan,MT,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,41,registrations,eea_nissan_2024_final.json
+nissan,MT,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,9,registrations,eea_nissan_2024_final.json
+nissan,MT,country,,2024,2024-01..2024-12,QASHQAI,HEV,1,registrations,eea_nissan_2024_final.json
+nissan,NL,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,553,registrations,eea_nissan_2024_final.json
+nissan,NL,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,1102,registrations,eea_nissan_2024_final.json
+nissan,NL,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,352,registrations,eea_nissan_2024_final.json
+nissan,NL,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,348,registrations,eea_nissan_2024_final.json
+nissan,NL,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,34,registrations,eea_nissan_2024_final.json
+nissan,NL,country,,2024,2024-01..2024-12,NISSAN MICRA,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,NL,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,2818,registrations,eea_nissan_2024_final.json
+nissan,NL,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,257,registrations,eea_nissan_2024_final.json
+nissan,NL,country,,2024,2024-01..2024-12,TOWNSTAR,BEV,5,registrations,eea_nissan_2024_final.json
+nissan,PL,country,,2024,2024-01..2024-12,JUKE,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,PL,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,354,registrations,eea_nissan_2024_final.json
+nissan,PL,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,750,registrations,eea_nissan_2024_final.json
+nissan,PL,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,5737,registrations,eea_nissan_2024_final.json
+nissan,PL,country,,2024,2024-01..2024-12,NISSAN QASHQAI,ICE,2,registrations,eea_nissan_2024_final.json
+nissan,PL,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,1737,registrations,eea_nissan_2024_final.json
+nissan,PL,country,,2024,2024-01..2024-12,QASHQAI,HEV,1,registrations,eea_nissan_2024_final.json
+nissan,PL,country,,2024,2024-01..2024-12,QASHQAI,ICE,2,registrations,eea_nissan_2024_final.json
+nissan,PL,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,176,registrations,eea_nissan_2024_final.json
+nissan,PL,country,,2024,2024-01..2024-12,X-TRAIL,HEV,3,registrations,eea_nissan_2024_final.json
+nissan,PT,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,320,registrations,eea_nissan_2024_final.json
+nissan,PT,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,311,registrations,eea_nissan_2024_final.json
+nissan,PT,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,3769,registrations,eea_nissan_2024_final.json
+nissan,PT,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,149,registrations,eea_nissan_2024_final.json
+nissan,PT,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,40,registrations,eea_nissan_2024_final.json
+nissan,PT,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,2756,registrations,eea_nissan_2024_final.json
+nissan,PT,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,187,registrations,eea_nissan_2024_final.json
+nissan,RO,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,32,registrations,eea_nissan_2024_final.json
+nissan,RO,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,106,registrations,eea_nissan_2024_final.json
+nissan,RO,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,55,registrations,eea_nissan_2024_final.json
+nissan,RO,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,63,registrations,eea_nissan_2024_final.json
+nissan,RO,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,6,registrations,eea_nissan_2024_final.json
+nissan,RO,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,680,registrations,eea_nissan_2024_final.json
+nissan,RO,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,260,registrations,eea_nissan_2024_final.json
+nissan,RO,country,,2024,2024-01..2024-12,QASHQAI,ICE,2,registrations,eea_nissan_2024_final.json
+nissan,RO,country,,2024,2024-01..2024-12,X-TRAIL,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,SE,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,749,registrations,eea_nissan_2024_final.json
+nissan,SE,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,135,registrations,eea_nissan_2024_final.json
+nissan,SE,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,457,registrations,eea_nissan_2024_final.json
+nissan,SE,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,34,registrations,eea_nissan_2024_final.json
+nissan,SE,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,8,registrations,eea_nissan_2024_final.json
+nissan,SE,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1663,registrations,eea_nissan_2024_final.json
+nissan,SE,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,411,registrations,eea_nissan_2024_final.json
+nissan,SE,country,,2024,2024-01..2024-12,PRIMASTAR,ICE,46,registrations,eea_nissan_2024_final.json
+nissan,SE,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,3,registrations,eea_nissan_2024_final.json
+nissan,SI,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,9,registrations,eea_nissan_2024_final.json
+nissan,SI,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,4,registrations,eea_nissan_2024_final.json
+nissan,SI,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,68,registrations,eea_nissan_2024_final.json
+nissan,SI,country,,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,2,registrations,eea_nissan_2024_final.json
+nissan,SI,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,741,registrations,eea_nissan_2024_final.json
+nissan,SI,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,93,registrations,eea_nissan_2024_final.json
+nissan,SI,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,52,registrations,eea_nissan_2024_final.json
+nissan,SK,country,,2024,2024-01..2024-12,GT-R,ICE,1,registrations,eea_nissan_2024_final.json
+nissan,SK,country,,2024,2024-01..2024-12,MICRA,ICE,2,registrations,eea_nissan_2024_final.json
+nissan,SK,country,,2024,2024-01..2024-12,NISSAN ARIYA,BEV,11,registrations,eea_nissan_2024_final.json
+nissan,SK,country,,2024,2024-01..2024-12,NISSAN JUKE,HEV,27,registrations,eea_nissan_2024_final.json
+nissan,SK,country,,2024,2024-01..2024-12,NISSAN JUKE,ICE,85,registrations,eea_nissan_2024_final.json
+nissan,SK,country,,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,1,registrations,eea_nissan_2024_final.json
+nissan,SK,country,,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1233,registrations,eea_nissan_2024_final.json
+nissan,SK,country,,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,340,registrations,eea_nissan_2024_final.json
+nissan,SK,country,,2024,2024-01..2024-12,TOWNSTAR,ICE,36,registrations,eea_nissan_2024_final.json
 toyota,AT,country,,2024,2024-01..2024-12,GR YARIS 16,ICE,1,registrations,eea_toyota_2024_final.json
 toyota,AT,country,,2024,2024-01..2024-12,PROACE,BEV,13,registrations,eea_toyota_2024_final.json
 toyota,AT,country,,2024,2024-01..2024-12,PROACE,ICE,348,registrations,eea_toyota_2024_final.json

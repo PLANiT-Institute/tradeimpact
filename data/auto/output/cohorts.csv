@@ -1,211 +1,4 @@
 market,company,destination,cohort_year,period,model,powertrain,units,basis,tailpipe_gco2_km,energy_wh_km,test_cycle,technology_source,sales_source_file,powertrain_rule,coverage_note,variant
-EU27,honda,AT,2024,2024-01..2024-12,CIVIC E:HEV 2.0 ADVA,HEV,34,registrations,114.2059,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,CIVIC E:HEV 2.0 ELEG,HEV,57,registrations,108.0702,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,CIVIC E:HEV 2.0 SPOR,HEV,28,registrations,113.0357,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,CIVIC TYPE R 2.0 TYP,ICE,12,registrations,186.25,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,CR-V E:HEV 2WD 2.0 E,HEV,21,registrations,134.2381,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,CR-V E:HEV 4WD 2.0 A,HEV,82,registrations,151.0366,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,CR-V E:HEV 4WD 2.0 E,HEV,45,registrations,151.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,E:NY1 EV ADVANCE,BEV,109,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,E:NY1 EV ELEGANCE,BEV,18,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,HONDA E EV ADVANCE,BEV,1,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,HR-V E:HEV 1.5 ADVAN,HEV,227,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,HR-V E:HEV 1.5 ELEGA,HEV,109,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,JAZZ 1.5 ADVANCE,HEV,46,registrations,104.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,JAZZ 1.5 ADVANCE SPO,HEV,22,registrations,106.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,JAZZ 1.5 ELEGANCE,HEV,41,registrations,102.0244,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,JAZZ CROSSTAR 1.5 AD,HEV,63,registrations,108.0635,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,UNASSIGNED,BEV,4,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,ZR-V 2.0 ADVANCE,HEV,49,registrations,132.1633,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,ZR-V 2.0 ELEGANCE,HEV,17,registrations,130.1176,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,AT,2024,2024-01..2024-12,ZR-V 2.0 SPORT,HEV,84,registrations,131.0714,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BE,2024,2024-01..2024-12,CIVIC,HEV,283,registrations,113.0424,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BE,2024,2024-01..2024-12,CIVIC TYPE R,ICE,38,registrations,186.1579,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BE,2024,2024-01..2024-12,CR-V,HEV,249,registrations,142.6988,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BE,2024,2024-01..2024-12,E:NY1,BEV,139,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BE,2024,2024-01..2024-12,HR-V,HEV,513,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BE,2024,2024-01..2024-12,JAZZ,HEV,220,registrations,105.5955,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BE,2024,2024-01..2024-12,ZR-V,HEV,233,registrations,131.6781,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BG,2024,2024-01..2024-12,CIVIC,HEV,28,registrations,112.7143,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BG,2024,2024-01..2024-12,CIVIC TYPE R,ICE,4,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BG,2024,2024-01..2024-12,HONDA CR V,HEV,8,registrations,134.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BG,2024,2024-01..2024-12,HONDA CRV,HEV,60,registrations,150.45,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BG,2024,2024-01..2024-12,HONDA HRV,HEV,20,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BG,2024,2024-01..2024-12,HONDA ZRV,HEV,38,registrations,131.3421,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,BG,2024,2024-01..2024-12,JAZZ,HEV,12,registrations,108.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CY,2024,2024-01..2024-12,CIVIC,HEV,15,registrations,118.2,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CY,2024,2024-01..2024-12,CIVIC TYPE R,ICE,1,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CY,2024,2024-01..2024-12,CR-V,HEV,26,registrations,147.6923,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CY,2024,2024-01..2024-12,E:NY1,BEV,5,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CY,2024,2024-01..2024-12,HR-V,HEV,81,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CY,2024,2024-01..2024-12,JAZZ,HEV,5,registrations,105.6,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CY,2024,2024-01..2024-12,ZR-V,HEV,8,registrations,131.125,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CZ,2024,2024-01..2024-12,CIVIC,HEV,123,registrations,111.4634,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CZ,2024,2024-01..2024-12,CIVIC TYPE R,ICE,30,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CZ,2024,2024-01..2024-12,CR-V,HEV,604,registrations,149.8709,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CZ,2024,2024-01..2024-12,HR-V,HEV,300,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CZ,2024,2024-01..2024-12,JAZZ,HEV,44,registrations,106.7273,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,CZ,2024,2024-01..2024-12,ZR-V,HEV,226,registrations,131.2345,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DE,2024,2024-01..2024-12,,HEV,3,registrations,120.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DE,2024,2024-01..2024-12,CIVIC,HEV,823,registrations,111.2564,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DE,2024,2024-01..2024-12,CIVIC,ICE,1,registrations,191.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DE,2024,2024-01..2024-12,CIVIC TYPE R,ICE,123,registrations,186.2195,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DE,2024,2024-01..2024-12,E:NY1,BEV,796,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DE,2024,2024-01..2024-12,HONDA CR-V,HEV,1349,registrations,146.5512,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DE,2024,2024-01..2024-12,HONDA E,BEV,4,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DE,2024,2024-01..2024-12,HR-V,HEV,1661,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DE,2024,2024-01..2024-12,JAZZ,HEV,1173,registrations,105.3061,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DE,2024,2024-01..2024-12,ZR-V,HEV,855,registrations,131.5216,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DK,2024,2024-01..2024-12,CIVIC E:HEV,HEV,35,registrations,109.6,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DK,2024,2024-01..2024-12,CIVIC E:HEV,ICE,1,registrations,108.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DK,2024,2024-01..2024-12,E:NY1,BEV,510,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DK,2024,2024-01..2024-12,HR-V E:HEV,HEV,161,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DK,2024,2024-01..2024-12,HR-V E:HEV,ICE,1,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,DK,2024,2024-01..2024-12,JAZZ E:HEV,HEV,51,registrations,106.3922,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,EE,2024,2024-01..2024-12,CIVIC,HEV,39,registrations,112.5128,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,EE,2024,2024-01..2024-12,CIVIC TYPE R,ICE,8,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,EE,2024,2024-01..2024-12,CR-V,HEV,217,registrations,146.2535,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,EE,2024,2024-01..2024-12,E:NY1,BEV,3,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,EE,2024,2024-01..2024-12,HR-V,HEV,87,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,EE,2024,2024-01..2024-12,JAZZ,HEV,37,registrations,106.027,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,EE,2024,2024-01..2024-12,ZR-V,HEV,119,registrations,131.2857,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,ES,2024,2024-01..2024-12,CIVIC,HEV,922,registrations,110.5781,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,ES,2024,2024-01..2024-12,CIVIC TYPE R,ICE,46,registrations,187.2391,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,ES,2024,2024-01..2024-12,CR-V,HEV,429,registrations,137.324,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,ES,2024,2024-01..2024-12,E:NY1,BEV,35,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,ES,2024,2024-01..2024-12,HONDA E,BEV,15,registrations,0.0,176.4,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,ES,2024,2024-01..2024-12,HR-V,HEV,1188,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,ES,2024,2024-01..2024-12,JAZZ,HEV,474,registrations,105.1941,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,ES,2024,2024-01..2024-12,ZR-V,HEV,644,registrations,131.4689,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FI,2024,2024-01..2024-12,CIVIC,HEV,22,registrations,112.8636,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FI,2024,2024-01..2024-12,CIVIC TYPE R,ICE,1,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FI,2024,2024-01..2024-12,CR-V,HEV,57,registrations,147.1404,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FI,2024,2024-01..2024-12,E:NY1,BEV,2,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FI,2024,2024-01..2024-12,HR-V,HEV,21,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FI,2024,2024-01..2024-12,JAZZ,HEV,33,registrations,105.6061,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FI,2024,2024-01..2024-12,ZR-V,HEV,30,registrations,131.3333,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FR,2024,2024-01..2024-12,CIVIC,HEV,1190,registrations,111.9244,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FR,2024,2024-01..2024-12,CIVIC TYPE R,ICE,5,registrations,186.6,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FR,2024,2024-01..2024-12,CR-V,HEV,149,registrations,140.7114,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FR,2024,2024-01..2024-12,E:NY1,BEV,437,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FR,2024,2024-01..2024-12,HR-V,HEV,1265,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FR,2024,2024-01..2024-12,JAZZ,HEV,814,registrations,105.543,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,FR,2024,2024-01..2024-12,ZR-V,HEV,760,registrations,131.6342,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,GR,2024,2024-01..2024-12,CIVIC,HEV,42,registrations,110.9286,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,GR,2024,2024-01..2024-12,CIVIC TYPE R,HEV,1,registrations,113.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,GR,2024,2024-01..2024-12,CIVIC TYPE R,ICE,9,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,GR,2024,2024-01..2024-12,CR-V,HEV,44,registrations,149.9318,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,GR,2024,2024-01..2024-12,E:NY1,BEV,29,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,GR,2024,2024-01..2024-12,HR-V,HEV,136,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,GR,2024,2024-01..2024-12,JAZZ,HEV,114,registrations,104.6491,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,GR,2024,2024-01..2024-12,ZR-V,HEV,57,registrations,130.9298,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HR,2024,2024-01..2024-12,CIVIC,HEV,30,registrations,112.6667,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HR,2024,2024-01..2024-12,CIVIC TYPE R,ICE,5,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HR,2024,2024-01..2024-12,CR-V,HEV,49,registrations,147.1837,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HR,2024,2024-01..2024-12,HONDA E,BEV,1,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HR,2024,2024-01..2024-12,HR-V,HEV,27,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HR,2024,2024-01..2024-12,JAZZ,HEV,10,registrations,105.8,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HR,2024,2024-01..2024-12,ZR-V,HEV,34,registrations,131.4118,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HU,2024,2024-01..2024-12,CIVIC,HEV,140,registrations,110.8643,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HU,2024,2024-01..2024-12,CIVIC TYPE R,ICE,5,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HU,2024,2024-01..2024-12,CR-V,HEV,119,registrations,146.7143,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HU,2024,2024-01..2024-12,E:NY1,BEV,96,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HU,2024,2024-01..2024-12,HONDA E,BEV,3,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HU,2024,2024-01..2024-12,HR-V,HEV,179,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HU,2024,2024-01..2024-12,JAZZ,HEV,60,registrations,105.7,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,HU,2024,2024-01..2024-12,ZR-V,HEV,104,registrations,131.1346,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IE,2024,2024-01..2024-12,CIVIC,HEV,61,registrations,114.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IE,2024,2024-01..2024-12,CIVIC TYPE R,ICE,3,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IE,2024,2024-01..2024-12,CR-V,HEV,10,registrations,150.5,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IE,2024,2024-01..2024-12,E:NY1,BEV,5,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IE,2024,2024-01..2024-12,HONDA E,BEV,1,registrations,0.0,172.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IE,2024,2024-01..2024-12,HR-V,HEV,18,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IE,2024,2024-01..2024-12,JAZZ,HEV,83,registrations,104.3373,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IE,2024,2024-01..2024-12,ZR-V,HEV,23,registrations,131.2609,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IT,2024,2024-01..2024-12,CIVIC,HEV,440,registrations,110.9159,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IT,2024,2024-01..2024-12,CIVIC TYPE R,ICE,52,registrations,185.9808,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IT,2024,2024-01..2024-12,CR-V,HEV,841,registrations,146.1094,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IT,2024,2024-01..2024-12,HR-V,HEV,3188,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IT,2024,2024-01..2024-12,JAZZ,HEV,1262,registrations,105.4675,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,IT,2024,2024-01..2024-12,ZR-V,HEV,1588,registrations,131.3734,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LT,2024,2024-01..2024-12,CIVIC,HEV,10,registrations,113.3,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LT,2024,2024-01..2024-12,CIVIC TYPE-R,ICE,5,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LT,2024,2024-01..2024-12,CR-V,HEV,55,registrations,147.6545,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LT,2024,2024-01..2024-12,HR-V,HEV,38,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LT,2024,2024-01..2024-12,JAZZ,HEV,19,registrations,106.5263,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LT,2024,2024-01..2024-12,ZR-V,HEV,24,registrations,131.2917,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LU,2024,2024-01..2024-12,CIVIC,HEV,38,registrations,113.1579,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LU,2024,2024-01..2024-12,CIVIC TYPE R,ICE,17,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LU,2024,2024-01..2024-12,CR-V,HEV,39,registrations,148.641,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LU,2024,2024-01..2024-12,E:NY1,BEV,19,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LU,2024,2024-01..2024-12,HR-V,HEV,28,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LU,2024,2024-01..2024-12,JAZZ,HEV,21,registrations,106.381,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LU,2024,2024-01..2024-12,ZR-V,HEV,31,registrations,131.4839,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LV,2024,2024-01..2024-12,CIVIC,HEV,5,registrations,112.6,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LV,2024,2024-01..2024-12,CIVIC TYPE R,ICE,2,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LV,2024,2024-01..2024-12,CR-V,HEV,63,registrations,147.2222,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LV,2024,2024-01..2024-12,E:NY1,BEV,1,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LV,2024,2024-01..2024-12,HRV,HEV,25,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LV,2024,2024-01..2024-12,JAZZ,HEV,5,registrations,106.4,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,LV,2024,2024-01..2024-12,ZR-V,HEV,25,registrations,131.84,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,MT,2024,2024-01..2024-12,CIVIC,HEV,3,registrations,113.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,MT,2024,2024-01..2024-12,CR-V,HEV,1,registrations,151.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,MT,2024,2024-01..2024-12,E NY1,BEV,11,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,MT,2024,2024-01..2024-12,HR-V,HEV,1,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,MT,2024,2024-01..2024-12,JAZZ,HEV,9,registrations,105.7778,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,MT,2024,2024-01..2024-12,ZR-V,HEV,4,registrations,131.75,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,NL,2024,2024-01..2024-12,CIVIC,HEV,202,registrations,112.8515,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,NL,2024,2024-01..2024-12,CIVIC TYPE R,ICE,1,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,NL,2024,2024-01..2024-12,CR-V,HEV,60,registrations,140.9667,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,NL,2024,2024-01..2024-12,E:NY1,BEV,118,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,NL,2024,2024-01..2024-12,HR-V,HEV,311,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,NL,2024,2024-01..2024-12,JAZZ,HEV,218,registrations,105.4679,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,NL,2024,2024-01..2024-12,ZR-V,HEV,56,registrations,131.6429,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PL,2024,2024-01..2024-12,CIVIC,HEV,423,registrations,112.5319,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PL,2024,2024-01..2024-12,CIVIC TYPE R,ICE,51,registrations,186.1765,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PL,2024,2024-01..2024-12,CR-V,HEV,997,registrations,148.4243,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PL,2024,2024-01..2024-12,HR-V,HEV,1604,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PL,2024,2024-01..2024-12,JAZZ,HEV,199,registrations,108.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PL,2024,2024-01..2024-12,ZR-V,HEV,608,registrations,131.4572,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PT,2024,2024-01..2024-12,CIVIC,HEV,11,registrations,113.3636,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PT,2024,2024-01..2024-12,CIVIC TYPE R,ICE,18,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PT,2024,2024-01..2024-12,CR-V,HEV,19,registrations,134.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PT,2024,2024-01..2024-12,E:NY1,BEV,34,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PT,2024,2024-01..2024-12,HR-V,HEV,410,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PT,2024,2024-01..2024-12,JAZZ,HEV,133,registrations,104.782,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,PT,2024,2024-01..2024-12,ZR-V,HEV,41,registrations,131.2439,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,RO,2024,2024-01..2024-12,CIVIC,HEV,283,registrations,113.1413,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,RO,2024,2024-01..2024-12,CIVIC TYPE R,ICE,19,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,RO,2024,2024-01..2024-12,CR-V,HEV,360,registrations,143.6111,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,RO,2024,2024-01..2024-12,E:NY1,BEV,3,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,RO,2024,2024-01..2024-12,HR-V,HEV,234,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,RO,2024,2024-01..2024-12,JAZZ,HEV,28,registrations,105.0714,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,RO,2024,2024-01..2024-12,ZR-V,HEV,142,registrations,131.3239,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SE,2024,2024-01..2024-12,CIVIC,HEV,116,registrations,111.2759,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SE,2024,2024-01..2024-12,CIVIC TYPE R,ICE,12,registrations,186.25,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SE,2024,2024-01..2024-12,CR-V,HEV,113,registrations,141.0973,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SE,2024,2024-01..2024-12,E:NY1,BEV,326,registrations,0.0,182.0,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SE,2024,2024-01..2024-12,HR-V,HEV,207,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SE,2024,2024-01..2024-12,JAZZ,HEV,120,registrations,105.1917,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SE,2024,2024-01..2024-12,ZR-V,HEV,58,registrations,131.1724,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,CIVIC / 5 VRAT / 2.0 / HEV,HEV,54,registrations,112.3519,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,CIVIC / 5 VRAT / 2.0 / TYPE R,ICE,1,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,CR-V / 2.0 / 4WD / E-CVT / HIBRID,HEV,1,registrations,163.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,CR-V / 2.0 / FHEV / AVT / 2WD,HEV,17,registrations,134.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,CR-V / 2.0 / FHEV / AVT / 4WD,HEV,42,registrations,151.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,HR-V / 1.5 / E-CVT / FHEV,HEV,39,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,HR-V / 1.5 / E-CVT FHEV,HEV,2,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,JAZZ / 1.5 / HIBRID,HEV,5,registrations,103.6,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,JAZZ / 1.5 / HIBRID / CROSS,HEV,8,registrations,108.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,JAZZ / 1.5 / HIBRID CROSS,HEV,4,registrations,108.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SI,2024,2024-01..2024-12,ZR-V / 2.0 / EHEV / AVT /,HEV,71,registrations,131.0986,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SK,2024,2024-01..2024-12,CIVIC,HEV,44,registrations,111.0227,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SK,2024,2024-01..2024-12,CIVIC TYPE R,ICE,6,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SK,2024,2024-01..2024-12,CR-V,HEV,232,registrations,150.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SK,2024,2024-01..2024-12,HR-V,HEV,188,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SK,2024,2024-01..2024-12,HR-V.,HEV,1,registrations,122.0,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SK,2024,2024-01..2024-12,JAZZ,HEV,31,registrations,105.7097,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
-EU27,honda,SK,2024,2024-01..2024-12,ZR-V,HEV,137,registrations,131.2409,,WLTP,eea_co2_monitoring_2024 (eea_honda_2024_final.json),eea_honda_2024_final.json,explicit,,central
 EU27,hyundai,AT,2024,2024-01..2024-12,BAYON,HEV,60,registrations,121.0,,WLTP,eea_co2_monitoring_2024 (eea_hyundai_2024_final.json),eea_hyundai_2024_final.json,explicit,,central
 EU27,hyundai,AT,2024,2024-01..2024-12,BAYON,ICE,705,registrations,125.573,,WLTP,eea_co2_monitoring_2024 (eea_hyundai_2024_final.json),eea_hyundai_2024_final.json,explicit,,central
 EU27,hyundai,AT,2024,2024-01..2024-12,G70 GENESIS G70,ICE,1,registrations,216.0,,WLTP,eea_co2_monitoring_2024 (eea_hyundai_2024_final.json),eea_hyundai_2024_final.json,explicit,,central
@@ -1225,6 +1018,242 @@ EU27,kia,SK,2024,2024-01..2024-12,STONIC,HEV,8,registrations,128.0,,WLTP,eea_co2
 EU27,kia,SK,2024,2024-01..2024-12,STONIC,ICE,918,registrations,128.927,,WLTP,eea_co2_monitoring_2024 (eea_kia_2024_final.json),eea_kia_2024_final.json,explicit,,central
 EU27,kia,SK,2024,2024-01..2024-12,XCEED,HEV,4,registrations,129.0,,WLTP,eea_co2_monitoring_2024 (eea_kia_2024_final.json),eea_kia_2024_final.json,explicit,,central
 EU27,kia,SK,2024,2024-01..2024-12,XCEED,ICE,764,registrations,140.2762,,WLTP,eea_co2_monitoring_2024 (eea_kia_2024_final.json),eea_kia_2024_final.json,explicit,,central
+EU27,nissan,AT,2024,2024-01..2024-12,NISSAN ARIYA,BEV,208,registrations,0.0,193.774,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,AT,2024,2024-01..2024-12,NISSAN JUKE,HEV,158,registrations,109.7595,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,AT,2024,2024-01..2024-12,NISSAN JUKE,ICE,449,registrations,134.4811,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,AT,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,19,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,AT,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1370,registrations,141.235,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,AT,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,270,registrations,147.1556,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,AT,2024,2024-01..2024-12,PRIMASTAR,ICE,57,registrations,184.4912,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,AT,2024,2024-01..2024-12,TOWNSTAR,BEV,31,registrations,0.0,200.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,AT,2024,2024-01..2024-12,TOWNSTAR,ICE,237,registrations,155.6456,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,NISSAN ARIYA,BEV,401,registrations,0.0,183.9501,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,NISSAN JUKE,HEV,1006,registrations,111.4026,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,NISSAN JUKE,ICE,1454,registrations,135.1575,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,149,registrations,0.0,167.9866,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,91,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,NISSAN MICRA,ICE,4,registrations,126.25,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,3664,registrations,131.2686,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,1232,registrations,143.3498,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,PRIMASTAR,ICE,232,registrations,186.9698,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,TOWNSTAR,BEV,44,registrations,0.0,197.8182,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BE,2024,2024-01..2024-12,TOWNSTAR,ICE,351,registrations,154.906,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BG,2024,2024-01..2024-12,NISSAN ARIYA,BEV,18,registrations,0.0,195.3333,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BG,2024,2024-01..2024-12,NISSAN JUKE,HEV,35,registrations,112.3429,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BG,2024,2024-01..2024-12,NISSAN JUKE,ICE,129,registrations,138.4264,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BG,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,3,registrations,0.0,166.6667,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BG,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,3,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BG,2024,2024-01..2024-12,NISSAN MICRA,ICE,1,registrations,121.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BG,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,724,registrations,145.0373,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,BG,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,292,registrations,152.1301,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CY,2024,2024-01..2024-12,NISSAN ARIYA,BEV,121,registrations,0.0,181.4711,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CY,2024,2024-01..2024-12,NISSAN JUKE,HEV,130,registrations,112.9308,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CY,2024,2024-01..2024-12,NISSAN JUKE,ICE,319,registrations,138.0627,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CY,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,1,registrations,0.0,171.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CY,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,11,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CY,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,670,registrations,140.8209,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CY,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,208,registrations,152.5,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CZ,2024,2024-01..2024-12,GT-R,ICE,1,registrations,316.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CZ,2024,2024-01..2024-12,NISSAN ARIYA,BEV,5,registrations,0.0,203.2,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CZ,2024,2024-01..2024-12,NISSAN JUKE,HEV,21,registrations,111.8571,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CZ,2024,2024-01..2024-12,NISSAN JUKE,ICE,169,registrations,136.2663,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CZ,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,4,registrations,0.0,166.5,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CZ,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,3,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CZ,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,778,registrations,144.5026,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CZ,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,243,registrations,145.2551,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CZ,2024,2024-01..2024-12,TOWNSTAR,BEV,9,registrations,0.0,199.5556,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,CZ,2024,2024-01..2024-12,TOWNSTAR,ICE,54,registrations,154.5926,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,NISSAN ARIYA,BEV,826,registrations,0.0,191.6659,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,NISSAN JUKE,HEV,3221,registrations,110.5914,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,NISSAN JUKE,ICE,3452,registrations,135.241,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,NISSAN LEAF 40 KWH,BEV,231,registrations,0.0,167.1818,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,NISSAN LEAF 62 KWH,BEV,257,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,NISSAN MICRA,ICE,9,registrations,128.1111,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,12300,registrations,134.46,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,NISSAN QASHQAI,ICE,2,registrations,149.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,5150,registrations,146.1249,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,PRIMASTAR,ICE,1378,registrations,184.0871,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,TOWNSTAR,BEV,104,registrations,0.0,196.25,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DE,2024,2024-01..2024-12,TOWNSTAR,ICE,2255,registrations,153.8106,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DK,2024,2024-01..2024-12,NISSAN ARIYA,BEV,1976,registrations,0.0,182.082,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DK,2024,2024-01..2024-12,NISSAN JUKE,HEV,44,registrations,112.4091,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DK,2024,2024-01..2024-12,NISSAN JUKE,ICE,495,registrations,136.7556,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DK,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,20,registrations,0.0,166.9,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DK,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,23,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DK,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,2750,registrations,143.2058,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DK,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,412,registrations,147.4563,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,DK,2024,2024-01..2024-12,QASHQAI,ICE,1,registrations,143.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,EE,2024,2024-01..2024-12,NISSAN ARIYA,BEV,40,registrations,0.0,193.9,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,EE,2024,2024-01..2024-12,NISSAN JUKE,HEV,32,registrations,109.375,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,EE,2024,2024-01..2024-12,NISSAN JUKE,ICE,48,registrations,137.25,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,EE,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,2,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,EE,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,275,registrations,138.1855,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,EE,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,127,registrations,145.9921,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,EE,2024,2024-01..2024-12,X-TRAIL,HEV,1,registrations,150.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,ES,2024,2024-01..2024-12,NISSAN ARIYA,BEV,234,registrations,0.0,185.7778,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,ES,2024,2024-01..2024-12,NISSAN JUKE,HEV,2711,registrations,110.2471,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,ES,2024,2024-01..2024-12,NISSAN JUKE,ICE,6671,registrations,134.5236,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,ES,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,82,registrations,0.0,167.0732,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,ES,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,98,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,ES,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,18059,registrations,137.2974,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,ES,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,3636,registrations,141.1482,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,ES,2024,2024-01..2024-12,PRIMASTAR,ICE,297,registrations,182.1313,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,ES,2024,2024-01..2024-12,TOWNSTAR,ICE,843,registrations,153.879,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FI,2024,2024-01..2024-12,NISSAN ARIYA,BEV,255,registrations,0.0,186.9725,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FI,2024,2024-01..2024-12,NISSAN JUKE,HEV,221,registrations,112.1493,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FI,2024,2024-01..2024-12,NISSAN JUKE,ICE,320,registrations,136.4563,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FI,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,168,registrations,0.0,167.9881,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FI,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,28,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FI,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1761,registrations,138.5576,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FI,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,200,registrations,148.145,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FI,2024,2024-01..2024-12,PRIMASTAR,ICE,2,registrations,187.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,JUKE,HEV,1,registrations,113.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,NISSAN ARIYA,BEV,653,registrations,0.0,182.853,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,NISSAN JUKE,HEV,7917,registrations,111.8246,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,NISSAN JUKE,ICE,3586,registrations,133.8762,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,634,registrations,0.0,166.8675,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,31,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,NISSAN MICRA,ICE,6,registrations,121.8333,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,13610,registrations,120.481,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,2255,registrations,137.6914,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,PRIMASTAR,ICE,815,registrations,186.2552,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,TOWNSTAR,BEV,18,registrations,0.0,198.7222,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,TOWNSTAR,ICE,44,registrations,154.3636,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,FR,2024,2024-01..2024-12,X-TRAIL,HEV,2,registrations,139.5,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,GR,2024,2024-01..2024-12,NISSAN ARIYA,BEV,20,registrations,0.0,182.85,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,GR,2024,2024-01..2024-12,NISSAN JUKE,HEV,438,registrations,111.2283,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,GR,2024,2024-01..2024-12,NISSAN JUKE,ICE,1630,registrations,134.084,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,GR,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,5,registrations,0.0,166.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,GR,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,3,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,GR,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1928,registrations,143.7137,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,GR,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,218,registrations,152.1009,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,GR,2024,2024-01..2024-12,PRIMASTAR,ICE,54,registrations,186.0556,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HR,2024,2024-01..2024-12,NISSAN ARIYA,BEV,11,registrations,0.0,185.6364,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HR,2024,2024-01..2024-12,NISSAN JUKE,HEV,11,registrations,111.8182,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HR,2024,2024-01..2024-12,NISSAN JUKE,ICE,129,registrations,134.3876,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HR,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,546,registrations,143.1429,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HR,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,144,registrations,148.8681,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HR,2024,2024-01..2024-12,QASHQAI,HEV,3,registrations,153.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HR,2024,2024-01..2024-12,X-TRAIL,HEV,2,registrations,140.5,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HR,2024,2024-01..2024-12,X-TRAIL,ICE,1,registrations,150.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HU,2024,2024-01..2024-12,NISSAN ARIYA,BEV,61,registrations,0.0,190.5082,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HU,2024,2024-01..2024-12,NISSAN JUKE,HEV,142,registrations,112.5704,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HU,2024,2024-01..2024-12,NISSAN JUKE,ICE,417,registrations,136.3669,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HU,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,299,registrations,0.0,167.6722,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HU,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,71,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HU,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,3340,registrations,144.9404,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HU,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,1241,registrations,146.1273,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HU,2024,2024-01..2024-12,TOWNSTAR,BEV,2,registrations,0.0,200.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,HU,2024,2024-01..2024-12,TOWNSTAR,ICE,16,registrations,154.375,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IE,2024,2024-01..2024-12,INTERSTAR,ICE,7,registrations,241.5714,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IE,2024,2024-01..2024-12,NISSAN ARIYA,BEV,239,registrations,0.0,179.3515,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IE,2024,2024-01..2024-12,NISSAN JUKE,HEV,667,registrations,112.5802,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IE,2024,2024-01..2024-12,NISSAN JUKE,ICE,1156,registrations,133.4801,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IE,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,388,registrations,0.0,167.4124,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IE,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,37,registrations,0.0,178.1622,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IE,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1870,registrations,129.8043,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IE,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,445,registrations,136.591,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IT,2024,2024-01..2024-12,NISSAN ARIYA,BEV,248,registrations,0.0,181.4758,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IT,2024,2024-01..2024-12,NISSAN JUKE,HEV,6067,registrations,111.1464,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IT,2024,2024-01..2024-12,NISSAN JUKE,ICE,5933,registrations,134.2203,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IT,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,327,registrations,0.0,167.3761,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IT,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,34,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IT,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,17662,registrations,132.8049,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IT,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,3471,registrations,141.0726,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IT,2024,2024-01..2024-12,PRIMASTAR,ICE,514,registrations,184.5214,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IT,2024,2024-01..2024-12,TOWNSTAR,BEV,1,registrations,0.0,199.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,IT,2024,2024-01..2024-12,TOWNSTAR,ICE,676,registrations,153.2825,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LT,2024,2024-01..2024-12,NISSAN ARIYA,BEV,65,registrations,0.0,182.0923,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LT,2024,2024-01..2024-12,NISSAN JUKE,HEV,52,registrations,110.4231,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LT,2024,2024-01..2024-12,NISSAN JUKE,ICE,110,registrations,137.3091,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LT,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,3,registrations,0.0,168.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LT,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,12,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LT,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,599,registrations,140.2755,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LT,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,210,registrations,145.7952,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LU,2024,2024-01..2024-12,LEAF 40KWH,BEV,1,registrations,0.0,168.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LU,2024,2024-01..2024-12,NISSAN ARIYA,BEV,6,registrations,0.0,186.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LU,2024,2024-01..2024-12,NISSAN JUKE,HEV,65,registrations,110.9692,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LU,2024,2024-01..2024-12,NISSAN JUKE,ICE,63,registrations,136.5238,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LU,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,5,registrations,0.0,167.6,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LU,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,207,registrations,129.5411,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LU,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,73,registrations,145.0548,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LU,2024,2024-01..2024-12,PRIMASTAR,ICE,2,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LU,2024,2024-01..2024-12,TOWNSTAR,ICE,15,registrations,154.9333,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LU,2024,2024-01..2024-12,X-TRAIL,HEV,2,registrations,149.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LV,2024,2024-01..2024-12,NISSAN ARIYA,BEV,38,registrations,0.0,183.0789,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LV,2024,2024-01..2024-12,NISSAN JUKE,HEV,27,registrations,110.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LV,2024,2024-01..2024-12,NISSAN JUKE,ICE,74,registrations,137.2838,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LV,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,17,registrations,0.0,167.8824,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LV,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,3,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LV,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,336,registrations,139.3065,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,LV,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,192,registrations,146.0312,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,MT,2024,2024-01..2024-12,ARIYA,BEV,1,registrations,0.0,179.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,MT,2024,2024-01..2024-12,NISSAN ARIYA,BEV,56,registrations,0.0,182.4464,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,MT,2024,2024-01..2024-12,NISSAN JUKE,HEV,25,registrations,112.52,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,MT,2024,2024-01..2024-12,NISSAN JUKE,ICE,51,registrations,137.9804,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,MT,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,40,registrations,0.0,168.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,MT,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,6,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,MT,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,41,registrations,143.2683,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,MT,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,9,registrations,168.5556,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,MT,2024,2024-01..2024-12,QASHQAI,HEV,1,registrations,142.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,NL,2024,2024-01..2024-12,NISSAN ARIYA,BEV,553,registrations,0.0,184.6817,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,NL,2024,2024-01..2024-12,NISSAN JUKE,HEV,1102,registrations,110.7731,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,NL,2024,2024-01..2024-12,NISSAN JUKE,ICE,352,registrations,134.3892,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,NL,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,348,registrations,0.0,168.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,NL,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,34,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,NL,2024,2024-01..2024-12,NISSAN MICRA,ICE,1,registrations,121.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,NL,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,2818,registrations,132.3371,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,NL,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,257,registrations,140.6887,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,NL,2024,2024-01..2024-12,TOWNSTAR,BEV,5,registrations,0.0,211.6,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PL,2024,2024-01..2024-12,JUKE,ICE,1,registrations,132.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PL,2024,2024-01..2024-12,NISSAN JUKE,HEV,354,registrations,110.4774,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PL,2024,2024-01..2024-12,NISSAN JUKE,ICE,750,registrations,136.796,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PL,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,5737,registrations,140.2174,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PL,2024,2024-01..2024-12,NISSAN QASHQAI,ICE,2,registrations,143.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PL,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,1737,registrations,147.4329,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PL,2024,2024-01..2024-12,QASHQAI,HEV,1,registrations,158.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PL,2024,2024-01..2024-12,QASHQAI,ICE,2,registrations,148.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PL,2024,2024-01..2024-12,TOWNSTAR,ICE,176,registrations,154.6364,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PL,2024,2024-01..2024-12,X-TRAIL,HEV,3,registrations,160.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PT,2024,2024-01..2024-12,NISSAN ARIYA,BEV,320,registrations,0.0,181.4719,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PT,2024,2024-01..2024-12,NISSAN JUKE,HEV,311,registrations,109.5691,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PT,2024,2024-01..2024-12,NISSAN JUKE,ICE,3769,registrations,135.0507,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PT,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,149,registrations,0.0,167.1812,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PT,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,40,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PT,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,2756,registrations,137.1252,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,PT,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,187,registrations,146.7754,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,RO,2024,2024-01..2024-12,NISSAN ARIYA,BEV,32,registrations,0.0,198.9062,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,RO,2024,2024-01..2024-12,NISSAN JUKE,HEV,106,registrations,112.6321,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,RO,2024,2024-01..2024-12,NISSAN JUKE,ICE,55,registrations,139.2,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,RO,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,63,registrations,0.0,166.9206,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,RO,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,6,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,RO,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,680,registrations,143.3088,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,RO,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,260,registrations,144.8192,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SE,2024,2024-01..2024-12,NISSAN ARIYA,BEV,749,registrations,0.0,188.259,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SE,2024,2024-01..2024-12,NISSAN JUKE,HEV,135,registrations,110.2296,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SE,2024,2024-01..2024-12,NISSAN JUKE,ICE,457,registrations,136.4354,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SE,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,34,registrations,0.0,167.7059,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SE,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,8,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SE,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1663,registrations,137.2965,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SE,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,411,registrations,149.1509,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SE,2024,2024-01..2024-12,PRIMASTAR,ICE,46,registrations,187.1739,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SE,2024,2024-01..2024-12,TOWNSTAR,ICE,3,registrations,155.3333,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SI,2024,2024-01..2024-12,NISSAN ARIYA,BEV,9,registrations,0.0,199.2222,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SI,2024,2024-01..2024-12,NISSAN JUKE,HEV,4,registrations,112.75,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SI,2024,2024-01..2024-12,NISSAN JUKE,ICE,68,registrations,134.6618,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SI,2024,2024-01..2024-12,NISSAN LEAF 40KWH,BEV,2,registrations,0.0,167.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SI,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,741,registrations,143.641,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SI,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,93,registrations,151.3333,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SI,2024,2024-01..2024-12,TOWNSTAR,ICE,52,registrations,155.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SK,2024,2024-01..2024-12,GT-R,ICE,1,registrations,316.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SK,2024,2024-01..2024-12,MICRA,ICE,2,registrations,129.0,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SK,2024,2024-01..2024-12,NISSAN ARIYA,BEV,11,registrations,0.0,190.1818,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SK,2024,2024-01..2024-12,NISSAN JUKE,HEV,27,registrations,111.5556,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SK,2024,2024-01..2024-12,NISSAN JUKE,ICE,85,registrations,137.5765,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SK,2024,2024-01..2024-12,NISSAN LEAF 62KWH,BEV,1,registrations,0.0,178.0,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SK,2024,2024-01..2024-12,NISSAN QASHQAI,HEV,1233,registrations,148.6448,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SK,2024,2024-01..2024-12,NISSAN X-TRAIL,HEV,340,registrations,145.3941,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
+EU27,nissan,SK,2024,2024-01..2024-12,TOWNSTAR,ICE,36,registrations,154.5556,,WLTP,eea_co2_monitoring_2024 (eea_nissan_2024_final.json),eea_nissan_2024_final.json,explicit,,central
 EU27,toyota,AT,2024,2024-01..2024-12,GR YARIS 16,ICE,1,registrations,186.0,,WLTP,eea_co2_monitoring_2024 (eea_toyota_2024_final.json),eea_toyota_2024_final.json,explicit,,central
 EU27,toyota,AT,2024,2024-01..2024-12,PROACE,BEV,13,registrations,0.0,264.2308,WLTP,eea_co2_monitoring_2024 (eea_toyota_2024_final.json),eea_toyota_2024_final.json,explicit,,central
 EU27,toyota,AT,2024,2024-01..2024-12,PROACE,ICE,348,registrations,195.3103,,WLTP,eea_co2_monitoring_2024 (eea_toyota_2024_final.json),eea_toyota_2024_final.json,explicit,,central

@@ -1,51 +1,4 @@
 company,model_year,model,base_model,powertrain,tailpipe_gco2_km,energy_wh_km,n_trims,test_cycle,source_id,source_file
-honda,2024,Accord,Accord,ICE,172.12,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Accord Hybrid,Accord,HEV,114.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Accord Hybrid Sport/Touring,Accord,HEV,124.9,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,CR-V AWD,CR-V,HEV,147.26,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,CR-V AWD,CR-V,ICE,189.52,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,CR-V FWD,CR-V,HEV,138.57,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,CR-V FWD,CR-V,ICE,180.2,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Civic 4Dr,Civic,ICE,162.55,,5,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Civic 5Dr,Civic,ICE,179.4,,7,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,HR-V AWD,HR-V,ICE,202.57,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,HR-V FWD,HR-V,ICE,192.0,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Odyssey,Odyssey,ICE,244.82,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Passport AWD,Passport,ICE,258.49,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Pilot AWD,Pilot,ICE,257.87,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Pilot AWD Touring/Elite/Black,Pilot,ICE,262.22,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Pilot AWD TrailSport,Pilot,ICE,274.65,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Pilot FWD,Pilot,ICE,249.79,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Prologue AWD Elite,Prologue,BEV,,228.42,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Prologue AWD Touring,Prologue,BEV,,220.76,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Prologue FWD,Prologue,BEV,,211.07,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Ridgeline AWD,Ridgeline,ICE,274.02,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2024,Ridgeline AWD TrailSport,Ridgeline,ICE,277.13,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Accord,Accord,ICE,172.12,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Accord Hybrid,Accord,HEV,114.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Accord Hybrid Sport/Touring,Accord,HEV,124.9,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,CR-V AWD,CR-V,HEV,147.26,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,CR-V AWD,CR-V,ICE,193.87,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,CR-V FWD,CR-V,HEV,138.57,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,CR-V FWD,CR-V,ICE,180.2,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,CR-V e-FCEV,CR-V,FCEV,,242.33,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Civic 4Dr,Civic,HEV,112.47,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Civic 4Dr,Civic,ICE,164.25,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Civic 5Dr,Civic,HEV,115.58,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Civic 5Dr,Civic,ICE,193.87,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,HR-V AWD,HR-V,ICE,202.57,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,HR-V FWD,HR-V,ICE,193.25,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Odyssey,Odyssey,ICE,245.44,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Passport AWD,Passport,ICE,258.49,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Pilot AWD,Pilot,ICE,257.87,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Pilot AWD Touring/Elite/Black,Pilot,ICE,262.22,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Pilot AWD TrailSport,Pilot,ICE,275.89,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Pilot FWD,Pilot,ICE,249.79,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Prologue AWD Elite,Prologue,BEV,,219.31,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Prologue AWD Touring,Prologue,BEV,,209.88,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Prologue FWD,Prologue,BEV,,202.23,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Ridgeline AWD,Ridgeline,ICE,266.57,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
-honda,2025,Ridgeline AWD TrailSport,Ridgeline,ICE,277.13,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 hyundai,2024,Elantra,Elantra,ICE,163.83,,3,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 hyundai,2024,Elantra Hybrid,Elantra,HEV,109.98,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 hyundai,2024,Elantra Hybrid Blue,Elantra,HEV,102.53,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
@@ -193,6 +146,80 @@ kia,2025,Sportage Plug-in Hybrid,Sportage,PHEV,34.18,248.55,1,EPA,epa_fueleconom
 kia,2025,Sportage X-pro,Sportage,ICE,213.75,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 kia,2025,Telluride AWD,Telluride,ICE,274.65,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 kia,2025,Telluride FWD,Telluride,ICE,247.31,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,ARIYA ENGAGE FWD 63kWh,ARIYA,BEV,,206.65,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,ARIYA ENGAGE e-4ORCE 63kWh,ARIYA,BEV,,219.31,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,ARIYA ENGAGE+/EVOLVE+ e-4ORCE 87kWh,ARIYA,BEV,,227.66,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,ARIYA EVOLVE+/EMPOWER+ FWD 87kWh,ARIYA,BEV,,213.58,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,ARIYA PLATINUM+ e-4ORCE 87kWh 19in. Wheels,ARIYA,BEV,,232.38,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,ARIYA PLATINUM+ e-4ORCE 87kWh 20in. Wheels,ARIYA,BEV,,241.34,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,ARIYA VENTURE Plus FWD 87kWh,ARIYA,BEV,,203.26,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Altima,Altima,ICE,175.23,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Altima AWD,Altima,ICE,186.41,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Altima SL/SR,Altima,ICE,178.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Altima SR,Altima,ICE,193.25,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Armada 2WD,Armada,ICE,346.73,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Armada 4WD,Armada,ICE,369.09,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Frontier 2WD,Frontier,ICE,271.54,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Frontier 4WD,Frontier,ICE,272.16,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Frontier 4WD PRO4X,Frontier,ICE,291.42,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,GT-R,GT-R,ICE,306.34,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Kicks,Kicks,ICE,167.15,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,LEAF,LEAF,BEV,,189.06,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,LEAF SV,LEAF,BEV,,191.27,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Murano AWD,Murano,ICE,244.2,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Murano FWD,Murano,ICE,241.09,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Pathfinder 2WD,Pathfinder,ICE,241.09,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Pathfinder 4WD,Pathfinder,ICE,235.5,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Pathfinder 4WD Platinum,Pathfinder,ICE,248.55,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Pathfinder 4WD Rock Creek,Pathfinder,ICE,259.73,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Rogue AWD,Rogue,ICE,178.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Rogue AWD SL/Platinum,Rogue,ICE,178.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Rogue FWD,Rogue,ICE,167.15,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Rogue FWD SL/Platinum,Rogue,ICE,172.74,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Sentra,Sentra,ICE,162.8,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Sentra SR,Sentra,ICE,167.77,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Titan 2WD,Titan,ICE,316.9,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Titan 4WD,Titan,ICE,322.49,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Titan 4WD PRO4X,Titan,ICE,339.27,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Versa,Versa,ICE,170.88,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Z,Z,ICE,260.98,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2024,Z NISMO,Z,ICE,291.42,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,ARIYA ENGAGE+/EVOLVE+ e-4ORCE 87kWh,ARIYA,BEV,,227.66,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,ARIYA EVOLVE+ FWD 87kWh,ARIYA,BEV,,213.58,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,ARIYA FWD 63kWh,ARIYA,BEV,,206.65,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,ARIYA PLATINUM+ e-4ORCE 87kWh 19in. Wheels,ARIYA,BEV,,232.38,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,ARIYA PLATINUM+ e-4ORCE 87kWh 20in. Wheels,ARIYA,BEV,,241.34,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,ARIYA e-4ORCE 63kWh,ARIYA,BEV,,219.31,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Altima,Altima,ICE,174.61,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Altima AWD,Altima,ICE,196.97,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Altima SL/SR,Altima,ICE,178.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Armada 2WD,Armada,ICE,308.82,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Armada 4WD,Armada,ICE,325.6,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Armada 4WD PRO-4X,Armada,ICE,345.48,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Frontier 2WD,Frontier,ICE,268.43,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Frontier 4WD,Frontier,ICE,292.04,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Frontier 4WD PRO4X,Frontier,ICE,307.58,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Kicks,Kicks,ICE,178.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Kicks AWD,Kicks,ICE,185.79,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Kicks Play,Kicks,ICE,166.53,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,LEAF,LEAF,BEV,,189.06,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,LEAF SV,LEAF,BEV,,191.27,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Murano AWD,Murano,ICE,240.47,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Murano FWD,Murano,ICE,240.47,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Pathfinder 2WD,Pathfinder,ICE,242.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Pathfinder 4WD,Pathfinder,ICE,235.5,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Pathfinder 4WD Platinum,Pathfinder,ICE,248.55,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Pathfinder 4WD Rock Creek,Pathfinder,ICE,259.73,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Rogue AWD,Rogue,ICE,178.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Rogue AWD Rock Creek,Rogue,ICE,190.76,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Rogue AWD SL/Platinum,Rogue,ICE,178.33,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Rogue FWD,Rogue,ICE,167.15,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Rogue FWD SL/Platinum,Rogue,ICE,172.74,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Sentra,Sentra,ICE,162.8,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Sentra SR,Sentra,ICE,167.77,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Versa,Versa,ICE,170.57,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Z,Z,ICE,260.98,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
+nissan,2025,Z NISMO,Z,ICE,291.42,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 toyota,2024,4Runner 2WD,4Runner,ICE,312.55,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 toyota,2024,4Runner 4WD,4Runner,ICE,320.94,,2,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
 toyota,2024,Camry,Camry,ICE,210.02,,1,EPA,epa_fueleconomy_vehicles,epa_fueleconomy_vehicles.csv
