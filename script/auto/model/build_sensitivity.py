@@ -25,7 +25,7 @@ Algorithm:
                      distances; the benchmark per vehicle is unchanged because distance cancels
                      in CO2 per car. Only markets whose parameters publish the quartiles move.
       powertrain_mix cohort rows whose sales source does not split the powertrain
-                     (``powertrain_rule = epa_share_my2024``) are repriced with the hybrid
+                     (``powertrain_rule = epa_share_my2024``) are reassessed with the hybrid
                      technology of the same base model; the central case prices them as ICE.
     Symbols: E in kgCO2e per vehicle-year, I0 fleet intensity (kg/km), G0 grid (kg/kWh), eta
     consumption (kWh/km), r in 1/year, T in years.
@@ -86,13 +86,13 @@ SENS_FIELDS = [
 
 @dataclass(frozen=True)
 class Cell:
-    """One priced cohort cell, with everything the sensitivity needs to reprice it.
+    """One assessed cohort cell, with everything the sensitivity needs to reprice it.
 
     Attributes:
         market: Market key, e.g. `EU27` or `US`.
         company: Exporter.
         destination: Importing country (ISO 3166-1 alpha-2).
-        segment: Vehicle segment, which decides the benchmark the cell is priced against.
+        segment: Vehicle segment, which decides the benchmark the cell is assessed against.
         model: Commercial model name as the sales source reports it.
         powertrain: ICE / HEV / BEV.
         cohort_year: Sale year.
@@ -176,7 +176,7 @@ def crossover(
     )
 
 
-def priced_cells(
+def assessed_cells(
     cohorts: list[dict[str, str]], params: dict[tuple[str, str, str], dict[str, str]]
 ) -> list[Cell]:
     """Cohort rows that carry a published result — the same rule step 4 applies."""
@@ -192,7 +192,7 @@ def priced_cells(
 def all_hev_cells(
     cells: list[Cell], overrides: dict[tuple[str, str, str, str, str], Cell]
 ) -> list[Cell]:
-    """The cohort with every share-split nameplate repriced as a hybrid.
+    """The cohort with every share-split nameplate reassessed as a hybrid.
 
     A share-split nameplate appears as several central cells (one per powertrain); the
     all-hybrid bound replaces the whole group with the single ``all_hev`` cell once.
@@ -224,7 +224,7 @@ def cohort_total(
     """Cohort total (tCO2e) per company x cohort year for one market x scenario, one input moved.
 
     Args:
-        cells: Priced cells of every market; those outside ``market`` are ignored.
+        cells: Assessed cells of every market; those outside ``market`` are ignored.
         params: (market, country) -> destination parameters.
         rates: (market, country, scenario) -> (r_fleet, r_power).
         market: Market to total.
@@ -279,7 +279,7 @@ def build_crossovers(
     factors: dict[tuple[str, str], dict[str, float]],
     scenarios: dict[str, list[str]],
 ) -> list[dict[str, object]]:
-    """Closed-form crossover year and lifetime gap for every priced cell x scenario."""
+    """Closed-form crossover year and lifetime gap for every assessed cell x scenario."""
     rows: list[dict[str, object]] = []
     for c in cells:
         p = params[(c.market, c.destination, c.segment)]
@@ -332,10 +332,10 @@ def main() -> None:
     factors = load_real_world()
     scenarios = scenarios_by_market(rates)
 
-    cells = priced_cells(load_cohorts(), params)
+    cells = assessed_cells(load_cohorts(), params)
     overrides = {
         (c.market, c.company, c.destination, str(c.cohort_year), c.model): c
-        for c in priced_cells(load_cohorts(ALL_HEV), params)
+        for c in assessed_cells(load_cohorts(ALL_HEV), params)
     }
     hev_cells = all_hev_cells(cells, overrides)
 
@@ -393,14 +393,14 @@ def main() -> None:
             (
                 "powertrain_mix",
                 "central",
-                f"{MIXED_RULE} cohort rows priced as the rule states",
+                f"{MIXED_RULE} cohort rows assessed as the rule states",
                 cells,
                 {},
             ),
             (
                 "powertrain_mix",
                 ALL_HEV,
-                f"{MIXED_RULE} cohort rows repriced with the hybrid of the same base model",
+                f"{MIXED_RULE} cohort rows reassessed with the hybrid of the same base model",
                 hev_cells,
                 {},
             ),

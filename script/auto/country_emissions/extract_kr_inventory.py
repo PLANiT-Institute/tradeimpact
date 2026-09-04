@@ -6,7 +6,8 @@ Inputs
     raw/kotsa_road_ghg_by_vehicle_type.csv   road GHG by vehicle type x province, ktCO2e, 2012-2024
 Output
     processed/country_emissions_kr.csv (long format: country, series, year, value, unit, ...)
-        road_co2                  GIR 1.A.3.b 도로수송, ktCO2 (fuel-sales basis, national)
+        road_co2                  GIR category 1.A.3.b road transport, ktCO2 (fuel-sales
+                                  basis, national)
         kotsa_ghg_<segment>       KOTSA national sum per vehicle class, ktCO2e (bottom-up)
         kotsa_road_ghg            KOTSA all classes national sum, ktCO2e
         share_road_<segment>      that class's share of the KOTSA road total (fraction)
@@ -35,9 +36,12 @@ DATA = REPO / "data" / "auto" / "country_emissions"
 GIR = DATA / "raw" / "gir_inventory_co2_1990_2023.csv"
 KOTSA = DATA / "raw" / "kotsa_road_ghg_by_vehicle_type.csv"
 OUT = DATA / "processed" / "country_emissions_kr.csv"
+#: Verbatim category label of the source CSV (a join key). In English: fuel combustion,
+#: transport, road transport - IPCC 1.A.3.b.
 ROAD_ROW = "A 연료연소_3 수송_b 도로수송"
 FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_file"]
 #: KOTSA vehicle classes -> the project's segment names.
+#: Vehicle class as the KOTSA file writes it (a join key) -> the project's segment name.
 SEGMENTS = {"승용": "passenger_car", "승합": "bus", "화물": "freight", "특수": "special"}
 
 
@@ -69,6 +73,7 @@ def main() -> None:
 
     kotsa = pd.read_csv(KOTSA, encoding="cp949")
     kotsa.columns = [c.replace(" ", "") for c in kotsa.columns]
+    # "구분" is the file's own column name for the province, "년도" for the year.
     kotsa["구분"] = kotsa["구분"].astype(str).str.replace(" ", "")
     national = kotsa.groupby("년도")[["승용", "승합", "화물", "특수"]].sum()
     for year, r in national.iterrows():

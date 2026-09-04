@@ -45,8 +45,6 @@ Run from the repository root:  .venv/bin/python script/auto/model/build_cohorts.
 from __future__ import annotations
 
 import csv
-import re
-import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
@@ -75,7 +73,8 @@ SALES_KR = (
 )
 KR_LABELS = DATA / "sales" / "method" / "kr_labels.csv"
 TECH_KR = DATA / "vehicle_technology" / "processed" / "vehicle_technology_kr_kea.csv"
-#: Japan: the JADA nameplate ranking, the maker fuel mix that splits it, and the MLIT 燃費一覧.
+#: Japan: the JADA nameplate ranking, the maker fuel mix that splits it, and the MLIT
+#: fuel-economy list.
 SALES_JP = DATA / "sales" / "processed" / "sales_jada_jp.csv"
 FUEL_MIX_JP = DATA / "sales" / "processed" / "jada_fuel_mix_jp.csv"
 JP_LABELS = DATA / "sales" / "method" / "jp_labels.csv"
@@ -107,12 +106,14 @@ NO_KR_LABEL = (
     "certified intensity can be attached"
 )
 NO_JP_LABEL = (
-    "no row in sales/method/jp_labels.csv: the JADA nameplate is not resolved to a 燃費一覧 "
+    "no row in sales/method/jp_labels.csv: the JADA nameplate is not resolved to a "
+    "fuel-economy-list "
     "nameplate, so no certified intensity can be attached"
 )
 NO_JP_CERTIFIED = (
-    "no certified row in either 自動車燃費一覧 edition on hand for this nameplate, so the units "
-    "are counted and left unpriced"
+    "no certified row in either fuel-economy-list edition on hand for this nameplate, so "
+    "the units "
+    "are counted and left unassessed"
 )
 NO_MAP_ROW = (
     "no row in sales/method/us_model_map.csv: the IR model name is not resolved to an EPA "
@@ -545,7 +546,7 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
 
     Hyundai's IR file states the powertrain in the trim code (``stated`` rows take it from the
     sales row); Kia's IR file does not, so nameplates sold as ICE and HEV (``unsplit``) are
-    priced as ICE centrally with an ``all_hev`` variant as the upper bound, and single-powertrain
+    assessed as ICE centrally with an ``all_hev`` variant as the upper bound, and single-powertrain
     labels are ``explicit``. Rows outside the passenger-car class are ``out_of_scope``.
 
     Args:
@@ -650,29 +651,19 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
     return aggregate_units(central) + aggregate_units(variants), withheld
 
 
-def jp_label_key(text: str) -> str:
-    """A nameplate written the same way on both sides of the join.
-
-    JADA prints ＲＡＶ４ and ＪＰＮ　ＴＡＸＩ in full-width characters with an ideographic space,
-    MLIT prints RAV4 and ヤリス　クロス; normalising the width and dropping the spaces makes the
-    two comparable without a per-nameplate alias.
-    """
-    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", text))
-
-
 def jp_technology(
     tech: list[dict[str, str]], models: list[str]
 ) -> dict[str, tuple[float, int, int]]:
     """{powertrain: (grade-weighted mean gCO2/km, grades, newest edition)} over ``models``.
 
     A nameplate family is pooled by grade count, the same weighting the US build uses over EPA
-    trim names, so a variant with many grades counts for more than one with a single grade.
+    trim names, so a variant with many grades counts for more than one with a single grade. Both
+    sides of the join carry the English nameplate, so the match is exact and a name that is not
+    in the map raises rather than joining to nothing.
     """
     pooled: dict[str, tuple[float, int, int]] = {}
     for powertrain in sorted({r["powertrain"] for r in tech}):
-        rows = [
-            r for r in tech if r["powertrain"] == powertrain and jp_label_key(r["model"]) in models
-        ]
+        rows = [r for r in tech if r["powertrain"] == powertrain and r["model"] in models]
         if not rows:
             continue
         weights = [int(r["n_trims"]) for r in rows]
@@ -699,9 +690,10 @@ def jp_fuel_shares() -> dict[tuple[str, str], dict[str, float]]:
 
 
 def build_jp(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
-    """Join the JADA nameplate ranking to the MLIT 燃費一覧 through the Japan label map.
+    """Join the JADA nameplate ranking to the MLIT fuel-economy list through the label map.
 
-    The ranking publishes units per 車名 and no powertrain, and 燃費一覧 publishes the certified
+    The ranking publishes units per nameplate and no powertrain, and the list publishes the
+    certified
     gCO2/km per grade. What a nameplate is actually sold as comes from the certificates
     themselves: where every grade of a nameplate is a hybrid (Prius, Aqua, Note, X-Trail) all its
     units are hybrid, and where a nameplate is certified both ways its units are divided by the
@@ -716,7 +708,7 @@ def build_jp(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
         cohorts: Central rows plus the ``all_hev`` variant of every divided cohort.
         withheld: Volumes with no label-map row, no certified row, or an unpriceable powertrain.
     """
-    labels = {(r["company"], jp_label_key(r["jada_label"])): r for r in read_csv(JP_LABELS)}
+    labels = {(r["company"], r["jada_label"]): r for r in read_csv(JP_LABELS)}
     tech = read_csv(TECH_JP)
     shares = jp_fuel_shares()
     central: list[dict[str, object]] = []
@@ -727,7 +719,7 @@ def build_jp(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
         if s["company"] not in companies or s["destination"] != JP:
             continue
         note = coverage_note(s["basis"], s["period"])
-        label = labels.get((s["company"], jp_label_key(s["model"])))
+        label = labels.get((s["company"], s["model"]))
         segment = (label or {}).get("segment") or PASSENGER_CAR
 
         def hold(
@@ -754,7 +746,7 @@ def build_jp(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
         if label is None:
             hold(NO_JP_LABEL)
             continue
-        models = [jp_label_key(m) for m in label["mlit_models"].split(";") if m]
+        models = [m for m in label["technology_models"].split(";") if m]
         pooled = jp_technology(tech, models) if models else {}
         if not pooled:
             hold(f"{NO_JP_CERTIFIED} ({label['note']})" if label["note"] else NO_JP_CERTIFIED)
@@ -794,8 +786,8 @@ def build_jp(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
                     "test_cycle": tech[0]["test_cycle"],
                     "technology_source": (
                         f"mlit_fuel_economy_list (edition {edition}): "
-                        f"{label['mlit_models']} {powertrain}, {grades} certified grades, "
-                        "grade-weighted mean of the published 1km走行におけるCO2排出量"
+                        f"{label['technology_models']} {powertrain}, {grades} certified grades, "
+                        "grade-weighted mean of the published CO2 emissions per kilometre"
                     ),
                     "sales_source_file": s["source_file"],
                     "powertrain_rule": rule,
@@ -822,7 +814,7 @@ def build_jp(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
                     "test_cycle": tech[0]["test_cycle"],
                     "technology_source": (
                         f"mlit_fuel_economy_list (edition {edition}): "
-                        f"{label['mlit_models']} {HEV}, {grades} certified grades, "
+                        f"{label['technology_models']} {HEV}, {grades} certified grades, "
                         "grade-weighted mean; upper bound with every unit on the hybrid grade"
                     ),
                     "sales_source_file": s["source_file"],

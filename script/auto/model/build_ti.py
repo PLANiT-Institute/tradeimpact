@@ -392,7 +392,7 @@ def build_exclusions(
 
     Args:
         params: (market, country) -> destination parameters.
-        cells: Priced cells, used for the affected unit counts and cohort years.
+        cells: Assessed cells, used for the affected unit counts and cohort years.
 
     Returns:
         Exclusion rows sorted by market, company, scenario.
@@ -406,11 +406,11 @@ def build_exclusions(
             reasons[market].setdefault(scenario, "no rate published for this scenario")
     rows: list[dict[str, object]] = []
     for market, per_scenario in reasons.items():
-        priced = [c for c in cells if c["market"] == market]
-        companies = sorted({str(c["company"]) for c in priced})
-        first = sorted({str(c["scenario"]) for c in priced})[:1]
+        assessed = [c for c in cells if c["market"] == market]
+        companies = sorted({str(c["company"]) for c in assessed})
+        first = sorted({str(c["scenario"]) for c in assessed})[:1]
         for company in companies:
-            mine = [c for c in priced if c["company"] == company and c["scenario"] in first]
+            mine = [c for c in assessed if c["company"] == company and c["scenario"] in first]
             for cohort_year in sorted({int(str(c["cohort_year"])) for c in mine}):
                 year_cells = [c for c in mine if int(str(c["cohort_year"])) == cohort_year]
                 for scenario, reason in sorted(per_scenario.items()):

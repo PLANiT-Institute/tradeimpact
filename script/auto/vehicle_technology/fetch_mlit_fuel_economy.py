@@ -1,20 +1,22 @@
-"""Download MLIT's 自動車燃費一覧 (certified fuel economy and CO2 per grade, WLTC mode).
+"""Download MLIT's fuel-economy list (certified CO2 per grade, WLTC mode) for Japan.
 
-Source of truth: 国土交通省 物流・自動車局, 自動車燃費一覧（令和８年３月）
+Source of truth: Ministry of Land, Infrastructure, Transport and Tourism (MLIT), Jidosha Nenpi
+Ichiran / Automobile Fuel Economy List, March 2026 edition
 (https://www.mlit.go.jp/jidosha/jidosha_tk10_000050.html). The workbooks list, per maker sheet
-and per 型式, the WLTC 燃費値 in km/L **and 1km走行におけるCO2排出量 in gCO2/km**, so the product
-side needs no fuel-carbon conversion at all — unlike Korea, where the label publishes km/L only.
+and per type designation, the WLTC fuel economy in km/L **and the CO2 emissions per kilometre in
+gCO2/km**, so the product side needs no fuel-carbon conversion at all — unlike Korea, where the
+label publishes km/L only.
 
 Two workbooks carry the vehicles the Japanese cohorts contain:
 
-    ガソリン乗用車（普通・小型自動車, WLTCモード）   petrol and petrol-hybrid cars
-    ディーゼル乗用車（WLTCモード）                 diesel cars, maker sheets suffixed _WLTC
+    petrol passenger cars (standard and small, WLTC mode)   petrol and petrol-hybrid cars
+    diesel passenger cars (WLTC mode)                       maker sheets suffixed _WLTC
 
-軽自動車 are not fetched: the JADA nameplate ranking the cohorts are built from excludes kei
-vehicles by construction (its own note says 軽自動車及び海外ブランド車を除く), so no kei unit can
-enter a cohort. Battery-electric vehicles are absent from 燃費一覧 altogether — it is a
-fuel-consumption publication — which is why Japanese battery-electric units are withheld rather
-than priced.
+Kei vehicles are not fetched: the JADA nameplate ranking the cohorts are built from excludes kei
+vehicles by construction (its own note says kei and foreign-brand vehicles are excluded), so no
+kei unit can enter a cohort. Battery-electric vehicles are absent from the list altogether — it
+is a fuel-consumption publication — which is why Japanese battery-electric units are withheld
+rather than assessed.
 
 Run from the repository root:
     .venv/bin/python script/auto/vehicle_technology/fetch_mlit_fuel_economy.py
@@ -40,28 +42,28 @@ SOURCE_ID = "mlit_fuel_economy_list"
 PAGE = "https://www.mlit.go.jp/jidosha/jidosha_tk10_000050.html"
 BASE = "https://www.mlit.go.jp/jidosha/content/"
 #: local name -> (remote file, edition year, what the workbook covers). Two editions are kept:
-#: 燃費一覧 lists only what is type-approved on the edition date, so a nameplate withdrawn during
-#: the cohort year is in the older edition and gone from the newer one.
+#: the list carries only what is type-approved on the edition date, so a nameplate withdrawn
+#: during the cohort year is in the older edition and gone from the newer one.
 FILES = {
     "mlit_fuel_economy_petrol_car_wltc_2026.xlsx": (
         "001986923.xlsx",
         2026,
-        "ガソリン乗用車（普通・小型自動車）WLTCモード; petrol and petrol-hybrid cars",
+        "petrol passenger cars, standard and small, WLTC mode; petrol and petrol-hybrid",
     ),
     "mlit_fuel_economy_diesel_car_wltc_2026.xlsx": (
         "001986958.xlsx",
         2026,
-        "ディーゼル乗用車; maker sheets suffixed _WLTC and _JC08",
+        "diesel passenger cars; maker sheets suffixed _WLTC and _JC08",
     ),
     "mlit_fuel_economy_petrol_car_wltc_2025.xlsx": (
         "3.1.G_LD_WLTC.xlsx",
         2025,
-        "ガソリン乗用車（普通・小型自動車）WLTCモード, 令和7年3月 edition",
+        "petrol passenger cars, standard and small, WLTC mode, March 2025 edition",
     ),
     "mlit_fuel_economy_diesel_car_wltc_2025.xlsx": (
         "4.1.D_LD_WLTC.xlsx",
         2025,
-        "ディーゼル乗用車（普通・小型自動車）WLTCモード, 令和7年3月 edition",
+        "diesel passenger cars, standard and small, WLTC mode, March 2025 edition",
     ),
 }
 #: edition year -> the page it is published on.
@@ -84,12 +86,13 @@ def main() -> None:
         {
             "source_id": SOURCE_ID,
             "publisher": (
-                "国土交通省 物流・自動車局 Ministry of Land, Infrastructure, Transport and Tourism"
+                "Ministry of Land, Infrastructure, Transport and Tourism (MLIT), Japan, "
+                "Logistics and Automobile Bureau"
             ),
             "title": (
-                "自動車燃費一覧 令和7年3月 and 令和8年3月 editions: certified WLTC fuel economy "
-                "(km/L) and CO2 emissions (gCO2/km) per 型式 and 類別, by maker, for cars "
-                "type-approved as of the edition date"
+                "Automobile Fuel Economy List, March 2025 and March 2026 editions: certified "
+                "WLTC fuel economy (km/L) and CO2 emissions (gCO2/km) per type designation and "
+                "class, by maker, for cars type-approved as of the edition date"
             ),
             "url": PAGE,
             "how_obtained": (

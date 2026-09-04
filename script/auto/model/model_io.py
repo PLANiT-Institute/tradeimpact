@@ -27,11 +27,11 @@ REAL_WORLD = DATA / "vehicle_technology" / "method" / "real_world_correction.csv
 #: Vehicle segments. A segment is the population a destination's benchmark describes, named
 #: for the class the destination's own statistics use, because a benchmark and the sales it
 #: prices must always cover the same population:
-#:     passenger_car  cars (EU27 M1, Korea 승용, Japan 乗用車)
+#:     passenger_car  cars (EU27 M1, the Korean and Japanese passenger-car classes)
 #:     light_duty     cars and light trucks together (the United States, where the distance
 #:                    statistics split by wheelbase and cannot be cut by body type)
-#:     freight        goods vehicles (Korea 화물, N1 to N3)
-#:     bus            buses and minibuses (Korea 승합)
+#:     freight        goods vehicles (the Korean goods class, N1 to N3)
+#:     bus            buses and minibuses (the Korean bus class)
 PASSENGER_CAR = "passenger_car"
 LIGHT_DUTY = "light_duty"
 FREIGHT = "freight"

@@ -1,18 +1,21 @@
 """MOLIT registration workbooks -> vehicle_usage_kr.csv (passenger-car stock and mean age).
 
 Input   raw/molit_vehicle_registration_<year>_12.xlsx (December workbooks)
-        sheet 19.연도별 자동차 등록현황: year-end stock by 차종 x 용도, 2007 onward (latest file)
-        sheet 15.차령별_차종별_용도별 등록현황: stock by model year x 차종 x 용도 (one per file)
+        sheet 19, annual registration status: year-end stock by vehicle class x use, 2007
+                onward (latest file)
+        sheet 15, registration status by vehicle age, class and use: stock by model year x
+                vehicle class x use (one per file)
 Output  processed/vehicle_usage_kr.csv
-        car_stock            승용 계 (all uses) at year end, vehicles
+        car_stock            passenger-car class, all uses, at year end, vehicles
         car_mean_age_years   sum(w_m (Y - m)) / sum(w_m) over model years m of the December
                              snapshot of year Y, with the open-ended oldest band counted at its
                              nominal age (2005 = "2005 and earlier"), so the mean is biased low;
                              the bias is recorded as a warning downstream (tier C)
         car_stock_age_le2 / _2_5 / _5_10 / _10_20 / _gt20   vehicles by age band (Y - m)
 
-승용 is the 자동차관리법 passenger-car class (up to 10 seats); it excludes the Carnival/Staria
-9- and 11-seaters (승합) and light trucks (화물).
+The passenger-car class is the one defined by the Motor Vehicle Management Act (up to ten
+seats); it excludes the Carnival and Staria
+nine- and eleven-seaters, which are buses, and light trucks, which are goods vehicles.
 
 Run from the repository root:
     .venv/bin/python script/auto/vehicle_usage/extract_molit_registrations.py
@@ -31,27 +34,32 @@ RAW = DATA / "raw"
 OUT = DATA / "processed" / "vehicle_usage_kr.csv"
 SOURCE_ID = "molit_vehicle_registration"
 FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_file"]
+#: Sheet names as the workbook writes them (join keys): sheet 19 is the annual registration
+#: status, sheet 15 the status by vehicle age, class and use.
 SHEET_YEARLY = "19.연도별 자동차 등록현황"
 SHEET_AGE = "15.차령별_차종별_용도별 등록현황"
 BANDS = (("le2", 0, 2), ("2_5", 2, 5), ("5_10", 5, 10), ("10_20", 10, 20), ("gt20", 20, 200))
 #: MOLIT vehicle classes -> the project's segment names.
+#: Vehicle class as the workbook writes it (a join key) -> the project's segment name.
 SEGMENTS = {"승용": "passenger_car", "승합": "bus", "화물": "freight", "특수": "special"}
+#: Verbatim labels of the all-uses column ("total") and of the grand-total row.
+ALL_USES, GRAND_TOTAL = "계", "총계"
 
 
 def total_columns(df: pd.DataFrame) -> dict[str, int]:
-    """{segment: column index of that vehicle class's '계' (all uses) block}."""
+    """{segment: column index of that vehicle class's all-uses block}."""
     classes = df.iloc[2].astype(str).str.replace(" ", "")
     uses = df.iloc[3].astype(str).str.strip()
     starts = {v: i for i, v in enumerate(classes) if v in SEGMENTS}
     out: dict[str, int] = {}
     for korean, start in starts.items():
         for i in range(start, len(uses)):
-            if uses.iloc[i] == "계":
+            if uses.iloc[i] == ALL_USES:
                 out[SEGMENTS[korean]] = i
                 break
     missing = set(SEGMENTS.values()) - set(out)
     if missing:
-        raise SystemExit(f"no 계 column for {sorted(missing)}")
+        raise SystemExit(f"no all-uses column for {sorted(missing)}")
     return out
 
 
@@ -89,7 +97,7 @@ def age_rows(path: Path, snapshot_year: int) -> list[dict[str, object]]:
         total = None
         for i in range(4, len(df)):
             label = str(df.iat[i, 0]).strip()
-            if label == "총계":
+            if label == GRAND_TOTAL:
                 total = int(df.iat[i, col])
                 continue
             my = pd.to_numeric(label, errors="coerce")
@@ -97,7 +105,9 @@ def age_rows(path: Path, snapshot_year: int) -> list[dict[str, object]]:
                 continue
             weights[int(my)] = int(df.iat[i, col])
         if total is None or sum(weights.values()) != total:
-            raise SystemExit(f"{path.name} {segment}: model-year rows do not sum to 총계")
+            raise SystemExit(
+                f"{path.name} {segment}: model-year rows do not sum to the grand total"
+            )
         ages = {snapshot_year - my: w for my, w in weights.items()}
         rows.append(
             {

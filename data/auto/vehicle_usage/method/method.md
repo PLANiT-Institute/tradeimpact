@@ -82,20 +82,22 @@ by hand when a cube must be refreshed (raw files are pinned once obtained).
 
 | processed file | script | content |
 |---|---|---|
-| `vehicle_usage_kr.csv` | `script/auto/vehicle_usage/extract_molit_registrations.py` | `car_stock` (MOLIT 승용 계 at year end, 2007–2025, from the latest December workbook); `car_mean_age_years` and `car_stock_age_<band>` per December snapshot (2024, 2025) from the model-year distribution |
-| `vehicle_usage_kr_traffic.csv` | `script/auto/vehicle_usage/extract_kotsa_tmacs.py` | `car_traffic` (승용차 million vehicle-km, 2016–2024) and `car_daily_km` from KOTSA TMACS inspection odometers |
+| `vehicle_usage_kr.csv` | `script/auto/vehicle_usage/extract_molit_registrations.py` | `stock_<segment>` (MOLIT year-end stock, all uses, 2007–2025, from the latest December workbook); `mean_age_<segment>` and `stock_age_<segment>_<band>` per December snapshot from the model-year distribution |
+| `vehicle_usage_kr_traffic.csv` | `script/auto/vehicle_usage/extract_kotsa_tmacs.py` | `traffic_<segment>` (million vehicle-km, 2016–2024) and `daily_km_<segment>` from KOTSA TMACS inspection odometers |
 
-Sources: MOLIT 자동차등록자료 통계 (`molit_vehicle_registration`,
+Sources: MOLIT Vehicle Registration Statistics (`molit_vehicle_registration`,
 https://stat.molit.go.kr/portal/cate/statMetaView.do?hRsId=58, December workbooks downloaded
-through the portal's own file endpoint by `fetch_molit_registrations.py`); KOTSA 자동차주행거리통계
+through the portal's own file endpoint by `fetch_molit_registrations.py`); KOTSA Motor
+Vehicle Travel Distance Statistics
 TMACS (`kotsa_tmacs_vkm`, https://tmacs.kotsa.or.kr/web/TG/TG200/TG2200/Tg1700_02.jsp?mid=S3080,
 the page's JSON data call, fetched per year by `fetch_kotsa_tmacs.py`).
 
-Rules and traps. 승용 is the 자동차관리법 passenger-car class (up to 10 seats); Carnival and
-Staria 9- and 11-seaters (승합) and Porter/Bongo trucks (화물) are outside it, and the matching
-sales rows are withheld as out of scope. Distance is tier A: odometer readings grossed up to the
-same 승용 population as the stock (2024: 260,456 million vkm / 21.77 million cars = 11,963 km).
-The TMACS total row is labelled 평균 before 2021 and 계 from 2021, the annual ALL column is in
+Rules and traps. The passenger-car class is the one defined by the Motor Vehicle Management
+Act (up to ten seats); the Carnival and Staria nine- and eleven-seaters are buses and the
+Porter and Bongo are goods vehicles, so each is measured against its own segment benchmark.
+Distance is tier A: odometer readings grossed up to the same population as the stock (2024:
+260,456 million vkm / 21.77 million cars = 11,963 km). The TMACS total row is labelled as a
+mean before 2021 and as a sum from 2021, the annual ALL column is in
 thousand km (not stated on the page), 2015 returns no rows, and per-vehicle distance breaks by
 about 11 % in 2021. The MOLIT age sheet is a model-year distribution whose oldest band is
 open-ended (2005 = 2005 and earlier), so the mean age (7.3 years in 2024) is biased low and the

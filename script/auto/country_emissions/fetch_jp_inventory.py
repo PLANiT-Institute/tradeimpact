@@ -1,15 +1,16 @@
 """Download Japan's national greenhouse gas inventory workbook (CO2 by sector).
 
-Source of truth: 温室効果ガスインベントリオフィス GIO / 国立環境研究所 NIES, supervised by the
-Ministry of the Environment, 日本の温室効果ガス排出量データ
-(https://www.nies.go.jp/gio/archive/ghgdata/). One workbook carries the whole series, fiscal
-1990 to the latest fiscal year, and sheet ``3.Allocated_CO2-sector`` is the only place the
-road fleet is split by vehicle type:
+Source of truth: Greenhouse Gas Inventory Office of Japan (GIO) at the National Institute for
+Environmental Studies (NIES), for the Ministry of the Environment: National Greenhouse Gas
+Inventory Data of Japan (https://www.nies.go.jp/gio/archive/ghgdata/). One workbook carries
+the whole series, fiscal 1990 to the latest fiscal year, and sheet
+``3.Allocated_CO2-sector`` is the only place the road fleet is split by vehicle type, each
+row labelled in Japanese and in English:
 
-    自動車（旅客）Road Transportation   passenger road transport
-    乗用車 Passenger Vehicle          cars
-    バス Bus                          buses
-    貨物自動車/トラック Truck and Lorry  goods vehicles
+    Road Transportation   passenger road transport
+    Passenger Vehicle     cars
+    Bus                   buses
+    Truck and Lorry       goods vehicles
 
 The sheet is the electricity-and-heat-allocated presentation, but its road rows are identical
 to the unallocated sheet because a vehicle's own fuel is direct combustion and the electricity
@@ -64,11 +65,12 @@ def main() -> None:
         {
             "source_id": SOURCE_ID,
             "publisher": (
-                "温室効果ガスインベントリオフィス GIO / 国立環境研究所 NIES, for the Ministry of "
-                "the Environment of Japan"
+                "Greenhouse Gas Inventory Office of Japan (GIO), National Institute for "
+                "Environmental Studies (NIES), for the Ministry of the Environment of Japan"
             ),
             "title": (
-                "日本の温室効果ガス排出量データ: national CO2 by sector, fiscal 1990 onward. "
+                "National Greenhouse Gas Inventory Data of Japan: national CO2 by sector, "
+                "fiscal 1990 onward. "
                 "Sheet 3.Allocated_CO2-sector splits road transport into cars, buses and goods "
                 "vehicles"
             ),
@@ -89,7 +91,8 @@ def main() -> None:
         DEST,
         SOURCE_ID,
         "L5-7gas_2026_gioweb_ver1.0.xlsx",
-        f"fiscal years; sheet 3.Allocated_CO2-sector rows 乗用車 / バス / 貨物自動車; "
+        "fiscal years; sheet 3.Allocated_CO2-sector rows Passenger Vehicle / Bus / Truck "
+        f"and Lorry; "
         f"{status} {accessed} from {URL}",
     )
     print(f"{status} {DEST.name} {DEST.stat().st_size:,} B {digest[:12]}")

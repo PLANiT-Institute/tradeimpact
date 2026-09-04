@@ -73,20 +73,22 @@ script; no value is typed in by hand without a `source_id`.
 
 | processed file | script | content |
 |---|---|---|
-| `country_emissions_kr.csv` | `script/auto/country_emissions/extract_kr_inventory.py` | `road_co2` (GIR national inventory, IPCC 1.A.3.b 도로수송, ktCO2, 1990–2023, fuel-sales basis); `kotsa_car_ghg`, `kotsa_road_ghg`, `car_share_road` (KOTSA bottom-up road GHG by vehicle type, 2012–2024); `car_co2 = road_co2 × car_share_road` (ktCO2, tier C) |
+| `country_emissions_kr.csv` | `script/auto/country_emissions/extract_kr_inventory.py` | `road_co2` (GIR national inventory, IPCC 1.A.3.b road transport, ktCO2, 1990–2023, fuel-sales basis); `kotsa_ghg_<segment>`, `kotsa_road_ghg`, `share_road_<segment>` (KOTSA bottom-up road GHG by vehicle type, 2012–2024); `co2_<segment> = road_co2 × share_road_<segment>` (ktCO2, tier C) |
 
-Sources: GIR 가스별 국가 온실가스 인벤토리 배출량(CO2) via data.go.kr (`gir_inventory_co2`,
-https://www.data.go.kr/data/15070396/fileData.do, licence 제한 없음; primary publication
-https://www.gir.go.kr/home/board/read.do?menuId=36&boardId=88&boardMasterId=2); KOTSA 지역별 차종별
-도로부문 온실가스 배출량 via data.go.kr (`kotsa_road_ghg_vehicle_type`,
+Sources: GIR National Greenhouse Gas Inventory Emissions by Gas (CO2) via data.go.kr
+(`gir_inventory_co2`, https://www.data.go.kr/data/15070396/fileData.do, no restriction on use;
+primary publication https://www.gir.go.kr/home/board/read.do?menuId=36&boardId=88&boardMasterId=2);
+KOTSA Road-Sector Greenhouse Gas Emissions by Region and Vehicle Type via data.go.kr
+(`kotsa_road_ghg_vehicle_type`,
 https://www.data.go.kr/data/15106288/fileData.do). Both fetched by `fetch_kr_inventory.py`.
 
 Rules and traps. The national inventory publishes no vehicle-type split, and no Korean publisher
-issues passenger-car road CO2 as a machine-readable file. The KOTSA table is the only 승용 split,
-but its national level sits 13–26 % below the GIR road total (2023: −24 %) and its 승용 share
+issues passenger-car road CO2 as a machine-readable file. The KOTSA table is the only
+vehicle-class split, but its national level sits 13–26 % below the GIR road total (2023: −24 %)
+and its passenger-car share
 drifts from 0.49 (2018) to 0.58 (2024); it is therefore used only as a share on the GIR level,
 never as a level, and never for a trend (the S1 fleet trend is taken from the GIR road series).
 Korea's 2024 UNFCCC common reporting tables (Table 1.A(a)s3, row Cars) would give a sourced
 passenger-car series but the UNFCCC site refuses automated download; a hand fetch is the open
 action. The GIR file header says "kt CO2-eq"; on the CO2 sheet that is ktCO2. KOTSA province
-labels carry inconsistent spaces (세 종 / 세종) and are normalised before summing.
+labels carry inconsistent internal spaces and are normalised before summing.

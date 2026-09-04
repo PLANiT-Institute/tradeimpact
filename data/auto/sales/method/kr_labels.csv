@@ -3,9 +3,9 @@ hyundai,Avante,Avante,,stated,passenger_car,powertrain from the IR trim code (CN
 hyundai,Sonata,Sonata,,stated,passenger_car,
 hyundai,Grandeur,Grandeur,,stated,passenger_car,
 hyundai,IONIQ 6,IONIQ 6,BEV,explicit,passenger_car,
-hyundai,IONIQ 6 N,IONIQ 6,BEV,explicit,passenger_car,N performance variant priced on the IONIQ 6 label values
+hyundai,IONIQ 6 N,IONIQ 6,BEV,explicit,passenger_car,N performance variant assessed on the IONIQ 6 label values
 hyundai,IONIQ 5,IONIQ 5,BEV,explicit,passenger_car,
-hyundai,IONIQ 5 N,IONIQ 5,BEV,explicit,passenger_car,N performance variant priced on the IONIQ 5 label values
+hyundai,IONIQ 5 N,IONIQ 5,BEV,explicit,passenger_car,N performance variant assessed on the IONIQ 5 label values
 hyundai,IONIQ 9,IONIQ 9,BEV,explicit,passenger_car,
 hyundai,IONIQ,IONIQ,,stated,passenger_car,first-generation Ioniq (zero units in 2024-2025)
 hyundai,Casper,Casper,,stated,passenger_car,
@@ -20,7 +20,7 @@ hyundai,Palisade,Palisade,,stated,passenger_car,
 hyundai,Veloster,Veloster,ICE,explicit,passenger_car,
 hyundai,Accent,Accent,ICE,explicit,passenger_car,
 genesis,G70,G70,,stated,passenger_car,
-genesis,G70 S/B,G70,ICE,explicit,passenger_car,shooting brake priced on the G70 label values
+genesis,G70 S/B,G70,ICE,explicit,passenger_car,shooting brake assessed on the G70 label values
 genesis,G80,G80,,stated,passenger_car,
 genesis,G90,G90,ICE,explicit,passenger_car,
 genesis,GV60,GV60,BEV,explicit,passenger_car,
@@ -40,16 +40,16 @@ kia,K9,K9,ICE,explicit,passenger_car,
 kia,Morning / Picanto,Morning / Picanto,ICE,explicit,passenger_car,
 kia,Niro,Niro,HEV,explicit,passenger_car,the Korean Niro is hybrid only; the EV is a separate IR row
 kia,Niro EV,Niro,BEV,explicit,passenger_car,
-kia,PV5,PV5,BEV,explicit,passenger_car,passenger PV5 is certified as 승용차
+kia,PV5,PV5,BEV,explicit,passenger_car,the passenger PV5 is certified in the passenger-car class
 kia,Ray,Ray,ICE,explicit,passenger_car,
 kia,Ray EV,Ray,BEV,explicit,passenger_car,
 kia,Seltos,Seltos,,unsplit,passenger_car,ICE and (from 2026) HEV on one row
 kia,Sorento,Sorento,,unsplit,passenger_car,ICE and HEV on one row
 kia,Sportage,Sportage,,unsplit,passenger_car,ICE and HEV on one row
-kia,Tasman,Tasman,,unsplit,freight,"Tasman is a freight vehicle, priced against the Korean freight benchmark"
-kia,Bongo,Bongo,,unsplit,freight,"Bongo is a freight vehicle, priced against the Korean freight benchmark"
-kia,Bongo EV,Bongo EV,,unsplit,freight,"Bongo EV is a freight vehicle, priced against the Korean freight benchmark"
-kia,Bus,Bus,,unsplit,bus,"Bus is a bus vehicle, priced against the Korean bus benchmark"
+kia,Tasman,Tasman,,unsplit,freight,"Tasman is a freight vehicle, assessed against the Korean freight benchmark"
+kia,Bongo,Bongo,,unsplit,freight,"Bongo is a freight vehicle, assessed against the Korean freight benchmark"
+kia,Bongo EV,Bongo EV,,unsplit,freight,"Bongo EV is a freight vehicle, assessed against the Korean freight benchmark"
+kia,Bus,Bus,,unsplit,bus,"Bus is a bus vehicle, assessed against the Korean bus benchmark"
 kia,Millitary,,,out_of_scope,passenger_car,military vehicles as labelled in the IR file
-hyundai,LCV,Porter,,unsplit,freight,"the IR file reports light commercial vehicles as one class; priced on the Porter, the nameplate that dominates it, with an all-hybrid bound as for any unsplit row"
+hyundai,LCV,Porter,,unsplit,freight,"the IR file reports light commercial vehicles as one class; assessed on the Porter, the nameplate that dominates it, with an all-hybrid bound as for any unsplit row"
 hyundai,HCV,,,out_of_scope,freight,"heavy trucks and coaches above 3.5 t: Korea's fuel-economy labelling scheme does not certify them, so no product intensity exists; counted and withheld"

@@ -1,18 +1,21 @@
 """Download Korea's annual vehicle-kilometres by vehicle class from KOTSA TMACS.
 
-Source of truth: 한국교통안전공단 자동차주행거리통계 (odometer readings at the periodic vehicle
+Source of truth: Korea Transportation Safety Authority (KOTSA), Motor Vehicle Travel
+Distance Statistics (odometer readings at the periodic vehicle
 inspection, grossed up to the registered fleet), TMACS
 https://tmacs.kotsa.or.kr/web/TG/TG200/TG2200/Tg1700_02.jsp?mid=S3080. The page's own data call is
 
     POST https://tmacs.kotsa.or.kr/web/TG/TG200/TG2200/Tg2119_AJAX.jsp
          gubun=Tg1700_04 (annual total, thousand km) | Tg1700_03 (km per vehicle per day)
-         year=YYYY  carUse=전체|사업용|비사업용
+         year=YYYY  carUse=<all | commercial | private>, sent as the portal's own values
 
 returning JSON rows (YEAR, CAR_USE_NM, CAR_CLS_NM, FUEL_CLS_NM, ALL, 16 provinces). The same
-statistic is mirrored on data.go.kr (datasets 15072343, 15088454) under 이용허락범위 제한 없음.
+statistic is mirrored on data.go.kr (datasets 15072343, 15088454) with no restriction on
+use.
 
 Known traps recorded in the method note: 2015 returns no rows; the total-row label changes from
-평균 to 계 in 2021 and the per-vehicle distance breaks by about 11 % in 2021; the annual ALL
+from a mean to a sum in 2021 and the per-vehicle distance breaks by about 11 % in that
+year; the annual ALL
 column is in thousand km although the page does not say so.
 
 Run from the repository root:
@@ -66,9 +69,13 @@ def main() -> None:
     upsert_source(
         {
             "source_id": SOURCE_ID,
-            "publisher": "한국교통안전공단 KOTSA (Korea Transportation Safety Authority), TMACS",
+            "publisher": (
+                "Korea Transportation Safety Authority (KOTSA), TMACS traffic and vehicle "
+                "statistics"
+            ),
             "title": (
-                "자동차주행거리통계: annual vehicle-kilometres (thousand km) and km per "
+                "Motor Vehicle Travel Distance Statistics: annual vehicle-kilometres "
+                "(thousand km) and km per "
                 "vehicle per day by "
                 "vehicle class, fuel and province, from inspection odometer readings, 2012 onward"
             ),
@@ -80,8 +87,7 @@ def main() -> None:
             "accessed_date": accessed,
             "license": (
                 "KOTSA statistics; mirrored on data.go.kr (15072343, 15088454) with "
-                "이용허락범위 제한 "
-                "없음"
+                "no restriction on use"
             ),
             "used_by": "extract_kotsa_tmacs.py",
         }

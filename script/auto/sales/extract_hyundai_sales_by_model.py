@@ -7,7 +7,7 @@ Output  one row per (company, block, model label, cohort year):
         Domestic -> destination KR (country), basis ``domestic_sales`` (market-side, Korea);
         Export   -> destination ``export`` (level unknown), basis ``export_shipments``
                     (plant-side shipments from Korea, destination not stated; kept for
-                    reconciliation with trade statistics, never priced).
+                    reconciliation with trade statistics, never assessed).
         Commercial rows (LCV, HCV) are emitted with their class as the model label so that
         sales/method/kr_labels.csv can route them to the freight benchmark, or withhold them
         with a reason where no certified value exists.

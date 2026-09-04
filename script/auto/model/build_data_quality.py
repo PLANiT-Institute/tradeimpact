@@ -105,7 +105,7 @@ def main() -> None:
         tier_c = sum(int(c["units"]) for c in mine if c["vkt_tier"] == "C")
         life_weighted = sum(int(c["units"]) * int(c["lifetime_years"]) for c in mine)
         countries = {c["destination"] for c in mine}
-        # Every priced cell names its own (destination, segment), and each of those has its
+        # Every assessed cell names its own (destination, segment), and each of those has its
         # own benchmark row, so the tier counts are taken over those pairs.
         keys = {(market, c["destination"], c["segment"]) for c in mine}
         vkt_tiers = Counter(params[k]["vkt_tier"] for k in keys)

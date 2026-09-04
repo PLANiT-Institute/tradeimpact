@@ -49,7 +49,7 @@ powertrain (`source_id` `eea_co2_monitoring_2024`). Real-world correction factor
 |---|---|---|
 | `vehicle_technology_eea_2024.csv` | `script/auto/vehicle_technology/extract_eea_certified.py` | one row per company × destination × model × powertrain for the companies in scope (EU27 2024; WLTP); rows without a certified value are kept with an empty value and withheld downstream |
 | `epa_trends_powertrain_share_my2024.csv` | `script/auto/vehicle_technology/extract_epa_trends.py` | one row per make × nameplate × powertrain from the EPA Automotive Trends MY2024 carline file: certification production volume (deduplicated on CAFE manufacturer, division, carline code and model-type index), share within the nameplate, volume-weighted label combined MPG; nameplates mapped through `method/epa_carline_map.csv` to the labels the company sales releases use. Supplies the powertrain split the releases withhold (assumption A-US-PT in `output/method.md`); production volumes are never a cohort |
-| `vehicle_technology_kr_kea.csv` | `script/auto/vehicle_technology/extract_kea_fuel_economy.py` | one row per company × model × powertrain from the KEA 표시연비 label file (승용차 rows, conversions excluded): trim-mean tailpipe gCO2/km derived from label km/L with `method/fuel_carbon_factors.csv` (gasoline 2,348, diesel 2,689, LPG 1,511 gCO2/L), BEV Wh/km = 1000 / label km/kWh; Korean base names mapped to the IR labels by `method/kr_model_map.csv`; `test_cycle = KR_5CYCLE` (label values are 5-cycle corrected, real-world factor 1.0). PHEV and FCEV rows carry no value and are withheld downstream |
+| `vehicle_technology_kr_kea.csv` | `script/auto/vehicle_technology/extract_kea_fuel_economy.py` | one row per company × model × powertrain from the KEA label fuel-economy file (passenger-car rows, converter-built rows excluded): trim-mean tailpipe gCO2/km derived from label km/L with `method/fuel_carbon_factors.csv` (gasoline 2,348, diesel 2,689, LPG 1,511 gCO2/L), BEV Wh/km = 1000 / label km/kWh; Korean base names mapped to the IR labels by `method/kr_model_map.csv`; `test_cycle = KR_5CYCLE` (label values are 5-cycle corrected, real-world factor 1.0). PHEV and FCEV rows carry no value and are withheld downstream |
 | `vehicle_technology_us_epa.csv` | `script/auto/vehicle_technology/extract_epa_fueleconomy.py` | one row per company × model year (2024–2025) × EPA model name × powertrain for the companies in scope; EPA combined-cycle CO2 (g/mile → g/km) and electricity (kWh/100 mi → Wh/km), unweighted mean over trims with the trim count; `base_model` is the join key to model-level sales |
 
 ## Sources
@@ -80,15 +80,17 @@ twice.
 
 ## Korea (added 2026-09-04)
 
-Sources: 한국에너지공단 자동차 표시연비 정보 (`kea_fuel_economy_labels`,
-https://www.data.go.kr/data/15083023/fileData.do, licence 제한 없음, fetched by
+Sources: Korea Energy Agency, Vehicle Label Fuel Economy Information
+(`kea_fuel_economy_labels`, https://www.data.go.kr/data/15083023/fileData.do, no restriction on
+use, fetched by
 `fetch_kea_fuel_economy.py`); fuel carbon factors from EPA (`epa_ghg_typical_vehicle`,
 `epa_emission_factors_hub`). The NIER per-manufacturer fleet CO2 table 2012–2020
 (`nier_manufacturer_fleet_co2`) is pinned as a cross-check only (2-cycle regulatory basis).
 
 Traps. The KEA file has no CO2 and no fuel column: powertrain and fuel are parsed from the trim
-string (하이브리드/HEV, 플러그인/PHEV, 일렉트릭 or a charging range for BEV, 디젤, LPG/LPI). The
-복합_연비 column mixes km/L and km/kWh; BEV rows are identified by the charging-range column.
+string: a hybrid or plug-in marker, an electric marker or a charging range for
+battery-electric, a diesel marker, or LPG. The combined-fuel-economy column mixes km/L and
+km/kWh; battery-electric rows are identified by the charging-range column.
 The file is a live snapshot of trims on sale (no model year). Deriving CO2 from the 5-cycle label
 value gives the EPA-comparable figure, not the 2-cycle regulatory CO2 that Korean compliance
 documents show (roughly 20 % lower).

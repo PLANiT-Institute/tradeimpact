@@ -1,18 +1,18 @@
-"""Download Korea's national GHG inventory (CO2 by category) and the KOTSA road GHG by vehicle type.
+"""Download Korea's national CO2 inventory and the road GHG split by vehicle type.
 
-Sources of truth (both open data on data.go.kr, keyless file downloads, licence 제한 없음):
+Sources of truth (both open data on data.go.kr, keyless file downloads, licence: no restriction
+on use):
 
-    GIR 가스별 국가 온실가스 인벤토리 배출량(CO2)  https://www.data.go.kr/data/15070396/fileData.do
-        CO2 by IPCC category, national, 1990-2023 (edition 2025-12-29), ktCO2. Row
-        "A 연료연소_3 수송_b 도로수송" is 1.A.3.b road transport. Fuel-sales (top-down) basis.
-        No vehicle-type split exists in the national inventory.
-    KOTSA 지역별 차종별 도로부문 온실가스 배출량      https://www.data.go.kr/data/15106288/fileData.do
-        Road GHG by vehicle type (승용/승합/화물/특수) x province, 2012-2024, ktCO2e, bottom-up
-        (registered vehicles x KOTSA distance x emission factor). Used only for the passenger-car
-        SHARE of road emissions: its level sits 13-26 % below the national inventory.
+    National Greenhouse Gas Inventory Emissions by Gas (CO2), Greenhouse Gas Inventory and
+    Research Center of Korea (GIR)      https://www.data.go.kr/data/15070396/fileData.do
+        National CO2 by IPCC category, 1990-2023, ktCO2, 2006 IPCC guidelines. The row for fuel
+        combustion / transport / road transport is category 1.A.3.b. Fuel-sales (top-down) basis.
 
-The primary GIR publication (workbooks by IPCC guideline) is at
-https://www.gir.go.kr/home/board/read.do?menuId=36&boardId=88&boardMasterId=2.
+    Road-Sector Greenhouse Gas Emissions by Region and Vehicle Type, Korea Transportation Safety
+    Authority (KOTSA)                   https://www.data.go.kr/data/15106288/fileData.do
+        Road GHG by vehicle type (passenger car, bus, goods, special) x province, 2012-2024,
+        ktCO2e, a bottom-up local inventory. Its national level sits 13-26 % below the GIR road
+        total, so only its passenger-car share is used, never its level.
 
 Run from the repository root:  .venv/bin/python script/auto/country_emissions/fetch_kr_inventory.py
 """
@@ -42,43 +42,39 @@ FILES = {
         "source": {
             "source_id": "gir_inventory_co2",
             "publisher": (
-                "온실가스종합정보센터 GIR (Greenhouse Gas Inventory and Research Center of "
-                "Korea), via "
-                "공공데이터포털 data.go.kr"
+                "Greenhouse Gas Inventory and Research Center of Korea (GIR), via the "
+                "public data portal data.go.kr"
             ),
             "title": (
-                "가스별 국가 온실가스 인벤토리 배출량(CO2): national CO2 by IPCC category "
-                "1990-2023, ktCO2 "
-                "(2025-12-29 edition, 2006 IPCC guidelines)"
+                "National Greenhouse Gas Inventory Emissions by Gas (CO2): national CO2 "
+                "by IPCC category 1990-2023, ktCO2 (2025-12-29 edition, 2006 IPCC guidelines)"
             ),
             "url": "https://www.data.go.kr/data/15070396/fileData.do",
-            "license": "공공데이터포털 이용허락범위 제한 없음 (KOGL type 1 equivalent)",
+            "license": ("public data portal, no restriction on use (equivalent to KOGL type 1)"),
             "used_by": "extract_kr_inventory.py",
         },
         "note": (
-            "CSV UTF-8 BOM; header says kt CO2-eq, CO2 sheet so ktCO2; row 'A 연료연소_3 "
-            "수송_b 도로수송' = "
-            "1.A.3.b"
+            "CSV UTF-8 BOM; the header says kt CO2-eq but the sheet is CO2, so ktCO2; the "
+            "row for fuel combustion / transport / road transport is category 1.A.3.b"
         ),
     },
     "kotsa_road_ghg_by_vehicle_type.csv": {
         "file_id": "FILE_000000003654294",
         "source": {
             "source_id": "kotsa_road_ghg_vehicle_type",
-            "publisher": (
-                "한국교통안전공단 KOTSA (Korea Transportation Safety Authority), via data.go.kr"
-            ),
+            "publisher": ("Korea Transportation Safety Authority (KOTSA), via data.go.kr"),
             "title": (
-                "지역별 차종별 도로부문 온실가스 배출량: road-sector GHG by vehicle type "
-                "(승용, 승합, 화물, 특수) and "
-                "province, 2012-2024, ktCO2e, bottom-up local inventory"
+                "Road-Sector Greenhouse Gas Emissions by Region and Vehicle Type: road GHG "
+                "by vehicle type (passenger car, bus, goods, special) and province, 2012-2024, "
+                "ktCO2e, a bottom-up local inventory"
             ),
             "url": "https://www.data.go.kr/data/15106288/fileData.do",
-            "license": "공공데이터포털 이용허락범위 제한 없음 (KOGL type 1 equivalent)",
+            "license": ("public data portal, no restriction on use (equivalent to KOGL type 1)"),
             "used_by": "extract_kr_inventory.py (passenger-car share only)",
         },
         "note": (
-            "CSV cp949; level disagrees with GIR 1.A.3.b by 13-26 %, used for the 승용 share only"
+            "CSV cp949; the level disagrees with GIR 1.A.3.b by 13-26 %, so only the "
+            "passenger-car share is used"
         ),
     },
 }

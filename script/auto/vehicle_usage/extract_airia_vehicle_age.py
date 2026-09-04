@@ -1,21 +1,21 @@
 """AIRIA age releases -> vehicle_usage_jp_lifetime.csv (mean age and published vehicle life).
 
-Input   raw/airia_mean_age_2025.pdf        平均車齢
-        raw/airia_mean_use_years_2025.pdf  平均使用年数
+Input   raw/airia_mean_age_2025.pdf        mean vehicle age
+        raw/airia_mean_use_years_2025.pdf  mean years of use
 Output  processed/vehicle_usage_jp_lifetime.csv
         mean_age_<segment>         years since first registration, fleet mean
         mean_use_years_<segment>   years from first registration to deregistration
 
-Both releases are prose, not tables: each states its headline as 「乗用車は 13.35 年」 with the
-per-body-type breakdown 「普通乗用車は 12.74 年」 following in the same paragraph. The reader
-normalises the page text, then takes the headline figure for each of the three vehicle classes it
-needs, refusing a match that is preceded by 普通, 小型, 軽 or 大型 so a body-type line cannot be
-read as the class total.
+Both releases are prose, not tables: each states its headline as "passenger cars are 13.35
+years" with the per-body-type breakdown ("standard passenger cars are 12.74 years") following in
+the same paragraph. The reader normalises the page text, then takes the headline figure for each
+of the three vehicle classes it needs, refusing a match preceded by a body-size prefix
+(standard, small, kei, large) so a body-type line cannot be read as the class total.
 
-平均使用年数 is the expected vehicle life the lifetime horizon needs, published rather than
-derived — but AIRIA's own note says the figure counts a 一時抹消登録 (temporary deregistration)
-as an ending, so it is a little shorter than years-to-scrappage. That makes it a floor on the
-operating life, and the reference builder brackets it.
+Mean years of use is the expected vehicle life the lifetime horizon needs, published rather than
+derived — but AIRIA's own note says the figure counts a temporary deregistration as an ending,
+so it is a little shorter than years-to-scrappage. That makes it a floor on the operating life,
+and the reference builder brackets it.
 
 Run from the repository root:
     .venv/bin/python script/auto/vehicle_usage/extract_airia_vehicle_age.py
@@ -36,7 +36,8 @@ RAW = DATA / "raw"
 OUT = DATA / "processed" / "vehicle_usage_jp_lifetime.csv"
 SOURCE_ID = "airia_vehicle_age"
 FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_file"]
-#: AIRIA vehicle class -> the project's segment name.
+#: Vehicle class as the release writes it (a join key, matched against the PDF text) -> the
+#: project's segment name. In English the three read "passenger car", "goods vehicle" and "bus".
 CLASSES = {
     "乗用車": "passenger_car",
     "貨物車": "freight",
@@ -44,11 +45,14 @@ CLASSES = {
 }
 #: file -> (series prefix, what it measures)
 RELEASES = {
-    "airia_mean_age_2025.pdf": ("mean_age", "平均車齢"),
-    "airia_mean_use_years_2025.pdf": ("mean_use_years", "平均使用年数"),
+    "airia_mean_age_2025.pdf": ("mean_age", "mean vehicle age"),
+    "airia_mean_use_years_2025.pdf": ("mean_use_years", "mean years of use"),
 }
-#: a class total is never preceded by a body-size prefix (普通/小型/軽/大型).
+#: A class total is never preceded by a body-size prefix; these four characters end the words
+#: for standard, small, kei and large, so the lookbehind rejects a body-type line.
 PREFIX = "(?<![通型軽大])"
+#: Verbatim sentence frame of the released figure: "<class> is <number> years".
+SENTENCE = "は([0-9.]+)年"
 
 
 def page_text(path: Path) -> str:
@@ -66,7 +70,7 @@ def main() -> None:
         year = int(name.rsplit("_", 1)[1].split(".")[0])
         text = page_text(path)
         for label, segment in CLASSES.items():
-            found = re.search(rf"{PREFIX}{label}は([0-9.]+)年", text)
+            found = re.search(rf"{PREFIX}{label}{SENTENCE}", text)
             if found is None:
                 raise SystemExit(f"{name}: no {what} headline for {label}")
             rows.append(

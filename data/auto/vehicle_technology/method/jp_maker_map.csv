@@ -1,12 +1,12 @@
-mlit_make,company,note
-トヨタ,toyota,
-ニッサン,nissan,the sheet writes the make in katakana
-日産,nissan,as JADA writes it
-ダイハツ,daihatsu,"Toyota subsidiary, reported as its own brand by JADA; out of the company scope"
-ホンダ,honda,pinned out of scope
-マツダ,mazda,pinned out of scope
-スバル,subaru,pinned out of scope
-三菱,mitsubishi,pinned out of scope
-スズキ,suzuki,pinned out of scope
-レクサス,lexus,"held apart from Toyota, as in every other market"
-いすゞ,isuzu,pinned out of scope
+mlit_make,make_en,company,read,note
+トヨタ,Toyota,toyota,yes,the make cell of the Toyota sheet; OEM rows built by Daihatsu or SUBARU sit on this sheet with a mark
+ニッサン,Nissan,nissan,yes,the sheet writes the make in katakana
+日産,Nissan,nissan,yes,as the JADA tables write it
+ダイハツ,Daihatsu,daihatsu,no,"Toyota subsidiary, reported as its own brand and out of the company scope"
+ホンダ,Honda,honda,no,out of the company scope
+マツダ,Mazda,mazda,no,out of the company scope
+スバル,Subaru,subaru,no,out of the company scope
+三菱,Mitsubishi,mitsubishi,no,out of the company scope
+スズキ,Suzuki,suzuki,no,out of the company scope
+レクサス,Lexus,lexus,no,"held apart from Toyota, as in every other market"
+いすゞ,Isuzu,isuzu,no,out of the company scope

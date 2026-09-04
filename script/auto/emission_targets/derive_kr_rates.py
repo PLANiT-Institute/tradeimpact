@@ -11,9 +11,10 @@ Scenarios
     S1 current trajectory   log-linear trend of observed road-transport CO2 (GIR 1.A.3.b) and of
                             grid intensity, 2015 onward excluding 2020-2021; the KOTSA car share is
                             not used for the trend because it drifts over time
-    S2 committed policy     2050 탄소중립 시나리오 (2021), the government's own pathway to net zero:
-                            transport (수송) 98.1 -> 2.8 MtCO2e (A안) for the fleet; power (전환)
-                            269.6 -> 20.7 MtCO2e (B안) for the grid, because the A안 power endpoint
+    S2 committed policy     the 2050 Carbon Neutrality Scenarios (2021), the government's own
+                            pathway to net zero: transport 98.1 -> 2.8 MtCO2e (scenario A) for
+                            the fleet; power 269.6 -> 20.7 MtCO2e (scenario B) for the grid,
+                            because the scenario-A power endpoint
                             is zero and a compound decline cannot reach zero. The 2030 NDC waypoint
                             is not used to set the rate: a vehicle sold today is driven for 11 to
                             25 years, so a rate fitted to a 7-year window and then extrapolated
@@ -132,14 +133,15 @@ def main() -> None:
         (
             "r_fleet",
             "kr_2050_transport_a",
-            "transport (수송) A안",
-            "수송 covers road, domestic aviation, rail and navigation, not cars alone.",
+            "transport, scenario A",
+            "The transport sector covers road, domestic aviation, rail and navigation, not "
+            "cars alone.",
         ),
         (
             "r_power",
             "kr_2050_power_b",
-            "power sector (전환) B안",
-            "B안 anchors the power rate because the A안 endpoint is zero.",
+            "power sector, scenario B",
+            "Scenario B anchors the power rate because the scenario-A endpoint is zero.",
         ),
     ):
         t = targets[key]
@@ -167,7 +169,7 @@ def main() -> None:
                 "base_year": t["base_year"],
                 "target_year": t["target_year"],
                 "derivation": (
-                    f"2050 탄소중립 시나리오 (2021) {label} {t['base_value']} -> "
+                    f"2050 Carbon Neutrality Scenarios (2021) {label} {t['base_value']} -> "
                     f"{t['target_value']} MtCO2e ({t['base_year']}-{t['target_year']}), compound "
                     "annual decline applied pro-rata over the whole vehicle-lifetime horizon. "
                     + note_extra

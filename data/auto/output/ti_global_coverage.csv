@@ -1,4 +1,4 @@
-company,cohort_year,global_units,global_basis,global_derived,brands_in_denominator,brands_out_of_scope,priced_units,priced_share_of_global,priced_markets,priced_countries,held_units,held_share_of_global,source_id
+company,cohort_year,global_units,global_basis,global_derived,brands_in_denominator,brands_out_of_scope,assessed_units,assessed_share_of_global,assessed_markets,assessed_countries,held_units,held_share_of_global,source_id
 hyundai,2024,4165543,worldwide_sales_derived,yes,hyundai;genesis,genesis,1764860,0.423681,EU27;KR;US,28,2028707,0.487021,hyundai_ir_sales_results
 hyundai,2025,4110382,worldwide_sales_derived,yes,hyundai;genesis,genesis,1432511,0.34851,KR;US,2,1680506,0.408844,hyundai_ir_sales_results
 kia,2026,1619037,worldwide_retail,yes,kia,,714873,0.441542,KR;US,2,1619037,1.0,kia_ir_retail_sales

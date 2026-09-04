@@ -4,15 +4,19 @@ Inputs (data/auto/sales/raw/, fetched by fetch_jada.py)
     jada_model_ranking_<year>.xlsx        nameplate ranking, annual sheet, top 50
     jada_fuel_by_maker_<year>.xlsx        maker x fuel, one sheet per month
     jada_brand_registrations_<year>.xls   brand x vehicle class, one sheet per month
-    ../method/jada_brands.csv             Japanese brand name -> company
+    ../method/jada_brands.csv             brand name as the workbook writes it -> company
+    ../method/jp_model_names.csv          nameplate as the workbook writes it -> English name
 
 Outputs (data/auto/sales/processed/)
     sales_jada_jp.csv              company x model x cohort year: Japan registrations, the
-                                   companies in scope only, basis ``registrations``
+                                   companies in scope only, basis ``registrations``. ``model`` is
+                                   the English nameplate and ``source_label`` the string the
+                                   workbook prints, so the table joins in English and still says
+                                   what it was read from.
     jada_fuel_mix_jp.csv           company x cohort year x powertrain: registrations and share,
                                    summed over the twelve monthly sheets, every maker
     jada_brand_registrations_jp.csv  company x cohort year: passenger-car registrations and the
-                                   part of them built outside Japan (JADA's 内輸入 row)
+                                   part of them built outside Japan (JADA's imported row)
 
 Boundaries that travel with these tables. The nameplate ranking excludes kei cars and foreign
 brands and is cut at the top 50, so it is a subset of a company's Japanese sales, not all of it;
@@ -37,6 +41,7 @@ REPO = Path(__file__).resolve().parents[3]
 DATASET = REPO / "data" / "auto" / "sales"
 RAW = DATASET / "raw"
 BRANDS = DATASET / "method" / "jada_brands.csv"
+MODEL_NAMES = DATASET / "method" / "jp_model_names.csv"
 SCOPE = DATASET / "method" / "companies.csv"
 OUT_SALES = DATASET / "processed" / "sales_jada_jp.csv"
 OUT_FUEL = DATASET / "processed" / "jada_fuel_mix_jp.csv"
@@ -51,6 +56,7 @@ SALES_FIELDS = [
     "cohort_year",
     "period",
     "model",
+    "source_label",
     "powertrain",
     "units",
     "basis",
@@ -89,7 +95,19 @@ FUEL_POWERTRAIN = {
     "FCV": ("fuel cell", "FCEV"),
     "その他": ("other (mainly LPG)", "OTHER"),
 }
-ANNUAL_SHEET = re.compile(r"1\s*月?\s*[~～-]\s*12\s*月")  # 2024年1月～12月 and 2025年１～１２月
+#: An annual sheet is labelled January to December in the workbook's own characters; the
+#: two editions on hand write the months and the tilde differently.
+#: Verbatim header and label strings of the source workbooks (join keys, not prose). In
+#: English they read: nameplate, brand, petrol, passenger car, total, grand total, and the
+#: imported-of-which row.
+NAMEPLATE_HEADER = "ブランド通称名"
+BRAND_HEADER = "ブランド名"
+PETROL_LABEL = "ガソリン"
+PASSENGER_CAR_LABEL = "乗用車"
+TOTAL_LABEL = "計"
+GRAND_TOTAL_LABEL = "合計"
+IMPORTED_LABEL = "内輸入"
+ANNUAL_SHEET = re.compile(r"1\s*月?\s*[~～-]\s*12\s*月")
 
 
 def normalise(value: object) -> str:
@@ -120,26 +138,34 @@ def number(value: object) -> int | None:
         return None
 
 
-def model_rows(path: Path, year: int, companies: set[str], brands: dict[str, str]) -> list[dict]:
+def model_rows(
+    path: Path,
+    year: int,
+    companies: set[str],
+    brands: dict[str, str],
+    names: dict[str, str],
+) -> list[dict]:
     """Nameplate rows of one annual ranking workbook."""
     book = pd.ExcelFile(path)
     sheets = [s for s in book.sheet_names if ANNUAL_SHEET.search(normalise(s))]
     if not sheets:
-        raise SystemExit(f"{path.name}: no annual (1-12月) sheet in {book.sheet_names}")
+        raise SystemExit(
+            f"{path.name}: no annual (January to December) sheet in {book.sheet_names}"
+        )
     df = book.parse(sheets[0], header=None)
     # The title row also contains the words, so match a cell that IS the heading.
     header = [
         i
         for i in range(len(df))
-        if any(normalise(v) == "ブランド通称名" for v in df.iloc[i].tolist())
+        if any(normalise(v) == NAMEPLATE_HEADER for v in df.iloc[i].tolist())
     ]
     if not header:
-        raise SystemExit(f"{path.name}: no header row carrying ブランド通称名")
+        raise SystemExit(f"{path.name}: no header row carrying the nameplate column")
     start = header[0]
     columns = {normalise(v): i for i, v in enumerate(df.iloc[start]) if normalise(v) != "nan"}
-    name_col, brand_col = columns["ブランド通称名"], columns["ブランド名"]
-    # The volume column is headed 台数 in some editions and by the period itself in others
-    # (2024: "2024年1~12月"), so it is taken by position: the column right of the brand.
+    name_col, brand_col = columns[NAMEPLATE_HEADER], columns[BRAND_HEADER]
+    # The volume column is headed "units" in some editions and by the period itself in
+    # others, so it is taken by position: the column right of the brand.
     units_col = brand_col + 1
     rows, skipped = [], defaultdict(int)
     for i in range(start + 1, len(df)):
@@ -153,6 +179,10 @@ def model_rows(path: Path, year: int, companies: set[str], brands: dict[str, str
         if company not in companies:
             skipped[company] += units
             continue
+        label = str(df.iat[i, name_col]).strip()
+        model_en = names.get(normalise(label))
+        if model_en is None:
+            raise SystemExit(f"{path.name}: nameplate {label!r} is not in {MODEL_NAMES.name}")
         rows.append(
             {
                 "company": company,
@@ -161,7 +191,8 @@ def model_rows(path: Path, year: int, companies: set[str], brands: dict[str, str
                 "origin": "",
                 "cohort_year": year,
                 "period": f"{year}-01..{year}-12",
-                "model": str(df.iat[i, name_col]).strip(),
+                "model": model_en,
+                "source_label": label,
                 "powertrain": "",
                 "units": units,
                 "basis": "registrations",
@@ -182,7 +213,7 @@ def fuel_rows(path: Path, year: int, brands: dict[str, str]) -> list[dict]:
     months: dict[str, int] = defaultdict(int)
     for sheet in book.sheet_names:
         df = book.parse(sheet, header=None)
-        head = df.index[df.apply(lambda r: "ガソリン" in normalise(r.to_string()), axis=1)]
+        head = df.index[df.apply(lambda r: PETROL_LABEL in normalise(r.to_string()), axis=1)]
         if not len(head):
             continue
         row0 = int(head[0])
@@ -233,13 +264,13 @@ def brand_rows(path: Path, year: int, brands: dict[str, str]) -> list[dict]:
     months: dict[str, int] = defaultdict(int)
     for sheet in book.sheet_names:
         df = book.parse(sheet, header=None)
-        head = df.index[df.apply(lambda r: "乗用車" in normalise(r.to_string()), axis=1)]
+        head = df.index[df.apply(lambda r: PASSENGER_CAR_LABEL in normalise(r.to_string()), axis=1)]
         if not len(head):
             continue
         row0 = int(head[0])
         labels = [normalise(v) for v in df.iloc[row0 + 1]]
         try:
-            car_total_col = labels.index("計")
+            car_total_col = labels.index(TOTAL_LABEL)
         except ValueError:
             continue
         company = None
@@ -257,9 +288,9 @@ def brand_rows(path: Path, year: int, brands: dict[str, str]) -> list[dict]:
             value = number(df.iat[i, car_total_col])
             if value is None:
                 continue
-            if "合計" in kind:
+            if GRAND_TOTAL_LABEL in kind:
                 total[company] += value
-            elif "内輸入" in kind:
+            elif IMPORTED_LABEL in kind:
                 imported[company] += value
     return [
         {
@@ -287,11 +318,15 @@ def write(path: Path, fields: list[str], rows: list[dict]) -> None:
 def main() -> None:
     """Extract every JADA workbook on disk."""
     brands, companies = brand_map(), in_scope()
+    names = {
+        normalise(r["source_label"]): r["model_en"]
+        for r in csv.DictReader(MODEL_NAMES.open(newline=""))
+    }
     sales: list[dict] = []
     fuel: list[dict] = []
     brand: list[dict] = []
     for path in sorted(RAW.glob("jada_model_ranking_*.xlsx")):
-        sales += model_rows(path, int(path.stem.rsplit("_", 1)[1]), companies, brands)
+        sales += model_rows(path, int(path.stem.rsplit("_", 1)[1]), companies, brands, names)
     for path in sorted(RAW.glob("jada_fuel_by_maker_*.xlsx")):
         fuel += fuel_rows(path, int(path.stem.rsplit("_", 1)[1]), brands)
     for path in sorted(RAW.glob("jada_brand_registrations_*.xls")):

@@ -1,10 +1,12 @@
 """Step 3 — destination parameters and reference benchmarks for Japan, one per vehicle segment.
 
 Japan is the only market in the project where distance and stock come from a single table at a
-single date: the 自動車燃料消費量調査 prints total vehicle-kilometres and kilometres per vehicle
+single date: the Motor Vehicle Fuel Consumption Survey prints total vehicle-kilometres and
+kilometres per vehicle
 per calendar day on the same row, so the stock behind a segment is implied rather than joined
 from a registration file published at another date. It is also the only market with a published
-expected vehicle life (AIRIA 平均使用年数), so the lifetime horizon is sourced rather than
+expected vehicle life (AIRIA's mean years of use), so the lifetime horizon is sourced
+rather than
 derived from mean age.
 
 Inputs (processed datasets)
@@ -27,7 +29,8 @@ Algorithm (whitepaper §3.1, guideline §2.3 Method B), per segment:
     D     that segment's annual distance per vehicle (km/year, from the same table)
     CO2   that segment's CO2 (ktCO2/fiscal year), published by vehicle type — no proxy needed
 
-Segments. 乗用車 and 貨物車 are built. Buses are not: the survey separates diesel buses but
+Segments. Passenger cars and goods vehicles are built. Buses are not: the survey separates
+diesel buses but
 bundles petrol buses into the car and special-vehicle rows, so a bus denominator would be
 diesel-only against an all-bus numerator and the intensity would be biased high. The bus rows are
 still published in vehicle_usage_jp.csv, and no company in scope sells buses in Japan.
@@ -80,14 +83,15 @@ FLEET_TIER = "A"
 AGE_TIER = "A"
 LIFETIME_TIER = "B"
 WARN_VKT_TIER = (
-    "VKT_TIER_B: the 自動車燃料消費量調査 covers vehicles that burn fuel, so battery-electric "
+    "VKT_TIER_B: the Motor Vehicle Fuel Consumption Survey covers vehicles that burn fuel, "
+    "so battery-electric "
     "kilometres are absent from both the distance and the implied stock. The fleet intensity is "
     "therefore a combustion-fleet intensity, biased high by roughly the battery-electric share "
     "of vehicle-kilometres (about 1 % of Japanese cars), and the implied stock lands 1-2 % below "
     "the registered fleet AIRIA publishes."
 )
 WARN_LIFETIME_TIER = (
-    "LIFETIME_TIER_B: AIRIA's 平均使用年数 counts a 一時抹消登録 (temporary deregistration) as "
+    "LIFETIME_TIER_B: AIRIA's mean years of use counts a temporary deregistration as "
     "an ending, so the published life is a floor on years to scrappage; it is bracketed "
     f"+/-{LIFETIME_BRACKET_Y} years."
 )
@@ -97,7 +101,8 @@ WARN_FISCAL = (
     "power leg by a quarter."
 )
 WARN_KEI = (
-    "KEI_IN_BENCHMARK: the car benchmark covers the whole national fleet including 軽自動車, "
+    "KEI_IN_BENCHMARK: the car benchmark covers the whole national fleet including kei "
+    "vehicles, "
     "which are lower-emitting than registered cars, while the cohort is registration-statistics "
     "(non-kei). The segment ratio stays 1.0, so a kei-heavy fleet average makes the benchmark "
     "harder for a registered car to beat."
@@ -192,9 +197,11 @@ def main() -> None:
                 "vkt_tier": VKT_TIER,
                 "vkt_year": co2[0],
                 "vkt_derivation": (
-                    "自動車燃料消費量調査 第１表: １日１車当たり走行キロ x 365 per row, "
+                    "Motor Vehicle Fuel Consumption Survey, Table 1: kilometres per "
+                    "vehicle-day x 365 per row, "
                     "traffic-weighted over the rows the segment map assigns to this segment; the "
-                    "implied stock is that segment's 走行キロ divided by the same figure. "
+                    "implied stock is that segment's vehicle-kilometres divided by the same "
+                    "figure. "
                     f"Fiscal {co2[0]}, matched to the emissions year rather than taken as the "
                     "latest observation."
                 ),

@@ -6,7 +6,8 @@ Output  processed/vehicle_usage_kr_traffic.csv
         traffic_<segment>   that class's total-row ALL / 1000, million vehicle-km
         daily_km_<segment>  that class's total-row km per vehicle per day
 
-The total row is labelled 평균 up to 2020 and 계 from 2021; both are read. The 2021 value
+The total row is labelled as a mean up to 2020 and as a sum from 2021; both labels are
+read. The 2021 value
 carries an 11 % discontinuity in per-vehicle distance with no fleet event behind it; the
 reference builder reads the latest year and the rate derivation excludes 2020-2021 anyway.
 
@@ -25,8 +26,10 @@ RAW = DATA / "raw"
 OUT = DATA / "processed" / "vehicle_usage_kr_traffic.csv"
 SOURCE_ID = "kotsa_tmacs_vkm"
 FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_file"]
+#: The two labels the source gives its class-total row (join keys): "mean" up to 2020 and
+#: "sum" from 2021.
 TOTAL_LABELS = {"평균", "계"}
-#: KOTSA vehicle classes -> the project's segment names.
+#: Vehicle class as the source writes it (a join key) -> the project's segment name.
 SEGMENTS = {
     "승용차": "passenger_car",
     "승합차": "bus",

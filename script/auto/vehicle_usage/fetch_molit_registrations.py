@@ -1,15 +1,18 @@
 """Download the MOLIT monthly vehicle registration statistics workbook (Korea stock and age).
 
-Source of truth: 국토교통부 자동차등록자료 통계 (승인통계 제116015호), 국토교통 통계누리
+Source of truth: Ministry of Land, Infrastructure and Transport (MOLIT), Vehicle
+Registration Statistics (approved national statistic no. 116015), MOLIT statistics portal
 https://stat.molit.go.kr/portal/cate/statMetaView.do?hRsId=58. The portal's own script downloads
 a monthly workbook through
 
     GET https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=<name>&rFileName=<name>&midpath=%2Fstat_file%2F
 
-where <name> is "YYYY년 MM월 자동차 등록자료 통계.xlsx". The December workbook of a year is the
-year-end snapshot: sheet 연도별 자동차 등록현황 (year-end stock by 차종 x 용도, 2007 onward) and
-sheet 차령별_차종별_용도별 등록현황 (stock by model year x 차종 x 용도, oldest band open-ended).
-승용 = passenger cars up to 10 seats under the 자동차관리법 classification.
+where <name> is the workbook's own Korean filename for that year and month, which
+``NAME_VARIANTS`` below templates. The December workbook of a year is the year-end snapshot:
+one sheet gives year-end stock by vehicle class and use from 2007 onward, another gives
+stock by model year (vehicle age) x class x use, with the oldest band open-ended. The
+passenger-car class is the one defined by the Motor Vehicle Management Act, up to ten
+seats.
 
 Run from the repository root:
     .venv/bin/python script/auto/vehicle_usage/fetch_molit_registrations.py 2025 [2024 ...]
@@ -37,6 +40,8 @@ PAGE = "https://stat.molit.go.kr/portal/cate/statMetaView.do?hRsId=58"
 ENDPOINT = "https://stat.molit.go.kr/portal/common/downLoadFile.do"
 HEADERS = {"User-Agent": "Mozilla/5.0 (tradeimpact fetcher)", "Referer": PAGE}
 NAME_VARIANTS = (
+    # The portal's own filenames for the December workbook, verbatim: "<year> December
+    # vehicle registration statistics.xlsx", written with and without a space.
     "{year}년 12월 자동차 등록자료 통계.xlsx",
     "{year}년 12월 자동차등록자료 통계.xlsx",
 )
@@ -75,26 +80,24 @@ def main() -> None:
         {
             "source_id": SOURCE_ID,
             "publisher": (
-                "국토교통부 MOLIT (Ministry of Land, Infrastructure and Transport), 국토교통 "
-                "통계누리"
+                "Ministry of Land, Infrastructure and Transport (MOLIT), Korea, statistics portal"
             ),
             "title": (
-                "자동차등록자료 통계 (monthly vehicle registration statistics workbook): "
-                "year-end stock by "
+                "Vehicle Registration Statistics (monthly workbook): year-end stock by "
                 "vehicle class and use 2007 onward; stock by model year (age) x class x use; "
                 "fuel mix"
             ),
             "url": PAGE,
             "how_obtained": (
-                f"api: GET {ENDPOINT}?oFileName=<YYYY년 12월 자동차 등록자료 "
-                "통계.xlsx>&rFileName=<same>&midpath=/stat_file/ (endpoint from the portal's "
-                "own script); downloaded by script/auto/vehicle_usage/fetch_molit_registrations.py"
+                f"api: GET {ENDPOINT}?oFileName=<the workbook's own filename for that "
+                "year and month>&rFileName=<same>&midpath=/stat_file/ (endpoint from the "
+                "portal's own script); downloaded by "
+                "script/auto/vehicle_usage/fetch_molit_registrations.py"
             ),
             "accessed_date": accessed,
             "license": (
                 "MOLIT official statistics; mirrored on data.go.kr (dataset 15024777) with "
-                "이용허락범위 "
-                "제한 없음"
+                "no restriction on use"
             ),
             "used_by": "extract_molit_registrations.py",
         }
@@ -111,7 +114,7 @@ def main() -> None:
             "vehicle_usage",
             dest,
             SOURCE_ID,
-            f"{year}년 12월 자동차 등록자료 통계.xlsx",
+            NAME_VARIANTS[0].format(year=year),
             f"December {year} workbook (year-end snapshot); {status} {accessed} from {url}",
         )
         print(f"{year}: {status} {dest.name} {dest.stat().st_size:,} B {digest[:12]}")

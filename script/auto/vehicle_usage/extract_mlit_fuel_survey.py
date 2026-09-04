@@ -1,16 +1,16 @@
-"""自動車燃料消費量調査 第１表 -> vehicle_usage_jp.csv (distance and implied stock by segment).
+"""Fuel Consumption Survey Table 1 -> vehicle_usage_jp.csv (distance and implied stock).
 
 Input   raw/mlit_fuel_survey_fy<year>.xlsx        one workbook per fiscal year
-        method/jp_segment_map.csv                 (fuel, 業態, 用途, 車種) -> segment
+        method/jp_segment_map.csv                 (fuel, operation, use, vehicle type) -> segment
 Output  processed/vehicle_usage_jp.csv
         traffic_<segment>    total vehicle-kilometres, million vkm/year
         distance_<segment>   annual distance per vehicle, km/year
         stock_<segment>      vehicles implied by the two above
 
-Two quantities on every row carry the benchmark: 走行キロ (total vehicle-kilometres) and
-１日１車当たり走行キロ, which the survey defines as 走行キロ divided by surveyed vehicles times
-*calendar* days — not working days, which the separate 稼働率 column reports. Annual distance per
-vehicle is therefore
+Two quantities on every row carry the benchmark: total vehicle-kilometres, and kilometres per
+vehicle-day, which the survey defines as vehicle-kilometres divided by surveyed vehicles times
+*calendar* days — not working days, which the separate working-day-rate column reports. Annual
+distance per vehicle is therefore
 
     D_row = daily_km x 365
 
@@ -22,11 +22,10 @@ is what confirms the calendar-day reading: it lands within 2 % of the registered
 publishes for both cars and goods vehicles, where a working-day reading would overstate the
 fleet by half.
 
-The column positions move between editions (FY2024 puts 走行キロ in column G, FY2025 in H), so
-every column is located by its header text. Rows whose label ends in 計 are subtotals and are
-skipped; every other row must appear in the segment map or the extractor stops, so a new vehicle
-type in a future edition cannot be silently dropped. Fiscal years: FY2024 is April 2024 to
-March 2025.
+The column positions move between editions (FY2024 puts vehicle-kilometres in column G, FY2025
+in H), so every column is located by its header text. Subtotal rows are skipped; every other row
+must appear in the segment map or the extractor stops, so a new vehicle type in a future edition
+cannot be silently dropped. Fiscal years: FY2024 is April 2024 to March 2025.
 
 Run from the repository root:
     .venv/bin/python script/auto/vehicle_usage/extract_mlit_fuel_survey.py
@@ -48,11 +47,17 @@ MAP = DATA / "method" / "jp_segment_map.csv"
 OUT = DATA / "processed" / "vehicle_usage_jp.csv"
 SOURCE_ID = "mlit_fuel_consumption_survey"
 FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_file"]
-#: header text prefix -> the quantity it holds.
+#: Verbatim header text of the source workbook -> the quantity that column holds. These two
+#: strings are join keys, not prose: they must match what the sheet prints. In English they read
+#: "vehicle-kilometres" and "kilometres per vehicle per day".
 COLUMNS = {
     "走行キロ": "traffic_thousand_km",
     "1日1車当たり走行キロ": "daily_km",
 }
+#: Verbatim suffix of a subtotal label in the source workbook ("total").
+SUBTOTAL_SUFFIX = "計"
+#: The traffic column's verbatim header, used in the messages below.
+TRAFFIC_HEADER = "走行キロ"
 LABEL_COLUMNS = 4
 DAYS = 365.0
 
@@ -70,11 +75,13 @@ def read_table(path: Path) -> list[tuple[tuple[str, ...], dict[str, float]]]:
     header = None
     for i in range(len(df)):
         cells = [norm(v) for v in df.iloc[i]]
-        if any(c.startswith("走行キロ") for c in cells):
+        if any(c.startswith(TRAFFIC_HEADER) for c in cells):
             header, columns = i, cells
             break
     if header is None:
-        raise SystemExit(f"{path.name}: no header row carrying 走行キロ")
+        raise SystemExit(
+            f"{path.name}: no header row carrying the vehicle-kilometres column ({TRAFFIC_HEADER})"
+        )
     where: dict[str, int] = {}
     for j, cell in enumerate(columns):
         for prefix, quantity in COLUMNS.items():
@@ -88,15 +95,17 @@ def read_table(path: Path) -> list[tuple[tuple[str, ...], dict[str, float]]]:
     carried = [""] * (LABEL_COLUMNS + 1)
     for i in range(header + 1, len(df)):
         row = [norm(v) for v in df.iloc[i]]
-        # Subtotals are written into the 業態 and 用途 columns (営業用計, 自家用計, ガソリン計).
-        if any(row[j].endswith("計") for j in (2, 3) if j < len(row)):
+        # Subtotals are written into the operation and use columns (commercial total,
+        # private total, petrol total).
+        if any(row[j].endswith(SUBTOTAL_SUFFIX) for j in (2, 3) if j < len(row)):
             continue
         labels = []
         for j in range(1, LABEL_COLUMNS + 1):
             cell = row[j] if j < len(row) else ""
             if cell:
                 # A merged cell spans downward, so a label present at this level ends whatever
-                # the deeper levels were carrying: the LPG block has no 用途 or 車種 at all.
+                # the deeper levels were carrying: the LPG block states no use or vehicle
+                # type at all.
                 carried[j] = cell
                 for deeper in range(j + 1, LABEL_COLUMNS + 1):
                     carried[deeper] = ""

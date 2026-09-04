@@ -1,11 +1,11 @@
-"""Step 5c — worldwide coverage: every company x destination in the sales files, priced or not.
+"""Step 5c — worldwide coverage: every company x destination in the sales files, assessed or not.
 
 The unit of analysis is a company's sales to every destination country (whitepaper Level 1,
 operating-country basis); the reader filters destinations in the dashboard. This table shows,
 for every destination that appears in a market-side sales file for the companies in scope, how
 many units carry a result and why the rest do not, grouped the way the lead reads them:
 
-    EU27      the 27 member states (priced through the EEA registrations)
+    EU27      the 27 member states (assessed through the EEA registrations)
     US        United States
     <home>    the company's own headquarters country from companies.csv (KR for Hyundai and
               Kia, JP for Toyota and Honda), flagged ``home_country = yes``
@@ -57,7 +57,7 @@ FIELDS = [
     "period",
     "basis",
     "units",
-    "priced_units",
+    "assessed_units",
     "withheld_units",
     "status",
     "market",
@@ -84,7 +84,7 @@ def group_of(destination: str, level: str, home: str) -> str:
 
 
 def main() -> None:
-    """Join sales volumes to priced and withheld volumes per destination."""
+    """Join sales volumes to assessed and withheld volumes per destination."""
     companies = {r["company"]: r for r in read_csv(COMPANIES)}
     in_scope = {c for c, r in companies.items() if r["in_scope"] == "yes"}
     dest_notes = (
@@ -117,7 +117,7 @@ def main() -> None:
             if r["basis"] in MARKET_SIDE:
                 market_side_covered.add((r["company"], r["destination"]))
 
-    priced: dict[tuple[str, str, int], int] = defaultdict(int)
+    assessed: dict[tuple[str, str, int], int] = defaultdict(int)
     scenarios_seen: dict[tuple[str, str, int], set[str]] = defaultdict(set)
     by_model = read_csv(OUT_DIR / "ti_by_model.csv")
     for r in by_model:
@@ -125,7 +125,7 @@ def main() -> None:
     for r in by_model:
         key = (r["company"], r["destination"], int(r["cohort_year"]))
         if r["scenario"] == min(scenarios_seen[key]):
-            priced[key] += int(r["units"])
+            assessed[key] += int(r["units"])
     withheld: dict[tuple[str, str, int], int] = defaultdict(int)
     reasons: dict[tuple[str, str, int], set[str]] = defaultdict(set)
     for r in read_csv(OUT_DIR / "ti_withheld.csv"):
@@ -137,7 +137,7 @@ def main() -> None:
     for (company, dest, level, year, period, basis, source_file), units in sorted(sales.items()):
         home = companies[company]["country"]
         key = (company, dest, year)
-        p, w = priced.get(key, 0), withheld.get(key, 0)
+        p, w = assessed.get(key, 0), withheld.get(key, 0)
         if basis in PLANT_SIDE and (company, dest) in market_side_covered:
             continue  # a market-side file covers this destination; the plant file is reconciliation
         if basis in PLANT_SIDE:
@@ -147,9 +147,9 @@ def main() -> None:
                 "and sold there; imports from other plants are not in the source"
             )
             if dest in benchmark_market:
-                note += "; benchmark exists but plant-side volumes are not priced"
+                note += "; benchmark exists but plant-side volumes are not assessed"
         elif level == "region":
-            status = "region_unpriced"
+            status = "region_unassessed"
             note = "sales source reports a region; a country benchmark cannot be applied"
         elif level == "unknown":
             status = "destination_unknown"
@@ -162,10 +162,10 @@ def main() -> None:
         elif p == 0:
             status, note = (
                 "not_in_cohort",
-                "destination priced elsewhere; this file is not a cohort source",
+                "destination assessed elsewhere; this file is not a cohort source",
             )
         else:
-            status, note = "priced", "; ".join(sorted(reasons[key])) if w else ""
+            status, note = "assessed", "; ".join(sorted(reasons[key])) if w else ""
         out.append(
             {
                 "company": company,
@@ -177,8 +177,8 @@ def main() -> None:
                 "period": period,
                 "basis": basis,
                 "units": units,
-                "priced_units": p if status == "priced" else 0,
-                "withheld_units": w if status in {"priced", "withheld"} else 0,
+                "assessed_units": p if status == "assessed" else 0,
+                "withheld_units": w if status in {"assessed", "withheld"} else 0,
                 "status": status,
                 "market": benchmark_market.get(dest, ""),
                 "source_file": source_file,
@@ -193,9 +193,9 @@ def main() -> None:
     for r in out:
         g = by_group[(str(r["company"]), str(r["destination_group"]))]
         g[0] += int(str(r["units"]))
-        g[1] += int(str(r["priced_units"]))
+        g[1] += int(str(r["assessed_units"]))
     print(
-        f"{OUT.relative_to(REPO)}: {len(out)} rows; priced/units by company and group "
+        f"{OUT.relative_to(REPO)}: {len(out)} rows; assessed/units by company and group "
         + ", ".join(f"{c} {g} {p:,}/{u:,}" for (c, g), (u, p) in sorted(by_group.items()))
     )
 
