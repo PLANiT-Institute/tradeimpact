@@ -5,9 +5,9 @@ The single live tracking document. Current state only — history is in
 
 **Last pass:** 2026-09-04 (design, conformance and state; state refreshed after ST10 and the
 database build the same day; refreshed after the Kia and Honda EU27 acquisition, the independent
-review, and the first US/AU inputs). **Next pass due:** on the India verdict (scout running), on the hand fetch of Korea's UNFCCC
-common reporting tables (passenger-car CO2 row), on a segment-ratio decision, or at any charter
-change.
+review, and the first US/AU inputs). **Next pass due:** on the hand fetches that would lift Korea (UNFCCC CRT passenger-car row) or
+unlock India (BTR1 CRT, MoRTH Year Book 2021-22, Vahan export), on a segment-ratio decision, on
+the FCAI VFACTS quote, or at any charter change.
 
 ## 1. Where we are
 
@@ -84,6 +84,12 @@ Basic Plan and the 2050 scenarios. Results: Hyundai Korea 2024 S1 +1.89 MtCO2e /
 −2.49; 2025 +2.17 / −0.92 / −2.56; Kia Jan–Jun 2026 +1.30 / −0.53 / −1.50 (coverage 93–99 %).
 Open: the passenger-car CO2 row of Korea's 2024 UNFCCC CRT (hand fetch) would lift the fleet
 intensity from tier C; the 13–26 % GIR-vs-KOTSA level gap is recorded for reconciliation.
+
+**India assessed and not built (2026-09-04).** Free official inputs are partial: grid and stock to
+2020 sourced; passenger-car CO2, distance, age and certified technology missing or proxy-only; the
+NDC is an intensity target (S2 FLAG). A result would be direction-only (guideline §5.3) and no free
+model-level sales exist (SIAM paid, Vahan model hidden). Recorded in `destination_notes.csv` and the
+output method note; India stays a counted, unpriced coverage group.
 
 ## 2. Phases
 

@@ -213,6 +213,23 @@ average), while S2 and S3 turn every cohort into a liability: the committed and 
 decline faster than the products' fixed intensities. The lifetime sensitivity moves the Korean
 S1 by about ±30 % because the operating life is short and uncertain.
 
+## India (assessed 2026-09-04, not built)
+
+The lead's scope puts India in its own coverage group where data allow. The free-source scout
+found that only the grid (CEA CO2 baseline database, Ember) and the car stock to 2020 (MoRTH Road
+Transport Year Book, data.gov.in) are sourced; passenger-car CO2 exists only as whole-road-transport
+totals at 2016, 2020 and 2022 with no car split (the BTR1 common reporting tables would add 2005
+and 2020–2022 but sit behind a hand download), there is no distance survey, no vehicle-age table,
+no certified technology by model (BEE CAFE reports manufacturer averages on the MIDC cycle), and
+the NDC is an intensity target, so S2 would be a FLAG. More than half of the inputs would be
+proxies, which under guideline §5.3 makes any India figure a direction only. Model-level sales
+are not free either: Hyundai Motor India and Kia India publish company totals, SIAM sells the
+model data, and Vahan's public report hides the model. India therefore stays `no_benchmark` in
+`ti_coverage.csv` with this reasoning in `sales/method/destination_notes.csv`; Hyundai's Indian
+plant-side domestic sales (571,878 in 2025) and Kia's Indian retail (156,523 in Jan–Jun 2026)
+are counted, not priced. What would change the verdict: the BTR1 CRT workbook (hand fetch), the
+2020-21/2021-22 Year Book (hand fetch) and a Vahan maker-level active-stock export.
+
 ## Run order
 
 `script/auto/run_all.py` runs everything and exits non-zero at the first failure: extraction,

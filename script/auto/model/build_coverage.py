@@ -35,6 +35,7 @@ REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
 SALES = DATA / "sales" / "processed"
 COMPANIES = DATA / "sales" / "method" / "companies.csv"
+DESTINATION_NOTES = DATA / "sales" / "method" / "destination_notes.csv"
 OUT_DIR = DATA / "output"
 OUT = OUT_DIR / "ti_coverage.csv"
 
@@ -86,6 +87,11 @@ def main() -> None:
     """Join sales volumes to priced and withheld volumes per destination."""
     companies = {r["company"]: r for r in read_csv(COMPANIES)}
     in_scope = {c for c, r in companies.items() if r["in_scope"] == "yes"}
+    dest_notes = (
+        {r["destination"]: r["status_note"] for r in read_csv(DESTINATION_NOTES)}
+        if DESTINATION_NOTES.exists()
+        else {}
+    )
     benchmark_market: dict[str, str] = {}
     for path in sorted(OUT_DIR.glob("destination_parameters_*.csv")):
         for r in read_csv(path):
@@ -136,7 +142,7 @@ def main() -> None:
             continue  # a market-side file covers this destination; the plant file is reconciliation
         if basis in PLANT_SIDE:
             status = "plant_side_only"
-            note = (
+            note = (dest_notes.get(dest, "") + "; " if dest in dest_notes else "") + (
                 "only a plant-side source covers this destination: units built at the local plant "
                 "and sold there; imports from other plants are not in the source"
             )
@@ -150,7 +156,7 @@ def main() -> None:
             note = "sales without a stated destination"
         elif dest not in benchmark_market:
             status = "no_benchmark"
-            note = "no destination benchmark built yet for this country"
+            note = dest_notes.get(dest, "no destination benchmark built yet for this country")
         elif p == 0 and w > 0:
             status, note = "withheld", "; ".join(sorted(reasons[key]))
         elif p == 0:
