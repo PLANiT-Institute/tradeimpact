@@ -375,6 +375,41 @@ def test_cumulative_annual_flow_reaches_the_lifetime_total(
     assert checked
 
 
+def test_the_two_tier_c_measures_are_named_for_their_basis() -> None:
+    """`ti_data_quality.csv` publishes both tier-C measures, and each name says its basis.
+
+    They answer different questions and diverge sharply, so a single ``tier_c_share`` column
+    would be read as whichever one the reader had in mind. The distance measure is the only
+    input to ``directional_only``; the worst-of-cell measure says how far from fully sourced a
+    cell is.
+    """
+    table = rows(OUT / "ti_data_quality.csv")
+    assert table
+    for r in table:
+        for column in (
+            "vkt_tier_c_units",
+            "vkt_tier_c_share",
+            "cell_tier_a_units",
+            "cell_tier_b_units",
+            "cell_tier_c_units",
+            "cell_tier_c_share",
+        ):
+            assert column in r, column
+        assert not any(k in {"tier_c_units", "tier_c_share", "tier_c_units_share"} for k in r)
+        covered = int(r["covered_units"])
+        by_cell = sum(
+            int(r[f"cell_tier_{t}_units"]) for t in ("a", "b", "c")
+        )
+        assert by_cell == covered, r["market"]
+        # directional_only follows the distance measure, never the worst-of one.
+        flagged = str(r["directional_only"]).lower() in {"1", "true"}
+        assert flagged == (float(r["vkt_tier_c_share"]) > 0.5), r["market"]
+    # The two measures really do differ, which is the reason for the rename.
+    assert any(
+        abs(float(r["vkt_tier_c_share"]) - float(r["cell_tier_c_share"])) > 0.4 for r in table
+    )
+
+
 REPORT = DATA / "report" / "ti_automotive_report.html"
 
 

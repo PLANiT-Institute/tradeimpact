@@ -1348,13 +1348,16 @@ def quality(f: Facts) -> str:
                 r["market"],
                 COMPANIES[r["company"]],
                 str(r["cohort_year"]),
-                pct(float(r["tier_c_share"])),
+                pct(float(r["vkt_tier_c_share"])),
                 "yes" if str(r["directional_only"]).lower() in {"1", "true"} else "no",
-                pct(float(r["tier_c_units_share"])),
+                pct(float(r["cell_tier_c_share"])),
                 f"{r['lifetime_t_central_years']}",
                 esc(r["test_cycles"]),
             ]
         )
+    flagged = sum(
+        1 for r in f.quality if str(r["directional_only"]).lower() in {"1", "true"}
+    )
     tier_rows = []
     for market in MARKETS:
         params = [r for r in f.parameters if r["market"] == market]
@@ -1383,9 +1386,9 @@ decoration: they decide whether a figure may be read as a magnitude or only as a
                 "Market",
                 "Company",
                 "Year",
-                "Proxied-distance share",
+                "Proxied-distance tier C",
                 "Directional only",
-                "Tier-C cells",
+                "Worst-of-cell tier C",
                 "Life yr",
                 "Test cycle",
             ],
@@ -1394,12 +1397,14 @@ decoration: they decide whether a figure may be read as a magnitude or only as a
         )
     }
 
-<p>Two different tier-C measures appear in that table and they answer different questions. The
-<i>proxied-distance share</i> is the guideline's own suppression rule: above
-{pct(DIRECTIONAL_THRESHOLD, 0)} of units on a proxied distance, a result is directional only. The
-<i>tier-C cells</i> column is the share of units whose worst-of tier is C for any reason at all.
-The first flags {sum(1 for r in f.quality if str(r["directional_only"]).lower() in {"1", "true"})}
-cohorts; by the second, every cohort outside the EU27 is entirely tier C.</p>
+<p>The two tier-C columns say in their names which question they answer.
+<code>vkt_tier_c_share</code> is the guideline's own suppression rule &mdash; above
+{pct(DIRECTIONAL_THRESHOLD, 0)} of units on a proxied distance, only the direction is
+publishable &mdash; and it flags {flagged} cohorts.
+<code>cell_tier_c_share</code> counts units whose worst-of tier is C for any reason at all, and
+by it every cohort outside the EU27 is entirely tier C. A proxied distance scales the whole
+result, which is why it alone suppresses a magnitude; the other reasons tell a reader how far
+from fully sourced a cell is.</p>
 
 {table(["Market", "Fleet intensity", "Distance", "Lifetime"], tier_rows)}
 

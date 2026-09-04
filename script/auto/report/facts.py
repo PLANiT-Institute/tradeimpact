@@ -137,9 +137,10 @@ def load() -> Facts:
 
     quality = rows(
         conn,
-        """select market, company, cohort_year, tier_c_share, directional_only, units_tier_a,
-                  units_tier_b, units_tier_c, tier_c_units_share, countries_covered,
-                  countries_withheld, lifetime_t_central_years, test_cycles, sales_basis
+        """select market, company, cohort_year, vkt_tier_c_share, directional_only,
+                  cell_tier_a_units, cell_tier_b_units, cell_tier_c_units, cell_tier_c_share,
+                  countries_covered, countries_withheld, lifetime_t_central_years, test_cycles,
+                  sales_basis
            from ti_data_quality order by market, company, cohort_year""",
     )
     withheld = rows(

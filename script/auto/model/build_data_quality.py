@@ -10,9 +10,22 @@ Inputs   output/ti_by_model.csv, output/ti_withheld.csv, output/ti_exclusions.cs
          output/destination_parameters_*.csv
 Output   output/ti_data_quality.csv   one row per company x market
 
+Two different tier-C measures are published side by side, and the column names say which
+is which, because they answer different questions and diverge sharply: outside the EU27 the
+first is 0 while the second is 1.
+
+    vkt_tier_c_share  = units whose destination's DISTANCE tier is C / covered units. This is
+                        the guideline's own suppression rule, and the only one that drives
+                        ``directional_only``: a proxied distance scales the whole result, so
+                        above the threshold only the direction is publishable.
+    cell_tier_c_share = units whose WORST-OF cell tier is C, for any reason at all — an old
+                        survival schedule, a borrowed real-world factor, a proxied fleet share.
+                        It says how far a cell is from fully sourced, not whether its magnitude
+                        may be quoted.
+
 Algorithm:
-    tier_c_share = units in markets whose distance tier is C / covered units;
-    directional_only = tier_c_share > 0.5 (guideline §5.3 tier-C suppression rule);
+    vkt_tier_c_share = units in markets whose distance tier is C / covered units;
+    directional_only = vkt_tier_c_share > 0.5 (guideline §5.3 tier-C suppression rule);
     lifetime_T_central = units-weighted mean of the per-market operating life, rounded.
 
 Run from the repository root:  .venv/bin/python script/auto/model/build_data_quality.py
@@ -48,8 +61,8 @@ FIELDS = [
     "covered_units",
     "withheld_units",
     "covered_share",
-    "tier_c_units",
-    "tier_c_share",
+    "vkt_tier_c_units",
+    "vkt_tier_c_share",
     "directional_only",
     "lifetime_t_central_years",
     "scenarios_reported",
@@ -64,10 +77,10 @@ FIELDS = [
     "markets_fleet_tier_c",
     "withheld_reasons",
     "coverage_notes",
-    "units_tier_a",
-    "units_tier_b",
-    "units_tier_c",
-    "tier_c_units_share",
+    "cell_tier_a_units",
+    "cell_tier_b_units",
+    "cell_tier_c_units",
+    "cell_tier_c_share",
     "warnings",
 ]
 
@@ -102,7 +115,7 @@ def main() -> None:
             and int(w["cohort_year"]) == cohort_year
         ]
         held_units = sum(int(w["units"]) for w in held)
-        tier_c = sum(int(c["units"]) for c in mine if c["vkt_tier"] == "C")
+        vkt_tier_c = sum(int(c["units"]) for c in mine if c["vkt_tier"] == "C")
         life_weighted = sum(int(c["units"]) * int(c["lifetime_years"]) for c in mine)
         countries = {c["destination"] for c in mine}
         # Every assessed cell names its own (destination, segment), and each of those has its
@@ -158,9 +171,9 @@ def main() -> None:
                 "covered_share": round(covered / (covered + held_units), 6)
                 if covered + held_units
                 else None,
-                "tier_c_units": tier_c,
-                "tier_c_share": round(tier_c / covered, 6) if covered else None,
-                "directional_only": covered > 0 and tier_c / covered > TIER_C_THRESHOLD,
+                "vkt_tier_c_units": vkt_tier_c,
+                "vkt_tier_c_share": round(vkt_tier_c / covered, 6) if covered else None,
+                "directional_only": covered > 0 and vkt_tier_c / covered > TIER_C_THRESHOLD,
                 "lifetime_t_central_years": round(life_weighted / covered) if covered else None,
                 "scenarios_reported": ";".join(scenarios),
                 "scenarios_excluded": ";".join(
@@ -184,10 +197,10 @@ def main() -> None:
                 "markets_fleet_tier_c": fleet_c,
                 "withheld_reasons": "; ".join(f"{k} {v:,}" for k, v in sorted(reasons.items())),
                 "coverage_notes": " | ".join(notes),
-                "units_tier_a": sum(int(c["units"]) for c in mine if c["tier"] == "A"),
-                "units_tier_b": sum(int(c["units"]) for c in mine if c["tier"] == "B"),
-                "units_tier_c": sum(int(c["units"]) for c in mine if c["tier"] == "C"),
-                "tier_c_units_share": round(
+                "cell_tier_a_units": sum(int(c["units"]) for c in mine if c["tier"] == "A"),
+                "cell_tier_b_units": sum(int(c["units"]) for c in mine if c["tier"] == "B"),
+                "cell_tier_c_units": sum(int(c["units"]) for c in mine if c["tier"] == "C"),
+                "cell_tier_c_share": round(
                     sum(int(c["units"]) for c in mine if c["tier"] == "C") / covered, 6
                 )
                 if covered
@@ -200,7 +213,7 @@ def main() -> None:
     for r in rows:
         print(
             f"{r['company']} {r['market']} {r['cohort_year']}: "
-            f"tier-C share {float(r['tier_c_share']):.1%}, "  # type: ignore[arg-type]
+            f"proxied-distance tier-C {float(r['vkt_tier_c_share']):.1%}, "  # type: ignore[arg-type]
             f"directional_only={r['directional_only']}, T central "
             f"{r['lifetime_t_central_years']} y, excluded [{r['scenarios_excluded']}]"
         )
