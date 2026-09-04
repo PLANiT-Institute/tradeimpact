@@ -41,12 +41,13 @@ data/auto/         one directory per dataset, each with:
                          tiers.csv (the A/B/C data-quality hierarchy) and value_tiers.csv (the
                          per-value tier rules applied when the database is built)
   dashboard/             raw/ world geometry and ISO code list, method/ country_codes.csv
+                         (the geometry is loaded into the database, so the page needs no
+                         second file)
   database/              tradeimpact_auto.sqlite: raw, lookup, processed and output tables with
-                         per-value tier flags, sources, raw-file provenance, a tables manifest
-                         and a column dictionary; dashboard.html: reader for that database, no
-                         data of its own: lineage, results, results by year, map by country,
-                         pivot, browse and read-only SQL (serve data/auto, or open the page and
-                         pick the database file)
+                         per-value tier flags, sources, raw-file provenance, the map geometry,
+                         a tables manifest and a column dictionary; dashboard.html: reader for
+                         that database, no data of its own: lineage, results, results by year,
+                         map by country, pivot, browse and read-only SQL
 script/auto/       all Python, one directory per dataset plus model/
   <dataset>/             extraction scripts: raw/ -> processed/
   model/                 build_cohorts, build_reference (EU27), build_reference_us, build_ti,

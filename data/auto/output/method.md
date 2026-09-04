@@ -257,6 +257,16 @@ distance is the EU-average proxy), every US cell is C (the NHTSA lifetime schedu
 Korean cell is C (the fleet-intensity share and the biased mean age). The per-input columns say
 which input is responsible; the single `tier` says how far the cell is from fully sourced.
 
+## Reading the dashboard
+
+`data/auto/database/dashboard.html` is a plain HTML file with no data of its own. Open it by
+double-clicking and choose `tradeimpact_auto.sqlite` from the same folder: a page opened from
+disk cannot read a file beside it on its own, which is the browser's rule, so one click stands
+in for it. Everything then works offline of any server, the map included, because the world
+geometry is a row in the database (`map_geometry`) rather than a second file. Serving the
+folder (`.venv/bin/python script/auto/serve_dashboard.py`) skips that click and reloads the
+database on every refresh; the server falls back to the next free port when one is busy.
+
 ## Run order
 
 `script/auto/run_all.py` runs everything and exits non-zero at the first failure: extraction,

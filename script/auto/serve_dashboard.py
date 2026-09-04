@@ -16,6 +16,7 @@ Stop it with Ctrl-C. Nothing is written: the handler serves GET and HEAD only.
 from __future__ import annotations
 
 import argparse
+import errno
 import functools
 import mimetypes
 import threading
@@ -77,6 +78,32 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     return parser.parse_args(argv)
 
 
+def bind(handler: object, port: int) -> ThreadingHTTPServer:
+    """Bind the first free port at or after ``port``.
+
+    A busy port usually means this server is already running (or another one is), which is not
+    a reason to fail: the next free port serves the same directory just as well.
+
+    Args:
+        handler: Request-handler factory.
+        port: First port to try.
+
+    Returns:
+        The bound server.
+
+    Raises:
+        SystemExit: If no port in the next ten is free.
+    """
+    for candidate in range(port, port + 10):
+        try:
+            return ThreadingHTTPServer((HOST, candidate), handler)  # type: ignore[arg-type]
+        except OSError as exc:
+            if exc.errno not in (errno.EADDRINUSE, errno.EACCES):
+                raise
+            print(f"port {candidate} is in use, trying {candidate + 1}")
+    raise SystemExit(f"no free port between {port} and {port + 9}")
+
+
 def serve(port: int = PORT, open_browser: bool = False) -> None:
     """Serve ``data/auto`` on the loopback interface until interrupted.
 
@@ -92,7 +119,8 @@ def serve(port: int = PORT, open_browser: bool = False) -> None:
     if not (ROOT / PAGE).exists():
         raise SystemExit(f"{PAGE} not found: run script/auto/model/build_dashboard.py first")
     handler = functools.partial(NoStoreHandler, directory=str(ROOT))
-    with ThreadingHTTPServer((HOST, port), handler) as httpd:
+    with bind(handler, port) as httpd:
+        port = httpd.server_address[1]
         print(f"serving {ROOT.relative_to(REPO)} at http://{HOST}:{port}/{PAGE}")
         print("Ctrl-C to stop")
         if open_browser:
