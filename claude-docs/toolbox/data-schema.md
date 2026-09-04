@@ -176,6 +176,7 @@ its two files are named for the market they describe.
 | `ti_company.csv` | exists | company + market + scenario | `status` (reported/excluded), covered/withheld units, `ti_tco2e`, per-vehicle, `direction`, `decomposition_identity_holds`, `exclusion_reason` |
 | `ti_crossover.csv` | exists (`build_sensitivity.py`) | as `ti_by_model` | `crossover_year` (years after sale), `crossover_calendar_year`, `reason`; the `C-05` range treatment waits on `B-07` |
 | `ti_sensitivity.csv` | exists (`build_sensitivity.py`) | company + market + scenario + dimension + variant | `parameter`, `ti_tco2e` — lifetime ±3 y, real-world factor range (per test cycle), proxied-distance quartiles, powertrain mix (`all_hev`) |
+| `ti_coverage.csv` | exists (`build_coverage.py`) | company + destination + destination_level + cohort_year + basis | `units`, `priced_units`, `withheld_units`, `status`, `market`, `note` |
 | `ti_data_quality.csv` | exists (`build_data_quality.py`) | company + market | analysis level, benchmark method, `sales_basis`, `test_cycles`, covered/withheld units, `tier_c_share`, `directional_only`, central lifetime, `scenarios_reported`, `scenarios_excluded`, markets by tier, withheld reasons, `coverage_notes`, warnings |
 | `target_set.csv` | planned (ST01) | company + destination + cohort_year | segment, lifetime and its bracket, criteria met, exclusion reason |
 

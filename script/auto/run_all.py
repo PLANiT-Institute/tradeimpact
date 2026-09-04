@@ -55,6 +55,7 @@ MODEL = [
     "model/build_sensitivity.py",
     "model/aggregate_country.py",
     "model/build_data_quality.py",
+    "model/build_coverage.py",
     "model/build_database.py",
     "model/build_dashboard.py",
 ]

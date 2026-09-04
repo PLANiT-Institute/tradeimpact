@@ -1,0 +1,77 @@
+company,destination,destination_level,cohort_year,basis,units,priced_units,withheld_units,status,market,note
+hyundai,AT,country,2024,registrations,11364,10912,452,priced,EU27,no sourced utility factor
+hyundai,BE,country,2024,registrations,12149,10911,1238,priced,EU27,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+hyundai,BG,country,2024,registrations,2336,2176,160,priced,EU27,no sourced utility factor
+hyundai,BR,country,2025,plant_sales,198113,0,0,no_benchmark,,no destination benchmark built yet for this country
+hyundai,CN,country,2025,plant_sales,128399,0,0,no_benchmark,,no destination benchmark built yet for this country
+hyundai,CY,country,2024,registrations,1340,1277,63,priced,EU27,no sourced utility factor
+hyundai,CZ,country,2024,registrations,20260,19978,282,priced,EU27,no sourced utility factor
+hyundai,DE,country,2024,registrations,96193,91771,4422,priced,EU27,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor; the registration dataset reports no certified intensity for 
+hyundai,DK,country,2024,registrations,4815,4563,252,priced,EU27,no sourced utility factor
+hyundai,EE,country,2024,registrations,714,688,26,priced,EU27,no sourced utility factor
+hyundai,ES,country,2024,registrations,64844,62225,2619,priced,EU27,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+hyundai,FI,country,2024,registrations,3101,2735,366,priced,EU27,no sourced utility factor
+hyundai,FR,country,2024,registrations,49653,47196,2457,priced,EU27,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+hyundai,GR,country,2024,registrations,8879,8787,92,priced,EU27,no sourced utility factor
+hyundai,HR,country,2024,registrations,3381,3337,44,priced,EU27,no sourced utility factor
+hyundai,HU,country,2024,registrations,4753,4425,328,priced,EU27,no sourced utility factor
+hyundai,ID,country,2025,plant_sales,15151,0,0,no_benchmark,,no destination benchmark built yet for this country
+hyundai,IE,country,2024,registrations,11222,9916,1306,priced,EU27,no sourced utility factor
+hyundai,IN,country,2025,plant_sales,571878,0,0,no_benchmark,,no destination benchmark built yet for this country
+hyundai,IT,country,2024,registrations,49430,48786,644,priced,EU27,no sourced utility factor
+hyundai,KR,country,2025,plant_sales,16492,0,0,no_benchmark,,no destination benchmark built yet for this country
+hyundai,LT,country,2024,registrations,743,695,48,priced,EU27,no sourced utility factor
+hyundai,LU,country,2024,registrations,1357,0,1357,withheld,EU27,destination benchmark withheld; no sourced utility factor
+hyundai,LV,country,2024,registrations,668,647,21,priced,EU27,no sourced utility factor
+hyundai,MT,country,2024,registrations,750,738,12,priced,EU27,no sourced utility factor
+hyundai,NL,country,2024,registrations,20579,18468,2111,priced,EU27,no sourced utility factor
+hyundai,PL,country,2024,registrations,30949,30779,170,priced,EU27,no sourced utility factor
+hyundai,PT,country,2024,registrations,7190,6931,259,priced,EU27,no sourced utility factor
+hyundai,RO,country,2024,registrations,10262,9686,576,priced,EU27,no sourced utility factor; the registration dataset reports no certified intensity for 
+hyundai,SE,country,2024,registrations,2059,1574,485,priced,EU27,no sourced hydrogen supply emissions intensity for the desti; no sourced utility factor
+hyundai,SG,country,2025,plant_sales,234,0,0,no_benchmark,,no destination benchmark built yet for this country
+hyundai,SI,country,2024,registrations,2771,2657,114,priced,EU27,no sourced utility factor
+hyundai,SK,country,2024,registrations,8174,8099,75,priced,EU27,no sourced utility factor
+hyundai,TR,country,2025,plant_sales,41287,0,0,no_benchmark,,no destination benchmark built yet for this country
+hyundai,US,country,2025,plant_sales,406130,371746,34384,priced,US,no EPA technology row for Ioniq 9 BEV at or before model yea; out_of_scope
+hyundai,VN,country,2025,plant_sales,44590,0,0,no_benchmark,,no destination benchmark built yet for this country
+hyundai,export,unknown,2025,plant_sales,848960,0,0,destination_unknown,,plant-side sales without a stated destination
+kia,AT,country,2024,registrations,7030,6903,127,priced,EU27,no sourced utility factor
+kia,BE,country,2024,registrations,17605,14290,3315,priced,EU27,no sourced utility factor
+kia,BG,country,2024,registrations,2706,2652,54,priced,EU27,no sourced utility factor
+kia,CA,country,2026,retail_sales,48336,0,0,no_benchmark,,no destination benchmark built yet for this country
+kia,CN,country,2026,retail_sales,36000,0,0,no_benchmark,,no destination benchmark built yet for this country
+kia,CY,country,2024,registrations,2840,2761,79,priced,EU27,no sourced utility factor
+kia,CZ,country,2024,registrations,10711,10655,56,priced,EU27,no sourced utility factor
+kia,DE,country,2024,registrations,68581,64203,4378,priced,EU27,no sourced utility factor; the registration dataset reports no certified intensity for 
+kia,DK,country,2024,registrations,4614,4249,365,priced,EU27,no sourced utility factor
+kia,EE,country,2024,registrations,1682,1648,34,priced,EU27,no sourced utility factor
+kia,ES,country,2024,registrations,59901,57321,2580,priced,EU27,no sourced utility factor
+kia,FI,country,2024,registrations,5314,4246,1068,priced,EU27,no sourced utility factor
+kia,FR,country,2024,registrations,47140,42792,4348,priced,EU27,no sourced utility factor
+kia,GR,country,2024,registrations,4764,4581,183,priced,EU27,no sourced utility factor
+kia,HR,country,2024,registrations,3280,3274,6,priced,EU27,no sourced utility factor
+kia,HU,country,2024,registrations,6478,6258,220,priced,EU27,no sourced utility factor
+kia,IE,country,2024,registrations,8983,7531,1452,priced,EU27,no sourced utility factor
+kia,IN,country,2026,retail_sales,156523,0,0,no_benchmark,,no destination benchmark built yet for this country
+kia,IT,country,2024,registrations,47627,46588,1039,priced,EU27,no sourced utility factor
+kia,KR,country,2026,retail_sales,296479,0,0,no_benchmark,,no destination benchmark built yet for this country
+kia,LT,country,2024,registrations,2241,2146,95,priced,EU27,no sourced utility factor
+kia,LU,country,2024,registrations,1540,0,1540,withheld,EU27,destination benchmark withheld; no sourced utility factor
+kia,LV,country,2024,registrations,801,770,31,priced,EU27,no sourced utility factor
+kia,MT,country,2024,registrations,515,494,21,priced,EU27,no sourced utility factor
+kia,MX,country,2026,retail_sales,54852,0,0,no_benchmark,,no destination benchmark built yet for this country
+kia,NL,country,2024,registrations,34774,32012,2762,priced,EU27,no sourced utility factor
+kia,PL,country,2024,registrations,33133,32226,907,priced,EU27,no sourced utility factor
+kia,PT,country,2024,registrations,7499,6400,1099,priced,EU27,no sourced utility factor
+kia,RO,country,2024,registrations,4368,4084,284,priced,EU27,no sourced utility factor
+kia,SE,country,2024,registrations,19565,10104,9461,priced,EU27,no sourced utility factor
+kia,SI,country,2024,registrations,2289,2286,3,priced,EU27,no sourced utility factor
+kia,SK,country,2024,registrations,8696,8547,149,priced,EU27,no sourced utility factor
+kia,US,country,2026,retail_sales,430727,430727,0,priced,US,
+kia,africa,region,2026,retail_sales,26802,0,0,region_unpriced,,sales source reports a region; a country benchmark cannot be applied
+kia,asia_pacific,region,2026,retail_sales,84850,0,0,region_unpriced,,sales source reports a region; a country benchmark cannot be applied
+kia,eastern_europe,region,2026,retail_sales,38572,0,0,region_unpriced,,sales source reports a region; a country benchmark cannot be applied
+kia,europe,region,2026,retail_sales,290820,0,0,region_unpriced,,sales source reports a region; a country benchmark cannot be applied
+kia,latin_america,region,2026,retail_sales,83951,0,0,region_unpriced,,sales source reports a region; a country benchmark cannot be applied
+kia,middle_east,region,2026,retail_sales,71125,0,0,region_unpriced,,sales source reports a region; a country benchmark cannot be applied

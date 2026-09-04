@@ -24,6 +24,7 @@ different test cycles and different national benchmarks.
 | `ti_country.csv` | 5 | `aggregate_country.py` | company × market × destination × scenario: units, `ti_tco2e`, per-vehicle, direction |
 | `ti_powertrain.csv` | 5 | `aggregate_country.py` | company × market × powertrain × scenario |
 | `ti_company.csv` | 5 | `aggregate_country.py` | company × market × scenario: `status` (reported / excluded), covered/withheld units, total, per-vehicle, direction, decomposition identity check, exclusion reason |
+| `ti_coverage.csv` | 5c | `build_coverage.py` | company × destination (every destination in the sales files, worldwide) × cohort year × basis: units, priced units, withheld units, status (`priced`, `withheld`, `no_benchmark`, `region_unpriced`, `destination_unknown`), market — the coverage picture a reader filters countries from |
 | `ti_data_quality.csv` | 5b | `build_data_quality.py` | company × market: analysis level, benchmark method, sales basis, test cycles, covered/withheld units, tier-C unit share and the `directional_only` flag (guideline §5.3, threshold 50 %), central lifetime, scenarios reported and excluded, markets by distance tier, withheld reasons, coverage notes, warnings |
 
 `cohorts.csv` carries a `variant` column. `central` is the published cohort; every other value
