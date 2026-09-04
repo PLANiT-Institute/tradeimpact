@@ -12,8 +12,10 @@ different test cycles and different national benchmarks.
 | `cohorts_withheld.csv` | 3a | `build_cohorts.py` | volumes that cannot be joined to a product parameter and why (unpriceable powertrain, no certified value, no US model-map row, out-of-scope brand, no EPA row) |
 | `destination_parameters_eu27.csv` | 3 | `build_reference.py` | importer market: distance (km/yr, tier, band), car stock, car CO2, fleet intensity base (gCO2/km, tier), grid intensity (gCO2/kWh), mean car age, operating lifetime (central/low/high), excluded scenarios, warnings, source ids |
 | `destination_parameters_us.csv` | 3 | `build_reference_us.py` | the same columns for the US market |
+| `destination_parameters_kr.csv` | 3 | `build_reference_kr.py` | the same columns for the Korean market |
 | `reference_trajectories_eu27.csv` | 3 | `build_reference.py` | market × country × scenario × t: `e_ref_kgco2_per_vehicle` (benchmark per vehicle-year), `grid_kgco2_per_kwh` |
 | `reference_trajectories_us.csv` | 3 | `build_reference_us.py` | the same columns for the US market (S1 and S3 only — see *United States* below) |
+| `reference_trajectories_kr.csv` | 3 | `build_reference_kr.py` | the same columns for the Korean market (S1, S2, S3) |
 | `ti_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario: units, lifetime, distance + tier, test cycle, real-world factor, year-0 product and benchmark emissions, `ti_per_vehicle_kgco2e`, `ti_tco2e` |
 | `ti_annual_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario × year: benchmark and product emissions per vehicle, the annual gap, and the cell's TI flow that year (tCO2e) — the year-by-year view at any aggregation level |
 | `ti_annual.csv` | 4 | `build_ti.py` | market × company × cohort_year × scenario × t: annual TI flow (tCO2e) and surviving vehicles |
@@ -176,6 +178,40 @@ company in `ti_exclusions.csv` with the units affected, as a `status = excluded`
 asserts all four.
 
 **Australia** has processed inputs on disk but is deliberately not built yet.
+
+## Korea
+
+Korea is the home market of both companies in scope and the first destination priced on free,
+keyless, machine-readable Korean official statistics (all data.go.kr and portal files carry
+licence 제한 없음).
+
+**Cohorts.** Hyundai: the IR "Unit Sales by Model" Korea domestic block for 2024 and 2025
+(`sales_hyundai_kr.csv`, `domestic_sales`), with the powertrain read from the trim code
+(CN7 HEV, SX2 EV, ...), so every Hyundai unit is priced on its stated powertrain; Genesis
+nameplates carry `company = genesis` and are out of scope. Kia: the IR Jan–Jun 2026 release
+(`sales_kia_ir_2026.csv`, `retail_sales`, a half year); its labels do not split ICE from HEV, so
+Carnival, K5, K8, Seltos, Sorento and Sportage are priced as ICE centrally with an all-HEV bound
+(`powertrain_rule = kr_unsplit_central_ice`, sensitivity `powertrain_mix`). Bongo, Bus, Tasman
+and military vehicles are outside the 승용 registration class and are withheld as out of scope
+(19,790 units); Nexo is withheld like every FCEV.
+
+**Technology.** KEA label fuel economy per trim (5-cycle corrected, `test_cycle = KR_5CYCLE`,
+real-world factor 1.0), converted to gCO2/km with EPA fuel carbon factors and to Wh/km for BEVs;
+trim means per model × powertrain (`vehicle_technology_kr_kea.csv`).
+
+**Benchmark.** Distance 11,963 km/yr (tier A: KOTSA inspection odometers over the MOLIT 승용
+stock, 2024). Fleet intensity 203 gCO2/km (2023, tier C: GIR road CO2 × the KOTSA passenger-car
+share, see country_emissions/method). Grid 415.5 gCO2/kWh (Ember 2024). Mean age 7.3 years from
+the MOLIT model-year distribution (tier C, biased low) gives an operating life of 11 years
+[10, 15] under the EU27 rule (1.5 × mean age, clamped). S1: GIR road CO2 nearly flat
+(−0.2 %/yr) and grid −2.2 %/yr; S2: Basic Plan transport path 2023–2030 (−5.9 %/yr) and power
+2018–2030 (−5.0 %/yr); S3: 2050 scenarios (transport A안 −10.5 %/yr, power B안 −7.7 %/yr).
+
+**Reading the result.** Because the observed Korean fleet trend is flat, S1 is a contribution
+for both companies (their label-basis product intensities sit below the 203 gCO2/km fleet
+average), while S2 and S3 turn every cohort into a liability: the committed and 1.5 °C paths
+decline faster than the products' fixed intensities. The lifetime sensitivity moves the Korean
+S1 by about ±30 % because the operating life is short and uncertain.
 
 ## Run order
 

@@ -62,11 +62,19 @@ SALES_US = (
 SHARES_US = DATA / "vehicle_technology" / "processed" / "epa_trends_powertrain_share_my2024.csv"
 TECH_EU27 = DATA / "vehicle_technology" / "processed" / "vehicle_technology_eea_2024.csv"
 TECH_US = DATA / "vehicle_technology" / "processed" / "vehicle_technology_us_epa.csv"
+#: Korea: market-side domestic sales (Hyundai IR with trim codes; Kia IR without) and KEA labels.
+SALES_KR = (
+    DATA / "sales" / "processed" / "sales_hyundai_kr.csv",
+    DATA / "sales" / "processed" / "sales_kia_ir_2026.csv",
+)
+KR_LABELS = DATA / "sales" / "method" / "kr_labels.csv"
+TECH_KR = DATA / "vehicle_technology" / "processed" / "vehicle_technology_kr_kea.csv"
 OUT_DIR = DATA / "output"
 OUT_COHORTS = OUT_DIR / "cohorts.csv"
 OUT_WITHHELD = OUT_DIR / "cohorts_withheld.csv"
 
-EU27, US = "EU27", "US"
+EU27, US, KR = "EU27", "US", "KR"
+UNSPLIT_RULE = "kr_unsplit_central_ice"
 CENTRAL, ALL_HEV = "central", "all_hev"
 SHARE_RULE = "epa_share_my2024"
 OUT_OF_SCOPE = "out_of_scope"
@@ -78,6 +86,10 @@ WITHHELD_POWERTRAIN = {
     "FCEV": "no sourced hydrogen supply emissions intensity for the destination",
 }
 NO_CERTIFIED_EU27 = "the registration dataset reports no certified intensity for this cell"
+NO_KR_LABEL = (
+    "no row in sales/method/kr_labels.csv: the IR label is not resolved to a KEA model, so no "
+    "certified intensity can be attached"
+)
 NO_MAP_ROW = (
     "no row in sales/method/us_model_map.csv: the IR model name is not resolved to an EPA "
     "base model, so no certified intensity can be attached"
@@ -147,6 +159,8 @@ def coverage_note(basis: str, period: str) -> str:
         )
     if basis == "retail_sales":
         notes.append("retail sales as published by the exporter's investor-relations release")
+    if basis == "domestic_sales":
+        notes.append("Korea domestic sales as published in the exporter's IR release")
     if basis == "brand_total_sales":
         notes.append(
             "brand total sales including fleet as published by the company's US release (the "
@@ -482,6 +496,118 @@ def us_cohort_row(
     }
 
 
+def kr_technology(tech: list[dict[str, str]]) -> dict[tuple[str, str, str], dict[str, str]]:
+    """{(company, model, powertrain): KEA row} for the Korean market."""
+    return {(r["company"], r["model"], r["powertrain"]): r for r in tech}
+
+
+def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    """Join the Korea domestic sales to the KEA label values through the Korea label map.
+
+    Hyundai's IR file states the powertrain in the trim code (``stated`` rows take it from the
+    sales row); Kia's IR file does not, so nameplates sold as ICE and HEV (``unsplit``) are
+    priced as ICE centrally with an ``all_hev`` variant as the upper bound, and single-powertrain
+    labels are ``explicit``. Rows outside the passenger-car class are ``out_of_scope``.
+
+    Args:
+        companies: Exporters in scope.
+
+    Returns:
+        cohorts: Central rows plus the ``all_hev`` variant of every unsplit cohort.
+        withheld: Volumes with no label-map row, no KEA row or an unpriceable powertrain.
+    """
+    labels = {(r["company"], r["label_base"]): r for r in read_csv(KR_LABELS)}
+    tech = kr_technology(read_csv(TECH_KR))
+    central: list[dict[str, object]] = []
+    variants: list[dict[str, object]] = []
+    withheld: list[dict[str, object]] = []
+
+    def hold(s: dict[str, str], pt: str, reason: str, note: str) -> None:
+        withheld.append(
+            {
+                "market": KR,
+                "company": s["company"],
+                "destination": KR,
+                "cohort_year": int(s["cohort_year"]),
+                "model": s["model"],
+                "powertrain": pt,
+                "units": int(s["units"]),
+                "reason": reason,
+                "coverage_note": note,
+            }
+        )
+
+    def row(
+        s: dict[str, str], model: str, pt: str, rule: str, note: str, variant: str = CENTRAL
+    ) -> dict[str, object] | None:
+        t = tech.get((s["company"], model, pt))
+        if t is None:
+            return None
+        certified = t["energy_wh_km"] if pt == "BEV" else t["tailpipe_gco2_km"]
+        if not certified:
+            return None
+        return {
+            "market": KR,
+            "company": s["company"],
+            "destination": KR,
+            "cohort_year": int(s["cohort_year"]),
+            "period": s["period"],
+            "model": s["model"],
+            "powertrain": pt,
+            "units": int(s["units"]),
+            "basis": s["basis"],
+            "tailpipe_gco2_km": round_or_blank(t["tailpipe_gco2_km"] or None),
+            "energy_wh_km": round_or_blank(t["energy_wh_km"] or None),
+            "test_cycle": t["test_cycle"],
+            "technology_source": (
+                f"{t['source_id']} ({t['source_file']}): {model} {pt}, {t['n_trims']} label "
+                "trims, trim mean; tailpipe derived from label km/L with fuel carbon factors"
+            ),
+            "sales_source_file": s["source_file"],
+            "powertrain_rule": rule,
+            "coverage_note": note,
+            "variant": variant,
+        }
+
+    for path in SALES_KR:
+        for s in read_csv(path):
+            if s["company"] not in companies or s["destination"] != KR:
+                continue
+            note = coverage_note(s["basis"], s["period"])
+            base = s["model"].split(" (")[0].strip()
+            m = labels.get((s["company"], base))
+            if m is None:
+                hold(s, s.get("powertrain", ""), NO_KR_LABEL, note)
+                continue
+            rule = m["powertrain_rule"]
+            if rule == OUT_OF_SCOPE:
+                hold(s, "", f"{rule}: {m['note']}", note)
+                continue
+            pt = s["powertrain"] if rule == "stated" else (m["powertrain"] or "ICE")
+            if rule == "stated" and not pt:
+                hold(s, "", "stated rule but the sales row carries no powertrain", note)
+                continue
+            if pt in WITHHELD_POWERTRAIN:
+                hold(s, pt, WITHHELD_POWERTRAIN[pt], note)
+                continue
+            label_rule = UNSPLIT_RULE if rule == "unsplit" else rule
+            r = row(s, m["model"], pt, label_rule, note)
+            if r is None:
+                hold(
+                    s,
+                    pt,
+                    f"no KEA label row for {m['model']} {pt} in {TECH_KR.name}",
+                    note,
+                )
+                continue
+            central.append(r)
+            if rule == "unsplit":
+                bound = row(s, m["model"], HEV, f"{UNSPLIT_RULE}_all_hev", note, ALL_HEV)
+                if bound is not None:
+                    variants.append(bound)
+    return aggregate_units(central) + aggregate_units(variants), withheld
+
+
 def round_or_blank(value: object) -> object:
     """Round a pooled certified value to 2 dp, or return an empty cell when absent."""
     return "" if value is None else round(float(str(value)), 2)
@@ -492,8 +618,9 @@ def main() -> None:
     companies = in_scope_companies()
     eu_cohorts, eu_withheld = build_eu27(companies)
     us_cohorts, us_withheld = build_us(companies)
-    cohorts = eu_cohorts + us_cohorts
-    withheld = eu_withheld + us_withheld
+    kr_cohorts, kr_withheld = build_kr(companies)
+    cohorts = eu_cohorts + us_cohorts + kr_cohorts
+    withheld = eu_withheld + us_withheld + kr_withheld
 
     order = ("market", "variant", "company", "destination", "model", "powertrain")
     cohorts.sort(key=lambda r: tuple(str(r[k]) for k in order))

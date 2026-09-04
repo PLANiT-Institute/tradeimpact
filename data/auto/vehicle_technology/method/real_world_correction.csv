@@ -5,3 +5,6 @@ WLTP,BEV,1.0,1.0,1.0,no official real-world gap is published for battery-electri
 EPA,ICE,1.0,1.0,1.0,EPA label (5-cycle adjusted) values already approximate real-world use; no further correction; no published band,epa_fuel_economy_label
 EPA,HEV,1.0,1.0,1.0,EPA label (5-cycle adjusted) values already approximate real-world use; no further correction; no published band,epa_fuel_economy_label
 EPA,BEV,1.0,1.0,1.0,EPA label (5-cycle adjusted) values already approximate real-world use; no further correction; no published band,epa_fuel_economy_label
+KR_5CYCLE,ICE,1.0,1.0,1.0,Korean label values are 5-cycle corrected toward real-world driving (Korea adopted the US 5-cycle method in 2012); like the EPA label they are passed through at both ends,kea_fuel_economy_labels
+KR_5CYCLE,HEV,1.0,1.0,1.0,as KR_5CYCLE ICE,kea_fuel_economy_labels
+KR_5CYCLE,BEV,1.0,1.0,1.0,as KR_5CYCLE ICE; certified electric efficiency passed through,kea_fuel_economy_labels

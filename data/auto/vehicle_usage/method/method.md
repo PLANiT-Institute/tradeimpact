@@ -77,3 +77,26 @@ by hand when a cube must be refreshed (raw files are pinned once obtained).
 - Just under half of the covered EU27 units sit on a proxied (tier C) distance; above the
   50 % threshold a result is published as a **direction, not a precise magnitude**.
 - Missing usage input for a market → that market's result is unavailable, never defaulted.
+
+## Korea (added 2026-09-04)
+
+| processed file | script | content |
+|---|---|---|
+| `vehicle_usage_kr.csv` | `script/auto/vehicle_usage/extract_molit_registrations.py` | `car_stock` (MOLIT 승용 계 at year end, 2007–2025, from the latest December workbook); `car_mean_age_years` and `car_stock_age_<band>` per December snapshot (2024, 2025) from the model-year distribution |
+| `vehicle_usage_kr_traffic.csv` | `script/auto/vehicle_usage/extract_kotsa_tmacs.py` | `car_traffic` (승용차 million vehicle-km, 2016–2024) and `car_daily_km` from KOTSA TMACS inspection odometers |
+
+Sources: MOLIT 자동차등록자료 통계 (`molit_vehicle_registration`,
+https://stat.molit.go.kr/portal/cate/statMetaView.do?hRsId=58, December workbooks downloaded
+through the portal's own file endpoint by `fetch_molit_registrations.py`); KOTSA 자동차주행거리통계
+TMACS (`kotsa_tmacs_vkm`, https://tmacs.kotsa.or.kr/web/TG/TG200/TG2200/Tg1700_02.jsp?mid=S3080,
+the page's JSON data call, fetched per year by `fetch_kotsa_tmacs.py`).
+
+Rules and traps. 승용 is the 자동차관리법 passenger-car class (up to 10 seats); Carnival and
+Staria 9- and 11-seaters (승합) and Porter/Bongo trucks (화물) are outside it, and the matching
+sales rows are withheld as out of scope. Distance is tier A: odometer readings grossed up to the
+same 승용 population as the stock (2024: 260,456 million vkm / 21.77 million cars = 11,963 km).
+The TMACS total row is labelled 평균 before 2021 and 계 from 2021, the annual ALL column is in
+thousand km (not stated on the page), 2015 returns no rows, and per-vehicle distance breaks by
+about 11 % in 2021. The MOLIT age sheet is a model-year distribution whose oldest band is
+open-ended (2005 = 2005 and earlier), so the mean age (7.3 years in 2024) is biased low and the
+derived lifetime is tier C.

@@ -1,0 +1,50 @@
+company,kea_make,kea_base,model_en,note
+hyundai,현대,아반떼,Avante,IR label "Avante (CN7 ...)"
+hyundai,현대,쏘나타,Sonata,
+hyundai,현대,그랜저,Grandeur,
+hyundai,현대,아이오닉5,IONIQ 5,
+hyundai,현대,아이오닉6,IONIQ 6,
+hyundai,현대,아이오닉9,IONIQ 9,
+hyundai,현대,아이오닉,IONIQ,first-generation Ioniq; no current sales
+hyundai,현대,캐스퍼,Casper,
+hyundai,현대,베뉴,Venue,
+hyundai,현대,코나,Kona,
+hyundai,현대,투싼,Tucson,
+hyundai,현대,넥쏘,NEXO,hydrogen fuel cell; km/kg in the 복합_연비 column
+hyundai,현대,싼타페,Santa-Fe,IR label "Santa-Fe (MX5 ...)"
+hyundai,현대,팰리세이드,Palisade,
+hyundai,현대,벨로스터,Veloster,
+hyundai,현대,엑센트,Accent,
+hyundai,현대,i30,i30,
+hyundai,현대,아슬란,Aslan,discontinued
+hyundai,현대,스타리아,Staria,승합 in the registration classes; outside the passenger-car benchmark
+hyundai,현대,그랜드스타렉스,Grand Starex,승합; outside the passenger-car benchmark
+genesis,현대,G70,G70,Genesis brand (company genesis)
+genesis,현대,G80,G80,
+genesis,현대,G90,G90,
+genesis,현대,GV60,GV60,
+genesis,현대,GV70,GV70,
+genesis,현대,GV80,GV80,
+kia,기아,카니발,Carnival,
+kia,기아,EV3,EV3,
+kia,기아,EV4,EV4,
+kia,기아,EV5,EV5,
+kia,기아,EV6,EV6,
+kia,기아,EV9,EV9,
+kia,기아,K3,K3,
+kia,기아,K5,K5,
+kia,기아,K7,K7,
+kia,기아,K8,K8,
+kia,기아,K9,K9,
+kia,기아,PV5,PV5,
+kia,기아,니로,Niro,HEV trims; the EV is the IR label "Niro EV"
+kia,기아,레이,Ray,the EV is the IR label "Ray EV"
+kia,기아,모닝,Morning / Picanto,IR label as published
+kia,기아,모하비,Mohave,
+kia,기아,셀토스,Seltos,
+kia,기아,스토닉,Stonic,
+kia,기아,스팅어,Stinger,
+kia,기아,스포티지,Sportage,
+kia,기아,쏘렌토,Sorento,
+kia,기아,쏘울,Soul,
+kia,기아,스타리아,Staria,Kia-badged row in the KEA file; ignored
