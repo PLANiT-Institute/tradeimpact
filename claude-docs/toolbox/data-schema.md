@@ -20,13 +20,13 @@ Rules: [`sales/method/method.md`](../../data/auto/sales/method/method.md).
 
 | File | Status | Rows |
 |---|---|---|
-| `sales/processed/sales_eea_eu27_2024.csv` | exists | 2,126 — Toyota, Honda, Hyundai and Kia EU27 first registrations, 2024 |
+| `sales/processed/sales_eea_eu27_2024.csv` | exists | 1,226 — Hyundai and Kia EU27 first registrations, 2024 (Toyota and Honda snapshots pinned, out of scope) |
 | `sales/processed/sales_kia_ir_2026.csv` | exists | 287 — Kia IR retail sales, 2026 year to date |
 | `sales/processed/sales_hyundai_plant_2025.csv` | exists | 113 — Hyundai IR plant-side sales, 2025 |
 
 | Column | Type | Unit | Allowed values |
 |---|---|---|---|
-| `company` | text | — | `hyundai` · `kia` · `toyota` · `honda` |
+| `company` | text | — | exporter brand in lower case as listed in `sales/method/companies.csv` (`hyundai`, `kia` in scope; `toyota`, `honda` deferred) |
 | `destination` | text | — | ISO 3166-1 alpha-2 when `destination_level = country`; the source's own region label otherwise; empty when unknown |
 | `destination_level` | text | — | `country` · `region` · `unknown` |
 | `origin` | text | — | ISO 3166-1 alpha-2 producing country, or a non-country plant label as the source states it (`ckd`, `special_vehicle`); empty when the source does not say |
@@ -43,9 +43,7 @@ regions (Europe, Eastern Europe, Latin America, Middle East, Africa, Asia Pacifi
 reports plant-side sales with a domestic/export split rather than destinations. Both facts are
 carried in the data instead of resolved by assumption.
 
-**To reconcile:** `method.md` lists the third basis value as `wholesale`; the data uses
-`plant_sales`. The method file is the one to change. Tracked in
-[`../tracker.md`](../tracker.md) §6.
+Resolved 2026-09-04: `method.md` now lists `plant_sales` and the coverage caveats of both IR workbooks.
 
 ---
 
@@ -58,7 +56,7 @@ format.
 | Column | Type | Unit | Allowed values |
 |---|---|---|---|
 | `country` | text | — | ISO 3166-1 alpha-2 |
-| `series` | text | — | `car_co2` · `grid_intensity` · `power_co2` · `transport_ghg` |
+| `series` | text | — | `car_co2` · `grid_intensity` · `power_co2` · `transport_ghg`; US adds `ldt_co2`, `ldv_co2`, `car_ghg_co2e`, `ldt_ghg_co2e`, `ldv_ghg_co2e` (see §7) |
 | `year` | int | year | Reference year of the observation |
 | `value` | real | per `unit` | > 0 |
 | `unit` | text | — | `ktCO2` for the emission series; `gCO2e/kWh` for `grid_intensity` |
@@ -96,7 +94,7 @@ separately (`A-09`, `B-04`) — not a substituted rate.
 ## 4. `vehicle_usage` — how vehicles are used
 
 Rules: [`vehicle_usage/method/method.md`](../../data/auto/vehicle_usage/method/method.md).
-File: `vehicle_usage/processed/vehicle_usage_eu27.csv` — **exists**, 2,092 rows, long format,
+File: `vehicle_usage/processed/vehicle_usage_eu27.csv` — **exists**, 2,081 rows, long format,
 same column set as `country_emissions`.
 
 | Column | Type | Unit | Allowed values |
@@ -113,10 +111,7 @@ Distance per car, the tier and the lifetime bracket are **derived** from these s
 land in `destination_parameters_eu27.csv` (§6), where the derivation string and warning travel with
 the value.
 
-**To reconcile:** `method.md` specifies a wide table (`vkt`, `vkt_tier`, `operating_life`,
-`car_stock`, `stock_year`); the data is long-format observations and the derived parameters sit in
-the output. The method file should describe what is built. Tracked in
-[`../tracker.md`](../tracker.md) §6.
+Resolved 2026-09-04: `method.md` describes the long format and the derivation in the model step.
 
 ---
 
@@ -126,8 +121,8 @@ Rules: [`vehicle_technology/method/method.md`](../../data/auto/vehicle_technolog
 
 | File | Status | Rows |
 |---|---|---|
-| `vehicle_technology/processed/vehicle_technology_eea_2024.csv` | exists | 2,126 — certified values per company × destination × model × powertrain, four brands, 2024 |
-| `vehicle_technology/method/real_world_correction.csv` | exists | 3 — the real-world correction factor per powertrain, with derivation and `source_id` |
+| `vehicle_technology/processed/vehicle_technology_eea_2024.csv` | exists | 1,226 — certified values per company × destination × model × powertrain, in-scope brands, 2024 |
+| `vehicle_technology/method/real_world_correction.csv` | exists | 6 — real-world factor with low/high range per test cycle (WLTP, EPA) × powertrain, with derivation and `source_id` |
 
 | Column | Type | Unit | Allowed values |
 |---|---|---|---|
