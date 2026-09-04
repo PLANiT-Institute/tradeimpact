@@ -60,12 +60,13 @@ MODEL_STEPS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("5 aggregates and data quality", ("ti_country", "ti_powertrain", "ti_company", "ti_data")),
 )
 
-#: The pivot the "Results" navigation entry lands on.
+#: The pivot the "Results" navigation entry lands on: results by vehicle model and powertrain
+#: (the company roll-up is one click away in the same pivot by removing the row fields).
 DEFAULT_PIVOT = {
     "agg": "sum",
     "cols": "scenario",
-    "rows": ["company"],
-    "table": "ti_company_eu27",
+    "rows": ["company", "powertrain", "model"],
+    "table": "ti_by_model_eu27",
     "vals": ["ti_tco2e"],
 }
 
@@ -490,7 +491,7 @@ const state = {
   table: M.default.table,
   pivot: defaultPivot(M.default.table),
   browse: {page: 0, sort: null, dir: 'asc', q: ''},
-  sql: {text: 'SELECT company, scenario, ti_tco2e\n  FROM ti_company_eu27\n ORDER BY 1, 2'},
+  sql: {text: 'SELECT company, powertrain, model, scenario, SUM(units) AS units, SUM(ti_tco2e) AS ti_tco2e\n  FROM ti_by_model_eu27\n GROUP BY 1, 2, 3, 4\n ORDER BY 1, 2, 3, 4'},
   tsv: ''
 };
 
