@@ -33,7 +33,7 @@ different sales bases, different test cycles and different national benchmarks.
 | `ti_global_coverage.csv` | 5e | `build_global_coverage.py` | company × cohort year: the company's own worldwide sales and what covers it, units assessed and their share of worldwide, the markets and country count assessed, units held and their share, and the brands inside the denominator that the cohorts hold apart |
 | `ti_source_reconciliation.csv` | 5d | `build_reconciliation.py` | company × destination × cohort year × source file: units, basis and which side of the market it counts, whether the cohort was built from it, the brands a group figure covers, and the like-for-like spread against the file used |
 | `ti_coverage.csv` | 5c | `build_coverage.py` | company × destination (every destination in the market-side sales files, worldwide) × cohort year × basis: `destination_group` (EU27, US, the company's home country KR or JP, IN, others), `home_country`, units, assessed units, withheld units, status (`assessed`, `withheld`, `no_benchmark`, `plant_side_only`, `region_unassessed`, `destination_unknown`), market — the coverage picture a reader filters countries from |
-| `ti_data_quality.csv` | 5b | `build_data_quality.py` | company × market × cohort year, including `countries` (the destination codes covered), `countries_covered`, `countries_withheld` and `covered_share` (the sales coverage): analysis level, benchmark method, sales basis, test cycles, covered/withheld units, tier-C unit share and the `directional_only` flag (guideline §5.3, threshold 50 %), central lifetime, scenarios reported and excluded, markets by distance tier, withheld reasons, coverage notes, warnings |
+| `ti_data_quality.csv` | 5b | `build_data_quality.py` | company × market × cohort year, including `countries` (the destination codes covered), `countries_covered`, `countries_withheld` and `covered_share` (the sales coverage): analysis level, benchmark method, sales basis, test cycles, covered/withheld units, the two tier-C measures (`vkt_tier_c_share`, which drives the `directional_only` flag under guideline §5.3 at a 50 % threshold, and `cell_tier_c_share`, the worst-of-cell measure), central lifetime, scenarios reported and excluded, markets by distance tier, withheld reasons, coverage notes, warnings |
 
 `cohorts.csv` carries a `variant` column. `central` is the published cohort; every other value
 is a sensitivity variant of the same cell (currently `all_hev`, see *United States*). Only
@@ -403,7 +403,7 @@ Both were assessed from the EEA snapshots already on disk, so nothing new was ac
 registration dataset carries the volumes and the certified values on the same rows. Toyota
 covers 777,277 units (96.8 %) and Nissan 197,588 (99.8 %, the highest coverage of the four).
 
-**Both are `directional_only`.** Their tier-C unit share is 53.6 % and 54.6 %, above the
+**Both are `directional_only`.** Their proxied-distance share (`vkt_tier_c_share`) is 53.6 % and 54.6 %, above the
 guideline §5.3 threshold of 50 %, because their EU27 volumes sit disproportionately in member
 states whose distance is the EU-average proxy. Hyundai (48.5 %) and Kia (48.2 %) fall just under
 the same threshold. Toyota and Nissan figures are therefore directions, not magnitudes, until
@@ -614,6 +614,17 @@ intensity, grid, lifetime and scenario-rate tiers), the Layer 2 tier (worst of t
 tier by test cycle and the powertrain-attribution tier by rule) and `tier`, the worst of both;
 the year-by-year cells carry `tier`. (4) `ti_data_quality.csv` counts covered units by tier per
 company, market and cohort year. A test asserts that every cell and every input row is flagged.
+
+**Two tier-C measures, and why both are published.** `ti_data_quality.csv` carries them side by
+side and the column names say which is which, because they answer different questions and
+diverge sharply — outside the EU27 the first is 0 % while the second is 100 %.
+`vkt_tier_c_units` / `vkt_tier_c_share` count units whose destination's **distance** tier is C;
+that is the guideline's own suppression rule and the only input to `directional_only`, because a
+proxied distance scales the whole result and above the threshold only the direction is
+publishable. `cell_tier_a_units` / `cell_tier_b_units` / `cell_tier_c_units` /
+`cell_tier_c_share` count units by the **worst-of** cell tier, for any reason at all — an old
+survival schedule, a borrowed real-world factor, a proxied fleet share. That measure says how
+far a cell is from fully sourced; it does not decide whether its magnitude may be quoted.
 
 Today's picture: every EU27 cell is B or C (B from the mean-age lifetime rule, C where the
 distance is the EU-average proxy), every US cell is C (the NHTSA lifetime schedule) and every
