@@ -20,6 +20,9 @@ two that are not.
 | 2026-09-04 | First analytical pass is EU27 Toyota and Hyundai, cohort 2024, on data already held; Kia, Honda, the United States and Australia become later acquisition | The EEA snapshots support a complete country × model × powertrain run today; the other markets do not | PH1 objectives 3–5 proceed EU27-only, with the absent markets counted as gaps rather than assumed |
 | 2026-09-04 | Build one thing when it is needed — no model scripts, dashboard or database ahead of the step that consumes them | An artefact built before its input exists is a guess dressed as infrastructure | Process documents for ST08–ST15 are written at stage entry; the plan states what does not exist |
 
+| 2026-09-04 | Unit of analysis is a company's sales to every destination country, filtered by the reader; coverage reported by group EU27 / US / home country (HQ country, KR or JP) / IN / others | Lead's clarification: the project is not about exports as such | `ti_coverage.csv` with `destination_group`; plant-side files never a cohort where a market-side file exists |
+| 2026-09-04 | US cohorts from the companies' own market-side releases (Hyundai IR US sheet 2024–2025, Kia America 2024–2025, Kia IR 2026 H1); nameplates split by EPA Automotive Trends MY2024 production shares (A-US-PT); Genesis listed as an out-of-scope company | Free publisher files close the import and full-year gaps; the releases do not split powertrains | `mixed_central_ice` rule retired; all-HEV bound kept; cohort years never pooled |
+
 ## Transitions
 
 | Date | Stage or phase | Event | Trigger | Consequence |

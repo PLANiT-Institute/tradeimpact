@@ -5,8 +5,8 @@ The single live tracking document. Current state only — history is in
 
 **Last pass:** 2026-09-04 (design, conformance and state; state refreshed after ST10 and the
 database build the same day; refreshed after the Kia and Honda EU27 acquisition, the independent
-review, and the first US/AU inputs). **Next pass due:** when a Hyundai US sales-by-model file (imports
-included) or a full-year Kia US file lands, on a segment-ratio decision, or at any charter change.
+review, and the first US/AU inputs). **Next pass due:** when the Korea benchmark is built (scout dossier pending), on the India
+verdict, on a segment-ratio decision, or at any charter change.
 
 ## 1. Where we are
 
@@ -60,6 +60,19 @@ candidate under the guideline); (3) Canada and Mexico — Kia 48k and 55k; natio
 StatCan/INEGI registrations, Ember grid, NDCs; (4) China — Kia 36k, Hyundai 128k plant-domestic;
 inventory and registrations less accessible. Region-level rows (Kia's Europe, Asia Pacific, Middle
 East, Latin America, Africa, Eastern Europe) stay unpriced until a country split exists.
+
+**US cohorts rebuilt on market-side company releases (2026-09-04, free sources).** Hyundai's IR
+page publishes five workbook families per year through a list endpoint; the "US Retail Sales by
+Model" file (imports included, brand total despite its label) replaces the plant-side file as the US
+cohort, and the Korea "Unit Sales by Model" file (trim codes carry the powertrain) is the Korea
+sales input. Kia America's newsroom serves a sales-by-model xlsx per month. EPA Automotive Trends
+MY2024 production shares split the nameplates the releases fold together (assumption A-US-PT). The
+US now has five cohorts: Hyundai 2024 S1 +1.56 MtCO2e and 2025 +1.50; Kia 2024 +1.01, 2025 +0.00 and
+Jan–Jun 2026 −0.49; S3 between −8 and −15 per cohort; coverage 98–99 %. Every aggregate carries
+`cohort_year`. `ti_coverage.csv` groups destinations as EU27 / US / home country (KR, JP) / IN /
+others: Hyundai 2025 — US 902k priced, KR 456k no benchmark yet, IN 572k plant-side only, others
+1.28M plant-side; Kia 2026 H1 — US 431k priced, KR 296k and IN 157k no benchmark, others 735k of
+which 596k region-level. Scouts for the Korea and India benchmark inputs are running.
 
 ## 2. Phases
 
