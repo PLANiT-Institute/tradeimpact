@@ -233,3 +233,18 @@ def test_sensitivity_central_equals_the_published_total(company_rows: list[dict[
         assert abs(float(r["ti_tco2e"]) - published[key]) <= 0.1 + 1e-6 * abs(published[key]), r
         checked += 1
     assert checked > 0
+
+
+def test_annual_by_model_sums_to_company_annual_flow() -> None:
+    """The year-by-year cell table aggregates exactly to the company x market x scenario flow."""
+    by_cells: dict[tuple[str, str, str, str], float] = defaultdict(float)
+    for r in rows(OUT / "ti_annual_by_model.csv"):
+        key = (r["market"], r["company"], r["scenario"], r["calendar_year"])
+        by_cells[key] += float(r["ti_tco2e"])
+    flow = {
+        (r["market"], r["company"], r["scenario"], r["calendar_year"]): float(r["ti_tco2e"])
+        for r in rows(OUT / "ti_annual.csv")
+    }
+    assert by_cells.keys() == flow.keys()
+    for key, total in flow.items():
+        assert abs(by_cells[key] - total) <= 1e-6 * max(1.0, abs(total)), key

@@ -167,6 +167,7 @@ its two files are named for the market they describe.
 | `reference_trajectories_eu27.csv` | exists, 1,890 rows | market + country + scenario + t | `calendar_year`, `r_fleet`, `r_power`, `fleet_intensity_gco2_km`, `e_ref_kgco2_per_vehicle`, `grid_kgco2_per_kwh` |
 | `reference_trajectories_us.csv` | exists, 32 rows | as above | S1 and S3 only; no S2 trajectory exists for the US |
 | `ti_by_model.csv` | exists, 2,971 rows | market + company + destination + model + powertrain + scenario + cohort_year | `units`, `lifetime_years`, `vkt_km`, `vkt_tier`, `test_cycle`, `real_world_factor`, `e_prod_year0_kgco2e`, `e_ref_year0_kgco2e`, `ti_per_vehicle_kgco2e`, `ti_tco2e` |
+| `ti_annual_by_model.csv` | exists (`build_ti.py`) | market + company + destination + cohort_year + model + powertrain + scenario + t | `calendar_year`, `units`, `e_ref_kgco2e_per_vehicle`, `e_prod_kgco2e_per_vehicle`, `gap_kgco2e_per_vehicle`, `ti_tco2e` |
 | `ti_annual.csv` | exists, 182 rows | market + company + scenario + t | `calendar_year`, `surviving_vehicles`, `ti_tco2e` — the annual TI flow of the cohort |
 | `ti_withheld.csv` | exists, 250 rows | market + company + destination + model + powertrain | `units`, `reason`, `coverage_note` — every cell that produced no result, with its unit count (`N-02`) |
 | `ti_exclusions.csv` | exists, 2 rows | market + company + scenario | `cohort_year`, `units_affected`, `reason` — a scenario the market publishes no benchmark for, never a silent gap (`N-05`) |
