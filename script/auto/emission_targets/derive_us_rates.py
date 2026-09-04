@@ -1,7 +1,7 @@
 """Derive S1/S2/S3 annual decline rates for the United States (whitepaper §3.1, guideline §2.3).
 
 Inputs
-    country_emissions/processed/country_emissions_us.csv         car_ghg_co2e annual series
+    country_emissions/processed/country_emissions_us.csv         ldv_ghg_co2e annual series
     country_emissions/processed/country_emissions_owid_grid.csv  US grid intensity
     emission_targets/raw/ndc_anchors.csv                         NDC status (FLAG market)
     emission_targets/raw/iea_weo_2024_world_co2.csv              IEA WEO world scenario anchors
@@ -9,7 +9,7 @@ Output
     emission_targets/processed/emission_targets_us.csv
 
 Scenarios
-    S1 current trajectory   log-linear trend of observed passenger-car GHG (fleet) and grid
+    S1 current trajectory   log-linear trend of observed light-duty GHG (fleet) and grid
                             intensity (power), same window and exclusions as the EU27 derivation.
     S2 committed policy     the US has no NDC in force -> FLAG market (guideline): no rate; the
                             row records the reason so S2 is excluded from the headline, not zeroed.
@@ -108,13 +108,13 @@ def main() -> None:
         weo_source = r["source_id"]
 
     out: list[dict[str, object]] = []
-    fleet = read_series(EMISSIONS_US, COUNTRY, "car_ghg_co2e")
+    fleet = read_series(EMISSIONS_US, COUNTRY, "ldv_ghg_co2e")
     grid = read_series(GRID, COUNTRY, "grid_intensity")
     for rate, series, what, source_id in (
         (
             "r_fleet",
             fleet,
-            "observed passenger-car GHG (EPA inventory Table A-91)",
+            "observed light-duty vehicle GHG (EPA inventory Tables A-91 and A-93)",
             "epa_ghg_inventory_2025_annexes",
         ),
         ("r_power", grid, "observed grid carbon intensity", "owid_ember_grid_intensity"),

@@ -52,7 +52,11 @@ All share the schema above; one file per raw source, written by the script named
 | `sales_hyundai_plant_2025.csv` | `script/auto/sales/extract_hyundai_ir.py` | 113 | overseas plants only, 2025; destination known for Domestic (plant country) and Korea segments, `export` otherwise |
 
 Label lookups used by the scripts: `kia_labels.csv` (IR market and plant labels → codes),
-`hyundai_plant_codes.csv` (plant code → country).
+`hyundai_plant_codes.csv` (plant code → country), `companies.csv` (exporters in scope) and
+`us_model_map.csv` (IR model name → EPA base model and powertrain rule for the US cohort:
+`explicit` where the name fixes the powertrain, `mixed_central_ice` where the IR file does not
+split ICE from hybrid variants — central case ICE, all-HEV bound in the sensitivity — and
+`out_of_scope` for the Genesis brand).
 
 ## Processing method
 

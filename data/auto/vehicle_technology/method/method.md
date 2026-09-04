@@ -23,9 +23,11 @@ emissions trajectory `E_prod(t)`.
 | source_id | text | — | row in the sources table below |
 | source_file | text | — | raw file the row came from |
 
-Real-world correction factors and PHEV utility factors are separate small inputs (one row
-per powertrain, with their own `source_id`), added to this dataset when sourced; they are
-applied in the model step, never folded into the certified columns.
+Real-world correction factors are a separate small input keyed on test cycle × powertrain
+(`method/real_world_correction.csv`, each row with its own `source_id`): WLTP values get the
+EEA OBFCM factors and range; EPA label values are already 5-cycle adjusted, so their factor is
+1.0 at both ends. They are applied in the model step, never folded into the certified columns.
+PHEV utility factors are still unsourced, so PHEV stays withheld.
 
 ## Raw files and sources
 

@@ -1,18 +1,21 @@
-"""Extract US passenger-car emissions from the EPA GHG Inventory transcriptions.
+"""Extract US light-duty emissions from the EPA GHG Inventory transcriptions.
 
-Inputs (both hand-checked transcriptions of PDF text; the PDFs themselves are not stored —
-their URLs and SHA-256 are in data/auto/raw_files.csv)
+Inputs (hand-checked transcriptions of PDF text; the PDFs are not stored — URLs and SHA-256 in
+data/auto/raw_files.csv)
     raw/epa_ghg_inventory_2025_table_3_13.csv   main text Table 3-13: CO2 from fossil fuel
-        combustion, passenger cars, MMT CO2 eq.; 1990, 2005, 2019-2023 -> series ``car_co2``
-    raw/epa_ghg_inventory_2025_table_a_91.csv   Annex 3 Table A-91: total GHG from passenger
-        cars by fuel (CO2 plus CH4 and N2O), MMT CO2 eq.; 1990, 2000, 2010, 2013-2023
-        -> series ``car_ghg_co2e``
+        combustion by fuel and vehicle type (passenger cars, light-duty trucks), MMT CO2 eq.;
+        1990, 2005, 2019-2023
+    raw/epa_ghg_inventory_2025_table_a_91.csv   Annex Table A-91: passenger-car total GHG by fuel
+        (CO2 + CH4 + N2O), MMT CO2 eq.; 1990, 2000, 2010, 2013-2023
+    raw/epa_ghg_inventory_2025_table_a_93.csv   Annex Table A-93: light-duty-truck total GHG,
+        MMT CO2 eq.; 1990, 2000, 2012-2023
 Output  processed/country_emissions_us.csv (long format, ktCO2 / ktCO2e)
 
-``car_co2`` is the level series comparable with the EU inventory CRF 1.A.3.b.i CO2; it has
-too few trend-window years for the S1 rule. ``car_ghg_co2e`` carries the annual 2013-2023
-series and is within 0.5 % of the CO2 series where both exist, so it is the series for the S1
-trend — that choice is recorded in emission_targets when the US rate is derived.
+Series: ``car_co2``, ``ldt_co2``, ``ldv_co2`` (cars + light-duty trucks; CO2 level series) and
+``car_ghg_co2e``, ``ldt_ghg_co2e``, ``ldv_ghg_co2e`` (annual trend series). EPA's "passenger
+cars" is a narrower population than FHWA's short-wheelbase light-duty class, so the benchmark
+uses the light-duty totals (``ldv_*``), whose population matches FHWA's all-light-duty stock and
+distance.
 
 Run from the repository root:
     .venv/bin/python script/auto/country_emissions/extract_epa_inventory.py
@@ -26,54 +29,86 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
 DATASET = REPO / "data" / "auto" / "country_emissions"
-RAW = {
-    "car_co2": (DATASET / "raw" / "epa_ghg_inventory_2025_table_3_13.csv", "ktCO2"),
-    "car_ghg_co2e": (DATASET / "raw" / "epa_ghg_inventory_2025_table_a_91.csv", "ktCO2e"),
-}
 OUT = DATASET / "processed" / "country_emissions_us.csv"
-
 KT_PER_MMT = 1000.0
+TYPE_PREFIX = {"passenger_cars": "car", "light_duty_trucks": "ldt"}
 FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_file"]
 
 
+def load(name: str, value_col: str) -> dict[tuple[str, int], tuple[float, str]]:
+    """{(vehicle_type, year): (summed value MMT, source_id)} from one transcription."""
+    acc: dict[tuple[str, int], float] = defaultdict(float)
+    sources: dict[tuple[str, int], str] = {}
+    with (DATASET / "raw" / name).open(newline="") as f:
+        for r in csv.DictReader(f):
+            key = (r["vehicle_type"], int(r["year"]))
+            acc[key] += float(r[value_col])
+            sources[key] = r["source_id"]
+    return {k: (v, sources[k]) for k, v in acc.items()}
+
+
 def main() -> None:
-    """Sum the fuel rows per year for each table and write one long-format file."""
+    """Write per-type and light-duty-total series for CO2 (level) and GHG (trend)."""
     out: list[dict[str, object]] = []
-    for series, (path, unit) in RAW.items():
-        by_year: dict[int, float] = defaultdict(float)
-        source_ids: set[str] = set()
-        with path.open(newline="") as f:
-            for row in csv.DictReader(f):
-                if row["vehicle_type"] != "passenger_cars":
-                    continue
-                by_year[int(row["year"])] += float(row["value_mmt_co2e"])
-                source_ids.add(row["source_id"])
-        if len(source_ids) != 1:
-            raise SystemExit(f"{path.name}: expected one source_id, found {source_ids}")
-        out.extend(
-            {
-                "country": "US",
-                "series": series,
-                "year": year,
-                "value": round(value * KT_PER_MMT, 1),
-                "unit": unit,
-                "source_id": next(iter(source_ids)),
-                "source_file": path.name,
-            }
-            for year, value in sorted(by_year.items())
-        )
-    OUT.parent.mkdir(parents=True, exist_ok=True)
+    for suffix, unit, tables in (
+        ("co2", "ktCO2", ["epa_ghg_inventory_2025_table_3_13.csv"]),
+        (
+            "ghg_co2e",
+            "ktCO2e",
+            ["epa_ghg_inventory_2025_table_a_91.csv", "epa_ghg_inventory_2025_table_a_93.csv"],
+        ),
+    ):
+        data: dict[tuple[str, int], tuple[float, str]] = {}
+        files: dict[str, str] = {}
+        for t in tables:
+            part = load(t, "value_mmt_co2e")
+            data.update(part)
+            for vtype, _y in part:
+                files[vtype] = t
+        by_type: dict[str, dict[int, tuple[float, str]]] = defaultdict(dict)
+        for (vtype, year), (v, sid) in data.items():
+            by_type[vtype][year] = (v, sid)
+        for vtype, series in by_type.items():
+            for year, (v, sid) in sorted(series.items()):
+                out.append(
+                    {
+                        "country": "US",
+                        "series": f"{TYPE_PREFIX[vtype]}_{suffix}",
+                        "year": year,
+                        "value": round(v * KT_PER_MMT, 1),
+                        "unit": unit,
+                        "source_id": sid,
+                        "source_file": files[vtype],
+                    }
+                )
+        years = set(by_type["passenger_cars"]) & set(by_type["light_duty_trucks"])
+        for year in sorted(years):
+            v = by_type["passenger_cars"][year][0] + by_type["light_duty_trucks"][year][0]
+            sids = sorted(
+                {by_type["passenger_cars"][year][1], by_type["light_duty_trucks"][year][1]}
+            )
+            out.append(
+                {
+                    "country": "US",
+                    "series": f"ldv_{suffix}",
+                    "year": year,
+                    "value": round(v * KT_PER_MMT, 1),
+                    "unit": unit,
+                    "source_id": ";".join(sids),
+                    "source_file": ";".join(
+                        sorted({files["passenger_cars"], files["light_duty_trucks"]})
+                    ),
+                }
+            )
+    out.sort(key=lambda r: (str(r["series"]), int(str(r["year"]))))
     with OUT.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
         w.writerows(out)
-    for series in RAW:
-        rows = [r for r in out if r["series"] == series]
-        latest = rows[-1]
-        print(
-            f"{series}: {len(rows)} years to {latest['year']}, "
-            f"{float(str(latest['value'])) / 1000:,.1f} Mt"
-        )
+    for s in ("car_co2", "ldv_co2", "ldv_ghg_co2e"):
+        mine = [r for r in out if r["series"] == s]
+        mt = float(str(mine[-1]["value"])) / 1000
+        print(f"{s}: {len(mine)} years, latest {mine[-1]['year']} = {mt:,.1f} Mt")
     print(f"{OUT.relative_to(REPO)}: {len(out)} rows")
 
 
