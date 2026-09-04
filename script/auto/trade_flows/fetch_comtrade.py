@@ -86,8 +86,8 @@ def fetch(url: str, context: ssl.SSLContext) -> dict:
 
 
 def register(path: Path, url: str, accessed: str, note: str) -> None:
-    """Upsert the raw file's row in data/auto/raw_files.csv."""
-    registry = DATA / "raw_files.csv"
+    """Upsert the raw file's row in data/auto/registry/raw_files.csv."""
+    registry = DATA / "registry" / "raw_files.csv"
     rows = list(csv.DictReader(registry.open(newline="")))
     rows = [r for r in rows if not (r["dataset"] == "trade_flows" and r["file"] == path.name)]
     rows.append(

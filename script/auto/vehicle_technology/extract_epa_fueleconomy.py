@@ -2,7 +2,7 @@
 
 Input   data/auto/vehicle_technology/raw/epa_fueleconomy_vehicles.csv — the complete EPA/DOE
         fueleconomy.gov vehicle dataset (one row per model-year trim, 1984 onward), downloaded
-        verbatim from the source of truth (link and hash in data/auto/raw_files.csv).
+        verbatim from the source of truth (link and hash in data/auto/registry/raw_files.csv).
 Output  data/auto/vehicle_technology/processed/vehicle_technology_us_epa.csv — one row per
         company x model-year x model x powertrain for the companies in scope
         (sales/method/companies.csv): unweighted mean over trims of certified tailpipe CO2

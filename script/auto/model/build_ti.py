@@ -41,6 +41,7 @@ from collections import defaultdict
 
 from model_io import (
     COHORTS_WITHHELD,
+    DATA,
     OUT_DIR,
     REPO,
     certified,
@@ -87,6 +88,15 @@ CELL_FIELDS = [
     "e_ref_year0_kgco2e",
     "ti_per_vehicle_kgco2e",
     "ti_tco2e",
+    "fleet_intensity_tier",
+    "grid_tier",
+    "lifetime_tier",
+    "rate_tier",
+    "layer1_tier",
+    "technology_tier",
+    "powertrain_tier",
+    "layer2_tier",
+    "tier",
 ]
 ANNUAL_FIELDS = [
     "market",
@@ -113,6 +123,7 @@ ANNUAL_CELL_FIELDS = [
     "e_prod_kgco2e_per_vehicle",
     "gap_kgco2e_per_vehicle",
     "ti_tco2e",
+    "tier",
 ]
 WITHHELD_FIELDS = [
     "market",
@@ -135,8 +146,47 @@ EXCLUSION_FIELDS = [
 ]
 
 
+TIER_ORDER = {"A": 0, "B": 1, "C": 2}
+#: Whitepaper §5.1 tier of a scenario rate by how it was derived (emission_targets target_level).
+RATE_TIER = {
+    "observed_trend": "A",
+    "ndc_prorata": "B",
+    "ndc_prorata_s1_floor": "B",
+    "1p5c_prorata": "B",
+    "world_prorata": "C",
+}
+#: Tier of the certified product value by the test cycle it comes from.
+TECHNOLOGY_TIER = {"WLTP": "A", "EPA": "A", "KR_5CYCLE": "B"}
+
+
+def worst(*tiers: str) -> str:
+    """The lowest data-quality tier among the given ones (C is worse than B is worse than A)."""
+    ranked = [t for t in tiers if t in TIER_ORDER]
+    return max(ranked, key=lambda t: TIER_ORDER[t]) if ranked else ""
+
+
+def powertrain_tier(rule: str) -> str:
+    """Tier of the volume-to-powertrain step from the cohort's powertrain rule."""
+    if rule.startswith(("explicit", "stated")):
+        return "A"
+    if rule.startswith("epa_share"):
+        return "B"
+    return "C"
+
+
+def load_rate_tiers() -> dict[tuple[str, str], str]:
+    """(country, scenario) -> worst tier of its two rates, from the processed target tables."""
+    out: dict[tuple[str, str], str] = {}
+    for path in sorted((DATA / "emission_targets" / "processed").glob("emission_targets_*.csv")):
+        for r in read_csv(path):
+            key = (r["country"], r["scenario"])
+            out[key] = worst(out.get(key, ""), RATE_TIER.get(r["target_level"], "C"))
+    return out
+
+
 def main() -> None:
     """Compute the per-cell lifetime TI and the cohort annual flow for every market."""
+    rate_tiers = load_rate_tiers()
     cohorts = load_cohorts()
     withheld: list[dict[str, object]] = [dict(r) for r in read_csv(COHORTS_WITHHELD)]
     params = load_params()
@@ -194,6 +244,7 @@ def main() -> None:
             surviving[(market, c["company"], cohort_year)][cohort_year + t] += units
         for scenario in scenarios[market]:
             trajectory = reference[(market, country, scenario)]
+            tier_flags = tiers(p, c, country, scenario, rate_tiers)
             cumulative = 0.0
             e_prod0 = 0.0
             for t in range(life):
@@ -220,6 +271,7 @@ def main() -> None:
                         "e_prod_kgco2e_per_vehicle": round(e_prod, 4),
                         "gap_kgco2e_per_vehicle": round(gap, 4),
                         "ti_tco2e": round(gap * units / 1000.0, 4),
+                        "tier": tier_flags["tier"],
                     }
                 )
             cells.append(
@@ -236,6 +288,7 @@ def main() -> None:
                     "e_ref_year0_kgco2e": round(trajectory[0][0], 4),
                     "ti_per_vehicle_kgco2e": round(cumulative, 4),
                     "ti_tco2e": round(cumulative * units / 1000.0, 4),
+                    **tier_flags,
                 }
             )
 
@@ -289,6 +342,39 @@ def main() -> None:
     write_csv(OUT_EXCLUSIONS, EXCLUSION_FIELDS, exclusions)
 
     report(cells, withheld, exclusions, scenarios)
+
+
+def tiers(
+    p: dict[str, str],
+    c: dict[str, str],
+    country: str,
+    scenario: str,
+    rate_tiers: dict[tuple[str, str], str],
+) -> dict[str, str]:
+    """Whitepaper §5.2 tier declaration of one cell: Layer 1 (benchmark) and Layer 2 (product).
+
+    Layer 1 is the worst of the destination's distance, fleet-intensity, grid and lifetime tiers
+    and of the scenario's rate tier; Layer 2 is the worst of the certified-value tier (by test
+    cycle) and the powertrain-attribution tier (by rule). ``tier`` is the worst of both layers.
+    """
+    rate = rate_tiers.get((country, scenario), "")
+    layer1 = worst(
+        p["vkt_tier"], p["fleet_intensity_tier"], p["grid_tier"], p["lifetime_tier"], rate
+    )
+    tech = TECHNOLOGY_TIER.get(c["test_cycle"], "C")
+    pt = powertrain_tier(c["powertrain_rule"])
+    layer2 = worst(tech, pt)
+    return {
+        "fleet_intensity_tier": p["fleet_intensity_tier"],
+        "grid_tier": p["grid_tier"],
+        "lifetime_tier": p["lifetime_tier"],
+        "rate_tier": rate,
+        "layer1_tier": layer1,
+        "technology_tier": tech,
+        "powertrain_tier": pt,
+        "layer2_tier": layer2,
+        "tier": worst(layer1, layer2),
+    }
 
 
 def build_exclusions(

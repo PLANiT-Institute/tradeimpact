@@ -27,6 +27,9 @@ two that are not.
 
 | 2026-09-04 | India benchmark not built; recorded as `no_benchmark` with the reasons | Free inputs partial (>50 % proxies, S2 FLAG), no free model-level sales | Coverage group IN counted, not priced; unlock conditions listed in output/method.md |
 
+| 2026-09-04 | Tier flags on every value: A directly sourced / B estimated or derived / C proxy, per whitepaper §5.1, applied by rule at database build and declared per cell (Layer 1, Layer 2, worst) | Lead: every value must be flagged; the guideline names the tiers | `registry/tiers.csv`, `registry/value_tiers.csv`; `ti_by_model` tier columns; tests |
+| 2026-09-04 | Dashboard Map view; registry and deliverables moved into `data/auto/registry/`, `data/auto/database/`, `data/auto/dashboard/` | Lead: map-based view by country; no loose files under data/auto | `open_dashboard.command` launcher beside the page |
+
 ## Transitions
 
 | Date | Stage or phase | Event | Trigger | Consequence |
@@ -87,7 +90,7 @@ premise and sends work back is the process working; the entry states the trigger
 ## 2026-09-04 — dashboard prototype
 
 - `script/auto/model/build_dashboard.py` embeds `tradeimpact_auto.sqlite` (gzip + base64) in
-  `data/auto/dashboard.html`: lineage raw → method → processed → output per data type with source
+  `data/auto/database/dashboard.html`: lineage raw → method → processed → output per data type with source
   links, pivot table with generated SQL, browse, read-only SQL console. Opens from disk; sql.js
   1.10.3 from cdnjs is the only network dependency. Added as the last `run_all.py` step.
 
@@ -119,7 +122,7 @@ premise and sends work back is the process working; the entry states the trigger
 
 ## 2026-09-04 — dashboard reads the database instead of carrying it
 
-- `data/auto/dashboard.html` (55 KB) embeds no data: it fetches the sibling
+- `data/auto/database/dashboard.html` (55 KB) embeds no data: it fetches the sibling
   `tradeimpact_auto.sqlite` when served by `script/auto/serve_dashboard.py`
   (http://127.0.0.1:8765/dashboard.html) and offers a file picker when opened from disk.
   Navigation, lineage, column panel and presets are built from the database's own `tables`,

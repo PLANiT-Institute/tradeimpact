@@ -57,6 +57,7 @@ PARAM_FIELDS = [
     "lifetime_years",
     "lifetime_low_years",
     "lifetime_high_years",
+    "lifetime_tier",
     "scenarios_excluded",
     "scenario_exclusion_reason",
     "warnings",

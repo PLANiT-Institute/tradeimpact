@@ -16,7 +16,7 @@ different test cycles and different national benchmarks.
 | `reference_trajectories_eu27.csv` | 3 | `build_reference.py` | market × country × scenario × t: `e_ref_kgco2_per_vehicle` (benchmark per vehicle-year), `grid_kgco2_per_kwh` |
 | `reference_trajectories_us.csv` | 3 | `build_reference_us.py` | the same columns for the US market (S1 and S3 only — see *United States* below) |
 | `reference_trajectories_kr.csv` | 3 | `build_reference_kr.py` | the same columns for the Korean market (S1, S2, S3) |
-| `ti_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario: units, lifetime, distance + tier, test cycle, real-world factor, year-0 product and benchmark emissions, `ti_per_vehicle_kgco2e`, `ti_tco2e` |
+| `ti_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario: units, lifetime, distance + tier, test cycle, real-world factor, year-0 product and benchmark emissions, `ti_per_vehicle_kgco2e`, `ti_tco2e`, and the whitepaper §5.2 tier declaration: `fleet_intensity_tier`, `grid_tier`, `lifetime_tier`, `rate_tier`, `layer1_tier` (benchmark), `technology_tier`, `powertrain_tier`, `layer2_tier` (product), `tier` (worst of both) |
 | `ti_annual_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario × year: benchmark and product emissions per vehicle, the annual gap, and the cell's TI flow that year (tCO2e) — the year-by-year view at any aggregation level |
 | `ti_annual.csv` | 4 | `build_ti.py` | market × company × cohort_year × scenario × t: annual TI flow (tCO2e) and surviving vehicles |
 | `ti_withheld.csv` | 4 | `build_ti.py` | units carrying no result and why — the step-3a rows plus the markets whose benchmark is withheld |
@@ -230,6 +230,33 @@ plant-side domestic sales (571,878 in 2025) and Kia's Indian retail (156,523 in 
 are counted, not priced. What would change the verdict: the BTR1 CRT workbook (hand fetch), the
 2020-21/2021-22 Year Book (hand fetch) and a Vahan maker-level active-stock export.
 
+## Data-quality tiers (whitepaper §5.1, every value flagged)
+
+Three tiers, defined in `data/auto/registry/tiers.csv` with the whitepaper wording and the
+operational rule used here: **A** directly sourced (the authoritative publisher of that quantity
+for that country, on the population the model uses); **B** estimated or derived (authoritative
+sources for the country plus a documented step: unit or fuel-factor conversion, pro-rata of a
+sector target, split by production shares, a close but not identical population, a rounding
+rule); **C** proxy (another population, market, year or average; a share whose level disagrees
+with the national one; an old survival schedule; an ICE-central assumption; a world pathway).
+
+Where the flags live. (1) Every row of every processed input table (country_emissions_*,
+vehicle_usage_*, emission_targets_*, vehicle_technology_*, sales_*, trade_flows) carries `tier`
+and `tier_reason` in the database, assigned when the database is built from the rules in
+`data/auto/registry/value_tiers.csv` (one rule per table pattern, column and value pattern; the
+worst matching tier wins and every matching reason is kept). (2) The destination parameters carry
+`vkt_tier`, `fleet_intensity_tier`, `grid_tier`, `mean_car_age_tier` and `lifetime_tier`.
+(3) Every result cell in `ti_by_model.csv` carries the Layer 1 tier (worst of distance, fleet
+intensity, grid, lifetime and scenario-rate tiers), the Layer 2 tier (worst of the certified-value
+tier by test cycle and the powertrain-attribution tier by rule) and `tier`, the worst of both;
+the year-by-year cells carry `tier`. (4) `ti_data_quality.csv` counts covered units by tier per
+company, market and cohort year. A test asserts that every cell and every input row is flagged.
+
+Today's picture: every EU27 cell is B or C (B from the mean-age lifetime rule, C where the
+distance is the EU-average proxy), every US cell is C (the NHTSA lifetime schedule) and every
+Korean cell is C (the fleet-intensity share and the biased mean age). The per-input columns say
+which input is responsible; the single `tier` says how far the cell is from fully sourced.
+
 ## Run order
 
 `script/auto/run_all.py` runs everything and exits non-zero at the first failure: extraction,
@@ -252,10 +279,10 @@ one new `build_reference_<market>.py` plus its branch in `build_cohorts.py` — 
 downstream scripts. Shared field lists and loaders live in `script/auto/model/model_io.py`, so
 the per-market reference builders cannot drift apart on schema.
 
-`build_database.py` writes `data/auto/tradeimpact_auto.sqlite` — every raw table, lookup,
+`build_database.py` writes `data/auto/database/tradeimpact_auto.sqlite` — every raw table, lookup,
 processed dataset and output table, the source registry, raw-file provenance, a `tables`
 manifest (dataset, stage, source path, rows, hash) and a `columns` dictionary (type, non-null,
-distinct, example). `build_dashboard.py` writes `data/auto/dashboard.html`, a reader for that
+distinct, example). `build_dashboard.py` writes `data/auto/database/dashboard.html`, a reader for that
 database carrying no data of its own (about 55 KB): it fetches `tradeimpact_auto.sqlite` from
 its own directory and reads the manifest, the dictionary, the source registry and the raw-file
 provenance out of it with SQL. Views: lineage per data type (raw → method → processed → output

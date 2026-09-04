@@ -36,20 +36,24 @@ data/auto/         one directory per dataset, each with:
   <dataset>/processed/   tidy CSV produced only by scripts
   <dataset>/method/      method.md: what it is, fields, sources, rules
   output/                model results (steps 3–5), with output/method.md
-  sources.csv            source registry: every source_id with link, access date, licence
-  raw_files.csv          raw-file provenance: original name, SHA-256, source_id
-  tradeimpact_auto.sqlite   the database: raw, lookup, processed and output tables, sources,
-                            raw-file provenance, a tables manifest and a column dictionary
-  dashboard.html            reader for that database, no data of its own: lineage
-                            raw -> processed -> output per data type, pivot table, browse and
-                            read-only SQL (serve data/auto, or open it and pick the file)
+  registry/              sources.csv (every source_id with link, access date, licence),
+                         raw_files.csv (raw-file provenance: original name, SHA-256, source_id),
+                         tiers.csv (the A/B/C data-quality hierarchy) and value_tiers.csv (the
+                         per-value tier rules applied when the database is built)
+  dashboard/             raw/ world geometry and ISO code list, method/ country_codes.csv
+  database/              tradeimpact_auto.sqlite: raw, lookup, processed and output tables with
+                         per-value tier flags, sources, raw-file provenance, a tables manifest
+                         and a column dictionary; dashboard.html: reader for that database, no
+                         data of its own: lineage, results, results by year, map by country,
+                         pivot, browse and read-only SQL (serve data/auto, or open the page and
+                         pick the database file)
 script/auto/       all Python, one directory per dataset plus model/
   <dataset>/             extraction scripts: raw/ -> processed/
   model/                 build_cohorts, build_reference (EU27), build_reference_us, build_ti,
                          build_sensitivity, aggregate_country, build_data_quality,
                          build_database, build_dashboard
-  serve_dashboard.py     serves data/auto on http://127.0.0.1:8765 so dashboard.html can read
-                         the database beside it
+  serve_dashboard.py     serves data/auto on http://127.0.0.1:8765 so database/dashboard.html
+                         can read the database beside it and the map geometry
 archive/           the previous application build (engine, web, MCP, pipeline) — read-only
 ```
 
@@ -108,8 +112,10 @@ The only capitalised files are `README.md` and `LICENSE`. Raw files are renamed 
 - A missing input produces an unavailable result — never zero, never a silent default.
 - Every processed row carries a `source_id`; every raw file is hash-recorded in its
   `method.md`.
-- Proxies and tiers are disclosed; results on proxied inputs are directions, not precise
-  magnitudes. Always report S1/S2/S3 together.
+- Proxies and tiers are disclosed: every input value carries a tier (A directly sourced,
+  B estimated or derived, C proxy) in the database, and every result cell carries its Layer 1,
+  Layer 2 and worst tier (`data/auto/registry/tiers.csv`, `value_tiers.csv`). Results on
+  proxied inputs are directions, not precise magnitudes. Always report S1/S2/S3 together.
 
 ## License
 

@@ -5,7 +5,7 @@ https://greenhouseaccounts.climatechange.gov.au/OData. The entity set
 ``AR5_ParisInventory_AUSTRALIA`` holds every UNFCCC category x gas x inventory year since
 1990 (Gg). The server refuses $top and $filter on category columns, so the whole set is
 fetched and saved verbatim as data/auto/country_emissions/raw/anga_paris_inventory_australia.json
-(with request URL, access date and row count) and registered in data/auto/raw_files.csv.
+(with request URL, access date and row count) and registered in data/auto/registry/raw_files.csv.
 
 Run from the repository root:  .venv/bin/python script/auto/country_emissions/fetch_anga_odata.py
 """
@@ -65,7 +65,7 @@ def main() -> None:
         )
         + "\n"
     )
-    registry = DATA / "raw_files.csv"
+    registry = DATA / "registry" / "raw_files.csv"
     entries = list(csv.DictReader(registry.open(newline="")))
     entries = [
         e for e in entries if not (e["dataset"] == "country_emissions" and e["file"] == OUT.name)

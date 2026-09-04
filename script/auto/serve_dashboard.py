@@ -1,6 +1,7 @@
 """Serve data/auto over HTTP so dashboard.html can read the database beside it.
 
-``data/auto/dashboard.html`` carries no data: it fetches ``tradeimpact_auto.sqlite`` from its
+``data/auto/database/dashboard.html`` carries no data: it fetches ``tradeimpact_auto.sqlite`` from
+its
 own directory, which the browser only allows over HTTP (a page opened from ``file://`` is
 refused and falls back to its file picker). This starts a stdlib server on the loopback
 interface, prints the URL and serves that one directory.
@@ -17,12 +18,14 @@ from __future__ import annotations
 import argparse
 import functools
 import mimetypes
+import threading
+import webbrowser
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 ROOT = REPO / "data" / "auto"
-PAGE = "dashboard.html"
+PAGE = "database/dashboard.html"
 HOST = "127.0.0.1"
 PORT = 8765
 
@@ -64,18 +67,22 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         argv: Argument list to parse; ``None`` reads ``sys.argv``.
 
     Returns:
-        Namespace with the integer ``port`` to bind.
+        Namespace with the integer ``port`` to bind and the ``open`` flag.
     """
     parser = argparse.ArgumentParser(description=f"Serve {ROOT.name} for {PAGE} on {HOST}.")
     parser.add_argument("--port", type=int, default=PORT, help=f"TCP port to bind (default {PORT})")
+    parser.add_argument(
+        "--open", action="store_true", help="open the dashboard in the default browser once serving"
+    )
     return parser.parse_args(argv)
 
 
-def serve(port: int = PORT) -> None:
+def serve(port: int = PORT, open_browser: bool = False) -> None:
     """Serve ``data/auto`` on the loopback interface until interrupted.
 
     Args:
         port: TCP port to bind.
+        open_browser: Open the dashboard URL in the default browser once the server is bound.
 
     Raises:
         SystemExit: If the directory or the dashboard page is missing.
@@ -88,6 +95,8 @@ def serve(port: int = PORT) -> None:
     with ThreadingHTTPServer((HOST, port), handler) as httpd:
         print(f"serving {ROOT.relative_to(REPO)} at http://{HOST}:{port}/{PAGE}")
         print("Ctrl-C to stop")
+        if open_browser:
+            threading.Timer(0.5, webbrowser.open, [f"http://{HOST}:{port}/{PAGE}"]).start()
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
@@ -96,7 +105,8 @@ def serve(port: int = PORT) -> None:
 
 def main() -> None:
     """Parse the command line and serve."""
-    serve(parse_args().port)
+    args = parse_args()
+    serve(args.port, args.open)
 
 
 if __name__ == "__main__":

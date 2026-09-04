@@ -248,3 +248,12 @@ only — never a company or model figure. File: `trade_flows/processed/trade_flo
 | `currency` | text | — | `EUR` (Comext) · `USD` (Comtrade) |
 | `source_id` | text | — | `eurostat_comext_ds045409` · `un_comtrade_public` |
 | `source_file` | text | — | raw file behind the row |
+
+## 9. Tier flags and the map assets (added 2026-09-04)
+
+| file | grain | content |
+|---|---|---|
+| `registry/tiers.csv` | tier | A / B / C: whitepaper §5.1 wording and the operational rule |
+| `registry/value_tiers.csv` | table pattern + column + value pattern | tier and reason; applied by `build_database.py` to every processed and output row it matches (`tier`, `tier_reason` columns in the database; model-declared tiers on `ti_by_model` are never overwritten) |
+| `dashboard/method/country_codes.csv` | ISO numeric | alpha-2, alpha-3, name (from world-countries 5.1.0, ODbL) — joins the world geometry to the destination codes |
+| `dashboard/raw/countries-110m.json` | geometry | world-atlas 2.0.2 TopoJSON (Natural Earth, public domain); geometry only, served beside the database |

@@ -4,8 +4,8 @@ Steps (each is a standalone script; see script/auto/README.md):
     extraction   raw/ -> processed/ for every dataset
     derivation   S1/S2/S3 rates per market
     model        reference, impact, sensitivity, aggregation, data quality
-    database     every CSV under data/auto -> data/auto/tradeimpact_auto.sqlite
-    dashboard    static reader of the database file -> data/auto/dashboard.html
+    database     every CSV under data/auto -> data/auto/database/tradeimpact_auto.sqlite
+    dashboard    static reader of the database file -> data/auto/database/dashboard.html
     checks       ruff (lint) and pytest (numerical and consistency tests)
 
 Exit status is non-zero if any step fails, so `run_all.py && git commit` can never commit a
@@ -49,6 +49,7 @@ EXTRACT = [
     "country_emissions/extract_anga_inventory.py",
     "country_emissions/extract_kr_inventory.py",
     "trade_flows/extract_trade_flows.py",
+    "dashboard/fetch_map_assets.py",
 ]
 DERIVE = [
     "emission_targets/derive_eu27_rates.py",

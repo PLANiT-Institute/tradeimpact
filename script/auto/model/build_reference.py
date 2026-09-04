@@ -240,6 +240,7 @@ def main() -> None:
         r["lifetime_years"] = clamp_life(LIFETIME_CENTRAL_MULTIPLE * mean) if mean else None  # type: ignore[operator]
         r["lifetime_low_years"] = clamp_life(mean) if mean else None  # type: ignore[arg-type]
         r["lifetime_high_years"] = clamp_life(2 * mean) if mean else None  # type: ignore[operator]
+        r["lifetime_tier"] = ("C" if r["mean_car_age_tier"] == "C" else "B") if mean else None
         r["scenarios_excluded"] = ""
         r["scenario_exclusion_reason"] = ""
         r["warnings"] = " | ".join(r.pop("_warnings"))  # type: ignore[arg-type]

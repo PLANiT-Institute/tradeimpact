@@ -6,7 +6,7 @@ six-digit sub-heading, every reporter (27 member states plus EU aggregates), flo
 indicators SUPPLEMENTARY_QUANTITY (number of vehicles) and VALUE_IN_EUROS fetched separately
 (the API drops the quantity when both are requested together), years 2022-2025.
 Each response is saved verbatim as data/auto/trade_flows/raw/comext_imports_<partner>.json and
-registered in data/auto/raw_files.csv with URL, access date and hash.
+registered in data/auto/registry/raw_files.csv with URL, access date and hash.
 
 Run from the repository root:  .venv/bin/python script/auto/trade_flows/fetch_comext.py
 """
@@ -97,8 +97,8 @@ def main() -> None:
 
 
 def register(path: Path, url: str, accessed: str, partner: str) -> None:
-    """Upsert the raw file's row in data/auto/raw_files.csv."""
-    registry = DATA / "raw_files.csv"
+    """Upsert the raw file's row in data/auto/registry/raw_files.csv."""
+    registry = DATA / "registry" / "raw_files.csv"
     rows = list(csv.DictReader(registry.open(newline="")))
     rows = [r for r in rows if not (r["dataset"] == "trade_flows" and r["file"] == path.name)]
     rows.append(

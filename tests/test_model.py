@@ -278,3 +278,41 @@ def test_annual_by_model_sums_to_company_annual_flow() -> None:
     assert by_cells.keys() == flow.keys()
     for key, total in flow.items():
         assert abs(by_cells[key] - total) <= 1e-6 * max(1.0, abs(total)), key
+
+
+TIERS = {"A", "B", "C"}
+
+
+def test_every_result_cell_declares_its_tiers(cells: list[dict[str, str]]) -> None:
+    """Whitepaper §5.2: Layer 1 and Layer 2 tiers on every reported cell, worst of both as tier."""
+    order = {"A": 0, "B": 1, "C": 2}
+    for c in cells:
+        assert c["layer1_tier"] in TIERS and c["layer2_tier"] in TIERS, c
+        assert c["tier"] == max(c["layer1_tier"], c["layer2_tier"], key=lambda t: order[t]), c
+        for col in ("vkt_tier", "fleet_intensity_tier", "grid_tier", "lifetime_tier", "rate_tier"):
+            assert c[col] in TIERS, (col, c)
+
+
+def test_database_flags_every_input_value_with_a_tier() -> None:
+    """Every processed input table the model reads carries a tier on every row in the database."""
+    import sqlite3
+
+    conn = sqlite3.connect(DATA / "database" / "tradeimpact_auto.sqlite")
+    tables = [
+        r[0]
+        for r in conn.execute(
+            "SELECT \"table\" FROM tables WHERE kind = 'processed' AND ("
+            "\"table\" LIKE 'country_emissions_%' OR \"table\" LIKE 'vehicle_usage_%' OR "
+            "\"table\" LIKE 'emission_targets_%' OR \"table\" LIKE 'vehicle_technology_%' OR "
+            "\"table\" LIKE 'sales_%')"
+        )
+    ]
+    assert tables
+    for name in tables:
+        columns = {r[1] for r in conn.execute(f'PRAGMA table_info("{name}")')}
+        assert "tier" in columns, name
+        missing = conn.execute(
+            f"SELECT COUNT(*) FROM \"{name}\" WHERE tier IS NULL OR tier NOT IN ('A', 'B', 'C')"
+        ).fetchone()[0]
+        assert missing == 0, (name, missing)
+    conn.close()
