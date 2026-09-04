@@ -96,54 +96,27 @@ def flatten(payload: dict) -> list[tuple[dict[str, str], float]]:
 
 
 def comext_rows(path: Path, classes: dict[str, str]) -> list[dict[str, object]]:
-    """EU member-state imports: one row per reporter x hs6 x year with units and euros."""
+    """EU member-state imports in euros (Comext publishes no unit counts at HS6 via the API)."""
     snap = json.loads(path.read_text())
-    cells: dict[tuple[str, str, int], dict[str, float]] = {}
-    for indicator, payload in snap["responses"].items():
-        for cats, value in flatten(payload):
-            code = GEO_RECODE.get(cats["reporter"], cats["reporter"])
-            if code not in EU27:
-                continue  # the EU aggregate carries no supplementary quantity: summed below
-            cells.setdefault((code, cats["product"], int(cats["time"])), {})[indicator] = value
+    payload = snap["responses"]["VALUE_IN_EUROS"]
     rows = []
-    totals: dict[tuple[str, int], dict[str, float]] = {}
-    for (importer, hs6, year), ind in sorted(cells.items()):
-        units = ind.get("SUPPLEMENTARY_QUANTITY")
+    for cats, value in flatten(payload):
+        code = GEO_RECODE.get(cats["reporter"], cats["reporter"])
+        importer = "EU27" if code == EU_AGGREGATE else code
+        if code not in EU27 and code != EU_AGGREGATE:
+            continue
         rows.append(
             {
                 "reporter": importer,
                 "flow": "imports",
                 "exporter": snap["partner"],
                 "importer": importer,
-                "year": year,
-                "hs6": hs6,
-                "powertrain_class": classes[hs6],
-                "units": None if units is None else round(units),
-                "quantity_flag": "reported" if units is not None else "not_reported",
-                "value": ind.get("VALUE_IN_EUROS"),
-                "currency": "EUR",
-                "source_id": snap["source_id"],
-                "source_file": path.name,
-            }
-        )
-        total = totals.setdefault((hs6, year), {"units": 0.0, "value": 0.0, "n": 0})
-        if units is not None:
-            total["units"] += units
-            total["n"] += 1
-        total["value"] += ind.get("VALUE_IN_EUROS") or 0.0
-    for (hs6, year), total in sorted(totals.items()):
-        rows.append(
-            {
-                "reporter": "EU27",
-                "flow": "imports",
-                "exporter": snap["partner"],
-                "importer": "EU27",
-                "year": year,
-                "hs6": hs6,
-                "powertrain_class": classes[hs6],
-                "units": round(total["units"]) if total["n"] else None,
-                "quantity_flag": "member_state_sum" if total["n"] else "not_reported",
-                "value": round(total["value"], 2),
+                "year": int(cats["time"]),
+                "hs6": cats["product"],
+                "powertrain_class": classes[cats["product"]],
+                "units": None,
+                "quantity_flag": "not_reported",
+                "value": value,
                 "currency": "EUR",
                 "source_id": snap["source_id"],
                 "source_file": path.name,
@@ -156,10 +129,15 @@ def comtrade_rows(path: Path, classes: dict[str, str]) -> list[dict[str, object]
     """Comtrade records: exporter-reported exports or importer-reported imports."""
     snap = json.loads(path.read_text())
     flow = "exports" if snap["flow"] == "X" else "imports"
-    exporter = snap["reporter"] if flow == "exports" else snap["partner"]
-    importer = snap["partner"] if flow == "exports" else snap["reporter"]
+    code_to_iso = {v: k for k, v in snap.get("reporters", {}).items()}
     rows = []
     for r in snap["response"]["data"]:
+        # Aggregate rows only: the preview also returns mode-of-transport breakdowns.
+        if (r.get("customsCode"), r.get("motCode"), r.get("partner2Code")) != ("C00", 0, 0):
+            continue
+        reporter = code_to_iso.get(r["reporterCode"], snap["reporter"])
+        exporter = reporter if flow == "exports" else snap["partner"]
+        importer = snap["partner"] if flow == "exports" else reporter
         units = r["qty"] if r["qtyUnitCode"] == 5 and r["qty"] not in (None, 0) else None
         flag = "estimated" if r.get("isQtyEstimated") else "reported"
         if units is None:
@@ -184,6 +162,42 @@ def comtrade_rows(path: Path, classes: dict[str, str]) -> list[dict[str, object]
     return rows
 
 
+def eu27_sum(rows: list[dict[str, object]]) -> list[dict[str, object]]:
+    """EU27 import totals as the sum of the member states' Comtrade-reported imports."""
+    acc: dict[tuple[str, int, str], dict[str, float]] = {}
+    for r in rows:
+        if r["source_id"] != "un_comtrade_public" or r["flow"] != "imports":
+            continue
+        if str(r["importer"]) not in EU27:
+            continue
+        key = (str(r["exporter"]), int(str(r["year"])), str(r["hs6"]))
+        a = acc.setdefault(key, {"units": 0.0, "value": 0.0, "n_units": 0, "n_est": 0})
+        if r["units"] is not None:
+            a["units"] += float(str(r["units"]))
+            a["n_units"] += 1
+            a["n_est"] += r["quantity_flag"] == "estimated"
+        a["value"] += float(str(r["value"] or 0))
+    classes = {r["hs6"]: r["powertrain_class"] for r in csv.DictReader(HS_TABLE.open(newline=""))}
+    return [
+        {
+            "reporter": "EU27",
+            "flow": "imports",
+            "exporter": exp,
+            "importer": "EU27",
+            "year": year,
+            "hs6": hs6,
+            "powertrain_class": classes[hs6],
+            "units": round(a["units"]) if a["n_units"] else None,
+            "quantity_flag": "member_state_sum" if a["n_units"] else "not_reported",
+            "value": round(a["value"], 2),
+            "currency": "USD",
+            "source_id": "un_comtrade_public",
+            "source_file": "comtrade_eu27_m_*.json",
+        }
+        for (exp, year, hs6), a in sorted(acc.items())
+    ]
+
+
 def main() -> None:
     """Combine every pinned raw file into one long table."""
     classes = {r["hs6"]: r["powertrain_class"] for r in csv.DictReader(HS_TABLE.open(newline=""))}
@@ -192,6 +206,7 @@ def main() -> None:
         out.extend(comext_rows(path, classes))
     for path in sorted(RAW.glob("comtrade_*.json")):
         out.extend(comtrade_rows(path, classes))
+    out.extend(eu27_sum(out))
     out.sort(
         key=lambda r: tuple(
             str(r[k]) for k in ("exporter", "importer", "reporter", "flow", "year", "hs6")

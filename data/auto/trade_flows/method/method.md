@@ -36,7 +36,11 @@ Fetched directly from the sources of truth by `script/auto/trade_flows/fetch_com
 [`../../sources.csv`](../../sources.csv).
 
 - `comext_imports_kr.json`, `comext_imports_jp.json` — Eurostat Comext ds-045409, EU member
-  states' imports from Korea / Japan, all HS 8703 sub-headings, units and euros, 2022–2025.
+  states' imports from Korea / Japan, all HS 8703 sub-headings, 2022–2025, in euros. The API
+  returns no supplementary quantity (units) at HS6, so unit counts for the EU come from Comtrade.
+- `comtrade_eu27_m_<kr|jp>_<year>.json` — UN Comtrade, the 27 member states as reporters,
+  imports from Korea / Japan, aggregate rows only (customs C00, all transport modes, no second
+  partner); the `EU27` row is their sum (`quantity_flag = member_state_sum`).
 - `comtrade_<reporter>_<x|m>_<partner>_<year>.json` — UN Comtrade public preview API, both
   sides of each KR/JP → US/AU flow (exporter-reported exports and importer-reported imports),
   one file per year 2022–2025. Comtrade flags exporter-side quantities as estimated when the
