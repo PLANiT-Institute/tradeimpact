@@ -241,6 +241,50 @@ nissan,EU27,2024,S2,realworld,low,"WLTP BEV 1.0, WLTP HEV 1.171, WLTP ICE 1.171"
 nissan,EU27,2024,S2,vkt_proxy,central,market distance as published for tier-C markets,-4433575.1
 nissan,EU27,2024,S2,vkt_proxy,high,upper quartile of measured distances,-4847352.8
 nissan,EU27,2024,S2,vkt_proxy,low,lower quartile of measured distances,-4017411.9
+nissan,JP,2024,S1,lifetime,central,T_c,349875.3
+nissan,JP,2024,S1,lifetime,minus,T_c - 3,342921.7
+nissan,JP,2024,S1,lifetime,plus,T_c + 3,316880.2
+nissan,JP,2024,S1,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,349875.3
+nissan,JP,2024,S1,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,349875.3
+nissan,JP,2024,S1,realworld,central,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.191",349875.3
+nissan,JP,2024,S1,realworld,high,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.211",345511.4
+nissan,JP,2024,S1,realworld,low,"WLTC_JP HEV 1.171, WLTC_JP ICE 1.171",447579.2
+nissan,JP,2024,S1,vkt_proxy,central,market distance as published for tier-C markets,349875.3
+nissan,JP,2024,S1,vkt_proxy,high,upper quartile of measured distances,349875.3
+nissan,JP,2024,S1,vkt_proxy,low,lower quartile of measured distances,349875.3
+nissan,JP,2024,S2,lifetime,central,T_c,-474401.7
+nissan,JP,2024,S2,lifetime,minus,T_c - 3,-173326.0
+nissan,JP,2024,S2,lifetime,plus,T_c + 3,-853366.3
+nissan,JP,2024,S2,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,-474401.7
+nissan,JP,2024,S2,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,-474401.7
+nissan,JP,2024,S2,realworld,central,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.191",-474401.7
+nissan,JP,2024,S2,realworld,high,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.211",-478765.6
+nissan,JP,2024,S2,realworld,low,"WLTC_JP HEV 1.171, WLTC_JP ICE 1.171",-376697.8
+nissan,JP,2024,S2,vkt_proxy,central,market distance as published for tier-C markets,-474401.7
+nissan,JP,2024,S2,vkt_proxy,high,upper quartile of measured distances,-474401.7
+nissan,JP,2024,S2,vkt_proxy,low,lower quartile of measured distances,-474401.7
+nissan,JP,2025,S1,lifetime,central,T_c,243866.1
+nissan,JP,2025,S1,lifetime,minus,T_c - 3,245922.1
+nissan,JP,2025,S1,lifetime,plus,T_c + 3,210228.4
+nissan,JP,2025,S1,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,243866.1
+nissan,JP,2025,S1,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,243866.1
+nissan,JP,2025,S1,realworld,central,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.191",243866.1
+nissan,JP,2025,S1,realworld,high,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.211",239240.1
+nissan,JP,2025,S1,realworld,low,"WLTC_JP HEV 1.171, WLTC_JP ICE 1.171",321050.5
+nissan,JP,2025,S1,vkt_proxy,central,market distance as published for tier-C markets,243866.1
+nissan,JP,2025,S1,vkt_proxy,high,upper quartile of measured distances,243866.1
+nissan,JP,2025,S1,vkt_proxy,low,lower quartile of measured distances,243866.1
+nissan,JP,2025,S2,lifetime,central,T_c,-407772.5
+nissan,JP,2025,S2,lifetime,minus,T_c - 3,-162201.5
+nissan,JP,2025,S2,lifetime,plus,T_c + 3,-714919.1
+nissan,JP,2025,S2,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,-407772.5
+nissan,JP,2025,S2,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,-407772.5
+nissan,JP,2025,S2,realworld,central,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.191",-407772.5
+nissan,JP,2025,S2,realworld,high,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.211",-412398.5
+nissan,JP,2025,S2,realworld,low,"WLTC_JP HEV 1.171, WLTC_JP ICE 1.171",-330588.0
+nissan,JP,2025,S2,vkt_proxy,central,market distance as published for tier-C markets,-407772.5
+nissan,JP,2025,S2,vkt_proxy,high,upper quartile of measured distances,-407772.5
+nissan,JP,2025,S2,vkt_proxy,low,lower quartile of measured distances,-407772.5
 nissan,US,2024,S1,lifetime,central,T_c,2258871.2
 nissan,US,2024,S1,lifetime,minus,T_c - 3,2238915.3
 nissan,US,2024,S1,lifetime,plus,T_c + 3,1994604.5
@@ -307,6 +351,50 @@ toyota,EU27,2024,S2,realworld,low,"WLTP BEV 1.0, WLTP HEV 1.171, WLTP ICE 1.171"
 toyota,EU27,2024,S2,vkt_proxy,central,market distance as published for tier-C markets,-14369773.6
 toyota,EU27,2024,S2,vkt_proxy,high,upper quartile of measured distances,-15769890.2
 toyota,EU27,2024,S2,vkt_proxy,low,lower quartile of measured distances,-12961584.6
+toyota,JP,2024,S1,lifetime,central,T_c,1070526.4
+toyota,JP,2024,S1,lifetime,minus,T_c - 3,1232640.9
+toyota,JP,2024,S1,lifetime,plus,T_c + 3,686890.7
+toyota,JP,2024,S1,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,1070526.4
+toyota,JP,2024,S1,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,1070526.4
+toyota,JP,2024,S1,realworld,central,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.191",1070526.4
+toyota,JP,2024,S1,realworld,high,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.211",918027.3
+toyota,JP,2024,S1,realworld,low,"WLTC_JP HEV 1.171, WLTC_JP ICE 1.171",1516968.9
+toyota,JP,2024,S1,vkt_proxy,central,market distance as published for tier-C markets,1070526.4
+toyota,JP,2024,S1,vkt_proxy,high,upper quartile of measured distances,1070526.4
+toyota,JP,2024,S1,vkt_proxy,low,lower quartile of measured distances,1070526.4
+toyota,JP,2024,S2,lifetime,central,T_c,-3500211.1
+toyota,JP,2024,S2,lifetime,minus,T_c - 3,-1630028.7
+toyota,JP,2024,S2,lifetime,plus,T_c + 3,-5802299.3
+toyota,JP,2024,S2,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,-3500211.1
+toyota,JP,2024,S2,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,-3500211.1
+toyota,JP,2024,S2,realworld,central,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.191",-3500211.1
+toyota,JP,2024,S2,realworld,high,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.211",-3652710.2
+toyota,JP,2024,S2,realworld,low,"WLTC_JP HEV 1.171, WLTC_JP ICE 1.171",-3053768.6
+toyota,JP,2024,S2,vkt_proxy,central,market distance as published for tier-C markets,-3500211.1
+toyota,JP,2024,S2,vkt_proxy,high,upper quartile of measured distances,-3500211.1
+toyota,JP,2024,S2,vkt_proxy,low,lower quartile of measured distances,-3500211.1
+toyota,JP,2025,S1,lifetime,central,T_c,1129277.1
+toyota,JP,2025,S1,lifetime,minus,T_c - 3,1285759.2
+toyota,JP,2025,S1,lifetime,plus,T_c + 3,746982.9
+toyota,JP,2025,S1,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,1129277.1
+toyota,JP,2025,S1,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,1129277.1
+toyota,JP,2025,S1,realworld,central,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.191",1129277.1
+toyota,JP,2025,S1,realworld,high,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.211",970112.5
+toyota,JP,2025,S1,realworld,low,"WLTC_JP HEV 1.171, WLTC_JP ICE 1.171",1579522.6
+toyota,JP,2025,S1,vkt_proxy,central,market distance as published for tier-C markets,1129277.1
+toyota,JP,2025,S1,vkt_proxy,high,upper quartile of measured distances,1129277.1
+toyota,JP,2025,S1,vkt_proxy,low,lower quartile of measured distances,1129277.1
+toyota,JP,2025,S2,lifetime,central,T_c,-3529995.5
+toyota,JP,2025,S2,lifetime,minus,T_c - 3,-1632360.4
+toyota,JP,2025,S2,lifetime,plus,T_c + 3,-5867902.6
+toyota,JP,2025,S2,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,-3529995.5
+toyota,JP,2025,S2,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,-3529995.5
+toyota,JP,2025,S2,realworld,central,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.191",-3529995.5
+toyota,JP,2025,S2,realworld,high,"WLTC_JP HEV 1.211, WLTC_JP ICE 1.211",-3689160.1
+toyota,JP,2025,S2,realworld,low,"WLTC_JP HEV 1.171, WLTC_JP ICE 1.171",-3079750.0
+toyota,JP,2025,S2,vkt_proxy,central,market distance as published for tier-C markets,-3529995.5
+toyota,JP,2025,S2,vkt_proxy,high,upper quartile of measured distances,-3529995.5
+toyota,JP,2025,S2,vkt_proxy,low,lower quartile of measured distances,-3529995.5
 toyota,US,2024,S1,lifetime,central,T_c,5526361.5
 toyota,US,2024,S1,lifetime,minus,T_c - 3,5404306.4
 toyota,US,2024,S1,lifetime,plus,T_c + 3,4996121.2

@@ -3493,6 +3493,132 @@ EU27,toyota,SK,TOYOTA YARIS,HEV,S2,652,-13599.8326,1.727,2025.7,within lifetime
 EU27,toyota,SK,TOYOTA YARIS,ICE,S2,307,-22067.2604,,,crossover before sale year (product already above benchmark at t=0)
 EU27,toyota,SK,TOYOTA YARIS CROSS,HEV,S2,1048,-17847.6596,0.669,2024.7,within lifetime
 EU27,toyota,SK,TOYOTA YARIS CROSS,ICE,S2,146,-24554.7183,,,crossover before sale year (product already above benchmark at t=0)
+JP,nissan,JP,エクストレイル,HEV,S1,31776,194.1124,6.506,2030.5,within lifetime
+JP,nissan,JP,エクストレイル,HEV,S1,19940,194.1124,6.506,2031.5,within lifetime
+JP,nissan,JP,セレナ,HEV,S1,69777,3.9468,5.88,2029.9,within lifetime
+JP,nissan,JP,セレナ,HEV,S1,59675,3.9468,5.88,2030.9,within lifetime
+JP,nissan,JP,セレナ,ICE,S1,11122,-7344.3194,,,crossover before sale year (product already above benchmark at t=0)
+JP,nissan,JP,セレナ,ICE,S1,11790,-7344.3194,,,crossover before sale year (product already above benchmark at t=0)
+JP,nissan,JP,ノート,HEV,S1,101766,4177.3807,21.722,2045.7,after lifetime
+JP,nissan,JP,ノート,HEV,S1,78123,4177.3807,21.722,2046.7,after lifetime
+JP,nissan,JP,エクストレイル,HEV,S2,31776,-3649.728,1.77,2025.8,within lifetime
+JP,nissan,JP,エクストレイル,HEV,S2,19940,-3649.728,1.77,2026.8,within lifetime
+JP,nissan,JP,セレナ,HEV,S2,69777,-3839.8936,1.6,2025.6,within lifetime
+JP,nissan,JP,セレナ,HEV,S2,59675,-3839.8936,1.6,2026.6,within lifetime
+JP,nissan,JP,セレナ,ICE,S2,11122,-11188.1598,,,crossover before sale year (product already above benchmark at t=0)
+JP,nissan,JP,セレナ,ICE,S2,11790,-11188.1598,,,crossover before sale year (product already above benchmark at t=0)
+JP,nissan,JP,ノート,HEV,S2,101766,333.5404,5.91,2029.9,within lifetime
+JP,nissan,JP,ノート,HEV,S2,78123,333.5404,5.91,2030.9,within lifetime
+JP,toyota,JP,86,ICE,S1,8802,-8281.9548,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,アクア,HEV,S1,64180,6872.883,35.275,2059.3,after lifetime
+JP,toyota,JP,アクア,HEV,S1,68499,6872.883,35.275,2060.3,after lifetime
+JP,toyota,JP,アルファード,HEV,S1,53050,-809.0433,3.281,2027.3,within lifetime
+JP,toyota,JP,アルファード,HEV,S1,57299,-809.0433,3.281,2028.3,within lifetime
+JP,toyota,JP,アルファード,ICE,S1,26324,-11183.9804,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,アルファード,ICE,S1,29660,-11183.9804,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,カローラ,HEV,S1,111585,5174.155,26.336,2050.3,after lifetime
+JP,toyota,JP,カローラ,HEV,S1,91477,5174.155,26.336,2051.3,after lifetime
+JP,toyota,JP,カローラ,ICE,S1,55371,-1328.1391,1.687,2025.7,within lifetime
+JP,toyota,JP,カローラ,ICE,S1,47352,-1328.1391,1.687,2026.7,within lifetime
+JP,toyota,JP,クラウン,HEV,S1,41857,1119.4151,9.668,2033.7,within lifetime
+JP,toyota,JP,クラウン,HEV,S1,37372,1119.4151,9.668,2034.7,within lifetime
+JP,toyota,JP,クラウン,ICE,S1,20771,-8674.8329,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,クラウン,ICE,S1,19345,-8674.8329,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,シエンタ,HEV,S1,74247,5125.6564,26.102,2050.1,after lifetime
+JP,toyota,JP,シエンタ,HEV,S1,70213,5125.6564,26.102,2051.1,after lifetime
+JP,toyota,JP,シエンタ,ICE,S1,36843,26.2232,5.953,2030.0,within lifetime
+JP,toyota,JP,シエンタ,ICE,S1,36345,26.2232,5.953,2031.0,within lifetime
+JP,toyota,JP,ノア,HEV,S1,47193,2953.4287,16.561,2040.6,after lifetime
+JP,toyota,JP,ノア,HEV,S1,52757,2953.4287,16.561,2041.6,after lifetime
+JP,toyota,JP,ノア,ICE,S1,23418,-4102.1342,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ノア,ICE,S1,27308,-4102.1342,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ハイエースワゴン,ICE,S1,7087,-18525.6534,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ハイエースワゴン,ICE,S1,8989,-18525.6534,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ハリアー,HEV,S1,42895,2574.3737,15.06,2039.1,after lifetime
+JP,toyota,JP,ハリアー,HEV,S1,34694,2574.3737,15.06,2040.1,after lifetime
+JP,toyota,JP,ハリアー,ICE,S1,21286,-3165.754,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ハリアー,ICE,S1,17959,-3165.754,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,プリウス,HEV,S1,83485,6005.013,30.519,2054.5,after lifetime
+JP,toyota,JP,プリウス,HEV,S1,63717,6005.013,30.519,2055.5,after lifetime
+JP,toyota,JP,ヤリス,HEV,S1,111054,6238.5721,31.757,2055.8,after lifetime
+JP,toyota,JP,ヤリス,HEV,S1,109732,6238.5721,31.757,2056.8,after lifetime
+JP,toyota,JP,ヤリス,ICE,S1,55108,60.1136,6.064,2030.1,within lifetime
+JP,toyota,JP,ヤリス,ICE,S1,56801,60.1136,6.064,2031.1,within lifetime
+JP,toyota,JP,ライズ,HEV,S1,34236,5438.3449,27.63,2051.6,after lifetime
+JP,toyota,JP,ライズ,HEV,S1,66453,5438.3449,27.63,2052.6,after lifetime
+JP,toyota,JP,ライズ,ICE,S1,16989,1052.9779,9.435,2033.4,within lifetime
+JP,toyota,JP,ライズ,ICE,S1,34398,1052.9779,9.435,2034.4,within lifetime
+JP,toyota,JP,ランドクルーザー,ICE,S1,51288,-17859.1414,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ランドクルーザー,ICE,S1,45515,-17859.1414,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ルーミー,ICE,S1,67698,-571.2527,4.028,2028.0,within lifetime
+JP,toyota,JP,ルーミー,ICE,S1,95221,-571.2527,4.028,2029.0,within lifetime
+JP,toyota,JP,ヴェルファイア,HEV,S1,22126,-996.6563,2.699,2026.7,within lifetime
+JP,toyota,JP,ヴェルファイア,HEV,S1,21765,-996.6563,2.699,2027.7,within lifetime
+JP,toyota,JP,ヴェルファイア,ICE,S1,10979,-11713.6754,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ヴェルファイア,ICE,S1,11266,-11713.6754,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ヴォクシー,HEV,S1,47209,2787.5124,15.899,2039.9,after lifetime
+JP,toyota,JP,ヴォクシー,HEV,S1,51897,2787.5124,15.899,2040.9,after lifetime
+JP,toyota,JP,ヴォクシー,ICE,S1,23427,-4039.3741,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ヴォクシー,ICE,S1,26863,-4039.3741,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ＲＡＶ４,HEV,S1,20451,1531.6533,11.141,2035.1,within lifetime
+JP,toyota,JP,ＲＡＶ４,HEV,S1,19269,1531.6533,11.141,2036.1,within lifetime
+JP,toyota,JP,ＲＡＶ４,ICE,S1,10148,-3150.6915,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ＲＡＶ４,ICE,S1,9974,-3150.6915,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,86,ICE,S2,8802,-12125.7952,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,アクア,HEV,S2,64180,3029.0427,9.597,2033.6,within lifetime
+JP,toyota,JP,アクア,HEV,S2,68499,3029.0427,9.597,2034.6,within lifetime
+JP,toyota,JP,アルファード,HEV,S2,53050,-4652.8836,0.893,2024.9,within lifetime
+JP,toyota,JP,アルファード,HEV,S2,57299,-4652.8836,0.893,2025.9,within lifetime
+JP,toyota,JP,アルファード,ICE,S2,26324,-15027.8208,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,アルファード,ICE,S2,29660,-15027.8208,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,カローラ,HEV,S2,111585,1330.3147,7.165,2031.2,within lifetime
+JP,toyota,JP,カローラ,HEV,S2,91477,1330.3147,7.165,2032.2,within lifetime
+JP,toyota,JP,カローラ,ICE,S2,55371,-5171.9795,0.459,2024.5,within lifetime
+JP,toyota,JP,カローラ,ICE,S2,47352,-5171.9795,0.459,2025.5,within lifetime
+JP,toyota,JP,クラウン,HEV,S2,41857,-2724.4253,2.63,2026.6,within lifetime
+JP,toyota,JP,クラウン,HEV,S2,37372,-2724.4253,2.63,2027.6,within lifetime
+JP,toyota,JP,クラウン,ICE,S2,20771,-12518.6732,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,クラウン,ICE,S2,19345,-12518.6732,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,シエンタ,HEV,S2,74247,1281.816,7.101,2031.1,within lifetime
+JP,toyota,JP,シエンタ,HEV,S2,70213,1281.816,7.101,2032.1,within lifetime
+JP,toyota,JP,シエンタ,ICE,S2,36843,-3817.6172,1.619,2025.6,within lifetime
+JP,toyota,JP,シエンタ,ICE,S2,36345,-3817.6172,1.619,2026.6,within lifetime
+JP,toyota,JP,ノア,HEV,S2,47193,-890.4117,4.505,2028.5,within lifetime
+JP,toyota,JP,ノア,HEV,S2,52757,-890.4117,4.505,2029.5,within lifetime
+JP,toyota,JP,ノア,ICE,S2,23418,-7945.9746,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ノア,ICE,S2,27308,-7945.9746,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ハイエースワゴン,ICE,S2,7087,-22369.4938,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ハイエースワゴン,ICE,S2,8989,-22369.4938,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ハリアー,HEV,S2,42895,-1269.4667,4.097,2028.1,within lifetime
+JP,toyota,JP,ハリアー,HEV,S2,34694,-1269.4667,4.097,2029.1,within lifetime
+JP,toyota,JP,ハリアー,ICE,S2,21286,-7009.5943,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ハリアー,ICE,S2,17959,-7009.5943,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,プリウス,HEV,S2,83485,2161.1726,8.303,2032.3,within lifetime
+JP,toyota,JP,プリウス,HEV,S2,63717,2161.1726,8.303,2033.3,within lifetime
+JP,toyota,JP,ヤリス,HEV,S2,111054,2394.7318,8.64,2032.6,within lifetime
+JP,toyota,JP,ヤリス,HEV,S2,109732,2394.7318,8.64,2033.6,within lifetime
+JP,toyota,JP,ヤリス,ICE,S2,55108,-3783.7268,1.65,2025.6,within lifetime
+JP,toyota,JP,ヤリス,ICE,S2,56801,-3783.7268,1.65,2026.6,within lifetime
+JP,toyota,JP,ライズ,HEV,S2,34236,1594.5045,7.517,2031.5,within lifetime
+JP,toyota,JP,ライズ,HEV,S2,66453,1594.5045,7.517,2032.5,within lifetime
+JP,toyota,JP,ライズ,ICE,S2,16989,-2790.8625,2.567,2026.6,within lifetime
+JP,toyota,JP,ライズ,ICE,S2,34398,-2790.8625,2.567,2027.6,within lifetime
+JP,toyota,JP,ランドクルーザー,ICE,S2,51288,-21702.9818,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ランドクルーザー,ICE,S2,45515,-21702.9818,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ルーミー,ICE,S2,67698,-4415.0931,1.096,2025.1,within lifetime
+JP,toyota,JP,ルーミー,ICE,S2,95221,-4415.0931,1.096,2026.1,within lifetime
+JP,toyota,JP,ヴェルファイア,HEV,S2,22126,-4840.4967,0.734,2024.7,within lifetime
+JP,toyota,JP,ヴェルファイア,HEV,S2,21765,-4840.4967,0.734,2025.7,within lifetime
+JP,toyota,JP,ヴェルファイア,ICE,S2,10979,-15557.5158,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ヴェルファイア,ICE,S2,11266,-15557.5158,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ヴォクシー,HEV,S2,47209,-1056.328,4.325,2028.3,within lifetime
+JP,toyota,JP,ヴォクシー,HEV,S2,51897,-1056.328,4.325,2029.3,within lifetime
+JP,toyota,JP,ヴォクシー,ICE,S2,23427,-7883.2145,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ヴォクシー,ICE,S2,26863,-7883.2145,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ＲＡＶ４,HEV,S2,20451,-2312.187,3.031,2027.0,within lifetime
+JP,toyota,JP,ＲＡＶ４,HEV,S2,19269,-2312.187,3.031,2028.0,within lifetime
+JP,toyota,JP,ＲＡＶ４,ICE,S2,10148,-6994.5319,,,crossover before sale year (product already above benchmark at t=0)
+JP,toyota,JP,ＲＡＶ４,ICE,S2,9974,-6994.5319,,,crossover before sale year (product already above benchmark at t=0)
 KR,hyundai,KR,Avante (CN7 HEV),HEV,S1,5605,11514.4686,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,hyundai,KR,Avante (CN7 HEV),HEV,S1,14782,11514.4686,,,"r_fleet <= 0: benchmark non-declining, no crossover"
 KR,hyundai,KR,Avante (CN7 N),ICE,S1,1097,4945.1316,,,"r_fleet <= 0: benchmark non-declining, no crossover"

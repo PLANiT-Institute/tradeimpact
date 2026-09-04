@@ -55,3 +55,9 @@ company_us_totals_cross_check,basis,brand_total_sales,A,"a second figure publish
 global_sales_totals,basis,worldwide_sales,A,"the company's own published worldwide sales figure for that calendar year"
 global_sales_totals,basis,worldwide_retail|worldwide_sales_derived,B,"a worldwide figure built from the company's own releases because it publishes no single total: Hyundai as Korea domestic plus exports plus overseas plant sales (the export leg being shipments), Kia as the sum of every destination in its retail workbook"
 country_emissions_jp,series,co2_passenger_car|co2_bus|co2_freight|road_co2_passenger,A,GIO/NIES national inventory sheet 3.Allocated_CO2-sector as published; Japan prints the road split by vehicle type so no proxy is needed
+emission_targets_.*,target_level,gx_2040_prorata|gx_2040_prorata_s1_floor,B,Japan's GX 2040 target (73 % below FY2013) applied pro-rata to the sector
+vehicle_usage_jp,series,traffic_.*|distance_.*|stock_.*,B,"MLIT 自動車燃料消費量調査 第１表 as published for traffic; distance is the survey's own per-calendar-day figure times 365 and the stock is implied by the two, and the survey covers fuel-burning vehicles only"
+vehicle_usage_jp_lifetime,series,mean_age_.*,A,AIRIA 平均車齢 as published
+vehicle_usage_jp_lifetime,series,mean_use_years_.*,B,"AIRIA 平均使用年数 as published, but it counts a temporary deregistration as an ending, so it is a floor on years to scrappage"
+vehicle_technology_jp_mlit,powertrain,ICE|HEV,A,MLIT 自動車燃費一覧 published 1km走行におけるCO2排出量 per certified grade; the model value is the grade-weighted mean
+sales_jada_jp,basis,registrations,A,JADA 乗用車ブランド通称名別順位 as published (top 50 nameplates; kei and foreign brands excluded by the source)

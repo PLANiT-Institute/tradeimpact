@@ -1,0 +1,23 @@
+company,jada_label,mlit_models,segment,note
+toyota,カローラ,カローラ;カローラツーリング;カローラスポーツ;カローラクロス;カローラアクシオ;カローラフィールダー;GRカローラ,passenger_car,"JADA's ブランド通称名 sums every variant of one 車名 (its own note: 国産メーカーの同一車名を合算したものであり、海外生産車を含みます), so the certified value pools the whole Corolla family"
+toyota,ヤリス,ヤリス;ヤリスクロス;GRヤリス,passenger_car,Yaris family including the Cross and the GR
+toyota,シエンタ,シエンタ,passenger_car,
+toyota,プリウス,プリウス,passenger_car,"hybrid only; the plug-in grades are certified in hybrid mode and the workbook does not separate them, so they sit inside the HEV mean"
+toyota,アルファード,アルファード,passenger_car,"the workbook writes アルファード and ヴェルファイア in one block; the reader splits it, so both nameplates carry the same grades"
+toyota,ヴェルファイア,ヴェルファイア,passenger_car,see アルファード
+toyota,ヴォクシー,ヴォクシー,passenger_car,"the workbook writes ヴォクシー and ノア in one block; the reader splits it"
+toyota,ノア,ノア,passenger_car,see ヴォクシー
+toyota,ルーミー,ルーミー,passenger_car,built by Daihatsu and marked ※ in the workbook; the Toyota-badged rows are used
+toyota,ハリアー,ハリアー,passenger_car,
+toyota,アクア,アクア,passenger_car,hybrid only
+toyota,クラウン,クラウン,passenger_car,
+toyota,ランドクルーザー,ランドクルーザー,passenger_car,petrol and diesel grades pooled as ICE
+toyota,ライズ,ライズ,passenger_car,built by Daihatsu and marked ※ in the workbook
+toyota,RAV4,RAV4,passenger_car,
+toyota,86,86;GR86,passenger_car,built by SUBARU and marked ※2 in the workbook
+toyota,ハイエースワゴン,ハイエース,passenger_car,"the ranking counts the ワゴン (passenger) variant; the workbook lists the nameplate as ハイエース"
+toyota,JPNTAXI,,passenger_car,"out of scope of the technology tables read: an LPG hybrid, certified in the LPガス乗用車 workbook, which this build does not read"
+nissan,ノート,ノート;ノートオーラ,passenger_car,"the ranking sums Note and Note Aura under one 車名; both are e-POWER hybrids"
+nissan,セレナ,セレナ,passenger_car,
+nissan,エクストレイル,エクストレイル,passenger_car,e-POWER only in these years
+nissan,キックス,,passenger_car,"withdrawn from the Japanese line-up before either 燃費一覧 edition on hand (令和7年3月 and 令和8年3月), so no certified value exists to price it with"
