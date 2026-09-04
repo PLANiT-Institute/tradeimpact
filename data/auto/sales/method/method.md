@@ -6,15 +6,16 @@ Observed sales or first registrations of the target exporters' vehicles in each 
 market, by model and powertrain, per cohort year. This is the `Volume(t)` term of the TI
 formula and the anchor of the whole analysis (research process step 1–2).
 
-- **Exporters**: Hyundai, Kia (Korea); Toyota, Honda (Japan; Honda is the second-largest
-  Japanese automaker by global sales — swap if the team decides otherwise).
-- **Importers**: EU27 member states, United States, Australia.
+- **Exporters in scope now**: Hyundai and Kia (Korea) — `method/companies.csv`. The Japanese
+  exporters (Toyota, Honda) are deferred; their EEA snapshots stay pinned and re-enter with one
+  flag change.
+- **Importers**: EU27 member states and the United States now; Australia deferred.
 
 ## Required fields (processed output)
 
 | field | type | unit | note |
 |---|---|---|---|
-| company | text | — | hyundai / kia / toyota / honda |
+| company | text | — | exporter brand in lower case (`companies.csv`) |
 | destination | text | ISO 3166-1 alpha-2, or region label | importer market (country when the source gives it) |
 | destination_level | text | — | `country`, `region` (Kia IR reports Europe, Eastern Europe, Middle East, …), or `unknown` (Hyundai IR export rows: plant-side, destination not stated) |
 | origin | text | ISO 3166-1 alpha-2, or `ckd` / `special_vehicle` | production country when the source states the plant; empty for EEA registrations (origin unproven) |
@@ -47,7 +48,7 @@ All share the schema above; one file per raw source, written by the script named
 
 | processed file | script | rows | note |
 |---|---|---|---|
-| `sales_eea_eu27_2024.csv` | `script/auto/sales/extract_eea_registrations.py` | see script output | Toyota 803,094, Hyundai 429,936, Kia 414,677, Honda 40,270 registrations; powertrain from EEA; `ICE_OTHER` → `ICE` |
+| `sales_eea_eu27_2024.csv` | `script/auto/sales/extract_eea_registrations.py` | see script output | in-scope brands only: Hyundai 429,936 and Kia 414,677 registrations (Toyota 803,094 and Honda 40,270 are pinned but excluded); powertrain from EEA; `ICE_OTHER` → `ICE` |
 | `sales_kia_ir_2026.csv` | `script/auto/sales/extract_kia_ir.py` | 287 | Jan–Jun 2026 year-to-date; markets are IR regions except KR/US/CA/MX/IN/CN; `origin` = plant block; zero cells dropped |
 | `sales_hyundai_plant_2025.csv` | `script/auto/sales/extract_hyundai_ir.py` | 113 | overseas plants only, 2025; destination known for Domestic (plant country) and Korea segments, `export` otherwise |
 
@@ -63,20 +64,22 @@ split ICE from hybrid variants — central case ICE, all-HEV bound in the sensit
 Scripts in `script/auto/sales/`. One script per raw source; each writes a CSV to
 `processed/` in the required-fields shape above.
 
-1. EEA snapshots: flatten the `response` evidence rows; powertrain classes as recorded by
-   EEA; basis = `registrations`. (EU27 coverage for Toyota and Hyundai is complete for 2024.)
+1. EEA snapshots: flatten the `response` evidence rows for the brands in scope; powertrain
+   classes as recorded by EEA; basis = `registrations`.
 2. Kia workbook: `Total` sheet, Retail Sales block — model × market annual totals; map
    market labels to ISO codes; basis = `retail_sales`. Powertrain must be joined from the
    vehicle_technology dataset (the workbook carries model names only).
 3. Hyundai workbook: plant sales are production-side, not destination sales — use only
    where destination sales are absent, and record the basis honestly.
 
-## Gaps (to collect)
+## Coverage and gaps
 
-- Kia and Honda EU27 registrations (EEA API, same query pattern as the two snapshots).
-- US sales by model/powertrain for all four companies (candidates: company IR, EPA
-  certification/ sales data, Experian/Wards are paywalled).
-- Australia sales by model/powertrain (VFACTS is paywalled; FCAI summaries public).
+- EU27 2024: complete for both exporters (EEA registrations by country, model, powertrain).
+- United States: the Kia IR workbook's U.S.A column gives Kia retail sales by model for
+  January–June 2026 (a partial year, no powertrain split); the Hyundai IR workbook gives only
+  US-built cars sold in the US (HMMA and HMGMA Domestic segments), so imports from Korea are
+  missing from the Hyundai US cohort. A Hyundai monthly sales-by-region file would complete it.
+- Australia: deferred; the gathered files report Kia's Asia-Pacific region only.
 
 ## Rules
 
