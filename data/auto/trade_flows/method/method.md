@@ -22,7 +22,7 @@ production origin), and (c) covers Japan and Australia without any hand-gathered
 | hs6 | text | — | HS 2022 six-digit sub-heading (`method/hs_passenger_cars.csv`) |
 | powertrain_class | text | — | ICE / HEV / PHEV / BEV / OTHER from the HS sub-heading |
 | units | int | vehicles | number of items; empty when the reporter gave none |
-| quantity_flag | text | — | `reported`, `estimated` (Comtrade estimate), `not_reported` |
+| quantity_flag | text | — | `reported`, `estimated` (Comtrade estimate), `member_state_sum` (EU27 row: Comext publishes no supplementary quantity for the aggregate, so units are the sum of the member states), `not_reported` |
 | value | real | EUR or USD | trade value as reported |
 | currency | text | — | `EUR` (Comext) or `USD` (Comtrade) |
 | source_id | text | — | `eurostat_comext_ds045409` or `un_comtrade_public` |

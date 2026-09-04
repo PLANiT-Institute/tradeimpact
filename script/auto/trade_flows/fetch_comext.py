@@ -3,7 +3,8 @@
 Source of truth: Eurostat Comext dataset ds-045409 ("EU trade since 1988 by HS2-4-6 and CN8"),
 via the Comext dissemination API (JSON-stat 2.0). One request per partner covers every HS 8703
 six-digit sub-heading, every reporter (27 member states plus EU aggregates), flow 1 = imports,
-indicators SUPPLEMENTARY_QUANTITY (number of vehicles) and VALUE_IN_EUROS, years 2022-2025.
+indicators SUPPLEMENTARY_QUANTITY (number of vehicles) and VALUE_IN_EUROS fetched separately
+(the API drops the quantity when both are requested together), years 2022-2025.
 Each response is saved verbatim as data/auto/trade_flows/raw/comext_imports_<partner>.json and
 registered in data/auto/raw_files.csv with URL, access date and hash.
 
@@ -49,42 +50,50 @@ def main() -> None:
         if out.exists() and not args.force:
             print(f"{out.relative_to(REPO)}: pinned, skipped")
             continue
-        params = [
-            ("format", "JSON"),
-            ("lang", "EN"),
-            ("freq", "A"),
-            ("partner", partner),
-            ("flow", "1"),
-            ("indicators", "SUPPLEMENTARY_QUANTITY"),
-            ("indicators", "VALUE_IN_EUROS"),
-        ]
-        params += [("product", c) for c in codes] + [("time", y) for y in YEARS]
-        url = f"{API}?{urllib.parse.urlencode(params)}"
-        request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(request, timeout=600, context=context) as response:  # noqa: S310
-            payload = json.loads(response.read().decode())
-        if "value" not in payload:
-            raise SystemExit(f"Comext {partner}: unexpected payload {str(payload)[:200]}")
+        responses: dict[str, dict] = {}
+        urls: dict[str, str] = {}
+        # The API returns a value for one indicator only when both are requested together, so
+        # each indicator is fetched on its own and both responses are pinned in one raw file.
+        for indicator in ("SUPPLEMENTARY_QUANTITY", "VALUE_IN_EUROS"):
+            params = [
+                ("format", "JSON"),
+                ("lang", "EN"),
+                ("freq", "A"),
+                ("partner", partner),
+                ("flow", "1"),
+                ("indicators", indicator),
+            ]
+            params += [("product", c) for c in codes] + [("time", y) for y in YEARS]
+            url = f"{API}?{urllib.parse.urlencode(params)}"
+            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(request, timeout=600, context=context) as response:  # noqa: S310
+                payload = json.loads(response.read().decode())
+            if "value" not in payload:
+                raise SystemExit(f"Comext {partner} {indicator}: unexpected payload")
+            responses[indicator] = payload
+            urls[indicator] = url
+        url = " ; ".join(urls.values())
         out.write_text(
             json.dumps(
                 {
                     "accessed_date": accessed,
                     "source_id": SOURCE_ID,
                     "dataset_page": DATASET_PAGE,
-                    "request_url": url,
+                    "request_urls": urls,
                     "partner": partner,
                     "partner_name": name,
                     "flow": "imports",
                     "hs6": codes,
                     "years": list(YEARS),
-                    "response": payload,
+                    "responses": responses,
                 },
                 sort_keys=True,
             )
             + "\n"
         )
         register(out, url, accessed, partner)
-        print(f"{out.relative_to(REPO)}: {len(payload['value']):,} values")
+        n = {k: len(v["value"]) for k, v in responses.items()}
+        print(f"{out.relative_to(REPO)}: values per indicator {n}")
 
 
 def register(path: Path, url: str, accessed: str, partner: str) -> None:

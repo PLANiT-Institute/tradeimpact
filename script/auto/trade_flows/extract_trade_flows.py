@@ -99,14 +99,16 @@ def comext_rows(path: Path, classes: dict[str, str]) -> list[dict[str, object]]:
     """EU member-state imports: one row per reporter x hs6 x year with units and euros."""
     snap = json.loads(path.read_text())
     cells: dict[tuple[str, str, int], dict[str, float]] = {}
-    for cats, value in flatten(snap["response"]):
-        code = GEO_RECODE.get(cats["reporter"], cats["reporter"])
-        if code not in EU27 and code != EU_AGGREGATE:
-            continue
-        key = (code if code in EU27 else "EU27", cats["product"], int(cats["time"]))
-        cells.setdefault(key, {})[cats["indicators"]] = value
+    for indicator, payload in snap["responses"].items():
+        for cats, value in flatten(payload):
+            code = GEO_RECODE.get(cats["reporter"], cats["reporter"])
+            if code not in EU27:
+                continue  # the EU aggregate carries no supplementary quantity: summed below
+            cells.setdefault((code, cats["product"], int(cats["time"])), {})[indicator] = value
     rows = []
+    totals: dict[tuple[str, int], dict[str, float]] = {}
     for (importer, hs6, year), ind in sorted(cells.items()):
+        units = ind.get("SUPPLEMENTARY_QUANTITY")
         rows.append(
             {
                 "reporter": importer,
@@ -116,9 +118,32 @@ def comext_rows(path: Path, classes: dict[str, str]) -> list[dict[str, object]]:
                 "year": year,
                 "hs6": hs6,
                 "powertrain_class": classes[hs6],
-                "units": ind.get("SUPPLEMENTARY_QUANTITY"),
-                "quantity_flag": "reported",
+                "units": None if units is None else round(units),
+                "quantity_flag": "reported" if units is not None else "not_reported",
                 "value": ind.get("VALUE_IN_EUROS"),
+                "currency": "EUR",
+                "source_id": snap["source_id"],
+                "source_file": path.name,
+            }
+        )
+        total = totals.setdefault((hs6, year), {"units": 0.0, "value": 0.0, "n": 0})
+        if units is not None:
+            total["units"] += units
+            total["n"] += 1
+        total["value"] += ind.get("VALUE_IN_EUROS") or 0.0
+    for (hs6, year), total in sorted(totals.items()):
+        rows.append(
+            {
+                "reporter": "EU27",
+                "flow": "imports",
+                "exporter": snap["partner"],
+                "importer": "EU27",
+                "year": year,
+                "hs6": hs6,
+                "powertrain_class": classes[hs6],
+                "units": round(total["units"]) if total["n"] else None,
+                "quantity_flag": "member_state_sum" if total["n"] else "not_reported",
+                "value": round(total["value"], 2),
                 "currency": "EUR",
                 "source_id": snap["source_id"],
                 "source_file": path.name,
