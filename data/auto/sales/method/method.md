@@ -116,3 +116,25 @@ Scripts in `script/auto/sales/`. One script per raw source; each writes a CSV to
 as EV3, Ray EV, Niro), `unsplit` (Kia IR labels that fold ICE and HEV: Carnival, K5, K8, Seltos,
 Sorento, Sportage — priced as ICE centrally with an all-HEV bound) and `out_of_scope` (Bongo,
 Bus, Tasman, military vehicles: outside the 승용 class).
+
+## Japan (JADA, added 2026-09-04)
+
+| processed file | script | content |
+|---|---|---|
+| `sales_jada_jp.csv` | `script/auto/sales/extract_jada.py` | Japan registrations by nameplate and cohort year for the companies in scope (Toyota 1,197,210 in 2024 and 1,212,140 in 2025; Nissan 228,787 and 179,123), basis `registrations` |
+| `jada_fuel_mix_jp.csv` | same | company × cohort year × fuel: registrations and share, summed over the twelve monthly sheets, every maker (Toyota 2024: 65.6 % hybrid, 30.6 % petrol, 2.0 % diesel, 1.6 % plug-in hybrid, 0.14 % battery electric; Nissan: 83.4 % hybrid, 13.3 % petrol, 3.3 % battery electric) |
+| `jada_brand_registrations_jp.csv` | same | company × cohort year: passenger-car registrations including kei cars, and the part built outside Japan (JADA's 内輸入 row): Nissan imported 3.6 % of its 2024 Japanese sales, Honda 7.1 %, Toyota 0.13 % |
+
+Source: 一般社団法人 日本自動車販売協会連合会 (JADA) 統計データ, pages 340, 342 and 337
+(`jada_registration_statistics`), fetched by `fetch_jada.py`, which reads each page for its annual
+workbook link because the file ids change when a workbook is reissued. JADA sells the back series
+as paid books (page 517), so republishing these rows at row level is a question for the provenance
+audit; downloading them is free.
+
+Boundaries, none of which reconcile with each other, all recorded on the tables. The nameplate
+ranking excludes kei cars and foreign brands and is cut at the top 50, so it is a subset of a
+company's Japanese sales rather than the whole: Toyota's 1.20 M nameplate units sit against
+1.21 M in the brand table, but Nissan's 229 k sits against 398 k because Nissan's kei cars are
+outside the ranking. The fuel table excludes kei cars, folds Lexus into Toyota, and counts
+Japanese-brand cars built abroad as imports. **No JADA table crosses model with fuel**, so a
+Japanese cohort must apply the maker-level fuel mix to each nameplate as a disclosed assumption.

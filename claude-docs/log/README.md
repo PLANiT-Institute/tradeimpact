@@ -33,6 +33,9 @@ two that are not.
 
 | 2026-09-04 | Toyota and Honda brought into scope; Lexus treated as a separate company like Genesis; Nissan, Suzuki, Mazda, Mitsubishi, Subaru pinned out of scope | Lead asked for Toyota and the second Japanese maker; Honda is second worldwide, Nissan second in the EU27, so the choice is recorded rather than assumed | EU27 results for four companies; one flag moves Nissan in |
 
+| 2026-09-04 | Nissan in scope as the second Japanese maker, Honda pinned out | Lead's choice after the ranking was shown to depend on the basis: Honda second worldwide, Suzuki second on production and on Japanese sales with kei, Nissan second in the markets this project prices | EU27 result for Toyota, Hyundai, Kia, Nissan |
+| 2026-09-04 | Japan sales from JADA: nameplate registrations, maker fuel mix, brand registrations with the imported part | Free, machine-readable, the standard Japanese registration statistic; no Japanese publisher crosses model with fuel | Japan counted and unpriced until the benchmark is built; the fuel mix is the future powertrain-split assumption |
+
 ## Transitions
 
 | Date | Stage or phase | Event | Trigger | Consequence |

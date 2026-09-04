@@ -25,6 +25,9 @@ Rules: [`sales/method/method.md`](../../data/auto/sales/method/method.md).
 | `sales/processed/sales_hyundai_plant_2025.csv` | exists | 113 — Hyundai IR plant-side sales, 2025 (reconciliation and non-US destinations only) |
 | `sales/processed/sales_hyundai_us.csv` | exists | 41 — Hyundai IR US sales by model 2024 and 2025, Hyundai and Genesis, brand total incl. fleet |
 | `sales/processed/sales_kia_us.csv` | exists | 23 — Kia America US sales by model, full-year 2024 and 2025 |
+| `sales/processed/sales_jada_jp.csv` | exists | 42 — Japan registrations by nameplate, Toyota and Nissan, 2024 and 2025 |
+| `sales/processed/jada_fuel_mix_jp.csv` | exists | 133 — Japan registrations by maker and fuel with shares |
+| `sales/processed/jada_brand_registrations_jp.csv` | exists | 22 — Japan registrations by brand with the imported part |
 | `sales/processed/sales_hyundai_kr.csv` | exists | 146 — Hyundai IR Korea domestic sales and Korea export shipments by model and trim code, 2024 and 2025 |
 | `sales/method/us_model_map.csv` | exists | 20 — IR model name → EPA `base_model` + powertrain for the US market, with `powertrain_rule` (`explicit` · `mixed_central_ice` · `out_of_scope`) and a note |
 

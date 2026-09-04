@@ -1,604 +1,4 @@
 market,company,destination,model,powertrain,scenario,units,ti_per_vehicle_kgco2e,crossover_year,crossover_calendar_year,reason
-EU27,honda,AT,CIVIC E:HEV 2.0 ADVA,HEV,S1,34,4282.9007,12.597,2036.6,within lifetime
-EU27,honda,AT,CIVIC E:HEV 2.0 ELEG,HEV,S1,57,5626.9616,14.64,2038.6,within lifetime
-EU27,honda,AT,CIVIC E:HEV 2.0 SPOR,HEV,S1,28,4539.2399,12.978,2037.0,within lifetime
-EU27,honda,AT,CIVIC TYPE R 2.0 TYP,ICE,S1,12,-10824.9702,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,AT,CR-V E:HEV 2WD 2.0 E,HEV,S1,21,-105.2695,6.615,2030.6,within lifetime
-EU27,honda,AT,CR-V E:HEV 4WD 2.0 A,HEV,S1,82,-3785.0789,2.252,2026.3,within lifetime
-EU27,honda,AT,CR-V E:HEV 4WD 2.0 E,HEV,S1,45,-3777.0614,2.261,2026.3,within lifetime
-EU27,honda,AT,E:NY1 EV ADVANCE,BEV,S1,109,26843.8138,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,AT,E:NY1 EV ELEGANCE,BEV,S1,18,26843.8138,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,AT,HONDA E EV ADVANCE,BEV,S1,1,26897.804,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,AT,HR-V E:HEV 1.5 ADVAN,HEV,S1,227,2575.5577,10.153,2034.2,within lifetime
-EU27,honda,AT,HR-V E:HEV 1.5 ELEGA,HEV,S1,109,2575.5577,10.153,2034.2,within lifetime
-EU27,honda,AT,JAZZ 1.5 ADVANCE,HEV,S1,46,6518.5626,16.061,2040.1,after lifetime
-EU27,honda,AT,JAZZ 1.5 ADVANCE SPO,HEV,S1,22,6080.451,15.356,2039.4,after lifetime
-EU27,honda,AT,JAZZ 1.5 ELEGANCE,HEV,S1,41,6951.3293,16.771,2040.8,after lifetime
-EU27,honda,AT,JAZZ CROSSTAR 1.5 AD,HEV,S1,63,5628.4293,14.643,2038.6,within lifetime
-EU27,honda,AT,UNASSIGNED,BEV,S1,4,26843.8138,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,AT,ZR-V 2.0 ADVANCE,HEV,S1,49,349.2276,7.192,2031.2,within lifetime
-EU27,honda,AT,ZR-V 2.0 ELEGANCE,HEV,S1,17,797.3501,7.769,2031.8,within lifetime
-EU27,honda,AT,ZR-V 2.0 SPORT,HEV,S1,84,588.4146,7.499,2031.5,within lifetime
-EU27,honda,BE,CIVIC,HEV,S1,283,-4510.9797,0.139,2024.1,within lifetime
-EU27,honda,BE,CIVIC TYPE R,ICE,S1,38,-21731.5078,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BE,CR-V,HEV,S1,249,-11802.4019,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BE,E:NY1,BEV,S1,139,19714.3976,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,BE,HR-V,HEV,S1,513,-6713.3253,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BE,JAZZ,HEV,S1,220,-2680.0599,2.497,2026.5,within lifetime
-EU27,honda,BE,ZR-V,HEV,S1,233,-9092.8155,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BG,CIVIC,HEV,S1,28,13972.0407,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,BG,CIVIC TYPE R,ICE,S1,4,-5510.2491,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,BG,HONDA CR V,HEV,S1,8,8065.8822,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,BG,HONDA CRV,HEV,S1,60,3501.4889,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,BG,HONDA HRV,HEV,S1,20,11395.5308,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,BG,HONDA ZRV,HEV,S1,38,8803.3716,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,BG,JAZZ,HEV,S1,12,15280.1209,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,CY,CIVIC,HEV,S1,15,-684.2496,8.669,2032.7,within lifetime
-EU27,honda,CY,CIVIC TYPE R,ICE,S1,1,-20534.9623,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CY,CR-V,HEV,S1,26,-9728.894,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CY,E:NY1,BEV,S1,5,15880.955,604.628,2628.6,after lifetime
-EU27,honda,CY,HR-V,HEV,S1,81,-1849.6266,7.056,2031.1,within lifetime
-EU27,honda,CY,JAZZ,HEV,S1,5,3179.8953,14.416,2038.4,within lifetime
-EU27,honda,CY,ZR-V,HEV,S1,8,-4648.0648,3.379,2027.4,within lifetime
-EU27,honda,CZ,CIVIC,HEV,S1,123,5166.9509,55.367,2079.4,after lifetime
-EU27,honda,CZ,CIVIC TYPE R,ICE,S1,30,-9536.1481,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CZ,CR-V,HEV,S1,604,-2734.9756,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CZ,HR-V,HEV,S1,300,2999.1597,34.069,2058.1,after lifetime
-EU27,honda,CZ,JAZZ,HEV,S1,44,6141.3521,65.605,2089.6,after lifetime
-EU27,honda,CZ,ZR-V,HEV,S1,226,1099.2615,16.865,2040.9,after lifetime
-EU27,honda,DE,,HEV,S1,3,-3568.7666,1.274,2025.3,within lifetime
-EU27,honda,DE,CIVIC,HEV,S1,823,-1656.1859,4.109,2028.1,within lifetime
-EU27,honda,DE,CIVIC,ICE,S1,1,-18409.3522,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DE,CIVIC TYPE R,ICE,S1,123,-17380.9324,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DE,E:NY1,BEV,S1,796,14253.3085,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,DE,HONDA CR-V,HEV,S1,1349,-9376.5929,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DE,HONDA E,BEV,S1,4,14438.5129,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,DE,HR-V,HEV,S1,1661,-4006.2478,0.654,2024.7,within lifetime
-EU27,honda,DE,JAZZ,HEV,S1,1173,-354.6136,6.17,2030.2,within lifetime
-EU27,honda,DE,ZR-V,HEV,S1,855,-6089.0086,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DK,CIVIC E:HEV,HEV,S1,35,-2404.2352,3.977,2028.0,within lifetime
-EU27,honda,DK,CIVIC E:HEV,ICE,S1,1,-1663.027,4.766,2028.8,within lifetime
-EU27,honda,DK,E:NY1,BEV,S1,510,19262.2641,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,DK,HR-V E:HEV,HEV,S1,161,-5120.5275,1.283,2025.3,within lifetime
-EU27,honda,DK,HR-V E:HEV,ICE,S1,1,-4679.1599,1.702,2025.7,within lifetime
-EU27,honda,DK,JAZZ E:HEV,HEV,S1,51,-1701.548,4.724,2028.7,within lifetime
-EU27,honda,EE,CIVIC,HEV,S1,39,2451.906,13.539,2037.5,within lifetime
-EU27,honda,EE,CIVIC TYPE R,ICE,S1,8,-12667.2378,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,EE,CR-V,HEV,S1,217,-4792.6853,5.812,2029.8,within lifetime
-EU27,honda,EE,E:NY1,BEV,S1,3,20280.6795,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,EE,HR-V,HEV,S1,87,414.874,11.154,2035.2,within lifetime
-EU27,honda,EE,JAZZ,HEV,S1,37,3844.4963,15.289,2039.3,within lifetime
-EU27,honda,EE,ZR-V,HEV,S1,119,-1578.8933,8.993,2033.0,within lifetime
-EU27,honda,ES,CIVIC,HEV,S1,922,-979.4246,8.312,2032.3,within lifetime
-EU27,honda,ES,CIVIC TYPE R,ICE,S1,46,-23541.3367,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,ES,CR-V,HEV,S1,429,-9181.8081,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,ES,E:NY1,BEV,S1,35,29654.6503,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,ES,HONDA E,BEV,S1,15,29755.5061,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,ES,HR-V,HEV,S1,1188,-4482.2719,4.073,2028.1,within lifetime
-EU27,honda,ES,JAZZ,HEV,S1,474,671.7306,10.464,2034.5,within lifetime
-EU27,honda,ES,ZR-V,HEV,S1,644,-7386.1768,0.85,2024.9,within lifetime
-EU27,honda,FI,CIVIC,HEV,S1,22,-19579.2327,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,CIVIC TYPE R,ICE,S1,1,-39645.3839,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,CR-V,HEV,S1,57,-29395.9427,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,E:NY1,BEV,S1,2,11677.6014,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,FI,HR-V,HEV,S1,21,-22195.8536,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,JAZZ,HEV,S1,33,-17500.7198,0.062,2024.1,within lifetime
-EU27,honda,FI,ZR-V,HEV,S1,30,-24868.8656,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,CIVIC,HEV,S1,1190,-2434.7465,3.064,2027.1,within lifetime
-EU27,honda,FR,CIVIC TYPE R,ICE,S1,5,-19431.8808,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,CR-V,HEV,S1,149,-9269.0836,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,E:NY1,BEV,S1,437,23005.9367,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,FR,HR-V,HEV,S1,1265,-4826.8001,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,JAZZ,HEV,S1,814,-919.7348,5.929,2029.9,within lifetime
-EU27,honda,FR,ZR-V,HEV,S1,760,-7114.0607,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CIVIC,HEV,S1,42,-11915.8908,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CIVIC TYPE R,HEV,S1,1,-12490.6436,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CIVIC TYPE R,ICE,S1,9,-31893.6601,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CR-V,HEV,S1,44,-22738.1367,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,E:NY1,BEV,S1,29,11488.0829,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,GR,HR-V,HEV,S1,136,-14987.8801,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,JAZZ,HEV,S1,114,-10173.5134,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,ZR-V,HEV,S1,57,-17465.6381,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HR,CIVIC,HEV,S1,30,16367.5892,72.505,2096.5,after lifetime
-EU27,honda,HR,CIVIC TYPE R,ICE,S1,5,-5569.9346,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HR,CR-V,HEV,S1,49,5590.4502,28.362,2052.4,after lifetime
-EU27,honda,HR,HONDA E,BEV,S1,1,45986.2906,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,HR,HR-V,HEV,S1,27,13453.4811,59.359,2083.4,after lifetime
-EU27,honda,HR,JAZZ,HEV,S1,10,18511.5583,82.892,2106.9,after lifetime
-EU27,honda,HR,ZR-V,HEV,S1,34,10514.8631,47.084,2071.1,after lifetime
-EU27,honda,HU,CIVIC,HEV,S1,140,2093.2163,22.862,2046.9,after lifetime
-EU27,honda,HU,CIVIC TYPE R,ICE,S1,5,-21059.596,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HU,CR-V,HEV,S1,119,-9424.7393,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HU,E:NY1,BEV,S1,96,32455.8574,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,HU,HONDA E,BEV,S1,3,32571.3749,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,HU,HR-V,HEV,S1,179,-1484.4824,1.988,2026.0,within lifetime
-EU27,honda,HU,JAZZ,HEV,S1,60,3752.4124,33.265,2057.3,after lifetime
-EU27,honda,HU,ZR-V,HEV,S1,104,-4419.2639,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IE,CIVIC,HEV,S1,61,-7341.5251,2.237,2026.2,within lifetime
-EU27,honda,IE,CIVIC TYPE R,ICE,S1,3,-30971.3361,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IE,CR-V,HEV,S1,10,-19854.3808,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IE,E:NY1,BEV,S1,5,22731.409,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,IE,HONDA E,BEV,S1,1,23226.3713,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,IE,HR-V,HEV,S1,18,-10084.0688,0.195,2024.2,within lifetime
-EU27,honda,IE,JAZZ,HEV,S1,83,-4028.978,4.905,2028.9,within lifetime
-EU27,honda,IE,ZR-V,HEV,S1,23,-13258.8717,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,CIVIC,HEV,S1,440,-5151.9695,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,CIVIC TYPE R,ICE,S1,52,-25128.0232,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,CR-V,HEV,S1,841,-14917.1352,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,HR-V,HEV,S1,3188,-8227.4827,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,JAZZ,HEV,S1,1262,-3640.198,1.379,2025.4,within lifetime
-EU27,honda,IT,ZR-V,HEV,S1,1588,-10828.3267,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,CIVIC,HEV,S1,10,-11828.426,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,CIVIC TYPE-R,ICE,S1,5,-35535.5169,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,CR-V,HEV,S1,55,-23525.4933,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,HR-V,HEV,S1,38,-14790.614,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,JAZZ,HEV,S1,19,-9522.1074,0.963,2025.0,within lifetime
-EU27,honda,LT,ZR-V,HEV,S1,24,-17954.2647,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LV,CIVIC,HEV,S1,5,-6814.4648,4.346,2028.3,within lifetime
-EU27,honda,LV,CIVIC TYPE R,ICE,S1,2,-30922.6829,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LV,CR-V,HEV,S1,63,-18682.8197,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LV,E:NY1,BEV,S1,1,27898.1082,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,LV,HRV,HEV,S1,25,-10036.7481,1.896,2025.9,within lifetime
-EU27,honda,LV,JAZZ,HEV,S1,5,-4689.129,6.078,2030.1,within lifetime
-EU27,honda,LV,ZR-V,HEV,S1,25,-13409.8616,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,MT,CIVIC,HEV,S1,3,7040.0445,187.833,2211.8,after lifetime
-EU27,honda,MT,CR-V,HEV,S1,1,-156.9109,7.036,2031.0,within lifetime
-EU27,honda,MT,E NY1,BEV,S1,11,16957.1336,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,MT,HR-V,HEV,S1,1,5335.5025,140.039,2164.0,after lifetime
-EU27,honda,MT,JAZZ,HEV,S1,9,8407.8827,229.024,2253.0,after lifetime
-EU27,honda,MT,ZR-V,HEV,S1,4,3488.9152,92.088,2116.1,after lifetime
-EU27,honda,NL,CIVIC,HEV,S1,202,-10109.0413,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,CIVIC TYPE R,ICE,S1,1,-28015.3202,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,CR-V,HEV,S1,60,-17293.154,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,E:NY1,BEV,S1,118,13403.3611,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,NL,HR-V,HEV,S1,311,-12446.704,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,JAZZ,HEV,S1,218,-8222.3531,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,ZR-V,HEV,S1,56,-14910.6979,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,CIVIC,HEV,S1,423,1541.2874,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,PL,CIVIC TYPE R,ICE,S1,51,-23192.6897,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,PL,CR-V,HEV,S1,997,-11038.6158,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,PL,HR-V,HEV,S1,1604,-1777.1806,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,PL,JAZZ,HEV,S1,199,3129.67,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,PL,ZR-V,HEV,S1,608,-5091.8283,,,"r_fleet <= 0: benchmark non-declining, no crossover"
-EU27,honda,PT,CIVIC,HEV,S1,11,-6324.5402,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,CIVIC TYPE R,ICE,S1,18,-27658.4712,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,CR-V,HEV,S1,19,-12653.2734,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,E:NY1,BEV,S1,34,26638.0091,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,PT,HR-V,HEV,S1,410,-8973.1355,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,JAZZ,HEV,S1,133,-3692.7509,3.708,2027.7,within lifetime
-EU27,honda,PT,ZR-V,HEV,S1,41,-11808.0377,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,CIVIC,HEV,S1,283,-9329.6121,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,CIVIC TYPE R,ICE,S1,19,-34808.3092,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,CR-V,HEV,S1,360,-20453.9243,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,E:NY1,BEV,S1,3,23598.2577,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,RO,HR-V,HEV,S1,234,-12563.8619,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,JAZZ,HEV,S1,28,-6383.3476,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,ZR-V,HEV,S1,142,-15967.953,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,CIVIC,HEV,S1,116,-4846.6494,2.263,2026.3,within lifetime
-EU27,honda,SE,CIVIC TYPE R,ICE,S1,12,-23361.6371,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,CR-V,HEV,S1,113,-12526.1656,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,E:NY1,BEV,S1,326,22608.5985,141.523,2165.5,after lifetime
-EU27,honda,SE,HR-V,HEV,S1,207,-7608.287,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,JAZZ,HEV,S1,120,-3279.8647,3.729,2027.7,within lifetime
-EU27,honda,SE,ZR-V,HEV,S1,58,-9970.3356,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SI,CIVIC / 5 VRAT / 2.0 / HEV,HEV,S1,54,12234.7477,33.217,2057.2,after lifetime
-EU27,honda,SI,CIVIC / 5 VRAT / 2.0 / TYPE R,ICE,S1,1,-9945.1962,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SI,CR-V / 2.0 / 4WD / E-CVT / HIBRID,HEV,S1,1,-3682.3899,2.101,2026.1,within lifetime
-EU27,honda,SI,CR-V / 2.0 / FHEV / AVT / 2WD,HEV,S1,17,5431.4167,18.483,2042.5,after lifetime
-EU27,honda,SI,CR-V / 2.0 / FHEV / AVT / 4WD,HEV,S1,42,88.8404,8.496,2032.5,within lifetime
-EU27,honda,SI,HR-V / 1.5 / E-CVT / FHEV,HEV,S1,39,9202.6471,26.328,2050.3,after lifetime
-EU27,honda,SI,HR-V / 1.5 / E-CVT FHEV,HEV,S1,2,9202.6471,26.328,2050.3,after lifetime
-EU27,honda,SI,JAZZ / 1.5 / HIBRID,HEV,S1,5,14985.2002,39.998,2064.0,after lifetime
-EU27,honda,SI,JAZZ / 1.5 / HIBRID / CROSS,HEV,S1,8,13602.4158,36.52,2060.5,after lifetime
-EU27,honda,SI,JAZZ / 1.5 / HIBRID CROSS,HEV,S1,4,13602.4158,36.52,2060.5,after lifetime
-EU27,honda,SI,ZR-V / 2.0 / EHEV / AVT /,HEV,S1,71,6343.2374,20.313,2044.3,after lifetime
-EU27,honda,SK,CIVIC,HEV,S1,44,-2677.7377,3.658,2027.7,within lifetime
-EU27,honda,SK,CIVIC TYPE R,ICE,S1,6,-22629.397,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,CR-V,HEV,S1,232,-13492.7972,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,HR-V,HEV,S1,188,-5723.6171,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,HR-V.,HEV,S1,1,-5723.6171,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,JAZZ,HEV,S1,31,-1203.5358,6.394,2030.4,within lifetime
-EU27,honda,SK,ZR-V,HEV,S1,137,-8287.6962,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,AT,CIVIC E:HEV 2.0 ADVA,HEV,S2,34,1224.774,7.663,2031.7,within lifetime
-EU27,honda,AT,CIVIC E:HEV 2.0 ELEG,HEV,S2,57,2568.8349,8.906,2032.9,within lifetime
-EU27,honda,AT,CIVIC E:HEV 2.0 SPOR,HEV,S2,28,1481.1132,7.895,2031.9,within lifetime
-EU27,honda,AT,CIVIC TYPE R 2.0 TYP,ICE,S2,12,-13883.0969,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,AT,CR-V E:HEV 2WD 2.0 E,HEV,S2,21,-3163.3962,4.024,2028.0,within lifetime
-EU27,honda,AT,CR-V E:HEV 4WD 2.0 A,HEV,S2,82,-6843.2056,1.37,2025.4,within lifetime
-EU27,honda,AT,CR-V E:HEV 4WD 2.0 E,HEV,S2,45,-6835.1881,1.375,2025.4,within lifetime
-EU27,honda,AT,E:NY1 EV ADVANCE,BEV,S2,109,23785.6871,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,AT,E:NY1 EV ELEGANCE,BEV,S2,18,23785.6871,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,AT,HONDA E EV ADVANCE,BEV,S2,1,23839.6773,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,AT,HR-V E:HEV 1.5 ADVAN,HEV,S2,227,-482.569,6.177,2030.2,within lifetime
-EU27,honda,AT,HR-V E:HEV 1.5 ELEGA,HEV,S2,109,-482.569,6.177,2030.2,within lifetime
-EU27,honda,AT,JAZZ 1.5 ADVANCE,HEV,S2,46,3460.4359,9.771,2033.8,within lifetime
-EU27,honda,AT,JAZZ 1.5 ADVANCE SPO,HEV,S2,22,3022.3243,9.342,2033.3,within lifetime
-EU27,honda,AT,JAZZ 1.5 ELEGANCE,HEV,S2,41,3893.2026,10.203,2034.2,within lifetime
-EU27,honda,AT,JAZZ CROSSTAR 1.5 AD,HEV,S2,63,2570.3026,8.908,2032.9,within lifetime
-EU27,honda,AT,UNASSIGNED,BEV,S2,4,23785.6871,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,AT,ZR-V 2.0 ADVANCE,HEV,S2,49,-2708.8992,4.375,2028.4,within lifetime
-EU27,honda,AT,ZR-V 2.0 ELEGANCE,HEV,S2,17,-2260.7766,4.726,2028.7,within lifetime
-EU27,honda,AT,ZR-V 2.0 SPORT,HEV,S2,84,-2469.7121,4.562,2028.6,within lifetime
-EU27,honda,BE,CIVIC,HEV,S2,283,-6548.6672,0.091,2024.1,within lifetime
-EU27,honda,BE,CIVIC TYPE R,ICE,S2,38,-23769.1953,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BE,CR-V,HEV,S2,249,-13840.0894,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BE,E:NY1,BEV,S2,139,17676.7101,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,BE,HR-V,HEV,S2,513,-8751.0128,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BE,JAZZ,HEV,S2,220,-4717.7473,1.625,2025.6,within lifetime
-EU27,honda,BE,ZR-V,HEV,S2,233,-11130.503,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BG,CIVIC,HEV,S2,28,-4999.0671,4.416,2028.4,within lifetime
-EU27,honda,BG,CIVIC TYPE R,ICE,S2,4,-24481.3569,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BG,HONDA CR V,HEV,S2,8,-10905.2256,0.522,2024.5,within lifetime
-EU27,honda,BG,HONDA CRV,HEV,S2,60,-15469.6189,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BG,HONDA HRV,HEV,S2,20,-7575.5769,2.634,2026.6,within lifetime
-EU27,honda,BG,HONDA ZRV,HEV,S2,38,-10167.7361,0.973,2025.0,within lifetime
-EU27,honda,BG,JAZZ,HEV,S2,12,-3690.9869,5.378,2029.4,within lifetime
-EU27,honda,CY,CIVIC,HEV,S2,15,-7683.486,3.828,2027.8,within lifetime
-EU27,honda,CY,CIVIC TYPE R,ICE,S2,1,-27534.1987,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CY,CR-V,HEV,S2,26,-16728.1304,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CY,E:NY1,BEV,S2,5,8881.7186,23.291,2047.3,after lifetime
-EU27,honda,CY,HR-V,HEV,S2,81,-8848.863,3.116,2027.1,within lifetime
-EU27,honda,CY,JAZZ,HEV,S2,5,-3819.3411,6.366,2030.4,within lifetime
-EU27,honda,CY,ZR-V,HEV,S2,8,-11647.3012,1.492,2025.5,within lifetime
-EU27,honda,CZ,CIVIC,HEV,S2,123,-1708.6957,5.287,2029.3,within lifetime
-EU27,honda,CZ,CIVIC TYPE R,ICE,S2,30,-16411.7947,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CZ,CR-V,HEV,S2,604,-9610.6223,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CZ,HR-V,HEV,S2,300,-3876.4869,3.253,2027.3,within lifetime
-EU27,honda,CZ,JAZZ,HEV,S2,44,-734.2945,6.264,2030.3,within lifetime
-EU27,honda,CZ,ZR-V,HEV,S2,226,-5776.3851,1.61,2025.6,within lifetime
-EU27,honda,DE,,HEV,S2,3,-5981.1011,0.765,2024.8,within lifetime
-EU27,honda,DE,CIVIC,HEV,S2,823,-4068.5205,2.468,2026.5,within lifetime
-EU27,honda,DE,CIVIC,ICE,S2,1,-20821.6867,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DE,CIVIC TYPE R,ICE,S2,123,-19793.267,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DE,E:NY1,BEV,S2,796,11840.9739,268.072,2292.1,after lifetime
-EU27,honda,DE,HONDA CR-V,HEV,S2,1349,-11788.9274,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DE,HONDA E,BEV,S2,4,12026.1784,274.703,2298.7,after lifetime
-EU27,honda,DE,HR-V,HEV,S2,1661,-6418.5824,0.393,2024.4,within lifetime
-EU27,honda,DE,JAZZ,HEV,S2,1173,-2766.9481,3.706,2027.7,within lifetime
-EU27,honda,DE,ZR-V,HEV,S2,855,-8501.3432,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DK,CIVIC E:HEV,HEV,S2,35,-3017.9271,3.562,2027.6,within lifetime
-EU27,honda,DK,CIVIC E:HEV,ICE,S2,1,-2276.7189,4.269,2028.3,within lifetime
-EU27,honda,DK,E:NY1,BEV,S2,510,18648.5722,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,DK,HR-V E:HEV,HEV,S2,161,-5734.2194,1.149,2025.1,within lifetime
-EU27,honda,DK,HR-V E:HEV,ICE,S2,1,-5292.8518,1.524,2025.5,within lifetime
-EU27,honda,DK,JAZZ E:HEV,HEV,S2,51,-2315.2398,4.231,2028.2,within lifetime
-EU27,honda,EE,CIVIC,HEV,S2,39,-106.6156,10.346,2034.3,within lifetime
-EU27,honda,EE,CIVIC TYPE R,ICE,S2,8,-15225.7594,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,EE,CR-V,HEV,S2,217,-7351.2069,4.441,2028.4,within lifetime
-EU27,honda,EE,E:NY1,BEV,S2,3,17722.1579,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,EE,HR-V,HEV,S2,87,-2143.6477,8.524,2032.5,within lifetime
-EU27,honda,EE,JAZZ,HEV,S2,37,1285.9746,11.683,2035.7,within lifetime
-EU27,honda,EE,ZR-V,HEV,S2,119,-4137.4149,6.872,2030.9,within lifetime
-EU27,honda,ES,CIVIC,HEV,S2,922,-6573.6751,4.34,2028.3,within lifetime
-EU27,honda,ES,CIVIC TYPE R,ICE,S2,46,-29135.5872,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,ES,CR-V,HEV,S2,429,-14776.0586,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,ES,E:NY1,BEV,S2,35,24060.3998,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,ES,HONDA E,BEV,S2,15,24161.2556,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,ES,HR-V,HEV,S2,1188,-10076.5224,2.127,2026.1,within lifetime
-EU27,honda,ES,JAZZ,HEV,S2,474,-4922.5199,5.464,2029.5,within lifetime
-EU27,honda,ES,ZR-V,HEV,S2,644,-12980.4273,0.444,2024.4,within lifetime
-EU27,honda,FI,CIVIC,HEV,S2,22,-12834.1451,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,CIVIC TYPE R,ICE,S2,1,-32900.2963,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,CR-V,HEV,S2,57,-22650.8551,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,E:NY1,BEV,S2,2,18422.689,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,FI,HR-V,HEV,S2,21,-15450.766,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,JAZZ,HEV,S2,33,-10755.6322,0.137,2024.1,within lifetime
-EU27,honda,FI,ZR-V,HEV,S2,30,-18123.778,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,CIVIC,HEV,S2,1190,-6267.1089,1.413,2025.4,within lifetime
-EU27,honda,FR,CIVIC TYPE R,ICE,S2,5,-23264.2433,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,CR-V,HEV,S2,149,-13101.4461,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,E:NY1,BEV,S2,437,19173.5742,240.945,2264.9,after lifetime
-EU27,honda,FR,HR-V,HEV,S2,1265,-8659.1626,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,JAZZ,HEV,S2,814,-4752.0973,2.735,2026.7,within lifetime
-EU27,honda,FR,ZR-V,HEV,S2,760,-10946.4232,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CIVIC,HEV,S2,42,-15284.3989,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CIVIC TYPE R,HEV,S2,1,-15859.1518,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CIVIC TYPE R,ICE,S2,9,-35262.1682,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CR-V,HEV,S2,44,-26106.6449,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,E:NY1,BEV,S2,29,8119.5748,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,GR,HR-V,HEV,S2,136,-18356.3883,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,JAZZ,HEV,S2,114,-13542.0216,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,ZR-V,HEV,S2,57,-20834.1463,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HR,CIVIC,HEV,S2,30,1788.4094,9.883,2033.9,within lifetime
-EU27,honda,HR,CIVIC TYPE R,ICE,S2,5,-20149.1145,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HR,CR-V,HEV,S2,49,-8988.7297,3.866,2027.9,within lifetime
-EU27,honda,HR,HONDA E,BEV,S2,1,31407.1107,644.747,2668.7,after lifetime
-EU27,honda,HR,HR-V,HEV,S2,27,-1125.6988,8.091,2032.1,within lifetime
-EU27,honda,HR,JAZZ,HEV,S2,10,3932.3785,11.299,2035.3,within lifetime
-EU27,honda,HR,ZR-V,HEV,S2,34,-4064.3168,6.418,2030.4,within lifetime
-EU27,honda,HU,CIVIC,HEV,S2,140,-9809.667,2.36,2026.4,within lifetime
-EU27,honda,HU,CIVIC TYPE R,ICE,S2,5,-32962.4793,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HU,CR-V,HEV,S2,119,-21327.6226,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HU,E:NY1,BEV,S2,96,20552.9741,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,HU,HONDA E,BEV,S2,3,20668.4917,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,HU,HR-V,HEV,S2,179,-13387.3657,0.205,2024.2,within lifetime
-EU27,honda,HU,JAZZ,HEV,S2,60,-8150.4709,3.434,2027.4,within lifetime
-EU27,honda,HU,ZR-V,HEV,S2,104,-16322.1472,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IE,CIVIC,HEV,S2,61,-10014.0508,1.673,2025.7,within lifetime
-EU27,honda,IE,CIVIC TYPE R,ICE,S2,3,-33643.8618,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IE,CR-V,HEV,S2,10,-22526.9065,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IE,E:NY1,BEV,S2,5,20058.8833,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,IE,HONDA E,BEV,S2,1,20553.8456,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,IE,HR-V,HEV,S2,18,-12756.5946,0.146,2024.1,within lifetime
-EU27,honda,IE,JAZZ,HEV,S2,83,-6701.5037,3.667,2027.7,within lifetime
-EU27,honda,IE,ZR-V,HEV,S2,23,-15931.3974,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,CIVIC,HEV,S2,440,-10058.6356,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,CIVIC TYPE R,ICE,S2,52,-30034.6893,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,CR-V,HEV,S2,841,-19823.8014,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,HR-V,HEV,S2,3188,-13134.1488,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,JAZZ,HEV,S2,1262,-8546.8642,0.561,2024.6,within lifetime
-EU27,honda,IT,ZR-V,HEV,S2,1588,-15734.9929,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,CIVIC,HEV,S2,10,-14603.9423,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,CIVIC TYPE-R,ICE,S2,5,-38311.0332,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,CR-V,HEV,S2,55,-26301.0096,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,HR-V,HEV,S2,38,-17566.1303,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,JAZZ,HEV,S2,19,-12297.6237,0.708,2024.7,within lifetime
-EU27,honda,LT,ZR-V,HEV,S2,24,-20729.781,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LV,CIVIC,HEV,S2,5,-10099.4054,3.202,2027.2,within lifetime
-EU27,honda,LV,CIVIC TYPE R,ICE,S2,2,-34207.6235,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LV,CR-V,HEV,S2,63,-21967.7604,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LV,E:NY1,BEV,S2,1,24613.1675,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,LV,HRV,HEV,S2,25,-13321.6887,1.396,2025.4,within lifetime
-EU27,honda,LV,JAZZ,HEV,S2,5,-7974.0696,4.477,2028.5,within lifetime
-EU27,honda,LV,ZR-V,HEV,S2,25,-16694.8023,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,MT,CIVIC,HEV,S2,3,-2529.8417,6.781,2030.8,within lifetime
-EU27,honda,MT,CR-V,HEV,S2,1,-9726.7971,0.254,2024.3,within lifetime
-EU27,honda,MT,E NY1,BEV,S2,11,7387.2473,28.712,2052.7,after lifetime
-EU27,honda,MT,HR-V,HEV,S2,1,-4234.3838,5.055,2029.1,within lifetime
-EU27,honda,MT,JAZZ,HEV,S2,9,-1162.0035,8.268,2032.3,within lifetime
-EU27,honda,MT,ZR-V,HEV,S2,4,-6080.971,3.324,2027.3,within lifetime
-EU27,honda,NL,CIVIC,HEV,S2,202,-10986.317,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,CIVIC TYPE R,ICE,S2,1,-28892.596,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,CR-V,HEV,S2,60,-18170.4298,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,E:NY1,BEV,S2,118,12526.0853,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,NL,HR-V,HEV,S2,311,-13323.9798,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,JAZZ,HEV,S2,218,-9099.6289,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,ZR-V,HEV,S2,56,-15787.9736,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,CIVIC,HEV,S2,423,-16234.8308,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,CIVIC TYPE R,ICE,S2,51,-40968.808,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,CR-V,HEV,S2,997,-28814.734,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,HR-V,HEV,S2,1604,-19553.2988,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,JAZZ,HEV,S2,199,-14646.4482,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,ZR-V,HEV,S2,608,-22867.9465,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,CIVIC,HEV,S2,11,-11703.343,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,CIVIC TYPE R,ICE,S2,18,-33037.274,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,CR-V,HEV,S2,19,-18032.0763,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,E:NY1,BEV,S2,34,21259.2063,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,PT,HR-V,HEV,S2,410,-14351.9383,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,JAZZ,HEV,S2,133,-9071.5537,1.723,2025.7,within lifetime
-EU27,honda,PT,ZR-V,HEV,S2,41,-17186.8406,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,CIVIC,HEV,S2,283,-20202.1582,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,CIVIC TYPE R,ICE,S2,19,-45680.8554,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,CR-V,HEV,S2,360,-31326.4705,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,E:NY1,BEV,S2,3,12725.7115,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
-EU27,honda,RO,HR-V,HEV,S2,234,-23436.408,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,JAZZ,HEV,S2,28,-17255.8938,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,ZR-V,HEV,S2,142,-26840.4991,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,CIVIC,HEV,S2,116,-5783.633,1.954,2026.0,within lifetime
-EU27,honda,SE,CIVIC TYPE R,ICE,S2,12,-24298.6207,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,CR-V,HEV,S2,113,-13463.1493,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,E:NY1,BEV,S2,326,21671.6148,111.176,2135.2,after lifetime
-EU27,honda,SE,HR-V,HEV,S2,207,-8545.2706,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,JAZZ,HEV,S2,120,-4216.8483,3.22,2027.2,within lifetime
-EU27,honda,SE,ZR-V,HEV,S2,58,-10907.3192,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SI,CIVIC / 5 VRAT / 2.0 / HEV,HEV,S2,54,1666.5679,8.944,2032.9,within lifetime
-EU27,honda,SI,CIVIC / 5 VRAT / 2.0 / TYPE R,ICE,S2,1,-20513.376,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SI,CR-V / 2.0 / 4WD / E-CVT / HIBRID,HEV,S2,1,-14250.5697,0.566,2024.6,within lifetime
-EU27,honda,SI,CR-V / 2.0 / FHEV / AVT / 2WD,HEV,S2,17,-5136.763,4.977,2029.0,within lifetime
-EU27,honda,SI,CR-V / 2.0 / FHEV / AVT / 4WD,HEV,S2,42,-10479.3393,2.287,2026.3,within lifetime
-EU27,honda,SI,HR-V / 1.5 / E-CVT / FHEV,HEV,S2,39,-1365.5327,7.089,2031.1,within lifetime
-EU27,honda,SI,HR-V / 1.5 / E-CVT FHEV,HEV,S2,2,-1365.5327,7.089,2031.1,within lifetime
-EU27,honda,SI,JAZZ / 1.5 / HIBRID,HEV,S2,5,4417.0205,10.77,2034.8,within lifetime
-EU27,honda,SI,JAZZ / 1.5 / HIBRID / CROSS,HEV,S2,8,3034.236,9.833,2033.8,within lifetime
-EU27,honda,SI,JAZZ / 1.5 / HIBRID CROSS,HEV,S2,4,3034.236,9.833,2033.8,within lifetime
-EU27,honda,SI,ZR-V / 2.0 / EHEV / AVT /,HEV,S2,71,-4224.9424,5.469,2029.5,within lifetime
-EU27,honda,SK,CIVIC,HEV,S2,44,-8092.8872,1.476,2025.5,within lifetime
-EU27,honda,SK,CIVIC TYPE R,ICE,S2,6,-28044.5464,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,CR-V,HEV,S2,232,-18907.9466,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,HR-V,HEV,S2,188,-11138.7665,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,HR-V.,HEV,S2,1,-11138.7665,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,JAZZ,HEV,S2,31,-6618.6852,2.58,2026.6,within lifetime
-EU27,honda,SK,ZR-V,HEV,S2,137,-13702.8457,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,AT,CIVIC E:HEV 2.0 ADVA,HEV,S3,34,-9634.025,2.345,2026.3,within lifetime
-EU27,honda,AT,CIVIC E:HEV 2.0 ELEG,HEV,S3,57,-8289.9641,2.725,2026.7,within lifetime
-EU27,honda,AT,CIVIC E:HEV 2.0 SPOR,HEV,S3,28,-9377.6859,2.416,2026.4,within lifetime
-EU27,honda,AT,CIVIC TYPE R 2.0 TYP,ICE,S3,12,-24741.896,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,AT,CR-V E:HEV 2WD 2.0 E,HEV,S3,21,-14022.1952,1.232,2025.2,within lifetime
-EU27,honda,AT,CR-V E:HEV 4WD 2.0 A,HEV,S3,82,-17702.0046,0.419,2024.4,within lifetime
-EU27,honda,AT,CR-V E:HEV 4WD 2.0 E,HEV,S3,45,-17693.9871,0.421,2024.4,within lifetime
-EU27,honda,AT,E:NY1 EV ADVANCE,BEV,S3,109,13423.3539,41.939,2065.9,after lifetime
-EU27,honda,AT,E:NY1 EV ELEGANCE,BEV,S3,18,13423.3539,41.939,2065.9,after lifetime
-EU27,honda,AT,HONDA E EV ADVANCE,BEV,S3,1,13466.4328,42.338,2066.3,after lifetime
-EU27,honda,AT,HR-V E:HEV 1.5 ADVAN,HEV,S3,227,-11341.3681,1.89,2025.9,within lifetime
-EU27,honda,AT,HR-V E:HEV 1.5 ELEGA,HEV,S3,109,-11341.3681,1.89,2025.9,within lifetime
-EU27,honda,AT,JAZZ 1.5 ADVANCE,HEV,S3,46,-7398.3631,2.99,2027.0,within lifetime
-EU27,honda,AT,JAZZ 1.5 ADVANCE SPO,HEV,S3,22,-7836.4748,2.859,2026.9,within lifetime
-EU27,honda,AT,JAZZ 1.5 ELEGANCE,HEV,S3,41,-6965.5964,3.122,2027.1,within lifetime
-EU27,honda,AT,JAZZ CROSSTAR 1.5 AD,HEV,S3,63,-8288.4965,2.726,2026.7,within lifetime
-EU27,honda,AT,UNASSIGNED,BEV,S3,4,13423.3539,41.939,2065.9,after lifetime
-EU27,honda,AT,ZR-V 2.0 ADVANCE,HEV,S3,49,-13567.6982,1.339,2025.3,within lifetime
-EU27,honda,AT,ZR-V 2.0 ELEGANCE,HEV,S3,17,-13119.5757,1.446,2025.4,within lifetime
-EU27,honda,AT,ZR-V 2.0 SPORT,HEV,S3,84,-13328.5111,1.396,2025.4,within lifetime
-EU27,honda,BE,CIVIC,HEV,S3,283,-14973.2088,0.028,2024.0,within lifetime
-EU27,honda,BE,CIVIC TYPE R,ICE,S3,38,-32193.7369,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BE,CR-V,HEV,S3,249,-22264.631,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BE,E:NY1,BEV,S3,139,10023.5745,32.038,2056.0,after lifetime
-EU27,honda,BE,HR-V,HEV,S3,513,-17175.5544,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BE,JAZZ,HEV,S3,220,-13142.2889,0.497,2024.5,within lifetime
-EU27,honda,BE,ZR-V,HEV,S3,233,-19555.0446,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BG,CIVIC,HEV,S3,28,-17391.0864,1.351,2025.4,within lifetime
-EU27,honda,BG,CIVIC TYPE R,ICE,S3,4,-36873.3762,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BG,HONDA CR V,HEV,S3,8,-23297.2449,0.16,2024.2,within lifetime
-EU27,honda,BG,HONDA CRV,HEV,S3,60,-27861.6382,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,BG,HONDA HRV,HEV,S3,20,-19967.5963,0.806,2024.8,within lifetime
-EU27,honda,BG,HONDA ZRV,HEV,S3,38,-22559.7555,0.298,2024.3,within lifetime
-EU27,honda,BG,JAZZ,HEV,S3,12,-16083.0062,1.646,2025.6,within lifetime
-EU27,honda,CY,CIVIC,HEV,S3,15,-21823.0985,1.172,2025.2,within lifetime
-EU27,honda,CY,CIVIC TYPE R,ICE,S3,1,-41673.8112,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CY,CR-V,HEV,S3,26,-30867.7429,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CY,E:NY1,BEV,S3,5,3320.0191,10.795,2034.8,within lifetime
-EU27,honda,CY,HR-V,HEV,S3,81,-22988.4755,0.954,2025.0,within lifetime
-EU27,honda,CY,JAZZ,HEV,S3,5,-17958.9536,1.948,2025.9,within lifetime
-EU27,honda,CY,ZR-V,HEV,S3,8,-25786.9137,0.457,2024.5,within lifetime
-EU27,honda,CZ,CIVIC,HEV,S3,123,-10831.1577,1.618,2025.6,within lifetime
-EU27,honda,CZ,CIVIC TYPE R,ICE,S3,30,-25534.2567,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CZ,CR-V,HEV,S3,604,-18733.0843,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,CZ,HR-V,HEV,S3,300,-12998.9489,0.995,2025.0,within lifetime
-EU27,honda,CZ,JAZZ,HEV,S3,44,-9856.7565,1.917,2025.9,within lifetime
-EU27,honda,CZ,ZR-V,HEV,S3,226,-14898.8471,0.493,2024.5,within lifetime
-EU27,honda,DE,,HEV,S3,3,-14367.7204,0.234,2024.2,within lifetime
-EU27,honda,DE,CIVIC,HEV,S3,823,-12455.1398,0.755,2024.8,within lifetime
-EU27,honda,DE,CIVIC,ICE,S3,1,-29208.306,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DE,CIVIC TYPE R,ICE,S3,123,-28179.8863,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DE,E:NY1,BEV,S3,796,5518.7072,16.142,2040.1,after lifetime
-EU27,honda,DE,HONDA CR-V,HEV,S3,1349,-20175.5467,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DE,HONDA E,BEV,S3,4,5658.5413,16.542,2040.5,after lifetime
-EU27,honda,DE,HR-V,HEV,S3,1661,-14805.2016,0.12,2024.1,within lifetime
-EU27,honda,DE,JAZZ,HEV,S3,1173,-11153.5674,1.134,2025.1,within lifetime
-EU27,honda,DE,ZR-V,HEV,S3,855,-16887.9625,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,DK,CIVIC E:HEV,HEV,S3,35,-11703.6414,1.09,2025.1,within lifetime
-EU27,honda,DK,CIVIC E:HEV,ICE,S3,1,-10962.4332,1.306,2025.3,within lifetime
-EU27,honda,DK,E:NY1,BEV,S3,510,9808.9269,33.585,2057.6,after lifetime
-EU27,honda,DK,HR-V E:HEV,HEV,S3,161,-14419.9337,0.352,2024.4,within lifetime
-EU27,honda,DK,HR-V E:HEV,ICE,S3,1,-13978.5661,0.466,2024.5,within lifetime
-EU27,honda,DK,JAZZ E:HEV,HEV,S3,51,-11000.9541,1.295,2025.3,within lifetime
-EU27,honda,EE,CIVIC,HEV,S3,39,-12723.4681,3.166,2027.2,within lifetime
-EU27,honda,EE,CIVIC TYPE R,ICE,S3,8,-27842.6118,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,EE,CR-V,HEV,S3,217,-19968.0594,1.359,2025.4,within lifetime
-EU27,honda,EE,E:NY1,BEV,S3,3,6669.7374,22.257,2046.3,within lifetime
-EU27,honda,EE,HR-V,HEV,S3,87,-14760.5001,2.608,2026.6,within lifetime
-EU27,honda,EE,JAZZ,HEV,S3,37,-11330.8778,3.575,2027.6,within lifetime
-EU27,honda,EE,ZR-V,HEV,S3,119,-16754.2673,2.103,2026.1,within lifetime
-EU27,honda,ES,CIVIC,HEV,S3,922,-20105.6175,1.328,2025.3,within lifetime
-EU27,honda,ES,CIVIC TYPE R,ICE,S3,46,-42667.5295,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,ES,CR-V,HEV,S3,429,-28308.0009,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,ES,E:NY1,BEV,S3,35,10629.7075,32.495,2056.5,after lifetime
-EU27,honda,ES,HONDA E,BEV,S3,15,10727.4479,33.057,2057.1,after lifetime
-EU27,honda,ES,HR-V,HEV,S3,1188,-23608.4648,0.651,2024.7,within lifetime
-EU27,honda,ES,JAZZ,HEV,S3,474,-18454.4622,1.672,2025.7,within lifetime
-EU27,honda,ES,ZR-V,HEV,S3,644,-26512.3696,0.136,2024.1,within lifetime
-EU27,honda,FI,CIVIC,HEV,S3,22,-22878.3863,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,CIVIC TYPE R,ICE,S3,1,-42944.5374,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,CR-V,HEV,S3,57,-32695.0963,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,E:NY1,BEV,S3,2,8174.5243,42.436,2066.4,after lifetime
-EU27,honda,FI,HR-V,HEV,S3,21,-25495.0071,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FI,JAZZ,HEV,S3,33,-20799.8734,0.042,2024.0,within lifetime
-EU27,honda,FI,ZR-V,HEV,S3,30,-28168.0192,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,CIVIC,HEV,S3,1190,-15297.7224,0.432,2024.4,within lifetime
-EU27,honda,FR,CIVIC TYPE R,ICE,S3,5,-32294.8568,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,CR-V,HEV,S3,149,-22132.0596,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,E:NY1,BEV,S3,437,10498.5765,53.453,2077.5,after lifetime
-EU27,honda,FR,HR-V,HEV,S3,1265,-17689.776,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,FR,JAZZ,HEV,S3,814,-13782.7108,0.837,2024.8,within lifetime
-EU27,honda,FR,ZR-V,HEV,S3,760,-19977.0366,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CIVIC,HEV,S3,42,-22592.053,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CIVIC TYPE R,HEV,S3,1,-23166.8059,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CIVIC TYPE R,ICE,S3,9,-42569.8223,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,CR-V,HEV,S3,44,-33414.299,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,E:NY1,BEV,S3,29,1446.5132,9.246,2033.2,within lifetime
-EU27,honda,GR,HR-V,HEV,S3,136,-25664.0424,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,JAZZ,HEV,S3,114,-20849.6757,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,GR,ZR-V,HEV,S3,57,-28141.8004,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HR,CIVIC,HEV,S3,30,-16092.0546,3.024,2027.0,within lifetime
-EU27,honda,HR,CIVIC TYPE R,ICE,S3,5,-38029.5785,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HR,CR-V,HEV,S3,49,-26869.1937,1.183,2025.2,within lifetime
-EU27,honda,HR,HONDA E,BEV,S3,1,15188.1635,34.474,2058.5,after lifetime
-EU27,honda,HR,HR-V,HEV,S3,27,-19006.1628,2.476,2026.5,within lifetime
-EU27,honda,HR,JAZZ,HEV,S3,10,-13948.0855,3.458,2027.5,within lifetime
-EU27,honda,HR,ZR-V,HEV,S3,34,-21944.7808,1.964,2026.0,within lifetime
-EU27,honda,HU,CIVIC,HEV,S3,140,-22856.6481,0.722,2024.7,within lifetime
-EU27,honda,HU,CIVIC TYPE R,ICE,S3,5,-46009.4604,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HU,CR-V,HEV,S3,119,-34374.6037,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,HU,E:NY1,BEV,S3,96,8692.6885,26.787,2050.8,after lifetime
-EU27,honda,HU,HONDA E,BEV,S3,3,8782.1249,27.186,2051.2,after lifetime
-EU27,honda,HU,HR-V,HEV,S3,179,-26434.3468,0.063,2024.1,within lifetime
-EU27,honda,HU,JAZZ,HEV,S3,60,-21197.4521,1.051,2025.1,within lifetime
-EU27,honda,HU,ZR-V,HEV,S3,104,-29369.1283,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IE,CIVIC,HEV,S3,61,-23722.504,0.512,2024.5,within lifetime
-EU27,honda,IE,CIVIC TYPE R,ICE,S3,3,-47352.3149,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IE,CR-V,HEV,S3,10,-36235.3597,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IE,E:NY1,BEV,S3,5,8344.1266,19.834,2043.8,after lifetime
-EU27,honda,IE,HONDA E,BEV,S3,1,8729.5451,20.85,2044.8,after lifetime
-EU27,honda,IE,HR-V,HEV,S3,18,-26465.0477,0.045,2024.0,within lifetime
-EU27,honda,IE,JAZZ,HEV,S3,83,-20409.9568,1.122,2025.1,within lifetime
-EU27,honda,IE,ZR-V,HEV,S3,23,-29639.8506,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,CIVIC,HEV,S3,440,-19829.1631,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,CIVIC TYPE R,ICE,S3,52,-39805.2168,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,CR-V,HEV,S3,841,-29594.3288,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,HR-V,HEV,S3,3188,-22904.6763,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,IT,JAZZ,HEV,S3,1262,-18317.3916,0.172,2024.2,within lifetime
-EU27,honda,IT,ZR-V,HEV,S3,1588,-25505.5203,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,CIVIC,HEV,S3,10,-26958.6579,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,CIVIC TYPE-R,ICE,S3,5,-50665.7488,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,CR-V,HEV,S3,55,-38655.7251,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,HR-V,HEV,S3,38,-29920.8458,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LT,JAZZ,HEV,S3,19,-24652.3392,0.217,2024.2,within lifetime
-EU27,honda,LT,ZR-V,HEV,S3,24,-33084.4966,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LV,CIVIC,HEV,S3,5,-24787.1095,0.98,2025.0,within lifetime
-EU27,honda,LV,CIVIC TYPE R,ICE,S3,2,-48895.3276,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LV,CR-V,HEV,S3,63,-36655.4644,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,LV,E:NY1,BEV,S3,1,10746.6098,33.443,2057.4,after lifetime
-EU27,honda,LV,HRV,HEV,S3,25,-28009.3928,0.427,2024.4,within lifetime
-EU27,honda,LV,JAZZ,HEV,S3,5,-22661.7737,1.37,2025.4,within lifetime
-EU27,honda,LV,ZR-V,HEV,S3,25,-31382.5064,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,MT,CIVIC,HEV,S3,3,-12069.831,2.075,2026.1,within lifetime
-EU27,honda,MT,CR-V,HEV,S3,1,-19266.7864,0.078,2024.1,within lifetime
-EU27,honda,MT,E NY1,BEV,S3,11,2978.121,13.157,2037.2,within lifetime
-EU27,honda,MT,HR-V,HEV,S3,1,-13774.373,1.547,2025.5,within lifetime
-EU27,honda,MT,JAZZ,HEV,S3,9,-10701.9928,2.53,2026.5,within lifetime
-EU27,honda,MT,ZR-V,HEV,S3,4,-15620.9603,1.017,2025.0,within lifetime
-EU27,honda,NL,CIVIC,HEV,S3,202,-18658.6703,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,CIVIC TYPE R,ICE,S3,1,-36564.9492,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,CR-V,HEV,S3,60,-25842.783,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,E:NY1,BEV,S3,118,4826.9458,16.701,2040.7,after lifetime
-EU27,honda,NL,HR-V,HEV,S3,311,-20996.333,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,JAZZ,HEV,S3,218,-16771.9821,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,NL,ZR-V,HEV,S3,56,-23460.3269,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,CIVIC,HEV,S3,423,-28408.4005,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,CIVIC TYPE R,ICE,S3,51,-53142.3776,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,CR-V,HEV,S3,997,-40988.3037,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,HR-V,HEV,S3,1604,-31726.8685,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,JAZZ,HEV,S3,199,-26820.0179,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PL,ZR-V,HEV,S3,608,-35041.5162,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,CIVIC,HEV,S3,11,-23119.0285,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,CIVIC TYPE R,ICE,S3,18,-44452.9595,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,CR-V,HEV,S3,19,-29447.7618,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,E:NY1,BEV,S3,34,9243.5079,34.45,2058.4,after lifetime
-EU27,honda,PT,HR-V,HEV,S3,410,-25767.6238,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,PT,JAZZ,HEV,S3,133,-20487.2392,0.527,2024.5,within lifetime
-EU27,honda,PT,ZR-V,HEV,S3,41,-28602.5261,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,CIVIC,HEV,S3,283,-31455.2435,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,CIVIC TYPE R,ICE,S3,19,-56933.9406,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,CR-V,HEV,S3,360,-42579.5557,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,E:NY1,BEV,S3,3,4095.732,16.31,2040.3,within lifetime
-EU27,honda,RO,HR-V,HEV,S3,234,-34689.4933,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,JAZZ,HEV,S3,28,-28508.9791,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,RO,ZR-V,HEV,S3,142,-38093.5844,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,CIVIC,HEV,S3,116,-15614.4924,0.598,2024.6,within lifetime
-EU27,honda,SE,CIVIC TYPE R,ICE,S3,12,-34129.4801,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,CR-V,HEV,S3,113,-23294.0086,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,E:NY1,BEV,S3,326,12290.107,56.44,2080.4,after lifetime
-EU27,honda,SE,HR-V,HEV,S3,207,-18376.13,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SE,JAZZ,HEV,S3,120,-14047.7077,0.985,2025.0,within lifetime
-EU27,honda,SE,ZR-V,HEV,S3,58,-20738.1786,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SI,CIVIC / 5 VRAT / 2.0 / HEV,HEV,S3,54,-15292.2704,2.737,2026.7,within lifetime
-EU27,honda,SI,CIVIC / 5 VRAT / 2.0 / TYPE R,ICE,S3,1,-37472.2143,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SI,CR-V / 2.0 / 4WD / E-CVT / HIBRID,HEV,S3,1,-31209.408,0.173,2024.2,within lifetime
-EU27,honda,SI,CR-V / 2.0 / FHEV / AVT / 2WD,HEV,S3,17,-22095.6013,1.523,2025.5,within lifetime
-EU27,honda,SI,CR-V / 2.0 / FHEV / AVT / 4WD,HEV,S3,42,-27438.1776,0.7,2024.7,within lifetime
-EU27,honda,SI,HR-V / 1.5 / E-CVT / FHEV,HEV,S3,39,-18324.371,2.169,2026.2,within lifetime
-EU27,honda,SI,HR-V / 1.5 / E-CVT FHEV,HEV,S3,2,-18324.371,2.169,2026.2,within lifetime
-EU27,honda,SI,JAZZ / 1.5 / HIBRID,HEV,S3,5,-12541.8178,3.296,2027.3,within lifetime
-EU27,honda,SI,JAZZ / 1.5 / HIBRID / CROSS,HEV,S3,8,-13924.6023,3.009,2027.0,within lifetime
-EU27,honda,SI,JAZZ / 1.5 / HIBRID CROSS,HEV,S3,4,-13924.6023,3.009,2027.0,within lifetime
-EU27,honda,SI,ZR-V / 2.0 / EHEV / AVT /,HEV,S3,71,-21183.7807,1.674,2025.7,within lifetime
-EU27,honda,SK,CIVIC,HEV,S3,44,-18804.4618,0.452,2024.5,within lifetime
-EU27,honda,SK,CIVIC TYPE R,ICE,S3,6,-38756.1211,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,CR-V,HEV,S3,232,-29619.5213,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,HR-V,HEV,S3,188,-21850.3412,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,HR-V.,HEV,S3,1,-21850.3412,,,crossover before sale year (product already above benchmark at t=0)
-EU27,honda,SK,JAZZ,HEV,S3,31,-17330.2599,0.789,2024.8,within lifetime
-EU27,honda,SK,ZR-V,HEV,S3,137,-24414.4203,,,crossover before sale year (product already above benchmark at t=0)
 EU27,hyundai,AT,BAYON,HEV,S1,60,2794.6135,10.458,2034.5,within lifetime
 EU27,hyundai,AT,BAYON,ICE,S1,705,2247.1651,9.701,2033.7,within lifetime
 EU27,hyundai,AT,G70 GENESIS G70,ICE,S1,1,-17234.2526,,,crossover before sale year (product already above benchmark at t=0)
@@ -3536,6 +2936,684 @@ EU27,kia,SK,STONIC,HEV,S3,8,-23515.1655,,,crossover before sale year (product al
 EU27,kia,SK,STONIC,ICE,S3,918,-23181.5721,,,crossover before sale year (product already above benchmark at t=0)
 EU27,kia,SK,XCEED,HEV,S3,4,-23792.6362,,,crossover before sale year (product already above benchmark at t=0)
 EU27,kia,SK,XCEED,ICE,S3,764,-26278.635,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,AT,NISSAN ARIYA,BEV,S1,208,26684.8936,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,AT,NISSAN JUKE,HEV,S1,158,5256.9106,14.066,2038.1,within lifetime
+EU27,nissan,AT,NISSAN JUKE,ICE,S1,449,328.0213,7.165,2031.2,within lifetime
+EU27,nissan,AT,NISSAN LEAF 62KWH,BEV,S1,19,26897.804,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,AT,NISSAN QASHQAI,HEV,S1,1370,-1637.9812,4.735,2028.7,within lifetime
+EU27,nissan,AT,NISSAN X-TRAIL,HEV,S1,270,-2934.9232,3.215,2027.2,within lifetime
+EU27,nissan,AT,PRIMASTAR,ICE,S1,57,-10446.0578,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,AT,TOWNSTAR,BEV,S1,31,26600.8578,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,AT,TOWNSTAR,ICE,S1,237,-4231.6176,1.756,2025.8,within lifetime
+EU27,nissan,BE,NISSAN ARIYA,BEV,S1,401,19676.1713,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BE,NISSAN JUKE,HEV,S1,1006,-4107.813,0.645,2024.6,within lifetime
+EU27,nissan,BE,NISSAN JUKE,ICE,S1,1454,-9399.4653,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,NISSAN LEAF 40KWH,BEV,S1,149,19989.0916,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BE,NISSAN LEAF 62KWH,BEV,S1,91,19792.8066,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BE,NISSAN MICRA,ICE,S1,4,-7245.6063,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,NISSAN QASHQAI,HEV,S1,3664,-8992.1345,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,NISSAN X-TRAIL,HEV,S1,1232,-11962.4589,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,PRIMASTAR,ICE,S1,232,-21927.8276,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,TOWNSTAR,BEV,S1,44,19404.3255,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BE,TOWNSTAR,ICE,S1,351,-14174.7091,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BG,NISSAN ARIYA,BEV,S1,18,36980.8542,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BG,NISSAN JUKE,HEV,S1,35,14075.0933,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,BG,NISSAN JUKE,ICE,S1,129,7472.0256,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,BG,NISSAN LEAF 40KWH,BEV,S1,3,38193.9659,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BG,NISSAN LEAF 62KWH,BEV,S1,3,37714.3639,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BG,NISSAN MICRA,ICE,S1,1,12227.4847,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,BG,NISSAN QASHQAI,HEV,S1,724,5003.3546,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,BG,NISSAN X-TRAIL,HEV,S1,292,3035.3103,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,CY,NISSAN ARIYA,BEV,S1,121,15938.158,607.557,2631.6,after lifetime
+EU27,nissan,CY,NISSAN JUKE,HEV,S1,130,931.699,10.994,2035.0,within lifetime
+EU27,nissan,CY,NISSAN JUKE,ICE,S1,319,-6076.4356,1.599,2025.6,within lifetime
+EU27,nissan,CY,NISSAN LEAF 40KWH,BEV,S1,1,17070.6566,667.369,2691.4,after lifetime
+EU27,nissan,CY,NISSAN LEAF 62KWH,BEV,S1,11,16313.5738,626.993,2651.0,after lifetime
+EU27,nissan,CY,NISSAN QASHQAI,HEV,S1,670,-7621.5856,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CY,NISSAN X-TRAIL,HEV,S1,208,-11203.3106,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,GT-R,ICE,S1,1,-35840.519,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,NISSAN ARIYA,BEV,S1,5,16740.2061,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,CZ,NISSAN JUKE,HEV,S1,21,5085.9514,54.535,2078.5,after lifetime
+EU27,nissan,CZ,NISSAN JUKE,ICE,S1,169,527.0342,11.919,2035.9,within lifetime
+EU27,nissan,CZ,NISSAN LEAF 40KWH,BEV,S1,4,18791.7813,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,CZ,NISSAN LEAF 62KWH,BEV,S1,3,18148.9171,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,CZ,NISSAN QASHQAI,HEV,S1,778,-1630.5061,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,NISSAN X-TRAIL,HEV,S1,243,-1785.3249,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,TOWNSTAR,BEV,S1,9,16943.9325,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,CZ,TOWNSTAR,ICE,S1,54,-3181.1334,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN ARIYA,BEV,S1,826,13805.7666,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,DE,NISSAN JUKE,HEV,S1,3221,-1510.7234,4.334,2028.3,within lifetime
+EU27,nissan,DE,NISSAN JUKE,ICE,S1,3452,-6414.026,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN LEAF 40 KWH,BEV,S1,231,14939.4075,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,DE,NISSAN LEAF 62 KWH,BEV,S1,257,14438.5129,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,DE,NISSAN MICRA,ICE,S1,9,-4880.1844,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN QASHQAI,HEV,S1,12300,-6731.7561,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN QASHQAI,ICE,S1,2,-9373.9732,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN X-TRAIL,HEV,S1,5150,-9283.3437,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,PRIMASTAR,ICE,S1,1378,-16922.1933,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,TOWNSTAR,BEV,S1,104,13593.5178,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,DE,TOWNSTAR,ICE,S1,2255,-10408.8683,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,NISSAN ARIYA,BEV,S1,1976,19261.2089,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,DK,NISSAN JUKE,HEV,S1,44,-3019.585,3.341,2027.3,within lifetime
+EU27,nissan,DK,NISSAN JUKE,ICE,S1,495,-7858.0778,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,NISSAN LEAF 40KWH,BEV,S1,20,19456.5745,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,DK,NISSAN LEAF 62KWH,BEV,S1,23,19313.7371,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,DK,NISSAN QASHQAI,HEV,S1,2750,-9765.7817,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,NISSAN X-TRAIL,HEV,S1,412,-10696.8785,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,QASHQAI,ICE,S1,1,-9203.3592,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,EE,NISSAN ARIYA,BEV,S1,40,19866.8427,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,EE,NISSAN JUKE,HEV,S1,32,3125.6347,14.373,2038.4,within lifetime
+EU27,nissan,EE,NISSAN JUKE,ICE,S1,48,-2372.8141,8.175,2032.2,within lifetime
+EU27,nissan,EE,NISSAN LEAF 62KWH,BEV,S1,2,20419.7843,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,EE,NISSAN QASHQAI,HEV,S1,275,-3060.375,7.484,2031.5,within lifetime
+EU27,nissan,EE,NISSAN X-TRAIL,HEV,S1,127,-4736.5591,5.865,2029.9,within lifetime
+EU27,nissan,EE,X-TRAIL,HEV,S1,1,-5597.1103,5.067,2029.1,within lifetime
+EU27,nissan,ES,NISSAN ARIYA,BEV,S1,234,29586.6123,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,ES,NISSAN JUKE,HEV,S1,2711,-877.9142,8.441,2032.4,within lifetime
+EU27,nissan,ES,NISSAN JUKE,ICE,S1,6671,-7641.6414,0.578,2024.6,within lifetime
+EU27,nissan,ES,NISSAN LEAF 40KWH,BEV,S1,82,29923.4815,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,ES,NISSAN LEAF 62KWH,BEV,S1,98,29726.6902,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,ES,NISSAN QASHQAI,HEV,S1,18059,-9173.6505,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,ES,NISSAN X-TRAIL,HEV,S1,3636,-10354.6067,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,ES,PRIMASTAR,ICE,S1,297,-22000.7563,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,ES,TOWNSTAR,ICE,S1,843,-13479.4872,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN ARIYA,BEV,S1,255,11648.4561,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,FI,NISSAN JUKE,HEV,S1,221,-19374.6607,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN JUKE,ICE,S1,320,-25690.644,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN LEAF 40KWH,BEV,S1,168,11759.7293,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,FI,NISSAN LEAF 62KWH,BEV,S1,28,11701.0466,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,FI,NISSAN QASHQAI,HEV,S1,1761,-26937.8702,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN X-TRAIL,HEV,S1,200,-29683.6553,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,PRIMASTAR,ICE,S1,2,-39927.0492,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,JUKE,HEV,S1,1,-2690.1052,2.597,2026.6,within lifetime
+EU27,nissan,FR,NISSAN ARIYA,BEV,S1,653,23000.6343,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,FR,NISSAN JUKE,HEV,S1,7917,-2411.0529,3.107,2027.1,within lifetime
+EU27,nissan,FR,NISSAN JUKE,ICE,S1,3586,-7121.4198,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,NISSAN LEAF 40KWH,BEV,S1,634,23100.0034,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,FR,NISSAN LEAF 62KWH,BEV,S1,31,23030.8015,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,FR,NISSAN MICRA,ICE,S1,6,-4309.5275,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,NISSAN QASHQAI,HEV,S1,13610,-4466.1735,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,NISSAN X-TRAIL,HEV,S1,2255,-8552.1038,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,PRIMASTAR,ICE,S1,815,-19351.3736,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,TOWNSTAR,BEV,S1,18,22901.9881,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,FR,TOWNSTAR,ICE,S1,44,-11905.0154,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,X-TRAIL,HEV,S1,2,-8981.4845,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN ARIYA,BEV,S1,20,11453.6371,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,GR,NISSAN JUKE,HEV,S1,438,-11999.0488,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN JUKE,ICE,S1,1630,-17726.3956,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN LEAF 40KWH,BEV,S1,5,12136.4754,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,GR,NISSAN LEAF 62KWH,BEV,S1,3,11650.1811,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,GR,NISSAN QASHQAI,HEV,S1,1928,-21012.7961,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN X-TRAIL,HEV,S1,218,-23339.9985,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,PRIMASTAR,ICE,S1,54,-31908.8326,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HR,NISSAN ARIYA,BEV,S1,11,45875.2229,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,HR,NISSAN JUKE,HEV,S1,11,16632.5138,73.754,2097.8,after lifetime
+EU27,nissan,HR,NISSAN JUKE,ICE,S1,129,10278.7097,46.136,2070.1,after lifetime
+EU27,nissan,HR,NISSAN QASHQAI,HEV,S1,546,6852.097,32.96,2057.0,after lifetime
+EU27,nissan,HR,NISSAN X-TRAIL,HEV,S1,144,5064.535,26.482,2050.5,after lifetime
+EU27,nissan,HR,QASHQAI,HEV,S1,3,3774.4443,21.96,2046.0,after lifetime
+EU27,nissan,HR,X-TRAIL,HEV,S1,2,7677.2817,36.038,2060.0,after lifetime
+EU27,nissan,HR,X-TRAIL,ICE,S1,1,5484.6026,27.982,2052.0,after lifetime
+EU27,nissan,HU,NISSAN ARIYA,BEV,S1,61,32210.1457,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,HU,NISSAN JUKE,HEV,S1,142,1545.0773,19.531,2043.5,within lifetime
+EU27,nissan,HU,NISSAN JUKE,ICE,S1,417,-5376.7362,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HU,NISSAN LEAF 40KWH,BEV,S1,299,32869.6356,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,HU,NISSAN LEAF 62KWH,BEV,S1,71,32571.3749,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,HU,NISSAN QASHQAI,HEV,S1,3340,-8854.8173,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HU,NISSAN X-TRAIL,HEV,S1,1241,-9236.1468,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HU,TOWNSTAR,BEV,S1,2,31936.0282,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,HU,TOWNSTAR,ICE,S1,16,-11066.8605,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,INTERSTAR,ICE,S1,7,-49707.5798,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,NISSAN ARIYA,BEV,S1,239,22862.4997,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,IE,NISSAN JUKE,HEV,S1,667,-6854.7922,2.615,2026.6,within lifetime
+EU27,nissan,IE,NISSAN JUKE,ICE,S1,1156,-13263.9246,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,NISSAN LEAF 40KWH,BEV,S1,388,23453.4402,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,IE,NISSAN LEAF 62KWH,BEV,S1,37,22921.3656,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,IE,NISSAN QASHQAI,HEV,S1,1870,-12759.5231,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,NISSAN X-TRAIL,HEV,S1,445,-15086.1257,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN ARIYA,BEV,S1,248,16533.9755,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,IT,NISSAN JUKE,HEV,S1,6067,-5215.9265,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN JUKE,ICE,S1,5933,-11003.1928,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN LEAF 40KWH,BEV,S1,327,17240.2176,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,IT,NISSAN LEAF 62KWH,BEV,S1,34,16708.0754,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,IT,NISSAN QASHQAI,HEV,S1,17662,-11225.5261,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN X-TRAIL,HEV,S1,3471,-13519.5707,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,PRIMASTAR,ICE,S1,514,-24729.7701,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,TOWNSTAR,BEV,S1,1,15656.2031,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,IT,TOWNSTAR,ICE,S1,676,-16205.0425,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN ARIYA,BEV,S1,65,23974.2951,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LT,NISSAN JUKE,HEV,S1,52,-10848.8952,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN JUKE,ICE,S1,110,-19230.9685,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN LEAF 40KWH,BEV,S1,3,24188.9636,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LT,NISSAN LEAF 62KWH,BEV,S1,12,24036.6333,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LT,NISSAN QASHQAI,HEV,S1,599,-21013.0813,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN X-TRAIL,HEV,S1,210,-22892.4363,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LV,NISSAN ARIYA,BEV,S1,38,27875.0703,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LV,NISSAN JUKE,HEV,S1,27,-5923.1949,5.061,2029.1,within lifetime
+EU27,nissan,LV,NISSAN JUKE,ICE,S1,74,-14498.7603,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LV,NISSAN LEAF 40KWH,BEV,S1,17,28199.5629,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LV,NISSAN LEAF 62KWH,BEV,S1,3,27983.5206,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LV,NISSAN QASHQAI,HEV,S1,336,-15969.3487,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LV,NISSAN X-TRAIL,HEV,S1,192,-18274.5496,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,MT,ARIYA,BEV,S1,1,17146.4366,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,MT,NISSAN ARIYA,BEV,S1,56,16928.9653,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,MT,NISSAN JUKE,HEV,S1,25,7130.9534,190.487,2214.5,after lifetime
+EU27,nissan,MT,NISSAN JUKE,ICE,S1,51,2740.5047,73.657,2097.7,after lifetime
+EU27,nissan,MT,NISSAN LEAF 40KWH,BEV,S1,40,17840.5477,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,MT,NISSAN LEAF 62KWH,BEV,S1,6,17209.5376,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,MT,NISSAN QASHQAI,HEV,S1,41,1307.4233,39.817,2063.8,after lifetime
+EU27,nissan,MT,NISSAN X-TRAIL,HEV,S1,9,-3481.8285,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,MT,QASHQAI,HEV,S1,1,1547.6312,45.363,2069.4,after lifetime
+EU27,nissan,NL,NISSAN ARIYA,BEV,S1,553,13324.9157,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,NL,NISSAN JUKE,HEV,S1,1102,-9577.9599,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN JUKE,ICE,S1,352,-15045.3145,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN LEAF 40KWH,BEV,S1,348,13812.8905,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,NL,NISSAN LEAF 62KWH,BEV,S1,34,13520.3695,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,NL,NISSAN MICRA,ICE,S1,1,-11680.5536,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN QASHQAI,HEV,S1,2818,-15088.0828,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN X-TRAIL,HEV,S1,257,-17222.1183,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,TOWNSTAR,BEV,S1,5,12537.499,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,PL,JUKE,ICE,S1,1,-4518.0013,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,PL,NISSAN JUKE,HEV,S1,354,2261.3678,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,PL,NISSAN JUKE,ICE,S1,750,-6171.1869,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,PL,NISSAN QASHQAI,HEV,S1,5737,-8162.1849,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,PL,NISSAN QASHQAI,ICE,S1,2,-8309.7113,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,PL,NISSAN X-TRAIL,HEV,S1,1737,-10691.1406,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,PL,QASHQAI,HEV,S1,1,-14394.7964,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,PL,QASHQAI,ICE,S1,2,-10033.2158,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,PL,TOWNSTAR,ICE,S1,176,-12320.7888,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,PL,X-TRAIL,HEV,S1,3,-15095.7751,,,"r_fleet <= 0: benchmark non-declining, no crossover"
+EU27,nissan,PT,NISSAN ARIYA,BEV,S1,320,26643.2425,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,PT,NISSAN JUKE,HEV,S1,311,-5160.8499,1.544,2025.5,within lifetime
+EU27,nissan,PT,NISSAN JUKE,ICE,S1,3769,-12291.4853,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PT,NISSAN LEAF 40KWH,BEV,S1,149,26784.8611,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,PT,NISSAN LEAF 62KWH,BEV,S1,40,26677.6485,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,PT,NISSAN QASHQAI,HEV,S1,2756,-13611.704,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PT,NISSAN X-TRAIL,HEV,S1,187,-16571.2096,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN ARIYA,BEV,S1,32,22819.9007,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,RO,NISSAN JUKE,HEV,S1,106,-9143.7067,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN JUKE,ICE,S1,55,-18004.1403,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN LEAF 40KWH,BEV,S1,63,24292.5094,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,RO,NISSAN LEAF 62KWH,BEV,S1,6,23782.4167,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,RO,NISSAN QASHQAI,HEV,S1,680,-20343.5567,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN X-TRAIL,HEV,S1,260,-20894.9932,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,NISSAN ARIYA,BEV,S1,749,22567.324,139.999,2164.0,after lifetime
+EU27,nissan,SE,NISSAN JUKE,HEV,S1,135,-4577.2094,2.509,2026.5,within lifetime
+EU27,nissan,SE,NISSAN JUKE,ICE,S1,457,-10745.3925,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,NISSAN LEAF 40KWH,BEV,S1,34,22702.8597,145.208,2169.2,after lifetime
+EU27,nissan,SE,NISSAN LEAF 62KWH,BEV,S1,8,22634.9761,142.524,2166.5,after lifetime
+EU27,nissan,SE,NISSAN QASHQAI,HEV,S1,1663,-11547.3952,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,NISSAN X-TRAIL,HEV,S1,411,-14600.1042,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,PRIMASTAR,ICE,S1,46,-23595.6277,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,TOWNSTAR,ICE,S1,3,-15531.5502,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SI,NISSAN ARIYA,BEV,S1,9,39061.2378,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,SI,NISSAN JUKE,HEV,S1,4,12109.6371,32.921,2056.9,after lifetime
+EU27,nissan,SI,NISSAN JUKE,ICE,S1,68,5922.3608,19.463,2043.5,after lifetime
+EU27,nissan,SI,NISSAN LEAF 40KWH,BEV,S1,2,40433.1572,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,SI,NISSAN QASHQAI,HEV,S1,741,2401.5474,12.673,2036.7,within lifetime
+EU27,nissan,SI,NISSAN X-TRAIL,HEV,S1,93,-15.9055,8.311,2032.3,within lifetime
+EU27,nissan,SI,TOWNSTAR,ICE,S1,52,-363.7487,7.702,2031.7,within lifetime
+EU27,nissan,SK,GT-R,ICE,S1,1,-58104.8647,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,MICRA,ICE,S1,2,-7074.7689,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,NISSAN ARIYA,BEV,S1,11,25656.4286,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,SK,NISSAN JUKE,HEV,S1,27,-2825.6019,3.39,2027.4,within lifetime
+EU27,nissan,SK,NISSAN JUKE,ICE,S1,85,-9415.1946,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,NISSAN LEAF 62KWH,BEV,S1,1,25814.7291,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,SK,NISSAN QASHQAI,HEV,S1,1233,-13116.7689,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,NISSAN X-TRAIL,HEV,S1,340,-12214.7948,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,TOWNSTAR,ICE,S1,36,-14048.5909,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,AT,NISSAN ARIYA,BEV,S2,208,23626.7669,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,AT,NISSAN JUKE,HEV,S2,158,2198.7839,8.557,2032.6,within lifetime
+EU27,nissan,AT,NISSAN JUKE,ICE,S2,449,-2730.1054,4.359,2028.4,within lifetime
+EU27,nissan,AT,NISSAN LEAF 62KWH,BEV,S2,19,23839.6773,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,AT,NISSAN QASHQAI,HEV,S2,1370,-4696.1079,2.88,2026.9,within lifetime
+EU27,nissan,AT,NISSAN X-TRAIL,HEV,S2,270,-5993.0499,1.956,2026.0,within lifetime
+EU27,nissan,AT,PRIMASTAR,ICE,S2,57,-13504.1845,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,AT,TOWNSTAR,BEV,S2,31,23542.7311,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,AT,TOWNSTAR,ICE,S2,237,-7289.7443,1.068,2025.1,within lifetime
+EU27,nissan,BE,NISSAN ARIYA,BEV,S2,401,17638.4838,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BE,NISSAN JUKE,HEV,S2,1006,-6145.5005,0.42,2024.4,within lifetime
+EU27,nissan,BE,NISSAN JUKE,ICE,S2,1454,-11437.1528,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,NISSAN LEAF 40KWH,BEV,S2,149,17951.4041,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BE,NISSAN LEAF 62KWH,BEV,S2,91,17755.1191,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BE,NISSAN MICRA,ICE,S2,4,-9283.2938,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,NISSAN QASHQAI,HEV,S2,3664,-11029.822,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,NISSAN X-TRAIL,HEV,S2,1232,-14000.1464,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,PRIMASTAR,ICE,S2,232,-23965.5151,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,TOWNSTAR,BEV,S2,44,17366.638,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BE,TOWNSTAR,ICE,S2,351,-16212.3965,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BG,NISSAN ARIYA,BEV,S2,18,18009.7465,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BG,NISSAN JUKE,HEV,S2,35,-4896.0145,4.491,2028.5,within lifetime
+EU27,nissan,BG,NISSAN JUKE,ICE,S2,129,-11499.0822,0.165,2024.2,within lifetime
+EU27,nissan,BG,NISSAN LEAF 40KWH,BEV,S2,3,19222.8581,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BG,NISSAN LEAF 62KWH,BEV,S2,3,18743.2561,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,BG,NISSAN MICRA,ICE,S2,1,-6743.623,3.194,2027.2,within lifetime
+EU27,nissan,BG,NISSAN QASHQAI,HEV,S2,724,-13967.7531,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BG,NISSAN X-TRAIL,HEV,S2,292,-15935.7974,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CY,NISSAN ARIYA,BEV,S2,121,8938.9216,23.404,2047.4,after lifetime
+EU27,nissan,CY,NISSAN JUKE,HEV,S2,130,-6067.5374,4.855,2028.9,within lifetime
+EU27,nissan,CY,NISSAN JUKE,ICE,S2,319,-13075.6721,0.706,2024.7,within lifetime
+EU27,nissan,CY,NISSAN LEAF 40KWH,BEV,S2,1,10071.4202,25.708,2049.7,after lifetime
+EU27,nissan,CY,NISSAN LEAF 62KWH,BEV,S2,11,9314.3374,24.152,2048.2,after lifetime
+EU27,nissan,CY,NISSAN QASHQAI,HEV,S2,670,-14620.822,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CY,NISSAN X-TRAIL,HEV,S2,208,-18202.547,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,GT-R,ICE,S2,1,-42716.1657,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,NISSAN ARIYA,BEV,S2,5,9864.5594,57.701,2081.7,after lifetime
+EU27,nissan,CZ,NISSAN JUKE,HEV,S2,21,-1789.6952,5.207,2029.2,within lifetime
+EU27,nissan,CZ,NISSAN JUKE,ICE,S2,169,-6348.6125,1.138,2025.1,within lifetime
+EU27,nissan,CZ,NISSAN LEAF 40KWH,BEV,S2,4,11916.1347,73.956,2098.0,after lifetime
+EU27,nissan,CZ,NISSAN LEAF 62KWH,BEV,S2,3,11273.2705,68.505,2092.5,after lifetime
+EU27,nissan,CZ,NISSAN QASHQAI,HEV,S2,778,-8506.1528,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,NISSAN X-TRAIL,HEV,S2,243,-8660.9715,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,TOWNSTAR,BEV,S2,9,10068.2859,59.178,2083.2,after lifetime
+EU27,nissan,CZ,TOWNSTAR,ICE,S2,54,-10056.7801,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN ARIYA,BEV,S2,826,11393.4321,252.631,2276.6,after lifetime
+EU27,nissan,DE,NISSAN JUKE,HEV,S2,3221,-3923.058,2.603,2026.6,within lifetime
+EU27,nissan,DE,NISSAN JUKE,ICE,S2,3452,-8826.3606,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN LEAF 40 KWH,BEV,S2,231,12527.073,293.412,2317.4,after lifetime
+EU27,nissan,DE,NISSAN LEAF 62 KWH,BEV,S2,257,12026.1784,274.703,2298.7,after lifetime
+EU27,nissan,DE,NISSAN MICRA,ICE,S2,9,-7292.519,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN QASHQAI,HEV,S2,12300,-9144.0907,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN QASHQAI,ICE,S2,2,-11786.3077,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN X-TRAIL,HEV,S2,5150,-11695.6783,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,PRIMASTAR,ICE,S2,1378,-19334.5279,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,TOWNSTAR,BEV,S2,104,11181.1832,245.579,2269.6,after lifetime
+EU27,nissan,DE,TOWNSTAR,ICE,S2,2255,-12821.2028,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,NISSAN ARIYA,BEV,S2,1976,18647.517,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,DK,NISSAN JUKE,HEV,S2,44,-3633.2769,2.993,2027.0,within lifetime
+EU27,nissan,DK,NISSAN JUKE,ICE,S2,495,-8471.7697,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,NISSAN LEAF 40KWH,BEV,S2,20,18842.8826,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,DK,NISSAN LEAF 62KWH,BEV,S2,23,18700.0452,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,DK,NISSAN QASHQAI,HEV,S2,2750,-10379.4736,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,NISSAN X-TRAIL,HEV,S2,412,-11310.5704,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,QASHQAI,ICE,S2,1,-9817.0511,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,EE,NISSAN ARIYA,BEV,S2,40,17308.3211,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,EE,NISSAN JUKE,HEV,S2,32,567.1131,10.983,2035.0,within lifetime
+EU27,nissan,EE,NISSAN JUKE,ICE,S2,48,-4931.3357,6.247,2030.2,within lifetime
+EU27,nissan,EE,NISSAN LEAF 62KWH,BEV,S2,2,17861.2627,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,EE,NISSAN QASHQAI,HEV,S2,275,-5618.8966,5.719,2029.7,within lifetime
+EU27,nissan,EE,NISSAN X-TRAIL,HEV,S2,127,-7295.0808,4.481,2028.5,within lifetime
+EU27,nissan,EE,X-TRAIL,HEV,S2,1,-8155.6319,3.872,2027.9,within lifetime
+EU27,nissan,ES,NISSAN ARIYA,BEV,S2,234,23992.3618,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,ES,NISSAN JUKE,HEV,S2,2711,-6472.1647,4.408,2028.4,within lifetime
+EU27,nissan,ES,NISSAN JUKE,ICE,S2,6671,-13235.8919,0.302,2024.3,within lifetime
+EU27,nissan,ES,NISSAN LEAF 40KWH,BEV,S2,82,24329.231,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,ES,NISSAN LEAF 62KWH,BEV,S2,98,24132.4397,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,ES,NISSAN QASHQAI,HEV,S2,18059,-14767.901,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,ES,NISSAN X-TRAIL,HEV,S2,3636,-15948.8572,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,ES,PRIMASTAR,ICE,S2,297,-27595.0068,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,ES,TOWNSTAR,ICE,S2,843,-19073.7377,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN ARIYA,BEV,S2,255,18393.5438,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,FI,NISSAN JUKE,HEV,S2,221,-12629.5731,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN JUKE,ICE,S2,320,-18945.5564,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN LEAF 40KWH,BEV,S2,168,18504.8169,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,FI,NISSAN LEAF 62KWH,BEV,S2,28,18446.1342,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,FI,NISSAN QASHQAI,HEV,S2,1761,-20192.7826,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN X-TRAIL,HEV,S2,200,-22938.5677,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,PRIMASTAR,ICE,S2,2,-33181.9615,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,JUKE,HEV,S2,1,-6522.4677,1.198,2025.2,within lifetime
+EU27,nissan,FR,NISSAN ARIYA,BEV,S2,653,19168.2718,240.567,2264.6,after lifetime
+EU27,nissan,FR,NISSAN JUKE,HEV,S2,7917,-6243.4154,1.433,2025.4,within lifetime
+EU27,nissan,FR,NISSAN JUKE,ICE,S2,3586,-10953.7823,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,NISSAN LEAF 40KWH,BEV,S2,634,19267.6409,247.976,2272.0,after lifetime
+EU27,nissan,FR,NISSAN LEAF 62KWH,BEV,S2,31,19198.439,242.745,2266.7,after lifetime
+EU27,nissan,FR,NISSAN MICRA,ICE,S2,6,-8141.8899,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,NISSAN QASHQAI,HEV,S2,13610,-8298.5359,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,NISSAN X-TRAIL,HEV,S2,2255,-12384.4663,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,PRIMASTAR,ICE,S2,815,-23183.736,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,TOWNSTAR,BEV,S2,18,19069.6256,233.826,2257.8,after lifetime
+EU27,nissan,FR,TOWNSTAR,ICE,S2,44,-15737.3779,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,X-TRAIL,HEV,S2,2,-12813.847,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN ARIYA,BEV,S2,20,8085.1289,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,GR,NISSAN JUKE,HEV,S2,438,-15367.5569,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN JUKE,ICE,S2,1630,-21094.9037,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN LEAF 40KWH,BEV,S2,5,8767.9673,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,GR,NISSAN LEAF 62KWH,BEV,S2,3,8281.6729,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,GR,NISSAN QASHQAI,HEV,S2,1928,-24381.3042,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN X-TRAIL,HEV,S2,218,-26708.5066,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,PRIMASTAR,ICE,S2,54,-35277.3408,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HR,NISSAN ARIYA,BEV,S2,11,31296.043,638.099,2662.1,after lifetime
+EU27,nissan,HR,NISSAN JUKE,HEV,S2,11,2053.334,10.053,2034.1,within lifetime
+EU27,nissan,HR,NISSAN JUKE,ICE,S2,129,-4300.4702,6.289,2030.3,within lifetime
+EU27,nissan,HR,NISSAN QASHQAI,HEV,S2,546,-7727.0829,4.493,2028.5,within lifetime
+EU27,nissan,HR,NISSAN X-TRAIL,HEV,S2,144,-9514.6448,3.61,2027.6,within lifetime
+EU27,nissan,HR,QASHQAI,HEV,S2,3,-10804.7356,2.993,2027.0,within lifetime
+EU27,nissan,HR,X-TRAIL,HEV,S2,2,-6901.8982,4.912,2028.9,within lifetime
+EU27,nissan,HR,X-TRAIL,ICE,S2,1,-9094.5773,3.814,2027.8,within lifetime
+EU27,nissan,HU,NISSAN ARIYA,BEV,S2,61,20307.2624,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,HU,NISSAN JUKE,HEV,S2,142,-10357.806,2.016,2026.0,within lifetime
+EU27,nissan,HU,NISSAN JUKE,ICE,S2,417,-17279.6195,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HU,NISSAN LEAF 40KWH,BEV,S2,299,20966.7523,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,HU,NISSAN LEAF 62KWH,BEV,S2,71,20668.4917,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,HU,NISSAN QASHQAI,HEV,S2,3340,-20757.7006,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HU,NISSAN X-TRAIL,HEV,S2,1241,-21139.0301,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HU,TOWNSTAR,BEV,S2,2,20033.1449,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,HU,TOWNSTAR,ICE,S2,16,-22969.7438,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,INTERSTAR,ICE,S2,7,-52380.1056,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,NISSAN ARIYA,BEV,S2,239,20189.974,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,IE,NISSAN JUKE,HEV,S2,667,-9527.3179,1.955,2026.0,within lifetime
+EU27,nissan,IE,NISSAN JUKE,ICE,S2,1156,-15936.4503,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,NISSAN LEAF 40KWH,BEV,S2,388,20780.9145,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,IE,NISSAN LEAF 62KWH,BEV,S2,37,20248.8399,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,IE,NISSAN QASHQAI,HEV,S2,1870,-15432.0488,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,NISSAN X-TRAIL,HEV,S2,445,-17758.6515,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN ARIYA,BEV,S2,248,11627.3094,63.134,2087.1,after lifetime
+EU27,nissan,IT,NISSAN JUKE,HEV,S2,6067,-10122.5926,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN JUKE,ICE,S2,5933,-15909.859,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN LEAF 40KWH,BEV,S2,327,12333.5515,68.556,2092.6,after lifetime
+EU27,nissan,IT,NISSAN LEAF 62KWH,BEV,S2,34,11801.4093,64.43,2088.4,after lifetime
+EU27,nissan,IT,NISSAN QASHQAI,HEV,S2,17662,-16132.1922,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN X-TRAIL,HEV,S2,3471,-18426.2369,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,PRIMASTAR,ICE,S2,514,-29636.4363,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,TOWNSTAR,BEV,S2,1,10749.537,56.953,2081.0,after lifetime
+EU27,nissan,IT,TOWNSTAR,ICE,S2,676,-21111.7087,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN ARIYA,BEV,S2,65,21198.7788,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LT,NISSAN JUKE,HEV,S2,52,-13624.4115,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN JUKE,ICE,S2,110,-22006.4848,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN LEAF 40KWH,BEV,S2,3,21413.4473,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LT,NISSAN LEAF 62KWH,BEV,S2,12,21261.117,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LT,NISSAN QASHQAI,HEV,S2,599,-23788.5976,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN X-TRAIL,HEV,S2,210,-25667.9526,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LV,NISSAN ARIYA,BEV,S2,38,24590.1296,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LV,NISSAN JUKE,HEV,S2,27,-9208.1356,3.728,2027.7,within lifetime
+EU27,nissan,LV,NISSAN JUKE,ICE,S2,74,-17783.701,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LV,NISSAN LEAF 40KWH,BEV,S2,17,24914.6223,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LV,NISSAN LEAF 62KWH,BEV,S2,3,24698.58,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,LV,NISSAN QASHQAI,HEV,S2,336,-19254.2893,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LV,NISSAN X-TRAIL,HEV,S2,192,-21559.4902,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,MT,ARIYA,BEV,S2,1,7576.5503,29.364,2053.4,after lifetime
+EU27,nissan,MT,NISSAN ARIYA,BEV,S2,56,7359.079,28.616,2052.6,after lifetime
+EU27,nissan,MT,NISSAN JUKE,HEV,S2,25,-2438.9328,6.877,2030.9,within lifetime
+EU27,nissan,MT,NISSAN JUKE,ICE,S2,51,-6829.3816,2.659,2026.7,within lifetime
+EU27,nissan,MT,NISSAN LEAF 40KWH,BEV,S2,40,8270.6614,31.851,2055.9,after lifetime
+EU27,nissan,MT,NISSAN LEAF 62KWH,BEV,S2,6,7639.6514,29.584,2053.6,after lifetime
+EU27,nissan,MT,NISSAN QASHQAI,HEV,S2,41,-8262.4629,1.437,2025.4,within lifetime
+EU27,nissan,MT,NISSAN X-TRAIL,HEV,S2,9,-13051.7148,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,MT,QASHQAI,HEV,S2,1,-8022.2551,1.638,2025.6,within lifetime
+EU27,nissan,NL,NISSAN ARIYA,BEV,S2,553,12447.64,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,NL,NISSAN JUKE,HEV,S2,1102,-10455.2356,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN JUKE,ICE,S2,352,-15922.5902,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN LEAF 40KWH,BEV,S2,348,12935.6147,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,NL,NISSAN LEAF 62KWH,BEV,S2,34,12643.0937,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,NL,NISSAN MICRA,ICE,S2,1,-12557.8293,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN QASHQAI,HEV,S2,2818,-15965.3585,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN X-TRAIL,HEV,S2,257,-18099.394,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,TOWNSTAR,BEV,S2,5,11660.2233,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,PL,JUKE,ICE,S2,1,-22294.1196,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,NISSAN JUKE,HEV,S2,354,-15514.7505,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,NISSAN JUKE,ICE,S2,750,-23947.3051,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,NISSAN QASHQAI,HEV,S2,5737,-25938.3031,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,NISSAN QASHQAI,ICE,S2,2,-26085.8295,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,NISSAN X-TRAIL,HEV,S2,1737,-28467.2589,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,QASHQAI,HEV,S2,1,-32170.9147,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,QASHQAI,ICE,S2,2,-27809.334,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,TOWNSTAR,ICE,S2,176,-30096.9071,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,X-TRAIL,HEV,S2,3,-32871.8933,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PT,NISSAN ARIYA,BEV,S2,320,21264.4397,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,PT,NISSAN JUKE,HEV,S2,311,-10539.6527,0.718,2024.7,within lifetime
+EU27,nissan,PT,NISSAN JUKE,ICE,S2,3769,-17670.2881,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PT,NISSAN LEAF 40KWH,BEV,S2,149,21406.0582,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,PT,NISSAN LEAF 62KWH,BEV,S2,40,21298.8456,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,PT,NISSAN QASHQAI,HEV,S2,2756,-18990.5069,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PT,NISSAN X-TRAIL,HEV,S2,187,-21950.0125,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN ARIYA,BEV,S2,32,11947.3545,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,RO,NISSAN JUKE,HEV,S2,106,-20016.2529,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN JUKE,ICE,S2,55,-28876.6864,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN LEAF 40KWH,BEV,S2,63,13419.9632,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,RO,NISSAN LEAF 62KWH,BEV,S2,6,12909.8705,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,RO,NISSAN QASHQAI,HEV,S2,680,-31216.1029,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN X-TRAIL,HEV,S2,260,-31767.5394,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,NISSAN ARIYA,BEV,S2,749,21630.3404,109.98,2134.0,after lifetime
+EU27,nissan,SE,NISSAN JUKE,HEV,S2,135,-5514.193,2.167,2026.2,within lifetime
+EU27,nissan,SE,NISSAN JUKE,ICE,S2,457,-11682.3761,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,NISSAN LEAF 40KWH,BEV,S2,34,21765.8761,114.071,2138.1,after lifetime
+EU27,nissan,SE,NISSAN LEAF 62KWH,BEV,S2,8,21697.9925,111.963,2136.0,after lifetime
+EU27,nissan,SE,NISSAN QASHQAI,HEV,S2,1663,-12484.3788,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,NISSAN X-TRAIL,HEV,S2,411,-15537.0878,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,PRIMASTAR,ICE,S2,46,-24532.6113,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,TOWNSTAR,ICE,S2,3,-16468.5338,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SI,NISSAN ARIYA,BEV,S2,9,28493.0581,941.162,2965.2,after lifetime
+EU27,nissan,SI,NISSAN JUKE,HEV,S2,4,1541.4574,8.864,2032.9,within lifetime
+EU27,nissan,SI,NISSAN JUKE,ICE,S2,68,-4645.8189,5.241,2029.2,within lifetime
+EU27,nissan,SI,NISSAN LEAF 40KWH,BEV,S2,2,29864.9774,1053.064,3077.1,after lifetime
+EU27,nissan,SI,NISSAN QASHQAI,HEV,S2,741,-8166.6323,3.412,2027.4,within lifetime
+EU27,nissan,SI,NISSAN X-TRAIL,HEV,S2,93,-10584.0852,2.238,2026.2,within lifetime
+EU27,nissan,SI,TOWNSTAR,ICE,S2,52,-10931.9285,2.074,2026.1,within lifetime
+EU27,nissan,SK,GT-R,ICE,S2,1,-63520.0142,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,MICRA,ICE,S2,2,-12489.9183,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,NISSAN ARIYA,BEV,S2,11,20241.2792,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,SK,NISSAN JUKE,HEV,S2,27,-8240.7513,1.368,2025.4,within lifetime
+EU27,nissan,SK,NISSAN JUKE,ICE,S2,85,-14830.3441,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,NISSAN LEAF 62KWH,BEV,S2,1,20399.5797,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
+EU27,nissan,SK,NISSAN QASHQAI,HEV,S2,1233,-18531.9183,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,NISSAN X-TRAIL,HEV,S2,340,-17629.9442,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,TOWNSTAR,ICE,S2,36,-19463.7403,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,AT,NISSAN ARIYA,BEV,S3,208,13296.5512,40.813,2064.8,after lifetime
+EU27,nissan,AT,NISSAN JUKE,HEV,S3,158,-8660.0152,2.619,2026.6,within lifetime
+EU27,nissan,AT,NISSAN JUKE,ICE,S3,449,-13588.9044,1.334,2025.3,within lifetime
+EU27,nissan,AT,NISSAN LEAF 62KWH,BEV,S3,19,13466.4328,42.338,2066.3,after lifetime
+EU27,nissan,AT,NISSAN QASHQAI,HEV,S3,1370,-15554.907,0.881,2024.9,within lifetime
+EU27,nissan,AT,NISSAN X-TRAIL,HEV,S3,270,-16851.8489,0.599,2024.6,within lifetime
+EU27,nissan,AT,PRIMASTAR,ICE,S3,57,-24362.9835,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,AT,TOWNSTAR,BEV,S3,31,13229.4989,40.245,2064.2,after lifetime
+EU27,nissan,AT,TOWNSTAR,ICE,S3,237,-18148.5433,0.327,2024.3,within lifetime
+EU27,nissan,BE,NISSAN ARIYA,BEV,S3,401,9993.6136,31.846,2055.8,after lifetime
+EU27,nissan,BE,NISSAN JUKE,HEV,S3,1006,-14570.0421,0.128,2024.1,within lifetime
+EU27,nissan,BE,NISSAN JUKE,ICE,S3,1454,-19861.6944,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,NISSAN LEAF 40KWH,BEV,S3,149,10238.8727,33.478,2057.5,after lifetime
+EU27,nissan,BE,NISSAN LEAF 62KWH,BEV,S3,91,10085.0294,32.437,2056.4,after lifetime
+EU27,nissan,BE,NISSAN MICRA,ICE,S3,4,-17707.8354,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,NISSAN QASHQAI,HEV,S3,3664,-19454.3636,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,NISSAN X-TRAIL,HEV,S3,1232,-22424.688,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,PRIMASTAR,ICE,S3,232,-32390.0567,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BE,TOWNSTAR,BEV,S3,44,9780.5477,30.541,2054.5,after lifetime
+EU27,nissan,BE,TOWNSTAR,ICE,S3,351,-24636.9381,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BG,NISSAN ARIYA,BEV,S3,18,7611.802,20.031,2044.0,after lifetime
+EU27,nissan,BG,NISSAN JUKE,HEV,S3,35,-17288.0338,1.374,2025.4,within lifetime
+EU27,nissan,BG,NISSAN JUKE,ICE,S3,129,-23891.1015,0.05,2024.1,within lifetime
+EU27,nissan,BG,NISSAN LEAF 40KWH,BEV,S3,3,8532.2685,22.882,2046.9,after lifetime
+EU27,nissan,BG,NISSAN LEAF 62KWH,BEV,S3,3,8168.3634,21.7,2045.7,after lifetime
+EU27,nissan,BG,NISSAN MICRA,ICE,S3,1,-19135.6424,0.977,2025.0,within lifetime
+EU27,nissan,BG,NISSAN QASHQAI,HEV,S3,724,-26359.7725,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,BG,NISSAN X-TRAIL,HEV,S3,292,-28327.8168,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CY,NISSAN ARIYA,BEV,S3,121,3352.2943,10.847,2034.8,within lifetime
+EU27,nissan,CY,NISSAN JUKE,HEV,S3,130,-20207.1499,1.486,2025.5,within lifetime
+EU27,nissan,CY,NISSAN JUKE,ICE,S3,319,-27215.2845,0.216,2024.2,within lifetime
+EU27,nissan,CY,NISSAN LEAF 40KWH,BEV,S3,1,3991.2754,11.915,2035.9,within lifetime
+EU27,nissan,CY,NISSAN LEAF 62KWH,BEV,S3,11,3564.1123,11.194,2035.2,within lifetime
+EU27,nissan,CY,NISSAN QASHQAI,HEV,S3,670,-28760.4345,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CY,NISSAN X-TRAIL,HEV,S3,208,-32342.1595,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,GT-R,ICE,S3,1,-51838.6276,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,NISSAN ARIYA,BEV,S3,5,4154.3255,12.705,2036.7,within lifetime
+EU27,nissan,CZ,NISSAN JUKE,HEV,S3,21,-10912.1572,1.594,2025.6,within lifetime
+EU27,nissan,CZ,NISSAN JUKE,ICE,S3,169,-15471.0744,0.348,2024.3,within lifetime
+EU27,nissan,CZ,NISSAN LEAF 40KWH,BEV,S3,4,5589.6174,16.284,2040.3,after lifetime
+EU27,nissan,CZ,NISSAN LEAF 62KWH,BEV,S3,3,5139.8665,15.084,2039.1,within lifetime
+EU27,nissan,CZ,NISSAN QASHQAI,HEV,S3,778,-17628.6148,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,NISSAN X-TRAIL,HEV,S3,243,-17783.4335,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,CZ,TOWNSTAR,BEV,S3,9,4296.8535,13.03,2037.0,within lifetime
+EU27,nissan,CZ,TOWNSTAR,ICE,S3,54,-19179.2421,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN ARIYA,BEV,S3,826,5180.8018,15.213,2039.2,after lifetime
+EU27,nissan,DE,NISSAN JUKE,HEV,S3,3221,-12309.6772,0.797,2024.8,within lifetime
+EU27,nissan,DE,NISSAN JUKE,ICE,S3,3452,-17212.9799,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN LEAF 40 KWH,BEV,S3,231,6036.7294,17.668,2041.7,after lifetime
+EU27,nissan,DE,NISSAN LEAF 62 KWH,BEV,S3,257,5658.5413,16.542,2040.5,after lifetime
+EU27,nissan,DE,NISSAN MICRA,ICE,S3,9,-15679.1382,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN QASHQAI,HEV,S3,12300,-17530.7099,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN QASHQAI,ICE,S3,2,-20172.927,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,NISSAN X-TRAIL,HEV,S3,5150,-20082.2975,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,PRIMASTAR,ICE,S3,1378,-27721.1472,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DE,TOWNSTAR,BEV,S3,104,5020.5485,14.788,2038.8,within lifetime
+EU27,nissan,DE,TOWNSTAR,ICE,S3,2255,-21207.8221,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,NISSAN ARIYA,BEV,S3,1976,9807.8023,33.577,2057.6,after lifetime
+EU27,nissan,DK,NISSAN JUKE,HEV,S3,44,-12318.9912,0.916,2024.9,within lifetime
+EU27,nissan,DK,NISSAN JUKE,ICE,S3,495,-17157.484,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,NISSAN LEAF 40KWH,BEV,S3,20,10016.0085,35.141,2059.1,after lifetime
+EU27,nissan,DK,NISSAN LEAF 62KWH,BEV,S3,23,9863.7829,33.984,2058.0,after lifetime
+EU27,nissan,DK,NISSAN QASHQAI,HEV,S3,2750,-19065.1879,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,NISSAN X-TRAIL,HEV,S3,412,-19996.2847,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,DK,QASHQAI,ICE,S3,1,-18502.7654,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,EE,NISSAN ARIYA,BEV,S3,40,6358.1903,21.119,2045.1,within lifetime
+EU27,nissan,EE,NISSAN JUKE,HEV,S3,32,-12049.7393,3.361,2027.4,within lifetime
+EU27,nissan,EE,NISSAN JUKE,ICE,S3,48,-17548.1881,1.912,2025.9,within lifetime
+EU27,nissan,EE,NISSAN LEAF 62KWH,BEV,S3,2,6774.4591,22.656,2046.7,within lifetime
+EU27,nissan,EE,NISSAN QASHQAI,HEV,S3,275,-18235.7491,1.75,2025.8,within lifetime
+EU27,nissan,EE,NISSAN X-TRAIL,HEV,S3,127,-19911.9332,1.371,2025.4,within lifetime
+EU27,nissan,EE,X-TRAIL,HEV,S3,1,-20772.4843,1.185,2025.2,within lifetime
+EU27,nissan,ES,NISSAN ARIYA,BEV,S3,234,10563.7711,32.126,2056.1,after lifetime
+EU27,nissan,ES,NISSAN JUKE,HEV,S3,2711,-20004.107,1.349,2025.3,within lifetime
+EU27,nissan,ES,NISSAN JUKE,ICE,S3,6671,-26767.8342,0.092,2024.1,within lifetime
+EU27,nissan,ES,NISSAN LEAF 40KWH,BEV,S3,82,10890.2346,34.033,2058.0,after lifetime
+EU27,nissan,ES,NISSAN LEAF 62KWH,BEV,S3,98,10699.5221,32.895,2056.9,after lifetime
+EU27,nissan,ES,NISSAN QASHQAI,HEV,S3,18059,-28299.8433,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,ES,NISSAN X-TRAIL,HEV,S3,3636,-29480.7996,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,ES,PRIMASTAR,ICE,S3,297,-41126.9492,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,ES,TOWNSTAR,ICE,S3,843,-32605.6801,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN ARIYA,BEV,S3,255,8139.8076,41.952,2066.0,after lifetime
+EU27,nissan,FI,NISSAN JUKE,HEV,S3,221,-22673.8142,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN JUKE,ICE,S3,320,-28989.7976,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN LEAF 40KWH,BEV,S3,168,8272.352,43.876,2067.9,after lifetime
+EU27,nissan,FI,NISSAN LEAF 62KWH,BEV,S3,28,8202.4514,42.835,2066.8,after lifetime
+EU27,nissan,FI,NISSAN QASHQAI,HEV,S3,1761,-30237.0238,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,NISSAN X-TRAIL,HEV,S3,200,-32982.8088,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FI,PRIMASTAR,ICE,S3,2,-43226.2027,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,JUKE,HEV,S3,1,-15553.0812,0.367,2024.4,within lifetime
+EU27,nissan,FR,NISSAN ARIYA,BEV,S3,653,10494.9408,53.369,2077.4,after lifetime
+EU27,nissan,FR,NISSAN JUKE,HEV,S3,7917,-15274.0288,0.439,2024.4,within lifetime
+EU27,nissan,FR,NISSAN JUKE,ICE,S3,3586,-19984.3958,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,NISSAN LEAF 40KWH,BEV,S3,634,10563.0753,55.012,2079.0,after lifetime
+EU27,nissan,FR,NISSAN LEAF 62KWH,BEV,S3,31,10515.6256,53.852,2077.9,after lifetime
+EU27,nissan,FR,NISSAN MICRA,ICE,S3,6,-17172.5034,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,NISSAN QASHQAI,HEV,S3,13610,-17329.1494,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,NISSAN X-TRAIL,HEV,S3,2255,-21415.0798,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,PRIMASTAR,ICE,S3,815,-32214.3495,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,TOWNSTAR,BEV,S3,18,10427.302,51.873,2075.9,after lifetime
+EU27,nissan,FR,TOWNSTAR,ICE,S3,44,-24767.9914,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,FR,X-TRAIL,HEV,S3,2,-21844.4605,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN ARIYA,BEV,S3,20,1415.0311,9.163,2033.2,within lifetime
+EU27,nissan,GR,NISSAN JUKE,HEV,S3,438,-22675.211,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN JUKE,ICE,S3,1630,-28402.5578,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN LEAF 40KWH,BEV,S3,5,2039.1173,10.9,2034.9,within lifetime
+EU27,nissan,GR,NISSAN LEAF 62KWH,BEV,S3,3,1594.6642,9.646,2033.6,within lifetime
+EU27,nissan,GR,NISSAN QASHQAI,HEV,S3,1928,-31688.9583,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,NISSAN X-TRAIL,HEV,S3,218,-34016.1607,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,GR,PRIMASTAR,ICE,S3,54,-42584.9949,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HR,NISSAN ARIYA,BEV,S3,11,15110.2933,34.118,2058.1,after lifetime
+EU27,nissan,HR,NISSAN JUKE,HEV,S3,11,-15827.13,3.076,2027.1,within lifetime
+EU27,nissan,HR,NISSAN JUKE,ICE,S3,129,-22180.9342,1.924,2025.9,within lifetime
+EU27,nissan,HR,NISSAN QASHQAI,HEV,S3,546,-25607.5469,1.375,2025.4,within lifetime
+EU27,nissan,HR,NISSAN X-TRAIL,HEV,S3,144,-27395.1088,1.105,2025.1,within lifetime
+EU27,nissan,HR,QASHQAI,HEV,S3,3,-28685.1995,0.916,2024.9,within lifetime
+EU27,nissan,HR,X-TRAIL,HEV,S3,2,-24782.3622,1.503,2025.5,within lifetime
+EU27,nissan,HR,X-TRAIL,ICE,S3,1,-26975.0413,1.167,2025.2,within lifetime
+EU27,nissan,HU,NISSAN ARIYA,BEV,S3,61,8502.4529,25.966,2050.0,after lifetime
+EU27,nissan,HU,NISSAN JUKE,HEV,S3,142,-23404.7872,0.617,2024.6,within lifetime
+EU27,nissan,HU,NISSAN JUKE,ICE,S3,417,-30326.6007,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HU,NISSAN LEAF 40KWH,BEV,S3,299,9013.0451,28.26,2052.3,after lifetime
+EU27,nissan,HU,NISSAN LEAF 62KWH,BEV,S3,71,8782.1249,27.186,2051.2,after lifetime
+EU27,nissan,HU,NISSAN QASHQAI,HEV,S3,3340,-33804.6818,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HU,NISSAN X-TRAIL,HEV,S3,1241,-34186.0112,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,HU,TOWNSTAR,BEV,S3,2,8290.2249,25.092,2049.1,after lifetime
+EU27,nissan,HU,TOWNSTAR,ICE,S3,16,-36016.725,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,INTERSTAR,ICE,S3,7,-66088.5587,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,NISSAN ARIYA,BEV,S3,239,8446.2047,20.098,2044.1,after lifetime
+EU27,nissan,IE,NISSAN JUKE,HEV,S3,667,-23235.771,0.598,2024.6,within lifetime
+EU27,nissan,IE,NISSAN JUKE,ICE,S3,1156,-29644.9034,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,NISSAN LEAF 40KWH,BEV,S3,388,8906.3597,21.335,2045.3,after lifetime
+EU27,nissan,IE,NISSAN LEAF 62KWH,BEV,S3,37,8492.0425,20.217,2044.2,after lifetime
+EU27,nissan,IE,NISSAN QASHQAI,HEV,S3,1870,-29140.5019,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IE,NISSAN X-TRAIL,HEV,S3,445,-31467.1046,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN ARIYA,BEV,S3,248,5066.3908,16.919,2040.9,within lifetime
+EU27,nissan,IT,NISSAN JUKE,HEV,S3,6067,-19893.1201,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN JUKE,ICE,S3,5933,-25680.3864,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN LEAF 40KWH,BEV,S3,327,5523.2634,18.372,2042.4,within lifetime
+EU27,nissan,IT,NISSAN LEAF 62KWH,BEV,S3,34,5179.0172,17.266,2041.3,within lifetime
+EU27,nissan,IT,NISSAN QASHQAI,HEV,S3,17662,-25902.7196,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,NISSAN X-TRAIL,HEV,S3,3471,-28196.7643,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,PRIMASTAR,ICE,S3,514,-39406.9637,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,IT,TOWNSTAR,BEV,S3,1,4498.5541,15.262,2039.3,within lifetime
+EU27,nissan,IT,TOWNSTAR,ICE,S3,676,-30882.2361,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN ARIYA,BEV,S3,65,8978.1788,33.02,2057.0,after lifetime
+EU27,nissan,LT,NISSAN JUKE,HEV,S3,52,-25979.127,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN JUKE,ICE,S3,110,-34361.2003,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN LEAF 40KWH,BEV,S3,3,9182.468,34.467,2058.5,after lifetime
+EU27,nissan,LT,NISSAN LEAF 62KWH,BEV,S3,12,9037.5029,33.428,2057.4,after lifetime
+EU27,nissan,LT,NISSAN QASHQAI,HEV,S3,599,-36143.3131,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LT,NISSAN X-TRAIL,HEV,S3,210,-38022.6681,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LV,NISSAN ARIYA,BEV,S3,38,10728.4397,33.337,2057.3,after lifetime
+EU27,nissan,LV,NISSAN JUKE,HEV,S3,27,-23895.8397,1.141,2025.1,within lifetime
+EU27,nissan,LV,NISSAN JUKE,ICE,S3,74,-32471.405,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LV,NISSAN LEAF 40KWH,BEV,S3,17,10984.3688,34.894,2058.9,after lifetime
+EU27,nissan,LV,NISSAN LEAF 62KWH,BEV,S3,3,10813.9751,33.842,2057.8,after lifetime
+EU27,nissan,LV,NISSAN QASHQAI,HEV,S3,336,-33941.9934,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,LV,NISSAN X-TRAIL,HEV,S3,192,-36247.1943,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,MT,ARIYA,BEV,S3,1,3082.8494,13.455,2037.5,within lifetime
+EU27,nissan,MT,NISSAN ARIYA,BEV,S3,56,2962.5374,13.113,2037.1,within lifetime
+EU27,nissan,MT,NISSAN JUKE,HEV,S3,25,-11978.922,2.104,2026.1,within lifetime
+EU27,nissan,MT,NISSAN JUKE,ICE,S3,51,-16369.3708,0.814,2024.8,within lifetime
+EU27,nissan,MT,NISSAN LEAF 40KWH,BEV,S3,40,3466.8534,14.595,2038.6,within lifetime
+EU27,nissan,MT,NISSAN LEAF 62KWH,BEV,S3,6,3117.7588,13.556,2037.6,within lifetime
+EU27,nissan,MT,NISSAN QASHQAI,HEV,S3,41,-17802.4522,0.44,2024.4,within lifetime
+EU27,nissan,MT,NISSAN X-TRAIL,HEV,S3,9,-22591.704,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,MT,QASHQAI,HEV,S3,1,-17562.2443,0.501,2024.5,within lifetime
+EU27,nissan,NL,NISSAN ARIYA,BEV,S3,553,4748.1058,16.439,2040.4,after lifetime
+EU27,nissan,NL,NISSAN JUKE,HEV,S3,1102,-18127.5889,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN JUKE,ICE,S3,352,-23594.9434,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN LEAF 40KWH,BEV,S3,348,5238.5357,18.14,2042.1,after lifetime
+EU27,nissan,NL,NISSAN LEAF 62KWH,BEV,S3,34,4944.5429,17.101,2041.1,after lifetime
+EU27,nissan,NL,NISSAN MICRA,ICE,S3,1,-20230.1826,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN QASHQAI,HEV,S3,2818,-23637.7118,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,NISSAN X-TRAIL,HEV,S3,257,-25771.7473,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,NL,TOWNSTAR,BEV,S3,5,3956.7273,13.994,2038.0,within lifetime
+EU27,nissan,PL,JUKE,ICE,S3,1,-34467.6892,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,NISSAN JUKE,HEV,S3,354,-27688.3201,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,NISSAN JUKE,ICE,S3,750,-36120.8748,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,NISSAN QASHQAI,HEV,S3,5737,-38111.8728,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,NISSAN QASHQAI,ICE,S3,2,-38259.3992,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,NISSAN X-TRAIL,HEV,S3,1737,-40640.8285,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,QASHQAI,HEV,S3,1,-44344.4843,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,QASHQAI,ICE,S3,2,-39982.9037,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,TOWNSTAR,ICE,S3,176,-42270.4767,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PL,X-TRAIL,HEV,S3,3,-45045.463,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PT,NISSAN ARIYA,BEV,S3,320,9250.4824,34.502,2058.5,after lifetime
+EU27,nissan,PT,NISSAN JUKE,HEV,S3,311,-21955.3382,0.22,2024.2,within lifetime
+EU27,nissan,PT,NISSAN JUKE,ICE,S3,3769,-29085.9736,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PT,NISSAN LEAF 40KWH,BEV,S3,149,9439.2141,35.976,2060.0,after lifetime
+EU27,nissan,PT,NISSAN LEAF 62KWH,BEV,S3,40,9296.3344,34.849,2058.8,after lifetime
+EU27,nissan,PT,NISSAN QASHQAI,HEV,S3,2756,-30406.1924,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,PT,NISSAN X-TRAIL,HEV,S3,187,-33365.698,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN ARIYA,BEV,S3,32,3561.0384,14.714,2038.7,within lifetime
+EU27,nissan,RO,NISSAN JUKE,HEV,S3,106,-31269.3381,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN JUKE,ICE,S3,55,-40129.7717,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN LEAF 40KWH,BEV,S3,63,4572.6492,17.864,2041.9,within lifetime
+EU27,nissan,RO,NISSAN LEAF 62KWH,BEV,S3,6,4222.2403,16.709,2040.7,within lifetime
+EU27,nissan,RO,NISSAN QASHQAI,HEV,S3,680,-42469.1881,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,RO,NISSAN X-TRAIL,HEV,S3,260,-43020.6247,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,NISSAN ARIYA,BEV,S3,749,12264.2858,55.832,2079.8,after lifetime
+EU27,nissan,SE,NISSAN JUKE,HEV,S3,135,-15345.0524,0.663,2024.7,within lifetime
+EU27,nissan,SE,NISSAN JUKE,ICE,S3,457,-21513.2355,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,NISSAN LEAF 40KWH,BEV,S3,34,12349.0766,57.91,2081.9,after lifetime
+EU27,nissan,SE,NISSAN LEAF 62KWH,BEV,S3,8,12306.6088,56.839,2080.8,after lifetime
+EU27,nissan,SE,NISSAN QASHQAI,HEV,S3,1663,-22315.2382,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,NISSAN X-TRAIL,HEV,S3,411,-25367.9472,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,PRIMASTAR,ICE,S3,46,-34363.4707,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SE,TOWNSTAR,ICE,S3,3,-26299.3931,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SI,NISSAN ARIYA,BEV,S3,9,13829.6667,26.661,2050.7,after lifetime
+EU27,nissan,SI,NISSAN JUKE,HEV,S3,4,-15417.3809,2.713,2026.7,within lifetime
+EU27,nissan,SI,NISSAN JUKE,ICE,S3,68,-21604.6573,1.604,2025.6,within lifetime
+EU27,nissan,SI,NISSAN LEAF 40KWH,BEV,S3,2,14830.3204,29.831,2053.8,after lifetime
+EU27,nissan,SI,NISSAN QASHQAI,HEV,S3,741,-25125.4706,1.044,2025.0,within lifetime
+EU27,nissan,SI,NISSAN X-TRAIL,HEV,S3,93,-27542.9236,0.685,2024.7,within lifetime
+EU27,nissan,SI,TOWNSTAR,ICE,S3,52,-27890.7668,0.635,2024.6,within lifetime
+EU27,nissan,SK,GT-R,ICE,S3,1,-74231.5888,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,MICRA,ICE,S3,2,-23201.493,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,NISSAN ARIYA,BEV,S3,11,9886.7098,36.949,2060.9,after lifetime
+EU27,nissan,SK,NISSAN JUKE,HEV,S3,27,-18952.326,0.419,2024.4,within lifetime
+EU27,nissan,SK,NISSAN JUKE,ICE,S3,85,-25541.9187,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,NISSAN LEAF 62KWH,BEV,S3,1,10022.1429,38.138,2062.1,after lifetime
+EU27,nissan,SK,NISSAN QASHQAI,HEV,S3,1233,-29243.493,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,NISSAN X-TRAIL,HEV,S3,340,-28341.5189,,,crossover before sale year (product already above benchmark at t=0)
+EU27,nissan,SK,TOWNSTAR,ICE,S3,36,-30175.315,,,crossover before sale year (product already above benchmark at t=0)
 EU27,toyota,AT,GR YARIS 16,ICE,S1,1,-10771.1107,,,crossover before sale year (product already above benchmark at t=0)
 EU27,toyota,AT,PROACE,BEV,S1,13,25733.899,,,never crosses: below benchmark at sale and the grid decarbonises at least as fast as the fleet benchmark
 EU27,toyota,AT,PROACE,ICE,S1,348,-12776.9037,,,crossover before sale year (product already above benchmark at t=0)

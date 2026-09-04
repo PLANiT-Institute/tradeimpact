@@ -1,37 +1,4 @@
 company,market,cohort_year,scenario,dimension,variant,parameter,ti_tco2e
-honda,EU27,2024,S1,lifetime,central,T_c,-154457.9
-honda,EU27,2024,S1,lifetime,minus,T_c - 3,-110541.9
-honda,EU27,2024,S1,lifetime,plus,T_c + 3,-205654.3
-honda,EU27,2024,S1,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,-154457.9
-honda,EU27,2024,S1,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,-154457.9
-honda,EU27,2024,S1,realworld,central,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.191",-154457.9
-honda,EU27,2024,S1,realworld,high,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.211",-154837.6
-honda,EU27,2024,S1,realworld,low,"WLTP BEV 1.0, WLTP HEV 1.171, WLTP ICE 1.171",-114727.9
-honda,EU27,2024,S1,vkt_proxy,central,market distance as published for tier-C markets,-154457.9
-honda,EU27,2024,S1,vkt_proxy,high,upper quartile of measured distances,-229210.5
-honda,EU27,2024,S1,vkt_proxy,low,lower quartile of measured distances,-79274.3
-honda,EU27,2024,S2,lifetime,central,T_c,-372148.8
-honda,EU27,2024,S2,lifetime,minus,T_c - 3,-273777.8
-honda,EU27,2024,S2,lifetime,plus,T_c + 3,-482630.3
-honda,EU27,2024,S2,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,-372148.8
-honda,EU27,2024,S2,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,-372148.8
-honda,EU27,2024,S2,realworld,central,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.191",-372148.8
-honda,EU27,2024,S2,realworld,high,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.211",-372528.5
-honda,EU27,2024,S2,realworld,low,"WLTP BEV 1.0, WLTP HEV 1.171, WLTP ICE 1.171",-332418.8
-honda,EU27,2024,S2,vkt_proxy,central,market distance as published for tier-C markets,-372148.8
-honda,EU27,2024,S2,vkt_proxy,high,upper quartile of measured distances,-446901.4
-honda,EU27,2024,S2,vkt_proxy,low,lower quartile of measured distances,-296965.2
-honda,EU27,2024,S3,lifetime,central,T_c,-764521.6
-honda,EU27,2024,S3,lifetime,minus,T_c - 3,-589048.9
-honda,EU27,2024,S3,lifetime,plus,T_c + 3,-947183.6
-honda,EU27,2024,S3,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,-764521.6
-honda,EU27,2024,S3,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,-764521.6
-honda,EU27,2024,S3,realworld,central,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.191",-764521.6
-honda,EU27,2024,S3,realworld,high,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.211",-764901.2
-honda,EU27,2024,S3,realworld,low,"WLTP BEV 1.0, WLTP HEV 1.171, WLTP ICE 1.171",-724791.5
-honda,EU27,2024,S3,vkt_proxy,central,market distance as published for tier-C markets,-764521.6
-honda,EU27,2024,S3,vkt_proxy,high,upper quartile of measured distances,-839258.4
-honda,EU27,2024,S3,vkt_proxy,low,lower quartile of measured distances,-689353.9
 hyundai,EU27,2024,S1,lifetime,central,T_c,-1656970.1
 hyundai,EU27,2024,S1,lifetime,minus,T_c - 3,-1170068.2
 hyundai,EU27,2024,S1,lifetime,plus,T_c + 3,-2224663.7
@@ -307,6 +274,39 @@ kia,US,2026,S3,realworld,low,"EPA BEV 1.0, EPA HEV 1.0, EPA ICE 1.0",-8105275.3
 kia,US,2026,S3,vkt_proxy,central,market distance as published for tier-C markets,-8105275.3
 kia,US,2026,S3,vkt_proxy,high,upper quartile of measured distances,-8105275.3
 kia,US,2026,S3,vkt_proxy,low,lower quartile of measured distances,-8105275.3
+nissan,EU27,2024,S1,lifetime,central,T_c,-1442476.9
+nissan,EU27,2024,S1,lifetime,minus,T_c - 3,-1085332.2
+nissan,EU27,2024,S1,lifetime,plus,T_c + 3,-1842273.9
+nissan,EU27,2024,S1,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,-1442476.9
+nissan,EU27,2024,S1,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,-1442476.9
+nissan,EU27,2024,S1,realworld,central,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.191",-1442476.9
+nissan,EU27,2024,S1,realworld,high,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.211",-1467912.0
+nissan,EU27,2024,S1,realworld,low,"WLTP BEV 1.0, WLTP HEV 1.171, WLTP ICE 1.171",-1243238.5
+nissan,EU27,2024,S1,vkt_proxy,central,market distance as published for tier-C markets,-1442476.9
+nissan,EU27,2024,S1,vkt_proxy,high,upper quartile of measured distances,-1856593.8
+nissan,EU27,2024,S1,vkt_proxy,low,lower quartile of measured distances,-1025972.3
+nissan,EU27,2024,S2,lifetime,central,T_c,-2383804.4
+nissan,EU27,2024,S2,lifetime,minus,T_c - 3,-1787259.3
+nissan,EU27,2024,S2,lifetime,plus,T_c + 3,-3043046.9
+nissan,EU27,2024,S2,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,-2383804.4
+nissan,EU27,2024,S2,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,-2383804.4
+nissan,EU27,2024,S2,realworld,central,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.191",-2383804.4
+nissan,EU27,2024,S2,realworld,high,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.211",-2409239.6
+nissan,EU27,2024,S2,realworld,low,"WLTP BEV 1.0, WLTP HEV 1.171, WLTP ICE 1.171",-2184566.1
+nissan,EU27,2024,S2,vkt_proxy,central,market distance as published for tier-C markets,-2383804.4
+nissan,EU27,2024,S2,vkt_proxy,high,upper quartile of measured distances,-2797921.3
+nissan,EU27,2024,S2,vkt_proxy,low,lower quartile of measured distances,-1967299.8
+nissan,EU27,2024,S3,lifetime,central,T_c,-4433575.1
+nissan,EU27,2024,S3,lifetime,minus,T_c - 3,-3436253.4
+nissan,EU27,2024,S3,lifetime,plus,T_c + 3,-5467420.2
+nissan,EU27,2024,S3,powertrain_mix,all_hev,epa_share_my2024 cohort rows repriced with the hybrid of the same base model,-4433575.1
+nissan,EU27,2024,S3,powertrain_mix,central,epa_share_my2024 cohort rows priced as the rule states,-4433575.1
+nissan,EU27,2024,S3,realworld,central,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.191",-4433575.1
+nissan,EU27,2024,S3,realworld,high,"WLTP BEV 1.0, WLTP HEV 1.211, WLTP ICE 1.211",-4459010.3
+nissan,EU27,2024,S3,realworld,low,"WLTP BEV 1.0, WLTP HEV 1.171, WLTP ICE 1.171",-4234336.8
+nissan,EU27,2024,S3,vkt_proxy,central,market distance as published for tier-C markets,-4433575.1
+nissan,EU27,2024,S3,vkt_proxy,high,upper quartile of measured distances,-4847352.8
+nissan,EU27,2024,S3,vkt_proxy,low,lower quartile of measured distances,-4017411.9
 toyota,EU27,2024,S1,lifetime,central,T_c,-1681919.2
 toyota,EU27,2024,S1,lifetime,minus,T_c - 3,-1005699.5
 toyota,EU27,2024,S1,lifetime,plus,T_c + 3,-2496382.1

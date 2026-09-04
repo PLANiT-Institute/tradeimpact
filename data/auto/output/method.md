@@ -96,13 +96,15 @@ replacement of the central factor, never on top of it.
    is therefore no longer below BEV S1.
 4. **Age-band year** — the mean-age partition is taken at or before the cohort year, the
    same cap as stock, CO2 and grid; the "one year ahead" exception is gone.
-5. **Companies in scope** — Hyundai, Kia, Toyota and Honda (`companies.csv`). Honda is the
-   second Japanese maker by worldwide volume, which is the basis this project uses (a company's
-   sales to every destination country); on EU27 registrations alone the order is different, and
-   Nissan (198,048 in 2024) is five times Honda (40,270). Nissan, Suzuki, Mazda, Mitsubishi and
-   Subaru have pinned EEA snapshots and enter on one flag if the lead prefers the EU-weighted
-   reading. Lexus is held out of Toyota exactly as Genesis is held out of Hyundai: a separate
-   make in the registration data, counted and excluded rather than folded in. Genesis is listed as its own
+5. **Companies in scope** — Hyundai, Kia, Toyota and Nissan (`companies.csv`). "The second
+   Japanese maker" has three different answers and the lead chose on 2026-09-04: Honda is second
+   by worldwide sales (3.52 M in 2025 against Suzuki 3.30 M and Nissan 3.20 M), Suzuki is second
+   by worldwide production and by Japanese sales including kei cars, and Nissan is second by
+   presence in the markets this project prices (EU27 198,048 registrations against Honda's
+   40,270, and a published US table by model that Honda does not offer). Nissan is in scope on
+   that last basis. Honda, Suzuki, Mazda, Mitsubishi and Subaru have pinned EEA snapshots and
+   enter on one flag. Lexus is held out of Toyota exactly as Genesis is held out of Hyundai: a
+   separate make in the registration data, counted and excluded rather than folded in. Genesis is listed as its own
    company with `in_scope = no`, so Genesis nameplates inside Hyundai's IR files (US and Korea)
    are counted and excluded, never folded into the Hyundai brand.
 6. **A-US-PT: powertrain split of US nameplates** — the company US releases publish one row per
@@ -235,24 +237,24 @@ plant-side domestic sales (571,878 in 2025) and Kia's Indian retail (156,523 in 
 are counted, not priced. What would change the verdict: the BTR1 CRT workbook (hand fetch), the
 2020-21/2021-22 Year Book (hand fetch) and a Vahan maker-level active-stock export.
 
-## Toyota and Honda (EU27, added 2026-09-04)
+## Toyota and Nissan (EU27, added 2026-09-04)
 
 Both were priced from the EEA snapshots already on disk, so nothing new was acquired: the
 registration dataset carries the volumes and the certified values on the same rows. Toyota
-covers 777,277 units (96.8 %) and Honda 38,571 (95.8 %).
+covers 777,277 units (96.8 %) and Nissan 197,588 (99.8 %, the highest coverage of the four).
 
-**Both are `directional_only`.** Their tier-C unit share is 53.6 %, above the guideline §5.3
-threshold of 50 %, because their EU27 volumes sit disproportionately in member states whose
-distance is the EU-average proxy. Hyundai (48.5 %) and Kia (48.2 %) fall just under the same
-threshold. Toyota and Honda figures are therefore directions, not magnitudes, until those
-member states publish vehicle-kilometres.
+**Both are `directional_only`.** Their tier-C unit share is 53.6 % and 54.6 %, above the
+guideline §5.3 threshold of 50 %, because their EU27 volumes sit disproportionately in member
+states whose distance is the EU-average proxy. Hyundai (48.5 %) and Kia (48.2 %) fall just under
+the same threshold. Toyota and Nissan figures are therefore directions, not magnitudes, until
+those member states publish vehicle-kilometres.
 
-**Why Toyota's per-vehicle liability is about half of Hyundai's and Kia's under the current
-path.** Its cohort is 78.5 % hybrid (610,069 units) against 41.7 % for Hyundai and 36.8 % for
-Kia, and a hybrid sits at −7,124 kgCO₂e per vehicle against −13,670 for an ICE car. Under the
-committed path the advantage narrows, because the benchmark falls faster than a fixed hybrid
-intensity: Toyota −8,094 kg per vehicle against Hyundai −9,328. Honda's cohort is 91.8 % hybrid
-and only 2,706 battery-electric units.
+**A hybrid share does not tell you the outcome; the certified intensity behind it does.** Toyota
+is 78.5 % hybrid and Nissan 74.0 %, yet Toyota's hybrid sits at −7,124 kgCO₂e per vehicle and
+Nissan's at −13,509. The reason is the cars underneath: Toyota's hybrid fleet averages
+105.7 gCO₂/km (Yaris 90.9, Corolla 106.2, Yaris Cross 104.4) while Nissan's averages
+132.0 (Qashqai 134.5, X-Trail 143.8). Nissan's European hybrid is a larger crossover, so the
+same powertrain label carries a quarter more carbon per kilometre.
 
 ## Data-quality tiers (whitepaper §5.1, every value flagged)
 

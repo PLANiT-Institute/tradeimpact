@@ -1,0 +1,134 @@
+company,cohort_year,fuel,powertrain,units,share,months,source_id,source_file
+daihatsu,2024,battery electric,BEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+daihatsu,2024,diesel,ICE,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+daihatsu,2024,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+daihatsu,2024,hybrid,HEV,4833,0.307267,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+daihatsu,2024,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+daihatsu,2024,petrol,ICE,10896,0.692733,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+daihatsu,2024,plug-in hybrid,PHEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+honda,2024,battery electric,BEV,147,0.000439,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+honda,2024,diesel,ICE,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+honda,2024,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+honda,2024,hybrid,HEV,246718,0.736489,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+honda,2024,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+honda,2024,petrol,ICE,88127,0.263072,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+honda,2024,plug-in hybrid,PHEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+imported,2024,battery electric,BEV,24057,0.079855,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+imported,2024,diesel,ICE,39768,0.132006,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+imported,2024,fuel cell,FCEV,35,0.000116,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+imported,2024,hybrid,HEV,109820,0.364537,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+imported,2024,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+imported,2024,petrol,ICE,118534,0.393462,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+imported,2024,plug-in hybrid,PHEV,9045,0.030024,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mazda,2024,battery electric,BEV,12,0.000131,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mazda,2024,diesel,ICE,26144,0.285705,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mazda,2024,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mazda,2024,hybrid,HEV,21427,0.234157,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mazda,2024,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mazda,2024,petrol,ICE,43043,0.470379,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mazda,2024,plug-in hybrid,PHEV,881,0.009628,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mitsubishi,2024,battery electric,BEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mitsubishi,2024,diesel,ICE,19886,0.475389,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mitsubishi,2024,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mitsubishi,2024,hybrid,HEV,5392,0.1289,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mitsubishi,2024,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mitsubishi,2024,petrol,ICE,3830,0.091559,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+mitsubishi,2024,plug-in hybrid,PHEV,12723,0.304152,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+nissan,2024,battery electric,BEV,7823,0.033448,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+nissan,2024,diesel,ICE,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+nissan,2024,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+nissan,2024,hybrid,HEV,194980,0.833665,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+nissan,2024,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+nissan,2024,petrol,ICE,31080,0.132887,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+nissan,2024,plug-in hybrid,PHEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+subaru,2024,battery electric,BEV,229,0.002499,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+subaru,2024,diesel,ICE,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+subaru,2024,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+subaru,2024,hybrid,HEV,37681,0.411221,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+subaru,2024,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+subaru,2024,petrol,ICE,53722,0.58628,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+subaru,2024,plug-in hybrid,PHEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+suzuki,2024,battery electric,BEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+suzuki,2024,diesel,ICE,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+suzuki,2024,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+suzuki,2024,hybrid,HEV,77665,0.616183,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+suzuki,2024,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+suzuki,2024,petrol,ICE,48377,0.383817,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+suzuki,2024,plug-in hybrid,PHEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+toyota,2024,battery electric,BEV,1789,0.001391,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+toyota,2024,diesel,ICE,25428,0.019769,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+toyota,2024,fuel cell,FCEV,662,0.000515,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+toyota,2024,hybrid,HEV,844268,0.65639,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+toyota,2024,other (mainly LPG),OTHER,81,6.3e-05,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+toyota,2024,petrol,ICE,393519,0.305948,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+toyota,2024,plug-in hybrid,PHEV,20483,0.015925,12,jada_registration_statistics,jada_fuel_by_maker_2024.xlsx
+daihatsu,2025,battery electric,BEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+daihatsu,2025,diesel,ICE,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+daihatsu,2025,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+daihatsu,2025,hybrid,HEV,9251,0.386764,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+daihatsu,2025,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+daihatsu,2025,petrol,ICE,14668,0.613236,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+daihatsu,2025,plug-in hybrid,PHEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+honda,2025,battery electric,BEV,10,3.3e-05,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+honda,2025,diesel,ICE,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+honda,2025,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+honda,2025,hybrid,HEV,225888,0.744529,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+honda,2025,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+honda,2025,petrol,ICE,77499,0.255438,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+honda,2025,plug-in hybrid,PHEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+imported,2025,battery electric,BEV,30458,0.089363,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+imported,2025,diesel,ICE,34399,0.100926,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+imported,2025,fuel cell,FCEV,35,0.000103,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+imported,2025,hybrid,HEV,135040,0.396203,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+imported,2025,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+imported,2025,petrol,ICE,131564,0.386005,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+imported,2025,plug-in hybrid,PHEV,9339,0.0274,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+isuzu,2025,battery electric,BEV,0,0.0,1,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+isuzu,2025,diesel,ICE,0,0.0,1,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+isuzu,2025,fuel cell,FCEV,0,0.0,1,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+isuzu,2025,hybrid,HEV,0,0.0,1,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+isuzu,2025,other (mainly LPG),OTHER,0,0.0,1,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+isuzu,2025,petrol,ICE,1,1.0,1,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+isuzu,2025,plug-in hybrid,PHEV,0,0.0,1,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mazda,2025,battery electric,BEV,9,8.7e-05,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mazda,2025,diesel,ICE,30338,0.293172,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mazda,2025,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mazda,2025,hybrid,HEV,22366,0.216134,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mazda,2025,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mazda,2025,petrol,ICE,50194,0.485051,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mazda,2025,plug-in hybrid,PHEV,575,0.005557,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mitsubishi,2025,battery electric,BEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mitsubishi,2025,diesel,ICE,24383,0.539208,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mitsubishi,2025,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mitsubishi,2025,hybrid,HEV,5078,0.112295,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mitsubishi,2025,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mitsubishi,2025,petrol,ICE,4175,0.092326,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+mitsubishi,2025,plug-in hybrid,PHEV,11584,0.25617,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+nissan,2025,battery electric,BEV,4875,0.026134,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+nissan,2025,diesel,ICE,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+nissan,2025,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+nissan,2025,hybrid,HEV,151695,0.813199,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+nissan,2025,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+nissan,2025,petrol,ICE,29971,0.160667,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+nissan,2025,plug-in hybrid,PHEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+subaru,2025,battery electric,BEV,330,0.003452,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+subaru,2025,diesel,ICE,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+subaru,2025,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+subaru,2025,hybrid,HEV,45901,0.480086,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+subaru,2025,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+subaru,2025,petrol,ICE,49379,0.516463,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+subaru,2025,plug-in hybrid,PHEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+suzuki,2025,battery electric,BEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+suzuki,2025,diesel,ICE,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+suzuki,2025,fuel cell,FCEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+suzuki,2025,hybrid,HEV,82785,0.706724,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+suzuki,2025,other (mainly LPG),OTHER,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+suzuki,2025,petrol,ICE,34354,0.293276,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+suzuki,2025,plug-in hybrid,PHEV,0,0.0,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+toyota,2025,battery electric,BEV,4203,0.00319,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+toyota,2025,diesel,ICE,24979,0.018961,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+toyota,2025,fuel cell,FCEV,396,0.000301,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+toyota,2025,hybrid,HEV,852015,0.64675,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+toyota,2025,other (mainly LPG),OTHER,47,3.6e-05,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+toyota,2025,petrol,ICE,416051,0.315817,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx
+toyota,2025,plug-in hybrid,PHEV,19688,0.014945,12,jada_registration_statistics,jada_fuel_by_maker_2025.xlsx

@@ -49,3 +49,6 @@ destination_parameters_.*,fleet_intensity_tier,B,B,fleet intensity on a broader 
 destination_parameters_.*,fleet_intensity_tier,C,C,fleet intensity from a proxied share or an implausible ratio
 destination_parameters_.*,mean_car_age_tier,C,C,mean age from a pooled or biased distribution
 destination_parameters_.*,lifetime_tier,C,C,operating life from an old survival schedule or a biased mean age
+sales_jada_jp,basis,registrations,A,"JADA new-vehicle registrations, the standard market-side count in Japan; the nameplate list is the published top 50 with kei cars and foreign brands excluded, which limits coverage rather than quality"
+jada_fuel_mix_jp,powertrain,.*,A,"JADA registrations by maker and fuel as published; kei cars excluded, Lexus folded into Toyota, and Japanese-brand cars built abroad counted as imports"
+jada_brand_registrations_jp,company,.*,A,"JADA registrations by brand including kei cars, with the imported part as published; the kei and import rows are preliminary until the kei association confirms them"

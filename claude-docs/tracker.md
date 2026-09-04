@@ -110,6 +110,19 @@ and Lexus (57,496) are pinned out of scope; the second-Japanese-maker choice dif
 worldwide basis (Honda) and the EU27 basis (Nissan). Scouts are running on the Japan destination
 benchmark and on free model-level sales for Toyota and Honda.
 
+**Nissan replaces Honda as the second Japanese maker, and Japan sales acquired (2026-09-04).**
+The lead chose on presence in the priced markets rather than company size. Nissan EU27 2024:
+197,588 covered units (99.8 %), S1 −1.44 MtCO2e / S2 −2.38 / S3 −4.43. Toyota and Nissan carry
+almost the same hybrid share (78.5 % and 74.0 %) but very different certified intensities
+(105.7 against 132.0 gCO2/km), which is what separates their per-vehicle results. Both are
+`directional_only`. JADA statistics are now fetched and processed: nameplate registrations
+(top 50, kei and foreign brands excluded), the maker fuel mix, and brand registrations with the
+imported part. Japan appears in `ti_coverage.csv` as counted and unpriced. The Japan benchmark
+scout reports it is buildable and better documented than Korea: passenger-car CO2 is a published
+row in two agreeing sources, and certified gCO2/km per model comes from MLIT; the gaps are the
+stock age distribution (paid book), battery-electric consumption, and a transport sector target
+(the 2025 plan publishes none, so S2 would use the superseded 2021 plan).
+
 ## 2. Phases
 
 | Phase | Objectives met | Deliverables accepted | Status | Gate verdict |
