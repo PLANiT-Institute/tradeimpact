@@ -14,8 +14,8 @@ different test cycles and different national benchmarks.
 | `destination_parameters_us.csv` | 3 | `build_reference_us.py` | the same columns for the US market |
 | `destination_parameters_kr.csv` | 3 | `build_reference_kr.py` | the same columns for the Korean market |
 | `reference_trajectories_eu27.csv` | 3 | `build_reference.py` | market × country × scenario × t: `e_ref_kgco2_per_vehicle` (benchmark per vehicle-year), `grid_kgco2_per_kwh` |
-| `reference_trajectories_us.csv` | 3 | `build_reference_us.py` | the same columns for the US market (S1 and S3 only — see *United States* below) |
-| `reference_trajectories_kr.csv` | 3 | `build_reference_kr.py` | the same columns for the Korean market (S1, S2, S3) |
+| `reference_trajectories_us.csv` | 3 | `build_reference_us.py` | the same columns for the US market (S1, S2) |
+| `reference_trajectories_kr.csv` | 3 | `build_reference_kr.py` | the same columns for the Korean market (S1, S2) |
 | `ti_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario: units, lifetime, distance + tier, test cycle, real-world factor, year-0 product and benchmark emissions, `ti_per_vehicle_kgco2e`, `ti_tco2e`, and the whitepaper §5.2 tier declaration: `fleet_intensity_tier`, `grid_tier`, `lifetime_tier`, `rate_tier`, `layer1_tier` (benchmark), `technology_tier`, `powertrain_tier`, `layer2_tier` (product), `tier` (worst of both) |
 | `ti_annual_by_model.csv` | 4 | `build_ti.py` | market × company × destination × model × powertrain × scenario × year: benchmark and product emissions per vehicle, the annual gap, and the cell's TI flow that year (tCO2e) — the year-by-year view at any aggregation level |
 | `ti_annual.csv` | 4 | `build_ti.py` | market × company × cohort_year × scenario × t: annual TI flow (tCO2e) and surviving vehicles |
@@ -70,8 +70,9 @@ all fixed the same day:
 **Relation to the archived published result** (`archive/data/published/lifetime_results.json`).
 Before fix 1 the pipeline reproduced the archived Toyota and Hyundai totals to 2 × 10⁻⁷ (the
 archived run carried the same year mismatch). After it, totals are 1–13 % more negative:
-Toyota S1 −1.40 → −1.59 MtCO₂e, S2 −5.96 → −6.15, S3 −13.95 → −14.14; Hyundai S1 −1.49 →
-−1.57, S2 −3.72 → −3.80, S3 −7.78 → −7.86. The archive remains the regression baseline for
+Toyota S1 −1.40 → −1.59 MtCO₂e and the archive's 1.5 °C column −13.95 → −14.14; Hyundai
+S1 −1.49 → −1.57 and −7.78 → −7.86. The archive's S2 column is not comparable to the
+current S2, which was re-anchored on 2026-09-04 (see *Scenarios* below). The archive remains the regression baseline for
 the *engine* (the pipeline reproduces it exactly when fed the archived parameters); it is no
 longer the baseline for the *inputs*.
 
@@ -177,14 +178,22 @@ so distance is tier B, not tier A. The operating life is the NHTSA expected life
 13 years), bracketed ±3 years to match the lifetime sensitivity, and is tier C: the survival
 schedule behind it was fitted to 1977–2002 registrations, not to the current fleet.
 
-**S2 is excluded for the US.** `emission_targets_us.csv` carries S2 with an empty rate and
-`target_level = flag_no_ndc`: the United States notified withdrawal from the Paris Agreement on
-2025-01-27, so no NDC is in force over the cohort's lifetime and there is no committed-policy
-benchmark to compare against. No S2 trajectory is built. The exclusion is never a silent gap —
-it is published as `scenarios_excluded` on `destination_parameters_us.csv`, as a row per
-company in `ti_exclusions.csv` with the units affected, as a `status = excluded` row in
-`ti_company.csv`, and in the `scenarios_excluded` column of `ti_data_quality.csv`. A test
-asserts all four.
+**S2 for the US is the last NDC the country itself communicated.** The United States
+notified withdrawal from the Paris Agreement on 2025-01-27, a month after communicating
+its 2035 NDC on 2024-12-19: economy-wide net GHG 61–66 % below 2005 by 2035, a range the
+NDC's own text places "on a straight line or steeper trajectory to net zero emissions by
+2050". The build takes the low end, 61 %, and applies it pro-rata exactly as Australia's
+and the EU's anchors are applied: light-duty CO2 from its latest observation to 61 % below
+its 2005 level by 2035 (6.61 %/yr), and grid intensity likewise (4.33 %/yr). Two things
+are disclosed rather than hidden. The status is *communicated, then withdrawal notified*,
+carried in `ndc_anchors.csv` and in every `target_level` cell — this is the government's
+own stated pathway, not a pathway in force. And the power leg is applied to intensity
+because the US inventory tables on hand carry no power-sector series, which is looser
+than the absolute target wherever generation grows — the same caveat as Korea's. A market
+whose rate were ever empty would still be published as `scenarios_excluded` on
+`destination_parameters_us.csv`, as a row per company in `ti_exclusions.csv`, as a
+`status = excluded` row in `ti_company.csv`, and in `ti_data_quality.csv`; a test asserts
+all four, and that no market currently drops a scenario.
 
 **Australia** has processed inputs on disk but is deliberately not built yet.
 
@@ -213,13 +222,13 @@ stock, 2024). Fleet intensity 203 gCO2/km (2023, tier C: GIR road CO2 × the KOT
 share, see country_emissions/method). Grid 415.5 gCO2/kWh (Ember 2024). Mean age 7.3 years from
 the MOLIT model-year distribution (tier C, biased low) gives an operating life of 11 years
 [10, 15] under the EU27 rule (1.5 × mean age, clamped). S1: GIR road CO2 nearly flat
-(−0.2 %/yr) and grid −2.2 %/yr; S2: Basic Plan transport path 2023–2030 (−5.9 %/yr) and power
-2018–2030 (−5.0 %/yr); S3: 2050 scenarios (transport A안 −10.5 %/yr, power B안 −7.7 %/yr).
+(−0.2 %/yr) and grid −2.2 %/yr; S2: the 2050 탄소중립 시나리오 (2021), transport A안
+98.1 → 2.8 MtCO2e (−10.5 %/yr) and power B안 269.6 → 20.7 (−7.7 %/yr).
 
 **Reading the result.** Because the observed Korean fleet trend is flat, S1 is a contribution
 for both companies (their label-basis product intensities sit below the 203 gCO2/km fleet
-average), while S2 and S3 turn every cohort into a liability: the committed and 1.5 °C paths
-decline faster than the products' fixed intensities. The lifetime sensitivity moves the Korean
+average), while S2 turns every cohort into a liability: the government's own net-zero
+pathway declines faster than the products' fixed intensities. The lifetime sensitivity moves the Korean
 S1 by about ±30 % because the operating life is short and uncertain.
 
 ## India (assessed 2026-09-04, not built)
@@ -270,14 +279,14 @@ The extractor enforces that, checks each division's models against the published
 and keeps the small difference the release itself leaves unprinted (6 units in 2025, 15 in 2024)
 as its own row rather than dropping it. Lexus is held out as its own company, exactly as Genesis
 is held out of Hyundai. Result: 2,111,810 covered units in 2025 (98.3 %), S1 +8.07 MtCO₂e,
-S3 −30.50; 2024 +5.53 and −29.92. The large current-path contribution is the same segment-ratio
+S2 −18.60; 2024 +5.53 and −19.00. The large current-path contribution is the same segment-ratio
 artefact described above, amplified: Toyota's cohort is hybrid-heavy and the US benchmark is the
 all-light-duty fleet including pickups.
 
 **Nissan** prints models but no powertrain. It needs no assumption anyway: its US line-up in
 these years is combustion except the LEAF and the Ariya, which the EPA certification data
 confirms, so every nameplate is priced explicitly. Infiniti is held out as its own company.
-Result: 873,293 covered units in 2025 (100.0 %), S1 +1.36 MtCO₂e, S3 −14.46. Nissan also
+Result: 873,293 covered units in 2025 (100.0 %), S1 +1.36 MtCO₂e, S2 −9.65. Nissan also
 publishes the split of its US volumes into North American production and imports
 (`us_release_origin_split.csv`, 760,213 against 113,094 in 2025), which no other company in
 scope discloses.
@@ -343,6 +352,41 @@ hold apart, so Lexus, Infiniti and Genesis units are counted in `held_units` and
 `brands_out_of_scope`. A priced share is therefore always the brand in scope measured against
 the group total, which understates it: Toyota's 26.8 % would be higher against the Toyota brand
 alone, and the Lexus worldwide figure needed for that is on the workbook's own Lexus sheet.
+
+## Two scenarios, two pathways each, and no re-allocation of electricity
+
+**Scenarios (decision, 2026-09-04).** There are two, and both run the full length of a vehicle's
+life. **S1** is the observed trajectory: a log-linear trend of the market's own transport and grid
+series, 2015 onward, 2020–2021 excluded. **S2** is the government's own committed pathway, and
+nothing else — no modelled 1.5 °C scenario appears in the results, because no government stated
+one and the project's claim is a comparison against what a state has itself committed to.
+
+The earlier build had a third scenario, and its S2 was derived from a 2030 waypoint. Both were
+removed. A rate fitted to a seven-year window (2023–2030) and then compounded over an 11- to
+25-year operating life describes a pathway nobody published; each S2 anchor is now the furthest
+year the policy itself sets, so the whole cohort lifetime sits inside the target horizon:
+
+| Market | S2 anchor | Transport pathway | Power pathway |
+|---|---|---|---|
+| EU27 | European Climate Law, 90 % below 1990 by 2040 | 13.51 %/yr | 8.56 %/yr |
+| Korea | 2050 탄소중립 시나리오 (2021), transport A안 / power B안 | 10.52 | 7.71 |
+| US | NDC communicated 2024-12-19, 61 % below 2005 by 2035 | 6.61 | 4.33 |
+
+Australia's table is built the same way (43 % below 2005 by 2030, pro-rata) but no Australian
+cohort is priced, so it produces no result.
+
+The transport rate moves the benchmark; the power rate moves the grid a battery-electric car
+charges from, so its product emissions fall year by year (Korea S2: 0.4155 kgCO₂/kWh in 2024,
+0.1863 in 2034). Combustion and hybrid products have no power term.
+
+**The benchmark is not re-based onto electricity, and that is deliberate.** A national account
+puts a vehicle's direct fuel combustion in transport and the electricity it charges with in the
+power sector, and the NDC sets a separate target for each. This model uses both of them exactly
+where the account puts them: the transport target on the benchmark, the power target on the
+battery-electric product. Allocating electricity into the transport benchmark as well would
+count the same committed decarbonisation twice, once in the benchmark and once in the product.
+Korea and Japan both publish an electricity-allocated inventory sheet that would make such a
+re-basing possible; it is deliberately not used. The project lead settled this on 2026-09-04.
 
 ## Vehicle segments, and why a benchmark is chosen per segment (2026-09-04)
 

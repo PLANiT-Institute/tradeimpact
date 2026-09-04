@@ -804,7 +804,7 @@ function renderMapShell() {
     sel('map-year', 'cohort year', opt('', 'all years', !m.year) +
       years.map((y) => opt(y, y, y === m.year)).join('')) +
     sel('map-scenario', 'scenario',
-      ['S1', 'S2', 'S3'].map((sc) => opt(sc, sc, sc === m.scenario)).join('')) +
+      ['S1', 'S2'].map((sc) => opt(sc, sc, sc === m.scenario)).join('')) +
     '</div><div id="map-legend" class="legend"></div><div id="map-out"></div>' +
     '<div id="map-tip" class="tip"></div><div id="map-detail"></div></section>';
   document.getElementById('main').innerHTML = tableHeadHtml() + h;

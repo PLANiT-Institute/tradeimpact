@@ -10,7 +10,7 @@ Inputs (processed datasets)
     vehicle_usage/processed/vehicle_usage_kr_traffic.csv   traffic_<segment> (KOTSA odometers)
     country_emissions/processed/country_emissions_kr.csv   co2_<segment> (GIR road CO2 x share)
     country_emissions/processed/country_emissions_owid_grid.csv   grid intensity (Ember)
-    emission_targets/processed/emission_targets_kr.csv     S1/S2/S3 r_fleet, r_power
+    emission_targets/processed/emission_targets_kr.csv     S1/S2 r_fleet, r_power
 Outputs (data/auto/output/)
     destination_parameters_kr.csv    one row per segment
     reference_trajectories_kr.csv    segment x scenario x t: E_ref(t) and G(t)

@@ -19,9 +19,7 @@ vehicle_usage_kr,series,mean_age_.*,C,mean of a model-year distribution whose ol
 vehicle_usage_kr_traffic,series,traffic_.*|daily_km_.*,A,KOTSA inspection odometer readings grossed up to the registered 승용 fleet
 emission_targets_.*,target_level,observed_trend,A,log-linear trend of the country's own observed series
 emission_targets_.*,target_level,ndc_prorata|ndc_prorata_s1_floor,B,national committed target applied pro-rata to passenger cars or to the grid
-emission_targets_.*,target_level,1p5c_prorata,B,national 1.5 C or net-zero pathway applied pro-rata
-emission_targets_.*,target_level,world_prorata,C,IEA world net-zero pathway used because no national 1.5 C sector pathway exists
-emission_targets_.*,target_level,flag_no_ndc,C,no NDC in force: scenario excluded (FLAG market)
+emission_targets_.*,target_level,net_zero_2050|net_zero_2050_s1_floor,B,the government's own carbon-neutral pathway to 2050 applied pro-rata to the sector
 vehicle_technology_eea_2024,test_cycle,WLTP,A,EEA type-approval CO2 and energy consumption recorded on the registration itself
 vehicle_technology_us_epa,test_cycle,EPA,A,EPA fuel economy label values per model year and trim
 vehicle_technology_kr_kea,test_cycle,KR_5CYCLE,B,KEA label km/L converted to gCO2/km with EPA fuel carbon factors; km/kWh inverted to Wh/km (documented conversion of an authoritative label)
@@ -56,3 +54,4 @@ us_release_origin_split,origin,.*,A,"the company's own published split of its US
 company_us_totals_cross_check,basis,brand_total_sales,A,"a second figure published by the same company for the same market and year, transcribed with its URL to make the spread between its own publications visible"
 global_sales_totals,basis,worldwide_sales,A,"the company's own published worldwide sales figure for that calendar year"
 global_sales_totals,basis,worldwide_retail|worldwide_sales_derived,B,"a worldwide figure built from the company's own releases because it publishes no single total: Hyundai as Korea domestic plus exports plus overseas plant sales (the export leg being shipments), Kia as the sum of every destination in its retail workbook"
+country_emissions_jp,series,co2_passenger_car|co2_bus|co2_freight|road_co2_passenger,A,GIO/NIES national inventory sheet 3.Allocated_CO2-sector as published; Japan prints the road split by vehicle type so no proxy is needed

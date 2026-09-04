@@ -8,7 +8,7 @@ Inputs (processed datasets)
     vehicle_usage/processed/vehicle_usage_us_lifetime.csv   expected vehicle lifetime (NHTSA)
     country_emissions/processed/country_emissions_us.csv    light-duty CO2 (EPA inventory)
     country_emissions/processed/country_emissions_owid_grid.csv   grid intensity
-    emission_targets/processed/emission_targets_us.csv      S1/S3 r_fleet, r_power (S2 excluded)
+    emission_targets/processed/emission_targets_us.csv      S1/S2 r_fleet, r_power
 Outputs (data/auto/output/)
     destination_parameters_us.csv    one row: the US market
     reference_trajectories_us.csv    market x scenario x t: E_ref(t) and G(t)
@@ -28,10 +28,13 @@ Algorithm (whitepaper §3.1, guideline §2.3 Method B — identical to the EU27 
     D          annual distance per light-duty vehicle (km/year)
     r_fleet, r_power  annual fractional decline rates (1/year), t years after the sale year
 
-Scenario coverage: the US has no NDC in force for the cohort lifetime, so
-``emission_targets_us.csv`` carries S2 with an empty rate and ``target_level = flag_no_ndc``.
-No S2 trajectory is written; the exclusion is published in ``scenarios_excluded`` and travels
-through every downstream table as an explicit row, never as a silent gap.
+Scenario coverage: S2 is the NDC the United States communicated on 2024-12-19,
+61 % below 2005 net GHG by 2035, applied pro-rata as in every other market. The
+country notified withdrawal from the Paris Agreement a month later, so this is
+the last pathway its own government stated rather than one in force; the
+``target_level`` column carries that. A market whose rate is empty is still
+excluded by the generic rule below and published in ``scenarios_excluded``,
+never left as a silent gap.
 
 Run from the repository root:  .venv/bin/python script/auto/model/build_reference_us.py
 """
@@ -153,7 +156,7 @@ def read_rates(path: Path) -> tuple[dict[tuple[str, str], float], dict[str, str]
 
 
 def main() -> None:
-    """Build the US destination parameters and the S1/S3 reference trajectories."""
+    """Build the US destination parameters and the S1/S2 reference trajectories."""
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument(
         "--cohort-year",

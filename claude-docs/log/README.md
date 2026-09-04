@@ -41,6 +41,8 @@ two that are not.
 
 | 2026-09-04 | Global coverage as its own output: priced and held units against each company's worldwide sales, with the brands in the denominator named | Lead asked what share of global sales the analysis captures | Toyota's and Nissan's worldwide figures fetched from their own publications; Hyundai's and Kia's derived from theirs and marked derived |
 
+| 2026-09-04 | The benchmark stays on the transport sector's direct-combustion target and is not re-based onto an electricity-allocated inventory; the power-sector target is applied to battery-electric product emissions instead | Lead: the power target already carries the grid's own decarbonisation, and this project already uses it as r_power, so allocating electricity into the benchmark would count the same reduction twice | Korea's and Japan's allocated inventory sheets stay unused; both pathways are documented per scenario |
+
 ## Transitions
 
 | Date | Stage or phase | Event | Trigger | Consequence |

@@ -1,10 +1,9 @@
-"""Derive S1/S2/S3 annual decline rates for Australia (whitepaper §3.1, guideline §2.3).
+"""Derive S1 and S2 annual decline rates for Australia (whitepaper §3.1, guideline §2.3).
 
 Inputs
     country_emissions/processed/country_emissions_au.csv        car_co2, power_co2 (ANGA inventory)
     country_emissions/processed/country_emissions_owid_grid.csv AU grid intensity
     emission_targets/raw/ndc_anchors.csv                        AU NDC anchor (43% below 2005, 2030)
-    emission_targets/raw/iea_weo_2024_world_co2.csv             IEA WEO world NZE anchors
 Output
     emission_targets/processed/emission_targets_au.csv
 
@@ -15,12 +14,11 @@ Scenarios
         observation to (1 - reduction) x its 2005 level by the target year; floored at the S1
         trend where the pro-rata level is already met. The anchor row carries ``verified``;
         the value is printed into the derivation so an unverified anchor is visible.
-    S3  world NZE pro-rata 2023 -> 2040 (``world_prorata``), as for the United States.
 
 Algorithm:
     $$ r = 1 - \\left(\\frac{V_{target}}{V_{base}}\\right)^{1/(y_{target}-y_{base})} $$
     ASCII: r = 1 - (V_target/V_base) ** (1/(y_target - y_base)); S1: ln V = a + b y, r = 1 - e^b
-    V in ktCO2 (AU) or MtCO2 (world), gCO2 per kWh for grid; r in 1/year, positive = decline.
+    V in ktCO2 (AU), gCO2 per kWh for grid; r in 1/year, positive = decline.
 
 Run from the repository root:  .venv/bin/python script/auto/emission_targets/derive_au_rates.py
 """
@@ -37,13 +35,11 @@ DATA = REPO / "data" / "auto"
 EMISSIONS = DATA / "country_emissions" / "processed" / "country_emissions_au.csv"
 GRID = DATA / "country_emissions" / "processed" / "country_emissions_owid_grid.csv"
 NDC = DATA / "emission_targets" / "raw" / "ndc_anchors.csv"
-WEO = DATA / "emission_targets" / "raw" / "iea_weo_2024_world_co2.csv"
 OUT = DATA / "emission_targets" / "processed" / "emission_targets_au.csv"
 
 COUNTRY = "AU"
 TREND_START = 2015
 TREND_EXCLUDE = (2020, 2021)
-S3_BASE_YEAR, S3_TARGET_YEAR, S3_SCENARIO = 2023, 2040, "NZE"
 FIELDS = [
     "country",
     "scenario",
@@ -98,9 +94,6 @@ def main() -> None:
     year0: int = parser.parse_args().cohort_year
 
     ndc = next(r for r in csv.DictReader(NDC.open(newline="")) if r["country"] == COUNTRY)
-    weo: dict[tuple[str, str, int], float] = {}
-    for r in csv.DictReader(WEO.open(newline="")):
-        weo[(r["scenario"], r["sector"], int(r["year"]))] = float(r["value_mtco2"])
     car = read_series(EMISSIONS, "car_co2")
     power = read_series(EMISSIONS, "power_co2")
     grid = read_series(GRID, "grid_intensity")
@@ -170,29 +163,6 @@ def main() -> None:
                 "target_year": target_year,
                 "derivation": text,
                 "source_id": f"{ndc['source_id']};{sid}",
-            }
-        )
-
-    for rate, sector in (("r_fleet", "passenger_cars"), ("r_power", "electricity_heat")):
-        base = weo[(S3_SCENARIO, sector, S3_BASE_YEAR)]
-        target = weo[(S3_SCENARIO, sector, S3_TARGET_YEAR)]
-        value = cagr_decline(base, target, S3_TARGET_YEAR - S3_BASE_YEAR)
-        out.append(
-            {
-                "country": COUNTRY,
-                "scenario": "S3",
-                "rate": rate,
-                "value": round(value, 9),
-                "target_level": "world_prorata",
-                "base_year": S3_BASE_YEAR,
-                "target_year": S3_TARGET_YEAR,
-                "derivation": (
-                    f"IEA WEO 2024 {S3_SCENARIO} world {sector.replace('_', ' ')} CO2 "
-                    f"{base:,.0f} -> {target:,.0f} Mt ({S3_BASE_YEAR}-{S3_TARGET_YEAR}), "
-                    "compound annual decline applied pro-rata; no Australia-specific "
-                    "NZE path in the report on hand."
-                ),
-                "source_id": "iea_weo_2024",
             }
         )
 

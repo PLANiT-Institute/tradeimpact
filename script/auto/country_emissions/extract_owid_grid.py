@@ -4,7 +4,7 @@ Input   data/auto/country_emissions/raw/owid_carbon_intensity_electricity.csv
         (Our World in Data grapher export of Ember Yearly Electricity Data; all entities)
 Output  data/auto/country_emissions/processed/country_emissions_owid_grid.csv
         long format, series ``grid_intensity``, for the importers not covered by the EU27
-        snapshot (United States, Australia, Korea).
+        snapshot (United States, Australia, Korea, Japan).
 
 Run from the repository root:  .venv/bin/python script/auto/country_emissions/extract_owid_grid.py
 """
@@ -20,7 +20,7 @@ RAW = DATASET / "raw" / "owid_carbon_intensity_electricity.csv"
 OUT = DATASET / "processed" / "country_emissions_owid_grid.csv"
 
 # Importers in scope that the EU27 snapshot does not cover: OWID ISO3 -> repo alpha-2.
-IMPORTERS = {"USA": "US", "AUS": "AU", "KOR": "KR"}
+IMPORTERS = {"USA": "US", "AUS": "AU", "KOR": "KR", "JPN": "JP"}
 SOURCE_ID = "owid_ember_grid_intensity"
 FIELDS = ["country", "series", "year", "value", "unit", "source_id", "source_file"]
 
