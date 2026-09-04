@@ -5,11 +5,38 @@ The single live tracking document. Current state only — history is in
 
 **Last pass:** 2026-09-04 (design, conformance and state; state refreshed after ST10 and the
 database build the same day; refreshed after the Kia and Honda EU27 acquisition, the independent
-review, and the first US/AU inputs). **Next pass due:** on the hand fetches that would lift Korea (UNFCCC CRT passenger-car row) or
+review, and the first US/AU inputs; state block rewritten after the Japan build, the S3 removal, the `priced`→`assessed` and tier-C renames and the sign reversal). **Next pass due:** on a refresh of the dated narrative in section 1 into the log, and on the hand fetches that would lift Korea (UNFCCC CRT passenger-car row) or
 unlock India (BTR1 CRT, MoRTH Year Book 2021-22, Vahan export), on a segment-ratio decision, on
 the FCAI VFACTS quote, or at any charter change.
 
 ## 1. Where we are
+
+**State as of 2026-09-04, read from `data/auto/output/` after the sign reversal.** 20 cohorts
+across four destination markets — EU27, the United States, Japan and Korea — for Toyota,
+Hyundai, Kia and Nissan: 15,460,965 units assessed, 324,783 counted and withheld. Two scenarios
+only: S1 the observed trajectory and S2 each government's own committed pathway. **There is no
+S3**; the modelled 1.5 °C scenario was removed on 2026-09-04 because no government published
+one. Sign convention: TI is `E_prod − E_ref`, so **positive is emissions added and negative is
+emissions avoided** (whitepaper v1.6 §3.3).
+
+Lifetime TI by cohort, MtCO₂e, S1 / S2:
+
+| Market | Cohorts |
+|---|---|
+| EU27 | Toyota 2024 +1.68 / +14.37; Hyundai +1.66 / +8.00; Kia +1.52 / +7.37; Nissan +1.44 / +4.43 |
+| US | Toyota 2024 −5.53 / +19.00, 2025 −8.07 / +18.60; Hyundai 2024 −1.56 / +8.84, 2025 −1.50 / +9.63; Kia 2024 −1.01 / +8.77, 2025 −0.001 / +10.52, 2026 H1 +0.49 / +5.81; Nissan 2024 −2.26 / +8.63, 2025 −1.36 / +9.65 |
+| JP | Toyota 2024 −1.07 / +3.50, 2025 −1.13 / +3.53; Nissan 2024 −0.35 / +0.47, 2025 −0.24 / +0.41 |
+| KR | Hyundai 2024 −5.02 / +4.24, 2025 −4.84 / +4.06; Kia 2026 H1 −1.86 / +1.65 |
+
+Totals across the 20 cohorts: **S1 −29.01 MtCO₂e avoided, S2 +151.48 MtCO₂e added** — every
+cohort adds emissions against its own government's pathway. Worldwide-sales coverage of the 2024
+cohorts: Hyundai 42.4 %, Toyota 38.5 %, Nissan 38.1 %. Deliverables now include a 38-page
+analysis report at `data/auto/report/ti_automotive_report.html`, built from the database.
+
+> The dated paragraphs below are the acquisition narrative in the order it happened. They quote
+> the scenarios and signs in force when each was written — several mention S3 and the pre-
+> reversal signs — and are superseded by the state block above. The permanent record of what was
+> decided and when is [`log/README.md`](log/README.md).
 
 PH1 (automotive case study) entered 2026-09-03 and is the only live phase. The five-step chain now
 runs end to end for the first pass — **EU27, Toyota and Hyundai, cohort 2024** — on data already
