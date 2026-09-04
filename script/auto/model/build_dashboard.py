@@ -1,9 +1,11 @@
 """Build the single-file HTML dashboard over the automotive SQLite database.
 
 Reads ``data/auto/tradeimpact_auto.sqlite``, base64-embeds the whole database file into a
-self-contained HTML page and writes ``data/auto/dashboard.html``. The page opens the embedded
-bytes with sql.js (WebAssembly, loaded from a version-pinned CDN) and offers four views:
-lineage, pivot, browse and free-text read-only SQL.
+self-contained HTML page and writes ``data/auto/dashboard.html``. The bytes are gzipped before
+they are base64-encoded (the database is mostly text and compresses about six-fold) and the
+page inflates them with the browser's native ``DecompressionStream``. It then opens them with
+sql.js (WebAssembly, loaded from a version-pinned CDN) and offers four views: lineage, pivot,
+browse and free-text read-only SQL.
 
 The ``tables`` manifest, the ``columns`` dictionary, the source registry and the raw-file
 provenance are also embedded as JSON, so the navigation, the lineage flow and the source links
@@ -18,6 +20,7 @@ Run from the repository root:  .venv/bin/python script/auto/model/build_dashboar
 from __future__ import annotations
 
 import base64
+import gzip
 import json
 import sqlite3
 from pathlib import Path
@@ -521,14 +524,16 @@ function selected(el) {
 function setStatus() {
   const el = document.getElementById('status');
   const mb = (M.db_bytes / 1e6).toFixed(2) + ' MB';
+  const gz = (M.gz_bytes / 1e6).toFixed(2) + ' MB';
   if (dbError) {
     el.className = 'status bad';
-    el.textContent = 'SQL engine unavailable - lineage only (' + mb + ' embedded)';
+    el.textContent = 'SQL engine unavailable - lineage only (' + gz + ' embedded)';
     return;
   }
   el.className = 'status';
   el.textContent = DB
-    ? 'sql.js ' + M.sqljs_version + ' - ' + M.tables.length + ' tables - ' + mb + ' embedded'
+    ? 'sql.js ' + M.sqljs_version + ' - ' + M.tables.length + ' tables - ' + mb +
+      ' database, ' + gz + ' embedded'
     : 'loading the SQL engine';
 }
 
@@ -1343,12 +1348,17 @@ window.addEventListener('hashchange', applyHash);
 
 /* ---------- boot ---------- */
 
+/* The database is embedded gzipped; the browser inflates it natively. */
 function dbBytes() {
   const b64 = document.getElementById('dbb64').textContent.trim();
   const bin = atob(b64);
-  const out = new Uint8Array(bin.length);
-  for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
-  return out;
+  const packed = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) packed[i] = bin.charCodeAt(i);
+  if (typeof DecompressionStream !== 'function') {
+    return Promise.reject(new Error('this browser has no DecompressionStream (gzip)'));
+  }
+  const stream = new Blob([packed]).stream().pipeThrough(new DecompressionStream('gzip'));
+  return new Response(stream).arrayBuffer().then((buf) => new Uint8Array(buf));
 }
 
 function boot() {
@@ -1358,8 +1368,8 @@ function boot() {
     render();
     return;
   }
-  window.initSqlJs({locateFile: (f) => CDN_DIR + f}).then((SQL) => {
-    DB = new SQL.Database(dbBytes());
+  Promise.all([window.initSqlJs({locateFile: (f) => CDN_DIR + f}), dbBytes()]).then((r) => {
+    DB = new r[0].Database(r[1]);
     setStatus();
     render();
   }).catch((e) => {
@@ -1614,12 +1624,13 @@ def build_datasets(
     return cards
 
 
-def build_manifest(conn: sqlite3.Connection, db_bytes: int) -> dict[str, Any]:
+def build_manifest(conn: sqlite3.Connection, db_bytes: int, gz_bytes: int) -> dict[str, Any]:
     """Assemble everything the page needs before the WASM engine is available.
 
     Args:
         conn: Open connection to the automotive database.
         db_bytes: Size of the database file, embedded for the status line.
+        gz_bytes: Size of the gzipped database, embedded for the status line.
 
     Returns:
         The manifest dictionary that is serialised into the page as JSON.
@@ -1630,6 +1641,7 @@ def build_manifest(conn: sqlite3.Connection, db_bytes: int) -> dict[str, Any]:
         "columns": read_columns(conn, tables),
         "datasets": build_datasets(tables, read_raw_files(conn, sources)),
         "db_bytes": db_bytes,
+        "gz_bytes": gz_bytes,
         "default": DEFAULT_PIVOT,
         "sources": sources,
         "sqljs_version": SQLJS_VERSION,
@@ -1646,7 +1658,7 @@ def render(manifest: dict[str, Any], db_b64: str) -> str:
 
     Args:
         manifest: The manifest dictionary.
-        db_b64: The database file, base64-encoded.
+        db_b64: The gzipped database file, base64-encoded.
 
     Returns:
         The complete HTML document.
@@ -1667,20 +1679,25 @@ def main() -> None:
     if not DB.exists():
         raise SystemExit(f"database not found: {DB}")
     raw = DB.read_bytes()
+    # mtime=0 keeps the gzip header, and so the whole page, byte-identical between runs.
+    packed = gzip.compress(raw, compresslevel=9, mtime=0)
     conn = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
     try:
         if not has_table(conn, "tables"):
             raise SystemExit(f"{DB} has no 'tables' manifest: run build_database.py first")
-        manifest = build_manifest(conn, len(raw))
+        manifest = build_manifest(conn, len(raw), len(packed))
     finally:
         conn.close()
     if not manifest["tables"]:
         raise SystemExit(f"{DB} lists no tables: is build_database.py still running?")
-    html = render(manifest, base64.b64encode(raw).decode("ascii"))
+    html = render(manifest, base64.b64encode(packed).decode("ascii"))
     OUT.write_text(html, encoding="utf-8")
     n_tables = len(manifest["tables"])
     n_cols = sum(len(v) for v in manifest["columns"].values())
-    print(f"{DB.relative_to(REPO)}: {len(raw) / 1e6:.2f} MB, {n_tables} tables, {n_cols} columns")
+    print(
+        f"{DB.relative_to(REPO)}: {len(raw) / 1e6:.2f} MB, {n_tables} tables, {n_cols} columns; "
+        f"gzipped to {len(packed) / 1e6:.2f} MB"
+    )
     print(f"{OUT.relative_to(REPO)}: {OUT.stat().st_size / 1e6:.2f} MB")
 
 

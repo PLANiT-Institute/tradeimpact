@@ -86,5 +86,10 @@ this is flagged `OBSERVED_INCREASE` in `emission_targets_eu27.csv` and left as o
 `build_data_quality.py`, `build_database.py`, then ruff and pytest) and exits non-zero at the
 first failure. The model scripts can also be run individually in that order.
 
-The last step writes `data/auto/tradeimpact_auto.sqlite` — every input, lookup, processed
-dataset, output table, the source registry and raw-file provenance in one database.
+`build_database.py` writes `data/auto/tradeimpact_auto.sqlite` — every raw table, lookup,
+processed dataset and output table, the source registry, raw-file provenance, a `tables`
+manifest (dataset, stage, source path, rows, hash) and a `columns` dictionary (type, non-null,
+distinct, example). `build_dashboard.py` embeds that database (gzip + base64) in
+`data/auto/dashboard.html`: a lineage view per data type (raw → method → processed → output
+with source links), a pivot table over any table, a browse view and a read-only SQL console;
+it opens from disk and needs the network only for the sql.js engine (pinned on cdnjs).

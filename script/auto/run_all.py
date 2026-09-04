@@ -5,6 +5,7 @@ Steps (each is a standalone script; see script/auto/README.md):
     derivation   S1/S2/S3 rates per market
     model        reference, impact, sensitivity, aggregation, data quality
     database     every CSV under data/auto -> data/auto/tradeimpact_auto.sqlite
+    dashboard    the database embedded in one HTML page -> data/auto/dashboard.html
     checks       ruff (lint) and pytest (numerical and consistency tests)
 
 Exit status is non-zero if any step fails, so `run_all.py && git commit` can never commit a
@@ -47,6 +48,7 @@ MODEL = [
     "model/aggregate_country.py",
     "model/build_data_quality.py",
     "model/build_database.py",
+    "model/build_dashboard.py",
 ]
 CHECKS = [
     [PY, "-m", "ruff", "check", "script", "tests"],

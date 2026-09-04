@@ -35,10 +35,14 @@ data/auto/         one directory per dataset, each with:
   output/                model results (steps 3–5), with output/method.md
   sources.csv            source registry: every source_id with link, access date, licence
   raw_files.csv          raw-file provenance: original name, SHA-256, source_id
-  tradeimpact_auto.sqlite   THE deliverable: every input, lookup, output and source in one DB
+  tradeimpact_auto.sqlite   the database: raw, lookup, processed and output tables, sources,
+                            raw-file provenance, a tables manifest and a column dictionary
+  dashboard.html            the database embedded in one page: lineage raw -> processed -> output
+                            per data type, pivot table, browse and read-only SQL (open from disk)
 script/auto/       all Python, one directory per dataset plus model/
   <dataset>/             extraction scripts: raw/ -> processed/
-  model/                 build_reference, build_ti, aggregate_country, build_database
+  model/                 build_reference, build_ti, build_sensitivity, aggregate_country,
+                         build_data_quality, build_database, build_dashboard
 archive/           the previous application build (engine, web, MCP, pipeline) — read-only
 ```
 
