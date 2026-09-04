@@ -82,6 +82,8 @@ MODEL_STEPS: tuple[tuple[str, tuple[str, ...]], ...] = (
             "ti_country",
             "ti_powertrain",
             "ti_company",
+            "ti_annual_country",
+            "ti_annual_powertrain",
             "ti_data",
             "ti_coverage",
             "ti_source",
@@ -100,15 +102,17 @@ DEFAULT_PIVOT = {
     "vals": ["ti_tco2e"],
 }
 
-#: The pivot the "Results by year" navigation entry lands on: the same cells, one column per
-#: calendar year of the operating life (filter on scenario to read one pathway at a time).
+#: The pivot the "Results by year" navigation entry lands on: one column per calendar year of
+#: the operating life, and three value rows per company — what the scenario benchmark would have
+#: emitted, what the products emit, and the difference that is the annual TI. The cell-grain
+#: version of the same thing is ti_annual_by_model, and the two roll-ups by destination and by
+#: powertrain are ti_annual_country and ti_annual_powertrain.
 YEARLY_PIVOT = {
     "agg": "sum",
     "cols": "calendar_year",
-    "rows": ["market", "company", "powertrain", "model"],
-    "table": "ti_annual_by_model",
-    "vals": ["ti_tco2e"],
-    "filters": [["scenario", "=", "S1"]],
+    "rows": ["market", "company", "cohort_year", "scenario"],
+    "table": "ti_annual",
+    "vals": ["e_ref_tco2e", "e_prod_tco2e", "ti_tco2e"],
 }
 
 
@@ -1738,16 +1742,27 @@ function buildDatasets(tables, rawFiles) {
     const outputs = stages.output.slice();
     const steps = [];
     if (dataset === 'model' && outputs.length) {
-      const taken = new Set();
-      for (const step of MODEL_STEPS) {
-        const hit = [];
-        for (const p of step[1]) {
-          for (const t of outputs) if (t.indexOf(p) === 0) hit.push(t);
+      // Longest prefix wins, so a table lands in exactly one step: ti_annual_country belongs
+      // to the aggregates step even though "ti_annual" also matches it.
+      const owner = new Map();
+      for (const t of outputs) {
+        let best = null;
+        let length = -1;
+        for (const step of MODEL_STEPS) {
+          for (const p of step[1]) {
+            if (t.indexOf(p) === 0 && p.length > length) {
+              best = step[0];
+              length = p.length;
+            }
+          }
         }
-        hit.forEach((t) => taken.add(t));
+        if (best !== null) owner.set(t, best);
+      }
+      for (const step of MODEL_STEPS) {
+        const hit = outputs.filter((t) => owner.get(t) === step[0]);
         if (hit.length) steps.push({label: step[0], tables: hit});
       }
-      const rest = outputs.filter((t) => !taken.has(t));
+      const rest = outputs.filter((t) => !owner.has(t));
       if (rest.length) steps.push({label: 'other', tables: rest});
     }
     return {

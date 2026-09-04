@@ -122,6 +122,15 @@ liability); positive = below it (contribution). Markets are never summed: differ
 bases, test cycles and benchmarks. Withheld units (PHEV, FCEV, no certified value, Luxembourg's
 implausible benchmark, the Genesis brand, Ioniq 9 without an EPA row) are listed, not absorbed.
 
+The tables above are lifetime totals. Every one of them has an annual twin that carries both
+sides of the comparison in each calendar year rather than only the net figure —
+`ti_annual.csv` per company, `ti_annual_country.csv` per destination,
+`ti_annual_powertrain.csv` per powertrain, and `ti_annual_by_model.csv` per cohort cell. Each
+row gives `e_ref_tco2e` (what the surviving fleet would have emitted on that scenario's
+benchmark), `e_prod_tco2e` (what it actually emits), their difference, the running total, and
+all three per surviving vehicle. The dashboard's *Results by year* view opens on exactly that,
+one column per calendar year.
+
 Read the US rows with their caveats: the cohorts are the companies' own US releases (Hyundai
 IR "US Retail Sales" 2024 and 2025, imports included, brand total despite the label; Kia
 America full years 2024 and 2025; Kia IR Jan–Jun 2026, a half year); the US S1 benchmark is

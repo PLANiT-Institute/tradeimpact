@@ -12,7 +12,10 @@ Inputs
     vehicle_technology/method/real_world_correction.csv   factor per test cycle x powertrain
 Outputs (data/auto/output/)
     ti_by_model.csv    one row per cell x scenario: units, per-vehicle and total TI
-    ti_annual.csv      annual TI flow per company x market x scenario over the cohort horizon
+    ti_annual.csv      per company x market x cohort year x scenario x calendar year: the
+                       surviving fleet, what the benchmark would have emitted, what the
+                       products emit, their difference (the annual TI), the running total,
+                       and all three per surviving vehicle
     ti_annual_by_model.csv  the same flow at cell grain: per market x company x destination x
                        model x powertrain x scenario x year (benchmark, product, gap, TI)
     ti_withheld.csv    units that carry no result and why (from step 3a, plus benchmark holds)
@@ -107,7 +110,13 @@ ANNUAL_FIELDS = [
     "t",
     "calendar_year",
     "surviving_vehicles",
+    "e_ref_tco2e",
+    "e_prod_tco2e",
     "ti_tco2e",
+    "cumulative_ti_tco2e",
+    "e_ref_kgco2e_per_vehicle",
+    "e_prod_kgco2e_per_vehicle",
+    "gap_kgco2e_per_vehicle",
 ]
 ANNUAL_CELL_FIELDS = [
     "market",
@@ -124,6 +133,8 @@ ANNUAL_CELL_FIELDS = [
     "e_ref_kgco2e_per_vehicle",
     "e_prod_kgco2e_per_vehicle",
     "gap_kgco2e_per_vehicle",
+    "e_ref_tco2e",
+    "e_prod_tco2e",
     "ti_tco2e",
     "tier",
 ]
@@ -200,8 +211,11 @@ def main() -> None:
     cells: list[dict[str, object]] = []
 
     annual_cells: list[dict[str, object]] = []
-    annual: dict[tuple[str, str, int, str], dict[int, float]] = defaultdict(
-        lambda: defaultdict(float)
+    #: (market, company, cohort year, scenario) -> calendar year -> {benchmark, product}
+    #: emissions in tCO2e. The annual TI is their difference, so the table carries the
+    #: comparison and not only its result.
+    annual: dict[tuple[str, str, int, str], dict[int, dict[str, float]]] = defaultdict(
+        lambda: defaultdict(lambda: {"e_ref": 0.0, "e_prod": 0.0})
     )
     surviving: dict[tuple[str, str, int], dict[int, float]] = defaultdict(
         lambda: defaultdict(float)
@@ -261,9 +275,9 @@ def main() -> None:
                     e_prod0 = e_prod
                 gap = e_ref - e_prod
                 cumulative += gap
-                annual[(market, c["company"], cohort_year, scenario)][cohort_year + t] += (
-                    gap * units / 1000.0
-                )
+                bucket = annual[(market, c["company"], cohort_year, scenario)][cohort_year + t]
+                bucket["e_ref"] += e_ref * units / 1000.0
+                bucket["e_prod"] += e_prod * units / 1000.0
                 annual_cells.append(
                     {
                         **identity,
@@ -274,6 +288,8 @@ def main() -> None:
                         "e_ref_kgco2e_per_vehicle": round(e_ref, 4),
                         "e_prod_kgco2e_per_vehicle": round(e_prod, 4),
                         "gap_kgco2e_per_vehicle": round(gap, 4),
+                        "e_ref_tco2e": round(e_ref * units / 1000.0, 4),
+                        "e_prod_tco2e": round(e_prod * units / 1000.0, 4),
                         "ti_tco2e": round(gap * units / 1000.0, 4),
                         "tier": tier_flags["tier"],
                     }
@@ -306,7 +322,11 @@ def main() -> None:
 
     annual_rows: list[dict[str, object]] = []
     for (market, company, cohort_year, scenario), series in sorted(annual.items()):
-        for calendar_year, value in sorted(series.items()):
+        cumulative = 0.0
+        for calendar_year, side in sorted(series.items()):
+            fleet = surviving[(market, company, cohort_year)][calendar_year]
+            flow = side["e_ref"] - side["e_prod"]
+            cumulative += flow
             annual_rows.append(
                 {
                     "market": market,
@@ -315,10 +335,14 @@ def main() -> None:
                     "scenario": scenario,
                     "t": calendar_year - cohort_year,
                     "calendar_year": calendar_year,
-                    "surviving_vehicles": int(
-                        surviving[(market, company, cohort_year)][calendar_year]
-                    ),
-                    "ti_tco2e": round(value, 4),
+                    "surviving_vehicles": int(fleet),
+                    "e_ref_tco2e": round(side["e_ref"], 4),
+                    "e_prod_tco2e": round(side["e_prod"], 4),
+                    "ti_tco2e": round(flow, 4),
+                    "cumulative_ti_tco2e": round(cumulative, 4),
+                    "e_ref_kgco2e_per_vehicle": round(side["e_ref"] * 1000.0 / fleet, 4),
+                    "e_prod_kgco2e_per_vehicle": round(side["e_prod"] * 1000.0 / fleet, 4),
+                    "gap_kgco2e_per_vehicle": round(flow * 1000.0 / fleet, 4),
                 }
             )
     write_csv(OUT_ANNUAL, ANNUAL_FIELDS, annual_rows)
