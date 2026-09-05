@@ -662,6 +662,22 @@ Without any server the page offers its reader and one click on `tradeimpact_auto
 the whole dashboard, map included: the world geometry is a row in the database
 (`map_geometry`), not a second file, so nothing else has to be fetched.
 
+## Reading the report
+
+`data/auto/report/ti_automotive_report.html` is the analysis report, and it is a reader of the
+same database in the same way: `script/auto/report/build_report.py` fills `template.html` (the
+markup, styles and reader script beside it) with the library pins it imports from
+`build_dashboard.py`, and nothing else is computed at build time. Opened, the page fetches
+`../database/tradeimpact_auto.sqlite` from the served directory (or the loopback server, or a
+file the reader picks) and runs every query in the browser — the story text, the key-figure
+tiles, the charts and the tables. Seven main tabs carry the story in the order the analysis is
+built (sales → coverage → destination benchmarks → other inputs → annual impact → total impact →
+sources); each opens sub-tabs, and a filter bar (scenario, company, market, cohort year) redraws
+the tab in view while the story text stays on the whole result set. The EU maps use the
+`map_geometry` row. `tests/test_model.py` asserts that no total, percentage or cohort count is
+written into the file and that the three external scripts are the pinned cdnjs builds with
+integrity hashes.
+
 ## Run order
 
 `script/auto/run_all.py` runs everything and exits non-zero at the first failure: extraction,
@@ -678,7 +694,7 @@ the rate derivations (`derive_eu27_rates.py`, `derive_us_rates.py`, `derive_au_r
 7. `build_data_quality.py` — the §5.3 declaration per company × market
 8. `build_coverage.py`, `build_reconciliation.py`, `build_global_coverage.py` — coverage and
    source agreement
-9. `build_database.py`, `build_dashboard.py`
+9. `build_database.py`, `build_dashboard.py`, `report/build_report.py`
 
 then ruff and pytest. The model scripts can also be run individually in that order. Steps 2 and
 3 are independent of each other and of step 1; steps 4 onward read every

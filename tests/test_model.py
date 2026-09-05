@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -399,9 +400,7 @@ def test_the_two_tier_c_measures_are_named_for_their_basis() -> None:
             assert column in r, column
         assert not any(k in {"tier_c_units", "tier_c_share", "tier_c_units_share"} for k in r)
         covered = int(r["covered_units"])
-        by_cell = sum(
-            int(r[f"cell_tier_{t}_units"]) for t in ("a", "b", "c")
-        )
+        by_cell = sum(int(r[f"cell_tier_{t}_units"]) for t in ("a", "b", "c"))
         assert by_cell == covered, r["market"]
         # directional_only follows the distance measure, never the worst-of one.
         flagged = str(r["directional_only"]).lower() in {"1", "true"}
@@ -415,41 +414,43 @@ def test_the_two_tier_c_measures_are_named_for_their_basis() -> None:
 REPORT = DATA / "report" / "ti_automotive_report.html"
 
 
-def test_report_is_self_contained_and_offline() -> None:
-    """The analysis report is one file that loads nothing: no script, no image, no stylesheet.
+def test_report_carries_no_data_of_its_own() -> None:
+    """The analysis report is a reader of the database, not a copy of it.
 
-    The report is a build artefact like any CSV, so what is tested is the property that makes it
-    trustworthy to hand on: it renders from its own bytes, so what a reader sees is what the
-    build produced.
+    What is tested is the property that keeps it honest: no figure is written into the file at
+    build time. Every number a reader sees is a query on ``tradeimpact_auto.sqlite`` at read time,
+    so the page cannot disagree with the tables under it. The only digits allowed in the file are
+    those of the pinned library versions, CSS geometry and the JavaScript itself; a total, a
+    percentage or a cohort count would be a data leak.
     """
     assert REPORT.exists(), REPORT
     html = REPORT.read_text(encoding="utf-8")
-    for forbidden in ("<script", "<img", "<link", "<iframe", "@import", "url("):
-        assert forbidden not in html, forbidden
-    assert html.count("<svg") >= 8, "the report should carry its charts as inline SVG"
+    # Every fact in the prose is a placeholder the page fills from the database.
+    assert html.count("data-f=") >= 30
+    assert "tradeimpact_auto.sqlite" in html
+    # The prose never states a result: no signed megatonne figure, no percentage, no "N of 20".
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
+    text = re.sub(r"<[^>]+>", " ", text)
+    assert not re.search(r"[+\u2212-]\d+\.\d+ ?Mt", text), "a lifetime total is baked in"
+    assert not re.search(r"\d+(\.\d+)? ?%", text), "a percentage is baked in"
+    assert not re.search(r"\b\d+ of \d+\b", text), "a cohort count is baked in"
 
 
-def test_report_states_the_published_result_set(company_rows: list[dict[str, str]]) -> None:
-    """The report's headline figures are the published ones, to the digit it prints.
+def test_report_pins_its_libraries_with_integrity() -> None:
+    """The page loads exactly the dashboard's pinned libraries, each with a subresource hash.
 
-    This is the guard on the report having no data of its own: the totals it states are
-    recomputed here from ti_company.csv and must appear in the file verbatim.
+    The report and the dashboard share one set of pins (build_report imports them), so a library
+    upgrade is one edit; and every external script carries an integrity attribute, so a changed
+    file on the CDN fails closed rather than running.
     """
     html = REPORT.read_text(encoding="utf-8")
-    reported = [r for r in company_rows if r["status"] == "reported"]
-    cohorts = len({(r["market"], r["company"], r["cohort_year"]) for r in reported})
-    assert f"{cohorts} cohorts" in html or f"{cohorts} of them here" in html
-    for scenario in sorted({r["scenario"] for r in reported}):
-        total = sum(
-            float(r["ti_tco2e"]) for r in reported if r["scenario"] == scenario
-        )
-        assert f"{total / 1e6:+,.1f}" in html or f"{total / 1e6:+,.2f}" in html, scenario
-    # TI is emissions minus benchmark, so a cohort that adds emissions is the positive one.
-    adding = sum(1 for r in reported if r["scenario"] == "S2" and float(r["ti_tco2e"]) > 0)
-    total = len({(r["market"], r["company"], r["cohort_year"]) for r in reported})
-    assert f"all\n{adding} of {total} add emissions" in html or (
-        f"{adding} of {total} add" in html
-    )
+    pattern = r"<script src=\"([^\"]+)\"[^>]*integrity=\"(sha(?:384|512)-[^\"]+)\""
+    scripts = re.findall(pattern, html)
+    assert len(scripts) == 3, scripts
+    assert all(src.startswith("https://cdnjs.cloudflare.com/ajax/libs/") for src, _ in scripts)
+    assert "<img" not in html and "<iframe" not in html
+    # The map geometry comes out of the database, never from a second fetch.
+    assert "map_geometry" in html
 
 
 TIERS = {"A", "B", "C"}
