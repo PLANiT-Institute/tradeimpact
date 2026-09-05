@@ -1,0 +1,72 @@
+country,scenario,rate,value,target_level,base_year,target_year,derivation,source_id
+AE,S1,r_power,0.043056459,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+AL,S1,r_power,-0.006470462,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0065/yr).",owid_ember_grid_intensity
+AO,S1,r_power,0.04774892,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+AR,S1,r_power,0.024037194,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+AU,S1,r_power,0.034560879,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+BD,S1,r_power,-0.003191412,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0032/yr).",owid_ember_grid_intensity
+BE,S1,r_power,0.034336137,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+BG,S1,r_power,0.054974316,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+BH,S1,r_power,0.000309906,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+BJ,S1,r_power,0.01107255,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+BN,S1,r_power,0.001373211,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+BR,S1,r_power,0.055172008,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+CA,S1,r_power,-0.002021114,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0020/yr).",owid_ember_grid_intensity
+CL,S1,r_power,0.064576842,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+CN,S1,r_power,0.021128822,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+DK,S1,r_power,0.101463696,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+DZ,S1,r_power,0.000558325,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+EG,S1,r_power,0.005285855,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+ES,S1,r_power,0.080030901,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+FI,S1,r_power,0.118473099,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+FR,S1,r_power,0.040743793,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+GB,S1,r_power,0.051013575,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+GH,S1,r_power,-0.022870468,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0229/yr).",owid_ember_grid_intensity
+GR,S1,r_power,0.07108319,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+GU,S1,r_power,0.006745768,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+ID,S1,r_power,0.002448529,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+IN,S1,r_power,0.009456693,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+IT,S1,r_power,0.031772918,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+JM,S1,r_power,0.005973192,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+JO,S1,r_power,0.02755185,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+JP,S1,r_power,0.018722933,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+KR,S1,r_power,0.021621629,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+LA,S1,r_power,0.004049407,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+MA,S1,r_power,0.005381104,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+ME,S1,r_power,0.038463242,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+MG,S1,r_power,-0.027653675,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0277/yr).",owid_ember_grid_intensity
+MK,S1,r_power,0.02820018,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+MM,S1,r_power,-0.030616042,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0306/yr).",owid_ember_grid_intensity
+MN,S1,r_power,0.007271161,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+MX,S1,r_power,0.014247304,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+MY,S1,r_power,0.009089356,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+MZ,S1,r_power,-0.027573156,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0276/yr).",owid_ember_grid_intensity
+NG,S1,r_power,0.00830373,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+NL,S1,r_power,0.083141878,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+NO,S1,r_power,0.016907409,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+NP,S1,r_power,-0.001566724,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0016/yr).",owid_ember_grid_intensity
+NZ,S1,r_power,0.036118534,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+OM,S1,r_power,0.005573776,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+PH,S1,r_power,-0.010825295,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0108/yr).",owid_ember_grid_intensity
+PK,S1,r_power,0.025373882,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+PL,S1,r_power,0.034114369,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+PR,S1,r_power,0.004232677,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+PT,S1,r_power,0.125126915,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+QA,S1,r_power,0.004035042,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+RS,S1,r_power,0.011056937,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+RU,S1,r_power,-0.000936367,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0009/yr).",owid_ember_grid_intensity
+SA,S1,r_power,0.000247973,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+SN,S1,r_power,0.016204313,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+SZ,S1,r_power,0.047786534,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+TH,S1,r_power,0.008507933,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+TL,S1,r_power,-0.002000588,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0020/yr).",owid_ember_grid_intensity
+TR,S1,r_power,0.010535743,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+TT,S1,r_power,-8.3507e-05,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0001/yr).",owid_ember_grid_intensity
+TW,S1,r_power,0.00513619,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+TZ,S1,r_power,-0.003045359,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0030/yr).",owid_ember_grid_intensity
+UA,S1,r_power,0.060790455,observed_trend,2015,2022,"Log-linear trend of observed grid intensity, 2015-2022 excluding 2020-2021.",owid_ember_grid_intensity
+US,S1,r_power,0.027782182,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+UZ,S1,r_power,0.007448171,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+VN,S1,r_power,0.004237369,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+ZA,S1,r_power,0.011969983,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+ZM,S1,r_power,-0.070900217,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0709/yr).",owid_ember_grid_intensity

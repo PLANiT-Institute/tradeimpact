@@ -7,7 +7,8 @@ Output  data/power/roles/processed/project_roles.csv
 
 Every row must name a known company and role, carry the role's phase and share basis, a share in
 (0, 1] or blank, at least one tracker id, and a source link. A failing row stops the extractor
-by name: a role that cannot be traced is not attributed.
+by name: a role that cannot be traced is not attributed. A header-only register is reported as
+pending and yields a header-only output, so the pipeline runs on the tracker's equity rows alone.
 
 Run from the repository root:  .venv/bin/python script/power/roles/extract_roles.py
 """
@@ -81,13 +82,17 @@ def validate(
 
 def main() -> None:
     """Validate and write the register."""
-    rows = read_csv(RAW) if RAW.exists() else []
+    if not RAW.exists():
+        hand_file_required(RAW, "create the register with the header in method.md")
+    rows = read_csv(RAW)
     if not rows:
-        hand_file_required(
-            RAW,
-            "fill one row per company x unit x role from the GEM wiki page, the company release "
-            "or the lender's project page (schema in data/power/roles/method/method.md)",
+        write_csv(OUT, FIELDS, [])
+        print(
+            f"HAND FILE PENDING (header-only): {RAW.relative_to(REPO)} - construction, "
+            "equipment, O&M and finance roles are not attributed until it is filled; equity "
+            "roles come from the tracker's owner shares (roles/processed/gem_ownership.csv)"
         )
+        return
     vocab = {v["role"]: v for v in read_csv(VOCAB)}
     companies = {c["company_id"]: c for c in read_csv(COMPANIES)}
     problems = validate(rows, vocab, companies)

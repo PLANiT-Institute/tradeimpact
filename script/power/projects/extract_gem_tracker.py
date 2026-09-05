@@ -1,16 +1,20 @@
-"""Extract the in-scope generating units from the Global Energy Monitor tracker workbook(s).
+"""Extract the overseas generating units of the companies in scope from the GEM tracker workbook.
 
 Input   data/power/projects/raw/gem_*.xlsx       HAND-GATHERED (GEM download form; see method.md)
         data/power/projects/method/gem_columns.csv           our field -> tracker header candidates
         data/power/projects/method/country_name_overrides.csv
         data/power/geography/processed/country_codes.csv
-        data/power/companies/method/companies.csv            owner/parent regex per company
+        data/power/companies/method/companies.csv            owner/parent regex and HQ per company
         data/power/roles/raw/project_roles.csv               unit/location ids named by a role
 Output  data/power/projects/processed/projects_gem.csv
 
-A unit is kept when a company pattern matches its Owner or Parent text, or when the role register
-names its unit or location id. Country names are mapped to alpha-2 through the geography table
-and the overrides; an unmapped name stops the extractor and is listed, never dropped.
+A unit is kept when a company pattern matches its Owner or Parent text **and the unit is outside
+that company's home country** (the case study is the trade in power projects, so a Korean plant
+owned by KEPCO is not in scope), or when the hand-gathered role register names its unit or
+location id. Country names are mapped to alpha-2 through the tracker's own country sheet where
+the workbook has one, then the geography table and the overrides; an unmapped name stops the
+extractor and is listed, never dropped. The tracker's ``Type`` is normalised to the model's
+``fuel_type`` (oil/gas split on the first listed fuel); the raw type is kept as ``gem_type``.
 
 Run from the repository root:  .venv/bin/python script/power/projects/extract_gem_tracker.py
 """
@@ -39,6 +43,25 @@ OUT = DATASET / "processed" / "projects_gem.csv"
 SOURCE_ID = "gem_global_integrated_power_tracker"
 BTU_TO_MJ = 1.055056e-3
 HEADER_SCAN_ROWS = 6
+#: The tracker's own country sheet: name column and ISO alpha-2 column headers.
+COUNTRY_SHEET_NAME_HEADER = "GEM Standard Country Name/Area"
+COUNTRY_SHEET_ISO_HEADER = "ISO-alpha2 Code"
+#: Tracker ``Type`` -> model fuel_type; ``oil/gas`` is split on the first listed fuel.
+TYPE_MAP = {
+    "coal": "coal",
+    "oil/gas": "",
+    "gas": "gas",
+    "oil": "oil",
+    "nuclear": "nuclear",
+    "hydropower": "hydro",
+    "hydro": "hydro",
+    "wind": "wind",
+    "utility-scale solar": "solar",
+    "solar": "solar",
+    "bioenergy": "bioenergy",
+    "geothermal": "geothermal",
+}
+LIQUID_MARKERS = ("liquid", "oil", "diesel", "crude", "kerosene", "naphtha", "mazut")
 FIELDS = [
     "gem_unit_id",
     "gem_location_id",
@@ -46,6 +69,7 @@ FIELDS = [
     "country_name",
     "plant_name",
     "unit_name",
+    "gem_type",
     "fuel_type",
     "fuel_detail",
     "technology",
@@ -53,6 +77,7 @@ FIELDS = [
     "status",
     "start_year",
     "retired_year",
+    "operator",
     "owner",
     "parent",
     "latitude",
@@ -111,6 +136,21 @@ def match_companies(text: str, matchers: list[tuple[str, re.Pattern[str]]]) -> l
     return [cid for cid, pattern in matchers if pattern.search(text)]
 
 
+def fuel_type_of(gem_type: str, fuel_detail: str) -> str:
+    """Model fuel_type from the tracker type, splitting oil/gas on the first listed fuel."""
+    kind = TYPE_MAP.get(gem_type.strip().lower())
+    if kind is None:
+        return gem_type.strip().lower()
+    if kind:
+        return kind
+    first = fuel_detail.split(",")[0].strip().lower()
+    if "gas" in first and not any(m in first for m in LIQUID_MARKERS if m != "oil"):
+        return "gas"
+    if any(m in first for m in LIQUID_MARKERS):
+        return "oil"
+    return "gas"
+
+
 def alpha2_lookup(codes: list[dict[str, str]], overrides: list[dict[str, str]]) -> dict[str, str]:
     """Lower-cased country name -> alpha-2, overrides winning over common and official names."""
     table: dict[str, str] = {}
@@ -123,55 +163,97 @@ def alpha2_lookup(codes: list[dict[str, str]], overrides: list[dict[str, str]]) 
     return table
 
 
+def tracker_country_sheet(wb) -> dict[str, str]:  # noqa: ANN001
+    """Lower-cased tracker country name -> alpha-2 from the workbook's own country sheet."""
+    out: dict[str, str] = {}
+    for ws in wb.worksheets:
+        rows = ws.iter_rows(values_only=True)
+        header = [norm(h) for h in next(rows, [])]
+        if (
+            norm(COUNTRY_SHEET_NAME_HEADER) not in header
+            or norm(COUNTRY_SHEET_ISO_HEADER) not in header
+        ):
+            continue
+        i_name, i_iso = (
+            header.index(norm(COUNTRY_SHEET_NAME_HEADER)),
+            header.index(norm(COUNTRY_SHEET_ISO_HEADER)),
+        )
+        for r in rows:
+            name, iso = r[i_name], r[i_iso]
+            if name and iso and len(str(iso).strip()) == 2:
+                out[str(name).strip().lower()] = str(iso).strip().upper()
+        break
+    return out
+
+
 def read_sheet_rows(ws, spec: list[dict[str, str]]) -> list[dict[str, object]]:  # noqa: ANN001
     """Rows of one worksheet keyed by our field names; [] when the sheet has no unit header."""
-    rows = list(ws.iter_rows(values_only=True))
-    for h in range(min(HEADER_SCAN_ROWS, len(rows))):
-        mapping = map_headers(list(rows[h]), spec)
+    rows = ws.iter_rows(values_only=True)
+    head: list[tuple[object, ...]] = []
+    mapping = None
+    for _ in range(HEADER_SCAN_ROWS):
+        row = next(rows, None)
+        if row is None:
+            break
+        head.append(row)
+        mapping = map_headers(list(row), spec)
         if mapping:
-            out = []
-            for values in rows[h + 1 :]:
-                if all(v in (None, "") for v in values):
-                    continue
-                row: dict[str, object] = {}
-                for field, i in mapping.items():
-                    v = values[i] if i < len(values) else None
-                    row[field] = num(v) if field in NUMERIC else ("" if v is None else str(v))
-                out.append(row)
-            return out
-    return []
+            break
+    if not mapping:
+        return []
+    out = []
+    for values in rows:
+        if all(v in (None, "") for v in values):
+            continue
+        rec: dict[str, object] = {}
+        for field, i in mapping.items():
+            v = values[i] if i < len(values) else None
+            rec[field] = num(v) if field in NUMERIC else ("" if v is None else str(v))
+        out.append(rec)
+    return out
 
 
 def extract(
     workbooks: list[Path],
     spec: list[dict[str, str]],
-    matchers: list[tuple[str, re.Pattern[str]]],
+    companies: list[dict[str, str]],
     role_ids: set[str],
     names: dict[str, str],
-) -> tuple[list[dict[str, object]], set[str]]:
-    """Kept unit rows and the set of country names that could not be mapped."""
+) -> tuple[list[dict[str, object]], set[str], int]:
+    """Kept unit rows, the country names that could not be mapped, the domestic units dropped."""
+    matchers = company_matcher(companies)
+    home = {c["company_id"]: c["country"] for c in companies}
     kept: list[dict[str, object]] = []
     unmapped: set[str] = set()
     seen: set[str] = set()
+    domestic = 0
     for path in workbooks:
         wb = load_workbook(path, read_only=True, data_only=True)
+        names_here = {**names, **tracker_country_sheet(wb)}
         for ws in wb.worksheets:
             for r in read_sheet_rows(ws, spec):
                 uid = str(r.get("gem_unit_id") or "")
                 lid = str(r.get("gem_location_id") or "")
-                owner_text = f"{r.get('owner', '')} | {r.get('parent', '')}"
-                matched = match_companies(owner_text, matchers)
-                if not matched and uid not in role_ids and lid not in role_ids:
-                    continue
                 if not uid or uid in seen:
                     continue
-                seen.add(uid)
+                owner_text = f"{r.get('owner', '')} | {r.get('parent', '')}"
+                matched_any = match_companies(owner_text, matchers)
+                named = uid in role_ids or lid in role_ids
+                if not matched_any and not named:
+                    continue
                 name = str(r.get("country") or "")
-                alpha2 = names.get(name.lower())
+                alpha2 = names_here.get(name.lower())
                 if alpha2 is None:
                     unmapped.add(name)
                     continue
+                matched = [cid for cid in matched_any if home.get(cid) != alpha2]
+                if not matched and not named:
+                    domestic += 1
+                    continue
+                seen.add(uid)
                 heat = r.get("heat_rate_btu_per_kwh")
+                gem_type = str(r.get("gem_type", "")).strip().lower()
+                fuel_detail = str(r.get("fuel_detail", "") or "")
                 kept.append(
                     {
                         "gem_unit_id": uid,
@@ -180,13 +262,15 @@ def extract(
                         "country_name": name,
                         "plant_name": r.get("plant_name", ""),
                         "unit_name": r.get("unit_name", ""),
-                        "fuel_type": str(r.get("fuel_type", "")).strip().lower(),
-                        "fuel_detail": r.get("fuel_detail", ""),
+                        "gem_type": gem_type,
+                        "fuel_type": fuel_type_of(gem_type, fuel_detail),
+                        "fuel_detail": fuel_detail,
                         "technology": r.get("technology", ""),
                         "capacity_mw": r.get("capacity_mw"),
                         "status": str(r.get("status", "")).strip().lower(),
                         "start_year": int(r["start_year"]) if r.get("start_year") else "",
                         "retired_year": int(r["retired_year"]) if r.get("retired_year") else "",
+                        "operator": r.get("operator", ""),
                         "owner": r.get("owner", ""),
                         "parent": r.get("parent", ""),
                         "latitude": r.get("latitude"),
@@ -201,7 +285,7 @@ def extract(
                     }
                 )
         wb.close()
-    return kept, unmapped
+    return kept, unmapped, domestic
 
 
 def role_ids_on_file() -> set[str]:
@@ -228,9 +312,9 @@ def main() -> None:
     if not CODES.exists():
         hand_file_required(CODES, "run script/power/geography/extract_country_codes.py")
     spec = read_csv(COLUMNS)
-    matchers = company_matcher(read_csv(COMPANIES))
+    companies = read_csv(COMPANIES)
     names = alpha2_lookup(read_csv(CODES), read_csv(OVERRIDES))
-    kept, unmapped = extract(workbooks, spec, matchers, role_ids_on_file(), names)
+    kept, unmapped, domestic = extract(workbooks, spec, companies, role_ids_on_file(), names)
     if unmapped:
         raise SystemExit(
             "tracker country names with no alpha-2; add them to "
@@ -248,9 +332,9 @@ def main() -> None:
                 "downloaded by hand through GEM's download form (name, organisation and email "
                 "required); no scriptable link exists"
             ),
-            "accessed_date": "",
+            "accessed_date": "2026-09-05",
             "license": "CC BY 4.0",
-            "used_by": "projects;model",
+            "used_by": "projects;roles;model",
         },
         data_root=DATA,
     )
@@ -269,8 +353,9 @@ def main() -> None:
     for r in kept:
         by_country[str(r["country"])] = by_country.get(str(r["country"]), 0) + 1
     print(
-        f"{OUT.relative_to(REPO)}: {len(kept)} units in {len(by_country)} countries from "
-        f"{len(workbooks)} workbook(s); by country {dict(sorted(by_country.items()))}"
+        f"{OUT.relative_to(REPO)}: {len(kept)} overseas units in {len(by_country)} countries from "
+        f"{len(workbooks)} workbook(s); {domestic} domestic units left out; by country "
+        f"{dict(sorted(by_country.items(), key=lambda kv: -kv[1]))}"
     )
 
 

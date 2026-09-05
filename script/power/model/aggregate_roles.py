@@ -1,7 +1,9 @@
 """Attribute each unit's trade impact to the companies that held a role on it, role by role.
 
 Inputs
-    roles/processed/project_roles.csv      company x unit (or plant) x role, phase, share
+    roles/processed/project_roles.csv      hand register: company x unit x role, phase, share
+    roles/processed/gem_ownership.csv      equity rows read from the tracker's owner shares
+    companies/method/companies.csv         names and HQ for the tracker-derived rows
     output/ti_power_by_unit.csv            unit x scenario lifetime results
 Outputs
     output/ti_power_by_role.csv            one row per role row x unit x scenario: the unit's full
@@ -11,7 +13,11 @@ Outputs
 Attribution rule (project lead, 2026-09-05): every role is attributed separately. A company's
 rows of different roles are never added together, and the share stays a column, so the weighting
 can be changed later without re-collecting. A plant-level role (gem_location_id, no unit id)
-applies to every unit at that location.
+applies to every unit at that location. Rows come from two origins, kept in the ``origin``
+column: ``register`` (hand-gathered, any role) and ``gem`` (equity_owner rows read from the
+tracker's owner shares); where the register has an equity_owner row for the same company and
+unit, the register wins. A row whose company is headquartered in the unit's country is a
+domestic holding, not a trade, and is dropped and counted.
 
 Run from the repository root:  .venv/bin/python script/power/model/aggregate_roles.py
 """
@@ -25,6 +31,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from power_io import DATA, OUT, REPO, hand_file_required, num, read_csv, write_csv  # noqa: E402
 
 ROLES = DATA / "roles" / "processed" / "project_roles.csv"
+GEM_OWNERSHIP = DATA / "roles" / "processed" / "gem_ownership.csv"
+COMPANIES = DATA / "companies" / "method" / "companies.csv"
 BY_UNIT = OUT / "ti_power_by_unit.csv"
 BY_ROLE = OUT / "ti_power_by_role.csv"
 COMPANY = OUT / "ti_power_company.csv"
@@ -36,6 +44,7 @@ ROLE_FIELDS = [
     "phase",
     "share",
     "share_basis",
+    "origin",
     "gem_unit_id",
     "gem_location_id",
     "plant_name",
@@ -64,6 +73,8 @@ COMPANY_FIELDS = [
     "scenario",
     "units",
     "units_with_share",
+    "units_from_register",
+    "units_from_gem",
     "capacity_mw",
     "ti_lifetime_full_tco2",
     "ti_lifetime_weighted_tco2",
@@ -104,6 +115,7 @@ def attribute(roles: list[dict[str, str]], units: list[dict[str, str]]) -> list[
                     "phase": r["phase"],
                     "share": share if share is not None else "",
                     "share_basis": r["share_basis"],
+                    "origin": r.get("origin", "register"),
                     "gem_unit_id": u["gem_unit_id"],
                     "gem_location_id": u["gem_location_id"],
                     "plant_name": u["plant_name"],
@@ -147,6 +159,10 @@ def company_totals(rows: list[dict[str, object]]) -> list[dict[str, object]]:
                 "scenario": scenario,
                 "units": len({str(r["gem_unit_id"]) for r in rs}),
                 "units_with_share": len({str(r["gem_unit_id"]) for r in with_share}),
+                "units_from_register": len(
+                    {str(r["gem_unit_id"]) for r in rs if r["origin"] == "register"}
+                ),
+                "units_from_gem": len({str(r["gem_unit_id"]) for r in rs if r["origin"] == "gem"}),
                 "capacity_mw": round(sum(float(r["capacity_mw"]) for r in rs), 1),
                 "ti_lifetime_full_tco2": round(full, 3),
                 "ti_lifetime_weighted_tco2": round(
@@ -166,19 +182,78 @@ def company_totals(rows: list[dict[str, object]]) -> list[dict[str, object]]:
     return out
 
 
+def merge_registers(
+    register: list[dict[str, str]],
+    gem: list[dict[str, str]],
+    companies: dict[str, dict[str, str]],
+) -> tuple[list[dict[str, str]], int]:
+    """Register rows plus uncovered tracker equity rows; domestic rows dropped and counted."""
+    out: list[dict[str, str]] = []
+    domestic = 0
+    covered = {(r["company_id"], r["gem_unit_id"]) for r in register if r["role"] == "equity_owner"}
+    covered_loc = {
+        (r["company_id"], r["gem_location_id"])
+        for r in register
+        if r["role"] == "equity_owner" and r["gem_location_id"]
+    }
+    for r in register:
+        if r["company_country"] == r["country"] and r["country"]:
+            domestic += 1
+            continue
+        out.append({**r, "origin": "register"})
+    for g in gem:
+        c = companies[g["company_id"]]
+        if c["country"] == g["country"]:
+            domestic += 1
+            continue
+        if (g["company_id"], g["gem_unit_id"]) in covered or (
+            g["company_id"],
+            g["gem_location_id"],
+        ) in covered_loc:
+            continue
+        out.append(
+            {
+                "company_id": g["company_id"],
+                "company_name": c["name_en"],
+                "company_country": c["country"],
+                "company_type": c["type"],
+                "gem_unit_id": g["gem_unit_id"],
+                "gem_location_id": "",
+                "plant_name": g["plant_name"],
+                "country": g["country"],
+                "role": "equity_owner",
+                "phase": "operation",
+                "share": g["share"],
+                "share_basis": "equity_share",
+                "from_year": "",
+                "to_year": "",
+                "source_url": g["source_url"],
+                "source_note": f"tracker {g['level']} entry: {g['entity']}",
+                "accessed_date": "",
+                "origin": "gem",
+            }
+        )
+    return out, domestic
+
+
 def main() -> None:
     """Write the role-level and company x role tables."""
     if not ROLES.exists():
         hand_file_required(ROLES, "run script/power/roles/extract_roles.py")
+    if not GEM_OWNERSHIP.exists():
+        hand_file_required(GEM_OWNERSHIP, "run script/power/roles/extract_gem_ownership.py")
     if not BY_UNIT.exists():
         hand_file_required(BY_UNIT, "run script/power/model/build_ti_power.py")
-    rows = attribute(read_csv(ROLES), read_csv(BY_UNIT))
+    companies = {c["company_id"]: c for c in read_csv(COMPANIES)}
+    merged, domestic = merge_registers(read_csv(ROLES), read_csv(GEM_OWNERSHIP), companies)
+    rows = attribute(merged, read_csv(BY_UNIT))
     write_csv(BY_ROLE, ROLE_FIELDS, rows)
     totals = company_totals(rows)
     write_csv(COMPANY, COMPANY_FIELDS, totals)
     print(
-        f"{BY_ROLE.relative_to(REPO)}: {len(rows)} role x unit x scenario rows; "
-        f"{COMPANY.name}: {len(totals)} company x role x scenario rows"
+        f"{BY_ROLE.relative_to(REPO)}: {len(rows)} role x unit x scenario rows from "
+        f"{len(merged)} role rows ({domestic} domestic dropped); {COMPANY.name}: {len(totals)} "
+        "company x role x scenario rows"
     )
 
 

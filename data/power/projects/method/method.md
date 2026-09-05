@@ -9,6 +9,10 @@ commissioning year, and its coordinates for the map.
 
 ## Raw file — HAND-GATHERED
 
+On disk since 2026-09-05: `raw/gem_global_integrated_power_2026_08_v3.xlsx` (Global Integrated
+Power Tracker, August 2026, v3; 183,125 unit rows in sheet `Power facilities`), downloaded by the
+project lead through the form and copied in unrenamed except for the lowercase `gem_` prefix.
+
 `raw/gem_*.xlsx` — the **Global Energy Monitor Global Integrated Power Tracker** (or the fuel
 trackers it integrates: Global Coal Plant Tracker, Global Gas Plant Tracker, Global Oil and Gas
 Plant Tracker, Global Nuclear Power Tracker, the renewable trackers). Landing page and licence
@@ -39,16 +43,26 @@ on disk, `run_all.py` stops at this step with `[hand]`.
 ## Processed output
 
 `processed/projects_gem.csv` — `gem_unit_id`, `gem_location_id`, `country` (alpha-2),
-`country_name`, `plant_name`, `unit_name`, `fuel_type`, `fuel_detail`, `technology`,
-`capacity_mw`, `status`, `start_year`, `retired_year`, `owner`, `parent`, `latitude`,
+`country_name`, `plant_name`, `unit_name`, `gem_type`, `fuel_type`, `fuel_detail`,
+`technology`, `capacity_mw`, `status`, `start_year`, `retired_year`, `operator`, `owner`,
+`parent` (both with the tracker's bracketed shares), `latitude`,
 `longitude`, `capacity_factor`, `heat_rate_mj_per_kwh` (from Btu/kWh × 1.055056 / 1000),
 `gem_emission_factor_kgco2_per_tj`, `wiki_url`, `matched_companies`, `source_id`, `source_file`.
 
 ## Rules
 
 - A unit enters when the tracker's Owner or Parent text matches a company's
-  `gem_owner_pattern`, **or** when the role register names its unit or location id. The second
-  route is what brings in EPC, equipment and finance roles, which the tracker does not record.
+  `gem_owner_pattern` **and the unit sits outside that company's home country** (a Korean plant
+  owned by KEPCO is a domestic holding, not a trade; the count left out is printed), **or** when
+  the role register names its unit or location id. The second route is what brings in EPC,
+  equipment and finance roles, which the tracker does not record.
+- The tracker's `Type` (`coal`, `oil/gas`, `hydropower`, `utility-scale solar`, `wind`,
+  `bioenergy`, `nuclear`, `geothermal`) is kept as `gem_type` and normalised to `fuel_type`;
+  `oil/gas` is split on the first fuel listed in `Fuel (combustion only)`, which the tracker
+  orders by importance. The August 2026 release publishes no unit-level heat rate or capacity
+  factor, so every fossil unit is on technology defaults (tier C) until a source for those exists.
+- Country names are mapped through the workbook's own sheet `Regions, area, and countries`
+  (GEM standard name → ISO alpha-2), so the overrides table is only a fallback.
 - `matched_companies` is orientation only; attribution comes from the role register, where the
   role, phase and share are stated with a source.
 - Nothing is filtered by status here. The model excludes cancelled and shelved units and carries

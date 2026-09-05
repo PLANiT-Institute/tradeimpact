@@ -33,6 +33,20 @@ repository (a method table, not a fetched dataset) and is the join key for two t
 - The `note` column is orientation for the person filling the role register. Every project it
   mentions still needs a sourced role row before it counts.
 
+## Pattern notes (checked against the August 2026 tracker)
+
+Short acronyms carry word boundaries (`\bKEPCO\b`, `\bEWP\b`, `\bIHI\b`, `\bNEXI\b` — plain
+`NEXI` matched Nexif Energy). `Mitsui & Co\b` excludes Mitsui E&S and JA Mitsui Leasing;
+`(?<!\w )Electric Power Development` excludes Guangdong Electric Power Development; Hanwha is
+narrowed to its energy arms because plain `Hanwha` matched the solar manufacturer's Chinese
+plants; `Daewoo E|Daewood E` follows the tracker's two spellings; `Samsun E&C America` is how the
+tracker spells Samsung C&T's US arm; `Summit Power` was dropped from Sumitomo's pattern because
+Summit Power Ltd (Bangladesh) and Summit Power Group (US) are unrelated companies. J-POWER's
+50 minority stakes in Chinese plants (1.5–4 %) are genuine tracker entries and are the clearest
+case for reading the full and the share-weighted columns together.
+The export credit agencies and pure EPC groups (GS E&C, Chiyoda, Sumitomo Heavy) match no owner
+string, as expected: they enter only through the role register.
+
 ## Status (2026-09-05)
 
 First pass authored from the project lead's scoping conversation: KEPCO and its six generation

@@ -35,6 +35,7 @@ STEPS = [
     "grid/extract_owid_grid.py",
     "emission_factors/extract_emission_factors.py",
     "projects/extract_gem_tracker.py",
+    "roles/extract_gem_ownership.py",
     "roles/extract_roles.py",
     "targets/derive_power_rates.py",
     "model/build_reference_power.py",
