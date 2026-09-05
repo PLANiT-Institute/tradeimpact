@@ -1,0 +1,16 @@
+table_pattern,column,value_pattern,tier,reason
+grid_intensity,series,grid_intensity,A,Ember national generation-based carbon intensity as published by Our World in Data
+emission_factors,basis,national,A,the destination country's own implied emission factor for the fuel (national inventory)
+emission_factors,basis,ipcc_default,C,IPCC 2006 global default standing in for the country's value
+projects_gem,capacity_mw,.*,A,Global Energy Monitor unit capacity as published
+projects_gem,start_year,.*,A,Global Energy Monitor commissioning year as published
+projects_gem,capacity_factor,.+,B,Global Energy Monitor estimate by technology and age
+projects_gem,heat_rate_mj_per_kwh,.+,B,Global Energy Monitor heat-rate estimate converted from Btu/kWh
+ti_power_by_unit,cf_source,default,C,technology default capacity factor (projects/method/technology_defaults.csv)
+ti_power_by_unit,heat_rate_source,default,C,technology default efficiency (projects/method/technology_defaults.csv)
+ti_power_by_unit,lifetime_source,default,C,technology default lifetime (projects/method/technology_defaults.csv)
+ti_power_by_unit,lifetime_source,retired_year,A,retirement year as published by the tracker
+emission_targets_power,target_level,observed_trend,A,log-linear fit of the published grid series
+emission_targets_power,target_level,power_prorata.*,B,committed target applied pro rata to grid intensity
+emission_targets_power,target_level,economy_prorata.*,B,economy-wide target applied pro rata to grid intensity (boundary assumption)
+project_roles,share_basis,.*,B,share read by hand from a project page or company release; C where the source_note says press report

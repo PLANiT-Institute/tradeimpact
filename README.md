@@ -30,7 +30,7 @@ the engagement is governed by the Climate Arc grant proposal (see `claude-docs/`
 ## Layout
 
 ```text
-methodology/       whitepaper + automotive guideline (methodology truth source)
+methodology/       whitepaper + automotive and power guidelines (methodology truth source)
 claude-docs/       research governance: charter, phases, stages, process, tracker
 data/auto/         one directory per dataset, each with:
   <dataset>/raw/         source files exactly as obtained — never edited
@@ -56,6 +56,13 @@ script/auto/       all Python, one directory per dataset plus model/
                          build_database, build_dashboard
   serve_dashboard.py     serves data/auto on http://127.0.0.1:8765 so database/dashboard.html
                          can read the database beside it and the map geometry
+data/power/        the power case study, same raw/processed/method triple per dataset:
+                         companies, projects (Global Energy Monitor, hand download), roles (hand
+                         register), grid, emission_factors, targets, geography; output/ and
+                         registry/ as for auto
+script/power/      its pipeline (fetch, extract, derive, model) and run_all.py, which stops with
+                         [hand] when a hand-gathered file is missing
+script/registry.py provenance registry helpers shared by both sectors
 archive/           the previous application build (engine, web, MCP, pipeline) — read-only
 ```
 
@@ -202,6 +209,20 @@ hybrids beat the trend and not the target, battery-electric avoids under both; t
 avoids in one market and adds several tonnes a vehicle in another; inside the EU27 geography
 outweighs technology; and vehicle lifetime moves the result more than any other input without
 turning a committed-policy addition into an avoidance.
+
+## The power case study
+
+`data/power/` applies the same framework to the overseas power projects of Korean and Japanese
+companies — the generating units they own, built, supplied or financed — measured year by year
+against the grid of the country they feed (`methodology/TI_Power_Technical_Guideline_v1.0.md`,
+`data/power/output/method.md`). The unit of analysis is a generating unit from the Global Energy
+Monitor tracker; attribution is per **role** (developer, equity owner, EPC contractor, equipment
+supplier, O&M, lender, ECA cover) with the **phase** and **share** as data columns, never pooled
+across roles; the emission factor is the destination's own where on file and the IPCC 2006
+default otherwise; the benchmark is the destination grid under S1 (observed trend) and S2
+(committed target). Results are published per unit with coordinates and per company × role.
+Status and the list of hand-gathered inputs the pipeline waits on are in
+`data/power/output/method.md`.
 
 ## Naming convention
 
