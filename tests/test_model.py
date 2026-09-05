@@ -453,6 +453,15 @@ def test_report_pins_its_libraries_with_integrity() -> None:
     assert "map_geometry" in html
 
 
+def test_every_company_row_says_whether_it_is_a_home_market(
+    company_rows: list[dict[str, str]],
+) -> None:
+    """Scope: Hyundai and Kia are at home in KR, Toyota and Nissan in JP; the column says so."""
+    home = {"hyundai": "KR", "kia": "KR", "toyota": "JP", "nissan": "JP"}
+    for r in company_rows:
+        assert r["home_market"] == ("yes" if home[r["company"]] == r["market"] else "no"), r
+
+
 TIERS = {"A", "B", "C"}
 
 

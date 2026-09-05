@@ -72,10 +72,12 @@ def infer_type(values: list[str]) -> str:
         return "TEXT"
 
 
-def load_tier_rules() -> list[tuple[re.Pattern[str], str, re.Pattern[str], str, str]]:
-    """The per-value tier rules of data/auto/value_tiers.csv, patterns compiled."""
+def load_tier_rules(
+    path: Path = VALUE_TIERS,
+) -> list[tuple[re.Pattern[str], str, re.Pattern[str], str, str]]:
+    """The per-value tier rules of a registry/value_tiers.csv, patterns compiled."""
     rules = []
-    for r in csv.DictReader(VALUE_TIERS.open(newline="")):
+    for r in csv.DictReader(path.open(newline="")):
         rules.append(
             (
                 re.compile(f"^(?:{r['table_pattern']})$"),
@@ -119,8 +121,10 @@ def load_csv(
     conn: sqlite3.Connection,
     path: Path,
     rules: list[tuple[re.Pattern[str], str, re.Pattern[str], str, str]] | None = None,
+    table: str | None = None,
 ) -> int:
-    """Create a table named after the file stem and load every row; return the row count."""
+    """Create a table (named after the file stem unless given), load every row, return the count."""
+    table = table or path.stem
     try:
         text = path.read_text(encoding="utf-8-sig")
     except UnicodeDecodeError:
@@ -135,37 +139,36 @@ def load_csv(
             f"(first at line {bad[0]}); the file is malformed or truncated"
         )
     if rules:
-        header, rows = tier_columns(path.stem, header, rows, rules)
+        header, rows = tier_columns(table, header, rows, rules)
     types = [infer_type([r[i] for r in rows]) for i in range(len(header))]
     columns = ", ".join(f'"{h}" {t}' for h, t in zip(header, types, strict=True))
-    conn.execute(f'CREATE TABLE "{path.stem}" ({columns})')
+    conn.execute(f'CREATE TABLE "{table}" ({columns})')
     converters = [int if t == "INTEGER" else float if t == "REAL" else str for t in types]
 
     def convert(row: list[str]) -> list[object]:
         return [None if v == "" else conv(v) for v, conv in zip(row, converters, strict=True)]
 
     conn.executemany(
-        f'INSERT INTO "{path.stem}" VALUES ({", ".join("?" * len(header))})',
+        f'INSERT INTO "{table}" VALUES ({", ".join("?" * len(header))})',
         (convert(r) for r in rows),
     )
     return len(rows)
 
 
-def load_geometry(conn: sqlite3.Connection) -> int:
+def load_geometry(conn: sqlite3.Connection, geometry: Path = GEOMETRY) -> int:
     """Load the world TopoJSON as one row so the dashboard map needs no second file.
 
     The map view reads its geometry out of the database like every other value, which is what
     lets the page work when it is opened straight from disk and handed the database file.
     """
-    if not GEOMETRY.exists():
+    if not geometry.exists():
         raise SystemExit(
-            f"{GEOMETRY.relative_to(REPO)} is missing: run "
-            "script/auto/dashboard/fetch_map_assets.py"
+            f"{geometry.relative_to(REPO)} is missing: run the sector's map-geometry fetcher"
         )
     conn.execute('CREATE TABLE "map_geometry" (name TEXT, sha256 TEXT, topojson TEXT)')
     conn.execute(
         'INSERT INTO "map_geometry" VALUES (?, ?, ?)',
-        (GEOMETRY.name, sha256(GEOMETRY), GEOMETRY.read_text()),
+        (geometry.name, sha256(geometry), geometry.read_text()),
     )
     return 1
 

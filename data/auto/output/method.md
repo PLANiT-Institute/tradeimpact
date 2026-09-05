@@ -678,6 +678,16 @@ the tab in view while the story text stays on the whole result set. The EU maps 
 written into the file and that the three external scripts are the pinned cdnjs builds with
 integrity hashes.
 
+## Scope: which markets, and whether home markets count
+
+`data/auto/registry/scope.csv` holds two settings read by `aggregate_country.py`: `markets` (`all`
+or a list of market codes) and `exclude_home_market` (`no` by default: Hyundai's and Kia's Korean
+cohorts and Toyota's and Nissan's Japanese cohorts stay in, because a domestic sale is still a
+sale into that fleet). Set to `yes`, those cohorts are published as excluded rows with the reason,
+so the result set is the export impact; nothing is dropped silently. `ti_company.csv` carries a
+`home_market` column either way, and the analysis report has the same switch as a filter
+("Home markets: include / exclude").
+
 ## Run order
 
 `script/auto/run_all.py` runs everything and exits non-zero at the first failure: extraction,

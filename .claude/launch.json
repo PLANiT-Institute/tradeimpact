@@ -4,8 +4,22 @@
     {
       "name": "dashboard",
       "runtimeExecutable": ".venv/bin/python",
-      "runtimeArgs": ["script/auto/serve_dashboard.py"],
+      "runtimeArgs": [
+        "script/auto/serve_dashboard.py"
+      ],
       "port": 8765
+    },
+    {
+      "name": "power",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "script/auto/serve_dashboard.py",
+        "--root",
+        "power",
+        "--port",
+        "8766"
+      ],
+      "port": 8766
     }
   ]
 }

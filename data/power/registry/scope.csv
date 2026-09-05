@@ -1,0 +1,3 @@
+setting,value,note
+destinations,all,Destination countries whose units are extracted: 'all' or a semicolon list of alpha-2 codes. A unit outside the list is not extracted.
+exclude_home_country,yes,"'yes' leaves a company's units in its own country out at extraction (a domestic holding is not a trade), so the result is the export impact; 'no' keeps them and the report's Home chip then separates them."

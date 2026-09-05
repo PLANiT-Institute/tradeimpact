@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #14161a; --muted: #5f6873; --rule: #d9dee5; --bg: #f4f6f8; --paper: #ffffff;
+  --panel: #eef1f5; --accent: #1f4e79; --accent-ink: #ffffff;
+  --added: #b23a3a; --avoided: #1f7a5a; --band: rgba(120,140,170,0.18);
+  --s1: #4a6fa5; --s2: #b06a1f;
+  --coal: #4b4f57; --gas: #c47a1f; --oil: #8a5a2b; --nuclear: #7b5ea7; --hydro: #2b6cb0;
+  --wind: #2a9d8f; --solar: #e0a900; --bioenergy: #6b8e23; --geothermal: #b5573f;
+  --held: #cfd4db; --land: #e6e9ee; --water: #f7f9fb;
+  --shadow: 0 1px 2px rgba(0,0,0,0.05), 0 6px 18px rgba(0,0,0,0.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ink: #e7eaef; --muted: #9ba5b3; --rule: #313845; --bg: #0f1216; --paper: #171b21;
+    --panel: #1e242c; --accent: #8fb8e6; --accent-ink: #0f1216;
+    --added: #e07a72; --avoided: #4fc39a; --band: rgba(140,170,210,0.16);
+    --s1: #86ade0; --s2: #dda65f; --coal: #a0a6b0; --gas: #e0a25a; --oil: #c48a5a;
+    --nuclear: #b39ddb; --hydro: #6aa3e0; --wind: #5fc4b8; --solar: #f2c94c; --bioenergy: #9dbb4a;
+    --geothermal: #d98570; --held: #3a424e; --land: #232a33; --water: #171b21; --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #e7eaef; --muted: #9ba5b3; --rule: #313845; --bg: #0f1216; --paper: #171b21;
+  --panel: #1e242c; --accent: #8fb8e6; --accent-ink: #0f1216;
+  --added: #e07a72; --avoided: #4fc39a; --band: rgba(140,170,210,0.16);
+  --s1: #86ade0; --s2: #dda65f; --coal: #a0a6b0; --gas: #e0a25a; --oil: #c48a5a;
+  --nuclear: #b39ddb; --hydro: #6aa3e0; --wind: #5fc4b8; --solar: #f2c94c; --bioenergy: #9dbb4a;
+  --geothermal: #d98570; --held: #3a424e; --land: #232a33; --water: #171b21; --shadow: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.55 ui-sans-serif, -apple-system, "Segoe UI", Inter, Roboto, sans-serif; }
+a { color: var(--accent); }
+code { font: 0.92em ui-monospace, "SF Mono", Menlo, monospace; }
+button { font: inherit; }
+.top { position: sticky; top: 0; z-index: 30; background: var(--paper);
+  border-bottom: 1px solid var(--rule); box-shadow: var(--shadow); }
+.top .inner { max-width: 1320px; margin: 0 auto; padding: 10px 20px 0; }
+.brandrow { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
+.brand .kicker { font-size: 11px; letter-spacing: 0.09em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; }
+.brand h1 { font-size: 18px; margin: 0; font-weight: 700; letter-spacing: -0.01em; }
+.status { font-size: 12px; color: var(--muted); text-align: right; max-width: 46%; }
+.status b { color: var(--ink); font-weight: 600; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; padding: 8px 0;
+  font-size: 13px; }
+.fgroup { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+.fgroup .lbl { color: var(--muted); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.06em; margin-right: 2px; }
+.chip { border: 1px solid var(--rule); background: var(--paper); color: var(--ink);
+  padding: 2px 10px; border-radius: 999px; cursor: pointer; font-size: 13px; line-height: 1.35; }
+.chip:hover { border-color: var(--accent); }
+.chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.chip.s1.on { background: var(--s1); border-color: var(--s1); color: #fff; }
+.chip.s2.on { background: var(--s2); border-color: var(--s2); color: #fff; }
+.chip.reset { color: var(--muted); border-style: dashed; }
+.filters select { font: inherit; font-size: 13px; padding: 2px 6px; border: 1px solid var(--rule);
+  border-radius: 6px; background: var(--paper); color: var(--ink); }
+.showing { color: var(--muted); font-size: 12px; margin-left: auto; }
+.tabs { display: flex; gap: 2px; overflow-x: auto; border-top: 1px solid var(--rule); }
+.tabs button { background: none; border: 0; border-bottom: 3px solid transparent; padding: 10px 14px;
+  cursor: pointer; color: var(--muted); font-weight: 600; font-size: 14px; white-space: nowrap; }
+.tabs button .n { display: inline-block; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--panel); color: var(--muted); font-size: 12px; line-height: 20px;
+  text-align: center; margin-right: 7px; }
+.tabs button:hover { color: var(--ink); }
+.tabs button.on { color: var(--ink); border-bottom-color: var(--accent); }
+.tabs button.on .n { background: var(--accent); color: var(--accent-ink); }
+.wrap { max-width: 1320px; margin: 0 auto; padding: 18px 20px 80px; }
+.story { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 20px 26px; margin-bottom: 14px; box-shadow: var(--shadow); }
+.story h2 { margin: 0 0 6px; font-size: 24px; letter-spacing: -0.01em; }
+.story p { margin: 0 0 8px; max-width: 88ch; }
+.story p.lead { font-size: 16.5px; line-height: 1.5; }
+.callout { background: var(--panel); border-left: 3px solid var(--accent); padding: 10px 14px;
+  border-radius: 6px; margin: 10px 0 0; max-width: 90ch; }
+.callout p:last-child { margin-bottom: 0; }
+.subtabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+.subtabs button { border: 1px solid var(--rule); background: var(--paper); color: var(--muted);
+  padding: 6px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 13.5px; }
+.subtabs button:hover { color: var(--ink); border-color: var(--accent); }
+.subtabs button.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.panel { display: grid; gap: 14px; }
+.card { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 18px 22px; box-shadow: var(--shadow); min-width: 0; }
+.card h3 { margin: 0 0 4px; font-size: 16px; }
+.card p { margin: 0 0 8px; max-width: 88ch; }
+.card .sub { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.row31 { display: grid; grid-template-columns: 3fr 1.2fr; gap: 14px; }
+@media (max-width: 960px) { .row2, .row31 { grid-template-columns: 1fr; } }
+.muted { color: var(--muted); } .small { font-size: 13px; }
+.f { font-variant-numeric: tabular-nums; font-weight: 600; }
+.f.added { color: var(--added); } .f.avoided { color: var(--avoided); }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;
+  margin: 6px 0 4px; }
+.kpi { background: var(--panel); border-radius: 10px; padding: 11px 13px; }
+.kpi .v { font-size: 24px; font-weight: 700; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums; line-height: 1.1; }
+.kpi .v.added { color: var(--added); } .kpi .v.avoided { color: var(--avoided); }
+.kpi .l { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.fig { margin: 6px 0 4px; }
+.ctl { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 13px;
+  margin-bottom: 6px; }
+.ctl select { font: inherit; padding: 3px 6px; border: 1px solid var(--rule); border-radius: 6px;
+  background: var(--paper); color: var(--ink); max-width: 100%; }
+.fig svg { width: 100%; height: auto; display: block; }
+.cap { font-size: 12.5px; color: var(--muted); margin-top: 6px; max-width: 100ch; }
+.cap b { color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12.5px; color: var(--muted);
+  margin: 4px 0 6px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px;
+  margin-right: 5px; vertical-align: -1px; }
+svg text { font: 11px ui-sans-serif, system-ui, sans-serif; fill: var(--ink); }
+svg .tick text { fill: var(--muted); font-size: 10.5px; }
+svg .grid line { stroke: var(--rule); stroke-width: 0.7; }
+svg .zero { stroke: var(--ink); stroke-width: 1.1; }
+svg .bar, svg .dot, svg .unit { cursor: pointer; }
+svg .bar:hover, svg .dot:hover { filter: brightness(1.12); stroke: var(--ink); stroke-width: 1; }
+svg .land { fill: var(--land); stroke: var(--paper); stroke-width: 0.5; }
+svg .land.dest { fill: var(--panel); stroke: var(--muted); stroke-width: 0.6; }
+svg .land.dest.s2 { fill: var(--band); }
+svg .ocean { fill: var(--water); }
+svg .unit { stroke: var(--paper); stroke-width: 0.8; fill-opacity: 0.82; }
+svg .unit:hover, svg .unit.sel { stroke: var(--ink); stroke-width: 1.6; fill-opacity: 1; }
+svg .scrub { stroke: var(--ink); stroke-dasharray: 3 3; }
+.tip { position: fixed; z-index: 50; pointer-events: none; background: var(--ink);
+  color: var(--paper); padding: 7px 10px; border-radius: 8px; font-size: 12.5px; line-height: 1.4;
+  max-width: 340px; box-shadow: 0 6px 22px rgba(0,0,0,0.25); display: none; }
+.readout { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px;
+  margin: 8px 0; }
+.readout div { background: var(--panel); border-radius: 8px; padding: 8px 10px; font-size: 13px; }
+.readout .v { font-weight: 700; font-variant-numeric: tabular-nums; font-size: 16px; }
+.readout .v.added { color: var(--added); } .readout .v.avoided { color: var(--avoided); }
+.tbl { overflow-x: auto; margin: 6px 0; }
+.tbl.short { max-height: 420px; overflow: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th:first-child, td:first-child, .l { text-align: left; }
+thead th { font-weight: 600; color: var(--muted); cursor: pointer; user-select: none;
+  position: sticky; top: 0; background: var(--paper); z-index: 1; }
+thead th:hover, thead th.sorted { color: var(--ink); }
+thead th.sorted::after { content: " \25BE"; font-size: 10px; }
+thead th.sorted.asc::after { content: " \25B4"; }
+tbody tr:hover { background: var(--panel); }
+tbody tr.click { cursor: pointer; }
+td.added { color: var(--added); font-variant-numeric: tabular-nums; }
+td.avoided { color: var(--avoided); font-variant-numeric: tabular-nums; }
+td.num { font-variant-numeric: tabular-nums; }
+td.wrap { white-space: normal; min-width: 260px; }
+tfoot td { font-weight: 600; border-top: 1.5px solid var(--ink); }
+.tier { display: inline-block; min-width: 18px; text-align: center; border-radius: 4px;
+  font-size: 11px; font-weight: 700; padding: 0 4px; }
+.tier.A { background: var(--avoided); color: #fff; } .tier.B { background: var(--hydro); color: #fff; }
+.tier.C { background: var(--added); color: #fff; }
+.detail { background: var(--panel); border-radius: 10px; padding: 12px 14px; font-size: 13.5px; }
+.detail h4 { margin: 0 0 6px; font-size: 15px; }
+.detail dl { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; margin: 0; }
+.detail dt { color: var(--muted); } .detail dd { margin: 0; font-variant-numeric: tabular-nums; }
+.opener { border: 2px dashed var(--rule); border-radius: 12px; padding: 22px; text-align: center;
+  background: var(--paper); }
+.opener.drag { border-color: var(--accent); background: var(--panel); }
+.opener input { display: none; }
+.opener label.btn { display: inline-block; background: var(--accent); color: var(--accent-ink);
+  padding: 8px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+.opener code { background: var(--panel); padding: 2px 6px; border-radius: 4px; }
+.err { color: var(--added); }
+.hidden { display: none !important; }
+@media print { .top .filters, .tabs, .subtabs, .ctl { display: none !important; }
+  .top { position: static; box-shadow: none; } body { background: #fff; color: #000; }
+  .card, .story { box-shadow: none; break-inside: avoid; } }
+</style>
+</head>
+<body>
+<div class="tip" id="tip"></div>
+<header class="top">
+  <div class="inner">
+    <div class="brandrow">
+      <div class="brand">
+        <span class="kicker">PLANiT Institute &middot; Trade Impact, power</span>
+        <h1>__TITLE__</h1>
+      </div>
+      <div class="status" id="status">loading engine&hellip;</div>
+    </div>
+    <div class="filters hidden" id="filters">
+      <div class="fgroup"><span class="lbl">Scenario</span><span id="f-scenario"></span></div>
+      <div class="fgroup"><span class="lbl">Home</span><span id="f-home"></span></div>
+      <div class="fgroup"><span class="lbl">Company</span><select id="f-company"></select></div>
+      <div class="fgroup"><span class="lbl">Destination</span><select id="f-dest"></select></div>
+      <div class="fgroup"><span class="lbl">Fuel</span><span id="f-fuel"></span></div>
+      <div class="fgroup"><span class="lbl">Status</span><span id="f-status"></span></div>
+      <button class="chip reset" id="f-reset">reset</button>
+      <span class="showing" id="showing"></span>
+    </div>
+    <nav class="tabs hidden" id="tabs"></nav>
+  </div>
+</header>
+<div class="wrap">
+  <div class="opener hidden" id="opener">
+    <p id="opener-msg"></p>
+    <p>Pick the database file to read it in this page &mdash; nothing is uploaded anywhere.</p>
+    <label class="btn" for="dbfile">Choose tradeimpact_power.sqlite</label>
+    <input type="file" id="dbfile" accept=".sqlite,.db,.sqlite3">
+    <p class="small muted">Or serve the data directory: <code>__SERVE_CMD__</code> and open
+    <code>__SERVE_URL__</code>. Dragging the file onto this box also works.</p>
+  </div>
+  <div id="content" class="hidden">
+    <section class="story" id="story"></section>
+    <div class="subtabs" id="subtabs"></div>
+    <div class="panel" id="panel"></div>
+  </div>
+</div>
+
+<script src="__SQLJS_DIR__sql-wasm.js" integrity="__SQLJS_SRI__" crossorigin="anonymous"
+  onerror="window.__sqljsFailed = true"></script>
+<script src="__D3_SRC__" integrity="__D3_SRI__" crossorigin="anonymous"
+  onerror="window.__d3Failed = true"></script>
+<script src="__TOPOJSON_SRC__" integrity="__TOPOJSON_SRI__" crossorigin="anonymous"
+  onerror="window.__topoFailed = true"></script>
+<script>
+'use strict';
+/* The page is a reader of the database. Every figure below is a query result at read time. */
+const CDN_DIR = '__SQLJS_DIR__';
+const DB_RELATIVE = '__DB_RELATIVE__';
+const SERVED_DB = '__SERVED_DB__';
+const DB_FILE = '__DB_FILE__';
+const SERVE_PORT = __SERVE_PORT__;
+const SQLJS_VERSION = '__SQLJS_VERSION__';
+
+const SC_NAME = {S1: 'S1 observed trajectory', S2: 'S2 committed policy'};
+const SC_COLOR = {S1: 'var(--s1)', S2: 'var(--s2)'};
+const FUELS = ['coal', 'gas', 'oil', 'nuclear', 'hydro', 'wind', 'solar', 'bioenergy', 'geothermal'];
+const FUEL_COLOR = Object.fromEntries(FUELS.map((f) => [f, 'var(--' + f + ')']));
+const STATUS_GROUPS = {operating: ['operating', 'mothballed'], planned: ['construction', 'pre-construction', 'announced'], retired: ['retired']};
+const STATUS_LABEL = {operating: 'operating', planned: 'construction & planned', retired: 'retired'};
+const ROLE_LABEL = {developer: 'developer', equity_owner: 'equity owner', epc_contractor: 'EPC contractor', equipment_supplier: 'equipment supplier', om_contractor: 'O&M contractor', lender: 'lender', eca_cover: 'ECA cover'};
+const HOME_NAME = {KR: 'Korea', JP: 'Japan'};
+const TABS = [
+  {id: 'companies', title: 'Companies & projects', subs: () => [['all', 'All companies'], ...ALL.companies.map((c) => [c.company_id, c.name_en])]},
+  {id: 'map', title: 'Map', subs: () => [['units', 'Generating units'], ['countries', 'Destinations']]},
+  {id: 'coverage', title: 'Coverage & roles', subs: () => [['units', 'Units in and out'], ['roles', 'Roles and shares'], ['quality', 'Data quality']]},
+  {id: 'benchmarks', title: 'Destination benchmarks', subs: () => [['destination', 'One destination'], ['rates', 'All rates'], ['anchors', 'NDC anchors']]},
+  {id: 'inputs', title: 'Other inputs', subs: () => [['defaults', 'Technology defaults'], ['factors', 'Emission factors']]},
+  {id: 'annual', title: 'Annual impact', subs: () => [['unit', 'One unit, year by year'], ['rollup', 'Company roll-up']]},
+  {id: 'total', title: 'Total impact', subs: () => [['company', 'By company and role'], ['units', 'By unit'], ['fuel', 'By fuel and status'], ['sensitivity', 'Sensitivity']]},
+  {id: 'sources', title: 'Sources', subs: () => [['tables', 'Tables'], ['sources', 'Sources and raw files']]},
+];
+
+let SQL = null, DB = null, GEO = null, CODES = null;
+const state = {tab: 'companies', sub: {}, scenario: 'S2', home: 'all', company: 'all', dest: 'all',
+  fuels: new Set(), statuses: new Set(), unit: null, scrub: null, pick: {}};
+const ALL = {companies: [], destinations: [], fuels: []};
+let FACTS = {};
+
+/* ---------------------------------------------------------------- helpers */
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+const MINUS = '−';
+function fmt(v, dp = 2, signed = true) {
+  if (v == null || Number.isNaN(v)) return '—';
+  let places = dp;
+  while (places < dp + 3 && v !== 0 && Math.abs(v) < 0.5 * Math.pow(10, -places)) places += 1;
+  const s = Math.abs(v).toLocaleString('en-US', {minimumFractionDigits: places, maximumFractionDigits: places});
+  if (!signed) return (v < 0 ? MINUS : '') + s;
+  return (v < 0 ? MINUS : '+') + s;
+}
+const fmtN = (v, dp = 0) => v == null || v === '' ? '—' : Number(v).toLocaleString('en-US', {minimumFractionDigits: dp, maximumFractionDigits: dp});
+const pct = (v, dp = 1) => v == null || v === '' ? '—' : (Number(v) * 100).toFixed(dp) + ' %';
+const cls = (v) => v > 0 ? 'added' : (v < 0 ? 'avoided' : '');
+const tierTag = (t) => t ? '<span class="tier ' + esc(t) + '">' + esc(t) + '</span>' : '—';
+const quoted = (s) => "'" + String(s).replace(/'/g, "''") + "'";
+const countryName = (a2) => (CODES && CODES.byAlpha2[a2] && CODES.byAlpha2[a2].name) || a2;
+const companyName = (id) => (ALL.byId[id] || {}).name_en || id;
+const statusGroup = (s) => Object.keys(STATUS_GROUPS).find((g) => STATUS_GROUPS[g].some((x) => (s || '').startsWith(x))) || 'other';
+
+function Q(sql, params) {
+  const stmt = DB.prepare(sql);
+  if (params) stmt.bind(params);
+  const out = [];
+  while (stmt.step()) out.push(stmt.getAsObject());
+  stmt.free();
+  return out;
+}
+function one(sql, params) { return Q(sql, params)[0] || {}; }
+function hasTable(name) { return Q("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = ?", [name]).length > 0; }
+const sub = () => state.sub[state.tab];
+function pick(key, fallback) { return state.pick[key] == null ? fallback : state.pick[key]; }
+
+/* Unit-level filter as SQL on a table aliased u (ti_power_by_unit / projects_gem columns). */
+function unitWhere(alias = 'u', withScenario = true) {
+  const a = alias ? alias + '.' : '';
+  let w = '';
+  if (withScenario) w += ' AND ' + a + 'scenario = ' + quoted(state.scenario);
+  if (state.dest !== 'all') w += ' AND ' + a + 'country = ' + quoted(state.dest);
+  if (state.fuels.size) w += ' AND ' + a + 'fuel_type IN (' + [...state.fuels].map(quoted).join(',') + ')';
+  if (state.statuses.size) {
+    const pats = [...state.statuses].flatMap((g) => STATUS_GROUPS[g]).map((s) => a + 'status LIKE ' + quoted(s + '%'));
+    w += ' AND (' + pats.join(' OR ') + ')';
+  }
+  if (state.company !== 'all') {
+    w += ' AND ' + a + "gem_unit_id IN (SELECT gem_unit_id FROM ti_power_by_role WHERE company_id = " + quoted(state.company) + ')';
+  } else if (state.home !== 'all') {
+    w += ' AND ' + a + "gem_unit_id IN (SELECT gem_unit_id FROM ti_power_by_role WHERE company_country = " + quoted(state.home) + ')';
+  }
+  return w;
+}
+/* Role-level filter on ti_power_by_role aliased r. */
+function roleWhere(alias = 'r', withScenario = true) {
+  const a = alias ? alias + '.' : '';
+  let w = '';
+  if (withScenario) w += ' AND ' + a + 'scenario = ' + quoted(state.scenario);
+  if (state.dest !== 'all') w += ' AND ' + a + 'country = ' + quoted(state.dest);
+  if (state.fuels.size) w += ' AND ' + a + 'fuel_type IN (' + [...state.fuels].map(quoted).join(',') + ')';
+  if (state.statuses.size) {
+    const pats = [...state.statuses].flatMap((g) => STATUS_GROUPS[g]).map((s) => a + 'status LIKE ' + quoted(s + '%'));
+    w += ' AND (' + pats.join(' OR ') + ')';
+  }
+  if (state.company !== 'all') w += ' AND ' + a + 'company_id = ' + quoted(state.company);
+  else if (state.home !== 'all') w += ' AND ' + a + 'company_country = ' + quoted(state.home);
+  return w;
+}
+
+/* ---------------------------------------------------------------- tooltip and DOM kit */
+const tipEl = $('tip');
+function tip(ev, html) {
+  tipEl.innerHTML = html; tipEl.style.display = 'block';
+  const pad = 14, w = tipEl.offsetWidth, h = tipEl.offsetHeight;
+  let x = ev.clientX + pad, y = ev.clientY + pad;
+  if (x + w > window.innerWidth - 8) x = ev.clientX - w - pad;
+  if (y + h > window.innerHeight - 8) y = ev.clientY - h - pad;
+  tipEl.style.left = x + 'px'; tipEl.style.top = y + 'px';
+}
+function untip() { tipEl.style.display = 'none'; }
+function el(tag, klass, html) { const e = document.createElement(tag); if (klass) e.className = klass; if (html != null) e.innerHTML = html; return e; }
+function card(parent, title, subtitle) { const c = el('div', 'card'); if (title) c.appendChild(el('h3', null, title)); if (subtitle) c.appendChild(el('div', 'sub', subtitle)); parent.appendChild(c); return c; }
+function fig(parent) { const f = el('div', 'fig'); parent.appendChild(f); return f; }
+function caption(parent, html) { parent.appendChild(el('div', 'cap', html)); }
+function legend(parent, items) { parent.appendChild(el('div', 'legend', items.map(([n, c]) => '<span><i style="background:' + c + '"></i>' + esc(n) + '</span>').join(''))); }
+function kpis(parent, tiles) { parent.appendChild(el('div', 'kpis', tiles.map(([v, l, k]) => '<div class="kpi"><div class="v ' + (k || '') + '">' + v + '</div><div class="l">' + l + '</div></div>').join(''))); }
+function select(parent, labelText, options, value, onChange) {
+  const wrap = el('label', null, esc(labelText) + ' ');
+  const s = document.createElement('select');
+  for (const [v, l] of options) { const o = document.createElement('option'); o.value = v; o.textContent = l; if (String(v) === String(value)) o.selected = true; s.appendChild(o); }
+  s.addEventListener('change', () => onChange(s.value));
+  wrap.appendChild(s); parent.appendChild(wrap); return s;
+}
+function ctl(parent) { const c = el('div', 'ctl'); parent.appendChild(c); return c; }
+function empty(parent, msg) { caption(parent, msg || 'Nothing in view for these filters.'); }
+
+/* ---------------------------------------------------------------- chart kit */
+function niceLimit(v) { if (v <= 0) return 1; const mag = Math.pow(10, Math.floor(Math.log10(v))); for (const s of [1, 1.5, 2, 2.5, 3, 4, 5, 7.5, 10]) if (v <= s * mag) return s * mag; return 10 * mag; }
+function xDomain(values) { const lo = Math.min(0, ...values), hi = Math.max(0, ...values); const a = lo < 0 ? niceLimit(-lo) : 0, b = hi > 0 ? niceLimit(hi) : 0; return [-a, b || (a ? 0 : 1)]; }
+function svgIn(parent, width, height) { return d3.select(parent).append('svg').attr('viewBox', '0 0 ' + width + ' ' + height).attr('role', 'img'); }
+function xAxis(g, x, y0, y1, unit, width) {
+  const ticks = x.ticks(x.range()[1] - x.range()[0] > 600 ? 8 : 5);
+  g.append('g').attr('class', 'grid').selectAll('line').data(ticks).join('line').attr('x1', (d) => x(d)).attr('x2', (d) => x(d)).attr('y1', y0).attr('y2', y1);
+  const dp = ticks.some((t) => Math.abs(t % 1) > 1e-9) ? 1 : 0;
+  const wide = Math.max(...ticks.map(Math.abs)) >= 1e4;
+  const compact = d3.format('~s');
+  g.append('g').attr('class', 'tick').selectAll('text').data(ticks).join('text').attr('x', (d) => x(d)).attr('y', y1 + 14).attr('text-anchor', 'middle')
+    .text((d) => wide ? compact(d).replace('G', 'B') : fmtN(d, dp));
+  g.append('line').attr('class', 'zero').attr('x1', x(0)).attr('x2', x(0)).attr('y1', y0).attr('y2', y1);
+  g.append('text').attr('x', width - 4).attr('y', 11).attr('text-anchor', 'end').attr('class', 'tick').text(unit);
+}
+function barsH(parent, rows, opts) {
+  const o = Object.assign({labelW: 190, band: 12, unit: '', dp: 1, onClick: null, colour: null, tipHtml: null, signed: true}, opts);
+  if (!rows.length) { empty(parent); return; }
+  const nSeries = Math.max(1, ...rows.map((r) => r.series.length));
+  const rowH = o.band * nSeries + 8, top = 24, bottom = 30, width = 880;
+  const height = top + rows.length * rowH + bottom, plotW = width - o.labelW - 70;
+  const vals = rows.flatMap((r) => r.series.map((s) => s.value));
+  const x = d3.scaleLinear().domain(o.signed ? xDomain(vals) : [0, niceLimit(Math.max(...vals, 1e-9))]).range([o.labelW, o.labelW + plotW]);
+  const svg = svgIn(parent, width, height);
+  xAxis(svg, x, top - 6, top + rows.length * rowH, o.unit, width);
+  const g = svg.append('g');
+  rows.forEach((r, i) => {
+    const y = top + i * rowH;
+    g.append('text').attr('x', o.labelW - 8).attr('y', y + rowH / 2 + 4).attr('text-anchor', 'end').text(r.label);
+    r.series.forEach((s, j) => {
+      const yy = y + 4 + j * o.band, v = s.value;
+      const x0 = Math.min(x(0), x(v)), w = Math.max(Math.abs(x(v) - x(0)), 0.8);
+      const fill = o.colour ? o.colour(s, r) : (v > 0 ? 'var(--added)' : 'var(--avoided)');
+      g.append('rect').attr('class', 'bar').attr('x', x0).attr('y', yy).attr('width', w).attr('height', o.band - 3).attr('fill', fill).attr('rx', 1.5)
+        .on('mousemove', (ev) => tip(ev, o.tipHtml ? o.tipHtml(s, r) : '<b>' + esc(r.label) + '</b><br>' + esc(s.key) + ': ' + fmt(v, o.dp, o.signed) + ' ' + esc(o.unit)))
+        .on('mouseleave', untip).on('click', () => o.onClick && o.onClick(r, s));
+      const overflow = v >= 0 ? x(v) + 40 > width - 4 : x(v) - 40 < o.labelW;
+      const inside = overflow && w > 44;
+      let tx = inside ? (v >= 0 ? x(v) - 4 : x(v) + 4) : (v >= 0 ? x(v) + 4 : x(v) - 4);
+      let anchor = (v >= 0) !== inside ? 'start' : 'end';
+      if (v < 0 && overflow && !inside) { tx = x(0) + 4; anchor = 'start'; }
+      g.append('text').attr('x', tx).attr('y', yy + o.band - 5).attr('text-anchor', anchor).attr('fill', inside ? '#fff' : 'var(--ink)').style('font-size', '10px').text(fmt(v, o.dp, o.signed));
+    });
+  });
+}
+function stackedH(parent, rows, keys, opts) {
+  const o = Object.assign({labelW: 190, band: 18, unit: '', colour: (k) => FUEL_COLOR[k] || 'var(--held)', fmtV: (v) => fmtN(v), onClick: null}, opts);
+  if (!rows.length) { empty(parent); return; }
+  const rowH = o.band + 8, top = 24, bottom = 30, width = 880;
+  const height = top + rows.length * rowH + bottom, plotW = width - o.labelW - 90;
+  const totals = rows.map((r) => keys.reduce((a, k) => a + (r.values[k] || 0), 0));
+  const x = d3.scaleLinear().domain([0, niceLimit(Math.max(...totals, 1e-9))]).range([o.labelW, o.labelW + plotW]);
+  const svg = svgIn(parent, width, height);
+  xAxis(svg, x, top - 6, top + rows.length * rowH, o.unit, width);
+  rows.forEach((r, i) => {
+    const y = top + i * rowH;
+    svg.append('text').attr('x', o.labelW - 8).attr('y', y + rowH / 2 + 4).attr('text-anchor', 'end').text(r.label);
+    let acc = 0;
+    for (const k of keys) {
+      const v = r.values[k] || 0; if (!v) continue;
+      svg.append('rect').attr('class', 'bar').attr('x', x(acc)).attr('y', y + 4).attr('width', Math.max(x(acc + v) - x(acc), 0.5)).attr('height', o.band).attr('fill', o.colour(k))
+        .on('mousemove', (ev) => tip(ev, '<b>' + esc(r.label) + '</b><br>' + esc(k) + ': ' + o.fmtV(v) + ' ' + esc(o.unit) + ' (' + pct(v / totals[i]) + ')<br>total ' + o.fmtV(totals[i])))
+        .on('mouseleave', untip).on('click', () => o.onClick && o.onClick(r, k));
+      acc += v;
+    }
+    svg.append('text').attr('x', x(totals[i]) + 5).attr('y', y + rowH / 2 + 4).style('font-size', '10px').text(o.fmtV(totals[i]));
+  });
+}
+function dots(parent, rows, opts) {
+  const o = Object.assign({labelW: 60, unit: '', dp: 1, tipHtml: null, colour: null, signed: true, onClick: null}, opts);
+  if (!rows.length) { empty(parent); return; }
+  const rowH = 16, top = 24, bottom = 30, width = 880;
+  const height = top + rows.length * rowH + bottom, plotW = width - o.labelW - 80;
+  const vals = rows.map((r) => r.value);
+  const x = d3.scaleLinear().domain(o.signed ? xDomain(vals) : [0, niceLimit(Math.max(...vals, 1e-9))]).range([o.labelW, o.labelW + plotW]);
+  const svg = svgIn(parent, width, height);
+  xAxis(svg, x, top - 6, top + rows.length * rowH, o.unit, width);
+  rows.forEach((r, i) => {
+    const y = top + i * rowH + rowH / 2;
+    const fill = o.colour ? o.colour(r) : (r.value > 0 ? 'var(--added)' : 'var(--avoided)');
+    svg.append('line').attr('x1', x(0)).attr('x2', x(r.value)).attr('y1', y).attr('y2', y).attr('stroke', 'var(--rule)');
+    svg.append('circle').attr('class', 'dot').attr('cx', x(r.value)).attr('cy', y).attr('r', 4.5).attr('fill', fill)
+      .on('mousemove', (ev) => tip(ev, o.tipHtml ? o.tipHtml(r) : '<b>' + esc(r.label) + '</b><br>' + fmt(r.value, o.dp, o.signed) + ' ' + esc(o.unit)))
+      .on('mouseleave', untip).on('click', () => o.onClick && o.onClick(r));
+    svg.append('text').attr('x', o.labelW - 8).attr('y', y + 4).attr('text-anchor', 'end').style('font-size', '10.5px').text(r.label);
+    svg.append('text').attr('x', x(r.value) + (r.value >= 0 ? 8 : -8)).attr('y', y + 4).attr('text-anchor', r.value >= 0 ? 'start' : 'end').style('font-size', '10px').text(fmt(r.value, o.dp, o.signed));
+  });
+}
+function ranges(parent, rows, opts) {
+  const o = Object.assign({labelW: 260, unit: '', dp: 1}, opts);
+  if (!rows.length) { empty(parent); return; }
+  const rowH = 24, top = 24, bottom = 30, width = 880;
+  const height = top + rows.length * rowH + bottom, plotW = width - o.labelW - 130;
+  const x = d3.scaleLinear().domain(xDomain(rows.flatMap((r) => [r.low, r.mid, r.high]))).range([o.labelW, o.labelW + plotW]);
+  const svg = svgIn(parent, width, height);
+  xAxis(svg, x, top - 6, top + rows.length * rowH, o.unit, width);
+  rows.forEach((r, i) => {
+    const y = top + i * rowH, a = Math.min(r.low, r.high), b = Math.max(r.low, r.high);
+    svg.append('rect').attr('class', 'bar').attr('x', x(a)).attr('y', y + 5).attr('width', Math.max(x(b) - x(a), 1)).attr('height', rowH - 12).attr('fill', 'var(--band)').attr('stroke', 'var(--rule)')
+      .on('mousemove', (ev) => tip(ev, '<b>' + esc(r.label) + '</b><br>' + fmt(a, o.dp) + ' to ' + fmt(b, o.dp) + ' ' + esc(o.unit) + '<br>central ' + fmt(r.mid, o.dp))).on('mouseleave', untip);
+    svg.append('line').attr('x1', x(r.mid)).attr('x2', x(r.mid)).attr('y1', y + 3).attr('y2', y + rowH - 4).attr('stroke', 'var(--ink)').attr('stroke-width', 1.6);
+    svg.append('text').attr('x', o.labelW - 8).attr('y', y + rowH / 2 + 4).attr('text-anchor', 'end').style('font-size', '10.5px').text(r.label);
+    svg.append('text').attr('x', x(b) + 6).attr('y', y + rowH / 2 + 4).style('font-size', '10px').text(fmt(a, o.dp) + ' to ' + fmt(b, o.dp));
+  });
+}
+function tsChart(parent, series, opts) {
+  const o = Object.assign({unit: '', dp: 1, height: 300, zero: true, band: null, scrub: null, onScrub: null}, opts);
+  const pts = series.flatMap((s) => s.points);
+  if (!pts.length) { empty(parent); return; }
+  const width = 880, height = o.height, left = 64, right = 16, top = 18, bottom = 36, plotW = width - left - right, plotH = height - top - bottom;
+  const years = [...new Set(pts.map((p) => p[0]))].sort((a, b) => a - b);
+  const vals = pts.map((p) => p[1]);
+  const lo = Math.min(o.zero ? 0 : Math.min(...vals), ...vals), hi = Math.max(o.zero ? 0 : Math.max(...vals), ...vals);
+  const y = d3.scaleLinear().domain(o.zero ? [lo < 0 ? -niceLimit(-lo) : 0, hi > 0 ? niceLimit(hi) : 1] : [lo, hi]).nice().range([top + plotH, top]);
+  const x = d3.scaleLinear().domain([years[0], years[years.length - 1]]).range([left, left + plotW]);
+  const svg = svgIn(parent, width, height);
+  svg.append('g').attr('class', 'grid').selectAll('line').data(y.ticks(6)).join('line').attr('x1', left).attr('x2', left + plotW).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+  svg.append('g').attr('class', 'tick').selectAll('text').data(y.ticks(6)).join('text').attr('x', left - 8).attr('y', (d) => y(d) + 4).attr('text-anchor', 'end').text((d) => fmtN(d, o.dp));
+  const xt = x.ticks(Math.min(12, years.length)).filter((t) => Number.isInteger(t));
+  svg.append('g').attr('class', 'tick').selectAll('text').data(xt).join('text').attr('x', (d) => x(d)).attr('y', top + plotH + 16).attr('text-anchor', 'middle').text((d) => d);
+  if (o.zero && lo < 0) svg.append('line').attr('class', 'zero').attr('x1', left).attr('x2', left + plotW).attr('y1', y(0)).attr('y2', y(0));
+  if (o.band) {
+    const a = series.find((s) => s.key === o.band[0]), b = series.find((s) => s.key === o.band[1]);
+    if (a && b) { const bm = new Map(b.points); const area = d3.area().x((p) => x(p[0])).y0((p) => y(p[1])).y1((p) => y(bm.get(p[0]) == null ? p[1] : bm.get(p[0])));
+      svg.append('path').attr('d', area(a.points.filter((p) => bm.has(p[0])))).attr('fill', 'var(--band)'); }
+  }
+  const line = d3.line().x((p) => x(p[0])).y((p) => y(p[1])).defined((p) => p[1] != null);
+  for (const s of series) {
+    svg.append('path').attr('d', line(s.points)).attr('fill', 'none').attr('stroke', s.colour).attr('stroke-width', s.width || 2).attr('stroke-dasharray', s.dashed ? '5 4' : null);
+    if (s.points.length < 40) svg.append('g').selectAll('circle').data(s.points).join('circle').attr('cx', (p) => x(p[0])).attr('cy', (p) => y(p[1])).attr('r', 2.2).attr('fill', s.colour);
+  }
+  svg.append('text').attr('x', width - 4).attr('y', 11).attr('text-anchor', 'end').attr('class', 'tick').text(o.unit);
+  const marker = svg.append('line').attr('class', 'scrub').attr('y1', top).attr('y2', top + plotH).style('display', 'none');
+  const markDots = svg.append('g');
+  function place(yr) { marker.style('display', null).attr('x1', x(yr)).attr('x2', x(yr)); const at = series.map((s) => [s, s.points.find((p) => p[0] === yr)]).filter((d) => d[1]);
+    markDots.selectAll('circle').data(at).join('circle').attr('cx', x(yr)).attr('cy', (d) => y(d[1][1])).attr('r', 4).attr('fill', (d) => d[0].colour); }
+  const nearest = (ev) => { const px = d3.pointer(ev)[0]; let best = years[0], bd = Infinity; for (const yr of years) { const d = Math.abs(x(yr) - px); if (d < bd) { bd = d; best = yr; } } return best; };
+  if (o.scrub != null) place(o.scrub);
+  svg.append('rect').attr('x', left).attr('y', top).attr('width', plotW).attr('height', plotH).attr('fill', 'transparent').style('cursor', 'crosshair')
+    .on('mousemove', (ev) => { const yr = nearest(ev); place(yr);
+      tip(ev, '<b>' + yr + '</b><br>' + series.map((s) => { const p = s.points.find((q) => q[0] === yr); return p ? esc(s.key) + ': ' + fmtN(p[1], o.dp) : null; }).filter(Boolean).join('<br>'));
+      if (o.onScrub) o.onScrub(yr, false); })
+    .on('click', (ev) => { if (o.onScrub) o.onScrub(nearest(ev), true); })
+    .on('mouseleave', () => { untip(); if (o.scrub != null) { place(o.scrub); if (o.onScrub) o.onScrub(o.scrub, false); } else { marker.style('display', 'none'); markDots.selectAll('circle').remove(); } });
+}
+function table(parent, cols, rows, opts) {
+  const o = Object.assign({foot: null, sort: null, dir: 'desc', short: false, onRow: null}, opts);
+  const wrap = el('div', 'tbl' + (o.short ? ' short' : ''));
+  parent.appendChild(wrap);
+  let sortKey = o.sort, dir = o.dir;
+  function render() {
+    const data = rows.slice();
+    if (sortKey) { const c = cols.find((k) => k.key === sortKey);
+      data.sort((a, b) => { const va = a[sortKey], vb = b[sortKey]; if (c && c.num) return (dir === 'asc' ? 1 : -1) * ((Number(va) || 0) - (Number(vb) || 0));
+        return (dir === 'asc' ? 1 : -1) * String(va == null ? '' : va).localeCompare(String(vb == null ? '' : vb)); }); }
+    let h = '<table><thead><tr>' + cols.map((c) => '<th data-k="' + esc(c.key) + '" class="' + (c.num ? '' : 'l ') + (sortKey === c.key ? 'sorted ' + dir : '') + '">' + esc(c.label) + '</th>').join('') + '</tr></thead><tbody>';
+    data.forEach((r, i) => {
+      h += '<tr data-i="' + i + '"' + (o.onRow ? ' class="click"' : '') + '>' + cols.map((c) => { const v = r[c.key]; const text = c.fmt ? c.fmt(v, r) : esc(v);
+        const k = c.cls ? c.cls(v, r) : (c.num ? 'num' : 'l') + (c.wrap ? ' wrap' : ''); return '<td class="' + k + '">' + text + '</td>'; }).join('') + '</tr>';
+    });
+    h += '</tbody>';
+    if (o.foot) h += '<tfoot><tr>' + o.foot.map((t, i) => '<td class="' + (cols[i] && cols[i].num ? 'num' : 'l') + '">' + t + '</td>').join('') + '</tr></tfoot>';
+    wrap.innerHTML = h + '</table>';
+    wrap.querySelectorAll('th').forEach((th) => th.addEventListener('click', () => { const k = th.dataset.k; if (sortKey === k) dir = dir === 'asc' ? 'desc' : 'asc'; else { sortKey = k; dir = 'desc'; } render(); }));
+    if (o.onRow) wrap.querySelectorAll('tbody tr').forEach((tr) => tr.addEventListener('click', () => o.onRow(data[Number(tr.dataset.i)])));
+  }
+  render();
+}
+const cellMt = (v) => v === '' || v == null ? '—' : fmt(Number(v) / 1e6, 2);
+const cellKt = (v) => v === '' || v == null ? '—' : fmt(Number(v) / 1e3, 0);
+const signCls = (v) => v === '' || v == null ? 'num' : (cls(Number(v)) || 'num');
+const clip = (n) => (v) => '<span class="small" title="' + esc(v) + '">' + esc(String(v == null ? '' : v).slice(0, n)) + (String(v == null ? '' : v).length > n ? '…' : '') + '</span>';
+
+/* ---------------------------------------------------------------- facts on the whole result set */
+function computeFacts() {
+  const f = {};
+  const u = one("SELECT COUNT(*) n, COUNT(DISTINCT country) c, SUM(capacity_mw) mw FROM ti_power_by_unit WHERE scenario = 'S1'");
+  f.units = fmtN(u.n); f.countries = u.c; f.capacity_gw = fmtN(u.mw / 1000, 1);
+  f.matched_units = fmtN(one('SELECT COUNT(*) n FROM projects_gem').n);
+  f.excluded_units = fmtN(one('SELECT COUNT(*) n FROM ti_power_excluded').n);
+  f.companies_n = one("SELECT COUNT(DISTINCT company_id) n FROM ti_power_by_role").n;
+  f.equity_rows = fmtN(one('SELECT COUNT(*) n FROM gem_ownership').n);
+  f.equity_with_share = fmtN(one("SELECT COUNT(*) n FROM gem_ownership WHERE share IS NOT NULL AND share <> ''").n);
+  f.register_rows = one('SELECT COUNT(*) n FROM project_roles').n;
+  const t = {};
+  for (const sc of ['S1', 'S2']) {
+    const r = one("SELECT COUNT(*) n, SUM(ti_lifetime_tco2) ti, SUM(ti_remaining_tco2) rem, SUM(CASE WHEN ti_lifetime_tco2 > 0 THEN 1 ELSE 0 END) adding FROM ti_power_by_unit WHERE scenario = ?", [sc]);
+    t[sc] = r;
+    f[sc.toLowerCase() + '_units'] = fmtN(r.n); f[sc.toLowerCase() + '_total_v'] = r.ti / 1e6; f[sc.toLowerCase() + '_total'] = fmt(r.ti / 1e6, 0);
+    f[sc.toLowerCase() + '_remaining'] = fmt(r.rem / 1e6, 0); f[sc.toLowerCase() + '_adding'] = fmtN(r.adding);
+  }
+  const both = Q("SELECT a.gem_unit_id, a.ti_lifetime_tco2 s1, b.ti_lifetime_tco2 s2 FROM ti_power_by_unit a JOIN ti_power_by_unit b ON a.gem_unit_id = b.gem_unit_id AND a.scenario = 'S1' AND b.scenario = 'S2'");
+  f.both_units = fmtN(both.length);
+  f.flip_units = fmtN(both.filter((r) => r.s1 <= 0 && r.s2 > 0).length);
+  f.s2_destinations = one("SELECT COUNT(DISTINCT country) n FROM emission_targets_power WHERE scenario = 'S2'").n;
+  f.s2_excluded = one("SELECT COUNT(*) n FROM emission_targets_power_exclusions WHERE scenario = 'S2'").n;
+  const coal = one("SELECT SUM(ti_lifetime_tco2) ti, COUNT(*) n FROM ti_power_by_unit WHERE scenario = 'S1' AND fuel_type = 'coal'");
+  f.coal_s1 = fmt(coal.ti / 1e6, 0); f.coal_units = fmtN(coal.n);
+  const gas = one("SELECT SUM(ti_lifetime_tco2) ti FROM ti_power_by_unit WHERE scenario = 'S1' AND fuel_type = 'gas'");
+  f.gas_s1 = fmt(gas.ti / 1e6, 0);
+  const gas2 = one("SELECT SUM(ti_lifetime_tco2) ti FROM ti_power_by_unit WHERE scenario = 'S2' AND fuel_type = 'gas'");
+  f.gas_s2 = fmt(gas2.ti / 1e6, 0);
+  const jp = one("SELECT company_name, units, ti_lifetime_full_tco2 f, ti_lifetime_weighted_tco2 w FROM ti_power_company WHERE scenario = 'S1' AND role = 'equity_owner' ORDER BY ABS(ti_lifetime_full_tco2 - COALESCE(ti_lifetime_weighted_tco2, 0)) DESC LIMIT 1");
+  f.gap_company = jp.company_name; f.gap_full = fmt(jp.f / 1e6, 0); f.gap_weighted = fmt(jp.w / 1e6, 0); f.gap_units = fmtN(jp.units);
+  f.default_share = pct(one("SELECT AVG(CASE WHEN heat_rate_source = 'default' OR heat_rate_source = 'not_applicable' THEN 1.0 ELSE 0 END) s FROM ti_power_by_unit WHERE scenario = 'S1'").s, 0);
+  f.as_of = one('SELECT MAX(accessed_date) d FROM sources WHERE accessed_date <> ""').d;
+  f.n_sources = one('SELECT COUNT(*) n FROM sources').n;
+  f.n_tables = one("SELECT COUNT(*) n FROM tables WHERE kind = 'output'").n;
+  f.gem_release = one("SELECT file FROM raw_files WHERE dataset = 'projects' LIMIT 1").file;
+  f.homes = [...new Set(Q('SELECT country FROM companies WHERE in_scope = "yes"').map((r) => HOME_NAME[r.country] || r.country))].join(' and ');
+  return f;
+}
+function fillFacts(root) {
+  root.querySelectorAll('[data-f]').forEach((e) => { const k = e.dataset.f, v = FACTS[k]; e.textContent = v == null ? '—' : v;
+    if (k.endsWith('_total') || k === 'coal_s1' || k === 'gas_s1' || k === 'gas_s2') e.className = 'f ' + cls(Number(String(v).replace(/[^\d.\-−+]/g, '').replace('−', '-'))); });
+}
+
+/* ---------------------------------------------------------------- story text per tab */
+const STORY = {
+  companies: `<h2>1 &middot; Whose plants, in whose country</h2>
+<p class="lead">The Global Energy Monitor tracker names <span data-f="matched_units"></span> generating units outside
+<span data-f="homes"></span> in which a company in scope holds equity: <span data-f="capacity_gw"></span> GW across
+<span data-f="countries"></span> destination countries, <span data-f="units"></span> of them assessed (cancelled and
+shelved units, units without a start year, and units whose life ended before the grid series begins are listed, not
+counted). A unit at home is a domestic holding and is left out: what remains is the trade.</p>
+<p>Each unit is a row: destination, fuel, technology, capacity, status, commissioning year, coordinates, and the
+owners and parents with their shares as the tracker writes them. Pick a company to see its portfolio by destination
+and fuel, and every unit it holds.</p>
+<div class="callout"><p><b>Sign convention.</b> Trade impact is the unit's stack emissions minus what the destination grid
+would have emitted for the same generation, so a <span class="f added">positive</span> figure is tonnes <b>added</b>
+(a lock-in liability) and a <span class="f avoided">negative</span> figure is tonnes <b>avoided</b>. Two scenarios:
+<b>S1</b> the grid's observed trend, <b>S2</b> the destination government's own committed pathway. No third.</p></div>`,
+  map: `<h2>2 &middot; The map: every unit, sized by capacity, coloured by what it does to its grid</h2>
+<p class="lead">Each point is one generating unit; its size is the capacity, its colour whether it adds
+(red) or avoids (green) emissions over its life under the scenario in the top bar. Destinations with a committed
+pathway on file (S2) are shaded. Hover a unit for the figures; click it for its owners, shares and year-by-year
+profile.</p>
+<p>The filters narrow the map to one company, one destination, one fuel or one status group. Under S1
+<span data-f="s1_adding"></span> of <span data-f="s1_units"></span> assessed units add emissions; under S2, where a
+pathway exists, <span data-f="s2_adding"></span> of <span data-f="s2_units"></span>.</p>`,
+  coverage: `<h2>3 &middot; Which units carry a result, and who is attributed</h2>
+<p class="lead"><span data-f="units"></span> of <span data-f="matched_units"></span> matched units carry a result;
+<span data-f="excluded_units"></span> are listed with the reason. The equity role is read from the tracker itself:
+<span data-f="equity_rows"></span> company × unit rows, <span data-f="equity_with_share"></span> with a stated share.
+The hand register for construction, equipment, O&amp;M and finance roles has <span data-f="register_rows"></span>
+rows so far.</p>
+<p>Attribution is per role, never pooled: a company's rows of different roles are never added into one number, and
+the share stays a column beside the full figure, so any weighting is a query rather than a re-collection. The
+largest gap between full and share-weighted attribution is <span data-f="gap_company"></span>:
+<span data-f="gap_full"></span> Mt at full attribution across <span data-f="gap_units"></span> units,
+<span data-f="gap_weighted"></span> Mt at the stated shares &mdash; minority stakes in many plants.</p>
+<div class="callout"><p><b>Data quality.</b> The August 2026 tracker publishes no unit-level heat rate or capacity factor,
+so <span data-f="default_share"></span> of assessed units run on technology defaults, and every fossil unit on IPCC
+default factors until the destination's own inventory factor is filed: Layer 2 is tier C throughout.</p></div>`,
+  benchmarks: `<h2>4 &middot; What each destination's grid emits, and where its government says it is going</h2>
+<p class="lead">The benchmark is the destination's grid intensity: observed to the latest Ember year, then moved
+along <b>S1</b>, the log-linear trend since 2015, and <b>S2</b>, the pathway read from the destination's NDC as
+communicated to the UNFCCC &mdash; the reduction, base year and furthest target year of the latest submission,
+applied pro rata to grid intensity and floored at S1 where the trend is already steeper.</p>
+<p>S2 exists for <span data-f="s2_destinations"></span> of <span data-f="countries"></span> destinations. The
+<span data-f="s2_excluded"></span> without one are listed with the sentence that was read: a target stated against a
+business-as-usual projection or as GDP intensity gives no level to read a pathway from, and a fixed level in tonnes
+needs the base-year emissions a hand row supplies.</p>`,
+  inputs: `<h2>5 &middot; The other inputs</h2>
+<p class="lead">Four numbers turn a unit's capacity into tonnes: its capacity factor, its heat rate, the CO&#8322;
+content of its fuel and its operating life. The tracker publishes none of them per unit, so each comes from a
+documented default by technology (tier C) or an IPCC default by fuel (tier C) until a destination's own factor is
+filed (tier A). Every choice is a column on the result row; the low and high bands here are what the sensitivity
+tab varies.</p>`,
+  annual: `<h2>6 &middot; A fixed stack against a falling grid, year by year</h2>
+<p class="lead">A unit's intensity is set when it is built; the grid it displaces falls every year. A coal unit is
+above its grid from the first year in most destinations and further above every year after; a gas unit sits below
+the observed grid in many destinations under S1 and crosses it within its life under S2. The cumulative figure is
+where a report's horizon decides its verdict.</p>
+<p>Coal units add <span data-f="coal_s1"></span> Mt over their lives against the observed trend; gas units avoid
+<span data-f="gas_s1"></span> Mt against the trend and <span data-f="gas_s2"></span> Mt against committed pathways
+where those exist.</p>`,
+  total: `<h2>7 &middot; The lifetime result, by company and by role</h2>
+<p class="lead">Against the observed trend (S1) the <span data-f="s1_units"></span> assessed units net
+<span data-f="s1_total"></span> MtCO&#8322; over their lives, <span data-f="s1_remaining"></span> Mt of it still
+ahead from the analysis year. Against committed pathways (S2), on the <span data-f="s2_units"></span> units whose
+destination has one, <span data-f="s2_total"></span> Mt over their lives and <span data-f="s2_remaining"></span> Mt
+ahead; <span data-f="flip_units"></span> of the <span data-f="both_units"></span> units assessed under both avoid
+against the trend and add against the commitment.</p>
+<p>The company table is keyed by company × role × scenario. Two figures stand side by side on every row: the units'
+full trade impact and the share-weighted figure, blank where the source states no share. Neither is "the" company
+number; the pair is.</p>
+<div class="callout"><p><b>What would change the answer.</b> Lifetime, capacity factor and the fuel factor are varied
+one at a time over their documented bands in the sensitivity view. No variant turns a coal unit's addition against
+a committed pathway into an avoidance.</p></div>`,
+  sources: `<h2>8 &middot; Reproduce, and the sources</h2>
+<p class="lead">Everything on this page is computed from <code>data/power/database/tradeimpact_power.sqlite</code> as
+you read it: <span data-f="n_tables"></span> output tables built from <span data-f="n_sources"></span> sources; tracker
+release <span data-f="gem_release"></span>; data as of <span data-f="as_of"></span>. The database is rebuilt from the
+raw sources by <code>.venv/bin/python script/power/run_all.py</code>.</p>
+<p>The tracker is a hand download through Global Energy Monitor's form and is recorded as such; every other raw file
+has the link it was fetched from. The IPCC factor transcription is verified against the chapter text on every run.</p>`,
+};
+
+/* ---------------------------------------------------------------- tab 1: companies */
+function renderCompanies(panel) {
+  const s = sub();
+  if (s === 'all') {
+    const rows = Q("SELECT r.company_id, r.company_name, r.company_country, u.fuel_type, COUNT(DISTINCT u.gem_unit_id) n, SUM(u.capacity_mw) mw FROM ti_power_by_role r JOIN ti_power_by_unit u ON u.gem_unit_id = r.gem_unit_id AND u.scenario = r.scenario WHERE r.role = 'equity_owner'" + roleWhere('r') + unitWhere('u', false) + ' GROUP BY r.company_id, u.fuel_type');
+    const byCo = new Map();
+    for (const r of rows) { if (!byCo.has(r.company_id)) byCo.set(r.company_id, {label: r.company_name + ' (' + r.company_country + ')', values: {}, id: r.company_id, n: 0}); byCo.get(r.company_id).values[r.fuel_type] = (byCo.get(r.company_id).values[r.fuel_type] || 0) + r.mw; byCo.get(r.company_id).n += r.n; }
+    const c = card(panel, 'Overseas capacity held, by company and fuel', 'Equity-owner rows from the tracker; MW is the unit capacity in full (not share-weighted). Click a bar to open the company.');
+    const f = fig(c);
+    legend(f, FUELS.filter((x) => rows.some((r) => r.fuel_type === x)).map((x) => [x, FUEL_COLOR[x]]));
+    stackedH(f, [...byCo.values()].sort((a, b) => Object.values(b.values).reduce((x, y) => x + y, 0) - Object.values(a.values).reduce((x, y) => x + y, 0)), FUELS, {unit: 'MW of assessed units', labelW: 230, onClick: (r) => setSub(r.id)});
+    const dest = Q("SELECT u.country, u.fuel_type, COUNT(*) n, SUM(u.capacity_mw) mw FROM ti_power_by_unit u WHERE 1" + unitWhere('u') + ' GROUP BY u.country, u.fuel_type');
+    const byD = new Map();
+    for (const r of dest) { if (!byD.has(r.country)) byD.set(r.country, {label: countryName(r.country) + ' (' + r.country + ')', values: {}}); byD.get(r.country).values[r.fuel_type] = r.mw; }
+    const c2 = card(panel, 'Where the units are: destinations by capacity and fuel', 'Units in view, by destination country.');
+    stackedH(fig(c2), [...byD.values()].sort((a, b) => Object.values(b.values).reduce((x, y) => x + y, 0) - Object.values(a.values).reduce((x, y) => x + y, 0)).slice(0, 30), FUELS, {unit: 'MW of assessed units', labelW: 210});
+    caption(c2, 'The thirty largest destinations by capacity in view.');
+    return;
+  }
+  const co = ALL.byId[s];
+  const units = Q("SELECT u.*, r.share, r.origin FROM ti_power_by_unit u JOIN ti_power_by_role r ON r.gem_unit_id = u.gem_unit_id AND r.scenario = u.scenario AND r.company_id = ? AND r.role = 'equity_owner' WHERE 1" + unitWhere('u').replace(/ AND u\.gem_unit_id IN \(SELECT[^)]*\)\)?/, '') , [s]);
+  const c0 = card(panel, co.name_en + ' (' + co.country + ', ' + co.type.replace('_', ' ') + ')', esc(co.note));
+  const mw = units.reduce((a, u) => a + u.capacity_mw, 0), ti = units.reduce((a, u) => a + u.ti_lifetime_tco2, 0);
+  const wti = units.reduce((a, u) => a + (u.share !== '' && u.share != null ? u.ti_lifetime_tco2 * Number(u.share) : 0), 0);
+  kpis(c0, [[fmtN(units.length), 'overseas units assessed (' + SC_NAME[state.scenario] + ')'], [fmtN(mw / 1000, 2) + ' GW', 'capacity, full'], [fmtN(new Set(units.map((u) => u.country)).size), 'destination countries'],
+    [fmt(ti / 1e6, 1), 'MtCO₂ lifetime, full attribution', cls(ti)], [fmt(wti / 1e6, 1), 'MtCO₂ lifetime, share-weighted', cls(wti)],
+    [fmtN(units.filter((u) => u.share !== '' && u.share != null).length) + ' / ' + fmtN(units.length), 'units with a stated share']]);
+  const r2 = el('div', 'row2'); panel.appendChild(r2);
+  const c1 = card(r2, 'By destination and fuel', 'Capacity of the units this company holds equity in, by destination.');
+  const byD = new Map();
+  for (const u of units) { if (!byD.has(u.country)) byD.set(u.country, {label: countryName(u.country), values: {}}); byD.get(u.country).values[u.fuel_type] = (byD.get(u.country).values[u.fuel_type] || 0) + u.capacity_mw; }
+  legend(c1, FUELS.filter((x) => units.some((u) => u.fuel_type === x)).map((x) => [x, FUEL_COLOR[x]]));
+  stackedH(fig(c1), [...byD.values()].sort((a, b) => Object.values(b.values).reduce((x, y) => x + y, 0) - Object.values(a.values).reduce((x, y) => x + y, 0)), FUELS, {unit: 'MW', labelW: 150});
+  const c2 = card(r2, 'By status', 'Operating units are a present liability or contribution; construction and planned ones a choice still open.');
+  const byS = {};
+  for (const u of units) { const g = statusGroup(u.status); byS[g] = byS[g] || {label: STATUS_LABEL[g] || g, values: {}}; byS[g].values[u.fuel_type] = (byS[g].values[u.fuel_type] || 0) + u.capacity_mw; }
+  stackedH(fig(c2), Object.values(byS), FUELS, {unit: 'MW', labelW: 150});
+  const c3 = card(panel, 'Every unit', 'Click a row to open it on the map and in the yearly view.');
+  unitTable(c3, units, true);
+}
+function unitTable(parent, units, withShare) {
+  const cols = [
+    {key: 'country', label: 'Dest.', fmt: (v) => esc(countryName(v))}, {key: 'plant_name', label: 'Plant'}, {key: 'unit_name', label: 'Unit'},
+    {key: 'fuel_type', label: 'Fuel'}, {key: 'technology', label: 'Technology', fmt: clip(18)}, {key: 'status', label: 'Status'},
+    {key: 'capacity_mw', label: 'MW', num: true, fmt: (v) => fmtN(v)}, {key: 'start_year', label: 'Start', num: true, fmt: (v) => v},
+    {key: 'end_year', label: 'End', num: true, fmt: (v) => v}, {key: 'intensity_gco2_per_kwh', label: 'gCO2/kWh', num: true, fmt: (v) => fmtN(v, 0)},
+    {key: 'ti_lifetime_tco2', label: 'Lifetime Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'ti_remaining_tco2', label: 'Remaining Mt', num: true, fmt: cellMt, cls: signCls},
+    {key: 'tier', label: 'T', fmt: tierTag},
+  ];
+  if (withShare) cols.splice(10, 0, {key: 'share', label: 'Share', num: true, fmt: (v) => v === '' || v == null ? '—' : pct(v, 0)});
+  table(parent, cols, units, {sort: 'ti_lifetime_tco2', short: true, onRow: (u) => { state.unit = u.gem_unit_id; state.scrub = null; go('annual', 'unit'); }});
+}
+
+/* ---------------------------------------------------------------- tab 2: map */
+function loadGeo() {
+  if (GEO) return GEO;
+  if (window.__d3Failed || window.__topoFailed || typeof topojson === 'undefined') return null;
+  try { GEO = JSON.parse(Q('SELECT topojson FROM map_geometry LIMIT 1')[0].topojson); } catch (e) { GEO = null; }
+  return GEO;
+}
+function loadCodes() {
+  CODES = {byNumeric: new Map(), byAlpha2: {}};
+  for (const r of Q('SELECT iso_numeric, alpha2, alpha3, name_common FROM country_codes')) {
+    const rec = {alpha2: r.alpha2, alpha3: r.alpha3, name: r.name_common};
+    CODES.byNumeric.set(String(r.iso_numeric).padStart(3, '0'), rec); CODES.byAlpha2[r.alpha2] = rec;
+  }
+}
+function worldMap(parent, opts) {
+  const o = Object.assign({height: 520, countryClass: () => 'land', countryTip: null, onCountry: null}, opts);
+  const geo = loadGeo();
+  if (!geo) { caption(parent, 'The map needs d3 and topojson from cdnjs; this machine appears to be offline.'); return null; }
+  const width = 1000, height = o.height;
+  const features = topojson.feature(geo, geo.objects.countries).features;
+  const projection = d3.geoNaturalEarth1().fitExtent([[8, 8], [width - 8, height - 8]], {type: 'Sphere'});
+  const path = d3.geoPath(projection);
+  const svg = svgIn(parent, width, height);
+  svg.append('path').attr('class', 'ocean').attr('d', path({type: 'Sphere'}));
+  for (const f of features) {
+    const c = CODES.byNumeric.get(String(f.id).padStart(3, '0'));
+    const a2 = c ? c.alpha2 : null;
+    svg.append('path').attr('class', o.countryClass(a2)).attr('d', path(f))
+      .on('mousemove', (ev) => { if (o.countryTip && a2) { const t = o.countryTip(a2, c.name); if (t) tip(ev, t); } })
+      .on('mouseleave', untip).on('click', () => o.onCountry && a2 && o.onCountry(a2));
+  }
+  return {svg, projection, width, height};
+}
+function renderMap(panel) {
+  const s = sub();
+  const s2 = new Set(Q("SELECT DISTINCT country FROM emission_targets_power WHERE scenario = 'S2'").map((r) => r.country));
+  const dests = new Set(ALL.destinations);
+  if (s === 'countries') {
+    const rows = Q("SELECT u.country, COUNT(*) n, SUM(u.capacity_mw) mw, SUM(u.ti_lifetime_tco2) ti FROM ti_power_by_unit u WHERE 1" + unitWhere('u') + ' GROUP BY u.country');
+    const byC = new Map(rows.map((r) => [r.country, r]));
+    const c = card(panel, 'Destinations, coloured by the lifetime trade impact of the units in view (' + SC_NAME[state.scenario] + ')', 'Red adds, blue avoids; grey has no unit in view. Click a country to filter the whole page to it.');
+    const amp = Math.max(1e-9, ...rows.map((r) => Math.abs(r.ti / 1e6)));
+    const colour = d3.scaleSequential([amp, -amp], d3.interpolateRdBu);
+    const m = worldMap(fig(c), {countryClass: (a2) => 'land' + (byC.has(a2) ? ' dest' : ''),
+      countryTip: (a2, name) => { const r = byC.get(a2); return r ? '<b>' + esc(name) + '</b><br>' + fmtN(r.n) + ' units, ' + fmtN(r.mw) + ' MW<br>lifetime ' + fmt(r.ti / 1e6, 1) + ' MtCO₂' + (s2.has(a2) ? '<br>S2 pathway on file' : '<br>S1 only') : null; },
+      onCountry: (a2) => { if (byC.has(a2)) { state.dest = a2; renderFilters(); renderView(); } }});
+    if (m) m.svg.selectAll('path.dest').attr('fill', function () { return null; });
+    if (m) { // recolour destinations by value
+      const features = topojson.feature(loadGeo(), loadGeo().objects.countries).features;
+      m.svg.selectAll('path').filter(function (d, i) { return this.classList.contains('dest'); }).each(function () { /* class-based fill replaced below */ });
+      m.svg.selectAll('path.land').each(function () {});
+      const paths = m.svg.selectAll('path.land').nodes();
+      features.forEach((f, i) => { const cc = CODES.byNumeric.get(String(f.id).padStart(3, '0')); const r = cc && byC.get(cc.alpha2); if (r && paths[i]) paths[i].style.fill = colour(r.ti / 1e6); });
+    }
+    caption(c, 'Colour scale ±' + fmtN(amp, 1) + ' MtCO₂. Source: <code>ti_power_by_unit.csv</code> summed by destination.');
+    table(c, [
+      {key: 'country', label: 'Destination', fmt: (v) => esc(countryName(v)) + ' (' + esc(v) + ')'}, {key: 'n', label: 'Units', num: true, fmt: (v) => fmtN(v)},
+      {key: 'mw', label: 'MW', num: true, fmt: (v) => fmtN(v)}, {key: 'ti', label: 'Lifetime Mt', num: true, fmt: cellMt, cls: signCls},
+      {key: 's2', label: 'S2 on file', fmt: (v, r) => s2.has(r.country) ? 'yes' : 'no'},
+    ], rows, {sort: 'ti', short: true, onRow: (r) => { state.dest = r.country; renderFilters(); renderView(); }});
+    return;
+  }
+  const units = Q("SELECT u.* FROM ti_power_by_unit u WHERE u.latitude IS NOT NULL" + unitWhere('u'));
+  const wrap = el('div', 'row31'); panel.appendChild(wrap);
+  const c = card(wrap, 'Generating units held overseas by ' + (state.company === 'all' ? (state.home === 'all' ? 'Korean and Japanese companies' : HOME_NAME[state.home] + ' companies') : companyName(state.company)) + ' — ' + SC_NAME[state.scenario],
+    'Point size: capacity. Colour: red adds emissions over its life, green avoids. Shaded countries have an S2 pathway on file. Click a point for its detail.');
+  const detail = card(wrap, 'Unit detail', 'Click a point on the map or a row in a table.');
+  const detailBox = el('div', 'detail', '<span class="muted">No unit selected.</span>'); detail.appendChild(detailBox);
+  const m = worldMap(fig(c), {countryClass: (a2) => 'land' + (dests.has(a2) ? ' dest' : '') + (s2.has(a2) ? ' s2' : ''),
+    countryTip: (a2, name) => dests.has(a2) ? '<b>' + esc(name) + '</b><br>' + (s2.has(a2) ? 'S2 pathway on file' : 'S1 only: no usable NDC anchor') : null});
+  if (!m) return;
+  const r = d3.scaleSqrt().domain([0, Math.max(1, ...units.map((u) => u.capacity_mw))]).range([1.5, 14]);
+  const g = m.svg.append('g');
+  const sorted = units.slice().sort((a, b) => b.capacity_mw - a.capacity_mw);
+  g.selectAll('circle').data(sorted).join('circle').attr('class', (u) => 'unit' + (u.gem_unit_id === state.unit ? ' sel' : ''))
+    .attr('cx', (u) => m.projection([u.longitude, u.latitude])[0]).attr('cy', (u) => m.projection([u.longitude, u.latitude])[1])
+    .attr('r', (u) => r(u.capacity_mw)).attr('fill', (u) => u.ti_lifetime_tco2 > 0 ? 'var(--added)' : 'var(--avoided)')
+    .on('mousemove', (ev, u) => tip(ev, '<b>' + esc(u.plant_name) + ' ' + esc(u.unit_name || '') + '</b><br>' + esc(countryName(u.country)) + ' · ' + esc(u.fuel_type) + ' · ' + fmtN(u.capacity_mw) + ' MW · ' + esc(u.status) + '<br>' + u.start_year + '–' + u.end_year + ' · ' + fmtN(u.intensity_gco2_per_kwh, 0) + ' gCO₂/kWh<br>lifetime ' + fmt(u.ti_lifetime_tco2 / 1e6, 2) + ' Mt · remaining ' + fmt(u.ti_remaining_tco2 / 1e6, 2) + ' Mt<br>' + esc(u.matched_companies.split(';').map(companyName).join(', ')) + '<br><i>click for detail</i>'))
+    .on('mouseleave', untip)
+    .on('click', (ev, u) => { state.unit = u.gem_unit_id; g.selectAll('circle').attr('class', (d) => 'unit' + (d.gem_unit_id === state.unit ? ' sel' : '')); unitDetail(detailBox, u); });
+  legend(c, [['adds emissions over its life', 'var(--added)'], ['avoids emissions', 'var(--avoided)'], ['destination with S2 pathway', 'var(--band)'], ['destination, S1 only', 'var(--panel)']]);
+  caption(c, fmtN(units.length) + ' units in view, ' + fmtN(units.reduce((a, u) => a + u.capacity_mw, 0) / 1000, 1) + ' GW. Source: <code>ti_power_by_unit.csv</code> (coordinates from the tracker).');
+  if (state.unit) { const u = units.find((x) => x.gem_unit_id === state.unit); if (u) unitDetail(detailBox, u); }
+}
+function unitDetail(box, u) {
+  const owners = Q("SELECT r.company_name, r.company_country, r.role, r.share, r.origin, r.source_url FROM ti_power_by_role r WHERE r.gem_unit_id = ? AND r.scenario = ? ORDER BY r.role, r.company_name", [u.gem_unit_id, u.scenario]);
+  const other = one('SELECT ti_lifetime_tco2 ti FROM ti_power_by_unit WHERE gem_unit_id = ? AND scenario = ?', [u.gem_unit_id, u.scenario === 'S1' ? 'S2' : 'S1']);
+  box.innerHTML = '<h4>' + esc(u.plant_name) + ' · ' + esc(u.unit_name || '') + '</h4><dl>' + [
+    ['Destination', countryName(u.country) + ' (' + u.country + ')'], ['Fuel / technology', u.fuel_type + (u.technology ? ' · ' + u.technology : '')], ['Status', u.status],
+    ['Capacity', fmtN(u.capacity_mw) + ' MW'], ['Years', u.start_year + '–' + u.end_year + ' (' + u.lifetime_years + ' y, ' + u.lifetime_source + ')'],
+    ['Capacity factor', fmtN(u.capacity_factor, 2) + ' (' + u.cf_source + ')'], ['Heat rate', u.heat_rate_mj_per_kwh === '' || u.heat_rate_mj_per_kwh == null ? '—' : fmtN(u.heat_rate_mj_per_kwh, 2) + ' MJ/kWh (' + u.heat_rate_source + ')'],
+    ['Emission factor', u.ef_kgco2_per_tj === '' || u.ef_kgco2_per_tj == null ? '—' : fmtN(u.ef_kgco2_per_tj) + ' kg/TJ (' + u.ef_basis + ')'], ['Intensity', fmtN(u.intensity_gco2_per_kwh, 0) + ' gCO₂/kWh'],
+    ['Lifetime TI, ' + u.scenario, '<span class="' + cls(u.ti_lifetime_tco2) + '">' + fmt(u.ti_lifetime_tco2 / 1e6, 2) + ' Mt</span>'],
+    ['Lifetime TI, ' + (u.scenario === 'S1' ? 'S2' : 'S1'), other.ti == null ? 'no pathway' : '<span class="' + cls(other.ti) + '">' + fmt(other.ti / 1e6, 2) + ' Mt</span>'],
+    ['Remaining TI', '<span class="' + cls(u.ti_remaining_tco2) + '">' + fmt(u.ti_remaining_tco2 / 1e6, 2) + ' Mt</span> from ' + u.analysis_year], ['Tier', tierTag(u.tier)],
+  ].map(([k, v]) => '<dt>' + esc(k) + '</dt><dd>' + v + '</dd>').join('') + '</dl>' +
+    '<p class="small" style="margin:8px 0 4px"><b>Roles</b></p>' + (owners.length ? '<table>' + owners.map((o) => '<tr><td class="l">' + esc(o.company_name) + ' (' + esc(o.company_country) + ')</td><td class="l">' + esc(ROLE_LABEL[o.role] || o.role) + '</td><td class="num">' + (o.share === '' || o.share == null ? '—' : pct(o.share, 1)) + '</td><td class="l small muted">' + esc(o.origin) + '</td></tr>').join('') + '</table>' : '<span class="muted small">no role row</span>') +
+    (u.wiki_url ? '<p class="small" style="margin-top:8px"><a href="' + esc(u.wiki_url) + '" target="_blank" rel="noopener">GEM wiki page</a> · <a href="#" id="to-annual">year by year</a></p>' : '<p class="small" style="margin-top:8px"><a href="#" id="to-annual">year by year</a></p>');
+  const a = box.querySelector('#to-annual'); if (a) a.addEventListener('click', (ev) => { ev.preventDefault(); state.unit = u.gem_unit_id; go('annual', 'unit'); });
+}
+
+/* ---------------------------------------------------------------- tab 3: coverage */
+function renderCoverage(panel) {
+  const s = sub();
+  if (s === 'units') {
+    const inview = Q("SELECT fuel_type, status, COUNT(*) n, SUM(capacity_mw) mw FROM projects_gem GROUP BY fuel_type, status");
+    const excl = Q('SELECT reason, COUNT(*) n FROM ti_power_excluded GROUP BY reason ORDER BY n DESC');
+    const c = card(panel, 'Matched units by fuel and status', 'Every unit the tracker names for a company in scope outside its home country, before the model excludes cancelled, shelved and undated units.');
+    const byF = {};
+    for (const r of inview) { const g = statusGroup(r.status); byF[r.fuel_type] = byF[r.fuel_type] || {label: r.fuel_type, values: {}}; const k = r.status.startsWith('cancel') || r.status.startsWith('shelv') ? 'cancelled / shelved' : (STATUS_LABEL[g] || g); byF[r.fuel_type].values[k] = (byF[r.fuel_type].values[k] || 0) + r.n; }
+    const keys = ['operating', 'construction & planned', 'retired', 'cancelled / shelved'];
+    const kc = {operating: 'var(--accent)', 'construction & planned': 'var(--hydro)', retired: 'var(--held)', 'cancelled / shelved': 'var(--rule)'};
+    legend(c, keys.map((k) => [k, kc[k]]));
+    stackedH(fig(c), Object.values(byF).sort((a, b) => Object.values(b.values).reduce((x, y) => x + y, 0) - Object.values(a.values).reduce((x, y) => x + y, 0)), keys, {unit: 'units', labelW: 110, colour: (k) => kc[k]});
+    const c2 = card(panel, 'Why a matched unit has no result', 'From <code>ti_power_excluded.csv</code>. Cancelled and shelved units were never built; a unit without a start year or capacity cannot be placed in time; a unit that retired before the first grid observation has no benchmark year.');
+    table(c2, [{key: 'reason', label: 'Reason', wrap: true}, {key: 'n', label: 'Units', num: true, fmt: (v) => fmtN(v)}], excl.map((r) => ({...r, reason: r.reason.replace(/\d{4}-\d{4}/, 'YYYY-YYYY')})).reduce((acc, r) => { const k = acc.find((x) => x.reason === r.reason); if (k) k.n += r.n; else acc.push(r); return acc; }, []), {sort: 'n'});
+    const c3 = card(panel, 'Domestic holdings are not trades', 'A unit in the company\'s own country is left out at extraction (the extractor prints the count). The same rule, as a filter, is the "Home" chip in the top bar for the assessed units: Korean companies\' units, Japanese companies\' units, or both.');
+    caption(c3, 'Rule and count: <code>data/power/projects/method/method.md</code>.');
+  } else if (s === 'roles') {
+    const rows = Q("SELECT company_id, level, COUNT(*) n, SUM(CASE WHEN share IS NOT NULL AND share <> '' THEN 1 ELSE 0 END) with_share, AVG(CASE WHEN share IS NOT NULL AND share <> '' THEN share END) mean_share FROM gem_ownership GROUP BY company_id, level");
+    const byCo = new Map();
+    for (const r of rows) { if (!byCo.has(r.company_id)) byCo.set(r.company_id, {company: companyName(r.company_id), owner: 0, parent: 0, with_share: 0, n: 0, mean: []}); const x = byCo.get(r.company_id); x[r.level] += r.n; x.n += r.n; x.with_share += r.with_share; if (r.mean_share != null) x.mean.push(r.mean_share); }
+    const c = card(panel, 'Equity rows read from the tracker, by company', 'Owner-level rows are direct holdings; parent-level rows are ultimate parents as the tracker records them. The share is the tracker\'s bracketed figure; blank where none is stated.');
+    table(c, [{key: 'company', label: 'Company'}, {key: 'n', label: 'Unit rows', num: true, fmt: (v) => fmtN(v)}, {key: 'owner', label: 'At owner level', num: true, fmt: (v) => fmtN(v)}, {key: 'parent', label: 'At parent level', num: true, fmt: (v) => fmtN(v)},
+      {key: 'with_share', label: 'With a share', num: true, fmt: (v) => fmtN(v)}, {key: 'mean', label: 'Mean share', num: true, fmt: (v) => v.length ? pct(v.reduce((a, b) => a + b, 0) / v.length, 0) : '—'}], [...byCo.values()], {sort: 'n'});
+    const c2 = card(panel, 'The hand register', 'Construction (EPC, equipment), operation (O&M) and finance (lender, ECA) roles are not in the tracker and are transcribed by hand with one source link per row. Rows on file: ' + fmtN(FACTS.register_rows) + '.');
+    table(c2, [{key: 'role', label: 'Role'}, {key: 'phase', label: 'Phase'}, {key: 'share_basis', label: 'Share basis'}, {key: 'definition', label: 'Definition', wrap: true}], Q('SELECT * FROM roles'));
+    if (FACTS.register_rows) table(c2, [{key: 'company_name', label: 'Company'}, {key: 'plant_name', label: 'Plant'}, {key: 'country', label: 'Dest.'}, {key: 'role', label: 'Role'}, {key: 'phase', label: 'Phase'}, {key: 'share', label: 'Share', num: true, fmt: (v) => v === '' || v == null ? '—' : pct(v, 0)}, {key: 'source_url', label: 'Source', fmt: (v) => '<a href="' + esc(v) + '" target="_blank" rel="noopener">link</a>'}], Q('SELECT * FROM project_roles'), {short: true});
+  } else {
+    const rows = Q("SELECT fuel_type, cf_source, heat_rate_source, ef_basis, lifetime_source, tier, COUNT(*) n FROM ti_power_by_unit WHERE scenario = 'S1' GROUP BY 1, 2, 3, 4, 5, 6 ORDER BY n DESC");
+    const c = card(panel, 'Where each input of the assessed units comes from', 'The tracker publishes capacity, status, start year and coordinates (tier A). Capacity factor, heat rate and lifetime are technology defaults (tier C); the fuel factor is the IPCC default (tier C) until a national factor is filed (tier A).');
+    table(c, [{key: 'fuel_type', label: 'Fuel'}, {key: 'cf_source', label: 'Capacity factor'}, {key: 'heat_rate_source', label: 'Heat rate'}, {key: 'ef_basis', label: 'Emission factor'}, {key: 'lifetime_source', label: 'Lifetime'}, {key: 'tier', label: 'Cell tier', fmt: tierTag}, {key: 'n', label: 'Units', num: true, fmt: (v) => fmtN(v)}], rows);
+    const c2 = card(panel, 'The tier rules', 'From <code>registry/value_tiers.csv</code>: the whitepaper §5.1 rule applied to each value when the database is built.');
+    table(c2, [{key: 'table_pattern', label: 'Table'}, {key: 'column', label: 'Column'}, {key: 'value_pattern', label: 'Value'}, {key: 'tier', label: 'Tier', fmt: tierTag}, {key: 'reason', label: 'Reason', wrap: true}], Q('SELECT * FROM value_tiers'));
+  }
+}
+
+/* ---------------------------------------------------------------- tab 4: benchmarks */
+function renderBenchmarks(panel) {
+  const s = sub();
+  if (s === 'destination') {
+    const dest = state.dest !== 'all' ? state.dest : pick('bm_dest', ALL.destinations.includes('VN') ? 'VN' : ALL.destinations[0]);
+    const c = card(panel, countryName(dest) + ': the grid and its two pathways', 'Observed Ember series, then S1 (trend) and S2 (committed) from the latest observation. The selected scenario is drawn solid.');
+    select(ctl(c), 'Destination', ALL.destinations.map((d) => [d, countryName(d) + ' (' + d + ')']), dest, (v) => { state.pick.bm_dest = v; renderPanel(); });
+    const ref = Q('SELECT scenario, calendar_year, grid_gco2_per_kwh g, basis FROM reference_power WHERE country = ? ORDER BY scenario, calendar_year', [dest]);
+    const obs = ref.filter((r) => r.scenario === (ref.some((x) => x.scenario === 'S2') ? 'S2' : 'S1') && r.basis === 'observed');
+    tsChart(fig(c), [
+      {key: 'observed', points: obs.map((r) => [r.calendar_year, r.g]), colour: 'var(--ink)', width: 2.2},
+      ...['S1', 'S2'].filter((sc) => ref.some((r) => r.scenario === sc)).map((sc) => ({key: SC_NAME[sc], points: ref.filter((r) => r.scenario === sc && r.basis === 'pathway').map((r) => [r.calendar_year, r.g]), colour: SC_COLOR[sc], dashed: sc !== state.scenario, width: sc === state.scenario ? 2.6 : 1.6})),
+    ], {unit: 'gCO2/kWh', dp: 0, height: 300});
+    const rates = Q('SELECT * FROM emission_targets_power WHERE country = ?', [dest]);
+    const excl = Q("SELECT * FROM emission_targets_power_exclusions WHERE country = ?", [dest]);
+    table(c, [{key: 'scenario', label: 'Scenario'}, {key: 'value', label: 'Decline per year', num: true, fmt: (v) => fmt(v * 100, 2) + ' %'}, {key: 'target_level', label: 'Anchor'}, {key: 'base_year', label: 'Window', num: true, fmt: (v, r) => v + '–' + r.target_year}, {key: 'tier', label: 'T', fmt: tierTag}, {key: 'derivation', label: 'Derivation', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'}], rates);
+    if (excl.length) table(c, [{key: 'scenario', label: 'No rate for'}, {key: 'reason', label: 'Reason (the NDC sentence read, where one exists)', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'}], excl);
+    const anchor = one('SELECT * FROM ndc_anchors_power WHERE country = ?', [dest]);
+    if (anchor.country) {
+      const c2 = card(panel, 'The committed target on file', 'Read from Climate Watch\'s NDC content (the latest submission) or from a hand row; the sentence is shown so the reading can be checked.');
+      c2.appendChild(el('div', 'detail', '<dl>' + [['Submission', anchor.document || anchor.communicated], ['Target type', anchor.target_type], ['Parse status', anchor.parse_status], ['Base year → target year', (anchor.base_year || '—') + ' → ' + (anchor.target_year || '—')], ['Reduction', anchor.reduction === '' || anchor.reduction == null ? '—' : pct(anchor.reduction, 1) + (anchor.reduction_upper ? ' to ' + pct(anchor.reduction_upper, 1) : '')], ['Text', esc(anchor.target_text || '—')], ['Source', anchor.source_url ? '<a href="' + esc(anchor.source_url) + '" target="_blank" rel="noopener">' + esc(anchor.source_id) + '</a>' : esc(anchor.source_id)], ['Note', esc(anchor.note || '')]].map(([k, v]) => '<dt>' + esc(k) + '</dt><dd>' + v + '</dd>').join('') + '</dl>'));
+    }
+    const units = Q("SELECT u.* FROM ti_power_by_unit u WHERE u.country = ?" + unitWhere('u').replace(/ AND u\.country = '[A-Z]{2}'/, ''), [dest]);
+    const c3 = card(panel, 'Units in ' + countryName(dest) + ' (' + SC_NAME[state.scenario] + ')', fmtN(units.length) + ' assessed units.');
+    unitTable(c3, units, false);
+  } else if (s === 'rates') {
+    const rows = Q("SELECT country, scenario, value, target_level FROM emission_targets_power");
+    const byC = new Map();
+    for (const r of rows) { if (!byC.has(r.country)) byC.set(r.country, {label: countryName(r.country) + ' (' + r.country + ')', series: []}); byC.get(r.country).series.push({key: SC_NAME[r.scenario], sc: r.scenario, value: r.value * 100}); }
+    const c = card(panel, 'Annual decline of grid intensity by destination and scenario', 'S1 from the observed trend, S2 from the committed target read pro rata onto grid intensity (floored at S1). A negative S1 is a grid whose intensity is rising.');
+    legend(c, [[SC_NAME.S1, SC_COLOR.S1], [SC_NAME.S2, SC_COLOR.S2]]);
+    barsH(fig(c), [...byC.values()].sort((a, b) => Math.max(...b.series.map((x) => x.value)) - Math.max(...a.series.map((x) => x.value))), {unit: '% per year', dp: 1, labelW: 200, colour: (x) => SC_COLOR[x.sc], onClick: (r) => { state.pick.bm_dest = r.label.slice(-3, -1); setSub('destination'); }});
+  } else {
+    const rows = Q('SELECT * FROM ndc_anchors_power ORDER BY parse_status, country');
+    const c = card(panel, 'NDC anchors: what was read for every destination', 'Parsed rows come from the latest submission on Climate Watch; hand rows replace them where the registry text is not the furthest stated pathway. Rows marked needs_review or not_usable have no S2 until a hand row supplies a level.');
+    table(c, [{key: 'country', label: 'Dest.', fmt: (v) => esc(countryName(v)) + ' (' + esc(v) + ')'}, {key: 'document', label: 'Submission'}, {key: 'target_type', label: 'Type'}, {key: 'parse_status', label: 'Status'}, {key: 'base_year', label: 'Base', num: true, fmt: (v) => v || '—'}, {key: 'target_year', label: 'Target yr', num: true, fmt: (v) => v || '—'}, {key: 'reduction', label: 'Reduction', num: true, fmt: (v, r) => v === '' || v == null ? '—' : pct(v, 1) + (r.reduction_upper ? '–' + pct(r.reduction_upper, 1) : '')}, {key: 'origin', label: 'Origin'}, {key: 'target_text', label: 'Text', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'}], rows, {short: true, sort: 'country', dir: 'asc'});
+  }
+}
+
+/* ---------------------------------------------------------------- tab 5: inputs */
+function renderInputs(panel) {
+  if (sub() === 'defaults') {
+    const c = card(panel, 'Technology defaults', 'Lifetime, capacity factor and LHV efficiency by fuel and combustion technology, with the low/high bands the sensitivity varies. HAND-TRANSCRIBED from the documents linked; verified = no until checked against them. Tier C wherever used.');
+    table(c, [{key: 'fuel_type', label: 'Fuel'}, {key: 'technology_pattern', label: 'Technology (regex)'}, {key: 'lifetime_years', label: 'Life yr', num: true, fmt: (v, r) => v + ' [' + r.lifetime_low_years + ', ' + r.lifetime_high_years + ']'}, {key: 'capacity_factor', label: 'CF', num: true, fmt: (v, r) => fmtN(v, 2) + ' [' + fmtN(r.cf_low, 2) + ', ' + fmtN(r.cf_high, 2) + ']'}, {key: 'efficiency_lhv', label: 'Efficiency', num: true, fmt: (v) => v == null || v === '' ? '—' : pct(v, 0)}, {key: 'verified', label: 'Verified'}, {key: 'source_url', label: 'Source', fmt: (v) => '<a href="' + esc(v) + '" target="_blank" rel="noopener">link</a>'}, {key: 'note', label: 'Note', wrap: true, fmt: clip(140)}], Q('SELECT * FROM technology_defaults'));
+  } else {
+    const c = card(panel, 'CO₂ emission factors by fuel', 'National factors (tier A) where filed, IPCC 2006 defaults (tier C) with their 95 % bounds otherwise; the model takes the national one first. The IPCC transcription is verified against the chapter text on every run.');
+    table(c, [{key: 'country', label: 'Country', fmt: (v) => v || 'default'}, {key: 'fuel_id', label: 'Fuel'}, {key: 'ef_kgco2_per_tj', label: 'kgCO2/TJ', num: true, fmt: (v) => fmtN(v)}, {key: 'ef_low_kgco2_per_tj', label: 'low', num: true, fmt: (v) => fmtN(v)}, {key: 'ef_high_kgco2_per_tj', label: 'high', num: true, fmt: (v) => fmtN(v)}, {key: 'basis', label: 'Basis'}, {key: 'biogenic', label: 'Biogenic'}, {key: 'tier', label: 'T', fmt: tierTag}, {key: 'source_url', label: 'Source', fmt: (v) => '<a href="' + esc(v) + '" target="_blank" rel="noopener">link</a>'}], Q('SELECT * FROM emission_factors'));
+    const c2 = card(panel, 'How a unit\'s intensity is built', 'gCO₂/kWh = heat rate (MJ/kWh) × emission factor (kgCO₂/TJ) / 1000, with heat rate = 3.6 / efficiency. The units in view, by fuel: the resulting intensities.');
+    const rows = Q("SELECT fuel_type, fuel_id, technology, intensity_gco2_per_kwh i, COUNT(*) n FROM ti_power_by_unit WHERE scenario = 'S1' AND intensity_gco2_per_kwh > 0 GROUP BY 1, 2, 3, 4 ORDER BY i DESC");
+    dots(fig(c2), rows.map((r) => ({label: r.fuel_type + ' · ' + (r.technology || 'unknown') + ' · ' + r.fuel_id, value: r.i, r})), {unit: 'gCO2/kWh', dp: 0, signed: false, labelW: 300, colour: (d) => FUEL_COLOR[d.r.fuel_type], tipHtml: (d) => '<b>' + esc(d.label) + '</b><br>' + fmtN(d.value, 0) + ' gCO₂/kWh · ' + fmtN(d.r.n) + ' units'});
+  }
+}
+
+/* ---------------------------------------------------------------- tab 6: annual */
+function renderAnnual(panel) {
+  if (sub() === 'unit') {
+    const units = Q("SELECT u.gem_unit_id, u.plant_name, u.unit_name, u.country, u.capacity_mw, u.fuel_type FROM ti_power_by_unit u WHERE 1" + unitWhere('u') + ' ORDER BY u.capacity_mw DESC');
+    const c = card(panel, 'One unit, year by year', 'The unit\'s stack emissions (flat) against what the destination grid would have emitted for the same generation under S1 and S2. The shaded band is the gap under the scenario in the top bar. Hover for a year, click to pin it.');
+    if (!units.length) { empty(c); return; }
+    if (!state.unit || !units.some((u) => u.gem_unit_id === state.unit)) state.unit = units[0].gem_unit_id;
+    select(ctl(c), 'Unit', units.map((u) => [u.gem_unit_id, u.plant_name + ' ' + (u.unit_name || '') + ' · ' + countryName(u.country) + ' · ' + u.fuel_type + ' · ' + fmtN(u.capacity_mw) + ' MW']), state.unit, (v) => { state.unit = v; state.scrub = null; renderPanel(); });
+    const rows = Q('SELECT * FROM ti_power_annual WHERE gem_unit_id = ? ORDER BY scenario, calendar_year', [state.unit]);
+    const s1 = rows.filter((r) => r.scenario === 'S1'), s2 = rows.filter((r) => r.scenario === 'S2');
+    const focus = (state.scenario === 'S1' ? s1 : s2).length ? (state.scenario === 'S1' ? s1 : s2) : (s1.length ? s1 : s2);
+    const focusSc = focus === s1 ? 'S1' : 'S2';
+    if (state.scrub == null || !focus.some((r) => r.calendar_year === state.scrub)) state.scrub = focus[0].calendar_year;
+    legend(c, [['unit stack emissions (fixed at build)', 'var(--ink)'], ['grid, S2 committed pathway', SC_COLOR.S2], ['grid, S1 observed trend', SC_COLOR.S1]]);
+    const f = fig(c); const readout = el('div', 'readout'); c.appendChild(readout);
+    function show(y) { const r = focus.find((q) => q.calendar_year === y); if (!r) return;
+      readout.innerHTML = [[y, 'year (' + r.grid_basis + ' grid)'], [fmtN(r.generation_gwh, 0), 'GWh generated'], [fmtN(r.grid_gco2_per_kwh, 0), 'gCO₂/kWh grid, ' + focusSc], [fmtN(r.e_prod_tco2 / 1e3, 0), 'ktCO₂ the unit emits'], [fmtN(r.e_ref_tco2 / 1e3, 0), 'ktCO₂ the grid would have'], [fmt(r.ti_tco2 / 1e3, 0), 'ktCO₂ trade impact in the year', cls(r.ti_tco2)], [fmt(r.cumulative_ti_tco2 / 1e6, 2), 'MtCO₂ cumulative to date', cls(r.cumulative_ti_tco2)]]
+        .map(([v, l, k]) => '<div><div class="v ' + (k || '') + '">' + v + '</div><div class="muted">' + l + '</div></div>').join(''); }
+    tsChart(f, [
+      {key: 'unit', points: focus.map((r) => [r.calendar_year, r.e_prod_tco2 / 1e3]), colour: 'var(--ink)', width: 2.4},
+      ...(s2.length ? [{key: 'grid S2', points: s2.map((r) => [r.calendar_year, r.e_ref_tco2 / 1e3]), colour: SC_COLOR.S2, dashed: focusSc !== 'S2'}] : []),
+      ...(s1.length ? [{key: 'grid S1', points: s1.map((r) => [r.calendar_year, r.e_ref_tco2 / 1e3]), colour: SC_COLOR.S1, dashed: focusSc !== 'S1'}] : []),
+    ], {unit: 'ktCO2 per year', dp: 0, band: ['grid ' + focusSc, 'unit'], scrub: state.scrub, onScrub: (y, commit) => { if (commit) state.scrub = y; show(y); }});
+    show(state.scrub);
+    const r2 = el('div', 'row2'); panel.appendChild(r2);
+    const c2 = card(r2, 'Trade impact in each year (' + SC_NAME[focusSc] + ')', 'Positive adds, negative avoids.');
+    barsH(fig(c2), focus.map((r) => ({label: String(r.calendar_year), series: [{key: 'annual', value: r.ti_tco2 / 1e3}]})), {unit: 'ktCO2 in the year', dp: 0, labelW: 60, band: 10});
+    const c3 = card(r2, 'Cumulative trade impact', 'Where the horizon is drawn decides the verdict.');
+    tsChart(fig(c3), ['S1', 'S2'].filter((k) => (k === 'S1' ? s1 : s2).length).map((k) => ({key: SC_NAME[k], points: (k === 'S1' ? s1 : s2).map((r) => [r.calendar_year, r.cumulative_ti_tco2 / 1e6]), colour: SC_COLOR[k], dashed: k !== focusSc})), {unit: 'MtCO2 cumulative', dp: 2, height: 280});
+  } else {
+    const rows = Q("SELECT a.scenario, a.calendar_year, SUM(a.ti_tco2) ti FROM ti_power_annual a JOIN ti_power_by_unit u ON u.gem_unit_id = a.gem_unit_id AND u.scenario = a.scenario WHERE 1" + unitWhere('u', false) + ' GROUP BY a.scenario, a.calendar_year ORDER BY a.calendar_year');
+    const c = card(panel, 'Year-by-year sum of the units in view', 'Both scenarios; the S2 line covers only units whose destination has a pathway. From <code>ti_power_annual.csv</code>.');
+    tsChart(fig(c), ['S1', 'S2'].map((k) => ({key: SC_NAME[k], points: rows.filter((r) => r.scenario === k).map((r) => [r.calendar_year, r.ti / 1e6]), colour: SC_COLOR[k]})), {unit: 'MtCO2 added (+) or avoided (−) in the year', dp: 1, height: 300});
+    const byDest = Q("SELECT u.country, a.calendar_year, SUM(a.ti_tco2) ti FROM ti_power_annual a JOIN ti_power_by_unit u ON u.gem_unit_id = a.gem_unit_id AND u.scenario = a.scenario WHERE a.scenario = ?" + unitWhere('u', false) + ' GROUP BY u.country, a.calendar_year', [state.scenario]);
+    const tops = Q("SELECT country, SUM(ABS(ti_lifetime_tco2)) s FROM ti_power_by_unit u WHERE 1" + unitWhere('u') + ' GROUP BY country ORDER BY s DESC LIMIT 8').map((r) => r.country);
+    const c2 = card(panel, 'By destination, ' + SC_NAME[state.scenario], 'The eight destinations with the largest lifetime figures in view.');
+    tsChart(fig(c2), tops.map((d, i) => ({key: countryName(d), points: byDest.filter((r) => r.country === d).map((r) => [r.calendar_year, r.ti / 1e6]), colour: d3.schemeTableau10[i % 10]})), {unit: 'MtCO2 in the year', dp: 1, height: 320});
+    legend(c2, tops.map((d, i) => [countryName(d), d3.schemeTableau10[i % 10]]));
+  }
+}
+
+/* ---------------------------------------------------------------- tab 7: total */
+function renderTotal(panel) {
+  const s = sub();
+  if (s === 'company') {
+    const rows = Q("SELECT r.company_id, r.company_name, r.company_country, r.role, r.phase, COUNT(DISTINCT r.gem_unit_id) units, SUM(CASE WHEN r.share <> '' AND r.share IS NOT NULL THEN 1 ELSE 0 END) with_share, SUM(r.capacity_mw) mw, SUM(r.ti_lifetime_full_tco2) tfull, SUM(CASE WHEN r.share <> '' AND r.share IS NOT NULL THEN r.ti_lifetime_weighted_tco2 ELSE 0 END) weighted, SUM(r.ti_remaining_full_tco2) rfull, SUM(CASE WHEN r.share <> '' AND r.share IS NOT NULL THEN r.ti_remaining_weighted_tco2 ELSE 0 END) rweighted FROM ti_power_by_role r WHERE 1" + roleWhere('r') + ' GROUP BY r.company_id, r.role');
+    const c0 = card(panel, 'In view (' + SC_NAME[state.scenario] + ')');
+    const tot = rows.reduce((a, r) => ({u: a.u + r.units, f: a.f + r.tfull, w: a.w + r.weighted, rf: a.rf + r.rfull}), {u: 0, f: 0, w: 0, rf: 0});
+    kpis(c0, [[fmtN(new Set(rows.map((r) => r.company_id)).size), 'companies with a role in view'], [fmtN(one("SELECT COUNT(*) n FROM ti_power_by_unit u WHERE 1" + unitWhere('u')).n), 'units assessed'], [fmt(tot.f / 1e6, 1), 'MtCO₂ lifetime, full attribution (role rows summed; a unit with two companies counts twice)', cls(tot.f)], [fmt(tot.w / 1e6, 1), 'MtCO₂ lifetime, share-weighted', cls(tot.w)], [fmt(tot.rf / 1e6, 1), 'MtCO₂ remaining, full', cls(tot.rf)]]);
+    const c = card(panel, 'Lifetime trade impact by company and role: full and share-weighted side by side', 'Each row is one company × role; roles are never added together. Click a bar to open the company.');
+    const f = fig(c);
+    legend(f, [['full attribution', 'var(--ink)'], ['share-weighted', 'var(--accent)']]);
+    barsH(f, rows.sort((a, b) => Math.abs(b.tfull) - Math.abs(a.tfull)).map((r) => ({label: r.company_name + ' · ' + (ROLE_LABEL[r.role] || r.role), row: r, series: [{key: 'full', value: r.tfull / 1e6}, {key: 'share-weighted', value: r.weighted / 1e6}]})),
+      {unit: 'MtCO2 over the operating lifetime', dp: 1, labelW: 250, band: 11, colour: (x) => x.key === 'full' ? 'var(--ink)' : 'var(--accent)', onClick: (r) => go('companies', r.row.company_id),
+        tipHtml: (x, r) => '<b>' + esc(r.label) + '</b><br>' + esc(x.key) + ': ' + fmt(x.value, 2) + ' Mt<br>' + fmtN(r.row.units) + ' units, ' + fmtN(r.row.with_share) + ' with a share, ' + fmtN(r.row.mw) + ' MW'});
+    table(c, [{key: 'company_name', label: 'Company'}, {key: 'company_country', label: 'HQ'}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'phase', label: 'Phase'}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)}, {key: 'with_share', label: 'With share', num: true, fmt: (v) => fmtN(v)}, {key: 'mw', label: 'MW', num: true, fmt: (v) => fmtN(v)},
+      {key: 'tfull', label: 'Lifetime full Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'weighted', label: 'Lifetime weighted Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'rfull', label: 'Remaining full Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'rweighted', label: 'Remaining weighted Mt', num: true, fmt: cellMt, cls: signCls}], rows, {sort: 'tfull', onRow: (r) => go('companies', r.company_id)});
+  } else if (s === 'units') {
+    const units = Q("SELECT u.* FROM ti_power_by_unit u WHERE 1" + unitWhere('u'));
+    const c = card(panel, 'Every assessed unit in view (' + SC_NAME[state.scenario] + ')', 'Sort any column; click a row for the yearly view.');
+    unitTable(c, units, false);
+  } else if (s === 'fuel') {
+    const rows = Q("SELECT u.fuel_type, u.status, COUNT(*) n, SUM(u.capacity_mw) mw, SUM(u.ti_lifetime_tco2) ti, SUM(u.ti_remaining_tco2) rem FROM ti_power_by_unit u WHERE 1" + unitWhere('u') + ' GROUP BY u.fuel_type, u.status');
+    const byF = {};
+    for (const r of rows) { byF[r.fuel_type] = byF[r.fuel_type] || {label: r.fuel_type, n: 0, mw: 0, ti: 0, rem: 0}; byF[r.fuel_type].n += r.n; byF[r.fuel_type].mw += r.mw; byF[r.fuel_type].ti += r.ti; byF[r.fuel_type].rem += r.rem; }
+    const c = card(panel, 'By fuel (' + SC_NAME[state.scenario] + ')', 'Coal adds; zero-stack units avoid by construction; gas sits either side depending on the destination grid and the scenario.');
+    barsH(fig(c), Object.values(byF).sort((a, b) => b.ti - a.ti).map((r) => ({label: r.label, series: [{key: 'lifetime', value: r.ti / 1e6}, {key: 'remaining', value: r.rem / 1e6}]})), {unit: 'MtCO2', dp: 1, labelW: 110, colour: (x) => x.key === 'lifetime' ? 'var(--ink)' : 'var(--accent)'});
+    legend(c, [['lifetime', 'var(--ink)'], ['remaining from the analysis year', 'var(--accent)']]);
+    const byS = {};
+    for (const r of rows) { const g = statusGroup(r.status); byS[g] = byS[g] || {label: STATUS_LABEL[g] || g, ti: 0, rem: 0, n: 0}; byS[g].ti += r.ti; byS[g].rem += r.rem; byS[g].n += r.n; }
+    const c2 = card(panel, 'By status', 'Construction and planned units are the part of the result that is still a decision.');
+    barsH(fig(c2), Object.values(byS).map((r) => ({label: r.label + ' (' + fmtN(r.n) + ')', series: [{key: 'lifetime', value: r.ti / 1e6}, {key: 'remaining', value: r.rem / 1e6}]})), {unit: 'MtCO2', dp: 1, labelW: 210, colour: (x) => x.key === 'lifetime' ? 'var(--ink)' : 'var(--accent)'});
+  } else {
+    const rows = Q("SELECT s.dimension, s.variant, SUM(s.ti_lifetime_tco2) ti, COUNT(DISTINCT s.gem_unit_id) n FROM ti_power_sensitivity s JOIN ti_power_by_unit u ON u.gem_unit_id = s.gem_unit_id AND u.scenario = s.scenario WHERE s.scenario = ?" + unitWhere('u', false) + ' GROUP BY s.dimension, s.variant', [state.scenario]);
+    const dims = {}; for (const r of rows) { dims[r.dimension] = dims[r.dimension] || {n: r.n}; dims[r.dimension][r.variant] = r.ti / 1e6; }
+    const NAMES = {lifetime: 'operating lifetime (default band)', capacity_factor: 'capacity factor (default band)', emission_factor: 'fuel emission factor (IPCC bounds)'};
+    const c = card(panel, 'What would change the answer (' + SC_NAME[state.scenario] + ')', 'Each input varied one at a time over its documented band across the units in view (only units whose input is a default are varied). The bar is the range, the mark the published central value.');
+    ranges(fig(c), Object.entries(dims).filter(([, v]) => v.central != null).map(([k, v]) => ({label: NAMES[k] + ' · ' + fmtN(v.n) + ' units', low: Math.min(v.low ?? v.central, v.high ?? v.central), mid: v.central, high: Math.max(v.low ?? v.central, v.high ?? v.central)})), {unit: 'MtCO2 over the lifetime, units in view', dp: 0, labelW: 320});
+    const perUnit = Q("SELECT s.gem_unit_id, u.plant_name, u.unit_name, u.country, u.fuel_type, s.dimension, MIN(s.ti_lifetime_tco2) lo, MAX(s.ti_lifetime_tco2) hi, MAX(CASE WHEN s.variant = 'central' THEN s.ti_lifetime_tco2 END) c FROM ti_power_sensitivity s JOIN ti_power_by_unit u ON u.gem_unit_id = s.gem_unit_id AND u.scenario = s.scenario WHERE s.scenario = ?" + unitWhere('u', false) + ' GROUP BY s.gem_unit_id, s.dimension ORDER BY (hi - lo) DESC LIMIT 200', [state.scenario]);
+    table(c, [{key: 'plant_name', label: 'Plant'}, {key: 'unit_name', label: 'Unit'}, {key: 'country', label: 'Dest.'}, {key: 'fuel_type', label: 'Fuel'}, {key: 'dimension', label: 'Dimension'}, {key: 'lo', label: 'Low Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'c', label: 'Central Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'hi', label: 'High Mt', num: true, fmt: cellMt, cls: signCls}], perUnit, {short: true, onRow: (r) => { state.unit = r.gem_unit_id; go('annual', 'unit'); }});
+    caption(c, 'The 200 widest unit × dimension ranges in view.');
+  }
+}
+
+/* ---------------------------------------------------------------- tab 8: sources */
+function renderSources(panel) {
+  if (sub() === 'tables') {
+    const c = card(panel, 'Tables in the database', 'Every CSV the build writes, by kind, with its row count and content hash.');
+    table(c, [{key: 'kind', label: 'Kind'}, {key: 'dataset', label: 'Dataset'}, {key: 'table', label: 'Table', fmt: (v) => '<code>' + esc(v) + '</code>'}, {key: 'rows', label: 'Rows', num: true, fmt: (v) => fmtN(v)}, {key: 'source_path', label: 'Path', fmt: clip(60)}, {key: 'sha256', label: 'SHA-256', fmt: (v) => '<code class="small">' + esc(String(v).slice(0, 16)) + '…</code>'}], Q('SELECT * FROM tables ORDER BY kind, "table"'), {sort: 'kind', dir: 'asc', short: true});
+  } else {
+    const c = card(panel, 'Sources', 'Every source the build reads: publisher, how obtained, when, licence. The tracker row says it was a hand download through GEM\'s form.');
+    table(c, [{key: 'source_id', label: 'Source', fmt: (v, r) => r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener"><code>' + esc(v) + '</code></a>' : '<code>' + esc(v) + '</code>'}, {key: 'publisher', label: 'Publisher', fmt: clip(40)}, {key: 'title', label: 'Title', fmt: clip(90)}, {key: 'how_obtained', label: 'Obtained', fmt: clip(60)}, {key: 'accessed_date', label: 'Accessed'}, {key: 'license', label: 'Licence', fmt: clip(36)}], Q('SELECT * FROM sources ORDER BY source_id'), {sort: 'source_id', dir: 'asc', short: true});
+    const c2 = card(panel, 'Raw files', 'Each raw drop with its source, original name and hash.');
+    table(c2, [{key: 'dataset', label: 'Dataset'}, {key: 'file', label: 'File'}, {key: 'source_id', label: 'Source'}, {key: 'original_name', label: 'Original name'}, {key: 'sha256', label: 'SHA-256', fmt: (v) => '<code class="small">' + esc(String(v).slice(0, 16)) + '…</code>'}, {key: 'note', label: 'Note', fmt: clip(70)}], Q('SELECT * FROM raw_files'), {short: true});
+  }
+}
+
+/* ---------------------------------------------------------------- shell */
+const RENDER = {companies: renderCompanies, map: renderMap, coverage: renderCoverage, benchmarks: renderBenchmarks, inputs: renderInputs, annual: renderAnnual, total: renderTotal, sources: renderSources};
+function tabDef() { return TABS.find((t) => t.id === state.tab) || TABS[0]; }
+function renderTabs() {
+  $('tabs').innerHTML = TABS.map((t, i) => '<button data-t="' + t.id + '" class="' + (t.id === state.tab ? 'on' : '') + '"><span class="n">' + (i + 1) + '</span>' + esc(t.title) + '</button>').join('');
+  $('tabs').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => go(b.dataset.t)));
+}
+function renderSubtabs() {
+  const subs = tabDef().subs();
+  if (!subs.some(([k]) => k === state.sub[state.tab])) state.sub[state.tab] = subs[0][0];
+  $('subtabs').innerHTML = subs.map(([k, l]) => '<button data-s="' + esc(k) + '" class="' + (k === state.sub[state.tab] ? 'on' : '') + '">' + esc(l) + '</button>').join('');
+  $('subtabs').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => setSub(b.dataset.s)));
+}
+function renderStory() { $('story').innerHTML = STORY[state.tab] || ''; fillFacts($('story')); }
+function renderPanel() {
+  const panel = $('panel'); panel.innerHTML = '';
+  try { RENDER[state.tab](panel); } catch (err) { panel.appendChild(el('div', 'card err', 'This view could not be drawn: ' + esc(err.message))); console.error(err); }
+  const n = one("SELECT COUNT(*) n FROM ti_power_by_unit u WHERE 1" + unitWhere('u')).n;
+  $('showing').textContent = 'filters select ' + fmtN(n) + ' assessed units under ' + state.scenario;
+  writeHash();
+}
+function renderView() { renderTabs(); renderSubtabs(); renderStory(); renderPanel(); }
+function go(tab, s) { state.tab = tab; if (s) state.sub[tab] = s; renderView(); window.scrollTo({top: 0}); }
+function setSub(s) { state.sub[state.tab] = s; renderSubtabs(); renderPanel(); }
+function chips(id, items, isOn, onToggle, klass) {
+  $(id).innerHTML = items.map(([v, l]) => '<button class="chip ' + (klass ? klass(v) : '') + (isOn(v) ? ' on' : '') + '" data-v="' + esc(v) + '">' + esc(l) + '</button>').join('');
+  $(id).querySelectorAll('button').forEach((b) => b.addEventListener('click', () => onToggle(b.dataset.v)));
+}
+function toggleSet(set, v, all) { if (!set.size) all.forEach((x) => set.add(x)); if (set.has(v)) set.delete(v); else set.add(v); if (!set.size || set.size === all.length) set.clear(); }
+function fillSelect(id, options, value, onChange) {
+  const s = $(id); s.innerHTML = options.map(([v, l]) => '<option value="' + esc(v) + '"' + (String(v) === String(value) ? ' selected' : '') + '>' + esc(l) + '</option>').join('');
+  s.onchange = () => onChange(s.value);
+}
+function renderFilters() {
+  chips('f-scenario', [['S1', 'S1 observed'], ['S2', 'S2 committed']], (v) => state.scenario === v, (v) => { state.scenario = v; renderFilters(); renderPanel(); }, (v) => v.toLowerCase());
+  const homes = [...new Set(ALL.companies.map((c) => c.country))].sort();
+  chips('f-home', [['all', 'both'], ...homes.map((h) => [h, HOME_NAME[h] || h])], (v) => state.home === v, (v) => { state.home = v; if (v !== 'all' && state.company !== 'all' && ALL.byId[state.company].country !== v) state.company = 'all'; renderFilters(); renderPanel(); });
+  fillSelect('f-company', [['all', 'all companies'], ...ALL.companies.filter((c) => state.home === 'all' || c.country === state.home).map((c) => [c.company_id, c.name_en + ' (' + c.country + ')'])], state.company, (v) => { state.company = v; renderPanel(); });
+  fillSelect('f-dest', [['all', 'all destinations'], ...ALL.destinations.map((d) => [d, countryName(d) + ' (' + d + ')'])], state.dest, (v) => { state.dest = v; renderPanel(); });
+  chips('f-fuel', ALL.fuels.map((f) => [f, f]), (v) => !state.fuels.size || state.fuels.has(v), (v) => { toggleSet(state.fuels, v, ALL.fuels); renderFilters(); renderPanel(); });
+  chips('f-status', Object.keys(STATUS_GROUPS).map((g) => [g, STATUS_LABEL[g]]), (v) => !state.statuses.size || state.statuses.has(v), (v) => { toggleSet(state.statuses, v, Object.keys(STATUS_GROUPS)); renderFilters(); renderPanel(); });
+  $('f-reset').onclick = () => { state.scenario = 'S2'; state.home = 'all'; state.company = 'all'; state.dest = 'all'; state.fuels.clear(); state.statuses.clear(); renderFilters(); renderPanel(); };
+}
+function writeHash() {
+  const parts = ['sc=' + state.scenario];
+  if (state.home !== 'all') parts.push('h=' + state.home);
+  if (state.company !== 'all') parts.push('c=' + state.company);
+  if (state.dest !== 'all') parts.push('d=' + state.dest);
+  if (state.fuels.size) parts.push('f=' + [...state.fuels].join(','));
+  if (state.statuses.size) parts.push('s=' + [...state.statuses].join(','));
+  if (state.unit) parts.push('u=' + state.unit);
+  history.replaceState(null, '', '#' + state.tab + '/' + (state.sub[state.tab] || '') + '?' + parts.join('&'));
+}
+function readHash() {
+  const h = location.hash.replace(/^#/, ''); if (!h) return;
+  const [path, q] = h.split('?'); const [tab, s] = path.split('/');
+  if (TABS.some((t) => t.id === tab)) { state.tab = tab; if (s) state.sub[tab] = s; }
+  if (!q) return;
+  for (const kv of q.split('&')) { const [k, v] = kv.split('=');
+    if (k === 'sc' && (v === 'S1' || v === 'S2')) state.scenario = v;
+    if (k === 'h' && ['KR', 'JP'].includes(v)) state.home = v;
+    if (k === 'c' && ALL.byId[v]) state.company = v;
+    if (k === 'd' && ALL.destinations.includes(v)) state.dest = v;
+    if (k === 'f') v.split(',').filter((x) => ALL.fuels.includes(x)).forEach((x) => state.fuels.add(x));
+    if (k === 's') v.split(',').filter((x) => STATUS_GROUPS[x]).forEach((x) => state.statuses.add(x));
+    if (k === 'u') state.unit = v; }
+}
+
+/* ---------------------------------------------------------------- boot */
+function setStatus(html, isErr) { $('status').innerHTML = (isErr ? '<span class="err">' : '') + html + (isErr ? '</span>' : ''); }
+function engineReady() {
+  if (SQL) return Promise.resolve(SQL);
+  if (window.__sqljsFailed || typeof window.initSqlJs !== 'function') return Promise.reject(new Error('sql.js ' + SQLJS_VERSION + ' could not be loaded from cdnjs — is this machine offline?'));
+  return window.initSqlJs({locateFile: (f) => CDN_DIR + f}).then((m) => { SQL = m; return m; });
+}
+function openBytes(buffer, name) {
+  return engineReady().then((sql) => {
+    DB = new sql.Database(new Uint8Array(buffer)); DB.exec('SELECT 1');
+    loadCodes();
+    ALL.companies = Q("SELECT c.* FROM companies c WHERE c.in_scope = 'yes' AND c.company_id IN (SELECT DISTINCT company_id FROM ti_power_by_role) ORDER BY c.country, c.name_en");
+    ALL.byId = Object.fromEntries(ALL.companies.map((c) => [c.company_id, c]));
+    ALL.destinations = Q('SELECT DISTINCT country FROM ti_power_by_unit ORDER BY country').map((r) => r.country);
+    ALL.fuels = FUELS.filter((f) => Q('SELECT 1 FROM ti_power_by_unit WHERE fuel_type = ? LIMIT 1', [f]).length);
+    readHash();
+    FACTS = computeFacts();
+    $('opener').classList.add('hidden'); $('content').classList.remove('hidden'); $('filters').classList.remove('hidden'); $('tabs').classList.remove('hidden');
+    setStatus('<b>' + esc(name) + '</b> · ' + fmtN(buffer.byteLength / 1048576, 1) + ' MB · data as of ' + esc(FACTS.as_of) + '<br>every figure on this page is a query on that file');
+    renderFilters(); renderView();
+  });
+}
+function showOpener(msg) { $('opener-msg').innerHTML = msg; $('opener').classList.remove('hidden'); setStatus('no database open', true); }
+function openPicked(file) { if (!file) return; file.arrayBuffer().then((b) => openBytes(b, file.name)).catch((err) => showOpener('<span class="err">' + esc(err.message) + '</span>')); }
+function boot() {
+  const op = $('opener');
+  $('dbfile').addEventListener('change', (e) => openPicked(e.target.files[0]));
+  ['dragenter', 'dragover'].forEach((t) => op.addEventListener(t, (e) => { e.preventDefault(); op.classList.add('drag'); }));
+  ['dragleave', 'drop'].forEach((t) => op.addEventListener(t, (e) => { e.preventDefault(); op.classList.remove('drag'); }));
+  op.addEventListener('drop', (e) => openPicked(e.dataTransfer.files[0]));
+  if (window.__sqljsFailed) { showOpener('<span class="err">sql.js could not be loaded from cdnjs — the page needs the network for its engine.</span>'); return; }
+  const source = location.protocol === 'file:' ? SERVED_DB : DB_RELATIVE;
+  setStatus('reading ' + esc(DB_FILE) + '…');
+  const stop = new AbortController(); const timer = setTimeout(() => stop.abort(), 4000);
+  fetch(source, {cache: 'no-store', signal: stop.signal})
+    .then((res) => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.arrayBuffer(); })
+    .then((buf) => { clearTimeout(timer); return openBytes(buf, DB_FILE); })
+    .catch((err) => { clearTimeout(timer); showOpener(location.protocol === 'file:' ? 'This page was opened from the file system, where the browser blocks reading <code>' + esc(DB_FILE) + '</code> beside it, and no local server answered on port ' + SERVE_PORT + '.' : '<span class="err">Could not read ' + esc(DB_FILE) + ': ' + esc(err.message) + '</span>'); });
+}
+document.addEventListener('DOMContentLoaded', boot);
+</script>
+</body>
+</html>

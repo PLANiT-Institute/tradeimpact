@@ -1,72 +1,107 @@
 country,scenario,rate,value,target_level,base_year,target_year,derivation,source_id
 AE,S1,r_power,0.043056459,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+AE,S2,r_power,0.043056459,economy_prorata_s1_floor,2019,2035,"ae_third_ndc (reduction_from_base, economy, third_ndc): target level g(2019) x (1 - 0.47) = 349.8 gCO2/kWh at 2035, compound decline from 467.5 at 2024. S1_STEEPER: pro-rata rate 0.0260/yr is below the observed trend 0.0431/yr; S2 floored at S1.",climatewatch_ndc_content
 AL,S1,r_power,-0.006470462,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0065/yr).",owid_ember_grid_intensity
 AO,S1,r_power,0.04774892,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+AO,S2,r_power,0.04774892,economy_prorata_s1_floor,2020,2035,"ao_third_ndc (reduction_from_base, economy, third_ndc): target level g(2020) x (1 - 0.11) = 152.5 gCO2/kWh at 2035, compound decline from 185.4 at 2024. S1_STEEPER: pro-rata rate 0.0176/yr is below the observed trend 0.0477/yr; S2 floored at S1.",climatewatch_ndc_content
 AR,S1,r_power,0.024037194,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 AU,S1,r_power,0.034560879,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+AU,S2,r_power,0.054178697,economy_prorata,2005,2035,"au_second_ndc (reduction_from_base, economy, second_ndc): target level g(2005) x (1 - 0.62) = 300.9 gCO2/kWh at 2035, compound decline from 525.2 at 2025.",climatewatch_ndc_content
 BD,S1,r_power,-0.003191412,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0032/yr).",owid_ember_grid_intensity
 BE,S1,r_power,0.034336137,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+BE,S2,r_power,0.099126017,economy_prorata,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 31.3 gCO2/kWh at 2040, compound decline from 149.8 at 2025.",ec_2040_com_2024_63
 BG,S1,r_power,0.054974316,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+BG,S2,r_power,0.100918485,economy_prorata,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 55.9 gCO2/kWh at 2040, compound decline from 275.6 at 2025.",ec_2040_com_2024_63
 BH,S1,r_power,0.000309906,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
 BJ,S1,r_power,0.01107255,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
 BN,S1,r_power,0.001373211,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
 BR,S1,r_power,0.055172008,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+BR,S2,r_power,0.094946817,economy_prorata,2005,2035,"br_second_ndc (reduction_from_base, economy, second_ndc): target level g(2005) x (1 - 0.59) = 40.5 gCO2/kWh at 2035, compound decline from 110.0 at 2025.",climatewatch_ndc_content
 CA,S1,r_power,-0.002021114,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0020/yr).",owid_ember_grid_intensity
+CA,S2,r_power,0.042327918,economy_prorata,2005,2035,"ca_second_ndc (reduction_from_base, economy, second_ndc): target level g(2005) x (1 - 0.45) = 123.8 gCO2/kWh at 2035, compound decline from 190.7 at 2025.",climatewatch_ndc_content
 CL,S1,r_power,0.064576842,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 CN,S1,r_power,0.021128822,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 DK,S1,r_power,0.101463696,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+DK,S2,r_power,0.101463696,economy_prorata_s1_floor,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 89.0 gCO2/kWh at 2040, compound decline from 114.4 at 2025. S1_STEEPER: pro-rata rate 0.0166/yr is below the observed trend 0.1015/yr; S2 floored at S1.",ec_2040_com_2024_63
 DZ,S1,r_power,0.000558325,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
 EG,S1,r_power,0.005285855,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 ES,S1,r_power,0.080030901,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+ES,S2,r_power,0.08035421,economy_prorata,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 43.7 gCO2/kWh at 2040, compound decline from 153.6 at 2025.",ec_2040_com_2024_63
 FI,S1,r_power,0.118473099,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+FI,S2,r_power,0.118473099,economy_prorata_s1_floor,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 28.2 gCO2/kWh at 2040, compound decline from 57.5 at 2025. S1_STEEPER: pro-rata rate 0.0464/yr is below the observed trend 0.1185/yr; S2 floored at S1.",ec_2040_com_2024_63
 FR,S1,r_power,0.040743793,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+FR,S2,r_power,0.087897272,economy_prorata,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 10.4 gCO2/kWh at 2040, compound decline from 41.4 at 2025.",ec_2040_com_2024_63
 GB,S1,r_power,0.051013575,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+GB,S2,r_power,0.051013575,economy_prorata_s1_floor,1990,2035,"gb_second_ndc (reduction_from_base, economy, second_ndc): target level g(1990) x (1 - 0.81) = 134.0 gCO2/kWh at 2035, compound decline from 217.4 at 2025. S1_STEEPER: pro-rata rate 0.0473/yr is below the observed trend 0.0510/yr; S2 floored at S1.",climatewatch_ndc_content
 GH,S1,r_power,-0.022870468,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0229/yr).",owid_ember_grid_intensity
 GR,S1,r_power,0.07108319,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+GR,S2,r_power,0.081227361,economy_prorata,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 88.4 gCO2/kWh at 2040, compound decline from 315.1 at 2025.",ec_2040_com_2024_63
 GU,S1,r_power,0.006745768,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+GU,S2,r_power,0.075368261,economy_prorata,2005,2035,"gu_us_second_ndc (reduction_from_base, economy, 2024-12-19): target level g(2005) x (1 - 0.61) = 256.6 gCO2/kWh at 2035, compound decline from 607.5 at 2024.",climatewatch_ndc_content
 ID,S1,r_power,0.002448529,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
 IN,S1,r_power,0.009456693,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 IT,S1,r_power,0.031772918,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+IT,S2,r_power,0.102300868,economy_prorata,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 56.4 gCO2/kWh at 2040, compound decline from 284.8 at 2025.",ec_2040_com_2024_63
 JM,S1,r_power,0.005973192,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
+JM,S2,r_power,0.010844805,economy_prorata,2012,2035,"jm_third_ndc (reduction_from_base, economy, third_ndc): target level g(2012) x (1 - 0.169) = 499.4 gCO2/kWh at 2035, compound decline from 563.0 at 2024.",climatewatch_ndc_content
 JO,S1,r_power,0.02755185,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
 JP,S1,r_power,0.018722933,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+JP,S2,r_power,0.069923208,economy_prorata,2013,2040,"jp_second_ndc (reduction_from_base, economy, second_ndc): target level g(2013) x (1 - 0.73) = 160.9 gCO2/kWh at 2040, compound decline from 477.3 at 2025.",climatewatch_ndc_content
 KR,S1,r_power,0.021621629,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+KR,S2,r_power,0.052256606,economy_prorata,2018,2035,"kr_second_ndc (reduction_from_base, economy, second_ndc): target level g(2018) x (1 - 0.53) = 243.8 gCO2/kWh at 2035, compound decline from 417.1 at 2025.",climatewatch_ndc_content
 LA,S1,r_power,0.004049407,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
 MA,S1,r_power,0.005381104,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 ME,S1,r_power,0.038463242,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+ME,S2,r_power,0.056481498,economy_prorata,1990,2035,"me_third_ndc (reduction_from_base, economy, third_ndc): target level g(2005) standing in for g(1990) x (1 - 0.6) = 147.7 gCO2/kWh at 2035, compound decline from 264.2 at 2025.",climatewatch_ndc_content
 MG,S1,r_power,-0.027653675,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0277/yr).",owid_ember_grid_intensity
 MK,S1,r_power,0.02820018,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+MK,S2,r_power,0.02820018,economy_prorata_s1_floor,1990,2030,"mk_revised_first_ndc (reduction_from_base, economy, revised_first_ndc): target level g(1990) x (1 - 0.51) = 453.4 gCO2/kWh at 2030, compound decline from 441.4 at 2025. PATHWAY_ALREADY_MET: target level 453.4 gCO2/kWh is at or above the latest observation 441.4; S2 floored at the S1 trend.",climatewatch_ndc_content
 MM,S1,r_power,-0.030616042,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0306/yr).",owid_ember_grid_intensity
 MN,S1,r_power,0.007271161,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 MX,S1,r_power,0.014247304,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 MY,S1,r_power,0.009089356,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 MZ,S1,r_power,-0.027573156,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0276/yr).",owid_ember_grid_intensity
 NG,S1,r_power,0.00830373,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+NG,S2,r_power,0.025434582,economy_prorata,2018,2035,"ng_third_ndc (reduction_from_base, economy, third_ndc): target level g(2018) x (1 - 0.322) = 352.2 gCO2/kWh at 2035, compound decline from 455.7 at 2025.",climatewatch_ndc_content
 NL,S1,r_power,0.083141878,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+NL,S2,r_power,0.092807944,economy_prorata,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 58.8 gCO2/kWh at 2040, compound decline from 253.6 at 2025.",ec_2040_com_2024_63
 NO,S1,r_power,0.016907409,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+NO,S2,r_power,0.121754173,economy_prorata,1990,2035,"no_second_ndc (reduction_from_base, economy, second_ndc): target level g(1990) x (1 - 0.7) = 7.7 gCO2/kWh at 2035, compound decline from 28.1 at 2025.",climatewatch_ndc_content
 NP,S1,r_power,-0.001566724,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0016/yr).",owid_ember_grid_intensity
 NZ,S1,r_power,0.036118534,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+NZ,S2,r_power,0.036118534,economy_prorata_s1_floor,2005,2035,"nz_second_ndc (reduction_from_base, economy, second_ndc): target level g(2005) x (1 - 0.51) = 124.6 gCO2/kWh at 2035, compound decline from 92.8 at 2025. PATHWAY_ALREADY_MET: target level 124.6 gCO2/kWh is at or above the latest observation 92.8; S2 floored at the S1 trend.",climatewatch_ndc_content
 OM,S1,r_power,0.005573776,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+OM,S2,r_power,0.007541209,economy_prorata,2024,2035,"om_third_ndc (reduction_from_base, economy, third_ndc): target level g(2024) x (1 - 0.07) = 504.8 gCO2/kWh at 2035, compound decline from 544.5 at 2025.",climatewatch_ndc_content
 PH,S1,r_power,-0.010825295,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0108/yr).",owid_ember_grid_intensity
 PK,S1,r_power,0.025373882,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 PL,S1,r_power,0.034114369,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+PL,S2,r_power,0.113443981,economy_prorata,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 96.7 gCO2/kWh at 2040, compound decline from 588.6 at 2025.",ec_2040_com_2024_63
 PR,S1,r_power,0.004232677,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+PR,S2,r_power,0.085824592,economy_prorata,2005,2035,"pr_us_second_ndc (reduction_from_base, economy, 2024-12-19): target level g(2005) x (1 - 0.61) = 266.9 gCO2/kWh at 2035, compound decline from 654.7 at 2025.",climatewatch_ndc_content
 PT,S1,r_power,0.125126915,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+PT,S2,r_power,0.125126915,economy_prorata_s1_floor,1990,2040,"eu_2040_economy (reduction_from_base, economy, 2024-02-06): target level g(1990) x (1 - 0.9) = 54.0 gCO2/kWh at 2040, compound decline from 127.9 at 2025. S1_STEEPER: pro-rata rate 0.0559/yr is below the observed trend 0.1251/yr; S2 floored at S1.",ec_2040_com_2024_63
 QA,S1,r_power,0.004035042,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 RS,S1,r_power,0.011056937,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+RS,S2,r_power,0.038119877,economy_prorata,1990,2035,"rs_third_ndc (reduction_from_base, economy, third_ndc): target level g(1990) x (1 - 0.401) = 471.7 gCO2/kWh at 2035, compound decline from 695.8 at 2025.",climatewatch_ndc_content
 RU,S1,r_power,-0.000936367,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0009/yr).",owid_ember_grid_intensity
+RU,S2,r_power,0.095693068,economy_prorata,1990,2035,"ru_second_ndc (reduction_from_base, economy, second_ndc): target level g(2000) standing in for g(1990) x (1 - 0.65) = 164.5 gCO2/kWh at 2035, compound decline from 449.7 at 2025.",climatewatch_ndc_content
 SA,S1,r_power,0.000247973,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
 SN,S1,r_power,0.016204313,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
 SZ,S1,r_power,0.047786534,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021.",owid_ember_grid_intensity
 TH,S1,r_power,0.008507933,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+TH,S2,r_power,0.058708207,economy_prorata,2019,2035,"th_third_ndc (reduction_from_base, economy, third_ndc): target level g(2019) x (1 - 0.47) = 298.0 gCO2/kWh at 2035, compound decline from 545.7 at 2025.",climatewatch_ndc_content
 TL,S1,r_power,-0.002000588,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0020/yr).",owid_ember_grid_intensity
 TR,S1,r_power,0.010535743,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 TT,S1,r_power,-8.3507e-05,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0001/yr).",owid_ember_grid_intensity
 TW,S1,r_power,0.00513619,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+TW,S2,r_power,0.041977522,economy_prorata,2005,2035,"tw_2035_national (reduction_from_base, economy, 2025-01-23): target level g(2005) x (1 - 0.38) = 412.4 gCO2/kWh at 2035, compound decline from 633.2 at 2025.",tw_cca_ndc_2035
 TZ,S1,r_power,-0.003045359,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0030/yr).",owid_ember_grid_intensity
 UA,S1,r_power,0.060790455,observed_trend,2015,2022,"Log-linear trend of observed grid intensity, 2015-2022 excluding 2020-2021.",owid_ember_grid_intensity
+UA,S2,r_power,0.060790455,economy_prorata_s1_floor,1990,2035,"ua_second_ndc (reduction_from_base, economy, second_ndc): target level g(1990) x (1 - 0.65) = 201.5 gCO2/kWh at 2035, compound decline from 250.5 at 2022. S1_STEEPER: pro-rata rate 0.0166/yr is below the observed trend 0.0608/yr; S2 floored at S1.",climatewatch_ndc_content
 US,S1,r_power,0.027782182,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
+US,S2,r_power,0.047730554,economy_prorata,2005,2035,"us_second_ndc (reduction_from_base, economy, second_ndc): target level g(2005) x (1 - 0.61) = 235.7 gCO2/kWh at 2035, compound decline from 384.4 at 2025.",climatewatch_ndc_content
 UZ,S1,r_power,0.007448171,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 VN,S1,r_power,0.004237369,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 ZA,S1,r_power,0.011969983,observed_trend,2015,2025,"Log-linear trend of observed grid intensity, 2015-2025 excluding 2020-2021.",owid_ember_grid_intensity
 ZM,S1,r_power,-0.070900217,observed_trend,2015,2024,"Log-linear trend of observed grid intensity, 2015-2024 excluding 2020-2021. OBSERVED_INCREASE: series rising (-0.0709/yr).",owid_ember_grid_intensity
+ZM,S2,r_power,0.266362239,economy_prorata,2010,2030,"zm_third_ndc (reduction_from_base, economy, third_ndc): target level g(2010) x (1 - 0.25) = 18.7 gCO2/kWh at 2030, compound decline from 119.7 at 2024.",climatewatch_ndc_content
