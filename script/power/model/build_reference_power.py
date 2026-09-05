@@ -37,12 +37,12 @@ FIELDS = ["country", "scenario", "calendar_year", "grid_gco2_per_kwh", "basis", 
 
 
 def lifetime_for(unit: dict[str, str], defaults: list[dict[str, str]]) -> int | None:
-    """Default lifetime of a unit: first technology_defaults row whose patterns match."""
+    """Longest default lifetime of a unit (the sensitivity's high variant), for the horizon."""
     for d in defaults:
         if d["fuel_type"] != unit["fuel_type"]:
             continue
         if re.search(d["technology_pattern"], unit.get("technology", "") or "", re.IGNORECASE):
-            return int(d["lifetime_years"])
+            return int(d.get("lifetime_high_years") or d["lifetime_years"])
     return None
 
 

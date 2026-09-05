@@ -1,8 +1,8 @@
 role,phase,share_basis,definition
 developer,development,none,Originated or developed the project before financial close; often becomes an equity owner and then carries a second row
 equity_owner,operation,equity_share,Holds equity in the project company over the operating life; share is the fraction of equity held (0 to 1)
-epc_contractor,construction,contract_share,Engineering-procurement-construction or turnkey contractor; share is the fraction of the EPC contract carried within a consortium, 1 when sole
-equipment_supplier,construction,scope_share,Supplied main equipment (boiler, steam turbine, gas turbine, generator, nuclear island); share is the fraction of capacity supplied or blank when not stated
+epc_contractor,construction,contract_share,"Engineering-procurement-construction or turnkey contractor; share is the fraction of the EPC contract carried within a consortium, 1 when sole"
+equipment_supplier,construction,scope_share,"Supplied main equipment (boiler, steam turbine, gas turbine, generator, nuclear island); share is the fraction of capacity supplied or blank when not stated"
 om_contractor,operation,contract_share,Operation and maintenance contractor over the operating life; share as for epc_contractor
 lender,finance,debt_share,Provided project debt; share is the fraction of total project debt
 eca_cover,finance,cover_share,Export credit agency loan or insurance cover; share is the fraction of total project debt covered

@@ -33,6 +33,7 @@ from power_io import DATA, OUT, REPO, hand_file_required, num, read_csv, write_c
 ROLES = DATA / "roles" / "processed" / "project_roles.csv"
 GEM_OWNERSHIP = DATA / "roles" / "processed" / "gem_ownership.csv"
 COMPANIES = DATA / "companies" / "method" / "companies.csv"
+SCOPE = DATA / "registry" / "scope.csv"
 BY_UNIT = OUT / "ti_power_by_unit.csv"
 BY_ROLE = OUT / "ti_power_by_role.csv"
 COMPANY = OUT / "ti_power_company.csv"
@@ -186,6 +187,7 @@ def merge_registers(
     register: list[dict[str, str]],
     gem: list[dict[str, str]],
     companies: dict[str, dict[str, str]],
+    exclude_home: bool = True,
 ) -> tuple[list[dict[str, str]], int]:
     """Register rows plus uncovered tracker equity rows; domestic rows dropped and counted."""
     out: list[dict[str, str]] = []
@@ -197,13 +199,13 @@ def merge_registers(
         if r["role"] == "equity_owner" and r["gem_location_id"]
     }
     for r in register:
-        if r["company_country"] == r["country"] and r["country"]:
+        if exclude_home and r["company_country"] == r["country"] and r["country"]:
             domestic += 1
             continue
         out.append({**r, "origin": "register"})
     for g in gem:
         c = companies[g["company_id"]]
-        if c["country"] == g["country"]:
+        if exclude_home and c["country"] == g["country"]:
             domestic += 1
             continue
         if (g["company_id"], g["gem_unit_id"]) in covered or (
@@ -245,7 +247,13 @@ def main() -> None:
     if not BY_UNIT.exists():
         hand_file_required(BY_UNIT, "run script/power/model/build_ti_power.py")
     companies = {c["company_id"]: c for c in read_csv(COMPANIES)}
-    merged, domestic = merge_registers(read_csv(ROLES), read_csv(GEM_OWNERSHIP), companies)
+    scope = {r["setting"]: r["value"].strip() for r in read_csv(SCOPE)} if SCOPE.exists() else {}
+    merged, domestic = merge_registers(
+        read_csv(ROLES),
+        read_csv(GEM_OWNERSHIP),
+        companies,
+        exclude_home=scope.get("exclude_home_country", "yes") == "yes",
+    )
     rows = attribute(merged, read_csv(BY_UNIT))
     write_csv(BY_ROLE, ROLE_FIELDS, rows)
     totals = company_totals(rows)

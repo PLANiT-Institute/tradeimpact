@@ -213,6 +213,7 @@ tfoot td { font-weight: 600; border-top: 1.5px solid var(--ink); }
       <div class="fgroup"><span class="lbl">Company</span><span id="f-company"></span></div>
       <div class="fgroup"><span class="lbl">Market</span><span id="f-market"></span></div>
       <div class="fgroup"><span class="lbl">Sale year</span><span id="f-year"></span></div>
+      <div class="fgroup"><span class="lbl">Home markets</span><span id="f-home"></span></div>
       <button class="chip reset" id="f-reset">reset</button>
       <span class="showing" id="showing"></span>
     </div>
@@ -288,7 +289,7 @@ const TABS = [
 
 let SQL = null, DB = null, GEO = null, CODES = null;
 const state = {tab: 'sales', sub: {}, scenario: 'S2', companies: new Set(), markets: new Set(),
-  year: 'all', cohort: null, scrub: null, pick: {}};
+  year: 'all', home: 'include', cohort: null, scrub: null, pick: {}};
 const ALL = {companies: [], markets: [], years: []};
 let FACTS = {};
 
@@ -332,8 +333,15 @@ function inList(col, values) {
   if (!arr.length) return ' AND 0';
   return ' AND ' + col + ' IN (' + arr.map(quoted).join(',') + ')';
 }
+/* Home markets: Hyundai and Kia in KR, Toyota and Nissan in JP (companies table). Excluding them
+   leaves the export impact. */
+function homeClause(prefix) {
+  if (state.home !== 'exclude' || !ALL.home) return '';
+  const pairs = Object.entries(ALL.home).map(([c, m]) => '(' + prefix + 'company = ' + quoted(c) + ' AND ' + prefix + 'market = ' + quoted(m) + ')');
+  return pairs.length ? ' AND NOT (' + pairs.join(' OR ') + ')' : '';
+}
 function whereFilters(withYear = true, prefix = '') {
-  let w = '';
+  let w = homeClause(prefix);
   if (state.companies.size) w += inList(prefix + 'company', state.companies);
   if (state.markets.size) w += inList(prefix + 'market', state.markets);
   if (withYear && state.year !== 'all') w += ' AND ' + prefix + 'cohort_year = ' + Number(state.year);
@@ -1535,13 +1543,15 @@ function renderFilters() {
   chips('f-company', ALL.companies.map((c) => [c, COMPANY_NAME[c] || c]), (v) => !state.companies.size || state.companies.has(v), (v) => { toggleSet(state.companies, v, ALL.companies); renderFilters(); renderPanel(); });
   chips('f-market', ALL.markets.map((m) => [m, m]), (v) => !state.markets.size || state.markets.has(v), (v) => { toggleSet(state.markets, v, ALL.markets); renderFilters(); renderPanel(); });
   chips('f-year', [['all', 'all'], ...ALL.years.map((y) => [String(y), String(y)])], (v) => state.year === v, (v) => { state.year = v; renderFilters(); renderPanel(); });
-  $('f-reset').onclick = () => { state.scenario = 'S2'; state.companies.clear(); state.markets.clear(); state.year = 'all'; renderFilters(); renderPanel(); };
+  chips('f-home', [['include', 'include'], ['exclude', 'exclude (export impact)']], (v) => state.home === v, (v) => { state.home = v; renderFilters(); renderPanel(); });
+  $('f-reset').onclick = () => { state.scenario = 'S2'; state.companies.clear(); state.markets.clear(); state.year = 'all'; state.home = 'include'; renderFilters(); renderPanel(); };
 }
 function writeHash() {
   const parts = ['sc=' + state.scenario];
   if (state.companies.size) parts.push('c=' + [...state.companies].join(','));
   if (state.markets.size) parts.push('m=' + [...state.markets].join(','));
   if (state.year !== 'all') parts.push('y=' + state.year);
+  if (state.home === 'exclude') parts.push('hm=exclude');
   history.replaceState(null, '', '#' + state.tab + '/' + (state.sub[state.tab] || '') + '?' + parts.join('&'));
 }
 function readHash() {
@@ -1557,6 +1567,7 @@ function readHash() {
     if (k === 'c') v.split(',').filter((x) => ALL.companies.includes(x)).forEach((x) => state.companies.add(x));
     if (k === 'm') v.split(',').filter((x) => ALL.markets.includes(x)).forEach((x) => state.markets.add(x));
     if (k === 'y' && ALL.years.map(String).includes(v)) state.year = v;
+    if (k === 'hm' && v === 'exclude') state.home = 'exclude';
   }
 }
 
@@ -1576,6 +1587,7 @@ function openBytes(buffer, name) {
     ALL.companies = COMPANY_ORDER.filter((c) => Q('SELECT 1 FROM ti_company WHERE company = ? LIMIT 1', [c]).length);
     ALL.markets = MARKET_ORDER.filter((m) => Q('SELECT 1 FROM ti_company WHERE market = ? LIMIT 1', [m]).length);
     ALL.years = Q('SELECT DISTINCT cohort_year y FROM ti_company ORDER BY y').map((r) => r.y);
+    ALL.home = Object.fromEntries(Q("SELECT company, country FROM companies WHERE in_scope = 'yes'").map((r) => [r.company, r.country]));
     loadCodes();
     readHash();
     FACTS = computeFacts();

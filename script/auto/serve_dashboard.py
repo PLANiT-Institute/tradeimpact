@@ -25,8 +25,10 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
+#: Sector directory under data/ -> the page the server announces.
+SECTOR_PAGES = {"auto": "database/dashboard.html", "power": "report/ti_power_report.html"}
 ROOT = REPO / "data" / "auto"
-PAGE = "database/dashboard.html"
+PAGE = SECTOR_PAGES["auto"]
 HOST = "127.0.0.1"
 PORT = 8765
 #: Origins allowed to read this server: a page opened from disk, and the server itself.
@@ -83,6 +85,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--open", action="store_true", help="open the dashboard in the default browser once serving"
     )
+    parser.add_argument(
+        "--root",
+        choices=sorted(SECTOR_PAGES),
+        default="auto",
+        help="sector directory under data/ to serve (default auto)",
+    )
     return parser.parse_args(argv)
 
 
@@ -112,27 +120,29 @@ def bind(handler: object, port: int) -> ThreadingHTTPServer:
     raise SystemExit(f"no free port between {port} and {port + 9}")
 
 
-def serve(port: int = PORT, open_browser: bool = False) -> None:
-    """Serve ``data/auto`` on the loopback interface until interrupted.
+def serve(port: int = PORT, open_browser: bool = False, sector: str = "auto") -> None:
+    """Serve ``data/<sector>`` on the loopback interface until interrupted.
 
     Args:
         port: TCP port to bind.
         open_browser: Open the dashboard URL in the default browser once the server is bound.
+        sector: Directory under ``data/`` to serve; decides the page announced.
 
     Raises:
         SystemExit: If the directory or the dashboard page is missing.
     """
-    if not ROOT.is_dir():
-        raise SystemExit(f"directory not found: {ROOT}")
-    if not (ROOT / PAGE).exists():
-        raise SystemExit(f"{PAGE} not found: run script/auto/model/build_dashboard.py first")
-    handler = functools.partial(NoStoreHandler, directory=str(ROOT))
+    root, page = REPO / "data" / sector, SECTOR_PAGES[sector]
+    if not root.is_dir():
+        raise SystemExit(f"directory not found: {root}")
+    if not (root / page).exists():
+        raise SystemExit(f"{page} not found: run the sector pipeline first")
+    handler = functools.partial(NoStoreHandler, directory=str(root))
     with bind(handler, port) as httpd:
         port = httpd.server_address[1]
-        print(f"serving {ROOT.relative_to(REPO)} at http://{HOST}:{port}/{PAGE}", flush=True)
+        print(f"serving {root.relative_to(REPO)} at http://{HOST}:{port}/{page}", flush=True)
         print("Ctrl-C to stop", flush=True)
         if open_browser:
-            threading.Timer(0.5, webbrowser.open, [f"http://{HOST}:{port}/{PAGE}"]).start()
+            threading.Timer(0.5, webbrowser.open, [f"http://{HOST}:{port}/{page}"]).start()
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
@@ -142,7 +152,7 @@ def serve(port: int = PORT, open_browser: bool = False) -> None:
 def main() -> None:
     """Parse the command line and serve."""
     args = parse_args()
-    serve(args.port, args.open)
+    serve(args.port, args.open, args.root)
 
 
 if __name__ == "__main__":

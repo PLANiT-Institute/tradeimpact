@@ -38,6 +38,8 @@ ANNUAL = OUT_DIR / "ti_annual.csv"
 ANNUAL_CELLS = OUT_DIR / "ti_annual_by_model.csv"
 EXCLUSIONS = OUT_DIR / "ti_exclusions.csv"
 OUT_COUNTRY = OUT_DIR / "ti_country.csv"
+SCOPE = OUT_DIR.parent / "registry" / "scope.csv"
+COMPANIES = OUT_DIR.parent / "sales" / "method" / "companies.csv"
 OUT_POWERTRAIN = OUT_DIR / "ti_powertrain.csv"
 OUT_COMPANY = OUT_DIR / "ti_company.csv"
 OUT_ANNUAL_COUNTRY = OUT_DIR / "ti_annual_country.csv"
@@ -95,8 +97,26 @@ COMPANY_FIELDS = [
     "ti_per_vehicle_kgco2e",
     "direction",
     "decomposition_identity_holds",
+    "home_market",
     "exclusion_reason",
 ]
+
+
+def read_scope() -> dict[str, str]:
+    """The sector's scope settings (registry/scope.csv): which markets, and whether home counts."""
+    return {r["setting"]: r["value"].strip() for r in read_csv(SCOPE)}
+
+
+def out_of_scope(company: str, market: str, home: dict[str, str], scope: dict[str, str]) -> str:
+    """Why a cohort is excluded by the scope settings, or '' when it is in scope."""
+    markets = scope.get("markets", "all")
+    if markets != "all" and market not in [m.strip() for m in markets.split(";")]:
+        return f"outside scope: market {market} not in registry/scope.csv markets ({markets})"
+    if scope.get("exclude_home_market", "no") == "yes" and home.get(company) == market:
+        return (
+            "home market: excluded by registry/scope.csv (exclude_home_market = yes, export impact)"
+        )
+    return ""
 
 
 def direction(value: float) -> str:
@@ -225,6 +245,8 @@ def main() -> None:
         annual_total[key] += float(r["ti_tco2e"])
         annual_flow[(*key, int(r["calendar_year"]))] = float(r["ti_tco2e"])
     exclusions = read_csv(EXCLUSIONS)
+    scope = read_scope()
+    home = {r["company"]: r["country"] for r in read_csv(COMPANIES)}
 
     by_country = group(cells, "destination")
     by_powertrain = group(cells, "powertrain")
@@ -305,25 +327,27 @@ def main() -> None:
                 and abs(col_sum - total) <= IDENTITY_TOL * scale
                 and abs(annual_total[(*grain, scenario)] - total) <= ANNUAL_TOL * scale
             )
+            reason = out_of_scope(company, market, home, scope)
             company_rows.append(
                 {
                     "company": company,
                     "market": market,
                     "scenario": scenario,
                     "cohort_year": cohort_year,
-                    "status": REPORTED,
+                    "status": EXCLUDED if reason else REPORTED,
                     "covered_units": covered,
                     "withheld_units": held,
                     "covered_share": round(covered / (covered + held), 6)
                     if covered + held
                     else None,
-                    "ti_tco2e": round(total, 4),
-                    "ti_per_vehicle_kgco2e": round(total * 1000.0 / covered, 4)
-                    if covered
-                    else None,
-                    "direction": direction(total),
+                    "ti_tco2e": None if reason else round(total, 4),
+                    "ti_per_vehicle_kgco2e": None
+                    if reason or not covered
+                    else round(total * 1000.0 / covered, 4),
+                    "direction": None if reason else direction(total),
                     "decomposition_identity_holds": holds,
-                    "exclusion_reason": "",
+                    "home_market": "yes" if home.get(company) == market else "no",
+                    "exclusion_reason": reason,
                 }
             )
             if not holds:
@@ -348,6 +372,7 @@ def main() -> None:
                     "ti_per_vehicle_kgco2e": None,
                     "direction": None,
                     "decomposition_identity_holds": None,
+                    "home_market": "yes" if home.get(company) == market else "no",
                     "exclusion_reason": e["reason"],
                 }
             )
@@ -367,7 +392,7 @@ def main() -> None:
             f"{published['scenario']}"
         )
         if published["status"] == EXCLUDED:
-            print(f"{label}: excluded (no benchmark)")
+            print(f"{label}: excluded ({published['exclusion_reason']})")
             continue
         print(
             f"{label}: {float(str(published['ti_tco2e'])):>14,.0f} tCO2e  "

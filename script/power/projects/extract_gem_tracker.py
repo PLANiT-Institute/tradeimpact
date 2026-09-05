@@ -39,6 +39,7 @@ OVERRIDES = DATASET / "method" / "country_name_overrides.csv"
 CODES = DATA / "geography" / "processed" / "country_codes.csv"
 COMPANIES = DATA / "companies" / "method" / "companies.csv"
 ROLES = DATA / "roles" / "raw" / "project_roles.csv"
+SCOPE = DATA / "registry" / "scope.csv"
 OUT = DATASET / "processed" / "projects_gem.csv"
 SOURCE_ID = "gem_global_integrated_power_tracker"
 BTU_TO_MJ = 1.055056e-3
@@ -213,14 +214,24 @@ def read_sheet_rows(ws, spec: list[dict[str, str]]) -> list[dict[str, object]]: 
     return out
 
 
+def read_scope() -> dict[str, str]:
+    """The sector's scope settings (registry/scope.csv): which destinations, whether home counts."""
+    return {r["setting"]: r["value"].strip() for r in read_csv(SCOPE)} if SCOPE.exists() else {}
+
+
 def extract(
     workbooks: list[Path],
     spec: list[dict[str, str]],
     companies: list[dict[str, str]],
     role_ids: set[str],
     names: dict[str, str],
+    scope: dict[str, str] | None = None,
 ) -> tuple[list[dict[str, object]], set[str], int]:
     """Kept unit rows, the country names that could not be mapped, the domestic units dropped."""
+    scope = scope or {}
+    exclude_home = scope.get("exclude_home_country", "yes") == "yes"
+    wanted = scope.get("destinations", "all")
+    destinations = None if wanted == "all" else {d.strip() for d in wanted.split(";")}
     matchers = company_matcher(companies)
     home = {c["company_id"]: c["country"] for c in companies}
     kept: list[dict[str, object]] = []
@@ -246,10 +257,13 @@ def extract(
                 if alpha2 is None:
                     unmapped.add(name)
                     continue
-                matched = [cid for cid in matched_any if home.get(cid) != alpha2]
-                if not matched and not named:
+                if destinations is not None and alpha2 not in destinations:
+                    continue
+                foreign = [cid for cid in matched_any if home.get(cid) != alpha2]
+                if exclude_home and not foreign and not named:
                     domestic += 1
                     continue
+                matched = foreign if exclude_home else matched_any
                 seen.add(uid)
                 heat = r.get("heat_rate_btu_per_kwh")
                 gem_type = str(r.get("gem_type", "")).strip().lower()
@@ -314,7 +328,8 @@ def main() -> None:
     spec = read_csv(COLUMNS)
     companies = read_csv(COMPANIES)
     names = alpha2_lookup(read_csv(CODES), read_csv(OVERRIDES))
-    kept, unmapped, domestic = extract(workbooks, spec, companies, role_ids_on_file(), names)
+    scope = read_scope()
+    kept, unmapped, domestic = extract(workbooks, spec, companies, role_ids_on_file(), names, scope)
     if unmapped:
         raise SystemExit(
             "tracker country names with no alpha-2; add them to "
@@ -354,7 +369,8 @@ def main() -> None:
         by_country[str(r["country"])] = by_country.get(str(r["country"]), 0) + 1
     print(
         f"{OUT.relative_to(REPO)}: {len(kept)} overseas units in {len(by_country)} countries from "
-        f"{len(workbooks)} workbook(s); {domestic} domestic units left out; by country "
+        f"{len(workbooks)} workbook(s); {domestic} domestic units left out (scope "
+        f"exclude_home_country = {scope.get('exclude_home_country', 'yes')}); by country "
         f"{dict(sorted(by_country.items(), key=lambda kv: -kv[1]))}"
     )
 

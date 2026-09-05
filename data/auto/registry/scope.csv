@@ -1,0 +1,3 @@
+setting,value,note
+markets,all,"Destination markets whose cohorts are computed: 'all' or a semicolon list of market codes (EU27;US;JP;KR). A cohort outside the list is published as an excluded row, never dropped silently."
+exclude_home_market,no,"'yes' publishes a company's home-market cohorts (Hyundai and Kia in KR, Toyota and Nissan in JP) as excluded rows, so what remains is the export impact; 'no' keeps them (a domestic sale is still a sale into that market's fleet). The analysis report has the same switch as a filter."

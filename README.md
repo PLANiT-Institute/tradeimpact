@@ -220,9 +220,15 @@ Monitor tracker; attribution is per **role** (developer, equity owner, EPC contr
 supplier, O&M, lender, ECA cover) with the **phase** and **share** as data columns, never pooled
 across roles; the emission factor is the destination's own where on file and the IPCC 2006
 default otherwise; the benchmark is the destination grid under S1 (observed trend) and S2
-(committed target). Results are published per unit with coordinates and per company × role.
-Status and the list of hand-gathered inputs the pipeline waits on are in
-`data/power/output/method.md`.
+(the destination's NDC target machine-read from Climate Watch's structured NDC content, hand rows
+on top). Results are published per unit with coordinates and per company × role, with a
+sensitivity table, in `data/power/database/tradeimpact_power.sqlite`, and read by the interactive
+report `data/power/report/ti_power_report.html` (eight story tabs including the unit × company
+world map; serve with `.venv/bin/python script/auto/serve_dashboard.py --root power --port 8766`).
+`data/power/registry/scope.csv` decides which destinations are extracted and whether a company's
+home country counts (default no: the export impact); `data/auto/registry/scope.csv` is the same
+switch for the automotive sector, and both reports carry it as a filter. Status and the hand
+inputs still pending are in `data/power/output/method.md`.
 
 ## Naming convention
 

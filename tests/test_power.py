@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import csv
 import importlib.util
+import re
 import sys
 from pathlib import Path
 from types import ModuleType
@@ -41,6 +42,7 @@ roles = load("roles/extract_roles.py")
 agg = load("model/aggregate_roles.py")
 factors = load("emission_factors/extract_emission_factors.py")
 own = load("roles/extract_gem_ownership.py")
+anchors = load("targets/extract_ndc_anchors.py")
 
 
 def read(path: Path) -> list[dict[str, str]]:
@@ -109,6 +111,38 @@ def test_s2_target_level_reads_each_anchor_type() -> None:
     intensity = {"base_year": "", "target_type": "intensity_target", "target_value": "100"}
     assert rates.target_level(intensity, series)[0] == pytest.approx(100.0)
     assert rates.target_level({"base_year": "2010", "target_type": "bau_reduction"}, series) is None
+
+
+def test_ndc_sentences_are_read_the_way_the_rule_says() -> None:
+    """Unconditional figure, lower bound of a range, base year, furthest stated target year."""
+
+    def read(text: str, years: list[int]) -> dict | None:
+        return anchors.parse_base_year_target(anchors.clean(text), years)
+
+    us = read("The United States commits to reducing its emissions by 61-66 percent below 2005 "
+              "levels by 2035.", [2035])  # fmt: skip
+    assert us == {"reduction": 0.61, "reduction_upper": 0.66, "base_year": 2005,
+                  "target_year": 2035}  # fmt: skip
+    jp = read("Japan commits to reduce its emissions by 60% in FY 2035 and by 73% by FY 2040 "
+              "respectively, compared to FY 2013 levels.", [2035, 2040])  # fmt: skip
+    assert (jp["reduction"], jp["base_year"], jp["target_year"]) == (0.73, 2013, 2040)
+    om = read("Oman commits to an absolute reduction of 33% in national total GHG emissions by "
+              "2035 relative to a 2024 base year of 93.6 MtCO2e - 7% unconditional and 26% "
+              "conditional on international finance", [2035])  # fmt: skip
+    assert (om["reduction"], om["base_year"], om["target_year"]) == (0.07, 2024, 2035)
+    th = read("Thailand commits to reducing its net GHG emissions to 152 million tCO2eq in 2035 "
+              "compared to 2019 levels, which is equaivalent to a 47 percent reduction.",
+              [2035])  # fmt: skip
+    assert (th["reduction"], th["base_year"], th["target_year"]) == (0.47, 2019, 2035)
+    nz = read("New Zealand commits to reduce net greenhouse gas emissions to 51\u201355 per cent "
+              "below gross 2005 levels by 2035.", [2035])  # fmt: skip
+    assert (nz["reduction"], nz["reduction_upper"], nz["base_year"]) == (0.51, 0.55, 2005)
+    sa = read("Saudi Arabia commits to reduce emissions by 335 mtCO2e by 2040 relative to 2019 "
+              "levels.", [2040])  # fmt: skip
+    assert sa is None
+    assert anchors.classify("Baseline scenario target") == "bau_reduction"
+    assert anchors.classify("Base year target; Trajectory target") == "reduction_from_base"
+    assert anchors.classify("Intensity target") == "gdp_intensity"
 
 
 # ---------------------------------------------------------------- attribution
@@ -318,6 +352,59 @@ def test_ipcc_transcription_check_finds_numbers_as_the_pdf_renders_them() -> Non
         "gas.ef_high_kgco2_per_tj=58300"
     ]
     assert factors.number_pattern(98300).search("factor 198300 here") is None
+
+
+sens = load("model/build_sensitivity_power.py")
+REPORT = DATA / "report" / "ti_power_report.html"
+
+
+def test_sensitivity_varies_one_input_at_a_time_around_the_published_value() -> None:
+    """Each dimension's central row equals the published result; low and high bracket it."""
+    grid = {y: (500.0 * (1 - 0.03) ** (y - 2024), "pathway") for y in range(2024, 2100)}
+    unit = {
+        "gem_unit_id": "G1", "scenario": "S2", "capacity_mw": "600", "capacity_factor": "0.55",
+        "intensity_gco2_per_kwh": "873.231", "start_year": "2024", "end_year": "2063",
+        "analysis_year": "2026", "lifetime_source": "default", "cf_source": "default",
+        "heat_rate_mj_per_kwh": "9.2308", "ef_kgco2_per_tj": "94600",
+        "ef_basis": "ipcc_default",
+        "biogenic": "no", "fuel_type": "coal", "fuel_id": "bituminous",
+        "technology": "supercritical",
+    }  # fmt: skip
+    d = {"fuel_type": "coal", "technology_pattern": "super", "lifetime_years": "40",
+         "lifetime_low_years": "30", "lifetime_high_years": "50", "capacity_factor": "0.55",
+         "cf_low": "0.40", "cf_high": "0.75"}  # fmt: skip
+    bound = {"ef_low_kgco2_per_tj": "89500", "ef_high_kgco2_per_tj": "99700"}
+    rows = sens.variants_for(unit, d, bound, grid)
+    by = {(r["dimension"], r["variant"]): r for r in rows}
+    assert {k[0] for k in by} == {"lifetime", "capacity_factor", "emission_factor"}
+    central = {
+        by[(dim, "central")]["ti_lifetime_tco2"]
+        for dim in ("lifetime", "capacity_factor", "emission_factor")
+    }
+    assert len(central) == 1  # one published value, restated identically on every dimension
+    c = central.pop()
+    for dim in ("lifetime", "capacity_factor", "emission_factor"):
+        lo, hi = by[(dim, "low")]["ti_lifetime_tco2"], by[(dim, "high")]["ti_lifetime_tco2"]
+        assert min(lo, hi) < c < max(lo, hi), dim
+    assert by[("lifetime", "high")]["parameter"] == 50
+
+
+@pytest.mark.skipif(not REPORT.exists(), reason="report not built")
+def test_power_report_carries_no_data_of_its_own() -> None:
+    """No total, percentage or unit count is written into the page; it queries the database."""
+    html = REPORT.read_text(encoding="utf-8")
+    assert html.count("data-f=") >= 20 and "tradeimpact_power.sqlite" in html
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
+    text = re.sub(r"<[^>]+>", " ", text)
+    assert not re.search(r"[+\u2212-]\d+\.\d+ ?Mt", text), "a lifetime total is baked in"
+    assert not re.search(r"\d+(\.\d+)? ?%", text), "a percentage is baked in"
+    scripts = re.findall(
+        r"<script src=\"([^\"]+)\"[^>]*integrity=\"(sha(?:384|512)-[^\"]+)\"", html
+    )
+    assert len(scripts) == 3 and all(
+        s.startswith("https://cdnjs.cloudflare.com/ajax/libs/") for s, _ in scripts
+    )
+    assert "map_geometry" in html
 
 
 # ---------------------------------------------------------------- published tables (when built)

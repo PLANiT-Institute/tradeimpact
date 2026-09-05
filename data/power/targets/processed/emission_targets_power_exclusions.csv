@@ -1,72 +1,37 @@
 country,scenario,reason
-AE,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-AL,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-AO,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-AR,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-AU,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-BD,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-BE,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-BG,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-BH,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-BJ,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-BN,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-BR,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-CA,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-CL,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-CN,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-DK,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-DZ,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-EG,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-ES,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-FI,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-FR,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-GB,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-GH,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-GR,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-GU,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-ID,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-IN,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-IT,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-JM,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-JO,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-JP,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-KR,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-LA,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-MA,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-ME,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-MG,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-MK,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-MM,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-MN,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-MX,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-MY,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-MZ,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-NG,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-NL,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-NO,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-NP,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-NZ,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-OM,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-PH,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-PK,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-PL,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-PR,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-PT,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-QA,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-RS,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-RU,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-SA,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-SN,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-SZ,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-TH,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-TL,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-TR,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-TT,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-TW,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-TZ,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-UA,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-US,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-UZ,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-VN,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-ZA,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
-ZM,S2,no committed anchor on file (hand file targets/raw/ndc_anchors_power.csv)
+AL,S2,bau_reduction (not_usable) in revised_first_ndc: Albania commits to reducing its emissions by 20.9% by 2030 compared to BAU.
+AR,S2,fixed_level (needs_review) in second_ndc: Argentina commits to an economy wide unconditional cap net emissions of 349 MtCO2e in 2030.
+BD,S2,bau_reduction (not_usable) in third_ndc: Bangladesh commits to cumulative emissions reductions of 26.74 MtCO₂eq CO2eq (6.39%) below BAU in 2035 (unconditional) and 58.23 MtCO₂eq (13
+BH,S2,none (no_ndc_target_on_file) in third_ndc: Not Applicable
+BJ,S2,"bau_reduction (not_usable) in third_ndc: Benin commits to a 32.5% reduction in cumulative emissions (excluding forestry) over the 2026-2035 period, and 33.7% including forestry."
+BN,S2,bau_reduction (not_usable) in third_ndc: Brunei commits to reducing its emissions by 20% relative to the BAU scenario by 2035.
+CL,S2,"fixed_level (needs_review) in second_ndc: Chile commits to an emissions budget that will not exceed 1,100 MtCO2eq between 2020 and 2030, with a peak by 2025, and not to exceed a GHG "
+CN,S2,trajectory (needs_review) in third_ndc: China commits to reducing emissions by at least 7%-10% from peak levels by 2035.
+DZ,S2,"bau_reduction (not_usable) in third_ndc: Algeria commits to reducing emissions in 2035 by 14% compared to BaU (unconditional). In the conditional scenario, the reduction will be 31%"
+EG,S2,"bau_reduction (not_usable) in revised_first_ndc: Egypt commits to reducing its electricity emissions by 37%, its oil and gas emissions by 65%, and its transport emissions by 7% by 2030 rela"
+GH,S2,"bau_reduction (not_usable) in revised_first_ndc: Ghana commits to implementing 34 mitigation measures (9 unconditional, 25 conditional) to achieve an absolute reduction in emissions of 64 M"
+ID,S2,"fixed_level (needs_review) in second_ndc: ""Under the LCCP scenarios, Indonesia is expected to achieve its peak emissions by 2030, with estimated emission levels of 1,345,707 Gg CO2e "
+IN,S2,"gdp_intensity (not_usable) in second_ndc: India commits to reduce its emissions intensity of GDP by 47 % by 2035, compared to 2005 levels. It also commits to achieve roughly 60 % cum"
+JO,S2,bau_reduction (not_usable) in third_ndc: Jordan commits to reduce its GHG emissions by 5% unconditionally and 31% cnoditionally from BAU by 2035
+LA,S2,bau_reduction (not_usable) in revised_first_ndc: Lao PDR commits to reduce emissions by 60% (unconditional) by 2030.
+MA,S2,bau_reduction (not_usable) in third_ndc: Morocco commits to reducing its emissions by 21.6% by 2035 compared to BAU (unconditional). Morocco also commits to reducing its emissions b
+MG,S2,"bau_reduction (not_usable) in second_ndc: Madagascar commits to reducing its emissions by 48.4 MtCO2e by 2030, a 28% decrease from BAU. It also commits to strengthen GHG sinks by aro"
+MM,S2,bau_reduction (not_usable) in revised_first_ndc: Myanmar commits to reduce its emissions by 244.52 million tCO2e (unconditional) and by 414.75 million tCO2e (conditional) by 2030 compared t
+MN,S2,"bau_reduction (not_usable) in third_ndc: Mongolia commits to reducing its emissions by 30.3% by 2035 compared to BAU (unconditional), and by 52.8% by 2035 compared to BAU (condition"
+MX,S2,"fixed_level (needs_review) in third_ndc: Mexico commits to absolute emissions in the range of 404 to 364 Mt CO2e in 2035. Conditionally, Mexico can increase its target to a range of"
+MY,S2,fixed_level (needs_review) in third_ndc: Malaysia commits to an absolute reduction of 15-30 million tonnes of CO₂ equivalent (MtCO₂eq) by 2035 from the peak level.
+MZ,S2,bau_reduction (not_usable) in third_ndc: Mozambique's target is under development but an emissions reduction target of between 15% and 25% of baseline is envisaged.
+NP,S2,"bau_reduction (not_usable) in third_ndc: Nepal commits to reduce its net emissions by 17.1% in 2030 and by 26.8% in 2035 compared to BAU, 96% of which is conditional for 2030 and 97"
+PH,S2,"other (needs_review) in first_ndc: 75% reduction in GHG emissions compared to the BAU scenario of 2020-2030, of which 2.71% is unconditional and 72.29% is conditional"
+PK,S2,bau_reduction (not_usable) in third_ndc: Pakistan aims to reduce of its 2035 projected GHG emissions by 50 % (17% unconditional and 33% conditional)
+QA,S2,reduction_from_base (needs_review) in third_ndc: Qatar commits to reducing its emissions by 42 MMtCO2e by 2040 compared to 2019 levels.
+SA,S2,reduction_from_base (needs_review) in second_ndc: Saudi Arabia commits to reduce emissions by 335 mtCO2e by 2040 relative to 2019 levels.
+SN,S2,"bau_reduction (not_usable) in first_ndc: 5% (unconditional) to 23.7% (conditional) reduction in 2025, and 7% (unconditional) to 29.5% (conditional) reduction in 2030 in GHG emission"
+SZ,S2,"bau_reduction (not_usable) in third_ndc: Eswatini commits to reduce emissions (GHG) by 2.24 MtCO₂eq in 2035 (31% unconditional, 69% conditional) compared to BAU."
+TL,S2,none (no_ndc_target_on_file) in third_ndc: Not Applicable
+TR,S2,"bau_reduction (not_usable) in second_ndc: Türkiye commits to reduce its GHG emissions by 466 Mt CO₂ eq. compared to BAU, limiting GHG emissions to 643 Mt CO₂ eq. in 2035."
+TT,S2,"bau_reduction (not_usable) in second_ndc: Trinidad and Tobago commits to a 15% reduction compared to BAU by 2035, contingent on international support."
+TZ,S2,"bau_reduction (not_usable) in revised_first_ndc: ""30-35% reduction on national BAU emissions by 2030"""
+UZ,S2,gdp_intensity (not_usable) in third_ndc: Uzbekistan commits to reducing its emissions intensity by 50 % by 2035 compared to 2010 levels.
+VN,S2,bau_reduction (not_usable) in revised_first_ndc: Vietnam commits to reducing its emissions by 15.8% (unconditional) and by 43.5% (conditional) by 2030 compared to BAU.
+ZA,S2,fixed_level (needs_review) in second_ndc: South Africa commits to a target range of 320-380 Mt CO2-eq in 2035.

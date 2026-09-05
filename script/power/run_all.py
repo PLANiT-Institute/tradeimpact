@@ -29,6 +29,8 @@ FETCH = [
     "geography/fetch_country_codes.py",
     "grid/fetch_owid_grid.py",
     "emission_factors/fetch_ipcc_defaults.py",
+    "targets/fetch_climatewatch_ndc.py",
+    "geography/fetch_map_geometry.py",
 ]
 STEPS = [
     "geography/extract_country_codes.py",
@@ -37,10 +39,14 @@ STEPS = [
     "projects/extract_gem_tracker.py",
     "roles/extract_gem_ownership.py",
     "roles/extract_roles.py",
+    "targets/extract_ndc_anchors.py",
     "targets/derive_power_rates.py",
     "model/build_reference_power.py",
     "model/build_ti_power.py",
     "model/aggregate_roles.py",
+    "model/build_sensitivity_power.py",
+    "model/build_database.py",
+    "report/build_report.py",
 ]
 CHECKS = [
     ("ruff check script tests", [PY, "-m", "ruff", "check", "script", "tests"]),

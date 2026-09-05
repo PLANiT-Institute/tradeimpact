@@ -3,7 +3,8 @@
 Inputs
     grid/processed/grid_intensity.csv           observed gCO2/kWh by country and year
     projects/processed/projects_gem.csv         the destinations that need a pathway
-    targets/raw/ndc_anchors_power.csv           HAND-GATHERED committed targets (see method.md)
+    targets/processed/ndc_anchors_power.csv     committed targets read from Climate Watch's NDC
+                                                content, hand rows on top (extract_ndc_anchors.py)
 Outputs
     targets/processed/emission_targets_power.csv
     targets/processed/emission_targets_power_exclusions.csv
@@ -33,7 +34,7 @@ from power_io import DATA, REPO, hand_file_required, num, read_csv, write_csv  #
 
 GRID = DATA / "grid" / "processed" / "grid_intensity.csv"
 PROJECTS = DATA / "projects" / "processed" / "projects_gem.csv"
-ANCHORS = DATA / "targets" / "raw" / "ndc_anchors_power.csv"
+ANCHORS = DATA / "targets" / "processed" / "ndc_anchors_power.csv"
 OUT = DATA / "targets" / "processed" / "emission_targets_power.csv"
 EXCLUDED = DATA / "targets" / "processed" / "emission_targets_power_exclusions.csv"
 TREND_START = 2015
@@ -100,11 +101,13 @@ def main() -> None:
     """Write the rate table and the exclusion list."""
     if not PROJECTS.exists():
         hand_file_required(PROJECTS, "run script/power/projects/extract_gem_tracker.py")
+    if not ANCHORS.exists():
+        hand_file_required(ANCHORS, "run script/power/targets/extract_ndc_anchors.py")
     grid: dict[str, dict[int, float]] = {}
     for r in read_csv(GRID):
         grid.setdefault(r["country"], {})[int(r["year"])] = float(r["value"])
     destinations = sorted({r["country"] for r in read_csv(PROJECTS)})
-    anchors = {a["country"]: a for a in (read_csv(ANCHORS) if ANCHORS.exists() else [])}
+    anchors = {a["country"]: a for a in read_csv(ANCHORS)}
     out: list[dict[str, object]] = []
     excluded: list[dict[str, object]] = []
     for c in destinations:
@@ -138,18 +141,20 @@ def main() -> None:
                 {
                     "country": c,
                     "scenario": "S2",
-                    "reason": "no committed anchor on file (hand file "
-                    "targets/raw/ndc_anchors_power.csv)",
+                    "reason": "no NDC target on file for this destination",
                 }
             )
             continue
-        if anchor["target_type"] not in USABLE_TYPES:
+        status = anchor.get("parse_status", "")
+        if anchor["target_type"] not in USABLE_TYPES or status not in ("parsed", "hand"):
             excluded.append(
                 {
                     "country": c,
                     "scenario": "S2",
-                    "reason": f"anchor {anchor['anchor_id']} is {anchor['target_type']}: no "
-                    "absolute level to read a pathway from",
+                    "reason": (
+                        f"{anchor['target_type']} ({status}) in {anchor.get('document', '')}: "
+                        f"{anchor.get('target_text', '')[:140]}"
+                    ),
                 }
             )
             continue
@@ -202,7 +207,7 @@ def main() -> None:
                 "target_year": anchor["target_year"],
                 "derivation": (
                     f"{anchor['anchor_id']} ({anchor['target_type']}, {anchor['scope']}, "
-                    f"communicated {anchor['communicated']}): target level {how} = "
+                    f"{anchor.get('document') or anchor['communicated']}): target level {how} = "
                     f"{g_target:.1f} gCO2/kWh at {anchor['target_year']}, compound decline from "
                     f"{g_latest:.1f} at {y1}." + note
                 ),
