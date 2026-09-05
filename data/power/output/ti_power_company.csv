@@ -1,0 +1,36 @@
+company_id,company_name,company_country,role,phase,scenario,units,units_with_share,units_from_register,units_from_gem,capacity_mw,ti_lifetime_full_tco2,ti_lifetime_weighted_tco2,ti_remaining_full_tco2,ti_remaining_weighted_tco2,direction_full
+chugoku,Chugoku Electric Power,JP,equity_owner,operation,S1,3,3,0,3,2121.0,52965190.007,7972335.638,41397541.817,6232715.888,liability
+daewoo_ec,Daewoo Engineering & Construction,KR,equity_owner,operation,S1,1,0,0,1,150.0,-8070824.291,0,-5748978.407,0,contribution
+dl_enc,DL E&C,KR,equity_owner,operation,S1,9,6,0,9,2638.0,34929674.024,13408599.625,22252756.805,9500643.278,liability
+ewp,Korea East-West Power,KR,equity_owner,operation,S1,1,0,0,1,132.0,-2840156.397,0,-2840156.397,0,contribution
+hanwha_energy,Hanwha Energy,KR,equity_owner,operation,S1,13,8,0,13,3627.3,-50379372.66,-8395218.144,-48195104.736,-7488091.442,contribution
+hyundai_ec,Hyundai Engineering & Construction,KR,equity_owner,operation,S1,2,2,0,2,750.0,28107645.556,2726441.619,28107645.556,2726441.619,liability
+hyundai_engineering,Hyundai Engineering,KR,equity_owner,operation,S1,8,2,0,8,1751.1,4792248.192,7026911.389,4792248.192,7026911.389,liability
+ihi,IHI Corporation,JP,equity_owner,operation,S1,5,2,0,5,157.4,-1851558.766,2346942.652,0.0,0.0,contribution
+itochu,ITOCHU Corporation,JP,equity_owner,operation,S1,38,34,0,38,9331.5,95338096.072,17607997.0,99318469.198,26478154.5,liability
+jera,JERA,JP,equity_owner,operation,S1,21,19,0,21,13150.0,-339296103.048,-129582205.467,-256555584.49,-105920611.06,contribution
+jgc,JGC Holdings,JP,equity_owner,operation,S1,5,4,0,5,1323.0,5107649.953,517187.68,3307098.491,365381.386,liability
+jpower,Electric Power Development Co. (J-POWER),JP,equity_owner,operation,S1,81,80,0,81,30138.9,1207631703.762,9648944.242,966061659.225,29595483.038,liability
+kansai,Kansai Electric Power,JP,equity_owner,operation,S1,9,7,0,9,4769.0,59212486.69,26038011.623,48430509.991,20418909.523,liability
+kepco,Korea Electric Power Corporation,KR,equity_owner,operation,S1,90,83,0,90,37713.6,1193831006.934,213733461.927,899150503.464,167911469.192,liability
+khnp,Korea Hydro & Nuclear Power,KR,equity_owner,operation,S1,1,1,0,1,630.0,-1945815.745,-1945815.745,0.0,0.0,contribution
+koen,Korea South-East Power,KR,equity_owner,operation,S1,5,5,0,5,711.0,-18470822.046,-17547611.057,-18072210.162,-17348305.115,contribution
+komipo,Korea Midland Power,KR,equity_owner,operation,S1,5,2,0,5,1358.2,-40745965.704,-7902833.837,-38673770.36,-7486290.934,contribution
+kospo,Korea Southern Power,KR,equity_owner,operation,S1,6,6,0,6,4416.0,40544314.038,14549504.528,41507445.025,15019031.328,liability
+kowepo,Korea Western Power,KR,equity_owner,operation,S1,2,2,0,2,1910.0,-36414416.842,-8319033.985,-33470455.627,-7583043.681,contribution
+kyushu,Kyushu Electric Power,JP,equity_owner,operation,S1,14,14,0,14,7615.9,-181061377.908,-41180282.886,-123377382.88,-31024957.327,contribution
+lotte_ec,Lotte Engineering & Construction,KR,equity_owner,operation,S1,1,1,0,1,496.0,-18460279.325,-1107616.759,-18460279.325,-1107616.759,contribution
+marubeni,Marubeni Corporation,JP,equity_owner,operation,S1,63,59,0,63,28390.9,38534537.952,22470864.713,70539876.807,26538912.397,liability
+mhi,Mitsubishi Heavy Industries,JP,equity_owner,operation,S1,3,3,0,3,1595.0,-5920959.504,-1233022.44,3075276.059,73175.229,contribution
+mitsubishi_corp,Mitsubishi Corporation,JP,equity_owner,operation,S1,56,49,0,56,15766.8,10203302.154,-2480049.957,42496717.949,18628963.976,liability
+mitsui,Mitsui & Co.,JP,equity_owner,operation,S1,89,82,0,89,33958.7,-180795170.473,-44105447.901,-88526933.258,-39688571.429,contribution
+osaka_gas,Osaka Gas,JP,equity_owner,operation,S1,16,16,0,16,7629.0,8886232.716,5511486.029,49916095.585,13770016.052,liability
+posco_international,POSCO International,KR,equity_owner,operation,S1,6,6,0,6,1839.7,144838934.405,50419660.496,107327400.478,37229730.782,liability
+samsung_ct,Samsung C&T Engineering & Construction,KR,equity_owner,operation,S1,18,11,0,18,7066.0,-204727148.269,-25676978.55,-126540105.299,-15375532.637,contribution
+shikoku,Shikoku Electric Power,JP,equity_owner,operation,S1,8,8,0,8,4653.0,-61093088.612,-805857.799,-15582589.062,2415370.7,contribution
+sk_ecoplant,SK ecoplant,KR,equity_owner,operation,S1,1,1,0,1,410.0,-20723012.345,-4973522.963,-17779051.13,-4266972.271,contribution
+sojitz,Sojitz Corporation,JP,equity_owner,operation,S1,12,12,0,12,8107.0,-195944544.071,-45735947.683,-178478924.049,-41809459.58,contribution
+sumitomo_corp,Sumitomo Corporation,JP,equity_owner,operation,S1,38,38,0,38,19325.9,-30970809.934,131782022.037,22183108.953,93999023.658,contribution
+tohoku,Tohoku Electric Power,JP,equity_owner,operation,S1,3,3,0,3,1411.0,100225568.14,10022556.815,91836147.732,9183614.773,liability
+tokyo_gas,Tokyo Gas,JP,equity_owner,operation,S1,9,4,0,9,9231.6,-188034074.94,-7605386.301,-180227471.395,-6430703.43,contribution
+toyota_tsusho,Toyota Tsusho Corporation,JP,equity_owner,operation,S1,34,23,0,34,4559.8,-50948024.304,-26760704.881,-19304637.916,-10331699.607,contribution

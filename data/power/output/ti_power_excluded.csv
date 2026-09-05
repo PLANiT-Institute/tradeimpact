@@ -1,0 +1,147 @@
+gem_unit_id,plant_name,country,fuel_type,status,reason
+G100001051535,Zarraf Solar PV farm,AE,solar,pre-construction,no start year or capacity in the tracker
+G100000923767,Karaburun Eurus wind farm,AL,wind,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000100964,Bluewaters power station,AU,coal,cancelled,status cancelled: never built
+G100000100965,Bluewaters power station,AU,coal,cancelled,status cancelled: never built
+G100001050905,Bridgeman solar farm,AU,solar,announced,no start year or capacity in the tracker
+G100000806459,Cape York Solar,AU,solar,cancelled,status cancelled: never built
+G100000806293,Kingfisher Solar Storage,AU,solar,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100001023266,Kumbarilla renewable energy park solar farm,AU,solar,cancelled,status cancelled: never built
+G100000806460,Nowingi Solar,AU,solar,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000806461,Riverland solar farm,AU,solar,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100001050976,Roy Hill Iron Ore Mine solar farm,AU,solar,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000833175,Barapkuria solar farm,BD,solar,pre-construction,no start year or capacity in the tracker
+G100000106579,Maheshkhali power station (KEPCO),BD,coal,cancelled,status cancelled: never built
+G100000113487,Maheshkhali power station (KEPCO),BD,coal,cancelled,status cancelled: never built
+G100000400851,Matarbari LNG power station,BD,gas,cancelled,status cancelled: never built
+G100000400843,Matarbari Summit power station,BD,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000400844,Matarbari Summit power station,BD,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000400845,Matarbari Summit power station,BD,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000400846,Matarbari Summit power station,BD,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000113489,Pekua power station,BD,coal,cancelled,status cancelled: never built
+G100000113490,Pekua power station,BD,coal,cancelled,status cancelled: never built
+G100000115101,Pekua power station,BD,coal,cancelled,status cancelled: never built
+G100000115102,Pekua power station,BD,coal,cancelled,status cancelled: never built
+G100000409989,Manage Seneffe power station,BE,gas,cancelled,status cancelled: never built
+G100000919639,Sliven wind farm,BG,wind,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100001021618,Pobè solar farm,BJ,solar,construction,no start year or capacity in the tracker
+G100000406790,Litos power station,BR,gas,shelved - inferred 2 y,status shelved - inferred 2 y: never built
+G100000406791,Litos power station,BR,gas,shelved - inferred 2 y,status shelved - inferred 2 y: never built
+G100000406792,Litos power station,BR,gas,shelved - inferred 2 y,status shelved - inferred 2 y: never built
+G100000406793,Litos power station,BR,gas,shelved - inferred 2 y,status shelved - inferred 2 y: never built
+G100000837841,Teno solar farm,CL,solar,operating,no start year or capacity in the tracker
+G100000837859,Yungay solar farm,CL,solar,construction,no start year or capacity in the tracker
+G100000111116,Heshun power station,CN,coal,cancelled,status cancelled: never built
+G100000111117,Heshun power station,CN,coal,cancelled,status cancelled: never built
+G100000104401,Huaneng Jiaxiang power station,CN,coal,cancelled,status cancelled: never built
+G100000104402,Huaneng Jiaxiang power station,CN,coal,cancelled,status cancelled: never built
+G100000107673,Ordos Power Qipanjing power station,CN,coal,cancelled,status cancelled: never built
+G100000107674,Ordos Power Qipanjing power station,CN,coal,cancelled,status cancelled: never built
+G100000109053,Shanxi Ruiguang power station,CN,coal,cancelled,status cancelled: never built
+G100000109054,Shanxi Ruiguang power station,CN,coal,cancelled,status cancelled: never built
+G100000105223,Xinguang power station,CN,coal,cancelled,status cancelled: never built
+G100000105224,Xinguang power station,CN,coal,cancelled,status cancelled: never built
+G100001000272,Yangcheng power station,CN,coal,pre-construction,no start year or capacity in the tracker
+G100001000273,Yangcheng power station,CN,coal,pre-construction,no start year or capacity in the tracker
+G100000408070,Oumache power station,DZ,gas,construction,no start year or capacity in the tracker
+G100001006511,Acebuche solar farm,ES,solar,pre-construction,no start year or capacity in the tracker
+G100001005384,Almendro solar farm,ES,solar,pre-construction,no start year or capacity in the tracker
+G100001006515,Braza Corona solar farm,ES,solar,pre-construction,no start year or capacity in the tracker
+G100000920087,Lynch Knoll wind farm,GB,wind,cancelled,status cancelled: never built
+G100000926187,Ossian Offshore wind farm,GB,wind,pre-construction,no start year or capacity in the tracker
+G100000919408,Pentland wind farm,GB,wind,pre-construction,no start year or capacity in the tracker
+G100000915857,Upper Kinknockie wind farm,GB,wind,cancelled,status cancelled: never built
+G100000914769,Madara (Eurus Greece) wind farm,GR,wind,cancelled,status cancelled: never built
+G100000806432,Malojloj solar farm,GU,solar,pre-construction,no start year or capacity in the tracker
+G100000112733,Cirebon power station,ID,coal,cancelled,status cancelled: never built
+G100000104953,Jambi Tebo power station,ID,coal,cancelled,status cancelled: never built
+G100000104954,Jambi Tebo power station,ID,coal,cancelled,status cancelled: never built
+G100000602159,Muara Juloi hydroelectric plant,ID,hydro,announced,no start year or capacity in the tracker
+G100000604725,Peusangan 4 hydroelectric plant,ID,hydro,pre-construction,no start year or capacity in the tracker
+G100000700237,Rajabasa geothermal power plant,ID,geothermal,construction,no start year or capacity in the tracker
+G100000700238,Rajabasa geothermal power plant,ID,geothermal,construction,no start year or capacity in the tracker
+G100000412584,P.Nallur Combined Cycle power plant,IN,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000412585,P.Nallur Combined Cycle power plant,IN,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000412586,P.Nallur Combined Cycle power plant,IN,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000109576,Srikakulam Thermal Power Station (Sumitomo),IN,coal,cancelled,status cancelled: never built
+G100000110074,Tharangambadi power station (PPN Power),IN,coal,cancelled,status cancelled: never built
+G100000110075,Tharangambadi power station (PPN Power),IN,coal,cancelled,status cancelled: never built
+G100000411248,Hunts Bay power station,JM,gas,shelved,status shelved: never built
+G100000920925,Sancheong Duncheolsan wind farm,KR,wind,pre-construction,no start year or capacity in the tracker
+G100000811029,Sinan (KEPCO) Solar Power Plant,KR,solar,shelved - inferred 2 y,status shelved - inferred 2 y: never built
+G100000410167,Bar gas power station,ME,gas,announced,no start year or capacity in the tracker
+G100000919417,Stip wind farm,MK,wind,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000405940,Ahlone (Toyo Thai) power station,MM,gas,shelved,status shelved: never built
+G100000107408,Nga Yoke Kaung power station,MM,coal,cancelled,status cancelled: never built
+G100000405943,Thilawa (Sumitomo) power station,MM,gas,cancelled,status cancelled: never built
+G100000109989,Tavan Tolgoi power station (Marubeni),MN,coal,cancelled,status cancelled: never built
+G100000109990,Tavan Tolgoi power station (Marubeni),MN,coal,cancelled,status cancelled: never built
+G100000113091,Tavan Tolgoi power station (Marubeni),MN,coal,cancelled,status cancelled: never built
+G100000113092,Tavan Tolgoi power station (Marubeni),MN,coal,cancelled,status cancelled: never built
+G100000906982,Coromuel wind farm,MX,wind,operating,no start year or capacity in the tracker
+G100000808628,Trompezón solar farm,MX,solar,operating,no start year or capacity in the tracker
+G100000100020,ACWA Moatize power station,MZ,coal,cancelled,status cancelled: never built
+G100000100021,ACWA Moatize power station,MZ,coal,cancelled,status cancelled: never built
+G100000407170,Egbin power station,NG,gas,shelved - inferred 2 y,status shelved - inferred 2 y: never built
+G100000910908,Van Gogh Windpark,NL,wind,operating,no start year or capacity in the tracker
+G100001051109,South Taranaki Bight (Parkwind) offshore wind farm,NZ,wind,announced,no start year or capacity in the tracker
+G100001051112,Taranaki Bight offshore wind farm,NZ,wind,announced,no start year or capacity in the tracker
+G100000411259,Aboitiz Cebu LNG power station,PH,gas,cancelled,status cancelled: never built
+G100000105677,KEPCO Subic Bay power station,PH,coal,cancelled,status cancelled: never built
+G100000405948,Lloyds Energy power station,PH,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000107750,Panay power plant (Kepco),PH,coal,cancelled,status cancelled: never built
+G100000114104,Panay power plant (Kepco),PH,coal,cancelled,status cancelled: never built
+G100000113917,Sual KEPCO Power Station,PH,coal,cancelled,status cancelled: never built
+G100000114305,Sual KEPCO Power Station,PH,coal,cancelled,status cancelled: never built
+G100000603039,Athmuqam hydroelectric plant,PK,hydro,pre-construction,no start year or capacity in the tracker
+G100000603064,Lower Palas Valley hydroelectric plant,PK,hydro,pre-construction,no start year or capacity in the tracker
+G100000105675,Kepco Sendou power station,SN,coal,cancelled,status cancelled: never built
+G100000105676,Kepco Sendou power station,SN,coal,cancelled,status cancelled: never built
+G100000109777,KEPCO Eswatini power station,SZ,coal,cancelled,status cancelled: never built
+G100000409726,Songkhla Chana power station,TH,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100001023731,Sumitomo Rubber solar farm,TH,solar,shelved - inferred 2 y,status shelved - inferred 2 y: never built
+G100001023814,Manatuto solar farm,TL,solar,announced,no start year or capacity in the tracker
+G100000920990,Formosa 3 offshore wind farm,TW,wind,announced,no start year or capacity in the tracker
+G100000921034,Zhong Neng wind farm,TW,wind,announced,no start year or capacity in the tracker
+G100000900176,Miombo Hewani wind farm,TZ,wind,pre-construction,no start year or capacity in the tracker
+G100000900177,Miombo Hewani wind farm,TZ,wind,pre-construction,no start year or capacity in the tracker
+G100001054878,Posco International RDF power station,UA,bioenergy,pre-construction,no start year or capacity in the tracker
+G100000805205,Atlas solar farm,US,solar,announced,no start year or capacity in the tracker
+G100000805906,Birchwood Solar,US,solar,cancelled,status cancelled: never built
+G100000805598,Boulder Solar,US,solar,pre-construction,no start year or capacity in the tracker
+G100001064173,Bull Creek wind farm (United States),US,wind,announced,no start year or capacity in the tracker
+G100000410147,Canal power station,US,gas,operating,operating years 1968-1997 end before the first grid observation
+G100000805907,Charger Solar,US,solar,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000804756,Kupehau solar farm,US,solar,cancelled,status cancelled: never built
+G100000908966,Palehua wind farm,US,wind,cancelled,status cancelled: never built
+G100000403831,Perennial Wind Chaser Station,US,gas,cancelled,status cancelled: never built
+G100000403832,Perennial Wind Chaser Station,US,gas,cancelled,status cancelled: never built
+G100000403833,Perennial Wind Chaser Station,US,gas,cancelled,status cancelled: never built
+G100000403834,Perennial Wind Chaser Station,US,gas,cancelled,status cancelled: never built
+G100000805829,West End Solar,US,solar,pre-construction,no start year or capacity in the tracker
+G100000805857,Wheats Solar,US,solar,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100001018568,Navoi wind farm,UZ,wind,announced,no start year or capacity in the tracker
+G100000835504,Sazagan solar farm,UZ,solar,pre-construction,no start year or capacity in the tracker
+G100000835505,Sazagan solar farm,UZ,solar,pre-construction,no start year or capacity in the tracker
+G100000101180,Can Duoc power station (KEPCO and Vinakobalt),VN,coal,cancelled,status cancelled: never built
+G100000113083,Dung Quat Economic Zone power station,VN,coal,cancelled,status cancelled: never built
+G100000113084,Dung Quat Economic Zone power station,VN,coal,cancelled,status cancelled: never built
+G100000405996,Hai Lang power station,VN,gas,cancelled,status cancelled: never built
+G100000106391,Long An power station,VN,coal,cancelled,status cancelled: never built
+G100000106392,Long An power station,VN,coal,cancelled,status cancelled: never built
+G100000106393,Long An power station,VN,coal,cancelled,status cancelled: never built
+G100000106394,Long An power station,VN,coal,cancelled,status cancelled: never built
+G100000408645,Phu My 3.1 Thermal power station,VN,gas,cancelled,status cancelled: never built
+G100000113291,Quang Tri power station,VN,coal,cancelled,status cancelled: never built
+G100000113292,Quang Tri power station,VN,coal,cancelled,status cancelled: never built
+G100000109920,Tan Thanh power station,VN,coal,cancelled,status cancelled: never built
+G100000109921,Tan Thanh power station,VN,coal,cancelled,status cancelled: never built
+G100000109922,Tan Thanh power station,VN,coal,cancelled,status cancelled: never built
+G100000109923,Tan Thanh power station,VN,coal,cancelled,status cancelled: never built
+G100000110051,Than Bac Lieu power station,VN,coal,cancelled,status cancelled: never built
+G100000110052,Than Bac Lieu power station,VN,coal,cancelled,status cancelled: never built
+G100000406009,Van Phong Combined Cycle power station,VN,gas,cancelled,status cancelled: never built
+G100000406010,Van Phong Combined Cycle power station,VN,gas,cancelled,status cancelled: never built
+G100000407264,Richards Bay (Mhlathuze Energy) power station,ZA,gas,shelved,status shelved: never built
+G100000800262,Mongu solar farm,ZM,solar,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
+G100000800341,Sesheke solar farm,ZM,solar,shelved - inferred 2 y,status shelved - inferred 2 y: never built

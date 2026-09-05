@@ -14,7 +14,8 @@ Algorithm (whitepaper sign convention: positive = emissions added)
     generation      $$ G = P \\cdot 8760 \\cdot CF \\cdot 10^{3} $$   kWh/year
                     ASCII: G = P_MW * 8760 * CF * 1000
     unit intensity  $$ I = HR \\cdot EF \\cdot 10^{-3} $$   gCO2/kWh, HR in MJ/kWh, EF in kgCO2/TJ
-                    ASCII: I = HR * EF / 1000   (zero for nuclear, hydro, wind, solar, geothermal)
+                    ASCII: I = HR * EF / 1000   (zero for nuclear, hydro, wind, solar, geothermal;
+                    bioenergy's biogenic CO2 goes to its own column, not the fossil total)
     per year        $$ E_{prod}(y) = G\\,I,\\quad E_{ref}(y) = G\\,g_c^{s}(y),\\quad
                        TI(y) = E_{prod}(y) - E_{ref}(y) $$   tCO2 after /10^6
     lifetime        $$ TI = \\sum_{y=y_0}^{y_0+L-1} TI(y) $$
@@ -85,6 +86,8 @@ UNIT_FIELDS = [
     "ef_basis",
     "intensity_gco2_per_kwh",
     "biogenic",
+    "biogenic_intensity_gco2_per_kwh",
+    "biogenic_lifetime_tco2",
     "scenario",
     "years_counted",
     "years_dropped",
@@ -158,13 +161,19 @@ def factor_for(
     unit: dict[str, str], factors: list[dict[str, str]]
 ) -> tuple[dict[str, str] | None, str]:
     """(factor row, fuel_id): the destination's national row first, else the IPCC default."""
-    text = f"{unit.get('fuel_detail', '')} {unit['fuel_type']}".strip().lower()
+    detail = unit.get("fuel_detail", "") or ""
+    first = detail.split(",")[0].strip().lower()
     defaults = [f for f in factors if f["basis"] == "ipcc_default"]
     fuel_id = ""
-    for f in defaults:
-        pattern = f.get("gem_fuel_pattern") or ""
-        if pattern and re.search(pattern, text, re.IGNORECASE):
-            fuel_id = f["fuel_id"]
+    # The tracker lists fuels in order of importance: match the first, then the whole text,
+    # then the bare fuel type.
+    for text in (first, detail.lower(), unit["fuel_type"]):
+        for f in defaults:
+            pattern = f.get("gem_fuel_pattern") or ""
+            if text and pattern and re.search(pattern, text, re.IGNORECASE):
+                fuel_id = f["fuel_id"]
+                break
+        if fuel_id:
             break
     if not fuel_id:
         return None, ""
@@ -232,6 +241,7 @@ def main() -> None:
         zero = u["fuel_type"] in ZERO_STACK
         heat = num(u["heat_rate_mj_per_kwh"])
         heat_source, ef_row, fuel_id, biogenic = "", None, "", "no"
+        intensity_biogenic = 0.0
         if zero:
             intensity, heat, heat_source, ef_basis = 0.0, "", "not_applicable", "not_applicable"
         else:
@@ -251,6 +261,9 @@ def main() -> None:
             ef_basis = ef_row["basis"]
             biogenic = ef_row["biogenic"]
             intensity = intensity_gco2_per_kwh(heat, float(ef_row["ef_kgco2_per_tj"]))
+            if biogenic == "yes":
+                # Inventory practice: biogenic CO2 is reported, not added to the fossil total.
+                intensity_biogenic, intensity = intensity, 0.0
         retired = num(u["retired_year"])
         life = int(d["lifetime_years"])
         end_year = int(retired) if retired else int(start) + life - 1
@@ -265,12 +278,14 @@ def main() -> None:
         )
         layer2 = "A" if zero and cf_source == "gem" else layer2
         assessed = False
+        no_overlap = False
         for scenario in ("S1", "S2"):
             path = reference.get((u["country"], scenario))
             if path is None:
                 continue
             flow = unit_flow(generation, intensity, path, years)
             if not flow:
+                no_overlap = True
                 continue
             assessed = True
             for row in flow:
@@ -304,6 +319,10 @@ def main() -> None:
                     "ef_basis": ef_basis,
                     "intensity_gco2_per_kwh": round(intensity, 3),
                     "biogenic": biogenic,
+                    "biogenic_intensity_gco2_per_kwh": round(intensity_biogenic, 3),
+                    "biogenic_lifetime_tco2": round(
+                        generation * intensity_biogenic * len(flow) / 1e6, 3
+                    ),
                     "scenario": scenario,
                     "years_counted": len(flow),
                     "years_dropped": len(years) - len(flow),
@@ -326,7 +345,12 @@ def main() -> None:
                 }
             )
         if not assessed:
-            drop(u, f"no grid path for destination {u['country']} (see targets exclusions)")
+            drop(
+                u,
+                f"operating years {years[0]}-{years[-1]} end before the first grid observation"
+                if no_overlap
+                else f"no grid path for destination {u['country']} (see targets exclusions)",
+            )
     write_csv(ANNUAL, ANNUAL_FIELDS, annual)
     write_csv(BY_UNIT, UNIT_FIELDS, by_unit)
     write_csv(EXCLUDED, EXCLUDED_FIELDS, excluded)

@@ -40,6 +40,7 @@ gem = load("projects/extract_gem_tracker.py")
 roles = load("roles/extract_roles.py")
 agg = load("model/aggregate_roles.py")
 factors = load("emission_factors/extract_emission_factors.py")
+own = load("roles/extract_gem_ownership.py")
 
 
 def read(path: Path) -> list[dict[str, str]]:
@@ -195,106 +196,112 @@ def test_role_register_validation_names_the_failing_row() -> None:
 # ---------------------------------------------------------------- extractors
 
 
-def test_gem_extractor_maps_headers_and_keeps_only_in_scope_units(tmp_path: Path) -> None:
+def test_gem_extractor_maps_headers_and_keeps_only_overseas_in_scope_units(
+    tmp_path: Path,
+) -> None:
     wb = Workbook()
     ws = wb.active
-    ws.append(
-        [
-            "GEM unit/phase ID",
-            "GEM location ID",
-            "Country/area",
-            "Plant / Project name",
-            "Unit / Phase name",
-            "Type",
-            "Fuel",
-            "Technology",
-            "Capacity (MW)",
-            "Status",
-            "Start year",
-            "Retired year",
-            "Owner",
-            "Parent",
-            "Latitude",
-            "Longitude",
-            "Heat rate (Btu per kWh)",
-        ]
-    )
-    ws.append(
-        [
-            "U1",
-            "L1",
-            "Viet Nam",
-            "Nghi Son",
-            "Unit 1",
-            "coal",
-            "bituminous",
-            "supercritical",
-            600,
-            "operating",
-            2022,
-            None,
-            "Nghi Son 2 Power LLC",
-            "Marubeni Corp; KEPCO",
-            19.3,
-            105.7,
-            9000,
-        ]
-    )
-    ws.append(
-        [
-            "U2",
-            "L2",
-            "Viet Nam",
-            "Other",
-            "Unit 1",
-            "gas",
-            "LNG",
-            "combined cycle",
-            750,
-            "construction",
-            2027,
-            None,
-            "Someone Else",
-            "Nobody",
-            10.0,
-            106.0,
-            None,
-        ]
-    )
-    ws.append(
-        [
-            "U3",
-            "L3",
-            "Atlantis",
-            "Lost",
-            "1",
-            "coal",
-            "",
-            "",
-            100,
-            "operating",
-            2000,
-            None,
-            "Doosan",
-            "",
-            0,
-            0,
-            None,
-        ]
-    )
+    header = [
+        "Type", "Country/area", "Plant / Project name", "Unit / Phase name", "Capacity (MW)",
+        "Status", "Start year", "Retired year", "Technology", "Fuel (combustion only)",
+        "Operator(s)", "Owner(s)", "Parent(s)", "Latitude", "Longitude", "GEM location ID",
+        "GEM unit/phase ID", "GEM.Wiki URL",
+    ]  # fmt: skip
+    ws.append(header)
+    ws.append(["coal", "Viet Nam", "Nghi Son", "Unit 1", 600, "operating", 2022, None,
+               "supercritical", "coal: bituminous", "Nghi Son 2 Power",
+               "Nghi Son 2 Power LLC [100%]",
+               "Marubeni Corp [50.0%]; Korea Electric Power Corp [50.0%]",
+               19.3, 105.7, "L1", "U1", "https://www.gem.wiki/x"])  # fmt: skip
+    ws.append(["oil/gas", "Viet Nam", "Other", "1", 750, "construction", 2027, None,
+               "combined cycle", "fossil gas: LNG, fossil liquids: diesel", "",
+               "Someone Else [100%]",
+               "Nobody [100.0%]", 10.0, 106.0, "L2", "U2", ""])  # fmt: skip
+    ws.append(["coal", "South Korea", "Dangjin", "9", 1020, "operating", 2016, None,
+               "ultra-supercritical",
+               "coal: bituminous", "", "Korea East-West Power Co Ltd [100%]",
+               "Korea Electric Power Corp [100.0%]", 37.0, 126.6, "L3", "U3", ""])  # fmt: skip
+    ws.append(["coal", "Atlantis", "Lost", "1", 100, "operating", 2000, None, "", "", "",
+               "Doosan Enerbility [100%]", "", 0, 0, "L4", "U4", ""])  # fmt: skip
     path = tmp_path / "gem_test.xlsx"
     wb.save(path)
     spec = read(DATA / "projects" / "method" / "gem_columns.csv")
-    matchers = gem.company_matcher(read(DATA / "companies" / "method" / "companies.csv"))
-    names = {"viet nam": "VN"}
-    kept, unmapped = gem.extract([path], spec, matchers, {"L2"}, names)
+    companies = read(DATA / "companies" / "method" / "companies.csv")
+    names = {"viet nam": "VN", "south korea": "KR"}
+    kept, unmapped, domestic = gem.extract([path], spec, companies, {"L2"}, names)
     assert unmapped == {"Atlantis"}
+    assert domestic == 1  # KEPCO's Korean plant is not a trade
     assert [r["gem_unit_id"] for r in kept] == ["U1", "U2"]
-    u1 = kept[0]
-    assert u1["country"] == "VN"
+    u1, u2 = kept
+    assert u1["country"] == "VN" and u1["fuel_type"] == "coal"
     assert set(u1["matched_companies"].split(";")) == {"marubeni", "kepco"}
-    assert u1["heat_rate_mj_per_kwh"] == pytest.approx(9000 * 1.055056e-3, abs=1e-4)
-    assert kept[1]["matched_companies"] == ""  # kept because a role row names its location
+    assert u2["fuel_type"] == "gas"  # oil/gas split on the first listed fuel
+    assert u2["matched_companies"] == ""  # kept because a role row names its location
+
+
+def test_fuel_type_normalisation_follows_the_first_listed_fuel() -> None:
+    assert (
+        gem.fuel_type_of("oil/gas", "fossil liquids: heavy fuel oil, fossil gas: natural gas")
+        == "oil"
+    )
+    assert gem.fuel_type_of("oil/gas", "fossil gas: natural gas, fossil liquids: diesel") == "gas"
+    assert gem.fuel_type_of("oil/gas", "") == "gas"
+    assert gem.fuel_type_of("utility-scale solar", "") == "solar"
+    assert gem.fuel_type_of("hydropower", "") == "hydro"
+
+
+def test_tracker_owner_strings_yield_equity_rows_with_shares() -> None:
+    assert own.parse_entities("Marubeni Corp [50.0%]; Chubu Electric Power Co Inc [50.0%]") == [
+        ("Marubeni Corp", 0.5),
+        ("Chubu Electric Power Co Inc", 0.5),
+    ]
+    assert own.parse_entities("Elecseed; Korea Midland Power Co Ltd") == [
+        ("Elecseed", None),
+        ("Korea Midland Power Co Ltd", None),
+    ]
+    companies = read(DATA / "companies" / "method" / "companies.csv")
+    unit = {
+        "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "Nghi Son", "country": "VN",
+        "owner": "Nghi Son 2 Power LLC [100%]",
+        "parent": "Marubeni Corp [50.0%]; Korea Electric Power Corp [50.0%]",
+        "wiki_url": "https://www.gem.wiki/x",
+    }  # fmt: skip
+    rows = own.ownership_rows([unit], companies)
+    assert {(r["company_id"], r["share"], r["level"]) for r in rows} == {
+        ("marubeni", 0.5, "parent"),
+        ("kepco", 0.5, "parent"),
+    }
+    domestic = {**unit, "country": "JP"}
+    assert {r["company_id"] for r in own.ownership_rows([domestic], companies)} == {"kepco"}
+
+
+def test_merge_prefers_the_register_and_drops_domestic_rows() -> None:
+    companies = {c["company_id"]: c for c in read(DATA / "companies" / "method" / "companies.csv")}
+    register = [{
+        "company_id": "kepco", "company_name": "KEPCO", "company_country": "KR",
+        "company_type": "utility",
+        "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "P", "country": "VN",
+        "role": "equity_owner", "phase": "operation", "share": "0.4", "share_basis": "equity_share",
+        "from_year": "", "to_year": "", "source_url": "https://example.org", "source_note": "",
+        "accessed_date": "2026-09-05",
+    }]  # fmt: skip
+    gem_rows = [
+        {"company_id": "kepco", "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "P",
+         "country": "VN", "level": "parent", "entity": "Korea Electric Power Corp", "share": "0.5",
+         "source_url": "", "source_id": "gem"},
+        {"company_id": "marubeni", "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "P",
+         "country": "VN", "level": "parent", "entity": "Marubeni Corp", "share": "0.5",
+         "source_url": "", "source_id": "gem"},
+        {"company_id": "marubeni", "gem_unit_id": "U9", "gem_location_id": "L9", "plant_name": "Q",
+         "country": "JP", "level": "owner", "entity": "Marubeni Corp", "share": "1.0",
+         "source_url": "", "source_id": "gem"},
+    ]  # fmt: skip
+    merged, domestic = agg.merge_registers(register, gem_rows, companies)
+    assert domestic == 1
+    assert [(r["company_id"], r["origin"], r["share"]) for r in merged] == [
+        ("kepco", "register", "0.4"),
+        ("marubeni", "gem", "0.5"),
+    ]
 
 
 def test_ipcc_transcription_check_finds_numbers_as_the_pdf_renders_them() -> None:

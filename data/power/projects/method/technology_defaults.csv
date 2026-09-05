@@ -1,15 +1,18 @@
 fuel_type,technology_pattern,lifetime_years,capacity_factor,efficiency_lhv,source_url,verified,note
 coal,ultra-?super|USC,40,0.55,0.43,https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default; lifetime 40 years is the Global Energy Monitor convention for lifetime coal CO2 (https://www.gem.wiki/Estimating_carbon_dioxide_emissions_from_coal_plants); efficiency and capacity factor from the IEA-ETSAP E01 brief; to be verified against the PDF
-coal,super,40,0.55,0.39,https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default; see the ultra-supercritical row
-coal,sub|subcritical,40,0.55,0.35,https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default; see the ultra-supercritical row
+coal,^super|/super,40,0.55,0.39,https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default; see the ultra-supercritical row
+coal,^sub|subcritical,40,0.55,0.35,https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default; see the ultra-supercritical row
 coal,IGCC,40,0.55,0.42,https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default
 coal,CFB|fluidi[sz]ed,40,0.55,0.36,https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default
-coal,.*,40,0.55,0.37,https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED fallback where the tracker states no combustion technology
-gas,combined|CCGT|CC$|^CC,30,0.50,0.55,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default from the IEA-ETSAP E02 brief; to be verified
-gas,open|OCGT|simple|GT$|peaker|internal combustion|ICE,30,0.20,0.36,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default
-gas,steam,30,0.40,0.38,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default
-gas,.*,30,0.45,0.50,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED fallback where the tracker states no technology
-oil,.*,30,0.30,0.36,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default; oil steam or diesel engines
+coal,.*,40,0.55,0.37,https://iea-etsap.org/E-TechDS/PDF/E01-coal-fired-power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED fallback where the tracker says 'unknown' or no combustion technology
+gas,combined|CCGT|ICCC|ISCC|AFC,30,0.50,0.55,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default from the IEA-ETSAP E02 brief; ICCC/ISCC/AFC are the tracker's combined-cycle variants; to be verified
+gas,gas turbine|open|OCGT|simple|peaker,30,0.20,0.36,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default (open-cycle gas turbine)
+gas,internal combustion|engine,30,0.30,0.42,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default (reciprocating gas engines)
+gas,steam,30,0.40,0.38,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default (gas-fired steam turbine)
+gas,.*,30,0.45,0.50,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED fallback where the tracker says 'unknown'
+oil,combined|CCGT,30,0.40,0.50,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default (oil-fired combined cycle)
+oil,internal combustion|engine,30,0.30,0.40,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default (diesel engines)
+oil,.*,30,0.30,0.36,https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf,no,HAND-TRANSCRIBED default (oil steam or gas turbine)
 nuclear,.*,60,0.85,,https://www.iea.org/reports/nuclear-power-and-secure-energy-transitions,no,zero stack CO2; lifetime and capacity factor only shape generation; HAND-TRANSCRIBED
 hydro,.*,60,0.45,,https://www.irena.org/publications/2024/Sep/Renewable-Power-Generation-Costs-in-2023,no,zero stack CO2; HAND-TRANSCRIBED
 wind,.*,25,0.30,,https://www.irena.org/publications/2024/Sep/Renewable-Power-Generation-Costs-in-2023,no,zero stack CO2; HAND-TRANSCRIBED

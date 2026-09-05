@@ -68,8 +68,8 @@ year after the latest grid observation) forward — the part that is still a cho
 
 | file | what | link exists? | status |
 |---|---|---|---|
-| `projects/raw/gem_*.xlsx` | Global Integrated Power Tracker | landing page and licence yes; the file only through GEM's download form | **missing** — pipeline pauses here |
-| `roles/raw/project_roles.csv` | company × unit × role × phase × share, one source link per row | each row cites its page | header-only |
+| `projects/raw/gem_global_integrated_power_2026_08_v3.xlsx` | Global Integrated Power Tracker, August 2026 v3 | landing page and licence yes; the file only through GEM's download form | on disk 2026-09-05 (downloaded by the project lead) |
+| `roles/raw/project_roles.csv` | company × unit × role × phase × share, one source link per row | each row cites its page | header-only; equity rows meanwhile read from the tracker's owner shares (`roles/processed/gem_ownership.csv`, tier B) |
 | `emission_factors/raw/national_emission_factors.csv` | destination's own implied factor per fuel (UNFCCC CRT 1.A(a)) | each row cites its table | header-only; IPCC defaults apply meanwhile |
 | `targets/raw/ndc_anchors_power.csv` | committed target per destination | each row cites the NDC registry entry | header-only; S2 excluded per destination meanwhile |
 | `projects/method/technology_defaults.csv` | lifetime, capacity factor, efficiency by technology | each row cites its document; `verified = no` | authored, to verify |
@@ -84,10 +84,13 @@ are tabulated in [`script/power/README.md`](../../../script/power/README.md).
 
 ## Status (2026-09-05)
 
-Scaffolding and the automatic inputs are built: country codes, the grid series for every country,
-the IPCC defaults verified against the chapter, the company list, the method tables, the
-extractors, the rate derivation, the model and its tests on synthetic inputs. The pipeline
-pauses at `projects/extract_gem_tracker.py` until the tracker is downloaded. Not yet built:
-the sensitivity table (lifetime, capacity factor, IPCC factor bounds), the database and the
-dashboard/report readers for this sector, and the crosswalk of tracker owner strings to
-`companies.csv` patterns, which can only be checked against the file.
+The pipeline runs end to end on the August 2026 tracker (v3). 685 overseas units in 71 countries
+match a company in scope; 539 carry an S1 result (cancelled and shelved units, units with no
+start year or capacity, and units whose operating years end before the grid series begins are
+listed in `ti_power_excluded.csv`). 848 company × unit equity rows were read from the tracker's
+owner shares, 737 with a stated share. Under S1 every fossil unit is on technology defaults (the
+tracker publishes no unit heat rate or capacity factor) and IPCC default factors, so Layer 2 is
+tier C throughout until national factors are filed. S2 is excluded for every destination until
+`targets/raw/ndc_anchors_power.csv` is filled. Not yet built: the sensitivity table (lifetime,
+capacity factor, IPCC bounds), the database and the dashboard/report readers with the unit × company
+map, and the hand role register for construction, equipment, O&M and finance.

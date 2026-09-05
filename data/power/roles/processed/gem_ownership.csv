@@ -1,0 +1,849 @@
+company_id,gem_unit_id,gem_location_id,plant_name,country,level,entity,share,source_url,source_id
+kowepo,G100000811471,L100000809137,Al Ajban PV solar farm,AE,owner,Korea Western Power Co Ltd,0.2,https://www.gem.wiki/Al_Ajban_PV_solar_farm,gem_global_integrated_power_tracker
+marubeni,G100000405012,L100000405577,Fujairah F2 Integrated Water and power plant,AE,parent,Marubeni Corp,0.2,https://www.gem.wiki/Fujairah_F2_Integrated_Water_and_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000405013,L100000405577,Fujairah F2 Integrated Water and power plant,AE,parent,Marubeni Corp,0.2,https://www.gem.wiki/Fujairah_F2_Integrated_Water_and_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000405014,L100000405577,Fujairah F2 Integrated Water and power plant,AE,parent,Marubeni Corp,0.2,https://www.gem.wiki/Fujairah_F2_Integrated_Water_and_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000405015,L100000405578,Fujairah F3 Integrated Water and power plant,AE,parent,Marubeni Corp,0.4,https://www.gem.wiki/Fujairah_F3_Integrated_Water_and_power_plant,gem_global_integrated_power_tracker
+shikoku,G100000405045,L100000405579,Hamriyah IPP power station,AE,parent,Shikoku Electric Power Co Inc,0.25,https://www.gem.wiki/Hamriyah_IPP_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000405045,L100000405579,Hamriyah IPP power station,AE,parent,Sumitomo Corp,0.25,https://www.gem.wiki/Hamriyah_IPP_power_station,gem_global_integrated_power_tracker
+shikoku,G100000405046,L100000405579,Hamriyah IPP power station,AE,parent,Shikoku Electric Power Co Inc,0.25,https://www.gem.wiki/Hamriyah_IPP_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000405046,L100000405579,Hamriyah IPP power station,AE,parent,Sumitomo Corp,0.25,https://www.gem.wiki/Hamriyah_IPP_power_station,gem_global_integrated_power_tracker
+shikoku,G100000405047,L100000405579,Hamriyah IPP power station,AE,parent,Shikoku Electric Power Co Inc,0.25,https://www.gem.wiki/Hamriyah_IPP_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000405047,L100000405579,Hamriyah IPP power station,AE,parent,Sumitomo Corp,0.25,https://www.gem.wiki/Hamriyah_IPP_power_station,gem_global_integrated_power_tracker
+sojitz,G100000405038,L100000405588,Mirfa Independent Water and Power Project,AE,parent,Sojitz Corp,0.2,https://www.gem.wiki/Mirfa_Independent_Water_and_Power_Project,gem_global_integrated_power_tracker
+sojitz,G100000405039,L100000405588,Mirfa Independent Water and Power Project,AE,parent,Sojitz Corp,0.2,https://www.gem.wiki/Mirfa_Independent_Water_and_Power_Project,gem_global_integrated_power_tracker
+sojitz,G100000405040,L100000405588,Mirfa Independent Water and Power Project,AE,parent,Sojitz Corp,0.2,https://www.gem.wiki/Mirfa_Independent_Water_and_Power_Project,gem_global_integrated_power_tracker
+sojitz,G100000405041,L100000405588,Mirfa Independent Water and Power Project,AE,parent,Sojitz Corp,0.2,https://www.gem.wiki/Mirfa_Independent_Water_and_Power_Project,gem_global_integrated_power_tracker
+sojitz,G100000405042,L100000405588,Mirfa Independent Water and Power Project,AE,parent,Sojitz Corp,0.2,https://www.gem.wiki/Mirfa_Independent_Water_and_Power_Project,gem_global_integrated_power_tracker
+marubeni,G100000804694,L100000804102,Noor Abu Dhabi solar farm,AE,owner,Marubeni Corp,0.2,https://www.gem.wiki/Noor_Abu_Dhabi_solar_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100000405048,L100000405592,Shuweihat S1 power plant,AE,parent,Sumitomo Corp,0.2,https://www.gem.wiki/Shuweihat_S1_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000405049,L100000405593,Shuweihat S2 power plant,AE,parent,Marubeni Corp,0.1,https://www.gem.wiki/Shuweihat_S2_power_plant,gem_global_integrated_power_tracker
+osaka_gas,G100000405049,L100000405593,Shuweihat S2 power plant,AE,parent,Osaka Gas Co Ltd,0.1,https://www.gem.wiki/Shuweihat_S2_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000405050,L100000405593,Shuweihat S2 power plant,AE,parent,Marubeni Corp,0.1,https://www.gem.wiki/Shuweihat_S2_power_plant,gem_global_integrated_power_tracker
+osaka_gas,G100000405050,L100000405593,Shuweihat S2 power plant,AE,parent,Osaka Gas Co Ltd,0.1,https://www.gem.wiki/Shuweihat_S2_power_plant,gem_global_integrated_power_tracker
+sumitomo_corp,G100000405051,L100000405594,Shuweihat S3 power plant,AE,owner,Sumitomo Corp,0.45,https://www.gem.wiki/Shuweihat_S3_power_plant,gem_global_integrated_power_tracker
+kepco,G100000405051,L100000405594,Shuweihat S3 power plant,AE,owner,Korea Electric Power Corp,0.55,https://www.gem.wiki/Shuweihat_S3_power_plant,gem_global_integrated_power_tracker
+sumitomo_corp,G100000405052,L100000405594,Shuweihat S3 power plant,AE,owner,Sumitomo Corp,0.45,https://www.gem.wiki/Shuweihat_S3_power_plant,gem_global_integrated_power_tracker
+kepco,G100000405052,L100000405594,Shuweihat S3 power plant,AE,owner,Korea Electric Power Corp,0.55,https://www.gem.wiki/Shuweihat_S3_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000405055,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Marubeni Corp,0.14,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+kyushu,G100000405055,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Kyushu Electric Power Co Inc,0.06,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+marubeni,G100000405056,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Marubeni Corp,0.14,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+kyushu,G100000405056,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Kyushu Electric Power Co Inc,0.06,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+marubeni,G100000405057,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Marubeni Corp,0.14,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+kyushu,G100000405057,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Kyushu Electric Power Co Inc,0.06,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+marubeni,G100000405058,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Marubeni Corp,0.14,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+kyushu,G100000405058,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Kyushu Electric Power Co Inc,0.06,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+marubeni,G100000405059,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Marubeni Corp,0.14,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+kyushu,G100000405059,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Kyushu Electric Power Co Inc,0.06,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+marubeni,G100000405060,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Marubeni Corp,0.14,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+kyushu,G100000405060,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Kyushu Electric Power Co Inc,0.06,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+marubeni,G100000405061,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Marubeni Corp,0.14,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+kyushu,G100000405061,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Kyushu Electric Power Co Inc,0.06,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+marubeni,G100000405062,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Marubeni Corp,0.14,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+kyushu,G100000405062,L100000405597,Taweelah B Power and Desalination Station,AE,parent,Kyushu Electric Power Co Inc,0.06,https://www.gem.wiki/Taweelah_B_Power_and_Desalination_Station,gem_global_integrated_power_tracker
+jera,G100000410458,L100000405598,Umm Al Nar West and East Integrated Water and power plant,AE,owner,JERA Co Inc,0.2,https://www.gem.wiki/Umm_Al_Nar_West_and_East_Integrated_Water_and_power_plant,gem_global_integrated_power_tracker
+kowepo,G100001051535,L100001045734,Zarraf Solar PV farm,AE,owner,Korea Western Power Co Ltd,0.2,https://www.gem.wiki/Zarraf_Solar_PV_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000923767,L100000919284,Karaburun Eurus wind farm,AL,owner,Eurus Energy,1.0,https://www.gem.wiki/Karaburun_Eurus_wind_farm,gem_global_integrated_power_tracker
+hyundai_engineering,G100000407060,L100000406735,Lobito power station,AO,owner,Hyundai Engineering Co Ltd,0.25,https://www.gem.wiki/Lobito_power_station,gem_global_integrated_power_tracker
+kospo,G100000407060,L100000406735,Lobito power station,AO,owner,Korea Southern Power Co Ltd,0.25,https://www.gem.wiki/Lobito_power_station,gem_global_integrated_power_tracker
+kepco,G100000407060,L100000406735,Lobito power station,AO,parent,Korea Electric Power Corp,0.25,https://www.gem.wiki/Lobito_power_station,gem_global_integrated_power_tracker
+hyundai_ec,G100000407060,L100000406735,Lobito power station,AO,parent,Hyundai Engineering & Construction Co Ltd,0.09699999999999999,https://www.gem.wiki/Lobito_power_station,gem_global_integrated_power_tracker
+hyundai_engineering,G100000407061,L100000406735,Lobito power station,AO,owner,Hyundai Engineering Co Ltd,0.25,https://www.gem.wiki/Lobito_power_station,gem_global_integrated_power_tracker
+kospo,G100000407061,L100000406735,Lobito power station,AO,owner,Korea Southern Power Co Ltd,0.25,https://www.gem.wiki/Lobito_power_station,gem_global_integrated_power_tracker
+kepco,G100000407061,L100000406735,Lobito power station,AO,parent,Korea Electric Power Corp,0.25,https://www.gem.wiki/Lobito_power_station,gem_global_integrated_power_tracker
+hyundai_ec,G100000407061,L100000406735,Lobito power station,AO,parent,Hyundai Engineering & Construction Co Ltd,0.09699999999999999,https://www.gem.wiki/Lobito_power_station,gem_global_integrated_power_tracker
+mitsui,G100000907500,L100000905494,Los Hercules wind farm,AR,owner,Mitsui & Co Ltd,0.34,https://www.gem.wiki/Los_Hercules_wind_farm,gem_global_integrated_power_tracker
+osaka_gas,G100000409774,L100000407540,Barrow Island LNG power station,AU,owner,Osaka Gas Co Ltd,0.01,https://www.gem.wiki/Barrow_Island_LNG_power_station,gem_global_integrated_power_tracker
+osaka_gas,G100000409775,L100000407540,Barrow Island LNG power station,AU,owner,Osaka Gas Co Ltd,0.01,https://www.gem.wiki/Barrow_Island_LNG_power_station,gem_global_integrated_power_tracker
+osaka_gas,G100000409776,L100000407540,Barrow Island LNG power station,AU,owner,Osaka Gas Co Ltd,0.01,https://www.gem.wiki/Barrow_Island_LNG_power_station,gem_global_integrated_power_tracker
+osaka_gas,G100000409777,L100000407540,Barrow Island LNG power station,AU,owner,Osaka Gas Co Ltd,0.01,https://www.gem.wiki/Barrow_Island_LNG_power_station,gem_global_integrated_power_tracker
+osaka_gas,G100000409778,L100000407540,Barrow Island LNG power station,AU,owner,Osaka Gas Co Ltd,0.01,https://www.gem.wiki/Barrow_Island_LNG_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000100962,L100000100038,Bluewaters power station,AU,owner,Sumitomo Corp,0.5,https://www.gem.wiki/Bluewaters_power_station,gem_global_integrated_power_tracker
+kansai,G100000100962,L100000100038,Bluewaters power station,AU,owner,Kansai Electric Power Co,0.5,https://www.gem.wiki/Bluewaters_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000100963,L100000100038,Bluewaters power station,AU,owner,Sumitomo Corp,0.5,https://www.gem.wiki/Bluewaters_power_station,gem_global_integrated_power_tracker
+kansai,G100000100963,L100000100038,Bluewaters power station,AU,owner,Kansai Electric Power Co,0.5,https://www.gem.wiki/Bluewaters_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000100964,L100000100038,Bluewaters power station,AU,owner,Sumitomo Corp,0.5,https://www.gem.wiki/Bluewaters_power_station,gem_global_integrated_power_tracker
+kansai,G100000100964,L100000100038,Bluewaters power station,AU,owner,Kansai Electric Power Co,0.5,https://www.gem.wiki/Bluewaters_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000100965,L100000100038,Bluewaters power station,AU,owner,Sumitomo Corp,0.5,https://www.gem.wiki/Bluewaters_power_station,gem_global_integrated_power_tracker
+kansai,G100000100965,L100000100038,Bluewaters power station,AU,owner,Kansai Electric Power Co,0.5,https://www.gem.wiki/Bluewaters_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100001050905,L100001045275,Bridgeman solar farm,AU,owner,Mitsubishi Corp,,https://www.gem.wiki/Bridgeman_solar_farm,gem_global_integrated_power_tracker
+jera,G100000806459,L100000805614,Cape York Solar,AU,owner,JERA Co Inc,,https://www.gem.wiki/Cape_York_Solar,gem_global_integrated_power_tracker
+hanwha_energy,G100000927827,L100000922306,Collinsville Green Energy Hub wind farm,AU,owner,Hanwha Impact,,https://www.gem.wiki/Collinsville_Green_Energy_Hub_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000908242,L100000906041,Coonooer Bridge wind farm,AU,owner,Eurus Energy,1.0,https://www.gem.wiki/Coonooer_Bridge_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000401509,L100000405112,Dry Creek GT power station,AU,parent,Mitsui & Co Ltd,0.28,https://www.gem.wiki/Dry_Creek_GT_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401510,L100000405112,Dry Creek GT power station,AU,parent,Mitsui & Co Ltd,0.28,https://www.gem.wiki/Dry_Creek_GT_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401511,L100000405112,Dry Creek GT power station,AU,parent,Mitsui & Co Ltd,0.28,https://www.gem.wiki/Dry_Creek_GT_power_station,gem_global_integrated_power_tracker
+sojitz,G100000806494,L100000805648,Edenvale Solar Park,AU,owner,Sojitz Corp,0.5,https://www.gem.wiki/Edenvale_Solar_Park,gem_global_integrated_power_tracker
+tokyo_gas,G100000409789,L100000407546,Ichthys LNG power station,AU,owner,Tokyo Gas Co Ltd,0.01,https://www.gem.wiki/Ichthys_LNG_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000831054,L100000827547,Kennedy Energy Park solar farm,AU,owner,Windlab / Eurus,1.0,https://www.gem.wiki/Kennedy_Energy_Park_solar_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000908243,L100000906042,Kennedy Energy Park wind farm,AU,owner,Eurus Energy,,https://www.gem.wiki/Kennedy_Energy_Park_wind_farm,gem_global_integrated_power_tracker
+jpower,G100000908250,L100000906049,Kidston Renewable Energy Hub wind farm,AU,owner,Electric Power Development Co Ltd,0.5,https://www.gem.wiki/Kidston_Renewable_Energy_Hub_wind_farm,gem_global_integrated_power_tracker
+jera,G100000806293,L100000805460,Kingfisher Solar Storage,AU,owner,JERA Co Inc,,https://www.gem.wiki/Kingfisher_Solar_Storage,gem_global_integrated_power_tracker
+komipo,G100001023266,L100001020414,Kumbarilla renewable energy park solar farm,AU,owner,Korea Midland Power Co Ltd,,https://www.gem.wiki/Kumbarilla_renewable_energy_park_solar_farm,gem_global_integrated_power_tracker
+mitsui,G100000409792,L100000407607,Kwinana Refinery cogeneration power station,AU,owner,Mitsui & Co Ltd,0.35,https://www.gem.wiki/Kwinana_Refinery_cogeneration_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401527,L100000405122,Mintaro GT power station,AU,parent,Mitsui & Co Ltd,0.28,https://www.gem.wiki/Mintaro_GT_power_station,gem_global_integrated_power_tracker
+jera,G100000806460,L100000805615,Nowingi Solar,AU,owner,JERA Co Inc,,https://www.gem.wiki/Nowingi_Solar,gem_global_integrated_power_tracker
+mitsui,G100000401536,L100000405128,Pelican Point power station,AU,parent,Mitsui & Co Ltd,0.28,https://www.gem.wiki/Pelican_Point_power_station,gem_global_integrated_power_tracker
+mitsui,G100001018523,L100000405128,Pelican Point power station,AU,parent,Mitsui & Co Ltd,0.28,https://www.gem.wiki/Pelican_Point_power_station,gem_global_integrated_power_tracker
+jera,G100000806461,L100000805616,Riverland solar farm,AU,owner,JERA Co Inc,,https://www.gem.wiki/Riverland_solar_farm,gem_global_integrated_power_tracker
+samsung_ct,G100001050978,L100001045308,Romani solar farm,AU,owner,Samsung C&T Corp,,https://www.gem.wiki/Samsung_Romani_solar_farm,gem_global_integrated_power_tracker
+marubeni,G100001050976,L100001045306,Roy Hill Iron Ore Mine solar farm,AU,owner,Marubeni Corp,0.15,https://www.gem.wiki/Roy_Hill_Iron_Ore_Mine_solar_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100000833175,L100000829386,Barapkuria solar farm,BD,owner,Sumitomo Corp,,https://www.gem.wiki/Barapkuria_solar_farm,gem_global_integrated_power_tracker
+kepco,G100000106579,L100000100066,Maheshkhali power station (KEPCO),BD,owner,Korea Electric Power Corp,1.0,https://www.gem.wiki/Maheshkhali_power_station_(KEPCO),gem_global_integrated_power_tracker
+kepco,G100000113487,L100000100066,Maheshkhali power station (KEPCO),BD,owner,Korea Electric Power Corp,1.0,https://www.gem.wiki/Maheshkhali_power_station_(KEPCO),gem_global_integrated_power_tracker
+mitsui,G100000400851,L100000406360,Matarbari LNG power station,BD,parent,Mitsui & Co Ltd,0.5,https://www.gem.wiki/Matarbari_LNG_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000400843,L100000406361,Matarbari Summit power station,BD,parent,Mitsubishi Corp,0.33299999999999996,https://www.gem.wiki/Matarbari_Summit_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000400844,L100000406361,Matarbari Summit power station,BD,parent,Mitsubishi Corp,0.33299999999999996,https://www.gem.wiki/Matarbari_Summit_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000400845,L100000406361,Matarbari Summit power station,BD,parent,Mitsubishi Corp,0.33299999999999996,https://www.gem.wiki/Matarbari_Summit_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000400846,L100000406361,Matarbari Summit power station,BD,parent,Mitsubishi Corp,0.33299999999999996,https://www.gem.wiki/Matarbari_Summit_power_station,gem_global_integrated_power_tracker
+mitsui,G100000113489,L100000100072,Pekua power station,BD,owner,Mitsui & Co Ltd,1.0,https://www.gem.wiki/Pekua_power_station,gem_global_integrated_power_tracker
+mitsui,G100000113490,L100000100072,Pekua power station,BD,owner,Mitsui & Co Ltd,1.0,https://www.gem.wiki/Pekua_power_station,gem_global_integrated_power_tracker
+mitsui,G100000115101,L100000100072,Pekua power station,BD,owner,Mitsui & Co Ltd,1.0,https://www.gem.wiki/Pekua_power_station,gem_global_integrated_power_tracker
+mitsui,G100000115102,L100000100072,Pekua power station,BD,owner,Mitsui & Co Ltd,1.0,https://www.gem.wiki/Pekua_power_station,gem_global_integrated_power_tracker
+jera,G100000400848,L100000406357,Reliance Meghnaghat power station,BD,owner,JERA Co Inc,1.0,https://www.gem.wiki/Reliance_Meghnaghat_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000919680,L100000915931,Belwind Offshore Wind Project,BE,owner,Sumitomo Corp,0.39,https://www.gem.wiki/Belwind_Offshore_Wind_Project,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409989,L100000407650,Manage Seneffe power station,BE,parent,Mitsubishi Corp,0.8,https://www.gem.wiki/Manage_Seneffe_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000919685,L100000915935,Nobelwind Offshore Wind Project,BE,owner,Sumitomo Corp,0.39,https://www.gem.wiki/Nobelwind_Offshore_Wind_Project,gem_global_integrated_power_tracker
+sumitomo_corp,G100000919772,L100000916008,The Northwester 2 Offshore Wind Project,BE,owner,Sumitomo Corp,0.3,https://www.gem.wiki/The_Northwester_2_Offshore_Wind_Project,gem_global_integrated_power_tracker
+koen,G100000806851,L100000805950,ASM PV solar farm,BG,owner,Korea South-East Power Co Ltd,0.5,https://www.gem.wiki/ASM_PV_solar_farm,gem_global_integrated_power_tracker
+mhi,G100000917135,L100000913791,Kaliakra Cape wind farm,BG,owner,Mitsubishi Heavy Industries Ltd,1.0,https://www.gem.wiki/Kaliakra_Cape_wind_farm,gem_global_integrated_power_tracker
+koen,G100000806840,L100000805942,PES PV solar farm,BG,owner,Korea South-East Power Co Ltd,0.5,https://www.gem.wiki/PES_PV_solar_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000919639,L100000915894,Sliven wind farm,BG,owner,Mitsubishi Corporation Energy Solutions Ltd,,https://www.gem.wiki/Sliven_wind_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100000404589,L100000405457,Al Hidd Power and Water Station,BH,parent,Sumitomo Corp,0.21,https://www.gem.wiki/Al_Hidd_Power_and_Water_Station,gem_global_integrated_power_tracker
+mitsui,G100000404586,L100000405454,Al-Dur Power and Water Station,BH,owner,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Al-Dur_Power_and_Water_Station,gem_global_integrated_power_tracker
+mitsui,G100000411179,L100000405454,Al-Dur Power and Water Station,BH,owner,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Al-Dur_Power_and_Water_Station,gem_global_integrated_power_tracker
+toyota_tsusho,G100001021618,L100001019173,Pobè solar farm,BJ,owner,Toyota Tsusho Corp,,https://www.gem.wiki/Pobè_solar_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100001095198,L100001083914,Lumut Cogen power station,BN,parent,Mitsubishi Corp,0.083,https://www.gem.wiki/Lumut_Cogen_power_station,gem_global_integrated_power_tracker
+mitsui,G100000600287,L100000600287,Jirau hydroelectric plant,BR,owner,Mitsui & Co Ltd,0.2,https://www.gem.wiki/Jirau_hydroelectric_plant,gem_global_integrated_power_tracker
+mhi,G100000406790,L100000406514,Litos power station,BR,parent,Mitsubishi Power Americas Inc,0.33299999999999996,https://www.gem.wiki/Litos_power_station,gem_global_integrated_power_tracker
+mhi,G100000406791,L100000406514,Litos power station,BR,parent,Mitsubishi Power Americas Inc,0.33299999999999996,https://www.gem.wiki/Litos_power_station,gem_global_integrated_power_tracker
+mhi,G100000406792,L100000406514,Litos power station,BR,parent,Mitsubishi Power Americas Inc,0.33299999999999996,https://www.gem.wiki/Litos_power_station,gem_global_integrated_power_tracker
+mhi,G100000406793,L100000406514,Litos power station,BR,parent,Mitsubishi Power Americas Inc,0.33299999999999996,https://www.gem.wiki/Litos_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000406788,L100000406512,Marlim Azul power station,BR,parent,Mitsubishi Corp,0.2,https://www.gem.wiki/Marlim_Azul_power_station,gem_global_integrated_power_tracker
+samsung_ct,G100001033657,L100001028386,Drumheller solar project,CA,owner,Samsung C&T Corp,,https://www.gem.wiki/Drumheller_solar_project,gem_global_integrated_power_tracker
+mitsui,G100000909359,L100000906953,East Lake St. Clair wind farm,CA,owner,Mitsui & Co Ltd,,https://www.gem.wiki/East_Lake_St._Clair_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000909362,L100000906956,Erieau wind farm,CA,owner,Mitsui & Co Ltd,,https://www.gem.wiki/Erieau_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000908900,L100000906599,Harrow wind farm,CA,owner,Mitsui & Co Ltd,,https://www.gem.wiki/Harrow_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000908654,L100000906382,Plateau wind farm,CA,owner,Mitsui & Co Ltd,,https://www.gem.wiki/Plateau_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000908980,L100000906664,Pointes Aux Roches wind farm,CA,owner,Mitsui & Co Ltd,,https://www.gem.wiki/Pointes_Aux_Roches_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000404229,L100000405258,Whitby cogeneration station,CA,parent,Mitsui & Co Ltd,0.5,https://www.gem.wiki/Whitby_cogeneration_station,gem_global_integrated_power_tracker
+dl_enc,G100000101634,L100000100183,Cochrane power station,CL,parent,DL Holdings,0.28,https://www.gem.wiki/Cochrane_power_station,gem_global_integrated_power_tracker
+dl_enc,G100000101635,L100000100183,Cochrane power station,CL,parent,DL Holdings,0.28,https://www.gem.wiki/Cochrane_power_station,gem_global_integrated_power_tracker
+sojitz,G100000808947,L100000807437,S4 Solar Power Plant,CL,owner,Sojitz Corp,1.0,https://www.gem.wiki/S4_Solar_Power_Plant,gem_global_integrated_power_tracker
+toyota_tsusho,G100000837841,L100000832294,Teno solar farm,CL,owner,Eurus Energy,1.0,https://www.gem.wiki/Teno_solar_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000837859,L100000832312,Yungay solar farm,CL,owner,Eurus Energy,1.0,https://www.gem.wiki/Yungay_solar_farm,gem_global_integrated_power_tracker
+kepco,G100000111116,L100000101467,Heshun power station,CN,parent,KEPCO Shanxi International,0.136,https://www.gem.wiki/Heshun_power_station,gem_global_integrated_power_tracker
+jpower,G100000111116,L100000101467,Heshun power station,CN,parent,Electric Power Development Co Ltd,0.027999999999999997,https://www.gem.wiki/Heshun_power_station,gem_global_integrated_power_tracker
+kepco,G100000111117,L100000101467,Heshun power station,CN,parent,KEPCO Shanxi International,0.136,https://www.gem.wiki/Heshun_power_station,gem_global_integrated_power_tracker
+jpower,G100000111117,L100000101467,Heshun power station,CN,parent,Electric Power Development Co Ltd,0.027999999999999997,https://www.gem.wiki/Heshun_power_station,gem_global_integrated_power_tracker
+kepco,G100000103885,L100000101468,High River power station,CN,parent,KEPCO Shanxi International,0.17,https://www.gem.wiki/High_River_power_station,gem_global_integrated_power_tracker
+jpower,G100000103885,L100000101468,High River power station,CN,parent,Electric Power Development Co Ltd,0.035,https://www.gem.wiki/High_River_power_station,gem_global_integrated_power_tracker
+kepco,G100000103886,L100000101468,High River power station,CN,parent,KEPCO Shanxi International,0.17,https://www.gem.wiki/High_River_power_station,gem_global_integrated_power_tracker
+jpower,G100000103886,L100000101468,High River power station,CN,parent,Electric Power Development Co Ltd,0.035,https://www.gem.wiki/High_River_power_station,gem_global_integrated_power_tracker
+itochu,G100000104399,L100000101346,Huaneng Jiaxiang power station,CN,parent,ITOCHU Corp,0.059000000000000004,https://www.gem.wiki/Huaneng_Jiaxiang_power_station,gem_global_integrated_power_tracker
+itochu,G100000104400,L100000101346,Huaneng Jiaxiang power station,CN,parent,ITOCHU Corp,0.059000000000000004,https://www.gem.wiki/Huaneng_Jiaxiang_power_station,gem_global_integrated_power_tracker
+itochu,G100000104401,L100000101346,Huaneng Jiaxiang power station,CN,parent,ITOCHU Corp,0.059000000000000004,https://www.gem.wiki/Huaneng_Jiaxiang_power_station,gem_global_integrated_power_tracker
+itochu,G100000104402,L100000101346,Huaneng Jiaxiang power station,CN,parent,ITOCHU Corp,0.059000000000000004,https://www.gem.wiki/Huaneng_Jiaxiang_power_station,gem_global_integrated_power_tracker
+itochu,G100000112868,L100000101361,Huaneng Jining Gaoxin cogen power station,CN,parent,ITOCHU Corp,0.059000000000000004,https://www.gem.wiki/Huaneng_Jining_Gaoxin_cogen_power_station,gem_global_integrated_power_tracker
+itochu,G100000112869,L100000101361,Huaneng Jining Gaoxin cogen power station,CN,parent,ITOCHU Corp,0.059000000000000004,https://www.gem.wiki/Huaneng_Jining_Gaoxin_cogen_power_station,gem_global_integrated_power_tracker
+itochu,G100000104499,L100000101350,Huaneng Qufu power station,CN,parent,ITOCHU Corp,0.059000000000000004,https://www.gem.wiki/Huaneng_Qufu_power_station,gem_global_integrated_power_tracker
+itochu,G100000104500,L100000101350,Huaneng Qufu power station,CN,parent,ITOCHU Corp,0.059000000000000004,https://www.gem.wiki/Huaneng_Qufu_power_station,gem_global_integrated_power_tracker
+jpower,G100001072474,L100001063101,Hubei Anlu Tangdi wind farm,CN,owner,CLP Dabieshan (Hubei) Electric Power Development Co Ltd,,https://www.gem.wiki/Hubei_Anlu_Tangdi_wind_farm,gem_global_integrated_power_tracker
+kepco,G100000112047,L100000100681,Jiaozuo Wuzhi-1 Cogen power station,CN,owner,Jiaozuo Kepco POWER Co Ltd,1.0,https://www.gem.wiki/Jiaozuo_Wuzhi-1_Cogen_power_station,gem_global_integrated_power_tracker
+kepco,G100000112048,L100000100681,Jiaozuo Wuzhi-1 Cogen power station,CN,owner,Jiaozuo Kepco POWER Co Ltd,1.0,https://www.gem.wiki/Jiaozuo_Wuzhi-1_Cogen_power_station,gem_global_integrated_power_tracker
+kepco,G100000105165,L100000101486,Jiexiu Chongguang power station,CN,parent,KEPCO Shanxi International,0.17300000000000001,https://www.gem.wiki/Jiexiu_Chongguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000105165,L100000101486,Jiexiu Chongguang power station,CN,parent,Electric Power Development Co Ltd,0.036000000000000004,https://www.gem.wiki/Jiexiu_Chongguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000105166,L100000101486,Jiexiu Chongguang power station,CN,parent,KEPCO Shanxi International,0.17300000000000001,https://www.gem.wiki/Jiexiu_Chongguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000105166,L100000101486,Jiexiu Chongguang power station,CN,parent,Electric Power Development Co Ltd,0.036000000000000004,https://www.gem.wiki/Jiexiu_Chongguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000106307,L100000101492,Lingshi Qiguang power station,CN,parent,KEPCO Shanxi International,0.17300000000000001,https://www.gem.wiki/Lingshi_Qiguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000106307,L100000101492,Lingshi Qiguang power station,CN,parent,Electric Power Development Co Ltd,0.036000000000000004,https://www.gem.wiki/Lingshi_Qiguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000106308,L100000101492,Lingshi Qiguang power station,CN,parent,KEPCO Shanxi International,0.17300000000000001,https://www.gem.wiki/Lingshi_Qiguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000106308,L100000101492,Lingshi Qiguang power station,CN,parent,Electric Power Development Co Ltd,0.036000000000000004,https://www.gem.wiki/Lingshi_Qiguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000803804,L100000803298,Ningxia Xingqing Hongdunzi Xuning solar farm,CN,owner,RISEN (Ningbo) Electric POWER Development Co Ltd,1.0,https://www.gem.wiki/Ningxia_Xingqing_Hongdunzi_Xuning_solar_farm,gem_global_integrated_power_tracker
+mitsui,G100000107657,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107658,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107659,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107660,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107661,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107662,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107663,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107664,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107665,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107666,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107673,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000107674,L100000100937,Ordos Power Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Power_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000113713,L100000100938,Ordos Resources Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Resources_Qipanjing_power_station,gem_global_integrated_power_tracker
+mitsui,G100000113714,L100000100938,Ordos Resources Qipanjing power station,CN,parent,Mitsui & Co Ltd,0.20199999999999999,https://www.gem.wiki/Ordos_Resources_Qipanjing_power_station,gem_global_integrated_power_tracker
+kepco,G100000108003,L100000101501,Pingshuo Gangue power station,CN,parent,KEPCO Shanxi International,0.228,https://www.gem.wiki/Pingshuo_Gangue_power_station,gem_global_integrated_power_tracker
+jpower,G100000108003,L100000101501,Pingshuo Gangue power station,CN,parent,Electric Power Development Co Ltd,0.047,https://www.gem.wiki/Pingshuo_Gangue_power_station,gem_global_integrated_power_tracker
+kepco,G100000108004,L100000101501,Pingshuo Gangue power station,CN,parent,KEPCO Shanxi International,0.228,https://www.gem.wiki/Pingshuo_Gangue_power_station,gem_global_integrated_power_tracker
+jpower,G100000108004,L100000101501,Pingshuo Gangue power station,CN,parent,Electric Power Development Co Ltd,0.047,https://www.gem.wiki/Pingshuo_Gangue_power_station,gem_global_integrated_power_tracker
+kepco,G100000108005,L100000101501,Pingshuo Gangue power station,CN,parent,KEPCO Shanxi International,0.228,https://www.gem.wiki/Pingshuo_Gangue_power_station,gem_global_integrated_power_tracker
+jpower,G100000108005,L100000101501,Pingshuo Gangue power station,CN,parent,Electric Power Development Co Ltd,0.047,https://www.gem.wiki/Pingshuo_Gangue_power_station,gem_global_integrated_power_tracker
+kepco,G100000108006,L100000101501,Pingshuo Gangue power station,CN,parent,KEPCO Shanxi International,0.228,https://www.gem.wiki/Pingshuo_Gangue_power_station,gem_global_integrated_power_tracker
+jpower,G100000108006,L100000101501,Pingshuo Gangue power station,CN,parent,Electric Power Development Co Ltd,0.047,https://www.gem.wiki/Pingshuo_Gangue_power_station,gem_global_integrated_power_tracker
+kepco,G100000109043,L100000101509,Shanxi Hepo power station,CN,parent,KEPCO Shanxi International,0.318,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+jpower,G100000109043,L100000101509,Shanxi Hepo power station,CN,parent,Electric Power Development Co Ltd,0.065,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+kepco,G100000109044,L100000101509,Shanxi Hepo power station,CN,parent,KEPCO Shanxi International,0.318,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+jpower,G100000109044,L100000101509,Shanxi Hepo power station,CN,parent,Electric Power Development Co Ltd,0.065,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+kepco,G100000109045,L100000101509,Shanxi Hepo power station,CN,parent,KEPCO Shanxi International,0.318,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+jpower,G100000109045,L100000101509,Shanxi Hepo power station,CN,parent,Electric Power Development Co Ltd,0.065,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+kepco,G100000109046,L100000101509,Shanxi Hepo power station,CN,parent,KEPCO Shanxi International,0.318,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+jpower,G100000109046,L100000101509,Shanxi Hepo power station,CN,parent,Electric Power Development Co Ltd,0.065,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+kepco,G100000109047,L100000101509,Shanxi Hepo power station,CN,parent,KEPCO Shanxi International,0.318,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+jpower,G100000109047,L100000101509,Shanxi Hepo power station,CN,parent,Electric Power Development Co Ltd,0.065,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+kepco,G100000109048,L100000101509,Shanxi Hepo power station,CN,parent,KEPCO Shanxi International,0.318,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+jpower,G100000109048,L100000101509,Shanxi Hepo power station,CN,parent,Electric Power Development Co Ltd,0.065,https://www.gem.wiki/Shanxi_Hepo_power_station,gem_global_integrated_power_tracker
+kepco,G100000106344,L100000105027,Shanxi Liulin power station,CN,parent,KEPCO Shanxi International,0.34,https://www.gem.wiki/Shanxi_Liulin_power_station,gem_global_integrated_power_tracker
+jpower,G100000106344,L100000105027,Shanxi Liulin power station,CN,parent,Electric Power Development Co Ltd,0.07,https://www.gem.wiki/Shanxi_Liulin_power_station,gem_global_integrated_power_tracker
+kepco,G100000106345,L100000105027,Shanxi Liulin power station,CN,parent,KEPCO Shanxi International,0.34,https://www.gem.wiki/Shanxi_Liulin_power_station,gem_global_integrated_power_tracker
+jpower,G100000106345,L100000105027,Shanxi Liulin power station,CN,parent,Electric Power Development Co Ltd,0.07,https://www.gem.wiki/Shanxi_Liulin_power_station,gem_global_integrated_power_tracker
+kepco,G100000106346,L100000105027,Shanxi Liulin power station,CN,parent,KEPCO Shanxi International,0.17,https://www.gem.wiki/Shanxi_Liulin_power_station,gem_global_integrated_power_tracker
+jpower,G100000106346,L100000105027,Shanxi Liulin power station,CN,parent,Electric Power Development Co Ltd,0.035,https://www.gem.wiki/Shanxi_Liulin_power_station,gem_global_integrated_power_tracker
+kepco,G100000106347,L100000105027,Shanxi Liulin power station,CN,parent,KEPCO Shanxi International,0.17,https://www.gem.wiki/Shanxi_Liulin_power_station,gem_global_integrated_power_tracker
+jpower,G100000106347,L100000105027,Shanxi Liulin power station,CN,parent,Electric Power Development Co Ltd,0.035,https://www.gem.wiki/Shanxi_Liulin_power_station,gem_global_integrated_power_tracker
+kepco,G100000109051,L100000101511,Shanxi Ruiguang power station,CN,parent,KEPCO Shanxi International,0.34,https://www.gem.wiki/Shanxi_Ruiguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109051,L100000101511,Shanxi Ruiguang power station,CN,parent,Electric Power Development Co Ltd,0.07,https://www.gem.wiki/Shanxi_Ruiguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109052,L100000101511,Shanxi Ruiguang power station,CN,parent,KEPCO Shanxi International,0.34,https://www.gem.wiki/Shanxi_Ruiguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109052,L100000101511,Shanxi Ruiguang power station,CN,parent,Electric Power Development Co Ltd,0.07,https://www.gem.wiki/Shanxi_Ruiguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109053,L100000101511,Shanxi Ruiguang power station,CN,parent,KEPCO Shanxi International,0.34,https://www.gem.wiki/Shanxi_Ruiguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109053,L100000101511,Shanxi Ruiguang power station,CN,parent,Electric Power Development Co Ltd,0.07,https://www.gem.wiki/Shanxi_Ruiguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109054,L100000101511,Shanxi Ruiguang power station,CN,parent,KEPCO Shanxi International,0.34,https://www.gem.wiki/Shanxi_Ruiguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109054,L100000101511,Shanxi Ruiguang power station,CN,parent,Electric Power Development Co Ltd,0.07,https://www.gem.wiki/Shanxi_Ruiguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109057,L100000101514,Shanxi Yuguang power station,CN,parent,KEPCO Shanxi International,0.204,https://www.gem.wiki/Shanxi_Yuguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109057,L100000101514,Shanxi Yuguang power station,CN,parent,Electric Power Development Co Ltd,0.042,https://www.gem.wiki/Shanxi_Yuguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109058,L100000101514,Shanxi Yuguang power station,CN,parent,KEPCO Shanxi International,0.204,https://www.gem.wiki/Shanxi_Yuguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109058,L100000101514,Shanxi Yuguang power station,CN,parent,Electric Power Development Co Ltd,0.042,https://www.gem.wiki/Shanxi_Yuguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109059,L100000101514,Shanxi Yuguang power station,CN,parent,KEPCO Shanxi International,0.204,https://www.gem.wiki/Shanxi_Yuguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109059,L100000101514,Shanxi Yuguang power station,CN,parent,Electric Power Development Co Ltd,0.042,https://www.gem.wiki/Shanxi_Yuguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109060,L100000101514,Shanxi Yuguang power station,CN,parent,KEPCO Shanxi International,0.204,https://www.gem.wiki/Shanxi_Yuguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109060,L100000101514,Shanxi Yuguang power station,CN,parent,Electric Power Development Co Ltd,0.042,https://www.gem.wiki/Shanxi_Yuguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109061,L100000101515,Shanxi Zhaoguang power station,CN,parent,KEPCO Shanxi International,0.34,https://www.gem.wiki/Shanxi_Zhaoguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109061,L100000101515,Shanxi Zhaoguang power station,CN,parent,Electric Power Development Co Ltd,0.07,https://www.gem.wiki/Shanxi_Zhaoguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109062,L100000101515,Shanxi Zhaoguang power station,CN,parent,KEPCO Shanxi International,0.34,https://www.gem.wiki/Shanxi_Zhaoguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109062,L100000101515,Shanxi Zhaoguang power station,CN,parent,Electric Power Development Co Ltd,0.07,https://www.gem.wiki/Shanxi_Zhaoguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109063,L100000101515,Shanxi Zhaoguang power station,CN,parent,KEPCO Shanxi International,0.34,https://www.gem.wiki/Shanxi_Zhaoguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109063,L100000101515,Shanxi Zhaoguang power station,CN,parent,Electric Power Development Co Ltd,0.07,https://www.gem.wiki/Shanxi_Zhaoguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000109064,L100000101515,Shanxi Zhaoguang power station,CN,parent,KEPCO Shanxi International,0.34,https://www.gem.wiki/Shanxi_Zhaoguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000109064,L100000101515,Shanxi Zhaoguang power station,CN,parent,Electric Power Development Co Ltd,0.07,https://www.gem.wiki/Shanxi_Zhaoguang_power_station,gem_global_integrated_power_tracker
+khnp,G100000604115,L100000604076,Shuifeng hydroelectric plant,CN,owner,China-Korea Hydropower Company,1.0,https://www.gem.wiki/Shuifeng_hydroelectric_plant,gem_global_integrated_power_tracker
+kepco,G100000105223,L100000101488,Xinguang power station,CN,parent,KEPCO Shanxi International,0.17,https://www.gem.wiki/Xinguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000105223,L100000101488,Xinguang power station,CN,parent,Electric Power Development Co Ltd,0.035,https://www.gem.wiki/Xinguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000105224,L100000101488,Xinguang power station,CN,parent,KEPCO Shanxi International,0.17,https://www.gem.wiki/Xinguang_power_station,gem_global_integrated_power_tracker
+jpower,G100000105224,L100000101488,Xinguang power station,CN,parent,Electric Power Development Co Ltd,0.035,https://www.gem.wiki/Xinguang_power_station,gem_global_integrated_power_tracker
+kepco,G100000111277,L100000101543,Yangcheng power station,CN,parent,KEPCO Shanxi International,0.073,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+jpower,G100000111277,L100000101543,Yangcheng power station,CN,parent,Electric Power Development Co Ltd,0.015,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+kepco,G100000111278,L100000101543,Yangcheng power station,CN,parent,KEPCO Shanxi International,0.073,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+jpower,G100000111278,L100000101543,Yangcheng power station,CN,parent,Electric Power Development Co Ltd,0.015,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+kepco,G100000111279,L100000101543,Yangcheng power station,CN,parent,KEPCO Shanxi International,0.073,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+jpower,G100000111279,L100000101543,Yangcheng power station,CN,parent,Electric Power Development Co Ltd,0.015,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+kepco,G100000111280,L100000101543,Yangcheng power station,CN,parent,KEPCO Shanxi International,0.073,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+jpower,G100000111280,L100000101543,Yangcheng power station,CN,parent,Electric Power Development Co Ltd,0.015,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+kepco,G100000111281,L100000101543,Yangcheng power station,CN,parent,KEPCO Shanxi International,0.073,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+jpower,G100000111281,L100000101543,Yangcheng power station,CN,parent,Electric Power Development Co Ltd,0.015,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+kepco,G100000111282,L100000101543,Yangcheng power station,CN,parent,KEPCO Shanxi International,0.073,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+jpower,G100000111282,L100000101543,Yangcheng power station,CN,parent,Electric Power Development Co Ltd,0.015,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+kepco,G100000111283,L100000101543,Yangcheng power station,CN,parent,KEPCO Shanxi International,0.099,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+jpower,G100000111283,L100000101543,Yangcheng power station,CN,parent,Electric Power Development Co Ltd,0.02,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+kepco,G100000111284,L100000101543,Yangcheng power station,CN,parent,KEPCO Shanxi International,0.099,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+jpower,G100000111284,L100000101543,Yangcheng power station,CN,parent,Electric Power Development Co Ltd,0.02,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+kepco,G100001000272,L100000101543,Yangcheng power station,CN,parent,KEPCO Shanxi International,0.073,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+jpower,G100001000272,L100000101543,Yangcheng power station,CN,parent,Electric Power Development Co Ltd,0.015,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+kepco,G100001000273,L100000101543,Yangcheng power station,CN,parent,KEPCO Shanxi International,0.073,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+jpower,G100001000273,L100000101543,Yangcheng power station,CN,parent,Electric Power Development Co Ltd,0.015,https://www.gem.wiki/Yangcheng_power_station,gem_global_integrated_power_tracker
+kepco,G100000111447,L100000101548,Youyu power station,CN,parent,KEPCO Shanxi International,0.16699999999999998,https://www.gem.wiki/Youyu_power_station,gem_global_integrated_power_tracker
+jpower,G100000111447,L100000101548,Youyu power station,CN,parent,Electric Power Development Co Ltd,0.034,https://www.gem.wiki/Youyu_power_station,gem_global_integrated_power_tracker
+kepco,G100000111448,L100000101548,Youyu power station,CN,parent,KEPCO Shanxi International,0.16699999999999998,https://www.gem.wiki/Youyu_power_station,gem_global_integrated_power_tracker
+jpower,G100000111448,L100000101548,Youyu power station,CN,parent,Electric Power Development Co Ltd,0.034,https://www.gem.wiki/Youyu_power_station,gem_global_integrated_power_tracker
+kepco,G100000111465,L100000101551,Yuguang Coal power station,CN,parent,KEPCO Shanxi International,0.17300000000000001,https://www.gem.wiki/Yuguang_Coal_power_station,gem_global_integrated_power_tracker
+jpower,G100000111465,L100000101551,Yuguang Coal power station,CN,parent,Electric Power Development Co Ltd,0.036000000000000004,https://www.gem.wiki/Yuguang_Coal_power_station,gem_global_integrated_power_tracker
+kepco,G100000111466,L100000101551,Yuguang Coal power station,CN,parent,KEPCO Shanxi International,0.17300000000000001,https://www.gem.wiki/Yuguang_Coal_power_station,gem_global_integrated_power_tracker
+jpower,G100000111466,L100000101551,Yuguang Coal power station,CN,parent,Electric Power Development Co Ltd,0.036000000000000004,https://www.gem.wiki/Yuguang_Coal_power_station,gem_global_integrated_power_tracker
+mitsui,G100001072762,L100000815924,Kassø solar farm,DK,owner,Mitsui & Co Ltd,0.49,https://www.gem.wiki/Kassø_solar_farm,gem_global_integrated_power_tracker
+hyundai_ec,G100000408070,L100000406059,Oumache power station,DZ,parent,Hyundai Engineering & Construction Co Ltd,0.366,https://www.gem.wiki/Oumache_power_station,gem_global_integrated_power_tracker
+hyundai_engineering,G100000408070,L100000406059,Oumache power station,DZ,parent,Hyundai Engineering Co Ltd,0.013999999999999999,https://www.gem.wiki/Oumache_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000900028,L100000900026,Ras Ghareb wind farm,EG,owner,Eurus Energy Holdings Corp,0.4,https://www.gem.wiki/Ras_Ghareb_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000900064,L100000900026,Ras Ghareb wind farm,EG,owner,Eurus Energy Holdings Corp,0.4,https://www.gem.wiki/Ras_Ghareb_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100001050895,L100000900026,Ras Ghareb wind farm,EG,owner,Eurus Energy Holdings Corp,0.4,https://www.gem.wiki/Ras_Ghareb_wind_farm,gem_global_integrated_power_tracker
+hanwha_energy,G100001006511,L100001005471,Acebuche solar farm,ES,owner,Hanwha Energy Corp,,https://www.gem.wiki/Acebuche_solar_farm,gem_global_integrated_power_tracker
+hanwha_energy,G100001005384,L100001004587,Almendro solar farm,ES,owner,Hanwha Energy Corp,1.0,https://www.gem.wiki/Almendro_solar_farm,gem_global_integrated_power_tracker
+hanwha_energy,G100001006515,L100001005475,Braza Corona solar farm,ES,owner,Hanwha Energy Corp,,https://www.gem.wiki/Braza_Corona_solar_farm,gem_global_integrated_power_tracker
+jgc,G100000827656,L100000824500,El Carpio 1 Thermosolar farm,ES,owner,JGC Holdings Corp,0.24,https://www.gem.wiki/El_Carpio_1_Thermosolar_farm,gem_global_integrated_power_tracker
+jgc,G100000827657,L100000824501,El Carpio 2 Thermosolar farm,ES,owner,JGC Holdings Corp,0.24,https://www.gem.wiki/El_Carpio_2_Thermosolar_farm,gem_global_integrated_power_tracker
+itochu,G100000828105,L100000824865,Solaben 2 CSP solar farm,ES,owner,ITOCHU Corp,0.3,https://www.gem.wiki/Solaben_2_CSP_solar_farm,gem_global_integrated_power_tracker
+itochu,G100000828106,L100000824866,Solaben 3 CSP solar farm,ES,owner,ITOCHU Corp,0.3,https://www.gem.wiki/Solaben_3_CSP_solar_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000915831,L100000912691,Vicedo wind farm,ES,owner,Eurus Energy,1.0,https://www.gem.wiki/Vicedo_wind_farm,gem_global_integrated_power_tracker
+itochu,G100000201371,L100000201153,Joutseno Pulp power station,FI,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Joutseno_Pulp_power_station,gem_global_integrated_power_tracker
+itochu,G100000200289,L100000200256,Kemi Bioproduct Mill power station,FI,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Kemi_Bioproduct_Mill_power_station,gem_global_integrated_power_tracker
+itochu,G100000200290,L100000200257,Kemi Pulp Mill power station,FI,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Kemi_Pulp_Mill_power_station,gem_global_integrated_power_tracker
+itochu,G100000201378,L100000201159,Metsä Rauma power station,FI,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Metsä_Rauma_power_station,gem_global_integrated_power_tracker
+itochu,G100000200235,L100000200209,Äänekoski Bioproduct Mill power station,FI,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Äänekoski_Bioproduct_Mill_power_station,gem_global_integrated_power_tracker
+itochu,G100001052830,L100001046672,Äänekoski power station,FI,parent,ITOCHU Corp,,https://www.gem.wiki/Äänekoski_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000915436,L100000912337,Basse Thiérarche wind farm,FR,owner,Diamond Generating Europe,,https://www.gem.wiki/Basse_Thiérarche_wind_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100000920005,L100000916207,Dieppe-Le Treport wind farm,FR,owner,Sumitomo Corp,0.29,https://www.gem.wiki/Dieppe-Le_Treport_wind_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000911915,L100000909176,Plaine De L’Escrebieux wind farm,FR,owner,Diamond Generating Europe,,https://www.gem.wiki/Plaine_De_L’Escrebieux_wind_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000913238,L100000910386,Seuil De Bapaume wind farm,FR,owner,Diamond Generating Europe,,https://www.gem.wiki/Seuil_De_Bapaume_wind_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000806629,L100000805759,Toul-Rosières Solar Park,FR,owner,Mitsubishi Corporation Energy Solutions Ltd,1.0,https://www.gem.wiki/Toul-Rosières_Solar_Park,gem_global_integrated_power_tracker
+tokyo_gas,G100000200254,L100000200224,Brigg Renewable Energy power station,GB,parent,Tokyo Gas United Kingdom Ltd,,https://www.gem.wiki/Brigg_Renewable_Energy_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100001092248,L100001081921,Galloper offshore wind farm,GB,owner,Sumitomo Corporation,0.12,https://www.gem.wiki/Galloper_offshore_wind_farm,gem_global_integrated_power_tracker
+jpower,G100000920087,L100000916276,Lynch Knoll wind farm,GB,owner,Electric Power Development Co Ltd,0.25,https://www.gem.wiki/Triton_Knoll_wind_farm,gem_global_integrated_power_tracker
+kansai,G100000920087,L100000916276,Lynch Knoll wind farm,GB,owner,Kansai Electric Power Co,0.16,https://www.gem.wiki/Triton_Knoll_wind_farm,gem_global_integrated_power_tracker
+marubeni,G100000926187,L100000921260,Ossian Offshore wind farm,GB,owner,Marubeni Corp,,https://www.gem.wiki/Ossian_Offshore_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000919408,L100000915702,Pentland wind farm,GB,owner,Eurus Energy UK,,https://www.gem.wiki/Pentland_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000108655,L100000103761,Rugeley power station,GB,owner,Mitsui & Co Ltd,0.5,https://www.gem.wiki/Rugeley_power_station,gem_global_integrated_power_tracker
+mitsui,G100000108656,L100000103761,Rugeley power station,GB,owner,Mitsui & Co Ltd,0.5,https://www.gem.wiki/Rugeley_power_station,gem_global_integrated_power_tracker
+itochu,G100000200324,L100000200289,Severnside Energy-from-Waste power station,GB,parent,ITOCHU Corp,,https://www.gem.wiki/Severnside_Energy-from-Waste_power_station,gem_global_integrated_power_tracker
+tokyo_gas,G100000200331,L100000200296,Snetterton power station,GB,parent,Tokyo Gas United Kingdom Ltd,,https://www.gem.wiki/Snetterton_power_station,gem_global_integrated_power_tracker
+jpower,G100001063662,L100001055748,Triton Knoll (Innogy) wind farm,GB,owner,J-Power,0.25,https://www.gem.wiki/Triton_Knoll_(Innogy)_wind_farm,gem_global_integrated_power_tracker
+kansai,G100001063662,L100001055748,Triton Knoll (Innogy) wind farm,GB,owner,Kansai Electric Power,0.16,https://www.gem.wiki/Triton_Knoll_(Innogy)_wind_farm,gem_global_integrated_power_tracker
+marubeni,G100000915857,L100000912713,Upper Kinknockie wind farm,GB,owner,Marubeni Corp,,https://www.gem.wiki/Upper_Ogmore_wind_farm,gem_global_integrated_power_tracker
+itochu,G100000200357,L100000200321,Wilton EFW power station,GB,owner,ITOCHU Corp,0.2,https://www.gem.wiki/Wilton_11_Energy_from_Waste_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000407094,L100000406753,Kpone IPP (KIPP) power station,GH,parent,Sumitomo Corp,0.28,https://www.gem.wiki/Kpone_IPP_(KIPP)_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000914769,L100000911751,Madara (Eurus Greece) wind farm,GR,owner,Eurus Greece AEVE,1.0,https://www.gem.wiki/Madara_(Eurus_Greece)_wind_farm,gem_global_integrated_power_tracker
+hanwha_energy,G100000806432,L100000805590,Malojloj solar farm,GU,owner,Hanwha Energy Corp,1.0,https://www.gem.wiki/Malojloj_solar_farm,gem_global_integrated_power_tracker
+kepco,G100000806445,L100000805602,Mangilao solar farm,GU,owner,Korea Electric Power Corp,,https://www.gem.wiki/Mangilao_solar_farm,gem_global_integrated_power_tracker
+kepco,G100000407918,L100000406935,Ukudu power station,GU,parent,Korea Electric Power Corp,1.0,https://www.gem.wiki/Ukudu_power_station,gem_global_integrated_power_tracker
+samsung_ct,G100001062047,L100001054214,Yona solar farm,GU,owner,Samsun E&C America Inc,,https://www.gem.wiki/Yona_solar_farm,gem_global_integrated_power_tracker
+ewp,G100001062047,L100001054214,Yona solar farm,GU,owner,Korea East-West Power Co Ltd,,https://www.gem.wiki/Yona_solar_farm,gem_global_integrated_power_tracker
+kepco,G100001062047,L100001054214,Yona solar farm,GU,owner,Korea Electric Power Corp,,https://www.gem.wiki/Yona_solar_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000100367,L100000102695,Asahimas Chemical power station,ID,parent,Mitsubishi Corp,0.115,https://www.gem.wiki/Asahimas_Chemical_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000112731,L100000102695,Asahimas Chemical power station,ID,parent,Mitsubishi Corp,0.115,https://www.gem.wiki/Asahimas_Chemical_power_station,gem_global_integrated_power_tracker
+jpower,G100000101261,L100000102709,Central Java Power Project,ID,parent,Electric Power Development Co Ltd,0.34,https://www.gem.wiki/Central_Java_Power_Project,gem_global_integrated_power_tracker
+itochu,G100000101261,L100000102709,Central Java Power Project,ID,parent,ITOCHU Corp,0.32,https://www.gem.wiki/Central_Java_Power_Project,gem_global_integrated_power_tracker
+jpower,G100000101262,L100000102709,Central Java Power Project,ID,parent,Electric Power Development Co Ltd,0.34,https://www.gem.wiki/Central_Java_Power_Project,gem_global_integrated_power_tracker
+itochu,G100000101262,L100000102709,Central Java Power Project,ID,parent,ITOCHU Corp,0.32,https://www.gem.wiki/Central_Java_Power_Project,gem_global_integrated_power_tracker
+marubeni,G100000101590,L100000102814,Cirebon power station,ID,parent,Marubeni Corp,0.325,https://www.gem.wiki/Cirebon_power_station,gem_global_integrated_power_tracker
+kepco,G100000101590,L100000102814,Cirebon power station,ID,parent,Korea Electric Power Corp,0.275,https://www.gem.wiki/Cirebon_power_station,gem_global_integrated_power_tracker
+marubeni,G100000101591,L100000102814,Cirebon power station,ID,parent,Marubeni Corp,0.325,https://www.gem.wiki/Cirebon_power_station,gem_global_integrated_power_tracker
+kepco,G100000101591,L100000102814,Cirebon power station,ID,parent,Korea Electric Power Corp,0.275,https://www.gem.wiki/Cirebon_power_station,gem_global_integrated_power_tracker
+marubeni,G100000112733,L100000102814,Cirebon power station,ID,parent,Marubeni Corp,0.325,https://www.gem.wiki/Cirebon_power_station,gem_global_integrated_power_tracker
+kepco,G100000112733,L100000102814,Cirebon power station,ID,parent,Korea Electric Power Corp,0.275,https://www.gem.wiki/Cirebon_power_station,gem_global_integrated_power_tracker
+koen,G100000104953,L100000102743,Jambi Tebo power station,ID,owner,Korea South-East Power Co Ltd,1.0,https://www.gem.wiki/Jambi_Tebo_power_station,gem_global_integrated_power_tracker
+kepco,G100000104953,L100000102743,Jambi Tebo power station,ID,parent,Korea Electric Power Corp,1.0,https://www.gem.wiki/Jambi_Tebo_power_station,gem_global_integrated_power_tracker
+koen,G100000104954,L100000102743,Jambi Tebo power station,ID,owner,Korea South-East Power Co Ltd,1.0,https://www.gem.wiki/Jambi_Tebo_power_station,gem_global_integrated_power_tracker
+kepco,G100000104954,L100000102743,Jambi Tebo power station,ID,parent,Korea Electric Power Corp,1.0,https://www.gem.wiki/Jambi_Tebo_power_station,gem_global_integrated_power_tracker
+komipo,G100000602159,L100000602133,Muara Juloi hydroelectric plant,ID,owner,Korea Midland Power CO LTD (KOMIPO),1.0,https://www.gem.wiki/Muara_Juloi_hydroelectric_plant,gem_global_integrated_power_tracker
+sumitomo_corp,G100000700188,L100000700113,Muarah Laboh geothermal plant,ID,owner,Sumitomo Corp,0.18,https://www.gem.wiki/Muarah_Laboh_geothermal_plant,gem_global_integrated_power_tracker
+sumitomo_corp,G100000700189,L100000700113,Muarah Laboh geothermal plant,ID,owner,Sumitomo Corp,0.18,https://www.gem.wiki/Muarah_Laboh_geothermal_plant,gem_global_integrated_power_tracker
+marubeni,G100000400914,L100000405276,PLTGU Jawa-1 power station,ID,parent,Marubeni Corp,0.4,https://www.gem.wiki/PLTGU_Jawa-1_power_station,gem_global_integrated_power_tracker
+sojitz,G100000400914,L100000405276,PLTGU Jawa-1 power station,ID,parent,Sojitz Corp,0.2,https://www.gem.wiki/PLTGU_Jawa-1_power_station,gem_global_integrated_power_tracker
+marubeni,G100000410593,L100000405276,PLTGU Jawa-1 power station,ID,parent,Marubeni Corp,0.4,https://www.gem.wiki/PLTGU_Jawa-1_power_station,gem_global_integrated_power_tracker
+sojitz,G100000410593,L100000405276,PLTGU Jawa-1 power station,ID,parent,Sojitz Corp,0.2,https://www.gem.wiki/PLTGU_Jawa-1_power_station,gem_global_integrated_power_tracker
+posco_international,G100001093557,L100001082958,PT Krakatau Posco Energy power station,ID,owner,Krakatau Posco Energy PT,1.0,https://www.gem.wiki/PT_Krakatau_Posco_Energy_power_station,gem_global_integrated_power_tracker
+posco_international,G100001093558,L100001082958,PT Krakatau Posco Energy power station,ID,owner,Krakatau Posco Energy PT,1.0,https://www.gem.wiki/PT_Krakatau_Posco_Energy_power_station,gem_global_integrated_power_tracker
+marubeni,G100000107732,L100000102729,Paiton-2 power station,ID,parent,Marubeni Corp,0.175,https://www.gem.wiki/Paiton-2_power_station,gem_global_integrated_power_tracker
+marubeni,G100000107733,L100000102729,Paiton-2 power station,ID,parent,Marubeni Corp,0.175,https://www.gem.wiki/Paiton-2_power_station,gem_global_integrated_power_tracker
+koen,G100000604725,L100000602139,Peusangan 4 hydroelectric plant,ID,owner,Korea South-East Power Co Ltd,0.25,https://www.gem.wiki/Peusangan_4_hydroelectric_plant,gem_global_integrated_power_tracker
+hyundai_ec,G100000604725,L100000602139,Peusangan 4 hydroelectric plant,ID,owner,Hyundai Engineering & Construction Co Ltd,0.3,https://www.gem.wiki/Peusangan_4_hydroelectric_plant,gem_global_integrated_power_tracker
+sumitomo_corp,G100000700237,L100000700144,Rajabasa geothermal power plant,ID,owner,Sumitomo Corp,0.33,https://www.gem.wiki/Rajabasa_geothermal_power_plant,gem_global_integrated_power_tracker
+sumitomo_corp,G100000700238,L100000700144,Rajabasa geothermal power plant,ID,owner,Sumitomo Corp,0.33,https://www.gem.wiki/Rajabasa_geothermal_power_plant,gem_global_integrated_power_tracker
+kansai,G100001051495,L100001045713,Rajamandala hydroelectric plant,ID,owner,Kansai Electric Power Co,,https://www.gem.wiki/Rajamandala_hydroelectric_plant,gem_global_integrated_power_tracker
+marubeni,G100000700240,L100000700146,Rantau Dedep geothermal power plant,ID,owner,Marubeni Corp,0.27,https://www.gem.wiki/Rantau_Dedep_geothermal_power_plant,gem_global_integrated_power_tracker
+tohoku,G100000700240,L100000700146,Rantau Dedep geothermal power plant,ID,owner,Tohoku Electric Power Co Inc,0.1,https://www.gem.wiki/Rantau_Dedep_geothermal_power_plant,gem_global_integrated_power_tracker
+komipo,G100001051492,L100001045710,Semangka hydroelectric plant,ID,owner,Korea Midland Power Co Ltd,,https://www.gem.wiki/Semangka_hydroelectric_plant,gem_global_integrated_power_tracker
+kepco,G100000109790,L100000102785,Tabalong power station,ID,parent,Korea Electric Power Corp,0.35,https://www.gem.wiki/Tabalong_power_station,gem_global_integrated_power_tracker
+kepco,G100000109791,L100000102785,Tabalong power station,ID,parent,Korea Electric Power Corp,0.35,https://www.gem.wiki/Tabalong_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000109956,L100000102714,Tanjung Jati B power station,ID,parent,Sumitomo Corp,1.0,https://www.gem.wiki/Tanjung_Jati_B_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000109957,L100000102714,Tanjung Jati B power station,ID,parent,Sumitomo Corp,1.0,https://www.gem.wiki/Tanjung_Jati_B_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000109958,L100000102714,Tanjung Jati B power station,ID,parent,Sumitomo Corp,0.5,https://www.gem.wiki/Tanjung_Jati_B_power_station,gem_global_integrated_power_tracker
+kansai,G100000109958,L100000102714,Tanjung Jati B power station,ID,parent,Kansai Electric Power Co,0.25,https://www.gem.wiki/Tanjung_Jati_B_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000109959,L100000102714,Tanjung Jati B power station,ID,parent,Sumitomo Corp,0.5,https://www.gem.wiki/Tanjung_Jati_B_power_station,gem_global_integrated_power_tracker
+kansai,G100000109959,L100000102714,Tanjung Jati B power station,ID,parent,Kansai Electric Power Co,0.25,https://www.gem.wiki/Tanjung_Jati_B_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000109960,L100000102714,Tanjung Jati B power station,ID,parent,Sumitomo Corp,1.0,https://www.gem.wiki/Tanjung_Jati_B_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000109961,L100000102714,Tanjung Jati B power station,ID,parent,Sumitomo Corp,1.0,https://www.gem.wiki/Tanjung_Jati_B_power_station,gem_global_integrated_power_tracker
+kepco,G100000401458,L100000401488,Mangaon Combined Cycle power plant,IN,parent,Korea Electric Power Corp,0.385,https://www.gem.wiki/Mangaon_Combined_Cycle_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000401484,L100000401514,P.Nallur Combined Cycle power plant,IN,parent,Marubeni Corp,0.26,https://www.gem.wiki/P.Nallur_Combined_Cycle_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000412584,L100000401514,P.Nallur Combined Cycle power plant,IN,parent,Marubeni Corp,0.26,https://www.gem.wiki/P.Nallur_Combined_Cycle_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000412585,L100000401514,P.Nallur Combined Cycle power plant,IN,parent,Marubeni Corp,0.26,https://www.gem.wiki/P.Nallur_Combined_Cycle_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000412586,L100000401514,P.Nallur Combined Cycle power plant,IN,parent,Marubeni Corp,0.26,https://www.gem.wiki/P.Nallur_Combined_Cycle_power_plant,gem_global_integrated_power_tracker
+sumitomo_corp,G100000109576,L100000102072,Srikakulam Thermal Power Station (Sumitomo),IN,owner,Sumitomo Corp,0.5,https://www.gem.wiki/Srikakulam_Thermal_Power_Station_(Sumitomo),gem_global_integrated_power_tracker
+marubeni,G100000110074,L100000102579,Tharangambadi power station (PPN Power),IN,parent,Marubeni Corp,0.26,https://www.gem.wiki/Tharangambadi_power_station_(PPN_Power),gem_global_integrated_power_tracker
+marubeni,G100000110075,L100000102579,Tharangambadi power station (PPN Power),IN,parent,Marubeni Corp,0.26,https://www.gem.wiki/Tharangambadi_power_station_(PPN_Power),gem_global_integrated_power_tracker
+marubeni,G100000400429,L100000400428,Rosignano power station,IT,parent,Marubeni Corp,0.33,https://www.gem.wiki/Rosignano_power_station,gem_global_integrated_power_tracker
+marubeni,G100001020490,L100000400428,Rosignano power station,IT,parent,Marubeni Corp,0.33,https://www.gem.wiki/Rosignano_power_station,gem_global_integrated_power_tracker
+kepco,G100000406671,L100000406600,Bogue power station,JM,parent,Korea Electric Power Corp,0.4,https://www.gem.wiki/Bogue_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406671,L100000406600,Bogue power station,JM,parent,Marubeni Corp,0.4,https://www.gem.wiki/Bogue_power_station,gem_global_integrated_power_tracker
+kepco,G100000411248,L100000407910,Hunts Bay power station,JM,parent,Korea Electric Power Corp,0.4,https://www.gem.wiki/Hunts_Bay_power_station,gem_global_integrated_power_tracker
+marubeni,G100000411248,L100000407910,Hunts Bay power station,JM,parent,Marubeni Corp,0.4,https://www.gem.wiki/Hunts_Bay_power_station,gem_global_integrated_power_tracker
+kepco,G100000406670,L100000406599,South Jamaica Power Centre,JM,parent,Korea Electric Power Corp,0.4,https://www.gem.wiki/South_Jamaica_Power_Centre,gem_global_integrated_power_tracker
+marubeni,G100000406670,L100000406599,South Jamaica Power Centre,JM,parent,Marubeni Corp,0.4,https://www.gem.wiki/South_Jamaica_Power_Centre,gem_global_integrated_power_tracker
+kepco,G100000404602,L100000405486,Al Qatrana power plant,JO,parent,Korea Electric Power Corp,0.8,https://www.gem.wiki/Al_Qatrana_power_plant,gem_global_integrated_power_tracker
+mitsui,G100000804668,L100000804086,Am Solar Power Plant,JO,owner,Mitsui & Co Ltd,,https://www.gem.wiki/Am_Solar_Power_Plant,gem_global_integrated_power_tracker
+mitsui,G100000404603,L100000405487,Amman East power plant,JO,parent,Mitsui & Co Ltd,0.4,https://www.gem.wiki/Amman_East_power_plant,gem_global_integrated_power_tracker
+kospo,G100000908108,L100000905929,Daehan wind farm,JO,owner,Korea Southern Power Co Ltd,0.5,https://www.gem.wiki/Daehan_wind_farm,gem_global_integrated_power_tracker
+dl_enc,G100000908108,L100000905929,Daehan wind farm,JO,owner,DL Energy Co Ltd,0.5,https://www.gem.wiki/Daehan_wind_farm,gem_global_integrated_power_tracker
+kepco,G100000908107,L100000905928,Fujeij wind farm,JO,owner,KEPCO,1.0,https://www.gem.wiki/Fujeij_wind_farm,gem_global_integrated_power_tracker
+kepco,G100000411581,L100000408212,IPP3 ICE power plant,JO,parent,Korea Electric Power Corp,0.6,https://www.gem.wiki/IPP3_ICE_power_plant,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000411581,L100000408212,IPP3 ICE power plant,JO,parent,Mitsubishi Corp,0.35,https://www.gem.wiki/IPP3_ICE_power_plant,gem_global_integrated_power_tracker
+mitsui,G100000411580,L100000408211,IPP4 Al-Manakher power plant,JO,parent,Mitsui & Co Ltd,0.5,https://www.gem.wiki/IPP4_Al-Manakher_power_plant,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000804642,L100000804063,Shams Ma'An solar farm,JO,owner,Diamond Generating Europe,,https://www.gem.wiki/Shams_Ma'An_solar_farm,gem_global_integrated_power_tracker
+kepco,G100000801577,L100000801373,Shin Chitose Kashiwadai Solar Power Plant,JP,owner,Korea Electric Power Corp,,https://www.gem.wiki/Shin_Chitose_Kashiwadai_Solar_Power_Plant,gem_global_integrated_power_tracker
+marubeni,G100000901211,L100000901040,Gangwon wind farm,KR,owner,Marubeni Corp,,https://www.gem.wiki/Gangwon_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000901211,L100000901040,Gangwon wind farm,KR,owner,Eurus Energy,,https://www.gem.wiki/Gangwon_wind_farm,gem_global_integrated_power_tracker
+marubeni,G100000901212,L100000901040,Gangwon wind farm,KR,owner,Marubeni Corp,,https://www.gem.wiki/Gangwon_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000901212,L100000901040,Gangwon wind farm,KR,owner,Eurus Energy,,https://www.gem.wiki/Gangwon_wind_farm,gem_global_integrated_power_tracker
+marubeni,G100000901213,L100000901040,Gangwon wind farm,KR,owner,Marubeni Corp,,https://www.gem.wiki/Gangwon_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000901213,L100000901040,Gangwon wind farm,KR,owner,Eurus Energy,,https://www.gem.wiki/Gangwon_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000900878,L100000900767,Gowon wind farm,KR,owner,Eurus Energy,1.0,https://www.gem.wiki/Gowon_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100001055350,L100001048241,Hajang 5 wind farm,KR,owner,Eurus Energy Holdings Corp,,https://www.gem.wiki/Hajang_5_wind_farm,gem_global_integrated_power_tracker
+mhi,G100000401385,L100000401384,Pocheon power station,KR,parent,Mitsubishi Heavy Industries Ltd,0.067,https://www.gem.wiki/Pocheon_power_station,gem_global_integrated_power_tracker
+mhi,G100000401386,L100000401384,Pocheon power station,KR,parent,Mitsubishi Heavy Industries Ltd,0.067,https://www.gem.wiki/Pocheon_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000901041,L100000900911,Samsu wind farm,KR,owner,Eurus Energy Holdings Corp,1.0,https://www.gem.wiki/Samsu_wind_farm,gem_global_integrated_power_tracker
+jpower,G100000920925,L100000916858,Sancheong Duncheolsan wind farm,KR,owner,Electric Power Development Co Ltd,1.0,https://www.gem.wiki/Sancheong_Duncheolsan_Wind_Power_Plant,gem_global_integrated_power_tracker
+kansai,G100000811029,L100000808751,Sinan (KEPCO) Solar Power Plant,KR,owner,Kansai Electric Power Co,,https://www.gem.wiki/Sinan_(KEPCO)_Solar_Power_Plant,gem_global_integrated_power_tracker
+toyota_tsusho,G100000900879,L100000900768,Taegisan wind farm,KR,owner,Eurus Energy,1.0,https://www.gem.wiki/Taegisan_wind_farm,gem_global_integrated_power_tracker
+kansai,G100000602405,L100000602375,Nam Ngiep 1 hydroelectric plant,LA,owner,Kansai Electric Power Co,0.45,https://www.gem.wiki/Nam_Ngiep_1_hydroelectric_plant,gem_global_integrated_power_tracker
+kowepo,G100000602433,L100000602403,Xe Pian Xe Namnoy hydroelectric plant,LA,owner,Korea Western Power Co Ltd,0.25,https://www.gem.wiki/Xe_Pian_Xe_Namnoy_hydroelectric_plant,gem_global_integrated_power_tracker
+sk_ecoplant,G100000602433,L100000602403,Xe Pian Xe Namnoy hydroelectric plant,LA,owner,SK Engineering & Construction CO LTD (SK E&C),0.24,https://www.gem.wiki/Xe_Pian_Xe_Namnoy_hydroelectric_plant,gem_global_integrated_power_tracker
+mitsui,G100000108700,L100000103053,Safi power station,MA,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Safi_power_station,gem_global_integrated_power_tracker
+mitsui,G100000108701,L100000103053,Safi power station,MA,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Safi_power_station,gem_global_integrated_power_tracker
+mitsui,G100000200987,L100000103053,Safi power station,MA,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Safi_power_station,gem_global_integrated_power_tracker
+jera,G100000410167,L100000407724,Bar gas power station,ME,owner,JERA Co Inc,1.0,https://www.gem.wiki/Bar_gas_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000100149,L100000103010,Ambatovy Nickel power station,MG,parent,Sumitomo Corp,0.542,https://www.gem.wiki/Ambatovy_Nickel_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000100150,L100000103010,Ambatovy Nickel power station,MG,parent,Sumitomo Corp,0.542,https://www.gem.wiki/Ambatovy_Nickel_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000100151,L100000103010,Ambatovy Nickel power station,MG,parent,Sumitomo Corp,0.542,https://www.gem.wiki/Ambatovy_Nickel_power_station,gem_global_integrated_power_tracker
+koen,G100000919417,L100000915710,Stip wind farm,MK,owner,Korea South-East Power Co Ltd,,https://www.gem.wiki/Stip_wind_farm,gem_global_integrated_power_tracker
+shikoku,G100000404370,L100000405327,Ahlone (Toyo Thai) power station,MM,owner,Shikoku Electric Power Co Inc,0.5,https://www.gem.wiki/Ahlone_(Toyo_Thai)_power_station,gem_global_integrated_power_tracker
+chugoku,G100000404370,L100000405327,Ahlone (Toyo Thai) power station,MM,parent,The Chugoku Electric Power Co Inc,0.142,https://www.gem.wiki/Ahlone_(Toyo_Thai)_power_station,gem_global_integrated_power_tracker
+shikoku,G100000405940,L100000405327,Ahlone (Toyo Thai) power station,MM,parent,Shikoku Electric Power Co Inc,0.285,https://www.gem.wiki/Ahlone_(Toyo_Thai)_power_station,gem_global_integrated_power_tracker
+chugoku,G100000405940,L100000405327,Ahlone (Toyo Thai) power station,MM,parent,The Chugoku Electric Power Co Inc,0.285,https://www.gem.wiki/Ahlone_(Toyo_Thai)_power_station,gem_global_integrated_power_tracker
+mitsui,G100000411300,L100000408086,Max Power (Thakayta) power station,MM,parent,Mitsui & Co Ltd,0.44,https://www.gem.wiki/Max_Power_(Thakayta)_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000107408,L100000103065,Nga Yoke Kaung power station,MM,owner,Mitsubishi Corporation Energy Solutions Ltd,0.5,https://www.gem.wiki/Nga_Yoke_Kaung_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000405943,L100000405956,Thilawa (Sumitomo) power station,MM,owner,Sumitomo Corp,0.5,https://www.gem.wiki/Thilawa_(Sumitomo)_power_station,gem_global_integrated_power_tracker
+mitsui,G100000405943,L100000405956,Thilawa (Sumitomo) power station,MM,owner,Mitsui & Co Ltd,0.25,https://www.gem.wiki/Thilawa_(Sumitomo)_power_station,gem_global_integrated_power_tracker
+marubeni,G100000405943,L100000405956,Thilawa (Sumitomo) power station,MM,owner,Marubeni Corp,0.25,https://www.gem.wiki/Thilawa_(Sumitomo)_power_station,gem_global_integrated_power_tracker
+marubeni,G100000109989,L100000103039,Tavan Tolgoi power station (Marubeni),MN,owner,Marubeni Corp,1.0,https://www.gem.wiki/Tavan_Tolgoi_power_station_(Marubeni),gem_global_integrated_power_tracker
+marubeni,G100000109990,L100000103039,Tavan Tolgoi power station (Marubeni),MN,owner,Marubeni Corp,1.0,https://www.gem.wiki/Tavan_Tolgoi_power_station_(Marubeni),gem_global_integrated_power_tracker
+marubeni,G100000113091,L100000103039,Tavan Tolgoi power station (Marubeni),MN,owner,Marubeni Corp,1.0,https://www.gem.wiki/Tavan_Tolgoi_power_station_(Marubeni),gem_global_integrated_power_tracker
+marubeni,G100000113092,L100000103039,Tavan Tolgoi power station (Marubeni),MN,owner,Marubeni Corp,1.0,https://www.gem.wiki/Tavan_Tolgoi_power_station_(Marubeni),gem_global_integrated_power_tracker
+tokyo_gas,G100000808629,L100000807275,Abril Photovoltaic Solar Project,MX,owner,Tokyo Gas Co Ltd,,https://www.gem.wiki/Abril_Photovoltaic_Solar_Project,gem_global_integrated_power_tracker
+toyota_tsusho,G100000906982,L100000905281,Coromuel wind farm,MX,owner,Eurus Energy,1.0,https://www.gem.wiki/Coromuel_wind_farm,gem_global_integrated_power_tracker
+kepco,G100000808681,L100000807303,El Mayo Photovoltaic solar farm,MX,owner,Korea Electric Power Corp,,https://www.gem.wiki/El_Mayo_Photovoltaic_solar_farm,gem_global_integrated_power_tracker
+kepco,G100000808682,L100000807304,Horus Photovoltaic solar farm,MX,owner,Korea Electric Power Corp,0.15,https://www.gem.wiki/Horus_Photovoltaic_solar_farm,gem_global_integrated_power_tracker
+kepco,G100000406382,L100000406237,Norte II power station,MX,parent,Korea Electric Power Corp,0.56,https://www.gem.wiki/Norte_II_power_station,gem_global_integrated_power_tracker
+samsung_ct,G100000406382,L100000406237,Norte II power station,MX,parent,Samsung C&T Corp,0.34,https://www.gem.wiki/Norte_II_power_station,gem_global_integrated_power_tracker
+mitsui,G100000906678,L100000905149,Pacifico wind farm (Mexico),MX,owner,Mitsui & Co Ltd,,https://www.gem.wiki/Pacifico_wind_farm_(Mexico),gem_global_integrated_power_tracker
+kepco,G100000808683,L100000807305,Tastiota Photovoltaic solar farm,MX,owner,Korea Electric Power Corp,,https://www.gem.wiki/Tastiota_Photovoltaic_solar_farm,gem_global_integrated_power_tracker
+tokyo_gas,G100000808628,L100000807274,Trompezón solar farm,MX,owner,Tokyo Gas Co Ltd,,https://www.gem.wiki/Trompezón_solar_farm,gem_global_integrated_power_tracker
+kyushu,G100000406438,L100000406258,Tuxpan II power station,MX,parent,Kyushu Electric Power Co Inc,0.5,https://www.gem.wiki/Tuxpan_II_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000406438,L100000406258,Tuxpan II power station,MX,parent,Mitsubishi Corp,0.5,https://www.gem.wiki/Tuxpan_II_power_station,gem_global_integrated_power_tracker
+kyushu,G100000406435,L100000406260,Tuxpan V power station,MX,parent,Kyushu Electric Power Co Inc,0.5,https://www.gem.wiki/Tuxpan_V_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000406435,L100000406260,Tuxpan V power station,MX,parent,Mitsubishi Corp,0.5,https://www.gem.wiki/Tuxpan_V_power_station,gem_global_integrated_power_tracker
+mitsui,G100000406433,L100000406261,Valladolid III power station,MX,parent,Mitsui & Co Ltd,0.5,https://www.gem.wiki/Valladolid_III_power_station,gem_global_integrated_power_tracker
+hanwha_energy,G100000801025,L100000800891,Chuping (Hanwha) solar farm,MY,owner,Hanwha Energy Corp,,https://www.gem.wiki/Chuping_(Hanwha)_solar_farm,gem_global_integrated_power_tracker
+mitsui,G100000105181,L100000103015,Jimah East power station,MY,parent,Mitsui & Co Ltd,0.15,https://www.gem.wiki/Jimah_East_power_station,gem_global_integrated_power_tracker
+chugoku,G100000105181,L100000103015,Jimah East power station,MY,parent,The Chugoku Electric Power Co Inc,0.15,https://www.gem.wiki/Jimah_East_power_station,gem_global_integrated_power_tracker
+mitsui,G100000105182,L100000103015,Jimah East power station,MY,parent,Mitsui & Co Ltd,0.15,https://www.gem.wiki/Jimah_East_power_station,gem_global_integrated_power_tracker
+chugoku,G100000105182,L100000103015,Jimah East power station,MY,parent,The Chugoku Electric Power Co Inc,0.15,https://www.gem.wiki/Jimah_East_power_station,gem_global_integrated_power_tracker
+kepco,G100000404367,L100000405308,Palua Indah power station,MY,owner,Korea Electric Power Corp,0.25,https://www.gem.wiki/Palua_Indah_power_station,gem_global_integrated_power_tracker
+kepco,G100000404368,L100000405308,Palua Indah power station,MY,owner,Korea Electric Power Corp,0.25,https://www.gem.wiki/Palua_Indah_power_station,gem_global_integrated_power_tracker
+hanwha_energy,G100000801448,L100000801263,Pekan (Hanwha Energy) solar farm,MY,owner,Hanwha Energy Corp,1.0,https://www.gem.wiki/Pekan_(Hanwha_Energy)_solar_farm,gem_global_integrated_power_tracker
+mitsui,G100000100020,L100000103058,ACWA Moatize power station,MZ,parent,Mitsui & Co Ltd,0.29,https://www.gem.wiki/ACWA_Moatize_power_station,gem_global_integrated_power_tracker
+mitsui,G100000100021,L100000103058,ACWA Moatize power station,MZ,parent,Mitsui & Co Ltd,0.29,https://www.gem.wiki/ACWA_Moatize_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000602544,L100000602513,Mphanda Nkuwa hydroelectric plant,MZ,owner,Sumitomo Corp,0.3,https://www.gem.wiki/Mphanda_Nkuwa_hydroelectric_plant,gem_global_integrated_power_tracker
+kepco,G100000407164,L100000406784,Egbin power station,NG,parent,KEPCO Energy Resources Ltd,0.7,https://www.gem.wiki/Egbin_power_station,gem_global_integrated_power_tracker
+kepco,G100000407165,L100000406784,Egbin power station,NG,parent,KEPCO Energy Resources Ltd,0.7,https://www.gem.wiki/Egbin_power_station,gem_global_integrated_power_tracker
+kepco,G100000407166,L100000406784,Egbin power station,NG,parent,KEPCO Energy Resources Ltd,0.7,https://www.gem.wiki/Egbin_power_station,gem_global_integrated_power_tracker
+kepco,G100000407167,L100000406784,Egbin power station,NG,parent,KEPCO Energy Resources Ltd,0.7,https://www.gem.wiki/Egbin_power_station,gem_global_integrated_power_tracker
+kepco,G100000407168,L100000406784,Egbin power station,NG,parent,KEPCO Energy Resources Ltd,0.7,https://www.gem.wiki/Egbin_power_station,gem_global_integrated_power_tracker
+kepco,G100000407169,L100000406784,Egbin power station,NG,parent,KEPCO Energy Resources Ltd,0.7,https://www.gem.wiki/Egbin_power_station,gem_global_integrated_power_tracker
+kepco,G100000407170,L100000406784,Egbin power station,NG,parent,KEPCO Energy Resources Ltd,0.7,https://www.gem.wiki/Egbin_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100001001502,L100001001109,Borssele III & IV offshore wind farm,NL,owner,Diamond Generating Corp,0.15,https://www.gem.wiki/Borssele_III_&_IV_offshore_wind_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100001001503,L100001001109,Borssele III & IV offshore wind farm,NL,owner,Diamond Generating Corp,0.15,https://www.gem.wiki/Borssele_III_&_IV_offshore_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000915732,L100000912601,Deil Windpark,NL,owner,Eurus Energy,,https://www.gem.wiki/Deil_Windpark,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000200272,L100000200240,Eneco Bio Golden Raand power station,NL,parent,Mitsubishi Corp,0.8,https://www.gem.wiki/Eneco_Bio_Golden_Raand_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000919565,L100000915830,Eneco Luchterduinen wind farm,NL,owner,Mitsubishi Corporation Energy Solutions Ltd,,https://www.gem.wiki/Eneco_Luchterduinen_wind_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000400522,L100000400522,Enecogen power station,NL,parent,Mitsubishi Corp,0.4,https://www.gem.wiki/Enecogen_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000400523,L100000400522,Enecogen power station,NL,parent,Mitsubishi Corp,0.4,https://www.gem.wiki/Enecogen_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409937,L100000407615,Lage Weide 6 power station,NL,parent,Mitsubishi Corp,0.8,https://www.gem.wiki/Lage_Weide_6_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000919566,L100000915831,Luchterduinen wind farm,NL,owner,Mitsubishi Corporation Energy Solutions Ltd,,https://www.gem.wiki/Luchterduinen_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000925203,L100000920511,Mauve wind farm,NL,owner,Eurus Energy,1.0,https://www.gem.wiki/Mauve_wind_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000400547,L100000400546,Merwedekanaal power station,NL,parent,Mitsubishi Corp,0.8,https://www.gem.wiki/Merwedekanaal_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000917534,L100000914140,Mondriaan wind farm,NL,owner,Eurus Energy,1.0,https://www.gem.wiki/Mondriaan_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000925208,L100000920513,N33 wind farm,NL,owner,Eurus Energy,1.0,https://www.gem.wiki/N33_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000910908,L100000908217,Van Gogh Windpark,NL,owner,Eurus Energy,1.0,https://www.gem.wiki/Van_Gogh_Windpark,gem_global_integrated_power_tracker
+toyota_tsusho,G100000925252,L100000920549,Vermeer wind farm,NL,owner,Eurus Energy,1.0,https://www.gem.wiki/Vermeer_wind_farm,gem_global_integrated_power_tracker
+kansai,G100001001606,L100001001205,GoliatVind Offshore wind farm,NO,owner,Kansai Electric Power Co,,https://www.gem.wiki/GoliatVind_Offshore_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000912690,L100000909896,Hog Jaeren wind farm,NO,owner,Eurus Energy,,https://www.gem.wiki/Hog_Jaeren_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000918907,L100000909896,Hog Jaeren wind farm,NO,owner,Eurus Energy,,https://www.gem.wiki/Hog_Jaeren_wind_farm,gem_global_integrated_power_tracker
+koen,G100000604925,L100000602811,Upper Trishuli 1 hydroelectric plant,NP,owner,Koen,0.5,https://www.gem.wiki/Upper_Trishuli_1_hydroelectric_plant,gem_global_integrated_power_tracker
+dl_enc,G100000604925,L100000602811,Upper Trishuli 1 hydroelectric plant,NP,owner,Daelim Co Ltd,0.15,https://www.gem.wiki/Upper_Trishuli_1_hydroelectric_plant,gem_global_integrated_power_tracker
+jera,G100001051109,L100001045407,South Taranaki Bight (Parkwind) offshore wind farm,NZ,owner,JERA Co Inc,,https://www.gem.wiki/South_Taranaki_Bight_(Parkwind)_offshore_wind_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100001051112,L100001045409,Taranaki Bight offshore wind farm,NZ,owner,Sumitomo Corp,,https://www.gem.wiki/Taranaki_Bight_offshore_wind_farm,gem_global_integrated_power_tracker
+marubeni,G100000804621,L100000804048,Amin Solar PV Power Plant,OM,owner,Marubeni Corp,0.5,https://www.gem.wiki/Amin_Solar_PV_Power_Plant,gem_global_integrated_power_tracker
+komipo,G100000834618,L100000830750,Ibri 3 solar farm,OM,owner,Korea Midland Power Co Ltd,,https://www.gem.wiki/Ibri_3_solar_farm,gem_global_integrated_power_tracker
+mitsui,G100000404688,L100000405508,Ibri Independent power plant,OM,parent,Mitsui & Co Ltd,0.501,https://www.gem.wiki/Ibri_Independent_power_plant,gem_global_integrated_power_tracker
+posco_international,G100000411532,L100000408234,New Qalhat LNG power station,OM,parent,POSCO International Corp,0.01,https://www.gem.wiki/New_Qalhat_LNG_power_station,gem_global_integrated_power_tracker
+samsung_ct,G100000411532,L100000408234,New Qalhat LNG power station,OM,parent,Samsung C&T Corp,0.01,https://www.gem.wiki/New_Qalhat_LNG_power_station,gem_global_integrated_power_tracker
+posco_international,G100000410072,L100000407694,Qalhat LNG power station,OM,parent,POSCO International Corp,0.01,https://www.gem.wiki/Qalhat_LNG_power_station,gem_global_integrated_power_tracker
+samsung_ct,G100000410072,L100000407694,Qalhat LNG power station,OM,parent,Samsung C&T Corp,0.01,https://www.gem.wiki/Qalhat_LNG_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404706,L100000405524,Sohar III power plant,OM,parent,Mitsui & Co Ltd,0.501,https://www.gem.wiki/Sohar_III_power_plant,gem_global_integrated_power_tracker
+mitsui,G100000411167,L100000405524,Sohar III power plant,OM,parent,Mitsui & Co Ltd,0.501,https://www.gem.wiki/Sohar_III_power_plant,gem_global_integrated_power_tracker
+jera,G100000404707,L100000405526,Sur Independent power plant,OM,parent,JERA Power Management Mid East BV,0.25,https://www.gem.wiki/Sur_Independent_power_plant,gem_global_integrated_power_tracker
+jera,G100000411165,L100000405526,Sur Independent power plant,OM,parent,JERA Power Management Mid East BV,0.25,https://www.gem.wiki/Sur_Independent_power_plant,gem_global_integrated_power_tracker
+jera,G100000411166,L100000405526,Sur Independent power plant,OM,parent,JERA Power Management Mid East BV,0.25,https://www.gem.wiki/Sur_Independent_power_plant,gem_global_integrated_power_tracker
+jera,G100000411259,L100000408899,Aboitiz Cebu LNG power station,PH,owner,JERA Co Inc,0.5,https://www.gem.wiki/Aboitiz_Cebu_LNG_power_station,gem_global_integrated_power_tracker
+jera,G100000604224,L100000604168,Bakun AC hydroelectric plant,PH,owner,JERA Co Inc,0.27,https://www.gem.wiki/Bakun_AC_hydroelectric_plant,gem_global_integrated_power_tracker
+kepco,G100000105677,L100000103172,KEPCO Subic Bay power station,PH,owner,KEPCO Philippines Corp,1.0,https://www.gem.wiki/KEPCO_Subic_Bay_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000105513,L100000103197,Kamanga power station,PH,parent,Toyota Tsusho Corp,0.25,https://www.gem.wiki/Kamanga_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000105514,L100000103197,Kamanga power station,PH,parent,Toyota Tsusho Corp,0.25,https://www.gem.wiki/Kamanga_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000405948,L100000405960,Lloyds Energy power station,PH,owner,Mitsubishi Corp,0.5,https://www.gem.wiki/Lloyds_Energy_power_station,gem_global_integrated_power_tracker
+marubeni,G100000107724,L100000103166,Pagbilao power station,PH,parent,Marubeni Corp,0.25,https://www.gem.wiki/Pagbilao_power_station,gem_global_integrated_power_tracker
+kepco,G100000107750,L100000103201,Panay power plant (Kepco),PH,owner,KEPCO Philippines Corp,1.0,https://www.gem.wiki/Panay_power_plant_(Kepco),gem_global_integrated_power_tracker
+kepco,G100000114104,L100000103201,Panay power plant (Kepco),PH,owner,KEPCO Philippines Corp,1.0,https://www.gem.wiki/Panay_power_plant_(Kepco),gem_global_integrated_power_tracker
+itochu,G100001054434,L100001047737,San Mariano Biomass power station,PH,parent,ITOCHU Corp,,https://www.gem.wiki/San_Mariano_Biomass_power_station,gem_global_integrated_power_tracker
+jgc,G100001054434,L100001047737,San Mariano Biomass power station,PH,parent,JGC Holdings Corp,,https://www.gem.wiki/San_Mariano_Biomass_power_station,gem_global_integrated_power_tracker
+kepco,G100000113917,L100000104384,Sual KEPCO Power Station,PH,owner,KEPCO Philippines Corp,1.0,https://www.gem.wiki/Sual_KEPCO_Power_Station,gem_global_integrated_power_tracker
+kepco,G100000114305,L100000104384,Sual KEPCO Power Station,PH,owner,KEPCO Philippines Corp,1.0,https://www.gem.wiki/Sual_KEPCO_Power_Station,gem_global_integrated_power_tracker
+koen,G100000603038,L100000603005,Asrit-Kedam hydroelectric plant,PK,owner,Korea South-East Power Co Ltd,1.0,https://www.gem.wiki/Asrit-Kedam_hydroelectric_plant,gem_global_integrated_power_tracker
+khnp,G100000603039,L100000603006,Athmuqam hydroelectric plant,PK,owner,Korea Hydro & Nuclear Power (KHNP) Co Ltd,1.0,https://www.gem.wiki/Athmuqam_hydroelectric_plant,gem_global_integrated_power_tracker
+dl_enc,G100000901029,L100000900899,Gul Ahmed (DL Energy) wind farm,PK,owner,DL Energy Co Ltd,,https://www.gem.wiki/Gul_Ahmed_(DL_Energy)_wind_farm,gem_global_integrated_power_tracker
+dl_enc,G100000900916,L100000900804,Hawa Energy wind farm,PK,owner,DL Energy Co Ltd,,https://www.gem.wiki/Hawa_Energy_wind_farm,gem_global_integrated_power_tracker
+koen,G100000603057,L100000603024,Kalam-Asrit hydroelectric plant,PK,owner,Korea South-East Power Co Ltd,1.0,https://www.gem.wiki/Kalam-Asrit_hydroelectric_plant,gem_global_integrated_power_tracker
+daewoo_ec,G100000603064,L100000603031,Lower Palas Valley hydroelectric plant,PK,owner,Daewoo Engineering & Construction Co Ltd,,https://www.gem.wiki/Lower_Palas_Valley_hydroelectric_plant,gem_global_integrated_power_tracker
+lotte_ec,G100000603065,L100000603032,Lower Spat Gah hydroelectric plant,PK,owner,Lotte Engineering & Construction Co Ltd,0.06,https://www.gem.wiki/Lower_Spat_Gah_hydroelectric_plant,gem_global_integrated_power_tracker
+komipo,G100000603065,L100000603032,Lower Spat Gah hydroelectric plant,PK,owner,Korea Midland Power CO LTD (KOMIPO),0.34,https://www.gem.wiki/Lower_Spat_Gah_hydroelectric_plant,gem_global_integrated_power_tracker
+dl_enc,G100000603065,L100000603032,Lower Spat Gah hydroelectric plant,PK,owner,DL Energy,0.14,https://www.gem.wiki/Lower_Spat_Gah_hydroelectric_plant,gem_global_integrated_power_tracker
+dl_enc,G100000900949,L100000900833,Metro Power wind farm,PK,owner,DL Energy Co Ltd,,https://www.gem.wiki/Metro_Power_wind_farm,gem_global_integrated_power_tracker
+daewoo_ec,G100000603079,L100000603045,Patrind hydroelectric plant,PK,owner,Daewoo Engineering & Construction Co Ltd,,https://www.gem.wiki/Patrind_hydroelectric_plant,gem_global_integrated_power_tracker
+mitsui,G100000918205,L100000914714,Łosino wind farm,PL,owner,Mitsui & Co Ltd,1.0,https://www.gem.wiki/Łosino_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000402109,L100000402537,EcoElectrica power station,PR,parent,Mitsui & Co Ltd,0.15,https://www.gem.wiki/EcoElectrica_power_station,gem_global_integrated_power_tracker
+marubeni,G100000400584,L100000400584,Elecgas Pego power station,PT,parent,Marubeni Corp,0.25,https://www.gem.wiki/Elecgas_Pego_power_station,gem_global_integrated_power_tracker
+marubeni,G100000400585,L100000400584,Elecgas Pego power station,PT,parent,Marubeni Corp,0.25,https://www.gem.wiki/Elecgas_Pego_power_station,gem_global_integrated_power_tracker
+marubeni,G100000107913,L100000103283,Pego power station,PT,parent,Marubeni Corp,0.281,https://www.gem.wiki/Pego_power_station,gem_global_integrated_power_tracker
+marubeni,G100000107914,L100000103283,Pego power station,PT,parent,Marubeni Corp,0.281,https://www.gem.wiki/Pego_power_station,gem_global_integrated_power_tracker
+marubeni,G100000114668,L100000400593,Tapada do Outeiro power station,PT,parent,Marubeni Corp,0.5,https://www.gem.wiki/Tapada_do_Outeiro_power_station,gem_global_integrated_power_tracker
+marubeni,G100000400593,L100000400593,Tapada do Outeiro power station,PT,parent,Marubeni Corp,0.5,https://www.gem.wiki/Tapada_do_Outeiro_power_station,gem_global_integrated_power_tracker
+marubeni,G100000400594,L100000400593,Tapada do Outeiro power station,PT,parent,Marubeni Corp,0.5,https://www.gem.wiki/Tapada_do_Outeiro_power_station,gem_global_integrated_power_tracker
+marubeni,G100000400595,L100000400593,Tapada do Outeiro power station,PT,parent,Marubeni Corp,0.5,https://www.gem.wiki/Tapada_do_Outeiro_power_station,gem_global_integrated_power_tracker
+marubeni,G100000804692,L100000804101,Al Kharsaah Solar,QA,owner,Marubeni Corp,0.2,https://www.gem.wiki/Al_Kharsaah_Solar,gem_global_integrated_power_tracker
+marubeni,G100000804693,L100000804101,Al Kharsaah Solar,QA,owner,Marubeni Corp,0.2,https://www.gem.wiki/Al_Kharsaah_Solar,gem_global_integrated_power_tracker
+mitsui,G100000404740,L100000405536,Ras Laffan C power plant,QA,parent,Mitsui & Co Ltd,0.1,https://www.gem.wiki/Ras_Laffan_C_power_plant,gem_global_integrated_power_tracker
+shikoku,G100000404740,L100000405536,Ras Laffan C power plant,QA,parent,Shikoku Electric Power Co Inc,0.05,https://www.gem.wiki/Ras_Laffan_C_power_plant,gem_global_integrated_power_tracker
+mitsui,G100000404741,L100000405536,Ras Laffan C power plant,QA,parent,Mitsui & Co Ltd,0.1,https://www.gem.wiki/Ras_Laffan_C_power_plant,gem_global_integrated_power_tracker
+shikoku,G100000404741,L100000405536,Ras Laffan C power plant,QA,parent,Shikoku Electric Power Co Inc,0.05,https://www.gem.wiki/Ras_Laffan_C_power_plant,gem_global_integrated_power_tracker
+mitsui,G100000404742,L100000405536,Ras Laffan C power plant,QA,parent,Mitsui & Co Ltd,0.1,https://www.gem.wiki/Ras_Laffan_C_power_plant,gem_global_integrated_power_tracker
+shikoku,G100000404742,L100000405536,Ras Laffan C power plant,QA,parent,Shikoku Electric Power Co Inc,0.05,https://www.gem.wiki/Ras_Laffan_C_power_plant,gem_global_integrated_power_tracker
+mitsui,G100000404743,L100000405536,Ras Laffan C power plant,QA,parent,Mitsui & Co Ltd,0.1,https://www.gem.wiki/Ras_Laffan_C_power_plant,gem_global_integrated_power_tracker
+shikoku,G100000404743,L100000405536,Ras Laffan C power plant,QA,parent,Shikoku Electric Power Co Inc,0.05,https://www.gem.wiki/Ras_Laffan_C_power_plant,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000404749,L100000405538,Umm Al Houl power plant,QA,parent,Mitsubishi Corp,0.2,https://www.gem.wiki/Umm_Al_Houl_power_plant,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000410062,L100000405538,Umm Al Houl power plant,QA,parent,Mitsubishi Corp,0.2,https://www.gem.wiki/Umm_Al_Houl_power_plant,gem_global_integrated_power_tracker
+hyundai_engineering,G100001050396,L100001044859,Bački Gračac solar farm,RS,owner,Hyundai Engineering - UGT Renewables,,https://www.gem.wiki/Bački_Gračac_solar_farm,gem_global_integrated_power_tracker
+hyundai_engineering,G100001050400,L100001044863,Jablanica solar farm,RS,owner,Hyundai Engineering - UGT Renewables,,https://www.gem.wiki/Jablanica_solar_farm,gem_global_integrated_power_tracker
+hyundai_engineering,G100001050397,L100001044860,Jasenica solar farm,RS,owner,Hyundai Engineering - UGT Renewables,,https://www.gem.wiki/Jasenica_solar_farm,gem_global_integrated_power_tracker
+hyundai_engineering,G100001050401,L100001044864,Sikole solar farm,RS,owner,Hyundai Engineering - UGT Renewables,,https://www.gem.wiki/Sikole_solar_farm,gem_global_integrated_power_tracker
+hyundai_engineering,G100001050399,L100001044862,Srpska Kuća solar farm,RS,owner,Hyundai Engineering - UGT Renewables,,https://www.gem.wiki/Srpska_Kuća_solar_farm,gem_global_integrated_power_tracker
+hyundai_engineering,G100001050398,L100001044861,Togočevce solar farm,RS,owner,Hyundai Engineering - UGT Renewables,,https://www.gem.wiki/Togočevce_solar_farm,gem_global_integrated_power_tracker
+itochu,G100000200353,L100000200317,Vinca Waste-to-Energy power station,RS,parent,ITOCHU Corp,,https://www.gem.wiki/Vinca_Waste-to-Energy_power_station,gem_global_integrated_power_tracker
+mitsui,G100001070617,L100001061607,Arctic LNG 2 Terminal power station,RU,parent,Mitsui & Co Ltd,0.025,https://www.gem.wiki/Arctic_LNG_2_Terminal_power_station,gem_global_integrated_power_tracker
+mitsui,G100001070620,L100001061607,Arctic LNG 2 Terminal power station,RU,parent,Mitsui & Co Ltd,0.025,https://www.gem.wiki/Arctic_LNG_2_Terminal_power_station,gem_global_integrated_power_tracker
+mitsui,G100001070621,L100001061607,Arctic LNG 2 Terminal power station,RU,parent,Mitsui & Co Ltd,0.025,https://www.gem.wiki/Arctic_LNG_2_Terminal_power_station,gem_global_integrated_power_tracker
+kepco,G100001021007,L100001018745,Al Sadawi solar farm,SA,owner,Korea Electric Power Corp,,https://www.gem.wiki/Al_Sadawi_solar_farm,gem_global_integrated_power_tracker
+kepco,G100001004868,L100001004183,Nairyah IPP Power Plant,SA,owner,Korea Electric Power Corp,0.65,https://www.gem.wiki/Nairyah_IPP_Power_Plant,gem_global_integrated_power_tracker
+jera,G100001004869,L100001004183,Nairyah IPP Power Plant,SA,owner,JERA Co Inc,0.31,https://www.gem.wiki/Nairyah_IPP_Power_Plant,gem_global_integrated_power_tracker
+samsung_ct,G100000404756,L100000405553,Qurayyah CC power plant,SA,parent,Samsung C&T Corp,0.125,https://www.gem.wiki/Qurayyah_CC_power_plant,gem_global_integrated_power_tracker
+samsung_ct,G100000404757,L100000405553,Qurayyah CC power plant,SA,parent,Samsung C&T Corp,0.125,https://www.gem.wiki/Qurayyah_CC_power_plant,gem_global_integrated_power_tracker
+samsung_ct,G100000404758,L100000405553,Qurayyah CC power plant,SA,parent,Samsung C&T Corp,0.125,https://www.gem.wiki/Qurayyah_CC_power_plant,gem_global_integrated_power_tracker
+samsung_ct,G100000404759,L100000405553,Qurayyah CC power plant,SA,parent,Samsung C&T Corp,0.125,https://www.gem.wiki/Qurayyah_CC_power_plant,gem_global_integrated_power_tracker
+samsung_ct,G100000404760,L100000405553,Qurayyah CC power plant,SA,parent,Samsung C&T Corp,0.125,https://www.gem.wiki/Qurayyah_CC_power_plant,gem_global_integrated_power_tracker
+samsung_ct,G100000404761,L100000405553,Qurayyah CC power plant,SA,parent,Samsung C&T Corp,0.125,https://www.gem.wiki/Qurayyah_CC_power_plant,gem_global_integrated_power_tracker
+marubeni,G100000411495,L100000408240,Rabigh IPP power station,SA,parent,Marubeni Corp,0.204,https://www.gem.wiki/Rabigh_IPP_power_station,gem_global_integrated_power_tracker
+jgc,G100000411495,L100000408240,Rabigh IPP power station,SA,parent,JGC Holdings Corp,0.09,https://www.gem.wiki/Rabigh_IPP_power_station,gem_global_integrated_power_tracker
+marubeni,G100000411496,L100000408240,Rabigh IPP power station,SA,parent,Marubeni Corp,0.204,https://www.gem.wiki/Rabigh_IPP_power_station,gem_global_integrated_power_tracker
+jgc,G100000411496,L100000408240,Rabigh IPP power station,SA,parent,JGC Holdings Corp,0.09,https://www.gem.wiki/Rabigh_IPP_power_station,gem_global_integrated_power_tracker
+marubeni,G100000804626,L100000804053,Rabigh Solar PV,SA,owner,Marubeni Corp,,https://www.gem.wiki/Rabigh_Solar_PV,gem_global_integrated_power_tracker
+kepco,G100001004865,L100001004179,Rumah IPP Power Plant,SA,owner,Korea Electric Power Corp,0.5,https://www.gem.wiki/Rumah_IPP_Power_Plant,gem_global_integrated_power_tracker
+jera,G100001004866,L100001004179,Rumah IPP Power Plant,SA,owner,JERA Co Inc,0.33,https://www.gem.wiki/Rumah_IPP_Power_Plant,gem_global_integrated_power_tracker
+jera,G100001053404,L100001047046,SATORP power plant,SA,owner,JERA Co Inc,0.49,https://www.gem.wiki/SATORP_power_plant,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000411439,L100000408248,Shuqaiq 2 Independent Water and Power Project,SA,owner,Mitsubishi Corp,0.06,https://www.gem.wiki/Shuqaiq_2_Independent_Water_and_Power_Project,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000411440,L100000408248,Shuqaiq 2 Independent Water and Power Project,SA,owner,Mitsubishi Corp,0.06,https://www.gem.wiki/Shuqaiq_2_Independent_Water_and_Power_Project,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000411441,L100000408248,Shuqaiq 2 Independent Water and Power Project,SA,owner,Mitsubishi Corp,0.06,https://www.gem.wiki/Shuqaiq_2_Independent_Water_and_Power_Project,gem_global_integrated_power_tracker
+marubeni,G100000410899,L100000408011,Tanajib Cogeneration and Desalination power plant,SA,owner,Marubeni Corp,0.3,https://www.gem.wiki/Tanajib_Cogeneration_and_Desalination_power_plant,gem_global_integrated_power_tracker
+toyota_tsusho,G100000804741,L100000804148,Wadi Ad Dawasir Solar PV Plant,SA,owner,Toyota Tsusho Corp,,https://www.gem.wiki/Wadi_Ad_Dawasir_Solar_PV_Plant,gem_global_integrated_power_tracker
+kepco,G100000105675,L100000103396,Kepco Sendou power station,SN,owner,Korea Electric Power Corp,1.0,https://www.gem.wiki/Kepco_Sendou_power_station,gem_global_integrated_power_tracker
+kepco,G100000105676,L100000103396,Kepco Sendou power station,SN,owner,Korea Electric Power Corp,1.0,https://www.gem.wiki/Kepco_Sendou_power_station,gem_global_integrated_power_tracker
+kepco,G100000109777,L100000103525,KEPCO Eswatini power station,SZ,owner,Korea Electric Power Corp,1.0,https://www.gem.wiki/KEPCO_Eswatini_power_station,gem_global_integrated_power_tracker
+jpower,G100000404486,L100000405369,Chachoengsao NNK cogeneration power station,TH,parent,Electric Power Development Co Ltd,0.6,https://www.gem.wiki/Chachoengsao_NNK_cogeneration_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401094,L100000405372,Chonburi Ng Project power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Chonburi_Ng_Project_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401095,L100000405372,Chonburi Ng Project power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Chonburi_Ng_Project_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401096,L100000405372,Chonburi Ng Project power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Chonburi_Ng_Project_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401097,L100000405372,Chonburi Ng Project power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Chonburi_Ng_Project_power_station,gem_global_integrated_power_tracker
+jpower,G100000404422,L100000405373,EGCO cogeneration (Rayong) power station,TH,owner,J-POWER Holdings (Thailand) Co Ltd,0.2,https://www.gem.wiki/EGCO_cogeneration_(Rayong)_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404487,L100000405381,Gulf BL power station,TH,parent,Mitsui & Co Ltd,0.225,https://www.gem.wiki/Gulf_BL_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404488,L100000405382,Gulf BP power station,TH,parent,Mitsui & Co Ltd,0.225,https://www.gem.wiki/Gulf_BP_power_station,gem_global_integrated_power_tracker
+jpower,G100000404501,L100000405383,Gulf CRN power station,TH,parent,Electric Power Development Co Ltd,0.6,https://www.gem.wiki/Gulf_CRN_power_station,gem_global_integrated_power_tracker
+jpower,G100000404497,L100000405384,Gulf KP1 & 2 power station,TH,parent,Electric Power Development Co Ltd,0.6,https://www.gem.wiki/Gulf_KP1_&_2_power_station,gem_global_integrated_power_tracker
+jpower,G100000404498,L100000405384,Gulf KP1 & 2 power station,TH,parent,Electric Power Development Co Ltd,0.6,https://www.gem.wiki/Gulf_KP1_&_2_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404489,L100000405385,Gulf NC power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Gulf_NC_power_station,gem_global_integrated_power_tracker
+jpower,G100000404499,L100000405386,Gulf NK2 power station,TH,parent,Electric Power Development Co Ltd,0.6,https://www.gem.wiki/Gulf_NK2_power_station,gem_global_integrated_power_tracker
+jpower,G100000404490,L100000405387,Gulf NLL power station,TH,parent,Electric Power Development Co Ltd,0.45,https://www.gem.wiki/Gulf_NLL_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404491,L100000405387,Gulf NLL power station,TH,parent,Mitsui & Co Ltd,0.225,https://www.gem.wiki/Gulf_NLL_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401103,L100000405389,Gulf NPM power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Gulf_NPM_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401104,L100000405390,Gulf NRV power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Gulf_NRV_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401105,L100000405390,Gulf NRV power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Gulf_NRV_power_station,gem_global_integrated_power_tracker
+jpower,G100000404500,L100000405391,Gulf TLC power station,TH,parent,Electric Power Development Co Ltd,0.6,https://www.gem.wiki/Gulf_TLC_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404492,L100000405392,Gulf Tasit 1 & 2 power station,TH,parent,Mitsui & Co Ltd,0.225,https://www.gem.wiki/Gulf_Tasit_1_&_2_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404493,L100000405392,Gulf Tasit 1 & 2 power station,TH,parent,Mitsui & Co Ltd,0.225,https://www.gem.wiki/Gulf_Tasit_1_&_2_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404494,L100000405393,Gulf Tasit 3 & 4 power station,TH,parent,Mitsui & Co Ltd,0.225,https://www.gem.wiki/Gulf_Tasit_3_&_4_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404495,L100000405393,Gulf Tasit 3 & 4 power station,TH,parent,Mitsui & Co Ltd,0.225,https://www.gem.wiki/Gulf_Tasit_3_&_4_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404496,L100000405394,Gulf VTP power station,TH,parent,Mitsui & Co Ltd,0.225,https://www.gem.wiki/Gulf_VTP_power_station,gem_global_integrated_power_tracker
+jpower,G100000404427,L100000405399,Kaeng Khoi 2 power station,TH,owner,J-POWER Holdings (Thailand) Co Ltd,0.49,https://www.gem.wiki/Kaeng_Khoi_2_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404427,L100000405399,Kaeng Khoi 2 power station,TH,parent,Mitsui & Co Ltd,0.01,https://www.gem.wiki/Kaeng_Khoi_2_power_station,gem_global_integrated_power_tracker
+jpower,G100000404428,L100000405399,Kaeng Khoi 2 power station,TH,owner,J-POWER Holdings (Thailand) Co Ltd,0.49,https://www.gem.wiki/Kaeng_Khoi_2_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404428,L100000405399,Kaeng Khoi 2 power station,TH,parent,Mitsui & Co Ltd,0.01,https://www.gem.wiki/Kaeng_Khoi_2_power_station,gem_global_integrated_power_tracker
+jpower,G100000404445,L100000405408,Nong Khae power station,TH,owner,J-POWER Holdings (Thailand) Co Ltd,0.49,https://www.gem.wiki/Nong_Khae_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404445,L100000405408,Nong Khae power station,TH,parent,Mitsui & Co Ltd,0.01,https://www.gem.wiki/Nong_Khae_power_station,gem_global_integrated_power_tracker
+jpower,G100000404446,L100000405409,Nong Saeng power station,TH,parent,Electric Power Development Co Ltd,0.6,https://www.gem.wiki/Nong_Saeng_power_station,gem_global_integrated_power_tracker
+jpower,G100000404447,L100000405409,Nong Saeng power station,TH,parent,Electric Power Development Co Ltd,0.6,https://www.gem.wiki/Nong_Saeng_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401098,L100000405416,Rayong Gulf PD power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Rayong_Gulf_PD_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401099,L100000405416,Rayong Gulf PD power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Rayong_Gulf_PD_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401100,L100000405416,Rayong Gulf PD power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Rayong_Gulf_PD_power_station,gem_global_integrated_power_tracker
+mitsui,G100000401101,L100000405416,Rayong Gulf PD power station,TH,parent,Mitsui & Co Ltd,0.3,https://www.gem.wiki/Rayong_Gulf_PD_power_station,gem_global_integrated_power_tracker
+jpower,G100000404434,L100000405422,Samutprakarn power station,TH,owner,J-POWER Holdings (Thailand) Co Ltd,0.49,https://www.gem.wiki/Samutprakarn_power_station,gem_global_integrated_power_tracker
+mitsui,G100000404434,L100000405422,Samutprakarn power station,TH,parent,Mitsui & Co Ltd,0.01,https://www.gem.wiki/Samutprakarn_power_station,gem_global_integrated_power_tracker
+kowepo,G100000409726,L100000407521,Songkhla Chana power station,TH,owner,Korea Western Power Co Ltd,1.0,https://www.gem.wiki/Songkhla_Chana_power_station,gem_global_integrated_power_tracker
+kepco,G100000409726,L100000407521,Songkhla Chana power station,TH,parent,Korea Electric Power Corp,1.0,https://www.gem.wiki/Songkhla_Chana_power_station,gem_global_integrated_power_tracker
+kansai,G100001023731,L100001020783,Sumitomo Rubber solar farm,TH,owner,Kansai Electric Power Co,,https://www.gem.wiki/Sumitomo_Rubber_solar_farm,gem_global_integrated_power_tracker
+jpower,G100000404508,L100000405431,U-Thai power station,TH,parent,Electric Power Development Co Ltd,0.6,https://www.gem.wiki/U-Thai_power_station,gem_global_integrated_power_tracker
+jpower,G100000404509,L100000405431,U-Thai power station,TH,parent,Electric Power Development Co Ltd,0.6,https://www.gem.wiki/U-Thai_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100001055214,L100001048164,Yala power station,TH,owner,Diamond Generating Asia,0.02,https://www.gem.wiki/Yala_power_station,gem_global_integrated_power_tracker
+jpower,G100001055214,L100001048164,Yala power station,TH,owner,J-POWER Holdings (Thailand) Co Ltd,0.25,https://www.gem.wiki/Yala_power_station,gem_global_integrated_power_tracker
+jera,G100001055214,L100001048164,Yala power station,TH,owner,JERA Co Inc,0.05,https://www.gem.wiki/Yala_power_station,gem_global_integrated_power_tracker
+kyushu,G100001055214,L100001048164,Yala power station,TH,parent,Kyushu Electric Power Co Inc,0.03,https://www.gem.wiki/Yala_power_station,gem_global_integrated_power_tracker
+mitsui,G100001055214,L100001048164,Yala power station,TH,parent,Mitsui & Co Ltd,0.01,https://www.gem.wiki/Yala_power_station,gem_global_integrated_power_tracker
+itochu,G100001023814,L100001020845,Manatuto solar farm,TL,owner,ITOCHU Corp,,https://www.gem.wiki/Manatuto_solar_farm,gem_global_integrated_power_tracker
+hanwha_energy,G100000835182,L100000831265,Burdur solar farm,TR,owner,Hanwha Energy Corp,0.5,https://www.gem.wiki/Burdur_solar_farm,gem_global_integrated_power_tracker
+hanwha_energy,G100000835183,L100000831265,Burdur solar farm,TR,owner,Hanwha Energy Corp,0.5,https://www.gem.wiki/Burdur_solar_farm,gem_global_integrated_power_tracker
+samsung_ct,G100000405904,L100000405932,Yahsihan power station,TR,owner,Samsung C&T Corp,0.1,https://www.gem.wiki/Yahsihan_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406640,L100000406615,Penal power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Penal_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406630,L100000406614,Point Lisas power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Point_Lisas_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406631,L100000406614,Point Lisas power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Point_Lisas_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406632,L100000406614,Point Lisas power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Point_Lisas_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406633,L100000406614,Point Lisas power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Point_Lisas_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406634,L100000406614,Point Lisas power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Point_Lisas_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406635,L100000406614,Point Lisas power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Point_Lisas_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406636,L100000406614,Point Lisas power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Point_Lisas_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406637,L100000406614,Point Lisas power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Point_Lisas_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406638,L100000406614,Point Lisas power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Point_Lisas_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406639,L100000406614,Point Lisas power station,TT,parent,Marubeni Corp,0.39,https://www.gem.wiki/Point_Lisas_power_station,gem_global_integrated_power_tracker
+jera,G100000927779,L100000916911,Formosa 1 offshore wind farm,TW,owner,JERA Co Inc,0.32,https://www.gem.wiki/Formosa_1_offshore_wind_farm,gem_global_integrated_power_tracker
+jera,G100000920987,L100000916912,Formosa 2 offshore wind farm,TW,owner,JERA Co Inc,0.49,https://www.gem.wiki/Formosa_2_offshore_wind_farm,gem_global_integrated_power_tracker
+jera,G100000920990,L100000916913,Formosa 3 offshore wind farm,TW,owner,JERA Co Inc,,https://www.gem.wiki/Formosa_3_offshore_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000901008,L100000900883,Hai Long Offshore wind farm,TW,owner,Mitsui & Co Ltd,0.2,https://www.gem.wiki/Hai_Long_Offshore_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000901009,L100000900883,Hai Long Offshore wind farm,TW,owner,Mitsui & Co Ltd,0.2,https://www.gem.wiki/Hai_Long_Offshore_wind_farm,gem_global_integrated_power_tracker
+mitsui,G100000901010,L100000900883,Hai Long Offshore wind farm,TW,owner,Mitsui & Co Ltd,0.2,https://www.gem.wiki/Hai_Long_Offshore_wind_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000103902,L100000103537,Ho-Ping power station,TW,parent,Mitsubishi Corp,0.2,https://www.gem.wiki/Ho-Ping_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000103903,L100000103537,Ho-Ping power station,TW,parent,Mitsubishi Corp,0.2,https://www.gem.wiki/Ho-Ping_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406220,L100000406347,Hsin Tao power station,TW,parent,Marubeni Corp,0.5,https://www.gem.wiki/Hsin_Tao_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000901246,L100000901070,Zhong Neng wind farm,TW,owner,Diamond Generating Asia,,https://www.gem.wiki/Zhong_Neng_wind_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000921034,L100000901070,Zhong Neng wind farm,TW,owner,Diamond Generating Asia,,https://www.gem.wiki/Zhong_Neng_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000900176,L100000900136,Miombo Hewani wind farm,TZ,owner,Eurus Energy,0.25,https://www.gem.wiki/Miombo_Hewani_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000900177,L100000900136,Miombo Hewani wind farm,TZ,owner,Eurus Energy,0.25,https://www.gem.wiki/Miombo_Hewani_wind_farm,gem_global_integrated_power_tracker
+posco_international,G100001054878,L100001048003,Posco International RDF power station,UA,owner,POSCO International Corp,,https://www.gem.wiki/Posco_International_RDF_power_station,gem_global_integrated_power_tracker
+kepco,G100000805443,L100000804724,Astoria solar farm,US,owner,KEPCO,1.0,https://www.gem.wiki/Astoria_solar_farm,gem_global_integrated_power_tracker
+kepco,G100000805444,L100000804724,Astoria solar farm,US,owner,KEPCO,1.0,https://www.gem.wiki/Astoria_solar_farm,gem_global_integrated_power_tracker
+hanwha_energy,G100000805205,L100000804524,Atlas solar farm,US,owner,Hanwha Energy Corp,1.0,https://www.gem.wiki/Atlas_solar_farm,gem_global_integrated_power_tracker
+kepco,G100000805445,L100000804725,Barren Ridge solar farm,US,owner,KEPCO,1.0,https://www.gem.wiki/Barren_Ridge_solar_farm,gem_global_integrated_power_tracker
+jpower,G100000100917,L100000104230,Birchwood Power Facility,US,parent,Electric Power Development Co Ltd,0.5,https://www.gem.wiki/Birchwood_Power_Facility,gem_global_integrated_power_tracker
+jpower,G100000805906,L100000805127,Birchwood Solar,US,owner,J-Power USA,1.0,https://www.gem.wiki/Birchwood_Solar,gem_global_integrated_power_tracker
+tokyo_gas,G100000402524,L100000401747,Birdsboro power station,US,parent,Tokyo Gas Co Ltd,0.33299999999999996,https://www.gem.wiki/Birdsboro_power_station,gem_global_integrated_power_tracker
+sojitz,G100000402524,L100000401747,Birdsboro power station,US,parent,Sojitz Corp,0.222,https://www.gem.wiki/Birdsboro_power_station,gem_global_integrated_power_tracker
+kyushu,G100000402524,L100000401747,Birdsboro power station,US,parent,Kyushu Electric Power Co Inc,0.111,https://www.gem.wiki/Birdsboro_power_station,gem_global_integrated_power_tracker
+komipo,G100000805598,L100000804185,Boulder Solar,US,owner,KOMIPO America Inc,,https://www.gem.wiki/Boulder_Solar,gem_global_integrated_power_tracker
+jera,G100000409585,L100000407484,Bucksport Generation power station,US,owner,JERA Americas Inc,1.0,https://www.gem.wiki/Bucksport_Generation_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000909836,L100000907300,Bull Creek wind farm (United States),US,owner,Eurus Energy,1.0,https://www.gem.wiki/Bull_Creek_wind_farm_(United_States),gem_global_integrated_power_tracker
+toyota_tsusho,G100001064173,L100000907300,Bull Creek wind farm (United States),US,owner,Eurus Energy,,https://www.gem.wiki/Bull_Creek_wind_farm_(United_States),gem_global_integrated_power_tracker
+osaka_gas,G100000402098,L100000402399,CPV Fairview energy center,US,parent,Osaka Gas Co Ltd,0.5,https://www.gem.wiki/CPV_Fairview_energy_center,gem_global_integrated_power_tracker
+marubeni,G100000402033,L100000401837,CPV St. Charles energy center,US,parent,Marubeni Corp,0.25,https://www.gem.wiki/CPV_St._Charles_energy_center,gem_global_integrated_power_tracker
+osaka_gas,G100000402033,L100000401837,CPV St. Charles energy center,US,parent,Osaka Gas Co Ltd,0.25,https://www.gem.wiki/CPV_St._Charles_energy_center,gem_global_integrated_power_tracker
+toyota_tsusho,G100000402033,L100000401837,CPV St. Charles energy center,US,parent,Toyota Tsusho Corp,0.25,https://www.gem.wiki/CPV_St._Charles_energy_center,gem_global_integrated_power_tracker
+osaka_gas,G100000409401,L100000407358,CPV Three Rivers energy center,US,parent,Osaka Gas Three Rivers LLC,0.15,https://www.gem.wiki/CPV_Three_Rivers_energy_center,gem_global_integrated_power_tracker
+osaka_gas,G100000409402,L100000407358,CPV Three Rivers energy center,US,parent,Osaka Gas Three Rivers LLC,0.15,https://www.gem.wiki/CPV_Three_Rivers_energy_center,gem_global_integrated_power_tracker
+osaka_gas,G100000401997,L100000401838,CPV Towantic energy center,US,parent,Osaka Gas Co Ltd,0.495,https://www.gem.wiki/CPV_Towantic_energy_center,gem_global_integrated_power_tracker
+samsung_ct,G100001058233,L100001050489,Cairos Solar and Storage solar farm,US,owner,Samsung C&T Corp,,https://www.gem.wiki/Cairos_Solar_and_Storage_solar_farm,gem_global_integrated_power_tracker
+jera,G100000403260,L100000402142,Canal power station,US,owner,JERA Americas Inc,1.0,https://www.gem.wiki/Canal_power_station,gem_global_integrated_power_tracker
+jera,G100000409593,L100000402142,Canal power station,US,owner,JERA Americas Inc,1.0,https://www.gem.wiki/Canal_power_station,gem_global_integrated_power_tracker
+jera,G100000410147,L100000402142,Canal power station,US,owner,JERA Americas Inc,1.0,https://www.gem.wiki/Canal_power_station,gem_global_integrated_power_tracker
+jpower,G100000805907,L100000805128,Charger Solar,US,owner,J-Power USA,,https://www.gem.wiki/Charger_Solar,gem_global_integrated_power_tracker
+kepco,G100000414292,L100000409215,Chowchilla II power station,US,parent,Korea Electric Power Corp,1.0,https://www.gem.wiki/Chowchilla_II_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000909610,L100000907136,Cimarron II wind farm,US,owner,Sumitomo Corporation of Americas,0.5,https://www.gem.wiki/Cimarron_II_wind_farm,gem_global_integrated_power_tracker
+kepco,G100000805256,L100000804571,Cogentrix Of Alamosa solar farm,US,owner,KEPCO,1.0,https://www.gem.wiki/Cogentrix_Of_Alamosa_solar_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000908927,L100000906621,Combine Hills wind farm,US,owner,Eurus Energy,1.0,https://www.gem.wiki/Combine_Hills_wind_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000909108,L100000906621,Combine Hills wind farm,US,owner,Eurus Energy,1.0,https://www.gem.wiki/Combine_Hills_wind_farm,gem_global_integrated_power_tracker
+itochu,G100000414131,L100000409245,Commonwealth Chesapeake power station,US,parent,ITOCHU Corp,1.0,https://www.gem.wiki/Commonwealth_Chesapeake_power_station,gem_global_integrated_power_tracker
+itochu,G100000414132,L100000409245,Commonwealth Chesapeake power station,US,parent,ITOCHU Corp,1.0,https://www.gem.wiki/Commonwealth_Chesapeake_power_station,gem_global_integrated_power_tracker
+itochu,G100000414133,L100000409245,Commonwealth Chesapeake power station,US,parent,ITOCHU Corp,1.0,https://www.gem.wiki/Commonwealth_Chesapeake_power_station,gem_global_integrated_power_tracker
+itochu,G100000414134,L100000409245,Commonwealth Chesapeake power station,US,parent,ITOCHU Corp,1.0,https://www.gem.wiki/Commonwealth_Chesapeake_power_station,gem_global_integrated_power_tracker
+itochu,G100000414135,L100000409245,Commonwealth Chesapeake power station,US,parent,ITOCHU Corp,1.0,https://www.gem.wiki/Commonwealth_Chesapeake_power_station,gem_global_integrated_power_tracker
+itochu,G100000414136,L100000409245,Commonwealth Chesapeake power station,US,parent,ITOCHU Corp,1.0,https://www.gem.wiki/Commonwealth_Chesapeake_power_station,gem_global_integrated_power_tracker
+itochu,G100000414137,L100000409245,Commonwealth Chesapeake power station,US,parent,ITOCHU Corp,1.0,https://www.gem.wiki/Commonwealth_Chesapeake_power_station,gem_global_integrated_power_tracker
+komipo,G100000805933,L100000805153,Concho Valley Solar,US,owner,KOMIPO America Inc,,https://www.gem.wiki/Concho_Valley_Solar,gem_global_integrated_power_tracker
+samsung_ct,G100001019588,L100001017601,Conez Solar,US,owner,Samsung C&T Corp,,https://www.gem.wiki/Conez_Solar,gem_global_integrated_power_tracker
+samsung_ct,G100000838471,L100000832860,Eagle Springs Hybrid solar farm,US,owner,Samsung C&T Corp,1.0,https://www.gem.wiki/Eagle_Springs_Hybrid_solar_farm,gem_global_integrated_power_tracker
+jera,G100000910211,L100000907574,El Sauz wind farm,US,owner,JERA Co Inc,1.0,https://www.gem.wiki/El_Sauz_wind_farm,gem_global_integrated_power_tracker
+komipo,G100000805562,L100000804825,Elara Solar,US,owner,Korea Midland Power Co Ltd,1.0,https://www.gem.wiki/Elara_Solar,gem_global_integrated_power_tracker
+jpower,G100000402256,L100000401554,Elwood Energy power station,US,owner,J-POWER USA Development Co Ltd,1.0,https://www.gem.wiki/Elwood_Energy_power_station,gem_global_integrated_power_tracker
+jpower,G100000402257,L100000401554,Elwood Energy power station,US,owner,J-POWER USA Development Co Ltd,1.0,https://www.gem.wiki/Elwood_Energy_power_station,gem_global_integrated_power_tracker
+jpower,G100000402258,L100000401554,Elwood Energy power station,US,owner,J-POWER USA Development Co Ltd,1.0,https://www.gem.wiki/Elwood_Energy_power_station,gem_global_integrated_power_tracker
+jpower,G100000402259,L100000401554,Elwood Energy power station,US,owner,J-POWER USA Development Co Ltd,1.0,https://www.gem.wiki/Elwood_Energy_power_station,gem_global_integrated_power_tracker
+jpower,G100000402260,L100000401554,Elwood Energy power station,US,owner,J-POWER USA Development Co Ltd,1.0,https://www.gem.wiki/Elwood_Energy_power_station,gem_global_integrated_power_tracker
+jpower,G100000402261,L100000401554,Elwood Energy power station,US,owner,J-POWER USA Development Co Ltd,1.0,https://www.gem.wiki/Elwood_Energy_power_station,gem_global_integrated_power_tracker
+jpower,G100000402262,L100000401554,Elwood Energy power station,US,owner,J-POWER USA Development Co Ltd,1.0,https://www.gem.wiki/Elwood_Energy_power_station,gem_global_integrated_power_tracker
+jpower,G100000402263,L100000401554,Elwood Energy power station,US,owner,J-POWER USA Development Co Ltd,1.0,https://www.gem.wiki/Elwood_Energy_power_station,gem_global_integrated_power_tracker
+jpower,G100000402264,L100000401554,Elwood Energy power station,US,owner,J-POWER USA Development Co Ltd,1.0,https://www.gem.wiki/Elwood_Energy_power_station,gem_global_integrated_power_tracker
+kepco,G100001055519,L100001048361,Fairhaven power station,US,parent,Korea Electric Power Corp,,https://www.gem.wiki/Fairhaven_power_station,gem_global_integrated_power_tracker
+osaka_gas,G100000402913,L100000401960,Freeport Pretreatment Facility power station,US,parent,Osaka Gas Co Ltd,0.10800000000000001,https://www.gem.wiki/Freeport_Pretreatment_Facility_power_station,gem_global_integrated_power_tracker
+jera,G100000805265,L100000804580,Happy solar farm,US,owner,JERA,,https://www.gem.wiki/Happy_Solar_1,gem_global_integrated_power_tracker
+sumitomo_corp,G100000401766,L100000401672,Hermiston generating plant,US,parent,Sumitomo Corp,0.5,https://www.gem.wiki/Hermiston_generating_plant,gem_global_integrated_power_tracker
+sumitomo_corp,G100000401767,L100000401672,Hermiston generating plant,US,parent,Sumitomo Corp,0.5,https://www.gem.wiki/Hermiston_generating_plant,gem_global_integrated_power_tracker
+itochu,G100000402108,L100000402410,Hickory Run Energy Station,US,parent,ITOCHU Corp,0.5,https://www.gem.wiki/Hickory_Run_Energy_Station,gem_global_integrated_power_tracker
+kansai,G100000402108,L100000402410,Hickory Run Energy Station,US,parent,Kansai Electric Power Co,0.3,https://www.gem.wiki/Hickory_Run_Energy_Station,gem_global_integrated_power_tracker
+hanwha_energy,G100000805206,L100000804525,Ho'Ohana Solar,US,owner,Hanwha Energy Corp,1.0,https://www.gem.wiki/Ho'Ohana_Solar,gem_global_integrated_power_tracker
+dl_enc,G100000401930,L100000402411,Indeck Niles energy center,US,owner,DL Energy Co Ltd,0.3,https://www.gem.wiki/Indeck_Niles_energy_center,gem_global_integrated_power_tracker
+kospo,G100000401930,L100000402411,Indeck Niles energy center,US,owner,KOSPO USA Inc,0.5,https://www.gem.wiki/Indeck_Niles_energy_center,gem_global_integrated_power_tracker
+kepco,G100000401930,L100000402411,Indeck Niles energy center,US,parent,Korea Electric Power Corp,0.5,https://www.gem.wiki/Indeck_Niles_energy_center,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409539,L100000407441,Indigo energy facility,US,owner,Diamond Generating Corp,1.0,https://www.gem.wiki/Indigo_energy_facility,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409540,L100000407441,Indigo energy facility,US,owner,Diamond Generating Corp,1.0,https://www.gem.wiki/Indigo_energy_facility,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409541,L100000407441,Indigo energy facility,US,owner,Diamond Generating Corp,1.0,https://www.gem.wiki/Indigo_energy_facility,gem_global_integrated_power_tracker
+sumitomo_corp,G100000909808,L100000907281,Ironwood wind farm,US,owner,Sumitomo Corporation of Americas,0.5,https://www.gem.wiki/Ironwood_wind_farm,gem_global_integrated_power_tracker
+jpower,G100000403818,L100000402412,Jackson Generation power station,US,parent,J-POWER Jackson Partners LLC,0.51,https://www.gem.wiki/Jackson_Generation_power_station,gem_global_integrated_power_tracker
+jpower,G100000403819,L100000402412,Jackson Generation power station,US,parent,J-POWER Jackson Partners LLC,0.51,https://www.gem.wiki/Jackson_Generation_power_station,gem_global_integrated_power_tracker
+hanwha_energy,G100000805856,L100000805079,Kellam Solar,US,owner,Hanwha Energy Corp,1.0,https://www.gem.wiki/Kellam_Solar,gem_global_integrated_power_tracker
+itochu,G100000401944,L100000401619,Kiamichi energy facility,US,parent,ITOCHU Corp,0.5,https://www.gem.wiki/Kiamichi_energy_facility,gem_global_integrated_power_tracker
+itochu,G100000401945,L100000401619,Kiamichi energy facility,US,parent,ITOCHU Corp,0.5,https://www.gem.wiki/Kiamichi_energy_facility,gem_global_integrated_power_tracker
+hanwha_energy,G100000804756,L100000804158,Kupehau solar farm,US,owner,Hanwha Energy Corp,1.0,https://www.gem.wiki/Kupehau_solar_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409537,L100000407429,Larkspur energy facility,US,owner,Diamond Generating Corp,1.0,https://www.gem.wiki/Larkspur_energy_facility,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409538,L100000407429,Larkspur energy facility,US,owner,Diamond Generating Corp,1.0,https://www.gem.wiki/Larkspur_energy_facility,gem_global_integrated_power_tracker
+jera,G100000401698,L100000402481,Linden cogeneration plant,US,owner,JERA Americas Inc,0.5,https://www.gem.wiki/Linden_cogeneration_plant,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409513,L100000407419,Mariposa Energy Project,US,owner,Diamond Generating Corp,1.0,https://www.gem.wiki/Mariposa_Energy_Project,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409514,L100000407419,Mariposa Energy Project,US,owner,Diamond Generating Corp,1.0,https://www.gem.wiki/Mariposa_Energy_Project,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409515,L100000407419,Mariposa Energy Project,US,owner,Diamond Generating Corp,1.0,https://www.gem.wiki/Mariposa_Energy_Project,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000409516,L100000407419,Mariposa Energy Project,US,owner,Diamond Generating Corp,1.0,https://www.gem.wiki/Mariposa_Energy_Project,gem_global_integrated_power_tracker
+osaka_gas,G100000401776,L100000401674,Michigan power station,US,owner,Osaka Gas USA Corp,1.0,https://www.gem.wiki/Michigan_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000401760,L100000401582,NAEA Lakewood power station,US,parent,Toyota Tsusho Corp,0.2,https://www.gem.wiki/NAEA_Lakewood_power_station,gem_global_integrated_power_tracker
+mitsui,G100001093093,L100001082659,Novva Utah Data Center power station,US,parent,Mitsui & Co Ltd,0.5,https://www.gem.wiki/Novva_Utah_Data_Center_power_station,gem_global_integrated_power_tracker
+jpower,G100000403347,L100000402176,Orange Grove peaking facility,US,parent,Electric Power Development Co Ltd,1.0,https://www.gem.wiki/Orange_Grove_peaking_facility,gem_global_integrated_power_tracker
+jpower,G100000403348,L100000402176,Orange Grove peaking facility,US,parent,Electric Power Development Co Ltd,1.0,https://www.gem.wiki/Orange_Grove_peaking_facility,gem_global_integrated_power_tracker
+toyota_tsusho,G100000401762,L100000401670,Oyster Creek Unit VIII power station,US,owner,Toyota Tsusho Corp,0.37,https://www.gem.wiki/Oyster_Creek_Unit_VIII_power_station,gem_global_integrated_power_tracker
+jera,G100001094048,L100001083293,Oʻahu power station,US,owner,JERA Energy America LLC,1.0,https://www.gem.wiki/Oʻahu_power_station,gem_global_integrated_power_tracker
+ihi,G100001054213,L100001047602,Pacific-Ultrapower Chinese power station,US,owner,IHI Power Services Corp,,https://www.gem.wiki/Pacific-Ultrapower_Chinese_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000908966,L100000906652,Palehua wind farm,US,owner,Eurus Energy,1.0,https://www.gem.wiki/Palehua_wind_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100000403831,L100000402423,Perennial Wind Chaser Station,US,parent,Sumitomo Corp,1.0,https://www.gem.wiki/Perennial_Wind_Chaser_Station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000403832,L100000402423,Perennial Wind Chaser Station,US,parent,Sumitomo Corp,1.0,https://www.gem.wiki/Perennial_Wind_Chaser_Station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000403833,L100000402423,Perennial Wind Chaser Station,US,parent,Sumitomo Corp,1.0,https://www.gem.wiki/Perennial_Wind_Chaser_Station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000403834,L100000402423,Perennial Wind Chaser Station,US,parent,Sumitomo Corp,1.0,https://www.gem.wiki/Perennial_Wind_Chaser_Station,gem_global_integrated_power_tracker
+hanwha_energy,G100000804757,L100000804159,Pigeon Run Solar Project,US,owner,Hanwha Energy Corp,1.0,https://www.gem.wiki/Pigeon_Run_Solar_Project,gem_global_integrated_power_tracker
+tokyo_gas,G100000805866,L100000805088,Ramsey solar farm,US,owner,Tokyo Gas America Ltd,1.0,https://www.gem.wiki/Ramsey_solar_farm,gem_global_integrated_power_tracker
+itochu,G100000401830,L100000401736,Rathdrum power station,US,parent,ITOCHU Corp,1.0,https://www.gem.wiki/Rathdrum_power_station,gem_global_integrated_power_tracker
+kepco,G100001055141,L100001048103,Red Bluff power station,US,parent,Korea Electric Power Corp,1.0,https://www.gem.wiki/Red_Bluff_power_station,gem_global_integrated_power_tracker
+samsung_ct,G100001058616,L100001050857,Richwood Solar and Storage solar farm,US,owner,Samsung C&T Corp,,https://www.gem.wiki/Richwood_Solar_and_Storage_solar_farm,gem_global_integrated_power_tracker
+ihi,G100001054226,L100001047613,Rio Bravo Fresno power station,US,parent,IHI Corp,,https://www.gem.wiki/Rio_Bravo_Fresno_power_station,gem_global_integrated_power_tracker
+ihi,G100000108579,L100000103801,Rio Bravo Jasmin Power Plant,US,owner,IHI Power Services Corp,1.0,https://www.gem.wiki/Rio_Bravo_Jasmin_Power_Plant,gem_global_integrated_power_tracker
+ihi,G100000108580,L100000103802,Rio Bravo Poso Power Plant,US,owner,IHI Power Services Corp,1.0,https://www.gem.wiki/Rio_Bravo_Poso_Power_Plant,gem_global_integrated_power_tracker
+ihi,G100001054227,L100001047614,Rio Bravo Rocklin power station,US,parent,IHI Corp,,https://www.gem.wiki/Rio_Bravo_Rocklin_power_station,gem_global_integrated_power_tracker
+osaka_gas,G100000401756,L100000402270,Saranac Facility power station,US,parent,Osaka Gas Co Ltd,0.2,https://www.gem.wiki/Saranac_Facility_power_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402233,L100000401547,Sentinel energy center,US,owner,Diamond Generating Corp,0.5,https://www.gem.wiki/Sentinel_energy_center,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402234,L100000401547,Sentinel energy center,US,owner,Diamond Generating Corp,0.5,https://www.gem.wiki/Sentinel_energy_center,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402235,L100000401547,Sentinel energy center,US,owner,Diamond Generating Corp,0.5,https://www.gem.wiki/Sentinel_energy_center,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402236,L100000401547,Sentinel energy center,US,owner,Diamond Generating Corp,0.5,https://www.gem.wiki/Sentinel_energy_center,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402237,L100000401547,Sentinel energy center,US,owner,Diamond Generating Corp,0.5,https://www.gem.wiki/Sentinel_energy_center,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402238,L100000401547,Sentinel energy center,US,owner,Diamond Generating Corp,0.5,https://www.gem.wiki/Sentinel_energy_center,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402239,L100000401547,Sentinel energy center,US,owner,Diamond Generating Corp,0.5,https://www.gem.wiki/Sentinel_energy_center,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402240,L100000401547,Sentinel energy center,US,owner,Diamond Generating Corp,0.5,https://www.gem.wiki/Sentinel_energy_center,gem_global_integrated_power_tracker
+hanwha_energy,G100000804758,L100000804160,Shockoe Solar Project,US,owner,Hanwha Energy Corp,1.0,https://www.gem.wiki/Shockoe_Solar_Project,gem_global_integrated_power_tracker
+toyota_tsusho,G100000909449,L100000906661,Spearville wind farm,US,owner,Eurus Energy,0.4,https://www.gem.wiki/Spearville_wind_farm,gem_global_integrated_power_tracker
+samsung_ct,G100001019596,L100001017609,Stark Solar,US,owner,Samsung C&T Corp,,https://www.gem.wiki/Stark_Solar,gem_global_integrated_power_tracker
+toyota_tsusho,G100000805130,L100000804463,Sun City Project solar farm,US,owner,Eurus Energy,,https://www.gem.wiki/Sun_City_Project_solar_farm,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000401785,L100000401622,Tenaska Frontier generation station,US,parent,Mitsubishi Corp,0.28,https://www.gem.wiki/Tenaska_Frontier_generation_station,gem_global_integrated_power_tracker
+itochu,G100000402349,L100000401624,Tenaska Georgia generation facility,US,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402349,L100000401624,Tenaska Georgia generation facility,US,parent,Mitsubishi Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+itochu,G100000402350,L100000401624,Tenaska Georgia generation facility,US,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402350,L100000401624,Tenaska Georgia generation facility,US,parent,Mitsubishi Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+itochu,G100000402351,L100000401624,Tenaska Georgia generation facility,US,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402351,L100000401624,Tenaska Georgia generation facility,US,parent,Mitsubishi Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+itochu,G100000402352,L100000401624,Tenaska Georgia generation facility,US,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402352,L100000401624,Tenaska Georgia generation facility,US,parent,Mitsubishi Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+itochu,G100000402353,L100000401624,Tenaska Georgia generation facility,US,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402353,L100000401624,Tenaska Georgia generation facility,US,parent,Mitsubishi Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+itochu,G100000402354,L100000401624,Tenaska Georgia generation facility,US,parent,ITOCHU Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402354,L100000401624,Tenaska Georgia generation facility,US,parent,Mitsubishi Corp,0.25,https://www.gem.wiki/Tenaska_Georgia_generation_facility,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000401866,L100000401621,Tenaska Lindsay Hill generating station,US,parent,Mitsubishi Corp,0.5,https://www.gem.wiki/Tenaska_Lindsay_Hill_generating_station,gem_global_integrated_power_tracker
+itochu,G100000401922,L100000401626,Tenaska Virginia generating station,US,parent,ITOCHU Corp,0.175,https://www.gem.wiki/Tenaska_Virginia_generating_station,gem_global_integrated_power_tracker
+jpower,G100000401922,L100000401626,Tenaska Virginia generating station,US,parent,Electric Power Development Co Ltd,0.15,https://www.gem.wiki/Tenaska_Virginia_generating_station,gem_global_integrated_power_tracker
+jpower,G100000402097,L100000401625,Tenaska Westmoreland generating station,US,owner,J-POWER Westmoreland LLC,0.25,https://www.gem.wiki/Tenaska_Westmoreland_generating_station,gem_global_integrated_power_tracker
+mitsubishi_corp,G100000402097,L100000401625,Tenaska Westmoreland generating station,US,parent,Mitsubishi Corp,0.5,https://www.gem.wiki/Tenaska_Westmoreland_generating_station,gem_global_integrated_power_tracker
+kospo,G100000413022,L100000408878,Trumbull Energy Center power station,US,owner,Korea Southern Power Co Ltd,0.33,https://www.gem.wiki/Trumbull_Energy_Center_power_station,gem_global_integrated_power_tracker
+kepco,G100000413022,L100000408878,Trumbull Energy Center power station,US,parent,Korea Electric Power Corp,0.33299999999999996,https://www.gem.wiki/Trumbull_Energy_Center_power_station,gem_global_integrated_power_tracker
+jera,G100000805270,L100000804585,Ventress Solar,US,owner,JERA,,https://www.gem.wiki/Ventress_Solar,gem_global_integrated_power_tracker
+toyota_tsusho,G100000805131,L100000804464,Waianae Solar Project,US,owner,Toyota Tsusho America Inc,,https://www.gem.wiki/Waianae_Solar_Project,gem_global_integrated_power_tracker
+sumitomo_corp,G100000402036,L100000402367,West Deptford Energy Station,US,parent,Sumitomo Corp,0.5,https://www.gem.wiki/West_Deptford_Energy_Station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000805829,L100000805057,West End Solar,US,owner,Eurus Energy,1.0,https://www.gem.wiki/West_End_Solar,gem_global_integrated_power_tracker
+hanwha_energy,G100000805857,L100000805080,Wheats Solar,US,owner,Hanwha Energy Corp,1.0,https://www.gem.wiki/Wheats_Solar,gem_global_integrated_power_tracker
+toyota_tsusho,G100000402051,L100000402387,Woodbridge energy center,US,parent,Toyota Tsusho Corp,0.425,https://www.gem.wiki/Woodbridge_energy_center,gem_global_integrated_power_tracker
+osaka_gas,G100000402051,L100000402387,Woodbridge energy center,US,parent,Osaka Gas Co Ltd,0.2,https://www.gem.wiki/Woodbridge_energy_center,gem_global_integrated_power_tracker
+sumitomo_corp,G100000927614,L100000922142,Kungrad (ACWA Power) wind farm,UZ,owner,Sumitomo Corp,0.49,https://www.gem.wiki/Kungrad_wind_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100000927615,L100000922142,Kungrad (ACWA Power) wind farm,UZ,owner,Sumitomo Corp,0.49,https://www.gem.wiki/Kungrad_wind_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100000927616,L100000922142,Kungrad (ACWA Power) wind farm,UZ,owner,Sumitomo Corp,0.49,https://www.gem.wiki/Kungrad_wind_farm,gem_global_integrated_power_tracker
+sojitz,G100001018568,L100001016669,Navoi wind farm,UZ,owner,Sojitz Corp,,https://www.gem.wiki/Navoi_wind_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100000835504,L100000831559,Sazagan solar farm,UZ,owner,Sumitomo Corp,0.49,https://www.gem.wiki/Sazagan_solar_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100000835505,L100000831559,Sazagan solar farm,UZ,owner,Sumitomo Corp,0.49,https://www.gem.wiki/Sazagan_solar_farm,gem_global_integrated_power_tracker
+kyushu,G100000407423,L100000406884,Sirdaryo II power station,UZ,parent,Kyushu Electric Power Co Inc,0.25,https://www.gem.wiki/Sirdaryo_II_power_station,gem_global_integrated_power_tracker
+sojitz,G100000407423,L100000406884,Sirdaryo II power station,UZ,parent,Sojitz Corp,0.25,https://www.gem.wiki/Sirdaryo_II_power_station,gem_global_integrated_power_tracker
+hanwha_energy,G100000800994,L100000800861,Cam An Bac Kn solar farm,VN,owner,Hanwha Energy Corp,,https://www.gem.wiki/Cam_An_Bac_Kn_solar_farm,gem_global_integrated_power_tracker
+hanwha_energy,G100000800995,L100000800862,Cam An Bac Vn solar farm,VN,owner,Hanwha Energy Vietnam,,https://www.gem.wiki/Cam_An_Bac_Vn_solar_farm,gem_global_integrated_power_tracker
+kepco,G100000101180,L100000104321,Can Duoc power station (KEPCO and Vinakobalt),VN,owner,Korea Electric Power Corp,0.5,https://www.gem.wiki/Can_Duoc_power_station_(KEPCO_and_Vinakobalt),gem_global_integrated_power_tracker
+tokyo_gas,G100000927505,L100000922059,Cần Giờ offshore wind farm,VN,owner,Tokyo Gas Co Ltd,,https://www.gem.wiki/Cần_Giờ_offshore_wind_farm,gem_global_integrated_power_tracker
+tokyo_gas,G100000927506,L100000922059,Cần Giờ offshore wind farm,VN,owner,Tokyo Gas Co Ltd,,https://www.gem.wiki/Cần_Giờ_offshore_wind_farm,gem_global_integrated_power_tracker
+sumitomo_corp,G100001090017,L100001080172,Dak Di 1 hydroelectric plant,VN,owner,Sumitomo Corporation,0.49,https://www.gem.wiki/Dak_Di_1_hydroelectric_plant,gem_global_integrated_power_tracker
+jpower,G100000113083,L100000104331,Dung Quat Economic Zone power station,VN,owner,Electric Power Development Co Ltd,1.0,https://www.gem.wiki/Dung_Quat_Economic_Zone_power_station,gem_global_integrated_power_tracker
+jpower,G100000113084,L100000104331,Dung Quat Economic Zone power station,VN,owner,Electric Power Development Co Ltd,1.0,https://www.gem.wiki/Dung_Quat_Economic_Zone_power_station,gem_global_integrated_power_tracker
+kospo,G100000405995,L100000405976,Hai Lang power station,VN,owner,Korea Southern Power Co Ltd,0.2,https://www.gem.wiki/Hai_Lang_power_station,gem_global_integrated_power_tracker
+hanwha_energy,G100000405995,L100000405976,Hai Lang power station,VN,owner,Hanwha Energy Corp,0.2,https://www.gem.wiki/Hai_Lang_power_station,gem_global_integrated_power_tracker
+kepco,G100000405995,L100000405976,Hai Lang power station,VN,parent,Korea Electric Power Corp,0.2,https://www.gem.wiki/Hai_Lang_power_station,gem_global_integrated_power_tracker
+kospo,G100000405996,L100000405976,Hai Lang power station,VN,owner,Korea Southern Power Co Ltd,0.2,https://www.gem.wiki/Hai_Lang_power_station,gem_global_integrated_power_tracker
+hanwha_energy,G100000405996,L100000405976,Hai Lang power station,VN,owner,Hanwha Energy Corp,0.2,https://www.gem.wiki/Hai_Lang_power_station,gem_global_integrated_power_tracker
+kepco,G100000405996,L100000405976,Hai Lang power station,VN,parent,Korea Electric Power Corp,0.2,https://www.gem.wiki/Hai_Lang_power_station,gem_global_integrated_power_tracker
+jera,G100000411109,L100000407815,LNG Nghi Son power station,VN,owner,JERA Co Inc,1.0,https://www.gem.wiki/LNG_Nghi_Son_power_station,gem_global_integrated_power_tracker
+daewoo_ec,G100000106391,L100000104322,Long An power station,VN,owner,Daewoo Engineering & Construction Co Ltd,1.0,https://www.gem.wiki/Long_An_power_station,gem_global_integrated_power_tracker
+daewoo_ec,G100000106392,L100000104322,Long An power station,VN,owner,Daewoo Engineering & Construction Co Ltd,1.0,https://www.gem.wiki/Long_An_power_station,gem_global_integrated_power_tracker
+daewoo_ec,G100000106393,L100000104322,Long An power station,VN,owner,Daewoo Engineering & Construction Co Ltd,1.0,https://www.gem.wiki/Long_An_power_station,gem_global_integrated_power_tracker
+daewoo_ec,G100000106394,L100000104322,Long An power station,VN,owner,Daewoo Engineering & Construction Co Ltd,1.0,https://www.gem.wiki/Long_An_power_station,gem_global_integrated_power_tracker
+posco_international,G100000106995,L100000104335,Mong Duong power station,VN,parent,POSCO International Corp,0.3,https://www.gem.wiki/Mong_Duong_power_station,gem_global_integrated_power_tracker
+posco_international,G100000106996,L100000104335,Mong Duong power station,VN,parent,POSCO International Corp,0.3,https://www.gem.wiki/Mong_Duong_power_station,gem_global_integrated_power_tracker
+kepco,G100000107412,L100000104345,Nghi Son coal power station,VN,parent,Korea Electric Power Corp,0.5,https://www.gem.wiki/Nghi_Son_coal_power_station,gem_global_integrated_power_tracker
+marubeni,G100000107412,L100000104345,Nghi Son coal power station,VN,parent,Marubeni Corp,0.4,https://www.gem.wiki/Nghi_Son_coal_power_station,gem_global_integrated_power_tracker
+tohoku,G100000107412,L100000104345,Nghi Son coal power station,VN,parent,Tohoku Electric Power Co Inc,0.1,https://www.gem.wiki/Nghi_Son_coal_power_station,gem_global_integrated_power_tracker
+kepco,G100000107413,L100000104345,Nghi Son coal power station,VN,parent,Korea Electric Power Corp,0.5,https://www.gem.wiki/Nghi_Son_coal_power_station,gem_global_integrated_power_tracker
+marubeni,G100000107413,L100000104345,Nghi Son coal power station,VN,parent,Marubeni Corp,0.4,https://www.gem.wiki/Nghi_Son_coal_power_station,gem_global_integrated_power_tracker
+tohoku,G100000107413,L100000104345,Nghi Son coal power station,VN,parent,Tohoku Electric Power Co Inc,0.1,https://www.gem.wiki/Nghi_Son_coal_power_station,gem_global_integrated_power_tracker
+marubeni,G100000401318,L100000405444,O Mon Power Complex,VN,owner,Marubeni Corp,0.5,https://www.gem.wiki/O_Mon_Power_Complex,gem_global_integrated_power_tracker
+kyushu,G100000408645,L100000407153,Phu My 3.1 Thermal power station,VN,parent,Kyushu Electric Power Co Inc,0.267,https://www.gem.wiki/Phu_My_3.1_Thermal_power_station,gem_global_integrated_power_tracker
+sojitz,G100000408645,L100000407153,Phu My 3.1 Thermal power station,VN,parent,Sojitz Corp,0.067,https://www.gem.wiki/Phu_My_3.1_Thermal_power_station,gem_global_integrated_power_tracker
+marubeni,G100000406001,L100000405979,Quang Ninh Combined Cycle power station,VN,parent,Marubeni Corp,0.25,https://www.gem.wiki/Quang_Ninh_Combined_Cycle_power_station,gem_global_integrated_power_tracker
+tokyo_gas,G100000406001,L100000405979,Quang Ninh Combined Cycle power station,VN,parent,Tokyo Gas Co Ltd,0.25,https://www.gem.wiki/Quang_Ninh_Combined_Cycle_power_station,gem_global_integrated_power_tracker
+kowepo,G100000113291,L100000104339,Quang Tri power station,VN,owner,Korea Western Power Co Ltd,1.0,https://www.gem.wiki/Quang_Tri_power_station,gem_global_integrated_power_tracker
+kepco,G100000113291,L100000104339,Quang Tri power station,VN,parent,Korea Electric Power Corp,1.0,https://www.gem.wiki/Quang_Tri_power_station,gem_global_integrated_power_tracker
+kowepo,G100000113292,L100000104339,Quang Tri power station,VN,owner,Korea Western Power Co Ltd,1.0,https://www.gem.wiki/Quang_Tri_power_station,gem_global_integrated_power_tracker
+kepco,G100000113292,L100000104339,Quang Tri power station,VN,parent,Korea Electric Power Corp,1.0,https://www.gem.wiki/Quang_Tri_power_station,gem_global_integrated_power_tracker
+sojitz,G100000404544,L100000405451,Son My I power station,VN,owner,Sojitz Corp,0.18,https://www.gem.wiki/Son_My_I_power_station,gem_global_integrated_power_tracker
+kyushu,G100000404544,L100000405451,Son My I power station,VN,owner,Kyushu Electric Power Co Inc,0.18,https://www.gem.wiki/Son_My_I_power_station,gem_global_integrated_power_tracker
+jpower,G100000109920,L100000104300,Tan Thanh power station,VN,owner,J-POWER Vietnam Co Ltd,1.0,https://www.gem.wiki/Tan_Thanh_power_station,gem_global_integrated_power_tracker
+jpower,G100000109921,L100000104300,Tan Thanh power station,VN,owner,J-POWER Vietnam Co Ltd,1.0,https://www.gem.wiki/Tan_Thanh_power_station,gem_global_integrated_power_tracker
+jpower,G100000109922,L100000104300,Tan Thanh power station,VN,owner,J-POWER Vietnam Co Ltd,1.0,https://www.gem.wiki/Tan_Thanh_power_station,gem_global_integrated_power_tracker
+jpower,G100000109923,L100000104300,Tan Thanh power station,VN,owner,J-POWER Vietnam Co Ltd,1.0,https://www.gem.wiki/Tan_Thanh_power_station,gem_global_integrated_power_tracker
+sojitz,G100000110051,L100000104303,Than Bac Lieu power station,VN,owner,Sojitz Kyushu Corp,0.5,https://www.gem.wiki/Than_Bac_Lieu_power_station,gem_global_integrated_power_tracker
+sojitz,G100000110052,L100000104303,Than Bac Lieu power station,VN,owner,Sojitz Kyushu Corp,0.5,https://www.gem.wiki/Than_Bac_Lieu_power_station,gem_global_integrated_power_tracker
+hanwha_energy,G100000801689,L100000801470,Thanh Hóa (BCG) solar farm,VN,owner,Hanwha Energy Vietnam,,https://www.gem.wiki/Thanh_Hóa_(BCG)_solar_farm,gem_global_integrated_power_tracker
+jpower,G100000406009,L100000405982,Van Phong Combined Cycle power station,VN,owner,Electric Power Development Co Ltd,1.0,https://www.gem.wiki/Van_Phong_Combined_Cycle_power_station,gem_global_integrated_power_tracker
+jpower,G100000406010,L100000405982,Van Phong Combined Cycle power station,VN,owner,Electric Power Development Co Ltd,1.0,https://www.gem.wiki/Van_Phong_Combined_Cycle_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000110552,L100000104316,Van Phong power station,VN,parent,Sumitomo Corp,0.5,https://www.gem.wiki/Van_Phong_power_station,gem_global_integrated_power_tracker
+sumitomo_corp,G100000110553,L100000104316,Van Phong power station,VN,parent,Sumitomo Corp,0.5,https://www.gem.wiki/Van_Phong_power_station,gem_global_integrated_power_tracker
+kepco,G100000408644,L100000104310,Vung Ang power station,VN,owner,Korea Electric Power Corp,0.33,https://www.gem.wiki/Vung_Ang_power_station,gem_global_integrated_power_tracker
+mitsui,G100000408559,L100000407110,Avon power station,ZA,parent,Mitsui & Co Ltd,0.25,https://www.gem.wiki/Avon_power_station,gem_global_integrated_power_tracker
+mitsui,G100000414449,L100000407110,Avon power station,ZA,parent,Mitsui & Co Ltd,0.25,https://www.gem.wiki/Avon_power_station,gem_global_integrated_power_tracker
+mitsui,G100000414450,L100000407110,Avon power station,ZA,parent,Mitsui & Co Ltd,0.25,https://www.gem.wiki/Avon_power_station,gem_global_integrated_power_tracker
+mitsui,G100000414451,L100000407110,Avon power station,ZA,parent,Mitsui & Co Ltd,0.25,https://www.gem.wiki/Avon_power_station,gem_global_integrated_power_tracker
+mitsui,G100000408558,L100000407109,Dedisa power station,ZA,parent,Mitsui & Co Ltd,0.25,https://www.gem.wiki/Dedisa_power_station,gem_global_integrated_power_tracker
+marubeni,G100000407264,L100000406819,Richards Bay (Mhlathuze Energy) power station,ZA,parent,Marubeni Corp,0.25,https://www.gem.wiki/Richards_Bay_(Mhlathuze_Energy)_power_station,gem_global_integrated_power_tracker
+toyota_tsusho,G100000800262,L100000800216,Mongu solar farm,ZM,owner,Toyota Tsusho Corp,,https://www.gem.wiki/Mongu_solar_farm,gem_global_integrated_power_tracker
+toyota_tsusho,G100000800341,L100000800288,Sesheke solar farm,ZM,owner,Toyota Tsusho Corp,,https://www.gem.wiki/Sesheke_solar_farm,gem_global_integrated_power_tracker

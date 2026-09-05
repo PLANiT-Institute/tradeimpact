@@ -1,21 +1,22 @@
 field,candidates,required,note
-gem_unit_id,GEM unit/phase ID;GEM unit ID;GEM unit/phase ID (GEM unit/phase ID);Unit ID,yes,the key every other table joins on
+gem_unit_id,GEM unit/phase ID;GEM unit ID;Unit ID,yes,the key every other table joins on
 gem_location_id,GEM location ID;Location ID;GEM plant ID,no,plant-level key; a role recorded at plant level applies to every unit at the location
-country,Country/area;Country/Area;Country,yes,tracker name mapped to alpha-2 through geography and country_name_overrides.csv
-plant_name,Plant / Project name;Plant name;Project name;Plant / Project Name,yes,
-unit_name,Unit / Phase name;Unit name;Unit/Phase name;Unit / Phase Name,no,
-fuel_type,Type;Fuel type;Fuel Type;Technology type,yes,coal gas oil nuclear hydro wind solar bioenergy geothermal as the tracker writes them
-fuel_detail,Fuel;Coal type;Fuel detail;Fuel(s),no,matched against emission_factors gem_fuel_pattern
-technology,Technology;Combustion technology;Turbine/Technology;Combustion Technology;Technology detail,no,matched against technology_defaults technology_pattern
+country,Country/area;Country/Area;Country,yes,tracker name mapped to alpha-2 through the tracker's own country sheet; geography and country_name_overrides.csv as fallback
+plant_name,Plant / Project name;Plant name;Project name,yes,
+unit_name,Unit / Phase name;Unit name;Unit/Phase name,no,
+gem_type,Type;Fuel type;Technology type,yes,the tracker's own type: coal / oil/gas / hydropower / utility-scale solar / wind / bioenergy / nuclear / geothermal; normalised to fuel_type by the extractor
+fuel_detail,Fuel (combustion only);Fuel;Coal type;Fuel detail,no,"comma-separated in order of importance, e.g. 'fossil gas: natural gas, fossil liquids: diesel'; the first entry decides oil vs gas and the emission factor"
+technology,Technology;Combustion technology;Technology detail,no,subcritical / supercritical / ultra-supercritical / IGCC / unknown / combined cycle / gas turbine / steam turbine / internal combustion / ICCC / ISCC / AFC; matched against technology_defaults technology_pattern
 capacity_mw,Capacity (MW),yes,
-status,Status,yes,operating construction pre-construction announced mothballed retired cancelled shelved
-start_year,Start year;Start Year;Year of commissioning,yes,commercial operation year; blank rows are excluded with a reason
-retired_year,Retired year;Retired Year;Planned retirement;Retirement year,no,
-owner,Owner;Owner(s);Owner (s),yes,matched against companies gem_owner_pattern
-parent,Parent;Parent(s);Parent (s),no,matched against companies gem_owner_pattern
+status,Status,yes,operating / construction / pre-construction / announced / mothballed / retired / cancelled / shelved (with '- inferred N y' suffixes)
+start_year,Start year;Year of commissioning,yes,commercial operation year; blank rows are excluded with a reason
+retired_year,Retired year;Planned retirement;Retirement year,no,
+operator,Operator(s);Operator,no,kept as evidence for an om_contractor role; not used for matching
+owner,Owner(s);Owner,yes,"entities separated by '; ', each with its share in brackets where known: 'Marubeni Corp [50.0%]'; parsed by roles/extract_gem_ownership.py"
+parent,Parent(s);Parent,no,ultimate parents in the same format
 latitude,Latitude,yes,kept for the map
 longitude,Longitude,yes,kept for the map
-capacity_factor,Capacity factor;Capacity Factor;Annual capacity factor,no,tracker estimate where published; technology default otherwise
-heat_rate_btu_per_kwh,Heat rate (Btu per kWh);Heat rate;Heat Rate (Btu/kWh),no,converted to MJ/kWh; technology default otherwise
-emission_factor_kgco2_per_tj,Emission factor (kg of CO2 per TJ);Emission factor,no,kept for comparison; the model uses emission_factors.csv
-wiki_url,Wiki URL;Wiki page;GEM wiki,no,the project page the role register cites
+capacity_factor,Capacity factor;Capacity Factor;Annual capacity factor,no,not published in the August 2026 integrated tracker; technology default applies
+heat_rate_btu_per_kwh,Heat rate (Btu per kWh);Heat rate;Heat Rate (Btu/kWh),no,not published in the August 2026 integrated tracker; technology default applies
+emission_factor_kgco2_per_tj,Emission factor (kg of CO2 per TJ);Emission factor,no,kept for comparison where published; the model uses emission_factors.csv
+wiki_url,GEM.Wiki URL;Wiki URL;Wiki page,no,the project page the role register cites

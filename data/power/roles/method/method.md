@@ -15,7 +15,8 @@ into one company total.
 
 ## Raw file — HAND-GATHERED
 
-`raw/project_roles.csv` — header-only until filled. One row per company × unit × role.
+`raw/project_roles.csv` — header-only until filled (reported as pending, not fatal: the pipeline
+runs on the tracker's equity rows meanwhile). One row per company × unit × role.
 
 | field | note |
 |---|---|
@@ -36,6 +37,17 @@ Every distinct source also needs a row in [`../../registry/sources.csv`](../../r
 with `how_obtained = read by hand`. Where a fact is known only from a press report rather than a
 company or lender document, say so in `source_note`; the tier of a share read from a press report
 is C, from the company's own release A.
+
+## Equity rows read from the tracker
+
+The tracker writes ownership with shares — `Marubeni Corp [50.0%]; Korea Electric Power Corp
+[50.0%]` in `Owner(s)` and `Parent(s)` — so the **equity_owner** role needs no hand transcription:
+`script/power/roles/extract_gem_ownership.py` writes `processed/gem_ownership.csv`, one row per
+company × unit with the level it was read at (owner or parent), the entity as written, the share
+as a fraction (blank where the tracker states none) and the unit's wiki page as source. Tier B: a
+third-party compilation of company disclosures. The attribution step merges it with the hand
+register; where the register has an equity_owner row for the same company and unit, the register
+wins. Construction, equipment, O&M and finance roles are not in the tracker and remain hand rows.
 
 ## Processed output
 

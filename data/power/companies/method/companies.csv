@@ -1,34 +1,34 @@
 company_id,name_en,country,type,gem_owner_pattern,in_scope,note
-kepco,Korea Electric Power Corporation,KR,utility,KEPCO|Korea Electric Power,yes,Holding company of the six generation subsidiaries; overseas IPP equity (UAE Barakah; Philippines Cebu and Ilijan; Jordan Al Qatrana; Mexico Norte II; Saudi Rabigh; Vietnam Nghi Son 2 and Vung Ang 2 with Japanese partners)
-komipo,Korea Midland Power,KR,genco,Korea Midland Power|KOMIPO,yes,KEPCO subsidiary; Indonesia Cirebon 1 and 2 (coal) and Tanjung Jati B; Wampu hydro
-kowepo,Korea Western Power,KR,genco,Korea Western Power|KOWEPO,yes,KEPCO subsidiary; Laos Xe-Pian Xe-Namnoy hydro; Indonesia
-koen,Korea South-East Power,KR,genco,Korea South-East Power|KOEN|KOSEP,yes,KEPCO subsidiary; Pakistan Gulpur hydro; Bulgaria solar; Chile
-kospo,Korea Southern Power,KR,genco,Korea Southern Power|KOSPO,yes,KEPCO subsidiary; Jordan Al Manakher; Chile Kelar gas
-ewp,Korea East-West Power,KR,genco,Korea East-West Power|EWP,yes,KEPCO subsidiary; Jamaica; Indonesia Kalsel coal; Guam
-khnp,Korea Hydro & Nuclear Power,KR,genco,Korea Hydro|KHNP,yes,KEPCO subsidiary; Barakah operation support; European nuclear bids
-posco_international,POSCO International,KR,developer,POSCO International|POSCO Energy,yes,Gas and renewable IPP
-hanwha_energy,Hanwha Energy,KR,developer,Hanwha,yes,Gas and solar IPP
-sk_es,SK Innovation E&S,KR,developer,SK E&S|SK Innovation E&S|SK Gas,yes,Gas IPP; formerly SK E&S
+kepco,Korea Electric Power Corporation,KR,utility,\bKEPCO\b|Korea Electric Power,yes,Holding company of the six generation subsidiaries; overseas IPP equity (UAE Barakah; Philippines Cebu and Ilijan; Jordan Al Qatrana; Mexico Norte II; Saudi Rabigh; Vietnam Nghi Son 2 and Vung Ang 2 with Japanese partners)
+komipo,Korea Midland Power,KR,genco,Korea Midland Power|\bKOMIPO\b,yes,KEPCO subsidiary; Indonesia Cirebon 1 and 2 (coal) and Tanjung Jati B; Wampu hydro
+kowepo,Korea Western Power,KR,genco,Korea Western Power|\bKOWEPO\b,yes,KEPCO subsidiary; Laos Xe-Pian Xe-Namnoy hydro; Indonesia
+koen,Korea South-East Power,KR,genco,Korea South-?East Power|\bKOEN\b|\bKOSEP\b,yes,KEPCO subsidiary; Pakistan Gulpur hydro; Bulgaria solar; Chile
+kospo,Korea Southern Power,KR,genco,Korea Southern Power|\bKOSPO\b,yes,KEPCO subsidiary; Jordan Al Manakher; Chile Kelar gas
+ewp,Korea East-West Power,KR,genco,Korea East-?West Power|\bEWP\b,yes,KEPCO subsidiary; Jamaica; Indonesia Kalsel coal; Guam
+khnp,Korea Hydro & Nuclear Power,KR,genco,Korea Hydro|\bKHNP\b,yes,KEPCO subsidiary; Barakah operation support; European nuclear bids
+posco_international,POSCO International,KR,developer,POSCO International|Posco Energy,yes,Gas and renewable IPP; POSCO Energy merged into POSCO International in 2023
+hanwha_energy,Hanwha Energy,KR,developer,Hanwha Energy|Hanwha Impact|Hanwha Power|Hanwha General Chemical,yes,Gas and solar IPP; the Hanwha solar-manufacturing arms (Qcells and Solarone) are not this company
+sk_es,SK Innovation E&S,KR,developer,SK E&S|SK Innovation E&S,yes,Gas IPP; formerly SK E&S
 doosan_enerbility,Doosan Enerbility,KR,equipment_supplier,Doosan,yes,Boilers and turbines and EPC lead (Vietnam Nghi Son 2 and Vung Ang 2 and Song Hau 1; Indonesia Jawa 9 and 10; Saudi Rabigh; India Kudgi); formerly Doosan Heavy Industries
-samsung_ct,Samsung C&T Engineering & Construction,KR,epc_contractor,Samsung C&T,yes,EPC (Vietnam Vung Ang 2; Chile Kelar; Gulf combined-cycle)
+samsung_ct,Samsung C&T Engineering & Construction,KR,epc_contractor,Samsung C&T|Samsun E&C America,yes,EPC (Vietnam Vung Ang 2; Chile Kelar; Gulf combined-cycle); the tracker spells the US arm 'Samsun E&C America'
 hyundai_ec,Hyundai Engineering & Construction,KR,epc_contractor,Hyundai Engineering & Construction|Hyundai E&C,yes,EPC (Gulf combined-cycle; Indonesia; Uzbekistan)
 hyundai_engineering,Hyundai Engineering,KR,epc_contractor,Hyundai Engineering(?! &),yes,EPC (combined-cycle; Indonesia)
-daewoo_ec,Daewoo Engineering & Construction,KR,epc_contractor,Daewoo,yes,EPC (Morocco Jorf Lasfar 5 and 6 and Safi coal; Nigeria)
-dl_enc,DL E&C,KR,epc_contractor,DL E&C|Daelim,yes,EPC; formerly Daelim Industrial
+daewoo_ec,Daewoo Engineering & Construction,KR,epc_contractor,Daewoo E|Daewood E,yes,EPC (Morocco Jorf Lasfar 5 and 6 and Safi coal; Nigeria); the tracker also spells it 'Daewood E&C'
+dl_enc,DL E&C,KR,epc_contractor,DL E&C|Daelim|DL Energy|DL Holdings,yes,EPC and IPP arm (DL Energy); formerly Daelim Industrial
 gs_enc,GS Engineering & Construction,KR,epc_contractor,GS E&C|GS Engineering,yes,EPC
-sk_ecoplant,SK ecoplant,KR,epc_contractor,SK ecoplant|SK E&C|SK Engineering,yes,EPC; formerly SK Engineering & Construction
+sk_ecoplant,SK ecoplant,KR,epc_contractor,SK ecoplant|SK Eco ?Plant|SK E&C|SK Engineering,yes,EPC; formerly SK Engineering & Construction
 lotte_ec,Lotte Engineering & Construction,KR,epc_contractor,Lotte E&C|Lotte Engineering,yes,EPC
-kexim,Export-Import Bank of Korea,KR,eca,Export-Import Bank of Korea|KEXIM,yes,Export credit agency (loans)
-ksure,Korea Trade Insurance Corporation,KR,eca,K-SURE|Korea Trade Insurance,yes,Export credit agency (cover)
+kexim,Export-Import Bank of Korea,KR,eca,Export-Import Bank of Korea|\bKEXIM\b,yes,Export credit agency (loans); never an owner so the pattern is for role rows only
+ksure,Korea Trade Insurance Corporation,KR,eca,K-SURE|Korea Trade Insurance,yes,Export credit agency (cover); role rows only
 marubeni,Marubeni Corporation,JP,trading_house,Marubeni,yes,Largest Japanese overseas IPP portfolio (Vietnam Nghi Son 2; Indonesia Cirebon and Jawa 1; Thailand; Philippines)
-sumitomo_corp,Sumitomo Corporation,JP,trading_house,Sumitomo Corp,yes,IPP (Vietnam Van Phong 1; Indonesia Tanjung Jati B; Bangladesh Matarbari involvement)
-mitsubishi_corp,Mitsubishi Corporation,JP,trading_house,Mitsubishi Corp,yes,IPP portfolio (Diamond Generating)
-mitsui,Mitsui & Co.,JP,trading_house,Mitsui,yes,IPP portfolio
+sumitomo_corp,Sumitomo Corporation,JP,trading_house,Sumitomo Corp,yes,IPP (Vietnam Van Phong 1; Indonesia Tanjung Jati B; 22 % of Summit Power International in Bangladesh appears at parent level); 'Summit Power Ltd' (Bangladesh) and 'Summit Power Group' (US) are other companies
+mitsubishi_corp,Mitsubishi Corporation,JP,trading_house,Mitsubishi Corp|Diamond Generating|Diamond Transmission,yes,IPP portfolio through Diamond Generating
+mitsui,Mitsui & Co.,JP,trading_house,Mitsui & Co\b|Mitsui &amp; Co\b|Mitsui and Co\b,yes,IPP portfolio; Mitsui E&S and JA Mitsui Leasing are different companies
 itochu,ITOCHU Corporation,JP,trading_house,Itochu|ITOCHU,yes,IPP portfolio
 sojitz,Sojitz Corporation,JP,trading_house,Sojitz,yes,IPP portfolio
-toyota_tsusho,Toyota Tsusho Corporation,JP,trading_house,Toyota Tsusho|Eurus,yes,IPP and renewables (Eurus Energy)
-jera,JERA,JP,utility,JERA,yes,TEPCO Fuel & Power and Chubu Electric joint venture; Vietnam; Indonesia Paiton; Taiwan; Thailand; Bangladesh
-jpower,Electric Power Development Co. (J-POWER),JP,utility,J-POWER|Electric Power Development,yes,Thailand; Indonesia Central Java (Batang); United States
+toyota_tsusho,Toyota Tsusho Corporation,JP,trading_house,Toyota Tsusho|Eurus Energy|\bEurus\b,yes,IPP and renewables (Eurus Energy)
+jera,JERA,JP,utility,\bJERA\b,yes,TEPCO Fuel & Power and Chubu Electric joint venture; Vietnam; Indonesia Paiton; Taiwan; Thailand; Bangladesh
+jpower,Electric Power Development Co. (J-POWER),JP,utility,J-?POWER|(?<!\w )\bElectric Power Development,yes,Thailand; Indonesia Central Java (Batang); United States; minority stakes in Chinese plants appear as 'Electric Power Development Co Ltd'; the pattern excludes 'Guangdong Electric Power Development' and 'Hydroelectric Power Development'
 kansai,Kansai Electric Power,JP,utility,Kansai Electric,yes,Overseas IPP
 kyushu,Kyushu Electric Power,JP,utility,Kyushu Electric,yes,Overseas IPP
 tohoku,Tohoku Electric Power,JP,utility,Tohoku Electric,yes,Overseas IPP
@@ -36,13 +36,13 @@ chugoku,Chugoku Electric Power,JP,utility,Chugoku Electric,yes,Overseas IPP
 shikoku,Shikoku Electric Power,JP,utility,Shikoku Electric,yes,Overseas IPP
 osaka_gas,Osaka Gas,JP,utility,Osaka Gas,yes,Gas IPP
 tokyo_gas,Tokyo Gas,JP,utility,Tokyo Gas,yes,Gas IPP
-mhi,Mitsubishi Heavy Industries,JP,equipment_supplier,Mitsubishi Heavy|Mitsubishi Power|Mitsubishi Hitachi Power,yes,Gas turbines and boilers and EPC
+mhi,Mitsubishi Heavy Industries,JP,equipment_supplier,Mitsubishi Heavy|Mitsubishi Power|Mitsubishi Hitachi Power|\bMHI\b,yes,Gas turbines and boilers and EPC
 toshiba,Toshiba Energy Systems & Solutions,JP,equipment_supplier,Toshiba,yes,Steam turbines and generators (Bangladesh Matarbari)
-ihi,IHI Corporation,JP,equipment_supplier,IHI,yes,Boilers (Vietnam; Indonesia; Bangladesh Matarbari)
+ihi,IHI Corporation,JP,equipment_supplier,\bIHI\b,yes,Boilers (Vietnam; Indonesia; Bangladesh Matarbari)
 shi,Sumitomo Heavy Industries,JP,equipment_supplier,Sumitomo Heavy,yes,Boilers
 khi,Kawasaki Heavy Industries,JP,equipment_supplier,Kawasaki Heavy,yes,Gas turbines and boilers
-jgc,JGC Holdings,JP,epc_contractor,JGC,yes,EPC (gas and LNG-fired)
-chiyoda,Chiyoda Corporation,JP,epc_contractor,Chiyoda,yes,EPC (gas and LNG-fired)
-toyo_engineering,Toyo Engineering,JP,epc_contractor,Toyo Engineering,yes,EPC (gas-fired)
-jbic,Japan Bank for International Cooperation,JP,eca,Japan Bank for International Cooperation|JBIC,yes,Export credit agency (loans)
-nexi,Nippon Export and Investment Insurance,JP,eca,Nippon Export and Investment Insurance|NEXI,yes,Export credit agency (cover)
+jgc,JGC Holdings,JP,epc_contractor,\bJGC\b,yes,EPC (gas and LNG-fired)
+chiyoda,Chiyoda Corporation,JP,epc_contractor,Chiyoda Corp,yes,EPC (gas and LNG-fired)
+toyo_engineering,Toyo Engineering,JP,epc_contractor,Toyo Engineering Corp,yes,EPC (gas-fired); 'Toyo Engineering & Construction Sdn Bhd' is a Malaysian company
+jbic,Japan Bank for International Cooperation,JP,eca,Japan Bank for International Cooperation|\bJBIC\b,yes,Export credit agency (loans); role rows only
+nexi,Nippon Export and Investment Insurance,JP,eca,Nippon Export and Investment Insurance|\bNEXI\b,yes,Export credit agency (cover); role rows only

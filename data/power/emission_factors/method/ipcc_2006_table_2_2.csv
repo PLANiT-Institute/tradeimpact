@@ -1,14 +1,16 @@
 fuel_id,fuel_name_ipcc,ef_kgco2_per_tj,ef_low_kgco2_per_tj,ef_high_kgco2_per_tj,biogenic,gem_fuel_pattern,note
 anthracite,Anthracite,98300,94600,101000,no,anthracite,
 coking_coal,Coking Coal,94600,87300,101000,no,coking,
-bituminous,Other Bituminous Coal,94600,89500,99700,no,bituminous|coal$|^coal|hard coal|unknown coal,default for coal units whose coal type is not stated
-sub_bituminous,Sub-Bituminous Coal,96100,92800,100000,no,sub-?bituminous,
+sub_bituminous,Sub-Bituminous Coal,96100,92800,100000,no,sub-?bituminous,listed before the generic coal row so that "subbituminous" is not read as bituminous
 lignite,Lignite,101000,90900,115000,no,lignite|brown coal,
 peat,Peat,106000,100000,108000,no,peat,
-coke_oven_coke,Coke Oven Coke and Lignite Coke,107000,95700,119000,no,coke,
+coke_oven_coke,Coke Oven Coke and Lignite Coke,107000,95700,119000,no,coke oven coke|petroleum coke|pet ?coke,
+bituminous,Other Bituminous Coal,94600,89500,99700,no,bituminous|waste coal|coal: unknown|coal$|^coal|hard coal|coal:,default for coal units whose coal type is not stated
+blast_furnace_gas,Blast Furnace Gas,260000,219000,308000,no,blast furnace,steel-works by-product gas
+coke_oven_gas,Coke Oven Gas,44400,37300,54100,no,coke oven gas|coke gas,steel-works by-product gas
 crude_oil,Crude Oil,73300,71100,75500,no,crude,
-gas_diesel_oil,Gas/Diesel Oil,74100,72600,74800,no,diesel|gas oil|distillate,
-residual_fuel_oil,Residual Fuel Oil,77400,75500,78800,no,fuel oil|residual|heavy fuel|hfo|oil$|^oil|mazut,default for oil units whose product is not stated
+gas_diesel_oil,Gas/Diesel Oil,74100,72600,74800,no,diesel|gas oil|distillate|light fuel oil,
+residual_fuel_oil,Residual Fuel Oil,77400,75500,78800,no,heavy fuel|fuel oil|residual|hfo|mazut|fossil liquids|oil$|^oil,default for oil units whose product is not stated
 lpg,Liquefied Petroleum Gases,63100,61600,65600,no,lpg|propane|butane,
-natural_gas,Natural Gas,56100,54300,58300,no,gas|lng|natural gas|fossil gas|methane,default for gas units
-wood,Wood/Wood Waste,112000,95000,132000,yes,wood|biomass|bioenergy|pellet|bagasse|agricultural,biogenic CO2 reported separately from the fossil total
+natural_gas,Natural Gas,56100,54300,58300,no,natural gas|fossil gas|lng|methane|waste heat|gas$|^gas,default for gas units
+wood,Wood/Wood Waste,112000,95000,132000,yes,wood|biomass|bioenergy|pellet|bagasse|agricultural|biogas|landfill,biogenic CO2 reported separately from the fossil total
