@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trade Impact of the automotive trade</title>
+<title>__TITLE__</title>
 <style>
 :root {
   color-scheme: light;
@@ -204,7 +204,7 @@ tfoot td { font-weight: 600; border-top: 1.5px solid var(--ink); }
     <div class="brandrow">
       <div class="brand">
         <span class="kicker">PLANiT Institute &middot; Trade Impact, automotive</span>
-        <h1>Trade Impact of the automotive trade</h1>
+        <h1>__TITLE__</h1>
       </div>
       <div class="status" id="status">loading engine&hellip;</div>
     </div>
@@ -226,8 +226,8 @@ tfoot td { font-weight: 600; border-top: 1.5px solid var(--ink); }
     <p>Pick the database file to read it in this page &mdash; nothing is uploaded anywhere.</p>
     <label class="btn" for="dbfile">Choose tradeimpact_auto.sqlite</label>
     <input type="file" id="dbfile" accept=".sqlite,.db,.sqlite3">
-    <p class="small muted">Or serve the data directory: <code>.venv/bin/python script/auto/serve_dashboard.py</code> and open
-    <code>http://127.0.0.1:8765/report/ti_automotive_report.html</code>. Dragging the file onto this box also works.</p>
+    <p class="small muted">Or serve the data directory: <code>__SERVE_CMD__</code> and open
+    <code>__SERVE_URL__</code>. Dragging the file onto this box also works.</p>
   </div>
   <div id="content" class="hidden">
     <section class="story" id="story"></section>
@@ -236,23 +236,23 @@ tfoot td { font-weight: 600; border-top: 1.5px solid var(--ink); }
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js" integrity="sha512-+6Q7hv5pGUBXOuHWw8OdQx3ac7DzM3oJhYqz7SHDku0yl9EBdMqegoPed4GsHRoNF/VQYK2LTYewAIEBrEf/3w==" crossorigin="anonymous"
+<script src="__SQLJS_DIR__sql-wasm.js" integrity="__SQLJS_SRI__" crossorigin="anonymous"
   onerror="window.__sqljsFailed = true"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"
+<script src="__D3_SRC__" integrity="__D3_SRI__" crossorigin="anonymous"
   onerror="window.__d3Failed = true"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha384-9dCJK6nh7skY14HrcvlLYlFga9/MehJjL9ONWRflmiXNRuf8p2jiF4Y5PR881PTq" crossorigin="anonymous"
+<script src="__TOPOJSON_SRC__" integrity="__TOPOJSON_SRI__" crossorigin="anonymous"
   onerror="window.__topoFailed = true"></script>
 <script>
 'use strict';
 /* ============================================================================================
    The page is a reader of the database. Every figure below is a query result at read time.
    ============================================================================================ */
-const CDN_DIR = 'https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/';
-const DB_RELATIVE = '../database/tradeimpact_auto.sqlite';
-const SERVED_DB = 'http://127.0.0.1:8765/database/tradeimpact_auto.sqlite';
-const DB_FILE = 'tradeimpact_auto.sqlite';
-const SERVE_PORT = 8765;
-const SQLJS_VERSION = '1.10.3';
+const CDN_DIR = '__SQLJS_DIR__';
+const DB_RELATIVE = '__DB_RELATIVE__';
+const SERVED_DB = '__SERVED_DB__';
+const DB_FILE = '__DB_FILE__';
+const SERVE_PORT = __SERVE_PORT__;
+const SQLJS_VERSION = '__SQLJS_VERSION__';
 
 const MARKET_NAME = {EU27: 'European Union (27)', US: 'United States', JP: 'Japan', KR: 'Korea'};
 const MARKET_ORDER = ['EU27', 'US', 'JP', 'KR'];

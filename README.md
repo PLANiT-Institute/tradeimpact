@@ -164,28 +164,44 @@ guideline §5.3 threshold 50 %).
 
 ## The analysis report
 
-`data/auto/report/ti_automotive_report.html` is a 38-page analysis of the result set, built from
-the database by `script/auto/report/build_report.py` and rebuilt by `run_all.py` with everything
-else. It is one self-contained file: nine inline-SVG charts, sixteen tables, no script, no image,
-no network request, and it prints to A4. Like every other artefact here it holds no data of its
-own — the prose interpolates the same queries the charts use, so a sentence cannot outlive the
-table under it, and a rebuild after a data change moves the words as well as the figures.
+`data/auto/report/ti_automotive_report.html` is an interactive, tabbed analysis of the result
+set, built by `script/auto/report/build_report.py` (with `template.html` beside it) and rebuilt
+by `run_all.py` with everything else. Like the dashboard it carries no data of its own: it opens
+`tradeimpact_auto.sqlite` in the browser (sql.js, d3 and topojson pinned on cdnjs with integrity
+hashes) and computes every sentence, chart and table with SQL at read time, so a rebuild after a
+data change moves the words as well as the figures, and a test asserts that no figure is written
+into the file. Serve `data/auto` with `.venv/bin/python script/auto/serve_dashboard.py` and open
+<http://127.0.0.1:8765/report/ti_automotive_report.html>; opened from disk the page offers a
+file picker for the database instead.
 
-Its six findings, in the order the report makes them:
+The story runs left to right across seven main tabs, in the order the analysis is built, and each
+tab opens sub-tabs (one per company, per market or per view); a filter bar — scenario, company,
+market, cohort year — redraws the tab in view while the story text stays on the whole set:
 
-1. Under each destination's own committed pathway, **none** of the 20 cohorts emits less over
-   its lifetime than the fleet it joins — all 20 add emissions, +151.5 MtCO₂e; under the
-   observed trajectory 15 of 20 avoid, −29.0 MtCO₂e net.
-2. Under committed policy a cohort stops beating its benchmark 4.7 to 5.6 years after sale, in
-   every market — against 23 years in the United States under the observed trend.
-3. Hybrids avoid more than any other powertrain against the observed trend and add emissions
-   against committed policy; battery-electric is the only powertrain that avoids under both.
-4. The same nameplate and powertrain avoids emissions in one market and adds several tonnes
-   a vehicle in another, on market parameters alone.
-5. Inside the EU27 the per-vehicle result spans 28 tonnes between member states — wider than
-   the gap between any two powertrains in the same country.
-6. The result is most sensitive to vehicle lifetime (47 % to 131 % of the central value), which
-   is also the least-sourced input in three of the four markets.
+1. **Sales** — what each company sold into which market, by powertrain, segment and nameplate,
+   with the sales basis every row rests on.
+2. **Coverage** — which units carry a result and why the rest are withheld; assessed share of
+   worldwide sales; the two tier-C measures.
+3. **Destination benchmarks** — per market: the observed emissions and grid series, the fleet
+   parameters (EU27 on a map), the S1 and S2 pathways and the rates behind them.
+4. **Other inputs** — annual distance, vehicle lifetime, certified product intensities by
+   nameplate, real-world correction factors.
+5. **Annual impact** — the company × market grid of year-by-year strips, one cohort's flat
+   product line against its falling benchmark with a year scrubber, EU27 by member state, and by
+   powertrain.
+6. **Total impact** — the lifetime result per cohort under both scenarios, per vehicle, the
+   crossover year, the same nameplate across markets, the sensitivity tornado and the full
+   result table.
+7. **Sources** — the table manifest with content hashes, the source registry and raw-file
+   provenance.
+
+The findings the story states, each recomputed at read time: against each destination's own
+committed pathway every cohort adds emissions while most avoid against the observed trend; a
+cohort stops beating its committed benchmark about five years after sale in every market;
+hybrids beat the trend and not the target, battery-electric avoids under both; the same nameplate
+avoids in one market and adds several tonnes a vehicle in another; inside the EU27 geography
+outweighs technology; and vehicle lifetime moves the result more than any other input without
+turning a committed-policy addition into an avoidance.
 
 ## Naming convention
 
