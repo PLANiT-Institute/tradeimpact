@@ -1438,7 +1438,7 @@ function renderTotal(panel) {
       out.push({label: e.market + ' ' + COMPANY_NAME[e.company] + ' — ' + (NAMES[e.dimension] || e.dimension), low: lo / 1e6, mid: c / 1e6, high: hi / 1e6, dimension: e.dimension});
     }
     out.sort((a, b) => Math.abs(b.high - b.low) - Math.abs(a.high - a.low));
-    const c = card(panel, 'What would change the answer: ' + y + ' cohorts under ' + SC_NAME[sc], 'Four inputs varied one at a time over their documented ranges, every cohort repriced. The bar is the range, the mark the published central value; dimensions that leave a cohort unchanged are omitted. Widest first.');
+    const c = card(panel, 'What would change the answer: ' + y + ' cohorts under ' + SC_NAME[sc], 'Four inputs varied one at a time over their documented ranges, every cohort recomputed. The bar is the range, the mark the published central value; dimensions that leave a cohort unchanged are omitted. Widest first.');
     ranges(fig(c), out.slice(0, 20), {unit: 'MtCO2e over the lifetime', dp: 2});
     caption(c, 'Vehicle lifetime dominates everywhere: it is both the number of years of benchmark decline a vehicle must survive and the multiplier on every year’s gap. No variant turns a committed-policy addition into an avoidance.');
     table(c, [
