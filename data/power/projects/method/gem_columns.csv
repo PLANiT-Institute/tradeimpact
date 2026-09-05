@@ -1,0 +1,21 @@
+field,candidates,required,note
+gem_unit_id,GEM unit/phase ID;GEM unit ID;GEM unit/phase ID (GEM unit/phase ID);Unit ID,yes,the key every other table joins on
+gem_location_id,GEM location ID;Location ID;GEM plant ID,no,plant-level key; a role recorded at plant level applies to every unit at the location
+country,Country/area;Country/Area;Country,yes,tracker name mapped to alpha-2 through geography and country_name_overrides.csv
+plant_name,Plant / Project name;Plant name;Project name;Plant / Project Name,yes,
+unit_name,Unit / Phase name;Unit name;Unit/Phase name;Unit / Phase Name,no,
+fuel_type,Type;Fuel type;Fuel Type;Technology type,yes,coal gas oil nuclear hydro wind solar bioenergy geothermal as the tracker writes them
+fuel_detail,Fuel;Coal type;Fuel detail;Fuel(s),no,matched against emission_factors gem_fuel_pattern
+technology,Technology;Combustion technology;Turbine/Technology;Combustion Technology;Technology detail,no,matched against technology_defaults technology_pattern
+capacity_mw,Capacity (MW),yes,
+status,Status,yes,operating construction pre-construction announced mothballed retired cancelled shelved
+start_year,Start year;Start Year;Year of commissioning,yes,commercial operation year; blank rows are excluded with a reason
+retired_year,Retired year;Retired Year;Planned retirement;Retirement year,no,
+owner,Owner;Owner(s);Owner (s),yes,matched against companies gem_owner_pattern
+parent,Parent;Parent(s);Parent (s),no,matched against companies gem_owner_pattern
+latitude,Latitude,yes,kept for the map
+longitude,Longitude,yes,kept for the map
+capacity_factor,Capacity factor;Capacity Factor;Annual capacity factor,no,tracker estimate where published; technology default otherwise
+heat_rate_btu_per_kwh,Heat rate (Btu per kWh);Heat rate;Heat Rate (Btu/kWh),no,converted to MJ/kWh; technology default otherwise
+emission_factor_kgco2_per_tj,Emission factor (kg of CO2 per TJ);Emission factor,no,kept for comparison; the model uses emission_factors.csv
+wiki_url,Wiki URL;Wiki page;GEM wiki,no,the project page the role register cites

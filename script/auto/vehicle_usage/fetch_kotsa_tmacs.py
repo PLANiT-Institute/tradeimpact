@@ -35,7 +35,7 @@ from pathlib import Path
 
 import certifi
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from registry import upsert_raw_file, upsert_source  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[3]

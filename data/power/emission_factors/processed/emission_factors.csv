@@ -1,0 +1,14 @@
+country,fuel_id,ef_kgco2_per_tj,ef_low_kgco2_per_tj,ef_high_kgco2_per_tj,basis,biogenic,source_id,source_url,tier
+,anthracite,98300.0,94600.0,101000.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,coking_coal,94600.0,87300.0,101000.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,bituminous,94600.0,89500.0,99700.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,sub_bituminous,96100.0,92800.0,100000.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,lignite,101000.0,90900.0,115000.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,peat,106000.0,100000.0,108000.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,coke_oven_coke,107000.0,95700.0,119000.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,crude_oil,73300.0,71100.0,75500.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,gas_diesel_oil,74100.0,72600.0,74800.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,residual_fuel_oil,77400.0,75500.0,78800.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,lpg,63100.0,61600.0,65600.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,natural_gas,56100.0,54300.0,58300.0,ipcc_default,no,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
+,wood,112000.0,95000.0,132000.0,ipcc_default,yes,ipcc_2006_v2_ch2,https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html,C
