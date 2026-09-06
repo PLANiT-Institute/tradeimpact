@@ -18,7 +18,9 @@ that only a person can obtain.
 | extract | `grid/extract_owid_grid.py` | raw CSV, codes | `grid/processed/grid_intensity.csv` |
 | extract | `emission_factors/extract_emission_factors.py` | IPCC transcription (verified against the PDF), national factors (hand) | `emission_factors/processed/emission_factors.csv` |
 | extract | `projects/extract_gem_tracker.py` | GEM tracker xlsx (**hand**), column map, overrides, companies, roles | `projects/processed/projects_gem.csv` |
+| fetch | `roles/fetch_gem_wiki.py` | GEM wiki API (page per plant) | `roles/raw/gem_wiki_pages.json` |
 | extract | `roles/extract_gem_ownership.py` | projects (owner and parent strings), companies | `roles/processed/gem_ownership.csv` (equity rows with shares) |
+| extract | `roles/extract_wiki_roles.py` | wiki pages, projects, companies, vocabulary | `roles/processed/gem_wiki_roles.csv` (EPC, equipment, finance, O&M rows with the sentence) |
 | extract | `roles/extract_roles.py` | role register (**hand**, pending), vocabulary, companies | `roles/processed/project_roles.csv` |
 | fetch | `targets/fetch_climatewatch_ndc.py` | Climate Watch API | `targets/raw/climatewatch_ndc_content.json` |
 | extract | `targets/extract_ndc_anchors.py` | Climate Watch content, hand overrides, projects | `targets/processed/ndc_anchors_power.csv` |

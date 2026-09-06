@@ -49,6 +49,23 @@ third-party compilation of company disclosures. The attribution step merges it w
 register; where the register has an equity_owner row for the same company and unit, the register
 wins. Construction, equipment, O&M and finance roles are not in the tracker and remain hand rows.
 
+## Roles read from the GEM wiki pages
+
+The tracker links every unit to its GEM wiki page, and the pages carry the project narrative:
+who built the plant, who supplied the boiler and turbines, who lent or insured, who operates it.
+`script/power/roles/fetch_gem_wiki.py` fetches the wikitext of every page in scope through the
+wiki's API into one raw JSON (`raw/gem_wiki_pages.json`, registered with its hash);
+`script/power/roles/extract_wiki_roles.py` splits each page into sentences and reads a role
+wherever a sentence names an in-scope company together with the role's words — EPC / turnkey /
+contractor for a builder, boiler / turbine / supply for an equipment maker, loan / debt /
+financing for an export-credit bank, insurance / guarantee / cover for an export-credit insurer,
+"operation and maintenance" for an operator, stake / equity / consortium for an owner. Sentences
+about intentions, protests, scandals, memoranda or quotations are skipped; the developer role is
+not read from narrative. Output `processed/gem_wiki_roles.csv`: one row per company × plant
+location × role with the sentence and the page link. **Tier C**: a keyword reading of narrative
+text, unverified. The attribution step takes register rows first, tracker equity rows second and
+wiki rows third, so a hand row replaces a wiki row for the same company, plant and role.
+
 ## Processed output
 
 `processed/project_roles.csv` — the validated register joined to the company's country, name and

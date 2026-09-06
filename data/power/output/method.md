@@ -74,12 +74,22 @@ year after the latest grid observation) forward — the part that is still a cho
 | file | what | link exists? | status |
 |---|---|---|---|
 | `projects/raw/gem_global_integrated_power_2026_08_v3.xlsx` | Global Integrated Power Tracker, August 2026 v3 | landing page and licence yes; the file only through GEM's download form | on disk 2026-09-05 (downloaded by the project lead) |
-| `roles/raw/project_roles.csv` | company × unit × role × phase × share, one source link per row | each row cites its page | header-only; equity rows meanwhile read from the tracker's owner shares (`roles/processed/gem_ownership.csv`, tier B) |
+| `roles/raw/gem_wiki_pages.json` | wikitext of the 420 GEM wiki pages of the plants in scope | yes, the wiki's API | fetched; construction, equipment, finance and ownership roles read from the sentences (`roles/processed/gem_wiki_roles.csv`, tier C) |
+| `roles/raw/project_roles.csv` | hand rows that confirm or replace a wiki-read role, one source link per row | each row cites its page | header-only; equity rows come from the tracker's owner shares (`roles/processed/gem_ownership.csv`, tier B), other roles from the wiki pages |
 | `emission_factors/raw/national_emission_factors.csv` | destination's own implied factor per fuel (UNFCCC CRT 1.A(a)) | each row cites its table | header-only; IPCC defaults apply meanwhile |
 | `targets/raw/climatewatch_ndc_content.json` | every country's NDC target text, type and year per submission (Climate Watch, WRI) | yes, public API | fetched; S2 anchors machine-read from it |
 | `targets/raw/ndc_anchors_power.csv` | hand rows that replace a parsed anchor (EU members → EU 2040; Taiwan; Guam and Puerto Rico under the US; any `needs_review` destination) | each row cites its document | 30 rows; fixed-level and trajectory targets (CN, ID, MX, ZA, MY, CL, AR, SA, QA) still need a hand level |
 | `projects/method/technology_defaults.csv` | lifetime, capacity factor, efficiency by technology | each row cites its document; `verified = no` | authored, to verify |
 | `emission_factors/method/ipcc_2006_table_2_2.csv` | IPCC Table 2.2 transcription | verified against the PDF text by the extractor on every run | done |
+
+## Layer 2 stays tier C for now (project lead, 2026-09-06)
+
+The tracker publishes no unit-level heat rate or capacity factor and the destinations' own
+fuel-specific factors are not filed, so every fossil unit runs on technology defaults and IPCC
+default factors: Layer 2 is tier C throughout. The project lead accepted this on 2026-09-06 as the
+basis for the first results; it is declared on every result row (`cf_source`, `heat_rate_source`,
+`ef_basis`, `tier`), the bands are carried in the sensitivity table, and national factors
+(`emission_factors/raw/national_emission_factors.csv`) lift a destination to tier A when filed.
 
 ## Scope: which destinations, and whether home counts
 
@@ -113,22 +123,26 @@ read, other inputs, annual impact, total impact by company and role, sources) wi
 ## Run order
 
 `script/power/run_all.py [--fetch]`: geography → grid → emission factors → projects → GEM ownership
-→ roles → NDC anchors → rates → reference → unit impact → attribution → sensitivity → database →
-report → ruff → pytest. Exit 3 with `[hand]` when a
+→ wiki roles → hand roles → NDC anchors → rates → reference → unit impact → attribution →
+sensitivity → database → report → ruff → pytest. Exit 3 with `[hand]` when a
 hand-gathered file is missing; exit 1 on any other failure. Scripts and their inputs and outputs
 are tabulated in [`script/power/README.md`](../../../script/power/README.md).
 
-## Status (2026-09-05)
+## Status (2026-09-06)
 
 The pipeline runs end to end on the August 2026 tracker (v3): 685 overseas units in 71 countries,
-539 assessed. S1 exists for every destination; S2 for 35 of 71 destinations (the ones whose latest
-NDC states a base-year reduction, plus the EU, Taiwan and US-territory hand rows), covering 318 of
-the 539 assessed units. The 36 destinations without S2 are listed with the NDC sentence read; the
-ones that matter by unit count are China (trajectory from an unstated peak), Indonesia, Mexico,
-South Africa, Malaysia, Chile and Argentina (fixed levels without base-year emissions), Saudi Arabia
-and Qatar (absolute reductions in tonnes), and the BAU-relative targets of Vietnam, Jordan,
-Pakistan, Trinidad and Tobago and others — each a hand row away once a base-year level is read
-from the document. Equity roles come from the tracker's owner shares; the hand register for
-construction, equipment, O&M and finance roles is still header-only. Layer 2 is tier C throughout
-(technology defaults and IPCC factors). Sensitivity, database and the interactive report with the
-unit × company map are built.
+539 assessed. S1 exists for every destination. S2 exists for 43 of 71 destinations and 450 of the 539
+assessed units: 21 destinations machine-read from Climate Watch, 14 by hand rows (the EU members,
+Taiwan and the US territories), and 8 by hand rows read from the NDC documents themselves on
+2026-09-06 (China and Malaysia with the peak assumed at the latest observed year — flagged as an
+assumption; Indonesia, South Africa, Argentina and Vietnam as absolute levels whose committed 2030/2035
+level sits at or above the recent level, so the grid pathway is floored at the observed trend;
+Mexico and Chile as percentages below 2023 from Climate Action Tracker's reading). The remaining
+destinations without S2 state their target against a business-as-usual projection or as GDP
+intensity (Saudi Arabia's and Qatar's are reductions against a dynamic baseline or a quantity of
+mitigation actions), which no pathway can be read from; each is listed with the sentence read.
+Roles: equity from the tracker's owner shares (tier B); EPC, equipment, lender and export-credit
+cover read from the GEM wiki pages by keyword (82 company × plant rows, tier C, applied to
+44 units); the hand register is header-only and replaces a wiki row when filled. Layer 2 is
+tier C throughout, accepted by the project lead as the basis for the first results. Sensitivity,
+database and the interactive report with the unit × company map are built.

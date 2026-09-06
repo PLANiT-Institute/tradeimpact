@@ -31,6 +31,7 @@ FETCH = [
     "emission_factors/fetch_ipcc_defaults.py",
     "targets/fetch_climatewatch_ndc.py",
     "geography/fetch_map_geometry.py",
+    "roles/fetch_gem_wiki.py",
 ]
 STEPS = [
     "geography/extract_country_codes.py",
@@ -38,6 +39,7 @@ STEPS = [
     "emission_factors/extract_emission_factors.py",
     "projects/extract_gem_tracker.py",
     "roles/extract_gem_ownership.py",
+    "roles/extract_wiki_roles.py",
     "roles/extract_roles.py",
     "targets/extract_ndc_anchors.py",
     "targets/derive_power_rates.py",

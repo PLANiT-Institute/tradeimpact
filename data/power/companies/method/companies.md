@@ -18,7 +18,7 @@ repository (a method table, not a fetched dataset) and is the join key for two t
 | company_id | lowercase key used everywhere else |
 | name_en | English name as the company writes it |
 | country | HQ, ISO 3166-1 alpha-2 (`KR`, `JP`) |
-| type | `utility`, `genco`, `trading_house`, `developer`, `epc_contractor`, `equipment_supplier`, `eca` |
+| type | `utility`, `genco`, `trading_house`, `developer`, `epc_contractor`, `equipment_supplier`, `eca_bank` (export credit bank: lends), `eca_insurer` (export credit insurer: covers) |
 | gem_owner_pattern | regex for the tracker's Owner / Parent text; `(?! &)` excludes a longer name |
 | in_scope | `yes` to attribute; a `no` row is kept as a documented exclusion |
 | note | representative overseas projects, from public knowledge; not a data row and not cited |

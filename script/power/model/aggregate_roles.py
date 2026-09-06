@@ -3,6 +3,7 @@
 Inputs
     roles/processed/project_roles.csv      hand register: company x unit x role, phase, share
     roles/processed/gem_ownership.csv      equity rows read from the tracker's owner shares
+    roles/processed/gem_wiki_roles.csv     EPC, equipment, finance, O&M rows from the wiki pages
     companies/method/companies.csv         names and HQ for the tracker-derived rows
     output/ti_power_by_unit.csv            unit x scenario lifetime results
 Outputs
@@ -32,6 +33,7 @@ from power_io import DATA, OUT, REPO, hand_file_required, num, read_csv, write_c
 
 ROLES = DATA / "roles" / "processed" / "project_roles.csv"
 GEM_OWNERSHIP = DATA / "roles" / "processed" / "gem_ownership.csv"
+GEM_WIKI = DATA / "roles" / "processed" / "gem_wiki_roles.csv"
 COMPANIES = DATA / "companies" / "method" / "companies.csv"
 SCOPE = DATA / "registry" / "scope.csv"
 BY_UNIT = OUT / "ti_power_by_unit.csv"
@@ -76,6 +78,7 @@ COMPANY_FIELDS = [
     "units_with_share",
     "units_from_register",
     "units_from_gem",
+    "units_from_wiki",
     "capacity_mw",
     "ti_lifetime_full_tco2",
     "ti_lifetime_weighted_tco2",
@@ -164,6 +167,9 @@ def company_totals(rows: list[dict[str, object]]) -> list[dict[str, object]]:
                     {str(r["gem_unit_id"]) for r in rs if r["origin"] == "register"}
                 ),
                 "units_from_gem": len({str(r["gem_unit_id"]) for r in rs if r["origin"] == "gem"}),
+                "units_from_wiki": len(
+                    {str(r["gem_unit_id"]) for r in rs if r["origin"] == "gem_wiki"}
+                ),
                 "capacity_mw": round(sum(float(r["capacity_mw"]) for r in rs), 1),
                 "ti_lifetime_full_tco2": round(full, 3),
                 "ti_lifetime_weighted_tco2": round(
@@ -188,8 +194,13 @@ def merge_registers(
     gem: list[dict[str, str]],
     companies: dict[str, dict[str, str]],
     exclude_home: bool = True,
+    wiki: list[dict[str, str]] | None = None,
 ) -> tuple[list[dict[str, str]], int]:
-    """Register rows plus uncovered tracker equity rows; domestic rows dropped and counted."""
+    """Register rows, then uncovered tracker equity rows, then uncovered wiki-read roles.
+
+    Domestic rows are dropped and counted. A wiki equity row is used only where neither the
+    register nor the tracker names that company on that plant.
+    """
     out: list[dict[str, str]] = []
     domestic = 0
     covered = {(r["company_id"], r["gem_unit_id"]) for r in register if r["role"] == "equity_owner"}
@@ -235,6 +246,44 @@ def merge_registers(
                 "origin": "gem",
             }
         )
+    covered_roles = {
+        (r["company_id"], r["gem_location_id"], r["role"]) for r in register if r["gem_location_id"]
+    }
+    owners_by_location = {(g["company_id"], g["gem_location_id"]) for g in gem}
+    for w in wiki or []:
+        c = companies[w["company_id"]]
+        if exclude_home and c["country"] == w["country"]:
+            domestic += 1
+            continue
+        if (w["company_id"], w["gem_location_id"], w["role"]) in covered_roles:
+            continue
+        if (
+            w["role"] == "equity_owner"
+            and (w["company_id"], w["gem_location_id"]) in owners_by_location
+        ):
+            continue
+        out.append(
+            {
+                "company_id": w["company_id"],
+                "company_name": c["name_en"],
+                "company_country": c["country"],
+                "company_type": c["type"],
+                "gem_unit_id": "",
+                "gem_location_id": w["gem_location_id"],
+                "plant_name": w["plant_name"],
+                "country": w["country"],
+                "role": w["role"],
+                "phase": w["phase"],
+                "share": w["share"],
+                "share_basis": w["share_basis"],
+                "from_year": "",
+                "to_year": "",
+                "source_url": w["source_url"],
+                "source_note": f"GEM wiki sentence: {w['sentence'][:200]}",
+                "accessed_date": "",
+                "origin": "gem_wiki",
+            }
+        )
     return out, domestic
 
 
@@ -253,6 +302,7 @@ def main() -> None:
         read_csv(GEM_OWNERSHIP),
         companies,
         exclude_home=scope.get("exclude_home_country", "yes") == "yes",
+        wiki=read_csv(GEM_WIKI) if GEM_WIKI.exists() else [],
     )
     rows = attribute(merged, read_csv(BY_UNIT))
     write_csv(BY_ROLE, ROLE_FIELDS, rows)

@@ -43,6 +43,7 @@ agg = load("model/aggregate_roles.py")
 factors = load("emission_factors/extract_emission_factors.py")
 own = load("roles/extract_gem_ownership.py")
 anchors = load("targets/extract_ndc_anchors.py")
+wiki = load("roles/extract_wiki_roles.py")
 
 
 def read(path: Path) -> list[dict[str, str]]:
@@ -143,6 +144,22 @@ def test_ndc_sentences_are_read_the_way_the_rule_says() -> None:
     assert anchors.classify("Baseline scenario target") == "bau_reduction"
     assert anchors.classify("Base year target; Trajectory target") == "reduction_from_base"
     assert anchors.classify("Intensity target") == "gdp_intensity"
+
+
+def test_wiki_sentences_are_read_by_company_type_and_role_words() -> None:
+    """EPC words for a builder, loan words for a bank; a bare name or news noise reads nothing."""
+    epc = "In March 2013, Korean company Daelim Industrial took over the project as EPC contractor."
+    assert wiki.classify(epc, "epc_contractor", (30, 47)) == "epc_contractor"
+    loan = "In June 2016, JBIC approved a US$3.4 billion loan agreement for the plant."
+    assert wiki.classify(loan, "eca_bank", (14, 18)) == "lender"
+    cover = "The commercial bank loans are being insured by Kexim and NEXI."
+    assert wiki.classify(cover, "eca_insurer", (57, 61)) == "eca_cover"  # an insurer covers
+    named_only = "Affected firms would include Kepco and Korea Trade Insurance Corporation."
+    assert wiki.classify(named_only, "eca_insurer", (38, 72)) is None
+    noise = "JBIC was considering funding 60% of the plant's construction."
+    assert wiki.classify(noise, "eca_bank", (0, 4)) is None
+    assert wiki.share_after("KEPCO acquired a 40% stake in the project", 5) == 0.4
+    assert wiki.share_after("KEPCO acquired the project", 5) is None
 
 
 # ---------------------------------------------------------------- attribution

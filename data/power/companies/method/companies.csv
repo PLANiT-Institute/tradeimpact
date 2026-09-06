@@ -18,8 +18,8 @@ dl_enc,DL E&C,KR,epc_contractor,DL E&C|Daelim|DL Energy|DL Holdings,yes,EPC and 
 gs_enc,GS Engineering & Construction,KR,epc_contractor,GS E&C|GS Engineering,yes,EPC
 sk_ecoplant,SK ecoplant,KR,epc_contractor,SK ecoplant|SK Eco ?Plant|SK E&C|SK Engineering,yes,EPC; formerly SK Engineering & Construction
 lotte_ec,Lotte Engineering & Construction,KR,epc_contractor,Lotte E&C|Lotte Engineering,yes,EPC
-kexim,Export-Import Bank of Korea,KR,eca,Export-Import Bank of Korea|\bKEXIM\b,yes,Export credit agency (loans); never an owner so the pattern is for role rows only
-ksure,Korea Trade Insurance Corporation,KR,eca,K-SURE|Korea Trade Insurance,yes,Export credit agency (cover); role rows only
+kexim,Export-Import Bank of Korea,KR,eca_bank,Export-Import Bank of Korea|\bKEXIM\b,yes,Export credit agency (loans); never an owner so the pattern is for role rows only
+ksure,Korea Trade Insurance Corporation,KR,eca_insurer,K-SURE|Korea Trade Insurance,yes,Export credit agency (cover); role rows only
 marubeni,Marubeni Corporation,JP,trading_house,Marubeni,yes,Largest Japanese overseas IPP portfolio (Vietnam Nghi Son 2; Indonesia Cirebon and Jawa 1; Thailand; Philippines)
 sumitomo_corp,Sumitomo Corporation,JP,trading_house,Sumitomo Corp,yes,IPP (Vietnam Van Phong 1; Indonesia Tanjung Jati B; 22 % of Summit Power International in Bangladesh appears at parent level); 'Summit Power Ltd' (Bangladesh) and 'Summit Power Group' (US) are other companies
 mitsubishi_corp,Mitsubishi Corporation,JP,trading_house,Mitsubishi Corp|Diamond Generating|Diamond Transmission,yes,IPP portfolio through Diamond Generating
@@ -44,5 +44,5 @@ khi,Kawasaki Heavy Industries,JP,equipment_supplier,Kawasaki Heavy,yes,Gas turbi
 jgc,JGC Holdings,JP,epc_contractor,\bJGC\b,yes,EPC (gas and LNG-fired)
 chiyoda,Chiyoda Corporation,JP,epc_contractor,Chiyoda Corp,yes,EPC (gas and LNG-fired)
 toyo_engineering,Toyo Engineering,JP,epc_contractor,Toyo Engineering Corp,yes,EPC (gas-fired); 'Toyo Engineering & Construction Sdn Bhd' is a Malaysian company
-jbic,Japan Bank for International Cooperation,JP,eca,Japan Bank for International Cooperation|\bJBIC\b,yes,Export credit agency (loans); role rows only
-nexi,Nippon Export and Investment Insurance,JP,eca,Nippon Export and Investment Insurance|\bNEXI\b,yes,Export credit agency (cover); role rows only
+jbic,Japan Bank for International Cooperation,JP,eca_bank,Japan Bank for International Cooperation|\bJBIC\b,yes,Export credit agency (loans); role rows only
+nexi,Nippon Export and Investment Insurance,JP,eca_insurer,Nippon Export and Investment Insurance|\bNEXI\b,yes,Export credit agency (cover); role rows only

@@ -540,6 +540,8 @@ function computeFacts() {
   f.equity_rows = fmtN(one('SELECT COUNT(*) n FROM gem_ownership').n);
   f.equity_with_share = fmtN(one("SELECT COUNT(*) n FROM gem_ownership WHERE share IS NOT NULL AND share <> ''").n);
   f.register_rows = one('SELECT COUNT(*) n FROM project_roles').n;
+  f.wiki_rows = fmtN(one('SELECT COUNT(*) n FROM gem_wiki_roles').n);
+  f.wiki_nonequity = fmtN(one("SELECT COUNT(*) n FROM gem_wiki_roles WHERE role <> 'equity_owner'").n);
   const t = {};
   for (const sc of ['S1', 'S2']) {
     const r = one("SELECT COUNT(*) n, SUM(ti_lifetime_tco2) ti, SUM(ti_remaining_tco2) rem, SUM(CASE WHEN ti_lifetime_tco2 > 0 THEN 1 ELSE 0 END) adding FROM ti_power_by_unit WHERE scenario = ?", [sc]);
@@ -600,8 +602,7 @@ pathway exists, <span data-f="s2_adding"></span> of <span data-f="s2_units"></sp
 <p class="lead"><span data-f="units"></span> of <span data-f="matched_units"></span> matched units carry a result;
 <span data-f="excluded_units"></span> are listed with the reason. The equity role is read from the tracker itself:
 <span data-f="equity_rows"></span> company × unit rows, <span data-f="equity_with_share"></span> with a stated share.
-The hand register for construction, equipment, O&amp;M and finance roles has <span data-f="register_rows"></span>
-rows so far.</p>
+Construction, equipment and finance roles are read from the GEM wiki pages by keyword: <span data-f="wiki_nonequity"></span> company × plant rows (EPC contractors, equipment suppliers, lenders, export-credit cover), each with the sentence it came from, tier C until a hand row confirms it. The hand register has <span data-f="register_rows"></span> rows so far.</p>
 <p>Attribution is per role, never pooled: a company's rows of different roles are never added into one number, and
 the share stays a column beside the full figure, so any weighting is a query rather than a re-collection. The
 largest gap between full and share-weighted attribution is <span data-f="gap_company"></span>:
@@ -835,6 +836,8 @@ function renderCoverage(panel) {
       {key: 'with_share', label: 'With a share', num: true, fmt: (v) => fmtN(v)}, {key: 'mean', label: 'Mean share', num: true, fmt: (v) => v.length ? pct(v.reduce((a, b) => a + b, 0) / v.length, 0) : '—'}], [...byCo.values()], {sort: 'n'});
     const c2 = card(panel, 'The hand register', 'Construction (EPC, equipment), operation (O&M) and finance (lender, ECA) roles are not in the tracker and are transcribed by hand with one source link per row. Rows on file: ' + fmtN(FACTS.register_rows) + '.');
     table(c2, [{key: 'role', label: 'Role'}, {key: 'phase', label: 'Phase'}, {key: 'share_basis', label: 'Share basis'}, {key: 'definition', label: 'Definition', wrap: true}], Q('SELECT * FROM roles'));
+    const c3 = card(panel, 'Roles read from the GEM wiki pages', 'Construction, equipment, finance and operation roles read by keyword from the sentence shown (tier C, unverified); a hand row in the register replaces a wiki row for the same company, plant and role.');
+    table(c3, [{key: 'company_id', label: 'Company', fmt: (v) => esc(companyName(v))}, {key: 'plant_name', label: 'Plant'}, {key: 'country', label: 'Dest.'}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'share', label: 'Share', num: true, fmt: (v) => v === '' || v == null ? '—' : pct(v, 0)}, {key: 'sentence', label: 'Sentence read', wrap: true, fmt: (v, r) => '<span class="small">' + esc(v) + '</span> <a class="small" href="' + esc(r.source_url) + '" target="_blank" rel="noopener">page</a>'}], Q("SELECT * FROM gem_wiki_roles ORDER BY role, company_id"), {short: true});
     if (FACTS.register_rows) table(c2, [{key: 'company_name', label: 'Company'}, {key: 'plant_name', label: 'Plant'}, {key: 'country', label: 'Dest.'}, {key: 'role', label: 'Role'}, {key: 'phase', label: 'Phase'}, {key: 'share', label: 'Share', num: true, fmt: (v) => v === '' || v == null ? '—' : pct(v, 0)}, {key: 'source_url', label: 'Source', fmt: (v) => '<a href="' + esc(v) + '" target="_blank" rel="noopener">link</a>'}], Q('SELECT * FROM project_roles'), {short: true});
   } else {
     const rows = Q("SELECT fuel_type, cf_source, heat_rate_source, ef_basis, lifetime_source, tier, COUNT(*) n FROM ti_power_by_unit WHERE scenario = 'S1' GROUP BY 1, 2, 3, 4, 5, 6 ORDER BY n DESC");
@@ -951,7 +954,7 @@ function renderTotal(panel) {
     const f = fig(c);
     legend(f, [['full attribution', 'var(--ink)'], ['share-weighted', 'var(--accent)']]);
     barsH(f, rows.sort((a, b) => Math.abs(b.tfull) - Math.abs(a.tfull)).map((r) => ({label: r.company_name + ' · ' + (ROLE_LABEL[r.role] || r.role), row: r, series: [{key: 'full', value: r.tfull / 1e6}, {key: 'share-weighted', value: r.weighted / 1e6}]})),
-      {unit: 'MtCO2 over the operating lifetime', dp: 1, labelW: 250, band: 11, colour: (x) => x.key === 'full' ? 'var(--ink)' : 'var(--accent)', onClick: (r) => go('companies', r.row.company_id),
+      {unit: 'MtCO2 over the operating lifetime', dp: 1, labelW: 330, band: 11, colour: (x) => x.key === 'full' ? 'var(--ink)' : 'var(--accent)', onClick: (r) => go('companies', r.row.company_id),
         tipHtml: (x, r) => '<b>' + esc(r.label) + '</b><br>' + esc(x.key) + ': ' + fmt(x.value, 2) + ' Mt<br>' + fmtN(r.row.units) + ' units, ' + fmtN(r.row.with_share) + ' with a share, ' + fmtN(r.row.mw) + ' MW'});
     table(c, [{key: 'company_name', label: 'Company'}, {key: 'company_country', label: 'HQ'}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'phase', label: 'Phase'}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)}, {key: 'with_share', label: 'With share', num: true, fmt: (v) => fmtN(v)}, {key: 'mw', label: 'MW', num: true, fmt: (v) => fmtN(v)},
       {key: 'tfull', label: 'Lifetime full Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'weighted', label: 'Lifetime weighted Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'rfull', label: 'Remaining full Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'rweighted', label: 'Remaining weighted Mt', num: true, fmt: cellMt, cls: signCls}], rows, {sort: 'tfull', onRow: (r) => go('companies', r.company_id)});
