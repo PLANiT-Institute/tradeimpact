@@ -18,6 +18,8 @@ that only a person can obtain.
 | extract | `grid/extract_owid_grid.py` | raw CSV, codes | `grid/processed/grid_intensity.csv` |
 | extract | `emission_factors/extract_emission_factors.py` | IPCC transcription (verified against the PDF), national factors (hand) | `emission_factors/processed/emission_factors.csv` |
 | extract | `projects/extract_gem_tracker.py` | GEM tracker xlsx (**hand**), column map, overrides, companies, roles | `projects/processed/projects_gem.csv` |
+| fetch | `utilisation/fetch_ember_yearly.py` | Ember yearly electricity release (49 MB) | `utilisation/raw/ember/ember_yearly_fuel.csv` + `index.csv` (filtered subset, original hash recorded) |
+| extract | `utilisation/extract_capacity_factors.py` | the Ember subset, the fuel map, country codes | `utilisation/processed/capacity_factors_country.csv` (one capacity factor per destination × fuel, with its band) |
 | fetch | `projects/fetch_technology_documents.py` | the documents listed in `projects/method/technology_documents.csv` | `projects/raw/technology_documents/*` + `index.csv` |
 | extract | `projects/verify_technology_defaults.py` | technology defaults, the document map, the fetched documents | `projects/processed/technology_defaults_check.csv` (document heat rate vs the transcription) |
 | fetch | `roles/fetch_gem_wiki.py` | GEM wiki API (page per plant) | `roles/raw/gem_wiki/*.txt` + `index.csv` |

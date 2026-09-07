@@ -12,7 +12,9 @@ Output
 
 Dimensions (guideline v1.0 §5.2), each with a central row identical to the published result:
     lifetime          technology default -> lifetime_low_years / lifetime_high_years
-    capacity_factor   technology default -> cf_low / cf_high
+    capacity_factor   the band on the unit row -> the destination's own range of years where the
+                      capacity factor is the country's, the technology default's low and high
+                      where it is the class value
     efficiency        technology default -> efficiency_low_lhv / efficiency_high_lhv, which move
                       the heat rate 3.6/eta and so the unit's intensity (default heat rates only)
     emission_factor   IPCC default -> its lower / upper bound (fossil, non-biogenic units only)
@@ -115,10 +117,12 @@ def variants_for(
             alt = list(range(start, start + life))
             result = totals(capacity, cf, intensity, path, alt, analysis_year)
             out.append(row(u, "lifetime", variant, life, result))
-    if d and u["cf_source"] == "default":
+    # The band is on the unit row: the destination's own range of years where the capacity factor
+    # is the country's, the technology default's low and high where it is the class value.
+    if u["cf_source"] != "gem" and num(u.get("cf_low")) and num(u.get("cf_high")):
         out.append(row(u, "capacity_factor", "central", cf, central))
         for variant, key in (("low", "cf_low"), ("high", "cf_high")):
-            alt_cf = float(d[key])
+            alt_cf = float(u[key])
             result = totals(capacity, alt_cf, intensity, path, years, analysis_year)
             out.append(row(u, "capacity_factor", variant, alt_cf, result))
     heat = num(u["heat_rate_mj_per_kwh"])

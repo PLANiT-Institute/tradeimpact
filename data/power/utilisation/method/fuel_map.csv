@@ -1,0 +1,9 @@
+ember_variable,fuel_type,proxy,note
+Coal,coal,no,Ember's coal generation and coal capacity
+Gas,gas,no,Ember's gas generation and gas capacity
+Other Fossil,oil,yes,"Ember publishes no oil line: 'Other Fossil' is oil products plus other fossil fuels, and stands in for oil utilisation"
+Nuclear,nuclear,no,
+Hydro,hydro,no,"includes pumped storage in some countries, which lowers the implied factor"
+Wind,wind,no,
+Solar,solar,no,
+Bioenergy,bioenergy,no,

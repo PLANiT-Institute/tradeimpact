@@ -115,9 +115,25 @@ fuel matches no row is excluded with that reason.
 
 ### 3.3 Heat rate and capacity factor hierarchy
 
+**Capacity factor**
+
+1. The tracker's unit-level estimate — tier B.
+2. Otherwise the **destination's own utilisation of that fuel**, `CF = G / (P · 8760)` from the
+   capacity and generation the country publishes, with that country's range over the last five
+   years as the sensitivity band — tier B. This is the practice Global Energy Monitor itself
+   adopted for its lifetime CO₂ estimates.
+3. Otherwise the class default by fuel and combustion technology — tier C.
+
+**Heat rate**
+
 1. The tracker's unit-level estimate (heat rate in Btu/kWh × 1.055056 × 10⁻³ → MJ/kWh) — tier B.
-2. Otherwise the technology default: `HR = 3.6 / η_LHV` with the default efficiency and capacity
-   factor by fuel and combustion technology — tier C, each row citing its document.
+2. Otherwise the class default: `HR = 3.6 / η_LHV` with the default efficiency by fuel and
+   combustion technology — tier C, each row citing the document its efficiency is checked
+   against.
+
+A class default is a statement about a technology, not about the unit, which is why it stays
+tier C on the unit however well documented it is. A country-level capacity factor is a statement
+about the destination's own fleet, which is why it does not.
 
 ### 3.4 Zero-stack and biogenic units
 
@@ -204,7 +220,7 @@ Four dimensions, each varied one at a time and only for the units whose value is
 | dimension | band | applies to |
 |---|---|---|
 | operating lifetime | the technology default's low and high years | units with no published retirement year |
-| capacity factor | the technology default's low and high | units with no published capacity factor |
+| capacity factor | the destination's own range over the last five years, or the technology default's low and high where the class value is used | units with no published capacity factor |
 | thermal efficiency | the technology default's low and high net-calorific-value efficiency, which moves the heat rate 3.6/η and so the unit's intensity | units with no published heat rate |
 | fuel emission factor | the IPCC 95 % lower and upper bound | fossil units on an IPCC default factor |
 
@@ -244,7 +260,8 @@ and prefer the unconditional target where both exist.
 ## 7. Selecting Layer 2 parameters
 
 Take the tracker's unit-level heat rate and capacity factor where published; otherwise the
-technology default, and say so on the row. Use the national factor where the inventory publishes
+destination's own capacity factor for that fuel, and the class default for the heat rate, and say
+so on the row. Use the national factor where the inventory publishes
 one for the fuel; otherwise the IPCC default. Never mix a national factor for one fuel with a
 non-inventory factor for another in the same country without recording both bases.
 

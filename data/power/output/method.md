@@ -41,9 +41,12 @@ by a company ([`roles`](../roles/method/method.md)). The result set therefore ha
 2. **Emission factor: national first, IPCC otherwise.** A unit's CO2 per unit of fuel is the
    destination country's own fuel-specific factor where one is on file
    ([`emission_factors`](../emission_factors/method/method.md), tier A) and the IPCC 2006 default
-   otherwise (tier C, with the IPCC bounds carried for the sensitivity). Heat rate and capacity
-   factor: the tracker's unit-level estimate where published (tier B), the technology default
-   otherwise (tier C). Every choice is a column on the result row. The class defaults are checked
+   otherwise (tier C, with the IPCC bounds carried for the sensitivity). **Capacity factor: the
+   destination's own utilisation of that fuel**, implied by the capacity and generation it
+   publishes (Ember's yearly release, tier B, `utilisation/`), which is what Global Energy Monitor
+   itself moved to for lifetime CO2; the technology default only where a destination and fuel have
+   no usable pair (6 of 558 assessed units). Heat rate: the tracker's unit-level estimate where
+   published (tier B), the technology default otherwise (tier C). Every choice is a column on the result row. The class defaults are checked
    against the documents they are cited from: `projects/verify_technology_defaults.py` reads the
    heat rate out of the EIA report's own text, converts it to the net-calorific-value basis the
    IPCC factors use and publishes the gap per class in
@@ -123,7 +126,10 @@ explanation beside it. Where an API answers one large document, it is written ou
 wiki pages are **one readable text file per plant** under `roles/raw/gem_wiki/` (provenance header,
 then the wikitext as returned) and Climate Watch's NDC content is a **CSV, one row per country ×
 indicator × submission**, with the submission order in a second CSV. Company pages are saved as
-served under `roles/raw/company_ir/`. Each such directory carries an `index.csv` with every file's
+served under `roles/raw/company_ir/`. Ember's 49 MB yearly release is kept as a **filtered
+subset** under `utilisation/raw/ember/` ([`utilisation`](../utilisation/method/method.md)) with
+the original file's own SHA-256 and the one filter expression recorded beside it, so the subset is
+reproducible from the URL. Each such directory carries an `index.csv` with every file's
 URL, byte count and SHA-256; that index is hash-recorded in `registry/raw_files.csv` and loaded
 into the database, so the chain from a published figure to the page it came from is one join. Each
 dataset's `method/method.md` says what its raw files are and how they were obtained.
@@ -146,7 +152,7 @@ result, and no variant is a new central value:
 | dimension | band | not varied where |
 |---|---|---|
 | lifetime | the technology default's low and high years | the tracker publishes a retirement year |
-| capacity_factor | the technology default's low and high | the tracker publishes a capacity factor |
+| capacity_factor | the band on the unit row: the destination's own range over the last five years where the factor is the country's, the technology default's low and high where it is the class value | the tracker publishes a capacity factor |
 | efficiency | the default's low and high net-calorific-value efficiency, which moves the heat rate 3.6/η and so the intensity | the tracker publishes a heat rate, or the fuel has no stack CO2 |
 | emission_factor | the IPCC 95 % lower and upper bound | a national factor is on file, or the CO2 is biogenic |
 
@@ -180,12 +186,27 @@ those units (Vung Ang 2 Phase 2 Units 1 and 2, Banten Suralaya Units 9 and 10, t
 project) are in scope only because the company register names them: the tracker's owner field
 misses their Korean and Japanese sponsors.
 
-Roles in the S1 result set by source: 47 rows from company disclosures and project pages,
-439 from the tracker's own fields, 113 from wiki sentences, 0 from the hand register. Layer 2
-is tier C throughout, accepted by the project lead as the basis for the first results.
+Roles in the S1 result set by source: 165 rows from company disclosures and project pages (45
+pages on disk, every quote checked against its page), 689 from the tracker's own fields, 98 from
+wiki sentences, 0 from the free-form hand register. The S1 lifetime total is +690 MtCO2 across
+the 558 assessed units.
 
-Not yet done: the hand register (`roles/raw/project_roles.csv`) that would confirm the wiki-read
-EPC, equipment and finance rows; company disclosures beyond KEPCO and Doosan (J-POWER, JERA,
-Marubeni, Sumitomo, Mitsui and the Korean gencos); national emission factors; verifying the
-technology defaults against their documents; hand levels for the fixed-level and trajectory NDCs
-that still have no S2.
+Layer 2 is tier B on the 148 zero-stack units and tier C on the 410 combustion units — the
+capacity factor is now the destination's own (tier B, 552 of 558 units) and the technology
+efficiency is checked against a document, but a fossil unit's emission factor is still the IPCC
+default, so its Layer 2 stays tier C until the destinations' own inventory factors are filed.
+
+Two corrections moved the headline this session. Keying every company-register row to the units
+its source names, instead of to the station, took the assessed set from 575 to 558 units and the
+S1 total from +1,182 to +550 MtCO2: station-level rows had been attributing phases their sources
+never mention, Vinh Tan Phases 1 to 3 against Doosan's Vinh Tan 4 contract among them. Moving the
+capacity factor from a global 0.55 to each destination's own utilisation then raised the same 558
+units from +550 to +690 MtCO2.
+
+Not yet done: national emission factors, the one input still holding Layer 2 at tier C for every
+combustion unit; the company-page gaps listed in
+[`roles`](../roles/method/method.md) (Vung Ang 2's EPC scope split, Tanjung Jati B 5-6 shares,
+Cirebon 2's Marubeni share, KEPCO's current Nghi Son 2 share); hand levels for the fixed-level and
+trajectory NDCs that still have no S2 — the 28 destinations excluded from S2 are BAU-baseline or
+GDP-intensity targets, which structurally have no level a grid pathway can be read from.
+

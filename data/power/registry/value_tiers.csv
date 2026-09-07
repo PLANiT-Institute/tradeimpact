@@ -7,6 +7,9 @@ projects_gem,start_year,.*,A,Global Energy Monitor commissioning year as publish
 projects_gem,capacity_factor,.+,B,Global Energy Monitor estimate by technology and age
 projects_gem,heat_rate_mj_per_kwh,.+,B,Global Energy Monitor heat-rate estimate converted from Btu/kWh
 ti_power_by_unit,cf_source,default,C,technology default capacity factor (projects/method/technology_defaults.csv)
+ti_power_by_unit,cf_source,country_implied,B,"the destination's own capacity factor for that fuel, implied by its published capacity and generation (utilisation/processed/capacity_factors_country.csv)"
+capacity_factors_country,proxy_fuel,no,B,"implied by the country's own published capacity and generation for that fuel"
+capacity_factors_country,proxy_fuel,yes,C,"the country's 'other fossil' series stands in for oil, which Ember does not publish separately"
 ti_power_by_unit,heat_rate_source,default,C,technology default efficiency (projects/method/technology_defaults.csv)
 ti_power_by_unit,lifetime_source,default,C,technology default lifetime (projects/method/technology_defaults.csv)
 ti_power_by_unit,lifetime_source,retired_year,A,retirement year as published by the tracker

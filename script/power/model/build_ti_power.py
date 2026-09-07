@@ -3,6 +3,9 @@
 Inputs
     projects/processed/projects_gem.csv
     projects/method/technology_defaults.csv      lifetime, capacity factor, efficiency (tier C)
+    utilisation/processed/capacity_factors_country.csv   the destination's own capacity factor for
+                                                 the unit's fuel, implied by published capacity
+                                                 and generation (tier B)
     emission_factors/processed/emission_factors.csv
     output/reference_power.csv                   destination grid path per scenario
 Outputs
@@ -22,9 +25,10 @@ Algorithm (whitepaper sign convention: positive = emissions added)
     P capacity (MW); CF capacity factor; HR heat rate (MJ/kWh); EF emission factor (kgCO2/TJ);
     g grid intensity of destination c under scenario s (gCO2/kWh); L lifetime (years).
 
-The order of inputs: the tracker's own capacity factor and heat rate where published, the
-technology default otherwise; the destination's national emission factor where on file, the
-IPCC default otherwise. Every choice is a column on the result row with its tier.
+The order of inputs: the tracker's own capacity factor and heat rate where published, then the
+destination's own capacity factor for that fuel, then the technology default; the destination's
+national emission factor where on file, the IPCC default otherwise. Every choice is a column on
+the result row with its tier.
 
 Run from the repository root:  .venv/bin/python script/power/model/build_ti_power.py
 """
@@ -41,6 +45,7 @@ from power_io import DATA, OUT, REPO, hand_file_required, num, read_csv, write_c
 PROJECTS = DATA / "projects" / "processed" / "projects_gem.csv"
 DEFAULTS = DATA / "projects" / "method" / "technology_defaults.csv"
 FACTORS = DATA / "emission_factors" / "processed" / "emission_factors.csv"
+COUNTRY_CF = DATA / "utilisation" / "processed" / "capacity_factors_country.csv"
 REFERENCE = OUT / "reference_power.csv"
 ANNUAL = OUT / "ti_power_annual.csv"
 BY_UNIT = OUT / "ti_power_by_unit.csv"
@@ -80,6 +85,8 @@ UNIT_FIELDS = [
     "lifetime_source",
     "capacity_factor",
     "cf_source",
+    "cf_low",
+    "cf_high",
     "heat_rate_mj_per_kwh",
     "heat_rate_source",
     "ef_kgco2_per_tj",
@@ -184,8 +191,15 @@ def factor_for(
 
 
 def worst(*tiers: str) -> str:
-    """Worst tier of those given."""
-    return max(tiers, key=lambda t: TIER_ORDER.get(t, 2))
+    """Worst tier of those given; "not_applicable" is not a tier and is ignored.
+
+    A zero-stack unit has no heat rate and no emission factor to grade, so those inputs come in
+    as "not_applicable": the unit's Layer 2 tier is then the worst of the inputs it does have.
+    """
+    grades = [t for t in tiers if t in TIER_ORDER]
+    if not grades:
+        return "not_applicable"
+    return max(grades, key=lambda t: TIER_ORDER[t])
 
 
 def main() -> None:
@@ -197,6 +211,10 @@ def main() -> None:
         if not path.exists():
             hand_file_required(path, how)
     defaults = read_csv(DEFAULTS)
+    country_factors = {
+        (r["country"], r["fuel_type"]): r
+        for r in (read_csv(COUNTRY_CF) if COUNTRY_CF.exists() else [])
+    }
     # The IPCC method table carries the fuel patterns; join them onto the processed factors.
     patterns = {
         r["fuel_id"]: r["gem_fuel_pattern"]
@@ -236,8 +254,17 @@ def main() -> None:
             drop(u, f"no technology default for fuel_type {u['fuel_type']!r}")
             continue
         cf = num(u["capacity_factor"])
-        cf_source = "gem" if cf is not None else "default"
-        cf = cf if cf is not None else float(d["capacity_factor"])
+        cf_source = "gem"
+        cf_low, cf_high = "", ""
+        if cf is None:
+            # The destination's own utilisation of that fuel, then the technology default.
+            country_cf = country_factors.get((u["country"], u["fuel_type"]))
+            if country_cf is not None:
+                cf, cf_source = float(country_cf["capacity_factor"]), "country_implied"
+                cf_low, cf_high = country_cf["cf_low"], country_cf["cf_high"]
+            else:
+                cf, cf_source = float(d["capacity_factor"]), "default"
+                cf_low, cf_high = d["cf_low"], d["cf_high"]
         zero = u["fuel_type"] in ZERO_STACK
         heat = num(u["heat_rate_mj_per_kwh"])
         heat_source, ef_row, fuel_id, biogenic = "", None, "", "no"
@@ -272,7 +299,7 @@ def main() -> None:
         generation = capacity * HOURS * cf * 1e3
         layer2 = worst(
             "A",
-            "B" if cf_source == "gem" else "C",
+            "B" if cf_source in ("gem", "country_implied") else "C",
             "not_applicable" if zero else ("B" if heat_source == "gem" else "C"),
             "A" if ef_basis == "national" else ("A" if zero else "C"),
         )
@@ -313,6 +340,8 @@ def main() -> None:
                     "lifetime_source": lifetime_source,
                     "capacity_factor": cf,
                     "cf_source": cf_source,
+                    "cf_low": cf_low,
+                    "cf_high": cf_high,
                     "heat_rate_mj_per_kwh": round(heat, 4) if isinstance(heat, float) else heat,
                     "heat_rate_source": heat_source,
                     "ef_kgco2_per_tj": ef_row["ef_kgco2_per_tj"] if ef_row else "",

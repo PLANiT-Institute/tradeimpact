@@ -25,7 +25,16 @@ DATA = REPO / "data" / "power"
 REGISTRY = DATA / "registry"
 GEOMETRY = DATA / "geography" / "raw" / "countries-110m.json"
 OUT = DATA / "database" / "tradeimpact_power.sqlite"
-DATASETS = ("companies", "geography", "grid", "emission_factors", "projects", "roles", "targets")
+DATASETS = (
+    "companies",
+    "geography",
+    "grid",
+    "emission_factors",
+    "projects",
+    "roles",
+    "targets",
+    "utilisation",
+)
 #: Raw files that are not CSV (workbooks, PDF, HTML pages) are recorded in raw_files.csv and
 #: in the per-directory index.csv, which is loaded; the files themselves are not.
 

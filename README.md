@@ -221,7 +221,9 @@ supplier, owner's engineer, commissioning contractor, equity owner, O&M contract
 cover) with the **phase**, the **tier-2 scope** the source
 states (EPC lead, civil works, boiler supply, equity direct, buyer's credit, …) and the **share**
 as data columns, never pooled across roles; the emission factor is the destination's own where on file and the IPCC 2006
-default otherwise; the benchmark is the destination grid under S1 (observed trend) and S2
+default otherwise; the capacity factor is the destination's own utilisation of that fuel from
+its published capacity and generation, the class default only where no usable pair exists; the
+benchmark is the destination grid under S1 (observed trend) and S2
 (the destination's NDC target machine-read from Climate Watch's structured NDC content, hand rows
 on top). Roles sit in five separate phases — development, construction, investment (equity),
 operation (O&M) and finance — and come from four sources in order of standing: the hand register,

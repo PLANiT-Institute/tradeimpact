@@ -45,6 +45,7 @@ own = load("roles/extract_gem_roles.py")
 ir = load("roles/extract_company_ir_roles.py")
 anchors = load("targets/extract_ndc_anchors.py")
 wiki = load("roles/extract_wiki_roles.py")
+cf_country = load("utilisation/extract_capacity_factors.py")
 
 
 def read(path: Path) -> list[dict[str, str]]:
@@ -365,6 +366,31 @@ def test_company_register_rejects_a_row_whose_page_is_not_on_disk() -> None:
     assert ir.validate([unsourced_share], vocab, companies, pages)
 
 
+def test_country_capacity_factor_is_generation_over_capacity_and_rejects_impossible_pairs() -> None:
+    """The implied factor is closed form; a tiny fleet or a lagging capacity series is dropped."""
+    # Viet Nam coal 2024 as Ember publishes it: 152.77 TWh on 27.06 GW.
+    assert cf_country.capacity_factor(152.77, 27.06) == pytest.approx(
+        152.77 * 1e6 / (27.06 * 1e3 * 8760), rel=1e-12
+    )
+    assert cf_country.capacity_factor(152.77, 27.06) == pytest.approx(0.6445, abs=5e-4)
+    assert cf_country.capacity_factor(10.0, 0.01) is None  # fleet below the size floor
+    assert cf_country.capacity_factor(10.0, 0.5) is None  # implies a factor above one
+    assert cf_country.capacity_factor(0.0, 5.0) is None  # no generation is not a capacity factor
+
+
+@pytest.mark.skipif(not (OUT / "ti_power_by_unit.csv").exists(), reason="model output not on disk")
+def test_a_unit_on_its_destinations_capacity_factor_carries_that_countrys_band() -> None:
+    """Every unit not on the tracker's own factor states the band the sensitivity varies."""
+    rows = [r for r in read(OUT / "ti_power_by_unit.csv") if r["scenario"] == "S1"]
+    assert rows
+    for r in rows:
+        assert r["cf_source"] in {"gem", "country_implied", "default"}
+        if r["cf_source"] == "gem":
+            continue
+        low, high = float(r["cf_low"]), float(r["cf_high"])
+        assert 0 < low <= float(r["capacity_factor"]) <= high <= 1, r["gem_unit_id"]
+
+
 def test_a_register_quote_must_be_the_pages_own_words(tmp_path: Path) -> None:
     """A paraphrase, an invented sentence or a station-level key is rejected."""
     page = tmp_path / "release.html"
@@ -495,7 +521,8 @@ def test_sensitivity_varies_one_input_at_a_time_around_the_published_value() -> 
     unit = {
         "gem_unit_id": "G1", "scenario": "S2", "capacity_mw": "600", "capacity_factor": "0.55",
         "intensity_gco2_per_kwh": "873.231", "start_year": "2024", "end_year": "2063",
-        "analysis_year": "2026", "lifetime_source": "default", "cf_source": "default",
+        "analysis_year": "2026", "lifetime_source": "default", "cf_source": "country_implied",
+        "cf_low": "0.40", "cf_high": "0.75",
         "heat_rate_mj_per_kwh": "9.2308", "heat_rate_source": "default",
         "ef_kgco2_per_tj": "94600",
         "ef_basis": "ipcc_default",
@@ -504,7 +531,7 @@ def test_sensitivity_varies_one_input_at_a_time_around_the_published_value() -> 
     }  # fmt: skip
     d = {"fuel_type": "coal", "technology_pattern": "super", "lifetime_years": "40",
          "lifetime_low_years": "30", "lifetime_high_years": "50", "capacity_factor": "0.55",
-         "cf_low": "0.40", "cf_high": "0.75", "efficiency_lhv": "0.39",
+         "efficiency_lhv": "0.39",
          "efficiency_low_lhv": "0.363", "efficiency_high_lhv": "0.417"}  # fmt: skip
     bound = {"ef_low_kgco2_per_tj": "89500", "ef_high_kgco2_per_tj": "99700"}
     rows = sens.variants_for(unit, d, bound, grid)
