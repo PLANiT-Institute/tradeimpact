@@ -40,7 +40,10 @@ by a company ([`roles`](../roles/method/method.md)). The result set therefore ha
    read across the phases.
 2. **Emission factor: national first, IPCC otherwise.** A unit's CO2 per unit of fuel is the
    destination country's own fuel-specific factor where one is on file
-   ([`emission_factors`](../emission_factors/method/method.md), tier A) and the IPCC 2006 default
+   ([`emission_factors`](../emission_factors/method/method.md)) — tier A where the country
+   measured it (China, Indonesia, Malaysia, South Africa), tier B where the country's own
+   instrument adopts the IPCC value (Taiwan, Viet Nam, Morocco, and China for gas) — and the
+   IPCC 2006 default
    otherwise (tier C, with the IPCC bounds carried for the sensitivity). **Capacity factor: the
    destination's own utilisation of that fuel**, implied by the capacity and generation it
    publishes (Ember's yearly release, tier B, `utilisation/`), which is what Global Energy Monitor
@@ -191,10 +194,12 @@ pages on disk, every quote checked against its page), 689 from the tracker's own
 wiki sentences, 0 from the free-form hand register. The S1 lifetime total is +690 MtCO2 across
 the 558 assessed units.
 
-Layer 2 is tier B on the 148 zero-stack units and tier C on the 410 combustion units — the
-capacity factor is now the destination's own (tier B, 552 of 558 units) and the technology
-efficiency is checked against a document, but a fossil unit's emission factor is still the IPCC
-default, so its Layer 2 stays tier C until the destinations' own inventory factors are filed.
+Layer 2 is tier B on the 148 zero-stack units and tier C on the 410 combustion units. The
+capacity factor is the destination's own (tier B, 552 of 558 units), the technology efficiency is
+checked against a document, and 109 combustion units now carry their destination's own emission
+factor (93 country-specific, 16 adopted by national instrument). What holds those units at tier C
+is the remaining input: the heat rate, which is still a class default because the tracker
+publishes none per unit.
 
 Two corrections moved the headline this session. Keying every company-register row to the units
 its source names, instead of to the station, took the assessed set from 575 to 558 units and the
@@ -203,8 +208,10 @@ never mention, Vinh Tan Phases 1 to 3 against Doosan's Vinh Tan 4 contract among
 capacity factor from a global 0.55 to each destination's own utilisation then raised the same 558
 units from +550 to +690 MtCO2.
 
-Not yet done: national emission factors, the one input still holding Layer 2 at tier C for every
-combustion unit; the company-page gaps listed in
+Not yet done: unit-level heat rates, the one input still holding every combustion unit at tier C;
+the destinations that publish no factor of their own (Bangladesh, the Philippines, Saudi Arabia,
+Qatar, the UAE), whose verdicts are recorded in
+[`emission_factors`](../emission_factors/method/method.md); the company-page gaps listed in
 [`roles`](../roles/method/method.md) (Vung Ang 2's EPC scope split, Tanjung Jati B 5-6 shares,
 Cirebon 2's Marubeni share, KEPCO's current Nghi Son 2 share); hand levels for the fixed-level and
 trajectory NDCs that still have no S2 — the 28 destinations excluded from S2 are BAU-baseline or

@@ -13,6 +13,7 @@ that only a person can obtain.
 | fetch | `geography/fetch_country_codes.py` | jsDelivr world-countries | `geography/raw/world_countries.json` |
 | fetch | `grid/fetch_owid_grid.py` | OWID grapher CSV | `grid/raw/owid_carbon_intensity_electricity.csv` |
 | fetch | `emission_factors/fetch_ipcc_defaults.py` | IPCC 2006 GL Vol 2 Ch 2 PDF | `emission_factors/raw/…pdf` |
+| fetch | `emission_factors/fetch_national_documents.py` | the inventory reports and instruments listed in `emission_factors/method/national_documents.csv` | `emission_factors/raw/national_documents/*` + `index.csv` (URL, SHA-256, licence per document) |
 | fetch | `geography/fetch_map_geometry.py` | jsDelivr world-atlas | `geography/raw/countries-110m.json` |
 | extract | `geography/extract_country_codes.py` | raw JSON | `geography/processed/country_codes.csv` |
 | extract | `grid/extract_owid_grid.py` | raw CSV, codes | `grid/processed/grid_intensity.csv` |

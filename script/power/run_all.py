@@ -29,6 +29,7 @@ FETCH = [
     "geography/fetch_country_codes.py",
     "grid/fetch_owid_grid.py",
     "emission_factors/fetch_ipcc_defaults.py",
+    "emission_factors/fetch_national_documents.py",
     "targets/fetch_climatewatch_ndc.py",
     "geography/fetch_map_geometry.py",
     "roles/fetch_gem_wiki.py",

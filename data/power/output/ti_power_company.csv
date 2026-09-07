@@ -1,76 +1,76 @@
 company_id,company_name,company_country,phase,role_tier1,role_tier2_all,scenario,units,units_with_share,units_from_register,units_from_company_ir,units_from_gem,units_from_wiki,capacity_mw,ti_lifetime_full_tco2,ti_lifetime_weighted_tco2,ti_remaining_full_tco2,ti_remaining_weighted_tco2,direction_full
-chugoku,Chugoku Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S1,6,6,0,4,1,1,4941.0,179338632.797,31883971.244,161702951.986,29175587.942,liability
-chugoku,Chugoku Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S2,5,5,0,4,0,1,4820.0,192217986.565,33790091.852,174059244.456,31007433.846,liability
-daewoo_ec,Daewoo Engineering & Construction,KR,construction,epc_contractor,epc_consortium_member|epc_lead,S1,5,0,0,4,0,1,2090.6,160111854.833,0,128696153.656,0,liability
+chugoku,Chugoku Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S1,6,6,0,4,1,1,4941.0,175023771.847,31236742.102,158549784.37,28702612.8,liability
+chugoku,Chugoku Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S2,5,5,0,4,0,1,4820.0,187903125.615,33142862.71,170906076.84,30534458.704,liability
+daewoo_ec,Daewoo Engineering & Construction,KR,construction,epc_contractor,epc_consortium_member|epc_lead,S1,5,0,0,4,0,1,2090.6,167703168.179,0,134478530.722,0,liability
 daewoo_ec,Daewoo Engineering & Construction,KR,investment,equity_owner,equity_direct,S1,1,0,0,0,1,0,150.0,-7330101.971,0,-5221349.942,0,contribution
 dl_enc,DL E&C,KR,construction,epc_contractor,epc_unspecified,S1,3,0,0,0,0,3,630.0,42415213.343,0,31231581.447,0,liability
 dl_enc,DL E&C,KR,investment,equity_owner,equity_direct|equity_parent,S1,9,6,0,0,9,0,2638.0,36008572.152,13289459.074,22392949.979,9157731.917,liability
 dl_enc,DL E&C,KR,investment,equity_owner,equity_direct|equity_parent,S2,3,3,0,0,3,0,1724.0,64117325.524,18255891.011,48645002.274,13931565.186,liability
-doosan_enerbility,Doosan Enerbility,KR,construction,epc_contractor,epc_consortium_member|epc_lead,S1,17,2,0,15,0,2,12862.0,836338352.481,114390021.762,735107085.908,102380621.743,liability
-doosan_enerbility,Doosan Enerbility,KR,construction,epc_contractor,epc_consortium_member|epc_lead,S2,17,2,0,15,0,2,12862.0,836338352.481,114390021.762,735107085.908,102380621.743,liability
+doosan_enerbility,Doosan Enerbility,KR,construction,epc_contractor,epc_consortium_member|epc_lead,S1,17,2,0,15,0,2,12862.0,846102954.175,114390021.762,744627572.56,102380621.743,liability
+doosan_enerbility,Doosan Enerbility,KR,construction,epc_contractor,epc_consortium_member|epc_lead,S2,17,2,0,15,0,2,12862.0,846102954.175,114390021.762,744627572.56,102380621.743,liability
 doosan_enerbility,Doosan Enerbility,KR,construction,equipment_supplier,equipment_unspecified,S1,1,0,0,0,0,1,1050.0,-4066615.642,0,-4066615.642,0,contribution
 doosan_enerbility,Doosan Enerbility,KR,construction,equipment_supplier,equipment_unspecified,S2,1,0,0,0,0,1,1050.0,-4066615.642,0,-4066615.642,0,contribution
-ewp,Korea East-West Power,KR,investment,equity_owner,equity_direct,S1,3,0,0,0,1,2,332.0,9441672.325,0,7432364.187,0,liability
-ewp,Korea East-West Power,KR,investment,equity_owner,equity_direct,S2,3,0,0,0,1,2,332.0,11254225.96,0,9244917.822,0,liability
+ewp,Korea East-West Power,KR,investment,equity_owner,equity_direct,S1,3,0,0,0,1,2,332.0,9016588.671,0,7081670.169,0,liability
+ewp,Korea East-West Power,KR,investment,equity_owner,equity_direct,S2,3,0,0,0,1,2,332.0,10829142.306,0,8894223.804,0,liability
 hanwha_energy,Hanwha Energy,KR,investment,equity_owner,equity_direct,S1,13,8,0,0,13,0,3627.3,-41237035.847,-7373384.817,-39321709.34,-6468739.754,contribution
 hanwha_energy,Hanwha Energy,KR,investment,equity_owner,equity_direct,S2,11,6,0,0,11,0,3611.0,-33030595.176,-6478967.501,-31229595.279,-5631485.742,contribution
 hanwha_energy,Hanwha Energy,KR,operation,om_contractor,operator_of_record,S1,5,0,0,0,5,0,170.3,-2432811.398,0,-1671526.858,0,contribution
 hanwha_energy,Hanwha Energy,KR,operation,om_contractor,operator_of_record,S2,3,0,0,0,3,0,154.0,-2057213.291,0,-1410255.361,0,contribution
-hyundai_ec,Hyundai Engineering & Construction,KR,construction,epc_contractor,epc_balance_of_plant|epc_consortium_member,S1,3,0,0,3,0,0,2924.0,100095265.248,0,81861049.951,0,liability
-hyundai_ec,Hyundai Engineering & Construction,KR,construction,epc_contractor,epc_balance_of_plant|epc_consortium_member,S2,3,0,0,3,0,0,2924.0,109751811.96,0,91517596.663,0,liability
+hyundai_ec,Hyundai Engineering & Construction,KR,construction,epc_contractor,epc_balance_of_plant|epc_consortium_member,S1,3,0,0,3,0,0,2924.0,102161984.434,0,84610843.96,0,liability
+hyundai_ec,Hyundai Engineering & Construction,KR,construction,epc_contractor,epc_balance_of_plant|epc_consortium_member,S2,3,0,0,3,0,0,2924.0,111818531.146,0,94267390.672,0,liability
 hyundai_ec,Hyundai Engineering & Construction,KR,investment,equity_owner,equity_parent,S1,2,2,0,0,2,0,750.0,12479794.632,1210540.079,12479794.632,1210540.079,liability
 hyundai_ec,Hyundai Engineering & Construction,KR,investment,equity_owner,equity_parent,S2,2,2,0,0,2,0,750.0,12479794.632,1210540.079,12479794.632,1210540.079,liability
-hyundai_engineering,Hyundai Engineering,KR,construction,epc_contractor,epc_balance_of_plant,S1,2,0,0,2,0,0,2000.0,78994277.48,0,62012469.174,0,liability
-hyundai_engineering,Hyundai Engineering,KR,construction,epc_contractor,epc_balance_of_plant,S2,2,0,0,2,0,0,2000.0,88650824.192,0,71669015.886,0,liability
+hyundai_engineering,Hyundai Engineering,KR,construction,epc_contractor,epc_balance_of_plant,S1,2,0,0,2,0,0,2000.0,74679416.53,0,58859301.558,0,liability
+hyundai_engineering,Hyundai Engineering,KR,construction,epc_contractor,epc_balance_of_plant,S2,2,0,0,2,0,0,2000.0,84335963.242,0,68515848.27,0,liability
 hyundai_engineering,Hyundai Engineering,KR,investment,equity_owner,equity_direct,S1,8,2,0,0,8,0,1751.1,6974770.25,3119948.659,6974770.25,3119948.659,liability
 hyundai_engineering,Hyundai Engineering,KR,investment,equity_owner,equity_direct,S2,8,2,0,0,8,0,1751.1,8716804.459,3119948.659,8716804.459,3119948.659,liability
-ihi,IHI Corporation,JP,construction,epc_contractor,epc_consortium_member|epc_lead,S1,6,0,0,6,0,0,4632.0,225985827.259,0,200272793.308,0,liability
-ihi,IHI Corporation,JP,construction,epc_contractor,epc_consortium_member|epc_lead,S2,4,0,0,4,0,0,3432.0,225939833.429,0,201235457.675,0,liability
-ihi,IHI Corporation,JP,construction,equipment_supplier,boiler_supply,S1,8,0,0,8,0,0,6018.0,311690851.835,0,273602975.948,0,liability
-ihi,IHI Corporation,JP,construction,equipment_supplier,boiler_supply,S2,4,0,0,4,0,0,3432.0,225939833.429,0,201235457.675,0,liability
+ihi,IHI Corporation,JP,construction,epc_contractor,epc_consortium_member|epc_lead,S1,6,0,0,6,0,0,4632.0,221670966.309,0,197119625.692,0,liability
+ihi,IHI Corporation,JP,construction,epc_contractor,epc_consortium_member|epc_lead,S2,4,0,0,4,0,0,3432.0,221624972.479,0,198082290.059,0,liability
+ihi,IHI Corporation,JP,construction,equipment_supplier,boiler_supply,S1,8,0,0,8,0,0,6018.0,312060568.051,0,274197470.068,0,liability
+ihi,IHI Corporation,JP,construction,equipment_supplier,boiler_supply,S2,4,0,0,4,0,0,3432.0,221624972.479,0,198082290.059,0,liability
 ihi,IHI Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,5,2,0,0,5,0,157.4,-1894694.765,1901450.272,0.0,0.0,contribution
 ihi,IHI Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,5,2,0,0,5,0,157.4,-1894694.765,1901450.272,0.0,0.0,contribution
-itochu,ITOCHU Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,38,34,0,0,38,0,9331.5,93239145.421,13973940.988,86961051.174,21631540.603,liability
-itochu,ITOCHU Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,37,34,0,0,37,0,9312.5,101673920.425,17005587.805,95122654.106,24663187.42,liability
-jbic,Japan Bank for International Cooperation,JP,finance,lender,project_loan,S1,36,1,0,3,0,33,25319.6,564380845.177,10860968.161,438799932.39,6248694.438,liability
-jbic,Japan Bank for International Cooperation,JP,finance,lender,project_loan,S2,31,1,0,3,0,28,21606.0,721575238.154,10860968.161,606819127.753,6248694.438,liability
-jera,JERA,JP,investment,equity_owner,equity_direct|equity_parent,S1,23,19,0,1,21,1,14494.0,-258726115.674,-121690947.287,-205535749.891,-103997549.036,contribution
-jera,JERA,JP,investment,equity_owner,equity_direct|equity_parent,S2,17,14,0,1,16,0,9174.0,-56497561.648,-12827951.33,-1490593.343,2499707.086,contribution
+itochu,ITOCHU Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,38,34,0,0,38,0,9331.5,108344000.661,17286260.436,97564897.042,24436187.197,liability
+itochu,ITOCHU Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,37,34,0,0,37,0,9312.5,116778775.665,20317907.253,105726499.974,27467834.014,liability
+jbic,Japan Bank for International Cooperation,JP,finance,lender,project_loan,S1,36,1,0,3,0,33,25319.6,618878212.663,13431657.985,478457549.306,7658427.568,liability
+jbic,Japan Bank for International Cooperation,JP,finance,lender,project_loan,S2,31,1,0,3,0,28,21606.0,771388028.474,13431657.985,642729082.933,7658427.568,liability
+jera,JERA,JP,investment,equity_owner,equity_direct|equity_parent,S1,23,19,0,1,21,1,14494.0,-252344535.538,-121690947.287,-199632788.266,-103997549.036,contribution
+jera,JERA,JP,investment,equity_owner,equity_direct|equity_parent,S2,17,14,0,1,16,0,9174.0,-50115981.512,-12827951.33,4412368.282,2499707.086,contribution
 jera,JERA,JP,operation,om_contractor,operator_of_record,S1,3,0,0,0,3,0,4075.0,-163112103.021,0,-163112103.021,0,contribution
 jgc,JGC Holdings,JP,investment,equity_owner,equity_direct|equity_parent,S1,5,4,0,0,5,0,1323.0,14901686.513,1306528.946,8999236.405,820361.16,liability
 jgc,JGC Holdings,JP,investment,equity_owner,equity_direct,S2,2,2,0,0,2,0,100.0,-605271.392,-145265.134,-141016.66,-33843.998,contribution
-jpower,Electric Power Development Co. (J-POWER),JP,investment,equity_owner,equity_direct|equity_parent,S1,81,80,0,0,81,0,30138.9,1189463835.039,26121363.856,934208126.417,32810121.81,liability
-jpower,Electric Power Development Co. (J-POWER),JP,investment,equity_owner,equity_direct|equity_parent,S2,81,80,0,0,81,0,30138.9,1253706157.02,61121498.034,998450448.398,67810255.985,liability
+jpower,Electric Power Development Co. (J-POWER),JP,investment,equity_owner,equity_direct|equity_parent,S1,81,80,0,0,81,0,30138.9,1265295583.947,32464991.406,989375463.296,37778085.57,liability
+jpower,Electric Power Development Co. (J-POWER),JP,investment,equity_owner,equity_direct|equity_parent,S2,81,80,0,0,81,0,30138.9,1329537905.928,67465125.584,1053617785.277,72778219.745,liability
 jpower,Electric Power Development Co. (J-POWER),JP,construction,owners_engineer,construction_supervision,S1,2,0,0,2,0,0,600.0,73147081.588,0,51264131.732,0,liability
 jpower,Electric Power Development Co. (J-POWER),JP,construction,owners_engineer,construction_supervision,S2,2,0,0,2,0,0,600.0,73147081.588,0,51264131.732,0,liability
-kansai,Kansai Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S1,13,7,0,2,7,4,7409.0,186648591.006,26685540.438,121229730.108,20458883.952,liability
-kansai,Kansai Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S2,12,6,0,2,6,4,7119.0,209601568.08,36501301.608,142109185.144,29341560.204,liability
-kepco,Korea Electric Power Corporation,KR,development,developer,sponsor_award,S1,17,0,0,17,0,0,10291.8,271919468.123,0,268421720.595,0,liability
-kepco,Korea Electric Power Corporation,KR,development,developer,sponsor_award,S2,11,0,0,11,0,0,7920.0,251032720.706,0,254919173.817,0,liability
-kepco,Korea Electric Power Corporation,KR,investment,equity_owner,equity_direct|equity_parent,S1,96,81,0,10,84,2,41633.6,1392408341.87,260368595.456,1078731049.309,214509427.071,liability
-kepco,Korea Electric Power Corporation,KR,investment,equity_owner,equity_direct|equity_parent,S2,89,75,0,10,77,2,34609.8,1626504201.236,368003769.067,1302135900.072,314979964.588,liability
+kansai,Kansai Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S1,13,7,0,2,7,4,7409.0,215396230.74,28272288.214,139340629.952,21801516.684,liability
+kansai,Kansai Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S2,12,6,0,2,6,4,7119.0,238349207.814,38088049.384,160220084.988,30684192.936,liability
+kepco,Korea Electric Power Corporation,KR,development,developer,sponsor_award,S1,17,0,0,17,0,0,10291.8,276393943.017,0,272828418.007,0,liability
+kepco,Korea Electric Power Corporation,KR,development,developer,sponsor_award,S2,11,0,0,11,0,0,7920.0,255507195.6,0,259325871.229,0,liability
+kepco,Korea Electric Power Corporation,KR,investment,equity_owner,equity_direct|equity_parent,S1,96,81,0,10,84,2,41633.6,1473920034.712,279292791.821,1137959755.842,227385988.528,liability
+kepco,Korea Electric Power Corporation,KR,investment,equity_owner,equity_direct|equity_parent,S2,89,75,0,10,77,2,34609.8,1708015894.078,386927965.432,1361364606.605,327856526.043,liability
 kepco,Korea Electric Power Corporation,KR,operation,om_contractor,om_contract|operator_of_record,S1,17,0,0,8,9,0,8720.0,-233057903.184,0,-208553978.962,0,contribution
 kepco,Korea Electric Power Corporation,KR,operation,om_contractor,om_contract|operator_of_record,S2,11,0,0,6,5,0,1780.0,-6268280.417,0,-6814680.61,0,contribution
 kexim,Export-Import Bank of Korea,KR,finance,eca_cover,guarantee,S1,2,0,0,2,0,0,1320.0,126111976.56,0,114316254.938,0,liability
 kexim,Export-Import Bank of Korea,KR,finance,eca_cover,guarantee,S2,2,0,0,2,0,0,1320.0,126111976.56,0,114316254.938,0,liability
-kexim,Export-Import Bank of Korea,KR,finance,lender,project_loan,S1,9,4,0,2,0,7,6964.0,418239377.408,85188915.424,358007746.071,64142742.927,liability
-kexim,Export-Import Bank of Korea,KR,finance,lender,project_loan,S2,9,4,0,2,0,7,6964.0,418239377.408,85188915.424,358007746.071,64142742.927,liability
-khi,Kawasaki Heavy Industries,JP,construction,equipment_supplier,equipment_unspecified,S1,2,0,0,0,0,2,300.0,12757829.246,0,10745995.888,0,liability
-khi,Kawasaki Heavy Industries,JP,construction,equipment_supplier,equipment_unspecified,S2,2,0,0,0,0,2,300.0,12757829.246,0,10745995.888,0,liability
+kexim,Export-Import Bank of Korea,KR,finance,lender,project_loan,S1,9,4,0,2,0,7,6964.0,428515942.126,91971448.138,366046666.983,69448430.729,liability
+kexim,Export-Import Bank of Korea,KR,finance,lender,project_loan,S2,9,4,0,2,0,7,6964.0,428515942.126,91971448.138,366046666.983,69448430.729,liability
+khi,Kawasaki Heavy Industries,JP,construction,equipment_supplier,equipment_unspecified,S1,2,0,0,0,0,2,300.0,15165761.382,0,12732539.898,0,liability
+khi,Kawasaki Heavy Industries,JP,construction,equipment_supplier,equipment_unspecified,S2,2,0,0,0,0,2,300.0,15165761.382,0,12732539.898,0,liability
 khnp,Korea Hydro & Nuclear Power,KR,investment,equity_owner,equity_direct,S1,1,1,0,0,1,0,630.0,-1801825.379,-1801825.379,0.0,0.0,contribution
 khnp,Korea Hydro & Nuclear Power,KR,investment,equity_owner,equity_direct,S2,1,1,0,0,1,0,630.0,-1801825.379,-1801825.379,0.0,0.0,contribution
 koen,Korea South-East Power,KR,investment,equity_owner,equity_direct,S1,5,5,0,0,5,0,711.0,-16606871.208,-15852760.39,-16311234.058,-15704941.816,contribution
 koen,Korea South-East Power,KR,investment,equity_owner,equity_direct,S2,2,2,0,0,2,0,42.0,-378798.226,-189399.114,-83161.076,-41580.538,contribution
 koen,Korea South-East Power,KR,operation,om_contractor,operator_of_record,S1,1,0,0,0,1,0,21.0,-201692.607,0,-53874.032,0,contribution
 koen,Korea South-East Power,KR,operation,om_contractor,operator_of_record,S2,1,0,0,0,1,0,21.0,-189399.113,0,-41580.538,0,contribution
-komipo,Korea Midland Power,KR,development,developer,sponsor_award,S1,1,0,0,1,0,0,660.0,16456012.365,0,9467718.846,0,liability
-komipo,Korea Midland Power,KR,development,developer,sponsor_award,S2,1,0,0,1,0,0,660.0,16456012.365,0,9467718.846,0,liability
-komipo,Korea Midland Power,KR,investment,equity_owner,equity_direct,S1,7,2,0,2,5,0,2942.2,-691902.727,-7596040.512,-6742654.317,-7110536.618,contribution
-komipo,Korea Midland Power,KR,investment,equity_owner,equity_direct,S2,6,1,0,2,4,0,2446.2,16895653.712,-1649960.814,10844902.122,-1164456.92,liability
-komipo,Korea Midland Power,KR,operation,om_contractor,maintenance_support|om_contract,S1,4,0,0,4,0,0,2904.0,102644071.242,0,72181884.242,0,liability
-komipo,Korea Midland Power,KR,operation,om_contractor,maintenance_support|om_contract,S2,4,0,0,4,0,0,2904.0,102644071.242,0,72181884.242,0,liability
-komipo,Korea Midland Power,KR,construction,owners_engineer,technical_advisory,S1,2,0,0,2,0,0,2000.0,50737870.094,0,49722622.532,0,liability
-komipo,Korea Midland Power,KR,construction,owners_engineer,technical_advisory,S2,2,0,0,2,0,0,2000.0,50737870.094,0,49722622.532,0,liability
+komipo,Korea Midland Power,KR,development,developer,sponsor_award,S1,1,0,0,1,0,0,660.0,20350996.947,0,11603678.133,0,liability
+komipo,Korea Midland Power,KR,development,developer,sponsor_award,S2,1,0,0,1,0,0,660.0,20350996.947,0,11603678.133,0,liability
+komipo,Korea Midland Power,KR,investment,equity_owner,equity_direct,S1,7,2,0,2,5,0,2942.2,9584661.991,-7596040.512,1296266.595,-7110536.618,liability
+komipo,Korea Midland Power,KR,investment,equity_owner,equity_direct,S2,6,1,0,2,4,0,2446.2,27172218.43,-1649960.814,18883823.034,-1164456.92,liability
+komipo,Korea Midland Power,KR,operation,om_contractor,maintenance_support|om_contract,S1,4,0,0,4,0,0,2904.0,124120960.278,0,87361011.908,0,liability
+komipo,Korea Midland Power,KR,operation,om_contractor,maintenance_support|om_contract,S2,4,0,0,4,0,0,2904.0,124120960.278,0,87361011.908,0,liability
+komipo,Korea Midland Power,KR,construction,owners_engineer,technical_advisory,S1,2,0,0,2,0,0,2000.0,60502471.788,0,59243109.184,0,liability
+komipo,Korea Midland Power,KR,construction,owners_engineer,technical_advisory,S2,2,0,0,2,0,0,2000.0,60502471.788,0,59243109.184,0,liability
 kospo,Korea Southern Power,KR,construction,commissioning_contractor,commissioning_service,S1,2,0,0,2,0,0,1240.0,151003238.342,0,111984962.94,0,liability
 kospo,Korea Southern Power,KR,construction,commissioning_contractor,commissioning_service,S2,2,0,0,2,0,0,1240.0,151003238.342,0,111984962.94,0,liability
 kospo,Korea Southern Power,KR,investment,equity_owner,equity_direct,S1,6,6,0,2,4,0,4416.0,24470914.015,11385202.209,25305499.985,11805684.455,liability
@@ -89,30 +89,30 @@ marubeni,Marubeni Corporation,JP,development,developer,sponsor_award,S1,2,2,0,2,
 marubeni,Marubeni Corporation,JP,development,developer,sponsor_award,S2,2,2,0,2,0,0,1320.0,126111976.56,63055988.28,114316254.938,57158127.468,liability
 marubeni,Marubeni Corporation,JP,construction,epc_contractor,epc_lead,S1,2,0,0,2,0,0,600.0,73147081.588,0,51264131.732,0,liability
 marubeni,Marubeni Corporation,JP,construction,epc_contractor,epc_lead,S2,2,0,0,2,0,0,600.0,73147081.588,0,51264131.732,0,liability
-marubeni,Marubeni Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,65,59,0,1,62,2,28990.9,109987672.303,18151286.752,134783112.465,32236924.569,liability
-marubeni,Marubeni Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,46,41,0,1,43,2,23849.9,157214840.012,32689050.109,176525033.372,44107606.433,liability
-mhi,Mitsubishi Heavy Industries,JP,construction,epc_contractor,epc_consortium_member,S1,10,0,0,1,0,9,6344.0,-11608259.916,0,-9736509.755,0,contribution
-mhi,Mitsubishi Heavy Industries,JP,construction,epc_contractor,epc_consortium_member,S2,9,0,0,1,0,8,5924.0,54400265.478,0,63452975.145,0,liability
-mhi,Mitsubishi Heavy Industries,JP,construction,equipment_supplier,boiler_supply|steam_turbine_supply,S1,12,0,0,7,0,5,8403.0,108293621.847,0,59786042.294,0,liability
-mhi,Mitsubishi Heavy Industries,JP,construction,equipment_supplier,boiler_supply,S2,7,0,0,3,0,4,4744.0,99245808.277,0,82447307.188,0,liability
+marubeni,Marubeni Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,65,59,0,1,62,2,28990.9,129694148.311,23481652.971,147004627.315,35899092.801,liability
+marubeni,Marubeni Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,46,41,0,1,43,2,23849.9,176921316.02,38019416.328,188746548.222,47769774.665,liability
+mhi,Mitsubishi Heavy Industries,JP,construction,epc_contractor,epc_consortium_member,S1,10,0,0,1,0,9,6344.0,-5226679.78,0,-3833548.13,0,contribution
+mhi,Mitsubishi Heavy Industries,JP,construction,epc_contractor,epc_consortium_member,S2,9,0,0,1,0,8,5924.0,60781845.614,0,69355936.77,0,liability
+mhi,Mitsubishi Heavy Industries,JP,construction,equipment_supplier,boiler_supply|steam_turbine_supply,S1,12,0,0,7,0,5,8403.0,133466839.647,0,78611587.739,0,liability
+mhi,Mitsubishi Heavy Industries,JP,construction,equipment_supplier,boiler_supply,S2,7,0,0,3,0,4,4744.0,116827712.731,0,95490475.567,0,liability
 mhi,Mitsubishi Heavy Industries,JP,investment,equity_owner,equity_direct|equity_parent,S1,3,3,0,0,3,0,1595.0,-4618531.395,-900997.309,2450893.682,70227.724,contribution
 mhi,Mitsubishi Heavy Industries,JP,investment,equity_owner,equity_direct|equity_parent,S2,3,3,0,0,3,0,1595.0,3273154.668,-356521.02,10342579.745,614704.011,liability
 mhi,Mitsubishi Heavy Industries,JP,operation,om_contractor,operator_of_record,S1,2,0,0,0,2,0,200.0,-1826231.972,0,-782216.454,0,contribution
 mhi,Mitsubishi Heavy Industries,JP,operation,om_contractor,operator_of_record,S2,2,0,0,0,2,0,200.0,-1545349.879,0,-501334.361,0,contribution
-mitsubishi_corp,Mitsubishi Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,61,52,0,2,56,3,19136.8,200880769.984,50935620.711,186760272.396,61917543.496,liability
-mitsubishi_corp,Mitsubishi Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,53,45,0,2,48,3,14724.0,290877072.35,71854182.994,254067512.821,77657364.915,liability
-mitsui,Mitsui & Co.,JP,development,developer,sponsor_award,S1,2,0,0,2,0,0,1386.0,85705024.576,0,73330182.64,0,liability
-mitsui,Mitsui & Co.,JP,construction,epc_contractor,epc_consortium_member,S1,2,0,0,2,0,0,700.0,74853791.89,0,55519555.362,0,liability
-mitsui,Mitsui & Co.,JP,investment,equity_owner,equity_direct|equity_parent,S1,89,82,0,4,85,0,33958.7,-106854714.186,-34295020.478,-13767207.016,-19244636.907,contribution
-mitsui,Mitsui & Co.,JP,investment,equity_owner,equity_direct|equity_parent,S2,76,70,0,2,74,0,27594.1,237171542.875,28487106.425,281093419.458,36176296.514,liability
-nexi,Nippon Export and Investment Insurance,JP,finance,eca_cover,insurance_cover,S1,13,0,0,2,0,11,9937.6,133461190.289,0,56665473.719,0,liability
-nexi,Nippon Export and Investment Insurance,JP,finance,eca_cover,insurance_cover,S2,8,0,0,2,0,6,6224.0,196969586.538,0,130998672.354,0,liability
-nexi,Nippon Export and Investment Insurance,JP,finance,lender,loan_unspecified,S1,3,0,0,0,0,3,2510.0,-86084702.354,0,-81622155.915,0,contribution
-nexi,Nippon Export and Investment Insurance,JP,finance,lender,loan_unspecified,S2,2,0,0,0,0,2,1760.0,-44580314.96,0,-41374430.784,0,contribution
+mitsubishi_corp,Mitsubishi Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,61,52,0,2,56,3,19136.8,203288702.12,51212532.905,188746816.406,62145996.056,liability
+mitsubishi_corp,Mitsubishi Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,53,45,0,2,48,3,14724.0,293285004.486,72131095.188,256054056.831,77885817.475,liability
+mitsui,Mitsui & Co.,JP,development,developer,sponsor_award,S1,2,0,0,2,0,0,1386.0,90389601.742,0,77077844.376,0,liability
+mitsui,Mitsui & Co.,JP,construction,epc_contractor,epc_consortium_member,S1,2,0,0,2,0,0,700.0,77760528.07,0,57554270.692,0,liability
+mitsui,Mitsui & Co.,JP,investment,equity_owner,equity_direct|equity_parent,S1,89,82,0,4,85,0,33958.7,-91075655.358,-30456019.178,-3707758.516,-16702351.073,contribution
+mitsui,Mitsui & Co.,JP,investment,equity_owner,equity_direct|equity_parent,S2,76,70,0,2,74,0,27594.1,248266024.529,30920734.572,287405206.214,37594283.829,liability
+nexi,Nippon Export and Investment Insurance,JP,finance,eca_cover,insurance_cover,S1,13,0,0,2,0,11,9937.6,177169971.907,0,86562956.211,0,liability
+nexi,Nippon Export and Investment Insurance,JP,finance,eca_cover,insurance_cover,S2,8,0,0,2,0,6,6224.0,235993790.99,0,157148493.11,0,liability
+nexi,Nippon Export and Investment Insurance,JP,finance,lender,loan_unspecified,S1,3,0,0,0,0,3,2510.0,-84572488.088,0,-80210755.933,0,contribution
+nexi,Nippon Export and Investment Insurance,JP,finance,lender,loan_unspecified,S2,2,0,0,0,0,2,1760.0,-43068100.694,0,-39963030.802,0,contribution
 osaka_gas,Osaka Gas,JP,investment,equity_owner,equity_direct|equity_parent,S1,16,16,0,0,16,0,7629.0,10985749.531,4499851.815,39581080.343,10453304.943,liability
 osaka_gas,Osaka Gas,JP,investment,equity_owner,equity_direct|equity_parent,S2,16,16,0,0,16,0,7629.0,32438194.776,10729758.382,61033525.588,16683211.511,liability
-posco_international,POSCO International,KR,investment,equity_owner,equity_direct|equity_parent,S1,6,6,0,2,4,0,1839.7,159082662.243,53558706.69,117981262.527,39584910.876,liability
-posco_international,POSCO International,KR,investment,equity_owner,equity_direct|equity_parent,S2,6,6,0,2,4,0,1839.7,159264789.03,53560527.958,118163389.314,39586732.144,liability
+posco_international,POSCO International,KR,investment,equity_owner,equity_direct|equity_parent,S1,6,6,0,2,4,0,1839.7,160687950.329,55163994.776,119104964.189,40708612.538,liability
+posco_international,POSCO International,KR,investment,equity_owner,equity_direct|equity_parent,S2,6,6,0,2,4,0,1839.7,160870077.116,55165816.044,119287090.976,40710433.806,liability
 posco_international,POSCO International,KR,operation,om_contractor,om_contract,S1,2,0,0,2,0,0,1240.0,151003238.342,0,111984962.94,0,liability
 posco_international,POSCO International,KR,operation,om_contractor,om_contract,S2,2,0,0,2,0,0,1240.0,151003238.342,0,111984962.94,0,liability
 samsung_ct,Samsung C&T Engineering & Construction,KR,construction,epc_contractor,epc_lead,S1,3,0,0,2,0,1,2820.0,103567162.373,0,102390228.57,0,liability
@@ -124,25 +124,25 @@ samsung_ct,Samsung C&T Engineering & Construction,KR,operation,om_contractor,ope
 shikoku,Shikoku Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S1,11,11,0,0,8,3,7473.0,37958003.464,13321494.79,80180296.11,16010220.339,liability
 shikoku,Shikoku Electric Power,JP,investment,equity_owner,equity_parent,S2,6,6,0,0,3,3,4620.0,116152870.14,18681501.298,117275569.916,19079869.622,liability
 sk_ecoplant,SK ecoplant,KR,investment,equity_owner,equity_direct,S1,1,1,0,0,1,0,410.0,-20635515.181,-4952523.643,-17703984.025,-4248956.166,contribution
-sojitz,Sojitz Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,12,12,0,0,12,0,8107.0,-160277889.08,-38738028.084,-148262367.436,-35868368.844,contribution
-sojitz,Sojitz Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,11,11,0,0,11,0,6534.0,-50456933.664,-11236389.74,-38441412.02,-8366730.5,contribution
+sojitz,Sojitz Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,12,12,0,0,12,0,8107.0,-158765674.814,-38435585.23,-146850967.454,-35586088.848,contribution
+sojitz,Sojitz Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,11,11,0,0,11,0,6534.0,-48944719.398,-10933946.886,-37030012.038,-8084450.504,contribution
 sojitz,Sojitz Corporation,JP,operation,om_contractor,operator_of_record,S1,1,0,0,0,1,0,98.0,-981842.878,0,-525130.725,0,contribution
 sojitz,Sojitz Corporation,JP,operation,om_contractor,operator_of_record,S2,1,0,0,0,1,0,98.0,-981842.878,0,-525130.725,0,contribution
-sumitomo_corp,Sumitomo Corporation,JP,development,developer,project_development,S1,4,0,0,4,0,0,2640.0,129694599.683,0,76016456.333,0,liability
-sumitomo_corp,Sumitomo Corporation,JP,development,developer,project_development,S2,4,0,0,4,0,0,2640.0,129694599.683,0,76016456.333,0,liability
+sumitomo_corp,Sumitomo Corporation,JP,development,developer,project_development,S1,4,0,0,4,0,0,2640.0,152095248.319,0,88756825.247,0,liability
+sumitomo_corp,Sumitomo Corporation,JP,development,developer,project_development,S2,4,0,0,4,0,0,2640.0,152095248.319,0,88756825.247,0,liability
 sumitomo_corp,Sumitomo Corporation,JP,construction,epc_contractor,epc_civil_works,S1,2,0,0,2,0,0,1200.0,9702540.542,0,8693882.345,0,liability
-sumitomo_corp,Sumitomo Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,38,36,0,4,34,0,19325.9,-140186782.441,138452233.233,-106248138.019,100478622.754,contribution
-sumitomo_corp,Sumitomo Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,29,27,0,4,25,0,14868.9,277813546.761,272638862.717,265229174.085,226235092.98,liability
-sumitomo_corp,Sumitomo Corporation,JP,finance,lender,lease_finance,S1,4,0,0,4,0,0,2640.0,129694599.683,0,76016456.333,0,liability
-sumitomo_corp,Sumitomo Corporation,JP,finance,lender,lease_finance,S2,4,0,0,4,0,0,2640.0,129694599.683,0,76016456.333,0,liability
+sumitomo_corp,Sumitomo Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,38,36,0,4,34,0,19325.9,-111439142.707,160852881.869,-88137238.175,113218991.668,contribution
+sumitomo_corp,Sumitomo Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,29,27,0,4,25,0,14868.9,306561186.495,295039511.353,283340073.929,238975461.894,liability
+sumitomo_corp,Sumitomo Corporation,JP,finance,lender,lease_finance,S1,4,0,0,4,0,0,2640.0,152095248.319,0,88756825.247,0,liability
+sumitomo_corp,Sumitomo Corporation,JP,finance,lender,lease_finance,S2,4,0,0,4,0,0,2640.0,152095248.319,0,88756825.247,0,liability
 tohoku,Tohoku Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S1,3,3,0,0,3,0,1411.0,113462708.068,11346270.807,103835168.792,10383516.879,liability
 tohoku,Tohoku Electric Power,JP,investment,equity_owner,equity_direct|equity_parent,S2,3,3,0,0,3,0,1411.0,113462708.068,11346270.807,103835168.792,10383516.879,liability
 tokyo_gas,Tokyo Gas,JP,investment,equity_owner,equity_direct|equity_parent,S1,9,4,0,0,9,0,9231.6,-161477470.273,-7285226.529,-156184715.124,-6039215.332,contribution
 tokyo_gas,Tokyo Gas,JP,investment,equity_owner,equity_direct|equity_parent,S2,9,4,0,0,9,0,9231.6,-156965833.512,-5496070.281,-151673078.363,-4250059.084,contribution
-toshiba,Toshiba Energy Systems & Solutions,JP,construction,epc_contractor,epc_civil_works|epc_consortium_member,S1,7,0,0,7,0,0,5556.0,247086815.027,0,220121374.085,0,liability
-toshiba,Toshiba Energy Systems & Solutions,JP,construction,epc_contractor,epc_civil_works|epc_consortium_member,S2,5,0,0,5,0,0,4356.0,247040821.197,0,221084038.452,0,liability
-toshiba,Toshiba Energy Systems & Solutions,JP,construction,equipment_supplier,steam_turbine_supply,S1,10,0,0,10,0,0,7272.0,355680426.942,0,276289249.641,0,liability
-toshiba,Toshiba Energy Systems & Solutions,JP,construction,equipment_supplier,steam_turbine_supply,S2,8,0,0,8,0,0,6072.0,355634433.112,0,277251914.008,0,liability
+toshiba,Toshiba Energy Systems & Solutions,JP,construction,epc_contractor,epc_civil_works|epc_consortium_member,S1,7,0,0,7,0,0,5556.0,249153534.213,0,222871168.094,0,liability
+toshiba,Toshiba Energy Systems & Solutions,JP,construction,epc_contractor,epc_civil_works|epc_consortium_member,S2,5,0,0,5,0,0,4356.0,249107540.383,0,223833832.461,0,liability
+toshiba,Toshiba Energy Systems & Solutions,JP,construction,equipment_supplier,steam_turbine_supply,S1,10,0,0,10,0,0,7272.0,373766214.628,0,285876450.939,0,liability
+toshiba,Toshiba Energy Systems & Solutions,JP,construction,equipment_supplier,steam_turbine_supply,S2,8,0,0,8,0,0,6072.0,373720220.798,0,286839115.306,0,liability
 toyota_tsusho,Toyota Tsusho Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S1,34,23,0,0,34,0,4559.8,-50855291.105,-27896612.438,-24129265.472,-12576636.629,contribution
 toyota_tsusho,Toyota Tsusho Corporation,JP,investment,equity_owner,equity_direct|equity_parent,S2,28,18,0,0,28,0,3317.8,-19488617.417,-14454401.219,6779023.727,125520.866,contribution
 toyota_tsusho,Toyota Tsusho Corporation,JP,operation,om_contractor,operator_of_record,S1,12,0,0,0,12,0,866.3,-25511714.788,0,-13270409.653,0,contribution

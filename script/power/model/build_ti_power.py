@@ -55,6 +55,9 @@ MJ_PER_KWH = 3.6
 ZERO_STACK = {"nuclear", "hydro", "wind", "solar", "geothermal"}
 EXCLUDED_STATUS = re.compile(r"cancel|shelv")
 TIER_ORDER = {"A": 0, "B": 1, "C": 2}
+#: The tier an emission-factor basis carries: a measured national factor, a national instrument
+#: that adopts the IPCC value, or the IPCC default standing in for a country that states none.
+EF_TIER = {"national": "A", "national_adopted": "B", "ipcc_default": "C"}
 ANNUAL_FIELDS = [
     "gem_unit_id",
     "scenario",
@@ -184,9 +187,12 @@ def factor_for(
             break
     if not fuel_id:
         return None, ""
-    for f in factors:
-        if f["basis"] == "national" and f["country"] == unit["country"] and f["fuel_id"] == fuel_id:
-            return f, fuel_id
+    # A country-specific measured factor first, then one the country's own instrument adopts,
+    # then the IPCC default.
+    for basis in ("national", "national_adopted"):
+        for f in factors:
+            if f["basis"] == basis and f["country"] == unit["country"] and f["fuel_id"] == fuel_id:
+                return f, fuel_id
     return next(f for f in defaults if f["fuel_id"] == fuel_id), fuel_id
 
 
@@ -301,7 +307,7 @@ def main() -> None:
             "A",
             "B" if cf_source in ("gem", "country_implied") else "C",
             "not_applicable" if zero else ("B" if heat_source == "gem" else "C"),
-            "A" if ef_basis == "national" else ("A" if zero else "C"),
+            EF_TIER.get(ef_basis, "C") if not zero else "not_applicable",
         )
         layer2 = "A" if zero and cf_source == "gem" else layer2
         assessed = False

@@ -261,9 +261,14 @@ and prefer the unconditional target where both exist.
 
 Take the tracker's unit-level heat rate and capacity factor where published; otherwise the
 destination's own capacity factor for that fuel, and the class default for the heat rate, and say
-so on the row. Use the national factor where the inventory publishes
-one for the fuel; otherwise the IPCC default. Never mix a national factor for one fuel with a
-non-inventory factor for another in the same country without recording both bases.
+so on the row. For the emission factor, three bases in order:
+**country-specific** where the destination measured and published it (tier A), **adopted** where
+the destination's own instrument publishes the IPCC value as its factor (tier B — the number is
+the default, the provenance is national), and the **IPCC default** where the destination states
+none (tier C). Record the basis on every row: a national factor for one fuel beside a default for
+another in the same country is normal, and only the basis column makes it legible. A factor read
+by hand from an inventory has to cite the document, quote its table line, and carry the number as
+printed with the conversion that turns it into kg CO2/TJ, so the arithmetic can be re-done.
 
 ## 8. Data collection pipeline
 

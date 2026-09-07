@@ -392,6 +392,54 @@ def test_a_unit_on_its_destinations_capacity_factor_carries_that_countrys_band()
         assert 0 < low <= float(r["capacity_factor"]) <= high <= 1, r["gem_unit_id"]
 
 
+def test_a_national_emission_factor_must_follow_from_its_document(tmp_path: Path) -> None:
+    """The quote, the printed number and the conversion all have to line up with the document."""
+    doc = tmp_path / "inventory.html"
+    doc.write_text("<p>Combustibles solides t/TJ 96,10 96,10 96,10</p>")
+    fuels = {"bituminous": {"biogenic": "no"}}
+    documents = {
+        "ma_nir": {
+            "source_key": "ma_nir",
+            "country": "MA",
+            "file": "inventory.html",
+            "url": "https://example.org/nir",
+        }
+    }
+    good = {
+        "country": "MA", "fuel_id": "bituminous", "ef_kgco2_per_tj": "96100",
+        "basis": "national_adopted", "year": "2024", "source_key": "ma_nir",
+        "source_url": "https://example.org/nir", "table_reference": "Tableau 30",
+        "document_value": "96,10", "conversion": "t_co2_per_tj",
+        "quote": "Combustibles solides t/TJ 96,10 96,10", "source_id": "x", "note": "",
+        "accessed_date": "2026-09-07",
+    }  # fmt: skip
+    monkey = factors.DOCUMENTS
+    factors.DOCUMENTS = tmp_path
+    try:
+        assert factors.validate_national([good], fuels, documents) == []
+        wrong_maths = {**good, "ef_kgco2_per_tj": "94600"}
+        assert any(
+            "gives 96,100" in m for m in factors.validate_national([wrong_maths], fuels, documents)
+        )
+        not_in_quote = {**good, "document_value": "94,60"}
+        assert any(
+            "is not in the quote" in m
+            for m in factors.validate_national([not_in_quote], fuels, documents)
+        )
+        paraphrased = {**good, "quote": "solid fuels are assessed at 96.10 tonnes per terajoule"}
+        assert any(
+            "quote is not in" in m
+            for m in factors.validate_national([paraphrased], fuels, documents)
+        )
+        wrong_country = {**good, "country": "VN"}
+        assert any(
+            "cannot state" in m
+            for m in factors.validate_national([wrong_country], fuels, documents)
+        )
+    finally:
+        factors.DOCUMENTS = monkey
+
+
 def test_the_quote_checker_flattens_typography_and_honours_elisions(tmp_path: Path) -> None:
     """Curly quotes, non-breaking spaces and line breaks must not fail an honest quote."""
     page = tmp_path / "release.html"

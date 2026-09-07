@@ -1,6 +1,7 @@
 table_pattern,column,value_pattern,tier,reason
 grid_intensity,series,grid_intensity,A,Ember national generation-based carbon intensity as published by Our World in Data
-emission_factors,basis,national,A,the destination country's own implied emission factor for the fuel (national inventory)
+emission_factors,basis,national,A,"the destination's own country-specific factor for the fuel, measured and published in its national inventory"
+emission_factors,basis,national_adopted,B,"the destination's own instrument publishes the IPCC default as its factor: the number is the default, the provenance is national"
 emission_factors,basis,ipcc_default,C,IPCC 2006 global default standing in for the country's value
 projects_gem,capacity_mw,.*,A,Global Energy Monitor unit capacity as published
 projects_gem,start_year,.*,A,Global Energy Monitor commissioning year as published
