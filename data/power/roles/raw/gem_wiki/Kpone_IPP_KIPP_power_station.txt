@@ -1,0 +1,108 @@
+# GEM wiki page: Kpone IPP (KIPP) power station
+# URL: https://www.gem.wiki/Kpone_IPP_(KIPP)_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Kpone IPP (KIPP) power station''' is an operating power station of at least 350-megawatts (MW) in Tema, Greater Accra, Ghana.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Kpone IPP (KIPP) power station
+| Tema, Greater Accra, Ghana
+| 5.681203, 0.041086 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/Kpone+Independent+Power+Plant/@5.6812057,0.0399917,556m/data=!3m1!1e3!4m5!3m4!1s0x10207efc142a91e1:0x720649d48275e7c!8m2!3d5.6816207!4d0.0409734}}</ref>
+|}
+{{
+#display_map:
+5.681203, 0.041086
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 5.681203, 0.041086
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=http://www.energycom.gov.gh/files/2021%20published%20Energy%20Statistics.pdf |archive-url=https://web.archive.org/web/20221026133806/https://www.energycom.gov.gh/files/2021%20published%20Energy%20Statistics.pdf |archive-date=2022-10-26}}</ref>
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_2">{{cite web |url=https://www.esi-africa.com/top-stories/ghana-kpone-ipp-thermal-power-plant-making-progress/ |archive-url=https://web.archive.org/web/20210920194551/https://www.esi-africa.com/top-stories/ghana-kpone-ipp-thermal-power-plant-making-progress/ |archive-date=2021-09-20}}</ref>
+| 350<ref name="autoref_3">{{cite web |url=https://www.cenpowergen.com/about |archive-url=https://web.archive.org/web/20221126160627/https://cenpowergen.com/about |archive-date=2022-11-26}}</ref>
+| combined cycle<ref name="autoref_3" />
+| not found
+| 2019<ref name="autoref_4">{{cite web |url=https://www.cenpowergen.com/ |archive-url=https://web.archive.org/web/20221009024742/https://www.cenpowergen.com/ |archive-date=2022-10-09}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Cenpower Generation Company Ltd [100%]<ref name="autoref_4" />
+| Africa Finance Corp [32.0%]; Sumitomo Corp [28.0%]; Cenpower Holdings Ltd [21.0%]; Macquarie Group Ltd [7.5%]; Old Mutual Ltd [7.5%]; small shareholder(s) [4.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDA0NjUKICAgIDEwMDAwMDAwMDQ2NVsiQ2VucG93ZXIgSG9sZGluZ3M8YnI+THRkIl0gLS0yMS4wJS0tPiAxMDAwMDAwMDI2NjEKICAgIDEwMDAwMDEzMzg5M1siQWZyaWNhIEZpbmFuY2UgQ29ycCJdIC0tMzIuMCUtLT4gMTAwMDAwMDAyNjYxCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQzLjM0JS0tPiAxMDAwMDAwMDAwMTgKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tPiAxMDAwMDAwMDE1MzQKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOS45OSUtLT4gMTAwMDAwMDAxNTM0CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS03LjU2JS0tPiAxMDAwMDAwMDE1MzQKICAgIDEwMDAwMDAwMTUzNFsiSlBNb3JnYW4gQ2hhc2UgJiBDbzxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM5ODUyCiAgICAxMDAwMDAxMzk4NTJbIkpQTW9yZ2FuIENoYXNlIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMTUxMzIKICAgIDEwMDAwMjAxNTEzMlsiSlAgTW9yZ2FuPGJyPkludGVybmF0aW9uYWwgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDE1MTMxCiAgICAxMDAwMDIwMTUxMzFbIkpQIE1vcmdhbjxicj5JbnRlcm5hdGlvbmFsPGJyPkZpbmFuY2UgTHRkIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDE1MTMwCiAgICAxMDAwMDIwMTUxMzBbIkpQIE1vcmdhbiBIb2xkaW5nczxicj5BdXN0cmFsaWEgUHR5IEx0ZCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxMDQyOAogICAgMTAwMDAxMDEwNDI4WyJKUCBNb3JnYW4gTm9taW5lZXM8YnI+QXVzdHJhbGlhIFB0eSBMdGQiXSAtLTE4LjE4JS0tPiAxMDAwMDAwMDAwMTgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44JS0tPiAxMDAwMDAxMzU4MjYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC44JS0tPiAxMDAwMDAxMzU4MjYKICAgIDEwMDAwMDEzNTgyNlsiQ2l0aWdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDE4MTI0OQogICAgMTAwMDAwMTgxMjQ5WyJDaXRpYmFuayBOYXRpb25hbDxicj5Bc3NvY2lhdGlvbiJdIC0tMTAwLjAlLS0+IDEwMDAwMjAyMjAzOQogICAgMTAwMDAyMDIyMDM5WyJDaXRpYmFuayBPdmVyc2Vhczxicj5JbnZlc3RtZW50IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYzODAKICAgIDEwMDAwMTAxNjM4MFsiQ2l0aWdyb3VwIFB0eSBMdGQiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTA0MjkKICAgIDEwMDAwMTAxMDQyOVsiQ2l0aWNvcnAgTm9taW5lZXM8YnI+UHR5IEx0ZCJdIC0tOC43NiUtLT4gMTAwMDAwMDAwMDE4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTkuMDklLS0+IDEwMDAwMjAyMTgxMwogICAgMTAwMDAwMTI5MDUwWyJQaW5nIEFuIEluc3VyYW5jZTxicj4oR3JvdXApIENvbXBhbnkgb2Y8YnI+Q2hpbmEgTHRkIl0gLS05OC42NyUtLT4gMTAwMDAyMDIyODQzCiAgICAxMDAwMDIwMjI4NDNbIlBpbmcgQW4gQXNzZXQ8YnI+TWFuYWdlbWVudCBDbyBMdGQiXSAtLTcuOTglLS0+IDEwMDAwMjAyMTgxMwogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMC41NCUtLT4gMTAwMDAyMDA1NDM4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTkuMzUlLS0+IDEwMDAwMjAwNTQzOAogICAgMTAwMDAyMDA1NDM4WyJCYW5rIG9mIE5ldyBZb3JrPGJyPk1lbGxvbiBDb3JwIl0gLS02LjAxJS0tPiAxMDAwMDIwMjE4MTMKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzYuOTIlLS0+IDEwMDAwMjAyMTgxMwogICAgMTAwMDAyMDIxODEzWyJIU0JDIGhvbGRpbmdzIHBsYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjM5MAogICAgMTAwMDAxMDE2MzkwWyJIU0JDIEJhbmsgQXVzdHJhbGlhPGJyPkx0ZCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxMDQyNwogICAgMTAwMDAxMDEwNDI3WyJIU0JDIEN1c3RvZHk8YnI+Tm9taW5lZXMgKEF1c3RyYWxpYSk8YnI+THRkIl0gLS0yOS43MiUtLT4gMTAwMDAwMDAwMDE4CiAgICAxMDAwMDAwMDAwMThbIk1hY3F1YXJpZSBHcm91cCBMdGQiXSAtLT4gMTAwMDAwMTMzOTMyCiAgICAxMDAwMDAxMzM5MTlbIk9sZCBNdXR1YWwgTHRkIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDE2MzcxCiAgICAxMDAwMDIwMTYzNzFbIk9sZCBNdXR1YWw8YnI+SW52ZXN0bWVudCBHcm91cCBQdHk8YnI+THRkIl0gLS0+IDEwMDAwMDEzMzkzMgogICAgMTAwMDAwMTMzOTMyWyJBZnJpY2FuPGJyPkluZnJhc3RydWN0dXJlPGJyPkludmVzdG1lbnQgTWFuYWdlcnM8YnI+UHR5IEx0ZCJdIC0tMTUuMCUtLT4gMTAwMDAwMDAyNjYxCiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTY5LjI1JS0tPiAxMDAwMDAwMDA2NTcKICAgIDEwMDAwMTAxNTU4N181WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTkuNDYlLS0+IDEwMDAwMDAwMDY1NwogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzNbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzExWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjE2JS0tPiAxMDAwMDAwMDA2NTcKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS4xMyUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDAwMDA2NTdbIlN1bWl0b21vIENvcnAiXSAtLTI4LjAlLS0+IDEwMDAwMDAwMjY2MQogICAgMTAwMDAxMDE1NTg3XzEyWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNC4wJS0tPiAxMDAwMDAwMDI2NjEKICAgIDEwMDAwMDAwMjY2MVsiQ2VucG93ZXIgR2VuZXJhdGlvbjxicj5Db21wYW55IEx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDY3NTMKICAgIFAxMDAwMDA0MDY3NTNbIktwb25lIElQUCAoS0lQUCk8YnI+cG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Background==
+
+'''In October 2014''', the financial close of US $900 million of project finance to develop the Kpone Independent Power Plant (KIPP) was reached.<ref name="ref_11">{{Cite news|url=https://www.dbsa.org/case-studies/financing-cenpower-kpone-340-mw-ipp-ghana|title=Financing Cenpower Kpone 340 MW IPP, Ghana|work=Development Bank of Southern Africa|access-date=2022-07-25|language=en}}</ref> The project finance comprises a US$650 million debt tranche and a US$250 million equity tranche.<ref name="ref_11">{{Cite news|url=https://www.dbsa.org/case-studies/financing-cenpower-kpone-340-mw-ipp-ghana|title=Financing Cenpower Kpone 340 MW IPP, Ghana|work=Development Bank of Southern Africa|access-date=2022-07-25|language=en}}</ref> The power generated by this station will be sold directly to the Electricity Company of Ghana (ECG), for integration into the Ghanaian national electricity grid.<ref name="ref_12">{{Cite news|url=http://www.esi-africa.com/news/ghana-kpone-ipp-thermal-power-plant-making-progress/|title=Ghana: Kpone IPP thermal power plant making progress - ESI-Africa.com|date=2015-07-30|work=ESI-Africa.com|access-date=2022-07-25|language=en-US}}</ref>'''In 2015''', the project construction started.<ref name="ref_13">{{Cite web|url=https://en.wikipedia.org/wiki/Kpone_Thermal_Power_Station_II|title=Kpone Thermal Power Station II|last=|first=|date=|website=|url-status=live|archive-url=|archive-date=|access-date=}}</ref> '''In December 2014''', the KIPP project reached its financial close.<ref name="ref_14">{{Cite web|url=https://cenpowergen.com/kipp|title=KIPP|last=Super User|website=cenpowergen.com|language=en-gb|access-date=2022-07-25}}</ref>The project was funded by six commercial banks and six Development Finance Institutions with a 15-year debt tenor.'''In June 2019''', the Kpone Independent Power Plant achieved commercial operations. It is among the largest IPPs in Ghana, accounting for approximately 10% of Ghana’s total installed capacity and approximately 15% of its available thermal generation capacity.<ref name="ref_3">{{cite web |url=https://www.cenpowergen.com/ |title=Cenpower Generation Company Limited (Cenpower or CGC) |date= |website=www.cenpowergen.com |access-date=January 28, 2022 |archive-url=https://web.archive.org/web/20210305011638/https://cenpowergen.com/ |archive-date=March 5, 2021 |url-status=live}}</ref> As a Combined Cycle Gas Turbine (CCGT) plant, it is among Ghana’s most fuel-efficient thermal power stations.<ref name="ref_3">{{cite web |url=https://www.cenpowergen.com/ |title=Cenpower Generation Company Limited (Cenpower or CGC) |date= |website=www.cenpowergen.com |access-date=January 28, 2022 |archive-url=https://web.archive.org/web/20210305011638/https://cenpowergen.com/ |archive-date=March 5, 2021 |url-status=live}}</ref> '''The plant is''': <ref name="ref_3">{{cite web |url=https://www.cenpowergen.com/ |title=Cenpower Generation Company Limited (Cenpower or CGC) |date= |website=www.cenpowergen.com |access-date=January 28, 2022 |archive-url=https://web.archive.org/web/20210305011638/https://cenpowergen.com/ |archive-date=March 5, 2021 |url-status=live}}</ref> * The first licensed IPP in Ghana.* The first greenfield project financed IPP in Ghana, taking fuel supply risk.* The first project to provide a working capital facility through a fuel financing facility for the Electricity Company of Ghana (ECG).* The first thermal IPP project financed in Sub-Saharan Africa.* Sumitomo Corporation (Japan)’s first thermal IPP investment in Africa.'''The project also received four international awards:'''<ref name="ref_11">{{Cite news|url=https://www.dbsa.org/case-studies/financing-cenpower-kpone-340-mw-ipp-ghana|title=Financing Cenpower Kpone 340 MW IPP, Ghana|work=Development Bank of Southern Africa|access-date=2022-07-25|language=en}}</ref>* The African Banker Award: African Banker’s 2015 Infrastructure Deal of the Year* The EMEA Finance Magazine: Best Power Deal in EMEA* The pan-African Africa Investor (AI) Award: AI Best Power Deal of the Year 2015* Thttps://www.vra.com/our_mandate/kpone_thermal_power_station.phphomson Reuters PFI Award (London): Africa’s Power Deal of the Year 2014
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Ghana]]

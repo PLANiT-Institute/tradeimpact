@@ -1,0 +1,145 @@
+# GEM wiki page: Shanxi Liulin power station
+# URL: https://www.gem.wiki/Shanxi_Liulin_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Shanxi Liulin power station''' (山西国际能源柳林发电厂) is an operating power station of at least 1400-megawatts (MW) in Xuecun Town, Liulin, Lüliang, Shanxi, China.
+It is also known as Liulin Liansheng power station, Liulin Huaguang power station 柳林华光热电厂 (Phase II Unit 3, Phase II Unit 4), Liulin Huaguang power station (Phase I Unit 1, Phase I Unit 2).
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Shanxi Liulin power station
+| Xuecun Town, Liulin, Lüliang, Shanxi, China
+| 37.4185467, 110.8243489 (exact)
+|}
+{{
+#display_map:
+37.4185467, 110.8243489
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Phase I Unit 1, Phase I Unit 2, Phase II Unit 3, Phase II Unit 4''': 37.4185467, 110.8243489
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| Phase I Unit 1
+| Operating
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 100
+| subcritical
+| yes
+| 1995
+| False
+|-
+| Phase I Unit 2
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 100
+| subcritical
+| yes
+| 1996
+| False
+|-
+| Phase II Unit 3
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 600
+| subcritical
+| yes
+| 2008
+| False
+|-
+| Phase II Unit 4
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 600
+| subcritical
+| yes
+| 2008
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Phase I Unit 1
+| Shanxi Liulin Electric Power Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [42.3%]; KEPCO Shanxi International [34.0%]; Electric Power Development Co Ltd [7.0%]; Shanxi Gemeng International Energy Group Co Ltd [4.7%]; KEPCO Woori Sprott Global Private Equity Fund [4.0%]; Korea Electric Power Corp [4.0%]; unknown [4.0%]
+|-
+| Phase I Unit 2
+| Shanxi Liulin Electric Power Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [42.3%]; KEPCO Shanxi International [34.0%]; Electric Power Development Co Ltd [7.0%]; Shanxi Gemeng International Energy Group Co Ltd [4.7%]; KEPCO Woori Sprott Global Private Equity Fund [4.0%]; Korea Electric Power Corp [4.0%]; unknown [4.0%]
+|-
+| Phase II Unit 3
+| Shanxi Huaguang Power Generation Co Ltd [100%]
+| China Huaneng Group Co Ltd [40.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [21.2%]; KEPCO Shanxi International [17.0%]; Shanxi Coking Coal Energy Group Co Ltd [10.0%]; Electric Power Development Co Ltd [3.5%]; Shanxi Gemeng International Energy Group Co Ltd [2.4%]; KEPCO Woori Sprott Global Private Equity Fund [2.0%]; Korea Electric Power Corp [2.0%]; unknown [2.0%]
+|-
+| Phase II Unit 4
+| Shanxi Huaguang Power Generation Co Ltd [100%]
+| China Huaneng Group Co Ltd [40.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [21.2%]; KEPCO Shanxi International [17.0%]; Shanxi Coking Coal Energy Group Co Ltd [10.0%]; Electric Power Development Co Ltd [3.5%]; Shanxi Gemeng International Energy Group Co Ltd [2.4%]; KEPCO Woori Sprott Global Private Equity Fund [2.0%]; Korea Electric Power Corp [2.0%]; unknown [2.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+Shanxi Liulin power station originally consisted of four units totaling 1400 MW. The first two units of 100 MW each were put into operation in 1995 and 1996, respectively, at a total investment of 1.1 billion yuan. The units were funded through loans from the Asian Development Bank (ADB).<ref>[http://en.sxgjny.com/llfd/SubComInfo.aspx?comId=55&catalogId=80&tp=Pro&SubCatalogID=22&menuid=1 "Shanxi Liulin Power Generation Co. Ltd,"] Shanxi International Energy Group website, accessed October 2014</ref><ref>[https://web.archive.org/web/20230721125406/https://www.mee.gov.cn/gkml/sthjbgw/spwj1/201408/t20140825_288226.htm 关于山西柳林联盛煤矸石综合利用电厂二期工程], mee.gov.cn, 2014-08-20</ref>
+
+In 2008 two more units of 600 MW each began operation.<ref>[http://www.sxgjdl.com/english/history/ "Development History,"] Shanxi International Energy Group website, accessed October 2014</ref>
+
+New units were also built at the related [[Liulin Liansheng power station]].
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

@@ -1,0 +1,100 @@
+# GEM wiki page: EcoElectrica power station
+# URL: https://www.gem.wiki/EcoElectrica_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''EcoElectrica power station''' is an operating power station of at least 574-megawatts (MW) in Tallaboa Poniente, Peñuelas, Puerto Rico.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| EcoElectrica power station
+| Tallaboa Poniente, Peñuelas, Puerto Rico
+| 17.981025, -66.75542 (exact)<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (November 2019) |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20200612191408/https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |archive-date=2020-06-12 |url-status=live}}</ref>
+|}
+{{
+#display_map:
+17.981025, -66.75542
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''CC''': 17.981025, -66.75542
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| CC
+| Operating<ref name="autoref_0" />
+| fossil gas: natural gas<ref name="autoref_1">{{cite web |url=https://www.eia.gov/electricity/data/eia860/ |title=Annual Electric Power Industry Report, Form EIA-860 detailed data with previous form data (EIA-860A/860B) - U.S. Energy Information Administration (EIA) |date=2025-09-09 |website=www.eia.gov |access-date=2025-11-26 |archive-url=https://web.archive.org/web/20221028021258/https://www.eia.gov/electricity/data/eia860/ |archive-date=2022-10-28}}</ref>
+| 574<ref name="autoref_0" />
+| combined cycle<ref name="autoref_0" />
+| yes<ref name="autoref_2">{{cite web |url=https://aeepr.com/es-pr/unidadesgeneratrices |archive-url=https://web.archive.org/web/20211027190918/https://aeepr.com/es-pr/unidadesgeneratrices |archive-date=2021-10-27}}</ref>
+| 2000<ref name="autoref_0" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| CC
+| EcoElectrica LP [100%]<ref name="autoref_3">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2018.xlsx |title=U.S. Energy Information Administration, Form EIA-860 detailed data with previous form data (EIA-860A/860B), 2018 |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20191116210428/https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2018.xlsx |archive-date=2019-11-16 |url-status=live}}</ref>
+| Naturgy Energy Group SA [47.5%]; ENGIE SA [35.0%]; Mitsui & Co Ltd [15.0%]; unknown [2.5%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMjE5NDlbIlJpb2phIEFjcXVpc2l0aW9uPGJyPlNBUkwiXSAtLTEzLjglLS0+IDEwMDAwMDAwMDk3OAogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N18xWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMjAxNTk1MAogICAgMTAwMDAyMDE1OTUwWyJHbG9iYWw8YnI+SW5mcmFzdHJ1Y3R1cmU8YnI+TWFuYWdlbWVudCBMTEMiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDEyMjYKICAgIDEwMDAwMDAwMTIyNlsiR2xvYmFsPGJyPkluZnJhc3RydWN0dXJlPGJyPlBhcnRuZXJzIExQIl0gLS0xMS40JS0tPiAxMDAwMDAwMDA5NzgKICAgIDEwMDAwMjAyMjk2M1siQmFuY2EgTWFyY2ggU0EiXSAtLT4gMTAwMDAxMDE2MjUyCiAgICAxMDAwMDIwMjI5NjRbIkZ1bmRhY2lvbiBKdWFuIE1hcmNoIl0gLS0+IDEwMDAwMTAxNjI1MgogICAgMTAwMDAxMDE2MjUyWyJDb3Jwb3JhY2nDs248YnI+RmluYW5jaWVyYSBBbGJhIFNBIl0gLS01LjAlLS0+IDEwMDAwMDAwMDk3OAogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0yOC42JS0tPiAxMDAwMDAwMDA5NzgKICAgIDEwMDAwMjAwMjk5NlsiRnVuZGFjacOzbiBCYW5jYXJpYTxicj5DYWl4YSBkJ0VzdGFsdmlzIGk8YnI+UGVuc2lvbnMgZGU8YnI+QmFyY2Vsb25hIl0gLS0+IDEwMDAwMjAyMTg3NgogICAgMTAwMDAyMDIxODc2WyJDcml0ZXJpYSBDYWl4YSBTQSJdIC0tMjYuMCUtLT4gMTAwMDAwMDAwOTc4CiAgICAxMDAwMDEwMTQzMTdbIklGTSBHbG9iYWw8YnI+SW5mcmFzdHJ1Y3R1cmUgRnVuZCJdIC0tPiAxMDAwMDIwMjE5NDgKICAgIDEwMDAwMjAyMTk0OFsiR2xvYmFsIEluZnJhQ28gU0FSTCJdIC0tMTUuMiUtLT4gMTAwMDAwMDAwOTc4CiAgICAxMDAwMDAwMDA5NzhbIk5hdHVyZ3kgRW5lcmd5IEdyb3VwPGJyPlNBIl0gLS00Ny41JS0tPiAxMDAwMDAwMDIyNDYKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzAuNDclLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAxMDAwMDc5WyJHb3Zlcm5tZW50IG9mIEZyYW5jZSJdIC0tMjMuNjQlLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS01Ljg5JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMDAwMDM4MlsiRU5HSUUgU0EiXSAtLTM1LjAlLS0+IDEwMDAwMDAwMjI0NgogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfN1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi40MyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02Ny41JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi4xJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS05Ljk3JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDAwMDY1MVsiTWl0c3VpICYgQ28gTHRkIl0gLS0xNS4wJS0tPiAxMDAwMDAwMDIyNDYKICAgIDEwMDAwMDEzMjM4OF8xWyJ1bmtub3duIl0gLS0yLjUlLS0+IDEwMDAwMDAwMjI0NgogICAgMTAwMDAwMDAyMjQ2WyJFY29FbGVjdHJpY2EgTFAiXSAtLTEwMC4wJS0tPiBQMTAwMDAwNDAyNTM3CiAgICBQMTAwMDAwNDAyNTM3WyJFY29FbGVjdHJpY2EgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Puerto Rico]]

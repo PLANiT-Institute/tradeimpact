@@ -1,0 +1,101 @@
+# GEM wiki page: Ras Ghareb wind farm
+# URL: https://www.gem.wiki/Ras_Ghareb_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' Gulf of Suez Wind II (Phase 2), Ras Gharib, Red Sea Wind (Phase 2), Gulf of Suez Wind I (Phase 1), Ras Gharib Wind
+
+'''Ras Ghareb wind farm''' (محطة رأس غارب لطاقة الرياح ٢، مشروع خليج السويس 2, محطة رأس غارب لطاقة الرياح ١) is an operating wind farm in Ras Ghareb, Red Sea, Egypt.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Ras Ghareb wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://irena.org/-/media/Files/IRENA/Agency/Publication/2022/Jan/IRENA_Market_Africa_2022.pdf |archive-url=https://web.archive.org/web/20240126114329/https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2022/Jan/IRENA_Market_Africa_2022.pdf |archive-date=2024-01-26}}</ref>
+| 2019<ref name="autoref_1">{{cite web |url=https://www.eurus-energy.com/en/project/project-ua/10058/ |archive-url=https://web.archive.org/web/20240125154426/https://www.eurus-energy.com/en/project/project-ua/10058/ |archive-date=2024-01-25}}</ref>
+| 263 MW<ref name="autoref_1" />
+| Onshore<ref name="autoref_2">{{cite web |url=https://orascom.com/projects/ras-ghareb-wind-farm/ |archive-url=https://web.archive.org/web/20240126074329/https://orascom.com/projects/ras-ghareb-wind-farm/ |archive-date=2024-01-26}}</ref>
+| Toyota Tsusho Corp; Orascom Construction PLC [20%]; ENGIE SA [40%]; Eurus Energy Holdings Corp [40%] (株式会社ユーラスエナジーホールディングス; 豊田通商株式会社)<ref name="autoref_3">{{cite web |url=https://www.enerdata.net/publications/daily-energy-news/engie-commissions-262-mw-ras-ghareb-wind-park-egypt.html, https://www.enerdata.net/publications/daily-energy-news/engie-commissions-262-mw-ras-ghareb-wind-park-egypt.html, https://www.enerdata.net/publications/daily-energy-news/engie-commissions-262-mw-ras-ghareb-wind-park-egypt.html, https://www.enerdata.net/publications/daily-energy-news/engie-commissions-262-mw-ras-ghareb-wind-park-egypt.html}}</ref>
+| Orascom Construction; Eurus Energy Holdings; Toyota Tsusho; ENGIE (株式会社ユーラスエナジーホールディングス; 豊田通商株式会社)<ref name="autoref_3" />
+|-
+| 2
+| Operating<ref name="autoref_4">{{cite web |url=https://www.eurus-energy.com/en/project/project-ua/57191/, https://engiemiddleeast.com/media/500-mw-gulf-of-suez-2-wind-farm-project-achieves-a-major-milestone-in-egypt/, https://www.almasdar.com/151008, https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/?utm_source=rss&utm_medium=rss&utm_campaign=consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt&utm_source=Daily+IEEFA+Newsletter&utm_campaign=2a88489a63-IEEFA_DailyDigest&utm_medium=email&utm_term=0_e793f87bcc-2a88489a63-128777919, https://www.elbalad.news/5302285}}</ref>
+| 2025<ref name="autoref_5">{{cite web |url=https://businessnewsme.com/2023/04/04/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D8%AD%D8%B7%D8%A9-%D8%B1%D9%8A%D8%A7%D8%AD-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%A8%D9%82%D8%AF%D8%B1%D8%A9-500-%D9%85%D9%8A%D8%AC%D8%A7%D9%88%D8%A7%D8%AA-%D8%A8/, https://engiemiddleeast.com/media/500-mw-gulf-of-suez-2-wind-farm-project-achieves-a-major-milestone-in-egypt/, https://www.eurus-energy.com/en/project/project-ua/10058/, https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/?utm_source=rss&utm_medium=rss&utm_campaign=consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt&utm_source=Daily+IEEFA+Newsletter&utm_campaign=2a88489a63-IEEFA_DailyDigest&utm_medium=email&utm_term=0_e793f87bcc-2a88489a63-128777919}}</ref>
+| 306 MW<ref name="autoref_6">{{cite web |url=https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/?utm_source=rss&utm_medium=rss&utm_campaign=consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt&utm_source=Daily+IEEFA+Newsletter&utm_campaign=2a88489a63-IEEFA_DailyDigest&utm_medium=email&utm_term=0_e793f87bcc-2a88489a63-128777919, https://www.almasdar.com/151008}}</ref>
+| Onshore<ref name="autoref_7">{{cite web |url=http://www.rswe.co/wp-content/uploads/2021/02/RSWE-Public-Disclosure_Final-Arabic.pdf |archive-url=https://web.archive.org/web/20220914173208/http://www.rswe.co/wp-content/uploads/2021/02/RSWE-Public-Disclosure_Final-Arabic.pdf |archive-date=14 September 2022}}</ref>
+| Eurus Energy Holdings Corp [40%]; Toyota Tsusho Corp; Orascom Construction PLC [25%]; ENGIE SA [35%] (株式会社ユーラスエナジーホールディングス; 豊田通商株式会社)<ref name="autoref_8">{{cite web |url=https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/?utm_source=rss&utm_medium=rss&utm_campaign=consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt&utm_source=Daily+IEEFA+Newsletter&utm_campaign=2a88489a63-IEEFA_DailyDigest&utm_medium=email&utm_term=0_e793f87bcc-2a88489a63-128777919, https://www.ebrd.com/sites/Satellite?c=Content&cid=1395292235228&d=Touch&pagename=EBRD%2FContent%2FContentLayout, https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/?utm_source=rss&utm_medium=rss&utm_campaign=consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt&utm_source=Daily+IEEFA+Newsletter&utm_campaign=2a88489a63-IEEFA_DailyDigest&utm_medium=email&utm_term=0_e793f87bcc-2a88489a63-128777919, https://www.ebrd.com/sites/Satellite?c=Content&cid=1395292235228&d=Touch&pagename=EBRD%2FContent%2FContentLayout, https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/?utm_source=rss&utm_medium=rss&utm_campaign=consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt&utm_source=Daily+IEEFA+Newsletter&utm_campaign=2a88489a63-IEEFA_DailyDigest&utm_medium=email&utm_term=0_e793f87bcc-2a88489a63-128777919, https://www.ebrd.com/sites/Satellite?c=Content&cid=1395292235228&d=Touch&pagename=EBRD%2FContent%2FContentLayout, https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/?utm_source=rss&utm_medium=rss&utm_campaign=consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt&utm_source=Daily+IEEFA+Newsletter&utm_campaign=2a88489a63-IEEFA_DailyDigest&utm_medium=email&utm_term=0_e793f87bcc-2a88489a63-128777919, https://www.ebrd.com/sites/Satellite?c=Content&cid=1395292235228&d=Touch&pagename=EBRD%2FContent%2FContentLayout}}</ref>
+| Red Sea Wind Energy S.A.E. (RSWE)<ref name="autoref_9">{{cite web |url=https://www.ebrd.com/sites/Satellite?c=Content&cid=1395292235228&d=Touch&pagename=EBRD%2FContent%2FContentLayout |archive-url=https://web.archive.org/web/20240130221710/https://www.ebrd.com/sites/Satellite?c=Content&cid=1395292235228&d=Touch&pagename=EBRD/Content/ContentLayout |archive-date=2024-01-30}}</ref>
+|-
+| 3
+| Operating<ref name="autoref_10">{{cite web |url=https://www.eurus-energy.com/en/project/project-ua/57191/, https://engiemiddleeast.com/media/500-mw-gulf-of-suez-2-wind-farm-project-achieves-a-major-milestone-in-egypt/, https://www.almasdar.com/151008, https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/?utm_source=rss&utm_medium=rss&utm_campaign=consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt&utm_source=Daily+IEEFA+Newsletter&utm_campaign=2a88489a63-IEEFA_DailyDigest&utm_medium=email&utm_term=0_e793f87bcc-2a88489a63-128777919, https://www.elbalad.news/5302285, https://attaqa.net/2025/07/02/%D9%85%D8%B5%D8%B1-%D8%AA%D8%A8%D8%AF%D8%A3-%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%A3%D9%83%D8%A8%D8%B1-%D9%85%D8%AD%D8%B7%D8%A9-%D8%B1%D9%8A%D8%A7%D8%AD-%D9%81%D9%8A-%D8%A3%D9%81%D8%B1%D9%8A%D9%82%D9%8A/}}</ref>
+| 2025<ref name="autoref_11">{{cite web |url=https://engiemiddleeast.com/media/500-mw-gulf-of-suez-2-wind-farm-project-achieves-a-major-milestone-in-egypt/, https://www.almasdar.com/151008, https://www.eurus-energy.com/en/project/project-ua/10058/, https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/?utm_source=rss&utm_medium=rss&utm_campaign=consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt&utm_source=Daily+IEEFA+Newsletter&utm_campaign=2a88489a63-IEEFA_DailyDigest&utm_medium=email&utm_term=0_e793f87bcc-2a88489a63-128777919, https://businessnewsme.com/2023/04/04/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D8%AD%D8%B7%D8%A9-%D8%B1%D9%8A%D8%A7%D8%AD-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%A8%D9%82%D8%AF%D8%B1%D8%A9-500-%D9%85%D9%8A%D8%AC%D8%A7%D9%88%D8%A7%D8%AA-%D8%A8/}}</ref>
+| 344 MW<ref name="autoref_6" />
+| Onshore<ref name="autoref_7" />
+| Eurus Energy Holdings Corp [40%]; Toyota Tsusho Corp; Orascom Construction PLC [25%]; ENGIE SA [35%] (株式会社ユーラスエナジーホールディングス; 豊田通商株式会社)<ref name="autoref_8" />
+| Red Sea Wind Energy S.A.E. (RSWE)<ref name="autoref_9" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Ras Ghareb wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Ras Ghareb, Red Sea, Egypt<ref name="autoref_1" />
+| 28.4005, 32.9572 (exact)<ref name="autoref_1" />
+|-
+| 2
+| Ras Ghareb, Ras Ghareb, Red Sea, Egypt<ref name="autoref_12">{{cite web |url=https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/?utm_source=rss&utm_medium=rss&utm_campaign=consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt&utm_source=Daily+IEEFA+Newsletter&utm_campaign=2a88489a63-IEEFA_DailyDigest&utm_medium=email&utm_term=0_e793f87bcc-2a88489a63-128777919 |archive-url=https://web.archive.org/web/20220406162134/https://ieefa.org/consortium-reaches-agreement-for-500-megawatt-wind-farm-in-egypt/ |archive-date=06 April 2022}}</ref>
+| 28.1338, 33.2602 (approximate)<ref name="autoref_12" />
+|-
+| 3
+| Ras Ghareb, Ras Ghareb, Red Sea, Egypt<ref name="autoref_12" />
+| 28.1338, 33.2602 (approximate)<ref name="autoref_12" />
+|}
+The map below shows the locations of the wind farm phases:
+<display_map width=600 height=500 type=satellite>
+28.4005, 32.9572~ ~ ~ ~ ~Phase 1
+28.1338, 33.2602~ ~ ~ ~ ~Phases 2, 3
+</display_map>
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Egypt]]
+
+__NOTOC__

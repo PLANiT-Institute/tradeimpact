@@ -1,0 +1,119 @@
+# GEM wiki page: Pelican Point power station
+# URL: https://www.gem.wiki/Pelican_Point_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Pelican Point power station''' is an operating power station of at least 529-megawatts (MW) in Outer Harbor, South Australia, Australia.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Pelican Point power station
+| Outer Harbor, South Australia, Australia
+| -34.765425, 138.503177 (exact)<ref name="autoref_0">{{cite web |url=https://opennem.org.au/facility/au/NEM/NPPPPS/?range=7d&interval=30m |title=OpenNEM: An Open Platform for National Electricity Market Data |website=opennem.org.au |access-date=2024-06-17 |archive-url=https://web.archive.org/web/20211116170522/https://opennem.org.au/facility/au/NEM/NPPPPS/?range=7d&interval=30m |archive-date=2021-11-16}}</ref><ref name="autoref_1">{{cite web |url=https://engie.com.au/about-us/our-generation-activities/gas/pelican-point |title=Pelican Point Power Station | ENGIE |website=engie.com.au |access-date=2024-06-17 |archive-url=https://web.archive.org/web/20240511102610/https://engie.com.au/about-us/our-generation-activities/gas/pelican-point |archive-date=2024-05-11}}</ref><ref name="autoref_2">{{cite web |url=https://www.google.com/maps/place/34%C2%B045'55.5%22S+138%C2%B030'11.4%22E/@-34.7654207,138.5009883,644m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-34.7654251!4d138.503177}}</ref>
+|}
+{{
+#display_map:
+-34.765425, 138.503177
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2''': -34.765425, 138.503177
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Retired year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_3">{{cite web |url=https://aemo.com.au/energy-systems/electricity/national-electricity-market-nem/nem-forecasting-and-planning/forecasting-and-planning-data/generation-information |title=AEMO Generation information |access-date=2025-04-07 |archive-url=https://web.archive.org/web/20221104113903/https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/nem-forecasting-and-planning/forecasting-and-planning-data/generation-information |archive-date=2022-11-04}}</ref><ref name="autoref_4">{{cite web |url=https://web.archive.org/web/20230228131429/https://engie.com.au/home/assets/gas/pelican-point |archive-url=https://web.archive.org/web/20230228131429/https://engie.com.au/home/assets/gas/pelican-point |archive-date=28 February 2023}}</ref>
+| fossil gas: natural gas<ref name="autoref_3" /><ref name="autoref_5">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-pelican-point-power-plant-australia/?cf-view |title=Power plant profile: Pelican Point Power Plant, Australia |date=2022-01-10 |access-date=2024-06-17 |archive-url=https://web.archive.org/web/20240125044218/https://www.power-technology.com/marketdata/power-plant-profile-pelican-point-power-plant-australia/ |archive-date=2024-01-25}}</ref><ref name="autoref_4" />
+| 171<ref name="autoref_3" />
+| combined cycle<ref name="autoref_1" /><ref name="autoref_4" />
+| not found
+| 2001<ref name="autoref_6">{{cite web |url=https://engie.com.au/home/what-we-do/our-assets/gas/pelican-point/ |archive-url=https://web.archive.org/web/20220313032514/https://engie.com.au/home/what-we-do/our-assets/gas/pelican-point/ |archive-date=2022-03-13}}</ref><ref name="autoref_5" />
+| 2037 (planned)<ref name="autoref_3" />
+| GE Power: GT13E2<ref name="autoref_5" />
+| no
+|-
+| 2
+| Operating<ref name="autoref_3" /><ref name="autoref_4" />
+| fossil gas: natural gas<ref name="autoref_3" /><ref name="autoref_5" /><ref name="autoref_4" />
+| 358<ref name="autoref_3" />
+| combined cycle<ref name="autoref_1" /><ref name="autoref_4" />
+| not found
+| 2001<ref name="autoref_6" /><ref name="autoref_5" />
+| 2037 (planned)<ref name="autoref_3" />
+| GE Power: GT13E2<ref name="autoref_5" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Pelican Point Power Ltd [100%]<ref name="autoref_0" /><ref name="autoref_5" /><ref name="autoref_7">{{cite web |url=https://engie.com.au/home/assets/gas/pelican-point |archive-url=https://web.archive.org/web/20221025070803/https://engie.com.au/home/assets/gas/pelican-point |archive-date=2022-10-25}}</ref>
+| Engie Services Australia & New Zealand Pty Ltd [72.0%]; Mitsui & Co Ltd [28.0%]
+|-
+| 2
+| Pelican Point Power Ltd [100%]<ref name="autoref_0" /><ref name="autoref_5" /><ref name="autoref_7" />
+| Engie Services Australia & New Zealand Pty Ltd [72.0%]; Mitsui & Co Ltd [28.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMjYyMjhbIkJvdXlndWVzIFNBIl0gLS0+IDEwMDAwMjAyNjIyNgogICAgMTAwMDAyMDI2MjI2WyJFcXVhbnMgU0FTIl0gLS0+IDEwMDAwMTAwMDk1MQogICAgMTAwMDAxMDAwOTUxWyJFcXVhbnMgU2VydmljZXM8YnI+QXVzdHJhbGlhIFB0eSBMdGQiXSAtLTcyLjAlLS0+IDEwMDAwMDAwMzc5NQogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18xWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfN1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi40MyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTY3LjUlLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS02LjElLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTkuOTclLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAwMDAwNjUxWyJNaXRzdWkgJiBDbyBMdGQiXSAtLTI4LjAlLS0+IDEwMDAwMDAwMzc5NQogICAgMTAwMDAwMDAzNzk1WyJQZWxpY2FuIFBvaW50IFBvd2VyPGJyPkx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDUxMjgKICAgIFAxMDAwMDA0MDUxMjhbIlBlbGljYW4gUG9pbnQgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Australia]]

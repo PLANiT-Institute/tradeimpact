@@ -1,0 +1,81 @@
+# GEM wiki page: Nam Ngiep 1 hydroelectric plant
+# URL: https://www.gem.wiki/Nam_Ngiep_1_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Other names:''' Nam Ngiep I hydroelectric plant
+
+'''Nam Ngiep 1 hydroelectric plant''' is an operating hydroelectric power plant in Borikhane District, Bolikhamsai, Laos.
+
+==Project Details==
+==== '''Table 1:''' Project details for Nam Ngiep 1 hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Turbines
+!Technology type
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.kepco.co.jp/english/corporate/info/international/generate/laos.html |archive-url=https://web.archive.org/web/20220901043110/https://www.kepco.co.jp/english/corporate/info/international/generate/laos.html |archive-date=2022-09-01}}</ref>
+| 2019<ref name="autoref_0" />
+| 290 MW<ref name="autoref_1">{{cite web |url=https://www.adb.org/projects/41924-014/main |archive-url=https://web.archive.org/web/20220930022820/https://www.adb.org/projects/41924-014/main |archive-date=2022-09-30}}</ref>
+| 2 x 136 MW; 1 x 18 MW<ref name="autoref_2">{{cite web |url=https://namngiep1.com/ |archive-url=https://web.archive.org/web/20220902130812/https://namngiep1.com/ |archive-date=2022-09-02}}</ref><ref name="autoref_3">{{cite web |url=https://www.power-technology.com/marketdata/nam-ngiep-1-a-hydropower-project-laos/}}</ref>
+| Conventional storage<ref name="autoref_0" />
+| Electricity Generating Authority of Thailand (EGAT) [30%]; Kansai Electric Power Co [45%]; Lao Holdings State Enterprise [25%] (関西電力株式会社)<ref name="autoref_4">{{cite web |url=https://hobomaps.com/NamNgiep1DamInfo.html |archive-url=https://web.archive.org/web/20210603100853/https://www.hobomaps.com/NamNgiep1DamInfo.html |archive-date=2021-06-03}}</ref><ref name="autoref_4" /><ref name="autoref_4" />
+| Nam Ngiep 1 Power<ref name="autoref_5">{{cite web |url=https://ppi.worldbank.org/en/snapshots/project/nam-ngiep-1-hydropower-project-8238}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Nam Ngiep 1 hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Borikhane District, Bolikhamsai, Laos<ref name="autoref_4" />
+| Ngiep River<ref name="autoref_2" />
+| 18.647, 103.542 (exact)<ref name="autoref_4" />
+|}
+The map below shows the exact location of the hydroelectric power plant:
+{{
+#display_map:
+18.647, 103.542~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Laos]]
+
+__NOTOC__

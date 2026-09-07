@@ -1,0 +1,85 @@
+# GEM wiki page: Miombo Hewani wind farm
+# URL: https://www.gem.wiki/Miombo_Hewani_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Miombo Hewani wind farm''' is a wind farm in pre-construction in Makambako, Njombe, Tanzania.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Miombo Hewani wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Nameplate capacity
+!Type
+!Owner
+|-
+| 1
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://www.power-technology.com/marketdata/power-plant-profile-miombo-hewani-wind-farm-tanzania/}}</ref>
+| 100 MW<ref name="autoref_1">{{cite web |url=https://www.miombohewaniwindfarm.co.tz/ |archive-url=https://web.archive.org/web/20220402234608/https://www.miombohewaniwindfarm.co.tz/ |archive-date=02 April 2022}}</ref>
+| Onshore<ref name="autoref_1" />
+| Eurus Energy [25%]; Windlab Pty Ltd [75%] (株式会社ユーラスエナジーホールディングス)<ref name="autoref_2">{{cite web |url=https://www.asx.com.au/asxpdf/20200430/pdf/44hfh3wmcy9tk3.pdf, https://www.asx.com.au/asxpdf/20200430/pdf/44hfh3wmcy9tk3.pdf}}</ref>
+|-
+| 2
+| Pre-construction<ref name="autoref_0" />
+| 200 MW<ref name="autoref_1" />
+| Onshore<ref name="autoref_1" />
+| Eurus Energy [25%]; Windlab Pty Ltd [75%] (株式会社ユーラスエナジーホールディングス)<ref name="autoref_2" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Miombo Hewani wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Makambako, Njombe, Tanzania<ref name="autoref_3">{{cite web |url=https://goo.gl/maps/n22RzYPd6et3R663A |archive-url=https://web.archive.org/web/20221108194200/https://www.google.com/maps/place/Miombo+Hewani+Wind+Power+Station/@-8.6312531,34.8078855,642m/data=!3m1!1e3!4m6!3m5!1s0x18555cfb3b90b613:0xb87e393bc8bb95c4!8m2!3d-8.6310994!4d34.8108883!15sChJ3aW5kIGZhcm0gdGFuemFuaWGSAQl3aW5kX2Zhcm3gAQA?shorturl=1 |archive-date=08 November 2022}}</ref>
+| -8.6310, 34.8109 (exact)<ref name="autoref_3" />
+|-
+| 2
+| Makambako, Njombe, Tanzania<ref name="autoref_3" />
+| -8.6310, 34.8109 (exact)<ref name="autoref_3" />
+|}
+The map below shows the exact locations of the wind farm phases:
+{{
+#display_map:
+-8.631, 34.8109~ ~ ~ ~ ~Phases 1, 2
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Tanzania]]
+
+__NOTOC__

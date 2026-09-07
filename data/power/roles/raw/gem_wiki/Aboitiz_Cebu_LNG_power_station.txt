@@ -1,0 +1,95 @@
+# GEM wiki page: Aboitiz Cebu LNG power station
+# URL: https://www.gem.wiki/Aboitiz_Cebu_LNG_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Aboitiz Cebu LNG power station''' is a cancelled power station in Naga, Central Visayas, Philippines.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Aboitiz Cebu LNG power station
+| Naga, Central Visayas, Philippines
+| 10.218203, 123.72442 (approximate)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/City+of+Naga,+Cebu,+Philippines/@10.2381371,123.6564416,12z/data=!3m1!4b1!4m5!3m4!1s0x33a9784dc23f97a3:0x6e1d801f07e82f31!8m2!3d10.2084984!4d123.7572942}}</ref>
+|}
+{{
+#display_map:
+10.218203, 123.72442
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Emergency/Backup
+|-
+| 1
+| Cancelled<ref name="autoref_1">{{cite web |url=https://mb.com.ph/2022/12/16/aboitiz-eyes-150mw-lng-facility-in-cebu/ |archive-url=https://web.archive.org/web/20221222015129/https://mb.com.ph/2022/12/16/aboitiz-eyes-150mw-lng-facility-in-cebu/ |archive-date=2022-12-22}}</ref><ref name="autoref_2">{{cite web |url=https://www.philstar.com/business/2022/12/17/2231291/aboitizpower-pushing-through-lng-plans |archive-url=https://web.archive.org/web/20221221224221/https://www.philstar.com/business/2022/12/17/2231291/aboitizpower-pushing-through-lng-plans |archive-date=2022-12-21}}</ref><ref name="autoref_3">{{cite web |url=https://www.bworldonline.com/corporate/2023/09/12/544929/aboitizpower-on-track-to-build-lng-facility/ |archive-url=https://web.archive.org/web/20230912195757/https://www.bworldonline.com/corporate/2023/09/12/544929/aboitizpower-on-track-to-build-lng-facility/ |archive-date=2023-09-12}}</ref><ref name="autoref_4">{{cite web |url=https://powerphilippines.com/aboitizpower-issues-notice-to-proceed-for-1000mw-greenfield-projects/ |title=AboitizPower issues notice-to-proceed for 1,000MW greenfield projects |date=2024-04-23 |access-date=2024-06-11 |archive-url=https://web.archive.org/web/20240614161227/https://powerphilippines.com/aboitizpower-issues-notice-to-proceed-for-1000mw-greenfield-projects/ |archive-date=2024-06-14}}</ref><ref name="autoref_5">{{cite web |url=https://manilastandard.net/business/314288312/aboitiz-power-gets-nod-to-study-grid-impact-of-1310-mw-plant.html |archive-url=https://web.archive.org/web/20221219141939/https://manilastandard.net/business/314288312/aboitiz-power-gets-nod-to-study-grid-impact-of-1310-mw-plant.html |archive-date=2022-12-19}}</ref>
+| fossil gas: LNG<ref name="autoref_1" />
+| 150<ref name="autoref_1" />
+| unknown
+| not found
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| JERA Co Inc [50%]; Aboitiz Power Corp [50%]<ref name="autoref_1" /><ref name="autoref_1" />
+| Aboitiz Power Corp [50.0%]; Chubu Electric Power Co Inc [25.0%]; Tokyo Electric Power Co [25.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjA1JS0tPiAxMDAwMDAwMDA2MzAKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43NSUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjIlLS0+IDEwMDAwMDAwMDYzMAogICAgMTAwMDAwMDAwNjMwWyJDaHVidSBFbGVjdHJpYyBQb3dlcjxicj5DbyBJbmMiXSAtLTUwLjAlLS0+IDEwMDAwMDAwMTUzMwogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS01LjUzJS0tPiAxMDAwMDAwMDA2NTkKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTM5LjcyJS0tPiAxMDAwMDAwMDA2NTkKICAgIDEwMDAwMTAxMTEzNlsiR292ZXJubWVudCBvZiBKYXBhbiJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDg5NAogICAgMTAwMDAxMDAwODk0WyJOdWNsZWFyIERhbWFnZTxicj5Db21wZW5zYXRpb24gYW5kPGJyPkRlY29tbWlzc2lvbmluZzxicj5GYWNpbGl0YXRpb24gQ29ycCJdIC0tNTQuNzUlLS0+IDEwMDAwMDAwMDY1OQogICAgMTAwMDAwMDAwNjU5WyJUb2t5byBFbGVjdHJpYyBQb3dlcjxicj5DbyJdIC0tMTAwLjAlLS0+IDEwMDAwMDE5MjUyOQogICAgMTAwMDAwMTkyNTI5WyJURVBDTyBGdWVsICYgUG93ZXI8YnI+SW5jIl0gLS01MC4wJS0tPiAxMDAwMDAwMDE1MzMKICAgIDEwMDAwMDAwMTUzM1siSkVSQSBDbyBJbmMiXSAtLTUwLjAlLS0+IFAxMDAwMDA0MDg4OTkKICAgIDEwMDAwMDAwMTUzM1siSkVSQSBDbyBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDA1MTEKICAgIDEwMDAwMTAwMDUxMVsiSkVSQSBBc2lhIFB0ZSBMdGQiXSAtLTI3LjU3JS0tPiAxMDAwMDAwMDEzNzEKICAgIDEwMDAwMjAyMjkxMVsiUGhpbGlwcGluZSBEZWFsaW5nPGJyPlN5c3RlbSBIb2xkaW5ncyBDb3JwIl0gLS05Ny43MiUtLT4gMTAwMDAyMDIyNDA2CiAgICAxMDAwMDIwMjI5MTJbIkludmVzdG1lbnQgSG91c2U8YnI+QXNzb2NpYXRpb24gb2YgdGhlPGJyPlBoaWxpcHBpbmVzIl0gLS0yLjI4JS0tPiAxMDAwMDIwMjI0MDYKICAgIDEwMDAwMjAyMjQwNlsiUGhpbGlwcGluZTxicj5EZXBvc2l0b3J5IGFuZCBUcnVzdDxicj5Db3JwIl0gLS0+IDEwMDAwMjAwODE4MgogICAgMTAwMDAyMDA4MTgyWyJQQ0QgTm9taW5lZTxicj4oRmlsaXBpbm8pIENvcnAiXSAtLTE0LjY3JS0tPiAxMDAwMDAwMDEzNzEKICAgIDEwMDAwMTAxNTU4N18xMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQuNjYlLS0+IDEwMDAwMDAwMTM3MQogICAgMTAwMDAwMTIzMjYxXzJbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0+IDEwMDAwMDEyMDAyNgogICAgMTAwMDAwMTIwMDI2WyJBYm9pdGl6ICYgQ29tcGFueTxicj5JbmMiXSAtLTQ5LjI2JS0tPiAxMDAwMDAwMDA4MDYKICAgIDEwMDAwMTAxNTU4N18xMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTI0Ljg2JS0tPiAxMDAwMDAwMDA4MDYKICAgIDEwMDAwMTAwMTAzNFsiUmFtb24gQWJvaXRpejxicj5Gb3VuZGF0aW9uIEluYyJdIC0tNy42OCUtLT4gMTAwMDAwMDAwODA2CiAgICAxMDAwMDIwMDgxODJbIlBDRCBOb21pbmVlPGJyPihGaWxpcGlubykgQ29ycCJdIC0tMTguMiUtLT4gMTAwMDAwMDAwODA2CiAgICAxMDAwMDAwMDA4MDZbIkFib2l0aXogRXF1aXR5PGJyPlZlbnR1cmVzIEluYyJdIC0tNTMuMDklLS0+IDEwMDAwMDAwMTM3MQogICAgMTAwMDAwMDAxMzcxWyJBYm9pdGl6IFBvd2VyIENvcnAiXSAtLTUwLjAlLS0+IFAxMDAwMDA0MDg4OTkKICAgIFAxMDAwMDA0MDg4OTlbIkFib2l0aXogQ2VidSBMTkc8YnI+cG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Philippines]]

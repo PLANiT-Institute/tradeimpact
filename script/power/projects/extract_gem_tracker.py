@@ -39,6 +39,7 @@ OVERRIDES = DATASET / "method" / "country_name_overrides.csv"
 CODES = DATA / "geography" / "processed" / "country_codes.csv"
 COMPANIES = DATA / "companies" / "method" / "companies.csv"
 ROLES = DATA / "roles" / "raw" / "project_roles.csv"
+COMPANY_IR = DATA / "roles" / "raw" / "company_ir_roles.csv"
 SCOPE = DATA / "registry" / "scope.csv"
 OUT = DATASET / "processed" / "projects_gem.csv"
 SOURCE_ID = "gem_global_integrated_power_tracker"
@@ -303,12 +304,17 @@ def extract(
 
 
 def role_ids_on_file() -> set[str]:
-    """Unit and location ids named in the hand-gathered role register (may be empty)."""
-    if not ROLES.exists():
-        return set()
+    """Unit and location ids named in either hand register, so their units enter scope.
+
+    The tracker's owner field misses real sponsors on some projects (it names only the project
+    company). A register row keyed to a unit id is what brings that unit in.
+    """
     ids: set[str] = set()
-    for r in read_csv(ROLES):
-        ids.update(x for x in (r.get("gem_unit_id", ""), r.get("gem_location_id", "")) if x)
+    for path in (ROLES, COMPANY_IR):
+        if not path.exists():
+            continue
+        for r in read_csv(path):
+            ids.update(x for x in (r.get("gem_unit_id", ""), r.get("gem_location_id", "")) if x)
     return ids
 
 

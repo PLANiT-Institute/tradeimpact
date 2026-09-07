@@ -1,0 +1,75 @@
+# GEM wiki page: Kalam-Asrit hydroelectric plant
+# URL: https://www.gem.wiki/Kalam-Asrit_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Kalam-Asrit hydroelectric plant''' is a hydroelectric power plant in pre-construction in Matta Tehsil, Swat District, Malakand Division, Khyber Pakhtunkhwa, Pakistan.
+
+==Project Details==
+==== '''Table 1:''' Project details for Kalam-Asrit hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology type
+!Owner
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://ep.kp.gov.pk/page/power_projects |archive-url=https://web.archive.org/web/20220914130801/https://ep.kp.gov.pk/page/power_projects |archive-date=2022-09-14}}</ref>
+| 2032 (planned)<ref name="autoref_1">{{cite web |url=https://www.power-technology.com/marketdata/power-plant-profile-kalam-asrit-pakistan/}}</ref>
+| 238 MW<ref name="autoref_2">{{cite web |url=https://epakp.gov.pk/wp-content/uploads/2022/07/238MW-Hydropower-on-River-Swat.pdf}}</ref>
+| Run-of-river<ref name="autoref_3">{{cite web |url=https://www.thefreelibrary.com/Koreans+to+build+197-MW+Kalam-Asrit+Hydropower+Project.-a0547896941}}</ref>
+| Korea South-East Power Co Ltd [100%] (한국남동발전(주))<ref name="autoref_3" />
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Kalam-Asrit hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Matta Tehsil, Swat District, Malakand Division, Khyber Pakhtunkhwa, Pakistan<ref name="autoref_3" />
+| Swat River<ref name="autoref_4">{{cite web |url=https://www.power-technology.com/marketdata/kalam-asrit-pakistan/}}</ref>
+| 34.931, 72.4174 (approximate)<ref name="autoref_3" />
+|}
+The map below shows the approximate location of the hydroelectric power plant:
+{{
+#display_map:
+34.931, 72.4174~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Pakistan]]
+
+__NOTOC__

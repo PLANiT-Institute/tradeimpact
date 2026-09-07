@@ -1,0 +1,79 @@
+# GEM wiki page: Bakun AC hydroelectric plant
+# URL: https://www.gem.wiki/Bakun_AC_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Bakun AC hydroelectric plant''' is an operating hydroelectric power plant in Ilocos Sur, Philippines.
+
+==Project Details==
+==== '''Table 1:''' Project details for Bakun AC hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Turbines
+!Technology type
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.doe.gov.ph/sites/default/files/pdf/renewable_energy/awarded_hydro_2023-09-30.pdf |archive-url=https://web.archive.org/web/20240116202900/https://www.doe.gov.ph/sites/default/files/pdf/renewable_energy/awarded_hydro_2023-09-30.pdf |archive-date=2024-01-16}}</ref>
+| 2000<ref name="autoref_1">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-bakun-ac-philippines/?cf-view |archive-url=https://web.archive.org/web/20240109003741/https://www.power-technology.com/marketdata/power-plant-profile-bakun-ac-philippines/ |archive-date=2024-01-09}}</ref>
+| 75 MW<ref name="autoref_0" />
+| 4<ref name="autoref_1" />
+| Run-of-river<ref name="autoref_1" />
+| unknown [6%]; PCD Nominee [14%]; JERA Co Inc [27%]; Aboitiz Equity Ventures Inc [51%] (株式会社JERA)<ref name="autoref_1" /><ref name="autoref_1" /><ref name="autoref_1" /><ref name="autoref_1" />
+| Luzon Hydro<ref name="autoref_0" />
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Bakun AC hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Ilocos Sur, Philippines<ref name="autoref_2">{{cite web |url=https://maps.app.goo.gl/bQPjNfXvXEFdc3nb9 |archive-url=https://web.archive.org/web/20240109010022/https://www.google.com/maps/place/Bakun+AC+Hydro/@16.8511602,120.58388,372m/data=!3m1!1e3!4m6!3m5!1s0x3391dd3cf5f9eeeb:0x6fc5bc168b27d488!8m2!3d16.8511971!4d120.5835125!16s%2Fg%2F11j11fl9cr?entry=tts |archive-date=2024-01-09}}</ref>
+| Bakun River<ref name="autoref_1" />
+| 16.8512, 120.5835 (exact)<ref name="autoref_2" />
+|}
+The map below shows the exact location of the hydroelectric power plant:
+{{
+#display_map:
+16.8512, 120.5835~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Philippines]]
+
+__NOTOC__

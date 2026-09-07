@@ -141,6 +141,16 @@ svg .scrub { stroke: var(--ink); stroke-dasharray: 3 3; }
 .readout div { background: var(--panel); border-radius: 8px; padding: 8px 10px; font-size: 13px; }
 .readout .v { font-weight: 700; font-variant-numeric: tabular-nums; font-size: 16px; }
 .readout .v.added { color: var(--added); } .readout .v.avoided { color: var(--avoided); }
+.multiples { display: grid; grid-template-columns: 210px repeat(var(--cols), 1fr); gap: 6px 10px;
+  align-items: center; }
+.multiples .hd { font-size: 12px; color: var(--muted); text-align: center; font-weight: 600;
+  text-transform: capitalize; }
+.multiples .rl { font-size: 13px; font-weight: 600; }
+.multiples .cell { background: var(--panel); border-radius: 8px; padding: 6px 4px; cursor: pointer; }
+.multiples .cell:hover { outline: 2px solid var(--accent); }
+.multiples .cell.empty { background: transparent; border: 1px dashed var(--rule); cursor: default;
+  min-height: 46px; }
+.multiples .cell .t { font-size: 11px; color: var(--muted); text-align: center; }
 .tbl { overflow-x: auto; margin: 6px 0; }
 .tbl.short { max-height: 420px; overflow: auto; }
 table { border-collapse: collapse; width: 100%; font-size: 13px; }
@@ -243,9 +253,13 @@ const FUEL_COLOR = Object.fromEntries(FUELS.map((f) => [f, 'var(--' + f + ')']))
 const STATUS_GROUPS = {operating: ['operating', 'mothballed'], planned: ['construction', 'pre-construction', 'announced'], retired: ['retired']};
 const STATUS_LABEL = {operating: 'operating', planned: 'construction & planned', retired: 'retired'};
 const ROLE_LABEL = {developer: 'developer', equity_owner: 'equity owner', epc_contractor: 'EPC contractor', equipment_supplier: 'equipment supplier', om_contractor: 'O&M contractor', lender: 'lender', eca_cover: 'ECA cover'};
+const PHASES = ['development', 'construction', 'investment', 'operation', 'finance'];
+const PHASE_ROLES = {development: ['developer'], construction: ['epc_contractor', 'equipment_supplier'], investment: ['equity_owner'], operation: ['om_contractor'], finance: ['lender', 'eca_cover']};
+const PHASE_COLOR = {development: 'var(--phev)', construction: 'var(--gas)', investment: 'var(--accent)', operation: 'var(--wind)', finance: 'var(--nuclear)'};
+const ORIGIN_LABEL = {register: 'hand register', company_ir: 'company disclosure', gem: 'tracker field', gem_wiki: 'wiki sentence'};
 const HOME_NAME = {KR: 'Korea', JP: 'Japan'};
 const TABS = [
-  {id: 'companies', title: 'Companies & projects', subs: () => [['all', 'All companies'], ...ALL.companies.map((c) => [c.company_id, c.name_en])]},
+  {id: 'companies', title: 'Companies & projects', subs: () => [['all', 'All companies'], ['matrix', 'Role matrix'], ...ALL.companies.map((c) => [c.company_id, c.name_en])]},
   {id: 'map', title: 'Map', subs: () => [['units', 'Generating units'], ['countries', 'Destinations']]},
   {id: 'coverage', title: 'Coverage & roles', subs: () => [['units', 'Units in and out'], ['roles', 'Roles and shares'], ['quality', 'Data quality']]},
   {id: 'benchmarks', title: 'Destination benchmarks', subs: () => [['destination', 'One destination'], ['rates', 'All rates'], ['anchors', 'NDC anchors']]},
@@ -537,8 +551,12 @@ function computeFacts() {
   f.matched_units = fmtN(one('SELECT COUNT(*) n FROM projects_gem').n);
   f.excluded_units = fmtN(one('SELECT COUNT(*) n FROM ti_power_excluded').n);
   f.companies_n = one("SELECT COUNT(DISTINCT company_id) n FROM ti_power_by_role").n;
-  f.equity_rows = fmtN(one('SELECT COUNT(*) n FROM gem_ownership').n);
-  f.equity_with_share = fmtN(one("SELECT COUNT(*) n FROM gem_ownership WHERE share IS NOT NULL AND share <> ''").n);
+  f.equity_rows = fmtN(one("SELECT COUNT(*) n FROM gem_tracker_roles WHERE role = 'equity_owner'").n);
+  f.equity_with_share = fmtN(one("SELECT COUNT(*) n FROM gem_tracker_roles WHERE role = 'equity_owner' AND share IS NOT NULL AND share <> ''").n);
+  f.operator_rows = fmtN(one("SELECT COUNT(*) n FROM gem_tracker_roles WHERE role = 'om_contractor'").n);
+  f.ir_rows = fmtN(one('SELECT COUNT(*) n FROM company_ir_roles').n);
+  f.ir_pages = one('SELECT COUNT(*) n FROM company_ir_index').n;
+  f.ir_companies = one('SELECT COUNT(DISTINCT company_id) n FROM company_ir_roles').n;
   f.register_rows = one('SELECT COUNT(*) n FROM project_roles').n;
   f.wiki_rows = fmtN(one('SELECT COUNT(*) n FROM gem_wiki_roles').n);
   f.wiki_nonequity = fmtN(one("SELECT COUNT(*) n FROM gem_wiki_roles WHERE role <> 'equity_owner'").n);
@@ -602,7 +620,14 @@ pathway exists, <span data-f="s2_adding"></span> of <span data-f="s2_units"></sp
 <p class="lead"><span data-f="units"></span> of <span data-f="matched_units"></span> matched units carry a result;
 <span data-f="excluded_units"></span> are listed with the reason. The equity role is read from the tracker itself:
 <span data-f="equity_rows"></span> company × unit rows, <span data-f="equity_with_share"></span> with a stated share.
-Construction, equipment and finance roles are read from the GEM wiki pages by keyword: <span data-f="wiki_nonequity"></span> company × plant rows (EPC contractors, equipment suppliers, lenders, export-credit cover), each with the sentence it came from, tier C until a hand row confirms it. The hand register has <span data-f="register_rows"></span> rows so far.</p>
+Roles come from four sources in order of standing: the hand register; the companies' own
+disclosures and project pages (<span data-f="ir_rows"></span> rows for
+<span data-f="ir_companies"></span> companies, read from <span data-f="ir_pages"></span> pages saved
+on disk, each row citing the page that states the role and the page that states the share); the
+tracker's own fields (equity with shares, and <span data-f="operator_rows"></span> operator rows);
+and the wiki sentences (<span data-f="wiki_nonequity"></span> construction and finance rows, tier C).
+The five phases — development, construction, investment, operation, finance — are separate
+throughout.</p>
 <p>Attribution is per role, never pooled: a company's rows of different roles are never added into one number, and
 the share stays a column beside the full figure, so any weighting is a query rather than a re-collection. The
 largest gap between full and share-weighted attribution is <span data-f="gap_company"></span>:
@@ -675,6 +700,41 @@ function renderCompanies(panel) {
     caption(c2, 'The thirty largest destinations by capacity in view.');
     return;
   }
+  if (s === 'matrix') {
+    const rows = Q("SELECT r.company_id, r.company_name, r.company_country, r.phase, COUNT(DISTINCT r.gem_unit_id) units, SUM(r.ti_lifetime_full_tco2) ti FROM ti_power_by_role r WHERE 1" + roleWhere('r') + ' GROUP BY r.company_id, r.phase');
+    const c = card(panel, 'Which phase each company holds on its overseas projects (' + SC_NAME[state.scenario] + ')', 'Development, construction (EPC and equipment), investment (equity), operation (O&M) and finance are separate roles: a company appears in every phase a source puts it in. The number is the units, the bar their full-attribution lifetime trade impact. Click a company to open it.');
+    if (!rows.length) { empty(c); return; }
+    const byCo = new Map();
+    for (const r of rows) { if (!byCo.has(r.company_id)) byCo.set(r.company_id, {id: r.company_id, label: r.company_name + ' (' + r.company_country + ')', units: {}, ti: {}, total: 0}); const x = byCo.get(r.company_id); x.units[r.phase] = r.units; x.ti[r.phase] = r.ti; x.total += Math.abs(r.ti); }
+    const list = [...byCo.values()].sort((a, b) => b.total - a.total);
+    const f = fig(c);
+    legend(f, PHASES.map((p) => [p, PHASE_COLOR[p]]));
+    const amp = Math.max(1e-9, ...rows.map((r) => Math.abs(r.ti / 1e6)));
+    const grid = el('div', 'multiples'); grid.style.setProperty('--cols', PHASES.length); f.appendChild(grid);
+    grid.appendChild(el('div', 'hd', ''));
+    for (const ph of PHASES) grid.appendChild(el('div', 'hd', esc(ph)));
+    for (const co2 of list) {
+      grid.appendChild(el('div', 'rl', esc(co2.label)));
+      for (const ph of PHASES) {
+        const units = co2.units[ph], ti = co2.ti[ph];
+        if (!units) { grid.appendChild(el('div', 'cell empty')); continue; }
+        const cell = el('div', 'cell');
+        const w = Math.max(2, Math.round(100 * Math.abs(ti / 1e6) / amp));
+        cell.innerHTML = '<div class="t" style="font-size:12px;color:var(--ink)"><b>' + fmtN(units) + '</b> units</div>' +
+          '<div style="height:8px;margin:4px 6px;border-radius:4px;background:' + PHASE_COLOR[ph] + ';width:' + w + '%"></div>' +
+          '<div class="t"><span class="' + cls(ti) + '">' + fmt(ti / 1e6, 1) + '</span> Mt</div>';
+        cell.addEventListener('mousemove', (ev) => tip(ev, '<b>' + esc(co2.label) + '</b><br>' + esc(ph) + ': ' + fmtN(units) + ' units<br>' + fmt(ti / 1e6, 2) + ' MtCO₂ (full attribution)'));
+        cell.addEventListener('mouseleave', untip);
+        cell.addEventListener('click', () => setSub(co2.id));
+        grid.appendChild(cell);
+      }
+    }
+    caption(c, 'Bar length is the phase\'s share of that company\'s largest phase figure; the sign is in the number. Full attribution counts the whole unit against every role, which is why a lender and an owner of the same plant both carry it: the share-weighted figures are in the total-impact tab.');
+    const c2 = card(panel, 'Every company × role row', 'Sort any column.');
+    table(c2, [{key: 'company_name', label: 'Company'}, {key: 'company_country', label: 'HQ'}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'phase', label: 'Phase'}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)}, {key: 'units_with_share', label: 'With share', num: true, fmt: (v) => fmtN(v)}, {key: 'units_from_company_ir', label: 'From disclosures', num: true, fmt: (v) => fmtN(v)}, {key: 'ti_lifetime_full_tco2', label: 'Lifetime full Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'ti_lifetime_weighted_tco2', label: 'Weighted Mt', num: true, fmt: cellMt, cls: signCls}],
+      Q("SELECT * FROM ti_power_company WHERE scenario = ?" + (state.company !== 'all' ? ' AND company_id = ' + quoted(state.company) : '') + (state.home !== 'all' ? ' AND company_country = ' + quoted(state.home) : ''), [state.scenario]), {sort: 'units', onRow: (r) => setSub(r.company_id)});
+    return;
+  }
   const co = ALL.byId[s];
   const units = Q("SELECT u.*, r.share, r.origin FROM ti_power_by_unit u JOIN ti_power_by_role r ON r.gem_unit_id = u.gem_unit_id AND r.scenario = u.scenario AND r.company_id = ? AND r.role = 'equity_owner' WHERE 1" + unitWhere('u').replace(/ AND u\.gem_unit_id IN \(SELECT[^)]*\)\)?/, '') , [s]);
   const c0 = card(panel, co.name_en + ' (' + co.country + ', ' + co.type.replace('_', ' ') + ')', esc(co.note));
@@ -693,6 +753,14 @@ function renderCompanies(panel) {
   const byS = {};
   for (const u of units) { const g = statusGroup(u.status); byS[g] = byS[g] || {label: STATUS_LABEL[g] || g, values: {}}; byS[g].values[u.fuel_type] = (byS[g].values[u.fuel_type] || 0) + u.capacity_mw; }
   stackedH(fig(c2), Object.values(byS), FUELS, {unit: 'MW', labelW: 150});
+  const roleRows = Q("SELECT r.role, r.phase, r.origin, COUNT(DISTINCT r.gem_unit_id) units, SUM(CASE WHEN r.share <> '' AND r.share IS NOT NULL THEN 1 ELSE 0 END) with_share, SUM(r.ti_lifetime_full_tco2) full_ti, SUM(CASE WHEN r.share <> '' AND r.share IS NOT NULL THEN r.ti_lifetime_weighted_tco2 ELSE 0 END) weighted_ti FROM ti_power_by_role r WHERE r.company_id = ? AND r.scenario = ? GROUP BY r.role, r.origin", [s, state.scenario]);
+  const cR = card(panel, 'Roles ' + co.name_en + ' holds on its overseas projects', 'One row per role and source. Development, construction, investment, operation and finance are separate; the same plant can appear in several.');
+  table(cR, [{key: 'phase', label: 'Phase'}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'origin', label: 'Source', fmt: (v) => esc(ORIGIN_LABEL[v] || v)}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)}, {key: 'with_share', label: 'With a share', num: true, fmt: (v) => fmtN(v)}, {key: 'full_ti', label: 'Lifetime full Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'weighted_ti', label: 'Weighted Mt', num: true, fmt: cellMt, cls: signCls}], roleRows, {sort: 'units'});
+  const irRows = Q('SELECT * FROM company_ir_roles_raw WHERE company_id = ? ORDER BY plant_name, role', [s]);
+  if (irRows.length) {
+    caption(cR, 'From ' + co.name_en + '\'s own disclosures and project pages: ' + fmtN(irRows.length) + ' rows, each with the sentence and the page.');
+    table(cR, [{key: 'plant_name', label: 'Plant'}, {key: 'country', label: 'Dest.'}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'share', label: 'Share', num: true, fmt: (v) => v === '' || v == null ? '—' : pct(v, 0)}, {key: 'role_as_stated', label: 'As stated', wrap: true, fmt: clip(60)}, {key: 'role_quote', label: 'Sentence', wrap: true, fmt: clip(110)}, {key: 'role_source_url', label: 'Page', fmt: (v) => '<a href="' + esc(v) + '" target="_blank" rel="noopener">link</a>'}], irRows, {short: true});
+  }
   const c3 = card(panel, 'Every unit', 'Click a row to open it on the map and in the yearly view.');
   unitTable(c3, units, true);
 }
@@ -828,17 +896,23 @@ function renderCoverage(panel) {
     const c3 = card(panel, 'Domestic holdings are not trades', 'A unit in the company\'s own country is left out at extraction (the extractor prints the count). The same rule, as a filter, is the "Home" chip in the top bar for the assessed units: Korean companies\' units, Japanese companies\' units, or both.');
     caption(c3, 'Rule and count: <code>data/power/projects/method/method.md</code>.');
   } else if (s === 'roles') {
-    const rows = Q("SELECT company_id, level, COUNT(*) n, SUM(CASE WHEN share IS NOT NULL AND share <> '' THEN 1 ELSE 0 END) with_share, AVG(CASE WHEN share IS NOT NULL AND share <> '' THEN share END) mean_share FROM gem_ownership GROUP BY company_id, level");
-    const byCo = new Map();
-    for (const r of rows) { if (!byCo.has(r.company_id)) byCo.set(r.company_id, {company: companyName(r.company_id), owner: 0, parent: 0, with_share: 0, n: 0, mean: []}); const x = byCo.get(r.company_id); x[r.level] += r.n; x.n += r.n; x.with_share += r.with_share; if (r.mean_share != null) x.mean.push(r.mean_share); }
-    const c = card(panel, 'Equity rows read from the tracker, by company', 'Owner-level rows are direct holdings; parent-level rows are ultimate parents as the tracker records them. The share is the tracker\'s bracketed figure; blank where none is stated.');
-    table(c, [{key: 'company', label: 'Company'}, {key: 'n', label: 'Unit rows', num: true, fmt: (v) => fmtN(v)}, {key: 'owner', label: 'At owner level', num: true, fmt: (v) => fmtN(v)}, {key: 'parent', label: 'At parent level', num: true, fmt: (v) => fmtN(v)},
-      {key: 'with_share', label: 'With a share', num: true, fmt: (v) => fmtN(v)}, {key: 'mean', label: 'Mean share', num: true, fmt: (v) => v.length ? pct(v.reduce((a, b) => a + b, 0) / v.length, 0) : '—'}], [...byCo.values()], {sort: 'n'});
-    const c2 = card(panel, 'The hand register', 'Construction (EPC, equipment), operation (O&M) and finance (lender, ECA) roles are not in the tracker and are transcribed by hand with one source link per row. Rows on file: ' + fmtN(FACTS.register_rows) + '.');
-    table(c2, [{key: 'role', label: 'Role'}, {key: 'phase', label: 'Phase'}, {key: 'share_basis', label: 'Share basis'}, {key: 'definition', label: 'Definition', wrap: true}], Q('SELECT * FROM roles'));
-    const c3 = card(panel, 'Roles read from the GEM wiki pages', 'Construction, equipment, finance and operation roles read by keyword from the sentence shown (tier C, unverified); a hand row in the register replaces a wiki row for the same company, plant and role.');
+    const c0 = card(panel, 'Where each role comes from', 'Four sources, in the order a row wins: the hand register, a company disclosure or project page on disk, the tracker\'s own fields, a wiki sentence. Roles are never pooled across phases.');
+    const byOrigin = Q("SELECT origin, phase, role, COUNT(DISTINCT company_id || '|' || COALESCE(gem_location_id, '') || gem_unit_id) rows, COUNT(DISTINCT gem_unit_id) units FROM ti_power_by_role WHERE scenario = ? GROUP BY origin, phase, role", [state.scenario]);
+    table(c0, [{key: 'origin', label: 'Source', fmt: (v) => esc(ORIGIN_LABEL[v] || v)}, {key: 'phase', label: 'Phase'}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'rows', label: 'Company × plant rows', num: true, fmt: (v) => fmtN(v)}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)}], byOrigin, {sort: 'units'});
+    const c1 = card(panel, 'Company disclosures and project pages (' + FACTS.ir_rows + ' rows, ' + FACTS.ir_companies + ' companies)', 'Read by hand from the ' + FACTS.ir_pages + ' pages saved under <code>roles/raw/company_ir/</code>; every row cites the page that states the role, and separately the page that states the share, with the sentence quoted. This register outranks the machine readings and its unit ids also bring units the tracker\'s owner field misses into scope.');
+    table(c1, [{key: 'company_id', label: 'Company', fmt: (v) => esc(companyName(v))}, {key: 'plant_name', label: 'Plant'}, {key: 'country', label: 'Dest.'}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'phase', label: 'Phase'}, {key: 'share', label: 'Share', num: true, fmt: (v) => v === '' || v == null ? '—' : pct(v, 0)},
+      {key: 'role_as_stated', label: 'As the page states it', wrap: true, fmt: clip(70)}, {key: 'role_source_url', label: 'Role source', fmt: (v) => '<a href="' + esc(v) + '" target="_blank" rel="noopener">page</a>'}, {key: 'share_source_url', label: 'Share source', fmt: (v) => v ? '<a href="' + esc(v) + '" target="_blank" rel="noopener">page</a>' : '—'}], Q('SELECT * FROM company_ir_roles_raw ORDER BY company_id, plant_name, role'), {short: true});
+    const c2 = card(panel, 'Investment and operation from the tracker\'s own fields', 'Owner and Parent give the equity share (' + FACTS.equity_rows + ' rows, ' + FACTS.equity_with_share + ' with a stated share); Operator gives the O&M role (' + FACTS.operator_rows + ' rows). Tier B: a third party\'s compilation of company disclosures.');
+    table(c2, [{key: 'company_id', label: 'Company', fmt: (v) => esc(companyName(v))}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'level', label: 'Tracker field'}, {key: 'rows', label: 'Unit rows', num: true, fmt: (v) => fmtN(v)}, {key: 'with_share', label: 'With a share', num: true, fmt: (v) => fmtN(v)}, {key: 'mean_share', label: 'Mean share', num: true, fmt: (v) => v == null ? '—' : pct(v, 0)}],
+      Q("SELECT company_id, role, level, COUNT(*) rows, SUM(CASE WHEN share IS NOT NULL AND share <> '' THEN 1 ELSE 0 END) with_share, AVG(CASE WHEN share IS NOT NULL AND share <> '' THEN share END) mean_share FROM gem_tracker_roles GROUP BY company_id, role, level"), {sort: 'rows', short: true});
+    const c3 = card(panel, 'Roles read from the GEM wiki pages', 'Construction, finance and ownership roles read by keyword from the sentence shown (tier C, unverified); one text file per page under <code>roles/raw/gem_wiki/</code>.');
     table(c3, [{key: 'company_id', label: 'Company', fmt: (v) => esc(companyName(v))}, {key: 'plant_name', label: 'Plant'}, {key: 'country', label: 'Dest.'}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'share', label: 'Share', num: true, fmt: (v) => v === '' || v == null ? '—' : pct(v, 0)}, {key: 'sentence', label: 'Sentence read', wrap: true, fmt: (v, r) => '<span class="small">' + esc(v) + '</span> <a class="small" href="' + esc(r.source_url) + '" target="_blank" rel="noopener">page</a>'}], Q("SELECT * FROM gem_wiki_roles ORDER BY role, company_id"), {short: true});
-    if (FACTS.register_rows) table(c2, [{key: 'company_name', label: 'Company'}, {key: 'plant_name', label: 'Plant'}, {key: 'country', label: 'Dest.'}, {key: 'role', label: 'Role'}, {key: 'phase', label: 'Phase'}, {key: 'share', label: 'Share', num: true, fmt: (v) => v === '' || v == null ? '—' : pct(v, 0)}, {key: 'source_url', label: 'Source', fmt: (v) => '<a href="' + esc(v) + '" target="_blank" rel="noopener">link</a>'}], Q('SELECT * FROM project_roles'), {short: true});
+    const c4 = card(panel, 'The role vocabulary', 'Five phases, never pooled. A utility that owns and runs a plant carries two rows, one in each phase.');
+    table(c4, [{key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'phase', label: 'Phase'}, {key: 'share_basis', label: 'Share basis'}, {key: 'definition', label: 'Definition', wrap: true}], Q('SELECT * FROM roles'));
+    if (FACTS.register_rows) {
+      const c5 = card(panel, 'The hand register', 'Rows transcribed by hand with one source link each; they outrank every machine reading.');
+      table(c5, [{key: 'company_name', label: 'Company'}, {key: 'plant_name', label: 'Plant'}, {key: 'country', label: 'Dest.'}, {key: 'role', label: 'Role', fmt: (v) => ROLE_LABEL[v] || v}, {key: 'share', label: 'Share', num: true, fmt: (v) => v === '' || v == null ? '—' : pct(v, 0)}, {key: 'source_url', label: 'Source', fmt: (v) => '<a href="' + esc(v) + '" target="_blank" rel="noopener">link</a>'}], Q('SELECT * FROM project_roles'), {short: true});
+    }
   } else {
     const rows = Q("SELECT fuel_type, cf_source, heat_rate_source, ef_basis, lifetime_source, tier, COUNT(*) n FROM ti_power_by_unit WHERE scenario = 'S1' GROUP BY 1, 2, 3, 4, 5, 6 ORDER BY n DESC");
     const c = card(panel, 'Where each input of the assessed units comes from', 'The tracker publishes capacity, status, start year and coordinates (tier A). Capacity factor, heat rate and lifetime are technology defaults (tier C); the fuel factor is the IPCC default (tier C) until a national factor is filed (tier A).');

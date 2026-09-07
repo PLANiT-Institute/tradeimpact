@@ -1,0 +1,88 @@
+# GEM wiki page: Cần Giờ offshore wind farm
+# URL: https://www.gem.wiki/Cần_Giờ_offshore_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Cần Giờ offshore wind farm''' is an announced wind farm in Cần Giờ, Vietnam.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Cần Giờ offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+|-
+| 1
+| Announced<ref name="autoref_0">{{cite web |url=https://www.power-technology.com/data-insights/top-5-offshore-wind-power-plants-in-development-in-vietnam/, https://english.thesaigontimes.vn/offshore-wind-farm-project-proposed-in-can-gio/, https://en.sggp.org.vn/hcmc-develops-can-gio-offshore-wind-energy-post109171.html, https://thuviennhadat.vn/bat-dong-san/du-an-dien-gio-ngoai-khoi-can-gio-du-an-dien-gio-ngoai-khoi-can-gio-co-anh-huong-the-nao-den-gia-bat-8533.html}}</ref>
+| 2036 (planned)<ref name="autoref_1">{{cite web |url=https://www.power-technology.com/data-insights/top-5-offshore-wind-power-plants-in-development-in-vietnam/, https://english.thesaigontimes.vn/offshore-wind-farm-project-proposed-in-can-gio/}}</ref>
+| 3000 MW<ref name="autoref_1" />
+| Offshore mount unknown<ref name="autoref_2">{{cite web |url=https://www.power-technology.com/data-insights/top-5-offshore-wind-power-plants-in-development-in-vietnam/ |archive-url=https://web.archive.org/web/20240125201938/https://www.power-technology.com/data-insights/top-5-offshore-wind-power-plants-in-development-in-vietnam/ |archive-date=2024-01-25}}</ref>
+| Tokyo Gas Co Ltd; Shizen Energy Group; Asia Petroleum Energy Corp (東京瓦斯株式会社)<ref name="autoref_3">{{cite web |url=https://www.power-technology.com/data-insights/top-5-offshore-wind-power-plants-in-development-in-vietnam/, https://www.power-technology.com/data-insights/top-5-offshore-wind-power-plants-in-development-in-vietnam/, https://www.power-technology.com/data-insights/top-5-offshore-wind-power-plants-in-development-in-vietnam/}}</ref>
+|-
+| 2
+| Announced<ref name="autoref_0" />
+| 2036 (planned)<ref name="autoref_1" />
+| 3000 MW<ref name="autoref_1" />
+| Offshore mount unknown<ref name="autoref_2" />
+| Tokyo Gas Co Ltd; Shizen Energy Group; Asia Petroleum Energy Corp (東京瓦斯株式会社)<ref name="autoref_3" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Cần Giờ offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Cần Giờ, Vietnam<ref name="autoref_4">{{cite web |url=https://vir.com.vn/hcmc-proposes-6000mw-can-gio-offshore-wind-power-plant-in-pdp8-102693.html |archive-url=https://web.archive.org/web/20240131192615/https://vir.com.vn/hcmc-proposes-6000mw-can-gio-offshore-wind-power-plant-in-pdp8-102693.html |archive-date=2024-01-31}}</ref>
+| 10.3448, 106.9272 (approximate)<ref name="autoref_4" />
+|-
+| 2
+| Cần Giờ, Vietnam<ref name="autoref_4" />
+| 10.3448, 106.9272 (approximate)<ref name="autoref_4" />
+|}
+The map below shows the approximate locations of the wind farm phases:
+{{
+#display_map:
+10.344829, 106.927214~ ~ ~ ~ ~Phases 1, 2
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Vietnam]]
+
+__NOTOC__

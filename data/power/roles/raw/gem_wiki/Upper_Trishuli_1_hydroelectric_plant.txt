@@ -1,0 +1,81 @@
+# GEM wiki page: Upper Trishuli 1 hydroelectric plant
+# URL: https://www.gem.wiki/Upper_Trishuli_1_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Other names:''' Upper Trishuli I
+
+'''Upper Trishuli 1 hydroelectric plant''' is a hydroelectric power plant under construction in Haku Village, Jumla District, Karnali Zone, Karnali Province, Nepal.
+
+==Project Details==
+==== '''Table 1:''' Project details for Upper Trishuli 1 hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Turbines
+!Technology type
+!Owner
+!Operator
+|-
+| Construction<ref name="autoref_0">{{cite web |url=https://kathmandupost.com/province-no-3/2024/09/15/construction-of-216-mw-upper-trishuli-1-hydel-project-halted-after-workers-protest}}</ref><ref name="autoref_1">{{cite web |url=https://thehimalayantimes.com/business/diversion-tunnel-of-216-megawatt-upper-trishuli-1-project-completed |archive-url=https://web.archive.org/web/20230306223242/https://thehimalayantimes.com/business/diversion-tunnel-of-216-megawatt-upper-trishuli-1-project-completed |archive-date=2023-03-06}}</ref>
+| 2026<ref name="autoref_2">{{cite web |url=https://www.hydroreview.com/hydro-industry-news/andritz-to-supply-equipment-for-216-mw-upper-trishuli-1-hydro-in-nepal/ |archive-url=https://web.archive.org/web/20220506062333/https://www.hydroreview.com/hydro-industry-news/andritz-to-supply-equipment-for-216-mw-upper-trishuli-1-hydro-in-nepal/ |archive-date=2022-05-06}}</ref><ref name="autoref_0" />
+| 216 MW<ref name="autoref_3">{{cite web |url=https://opecfund.org/operations/list/upper-trishuli-1-216-mw-hydropower-plant |archive-url=https://web.archive.org/web/20221101143611/https://opecfund.org/operations/list/upper-trishuli-1-216-mw-hydropower-plant |archive-date=2022-11-01}}</ref>
+| 3 x 72 MW<ref name="autoref_4">{{cite web |url=https://www.nsenergybusiness.com/projects/upper-trishuli-1-hydropower-project/ |archive-url=https://web.archive.org/web/20220522081927/https://www.nsenergybusiness.com/projects/upper-trishuli-1-hydropower-project/ |archive-date=2022-05-22}}</ref>
+| Run-of-river<ref name="autoref_3" />
+| Daelim Co Ltd [15%]; International Finance Corp [15%]; Kyeryong Construction Industrial [10%]; unknown [10%]; Koen [50%]<ref name="autoref_5">{{cite web |url=https://nwedcpl.com/project/upper-trishuli-1-hep-216-mw/ |archive-url=https://web.archive.org/web/20220930125736/https://nwedcpl.com/project/upper-trishuli-1-hep-216-mw/ |archive-date=2022-09-30}}</ref><ref name="autoref_5" /><ref name="autoref_5" /><ref name="autoref_5" /><ref name="autoref_5" />
+| Nepal Water and Energy Development CO (NWEDC)<ref name="autoref_5" />
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Upper Trishuli 1 hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Haku Village, Jumla District, Karnali Zone, Karnali Province, Nepal<ref name="autoref_5" /><ref name="autoref_6">{{cite web |url=https://www.doed.gov.np/license/66 |archive-url=https://web.archive.org/web/20221022054009/http://www.doed.gov.np/license/66 |archive-date=2022-10-22}}</ref>
+| Trishuli River<ref name="autoref_7">{{cite web |url=https://www.waterpowermagazine.com/news/newswork-underway-on-upper-trishuli-1-project-nepal-9544217 |archive-url=https://web.archive.org/web/20221128215401/https://www.waterpowermagazine.com/news/newswork-underway-on-upper-trishuli-1-project-nepal-9544217 |archive-date=2022-11-28}}</ref>
+| 28.0737, 85.208 (exact)<ref name="autoref_5" /><ref name="autoref_6" />
+|}
+The map below shows the exact location of the hydroelectric power plant:
+{{
+#display_map:
+28.0737, 85.208~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Nepal]]
+
+__NOTOC__

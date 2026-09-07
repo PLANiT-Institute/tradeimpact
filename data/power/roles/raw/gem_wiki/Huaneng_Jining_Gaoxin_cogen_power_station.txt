@@ -1,0 +1,144 @@
+# GEM wiki page: Huaneng Jining Gaoxin cogen power station
+# URL: https://www.gem.wiki/Huaneng_Jining_Gaoxin_cogen_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Huaneng Jining Gaoxin cogen power station''' (华能济宁高新区热电) is an operating power station of at least 700-megawatts (MW) in Sunshidian Village, Yanzhou District, Jining, Shandong, China with multiple units, some of which are not currently operating.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Huaneng Jining Gaoxin cogen power station
+| Sunshidian Village, Yanzhou District, Jining, Shandong, China
+| 35.46868, 116.705652 (exact)
+|}
+{{
+#display_map:
+35.46868, 116.705652
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2, Unit 3, Unit 4''': 35.46868, 116.705652
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit 1
+| Retired<ref name="autoref_0">{{cite web |url=https://news.bjx.com.cn/html/20230418/1301679.shtml |title=华能济宁热电厂1号、2号机组关停-北极星火力发电网 |date=2023-04-18 |website=news.bjx.com.cn |access-date=2023-11-27 |archive-url=https://web.archive.org/web/20240125142217/https://news.bjx.com.cn/html/20230418/1301679.shtml |archive-date=2024-01-25}}</ref>
+| coal: unknown<ref name="autoref_1">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 30
+| unknown
+| yes
+| 2004
+| 2023<ref name="autoref_0" />
+| False
+|-
+| Unit 2
+| Retired<ref name="autoref_0" />
+| coal: unknown<ref name="autoref_1" />
+| 30
+| unknown
+| yes
+| 2004
+| 2023<ref name="autoref_0" />
+| False
+|-
+| Unit 3
+| Operating
+| coal: unknown<ref name="autoref_1" />
+| 350
+| supercritical
+| yes
+| 2021
+| –
+| False
+|-
+| Unit 4
+| Operating
+| coal: unknown<ref name="autoref_1" />
+| 350
+| supercritical
+| yes
+| 2021
+| –
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Huaneng Jining High Tech Zone Thermal Power Co Ltd [100%]
+| Huaneng Power International Inc [40.0%]; Shandong Ruyi International Fashion Industry Investment Holding Co Ltd [39.7%]; China Huaneng Group Co Ltd [10.0%]; ITOCHU Corp [5.9%]; Australia Maid International Trade [3.3%]; unknown [1.1%]
+|-
+| Unit 2
+| Huaneng Jining High Tech Zone Thermal Power Co Ltd [100%]
+| Huaneng Power International Inc [40.0%]; Shandong Ruyi International Fashion Industry Investment Holding Co Ltd [39.7%]; China Huaneng Group Co Ltd [10.0%]; ITOCHU Corp [5.9%]; Australia Maid International Trade [3.3%]; unknown [1.1%]
+|-
+| Unit 3
+| Jining Huayuan Thermal Power Co Ltd [100%]
+| Jining Water Supply Group General Co [50.0%]; Huaneng Power International Inc [40.0%]; China Huaneng Group Co Ltd [10.0%]
+|-
+| Unit 4
+| Jining Huayuan Thermal Power Co Ltd [100%]
+| Jining Water Supply Group General Co [50.0%]; Huaneng Power International Inc [40.0%]; China Huaneng Group Co Ltd [10.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]
+
+__NOTOC__

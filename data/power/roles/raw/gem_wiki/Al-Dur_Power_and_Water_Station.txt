@@ -1,0 +1,171 @@
+# GEM wiki page: Al-Dur Power and Water Station
+# URL: https://www.gem.wiki/Al-Dur_Power_and_Water_Station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Al-Dur Power and Water Station''' (محطة الدور المستقلة للمياه والطاقة، محطة الدورلإنتاج الكهرباء والمياه) is an operating power station of at least 2726-megawatts (MW) in Al Dur, Southern, Bahrain with multiple units, some of which are not currently operating.
+It is also known as Al Dur2 IWPP (units 2-1, 2-2).
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Al-Dur Power and Water Station
+| Al Dur, Southern, Bahrain
+| 25.969278, 50.608007 (exact)<ref name="autoref_0">{{cite web |url=https://www.industryabout.com/country-territories-3/1323-bahrain/fossil-fuels-energy/18634-al-dur-gas-power-plant}}</ref><ref name="autoref_1">{{cite web |url=https://www.google.com/maps/place/Al+Dur+2+IWP+Project/@25.9692828,50.6058183,1005m/data=!3m1!1e3!4m5!3m4!1s0x3e4857b5d02b4435:0xc414a55f6395fff1!8m2!3d25.9686337!4d50.6083877}}</ref><ref name="autoref_2">{{cite web |url=https://drive.google.com/file/d/1D3ZDtv235TVhW3j7hxEapjMKsoUhlSxy/view |archive-url=https://web.archive.org/web/20210623164923/https://drive.google.com/file/d/1D3ZDtv235TVhW3j7hxEapjMKsoUhlSxy/view |archive-date=2021-06-23}}</ref>
+|}
+{{
+#display_map:
+25.969278, 50.608007
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1-1, 1-2, 2-1, 2-2, 3''': 25.969278, 50.608007
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1-1
+| Operating<ref name="autoref_3">{{cite web |url=https://www.ewa.bh/en/AboutUs/AnnualReport/statistics%202018.pdf |archive-url=https://web.archive.org/web/20220224145415/https://www.ewa.bh/en/AboutUs/AnnualReport/statistics%202018.pdf |archive-date=2022-02-24}}</ref>
+| fossil gas: natural gas<ref name="autoref_4">{{cite web |url=https://www.powerengineeringint.com/news/bahrain-fighting-fit/ |archive-url=https://web.archive.org/web/20211203100044/https://www.powerengineeringint.com/news/bahrain-fighting-fit/ |archive-date=2021-12-03}}</ref><ref name="autoref_3" />
+| 613<ref name="autoref_4" /><ref name="autoref_3" />
+| combined cycle<ref name="autoref_4" />
+| not found
+| 2012<ref name="autoref_3" />
+| GE Power: 9FA, GE Power: C7<ref name="autoref_5">{{cite web |url=https://www.ge.com/news/press-releases/ge-energy-signs-contracts-totaling-more-500-million-provide-equipment-services}}</ref><ref name="autoref_6">{{cite web |url=https://www.ewa.bh/en/AboutUs/AnnualReport/EWAStatistics2021.pdf}}</ref>
+| no
+|-
+| 1-2
+| Operating<ref name="autoref_3" />
+| fossil gas: natural gas<ref name="autoref_4" /><ref name="autoref_3" />
+| 613<ref name="autoref_4" /><ref name="autoref_3" />
+| combined cycle<ref name="autoref_4" />
+| not found
+| 2012<ref name="autoref_3" />
+| GE Power: 9FA, GE Power: C7, GE Power: 9FA<ref name="autoref_5" /><ref name="autoref_6" />
+| no
+|-
+| 2-1
+| Operating<ref name="autoref_7">{{cite web |url=https://energy-utilities.com/bahrain-s-1-500mw-aldur-2-iwpp-begins-full-news117784.html |archive-url=https://web.archive.org/web/20220712152949/https://energy-utilities.com/bahrain-s-1-500mw-aldur-2-iwpp-begins-full-news117784.html |archive-date=2022-07-12}}</ref><ref name="autoref_8">{{cite web |url=https://www.acwapower.com/en/projects/al-dur2-iwpp/ |archive-url=https://web.archive.org/web/20221205011038/https://acwapower.com/en/projects/al-dur2-iwpp/ |archive-date=2022-12-05}}</ref><ref name="autoref_9">{{cite web |url=https://www.nsenergybusiness.com/projects/al-dur-independent-water-and-power-project-phase-ii/ |archive-url=https://web.archive.org/web/20220522210830/https://www.nsenergybusiness.com/projects/al-dur-independent-water-and-power-project-phase-ii/ |archive-date=2022-05-22}}</ref><ref name="autoref_10">{{cite web |url=https://www.ewa.bh/en/Media/PressReleases/the-minister-of-electricity-affairs-and-the-ceo-inspect-the-second-phase-of-the-al-dur-power-and-water-plant |archive-url=https://web.archive.org/web/20210813171549/https://www.ewa.bh/en/Media/PressReleases/the-minister-of-electricity-affairs-and-the-ceo-inspect-the-second-phase-of-the-al-dur-power-and-water-plant |archive-date=2021-08-13}}</ref>
+| fossil gas: natural gas<ref name="autoref_2" /><ref name="autoref_11">{{cite web |url=https://acwapower.com/en/projects/al-dur2-iwpp/ |archive-url=https://web.archive.org/web/20220819074905/https://www.acwapower.com/en/projects/al-dur2-iwpp/ |archive-date=2022-08-19}}</ref>
+| 750<ref name="autoref_2" /><ref name="autoref_10" />
+| combined cycle<ref name="autoref_8" />
+| not found
+| 2022<ref name="autoref_7" /><ref name="autoref_8" />
+| Siemens Energy: SGT5-4000F, Siemens Energy: SGT5-4000F, Siemens Energy: SST5-5000<ref name="autoref_9" />
+| no
+|-
+| 2-2
+| Operating<ref name="autoref_7" />
+| fossil gas: natural gas<ref name="autoref_12">{{cite web |url=https://www.idom.com/en/project/al-dur-ii-iwpp-combined-cycle-power-plant-1500-mw/ |archive-url=https://web.archive.org/web/20220705115630/https://www.idom.com/en/project/al-dur-ii-iwpp-combined-cycle-power-plant-1500-mw/ |archive-date=2022-07-05}}</ref>
+| 750<ref name="autoref_12" />
+| combined cycle<ref name="autoref_7" />
+| not found
+| 2022<ref name="autoref_7" />
+| Siemens Energy: SST5-5000, Siemens Energy: SGT5-4000F, Siemens Energy: SGT5-4000F<ref name="autoref_9" />
+| no
+|-
+| 3
+| Construction<ref name="autoref_13">{{cite web |url=https://smartwatermagazine.com/news/smart-water-magazine/bahrain-approves-80-million-funding-shift-al-dur-project-expansion}}</ref><ref name="autoref_14">{{cite web |url=https://www.saudigulfprojects.com/2023/05/bahrain-announces-aldur-phase-3-iwpp-consultancy-services-bid-prices/ |title=Bahrain announces AlDur Phase 3 IWPP Consultancy services Bid Prices |date=2023-05-29 |access-date=2024-11-14 |archive-url=https://web.archive.org/web/20250310234827/https://www.saudigulfprojects.com/2023/05/bahrain-announces-aldur-phase-3-iwpp-consultancy-services-bid-prices/ |archive-date=2025-03-10}}</ref><ref name="autoref_15">{{cite web |url=https://www.zawya.com/en/projects/utilities/bahrain-receives-bids-for-al-dur-phase-3-iwpp-consultancy-tender-pw2gtynn}}</ref>
+| fossil gas: natural gas<ref name="autoref_15" />
+| 1800<ref name="autoref_15" /><ref name="autoref_16">{{cite web |url=https://www.albiladpress.com/news/2023/5504/finance/835416.html}}</ref>
+| combined cycle<ref name="autoref_15" />
+| not found
+| 2028 (planned)<ref name="autoref_15" /><ref name="autoref_16" />
+| not found
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| 1-1
+| Al Ezzel Power Company<ref name="autoref_4" />
+| Engie Energy Services International SA [55%]; ACWA Power Co [45%]<ref name="autoref_4" /><ref name="autoref_17">{{cite web |url=https://www.acwapower.com/news/acwa-power-completes-acquisition-of-major-power-and-water-desalination-assets-in-bahrain-with-kuwait-to-follow/}}</ref>
+| ENGIE SA [55.0%]; ACWA Power Co [45.0%]
+|-
+| 1-2
+| –
+| ACWA Power Co [45%]<ref name="autoref_17" />
+| ACWA Power Co [45.0%]
+|-
+| 2-1
+| NOMAC<ref name="autoref_18">{{cite web |url=http://nomac-staging.thetribestaging.com/ar/news-room/blogs/first-project-in-bahrain-al-dur-2-nomac-entered-o-m/ |title=الرئيسية | المشروع الأول في البحرين، محطة الدور 2، أبرمت نوماك اتفاقية التشغيل والصيانة |website=nomac-staging.thetribestaging.com |access-date=2024-03-25 |archive-url=https://web.archive.org/web/20240326013219/http://nomac-staging.thetribestaging.com/ar/news-room/blogs/first-project-in-bahrain-al-dur-2-nomac-entered-o-m/ |archive-date=2024-03-26}}</ref>
+| Mitsui & Co Ltd [30%]; Almoayyed Contracting Group WLL [10%]; ACWA Power Co [60%]<ref name="autoref_11" /><ref name="autoref_11" /><ref name="autoref_11" />
+| ACWA Power Co [60.0%]; Mitsui & Co Ltd [30.0%]; Y. K. Almoayyed & Sons BSC [10.0%]
+|-
+| 2-2
+| NOMAC<ref name="autoref_18" />
+| Mitsui & Co Ltd [30%]; Almoayyed Contracting Group WLL [10%]; ACWA Power Co [60%]<ref name="autoref_11" /><ref name="autoref_11" /><ref name="autoref_11" />
+| ACWA Power Co [60.0%]; Mitsui & Co Ltd [30.0%]; Y. K. Almoayyed & Sons BSC [10.0%]
+|-
+| 3
+| –
+| The Electricity and Water Authority [100%]<ref name="autoref_15" />
+| The Electricity and Water Authority [100.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_4" />
+* '''Captive industry''': Chemicals<ref name="autoref_4" />
+* '''Non-industry use''': power<ref name="autoref_4" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Bahrain]]
+
+__NOTOC__

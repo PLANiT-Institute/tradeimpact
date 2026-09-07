@@ -1,0 +1,112 @@
+# GEM wiki page: Marlim Azul power station
+# URL: https://www.gem.wiki/Marlim_Azul_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Marlim Azul power station''' (Usina Termelétrica Marlim Azul) is an operating power station of at least 565-megawatts (MW) in Macaé, Rio de Janeiro, Brazil.
+It is also known as Vale Azul I.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Marlim Azul power station
+| Macaé, Rio de Janeiro, Brazil
+| -22.35944, -41.874453 (approximate)<ref name="autoref_0">{{cite web |url=https://dadosabertos.aneel.gov.br/dataset/siga-sistema-de-informacoes-de-geracao-da-aneel/resource/11ec447d-698d-4ab8-977f-b424d5deee6a |title=SIGA - Sistema de Informações de Geração da ANEEL |date=2023 |website=Agência Nacional de Energia Elétrica (ANEEL) |access-date=2023-10-10 |archive-url=https://web.archive.org/web/20240125152719/https://dadosabertos.aneel.gov.br/dataset/siga-sistema-de-informacoes-de-geracao-da-aneel/resource/11ec447d-698d-4ab8-977f-b424d5deee6a |archive-date=2024-01-25}}</ref>
+|}
+{{
+#display_map:
+-22.35944, -41.874453
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.shell.com.br/imprensa/press-releases-2023/arke-energia-inaugura-oficialmente-ute-marlim-azul-em-macae-no-rio-de-janeiro.html |title=Arke Energia inaugura oficialmente UTE Marlim Azul em Macaé, no Rio de Janeiro |date=2023-11-22 |website=Shell Brasil |archive-url=https://web.archive.org/web/20240125150449/https://www.shell.com.br/imprensa/press-releases-2023/arke-energia-inaugura-oficialmente-ute-marlim-azul-em-macae-no-rio-de-janeiro.html |archive-date=2024-01-25}}</ref>
+| fossil gas: LNG<ref name="autoref_2">{{cite web |url=https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-620/PITER%202021.pdf |archive-url=https://web.archive.org/web/20240125090328/https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-620/PITER%202021.pdf |archive-date=2024-01-25}}</ref>
+| 565<ref name="autoref_3">{{cite web |url=https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-412/Nota%20T%C3%A9cnica%20-%20Terminais%20de%20Regaseifica%C3%A7%C3%A3o%20de%20GNL%20no%20Brasil%20(Ciclo%202018-2019).pdf |title=Terminais de Regaseificação de GNL no Brasil Panorama dos Principais Projetos |date=2019-08-30 |website=EPE (Empresa de Pesquisa Energética) |archive-url=https://web.archive.org/web/20220623141353/https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-412/Nota%20T%C3%A9cnica%20-%20Terminais%20de%20Regaseifica%C3%A7%C3%A3o%20de%20GNL%20no%20Brasil%20%28Ciclo%202018-2019%29.pdf |archive-date=2022-06-23}}</ref><ref name="autoref_0" /><ref name="autoref_4">{{cite web |url=https://www.grupocobra.com/en/proyecto/combined-cycle-power-plant-marlim-azul/ |archive-url=https://web.archive.org/web/20240125100658/https://www.grupocobra.com/en/proyecto/combined-cycle-power-plant-marlim-azul/ |archive-date=2024-01-25}}</ref>
+| combined cycle<ref name="autoref_5">{{cite web |url=https://amer.mhps.com/mhps-announces-first-brazilian-win-for-jac-gas-turbine.html |archive-url=https://web.archive.org/web/20240125112330/https://power.mhi.com/regions/amer/news/180214.html |archive-date=2024-01-25}}</ref>
+| not found
+| 2023<ref name="autoref_1" /><ref name="autoref_6">{{cite web |url=https://oglobo.globo.com/rio/noticia/2022/07/plano-de-complexo-com-15-termeletricas-em-macae-pode-esbarrar-na-falta-dagua-e-acende-alerta.ghtml |archive-url=https://web.archive.org/web/20240125114947/https://oglobo.globo.com/rio/noticia/2022/07/plano-de-complexo-com-15-termeletricas-em-macae-pode-esbarrar-na-falta-dagua-e-acende-alerta.ghtml |archive-date=2024-01-25}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Arke Energia SA [100%]<ref name="autoref_1" /><ref name="autoref_0" />
+| Pátria Investments Ltd [50.1%]; Shell PLC [29.9%]; Mitsubishi Corp [20.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjElLS0+IDEwMDAwMDAwMDc0NgogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS05MS45JS0tPiAxMDAwMDAwMDA3NDYKICAgIDEwMDAwMDAwMDc0NlsiU2hlbGwgUExDIl0gLS0yOS45JS0tPiAxMDAwMDAwMDM1MzkKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS41JS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjIlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjMlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAwMDAwNjUwWyJNaXRzdWJpc2hpIENvcnAiXSAtLTIwLjAlLS0+IDEwMDAwMDAwMzUzOQogICAgMTAwMDAwMDAwMTQxWyJQw6F0cmlhIEludmVzdG1lbnRzPGJyPkx0ZCJdIC0tNTAuMSUtLT4gMTAwMDAwMDAzNTM5CiAgICAxMDAwMDAwMDM1MzlbIkFya2UgRW5lcmdpYSBTQSJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDY1MTIKICAgIFAxMDAwMDA0MDY1MTJbIk1hcmxpbSBBenVsIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background==
+
+As of early 2022, the Marlim Azul power station was the most advanced of several recently proposed gas plant projects in the Macaé region.<ref>{{Cite web|url=https://energiaeambiente.org.br/wp-content/uploads/2021/12/20211214_notatecnicamacaequalidadedoar.pdf|title=Qualidade do Ar em Macaé (RJ)|date=December 2021|access-date=|website=IEMA|last=|first=|archive-url=|archive-date=|url-status=live}}</ref> Construction of the power station began in 2021 with the arrival of new equipment to the site.<ref>{{Cite news|url=https://clickpetroleoegas.com.br/em-macae-a-usina-termeletrica-marlim-azul-inicia-nova-fase-de-construcao-com-a-chegada-de-novos-equipamentos/|title=Em Macaé, a Usina Termelétrica Marlim Azul inicia nova fase de construção com a chegada de novos equipamentos|date=2021-08-18|work=CPG Click Petroleo e Gas|access-date=2021-09-09|language=pt-BR}}</ref>
+
+In April 2023, the Marlim Azul plant was authorized to begin test operations<ref name=":0">{{Cite web|url=https://www.canalenergia.com.br/noticias/53243877/aneel-libera-5655-mw-da-ute-marlim-azul-para-teste|title=Aneel libera 565,5 MW da UTE Marlim Azul para teste|last=|first=|date=April 17, 2023|website=CanalEnergia|language=pt-BR|url-status=live|archive-url=|archive-date=|access-date=}}</ref>, and in July 2023 the plant received its operating license from the Rio de Janeiro state environmental authority.<ref>{{Cite news|url=https://oeco.org.br/reportagens/novas-termeletricas-acendem-o-sinal-de-alerta-em-macae/|title=Novas termelétricas acendem o sinal de alerta em Macaé - ((o))eco|last=Emanuel Alencar|first=|date=July 17, 2023|work=((o))eco|access-date=|language=}}</ref>
+
+As of July 2023, the plant was reported to be in a pre-operational state<ref>{{Cite news|url=https://oeco.org.br/reportagens/novas-termeletricas-acendem-o-sinal-de-alerta-em-macae/|title=Novas termelétricas acendem o sinal de alerta em Macaé|last=Emanuel Alencar|first=|date=July 17, 2023|work=((o))eco|access-date=|language=}}</ref>, with full commercial operations set to begin between late September and early November 2023.<ref name=":1">{{Cite web|url=https://fusoesaquisicoes.com/acontece-no-setor/patria-estuda-saida-da-termica-marlim-azul/|title=Pátria estuda saída da térmica Marlim Azul|last=|first=|date=September 12, 2023|website=Fusões & Aquisições|url-status=live|archive-url=|archive-date=|access-date=}}</ref> 
+
+Marlim Azul has been touted as Brazil's first power plant to operate full-time using gas from the country's offshore "pre-salt" formation.<ref>{{Cite web|url=https://valor.globo.com/empresas/noticia/2023/09/12/patria-estuda-saida-da-termica-marlim-azul.ghtml|title=Pátria estuda saída da térmica Marlim Azul|last=|first=|date=September 12, 2023|website=Valor|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Brazil]]

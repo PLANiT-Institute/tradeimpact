@@ -1,0 +1,96 @@
+# GEM wiki page: Rio Bravo Fresno power station
+# URL: https://www.gem.wiki/Rio_Bravo_Fresno_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalBioenergyPowerTracker}}
+'''Rio Bravo Fresno power station''' is an operating power station of at least 28-megawatts (MW) in United States.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Rio Bravo Fresno power station
+| United States
+| 36.688915, -119.723218 (exact)<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860/ |title=U.S. Energy Information Administration, Form EIA-860 detailed data with previous form data (EIA-860A/860B), 2012 |access-date=2023-11-01 00:00:00 |archive-url=https://web.archive.org/web/20221028021258/https://www.eia.gov/electricity/data/eia860/ |archive-date=2022-10-28}}</ref>
+|}
+{{
+#display_map:
+36.688915, -119.723218
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''GEN1''': 36.688915, -119.723218
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Start year
+|-
+| GEN1
+| Operating<ref name="autoref_0" />
+| bioenergy: wood & other biomass (solids)<ref name="autoref_0" />
+| 28<ref name="autoref_0" />
+| 1988<ref name="autoref_0" />
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| GEN1
+| Rio Bravo Fresno<ref name="autoref_0" />
+| IHI Corp; North American Power Group Ltd
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAxMDAxMzY3CiAgICAxMDAwMDEwMDEzNjdbIk5vcnRoIEFtZXJpY2FuIFBvd2VyPGJyPkdyb3VwIEx0ZCJdIC0tPiAxMDAwMDIwMTY3OTMKICAgIDEwMDAwMjAxNjc5M1siVWx0cmFwb3dlci1GcmVzbm8gTFAiXSAtLTQwLjAlLS0+IDEwMDAwMjAwODk1MwogICAgMTAwMDAxMDAxMzY3WyJOb3J0aCBBbWVyaWNhbiBQb3dlcjxicj5Hcm91cCBMdGQiXSAtLT4gMTAwMDAyMDE2NzkyCiAgICAxMDAwMDIwMTY3OTJbIk1hbGFnYSBQb3dlcjxicj5JbnZlc3RvcnMgTFAiXSAtLTEwLjAlLS0+IDEwMDAwMjAwODk1MwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC40MyUtLT4gMTAwMDAxMDAxMzIyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny40NCUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTY5LjgyJS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tNi44NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBIb2xkaW5ncyBJbmMiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuODUlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi4xNiUtLT4gMTAwMDAxMDAxMzIyCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNDElLS0+IDEwMDAwMTAwMTMyMgogICAgMTAwMDAxMDAxMzIyWyJJSEkgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMjAwODg4NgogICAgMTAwMDAyMDA4ODg2WyJJSEkgUG93ZXIgR2VuZXJhdGlvbjxicj5Db3JwIl0gLS0+IDEwMDAwMjAxNjc5NAogICAgMTAwMDAyMDE2Nzk0WyJJUEdDIEZyZXNubyBJbmMiXSAtLTUwLjAlLS0+IDEwMDAwMjAwODk1MwogICAgMTAwMDAyMDA4OTUzWyJSaW8gQnJhdm8gRnJlc25vIl0gLS0+IFAxMDAwMDEwNDc2MTMKICAgIFAxMDAwMDEwNDc2MTNbIlJpbyBCcmF2byBGcmVzbm88YnI+cG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of bioenergy power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-bioenergy-power-tracker/ Global Bioenergy Power Tracker] on the Global Energy Monitor website.
+[[Category:Bioenergy power stations]][[Category:Bioenergy power stations in United States]]

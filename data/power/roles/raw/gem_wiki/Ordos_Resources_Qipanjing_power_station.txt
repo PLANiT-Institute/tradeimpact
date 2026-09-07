@@ -1,0 +1,119 @@
+# GEM wiki page: Ordos Resources Qipanjing power station
+# URL: https://www.gem.wiki/Ordos_Resources_Qipanjing_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Ordos Resources Qipanjing power station''' (鄂尔多斯资源集团高新材料公司棋盘井低热值煤电厂) is an operating power station of at least 660-megawatts (MW) in Qipanjing Town, Otog Front Banner, Ordos, Inner Mongolia, China.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Ordos Resources Qipanjing power station
+| Qipanjing Town, Otog Front Banner, Ordos, Inner Mongolia, China
+| 39.350291, 107.01002 (exact)
+|}
+{{
+#display_map:
+39.350291, 107.01002
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 39.350291, 107.01002
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 330
+| unknown
+| 2015
+| False
+|-
+| Unit 2
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 330
+| unknown
+| 2015
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Inner Mongolia Erdos High Tech Materials Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 2
+| Inner Mongolia Erdos High Tech Materials Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQzJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjcuNSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTYuMSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tOS45NyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDAwMDA2NTFbIk1pdHN1aSAmIENvIEx0ZCJdIC0tMjAuMTYlLS0+IDEwMDAwMDEyMjMxNgogICAgMTAwMDAwMTMyMzg4XzFbInVua25vd24iXSAtLTEuODclLS0+IDEwMDAwMDEyMjMxNgogICAgMTAwMDAwMTIzNDEzWyJJbm5lciBNb25nb2xpYTxicj5FZXJkdW9zaSBSZXNvdXJjZXM8YnI+Q28gTHRkIl0gLS03Ny45NyUtLT4gMTAwMDAwMTIyMzE2CiAgICAxMDAwMDAxMjIzMTZbIklubmVyIE1vbmdvbGlhIEVyZG9zPGJyPkVsZWN0cmljIFBvd2VyIGFuZDxicj5NZXRhbGx1cmd5IEdyb3VwIENvPGJyPkx0ZCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEyMjMxOAogICAgMTAwMDAwMTIyMzE4WyJJbm5lciBNb25nb2xpYSBFcmRvczxicj5IaWdoIFRlY2ggTWF0ZXJpYWxzPGJyPkNvIEx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDA5MzgKICAgIFAxMDAwMDAxMDA5MzhbIk9yZG9zIFJlc291cmNlczxicj5RaXBhbmppbmcgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Background==
+
+Construction for the Ordos Resources Qipanjing power station began in April 2013, with the plants beginning operation in 2015. The sponsoring company, Ordos High-Tech & New Material, was initially planning to build 4 units of 330,000 kilowatts. The first phase has been completed and is currently in operation; the second has yet to be proposed.<ref name=":0">{{Cite web|url=http://www.tepc.ceec.net.cn/art/2015/10/14/art_8796_427292.html|title=内蒙古鄂尔多斯项目部1号机组168小时试运行|last=|first=|date=October 14, 2015|website=CEEC|url-status=live|archive-url=|archive-date=|access-date=2021-05-27}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

@@ -1,0 +1,122 @@
+# GEM wiki page: Heshun power station
+# URL: https://www.gem.wiki/Heshun_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Heshun power station''' (潞安星光煤电公司和顺煤矸石发电厂) is a cancelled power station in Heshun County, Jinzhong, Shanxi, China.
+It is also known as Lu'an Xingguang Heshun LHV Coal Power Plant, 山西国际能源和顺星光低热值煤发电.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Heshun power station
+| Heshun County, Jinzhong, Shanxi, China
+| 37.36086, 113.620595 (exact)
+|}
+{{
+#display_map:
+37.36086, 113.620595
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 37.36086, 113.620595
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Emergency/Backup
+|-
+| Unit 1
+| Cancelled
+| coal: waste coal
+| 350
+| unknown
+| yes
+| False
+|-
+| Unit 2
+| Cancelled
+| coal: waste coal
+| 350
+| unknown
+| yes
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Shanxi Lu'an Group Xingguang Coal Power Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [70.9%]; KEPCO Shanxi International [13.6%]; Lu'an Chemical Group Co Ltd [5.1%]; Electric Power Development Co Ltd [2.8%]; Shanxi Gemeng International Energy Group Co Ltd [2.8%]; KEPCO Woori Sprott Global Private Equity Fund [1.6%]; Korea Electric Power Corp [1.6%]; unknown [1.6%]
+|-
+| Unit 2
+| Shanxi Lu'an Group Xingguang Coal Power Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [70.9%]; KEPCO Shanxi International [13.6%]; Lu'an Chemical Group Co Ltd [5.1%]; Electric Power Development Co Ltd [2.8%]; Shanxi Gemeng International Energy Group Co Ltd [2.8%]; KEPCO Woori Sprott Global Private Equity Fund [1.6%]; Korea Electric Power Corp [1.6%]; unknown [1.6%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjU2NzhbIlNoYW54aSBQcm92aW5jaWFsPGJyPlBlb3BsZSdzIEdvdmVybm1lbnQ8YnI+U3RhdGUtb3duZWQgQXNzZXRzPGJyPlN1cGVydmlzaW9uIGFuZDxicj5BZG1pbmlzdHJhdGlvbjxicj5Db21taXNzaW9uIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAxNjYzCiAgICAxMDAwMDAwMDE2NjNbIlNoYW54aSBTdGF0ZS1Pd25lZDxicj5DYXBpdGFsIEludmVzdG1lbnQ8YnI+YW5kIE9wZXJhdGlvbiBDbyBMdGQiXSAtLTkwLjAlLS0+IDEwMDAwMDEyNDYxMQogICAgMTAwMDAwMTI1NTI4WyJTaGFueGkgUHJvdmluY2lhbDxicj5EZXBhcnRtZW50IG9mPGJyPkZpbmFuY2UiXSAtLTEwLjAlLS0+IDEwMDAwMDEyNDYxMQogICAgMTAwMDAwMTI0NjExWyJMdSdhbiBDaGVtaWNhbCBHcm91cDxicj5DbyBMdGQiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMjM4MzQKICAgIDEwMDAwMDEyMzgzNFsiU2hhbnhpIEx1J2FuIE1pbmluZzxicj4oR3JvdXApIENvIEx0ZCJdIC0tNTEuMCUtLT4gMTAwMDAwMTIyODc1CiAgICAxMDAwMDAxMjU1MjhbIlNoYW54aSBQcm92aW5jaWFsPGJyPkRlcGFydG1lbnQgb2Y8YnI+RmluYW5jZSJdIC0tMTAuMCUtLT4gMTAwMDAwMTIzODIzCiAgICAxMDAwMDAwMDE2NjNbIlNoYW54aSBTdGF0ZS1Pd25lZDxicj5DYXBpdGFsIEludmVzdG1lbnQ8YnI+YW5kIE9wZXJhdGlvbiBDbyBMdGQiXSAtLTkwLjAlLS0+IDEwMDAwMDEyMzgyMwogICAgMTAwMDAwMTIzODIzWyJTaGFueGkgR2VtZW5nPGJyPkludGVybmF0aW9uYWwgRW5lcmd5PGJyPkdyb3VwIENvIEx0ZCJdIC0tOS4wJS0tPiAxMDAwMDAxMjI4NzUKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTguMiUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMDQ1NjkKICAgIDEwMDAwMjAwNDU2OVsiS29yZWEgRGV2ZWxvcG1lbnQ8YnI+QmFuayBDbyJdIC0tMzIuOSUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ4LjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTQ3WyJLb3JlYSBFbGVjdHJpYyBQb3dlcjxicj5Db3JwIl0gLS01MC4wJS0tPiAxMDAwMDAxMjU5NjcKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTAwLjAlLS0+IDEwMDAwMjAyNTA0MQogICAgMTAwMDAyMDI1MDQxWyJNaW5pc3RyeSBvZiBIZWFsdGg8YnI+YW5kIFdlbGZhcmUiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDA3MzAKICAgIDEwMDAwMTAwMDczMFsiTmF0aW9uYWwgUGVuc2lvbjxicj5TZXJ2aWNlIChTb3V0aDxicj5Lb3JlYSkiXSAtLTUwLjAlLS0+IDEwMDAwMDEyNTk2NwogICAgMTAwMDAwMTI1OTY3WyJLRVBDTyBXb29yaSBTcHJvdHQ8YnI+R2xvYmFsIFByaXZhdGU8YnI+RXF1aXR5IEZ1bmQiXSAtLTguMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMjU5NjlbIktFUENPIFNoYW54aTxicj5JbnRlcm5hdGlvbmFsIl0gLS0zNC4wJS0tPiAxMDAwMDAxMjM2OTkKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzYuODglLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTIuMjUlLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01Ljc3JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjElLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAwMDAwNjQxWyJFbGVjdHJpYyBQb3dlcjxicj5EZXZlbG9wbWVudCBDbyBMdGQiXSAtLTcuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMjM4MjNbIlNoYW54aSBHZW1lbmc8YnI+SW50ZXJuYXRpb25hbCBFbmVyZ3k8YnI+R3JvdXAgQ28gTHRkIl0gLS00Ny4wJS0tPiAxMDAwMDAxMjM2OTkKICAgIDEwMDAwMDEzMjM4OF8xWyJ1bmtub3duIl0gLS00LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTIzNjk5WyJHZW1lbmcgSW50ZXJuYXRpb25hbDxicj5FbmVyZ3kgQ28gTHRkIl0gLS00MC4wJS0tPiAxMDAwMDAxMjI4NzUKICAgIDEwMDAwMDEyMjg3NVsiU2hhbnhpIEx1J2FuIEdyb3VwPGJyPlhpbmdndWFuZyBDb2FsIFBvd2VyPGJyPkNvIEx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDE0NjcKICAgIFAxMDAwMDAxMDE0NjdbIkhlc2h1biBwb3dlciBzdGF0aW9uIl0K}}
+
+==Background==
+
+Heshun power station is a proposed 2 x 350 MW waste coal plant in Heshun County.<ref>[http://www.sxcoal.com/coal/4183809/articlenew.html "潞安集团加快星光低热值煤项目实施,"] 中国煤炭资源网, 2015年07月01日</ref> 
+
+===Nationwide Restrictions Imposed on Development of Coal-Fired Power Capacity===
+In January 2017 China's National Energy Administration suspended over 100 planned and under-construction coal power projects with a total capacity of over 100GW in 13 provinces, including Heshun power station. In response, Shanxi International Energy Group voluntarily cancelled the coal plant.<ref>[http://news.bjx.com.cn/html/20170116/803648.shtml "能源局下发13省市新建火电机组停建清单(附文件),"] Polaris, Jan 16, 2017</ref>
+
+For details, see [[China's 2016 Restrictions on Development of Coal-Fired Power Capacity]].
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

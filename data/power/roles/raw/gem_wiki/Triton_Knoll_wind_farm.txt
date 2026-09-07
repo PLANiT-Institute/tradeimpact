@@ -1,0 +1,8 @@
+# GEM wiki page: Triton Knoll wind farm
+# URL: https://www.gem.wiki/Triton_Knoll_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+#REDIRECT [[Lynch Knoll wind farm]]

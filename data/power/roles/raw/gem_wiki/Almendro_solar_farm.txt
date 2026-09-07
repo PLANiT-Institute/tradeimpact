@@ -1,0 +1,75 @@
+# GEM wiki page: Almendro solar farm
+# URL: https://www.gem.wiki/Almendro_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Almendro solar farm''' (Planta solar fotovoltaica Almendro Solar) is a solar photovoltaic (PV) farm in pre-construction in Villaumbrales, Palencia, Castilla y León, Spain.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Almendro solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://bocyl.jcyl.es/html/2023/04/28/html/BOCYL-D-28042023-25.do}}</ref>
+| 50 MWp/dc<ref name="autoref_0" />
+| PV<ref name="autoref_0" />
+| Hanwha Energy Corp [100%] (한화에너지)<ref name="autoref_1">{{cite web |url=https://energiaestrategica.es/6gw-renovables-castilla-y-leon/ |title=Las empresas detrás de los 4 GW renovables menores a 50 MW en tramitación en Castilla y León |date=2023-12-11 |website=Energía Estratégica España |archive-url=https://web.archive.org/web/20240415222232/https://energiaestrategica.es/6gw-renovables-castilla-y-leon/ |archive-date=2024-04-15}}</ref>
+| Almendro Solar<ref name="autoref_0" />
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Almendro solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Villaumbrales, Palencia, Castilla y León, Spain<ref name="autoref_0" />
+| 42.0963, -4.6095 (approximate)<ref name="autoref_0" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+42.096259, -4.609492~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Spain]]
+[[Category:PV solar farms]]
+
+__NOTOC__

@@ -1,0 +1,100 @@
+# GEM wiki page: Gulf BL power station
+# URL: https://www.gem.wiki/Gulf_BL_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Gulf BL power station''' is an operating power station of at least 127-megawatts (MW) in Ban Pho, Phra Nakhon Si Ayutthaya, Thailand.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Gulf BL power station
+| Ban Pho, Phra Nakhon Si Ayutthaya, Thailand
+| 14.252758, 100.588845 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%84%E0%B8%9F%E0%B8%9F%E0%B9%89%E0%B8%B2%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%99+GBL+POWER+PLANT/@14.2526072,100.5861412,1301m}}</ref>
+|}
+{{
+#display_map:
+14.252758, 100.588845
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 14.252758, 100.588845
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.gulf.co.th/en/pdf/onereport-gulf-2021-en.pdf |archive-url=https://web.archive.org/web/20220524033714/https://www.gulf.co.th/en/pdf/onereport-gulf-2021-en.pdf |archive-date=2022-05-24}}</ref><ref name="autoref_2">{{cite web |url=https://hub.optiwise.io/en/documents/69620/20230227-gulf-ar2022-en.pdf |archive-url=https://web.archive.org/web/20230612075400/https://hub.optiwise.io/en/documents/69620/20230227-gulf-ar2022-en.pdf |archive-date=2023-06-12}}</ref><ref name="autoref_3">{{cite web |url=https://www.gulf.co.th/en/power_generation.php |archive-url=https://web.archive.org/web/20221006194738/https://www.gulf.co.th/en/power_generation.php |archive-date=2022-10-06}}</ref>
+| fossil gas: natural gas<ref name="autoref_4">{{cite web |url=https://www.gulf.co.th/en/pdf/Gulf_AR_2020_EN_Final.pdf |archive-url=https://web.archive.org/web/20220709130600/https://www.gulf.co.th/en/pdf/Gulf_AR_2020_EN_Final.pdf |archive-date=2022-07-09}}</ref>
+| 127<ref name="autoref_4" />
+| combined cycle<ref name="autoref_5">{{cite web |url=https://www.yokogawa.com/us/news/press-releases/2016/2016-02-12/ |archive-url=https://web.archive.org/web/20211202115641/https://www.yokogawa.com/us/news/press-releases/2016/2016-02-12/ |archive-date=2021-12-02}}</ref>
+| yes<ref name="autoref_6">{{cite web |url=https://www.gulf.co.th/en/news/sept_2018/Gulf_BL_operation_to_EGAT.php |archive-url=https://web.archive.org/web/20240120034730/https://www.gulf.co.th/en/news/sept_2018/Gulf_BL_operation_to_EGAT.php |archive-date=2024-01-20}}</ref>
+| 2018<ref name="autoref_4" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Gulf MP Company Ltd [75%]; Thai Industrial Estate Corp Ltd [25%]<ref name="autoref_7">{{cite web |url=https://www.kaohoon.com/content/249950 |archive-url=https://web.archive.org/web/20210311022721/https://www.kaohoon.com/content/249950 |archive-date=2021-03-11}}</ref><ref name="autoref_7" />
+| Thai Industrial Estate Corp Ltd [25.0%]; small shareholder(s) [23.6%]; Mitsui & Co Ltd [22.5%]; Gulf Development PCL [15.3%]; UBS Group AG [5.3%]; Gulf Capital Holdings Ltd [4.2%]; Singapore Telecommunications Ltd [4.1%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAzODBbIkd1bGYgQ2FwaXRhbDxicj5Ib2xkaW5ncyBMdGQiXSAtLTguMCUtLT4gMTAwMDAwMDAxMDMwCiAgICAxMDAwMDIwMjI5NjFbIlNpbmdhcG9yZTxicj5UZWxlY29tbXVuaWNhdGlvbnM8YnI+THRkIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDIxOTIzCiAgICAxMDAwMDIwMjE5MjNbIlNpbmd0ZWwgR2xvYmFsPGJyPkludmVzdG1lbnQgUHRlIEx0ZCJdIC0tNy43MyUtLT4gMTAwMDAwMDAxMDMwCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTI5LjE5JS0tPiAxMDAwMDAwMDEwMzAKICAgIDEwMDAwMDAwMTAwNVsiVUJTIEdyb3VwIEFHIl0gLS0+IDEwMDAwMjAwNTQ0MQogICAgMTAwMDAyMDA1NDQxWyJVQlMgU3dpdHplcmxhbmQgQUciXSAtLT4gMTAwMDAxMDAwMzI0CiAgICAxMDAwMDEwMDAzMjRbIlVCUyBTaW5nYXBvcmUgQnJhbmNoPGJyPkFHIl0gLS0xMC4xNCUtLT4gMTAwMDAwMDAxMDMwCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ0Ljk0JS0tPiAxMDAwMDAwMDEwMzAKICAgIDEwMDAwMDAwMTAzMFsiR3VsZiBEZXZlbG9wbWVudCBQQ0wiXSAtLTcwLjAlLS0+IDEwMDAwMDAwMzE1NAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi40MyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02Ny41JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi4xJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS05Ljk3JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDAwMDY1MVsiTWl0c3VpICYgQ28gTHRkIl0gLS0zMC4wJS0tPiAxMDAwMDAwMDMxNTQKICAgIDEwMDAwMDAwMzE1NFsiR3VsZiBNUCBDb21wYW55IEx0ZCJdIC0tNzUuMCUtLT4gUDEwMDAwMDQwNTM4MQogICAgMTAwMDAwMDAyMTMzWyJUaGFpIEluZHVzdHJpYWw8YnI+RXN0YXRlIENvcnAgTHRkIl0gLS0yNS4wJS0tPiBQMTAwMDAwNDA1MzgxCiAgICBQMTAwMDAwNDA1MzgxWyJHdWxmIEJMIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Thailand]]

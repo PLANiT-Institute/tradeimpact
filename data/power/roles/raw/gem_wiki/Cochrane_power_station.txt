@@ -1,0 +1,167 @@
+# GEM wiki page: Cochrane power station
+# URL: https://www.gem.wiki/Cochrane_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Cochrane power station''' (Termoeléctrica Cochrane) is an operating power station of at least 550-megawatts (MW) in Mejillones, Antofagasta, Chile.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Cochrane power station
+| Mejillones, Antofagasta, Chile
+| -23.0630274, -70.3661289 (exact)<ref name="autoref_0">{{cite web |url=https://maps.app.goo.gl/pwsmSpNsgCQp7Gn26}}</ref><ref name="autoref_1">{{cite web |url=https://openinframap.org/stats/area/Chile/plants/512706033 |title=Open Infrastructure Map |website=openinframap.org |access-date=2025-07-02 |archive-url=https://web.archive.org/web/20250707222621/https://openinframap.org/stats/area/Chile/plants/512706033 |archive-date=2025-07-07}}</ref>
+|}
+{{
+#display_map:
+-23.0630274, -70.3661289
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': -23.0630274, -70.3661289
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating<ref name="autoref_2">{{cite web |url=https://s27.q4cdn.com/957035463/files/doc_financials/2025/q3/AES-Andes-3Q-2025-Earnings-Report.pdf |title=3Q - 2025 Earnings Report |date=2025-11-20 |website=AES Andes |archive-url=https://web.archive.org/web/20260124003211/https://s27.q4cdn.com/957035463/files/doc_financials/2025/q3/AES-Andes-3Q-2025-Earnings-Report.pdf |archive-date=2026-01-24}}</ref>
+| coal: unknown<ref name="autoref_3">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref><ref name="autoref_4">{{cite web |url=https://s27.q4cdn.com/957035463/files/doc_presentations/2025/2Q-2025-Corporate-Presentation-AES-Andes.pdf |title=2Q 2025 Corporate Presentation |date=2025-08-31 |website=AES Andes |archive-url=https://web.archive.org/web/20260124003138/https://s27.q4cdn.com/957035463/files/doc_presentations/2025/2Q-2025-Corporate-Presentation-AES-Andes.pdf |archive-date=2026-01-24}}</ref>
+| 275<ref name="autoref_5">{{cite web |url=https://energia.gob.cl/sites/default/files/gas_natural_como_combustible_de_la_transicion.pdf}}</ref><ref name="autoref_6">{{cite web |url=https://web.archive.org/web/20230616022448/https://chilesustentable.net/wp-content/uploads/2019/07/Minuta-Anuncios-Descarbonizacion-04062019_CHS.pdf}}</ref>
+| subcritical
+| 2016<ref name="autoref_4" />
+| 2040 (planned)<ref name="autoref_7">{{cite web |url=https://energia.gob.cl/sites/default/files/documentos/20241108_plan_descarbonizacion.pdf}}</ref>
+| False
+|-
+| Unit 2
+| Operating<ref name="autoref_2" />
+| coal: unknown<ref name="autoref_3" /><ref name="autoref_4" />
+| 275<ref name="autoref_5" /><ref name="autoref_6" />
+| subcritical
+| 2016<ref name="autoref_4" />
+| 2040 (planned)<ref name="autoref_7" />
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Empresa Eléctrica Cochrane SpA [100%]<ref name="autoref_4" />
+| AES Corp [56.4%]; DL Holdings [28.0%]; Daelim Co Ltd [12.0%]; small shareholder(s) [0.6%]
+|-
+| Unit 2
+| Empresa Eléctrica Cochrane SpA [100%]<ref name="autoref_4" />
+| AES Corp [56.4%]; DL Holdings [28.0%]; Daelim Co Ltd [12.0%]; small shareholder(s) [0.6%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEyLjMzJS0tPiAxMDAwMDAwMDEzMDUKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTcuMDklLS0+IDEwMDAwMDAwMTMwNQogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04MC41OCUtLT4gMTAwMDAwMDAxMzA1CiAgICAxMDAwMDAwMDEzMDVbIkFFUyBDb3JwIl0gLS05OS4wJS0tPiAxMDAwMDAxMjAwMDkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMS4wJS0tPiAxMDAwMDAxMjAwMDkKICAgIDEwMDAwMDEyMDAwOVsiQUVTIEFuZGVzIFNBIl0gLS05NS4wJS0tPiAxMDAwMDEwMTA3MDkKICAgIDEwMDAwMTAxMDcwOVsiSW52ZXJzaW9uZXMgQ29jaHJhbmU8YnI+U3BBIl0gLS02MC4wJS0tPiAxMDAwMDAxMjA0MDEKICAgIDEwMDAwMDAwMTQ0MVsiRGFlbGltIENvIEx0ZCJdIC0tMzAuMCUtLT4gMTAwMDAwMDAyNzYyCiAgICAxMDAwMDAwMDA0ODVbIkRMIEhvbGRpbmdzIl0gLS03MC4wJS0tPiAxMDAwMDAwMDI3NjIKICAgIDEwMDAwMDAwMjc2MlsiREwgRW5lcmd5IENvIEx0ZCJdIC0tNDAuMCUtLT4gMTAwMDAwMTIwNDAxCiAgICAxMDAwMDAxMjA0MDFbIkVtcHJlc2EgRWzDqWN0cmljYTxicj5Db2NocmFuZSBTcEEiXSAtLTEwMC4wJS0tPiBQMTAwMDAwMTAwMTgzCiAgICBQMTAwMDAwMTAwMTgzWyJDb2NocmFuZSBwb3dlcjxicj5zdGF0aW9uIl0K}}
+
+==Background==
+
+The 550 MW project received environmental approval in September 2009.<ref name="SEIA">[http://seia.sea.gob.cl/expediente/ficha/fichaPrincipal.php?modo=ficha&id_expediente=3030994 "Ficha del Proyecto: EIA Central Termoeléctrica Cochrane,"], SEIA, September 2, 2009.</ref><ref name=":10">{{Cite web|url=https://www.aes.com/sites/default/files/2022-09/AES-Fact-Sheet_Q2-2022_0.pdf|title=Fact Sheet (p 13)|last=|first=|date=August 4, 2022|website=The AES Corporation|url-status=live|archive-url=|archive-date=|access-date=}}</ref> A consortium of Japanese and Korean financial institutions has guaranteed up to US$1 billion in funding.<ref name="Reuters">[https://www.reuters.com/article/chile-aes-gener-loan/chile-aes-gener-in-loan-deal-of-up-to-1-bln-for-power-project-idUSL2N0CK0LD20130328 "Chile AES Gener in loan deal of up to $1 bln for power project,"], Reuters, March 2013.</ref>
+
+Construction of the plant began in April 2013. According to AES Gener's website, the Cochrane plant was to be constructed adjacent to AES Gener's [[Angamos power station]] to take advantage of existing port and coal stockpiling facilities.<ref name="AESGener">[https://www.biobiochile.cl/noticias/2013/03/28/aes-gener-iniciara-construccion-de-planta-termoelectrica-cochrane-en-abril.shtml "AES Gener iniciará construccion de planta termoelectrica Cochrane,"], AES Gener, March 2013.</ref> 
+
+The power generated by Cochrane's two coal-fired units will supply copper mines in Chile, with commercial operations expected to start in 2016.<ref>[http://www.mitsubishicorp.com/jp/en/pr/archive/2012/html/0000017806.html "First Independent Power Project in Chile,"] Mitsubishi, Nov. 30, 2012.</ref> In October 2014, at a press conference covered by the trade publication ''Electricidad'', AES Gener's Vice President of Engineering Luis Knaak said that the first unit would be completed by May 2016 and the second by October 2016.<ref>[http://www.revistaei.cl/2014/10/07/termoelectrica-cochrane-presenta-un-avance-de-53/# "Termoeléctrica Cochrane presenta un avance de 53%,"] Electricidad, October 7, 2014.</ref> A report from Chile's Corporación de Bienes de Capital (CBC) stated that construction on the Cochrane plant was 48% complete as of 2015.<ref>[https://www.revistaenergia.com/5274/ "El 45% de los proyectos eléctricos para quinquenio 2015-2019 está postergado,"], La Tercera, July 20, 2015.</ref>
+
+The power station was fully commissioned in October 2016.<ref name=":2">[http://www.revistaei.cl/2016/10/13/aes-gener-puso-operacion-segunda-parte-central-cochrane/ "AES Gener puso en operación segunda parte de Central Cochrane,"] Revistaei, October 13, 2016</ref> The station comprised of two 275 MW units.<ref name=":3">{{Cite web|url=http://www.chilesustentable.net/wp-content/uploads/2019/07/Minuta-Anuncios-Descarbonizacion-04062019_CHS.pdf|title=Plan de Descarbonización y Retiro de Centrales Termoeléctricas a Carbón en Chile, Anuncio del gobierno de Sebastián Piñera|last=|first=|date=June 4, 2019|website=Chile Sustentable|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+
+In July 2020, Mitsubishi sold its 40% stake in the Cochrane power station to Daelim Energy, a subsidiary of the South Korea-based Daelim Group.<ref name=":6">{{Cite web|url=https://www.fitchratings.com/research/corporate-finance/fitch-affirms-cochrane-at-bbb-outlook-stable-22-07-2020|title=Fitch Affirms Cochrane at 'BBB-'; Outlook Stable|last=|first=|date=July 22, 2020|website=Fitch Ratings|url-status=live|archive-url=|archive-date=|access-date=}}</ref><ref name=":7">{{Cite web|url=https://www.revistaei.cl/2020/07/20/japonesa-mitsubishi-abandona-sociedad-con-aes-gener-y-deja-el-negocio-electrico-en-chile/|title=Japonesa Mitsubishi abandona sociedad con AES Gener y deja el negocio eléctrico en Chile|last=|first=|date=July 20, 2020|website=Electricidad|language=|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+
+In April 2021, AES Gener changed its name to AES Andes.<ref name=":9">{{Cite web|url=https://www.aeschile.com/es/la-energia-de-aes-gener-es-ahora-aes-andes|title=La energía de AES Gener es ahora AES Andes {{!}} AES Chile|last=|first=|date=May 4, 2021|website=AES Chile|url-status=live|archive-url=|archive-date=|access-date=}}</ref><ref name=":8">{{Cite web|url=https://www.powermag.com/aes-accelerates-1-gw-of-coal-plant-retirements-in-chile/|title=AES Accelerates 1 GW of Coal Plant Retirements in Chile|last=|first=|date=July 7, 2021|website=POWER Magazine|language=en-US|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+
+The ownership of the plant was distributed as such:
+*AES Andes S.A. (formerly AES Gener) 30%<ref name=":9">{{Cite web|url=https://www.aeschile.com/es/la-energia-de-aes-gener-es-ahora-aes-andes|title=La energía de AES Gener es ahora AES Andes {{!}} AES Chile|last=|first=|date=May 4, 2021|website=AES Chile|url-status=live|archive-url=|archive-date=|access-date=}}</ref> , 
+*Toesca Infraestructura II 30%<ref>{{Cite web|url=https://toesca.com/en/infrastructure/cochrane-thermoelectric-plant|title=Cochrane Thermoelectric Plant|last=|first=|date=|website=Toesca|url-status=live|archive-url=|archive-date=|access-date=2022-01-26}}</ref><ref>{{Cite web|url=https://www.oaklins.com/us/en/deals/106643/|title=AES Gener has sold a preferred stock minority stake in Empresa Eléctrica Cochrane to Toesca Infraestructura II|last=|first=|date=August 2020|website=Oaklins|language=en-US|url-status=live|archive-url=|archive-date=|access-date=}}</ref>, 
+*Daelim Group 40%.<ref name=":6">{{Cite web|url=https://www.fitchratings.com/research/corporate-finance/fitch-affirms-cochrane-at-bbb-outlook-stable-22-07-2020|title=Fitch Affirms Cochrane at 'BBB-'; Outlook Stable|last=|first=|date=July 22, 2020|website=Fitch Ratings|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+
+In September 2022, the Chilean Superintendency of Environment (SMA) initiated sanctioning proceedings against Cochrane on four charges, including a severe instance of noncompliance with the Environmental Qualification Resolution (RCA). In addition to other structural and reporting infractions, an unauthorized underwater outfall was found to be discharging hot water from the facility into the bay, risking ocean pollution and other impacts. Cochrane was given 10 business days to present a Compliance Program (PDC) and 15 days to restructure its releases, after which the sanctioning process would resume.<ref>{{Cite news|url=https://portal.sma.gob.cl/index.php/2022/09/05/antofagasta-sma-formula-cargos-a-termoelectrica-cochrane-por-incumplimientos-asociados-al-emisario-submarino-y-norma-de-riles/|title=Antofagasta: SMA formula cargos a termoeléctrica Cochrane por incumplimientos asociados al emisario submarino y norma de Riles|last=|first=|date=5 septiembre 2022|work=Superintendencia del Medio Ambiente, Gobierno de Chile|access-date=26 September 2022}}</ref>
+
+In March 2023, the SMA approved a Compliance Program submitted by Empresa Eléctrica Cochrane SpA in response to the charges. As of May 2026, the sanctioning proceedings remained open with the compliance program under execution; no sanctions had been imposed.<ref>{{Cite web|url=https://snifa.sma.gob.cl/Sancionatorio/Ficha/2981|title=Expediente F-042-2022: Termoeléctrica Cochrane|website=Sistema Nacional de Información de Fiscalización Ambiental (SNIFA), Superintendencia del Medio Ambiente|url-status=live|access-date=May 2026}}</ref>
+
+==Financing==
+
+In March 2013, a financing agreement for the plant was closed. US$1,055 million in loans were provided by MUFG Bank, HSBC, Mizuho Financial Group, Sumitomo Mitsui Banking Corporation, Korea Finance Corporation, Japan Bank for International Cooperation, and BancoEstado. US$295 million in equity was provided by AES Corporation and Mitsubishi Corporation. HSBC acted as the financial advisor.<ref name=":0">{{Cite web|url=https://ijglobal.com/data/transaction/19237/cochrane-coal-fired-power-plant-550mw|title=Preview of Cochrane Coal-fired Power Plant (550MW) {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-10-07}}</ref>
+
+In October 2019, a refinancing agreement for the plant was closed. US$915 million of refinancing consists of a USD430 million, 7.5-year project bond, and a USD485 million, 15-year bank loan. The proceeds were used to repay the plant's existing project finance debt of around USD864 million.<ref name=":1">{{Cite web|url=https://ijglobal.com/data/transaction/48609/cochrane-coal-fired-power-plant-550mw-refinancing|title=Preview of Cochrane Coal-Fired Power Plant (550MW) Refinancing {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-10-07}}</ref> Financial close was on 30 October 2019.<ref name=":1">{{Cite web|url=https://ijglobal.com/data/transaction/48609/cochrane-coal-fired-power-plant-550mw-refinancing|title=Preview of Cochrane Coal-Fired Power Plant (550MW) Refinancing {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-10-07}}</ref> Goldman Sachs, HSBC, SMBC Nikko Securities, and LarrainVial acted as Bond arrangers.<ref name=":1">{{Cite web|url=https://ijglobal.com/data/transaction/48609/cochrane-coal-fired-power-plant-550mw-refinancing|title=Preview of Cochrane Coal-Fired Power Plant (550MW) Refinancing {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-10-07}}</ref> It is not known who are the lenders of the bank loan.
+
+==Planned Phase-out==
+
+According to the Chilean Ministry of Energy's national decarbonization plan, announced by President Sebastián Piñera in June 2019, both units of Cochrane power station will cease operations no later than 2040. Plant owner AES Gener agrees to consult with the government every five years to update details of the plan, taking into account system stability requirements, energy costs, and environmental goals.<ref name=":3">{{Cite web|url=http://www.chilesustentable.net/wp-content/uploads/2019/07/Minuta-Anuncios-Descarbonizacion-04062019_CHS.pdf|title=Plan de Descarbonización y Retiro de Centrales Termoeléctricas a Carbón en Chile, Anuncio del gobierno de Sebastián Piñera|last=|first=|date=June 4, 2019|website=Chile Sustentable|url-status=live|archive-url=|archive-date=|access-date=}}</ref> 
+
+As of June 2022, a specific decommissioning date for the Cochrane plant was yet to be determined.<ref name=":8">{{Cite web|url=https://www.powermag.com/aes-accelerates-1-gw-of-coal-plant-retirements-in-chile/|title=AES Accelerates 1 GW of Coal Plant Retirements in Chile|last=|first=|date=July 7, 2021|website=POWER Magazine|language=en-US|url-status=live|archive-url=|archive-date=|access-date=}}</ref> AES Gener's recent corporate reports have listed a contract expiration date of 2030 to 2037 for its Cochrane units<ref name=":10">{{Cite web|url=https://www.aes.com/sites/default/files/2022-09/AES-Fact-Sheet_Q2-2022_0.pdf|title=Fact Sheet (p 13)|last=|first=|date=August 4, 2022|website=The AES Corporation|url-status=live|archive-url=|archive-date=|access-date=}}</ref><ref name=":4">{{Cite web|url=https://www.aes.com/sites/default/files/2021-02/AES-2019-Annual-Report.pdf|title=2019 Annual Report (page 23)|last=|first=|date=March 1, 2019|website=AES Gener|url-status=live|archive-url=|archive-date=|access-date=}}</ref>, while Chile's Ministry of Energy did not include the Cochrane power station in its list of plants to be disconnected in 2019-2024.<ref name=":5">{{Cite web|url=https://www.aesgener.cl/investors/wp-content/uploads/2020/12/Cochrane-3Q-2020-Earnings-Report.pdf|title=3Q-2020 Earnings Report (p 11)|last=|first=|date=December 2020|website=Empresa Eléctrica Cochrane SpA|url-status=live|archive-url=|archive-date=|access-date=}}</ref> In a July 2021 interview with the Chilean newspaper ''El Mercurio'', AES Corp CEO Andrés Gluski hinted at the possibility of advancing the shutdown timeline for AES Andes' remaining coal plants in Chile from 2040 to 2030, but did not commit to specific shutdown dates for either the Cochrane plant or AES's [[Nueva Tocopilla Power Station|Nueva Tocopilla power station]].<ref>{{Cite web|url=http://generadoras.cl/prensa/presidente-de-aes-corp-y-retiro-del-100-de-sus-carboneras-en-chile-me-parece-razonable-acelerar-estas-decisiones-para-el-2030|title=Presidente de AES Corp y retiro del 100% de sus carboneras en Chile: “Me parece razonable acelerar estas decisiones para el 2030”|last=|first=|date=July 11, 2021|website=Generadoras de Chile|language=|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+
+According to a decarbonization report by the Chilean Ministry of Energy, the Cochrane power station would be the last remaining coal-fired power station in the community of Mejillones after 2025.<ref>[https://energia.gob.cl/sites/default/files/seguridad_abastecimiento_-_11_enero.pdf Plan de Descarbonización], Ministerio de Energia, Government of Chile, January 11, 2024</ref> By late 2024, the power station owners had still not committed to a planned shut-off date prior to 2040.<ref>[https://energia.gob.cl/sites/default/files/documentos/20241108_plan_descarbonizacion.pdf Borrador para Consulta Pública: Plan de Descarbonización], Ministerio de Energia, November 2024</ref><ref>[https://laderasur.com/columnas/declaracion-coalicion-chao-carbon-alerta-sobre-la-falta-de-ambicion-metas-y-acciones-concretas-en-el-nuevo-plan-de-descarbonozacion/ Declaración | Coalición Chao Carbón alerta sobre la falta de ambición, metas y acciones concretas en el nuevo Plan de Descarbonización], Ladera Sur, December 2, 2024</ref> The company's presentation dated March 2025 stated no specific retirement date for Cochrane.<ref>{{Cite web|url=https://s27.q4cdn.com/957035463/files/doc_presentations/2024/4Q-2024-Corporate-Presentation-AES-Andes.pdf|title=AES Andes – 4Q 2024 Corporate Presentation|date=March 2025|website=https://www.aesandes.com/es|url-status=live}}</ref>
+
+Reports published by AES Andes in the second half of 2025 identified Cochrane as one of the company's two remaining coal plants in Chile (the other being the [[Angamos power station]]). An August 2025 corporate presentation noted the Cochrane plant's "critical role in ensuring grid stability and reliability,"<ref>{{Cite web|url=https://s27.q4cdn.com/957035463/files/doc_presentations/2025/2Q-2025-Corporate-Presentation-AES-Andes.pdf|title=2Q 2025 Corporate Presentation (p 8)|date=August 2025|website=AES Andes|url-status=live}}</ref> while the company's November 2025 earnings report confirmed that Cochrane generated 642 GWh in the third quarter of 2025, an increase of 133 GWh over the same period in 2024.<ref>{{Cite web|url=https://s27.q4cdn.com/957035463/files/doc_financials/2025/q3/AES-Andes-3Q-2025-Earnings-Report.pdf|title=3Q - 2025 Earnings Report (p 27)|date=2025-11-20|website=AES Andes|url-status=live}}</ref>
+
+According to AES Andes' fourth quarter 2025 corporate presentation, Cochrane and the [[Angamos power station]] remained the only coal-fired plants in the company's portfolio as of December 31, 2025, with both described as playing a critical role in ensuring grid stability and reliability. The presentation made no reference to a specific retirement date for either plant.<ref>{{Cite web|url=https://s27.q4cdn.com/957035463/files/doc_presentations/2025/q4/4Q-2025-Corporate-Presentation-AES-Andes-vf.pdf|title=AES Andes – 4Q 2025 Corporate Presentation|date=February 2026|website=AES Andes|url-status=live|access-date=}}</ref> A November 2024 report by IPS News Agency noted that Cochrane Units 1 and 2 were the only power stations in Mejillones without a defined closure date, and that the plant could remain in operation until 2040 under the existing decarbonization agreement.<ref>{{Cite web|url=https://ipsnoticias.net/2024/11/de-fosil-a-fosil-la-contradicciones-de-la-transicion-energetica-chilena-en-la-reconversion/|title=De fósil a fósil: las contradicciones de la transición energética chilena en la reconversión|date=November 2024|website=IPS Agencia de Noticias|url-status=live|access-date=}}</ref> According to AES's Q3 2025 fact sheet published in December 2025, the Cochrane plant's contract expiration date remained 2030-2037, with electricity supplied to SQM, Sierra Gorda, and Quebrada Blanca.<ref>{{Cite web|url=https://www.aes.com/sites/vault/files/2025-12/AES-Fact-Sheet-Q3-2025-Dec-15-2025.pdf|title=AES Fact Sheet Q3 2025|date=December 15, 2025|website=AES Corporation|url-status=live|access-date=May 2026}}</ref>
+
+==Opposition==
+
+{{#ev:youtube|wLXgpOQMbjY|400|right|Protest video: "Mr Aes Gener: Polluting Chile for more than 50 years with coal-fired power plants", [https://chaocarbon.cl/ Alianza Chao Carbón]}}
+
+{{#ev:youtube|EBkX6X6Bmw0|400|right|Webinar Launching the Report "AES Gener, Dirty Energy", [http://www.chilesustentable.net/ Chile Sustentable]}}
+
+Plant owner AES Andes (formerly AES Gener) has been the subject of heavy criticism in recent years from Chilean environmental groups. In 2021, the groups Chile Sustentable, Fundación Terram and Alianza Chao Carbón published reports documenting the company's negative impact on human rights, health, and the environment.<ref>{{Cite web|url=http://www.chilesustentable.net/wp-content/uploads/2021/12/Aes-Gener-Energia-Sucia.pdf|title=AES Gener: Energía Sucia: Afectación de Derechos Humanos e Incumplimiento de la Regulación Eléctrica y Ambiental|last=|first=|date=December 2021|website=Chile Sustentable / Alianza Chao Carbón|url-status=live|archive-url=|archive-date=|access-date=}}</ref><ref>{{Cite web|url=https://www.terram.cl/descargar/ambiente/contaminacion/Minuta-Varamientos-CarboCC81n-Ventanas-2020.pdf|title=Minuta Relativa al Registro de Varamientos de Carbón en Caleta Ventanas Ano 2020|last=|first=|date=February 2021|website=Fundación Terram|url-status=live|archive-url=|archive-date=|access-date=}}</ref> Alianza Chao Carbón has taken a lead role in criticizing AES Gener for not committing to a precise shutdown date for all of its Chilean coal operations, noting that it is among the few companies that have failed to do so.<ref>{{Cite web|url=https://www.elmostrador.cl/dia/2021/04/28/tras-anuncio-de-engie-de-salida-total-del-carbon-para-2025-ambientalistas-apuntan-a-aes-gener-y-colbun/|title=Tras anuncio de Engie de salida total del carbón para 2025, ambientalistas apuntan a Aes Gener y Colbún|last=|first=|date=April 28, 2021|website=El Mostrador|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Chile]]

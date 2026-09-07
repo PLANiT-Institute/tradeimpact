@@ -1,0 +1,75 @@
+# GEM wiki page: Metro Power wind farm
+# URL: https://www.gem.wiki/Metro_Power_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Metro Power wind farm''' is an operating wind farm in Jhimpir, Thatta District, Sindh, Pakistan.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Metro Power wind farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=http://www.dlenergy.co.kr/workingAssets/metro_Gul.do |archive-url=https://web.archive.org/web/20240125191821/http://www.dlenergy.co.kr/workingAssets/metro_Gul.do |archive-date=2024-01-25}}</ref>
+| 2016<ref name="autoref_0" />
+| 50 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_0" />
+| Metro Power Co Ltd; DL Energy Co Ltd (DL에너지(주))<ref name="autoref_1">{{cite web |url=http://www.dlenergy.co.kr/workingAssets/metro_Gul.do, http://www.dlenergy.co.kr/workingAssets/metro_Gul.do}}</ref>
+| Hydrochina CORP (PowerChina)<ref name="autoref_2">{{cite web |url=https://nepra.org.pk/licensing/Licences/Licence%20Application/2017/6%20applications/Generation%20License%20Application%20of%20Metro%20Wind%20Power.pdf |archive-url=https://web.archive.org/web/20240131040416/https://nepra.org.pk/licensing/Licences/Licence%20Application/2017/6%20applications/Generation%20License%20Application%20of%20Metro%20Wind%20Power.pdf |archive-date=2024-01-31}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Metro Power wind farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Jhimpir, Thatta District, Sindh, Pakistan<ref name="autoref_3">{{cite web |url=https://goo.gl/maps/Mt8iiKQdhCHaiNWE6 |archive-url=https://web.archive.org/web/20210729185045/https://www.google.com/gen_204?atyp=csi&ei=hPgCYfSxO4P7-gSojqvIBA&s=web&t=all&imn=3&ima=0&imad=0&aftp=-1&adh=&wif=1&conn=onchange&ime=3&imex=3&imeh=0&imea=0&imeb=0&wh=503&scp=0&net=dl.10000,ect.4g,rtt.150&mem=ujhs.65,tjhs.78,jhsl.4295,dm.8&sto=&sys=hc.30&rt=aft.207,aftqf.211,prt.207,iml.207,xjses.232,xjsee.289,xjs.289,dcl.319,ol.828,wsrt.80,cst.14,dnst.0,rqst.272,rspt.220,sslt.6,rqstt.28,unt.4,ppunt.1,cstt.6,dit.309&zx=1627584645843 |archive-date=29 July 2021}}</ref>
+| 25.1718, 67.9695 (exact)<ref name="autoref_3" />
+|}
+The map below shows the exact location of the wind farm:
+{{
+#display_map:
+25.1718, 67.9695~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Pakistan]]
+
+__NOTOC__

@@ -1,0 +1,108 @@
+# GEM wiki page: Fujairah F3 Integrated Water and power plant
+# URL: https://www.gem.wiki/Fujairah_F3_Integrated_Water_and_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Fujairah F3 Integrated Water and power plant''' (محطة كهرباء الفجيرة إف 3) is an operating power station of at least 2400-megawatts (MW) in Qidfa, Fujairah, United Arab Emirates.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Fujairah F3 Integrated Water and power plant
+| Qidfa, Fujairah, United Arab Emirates
+| 25.301931, 56.370353 (approximate)<ref name="autoref_0">{{cite web |url=https://www.nsenergybusiness.com/projects/fujairah-f3-power-project/ |archive-url=https://web.archive.org/web/20220519182005/https://www.nsenergybusiness.com/projects/fujairah-f3-power-project/ |archive-date=2022-05-19}}</ref>
+|}
+{{
+#display_map:
+25.301931, 56.370353
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=http://www.ewec.ae/en/fujairah.html |archive-url=https://web.archive.org/web/20200529170135/http://www.ewec.ae:80/en/fujairah.html |archive-date=2020-05-29}}</ref><ref name="autoref_2">{{cite web |url=https://www.ewec.ae/en/power-plants/under-construction |archive-url=https://web.archive.org/web/20230422002849/http://www.ewec.ae/en/power-plants/under-construction |archive-date=2023-04-22}}</ref><ref name="autoref_3">{{cite web |url=https://www.agbi.com/oil-and-gas/2025/10/uae-fires-up-fujairah-gas-power-plant/}}</ref>
+| fossil gas: natural gas<ref name="autoref_4">{{cite web |url=https://ijglobal.com/data/project/42189/fujairah-3-combined-cycle-power-plant-24gw |archive-url=https://web.archive.org/web/20210625033845/https://ijglobal.com/data/project/42189/fujairah-3-combined-cycle-power-plant-24gw |archive-date=2021-06-25}}</ref>
+| 2400<ref name="autoref_5">{{cite web |url=https://www.marubeni.com/en/news/2020/release/20200221E.pdf |archive-url=https://web.archive.org/web/20220529015238/https://www.marubeni.com/en/news/2020/release/20200221E.pdf |archive-date=2022-05-29}}</ref><ref name="autoref_6">{{cite web |url=http://www.ewec.ae/en/existing.html |archive-url=https://web.archive.org/web/20200628103459/http://www.ewec.ae:80/en/existing.html |archive-date=2020-06-28}}</ref>
+| combined cycle<ref name="autoref_0" />
+| yes<ref name="autoref_0" />
+| 2025<ref name="autoref_7">{{cite web |url=https://attaqa.net/2025/01/15/%d8%a3%d9%83%d8%a8%d8%b1-%d9%85%d8%ad%d8%b7%d8%a9-%d8%b7%d8%a7%d9%82%d8%a9-%d8%ad%d8%b1%d8%a7%d8%b1%d9%8a%d8%a9-%d9%81%d9%8a-%d8%a7%d9%84%d8%a5%d9%85%d8%a7%d8%b1%d8%a7%d8%aa-%d8%aa%d9%82%d8%aa%d8%b1/}}</ref><ref name="autoref_3" />
+| Mitsubishi Power: M701JAC, Mitsubishi Power: M701JAC, Mitsubishi Power: M701JAC<ref name="autoref_8">{{cite web |url=https://power.mhi.com/regions/mena/resources/MitsubishiPowerUAEBrochure.pdf |author=MITSUBISHI POWER UNITED ARAB EMIRATES |access-date=2024-04-09 |archive-url=https://web.archive.org/web/20240421055448/https://power.mhi.com/regions/mena/resources/MitsubishiPowerUAEBrochure.pdf |archive-date=2024-04-21}}</ref><ref name="autoref_9">{{cite web |url=https://power.mhi.com/news/20211216.html}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| 1
+| F3 Holding<ref name="autoref_8" />
+| F3 Holding Co [100%]<ref name="autoref_0" />
+| Abu Dhabi Developmental Holding Company PJSC [60.0%]; Marubeni Corp [40.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_0" />
+* '''Captive industry''': Chemicals<ref name="autoref_0" />
+* '''Non-industry use''': power<ref name="autoref_0" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAwOTVbIkVtaXJhdGUgb2YgQWJ1IERoYWJpPGJyPihVbml0ZWQgQXJhYjxicj5FbWlyYXRlcykiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTEwNDQKICAgIDEwMDAwMTAxMTA0NFsiQWJ1IERoYWJpPGJyPkRldmVsb3BtZW50YWw8YnI+SG9sZGluZyBDb21wYW55IFBKU0MiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDEwODAKICAgIDEwMDAwMDAwMTA4MFsiQWJ1IERoYWJpIFBvd2VyIENvcnAiXSAtLTYwLjAlLS0+IDEwMDAwMDAwMzAxMgogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjQxJS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuMjMlLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNDYlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi40NyUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi41NiUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTY2Ljc1JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMTAxNjEyN1siQk5ZTSBBUyBBR1QvIENMVFMgMTA8YnI+UGVyY2VudCJdIC0tMTAuMTQlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi41NSUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDAwMDA2NDlbIk1hcnViZW5pIENvcnAiXSAtLTQwLjAlLS0+IDEwMDAwMDAwMzAxMgogICAgMTAwMDAwMDAzMDEyWyJGMyBIb2xkaW5nIENvIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDQwNTU3OAogICAgUDEwMDAwMDQwNTU3OFsiRnVqYWlyYWggRjM8YnI+SW50ZWdyYXRlZCBXYXRlciBhbmQ8YnI+cG93ZXIgcGxhbnQiXQo=}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United Arab Emirates]]

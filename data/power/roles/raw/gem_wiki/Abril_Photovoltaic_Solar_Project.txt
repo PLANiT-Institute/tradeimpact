@@ -1,0 +1,78 @@
+# GEM wiki page: Abril Photovoltaic Solar Project
+# URL: https://www.gem.wiki/Abril_Photovoltaic_Solar_Project
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Abril Photovoltaic Solar Project''' (Proyecto Parque Fotovoltaico Abril) is an operating solar photovoltaic (PV) farm in Caborca, Sonora, Mexico.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Abril Photovoltaic Solar Project ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://asolmex.org/centrales-solares/ |archive-url=https://web.archive.org/web/20240201171619/https://asolmex.org/centrales-solares/ |archive-date=2024-02-01}}</ref>
+| 2022<ref name="autoref_1">{{cite web |url=https://energia.conacyt.mx/planeas/electricidad/capacidad-generacion |title=Capacidad y generación |website=PLANEAS |archive-url=https://web.archive.org/web/20240125094118/https://energia.conacyt.mx/planeas/electricidad/generacion |archive-date=2024-01-25}}</ref>
+| 134.6 MWac<ref name="autoref_2">{{cite web |url=https://solarabril.com/proyecto |archive-url=https://web.archive.org/web/20240201171518/https://solarabril.com/proyecto |archive-date=2024-02-01}}</ref>
+| PV<ref name="autoref_2" />
+| ENGIE SA; Tokyo Gas Co Ltd (東京瓦斯株式会社)<ref name="autoref_3">{{cite web |url=https://solarabril.com/, https://solarabril.com/}}</ref>
+| Helios Generacion<ref name="autoref_4">{{cite web |url=https://www.renewablesnow.com/news/tokyo-gas-lands-in-mexico-with-50-stake-in-renewables-jv-with-engie-680583/ |archive-url=https://web.archive.org/web/20240207165830/https://renewablesnow.com/news/tokyo-gas-lands-in-mexico-with-50-stake-in-renewables-jv-with-engie-680583/ |archive-date=2024-02-07}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Abril Photovoltaic Solar Project ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Caborca, Sonora, Mexico<ref name="autoref_5">{{cite web |url=https://wiki-solar.org/ |title=Wiki-Solar Database |date=2023-04 |access-date=2024-02-28 |archive-url=https://web.archive.org/web/20240402052142/https://wiki-solar.org/ |archive-date=2024-04-02}}</ref>
+| 30.8280, -112.6720 (exact)<ref name="autoref_5" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+30.828, -112.672~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Mexico]]
+[[Category:PV solar farms]]
+
+__NOTOC__

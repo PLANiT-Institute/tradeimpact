@@ -1,0 +1,73 @@
+# GEM wiki page: Lower Palas Valley hydroelectric plant
+# URL: https://www.gem.wiki/Lower_Palas_Valley_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Lower Palas Valley hydroelectric plant''' (Chor Nullah hydroelectric plant) is a hydroelectric power plant in pre-construction in Pattan Town, Pattan Tehsil, Lower Kohistan District, Khyber Pakhtunkhwa, Pakistan.
+
+==Project Details==
+==== '''Table 1:''' Project details for Lower Palas Valley hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Technology type
+!Owner
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://dailytimes.com.pk/883376/wapda-starts-five-dams-construction-after-years-halt/ |archive-url=https://web.archive.org/web/20240109003152/https://dailytimes.com.pk/883376/wapda-starts-five-dams-construction-after-years-halt/ |archive-date=2024-01-09}}</ref><ref name="autoref_1">{{cite web |url=http://www.wapda.gov.pk/index.php/projects/hydro-power/future/lower-palas-valley |archive-url=https://web.archive.org/web/20221019155719/http://www.wapda.gov.pk/index.php/projects/hydro-power/future/lower-palas-valley |archive-date=2022-10-19}}</ref>
+| 665 MW<ref name="autoref_1" />
+| Run-of-river<ref name="autoref_2">{{cite web |url=https://www.power-technology.com/marketdata/lower-palas-valley-pakistan/ |archive-url=https://web.archive.org/web/20220809201619/https://www.power-technology.com/marketdata/lower-palas-valley-pakistan/ |archive-date=2022-08-09}}</ref>
+| Korea Water Resources CORP (KOWACO); Daewoo Engineering & Construction Co Ltd; Pakistan Water and Power Development Authority; Pakhtunkhwa Energy Development Organization (한국수자원공사; (주)대우건설)<ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_2" />
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Lower Palas Valley hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Pattan Town, Pattan Tehsil, Lower Kohistan District, Khyber Pakhtunkhwa, Pakistan<ref name="autoref_1" />
+| Indus River<ref name="autoref_1" />
+| 33.7128, 71.2679 (approximate)<ref name="autoref_1" />
+|}
+The map below shows the approximate location of the hydroelectric power plant:
+{{
+#display_map:
+33.7128, 71.2679~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Pakistan]]
+
+__NOTOC__

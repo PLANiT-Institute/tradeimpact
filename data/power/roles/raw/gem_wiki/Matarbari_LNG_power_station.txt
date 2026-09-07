@@ -1,0 +1,111 @@
+# GEM wiki page: Matarbari LNG power station
+# URL: https://www.gem.wiki/Matarbari_LNG_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Matarbari LNG power station''' is a cancelled power station in Maheshkhali Upazila - Cox's Bazar District, Chittagong, Bangladesh.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Matarbari LNG power station
+| Maheshkhali Upazila - Cox's Bazar District, Chittagong, Bangladesh
+| 21.728078, 91.889577 (approximate)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/Moheskhali+Upazila,+Bangladesh/@21.6604857,91.9840093,12z/data=!4m5!3m4!1s0x30adb182fc5117dd:0xd2e600dab999a00!8m2!3d21.5373654!4d91.9417617}}</ref>
+|}
+{{
+#display_map:
+21.728078, 91.889577
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Emergency/Backup
+|-
+| 1
+| Cancelled<ref name="autoref_1">{{cite web |url=https://archive.dhakatribune.com/bangladesh/power-energy/2017/11/09/mitsui-build-lng-power-plant-matarbari}}</ref><ref name="autoref_2">{{cite web |url=https://bwged.blogspot.com/2022/11/lng-power-plants-of-bangladesh.html |archive-url=https://web.archive.org/web/20221122235506/https://bwged.blogspot.com/2022/11/lng-power-plants-of-bangladesh.html |archive-date=2022-11-22}}</ref><ref name="autoref_3">{{cite web |url=http://www.cpgcbl.gov.bd/site/page/4b81edcd-a942-45eb-a092-bb0d8020c0fd/- |archive-url=https://web.archive.org/web/20230801092616/http://www.cpgcbl.gov.bd/site/page/4b81edcd-a942-45eb-a092-bb0d8020c0fd/- |archive-date=2023-08-01}}</ref><ref name="autoref_4">{{cite web |url=https://bpdb.portal.gov.bd/sites/default/files/files/bpdb.portal.gov.bd/page/771c9a89_a06c_4c2f_9b8c_699d17ed769a/2023-12-20-09-13-bc35a2ac1abda167c7c48437e4dc1061.pdf |archive-url=https://web.archive.org/web/20240528181819/https://bpdb.portal.gov.bd/sites/default/files/files/bpdb.portal.gov.bd/page/771c9a89_a06c_4c2f_9b8c_699d17ed769a/2023-12-20-09-13-bc35a2ac1abda167c7c48437e4dc1061.pdf |archive-date=2024-05-28}}</ref><ref name="autoref_5">{{cite web |url=https://sharebiz.net/%E0%A6%A6%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A6%AE%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%86%E0%A6%87%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%A3%E0%A7%87-%E0%A6%AC/}}</ref><ref name="autoref_6">{{cite web |url=https://www.powermag.com/bangladesh-announces-lng-power-plants-as-part-of-generation-expansion/ |archive-url=https://web.archive.org/web/20220814040911/https://www.powermag.com/bangladesh-announces-lng-power-plants-as-part-of-generation-expansion/ |archive-date=2022-08-14}}</ref>
+| fossil gas: LNG<ref name="autoref_6" />
+| 600<ref name="autoref_6" />
+| combined cycle<ref name="autoref_6" />
+| not found
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| CPGCBL & Mitsui JV JV [100%]<ref name="autoref_6" />
+| Coal Power Generation Company Bangladesh Ltd [50.0%]; Mitsui & Co Ltd [50.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQzJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjcuNSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTYuMSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tOS45NyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDAwMDA2NTFbIk1pdHN1aSAmIENvIEx0ZCJdIC0tNTAuMCUtLT4gMTAwMDAwMDAyNjAzCiAgICAxMDAwMDEwMDAxMDBbIkdvdmVybm1lbnQgb2Y8YnI+QmFuZ2xhZGVzaCJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMDA0MAogICAgMTAwMDAwMDAwMDQwWyJDb2FsIFBvd2VyPGJyPkdlbmVyYXRpb24gQ29tcGFueTxicj5CYW5nbGFkZXNoIEx0ZCJdIC0tNTAuMCUtLT4gMTAwMDAwMDAyNjAzCiAgICAxMDAwMDAwMDI2MDNbIkNQR0NCTCAmIE1pdHN1aSBKVjxicj5KViJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDYzNjAKICAgIFAxMDAwMDA0MDYzNjBbIk1hdGFyYmFyaSBMTkcgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Background==
+
+Japanese MITSUI and Company Limited and the Coal Power Generation Company Bangladesh Limited (CPGCBL) will jointly build a regasified liquefied natural gas power plant.<ref>Aminur Rahman Rasel [https://www.dhakatribune.com/bangladesh/power-energy/2017/07/18/govt-plans-build-600mw-power-plant-matarbari Govt plans to build 600MW LNG-based power plant at Matarbari], ''Dhaka Tribune'', Jul 18, 2017</ref>
+
+'''In April 2019''', CPGCBL put out a request for financial advisory services for the project.<ref>[https://cpgcbl.portal.gov.bd/sites/default/files/files/cpgcbl.portal.gov.bd/page/9c33abb5_e666_4a96_95b9_1e1a80f6720b/Final-FAS-EOI-Notice-r4.pdf REQUEST FOR EXPRESSION OF INTEREST (EoI) FOR SELECTION OF CONSULTANT FOR FINANCIAL ADVISORY SERVICES (FAS).], CPGCBL website, Apr 4, 2019</ref>
+
+By the end of '''2019''', CPGCBL had purchased the land for the power plant.<ref name=name/>
+
+One of the deals involves the local Summit Group, Japan's Mitsubishi Corporation and the US's General Electric Company, Bangladesh Power Development Board (BPDB) and GE Switzerland. At an event in Bidyut Bhaban, BPDB and GE Switzerland decided to form a joint venture company to implement the project. The joint venture will conduct a feasibility study, develop 5,600 acres of land, construct and operate the power plant, and construct an LNG import terminal and infrastructure.<ref name=":0">{{Cite news|url=https://www.thedailystar.net/business/74b-deals-inked-produce-6000mw-1603933|title=$7.4b deals inked to produce 6,000MW|date=2018-07-12|work=The Daily Star|access-date=2022-08-17|language=en}}</ref> 
+
+The estimated project cost includes US $1.6 billion for land development and US $2.8 billion for the power plant. The expected completion time is 36 months.<ref name=":0">{{Cite news|url=https://www.thedailystar.net/business/74b-deals-inked-produce-6000mw-1603933|title=$7.4b deals inked to produce 6,000MW|date=2018-07-12|work=The Daily Star|access-date=2022-08-17|language=en}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Bangladesh]]

@@ -1,0 +1,100 @@
+# GEM wiki page: CPV St. Charles energy center
+# URL: https://www.gem.wiki/CPV_St._Charles_energy_center
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''CPV St. Charles energy center''' is an operating power station of at least 775-megawatts (MW) in Waldorf, Charles, Maryland, United States.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| CPV St. Charles energy center
+| Waldorf, Charles, Maryland, United States
+| 38.5686, -76.8919 (exact)<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (November 2019) |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20200612191408/https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |archive-date=2020-06-12 |url-status=live}}</ref>
+|}
+{{
+#display_map:
+38.5686, -76.8919
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''G601''': 38.5686, -76.8919
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| G601
+| Operating<ref name="autoref_0" /><ref name="autoref_1">{{cite web |url=https://www.cpv.com/our-projects/cpv-st-charles/about/ |archive-url=https://web.archive.org/web/20221109004615/https://www.cpv.com/our-projects/cpv-st-charles/about/ |archive-date=2022-11-09}}</ref>
+| fossil gas: natural gas<ref name="autoref_0" />
+| 775<ref name="autoref_2">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (July 2021) |access-date=October 13, 2021 |archive-url=https://web.archive.org/web/20211122185052/https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |archive-date=2021-11-22 |url-status=live}}</ref>
+| combined cycle<ref name="autoref_0" />
+| no<ref name="autoref_0" />
+| 2017<ref name="autoref_0" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| G601
+| CPV Maryland LLC [100%]<ref name="autoref_3">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2018.xlsx |title=U.S. Energy Information Administration, Form EIA-860 detailed data with previous form data (EIA-860A/860B), 2018 |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20191116210428/https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2018.xlsx |archive-date=2019-11-16 |url-status=live}}</ref>
+| CPV Power Holdings LP [25.0%]; Marubeni Corp [25.0%]; Osaka Gas Co Ltd [25.0%]; Toyota Tsusho Corp [25.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDAwMTFbIkNQViBQb3dlciBIb2xkaW5nczxicj5MUCJdIC0tMjUuMCUtLT4gMTAwMDAwMDAyNjA1CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjY4JS0tPiAxMDAwMDAwMDA2NTQKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi4zOSUtLT4gMTAwMDAwMDAwNjU0CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc2LjkzJS0tPiAxMDAwMDAwMDA2NTQKICAgIDEwMDAwMDAwMDY1NFsiT3Nha2EgR2FzIENvIEx0ZCJdIC0tMjUuMCUtLT4gMTAwMDAwMDAyNjA1CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTYuNTYlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjYuNzUlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS0xMC4xNCUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjU1JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMDAwMDY0OVsiTWFydWJlbmkgQ29ycCJdIC0tMjUuMCUtLT4gMTAwMDAwMDAyNjA1CiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00Ny41NiUtLT4gMTAwMDAwMDAwNjYyCiAgICAxMDAwMDEwMTU1ODdfMTJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0+IDEwMDAwMTAxNjIwOAogICAgMTAwMDAxMDE2MjA4WyJUb3lvdGEgTW90b3IgQ29ycCJdIC0tMjEuNjklLS0+IDEwMDAwMDAwMDY2MgogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xMy45NSUtLT4gMTAwMDAwMDAwNjYyCiAgICAxMDAwMDEwMTYyMDlbIlRveW90YSBJbmR1c3RyaWVzPGJyPkNvcnAiXSAtLTExLjE4JS0tPiAxMDAwMDAwMDA2NjIKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS42MiUtLT4gMTAwMDAwMDAwNjYyCiAgICAxMDAwMDAwMDA2NjJbIlRveW90YSBUc3VzaG8gQ29ycCJdIC0tMjUuMCUtLT4gMTAwMDAwMDAyNjA1CiAgICAxMDAwMDAwMDI2MDVbIkNQViBNYXJ5bGFuZCBMTEMiXSAtLTEwMC4wJS0tPiBQMTAwMDAwNDAxODM3CiAgICBQMTAwMDAwNDAxODM3WyJDUFYgU3QuIENoYXJsZXM8YnI+ZW5lcmd5IGNlbnRlciJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United States]]

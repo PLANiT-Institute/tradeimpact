@@ -1,0 +1,77 @@
+# GEM wiki page: Al Sadawi solar farm
+# URL: https://www.gem.wiki/Al_Sadawi_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Al Sadawi solar farm''' (محطة الصداوي للطاقة الشمسية) is a solar photovoltaic (PV) farm in pre-construction in Saudi Arabia.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Al Sadawi solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://www.argaam.com/ar/article/articledetail/id/1762489, https://www.power-technology.com/news/saudi-arabia-announces-bidders-3-7gw-solar/, https://www.pv-magazine.com/2024/02/13/saudi-arabia-reveals-bidders-for-3-7-gw-solar-tender/?utm_source=Global+%7C+Newsletter&utm_campaign=c8ef5f68f3-dailynl_gl&utm_medium=email&utm_term=0_6916ce32b6-c8ef5f68f3-160200263}}</ref>
+| 2027 (planned)<ref name="autoref_1">{{cite web |url=https://solarstoragextra.com/masdar-secures-finance-for-2gw-saudi-solar-project/}}</ref>
+| 2000 MWac<ref name="autoref_2">{{cite web |url=https://www.pv-magazine.com/2024/02/13/saudi-arabia-reveals-bidders-for-3-7-gw-solar-tender/?utm_source=Global+%7C+Newsletter&utm_campaign=c8ef5f68f3-dailynl_gl&utm_medium=email&utm_term=0_6916ce32b6-c8ef5f68f3-160200263}}</ref>
+| PV<ref name="autoref_2" />
+| GD POWER Development Co Ltd; Korea Electric Power Corp; Abu Dhabi Future Energy Co (한국전력공사; 国电电力发展股份有限公司; شركة ابوظبي لطاقة المستقبل - ش م خ - مصدر)<ref name="autoref_3">{{cite web |url=https://masdar.ae/en/news/newsroom/masdar-and-consortium-partners-achieve-financial-close, https://masdar.ae/en/news/newsroom/masdar-and-consortium-partners-achieve-financial-close, https://masdar.ae/en/news/newsroom/masdar-and-consortium-partners-achieve-financial-close}}</ref>
+| Korea Electric Power; GD POWER Development; Abu Dhabi Future Energy (한국전력공사; 国电电力发展股份有限公司; شركة ابوظبي لطاقة المستقبل - ش م خ - مصدر)<ref name="autoref_4">{{cite web |url=https://www.alarabiya.net/aswaq/companies/2025/08/19/%D9%85%D8%B5%D8%AF%D8%B1-%D8%AA%D8%B3%D8%AA%D9%83%D9%85%D9%84-%D8%A7%D9%84%D8%A7%D8%BA%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%88%D9%8A-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9, https://www.alarabiya.net/aswaq/companies/2025/08/19/%D9%85%D8%B5%D8%AF%D8%B1-%D8%AA%D8%B3%D8%AA%D9%83%D9%85%D9%84-%D8%A7%D9%84%D8%A7%D8%BA%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%88%D9%8A-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9, https://www.alarabiya.net/aswaq/companies/2025/08/19/%D9%85%D8%B5%D8%AF%D8%B1-%D8%AA%D8%B3%D8%AA%D9%83%D9%85%D9%84-%D8%A7%D9%84%D8%A7%D8%BA%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%88%D9%8A-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Al Sadawi solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Saudi Arabia<ref name="autoref_5">{{cite web |url=https://maps.app.goo.gl/bFmaf8DRBeFnkfMv5, https://www.pv-magazine.com/2024/02/13/saudi-arabia-reveals-bidders-for-3-7-gw-solar-tender/?utm_source=Global+%7C+Newsletter&utm_campaign=c8ef5f68f3-dailynl_gl&utm_medium=email&utm_term=0_6916ce32b6-c8ef5f68f3-160200263}}</ref>
+| 24.6570, 46.7412 (approximate)<ref name="autoref_5" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+24.65701, 46.7412~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Saudi Arabia]]
+[[Category:PV solar farms]]
+
+__NOTOC__

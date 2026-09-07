@@ -1,0 +1,228 @@
+# GEM wiki page: O Mon Power Complex
+# URL: https://www.gem.wiki/O_Mon_Power_Complex
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''O Mon Power Complex''' (Nhà Máy Nhiệt Điện Ô Môn) is an operating power station of at least 660-megawatts (MW) in O Mon, Cần Thơ, Vietnam with multiple units, some of which are not currently operating.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| O Mon Power Complex
+| O Mon, Cần Thơ, Vietnam
+| 10.134916, 105.669325 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/O+Mon+Thermal+Power+Plant/@10.1317416,105.6683329,17z/data=!3m1!4b1!4m5!3m4!1s0x31a084118f68e2a5:0xc32ee646b3b41c17!8m2!3d10.1317416!4d105.6705269}}</ref>
+|}
+{{
+#display_map:
+10.134916, 105.669325
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1-1, 1-2, 2, 3, 4''': 10.134916, 105.669325
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1-1, timepoint 1
+| Operating<ref name="autoref_1">{{cite web |url=http://nhietdiencantho.vn/ |archive-url=https://web.archive.org/web/20221202051913/https://nhietdiencantho.vn/ |archive-date=2022-12-02}}</ref><ref name="autoref_2">{{cite web |url=http://nhietdiencantho.vn/vi/about/van-hanh.html |archive-url=https://web.archive.org/web/20221202065228/http://nhietdiencantho.vn/vi/about/van-hanh.html |archive-date=2022-12-02}}</ref>
+| fossil liquids: fuel oil<ref name="autoref_3">{{cite web |url=http://nangluongvietnam.vn/news/en/electricity/japanese-partner-wants-to-supply-lng-gas-for-o-mon-1-thermal-power-plant.html |archive-url=https://web.archive.org/web/20210311012358/http://nangluongvietnam.vn/news/en/electricity/japanese-partner-wants-to-supply-lng-gas-for-o-mon-1-thermal-power-plant.html |archive-date=2021-03-11}}</ref><ref name="autoref_4">{{cite web |url=https://moit.gov.vn/upload/2005517/20210707/du-thao-dien-viii35c6.rar |title=Vietnamese Ministry of Ministry of Industry and Trade,Draft National Power Development Plan for the period of 2021-2030, with a vision to 2045 |access-date=February 1, 2021 |archive-url=https://web.archive.org/web/20220119144528/https://moit.gov.vn/upload/2005517/20210707/du-thao-dien-viii35c6.rar |archive-date=2022-01-19 |url-status=live}}</ref>
+| 330<ref name="autoref_1" />
+| steam turbine<ref name="autoref_5">{{cite web |url=https://www.norwep.com/content/download/40625/297656/version/3/file/2.EVN-LNG+Norway+Embassy_D.pdf |archive-url=https://web.archive.org/web/20210707115332/https://www.norwep.com/content/download/40625/297656/version/3/file/2.EVN-LNG+Norway+Embassy_D.pdf |archive-date=2021-07-07}}</ref>
+| not found
+| 2009<ref name="autoref_6">{{cite web |url=http://nhietdiencantho.vn/vi/about/lich-su-hinh-thanh-va-phat-trien.html |archive-url=https://web.archive.org/web/20221202070941/http://nhietdiencantho.vn/vi/about/lich-su-hinh-thanh-va-phat-trien.html |archive-date=2022-12-02}}</ref>
+| –<ref name="autoref_7">{{cite web |url=https://www.reuters.com/business/energy/mitsubishi-power-supply-equipment-vietnam-fuel-conversion-project-2025-11-05/}}</ref>
+| no
+|-
+| 1-1, timepoint 2
+| Announced<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil gas: natural gas<ref name="autoref_3" /><ref name="autoref_4" />
+| 330<ref name="autoref_1" />
+| steam turbine<ref name="autoref_5" />
+| not found
+| –
+| –<ref name="autoref_7" />
+| no
+|-
+| 1-2, timepoint 1
+| Operating<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil liquids: fuel oil<ref name="autoref_3" /><ref name="autoref_8">{{cite web |url=https://www.jica.go.jp/english/news/press/2012/c8h0vm00004g0h1t-att/130325_01_07.pdf |archive-url=https://web.archive.org/web/20210310225836/https://www.jica.go.jp/english/news/press/2012/c8h0vm00004g0h1t-att/130325_01_07.pdf |archive-date=2021-03-10}}</ref><ref name="autoref_4" />
+| 330<ref name="autoref_1" />
+| steam turbine<ref name="autoref_5" />
+| not found
+| 2015<ref name="autoref_6" />
+| –
+| no
+|-
+| 1-2, timepoint 2
+| Announced<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil gas: natural gas<ref name="autoref_3" /><ref name="autoref_8" /><ref name="autoref_4" />
+| 330<ref name="autoref_1" />
+| steam turbine<ref name="autoref_5" />
+| not found
+| –
+| –
+| no
+|-
+| 2
+| Pre-construction<ref name="autoref_9">{{cite web |url=http://nangluongvietnam.vn/news/en/electricity/assigning-the-investor-for-o-mon-ii-thermal-power-project.html |archive-url=https://web.archive.org/web/20210310045221/http://nangluongvietnam.vn/news/en/electricity/assigning-the-investor-for-o-mon-ii-thermal-power-project.html |archive-date=2021-03-10}}</ref><ref name="autoref_10">{{cite web |url=https://theinvestor.vn/o-mon-3-gas-fired-power-project-delayed-over-oda-procedure-entanglement-d4051.html |archive-url=https://web.archive.org/web/20230315113349/https://theinvestor.vn/o-mon-3-gas-fired-power-project-delayed-over-oda-procedure-entanglement-d4051.html |archive-date=2023-03-15}}</ref><ref name="autoref_11">{{cite web |url=https://theinvestor.vn/vietnam-aims-to-fuel-3-power-plants-with-block-b-gas-pm-d10037.html}}</ref><ref name="autoref_12">{{cite web |url=https://drive.google.com/open?id=11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw&usp=drive_fs |title=Vietnam Power Development Plan VIII, December 2022 |access-date=2022-12-01 00:00:00 |archive-url=https://web.archive.org/web/20230919154845/https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw%26usp%3Ddrive_fs&followup=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw%26usp%3Ddrive_fs&ifkv=AYZoVhcr7TPfSGs0F6xAt6YYGrwIYWEqSCLp9rL0HmP6t09y-JdKO9uqRI3yOlfY6kKg_sfboBx5&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1929632269%3A1695138525231013&theme=glif |archive-date=2023-09-19 |url-status=live}}</ref><ref name="autoref_13">{{cite web |url=http://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf |archive-url=https://web.archive.org/web/20220929124148/https://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf |archive-date=2022-09-29}}</ref><ref name="autoref_14">{{cite web |url=https://www.lexology.com/library/detail.aspx?g=a7f5719d-93ef-4415-9e28-961b311daf35 |archive-url=https://web.archive.org/web/20221204065013/https://www.lexology.com/library/detail.aspx?g=a7f5719d-93ef-4415-9e28-961b311daf35 |archive-date=2022-12-04}}</ref><ref name="autoref_15">{{cite web |url=https://drive.google.com/file/d/1JZFdET1TWcWImuaGmcTfqLMqRboSEENR/view |title=Vietnam Power Development Plan VIII, July 2022 |access-date=2022-07-01 00:00:00 |archive-url=https://web.archive.org/web/20230127142848/https://drive.google.com/file/d/1JZFdET1TWcWImuaGmcTfqLMqRboSEENR/view |archive-date=2023-01-27 |url-status=live}}</ref><ref name="autoref_16">{{cite web |url=https://www.frasersvn.com/api/uploads/Legal_Update_The_Revised_PDP_8_EN_April_2025_5cec48fd6d.pdf |archive-url=https://web.archive.org/web/20250529205325/https://www.frasersvn.com/api/uploads/Legal_Update_The_Revised_PDP_8_EN_April_2025_5cec48fd6d.pdf |archive-date=2025-05-29}}</ref><ref name="autoref_17">{{cite web |url=https://baocantho.com.vn/tap-doan-marubeni-kien-nghi-giai-quyet-kho-khan-cho-du-an-nha-may-nhiet-dien-o-mon-ii-a189652.html}}</ref><ref name="autoref_18">{{cite web |url=https://thuvienphapluat.vn/van-ban/Thuong-mai/Quyet-dinh-500-QD-TTg-2023-Quy-hoach-phat-trien-dien-luc-quoc-gia-2021-2030-tam-nhin-2050-566461.aspx |archive-url=https://web.archive.org/web/20230731150906/https://thuvienphapluat.vn/van-ban/Thuong-mai/Quyet-dinh-500-QD-TTg-2023-Quy-hoach-phat-trien-dien-luc-quoc-gia-2021-2030-tam-nhin-2050-566461.aspx |archive-date=2023-07-31}}</ref><ref name="autoref_19">{{cite web |url=https://vir.com.vn/lackadaisical-lng-progress-hinders-plans-111685.html |title=Lackadaisical LNG progress hinders plans |date=2024-06-06 |website=Vietnam Investment Review - VIR |access-date=2024-06-06 |archive-url=https://web.archive.org/web/20240607184203/https://vir.com.vn/lackadaisical-lng-progress-hinders-plans-111685.html |archive-date=2024-06-07}}</ref>
+| fossil gas: natural gas<ref name="autoref_20">{{cite web |url=https://www.dmsprojects.net/vietnam/projects/electricity-of-vietnam-evn-o-mon-3-4-thermal-power-plant/PRJ00026623 |archive-url=https://web.archive.org/web/20210310055255/https://www.dmsprojects.net/vietnam/projects/electricity-of-vietnam-evn-o-mon-3-4-thermal-power-plant/PRJ00026623 |archive-date=2021-03-10}}</ref>
+| 1050<ref name="autoref_21">{{cite web |url=https://vietnamnet.vn/vn/kinh-doanh/dau-tu/lo-gia-dien-tang-khi-dau-tu-nhiet-dien-o-mon-iii-va-o-mon-iv-456123.html |archive-url=https://web.archive.org/web/20210311015642/https://vietnamnet.vn/vn/kinh-doanh/dau-tu/lo-gia-dien-tang-khi-dau-tu-nhiet-dien-o-mon-iii-va-o-mon-iv-456123.html |archive-date=2021-03-11}}</ref><ref name="autoref_18" />
+| combined cycle<ref name="autoref_22">{{cite web |url=https://www.marketresearch.com/Timetric-v3917/EVN-Mon-Power-Complex-MW-11164642/ |archive-url=https://web.archive.org/web/20210310164117/https://www.marketresearch.com/Timetric-v3917/EVN-Mon-Power-Complex-MW-11164642/ |archive-date=2021-03-10}}</ref>
+| not found
+| 2028 (planned)<ref name="autoref_11" /><ref name="autoref_15" /><ref name="autoref_13" /><ref name="autoref_14" /><ref name="autoref_17" /><ref name="autoref_23">{{cite web |url=http://nangluongvietnam.vn/news/en/electricity/block-b-gas-power-project-chain-is-likely-behind-progress.html |archive-url=https://web.archive.org/web/20210411194808/http://nangluongvietnam.vn/news/en/electricity/block-b-gas-power-project-chain-is-likely-behind-progress.html |archive-date=2021-04-11}}</ref><ref name="autoref_18" />
+| not found
+| no
+|-
+| 3
+| Pre-construction<ref name="autoref_9" /><ref name="autoref_10" /><ref name="autoref_24">{{cite web |url=https://www.pvn.vn/sites/en/Pages/detail.aspx?NewsID=73f80c72-6609-48d4-9f41-62bfbb188dc0}}</ref><ref name="autoref_11" /><ref name="autoref_12" /><ref name="autoref_13" /><ref name="autoref_14" /><ref name="autoref_15" /><ref name="autoref_16" /><ref name="autoref_25">{{cite web |url=https://baodautu.vn/tien-do-trien-khai-cac-du-an-thuoc-cum-nhiet-dien-o-mon-can-tho-d408816.html}}</ref><ref name="autoref_18" />
+| fossil gas: natural gas<ref name="autoref_20" />
+| 1050<ref name="autoref_21" /><ref name="autoref_18" />
+| combined cycle<ref name="autoref_26">{{cite web |url=https://www.jica.go.jp/english/our_work/social_environmental/id/asia/southeast/vietnam/c8h0vm000090rsso.html |archive-url=https://web.archive.org/web/20210311003544/https://www.jica.go.jp/english/our_work/social_environmental/id/asia/southeast/vietnam/c8h0vm000090rsso.html |archive-date=2021-03-11}}</ref>
+| not found
+| 2027 (planned)<ref name="autoref_11" /><ref name="autoref_15" /><ref name="autoref_13" /><ref name="autoref_14" /><ref name="autoref_23" /><ref name="autoref_18" />
+| not found
+| no
+|-
+| 4
+| Construction<ref name="autoref_9" /><ref name="autoref_10" /><ref name="autoref_24" /><ref name="autoref_11" /><ref name="autoref_12" /><ref name="autoref_13" /><ref name="autoref_14" /><ref name="autoref_15" /><ref name="autoref_16" /><ref name="autoref_27">{{cite web |url=https://vir.com.vn/petrovietnam-starts-o-mon-iv-plant-to-power-energy-future-134813.html}}</ref><ref name="autoref_18" /><ref name="autoref_28">{{cite web |url=https://www.koreaittimes.com/news/articleView.html?idxno=142191}}</ref>
+| fossil gas: natural gas<ref name="autoref_29">{{cite web |url=https://www.adb.org/sites/default/files/project-document/60674/43400-013-vie-pam.pdf |archive-url=https://web.archive.org/web/20210310231820/https://www.adb.org/sites/default/files/project-document/60674/43400-013-vie-pam.pdf |archive-date=2021-03-10}}</ref>
+| 1155<ref name="autoref_21" /><ref name="autoref_18" /><ref name="autoref_28" />
+| combined cycle<ref name="autoref_30">{{cite web |url=https://www.adb.org/sites/default/files/linked-documents/43400-013-vie-rpab.pdf |archive-url=https://web.archive.org/web/20210311010046/https://www.adb.org/sites/default/files/linked-documents/43400-013-vie-rpab.pdf |archive-date=2021-03-11}}</ref>
+| not found
+| 2028 (planned)<ref name="autoref_11" /><ref name="autoref_15" /><ref name="autoref_13" /><ref name="autoref_14" /><ref name="autoref_23" /><ref name="autoref_18" />
+| Mitsubishi Heavy Industries: M701JAC<ref name="autoref_28" /><ref name="autoref_31">{{cite web |url=https://www.globaldata.com/newsletter/details/mitsubishi-power-to-supply-gas-turbines-to-o-mon-4-power-plant-in-vietnam_394966/?utm_campaign=type2_power&utm_medium=power_type2_2025-09-09&_hsenc=p2ANqtz-871phf-_D0fLGbSCBo1OXCM1i4A3LBvoXJr_Cif6arOVuniu3l7nH1sc2-aDN_wx5YZP53znPZ6qUsfAUNmD7h8IsC5Qt7LiEjF6bf6q8Ym10H5Jw&_hsmi=117015236&utm_content=other_daily_news_articles&utm_source=email_NS}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1-1, timepoint 1
+| Can Tho Thermal Power Co [100%]<ref name="autoref_6" />
+| Vietnam Electricity LLC [100.0%]
+|-
+| 1-1, timepoint 2
+| Can Tho Thermal Power Co [100%]<ref name="autoref_6" />
+| Vietnam Electricity LLC [100.0%]
+|-
+| 1-2, timepoint 1
+| Can Tho Thermal Power Co [100%]<ref name="autoref_6" />
+| Vietnam Electricity LLC [100.0%]
+|-
+| 1-2, timepoint 2
+| Can Tho Thermal Power Co [100%]<ref name="autoref_6" />
+| Vietnam Electricity LLC [100.0%]
+|-
+| 2
+| Marubeni Corp [50%]; Vietnam Trading Engineering Construction JSC [50%]<ref name="autoref_9" /><ref name="autoref_9" />
+| Marubeni Corp [50.0%]; Vietnam Trading Engineering Construction JSC [50.0%]
+|-
+| 3
+| Vietnam Oil and Gas Group Co [100%]<ref name="autoref_32">{{cite web |url=https://vietnamenergy.vn/the-investors-of-two-gas-power-projects-in-block-b-o-mon-chain-will-be-transferred-from-evn-to-pvn-30880.html}}</ref>
+| Vietnam Oil and Gas Group Co [100.0%]
+|-
+| 4
+| Vietnam Oil and Gas Group Co [100%]<ref name="autoref_32" />
+| Vietnam Oil and Gas Group Co [100.0%]
+|}
+'''Unit-level fuel conversion details''':
+
+'''1-1''': Announced conversion from fossil liquids to fossil gas in .
+
+'''1-2''': Announced conversion from fossil liquids to fossil gas in .
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+The power station comprises four power plants. The O Mon 1 plant, which has a capacity of 660 MW, is already operational. O Mon 2, 3, and 4 are proposed.
+
+O Mon I currently relies on fuel oil but will be switched to domestic natural gas in 2021.<ref name=":0">{{Cite web|url=https://www.thesaigontimes.vn/164876/nhiet-dien-o-mon-i-se-chuyen-sang-chay-khi.html|title=Nhiệt điện Ô Môn I sẽ chuyển sang chạy khí|last=|first=|date=September 21, 2017|website=|url-status=live|archive-url=|archive-date=|access-date=}}</ref> The February 2021 draft PDP8 revised that year to 2024.<ref name='draftPDP8'>[https://moit.gov.vn/upload/2005517/20210707/du-thao-dien-viii35c6.rar Draft National Power Development Plan for the period of 2021-2030, with a vision to 2045], Vietnamese Ministry of Ministry of Industry and Trade, February 2021</ref>
+
+In May 2019, ''VietnamNet'' reported that EVN was having difficulty arranging capital for this project.<ref name='vn'>Hà Duy, [https://vietnamnet.vn/vn/kinh-doanh/dau-tu/bo-cong-thuong-muon-giao-nhiet-dien-o-mon-2-cho-tu-nhan-lam-535091.html Nhiệt điện 26 ngàn tỷ: Chê quốc doanh yếu tiền, Bộ chuyển tư nhân làm], ''VietnamNet'', 29 May 2019</ref>
+
+The power station has three proposed gas-burning combined cycle units totaling 3,150 MW, and the fuel-oil units are scheduled to be switched to natural gas, which would ultimately bring the total gas-fired capacity to 3,810 MW.
+
+==O Mon 2==
+
+O Mon 2 is a proposed 1,050-megawatt (MW) gas-fired power plant. It will be built in the O Mon Power Center alongside O Mon 1 Thermal Power Plant and the proposed O Mon 3 and O Mon 4 power stations.<ref name=sum>Thứ Ba, [http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/nhiet-dien-o-mon-1-se-chuyen-sang-chay-khi-thay-dau-fo.html Nhiệt điện Ô Môn 1 sẽ chuyển sang chạy khí thay dầu FO], ''Vietnam Energy Magazine'', 22 Sep 2017</ref><ref name=dau>Thanh Hương, [https://baodautu.vn/bo-cong-thuong-lung-tung-khi-duoc-giao-chi-dinh-chu-dau-tu-du-an-nhiet-dien-o-mon-ii-d108665.html Bộ Công thương lúng túng khi được giao chỉ định chủ đầu tư Dự án Nhiệt điện Ô Môn II], ''Đầu tư online'', 8 Oct 2019</ref>
+
+Two investors sent proposals to the Ministry of Industry and Trade -- EVNGENCO2 (Vietnam Electricity Corporation) and Vietracimex (Marubeni Corporation) to build the power plant. In May 2019, Ministry of Industry and Trade recommended Vietracimex Joint Venture - Marubeni Group, which had begun operating many projects successfully in 2019, to the Prime Minister.<ref name=mon2>[https://baodauthau.vn/dau-tu/du-an-nha-may-nhiet-dien-o-mon-ii-nha-dau-tu-nao-lot-mat-xanh-bo-cong-thuong-96897.html Dự án Nhà máy Nhiệt điện Ô Môn II: Nhà đầu tư nào “lọt mắt xanh” Bộ Công Thương?], ''Báo Đấu Thầu'', 3 May 2019</ref><ref>[https://thoidai.com.vn/vi-sao-vietracimex-duoc-tien-cu-cho-du-an-khung-nhiet-dien-o-mon-ii-78041.html Vì sao Vietracimex được tiến cử cho dự án khủng Nhiệt điện Ô Môn II?], ''Vietnam Times'', 24 May 2019</ref>
+
+In mid-2019, the Prime Minister and Ministry of Trade discussed increasing the output of the plant from 750 MW to 1,050 MW and having it begin operations in 2025.<ref name=dau>Thanh Hương, [https://baodautu.vn/bo-cong-thuong-lung-tung-khi-duoc-giao-chi-dinh-chu-dau-tu-du-an-nhiet-dien-o-mon-ii-d108665.html Bộ Công thương lúng túng khi được giao chỉ định chủ đầu tư Dự án Nhiệt điện Ô Môn II], ''Đầu tư online'', 8 Oct 2019</ref><ref>Vĩnh Chi, [https://vietnamfinance.vn/du-an-nhiet-dien-o-mon-ii-bo-cong-thuong-che-evngenco2-yeu-nang-luc-tai-chinh-20180504224223635.htm Dự án Nhiệt điện Ô Môn II: Bộ Công Thương chê EVNGENCO2 yếu năng lực tài chính], ''Vietnam Finance'', 15 May 2019</ref>
+
+In February 2021, ''IJGlobal'' reported that Vietracimex and Marubeni had received approval to proceed with the project following a decision by Vietnam's prime minister Nguyen Xuan Phuc in January 2021 backing the investment planning for the project.<ref>[https://baodautu.vn/vay-24448-ty-dong-dau-tu-du-an-nhiet-dien-o-mon-ii-d136037.html Vay 24.448 tỷ đồng đầu tư Dự án Nhiệt điện Ô Môn II], Dautu Online, Jan 5, 2021</ref> The output of the project was confirmed as 1,050 MW and the companies are expecting the plant to commence operations in 2024-2025. The total project cost is about 30.56 trillion Vietnamese dong (US$1.33 billion). The Vietracimex - Marubeni consortium is planning to raise equity of approximately 6.11 trillion Vietnamese dong and finance the remaining 24.45 trillion Vietnamese dong with commercial loans.<ref name=IJG>Civi Yap, [https://ijglobal.com/articles/153133/vietracimex-and-marubeni-to-build-gas-fired Vietracimex and Marubeni to build gas-fired], IJGlobal, Feb. 11, 2021</ref>
+
+As of the February 2021 draft PDP8, O Mon 2 has established a feasibility study.<ref name='draftPDP8'>[https://moit.gov.vn/upload/2005517/20210707/du-thao-dien-viii35c6.rar Draft National Power Development Plan for the period of 2021-2030, with a vision to 2045], Vietnamese Ministry of Ministry of Industry and Trade, February 2021</ref>
+
+In May 2025, it was reported that a Maurbeni-led team was sounding out banks and export credit agencies to raise approximately US$800 million in loans for O Mon 2, with the aim of finalising the finance deals in 2026.<ref name=proximo>Max Thompson, [https://www.proximoinfra.com/news/70425/O-Mon-2-CCGT-out-to-banks O Mon 2 CCGT out to banks], Proximo, May 12, 2025</ref>
+
+==O Mon 3==
+
+O Mon 3 is a proposed 1,050-megawatt (MW) gas-fired power plant in Can Tho Province, Vietnam.<ref name=sum>Thứ Ba, [http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/nhiet-dien-o-mon-1-se-chuyen-sang-chay-khi-thay-dau-fo.html Nhiệt điện Ô Môn 1 sẽ chuyển sang chạy khí thay dầu FO], ''Vietnam Energy Magazine'', 22 Sep 2017</ref><ref name=jp>[https://www.meti.go.jp/meti_lib/report/H30FY/000209.pdf Study on Gas to Power Project Value Chain in the South Vietnam Final Report, p. 6-45], Japan Ministry of Economy, Trade and Industry website, March 2019</ref><ref name=raise>[https://vietnamnet.vn/vn/kinh-doanh/dau-tu/lo-gia-dien-tang-khi-dau-tu-nhiet-dien-o-mon-iii-va-o-mon-iv-456123.html Xây 2 nhiệt điện 50.000 tỷ đồng: Thận trọng những thách thức], ''VietnamNet'', 13 Jun 2018</ref>
+
+As of the February 2021 draft PDP8, O Mon 3 is in loan negotiations.<ref name='draftPDP8'>[https://moit.gov.vn/upload/2005517/20210707/du-thao-dien-viii35c6.rar Draft National Power Development Plan for the period of 2021-2030, with a vision to 2045], Vietnamese Ministry of Ministry of Industry and Trade, February 2021</ref> The project is believed to have received US$432 million in equity from former owner EVN, and to be seeking development bank loans in the amount of US$668 million.<ref>{{Cite news|url=https://vir.com.vn/petrovietnam-invests-in-o-mon-iii-and-iv-thermal-power-plants-105858.html&link=autochanger|title=PetroVietnam invests in O Mon III and IV thermal power plants|last=VIR|first=Vietnam Investment Review -|date=2023-10-10|work=Vietnam Investment Review - VIR|access-date=2025-09-16|language=en-US}}</ref>
+
+==O Mon 4==
+
+O Mon 4 is a proposed 1,050-megawatt (MW) gas-fired power plant.<ref name=sum>Thứ Ba, [http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/nhiet-dien-o-mon-1-se-chuyen-sang-chay-khi-thay-dau-fo.html Nhiệt điện Ô Môn 1 sẽ chuyển sang chạy khí thay dầu FO], ''Vietnam Energy Magazine'', 22 Sep 2017</ref><ref name=jp>[https://www.meti.go.jp/meti_lib/report/H30FY/000209.pdf Study on Gas to Power Project Value Chain in the South Vietnam Final Report, p. 6-45], Japan Ministry of Economy, Trade and Industry website, March 2019</ref><ref name=raise>[https://vietnamnet.vn/vn/kinh-doanh/dau-tu/lo-gia-dien-tang-khi-dau-tu-nhiet-dien-o-mon-iii-va-o-mon-iv-456123.html Xây 2 nhiệt điện 50.000 tỷ đồng: Thận trọng những thách thức], ''VietnamNet'', 13 Jun 2018</ref>
+
+In 2011, following an extensive due diligence, project design, and public consultation period over several years, the Asian Development Bank (ADB) approved a loan totaling US$309.89 million for O Mon 4. The ADB's project cost figure of US$423.45 million for O Mon 4 dates back to 2011.<ref name=ADB>[https://www.adb.org/projects/43400-013/main Viet Nam : O Mon IV Combined Cycle Power Plant Project], Asian Development bank website, accessed May 12, 2025</ref>
+
+In September 2019, the People's Committee of Can Tho City requested comments on the feasibility study report of O Mon IV Thermal Power Plant project from the State Capital Management Committee.<ref>[https://www.youtube.com/watch?v=2nksyGwRRhQ Cần Thơ kiến nghị phê duyệt Nhà máy nhiệt điện Ô Môn IV], ''THTPCT Can Tho Television'', 25 Sep 2019</ref>
+
+In June 2025, South Korea's Doosan Enerbility and Vietnam's Power Engineering Consulting Joint Stock Company 2 (PECC2) signed, as a consortium, an engineering, procurement, and construction contract for O Mon 4. Doosan announced that the contract was worth approximately 900 billion won (about US$770 million), with the consortium responsible for main plant equipment supply, construction, and overall commissioning.<ref>Lee Jun-sung, [https://www.koreaittimes.com/news/articleView.html?idxno=142191 Doosan Enerbility Expands Global Gas-Fired Power Plant Construction Orders], Korea IT Times, Jun. 10, 2025</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Vietnam]]

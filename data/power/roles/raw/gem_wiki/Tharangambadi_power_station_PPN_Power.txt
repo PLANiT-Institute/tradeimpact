@@ -1,0 +1,114 @@
+# GEM wiki page: Tharangambadi power station (PPN Power)
+# URL: https://www.gem.wiki/Tharangambadi_power_station_(PPN_Power)
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Tharangambadi power station (PPN Power)''' is a cancelled power station in Pillaiperumalnallur and Manickapangu, Tarangambadi and Sirkali, Nagapattinum, Tamil Nadu, India.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Tharangambadi power station (PPN Power)
+| Pillaiperumalnallur and Manickapangu, Tarangambadi and Sirkali, Nagapattinum, Tamil Nadu, India
+| 11.029167, 79.849444 (approximate)
+|}
+{{
+#display_map:
+11.029167, 79.849444
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Unit 1
+| Cancelled
+| coal: unknown
+| 160
+| unknown
+| False
+|-
+| Unit 2
+| Cancelled
+| coal: unknown
+| 160
+| unknown
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| PPN Power Generating Company Pvt Ltd [100%]
+| Apollo Infrastructure Projects Finance Company Pvt Ltd [64.3%]; Marubeni Corp [26.0%]; HDFC Standard life Insurance Co Ltd [2.7%]
+|-
+| Unit 2
+| PPN Power Generating Company Pvt Ltd [100%]
+| Apollo Infrastructure Projects Finance Company Pvt Ltd [64.3%]; Marubeni Corp [26.0%]; HDFC Standard life Insurance Co Ltd [2.7%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNDElLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS4yMyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS40NiUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQ3JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS02LjU2JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjYuNzUlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS0xMC4xNCUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjU1JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMDAwMDY0OVsiTWFydWJlbmkgQ29ycCJdIC0tMjYuMCUtLT4gMTAwMDAwMDAxOTMyCiAgICAxMDAwMDIwMDAzMzBbIkFwb2xsbzxicj5JbmZyYXN0cnVjdHVyZTxicj5Qcm9qZWN0cyBGaW5hbmNlPGJyPkNvbXBhbnkgUHZ0IEx0ZCJdIC0tNjQuMyUtLT4gMTAwMDAwMDAxOTMyCiAgICAxMDAwMDIwMDAzMzNbIkhERkMgU3RhbmRhcmQgbGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS0yLjc0JS0tPiAxMDAwMDAwMDE5MzIKICAgIDEwMDAwMDAwMTkzMlsiUFBOIFBvd2VyIEdlbmVyYXRpbmc8YnI+Q29tcGFueSBQdnQgTHRkIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwMjU3OQogICAgUDEwMDAwMDEwMjU3OVsiVGhhcmFuZ2FtYmFkaSBwb3dlcjxicj5zdGF0aW9uIChQUE4gUG93ZXIpIl0K}}
+
+==Background==
+
+PPN Power owns and operates a 330 MW gas- and naphtha-fired, combined cycle power plant at villages Pillaiperumalnallur and Manickapangu. The plant has been in operation since April 2001.<ref>[http://www.ppnpower.com/ "Welcome to PPN Power,"] PPN Power website, accessed April 2015</ref> 
+
+In December 2014 PPN Power received a terms of reference toward conducting an EIA for adding two coal-burning units of 160 MW each at the power station.<ref>[http://bit.ly/1CZJ1kq Terms of reference,] India MoEF, Dec 12, 2014</ref>
+
+As of May 2017 the company's expansion plans only describe new gas-fired generation capacity. Plans to build coal-fired generating units appear to be abandoned.<Ref>[http://www.ppnpower.com/Expansion.html#Expansion "Expansion,"] PPN Power, accessed June 2017</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in India]]

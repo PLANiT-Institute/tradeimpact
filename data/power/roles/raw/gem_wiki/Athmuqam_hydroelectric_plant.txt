@@ -1,0 +1,73 @@
+# GEM wiki page: Athmuqam hydroelectric plant
+# URL: https://www.gem.wiki/Athmuqam_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Athmuqam hydroelectric plant''' is a hydroelectric power plant in pre-construction in Athmuqam Tehsil, Neelum District, Muzaffarabad Division, Azad Kashmir, Pakistan.
+
+==Project Details==
+==== '''Table 1:''' Project details for Athmuqam hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Technology type
+!Owner
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://www.ppib.gov.pk/upcomming_ipps.html |archive-url=https://web.archive.org/web/20230425104644/https://www.ppib.gov.pk/upcomming_ipps.html |archive-date=25 April 2023}}</ref><ref name="autoref_1">{{cite web |url=https://www.brecorder.com/news/40154519 |archive-url=https://web.archive.org/web/20220216165738/https://www.brecorder.com/news/40154519 |archive-date=2022-02-16}}</ref>
+| 350 MW<ref name="autoref_2">{{cite web |url=http://www.mowp.gov.pk/mowp/userfiles1/file/Project%20Specific%20Profile-350%20MW%20Athmuqam%20HPP%20(14_1_2016).pdf |archive-url=https://web.archive.org/web/20181223002422/http://www.mowp.gov.pk:80/mowp/userfiles1/file/Project%20Specific%20Profile-350%20MW%20Athmuqam%20HPP%20(14_1_2016).pdf |archive-date=2018-12-23}}</ref>
+| Run-of-river<ref name="autoref_2" />
+| Korea Hydro & Nuclear Power (KHNP) Co Ltd [100%] (한국수력원자력)<ref name="autoref_1" />
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Athmuqam hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Athmuqam Tehsil, Neelum District, Muzaffarabad Division, Azad Kashmir, Pakistan<ref name="autoref_2" />
+| Neelum River<ref name="autoref_2" />
+| 33.8441, 73.7966 (approximate)<ref name="autoref_2" />
+|}
+The map below shows the approximate location of the hydroelectric power plant:
+{{
+#display_map:
+33.8441, 73.7966~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Pakistan]]
+
+__NOTOC__

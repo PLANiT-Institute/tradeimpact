@@ -19,3 +19,5 @@ gem_wiki_roles,role,.*,C,role read from a GEM wiki sentence by keyword; unverifi
 ti_power_by_role,origin,register,B,hand-transcribed role row with a source link
 ti_power_by_role,origin,gem,B,equity share from the tracker's owner string
 ti_power_by_role,origin,gem_wiki,C,role read from a GEM wiki sentence by keyword; unverified
+ti_power_by_role,origin,company_ir,A,role or share read from a company disclosure or project page that is on disk and hash-recorded
+company_ir_roles,role,.*,A,read from a page in raw/company_ir with the sentence quoted on the row

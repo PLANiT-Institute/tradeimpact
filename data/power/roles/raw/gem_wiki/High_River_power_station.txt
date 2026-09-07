@@ -1,0 +1,144 @@
+# GEM wiki page: High River power station
+# URL: https://www.gem.wiki/High_River_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''High River power station''' (潞安长子高河低热值煤电厂) is an operating power station of at least 1320-megawatts (MW) in Gaohe, Changzi, Changzhi, Shanxi, China.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| High River power station
+| Gaohe, Changzi, Changzhi, Shanxi, China
+| 36.165148, 112.96158 (exact)
+|}
+{{
+#display_map:
+36.165148, 112.96158
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 36.165148, 112.96158
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: waste coal<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 660
+| ultra-supercritical
+| yes
+| 2021
+| False
+|-
+| Unit 2
+| Operating
+| coal: waste coal<ref name="autoref_0" />
+| 660
+| ultra-supercritical
+| yes
+| 2021
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Shanxi Luguang Power Generation Co Ltd [100%]
+| An Hui Wenergy Co Ltd [50.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [21.2%]; KEPCO Shanxi International [17.0%]; Electric Power Development Co Ltd [3.5%]; Shanxi Gemeng International Energy Group Co Ltd [2.4%]; KEPCO Woori Sprott Global Private Equity Fund [2.0%]; Korea Electric Power Corp [2.0%]; unknown [2.0%]
+|-
+| Unit 2
+| Shanxi Luguang Power Generation Co Ltd [100%]
+| An Hui Wenergy Co Ltd [50.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [21.2%]; KEPCO Shanxi International [17.0%]; Electric Power Development Co Ltd [3.5%]; Shanxi Gemeng International Energy Group Co Ltd [2.4%]; KEPCO Woori Sprott Global Private Equity Fund [2.0%]; Korea Electric Power Corp [2.0%]; unknown [2.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDEzNjZbIkFuIEh1aSBXZW5lcmd5IENvPGJyPkx0ZCJdIC0tNTAuMCUtLT4gMTAwMDAwMTIyODczCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tNTAuMCUtLT4gMTAwMDAwMTI1OTY3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMjUwNDEKICAgIDEwMDAwMjAyNTA0MVsiTWluaXN0cnkgb2YgSGVhbHRoPGJyPmFuZCBXZWxmYXJlIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDAwNzMwCiAgICAxMDAwMDEwMDA3MzBbIk5hdGlvbmFsIFBlbnNpb248YnI+U2VydmljZSAoU291dGg8YnI+S29yZWEpIl0gLS01MC4wJS0tPiAxMDAwMDAxMjU5NjcKICAgIDEwMDAwMDEyNTk2N1siS0VQQ08gV29vcmkgU3Byb3R0PGJyPkdsb2JhbCBQcml2YXRlPGJyPkVxdWl0eSBGdW5kIl0gLS04LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTI1OTY5WyJLRVBDTyBTaGFueGk8YnI+SW50ZXJuYXRpb25hbCJdIC0tMzQuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc2Ljg4JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTEyLjI1JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43NyUtLT4gMTAwMDAwMDAwNjQxCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4xJS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMDAwMDY0MVsiRWxlY3RyaWMgUG93ZXI8YnI+RGV2ZWxvcG1lbnQgQ28gTHRkIl0gLS03LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTI1NTI4WyJTaGFueGkgUHJvdmluY2lhbDxicj5EZXBhcnRtZW50IG9mPGJyPkZpbmFuY2UiXSAtLTEwLjAlLS0+IDEwMDAwMDEyMzgyMwogICAgMTAwMDAwMTI1Njc4WyJTaGFueGkgUHJvdmluY2lhbDxicj5QZW9wbGUncyBHb3Zlcm5tZW50PGJyPlN0YXRlLW93bmVkIEFzc2V0czxicj5TdXBlcnZpc2lvbiBhbmQ8YnI+QWRtaW5pc3RyYXRpb248YnI+Q29tbWlzc2lvbiJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMTY2MwogICAgMTAwMDAwMDAxNjYzWyJTaGFueGkgU3RhdGUtT3duZWQ8YnI+Q2FwaXRhbCBJbnZlc3RtZW50PGJyPmFuZCBPcGVyYXRpb24gQ28gTHRkIl0gLS05MC4wJS0tPiAxMDAwMDAxMjM4MjMKICAgIDEwMDAwMDEyMzgyM1siU2hhbnhpIEdlbWVuZzxicj5JbnRlcm5hdGlvbmFsIEVuZXJneTxicj5Hcm91cCBDbyBMdGQiXSAtLTQ3LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTMyMzg4XzFbInVua25vd24iXSAtLTQuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMjM2OTlbIkdlbWVuZyBJbnRlcm5hdGlvbmFsPGJyPkVuZXJneSBDbyBMdGQiXSAtLTUwLjAlLS0+IDEwMDAwMDEyMjg3MwogICAgMTAwMDAwMTIyODczWyJTaGFueGkgTHVndWFuZyBQb3dlcjxicj5HZW5lcmF0aW9uIENvIEx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDE0NjgKICAgIFAxMDAwMDAxMDE0NjhbIkhpZ2ggUml2ZXIgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Background==
+
+High River power station is a proposed power station of two units of 600 MW each. The environmental impact assessment was approved in 2014.<ref>[http://www.sxdrc.gov.cn/xxlm/nyfz/zhdt/201402/t20140217_71243.htm "第三批低热值煤发电项目公示,"] 山西日报, February 17, 2014</ref><ref>[http://cz.sxgov.cn/content/2015-05/07/content_5837836.htm "许霞就加快低热值煤发电项目开工建设现场办公,"] 长治日报, 2015-05-07</ref> 
+
+Environmental submittals place the unit size at 2 x 660 MW.<ref>Communication from Greenpeace East Asia, January 2017</ref>
+
+The project is under construction. It is planned for operation in 2017.<ref>[http://www.zgdlhg.com/xwzx/qyxw/2016040723270.html "山西潞安长子高河2×660MW低热值煤发电项目间冷塔及烟囱施工工程烟囱环壁浇筑提前完成,"] 中国电力化工网, 2016-04-07</ref>
+
+==Project suspended, then revived==
+
+===July 2017: Plant halted by government===
+In July 2017 China's National Energy Administration (NEA) postponed or halted 185 coal-burning units across 21 provinces, totaling nearly 107 gigawatts (GW). 114 coal units totaling 65 GW are postponed for consideration until after the end of the 13th 5-year plan, in 2020. In addition, 71 coal units totaling nearly 42 GW were halted indefinitely for regulation violations. NEA said its goal is to eventually suspend or halt 150 GW of coal capacity during the 13th 5-year plan (2016-2020).<ref name=july17>[https://www.sohu.com/a/161854870_651522 "16部委联合发文防范化解煤电产能过剩风险,"] Sohu.com, 2017-08-03</ref>
+
+High River power station Units 1-2 are among the halted coal-burning units, suspended indefinitely.<ref name=july17>[https://www.sohu.com/a/161854870_651522 "16部委联合发文防范化解煤电产能过剩风险,"] Sohu.com, 2017-08-03</ref>
+
+For more information, see [[China's 2016/2017 Restrictions on Development of Coal-Fired Power Capacity]].
+
+===September 2017: Suspension lifted===
+After political negotiations, China's National Energy Administration (NEA) released an updated list of postponed and halted coal projects on September 26, 2017. The new list contained 151 units totaling 95 gigawatts (GW). High River power station was no longer on the list, suggesting the plant is not suspended.<ref>[https://www.sohu.com/a/197969653_279604 "2017年分省煤电停建和缓建项目名单,"] Sohu, 2017-10-12</ref>
+
+In April 2018 it was reported the two units are planned for commissioning in 2019.<ref>[http://fgw.shanxi.gov.cn/fggz/dsdt/czsfgw/201804/t20180426_97152.shtml "杨勤荣调研潞安长子高河低热值煤发电项目建设情况,"] 长治日报, 2018-04-26</ref> [https://www.planet.com/stories/36-165148deg-n-112-96158deg-e-G-8p93NmR Planet satellite photos] through March 2018 shows construction is ongoing. In April 2020 it was reported that operation was planned for both units in August 2020.<ref>[http://news.bjx.com.cn/html/20200413/1062627.shtml "长子高河2×660MW低热值煤发电厂即将并网发电,"] 北极星电力网新闻中心, 2020/4/13</ref>
+
+==2021: Plant commissioned==
+
+Unit 1 was commissioned in April 2021.<ref>[https://news.bjx.com.cn/html/20210428/1149889.shtml "山西长子高河低热值煤发电项目1号机组通过168小时试运行,"] 北极星电力网新闻中心, 2021/4/28</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

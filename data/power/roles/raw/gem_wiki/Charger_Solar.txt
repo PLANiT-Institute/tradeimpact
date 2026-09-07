@@ -1,0 +1,73 @@
+# GEM wiki page: Charger Solar
+# URL: https://www.gem.wiki/Charger_Solar
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Charger Solar''' is a cancelled solar photovoltaic (PV) farm in Refugio County, Texas, United States.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Charger Solar ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| Cancelled ([https://www.gem.wiki/Global_Solar_Power_Tracker_Methodology inferred] September 2024)
+| 400 MWac<ref name="autoref_0">{{cite web |url=https://www.jpowerusa.com/projects/charger-solar/ |archive-url=https://web.archive.org/web/20240201182414/https://www.jpowerusa.com/projects/charger-solar/ |archive-date=2024-02-01}}</ref>
+| PV<ref name="autoref_0" />
+| AP Solar Holdings; J-Power USA<ref name="autoref_1">{{cite web |url=https://www.jpowerusa.com/projects/charger-solar/, https://www.jpowerusa.com/projects/charger-solar/}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Charger Solar ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Refugio County, Texas, United States<ref name="autoref_0" />
+| 28.4668, -97.1053 (approximate)<ref name="autoref_0" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+28.4668, -97.1053~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in United States]]
+[[Category:PV solar farms]]
+
+__NOTOC__

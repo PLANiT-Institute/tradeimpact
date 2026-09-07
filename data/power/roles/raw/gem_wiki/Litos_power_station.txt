@@ -1,0 +1,152 @@
+# GEM wiki page: Litos power station
+# URL: https://www.gem.wiki/Litos_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Litos power station''' (Usina Termelétrica Litos) is a pre-construction power station in Macaé, Rio de Janeiro, Brazil.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Litos power station
+| Macaé, Rio de Janeiro, Brazil
+| -22.350212, -41.87392 (approximate)<ref name="autoref_0">{{cite web |url=https://litosenergia.com.br/EIA_Litos.pdf |archive-url=https://web.archive.org/web/20210503185010/https://litosenergia.com.br/EIA_Litos.pdf |archive-date=03 May 2021}}</ref>
+|}
+{{
+#display_map:
+-22.350212, -41.87392
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| pre-construction<ref name=":0">{{Cite web|url=https://www.in.gov.br/web/dou/-/aviso-de-licenca-703291548|title=Licença Prévia (LP) N° 732/2026, com validade de 5 (cinco) anos, para a atividade de geração de energia termelétrica referente à Usina Termelétrica (UTE) LITOS 1, com capacidade instalada de 2.636,40 MW|date=2026-05-05|website=Diário Oficial da União|url-status=live}}</ref>
+| fossil gas: LNG<ref name="autoref_5">{{cite web |url=https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-527/NT%20Terminais%20de%20GNL%20no%20Brasil%20-%20Panorama%20dos%20Principais%20Projetos.pdf |title=Terminais de GNL no Brasil, Ciclo 2019-2020 |date=2020-10-31 |website=EPE (Empresa de Pesquisa Energética) |archive-url=https://web.archive.org/web/20240125090323/https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-527/NT%20Terminais%20de%20GNL%20no%20Brasil%20-%20Panorama%20dos%20Principais%20Projetos.pdf |archive-date=2024-01-25}}</ref>
+| 2636<ref name="autoref_0" /><ref name=":0" /><ref name="autoref_6">{{cite web |url=https://leis.org/institucionais/br/aneel/lei/despacho/2021/872/despacho-n-872-2021-registra-o-recebimento-do-requerimento-de-outorga-dos-empreendimentos-de-fonte-termeletrica-relacionados-e-qualificados-nos-anexos-i-e-ii-informa-que-este-despacho-e-especifico-para-fins-de-habilitacao-no-leilao-de-energia-existente-a5-de-2021-bem}}</ref><ref name="autoref_1">{{cite web|url=https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=02%2F09%2F2025&jornal=530&pagina=252}}</ref>
+| combined cycle<ref name="autoref_0" />
+| not found
+| not found
+| no
+|-
+| 2
+| pre-construction<ref name=":1">{{Cite web|url=https://www.in.gov.br/web/dou/-/aviso-de-licenca-703330030|title=Licença Prévia (LP) N° 731/2026, com validade de 5 (cinco) anos, para a atividade de geração de energia termelétrica referente à Usina Termelétrica (UTE) LITOS 2, com capacidade instalada de 1.318,20 MW MW|date=2026-05-05|website=Diário Oficial da União|url-status=live}}</ref>
+| fossil gas: LNG<ref name="autoref_5" />
+| 1318<ref name="autoref_0" /><ref name="autoref_6" /><ref name="autoref_1" /><ref name=":1" />
+| combined cycle<ref name="autoref_0" />
+| not found
+| not found
+| no
+|-
+| 3
+| pre-construction<ref name=":2">{{Cite web|url=https://www.in.gov.br/web/dou/-/aviso-de-licenca-703729427|title=Licença Prévia (LP) N° 730/2026, com validade de 5 (cinco) anos, para a atividade de geração de energia termelétrica referente à Usina Termelétrica (UTE) LITOS 3, com capacidade instalada de 660 MW|date=2026-05-06|website=Diário Oficial da União|url-status=live}}</ref>
+| fossil gas: LNG<ref name="autoref_5" />
+| 660<ref name="autoref_0" /><ref name="autoref_6" /><ref name="autoref_1" /><ref name=":2" />
+| combined cycle<ref name="autoref_0" />
+| not found
+| not found
+| no
+|-
+| 4
+| pre-construction<ref name=":3">{{Cite web|url=https://www.in.gov.br/web/dou/-/aviso-de-licenca-703282963|title=Licença Prévia (LP) N° 729/2026, com validade de 5 (cinco) anos, para a atividade de geração de energia termelétrica referente à Usina Termelétrica (UTE) LITOS 4, com capacidade instalada de 660 MW|date=2026-05-05|website=Diário Oficial da União|url-status=live}}</ref>
+| fossil gas: LNG<ref name="autoref_5" />
+| 660<ref name="autoref_0" /><ref name="autoref_1" /><ref name=":3" />
+| combined cycle<ref name="autoref_0" />
+| not found
+| not found
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Litos Energia Ltda [100%]<ref name="autoref_0" /><ref name="autoref_7">{{cite web |url=https://www.gov.br/ibama/pt-br/assuntos/notas/2020/ibama-realiza-audiencia-publica-para-o-projeto-das-usinas-termeletricas-litos-1-2-3-e-4 |archive-url=https://web.archive.org/web/20240125121233/https://www.gov.br/ibama/pt-br/assuntos/notas/2020/ibama-realiza-audiencia-publica-para-o-projeto-das-usinas-termeletricas-litos-1-2-3-e-4 |archive-date=2024-01-25}}</ref>
+| Grupo Vale Azul Participações Ltda [50.0%]; Mitsubishi Power Americas Inc [33.3%]; Vale Azul Energia Ltda [16.6%]
+|-
+| 2
+| Litos Energia Ltda [100%]<ref name="autoref_0" /><ref name="autoref_7" />
+| Grupo Vale Azul Participações Ltda [50.0%]; Mitsubishi Power Americas Inc [33.3%]; Vale Azul Energia Ltda [16.6%]
+|-
+| 3
+| Litos Energia Ltda [100%]<ref name="autoref_0" /><ref name="autoref_7" />
+| Grupo Vale Azul Participações Ltda [50.0%]; Mitsubishi Power Americas Inc [33.3%]; Vale Azul Energia Ltda [16.6%]
+|-
+| 4
+| Litos Energia Ltda [100%]<ref name="autoref_0" /><ref name="autoref_7" />
+| Grupo Vale Azul Participações Ltda [50.0%]; Mitsubishi Power Americas Inc [33.3%]; Vale Azul Energia Ltda [16.6%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAwMTg4NzY3CiAgICAxMDAwMDAxODg3NjdbIkdydXBvIFZhbGUgQXp1bDxicj5QYXJ0aWNpcGHDp8O1ZXMgTHRkYSJdIC0tPiAxMDAwMDAwMDE4MDMKICAgIDEwMDAwMjAxODc3MlsiTWl0c3ViaXNoaSBQb3dlcjxicj5BbWVyaWNhcyBJbmMiXSAtLT4gMTAwMDAwMDAxODAzCiAgICAxMDAwMDAxODg3NjdbIkdydXBvIFZhbGUgQXp1bDxicj5QYXJ0aWNpcGHDp8O1ZXMgTHRkYSJdIC0tPiAxMDAwMDAwMDQyODkKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tPiAxMDAwMDAwMDQyODkKICAgIDEwMDAwMDAwNDI4OVsiVmFsZSBBenVsIEVuZXJnaWE8YnI+THRkYSJdIC0tPiAxMDAwMDAwMDE4MDMKICAgIDEwMDAwMDAwMTgwM1siTGl0b3MgRW5lcmdpYSBMdGRhIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDQwNjUxNAogICAgUDEwMDAwMDQwNjUxNFsiTGl0b3MgcG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Background==
+
+The Litos project's 2020 environmental impact report ([http://licenciamento.ibama.gov.br/Termeletricas/UTE%20s%20%20%20%20LITOS/ RIMA]) estimated construction start dates of 2021 for Litos 1, 2023 for [[Litos 2 power station|Litos 2]], and 2025 for [[Litos 3 power station|Litos 3]] and [[Litos 4 power station|Litos 4]].<ref>{{Cite web|url=https://litosenergia.com.br/RIMA_Litos.pdf|title=RIMA (Relatório de Impacto Ambiental)|last=|first=|date=June 2020|website=Oiti Consultoria Ambiental|url-status=live|archive-url=|archive-date=|access-date=}}</ref> A public hearing for the Litos power stations was held on September 30, 2020 to address concerns raised by the report.<ref>{{Cite news|url=https://audienciaspublicas.org/cases/audiencia-publica-virtual-sobre-o-projeto-das-usinas-termeletricas-litos-1-2-3-e-4/|title=Audiência Pública Virtual sobre o projeto das Usinas Termelétricas Litos 1, 2, 3 e 4|last=|first=|date=|work=UPtime / Audiências Públicas|access-date=2023-10-04|language=}}</ref><ref>{{Cite news|url=https://www.gov.br/ibama/pt-br/assuntos/notas/2020/ibama-realiza-audiencia-publica-para-o-projeto-das-usinas-termeletricas-litos-1-2-3-e-4|title=Ibama realiza audiência pública para o projeto das Usinas Termelétricas Litos 1, 2, 3 e 4|work=IBAMA|access-date=|language=|last=|first=|date=September 29, 2020}}</ref>
+
+As of March 2022, the parent company website offered no updates on the status of the Litos power station.<ref name="ref_B">{{cite web |url=https://litosenergia.com.br/sobre/ |title=Sobre |date= |website=Litos Energia |access-date=2022-03-31 |archive-url=https://web.archive.org/web/20210512165559/https://litosenergia.com.br/sobre/ |archive-date=May 12, 2021 |url-status=live|last=|first=}}</ref> In September 2021, Litos 1, 2 and 3 were listed as participants in Brazil's A-5 national energy auction<ref name=":02">{{Cite web|url=https://in.gov.br/en/web/dou/-/portaria-n-937/spe/mme-de-14-de-setembro-de-2021-345097967|title=PORTARIA Nº 937/SPE/MME|last=|first=|date=September 14, 2021|website=Ministério de Minas e Energia/Secretaria de Planejamento e Desenvolvimento Energético|url-status=live|archive-url=|archive-date=|access-date=}}</ref> but did not emerge victorious.<ref>{{Cite web|url=https://www.ccee.org.br/mercado/leilao-mercado|title=Leilões - Agenda e Resultados|last=|first=|date=|website=CCEE|language=|url-status=live|archive-url=|archive-date=|access-date=2022-11-29}}</ref> As of October 2023, Litos continued to be mentioned in press accounts as one of several active power projects in the Macaé region<ref>{{Cite web|url=https://energiaeambiente.org.br/moradores-de-macae-rj-ja-respiram-ar-poluido-e-estao-pressionados-por-novos-projetos-termeletricos-mostra-novo-estudo-do-iema-20211215|title=Moradores de Macaé (RJ) já respiram ar poluído e estão pressionados por novos projetos termelétricos, mostra novo estudo do IEMA|last=|first=|date=2021-12-15|website=Instituto de Energia e Meio Ambiente (IEMA)|language=|url-status=live|archive-url=|archive-date=|access-date=}}</ref><ref>{{Cite news|url=https://oeco.org.br/reportagens/novas-termeletricas-acendem-o-sinal-de-alerta-em-macae/|title=Novas termelétricas acendem o sinal de alerta em Macaé|last=Emanuel Alencar|first=|date=July 17, 2023|work=((o))eco|access-date=|language=}}</ref>, but it largely dropped out of the news in 2024, leading GEM to conclude that the project had been shelved. 
+
+In September 2025 Litos Energia submitted a formal request to Brazil's environmental agency Ibama for renewal of the preliminary environmental licenses (Licenças Prévias) for all four Litos units.<ref>[https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=02%2F09%2F2025&jornal=530&pagina=252 Litos Energia Ltda: Aviso de Renovação de Licença], Diário Oficial da União, September 2, 2025.</ref> In early May 2026, Ibama granted new 5-year preliminary licenses for all four units, reviving the Litos project's prospects for future development.<ref name=":0" /><ref name=":1" /><ref name=":2" /><ref name=":3" />
+
+==Opposition==
+
+In November 2022, the Brazilian environmental group Arayara filed a public civil action against Brazil's national environmental authority IBAMA, Rio de Janeiro state environmental authority INEA and four private companies. The filing alleged that the Litos 1, 2, 3 and 4 power stations, along with several other proposed power plants, would have a detrimental impact on water supply and air quality in the region, and requested that additional environmental studies be undertaken prior to further development of the power plants.<ref>{{Cite web|url=https://arayara.org/litigancia-climatica-arayara-org-entra-com-novas-acoes-judiciais-contra-complexo-termeletrico-em-macae-rio-de-janeiro/|title=Litigância Climática: ARAYARA.ORG entra com novas Ações Judiciais contra Complexo Termelétrico em Macaé, Rio de Janeiro|last=|first=|date=January 26, 2023|website=Arayara|url-status=live|archive-url=|archive-date=|access-date=}}</ref><ref>{{Cite news|url=https://epbr.com.br/ambientalistas-tentam-barrar-na-justica-projetos-termeletricos-em-macae/|title=Ambientalistas tentam barrar na Justiça projetos termelétricos em Macaé|last=|first=|date=November 4, 2022|work=EPBR|access-date=|language=}}</ref><ref>{{Cite web|url=https://climate.law.columbia.edu/news/september-2023-updates-climate-case-charts|title=September 2023 Updates to the Climate Case Charts|last=|first=|date=September 13, 2023|website=Sabin Center for Climate Change Law|language=en|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Brazil]]

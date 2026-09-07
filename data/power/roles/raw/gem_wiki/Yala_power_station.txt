@@ -1,0 +1,93 @@
+# GEM wiki page: Yala power station
+# URL: https://www.gem.wiki/Yala_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalBioenergyPowerTracker}}
+'''Yala power station''' (โรงไฟฟ้าฝ่ายผลิต ยะลากรีนเอ็นเนอยี่ จำกัด นรินทร์) is an operating power station of at least 23-megawatts (MW) in Na Tham, Mueang Yala, Yala, Thailand.
+It is also known as Yala Green Steam Plant, Narin Power Plant, Yala Green Energy Co., Ltd..
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Yala power station
+| Na Tham, Mueang Yala, Yala, Thailand
+| 6.540322321694991, 101.21929297425208 (exact)<ref name="autoref_0">{{cite web |url=https://maps.app.goo.gl/YdESPLzVDYg4niey8}}</ref>
+|}
+{{
+#display_map:
+6.540322321694991, 101.21929297425208
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''''': 6.540322321694991, 101.21929297425208
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Start year
+|-
+| Operating<ref name="autoref_1">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-yala-biomass-power-plant-thailand/}}</ref>
+| bioenergy: wood & other biomass (solids)<ref name="autoref_1" />
+| 23<ref name="autoref_1" />
+| 2006<ref name="autoref_1" />
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Owner
+!Parent
+|-
+| JERA Co Inc [5%]; Electricity Generating Authority of Thailand [12%]; Gulf Yala Green Co Ltd [49%]; J-POWER Holdings (Thailand) Co Ltd [25%]; Kyuden International Corp [2%]; Mit-Power (Thailand) Ltd [1%]; Diamond Generating Asia [2%]<ref name="autoref_1" /><ref name="autoref_1" /><ref name="autoref_1" /><ref name="autoref_1" /><ref name="autoref_1" /><ref name="autoref_1" /><ref name="autoref_1" />
+| Electric Power Development Co Ltd [49.3%]; Electricity Generating PCL [24.5%]; Electricity Generating Authority of Thailand [12.7%]; Chubu Electric Power Co Inc [3.0%]; Kyushu Electric Power Co Inc [3.0%]; Mitsubishi Corp [3.0%]; Tokyo Electric Power Co [3.0%]; Mitsui & Co Ltd [1.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny40NCUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTY5LjgyJS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tNi44NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBIb2xkaW5ncyBJbmMiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuODUlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS4xNyUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuMyUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjEzJS0tPiAxMDAwMDAwMDA2MzAKICAgIDEwMDAwMDAwMDYzMFsiQ2h1YnUgRWxlY3RyaWMgUG93ZXI8YnI+Q28gSW5jIl0gLS01MC4wJS0tPiAxMDAwMDAwMDE1MzMKICAgIDEwMDAwMTAxNTU4N181WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMzkuNzIlLS0+IDEwMDAwMDAwMDY1OQogICAgMTAwMDAxMDAwODk0WyJOdWNsZWFyIERhbWFnZTxicj5Db21wZW5zYXRpb24gYW5kPGJyPkRlY29tbWlzc2lvbmluZzxicj5GYWNpbGl0YXRpb24gQ29ycCJdIC0tNTQuNzUlLS0+IDEwMDAwMDAwMDY1OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS01LjUzJS0tPiAxMDAwMDAwMDA2NTkKICAgIDEwMDAwMDAwMDY1OVsiVG9reW8gRWxlY3RyaWMgUG93ZXI8YnI+Q28iXSAtLTUwLjAlLS0+IDEwMDAwMDAwMTUzMwogICAgMTAwMDAwMDAxNTMzWyJKRVJBIENvIEluYyJdIC0tNS4wJS0tPiBQMTAwMDAxMDQ4MTY0CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3LjA3JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTIuMzQlLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjU5JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAwMDAwNjQxWyJFbGVjdHJpYyBQb3dlcjxicj5EZXZlbG9wbWVudCBDbyBMdGQiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDMzMzMKICAgIDEwMDAwMDAwMzMzM1siSi1QT1dFUiBIb2xkaW5nczxicj4oVGhhaWxhbmQpIENvIEx0ZCJdIC0tMjUuMCUtLT4gUDEwMDAwMTA0ODE2NAogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00NC40NSUtLT4gMTAwMDAwMDAyMTMwCiAgICAxMDAwMDEwMDAxNTNbIkdvdmVybm1lbnQgb2Y8YnI+VGhhaWxhbmQiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDIxMjkKICAgIDEwMDAwMDAwMjEyOVsiRWxlY3RyaWNpdHk8YnI+R2VuZXJhdGluZyBBdXRob3JpdHk8YnI+b2YgVGhhaWxhbmQiXSAtLTI1LjQxJS0tPiAxMDAwMDAwMDIxMzAKICAgIDEwMDAwMTAxMTExNFsiVEVQRElBIEdlbmVyYXRpbmcgQlYiXSAtLTIzLjk0JS0tPiAxMDAwMDAwMDIxMzAKICAgIDEwMDAwMTAxMTExNVsiRWxlY3RyaWNpdHk8YnI+R2VuZXJhdGluZyBBdXRob3JpdHk8YnI+b2YgVGhhaWxhbmQgU2F2aW5nICY8YnI+Q3JlZGl0IENvb3BlcmF0aXZlPGJyPkx0ZCJdIC0tNi4yJS0tPiAxMDAwMDAwMDIxMzAKICAgIDEwMDAwMDAwMjEzMFsiRWxlY3RyaWNpdHk8YnI+R2VuZXJhdGluZyBQQ0wiXSAtLTUwLjAlLS0+IDEwMDAwMjAxNzIzNAogICAgMTAwMDAwMDAwNjQxWyJFbGVjdHJpYyBQb3dlcjxicj5EZXZlbG9wbWVudCBDbyBMdGQiXSAtLTQ5LjAlLS0+IDEwMDAwMjAxNzIzNAogICAgMTAwMDAyMDE3MjM0WyJHZW5lcmF0aW5nIEVsZWN0cmljPGJyPlBDTCJdIC0tMTAwLjAlLS0+IDEwMDAwMjAxNjUxNQogICAgMTAwMDAyMDE2NTE1WyJHdWxmIFlhbGEgR3JlZW4gQ288YnI+THRkIl0gLS00OS4wJS0tPiBQMTAwMDAxMDQ4MTY0CiAgICAxMDAwMDAwMDIxMjlbIkVsZWN0cmljaXR5PGJyPkdlbmVyYXRpbmcgQXV0aG9yaXR5PGJyPm9mIFRoYWlsYW5kIl0gLS0xMi4wJS0tPiBQMTAwMDAxMDQ4MTY0CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjIlLS0+IDEwMDAwMDAwMDY0OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS41JS0tPiAxMDAwMDAwMDA2NDgKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi4zJS0tPiAxMDAwMDAwMDA2NDgKICAgIDEwMDAwMDAwMDY0OFsiS3l1c2h1IEVsZWN0cmljPGJyPlBvd2VyIENvIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMzQ0OQogICAgMTAwMDAwMDAzNDQ5WyJLeXVkZW4gSW50ZXJuYXRpb25hbDxicj5Db3JwIl0gLS0yLjAlLS0+IFAxMDAwMDEwNDgxNjQKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuNjklLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02OC4xOSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMTYxMjdbIkJOWU0gQVMgQUdULyBDTFRTIDEwPGJyPlBlcmNlbnQiXSAtLTkuMjUlLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01Ljg3JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDAwMDY1MVsiTWl0c3VpICYgQ28gTHRkIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAzNTg0CiAgICAxMDAwMDAwMDM1ODRbIk1pdC1Qb3dlciAoVGhhaWxhbmQpPGJyPkx0ZCJdIC0tMS4wJS0tPiBQMTAwMDAxMDQ4MTY0CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjU3JS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43JS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ5LjM1JS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMTkuNiUtLT4gMTAwMDAwMDAwNjUwCiAgICAxMDAwMDEwMTYxMjdbIkJOWU0gQVMgQUdULyBDTFRTIDEwPGJyPlBlcmNlbnQiXSAtLTkuNzglLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAwMDAwNjUwWyJNaXRzdWJpc2hpIENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDE0NDUKICAgIDEwMDAwMDAwMTQ0NVsiRGlhbW9uZCBHZW5lcmF0aW5nPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDA2MjAKICAgIDEwMDAwMTAwMDYyMFsiRGlhbW9uZCBHZW5lcmF0aW5nPGJyPkFzaWEiXSAtLTIuMCUtLT4gUDEwMDAwMTA0ODE2NAogICAgUDEwMDAwMTA0ODE2NFsiWWFsYSBwb3dlciBzdGF0aW9uIl0K}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of bioenergy power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-bioenergy-power-tracker/ Global Bioenergy Power Tracker] on the Global Energy Monitor website.
+[[Category:Bioenergy power stations]][[Category:Bioenergy power stations in Thailand]]

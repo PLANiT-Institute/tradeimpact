@@ -1,0 +1,170 @@
+# GEM wiki page: Quang Tri power station
+# URL: https://www.gem.wiki/Quang_Tri_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Quang Tri power station''' is a power station in Hai Khe, Hai Lang, Quảng Trị, Vietnam with multiple units of varying statuses, none of which are currently operating.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Quang Tri power station
+| Hai Khe, Hai Lang, Quảng Trị, Vietnam
+| 16.75658, 107.36713 (approximate)
+|}
+{{
+#display_map:
+16.75658, 107.36713
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Phase 1 Unit 1
+| Announced<ref name="autoref_0">{{cite web |url=https://theinvestor.vn/evn-seeks-to-invest-in-1320-mw-abolished-coal-fired-power-project-in-central-vietnam-d14477.html}}</ref>
+| coal: bituminous
+| 600
+| ultra-supercritical
+| 2030 (planned)<ref name="autoref_1">{{cite web |url=https://baomoi.com/quang-tri-xem-xet-danh-gia-de-xuat-tai-du-an-nha-may-nhiet-dien-quang-tri-c53245244.epi}}</ref>
+| False
+|-
+| Phase 1 Unit 2
+| Announced<ref name="autoref_0" />
+| coal: bituminous
+| 600
+| ultra-supercritical
+| 2030 (planned)<ref name="autoref_1" />
+| False
+|-
+| Phase 2 Unit 1
+| Cancelled
+| coal: bituminous
+| 600
+| ultra-supercritical
+| 2028
+| False
+|-
+| Phase 2 Unit 2
+| Cancelled
+| coal: bituminous
+| 600
+| ultra-supercritical
+| 2028
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Phase 1 Unit 1
+| EGAT International Co Ltd [100%]
+| Electricity Generating Authority of Thailand [100.0%]
+|-
+| Phase 1 Unit 2
+| EGAT International Co Ltd [100%]
+| Electricity Generating Authority of Thailand [100.0%]
+|-
+| Phase 2 Unit 1
+| Korea Western Power Co Ltd [100%]
+| Korea Electric Power Corp [100.0%]
+|-
+| Phase 2 Unit 2
+| Korea Western Power Co Ltd [100%]
+| Korea Electric Power Corp [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Quảng Trị-1==
+
+In August 2013, Quảng Trị provincial officials announced that the company Electricity Generating Authority of Thailand ([[EGAT]]) had been licensed to build a $2.3 billion, 1,200-MW, two-unit coal-fired power plant in the Quang Tri Southeast Economic Zone. The project was originally scheduled to come online in 2019-20.<ref>[http://tuoitrenews.vn/business/12425/thailands-power-firm-to-set-up-226-bln-plant-in-central-vn Thailand's Power Firm to Set Up $2.26 Billion Plant in Central Vietnam], ''Tuoi Tre News'', Aug. 21, 2013.</ref> 
+
+The company signed a memorandum of understanding with the Quang Tri provincial government in July 2014. Financial arrangements and land acquisition had not yet been completed at that time. The plant is being built under a build-own-transfer (BOT) scheme. Construction was scheduled to begin at the end of 2017; the first unit would go online in June 2021, and the second in December 2021.<ref>[http://www.nationmultimedia.com/business/Egats-power-plant-project-gets-go-ahead-in-Quang-T-30238472.html Egat's power plant project gets go-ahead in Quang Tri], Nation Multimedia, 15 July 2014.</ref><ref>[http://www.egat.co.th/en/index.php?option=com_content&view=article&id=207:egati-and-provincial-people-s-committee-of-quang-tri-signed-mou-to-develop-quang-tri-thermal-power-plant-in-vietnam&catid=11:news-release&Itemid=112 EGATI and Provincial People's Committee of Quang Tri signed MOU to develop Quang Tri Thermal Power Plant in Vietnam], EGATI press release, 21 July 2014.</ref>
+
+According to the revised Power Development Plan VII (2016), the project will be completed in 2023 and 2024.<ref name=PDP>DANH MỤC CÁC DỰ ÁN NGUỒN ĐIỆN VÀO VẬN HÀNH GIAI ĐOẠN 2016 - 2030, Ban hành kèm theo Quyết định số 428/QĐ-TTg ngày 18 tháng 3 năm 2016 của Thủ tướng Chính phủ (''LIST OF POWER PROJECT IN OPERATION PERIOD 2016 - 2030, Issued together with Decision No. 428 / QD - TTg of March 18, 2016 by the Prime Minister'')</ref>
+
+EGAT completed a feasibility study in July 2016; that feasibility study was later approved by the Ministry of Industry & Trade.<ref>[http://baodautu.vn/eagti-hoan-thanh-ho-so-nghien-cuu-kha-thi-du-an-nha-may-nhiet-dien-quang-tri-d47969.html EAGTi hoàn thành hồ sơ nghiên cứu khả thi Dự án Nhà máy nhiệt điện Quảng Trị], Dautu Online, 7 July 2016.</ref> In February 2017, EGAT said it planned to begin construction in mid-2019. The project would cost $2.2 billion.<ref>[http://baodautu.vn/aegti-du-kien-khoi-cong-nha-may-nhiet-dien-quang-tri-1-vao-giua-nam-2019-d58370.html AEGTi dự kiến khởi công Nhà máy nhiệt điện Quảng Trị 1 vào giữa năm 2019], Dautu Online, 3 Feb. 2017.</ref> In February, provincial officials pushed EGAT to begin construction in 2018.<ref>[http://m.icon.com.vn/vi-VN/c580/131959/Quang-Tri-Phan-dau-khoi-cong-xay-dung-Nha-may-Nhiet-dien-1-nam-2018.aspx Quảng Trị: Phấn đấu khởi công xây dựng Nhà máy Nhiệt điện 1 năm 2018], Icon, 20 Feb. 2017.</ref> In June 2017, EGAT said it would indeed begin construction in 2018.<ref>[http://www.baoquangtri.vn/Thời-sự/modid/445/ItemID/121976 UBND tỉnh Quảng Trị làm việc với Tổng cục Năng lượng - Bộ Công thương về dự án Nhà máy nhiệt điện Quảng Trị], Quang Tri Online, 22 June 2017.</ref>
+
+On June 24, 2017, Quang Ninh Thermal Power Plant (EGATi) and the Department of Energy (MOIT) signed an a Memorandum of Understanding on the BOT project. According to the MoU, Units 1 and 2 will be put into commercial operation in 2021.<ref>[http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/buoc-tien-moi-trong-du-an-nhiet-dien-quang-tri.html "Bước tiến mới trong dự án Nhiệt điện Quảng Trị,"] NANGLUONG VIETNAM, 24 October 2017</ref>
+
+In December 2018, EGAT announced that construction had been delayed but that it planned to begin by September 2019.<ref>[https://baodautu.vn/day-nhanh-tien-do-thuc-hien-du-an-nha-may-nhiet-dien-bot-quang-tri-1-d92449.html Accelerate the implementation of the Quang Tri BOT Thermal Power Plant project 1], Dautur, Dec. 13, 2018</ref> In June 2019 the completion date for Unit 1 was delayed to 2026 and the completion date for Unit 2 was delayed to 2027 in the Ministry Of Industry And Trade's report on the implementation of the revised seventh Power Development Plan (PDP7).<ref>[http://vepg.vn/wp-content/uploads/2019/06/MOIT_Report_58_BC_BCT.pdf Implementation of Power Projects in the Revised Power Development Plan 7], Ministry of Industry and Trade, Republic of Vietnam, Jun. 4, 2019</ref> In November 2019 a ground-breaking ceremony for the plant was held and a 23.5-km road connecting the Quảng Trị Southeastern Industrial Park with Cửa Việt Port was inaugurated.<ref>[http://vietnamnews.vn/economy/548907/construction-on-quang-tri-1-thermal-power-plant-kicks-off.html#PxQgyG6cKctfrU5t.99 Construction on Quảng Tri 1 thermal power plant kicks off], Vietnam News, Nov. 25, 2019</ref>
+
+In September 2020, Thailand's three leading energy companies EGATi, Ratch Group, and Electricity Generating Corp. (EGCO) signed an agreement to develop the plant.<ref name=vb>[https://vietnambiz.vn/ba-cong-ty-nang-luong-hang-dau-thai-lan-dau-tu-vao-nhiet-dien-quang-tri-1-20200918214747764.htm Ba công ty năng lượng hàng đầu Thái Lan đầu tư vào nhiệt điện Quảng Trị 1], VietnamBiz, Sep. 18, 2020</ref> In December 2020 the Provincial People's Committee Le Duc Tien asked EGATi to complete negotiations for a build-operate-transfer (BOT) contract with the Vietnamese Industry and Trade Ministry before the end of 2020.<ref>[https://www.quangtri.gov.vn/chi-tiet-tin/-/view-article/1/13848241113627/1607097061184 Tin tức nổi bật UBND tỉnh Quảng Trị làm việc trực tuyến với Công ty Điện lực quốc tế Thái Lan (EGATi)], www.quangtri.gov.vn], Dec. 5, 2020</ref> Without a BOT contract negotiations would have to be restarted once Vietnam's new Public-Private Partnership (PPP) law takes effect in January 2021.<ref>[https://www.vietnam-briefing.com/news/vietnams-new-ppp-law-set-to-take-effect-january-2021.html/ Vietnam’s New PPP Law Set to Take Effect January 2021], Vietnam Briefing, Aug. 28, 2020</ref> According to GreenID the project had been permitted as of June 2021.<ref>Communication with GreenID, July 2021</ref> In August 2021 it was reported that the sponsors' inability to form a Build-Own-Transfer (BOT) company was one reason for the delay in starting construction.<ref>[https://vir.com.vn/construction-of-quang-tri-1-thermal-power-plant-deemed-unfeasible-86996.html Construction of Quang Tri 1 thermal power plant deemed unfeasible], Vietnam Investment Review, Aug. 25, 2021</ref>
+
+An October 2021 report by GreenID lists the Quảng Trị-1 power station as one of 18 coal-fired power stations in Vietnam that was struggling to secure financing. Given that China, Japan, and South Korea have all committed to stop financing new coal-fired power stations, it will be extremely difficult for any of these projects to secure funding in the future.<ref>Trung Chanh, [https://thesaigontimes.vn/18-du-an-nhiet-dien-than-trong-quy-hoach-kho-tiep-can-von/ 18 dự án nhiệt điện than trong quy hoạch khó tiếp cận vốn], The Saigon Times, Oct. 3, 2021</ref> In March 2022, Report No. 1562 by the Office of the Government of Vietnam stated that the plant was financially troubled.<ref>[https://www.mondaq.com/investment-strategy/1192944/bot-projects-the-path-to-closure-in-vietnam Vietnam: BOT Projects--The Path To Closure In Vietnam], Mondaq, Jun. 9, 2022</ref>
+
+On July 4, 2022, the Ministry of Industry and Trade appeared to provide an update on the draft PDP. The document’s list of major power projects planned for 2021-2030 (PDF pages 18-20) included the project.<ref>[https://ia601508.us.archive.org/4/items/pdp-8-jul-22/PDP8%20-%20jul%2022.pdf “Draft National Power Development Plan VIII,”] MOIT, July 4, 2022</ref>
+
+In October 2022, the Thai Ministry of Energy announced that the project was cancelled following nearly a decade of delays. The decision was made following recommendations from the provincial People’s Committee, financial problems, and Vietnam's net zero emissions commitments. Official cancellation documents for the Vietnamese Ministry of Industry and Trade and Quảng Trị Province were on their way.<ref>[https://www.einnews.com/pr_news/594834526/thai-energy-ministry-terminates-1-320mw-thermal-power-project-in-qu-ng-tr “Thai Energy Ministry terminates 1,320MW thermal power project in Quảng Trị,”] Vietnam Economy News, October 8, 2022</ref>
+
+As of February 2025, Power Generation JSC 1 (EVNGENCO 1), a subsidiary of state-owned utility Vietnam Electricity (EVN), was seeking to invest in the cancelled project. EVNGENCO 1 reportedly informed Quảng Trị provincial leaders of its interest in developing the project, though its preferred fuel was unclear.<ref>[https://theinvestor.vn/evn-seeks-to-invest-in-1320-mw-abolished-coal-fired-power-project-in-central-vietnam-d14477.html “EVN seeks to invest in 1,320 MW abolished coal-fired power project in central Vietnam,”] The Investor, February 11, 2025</ref>
+
+In March 2025, the People's Committee of Quang Tri had a working session to discuss the revival of Quảng Trị-1. EVN stated that if they were the investor in the project, it would be developed using coal. If there was a different investor, the project would be proposed using a different fuel in Vietnam's upcoming adjusted Power Development Plan VIII.<ref>[https://baophapluat.vn/ai-lam-chu-dau-tu-nhiet-dien-22-ti-usd-o-quang-tri-post541866.html "Ai làm chủ đầu tư nhiệt điện 2,2 tỉ USD ở Quảng Trị?,"] Báo Pháp luật Việt Nam, March 8, 2025</ref> The plan was reiterated at a March 21 working session facilitated by Vietnam's Deputy Minister of Science and Technology.<ref>[https://baoquangtri.vn/chinh-phu-xu-ly-kien-nghi-cua-tinh-quang-tri-quang-binh-va-tp-hue-192440.htm "Chính phủ xử lý kiến nghị của tỉnh Quảng Trị, Quảng Bình và TP. Huế,"] Báo Quảng Trị, March 21, 2025</ref>
+
+As of March 2025, the status of Quảng Trị-1 was updated from "cancelled" to "announced".
+
+In June 2025, Quang Tri Provincial People's Committee proposed that MOIT formally request that EVN be assigned to the implementation of Quảng Trị-1. The proposal would consider the power station an "emergency power project" (Google translate) to be implemented between 2025 and 2030.<ref>[https://nhadautu.vn/quang-tri-de-nghi-giao-evn-lam-nha-may-nhiet-dien-55000-ty-d96880.html "Quảng Trị đề nghị giao EVN làm nhà máy nhiệt điện 55.000 tỷ,"] Nhà đầu tư, June 14, 2025</ref>
+
+In September 2025, Quang Tri Provincial People's Committee was assigned to "analyze and clarify urgent requirements for project investment". EVNGENCO 1 stated that, if selected for the project, construction could begin in the second half of 2026. Commercial operation remained slated for 2030.<ref>[https://baomoi.com/quang-tri-xem-xet-danh-gia-de-xuat-tai-du-an-nha-may-nhiet-dien-quang-tri-c53245244.epi "Quảng Trị xem xét đánh giá đề xuất tại dự án Nhà máy nhiệt điện Quảng Trị,"] Báo Mới, September 15, 2025</ref>
+
+In October 2025, an investment proposal was reportedly being prepared, and it was expected to be completed in November.<ref>[https://baoquangtri.vn/thoi-su/202510/day-nhanh-tien-do-thuc-hien-cac-du-an-tai-khu-vuc-my-thuy-fc57c61/ Đẩy nhanh tiến độ thực hiện các dự án tại khu vực Mỹ Thuỷ], Báo và phát thanh, truyền hình Quảng Trị, October 30, 2025</ref> In January 2026, investment procedures appeared to remain ongoing.<ref>[https://batdongsan.vtv.vn/news/quang-tri-lap-to-cong-tac-tang-toc-giai-phong-mat-bang-du-an-trong-diem Quảng Trị lập tổ công tác, tăng tốc giải phóng mặt bằng dự án trọng điểm], Thời báo VTV, January 9, 2026</ref>
+
+==Quảng Trị-2==
+
+In November 2016, KEPCO announced that it was looking at the possibility of building a second phase of the plant.<ref>[http://bqlkkt.quangtri.gov.vn/vi/news/tin-trong-tinh/tap-doan-dien-luc-han-quoc-nghien-cuu-dau-tu-nha-may-nhiet-dien-2-tai-khu-kinh-te-dong-nam-quang-tri-47.html Tập đoàn điện lực Hàn Quốc nghiên cứu đầu tư Nhà máy Nhiệt điện 2 tại Khu kinh tế Đông Nam Quảng Trị], Quảng Trị Province press release, 21 Nov. 2016.</ref> In January 2017, Korea Western Power Co., a subsidiary of [[KEPCO]], signed an agreement with Quảng Trị provincial officials to build the 1,200-MW, two-unit Quảng Trị-2. The project would cost $1.85 billion, and would be completed by the end of 2024.<ref>[http://icon.com.vn/vn-s83-131604-626/Han-Quoc-xay-nha-may-nhiet-dien-chay-than-tai-Quang-Tri.aspx Hàn Quốc xây nhà máy nhiệt điện chạy than tại Quảng Trị], Icon.com.vn, 20 Jan. 2017.</ref> The contract was a Build, Operate, Transfer (BOT) contract, meaning KEPCO will likely invest equity in the project.<ref>[https://lexcommvn.com/image/files/Vietnam%20BOT%20power%20projects%20-%20MOIT%20imposes%20tougher%20statutory%20remedies%20for%20delays.pdf Vietnam BOT power projects: MOIT imposes tougher statutory remedies for delays], LexComm, April 2017</ref>
+
+In October 2018 the CEO of Korea Western Power, a KEPCO subsidiary, said the company would abide by international standards in developing the Quảng Trị-2 plant, and will consider converting the project into renewable power.<ref>[https://www.youtube.com/watch?v=x1-pS3WgkZw "중부발전 사장, 국감에서 찌레본 3호기 중단하였다고 밝혀 - 중부발전/서부발전 국정감사 질의 응답,"] Youtube, 2018.10.18, at 4:10 minutes</ref> In January 2019 it was reported that a plan for a 2 x 600 MW Quảng Trị-2 plant had been submitted to the MOIT.<ref>[http://nangluongvietnam.vn/news/vn/bao-ton-nang-luong/trung-tam-nang-luong-cua-mien-trung-va-buoc-di-cua-tinh-quang-tri.html Trung tâm năng lượng của miền Trung và bước đi của tỉnh Quảng Trị], Nang Luong, Jan. 16, 2019</ref> In October 2020, facing criticism for investing in the [https://www.gem.wiki/Vung_Ang_power_station Vung Ang-2 power station], KEPCO declared that it would not develop any additional overseas coal power plants beyond Vung Ang-2 and three other projects in Indonesia, the Philippines, and South Africa.<ref>[http://www.businesskorea.co.kr/news/articleView.html?idxno=54060 KEPCO Declares Exit from Overseas Coal Power Plant Market], Business Korea, Oct. 29, 2020</ref>
+
+On July 4, 2022, the Ministry of Industry and Trade appeared to provide an update on the draft PDP. The document’s list of major power projects planned for 2021-2030 (PDF pages 18-20) did not include the project.<ref>[https://ia601508.us.archive.org/4/items/pdp-8-jul-22/PDP8%20-%20jul%2022.pdf “Draft National Power Development Plan VIII,”] MOIT, July 4, 2022</ref> On July 15, 2022, the Deputy Prime Minister appeared to request further review of the major power projects that had been included in the revised PDP VII but not in the draft PDP VIII.<ref>[https://laodong.vn/kinh-doanh/thiet-hai-ra-sao-neu-khong-lam-2430mw-dien-mat-troi-ngoai-quy-hoach-dien-8-1069783.ldo “Thiệt hại ra sao nếu không làm 2.430MW điện mặt trời ngoài quy hoạch Điện 8,”] Laodong, July 18, 2022</ref> The project is presumed shelved for now.
+
+In October 2022, with four years since the last known update on the proposed expansion, it was presumed cancelled.
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Vietnam]]

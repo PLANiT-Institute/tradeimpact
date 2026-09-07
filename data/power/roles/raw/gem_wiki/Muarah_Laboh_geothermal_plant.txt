@@ -1,0 +1,106 @@
+# GEM wiki page: Muarah Laboh geothermal plant
+# URL: https://www.gem.wiki/Muarah_Laboh_geothermal_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalGeothermalPowerTracker}}
+'''Other names:''' Muara Laboh
+
+'''Muarah Laboh geothermal plant''' is an operating geothermal power plant in Pauh Duo, West Sumatra, Indonesia.
+
+==Project Details==
+==== '''Table 1:''' Unit-level project details for Muarah Laboh geothermal plant ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://www.thinkgeoenergy.com/map/ |title=Global Geothermal Power Plant Map | ThinkGeoEnergy - Geothermal Energy News |date=2012-01-10 |access-date=2025-01-06 |archive-url=https://web.archive.org/web/20221108130549/http://thinkgeoenergy.com/map |archive-date=2022-11-08}}</ref>
+| 2019<ref name="autoref_1">{{cite web |url=https://www.supreme-energy.com/pt-supreme-energy-muara-laboh |archive-url=https://web.archive.org/web/20221203190825/https://www.supreme-energy.com/pt-supreme-energy-muara-laboh |archive-date=2022-12-03}}</ref>
+| 85 MW<ref name="autoref_2">{{cite web |url=https://www.thinkgeoenergy.com/japanese-inpex-corp-joins-muara-laboh-geothermal-project-indonesia/ |archive-url=https://web.archive.org/web/20221012131114/https://www.thinkgeoenergy.com/japanese-inpex-corp-joins-muara-laboh-geothermal-project-indonesia/ |archive-date=2022-10-12}}</ref>
+| Flash steam - double<ref name="autoref_0" />
+| PT Supreme Energy [30%]; ENGIE SA [18%]; Sumitomo Corp [18%]; INPEX Corp [33%] (住友商事株式会社; 株式会社INPEX)<ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_0" />
+| PT Supreme Energy<ref name="autoref_2" />
+|-
+| 2
+| Construction<ref name="autoref_1" />
+| 2027 (planned)<ref name="autoref_3">{{cite web |url=https://www.thinkgeoenergy.com/drilling-starts-for-80-mw-expansion-of-muara-laboh-geothermal-site-indonesia/?mc_cid=1d2f1e3577&mc_eid=d10d0dab34}}</ref>
+| 80 MW<ref name="autoref_4">{{cite web |url=https://geothermaltransition.com/news/asia-pacific/supreme-energy-begins-muara-laboh-unit-2-development}}</ref><ref name="autoref_1" />
+| Flash steam - unknown<ref name="autoref_5">{{cite web |url=https://www.sumitomocorp.com/en/jp/news/release/2025/group/18900}}</ref>
+| Sumitomo Corp [18%]; PT Supreme Energy [30%]; INPEX Corp [33%]; ENGIE SA [18%] (住友商事株式会社; 株式会社INPEX)<ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_2" />
+| PT Supreme Energy<ref name="autoref_2" />
+|-
+| 3
+| Pre-construction<ref name="autoref_6">{{cite web |url=https://www.thinkgeoenergy.com/pt-supreme-energy-signs-ppa-amendment-for-muara-laboh-geothermal-expansion/}}</ref>
+| 2033 (planned)<ref name="autoref_6" />
+| 60 MW<ref name="autoref_6" />
+| Flash steam - unknown<ref name="autoref_5" />
+| –
+| –
+|}
+
+==Location==
+==== '''Table 2:''' Unit-level location details for Muarah Laboh geothermal plant ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Pauh Duo, West Sumatra, Indonesia<ref name="autoref_7">{{cite web |url=https://goo.gl/maps/qXmfm4wipeVPQ46X7 |archive-url=https://web.archive.org/web/20220418171654/https://www.google.com/maps/place/Muara+Laboh+Geothermal+Power+Plant%2FPT+Supreme+Energy+Muara+Laboh/@-1.6245867,101.1272021,1117m/data=!3m1!1e3!4m5!3m4!1s0x0:0x6be3a0fd2ef6749f!8m2!3d-1.6268812!4d101.1296539?shorturl=1 |archive-date=18 April 2022}}</ref>
+| -1.6268, 101.1296 (exact)<ref name="autoref_7" />
+|-
+| 2
+| Pauh Duo, West Sumatra, Indonesia<ref name="autoref_7" />
+| -1.6268, 101.1296 (exact)<ref name="autoref_7" />
+|-
+| 3
+| Pauh Duo, West Sumatra, Indonesia<ref name="autoref_7" />
+| -1.6268, 101.1296 (exact)<ref name="autoref_7" />
+|}
+The map below shows the exact locations of the geothermal power plant units:
+{{
+#display_map:
+-1.6268, 101.1296~ ~ ~ ~ ~Units 1, 2, 3
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/tracker-map/ interactive map] of global geothermal power plants, a [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/download-data/ downloadable dataset], and [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/ Global Geothermal Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Geothermal power plants]]
+[[Category:Geothermal power plants in Indonesia]]
+[[Category:Flash steam geothermal power plants]]
+
+__NOTOC__

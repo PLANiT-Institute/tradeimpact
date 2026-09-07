@@ -2,8 +2,12 @@
 
 Inputs
     roles/processed/project_roles.csv      hand register: company x unit x role, phase, share
-    roles/processed/gem_ownership.csv      equity rows read from the tracker's owner shares
-    roles/processed/gem_wiki_roles.csv     EPC, equipment, finance, O&M rows from the wiki pages
+    roles/processed/company_ir_roles.csv   company disclosures and project pages, each row citing
+                                           the page on disk that states the role or the share
+    roles/processed/gem_tracker_roles.csv  investment and operation rows from the tracker's own
+                                           Owner / Parent / Operator fields
+    roles/processed/gem_wiki_roles.csv     development, construction and finance rows from the
+                                           wiki pages
     companies/method/companies.csv         names and HQ for the tracker-derived rows
     output/ti_power_by_unit.csv            unit x scenario lifetime results
 Outputs
@@ -15,10 +19,16 @@ Attribution rule (project lead, 2026-09-05): every role is attributed separately
 rows of different roles are never added together, and the share stays a column, so the weighting
 can be changed later without re-collecting. A plant-level role (gem_location_id, no unit id)
 applies to every unit at that location. Rows come from two origins, kept in the ``origin``
-column: ``register`` (hand-gathered, any role) and ``gem`` (equity_owner rows read from the
-tracker's owner shares); where the register has an equity_owner row for the same company and
-unit, the register wins. A row whose company is headquartered in the unit's country is a
-domestic holding, not a trade, and is dropped and counted.
+column: ``register`` (hand-gathered, any role), ``company_ir`` (read from a company disclosure or
+project page that is on disk and hash-recorded), ``gem`` (investment and operation rows from the
+tracker's own fields) and ``gem_wiki`` (development, construction and finance rows read from the
+wiki pages). Precedence is register, then company_ir, then tracker, then wiki, per company x plant
+x role, so a sourced reading always replaces a machine one of the same role. A row whose company is
+headquartered in the unit's country is a domestic role, not a trade, and is dropped and counted.
+
+The five phases are separate and never pooled: **development**, **construction** (EPC and
+equipment), **investment** (equity), **operation** (O&M) and **finance** (debt and cover). A
+utility that both owns and operates a plant carries two rows, one in each phase.
 
 Run from the repository root:  .venv/bin/python script/power/model/aggregate_roles.py
 """
@@ -32,9 +42,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from power_io import DATA, OUT, REPO, hand_file_required, num, read_csv, write_csv  # noqa: E402
 
 ROLES = DATA / "roles" / "processed" / "project_roles.csv"
-GEM_OWNERSHIP = DATA / "roles" / "processed" / "gem_ownership.csv"
+GEM_TRACKER = DATA / "roles" / "processed" / "gem_tracker_roles.csv"
 GEM_WIKI = DATA / "roles" / "processed" / "gem_wiki_roles.csv"
 COMPANIES = DATA / "companies" / "method" / "companies.csv"
+COMPANY_IR = DATA / "roles" / "processed" / "company_ir_roles.csv"
+VOCAB = DATA / "roles" / "method" / "roles.csv"
 SCOPE = DATA / "registry" / "scope.csv"
 BY_UNIT = OUT / "ti_power_by_unit.csv"
 BY_ROLE = OUT / "ti_power_by_role.csv"
@@ -77,6 +89,7 @@ COMPANY_FIELDS = [
     "units",
     "units_with_share",
     "units_from_register",
+    "units_from_company_ir",
     "units_from_gem",
     "units_from_wiki",
     "capacity_mw",
@@ -166,6 +179,9 @@ def company_totals(rows: list[dict[str, object]]) -> list[dict[str, object]]:
                 "units_from_register": len(
                     {str(r["gem_unit_id"]) for r in rs if r["origin"] == "register"}
                 ),
+                "units_from_company_ir": len(
+                    {str(r["gem_unit_id"]) for r in rs if r["origin"] == "company_ir"}
+                ),
                 "units_from_gem": len({str(r["gem_unit_id"]) for r in rs if r["origin"] == "gem"}),
                 "units_from_wiki": len(
                     {str(r["gem_unit_id"]) for r in rs if r["origin"] == "gem_wiki"}
@@ -191,99 +207,73 @@ def company_totals(rows: list[dict[str, object]]) -> list[dict[str, object]]:
 
 def merge_registers(
     register: list[dict[str, str]],
-    gem: list[dict[str, str]],
+    tracker: list[dict[str, str]],
+    wiki: list[dict[str, str]],
     companies: dict[str, dict[str, str]],
+    vocab: dict[str, dict[str, str]],
     exclude_home: bool = True,
-    wiki: list[dict[str, str]] | None = None,
+    company_ir: list[dict[str, str]] | None = None,
 ) -> tuple[list[dict[str, str]], int]:
-    """Register rows, then uncovered tracker equity rows, then uncovered wiki-read roles.
+    """Register rows, then tracker rows, then wiki rows, one per company x plant x role.
 
-    Domestic rows are dropped and counted. A wiki equity row is used only where neither the
-    register nor the tracker names that company on that plant.
+    Domestic rows (the company's own country) are dropped and counted. A machine-read row is
+    skipped where a source of higher standing already states that company's role on that plant.
     """
     out: list[dict[str, str]] = []
     domestic = 0
-    covered = {(r["company_id"], r["gem_unit_id"]) for r in register if r["role"] == "equity_owner"}
-    covered_loc = {
-        (r["company_id"], r["gem_location_id"])
-        for r in register
-        if r["role"] == "equity_owner" and r["gem_location_id"]
-    }
-    for r in register:
-        if exclude_home and r["company_country"] == r["country"] and r["country"]:
-            domestic += 1
-            continue
-        out.append({**r, "origin": "register"})
-    for g in gem:
-        c = companies[g["company_id"]]
-        if exclude_home and c["country"] == g["country"]:
-            domestic += 1
-            continue
-        if (g["company_id"], g["gem_unit_id"]) in covered or (
-            g["company_id"],
-            g["gem_location_id"],
-        ) in covered_loc:
-            continue
-        out.append(
-            {
-                "company_id": g["company_id"],
-                "company_name": c["name_en"],
-                "company_country": c["country"],
-                "company_type": c["type"],
-                "gem_unit_id": g["gem_unit_id"],
-                "gem_location_id": "",
-                "plant_name": g["plant_name"],
-                "country": g["country"],
-                "role": "equity_owner",
-                "phase": "operation",
-                "share": g["share"],
-                "share_basis": "equity_share",
-                "from_year": "",
-                "to_year": "",
-                "source_url": g["source_url"],
-                "source_note": f"tracker {g['level']} entry: {g['entity']}",
-                "accessed_date": "",
-                "origin": "gem",
-            }
-        )
-    covered_roles = {
-        (r["company_id"], r["gem_location_id"], r["role"]) for r in register if r["gem_location_id"]
-    }
-    owners_by_location = {(g["company_id"], g["gem_location_id"]) for g in gem}
-    for w in wiki or []:
-        c = companies[w["company_id"]]
-        if exclude_home and c["country"] == w["country"]:
-            domestic += 1
-            continue
-        if (w["company_id"], w["gem_location_id"], w["role"]) in covered_roles:
-            continue
-        if (
-            w["role"] == "equity_owner"
-            and (w["company_id"], w["gem_location_id"]) in owners_by_location
-        ):
-            continue
-        out.append(
-            {
-                "company_id": w["company_id"],
-                "company_name": c["name_en"],
-                "company_country": c["country"],
-                "company_type": c["type"],
-                "gem_unit_id": "",
-                "gem_location_id": w["gem_location_id"],
-                "plant_name": w["plant_name"],
-                "country": w["country"],
-                "role": w["role"],
-                "phase": w["phase"],
-                "share": w["share"],
-                "share_basis": w["share_basis"],
-                "from_year": "",
-                "to_year": "",
-                "source_url": w["source_url"],
-                "source_note": f"GEM wiki sentence: {w['sentence'][:200]}",
-                "accessed_date": "",
-                "origin": "gem_wiki",
-            }
-        )
+    seen: set[tuple[str, str, str]] = set()
+
+    def keys(company: str, unit: str, location: str, role: str) -> list[tuple[str, str, str]]:
+        return [(company, place, role) for place in (unit, location) if place]
+
+    for origin, rows in (("register", register), ("company_ir", company_ir or [])):
+        for r in rows:
+            if exclude_home and r["country"] and r["company_country"] == r["country"]:
+                domestic += 1
+                continue
+            candidate = keys(r["company_id"], r["gem_unit_id"], r["gem_location_id"], r["role"])
+            if any(k in seen for k in candidate):
+                continue
+            out.append({**r, "origin": origin})
+            seen.update(candidate)
+    for origin, rows in (("gem", tracker), ("gem_wiki", wiki)):
+        for g in rows:
+            c = companies[g["company_id"]]
+            if exclude_home and c["country"] == g["country"]:
+                domestic += 1
+                continue
+            unit = g.get("gem_unit_id", "")
+            candidate = keys(g["company_id"], unit, g["gem_location_id"], g["role"])
+            if any(k in seen for k in candidate):
+                continue
+            seen.update(candidate)
+            note = (
+                f"tracker {g['level']} field: {g['entity']}"
+                if origin == "gem"
+                else f"GEM wiki sentence: {g.get('sentence', '')[:200]}"
+            )
+            out.append(
+                {
+                    "company_id": g["company_id"],
+                    "company_name": c["name_en"],
+                    "company_country": c["country"],
+                    "company_type": c["type"],
+                    "gem_unit_id": unit,
+                    "gem_location_id": g["gem_location_id"] if not unit else "",
+                    "plant_name": g["plant_name"],
+                    "country": g["country"],
+                    "role": g["role"],
+                    "phase": vocab[g["role"]]["phase"],
+                    "share": g["share"],
+                    "share_basis": vocab[g["role"]]["share_basis"],
+                    "from_year": "",
+                    "to_year": "",
+                    "source_url": g["source_url"],
+                    "source_note": note,
+                    "accessed_date": "",
+                    "origin": origin,
+                }
+            )
     return out, domestic
 
 
@@ -291,18 +281,20 @@ def main() -> None:
     """Write the role-level and company x role tables."""
     if not ROLES.exists():
         hand_file_required(ROLES, "run script/power/roles/extract_roles.py")
-    if not GEM_OWNERSHIP.exists():
-        hand_file_required(GEM_OWNERSHIP, "run script/power/roles/extract_gem_ownership.py")
+    if not GEM_TRACKER.exists():
+        hand_file_required(GEM_TRACKER, "run script/power/roles/extract_gem_roles.py")
     if not BY_UNIT.exists():
         hand_file_required(BY_UNIT, "run script/power/model/build_ti_power.py")
     companies = {c["company_id"]: c for c in read_csv(COMPANIES)}
     scope = {r["setting"]: r["value"].strip() for r in read_csv(SCOPE)} if SCOPE.exists() else {}
     merged, domestic = merge_registers(
         read_csv(ROLES),
-        read_csv(GEM_OWNERSHIP),
+        read_csv(GEM_TRACKER),
+        read_csv(GEM_WIKI) if GEM_WIKI.exists() else [],
         companies,
+        {v["role"]: v for v in read_csv(VOCAB)},
         exclude_home=scope.get("exclude_home_country", "yes") == "yes",
-        wiki=read_csv(GEM_WIKI) if GEM_WIKI.exists() else [],
+        company_ir=read_csv(COMPANY_IR) if COMPANY_IR.exists() else [],
     )
     rows = attribute(merged, read_csv(BY_UNIT))
     write_csv(BY_ROLE, ROLE_FIELDS, rows)

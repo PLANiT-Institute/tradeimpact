@@ -41,7 +41,8 @@ gem = load("projects/extract_gem_tracker.py")
 roles = load("roles/extract_roles.py")
 agg = load("model/aggregate_roles.py")
 factors = load("emission_factors/extract_emission_factors.py")
-own = load("roles/extract_gem_ownership.py")
+own = load("roles/extract_gem_roles.py")
+ir = load("roles/extract_company_ir_roles.py")
 anchors = load("targets/extract_ndc_anchors.py")
 wiki = load("roles/extract_wiki_roles.py")
 
@@ -301,7 +302,8 @@ def test_fuel_type_normalisation_follows_the_first_listed_fuel() -> None:
     assert gem.fuel_type_of("hydropower", "") == "hydro"
 
 
-def test_tracker_owner_strings_yield_equity_rows_with_shares() -> None:
+def test_tracker_fields_yield_investment_and_operation_rows() -> None:
+    """Owner and parent give equity with shares; the operator field gives the O&M role."""
     assert own.parse_entities("Marubeni Corp [50.0%]; Chubu Electric Power Co Inc [50.0%]") == [
         ("Marubeni Corp", 0.5),
         ("Chubu Electric Power Co Inc", 0.5),
@@ -311,47 +313,83 @@ def test_tracker_owner_strings_yield_equity_rows_with_shares() -> None:
         ("Korea Midland Power Co Ltd", None),
     ]
     companies = read(DATA / "companies" / "method" / "companies.csv")
+    vocab = {v["role"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
     unit = {
         "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "Nghi Son", "country": "VN",
         "owner": "Nghi Son 2 Power LLC [100%]",
         "parent": "Marubeni Corp [50.0%]; Korea Electric Power Corp [50.0%]",
+        "operator": "Korea Electric Power",
         "wiki_url": "https://www.gem.wiki/x",
     }  # fmt: skip
-    rows = own.ownership_rows([unit], companies)
-    assert {(r["company_id"], r["share"], r["level"]) for r in rows} == {
-        ("marubeni", 0.5, "parent"),
-        ("kepco", 0.5, "parent"),
+    rows = own.tracker_rows([unit], companies, vocab)
+    assert {(r["company_id"], r["role"], r["phase"], r["share"]) for r in rows} == {
+        ("marubeni", "equity_owner", "investment", 0.5),
+        ("kepco", "equity_owner", "investment", 0.5),
+        ("kepco", "om_contractor", "operation", ""),
     }
     domestic = {**unit, "country": "JP"}
-    assert {r["company_id"] for r in own.ownership_rows([domestic], companies)} == {"kepco"}
+    assert {r["company_id"] for r in own.tracker_rows([domestic], companies, vocab)} == {"kepco"}
 
 
-def test_merge_prefers_the_register_and_drops_domestic_rows() -> None:
+def test_company_register_rejects_a_row_whose_page_is_not_on_disk() -> None:
+    """Every role and every share must cite a page in the fetched index, by key and by URL."""
+    vocab = {v["role"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
     companies = {c["company_id"]: c for c in read(DATA / "companies" / "method" / "companies.csv")}
-    register = [{
+    pages = {"kepco_page": {"url": "https://example.org/kepco", "sha256": "x"}}
+    good = {
+        "company_id": "kepco", "gem_unit_id": "G1", "gem_location_id": "", "plant_name": "P",
+        "country": "VN", "role": "equity_owner", "share": "0.4", "from_year": "", "to_year": "",
+        "role_as_stated": "acquired a 40% stake", "role_source_key": "kepco_page",
+        "role_source_url": "https://example.org/kepco", "role_quote": "KEPCO acquired 40%",
+        "share_source_key": "kepco_page", "share_source_url": "https://example.org/kepco",
+        "share_quote": "KEPCO acquired 40%", "accessed_date": "2026-09-07", "note": "",
+    }  # fmt: skip
+    assert ir.validate([good], vocab, companies, pages) == []
+    missing = {**good, "role_source_key": "not_fetched", "share_source_key": "not_fetched"}
+    assert len(ir.validate([missing], vocab, companies, pages)) == 2
+    wrong_url = {**good, "role_source_url": "https://example.org/other"}
+    assert any("does not match" in m for m in ir.validate([wrong_url], vocab, companies, pages))
+    no_quote = {**good, "role_quote": " "}
+    assert any("quote is required" in m for m in ir.validate([no_quote], vocab, companies, pages))
+    unsourced_share = {**good, "share_source_key": "", "share_source_url": ""}
+    assert ir.validate([unsourced_share], vocab, companies, pages)
+
+
+def test_merge_prefers_sourced_rows_and_drops_domestic_ones() -> None:
+    """Register beats company_ir beats tracker beats wiki, per company x plant x role."""
+    companies = {c["company_id"]: c for c in read(DATA / "companies" / "method" / "companies.csv")}
+    vocab = {v["role"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
+    company_ir = [{
         "company_id": "kepco", "company_name": "KEPCO", "company_country": "KR",
-        "company_type": "utility",
-        "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "P", "country": "VN",
-        "role": "equity_owner", "phase": "operation", "share": "0.4", "share_basis": "equity_share",
-        "from_year": "", "to_year": "", "source_url": "https://example.org", "source_note": "",
-        "accessed_date": "2026-09-05",
+        "company_type": "utility", "gem_unit_id": "U1", "gem_location_id": "", "plant_name": "P",
+        "country": "VN", "role": "equity_owner", "phase": "investment", "share": "0.4",
+        "share_basis": "equity_share", "from_year": "", "to_year": "",
+        "source_url": "https://example.org", "source_note": "", "accessed_date": "2026-09-07",
     }]  # fmt: skip
-    gem_rows = [
+    tracker = [
         {"company_id": "kepco", "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "P",
-         "country": "VN", "level": "parent", "entity": "Korea Electric Power Corp", "share": "0.5",
-         "source_url": "", "source_id": "gem"},
+         "country": "VN", "role": "equity_owner", "share": "0.5", "level": "parent",
+         "entity": "Korea Electric Power Corp", "source_url": ""},
         {"company_id": "marubeni", "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "P",
-         "country": "VN", "level": "parent", "entity": "Marubeni Corp", "share": "0.5",
-         "source_url": "", "source_id": "gem"},
+         "country": "VN", "role": "equity_owner", "share": "0.5", "level": "parent",
+         "entity": "Marubeni Corp", "source_url": ""},
         {"company_id": "marubeni", "gem_unit_id": "U9", "gem_location_id": "L9", "plant_name": "Q",
-         "country": "JP", "level": "owner", "entity": "Marubeni Corp", "share": "1.0",
-         "source_url": "", "source_id": "gem"},
+         "country": "JP", "role": "equity_owner", "share": "1.0", "level": "owner",
+         "entity": "Marubeni Corp", "source_url": ""},
     ]  # fmt: skip
-    merged, domestic = agg.merge_registers(register, gem_rows, companies)
-    assert domestic == 1
-    assert [(r["company_id"], r["origin"], r["share"]) for r in merged] == [
-        ("kepco", "register", "0.4"),
-        ("marubeni", "gem", "0.5"),
+    wiki = [
+        {"company_id": "doosan_enerbility", "gem_location_id": "L1", "plant_name": "P",
+         "country": "VN", "role": "epc_contractor", "share": "", "sentence": "Doosan built it",
+         "source_url": "https://www.gem.wiki/P"},
+    ]  # fmt: skip
+    merged, domestic = agg.merge_registers(
+        [], tracker, wiki, companies, vocab, exclude_home=True, company_ir=company_ir
+    )
+    assert domestic == 1  # Marubeni's Japanese unit is not a trade
+    assert [(r["company_id"], r["role"], r["origin"], r["share"]) for r in merged] == [
+        ("kepco", "equity_owner", "company_ir", "0.4"),
+        ("marubeni", "equity_owner", "gem", "0.5"),
+        ("doosan_enerbility", "epc_contractor", "gem_wiki", ""),
     ]
 
 

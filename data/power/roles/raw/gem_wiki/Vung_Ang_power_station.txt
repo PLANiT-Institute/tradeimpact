@@ -1,0 +1,344 @@
+# GEM wiki page: Vung Ang power station
+# URL: https://www.gem.wiki/Vung_Ang_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Show badges |Navbar-GOGPT-tracker|Navbar-Global_Coal_Plant_Tracker}}
+'''Vung Ang power station''' is an operating power station of at least 2520-megawatts (MW) in Ky Loi, Ky Anh, Hà Tĩnh, Vietnam with multiple units, some of which are not currently operating.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Vung Ang power station
+| Ky Loi, Ky Anh, Hà Tĩnh, Vietnam
+| 18.09792, 106.38123 (exact)
+|}
+{{
+#display_map:
+18.09792, 106.38123
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''3-CC1, Phase 1 Unit 1, Phase 1 Unit 2, Phase 2 Unit 1, Phase 2 Unit 2, Phase 3 Unit 1, Phase 3 Unit 2, Phase 3 Unit 3, Phase 3 Unit 4''': 18.09792, 106.38123
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 3-CC1
+| Pre-construction<ref name="autoref_0">{{cite web |url=http://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf |archive-url=https://web.archive.org/web/20220929124148/https://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf |archive-date=2022-09-29}}</ref><ref name="autoref_1">{{cite web |url=https://www.wfw.com/articles/vietnam-makes-major-updates-to-power-development-plan-viii/}}</ref><ref name="autoref_2">{{cite web |url=https://vir.com.vn/investors-proposes-459-billion-vung-ang-iii-plant-85605.html |archive-url=https://web.archive.org/web/20221020134550/https://vir.com.vn/investors-proposes-459-billion-vung-ang-iii-plant-85605.html |archive-date=2022-10-20}}</ref><ref name="autoref_3">{{cite web |url=https://www.frasersvn.com/api/uploads/Legal_Update_The_Revised_PDP_8_EN_April_2025_5cec48fd6d.pdf |archive-url=https://web.archive.org/web/20250529205325/https://www.frasersvn.com/api/uploads/Legal_Update_The_Revised_PDP_8_EN_April_2025_5cec48fd6d.pdf |archive-date=2025-05-29}}</ref>
+| fossil gas: LNG<ref name="autoref_4">{{cite web |url=https://vir.com.vn/steel-reliance-to-be-reduced-in-ha-tinh-83441.html |archive-url=https://web.archive.org/web/20211024211617/https://vir.com.vn/steel-reliance-to-be-reduced-in-ha-tinh-83441.html |archive-date=2021-10-24}}</ref><ref name="autoref_2" />
+| 1500<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" />
+| unknown
+| not found
+| 2035 (planned)<ref name="autoref_1" /><ref name="autoref_3" />
+| no
+|-
+| Phase 1 Unit 1
+| Operating
+| coal: anthracite<ref name="autoref_5">{{cite web |url=https://baoquangninh.vn/tap-trung-pha-tron-than-cap-cho-nganh-dien-3360063.html}}</ref>
+| 600
+| subcritical
+| –
+| 2014
+| no
+|-
+| Phase 1 Unit 2
+| Operating
+| coal: anthracite<ref name="autoref_5" />
+| 600
+| subcritical
+| –
+| 2015
+| no
+|-
+| Phase 2 Unit 1
+| Operating<ref name="autoref_6">{{cite web |url=https://nangluongvietnam.vn/chinh-thuc-van-hanh-thuong-mai-to-may-so-1-du-an-nhiet-dien-vung-ang-2-34570.html |title=Chính thức vận hành thương mại tổ máy số 1 dự án Nhiệt điện Vũng Áng 2 |website=Năng lượng Việt Nam Online |access-date=2025-12-18 |archive-url=https://web.archive.org/web/20260123030114/https://nangluongvietnam.vn/chinh-thuc-van-hanh-thuong-mai-to-may-so-1-du-an-nhiet-dien-vung-ang-2-34570.html |archive-date=2026-01-23}}</ref>
+| coal: bituminous<ref name="autoref_5" />
+| 660<ref name="autoref_7">{{cite web |url=https://laodong.vn/kinh-doanh/tien-do-van-hanh-cua-nha-may-nhiet-dien-22-ti-usd-1490954.ldo}}</ref>
+| ultra-supercritical
+| –
+| 2025<ref name="autoref_6" />
+| no
+|-
+| Phase 2 Unit 2
+| Operating<ref name="autoref_8">{{cite web |url=https://vneconomy.vn/ha-tinh-khanh-thanh-nha-may-nhiet-dien-vung-ang-2-tri-gia-22-ty-usd.htm}}</ref>
+| coal: bituminous<ref name="autoref_5" />
+| 660<ref name="autoref_7" />
+| ultra-supercritical
+| –
+| 2026<ref name="autoref_8" />
+| no
+|-
+| Phase 3 Unit 1
+| Cancelled
+| coal: bituminous<ref name="autoref_5" />
+| 600
+| unknown
+| –
+| –
+| no
+|-
+| Phase 3 Unit 2
+| Cancelled
+| coal: bituminous<ref name="autoref_5" />
+| 600
+| unknown
+| –
+| –
+| no
+|-
+| Phase 3 Unit 3
+| Cancelled
+| coal: unknown<ref name="autoref_5" />
+| 600
+| unknown
+| –
+| –
+| no
+|-
+| Phase 3 Unit 4
+| Cancelled
+| coal: unknown<ref name="autoref_5" />
+| 600
+| unknown
+| –
+| –
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 3-CC1
+| Siemens Energy AG [33%]; Power Engineering Consulting 2 JSC [33%]; Korea Electric Power Corp [33%]<ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_2" />
+| Korea Electric Power Corp [33.3%]; Power Engineering Consulting 2 JSC [33.3%]; Siemens Energy AG [33.3%]
+|-
+| Phase 1 Unit 1
+| PetroVietnam Power Corporation JSC [100%]
+| PetroVietnam Power Corporation JSC [100.0%]
+|-
+| Phase 1 Unit 2
+| PetroVietnam Power Corporation JSC [100%]
+| PetroVietnam Power Corporation JSC [100.0%]
+|-
+| Phase 2 Unit 1
+| Vung Ang 2 Thermal Power JSC [100%]
+| CLP Holdings Ltd [100.0%]
+|-
+| Phase 2 Unit 2
+| Vung Ang 2 Thermal Power JSC [100%]
+| CLP Holdings Ltd [100.0%]
+|-
+| Phase 3 Unit 1
+| Vung Ang-3 Thermal [100%]
+| Samsung C&T Corp [100.0%]
+|-
+| Phase 3 Unit 2
+| Vung Ang-3 Thermal [100%]
+| Samsung C&T Corp [100.0%]
+|-
+| Phase 3 Unit 3
+| Vung Ang-3 Thermal [100%]
+| Samsung C&T Corp [100.0%]
+|-
+| Phase 3 Unit 4
+| Vung Ang-3 Thermal [100%]
+| Samsung C&T Corp [100.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic/imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background on Vũng Áng-1==
+
+In December 2006, [[PetroVietnam]] started initial work on the two-unit, 1,200-MW Vũng Áng-1, with the Vietnamese [[Lilama Corporation]] being contracted to build the plant.<ref name="reuters">[http://uk.reuters.com/article/2007/08/31/vietnam-energy-plant-idUKHAN22408420070831 Vietnam, OneEnergy to Build $1.2 bln Power Plant], ''Reuters'', Aug. 31, 2007.</ref> Construction began in August 2009.<ref>[http://www.vietnaminvestment.net/news/construction-of-vung-ang-1-thermo-electric-power-plant-kicks-off/ Construction of Vung Ang 1 Thermo-electric Power Plant Kicks Off], Vietnam Investment Gateway, Aug. 28, 2009.</ref><ref>[http://www.vinacomin.vn/en/news/Home-News/Vung-Ang-1-thermo-power-plant-successfully-joins-national-grid-1032.html Vung Ang 1 Thermo Power Plant Successfully Joins National Grid], Vinacomin website, Jan. 6, 2014.</ref> The first unit was completed in December 2014,<ref>[http://en.nhandan.org.vn/business/item/3127802-second-turbine-of-vung-ang-1-thermal-power-plant-reaches-design-capacity.html Second turbine of Vung Ang 1 thermal power plant reaches design capacity], Nhan Dan, 6 Feb. 2015.</ref> and the second unit was completed in May 2015.<ref>[http://nangluongvietnam.vn/news/en/electricity/unit-no-2-of-vung-ang-1-thermal-power-plant-has-been-officially-put-into-commercial-operation.html Unit No. 2 of Vung Ang 1 Thermal Power Plant has been officially put into commercial operation], Vietnam Energy, 14 May 2015.</ref>
+
+Unit 1 subsequently had problems with its turbine. A new rotor was installed in 2016.<ref>[http://bnews.vn/rotor-to-may-so-1-nha-may-nhiet-dien-vung-ang-1-da-ve-toi-viet-nam/19711.html Rotor tổ máy số 1 Nhà máy nhiệt điện Vũng Áng 1 đã về tới Việt Nam], B-News, 12 July 2016.</ref>
+
+After more than 12 months of technical challenges, October 2022 reporting indicated that Unit 1's turbine would be brought back online for full service by the end of the year. An overhaul of the unit was required, and "hundreds of engineers", contractors and foreign experts were needed to fix the chronic problems.<ref>[https://theinvestor.vn/first-turbine-at-vung-ang-1-thermal-power-plant-to-resume-operation-late-december-d2199.html First turbine at Vung Ang 1 thermal power plant to resume operation late December], The Investor, 19 October 2022.</ref> Unit 1 officially began operating again in August 2023.<ref name=BáoHàTĩnh>[https://baohatinh.vn/cong-nghiep/tiep-tuc-van-hanh-nha-may-nhiet-dien-vung-ang-1-an-toan-hieu-qua/252897.htm Tiếp tục vận hành Nhà máy Nhiệt điện Vũng Áng 1 an toàn, hiệu quả], Báo Hà Tĩnh, 15 August 2023.</ref>
+
+As of August 2023, Vũng Áng-1 reportedly employed 417 people.<ref name=BáoHàTĩnh/>
+
+As of March 2024, additional maintenance on "unusual" (Google translate) issues in Unit 1 was ongoing.<ref>[https://baohatinh.vn/nha-may-nhiet-dien-vung-ang-1-dat-doanh-thu-1650-ty-dong-post262417.html Nhà máy Nhiệt điện Vũng Áng 1 đạt doanh thu 1.650 tỷ đồng], Báo Hà Tĩnh, March 2, 2024</ref>
+
+In October 2024, a Unit 2 renovation project was reportedly nearing completion.<ref>[https://baohatinh.vn/nhiet-dien-vung-ang-1-co-ban-hoan-thanh-du-an-trung-tu-chay-thu-to-may-so-2-post275406.html Nhiệt điện Vũng Áng 1 cơ bản hoàn thành dự án trung tu, chạy thử tổ máy số 2], Báo Hà Tĩnh, October 13, 2024</ref>
+
+As of February 2025, Vũng Áng-1 was reportedly expected to consume 3 million tons of coal in 2025.<ref>[https://baohatinh.vn/nha-may-nhiet-dien-vung-ang-1-du-kien-tieu-thu-tren-3-trieu-tan-than-post282742.html Nhà máy Nhiệt điện Vũng Áng 1 dự kiến tiêu thụ trên 3 triệu tấn than], Báo Hà Tĩnh, February 14, 2025</ref>
+
+As of December 2025, Vũng Áng-1 was facing some operational challenges. The power station reportedly had an inadequate coal supply and was blending lower quality coal types, causing inefficiency and instability. Alternative co-firing and starter fuels were being tested.<ref>[https://cafef.vn/nha-may-2-ty-usd-tung-co-quy-mo-va-cong-suat-lon-nhat-viet-nam-gio-ra-sao-188251209185536123.chn Nhà máy 2 tỷ USD từng có quy mô và công suất lớn nhất Việt Nam giờ ra sao?], CafeF, December 9, 2025</ref>
+
+==Background on Vũng Áng-2==
+
+In 2007, the Vung Ang II Thermal Power Joint Stock Company (VAPCO) was established to build and operate the power plant, a joint venture between OneEnergy Ltd and the Hanoi based Refrigeration Electrical Engineering Co. (REE). OneEnergy Lts is a 50:50 venture between the Hong Kong based CLP and the Tokyo based Mitsubishi Corp. The plant was reported to be 2 x 600 MW, with an estimated capital cost of US$1.2 billion.<ref name="reuters">[http://uk.reuters.com/article/2007/08/31/vietnam-energy-plant-idUKHAN22408420070831 Vietnam, OneEnergy to Build $1.2 bln Power Plant], ''Reuters'', Aug. 31, 2007.</ref> The Vietnamese government approved the plant in March 2009.<ref>[http://vccinews.com/news_detail.asp?news_id=15691 Vietnam Govt OKs US$1.2-Bln Vung Ang Power Plant under BOT Form], ''Vietnam Business Forum'', Mar. 6, 2009.</ref> Although one source reported the plant to be 2 x 660 MW in capacity,<ref>[http://english.vov.vn/Economy/Construction-of-Vung-Ang-II-Thermal-Power-Plant-scheduled-for-2014/266511.vov Construction of Vung Ang II Thermal Power Plant Scheduled for 2014], ''Voice of Vietnam'', Oct. 28, 2013.</ref> other sources, including the most recent and detailed, have listed the capacity as 2 x 600 MW.<ref>[http://vietnamnews.vn/economy/349890/vung-ang-ii-plant-bot-project-agreement-inked.html#uwc0fXHKmV6UXLDj.97 "Vũng Áng II plant BOT project agreement inked,"] Viêt Nam News, 18 January 2017</ref>The plant's owners expected to begin construction in March 2015; however, this didn't happen.<ref>[http://www.vir.com.vn/vung-ang-thermal-plant-bot-deal-talks-heat-up.html Vung Ang thermal plant BOT deal talks heat up], Vietnam Investment Review, 7 Oct. 2014.</ref>
+
+The plant's build-own-transfer (BOT) agreement was finalized in January 2017. Unit 1 was scheduled to be brought online in 2021, and Unit 2 in 2022.<ref>[http://tuoitrenews.vn/business/39074/mitsubishiled-group-awarded-contract-for-22bn-thermal-plant-in-central-vietnam "Mitsubishi-led group awarded contract for $2.2bn thermal plant in central Vietnam,"] Tuoitre News, 01/17/2017</ref><ref>[http://dantri.com.vn/kinh-doanh/ky-hop-dong-bot-nhiet-dien-vung-ang-2-voi-doi-tac-nhat-ban-20170116204525224.htm Ký hợp đồng BOT Nhiệt điện Vũng Áng 2 với đối tác Nhật Bản], Dan Tri, 16 Jan. 2017.</ref>
+
+In September 2017, Mitsubishi Vice President Yoshinori Katayama met with Deputy Prime Minister Trịnh Đình Dũng to discuss the project. The meeting did not produce any news about when construction might begin.<ref>[https://baomoi.com/thuc-day-nhanh-du-an-nhiet-dien-vung-ang-2/c/23312929.epi "Thúc đẩy nhanh dự án nhiệt điện Vũng Áng 2,"] Báo Mới, 18 September 2017</ref>
+
+In June 2018 it was reported Hong Kong's One Energy would be sole owner of the plant, pending approval from the Vietnam government.<ref>[http://www.intellasia.net/oneenergy-proposed-as-sole-investor-of-vung-ang-2-thermal-power-plant-670149 "OneEnergy proposed as sole investor of Vung Ang 2 thermal power plant,"] Intellasia, 08-Jun-2018</ref>
+
+In July 2018, the Ministry of Planning and Investment decided not to issue an investment certificate to the plant, citing the need for the sponsors to address issues around the EIA, land allocation, and funding.<ref>[https://nld.com.vn/kinh-te/bo-kh-dt-khong-dong-y-cap-giay-chung-nhan-dau-tu-bot-nhiet-dien-vung-ang-ii-20180705110419243.htm "Bộ KH-ĐT không đồng ý cấp giấy chứng nhận đầu tư BOT Nhiệt điện Vũng Áng II,"] NLD, July 5, 2018</ref>
+
+In March 2019, OneEnergy announced that the plant would use ultra-supercritical rather than supercritical technology.<ref>[http://www.pfie.com/ap-vietnam-vung-ang-2-cfpp-to-go-ultrasupercritical/21380556.article Vietnam – Vung Ang 2 CFPP to go ultrasupercritical], Project Finance International, Mar. 29, 2019</ref>
+
+In June 2019, the completion date for Unit 1 was delayed to 2023 and the completion date for Unit 2 was delayed to 2024 in the Ministry Of Industry And Trade's report on the implementation of the revised seventh Power Development Plan (PDP7).<ref>[http://vepg.vn/wp-content/uploads/2019/06/MOIT_Report_58_BC_BCT.pdf Implementation of Power Projects iIn the Revised Power Development Plan 7], Ministry of Industry and Trade, Republic of Vietnam, Jun. 4, 2019</ref>
+
+In September 2019, it was reported that talks with potential lenders for the project had been restarted, including DBS Bank, Mizuho Bank (financial adviser), MUFG, OCBC, SMBC, Standard Chartered Bank and Sumitomo Trust.<ref>[http://www.pfie.com/ap-vietnam-banks-restart-talks-on-vapco-2/21401740.article AP: Vietnam – Banks restart talks on Vapco 2], Project Finance International, Sep. 2, 2019</ref> However, in October 2019, it was revealed that OCBC had withdrawn from the project.<ref>Robin Hicks, [https://www.eco-business.com/news/ocbc-is-now-coal-free-singapore-bank-drops-out-of-final-coal-project/ "OCBC is now coal-free: Singapore bank drops out of final coal project"], ''Eco-Business'', November 1, 2019.</ref> In October 2019 more then 30 non-governmental organizations (NGO's) sent a letter to the Japan Bank for International Cooperation (JBIC) demanding that the bank withdraw from financing Vũng Áng-2.<ref>[http://www.foejapan.org/en/aid/jbic02/va/191029.html NGOs call on JBIC not to finance the Vung Ang 2 coal-fired power plant in Vietnam], Friends of the Earth Japan, Oct. 29, 2019</ref>
+
+In December 2019, CLP announced that it would no longer invest in new coal-fired power plants.<ref>[https://www.businesstimes.com.sg/banking-finance/stanchart-stops-funding-three-s-e-asia-coal-plants-worth-us7b StanChart stops funding three S-E Asia coal plants worth US$7b], The Business Times, Dec. 19, 2019</ref> Whether Vũng Áng-2 and another CLP project Vĩnh Tân-3 will reach completion without CLP’s involvement will depend on the projects’ other sponsors, according to Julien Vincent, Executive Director of the NGO Market Forces. These other sponsors include Japanese bank Mitsubishi UFJ Financial Group (MUFG) and Singapore-headquartered DBS Bank.<ref>[https://www.eco-business.com/news/hong-kong-power-giant-clp-quits-coal/ Hong Kong power giant CLP quits coal], Eco-Business, Dec. 19, 2019</ref> Mitsubishi has categorized Vũng Áng-2 as "under development" and stated that its ban on funding new plants does not therefore apply.<ref>[http://www.foejapan.org/en/aid/jbic02/va/191021.html NGO Joint Statement on Mitsubishi Corporation’s Coal Policy], Friends of the Earth Japan, Oct. 21, 2019</ref> 
+
+In February 2020, the National Steering Committee on power development stated that Unit 1 was scheduled to be commissioned in Q1 2024 and Unit 2 in Q2 2025.<ref name="vl">[http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/tinh-hinh-thuc-hien-cac-du-an-dien-theo-hinh-thuc-bot-o-viet-nam.html Tình hình thực hiện các dự án điện theo hình thức BOT ở Việt Nam], Feb. 14, 2020</ref> On February 25, Japan Bank for International Cooperation posted the EIA (in Vietnamese) for Vũng Áng-2 on its website.<ref>[https://www.jbic.go.jp/en/business-areas/environment/projects/page.html?ID=61715&lang=en Projects for Which JBIC Has Already Acquired Environmental Impact Assessment (EIA)], JBIC website, accessed March 6, 2020.</ref> 
+
+In March 2020, a report by the Non Coal, Go Green! Project summarized the financial backing for Vũng Áng-2 as follows:<ref>[https://sekitan.jp/jbic/wp-content/uploads/2020/03/Mitsubishi-summary-sheet-en-for-edit_2020-3.pdf "WHY Mitsubishi Corp."] NoCoal, Go Green! Project, March 2020</ref>
+
+:The investor mix in this company has changed numerous times, but currently it is 100% owned by OneEnergy Ltd.. The company OneEnergy was previously a 50:50 joint venture between CLP Holdings (headquartered in Hong Kong) and Mitsubishi Corp.’s 100% subsidiary Diamond Generating Asia (DGA). However, in 2019, CLP declared a withdrawal from new coal-fired power projects. As of February 2020, the partners are Mitsubishi Corp. (40%) and Japan’s Chugoku Electric Power Co. (20%), along with Korea Electric Power Corporation (KEPCO) considering acquiring the remaining 40% that was held by CLP.
+
+In April 2020, following JBIC head Tadashi Maeda's comments to Japanese business magazine ''Diamond Online'' that the institution "will no longer accept loan applications for coal-fired power generation projects," pressure mounted on JBIC to enshrine this statement in a formal policy and for it to reject the funding application for Vũng Áng-2 which it has been considering for more than a decade.<ref>[https://www.eco-business.com/news/jbic-becomes-third-japanese-bank-in-a-month-to-signal-move-away-from-coal/ "JBIC becomes third Japanese bank in a month to signal move away from coal"] Eco-Business, Apr. 24, 2020</ref> In June 2020 it was reported that KEPCO was seeking an ownership stake in Vung Ang-2.<ref>[https://o.canada.com/pmn/business-pmn/koreas-kepco-moves-ahead-with-controversial-coal-investment/wcm/7adcddac-d4d6-4459-b592-d40225116697 Korea's Kepco Moves Ahead With Controversial Coal Investment], canada.com, Jun. 30, 2020</ref> In July 2020, South Korean lawmakers proposed four bills in the National Assembly that would prohibit government-backed institutions from funding coal projects. Affected firms would include Kepco, Korea Eximbank, Korea Development Bank and Korea Trade Insurance Corporation. It is unclear when voting on the bills will take place in the South Korean parliament. However, as Vung Ang 2 has yet to be approved, if the new legislation is approved before Kepco can finalise the deal then it will need to back away from Vung Ang 2.<ref> Tim Ha, [https://www.eco-business.com/news/south-korea-proposes-ban-on-overseas-coal-financing/ "South Korea proposes ban on overseas coal financing"], Eco-Business, Jul. 30, 2020</ref>
+[[File:Vung Ang 2 Samsung protest.png|thumb|Activists outside Samsung's Galaxy store in Tokyo calling on the company not to get involved in the Vung Ang 2 coal power project. Source: www.wrongcalloncoal.com]]
+Following news in early August 2020 that the construction arm of the South Korean electronics company Samsung was considering participation in the construction of Vung Ang 2, a campaign was established by international environmental groups including Greenpeace, Solutions for Our Climate and Market Forces warning that the company's group-level sustainability pledges and its brand image would be compromised if it chooses to proceed with involvement in the controversial coal plant. In July, Samsung Securities, the group's financial arm, pulled out of potential involvement in Adani's controversial [[Abbot Point Coal Terminal]] project in Australia following a consumer boycott campaign.<ref> Robin Hicks, [https://www.eco-business.com/news/samsung-targeted-by-ngos-for-proposal-to-build-coal-power-station-in-vietnam/ "Samsung targeted by NGOs for proposal to build coal power station in Vietnam"], Eco-Business, Aug. 12, 2020</ref> The new international campaign calling on Samsung not to participate in the Vung Ang 2 project has set up a dedicated campaign website: [https://www.wrongcalloncoal.com/ www.wrongcalloncoal.com]
+
+In April 2021, work was ongoing to level the site of Vung Ang 2 to prepare for construction. A supervisor on-site reported that they expected leveling to be completed within a week, and that construction of Vung Ang 2 would begin in April of 2021.<ref>[https://laodong.vn/kinh-te/sap-khoi-cong-nha-may-nhiet-dien-vung-ang-2-896837.ldo As planned, in this April, Thermal Power Plant Vung Ang 2 (in Hai Phong 1 village, Ky Loi commune, Ky Anh town, Ha Tinh province) will be started], Báo Lao Động, Apr. 8, 2021</ref> 
+
+News reports from July 2021 stated that construction on Vung Ang 2 had not yet begun, and was not expected to begin until September 2021.<ref>[https://vnexpress.net/ha-tinh-xin-chuyen-hon-24-ha-dat-rung-lam-du-an-nhiet-dien-bot-vung-ang-2-4326155.html Hà Tĩnh xin chuyển hơn 24 ha đất rừng làm dự án Nhiệt điện BOT Vũng Áng 2], VNExpress, July 17, 2021</ref>
+
+On July 4, 2022, the Ministry of Industry and Trade appeared to provide an update on the draft PDP. The document’s list of major power projects planned for 2021-2030 (PDF pages 18-20) includes the project with completion at 10.9%. Unit 1 was slated for operation commercially on third quarter 2025, and unit 2 on first quarter 2026.<ref>[https://ia601508.us.archive.org/4/items/pdp-8-jul-22/PDP8%20-%20jul%2022.pdf “Draft National Power Development Plan VIII,”] MOIT, July 4, 2022</ref>
+
+[https://www.planet.com/stories/vung-ang-power-station-_CQ4KxH4g Planet] imagery comparing September 2021 and October 2022 indicated minimal progress on construction.
+
+In May 2023, PDP8 listed Vung Ang II among the projects under construction, with an updated capacity of 1,330 MW.<ref name=pdp8>[https://media.licdn.com/dms/document/D561FAQGybqltmh4EvA/feedshare-document-pdf-analyzed/0/1684231974788?e=1684972800&v=beta&t=PweOeGMVDy7VIQ2LFiSwUZPv9fwqhx2v7mtSCqnSChg Approving the national electricity development plan for the period of 2021-2030, with a vision to 2050], Prime Minister of Vietnam, May 16, 2023</ref>
+
+In October 2023, Vung Ang II was reportedly 64% complete.<ref>[https://hatinh.gov.vn/vi/tin-tuc-su-kien/tin-bai/17161/cac-doanh-nghiep-kkt-vung-ang-dong-gop-lon-cho-su-phat-trien-cua-ha-tinh “Các doanh nghiệp KKT Vũng Áng đóng góp lớn cho sự phát triển của Hà Tĩnh,”] Cổng Thông tin điện tử tỉnh Hà Tĩnh, October 10, 2023</ref> In November 2023, construction was 65% complete. The construction project employed nearly 3,000 people and was active day and night in order to stay on schedule.<ref>[https://baohatinh.vn/cong-nghiep/tang-toc-tren-cong-truong-nha-may-nhiet-dien-vung-ang-ii/256992.htm “Tăng tốc trên công trường Nhà máy Nhiệt điện Vũng Áng II,”] Báo Hà Tĩnh, November 11, 2023</ref>
+
+In April 2024, construction was reportedly 83% complete. Vũng Áng-2 Unit 1 was slated to begin operating in June 2025, and Vũng Áng-2 Unit 2 was slated to begin operating in October 2025. 4,200 construction workers were employed at the site. 900 families had been relocated for the power station's logistics center.<ref>[https://tienphong.vn/can-canh-cong-truong-nha-may-nhiet-dien-22-ty-usd-o-ha-tinh-post1627123.tpo "Cận cảnh công trường nhà máy Nhiệt điện 2,2 tỷ USD ở Hà Tĩnh,"] Tiền Phong, April 8, 2024</ref>
+
+===Imminent operationalization===
+In September 2024, a first shipment of coal was delivered to the Vũng Áng-2 site. The project was still slated for completion in the third quarter of 2025.<ref>[https://hatinh.gov.vn/nha-may-nhiet-dien-vung-ang-2-tiep-nhan-nhung-tan-than-dau-tien "Nhà máy Nhiệt điện Vũng Áng 2 tiếp nhận những tấn than đầu tiên",] Tỉnh Hà Tĩnh, September 27, 2024</ref>
+
+As of April 2025, the construction of Vũng Áng-2 was reportedly 99% complete. Unit 1 was conducting trial operations and was expected to begin operating in June 2025. Unit 2 was facing technical issues, but the unit was tentatively expected to begin operating in October 2025.<ref>[https://laodong.vn/kinh-doanh/tien-do-van-hanh-cua-nha-may-nhiet-dien-22-ti-usd-1490954.ldo Tiến độ vận hành của nhà máy nhiệt điện 2,2 tỉ USD], Báo Lao Động, April 14, 2025</ref>
+
+On June 12, 2025, Unit 1 was "ready for operation and connection to the commercial grid" (Google translate).<ref>[https://baohatinh.vn/muc-so-thi-nha-may-nhiet-dien-co-cong-nghe-hien-dai-bac-nhat-viet-nam-post289616.html Mục sở thị nhà máy nhiệt điện có công nghệ hiện đại bậc nhất Việt Nam], Báo Hà Tĩnh, June 12, 2025</ref>
+
+In July 2025, Unit 1 began operating.<ref>[https://nangluongvietnam.vn/chinh-thuc-van-hanh-thuong-mai-to-may-so-1-du-an-nhiet-dien-vung-ang-2-34570.html Chính thức vận hành thương mại tổ máy số 1 dự án Nhiệt điện Vũng Áng 2], Năng lượng Việt Nam Online, July 23, 2025</ref>
+
+In September 2025, heavy wind and rain from Typhoon Bualoi caused a roof at a coal warehouse at Vũng Áng-2 to collapse.<ref>[https://www.vietnam.vn/en/bao-cuon-sap-mai-kho-chua-than-cua-nha-may-nhiet-dien-vung-ang-ii Storm collapses coal warehouse roof of Vung Ang II Thermal Power Plant], Vietnam.vn, September 29, 2025</ref> 
+
+As of November 2025, repairs from the typhoon damage were expected to take until mid-2026. Unit 2 was still slated to begin operating by the end of 2025.<ref>[https://laodong.vn/kinh-doanh/don-luc-khac-phuc-hu-hai-do-bao-de-nha-may-22-ti-usd-hoat-dong-tro-lai-1617581.ldo Dồn lực khắc phục hư hại do bão để nhà máy 2,2 tỉ USD hoạt động trở lại], Laodong.vn, November 29, 2025</ref> As of January 2026, Vũng Áng-2 Unit 2 did not appear to have entered operation.
+
+In March 2026, trial operations for Vũng Áng-2 Unit 2 were reportedly completed.<ref>[https://laodong.vn/kinh-doanh/van-hanh-thu-nghiem-to-may-so-2-nha-may-nhiet-dien-vung-ang-ii-tri-gia-22-ti-usd-1663975.ldo Vận hành thử nghiệm Tổ máy số 2 Nhà máy Nhiệt điện Vũng Áng II trị giá 2,2 tỉ USD], Báo Lao Động, March 4, 2026</ref>
+
+In April 2026, Vũng Áng-2 was formally inaugurated and was officially operating.<ref>[https://vneconomy.vn/ha-tinh-khanh-thanh-nha-may-nhiet-dien-vung-ang-2-tri-gia-22-ty-usd.htm Hà Tĩnh khánh thành Nhà máy Nhiệt điện Vũng Áng 2 trị giá 2,2 tỷ USD], VnEconomy, April 18, 2026</ref>
+
+===Significant problems with the environmental impact assessment===
+An independent evaluation<ref>[https://elaw.org/VN_VungAngII_2018EIAReview/ "Evaluation of the 2018 Environmental Impact Assessment (EIA) Report For the Vung Ang II Thermal Power Plant Project"] Environmental Law Alliance Worldwide, Apr. 28, 2020</ref> of the 2018 EIA for Vũng Áng-2 published in April 2020 by Environmental Law Alliance Worldwide (ELAW) was critical of the document on a range of issues: 
+
+*The absence of an analysis of renewable energy generation alternatives which ELAW points out is in violation of JBIC guidelines.
+*The use of Japanese ministry METI's air pollutant dispersion model, which is not recommended by the U.S. Environmental Protection Agency as claimed, and which makes the air quality impact predictions meaningless due to the site of the proposed project lying on complex terrain for which the model should not be used.
+*The project only complies with Vietnam's emissions standards which are substantially weaker than international standards.
+*The EIA's permitting of wet handling of ash in violation of International Finance Corporation (IFC) Performance Standards, which are the the international benchmark to manage environmental and social risk in infrastructure projects.
+*The permitting of the discharge of thermal effluent (heated water) in violation of the IFC's Performance Standards.
+*The EIA's dismissal of the project's impacts on marine species without proper review.
+
+===Debt financing from JBIC, KEXIM and Japanese commercial banks===
+In October 2020, the board of KEPCO decided to invest US$189 million for the acquisition of a 40% stake in the proposed project alongside Mitsubishi’s Diamond Generating Asia and Chugoku Electric Power which have 40% and 20% stakes respectively. KEPCO's participation is subject to official approval from the Vietnamese government and would see Samsung C&T and Doosan Heavy Industries joining the project as the engineering, procurement and construction contractors.<ref> Joe Lo, [https://www.climatechangenews.com/2020/10/05/south-korea-pursues-vietnamese-coal-plant-drawing-international-criticism/ "South Korea pursues Vietnamese coal plant, drawing international criticism"], Climate Home News, Oct. 5, 2020</ref> <ref> Jung Min-hee, [http://www.businesskorea.co.kr/news/articleView.html?idxno=52753 "KEPCO to Take Part in Coal-fired Power Plant Project in Vietnam"], Business Korea, Oct. 6, 2020</ref> KEPCO's decision was criticised by Joojin Kim, managing director of Korean campaign group Solutions for Our Climate, who commented: "South Korean President Moon Jae-in and the ruling party are pursuing a Green New Deal initiative at home but are investing in coal power plants abroad. Above all, KEPCO is expected to suffer a loss of $84 million if it pushes forward the Vung Ang 2 project according to a pre-feasibility study conducted by Korea Development Institute."<ref> Kim Byung-wook, [http://www.koreaherald.com/view.php?ud=20201005000779 "Kepco greenlights controversial Vung Ang 2 coal power plant project"], The Korea Herald, Oct. 5, 2020</ref>
+
+In December 2020 the Japan Bank for International Cooperation (JBIC) signed a loan agreement to provide project financing amounting to up to approximately US$636 million for the project.<ref name=jbic>[https://www.jbic.go.jp/en/information/press/press-2020/1229-014147.html Project Financing for Vung Ang 2 Coal-Fired Power Generation Project in Vietnam], Japan Bank for International Cooperation, Dec. 29, 2020</ref> The Export-Import Bank of Korea (KEXIM) also participated in the finance package along with the Japanese private sector financiers Mitsubishi UFJ Financial Group, Mizuho, Sumitomo Mitsui Banking Corporation and Sumitomo Mitsui Trust Holdings. The total debt financing provided for the project was US$1.767 billion.<ref name=IJGlobal>[https://ijglobal.com/data/transaction/20423/vung-ang-2-coal-fired-power-plant-12gw-ipp Vung Ang 2 Coal-Fired Power Plant (1.2GW) IPP], IJGlobal, accessed Mar. 3, 2021</ref>
+
+In March 2021, the governor of JBIC, Maeda Tadashi, announced that the state-owned financial institution would no longer provide funding for coal plant projects overseas. Tadashi indicated that the financing for Vũng Áng-2 would be the final overseas thermal coal project to receive public and private funding from Japanese sources.<ref>[https://www3.nhk.or.jp/nhkworld/en/news/20210303_16/ JBIC backs away from funding coal-fired plants], NHK, Mar. 3, 2021</ref>
+
+In December 2021 Shikoku Electric purchased a 15% share in the project from Mitsubishi for 10 billion yen (USD 87 million).<ref>[https://www.reuters.com/markets/funds/shikoku-electric-buys-15-stake-coal-power-plant-project-vietnam-2021-12-24/ Shikoku Electric buys 15% stake in coal power plant project in Vietnam], Reuters, Dec. 24, 2021</ref>
+
+A June 2022 report by Insure Our Future found that two of the project's main insurers, the Japanese companies MS&AD and Tokio Marine, had adopted coal exit policies which ruled out support for new coal projects in June and September 2021 respectively, well before agreeing to insure Vung Ang-2 on October 26, 2021.<ref>[https://global.insure-our-future.com/wp-content/uploads/sites/2/2022/05/IOF-KEPCO-Briefing.pdf The Coal Insurers Of Last Resort], Insure Our Future, June 2022</ref> 
+
+===Equity investments from Mitsubishi, KEPCO, Chugoku Electric Power and Shikoku Electric Power===
+Mitsubishi, KEPCO, Chugoku Electric Power and Shikoku Electric Power made a combined US$439 million equity investment in Vũng Áng-2, bringing total financing for the power station to US$2.2 billion.<ref name=IJGlobal>[https://ijglobal.com/data/transaction/20423/vung-ang-2-coal-fired-power-plant-12gw-ipp Vung Ang 2 Coal-Fired Power Plant (1.2GW) IPP], IJGlobal, accessed Mar. 3, 2021</ref>
+
+A September 2022 [https://reclaimfinance.org/site/wp-content/uploads/2022/09/Reclaim_Finance_Coal_it_a_day_September_2022.pdf report] from Reclaim Finance highlighted that despite joining the Glasgow Financial Alliance for Net Zero (GFANZ) in 2021, Citi Bank provided over a billion dollars to "Japanese coal power giant Mitsubishi". The report specifically points to the development of Vũng Áng-2 as a central controversy.<ref>[https://reclaimfinance.org/site/wp-content/uploads/2022/09/Reclaim_Finance_Coal_it_a_day_September_2022.pdf COAL IT A DAY: Time for US banks to stop banking on coal expansion], Reclaim Finance, September 2022</ref>
+
+In September 2025, Vietnam’s Ministry of Finance proposed exempting the foreign owners of seven coal power plants from the requirement to pay a 15% global minimum corporate tax rate set by the OECD. The list of coal plants, which were developed under “build-operate-transfer” (BOT) contracts, included [https://www.gem.wiki/Mong_Duong_power_station Mông Dương-2], [https://www.gem.wiki/Vinh_Tan_power_station Vĩnh Tân-1], [https://www.gem.wiki/Nghi_Son_coal_power_station Nghi Sơn-2], [https://www.gem.wiki/Van_Phong_power_station Vân Phong-1], Vũng Áng-2, [[Hai Duong Thermal Power Plant]], and [https://www.gem.wiki/Duyen_Hai_Power_Generation_Complex Duyên Hải-2].<ref>[https://vneconomy.vn/de-xuat-mien-tru-thue-toi-thieu-toan-cau-cho-du-an-bot-dien-co-bao-lanh-chinh-phu.htm “Đề xuất miễn trừ thuế tối thiểu toàn cầu cho dự án BOT điện có bảo lãnh Chính phủ,”] VnEconomy, September 11, 2025</ref> The ministry argued that imposing the 15% minimum tax could trigger compensation obligations that “would expose the Vietnamese government to the risk of having to pay compensation that exceeds the tax revenues.”<ref>[https://www.reuters.com/sustainability/boards-policy-regulation/vietnam-exempt-mitsubishi-kepco-other-coal-power-plant-operators-global-tax-2025-09-12/ “Vietnam to exempt Mitsubishi, Kepco, other coal power plant operators from global tax, document shows,”] Reuters, September 11, 2025</ref>
+
+==Background on Vũng Áng-3==
+
+In October 2014, Samsung Construction & Trading Corporation, a subsidiary of the [[Samsung Group]], signed a memorandum of understanding with the Vietnamese government to build the two-unit, 1,200-MW, $2.5 billion Vũng Áng-3. Construction is scheduled to begin in early 2018, and the two units are scheduled to be brought online in January and July of 2022. Samsung would finance the project using internal funds.<ref>[http://tuoitrenews.vn/business/23290/samsung-reaches-deal-to-develop-25bln-thermal-power-plant-in-central-vietnam Samsung reaches deal to develop $2.5bln thermal power plant in central Vietnam], Tuoi Tre News, 15 Oct. 2014.</ref><ref>[http://www.talkvietnam.com/2014/10/samsung-ct-in-thermal-power-project-deal/ Samsung C&T in thermal power project deal], Saigon Times, 16 Oct. 2014.</ref>
+
+In 2016, Units 3 and 4, each 600 MW in capacity, were reported as planned for 2029-2030.<ref name="ant">[http://www.antlawyers.vn/library/decision-no-428qd-ttg-on-the-national-power-development-plan-of-vietnam.html "Vietnam National Power Development Plan til 2020,"] ANT, November 10, 2016</ref> As of June 2017, there has been no news on this project for several years.
+
+In October 2017, Samsung's Chairman and CEO Shin Jong-kyun met with Prime Minister Nguyễn Xuân Phúc to discuss the country's investments in Vietnam. Samsung is the largest foreign investor in Vietnam, with 136,700 workers investments that include aviation, ship building, and telecommunications.<ref>[http://enternews.vn/samsung-se-lan-san-dau-tu-vien-thong-tai-viet-nam-117921.html "Samsung sẽ 'lấn sân' đầu tư viễn thông tại Việt Nam?"] Diễn đàn Doanh nghiệp, 7 October 2017</ref>
+
+In July 2018 the government announced that Vũng Áng-3 may be cancelled due to local opposition.<ref>[https://vietnambiz.vn/hang-loat-du-an-dien-bi-dung-trien-khai-59680.html A series of power projects have been stopped], Vietnambiz, Jul. 12, 2018</ref> In June 2019 the completion date for Vũng Áng-3 Units 1-2 was listed as "after 2030" in a report by the the Ministry Of Industry And Trade (MOIT) on the implementation of the revised seventh Power Development Plan (PDP7).<ref>[http://vepg.vn/wp-content/uploads/2019/06/MOIT_Report_58_BC_BCT.pdf Implementation of Power Projects iIn the Revised Power Development Plan 7], Ministry of Industry and Trade, Republic of Vietnam, Jun. 4, 2019</ref> Units 3-4 do not appear in the MOIT report and appear to be cancelled.
+
+In November 2020 the Ha Tinh Provincial People's Committee asked the MOIT to convert Vũng Áng-3 to gas.<ref>[http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/to-hop-dien-khi-lng-vung-ang-se-duoc-xem-xet-trong-quy-hoach-dien-viii.html Tổ hợp điện - khí LNG Vũng Áng sẽ được xem xét trong Quy hoạch điện VIII], Nang Luong Vietnam, Nov. 2, 2020</ref> Later in November 2020 it was reported that Samsung had requested and been approved for a refund of its investment in the project by the Prime Minister, and that Vũng Áng-3 and other coal plants whose construction had not yet begun would be cancelled under Vietnam's upcoming Power Development Plan VIII.<ref>[http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/nhieu-du-an-nguon-dien-trong-quy-hoach-chua-ro-tien-do-vao-van-hanh.html Nhiều dự án nguồn điện trong quy hoạch ‘chưa rõ tiến độ’ vào vận hành], Nang Luong Vietnam, Nov. 25, 2020</ref><ref>[https://cafef.vn/quy-hoach-vung-dbscl-thay-the-tat-ca-nha-may-dien-than-chua-xay-dung-bang-nha-may-lng-va-nang-luong-tai-tao-20201126113858988.chn Quy hoạch vùng ĐBSCL: Thay thế tất cả nhà máy điện than chưa xây dựng bằng nhà máy LNG và năng lượng tái tạo], Cafe F, Nov. 26, 2020</ref> In June 2021 the Ha Tinh People’s Committee submitted a proposal to the Ministry of Industry and Trade to switch Vũng Áng-3 from coal to gas, and increase its capacty from 2.4 GW to 4.8 GW.<ref>[https://vir.com.vn/investors-proposes-459-billion-vung-ang-iii-plant-85605.html Investors proposes $4.59 billion Vung Ang III plant], Vietnam Investment Review, Jul. 12, 2021</ref>
+
+The September 2021 draft of the Power Development Plan 8 (PDP8) states that the plant is being considered for a switch to gas with a completion date of 2031-2035.<ref>[http://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf 2021 Draft PDP 8], vepg.vn, accessed 12-3-2021</ref>
+
+An October 2021 report by GreenID lists the Vũng Áng-3 power station as one of 18 coal-fired power stations in Vietnam that was struggling to secure financing. Given that China, Japan, and South Korea have all committed to stop financing new coal-fired power stations, it will be extremely difficult for any of these projects to secure funding in the future.<ref>Trung Chanh, [https://thesaigontimes.vn/18-du-an-nhiet-dien-than-trong-quy-hoach-kho-tiep-can-von/ 18 dự án nhiệt điện than trong quy hoạch khó tiếp cận vốn], The Saigon Times, Oct. 3, 2021</ref>
+
+On July 4, 2022, the Ministry of Industry and Trade appeared to provide an update on the draft PDP. The document’s list of major power projects planned for 2021-2030 (PDF pages 18-20) did not include the project.<ref>[https://ia601508.us.archive.org/4/items/pdp-8-jul-22/PDP8%20-%20jul%2022.pdf “Draft National Power Development Plan VIII,”] MOIT, July 4, 2022</ref> On July 15, 2022, the Deputy Prime Minister appeared to request further review of the major power projects that had been included in the revised PDP VII but not in the draft PDP VIII.<ref>[https://laodong.vn/kinh-doanh/thiet-hai-ra-sao-neu-khong-lam-2430mw-dien-mat-troi-ngoai-quy-hoach-dien-8-1069783.ldo “Thiệt hại ra sao nếu không làm 2.430MW điện mặt trời ngoài quy hoạch Điện 8,”] Laodong, July 18, 2022</ref> The project is presumed shelved for now.
+
+In January 2023, a Vietnam Finance article described Vũng Áng-3 as a gas project.<ref>[https://vietnamfinance.vn/vung-ang-tu-vung-cat-bac-den-khu-kinh-te-dong-luc-20180504224279943.htm “Vũng Áng: Từ vùng cát bạc đến khu kinh tế động lực,”] Vietnam Finance, January 24, 2023</ref>
+
+In May 2023, Vietnam officially approved the updated power development plan (PDP8). Under this plan, the country will domestically generate 20% of its electricity needs with coal by 2030 and fully phase out coal-fired power stations by 2050. The plan involved increasing energy generation using coal to a peak of 30 GW and replacing all other outstanding coal projects with LNG or renewables. PDP8 listed Vung Ang III among the projects that would not move forward using coal.<ref name=pdp8>[https://media.licdn.com/dms/document/D561FAQGybqltmh4EvA/feedshare-document-pdf-analyzed/0/1684231974788?e=1684972800&v=beta&t=PweOeGMVDy7VIQ2LFiSwUZPv9fwqhx2v7mtSCqnSChg Approving the national electricity development plan for the period of 2021-2030, with a vision to 2050], Prime Minister of Vietnam, May 16, 2023</ref>
+
+==Protests==
+
+In February 2017, local residents blocked the road leading to Vũng Áng-1, saying that coal trucks moving along the road were causing pollution. The local government said it would write to Vinacomin, calling for suspension of coal trucks.<ref>[http://cafef.vn/ha-tinh-yeu-cau-tkv-tam-dung-van-chuyen-than-cho-nha-may-nhiet-dien-vung-ang-1-2017022310344273.chn Hà Tĩnh: Yêu cầu TKV tạm dừng vận chuyển than cho Nhà máy nhiệt điện Vũng Áng 1], Cafe F, 23 Feb. 2017.</ref> The following month, PetroVietnam issued a press release telling us how great its pollution and waste management procedures are.<ref>[http://petrovietnam.petrotimes.vn/nha-may-nhiet-dien-vung-ang-1-trien-khai-hieu-qua-cac-cong-trinh-bao-ve-moi-truong-493149.html Nhà máy Nhiệt điện Vũng Áng 1: Triển khai hiệu quả các công trình bảo vệ môi trường], PetroTimes, 11 Mar. 2017.</ref>
+
+In February 2021, environmental activist Greta Thunberg came out in support of the No Coal for Our Future campaign, which is working to prevent construction of the Vung Ang-2 power station.<ref>Hidefumi Fujimoto, [https://asia.nikkei.com/Spotlight/Environment/Climate-Change/Greta-Thunberg-joins-Asian-charge-against-Vietnam-coal-plant], Nikkei, Feb. 1, 2021</ref>
+
+==Financing==
+
+*'''Vũng Áng-1:''' US$904 million from five foreign banks: China Development Bank, Bank of Tokyo-Mitsubishi UFJ, Credit Suisse, Intesa SanPaolo, and Hong Kong and Shanghai Banking Corp (HSBC); $95 million from Japan Bank for International Cooperation (JBIC) and Sumitomo Mitsui Banking Corporation<ref>[https://www.ngocentre.org.vn/news/japan-banks-finance-95m-vietnam-coal-fired-power-project "Japan Banks to Finance $95M to Vietnam Coal-fired Power Project,"] VUFO-NGO Resource Centre Vietnam, accessed April 23, 2020</ref>
+
+*'''Vũng Áng-3:''' Pre-financing; Sumitomo Mitsui Banking Corporation is the financial adviser<ref>[https://ijglobal.com/data/transaction/33688/vung-ang-3-coal-fired-power-plant-1200mw "Vung Ang 3 Coal-Fired Power Plant (1200MW),"] IJGlobal transaction data, March 17, 2020 (paywall)</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including interactive maps of the power stations, downloadable datasets, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] and the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Vietnam]][[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Vietnam]]

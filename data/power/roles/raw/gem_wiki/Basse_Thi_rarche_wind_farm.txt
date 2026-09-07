@@ -1,0 +1,79 @@
+# GEM wiki page: Basse Thiérarche wind farm
+# URL: https://www.gem.wiki/Basse_Thiérarche_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Basse Thiérarche wind farm''' is an operating wind farm in Iron, Aisne, Hauts-de-France, France.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Basse Thiérarche wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| Sud
+| Operating<ref name="autoref_0">{{cite web |url=https://www.edf-renouvelables.com/en/project/basse-thierarche-sud/ |archive-url=https://web.archive.org/web/20240125215535/https://edf-renouvelables.com/en/projet/basse-thierarche-sud-1-et-2/ |archive-date=2024-01-25}}</ref>
+| 2014<ref name="autoref_0" />
+| 24 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_1">{{cite web |url=https://data.open-power-system-data.org/renewable_power_plants/2020-08-25/renewable_power_plants_FR.csv |archive-url=https://web.archive.org/web/20240125214429/https://data.open-power-system-data.org/renewable_power_plants/2020-08-25/renewable_power_plants_FR.csv |archive-date=2024-01-25}}</ref>
+| EDF Renewables; Diamond Generating Europe (法國電力再生能源公司)<ref name="autoref_2">{{cite web |url=https://www.edf-renouvelables.com/en/project/basse-thierarche-sud/, https://www.edf-renouvelables.com/en/project/basse-thierarche-sud/}}</ref>
+| EDF Renewables (法國電力再生能源公司)<ref name="autoref_0" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Basse Thiérarche wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Sud
+| Iron, Aisne, Hauts-de-France, France<ref name="autoref_3">{{cite web |url=https://datasets.wri.org/dataset/globalpowerplantdatabase |archive-url=https://web.archive.org/web/20240125091319/https://datasets.wri.org/dataset/globalpowerplantdatabase |archive-date=2024-01-25}}</ref>
+| 49.9509, 3.6645 (exact)<ref name="autoref_3" />
+|}
+The map below shows the exact location of the wind farm:
+{{
+#display_map:
+49.9509, 3.6645~ ~ ~ ~ ~Phase Sud
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in France]]
+
+__NOTOC__

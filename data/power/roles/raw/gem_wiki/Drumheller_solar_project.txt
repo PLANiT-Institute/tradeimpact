@@ -1,0 +1,77 @@
+# GEM wiki page: Drumheller solar project
+# URL: https://www.gem.wiki/Drumheller_solar_project
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Michichi Creek
+
+'''Drumheller solar project''' is an operating solar  farm in Drumheller, Alberta, Canada.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Drumheller solar project ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://solar.transitionzero.org/ |title=TransitionZero |date=2024-05-28 |access-date=2024-05-28 |archive-url=https://web.archive.org/web/20240730065101/https://solar.transitionzero.org/ |archive-date=2024-07-30}}</ref>
+| 2023<ref name="autoref_0" />
+| 12.5 MWac<ref name="autoref_0" />
+| Assumed PV<ref name="autoref_0" />
+| Samsung C&T Corp (삼성물산(주))<ref name="autoref_1">{{cite web |url=https://www.futureenergysystems.ca/resources/renewable-energy-projects-canada}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Drumheller solar project ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Drumheller, Alberta, Canada<ref name="autoref_0" />
+| 51.4434, -112.6667 (exact)<ref name="autoref_0" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+51.4434, -112.6667~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Canada]]
+
+__NOTOC__

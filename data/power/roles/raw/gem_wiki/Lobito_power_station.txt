@@ -1,0 +1,122 @@
+# GEM wiki page: Lobito power station
+# URL: https://www.gem.wiki/Lobito_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Lobito power station''' is a power station in pre-construction in Lobito, Benguela, Angola.
+It is also known as Benguela.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Lobito power station
+| Lobito, Benguela, Angola
+| -12.366489, 13.532781 (approximate)<ref name="autoref_0">{{cite web |url=https://openjicareport.jica.go.jp/pdf/12324307_01.pdf |title=The Project for  Power Development Master Plan  in the Republic of Angola  Final Report |date=2018-12 |access-date=2025-09-05 |archive-url=https://web.archive.org/web/20221013104158/http://openjicareport.jica.go.jp/pdf/12324307_01.pdf |archive-date=2022-10-13}}</ref>
+|}
+{{
+#display_map:
+-12.366489, 13.532781
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1-1
+| Pre-construction<ref name="autoref_1">{{cite web |url=https://furtherafrica.com/2020/02/11/angola-us2b-power-station-investment-for-benguela/ |archive-url=https://web.archive.org/web/20210729181312/https://furtherafrica.com/2020/02/11/angola-us2b-power-station-investment-for-benguela/ |archive-date=2021-07-29}}</ref><ref name="autoref_2">{{cite web |url=https://asian-power.com/project/news/south-korean-consortium-build-750mw-angolan-gas-project |archive-url=https://web.archive.org/web/20210602184205/https://asian-power.com/project/news/south-korean-consortium-build-750mw-angolan-gas-project |archive-date=2021-06-02}}</ref>
+| fossil gas: natural gas<ref name="autoref_0" />
+| 375<ref name="autoref_0" />
+| combined cycle<ref name="autoref_0" />
+| not found
+| 2027 (planned)<ref name="autoref_0" />
+| not found
+| no
+|-
+| 1-2
+| Pre-construction<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil gas: natural gas<ref name="autoref_0" />
+| 375<ref name="autoref_0" />
+| combined cycle<ref name="autoref_0" />
+| not found
+| 2029 (planned)<ref name="autoref_0" />
+| not found
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1-1
+| Busan Korea Biotechnology Co Ltd [25%]; Beltec Engenharia e Serviços Ltda [25%]; Korea Southern Power Co Ltd [25%]; Hyundai Engineering Co Ltd [25%]<ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_2" />
+| Beltec Engenharia e Serviços Ltda [25.0%]; Busan Korea Biotechnology Co Ltd [25.0%]; Korea Electric Power Corp [25.0%]; Hyundai Engineering & Construction Co Ltd [9.7%]; small shareholder(s) [4.8%]; natural person(s) [2.9%]; Hyundai Glovis Co Ltd [2.9%]; Hyundai Mobis Co Ltd [2.3%]; Kia Corp [2.3%]
+|-
+| 1-2
+| Busan Korea Biotechnology Co Ltd [25%]; Beltec Engenharia e Serviços Ltda [25%]; Korea Southern Power Co Ltd [25%]; Hyundai Engineering Co Ltd [25%]<ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_2" /><ref name="autoref_2" />
+| Beltec Engenharia e Serviços Ltda [25.0%]; Busan Korea Biotechnology Co Ltd [25.0%]; Korea Electric Power Corp [25.0%]; Hyundai Engineering & Construction Co Ltd [9.7%]; small shareholder(s) [4.8%]; natural person(s) [2.9%]; Hyundai Glovis Co Ltd [2.9%]; Hyundai Mobis Co Ltd [2.3%]; Kia Corp [2.3%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDA0MjhbIkh5dW5kYWkgRW5naW5lZXJpbmc8YnI+JiBDb25zdHJ1Y3Rpb24gQ288YnI+THRkIl0gLS0zOC42MiUtLT4gMTAwMDAwMDAzMjc0CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTE5LjI5JS0tPiAxMDAwMDAwMDMyNzQKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMTEuNzIlLS0+IDEwMDAwMDAwMzI3NAogICAgMTAwMDAyMDA0ODI1WyJIeXVuZGFpIEdsb3ZpcyBDbzxicj5MdGQiXSAtLTExLjY3JS0tPiAxMDAwMDAwMDMyNzQKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tNS41NyUtLT4gMTAwMDAxMDEwMjY1CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcyLjA3JS0tPiAxMDAwMDEwMTAyNjUKICAgIDEwMDAwMTAxMDI2NVsiSHl1bmRhaSBNb3RvciBDbyJdIC0tMzUuMTclLS0+IDEwMDAwMTAxMDI2MwogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02NC44MyUtLT4gMTAwMDAxMDEwMjYzCiAgICAxMDAwMDEwMTAyNjNbIktpYSBDb3JwIl0gLS0xOC4xJS0tPiAxMDAwMDEwMTYxNTcKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjguMzYlLS0+IDEwMDAwMTAxNjE1NwogICAgMTAwMDAwMTIzMjYxXzNbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS03LjQ3JS0tPiAxMDAwMDEwMTYxNTcKICAgIDEwMDAwMDEyMzI2MV80WyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMTEuODElLS0+IDEwMDAwMTAxMDI2MgogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02NC4wNSUtLT4gMTAwMDAxMDEwMjYyCiAgICAxMDAwMDEwMTAyNjNbIktpYSBDb3JwIl0gLS0xNy4yNyUtLT4gMTAwMDAxMDEwMjYyCiAgICAxMDAwMDEwMTAyNjVbIkh5dW5kYWkgTW90b3IgQ28iXSAtLTYuODclLS0+IDEwMDAwMTAxMDI2MgogICAgMTAwMDAxMDEwMjYyWyJIeXVuZGFpIFN0ZWVsIENvIl0gLS02LjA3JS0tPiAxMDAwMDEwMTYxNTcKICAgIDEwMDAwMTAxNjE1N1siSHl1bmRhaSBNb2JpcyBDbyBMdGQiXSAtLTkuMzUlLS0+IDEwMDAwMDAwMzI3NAogICAgMTAwMDAxMDEwMjYzWyJLaWEgQ29ycCJdIC0tOS4zNSUtLT4gMTAwMDAwMDAzMjc0CiAgICAxMDAwMDAwMDMyNzRbIkh5dW5kYWkgRW5naW5lZXJpbmc8YnI+Q28gTHRkIl0gLS0yNS4wJS0tPiBQMTAwMDAwNDA2NzM1CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMjExMQogICAgMTAwMDAwMDAyMTExWyJLb3JlYSBTb3V0aGVybiBQb3dlcjxicj5DbyBMdGQiXSAtLTI1LjAlLS0+IFAxMDAwMDA0MDY3MzUKICAgIDEwMDAwMDAwMTc4OFsiQmVsdGVjIEVuZ2VuaGFyaWEgZTxicj5TZXJ2acOnb3MgTHRkYSJdIC0tMjUuMCUtLT4gUDEwMDAwMDQwNjczNQogICAgMTAwMDAwMDAyMTAzWyJCdXNhbiBLb3JlYTxicj5CaW90ZWNobm9sb2d5IENvIEx0ZCJdIC0tMjUuMCUtLT4gUDEwMDAwMDQwNjczNQogICAgUDEwMDAwMDQwNjczNVsiTG9iaXRvIHBvd2VyIHN0YXRpb24iXQo=}}
+
+==Background==
+
+Angola's "Long Term Plan" for their power sector included various scenarios for developing up to 1200 MW of gas-fired power generation capacity at this power station.<ref>{{Cite web|url=https://gestoenergy.com/wp-content/uploads/2018/04/ANGOLA-POWER-SECTOR-LONG-TERM-VISION.pdf|title=Angola Power Sector Long Term Vision|last=Ministro de Energia e Águas|first=|date=|website=GastoPower|url-status=live|archive-url=|archive-date=|access-date=Jun 13th, 2022}}</ref> In 2022, it was announced that a consortium of South Korean companies would build a 750 MW gas plant at this location.<ref name='ref_A'>{{cite web |url=https://asian-power.com/project/news/south-korean-consortium-build-750mw-angolan-gas-project |title=South Korean consortium to build 750MW Angolan gas project |date= |website=Asian Power |access-date=January 28, 2022 |archive-url=https://web.archive.org/web/20210602184205/https://asian-power.com/project/news/south-korean-consortium-build-750mw-angolan-gas-project |archive-date=June 2, 2021 |url-status=live}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Angola]]

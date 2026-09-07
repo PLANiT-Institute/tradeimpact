@@ -1,0 +1,101 @@
+# GEM wiki page: Hai Long Offshore wind farm
+# URL: https://www.gem.wiki/Hai_Long_Offshore_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' Hai Long - Taiwanese Offshore Wind, Hai Long III Offshore wind farm (Phase 3), Hai Long II Offshore wind farm (Phases 2A, 2B)
+
+'''Hai Long Offshore wind farm''' (海龍三號離岸風力發電計劃圖, 海龍三號離岸風力發電計畫, 海龍二號離岸風力發電計畫, 海龙三号离岸风力发电计画, 海龙三号离岸风力发电计划图, 海龙二号离岸风力发电计画) is an operating wind farm in Mailiao, Yunlin County, Taiwan.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Hai Long Offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| 2A
+| Operating<ref name="autoref_0">{{cite web |url=https://www.nownews.com/news/6739994, https://hailongoffshorewind.com/tw/news/65d2220A196B, https://www.reccessary.com/zh-tw/news/hailong-offshore-wind-and-cwptw-foundation, https://www.northlandpower.com/en/about-northland/resources/NPI%20Investor%20Presentation%20November.pdf, https://tw.news.yahoo.com/%E6%B5%B7%E9%BE%8D%E9%A2%A8%E9%9B%BB%E4%BB%8A%E9%96%8B%E5%B7%A5%E5%BB%BA%E8%A8%AD-%E5%8F%B0%E7%81%A3%E9%A6%96%E8%89%98%E8%87%AA%E5%BB%BA%E5%85%A8%E8%BF%B4%E6%97%8B%E5%A4%A7%E5%9E%8B%E6%B5%AE%E5%90%8A%E8%88%B9%E6%89%93%E9%A0%AD%E9%99%A3-083856788.html, https://hailongoffshorewind.com/tw/FC, https://www.northlandpower.com/en/projects-and-updates/hai-long-taiwanese-offshore-wind.aspx}}</ref>
+| 2025<ref name="autoref_1">{{cite web |url=https://www.nownews.com/news/6739994}}</ref>
+| 300 MW<ref name="autoref_2">{{cite web |url=https://hailongoffshorewind.com/en/overview |archive-url=https://web.archive.org/web/20240125195525/https://hailongoffshorewind.com/en/overview |archive-date=2024-01-25}}</ref>
+| Offshore hard mount<ref name="autoref_2" />
+| Mitsui & Co Ltd [20%]; Yushan Energy [20%]; Northland Power Inc [60%] (三井物産株式会社)<ref name="autoref_3">{{cite web |url=https://www.northlandpower.com/en/projects-and-updates/hai-long-taiwanese-offshore-wind.aspx, https://hailongoffshorewind.com/en/shareholders, https://www.northlandpower.com/en/projects-and-updates/hai-long-taiwanese-offshore-wind.aspx, https://hailongoffshorewind.com/en/shareholders, https://www.northlandpower.com/en/projects-and-updates/hai-long-taiwanese-offshore-wind.aspx, https://hailongoffshorewind.com/en/shareholders}}</ref>
+| Yushan Energy; Northland Power<ref name="autoref_4">{{cite web |url=https://www.northlandpower.com/en/projects-and-updates/hai-long-taiwanese-offshore-wind.aspx, https://www.northlandpower.com/en/projects-and-updates/hai-long-taiwanese-offshore-wind.aspx}}</ref>
+|-
+| 2B
+| Operating<ref name="autoref_5">{{cite web |url=https://www.nownews.com/news/6739994, https://hailongoffshorewind.com/en/overview, https://www.northlandpower.com/en/about-northland/resources/NPI%20Investor%20Presentation%20November.pdf, https://tw.news.yahoo.com/%E6%B5%B7%E9%BE%8D%E9%A2%A8%E9%9B%BB%E4%BB%8A%E9%96%8B%E5%B7%A5%E5%BB%BA%E8%A8%AD-%E5%8F%B0%E7%81%A3%E9%A6%96%E8%89%98%E8%87%AA%E5%BB%BA%E5%85%A8%E8%BF%B4%E6%97%8B%E5%A4%A7%E5%9E%8B%E6%B5%AE%E5%90%8A%E8%88%B9%E6%89%93%E9%A0%AD%E9%99%A3-083856788.html, https://hailongoffshorewind.com/tw/FC}}</ref>
+| 2025<ref name="autoref_1" />
+| 232 MW<ref name="autoref_2" />
+| Offshore hard mount<ref name="autoref_2" />
+| Mitsui & Co Ltd [20%]; Yushan Energy [20%]; Northland Power Inc [60%] (三井物産株式会社)<ref name="autoref_3" />
+| Yushan Energy; Northland Power<ref name="autoref_4" />
+|-
+| 3
+| Construction<ref name="autoref_6">{{cite web |url=https://hailongoffshorewind.com/tw/FC, https://hailongoffshorewind.com/en/overview, https://www.nownews.com/news/6739994, https://tw.news.yahoo.com/%E6%B5%B7%E9%BE%8D%E9%A2%A8%E9%9B%BB%E4%BB%8A%E9%96%8B%E5%B7%A5%E5%BB%BA%E8%A8%AD-%E5%8F%B0%E7%81%A3%E9%A6%96%E8%89%98%E8%87%AA%E5%BB%BA%E5%85%A8%E8%BF%B4%E6%97%8B%E5%A4%A7%E5%9E%8B%E6%B5%AE%E5%90%8A%E8%88%B9%E6%89%93%E9%A0%AD%E9%99%A3-083856788.html}}</ref>
+| 2026 (planned)<ref name="autoref_7">{{cite web |url=https://hailongoffshorewind.com/tw/FC |archive-url=https://web.archive.org/web/20240126131043/https://hailongoffshorewind.com/tw/FC |archive-date=2024-01-26}}</ref>
+| 512 MW<ref name="autoref_2" />
+| Offshore hard mount<ref name="autoref_2" />
+| Yushan Energy [20%]; Mitsui & Co Ltd [20%]; Northland Power Inc [60%] (三井物産株式会社)<ref name="autoref_3" />
+| Yushan Energy; Northland Power<ref name="autoref_4" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Hai Long Offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 2A
+| Mailiao, Yunlin County, Taiwan<ref name="autoref_8">{{cite web |url=https://eiger.law/wind-energy/ |archive-url=https://web.archive.org/web/20240125195527/https://eiger.law/wind-energy/ |archive-date=2024-01-25}}</ref>
+| 24.0335, 119.7085 (approximate)<ref name="autoref_8" />
+|-
+| 2B
+| Mailiao, Yunlin County, Taiwan<ref name="autoref_8" />
+| 24.0335, 119.7085 (approximate)<ref name="autoref_8" />
+|-
+| 3
+| Mailiao, Yunlin County, Taiwan<ref name="autoref_8" />
+| 24.0528, 119.6414 (approximate)<ref name="autoref_8" />
+|}
+The map below shows the approximate locations of the wind farm phases:
+<display_map width=600 height=500 type=normal>
+24.033484, 119.7085217~ ~ ~ ~ ~Phases 2A, 2B
+24.0527755, 119.6414212~ ~ ~ ~ ~Phase 3
+</display_map>
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Taiwan]]
+
+__NOTOC__

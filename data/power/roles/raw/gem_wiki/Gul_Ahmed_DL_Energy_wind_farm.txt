@@ -1,0 +1,75 @@
+# GEM wiki page: Gul Ahmed (DL Energy) wind farm
+# URL: https://www.gem.wiki/Gul_Ahmed_(DL_Energy)_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' Gul Wind Energy
+
+'''Gul Ahmed (DL Energy) wind farm''' is an operating wind farm in Jhimpir, Thatta District, Sindh, Pakistan.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Gul Ahmed (DL Energy) wind farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+|-
+| Operating<ref name="autoref_0">{{cite web |url=http://www.dlenergy.co.kr/workingAssets/metro_Gul.do |archive-url=https://web.archive.org/web/20240125191821/http://www.dlenergy.co.kr/workingAssets/metro_Gul.do |archive-date=2024-01-25}}</ref>
+| 2016<ref name="autoref_0" />
+| 50 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_0" />
+| Gul Ahmed Wind Power Ltd; DL Energy Co Ltd (DL에너지(주))<ref name="autoref_1">{{cite web |url=http://www.dlenergy.co.kr/workingAssets/metro_Gul.do, http://www.dlenergy.co.kr/workingAssets/metro_Gul.do}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Gul Ahmed (DL Energy) wind farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Jhimpir, Thatta District, Sindh, Pakistan<ref name="autoref_2">{{cite web |url=https://goo.gl/maps/LmRycM33fSKPEu1U6 |archive-url=https://web.archive.org/web/20210730182503/https://www.google.com/maps/place/Gul+Ahmed+Wind+Power+Company+Ltd./@25.1530849,67.9682973,128m/data=!3m1!1e3!4m5!3m4!1s0x0:0x177663a13bbcbe71!8m2!3d25.15302!4d67.968358?hl=en-US&shorturl=1 |archive-date=30 July 2021}}</ref>
+| 25.1531, 67.9684 (exact)<ref name="autoref_2" />
+|}
+The map below shows the exact location of the wind farm:
+{{
+#display_map:
+25.1531, 67.9684~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Pakistan]]
+
+__NOTOC__

@@ -1,0 +1,72 @@
+# GEM wiki page: Roy Hill Iron Ore Mine solar farm
+# URL: https://www.gem.wiki/Roy_Hill_Iron_Ore_Mine_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Roy Hill Iron Ore Mine solar farm''' is a cancelled solar  farm in Newman, Pilbara, Australia.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Roy Hill Iron Ore Mine solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| Cancelled ([https://www.gem.wiki/Global_Solar_Power_Tracker_Methodology inferred] February 2025)
+| 30 MW<ref name="autoref_0">{{cite web |url=https://reneweconomy.com.au/gina-rinehart-to-build-eye-sore-solar-farm-on-family-property-to-help-power-new-iron-ore-project/}}</ref>
+| Assumed PV
+| Hancock Prospecting Pty Ltd [70%]; Marubeni Corp [15%]; POSCO Australia Pty Ltd [12%]; China Steel Corp [2%] (丸紅株式会社; 中國鋼鐵股份有限公司)<ref name="autoref_1">{{cite web |url=https://reneweconomy.com.au/gina-rineharts-iron-ore-mine-to-build-30mw-solar-farm-to-cut-emissions/, https://www.royhill.com.au/about/, https://www.royhill.com.au/about/, https://www.royhill.com.au/about/}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Roy Hill Iron Ore Mine solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Newman, Pilbara, Australia<ref name="autoref_2">{{cite web |url=https://reneweconomy.com.au/gina-rineharts-iron-ore-mine-to-build-30mw-solar-farm-to-cut-emissions/, https://maps.app.goo.gl/qPoCz57kdzrSNRrJ9}}</ref>
+| -22.4473, 119.9260 (approximate)<ref name="autoref_2" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+-22.4472511, 119.9259742~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Australia]]
+
+__NOTOC__

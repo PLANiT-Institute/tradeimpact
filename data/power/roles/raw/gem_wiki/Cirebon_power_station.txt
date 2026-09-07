@@ -1,0 +1,259 @@
+# GEM wiki page: Cirebon power station
+# URL: https://www.gem.wiki/Cirebon_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Cirebon power station''' is an operating power station of at least 1584-megawatts (MW) in Kanci Kulon, Astanajapura, Cirebon, Jawa, Indonesia with multiple units, some of which are not currently operating.
+It is also known as 井里汶电站.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Cirebon power station
+| Kanci Kulon, Astanajapura, Cirebon, Jawa, Indonesia
+| -6.770286, 108.614858 (exact)
+|}
+{{
+#display_map:
+-6.770286, 108.614858
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2, Unit 3''': -6.770286, 108.614858
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 660
+| supercritical
+| 2012
+| 2042 (planned)<ref name="autoref_1">{{cite web |url=https://www.petromindo.com/news/article/pln-cancels-early-retirement-of-cirebon-coal-fired-power-plant |title=PLN cancels early retirement of Cirebon coal-fired power Plant |website=Petromindo |access-date=2025-12-05 |archive-url=https://web.archive.org/web/20251212194018/https://www.petromindo.com/news/article/pln-cancels-early-retirement-of-cirebon-coal-fired-power-plant |archive-date=2025-12-12}}</ref>
+| False
+|-
+| Unit 2
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 924
+| ultra-supercritical
+| 2023
+| –
+| False
+|-
+| Unit 3
+| Cancelled
+| coal: unknown<ref name="autoref_0" />
+| 1000
+| ultra-supercritical
+| –
+| –
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| PT Cirebon Electric Power [100%]
+| Marubeni Corp [32.5%]; Korea Electric Power Corp [27.5%]; PT Indika Energy Tbk [20.0%]; Samchully Co Ltd [20.0%]
+|-
+| Unit 2
+| PT Cirebon Electric Power [100%]
+| Marubeni Corp [32.5%]; Korea Electric Power Corp [27.5%]; PT Indika Energy Tbk [20.0%]; Samchully Co Ltd [20.0%]
+|-
+| Unit 3
+| PT Cirebon Electric Power [100%]
+| Marubeni Corp [32.5%]; Korea Electric Power Corp [27.5%]; PT Indika Energy Tbk [20.0%]; Samchully Co Ltd [20.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNDElLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS4yMyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS40NiUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQ3JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS02LjU2JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjYuNzUlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS0xMC4xNCUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjU1JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMDAwMDY0OVsiTWFydWJlbmkgQ29ycCJdIC0tMzIuNSUtLT4gMTAwMDAwMTIxMDA4CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNDguOSUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDAwMDA5NDdbIktvcmVhIEVsZWN0cmljIFBvd2VyPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDM0NDIKICAgIDEwMDAwMDAwMzQ0MlsiS29yZWEgTWlkbGFuZCBQb3dlcjxicj5DbyBMdGQiXSAtLTI3LjUlLS0+IDEwMDAwMDEyMTAwOAogICAgMTAwMDAwMTIzMjYxXzJbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0+IDEwMDAwMTAwMTA4NAogICAgMTAwMDAxMDAxMDg0WyJQVCBJbmRpa2EgSW50aTxicj5JbnZlc3RpbmRvIl0gLS0zNy43OSUtLT4gMTAwMDAwMTIwNjExCiAgICAxMDAwMDEwMDEwODNbIlBUIFRlbGFkYW4gUmVzb3VyY2VzIl0gLS0yOC4wOCUtLT4gMTAwMDAwMTIwNjExCiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0zNC4xMyUtLT4gMTAwMDAwMTIwNjExCiAgICAxMDAwMDAxMjA2MTFbIlBUIEluZGlrYSBFbmVyZ3kgVGJrIl0gLS0yMC4wJS0tPiAxMDAwMDAxMjEwMDgKICAgIDEwMDAwMDEyMzI2MV8zWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMzMuMTYlLS0+IDEwMDAwMDAwMDk1OAogICAgMTAwMDAxMDE1NTg3XzEyWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjYuODQlLS0+IDEwMDAwMDAwMDk1OAogICAgMTAwMDAwMDAwOTU4WyJTYW1jaHVsbHkgQ28gTHRkIl0gLS0+IDEwMDAwMDEyMTIzOQogICAgMTAwMDAwMTIxMjM5WyJTVCBJbnRlcm5hdGlvbmFsPGJyPkNvcnAiXSAtLTIwLjAlLS0+IDEwMDAwMDEyMTAwOAogICAgMTAwMDAwMTIxMDA4WyJQVCBDaXJlYm9uIEVsZWN0cmljPGJyPlBvd2VyIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwMjgxNAogICAgUDEwMDAwMDEwMjgxNFsiQ2lyZWJvbiBwb3dlcjxicj5zdGF0aW9uIl0K}}
+
+==Background==
+
+The Cirebon power station is a coal-fired power plant developed by Cirebon Electric Power (CEP) in the Kanci area to the southeast of Cirebon, Indonesia.<ref name = "na">[http://www.thejakartapost.com/news/2012/10/19/cirebon-power-plant-stream-java-and-bali.html Cirebon power plant on stream for Java and Bali], Amahl S. Azwar, ''The Jakarta Post'', 19 October 2012.</ref> CEP is a joint venture between four companies: Japan-owned [[Marubeni Corporation]] (32.5%), Korea Midland Power Co (27.5%), South Korean company [[Samtan]] Co Ltd (20%) and Indonesian company PT Indika Energy (a subsidiary of the [[Indika Group]]) (20%). 
+
+Like other IPPs in Indonesia, the plant will sell the electricity produced to the PLN at an agreed feed-in tariff price. The initial agreed rate was reported to be US 4.43 cents per kWh (USD 0.0443/kWh) although, because of high coal prices, it was reported that the PLN would adjust the purchase price upwards to US 5.2 cents per kWh (USD 0.052/kWh).
+
+The first unit of the plant was launched in mid October 2012. The reported cost of the plant was nearly $850 million. Construction began in 2008 and was completed in mid-2012. Sales from the plant to the Indonesian state-owned electricity company [[PLN]] began in July 2012.<ref name = "na">[http://www.thejakartapost.com/news/2012/10/19/cirebon-power-plant-stream-java-and-bali.html Cirebon power plant on stream for Java and Bali], Amahl S. Azwar, ''The Jakarta Post'', 19 October 2012.</ref>
+
+In November 2022, Indonesia committed to capping power sector emissions and doubling renewable energy generation by 2030, utilizing US$20 billion in grants and concessional loans. Indonesia’s Energy Transition Mechanism signed a non-binding agreement to close Unit 1 of the Cirebon power station. The target was retirement by 2037, which was 15 years before the initial targeted lifespan.<ref name=":0">[https://www.bloomberg.com/news/articles/2022-11-14/indonesia-gets-state-wealth-fund-to-retire-660mw-coal-plant?leadSource=uverify%20wall "Indonesia Gets State Wealth Fund to Retire 660MW Coal Plant,"] Bloomberg, November 13, 2022</ref><ref>{{Cite web|url=https://www.ijglobal.com/articles/168484/indonesia-coal-fired-ipp-taps-adb-for-early-retire|title=Indonesia coal-fired IPP taps ADB for early retire|last=|first=|date=November 2022|website=www.ijglobal.com|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+
+A February 2023 article highlighted environmental and social concerns that had not yet been addressed by retirement plans. Friends of the Earth Indonesia (WALHI) stated that over 3,000 farmers and fishermen have had their livelihoods disrupted by the power station. The article argues that the November 2022 announcement was insufficient without reparations for the local community, especially because the expansion unit was expected to begin operation soon under the same ownership.<ref>[https://theprakarsa.org/indonesias-cirebon-1-coal-power-project-highlights-gaps-in-adbs-coal-to-clean-etm-scheme/ "Indonesia’s Cirebon 1 coal power project highlights gaps in ADB’s ‘coal-to-clean’ ETM scheme,"] Prakarsa, February 10, 2023</ref>
+
+In July 2023, the government announced that an early retirement of Cirebon-1 would be announced in 2023 as part of a PLN trial project on coal plant early retirements.<ref>[https://industri.kontan.co.id/news/kementerian-bumn-pastikan-pln-eksekusi-pensiun-dini-pltu-cirebon-1-tahun-ini "Kementerian BUMN Pastikan PLN Eksekusi Pensiun Dini PLTU Cirebon 1 Tahun Ini,"] Kontan.co.id, July 13, 2023</ref> As of August 2023, negotiations on refinancing the plant for early retirement were ongoing among the Asian Development Bank (ADB), private sector banks, and the power station's investors.<ref>[https://www.bloomberg.com/news/features/2023-08-15/closing-coal-plant-early-in-indonesia-tests-climate-finance-in-asia "Closing Coal Plants Proves a Hard Sell for Big Global Banks,"] Bloomberg, August 14, 2023</ref> 
+
+In December 2023, the Government of Indonesia and ADB officially announced the deal to retire Unit 1 of Cirebon power station at the end of 2035. The deal was revealed at the COP28 conference in Dubai. Cirebon-1's power purchase agreement would be ended 7 years early through a first of its kind Energy Transition Mechanism (ETM) framework. ADB hoped to replicate the deal for other projects.<ref>[https://www.reuters.com/business/energy/indonesia-adb-owners-agree-shutter-first-coal-fired-power-station-early-2023-12-03/ "Indonesia, ADB, owners agree to shutter first coal-fired power station early,"] Reuters, December 3, 2023</ref>
+
+In January 2024, a Center of Economic and Law Studies analysis found that the retirement of Cirebon power station and [[Pelabuhan Ratu power station]] would eliminate up to 14,022 jobs, but their replacement by renewable energy alternatives would create up to 639,269 jobs.<ref>[https://indonesiabusinesspost.com/insider/prabowo-gibran-pledge-to-continue-energy-transition/ "Prabowo-Gibran pledge to continue energy transition,"] Indonesia Business Post, January 31, 2024</ref>
+
+In November 2024, Indonesia's Finance Minister reportedly raised concerns about "state losses" regarding the retirement of Cirebon power station Unit 1. However, experts and community activists stated that the replacement of the unit would be profitable, in addition to the environmental and public health benefits.<ref>[https://indonesiabusinesspost.com/insider/experts-question-governments-coal-fired-power-plants-retirement-dilemma/ "Experts question government’s coal-fired power plants retirement dilemma,"] Indonesia Business Post, November 6, 2024</ref>
+
+In December 2024, the Cirebon-1 early retirement program roadmap, which was initially expected to be completed in September 2024, was described as "stalled".<ref>[https://www.tempo.co/ekonomi/pensiun-dini-pltu-batu-bara-cirebon-1181582 "Cerita di Balik Macetnya Pensiun Dini PLTU Cirebon,"] Tempo, December 15, 2024</ref>
+
+In February 2025, Indonesia’s Minister of Energy and Mineral Resources confirmed that Cirebon-1 would close in 2035.<ref name=CREA_Mar25>[https://energyandcleanair.org/publication/cirebon-1-indonesias-first-coal-to-renewables-milestone/ “Cirebon-1, Indonesia’s first coal-to-renewables milestone,”] Centre for Research Energy and Clear Air, March 4, 2025</ref>
+
+According to reporting from November 2025, the Asian Development Bank’s Energy Transition Mechanism had earmarked about half of the US$2.56 billion of funding to Indonesia to support the closure of Cirebon-1.<ref>[https://www.reuters.com/business/energy/indonesia-coal-power-phase-out-plan-risk-due-stalled-international-funding-2025-11-17/ “Exclusive: Indonesia coal power phase-out plan at risk due to stalled international funding,”] Reuters, November 17, 2025</ref>
+
+In December 2025, PLN announced that they were pulling out of the early retirement plan for Cirebon-1.<ref>[https://www.bloomberg.com/news/articles/2025-12-05/coal-plant-seen-as-flagship-for-fuel-s-exit-scraps-early-closure "Indonesia Coal Plant Seen as Flagship For Fuel’s Exit Scraps Early Closure,"] Bloomberg, December 5, 2025</ref> A PLN Director stated that Indonesia would be focusing on a "phase down" approach rather than a "phase out" approach, retiring coal plants at the end of their Power Purchase Agreements (PPA). The last coal PPA with an independent power producer would end in 2056.<ref>[https://www.petromindo.com/news/article/pln-cancels-early-retirement-of-cirebon-coal-fired-power-plant "PLN cancels early retirement of Cirebon coal-fired power Plant,"] Petromindo, December 3, 2025</ref>
+
+==Description of Expansion==
+
+There are plans to extend the Cirebon plant with the installation of an additional 2 x 1,000-MW units, units 2 and 3, costing around US$2 billion.<ref name = "na">[http://www.thejakartapost.com/news/2012/10/19/cirebon-power-plant-stream-java-and-bali.html Cirebon power plant on stream for Java and Bali], Amahl S. Azwar, ''The Jakarta Post'', 19 October 2012.</ref> In November 2013, CEP announced that it was set to start the construction of the plant's second unit, which will provide an additional power supply of 1,000 megawatts (MW) in 2014, with completion targeted for 2018.<ref>[http://www.thejakartapost.com/news/2013/11/13/new-1000-mw-power-plant-be-built-cirebon.html "New 1,000 MW-power plant to be built in Cirebon"] Anggi M. Lubis, The Jakarta Post, Jakarta, November 13, 2013.</ref> This plant is also shown in PLN's 2013-2022 long-range plan with a 2018 completion.
+<ref name=LT>[http://energy-indonesia.com/03dge/0140317pln.pdf “PLN Long Term Electricity Plan (2013-2023),”] presentation by Moch. Sofyan, Head of New & Renewable Division of PT PLN (Persero), 06 March 2014</ref> Funding for the project would come from loans from the [[Japan Bank for International Cooperation]] and the [[Export-Import Bank of Korea]].<ref>[http://www.beritasatu.com/ekonomi/153906-pembangunan-pltu-cirebon-unit-2-ditargetkan-pertengahan-2014.html Pembangunan PLTU Cirebon Unit 2 Ditargetkan Pertengahan 2014], Berita Satu, 5 Dec. 2013.</ref> The PT PLN 2018-2027 long range plan lists Unit 2 as 924 MW with a completion date of 2020.<ref name=RUPTL2018>[http://listrik.org/pln/ruptl/ Rencana Usaha Penyediaan Tenaga Listrik (RUPTL) 2018-2027,] PT PLN Persero, V-4</ref>
+
+In December 2014, government officials allocated land for the project. At that time, construction was planned to begin in 2015, with completion in 2020.<ref name=DJKN>[https://www.djkn.kemenkeu.go.id/2013/berita/kerjasama-pemanfaatan-proyek-pltu-cirebon-jawa-barat Utilisasi Kerja Sama Pemanfaatan BMN KPKNL Jakarta II: Kerjasama Pemanfaatan untuk Proyek PLTU Cirebon Jawa Barat], Direktorat Jenderal Kekayaan Negara website, 11 Dec. 2014.</ref> 
+
+In April 2015, project co-sponsor Indika withdrew from the power station, citing financial difficulties.<ref>Anggi M. Lubis, [http://www.thejakartapost.com/news/2015/04/30/indika-cancels-cirebon-power-plant-project.html "Indika cancels Cirebon power plant project,"] The Jakarta Post, April 30 2015</ref>
+
+In May 2015, PT Cirebon Energi Prasarana (CEPR), the developer of Cirebon II power plant, said construction of Cirebon II would begin near the end of 2015,<ref>[http://en.tempo.co/read/news/2015/05/12/056665712/Cirebon-II-Steam-Power-Plant-Construction-to-Start-by-Year-end "Cirebon II Steam Power Plant Construction to Start by Year-end,"] Tempo, May 12, 2015</ref> later pushed to January 2016.<ref>[http://jabar.tribunnews.com/2015/07/02/pembangunan-pltu-cirebon-ii-harus-negosiasi-ulang-dengan-pendana "Pembangunan PLTU Cirebon II Harus Negosiasi Ulang dengan Pendana,"] Tribun Jabar, 2 July 2015</ref>
+
+In March 2016, Director of Corporate Planning of PLN Nicke Widyawati said PLN expects to begin construction of the plant within the month.<ref>[http://www.rambuenergy.com/2016/03/pln-expects-to-soon-start-construction-of-pltu-jawa-7-pltu-cilacap-pltu-cirebon/ "PLN expects to soon start construction of PLTU Jawa 7, PLTU Cilacap, PLTU Cirebon,"] RambuEnergy, March 1, 2016</ref>
+
+In May 2016, it was reported that initial construction prep on unit 2 was underway, and a 1,000 MW ultra-supercritical unit 3 was planned.<ref>[http://newsbase.com/topstories/marubeni-partners-build-new-power-plant-indonesia "Marubeni, Partners To Build New Power Plant In Indonesia,"] Asia Power, 24 May 2016</ref>
+
+In December 2016, a legal challenge to the project was filed by The People for Environmental Protection (RAPEL), with legal representation by the Advocacy Team for Climate Justice. At the heart of the legal challenge was RAPEL’s claim that local planning law only permitted power plant development in the district of Astanajapura, and that the Cirebon 2 expansion also extended into Mundu district, which was zoned for local livelihoods. On April 19, 2017, the regional court in Bandung ruled the environmental permit for the plant was issued illegally.<ref name=awesomebob>Bob Burton, [http://endcoal.org/2017/04/embarrassment-for-japanese-government-bank-as-court-rules-coal-plants-permit-illegal/ "Embarrassment for Japanese Government bank as court rules coal plant’s permit illegal,"] EndCoal, Apr 19, 2017</ref>
+
+A coalition of Japanese groups are calling on JBIC to immediately review and repeal its decision to provide financing for Cirebon 2, saying the project is illegal according to local law and in violation of the “JBIC Guidelines for Confirmation of Environmental and Social Considerations,” which require “the compliance with environmental laws of the host nation and local governments concerned” and “the submission of environmental permit certificates issued by the host governments.”<ref>[http://www.foejapan.org/en/aid/170419.html "Cirebon Coal-fired Power Plant Projects, West Java, Indonesia,"] FOE Japan, Apr 17, 2017</ref>
+
+In October 2017, the Head of Communications at Cirebon Electric Power, Yuda Panjaitan, said problems around Spatial Planning (RTRW) and licensing in the State Administrative Court (PTUN) had been resolved, and Unit 2 had now obtained an environmental permit from the West Java Provincial Government under the legal umbrella of Government Regulation No. 13 of 2017. The plant was reported as under construction,<ref>[http://bisnis.liputan6.com/read/3115307/pltu-cirebon-unit-2-ditargetkan-beroperasi-pada-2021 PLTU Cirebon Unit 2 Ditargetkan Beroperasi pada 2021], Liputan 6, Oct. 2, 2017</ref> but Google Earth (dated November 1, 2017) shows only leveling of the site has begun, but no visible construction of the power station.
+
+In September 2018, it was reported that construction of Cirebon 2 was 24% complete.<ref>[https://finance.detik.com/energi/d-4231976/proyek-pltu-2-cirebon-sudah-capai-24 Cirebon PLTU 2 Project Reaches 24%], Detik Finance, Sep. 27, 2018</ref>
+
+In October 2018, the KOMIPO CEO told a Korean National Assembly hearing that “construction on Cirebon 3 has been suspended” and “we plan to do renewables.” The statements came while the CEO was being questioned by Assemblywoman Bae-sook Cho of the Trade, Industry and Energy Committee, who criticized the lack of emission controls attached to Cirebon 1 compared to Korean coal plants, and said coal will be an unreasonable choice in six to seven years when Cirebon 2 is completed, given the LCOE trends. According to an anonymous source within KOMIPO: “As of now we are not in the condition to proceed with the construction of Unit 3. This is because the Indonesian Government did not reflect the plant (Cirebon 3) in its power supply and demand plan.”<ref>[http://www.electimes.com/article.php?aid=1540192247167026002 "중부발전, 찌레본 석탄화력 신규 발전사업 중단하나,"] ElecTimes, 2018년 10월 22일</ref>
+
+In February 2019, the government's long-range plan for 2019-2028 listed the project with a completion date of 2022.<ref name=RUPTL2019>[http://listrik.org/pln/ruptl/ Rencana Usaha Penyediaan Tenaga Listrik (RUPTL) 2019-2028,] PT PLN Persero, V-43</ref> Construction was 28% complete as of February 2019.<ref>[https://katadata.co.id/berita/2019/02/07/pltu-cirebon-unit-ii-dipastikan-beroperasi-tahun-2022 PLTU Cirebon Unit II Dipastikan Beroperasi Tahun 2022], Katadata, Feb. 7, 2019</ref> Construction was 61% complete as of September 2019.<ref>[https://katadata.co.id/berita/2019/09/16/terhubung-dengan-kasus-suap-pembangunan-pltu-cirebon-ii-jalan-terus Terhubung Dengan Kasus Suap, Pembangunan PLTU Cirebon II Jalan Terus], Katadata, Sep. 16, 2019</ref>
+
+In March 2020, the project's sponsor declared force majeure and stated that development would be delayed as a result of the COVID-19 pandemic.<ref name=ko>[https://industri.kontan.co.id/news/jadwal-operasional-pembangkit-terganggu-wabah-corona-ini-tanggapan-pln?page=all Jadwal operasional pembangkit terganggu wabah corona, ini tanggapan PLN], Kontan, Mar. 8, 2020</ref> As of June 30, 2020 construction was reported to be 81.15% complete by the Directorate General of Electricity.<ref>[https://industri.kontan.co.id/news/simak-berikut-pembangkit-dan-proyek-kelistrikan-35000-mw-yang-terdampak-covid-19 Simak! Berikut pembangkit dan proyek kelistrikan 35.000 MW yang terdampak Covid-19], Kontan, Aug. 2, 2020</ref> 
+
+In February 2021, PLN's Regional Business Director for Java, Madura and Bali said that Unit 2 would be commissioned in 2022.<ref>[https://www.cnbcindonesia.com/news/20210223155055-4-225552/termasuk-pltu-batang-2022-akan-nambah-5000-mw-pembangkit Termasuk PLTU Batang, 2022 Akan Nambah 5.000 MW Pembangkit], CNBC Indonesia, Feb. 23, 2021</ref>
+
+In April 2023, Unit 2 was reportedly 99.8% complete and was slated for commercial operation in mid-May 2023.<ref>[https://market.bisnis.com/read/20230409/192/1644983/grup-indika-indy-siap-operasikan-pltu-cirebon-ii-tambah-cuan Grup Indika (INDY) Siap Operasikan PLTU Cirebon II, Tambah Cuan], Bisnis, April 9, 2023</ref>
+
+As of mid-June 2023, the unit was not yet operating.<ref>[https://bandung.bisnis.com/read/20230608/550/1663461/pltu-unit-2-cirebon-masih-uji-coba-terbatas PLTU unit 2 Cirebon Masih Uji Coba Terbatas], Bandung Bisnis, June 8, 2023</ref>
+
+In September 2023, an article stated that Cirebon II had been operating for "a matter of months". The unit appeared to have gone online in July or August 2023.<ref>[https://ekonomi.republika.co.id/berita/s1mk32370/kementerian-esdm-apresiasi-pltu-cirebon-2-terapkan-baku-mutu-emisi-internasional Kementerian ESDM Apresiasi PLTU Cirebon 2 Terapkan Baku Mutu Emisi Internasional], Republika, September 27, 2023</ref>
+
+In December 2025, Cirebon-2 was reportedly designated as a "National Vital Object".<ref>[https://bandung.bisnis.com/read/20251222/550/1938789/pltu-cirebon-2-resmi-jadi-objek-vital-nasional#goog_rewarded PLTU Cirebon 2 Resmi Jadi Objek Vital Nasional], Bandung Bisnis, December 22, 2025</ref>
+
+==Cancellation of Unit 3==
+
+As of June 2020, there had been no progress on Unit 3 since a May 2016 by Marubeni and other potential sponsors, and the unit appears to be cancelled.
+
+==Financing==
+
+'''Unit 1:''' The financing agreement for Unit 1 was closed in March 2010. US$595 million in debt was provided by the Japan Bank of International Cooperation, the Export-Import Bank of Korea, ING Group, Sumitomo Mitsui Banking Corporation, Mizuho Financial Group, and MUFG Bank. US$255 million in equity was provided by KEPCO, Marubeni, PT Tripatra Engineers & Constructors, and ST International.<ref name = ij>[https://ijglobal.com/data/transaction/19508/cirebon-coal-fired-power-plant-660mw-ipp Cirebon Coal-Fired Power Plant (660MW) IPP], IJGlobal, May 29, 2017</ref>
+
+'''Unit 2:''' In May 2016 a press article listed a consortium of five banks (ING, Crédit Agricole, Mizuho, SMBC, MUFG) set to provide a US$640 million loan for financing of Unit 2, aiming to reach financial close by the beginning of the third-quarter of 2016. The export credit agencies Exim Bank of Korea, JBIC, and Nippon Export and Investment Insurance (NEXI) are also considering financing for the project.<ref name=bank>[http://www.banktrack.org/show/dodgydeal/cirebon3#popover=financiers "Cirebon 2 coal fired power plant,"] BankTrack, accessed Dec 2016</ref>
+
+In April 2017, a loan agreement was finalised to provide US$1.74 billion for Cirebon 2. The export credit agencies Japan Bank for International Cooperation (JBIC) and the Export–Import Bank of Korea (Kexim) will provide 66% of project debt (US$1.148 billion). The private banks ING, Mitsubishi UFJ Financial Group, Mizuho Bank and Sumitomo Mitsui Banking Corporation are providing the remaining 34% of project debt (US$592m). The commercial bank loans are being insured by Kexim and the Nippon Export and Investment Insurance (NEXI). The project sponsors are providing US$435 million in equity to cover the remainder of the US$2.175 billion project costs.<ref>[https://ijglobal.com/data/transaction/34565?name=Cirebon%202%20Coal-Fired%20Power%20Plant%20(1000MW)%20IPP&link=%2Farticles%2F131063%2Fcirebon-2-financial-close-update "Cirebon 2 Coal-Fired Power Plant (1000MW) IPP,"] IJGlobal, accessed Sep. 2020</ref> The lead arranger of finance for the project is the global Dutch bank ING, which rejected pressure to withdraw from its role despite adopting a policy in November 2015 that it would reduce its exposure to coal projects.<ref name=awesomebob>Bob Burton, [http://endcoal.org/2017/04/embarrassment-for-japanese-government-bank-as-court-rules-coal-plants-permit-illegal/ "Embarrassment for Japanese Government bank as court rules coal plant’s permit illegal,"] EndCoal, Apr 19, 2017</ref>
+
+'''Unit 1 Early Retirement Refinancing Facility 1 (Proposed)''' - Refinancing transaction was proposed in 2022/2023 under the Energy Transition Mechanism developed by the ADB. USD 250-300m facility on the condition that Unit 1 retires earlier (target 2035). In December 2023, a nonbinding framework agreement was signed at COP28 by ADB, PT PLN and PT Cirebon Electric Power stating that they conditionally agreed to shorten the PPA and end the plant’s obligation to provide electricity in December 2035 instead of the original July 2042. The transaction is to be finalized in the first half of 2024. The framework agreement confirmed the parties will continue discussing the financing scheme for the early retirement of Cirebon Unit 1.<ref>{{Cite web|url=https://www.adb.org/news/new-agreement-aims-retire-indonesia-660-mw-coal-plant-almost-7-years-early|title=New Agreement Aims to Retire Indonesia 660-MW Coal Plant Almost 7 Years Early|date=December 2023|website=www.adb.org|url-status=live}}</ref> As of March 2025, there was no news on the closing of the transaction.<ref>{{Cite web|url=https://www.lowyinstitute.org/the-interpreter/cutting-coal-power-indonesia-s-test-case-turning-climate-pledge-reality|title=Cutting coal power: Indonesia’s test case for turning a climate pledge into reality|date=November 2024|website=www.lowyinstitute.org|url-status=live}}</ref> In November 2025, Reuters reported that the Cirebon-1 closure was facing delays after a deadline had passed without a funding deal.<ref>{{Cite web|url=https://www.reuters.com/business/energy/indonesia-coal-power-phase-out-plan-risk-due-stalled-international-funding-2025-11-17/|title=Indonesia coal power phase-out plan at risk due to stalled international funding|date=November 17, 2025|website=Reuters|access-date=June 2026}}</ref> In December 2025, Reuters reported that Indonesia was unlikely to move forward with the early retirement of Cirebon-1, with officials instead prioritizing the retirement of older coal plants.<ref>{{Cite web|url=https://www.reuters.com/business/energy/indonesia-backpedals-retiring-cirebon-coal-power-plant-early-2025-12-05/|title=Indonesia backpedals on retiring Cirebon coal power plant early|date=December 5, 2025|website=Reuters|access-date=June 2026}}</ref> As of June 2026, no financial close or replacement retirement-refinancing arrangement had been identified for Cirebon-1.
+
+==Bribery Scandal==
+
+In May 2019 Hyundai Engineering & Construction admitted that it had given bribes of between Rp 6.5 billion and Rp 9.5 billion to Cirebon Regent Sunjaya Purwadisastra to appease residents who were opposed to construction of Cirebon 2.<ref>[https://katadata.co.id/berita/2019/05/03/hyundai-akui-suap-bupati-cirebon-dalam-proyek-pltu Hyundai Akui Suap Bupati Cirebon dalam Proyek PLTU], Katadata, May 3, 2019</ref> In October 2019 Indonesia's Corruption Eradication Commission (KPK) banned three additional suspects in the case from leaving the country for three years.<ref>[https://jabar.tribunnews.com/2019/10/30/kasus-bupati-cirebon-sunjaya-kpk-perpanjangan-larangan-ke-luar-negeri-bagi-3-tersangka Kasus Bupati Cirebon Sunjaya, KPK Perpanjangan Larangan ke Luar Negeri Bagi 3 Tersangka], Katadata, Oct. 30, 2019</ref> Investigation of the bribery allegations was delayed in February 2021 when PT Cirebon Power's Corporate Affairs Director Teguh Haryono failed to appear in response to a summons of the Corruption Eradication Commission.<ref>[https://www.liputan6.com/news/read/4485786/petinggi-pt-cirebon-power-mangkir-pemeriksaan-kpk-soal-kasus-suap-izin-pltu-2], Liputan6, Feb. 17, 2021</ref>
+
+In December 2022, the KPK announced that a former broker of Hyundai Engineering & Construction would be arrested for his alleged involvement in the bribery scandal. As Hyundai maintained their denial of the allegations, an ongoing legal battle was likely.<ref>[http://www.businesskorea.co.kr/news/articleView.html?idxno=105743 Indonesian Authorities to Arrest Hyundai E&C Broker over Bribery Scandal], Business Korea, December 12, 2022</ref>
+
+In March 2023, Friends of the Earth Japan and three other NGOs called on Japan’s Ministry of Finance and the Japan Bank for International Cooperation (JBIC) to suspend financial disbursements for the project until a verdict was determined on the bribery charges.<ref>[https://foejapan.org/en/issue/20230329/12090/ Commencement of Trial in the Bribery Case of Cirebon Coal-Fired Power Plant Unit 2 in Indonesia: JBIC should suspend its loan disbursement and take responsible actions to halt the project!], Friends of the Earth Japan, March 29, 2023</ref>
+
+In August 2023, former Regent Sunjaya Purwadisastra was convicted of bribery and money laundering, which included bribes related to the Cirebon 2 expansion.<ref>[https://www.kabariku.com/2023/08/kpk-nyatakan-pikir-pikir-atas-vonis-7-tahun-eks-bupati-cirebon-kasus-uang-spp/ "KPK Nyatakan Pikir-Pikir atas Vonis 7 Tahun eks Bupati Cirebon Kasus "Uang SPP","] August 2023</ref><ref>[https://foejapan.org/en/issue/20230818/13961/ "Bribery of Project Owner Revealed at Cirebon Coal Plant Unit 2 in Indonesia - Request Submitted to MoF and JBIC for Prompt Suspension of Public Support,"] Friends of the Earth Japan, August 18, 2023</ref>
+
+In August 2024, the Indonesian Supreme Court confirmed the conviction. Following the ruling, Walhi (Friends of the Earth Indonesia) and three other local community organizations and NGOs called on the JBIC to immediately suspend the loans for the project and require mandatory prepayment of loans for the unit, in line with the provisions of its anti-bribery policy.<ref>[https://foejapan.org/en/issue/20240807/19794/ “Conviction Confirmed for Bribery of Cirebon 2 Coal-Fired Power Plant in Indonesia: “JBIC Must End Public Financing!” Local Residents and NGOs Demanded,”] Friends of the Earth Japan, August 7, 2024</ref>
+
+In November 2024, the case had reportedly not yet been officially resolved. Walhi organizers held a demonstration demanding that the legal process be completed by the KPK.<ref>[https://betahita.id/news/detail/10740/kasus-pltu-hyundai-di-korea-maju-di-kpk-jalan-di-tempat.html?v=1732965703 Kasus PLTU Hyundai: Di Korea Maju, di KPK Jalan di Tempat], Betahita, November 29, 2024</ref>
+
+According to reporting from May 2025, South Korean prosecutors had successfully lobbied Indonesia’s anti-corruption agency, the Corruption Eradication Commission (KPK), to reactivate its investigation into allegations that a Hyundai Engineering and Construction official paid US$368,493 to former Regent Sunjaya Purwadisastra to help facilitate the construction of Cirebon-2. KPK investigators had recently interviewed Herry Jung, the then general manager of Hyundai Engineering and Construction, who was first named as a suspect in the case in 2019.<ref>[https://voi.id/en/news/485326 “South Korean Prosecutors Ask KPK To Investigate Problems Caused By The Construction Of PLTU 2 Cirebon,”] VOI, May 28, 2025</ref><ref>[https://www.thejakartapost.com/indonesia/2025/05/29/south-korea-urges-kpk-to-continue-probe-into-cirebon-bribery-case.html “South Korea urges KPK to continue probe into Cirebon bribery case,”] The Jakarta Post, May 29, 2025</ref>
+
+In August 2025, the Seoul Central District Prosecutors’ Office announced that it had abandoned its investigation of Hyundai under the International Anti-Bribery Act for paying 550 million won (US$395,000) to win a US$727 million construction contract for Cirebon 2. The prosecutor said the investigation confirmed company employees paid bribes to the local military governor, who sought 1.7 billion won (US$1.22 million) to suppress protests by residents and civil society groups. The prosecutor said it was difficult to establish an “intent to obtain undue advantage” under the International Anti-Bribery Act, stating that the company had no choice other than to pay the bribes to ensure the safety of its staff.<ref>[https://www.chosun.com/english/national-en/2025/08/26/X6VAW5YLV5AFFLD5A2XZTKJEDA/ “Prosecutors Clear Hyundai in 550M Won Bribe Case Involving Indonesian Official,”] The Chosun Daily, August 26, 2025</ref>
+
+==Opposition to Plant==
+
+Protests from the community in relation to its land acquisition status delayed initial operation of the plant.<ref name = "na">[http://www.thejakartapost.com/news/2012/10/19/cirebon-power-plant-stream-java-and-bali.html Cirebon power plant on stream for Java and Bali], Amahl S. Azwar, ''The Jakarta Post'', 19 October 2012.</ref>
+
+In December 2016, a legal challenge to the project was filed by The People for Environmental Protection (RAPEL), with legal representation by the Advocacy Team for Climate Justice. At the heart of the legal challenge was RAPEL’s claim that local planning law only permitted power plant development in the district of Astanajapura, and that the Cirebon 2 expansion also extended into Mundu district, which was zoned for local livelihoods. On April 19, 2017, the regional court in Bandung ruled the environmental permit for the plant was issued illegally.<ref name=awesomebob>Bob Burton, [http://endcoal.org/2017/04/embarrassment-for-japanese-government-bank-as-court-rules-coal-plants-permit-illegal/ "Embarrassment for Japanese Government bank as court rules coal plant’s permit illegal,"] EndCoal, Apr 19, 2017</ref>
+
+In February 2023, ResponsiBank Indonesia and WALHI (Friends of the Earth Indonesia) called on CEP and its shareholders to be held accountable for the damages the power station has placed on surrounding communities. Residents living between the Cipaluh and Kanci rivers have repeatedly voiced concerns over the social, environmental and public health impacts of Cirebon-1.<ref>[https://www.eco-business.com/news/indonesias-cirebon-1-coal-power-project-highlights-gaps-in-adbs-coal-to-clean-etm-scheme/ Indonesia's Cirebon 1 coal power project highlights gaps in ADB's 'coal-to-clean' ETM scheme], Eco-Business, February 7, 2023</ref>
+
+In November 2024, residents of five surrounding communities held a demonstration at the gates of Cirebon power station Unit 2, demanding compensation for land now occupied by the project.<ref>[https://listrikindonesia.com/detail/14548/ratusan-warga-geruduk-pltu-2-cirebon Ratusan Warga Geruduk PLTU 2 Cirebon], Listrik Indonesia, November 7, 2024</ref>
+
+==Environmental Impact==
+
+Three villages located close to the Cirebon power station are experiencing severe health impacts due to coal ash from the power station being blown into residential areas. Five public health centers near the power station documented a drastic uptick in severe respiratory illness among the villagers, from 613 people in 2018 to 1,525 people in 2019.<ref>Riky Ferdianto, [https://magz.tempo.co/read/38000/voices-against-the-waste Voices Against the Waste], Tempo, June 11, 2021</ref>
+
+An August 2023 special report in the Jakarta Post described how [https://www.gem.wiki/Fly_ash fly ash] and emissions from the Cirebon power station had polluted the farmland and fishing grounds of nearby villages.<ref>[https://www.thejakartapost.com/longform/2023/08/31/silent-invisible-danger-at-cirebon-coast.html "Silent, invisible danger on Cirebon coast,"] The Jakarta Post, August 31, 2023</ref>
+
+A June 2024 report by the Centre for Research Energy and Clear Air (CREA) estimated that air pollution from Cirebon 1 was linked to 441 deaths a year and an associated annual economic burden of US$308 million (IDR 4.57 trillion). Cirebon 1 and [[Pelabuhan Ratu power station]] Units 1-3 have been earmarked for early retirement under Indonesia's Just Energy Transition Partnership (JETP) plan, and [[Banten Suralaya power station]] Units 1-4 have been mentioned as another likely candidate for early closure. CREA's report noted that these three plants account for only 20% of the top ten most polluting coal plants in Java, and that "considering health impacts as part of the factors in setting coal retirement pathways is not explicitly stated in the JETP" plan.<ref>[https://energyandcleanair.org/wp/wp-content/uploads/2024/06/EN-ID-early-retirement-Cirebon-1_Pelabuhan-Ratu_Suralaya-1-4.pdf "Health and economic benefits from early phase out of Indonesia’s first JETP coal power plants,"] Centre for Research Energy and Clear Air, June 20, 2024</ref>
+
+A March 2025 report by the Centre for Research Energy and Clear Air (CREA) estimated that the early closure of the Cirebon-1 plant in 2035 would avoid about 6000 deaths between 2036 and 2042.<ref name=CREA_Mar25/>
+
+In November 2025, reporting recounted losses suffered by fishing communities surrounding Cirebon power station.<ref>[https://mongabay.co.id/2025/11/04/pltu-cirebon-picu-kehancuran-ruang-tangkap-nelayan/ PLTU Cirebon Picu Kehancuran Ruang Tangkap Nelayan], Mongabay, November 4, 2025</ref>
+
+==Outage Concerns==
+
+On June 13th, 2026, the National Energy Council inspected the Cirebon expansion unit amid concerns over electricity supply reliability following recent outages in several regions.<ref name = outage>[https://www.petromindo.com/news/article/energy-council-says-cirebon-coal-plant-operating-normally-amid-outage-concerns, "Energy council says Cirebon coal plant operating normally amid outage concerns"], Petromindo, June 15, 2026</ref>
+
+Earlier in the month, Energy Minister Bahlil Lahadalia denied rumors that coal shortages triggered recent power blackouts, confirming that domestic supply allocations have comfortably reached 170 million tons. Instead, he attributed the grid issues to technical malfunctions at several power stations and noted that state-owned utility PLN is currently restoring the affected systems.<ref name=outage></ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Indonesia]]

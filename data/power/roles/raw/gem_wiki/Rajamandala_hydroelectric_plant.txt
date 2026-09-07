@@ -1,0 +1,77 @@
+# GEM wiki page: Rajamandala hydroelectric plant
+# URL: https://www.gem.wiki/Rajamandala_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Rajamandala hydroelectric plant''' is an operating hydroelectric power plant in Rajamandala Kulon, Cipatat, West Bandung Regency, West Java, Indonesia.
+
+==Project Details==
+==== '''Table 1:''' Project details for Rajamandala hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology type
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.kepco.co.jp/english/corporate/info/international/generate/indonesia.html}}</ref>
+| 2019<ref name="autoref_0" />
+| 47 MW<ref name="autoref_0" />
+| Run-of-river<ref name="autoref_0" />
+| Kansai Electric Power Co; PT PLN Indonesia Power (関西電力株式会社)<ref name="autoref_1">{{cite web |url=https://rajamandala-power.com/}}</ref><ref name="autoref_1" />
+| Rajamandala Electric Power CO LTD<ref name="autoref_1" />
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Rajamandala hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Rajamandala Kulon, Cipatat, West Bandung Regency, West Java, Indonesia<ref name="autoref_1" />
+| Citarum River<ref name="autoref_0" />
+| -6.8573, 107.3394 (exact)<ref name="autoref_1" />
+|}
+The map below shows the exact location of the hydroelectric power plant:
+{{
+#display_map:
+-6.8573, 107.3394~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Indonesia]]
+
+__NOTOC__

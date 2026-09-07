@@ -1,0 +1,97 @@
+# GEM wiki page: KEPCO Eswatini power station
+# URL: https://www.gem.wiki/KEPCO_Eswatini_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''KEPCO Eswatini power station''' is a cancelled power station in Hhohho, Eswatini.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| KEPCO Eswatini power station
+| Hhohho, Eswatini
+| -26.316667, 31.133 (approximate)
+|}
+{{
+#display_map:
+-26.316667, 31.133
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Cancelled
+| coal: unknown
+| 200
+| unknown
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Owner
+!Parent
+|-
+| Korea Electric Power Corp [100%]
+| Korea Electric Power Corp [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDM1MjUKICAgIFAxMDAwMDAxMDM1MjVbIktFUENPIEVzd2F0aW5pIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background==
+
+In June 2015 the leaders of Swaziland and South Korea announced plans for South Korea-based [[KEPCO]] to build a 200 MW IPP coal plant in Swaziland. No other details were provided.<ref>[http://www.observer.org.sz/news/73417-south-korean-company-to-establish-coal-thermal-power.html "South Korean company to establish coal thermal power,"] Swazi Observer, June 5, 2015</ref>
+
+With no further developments, it appears the project is abandoned.
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Eswatini]]

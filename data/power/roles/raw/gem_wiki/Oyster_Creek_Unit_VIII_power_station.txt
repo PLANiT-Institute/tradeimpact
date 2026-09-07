@@ -1,0 +1,108 @@
+# GEM wiki page: Oyster Creek Unit VIII power station
+# URL: https://www.gem.wiki/Oyster_Creek_Unit_VIII_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Oyster Creek Unit VIII power station''' is an operating power station of at least 498-megawatts (MW) in Freeport, Brazoria, Texas, United States.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Oyster Creek Unit VIII power station
+| Freeport, Brazoria, Texas, United States
+| 28.9802, -95.342 (exact)<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (November 2019) |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20200612191408/https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |archive-date=2020-06-12 |url-status=live}}</ref>
+|}
+{{
+#display_map:
+28.9802, -95.342
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''CC1''': 28.9802, -95.342
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| CC1
+| Operating<ref name="autoref_0" />
+| fossil gas: natural gas, fossil gas: unknown<ref name="autoref_1">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (July 2021) |access-date=October 13, 2021 |archive-url=https://web.archive.org/web/20211122185052/https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |archive-date=2021-11-22 |url-status=live}}</ref>
+| 498<ref name="autoref_0" />
+| combined cycle<ref name="autoref_0" />
+| yes<ref name="autoref_0" />
+| 1994<ref name="autoref_0" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| CC1
+| Toyota Tsusho Corp [37%]; Engie North America Inc [50%]; GE Energy Financial Services Inc [12%]<ref name="autoref_2">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2020.xlsx |title=U.S. Energy Information Administration, Form EIA-860 detailed data with previous form data (EIA-860A/860B), 2020 |access-date=October 13, 2021 |archive-url=https://web.archive.org/web/20210418200451/https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2020.xlsx |archive-date=2021-04-18 |url-status=live}}</ref><ref name="autoref_2" /><ref name="autoref_2" />
+| ENGIE SA [50.0%]; Toyota Tsusho Corp [37.5%]; General Electric Co [12.5%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcwLjQ3JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMTAwMDA3OVsiR292ZXJubWVudCBvZiBGcmFuY2UiXSAtLTIzLjY0JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTUuODklLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAwMDAwMzgyWyJFTkdJRSBTQSJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMjk3NQogICAgMTAwMDAwMDAyOTc1WyJFbmdpZSBOb3J0aCBBbWVyaWNhPGJyPkluYyJdIC0tNTAuMCUtLT4gUDEwMDAwMDQwMTY3MAogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0+IDEwMDAwMTAxNDg0OQogICAgMTAwMDAxMDE0ODQ5WyJGTVIgTExDIl0gLS02LjE1JS0tPiAxMDAwMDAwMDEyMjMKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tNy42JS0tPiAxMDAwMDAwMDEyMjMKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC4xMyUtLT4gMTAwMDAwMDAxMjIzCiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjEyJS0tPiAxMDAwMDAwMDEyMjMKICAgIDEwMDAwMDAwMTIyM1siR2VuZXJhbCBFbGVjdHJpYyBDbyJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMzA1NgogICAgMTAwMDAwMDAzMDU2WyJHRSBFbmVyZ3kgRmluYW5jaWFsPGJyPlNlcnZpY2VzIEluYyJdIC0tMTIuMCUtLT4gUDEwMDAwMDQwMTY3MAogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00Ny41NiUtLT4gMTAwMDAwMDAwNjYyCiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLT4gMTAwMDAxMDE2MjA4CiAgICAxMDAwMDEwMTYyMDhbIlRveW90YSBNb3RvciBDb3JwIl0gLS0yMS42OSUtLT4gMTAwMDAwMDAwNjYyCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfN1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzExWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfMTJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTMuOTUlLS0+IDEwMDAwMDAwMDY2MgogICAgMTAwMDAxMDE2MjA5WyJUb3lvdGEgSW5kdXN0cmllczxicj5Db3JwIl0gLS0xMS4xOCUtLT4gMTAwMDAwMDAwNjYyCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNjIlLS0+IDEwMDAwMDAwMDY2MgogICAgMTAwMDAwMDAwNjYyWyJUb3lvdGEgVHN1c2hvIENvcnAiXSAtLTM3LjAlLS0+IFAxMDAwMDA0MDE2NzAKICAgIFAxMDAwMDA0MDE2NzBbIk95c3RlciBDcmVlayBVbml0PGJyPlZJSUkgcG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Financing==
+
+| Engie SA[50.0%]; Toyota Tsusho Corporation[37.5%]; General Electric Company[12.5%]<ref name="ref_0">{{cite web |url=https://www.gecapital.com/energy-financial-services |title=www.gecapital.com/energy-financial-services |date= |access-date= |archive-url=https://web.archive.org/web/20210922195242/https://www.gecapital.com/energy-financial-services |archive-date=September 22, 2021 |url-status=live}}</ref><ref name="ref_1">{{cite web |url=https://www.leicode.be/leicert/?lei=549300EWWW0HKVM0OU09 |title=www.leicode.be/leicert/?lei=549300EWWW0HKVM0OU09 |date= |access-date= |archive-url=https://web.archive.org/web/20210917192251/https://www.leicode.be/leicert/?lei=549300EWWW0HKVM0OU09 |archive-date=September 17, 2021 |url-status=live}}</ref><ref name="ref_2">{{cite web |url=https://www.toyota-tsusho.com/english/ir/individual/ |title=www.toyota-tsusho.com/english/ir/individual/ |date= |access-date= |archive-url=https://web.archive.org/web/20210917190054/https://www.toyota-tsusho.com/english/ir/individual/ |archive-date=September 17, 2021 |url-status=live}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United States]]

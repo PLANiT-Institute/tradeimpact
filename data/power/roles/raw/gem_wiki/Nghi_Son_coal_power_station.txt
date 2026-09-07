@@ -1,0 +1,184 @@
+# GEM wiki page: Nghi Son coal power station
+# URL: https://www.gem.wiki/Nghi_Son_coal_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Nghi Son coal power station''' is an operating power station of at least 1920-megawatts (MW) in Nghi Son Economic Zone, Hai Ha, Tinh Gia, Thanh Hóa, Vietnam.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Nghi Son coal power station
+| Nghi Son Economic Zone, Hai Ha, Tinh Gia, Thanh Hóa, Vietnam
+| 19.31581, 105.80026 (exact)
+|}
+{{
+#display_map:
+19.31581, 105.80026
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Phase 1 Unit 1, Phase 1 Unit 2, Phase 2 Unit 1, Phase 2 Unit 2''': 19.31581, 105.80026
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Phase 1 Unit 1
+| Operating
+| coal: anthracite<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 300
+| subcritical
+| 2013
+| False
+|-
+| Phase 1 Unit 2
+| Operating
+| coal: anthracite<ref name="autoref_0" />
+| 300
+| subcritical
+| 2014
+| False
+|-
+| Phase 2 Unit 1
+| Operating
+| coal: bituminous<ref name="autoref_0" />
+| 660
+| supercritical
+| 2022
+| False
+|-
+| Phase 2 Unit 2
+| Operating
+| coal: bituminous<ref name="autoref_0" />
+| 660
+| supercritical
+| 2022
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Phase 1 Unit 1
+| EVNGENCO 1 Corp [100%]
+| Vietnam Electricity LLC [100.0%]
+|-
+| Phase 1 Unit 2
+| EVNGENCO 1 Corp [100%]
+| Vietnam Electricity LLC [100.0%]
+|-
+| Phase 2 Unit 1
+| Nghi Son 2 Power LLC [100%]
+| Korea Electric Power Corp [50.0%]; Marubeni Corp [40.0%]; Tohoku Electric Power Co Inc [10.0%]
+|-
+| Phase 2 Unit 2
+| Nghi Son 2 Power LLC [100%]
+| Korea Electric Power Corp [50.0%]; Marubeni Corp [40.0%]; Tohoku Electric Power Co Inc [10.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic/imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+The Nghi Sơn Economic Zone was created in 2005, and its future plans called for a power plant project totaling 1,800 MW.<ref>[http://vietnamnews.vn/economy/159578/new-nghi-son-zone-calls-for-investment.html New Nghi Son Zone Calls for Investment], Viêt Nam News, Nov. 28, 2006.</ref> 
+
+Additionally, within the Nghi Sơn Economic Zone is the nearby [[Cong Thanh power station]], which is also currently under development; several miles to the south, across the provincial border in Nghệ An province, is the [[Quynh Lap power station]] project site.
+
+===Nghi Sơn-1===
+In June 2010, project sponsor [[Electricity of Vietnam]] awarded the construction contract for the 600-MW, $1.2 billion [[Nghi Son 1 power station|Nghi Sơn-1 coal-fired power plant]] to Japan's [[Marubeni Corporation]]. Construction began in July.<ref>[http://www.pennenergy.com/articles/pennenergy/2010/07/construction-of-nghi.html Construction of Nghi Son 1 Thermoelectric Plant Begins in Vietnam], PennEnergy, July 7, 2010.</ref> The plant's first 300-MW unit went online in June 2013; the second unit came online in June 2014.<ref>[http://talkvietnam.com/2013/06/first-turbine-of-nghi-son-1-thermoelectric-plant-to-be-operational-in-june/#.UtWHUmRDvmE First Turbine of Nghi Son 1 Thermoelectric Plant to Be Operational in June], TalkVietnam, June 9, 2013.</ref><ref>[http://www.thanhnien.com.vn/doi-song/nhiet-dien-nghi-son-1-da-san-sang-van-hanh-thuong-mai-81140.html Nhiệt điện Nghi Sơn 1 đã sẵn sàng vận hành thương mại], Thanh Nien Online, 2 May 2014.</ref>
+
+In June 2023, Unit 1 was offline for 10 days following an incident that required repairs.<ref>[https://moit.gov.vn/tin-tuc/phat-trien-nang-luong/ca-2-to-may-nhiet-dien-nghi-son-1-dang-phat-dien-toi-da.html Cả 2 tổ máy Nhiệt điện Nghi Sơn 1 đang phát điện tối đa], Bộ Công Thương, June 14, 2023.</ref> In September 2023, Unit 2 was taken offline for planned maintenance.<ref>[https://tapchicongthuong.vn/bai-viet/dam-bao-van-hanh-an-toan-on-dinh-nha-may-nhiet-dien-nghi-son-1-111823.htm Đảm bảo vận hành an toàn, ổn định Nhà máy Nhiệt điện Nghi Sơn 1], Công Thương, October 5, 2023.</ref> In February 2024, Unit 1 was reconnected to the grid following additional repairs.<ref>[https://www.evn.com.vn/d6/news/Cong-ty-Nhiet-dien-Nghi-Son-chuan-bi-nhu-the-nao-truoc-cao-diem-mua-kho-nam-2024-6-14-123407.aspx Công ty Nhiệt điện Nghi Sơn chuẩn bị như thế nào trước cao điểm mùa khô năm 2024?], EVN, February 23, 2024</ref> As of May 2024, both units were operating normally.<ref>[https://congthuong.vn/nha-may-nhiet-dien-nghi-son-1-gop-phan-dam-bao-cung-ung-dien-trong-dip-le-304-15-318222.html Nhà máy Nhiệt điện Nghi Sơn 1: Góp phần đảm bảo cung ứng điện trong dịp lễ 30/4 - 1/5], Công Thương, May 4, 2024</ref>
+
+In September 2025, contract bidding was underway for the installation of technical upgrades at Nghi Sơn-1 power station.<ref>[https://baodauthau.vn/goi-thau-55-ty-dong-tai-nhiet-dien-nghi-son-1-vi-sao-tiep-tuc-gia-han-moi-thau-post184319.html Gói thầu 55 tỷ đồng tại Nhiệt điện Nghi Sơn 1: Vì sao tiếp tục gia hạn mời thầu?], Báo Đấu thầu, September 3, 2025</ref> Unit 1 was slated to undergo scheduled maintenance to "replace equipment and improve operational reliability" (Google translate).<ref>[https://nghison.evn.vn/d4/news/Nha-may-Nhiet-dien-Nghi-Son-1-bao-dam-moi-truong-trong-dot-dai-tu--1-3575.aspx Nhà máy Nhiệt điện Nghi Sơn 1 bảo đảm môi trường trong đợt đại tu], Công ty Nhiệt điện Nghi Sơn, November 14, 2025</ref>
+
+===Financing for Nghi Sơn-1===
+In March 2007, the Japan International Cooperation Agency (JICA) agreed to provide a US$772 million loan to the project.<ref name=":1">{{Cite web|url=https://sekitan.jp/jbic/wp-content/uploads/2019/07/List-of-Coal-Power-Investments-by-JBIC-NEXI-JICA_0718.pdf|title=List of Coal Power Plants funded by JBIC, NEXI and JICA (2003-2019)|last=|first=|date=2019|website=|url-status=live|archive-url=|archive-date=|access-date=}}</ref> JICA provided two additional loans in 2011, one for approximately US$361 million<ref name = jica1>[http://web.archive.org/web/20201024180611/https://www.jica.go.jp/english/news/press/2010/110124.html Japanese ODA Loan Signed with Vietnam], Japan International Cooperation Agency, Jan. 24, 2011, Archived Oct. 24, 2020</ref> and the other for approximately US$516 million.<ref name = jica2>[http://web.archive.org/web/20201224230714/https://www.jica.go.jp/english/news/press/2011/111102.html Signing of Japanese ODA Loan with the Socialist Republic of Vietnam], Japan International Cooperation Agency, November 2, 2011, Archived Dec. 24, 2020</ref>
+
+===Nghi Sơn-2===
+In March 2013, the Vietnamese Ministry of Industry and Trade awarded a build-operate-transfer (BOT) contract for the 1,320 MW gross (1,200-MW net) [[Nghi Son 2 power station|Nghi Sơn-2 coal-fired power plant]] to a consortium consisting of [[Marubeni Corporation]] and [[Korea Electric Power Company]] (KEPCO).<ref>[http://www.moit.gov.vn/en/News/225/ministry-of-industry-and-trade-awards-nghi-son-2-thermal-power-plant--contract-to-marubeni--kepco-consortium.aspx Ministry of Industry and Trade Awards Nghi Son 2 Thermal Power Plant Contract to Marubeni – KEPCO Consortium], Vietnam Ministry of Industry & Trade website, March 25, 2013.</ref> The plant is scheduled to come online in 2018; the two companies will then own and operate the plant for 25 years, after which ownership will revert to [[Electricity of Vietnam]].<ref>[http://www.marubeni.com/news/2013/release/00011.html Receipt of Notification of Award for Vietnam, Nghi Son 2 Coal-Fired Power Project], Marubeni Corporation press release, March 25, 2013.</ref>
+
+In August 2014, the project's developers and provincial authorities pushed to accelerate the plant's development process, in order to ensure that it would be able to be built on schedule. At that time, some financial, and contract details were still outstanding.<ref>[http://baodautu.vn/day-nhanh-tien-do-du-an-nhiet-dien-nghi-son-2.html-21448 Đẩy nhanh tiến độ Dự án Nhiệt điện Nghi Sơn 2], Báo Đầu tư, 23 Aug. 2014.</ref> As of April 2015, construction was expected to begin in August.<ref>[http://truyenhinhthanhhoa.vn/web/trang-chu/tin-tuc-su-kien/chinh-tri/dong-chi-le-hong-anh-uy-vien-bo-chinh-tri-thuong-truc-ban-bi-thu-tham-khu-kinh-te-nghi-son.html Đồng chí Lê Hồng Anh, Ủy viên Bộ Chính trị, Thường trực Ban bí thư thăm khu kinh tế Nghi Sơn], TTV, 9 Apr. 2015.</ref>
+
+Land clearing began on the project in September 2015.<ref>[https://www.talkvietnam.com/2015/09/construction-starts-at-nghi-son-2-coal-fired-power-plant/ "Construction starts at Nghi Son 2 coal-fired power plant,"] Talk Vietnam, September 18, 2015</ref> The project did not begin actual construction at that date, however, as the project was still being negotiated.
+
+In November 2016, Vietnam's Ministry of Industry and Trade approved a new build-operate-transfer (BOT) contract by Marubeni and KEPCO. The project would cost US$2.3 billion, with 50% coming from the two companies and 50% from a consortium of banks. Unit 1 was scheduled to come online by Sept. 2019, and Unit 2 by March 2020.<ref>[http://vietnamfinance.vn/thi-truong/marubeni-bat-tay-kepco-lam-nhiet-dien-nghi-son-2-tri-gia-23-ty-usd-20161108171537404.htm Marubeni bắt tay KEPCO làm nhiệt điện Nghi Sơn 2 trị giá 2,3 tỷ USD], VietNam Finance, 8 Nov. 2016.</ref>
+
+In November 2017, KEPCO finalized the US$2.3 billion (2.56 trillion won) contract with Electricity of Vietnam (EVN). KEPCO said it will break ground this year and complete the project in 2021. Once completed, KEPCO will operate it for 25 years before transferring it to the Vietnamese.<ref>[http://www.koreatimes.co.kr/www/news/nation/2017/11/693_239011.html "KEPCO to build coal-fired power plant in Vietnam,"] Biz and Tech, Nov 9, 2017</ref>
+
+In July 2018, Doosan Heavy Industries & Construction Co. said it had commenced the delayed construction on the plant after it received an advanced payment of US$170 million for the US$1.6 billion deal it secured in 2014. The plant is planned for operation in 2022.<ref>[https://pulsenews.co.kr/view.php?year=2018&no=469625 "Doosan Heavy Industries begins construction of thermal power plant in Vietnam,"] Pulse News, 2018.07.26</ref>
+
+[https://www.planet.com/stories/nghi-son-power-station-YgLXr6wmg Planet satellite photos] show physical construction began in late 2018.
+
+In February 2020, the National Steering Committee on power development reported that construction was 52.35% complete and that Unit 1 was scheduled to be commissioned in February 2022 and Unit 2 in August 2022.<ref name="vl">[http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/tinh-hinh-thuc-hien-cac-du-an-dien-theo-hinh-thuc-bot-o-viet-nam.html Tình hình thực hiện các dự án điện theo hình thức BOT ở Việt Nam], Feb. 14, 2020</ref> Unit 1 was commissioned in March 2022.<ref>[https://en.vietnamplus.vn/thanh-hoa-province-wants-to-enhance-cooperation-with-korean-partners/224090.vnp Thanh Hoa province wants to enhance cooperation with Korean partners], Vietnam Plus, Mar. 25, 2022</ref>
+
+As of July 2022, Nghi Sơn-2 appeared to be at a full 1,200 MW capacity.<ref>[https://ns2pc.com/ Nghi Son 2 Power Thermal Plant], NS2PC, accessed July 25, 2022</ref><ref>[https://kemlu.go.id/hanoi/en/news/19727/ambassador-denny-abdi-visited-nghi-son-2-power-thermal-plant Ambassador Denny Abdi visited Nghi Son 2 Power Thermal Plant], Ministry of Foreign Affairs Republic of Indonesia, accessed June 18, 2022</ref> On Aug. 28, 2022, an official inauguration and commissioning ceremony for the plant was held.<ref>[https://nangluongvietnam.vn/khanh-thanh-nha-may-nhiet-dien-bot-nghi-son-2-29330.html Khánh thành Nhà máy Nhiệt điện BOT Nghi Sơn 2], Nang Luong Vietnam, Aug. 28, 2022</ref>
+
+In September 2025, Vietnam’s Ministry of Finance proposed exempting the foreign owners of seven coal power plants from the requirement to pay a 15% global minimum corporate tax rate set by the OECD. The list of coal plants, which were developed under “build-operate-transfer” (BOT) contracts, included [https://www.gem.wiki/Mong_Duong_power_station Mông Dương-2], [https://www.gem.wiki/Vinh_Tan_power_station Vĩnh Tân-1], Nghi Sơn-2, [https://www.gem.wiki/Van_Phong_power_station Vân Phong-1], [https://www.gem.wiki/Vung_Ang_power_station Vũng Áng-2], [[Hai Duong Thermal Power Plant]], and [https://www.gem.wiki/Duyen_Hai_Power_Generation_Complex Duyên Hải-2].<ref>[https://vneconomy.vn/de-xuat-mien-tru-thue-toi-thieu-toan-cau-cho-du-an-bot-dien-co-bao-lanh-chinh-phu.htm “Đề xuất miễn trừ thuế tối thiểu toàn cầu cho dự án BOT điện có bảo lãnh Chính phủ,”] VnEconomy, September 11, 2025</ref> The Ministry argued that imposing the 15% minimum tax could trigger compensation obligations that “would expose the Vietnamese government to the risk of having to pay compensation that exceeds the tax revenues.”<ref>[https://www.reuters.com/sustainability/boards-policy-regulation/vietnam-exempt-mitsubishi-kepco-other-coal-power-plant-operators-global-tax-2025-09-12/ “Vietnam to exempt Mitsubishi, Kepco, other coal power plant operators from global tax, document shows,”] Reuters, September 11, 2025</ref>
+
+In June 2026, the Deputy General Director of Nghi Sơn-2 stated that the company was evaluating the potential future use of ammonia and biomass co-firing and carbon capture at the power station.<ref>[https://baothanhhoa.vn/nghi-son-truoc-co-hoi-hinh-thanh-trung-tam-nang-luong-quoc-gia-289861.htm Nghi Sơn trước cơ hội hình thành trung tâm năng lượng quốc gia], Báo Thanh Hóa, June 4, 2026</ref>
+
+===Financing for Nghi Sơn-2===
+In April 2018, the Japan Bank for International Cooperation (JBIC) agreed to provide US$560 million in loan funding for the 1200 MW Nghi Son 2 plant in Vietnam.<ref>[https://www.jbic.go.jp/en/information/press/press-2018/0413-010921.html "Project Finance and Political Risk Guarantee for Nghi Son 2 Coal-Fired Power Generation Project in the Republic of Vietnam,"] JBIC, Apr 13, 2018</ref> The Export-Import Bank of Korea is also providing US$560 million, while a coalition of banks from Japan, Singapore, and Malaysia, comprising DBS Bank, Mizuho Bank, Maybank, Mitsubishi UFJ Financial Group, OCBC Bank, Shinsei Bank, and Sumitomo Mitsui Banking Corporation, are providing the remaining US$747.86 million.<ref name=":0">{{Cite web|url=https://ijglobal.com/data/transaction/28855/nghi-son-2-coal-fired-power-plant-1200mw-ipp|title=Preview of Nghi Son 2 Coal-Fired Power Plant (1200MW) IPP {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-09-23}}</ref> Malaysia's Maybank agreed to finance the project in April 2018 after the withdrawal that month of Standard Chartered.<ref>Robin Hicks, [https://www.eco-business.com/news/1200-megawatt-vietnam-coal-plant-gets-funding-but-standard-chartered-pulls-out-over-climate-policy-conflict/ 1,200 megawatt Vietnam coal plant gets funding, but Standard Chartered pulls out over climate policy conflict], Eco-Business, Apr. 19, 2018</ref> Marubeni and KEPCO are providing US$432 million in equity to the project. Construction of the plant was complete and test operations were occurring in December 2021.<ref>[https://laodong-vn.translate.goog/kinh-te/nhiet-dien-nghi-son-2-hoan-thanh-dot-than-thanh-cong-to-may-so-2-985268.ldo?_x_tr_sl=vi&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc Nghi Son 2 Thermal Power Plant successfully completed the coal burning of Unit 2], Lao Dong, Dec. 16, 2021</ref>
+
+In July 2025, insurance company Chubb, one of the world’s largest insurers, backtracked on its climate policy and became the lead insurer for Nghi Sơn-2 Power. In 2019, Chubb released a climate policy that ruled out providing insurance cover for companies generating more than 30% of their energy from coal. The March 2025 version of the policy ruled out providing coverage for the construction and operation of coal plants and stated that it “began phasing out coverage of existing risks exceeding this [30%] threshold at the start of 2022 (accounting for the viability of alternative energy sources in the impacted region)”.<ref>[https://www.thebureauinvestigates.com/stories/2025-07-23/us-insurer-chubb-breaks-climate-promise-to-back-coal-plant “US insurer Chubb breaks climate promise to back coal plant,”] The Bureau of Investigative Journalism, July 23, 2025</ref><ref>[https://about.chubb.com/content/dam/chubb-sites/chubb/about-chubb/citizenship/environment/pdf/chubb-corporate-climate-underwriting-criteria-for-high-emitting-industries.pdf “Chubb’s Corporate Climate Underwriting Criteria Summary,”] Chubb, March 2025</ref>
+
+==Opposition==
+
+On November 15, 2017, Japanese environmentalists released a statement opposing the Japanese and South Korean support for the Vietnamese Nghi Son power plant. They opposed for reasons of inefficient technology, air pollution, and premature deaths. The environmentalists included Friends of the Earth Japan, Kiko Network, Mekong Watch, and more.<ref>[https://www.foejapan.org/en/aid/171115.html “No Coal! Go Green!”], Friends of the Earth Japan, November 15, 2017.</ref>
+
+In response to the financial support of the Nghi Son power plant by the Sumitomo Mitsui Financial Group Inc. (SMFG), environmental NGOs, such as 350.org Japan, Greenpeace Japan, and more, opposed their financial investments with a public statement. They identified the coal plant as having environmental and social risk, and urged SMFG to diverge its funding for the plan.<ref>[https://www.banktrack.org/article/environmental_ngos_respond_to_statement_by_sumitomo_mitsui_financial_group_ceo_on_restricting_coalfired_power_financing “Environmental NGOs respond to statement by Sumitomo Mitsui Financial Group CEO on restricting coal fired power financing”], Banktrack, 2018.</ref> In March 2018, environmental groups also wrote a petition urging the Japan Bank for International Cooperation (JBIC) to stop its financial investments into the Nghi Son power plant. They cited reasons such as the plant was not compatible with the Paris Agreement, the technology for the plant is against Japanese Government policy, and the plant would worsen Vietnamese air pollution.<ref>[https://www.foejapan.org/en/aid/pdf/180313.pdf “Urgent Petition”], Friends of Earth Japan, March 13, 2018.</ref> There were 61 groups from 23 countries that supported the revocation of JBIC’s finances in the Nghi Son power plant project.<ref>[https://www.foejapan.org/en/aid/180427.html “Press Release”], Friends of Earth Japan, April 27, 2018.</ref>
+
+In May 2019, human rights issues about the Nghi Son power plant were brought to attention by environmentalist groups. Specifically, Nghi Son power plant was allegedly approved with no consultation from the project-affected communities. According to the Vietnamese community organizations, the residents’ resettlement has been “unsatisfactory.”<ref>[https://urgewald.org/sites/default/files/Talanx.pdf “Talanx: Seriously Clearing Up or Silently Continuing Support for Coal?”], Urgewald, May 2019.</ref>
+In October 2019, the Renewable Energy Institute released a report around the benefits of replacing coal power with renewable energy. Problems around health and environment from coal plants, including the Nghi Son power plant, were discussed.<ref>[https://www.renewable-ei.org/pdfdownload/activities/SoutheastAsiaPowerReport_EN.pdf “Renewable Energy to Replace Coal Power in Southeast Asia”], Renewable Energy Institute, October 2019.</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Vietnam]]

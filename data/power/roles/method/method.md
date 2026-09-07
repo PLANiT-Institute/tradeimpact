@@ -2,81 +2,82 @@
 
 ## What this dataset is
 
-The attribution table of the power case study. The tracker says who owns a unit; it does not say
-who built it, who supplied the boiler and turbine, who operates it, or who financed it. This
-register records, per company × unit (or plant) × role, the phase the role belongs to and the
-share the company carried, each with the page it was read from.
+The attribution table of the power case study. Attribution rule (project lead, 2026-09-05, refined
+2026-09-07): **the trade impact is attributed to each role separately, the role and the share are
+data columns, and the five phases are never pooled.**
 
-Attribution rule (project lead, 2026-09-05): **the trade impact is attributed to each role
-separately, and the share and the role are data columns, so the weighting can be changed later
-without re-collecting anything.** The model therefore reports, per role row, the unit's full
-trade impact and the share-weighted figure side by side, and never adds rows of different roles
-into one company total.
+| phase | role | what it means |
+|---|---|---|
+| development | `developer` | originated or developed the project (won the award, sponsored it) |
+| construction | `epc_contractor`, `equipment_supplier` | built it, or supplied boiler / turbine / generator |
+| investment | `equity_owner` | holds equity in the project company |
+| operation | `om_contractor` | operates and maintains the plant |
+| finance | `lender`, `eca_cover` | lent to it, or insured / guaranteed the debt |
 
-## Raw file — HAND-GATHERED
+A utility that both owns and runs a plant carries two rows, one in investment and one in
+operation; the report's role matrix (Companies → Role matrix) is that table read across phases.
+Equity is **investment**, not operation: the two are different responsibilities and are asked
+about separately.
 
-`raw/project_roles.csv` — header-only until filled (reported as pending, not fatal: the pipeline
-runs on the tracker's equity rows meanwhile). One row per company × unit × role.
+## The four sources, in the order a row wins
+
+1. **`raw/project_roles.csv`** — the hand register, any role, one source link per row. Empty so
+   far; a row here replaces every machine reading of the same company × plant × role.
+2. **`raw/company_ir_roles.csv`** — read by hand from a company disclosure or project page that is
+   **on disk**: `roles/method/company_ir_sources.csv` lists the pages,
+   `script/power/roles/fetch_company_ir.py` saves each one under `raw/company_ir/` and records its
+   URL, size and SHA-256 in `raw/company_ir/index.csv`. Every register row cites the
+   `source_key` of the page that states the **role** and, separately, of the page that states the
+   **share**, with the sentence quoted in `role_quote` / `share_quote`;
+   `extract_company_ir_roles.py` rejects a row whose key is not in the index or whose URL does not
+   match it. Tier A. The unit ids here also bring their units into scope in
+   `projects/extract_gem_tracker.py` — which is how projects the tracker's owner field misses
+   (Vung Ang 2, Jawa 9 and 10) enter the result set at all.
+3. **`processed/gem_tracker_roles.csv`** — the tracker's own fields: `Owner(s)` and `Parent(s)`
+   give `equity_owner` with the share it prints in brackets, `Operator(s)` gives `om_contractor`.
+   Tier B, no transcription (`extract_gem_roles.py`).
+4. **`processed/gem_wiki_roles.csv`** — construction, finance and ownership roles read by keyword
+   from the GEM wiki pages. `fetch_gem_wiki.py` writes **one readable text file per page** under
+   `raw/gem_wiki/` (a header with the page title, URL, API call and fetch date, then the wikitext
+   as returned) plus `raw/gem_wiki/index.csv` with each page's SHA-256;
+   `extract_wiki_roles.py` splits each page into sentences and reads a role wherever a sentence
+   names an in-scope company together with the role's words. Sentences about intentions, protests,
+   scandals, memoranda or quotations are skipped, and the developer role is read only from an
+   explicit development statement. Every row carries the sentence and the page link. Tier C.
+
+Both `index.csv` files are hash-recorded in [`../../registry/raw_files.csv`](../../registry/raw_files.csv)
+and loaded into the database (`gem_wiki_index`, `company_ir_index`), so a reader can verify any
+single page without a 400-row registry.
+
+## The company register's fields
 
 | field | note |
 |---|---|
-| company_id | key in `companies/method/companies.csv`; unknown ids are rejected |
-| gem_unit_id | the tracker's unit / phase id; leave blank when the role is plant-wide |
-| gem_location_id | the tracker's location id; a plant-wide row applies to every unit at the location |
-| plant_name, country | for the reader; the join is on the ids |
-| role | one of `method/roles.csv`: developer, equity_owner, epc_contractor, equipment_supplier, om_contractor, lender, eca_cover |
-| phase | must equal the role's phase in `roles.csv`: development, construction, operation, finance |
-| share | fraction 0 < share ≤ 1, or blank when the source does not state it |
-| share_basis | must equal the role's basis in `roles.csv` (equity_share, contract_share, scope_share, debt_share, cover_share, none) |
-| from_year, to_year | years the role held (equity can be sold; an EPC ends at commissioning); blank = whole life |
-| source_url | the page the row was read from: the GEM wiki page, the company's release, the lender's project page. Required. |
-| source_note | what the page says, in English, briefly |
-| accessed_date | ISO date |
+| company_id | key in `companies/method/companies.csv` |
+| gem_unit_id / gem_location_id | at least one; a location row applies to every unit there |
+| plant_name, country | for the reader |
+| role | one of the seven above; the phase comes from `method/roles.csv` |
+| share | fraction 0 < share ≤ 1, or blank when the page states none |
+| from_year, to_year | when the role held, where the page says |
+| role_as_stated | the company's own wording, verbatim |
+| role_source_key / role_source_url / role_quote | the page that states the role, and its sentence |
+| share_source_key / share_source_url / share_quote | the page that states the share, and its sentence |
+| accessed_date, note | ISO date; the note carries what the page does *not* say |
 
-Every distinct source also needs a row in [`../../registry/sources.csv`](../../registry/sources.csv)
-with `how_obtained = read by hand`. Where a fact is known only from a press report rather than a
-company or lender document, say so in `source_note`; the tier of a share read from a press report
-is C, from the company's own release A.
+## Reading rule for a sponsor's own wording
 
-## Equity rows read from the tracker
+A company's history list saying it was *awarded* a project states a **development** role, not an
+EPC contract and not an equity share: those need their own source. "Acquired equity and O&M
+rights" states investment **and** operation. "Construction & Operation Project" states operation.
+The verbatim wording stays in `role_as_stated` so the mapping can be checked.
 
-The tracker writes ownership with shares — `Marubeni Corp [50.0%]; Korea Electric Power Corp
-[50.0%]` in `Owner(s)` and `Parent(s)` — so the **equity_owner** role needs no hand transcription:
-`script/power/roles/extract_gem_ownership.py` writes `processed/gem_ownership.csv`, one row per
-company × unit with the level it was read at (owner or parent), the entity as written, the share
-as a fraction (blank where the tracker states none) and the unit's wiki page as source. Tier B: a
-third-party compilation of company disclosures. The attribution step merges it with the hand
-register; where the register has an equity_owner row for the same company and unit, the register
-wins. Construction, equipment, O&M and finance roles are not in the tracker and remain hand rows.
+## Status (2026-09-07)
 
-## Roles read from the GEM wiki pages
-
-The tracker links every unit to its GEM wiki page, and the pages carry the project narrative:
-who built the plant, who supplied the boiler and turbines, who lent or insured, who operates it.
-`script/power/roles/fetch_gem_wiki.py` fetches the wikitext of every page in scope through the
-wiki's API into one raw JSON (`raw/gem_wiki_pages.json`, registered with its hash);
-`script/power/roles/extract_wiki_roles.py` splits each page into sentences and reads a role
-wherever a sentence names an in-scope company together with the role's words — EPC / turnkey /
-contractor for a builder, boiler / turbine / supply for an equipment maker, loan / debt /
-financing for an export-credit bank, insurance / guarantee / cover for an export-credit insurer,
-"operation and maintenance" for an operator, stake / equity / consortium for an owner. Sentences
-about intentions, protests, scandals, memoranda or quotations are skipped; the developer role is
-not read from narrative. Output `processed/gem_wiki_roles.csv`: one row per company × plant
-location × role with the sentence and the page link. **Tier C**: a keyword reading of narrative
-text, unverified. The attribution step takes register rows first, tracker equity rows second and
-wiki rows third, so a hand row replaces a wiki row for the same company, plant and role.
-
-## Processed output
-
-`processed/project_roles.csv` — the validated register joined to the company's country, name and
-type, by `script/power/roles/extract_roles.py`. Validation failures stop the extractor and name
-the row.
-
-## Rules
-
-- One company can hold several roles on one unit (Doosan as EPC lead and boiler supplier; a
-  trading house as developer then equity owner). Each is its own row.
-- A consortium EPC is one row per member with the member's `contract_share`; where the split is
-  unpublished, shares are left blank and the full figure is what the model reports for the row.
-- Roles are never inferred from `companies.type`; an EPC group that also took equity has an
-  `equity_owner` row only if a source says so.
+26 register rows for 4 companies from 4 pages: KEPCO's own overseas history list (12 development
+rows, Ilijan operation, Egbin investment and operation), the Vung Ang 2 shareholding from
+BankTrack's project page (KEPCO 40 %, Mitsubishi 40 %, Chugoku 20 %; Mitsubishi's later 15 % sale
+to Shikoku is not yet on file, so no Shikoku row), KEPCO's 15 % in Jawa 9 and 10 and Doosan's
+construction of them from the GEM wiki station page, and Doosan's own release for Song Hau 1 as
+sole main EPC contractor. Next: J-POWER, JERA, Marubeni, Sumitomo, Mitsui and the Korean gencos —
+their project lists are image or script driven, so each row needs the project page or release that
+states the fact.

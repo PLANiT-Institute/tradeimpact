@@ -1,0 +1,122 @@
+# GEM wiki page: Rugeley power station
+# URL: https://www.gem.wiki/Rugeley_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Rugeley power station''' is a retired power station in Rugeley, Cannock Chase, Staffordshire, England, United Kingdom.
+It is also known as Rugeley-B power station.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Rugeley power station
+| Rugeley, Cannock Chase, Staffordshire, England, United Kingdom
+| 52.757445, -1.919979 (exact)
+|}
+{{
+#display_map:
+52.757445, -1.919979
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit B1, Unit B2''': 52.757445, -1.919979
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit B1
+| Retired
+| coal: bituminous
+| 547
+| subcritical
+| 1972
+| 2016
+| False
+|-
+| Unit B2
+| Retired
+| coal: bituminous
+| 547
+| subcritical
+| 1972
+| 2016
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit B1
+| Mitsui & Co Ltd [50%]; ENGIE SA [50%]
+| ENGIE SA [50.0%]; Mitsui & Co Ltd [50.0%]
+|-
+| Unit B2
+| Mitsui & Co Ltd [50%]; ENGIE SA [50%]
+| ENGIE SA [50.0%]; Mitsui & Co Ltd [50.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+The power station, also known as Rugeley B, is 1,000 MW and was commissioned in 1972.<ref>Department of Energy and Climate Change, [http://www.decc.gov.uk/media/viewfile.ashx?filetype=4&filepath=Statistics/source/electricity/dukes5_11.xls&minwidth=true "Power stations in the United Kingdom, May 2012"], Department of Energy and Climate Change, May 2012. (This link is to an Excel spreadsheet).</ref> 
+
+Rugeley “A” station, built on the same site in the 1950s, was decommissioned in 1996. Rugeley Power Station is jointly owned by ENGIE (75%) and Mitsui & Co. Ltd. (25%).<ref name=engie>[http://www.rugeleypower.com/?article=19 "Rugeley Power Station expected to cease operations this summer,"] Engie, 8 February 2016</ref>
+
+==Closure==
+
+In February 2016 Engie said the power station is expected to cease market operations in early summer 2016 due to the "deterioration in market conditions for UK coal-fired power generation."<ref name=engie>[http://www.rugeleypower.com/?article=19 "Rugeley Power Station expected to cease operations this summer,"] Engie, 8 February 2016</ref>
+
+A May 2016 Engie press release stated: "Following consultation with employees and unions, ENGIE is now confirming that Rugeley will cease operations by the end of June 2016."<ref>[http://www.rugeleypower.com/?article=21 "RUGELEY POWER STATION - UPDATE,"] Engie, 20 May 2016</ref>
+
+The site of the old coal power station was set to be transformed into a “sustainable village” of 2,000 homes powered by solar panels.<ref>[https://www.theguardian.com/environment/2018/nov/19/rugeley-coal-plant-to-be-transformed-into-a-sustainable-village?utm_source=Greenhouse+Morning+News&utm_campaign=a4388c8f30-Greenhouse_Morning_News_November19th_2018_COPY_01&utm_medium=email&utm_term=0_e40c447c1a-a4388c8f30-123999169 "Rugeley coal plant to be transformed into a sustainable village,"] Guardian, November 19, 2018</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in United Kingdom]]

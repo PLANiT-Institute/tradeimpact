@@ -1,0 +1,123 @@
+# GEM wiki page: Than Bac Lieu power station
+# URL: https://www.gem.wiki/Than_Bac_Lieu_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Than Bac Lieu power station''' is a cancelled power station in Cai Cung, Long Dien Dong, Dong Hai, Bạc Liêu, Vietnam.
+It is also known as Bac Lieu; Cai Cung.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Than Bac Lieu power station
+| Cai Cung, Long Dien Dong, Dong Hai, Bạc Liêu, Vietnam
+| 9.148, 105.535 (approximate)
+|}
+{{
+#display_map:
+9.148, 105.535
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Cancelled
+| coal: bituminous
+| 600
+| unknown
+| 2029
+| False
+|-
+| Unit 2
+| Cancelled
+| coal: bituminous
+| 600
+| unknown
+| 2030
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Vietnam Electricity LLC [50%]; Sojitz Kyushu Corp [50%]
+| Sojitz Corp [50.0%]; Vietnam Electricity LLC [50.0%]
+|-
+| Unit 2
+| Vietnam Electricity LLC [50%]; Sojitz Kyushu Corp [50%]
+| Sojitz Corp [50.0%]; Vietnam Electricity LLC [50.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+Appendix II of Vietnam's 2011-20 National Master Plan for Power Development, approved in July 2011, lists a two-unit, 1,200-MW coal-fired power plant in Bạc Liêu province, to be constructed by 2028.<ref>[http://www.moit.gov.vn/Images/Upload/QD%201208-TTg.pdf Quyết định phê duyệt Quy hoạch phát triển điện lực quốc gia giai đoạn 2011 - 2020 có xét đến năm 2030] (Approval of the National Master Plan for Power Development for the 2011-2020 Period with Vision to 2030), Prime Minister of Vietnam, Statement No. 1208/QD-TTg, July 21, 2011, Appendix II, p. 3.</ref> The Revised Power Development Plan VII lists the project as coming online in 2029/2030 in case renewable energy projects cannot meet the planned schedule. <ref>DANH MỤC CÁC DỰ ÁN NGUỒN ĐIỆN VÀO VẬN HÀNH GIAI ĐOẠN 2016 - 2030, Ban hành kèm theo Quyết định số 428/QĐ-TTg ngày 18 tháng 3 năm 2016 của Thủ tướng Chính phủ (''LIST OF POWER PROJECT IN OPERATION PERIOD 2016 - 2030, Issued together with Decision No. 428 / QD - TTg of March 18, 2016 by the Prime Minister'')</ref>
+
+In February 2015, representatives of Sojitz Kyushu Corporation (a subsidiary of Japanese firm [[Sojitz]]) met with Bac Lieu provincial officials and [[EVN]] representatives to discuss initial preparations for the project.<ref name=baobaclieu>[http://baobaclieu.vn/newsdetails/1D3FE183D9F/UBND_tinh_tiep_va_lam_viec_voi_dai_dien_Cong_ty_Kyushu_va_Sojitz_ve_du_an_Trung_tam_Dien_luc_Bac_Lieu.aspx UBND tỉnh tiếp và làm việc với đại diện Công ty Kyushu và Sojitz về dự án Trung tâm Điện lực Bạc Liêu], Bac Lieu Online, 12 Feb. 2015.</ref>
+
+In September 2016, the provincial governor stated that, given that the province's priority being on promoting the growth of the intensive shrimp farming industry, the environmental risk is too great to justify building the Cái Cùng coal power plant.<ref>[http://baodatviet.vn/chinh-tri-xa-hoi/tin-tuc-thoi-su/bac-lieu-choi-nhiet-dien-than-nhat-ban-lam-van-khong-chon-3319596/ Bạc Liêu chối nhiệt điện than: Nhật Bản làm, vẫn không chọn], Bao Dat Viet, 30 Sept. 2016.</ref> The provincial leaders recommended a greater emphasis on wind and other clean power sources as an alternative to the "Brown economy."<ref>[http://endcoal.org/wp-content/uploads/2016/09/VSEA-NCDs-Press-release-on-Bac-Lieu_2309.pdf "Press Release,"] Vietnam Sustainable Energy Alliance and Vietnam Non-Communicable Diseases Alliance, September 23, 2016.</ref>
+
+In March 2017, provincial officials asked the central government to take the Cái Cùng plant out of their national plan.<ref>[http://www.thiennhien.net/2017/03/20/bac-lieu-xin-loai-du-nhiet-dien-cai-cung-khoi-quy-hoach/ Bạc Liêu xin loại dự án nhiệt điện Cái Cùng khỏi quy hoạch], ThienNhien.net, 20 Mar. 2017.</ref>
+
+==Plans for Renewable Energy==
+
+With a coastline of 56 km, strong and stable winds, and almost year-around sunshine, Bạc Liêu province is well situated for both solar and wind power development. Currently, the province has a 99.2 MW wind power plant invested in by Cong Ly Construction Trade Tourism Company Limited, reportedly the largest wind power facility in the country. 
+
+On November 5, 2017, a cooperation contract was signed between the Long Điền Đông commune and Group SY (a Korean corporation) to deploy a 300 MW solar power plant on the 400-hectare location that had been previously allocated for the power plant. According to the agreement, the project will begin with a first phase of 50 MW from 2017 to June 2019. If developed, it will be the largest solar facility in Vietnam. In addition to the Group SY project, a second solar power project of 150 MW has been proposed by Kimin Group (UK), comprising a first phase of 40 MW and a second phase of 110 MW. UPC Renewables Company (USA) has also also conducted preliminary work to develop a wind power facility, with 50 MW in the first phase and 150 MW in the second phase.<ref name=renew>[http://nld.com.vn/kinh-te/bac-lieu-huong-den-nang-luong-sach-20171106220353441.htm "Bạc Liêu hướng đến năng lượng sạch,"] Người Lao Động, 7 November 2017</ref>
+
+==Plans for gas==
+
+In May 2018, US-based company Energy Capital Vietnam signed a memorandum of understanding (MOU) for a 3200 megawatt (MW) LNG-fired plant in Bac Lieu Province, as an alternative to a proposed coal plant.<ref>Viet Phong, [https://e.vnexpress.net/news/business/pm-talks-up-mekong-delta-potential-for-gas-fired-power-plants-3783967.html "PM talks up Mekong Delta potential for gas-fired power plants,"] Vien Express, July 27, 2018</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Vietnam]]

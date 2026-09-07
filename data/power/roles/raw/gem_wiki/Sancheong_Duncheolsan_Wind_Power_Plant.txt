@@ -1,0 +1,8 @@
+# GEM wiki page: Sancheong Duncheolsan Wind Power Plant
+# URL: https://www.gem.wiki/Sancheong_Duncheolsan_Wind_Power_Plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+#REDIRECT [[Sancheong Duncheolsan wind farm]]

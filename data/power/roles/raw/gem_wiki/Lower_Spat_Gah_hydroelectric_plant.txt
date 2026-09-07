@@ -1,0 +1,77 @@
+# GEM wiki page: Lower Spat Gah hydroelectric plant
+# URL: https://www.gem.wiki/Lower_Spat_Gah_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Lower Spat Gah hydroelectric plant''' is a hydroelectric power plant in pre-construction in Dasu Town, Dasu, Upper Kohistan District, Khyber Pakhtunkhwa, Pakistan.
+
+==Project Details==
+==== '''Table 1:''' Project details for Lower Spat Gah hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology type
+!Owner
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://www.nation.com.pk/15-Nov-2022/496-megawatts-spat-gah-hydropower-project-to-be-completed-in-five-years}}</ref><ref name="autoref_1">{{cite web |url=http://www.wapda.gov.pk/index.php/projects/hydro-power/future/lower-spat-gah |archive-url=https://web.archive.org/web/20221019155804/http://www.wapda.gov.pk/index.php/projects/hydro-power/future/lower-spat-gah |archive-date=2022-10-19}}</ref>
+| 2030 (planned)<ref name="autoref_2">{{cite web |url=https://www.thenews.com.pk/print/1277990-progress-on-470mw-spat-gah-power-project-reviewed}}</ref><ref name="autoref_3">{{cite web |url=https://www.brecorder.com/news/40312885}}</ref>
+| 496 MW<ref name="autoref_1" />
+| Run-of-river<ref name="autoref_4">{{cite web |url=https://www.power-technology.com/marketdata/lower-spat-gah-pakistan/ |archive-url=https://web.archive.org/web/20220807185101/https://www.power-technology.com/marketdata/lower-spat-gah-pakistan/ |archive-date=2022-08-07}}</ref>
+| Pakistan Water and Power Development Authority [26%]; POSCO Engineering & Construction [2%]; DL Energy [14%]; Korea Midland Power CO LTD (KOMIPO) [34%]; unknown [18%]; Lotte Engineering & Construction Co Ltd [6%] (한국풍력산업)<ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" />
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Lower Spat Gah hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Complex
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Dasu Town, Dasu, Upper Kohistan District, Khyber Pakhtunkhwa, Pakistan<ref name="autoref_1" />
+| Indus River<ref name="autoref_1" />
+| [[Spat Gah Complex]]<ref name="autoref_5">{{cite web |url=https://tribune.com.pk/story/2445841/470mw-hydel-project-planned |archive-url=https://web.archive.org/web/20231117130523/https://tribune.com.pk/story/2445841/470mw-hydel-project-planned |archive-date=2023-11-17}}</ref>
+| 33.7128, 71.2679 (approximate)<ref name="autoref_1" />
+|}
+The map below shows the approximate location of the hydroelectric power plant:
+{{
+#display_map:
+33.7128, 71.2679~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Pakistan]]
+
+__NOTOC__

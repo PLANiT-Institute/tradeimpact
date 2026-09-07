@@ -1,0 +1,154 @@
+# GEM wiki page: Avon power station
+# URL: https://www.gem.wiki/Avon_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Avon power station''' is an operating power station of at least 670-megawatts (MW) in Ballito, Kwazulu-Natal, South Africa.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Avon power station
+| Ballito, Kwazulu-Natal, South Africa
+| -29.418913, 31.157693 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/Avon+Peaking+Power+Station/@-29.4182929,31.158811,487m/data=!3m1!1e3!4m5!3m4!1s0x1ef73c30994cbf85:0x86ffd0351361ccd1!8m2!3d-29.4187081!4d31.1575052}}</ref>
+|}
+{{
+#display_map:
+-29.418913, 31.157693
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, 3, 4''': -29.418913, 31.157693
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.powermag.com/press-releases/avon-peaking-power-south-africas-largest-ipp-reaches-commercial-operation-adding-670-mw-to-the-national-grid/ |archive-url=https://web.archive.org/web/20220628173949/https://www.powermag.com/press-releases/avon-peaking-power-south-africas-largest-ipp-reaches-commercial-operation-adding-670-mw-to-the-national-grid/ |archive-date=2022-06-28}}</ref>
+| fossil gas: natural gas, fossil liquids: diesel<ref name="autoref_2">{{cite web |url=http://uas.engie.com/content/uploads/sites/8/2016/07/297x195_ENGIE_Brochure_SouthAfrica_2015.pdf |archive-url=https://web.archive.org/web/20210920194432/http://uas.engie.com/content/uploads/sites/8/2016/07/297x195_ENGIE_Brochure_SouthAfrica_2015.pdf |archive-date=2021-09-20}}</ref><ref name="autoref_1" /><ref name="autoref_3">{{cite web |url=https://hulisani.co.za/project/avon-and-dedisa-peaking-power |archive-url=https://web.archive.org/web/20221211072507/https://hulisani.co.za/project/avon-and-dedisa-peaking-power |archive-date=2022-12-11}}</ref>
+| 167.5<ref name="autoref_4">{{cite web |url=https://www.peakers.com/avon.html |archive-url=https://web.archive.org/web/20230213024607/https://www.peakers.com/avon.html |archive-date=2023-02-13}}</ref>
+| gas turbine<ref name="autoref_1" />
+| not found
+| 2016<ref name="autoref_1" />
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas, fossil liquids: diesel<ref name="autoref_2" /><ref name="autoref_1" /><ref name="autoref_3" />
+| 167.5<ref name="autoref_4" />
+| gas turbine<ref name="autoref_1" />
+| not found
+| 2016<ref name="autoref_1" />
+| no
+|-
+| 3
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas, fossil liquids: diesel<ref name="autoref_2" /><ref name="autoref_1" /><ref name="autoref_3" />
+| 167.5<ref name="autoref_4" />
+| gas turbine<ref name="autoref_1" />
+| not found
+| 2016<ref name="autoref_1" />
+| no
+|-
+| 4
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas, fossil liquids: diesel<ref name="autoref_2" /><ref name="autoref_1" /><ref name="autoref_3" />
+| 167.5<ref name="autoref_4" />
+| gas turbine<ref name="autoref_1" />
+| not found
+| 2016<ref name="autoref_1" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| 1
+| ENGIE<ref name="autoref_5">{{cite web |url=https://www.peakers.com/engie.html |archive-url=https://web.archive.org/web/20230213024606/https://www.peakers.com/engie.html |archive-date=2023-02-13}}</ref>
+| Avon Peaking Power (RF) Pty Ltd [100%]<ref name="autoref_1" /><ref name="autoref_6">{{cite web |url=https://electricenergyonline.com/article/energy/category/generation/52/547361/dedisa-peaking-power-in-port-elizabeth-starts-commercial-operation.html |archive-url=https://web.archive.org/web/20221028112233/https://electricenergyonline.com/article/energy/category/generation/52/547361/dedisa-peaking-power-in-port-elizabeth-starts-commercial-operation.html |archive-date=2022-10-28}}</ref>
+| ENGIE SA [38.0%]; Legend Power Solutions Pty Ltd [27.0%]; Mitsui & Co Ltd [25.0%]; The Peakers Trust [10.0%]
+|-
+| 2
+| ENGIE<ref name="autoref_5" />
+| Avon Peaking Power (RF) Pty Ltd [100%]<ref name="autoref_1" /><ref name="autoref_6" />
+| ENGIE SA [38.0%]; Legend Power Solutions Pty Ltd [27.0%]; Mitsui & Co Ltd [25.0%]; The Peakers Trust [10.0%]
+|-
+| 3
+| ENGIE<ref name="autoref_5" />
+| Avon Peaking Power (RF) Pty Ltd [100%]<ref name="autoref_1" /><ref name="autoref_6" />
+| ENGIE SA [38.0%]; Legend Power Solutions Pty Ltd [27.0%]; Mitsui & Co Ltd [25.0%]; The Peakers Trust [10.0%]
+|-
+| 4
+| ENGIE<ref name="autoref_5" />
+| Avon Peaking Power (RF) Pty Ltd [100%]<ref name="autoref_1" /><ref name="autoref_6" />
+| ENGIE SA [38.0%]; Legend Power Solutions Pty Ltd [27.0%]; Mitsui & Co Ltd [25.0%]; The Peakers Trust [10.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5MjNbIkxlZ2VuZCBQb3dlcjxicj5Tb2x1dGlvbnMgUHR5IEx0ZCJdIC0tMjcuMCUtLT4gMTAwMDAwMDAyNDgzCiAgICAxMDAwMDAwMDA5MjhbIlRoZSBQZWFrZXJzIFRydXN0Il0gLS0xMC4wJS0tPiAxMDAwMDAwMDI0ODMKICAgIDEwMDAwMTAxNTU4N18xWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzAuNDclLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAxMDAwMDc5WyJHb3Zlcm5tZW50IG9mIEZyYW5jZSJdIC0tMjMuNjQlLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tNS44OSUtLT4gMTAwMDAwMDAwMzgyCiAgICAxMDAwMDAwMDAzODJbIkVOR0lFIFNBIl0gLS0zOC4wJS0tPiAxMDAwMDAwMDI0ODMKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi40MyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02Ny41JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi4xJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS05Ljk3JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDAwMDY1MVsiTWl0c3VpICYgQ28gTHRkIl0gLS0yNS4wJS0tPiAxMDAwMDAwMDI0ODMKICAgIDEwMDAwMDAwMjQ4M1siQXZvbiBQZWFraW5nIFBvd2VyPGJyPihSRikgUHR5IEx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDcxMTAKICAgIFAxMDAwMDA0MDcxMTBbIkF2b24gcG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Background==
+
+The plant started operation in July 2016 after a 30-month construction period.<ref name='ref_M'>{{cite web |url=https://peakers.com/avon.html |title=peakers.com/avon.html |date= |access-date= |archive-url=https://web.archive.org/web/20210907232754/https://peakers.com/avon.html |archive-date=September 7, 2021 |url-status=live}}</ref> It was built with the intention to be converted to natural gas and combined cycle technology.<ref name='ref_J'>{{cite web |url=https://hulisani.co.za/project/avon-and-dedisa-peaking-power |title=Avon and Dedisa Peaking Power Investment - Hulisani Investment Opportunity - SA |date=September 1, 2019 |access-date=January 29, 2022 |archive-url=https://web.archive.org/web/20210907231949/https://hulisani.co.za/project/avon-and-dedisa-peaking-power |archive-date=September 7, 2021 |url-status=live}}</ref><ref>https://www.powermag.com/press-releases/avon-peaking-power-south-africas-largest-ipp-reaches-commercial-operation-adding-670-mw-to-the-national-grid/</ref>
+
+Together with [[Dedisa power station|Dedisa Power Station]], with a combined capacity of 1005 MW,  the privately owned power plants supply power to Eskom under with 15-year Power Purchase Agreements (“PPA).”<ref name='ref_J'>{{cite web |url=https://hulisani.co.za/project/avon-and-dedisa-peaking-power |title=Avon and Dedisa Peaking Power Investment - Hulisani Investment Opportunity - SA |date=September 1, 2019 |access-date=January 29, 2022 |archive-url=https://web.archive.org/web/20210907231949/https://hulisani.co.za/project/avon-and-dedisa-peaking-power |archive-date=September 7, 2021 |url-status=live}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in South Africa]]

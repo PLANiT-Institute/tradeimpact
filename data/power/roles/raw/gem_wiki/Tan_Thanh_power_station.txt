@@ -1,0 +1,132 @@
+# GEM wiki page: Tan Thanh power station
+# URL: https://www.gem.wiki/Tan_Thanh_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Tan Thanh power station''' is a cancelled power station in Tan Thanh, Bà Rịa - Vũng Tàu, Vietnam.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Tan Thanh power station
+| Tan Thanh, Bà Rịa - Vũng Tàu, Vietnam
+| 10.590556, 107.048056 (approximate)
+|}
+{{
+#display_map:
+10.590556, 107.048056
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Unit 1
+| Cancelled
+| coal: unknown
+| 600
+| unknown
+| False
+|-
+| Unit 2
+| Cancelled
+| coal: unknown
+| 600
+| unknown
+| False
+|-
+| Unit 3
+| Cancelled
+| coal: unknown
+| 600
+| unknown
+| False
+|-
+| Unit 4
+| Cancelled
+| coal: unknown
+| 600
+| unknown
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| J-POWER Vietnam Co Ltd [100%]
+| Electric Power Development Co Ltd [100.0%]
+|-
+| Unit 2
+| J-POWER Vietnam Co Ltd [100%]
+| Electric Power Development Co Ltd [100.0%]
+|-
+| Unit 3
+| J-POWER Vietnam Co Ltd [100%]
+| Electric Power Development Co Ltd [100.0%]
+|-
+| Unit 4
+| J-POWER Vietnam Co Ltd [100%]
+| Electric Power Development Co Ltd [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc2Ljg4JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTIuMjUlLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01Ljc3JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjElLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAwMDAwNjQxWyJFbGVjdHJpYyBQb3dlcjxicj5EZXZlbG9wbWVudCBDbyBMdGQiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMjA2NDQKICAgIDEwMDAwMDEyMDY0NFsiSi1QT1dFUiBWaWV0bmFtIENvPGJyPkx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDQzMDAKICAgIFAxMDAwMDAxMDQzMDBbIlRhbiBUaGFuaCBwb3dlcjxicj5zdGF0aW9uIl0K}}
+
+==Background==
+
+In May 2007, Japanese power utility Electricity Power Development Company, or [[J-POWER]], announced plans to build a coal-fired power plant of either 1,200 or 2,400 MW in the highly industrialized Tân Thành district of Bà Rịa–Vũng Tàu province. The district is already home to the 3,900-MW natural gas-fired Phú Mỹ power plant complex.<ref>[http://www.vietmaz.com/2007/05/japanese-firm-proposes-mega-thermoelectricity-project/#.UuLhbGQo61s Japanese Firm Proposes Mega Thermoelectricity Project], ''Vietmaz'', May 28, 2007.</ref> Additional news since then is not available, and it is unclear whether J-POWER is still pursuing the project; it is also unclear whether the project is related to J-POWER's proposed [[Phu Yen power station]].
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Vietnam]]

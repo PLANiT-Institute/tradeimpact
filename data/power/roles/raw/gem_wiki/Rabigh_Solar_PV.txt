@@ -1,0 +1,80 @@
+# GEM wiki page: Rabigh Solar PV
+# URL: https://www.gem.wiki/Rabigh_Solar_PV
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Rabigh Industrial Solar
+
+'''Rabigh Solar PV''' (محطة رابغ ١ للطاقة الشمسية) is an operating solar photovoltaic (PV) farm in Rabigh Industrial City, Makkah, Saudi Arabia.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Rabigh Solar PV ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://gec.jp/jcm/projects/20pro_sau_01/ |title=400MW Solar Power Project in Rabigh Region | JCM The Joint Crediting Mechanism |website=gec.jp |access-date=2024-07-12 |archive-url=https://web.archive.org/web/20240724175218/https://gec.jp/jcm/projects/20pro_sau_01/ |archive-date=2024-07-24}}</ref>
+| 2023<ref name="autoref_1">{{cite web |url=https://www.power-technology.com/marketdata/rabigh-solar-pv-park-saudi-arabia/ |archive-url=https://web.archive.org/web/20240206161539/https://www.power-technology.com/marketdata/rabigh-solar-pv-park-saudi-arabia/ |archive-date=2024-02-06}}</ref>
+| 400 MWp/dc<ref name="autoref_2">{{cite web |url=https://www.al-madina.com/article/791201/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/%D8%B4%D8%B1%D8%A7%D9%83%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%B5%D9%8A%D9%86%D9%8A%D8%A9-%D9%84%D8%AA%D9%88%D8%B1%D9%8A%D8%AF-400-%D9%85%D9%8A%D8%AC%D8%A7%D9%88%D8%A7%D8%AA-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B1%D8%A7%D8%A8%D8%BA-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D8%A9 |archive-url=https://web.archive.org/web/20240201135815/https://www.al-madina.com/article/791201/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/%D8%B4%D8%B1%D8%A7%D9%83%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%B5%D9%8A%D9%86%D9%8A%D8%A9-%D9%84%D8%AA%D9%88%D8%B1%D9%8A%D8%AF-400-%D9%85%D9%8A%D8%AC%D8%A7%D9%88%D8%A7%D8%AA-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B1%D8%A7%D8%A8%D8%BA-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D8%A9 |archive-date=2024-02-01}}</ref>
+| PV<ref name="autoref_3">{{cite web |url=https://www.eversheds-sutherland.com/global/en/what/publications/shownews.page?News=en/middle-east/saudi-arabia/Rabigh_Solar_PV_IPP_Project |archive-url=https://web.archive.org/web/20240207112836/https://www.eversheds-sutherland.com/en/global/resources/insights |archive-date=2024-02-07}}</ref>
+| Aljomaih Energy & Water Co Ltd; Marubeni Corp (丸紅株式会社)<ref name="autoref_4">{{cite web |url=https://energy-utilities.com/longi-wins-400mw-pv-solar-contract-in-saudi-arabia-news117635.html, https://energy-utilities.com/longi-wins-400mw-pv-solar-contract-in-saudi-arabia-news117635.html}}</ref>
+| China Energy Engineering (中国能源建设股份有限公司)<ref name="autoref_5">{{cite web |url=https://www.pv-magazine.com/2021/10/14/pvh-supplies-trackers-to-300-mw-pv-project-in-saudi-arabia/ |archive-url=https://web.archive.org/web/20240206172728/https://www.pv-magazine.com/2021/10/14/pvh-supplies-trackers-to-300-mw-pv-project-in-saudi-arabia/ |archive-date=2024-02-06}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Rabigh Solar PV ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Rabigh Industrial City, Makkah, Saudi Arabia<ref name="autoref_6">{{cite web |url=https://latitude.to/articles-by-country/sa/saudi-arabia/24033/rabigh, https://maps.app.goo.gl/7K7Q4Ge58Rwqq6rW7}}</ref>
+| 22.5808, 39.1683 (exact)<ref name="autoref_6" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+22.58078, 39.16831~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Saudi Arabia]]
+[[Category:PV solar farms]]
+
+__NOTOC__

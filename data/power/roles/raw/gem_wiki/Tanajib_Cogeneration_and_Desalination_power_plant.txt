@@ -1,0 +1,109 @@
+# GEM wiki page: Tanajib Cogeneration and Desalination power plant
+# URL: https://www.gem.wiki/Tanajib_Cogeneration_and_Desalination_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Tanajib Cogeneration and Desalination power plant''' (تناجيب للإنتاج المشترك وتحلية المياه) is an operating power station of at least 940-megawatts (MW) in Tanajib, Eastern, Saudi Arabia.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Tanajib Cogeneration and Desalination power plant
+| Tanajib, Eastern, Saudi Arabia
+| 27.770296, 48.874835 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/27%C2%B046'13.1%22N+48%C2%B052'29.4%22E/@27.7703007,48.8726463,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xbc2852390ee46cf4!8m2!3d27.770296!4d48.874835}}</ref>
+|}
+{{
+#display_map:
+27.770296, 48.874835
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''CC''': 27.770296, 48.874835
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| CC
+| Operating<ref name="autoref_1">{{cite web |url=https://www.alucor.com/post/alucor-arabia-powering-industrial-progress-in-ksa}}</ref><ref name="autoref_2">{{cite web |url=https://www.linkedin.com/posts/majid-turkistani-8b953017_we-are-pleased-to-announce-the-reception-activity-7318365607421263875-Tg2K}}</ref><ref name="autoref_3">{{cite web |url=https://www.macoga.com/en/news/expansion-joints-for-tanajib-cogeneration-and-desalination-plant-in-saudi-arabia |archive-url=https://web.archive.org/web/20230531225647/https://www.macoga.com/en/news/expansion-joints-for-tanajib-cogeneration-and-desalination-plant-in-saudi-arabia |archive-date=2023-05-31}}</ref><ref name="autoref_4">{{cite web |url=https://www.saudigulfprojects.com/2021/10/marubeni-taqa-signs-agreement-for-tanajib-cogeneration-and-desalination-project/ |archive-url=https://web.archive.org/web/20211021073422/https://www.saudigulfprojects.com/2021/10/marubeni-taqa-signs-agreement-for-tanajib-cogeneration-and-desalination-project/ |archive-date=2021-10-21}}</ref>
+| fossil gas: natural gas<ref name="autoref_4" />
+| 940<ref name="autoref_4" />
+| combined cycle<ref name="autoref_5">{{cite web |url=https://attaqa.net/2021/10/21/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%84%D9%80-%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7/ |archive-url=https://web.archive.org/web/20211204224319/https://attaqa.net/2021/10/21/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%84%D9%80-%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7/ |archive-date=2021-12-04}}</ref>
+| not found
+| 2025 (planned)<ref name="autoref_4" />
+| GE Saudi Advanced Turbines: 7F.05<ref name="autoref_6">{{cite web |url=https://www.saudigulfprojects.com/2022/05/ge-awarded-940mw-gas-turbines-contract-in-saudi-arabia/ |title=GE awarded 940MW Gas Turbines Contract in Saudi Arabia |date=2022-05-19 |access-date=2024-08-09 |archive-url=https://web.archive.org/web/20240828155700/https://www.saudigulfprojects.com/2022/05/ge-awarded-940mw-gas-turbines-contract-in-saudi-arabia/ |archive-date=2024-08-28}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| CC
+| Saudi Arabian Oil Co [40%]; Abu Dhabi National Energy Company PJSC [29%]; Marubeni Corp [30%]<ref name="autoref_5" /><ref name="autoref_4" /><ref name="autoref_5" /><ref name="autoref_4" /><ref name="autoref_5" /><ref name="autoref_4" />
+| Saudi Arabian Oil Co [40.0%]; Marubeni Corp [30.6%]; Abu Dhabi National Energy Company PJSC [29.4%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_4" />
+* '''Captive industry''': Machinery<ref name="autoref_4" />
+* '''Non-industry use''': power<ref name="autoref_4" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAxOThbIkdvdmVybm1lbnQgb2YgU2F1ZGk8YnI+QXJhYmlhIl0gLS04MS40OCUtLT4gMTAwMDAwMDAwODg4CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTE4LjUyJS0tPiAxMDAwMDAwMDA4ODgKICAgIDEwMDAwMDAwMDg4OFsiU2F1ZGkgQXJhYmlhbiBPaWwgQ28iXSAtLTQwLjAlLS0+IFAxMDAwMDA0MDgwMTEKICAgIDEwMDAwMTAwMDA5NVsiRW1pcmF0ZSBvZiBBYnUgRGhhYmk8YnI+KFVuaXRlZCBBcmFiPGJyPkVtaXJhdGVzKSJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxMTA0NAogICAgMTAwMDAxMDExMDQ0WyJBYnUgRGhhYmk8YnI+RGV2ZWxvcG1lbnRhbDxicj5Ib2xkaW5nIENvbXBhbnkgUEpTQyJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMTA4MAogICAgMTAwMDAwMDAxMDgwWyJBYnUgRGhhYmkgUG93ZXIgQ29ycCJdIC0tOTAuMCUtLT4gMTAwMDAwMDAxMDc4CiAgICAxMDAwMDEwMDAzMzNbIk11bHRpcGx5IEdyb3VwIFBKU0MiXSAtLTcuMyUtLT4gMTAwMDAwMDAxMDc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTIuNjclLS0+IDEwMDAwMDAwMTA3OAogICAgMTAwMDAwMDAxMDc4WyJBYnUgRGhhYmkgTmF0aW9uYWw8YnI+RW5lcmd5IENvbXBhbnkgUEpTQyJdIC0tMjkuMCUtLT4gUDEwMDAwMDQwODAxMQogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjQxJS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuMjMlLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNDYlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi40NyUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTYuNTYlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE1NTg3XzExWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjYuNzUlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS0xMC4xNCUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjU1JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMDAwMDY0OVsiTWFydWJlbmkgQ29ycCJdIC0tMzAuMCUtLT4gUDEwMDAwMDQwODAxMQogICAgUDEwMDAwMDQwODAxMVsiVGFuYWppYiBDb2dlbmVyYXRpb248YnI+YW5kIERlc2FsaW5hdGlvbjxicj5wb3dlciBwbGFudCJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Saudi Arabia]]

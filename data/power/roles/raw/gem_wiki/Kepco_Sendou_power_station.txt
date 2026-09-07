@@ -1,0 +1,118 @@
+# GEM wiki page: Kepco Sendou power station
+# URL: https://www.gem.wiki/Kepco_Sendou_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Kepco Sendou power station''' is a cancelled power station in Sendou, Bagny, Dakar, Senegal.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Kepco Sendou power station
+| Sendou, Bagny, Dakar, Senegal
+| 14.689064, -17.217628 (approximate)
+|}
+{{
+#display_map:
+14.689064, -17.217628
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Unit 1
+| Cancelled
+| coal: unknown
+| 125
+| unknown
+| False
+|-
+| Unit 2
+| Cancelled
+| coal: unknown
+| 125
+| unknown
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Korea Electric Power Corp [100%]
+| Korea Electric Power Corp [100.0%]
+|-
+| Unit 2
+| Korea Electric Power Corp [100%]
+| Korea Electric Power Corp [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDMzOTYKICAgIFAxMDAwMDAxMDMzOTZbIktlcGNvIFNlbmRvdSBwb3dlcjxicj5zdGF0aW9uIl0K}}
+
+==Financing==
+
+*'''Source of financing:''' KEPCO and the Korean Development Bank
+
+==Background==
+
+In January 2012, Korea Electric Power Corp (KEPCO) announced an accord with Senegal for a 250 MW coal-fired power station at a cost of US$582.52 million. Under the agreement, KEPCO and the Korean Development Bank would have entirely financed the building of the plant but in return would have had the right to sell its energy output back to Senegal.<ref>[http://leeuniversal.blogspot.com/2012/01/skoreas-kepco-signs-582-mln-senegal.html "S.Korea's KEPCO signs $582 mln Senegal power deal,"] Reuters, January 18, 2012</ref><ref name=tar>[http://www.theafricareport.com/West-Africa/senegals-dakar-out-of-the-dark.html "Senegal's Dakar out of the dark,"] Theafricareport.com, June 29, 2015</ref> Operation was planned for 2017.<ref>[http://www.reuters.com/article/2013/05/16/senegal-kepco-idUSL6N0DX2YD20130516 "South Korea's KEPCO to build coal-fired power plant in Senegal,"] Reuters, May 16, 2013</ref>
+
+After the agreement was signed, KEPCO said that it was abandoning most of its international projects, including the one in Senegal. The government said it was looking for a new partner to pick up where KEPCO left off.<ref name=tar>[http://www.theafricareport.com/West-Africa/senegals-dakar-out-of-the-dark.html "Senegal's Dakar out of the dark,"] Theafricareport.com, June 29, 2015</ref>
+
+An August 2016 report on the 125 MW [[Sendou power station]] said the 250 MW KEPCO project had been called off.<ref>[https://www.afdb.org/fileadmin/uploads/afdb/Documents/Compliance-Review/Management_response_on_the_request_filed_against_the_Sendou_coal_fired_power_plant_project_in_Senegal.pdf "Management Response: Sendou Coal Power Plant Project,"] Africa Development Bank Group, September 26, 2016</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Senegal]]

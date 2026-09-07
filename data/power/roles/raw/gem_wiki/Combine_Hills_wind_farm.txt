@@ -1,0 +1,87 @@
+# GEM wiki page: Combine Hills wind farm
+# URL: https://www.gem.wiki/Combine_Hills_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Combine Hills wind farm''' is an operating wind farm in Umatilla County, Oregon, United States.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Combine Hills wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860/ |title=U.S. Energy Information Administration, Form EIA-860 detailed data with previous form data (EIA-860A/860B), 2012 |access-date=2023-11-01 00:00:00 |archive-url=https://web.archive.org/web/20221028021258/https://www.eia.gov/electricity/data/eia860/ |archive-date=2022-10-28}}</ref>
+| 2003<ref name="autoref_1">{{cite web |url=https://doi.org/10.5066/F7TX3DN0 |title=US Wind Turbine Database (v4.0, (April 9, 2021): U.S. Geological Survey, American Clean Power Association, and Lawrence Berkeley National Laboratory data release |author=Hoen, B.D., Diffendorfer, J.E., Rand, J.T., Kramer, L.A., Garrity, C.P., and Hunt, H.E. |date=2018-04-19 |website=United States Wind Turbine Database |access-date=2021-04-09 |archive-url=https://web.archive.org/web/20211203181454/https://www.sciencebase.gov/catalog/item/57bdfd8fe4b03fd6b7df5ff9 |archive-date=2021-12-03}}</ref>
+| 41 MW<ref name="autoref_1" />
+| Onshore<ref name="autoref_1" />
+| Eurus Energy [100%] (株式会社ユーラスエナジーホールディングス)<ref name="autoref_2">{{cite web |url=https://eurusenergy.com/wind/wind-power-projects/ |archive-url=https://web.archive.org/web/20240131093224/https://eurusenergy.com/wind/wind-power-projects/ |archive-date=2024-01-31}}</ref>
+| Iberdrola Australia; Eurus Energy (株式会社ユーラスエナジーホールディングス)<ref name="autoref_3">{{cite web |url=https://www.thewindpower.net/windfarm_en_3129.php, https://www.thewindpower.net/windfarm_en_3129.php}}</ref>
+|-
+| 2
+| Operating<ref name="autoref_0" />
+| 2009<ref name="autoref_1" />
+| 63 MW<ref name="autoref_1" />
+| Onshore<ref name="autoref_1" />
+| Eurus Energy [100%] (株式会社ユーラスエナジーホールディングス)<ref name="autoref_2" />
+| Eurus Energy (株式会社ユーラスエナジーホールディングス)<ref name="autoref_4">{{cite web |url=https://www.thewindpower.net/windfarm_en_11073.php |archive-url=https://web.archive.org/web/20240131010411/https://www.thewindpower.net/windfarm_en_11073.php |archive-date=2024-01-31}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Combine Hills wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Umatilla County, Oregon, United States<ref name="autoref_1" />
+| 45.9282, -118.5810 (exact)<ref name="autoref_1" />
+|-
+| 2
+| Umatilla County, Oregon, United States<ref name="autoref_1" />
+| 45.9319, -118.5410 (exact)<ref name="autoref_1" />
+|}
+The map below shows the exact locations of the wind farm phases:
+<display_map width=600 height=500 type=satellite>
+45.9282, -118.581~ ~ ~ ~ ~Phase 1
+45.9319, -118.541~ ~ ~ ~ ~Phase 2
+</display_map>
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in United States]]
+
+__NOTOC__

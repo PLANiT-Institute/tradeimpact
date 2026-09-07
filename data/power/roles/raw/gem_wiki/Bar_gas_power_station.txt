@@ -1,0 +1,97 @@
+# GEM wiki page: Bar gas power station
+# URL: https://www.gem.wiki/Bar_gas_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Bar gas power station''' is an announced power station in Bar, Montenegro.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Bar gas power station
+| Bar, Bar, Montenegro
+| 42.090755, 19.097452 (approximate)<ref name="autoref_0">{{cite web |url=https://balkangreenenergynews.com/epcg-intends-to-construct-three-gas-power-plants-in-montenegro/ |archive-url=https://web.archive.org/web/20220817012018/https://balkangreenenergynews.com/epcg-intends-to-construct-three-gas-power-plants-in-montenegro/ |archive-date=2022-08-17}}</ref>
+|}
+{{
+#display_map:
+42.090755, 19.097452
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Announced<ref name="autoref_0" /><ref name="autoref_1">{{cite web |url=https://bankwatch.org/blog/bar-s-battle-montenegrin-town-rising-against-lng-project |archive-url=https://web.archive.org/web/20250326170748/https://bankwatch.org/blog/bar-s-battle-montenegrin-town-rising-against-lng-project |archive-date=2025-03-26}}</ref><ref name="autoref_2">{{cite web |url=https://zakoni.skupstina.me/zakoni/web/dokumenta/zakoni-i-drugi-akti/572/3735-21495-00-72-25-67.pdf}}</ref><ref name="autoref_3">{{cite web |url=https://balkangreenenergynews.com/varhelyi-eu-ready-to-build-lng-terminal-in-montenegro/ |title=Várhelyi: EU ready to build LNG terminal in Montenegro |date=2023-10-09 |website=Balkan Green Energy News |access-date=2024-06-28 |archive-url=https://web.archive.org/web/20240705174701/https://balkangreenenergynews.com/varhelyi-eu-ready-to-build-lng-terminal-in-montenegro/ |archive-date=2024-07-05}}</ref>
+| fossil gas: LNG<ref name="autoref_0" /><ref name="autoref_4">{{cite web |url=https://balkangreenenergynews.com/montenegro-signs-memorandum-for-lng-terminal-gas-fired-power-plant/ |archive-url=https://web.archive.org/web/20230605170308/https://balkangreenenergynews.com/montenegro-signs-memorandum-for-lng-terminal-gas-fired-power-plant/ |archive-date=2023-06-05}}</ref>
+| 440<ref name="autoref_0" /><ref name="autoref_5">{{cite web |url=https://www.constructionbriefing.com/news/plans-move-forward-for-lng-terminal-in-montenegro/8032212.article |title=Plans move forward for LNG terminal in Montenegro |date=2023-10-11 |website=Construction Briefing |access-date=2024-06-28 |archive-url=https://web.archive.org/web/20240705174721/https://www.constructionbriefing.com/news/plans-move-forward-for-lng-terminal-in-montenegro/8032212.article |archive-date=2024-07-05}}</ref><ref name="autoref_4" /><ref name="autoref_6">{{cite web |url=https://balkangreenenergynews.com/montenegros-epcg-finishes-study-on-gas-power-plants/}}</ref>
+| gas turbine<ref name="autoref_0" /><ref name="autoref_4" />
+| not found
+| not found
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| JERA Co Inc [100%]<ref name="autoref_7">{{cite web |url=https://seenews.com/news/jera-to-complete-feasibility-study-for-montenegro-lng-terminal-by-end-june-pm-1288440}}</ref>
+| Chubu Electric Power Co Inc [50.0%]; Tokyo Electric Power Co [50.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjA1JS0tPiAxMDAwMDAwMDA2MzAKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43NSUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjIlLS0+IDEwMDAwMDAwMDYzMAogICAgMTAwMDAwMDAwNjMwWyJDaHVidSBFbGVjdHJpYyBQb3dlcjxicj5DbyBJbmMiXSAtLTUwLjAlLS0+IDEwMDAwMDAwMTUzMwogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS01LjUzJS0tPiAxMDAwMDAwMDA2NTkKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTM5LjcyJS0tPiAxMDAwMDAwMDA2NTkKICAgIDEwMDAwMTAxMTEzNlsiR292ZXJubWVudCBvZiBKYXBhbiJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDg5NAogICAgMTAwMDAxMDAwODk0WyJOdWNsZWFyIERhbWFnZTxicj5Db21wZW5zYXRpb24gYW5kPGJyPkRlY29tbWlzc2lvbmluZzxicj5GYWNpbGl0YXRpb24gQ29ycCJdIC0tNTQuNzUlLS0+IDEwMDAwMDAwMDY1OQogICAgMTAwMDAwMDAwNjU5WyJUb2t5byBFbGVjdHJpYyBQb3dlcjxicj5DbyJdIC0tMTAwLjAlLS0+IDEwMDAwMDE5MjUyOQogICAgMTAwMDAwMTkyNTI5WyJURVBDTyBGdWVsICYgUG93ZXI8YnI+SW5jIl0gLS01MC4wJS0tPiAxMDAwMDAwMDE1MzMKICAgIDEwMDAwMDAwMTUzM1siSkVSQSBDbyBJbmMiXSAtLTEwMC4wJS0tPiBQMTAwMDAwNDA3NzI0CiAgICBQMTAwMDAwNDA3NzI0WyJCYXIgZ2FzIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Montenegro]]

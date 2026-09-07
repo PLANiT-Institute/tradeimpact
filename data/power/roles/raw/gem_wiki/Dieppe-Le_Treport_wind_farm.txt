@@ -1,0 +1,75 @@
+# GEM wiki page: Dieppe-Le Treport wind farm
+# URL: https://www.gem.wiki/Dieppe-Le_Treport_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Dieppe-Le Treport wind farm''' is a wind farm under construction in Dieppe, France.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Dieppe-Le Treport wind farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| Construction<ref name="autoref_0">{{cite web |url=https://www.oceanwinds.com/news/uncategorized/dieppe-le-treport-offshore-wind-farm-reaches-final-investment-decision-and-starts-construction/ |title=Dieppe Le Tréport offshore wind farm reaches Final Investment Decision and starts construction. |date=2023-04-26 |access-date=2024-01-30 |archive-url=https://web.archive.org/web/20240219020027/https://www.oceanwinds.com/news/uncategorized/dieppe-le-treport-offshore-wind-farm-reaches-final-investment-decision-and-starts-construction/ |archive-date=2024-02-19}}</ref>
+| 2026 (planned)<ref name="autoref_0" />
+| 496 MW<ref name="autoref_1">{{cite web |url=https://www.nsenergybusiness.com/projects/dieppe-le-treport-offshore-wind-farm/ |archive-url=https://web.archive.org/web/20240125222856/https://www.nsenergybusiness.com/projects/dieppe-le-treport-offshore-wind-farm/ |archive-date=2024-01-25}}</ref>
+| Offshore hard mount<ref name="autoref_2">{{cite web |url=https://www.engie.com/en/journalists/press-releases/eoliennes-en-mer-dieppe-treport-green-light |archive-url=https://web.archive.org/web/20240126100212/https://www.engie.com/en/journalists/press-releases/eoliennes-en-mer-dieppe-treport-green-light |archive-date=2024-01-26}}</ref>
+| EDPR Renewable Energy Sources of Greece 1 Sole Proprietorship [29%]; ENGIE SA [31%]; Caisse des dépôts et consignations [10%]; Sumitomo Corp [29%] (EDPR Ανανεωσιμες Πηγες Ενεργειας Ελλας 1 Μονοπροσωπη Ανωνυμη Εταιρεια; 住友商事株式会社)<ref name="autoref_3">{{cite web |url=https://www.nsenergybusiness.com/projects/dieppe-le-treport-offshore-wind-farm/, https://www.nsenergybusiness.com/projects/dieppe-le-treport-offshore-wind-farm/, https://www.nsenergybusiness.com/projects/dieppe-le-treport-offshore-wind-farm/, https://www.nsenergybusiness.com/projects/dieppe-le-treport-offshore-wind-farm/}}</ref>
+| EDPR Renewable Energy Sources of Greece 1 Sole Proprietorship; Caisse des dépôts et consignations; Sumitomo; ENGIE (EDPR Ανανεωσιμες Πηγες Ενεργειας Ελλας 1 Μονοπροσωπη Ανωνυμη Εταιρεια; 住友商事株式会社)<ref name="autoref_3" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Dieppe-Le Treport wind farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Dieppe, France<ref name="autoref_1" />
+| 50.1876, 1.0274 (approximate)<ref name="autoref_1" />
+|}
+The map below shows the approximate location of the wind farm:
+{{
+#display_map:
+50.1876, 1.0274~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in France]]
+
+__NOTOC__

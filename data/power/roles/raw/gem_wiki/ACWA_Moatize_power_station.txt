@@ -1,0 +1,135 @@
+# GEM wiki page: ACWA Moatize power station
+# URL: https://www.gem.wiki/ACWA_Moatize_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''ACWA Moatize power station''' is a cancelled power station in Moatize, Tete, Mozambique.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| ACWA Moatize power station
+| Moatize, Tete, Mozambique
+| -16.167807, 33.789454 (approximate)
+|}
+{{
+#display_map:
+-16.167807, 33.789454
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Unit 1
+| Cancelled
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 270
+| unknown
+| False
+|-
+| Unit 2
+| Cancelled
+| coal: unknown<ref name="autoref_0" />
+| 300
+| unknown
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| ACWA Power Moatize Termoelectrica SA [100%]
+| ACWA Power Co [29.0%]; Mitsui & Co Ltd [29.0%]; Vale SA [29.0%]; Whatana Investment Group [8.0%]; Electricidade de Moçambique EP [5.0%]
+|-
+| Unit 2
+| ACWA Power Moatize Termoelectrica SA [100%]
+| ACWA Power Co [29.0%]; Mitsui & Co Ltd [29.0%]; Vale SA [29.0%]; Whatana Investment Group [8.0%]; Electricidade de Moçambique EP [5.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAxOThbIkdvdmVybm1lbnQgb2YgU2F1ZGk8YnI+QXJhYmlhIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAxMzU4CiAgICAxMDAwMDAwMDEzNThbIlB1YmxpYyBJbnZlc3RtZW50PGJyPkZ1bmQgKFNhdWRpIEFyYWJpYSkiXSAtLTQ0LjE2JS0tPiAxMDAwMDAwMDA4ODIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tPiAxMDAwMDIwMjE4NjkKICAgIDEwMDAwMjAyMTg2OVsiQWJ1bmF5eWFuIEhvbGRpbmcgQ28iXSAtLT4gMTAwMDAwMDAwODkzCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAyMDIxODcwCiAgICAxMDAwMDIwMjE4NzBbIkFsIE11aGFpZGliIEdyb3VwIl0gLS0+IDEwMDAwMDAwMDg5MwogICAgMTAwMDAwMDAwODkzWyJWaXNpb24gSW50ZXJuYXRpb25hbDxicj5JbnZlc3RtZW50IENvIl0gLS0yMi43NSUtLT4gMTAwMDAwMDAwODgyCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTMzLjA5JS0tPiAxMDAwMDAwMDA4ODIKICAgIDEwMDAwMDAwMDg4MlsiQUNXQSBQb3dlciBDbyJdIC0tPiAxMDAwMDAxMjAwMDYKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzNbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuNDMlLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjcuNSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTYuMSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tOS45NyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDAwMDA2NTFbIk1pdHN1aSAmIENvIEx0ZCJdIC0tPiAxMDAwMDAxMjAwMDYKICAgIDEwMDAwMDEyMTU0NVsiV2hhdGFuYSBJbnZlc3RtZW50PGJyPkdyb3VwIl0gLS04LjAlLS0+IDEwMDAwMDEyMDAwNgogICAgMTAwMDAxMDE1NTg3XzExWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzQuNjMlLS0+IDEwMDAwMTAwMDQ4MAogICAgMTAwMDAxMDAwMzExWyJHb3Zlcm5tZW50IG9mIEJyYXppbCJdIC0tMTAwLjAlLS0+IDEwMDAwMjAwMTA5NwogICAgMTAwMDAyMDAxMDk3WyJFbnRpZGFkZXMgRGU8YnI+UHJldmlkZW5jaWEiXSAtLTcuNDglLS0+IDEwMDAwMTAwMDQ4MAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS02LjU2JS0tPiAxMDAwMDEwMDA0ODAKICAgIDEwMDAwMDAwMDY1MVsiTWl0c3VpICYgQ28gTHRkIl0gLS02LjMxJS0tPiAxMDAwMDEwMDA0ODAKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDkwMQogICAgMTAwMDAxMDAwOTAxWyJUaGUgQ2FwaXRhbCBHcm91cDxicj5Db21wYW5pZXMgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDEwNzA3CiAgICAxMDAwMDEwMTA3MDdbIkNhcGl0YWwgUmVzZWFyY2ggYW5kPGJyPk1hbmFnZW1lbnQgQ28iXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTA3MDUKICAgIDEwMDAwMTAxMDcwNVsiQ2FwaXRhbCBXb3JsZDxicj5JbnZlc3RvcnMiXSAtLTUuMDIlLS0+IDEwMDAwMTAwMDQ4MAogICAgMTAwMDAxMDAwNDgwWyJWYWxlIFNBIl0gLS0+IDEwMDAwMDEyMDAwNgogICAgMTAwMDAxMDAwMTUxWyJHb3Zlcm5tZW50IG9mPGJyPk1vemFtYmlxdWUiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDIwMjkKICAgIDEwMDAwMDAwMjAyOVsiRWxlY3RyaWNpZGFkZSBkZTxicj5Nb8OnYW1iaXF1ZSBFUCJdIC0tNS4wJS0tPiAxMDAwMDAxMjAwMDYKICAgIDEwMDAwMDEyMDAwNlsiQUNXQSBQb3dlciBNb2F0aXplPGJyPlRlcm1vZWxlY3RyaWNhIFNBIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwMzA1OAogICAgUDEwMDAwMDEwMzA1OFsiQUNXQSBNb2F0aXplIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background==
+
+On February 18, 2014, the Mozambican government approved a coal-fired project with a capacity of 600 MW. The project would have been run by ACWA Power Moatize Termoelectrica SA, a consortium whose main shareholders are ACWA Power of Saudi Arabia, Vale of Brazil, and Mitsui of Japan. The power station was to be located at the mouth of the open cast Moatize coal mine, operated by Vale. The higher grade coal (particularly coking coal) mined by Vale was to be exported, while the lower grade coal was to be burnt in the power station.<ref name=cm>[http://www.clubofmozambique.com/solutions1/sectionnews.php?secao=mining&id=31548&tipo=one "Moatize coal-fired station gets the go-ahead,"] Club of Mozambique, February 20, 2014</ref>
+
+Construction of the power station was expected to take three years. The project was going to be built in two phases. The first phase was to involve the construction of a 300 MW plant for US$1 billion.<ref>[http://www.macauhub.com.mo/en/2015/03/02/mozambiques-energy-sector-sees-investments-of-us3-2-billion-in-2014/ "Mozambique’s energy sector sees investments of US$3.2 billion in 2014,"] Macau Hub, March 2, 2015</ref> The plant would have been a pulverized fuel, sub-critical power station. About 250 MW of the total capacity of 300 MW would feed the [[Moatize mine]], with the remaining 50 MW supplied to the national grid.<ref name=esi>[http://www.esi-africa.com/mozambique-approves-600-mw-coal-fired-power-station/ "Mozambique approves 600 MW coal fired power station,"] ESI Africa, March 17, 2014</ref>
+
+The sponsors selected international contractor GS Engineering & Construction from Korea for the engineering, procurement and construction of the project, and ACWA Power’s wholly owned subsidiary NOMAC was going to be responsible for the operation and maintenance of the plant.<ref name=esi>[http://www.esi-africa.com/mozambique-approves-600-mw-coal-fired-power-station/ "Mozambique approves 600 MW coal fired power station,"] ESI Africa, March 17, 2014</ref>
+
+According to ACWA Power (May 2016), the power station was planned to be 270 MW. ACWA said it had one PPA with Vale MZ for 220 MW, and another with Electricidad de Mozambique for 50 MW. The project was seeking half a billion dollars in financing from multilateral lenders and export credit agencies. Commercial operation was planned for Q1 2018.<ref>[http://acwapower.com/project/moatize-ipp/ "Projects,"] ACWA Power, accessed May 2016</ref>
+
+As of 2021, the project was removed from the ACWA website and there were no known developments in securing financing. The project appeared to be shelved or cancelled.
+
+==Ownership and financing==
+
+ACWA held 56.5% of the power station project, with smaller shareholdings by Mitsui of Japan and Vale, while Mozambican company Whatana Investment Group has 8% and Electricidad de Mozambique owns 5%. The estimated cost was US$1 billion. ACWA was trying to raise funding from various export credit agencies and multilateral and development financing agencies. The amount required from these sources exceeded US$500 million according to ACWA.<ref>[http://www.engineeringnews.co.za/article/some-progress-visible-on-mozambican-coal-miners-power-station-projects-2016-03-25/rep_id:4136 "Mozambique coal miners’ power station projects making ‘visible progress’"] Engineering News, March 25, 2016</ref>
+
+According to a March 2016 report, Paddy Padmanathan, CEO of ACWA Power, described finding financing for the plant as "turning out to be quite a challenge." Padmanathan said that there had been "a few different configurations on the financing structure." The report said that Korean engineering firm GS would build the plant, meaning that Korean export promotion bank KEXIM was likely to be one of the financiers. Another possible lender was the African Development Bank.<ref>Max Ndianaefo, [http://www.cp-africa.com/2016/03/24/mozambique-coal-fired-power-project-seek-lenders/ "Mozambique: Coal-Fired Power project seek lenders,"] CPAFRICA, March 24, 2016</ref>
+
+==Coal mine==
+
+The plant would be constructed in Tete province, where Vale has developed and is operating the biggest coal mine in the world, the [[Moatize mine]].<ref name=kc>Keith Campbell, [http://www.miningweekly.com/print-version/mozambique-set-to-get-hydrocarbons-billions-and-vale-unveils-power-station-plan-2012-09-28 "Mozambique set to get hydrocarbons billions, Vale unveils power station plan,"] Mining Weekly, September 28, 2012</ref>
+
+Brazilian mining company Vale has been present in Mozambique since 2004 with the Moatize coal mine. The company mined 3.77 million megatonnes of metallurgical and thermal coal in its first full year of operations in 2012. Moatize phase II is scheduled for 2015, and Vale said it would increase production at the mine to 22 million megatonnes annually, including five million megatonnes of thermal coal. Vale is also constructing the Nacala Corridor to connect Moatize to the [[Nacala port]], and restoring Sena Railway to connect Moatize to the [[Beira port]].<ref>[http://macigindaba.com/2014/09/09/mozambique-a-waking-coal-giant/ "Mozambique: a Waking Coal Giant,"] MACIG, September 9, 2014</ref>
+
+In January 2014 Mitsui said it had agreed to pay nearly US$450 million for a 15 per cent stake in the Brazilian group’s Moatize mine, and invest a further US$188 million to fund the mine's expansion. Mitsui also agreed to pay US$313 million for a 50 per cent stake in Vale’s subsidiary that has been promoting the multibillion dollar [[Nacala port]] and rail project.<ref>[http://www.ft.com/cms/s/0/887f03b2-7fb4-11e4-b4f5-00144feabdc0.html#axzz3RT10D0yZ "Mitsui invests $1bn in Vale’s Mozambique coal projects,"] ft, December 9, 2014</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Mozambique]]

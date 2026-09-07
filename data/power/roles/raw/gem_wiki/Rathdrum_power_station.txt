@@ -1,0 +1,152 @@
+# GEM wiki page: Rathdrum power station
+# URL: https://www.gem.wiki/Rathdrum_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Rathdrum power station''' is an operating power station of at least 468-megawatts (MW) in Rathdrum, Kootenai, Idaho, United States with multiple units, some of which are not currently operating.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Rathdrum power station
+| Rathdrum, Kootenai, Idaho, United States
+| 47.7858, -116.9203 (exact)<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/xls/november_generator2022.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (November 2022) |access-date=December 23, 2022 |archive-url=https://web.archive.org/web/20230122152327/https://www.eia.gov/electricity/data/eia860m/xls/november_generator2022.xlsx |archive-date=2023-01-22 |url-status=live}}</ref>
+|}
+{{
+#display_map:
+47.7858, -116.9203
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, CC1, CT3 IRP, CT4 IRP, CT5 IRP''': 47.7858, -116.9203
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (November 2019) |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20200612191408/https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |archive-date=2020-06-12 |url-status=live}}</ref>
+| fossil gas: natural gas<ref name="autoref_1" />
+| 83<ref name="autoref_1" />
+| gas turbine<ref name="autoref_1" />
+| no<ref name="autoref_1" />
+| 1994<ref name="autoref_1" />
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas<ref name="autoref_1" />
+| 83<ref name="autoref_1" />
+| gas turbine<ref name="autoref_1" />
+| no<ref name="autoref_1" />
+| 1994<ref name="autoref_1" />
+| no
+|-
+| CC1
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas<ref name="autoref_1" />
+| 302<ref name="autoref_1" />
+| combined cycle<ref name="autoref_1" />
+| no<ref name="autoref_1" />
+| 2001<ref name="autoref_1" />
+| no
+|-
+| CT3 IRP
+| Announced<ref name="autoref_2">{{cite web |url=https://puc.idaho.gov/Fileroom/PublicFiles/ELEC/AVU/AVUE2413/OrdNotc/20251105Final_Order_No_36826.pdf}}</ref><ref name="autoref_3">{{cite web |url=https://www.myavista.com/-/media/myavista/content-documents/about-us/our-company/irp-documents/2025/2025-avista-electric-irp.pdf}}</ref>
+| fossil gas: natural gas<ref name="autoref_2" /><ref name="autoref_3" />
+| 90<ref name="autoref_2" /><ref name="autoref_3" />
+| gas turbine<ref name="autoref_2" /><ref name="autoref_3" />
+| –
+| 2030 (planned)<ref name="autoref_2" /><ref name="autoref_3" />
+| no
+|-
+| CT4 IRP
+| Announced<ref name="autoref_2" /><ref name="autoref_3" />
+| fossil gas: natural gas<ref name="autoref_2" /><ref name="autoref_3" />
+| 90<ref name="autoref_2" /><ref name="autoref_3" />
+| gas turbine<ref name="autoref_2" /><ref name="autoref_3" />
+| –
+| 2040 (planned)<ref name="autoref_2" /><ref name="autoref_3" />
+| no
+|-
+| CT5 IRP
+| Announced<ref name="autoref_2" /><ref name="autoref_3" />
+| fossil gas: natural gas<ref name="autoref_2" /><ref name="autoref_3" />
+| 95<ref name="autoref_2" /><ref name="autoref_3" />
+| gas turbine<ref name="autoref_2" /><ref name="autoref_3" />
+| –
+| 2042 (planned)<ref name="autoref_2" /><ref name="autoref_3" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Avista Corp [100%]<ref name="autoref_4">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2018.xlsx |title=U.S. Energy Information Administration, Form EIA-860 detailed data with previous form data (EIA-860A/860B), 2018 |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20191116210428/https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2018.xlsx |archive-date=2019-11-16 |url-status=live}}</ref>
+| Avista Corp [100.0%]
+|-
+| 2
+| Avista Corp [100%]<ref name="autoref_4" />
+| Avista Corp [100.0%]
+|-
+| CC1
+| Tyr Energy Inc [100%]<ref name="autoref_4" />
+| ITOCHU Corp [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United States]]
+
+__NOTOC__

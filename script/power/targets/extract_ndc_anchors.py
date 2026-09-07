@@ -1,8 +1,9 @@
 """Read each destination's committed target out of the Climate Watch NDC content.
 
 Inputs
-    targets/raw/climatewatch_ndc_content.json    GHG target text, type and target year per country
+    targets/raw/climatewatch_ndc_content.csv     GHG target text, type and target year per country
                                                  and per NDC submission (fetch_climatewatch_ndc.py)
+    targets/raw/climatewatch_ndc_submissions.csv the order in which submissions supersede
     targets/raw/ndc_anchors_power.csv            HAND overrides: rows that replace or add a country
     projects/processed/projects_gem.csv          the destinations that need an anchor
     geography/processed/country_codes.csv        alpha-2 <-> alpha-3
@@ -27,7 +28,6 @@ Run from the repository root:  .venv/bin/python script/power/targets/extract_ndc
 
 from __future__ import annotations
 
-import json
 import re
 import sys
 from pathlib import Path
@@ -35,14 +35,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "model"))
 from power_io import DATA, REPO, hand_file_required, read_csv, write_csv  # noqa: E402
 
-RAW = DATA / "targets" / "raw" / "climatewatch_ndc_content.json"
+RAW = DATA / "targets" / "raw" / "climatewatch_ndc_content.csv"
+SUBMISSIONS = DATA / "targets" / "raw" / "climatewatch_ndc_submissions.csv"
 HAND = DATA / "targets" / "raw" / "ndc_anchors_power.csv"
 PROJECTS = DATA / "projects" / "processed" / "projects_gem.csv"
 CODES = DATA / "geography" / "processed" / "country_codes.csv"
 SOURCES = DATA / "registry" / "sources.csv"
 OUT = DATA / "targets" / "processed" / "ndc_anchors_power.csv"
 SOURCE_ID = "climatewatch_ndc_content"
-DOCUMENT_ORDER = ["indc", "first_ndc", "revised_first_ndc", "second_ndc", "third_ndc"]
 FIELDS = [
     "country",
     "iso3",
@@ -82,14 +82,9 @@ def clean(text: str) -> str:
     return re.sub(r"\s+", " ", t).strip()
 
 
-def latest(values: list[dict[str, str]]) -> dict[str, str] | None:
+def latest(values: list[dict[str, str]], order: dict[str, int]) -> dict[str, str] | None:
     """The value from the most recent submission type."""
-    ranked = sorted(
-        values,
-        key=lambda v: (
-            DOCUMENT_ORDER.index(v["document_slug"]) if v["document_slug"] in DOCUMENT_ORDER else -1
-        ),
-    )
+    ranked = sorted(values, key=lambda v: order.get(v["submission"], -1))
     return ranked[-1] if ranked else None
 
 
@@ -173,10 +168,10 @@ def classify(target_type: str) -> str:
 
 
 def anchor_for(
-    alpha2: str, iso3: str, values: dict[str, list[dict[str, str]]]
+    alpha2: str, iso3: str, values: dict[str, list[dict[str, str]]], order: dict[str, int]
 ) -> dict[str, object]:
     """The parsed anchor row for one destination."""
-    target = latest(values.get("ghg_target", []))
+    target = latest(values.get("ghg_target", []), order)
     row: dict[str, object] = {k: "" for k in FIELDS}
     row.update(
         {
@@ -193,10 +188,13 @@ def anchor_for(
     if target is None:
         row.update({"target_type": "none", "parse_status": "no_ndc_target_on_file"})
         return row
-    doc = target["document_slug"]
-    same_doc = lambda slug: [v for v in values.get(slug, []) if v["document_slug"] == doc]  # noqa: E731
-    type_value = (latest(same_doc("ghg_target_type")) or {}).get("value", "")
-    year_value = (latest(same_doc("time_target_year")) or {}).get("value", "")
+    doc = target["submission"]
+
+    def same_doc(slug: str) -> list[dict[str, str]]:
+        return [v for v in values.get(slug, []) if v["submission"] == doc]
+
+    type_value = (latest(same_doc("ghg_target_type"), order) or {}).get("value", "")
+    year_value = (latest(same_doc("time_target_year"), order) or {}).get("value", "")
     text = clean(target["value"])
     kind = classify(type_value)
     row.update(
@@ -229,17 +227,20 @@ def main() -> None:
     """Write the anchor table: parsed rows, hand rows on top."""
     if not RAW.exists():
         hand_file_required(RAW, "run script/power/targets/fetch_climatewatch_ndc.py")
+    if not SUBMISSIONS.exists():
+        hand_file_required(SUBMISSIONS, "run script/power/targets/fetch_climatewatch_ndc.py")
     if not PROJECTS.exists():
         hand_file_required(PROJECTS, "run script/power/projects/extract_gem_tracker.py")
-    payload = json.loads(RAW.read_text(encoding="utf-8"))
-    by_slug = {i["slug"]: i["locations"] for i in payload["indicators"]}
+    order = {r["submission"]: int(r["ordering"]) for r in read_csv(SUBMISSIONS)}
+    by_country: dict[str, dict[str, list[dict[str, str]]]] = {}
+    for r in read_csv(RAW):
+        by_country.setdefault(r["iso3"], {}).setdefault(r["indicator"], []).append(r)
     codes = {r["alpha2"]: r["alpha3"] for r in read_csv(CODES)}
     destinations = sorted({r["country"] for r in read_csv(PROJECTS)})
     rows: list[dict[str, object]] = []
     for a2 in destinations:
         iso3 = codes.get(a2, "")
-        values = {slug: locs.get(iso3, []) for slug, locs in by_slug.items()}
-        rows.append(anchor_for(a2, iso3, values))
+        rows.append(anchor_for(a2, iso3, by_country.get(iso3, {}), order))
     hand = read_csv(HAND) if HAND.exists() else []
     known_sources = {r["source_id"] for r in read_csv(SOURCES)}
     for h in hand:

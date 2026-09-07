@@ -1,0 +1,75 @@
+# GEM wiki page: Wheats Solar
+# URL: https://www.gem.wiki/Wheats_Solar
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Summer and Winter Wheats Solar Civil Project
+
+'''Wheats Solar''' is a cancelled solar photovoltaic (PV) farm in San Joaquin, California, United States.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Wheats Solar ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| Cancelled ([https://www.gem.wiki/Global_Solar_Power_Tracker_Methodology inferred] January 2022)
+| 22 MW<ref name="autoref_0">{{cite web |url=https://sukut.com/energy/projects/summer-and-winter-wheats-solar-civil-project/ |archive-url=https://web.archive.org/web/20220207150853/https://sukut.com/energy/projects/summer-and-winter-wheats-solar-civil-project/ |archive-date=07 February 2022}}</ref>
+| PV<ref name="autoref_0" />
+| Hanwha Energy Corp [100%] (한화에너지)<ref name="autoref_0" />
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Wheats Solar ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| San Joaquin, California, United States<ref name="autoref_0" />
+| 37.9546, -121.3430 (approximate)<ref name="autoref_0" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+37.9546, -121.343~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in United States]]
+[[Category:PV solar farms]]
+
+__NOTOC__

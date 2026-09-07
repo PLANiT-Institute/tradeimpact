@@ -1,0 +1,137 @@
+# GEM wiki page: Asahimas Chemical power station
+# URL: https://www.gem.wiki/Asahimas_Chemical_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Asahimas Chemical power station''' is an operating power station of at least 300-megawatts (MW) in Cilegon, Jawa, Indonesia.
+It is also known as 日本旭硝子玻璃公司自备电厂.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Asahimas Chemical power station
+| Cilegon, Jawa, Indonesia
+| -6.024754, 105.942635 (exact)
+|}
+{{
+#display_map:
+-6.024754, 105.942635
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': -6.024754, 105.942635
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: unknown, bioenergy: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 150
+| unknown
+| 2019
+| False
+|-
+| Unit 2
+| Operating
+| coal: unknown, bioenergy: unknown<ref name="autoref_0" />
+| 150
+| unknown
+| 2019
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| PT Asahimas Chemical [100%]
+| AGC Inc [52.5%]; natural person(s) [18.0%]; PT Rodamas [18.0%]; Mitsubishi Corp [11.5%]
+|-
+| Unit 2
+| PT Asahimas Chemical [100%]
+| AGC Inc [52.5%]; natural person(s) [18.0%]; PT Rodamas [18.0%]; Mitsubishi Corp [11.5%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power
+* '''Captive industry''': Chemicals
+
+
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAwMTIwMDgyCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc2LjE1JS0tPiAxMDAwMDAxMzM1MzkKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzJbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuMDklLS0+IDEwMDAwMDEzMzUzOQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS03Ljc2JS0tPiAxMDAwMDAxMzM1MzkKICAgIDEwMDAwMDEzMzUzOVsiQUdDIEluYyJdIC0tNTIuNSUtLT4gMTAwMDAwMTIwMDgyCiAgICAxMDAwMDAxMjExODRbIlBUIFJvZGFtYXMiXSAtLTE4LjAlLS0+IDEwMDAwMDEyMDA4MgogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS41JS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjIlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjMlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAwMDAwNjUwWyJNaXRzdWJpc2hpIENvcnAiXSAtLTExLjUlLS0+IDEwMDAwMDEyMDA4MgogICAgMTAwMDAwMTIwMDgyWyJQVCBBc2FoaW1hcyBDaGVtaWNhbCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDI2OTUKICAgIFAxMDAwMDAxMDI2OTVbIkFzYWhpbWFzIENoZW1pY2FsPGJyPnBvd2VyIHN0YXRpb24iXQo=}}
+
+==Background==
+
+In February 2016 Japan's Ministry of Economy, Trade and Industry, Ernst & Young ShinNihon LLC, and Japan External Trade Organization released a study of a 3 x 150 MW coal plant sponsored by Asahi Glass at Ayer near Cilegon in Banten province. According to the report, plants of 600 MW in size and using [[ultrasupercritical]] combustion were initially studied, modeled after the [[Hirono power station]]
+in Japan; however, such plants would require bituminous coal, which in Indonesia is reserved for export. For domestically available subbituminous coal, the study observed that a unit size of 1,000 MW or larger would be necessary. For smaller units, ultra-supercritical combustion was considered to be impractical with Indonesian subbitumious coal due to the expensive materials that would be necessary to prevent corrosion. For that reason, the study covered not only ultra-supercritical but also supercritical, subcritical, and circulating fluidized bed combustion.<ref>[http://www.meti.go.jp/meti_lib/report/2015fy/000467.pdf Study on Coal-Fired Power Plant in Anyer, The Republic of Indonesia,"] Ministry of Economy, Trade and Industry, Erst & Young ShinNihon LLC, and Japan External Trade Organization, February 2015</ref>
+
+In April 2015 Asahi Glass of Japan said it plans to build a 250 MW coal-fired power plant in Indonesia, at the site of the company's Asahimas Chemical factory to generate its own electricity for producing chemical products. The company plans to spend a total of US$400 million on the project. The plant would use locally produced coal, as well as some biomass fuel. It is scheduled to go online in 2017, according to the sources.<ref>[http://asia.nikkei.com/Business/Companies/Asahi-Glass-plans-coal-plant-to-power-production "Asahi Glass plans coal plant to power production,"] Nikkei, Apr 8, 2015</ref>
+
+In April 2016 Kawasaki Heavy Industries said it had received an order from Taiwanese company Formosa Heavy Industries Corp. (FHI) for two 150 MW class steam turbine power generation facilities, to install at an Asahi Glass factory in Indonesia.<ref>[https://global.kawasaki.com/en/corp/newsroom/news/detail/?f=20160425_9174 "Kawasaki to Provide Two 150 MW Steam Turbine Power Facilities to Factory in Indonesia,"] Kawasaki, Apr. 25, 2016</ref> It is planned for 2018.<ref>[http://www.thejakartapost.com/news/2016/02/13/asahimas-chemical-triple-exports-year.html "Asahimas Chemical to triple exports this year,"] The Jakarta Post, February 13, 2016</ref>
+
+Construction of the plant began in Q4 of 2016.<ref>[https://www.reportbuyer.com/product/5218059/agc-cilegon-coal-fired-power-plant-300-mw-banten-project-profile.html AGC – Cilegon Coal-Fired Power Plant 300 MW – Banten - Project Profile], Timetric, February 2018</ref> In September 2018 Asahimas' parent company Asahi Glass stated that the Banten chemical factory expansion would begin operations in Q2 2021.<ref name=acg>[https://www.agc.com/en/news/detail/1197705_2814.html AGC to Increase its PVC Production Capacity in Indonesia], AGC, Sep. 5, 2018</ref>
+
+The Asahi Glass Company (AGC) 2020 Integrated Report and Financial Results report indicated that the power station at the Asahimas Chemical plant began operating in the second quarter of 2019.<ref>[https://www.agc.com/en/company/agc_report/pdf/agc_report_en_2020.pdf "AGC Integrated Report 2020, For the Year Ended December 31, 2019,"] AGC, May 2020</ref><ref>[https://www.agc.com/en/ir/library/briefing/pdf/2021_0205e_1.pdf "Financial Results for FY2020,"] AGC, February 5, 2021</ref> As of July 2023, [https://www.planet.com/stories/6-02deg-s-105-94deg-e-bdzbgUj4R satellite imagery from Planet] also indicated that coal shipments were arriving at the power station's jetty.
+
+In their 2022 Integrated Report, published in July 2023, AGC stated that GHG emissions from in-house power generation facilities would be addressed on the "medium term". Solar power and the use of biofuels were both mentioned.<ref>[https://www.agc.com/en/company/agc_report/pdf/agc_report_en_2023.pdf "AGC Integrated Report 2023,"] AGC, July 3, 2023</ref> The Integrated Report published in May 2024 included the same language.<ref>[https://www.agc.com/en/company/agc_report/pdf/agc_report_en_2024.pdf "AGC Integrated Report 2024,"] AGC, May 2024</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Indonesia]]

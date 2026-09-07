@@ -1,0 +1,113 @@
+# GEM wiki page: Ukudu power station
+# URL: https://www.gem.wiki/Ukudu_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Ukudu power station''' is an operating power station of at least 198-megawatts (MW) in Dededo, Guam.
+It is also known as Dededo.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Ukudu power station
+| Dededo, Guam
+| 13.52612, 144.817776 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/UKUDU+Power+Plant/@13.5205085,144.8171769,5643m/data=!3m1!1e3!4m14!1m7!3m6!1s0x671f839c9eccb21d:0xb165352f5e5429cd!2sUKUDU+Power+Plant!8m2!3d13.5259342!4d144.8177173!16s%2Fg%2F11r10rywpb!3m5!1s0x671f839c9eccb21d:0xb165352f5e5429cd!8m2!3d13.5259342!4d144.8177173!16s%2Fg%2F11r10rywpb!5m1!1e2?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D}}</ref><ref name="autoref_1">{{cite web |url=https://www.doosan.com/en/media-center/press-release_view/?id=20172258&page=0& |archive-url=https://web.archive.org/web/20210918010657/https://www.doosan.com/en/media-center/press-release_view?id=20172258&page=0& |archive-date=2021-09-18}}</ref>
+|}
+{{
+#display_map:
+13.52612, 144.817776
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 13.52612, 144.817776
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_2">{{cite web |url=https://www.guampdn.com/news/gpa-ukudu-power-plant-commissioned/article_31da6dd1-8e21-4351-bd0f-f51b4cdc8e8e.html}}</ref><ref name="autoref_3">{{cite web |url=https://www.postguam.com/news/local/new-ukudu-power-plant-breaks-ground/article_38377862-07fb-11ed-a8f9-dbf5f8ca966e.html |archive-url=https://web.archive.org/web/20220826205811/https://www.postguam.com/news/local/new-ukudu-power-plant-breaks-ground/article_38377862-07fb-11ed-a8f9-dbf5f8ca966e.html |archive-date=2022-08-26}}</ref><ref name="autoref_1" /><ref name="autoref_4">{{cite web |url=https://www.mbjguam.com/ukudu-power-plant-nears-finish-line-promising-lower-power-bills-ratepayers%C2%A0}}</ref><ref name="autoref_5">{{cite web |url=https://www.guampdn.com/news/gpa-wants-to-pay-5m-to-speed-up-ukudu-power-plant-completion/article_f31ef236-e751-11ee-985b-479300087767.html |title=GPA wants to pay $5M to speed up Ukudu power plant completion |date=2024-03-21 |website=guampdn.com |access-date=2024-06-12 |archive-url=https://web.archive.org/web/20240619221716/https://www.guampdn.com/news/gpa-wants-to-pay-5m-to-speed-up-ukudu-power-plant-completion/article_f31ef236-e751-11ee-985b-479300087767.html |archive-date=2024-06-19}}</ref>
+| fossil gas: LNG, fossil liquids: diesel<ref name="autoref_6">{{cite web |url=https://epa.guam.gov/wp-content/uploads/2022/06/1.-Ukudu-Power-Plant-Minor-Air-Permit-App-FINAL.pdf}}</ref><ref name="autoref_7">{{cite web |url=https://www.eia.gov/state/print.php?sid=GQ |title=Guam Profile |website=www.eia.gov |access-date=2024-06-12 |archive-url=https://web.archive.org/web/20240614162528/https://www.eia.gov/state/print.php?sid=GQ |archive-date=2024-06-14}}</ref><ref name="autoref_8">{{cite web |url=https://guampowerauthority.com/gpa_authority/about/gpa_gpa_180_power_plant.php |archive-url=https://web.archive.org/web/20220927110637/https://guampowerauthority.com/gpa_authority/about/gpa_gpa_180_power_plant.php |archive-date=2022-09-27}}</ref><ref name="autoref_9">{{cite web |url=https://www.postguam.com/business/local/skoreas-doosan-signs-deal-to-build-560m-guam-power-plant/article_a3dba042-48e0-11eb-97cc-8f6e31bf561f.html |archive-url=https://web.archive.org/web/20210917171720/https://www.postguam.com/business/local/skoreas-doosan-signs-deal-to-build-560m-guam-power-plant/article_a3dba042-48e0-11eb-97cc-8f6e31bf561f.html |archive-date=2021-09-17}}</ref>
+| 198<ref name="autoref_6" /><ref name="autoref_2" /><ref name="autoref_8" />
+| combined cycle<ref name="autoref_6" /><ref name="autoref_10">{{cite web |url=http://www.businesskorea.co.kr/news/articleView.html?idxno=33058 |archive-url=https://web.archive.org/web/20220712125422/http://www.businesskorea.co.kr/news/articleView.html?idxno=33058 |archive-date=2022-07-12}}</ref>
+| not found
+| 2025<ref name="autoref_11">{{cite web |url=https://energycentral.com/news/ccu-approves-5m-plan-accelerate-ukudu-power-plant-completion}}</ref><ref name="autoref_2" /><ref name="autoref_12">{{cite web |url=https://www.postguam.com/news/local/delay-on-ukudu-plant-could-cost-gpa-14m/article_9181ecb4-5c84-11eb-9962-abe975ed91e1.html |archive-url=https://web.archive.org/web/20210917200732/https://www.postguam.com/news/local/delay-on-ukudu-plant-could-cost-gpa-14m/article_9181ecb4-5c84-11eb-9962-abe975ed91e1.html |archive-date=2021-09-17}}</ref><ref name="autoref_13">{{cite web |url=https://www.postguam.com/news/local/ukudu-plant-commissioning-looking-more-like-december/article_cfdab4a1-2f37-4b9d-a19c-10f81c23edd8.html}}</ref><ref name="autoref_5" />
+| Siemens Energy: SGT-800<ref name="autoref_14">{{cite web |url=https://guamccu.org/wp-content/uploads/2022/10/GPA-WS-10.20.22.pdf |archive-url=https://web.archive.org/web/20240622215305/https://guamccu.org/wp-content/uploads/2022/10/GPA-WS-10.20.22.pdf |archive-date=2024-06-22}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Guam Ukudu Power LLC [100%]<ref name="autoref_12" /><ref name="autoref_10" /><ref name="autoref_15">{{cite web |url=https://www.txfnews.com/news/47480/guam-ukudu-power-project-financing-closed}}</ref>
+| Korea Electric Power Corp [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tNjAuMCUtLT4gMTAwMDAwMDAzMTIwCiAgICAxMDAwMDAwMDA5NDdbIktvcmVhIEVsZWN0cmljIFBvd2VyPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDA5NDYKICAgIDEwMDAwMDAwMDk0NlsiS29yZWEgRWFzdC1XZXN0PGJyPlBvd2VyIENvIEx0ZCJdIC0tNDAuMCUtLT4gMTAwMDAwMDAzMTIwCiAgICAxMDAwMDAwMDMxMjBbIkd1YW0gVWt1ZHUgUG93ZXIgTExDIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDQwNjkzNQogICAgUDEwMDAwMDQwNjkzNVsiVWt1ZHUgcG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Background==
+
+Guam has no natural gas reserves and does not produce or use natural gas. The Guam Power Authority plans to have a new 198-MW power plant in service that is capable of burning either imported ultra-low sulfur diesel fuel or liquefied natural gas (LNG) that is regasifed to generate electricity. The new plant will enable the utility to comply with U.S. federal environmental requirements to release fewer greenhouse emissions while using either fuel.<ref>{{Cite web|url=https://www.eia.gov/state/print.php?sid=GQ|title=Guam Territory Energy Profile|date=March 21, 2024|website=EIA|url-status=live|access-date=June 12, 2024}}</ref>
+
+In March 2024, the Guam Power Authority proposed paying an additional USD 5 million to the contractor for the Ukudu power plant to expedite the completion of the new plant. According to the schedule, the contractor, Guam Ukudu Power, was expected to have the plant operational by January 2026 at the earliest. However, the increased payment will accelerate the completion date to September 2025. The original completion date was set for the end of 2024, but the project was delayed due to damage caused by Typhoon Mawar.<ref>{{Cite web|url=https://www.guampdn.com/news/gpa-wants-to-pay-5m-to-speed-up-ukudu-power-plant-completion/article_f31ef236-e751-11ee-985b-479300087767.html|title=GPA wants to pay $5M to speed up Ukudu power plant completion|date=March 21, 2024|website=www.guampdn.com|url-status=live|access-date=June 12, 2024}}</ref> The same month, the Guam's Consolidated Commission on Utilities approved the deal.<ref>{{Cite web|url=https://energycentral.com/news/ccu-approves-5m-plan-accelerate-ukudu-power-plant-completion|title=CCU approves $5M plan to accelerate Ukudu power plant completion|date=March 27, 2024|website=energycentral.com|url-status=live|access-date=June 12, 2024}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Guam]]

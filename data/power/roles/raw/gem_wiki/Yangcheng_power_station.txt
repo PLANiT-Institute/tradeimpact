@@ -1,0 +1,225 @@
+# GEM wiki page: Yangcheng power station
+# URL: https://www.gem.wiki/Yangcheng_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Yangcheng power station''' (山西阳城发电厂) is an operating power station of at least 3300-megawatts (MW) in Beiliu, Yangcheng, Jincheng, Shanxi, China with multiple units, some of which are not currently operating.
+It is also known as 大唐阳城电厂.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Yangcheng power station
+| Beiliu, Yangcheng, Jincheng, Shanxi, China
+| 35.466123, 112.5742039 (exact)<ref name="autoref_0">{{cite web |url=https://mp.weixin.qq.com/s/qX6PKnFwHESydG68Mk8mlg |title=大唐阳城电厂三期2×1000MW煤电项目调度会顺利召开 |date=2023-11-23 |website=Weixin Official Accounts Platform |access-date=2023-12-04 |archive-url=https://web.archive.org/web/20240125143414/https://mp.weixin.qq.com/s/qX6PKnFwHESydG68Mk8mlg |archive-date=2024-01-25}}</ref>
+|}
+{{
+#display_map:
+35.466123, 112.5742039
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Phase I Unit 1, Phase I Unit 2, Phase I Unit 3, Phase I Unit 4, Phase I Unit 5, Phase I Unit 6, Phase II Unit 7, Phase II Unit 8, Phase III Unit 10, Phase III Unit 9''': 35.466123, 112.5742039
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| Phase I Unit 1
+| Operating
+| coal: anthracite<ref name="autoref_1">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 350
+| subcritical
+| yes
+| 2001
+| False
+|-
+| Phase I Unit 2
+| Operating
+| coal: anthracite<ref name="autoref_1" />
+| 350
+| subcritical
+| yes
+| 2001
+| False
+|-
+| Phase I Unit 3
+| Operating
+| coal: anthracite<ref name="autoref_1" />
+| 350
+| subcritical
+| yes
+| 2001
+| False
+|-
+| Phase I Unit 4
+| Operating
+| coal: anthracite<ref name="autoref_1" />
+| 350
+| subcritical
+| yes
+| 2002
+| False
+|-
+| Phase I Unit 5
+| Operating
+| coal: anthracite<ref name="autoref_1" />
+| 350
+| subcritical
+| yes
+| 2002
+| False
+|-
+| Phase I Unit 6
+| Operating
+| coal: anthracite<ref name="autoref_1" />
+| 350
+| subcritical
+| yes
+| 2002
+| False
+|-
+| Phase II Unit 7
+| Operating
+| coal: anthracite<ref name="autoref_1" />
+| 600
+| subcritical
+| yes
+| 2007
+| False
+|-
+| Phase II Unit 8
+| Operating
+| coal: anthracite<ref name="autoref_1" />
+| 600
+| subcritical
+| yes
+| 2007
+| False
+|-
+| Phase III Unit 10
+| Pre-permit<ref name="autoref_2">{{cite web |url=http://www.yczf.gov.cn/zwgk/gsgg/202311/t20231119_1888550.shtml |title=公示公告-阳城县人民政府 |date=2023-11-19 |website=www.yczf.gov.cn |access-date=2023-12-04 |archive-url=https://web.archive.org/web/20240125143426/http://www.yczf.gov.cn/zwgk/gsgg/202311/t20231119_1888550.shtml |archive-date=2024-01-25}}</ref>
+| coal: anthracite<ref name="autoref_1" />
+| 1000<ref name="autoref_0" />
+| ultra-supercritical<ref name="autoref_3">{{cite web |url=https://news.bjx.com.cn/html/20231120/1344429.shtml |title=大唐阳城2×1000MW煤电项目社会稳定风险评估公示-北极星火力发电网 |date=2023-11-20 |website=news.bjx.com.cn |access-date=2023-12-04 |archive-url=https://web.archive.org/web/20240125143424/https://news.bjx.com.cn/html/20231120/1344429.shtml |archive-date=2024-01-25}}</ref>
+| –
+| –
+| False
+|-
+| Phase III Unit 9
+| Pre-permit<ref name="autoref_0" />
+| coal: anthracite<ref name="autoref_1" />
+| 1000<ref name="autoref_0" />
+| ultra-supercritical<ref name="autoref_2" />
+| –
+| –
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Phase I Unit 1
+| Yangcheng International Power Generating Co Ltd [100%]
+| China Datang Corp Ltd [38.7%]; Jiangsu Guoxin Investment Group Ltd [26.7%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [9.0%]; KEPCO Shanxi International [7.3%]; China Energy Construction Group Co Ltd [6.7%]; Power Construction Corporation of China Ltd [6.7%]; Electric Power Development Co Ltd [1.5%]; Shanxi Gemeng International Energy Group Co Ltd [1.0%]; KEPCO Woori Sprott Global Private Equity Fund [0.9%]; Korea Electric Power Corp [0.9%]; unknown [0.9%]
+|-
+| Phase I Unit 2
+| Yangcheng International Power Generating Co Ltd [100%]
+| China Datang Corp Ltd [38.7%]; Jiangsu Guoxin Investment Group Ltd [26.7%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [9.0%]; KEPCO Shanxi International [7.3%]; China Energy Construction Group Co Ltd [6.7%]; Power Construction Corporation of China Ltd [6.7%]; Electric Power Development Co Ltd [1.5%]; Shanxi Gemeng International Energy Group Co Ltd [1.0%]; KEPCO Woori Sprott Global Private Equity Fund [0.9%]; Korea Electric Power Corp [0.9%]; unknown [0.9%]
+|-
+| Phase I Unit 3
+| Yangcheng International Power Generating Co Ltd [100%]
+| China Datang Corp Ltd [38.7%]; Jiangsu Guoxin Investment Group Ltd [26.7%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [9.0%]; KEPCO Shanxi International [7.3%]; China Energy Construction Group Co Ltd [6.7%]; Power Construction Corporation of China Ltd [6.7%]; Electric Power Development Co Ltd [1.5%]; Shanxi Gemeng International Energy Group Co Ltd [1.0%]; KEPCO Woori Sprott Global Private Equity Fund [0.9%]; Korea Electric Power Corp [0.9%]; unknown [0.9%]
+|-
+| Phase I Unit 4
+| Yangcheng International Power Generating Co Ltd [100%]
+| China Datang Corp Ltd [38.7%]; Jiangsu Guoxin Investment Group Ltd [26.7%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [9.0%]; KEPCO Shanxi International [7.3%]; China Energy Construction Group Co Ltd [6.7%]; Power Construction Corporation of China Ltd [6.7%]; Electric Power Development Co Ltd [1.5%]; Shanxi Gemeng International Energy Group Co Ltd [1.0%]; KEPCO Woori Sprott Global Private Equity Fund [0.9%]; Korea Electric Power Corp [0.9%]; unknown [0.9%]
+|-
+| Phase I Unit 5
+| Yangcheng International Power Generating Co Ltd [100%]
+| China Datang Corp Ltd [38.7%]; Jiangsu Guoxin Investment Group Ltd [26.7%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [9.0%]; KEPCO Shanxi International [7.3%]; China Energy Construction Group Co Ltd [6.7%]; Power Construction Corporation of China Ltd [6.7%]; Electric Power Development Co Ltd [1.5%]; Shanxi Gemeng International Energy Group Co Ltd [1.0%]; KEPCO Woori Sprott Global Private Equity Fund [0.9%]; Korea Electric Power Corp [0.9%]; unknown [0.9%]
+|-
+| Phase I Unit 6
+| Yangcheng International Power Generating Co Ltd [100%]
+| China Datang Corp Ltd [38.7%]; Jiangsu Guoxin Investment Group Ltd [26.7%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [9.0%]; KEPCO Shanxi International [7.3%]; China Energy Construction Group Co Ltd [6.7%]; Power Construction Corporation of China Ltd [6.7%]; Electric Power Development Co Ltd [1.5%]; Shanxi Gemeng International Energy Group Co Ltd [1.0%]; KEPCO Woori Sprott Global Private Equity Fund [0.9%]; Korea Electric Power Corp [0.9%]; unknown [0.9%]
+|-
+| Phase II Unit 7
+| Datang Yangcheng Power Generation Co Ltd [100%]
+| China Datang Corp Ltd [41.0%]; Jiangsu Guoxin Investment Group Ltd [30.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [12.3%]; KEPCO Shanxi International [9.9%]; Electric Power Development Co Ltd [2.0%]; Shanxi Gemeng International Energy Group Co Ltd [1.4%]; KEPCO Woori Sprott Global Private Equity Fund [1.2%]; Korea Electric Power Corp [1.2%]; unknown [1.2%]
+|-
+| Phase II Unit 8
+| Datang Yangcheng Power Generation Co Ltd [100%]
+| China Datang Corp Ltd [41.0%]; Jiangsu Guoxin Investment Group Ltd [30.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [12.3%]; KEPCO Shanxi International [9.9%]; Electric Power Development Co Ltd [2.0%]; Shanxi Gemeng International Energy Group Co Ltd [1.4%]; KEPCO Woori Sprott Global Private Equity Fund [1.2%]; Korea Electric Power Corp [1.2%]; unknown [1.2%]
+|-
+| Phase III Unit 10
+| Yangcheng International Power Generating Co Ltd [100%]
+| China Datang Corp Ltd [38.7%]; Jiangsu Guoxin Investment Group Ltd [26.7%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [9.0%]; KEPCO Shanxi International [7.3%]; China Energy Construction Group Co Ltd [6.7%]; Power Construction Corporation of China Ltd [6.7%]; Electric Power Development Co Ltd [1.5%]; Shanxi Gemeng International Energy Group Co Ltd [1.0%]; KEPCO Woori Sprott Global Private Equity Fund [0.9%]; Korea Electric Power Corp [0.9%]; unknown [0.9%]
+|-
+| Phase III Unit 9
+| Yangcheng International Power Generating Co Ltd [100%]
+| China Datang Corp Ltd [38.7%]; Jiangsu Guoxin Investment Group Ltd [26.7%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [9.0%]; KEPCO Shanxi International [7.3%]; China Energy Construction Group Co Ltd [6.7%]; Power Construction Corporation of China Ltd [6.7%]; Electric Power Development Co Ltd [1.5%]; Shanxi Gemeng International Energy Group Co Ltd [1.0%]; KEPCO Woori Sprott Global Private Equity Fund [0.9%]; Korea Electric Power Corp [0.9%]; unknown [0.9%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+Yangcheng power station is an eight-unit coal-fired power station totaling 3,300 MW. It was built in 2001 to 2007, and is majority-owned by [[China Datang]].<ref>[http://baike.baidu.com/view/3291737.htm "阳城电厂,"] Baidu, accessed Nov 2016</ref>
+
+The plant is the site of the world's two largest dry [[cooling tower]]s for its 2×600MW phase 2 units.<ref>{{cite web|url=https://www.vag-group.com/Resources/Common/References/Ref-Pro_Yangcheng_edition02-29-08-2013_EN_web.pdf|title=Yangcheng Coal-Fired Power Plant|date=2018-06-11|access-date=2021-01-02}}</ref>
+
+In November 2023, a 2 x 1,000 MW Phase III was announced at Yangcheng power station.<ref>[https://mp.weixin.qq.com/s/qX6PKnFwHESydG68Mk8mlg 大唐阳城电厂三期2×1000MW煤电项目调度会顺利召开,] mp.weixin.qq.com, November 22, 2023</ref>
+
+Phase III Unit 9 had project coordination meetings held in November 2023<ref>{{Cite web|url=https://mp.weixin.qq.com/s/qX6PKnFwHESydG68Mk8mlg|title=大唐阳城电厂三期2×1000MW煤电项目调度会|date=2023-11-20|website=微信公众平台|url-status=live|access-date=2026-07-29}}</ref> and the social stability risk assessment was publicized<ref>{{Cite web|url=http://www.yczf.gov.cn/zwgk/gsgg/202311/t20231119_1888550.shtml|title=大唐阳城2×1000MW煤电项目社会稳定风险评估公示|date=2023-11-19|website=阳城县人民政府|url-status=live|access-date=2026-07-29}}</ref>. In December 2023, a project promotion meeting was held<ref>{{Cite web|url=https://news.bjx.com.cn/html/20231221/1351438.shtml|title=大唐阳城2×1000MW煤电项目工作推进会议|date=2023-12-21|website=北极星电力网|url-status=live|access-date=2026-07-29}}</ref>. In February 2024, another project promotion meeting was held<ref>{{Cite web|url=https://news.bjx.com.cn/html/20240304/1363927.shtml|title=阳泉县召开大唐阳城2×1000MW煤电项目推进会|date=2024-03-04|website=北极星电力网|url-status=live|access-date=2026-07-29}}</ref>. No news emerged for several months. A further meeting was held in November 2024 to push for project approval<ref>{{Cite web|url=http://www.yczf.gov.cn/xwdt/ycxw/202411/t20241126_2066943.shtml|title=大唐阳城2×1000MW煤电项目推进会|date=2024-11-26|website=阳城县人民政府|url-status=live|access-date=2026-07-29}}</ref>. In 2025, a transmission planning study was tendered in March<ref>{{Cite web|url=https://news.bjx.com.cn/html/20250303/1429808.shtml|title=大唐阳城2×1000MW煤电项目输电规划研究招标|date=2025-03-03|website=北极星电力网|url-status=live|access-date=2026-07-29}}</ref> and a project promotion meeting was held in July<ref>{{Cite web|url=https://news.bjx.com.cn/html/20250714/1451001.shtml|title=大唐阳城2×1000MW煤电项目推进会召开|date=2025-07-14|website=北极星电力网|url-status=live|access-date=2026-07-29}}</ref>. The EIA was publicly notified in October<ref>{{Cite web|url=https://mp.weixin.qq.com/s/VQ8bTgpv0w3I8sBdrBCsRw|title=大唐阳城2×1000MW煤电项目EIA受理公示|date=2025-12-08|website=微信公众平台|url-status=live|access-date=2026-07-29}}</ref>. In February 2026, the EIA was approved by the provincial authorities<ref>{{Cite web|url=https://mp.weixin.qq.com/s/diWFEa4PhchYtApjjzw5Ag|title=大唐阳城2×1000MW煤电项目EIA审批决定公告|date=2026-04-10|website=微信公众平台|url-status=live|access-date=2026-07-29}}</ref>.
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

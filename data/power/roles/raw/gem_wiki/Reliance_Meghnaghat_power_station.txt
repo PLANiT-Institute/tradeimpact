@@ -1,0 +1,121 @@
+# GEM wiki page: Reliance Meghnaghat power station
+# URL: https://www.gem.wiki/Reliance_Meghnaghat_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Reliance Meghnaghat power station''' is a mothballed power station in Meghnaghat, Narayanganj, Dhaka, Bangladesh.
+It is also known as JERA Meghnaghat power station.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Reliance Meghnaghat power station
+| Meghnaghat, Narayanganj, Dhaka, Bangladesh
+| 23.607983, 90.596336 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/Meghnaghat+Power+Limited/@23.6090618,90.599703,17z/data=!4m12!1m6!3m5!1s0x3755b2d236d5213f:0x7fa2c00b9098f6e9!2sMeghnaghat+Power+Limited!8m2!3d23.6090569!4d90.6018917!3m4!1s0x3755b2d236d5213f:0x7fa2c00b9098f6e9!8m2!3d23.6090569!4d90.6018917}}</ref>
+|}
+{{
+#display_map:
+23.607983, 90.596336
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 23.607983, 90.596336
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Mothballed<ref name="autoref_1">{{cite web |url=https://thefinancialexpress.com.bd/trade/meghnaghat-plant-may-miss-deadline-1654396676 |archive-url=https://web.archive.org/web/20220605041732/https://thefinancialexpress.com.bd/trade/meghnaghat-plant-may-miss-deadline-1654396676 |archive-date=2022-06-05}}</ref><ref name="autoref_2">{{cite web |url=https://bpdb.portal.gov.bd/sites/default/files/files/bpdb.portal.gov.bd/page/771c9a89_a06c_4c2f_9b8c_699d17ed769a/2024-01-09-11-54-9f8a57197b00016ccc7cbf5301b83957.pdf |title=Annual report 2022-23 |archive-url=https://web.archive.org/web/20250310235806/https://bpdb.portal.gov.bd/sites/default/files/files/bpdb.portal.gov.bd/page/771c9a89_a06c_4c2f_9b8c_699d17ed769a/2024-01-09-11-54-9f8a57197b00016ccc7cbf5301b83957.pdf |archive-date=2025-03-10}}</ref><ref name="autoref_3">{{cite web |url=https://www.reuters.com/business/energy/appec-japans-jera-considering-vietnam-gas-fired-power-plant-investment-2024-09-11/}}</ref><ref name="autoref_4">{{cite web |url=https://www.tbsnews.net/bangladesh/energy/how-flawed-policy-keeps-shutting-gas-fired-power-plants-amid-fuel-shortage-1218236}}</ref><ref name="autoref_5">{{cite web |url=https://www.adb.org/projects/50253-001/main |archive-url=https://web.archive.org/web/20250707225124/https://www.adb.org/projects/50253-001/main |archive-date=2025-07-07}}</ref><ref name="autoref_6">{{cite web |url=https://misc.bpdb.gov.bd/storage/daily_archive/summary_20260611_20260611130251.pdf}}</ref><ref name="autoref_7">{{cite web |url=https://thefinancialexpress.com.bd/trade/japanese-jera-takes-over-from-indian-reliance |archive-url=https://web.archive.org/web/20250707222526/https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&client=ca-pub-3438694616169600&output=html&h=280&slotname=2838794797&adk=301351041&adf=3620146822&pi=t.ma~as.2838794797&w=686&abgtt=6&fwrn=4&fwrnh=100&lmt=1751927126&rafmt=1&format=686x280&url=https%3A%2F%2Fthefinancialexpress.com.bd%2Ftrade%2Fjapanese-jera-takes-over-from-indian-reliance&fwr=0&fwrattr=true&rpe=1&resp_fmts=3&wgl=1&uach=WyJMaW51eCIsIjUuMTUuMCIsIng4NiIsIiIsIjEzMC4wLjY3MjMuNTgiLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMzAuMC42NzIzLjU4Il0sWyJHb29nbGUgQ2hyb21lIiwiMTMwLjAuNjcyMy41OCJdLFsiTm90P0FfQnJhbmQiLCI5OS4wLjAuMCJdXSwwXQ..&dt=1751927126033&bpp=2&bdt=2807&idt=219&shv=r20250630&mjsv=m202507020101&ptt=9&saldr=aa&abxe=1&cookie=ID%3D5cb1480865704471%3AT%3D1751927126%3ART%3D1751927126%3AS%3DALNI_MZjzQcz3f0NtoAEIwiSXkYSFp71Yw&gpic=UID%3D000011347b1bfdb0%3AT%3D1751927126%3ART%3D1751927126%3AS%3DALNI_MaEEZu2Vc_kolwD2M0Dd8jKcQsONA&eo_id_str=ID%3D1f9862c087381d17%3AT%3D1751927126%3ART%3D1751927126%3AS%3DAA-AfjZ8zBTYmv68JvM3VIrYlrOP&prev_fmts=0x0%2C720x90%2C124x600%2C686x280%2C405x280%2C405x280%2C405x280%2C686x280&nras=1&correlator=126386613756&frm=20&pv=1&u_tz=0&u_his=2&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_sd=1&dmc=29&adx=209&ady=2988&biw=1385&bih=761&scr_x=0&scr_y=0&eid=95360548%2C31093233%2C95353387%2C95362655%2C95365226%2C95365234%2C95359265%2C95365108%2C95365122%2C95365797&oid=2&pvsid=1831948192283179&tmod=1622804245&uas=0&nvt=1&fc=1920&brdim=10%2C10%2C10%2C10%2C800%2C0%2C1400%2C900%2C1400%2C761&vis=1&rsz=%7C%7CEebr%7C&abl=CS&pfx=0&fu=128&bc=31&bz=1&td=1&tdf=2&psd=W251bGwsbnVsbCxudWxsLDNd&nt=1&ifi=6&uci=a!6&btvi=4&fsb=1&dtd=822 |archive-date=2025-07-07}}</ref><ref name="autoref_8">{{cite web |url=https://www.reliancepower.co.in/gas-based-projects |archive-url=https://web.archive.org/web/20221020111918/https://www.reliancepower.co.in/gas-based-projects |archive-date=2022-10-20}}</ref><ref name="autoref_9">{{cite web |url=https://today.thefinancialexpress.com.bd/last-page/new-gas-fired-power-plants-add-to-electricity-burden-1715794816 |title=New gas-fired power plants add to electricity burden |website=The Financial Express |access-date=2024-05-28 |archive-url=https://web.archive.org/web/20240528182156/https://today.thefinancialexpress.com.bd/last-page/new-gas-fired-power-plants-add-to-electricity-burden-1715794816 |archive-date=2024-05-28}}</ref>
+| fossil gas: natural gas<ref name="autoref_8" />
+| 750<ref name="autoref_8" />
+| combined cycle<ref name="autoref_10">{{cite web |url=https://www.power-technology.com/projects/reliance-gas-power-plant-meghnaghat/ |archive-url=https://web.archive.org/web/20221006210352/https://www.power-technology.com/projects/reliance-gas-power-plant-meghnaghat/ |archive-date=2022-10-06}}</ref>
+| not found
+| 2025<ref name="autoref_4" />
+| GE Power: 9F.04 AGP<ref name="autoref_11">{{cite web |url=https://jmpl-bd.com/project-information/ |title=Project Information – Reliance Bangladesh LNG & Power Limited |access-date=2024-05-28 |archive-url=https://web.archive.org/web/20240528182252/https://jmpl-bd.com/project-information/ |archive-date=2024-05-28}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| JERA Co Inc [100%]<ref name="autoref_7" />
+| Chubu Electric Power Co Inc [50.0%]; Tokyo Electric Power Co [50.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjA1JS0tPiAxMDAwMDAwMDA2MzAKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43NSUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjIlLS0+IDEwMDAwMDAwMDYzMAogICAgMTAwMDAwMDAwNjMwWyJDaHVidSBFbGVjdHJpYyBQb3dlcjxicj5DbyBJbmMiXSAtLTUwLjAlLS0+IDEwMDAwMDAwMTUzMwogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS01LjUzJS0tPiAxMDAwMDAwMDA2NTkKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTM5LjcyJS0tPiAxMDAwMDAwMDA2NTkKICAgIDEwMDAwMTAxMTEzNlsiR292ZXJubWVudCBvZiBKYXBhbiJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDg5NAogICAgMTAwMDAxMDAwODk0WyJOdWNsZWFyIERhbWFnZTxicj5Db21wZW5zYXRpb24gYW5kPGJyPkRlY29tbWlzc2lvbmluZzxicj5GYWNpbGl0YXRpb24gQ29ycCJdIC0tNTQuNzUlLS0+IDEwMDAwMDAwMDY1OQogICAgMTAwMDAwMDAwNjU5WyJUb2t5byBFbGVjdHJpYyBQb3dlcjxicj5DbyJdIC0tMTAwLjAlLS0+IDEwMDAwMDE5MjUyOQogICAgMTAwMDAwMTkyNTI5WyJURVBDTyBGdWVsICYgUG93ZXI8YnI+SW5jIl0gLS01MC4wJS0tPiAxMDAwMDAwMDE1MzMKICAgIDEwMDAwMDAwMTUzM1siSkVSQSBDbyBJbmMiXSAtLTEwMC4wJS0tPiBQMTAwMDAwNDA2MzU3CiAgICBQMTAwMDAwNDA2MzU3WyJSZWxpYW5jZSBNZWdobmFnaGF0PGJyPnBvd2VyIHN0YXRpb24iXQo=}}
+
+==Background==
+
+This project came out of a memorandum of understanding signed in 2015 between India and Bangladesh Sheikh Hasina to set up 3,000 MW gas-based combined cycle power project in phases in Bangladesh. In this first phase, Reliance Power will relocate one module of equipment from its combined cycle power project at Samalkot in Andhra Pradesh for the project in Bangladesh.<ref name=IT>[https://economictimes.indiatimes.com/industry/energy/power/reliance-power-inks-pact-with-japans-jera-to-set-up-750-mw-power-project-in-bangladesh/articleshow/70956086.cms?from=mdr Reliance Power inks pact with Japan's JERA to set up 750 MW power project in Bangladesh], ''Economic Times'', Sep 3, 2019</ref> The Samalkot unit had been "rendered defunct due to lack of gas."<ref>[https://economictimes.indiatimes.com/industry/energy/power/reliance-power-partners-with-jera-for-project-in-bangladesh/articleshow/70969106.cms?from=mdr Reliance Power partners with JERA for project in Bangladesh], ''Economic Times'', Sep 4, 2019</ref>
+
+The plant will be situated on a 100-acre parcel of land that also hosts three more power plants -- Meghnaghat combined-cycle power plant (450 MW), Summit Meghnaghat Power Company (335 MW) and Orion Power Meghnaghat Power Plant (100MW). NS Energy reports:
+:"It will feature two 242MW GE 9FA gas turbines, electrical generators, two horizontal-type heat recovery steam generators (HRSG), and a 269MW steam turbine generator. It is expected to be operated at an efficiency of more than 60%."<ref name=NSM>[https://www.nsenergybusiness.com/projects/reliance-meghnaghat/ Reliance Meghnaghat Combined-Cycle Power Project], NS Energy website, accessed Dec 23, 2019</ref>
+The plant was expected to come online in August 2022,<ref name=IT>[https://economictimes.indiatimes.com/industry/energy/power/reliance-power-inks-pact-with-japans-jera-to-set-up-750-mw-power-project-in-bangladesh/articleshow/70956086.cms?from=mdr Reliance Power inks pact with Japan's JERA to set up 750 MW power project in Bangladesh], ''Economic Times'', Sep 3, 2019</ref><ref name=":0">Serajul Quadir, [https://www.reuters.com/article/bangladesh-power-india/bangladesh-signs-deal-with-indias-reliance-power-to-buy-electricity-idUSL3N25S074 Bangladesh signs deal with India's Reliance Power to buy electricity], ''Reuters'', Sep 1, 2019</ref>however, the progress in construction stood at 69 per cent as against the targeted 77.3 per cent until March 2022.<ref>{{Cite news|url=https://thefinancialexpress.com.bd/trade/meghnaghat-plant-may-miss-deadline-1654396676|title=Meghnaghat plant may miss deadline|last=The Financial Express|work=The Financial Express|access-date=2022-12-06|language=en}}</ref>
+
+==Financing==
+
+The US$1 billion plant is being financed by loans chiefly from Japanese public and private institutions. In July 2020, ''Nikkei Asian Review'' reported that US$644 million in loans was being provided to the project by the Japan Bank for International Cooperation (JBIC), the Japan-led Asian Development Bank (ADB) and the three Japanese commercial megabanks Mizuho, Sumitomo Mitsui Banking Corporation and MUFG. The state-owned Nippon Export and Investment Insurance is guaranteeing the private sector loans along with JERA's stake in the power plant. The ''Nikkei'' specified only JBIC's US$266 million contribution to the lending package.<ref name=Nikkei> Shiori Goso, [https://asia.nikkei.com/Business/Energy/Bangladesh-LNG-power-plant-backed-by-645m-in-Japanese-lending "Bangladesh LNG power plant backed by $645m in Japanese lending"], ''Nikkei Asian Review'', Jul. 15, 2020</ref>
+
+Additional finance information shows the plant's construction cost totalling US$1.83 billion. JBIC announced on July 31, 2020 that it had signed a loan agreement with Reliance Bangladesh LNG & Power Limited involving the provision of project financing up to US$265 million.<ref name=JBIC>[https://www.jbic.go.jp/en/information/press/press-2020/0731-013532.html "Project Financing for Meghnaghat Natural Gas-Fired Combined Cycle Power Plant Project in Bangladesh"], JBIC press release, Jul. 31, 2020</ref> The ADB awarded US$200 million in financing for the project. The lending package comprises a US$100 millon loan from the ADB and a further US$100 million loan from the Leading Asia’s Private Infrastructure Fund, which is administered by the ADB.<ref name=ADB>[https://www.adb.org/projects/50253-001/main#project-pds "Bangladesh : Reliance Bangladesh Liquefied Natural Gas and Power Project"], ADB Project Data Sheet, last updated Apr. 11, 2025</ref> Nippon Export and Investment Insurance (NEXI), like JBIC a Japanese government entity, will guarantee private-sector loans along with JERA's stake in the power plant. The arrangement will cover losses in the event of conflict or nonpayment of power fees. NEXI noted that it was covering US$177 million in loans provided collectively by the following commercial banks: Mizuho, Sumitomo Mitsui Banking Corporation, MUFG, and Societe Generale.<ref name=NEXI>[https://www.nexi.go.jp/en/topics/newsrelease/2020072102.html "People’s Republic of Bangladesh/NEXI to Provide Investment and Loan Insurance to Support Meghnaghat 718MW Natural Gas Combined Cycle Power Plant Project"], NEXI press release, Jul. 31, 2025</ref> Reliance Power, Chubu Electric Power, and Tokyo Electric Power have together made an equity investment of US$541 million.<ref name=IJG>[https://www.ijglobal.com/data/transaction/36019?name=Meghnaghat%20Gas-Fired%20Power%20Plant%20Phase%20I%20(745MW)%20IPP&link=%2Farticles%2F143110%2Fsponsors-seek-debt-on-bangladesh-rlng-ccgt "Meghnaghat Gas-Fired Power Plant Phase I (745MW) IPP"], IJGlobal, last updated Sep. 3, 2024</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Bangladesh]]

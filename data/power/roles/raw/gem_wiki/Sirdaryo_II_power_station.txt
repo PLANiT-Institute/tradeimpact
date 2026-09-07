@@ -1,0 +1,124 @@
+# GEM wiki page: Sirdaryo II power station
+# URL: https://www.gem.wiki/Sirdaryo_II_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Sirdaryo II power station''' (ТЭС «Сырдарья-2») is a power station under construction in Shirin, Bayaut, Sirdaryo, Uzbekistan.
+It is also known as Syrdarya CCGT 2.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Sirdaryo II power station
+| Shirin, Bayaut, Sirdaryo, Uzbekistan
+| 40.242115, 69.10543 (exact)<ref name="autoref_0">{{cite web |url=https://uz.sputniknews.ru/20211122/obyavlen-pobeditel-tendera-na-stroitelstvo-tes-v-syrdare-21458685.html |archive-url=https://web.archive.org/web/20220915022222/https://uz.sputniknews.ru/20211122/obyavlen-pobeditel-tendera-na-stroitelstvo-tes-v-syrdare-21458685.html |archive-date=2022-09-15}}</ref><ref name="autoref_1">{{cite web |url=https://drive.google.com/file/d/1tAGiNo0K5aiKCQbSemtgrVb1VPhQ9iYN/view?usp=sharing |archive-url=https://web.archive.org/web/20210624191341/https://drive.google.com/file/d/1tAGiNo0K5aiKCQbSemtgrVb1VPhQ9iYN/view?usp=sharing |archive-date=2021-06-24}}</ref>
+|}
+{{
+#display_map:
+40.242115, 69.10543
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 40.242115, 69.10543
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Construction<ref name="autoref_2">{{cite web |url=https://energyforum.uz/ru/novosti/tes-syrdara-2-smozet-obespecit-do-17--potrebnosti-uzbekistana-v-elektroenergii}}</ref><ref name="autoref_3">{{cite web |url=https://www.instagram.com/p/DUmZ3QnDS4P/}}</ref><ref name="autoref_4">{{cite web |url=https://yuz.uz/ru/news/-v-srdare-k-2026-godu-zapustyat-dve-nove-teplove-elektrostantsii}}</ref><ref name="autoref_5">{{cite web |url=https://www.linkedin.com/pulse/syrdarya-ccgt-2-breakthrough-energy-future-enersok-fe-llc-nowic/?trk=organization_guest_main-feed-card_feed-article-content |title=Syrdarya CCGT 2, a Breakthrough into Energy Future |website=www.linkedin.com |access-date=2024-04-01 |archive-url=https://web.archive.org/web/20240409042233/https://www.linkedin.com/pulse/syrdarya-ccgt-2-breakthrough-energy-future-enersok-fe-llc-nowic/?trk=organization_guest_main-feed-card_feed-article-content |archive-date=2024-04-09}}</ref><ref name="autoref_6">{{cite web |url=http://minenergy.uz/en/news/view/474 |archive-url=https://web.archive.org/web/20220517031655/https://minenergy.uz/en/news/view/474 |archive-date=2022-05-17}}</ref><ref name="autoref_7">{{cite web |url=https://fergana.media/news/123914/ |archive-url=https://web.archive.org/web/20220808194335/https://fergana.media/news/123914/ |archive-date=2022-08-08}}</ref><ref name="autoref_8">{{cite web |url=https://pressroom.ifc.org/all/pages/PressDetail.aspx?ID=27469 |archive-url=https://web.archive.org/web/20230325115147/https://pressroom.ifc.org/all/pages/PressDetail.aspx?ID=27469 |archive-date=2023-03-25}}</ref><ref name="autoref_9">{{cite web |url=https://www.jbic.go.jp/en/information/press/press-2022/0324-017573.html |archive-url=https://web.archive.org/web/20230404213839/https://www.jbic.go.jp/en/information/press/press-2022/0324-017573.html |archive-date=2023-04-04}}</ref><ref name="autoref_10">{{cite web |url=https://leg.co.ua/stati/turbiny-mitsubishi-budut-rabotat-na-novoy-gazovoy-elektrostancii-v-uzbekistane.html}}</ref><ref name="autoref_11">{{cite web |url=https://web.archive.org/web/20240726201112/http://minenergy.uz/en/lists/view/22 |archive-url=https://web.archive.org/web/20221211123331/https://minenergy.uz/en/lists/view/22 |archive-date=2022-12-11}}</ref><ref name="autoref_12">{{cite web |url=https://documents1.worldbank.org/curated/en/099021524122523695/pdf/P174323198e6990e21988510d503c071902.pdf |title=Uzbekistan Syrdarya Efficient Power Generation Project (P174323) |date=2024-02-15 |website=The World Bank |access-date=2024-04-01 |archive-url=https://web.archive.org/web/20240409042538/https://documents1.worldbank.org/curated/en/099021524122523695/pdf/P174323198e6990e21988510d503c071902.pdf |archive-date=2024-04-09}}</ref><ref name="autoref_13">{{cite web |url=https://nies.uz/%d1%81%d1%82%d1%80%d0%be%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d1%81%d1%82%d0%b2%d0%be-%d1%82%d1%80%d0%b5%d1%82%d1%8c%d0%b5%d0%b9-%d0%bf%d0%b3%d1%83-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d1%8c/ |archive-url=https://web.archive.org/web/20221021203632/https://nies.uz/%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE-%D1%82%D1%80%D0%B5%D1%82%D1%8C%D0%B5%D0%B9-%D0%BF%D0%B3%D1%83-%D0%BC%D0%BE%D1%89%D0%BD%D0%BE%D1%81%D1%82%D1%8C/ |archive-date=2022-10-21}}</ref><ref name="autoref_14">{{cite web |url=https://www.gazeta.uz/ru/2024/10/22/edf/ |archive-url=https://web.archive.org/web/20250312224409/https://www.gazeta.uz/ru/2024/10/22/edf/ |archive-date=2025-03-12}}</ref><ref name="autoref_15">{{cite web |url=https://kun.uz/ru/news/2024/12/11/v-uzbekistane-budet-vvedeno-v-ekspluatatsiyu-5-novyx-teplovyx-elektrostansiy}}</ref><ref name="autoref_16">{{cite web |url=https://www.txfnews.com/News/Article/7158/Uzbekistan-ups-power-project-pipeline |archive-url=https://web.archive.org/web/20211118110324/https://www.txfnews.com/News/Article/7158/Uzbekistan-ups-power-project-pipeline |archive-date=2021-11-18}}</ref><ref name="autoref_17">{{cite web |url=https://minenergy.uz/ru/news/view/1507 |archive-url=https://web.archive.org/web/20221013163953/https://minenergy.uz/ru/news/view/1507 |archive-date=2022-10-13}}</ref><ref name="autoref_0" /><ref name="autoref_18">{{cite web |url=https://lex.uz/ru/docs/6337006}}</ref>
+| fossil gas: natural gas<ref name="autoref_19">{{cite web |url=https://kun.uz/en/news/2019/06/24/ifc-to-modernize-syrdarya-thermal-power-plant |archive-url=https://web.archive.org/web/20220709223408/https://kun.uz/en/news/2019/06/24/ifc-to-modernize-syrdarya-thermal-power-plant |archive-date=2022-07-09}}</ref><ref name="autoref_20">{{cite web |url=https://disclosures.ifc.org/project-detail/AS/604288/syrdarya-uz-ccgt |archive-url=https://web.archive.org/web/20210629211850/https://disclosures.ifc.org/project-detail/AS/604288/syrdarya-uz-ccgt |archive-date=2021-06-29}}</ref>
+| 1573<ref name="autoref_15" /><ref name="autoref_11" /><ref name="autoref_16" /><ref name="autoref_21">{{cite web |url=https://www.uzbekistonmet.uz/ru/lists/view/1423 |archive-url=https://web.archive.org/web/20220629060216/https://www.uzbekistonmet.uz/ru/lists/view/1423 |archive-date=2022-06-29}}</ref><ref name="autoref_0" /><ref name="autoref_18" /><ref name="autoref_22">{{cite web |url=https://kun.uz/en/news/2023/02/16/uzbekistan-to-put-into-operation-3-tpps-with-a-total-capacity-of-4633-mw-by-2026 |archive-url=https://web.archive.org/web/20230315194207/https://kun.uz/en/news/2023/02/16/uzbekistan-to-put-into-operation-3-tpps-with-a-total-capacity-of-4633-mw-by-2026 |archive-date=2023-03-15}}</ref>
+| combined cycle<ref name="autoref_10" /><ref name="autoref_11" />
+| yes<ref name="autoref_14" />
+| 2026 (planned)<ref name="autoref_2" /><ref name="autoref_23">{{cite web |url=https://minenergy.uz/en/lists/view/77 |archive-url=https://web.archive.org/web/20221003063717/http://minenergy.uz/en/lists/view/77 |archive-date=2022-10-03}}</ref><ref name="autoref_4" /><ref name="autoref_5" /><ref name="autoref_15" /><ref name="autoref_10" /><ref name="autoref_14" /><ref name="autoref_24">{{cite web |url=https://www.gazeta.uz/ru/2022/03/29/power-plant/ |archive-url=https://web.archive.org/web/20221126174745/https://www.gazeta.uz/ru/2022/03/29/power-plant/ |archive-date=2022-11-26}}</ref><ref name="autoref_17" />
+| Mitsubishi Power: M701JAC<ref name="autoref_25">{{cite web |url=https://power.mhi.com/case/uzbekistan |title=Mitsubishi Power | Uzbekistan's Natural Gas Power Generation Reborn with State-of-the-Art Facilities |website=Mitsubishi Power |access-date=2024-04-01 |archive-url=https://web.archive.org/web/20240415215140/https://power.mhi.com/case/uzbekistan |archive-date=2024-04-15}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| 1
+| ENERSOK Fe<ref name="autoref_9" />
+| ENERSOK Fe LLC [100%]<ref name="autoref_9" /><ref name="autoref_26">{{cite web |url=https://disclosures.ifc.org/project-detail/ESRS/45205/syrdarya-ccgt |archive-url=https://web.archive.org/web/20230412003944/https://disclosures.ifc.org/project-detail/ESRS/45205/syrdarya-ccgt |archive-date=2023-04-12}}</ref>
+| Kyushu Electric Power Co Inc [25.0%]; Sojitz Corp [25.0%]; Electricité de France SA [25.0%]; Nebras Energy QPSC [15.0%]; Ras Laffan Operating Company WLL [10.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAwNzlbIkdvdmVybm1lbnQgb2YgRnJhbmNlIl0gLS05OS45OCUtLT4gMTAwMDAwMDAxODcwCiAgICAxMDAwMDAwMDE4NzBbIkVsZWN0cmljaXTDqSBkZTxicj5GcmFuY2UgU0EiXSAtLT4gMTAwMDAwMTMzMDQzCiAgICAxMDAwMDAwMDA4MzlbIkdvdmVybm1lbnQgb2YgUWF0YXIiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDAzMzEKICAgIDEwMDAwMTAwMDMzMVsiR2VuZXJhbCBSZXRpcmVtZW50PGJyPmFuZCBTb2NpYWwgSW5zdXJhbmNlPGJyPkF1dGhvcml0eSAoUWF0YXIpIl0gLS0xNC4zNCUtLT4gMTAwMDAxMDAwMzI5CiAgICAxMDAwMDAwMDA4MzlbIkdvdmVybm1lbnQgb2YgUWF0YXIiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDA4NDYKICAgIDEwMDAwMDAwMDg0NlsiUWF0YXJFbmVyZ3kiXSAtLTEwLjc0JS0tPiAxMDAwMDEwMDAzMjkKICAgIDEwMDAwMDAwMDgzOVsiR292ZXJubWVudCBvZiBRYXRhciJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMDg0NQogICAgMTAwMDAwMDAwODQ1WyJRYXRhciBJbnZlc3RtZW50PGJyPkF1dGhvcml0eSJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDMzMAogICAgMTAwMDAxMDAwMzMwWyJRYXRhciBIb2xkaW5nIExMQyJdIC0tMjguMDklLS0+IDEwMDAwMTAwMDMyOQogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00Ni44MyUtLT4gMTAwMDAxMDAwMzI5CiAgICAxMDAwMDEwMDAzMjlbIk5lYnJhcyBFbmVyZ3kgUVBTQyJdIC0tNjAuMCUtLT4gMTAwMDAwMDAwODQxCiAgICAxMDAwMDEwMDAzNzFbIlJhcyBMYWZmYW4gT3BlcmF0aW5nPGJyPkNvbXBhbnkgV0xMIl0gLS00MC4wJS0tPiAxMDAwMDAwMDA4NDEKICAgIDEwMDAwMDAwMDg0MVsiTmVicmFzIFBvd2VyIFFQU0MiXSAtLT4gMTAwMDAwMTMzMDQzCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N181WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfN1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE3LjY1JS0tPiAxMDAwMDAwMDA2NTYKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQwLjgxJS0tPiAxMDAwMDAwMDA2NTYKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMzQuMjklLS0+IDEwMDAwMDAwMDY1NgogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS03LjI1JS0tPiAxMDAwMDAwMDA2NTYKICAgIDEwMDAwMDAwMDY1NlsiU29qaXR6IENvcnAiXSAtLT4gMTAwMDAwMTMzMDQzCiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4yJS0tPiAxMDAwMDAwMDA2NDgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNSUtLT4gMTAwMDAwMDAwNjQ4CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTYuMyUtLT4gMTAwMDAwMDAwNjQ4CiAgICAxMDAwMDAwMDA2NDhbIkt5dXNodSBFbGVjdHJpYzxicj5Qb3dlciBDbyBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDM0NDkKICAgIDEwMDAwMDAwMzQ0OVsiS3l1ZGVuIEludGVybmF0aW9uYWw8YnI+Q29ycCJdIC0tPiAxMDAwMDAxMzMwNDMKICAgIDEwMDAwMDEzMzA0M1siRU5FUlNPSyBGZSBMTEMiXSAtLTEwMC4wJS0tPiBQMTAwMDAwNDA2ODg0CiAgICBQMTAwMDAwNDA2ODg0WyJTaXJkYXJ5byBJSSBwb3dlcjxicj5zdGF0aW9uIl0K}}
+
+==Background==
+
+In November 2021, the winner of the tender for construction of this new power station was announced: it will be commissioned by a consortium of companies EDF (France), Nebras (Qatar), Sojitz Corporation (Japan) and Kyuden International Corporation (Japan)<ref name="ref_5">{{cite web |url=https://uz.sputniknews.ru/20211122/obyavlen-pobeditel-tendera-na-stroitelstvo-tes-v-syrdare-21458685.html |title=Объявлен победитель тендера на строительство ТЭС в Сырдарье |date= |website=Sputnik Узбекистан |access-date=July 11, 2022 |archive-url=https://web.archive.org/web/20220709155956/https://uz.sputniknews.ru/20211122/obyavlen-pobeditel-tendera-na-stroitelstvo-tes-v-syrdare-21458685.html |archive-date=July 9, 2022 |url-status=live}}</ref><ref name="ref_6">{{cite web |url=https://fergana.media/news/123914/ |title=Третью крупную ТЭС в Сырдарье построят компании из трех стран |date= |access-date=July 11, 2022 |archive-url=https://web.archive.org/web/20220514055314/https://fergana.media/news/123914/ |archive-date=May 14, 2022 |url-status=live}}</ref>. ENERSOK, a newly formed project company, will be tasked with carrying out construction and management of Syrdarya II. As part of the sales purchase agreement, Nebras will control 33.3% of Enersok, while the remaining shares will be divided amongst EDF, Sojitz and Kyuden.<ref>{{Cite web|url=https://nebras-power.com/media/news/2022/03/nebras-power-uzbekistan?language_content_entity=en|title=Nebras Power signs agreement to build and operate large-scale CCGT power project in Uzbekistan|last=|first=|date=March 29, 2022|website=Nebras Power|url-status=live|archive-url=|archive-date=|access-date=May 3, 2023}}</ref> On March 16, 2023 the Japan Bank for International Cooperation (JBIC) signed a loan agreement in project financing amounting up to approximately USD393 million with ENERSOK. The loan is co-financed with Mizuho Bank, Ltd., Sumitomo Mitsui Banking Corporation, Societe Generale and the International Finance Corporation (IFC). Nippon Export and Investment Insurance (NEXI) will provide insurance for the loan from the private financial institutions<ref name=":0">{{Cite web|url=https://www.jbic.go.jp/en/information/press/press-2022/0324-017573.html|title=Project Financing for Syrdarya II Natural Gas-Fired Combined Cycle Power Plant Project in Uzbekistan|last=|first=|date=March 24, 2023|website=JBIC|url-status=live|archive-url=|archive-date=|access-date=May 3, 2023}}</ref>. The overall cost of the project is estimated at approximately US$950 million<ref name=":1">{{Cite web|url=https://disclosures.ifc.org/project-detail/ESRS/45205/syrdarya-ccgt|title=Syrdarya CCGT|last=|first=|date=March 16, 2023|website=IFC PROJECT INFORMATION & DATA PORTAL|url-status=live|archive-url=|archive-date=|access-date=May 3, 2023}}</ref>. 
+
+The electricity produced by the plant will be sold to Uzbek state-owned power company JSC National Electricity Grid of Uzbekistan for a duration of 25 years<ref name=":0">{{Cite web|url=https://www.jbic.go.jp/en/information/press/press-2022/0324-017573.html|title=Project Financing for Syrdarya II Natural Gas-Fired Combined Cycle Power Plant Project in Uzbekistan|last=|first=|date=March 24, 2023|website=JBIC|url-status=live|archive-url=|archive-date=|access-date=May 3, 2023}}</ref>. It will be one of the nation’s largest power generating facilities upon completion and will be instrumental in helping the country meet its growing energy demands from both industry and residential sectors. The power station will be built in the Bayaut district, approximately 2 km northeast of the city of Shirin, in the Syrdarya region of Uzbekistan, approximately 150 km south of Tashkent. The project site is adjacent to the [[Syrdarya I power station]] and approximately 1.5 km north of an existing gas-fired thermal power plant [[Syrdarya power station]] established in the 1970s<ref name=":1">{{Cite web|url=https://disclosures.ifc.org/project-detail/ESRS/45205/syrdarya-ccgt|title=Syrdarya CCGT|last=|first=|date=March 16, 2023|website=IFC PROJECT INFORMATION & DATA PORTAL|url-status=live|archive-url=|archive-date=|access-date=May 3, 2023}}</ref>. 
+
+As of April 2024, the construction is ongoing. Mitsubishi Power will provide two gas turbines M701JAC for the plant. The plant is expected to become operational in 2026.<ref>{{Cite web|url=https://leg.co.ua/stati/turbiny-mitsubishi-budut-rabotat-na-novoy-gazovoy-elektrostancii-v-uzbekistane.html|title=ТУРБИНЫ MITSUBISHI БУДУТ РАБОТАТЬ НА НОВОЙ ГАЗОВОЙ ЭЛЕКТРОСТАНЦИИ В УЗБЕКИСТАНЕ|date=July 11, 2023|website=leg.co.ua|url-status=live|access-date=November 3, 2023}}</ref><ref>{{Cite web|url=https://documents1.worldbank.org/curated/en/099021524122523695/pdf/P174323198e6990e21988510d503c071902.pdf|title=Uzbekistan Syrdarya Efficient Power Generation Project (P174323)|date=February 15, 2024|website=The World Bank|url-status=live|access-date=April 1, 2024}}</ref> In October 2024, it was reported that the equipment of the power plant had been delivered from Japan.<ref>{{Cite web|url=https://www.gazeta.uz/ru/2024/10/22/edf/|title=«Работать в Узбекистане — это рок-н-ролл» — представитель французской EDF|date=October 22, 2024|website=www.gazeta.uz|url-status=live|access-date=November 18, 2024}}</ref> In December 2024, during a briefing the press secretary of the Uzbekistan's Ministry of Energy mentioned that the power plant would be commissioned in 2025-2026.<ref>{{Cite web|url=https://gov.uz/uz/minenergy/news/view/29602|title=Information about major projects being implemented in our country to introduce solar, wind and thermal power plants|date=December 6, 2024|website=Government Portal of the Republic of Uzbekistan|url-status=live|access-date=April 8, 2025}}</ref>
+
+In August 2025, it was reported that the more than 80% of the construction and installation work had been completed. The power plant is scheduled to be commissioned in June 2026. After commissioning, it will be able to cover up to 17% of the country’s electricity demand and allow annual savings of up to 2 billion cubic meters of gas.<ref>{{Cite web|url=https://energyforum.uz/ru/novosti/tes-syrdara-2-smozet-obespecit-do-17--potrebnosti-uzbekistana-v-elektroenergii|title=ТЭС "Сырдарья-2" сможет обеспечить до 17 % потребности Узбекистана в электроэнергии|date=August 19, 2025|website=energyforum.uz|url-status=live|access-date=September 18, 2025}}</ref>
+
+In February 2025, the first firing of Gas Turbine Unit 1 was successfully completed, marking a key step toward commercial operation.<ref>{{Cite web|url=https://www.instagram.com/p/DUmZ3QnDS4P/|title=The first firing of Gas Turbine Unit 1 has been successfully completed at the Syrdarya Phase II 1,600 MW Combined Cycle Power Plant in Uzbekistan|date=2026-02|website=www.instagram.com|url-status=live|access-date=2026-04-08}}</ref>
+
+===Ownership===
+As stated on the IFC website in October 2022, the project ownership shares are as follows: EDF - 33.3%, Nebras - 33.3 %, Sojitz - 19% and Kyuden 14.3%.<ref name="autoref_16" />
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Uzbekistan]]

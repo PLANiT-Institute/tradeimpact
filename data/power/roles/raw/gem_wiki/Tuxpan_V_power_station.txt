@@ -1,0 +1,103 @@
+# GEM wiki page: Tuxpan V power station
+# URL: https://www.gem.wiki/Tuxpan_V_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Tuxpan V power station''' (Central CC Tuxpan V) is an operating power station of at least 495-megawatts (MW) in Tuxpan de Rodríguez Cano, Veracruz, Mexico.
+It is also known as Electricidad Sol de Tuxpan.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Tuxpan V power station
+| Tuxpan de Rodríguez Cano, Veracruz, Mexico
+| 20.845278, -97.244167 (exact)<ref name="autoref_0">{{cite web |url=https://goo.gl/maps/4j2fAZ9vebrWQzvS6}}</ref>
+|}
+{{
+#display_map:
+20.845278, -97.244167
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 20.845278, -97.244167
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.cfe.mx/finanzas/reportes-financieros/Informe%20Anual%20Documentos/Informe%20Anual%20Portal.pdf |archive-url=https://web.archive.org/web/20240125141014/https://www.cfe.mx/finanzas/reportes-financieros/Informe%20Anual%20Documentos/Informe%20Anual%20Portal.pdf |archive-date=2024-01-25}}</ref>
+| fossil gas: natural gas<ref name="autoref_2">{{cite web |url=https://www.kyuden-intl.co.jp/en/business/tuxpan5.html |archive-url=https://web.archive.org/web/20240125094914/https://www.kyuden-intl.co.jp/en/business/tuxpan5.html |archive-date=2024-01-25}}</ref><ref name="autoref_3">{{cite web |url=https://www.naes.com/locations/tuxpan-ii/ |title=Tuxpan II and V (Mexico) |website=NAES |archive-url=https://web.archive.org/web/20240125094938/https://www.naes.com/locations/tuxpan-ii/ |archive-date=2024-01-25}}</ref>
+| 495<ref name="autoref_1" /><ref name="autoref_2" />
+| combined cycle<ref name="autoref_1" /><ref name="autoref_2" />
+| not found
+| 2006<ref name="autoref_4">{{cite web |url=https://igavim.org/Documentos%20Generados/Documentos%20Generales/2022%20PermisosCREhasta2021.pdf |title=Tabla de Permisos 2021 |website=CRE (Comisión Reguladora de Energía) |archive-url=https://web.archive.org/web/20240125141327/https://igavim.org/Documentos%20Generados/Documentos%20Generales/2022%20PermisosCREhasta2021.pdf |archive-date=2024-01-25}}</ref><ref name="autoref_5">{{cite web |url=https://www.gob.mx/cms/uploads/attachment/file/258363/ANEXO_D.pdf |title=Metodología, Criterios y Términos para Contratos Legados |date=2017-08-01 |website=Secretaría de Energía, Subsecretaría de Electricidad |archive-url=https://web.archive.org/web/20240125102714/https://www.gob.mx/cms/uploads/attachment/file/258363/ANEXO_D.pdf |archive-date=2024-01-25}}</ref><ref name="autoref_2" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| 1
+| NAES<ref name="autoref_3" />
+| Electricidad Sol de Tuxpan S de RL de CV [100%]<ref name="autoref_4" /><ref name="autoref_6">{{cite web |url=https://ppi.worldbank.org/en/snapshots/project/tuxpan-v-3419 |title=Tuxpan V |date=2006-09-01 |website=World Bank Group |archive-url=https://web.archive.org/web/20240125143214/https://ppi.worldbank.org/en/snapshots/project/tuxpan-v-3419 |archive-date=2024-01-25}}</ref>
+| Kyushu Electric Power Co Inc [50.0%]; Mitsubishi Corp [50.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjIlLS0+IDEwMDAwMDAwMDY0OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS41JS0tPiAxMDAwMDAwMDA2NDgKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi4zJS0tPiAxMDAwMDAwMDA2NDgKICAgIDEwMDAwMDAwMDY0OFsiS3l1c2h1IEVsZWN0cmljPGJyPlBvd2VyIENvIEluYyJdIC0tNTAuMCUtLT4gMTAwMDAwMDAyOTExCiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjUlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuMiUtLT4gMTAwMDAwMDAwNjUwCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuMyUtLT4gMTAwMDAwMDAwNjUwCiAgICAxMDAwMDAwMDA2NTBbIk1pdHN1YmlzaGkgQ29ycCJdIC0tNTAuMCUtLT4gMTAwMDAwMDAyOTExCiAgICAxMDAwMDAwMDI5MTFbIkVsZWN0cmljaWRhZCBTb2wgZGU8YnI+VHV4cGFuIFMgZGUgUkwgZGUgQ1YiXSAtLTEwMC4wJS0tPiBQMTAwMDAwNDA2MjYwCiAgICBQMTAwMDAwNDA2MjYwWyJUdXhwYW4gViBwb3dlcjxicj5zdGF0aW9uIl0K}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Mexico]]

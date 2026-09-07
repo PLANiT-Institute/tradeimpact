@@ -1,0 +1,157 @@
+# GEM wiki page: Shanxi Yuguang power station
+# URL: https://www.gem.wiki/Shanxi_Yuguang_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Shanxi Yuguang power station''' (山西山阴煤矸石发电) is an operating power station of at least 1300-megawatts (MW) in Beizhouzhuang, Shanyin, Shuozhou, Shanxi, China.
+It is also known as Shanxi Shanyin power station, 昱光（山阴）煤矸石综合利用发电项目二期 (Phase II Unit 3, Phase II Unit 4), 昱光（山阴）煤矸石综合利用发电项目一期 (Phase I Unit 1, Phase I Unit 2).
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Shanxi Yuguang power station
+| Beizhouzhuang, Shanyin, Shuozhou, Shanxi, China
+| 39.6158712, 112.7989912 (exact)
+|}
+{{
+#display_map:
+39.6158712, 112.7989912
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Phase I Unit 1, Phase I Unit 2, Phase II Unit 3, Phase II Unit 4''': 39.6158712, 112.7989912
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| Phase I Unit 1
+| Operating
+| coal: waste coal<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 300
+| subcritical
+| yes
+| 2012
+| False
+|-
+| Phase I Unit 2
+| Operating
+| coal: waste coal<ref name="autoref_0" />
+| 300
+| subcritical
+| yes
+| 2012
+| False
+|-
+| Phase II Unit 3
+| Operating
+| coal: waste coal<ref name="autoref_0" />
+| 350
+| supercritical
+| yes
+| 2019
+| False
+|-
+| Phase II Unit 4
+| Operating
+| coal: waste coal<ref name="autoref_0" />
+| 350
+| supercritical
+| yes
+| 2019
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Phase I Unit 1
+| Shanxi Yuguang Power Generation Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [25.4%]; China National Coal Group [24.0%]; KEPCO Shanxi International [20.4%]; Beijing Ward Financial Investment Holding Co Ltd [15.5%]; Electric Power Development Co Ltd [4.2%]; unknown [2.9%]; Shanxi Gemeng International Energy Group Co Ltd [2.8%]; KEPCO Woori Sprott Global Private Equity Fund [2.4%]; Korea Electric Power Corp [2.4%]
+|-
+| Phase I Unit 2
+| Shanxi Yuguang Power Generation Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [25.4%]; China National Coal Group [24.0%]; KEPCO Shanxi International [20.4%]; Beijing Ward Financial Investment Holding Co Ltd [15.5%]; Electric Power Development Co Ltd [4.2%]; unknown [2.9%]; Shanxi Gemeng International Energy Group Co Ltd [2.8%]; KEPCO Woori Sprott Global Private Equity Fund [2.4%]; Korea Electric Power Corp [2.4%]
+|-
+| Phase II Unit 3
+| Shanxi Yuguang Power Generation Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [25.4%]; China National Coal Group [24.0%]; KEPCO Shanxi International [20.4%]; Beijing Ward Financial Investment Holding Co Ltd [15.5%]; Electric Power Development Co Ltd [4.2%]; unknown [2.9%]; Shanxi Gemeng International Energy Group Co Ltd [2.8%]; KEPCO Woori Sprott Global Private Equity Fund [2.4%]; Korea Electric Power Corp [2.4%]
+|-
+| Phase II Unit 4
+| Shanxi Yuguang Power Generation Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [25.4%]; China National Coal Group [24.0%]; KEPCO Shanxi International [20.4%]; Beijing Ward Financial Investment Holding Co Ltd [15.5%]; Electric Power Development Co Ltd [4.2%]; unknown [2.9%]; Shanxi Gemeng International Energy Group Co Ltd [2.8%]; KEPCO Woori Sprott Global Private Equity Fund [2.4%]; Korea Electric Power Corp [2.4%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMjQ0MzgKICAgIDEwMDAwMDEyNDQzOFsiQmVpamluZyBXYXJkPGJyPkZpbmFuY2lhbCBJbnZlc3RtZW50PGJyPkhvbGRpbmcgQ28gTHRkIl0gLS0zOC42OCUtLT4gMTAwMDAwMTIzNDczCiAgICAxMDAwMDAxMzIzODhfMVsidW5rbm93biJdIC0tMS4zMiUtLT4gMTAwMDAwMTIzNDczCiAgICAxMDAwMDEwMDAzOTlbIkNoaW5hIE5hdGlvbmFsIENvYWw8YnI+R3JvdXAiXSAtLTYwLjAlLS0+IDEwMDAwMDEyMzQ3MwogICAgMTAwMDAwMTIzNDczWyJDaGluYSBDb2FsIEdyb3VwPGJyPlNoYW54aSBHb2xkZW4gT2NlYW48YnI+RW5lcmd5IENvIEx0ZCJdIC0tNDAuMCUtLT4gMTAwMDAwMTIyOTA0CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tNTAuMCUtLT4gMTAwMDAwMTI1OTY3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMjUwNDEKICAgIDEwMDAwMjAyNTA0MVsiTWluaXN0cnkgb2YgSGVhbHRoPGJyPmFuZCBXZWxmYXJlIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDAwNzMwCiAgICAxMDAwMDEwMDA3MzBbIk5hdGlvbmFsIFBlbnNpb248YnI+U2VydmljZSAoU291dGg8YnI+S29yZWEpIl0gLS01MC4wJS0tPiAxMDAwMDAxMjU5NjcKICAgIDEwMDAwMDEyNTk2N1siS0VQQ08gV29vcmkgU3Byb3R0PGJyPkdsb2JhbCBQcml2YXRlPGJyPkVxdWl0eSBGdW5kIl0gLS04LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTI1OTY5WyJLRVBDTyBTaGFueGk8YnI+SW50ZXJuYXRpb25hbCJdIC0tMzQuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc2Ljg4JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzJbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTEyLjI1JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43NyUtLT4gMTAwMDAwMDAwNjQxCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4xJS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMDAwMDY0MVsiRWxlY3RyaWMgUG93ZXI8YnI+RGV2ZWxvcG1lbnQgQ28gTHRkIl0gLS03LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTI1NTI4WyJTaGFueGkgUHJvdmluY2lhbDxicj5EZXBhcnRtZW50IG9mPGJyPkZpbmFuY2UiXSAtLTEwLjAlLS0+IDEwMDAwMDEyMzgyMwogICAgMTAwMDAwMTI1Njc4WyJTaGFueGkgUHJvdmluY2lhbDxicj5QZW9wbGUncyBHb3Zlcm5tZW50PGJyPlN0YXRlLW93bmVkIEFzc2V0czxicj5TdXBlcnZpc2lvbiBhbmQ8YnI+QWRtaW5pc3RyYXRpb248YnI+Q29tbWlzc2lvbiJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMTY2MwogICAgMTAwMDAwMDAxNjYzWyJTaGFueGkgU3RhdGUtT3duZWQ8YnI+Q2FwaXRhbCBJbnZlc3RtZW50PGJyPmFuZCBPcGVyYXRpb24gQ28gTHRkIl0gLS05MC4wJS0tPiAxMDAwMDAxMjM4MjMKICAgIDEwMDAwMDEyMzgyM1siU2hhbnhpIEdlbWVuZzxicj5JbnRlcm5hdGlvbmFsIEVuZXJneTxicj5Hcm91cCBDbyBMdGQiXSAtLTQ3LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTMyMzg4XzJbInVua25vd24iXSAtLTQuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMjM2OTlbIkdlbWVuZyBJbnRlcm5hdGlvbmFsPGJyPkVuZXJneSBDbyBMdGQiXSAtLTYwLjAlLS0+IDEwMDAwMDEyMjkwNAogICAgMTAwMDAwMTIyOTA0WyJTaGFueGkgWXVndWFuZyBQb3dlcjxicj5HZW5lcmF0aW9uIENvIEx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDE1MTQKICAgIFAxMDAwMDAxMDE1MTRbIlNoYW54aSBZdWd1YW5nIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background on Project==
+
+[[Shanxi International Electricity Group]] and [[ChinaCoal]] are currently planning to build a four-unit coal-fired power plant with a total planned capacity of 1,300 MW in Shanxi Province. The first two units began operating in 2012.<ref>[http://bit.ly/1rOZdwt "昱光发电厂2号机组通过168小时试运行"], 中国能源建设集团有限公司, 2012-5-29</ref><ref>[http://bit.ly/1pcegih "4火电项目获环保部环评公示"], 中国能源报人民网, 2012-05-14</ref><ref>[http://bit.ly/1wjOW2r " 企业简介"], 山西昱光发电有限责任公司</ref>
+
+==Expansion==
+
+Two more units of 350 MW each have been permitted.<ref>[http://bit.ly/1rYoA4Z "我院签订山西昱光发电有限公司二期2×350MW工程EPC总承包合同"], 西北电力设计院, 2014-05-29</ref><ref>[http://zgdlhg.com/xwzx/201507233079.html "山西省环境保护厅批复四个火电项目,"] 2015-07-23</ref><ref>[http://www.zmsxhy.com/n47/n84/c47508/content.html "中煤华昱昱光发电厂,"] China Coal, 2014-03-16</ref> 
+
+They were reported as under construction in November 2015, and planned for operation in 2017.<ref>[http://epaper.sxrb.com/shtml/sxrb/20151116/294192.shtml "李小鹏在朔州忻州调研时强调：深入贯彻落实五中全会精神努力实现经济社会全面发展,"] Nov 11, 2015</ref>
+
+Unit 4 was commissioned on June 6, 2019.<ref>[http://news.bjx.com.cn/html/20190606/984692.shtml "昱光电厂#4机组顺利通过168小时试运行,"] 北极星电力网新闻中心, 2019/6/6</ref> Unit 3 was commissioned on June 17, 2019.<ref>[http://news.bjx.com.cn/html/20190617/986482.shtml "山阴电厂二期项目3号机组通过168小时试运行,"] 北极星电力网新闻中心, 2019/6/17</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

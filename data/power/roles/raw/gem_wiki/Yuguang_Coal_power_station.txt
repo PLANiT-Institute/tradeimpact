@@ -1,0 +1,130 @@
+# GEM wiki page: Yuguang Coal power station
+# URL: https://www.gem.wiki/Yuguang_Coal_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Yuguang Coal power station''' (山西国际能源裕光煤电盂县电厂) is an operating power station of at least 2000-megawatts (MW) in Niucun Town, Yu, Yangquan, Shanxi, China.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Yuguang Coal power station
+| Niucun Town, Yu, Yangquan, Shanxi, China
+| 38.078135, 113.482791 (exact)
+|}
+{{
+#display_map:
+38.078135, 113.482791
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 38.078135, 113.482791
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 1000
+| ultra-supercritical
+| yes
+| 2021
+| False
+|-
+| Unit 2
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 1000
+| ultra-supercritical
+| yes
+| 2021
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Shanxi International Energy Yuguang Coal Power Co Ltd [100%]
+| Beijing State-owned Capital Management Center [24.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [21.6%]; Hebei Construction Investment Energy Investment Co Ltd [20.0%]; KEPCO Shanxi International [17.3%]; Yuxian State Owned Capital Operation Co Ltd [4.5%]; Electric Power Development Co Ltd [3.6%]; Shanxi Gemeng International Energy Group Co Ltd [2.4%]; KEPCO Woori Sprott Global Private Equity Fund [2.0%]; Korea Electric Power Corp [2.0%]; unknown [2.0%]; Shanxi Jinyu Coal Industry (Group) Co Ltd [0.5%]
+|-
+| Unit 2
+| Shanxi International Energy Yuguang Coal Power Co Ltd [100%]
+| Beijing State-owned Capital Management Center [24.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [21.6%]; Hebei Construction Investment Energy Investment Co Ltd [20.0%]; KEPCO Shanxi International [17.3%]; Yuxian State Owned Capital Operation Co Ltd [4.5%]; Electric Power Development Co Ltd [3.6%]; Shanxi Gemeng International Energy Group Co Ltd [2.4%]; KEPCO Woori Sprott Global Private Equity Fund [2.0%]; Korea Electric Power Corp [2.0%]; unknown [2.0%]; Shanxi Jinyu Coal Industry (Group) Co Ltd [0.5%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjU1MjdbIkJlaWppbmcgTXVuaWNpcGFsPGJyPlBlb3BsZSdzIEdvdmVybm1lbnQ8YnI+U3RhdGUtb3duZWQgQXNzZXRzPGJyPlN1cGVydmlzaW9uIGFuZDxicj5BZG1pbmlzdHJhdGlvbjxicj5Db21taXNzaW9uIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAwMTU4CiAgICAxMDAwMDAwMDAxNThbIkJlaWppbmcgU3RhdGUtb3duZWQ8YnI+Q2FwaXRhbCBNYW5hZ2VtZW50PGJyPkNlbnRlciJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDQzNgogICAgMTAwMDAxMDAwNDM2WyJCZWlqaW5nIEVuZXJneSBHcm91cDxicj5DbyBMdGQiXSAtLTI0LjAlLS0+IDEwMDAwMDEyMjg4NgogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xOC4yJS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTAwLjAlLS0+IDEwMDAwMjAwNDU2OQogICAgMTAwMDAyMDA0NTY5WyJLb3JlYSBEZXZlbG9wbWVudDxicj5CYW5rIENvIl0gLS0zMi45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMTAxNTU4N18xWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNDguOSUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDAwMDA5NDdbIktvcmVhIEVsZWN0cmljIFBvd2VyPGJyPkNvcnAiXSAtLTUwLjAlLS0+IDEwMDAwMDEyNTk2NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDI1MDQxCiAgICAxMDAwMDIwMjUwNDFbIk1pbmlzdHJ5IG9mIEhlYWx0aDxicj5hbmQgV2VsZmFyZSJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDczMAogICAgMTAwMDAxMDAwNzMwWyJOYXRpb25hbCBQZW5zaW9uPGJyPlNlcnZpY2UgKFNvdXRoPGJyPktvcmVhKSJdIC0tNTAuMCUtLT4gMTAwMDAwMTI1OTY3CiAgICAxMDAwMDAxMjU5NjdbIktFUENPIFdvb3JpIFNwcm90dDxicj5HbG9iYWwgUHJpdmF0ZTxicj5FcXVpdHkgRnVuZCJdIC0tOC4wJS0tPiAxMDAwMDAxMjM2OTkKICAgIDEwMDAwMDEyNTk2OVsiS0VQQ08gU2hhbnhpPGJyPkludGVybmF0aW9uYWwiXSAtLTM0LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ni44OCUtLT4gMTAwMDAwMDAwNjQxCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N181WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfN1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xMi4yNSUtLT4gMTAwMDAwMDAwNjQxCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzclLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMSUtLT4gMTAwMDAwMDAwNjQxCiAgICAxMDAwMDAwMDA2NDFbIkVsZWN0cmljIFBvd2VyPGJyPkRldmVsb3BtZW50IENvIEx0ZCJdIC0tNy4wJS0tPiAxMDAwMDAxMjM2OTkKICAgIDEwMDAwMDEyNTUyOFsiU2hhbnhpIFByb3ZpbmNpYWw8YnI+RGVwYXJ0bWVudCBvZjxicj5GaW5hbmNlIl0gLS0xMC4wJS0tPiAxMDAwMDAxMjM4MjMKICAgIDEwMDAwMDEyNTY3OFsiU2hhbnhpIFByb3ZpbmNpYWw8YnI+UGVvcGxlJ3MgR292ZXJubWVudDxicj5TdGF0ZS1vd25lZCBBc3NldHM8YnI+U3VwZXJ2aXNpb24gYW5kPGJyPkFkbWluaXN0cmF0aW9uPGJyPkNvbW1pc3Npb24iXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDE2NjMKICAgIDEwMDAwMDAwMTY2M1siU2hhbnhpIFN0YXRlLU93bmVkPGJyPkNhcGl0YWwgSW52ZXN0bWVudDxicj5hbmQgT3BlcmF0aW9uIENvIEx0ZCJdIC0tOTAuMCUtLT4gMTAwMDAwMTIzODIzCiAgICAxMDAwMDAxMjM4MjNbIlNoYW54aSBHZW1lbmc8YnI+SW50ZXJuYXRpb25hbCBFbmVyZ3k8YnI+R3JvdXAgQ28gTHRkIl0gLS00Ny4wJS0tPiAxMDAwMDAxMjM2OTkKICAgIDEwMDAwMDEzMjM4OF8xWyJ1bmtub3duIl0gLS00LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTIzNjk5WyJHZW1lbmcgSW50ZXJuYXRpb25hbDxicj5FbmVyZ3kgQ28gTHRkIl0gLS01MS4wJS0tPiAxMDAwMDAxMjI4ODYKICAgIDEwMDAwMDEyNTcyNFsiWXUgQ291bnR5IEluZHVzdHJ5PGJyPmFuZCBJbmZvcm1hdGlvbjxicj5UZWNobm9sb2d5IEJ1cmVhdTxicj4oWXUgQ291bnR5IFByaXZhdGU8YnI+RWNvbm9teSBEZXZlbG9wbWVudDxicj5Qcm9tb3Rpb24gQnVyZWF1KSJdIC0tMTAwLjAlLS0+IDEwMDAwMDEyNDYwOQogICAgMTAwMDAwMTI0NjA5WyJZdXhpYW4gU3RhdGUgT3duZWQ8YnI+Q2FwaXRhbCBPcGVyYXRpb24gQ288YnI+THRkIl0gLS05MC4wJS0tPiAxMDAwMDAxMjM4MjIKICAgIDEwMDAwMDEyNTUyOFsiU2hhbnhpIFByb3ZpbmNpYWw8YnI+RGVwYXJ0bWVudCBvZjxicj5GaW5hbmNlIl0gLS0xMC4wJS0tPiAxMDAwMDAxMjM4MjIKICAgIDEwMDAwMDEyMzgyMlsiU2hhbnhpIEppbnl1IENvYWw8YnI+SW5kdXN0cnkgKEdyb3VwKSBDbzxicj5MdGQiXSAtLTUuMCUtLT4gMTAwMDAwMTIyODg2CiAgICAxMDAwMDAxMjMzNzBbIkhlYmVpIENvbnN0cnVjdGlvbjxicj5JbnZlc3RtZW50IEVuZXJneTxicj5JbnZlc3RtZW50IENvIEx0ZCJdIC0tMjAuMCUtLT4gMTAwMDAwMTIyODg2CiAgICAxMDAwMDAxMjI4ODZbIlNoYW54aSBJbnRlcm5hdGlvbmFsPGJyPkVuZXJneSBZdWd1YW5nIENvYWw8YnI+UG93ZXIgQ28gTHRkIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwMTU1MQogICAgUDEwMDAwMDEwMTU1MVsiWXVndWFuZyBDb2FsIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background on Project==
+
+Gemeng International has proposed 2 × 1000MW ultra-supercritical coal-fired generating units for Yu County. The power station is planned for operation in 2017.<ref>[http://www.csepdi.com/news/infos/2773.html "我院签订山西国际能源裕光煤电有限责任公司盂县2×1000MW超超临界燃煤发电机组工程勘察设计合同,"] CCDC, 2014-10-11</ref> 
+
+The EIA was submitted in 2015.<ref>[http://www.sxyx.gov.cn/sy/xwzx/tzgg/516688.shtml "山西国际能源集团有限公司盂县电厂2×100万千瓦项目第二次环境影响评价信息公示,"] Shanxi Province, June 15, 2015</ref><ref>[http://www.yuxiancity.com/detail/detail.asp?/42815.htm "山西国际能源裕光煤电有限责任公司盂县电厂2×100万千瓦发电机组,"] Yuxian City, 11-25-2016</ref> 
+
+The power station was permitted for construction in August 2017.<ref>[http://www.mep.gov.cn/gkml/hbb/spwj1/201708/t20170831_420704.htm "关于山西国际能源裕光煤电有限责任公司盂县电厂2×100万千瓦项目环境影响报告书的批复,"] China MEP, 2017</ref>
+
+Construction began in October 2017.<ref>[http://news.bjx.com.cn/html/20171012/854807.shtml "盂县电厂2×100万千瓦发电项目1号间冷塔工程破土动工,"] 北极星电力网新闻中心, 2017/10/12</ref> The Shanxi Provincial Development and Reform Commission considers the power station one of its "eight key projects of 2018". It is planned to support a UHV power transmission line from Shanxi to Hebei. It is planned for commissioning in 2019.<ref>[http://www.escn.com.cn/news/show-487378.html "2018山西省重点工程名单：8个储能相关项目入围,"] 中国储能网新闻中心, 2018-1-2</ref>
+
+Unit 1 was commissioned in March 2021.<ref>[http://sx.people.com.cn/n2/2021/0331/c189130-34649818.html "山西省首台百万千瓦发电机组顺利投产,"] 2021年03月31日</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

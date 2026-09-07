@@ -1,0 +1,141 @@
+# GEM wiki page: Shuweihat S1 power plant
+# URL: https://www.gem.wiki/Shuweihat_S1_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Shuweihat S1 power plant''' (مجمع الشويهات للطاقة والمياه ، S1 محطة الشويهات المستقلة للمياه والطاقة) is an operating power station of at least 1615-megawatts (MW) in Jebel Dhanna, Abu Dhabi, United Arab Emirates.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Shuweihat S1 power plant
+| Jebel Dhanna, Abu Dhabi, United Arab Emirates
+| 24.165085, 52.569724 (exact)<ref name="autoref_0">{{cite web |url=https://www.industryabout.com/country-territories-3/1710-uae/fossil-fuels-energy/25626-shuweihat-s1-gas-power-plant |archive-url=https://web.archive.org/web/20210624233027/https://www.industryabout.com/country-territories-3/1710-uae/fossil-fuels-energy/25626-shuweihat-s1-gas-power-plant |archive-date=2021-06-24}}</ref>
+|}
+{{
+#display_map:
+24.165085, 52.569724
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 24.165085, 52.569724
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.taqaglobal.com/our-sectors/power |archive-url=https://web.archive.org/web/20210625020917/https://www.taqaglobal.com/our-sectors/power |archive-date=2021-06-25}}</ref><ref name="autoref_2">{{cite web |url=http://www.ewec.ae/en/existing.html |archive-url=https://web.archive.org/web/20200628103459/http://www.ewec.ae:80/en/existing.html |archive-date=2020-06-28}}</ref><ref name="autoref_3">{{cite web |url=http://www.transco.ae/documents/2019-E7YPS-2020-2026.pdf |archive-url=https://web.archive.org/web/20220516151840/https://transco.ae/documents/2019-E7YPS-2020-2026.pdf |archive-date=2022-05-16}}</ref>
+| fossil gas: natural gas<ref name="autoref_1" />
+| 1615<ref name="autoref_3" />
+| combined cycle<ref name="autoref_3" />
+| yes<ref name="autoref_4">{{cite web |url=https://www.ewec.ae/en/power-plants/shuweihat |archive-url=https://web.archive.org/web/20220702134041/https://www.ewec.ae/en/power-plants/shuweihat |archive-date=2022-07-02}}</ref>
+| 2004<ref name="autoref_5">{{cite web |url=https://www.accsal.com/projects/shuweihat-s1-independent-power-and-desalination-plant/ |archive-url=https://web.archive.org/web/20210624165036/https://www.accsal.com/projects/shuweihat-s1-independent-power-and-desalination-plant/ |archive-date=2021-06-24}}</ref>
+| 2025 (planned)<ref name="autoref_3" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Shuweihat CMS International Power Company PJSC [100%]<ref name="autoref_0" />
+| Abu Dhabi National Energy Company PJSC [60.0%]; ENGIE SA [20.0%]; Sumitomo Corp [20.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_4" />
+* '''Captive industry''': Chemicals<ref name="autoref_4" />
+* '''Non-industry use''': power<ref name="autoref_4" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAwOTVbIkVtaXJhdGUgb2YgQWJ1IERoYWJpPGJyPihVbml0ZWQgQXJhYjxicj5FbWlyYXRlcykiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTEwNDQKICAgIDEwMDAwMTAxMTA0NFsiQWJ1IERoYWJpPGJyPkRldmVsb3BtZW50YWw8YnI+SG9sZGluZyBDb21wYW55IFBKU0MiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDEwODAKICAgIDEwMDAwMDAwMTA4MFsiQWJ1IERoYWJpIFBvd2VyIENvcnAiXSAtLTkwLjAlLS0+IDEwMDAwMDAwMTA3OAogICAgMTAwMDAxMDAwMzMzWyJNdWx0aXBseSBHcm91cCBQSlNDIl0gLS03LjMlLS0+IDEwMDAwMDAwMTA3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0yLjY3JS0tPiAxMDAwMDAwMDEwNzgKICAgIDEwMDAwMDAwMTA3OFsiQWJ1IERoYWJpIE5hdGlvbmFsPGJyPkVuZXJneSBDb21wYW55IFBKU0MiXSAtLTYwLjAlLS0+IDEwMDAwMDAwNDAzNwogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02OS4yNSUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tOS40NiUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi4xNiUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuMTMlLS0+IDEwMDAwMDAwMDY1NwogICAgMTAwMDAwMDAwNjU3WyJTdW1pdG9tbyBDb3JwIl0gLS0yMC4wJS0tPiAxMDAwMDAwMDQwMzcKICAgIDEwMDAwMTAxNTU4N18xMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcwLjQ3JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMTAwMDA3OVsiR292ZXJubWVudCBvZiBGcmFuY2UiXSAtLTIzLjY0JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tNS44OSUtLT4gMTAwMDAwMDAwMzgyCiAgICAxMDAwMDAwMDAzODJbIkVOR0lFIFNBIl0gLS0yMC4wJS0tPiAxMDAwMDAwMDQwMzcKICAgIDEwMDAwMDAwNDAzN1siU2h1d2VpaGF0IENNUzxicj5JbnRlcm5hdGlvbmFsIFBvd2VyPGJyPkNvbXBhbnkgUEpTQyJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDU1OTIKICAgIFAxMDAwMDA0MDU1OTJbIlNodXdlaWhhdCBTMSBwb3dlcjxicj5wbGFudCJdCg==}}
+
+==Methane Plumes Detected Nearby==
+
+Global Energy Monitor researchers analyze satellite-detected methane plumes in order to determine whether they have been observed at or near the site of GEM energy assets. The satellite data provider creates imagery of individual methane plumes and estimates their emission rates at the time of observation. GEM has reviewed many of these plume detections against Google Earth imagery and GEM’s own [https://globalenergymonitor.org/ energy infrastructure tracker data]. The following table lists methane plumes which are associated with the energy asset or facility based on distance and manual review. (A full description of the analysis process is available in the Global Methane Emitters Tracker methodology [https://www.gem.wiki/Global_Methane_Emitters_Tracker_methodology wiki page].)
+
+===='''Table M1:''' Plume details====
+
+{| class="wikitable"
+|+ For additional details on this individual plume identification and others, see the [https://globalenergymonitor.org/projects/global-methane-emitters-tracker/ Global Methane Emitters Tracker].
+!Observation date
+!Satellite data provider
+!Location of plume origin
+!Methane emissions rate
+!Additional plume information
+|-
+| 2023-10-29T06:17:25+00
+| [https://data.carbonmapper.org/ CarbonMapper], emi20231029t061725p04020-B
+| 24.16122543, 52.56658603<ref name="cm_ref">url=https://data.carbonmapper.org/</ref>
+| 1653.618206 kg/hr<ref name="cm_ref" />
+| [[Abū Z̧aby Emirate Methane Observation 2023-10-29, 1]]
+|-
+| 2023-10-29T06:17:25+00
+| [https://data.carbonmapper.org/ CarbonMapper], emi20231029t061725p04020-C
+| 24.16737458, 52.56830458<ref name="cm_ref" />
+| 1230.208005 kg/hr<ref name="cm_ref" />
+| [[Abū Z̧aby Emirate Methane Observation 2023-10-29, 2]]
+|}
+[[Category: Methane observations]]
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United Arab Emirates]]

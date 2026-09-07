@@ -1,0 +1,124 @@
+# GEM wiki page: Panay power plant (Kepco)
+# URL: https://www.gem.wiki/Panay_power_plant_(Kepco)
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Panay power plant (Kepco)''' is a cancelled power station in Dingle, Iloilo, Western Visayas, Philippines.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Panay power plant (Kepco)
+| Dingle, Iloilo, Western Visayas, Philippines
+| 10.920334, 122.67261 (exact)
+|}
+{{
+#display_map:
+10.920334, 122.67261
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 10.920334, 122.67261
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Unit 1
+| Cancelled
+| coal: unknown
+| 50
+| subcritical
+| False
+|-
+| Unit 2
+| Cancelled
+| coal: unknown
+| 50
+| subcritical
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| KEPCO Philippines Corp [100%]
+| Korea Electric Power Corp [100.0%]
+|-
+| Unit 2
+| KEPCO Philippines Corp [100%]
+| Korea Electric Power Corp [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMTAxOAogICAgMTAwMDAxMDAxMDE4WyJLRVBDTyBQaGlsaXBwaW5lczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwMzIwMQogICAgUDEwMDAwMDEwMzIwMVsiUGFuYXkgcG93ZXIgcGxhbnQ8YnI+KEtlcGNvKSJdCg==}}
+
+==Location (existing Panay power station)==
+
+The aerial photo below shows the location of the Panay diesel power plant (PDPP) in Dingle, Iloilo, the Philippines, as identified by Wikimapia.
+{{#display_point:10.920334, 122.6726105|width=600|height=500|type=hybrid|zoom=12}}
+
+==Background==
+
+In 2009 Korean Electric Power Corp. said it plans to convert the Panay Diesel Power Plant (PDPP) in Dingle, Iloilo into a coal-fired power plant.
+
+KEPCO is part owner of SPC Power Corp., the mother unit of SPC Island Power Corp. which bought PDPP and the Bohol diesel fired power plant in 2008 for US$5 million.
+
+A coal plant was first proposed by KEPCO for the area in 2000: KEPCO first proposed to put up a 100-megawatt coal-fired power plant in Tibiao, Antique, but then moved to Iloilo, reportedly due to poor soil stability in Tibiao. KEPCO planned to locate the project in the town of Ajuy and later to Banate but ultimately built the coal plant in Cebu due to stiff opposition from environmental groups and the Catholic Church.<ref>[http://scrimgeour.wordpress.com/tag/kepco/ "Kepco plans to convert PDPP to coal-fired plant,"] Iloilo news, July 6, 2009.</ref>
+
+As of 2012 the plant is still listed as diesel with a capacity of 66 MW by the Philippines DOE.<ref>[http://www.doe.gov.ph/doe_files/pdf/01_Energy_Situationer/2012-Power-Plants-Visayas.pdf "List of existing plants: Visayas,"] Philippines DOE, accessed Dec 2013.</ref> Since there has been no further development of this project since 2009, it can be concluded that the project has been abandoned.
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Philippines]]

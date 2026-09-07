@@ -1,0 +1,109 @@
+# GEM wiki page: SATORP power plant
+# URL: https://www.gem.wiki/SATORP_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''SATORP power plant''' (محطة ساتورب للكهرباء والبخار ، محطة أميرال للإنتاج المشترك للكهرباء والبخار) is a power station under construction in Jubail, Eastern, Saudi Arabia.
+It is also known as Amiral Cogeneration Plant.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| SATORP power plant
+| Jubail, Eastern, Saudi Arabia
+| 26.965465, 49.498705 (exact)<ref name="autoref_0">{{cite web |url=https://www.zawya.com/ar/%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D8%AD%D9%81%D9%8A%D8%A9/%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/%D8%B7%D8%A7%D9%82%D8%A9-%D9%88%D8%B4%D8%B1%D9%83%D8%A9-%D8%AC%D9%8A%D8%B1%D8%A7-%D8%AA%D8%B9%D9%84%D9%86%D8%A7%D9%86-%D8%A5%D9%86%D8%AC%D8%A7%D8%B2-%D8%B5%D9%81%D9%82%D8%A9-%D9%84%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D8%AA%D9%88%D8%B3%D8%B9%D8%A9-%D9%85%D8%AD%D8%B7%D8%A9-%D8%B3%D8%A7%D8%AA%D9%88%D8%B1%D8%A8-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9-%D9%84%D9%84%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83-%D9%84%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-k9duif9g}}</ref>
+|}
+{{
+#display_map:
+26.965465, 49.498705
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 26.965465, 49.498705
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Construction<ref name="autoref_0" />
+| fossil gas: natural gas<ref name="autoref_0" />
+| 475<ref name="autoref_0" />
+| combined cycle<ref name="autoref_0" />
+| 2027 (planned)<ref name="autoref_1">{{cite web |url=https://www.alarabiya.net/aswaq/oil-and-gas/2024/03/28/-%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%A7%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%8A%D8%A9-%D9%88-%D8%AC%D9%8A%D8%B1%D8%A7-%D8%A7%D9%84%D9%8A%D8%A7%D8%A8%D8%A7%D9%86%D9%8A%D8%A9-%D8%AA%D8%B7%D9%88%D8%B1%D8%A7%D9%86-%D9%85%D8%AD%D8%B7%D8%A9-%D9%84%D8%A7%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9}}</ref>
+| Mitsubishi Power: M501JAC<ref name="autoref_2">{{cite web |url=https://www.zawya.com/en/projects/utilities/mitsubishi-power-to-supply-hydrogen-ready-ccgt-for-satorps-cogen-plant-bmvsacet}}</ref><ref name="autoref_3">{{cite web |url=https://www.tradearabia.com/News/329238/Mitsubishi-achieves-key-milestone-in-Saudi-Arabia-with-first-JAC-gas-turbine}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| 1
+| JERA; Abu Dhabi National Energy Company<ref name="autoref_0" /><ref name="autoref_0" />
+| Abu Dhabi National Energy Company PJSC [51%]; JERA Co Inc [49%]<ref name="autoref_0" /><ref name="autoref_0" />
+| Abu Dhabi National Energy Company PJSC [51.0%]; Chubu Electric Power Co Inc [24.5%]; Tokyo Electric Power Co [24.5%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': both<ref name="autoref_0" /><ref name="autoref_3" />
+* '''Captive industry''': Oil & Refining<ref name="autoref_0" /><ref name="autoref_3" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAwOTVbIkVtaXJhdGUgb2YgQWJ1IERoYWJpPGJyPihVbml0ZWQgQXJhYjxicj5FbWlyYXRlcykiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTEwNDQKICAgIDEwMDAwMTAxMTA0NFsiQWJ1IERoYWJpPGJyPkRldmVsb3BtZW50YWw8YnI+SG9sZGluZyBDb21wYW55IFBKU0MiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDEwODAKICAgIDEwMDAwMDAwMTA4MFsiQWJ1IERoYWJpIFBvd2VyIENvcnAiXSAtLTkwLjAlLS0+IDEwMDAwMDAwMTA3OAogICAgMTAwMDAxMDAwMzMzWyJNdWx0aXBseSBHcm91cCBQSlNDIl0gLS03LjMlLS0+IDEwMDAwMDAwMTA3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0yLjY3JS0tPiAxMDAwMDAwMDEwNzgKICAgIDEwMDAwMDAwMTA3OFsiQWJ1IERoYWJpIE5hdGlvbmFsPGJyPkVuZXJneSBDb21wYW55IFBKU0MiXSAtLTUxLjAlLS0+IFAxMDAwMDEwNDcwNDYKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuMDUlLS0+IDEwMDAwMDAwMDYzMAogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01Ljc1JS0tPiAxMDAwMDAwMDA2MzAKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjIlLS0+IDEwMDAwMDAwMDYzMAogICAgMTAwMDAwMDAwNjMwWyJDaHVidSBFbGVjdHJpYyBQb3dlcjxicj5DbyBJbmMiXSAtLTUwLjAlLS0+IDEwMDAwMDAwMTUzMwogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS01LjUzJS0tPiAxMDAwMDAwMDA2NTkKICAgIDEwMDAwMTAxNTU4N18xMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTM5LjcyJS0tPiAxMDAwMDAwMDA2NTkKICAgIDEwMDAwMTAxMTEzNlsiR292ZXJubWVudCBvZiBKYXBhbiJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDg5NAogICAgMTAwMDAxMDAwODk0WyJOdWNsZWFyIERhbWFnZTxicj5Db21wZW5zYXRpb24gYW5kPGJyPkRlY29tbWlzc2lvbmluZzxicj5GYWNpbGl0YXRpb24gQ29ycCJdIC0tNTQuNzUlLS0+IDEwMDAwMDAwMDY1OQogICAgMTAwMDAwMDAwNjU5WyJUb2t5byBFbGVjdHJpYyBQb3dlcjxicj5DbyJdIC0tMTAwLjAlLS0+IDEwMDAwMDE5MjUyOQogICAgMTAwMDAwMTkyNTI5WyJURVBDTyBGdWVsICYgUG93ZXI8YnI+SW5jIl0gLS01MC4wJS0tPiAxMDAwMDAwMDE1MzMKICAgIDEwMDAwMDAwMTUzM1siSkVSQSBDbyBJbmMiXSAtLTQ5LjAlLS0+IFAxMDAwMDEwNDcwNDYKICAgIFAxMDAwMDEwNDcwNDZbIlNBVE9SUCBwb3dlciBwbGFudCJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Saudi Arabia]]

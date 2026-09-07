@@ -1,0 +1,254 @@
+# GEM wiki page: Ordos Power Qipanjing power station
+# URL: https://www.gem.wiki/Ordos_Power_Qipanjing_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Ordos Power Qipanjing power station''' (鄂尔多斯电力冶金股份棋盘井自备电厂) is an operating power station of at least 1960-megawatts (MW) in Mengxi Town, Otog Front Banner, Ordos, Inner Mongolia, China with multiple units, some of which are not currently operating.
+It is also known as 电力二公司 (Unit 5, Unit 6, Unit 7, Unit 8, Unit 9), Ordos Shuangxin power station (New Unit 1, New Unit 2), 电力一公司 (Unit 1, Unit 2, Unit 3, Unit 4), 鄂尔多斯双欣发电厂 (New Unit 1, New Unit 2), 电力二公司） (Unit 10).
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Ordos Power Qipanjing power station
+| Mengxi Town, Otog Front Banner, Ordos, Inner Mongolia, China
+| 39.385235, 106.965664 (exact)
+|}
+{{
+#display_map:
+39.385235, 106.965664
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''New Unit 1, New Unit 2, Unit 1, Unit 10, Unit 2, Unit 3, Unit 4, Unit 5, Unit 6, Unit 7, Unit 8, Unit 9''': 39.385235, 106.965664
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| New Unit 1
+| Cancelled
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 600
+| unknown
+| yes
+| –
+| False
+|-
+| New Unit 2
+| Cancelled
+| coal: unknown<ref name="autoref_0" />
+| 600
+| unknown
+| yes
+| –
+| False
+|-
+| Unit 1
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 330
+| subcritical
+| yes
+| 2005
+| False
+|-
+| Unit 10
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 135
+| unknown
+| yes
+| 2013
+| False
+|-
+| Unit 2
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 330
+| subcritical
+| yes
+| 2005
+| False
+|-
+| Unit 3
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 330
+| subcritical
+| yes
+| 2010
+| False
+|-
+| Unit 4
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 330
+| subcritical
+| yes
+| 2010
+| False
+|-
+| Unit 5
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 50
+| unknown
+| yes
+| 2013
+| False
+|-
+| Unit 6
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 50
+| unknown
+| yes
+| 2013
+| False
+|-
+| Unit 7
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 135
+| unknown
+| yes
+| 2013
+| False
+|-
+| Unit 8
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 135
+| unknown
+| yes
+| 2013
+| False
+|-
+| Unit 9
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 135
+| unknown
+| yes
+| 2013
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| New Unit 1
+| Inner Mongolia Erdos Electric Power and Metallurgy Group Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| New Unit 2
+| Inner Mongolia Erdos Electric Power and Metallurgy Group Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 1
+| Inner Mongolia Erdos Electric Power Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 10
+| Inner Mongolia Erdos Electric Power Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 2
+| Inner Mongolia Erdos Electric Power Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 3
+| Inner Mongolia Erdos Electric Power Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 4
+| Inner Mongolia Erdos Electric Power Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 5
+| Inner Mongolia Erdos Electric Power Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 6
+| Inner Mongolia Erdos Electric Power Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 7
+| Inner Mongolia Erdos Electric Power Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 8
+| Inner Mongolia Erdos Electric Power Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|-
+| Unit 9
+| Inner Mongolia Erdos Electric Power Co Ltd [100%]
+| Inner Mongolia Eerduosi Resources Co Ltd [78.0%]; Mitsui & Co Ltd [20.2%]; unknown [1.9%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': both
+* '''Captive industry''': Chemicals, Iron & Steel, Machinery, Other Metals & Mining
+* '''Non-industry use''': both
+
+
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+Ordos Power Qipanjing power station is a ten-unit coal-fired power plant totaling 1,960 MW in Mengxi Town. It was commissioned from 2005 to 2013, and is owned by Ordos Share Holding Group.<ref name=ordos>[http://www.epjob88.com/vvip/e17510/ "鄂尔多斯电力（集团）有限责任公司企业简介,"] Ordos Share Holding Group, accessed Jan 2018</ref>
+
+An additional 2 x 600 MW may have been considered at the site,<ref name=imnu>[http://jy.imnu.edu.cn/index.php?a=article&aid=993 "鄂尔多斯双欣电力有限公司招聘启事,"] Inner Mongolia Normal University, 2015-06-12</ref><ref>[http://www.mengxi.gov.cn/v.asp?unid=3727 "内蒙古双欣能源化工有限公司2×350MW低热值煤 发电工程环境影响评价公众参与第二次公示,"] 蒙西工业园区管委会 作者, 2015/7/31</ref><ref>[http://www.gczb.com/xmxx/xmdt/2015/09/0115295616690.html "棋盘井自备电厂二期扩建工程获核准,"] 2015-09-01</ref><ref>[http://www.epjob88.com/vvip/e17510/ "鄂尔多斯电力（集团）有限责任公司企业简介,"] Erdos, accessed September 2015</ref> but were presumed cancelled. Due to new restrictions announced during 2016 by the National Energy Administration and the National Development and Reform Commission, further capacity expansions at the location appeared to be on hold or cancelled. For details, see [[China's 2016 Restrictions on Development of Coal-Fired Power Capacity]].
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

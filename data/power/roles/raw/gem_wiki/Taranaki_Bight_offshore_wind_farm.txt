@@ -1,0 +1,71 @@
+# GEM wiki page: Taranaki Bight offshore wind farm
+# URL: https://www.gem.wiki/Taranaki_Bight_offshore_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Taranaki Bight offshore wind farm''' is an announced wind farm in Taranaki, New Zealand.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Taranaki Bight offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Type
+!Owner
+|-
+| Announced<ref name="autoref_0">{{cite web |url=https://www.windenergy.org.nz/offshore-wind/offshore-windfarms-under-investigation/}}</ref>
+| 1000 MW<ref name="autoref_0" />
+| Offshore mount unknown<ref name="autoref_0" />
+| Sumitomo Corp (住友商事株式会社)<ref name="autoref_0" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Taranaki Bight offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Taranaki, New Zealand<ref name="autoref_1">{{cite web |url=https://maps.app.goo.gl/UPutgX3sNNhQhtBe6, https://www.windenergy.org.nz/offshore-wind/offshore-windfarms-under-investigation/}}</ref>
+| -39.3263, 173.3061 (approximate)<ref name="autoref_1" />
+|}
+The map below shows the approximate location of the wind farm:
+{{
+#display_map:
+-39.32629330399526, 173.3060595809453~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in New Zealand]]
+
+__NOTOC__

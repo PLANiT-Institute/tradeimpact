@@ -1,0 +1,87 @@
+# GEM wiki page: Barapkuria solar farm
+# URL: https://www.gem.wiki/Barapkuria_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Barapkuria solar farm''' is a solar photovoltaic (PV) farm in pre-construction in Barapkuria, Bangladesh.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Barapkuria solar farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| 1
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://web.archive.org/web/20240528181819/https://bpdb.portal.gov.bd/sites/default/files/files/bpdb.portal.gov.bd/page/771c9a89_a06c_4c2f_9b8c_699d17ed769a/2023-12-20-09-13-bc35a2ac1abda167c7c48437e4dc1061.pdf}}</ref>
+| 50 MW<ref name="autoref_1">{{cite web |url=https://summitpowerinternational.com/sites/default/files/pdf/Annual%20Report%202021-2022.pdf |archive-url=https://web.archive.org/web/20240125022815/https://summitpowerinternational.com/sites/default/files/pdf/Annual%20Report%202021-2022.pdf |archive-date=2024-01-25}}</ref>
+| PV<ref name="autoref_2">{{cite web |url=https://www.tbsnews.net/bangladesh/energy/japanese-firm-building-200mw-solar-plant-barapukuria-703558 |title=Japanese firm building 200MW solar plant at Barapukuria |date=2023-09-19 |website=The Business Standard |access-date=2024-07-17 |archive-url=https://web.archive.org/web/20240725171505/https://www.tbsnews.net/bangladesh/energy/japanese-firm-building-200mw-solar-plant-barapukuria-703558 |archive-date=2024-07-25}}</ref>
+| Sumitomo Corp; Parker Bangladesh (住友商事株式会社)<ref name="autoref_3">{{cite web |url=https://www.saurenergy.asia/japanese-firm-to-build-200mw-solar-plants-in-bangladesh/, https://www.saurenergy.asia/japanese-firm-to-build-200mw-solar-plants-in-bangladesh/}}</ref>
+|-
+| 2
+| Pre-construction<ref name="autoref_0" />
+| 150 MW<ref name="autoref_2" />
+| PV<ref name="autoref_2" />
+| Summit Power LTD (SPL) [100%]<ref name="autoref_1" />
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Barapkuria solar farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Barapkuria, Bangladesh<ref name="autoref_4">{{cite web |url=https://goo.gl/maps/bNf827xX6yDi7BKt7, https://summitpowerinternational.com/sites/default/files/pdf/Annual%20Report%202021-2022.pdf}}</ref>
+| 25.5467, 88.9606 (approximate)<ref name="autoref_4" />
+|-
+| 2
+| Barapkuria, Bangladesh<ref name="autoref_4" />
+| 25.5467, 88.9606 (approximate)<ref name="autoref_4" />
+|}
+The map below shows the approximate locations of the solar farm phases:
+{{
+#display_map:
+25.5467, 88.9606~Phases 1, 2
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Bangladesh]]
+[[Category:PV solar farms]]
+
+__NOTOC__

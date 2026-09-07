@@ -1,0 +1,142 @@
+# GEM wiki page: Fujairah F2 Integrated Water and power plant
+# URL: https://www.gem.wiki/Fujairah_F2_Integrated_Water_and_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Fujairah F2 Integrated Water and power plant''' (2 محطة كهرباء الفجيرة إف) is an operating power station of at least 2166-megawatts (MW) in Qidfa, Fujairah, United Arab Emirates.
+It is also known as Qidfa F2 Gas Power Plant, FAPCO (Fuj F2).
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Fujairah F2 Integrated Water and power plant
+| Qidfa, Fujairah, United Arab Emirates
+| 25.301931, 56.370353 (exact)<ref name="autoref_0">{{cite web |url=http://www.fapco.ae/proj-sitebig.html |archive-url=https://web.archive.org/web/20130210055200/http://www.fapco.ae:80/proj-sitebig.html |archive-date=2013-02-10}}</ref>
+|}
+{{
+#display_map:
+25.301931, 56.370353
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, 3''': 25.301931, 56.370353
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Retired year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.taqaglobal.com/our-sectors/power |archive-url=https://web.archive.org/web/20210625020917/https://www.taqaglobal.com/our-sectors/power |archive-date=2021-06-25}}</ref>
+| fossil gas: natural gas<ref name="autoref_1" />
+| 867<ref name="autoref_2">{{cite web |url=https://www.powerengineeringint.com/uncategorized/fujairah-2-power-and-water-for-abu-dhabi/ |archive-url=https://web.archive.org/web/20210625041830/https://www.powerengineeringint.com/uncategorized/fujairah-2-power-and-water-for-abu-dhabi/ |archive-date=2021-06-25}}</ref>
+| combined cycle<ref name="autoref_3">{{cite web |url=https://www.powerengineeringint.com/world-regions/asia/fujairah-f2-iwpp-a-jewel-in-the-desert/ |archive-url=https://web.archive.org/web/20211024191313/https://www.powerengineeringint.com/world-regions/asia/fujairah-f2-iwpp-a-jewel-in-the-desert/ |archive-date=2021-10-24}}</ref><ref name="autoref_4">{{cite web |url=https://www.meed.com/developer-inaugurates-fujairah-f2-power-and-water-project/ |archive-url=https://web.archive.org/web/20220304015149/https://www.meed.com/developer-inaugurates-fujairah-f2-power-and-water-project/ |archive-date=2022-03-04}}</ref>
+| yes<ref name="autoref_5">{{cite web |url=https://www.nsenergybusiness.com/projects/fujairah-f3-power-project/ |archive-url=https://web.archive.org/web/20220519182005/https://www.nsenergybusiness.com/projects/fujairah-f3-power-project/ |archive-date=2022-05-19}}</ref>
+| 2011<ref name="autoref_6">{{cite web |url=http://www.fapco.ae/proj-discrpt.html |archive-url=https://web.archive.org/web/20220402010958/http://fapco.ae/proj-discrpt.html |archive-date=2022-04-02}}</ref>
+| 2031 (planned)<ref name="autoref_7">{{cite web |url=http://www.transco.ae/documents/2019-E7YPS-2020-2026.pdf |archive-url=https://web.archive.org/web/20220516151840/https://transco.ae/documents/2019-E7YPS-2020-2026.pdf |archive-date=2022-05-16}}</ref>
+| Ansaldo Energia: GT26B, Ansaldo Energia: GT26B, GE Power: STF30C<ref name="autoref_8">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-fujairah-f2-power-plant-desalination-united-arab-emirates/?cf-view}}</ref>
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas<ref name="autoref_1" />
+| 432<ref name="autoref_2" />
+| combined cycle<ref name="autoref_3" /><ref name="autoref_4" />
+| yes<ref name="autoref_5" />
+| 2011<ref name="autoref_6" />
+| 2031 (planned)<ref name="autoref_7" />
+| Ansaldo Energia: GT26B, Ansaldo Energia: GT26B, GE Power: STF30C<ref name="autoref_8" />
+| no
+|-
+| 3
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas<ref name="autoref_1" />
+| 867<ref name="autoref_2" />
+| combined cycle<ref name="autoref_3" /><ref name="autoref_4" />
+| yes<ref name="autoref_5" />
+| 2011<ref name="autoref_6" />
+| 2031 (planned)<ref name="autoref_7" />
+| GE Power: STF15C, Ansaldo Energia: GT26, Ansaldo Energia: GT26<ref name="autoref_8" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Fujairah Asia Power Company PJSC [100%]<ref name="autoref_9">{{cite web |url=https://www.yumpu.com/en/document/read/27672061/adwec-2008-statement-of-future-capacity-requirements-2008-/18 |archive-url=https://web.archive.org/web/20210623193046/https://www.yumpu.com/en/document/read/27672061/adwec-2008-statement-of-future-capacity-requirements-2008-/18 |archive-date=2021-06-23}}</ref>
+| Abu Dhabi National Energy Company PJSC [60.0%]; ENGIE SA [20.0%]; Marubeni Corp [20.0%]
+|-
+| 2
+| Fujairah Asia Power Company PJSC [100%]<ref name="autoref_9" />
+| Abu Dhabi National Energy Company PJSC [60.0%]; ENGIE SA [20.0%]; Marubeni Corp [20.0%]
+|-
+| 3
+| Fujairah Asia Power Company PJSC [100%]<ref name="autoref_9" />
+| Abu Dhabi National Energy Company PJSC [60.0%]; ENGIE SA [20.0%]; Marubeni Corp [20.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_5" />
+* '''Captive industry''': Chemicals<ref name="autoref_5" />
+* '''Non-industry use''': power<ref name="autoref_5" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcwLjQ3JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMTAwMDA3OVsiR292ZXJubWVudCBvZiBGcmFuY2UiXSAtLTIzLjY0JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTUuODklLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAwMDAwMzgyWyJFTkdJRSBTQSJdIC0tNTAuMCUtLT4gMTAwMDAxMDExNzcyCiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNDElLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS4yMyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS40NiUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDEwMTU1ODdfN1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQ3JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTYuNTYlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjYuNzUlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS0xMC4xNCUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjU1JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMDAwMDY0OVsiTWFydWJlbmkgQ29ycCJdIC0tNTAuMCUtLT4gMTAwMDAxMDExNzcyCiAgICAxMDAwMDEwMTE3NzJbIkZ1amFpcmFoIEYyIENWIl0gLS00MC4wJS0tPiAxMDAwMDAwMDMwNDcKICAgIDEwMDAwMTAwMDA5NVsiRW1pcmF0ZSBvZiBBYnUgRGhhYmk8YnI+KFVuaXRlZCBBcmFiPGJyPkVtaXJhdGVzKSJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxMTA0NAogICAgMTAwMDAxMDExMDQ0WyJBYnUgRGhhYmk8YnI+RGV2ZWxvcG1lbnRhbDxicj5Ib2xkaW5nIENvbXBhbnkgUEpTQyJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMTA4MAogICAgMTAwMDAwMDAxMDgwWyJBYnUgRGhhYmkgUG93ZXIgQ29ycCJdIC0tOTAuMCUtLT4gMTAwMDAwMDAxMDc4CiAgICAxMDAwMDEwMDAzMzNbIk11bHRpcGx5IEdyb3VwIFBKU0MiXSAtLTcuMyUtLT4gMTAwMDAwMDAxMDc4CiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0yLjY3JS0tPiAxMDAwMDAwMDEwNzgKICAgIDEwMDAwMDAwMTA3OFsiQWJ1IERoYWJpIE5hdGlvbmFsPGJyPkVuZXJneSBDb21wYW55IFBKU0MiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTE3NzEKICAgIDEwMDAwMTAxMTc3MVsiRnVqYWlyYWggV2F0ZXIgYW5kPGJyPkVsZWN0cmljaXR5IENvIl0gLS02MC4wJS0tPiAxMDAwMDAwMDMwNDcKICAgIDEwMDAwMDAwMzA0N1siRnVqYWlyYWggQXNpYSBQb3dlcjxicj5Db21wYW55IFBKU0MiXSAtLTEwMC4wJS0tPiBQMTAwMDAwNDA1NTc3CiAgICBQMTAwMDAwNDA1NTc3WyJGdWphaXJhaCBGMjxicj5JbnRlZ3JhdGVkIFdhdGVyIGFuZDxicj5wb3dlciBwbGFudCJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United Arab Emirates]]

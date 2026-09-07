@@ -1,0 +1,158 @@
+# GEM wiki page: Barrow Island LNG power station
+# URL: https://www.gem.wiki/Barrow_Island_LNG_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Barrow Island LNG power station''' is an operating power station of at least 590-megawatts (MW) in Barrow Island, Western Australia, Australia.
+It is also known as Gorgon LNG project.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Barrow Island LNG power station
+| Barrow Island, Western Australia, Australia
+| -20.77708, 115.461583 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/20%C2%B046'37.5%22S+115%C2%B027'41.7%22E/@-20.777075,115.4593943,947m/data=!3m2!1e3!4b1!4m9!1m2!2m1!1sgorgon+lng+project+australia!3m5!1s0x0:0x0!7e2!8m2!3d-20.7770795!4d115.4615832}}</ref>
+|}
+{{
+#display_map:
+-20.77708, 115.461583
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, 3, 4, 5''': -20.77708, 115.461583
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.hydrocarbons-technology.com/projects/gorgon-lng-project/ |archive-url=https://web.archive.org/web/20220906104604/https://www.hydrocarbons-technology.com/projects/gorgon-lng-project/ |archive-date=2022-09-06}}</ref>
+| fossil gas: natural gas<ref name="autoref_2">{{cite web |url=https://www.ge.com/news/reports/huge-ge-gas-turbine-generator-starts-up-at-one-of |archive-url=https://web.archive.org/web/20220624223323/https://www.ge.com/news/reports/huge-ge-gas-turbine-generator-starts-up-at-one-of |archive-date=2022-06-24}}</ref>
+| 118<ref name="autoref_1" />
+| gas turbine<ref name="autoref_2" />
+| not found
+| 2015<ref name="autoref_2" />
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas<ref name="autoref_2" />
+| 118<ref name="autoref_1" />
+| gas turbine<ref name="autoref_2" />
+| not found
+| 2015<ref name="autoref_2" />
+| no
+|-
+| 3
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas<ref name="autoref_2" />
+| 118<ref name="autoref_1" />
+| gas turbine<ref name="autoref_2" />
+| not found
+| 2015<ref name="autoref_2" />
+| no
+|-
+| 4
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas<ref name="autoref_2" />
+| 118<ref name="autoref_1" />
+| gas turbine<ref name="autoref_2" />
+| not found
+| 2015<ref name="autoref_2" />
+| no
+|-
+| 5
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas<ref name="autoref_2" />
+| 118<ref name="autoref_1" />
+| gas turbine<ref name="autoref_2" />
+| not found
+| 2015<ref name="autoref_2" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Chevron Corp [47%]; Exxon Mobil Corp [25%]; Osaka Gas Co Ltd [1%]; unknown [1%]; Shell PLC [25%]<ref name="autoref_3">{{cite web |url=https://australia.chevron.com/our-businesses/gorgon-project |archive-url=https://web.archive.org/web/20221107125613/https://australia.chevron.com/our-businesses/gorgon-project |archive-date=2022-11-07}}</ref><ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" />
+| Chevron Corp [47.3%]; Exxon Mobil Corp [25.0%]; Shell PLC [25.0%]; unknown [1.4%]; Osaka Gas Co Ltd [1.2%]
+|-
+| 2
+| Chevron Corp [47%]; Exxon Mobil Corp [25%]; Osaka Gas Co Ltd [1%]; unknown [1%]; Shell PLC [25%]<ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" />
+| Chevron Corp [47.3%]; Exxon Mobil Corp [25.0%]; Shell PLC [25.0%]; unknown [1.4%]; Osaka Gas Co Ltd [1.2%]
+|-
+| 3
+| Chevron Corp [47%]; Exxon Mobil Corp [25%]; Osaka Gas Co Ltd [1%]; unknown [1%]; Shell PLC [25%]<ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" />
+| Chevron Corp [47.3%]; Exxon Mobil Corp [25.0%]; Shell PLC [25.0%]; unknown [1.4%]; Osaka Gas Co Ltd [1.2%]
+|-
+| 4
+| Chevron Corp [47%]; Exxon Mobil Corp [25%]; Osaka Gas Co Ltd [1%]; unknown [1%]; Shell PLC [25%]<ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" />
+| Chevron Corp [47.3%]; Exxon Mobil Corp [25.0%]; Shell PLC [25.0%]; unknown [1.4%]; Osaka Gas Co Ltd [1.2%]
+|-
+| 5
+| Chevron Corp [47%]; Exxon Mobil Corp [25%]; Osaka Gas Co Ltd [1%]; unknown [1%]; Shell PLC [25%]<ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" /><ref name="autoref_3" />
+| Chevron Corp [47.3%]; Exxon Mobil Corp [25.0%]; Shell PLC [25.0%]; unknown [1.4%]; Osaka Gas Co Ltd [1.2%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_2" />
+* '''Captive industry''': Oil & Refining<ref name="autoref_2" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Australia]]
+
+__NOTOC__

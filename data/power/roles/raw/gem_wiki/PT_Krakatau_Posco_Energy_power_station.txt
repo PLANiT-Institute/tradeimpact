@@ -1,0 +1,126 @@
+# GEM wiki page: PT Krakatau Posco Energy power station
+# URL: https://www.gem.wiki/PT_Krakatau_Posco_Energy_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''PT Krakatau Posco Energy power station''' is an operating power station of at least 200-megawatts (MW) in Samangraya, Citangkil, Cilegon, Jawa, Indonesia.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| PT Krakatau Posco Energy power station
+| Samangraya, Citangkil, Cilegon, Jawa, Indonesia
+| -6.0068473, 105.9715142 (exact)
+|}
+{{
+#display_map:
+-6.0068473, 105.9715142
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': -6.0068473, 105.9715142
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating<ref name="autoref_0">{{cite web |url=https://chandra-asri.com/en/our-business/energy}}</ref>
+| coal: unknown<ref name="autoref_0" />
+| 100<ref name="autoref_1">{{cite web |url=https://www.krakatauposcoenergy.com/company-history.php}}</ref>
+| unknown
+| 2014<ref name="autoref_1" />
+| False
+|-
+| Unit 2
+| Operating<ref name="autoref_0" />
+| coal: unknown<ref name="autoref_0" />
+| 100<ref name="autoref_1" />
+| unknown
+| 2014<ref name="autoref_1" />
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Krakatau Posco Energy PT [100%]<ref name="autoref_0" />
+| POSCO International Corp [55.0%]; PT Krakatau Chandra Energi [45.0%]
+|-
+| Unit 2
+| Krakatau Posco Energy PT [100%]<ref name="autoref_0" />
+| POSCO International Corp [55.0%]; PT Krakatau Chandra Energi [45.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry''': Chemicals, Iron & Steel<ref name="autoref_0" />
+
+
+
+'''Project-level coal details'''
+* '''Coal source(s)''': unknown
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMjI4MTFbIlBUIEtyYWthdGF1IENoYW5kcmE8YnI+RW5lcmdpIl0gLS00NS4wJS0tPiAxMDAwMDIwMjI1MjUKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTAwLjAlLS0+IDEwMDAwMjAyNTA0MQogICAgMTAwMDAyMDI1MDQxWyJNaW5pc3RyeSBvZiBIZWFsdGg8YnI+YW5kIFdlbGZhcmUiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDA3MzAKICAgIDEwMDAwMTAwMDczMFsiTmF0aW9uYWwgUGVuc2lvbjxicj5TZXJ2aWNlIChTb3V0aDxicj5Lb3JlYSkiXSAtLTguNjUlLS0+IDEwMDAwMDAwMDk1MwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04NS40NSUtLT4gMTAwMDAwMDAwOTUzCiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS01LjklLS0+IDEwMDAwMDAwMDk1MwogICAgMTAwMDAwMDAwOTUzWyJQT1NDTyBIb2xkaW5ncyBJbmMiXSAtLT4gMTAwMDAxMDEwNzA4CiAgICAxMDAwMDEwMTA3MDhbIlBPU0NPIEludGVybmF0aW9uYWw8YnI+Q29ycCJdIC0tNTUuMCUtLT4gMTAwMDAyMDIyNTI1CiAgICAxMDAwMDIwMjI1MjVbIktyYWthdGF1IFBvc2NvPGJyPkVuZXJneSBQVCJdIC0tMTAwLjAlLS0+IFAxMDAwMDEwODI5NTgKICAgIFAxMDAwMDEwODI5NThbIlBUIEtyYWthdGF1IFBvc2NvPGJyPkVuZXJneSBwb3dlciBzdGF0aW9uIl0K}}
+
+==Background==
+
+PT Krakatau Posco Energy power station (2 x 100 MW) began operating in 2014.<ref>[https://www.krakatauposcoenergy.com/company-history.php Company History], PT Krakatau Posco Energy, accessed April 8, 2026</ref> The coal-fired units were built to support the industrial activites of PT Chandra Asri Pacific Tbk.<ref>[https://chandra-asri.com/en/our-business/energy Eco-friendly Electricity and Renewable Electricity Provider], Chandra Asri Group, accessed April 8, 2026</ref>
+
+As of March 2026, the 200 MW captive plant was still operating.<ref>[https://chandradaya-investasi.com/en/media/blog/sustainable-energy What Is Sustainable Energy? Learn About Its Many Benefits!], Chandra Daya Investasi, March 18, 2026</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Indonesia]]

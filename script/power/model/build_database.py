@@ -26,7 +26,8 @@ REGISTRY = DATA / "registry"
 GEOMETRY = DATA / "geography" / "raw" / "countries-110m.json"
 OUT = DATA / "database" / "tradeimpact_power.sqlite"
 DATASETS = ("companies", "geography", "grid", "emission_factors", "projects", "roles", "targets")
-#: Raw files that are not CSV (workbooks, JSON, PDF) are recorded in raw_files.csv, not loaded.
+#: Raw files that are not CSV (workbooks, PDF, HTML pages) are recorded in raw_files.csv and
+#: in the per-directory index.csv, which is loaded; the files themselves are not.
 
 
 def main() -> None:
@@ -40,6 +41,10 @@ def main() -> None:
         for kind in ("raw", "method", "processed"):
             for path in sorted((DATA / dataset / kind).glob("*.csv")):
                 plan.append((path, kind, dataset))
+        # A raw directory of per-page files carries its hash record in index.csv; load that too,
+        # named after the directory, so the page URLs and hashes are queryable.
+        for path in sorted((DATA / dataset / "raw").glob("*/index.csv")):
+            plan.append((path, "raw", dataset))
     for path in sorted((DATA / "output").glob("*.csv")):
         plan.append((path, "output", "model"))
     rules = load_tier_rules(REGISTRY / "value_tiers.csv")
@@ -56,7 +61,12 @@ def main() -> None:
     names = []
     for path, kind, dataset in plan:
         # A hand register and its validated copy share a file name: the raw one gets _raw.
-        name = f"{path.stem}_raw" if kind == "raw" and stems.count(path.stem) > 1 else path.stem
+        if path.name == "index.csv" and path.parent.name != "raw":
+            name = f"{path.parent.name}_index"
+        elif kind == "raw" and stems.count(path.stem) > 1:
+            name = f"{path.stem}_raw"
+        else:
+            name = path.stem
         names.append(name)
         n = load_csv(conn, path, rules if kind in ("processed", "output") else None, table=name)
         conn.execute(

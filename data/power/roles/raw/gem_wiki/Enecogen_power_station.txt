@@ -1,0 +1,132 @@
+# GEM wiki page: Enecogen power station
+# URL: https://www.gem.wiki/Enecogen_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Enecogen power station''' is an operating power station of at least 870-megawatts (MW) in Rotterdam, Zuid-Holland, Netherlands.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Enecogen power station
+| Rotterdam, Zuid-Holland, Netherlands
+| 51.957, 4.0916 (exact)<ref name="autoref_0">{{cite web |url=https://www.openstreetmap.org/way/451582875 |archive-url=https://web.archive.org/web/20240124191922/https://www.openstreetmap.org/way/451582875 |archive-date=2024-01-24}}</ref>
+|}
+{{
+#display_map:
+51.957, 4.0916
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''U10, U20''': 51.957, 4.0916
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| U10
+| Operating<ref name="autoref_1">{{cite web |url=https://transparency.entsoe.eu/ |title=Transparency Platform |website=transparency.entsoe.eu |access-date=2026-04-10 |archive-url=https://web.archive.org/web/20221107230119/https://transparency.entsoe.eu/ |archive-date=2022-11-07}}</ref>
+| fossil gas: natural gas<ref name="autoref_2">{{cite web |url=https://www.nsenergybusiness.com/news/cci-acquires-50-stake-in-870mw-enecogen-power-plant/ |archive-url=https://web.archive.org/web/20240124174736/https://www.nsenergybusiness.com/news/cci-acquires-50-stake-in-870mw-enecogen-power-plant/ |archive-date=2024-01-24}}</ref>
+| 435<ref name="autoref_2" />
+| combined cycle<ref name="autoref_2" />
+| not found
+| 2011<ref name="autoref_3">{{cite web |url=https://enecogen.nl/en/general-information/ |archive-url=https://web.archive.org/web/20240124184809/https://enecogen.nl/en/general-information/ |archive-date=2024-01-24}}</ref>
+| no
+|-
+| U20
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas<ref name="autoref_2" />
+| 435<ref name="autoref_2" />
+| combined cycle<ref name="autoref_2" />
+| not found
+| 2011<ref name="autoref_3" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| U10
+| EP Netherlands BV [50%]; Eneco NV [50%]<ref name="autoref_4">{{cite web |url=https://orsted.com/en/about-us/about-orsted/about-our-name |archive-url=https://web.archive.org/web/20240124190038/https://orsted.com/en/who-we-are/our-purpose/about-our-name |archive-date=2024-01-24}}</ref><ref name="autoref_5">{{cite web |url=https://www.cci.com/our-business/assets/power/ |archive-url=https://web.archive.org/web/20240124190251/https://www.cci.com/our-business/assets/power/ |archive-date=2024-01-24}}</ref><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_3" />
+| Energetický a průmyslový holding AS [50.0%]; Mitsubishi Corp [40.0%]; Chubu Electric Power Co Inc [10.0%]
+|-
+| U20
+| EP Netherlands BV [50%]; Eneco NV [50%]<ref name="autoref_4" /><ref name="autoref_5" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_3" />
+| Energetický a průmyslový holding AS [50.0%]; Mitsubishi Corp [40.0%]; Chubu Electric Power Co Inc [10.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMjE3NDNbIkVQIEludmVzdG1lbnQgUy7DoDxicj5yLmwuIl0gLS04OS4yOSUtLT4gMTAwMDAxMDEwMDYzCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAyMDIxNzQ0CiAgICAxMDAwMDIwMjE3NDRbIlRpbGlhY29yZGF0YSBMdGQiXSAtLTEwLjcxJS0tPiAxMDAwMDEwMTAwNjMKICAgIDEwMDAwMTAxMDA2M1siRVAgR3JvdXAgQVMiXSAtLTU2LjAlLS0+IDEwMDAwMDAwMDMzOQogICAgMTAwMDAyMDIxNzYwWyJKJlQgQ2FwaXRhbCBQYXJ0bmVyczxicj5BUyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxMDA2NAogICAgMTAwMDAxMDEwMDY0WyJKJlQgRW5lcmd5IEhvbGRpbmc8YnI+QVMiXSAtLTQ0LjAlLS0+IDEwMDAwMDAwMDMzOQogICAgMTAwMDAwMDAwMzM5WyJFbmVyZ2V0aWNrw70gYTxicj5wcsWvbXlzbG92w70gaG9sZGluZzxicj5BUyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDAxMAogICAgMTAwMDAxMDAwMDEwWyJFUCBOZXRoZXJsYW5kcyBCViJdIC0tNTAuMCUtLT4gUDEwMDAwMDQwMDUyMgogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18xWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfN1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS41JS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuMiUtLT4gMTAwMDAwMDAwNjUwCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuMyUtLT4gMTAwMDAwMDAwNjUwCiAgICAxMDAwMDAwMDA2NTBbIk1pdHN1YmlzaGkgQ29ycCJdIC0tODAuMCUtLT4gMTAwMDAwMDAwNzQyCiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjA1JS0tPiAxMDAwMDAwMDA2MzAKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43NSUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS4yJS0tPiAxMDAwMDAwMDA2MzAKICAgIDEwMDAwMDAwMDYzMFsiQ2h1YnUgRWxlY3RyaWMgUG93ZXI8YnI+Q28gSW5jIl0gLS0yMC4wJS0tPiAxMDAwMDAwMDA3NDIKICAgIDEwMDAwMDAwMDc0MlsiRW5lY28gTlYiXSAtLTUwLjAlLS0+IFAxMDAwMDA0MDA1MjIKICAgIFAxMDAwMDA0MDA1MjJbIkVuZWNvZ2VuIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background==
+
+The power station is owned by Enecogen, a partnership between utilities Eneco Energie and Dong Energy, each with a 50% stake. Construction of the plant started in May 2009 and began commercial operation in late 2011.<ref>[http://www.power-technology.com/projects/enecogen-ccgt/ "Enecogen CCGT Power Station, Netherlands,"] Power-technology.com, accessed Feb 2013.</ref>
+
+C.Gen originally planned for the power station to be fueled by coal.{{fact}}
+
+In 2017 DONG Energy changed its name to Ørsted and began divesting its fossil fuel assets.<ref>[https://orsted.com/en/about-us/about-orsted/about-our-name About Our Name], Ørsted, accessed Apr 8, 2021</ref> In 2018 Castleton Commodities International (CCI) bought Orsted's 50% stake in the project.<ref>[https://www.cci.com/assets/power Power Assets], CCI, accessed Apr 8, 2021</ref>
+
+As part of its "ambition [...] to become climate neutral [...] in 2035" Eneco has proposed running Enecogen on "Green Gas", implementing CCUS, running the plants on Hydrogen, or a combination thereof.<ref name=":2">{{Cite web|url=https://www.eneco.com/wat-we-doen/duurzame-bronnen/enecogen/|title=Enecogen|website=www.eneco.com|language=en|access-date=2021-11-27}}</ref>
+
+==Resources and articles==
+
+===References===
+<references />
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Netherlands]]

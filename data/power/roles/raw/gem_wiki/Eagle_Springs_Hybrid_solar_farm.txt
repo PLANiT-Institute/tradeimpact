@@ -1,0 +1,78 @@
+# GEM wiki page: Eagle Springs Hybrid solar farm
+# URL: https://www.gem.wiki/Eagle_Springs_Hybrid_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Eagle Springs Hybrid solar farm''' is an announced solar photovoltaic (PV) farm in Delta County, Texas, United States.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Eagle Springs Hybrid solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Announced<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/ |title=Preliminary Monthly Electric Generator Inventory (based on Form EIA-860M as a supplement to Form EIA-860) - U.S. Energy Information Administration (EIA) |website=www.eia.gov |access-date=2025-01-06 |archive-url=https://web.archive.org/web/20230509053328/https://www.eia.gov/electricity/data/eia860m/ |archive-date=2023-05-09}}</ref>
+| 2026 (planned)<ref name="autoref_0" />
+| 110.1 MWac<ref name="autoref_0" />
+| PV<ref name="autoref_1">{{cite web |url=https://www.eia.gov/electricity/data/eia860/ |title=U.S. Energy Information Administration, Form EIA-860 detailed data with previous form data (EIA-860A/860B), 2012 |access-date=2023-11-01 00:00:00 |archive-url=https://web.archive.org/web/20221028021258/https://www.eia.gov/electricity/data/eia860/ |archive-date=2022-10-28}}</ref>
+| Samsung C&T Corp [100%] (삼성물산(주))<ref name="autoref_2">{{cite web |url=https://assets.comptroller.texas.gov/ch313/1936/1936-cooper-eagle-findings.pdf |archive-url=https://web.archive.org/web/20240206195919/https://assets.comptroller.texas.gov/ch313/1936/1936-cooper-eagle-findings.pdf |archive-date=2024-02-06}}</ref>
+| Samsung C&T (삼성물산(주))<ref name="autoref_1" />
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Eagle Springs Hybrid solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Delta County, Texas, United States<ref name="autoref_0" />
+| 33.4333, -95.5744 (exact)<ref name="autoref_0" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+33.4333, -95.5744~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in United States]]
+[[Category:PV solar farms]]
+
+__NOTOC__

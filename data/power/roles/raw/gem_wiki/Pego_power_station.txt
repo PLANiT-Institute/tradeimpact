@@ -1,0 +1,128 @@
+# GEM wiki page: Pego power station
+# URL: https://www.gem.wiki/Pego_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Pego power station''' is a retired power station in Pego, Abrantes, Médio Tejo, Santarém, Portugal.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Pego power station
+| Pego, Abrantes, Médio Tejo, Santarém, Portugal
+| 39.468174, -8.109231 (exact)
+|}
+{{
+#display_map:
+39.468174, -8.109231
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 39.468174, -8.109231
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit 1
+| Retired
+| coal: bituminous<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 341
+| subcritical
+| 1992
+| 2021
+| False
+|-
+| Unit 2
+| Retired
+| coal: bituminous<ref name="autoref_0" />
+| 341
+| subcritical
+| 1995
+| 2021
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Tejo Energia SA [100%]
+| Endesa SA [43.8%]; ENGIE SA [28.1%]; Marubeni Corp [28.1%]
+|-
+| Unit 2
+| Tejo Energia SA [100%]
+| Endesa SA [43.8%]; ENGIE SA [28.1%]; Marubeni Corp [28.1%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNDElLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS4yMyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS40NiUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQ3JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS02LjU2JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjYuNzUlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS0xMC4xNCUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjU1JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMDAwMDY0OVsiTWFydWJlbmkgQ29ycCJdIC0tNTAuMCUtLT4gMTAwMDAwMDAxNzE4CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MC40NyUtLT4gMTAwMDAwMDAwMzgyCiAgICAxMDAwMDEwMDAwNzlbIkdvdmVybm1lbnQgb2YgRnJhbmNlIl0gLS0yMy42NCUtLT4gMTAwMDAwMDAwMzgyCiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTUuODklLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAwMDAwMzgyWyJFTkdJRSBTQSJdIC0tNTAuMCUtLT4gMTAwMDAwMDAxNzE4CiAgICAxMDAwMDAwMDE3MThbIlRydXN0RW5lcmd5IEJWIl0gLS01Ni4yNSUtLT4gMTAwMDAwMTIxNDE4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTUuMDIlLS0+IDEwMDAwMDAwMDYwOAogICAgMTAwMDAxMDE1NTg3XzExWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuMTglLS0+IDEwMDAwMDAwMDYwOAogICAgMTAwMDAxMDAxMDI1WyJNaW5pc3RyeSBvZiBFY29ub215PGJyPmFuZCBGaW5hbmNlIChJdGFseSkiXSAtLTIzLjU5JS0tPiAxMDAwMDAwMDA2MDgKICAgIDEwMDAwMDAwMDYwOFsiRW5lbCBTcEEiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDAzMTYKICAgIDEwMDAwMTAwMDMxNlsiRW5lbCBJYmVyaWEgU1JMIl0gLS03MC4xJS0tPiAxMDAwMDAwMDA5NjgKICAgIDEwMDAwMDEzMjM4OF8xWyJ1bmtub3duIl0gLS0yOS45JS0tPiAxMDAwMDAwMDA5NjgKICAgIDEwMDAwMDAwMDk2OFsiRW5kZXNhIFNBIl0gLS00My43NSUtLT4gMTAwMDAwMTIxNDE4CiAgICAxMDAwMDAxMjE0MThbIlRlam8gRW5lcmdpYSBTQSJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDMyODMKICAgIFAxMDAwMDAxMDMyODNbIlBlZ28gcG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Background==
+
+Pego power station was a two-unit coal-fired power plant with a total capacity of 628 MW. The plant was completed between 1992 and 1995, and was owned by [[Engie]] and [[Endesa]]. Coal was imported by CarboPego via the Port of Sines 290 km away and delivered by rail.<ref>[http://globalenergyobservatory.org/geoid/43560 "Pego Coal Power Plant Portugal,"] GEO, accessed April 2016</ref> 
+
+In October 2019, the government announced Pego would be closed by the end of 2021.<ref>[https://www.publico.pt/2019/10/26/economia/noticia/zero-congratulase-antecipacao-fecho-centrais-carvao-pego-sines-1891491 "Zero satisfeita com antecipação do fecho das centrais a carvão do Pego e Sines,"] Publico, October 26, 2019</ref> The plant closed in late November, 2021.<ref>[https://www.reuters.com/business/cop/portugals-power-production-goes-coal-free-long-before-deadline-2021-11-22/ "Portugal's power production goes coal-free long before deadline,"] Reuters, November 23, 2021</ref><ref>[https://www.publico.pt/2021/11/21/economia/noticia/acabou-producao-electricidade-partir-carvao-portugal-1985803 "Acabou a produção de electricidade a partir do carvão em Portugal,"] Publico, November 21, 2021</ref>
+
+In addition, the [[Sines power station]], which was originally slated to close by September 2023, was retired in January 2021.<ref>{{Cite news|url=https://www.euractiv.com/section/energy/news/portugal-on-track-to-become-coal-free-by-year-end/|title=Portugal on track to become coal-free by year end|date=2021-01-15|work=www.euractiv.com|access-date=2021-06-22|language=en-GB}}</ref> 
+
+There are now no operating coal-fired power plants in Portugal.
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Portugal]]

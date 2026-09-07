@@ -1,0 +1,100 @@
+# GEM wiki page: Mangaon Combined Cycle power plant
+# URL: https://www.gem.wiki/Mangaon_Combined_Cycle_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Mangaon Combined Cycle power plant''' is an operating power station of at least 388-megawatts (MW) in Bhagad, Maharashtra, India.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Mangaon Combined Cycle power plant
+| Bhagad, Maharashtra, India
+| 18.3879, 73.3529 (exact)<ref name="autoref_0">{{cite web |url=https://datasets.wri.org/dataset/globalpowerplantdatabase |archive-url=https://web.archive.org/web/20240125091319/https://datasets.wri.org/dataset/globalpowerplantdatabase |archive-date=2024-01-25}}</ref>
+|}
+{{
+#display_map:
+18.3879, 73.3529
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 18.3879, 73.3529
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://cea.nic.in/fuel-reports/?lang=en |archive-url=https://web.archive.org/web/20221010005326/https://cea.nic.in/fuel-reports/?lang=en |archive-date=2022-10-10}}</ref><ref name="autoref_2">{{cite web |url=https://cea.nic.in/wp-content/uploads/pdm/2021/06/list_power_stations_2021.pdf |archive-url=https://web.archive.org/web/20221009001317/http://cea.nic.in/wp-content/uploads/pdm/2021/06/list_power_stations_2021.pdf |archive-date=2022-10-09}}</ref>
+| fossil gas: natural gas<ref name="autoref_2" />
+| 388<ref name="autoref_3">{{cite web |url=https://cea.nic.in/wp-content/uploads/2020/03/annual_report-2019.pdf |title=India CEA annual thermal power plant list (2019) |website=Central Electricity Authority (CEA) |access-date=June 4, 2021 |archive-url=https://web.archive.org/web/20220120154842/https://cea.nic.in/wp-content/uploads/2020/03/annual_report-2019.pdf |archive-date=2022-01-20 |url-status=live}}</ref><ref name="autoref_2" />
+| combined cycle<ref name="autoref_4">{{cite web |url=https://www.pgpl.in/at-a-glance.html |archive-url=https://web.archive.org/web/20210614150322/https://www.pgpl.in/at-a-glance.html |archive-date=2021-06-14}}</ref><ref name="autoref_2" />
+| not found
+| 2016<ref name="autoref_3" /><ref name="autoref_2" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Pioneer Gas Power Ltd [100%]<ref name="autoref_4" />
+| unknown [61.5%]; Korea Electric Power Corp [38.5%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMzIzODhfMVsidW5rbm93biJdIC0tNjEuNSUtLT4gMTAwMDAwMDAxOTM0CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMzguNSUtLT4gMTAwMDAwMDAxOTM0CiAgICAxMDAwMDAwMDE5MzRbIlBpb25lZXIgR2FzIFBvd2VyPGJyPkx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDE0ODgKICAgIFAxMDAwMDA0MDE0ODhbIk1hbmdhb24gQ29tYmluZWQ8YnI+Q3ljbGUgcG93ZXIgcGxhbnQiXQo=}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in India]]

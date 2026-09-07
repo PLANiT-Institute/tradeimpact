@@ -1,0 +1,214 @@
+# GEM wiki page: Egbin power station
+# URL: https://www.gem.wiki/Egbin_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Egbin power station''' is an operating power station of at least 1320-megawatts (MW) in Ijede, Lagos, Nigeria with multiple units, some of which are not currently operating.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Egbin power station
+| Ijede, Lagos, Nigeria
+| 6.563713, 3.615082 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/search/6.56371+3.61508?sa=X&ved=2ahUKEwiOmOyZ26bwAhWxKX0KHdUcAvgQ8gEwAHoECAMQAQ}}</ref>
+|}
+{{
+#display_map:
+6.563713, 3.615082
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, 3, 4, 5, 6, B''': 6.563713, 3.615082
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://egbin-power.com/about-us/ |archive-url=https://web.archive.org/web/20220616212827/https://egbin-power.com/about-us/ |archive-date=2022-06-16}}</ref><ref name="autoref_2">{{cite web |url=https://www.esi-africa.com/industry-sectors/generation/egbin-power-plant-to-inject-1320mw-to-national-grid/ |archive-url=https://web.archive.org/web/20211018195459/https://www.esi-africa.com/industry-sectors/generation/egbin-power-plant-to-inject-1320mw-to-national-grid/ |archive-date=2021-10-18}}</ref>
+| fossil gas: natural gas<ref name="autoref_3">{{cite web |url=https://nerc.gov.ng/index.php/home/nesi/403-generation |archive-url=https://web.archive.org/web/20221229171926/https://nerc.gov.ng/index.php/home/nesi/403-generation |archive-date=2022-12-29}}</ref><ref name="autoref_4">{{cite web |url=https://www.premiumtimesng.com/news/headlines/455359-nigeria-suffers-massive-power-outage-as-several-plants-break-down.html |archive-url=https://web.archive.org/web/20211005144223/https://www.premiumtimesng.com/news/headlines/455359-nigeria-suffers-massive-power-outage-as-several-plants-break-down.html |archive-date=2021-10-05}}</ref>
+| 220<ref name="autoref_1" /><ref name="autoref_5">{{cite web |url=https://www.africanpowerplatform.org/resources/power-projects/user-item/728-admin/406-egbin-thermal-power-station-fgn-but-privatized.html |archive-url=https://web.archive.org/web/20211022175145/https://www.africanpowerplatform.org/resources/power-projects/user-item/728-admin/406-egbin-thermal-power-station-fgn-but-privatized.html |archive-date=2021-10-22}}</ref>
+| steam turbine<ref name="autoref_6">{{cite web |url=https://www.powerengineeringint.com/renewables/nigerias-egbin-power-highlights-thermal-power/ |archive-url=https://web.archive.org/web/20211207023110/https://www.powerengineeringint.com/renewables/nigerias-egbin-power-highlights-thermal-power/ |archive-date=2021-12-07}}</ref>
+| not found
+| 1985<ref name="autoref_7">{{cite web |url=http://www.businesskorea.co.kr/news/articleView.html?idxno=11146 |archive-url=https://web.archive.org/web/20210602175036/http://www.businesskorea.co.kr/news/articleView.html?idxno=11146 |archive-date=2021-06-02}}</ref>
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil gas: natural gas<ref name="autoref_3" /><ref name="autoref_4" />
+| 220<ref name="autoref_1" /><ref name="autoref_5" />
+| steam turbine<ref name="autoref_6" />
+| not found
+| 1985<ref name="autoref_7" />
+| no
+|-
+| 3
+| Operating<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil gas: natural gas<ref name="autoref_3" /><ref name="autoref_4" />
+| 220<ref name="autoref_1" /><ref name="autoref_5" />
+| steam turbine<ref name="autoref_6" />
+| not found
+| 1985<ref name="autoref_7" />
+| no
+|-
+| 4
+| Operating<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil gas: natural gas<ref name="autoref_3" /><ref name="autoref_4" />
+| 220<ref name="autoref_1" /><ref name="autoref_5" />
+| steam turbine<ref name="autoref_8">{{cite web |url=https://tcnpmu.ng/pmu_assets/pmu_files/2018/02/Final-Report-Text.pdf |archive-url=https://web.archive.org/web/20220531131035/https://tcnpmu.ng/pmu_assets/pmu_files/2018/02/Final-Report-Text.pdf |archive-date=2022-05-31}}</ref><ref name="autoref_6" />
+| not found
+| 1985<ref name="autoref_7" />
+| no
+|-
+| 5
+| Operating<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil gas: natural gas<ref name="autoref_3" /><ref name="autoref_4" />
+| 220<ref name="autoref_1" /><ref name="autoref_5" />
+| steam turbine<ref name="autoref_8" /><ref name="autoref_6" />
+| not found
+| 1985<ref name="autoref_7" />
+| no
+|-
+| 6
+| Operating<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil gas: natural gas<ref name="autoref_3" /><ref name="autoref_4" />
+| 220<ref name="autoref_1" /><ref name="autoref_5" />
+| steam turbine<ref name="autoref_8" /><ref name="autoref_6" />
+| not found
+| 1985<ref name="autoref_7" />
+| no
+|-
+| B
+| Shelved - inferred 2 y<ref name="autoref_9">{{cite web |url=https://egbin-power.com/wp-content/uploads/2021/01/Egbin-2019-Sustainability-Report.pdf |archive-url=https://web.archive.org/web/20220301093638/https://egbin-power.com/wp-content/uploads/2021/01/Egbin-2019-Sustainability-Report.pdf |archive-date=2022-03-01}}</ref>
+| fossil gas: LNG<ref name="autoref_10">{{cite web |url=https://www.gastopowerjournal.com/projectsafinance/item/6266-egbin-power-to-build-lng-terminal-to-underpin-generator-expansion |archive-url=https://web.archive.org/web/20210602171617/https://www.gastopowerjournal.com/projectsafinance/item/6266-egbin-power-to-build-lng-terminal-to-underpin-generator-expansion |archive-date=2021-06-02}}</ref>
+| 1800<ref name="autoref_9" />
+| gas turbine<ref name="autoref_11">{{cite web |url=https://www.power-technology.com/news/nigeria-egbin-power/ |archive-url=https://web.archive.org/web/20221001204505/https://www.power-technology.com/news/nigeria-egbin-power/ |archive-date=2022-10-01}}</ref>
+| not found
+| –<ref name="autoref_11" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Egbin Power PLC [100%]<ref name="autoref_1" /><ref name="autoref_9" />
+| KEPCO Energy Resources Ltd [70.0%]; Bureau of Public Enterprises (Nigeria) [24.0%]; Ministry of Finance Incorporated (Nigeria) [6.0%]
+|-
+| 2
+| Egbin Power PLC [100%]<ref name="autoref_1" /><ref name="autoref_9" />
+| KEPCO Energy Resources Ltd [70.0%]; Bureau of Public Enterprises (Nigeria) [24.0%]; Ministry of Finance Incorporated (Nigeria) [6.0%]
+|-
+| 3
+| Egbin Power PLC [100%]<ref name="autoref_1" /><ref name="autoref_9" />
+| KEPCO Energy Resources Ltd [70.0%]; Bureau of Public Enterprises (Nigeria) [24.0%]; Ministry of Finance Incorporated (Nigeria) [6.0%]
+|-
+| 4
+| Egbin Power PLC [100%]<ref name="autoref_1" /><ref name="autoref_9" />
+| KEPCO Energy Resources Ltd [70.0%]; Bureau of Public Enterprises (Nigeria) [24.0%]; Ministry of Finance Incorporated (Nigeria) [6.0%]
+|-
+| 5
+| Egbin Power PLC [100%]<ref name="autoref_1" /><ref name="autoref_9" />
+| KEPCO Energy Resources Ltd [70.0%]; Bureau of Public Enterprises (Nigeria) [24.0%]; Ministry of Finance Incorporated (Nigeria) [6.0%]
+|-
+| 6
+| Egbin Power PLC [100%]<ref name="autoref_1" /><ref name="autoref_9" />
+| KEPCO Energy Resources Ltd [70.0%]; Bureau of Public Enterprises (Nigeria) [24.0%]; Ministry of Finance Incorporated (Nigeria) [6.0%]
+|-
+| B
+| Egbin Power PLC [100%]<ref name="autoref_1" /><ref name="autoref_9" />
+| KEPCO Energy Resources Ltd [70.0%]; Bureau of Public Enterprises (Nigeria) [24.0%]; Ministry of Finance Incorporated (Nigeria) [6.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAzNDNbIktFUENPIEVuZXJneTxicj5SZXNvdXJjZXMgTHRkIl0gLS03MC4wJS0tPiAxMDAwMDAwMDI5MDIKICAgIDEwMDAwMTAwMDM0NFsiQnVyZWF1IG9mIFB1YmxpYzxicj5FbnRlcnByaXNlczxicj4oTmlnZXJpYSkiXSAtLTI0LjAlLS0+IDEwMDAwMDAwMjkwMgogICAgMTAwMDAxMDAwMjk2WyJHb3Zlcm5tZW50IG9mPGJyPk5pZ2VyaWEiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDAzNDUKICAgIDEwMDAwMTAwMDM0NVsiTWluaXN0cnkgb2YgRmluYW5jZTxicj5JbmNvcnBvcmF0ZWQ8YnI+KE5pZ2VyaWEpIl0gLS02LjAlLS0+IDEwMDAwMDAwMjkwMgogICAgMTAwMDAwMDAyOTAyWyJFZ2JpbiBQb3dlciBQTEMiXSAtLTEwMC4wJS0tPiBQMTAwMDAwNDA2Nzg0CiAgICBQMTAwMDAwNDA2Nzg0WyJFZ2JpbiBwb3dlciBzdGF0aW9uIl0K}}
+
+==Financing==
+
+| liquefied natural gas<ref name="ref_9">{{cite web |url=https://www.gastopowerjournal.com/projectsafinance/item/6266-egbin-power-to-build-lng-terminal-to-underpin-generator-expansion |title=Egbin Power to build LNG terminal to underpin plant expansion - Gas To Power Journal |last=Karl |first=Anja |date= |website=www.gastopowerjournal.com |access-date=January 28, 2022 |archive-url=https://web.archive.org/web/20210602171617/https://www.gastopowerjournal.com/projectsafinance/item/6266-egbin-power-to-build-lng-terminal-to-underpin-generator-expansion |archive-date=June 2, 2021 |url-status=live}}</ref>
+
+==Background==
+
+The plant is the largest power generating station in Nigeria.<ref name=":0">{{Cite web|url=https://en.wikipedia.org/wiki/Egbin_Thermal_Power_Station|title=Egbin Thermal Power Station|last=|first=|date=|website=|url-status=live|archive-url=|archive-date=|access-date=}}</ref> 
+
+'''In 1982''', construction of the plant commenced.<ref name=":0">{{Cite web|url=https://en.wikipedia.org/wiki/Egbin_Thermal_Power_Station|title=Egbin Thermal Power Station|last=|first=|date=|website=|url-status=live|archive-url=|archive-date=|access-date=}}</ref><ref name=":1">{{Cite web|url=http://globalenergyobservatory.org/geoid/42567|title=Egbin Thermal Power Plant Nigeria - GEO|website=globalenergyobservatory.org|access-date=2022-07-11}}</ref>
+
+'''In July 1985''', the first unit was commissioned.<ref name=":1">{{Cite web|url=http://globalenergyobservatory.org/geoid/42567|title=Egbin Thermal Power Plant Nigeria - GEO|website=globalenergyobservatory.org|access-date=2022-07-11}}</ref>
+
+'''In November 1986''', the sixth unit was commissioned.<ref name=":1">{{Cite web|url=http://globalenergyobservatory.org/geoid/42567|title=Egbin Thermal Power Plant Nigeria - GEO|website=globalenergyobservatory.org|access-date=2022-07-11}}</ref> 
+
+'''In 2006''', unit six of the plant suffered a boiler tube explosion. Its rehabilitation lasted 3 months and was completed in January 2015.<ref>{{Cite web|url=http://www.vanguardngr.com/2015/01/egbin-power-plant-rehabilitated-produce-220mw/|title=Egbin power plant rehabilitated, to produce 220MW|last=Eboh|first=Michael|date=19 January 2015|website=|url-status=live|archive-url=|archive-date=|access-date=}}</ref> 
+
+'''In 2007''', KEPCO Energy Resources offered to pay US $280 million to acquire 51 percent of the power plant.<ref>{{Cite web|url=https://ppi.worldbank.org/en/snapshots/project/egbin-power-plant-4858|title=Private Participation in Infrastructure (PPI) - World Bank Group|website=ppi.worldbank.org|access-date=2022-07-11}}</ref> KEPCO paid 10% of the bid amount to express interest.<ref name=":2">{{Cite web|url=https://web.archive.org/web/20150211111315/http://nigeriapoliticsonline.com/korean-firm-wins-bid-for-egbin-power-plant/|title=Korean firm wins bid for Egbin Power plant {{!}} Nigeria Politics Online|date=2015-02-11|website=web.archive.org|access-date=2022-07-11}}</ref> However, as a result of power purchase and gas supply agreement issues, the privatization process was halted.<ref name=":2">{{Cite web|url=https://web.archive.org/web/20150211111315/http://nigeriapoliticsonline.com/korean-firm-wins-bid-for-egbin-power-plant/|title=Korean firm wins bid for Egbin Power plant {{!}} Nigeria Politics Online|date=2015-02-11|website=web.archive.org|access-date=2022-07-11}}</ref>
+
+'''In November 2013''', 70% of the company was acquired by KEPCO at US $407.3 million. The other 30% is held by the Government of Nigeria.<ref>{{Cite news|url=https://www.reuters.com/article/ozabs-us-nigeria-power-kepco-idAFKBN0TZ1MN20151216|title=Nigeria's Egbin Power plans to double generating capacity - CEO|last=Ohuocha|first=Chijioke|date=2015-12-16|work=Reuters|access-date=2022-07-11|language=en}}</ref><ref>{{Cite web|url=https://www.usaid.gov/powerafrica/nigeria|title=Power Africa in Nigeria {{!}} Fact Sheet {{!}} Power Africa {{!}} U.S. Agency for International Development|date=2022-04-05|website=www.usaid.gov|language=en|access-date=2022-07-11}}</ref><ref>{{Cite web|url=https://web.archive.org/web/20150211111315/http://nigeriapoliticsonline.com/korean-firm-wins-bid-for-egbin-power-plant/|title=Korean firm wins bid for Egbin Power plant {{!}} Nigeria Politics Online|date=2015-02-11|website=web.archive.org|access-date=2022-07-11}}</ref>
+
+Egbin Power Plc plans to increase its generation capacity to 2,640 MW over three to four years at a cost of US $1.8 billion.<ref>{{Cite news|url=https://www.reuters.com/article/ozabs-us-nigeria-power-kepco-idAFKBN0TZ1MN20151216|title=Nigeria's Egbin Power plans to double generating capacity - CEO|last=Ohuocha|first=Chijioke|date=2015-12-16|work=Reuters|access-date=2022-07-11|language=en}}</ref> The project is expected to help meet the growing energy demand. 
+
+'''In December 2015''', Reuters reported that the company had talks with Exim Bank, the World Bank and African Development Bank were ongoing to fund the Phase II expansion plan.<ref name=":3">{{Cite news|url=https://www.reuters.com/article/ozabs-us-nigeria-power-kepco-idAFKBN0TZ1MN20151216|title=Nigeria's Egbin Power plans to double generating capacity - CEO|last=Ohuocha|first=Chijioke|date=2015-12-16|work=Reuters|access-date=2022-07-11|language=en}}</ref> The company spent US $250 million to commission engineering analysis and evacuation studies for transmission.<ref name=":3">{{Cite news|url=https://www.reuters.com/article/ozabs-us-nigeria-power-kepco-idAFKBN0TZ1MN20151216|title=Nigeria's Egbin Power plans to double generating capacity - CEO|last=Ohuocha|first=Chijioke|date=2015-12-16|work=Reuters|access-date=2022-07-11|language=en}}</ref>
+
+'''In March 2016''', it was announced that the plant may be closed due to financial strains.<ref>{{Cite news|url=https://www.economist.com/middle-east-and-africa/2016/03/03/powerless|title=Powerless|work=The Economist|access-date=2022-07-11|issn=0013-0613}}</ref>
+
+'''In December 2017''', the plant commenced commercial operations.<ref>{{Cite news|url=https://www.economist.com/middle-east-and-africa/2016/03/03/powerless|title=Powerless|work=The Economist|access-date=2022-07-11|issn=0013-0613}}</ref>
+
+'''In 2022''', Egbin Power intends to begin the first phase of the expansion project starting with the construction of open-cycle turbines.<ref name=":4">{{Cite web|url=https://www.power-technology.com/news/nigeria-egbin-power/|title=Egbin Power plans to raise $1.8bn to increase power capacity|last=|first=|date=|website=|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+
+'''In 2025''', Egbin expects to finish the construction of closed-cycle units.<ref name=":4">{{Cite web|url=https://www.power-technology.com/news/nigeria-egbin-power/|title=Egbin Power plans to raise $1.8bn to increase power capacity|last=|first=|date=|website=|url-status=live|archive-url=|archive-date=|access-date=}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Nigeria]]

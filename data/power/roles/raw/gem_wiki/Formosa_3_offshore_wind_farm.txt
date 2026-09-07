@@ -1,0 +1,97 @@
+# GEM wiki page: Formosa 3 offshore wind farm
+# URL: https://www.gem.wiki/Formosa_3_offshore_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' Haiding 3 (Site 17) Formosa III Offshore wind farm (Phase 3), Haiding 1 (Site 11) Formosa III Offshore wind farm (Phase 1), Hai Ding (Formosa III) Offshore Wind Power Plan - Farm No. 2, Haiding 2 (Phase 2), Haiding 2 (Site 16) Formosa III Offshore wind farm (Phase 2), Haiding 3 (Phase 3), Haiding 1 (Phase 1), Haiding Offshore Wind Power Project (Phases 1, 3)
+
+'''Formosa 3 offshore wind farm''' (海鼎一離岸式風力發電計畫, 海鼎三離岸式風力發電計畫, 海鼎二離岸式風力發電計畫) is a wind farm in pre-construction in Changhua County, Taiwan.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Formosa 3 offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+|-
+| 1
+| Cancelled<ref name="autoref_0">{{cite web |url=https://technews.tw/2022/06/30/formosa-3-wind/, https://www.cna.com.tw/news/ahel/202508280103.aspx, https://money.udn.com/money/story/5612/8763847, https://ec.ltn.com.tw/article/breakingnews/4290314, https://vocus.cc/article/668e591afd89780001cae7ca}}</ref>
+| –<ref name="autoref_1">{{cite web |url=https://www.windtaiwan.com/ArticleView.aspx?ID=ART01801 |archive-url=https://web.archive.org/web/20240822195148/https://www.windtaiwan.com/ArticleView.aspx?ID=ART01801 |archive-date=2024-08-22}}</ref>
+| 360 MW<ref name="autoref_2">{{cite web |url=https://www.windtaiwan.com/ArticleView.aspx?ID=ART01801, https://formosa3windpower.com/en}}</ref>
+| Offshore hard mount<ref name="autoref_3">{{cite web |url=https://windtaiwan.com/ArticleView.aspx?ID=ATG0661 |archive-url=https://web.archive.org/web/20240126083516/https://windtaiwan.com/ArticleView.aspx?ID=ATG0661 |archive-date=2024-01-26}}</ref>
+| TotalEnergies Group; Corio Generation [50%] (道達爾能源集團; 科理歐永續能源)<ref name="autoref_4">{{cite web |url=https://www.4coffshore.com/windfarms/taiwan/haiding-1---formosa-iii-taiwan-tw34.html, https://www.formosa3windpower.com/en/news/20, https://www.cw.com.tw/article/5129439, https://www.formosa3windpower.com/zh-TW}}</ref>
+|-
+| 2
+| Pre-construction<ref name="autoref_5">{{cite web |url=https://esg.gvm.com.tw/article/32753, https://e-info.org.tw/node/237223, https://www.formosa3windpower.com/zh-TW/news/30}}</ref>
+| 2027 (planned)<ref name="autoref_6">{{cite web |url=https://www.windtaiwan.com/ArticleView.aspx?ID=ART01667, https://e-info.org.tw/node/237223}}</ref>
+| 600 MW<ref name="autoref_7">{{cite web |url=https://formosa3windpower.com/en, https://e-info.org.tw/node/236791, https://www.windtaiwan.com/ArticleView.aspx?ID=ART01399}}</ref>
+| Offshore hard mount<ref name="autoref_3" />
+| TotalEnergies Group; Corio Generation [50%] (道達爾能源集團; 科理歐永續能源)<ref name="autoref_8">{{cite web |url=https://www.4coffshore.com/windfarms/taiwan/haiding-1---formosa-iii-taiwan-tw34.html, https://twindma.com/tech_news/25, https://www.formosa3windpower.com/en/news/20, https://www.cw.com.tw/article/5129439}}</ref>
+|-
+| 3
+| Announced<ref name="autoref_9">{{cite web |url=https://e-info.org.tw/node/237223 |archive-url=https://web.archive.org/web/20240126130800/https://e-info.org.tw/node/237223 |archive-date=2024-01-26}}</ref>
+| –
+| 720 MW<ref name="autoref_10">{{cite web |url=https://formosa3windpower.com/en, https://e-info.org.tw/node/236791}}</ref>
+| Offshore hard mount<ref name="autoref_3" />
+| Corio Generation; JERA Co Inc (株式会社JERA; 科理歐永續能源)<ref name="autoref_11">{{cite web |url=https://www.4coffshore.com/windfarms/taiwan/haiding-1---formosa-iii-taiwan-tw34.html, https://www.formosa3windpower.com/en/news/20, https://www.4coffshore.com/windfarms/taiwan/haiding-1---formosa-iii-taiwan-tw34.html, https://www.formosa3windpower.com/en/news/20}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Formosa 3 offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Changhua County, Taiwan<ref name="autoref_12">{{cite web |url=https://www.4coffshore.com/windfarms/taiwan/haiding-1---formosa-iii-taiwan-tw34.html, https://www.formosa3windpower.com/zh-TW}}</ref>
+| 23.9654, 120.0345 (approximate)<ref name="autoref_12" />
+|-
+| 2
+| Changhua County, Taiwan<ref name="autoref_13">{{cite web |url=https://www.formosa3windpower.com/zh-TW |archive-url=https://web.archive.org/web/20240131191534/https://www.formosa3windpower.com/zh-TW |archive-date=2024-01-31}}</ref>
+| 24.0581, 120.0003 (approximate)<ref name="autoref_13" />
+|-
+| 3
+| Changhua County, Taiwan<ref name="autoref_14">{{cite web |url=https://www.formosa3windpower.com/zh-TW, https://map.4coffshore.com/offshorewind/index.aspx?lat=24.081&lon=119.894&wfid=TW40, https://www.4coffshore.com/windfarms/taiwan/haiding-3---formosa-iii-taiwan-tw40.html}}</ref>
+| 23.9654, 120.0345 (approximate)<ref name="autoref_14" />
+|}
+The map below shows the approximate locations of the wind farm phases:
+<display_map width=600 height=500 type=normal>
+23.9654028, 120.0344971~ ~ ~ ~ ~Phases 1, 3
+24.058071, 120.0003101~ ~ ~ ~ ~Phase 2
+</display_map>
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Taiwan]]
+
+__NOTOC__

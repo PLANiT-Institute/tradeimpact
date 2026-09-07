@@ -1,0 +1,93 @@
+# GEM wiki page: Äänekoski power station
+# URL: https://www.gem.wiki/Äänekoski_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalBioenergyPowerTracker}}
+'''Äänekoski power station''' is an operating power station of at least 35-megawatts (MW) in Finland.
+It is also known as Äänekoski Biopower.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Äänekoski power station
+| Finland
+| 62.59780454891485, 25.7324928288354 (exact)<ref name="autoref_0">{{cite web |url=https://energiavirasto.fi/toimitusvarmuus |title=Energiavirasto |date=2024-02-02 |access-date=2024-04-03 |archive-url=https://web.archive.org/web/20221012130619/https://energiavirasto.fi/toimitusvarmuus |archive-date=2022-10-12}}</ref><ref name="autoref_1">{{cite web |url=https://www.ymparisto.fi/sites/default/files/documents/Mets%C3%A4%20Fibre%20Oy%20%C3%84%C3%A4nekosken%20biovoimalaitoksen%20ilmansuojelun%20vuosiraportti%202023.pdf}}</ref>
+|}
+{{
+#display_map:
+62.59780454891485, 25.7324928288354
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''''': 62.59780454891485, 25.7324928288354
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Start year
+|-
+| Operating<ref name="autoref_0" />
+| bioenergy: wood & other biomass (solids)<ref name="autoref_0" />
+| 35<ref name="autoref_0" />
+| 2002<ref name="autoref_1" />
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Owner
+!Parent
+|-
+| Metsä Fibre Oy<ref name="autoref_1" />
+| ITOCHU Corp; Metsä Board Oyj; Metsäliitto Cooperative
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAwNTNbIk1ldHPDpGxpaXR0bzxicj5Db29wZXJhdGl2ZSJdIC0tNTAuMSUtLT4gMTAwMDAxMDAwMDUyCiAgICAxMDAwMDEwMDAwNTNbIk1ldHPDpGxpaXR0bzxicj5Db29wZXJhdGl2ZSJdIC0tNTEuODMlLS0+IDEwMDAwMTAwMDA1NAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC4xNyUtLT4gMTAwMDAxMDAwMDU0CiAgICAxMDAwMDEwMDAwNTRbIk1ldHPDpCBCb2FyZCBPeWoiXSAtLTI0LjklLS0+IDEwMDAwMTAwMDA1MgogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02OS44MiUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny40NCUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjkzJS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tNi44NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBIb2xkaW5ncyBJbmMiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuMyUtLT4gMTAwMDAwMDAxMjM3CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3LjY5JS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMTEuODglLS0+IDEwMDAwMDAwMTIzNwogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS05LjA0JS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuMDklLS0+IDEwMDAwMDAwMTIzNwogICAgMTAwMDAwMDAxMjM3WyJJVE9DSFUgQ29ycCJdIC0tMjUuMCUtLT4gMTAwMDAxMDAwMDUyCiAgICAxMDAwMDEwMDAwNTJbIk1ldHPDpCBGaWJyZSBPeSJdIC0tPiBQMTAwMDAxMDQ2NjcyCiAgICBQMTAwMDAxMDQ2NjcyWyLDhMOkbmVrb3NraSBwb3dlcjxicj5zdGF0aW9uIl0K}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of bioenergy power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-bioenergy-power-tracker/ Global Bioenergy Power Tracker] on the Global Energy Monitor website.
+[[Category:Bioenergy power stations]][[Category:Bioenergy power stations in Finland]]

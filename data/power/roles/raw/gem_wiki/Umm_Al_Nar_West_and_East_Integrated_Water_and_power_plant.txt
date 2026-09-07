@@ -1,0 +1,273 @@
+# GEM wiki page: Umm Al Nar West and East Integrated Water and power plant
+# URL: https://www.gem.wiki/Umm_Al_Nar_West_and_East_Integrated_Water_and_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Umm Al Nar West and East Integrated Water and power plant''' (محطة مجمع أم النار للطاقة, محطة أم النار للكهرباء والماء , محطة أم النار الغربية للطاقة) is an operating power station of at least 1706-megawatts (MW) in Abu Dhabi, United Arab Emirates with multiple units, some of which are not currently operating.
+It is also known as UAN (Sas Al Nakhl) cogeneration CCGT (Unit CC), Umm Al Nar Gas Thermal IWPP Project (Unit CC), Sas Al Nakheel (SASN) power station (Unit CC), New Umm Al Nar plant (Unit CC), UAN East (Units GT01, GT02, ST1, ST2, ST3, ST4, ST5, ST6, ST7, ST8), Umm Al Nar East plant (Units GT01, GT02, ST1, ST2, ST3, ST4, ST5, ST6, ST7, ST8), Umm Al Nar West cogeneration plant (Units GT01, GT02, ST1, ST2, ST3, ST4, ST5, ST6, ST7, ST8).
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Umm Al Nar West and East Integrated Water and power plant
+| Abu Dhabi, Abu Dhabi, United Arab Emirates
+| 24.434804, 54.487617 (exact)<ref name="autoref_0">{{cite web |url=http://www.globalenergyobservatory.org/geoid/5828 |archive-url=https://web.archive.org/web/20240405045225/https://www.globalenergyobservatory.org/geoid/5828 |archive-date=2024-04-05}}</ref>
+|}
+{{
+#display_map:
+24.434804, 54.487617
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''CC1, GT01, GT02, ST1, ST2, ST3, ST4, ST5, ST6, ST7, ST8''': 24.434804, 54.487617
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Retired year
+!Equipment
+!Emergency/Backup
+|-
+| CC1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.ewec.ae/en/power-plants/umm-al-nar |archive-url=https://web.archive.org/web/20220702143131/https://www.ewec.ae/en/power-plants/umm-al-nar |archive-date=2022-07-02}}</ref>
+| fossil gas: natural gas<ref name="autoref_2">{{cite web |url=https://www.albayan.ae/across-the-uae/2007-08-14-1.196227 |archive-url=https://web.archive.org/web/20220709101106/https://www.albayan.ae/across-the-uae/2007-08-14-1.196227 |archive-date=2022-07-09}}</ref><ref name="autoref_1" />
+| 1706<ref name="autoref_3">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-umm-sas-al-nakhl-combined-cycle-power-plant-united-arab-emirates/}}</ref><ref name="autoref_1" /><ref name="autoref_4">{{cite web |url=https://uae.taqa.com/ar/uae-arabic/ |title=الإمارات – TAQA United Arab Emirates |author=TAQA United Arab Emirates |access-date=2024-04-12 |archive-url=https://web.archive.org/web/20220709094556/https://uae.taqa.com/ar/uae-arabic/ |archive-date=2022-07-09}}</ref>
+| combined cycle<ref name="autoref_5">{{cite web |url=https://uae.taqa.com/uae/ |archive-url=https://web.archive.org/web/20221219180509/https://uae.taqa.com/uae/ |archive-date=2022-12-19}}</ref>
+| not found
+| 2007<ref name="autoref_5" />
+| 2027 (planned)<ref name="autoref_6">{{cite web |url=http://www.transco.ae/documents/2019-E7YPS-2020-2026.pdf |archive-url=https://web.archive.org/web/20220516151840/https://transco.ae/documents/2019-E7YPS-2020-2026.pdf |archive-date=2022-05-16}}</ref>
+| GE Power: 935IFA<ref name="autoref_4" />
+| no
+|-
+| GT01
+| Retired<ref name="autoref_7">{{cite web |url=https://www.ewec.ae/en/power-plants/existing |title=Existing | Emirates Water and Electricity Company (EWEC) |website=www.ewec.ae |access-date=2024-08-17 |archive-url=https://web.archive.org/web/20240822203642/https://www.ewec.ae/en/power-plants/existing |archive-date=2024-08-22}}</ref><ref name="autoref_6" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_8">{{cite web |url=http://www.globalenergyobservatory.org/geoid/5827}}</ref>
+| 59<ref name="autoref_6" />
+| gas turbine<ref name="autoref_6" />
+| yes<ref name="autoref_8" />
+| 1979<ref name="autoref_9">{{cite web |url=https://www.scad.ae/Release%20Documents/Economic%20Development%20of%20Abu%20Dhabi.pdf |archive-url=https://web.archive.org/web/20220709121422/https://www.scad.ae/Release%20Documents/Economic%20Development%20of%20Abu%20Dhabi.pdf |archive-date=2022-07-09}}</ref><ref name="autoref_8" />
+| 2021<ref name="autoref_7" /><ref name="autoref_6" />
+| ABB PGL<ref name="autoref_6" />
+| no
+|-
+| GT02
+| Retired<ref name="autoref_7" /><ref name="autoref_6" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_8" />
+| 59<ref name="autoref_6" />
+| gas turbine<ref name="autoref_6" />
+| yes<ref name="autoref_8" />
+| 1979<ref name="autoref_8" />
+| 2021<ref name="autoref_7" /><ref name="autoref_6" />
+| ABB PGL<ref name="autoref_6" />
+| no
+|-
+| ST1
+| Retired<ref name="autoref_7" /><ref name="autoref_5" /><ref name="autoref_6" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_0" />
+| 60<ref name="autoref_10">{{cite web |url=https://www.elsaie-engineering.com/Arabic/details.php?id=338 |archive-url=https://web.archive.org/web/20240405050431/https://www.elsaie-engineering.com/Arabic/details.php?id=338 |archive-date=2024-04-05}}</ref><ref name="autoref_6" />
+| steam turbine<ref name="autoref_6" />
+| not found
+| 1981<ref name="autoref_0" />
+| 2021<ref name="autoref_7" /><ref name="autoref_6" />
+| –
+| no
+|-
+| ST2
+| Retired<ref name="autoref_7" /><ref name="autoref_6" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_0" />
+| 60<ref name="autoref_10" /><ref name="autoref_6" />
+| steam turbine<ref name="autoref_6" />
+| not found
+| 1981<ref name="autoref_0" />
+| 2021<ref name="autoref_7" /><ref name="autoref_6" />
+| –
+| no
+|-
+| ST3
+| Retired<ref name="autoref_7" /><ref name="autoref_6" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_0" />
+| 60<ref name="autoref_10" /><ref name="autoref_6" />
+| steam turbine<ref name="autoref_6" />
+| not found
+| 1981<ref name="autoref_0" />
+| 2021<ref name="autoref_7" /><ref name="autoref_6" />
+| –
+| no
+|-
+| ST4
+| Retired<ref name="autoref_7" /><ref name="autoref_6" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_0" />
+| 60<ref name="autoref_10" /><ref name="autoref_6" />
+| steam turbine<ref name="autoref_6" />
+| not found
+| 1981<ref name="autoref_0" />
+| 2021<ref name="autoref_7" /><ref name="autoref_6" />
+| –
+| no
+|-
+| ST5
+| Retired<ref name="autoref_7" /><ref name="autoref_6" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_0" />
+| 60<ref name="autoref_10" /><ref name="autoref_6" />
+| steam turbine<ref name="autoref_6" />
+| not found
+| 1981<ref name="autoref_0" /><ref name="autoref_9" />
+| 2021<ref name="autoref_7" /><ref name="autoref_6" />
+| –
+| no
+|-
+| ST6
+| Retired<ref name="autoref_7" /><ref name="autoref_6" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_0" />
+| 60<ref name="autoref_10" /><ref name="autoref_6" />
+| steam turbine<ref name="autoref_6" />
+| not found
+| 1981<ref name="autoref_0" /><ref name="autoref_9" />
+| 2021<ref name="autoref_7" /><ref name="autoref_6" />
+| –
+| no
+|-
+| ST7
+| Retired<ref name="autoref_6" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_0" />
+| 150<ref name="autoref_7" /><ref name="autoref_6" />
+| steam turbine<ref name="autoref_6" />
+| not found
+| 1998<ref name="autoref_0" /><ref name="autoref_9" />
+| 2021<ref name="autoref_7" /><ref name="autoref_6" />
+| –
+| no
+|-
+| ST8
+| Retired<ref name="autoref_7" /><ref name="autoref_6" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_0" />
+| 150<ref name="autoref_6" />
+| steam turbine<ref name="autoref_6" />
+| not found
+| 1998<ref name="autoref_0" /><ref name="autoref_9" />
+| 2021<ref name="autoref_7" /><ref name="autoref_6" />
+| –
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| CC1
+| Arabian Power Company<ref name="autoref_6" />
+| Engie Energie Services SA [20%]; JERA Co Inc [20%]; Abu Dhabi National Energy Company PJSC [60%]<ref name="autoref_5" /><ref name="autoref_5" /><ref name="autoref_5" />
+| Abu Dhabi National Energy Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|-
+| GT01
+| Arabian Power Company<ref name="autoref_6" />
+| Arabian Power Company PJSC [100%]<ref name="autoref_6" />
+| Arabian United Power Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|-
+| GT02
+| Arabian Power Company<ref name="autoref_6" />
+| Arabian Power Company PJSC [100%]<ref name="autoref_6" />
+| Arabian United Power Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|-
+| ST1
+| Arabian Power Company<ref name="autoref_6" />
+| Arabian Power Company PJSC [100%]<ref name="autoref_6" />
+| Arabian United Power Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|-
+| ST2
+| Arabian Power Company<ref name="autoref_6" />
+| Arabian Power Company PJSC [100%]<ref name="autoref_6" />
+| Arabian United Power Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|-
+| ST3
+| Arabian Power Company<ref name="autoref_6" />
+| Arabian Power Company PJSC [100%]<ref name="autoref_6" />
+| Arabian United Power Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|-
+| ST4
+| Arabian Power Company<ref name="autoref_6" />
+| Arabian Power Company PJSC [100%]<ref name="autoref_6" />
+| Arabian United Power Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|-
+| ST5
+| Arabian Power Company<ref name="autoref_6" />
+| Arabian Power Company PJSC [100%]<ref name="autoref_6" />
+| Arabian United Power Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|-
+| ST6
+| Arabian Power Company<ref name="autoref_6" />
+| Arabian Power Company PJSC [100%]<ref name="autoref_6" />
+| Arabian United Power Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|-
+| ST7
+| Arabian Power Company<ref name="autoref_6" />
+| Arabian Power Company PJSC [100%]<ref name="autoref_6" />
+| Arabian United Power Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|-
+| ST8
+| Arabian Power Company<ref name="autoref_6" />
+| Arabian Power Company PJSC [100%]<ref name="autoref_6" />
+| Arabian United Power Company PJSC [60.0%]; ENGIE SA [20.0%]; Chubu Electric Power Co Inc [10.0%]; Tokyo Electric Power Co [10.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_11">{{cite web |url=https://www.water-technology.net/projects/umm/ |archive-url=https://web.archive.org/web/20221205041031/https://www.water-technology.net/projects/umm/ |archive-date=2022-12-05}}</ref><ref name="autoref_5" />
+* '''Captive industry''': Chemicals<ref name="autoref_11" /><ref name="autoref_5" />
+* '''Non-industry use''': power<ref name="autoref_11" /><ref name="autoref_5" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United Arab Emirates]]
+
+__NOTOC__

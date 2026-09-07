@@ -1,0 +1,100 @@
+# GEM wiki page: Gulf VTP power station
+# URL: https://www.gem.wiki/Gulf_VTP_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Gulf VTP power station''' (โรงไฟฟ้าวังตาผิน) is an operating power station of at least 137-megawatts (MW) in Pluak Daeng, Rayong, Thailand.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Gulf VTP power station
+| Pluak Daeng, Rayong, Thailand
+| 13.003965, 101.172476 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/GVTP/@13.003965,101.172476,382m/data=!3m1!1e3!4m8!1m2!2m1!1sGVTP+power+station!3m4!1s0x0:0xbf7dc92d679e5fdd!8m2!3d13.0042516!4d101.1729891}}</ref>
+|}
+{{
+#display_map:
+13.003965, 101.172476
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 13.003965, 101.172476
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://gulf.listedcompany.com/misc/ar/20210305-gulf-ar2020-en-02.pdf |archive-url=https://web.archive.org/web/20220709131942/https://gulf.listedcompany.com/misc/ar/20210305-gulf-ar2020-en-02.pdf |archive-date=2022-07-09}}</ref><ref name="autoref_2">{{cite web |url=https://www.gulf.co.th/en/pdf/onereport-gulf-2021-en.pdf |archive-url=https://web.archive.org/web/20220524033714/https://www.gulf.co.th/en/pdf/onereport-gulf-2021-en.pdf |archive-date=2022-05-24}}</ref><ref name="autoref_3">{{cite web |url=https://hub.optiwise.io/en/documents/69620/20230227-gulf-ar2022-en.pdf |archive-url=https://web.archive.org/web/20230612075400/https://hub.optiwise.io/en/documents/69620/20230227-gulf-ar2022-en.pdf |archive-date=2023-06-12}}</ref><ref name="autoref_4">{{cite web |url=https://www.gulf.co.th/en/our-business/ |archive-url=https://web.archive.org/web/20240125005330/https://www.gulf.co.th/en/ |archive-date=2024-01-25}}</ref>
+| fossil gas: natural gas<ref name="autoref_1" />
+| 137<ref name="autoref_1" /><ref name="autoref_5">{{cite web |url=https://gulf.listedcompany.com/misc/presentation/20180521-gulf-presentation-1q2018.pdf |archive-url=https://web.archive.org/web/20210311010447/https://gulf.listedcompany.com/misc/presentation/20180521-gulf-presentation-1q2018.pdf |archive-date=2021-03-11}}</ref>
+| combined cycle<ref name="autoref_6">{{cite web |url=https://www.yokogawa.com/us/news/press-releases/2016/2016-02-12/ |archive-url=https://web.archive.org/web/20211202115641/https://www.yokogawa.com/us/news/press-releases/2016/2016-02-12/ |archive-date=2021-12-02}}</ref>
+| yes<ref name="autoref_1" /><ref name="autoref_5" />
+| 2017<ref name="autoref_5" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Gulf MP Company Ltd [75%]; WHA Utilities and Power PLC [25%]<ref name="autoref_5" /><ref name="autoref_5" />
+| WHA Utilities and Power PLC [25.0%]; small shareholder(s) [23.6%]; Mitsui & Co Ltd [22.5%]; Gulf Development PCL [15.3%]; UBS Group AG [5.3%]; Gulf Capital Holdings Ltd [4.2%]; Singapore Telecommunications Ltd [4.1%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTEzMDlbIldIQSBDb3Jwb3JhdGlvbiBQQ0wiXSAtLTk4LjU0JS0tPiAxMDAwMDAxMjA1NDkKICAgIDEwMDAwMDEyMDU0OVsiV0hBIEluZHVzdHJpYWw8YnI+RGV2ZWxvcG1lbnQgUENMIl0gLS03MC40NSUtLT4gMTAwMDAwMDAyMTM1CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTI5LjU1JS0tPiAxMDAwMDAwMDIxMzUKICAgIDEwMDAwMDAwMjEzNVsiV0hBIFV0aWxpdGllcyBhbmQ8YnI+UG93ZXIgUExDIl0gLS0yNS4wJS0tPiBQMTAwMDAwNDA1Mzk0CiAgICAxMDAwMDEwMDAzODBbIkd1bGYgQ2FwaXRhbDxicj5Ib2xkaW5ncyBMdGQiXSAtLTguMCUtLT4gMTAwMDAwMDAxMDMwCiAgICAxMDAwMDIwMjI5NjFbIlNpbmdhcG9yZTxicj5UZWxlY29tbXVuaWNhdGlvbnM8YnI+THRkIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDIxOTIzCiAgICAxMDAwMDIwMjE5MjNbIlNpbmd0ZWwgR2xvYmFsPGJyPkludmVzdG1lbnQgUHRlIEx0ZCJdIC0tNy43MyUtLT4gMTAwMDAwMDAxMDMwCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTI5LjE5JS0tPiAxMDAwMDAwMDEwMzAKICAgIDEwMDAwMDAwMTAwNVsiVUJTIEdyb3VwIEFHIl0gLS0+IDEwMDAwMjAwNTQ0MQogICAgMTAwMDAyMDA1NDQxWyJVQlMgU3dpdHplcmxhbmQgQUciXSAtLT4gMTAwMDAxMDAwMzI0CiAgICAxMDAwMDEwMDAzMjRbIlVCUyBTaW5nYXBvcmUgQnJhbmNoPGJyPkFHIl0gLS0xMC4xNCUtLT4gMTAwMDAwMDAxMDMwCiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ0Ljk0JS0tPiAxMDAwMDAwMDEwMzAKICAgIDEwMDAwMDAwMTAzMFsiR3VsZiBEZXZlbG9wbWVudCBQQ0wiXSAtLTcwLjAlLS0+IDEwMDAwMDAwMzE1NAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuNDMlLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAxMDE1NTg3XzExWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjcuNSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTYuMSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tOS45NyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDAwMDA2NTFbIk1pdHN1aSAmIENvIEx0ZCJdIC0tMzAuMCUtLT4gMTAwMDAwMDAzMTU0CiAgICAxMDAwMDAwMDMxNTRbIkd1bGYgTVAgQ29tcGFueSBMdGQiXSAtLTc1LjAlLS0+IFAxMDAwMDA0MDUzOTQKICAgIFAxMDAwMDA0MDUzOTRbIkd1bGYgVlRQIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Thailand]]

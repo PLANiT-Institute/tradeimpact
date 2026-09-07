@@ -1,0 +1,116 @@
+# GEM wiki page: Trumbull Energy Center power station
+# URL: https://www.gem.wiki/Trumbull_Energy_Center_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Trumbull Energy Center power station''' is an operating power station of at least 940-megawatts (MW) in Lordstown, Trumbull, Ohio, United States.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Trumbull Energy Center power station
+| Lordstown, Trumbull, Ohio, United States
+| 41.15018, -80.85367 (exact)<ref name="autoref_0">{{cite web |url=https://www.epa.gov/nsr/trumbull-energy-center |archive-url=https://web.archive.org/web/20210325091018/https://www.epa.gov/nsr/trumbull-energy-center |archive-date=2021-03-25}}</ref>
+|}
+{{
+#display_map:
+41.15018, -80.85367
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''CC1''': 41.15018, -80.85367
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| CC1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/ |access-date=2026-04-16 |archive-url=https://web.archive.org/web/20230509053328/https://www.eia.gov/electricity/data/eia860m/ |archive-date=2023-05-09}}</ref><ref name="autoref_2">{{cite web |url=http://trumbullenergycenter.com/}}</ref><ref name="autoref_3">{{cite web |url=https://www.linkedin.com/posts/trumbull-energy-center_trumbullenergycenter-substantialcompletion-activity-7408946482755788800-FL3x}}</ref><ref name="autoref_4">{{cite web |url=https://businessjournaldaily.com/first-turbine-delivered-to-trumbull-energy-center-site/ |title=First Turbine Delivered to Trumbull Energy Center Site |date=2023-11-06 |access-date=2024-06-12 |archive-url=https://web.archive.org/web/20240613210853/https://businessjournaldaily.com/first-turbine-delivered-to-trumbull-energy-center-site/ |archive-date=2024-06-13}}</ref><ref name="autoref_5">{{cite web |url=https://opsb.ohio.gov/cases/22-1175-el-bga}}</ref><ref name="autoref_6">{{cite web |url=https://dis.puc.state.oh.us/DocumentRecord.aspx?DocID=9477d3fd-a073-463c-9b21-b14b2977a22e}}</ref><ref name="autoref_1" />
+| fossil gas: natural gas, fossil liquids: diesel<ref name="autoref_2" /><ref name="autoref_7">{{cite web |url=https://www.linkedin.com/company/trumbull-energy-center/ |archive-url=https://web.archive.org/web/20240614162312/https://www.linkedin.com/company/trumbull-energy-center/ |archive-date=2024-06-14}}</ref>
+| 940<ref name="autoref_2" /><ref name="autoref_8">{{cite web |url=https://ukozvhzgrcnkcatjqfoo.supabase.co/storage/v1/object/public/03-00-air-construction/2020.02.25_Trumbull_Energy_Center_PTI_Final_eac50710}}</ref>
+| combined cycle<ref name="autoref_0" /><ref name="autoref_2" /><ref name="autoref_8" />
+| no<ref name="autoref_1" />
+| 2025<ref name="autoref_3" /><ref name="autoref_2" /><ref name="autoref_1" /><ref name="autoref_1" />
+| Siemens Energy: SGT6-8000H<ref name="autoref_4" /><ref name="autoref_9">{{cite web |url=https://www.power-eng.com/gas/after-delays-950-mw-ccgt-project-gets-underway-using-siemens-turbines/ |title=SGT6-5000(F) Start-Up |date=2021-07-16 |website=dx.doi.org |access-date=2024-06-12 |archive-url=https://web.archive.org/web/20240613201905/https://www.power-eng.com/gas/after-delays-950-mw-ccgt-project-gets-underway-using-siemens-turbines/ |archive-date=2024-06-13}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| CC1
+| Siemens Energy Inc [33%]; Korea Overseas Infrastructure & Urban Development Corp Corp [33%]; Korea Southern Power Co Ltd [33%]<ref name="autoref_10">{{cite web |url=https://www.tribtoday.com/news/local-news/2023/04/work-underway-at-1-2b-trumbull-energy-center-as-private-ceremony-takes-place/ |archive-url=https://web.archive.org/web/20230518053336/https://www.tribtoday.com/news/local-news/2023/04/work-underway-at-1-2b-trumbull-energy-center-as-private-ceremony-takes-place/ |archive-date=2023-05-18}}</ref><ref name="autoref_10" /><ref name="autoref_10" />
+| Korea Electric Power Corp [33.3%]; Korea Overseas Infrastructure & Urban Development Corp Corp [33.3%]; Siemens Energy AG [33.3%]
+|}
+
+==Impacts==
+
+Potential emissions and details on the project's status and permit applications can be viewed on Oil and Gas Watch page [https://oilandgaswatch.org/facility/rec_d4f1u60q7easr8ra1g90 here].
+
+''The [https://oilandgaswatch.org/ Oil and Gas Watch] database, created by [https://environmentalintegrity.org/ Environmental Integrity Project] (EIP), is a free, public-facing tool designed to track the rapid expansion of fossil fuel and petrochemical infrastructure in the United States. Oil and Gas Watch maps new and expanding oil, gas, and petrochemical infrastructure projects across the country and monitors each project’s construction status so the public can stay informed about major oil and gas developments being proposed in their communities. We track key environmental approvals companies must obtain before starting construction or operations and provide access to thousands of government records and permits unearthed by our analysts.
+''<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDIxMDkKICAgIDEwMDAwMDAwMjEwOVsiS29yZWEgTGFuZCAmIEhvdXNpbmc8YnI+Q29ycCJdIC0tNS4zMyUtLT4gMTAwMDAxMDEwNTU4CiAgICAxMDAwMDIwMjQ4NzdbIkNvbnN0cnVjdGlvbjxicj5HdWFyYW50ZWU8YnI+Q29vcGVyYXRpdmUiXSAtLTUuMSUtLT4gMTAwMDAxMDEwNTU4CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLT4gMTAwMDAxMDEwNTU4CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTY3Ljk2JS0tPiAxMDAwMDEwMTA1NTgKICAgIDEwMDAwMTAxMDU1OFsiS29yZWEgT3ZlcnNlYXM8YnI+SW5mcmFzdHJ1Y3R1cmUgJjxicj5VcmJhbiBEZXZlbG9wbWVudDxicj5Db3JwIENvcnAiXSAtLTMzLjAlLS0+IFAxMDAwMDA0MDg4NzgKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTguMiUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMDQ1NjkKICAgIDEwMDAwMjAwNDU2OVsiS29yZWEgRGV2ZWxvcG1lbnQ8YnI+QmFuayBDbyJdIC0tMzIuOSUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ4LjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTQ3WyJLb3JlYSBFbGVjdHJpYyBQb3dlcjxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAyMTExCiAgICAxMDAwMDAwMDIxMTFbIktvcmVhIFNvdXRoZXJuIFBvd2VyPGJyPkNvIEx0ZCJdIC0tMzMuMCUtLT4gUDEwMDAwMDQwODg3OAogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tNi42NyUtLT4gMTAwMDAwMDAwNDM2CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTkzLjMzJS0tPiAxMDAwMDAwMDA0MzYKICAgIDEwMDAwMDAwMDQzNlsiU2llbWVucyBBRyJdIC0tNS41NCUtLT4gMTAwMDAwMDAxODk1CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTcuNDIlLS0+IDEwMDAwMDAwMTg5NQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ny4wNCUtLT4gMTAwMDAwMDAxODk1CiAgICAxMDAwMDAwMDE4OTVbIlNpZW1lbnMgRW5lcmd5IEFHIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDEwNTYxCiAgICAxMDAwMDEwMTA1NjFbIlNpZW1lbnMgRW5lcmd5IEluYyJdIC0tMzMuMCUtLT4gUDEwMDAwMDQwODg3OAogICAgUDEwMDAwMDQwODg3OFsiVHJ1bWJ1bGwgRW5lcmd5PGJyPkNlbnRlciBwb3dlciBzdGF0aW9uIl0K}}
+
+==Background==
+
+Trumbull Energy Center is an independent, dual-fuel combined-cycle gas turbine facility with a maximum design capacity of 950 MW, located in Lordstown, Ohio. Operating within PJM's ATSI zone, this power station achieved financial close in November 2023 with a targeted Commercial Operation Date of Jan 31, 2026. Trumbull Energy Center stands on contributions from three equity sponsors: Korea Southern Power Company (KOSPO), Siemens Energy, and Korea Overseas Infrastructure and Urban Development (KIND).<ref>{{Cite web|url=https://www.linkedin.com/company/trumbull-energy-center/|title=Trumbull Energy Center, LLC|website=LinkedIn|url-status=live|access-date=June 12, 2024}}</ref> The first turbine for the project was delivered by Siemens in October 2023.<ref>{{Cite web|url=https://businessjournaldaily.com/first-turbine-delivered-to-trumbull-energy-center-site/|title=First Turbine Delivered to Trumbull Energy Center Site|date=November 6, 2023|website=businessjournaldaily.com|url-status=live|access-date=June 12,2 2024}}</ref> In June 2025, it was reported that the Trumbull Energy Center had completed multiple phases of construction and was transitioning to the final phase, which consists of equipment installation, commissioning, and testing.<ref>{{Cite web|url=https://dis.puc.state.oh.us/DocumentRecord.aspx?DocID=9477d3fd-a073-463c-9b21-b14b2977a22e|title=Document Record|date=2025-06-27|website=dis.puc.state.oh.us|url-status=live|access-date=2025-11-19}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United States]]

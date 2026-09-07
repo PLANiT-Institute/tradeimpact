@@ -1,0 +1,109 @@
+# GEM wiki page: Linden cogeneration plant
+# URL: https://www.gem.wiki/Linden_cogeneration_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Linden cogeneration plant''' is an operating power station of at least 974-megawatts (MW) in Linden, Union, New Jersey, United States.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Linden cogeneration plant
+| Linden, Union, New Jersey, United States
+| 40.6322, -74.2156 (exact)<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (November 2019) |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20200612191408/https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |archive-date=2020-06-12 |url-status=live}}</ref>
+|}
+{{
+#display_map:
+40.6322, -74.2156
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''CC1''': 40.6322, -74.2156
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| CC1
+| Operating<ref name="autoref_0" />
+| fossil gas: natural gas, fossil liquids: waste/other oil, other: hydrogen (unknown)<ref name="autoref_1">{{cite web |url=https://www.powermag.com/hydrogen-blending-project-commissioned-on-new-jersey-gas-turbine-unit/ |archive-url=https://web.archive.org/web/20230612232604/https://www.powermag.com/hydrogen-blending-project-commissioned-on-new-jersey-gas-turbine-unit/ |archive-date=2023-06-12}}</ref><ref name="autoref_2">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (July 2021) |access-date=October 13, 2021 |archive-url=https://web.archive.org/web/20211122185052/https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |archive-date=2021-11-22 |url-status=live}}</ref>
+| 974<ref name="autoref_0" />
+| combined cycle<ref name="autoref_0" />
+| yes<ref name="autoref_0" />
+| 2002<ref name="autoref_0" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| CC1
+| Linden Topco<ref name="autoref_3">{{cite web |url=https://www.jera.co.jp/en/corporate/business/projects/linden |archive-url=https://web.archive.org/web/20230518161741/https://www.jera.co.jp/en/corporate/business/projects/linden |archive-date=2023-05-18}}</ref>
+| Development Bank of Japan Inc [12%]; Electricity Generating PCL [28%]; GS EPS Co Ltd [5%]; JERA Americas Inc [50%]; Platform Partners LLC [5%]<ref name="autoref_4">{{cite web |url=https://www.nsenergybusiness.com/projects/linden-gas-thermal-power-station/ |archive-url=https://web.archive.org/web/20220524030626/https://www.nsenergybusiness.com/projects/linden-gas-thermal-power-station/ |archive-date=2022-05-24}}</ref><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" />
+| Electricity Generating PCL [28.0%]; Chubu Electric Power Co Inc [25.0%]; Tokyo Electric Power Co [25.0%]; Development Bank of Japan Inc [12.0%]; Platform Partners LLC [5.0%]; GS Holdings Corp [3.5%]; OQ SAOC [1.5%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': both<ref name="autoref_4" />
+* '''Captive industry''': Oil & Refining<ref name="autoref_4" />
+* '''Non-industry use''': power<ref name="autoref_4" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ1Ljk2JS0tPiAxMDAwMDAwMDIxMzAKICAgIDEwMDAwMTAwMDE1M1siR292ZXJubWVudCBvZjxicj5UaGFpbGFuZCJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMjEyOQogICAgMTAwMDAwMDAyMTI5WyJFbGVjdHJpY2l0eTxicj5HZW5lcmF0aW5nIEF1dGhvcml0eTxicj5vZiBUaGFpbGFuZCJdIC0tMjUuNDElLS0+IDEwMDAwMDAwMjEzMAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS4wNSUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzUlLS0+IDEwMDAwMDAwMDYzMAogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuMiUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDAwMDA2MzBbIkNodWJ1IEVsZWN0cmljIFBvd2VyPGJyPkNvIEluYyJdIC0tNTAuMCUtLT4gMTAwMDAwMDAxNTMzCiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTUuNTMlLS0+IDEwMDAwMDAwMDY1OQogICAgMTAwMDAxMDE1NTg3XzExWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMzkuNzIlLS0+IDEwMDAwMDAwMDY1OQogICAgMTAwMDAxMDExMTM2WyJHb3Zlcm5tZW50IG9mIEphcGFuIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDAwODk0CiAgICAxMDAwMDEwMDA4OTRbIk51Y2xlYXIgRGFtYWdlPGJyPkNvbXBlbnNhdGlvbiBhbmQ8YnI+RGVjb21taXNzaW9uaW5nPGJyPkZhY2lsaXRhdGlvbiBDb3JwIl0gLS01NC43NSUtLT4gMTAwMDAwMDAwNjU5CiAgICAxMDAwMDAwMDA2NTlbIlRva3lvIEVsZWN0cmljIFBvd2VyPGJyPkNvIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTkyNTI5CiAgICAxMDAwMDAxOTI1MjlbIlRFUENPIEZ1ZWwgJiBQb3dlcjxicj5JbmMiXSAtLTUwLjAlLS0+IDEwMDAwMDAwMTUzMwogICAgMTAwMDAwMDAxNTMzWyJKRVJBIENvIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMjAyMjA4MQogICAgMTAwMDAyMDIyMDgxWyJKRVJBIFBvd2VyPGJyPk1hbmFnZW1lbnQgQXNpYSBCViJdIC0tNTAuMCUtLT4gMTAwMDAxMDExMTE0CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjUlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAxMDE1NTg3XzEyWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuMiUtLT4gMTAwMDAwMDAwNjUwCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuMyUtLT4gMTAwMDAwMDAwNjUwCiAgICAxMDAwMDAwMDA2NTBbIk1pdHN1YmlzaGkgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMjAyMjA4MwogICAgMTAwMDAyMDIyMDgzWyJER0EgVGhhaWxhbmQgQlYiXSAtLTI1LjAlLS0+IDEwMDAwMTAxMTExNAogICAgMTAwMDAxMDE1NTg3XzEzWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMiUtLT4gMTAwMDAwMDAwNjQ4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjUlLS0+IDEwMDAwMDAwMDY0OAogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS02LjMlLS0+IDEwMDAwMDAwMDY0OAogICAgMTAwMDAwMDAwNjQ4WyJLeXVzaHUgRWxlY3RyaWM8YnI+UG93ZXIgQ28gSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDIyMDg0CiAgICAxMDAwMDIwMjIwODRbIkt5dWRlbiBJbnRlcm5hdGlvbmFsPGJyPkV1cm9wZSBCViJdIC0tMjUuMCUtLT4gMTAwMDAxMDExMTE0CiAgICAxMDAwMDEwMTExMTRbIlRFUERJQSBHZW5lcmF0aW5nIEJWIl0gLS0yMi40MiUtLT4gMTAwMDAwMDAyMTMwCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxMTExNQogICAgMTAwMDAxMDExMTE1WyJFbGVjdHJpY2l0eTxicj5HZW5lcmF0aW5nIEF1dGhvcml0eTxicj5vZiBUaGFpbGFuZCBTYXZpbmcgJjxicj5DcmVkaXQgQ29vcGVyYXRpdmU8YnI+THRkIl0gLS02LjIxJS0tPiAxMDAwMDAwMDIxMzAKICAgIDEwMDAwMDAwMjEzMFsiRWxlY3RyaWNpdHk8YnI+R2VuZXJhdGluZyBQQ0wiXSAtLTI4LjAlLS0+IFAxMDAwMDA0MDI0ODEKICAgIDEwMDAwMTAxMTIyN1siUGxhdGZvcm0gUGFydG5lcnM8YnI+TExDIl0gLS01LjAlLS0+IFAxMDAwMDA0MDI0ODEKICAgIDEwMDAwMDAwMDc3N1siR292ZXJubWVudCBvZiBPbWFuIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAwNzgxCiAgICAxMDAwMDAwMDA3ODFbIk9RIFNBT0MiXSAtLTMwLjAlLS0+IDEwMDAwMDEzMjY3NQogICAgMTAwMDAwMTIzMjYxXzJbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS01LjUlLS0+IDEwMDAwMDAwMDkzNQogICAgMTAwMDAxMDE1NTg3XzE0WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tOTQuNSUtLT4gMTAwMDAwMDAwOTM1CiAgICAxMDAwMDAwMDA5MzVbIkdTIEhvbGRpbmdzIENvcnAiXSAtLTcwLjAlLS0+IDEwMDAwMDEzMjY3NQogICAgMTAwMDAwMTMyNjc1WyJHUyBFUFMgQ28gTHRkIl0gLS01LjAlLS0+IFAxMDAwMDA0MDI0ODEKICAgIDEwMDAwMDAwMTUzM1siSkVSQSBDbyBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDMzNjIKICAgIDEwMDAwMDAwMzM2MlsiSkVSQSBBbWVyaWNhcyBJbmMiXSAtLTUwLjAlLS0+IFAxMDAwMDA0MDI0ODEKICAgIDEwMDAwMTAxMTEzNlsiR292ZXJubWVudCBvZiBKYXBhbiJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMDYzNAogICAgMTAwMDAwMDAwNjM0WyJEZXZlbG9wbWVudCBCYW5rIG9mPGJyPkphcGFuIEluYyJdIC0tMTIuMCUtLT4gUDEwMDAwMDQwMjQ4MQogICAgUDEwMDAwMDQwMjQ4MVsiTGluZGVuIGNvZ2VuZXJhdGlvbjxicj5wbGFudCJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United States]]

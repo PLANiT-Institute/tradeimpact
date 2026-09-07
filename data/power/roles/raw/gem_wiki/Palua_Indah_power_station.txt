@@ -1,0 +1,123 @@
+# GEM wiki page: Palua Indah power station
+# URL: https://www.gem.wiki/Palua_Indah_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Palua Indah power station''' is an operating power station of at least 1200-megawatts (MW) in Pulau Indah, Selangor, Malaysia.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Palua Indah power station
+| Pulau Indah, Selangor, Malaysia
+| 2.940219, 101.262108 (approximate)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/search/Palua+Indah+CCGT+Power+Plant/@2.9402188,101.2621084,25048m/data=!3m1!1e3}}</ref>
+|}
+{{
+#display_map:
+2.940219, 101.262108
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://pipp.com.my/ |archive-url=https://web.archive.org/web/20221125144948/https://pipp.com.my/ |archive-date=2022-11-25}}</ref><ref name="autoref_2">{{cite web |url=https://www.ram.com.my/pressrelease/?prviewid=5719 |archive-url=https://web.archive.org/web/20220709131525/https://www.ram.com.my/pressrelease/?prviewid=5719 |archive-date=2022-07-09}}</ref><ref name="autoref_3">{{cite web |url=https://www.nsenergybusiness.com/news/ge-1-2gw-pulau-indah-facility-malaysia/ |archive-url=https://web.archive.org/web/20220709143031/https://www.nsenergybusiness.com/news/ge-1-2gw-pulau-indah-facility-malaysia/ |archive-date=2022-07-09}}</ref><ref name="autoref_4">{{cite web |url=https://clcprojects.com/megalift-handled-2-x-stators-for-the-pulau-indah-power-plant/ |archive-url=https://web.archive.org/web/20230319222951/https://clcprojects.com/megalift-handled-2-x-stators-for-the-pulau-indah-power-plant/ |archive-date=2023-03-19}}</ref><ref name="autoref_5">{{cite web |url=https://www.enerdata.net/publications/daily-energy-news/ge-equipped-12-gw-pulau-indah-ccgt-power-project-commissioned-malaysia.html}}</ref>
+| fossil gas: natural gas<ref name="autoref_1" />
+| 600<ref name="autoref_1" />
+| combined cycle<ref name="autoref_1" />
+| not found
+| 2025<ref name="autoref_6">{{cite web |url=https://www.power-technology.com/news/jacobs-12gw-power-plant-development-contract-malaysia/ |archive-url=https://web.archive.org/web/20210813120734/https://www.power-technology.com/news/jacobs-12gw-power-plant-development-contract-malaysia/ |archive-date=2021-08-13}}</ref><ref name="autoref_1" /><ref name="autoref_7">{{cite web |url=https://selangorjournal.my/2024/11/pulau-indah-plant-to-power-klang-valleys-increased-energy-needs-by-1q-next-year/}}</ref><ref name="autoref_5" />
+| GE Power: 9HA.01<ref name="autoref_8">{{cite web |url=https://www.power-technology.com/projects/pulau-indah-combined-cycle-power-plant-malaysia/ |title=Pulau Indah Combined-Cycle Power Plant, Malaysia |access-date=2024-07-17 |archive-url=https://web.archive.org/web/20240724183447/https://www.power-technology.com/projects/pulau-indah-combined-cycle-power-plant-malaysia/ |archive-date=2024-07-24}}</ref><ref name="autoref_9">{{cite web |url=https://www.gevernova.com/gas-power/resources/case-studies/pulau-indah-power-plant-energy-malaysia |title=Reducing Greenhouse Gases in Malaysia | GE Vernova |website=gepower-v2 |access-date=2024-07-17 |archive-url=https://web.archive.org/web/20240724183625/https://www.gevernova.com/gas-power/resources/case-studies/pulau-indah-power-plant-energy-malaysia |archive-date=2024-07-24}}</ref>
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_4" /><ref name="autoref_5" />
+| fossil gas: natural gas<ref name="autoref_1" />
+| 600<ref name="autoref_1" />
+| combined cycle<ref name="autoref_1" />
+| not found
+| 2025<ref name="autoref_1" /><ref name="autoref_7" /><ref name="autoref_5" /><ref name="autoref_6" /><ref name="autoref_10">{{cite web |url=https://pipp.com.my/index.php/news-updates/ |title=News & Updates |access-date=2024-06-24 |archive-url=https://web.archive.org/web/20240627172437/https://pipp.com.my/index.php/news-updates/ |archive-date=2024-06-27}}</ref>
+| GE Power: 9HA.01<ref name="autoref_8" /><ref name="autoref_9" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Korea Electric Power Corp [25%]; Worldwide Holdings Bhd [75%]<ref name="autoref_11">{{cite web |url=https://www.nsenergybusiness.com/projects/pulau-indah-gas-fired-power-project/ |archive-url=https://web.archive.org/web/20220524050409/https://www.nsenergybusiness.com/projects/pulau-indah-gas-fired-power-project/ |archive-date=2022-05-24}}</ref><ref name="autoref_11" />
+| Perbadanan Kemajuan Negeri Selangor [75.0%]; Korea Electric Power Corp [25.0%]
+|-
+| 2
+| Korea Electric Power Corp [25%]; Worldwide Holdings Bhd [75%]<ref name="autoref_11" /><ref name="autoref_11" />
+| Perbadanan Kemajuan Negeri Selangor [75.0%]; Korea Electric Power Corp [25.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMjUuMCUtLT4gUDEwMDAwMDQwNTMwOAogICAgMTAwMDAwMDAwNzAxWyJQZXJiYWRhbmFuIEtlbWFqdWFuPGJyPk5lZ2VyaSBTZWxhbmdvciJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwNDM0MgogICAgMTAwMDAwMDA0MzQyWyJXb3JsZHdpZGUgSG9sZGluZ3M8YnI+QmhkIl0gLS03NS4wJS0tPiBQMTAwMDAwNDA1MzA4CiAgICBQMTAwMDAwNDA1MzA4WyJQYWx1YSBJbmRhaCBwb3dlcjxicj5zdGF0aW9uIl0K}}
+
+==Background==
+
+The power station will use two GE 9HA.01 gas turbines, which are hydrogen capable but as December 2022 there were no plans for the plant to transition to using hydrogen.<ref>{{Cite web|url=https://www.ge.com/news/press-releases/ge-wins-order-for-12-gigawatts-of-power-equipment-in-malaysia|title=GE Wins Order for 1.2 Gigawatts of Power Equipment in Malaysia|last=|first=|date=March 24, 2021|website=GE|url-status=live|archive-url=|archive-date=|access-date=December 12, 2022}}</ref>
+
+The overall construction cost for the power station was reported in March 2021 as MYR (Malaysian Riggitt) 3.3 billion, which converted to US$745 million in March 2025. Three Malaysian banks, the development bank Bank Pembangunan and two commercial banks, Maybank and United Overseas Bank, provided a joint loan facility totalling MYR 2.7 billion, or US$610 million in March 2025. The project sponsors Worldwide Holdings and KEPCO provided the remaining MYR 600 million in equity.<ref>[https://www.bpmb.com.my/bank-pembangunan-to-co-finance-rm3-3b-power-plant-project-in-pulau-indah/ Bank Pembangunan to co-finance RM3.3b power plant project in Pulau Indah], Bank Pembangunan press release, Mar. 29, 2021</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Malaysia]]

@@ -1,0 +1,107 @@
+# GEM wiki page: Kwinana Refinery cogeneration power station
+# URL: https://www.gem.wiki/Kwinana_Refinery_cogeneration_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Kwinana Refinery cogeneration power station''' is an operating power station of at least 119-megawatts (MW) in Kwinana, Western Australia, Australia.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Kwinana Refinery cogeneration power station
+| Kwinana, Western Australia, Australia
+| -32.2226, 115.7662 (exact)<ref name="autoref_0">{{cite web |url=http://www.globalenergyobservatory.org/geoid/43230 |archive-url=https://web.archive.org/web/20240405061207/https://www.globalenergyobservatory.org/geoid/43230 |archive-date=2024-04-05}}</ref>
+|}
+{{
+#display_map:
+-32.2226, 115.7662
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': -32.2226, 115.7662
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.boilingcold.com.au/nine-takeaways-from-bps-shock-closure-kwinana-refinery/ |archive-url=https://web.archive.org/web/20221027210833/https://www.boilingcold.com.au/nine-takeaways-from-bps-shock-closure-kwinana-refinery/ |archive-date=2022-10-27}}</ref>
+| fossil gas: natural gas<ref name="autoref_2">{{cite web |url=https://www.mediastatements.wa.gov.au/Pages/Court/1995/06/Work-to-start-on-'cogeneration'-power-station-at-Kwinana-oil-refinery.aspx |archive-url=https://web.archive.org/web/20220118030541/https://www.mediastatements.wa.gov.au/Pages/Court/1995/06/Work-to-start-on-%27cogeneration%27-power-station-at-Kwinana-oil-refinery.aspx |archive-date=2022-01-18}}</ref>
+| 119<ref name="autoref_2" /><ref name="autoref_3">{{cite web |url=https://www.ratchaustralia.com/bp_kwinana%20/about_bp_kwinana%20.html |archive-url=https://web.archive.org/web/20220118031214/http://www.ratchaustralia.com/bp_kwinana%20/about_bp_kwinana%20.html |archive-date=2022-01-18}}</ref>
+| combined cycle<ref name="autoref_2" />
+| not found
+| 1998<ref name="autoref_0" /><ref name="autoref_3" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Mitsui & Co Ltd [35%]; RATCH-Australia Corporation Pty Ltd [30%]; ENGIE SA [35%]<ref name="autoref_4">{{cite web |url=http://www.ratchaustralia.com/bp_kwinana%20/about_bp_kwinana%20.html |archive-url=https://web.archive.org/web/20220118031214/http://www.ratchaustralia.com/bp_kwinana%20/about_bp_kwinana%20.html |archive-date=2022-01-18}}</ref><ref name="autoref_5">{{cite web |url=https://web.archive.org/web/20191021233328/https://engie.com.au/home/what-we-do/our-assets/kwinana/ |archive-url=https://web.archive.org/web/20191021233328/https://engie.com.au/home/what-we-do/our-assets/kwinana/ |archive-date=21 October 2019}}</ref><ref name="autoref_4" /><ref name="autoref_5" /><ref name="autoref_4" /><ref name="autoref_5" />
+| ENGIE SA [35.0%]; Mitsui & Co Ltd [35.0%]; RATCH Group PCL [30.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': both<ref name="autoref_2" />
+* '''Captive industry''': Oil & Refining<ref name="autoref_2" />
+* '''Non-industry use''': power<ref name="autoref_2" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAxNTNbIkdvdmVybm1lbnQgb2Y8YnI+VGhhaWxhbmQiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDIxMjkKICAgIDEwMDAwMDAwMjEyOVsiRWxlY3RyaWNpdHk8YnI+R2VuZXJhdGluZyBBdXRob3JpdHk8YnI+b2YgVGhhaWxhbmQiXSAtLTQ1LjAlLS0+IDEwMDAwMDAwMTYzNgogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC42NiUtLT4gMTAwMDAwMDAxNjM2CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxMDg4NgogICAgMTAwMDAxMDEwODg2WyJFR0FUIFNhdmluZyBhbmQ8YnI+Q3JlZGl0IENvb3BlcmF0aXZlPGJyPkx0ZCJdIC0tNi4zNCUtLT4gMTAwMDAwMDAxNjM2CiAgICAxMDAwMDAwMDE2MzZbIlJBVENIIEdyb3VwIFBDTCJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMzg2MwogICAgMTAwMDAwMDAzODYzWyJSQVRDSC1BdXN0cmFsaWE8YnI+Q29ycG9yYXRpb24gUHR5IEx0ZCJdIC0tMzAuMCUtLT4gUDEwMDAwMDQwNzYwNwogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi40MyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02Ny41JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi4xJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS05Ljk3JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDAwMDY1MVsiTWl0c3VpICYgQ28gTHRkIl0gLS0zNS4wJS0tPiBQMTAwMDAwNDA3NjA3CiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MC40NyUtLT4gMTAwMDAwMDAwMzgyCiAgICAxMDAwMDEwMDAwNzlbIkdvdmVybm1lbnQgb2YgRnJhbmNlIl0gLS0yMy42NCUtLT4gMTAwMDAwMDAwMzgyCiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTUuODklLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAwMDAwMzgyWyJFTkdJRSBTQSJdIC0tMzUuMCUtLT4gUDEwMDAwMDQwNzYwNwogICAgUDEwMDAwMDQwNzYwN1siS3dpbmFuYSBSZWZpbmVyeTxicj5jb2dlbmVyYXRpb24gcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Australia]]

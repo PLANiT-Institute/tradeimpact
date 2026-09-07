@@ -1,0 +1,123 @@
+# GEM wiki page: PLTGU Jawa-1 power station
+# URL: https://www.gem.wiki/PLTGU_Jawa-1_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''PLTGU Jawa-1 power station''' is an operating power station of at least 1760-megawatts (MW) in Cilamaya, Jawa, Indonesia.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| PLTGU Jawa-1 power station
+| Cilamaya, Jawa, Indonesia
+| -6.244232, 107.588132 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/PLTGU+Jawa+1+Power+(PT.Pertamina+Power+Indonesia)/@-6.2414703,107.587958,779m/data=!3m2!1e3!4b1!4m5!3m4!1s0x2e696704f33108d7:0xd656fd789628d0eb!8m2!3d-6.2414756!4d107.5901467}}</ref>
+|}
+{{
+#display_map:
+-6.244232, 107.588132
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2''': -6.244232, 107.588132
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.sojitz.com/en/news/article/20240405.html |title=Jawa 1 LNG Gas-Fired Power Plant in Indonesia Begins Commercial Operations｜ News Room｜Sojitz Corporation |website=Sojitz Corporation |access-date=2024-06-03 |archive-url=https://web.archive.org/web/20240606031041/https://www.sojitz.com/en/news/article/20240405.html |archive-date=2024-06-06}}</ref><ref name="autoref_2">{{cite web |url=https://tanahair.net/pltgu-jawa-1-first-integrated-lng-to-power-in-asia-in-operation/ |archive-url=https://web.archive.org/web/20220529042856/https://tanahair.net/pltgu-jawa-1-first-integrated-lng-to-power-in-asia-in-operation/ |archive-date=2022-05-29}}</ref><ref name="autoref_3">{{cite web |url=https://kumparan.com/kumparanbisnis/pltgu-jawa-1-baru-akan-rampung-akhir-2023-apa-sebabnya-20NPLxCXYtc/1}}</ref><ref name="autoref_4">{{cite web |url=https://magz.tempo.co/read/economy/40629/java-1-pltgu-project-delays |archive-url=https://web.archive.org/web/20230531021918/https://magz.tempo.co/read/economy/40629/java-1-pltgu-project-delays |archive-date=2023-05-31}}</ref>
+| fossil gas: LNG<ref name="autoref_5">{{cite web |url=https://pertaminapower.com/gas-fired-power-plant |archive-url=https://web.archive.org/web/20211022224645/https://pertaminapower.com/gas-fired-power-plant |archive-date=2021-10-22}}</ref>
+| 880<ref name="autoref_5" /><ref name="autoref_6">{{cite web |url=https://www.nsenergybusiness.com/projects/jawa-1-gas-fired-power-project-west-java/ |archive-url=https://web.archive.org/web/20221222203700/https://www.nsenergybusiness.com/projects/jawa-1-gas-fired-power-project-west-java/ |archive-date=2022-12-22}}</ref><ref name="autoref_7">{{cite web |url=https://pertaminapower.com/ccgt-jawa |archive-url=https://web.archive.org/web/20221222201130/https://pertaminapower.com/ccgt-jawa |archive-date=2022-12-22}}</ref>
+| combined cycle<ref name="autoref_5" />
+| not found
+| 2024<ref name="autoref_1" /><ref name="autoref_8">{{cite web |url=https://kumparan.com/kumparanbisnis/pltgu-jawa-1-baru-akan-rampung-akhir-2023-apa-sebabnya-20NPLxCXYtc/full}}</ref>
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_4" />
+| fossil gas: LNG<ref name="autoref_5" />
+| 880<ref name="autoref_5" /><ref name="autoref_6" /><ref name="autoref_7" />
+| combined cycle<ref name="autoref_5" />
+| not found
+| 2024<ref name="autoref_1" /><ref name="autoref_8" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| PT Jawa Satu Power [100%]<ref name="autoref_9">{{cite web |url=https://www.marubeni.com/en/news/2018/release/00047.html |archive-url=https://web.archive.org/web/20220526052948/https://www.marubeni.com/en/news/2018/release/00047.html |archive-date=2022-05-26}}</ref><ref name="autoref_7" />
+| Marubeni Corp [40.0%]; PT Pertamina (Persero) [40.0%]; Sojitz Corp [20.0%]
+|-
+| 2
+| PT Jawa Satu Power [100%]<ref name="autoref_9" /><ref name="autoref_7" />
+| Marubeni Corp [40.0%]; PT Pertamina (Persero) [40.0%]; Sojitz Corp [20.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNDElLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS4yMyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS40NiUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQ3JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS02LjU2JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjYuNzUlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS0xMC4xNCUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjU1JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMDAwMDY0OVsiTWFydWJlbmkgQ29ycCJdIC0tNDAuMCUtLT4gMTAwMDAwMDAzNzU5CiAgICAxMDAwMDEwMDAwODRbIkdvdmVybm1lbnQgb2Y8YnI+SW5kb25lc2lhIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAwNTM4CiAgICAxMDAwMDAwMDA1MzhbIlBUIFBlcnRhbWluYTxicj4oUGVyc2VybykiXSAtLTQwLjAlLS0+IDEwMDAwMDAwMzc1OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNy42NSUtLT4gMTAwMDAwMDAwNjU2CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00MC44MSUtLT4gMTAwMDAwMDAwNjU2CiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLTM0LjI5JS0tPiAxMDAwMDAwMDA2NTYKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNy4yNSUtLT4gMTAwMDAwMDAwNjU2CiAgICAxMDAwMDAwMDA2NTZbIlNvaml0eiBDb3JwIl0gLS0yMC4wJS0tPiAxMDAwMDAwMDM3NTkKICAgIDEwMDAwMDAwMzc1OVsiUFQgSmF3YSBTYXR1IFBvd2VyIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDQwNTI3NgogICAgUDEwMDAwMDQwNTI3NlsiUExUR1UgSmF3YS0xIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background==
+
+The 1,760MW gas-fired power plant is estimated to have cost US$1.4 billion out of a total investment of approximately US$1.8 billion that also includes the development and construction of the associated [[Jawa Satu FSRU]], an LNG import terminal that started operating in 2021.<ref name="NSEnergy">BV Swagath, [https://www.nsenergybusiness.com/news/pertamina-jawa-1-power-project/ Pertamina closes financing for $1.8bn Jawa 1 gas-to-power project], NS Energy, Dec. 10, 2018</ref>
+
+A total debt financing package of US$1.312 billion for both the power plant and the FSRU reached financial close in December 2018. This comprised, from state-backed financial institutions, a US$604 million loan from Japan Bank for International Cooperation (JBIC), a US$185 million loan from the Asian Development Bank (ADB), and a US$120 million loan from Leading Asia's Private Infrastructure Fund (LEAP).<ref>[https://www.jbic.go.jp/en/information/press/press-2018/1022-011485.html Project Financing for Jawa 1 Gas-to-Power Project in Indonesia], Japan Bank for International Cooperation press release, Oct. 22, 2018</ref><ref>[https://www.adb.org/projects/51112-001/main Indonesia : Jawa-1 Liquefied Natural Gas-to-Power Project], Asian Development Bank Project Data Sheet, last updated Dec. 9, 2024</ref> Five commercial banks contributed a US$403 million loan, a finance package covered by Nippon Export and Investment Insurance. The commercial banks are Mizuho, MUFG, Oversea Chinese Banking Corporation, Société Générale, and Crédit Agricole.<ref name="NSEnergy" /><ref>[https://equator-principles.com/report/credit-agricole-corporate-and-investment-bank-2019/ CRÉDIT AGRICOLE CORPORATE AND INVESTMENT BANK (2019)], Equator Principles EPFIs and reporting, accessed May 28, 2025</ref> The PT Jawa Satu Power special purpose vehicle comprising PT Pertamina (Persero), Marubeni, and Sojitz made an equity investment of US$463 million.<ref>[https://www.ijglobal.com/data/transaction/33879 Java 1 FSRU & CCGT Power Plant (1760MW) IPP], IJGlobal Transaction Data, last updated Sep. 2, 2024</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Indonesia]]

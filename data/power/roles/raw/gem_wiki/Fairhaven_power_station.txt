@@ -1,0 +1,93 @@
+# GEM wiki page: Fairhaven power station
+# URL: https://www.gem.wiki/Fairhaven_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalBioenergyPowerTracker}}
+'''Fairhaven power station''' is an operating power station of at least 18-megawatts (MW) in United States.
+It is also known as Fairhaven Power Co..
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Fairhaven power station
+| United States
+| 40.7995, -124.2028 (exact)<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/ |title=Preliminary Monthly Electric Generator Inventory (based on Form EIA-860M as a supplement to Form EIA-860) - U.S. Energy Information Administration (EIA) |website=www.eia.gov |access-date=2025-01-06 |archive-url=https://web.archive.org/web/20230509053328/https://www.eia.gov/electricity/data/eia860m/ |archive-date=2023-05-09}}</ref>
+|}
+{{
+#display_map:
+40.7995, -124.2028
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''''': 40.7995, -124.2028
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Start year
+|-
+| Operating<ref name="autoref_0" />
+| bioenergy: wood & other biomass (solids), fossil gas: natural gas<ref name="autoref_0" />
+| 18.8<ref name="autoref_0" />
+| 1986<ref name="autoref_0" />
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Owner
+!Parent
+|-
+| DG Fairhaven Power LLC<ref name="autoref_0" />
+| Korea Electric Power Corp
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTAwLjAlLS0+IDEwMDAwMjAwNDU2OQogICAgMTAwMDAyMDA0NTY5WyJLb3JlYSBEZXZlbG9wbWVudDxicj5CYW5rIENvIl0gLS0zMi45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMDk0NgogICAgMTAwMDAwMDAwOTQ2WyJLb3JlYSBFYXN0LVdlc3Q8YnI+UG93ZXIgQ28gTHRkIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDExNjk0CiAgICAxMDAwMDEwMTE2OTRbIkVXUCBSZW5ld2FibGUgQ29ycCJdIC0tPiAxMDAwMDIwMTY3NjgKICAgIDEwMDAwMjAxNjc2OFsiREcgRmFpcmhhdmVuIFBvd2VyPGJyPkxMQyJdIC0tPiBQMTAwMDAxMDQ4MzYxCiAgICBQMTAwMDAxMDQ4MzYxWyJGYWlyaGF2ZW4gcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of bioenergy power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-bioenergy-power-tracker/ Global Bioenergy Power Tracker] on the Global Energy Monitor website.
+[[Category:Bioenergy power stations]][[Category:Bioenergy power stations in United States]]

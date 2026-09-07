@@ -1,0 +1,74 @@
+# GEM wiki page: Yona solar farm
+# URL: https://www.gem.wiki/Yona_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Yona solar farm''' is an announced solar  farm in Yona, Guam.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Yona solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| Announced<ref name="autoref_0">{{cite web |url=https://www.guampdn.com/news/puc-approves-132mw-solar-project-in-yona-guams-biggest-yet/article_58670e08-f598-11ef-af8c-6307768c5408.html}}</ref>
+| 2028 (planned)<ref name="autoref_0" />
+| 132 MW<ref name="autoref_0" />
+| Assumed PV
+| Korea East-West Power Co Ltd; Korea Electric Power Corp; Samsun E&C America Inc; Samsung C&T Corp (한국전력공사; 한국동서발전(주); 삼성물산(주))<ref name="autoref_1">{{cite web |url=https://www.guampdn.com/news/land-use-commission-oks-132-mw-solar-farm-off-cross-island-road-in-yona/article_d79db142-d95d-11ef-9cb9-33302b430783.html, https://www.guampdn.com/news/land-use-commission-oks-132-mw-solar-farm-off-cross-island-road-in-yona/article_d79db142-d95d-11ef-9cb9-33302b430783.html, https://www.guampdn.com/news/land-use-commission-oks-132-mw-solar-farm-off-cross-island-road-in-yona/article_d79db142-d95d-11ef-9cb9-33302b430783.html, https://www.guampdn.com/news/land-use-commission-oks-132-mw-solar-farm-off-cross-island-road-in-yona/article_d79db142-d95d-11ef-9cb9-33302b430783.html}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Yona solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Yona, Guam<ref name="autoref_2">{{cite web |url=https://www.guampdn.com/news/land-use-commission-oks-132-mw-solar-farm-off-cross-island-road-in-yona/article_d79db142-d95d-11ef-9cb9-33302b430783.html}}</ref>
+| 13.3880, 144.7217 (approximate)<ref name="autoref_2" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+13.38804, 144.721744~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Guam]]
+
+__NOTOC__

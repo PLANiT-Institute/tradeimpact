@@ -1,0 +1,141 @@
+# GEM wiki page: Arctic LNG 2 Terminal power station
+# URL: https://www.gem.wiki/Arctic_LNG_2_Terminal_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Arctic LNG 2 Terminal power station''' (терминал «Утренний», Арктик СПГ-2) is an operating power station of at least 1000-megawatts (MW) in Gydan Peninsula, Yamal-Nenets, Russia with multiple units, some of which are not currently operating.
+It is also known as Utrenny LNG Terminal power station.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Arctic LNG 2 Terminal power station
+| Gydan Peninsula, Yamal-Nenets, Russia
+| 70.99517, 73.8295 (exact)<ref name="autoref_0">{{cite web |url=https://www.openstreetmap.org/search?lat=70.99517&lon=73.82950&zoom=13}}</ref>
+|}
+{{
+#display_map:
+70.99517, 73.8295
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Phase 1, Phase 2 (Beregovaya GTES), Phase 3''': 70.99517, 73.8295
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| Phase 1
+| Operating<ref name="autoref_1">{{cite web |url=https://neftegaz.ru/news/spg-szhizhennyy-prirodnyy-gaz/918517-kitay-prinyal-novuyu-partiyu-gaza-s-proekta-arktik-spg-2/}}</ref><ref name="autoref_2">{{cite web |url=https://interfax.com/newsroom/top-stories/90530/ |title=Novatek to order 1,500-MW power plant for Arctic LNG 2 from China's Wison |date=2025-05-16 |website=Interfax |access-date=2025-10-20 |archive-url=https://web.archive.org/web/20251023202057/https://interfax.com/newsroom/top-stories/90530/ |archive-date=2025-10-23}}</ref><ref name="autoref_3">{{cite web |url=https://www.bairdmaritime.com/offshore/drilling-production/russias-arctic-lng-2-starts-output-at-second-train-source-says}}</ref><ref name="autoref_4">{{cite web |url=https://www.highnorthnews.com/en/russia-continues-working-sanctioned-arctic-lng-2-wison-power-modules-installation-and-gas-flaring}}</ref>
+| fossil gas: natural gas<ref name="autoref_2" />
+| 500<ref name="autoref_2" />
+| internal combustion<ref name="autoref_2" />
+| no<ref name="autoref_2" />
+| 2025<ref name="autoref_4" /><ref name="autoref_5">{{cite web |url=https://www.vedomosti.ru/business/articles/2025/04/15/1104353-novatek-dolzhen-zapustit-tri-proekta-po-szhizheniyu-gaza}}</ref>
+| Harbin Electric General Gas Turbine (Qinhuangdao) Co., Ltd.<ref name="autoref_6">{{cite web |url=https://www.highnorthnews.com/en/inside-elaborate-scheme-transport-chinese-power-plant-russias-arctic-undetected |title=Inside the Elaborate Scheme to Transport a Chinese Power Plant to Russia’s Arctic Undetected |date=2024-10-01 |website=www.highnorthnews.com |access-date=2025-10-20 |archive-url=https://web.archive.org/web/20251023202651/https://www.highnorthnews.com/en/inside-elaborate-scheme-transport-chinese-power-plant-russias-arctic-undetected |archive-date=2025-10-23}}</ref>
+| no
+|-
+| Phase 2 (Beregovaya GTES)
+| Construction<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_4" />
+| fossil gas: natural gas<ref name="autoref_2" />
+| 500<ref name="autoref_2" /><ref name="autoref_7">{{cite web |url=https://energybase.ru/power-plant/beregovaya-gttp}}</ref>
+| internal combustion<ref name="autoref_2" />
+| no<ref name="autoref_2" />
+| 2028 (planned)<ref name="autoref_8">{{cite web |url=https://www.rbc.ru/business/22/08/2024/66c5d7e39a794747eccfaa4f}}</ref><ref name="autoref_4" /><ref name="autoref_5" />
+| Harbin Electric General Gas Turbine (Qinhuangdao) Co., Ltd.<ref name="autoref_6" />
+| no
+|-
+| Phase 3
+| Operating<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_4" />
+| fossil gas: natural gas<ref name="autoref_2" />
+| 500<ref name="autoref_2" />
+| internal combustion<ref name="autoref_2" />
+| no<ref name="autoref_2" />
+| 2025<ref name="autoref_4" /><ref name="autoref_5" />
+| Harbin Electric General Gas Turbine (Qinhuangdao) Co., Ltd.<ref name="autoref_6" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| Phase 1
+| Arctic LNG 2<ref name="autoref_9">{{cite web |url=https://www.novatek.ru/en/about/lng-projects/arctic-lng/}}</ref>
+| Arctic LNG 2 LLC [100%]<ref name="autoref_9" />
+| Novatek PJSC [60.0%]; China National Petroleum Corp [10.0%]; CNOOC Ltd [10.0%]; TotalEnergies SE [10.0%]; Japan Organization for Metals and Energy Security [7.5%]; Mitsui & Co Ltd [2.5%]
+|-
+| Phase 2 (Beregovaya GTES)
+| Arctic LNG 2<ref name="autoref_9" />
+| Arctic LNG 2 LLC [100%]<ref name="autoref_9" />
+| Novatek PJSC [60.0%]; China National Petroleum Corp [10.0%]; CNOOC Ltd [10.0%]; TotalEnergies SE [10.0%]; Japan Organization for Metals and Energy Security [7.5%]; Mitsui & Co Ltd [2.5%]
+|-
+| Phase 3
+| Arctic LNG 2<ref name="autoref_9" />
+| Arctic LNG 2 LLC [100%]<ref name="autoref_9" />
+| Novatek PJSC [60.0%]; China National Petroleum Corp [10.0%]; CNOOC Ltd [10.0%]; TotalEnergies SE [10.0%]; Japan Organization for Metals and Energy Security [7.5%]; Mitsui & Co Ltd [2.5%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_2" />
+* '''Captive industry''': Other<ref name="autoref_2" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tNy43JS0tPiAxMDAwMDAwMDAzODcKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTYuMSUtLT4gMTAwMDAwMDAwMzg3CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjIlLS0+IDEwMDAwMDAwMDM4NwogICAgMTAwMDAwMDAwMzg3WyJUb3RhbEVuZXJnaWVzIFNFIl0gLS0xMC4wJS0tPiAxMDAwMDIwMDQ4MTYKICAgIDEwMDAwMTAxMTEzNlsiR292ZXJubWVudCBvZiBKYXBhbiJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxMDE1NgogICAgMTAwMDAxMDEwMTU2WyJKYXBhbiBPcmdhbml6YXRpb248YnI+Zm9yIE1ldGFscyBhbmQ8YnI+RW5lcmd5IFNlY3VyaXR5Il0gLS03LjUlLS0+IDEwMDAwMjAwNDgxNgogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0yMi4zNSUtLT4gMTAwMDAwMTUyNDcyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTQ4LjI1JS0tPiAxMDAwMDAxNTI0NzIKICAgIDEwMDAwMTAwMDA5NFsiR292ZXJubWVudCBvZiBSdXNzaWEiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDAyNzAKICAgIDEwMDAwMTAwMDI3MFsiRmVkZXJhbCBBZ2VuY3kgZm9yPGJyPlN0YXRlIFByb3BlcnR5PGJyPk1hbmFnZW1lbnQgKFJ1c3NpYSkiXSAtLTM4LjM3JS0tPiAxMDAwMDAwMDE0OTIKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTAuNjYlLS0+IDEwMDAwMDAwMTQ5MgogICAgMTAwMDAxMDAwMjcwWyJGZWRlcmFsIEFnZW5jeSBmb3I8YnI+U3RhdGUgUHJvcGVydHk8YnI+TWFuYWdlbWVudCAoUnVzc2lhKSJdIC0tMTAwLjAlLS0+IDEwMDAwMDEyMTE4NQogICAgMTAwMDAwMTIxMTg1WyJSb3NuZWZ0ZWdheiBKU0MiXSAtLTEwLjk3JS0tPiAxMDAwMDAwMDE0OTIKICAgIDEwMDAwMDAwMTQ5MlsiR2F6cHJvbSBQSlNDIl0gLS0xMC4wJS0tPiAxMDAwMDAxNTI0NzIKICAgIDEwMDAwMDAwMDM4N1siVG90YWxFbmVyZ2llcyBTRSJdIC0tMTkuNCUtLT4gMTAwMDAwMTUyNDcyCiAgICAxMDAwMDAxNTI0NzJbIk5vdmF0ZWsgUEpTQyJdIC0tNjAuMCUtLT4gMTAwMDAyMDA0ODE2CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLT4gMTAwMDAxMDE0MzU0CiAgICAxMDAwMDEwMTQ4NjZbIkdvdmVybm1lbnQgb2YgQ2hpbmEiXSAtLT4gMTAwMDAxMDAwMDg2CiAgICAxMDAwMDEwMDAwODZbIlN0YXRlLW93bmVkIEFzc2V0czxicj5TdXBlcnZpc2lvbiBhbmQ8YnI+QWRtaW5pc3RyYXRpb248YnI+Q29tbWlzc2lvbiJdIC0tOTAuMCUtLT4gMTAwMDAwMDAwMTcyCiAgICAxMDAwMDEwMTQ4NjZbIkdvdmVybm1lbnQgb2YgQ2hpbmEiXSAtLT4gMTAwMDAwMTc5OTY4CiAgICAxMDAwMDAxNzk5NjhbIk5hdGlvbmFsIENvdW5jaWwgZm9yPGJyPlNvY2lhbCBTZWN1cml0eSBGdW5kIl0gLS0xMC4wJS0tPiAxMDAwMDAwMDAxNzIKICAgIDEwMDAwMDAwMDE3MlsiQ2hpbmEgTmF0aW9uYWw8YnI+T2Zmc2hvcmUgT2lsIENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMDQ5NTkKICAgIDEwMDAwMjAwNDk1OVsiT3ZlcnNlYXMgT2lsIGFuZCBHYXM8YnI+Q29ycG9yYXRpb24gTHRkIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0OTU4CiAgICAxMDAwMDIwMDQ5NThbIkNOT09DIChCVkkpIEx0ZCJdIC0tNjAuNTQlLS0+IDEwMDAwMTAxNDM1NAogICAgMTAwMDAxMDE0MzU0WyJDTk9PQyBMdGQiXSAtLTEwLjAlLS0+IDEwMDAwMjAwNDgxNgogICAgMTAwMDAxMDAwMDg2WyJTdGF0ZS1vd25lZCBBc3NldHM8YnI+U3VwZXJ2aXNpb24gYW5kPGJyPkFkbWluaXN0cmF0aW9uPGJyPkNvbW1pc3Npb24iXSAtLTEwMC4wJS0tPiAxMDAwMDAxODA3MzMKICAgIDEwMDAwMDE4MDczM1siQ2hpbmEgTmF0aW9uYWw8YnI+UGV0cm9sZXVtIENvcnAiXSAtLTEwLjAlLS0+IDEwMDAwMjAwNDgxNgogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzJbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18xMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzEyWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQzJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAxNTU4N18xM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTY3LjUlLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS02LjElLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTkuOTclLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAwMDAwNjUxWyJNaXRzdWkgJiBDbyBMdGQiXSAtLTIuNSUtLT4gMTAwMDAyMDA0ODE2CiAgICAxMDAwMDIwMDQ4MTZbIkFyY3RpYyBMTkcgMiBMTEMiXSAtLTEwMC4wJS0tPiBQMTAwMDAxMDYxNjA3CiAgICBQMTAwMDAxMDYxNjA3WyJBcmN0aWMgTE5HIDI8YnI+VGVybWluYWwgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Russia]]

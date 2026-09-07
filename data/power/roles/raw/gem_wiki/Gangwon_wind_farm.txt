@@ -1,0 +1,105 @@
+# GEM wiki page: Gangwon wind farm
+# URL: https://www.gem.wiki/Gangwon_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' GaWiP
+
+'''Gangwon wind farm''' is an operating wind farm in Pyeongchang-gun, South Korea.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Gangwon wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://cdm.unfccc.int/filestorage/C/8/M/C8M4S86GTVS0T8R4Q0JAI3VFN8X5G7/CDM%26%2350868.pdf?t=anZ8cXlwenJ0fDCUloFtEcmES1s7xSK20YcG |archive-url=https://web.archive.org/web/20210831200515/https://cdm.unfccc.int/filestorage/C/8/M/C8M4S86GTVS0T8R4Q0JAI3VFN8X5G7/CDM%26%2350868.pdf?t=anZ8cXlwenJ0fDCUloFtEcmES1s7xSK20YcG |archive-date=31 August 2021}}</ref>
+| 2005<ref name="autoref_0" />
+| 28 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_0" />
+| Marubeni Corp; Unison Co Ltd; Eurus Energy; Gangwon Wind Power Co Ltd (株式会社ユーラスエナジーホールディングス; 丸紅株式会社)<ref name="autoref_1">{{cite web |url=https://cdm.unfccc.int/filestorage/C/8/M/C8M4S86GTVS0T8R4Q0JAI3VFN8X5G7/CDM%26%2350868.pdf?t=anZ8cXlwenJ0fDCUloFtEcmES1s7xSK20YcG, https://cdm.unfccc.int/filestorage/C/8/M/C8M4S86GTVS0T8R4Q0JAI3VFN8X5G7/CDM%26%2350868.pdf?t=anZ8cXlwenJ0fDCUloFtEcmES1s7xSK20YcG, https://cdm.unfccc.int/filestorage/C/8/M/C8M4S86GTVS0T8R4Q0JAI3VFN8X5G7/CDM%26%2350868.pdf?t=anZ8cXlwenJ0fDCUloFtEcmES1s7xSK20YcG, https://cdm.unfccc.int/filestorage/C/8/M/C8M4S86GTVS0T8R4Q0JAI3VFN8X5G7/CDM%26%2350868.pdf?t=anZ8cXlwenJ0fDCUloFtEcmES1s7xSK20YcG}}</ref>
+| Unison Energy<ref name="autoref_0" />
+|-
+| 2
+| Operating<ref name="autoref_0" />
+| 2006<ref name="autoref_0" />
+| 20 MW<ref name="autoref_2">{{cite web |url=https://www.thewindpower.net/windfarm_en_3797.php |archive-url=https://web.archive.org/web/20240125193333/https://www.thewindpower.net/windfarm_en_3797.php |archive-date=2024-01-25}}</ref>
+| Onshore<ref name="autoref_2" />
+| Unison Co Ltd; Marubeni Corp; Eurus Energy; Gangwon Wind Power Co Ltd (株式会社ユーラスエナジーホールディングス; 丸紅株式会社)<ref name="autoref_1" />
+| Unison Energy<ref name="autoref_0" />
+|-
+| 3
+| Operating<ref name="autoref_0" />
+| 2006<ref name="autoref_0" />
+| 50 MW<ref name="autoref_2" />
+| Onshore<ref name="autoref_2" />
+| Unison Co Ltd; Marubeni Corp; Eurus Energy; Gangwon Wind Power Co Ltd (株式会社ユーラスエナジーホールディングス; 丸紅株式会社)<ref name="autoref_1" />
+| Unison Energy<ref name="autoref_0" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Gangwon wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Pyeongchang-gun, South Korea<ref name="autoref_3">{{cite web |url=http://globalenergyobservatory.org/geoid/42535 |archive-url=https://web.archive.org/web/20240131190330/https://globalenergyobservatory.org/geoid/42535 |archive-date=2024-01-31}}</ref>
+| 37.7314, 128.7443 (exact)<ref name="autoref_3" />
+|-
+| 2
+| Pyeongchang-gun, South Korea<ref name="autoref_3" />
+| 37.7314, 128.7443 (exact)<ref name="autoref_3" />
+|-
+| 3
+| Pyeongchang-gun, South Korea<ref name="autoref_3" />
+| 37.7314, 128.7443 (exact)<ref name="autoref_3" />
+|}
+The map below shows the exact locations of the wind farm phases:
+{{
+#display_map:
+37.7314, 128.7443~ ~ ~ ~ ~Phases 1, 2, 3
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in South Korea]]
+
+__NOTOC__

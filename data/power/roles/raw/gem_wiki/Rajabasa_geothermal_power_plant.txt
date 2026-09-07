@@ -1,0 +1,88 @@
+# GEM wiki page: Rajabasa geothermal power plant
+# URL: https://www.gem.wiki/Rajabasa_geothermal_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalGeothermalPowerTracker}}
+'''Rajabasa geothermal power plant''' is a geothermal power plant under construction in Gunung Rajabasa, South Lampung Regency, Lampung Province, Indonesia.
+
+==Project Details==
+==== '''Table 1:''' Unit-level project details for Rajabasa geothermal power plant ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| 1
+| Construction<ref name="autoref_0">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-rajabasa-geothermal-power-plant-indonesia |archive-url=https://web.archive.org/web/20240319071253/https://www.power-technology.com/marketdata/power-plant-profile-rajabasa-geothermal-power-plant-indonesia/ |archive-date=2024-03-19}}</ref>
+| 110 MW<ref name="autoref_1">{{cite web |url=https://www.supreme-energy.com/pt-supreme-energy-rajabasa |archive-url=https://web.archive.org/web/20221207160200/http://supreme-energy.com/pt-supreme-energy-rajabasa |archive-date=2022-12-07}}</ref>
+| Unknown type
+| Sumitomo Corp [33%]; ENGIE SA [33%]; PT Supreme Energy [33%] (住友商事株式会社)<ref name="autoref_1" /><ref name="autoref_1" /><ref name="autoref_1" />
+| PT Supreme Energy<ref name="autoref_1" />
+|-
+| 2
+| Construction<ref name="autoref_0" />
+| 110 MW<ref name="autoref_1" />
+| Unknown type
+| ENGIE SA [33%]; Sumitomo Corp [33%]; PT Supreme Energy [33%] (住友商事株式会社)<ref name="autoref_1" /><ref name="autoref_1" /><ref name="autoref_1" />
+| PT Supreme Energy<ref name="autoref_1" />
+|}
+
+==Location==
+==== '''Table 2:''' Unit-level location details for Rajabasa geothermal power plant ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Gunung Rajabasa, South Lampung Regency, Lampung Province, Indonesia<ref name="autoref_1" />
+| -5.7817, 105.6256 (approximate)<ref name="autoref_1" />
+|-
+| 2
+| Gunung Rajabasa, South Lampung Regency, Lampung Province, Indonesia<ref name="autoref_1" />
+| -5.7817, 105.6256 (approximate)<ref name="autoref_1" />
+|}
+The map below shows the approximate locations of the geothermal power plant units:
+{{
+#display_map:
+-5.7817, 105.6256~ ~ ~ ~ ~Units 1, 2
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/tracker-map/ interactive map] of global geothermal power plants, a [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/download-data/ downloadable dataset], and [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/ Global Geothermal Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Geothermal power plants]]
+[[Category:Geothermal power plants in Indonesia]]
+
+__NOTOC__

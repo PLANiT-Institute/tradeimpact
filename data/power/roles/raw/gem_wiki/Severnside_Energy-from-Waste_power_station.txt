@@ -1,0 +1,91 @@
+# GEM wiki page: Severnside Energy-from-Waste power station
+# URL: https://www.gem.wiki/Severnside_Energy-from-Waste_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalBioenergyPowerTracker}}
+'''Severnside Energy-from-Waste power station''' is an operating power station of at least 38-megawatts (MW) in South Gloucestershire, West of England, England, United Kingdom.
+It is also known as Suez West London, Severnside Energy Recovery Centre.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Severnside Energy-from-Waste power station
+| South Gloucestershire, West of England, England, United Kingdom
+| 51.5406, -2.6553 (exact)<ref name="autoref_0">{{cite web |url=https://electricityproduction.uk/plant/GBR0000918/ |archive-url=https://web.archive.org/web/20220927145823/https://electricityproduction.uk/plant/GBR0000918/ |archive-date=2022-09-27}}</ref>
+|}
+{{
+#display_map:
+51.5406, -2.6553
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''''': 51.5406, -2.6553
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Start year
+|-
+| Operating<ref name="autoref_1">{{cite web |url=https://www.hz-inova.com/files/2016/10/Severnside_Online_E.pdf |archive-url=https://web.archive.org/web/20220922182059/https://www.hz-inova.com/files/2016/10/Severnside_Online_E.pdf |archive-date=2022-09-22}}</ref>
+| bioenergy: refuse (municipal and industrial wastes)<ref name="autoref_1" />
+| 38<ref name="autoref_1" />
+| 2016<ref name="autoref_1" />
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Operator
+!Owner
+!Parent
+|-
+| SUEZ Recycling and Recovery UK<ref name="autoref_1" />
+| West London Energy Recovery Ltd [100%]<ref name="autoref_1" />
+| ITOCHU Corp; Pip Multi-Strategy Infrastructure Ppp LP; Suez Advanced Solutions Holdings Uk Ltd
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTY5LjgyJS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3LjQ0JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuOTMlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS02Ljg0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEhvbGRpbmdzIEluYyJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS4zJS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuNjklLS0+IDEwMDAwMDAwMTIzNwogICAgMTAwMDAwMTIzMjYxXzJbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0xMS44OCUtLT4gMTAwMDAwMDAxMjM3CiAgICAxMDAwMDEwMTYxMjdbIkJOWU0gQVMgQUdULyBDTFRTIDEwPGJyPlBlcmNlbnQiXSAtLTkuMDQlLS0+IDEwMDAwMDAwMTIzNwogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi4wOSUtLT4gMTAwMDAwMDAxMjM3CiAgICAxMDAwMDAwMDEyMzdbIklUT0NIVSBDb3JwIl0gLS0+IDEwMDAwMjAwMjk2MQogICAgMTAwMDAwMDAxMjM3WyJJVE9DSFUgQ29ycCJdIC0tPiAxMDAwMDIwMDI5NjgKICAgIDEwMDAwMjAwMjk2OFsiSXRvY2h1IEV1cm9wZSBQTEMiXSAtLT4gMTAwMDAyMDAyOTYxCiAgICAxMDAwMDIwMDI5NjFbIkktRW52aXJvbm1lbnQ8YnI+SW52ZXN0bWVudHMgTHRkIl0gLS0+IDEwMDAwMjAwMjk1OQogICAgMTAwMDAyMDAyOTY0WyJQaXAgTXVsdGktU3RyYXRlZ3k8YnI+SW5mcmFzdHJ1Y3R1cmUgUHBwPGJyPkxQIl0gLS0+IDEwMDAwMjAwMjk2MwogICAgMTAwMDAyMDAyOTYzWyJQaXAgUHBwIEx0ZCJdIC0tPiAxMDAwMDIwMDI5NjIKICAgIDEwMDAwMjAwMjk2MlsiUGlwIEluZnJhc3RydWN0dXJlPGJyPk1hbmFnZXJzIEx0ZCJdIC0tPiAxMDAwMDIwMDI5NjAKICAgIDEwMDAwMjAwMjk2MFsiUGlwIEluZnJhc3RydWN0dXJlPGJyPkludmVzdG1lbnRzIChObyA1KTxicj5MdGQiXSAtLT4gMTAwMDAyMDAyOTU5CiAgICAxMDAwMDIwMDI5NzFbIlN1ZXogQWR2YW5jZWQ8YnI+U29sdXRpb25zIEhvbGRpbmdzPGJyPlVrIEx0ZCJdIC0tPiAxMDAwMDIwMDI5NzAKICAgIDEwMDAwMjAwMjk3MFsiU3VleiBSZWN5Y2xpbmcgQW5kPGJyPlJlY292ZXJ5IFVrIEdyb3VwPGJyPkhvbGRpbmdzIEx0ZCJdIC0tPiAxMDAwMDIwMDI5NjkKICAgIDEwMDAwMjAwMjk2OVsiU3VleiBSZWN5Y2xpbmcgQW5kPGJyPlJlY292ZXJ5IEhvbGRpbmdzIFVrPGJyPkx0ZCJdIC0tPiAxMDAwMDEwMTc2MzIKICAgIDEwMDAwMTAxNzYzMlsiU1VFWiBSZWN5Y2xpbmcgYW5kPGJyPlJlY292ZXJ5IFVLIl0gLS0+IDEwMDAwMjAwMjk1OQogICAgMTAwMDAyMDAyOTU5WyJXZXN0IExvbmRvbiBFbmVyZ3k8YnI+UmVjb3ZlcnkgSG9sZGluZ3M8YnI+THRkIl0gLS0+IDEwMDAwMDEzMjg5NAogICAgMTAwMDAwMTMyODk0WyJXZXN0IExvbmRvbiBFbmVyZ3k8YnI+UmVjb3ZlcnkgTHRkIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDIwMDI4OQogICAgUDEwMDAwMDIwMDI4OVsiU2V2ZXJuc2lkZSBFbmVyZ3ktPGJyPmZyb20tV2FzdGUgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of bioenergy power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-bioenergy-power-tracker/ Global Bioenergy Power Tracker] on the Global Energy Monitor website.
+[[Category:Bioenergy power stations]][[Category:Bioenergy power stations in United Kingdom]]

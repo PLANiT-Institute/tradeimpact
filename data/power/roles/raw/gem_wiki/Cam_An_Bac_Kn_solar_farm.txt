@@ -1,0 +1,80 @@
+# GEM wiki page: Cam An Bac Kn solar farm
+# URL: https://www.gem.wiki/Cam_An_Bac_Kn_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Cam Lam KN solar power project, Cam Lam Solar, KN Cam Lam Solar Power Plant
+
+'''Cam An Bac Kn solar farm''' is an operating solar photovoltaic (PV) farm in Cam Lâm District, Khánh Hòa, Vietnam.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Cam An Bac Kn solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://cdm.unfccc.int/Projects/Validation/DB/BFOGEX17HD2UMH8RLB2LAIPLZIUEQI/view.html, http://ven.vn/hanwha-energy-total-energy-solution-provider-44345.html}}</ref>
+| 2019<ref name="autoref_1">{{cite web |url=http://kosiaenc.com/en/434-2/ |archive-url=https://web.archive.org/web/20211215214331/http://kosiaenc.com/en/434-2/ |archive-date=15 December 2021}}</ref>
+| 50 MWp/dc<ref name="autoref_2">{{cite web |url=https://cdm.unfccc.int/Projects/Validation/DB/BFOGEX17HD2UMH8RLB2LAIPLZIUEQI/view.html |archive-url=https://web.archive.org/web/20240201145606/https://cdm.unfccc.int/Projects/Validation/DB/BFOGEX17HD2UMH8RLB2LAIPLZIUEQI/view.html |archive-date=2024-02-01}}</ref>
+| PV<ref name="autoref_2" />
+| Long Thanh Golf Investment & Trading JSC; Hanwha Energy Corp (한화에너지)<ref name="autoref_3">{{cite web |url=http://kosiaenc.com/en/434-2/, http://kosiaenc.com/en/434-2/}}</ref>
+| Hanwha Energy Vietnam<ref name="autoref_4">{{cite web |url=http://ven.vn/hanwha-energy-total-energy-solution-provider-44345.html |archive-url=https://web.archive.org/web/20210304090558/http://ven.vn/hanwha-energy-total-energy-solution-provider-44345.html |archive-date=04 March 2021}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Cam An Bac Kn solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Cam Lâm District, Khánh Hòa, Vietnam<ref name="autoref_5">{{cite web |url=https://cdm.unfccc.int/Projects/Validation/DB/BFOGEX17HD2UMH8RLB2LAIPLZIUEQI/view.html, https://www.google.com/maps/place/KN+Cam+Lam+Solar+Power+Plant/@11.9902612,109.0757357,2961m/data=!3m1!1e3!4m13!1m7!3m6!1s0x0:0x578a7d653af06b99!2zMTLCsDAwJzAwLjAiTiAxMDnCsDEyJzAwLjAiRQ!3b1!8m2!3d12!4d109.2!3m4!1s0x3170f169dbde2739:0xaf56be1b92034b95!8m2!3d11.992727!4d109.0828032}}</ref>
+| 11.9927, 109.0829 (exact)<ref name="autoref_5" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+11.9927, 109.0829~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Vietnam]]
+[[Category:PV solar farms]]
+
+__NOTOC__

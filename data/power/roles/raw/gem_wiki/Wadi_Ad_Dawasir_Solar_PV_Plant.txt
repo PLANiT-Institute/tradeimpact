@@ -1,0 +1,77 @@
+# GEM wiki page: Wadi Ad Dawasir Solar PV Plant
+# URL: https://www.gem.wiki/Wadi_Ad_Dawasir_Solar_PV_Plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Wadi Ad Dawasir Solar PV Plant''' (محطة وادي الدواسر للطاقة الشمسية) is an operating solar photovoltaic (PV) farm in Wadi Ad Dawasir, Najd, Saudi Arabia.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Wadi Ad Dawasir Solar PV Plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.saudigulfprojects.com/2023/07/toyota-tsusho-announces-the-details-of-119mw-wadi-ad-dawasir-solar-pv-ipp-in-saudi-arabia/, https://solarabic.com/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D8%AF%D8%AF%D8%A9/2025/11/%D8%A8%D8%AF%D8%A1-%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%A3%D9%88%D9%84-%D9%85%D8%AD%D8%B7%D8%A9-%D8%B7%D8%A7%D9%82%D8%A9-%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-%D9%84%D8%B4%D8%B1%D9%83%D8%A9-totalenergies/, https://attaqa.net/2024/12/03/%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D9%86%D8%AA%D8%B9%D8%B4-%D8%A8%D8%A7%D8%B3%D8%AA/}}</ref>
+| 2025<ref name="autoref_1">{{cite web |url=https://www.saudigulfprojects.com/2023/07/toyota-tsusho-announces-the-details-of-119mw-wadi-ad-dawasir-solar-pv-ipp-in-saudi-arabia/, https://solarabic.com/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D8%AF%D8%AF%D8%A9/2025/11/%D8%A8%D8%AF%D8%A1-%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%A3%D9%88%D9%84-%D9%85%D8%AD%D8%B7%D8%A9-%D8%B7%D8%A7%D9%82%D8%A9-%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-%D9%84%D8%B4%D8%B1%D9%83%D8%A9-totalenergies/}}</ref>
+| 119 MWp/dc<ref name="autoref_2">{{cite web |url=https://www.saudigulfprojects.com/2023/07/toyota-tsusho-announces-the-details-of-119mw-wadi-ad-dawasir-solar-pv-ipp-in-saudi-arabia/, https://corporate.totalenergies.sa/en/node/5091}}</ref>
+| PV<ref name="autoref_3">{{cite web |url=https://www.dmsprojects.net/saudi-arabia/projects/repdo-pif-wadi-al-dawasir-70-mw-pv-plant/PRJ00026581 |archive-url=https://web.archive.org/web/20240207113241/https://www.dmsprojects.net/saudi-arabia/projects/repdo-pif-wadi-al-dawasir-70-mw-pv-plant/PRJ00026581 |archive-date=2024-02-07}}</ref>
+| Toyota Tsusho Corp; Altaaqa Renewables [100%]; TotalEnergies SE (豊田通商株式会社)<ref name="autoref_4">{{cite web |url=https://www.pv-tech.org/altaaqa-reaches-financial-close-for-119mwp-wadi-al-dawasir-solar-plant/, https://attaqa.net/2023/06/28/%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%B3%D8%AA%D9%82%D8%B7%D8%A8-%D8%A7%D8%B3%D8%AA/, https://www.saudigulfprojects.com/2023/07/toyota-tsusho-announces-the-details-of-119mw-wadi-ad-dawasir-solar-pv-ipp-in-saudi-arabia/, https://www.saudigulfprojects.com/2023/07/toyota-tsusho-announces-the-details-of-119mw-wadi-ad-dawasir-solar-pv-ipp-in-saudi-arabia/}}</ref>
+| Altaaqa Renewables; Toyota Tsusho; TotalEnergies (豊田通商株式会社)<ref name="autoref_5">{{cite web |url=https://www.pv-tech.org/altaaqa-reaches-financial-close-for-119mwp-wadi-al-dawasir-solar-plant/, https://attaqa.net/2023/06/28/%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%B3%D8%AA%D9%82%D8%B7%D8%A8-%D8%A7%D8%B3%D8%AA/, https://corporate.totalenergies.sa/en/node/5091, https://corporate.totalenergies.sa/en/node/5091}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Wadi Ad Dawasir Solar PV Plant ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Wadi Ad Dawasir, Najd, Saudi Arabia<ref name="autoref_6">{{cite web |url=https://www.latlong.net/place/wadi-ad-dawasir-najd-saudi-arabia-25457.html |archive-url=https://web.archive.org/web/20240206221946/https://www.latlong.net/place/wadi-ad-dawasir-najd-saudi-arabia-25457.html |archive-date=2024-02-06}}</ref>
+| 20.5595, 44.8657 (approximate)<ref name="autoref_6" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+20.5595, 44.8657~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Saudi Arabia]]
+[[Category:PV solar farms]]
+
+__NOTOC__

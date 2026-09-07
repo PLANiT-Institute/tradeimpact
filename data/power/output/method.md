@@ -21,22 +21,32 @@ by a company ([`roles`](../roles/method/method.md)). The result set therefore ha
 
 ## Decisions (project lead, 2026-09-05)
 
-1. **Attribution is per role, never pooled.** A unit's trade impact is attributed separately to
-   each role — developer, equity owner, EPC contractor, equipment supplier, O&M contractor,
-   lender, ECA cover — and the register carries the **role, the phase (development,
-   construction, operation, finance) and the share** as data columns. The model reports each
-   role row twice, the unit's full figure and the share-weighted figure, and never adds rows of
-   different roles into one company total; so the weighting can be revisited later without
-   re-collecting. A blank share yields a blank weighted figure, not an assumed one.
+1. **Attribution is per role, never pooled, in five separate phases.** A unit's trade impact is
+   attributed separately to each role, and the five phases are kept apart:
+   **development** (developer), **construction** (EPC contractor, equipment supplier),
+   **investment** (equity owner), **operation** (O&M contractor) and **finance** (lender, ECA
+   cover). Equity is investment, not operation: a utility that both owns and runs a plant carries
+   two rows, one in each phase (project lead, 2026-09-07). The register carries the role, the
+   phase and the share as data columns; the model reports each role row twice, the unit's full
+   figure and the share-weighted figure, and never adds rows of different roles into one company
+   total, so the weighting can be revisited later without re-collecting. A blank share yields a
+   blank weighted figure, not an assumed one. The report's Companies → Role matrix is this table
+   read across the phases.
 2. **Emission factor: national first, IPCC otherwise.** A unit's CO2 per unit of fuel is the
    destination country's own fuel-specific factor where one is on file
    ([`emission_factors`](../emission_factors/method/method.md), tier A) and the IPCC 2006 default
    otherwise (tier C, with the IPCC bounds carried for the sensitivity). Heat rate and capacity
    factor: the tracker's unit-level estimate where published (tier B), the technology default
    otherwise (tier C). Every choice is a column on the result row.
-3. **Roles are distinguished by phase.** Building a plant (EPC, equipment) and running it (equity,
-   O&M) are different responsibilities; the phase sits on every role row and the company table is
-   keyed by role, so a reader can take construction-side and operation-side attributions apart.
+3. **Roles come from four sources, in order of standing** ([`roles`](../roles/method/method.md)):
+   the hand register; the companies' own disclosures and project pages, each row citing the page
+   on disk that states the role and, separately, the page that states the share, with the sentence
+   quoted (tier A); the tracker's own `Owner`, `Parent` and `Operator` fields (tier B); and the GEM
+   wiki sentences read by keyword (tier C). A sourced reading always replaces a machine one for the
+   same company × plant × role. The register's unit ids also bring units into scope: the tracker's
+   owner field names only the project company on Vung Ang 2 and only PLN and Barito on Jawa 9 and
+   10, so without the register the Korean and Japanese sponsors of those four 660–1,000 MW coal
+   units would be missing from the result set entirely.
 4. **Global Energy Monitor is the project registry**, and it is a hand download (its form asks
    for a name and email). The role register, the national emission factors and the committed
    targets are hand-gathered too. Each is marked below and in its dataset's method note, and the
@@ -91,6 +101,18 @@ basis for the first results; it is declared on every result row (`cf_source`, `h
 `ef_basis`, `tier`), the bands are carried in the sensitivity table, and national factors
 (`emission_factors/raw/national_emission_factors.csv`) lift a destination to tier A when filed.
 
+## Raw data is left in a form a reader can open (project lead, 2026-09-07)
+
+Every raw input is stored so that a person can open it and check the figure it produced, with the
+explanation beside it. Where an API answers one large document, it is written out flat: the GEM
+wiki pages are **one readable text file per plant** under `roles/raw/gem_wiki/` (provenance header,
+then the wikitext as returned) and Climate Watch's NDC content is a **CSV, one row per country ×
+indicator × submission**, with the submission order in a second CSV. Company pages are saved as
+served under `roles/raw/company_ir/`. Each such directory carries an `index.csv` with every file's
+URL, byte count and SHA-256; that index is hash-recorded in `registry/raw_files.csv` and loaded
+into the database, so the chain from a published figure to the page it came from is one join. Each
+dataset's `method/method.md` says what its raw files are and how they were obtained.
+
 ## Scope: which destinations, and whether home counts
 
 `registry/scope.csv` holds two settings read by the pipeline: `destinations` (`all` or a list of
@@ -128,21 +150,21 @@ sensitivity → database → report → ruff → pytest. Exit 3 with `[hand]` wh
 hand-gathered file is missing; exit 1 on any other failure. Scripts and their inputs and outputs
 are tabulated in [`script/power/README.md`](../../../script/power/README.md).
 
-## Status (2026-09-06)
+## Status (2026-09-07)
 
-The pipeline runs end to end on the August 2026 tracker (v3): 685 overseas units in 71 countries,
-539 assessed. S1 exists for every destination. S2 exists for 43 of 71 destinations and 450 of the 539
-assessed units: 21 destinations machine-read from Climate Watch, 14 by hand rows (the EU members,
-Taiwan and the US territories), and 8 by hand rows read from the NDC documents themselves on
-2026-09-06 (China and Malaysia with the peak assumed at the latest observed year — flagged as an
-assumption; Indonesia, South Africa, Argentina and Vietnam as absolute levels whose committed 2030/2035
-level sits at or above the recent level, so the grid pathway is floored at the observed trend;
-Mexico and Chile as percentages below 2023 from Climate Action Tracker's reading). The remaining
-destinations without S2 state their target against a business-as-usual projection or as GDP
-intensity (Saudi Arabia's and Qatar's are reductions against a dynamic baseline or a quantity of
-mitigation actions), which no pathway can be read from; each is listed with the sentence read.
-Roles: equity from the tracker's owner shares (tier B); EPC, equipment, lender and export-credit
-cover read from the GEM wiki pages by keyword (82 company × plant rows, tier C, applied to
-44 units); the hand register is header-only and replaces a wiki row when filled. Layer 2 is
-tier C throughout, accepted by the project lead as the basis for the first results. Sensitivity,
-database and the interactive report with the unit × company map are built.
+The pipeline runs end to end on the August 2026 tracker (v3). 711 overseas units in
+71 countries are in scope — 553 carry an S1 result and 458 an S2 one, on the
+43 of 71 destinations whose latest NDC states a level a pathway can be read from. Four of
+those units (Vung Ang 2 Phase 2 Units 1 and 2, Banten Suralaya Units 9 and 10, the Jawa 9 and 10
+project) are in scope only because the company register names them: the tracker's owner field
+misses their Korean and Japanese sponsors.
+
+Roles in the S1 result set by source: 47 rows from company disclosures and project pages,
+439 from the tracker's own fields, 113 from wiki sentences, 0 from the hand register. Layer 2
+is tier C throughout, accepted by the project lead as the basis for the first results.
+
+Not yet done: the hand register (`roles/raw/project_roles.csv`) that would confirm the wiki-read
+EPC, equipment and finance rows; company disclosures beyond KEPCO and Doosan (J-POWER, JERA,
+Marubeni, Sumitomo, Mitsui and the Korean gencos); national emission factors; verifying the
+technology defaults against their documents; hand levels for the fixed-level and trajectory NDCs
+that still have no S2.

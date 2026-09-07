@@ -1,0 +1,141 @@
+# GEM wiki page: Sur Independent power plant
+# URL: https://www.gem.wiki/Sur_Independent_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Sur Independent power plant''' (محطة صور لتوليد الكهرباء) is an operating power station of at least 2000-megawatts (MW) in Sur, A’Sharqiyah South, Oman.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Sur Independent power plant
+| Sur, A’Sharqiyah South, Oman
+| 22.655898, 59.416961 (exact)<ref name="autoref_0">{{cite web |url=https://www.phoenixpoweroman.com/uploads/annualReports/annual_reports_45c48cce2e2d7fbdea1afc51c7c6ad26.PDF |archive-url=https://web.archive.org/web/20210625011911/https://www.phoenixpoweroman.com/uploads/annualReports/annual_reports_45c48cce2e2d7fbdea1afc51c7c6ad26.PDF |archive-date=2021-06-25}}</ref><ref name="autoref_1">{{cite web |url=https://www.industryabout.com/country-territories-3/1985-oman/fossil-fuels-energy/30610-sur-gas-power-plant |archive-url=https://web.archive.org/web/20210811172921/https://www.industryabout.com/country-territories-3/1985-oman/fossil-fuels-energy/30610-sur-gas-power-plant |archive-date=2021-08-11}}</ref>
+|}
+{{
+#display_map:
+22.655898, 59.416961
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, 3''': 22.655898, 59.416961
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Retired year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_2">{{cite web |url=https://www.omanpwp.om/PDF/7%20Year%20Statement%202019-2025%20New.pdf |archive-url=https://web.archive.org/web/20221025083615/https://omanpwp.om/PDF/7%20Year%20Statement%202019-2025%20New.pdf |archive-date=2022-10-25}}</ref>
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_2" /><ref name="autoref_3">{{cite web |url=https://omanpwp.om/new/OurSector.aspx |archive-url=https://web.archive.org/web/20221025075945/https://omanpwp.om/new/OurSector.aspx |archive-date=2022-10-25}}</ref><ref name="autoref_0" /><ref name="autoref_4">{{cite web |url=https://nebras-power.com/sites/default/files/2019-final/NEBRASANNUALREPORTENG(HighRes).pdf |archive-url=https://web.archive.org/web/20220703144022/https://nebras-power.com/sites/default/files/2019-final/NEBRASANNUALREPORTENG(HighRes).pdf |archive-date=2022-07-03}}</ref>
+| 800<ref name="autoref_5">{{cite web |url=https://omanpwp.om/PDFAR/OPWP-AR-2021-ENGLISH.pdf}}</ref><ref name="autoref_0" />
+| combined cycle<ref name="autoref_2" />
+| not found
+| 2014<ref name="autoref_0" /><ref name="autoref_6">{{cite web |url=https://www.phoenixpoweroman.com/project-timeline |archive-url=https://web.archive.org/web/20220705030532/https://www.phoenixpoweroman.com/project-timeline |archive-date=2022-07-05}}</ref>
+| 2043 (planned)<ref name="autoref_7">{{cite web |url=https://attaqa.net/2026/04/08/%d8%b5%d9%81%d9%82%d8%a7%d8%aa-%d8%aa%d8%b7%d9%8a%d9%84-%d8%b9%d9%85%d8%b1-3-%d9%85%d8%ad%d8%b7%d8%a7%d8%aa-%d9%84%d8%aa%d9%88%d9%84%d9%8a%d8%af-%d8%a7%d9%84%d9%83%d9%87%d8%b1%d8%a8%d8%a7%d8%a1-%d8%a8/?fbclid=IwY2xjawREgwpleHRuA2FlbQIxMQBicmlkETFIb0ZLRzdxeW1UcU9iZlN2c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHo-a6KdhzPOPhsvoK_5qkPNZyNoXpXnyQHsWv-iI9_zQ4i23fj2v2seo-mAU_aem_bHmRgnzv54dv4pkEwhlF-w}}</ref>
+| Siemens Energy: 4000F, Fuji Electric Co, Siemens Energy: 4000F<ref name="autoref_8">{{cite web |url=https://steemit.com/project/@anagnorisis/oman-sur-ipp-project-finance-modeling-and-case-study-summary}}</ref><ref name="autoref_9">{{cite web |url=https://www.phoenixpoweroman.com/ar/technology}}</ref>
+| no
+|-
+| 2
+| Operating<ref name="autoref_2" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_0" /><ref name="autoref_4" />
+| 800<ref name="autoref_5" /><ref name="autoref_0" />
+| combined cycle<ref name="autoref_2" />
+| not found
+| 2014<ref name="autoref_0" /><ref name="autoref_6" />
+| 2043 (planned)<ref name="autoref_7" />
+| Siemens Energy: 4000F, Siemens Energy: 4000F, Fuji Electric Co<ref name="autoref_8" /><ref name="autoref_9" />
+| no
+|-
+| 3
+| Operating<ref name="autoref_2" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_0" /><ref name="autoref_4" />
+| 400<ref name="autoref_5" /><ref name="autoref_0" />
+| combined cycle<ref name="autoref_2" /><ref name="autoref_10">{{cite web |url=https://nebras-power.com/ar/assets/listing/phoenix |title=شــركة العنقـاء للطاقـة ش.م.ع.ع | Nebras Power |website=nebras-power.com |access-date=2024-04-24 |archive-url=https://web.archive.org/web/20240509221103/https://nebras-power.com/ar/assets/listing/phoenix |archive-date=2024-05-09}}</ref>
+| not found
+| 2014<ref name="autoref_0" /><ref name="autoref_6" /><ref name="autoref_10" />
+| 2043 (planned)<ref name="autoref_7" />
+| Siemens Energy: 4000F, Fuji Electric Co<ref name="autoref_8" /><ref name="autoref_7" /><ref name="autoref_9" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Phoenix Power Company SAOG [100%]<ref name="autoref_2" /><ref name="autoref_0" />
+| Axia Power Holdings BV [25.0%]; JERA Power Management Mid East BV [25.0%]; Middle East Investment LLC [25.0%]; Nebras Energy QPSC [15.0%]; Ras Laffan Operating Company WLL [10.0%]
+|-
+| 2
+| Phoenix Power Company SAOG [100%]<ref name="autoref_2" /><ref name="autoref_0" />
+| Axia Power Holdings BV [25.0%]; JERA Power Management Mid East BV [25.0%]; Middle East Investment LLC [25.0%]; Nebras Energy QPSC [15.0%]; Ras Laffan Operating Company WLL [10.0%]
+|-
+| 3
+| Phoenix Power Company SAOG [100%]<ref name="autoref_2" /><ref name="autoref_0" />
+| Axia Power Holdings BV [25.0%]; JERA Power Management Mid East BV [25.0%]; Middle East Investment LLC [25.0%]; Nebras Energy QPSC [15.0%]; Ras Laffan Operating Company WLL [10.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_11">{{cite web |url=https://www.qewc.com/qewc/ar/%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%82%D8%B7%D8%B1%D9%8A%D8%A9-%D8%AA%D9%81%D8%AA%D8%AA%D8%AD-%D9%85%D8%AD%D8%B7%D8%A9-%D8%B5%D9%88/ |archive-url=https://web.archive.org/web/20220711145513/https://www.qewc.com/qewc/ar/%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%82%D8%B7%D8%B1%D9%8A%D8%A9-%D8%AA%D9%81%D8%AA%D8%AA%D8%AD-%D9%85%D8%AD%D8%B7%D8%A9-%D8%B5%D9%88/ |archive-date=2022-07-11}}</ref><ref name="autoref_3" />
+* '''Captive industry''': Chemicals<ref name="autoref_11" /><ref name="autoref_3" />
+* '''Non-industry use''': power<ref name="autoref_11" /><ref name="autoref_3" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDA4MTlbIkF4aWEgUG93ZXIgSG9sZGluZ3M8YnI+QlYiXSAtLT4gMTAwMDAwMDAzODE2CiAgICAxMDAwMDEwMDA4MjBbIkpFUkEgUG93ZXI8YnI+TWFuYWdlbWVudCBNaWQgRWFzdDxicj5CViJdIC0tPiAxMDAwMDAwMDM4MTYKICAgIDEwMDAwMTAwMDgyMVsiTWlkZGxlIEVhc3Q8YnI+SW52ZXN0bWVudCBMTEMiXSAtLT4gMTAwMDAwMDAzODE2CiAgICAxMDAwMDAwMDA4MzlbIkdvdmVybm1lbnQgb2YgUWF0YXIiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDAzMzEKICAgIDEwMDAwMTAwMDMzMVsiR2VuZXJhbCBSZXRpcmVtZW50PGJyPmFuZCBTb2NpYWwgSW5zdXJhbmNlPGJyPkF1dGhvcml0eSAoUWF0YXIpIl0gLS0xNC4zNCUtLT4gMTAwMDAxMDAwMzI5CiAgICAxMDAwMDAwMDA4MzlbIkdvdmVybm1lbnQgb2YgUWF0YXIiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDA4NDYKICAgIDEwMDAwMDAwMDg0NlsiUWF0YXJFbmVyZ3kiXSAtLTEwLjc0JS0tPiAxMDAwMDEwMDAzMjkKICAgIDEwMDAwMDAwMDgzOVsiR292ZXJubWVudCBvZiBRYXRhciJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMDg0NQogICAgMTAwMDAwMDAwODQ1WyJRYXRhciBJbnZlc3RtZW50PGJyPkF1dGhvcml0eSJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDMzMAogICAgMTAwMDAxMDAwMzMwWyJRYXRhciBIb2xkaW5nIExMQyJdIC0tMjguMDklLS0+IDEwMDAwMTAwMDMyOQogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00Ni44MyUtLT4gMTAwMDAxMDAwMzI5CiAgICAxMDAwMDEwMDAzMjlbIk5lYnJhcyBFbmVyZ3kgUVBTQyJdIC0tNjAuMCUtLT4gMTAwMDAwMDAwODQxCiAgICAxMDAwMDEwMDAzNzFbIlJhcyBMYWZmYW4gT3BlcmF0aW5nPGJyPkNvbXBhbnkgV0xMIl0gLS00MC4wJS0tPiAxMDAwMDAwMDA4NDEKICAgIDEwMDAwMDAwMDg0MVsiTmVicmFzIFBvd2VyIFFQU0MiXSAtLT4gMTAwMDAwMDAzODE2CiAgICAxMDAwMDAwMDM4MTZbIlBob2VuaXggUG93ZXI8YnI+Q29tcGFueSBTQU9HIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDQwNTUyNgogICAgUDEwMDAwMDQwNTUyNlsiU3VyIEluZGVwZW5kZW50PGJyPnBvd2VyIHBsYW50Il0K}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Oman]]

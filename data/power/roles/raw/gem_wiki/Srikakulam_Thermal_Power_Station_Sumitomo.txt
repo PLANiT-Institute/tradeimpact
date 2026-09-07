@@ -1,0 +1,109 @@
+# GEM wiki page: Srikakulam Thermal Power Station (Sumitomo)
+# URL: https://www.gem.wiki/Srikakulam_Thermal_Power_Station_(Sumitomo)
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Srikakulam Thermal Power Station (Sumitomo)''' is a cancelled power station in Polaki, Srikakulam, Andhra Pradesh, India.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Srikakulam Thermal Power Station (Sumitomo)
+| Polaki, Srikakulam, Andhra Pradesh, India
+| 18.3667, 84.1 (approximate)
+|}
+{{
+#display_map:
+18.3667, 84.1
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Cancelled
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 4000
+| ultra-supercritical
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Owner
+!Parent
+|-
+| Andhra Pradesh Power Generation Corp Ltd [50%]; Sumitomo Corp [50%]
+| Andhra Pradesh Power Generation Corp Ltd [50.0%]; Sumitomo Corp [50.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Financing==
+
+'''Source of financing:''' [[Japan International Cooperation Agency]]<br>
+
+==Background==
+
+Srikakulam Thermal Power Station was originally proposed as a 2,400 MW coal plant by [[Andhra Pradesh Power Generation Corporation]] (APGENCO) for the district of Srikakulam.<ref name=AP>[http://www.apgenco.gov.in/ "Future Projects,"] APGENCO website, accessed February 2012</ref>
+
+In December 2014 it was reported that APGENCO had signed a Memorandum of Understanding with Japan-based Sumitomo Corporation for a 4,000 MW coal plant in Srikakulam. Sumitomo will reportedly share technology for the proposed power plant, prepare a Detailed Project Report, and arrange funding from the Japan International Cooperation Agency (JICA). Investment in the project is estimated to be around Rs.200 billion.<ref>[http://www.cmie.com/kommon/bin/sr.php?kall=wclrdhtm&nvdt=20141208154654583&nvpc=099000000000&nvtype=TIDINGS "New projects worth Rs.240 bln announced in power sector in November 2014,"] CMIE, Dec 8, 2014</ref>
+
+According to Andhra Nation, the location of the plant will be the village of Polaki.<ref>[https://andhranation.wordpress.com/2015/03/11/sumitomo-decides-to-set-up-its-4000-mw-thermal-power-plant-at-polaki-in-srikakulam-district/ "Sumitomo decides to set up its 4000 MW thermal power plant at Polaki in Srikakulam district,"] Andhra Nation, Mar 10, 2015</ref>
+
+In August 2015, it was reported that the government of Andhra Pradesh told Sumitomo that the company would be limited to 1,650 acres of land, rather than the 3,000 acres that the company had sought. The government argued that the amount of land needed to store coal could be limited by bringing coal by conveyer belt, due to the project's seaside location. By limiting the acreage of the plant, the government reported was seeking to minimize the amount of land that would need to be acquired from local farmers.<ref name=local>K. Srinivasa Rao, [http://www.thehindu.com/news/national/andhra-pradesh/govt-decides-to-minimise-land-acquisition-for-1600-acres-for-sumitomo-project/article7565838.ece "Government decides to minimise land acquisition for 1600 acres for Sumitomo project,"] The Hindu, August 21, 2015</ref>
+
+On April 12, 2017, AP Energy minister Kimida Kala Venkata Rao stated that Thermal Power Plants (TPP) are not viable in the state as it has sufficient power, and the government planned to put on hold all the proposed TPPs.<ref>[http://www.thehansindia.com/posts/index/Andhra-Pradesh/2017-04-12/Thermal-power-stations-not-viable-now-in-AP--Kimida-Kala-Venkata-Rao/292775 "Thermal power stations not viable now in AP: Kimida Kala Venkata Rao,"] Hans India, Apr 12, 2017</ref>
+
+On April 29, 2017, the AP State government said the decision to set up the 4,000 MW plant was deferred until the year 2022.<ref>V. Raghavendra, [http://www.thehindu.com/todays-paper/tp-national/tp-andhrapradesh/state-drops-thermal-project-plan-at-polaki/article18289683.ece "State drops thermal project plan at Polaki,"] The Hindu, Apr 29, 2017</ref>
+
+==Opposition==
+
+Villagers in Thotada, Rallapalli, and Susaram have opposed the plant on the basis that the government does not actually possess the 1,300 acres that it claims to have available for the project. CPI and CPI(M) leaders say that the land must remain in the status of cultivation under the Land Acquisition Rehabilitation and Resettlement Act-2014. “We don’t agree with the argument of the Government. The left parties will continue to extend their cooperation to this agitation. We will not allow acquisition of fertile lands,” said CPI(M) Srikakulam secretary Bhaviri Krishnamurthy.<ref name=local>K. Srinivasa Rao, [http://www.thehindu.com/news/national/andhra-pradesh/govt-decides-to-minimise-land-acquisition-for-1600-acres-for-sumitomo-project/article7565838.ece "Government decides to minimise land acquisition for 1600 acres for Sumitomo project,"] The Hindu, August 21, 2015</ref> In July 2016 it was reported that difficulties with acquiring land in Polaki were "causing embarrassment" to officials. After initially believing it owned the 1,300 of the acres needed for the project, it turned out that the land had been under occupation for many decades. Left parties and representatives of farmers' associations accused the government of trying to intimidate opponents of the plant by deploying a heavy police presence. CPI Srikakulam officials vowed to support the opponents of the plant and demanded that cases filed against local leaders be withdrawn. “The government is trying to convert Srikakulam into a dumping yard by proposing thermal and atomic power plants. Such activities will only lead to displacement of thousands of people,” said CPI Srikakulam wing secretary Chapara Venkata Ramana.<Ref>[http://www.worldtvnews.co.in/?p=55714 "Govt. owns 1,300 acres, but farmers have been enjoying possession for long,"] World TV News, July 1, 2016</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in India]]

@@ -1,0 +1,127 @@
+# GEM wiki page: Huaneng Qufu power station
+# URL: https://www.gem.wiki/Huaneng_Qufu_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Huaneng Qufu power station''' (华能曲阜热电厂) is a retired power station in 999 Xiaochang Road, Qufu, Jining, Shandong, China.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Huaneng Qufu power station
+| 999 Xiaochang Road, Qufu, Jining, Shandong, China
+| 35.607801, 116.933863 (exact)
+|}
+{{
+#display_map:
+35.607801, 116.933863
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 35.607801, 116.933863
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit 1
+| Retired<ref name="autoref_0">{{cite web |url=https://news.bjx.com.cn/html/20260615/1499959.shtml}}</ref>
+| coal: unknown<ref name="autoref_1">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 225
+| subcritical
+| yes
+| 2006
+| 2026<ref name="autoref_0" />
+| False
+|-
+| Unit 2
+| Retired<ref name="autoref_0" />
+| coal: unknown<ref name="autoref_1" />
+| 225
+| subcritical
+| yes
+| 2006
+| 2026<ref name="autoref_0" />
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Huaneng Qufu Thermal Power Co Ltd [100%]
+| Huaneng Power International Inc [40.0%]; Shandong Ruyi International Fashion Industry Investment Holding Co Ltd [39.7%]; China Huaneng Group Co Ltd [10.0%]; ITOCHU Corp [5.9%]; Australia Maid International Trade [3.3%]; unknown [1.1%]
+|-
+| Unit 2
+| Huaneng Qufu Thermal Power Co Ltd [100%]
+| Huaneng Power International Inc [40.0%]; Shandong Ruyi International Fashion Industry Investment Holding Co Ltd [39.7%]; China Huaneng Group Co Ltd [10.0%]; ITOCHU Corp [5.9%]; Australia Maid International Trade [3.3%]; unknown [1.1%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjU5MDVbIkF1c3RyYWxpYSBNYWlkPGJyPkludGVybmF0aW9uYWwgVHJhZGUiXSAtLTYuNTklLS0+IDEwMDAwMDEyNDUwNwogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS03MC40OCUtLT4gMTAwMDAwMTI1MDc2CiAgICAxMDAwMDAxMzIzODhfMVsidW5rbm93biJdIC0tMjkuNTIlLS0+IDEwMDAwMDEyNTA3NgogICAgMTAwMDAwMTI1MDc2WyJTaGFuZG9uZyBSdXlpPGJyPkludGVybmF0aW9uYWw8YnI+RmFzaGlvbiBJbmR1c3RyeTxicj5JbnZlc3RtZW50IEhvbGRpbmc8YnI+Q28gTHRkIl0gLS03OS40OCUtLT4gMTAwMDAwMTI0NTA3CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNDElLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS4yMyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS40NiUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQ3JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjE0JS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjguMjElLS0+IDEwMDAwMDAwMTIzNwogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS0xMC4yOSUtLT4gMTAwMDAwMDAxMjM3CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjM2JS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMDAwMTIzN1siSVRPQ0hVIENvcnAiXSAtLTExLjcyJS0tPiAxMDAwMDAxMjQ1MDcKICAgIDEwMDAwMDEzMjM4OF8yWyJ1bmtub3duIl0gLS0yLjIxJS0tPiAxMDAwMDAxMjQ1MDcKICAgIDEwMDAwMDEyNDUwN1siU2hhbmRvbmcgUlVZSTxicj5UZWNobm9sb2d5IEdyb3VwIENvPGJyPkx0ZCJdIC0tNTAuMCUtLT4gMTAwMDAwMTIzNDY5CiAgICAxMDAwMDAwMDAyMTdbIkh1YW5lbmcgUG93ZXI8YnI+SW50ZXJuYXRpb25hbCBJbmMiXSAtLTgwLjAlLS0+IDEwMDAwMDAwMzI1MwogICAgMTAwMDAwMDAwMTcxWyJDaGluYSBIdWFuZW5nIEdyb3VwPGJyPkNvIEx0ZCJdIC0tMjAuMCUtLT4gMTAwMDAwMDAzMjUzCiAgICAxMDAwMDAwMDMyNTNbIkh1YW5lbmcgU2hhbmRvbmc8YnI+UG93ZXIgR2VuZXJhdGlvbiBDbzxicj5MdGQiXSAtLTUwLjAlLS0+IDEwMDAwMDEyMzQ2OQogICAgMTAwMDAwMTIzNDY5WyJIdWFuZW5nIFNoYW5kb25nPGJyPkxpbmVuZyBDb2FsIFBvd2VyIENvPGJyPkx0ZCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEyMjc0NQogICAgMTAwMDAwMTIyNzQ1WyJIdWFuZW5nIFF1ZnUgVGhlcm1hbDxicj5Qb3dlciBDbyBMdGQiXSAtLTEwMC4wJS0tPiBQMTAwMDAwMTAxMzUwCiAgICBQMTAwMDAwMTAxMzUwWyJIdWFuZW5nIFF1ZnUgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Background==
+
+The Huaneng Qufu power station was commissioned in September 2006, with construction starting in May 2005. It is located in Qufu, China.<ref>{{Cite web|url=http://wikimapia.org/25997324/Power-plant|title=Power plant - Wikimapia|website=wikimapia.org|language=en|access-date=2021-06-01}}</ref> The plant's boiler and steam turbine generator were manufactured by Sichuan Boiler Factory and Beijing Beizhong Turbine Motor Co., Ltd. respectively.<ref>{{Cite web|url=https://baike.baidu.com/item/%E5%8D%8E%E8%83%BD%E6%9B%B2%E9%98%9C%E7%94%B5%E5%8E%82|title=华能曲阜电厂|last=|first=|date=|website=Baidu|url-status=live|archive-url=|archive-date=|access-date=June 1, 2021}}</ref> As the only central heating facility in the city of Qufu, it is responsible for heating the urban area (eight million square meters) and has an annual power generation capacity of 2.4 billion kilowatt-hours (kWh).<ref name=":0">{{Cite web|url=https://www.ynpxrz.com/n2130701c1277.aspx|title=华能曲阜电厂2021年应届毕业生校园招聘启事_易贤网|last=|first=|date=October 11, 2020|website=www.ynpxrz.com|url-status=live|archive-url=|archive-date=|access-date=2021-06-01}}</ref> As of September 2020, it has generated 33.4 billion kWh of electricity and 17.95 million GJ of heating.<ref name=":0">{{Cite web|url=https://www.ynpxrz.com/n2130701c1277.aspx|title=华能曲阜电厂2021年应届毕业生校园招聘启事_易贤网|last=|first=|date=October 11, 2020|website=www.ynpxrz.com|url-status=live|archive-url=|archive-date=|access-date=2021-06-01}}</ref>
+
+In February 2020, at the start of the coronavirus pandemic, coal stocks fell, creating a shortage in coal. The owners of the Huaneng Qufu power plant asked the government for aid with the delivery of new. The Qufu Transportation Bureau immediately opened a so-called 'green channel' for the Huaneng Power Plant, which ensured the smooth passage for the 15 transportation vehicles carrying coal to the facility.<ref>{{Cite web|url=https://www.sohu.com/a/372073921_118392|title=山东曲阜“绿色通道”让企业生产无后顾之忧_运输|last=|first=|date=2020-02-11|website=Sohu News|language=en|url-status=live|archive-url=|archive-date=|access-date=2021-06-01}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

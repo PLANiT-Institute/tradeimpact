@@ -1,0 +1,203 @@
+# GEM wiki page: Pagbilao power station
+# URL: https://www.gem.wiki/Pagbilao_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Show badges |Navbar-GOGPT-tracker|Navbar-Global_Coal_Plant_Tracker}}
+'''Pagbilao power station''' is an operating power station of at least 1155-megawatts (MW) in Ibabang Polo, Pagbilao, Quezon, Calabarzon, Philippines with multiple units, some of which are not currently operating.
+It is also known as Aboitiz Luzon LNG power station, Pagbilao LNG-to-Power project.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Pagbilao power station
+| Ibabang Polo, Pagbilao, Quezon, Calabarzon, Philippines
+| 13.8932, 121.745 (exact)
+|}
+{{
+#display_map:
+13.8932, 121.745
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2, Unit 3, Unit 4, Unit 5''': 13.8932, 121.745
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: subbituminous<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 367.5
+| subcritical
+| –
+| 1996
+| –
+| no
+|-
+| Unit 2
+| Operating
+| coal: subbituminous<ref name="autoref_0" />
+| 367.5
+| subcritical
+| –
+| 1996
+| –
+| no
+|-
+| Unit 3
+| Operating
+| coal: bituminous<ref name="autoref_0" />
+| 420
+| subcritical
+| –
+| 2018
+| –
+| no
+|-
+| Unit 4
+| Shelved - inferred 2 y<ref name="autoref_1">{{cite web |url=https://bilyonaryo.com/2024/04/30/aboitiz-family-mulls-1-billion-lng-project-construction-starts-in-2025/power/ |title=Aboitiz family mulls $1 billion LNG project, construction starts in 2025 |date=2024-04-30 |access-date=2024-06-11 |archive-url=https://web.archive.org/web/20240614161042/https://bilyonaryo.com/2024/04/30/aboitiz-family-mulls-1-billion-lng-project-construction-starts-in-2025/power/ |archive-date=2024-06-14}}</ref><ref name="autoref_2">{{cite web |url=https://malaya.com.ph/news_business/aboitiz-eyes-1b-lng-investments/ |title=Aboitiz eyes $1B LNG investments |date=2024-04-30 |website=malaya.com.ph |access-date=2024-06-18 |archive-url=https://web.archive.org/web/20240507173802/https://malaya.com.ph/news_business/aboitiz-eyes-1b-lng-investments/ |archive-date=2024-05-07}}</ref><ref name="autoref_3">{{cite web |url=https://manilastandard.net/business/314288312/aboitiz-power-gets-nod-to-study-grid-impact-of-1310-mw-plant.html |archive-url=https://web.archive.org/web/20221219141939/https://manilastandard.net/business/314288312/aboitiz-power-gets-nod-to-study-grid-impact-of-1310-mw-plant.html |archive-date=2022-12-19}}</ref><ref name="autoref_4">{{cite web |url=https://www.doe.gov.ph/sites/default/files/pdf/electric_power/annex-a_coe-to-ngcp-clearance-to-undertake-sis-december-2022.pdf |archive-url=https://web.archive.org/web/20230126184348/https://www.doe.gov.ph/sites/default/files/pdf/electric_power/annex-a_coe-to-ngcp-clearance-to-undertake-sis-december-2022.pdf |archive-date=2023-01-26}}</ref><ref name="autoref_5">{{cite web |url=https://www.doe.gov.ph/sites/default/files/pdf/electric_power/private_sector_initiated_power_projects/06_Luzon-Indicative-July-2023.pdf |archive-url=https://web.archive.org/web/20231004133700/https://www.doe.gov.ph/sites/default/files/pdf/electric_power/private_sector_initiated_power_projects/06_Luzon-Indicative-July-2023.pdf |archive-date=2023-10-04}}</ref><ref name="autoref_6">{{cite web |url=https://legacy.doe.gov.ph/sites/default/files/pdf/electric_power/private_sector_initiated_power_projects/05_Luzon-Indicative_2024_NOV_LOPSIPP.pdf}}</ref>
+| fossil gas: LNG<ref name="autoref_3" /><ref name="autoref_7">{{cite web |url=https://www.doe.gov.ph/sites/default/files/pdf/electric_power/06_Luzon%20Indicative%20-%202023-03-31.pdf |archive-url=https://web.archive.org/web/20230506161101/http://www.doe.gov.ph/sites/default/files/pdf/electric_power/06_Luzon%20Indicative%20-%202023-03-31.pdf |archive-date=2023-05-06}}</ref><ref name="autoref_4" />
+| 655<ref name="autoref_3" /><ref name="autoref_7" /><ref name="autoref_4" />
+| combined cycle<ref name="autoref_3" /><ref name="autoref_7" /><ref name="autoref_4" />
+| not found
+| 2028 (planned)<ref name="autoref_7" />
+| –<ref name="autoref_8">{{cite web |url=https://www.aspecthuntley.com.au/asxdata/20240930/pdf/02859899.pdf}}</ref>
+| no
+|-
+| Unit 5
+| Shelved - inferred 2 y<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_4" /><ref name="autoref_5" /><ref name="autoref_6" />
+| fossil gas: LNG<ref name="autoref_3" /><ref name="autoref_7" /><ref name="autoref_4" />
+| 655<ref name="autoref_3" /><ref name="autoref_7" /><ref name="autoref_4" /><ref name="autoref_9">{{cite web |url=https://businessmirror.com.ph/2024/05/01/tqe-to-build-1-b-gas-plant-in-quezon/ |archive-url=https://web.archive.org/web/20240524030716/https://businessmirror.com.ph/2024/05/01/tqe-to-build-1-b-gas-plant-in-quezon/ |archive-date=2024-05-24}}</ref>
+| combined cycle<ref name="autoref_3" /><ref name="autoref_7" /><ref name="autoref_4" />
+| not found
+| 2028 (planned)<ref name="autoref_7" />
+| not found
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Aboitiz Power Corp [100%]<ref name="autoref_10">{{cite web |url=https://aboitizpower.com/about-us/our-businesses/power-generation/thermal/therma-luzon-inc}}</ref>
+| Aboitiz Power Corp [100.0%]
+|-
+| Unit 2
+| Aboitiz Power Corp [100%]<ref name="autoref_10" />
+| Aboitiz Power Corp [100.0%]
+|-
+| Unit 3
+| TeaM Energy Corp [50%]; Aboitiz Power Corp [50%]<ref name="autoref_10" /><ref name="autoref_11">{{cite web |url=https://www.teamenergy.ph/about-us/company-profile/}}</ref>
+| Aboitiz Power Corp [50.0%]; Marubeni Corp [25.0%]; Chubu Electric Power Co Inc [12.5%]; Tokyo Electric Power Co [12.5%]
+|-
+| Unit 4
+| Therma Subic Inc [100%]<ref name="autoref_7" />
+| Aboitiz Power Corp [100.0%]
+|-
+| Unit 5
+| Therma Subic Inc [100%]<ref name="autoref_7" />
+| Aboitiz Power Corp [100.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Financing==
+
+*'''Source of financing:''' 70% bank loans; 30% equity<ref name=TEAM>[http://bit.ly/1mmGkmy "Pagbilao plant to add 400MW capacity,"] Rappler, September 29, 2013</ref>: Banco De Oro (BDO), Bank of the Philippine Islands (BPI), China Bank, First Metro Investment Corporation (FIC), PNB Capital, Philippine Savings Bank (PSB), and SB Capital Investment Corporation (SBC) (US$750 million total);<ref>[https://www.power-technology.com/projects/pagbilao-power-plant-expansion/ "Pagbilao Power Plant Expansion,"] Power Technology, accessed May 2018</ref> US$250 million in equity from Aboitiz Power Corp, Tokyo Electric Power Company (TEPCO), and Marubeni<ref name=":0">{{Cite web|url=https://ijglobal.com/data/transaction/30749/pagbilao-coal-fired-power-plant-expansion-1135mw|title=Preview of Pagbilao Coal-Fired Power Plant Expansion (1135MW) {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-12-01}}</ref>
+
+==Background==
+
+The two-unit, 735-MW Pagbilao coal-fired power plant was completed in 1996. The plant is operated by Team Energy, a joint venture of Japanese companies [[Tokyo Electric Power Company]] and Marubeni Corporation.<Ref>[http://globalenergyobservatory.org/geoid/41686 Pagbilao Coal Power Plant Philippines,] Global Energy Observatory, accessed May 2012</ref><ref>[http://www.edf.org/documents/9584_coal-plants-spreadsheet.xls "Coal-Fired Plants Financed by International Public Investment Institutions Since 1994"], Appendix to ''Foreclosing the Future: Coal, Climate and International Public Finance: Investment in coal-fired power plants hinders the fight against global warming'', Environmental Defense, April 2009.</ref> The plant is owned by Aboitiz Power, who took over the plant in 2009.<ref>[https://aboitizpower.com/about-us/our-businesses/power-generation/thermal/therma-luzon-inc Discover How Therma Luzon, Inc. Helps Power A Better Future], Aboitiz Power, Accessed: April 19, 2024</ref>
+ 
+===Unit 3 Expansion===
+In March 2012, Team Energy and the Aboitiz Group announced that they would partner on an additional 420-MW coal-fired unit at Pagbilao. The unit would run on lower-quality Philippine or Indonesian coal.<ref name=aksyon>Añonuevo, Euan. [http://www.interaksyon.com/business/28201/team-energy-aboitiz-power-to-expand-pagbilao-plant-capacity Team Energy, Aboitiz Power to expand Pagbilao plant capacity]. InterAksyon, 30 Mar. 2012.</ref> In 2013, Team Energy announced that Marubeni, one of its two owners, would handle engineering, procurement, and construction (EPC).<ref name=TEAM>[http://bit.ly/1mmGkmy "Pagbilao plant to add 400MW capacity,"] Rappler, September 29, 2013</ref>
+
+Environmental permits were issued in June 2013.<ref name=DOE>[http://www.doe.gov.ph/doe_files/pdf/01_Energy_Situationer/2014-Private-Sector-Initiated-Power-Projects-Luzon%20Committed-September-30.pdf Private Sector Initiated Power Projects (Luzon)], Philippines Department of Energy, 30 Sept. 2014.</ref> In June 2014, the plant's owners announced that Japan's Mitsubishi Hitachi Power Systems and Korea's Daelim Industrial would be constructing the plant.<ref>[http://www.power-technology.com/news/newsmhps-wins-coal-fired-power-plant-construction-contract-from-pagbilao-energy-4283582 MHPS wins coal-fired power plant construction contract from Pagbilao Energy], power-technology.com, 3 June 2014.</ref> In June 2014, First Gen, a subsidiary of First Philippine Holdings Corporation, announced that it was considering buying a stake in the project.<ref>[http://www.miningconnection.com/coal_prep/news/article/first_gen_eyes_stake_in_pagbilao_coal-fired_power_plant_in_quezon_phillipin/ First Gen Eyes Stake in Pagbilao Coal-fired Power Plant in Quezon, Philippines], ''Mining Connection'', 11 June 2014.</ref> Ground was broken on the project in July 2014.<ref name=DOE>[http://www.doe.gov.ph/doe_files/pdf/01_Energy_Situationer/2014-Private-Sector-Initiated-Power-Projects-Luzon%20Committed-September-30.pdf Private Sector Initiated Power Projects (Luzon)], Philippines Department of Energy, 30 Sept. 2014.</ref> Total cost of the project will be $976 million, and the plant is expected to be completed in Q2 2017.<ref name=MSN>[http://www.msn.com/en-ph/news/other/pagbilao-expansion-to-cost-nearly-1b/ar-BB3cNiK Pagbilao expansion to cost nearly $1B], MSN News, 11 Sept. 2014.</ref> 
+
+In September 2017, Aboitiz announced that the plant had been tested up to its 420 MW capacity and that it would begin commercial operations by the end of the year.<ref>[http://thestandard.com.ph/business/power-technology/247181/pagbilao-coal-plant-tests-full-capacity.html Pagbilao coal plant tests full capacity], ''Manila Standard'', 17 Sep 2017.</ref>
+
+In January 2018 it was reported Unit 3 was still in the testing phase, and would begin operations in February 2018.<ref>[http://manilastandard.net/business/power-technology/255379/pagbilao-energy-set-to-operate-1-b-coal-fired-power-plant-in-february.html "Pagbilao Energy set to operate $1-b coal-fired power plant in February,"] Manila Standard, January 02, 2018</ref> On February 27, 2018, the Pagbilao council issued a cease-and-desist order (CDO) against Unit 3 because its owners had not signed a memorandum of understanding on corporate social responsibility (CSR) which, according to Aboitiz, would have required expenditures of "an amount above the company’s approved budget for CSR."<ref>[https://www.doe.gov.ph/energist/pagbilao-gets-court-reprieve-proceed-power-plant PAGBILAO GETS COURT REPRIEVE TO PROCEED WITH POWER PLANT], Department of Energy, Mar. 21, 2018</ref> The Pagbilao council lifted the CDO on March 7, 2018, and Unit 3 went into commercial operation.<ref>[http://powerlinks.news/article/667932/pagbilao-thermal-power-plant-starts-commercial-operations?fieldname=industryids&t=Power&query=&fieldvalue=42 Philippines’ Pagbilao Coal-fired Thermal Power Plant Starts Commercial Operations], Power Links, Mar. 15, 2018</ref>
+
+===Financing for Unit 3===
+In June 2014, a financing agreement for Unit 3 was closed. US$760.13 million in loans was provided by BDO Unibank, BPI Capital Corporation, First Metro Investment Corporation (FMIC), SB Capital Investment, Philippine National Bank, China Banking Corporation, and Security Bank. US$250 million in equity was provided by Aboitiz Power Corp, Tokyo Electric Power Company (TEPCO), and Marubeni. ING Group acted as financial adviser to the sponsors.<ref name=":0">{{Cite web|url=https://ijglobal.com/data/transaction/30749/pagbilao-coal-fired-power-plant-expansion-1135mw|title=Preview of Pagbilao Coal-Fired Power Plant Expansion (1135MW) {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-12-01}}</ref>
+
+===Possible LNG Addition===
+In the DOE's March 2023 list of Indicative Power Projects, a 1,310 MW gas-fired power plant was listed by Therma Subic Inc. as "Pagbilao 4 & 5 CCGT Power Plant" with an expected commission date of July 2028.<ref>[https://www.doe.gov.ph/sites/default/files/pdf/electric_power/06_Luzon%20Indicative%20-%202023-03-31.pdf?withshield=1 "LUZON INDICATIVE POWER PROJECTS,"] Department of Energy, March 31, 2023</ref>
+It was reported in May 2023 that AboitizPower was planning the LNG project in Pagbilao "to meet base load requirement[s] by 2028 to 2030" <ref>[https://www.manilatimes.net/2023/05/09/business/top-business/traditional-power-plants-still-needed/1890539 "Traditional power plants still needed,"] The Manila Times, May 9, 2023</ref>
+
+In June 2026, LNG equipment originally intended for the Pagbilao power station addition was reportedly sold to the US-based Hallador Energy company.<ref>[https://ieefa.org/resources/gas-turbine-sale-signals-end-another-philippine-lng-project "Gas turbine sale signals the end of another Philippine LNG project,"] Institute for Energy Economics and Financial Analysis, June 10, 2026</ref>
+
+===Testing ammonia co-firing===
+In June 2023, Aboitiz Power announced that in the following year, the company would study the potential of co-firing its coal plants with ammonia "possibly in collaboration" with the major Japanese utility JERA. Pagbilao power station was reportedly chosen as the candidate-facility for testing.<ref>[https://mb.com.ph/2023/6/29/aboitiz-power-to-study-ammonia-co-firing-by-next-year "Aboitiz Power to study ammonia co-firing by next year,"] Manila Bulletin, June 29, 2023</ref>
+
+==Ownership==
+
+In July 2024, reporting stated that TeaM Energy's Build-Operate-Transfer (BOT) contracts at the Sual and Pagbilao power stations would expire in 2024 and 2025, respectively, as TeaM Energy partners Marubeni Corporation and JERA would move their sights toward renewable energy projects.<ref>[https://powerphilippines.com/marubeni-philippines-to-consider-re-as-coal-contracts-expire/ Marubeni Philippines to consider RE as coal contracts expire], Power Philippines, July 3, 2024</ref><ref>[https://www.bworldonline.com/corporate/2024/07/03/605697/marubeni-phl-shifts-focus-to-re-as-coal-contracts-near-end/ Marubeni PHL shifts focus to RE as coal contracts near end], Business World, July 3, 2024</ref> Ownership and control of the two coal plants would be transferred to Aboitiz Power and the San Miguel Corporation.
+
+In July 2025, Marubeni Corp announced its intension to divest from Pagbilao-3.<ref>[https://mb.com.ph/2025/07/30/japanese-partner-marubeni-divesting-stake-in-pagbilao-3-plant Japanese partner Marubeni divesting stake in Pagbilao-3 plant], Manila Bulletin, July 30, 2025</ref>
+
+In August 2025, the ownwership transfer of Units 1 and 2 from TeaM Energy to Aboitiz Power was official. TeaM Energy maintained its 50% stake in Unit 3.<ref>[https://mb.com.ph/2025/08/15/aboitizpower-unit-takes-over-pagbilao-plant-as-team-energys-contract-ends AboitizPower unit takes over Pagbilao plant as TeaM Energy's contract ends], Manila Bulletin, August 15, 2025</ref>
+
+==Tropical Storm Paeng==
+
+In October 2022, 4 million residents were left without power when tropical storm Paeng shut down [https://www.gem.wiki/Bac-Man_geothermal_power_plant Bacman geothermal power plant], [https://www.gem.wiki/Quezon_power_station#460_MW_Expansion Quezon power station] and Pagbilao power station. At the Pagbilao power station, two out of three units went offline temporarily.<ref>[https://manilastandard.net/news/314274196/3-power-plants-shut-4-million-meralco-clients-without-power-amid-storm.html "3 power plants shut, 4 million Meralco clients without power amid storm"], Manila Standard, October 31, 2022.</ref>
+
+==Outages and impact on grid==
+
+In May 2024, an analysis by the Center for Energy, Ecology, and Development found that coal- and gas-fired power plants were the leading cause of blackouts in the Philippines between 2019 and 2023. Over half of the forced outages in that time period were attributable to coal plants. Of the eight most unreliable plants, six were coal plants: [[Calaca power station]], [https://www.gem.wiki/Quezon_power_station San Buenaventura power station], [[Masinloc power station]], [[Limay power station]], [[Panay power station]], and Pagbilao power station. These power stations each had at least 10 incidents of forced outages. The amount of outages was not consistent with age; Masinloc power station Unit 3, which had only been operating for three years, was reportedly offline for 118 days.<ref>[https://ceedphilippines.com/cant-take-the-heat-report/ Can’t Take The Heat?: Examining the Philippines’ Perennial Power Outages Problem caused by Fossil Fuels], Center for Energy, Ecology, and Development, May 13, 2024</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including interactive maps of the power stations, downloadable datasets, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] and the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Philippines]][[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Philippines]]

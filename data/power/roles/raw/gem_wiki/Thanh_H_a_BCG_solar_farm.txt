@@ -1,0 +1,78 @@
+# GEM wiki page: Thanh Hóa (BCG) solar farm
+# URL: https://www.gem.wiki/Thanh_Hóa_(BCG)_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Bcg Thanh Hoa Pv, BCG-CME 2, My Thanh Bac BCG
+
+'''Thanh Hóa (BCG) solar farm''' is an operating solar photovoltaic (PV) farm in Thạnh Hóa, Long An, Vietnam.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Thanh Hóa (BCG) solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.pv-tech.org/hanwha-and-bcg-bang-duong-partner-on-100mw-vietnam-solar-project/ |archive-url=https://web.archive.org/web/20240201150942/https://www.pv-tech.org/hanwha-and-bcg-bang-duong-partner-on-100mw-vietnam-solar-project/ |archive-date=2024-02-01}}</ref>
+| 2019<ref name="autoref_0" />
+| 100 MWp/dc<ref name="autoref_0" />
+| PV<ref name="autoref_0" />
+| Hanwha – Bamboo Capital Group Bang Duong Energy JSC; Hanwha Energy Vietnam<ref name="autoref_1">{{cite web |url=https://www.pv-tech.org/hanwha-and-bcg-bang-duong-partner-on-100mw-vietnam-solar-project/, https://www.pv-tech.org/hanwha-and-bcg-bang-duong-partner-on-100mw-vietnam-solar-project/}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Thanh Hóa (BCG) solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Thạnh Hóa, Long An, Vietnam<ref name="autoref_2">{{cite web |url=https://wiki-solar.org/ |title=Wiki-Solar Database |date=2023-04 |access-date=2024-02-28 |archive-url=https://web.archive.org/web/20240402052142/https://wiki-solar.org/ |archive-date=2024-04-02}}</ref>
+| 10.9170, 106.2580 (exact)<ref name="autoref_2" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+10.917, 106.258~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Vietnam]]
+[[Category:PV solar farms]]
+
+__NOTOC__

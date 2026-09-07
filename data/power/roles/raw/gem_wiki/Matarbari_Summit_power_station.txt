@@ -1,0 +1,145 @@
+# GEM wiki page: Matarbari Summit power station
+# URL: https://www.gem.wiki/Matarbari_Summit_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Matarbari Summit power station''' is a cancelled power station in Maheshkhali Upazila - Cox's Bazar District, Chittagong, Bangladesh.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Matarbari Summit power station
+| Maheshkhali Upazila - Cox's Bazar District, Chittagong, Bangladesh
+| 21.58341, 91.929468 (approximate)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/Moheskhali+Upazila,+Bangladesh/@21.6604857,91.9840093,12z/data=!4m5!3m4!1s0x30adb182fc5117dd:0xd2e600dab999a00!8m2!3d21.5373654!4d91.9417617}}</ref>
+|}
+{{
+#display_map:
+21.58341, 91.929468
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Emergency/Backup
+|-
+| 1
+| Cancelled - inferred 4 y<ref name="autoref_1">{{cite web |url=https://www.marketforces.org.au/campaigns/international/japans-fossil-gas-expansion/ |archive-url=https://web.archive.org/web/20221101003116/https://www.marketforces.org.au/campaigns/international/japans-fossil-gas-expansion/ |archive-date=2022-11-01}}</ref><ref name="autoref_2">{{cite web |url=https://archive.dhakatribune.com/bangladesh/power-energy/2018/07/11/summit-signs-3-billion-investment-deal-with-ge-and-mitsubishi}}</ref><ref name="autoref_3">{{cite web |url=https://summitpowerinternational.com/bigger-projects-funds-singapore |archive-url=https://web.archive.org/web/20220119220254/https://summitpowerinternational.com/bigger-projects-funds-singapore |archive-date=2022-01-19}}</ref><ref name="autoref_4">{{cite web |url=https://fossilfreechattogram.com/companies-projects/ |archive-url=https://web.archive.org/web/20221127111950/https://fossilfreechattogram.com/companies-projects/ |archive-date=2022-11-27}}</ref>
+| fossil gas: LNG<ref name="autoref_3" />
+| 600<ref name="autoref_3" />
+| combined cycle<ref name="autoref_5">{{cite web |url=https://www.apacoutlookmag.com/company-profiles/230-summit-power-international |archive-url=https://web.archive.org/web/20220119221540/https://www.apacoutlookmag.com/company-profiles/230-summit-power-international |archive-date=2022-01-19}}</ref>
+| not found
+| no
+|-
+| 2
+| Cancelled - inferred 4 y<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_4" />
+| fossil gas: LNG<ref name="autoref_3" />
+| 600<ref name="autoref_3" />
+| combined cycle<ref name="autoref_5" />
+| not found
+| no
+|-
+| 3
+| Cancelled - inferred 4 y<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_4" />
+| fossil gas: LNG<ref name="autoref_3" />
+| 600<ref name="autoref_3" />
+| combined cycle<ref name="autoref_5" />
+| not found
+| no
+|-
+| 4
+| Cancelled - inferred 4 y<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_4" />
+| fossil gas: LNG<ref name="autoref_3" />
+| 600<ref name="autoref_3" />
+| combined cycle<ref name="autoref_5" />
+| not found
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Summit-Mitsubishi-GE JV JV [100%]<ref name="autoref_3" />
+| General Electric Co [33.3%]; Mitsubishi Corp [33.3%]; Summit Power International Ltd [33.3%]
+|-
+| 2
+| Summit-Mitsubishi-GE JV JV [100%]<ref name="autoref_3" />
+| General Electric Co [33.3%]; Mitsubishi Corp [33.3%]; Summit Power International Ltd [33.3%]
+|-
+| 3
+| Summit-Mitsubishi-GE JV JV [100%]<ref name="autoref_3" />
+| General Electric Co [33.3%]; Mitsubishi Corp [33.3%]; Summit Power International Ltd [33.3%]
+|-
+| 4
+| Summit-Mitsubishi-GE JV JV [100%]<ref name="autoref_3" />
+| General Electric Co [33.3%]; Mitsubishi Corp [33.3%]; Summit Power International Ltd [33.3%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjUlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS4yJS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS4zJS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMDAwMDY1MFsiTWl0c3ViaXNoaSBDb3JwIl0gLS0+IDEwMDAwMDAwNDEyNQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS4wNSUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzUlLS0+IDEwMDAwMDAwMDYzMAogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuMiUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDAwMDA2MzBbIkNodWJ1IEVsZWN0cmljIFBvd2VyPGJyPkNvIEluYyJdIC0tNTAuMCUtLT4gMTAwMDAwMDAxNTMzCiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTUuNTMlLS0+IDEwMDAwMDAwMDY1OQogICAgMTAwMDAxMDE1NTg3XzExWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMzkuNzIlLS0+IDEwMDAwMDAwMDY1OQogICAgMTAwMDAxMDExMTM2WyJHb3Zlcm5tZW50IG9mIEphcGFuIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDAwODk0CiAgICAxMDAwMDEwMDA4OTRbIk51Y2xlYXIgRGFtYWdlPGJyPkNvbXBlbnNhdGlvbiBhbmQ8YnI+RGVjb21taXNzaW9uaW5nPGJyPkZhY2lsaXRhdGlvbiBDb3JwIl0gLS01NC43NSUtLT4gMTAwMDAwMDAwNjU5CiAgICAxMDAwMDAwMDA2NTlbIlRva3lvIEVsZWN0cmljIFBvd2VyPGJyPkNvIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTkyNTI5CiAgICAxMDAwMDAxOTI1MjlbIlRFUENPIEZ1ZWwgJiBQb3dlcjxicj5JbmMiXSAtLTUwLjAlLS0+IDEwMDAwMDAwMTUzMwogICAgMTAwMDAwMDAxNTMzWyJKRVJBIENvIEluYyJdIC0tMjIuMCUtLT4gMTAwMDAwMDAwOTEyCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAwMDAwOTEyCiAgICAxMDAwMDAwMDA5MTJbIlN1bW1pdCBQb3dlcjxicj5JbnRlcm5hdGlvbmFsIEx0ZCJdIC0tPiAxMDAwMDAwMDQxMjUKICAgIDEwMDAwMDEyMzI2MV8zWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tPiAxMDAwMDEwMTQ4NDkKICAgIDEwMDAwMTAxNDg0OVsiRk1SIExMQyJdIC0tNi4xNSUtLT4gMTAwMDAwMDAxMjIzCiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTcuNiUtLT4gMTAwMDAwMDAxMjIzCiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguMTMlLS0+IDEwMDAwMDAwMTIyMwogICAgMTAwMDAxMDE1NTg3XzEyWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMTIlLS0+IDEwMDAwMDAwMTIyMwogICAgMTAwMDAwMDAxMjIzWyJHZW5lcmFsIEVsZWN0cmljIENvIl0gLS0+IDEwMDAwMDAwNDEyNQogICAgMTAwMDAwMDA0MTI1WyJTdW1taXQtTWl0c3ViaXNoaS1HRTxicj5KViBKViJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDYzNjEKICAgIFAxMDAwMDA0MDYzNjFbIk1hdGFyYmFyaSBTdW1taXQ8YnI+cG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Background==
+
+'''In July 2018''', Reuters reported that U.S. General Electric, Japan’s Mitsubishi Corporation, and Bangladesh-based Summit will build a 2,400 megawatt (MW) thermal power plant and related oil and LNG terminals.<ref name=reut>[https://www.reuters.com/article/us-bangladesh-energy-investment/bangladesh-signs-deal-with-general-electric-mitsubishi-to-invest-3-billion-in-energy-idUSKBN1K11SI Bangladesh unveils $5.8 billion energy investment, two JV's with General Electric], ''Reuters'', Jul 11, 2018</ref> At the time, the $3 billion agreement was "the biggest ever private foreign direct investment (FDI) in the power sector in Bangladesh".<ref>[https://www.dhakatribune.com/bangladesh/power-energy/2018/07/11/summit-signs-3-billion-investment-deal-with-ge-and-mitsubishi Summit signs $3 billion investment deal with GE and Mitsubishi], ''Dhaka Tribune'', Jul 11, 2018</ref>
+
+'''In July 2018,''' Reuters reported that approximately 30% of Bangladesh's population does not have access to electricity. The country relies on its gas resources for 70 percent of its energy production, but as demand has risen, its supply has struggled to keep up, and the country is now becoming an LNG importer.<ref>{{Cite news|url=http://reuters.com/article/us-bangladesh-energy-investment/bangladesh-signs-deal-with-general-electric-mitsubishi-to-invest-3-billion-in-energy-idUSKBN1K11SI|title=Bangladesh unveils $5.8 billion energy investment, two JV's with General Electric|last=Serajul Quadir|work=U.S.|access-date=2022-08-17|language=en-US}}</ref>
+
+The proposed plant is expected to come online in 2023.<ref name=":0">[https://www.asiaoutlookmag.com/outlook-features/summit-power-international Power to the People], ''Asia Outlook Magazine'', Oct 12, 2018</ref>
+
+Summit will be the majority owner of the project, while Mitsubishi and GE will share the rest of the ownership.<ref name="Platts">[https://summitpowerinternational.com/bigger-projects-funds-singapore Bigger projects with funds from Singapore], Summit Power International website, Aug 8, 2018</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Bangladesh]]

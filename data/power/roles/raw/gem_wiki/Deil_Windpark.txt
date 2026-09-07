@@ -1,0 +1,87 @@
+# GEM wiki page: Deil Windpark
+# URL: https://www.gem.wiki/Deil_Windpark
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Deil Windpark''' is an operating wind farm in Netherlands.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Deil Windpark ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://www.thewindpower.net/windfarm_en_30945_deil.php |archive-url=https://web.archive.org/web/20240126024116/https://www.thewindpower.net/windfarm_en_30945_deil.php |archive-date=2024-01-26}}</ref>
+| –
+| 16 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_0" />
+| –
+| –
+|-
+| 2
+| Operating<ref name="autoref_1">{{cite web |url=https://windparkdeil.nl/een-duurzaam-en-gezond-2021/ |archive-url=https://web.archive.org/web/20240126141949/https://windparkdeil.nl/een-duurzaam-en-gezond-2021/ |archive-date=2024-01-26}}</ref>
+| 2020<ref name="autoref_2">{{cite web |url=https://www.eurus-energy.com/en/project/project-eu/10047/ |archive-url=https://web.archive.org/web/20240126024103/https://www.eurus-energy.com/en/project/project-eu/10047/ |archive-date=2024-01-26}}</ref>
+| 21 MW<ref name="autoref_2" />
+| Onshore<ref name="autoref_2" />
+| Eurus Energy; Burgerwind COOP; Pure Energy (株式会社ユーラスエナジーホールディングス)<ref name="autoref_3">{{cite web |url=https://yardenergy.com/portfolio/, https://windparkdeil.nl/bouwer-andre/, https://yardenergy.com/portfolio/, https://windparkdeil.nl/bouwer-andre/, https://yardenergy.com/portfolio/, https://windparkdeil.nl/bouwer-andre/}}</ref>
+| Yard Energy Group<ref name="autoref_4">{{cite web |url=https://yardenergy.com/portfolio/, https://windparkdeil.nl/bouwer-andre/}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Deil Windpark ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Netherlands<ref name="autoref_0" />
+| 51.8539, 5.2221 (exact)<ref name="autoref_0" />
+|-
+| 2
+| Haaften, Gelderland, Netherlands<ref name="autoref_5">{{cite web |url=https://eurus-europe.com/projects-overview/?wpv_view_count=87-TCPID82&wpv-wpcf-type-of-energy=&wpv-wpcf-mhz=0&wpv-wpcf-country=The+Netherlands&wpv-wpcf-year-for-filter-2=js-wpv-addon-maps-render-map-1 |archive-url=https://web.archive.org/web/20240131224810/https://eurus-europe.com/projects-overview/?wpv_view_count=87-TCPID82&wpv-wpcf-type-of-energy=&wpv-wpcf-mhz=0&wpv-wpcf-country=The+Netherlands&wpv-wpcf-year-for-filter-2=js-wpv-addon-maps-render-map-1 |archive-date=2024-01-31}}</ref>
+| 51.8550, 5.2333 (exact)<ref name="autoref_5" />
+|}
+The map below shows the exact locations of the wind farm phases:
+<display_map width=600 height=500 type=satellite>
+51.8539, 5.2221~ ~ ~ ~ ~Phase 1
+51.855, 5.2333~ ~ ~ ~ ~Phase 2
+</display_map>
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Netherlands]]
+
+__NOTOC__

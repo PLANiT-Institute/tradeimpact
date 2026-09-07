@@ -1,0 +1,242 @@
+# GEM wiki page: Tanjung Jati B power station
+# URL: https://www.gem.wiki/Tanjung_Jati_B_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Tanjung Jati B power station''' is an operating power station of at least 4640-megawatts (MW) in Tanjung Jati, Kembang, Jepara, Jawa, Indonesia.
+It is also known as 坦竣B电站.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Tanjung Jati B power station
+| Tanjung Jati, Kembang, Jepara, Jawa, Indonesia
+| -6.4447822, 110.743491 (exact)
+|}
+<display_map width=600 height=500 type=satellite>
+-6.4447822, 110.743491
+-6.446, 110.7423
+-6.446488, 110.742359
+</display_map>
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': -6.4447822, 110.743491
+* '''Unit 3, Unit 4''': -6.446, 110.7423
+* '''Unit 5, Unit 6''': -6.446488, 110.742359
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: bituminous<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 660
+| subcritical
+| 2006
+| –
+| False
+|-
+| Unit 2
+| Operating
+| coal: bituminous<ref name="autoref_0" />
+| 660
+| subcritical
+| 2006
+| –
+| False
+|-
+| Unit 3
+| Operating
+| coal: bituminous<ref name="autoref_0" />
+| 660
+| subcritical
+| 2011
+| –
+| False
+|-
+| Unit 4
+| Operating
+| coal: bituminous<ref name="autoref_0" />
+| 660
+| subcritical
+| 2012
+| –
+| False
+|-
+| Unit 5
+| Operating
+| coal: subbituminous<ref name="autoref_0" />
+| 1000
+| ultra-supercritical
+| 2022
+| 2047 (planned)<ref name="autoref_1">{{cite web |url=https://caseforsea.org/wp-content/uploads/2024/03/Coals-Endgame-Early-Retirement-of-CFPP-vs-CCS-CASE-Indonesia.pdf |archive-url=https://web.archive.org/web/20260224150423/https://caseforsea.org/wp-content/uploads/2024/03/Coals-Endgame-Early-Retirement-of-CFPP-vs-CCS-CASE-Indonesia.pdf |archive-date=2026-02-24}}</ref>
+| False
+|-
+| Unit 6
+| Operating
+| coal: subbituminous<ref name="autoref_0" />
+| 1000
+| ultra-supercritical
+| 2022
+| 2047 (planned)<ref name="autoref_1" />
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| PT Central Java Power [100%]
+| Sumitomo Corp [100.0%]
+|-
+| Unit 2
+| PT Central Java Power [100%]
+| Sumitomo Corp [100.0%]
+|-
+| Unit 3
+| PT Central Java Power [100%]
+| Sumitomo Corp [100.0%]
+|-
+| Unit 4
+| PT Central Java Power [100%]
+| Sumitomo Corp [100.0%]
+|-
+| Unit 5
+| PT Bhumi Jati Power [100%]
+| Sumitomo Corp [50.0%]; Kansai Electric Power Co [25.0%]; PT United Tractors Tbk [25.0%]
+|-
+| Unit 6
+| PT Bhumi Jati Power [100%]
+| Sumitomo Corp [50.0%]; Kansai Electric Power Co [25.0%]; PT United Tractors Tbk [25.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Tanjung Jati B Phase I and Phase II Location==
+
+The satellite photograph below shows the Tanjung Jati B power station, which is located at Tanjung Jati, Kembang District, Jepara Regency, Central Java Province, Indonesia.
+{{#display_map:-6.446488,110.742359|width=600|height=500|type=hybrid|zoom=16}}
+
+==Tanjung Jati B Phase III Location==
+
+The satellie photograph below shows the Phase III expansion being built to the east of the Tanjung Jati B power station.
+{{#display_map:-6.4444949,110.753041|width=600|height=500|type=hybrid|zoom=16}}
+
+==Background==
+
+Tanjung Jati B power station is a 2,640 megawatt (MW) coal-fired power station located in Central Java Province, Indonesia. The power station comprises four 660 MW generating units.<ref name="GEO">[http://globalenergyobservatory.org/geoid/41518 "Tanjung Jati-B Coal Power Plant Indonesia,"] Global Energy Observatory, accessed December 2013</ref><ref>[http://www.edf.org/documents/9584_coal-plants-spreadsheet.xls "Coal-Fired Plants Financed by International Public Investment Institutions Since 1994"], Appendix to ''Foreclosing the Future: Coal, Climate and International Public Finance: Investment in coal-fired power plants hinders the fight against global warming'', Environmental Defense, April 2009.</ref> [[Tanjung Jati Coal Terminal]] serves the power station.<ref>[http://www.censin.com/indonesia-coal-ports/ "Indonesia Coal Ports"] Censin Resources, accessed on August 16, 2011.</ref>
+
+The current plant was built in two phases, each comprising two 660 MW units. A third phase of two 1,000 MW units is planned. The project owner, PT Central Java Power (owned by Sumitomo) has executed a finance lease agreement with [[PT PLN]] as the lessee. When the lease period expires the assets will be transferred to PLN.<ref>[http://web.archive.org/web/20150325053944/http://www.sumitomocorp.co.jp/english/news/detail/id=25675 "Completion Ceremony of Tanjung Jati B Coal-Fired Power Plant Expansion in Indonesia"] Sumitomo Corporation, Feb. 2012</ref>
+
+In November 2022, Sumitomo announced that Units 1-4 of the Tanjung Jati B power station would be retired early in favor of developing the 9 GW Kayan Cascade Hydropower project.<ref>[https://ekonomi.bisnis.com/read/20221125/44/1602103/sumitomo-lepas-aset-pltu-tanjung-jati-b-alihkan-investasi-ke-plta-kayan "Sumitomo Lepas Aset PLTU Tanjung Jati B, Alihkan Investasi ke PLTA Kayan"] Bisnis Indonesia, November 25, 2022</ref>
+
+In December 2023, construction work on a chute repair was underway at Tanjung Jati B power station.<ref>[https://www.plnnpc.com/?p=6407 "Revitalisasi Chute Stare A PLTU Tanjung Jati B"] PT PLN Nusantara Power Construction, December 15, 2023</ref>
+
+As of May 2025, Phases I and II were reportedly targets for co-firing sawdust.<ref>[https://energyandcleanair.org/wp/wp-content/uploads/2025/05/EN-IDN-Biomass-co-firing-in-Indonesia.pdf Biomass co-firing in Indonesia: Prolonging, not solving coal problem], Centre for Research on Energy and Clean Air, May 2025</ref>
+
+===Phase I (Units 1 and 2): 2 x 660 MW===
+The first phase went through a long history of development before finally being commissioned in 2006. The website "Power Plants Around the World" describes the story as follows:<ref name="trading">[http://www.industcards.com/st-coal-indonesia.htm "Coal-Fired Power Plants in Indonesia,"] Power Plants Around the World, accessed December 2013</ref>
+
+:" Tanjung Jati-B was proposed by Hopewell Holdings and initially bid as an IPP in June 1994. A PPA with PLN followed in September 1994. The EPC contract was signed in September 1995 and site work started on 15 April 1997. The Asian financial crisis combined with allegations about mismanagement of the PPA terms led to Hopewell withdrawing, leaving the project about one-third complete. Sumitomo renegotiated the development as a leasing scheme and construction resumed in September 2003 with financing from JBIC. The 5-year project suspension led to parts and equipment being stored onsite and at 75 locations worldwide."
+
+===Phase II (Units 3 and 4): 2 x 660 MW===
+Unit 3 was commissioned in November 2011 and Unit 4 was commissioned in January 2012. The units cost $2.1 billion.<ref name="GEO">[http://globalenergyobservatory.org/geoid/41518 "Tanjung Jati-B Coal Power Plant Indonesia,"] Global Energy Observatory, accessed December 2013</ref>
+
+In August 2024, a fire broke out in the Phase II units.<ref>[https://jurnalhariankota.com/kebakaran-di-pltu-tanjung-jati-b-jepara-tidak-ada-korban-jiwa/ Kebakaran di PLTU Tanjung Jati B Jepara, Tidak Ada Korban Jiwa], Jurnal Hariankota, August 21, 2024</ref>
+
+===Phase III (Units 5 and 6): 2 x 1000 MW===
+A third phase of two 1000 MW units is described in PLN's long-range plan for 2013-2022. It is referred to as "PLTU Jawa-4 #5 and #6" and is slated for 2019 and 2020.
+<ref name="LT">[http://energy-indonesia.com/03dge/0140317pln.pdf “PLN Long Term Electricity Plan (2013-2023),”] presentation by Moch. Sofyan, Head of New & Renewable Division of PT PLN (Persero), 06 March 2014, p. 11</ref><ref>Muhammad Oliez, [http://ekbis.sindonews.com/read/2013/12/03/34/812581/pltu-tanjung-jati-b-unit-5-dan-6-mendesak-dibangun "PLTU Tanjung Jati B unit 5 dan 6 mendesak dibangun" (Tanjung Jati B power plant units 5 and 6 urgent constructed),] SindNews.com, December 3, 2013</ref> 
+
+In December 2013, the government of Jepara Regency renewed its push for the two units to be built. Outstanding issues that that point included lining up investors, land acquisition, building a new transmission line, and lining up government support.<ref>Muhammad Oliez. [http://ekbis.sindonews.com/read/812581/34/pltu-tanjung-jati-b-unit-5-dan-6-mendesak-dibangun-1386041087 PLTU Tanjung Jati B unit 5 dan 6 mendesak dibangun]. Sindo News, 3 Dec. 2013.</ref>
+
+As of March 2015, the plant's proponents were holding public hearings as part of the EIA environmental permit application process. Sumitomo said it hoped to complete the units by 2019.<ref>[http://www.suaraonlineterkini.com/2015/03/konsultasi-publik-amdal-pembangunan-dan.html Konsultasi Publik AMDAL Pembangunan dan Pengoperasian Unit 5&6 PLTU TJB], Suara Online Terkini, 3 Mar. 2015.</ref>
+
+PLN's long-range plan for 2016-2025 included Jawa-4 as a 2,000 MW addition in 2019.<ref name="LTP">[http://www.djk.esdm.go.id/pdf/RUPTL/RUPTL%20PLN%202016-2025.pdf “Rencana Usaha Penyediaan Tenaga Listrik, PT PLN (Persero), 2016-2025,”] Kementerian Energi Dan Sumber Daya Mineral, June 2016</ref> Sumitomo announced in December 2015 that a power purchase agreement had been signed for two units of 1,000 MW each. According to Sumitomo, the company along with Kansai Electric Power and PT United Tractors (an affiliate of Indonesian conglomerate Astra Group) signed the agreement with PT PLN (Persero) on December 21, 2015.<ref name="Sumo">[http://www.sumitomocorp.co.jp/english/news/detail/id=29092 "Tanjung Jati B coal-fired power plant Unit 5 & 6 Expansion Project (2,000MW),"] Sumitomo, December 21, 2015</ref>
+
+In February 2016, RambuEnergy reported that an environmental impact study, also known as an "Amdal study," for the two projects had been underway since the previous year. The head of the Amdal study team said that the study might be completed by the end of February. Governor Pranowo said that growing electricity demand in Central Java made the project crucial. The RambuEnergy article described the units as 1,070 MW each and described the combustion technology as [[ultra-supercritical]]. According to the article, local NGOs were calling on the government to postpone the Amdal document. A spokesperson for the United Jepara Forum (Forum Jepara Bersatu/FJB) said that the document needed further clarity.<ref name="Rambu">[http://www.rambuenergy.com/2016/02/development-of-tanjung-jati-b-unit-5-6-in-central-java-drags-on/ "Development of Tanjung Jati B Unit 5 & 6 in Central Java drags on,"] RambuEnergy, February 24, 2016</ref>
+
+The projects is a BOT (Build, Operate and Transfer) scheme of 25 years, after which it will be transfered to PT PLN. The total project cost is expected 500 billion yen, mainly funded by project finance.<ref name="Sumo">[http://www.sumitomocorp.co.jp/english/news/detail/id=29092 "Tanjung Jati B coal-fired power plant Unit 5 & 6 Expansion Project (2,000MW),"] Sumitomo, December 21, 2015</ref> In February 2017, the financing for the plant was US$3.355 billion.<ref name="jbic2-217">[https://www.jbic.go.jp/en/information/press/press-2016/0227-53954 "Project Finance for Re-expansion of Tanjung Jati B Coal-Fired Power Plant in Indonesia,"] JBIC announcement, 27 February 2017</ref>
+
+In March 2017, industri.bisnis.com reported the signing of a statement and guarantee document by PLN and BJP, described as a key part of the pre-financial close phase. PLN and BJB had previously. In December 2015 the two parties signed a power purchase agreement (PPA), and they amended the PPA in September 2016.<ref>[http://industri.bisnis.com/read/20170328/44/640693/pln-percepat-pembangunan-tanjung-jati-b- "PLN Accelerates Development of Tanjung Jati B,"] industri.bisnis.com, 28 March 2017</ref>
+
+In August 2017 it was reported that construction had begun on the units, with completion planned for 2021.<ref>[https://en.tempo.co/read/news/2017/09/05/056906034/Jawa-4-Power-Plant-to-Begin-Operations-in-2021 "Jawa 4 Power Plant to Begin Operations in 2021,"] Tempo, Sep 5, 2017</ref> In August 2018 it was reported that construction was 32% complete.<ref>[http://jateng.tribunnews.com/2018/08/09/komang-berharap-pltu-tanjung-jati-b-unit-5-dan-6-rampung-2021 Komang Berharap PLTU Tanjung Jati B Unit 5 dan 6 Rampung 2021], Tribun Jateng, Aug. 9, 2018</ref> In May 2019 it was reported that construction was at 55%-60% and that Unit 5 and Unit 6 would be commissioned in September 2021.<ref>[https://www.suaramerdeka.com/news/baca/184069/pltu-tanjung-jati-b-jepara-siap-beri-pasokan-listrik-4640-mw PLTU Tanjung Jati B Jepara Siap Beri Pasokan Listrik 4,640 Mw], Suara Merdeka, May 16, 2019</ref> In July 2019 it was reported that construction of Unit 5 and Unit 6 was 75% complete.<ref>[https://semarang.bisnis.com/read/20190731/536/1131090/salip-paiton-tanjung-jati-b-siap-jadi-pltu-terbesar-di-indonesia Salip Paiton, Tanjung Jati B Siap Jadi PLTU Terbesar di Indonesia], Semarang, Jul. 31, 2019</ref>
+
+In March 2020 the project's sponsor announced that it might be delayed as a result of the COVID-19 pandemic.<ref name="ko">[https://industri.kontan.co.id/news/jadwal-operasional-pembangkit-terganggu-wabah-corona-ini-tanggapan-pln?page=all Jadwal operasional pembangkit terganggu wabah corona, ini tanggapan PLN], Kontan, Mar. 8, 2020</ref> Construction of Units 5 and 6 was reportedly 93% complete as of May 31, 2020.<ref>https://market.bisnis.com/read/20200707/192/1262425/diadang-pandemi-tiga-emiten-kebut-penyelesaian-proyek-pembangkit-listrik Diadang Pandemi, Tiga Emiten Kebut Penyelesaian Proyek Pembangkit Listrik], Bisnis, Jul. 7, 2020</ref> In April 2021 it was reported that construction was behind schedule and would not be completed until early 2022.<ref>[https://investasi.kontan.co.id/news/operasi-komersial-pltu-tanjung-jati-diperkirakan-mundur-hingga-awal-2022 Operasi komersial PLTU Tanjung Jati diperkirakan mundur hingga awal 2022], Kontan, Apr. 9, 2021</ref> PLN supported the decision to delay operation, stating that the electrical grid was likely to face an oversupply if three major power generation facilities came online in 2021, including the Tanjung Jati B power station and the [[Central Java Power Project|Central Java Power Station]].<ref>[https://industri.kontan.co.id/news/ada-potensi-oversupply-pln-ingin-tunda-jadwal-cod-tiga-pembangkit-ini Ada potensi oversupply, PLN ingin tunda jadwal COD tiga pembangkit ini], Kontan, May 7, 2021</ref> In January 2022, the project was reported to be 99.8% complete but an exact commissioning date was not announced due to Covid-19-related uncertainties.<ref>[https://market.bisnis.com/read/20220109/192/1486913/soal-pltu-jawa-4-untr-masih-koordinasi-dengan-pln Regarding PLTU Jawa 4, UNTR is still coordinating with PLN], Bisnis, Jan. 9, 2022</ref>
+
+In early 2023, Jawa-4 appeared listed as a 2022 achievement in a Ministry of Energy and Mineral Resources (ESDM) report through the Directorate General of Electricity, but the commercial operation date was unclear.<ref>[https://voi.id/ekonomi/249884/progres-proyek-listrik-35-gw-baru-47-persen-hingga-desember-2022 "Progres Proyek Listrik 35 GW Baru 47 Persen hingga Desember 2022,"] VOI, Feb. 1, 2023</ref>
+
+In April 2023, a PT Bhumi Jati Power company announcement stated that Units 5 and 6 achieved commercial operation in September 2022.<ref>[https://www.bhumi-jati.co.id/news/news-detail/announcement-of-new-president-director.html "Announcement of New President Director,"] Bhumi Jati Power, April 14, 2023</ref>
+
+In April 2024, Phase III was included in a cost benefit analysis comparing early retirement with the use of carbon capture and storage technology. The analysis used 2047 as the planned retirement date for the units, which was the end of the units' power purchase agreement.<ref>[https://caseforsea.org/wp-content/uploads/2024/03/Coals-Endgame-Early-Retirement-of-CFPP-vs-CCS-CASE-Indonesia.pdf Cost-Benefit Analysis (CBA) of Early Retirement Coal-Fired Power Plant (CFPP) versus CFPP with Carbon Capture and Storage (CCS)], Institute for Essential Services Reform, March 2024</ref>
+
+==Public opposition==
+
+At a public hearing in Tubanan Village in March 2015, local fishermen spoke out strongly against the proposed plant. They argued that the company had failed to live up to the standards that it had set in the EIA for Units 3 & 4 in 2007. One complaint was that the plant's owners had failed to put a filter on the water intake as promised, with the result that small fish were getting sucked in and killed.<ref>[http://beritajateng.net/berita-jateng-terbaru-hari-ini/nelayan-jepara-tolak-pembangunan-unit-5-dan-6-pltu-jepara/16563 Nelayan Jepara Tolak Pembangunan Unit 5 dan 6 PLTU Jepara], Berita Jateng, 3 Mar. 2015.</ref>
+
+In November 2023, local farmers held a demonstration in front of Tanjung Jati B power station. Nearby rice fields had reportedly become unsuitable for farming since the power station was constructed.<ref>[https://berita.murianews.com/faqih-mansur-hidayat/403435/breaking-news-petani-bondo-jepara-demo-pltu BREAKING NEWS: Petani Bondo Jepara Demo PLTU], Murianews.com, Nov. 19, 2023.</ref>
+
+In December 2024, residents highlighted that the power station was negatively impacting the surrounding community. Beyond contributing to climate change, the operation of Tangjung Jati B was reportedly damaging local road infrastructure. However, they also acknowledged that the power station was providing many jobs.<ref>[https://gistara.com/2024/12/31/dampak-sosial-dan-lingkungan-pltu-tanjung-jati-b-bagi-masyarakat-setempat/ Dampak Sosial dan Lingkungan PLTU Tanjung Jati B bagi Masyarakat Setempat], Gistara, December 31, 2024</ref>
+
+==Waste issues==
+
+The plant has had problems with waste disposal. Waste was originally being moved out of the plant via truck, but locals complained that the trucks were damaging local roads. The company then started transporting waste by barge, but fishers were worried that leaking waste would impact fish stocks. The company has only a limited amount of space onsite to store waste, and was concerned that the plant would have to shut down.<ref>[http://citizen6.liputan6.com/read/589826/pltu-tanjung-jati-b-jepara-terancam-off PLTU Tanjung Jati B Jepara Terancam 'Off'], Liputan 6, 18 May 2013.</ref>
+
+==Financing==
+
+Financing for Phase II (Units 3&4) was closed in 2003. Financing was arranged by the Japan Bank for International Cooperation, the Bank of Tokyo-Mitsubishi UFJ, Sumitomo Mitsui Banking Corporation and the Tokyo Branch of BNP Paribas Bank. Approximately US$1.5 billion in loans was provided by thirteen financial institutions: Japan Bank for International Cooperation, Sumitomo Mitsui Banking Corporation, BNP Paribas, MUFG Bank, Shinsei Bank, ING Group, Deutsche Bank, Societe Generale, Mizuho Financial Group, HSBC, Mitsubishi UFJ Financial Group, WestLB, and Standard Chartered Bank.<ref>[http://web.archive.org/web/20160928114317/http://www.jbic.go.jp/en/information/press/press-2008/1230-7135 JBIC Provides Project Finance and Political Risk Guarantee for Tanjung Jati B Coal-Fired Power Plant Expansion Project in Indonesia], Japan Bank for International Cooperation, Dec. 30, 2008, Archived Sep. 28, 2016</ref><ref>[https://ijglobal.com/data/transaction/30563/1320mw-tanjung-jati-b-coal-fired-power-plant-units-3-and-4 1320MW Tanjung Jati B Coal-fired Power Plant (Units 3 & 4)], IJGlobal, May 29, 2017</ref>
+
+Financing for Phase III (Units 5&6) was closed in March 2017. US$3,355 million in loans will be provided by [[Japan Bank for International Cooperation]] (JBIC), MUFG Bank, Mizuho Bank, Mitsubishi UFJ Financial Group, OCBC Bank, Sumitomo Mitsui Banking Corporation, Sumitomo Mitsui Trust Holdings, and Norinchukin Bank. Nippon Export and Investment Insurance (NEXI) provided insurance for the private bank loans. The financial advisor for the project is Sumitomo Mitsui Banking Corporation<ref name="jbic2-217">[https://www.jbic.go.jp/en/information/press/press-2016/0227-53954 "Project Finance for Re-expansion of Tanjung Jati B Coal-Fired Power Plant in Indonesia,"] JBIC announcement, 27 February 2017</ref><ref name=":0">{{Cite web|url=https://ijglobal.com/data/transaction/34100/tanjung-jati-b-coal-fired-power-plant-units-5-and-6-ipp-2000mw|title=Preview of Tanjung Jati B Coal-Fired Power Plant (Units 5 & 6) IPP (2000MW) {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-09-17}}</ref>. US$838.81 million in equity is being provided by Sumitomo Corporation, Kansai Electric Power, and PT United Tractors.<ref name=":0">{{Cite web|url=https://ijglobal.com/data/transaction/34100/tanjung-jati-b-coal-fired-power-plant-units-5-and-6-ipp-2000mw|title=Preview of Tanjung Jati B Coal-Fired Power Plant (Units 5 & 6) IPP (2000MW) {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-09-17}}</ref>
+
+==Coal==
+
+For the existing plant, PLN concluded a coal deal in April 2017 with PT Indominco Mandiri and PT Kaltim Prima Coal (KPC) under which the plant will receive 4.8 million tonnes of coal per year for 5 years. The coal is 5,500-5,700 kcal/kg, i.e. [[bituminous]] coal. Units 5 and 6 will require an additional 7 million tonnes per year.<ref>Michael Agustinus, [https://finance.detik.com/energi/3501988/pasokan-batu-bara-untuk-pltu-tanjung-jati-b-dipastikan-aman "Pasokan Batu Bara untuk PLTU Tanjung Jati B Dipastikan Aman,"] delikFinance, 16 May 2017</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Indonesia]]

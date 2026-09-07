@@ -1,0 +1,92 @@
+# GEM wiki page: Rantau Dedep geothermal power plant
+# URL: https://www.gem.wiki/Rantau_Dedep_geothermal_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalGeothermalPowerTracker}}
+'''Rantau Dedep geothermal power plant''' is an operating geothermal power plant in Swarna Dwipa, Muara Enim, South Sumatra, Indonesia.
+
+==Project Details==
+==== '''Table 1:''' Unit-level project details for Rantau Dedep geothermal power plant ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://www.thinkgeoenergy.com/official-start-of-98-mw-rantau-dedap-geothermal-plant-indonesia/ |archive-url=https://web.archive.org/web/20221129121819/https://www.thinkgeoenergy.com/official-start-of-98-mw-rantau-dedap-geothermal-plant-indonesia/ |archive-date=2022-11-29}}</ref>
+| 2021<ref name="autoref_0" />
+| 91 MW<ref name="autoref_1">{{cite web |url=https://www.poweronline.com/doc/pt-supreme-energy-rantau-dedap-starts-commercial-operation-for-rantau-dedap-geothermal-power-plant-development-0001 |archive-url=https://web.archive.org/web/20220418162032/https://www.poweronline.com/doc/pt-supreme-energy-rantau-dedap-starts-commercial-operation-for-rantau-dedap-geothermal-power-plant-development-0001 |archive-date=2022-04-18}}</ref>
+| Flash steam - double<ref name="autoref_2">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-rantau-dedap-geothermal-power-plant-indonesia/}}</ref>
+| Marubeni Corp [27%]; Tohoku Electric Power Co Inc [10%]; ENGIE SA [37%]; PT Supreme Energy [25%] (東北電力株式会社; 丸紅株式会社)<ref name="autoref_0" /><ref name="autoref_0" /><ref name="autoref_0" /><ref name="autoref_0" />
+| PT Supreme Energy Rantau Dedap<ref name="autoref_0" />
+|-
+| 2
+| Pre-construction<ref name="autoref_3">{{cite web |url=https://www.adb.org/projects/50330-001/main |archive-url=https://web.archive.org/web/20240319071445/https://www.adb.org/projects/50330-001/main |archive-date=2024-03-19}}</ref>
+| –
+| 134 MW<ref name="autoref_4">{{cite web |url=https://www.pwc.com/id/en/publications/assets/eumpublications/utilities/power-guide-2018.pdf |archive-url=https://web.archive.org/web/20230129193341/https://www.pwc.com/id/en/publications/assets/eumpublications/utilities/power-guide-2018.pdf |archive-date=2023-01-29}}</ref>
+| Flash steam - double<ref name="autoref_2" />
+| –
+| –
+|}
+
+==Location==
+==== '''Table 2:''' Unit-level location details for Rantau Dedep geothermal power plant ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Swarna Dwipa, Muara Enim, South Sumatra, Indonesia<ref name="autoref_5">{{cite web |url=https://goo.gl/maps/dGa4eMo9TfjwjKGC7 |archive-url=https://web.archive.org/web/20220512150742/https://www.google.com/maps/place/PLTP+Rantau+Dedap/@-4.2076639,103.3835399,1115m/data=!3m1!1e3!4m6!3m5!1s0x2e37799e8c714f6b:0x64563b8cc44226dc!8m2!3d-4.2076639!4d103.38538!15sCiNSYW50YXUgRGVkYXAgZ2VvdGhlcm1hbCBwb3dlciBwbGFudFolIiNyYW50YXUgZGVkYXAgZ2VvdGhlcm1hbCBwb3dlciBwbGFudJIBC3Bvd2VyX3BsYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJIZHpkaFUxaG5FQUU?shorturl=1 |archive-date=12 May 2022}}</ref>
+| -4.2069, 103.3857 (exact)<ref name="autoref_5" />
+|-
+| 2
+| Muara Enim, South Sumatra, Indonesia<ref name="autoref_4" />
+| -4.2069, 103.3857 (approximate)<ref name="autoref_4" />
+|}
+The map below shows the locations of the geothermal power plant units:
+{{
+#display_map:
+-4.2069, 103.3857~ ~ ~ ~ ~Units 1, 2
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/tracker-map/ interactive map] of global geothermal power plants, a [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/download-data/ downloadable dataset], and [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-geothermal-power-tracker/ Global Geothermal Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Geothermal power plants]]
+[[Category:Geothermal power plants in Indonesia]]
+[[Category:Flash steam geothermal power plants]]
+
+__NOTOC__

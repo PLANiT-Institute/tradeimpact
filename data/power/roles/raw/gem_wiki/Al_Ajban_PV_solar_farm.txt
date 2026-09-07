@@ -1,0 +1,80 @@
+# GEM wiki page: Al Ajban PV solar farm
+# URL: https://www.gem.wiki/Al_Ajban_PV_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Al Ajban Solar
+
+'''Al Ajban PV solar farm''' (محطة العجبان للطاقة الشمسية) is a solar photovoltaic (PV) farm under construction in Al 'Ajban, Abu Dhabi, United Arab Emirates.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Al Ajban PV solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Construction<ref name="autoref_0">{{cite web |url=https://solarabic.com/news/2023/07/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7-%D8%B9%D8%B1%D9%88%D8%B6-%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D8%AD%D8%B7%D8%A9-%D8%A7%D9%84%D8%B9%D8%AC%D8%A8%D8%A7%D9%86/, https://www.pv-magazine.com/2022/05/11/uae-utility-opens-bidding-for-1-5-gw-of-solar-in-abu-dhabi/, https://www.argaam.com/ar/article/articledetail/id/1755240}}</ref>
+| 2026 (planned)<ref name="autoref_1">{{cite web |url=https://www.pv-tech.org/ewec-selects-four-finalist-bidders-for-1-5gw-al-ajban-solar-plant/, https://www.pv-magazine.com/2024/04/29/edf-kowepo-masdar-to-develop-1-5-gw-of-solar-in-uae/}}</ref>
+| 1500 MWac<ref name="autoref_2">{{cite web |url=https://www.pv-magazine.com/2022/05/11/uae-utility-opens-bidding-for-1-5-gw-of-solar-in-abu-dhabi/ |archive-url=https://web.archive.org/web/20240201144119/https://www.pv-magazine.com/2022/05/11/uae-utility-opens-bidding-for-1-5-gw-of-solar-in-abu-dhabi/ |archive-date=2024-02-01}}</ref>
+| PV<ref name="autoref_2" />
+| EDF Renewables [20%]; Masdar Clean Energy [60%]; Korea Western Power Co Ltd [20%] (한국서부발전; مصدر)<ref name="autoref_3">{{cite web |url=https://www.argaam.com/ar/article/articledetail/id/1755240, https://www.pv-tech.org/arctech-signs-1-5gw-solar-pv-tracker-supply-deal-for-al-ajban-project-in-the-uae/, https://www.argaam.com/ar/article/articledetail/id/1755240}}</ref>
+| Korea Western Power; Masdar Clean Energy; EDF Renewables (한국서부발전; مصدر)<ref name="autoref_4">{{cite web |url=https://www.argaam.com/ar/article/articledetail/id/1755240, https://www.argaam.com/ar/article/articledetail/id/1755240, https://www.argaam.com/ar/article/articledetail/id/1755240}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Al Ajban PV solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Al 'Ajban, Abu Dhabi, United Arab Emirates<ref name="autoref_5">{{cite web |url=https://www.google.com/maps/place/24%C2%B034'10.7%22N+55%C2%B016'42.8%22E/@24.5696329,55.2763783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x28bf38935b9d56b0!8m2!3d24.569628!4d55.278567}}</ref>
+| 24.5696, 55.2786 (exact)<ref name="autoref_5" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+24.5696, 55.2786~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in United Arab Emirates]]
+[[Category:PV solar farms]]
+
+__NOTOC__

@@ -1,0 +1,77 @@
+# GEM wiki page: Asrit-Kedam hydroelectric plant
+# URL: https://www.gem.wiki/Asrit-Kedam_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Asrit-Kedam hydroelectric plant''' is a hydroelectric power plant in pre-construction in Mingora City, Swat District, Malakand Division, Khyber Pakhtunkhwa, Pakistan.
+
+==Project Details==
+==== '''Table 1:''' Project details for Asrit-Kedam hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Turbines
+!Technology type
+!Owner
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://ep.kp.gov.pk/page/power_projects |archive-url=https://web.archive.org/web/20220914130801/https://ep.kp.gov.pk/page/power_projects |archive-date=2022-09-14}}</ref><ref name="autoref_1">{{cite web |url=https://www.brecorder.com/news/40271747}}</ref>
+| 2029 (planned)<ref name="autoref_2">{{cite web |url=https://nepra.org.pk/Admission%20Notices/2022/08%20Aug/Generation%20Licence%20Application%20filed%20by%20Koak%20Power%20Limtied%20for%20Asrit%20Kedam%20Hydropower%20Project.PDF |archive-url=https://web.archive.org/web/20221005221235/http://nepra.org.pk/Admission%20Notices/2022/08%20Aug/Generation%20Licence%20Application%20filed%20by%20Koak%20Power%20Limtied%20for%20Asrit%20Kedam%20Hydropower%20Project.PDF |archive-date=2022-10-05}}</ref>
+| 215 MW<ref name="autoref_0" />
+| 3 x 67.4 MW; 1 x 27.2 MW<ref name="autoref_2" />
+| Run-of-river<ref name="autoref_3">{{cite web |url=https://koakpower.com/ |archive-url=https://web.archive.org/web/20221005231605/http://koakpower.com/ |archive-date=2022-10-05}}</ref>
+| Korea South-East Power Co Ltd [100%] (한국남동발전(주))<ref name="autoref_4">{{cite web |url=https://www.doosanenerbility.com/en/about/news_board_view?id=21000105&page=5&pageSize=9}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Asrit-Kedam hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Mingora City, Swat District, Malakand Division, Khyber Pakhtunkhwa, Pakistan<ref name="autoref_2" />
+| Swat River<ref name="autoref_3" />
+| 34.7701, 72.3397 (approximate)<ref name="autoref_2" />
+|}
+The map below shows the approximate location of the hydroelectric power plant:
+{{
+#display_map:
+34.7701, 72.3397~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Pakistan]]
+
+__NOTOC__

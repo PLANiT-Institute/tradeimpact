@@ -1,0 +1,89 @@
+# GEM wiki page: Sazagan solar farm
+# URL: https://www.gem.wiki/Sazagan_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Samarkand (ACWA Power) solar farm
+
+'''Sazagan solar farm''' is a solar photovoltaic (PV) farm in pre-construction in Nurabad district, Samarkand region, Uzbekistan.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Sazagan solar farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| 1
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://www.acwapower.com/news/acwa-power-signs-power-purchase-and-investment-agreements-for-three-new-green-projects-in-uzbekistan/, https://www.uzdaily.uz/en/post/81864, https://www.ebrd.com/home/work-with-us/projects/psd/54550.html}}</ref>
+| 500 MW<ref name="autoref_1">{{cite web |url=https://acwapower.com/en/projects/sazagan-solar-1/, https://lex.uz/ru/docs/6521364}}</ref>
+| PV<ref name="autoref_2">{{cite web |url=https://www.acwapower.com/news/acwa-power-signs-power-purchase-and-investment-agreements-for-three-new-green-projects-in-uzbekistan/ |archive-url=https://web.archive.org/web/20240201145202/https://www.acwapower.com/news/acwa-power-signs-power-purchase-and-investment-agreements-for-three-new-green-projects-in-uzbekistan/ |archive-date=2024-02-01}}</ref>
+| ACWA Power Co [51%]; Sumitomo Corp [49%] (住友商事株式会社)<ref name="autoref_3">{{cite web |url=https://www.acwapower.com/news/acwa-power-signs-power-purchase-and-investment-agreements-for-three-new-green-projects-in-uzbekistan/, https://www.acwapower.com/news/acwa-power-and-sumitomo-corporation-sign-joint-agreement-to-develop-uzbekistans-largest-renewable-energy-projects-en/}}</ref>
+|-
+| 2
+| Pre-construction<ref name="autoref_4">{{cite web |url=https://www.marketscreener.com/news/saudi-arabiaa-s-acwa-power-and-indiaa-s-larsen-toubro-sign-epc-contracts-for-sazagan-solar-proje-ce7d5bdedf81f227}}</ref>
+| 500 MW<ref name="autoref_5">{{cite web |url=https://acwapower.com/en/projects/sazagan-solar-2/}}</ref>
+| PV<ref name="autoref_2" />
+| ACWA Power Co [51%]; Sumitomo Corp [49%] (住友商事株式会社)<ref name="autoref_3" />
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Sazagan solar farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Nurabad district, Samarkand region, Uzbekistan<ref name="autoref_6">{{cite web |url=https://www.uzdaily.uz/en/post/79851, https://www.acwapower.com/news/acwa-power-signs-power-purchase-and-investment-agreements-for-three-new-green-projects-in-uzbekistan/}}</ref>
+| 39.6308, 66.0581 (approximate)<ref name="autoref_6" />
+|-
+| 2
+| Nurabad district, Samarkand region, Uzbekistan<ref name="autoref_6" />
+| 39.6308, 66.0581 (approximate)<ref name="autoref_6" />
+|}
+The map below shows the approximate locations of the solar farm phases:
+{{
+#display_map:
+39.6308, 66.0581~Phases 1, 2
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Uzbekistan]]
+[[Category:PV solar farms]]
+
+__NOTOC__

@@ -1,0 +1,77 @@
+# GEM wiki page: Pobè solar farm
+# URL: https://www.gem.wiki/Pobè_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Forsun PV Power Plant
+
+'''Pobè solar farm''' is a solar photovoltaic (PV) farm under construction in Illoulofin, Pobe, Plateau, Benin.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Pobè solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Construction<ref name="autoref_0">{{cite web |url=https://www.pv-magazine.com/2024/11/19/benin-starts-building-25-mw-pv-plant/}}</ref>
+| 25 MWp/dc<ref name="autoref_1">{{cite web |url=https://www.pv-magazine.com/2023/08/18/toyota-tsusho-building-25-mw-of-solar-in-benin/ |title=Toyota Tsusho building 25 MW of solar in Benin |date=2023-08-18 |website=pv magazine International |access-date=2024-07-26 |archive-url=https://web.archive.org/web/20240804100106/https://www.pv-magazine.com/2023/08/18/toyota-tsusho-building-25-mw-of-solar-in-benin/ |archive-date=2024-08-04}}</ref>
+| PV<ref name="autoref_2">{{cite web |url=https://africaoilgasreport.com/2023/08/energy-transition/toyota-to-build-a-25mw-solar-plant-in-benin-republic/}}</ref>
+| Toyota Tsusho Corp (豊田通商株式会社)<ref name="autoref_1" />
+| Beninese Electricity Production CO.<ref name="autoref_1" />
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Pobè solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Illoulofin, Pobe, Plateau, Benin<ref name="autoref_3">{{cite web |url=https://www.pv-magazine.com/2023/08/18/toyota-tsusho-building-25-mw-of-solar-in-benin/, https://maps.app.goo.gl/sHVTpkvFvx9RGJo86}}</ref>
+| 6.9887, 2.6600 (approximate)<ref name="autoref_3" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+6.9887489, 2.6599786~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Benin]]
+[[Category:PV solar farms]]
+
+__NOTOC__

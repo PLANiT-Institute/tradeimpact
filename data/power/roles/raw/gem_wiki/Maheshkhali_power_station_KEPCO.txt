@@ -1,0 +1,150 @@
+# GEM wiki page: Maheshkhali power station (KEPCO)
+# URL: https://www.gem.wiki/Maheshkhali_power_station_(KEPCO)
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Maheshkhali power station (KEPCO)''' is a cancelled power station in Maheshkhali, Cox's Bazar, Chittagong, Bangladesh.
+It is also known as Moheshkhali power station.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Maheshkhali power station (KEPCO)
+| Maheshkhali, Cox's Bazar, Chittagong, Bangladesh
+| 21.632953, 91.901935 (exact)
+|}
+{{
+#display_map:
+21.632953, 91.901935
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 21.632953, 91.901935
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Cancelled
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 660
+| ultra-supercritical
+| 2029
+| False
+|-
+| Unit 2
+| Cancelled
+| coal: unknown<ref name="autoref_0" />
+| 660
+| ultra-supercritical
+| 2029
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Korea Electric Power Corp [100%]
+| Korea Electric Power Corp [100.0%]
+|-
+| Unit 2
+| Korea Electric Power Corp [100%]
+| Korea Electric Power Corp [100.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDAwNjYKICAgIFAxMDAwMDAxMDAwNjZbIk1haGVzaGtoYWxpIHBvd2VyPGJyPnN0YXRpb24gKEtFUENPKSJdCg==}}
+
+==Background==
+
+According to a May 2014 report in Dhaka's ''Daily Sun,'' Korea Electric Power Corporation (KEPCO) showed interest in setting up a 1,320 MW coal-fired power plant at Maheshkhali. In August 2016, the Bangladesh Power Development Board (BPDB) signed a memorandum of understanding to install the power station. The plant was expected to be commissioned on June 23, 2023.<ref>[http://www.thebangladeshpost.com/supplement/779/pdf "Power subsidy to go by 2023,"] The Bangladesh Post, April 22, 2017</ref>
+
+In August 2017, it was reported that the BPDB had signed memoranda of understandings to build four coal-fired power plants of 1320 MW each at the [[Maheshkhali power complex]], with China Huadian, a Malaysian Consortium of Tenaga Nasional Berhad, Korean KEPCO, and China SEPCO:<ref>[http://www.thebangladeshpost.com/supplement/14395/pdf "PDB plans 13,500MW at Moheshkhali Power Hub,"] Bangladesh Post, November 18, 2017</ref> 
+*[[Maheshkhali power station (BPDB/TNB)]] (Malaysian Consortium)
+*[[Maheshkhali power station (Huadian)]]
+*[[Maheshkhali power station (KEPCO)]]
+*[[Maheshkhali power station (PowerChina)]] (SEPCO)
+
+
+In March 2018, it was reported that primary work on the KEPCO project had not started, and that there were discussions of South Korea helping set up a gas plant in the country rather than a coal plant.<ref name=bpprogress>[http://www.thebangladeshpost.com/national/23320 "No progress in 19 power plants yet,"] The Bangladesh Post, March 9, 2018</ref>
+
+According to ''Energy and Power'' in April 2019, the Pre-MoU agreements for [[Maheshkhali power station (BPDB/TNB)]], [[Maheshkhali power station (PowerChina)]], and Maheshkhali power station (KEPCO) had not advanced further "as foreign companies failed to get approval from their respective governments".<ref>[https://ep-bd.com/view/details/article/MzM4Nw%3D%3D/title?q=Dream+Islands "Dream Islands,"] ''Energy and Power'', April 19, 2019</ref> 
+
+===November 2018 government plan===
+The plant appeared to be listed in the Bangladesh 2016 Master Plan "Revisited", released in November 2018, as "Moheshkhali 1200 MW USCPP JV of BPDB & KEPCO, South Korea." It had a planned commissioning date of 2029.<ref>[https://powerdivision.portal.gov.bd/sites/default/files/files/powerdivision.portal.gov.bd/page/4f81bf4d_1180_4c53_b27c_8fa0eb11e2c1/Revisiting%20PSMP2016%20%28full%20report%29_signed.pdf 2016 Master Plan "Revisited",] Bangladesh Power Division, November 2018</ref>
+
+==Cancellation news==
+
+On November 19, 2020, ''The Daily Star'' reported that Bangladesh's power, energy and mineral resources ministry had finalized an energy plan that cancelled all coal plants except five under construction.<ref>[https://www.thedailystar.net/frontpage/news/future-not-coal-power-1997305 "Future not coal power,"] The Daily Star, November 19, 2020</ref> The power station would likely be cancelled as a result.
+
+In June 2021, the Bangladesh State Minister for Power, Energy, and Mineral Resources announced the government was officially dropping ten coal plant projects in its master energy plan totaling over 8 GW of power due to delays in implementation. Two 1,320 MW Maheshkhali coal plants were cancelled, but the Maheshkhali power station (KEPCO) was not clearly among the ten cancelled coal plants.<ref>[https://unb.com.bd/category/bangladesh/10-coal-fired-power-projects-scrapped-as-part-of-master-plan-revision-nasrul-hamid/74546 "10 coal-fired power projects scrapped as part of master plan revision,"] UNB, June 27, 2021</ref>
+
+In October 2021, the Bangladesh Working Group on External Debt (BWGED) and News Founded also wrote that the Government of Bangladesh (GOB) was expected to cancel six additional coal-fired power plants planned to be developed on the Maheshkhali Islands. The government was reportedly planning to convert the six power plants from coal to LNG and renewable energy.<ref>[https://bwged.blogspot.com/2021/10/gob-is-to-cancel-6-more-coal-power.html “GOB is to cancel 6 more coal power plants,”] BWGED, Hasan Mehedi, October 29, 2021</ref><ref>[https://newsfounded.com/bangladesh/six-other-coal-fired-power-plants-were-canceled/ "Six other coal-fired power plants were canceled,"] News Founded, undated (referencing October 8, 2020 letter)</ref>
+
+Based on this news, the power station appears cancelled.
+
+==Background on Maheshkhali power complex==
+
+Maheshkhali power station was part of a large multi-plant complex being organized by the Bangladesh Power Development Board (BPDB). In August 2013, Bangladesh Power Development Board (BPDB) announced that it intended to develop a multi-plant power complex at Cox's Bazaar, including both coal-fired plants and combined cycle gas-fired plants. The announcement stated that the BPDB "intends to build 6000 MW Ultra Super Critical Coal Based Thermal Power Plant and 3000 MW LNG Based Combined Cycle Power Plant in different phases at Maheshkhali Upazila in Cox’s Bazar District." The announcement stated that the fuel for the projects would be imported coal and liquified natural gas. Five thousand acres were in the process of acquisition, situated within Amabassaya, Honanok and Panir Chhara mouza of Hoanok Union and Gharibhanga mouza of Kutubjhom union under Maheshkhali upazila, Cox’s Bazar. 
+
+Additional information is available at [[Maheshkhali power complex]].
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Bangladesh]]

@@ -1,0 +1,78 @@
+# GEM wiki page: Amin Solar PV Power Plant
+# URL: https://www.gem.wiki/Amin_Solar_PV_Power_Plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Amin Solar PV Power Plant''' (محطة أمين للطاقة الشمسية) is an operating solar photovoltaic (PV) farm in Nimir, Al Wusta, Oman.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Amin Solar PV Power Plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://nebras-power.com/ar/assets/listing/amin?language_content_entity=ar |archive-url=https://web.archive.org/web/20240201132110/https://nebras-power.com/ar/assets/listing/amin?language_content_entity=ar |archive-date=2024-02-01}}</ref>
+| 2020<ref name="autoref_1">{{cite web |url=https://nebras-power.com/assets/listing/amin?language_content_entity=en |archive-url=https://web.archive.org/web/20240206161346/https://nebras-power.com/assets/listing/amin?language_content_entity=en |archive-date=2024-02-06}}</ref>
+| 105 MWac<ref name="autoref_0" />
+| PV<ref name="autoref_2">{{cite web |url=https://www.omaninfo.om/topics/86/show/342558 |archive-url=https://web.archive.org/web/20240207111316/https://www.omaninfo.om/topics/86/show/342558 |archive-date=2024-02-07}}</ref>
+| Marubeni Corp [50%]; Bahwan Renewable Energy Co LLC [10%]; Nebras Power QPSC [10%]; OQ Gas Networks SAOC [30%] (丸紅株式会社)<ref name="autoref_3">{{cite web |url=https://omannews.gov.om/NewsDescription/ArtMID/392/ArticleID/13797/Amin-Renewable-Energy-Company-Starts-Commercial-Operation-for-PDO-Power-Plant, https://www.power-technology.com/marketdata/amin-solar-pv-park-oman/, https://omannews.gov.om/NewsDescription/ArtMID/392/ArticleID/13797/Amin-Renewable-Energy-Company-Starts-Commercial-Operation-for-PDO-Power-Plant, https://www.power-technology.com/marketdata/amin-solar-pv-park-oman/, https://omannews.gov.om/NewsDescription/ArtMID/392/ArticleID/13797/Amin-Renewable-Energy-Company-Starts-Commercial-Operation-for-PDO-Power-Plant, https://www.power-technology.com/marketdata/amin-solar-pv-park-oman/, https://omannews.gov.om/NewsDescription/ArtMID/392/ArticleID/13797/Amin-Renewable-Energy-Company-Starts-Commercial-Operation-for-PDO-Power-Plant, https://www.power-technology.com/marketdata/amin-solar-pv-park-oman/}}</ref>
+| Amin Renewable Energy (آمين للطاقة المتجددة)<ref name="autoref_0" />
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Amin Solar PV Power Plant ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Nimir, Al Wusta, Oman<ref name="autoref_4">{{cite web |url=https://wiki-solar.org/ |title=Wiki-Solar Database |date=2023-04 |access-date=2024-02-28 |archive-url=https://web.archive.org/web/20240402052142/https://wiki-solar.org/ |archive-date=2024-04-02}}</ref>
+| 18.4960, 55.8080 (exact)<ref name="autoref_4" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+18.496, 55.808~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Oman]]
+[[Category:PV solar farms]]
+
+__NOTOC__

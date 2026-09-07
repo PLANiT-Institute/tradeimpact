@@ -1,0 +1,116 @@
+# GEM wiki page: CPV Three Rivers energy center
+# URL: https://www.gem.wiki/CPV_Three_Rivers_energy_center
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''CPV Three Rivers energy center''' is an operating power station of at least 1300-megawatts (MW) in Morris, Grundy, Illinois, United States.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| CPV Three Rivers energy center
+| Morris, Grundy, Illinois, United States
+| 41.372222, -88.28444 (exact)<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/xls/november_generator2022.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (November 2022) |access-date=December 23, 2022 |archive-url=https://web.archive.org/web/20230122152327/https://www.eia.gov/electricity/data/eia860m/xls/november_generator2022.xlsx |archive-date=2023-01-22 |url-status=live}}</ref>
+|}
+{{
+#display_map:
+41.372222, -88.28444
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''GEN1, GEN2''': 41.372222, -88.28444
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| GEN1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/may_generator2023.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (May 2023) |access-date=June 21, 2023 |archive-url=https://web.archive.org/web/20230918190319/https://www.eia.gov/electricity/data/eia860m/archive/xls/may_generator2023.xlsx |archive-date=2023-09-18 |url-status=live}}</ref><ref name="autoref_2">{{cite web |url=https://www.powermag.com/cpv-ge-vernova-bring-1-2-gw-gas-fired-plant-online-in-illinois/?oly_enc_id=2515H1512489C1W}}</ref><ref name="autoref_3">{{cite web |url=https://chicagoconstructionnews.com/kiewit-power-generation-to-start-work-on-1-3-billion-three-rivers-energy-center-in-grundy-county/ |archive-url=https://web.archive.org/web/20221205083956/https://www.chicagoconstructionnews.com/kiewit-power-generation-to-start-work-on-1-3-billion-three-rivers-energy-center-in-grundy-county/ |archive-date=2022-12-05}}</ref>
+| fossil gas: natural gas<ref name="autoref_4">{{cite web |url=https://www.cpv.com/our-projects/cpv-three-rivers/about/ |archive-url=https://web.archive.org/web/20210917190207/https://www.cpv.com/our-projects/cpv-three-rivers/about/ |archive-date=2021-09-17}}</ref>
+| 650<ref name="autoref_5">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (July 2021) |access-date=October 13, 2021 |archive-url=https://web.archive.org/web/20211122185052/https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |archive-date=2021-11-22 |url-status=live}}</ref>
+| combined cycle<ref name="autoref_6">{{cite web |url=https://www.cpv.com/our-projects/cpv-three-rivers-energy-center/ |archive-url=https://web.archive.org/web/20220929112822/https://www.cpv.com/our-projects/cpv-three-rivers-energy-center/ |archive-date=2022-09-29}}</ref>
+| no<ref name="autoref_5" />
+| 2023<ref name="autoref_7">{{cite web |url=https://www.cpv.com/our-projects/cpv-three-rivers/ |archive-url=https://web.archive.org/web/20221128225906/https://cpv.com/our-projects/cpv-three-rivers/ |archive-date=2022-11-28}}</ref><ref name="autoref_2" />
+| GE Vernova: 7HA.02<ref name="autoref_8">{{cite web |url=https://www.gevernova.com/news/press-releases/ge-vernova-celebrates-commercial-operation-for-competitive-power-ventures-h-class?utm_source=chatgpt.com}}</ref>
+| no
+|-
+| GEN2
+| Operating<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" />
+| fossil gas: natural gas<ref name="autoref_4" />
+| 650<ref name="autoref_5" />
+| combined cycle<ref name="autoref_6" />
+| no<ref name="autoref_5" />
+| 2023<ref name="autoref_7" /><ref name="autoref_2" />
+| GE Vernova: 7HA.02<ref name="autoref_8" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| GEN1
+| CPV Three Rivers LLC [100%]<ref name="autoref_5" />
+| Axium Three Rivers Acquisition Co LLC [25.0%]; Concord 3 Rivers Holdings LLC [25.0%]; HS Three Rivers LLC [25.0%]; Osaka Gas Three Rivers LLC [15.0%]; CPV Three Rivers Investment LLC [10.0%]
+|-
+| GEN2
+| CPV Three Rivers LLC [100%]<ref name="autoref_5" />
+| Axium Three Rivers Acquisition Co LLC [25.0%]; Concord 3 Rivers Holdings LLC [25.0%]; HS Three Rivers LLC [25.0%]; Osaka Gas Three Rivers LLC [15.0%]; CPV Three Rivers Investment LLC [10.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMjQzMzVbIkNQViBUaHJlZSBSaXZlcnM8YnI+SW52ZXN0bWVudCBMTEMiXSAtLTEwLjAlLS0+IDEwMDAwMDAwMjYwNgogICAgMTAwMDAyMDI0MzM2WyJPc2FrYSBHYXMgVGhyZWU8YnI+Uml2ZXJzIExMQyJdIC0tMTUuMCUtLT4gMTAwMDAwMDAyNjA2CiAgICAxMDAwMDIwMjQzMzdbIkF4aXVtIFRocmVlIFJpdmVyczxicj5BY3F1aXNpdGlvbiBDbyBMTEMiXSAtLTI1LjAlLS0+IDEwMDAwMDAwMjYwNgogICAgMTAwMDAyMDI0MzM4WyJDb25jb3JkIDMgUml2ZXJzPGJyPkhvbGRpbmdzIExMQyJdIC0tMjUuMCUtLT4gMTAwMDAwMDAyNjA2CiAgICAxMDAwMDIwMjQzMzlbIkhTIFRocmVlIFJpdmVycyBMTEMiXSAtLTI1LjAlLS0+IDEwMDAwMDAwMjYwNgogICAgMTAwMDAwMDAyNjA2WyJDUFYgVGhyZWUgUml2ZXJzIExMQyJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDczNTgKICAgIFAxMDAwMDA0MDczNThbIkNQViBUaHJlZSBSaXZlcnM8YnI+ZW5lcmd5IGNlbnRlciJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United States]]

@@ -1,0 +1,141 @@
+# GEM wiki page: Ho-Ping power station
+# URL: https://www.gem.wiki/Ho-Ping_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Ho-Ping power station''' (臺灣水泥和平電廠) is an operating power station of at least 1320-megawatts (MW) in Xiulin, Hualien, Taiwan.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Ho-Ping power station
+| Xiulin, Hualien, Taiwan
+| 24.307782, 121.76346 (exact)
+|}
+{{
+#display_map:
+24.307782, 121.76346
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 24.307782, 121.76346
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 660
+| subcritical
+| 2002
+| 2040 (planned)<ref name="autoref_1">{{cite web |url=https://money.udn.com/money/story/5612/8378717}}</ref>
+| False
+|-
+| Unit 2
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 660
+| subcritical
+| 2002
+| 2040 (planned)<ref name="autoref_1" />
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Ho-Ping Power Co [100%]
+| TCC Group Holdings Co Ltd [60.0%]; CLP Holdings Ltd [20.0%]; Mitsubishi Corp [20.0%]
+|-
+| Unit 2
+| Ho-Ping Power Co [100%]
+| TCC Group Holdings Co Ltd [60.0%]; CLP Holdings Ltd [20.0%]; Mitsubishi Corp [20.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjEzNzVbIlRDQyBHcm91cCBIb2xkaW5nczxicj5DbyBMdGQiXSAtLTYwLjAlLS0+IDEwMDAwMDEyMDU2OQogICAgMTAwMDAyMDIyMjE1WyJUaGUgTWlrYWRvIFByaXZhdGU8YnI+VHJ1c3QgQ28gTHRkIl0gLS0xNi4yNSUtLT4gMTAwMDAwMDAwNDgxCiAgICAxMDAwMDIwMjIyMTZbIk9hayBDTFAgTHRkIl0gLS04LjY1JS0tPiAxMDAwMDAwMDA0ODEKICAgIDEwMDAwMTAxNTU4N18xWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzUuMSUtLT4gMTAwMDAwMDAwNDgxCiAgICAxMDAwMDAwMDA0ODFbIkNMUCBIb2xkaW5ncyBMdGQiXSAtLTUwLjAlLS0+IDEwMDAwMTAxMDY4MQogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS41JS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjIlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjMlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAwMDAwNjUwWyJNaXRzdWJpc2hpIENvcnAiXSAtLTUwLjAlLS0+IDEwMDAwMTAxMDY4MQogICAgMTAwMDAxMDEwNjgxWyJPbmVFbmVyZ3kgVGFpd2FuIEx0ZCJdIC0tNDAuMCUtLT4gMTAwMDAwMTIwNTY5CiAgICAxMDAwMDAxMjA1NjlbIkhvLVBpbmcgUG93ZXIgQ28iXSAtLTEwMC4wJS0tPiBQMTAwMDAwMTAzNTM3CiAgICBQMTAwMDAwMTAzNTM3WyJIby1QaW5nIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background==
+
+The Ho-ping power station was built in 1999 and completed and commissioned in 2002. It is operated by the Ho-Ping Power Company (和平電力股份有限公司), a joint venture established by the Taiwan Cement Corporation (TCC), the CLP Group, and Mitsubishi Corporation Energy Solutions. It is the largest power plant in eastern Taiwan. Since 2002, the power station has operated under a 25-year power purchase agreement with Taiwan Power Company.<ref>[http://globalenergyobservatory.org/geoid/3564 "Ho-Ping Coal Power Station Taiwan,"] Global Energy Observatory, last updated February 15, 2010</ref><ref>[https://www.clpgroup.com/en/about/our-business/assets-and-services/southeast-asia-taiwan/ho-ping-power-station.html "Ho-Ping Power Station,"] CLP, accessed June 21, 2021</ref>
+
+The power station, the TCC Hoping Cement Plant, and the Hoping Industrial Zone's dedicated port are coexisting structures and form a "Three-in-one Hoping Port Power Plant" circular economy park.<ref name=einfo>[https://e-info.org.tw/node/231458 "升級空污防制設備 和平電廠環評變更卡關 環委：排放濃度仍較他廠高,"] Environmental Information Center, June 18, 2021</ref>
+
+In 2016, the legislature’s Economics Committee passed a nonbinding resolution that privately owned coal-fired power plants should be transformed to gas power plants before their electricity supply contracts with Taipower can be renewed. The committee said the coal-fired power plants should suspend operations if they cannot be transformed into gas power plants and that Taipower should not renew the contracts if privately owned utilities fail to do so. This included the Ho-ping plant, whose contract with Taipower reportedly expires around 2025.<ref>[https://www.taipeitimes.com/News/biz/archives/2016/10/27/2003657983 "Closure of Formosa generators to affect power supplies: Lee,"] Taipei Times, October 27, 2016</ref>
+
+In June 2021, the company was in the process of coordinating an environment assessment with the Environmental Protection Agency (EPA) to upgrade air pollution equipment.<ref name=einfo>[https://e-info.org.tw/node/231458 "升級空污防制設備 和平電廠環評變更卡關 環委：排放濃度仍較他廠高,"] Environmental Information Center, June 18, 2021</ref><ref>[https://news.ltn.com.tw/news/life/breakingnews/3573038 "首次環評視訊會議 花蓮和平電廠案被打回票將補正再審,"] Liberty Times Net, June 18, 2021</ref>
+
+In August 2022, CLP Group's Interim Report stated that the power station had reliable operations following a "major overhaul" completed earlier in the year. They also reported that profits were down from the project due to rising coal prices.<ref>[https://www.clp.com.cn/wp-content/uploads/2022/08/e_2022-Interim-Report.pdf "2022 Interim Report"] CLP Group, August 15, 2022</ref> CLP Group's 2022 Annual Report stated that "an amendment to the tariff reimbursement mechanism, effective from July onwards, greatly relieved the margin pressure and led to a minimal profit for the year."<ref>[https://www.clp.com.cn/wp-content/uploads/2023/03/e_2022Annual-Report.pdf "2022 Annual Report,"] CLP Group, March 2023</ref>
+
+A company report of operations from January to September 2023 stated that the Ho-Ping power station had "continued to operate reliably and benefitted from a gradual easing of fuel costs from the second quarter onwards."<ref>[https://www1.hkexnews.hk/listedco/listconews/sehk/2023/1016/2023101600193.pdf Quarterly Statement 2023 (January – September),] CLP Holdings Limited, October 2023</ref>
+
+According to CLP reports from early- to mid-2024, the Ho-Ping power station was still in operation, but had temporarily ceased operations following an April earthquake.<ref>[https://www.clpgroup.com/content/dam/clp-group/channels/investor/document/3-3-financial-reports/2024/e_1st%20Quarterly%20Statement%20(announcement%20version)_final.pdf.coredownload.pdf Quarterly Statement 2024 (January – March)], CLP Holdings Limited, May 13, 2024</ref><ref>[https://www.clpgroup.com/content/dam/clp-group/channels/investor/document/3-3-financial-reports/2024/e_2024%20Interim%20Report.pdf.coredownload.pdf Connected as One Strengthening Development], CLP Group, August 5, 2024</ref> Operations reportedly resumed in May of the same year.
+
+==External Articles==
+
+Wikipedia also has articles on the Ho-Ping power station ([https://zh.wikipedia.org/wiki/%E5%92%8C%E5%B9%B3%E9%9B%BB%E5%BB%A0 和平電廠] or [https://en.wikipedia.org/wiki/Hoping_Power_Plant Hoping Power Plant]). This article may use content from the Wikipedia article under the terms of the [https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License Creative Commons Attribution-ShareAlike 3.0 Unported License].
+
+[[category:Coal plants]]
+[[category:Coal plants in Taiwan]]
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Taiwan]]

@@ -1,0 +1,138 @@
+# GEM wiki page: Paiton-2 power station
+# URL: https://www.gem.wiki/Paiton-2_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Paiton-2 power station''' is an operating power station of at least 1320-megawatts (MW) in Bhinor, Paiton, Probolinggo, Jawa, Indonesia.
+It is also known as 百通电站.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Paiton-2 power station
+| Bhinor, Paiton, Probolinggo, Jawa, Indonesia
+| -7.715299, 113.585706 (exact)
+|}
+{{
+#display_map:
+-7.715299, 113.585706
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': -7.715299, 113.585706
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: subbituminous, bioenergy: wood & other biomass (solids), bioenergy: refuse (municipal and industrial wastes)<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 660
+| subcritical
+| 2000
+| False
+|-
+| Unit 2
+| Operating
+| coal: subbituminous, bioenergy: wood & other biomass (solids), bioenergy: refuse (municipal and industrial wastes)<ref name="autoref_0" />
+| 660
+| subcritical
+| 2000
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| PT Jawa Power [100%]
+| Siemens AG [50.0%]; Marubeni Corp [17.5%]; YTL Corporation Bhd [17.5%]; PT Bumipertiwi Tatapradipta [15.0%]
+|-
+| Unit 2
+| PT Jawa Power [100%]
+| Siemens AG [50.0%]; Marubeni Corp [17.5%]; YTL Corporation Bhd [17.5%]; PT Bumipertiwi Tatapradipta [15.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS02LjY3JS0tPiAxMDAwMDAwMDA0MzYKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tOTMuMzMlLS0+IDEwMDAwMDAwMDQzNgogICAgMTAwMDAwMDAwNDM2WyJTaWVtZW5zIEFHIl0gLS01MC4wJS0tPiAxMDAwMDAxMjEwMzIKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS40MSUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjIzJS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMTAxNTU4N181WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjQ2JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuNDclLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi41NiUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02Ni43NSUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMTYxMjdbIkJOWU0gQVMgQUdULyBDTFRTIDEwPGJyPlBlcmNlbnQiXSAtLTEwLjE0JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuNTUlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAwMDAwNjQ5WyJNYXJ1YmVuaSBDb3JwIl0gLS0xNy41JS0tPiAxMDAwMDAxMjEwMzIKICAgIDEwMDAwMDEyMTAwM1siUFQgQnVtaXBlcnRpd2k8YnI+VGF0YXByYWRpcHRhIl0gLS0xNS4wJS0tPiAxMDAwMDAxMjEwMzIKICAgIDEwMDAwMjAyMjM2MVsiWWVvaCBUaW9uZyBMYXkgJjxicj5Tb25zIFRydXN0IENvIEx0ZCJdIC0tPiAxMDAwMDIwMDU4OTgKICAgIDEwMDAwMjAwNTg5OFsiWWVvaCBUaW9uZyBMYXkgJjxicj5Tb25zIEZhbWlseSBIb2xkaW5nczxicj5MdGQiXSAtLT4gMTAwMDAxMDEwODMyCiAgICAxMDAwMDEwMTA4MzJbIlllb2ggVGlvbmcgTGF5ICY8YnI+U29ucyBIb2xkaW5ncyBTZG48YnI+QmhkIl0gLS01MC4wOSUtLT4gMTAwMDAwMDAwNzA3CiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OS45MSUtLT4gMTAwMDAwMDAwNzA3CiAgICAxMDAwMDAwMDA3MDdbIllUTCBDb3Jwb3JhdGlvbiBCaGQiXSAtLTE3LjUlLS0+IDEwMDAwMDEyMTAzMgogICAgMTAwMDAwMTIxMDMyWyJQVCBKYXdhIFBvd2VyIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwMjcyOQogICAgUDEwMDAwMDEwMjcyOVsiUGFpdG9uLTIgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Paiton power complex==
+
+Paiton-2 is part of the 4,945-MW Paiton coal-fired power complex, including the two-unit, 800-MW [[PLN Paiton power station]], owned by PLN; the two-unit, 1,340-MW [[Paiton-1 power station]], operated by PT Paiton Energy; the single-unit, 825-MW [[Paiton-3 power station]], operated by PT Paiton Energy; and the single-unit, 660-MW [[PLN Paiton Baru power station]], owned by [[PLN]].
+
+As of April 2024, Paiton power complex reportedly supplied 60% of East Java's total energy needs.<ref>[https://web.pln.co.id/cms/media/siaran-pers/2024/04/dirut-pln-kunjungi-pltu-paiton-pastikan-pasokan-listrik-aman-jelang-idul-fitri/ Dirut PLN Kunjungi PLTU Paiton, Pastikan Pasokan Listrik Aman Jelang Idul Fitri], PT PLN (Persero), April 6, 2024</ref>
+
+In July 2025, the Ministry of Energy and Mineral Resources (MEMR) announced that retirement planning for the Paiton power complex was underway. The MEMR Secretary General stated that rather than decommissioning the units, the complex would be transitioned to a different fuel. Converting the Paiton power complex into a nuclear power facility was a top candidate.<ref>[https://kumparan.com/kumparanbisnis/pltu-paiton-mulai-kaji-pensiun-dini-berpotensi-jadi-pembangkit-nuklir-25XB2ez0aHl/full PLTU Paiton Mulai Kaji Pensiun Dini, Berpotensi Jadi Pembangkit Nuklir], Kumparan, July 26, 2025</ref>
+
+==Background==
+
+Paiton-2 power station is a 1,320 MW coal-fired power station.<Ref>[http://globalenergyobservatory.org/form.php?pid=41521 Paiton II Coal Power Plant Indonesia,] Global Energy Observatory, accessed May 2012</ref><ref>[http://www.edf.org/documents/9584_coal-plants-spreadsheet.xls "Coal-Fired Plants Financed by International Public Investment Institutions Since 1994"], Appendix to ''Foreclosing the Future: Coal, Climate and International Public Finance: Investment in coal-fired power plants hinders the fight against global warming'', Environmental Defense, April 2009.</ref>
+
+The Paiton-2 power station is operated by PT Jawa Power and consists of 2 x 660 MW units. It began construction in 1996 and began operating in 2000.<ref name=jawa>[http://www.jawapower.co.id/about-us-2/ About Us], PT Jawa Power, accessed June 25, 2021</ref>
+
+As of December 2023, the power station co-fired with sawdust.<ref>[https://money.kompas.com/read/2023/12/04/182413326/lebih-hijau-pltu-paiton-pakai-biomassa-serbuk-kayu-dan-bertahap-kurangi-batu Lebih "Hijau", PLTU Paiton Pakai Biomassa Serbuk Kayu dan Bertahap Kurangi Batu Bara], Kompas, December 4, 2023</ref> As of August 2024, the power station reportedly co-fired bank note waste.<ref>[https://finance.detik.com/energi/d-7480495/pln-bakar-uang-jadi-biomassa-di-3-pltu-ini-mana-saja PLN 'Bakar Uang' Jadi Biomassa di 3 PLTU Ini, Mana Saja?], Detik Finance, August 8, 2024</ref>
+
+==Impact and opposition==
+
+In May 2017, it was reported that the Paiton power complex produced the largest amount of Hazardous and Toxic B3 waste of any facility in East Java, 153 million tonnes a year, a figure that represents 80% of the annual total of 170 million tonnes for East Java.<ref>[http://regional.kompas.com/read/2017/05/18/11280281/komplek.pltu.paiton.sumbang.limbah.beracun.terbesar.di.jatim Komplek PLTU Paiton Sumbang Limbah Beracun Terbesar di Jatim], ''Kompas'', May 18, 2017</ref> B3 waste is defined by Government Regulation 19 of 1994 as "any waste containing dangerous and/or toxic material, which due to its characteristics and/or concentration and/or amount, either directly or indirectly, may damage and/or pollute the living environment and/or endanger human health."<ref>[https://www.ecolex.org/details/legislation/government-regulation-of-the-republic-of-indonesia-regarding-hazardous-and-toxic-waste-management-no-19-of-1994-lex-faoc019486/ Government Regulation of the Republic of Indonesia regarding hazardous and toxic waste management (No. 19 of 1994)] Ecolex, accessed December 2017</ref>
+
+In January 2024, an article described the changes to Bhinor Village caused by the Paiton power complex.<ref>[https://projectmultatuli.org/kisah-orang-orang-desa-bhinor-menanggung-nestapa-akibat-pltu-paiton/ Kisah Orang-Orang Desa Bhinor: Menanggung Nestapa Akibat PLTU Paiton], Project Multatuli, January 25, 2024</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Indonesia]]

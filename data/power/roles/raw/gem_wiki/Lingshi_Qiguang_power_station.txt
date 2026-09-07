@@ -1,0 +1,143 @@
+# GEM wiki page: Lingshi Qiguang power station
+# URL: https://www.gem.wiki/Lingshi_Qiguang_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Lingshi Qiguang power station''' (山西国际能源灵石启光低热值煤发电厂) is an operating power station of at least 700-megawatts (MW) in Duanchun Town, Lingshi, Jinzhong, Shanxi, China.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Lingshi Qiguang power station
+| Duanchun Town, Lingshi, Jinzhong, Shanxi, China
+| 36.820628, 111.626103 (exact)
+|}
+{{
+#display_map:
+36.820628, 111.626103
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 36.820628, 111.626103
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: waste coal<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 350
+| supercritical
+| yes
+| 2019
+| False
+|-
+| Unit 2
+| Operating
+| coal: waste coal<ref name="autoref_0" />
+| 350
+| supercritical
+| yes
+| 2019
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Shanxi Qiguang Power Generation Co Ltd [100%]
+| Lingshi Deguangyi Investment and Trade Co Ltd [24.1%]; Lingshi Xinyuan Investment and Trade Co Ltd [24.1%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [21.6%]; KEPCO Shanxi International [17.3%]; Electric Power Development Co Ltd [3.6%]; unknown [2.8%]; Shanxi Gemeng International Energy Group Co Ltd [2.4%]; KEPCO Woori Sprott Global Private Equity Fund [2.0%]; Korea Electric Power Corp [2.0%]
+|-
+| Unit 2
+| Shanxi Qiguang Power Generation Co Ltd [100%]
+| Lingshi Deguangyi Investment and Trade Co Ltd [24.1%]; Lingshi Xinyuan Investment and Trade Co Ltd [24.1%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [21.6%]; KEPCO Shanxi International [17.3%]; Electric Power Development Co Ltd [3.6%]; unknown [2.8%]; Shanxi Gemeng International Energy Group Co Ltd [2.4%]; KEPCO Woori Sprott Global Private Equity Fund [2.0%]; Korea Electric Power Corp [2.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMjM4MTgKICAgIDEwMDAwMDEyMzgxOFsiTGluZ3NoaSBEZWd1YW5neWk8YnI+SW52ZXN0bWVudCBhbmQgVHJhZGU8YnI+Q28gTHRkIl0gLS0yNC4xJS0tPiAxMDAwMDAxMjI5MjUKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTguMiUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMDQ1NjkKICAgIDEwMDAwMjAwNDU2OVsiS29yZWEgRGV2ZWxvcG1lbnQ8YnI+QmFuayBDbyJdIC0tMzIuOSUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ4LjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTQ3WyJLb3JlYSBFbGVjdHJpYyBQb3dlcjxicj5Db3JwIl0gLS01MC4wJS0tPiAxMDAwMDAxMjU5NjcKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTAwLjAlLS0+IDEwMDAwMjAyNTA0MQogICAgMTAwMDAyMDI1MDQxWyJNaW5pc3RyeSBvZiBIZWFsdGg8YnI+YW5kIFdlbGZhcmUiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDA3MzAKICAgIDEwMDAwMTAwMDczMFsiTmF0aW9uYWwgUGVuc2lvbjxicj5TZXJ2aWNlIChTb3V0aDxicj5Lb3JlYSkiXSAtLTUwLjAlLS0+IDEwMDAwMDEyNTk2NwogICAgMTAwMDAwMTI1OTY3WyJLRVBDTyBXb29yaSBTcHJvdHQ8YnI+R2xvYmFsIFByaXZhdGU8YnI+RXF1aXR5IEZ1bmQiXSAtLTguMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMjU5NjlbIktFUENPIFNoYW54aTxicj5JbnRlcm5hdGlvbmFsIl0gLS0zNC4wJS0tPiAxMDAwMDAxMjM2OTkKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzYuODglLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTIuMjUlLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01Ljc3JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjElLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAwMDAwNjQxWyJFbGVjdHJpYyBQb3dlcjxicj5EZXZlbG9wbWVudCBDbyBMdGQiXSAtLTcuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMjU1MjhbIlNoYW54aSBQcm92aW5jaWFsPGJyPkRlcGFydG1lbnQgb2Y8YnI+RmluYW5jZSJdIC0tMTAuMCUtLT4gMTAwMDAwMTIzODIzCiAgICAxMDAwMDAxMjU2NzhbIlNoYW54aSBQcm92aW5jaWFsPGJyPlBlb3BsZSdzIEdvdmVybm1lbnQ8YnI+U3RhdGUtb3duZWQgQXNzZXRzPGJyPlN1cGVydmlzaW9uIGFuZDxicj5BZG1pbmlzdHJhdGlvbjxicj5Db21taXNzaW9uIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAxNjYzCiAgICAxMDAwMDAwMDE2NjNbIlNoYW54aSBTdGF0ZS1Pd25lZDxicj5DYXBpdGFsIEludmVzdG1lbnQ8YnI+YW5kIE9wZXJhdGlvbiBDbyBMdGQiXSAtLTkwLjAlLS0+IDEwMDAwMDEyMzgyMwogICAgMTAwMDAwMTIzODIzWyJTaGFueGkgR2VtZW5nPGJyPkludGVybmF0aW9uYWwgRW5lcmd5PGJyPkdyb3VwIENvIEx0ZCJdIC0tNDcuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMzIzODhfMVsidW5rbm93biJdIC0tNC4wJS0tPiAxMDAwMDAxMjM2OTkKICAgIDEwMDAwMDEyMzY5OVsiR2VtZW5nIEludGVybmF0aW9uYWw8YnI+RW5lcmd5IENvIEx0ZCJdIC0tNTEuMCUtLT4gMTAwMDAwMTIyOTI1CiAgICAxMDAwMDAxMjMyNjFfM1sibmF0dXJhbCBwZXJzb24ocykiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMjM4MTcKICAgIDEwMDAwMDEyMzgxN1siTGluZ3NoaSBYaW55dWFuPGJyPkludmVzdG1lbnQgYW5kIFRyYWRlPGJyPkNvIEx0ZCJdIC0tMjQuMSUtLT4gMTAwMDAwMTIyOTI1CiAgICAxMDAwMDAxMzIzODhfMlsidW5rbm93biJdIC0tMC44JS0tPiAxMDAwMDAxMjI5MjUKICAgIDEwMDAwMDEyMjkyNVsiU2hhbnhpIFFpZ3VhbmcgUG93ZXI8YnI+R2VuZXJhdGlvbiBDbyBMdGQiXSAtLTEwMC4wJS0tPiBQMTAwMDAwMTAxNDkyCiAgICBQMTAwMDAwMTAxNDkyWyJMaW5nc2hpIFFpZ3Vhbmc8YnI+cG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Background==
+
+Shanxi International Energy Group and partners have proposed a power station of two units of 350 MW each. The project submitted tenders for construction in 2014.<ref>[http://sxi.bidnews.cn/caigou/9320.html "山西灵石启光2×350MW低热值煤发电项目 EPC总承包招标公告,"] 中国电力招标网, 2014-03-10</ref>
+
+The project was originally called Hejin No. 2 power station, but while seeking permitting the proposed location was moved to Lingshi County. Once permitted, the plant name changed as well.<ref>[http://www.sxdrc.gov.cn/xxlm/nyfz/zhdt/201406/t20140626_72411.htm "第四批低热值煤发电项目公示,"] 山西日报, June 26, 2014</ref> 
+
+Construction began in June 2015. Operation was planned for 2017.<ref>[http://news.bjx.com.cn/html/20150629/635731.shtml "山西灵石启光2×350MW低热值煤发电项目开工,"] 来源:北极星电力网, 2015/6/29</ref>
+
+==Project suspended, then revived==
+
+===July 2017: Plant halted by government===
+In July 2017 China's National Energy Administration (NEA) postponed or halted 185 coal-burning units across 21 provinces, totaling nearly 107 gigawatts (GW). 114 coal units totaling 65 GW are postponed for consideration until after the end of the 13th 5-year plan, in 2020. In addition, 71 coal units totaling nearly 42 GW were halted indefinitely for regulation violations. NEA said its goal is to eventually suspend or halt 150 GW of coal capacity during the 13th 5-year plan (2016-2020).<ref name=july17>[https://www.sohu.com/a/161854870_651522 "16部委联合发文防范化解煤电产能过剩风险,"] Sohu.com, 2017-08-03</ref>
+
+Lingshi Qiguang power station Units 1-2 are among the halted coal-burning units, suspended indefinitely.<ref name=july17>[https://www.sohu.com/a/161854870_651522 "16部委联合发文防范化解煤电产能过剩风险,"] Sohu.com, 2017-08-03</ref>
+
+===September 2017: Suspension lifted===
+After political negotiations, China's National Energy Administration (NEA) released an updated list of postponed and halted coal projects on September 26, 2017. The new list contained 151 units totaling 95 gigawatts (GW). Lingshi Qiguang power station was no longer on the list, suggesting the plant is not suspended.<ref>[https://www.sohu.com/a/197969653_279604 "2017年分省煤电停建和缓建项目名单,"] Sohu, 2017-10-12</ref>
+
+For more information, see [[China's 2016/2017 Restrictions on Development of Coal-Fired Power Capacity]].
+
+===2019: Plant commissioned===
+Unit 1 was commissioned in April 2019.<ref>[http://news.bjx.com.cn/html/20190429/977732.shtml "启光电厂（2x350MW）#1机组顺利通过168试运,"] 北极星电力网新闻中心, 2019/4/29</ref>
+
+Unit 2 was commissioned in September 2019.<ref>[http://news.bjx.com.cn/html/20190912/1006788.shtml "2×350MW！启光电厂#2机组顺利通过168试运,"] 北极星电力网新闻中心, 2019/9/12</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

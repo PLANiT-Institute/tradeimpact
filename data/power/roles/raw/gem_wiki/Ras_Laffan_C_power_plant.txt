@@ -1,0 +1,147 @@
+# GEM wiki page: Ras Laffan C power plant
+# URL: https://www.gem.wiki/Ras_Laffan_C_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Ras Laffan C power plant''' (محطة رأس لفان "س" لتوليد الطاقة وتحلية المياه) is an operating power station of at least 2732-megawatts (MW) in Ras Laffan Industrial City, Zone 75, Al Khor, Qatar.
+It is also known as Ras Laffan C power and desalination plant, Ras Qartas Energy Plant.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Ras Laffan C power plant
+| Ras Laffan Industrial City, Zone 75, Al Khor, Qatar
+| 25.936944, 51.522222 (exact)<ref name="autoref_0">{{cite web |url=https://www.qewc.com/qewc/en/subsidiaries/ras-girtas/ |archive-url=https://web.archive.org/web/20221004235449/https://www.qewc.com/qewc/en/subsidiaries/ras-girtas/ |archive-date=2022-10-04}}</ref>
+|}
+{{
+#display_map:
+25.936944, 51.522222
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, 3, 4''': 25.936944, 51.522222
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://reconasia.csis.org/database/projects/ras-laffan-c-ras-girtas-power-plant/759bbbb3-8c9c-4389-9e62-d00ee9a221a6/ |archive-url=https://web.archive.org/web/20201224175313/https://reconasia.csis.org/database/projects/ras-laffan-c-ras-girtas-power-plant/759bbbb3-8c9c-4389-9e62-d00ee9a221a6/ |archive-date=2020-12-24}}</ref><ref name="autoref_2">{{cite web |url=https://www.qewc.com/qewc/en/about/about-qatar/ |archive-url=https://web.archive.org/web/20220816065316/https://www.qewc.com/qewc/en/about/about-qatar/ |archive-date=2022-08-16}}</ref><ref name="autoref_0" />
+| fossil gas: natural gas<ref name="autoref_3">{{cite web |url=https://www.jera.co.jp/english/business/projects/raslaffan |archive-url=https://web.archive.org/web/20220707225409/https://www.jera.co.jp/english/business/projects/raslaffan |archive-date=2022-07-07}}</ref>
+| 683<ref name="autoref_4">{{cite web |url=https://www.wsp.com/en-GL/projects/ras-laffan-c-iwpp |archive-url=https://web.archive.org/web/20221207194636/https://www.wsp.com/en-gl/projects/ras-laffan-c-iwpp |archive-date=2022-12-07}}</ref>
+| combined cycle<ref name="autoref_3" />
+| not found
+| 2011<ref name="autoref_5">{{cite web |url=https://web.archive.org/web/20120314094020/http://www.waterworld.com/index/display/article-display/8859120378/articles/waterworld/world-regions/middle-east/2011/06/Qatar_opens_large_scale_desalination_facility.html |archive-url=https://web.archive.org/web/20120314094020/http://www.waterworld.com/index/display/article-display/8859120378/articles/waterworld/world-regions/middle-east/2011/06/Qatar_opens_large_scale_desalination_facility.html |archive-date=14 March 2012}}</ref>
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_0" />
+| fossil gas: natural gas<ref name="autoref_3" />
+| 683<ref name="autoref_4" />
+| combined cycle<ref name="autoref_3" />
+| not found
+| 2011<ref name="autoref_5" />
+| no
+|-
+| 3
+| Operating<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_0" />
+| fossil gas: natural gas<ref name="autoref_3" />
+| 683<ref name="autoref_4" />
+| combined cycle<ref name="autoref_3" />
+| not found
+| 2011<ref name="autoref_5" />
+| no
+|-
+| 4
+| Operating<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_0" />
+| fossil gas: natural gas<ref name="autoref_3" />
+| 683<ref name="autoref_4" />
+| combined cycle<ref name="autoref_3" />
+| not found
+| 2011<ref name="autoref_5" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Ras Girtas Power Company QSC [100%]<ref name="autoref_6">{{cite web |url=https://www.qewc.com/qewc/en/?wpdmdl=7720 |archive-url=https://web.archive.org/web/20210624035140/https://www.qewc.com/qewc/en/?wpdmdl=7720 |archive-date=2021-06-24}}</ref>
+| Nebras Energy QPSC [45.0%]; ENGIE SA [20.0%]; QatarEnergy [15.0%]; Mitsui & Co Ltd [10.0%]; Chubu Electric Power Co Inc [5.0%]; Shikoku Electric Power Co Inc [5.0%]
+|-
+| 2
+| Ras Girtas Power Company QSC [100%]<ref name="autoref_6" />
+| Nebras Energy QPSC [45.0%]; ENGIE SA [20.0%]; QatarEnergy [15.0%]; Mitsui & Co Ltd [10.0%]; Chubu Electric Power Co Inc [5.0%]; Shikoku Electric Power Co Inc [5.0%]
+|-
+| 3
+| Ras Girtas Power Company QSC [100%]<ref name="autoref_6" />
+| Nebras Energy QPSC [45.0%]; ENGIE SA [20.0%]; QatarEnergy [15.0%]; Mitsui & Co Ltd [10.0%]; Chubu Electric Power Co Inc [5.0%]; Shikoku Electric Power Co Inc [5.0%]
+|-
+| 4
+| Ras Girtas Power Company QSC [100%]<ref name="autoref_6" />
+| Nebras Energy QPSC [45.0%]; ENGIE SA [20.0%]; QatarEnergy [15.0%]; Mitsui & Co Ltd [10.0%]; Chubu Electric Power Co Inc [5.0%]; Shikoku Electric Power Co Inc [5.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_7">{{cite web |url=https://www.mubasher.info/news/2035838/%D9%85%D8%AD%D8%B7%D8%A9-%D8%B1%D8%A3%D8%B3-%D9%84%D9%81%D8%A7%D9%86-%D8%A8-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87-%D8%AA%D9%81%D9%88%D8%B2-%D8%A8%D8%AC%D8%A7%D8%A6%D8%B2%D8%A9-%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%A7%D8%A1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/ |archive-url=https://web.archive.org/web/20220709075655/https://www.mubasher.info/news/2035838/%D9%85%D8%AD%D8%B7%D8%A9-%D8%B1%D8%A3%D8%B3-%D9%84%D9%81%D8%A7%D9%86-%D8%A8-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87-%D8%AA%D9%81%D9%88%D8%B2-%D8%A8%D8%AC%D8%A7%D8%A6%D8%B2%D8%A9-%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%A7%D8%A1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/ |archive-date=2022-07-09}}</ref><ref name="autoref_8">{{cite web |url=https://www.thegroup.com.qa/groupdownload/newsreport///92EDC04E29B0E9FB432578B1002A601C.pdf |archive-url=https://web.archive.org/web/20220709082634/https://www.thegroup.com.qa/groupdownload/newsreport///92EDC04E29B0E9FB432578B1002A601C.pdf |archive-date=2022-07-09}}</ref>
+* '''Captive industry''': Chemicals<ref name="autoref_7" /><ref name="autoref_8" />
+* '''Non-industry use''': power<ref name="autoref_7" /><ref name="autoref_8" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjA1JS0tPiAxMDAwMDAwMDA2MzAKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43NSUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjIlLS0+IDEwMDAwMDAwMDYzMAogICAgMTAwMDAwMDAwNjMwWyJDaHVidSBFbGVjdHJpYyBQb3dlcjxicj5DbyBJbmMiXSAtLTUuMCUtLT4gMTAwMDAwMDAzODgyCiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ny40JS0tPiAxMDAwMDAwMDA2NTUKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTIuNiUtLT4gMTAwMDAwMDAwNjU1CiAgICAxMDAwMDAwMDA2NTVbIlNoaWtva3UgRWxlY3RyaWM8YnI+UG93ZXIgQ28gSW5jIl0gLS01LjAlLS0+IDEwMDAwMDAwMzg4MgogICAgMTAwMDAwMDAwODM5WyJHb3Zlcm5tZW50IG9mIFFhdGFyIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDAwMzMxCiAgICAxMDAwMDEwMDAzMzFbIkdlbmVyYWwgUmV0aXJlbWVudDxicj5hbmQgU29jaWFsIEluc3VyYW5jZTxicj5BdXRob3JpdHkgKFFhdGFyKSJdIC0tMTQuMzQlLS0+IDEwMDAwMTAwMDMyOQogICAgMTAwMDAwMDAwODM5WyJHb3Zlcm5tZW50IG9mIFFhdGFyIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAwODQ2CiAgICAxMDAwMDAwMDA4NDZbIlFhdGFyRW5lcmd5Il0gLS0xMC43NCUtLT4gMTAwMDAxMDAwMzI5CiAgICAxMDAwMDAwMDA4MzlbIkdvdmVybm1lbnQgb2YgUWF0YXIiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDA4NDUKICAgIDEwMDAwMDAwMDg0NVsiUWF0YXIgSW52ZXN0bWVudDxicj5BdXRob3JpdHkiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDAzMzAKICAgIDEwMDAwMTAwMDMzMFsiUWF0YXIgSG9sZGluZyBMTEMiXSAtLTI4LjA5JS0tPiAxMDAwMDEwMDAzMjkKICAgIDEwMDAwMTAxNTU4N18xMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ2LjgzJS0tPiAxMDAwMDEwMDAzMjkKICAgIDEwMDAwMTAwMDMyOVsiTmVicmFzIEVuZXJneSBRUFNDIl0gLS00NS4wJS0tPiAxMDAwMDAwMDM4ODIKICAgIDEwMDAwMTAxNTU4N18xMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcwLjQ3JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMTAwMDA3OVsiR292ZXJubWVudCBvZiBGcmFuY2UiXSAtLTIzLjY0JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tNS44OSUtLT4gMTAwMDAwMDAwMzgyCiAgICAxMDAwMDAwMDAzODJbIkVOR0lFIFNBIl0gLS0yMC4wJS0tPiAxMDAwMDAwMDM4ODIKICAgIDEwMDAwMDAwMDg0NlsiUWF0YXJFbmVyZ3kiXSAtLTE1LjAlLS0+IDEwMDAwMDAwMzg4MgogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi40MyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMTU1ODdfMTNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02Ny41JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi4xJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS05Ljk3JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDAwMDY1MVsiTWl0c3VpICYgQ28gTHRkIl0gLS0xMC4wJS0tPiAxMDAwMDAwMDM4ODIKICAgIDEwMDAwMDAwMzg4MlsiUmFzIEdpcnRhcyBQb3dlcjxicj5Db21wYW55IFFTQyJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDU1MzYKICAgIFAxMDAwMDA0MDU1MzZbIlJhcyBMYWZmYW4gQyBwb3dlcjxicj5wbGFudCJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Qatar]]

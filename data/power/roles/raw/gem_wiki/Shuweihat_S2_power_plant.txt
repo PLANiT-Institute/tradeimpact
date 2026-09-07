@@ -1,0 +1,123 @@
+# GEM wiki page: Shuweihat S2 power plant
+# URL: https://www.gem.wiki/Shuweihat_S2_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Shuweihat S2 power plant''' (مجمع الشويهات للطاقة والمياه, S2 محطة الشويهات المستقلة للمياه والطاقة) is an operating power station of at least 1641-megawatts (MW) in Jebel Dhanna, Abu Dhabi, United Arab Emirates.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Shuweihat S2 power plant
+| Jebel Dhanna, Abu Dhabi, United Arab Emirates
+| 24.156936, 52.569199 (exact)<ref name="autoref_0">{{cite web |url=http://www.s2omco.ae/contact-us |archive-url=https://web.archive.org/web/20200222102123/http://s2omco.ae:80/contact-us |archive-date=2020-02-22}}</ref>
+|}
+{{
+#display_map:
+24.156936, 52.569199
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2''': 24.156936, 52.569199
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=http://www.ewec.ae/en/existing.html |archive-url=https://web.archive.org/web/20200628103459/http://www.ewec.ae:80/en/existing.html |archive-date=2020-06-28}}</ref>
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_2">{{cite web |url=https://github.com/wri/global-power-plant-database/blob/master/raw_source_files/AUE/Manual%20Of%20Power%20Stations2016.xls?raw=true |archive-url=https://web.archive.org/web/20220512111929/https://github.com/wri/global-power-plant-database/blob/master/raw_source_files/AUE/Manual%20Of%20Power%20Stations2016.xls?raw=true |archive-date=2022-05-12}}</ref>
+| 820.5<ref name="autoref_3">{{cite web |url=http://www.transco.ae/documents/2019-E7YPS-2020-2026.pdf |archive-url=https://web.archive.org/web/20220516151840/https://transco.ae/documents/2019-E7YPS-2020-2026.pdf |archive-date=2022-05-16}}</ref>
+| combined cycle<ref name="autoref_4">{{cite web |url=http://www.s2omco.ae/ |archive-url=https://web.archive.org/web/20220819105513/https://s2omco.ae/ |archive-date=2022-08-19}}</ref><ref name="autoref_3" />
+| yes<ref name="autoref_5">{{cite web |url=https://www.ewec.ae/en/power-plants/shuweihat |archive-url=https://web.archive.org/web/20220702134041/https://www.ewec.ae/en/power-plants/shuweihat |archive-date=2022-07-02}}</ref>
+| 2011<ref name="autoref_4" />
+| 2036 (planned)<ref name="autoref_3" />
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_2" />
+| 820.5<ref name="autoref_3" />
+| combined cycle<ref name="autoref_4" /><ref name="autoref_3" />
+| yes<ref name="autoref_5" />
+| 2012<ref name="autoref_4" />
+| 2036 (planned)<ref name="autoref_3" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Ruwais Power Company PJSC [100%]<ref name="autoref_6">{{cite web |url=http://rsb.gov.ae/en/publications/detail/licence-ruwais-power-company |archive-url=https://web.archive.org/web/20200125220610/http://rsb.gov.ae:80/en/publications/detail/licence-ruwais-power-company |archive-date=2020-01-25}}</ref>
+| Abu Dhabi National Energy Company PJSC [54.0%]; ENGIE SA [20.0%]; Marubeni Corp [10.0%]; Osaka Gas Co Ltd [10.0%]; Abu Dhabi Water and Electricity Authority [6.0%]
+|-
+| 2
+| Ruwais Power Company PJSC [100%]<ref name="autoref_6" />
+| Abu Dhabi National Energy Company PJSC [54.0%]; ENGIE SA [20.0%]; Marubeni Corp [10.0%]; Osaka Gas Co Ltd [10.0%]; Abu Dhabi Water and Electricity Authority [6.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_5" />
+* '''Captive industry''': Chemicals<ref name="autoref_5" />
+* '''Non-industry use''': power<ref name="autoref_5" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAwOTVbIkVtaXJhdGUgb2YgQWJ1IERoYWJpPGJyPihVbml0ZWQgQXJhYjxicj5FbWlyYXRlcykiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTEwNDQKICAgIDEwMDAwMTAxMTA0NFsiQWJ1IERoYWJpPGJyPkRldmVsb3BtZW50YWw8YnI+SG9sZGluZyBDb21wYW55IFBKU0MiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDEwODAKICAgIDEwMDAwMDAwMTA4MFsiQWJ1IERoYWJpIFBvd2VyIENvcnAiXSAtLTkwLjAlLS0+IDEwMDAwMDAwMTA3OAogICAgMTAwMDAxMDAwMzMzWyJNdWx0aXBseSBHcm91cCBQSlNDIl0gLS03LjMlLS0+IDEwMDAwMDAwMTA3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0yLjY3JS0tPiAxMDAwMDAwMDEwNzgKICAgIDEwMDAwMDAwMTA3OFsiQWJ1IERoYWJpIE5hdGlvbmFsPGJyPkVuZXJneSBDb21wYW55IFBKU0MiXSAtLTU0LjAlLS0+IDEwMDAwMDAwMzkxNwogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjQxJS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuMjMlLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNDYlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi40NyUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfN1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi41NiUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02Ni43NSUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMTYxMjdbIkJOWU0gQVMgQUdULyBDTFRTIDEwPGJyPlBlcmNlbnQiXSAtLTEwLjE0JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuNTUlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAwMDAwNjQ5WyJNYXJ1YmVuaSBDb3JwIl0gLS0xMC4wJS0tPiAxMDAwMDAwMDM5MTcKICAgIDEwMDAwMTAwMDA5NVsiRW1pcmF0ZSBvZiBBYnUgRGhhYmk8YnI+KFVuaXRlZCBBcmFiPGJyPkVtaXJhdGVzKSJdIC0tPiAxMDAwMDAwMDIxNTcKICAgIDEwMDAwMDAwMjE1N1siQWJ1IERoYWJpIFdhdGVyIGFuZDxicj5FbGVjdHJpY2l0eTxicj5BdXRob3JpdHkiXSAtLTYuMCUtLT4gMTAwMDAwMDAzOTE3CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjY4JS0tPiAxMDAwMDAwMDA2NTQKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi4zOSUtLT4gMTAwMDAwMDAwNjU0CiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ni45MyUtLT4gMTAwMDAwMDAwNjU0CiAgICAxMDAwMDAwMDA2NTRbIk9zYWthIEdhcyBDbyBMdGQiXSAtLTEwLjAlLS0+IDEwMDAwMDAwMzkxNwogICAgMTAwMDAxMDE1NTg3XzEyWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzAuNDclLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAxMDAwMDc5WyJHb3Zlcm5tZW50IG9mIEZyYW5jZSJdIC0tMjMuNjQlLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS01Ljg5JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMDAwMDM4MlsiRU5HSUUgU0EiXSAtLT4gMTAwMDAxMDEwMDYxCiAgICAxMDAwMDEwMTAwNjFbIkVuZ2llIFVLIEx0ZCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDkwNQogICAgMTAwMDAxMDAwOTA1WyJJbnRlcm5hdGlvbmFsIFBvd2VyPGJyPk5WL1NBIl0gLS0yMC4wJS0tPiAxMDAwMDAwMDM5MTcKICAgIDEwMDAwMDAwMzkxN1siUnV3YWlzIFBvd2VyIENvbXBhbnk8YnI+UEpTQyJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDU1OTMKICAgIFAxMDAwMDA0MDU1OTNbIlNodXdlaWhhdCBTMiBwb3dlcjxicj5wbGFudCJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United Arab Emirates]]

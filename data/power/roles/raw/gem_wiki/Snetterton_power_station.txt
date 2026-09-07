@@ -1,0 +1,91 @@
+# GEM wiki page: Snetterton power station
+# URL: https://www.gem.wiki/Snetterton_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalBioenergyPowerTracker}}
+'''Snetterton power station''' is an operating power station of at least 42-megawatts (MW) in Breckland District, Norfolk, England, United Kingdom.
+It is also known as Snetterton Renewable Energy Centre, Snetterton Renewable Energy Plant (Snetterton Biomass Plant).
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Snetterton power station
+| Breckland District, Norfolk, England, United Kingdom
+| 52.4816, 0.9541 (exact)<ref name="autoref_0">{{cite web |url=https://goo.gl/maps/9NGTSfB8erLc5suJ9 |archive-url=https://web.archive.org/web/20220923202918/https://www.google.com/maps/place/Snetterton+Renewable+Energy+Plant/@52.4811489,0.9519496,15z/data=!4m5!3m4!1s0x0:0x9bc0748e699a0638!8m2!3d52.4811489!4d0.9519496?sa=X&ved=2ahUKEwjDj-eq6Yf6AhXHg_0HHT6_ANcQ_BJ6BAhfEAU&shorturl=1 |archive-date=23 September 2022}}</ref>
+|}
+{{
+#display_map:
+52.4816, 0.9541
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''''': 52.4816, 0.9541
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Start year
+|-
+| Operating<ref name="autoref_1">{{cite web |url=https://www.bwsc.com/references/snetterton-renewable-energy-plant |archive-url=https://web.archive.org/web/20220923190653/https://www.bwsc.com/references/snetterton-renewable-energy-plant |archive-date=2022-09-23}}</ref>
+| bioenergy: wood & other biomass (solids), bioenergy: agricultural waste (solids)<ref name="autoref_2">{{cite web |url=https://www.bwsc.com/media/news-and-media/2021/divestment-in-brigg-and-snetterton-power-plants |archive-url=https://web.archive.org/web/20220922181446/https://www.bwsc.com/media/news-and-media/2021/divestment-in-brigg-and-snetterton-power-plants |archive-date=2022-09-22}}</ref>
+| 42<ref name="autoref_3">{{cite web |url=https://www.steelconstruction.info/Snetterton_Renewable_Energy_Centre;_Norfolk}}</ref>
+| 2017<ref name="autoref_1" />
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Operator
+!Owner
+!Parent
+|-
+| Burmeister & Wain Scandinavian Contractor<ref name="autoref_2" />
+| Octopus Renewables Ltd [100%]<ref name="autoref_2" />
+| Canada Pension Plan Investment Board; GIM Willow (Scotland) LP; Octopus Nominees Ltd; Origin Energy International Holding Pty Ltd; Tokyo Gas United Kingdom Ltd
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDM1MzZbIkdJTSBXaWxsb3c8YnI+KFNjb3RsYW5kKSBMUCJdIC0tMTAuMjElLS0+IDEwMDAwMDEzMzgzNAogICAgMTAwMDAyMDAzNTM1WyJUb2t5byBHYXMgVW5pdGVkPGJyPktpbmdkb20gTHRkIl0gLS0xMC4wNyUtLT4gMTAwMDAwMTMzODM0CiAgICAxMDAwMDEwMTQzNTlbIkdvdmVybm1lbnQgb2YgQ2FuYWRhIl0gLS0+IDEwMDAwMTAwMDA4OQogICAgMTAwMDAxMDAwMDg5WyJDYW5hZGEgUGVuc2lvbiBQbGFuPGJyPkludmVzdG1lbnQgQm9hcmQiXSAtLTYuNDclLS0+IDEwMDAwMDEzMzgzNAogICAgMTAwMDAyMDAzNTM0WyJPcmlnaW4gRW5lcmd5PGJyPkludGVybmF0aW9uYWw8YnI+SG9sZGluZyBQdHkgTHRkIl0gLS0xOS4yOCUtLT4gMTAwMDAwMTMzODM0CiAgICAxMDAwMDIwMDM1MzdbIk9jdG9wdXMgTm9taW5lZXMgTHRkIl0gLS0xMS41MSUtLT4gMTAwMDAwMTMzODM0CiAgICAxMDAwMDAxMzM4MzRbIk9jdG9wdXMgRW5lcmd5IEdyb3VwPGJyPkx0ZCJdIC0tPiAxMDAwMDIwMDc2OTcKICAgIDEwMDAwMjAwNzY5N1siT2N0b3B1cyBFbmVyZ3k8YnI+R2VuZXJhdGlvbiBMdGQiXSAtLT4gMTAwMDAyMDA3NjQ0CiAgICAxMDAwMDIwMDc2NDRbIk9jdG9wdXMgRW5lcmd5PGJyPkdlbmVyYXRpb24gRnVuZDxicj5NYW5hZ2VtZW50IEhvbGRpbmdzPGJyPkx0ZCJdIC0tPiAxMDAwMDAxNTE2MzQKICAgIDEwMDAwMDE1MTYzNFsiT2N0b3B1cyBSZW5ld2FibGVzPGJyPkx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAyMDAyOTYKICAgIFAxMDAwMDAyMDAyOTZbIlNuZXR0ZXJ0b24gcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of bioenergy power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-bioenergy-power-tracker/ Global Bioenergy Power Tracker] on the Global Energy Monitor website.
+[[Category:Bioenergy power stations]][[Category:Bioenergy power stations in United Kingdom]]

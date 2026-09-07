@@ -1,0 +1,75 @@
+# GEM wiki page: Luchterduinen wind farm
+# URL: https://www.gem.wiki/Luchterduinen_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Luchterduinen wind farm''' is an operating wind farm in Noordwijk, Netherlands.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Luchterduinen wind farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.eneco.com/what-we-do/sustainable-sources/eneco-luchterduinen-wind-farm/ |archive-url=https://web.archive.org/web/20240126024206/https://www.eneco.com/what-we-do/sustainable-sources/eneco-luchterduinen-wind-farm/ |archive-date=2024-01-26}}</ref>
+| 2015<ref name="autoref_0" />
+| 129 MW<ref name="autoref_1">{{cite web |url=https://mhivestasoffshore.com/eneco-luchterduinen/ |archive-url=https://web.archive.org/web/20170711040634/https://mhivestasoffshore.com/eneco-luchterduinen/ |archive-date=11 July 2017}}</ref>
+| Offshore hard mount<ref name="autoref_1" />
+| Mitsubishi Corporation Energy Solutions Ltd; Eneco<ref name="autoref_2">{{cite web |url=https://www.eneco.com/what-we-do/sustainable-sources/eneco-luchterduinen-wind-farm/, https://www.eneco.com/what-we-do/sustainable-sources/eneco-luchterduinen-wind-farm/}}</ref>
+| Eneco<ref name="autoref_0" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Luchterduinen wind farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Noordwijk, Netherlands<ref name="autoref_0" />
+| 52.3717, 3.8833 (exact)<ref name="autoref_0" />
+|}
+The map below shows the exact location of the wind farm:
+{{
+#display_map:
+52.3717, 3.8833~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Netherlands]]
+
+__NOTOC__

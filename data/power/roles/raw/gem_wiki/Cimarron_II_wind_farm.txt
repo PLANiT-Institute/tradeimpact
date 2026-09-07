@@ -1,0 +1,79 @@
+# GEM wiki page: Cimarron II wind farm
+# URL: https://www.gem.wiki/Cimarron_II_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Cimarron II wind farm''' is an operating wind farm in Gray County, Kansas, United States.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Cimarron II wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/ |title=Preliminary Monthly Electric Generator Inventory (based on Form EIA-860M as a supplement to Form EIA-860) - U.S. Energy Information Administration (EIA) |website=www.eia.gov |access-date=2025-01-06 |archive-url=https://web.archive.org/web/20230509053328/https://www.eia.gov/electricity/data/eia860m/ |archive-date=2023-05-09}}</ref>
+| 2012<ref name="autoref_0" />
+| 131 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_1">{{cite web |url=https://doi.org/10.5066/F7TX3DN0 |title=US Wind Turbine Database (v4.0, (April 9, 2021): U.S. Geological Survey, American Clean Power Association, and Lawrence Berkeley National Laboratory data release |author=Hoen, B.D., Diffendorfer, J.E., Rand, J.T., Kramer, L.A., Garrity, C.P., and Hunt, H.E. |date=2018-04-19 |website=United States Wind Turbine Database |access-date=2021-04-09 |archive-url=https://web.archive.org/web/20211203181454/https://www.sciencebase.gov/catalog/item/57bdfd8fe4b03fd6b7df5ff9 |archive-date=2021-12-03}}</ref>
+| Duke Energy Corp [50%]; Sumitomo Corporation of Americas [50%]<ref name="autoref_2">{{cite web |url=https://www.eia.gov/electricity/data/eia860/, https://www.eia.gov/electricity/data/eia860/}}</ref>
+| Duke Energy<ref name="autoref_3">{{cite web |url=https://www.duke-energy.com/our-company/about-us/businesses/renewable-energy/wind-energy/cimarron-windpower |archive-url=https://web.archive.org/web/20210502174255/https://www.duke-energy.com/our-company/about-us/businesses/renewable-energy/wind-energy/cimarron-windpower |archive-date=02 May 2021}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Cimarron II wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Gray County, Kansas, United States<ref name="autoref_0" />
+| 37.8727, -100.4030 (exact)<ref name="autoref_0" />
+|}
+The map below shows the exact location of the wind farm:
+{{
+#display_map:
+37.8727, -100.403~ ~ ~ ~ ~Phase 1
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in United States]]
+
+__NOTOC__

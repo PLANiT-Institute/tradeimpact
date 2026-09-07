@@ -1,0 +1,89 @@
+# GEM wiki page: Posco International RDF power station
+# URL: https://www.gem.wiki/Posco_International_RDF_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalBioenergyPowerTracker}}
+'''Posco International RDF power station''' is a power station in pre-construction in Ukraine.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Posco International RDF power station
+| Ukraine
+| 46.4636375610489, 30.68980391163896 (approximate)<ref name="autoref_0">{{cite web |url=https://ubn.news/a-south-korean-company-is-set-to-construct-a-106m-waste-fired-combined-heat-and-power-chp-plant-in-odesa/}}</ref>
+|}
+{{
+#display_map:
+46.4636375610489, 30.68980391163896
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!CHP
+|-
+| Pre-construction<ref name="autoref_0" />
+| bioenergy: refuse (municipal and industrial wastes)<ref name="autoref_0" />
+| 12<ref name="autoref_0" />
+| yes<ref name="autoref_0" />
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Owner
+!Parent
+|-
+| POSCO International Corp<ref name="autoref_0" />
+| POSCO International Corp
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDA3MzBbIk5hdGlvbmFsIFBlbnNpb248YnI+U2VydmljZSAoU291dGg8YnI+S29yZWEpIl0gLS02LjM4JS0tPiAxMDAwMDAwMDA5NTMKICAgIDEwMDAwMTAxNTU4N18xWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODMuMzQlLS0+IDEwMDAwMDAwMDk1MwogICAgMTAwMDAwMDAwOTUzWyJQT1NDTyBIb2xkaW5ncyBJbmMiXSAtLTcwLjcxJS0tPiAxMDAwMDEwMTA3MDgKICAgIDEwMDAwMTAwMDczMFsiTmF0aW9uYWwgUGVuc2lvbjxicj5TZXJ2aWNlIChTb3V0aDxicj5Lb3JlYSkiXSAtLTUuODIlLS0+IDEwMDAwMTAxMDcwOAogICAgMTAwMDAxMDEwNzA4WyJQT1NDTyBJbnRlcm5hdGlvbmFsPGJyPkNvcnAiXSAtLT4gUDEwMDAwMTA0ODAwMwogICAgUDEwMDAwMTA0ODAwM1siUG9zY28gSW50ZXJuYXRpb25hbDxicj5SREYgcG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of bioenergy power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-bioenergy-power-tracker/ Global Bioenergy Power Tracker] on the Global Energy Monitor website.
+[[Category:Bioenergy power stations]][[Category:Bioenergy power stations in Ukraine]]

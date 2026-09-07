@@ -1,6 +1,8 @@
 """Read construction, equipment, finance, operation and ownership roles from the GEM wiki pages.
 
-Input   roles/raw/gem_wiki_pages.json          wikitext of every plant page in scope
+Input   roles/raw/gem_wiki/*.txt               one readable page file per plant, wikitext under a
+                                               provenance header (fetch_gem_wiki.py)
+        roles/raw/gem_wiki/index.csv           file -> page title, URL, SHA-256, fetch date
         projects/processed/projects_gem.csv    page -> units / locations
         companies/method/companies.csv         patterns, HQ and type per company
         roles/method/roles.csv                 role vocabulary: phase and share basis
@@ -12,8 +14,9 @@ a sentence that names an in-scope company is classified by the company's type an
 it contains — EPC / turnkey / contractor for a builder, boiler / turbine / supply for an equipment
 maker, loan / debt / financing for a lender, insurance / guarantee for export-credit cover,
 "operation and maintenance" for an operator, stake / equity / consortium for an owner. Sentences
-about intentions, protests, scandals, memoranda or quotations are skipped, and the developer role
-is not read from narrative at all (proposals and short-lists are not roles). A share
+about intentions, protests, scandals, memoranda or quotations are skipped. The developer role is
+read only from an explicit development statement ("developed the project", "project developer",
+"the sponsors are"), never from a proposal or a short-list. A share
 stated as a percentage within the same sentence after the company name is kept. Every row carries
 the sentence, so the reading can be checked; the rows are tier C (a keyword reading of narrative
 text, unverified) and a hand row in raw/project_roles.csv replaces them.
@@ -23,7 +26,6 @@ Run from the repository root:  .venv/bin/python script/power/roles/extract_wiki_
 
 from __future__ import annotations
 
-import json
 import re
 import sys
 from pathlib import Path
@@ -31,7 +33,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "model"))
 from power_io import DATA, REPO, hand_file_required, read_csv, write_csv  # noqa: E402
 
-RAW = DATA / "roles" / "raw" / "gem_wiki_pages.json"
+RAW_DIR = DATA / "roles" / "raw" / "gem_wiki"
+INDEX = RAW_DIR / "index.csv"
+#: The header line each page file puts before the wikitext.
+MARKER = "--- wikitext as returned by the API ---"
 PROJECTS = DATA / "projects" / "processed" / "projects_gem.csv"
 COMPANIES = DATA / "companies" / "method" / "companies.csv"
 VOCAB = DATA / "roles" / "method" / "roles.csv"
@@ -74,7 +79,11 @@ WORDS = {
         r"\bpartner|\bsold\b|\bbought\b|\bshares?\b",
         re.IGNORECASE,
     ),
-    "developer": re.compile(r"develop(?:er|ed|ing|s)?\b|propos", re.IGNORECASE),
+    "developer": re.compile(
+        r"develop(?:ed|ing) (?:the|this) (?:plant|project|station)|"
+        r"\bdeveloper of\b|project developer|co-?developer|sponsors? (?:of|are|include)",
+        re.IGNORECASE,
+    ),
 }
 #: Roles a company of each type may be read into, in order of preference.
 ROLES_BY_TYPE = {
@@ -82,10 +91,10 @@ ROLES_BY_TYPE = {
     "eca_insurer": ["eca_cover", "lender"],
     "epc_contractor": ["epc_contractor", "equipment_supplier", "equity_owner"],
     "equipment_supplier": ["equipment_supplier", "epc_contractor", "equity_owner"],
-    "utility": ["equity_owner", "om_contractor"],
-    "genco": ["equity_owner", "om_contractor"],
-    "trading_house": ["equity_owner", "om_contractor"],
-    "developer": ["equity_owner", "om_contractor"],
+    "utility": ["equity_owner", "om_contractor", "developer"],
+    "genco": ["equity_owner", "om_contractor", "developer"],
+    "trading_house": ["equity_owner", "om_contractor", "developer"],
+    "developer": ["equity_owner", "om_contractor", "developer"],
 }
 NOISE = re.compile(
     r"consider|protest|demand|object|withdr|pull(?:ed|ing)? (?:out|their)|cancel|bribe|scandal|"
@@ -199,11 +208,19 @@ def read_roles(
 
 def main() -> None:
     """Write the wiki-derived role table."""
-    if not RAW.exists():
-        hand_file_required(RAW, "run script/power/roles/fetch_gem_wiki.py")
+    if not INDEX.exists():
+        hand_file_required(INDEX, "run script/power/roles/fetch_gem_wiki.py")
     if not PROJECTS.exists():
         hand_file_required(PROJECTS, "run script/power/projects/extract_gem_tracker.py")
-    pages = json.loads(RAW.read_text(encoding="utf-8"))["pages"]
+    pages: dict[str, dict[str, object]] = {}
+    for entry in read_csv(INDEX):
+        path = RAW_DIR / entry["file"]
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        body = text.split(MARKER, 1)[1] if MARKER in text else ""
+        if body and "[no wikitext" not in body[:200]:
+            pages[entry["url"]] = {"title": entry["page_title"], "wikitext": body}
     units_by_url: dict[str, list[dict[str, str]]] = {}
     for u in read_csv(PROJECTS):
         if u["wiki_url"]:
@@ -215,8 +232,8 @@ def main() -> None:
     for r in rows:
         by_role[str(r["role"])] = by_role.get(str(r["role"]), 0) + 1
     print(
-        f"{OUT.relative_to(REPO)}: {len(rows)} company x location x role rows from "
-        f"{len(units_by_url)} pages; by role {dict(sorted(by_role.items()))}"
+        f"{OUT.relative_to(REPO)}: {len(rows)} company x location x role rows read from "
+        f"{len(pages)} page files; by role {dict(sorted(by_role.items()))}"
     )
 
 

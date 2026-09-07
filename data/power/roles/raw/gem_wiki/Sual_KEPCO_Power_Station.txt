@@ -1,0 +1,123 @@
+# GEM wiki page: Sual KEPCO Power Station
+# URL: https://www.gem.wiki/Sual_KEPCO_Power_Station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Sual KEPCO Power Station''' is a cancelled power station in Sual, Pangasinan, Ilocos, Philippines.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Sual KEPCO Power Station
+| Sual, Pangasinan, Ilocos, Philippines
+| 16.091, 120.096 (approximate)
+|}
+{{
+#display_map:
+16.091, 120.096
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Cancelled
+| coal: unknown
+| 500
+| ultra-supercritical
+| 2024
+| False
+|-
+| Unit 2
+| Cancelled
+| coal: unknown
+| 500
+| ultra-supercritical
+| 2025
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| KEPCO Philippines Corp [100%]
+| Korea Electric Power Corp [100.0%]
+|-
+| Unit 2
+| KEPCO Philippines Corp [100%]
+| Korea Electric Power Corp [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMTAxOAogICAgMTAwMDAxMDAxMDE4WyJLRVBDTyBQaGlsaXBwaW5lczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwNDM4NAogICAgUDEwMDAwMDEwNDM4NFsiU3VhbCBLRVBDTyBQb3dlcjxicj5TdGF0aW9uIl0K}}
+
+==Financing==
+
+*'''Source of financing:''' SK Group (Korea)
+
+==Background==
+
+In May 2018 KEPCO announced that it was in talks with a "local partner" and was investing US$2 billion to develop a 1,000-MW coal-fired plant in Sual but did not name the partner.<ref>[http://www.gmanetwork.com/news/money/companies/655206/kepco-in-talks-with-local-partner-to-develop-1-000-mw-sual-power-plant/story/ KEPCO in talks with local partner to develop 1,000-MW Sual power plant], GMA News Online, May 31, 2018</ref> In June 2018, in what appears to be a reference to the same project, SK Engineering & Construction (SKE&C), a subsidiary of South Korean conglomerate SK Group, announced that it had signed a Letter of Intent (LOI) with the Government of the Philippines to build two 600 MW coal-fired power plants on Luzon island at an estimated cost of KRW2.2 trillion (US$1.98 billion).<ref>[http://www.koreaittimes.com/news/articleView.html?idxno=83851 SK Engineering & Construction signs a 2-billion-dollarcontract to build coal-fired plants in the Philippines], Korea Times, Jun. 18, 2018</ref> 
+
+In January 2019 KEPCO signed a memorandum of understanding with Trans-Asia to acquire the site of Trans-Asia's proposed 3 x 300 MW [[Baquioen power station]] and use it for KEPCO's 1 x 1,000 MW Sual KEPCO power station.<ref>[http://manilastandard.net/business/power-technology/286666/kepco-plans-to-build-1-000-mw-coal-fired-plant-in-pangasinan.html Kepco plans to build 1,000-MW coal-fired plant in Pangasinan], Manila Standard, Jan. 31, 2019</ref> In August 2019 the Philippine Department of Energy (DOE) listed the plant as a 2 x 500 MW project with a commissioning date of 2024.<ref>[https://www.doe.gov.ph/sites/default/files/pdf/electric_power/luzon_indicative_2019_jan_aug.pdf PRIVATE SECTOR INITIATED POWER PROJECTS (LUZON) INDICATIVE], Philippine Department of Energy, 31 August 2019</ref> The project will cost an estimated US$1.834 billion or P91.7 billion.<ref>[https://businessmirror.com.ph/2019/02/01/kephilco-keen-on-pursuing-coal-plant-project-in-sual-pangasinan/ Kephilco keen on pursuing coal plant project in Sual, Pangasinan], Business Mirror, Feb. 1, 2019</ref>
+
+In October 2020 KEPCO announced that it would no longer finance foreign coal-fired power plants with the exception of [https://www.gem.wiki/Banten_Suralaya_power_station Jawa-9 and Jawa-10] in Indonesia and [https://www.gem.wiki/Banten_Suralaya_power_station Vung Ang-2 power station] in Vietnam. “We hope that this is not a false promise and that KEPCO will soon make an explicit statement that it is withdrawing from the Sual 2 project,” said Ian Rivera of the Philippine Movement for Climate Justice (PMCJ).<ref>[https://news.mongabay.com/2020/10/south-koreas-move-away-from-coal-leaves-a-philippine-power-plant-in-limbo/ South Korea’s move away from coal leaves a Philippine power plant in limbo], Mongabay, Oct. 26, 2020</ref>
+
+In October 2020, KEPCO announced that it was cancelling its investment in this project.<ref>{{Cite web|url=https://www.power-eng.com/2020/10/20/south-koreas-kepco-cancels-foreign-coal-power-investment/#gref|title=South Korea’s KEPCO cancels foreign coal power investment|last=|first=|date=October 20, 2020|website=Power Engineering|url-status=live|archive-url=|archive-date=|access-date=}}</ref> According to the Philippine Movement for Climate Justice (PMCJ) the project is cancelled.<ref>Communication with PMCJ, January 2021</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Philippines]]

@@ -1,0 +1,232 @@
+# GEM wiki page: Bluewaters power station
+# URL: https://www.gem.wiki/Bluewaters_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Bluewaters power station''' is an operating power station of at least 466-megawatts (MW) in Collie, Western Australia, Australia with multiple units, some of which are not currently operating.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Bluewaters power station
+| Collie, Western Australia, Australia
+| -33.332186, 116.228023 (exact)
+|}
+{{
+#display_map:
+-33.332186, 116.228023
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2, Unit 3, Unit 4''': -33.332186, 116.228023
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: subbituminous<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref><ref name="autoref_1">{{cite web |url=https://www.abc.net.au/news/2023-09-24/indian-owned-coal-mine-time-bomb-as-state-braces-for-shock/102828318 |title=Foreign-owned Griffin coal mine a 'time bomb' as WA energy consumers brace for the fallout |date=2023-09-24 |website=ABC News |access-date=2023-09-29 |archive-url=https://web.archive.org/web/20240125082415/https://www.abc.net.au/news/2023-09-24/indian-owned-coal-mine-time-bomb-as-state-braces-for-shock/102828318 |archive-date=2024-01-25}}</ref>
+| 233
+| subcritical
+| 2009
+| False
+|-
+| Unit 2
+| Operating
+| coal: subbituminous<ref name="autoref_0" /><ref name="autoref_1" />
+| 233
+| subcritical
+| 2009
+| False
+|-
+| Unit 3
+| Cancelled
+| coal: subbituminous<ref name="autoref_0" />
+| 208
+| subcritical
+| –
+| False
+|-
+| Unit 4
+| Cancelled
+| coal: subbituminous<ref name="autoref_0" />
+| 208
+| subcritical
+| –
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Sumitomo Corp [50%]; Kansai Electric Power Co [50%]<ref name="autoref_2">{{cite web |url=https://www.bluewatersps.com.au/ |title=About Us |website=Bluewaters Power |access-date=2024-11-13 |archive-url=https://web.archive.org/web/20250213220145/https://www.bluewatersps.com.au/ |archive-date=2025-02-13}}</ref><ref name="autoref_3">{{cite web |url=https://www.power-technology.com/marketdata/power-plant-profile-bluewaters-power-station-australia/}}</ref><ref name="autoref_2" /><ref name="autoref_3" />
+| Kansai Electric Power Co [50.0%]; Sumitomo Corp [50.0%]
+|-
+| Unit 2
+| Sumitomo Corp [50%]; Kansai Electric Power Co [50%]<ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_2" /><ref name="autoref_3" />
+| Kansai Electric Power Co [50.0%]; Sumitomo Corp [50.0%]
+|-
+| Unit 3
+| Sumitomo Corp [50%]; Kansai Electric Power Co [50%]<ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_2" /><ref name="autoref_3" />
+| Kansai Electric Power Co [50.0%]; Sumitomo Corp [50.0%]
+|-
+| Unit 4
+| Sumitomo Corp [50%]; Kansai Electric Power Co [50%]<ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_2" /><ref name="autoref_3" />
+| Kansai Electric Power Co [50.0%]; Sumitomo Corp [50.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTExLjkyJS0tPiAxMDAwMDAwMDA2NDYKICAgIDEwMDAwMTAwMDI0OVsiQ2l0eSBvZiBPc2FrYSJdIC0tNi4xMiUtLT4gMTAwMDAwMDAwNjQ2CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTE5LjkxJS0tPiAxMDAwMDAwMDA2NDYKICAgIDEwMDAwMDAwMDY0NlsiS2Fuc2FpIEVsZWN0cmljPGJyPlBvd2VyIENvIl0gLS01MC4wJS0tPiBQMTAwMDAwMTAwMDM4CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02OS4yNSUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tOS40NiUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjE2JS0tPiAxMDAwMDAwMDA2NTcKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS4xMyUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDAwMDA2NTdbIlN1bWl0b21vIENvcnAiXSAtLTUwLjAlLS0+IFAxMDAwMDAxMDAwMzgKICAgIFAxMDAwMDAxMDAwMzhbIkJsdWV3YXRlcnMgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Background==
+
+Bluewaters power station is a 2 x 233-megawatt (MW) coal plant located 4.5 kilometres north east of Collie, Western Australia.<ref>[http://www.bluewatersps.com.au/bluewaterspowerstation.html "Bluewaters Power Station"], BlueWaters Power, BlueWaters Power website, accessed June 2014.</ref> 
+
+[[Griffin Energy]]'s proposals for two subcritical coal-fired power station were approved by the Western Australian government in 2004 and 2005.<ref>Collie Coal, [http://www.colliecoal.com/images/collie-6--dooqu.pdf "Bluewaters decision helps secure State's energy needs"], Media Release, May 30, 2005.</ref><ref>Griffin Energy, [http://www.griffinenergy.com.au/default.aspx?MenuID=54 "Our History"], Griffin Energy website, accessed August 2008.</ref> In December 2005 the company announced that Mitsui would begin construction of the $400 million Unit 1 in early 2006 with a completion date set for 2008.<ref>[http://www.abc.net.au/news/newsitems/200512/s1533150.htm "WA set for new $400m power station"], ''ABC News'', December 17, 2005.</ref> The station was planned on the basis of using coal from Griffin’s new [[Ewington I mine]]<ref>Collie Coal, [http://www.colliecoal.com/power_generation/future_generation.phtml "Future Generation"], Collie Coal website, accessed 2008.</ref> 
+
+The plant was initially scheduled to be commissioned in late 2008.<ref>Office of Energy, Government of Western Australia, [http://www.energy.wa.gov.au/2/3190/64/wholesale_elect.pm "Wholesale Electricity Market"], Office of Energy website, accessed August 2008.</ref> Construction of Unit 2 began in 2007 with the commissioning date pushed back to 2009.<ref>Office of Energy, Government of Western Australia, [http://www.energy.wa.gov.au/2/3190/64/wholesale_elect.pm "Wholesale Electricity Market"], Office of Energy website, accessed August 2008.</ref> Both units were commissioned in 2009.
+
+The administrators of the Griffin Group, KordaMentha report that 93% of the power from the plant is sold "under 3 complex PPAs [Power Purchase Agreements] (and the remainder sold on market)."<ref>KordaMentha, [http://www.kordamentha.com/our-engagements/griffin-energy-group "Griffin Energy Group - Griffin Power"], KordaMetha website, accessed June 2014.</ref>
+
+In December 2025, the Western Australian Economic Regulation Authority (ERA) fined the owners of Bluewaters power station A$5 million (US$3.3 million) for breaching the rules of the wholesale electricity market between October 2023 and June 2024. The ERA said that an investigation concluded that Bluewaters “priced its electricity at higher prices than were efficient and permitted” under market rules and estimated the company’s bidding behavior inflated market costs by about A$30 million (US$19.9 million). Bluewaters had reportedly applied to the Electricity Review Board to review the ERA decision and overturn the fine. A spokesperson for Bluewaters said the alleged breaches occurred when the utility faced coal and water shortages and was managing its generation to cater for peak demand.<ref>[https://reneweconomy.com.au/coal-generator-hit-with-heavy-fines-by-regulator-for-bidding-behaviour-and-inflating-prices/amp/ “Coal generator hit with heavy fines by regulator for bidding behaviour and inflating prices,”] Renew Economy, December 8, 2025</ref><ref>[https://www.watoday.com.au/national/western-australia/wa-s-biggest-coal-fired-power-station-to-fight-fines-for-overcharging-customers-20251208-p5nlvh.html “WA’s biggest coal-fired power station to fight fines for overcharging customers,”] WA Today, December 8, 2025</ref>
+
+==Ownership upheavals and financial challenges==
+
+The plant was initially built by [[Griffin Energy]]. However, following the financial collapse of the Griffin Group in January 2010 after failing to meet a payment on its $700 million of debts,<ref>[http://www.smh.com.au/business/debtladen-griffin-coal-put-into-administration-20100104-lo54.html "Debt-laden Griffin Coal put into administration"], ''Sydney Morning Herald'', January 4, 2010.</ref><ref>Colin Kruger, [http://www.smh.com.au/business/cash-crunch-rising-costs-pushed-griffin-coal-over-the-edge-20100920-15jq3.html "Cash crunch, rising costs pushed Griffin Coal over the edge"], ''Sydney Morning Herald'', September 21, 2010.</ref> the administrators sold off the power generation assets of Griffin Energy.
+
+In January 2011 it was announced that Kansai Electric Power (KEPCO) and Sumitomo Corporation had agreed to buy the power station for approximately $1.1 billion and that the deal was expected to be finalised within two months.<ref>Andrew Burrell, [http://www.theaustralian.com.au/business/mining-energy/japanese-in-12bn-griffin-power-buy/story-e6frg9df-1226036238366?nk=eced999d8681d9d04d36ed0e55f94ebd "Japanese energy giants in $1.1bn Griffin power buy"], ''The Australian'', April 09, 2011.</ref> 
+
+The deal was delayed by complex negotiations with [[Lanco]], which insisted on renegotiating the coal supply contracts for the power station which they argued -- after buying the mines -- that the contracted coal price was too low. Renegotiating the coal price required the administrators to renegotiate the power purchase agreements before Kansai Electric Power and Sumitomo Corporation would agree to complete the deal. By January 2012 the administrators were estimating the sale could be completed by March.<ref>Stephen Bell, [http://www.theaustralian.com.au/archive/business/sale-of-griffins-bluewater-power-stations-finalised-by-late-march/story-e6frg9e6-1226248443932 "Sale of Griffin's Bluewater power stations finalised by late March"], ''The Australian'', January 19, 2012.</ref>
+
+However, the sale wasn't completed until mid-February 2013. Sumitomo announced that the consortium formed between it and Kansai Electric Power would "jointly manage the acquired electricity business". Sumitomo announced that its share of the project would be managed through its Sydney-headquartered wholly owned subsidiary Summit Southern Cross Power Holdings Pty Ltd. Sumitomo, which had bought a stake in the 320 MW Kwinana gas fired plant in 2009, signalled that "aims to further expand its power project business in the Australian market."<ref>Sumitomo Corporation, [http://www.sumitomocorp.com.au/110.html "Participating in Power Business in Australia"], Sumitomo Corporation website, accessed June 2014.</ref>
+
+===Debt problems in 2020===
+
+In July 2020, ''The Australian'' reported that an August 2020 deadline for the Bluewaters Power Station to pay back A$400m of debt would prove challenging for Sumitomo Corporation due to the fact that many international commercial banks are no longer prepared to provide finance for the thermal coal sector. It could therefore fall on the power station owners to provide their own capital to service the debt.<ref>[https://ieefa.org/debt-woes-threaten-australias-newest-coal-fired-power-plant/ "Debt deadline nearing for Bluewaters owner"], The Australian, accessed Jul. 2020 via IEEFA website</ref>
+
+In November 2020, Sumitomo reported a US$241 million loss at the Bluewaters coal power plant as it posted record losses overall for the first half of its financial year.<ref>[https://www.businesstimes.com.sg/banking-finance/sumitomo-posts-record-h1-loss-amid-covid-crisis "Sumitomo posts record H1 loss amid Covid crisis"], The Business Times, Nov. 6, 2020</ref> In December 2020 Sumitomo wrote off its $250 million investment in the plant, evaluating the plant as worthless given Australia's turn towards other forms of energy.<ref>Daniel Mercer, [https://www.abc.net.au/news/2020-12-17/bluewaters-coal-fired-power-station-written-off-books/12990532 Bluewaters coal-fired power station written off as worthless as renewables rise], ABC News, Dec. 17, 2020</ref>
+
+In March 2021, ''The Australian Financial Review'' reported that due to climate change concerns the Australian investment management company IFM Investors had declined to get involved with a potential refinancing deal for Bluewaters. While IFM did not refer directly to Bluewaters, ''AFR'' reporting strongly suggested that the investment company's climate report had alluded to its rejection of an offered refinancing package from Bluewaters. According to IFM's climate report, "Whilst we do not typically exclude companies, IFM has declined to participate in several debt offerings principally due to a lack of alignment with our Responsible Investment Charter and ESG Policy, or due to ownership, governance or other ESG issues of the borrower (or parent of the borrower) ... For example, refinance for a power station was rejected due to concerns relating to the use of coal as the main fuel, as well as the plant's revenue reliance on a particular company that we believe lacked appropriate governance structures."<ref> Michael Roddan, [https://www.afr.com/companies/financial-services/ifm-spurned-wa-power-plant-over-coal-concerns-20210305-p578aj "IFM spurned WA power plant over coal concerns"], The Australian Financial Review, Mar. 8, 2021</ref>
+In August 2022, Sumitomo initiated legal action in an attempt to take over ownership of the Griffin coal mine, because the company had failed to provide reliable coal supplies and had directly impacted the operation of the Bluewaters plant. At this point, Griffin reportedly had US$671 million in debts.<ref>[https://www.abc.net.au/news/2022-08-31/power-plant-seeks-control-of-indian-owned-wa-coal-mine/101391152?utm_source=CoalWire&utm_campaign=00509c81c2-EMAIL_CAMPAIGN_2022_09_07_02_00&utm_medium=email&utm_term=0_6826541fba-00509c81c2-208475682 "WA's biggest private power station moves to take over loss-making, Indian-owned coal mine"], ABC News, August 31, 2022.</ref> 
+
+===Griffin Coal debts and subsidies===
+In October 2022, a liquidator's audit found that Griffin Coal owed $1.41 billion to secured creditors and another $33 million to local suppliers.<ref>[https://www.abc.net.au/news/2022-10-04/failed-griffin-coal-mine-owes-close-to-1-5-billion/101500338 "Failed Griffin Coal mine owes close to $1.5 billion to creditors as WA electricity grid woes loom"], ABC News, October 4, 2022.</ref>
+
+In February 2023, the Western Australian Government offered Griffin Coal A$19.5 million ($13.61 million USD) to continue supplying coal to Bluewaters power station.<ref>[https://www.abc.net.au/news/2023-02-14/wa-government-griffin-coal-bail-out/101973286 "WA government offers $19.5 million to keep struggling Griffin Coal mine operational"], ABC News, February 14, 2023.</ref>
+
+In November 2023, the Western Australian government extended their financial support for Griffin Coal, pledging to provide A$220 million (US$144 million) to keep the Griffin coal mine operating until 2026.<ref>[https://www.abc.net.au/news/2023-12-01/griffin-coal-mine-set-to-have-wa-government-lifeline-extended/103175824 "Foreign-owned Griffin Coal mine receives another huge WA taxpayer-funded lifeline,"] ABC News, November 30, 2023</ref>
+
+By July 2025, Griffin Coal’s debt had reached $2.4 billion. The Western Australian state budget for 2025 reportedly set aside another $49 million for Griffin Coal to keep operating and supplying coal to Bluewaters. With this latest provision for the company, the WA government’s total support for Griffin Coal would total $308 million.<ref>[https://www.abc.net.au/news/2025-07-07/griffin-coal-mine-debt-bluewaters-power/105492506 “Fears for WA's energy grid as Griffin Coal slides almost $1 billion further into debt,”] ABC News, July 6, 2025</ref>
+
+In January 2026, the Western Australian government announced a five-year extension of the subsidy to keep Griffin Coal’s [[Ewington Coal Mine]] open and supplying coal to Bluewaters. The extension was set to run until 2031. The government reportedly said that detailed costs would be disclosed to state parliament “later in the year”, but that the subsidy was expected to be “significantly” reduced.<ref>[https://www.reuters.com/business/energy/western-australia-extends-coal-mine-subsidy-citing-energy-security-2026-01-21/ “Western Australia extends coal mine subsidy, citing energy security,”] Reuters, January 20, 2026</ref>
+
+==Coal retirement==
+
+In February 2023, the Australian Energy Market Operator (AEMO) estimated that Bluewaters power station, the youngest coal-fired project in Australia, would retire by 2029.<ref>[https://www.abc.net.au/news/2023-02-05/bluewaters-coal-fired-power-station-to-close-by-2029/101927824?utm_campaign=The%20Canopy&utm_medium=email&_hsmi=244693250&_hsenc=p2ANqtz--_BoSNjQqOLn4T16T2XUSa14yXK3MIMUIAF9PrMcQuXbNNQ-P9tPQrj1ZuDNZz1WugcUW1KBFmW4Iowk4q8HgO_YoGUA&utm_content=244693250&utm_source=hs_email "System operator predicts Bluewaters, Australia's newest coal-fired power plant will close by 2029"], ABC News, February 4, 2023.</ref> They also modeled an expedited scenario where the power station could be shuttered by as soon as mid-2023.<ref>[https://www.aemo.com.au/-/media/files/gas/national_planning_and_forecasting/wa_gsoo/2022/2022-wa-gas-statement-of-opportunities.pdf?la=en "2022 Western Australia Gas Statement of Opportunities"], AEMO, December 2022.</ref>
+
+===2023: Waning profitability and potentially expedited retirement===
+Reporting in August 2023 stated that the Bluewaters plant was facing financial issues and could be shut down as early as 2025, though it would "likely" close near the end of the decade.<ref>[https://reneweconomy.com.au/race-to-renewables-wa-delays-closure-of-coal-unit-will-nsw-follow-suit-at-eraring/ Race to renewables: WA delays closure of coal unit, will NSW follow suit at Eraring?,] Renew Economy, August 18, 2023</ref> September reporting further noted that the power station had been running well below its regular capacity due to a shortage of available coal from its supplier, Griffin Coal.<ref>[https://www.abc.net.au/news/2023-09-24/indian-owned-coal-mine-time-bomb-as-state-braces-for-shock/102828318 Foreign-owned Griffin coal mine a 'time bomb' as WA energy consumers brace for the fallout,] ABC News Australia, September 23, 2023</ref> In the AEMO's 2023 Wholesale Electricity Market report (published August 2023), it was estimated that the Bluewater units would close in October 2030 in the expected scenario, or in October 2025 according to a "high" or accelerated scenario.<ref>[https://aemo.com.au/-/media/files/electricity/wem/planning_and_forecasting/esoo/2023/2023-wholesale-electricity-market-electricity-statement-of-opportunities-wem-esoo.pdf?la=en 2023 Wholesale Electricity Market: Electricity Statement of Opportunities,] AEMO, August 2023</ref>
+
+Despite AEMO's estimations and the plant's own financial stressors, Bluewaters Power still did not appear to have committed to a phase-out date as of 2024. In May 2024, the company's website stated the following regarding regarding the plant's future: "Based on our ongoing focus on continuously improving plant performance and the growing need for low-cost firming electricity supply, it is anticipated that Bluewaters Power will support the WA energy sector well into the future."<ref>[https://www.bluewatersps.com.au/our-future/#:~:text=Bluewaters%20Power%20is%20the%20newest,fired%20power%20stations%20by%202030. Our Future], Bluewaters Power, Accessed: May 13, 2024</ref> The company had not yet specified how far into the future the coal plant would continue to operate.
+
+As of December 2024, the power station was reportedly expected to retire by 2031. Potential for an earlier retirement remained due to the lack of guaranteed coal supply from the Griffin coal mine beyond 2026.<ref>[https://www.argusmedia.com/en/news-and-insights/latest-market-news/2640109-western-australia-s-near-term-gas-supply-rises-aemo Western Australia's near-term gas supply rises: Aemo], Argus Media, December 19, 2024</ref>
+
+In 2025, retirement plans for Bluewaters remained unclear. According to reporting from September 2025, AEMO estimated that Bluewaters would continue operating until at least 2028.<ref>[https://www.abc.net.au/news/2025-09-18/wa-coal-phaseout-uncertain-amid-energy-grid-upgrade-plan/105788864 “WA coal phase-out uncertainty amid Bluewaters power station closure backflip,”] ABC News, September 17, 2025</ref> As of December 2025, public data from OpenElectricity indicated that Bluewaters was expected to close in 2030.<ref>[https://explore.openelectricity.org.au/facilities/wem/?selected=BLUEWATERS&tech=coal_black,coal_brown&status=operating “Bluewaters,”] OpenElectricity, accessed January 12, 2026</ref>
+
+==Background on Bluewaters Power Station Expansion Project==
+
+[[Griffin Energy]] proposed to add a further two 230 MW coal-fired generating units with a proposed commissioning date of 2012 and 2014 at the same location.<ref name=Hist>[http://www.bluewatersps.com.au/ourhistory.html "Our History"], Bluewaters Power website, accessed June 2014.</ref> The company stated that it "will also ensure the Bluewaters Power Station Expansion project will be capable of adopting [[Carbon Capture and Storage|carbon capture technology]] in the future, once this developing technology becomes commercially viable in Western Australia."<ref name=Prop>Griffin Energy, [http://www.griffinenergy.com.au/default.aspx?MenuID=310 "Bluewaters Power Station Expansion"], Griffin Energy, website, accessed August 2008.</ref>
+
+Bluewaters Power states on its website that the two additional units would be 208 MW each and "are planned for completion in 2015" and that it "will be capable of adopting carbon capture technology in the future, once this developing technology becomes commercially viable in Western Australia."<ref>Bluewaters Power, [http://www.bluewatersps.com.au/bluewaterspowerstationexpansion.html "Bluewaters Power Station Expansion Project"], Bluewaters Power website, accessed June 2014.</ref>
+
+However, the EPA were scathing in their 2010 assessment of the proposed plants carbon capture and storage element. While noting that the proposed plant would emit 3.1 million tonnes of carbon dioxide equivalent emissions a year, the EPA wrote:<ref>Environmental Protection Agency, [http://www.epa.wa.gov.au/epadoclib/1349/Rep1349Blue3_4PER8310.pdf "Bluewaters Power Station Expansion - Phase III and Phase IV, Collie"], Environmental Protection Agency, March 2010, page 6.</ref>
+
+:"Although the proponent intends to make sufficient space available on land immediately adjacent to each of the new generation plants to accommodate carbon capture related plant and equipment, it has not clearly indicated where this area of land is located within the proposed plant layout. Nor has the proponent confirmed that this area of land will be safeguarded against the construction of non-carbon capture related plant and equipment within it in the future."
+
+:"The Lower Lesueur Formation and the Gage Sandstone geological formations have been identified by the proponent as potential geosequestration sites for the proposal. However, the proponent has not confirmed that these sites could accommodate the CO2 emissions from the Bluewaters Power Station Phase III and Phase IV generating plants over the anticipated life of the proposal. Considerable additional work needs to be undertaken to determine the viability of the Lower Lesueur Formation as a suitable geosequestration site. No detailed information was provided by the proponent in regard to the geosequestration potential of the Gage Sandstone formation. The proponent has not provided any information regarding the identification of potential transport routes to the above sites."
+
+:"As a result, the EPA does not consider that the proponent has demonstrated that the project meets the IEA definition of CCS ready. Additionally, the likelihood that CCS will become technically and commercially viable is the near future is uncertain, and relying on CCS to constrain carbon emissions for this proposal in the future represents considerable risk."
+
+In March 2015 the EPA issued a new review of the project and found that "the environmental factors of the proposal have not changed significantly" since the 2010 proposal, but recommended that the time limit of authorization of the expansion be extended by five years, to September 2020.<ref>[http://www.epa.wa.gov.au/EIA/EPAREPORTS/Pages/1543-BluewatersPowerStations46.aspx "Bluewaters Power Station Expansion - Phase III and Phase IV Proposal - inquiry under s46 of the Environmental Protection Act 1986 to amend Ministerial Statement 837,"] EPA, March 23, 2015</ref>
+
+In December 2018, the owners of Bluewaters power station were reported to be looking for a $500 million dollar investment to replace existing facilities.<ref>Sarah Thompson and Anthony Macdonald, [https://www.afr.com/street-talk/wapower-producer-bluewaters-fronts-banks-for-new-loans-20181205-h18qv2 "WA-power producer Bluewaters fronts banks for new loans"] Financial Review, December 6, 2018</ref>
+
+==Approval==
+
+In March 2010 the Western Australian Environmental Protection Authority recommended to the Minister for the Environment that the Bluewaters Power Station Expansion Project be approved subject to a range conditions.<ref name=Recommend>Environmental Protection Authority, [http://www.epa.wa.gov.au/epadoclib/1349/Rep1349Blue3_4PER8310.pdf "Bluewaters Power Station Expansion - Phase III and Phase IV, Collie"], Environmental Protection Authority, March 2010.</ref>
+
+In July 2010 the Western Australian Minister for the Environment, Donna Faragher, approved the expansion of the project subject to requiring the power station "to achieve continuous improvement in net greenhouse gas emissions through the adoption of advances in technology and process management. This includes consideration of carbon capture and storage and the use of new technologies to improve the efficiency of the generator units."<ref name=Go>Minister for the Environment, Donna Faragher, [https://www.wa.liberal.org.au/article/minister-determines-environmental-appeals-power-stations "Minister determines environmental appeals on power stations"], Media Release, July 11, 2010.</ref>
+
+While the project has been approved, in June 2014 the Independent Market Operator - which assesses the adequacy of generation capacity to meet forecast electricity load -- stated that "no new capacity will be required in the SWIS until 2023-24" on its expected forecast.<ref name=IMO> Independent Market Operator, [http://www.imowa.com.au/docs/default-source/Reserve-Capacity/soo/imo_2014-swis-electricity-demand-outlook5EA7F337C272.pdf?sfvrsn=0 "SWIS Electricity Demand Outlook – June 2014"], Independent Market Operator, June 2014, page 3.</ref>
+
+==Timeline==
+
+* '''March 2010''': Western Australian Environmental Protection Authority recommends the Minister for the Environment approve the expansion subject to conditions;<ref name=Recommend>Environmental Protection Authority, [http://www.epa.wa.gov.au/epadoclib/1349/Rep1349Blue3_4PER8310.pdf "Bluewaters Power Station Expansion - Phase III and Phase IV, Collie"], Environmental Protection Authority, March 2010.</ref>
+
+* '''July 2010''': Western Australian Minister for the Environment, Donna Faragher, approved the expansion;<ref name=Go>Minister for the Environment, Donna Faragher, [https://www.wa.liberal.org.au/article/minister-determines-environmental-appeals-power-stations "Minister determines environmental appeals on power stations"], Media Release, July 11, 2010.</ref>
+
+* '''June 2014''': Independent Market Operator states that "no new capacity will be required in the SWIS until 2023-24" on its expected forecast.<ref name=IMO> Independent Market Operator, [http://www.imowa.com.au/docs/default-source/Reserve-Capacity/soo/imo_2014-swis-electricity-demand-outlook5EA7F337C272.pdf?sfvrsn=0 "SWIS Electricity Demand Outlook – June 2014"], Independent Market Operator, June 2014, page 3.</ref>
+
+==Financing==
+
+Financing for Kansai Electric Power and Sumitomo Corporation's acquisition of the power station in 2013 came in the form of A$922 million debt provided by a banking consortium comprising ANZ, Bank of Ireland, BayernLB, BBVA, BNP Paribas, Dexia Group, DZ Bank, GE Energy Financial Services, Intesa Sanpaolo, KBC Bank, NAB, OCBC Bank, Portigon, Societe Generale and Westpac<ref>[https://ijglobal.com/data/transaction/26556/acquisition-of-458mw-bluewaters-coal-fired-power-station-1-and-2 "Acquisition of 458MW Bluewaters Coal-fired Power station 1 and 2"], IJGlobal, accessed Jul. 2020</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Australia]]

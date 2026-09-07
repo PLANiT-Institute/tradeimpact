@@ -1,0 +1,103 @@
+# GEM wiki page: Yahsihan power station
+# URL: https://www.gem.wiki/Yahsihan_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Yahsihan power station''' is an operating power station of at least 927-megawatts (MW) in Kırıkkale, Ankara, Türkiye.
+It is also known as Kirikkale CCGT IPP, ACWA Power Kırıkkale Natural Gas.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Yahsihan power station
+| Kırıkkale, Ankara, Türkiye
+| 39.841979, 33.487988 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/search/acwa+K%C4%B1r%C4%B1kkale+DGK%C3%87/@39.8419786,33.4879879,9629m/data=!3m2!1e3!4b1}}</ref>
+|}
+{{
+#display_map:
+39.841979, 33.487988
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 39.841979, 33.487988
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=http://www.acwaguc.com.tr/kirikkale-enerji-santrali |archive-url=https://web.archive.org/web/20211130224910/http://acwaguc.com.tr/kirikkale-enerji-santrali |archive-date=2021-11-30}}</ref>
+| fossil gas: natural gas<ref name="autoref_1" />
+| 927.4<ref name="autoref_2">{{cite web |url=https://www.emo.org.tr/ekler/a3b7e412019793f_ek.pdf |archive-url=https://web.archive.org/web/20220616214937/https://www.emo.org.tr/ekler/a3b7e412019793f_ek.pdf |archive-date=2022-06-16}}</ref>
+| combined cycle<ref name="autoref_3">{{cite web |url=https://www.nomac.com.tr/en/our-operation/detail/facility/24/17/0 |archive-url=https://web.archive.org/web/20220119230033/https://www.nomac.com.tr/en/our-operation/detail/facility/24/17/0 |archive-date=2022-01-19}}</ref><ref name="autoref_1" />
+| not found
+| 2017<ref name="autoref_4">{{cite web |url=https://www.enerjigunlugu.net/acwanin-kirikkaledeki-enerji-santrali-acildi-24978h.htm |archive-url=https://web.archive.org/web/20220119225226/https://www.enerjigunlugu.net/acwanin-kirikkaledeki-enerji-santrali-acildi-24978h.htm |archive-date=2022-01-19}}</ref><ref name="autoref_5">{{cite web |url=https://acwapower.com/en/projects/kirikkale-ccgt-ipp/ |archive-url=https://web.archive.org/web/20221207123744/https://www.acwapower.com/en/projects/kirikkale-ccgt-ipp/ |archive-date=2022-12-07}}</ref><ref name="autoref_6">{{cite web |url=https://www.enerjiatlasi.com/dogalgaz/kirikkale-dogalgaz-santrali.html |archive-url=https://web.archive.org/web/20220524092402/https://www.enerjiatlasi.com/dogalgaz/kirikkale-dogalgaz-santrali.html |archive-date=2022-05-24}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| 1
+| NOMAC Turkey<ref name="autoref_3" /><ref name="autoref_5" />
+| Samsung C&T Corp [10%]; ACWA Power Co [90%]<ref name="autoref_3" /><ref name="autoref_1" /><ref name="autoref_3" /><ref name="autoref_1" />
+| ACWA Power Co [90.0%]; Samsung C&T Corp [10.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk2MAogICAgMTAwMDAwMTIzMjYxXzJbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0zOC4wNyUtLT4gMTAwMDAyMDA0ODI4CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMjUwNDEKICAgIDEwMDAwMjAyNTA0MVsiTWluaXN0cnkgb2YgSGVhbHRoPGJyPmFuZCBXZWxmYXJlIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDAwNzMwCiAgICAxMDAwMDEwMDA3MzBbIk5hdGlvbmFsIFBlbnNpb248YnI+U2VydmljZSAoU291dGg8YnI+S29yZWEpIl0gLS0xMy43JS0tPiAxMDAwMDIwMDQ4MjgKICAgIDEwMDAwMTAxNTU4N18xWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNDguMjMlLS0+IDEwMDAwMjAwNDgyOAogICAgMTAwMDAyMDA0ODI4WyJLQ0MgQ29ycCJdIC0tMTAuMCUtLT4gMTAwMDAwMDAwOTYwCiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ5LjQlLS0+IDEwMDAwMDAwMDk2MAogICAgMTAwMDAxMDAwNzMwWyJOYXRpb25hbCBQZW5zaW9uPGJyPlNlcnZpY2UgKFNvdXRoPGJyPktvcmVhKSJdIC0tNy42JS0tPiAxMDAwMDAwMDA5NjAKICAgIDEwMDAwMDAwMDk2MFsiU2Ftc3VuZyBDJlQgQ29ycCJdIC0tMTAuMCUtLT4gUDEwMDAwMDQwNTkzMgogICAgMTAwMDAxMDAwMTk4WyJHb3Zlcm5tZW50IG9mIFNhdWRpPGJyPkFyYWJpYSJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMTM1OAogICAgMTAwMDAwMDAxMzU4WyJQdWJsaWMgSW52ZXN0bWVudDxicj5GdW5kIChTYXVkaSBBcmFiaWEpIl0gLS00NC4xNiUtLT4gMTAwMDAwMDAwODgyCiAgICAxMDAwMDAxMjMyNjFfM1sibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAyMDIxODY5CiAgICAxMDAwMDIwMjE4NjlbIkFidW5heXlhbiBIb2xkaW5nIENvIl0gLS0+IDEwMDAwMDAwMDg5MwogICAgMTAwMDAwMTIzMjYxXzRbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0+IDEwMDAwMjAyMTg3MAogICAgMTAwMDAyMDIxODcwWyJBbCBNdWhhaWRpYiBHcm91cCJdIC0tPiAxMDAwMDAwMDA4OTMKICAgIDEwMDAwMDAwMDg5M1siVmlzaW9uIEludGVybmF0aW9uYWw8YnI+SW52ZXN0bWVudCBDbyJdIC0tMjIuNzUlLS0+IDEwMDAwMDAwMDg4MgogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0zMy4wOSUtLT4gMTAwMDAwMDAwODgyCiAgICAxMDAwMDAwMDA4ODJbIkFDV0EgUG93ZXIgQ28iXSAtLTkwLjAlLS0+IFAxMDAwMDA0MDU5MzIKICAgIFAxMDAwMDA0MDU5MzJbIllhaHNpaGFuIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Türkiye]]

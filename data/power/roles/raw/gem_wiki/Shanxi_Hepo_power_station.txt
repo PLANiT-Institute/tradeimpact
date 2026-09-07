@@ -1,0 +1,186 @@
+# GEM wiki page: Shanxi Hepo power station
+# URL: https://www.gem.wiki/Shanxi_Hepo_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Shanxi Hepo power station''' (山西国际能源河坡发电厂) is an operating power station of at least 700-megawatts (MW) in Yingying Town Xiayan Villege Baiquan Industrial Park, Jiaoqu, Yangquan, Shanxi, China with multiple units, some of which are not currently operating.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Shanxi Hepo power station
+| Yingying Town Xiayan Villege Baiquan Industrial Park, Jiaoqu, Yangquan, Shanxi, China
+| 37.8469433, 113.6165446 (exact)
+|}
+<display_map width=600 height=500 type=satellite>
+37.8469433, 113.6165446
+37.919943, 113.615236
+</display_map>
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2, Unit 3, Unit 4''': 37.8469433, 113.6165446
+* '''Unit 5, Unit 6''': 37.919943, 113.615236
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit 1
+| Retired
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 50
+| subcritical
+| –
+| 1991
+| 2016
+| False
+|-
+| Unit 2
+| Retired
+| coal: unknown<ref name="autoref_0" />
+| 50
+| subcritical
+| –
+| 1992
+| 2016
+| False
+|-
+| Unit 3
+| Retired
+| coal: unknown<ref name="autoref_0" />
+| 100
+| subcritical
+| –
+| 2000
+| 2016
+| False
+|-
+| Unit 4
+| Retired
+| coal: unknown<ref name="autoref_0" />
+| 100
+| subcritical
+| –
+| 2000
+| 2016
+| False
+|-
+| Unit 5
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 350
+| supercritical
+| yes
+| 2016
+| –
+| False
+|-
+| Unit 6
+| Operating
+| coal: unknown<ref name="autoref_0" />
+| 350
+| supercritical
+| yes
+| 2016
+| –
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Shanxi Hepo Power Generation Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [39.6%]; KEPCO Shanxi International [31.8%]; Electric Power Development Co Ltd [6.5%]; Yangquan Economic and Trade Asset Operation Center [6.5%]; Shanxi Gemeng International Energy Group Co Ltd [4.4%]; KEPCO Woori Sprott Global Private Equity Fund [3.7%]; Korea Electric Power Corp [3.7%]; unknown [3.7%]
+|-
+| Unit 2
+| Shanxi Hepo Power Generation Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [39.6%]; KEPCO Shanxi International [31.8%]; Electric Power Development Co Ltd [6.5%]; Yangquan Economic and Trade Asset Operation Center [6.5%]; Shanxi Gemeng International Energy Group Co Ltd [4.4%]; KEPCO Woori Sprott Global Private Equity Fund [3.7%]; Korea Electric Power Corp [3.7%]; unknown [3.7%]
+|-
+| Unit 3
+| Shanxi Hepo Power Generation Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [39.6%]; KEPCO Shanxi International [31.8%]; Electric Power Development Co Ltd [6.5%]; Yangquan Economic and Trade Asset Operation Center [6.5%]; Shanxi Gemeng International Energy Group Co Ltd [4.4%]; KEPCO Woori Sprott Global Private Equity Fund [3.7%]; Korea Electric Power Corp [3.7%]; unknown [3.7%]
+|-
+| Unit 4
+| Shanxi Hepo Power Generation Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [39.6%]; KEPCO Shanxi International [31.8%]; Electric Power Development Co Ltd [6.5%]; Yangquan Economic and Trade Asset Operation Center [6.5%]; Shanxi Gemeng International Energy Group Co Ltd [4.4%]; KEPCO Woori Sprott Global Private Equity Fund [3.7%]; Korea Electric Power Corp [3.7%]; unknown [3.7%]
+|-
+| Unit 5
+| Shanxi Hepo Power Generation Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [39.6%]; KEPCO Shanxi International [31.8%]; Electric Power Development Co Ltd [6.5%]; Yangquan Economic and Trade Asset Operation Center [6.5%]; Shanxi Gemeng International Energy Group Co Ltd [4.4%]; KEPCO Woori Sprott Global Private Equity Fund [3.7%]; Korea Electric Power Corp [3.7%]; unknown [3.7%]
+|-
+| Unit 6
+| Shanxi Hepo Power Generation Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [39.6%]; KEPCO Shanxi International [31.8%]; Electric Power Development Co Ltd [6.5%]; Yangquan Economic and Trade Asset Operation Center [6.5%]; Shanxi Gemeng International Energy Group Co Ltd [4.4%]; KEPCO Woori Sprott Global Private Equity Fund [3.7%]; Korea Electric Power Corp [3.7%]; unknown [3.7%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjU1MjhbIlNoYW54aSBQcm92aW5jaWFsPGJyPkRlcGFydG1lbnQgb2Y8YnI+RmluYW5jZSJdIC0tMTAuMCUtLT4gMTAwMDAwMTIzODMyCiAgICAxMDAwMDAxMjU0OTlbIlN0YXRlLW93bmVkIEFzc2V0czxicj5TdXBlcnZpc2lvbiBhbmQ8YnI+QWRtaW5pc3RyYXRpb248YnI+Q29tbWlzc2lvbiBvZjxicj5ZYW5ncXVhbiBNdW5pY2lwYWw8YnI+UGVvcGxlJ3MgR292ZXJubWVudCJdIC0tOTAuMCUtLT4gMTAwMDAwMTIzODMyCiAgICAxMDAwMDAxMjM4MzJbIllhbmdxdWFuIEVjb25vbWljPGJyPmFuZCBUcmFkZSBBc3NldDxicj5PcGVyYXRpb24gQ2VudGVyIl0gLS02LjQ5JS0tPiAxMDAwMDAxMjI5MzAKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTguMiUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMDQ1NjkKICAgIDEwMDAwMjAwNDU2OVsiS29yZWEgRGV2ZWxvcG1lbnQ8YnI+QmFuayBDbyJdIC0tMzIuOSUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ4LjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTQ3WyJLb3JlYSBFbGVjdHJpYyBQb3dlcjxicj5Db3JwIl0gLS01MC4wJS0tPiAxMDAwMDAxMjU5NjcKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTAwLjAlLS0+IDEwMDAwMjAyNTA0MQogICAgMTAwMDAyMDI1MDQxWyJNaW5pc3RyeSBvZiBIZWFsdGg8YnI+YW5kIFdlbGZhcmUiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDA3MzAKICAgIDEwMDAwMTAwMDczMFsiTmF0aW9uYWwgUGVuc2lvbjxicj5TZXJ2aWNlIChTb3V0aDxicj5Lb3JlYSkiXSAtLTUwLjAlLS0+IDEwMDAwMDEyNTk2NwogICAgMTAwMDAwMTI1OTY3WyJLRVBDTyBXb29yaSBTcHJvdHQ8YnI+R2xvYmFsIFByaXZhdGU8YnI+RXF1aXR5IEZ1bmQiXSAtLTguMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMjU5NjlbIktFUENPIFNoYW54aTxicj5JbnRlcm5hdGlvbmFsIl0gLS0zNC4wJS0tPiAxMDAwMDAxMjM2OTkKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzYuODglLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTIuMjUlLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01Ljc3JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjElLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAwMDAwNjQxWyJFbGVjdHJpYyBQb3dlcjxicj5EZXZlbG9wbWVudCBDbyBMdGQiXSAtLTcuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMjU1MjhbIlNoYW54aSBQcm92aW5jaWFsPGJyPkRlcGFydG1lbnQgb2Y8YnI+RmluYW5jZSJdIC0tMTAuMCUtLT4gMTAwMDAwMTIzODIzCiAgICAxMDAwMDAxMjU2NzhbIlNoYW54aSBQcm92aW5jaWFsPGJyPlBlb3BsZSdzIEdvdmVybm1lbnQ8YnI+U3RhdGUtb3duZWQgQXNzZXRzPGJyPlN1cGVydmlzaW9uIGFuZDxicj5BZG1pbmlzdHJhdGlvbjxicj5Db21taXNzaW9uIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAxNjYzCiAgICAxMDAwMDAwMDE2NjNbIlNoYW54aSBTdGF0ZS1Pd25lZDxicj5DYXBpdGFsIEludmVzdG1lbnQ8YnI+YW5kIE9wZXJhdGlvbiBDbyBMdGQiXSAtLTkwLjAlLS0+IDEwMDAwMDEyMzgyMwogICAgMTAwMDAwMTIzODIzWyJTaGFueGkgR2VtZW5nPGJyPkludGVybmF0aW9uYWwgRW5lcmd5PGJyPkdyb3VwIENvIEx0ZCJdIC0tNDcuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMzIzODhfMVsidW5rbm93biJdIC0tNC4wJS0tPiAxMDAwMDAxMjM2OTkKICAgIDEwMDAwMDEyMzY5OVsiR2VtZW5nIEludGVybmF0aW9uYWw8YnI+RW5lcmd5IENvIEx0ZCJdIC0tOTMuNTElLS0+IDEwMDAwMDEyMjkzMAogICAgMTAwMDAwMTIyOTMwWyJTaGFueGkgSGVwbyBQb3dlcjxicj5HZW5lcmF0aW9uIENvIEx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDE1MDkKICAgIFAxMDAwMDAxMDE1MDlbIlNoYW54aSBIZXBvIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background==
+
+The four existing coal-fired units of Shanxi Hepo power station, totaling 300 MW, were brought online between 1991 and 2000. The plant is owned by [[Shanxi International Electricity Group]].<ref>[http://bit.ly/1CObppU "关于山西河坡发电有限责任公司“上大压小”热电联产异地新建工程(变更)补充环境影响报告书的批复"], 中华人民共和国环境保护部, 2014-04-14</ref> 
+
+The 4 units were retired in 2016 after the expansion units went operation.<ref>[http://www.sxgjny.com/hpfd/SubComInfo.aspx?comId=58&catalogId=115&tp=Pro&SubCatalogID=22&menuid=1"山西河坡发电有限责任公司企业简介,"] International Energy Group, accessed Jan 2018</ref>
+
+==Description of Expansion==
+
+Shanxi International Electricity Group is currently building two additional coal-fired units at this plant, with a total planned capacity of 700 MW. The new units are scheduled to be completed in 2015.<ref>[http://bit.ly/1AvjLPf "山西河坡电厂2×350兆瓦超临界热电联产项目开工"], 阳泉市政府, 2012-09-24</ref><ref>[http://www.huanqiu803.com/sell/show-htm-itemid-40528.html "山西河坡发电公司北侧大门及煤场管理站建筑安装工程招标,"] 015-06-10</ref>
+
+The new units were completed in 2016.<ref>[http://mt.sohu.com/it/d20170111/123985066_131990.shtml "[独家]2016年12月电力项目情况:涉及核准、开工、并网等,"] Sohu, Jan 10, 2017</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

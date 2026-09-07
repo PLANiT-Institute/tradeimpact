@@ -1,0 +1,108 @@
+# GEM wiki page: Indeck Niles energy center
+# URL: https://www.gem.wiki/Indeck_Niles_energy_center
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Indeck Niles energy center''' is an operating power station of at least 1174-megawatts (MW) in Niles, Cass, Michigan, United States.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Indeck Niles energy center
+| Niles, Cass, Michigan, United States
+| 41.862114, -86.22139 (exact)<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (November 2019) |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20200612191408/https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |archive-date=2020-06-12 |url-status=live}}</ref>
+|}
+{{
+#display_map:
+41.862114, -86.22139
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''CC_set''': 41.862114, -86.22139
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| CC_set
+| Operating<ref name="autoref_1">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (July 2021) |access-date=October 13, 2021 |archive-url=https://web.archive.org/web/20211122185052/https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |archive-date=2021-11-22 |url-status=live}}</ref>
+| fossil gas: natural gas<ref name="autoref_0" />
+| 1174<ref name="autoref_1" />
+| combined cycle<ref name="autoref_0" />
+| no<ref name="autoref_0" />
+| 2022<ref name="autoref_0" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| CC_set
+| Indeck Energy Services Inc [20%]; DL Energy Co Ltd [30%]; KOSPO USA Inc [50%]<ref name="autoref_2">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/xls/april_generator2022.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (April 2022) |access-date=June 10, 2022 |archive-url=https://web.archive.org/web/20220712171434/https://www.eia.gov/electricity/data/eia860m/xls/april_generator2022.xlsx |archive-date=2022-07-12 |url-status=live}}</ref><ref name="autoref_2" /><ref name="autoref_2" />
+| Korea Electric Power Corp [50.0%]; DL Holdings [21.0%]; Indeck Energy Services Inc [20.0%]; Daelim Co Ltd [9.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDE0NDFbIkRhZWxpbSBDbyBMdGQiXSAtLTMwLjAlLS0+IDEwMDAwMDAwMjc2MgogICAgMTAwMDAwMDAwNDg1WyJETCBIb2xkaW5ncyJdIC0tNzAuMCUtLT4gMTAwMDAwMDAyNzYyCiAgICAxMDAwMDAwMDI3NjJbIkRMIEVuZXJneSBDbyBMdGQiXSAtLTMwLjAlLS0+IFAxMDAwMDA0MDI0MTEKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTguMiUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMDQ1NjkKICAgIDEwMDAwMjAwNDU2OVsiS29yZWEgRGV2ZWxvcG1lbnQ8YnI+QmFuayBDbyJdIC0tMzIuOSUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ4LjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTQ3WyJLb3JlYSBFbGVjdHJpYyBQb3dlcjxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAzMzg5CiAgICAxMDAwMDAwMDMzODlbIktPU1BPIFVTQSBJbmMiXSAtLTUwLjAlLS0+IFAxMDAwMDA0MDI0MTEKICAgIDEwMDAwMDAwMTIzOFsiSW5kZWNrIEVuZXJneTxicj5TZXJ2aWNlcyBJbmMiXSAtLTIwLjAlLS0+IFAxMDAwMDA0MDI0MTEKICAgIFAxMDAwMDA0MDI0MTFbIkluZGVjayBOaWxlcyBlbmVyZ3k8YnI+Y2VudGVyIl0K}}
+
+==Background==
+
+The plant operates with [https://www.ge.com/news/press-releases/indeck-niles-energy-center-adds-over-1-gigawatt-of-power-utilizing-advanced-lower GE 7HA.02 turbines] which can burn 20% hydrogen and while there were no plans as of 2022 the possibility exists to modify the turbines to 100% hydrogen within a decade.
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United States]]

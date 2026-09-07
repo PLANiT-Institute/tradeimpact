@@ -1,0 +1,167 @@
+# GEM wiki page: Rayong Gulf PD power station
+# URL: https://www.gem.wiki/Rayong_Gulf_PD_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Rayong Gulf PD power station''' is an operating power station of at least 2500-megawatts (MW) in Map Yang Phon, Pluak Dieng District, Rayong, Thailand.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Rayong Gulf PD power station
+| Map Yang Phon, Pluak Dieng District, Rayong, Thailand
+| 12.950169, 101.156081 (exact)<ref name="autoref_0">{{cite web |url=https://www.adb.org/sites/default/files/project-documents/53239/53239-001-esia-en_1.pdf}}</ref>
+|}
+{{
+#display_map:
+12.950169, 101.156081
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, 3, 4''': 12.950169, 101.156081
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.gulf.co.th/en/pdf/onereport-gulf-2021-en.pdf |archive-url=https://web.archive.org/web/20220524033714/https://www.gulf.co.th/en/pdf/onereport-gulf-2021-en.pdf |archive-date=2022-05-24}}</ref><ref name="autoref_2">{{cite web |url=https://www.turbomachinerymag.com/view/m701jac-launched-at-thai-power-plant}}</ref>
+| fossil gas: natural gas<ref name="autoref_3">{{cite web |url=https://www.nsenergybusiness.com/projects/gulf-pd-power-plant-rayong-province/ |archive-url=https://web.archive.org/web/20220709130522/https://www.nsenergybusiness.com/projects/gulf-pd-power-plant-rayong-province/ |archive-date=2022-07-09}}</ref>
+| 625<ref name="autoref_1" />
+| combined cycle<ref name="autoref_3" />
+| no<ref name="autoref_3" />
+| 2023<ref name="autoref_1" /><ref name="autoref_2" />
+| Mitsubishi Heavy Industries: M701JAC<ref name="autoref_4">{{cite web |url=https://power.mhi.com/news/240424.html |title=Mitsubishi Power | Mitsubishi Power Begins Commercial Operation of Seventh M701JAC Gas Turbine in Thailand GTCC Project; Achieves 75,000 AOH To-Date -- Plants in Rayong and Chonburi are Owned by Joint Venture Between Gulf Group and Mitsui & Co., Ltd., with Final Output of 5,300MW from Eight Systems -- |date=2024-04-24 |website=Mitsubishi Power |access-date=2024-07-17 |archive-url=https://web.archive.org/web/20240724183335/https://power.mhi.com/news/240424.html |archive-date=2024-07-24}}</ref>
+| no
+|-
+| 2
+| Operating<ref name="autoref_5">{{cite web |url=https://www.mhi.com/news/231012.html |archive-url=https://web.archive.org/web/20231106103355/https://www.mhi.com/news/231012.html |archive-date=2023-11-06}}</ref><ref name="autoref_1" /><ref name="autoref_6">{{cite web |url=https://www.powermag.com/mitsubishi-continues-coal-to-gas-transition-in-oklahoma-also-adds-gas-turbine-at-thailand-plant/ |archive-url=https://web.archive.org/web/20240112192933/https://www.powermag.com/?static_page=part-single&offset=0&postid=207824&widgetload=1 |archive-date=2024-01-12}}</ref>
+| fossil gas: natural gas<ref name="autoref_3" />
+| 625<ref name="autoref_1" />
+| combined cycle<ref name="autoref_3" />
+| no<ref name="autoref_3" />
+| 2023<ref name="autoref_5" /><ref name="autoref_1" />
+| Mitsubishi Heavy Industries: M701JAC<ref name="autoref_4" />
+| no
+|-
+| 3
+| Operating<ref name="autoref_1" /><ref name="autoref_7">{{cite web |url=https://hub.optiwise.io/en/documents/69620/20230227-gulf-ar2022-en.pdf |archive-url=https://web.archive.org/web/20230612075400/https://hub.optiwise.io/en/documents/69620/20230227-gulf-ar2022-en.pdf |archive-date=2023-06-12}}</ref>
+| fossil gas: natural gas<ref name="autoref_3" />
+| 625<ref name="autoref_1" />
+| combined cycle<ref name="autoref_3" />
+| no<ref name="autoref_3" />
+| 2024<ref name="autoref_1" /><ref name="autoref_8">{{cite web |url=https://www.power-technology.com/news/mitsubishi-power-third-unit-thai-power-plant/}}</ref>
+| Mitsubishi Heavy Industries: M701JAC<ref name="autoref_4" />
+| no
+|-
+| 4
+| Operating<ref name="autoref_1" /><ref name="autoref_7" /><ref name="autoref_9">{{cite web |url=https://www.powermag.com/mitsubishi-brings-final-unit-of-5-3-gw-gas-fired-thailand-project-online/?utm_source=omeda&utm_medium=email&utm_campaign=pwrgasdirect+eletter&oly_enc_id=2515H1512489C1W |title=Mitsubishi Brings Final Unit of 5.3-GW Gas-Fired Thailand Project Online |date=2024-10-09 |website=POWER Magazine |access-date=2024-10-18 |archive-url=https://web.archive.org/web/20250519202310/https://www.powermag.com/mitsubishi-brings-final-unit-of-5-3-gw-gas-fired-thailand-project-online/?oly_enc_id=2515H1512489C1W |archive-date=2025-05-19}}</ref><ref name="autoref_10">{{cite web |url=https://www.gulf.co.th/th/power_generation.php |title=Gulf Energy Development Public Company Limited | โรงไฟฟ้า |website=www.gulf.co.th |access-date=2024-06-20 |archive-url=https://web.archive.org/web/20240625011207/https://www.gulf.co.th/th/power_generation.php |archive-date=2024-06-25}}</ref>
+| fossil gas: natural gas<ref name="autoref_3" />
+| 625<ref name="autoref_1" />
+| combined cycle<ref name="autoref_3" />
+| no<ref name="autoref_3" />
+| 2024<ref name="autoref_1" /><ref name="autoref_9" />
+| Mitsubishi Power: M701JAC<ref name="autoref_4" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Gulf PD Co Ltd [100%]<ref name="autoref_1" />
+| small shareholder(s) [31.5%]; Mitsui & Co Ltd [30.0%]; Gulf Development PCL [20.4%]; UBS Group AG [7.1%]; Gulf Capital Holdings Ltd [5.6%]; Singapore Telecommunications Ltd [5.4%]
+|-
+| 2
+| Gulf PD Co Ltd [100%]<ref name="autoref_1" />
+| small shareholder(s) [31.5%]; Mitsui & Co Ltd [30.0%]; Gulf Development PCL [20.4%]; UBS Group AG [7.1%]; Gulf Capital Holdings Ltd [5.6%]; Singapore Telecommunications Ltd [5.4%]
+|-
+| 3
+| Gulf PD Co Ltd [100%]<ref name="autoref_1" />
+| small shareholder(s) [31.5%]; Mitsui & Co Ltd [30.0%]; Gulf Development PCL [20.4%]; UBS Group AG [7.1%]; Gulf Capital Holdings Ltd [5.6%]; Singapore Telecommunications Ltd [5.4%]
+|-
+| 4
+| Gulf PD Co Ltd [100%]<ref name="autoref_1" />
+| small shareholder(s) [31.5%]; Mitsui & Co Ltd [30.0%]; Gulf Development PCL [20.4%]; UBS Group AG [7.1%]; Gulf Capital Holdings Ltd [5.6%]; Singapore Telecommunications Ltd [5.4%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAzODBbIkd1bGYgQ2FwaXRhbDxicj5Ib2xkaW5ncyBMdGQiXSAtLTguMCUtLT4gMTAwMDAwMDAxMDMwCiAgICAxMDAwMDIwMjI5NjFbIlNpbmdhcG9yZTxicj5UZWxlY29tbXVuaWNhdGlvbnM8YnI+THRkIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDIxOTIzCiAgICAxMDAwMDIwMjE5MjNbIlNpbmd0ZWwgR2xvYmFsPGJyPkludmVzdG1lbnQgUHRlIEx0ZCJdIC0tNy43MyUtLT4gMTAwMDAwMDAxMDMwCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTI5LjE5JS0tPiAxMDAwMDAwMDEwMzAKICAgIDEwMDAwMDAwMTAwNVsiVUJTIEdyb3VwIEFHIl0gLS0+IDEwMDAwMjAwNTQ0MQogICAgMTAwMDAyMDA1NDQxWyJVQlMgU3dpdHplcmxhbmQgQUciXSAtLT4gMTAwMDAxMDAwMzI0CiAgICAxMDAwMDEwMDAzMjRbIlVCUyBTaW5nYXBvcmUgQnJhbmNoPGJyPkFHIl0gLS0xMC4xNCUtLT4gMTAwMDAwMDAxMDMwCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ0Ljk0JS0tPiAxMDAwMDAwMDEwMzAKICAgIDEwMDAwMDAwMTAzMFsiR3VsZiBEZXZlbG9wbWVudCBQQ0wiXSAtLTcwLjAlLS0+IDEwMDAwMDAwMzE1NQogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi40MyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02Ny41JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNi4xJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS05Ljk3JS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMDAwMDY1MVsiTWl0c3VpICYgQ28gTHRkIl0gLS0zMC4wJS0tPiAxMDAwMDAwMDMxNTUKICAgIDEwMDAwMDAwMzE1NVsiR3VsZiBQRCBDbyBMdGQiXSAtLTEwMC4wJS0tPiBQMTAwMDAwNDA1NDE2CiAgICBQMTAwMDAwNDA1NDE2WyJSYXlvbmcgR3VsZiBQRCBwb3dlcjxicj5zdGF0aW9uIl0K}}
+
+==Background==
+
+''NS Energy'' reported that the original plan and amendments was approved in 2019:
+"The Gulf PD independent power producer (IPP) project is being developed as part of Thailand’s Eastern Economic Corridor (EEC) development plan, which envisions the industrial development of 13,285km² of coastal region spanning Thailand’s three eastern provinces including Chonburi, Rayong, and Chachoengsao."<ref name="nse">[https://www.nsenergybusiness.com/projects/gulf-pd-power-plant-rayong-province/ Gulf PD Power Plant, Rayong Province], ''NS Energy'' website, accessed Dec 17, 2019</ref>
+
+In November 2019, Mitsui announced it was investing in the Rayong power plant.<ref name="rmr">[https://www.reuters.com/article/mitsui-co-powerstation-thailand/japans-mitsui-to-invest-in-25-gw-gas-fired-power-plant-in-thailand-idUSL3N27Y027 Japan's Mitsui to invest in 2.5 GW gas-fired power plant in Thailand], ''Reuters'', Nov 18, 2019</ref> Mitsubishi Hitachi Power Systems, Ltd. will be the engineering, procurement and construction (EPC) contractor.<ref>[https://www.mhps.com/news/20180209.html MHPS Receives Order to Construct 5,300MW Power Plant Project in Thailand Incorporating Eight M701JAC Gas Turbines], MHPS website, Feb 9, 2018</ref>
+
+In November 2019, the Asian Development Bank said that the power station would help replace "more than 8,500 MW of generating capacity – equivalent to about 20 per cent of current national energy capacity – of ageing power plants [that] will be retired between 2020 and 2025."<ref name="eec">[https://www.nationthailand.com/business/30378463 ADB, Gulf PD sign Bt5.4-bn deal to build power plant in Rayong], ''The Nation Thailand'', Nov 18, 2019</ref>
+
+In December 2019, Mitsubishi Hitachi Power Systems shipped the first eight turbines to Bangkok, four for this plant and four for the [[Chonburi Ng Project power station]].<ref>[https://www.power-eng.com/2019/12/06/mhps-ships-jac-turbines-for-ccgt-plant-in-thailand/#gref MHPS ships JAC turbines for CCGT plant in Thailand], ''Power Engineering'', Dec 6, 2019</ref>
+
+==Financing==
+
+In November 2019, Gulf PD secured approximately US$1.7 billion in long-term debt from a group of 14 local and international financial institutions. Half of the loan amount is denominated in US dollars, while the other half is denominated in Thai baht. The major financiers of the project are the Japan Bank for International Cooperation with a loan of US$208 million<ref name="nse" /> and the Asian Development Bank with a loan of US$180 million.<ref>[https://www.adb.org/projects/53239-001/main#project-pds Thailand : Eastern Economic Corridor Independent Power Project], Asian Development Bank Project Data Sheet, last updated Nov. 22 , 2024</ref>
+
+The other co-financers for the project are the Export-Import Bank of Thailand, Mizuho Bank, Sumitomo Mitsui Banking Corporation, Sumitomo Mitsui Trust Bank, Bank of Ayudhy, Siam Commercial Bank, Bangkok Bank, Krung Thai Bank, Kasikornbank, CIMB Thai Bank, Government Savings Bank, and Land and Houses Bank.<ref>[https://hub.optiwise.io/en/documents/50814/644373571BDAC4302A43725E1ADAC538670F742D6FD3C53E1736742C6CD8CC49124007281CDCC43C13447B2A68D2B13167316C1E4E8DCF396E42735C1ADACC396F43775D1CDBC43F62366C1E4E8D_181120191905360174E.pdf Financial close of Gulf PD Company Limited, the operator of Independent Power Producer (IPP) with an installed capacity of 2,650 megawatts], Letter from Gulf PD Company Limited to the Stock Exchange of Thailand, Nov. 18, 2019</ref>
+
+Gulf Energy and Mitsui together provided US$297.60 million in equity for the project.<ref>[https://www.ijglobal.com/data/transaction/48819 Gulf Pluak Daeng CCGT Power Plant (2.65GW) IPP], IJGlobal Transaction Data, last updated Sep. 17, 2024</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Thailand]]

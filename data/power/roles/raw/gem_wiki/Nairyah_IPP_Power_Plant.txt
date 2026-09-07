@@ -1,0 +1,117 @@
+# GEM wiki page: Nairyah IPP Power Plant
+# URL: https://www.gem.wiki/Nairyah_IPP_Power_Plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Nairyah IPP Power Plant''' (محطة توليد النعيرية) is a power station under construction in Eastern, Saudi Arabia.
+It is also known as Nairyah IPP Power Plant 1, Nairyah IPP Power Plant2.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Nairyah IPP Power Plant
+| Eastern, Saudi Arabia
+| 27.47574, 48.49949 (approximate)<ref name="autoref_0">{{cite web |url=https://powersaudiarabia.com.sa/web/attach/news/Al-Dahna_Al-Nairyah_EOI_redline.pdf |title=Project Announcement for Independent Power Plants with total capacity of 7,200 MW |website=powersaudiarabia |access-date=2024-03-22 |archive-url=https://web.archive.org/web/20240409064501/https://powersaudiarabia.com.sa/web/attach/news/Al-Dahna_Al-Nairyah_EOI_redline.pdf |archive-date=2024-04-09}}</ref>
+|}
+{{
+#display_map:
+27.47574, 48.49949
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1-النعيرية 1-Nairyah IPP 1
+| Construction<ref name="autoref_1">{{cite web |url=https://www.kedglobal.com/energy/newsView/ked202411210002}}</ref><ref name="autoref_2">{{cite web |url=https://www.acwapower.com/news/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%84%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%88%D8%A3%D9%83%D9%88%D8%A7-%D8%A8%D8%A7%D9%88%D8%B1-%D9%88%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%8A%D9%88%D9%82%D8%B9%D9%88%D9%86-%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9-%D8%B4%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A-%D8%B1%D9%85%D8%A7%D8%AD-1-%D9%88%D8%A7%D9%84%D9%86%D8%B9%D9%8A%D8%B1%D9%8A%D8%A9-1-%D8%A8%D8%A5%D8%AC%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-15-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%B1%D9%8A%D8%A7%D9%84-en/}}</ref><ref name="autoref_3">{{cite web |url=https://power.mhi.com/regions/mena/news/250328.html}}</ref><ref name="autoref_0" />
+| fossil gas: natural gas<ref name="autoref_0" />
+| 1800<ref name="autoref_0" />
+| combined cycle<ref name="autoref_0" />
+| not found
+| 2028 (planned)<ref name="autoref_1" /><ref name="autoref_4">{{cite web |url=https://acwapower.com/ar/what-we-do/projects/nairiyah-1-ipp/}}</ref>
+| Mitsubishi Power: M501JAC<ref name="autoref_2" />
+| no
+|-
+| 2-النعيرية 2-Nairyah IPP 2
+| Construction<ref name="autoref_5">{{cite web |url=https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5121105-%D8%B3%D9%8A%D9%85%D9%86%D8%B3-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%AA%D9%81%D9%88%D8%B2-%D8%A8%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A5%D9%82%D8%A7%D9%85%D8%A9-%D9%85%D8%AD%D8%B7%D8%AA%D9%8A%D9%86-%D9%84%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A8%D9%8016-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%AF%D9%88%D9%84%D8%A7%D8%B1}}</ref><ref name="autoref_0" />
+| fossil gas: natural gas<ref name="autoref_0" />
+| 1800<ref name="autoref_0" />
+| combined cycle<ref name="autoref_0" />
+| not found
+| 2028 (planned)<ref name="autoref_5" /><ref name="autoref_6">{{cite web |url=https://www.siemens-energy.com/global/en/home/press-releases/siemens-energy-secures-usd-1-6-billion-project-to-advance-saudi-.html}}</ref>
+| Siemens Energy: SGT6-9000HL, Siemens Energy: SST6-5000<ref name="autoref_5" /><ref name="autoref_7">{{cite web |url=https://www.globaldata.com/newsletter/details/siemens-energy-secures-1-6bn-power-project-deal-in-saudi-arabia_380665/}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| 1-النعيرية 1-Nairyah IPP 1
+| ACWA Power; Korea Electric Power<ref name="autoref_1" /><ref name="autoref_2" />
+| ACWA Power Co [35%]; Korea Electric Power Corp [65%]<ref name="autoref_8">{{cite web |url=https://solarabic.com/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D8%AF%D8%AF%D8%A9/2024/11/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81%D8%A7%D8%AA-%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%85%D8%AD%D8%B7/}}</ref><ref name="autoref_4" /><ref name="autoref_8" />
+| Korea Electric Power Corp [65.0%]; ACWA Power Co [35.0%]
+|-
+| 2-النعيرية 2-Nairyah IPP 2
+| JERA; Abu Dhabi National Energy Company; Al Bawani Water & Power<ref name="autoref_9">{{cite web |url=https://www.jera.co.jp/en/news/information/20241119_2055 |title=TAQA, JERA and Al Bawani Consortium to Develop Two New Highly Efficient Power Plants in the Kingdom of Saudi Arabia | Press Release(2024) |website=JERA |access-date=2024-12-03 |archive-url=https://web.archive.org/web/20260401155336/https://www.jera.co.jp/en/news/information/20241119_2055 |archive-date=2026-04-01}}</ref><ref name="autoref_8" /><ref name="autoref_8" />
+| JERA Co Inc [31%]; Al Bawani Water & Power Co [20%]; Abu Dhabi National Energy Company PJSC [49%]<ref name="autoref_10">{{cite web |url=https://www.skynewsarabia.com/business/1756059-%D8%B7%D8%A7%D9%82%D8%A9-%D8%AA%D8%B7%D9%88%D8%B1-%D9%85%D8%AD%D8%B7%D8%AA%D9%8A%D9%86-%D8%AC%D8%AF%D9%8A%D8%AF%D8%AA%D9%8A%D9%86-%D9%84%D8%AA%D9%88%D9%84%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9}}</ref><ref name="autoref_8" /><ref name="autoref_8" /><ref name="autoref_8" />
+| Abu Dhabi National Energy Company PJSC [49.0%]; Al Bawani Company Ltd [20.0%]; Chubu Electric Power Co Inc [15.5%]; Tokyo Electric Power Co [15.5%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Saudi Arabia]]
+
+__NOTOC__

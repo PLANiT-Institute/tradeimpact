@@ -1,0 +1,79 @@
+# GEM wiki page: Patrind hydroelectric plant
+# URL: https://www.gem.wiki/Patrind_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Patrind hydroelectric plant''' is an operating hydroelectric power plant in Mānsehra District, Khyber Pakhtunkhwa, Pakistan.
+
+==Project Details==
+==== '''Table 1:''' Project details for Patrind hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Turbines
+!Technology type
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.hydropower.org/sediment-management-case-studies/pakistan-patrind |archive-url=https://web.archive.org/web/20220901045706/https://www.hydropower.org/sediment-management-case-studies/pakistan-patrind |archive-date=2022-09-01}}</ref>
+| 2017<ref name="autoref_0" />
+| 150 MW<ref name="autoref_1">{{cite web |url=https://cdm.unfccc.int/Projects/DB/KEMCO1340946734.9 |archive-url=https://web.archive.org/web/20221206135146/https://cdm.unfccc.int/Projects/DB/KEMCO1340946734.9 |archive-date=2022-12-06}}</ref>
+| 3 x 50 MW<ref name="autoref_0" />
+| Run-of-river<ref name="autoref_1" />
+| Korea Water Resources CORP (KOWACO); Daewoo Engineering & Construction Co Ltd (한국수자원공사; (주)대우건설)<ref name="autoref_2">{{cite web |url=https://patrind.com/ |archive-url=https://web.archive.org/web/20220901071430/http://www.patrind.com/ |archive-date=2022-09-01}}</ref><ref name="autoref_2" />
+| Star Hydro Power LTD (SHPL)<ref name="autoref_2" />
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Patrind hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Mānsehra District, Khyber Pakhtunkhwa, Pakistan<ref name="autoref_3">{{cite web |url=https://www.google.com/maps?q=PATRIND+hydro&rlz=1C5CHFA_enTW1005TW1005&um=1&ie=UTF-8&sa=X&ved=2ahUKEwin3ZCi-ND8AhVaAYgKHROtAK0Q_AUoAXoECAEQAw}}</ref>
+| Kunhar River<ref name="autoref_2" />
+| 34.3411, 73.4295 (exact)<ref name="autoref_3" />
+|}
+The map below shows the exact location of the hydroelectric power plant:
+{{
+#display_map:
+34.3411, 73.4295~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Pakistan]]
+
+__NOTOC__

@@ -1,0 +1,79 @@
+# GEM wiki page: Belwind Offshore Wind Project
+# URL: https://www.gem.wiki/Belwind_Offshore_Wind_Project
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Belwind Offshore Wind Project''' is an operating wind farm in Blankenberge, Belgium.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Belwind Offshore Wind Project ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://www.belgianoffshoreplatform.be/en/projects/belwind/ |archive-url=https://web.archive.org/web/20240125204735/https://www.belgianoffshoreplatform.be/en/projects/belwind/ |archive-date=2024-01-25}}</ref>
+| 2010<ref name="autoref_0" />
+| 165 MW<ref name="autoref_0" />
+| Offshore hard mount<ref name="autoref_1">{{cite web |url=https://www.google.com/maps/place/The+Belwind/@51.6491176,2.8360608,2260m/data=!3m1!1e3!4m5!3m4!1s0x47db475f9d73b59b:0x603f23dacb0e8183!8m2!3d51.6484987!4d2.8348993}}</ref>
+| Sumitomo Corp [39%]; Parkwind NV [41%]; Meewind [20%] (住友商事株式会社)<ref name="autoref_2">{{cite web |url=https://www.power-technology.com/marketdata/belwind-bligh-bank-i-belgium/, https://www.power-technology.com/marketdata/belwind-bligh-bank-i-belgium/, https://www.power-technology.com/marketdata/belwind-bligh-bank-i-belgium/}}</ref>
+| Belwind<ref name="autoref_3">{{cite web |url=https://www.thewindpower.net/windfarm_en_7141.php |archive-url=https://web.archive.org/web/20240131042742/https://www.thewindpower.net/windfarm_en_7141.php |archive-date=2024-01-31}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Belwind Offshore Wind Project ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Blankenberge, Belgium<ref name="autoref_4">{{cite web |url=https://www.google.com/maps/place/The+Belwind/@51.6491176,2.8360608,2260m/data=!3m1!1e3!4m5!3m4!1s0x47db475f9d73b59b:0x603f23dacb0e8183!8m2!3d51.6484987!4d2.8348993, https://www.nortonrosefulbright.com/en-de/knowledge/publications/816b71d7/global-offshore-wind-belgium}}</ref>
+| 51.6484, 2.8349 (exact)<ref name="autoref_4" />
+|}
+The map below shows the exact location of the wind farm:
+{{
+#display_map:
+51.6484, 2.8349~ ~ ~ ~ ~Phase 1
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Belgium]]
+
+__NOTOC__

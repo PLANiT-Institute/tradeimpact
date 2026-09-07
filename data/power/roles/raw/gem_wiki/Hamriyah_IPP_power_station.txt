@@ -1,0 +1,142 @@
+# GEM wiki page: Hamriyah IPP power station
+# URL: https://www.gem.wiki/Hamriyah_IPP_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Hamriyah IPP power station''' (محطة الحمرية المستقلة للطاقة) is an operating power station of at least 1800-megawatts (MW) in Sharjah, United Arab Emirates.
+It is also known as Hamriyah CCGT Power Plant, Hamriyah Independent Power Plant, Sharjah Hamriyah Independent power plant, Al-Hamriyah IPP.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Hamriyah IPP power station
+| Sharjah, Sharjah, United Arab Emirates
+| 25.459488, 55.478473 (exact)<ref name="autoref_0">{{cite web |url=https://www.nexi.go.jp/environment/info/pdf/18-026_EIA_1.pdf |archive-url=https://web.archive.org/web/20221205043947/https://www.nexi.go.jp/environment/info/pdf/18-026_EIA_1.pdf |archive-date=2022-12-05}}</ref><ref name="autoref_1">{{cite web |url=https://img1.wsimg.com/blobby/go/5c66b604-ed4e-4b21-b78b-cff365954125/downloads/Plot%20Plan.pdf?ver=1571317797476 |archive-url=https://web.archive.org/web/20210624003413/https://img1.wsimg.com/blobby/go/5c66b604-ed4e-4b21-b78b-cff365954125/downloads/Plot%20Plan.pdf?ver=1571317797476 |archive-date=2021-06-24}}</ref>
+|}
+{{
+#display_map:
+25.459488, 55.478473
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, 3''': 25.459488, 55.478473
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_2">{{cite web |url=https://shipco.info/ |archive-url=https://web.archive.org/web/20211221091226/http://shipco.info/ |archive-date=2021-12-21}}</ref><ref name="autoref_3">{{cite web |url=https://www.albayan.ae/uae/news/2021-07-11-1.4205332 |archive-url=https://web.archive.org/web/20220709110902/https://www.albayan.ae/uae/news/2021-07-11-1.4205332 |archive-date=2022-07-09}}</ref>
+| fossil gas: natural gas<ref name="autoref_4">{{cite web |url=https://www.nsenergybusiness.com/projects/hamriyah-independent-power-plant/،https://attaqa.net/2021/09/30/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D8%AF%D8%A1-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%B1%D9%8A%D8%A8%D9%8A-%D9%84%D9%84%D8%AA%D9%88%D8%B1%D8%A8/}}</ref>
+| 600<ref name="autoref_3" /><ref name="autoref_5">{{cite web |url=https://www.nsenergybusiness.com/projects/hamriyah-independent-power-plant/ |archive-url=https://web.archive.org/web/20220519181931/https://www.nsenergybusiness.com/projects/hamriyah-independent-power-plant/ |archive-date=2022-05-19}}</ref>
+| combined cycle<ref name="autoref_5" />
+| yes<ref name="autoref_5" />
+| 2021<ref name="autoref_5" /><ref name="autoref_6">{{cite web |url=https://www.albayan.ae/uae/news/2021-07-11-1.4205332. |archive-url=https://web.archive.org/web/20240120022947/https://www.albayan.ae/uae/news/2021-07-11-1.4205332. |archive-date=2024-01-20}}</ref>
+| GE Power: 9HA.01, GE Power: STFs-D650<ref name="autoref_7">{{cite web |url=https://www.tecnicasreunidas.es/project/hamriyah-ccgt-power-plant/}}</ref>
+| no
+|-
+| 2
+| Operating<ref name="autoref_8">{{cite web |url=https://www.zawya.com/mena/en/projects/story/PROJECTS_Sharjahs_Hamriyah_Independent_Power_Plant_is_75_complete-ZAWYA20210627123317/ |archive-url=https://web.archive.org/web/20220119193302/https://www.zawya.com/mena/en/projects/story/PROJECTS_Sharjahs_Hamriyah_Independent_Power_Plant_is_75_complete-ZAWYA20210627123317/ |archive-date=2022-01-19}}</ref><ref name="autoref_9">{{cite web |url=https://www.ge.com/news/press-releases/sewa-shipco-ge-vernova-announce-commercial-operations-of-hamriyah-ipp-meas-most |archive-url=https://web.archive.org/web/20240112191105/https://www.ge.com/news/press-releases/sewa-shipco-ge-vernova-announce-commercial-operations-of-hamriyah-ipp-meas-most |archive-date=2024-01-12}}</ref>
+| fossil gas: natural gas<ref name="autoref_4" />
+| 600<ref name="autoref_3" /><ref name="autoref_5" />
+| combined cycle<ref name="autoref_5" />
+| yes<ref name="autoref_5" />
+| 2023<ref name="autoref_3" /><ref name="autoref_5" /><ref name="autoref_10">{{cite web |url=https://www.sharjah24.ae/ar/Articles/2023/10/19/ZZ18 |archive-url=https://web.archive.org/web/20240405055722/https://www.sharjah24.ae/ar/Articles/2023/10/19/ZZ18 |archive-date=2024-04-05}}</ref>
+| GE Power: 9HA.01, GE Power: STFs-D650<ref name="autoref_7" />
+| no
+|-
+| 3
+| Operating<ref name="autoref_8" /><ref name="autoref_9" />
+| fossil gas: natural gas<ref name="autoref_5" /><ref name="autoref_11">{{cite web |url=https://attaqa.net/2021/09/30/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D8%AF%D8%A1-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%B1%D9%8A%D8%A8%D9%8A-%D9%84%D9%84%D8%AA%D9%88%D8%B1%D8%A8/ |archive-url=https://web.archive.org/web/20210930094337/https://attaqa.net/2021/09/30/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D8%AF%D8%A1-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%B1%D9%8A%D8%A8%D9%8A-%D9%84%D9%84%D8%AA%D9%88%D8%B1%D8%A8/ |archive-date=2021-09-30}}</ref>
+| 600<ref name="autoref_3" /><ref name="autoref_5" />
+| combined cycle<ref name="autoref_5" />
+| yes<ref name="autoref_5" />
+| 2023<ref name="autoref_3" /><ref name="autoref_5" /><ref name="autoref_10" />
+| GE Power: 9HA.01, GE Power: STFs-D650<ref name="autoref_7" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| 1
+| Sharjah Hamriyah Independent Power<ref name="autoref_5" />
+| Sharjah Hamriyah Independent Power Co [100%]<ref name="autoref_5" />
+| General Electric Co [25.0%]; Sharjah Asset Management [25.0%]; Shikoku Electric Power Co Inc [25.0%]; Sumitomo Corp [25.0%]
+|-
+| 2
+| Sharjah Hamriyah Independent Power<ref name="autoref_5" />
+| Sharjah Hamriyah Independent Power Co [100%]<ref name="autoref_5" />
+| General Electric Co [25.0%]; Sharjah Asset Management [25.0%]; Shikoku Electric Power Co Inc [25.0%]; Sumitomo Corp [25.0%]
+|-
+| 3
+| Sharjah Hamriyah Independent Power<ref name="autoref_5" />
+| Sharjah Hamriyah Independent Power Co [100%]<ref name="autoref_5" />
+| General Electric Co [25.0%]; Sharjah Asset Management [25.0%]; Shikoku Electric Power Co Inc [25.0%]; Sumitomo Corp [25.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_5" />
+* '''Captive industry''': Chemicals<ref name="autoref_5" />
+* '''Non-industry use''': power<ref name="autoref_5" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg3LjQlLS0+IDEwMDAwMDAwMDY1NQogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfOFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTguODElLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk2WyJTdGF0ZSBTdHJlZXQgQ29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzNjEwOAogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcxLjcyJS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMjAxMTI4NVsiUmVzb25hYyBIb2xkaW5nczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MjU2CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuNzIlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xMi42JS0tPiAxMDAwMDAwMDA2NTUKICAgIDEwMDAwMDAwMDY1NVsiU2hpa29rdSBFbGVjdHJpYzxicj5Qb3dlciBDbyBJbmMiXSAtLT4gMTAwMDAwMDA0MDE4CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02OS4yNSUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tOS40NiUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjE2JS0tPiAxMDAwMDAwMDA2NTcKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS4xMyUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDAwMDA2NTdbIlN1bWl0b21vIENvcnAiXSAtLT4gMTAwMDAwMDA0MDE4CiAgICAxMDAwMDAwMDEwODhbIlNoYXJqYWggQXNzZXQ8YnI+TWFuYWdlbWVudCJdIC0tPiAxMDAwMDAwMDQwMTgKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tPiAxMDAwMDEwMTQ4NDkKICAgIDEwMDAwMTAxNDg0OVsiRk1SIExMQyJdIC0tNi4xNSUtLT4gMTAwMDAwMDAxMjIzCiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTcuNiUtLT4gMTAwMDAwMDAxMjIzCiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguMTMlLS0+IDEwMDAwMDAwMTIyMwogICAgMTAwMDAxMDE1NTg3XzExWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMTIlLS0+IDEwMDAwMDAwMTIyMwogICAgMTAwMDAwMDAxMjIzWyJHZW5lcmFsIEVsZWN0cmljIENvIl0gLS0+IDEwMDAwMDAwNDAxOAogICAgMTAwMDAwMDA0MDE4WyJTaGFyamFoIEhhbXJpeWFoPGJyPkluZGVwZW5kZW50IFBvd2VyIENvIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDQwNTU3OQogICAgUDEwMDAwMDQwNTU3OVsiSGFtcml5YWggSVBQIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United Arab Emirates]]

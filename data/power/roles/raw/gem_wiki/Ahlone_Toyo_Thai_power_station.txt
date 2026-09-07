@@ -1,0 +1,117 @@
+# GEM wiki page: Ahlone (Toyo Thai) power station
+# URL: https://www.gem.wiki/Ahlone_(Toyo_Thai)_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Ahlone (Toyo Thai) power station''' is an operating power station of at least 121-megawatts (MW) in Ahlone, Yangon, Myanmar with multiple units, some of which are not currently operating.
+It is also known as Alone Thermal Power Plant, Toyo Thai power station.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Ahlone (Toyo Thai) power station
+| Ahlone, Yangon, Myanmar
+| 16.778587, 96.130801 (exact)<ref name="autoref_0">{{cite web |url=https://goo.gl/maps/djmEm1Ve5gx4mGxw8}}</ref>
+|}
+{{
+#display_map:
+16.778587, 96.130801
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1-1, 2-1''': 16.778587, 96.130801
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1-1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.moee.gov.mm/en/ignite/page/46 |archive-url=https://web.archive.org/web/20221008193121/https://www.moee.gov.mm/en/ignite/page/46 |archive-date=2022-10-08}}</ref><ref name="autoref_2">{{cite web |url=https://www.ttcl.com/business/power_energy_business/power_plant_business |archive-url=https://web.archive.org/web/20220518093257/https://www.ttcl.com/business/power_energy_business/power_plant_business |archive-date=2022-05-18}}</ref><ref name="autoref_3">{{cite web |url=https://www.ttcl.com/filemanager/medias/source/activity/20190830-ttcl-lng-power-plant-03.pdf |archive-url=https://web.archive.org/web/20210310231418/https://www.ttcl.com/filemanager/medias/source/activity/20190830-ttcl-lng-power-plant-03.pdf |archive-date=2021-03-10}}</ref><ref name="autoref_4">{{cite web |url=https://investor.ttcl.com/misc/one-report/20230314-ttcl-one-report-2022-en.pdf}}</ref>
+| fossil gas: natural gas<ref name="autoref_5">{{cite web |url=https://www.adb.org/sites/default/files/institutional-document/218286/mya-energy-sector-assessment.pdf |archive-url=https://web.archive.org/web/20230103190240/https://www.adb.org/sites/default/files/institutional-document/218286/mya-energy-sector-assessment.pdf |archive-date=2023-01-03}}</ref>
+| 121<ref name="autoref_5" />
+| combined cycle<ref name="autoref_5" />
+| not found
+| 2013<ref name="autoref_1" />
+| GE Power: LM6000<ref name="autoref_6">{{cite web |url=https://openjicareport.jica.go.jp/pdf/12292462.pdf |archive-url=https://web.archive.org/web/20230329141505/https://openjicareport.jica.go.jp/pdf/12292462.pdf |archive-date=2023-03-29}}</ref>
+| no
+|-
+| 2-1
+| Shelved<ref name="autoref_7">{{cite web |url=https://www.ttcl.com/news/activities/view/125 |archive-url=https://web.archive.org/web/20220425111655/https://www.ttcl.com/news/activities/view/125 |archive-date=2022-04-25}}</ref><ref name="autoref_8">{{cite web |url=https://www.enerdata.net/publications/daily-energy-news/thailands-ttcl-signs-ppa-388-mw-lng-power-project-myanmar.html |archive-url=https://web.archive.org/web/20220928072832/https://www.enerdata.net/publications/daily-energy-news/thailands-ttcl-signs-ppa-388-mw-lng-power-project-myanmar.html |archive-date=2022-09-28}}</ref><ref name="autoref_9">{{cite web |url=https://www.ttcl.com/storage/content/about-ttcl/credit-rating/20231206-ttcl-credit-rating-en.pdf |archive-url=https://web.archive.org/web/20240510010835/https://www.ttcl.com/storage/content/about-ttcl/credit-rating/20231206-ttcl-credit-rating-en.pdf |archive-date=2024-05-10}}</ref>
+| fossil gas: LNG<ref name="autoref_8" />
+| 388<ref name="autoref_8" />
+| combined cycle<ref name="autoref_3" />
+| not found
+| –<ref name="autoref_7" />
+| not found
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1-1
+| Shikoku Electric Power Co Inc [50%]; Toyo Thai Power Myanmar Co Ltd [50%]<ref name="autoref_10">{{cite web |url=https://energy.economictimes.indiatimes.com/news/power/japans-shikoku-elec-chugoku-to-buy-stake-in-myanmar-power-plant/69357581 |archive-url=https://web.archive.org/web/20221206233627/https://energy.economictimes.indiatimes.com/news/power/japans-shikoku-elec-chugoku-to-buy-stake-in-myanmar-power-plant/69357581 |archive-date=2022-12-06}}</ref><ref name="autoref_10" />
+| Shikoku Electric Power Co Inc [64.2%]; TTCL PCL [21.5%]; The Chugoku Electric Power Co Inc [14.2%]
+|-
+| 2-1
+| Toyo Thai Power Myanmar Co Ltd [100%]<ref name="autoref_11">{{cite web |url=https://www.frontiermyanmar.net/en/lng-projects-delayed-not-dead/ |archive-url=https://web.archive.org/web/20221012013602/https://www.frontiermyanmar.net/en/lng-projects-delayed-not-dead/ |archive-date=2022-10-12}}</ref>
+| TTCL PCL [43.0%]; Shikoku Electric Power Co Inc [28.5%]; The Chugoku Electric Power Co Inc [28.5%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Financing Details==
+
+The shelved unit 2-1 has an estimated project cost of US$626 million, and is believed to have reached FID in 2013.<ref>{{Cite news|url=https://www.power-technology.com/marketdata/ahlone-power-expansion-project-myanmar/|title=Ahlone Power Expansion Project, Myanmar|last=Carmen|date=2021-12-07|work=Power Technology|access-date=2025-09-18|language=en-US}}</ref><ref>{{Cite web|url=https://ppi.worldbank.org/en/snapshots/project/ahlone-power-plant-7829|title=Private Participation in Infrastructure (PPI) - World Bank Group|website=ppi.worldbank.org|language=en|access-date=2025-09-18}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Myanmar]]

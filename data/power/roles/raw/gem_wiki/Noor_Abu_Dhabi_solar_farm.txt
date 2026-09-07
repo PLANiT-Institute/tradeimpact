@@ -1,0 +1,80 @@
+# GEM wiki page: Noor Abu Dhabi solar farm
+# URL: https://www.gem.wiki/Noor_Abu_Dhabi_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Sweihan PV IPP
+
+'''Noor Abu Dhabi solar farm''' (محطة نور أبوظبي للطاقة الشمسية) is an operating solar photovoltaic (PV) farm in Al 'Ajban, Abu Dhabi Emirate, United Arab Emirates.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Noor Abu Dhabi solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=http://www.ewec.ae/en/power-plants/noor-abu-dhabi |archive-url=https://web.archive.org/web/20240207155934/https://www.ewec.ae/en/power-plants/noor-abu-dhabi |archive-date=2024-02-07}}</ref>
+| 2019<ref name="autoref_0" />
+| 1177 MWp/dc<ref name="autoref_1">{{cite web |url=https://www.sterlingandwilsonsolar.com/businesses/project/Solar-Power-Plant-1177-MWp-Abu-Dhabi |archive-url=https://web.archive.org/web/20210622162629/https://www.sterlingandwilsonsolar.com/businesses/project/Solar-Power-Plant-1177-MWp-Abu-Dhabi |archive-date=22 June 2021}}</ref>
+| PV<ref name="autoref_2">{{cite web |url=https://www.ewec.ae/en/power-plants/noor-abu-dhabi |archive-url=https://web.archive.org/web/20240207114028/https://www.ewec.ae/en/power-plants/noor-abu-dhabi |archive-date=2024-02-07}}</ref>
+| Jinko Power Technology Co Ltd [20%]; Marubeni Corp [20%]; Abu Dhabi National Energy Company PJSC [60%] (شركة أبوظبى الوطنية للطاقة - ش م ع; 丸紅株式会社; 晶科电力科技股份有限公司)<ref name="autoref_3">{{cite web |url=https://www.ewec.ae/en/power-plants/noor-abu-dhabi, https://www.power-technology.com/projects/sweihan-photovoltaic-independent-power-project-abu-dhabi/, https://www.ewec.ae/en/power-plants/noor-abu-dhabi, https://www.power-technology.com/projects/sweihan-photovoltaic-independent-power-project-abu-dhabi/, https://www.ewec.ae/en/power-plants/noor-abu-dhabi, https://www.power-technology.com/projects/sweihan-photovoltaic-independent-power-project-abu-dhabi/}}</ref>
+| Sweihan PV Power<ref name="autoref_4">{{cite web |url=https://www.power-technology.com/projects/sweihan-photovoltaic-independent-power-project-abu-dhabi/ |archive-url=https://web.archive.org/web/20240206173204/https://www.power-technology.com/projects/sweihan-photovoltaic-independent-power-project-abu-dhabi/ |archive-date=2024-02-06}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Noor Abu Dhabi solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Al 'Ajban, Abu Dhabi Emirate, United Arab Emirates<ref name="autoref_5">{{cite web |url=https://www.google.com/maps/place/Noor+Abu+Dhabi+Solar+Plant/@24.5351819,55.4254362,3569m/data=!3m1!1e3!4m5!3m4!1s0x3e5ff554d4fd0e2b:0x656e227d0413c5f1!8m2!3d24.5351819!4d55.4320077}}</ref>
+| 24.5361, 55.4321 (exact)<ref name="autoref_5" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+24.5361, 55.4321~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in United Arab Emirates]]
+[[Category:PV solar farms]]
+
+__NOTOC__

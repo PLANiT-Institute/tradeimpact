@@ -1,0 +1,160 @@
+# GEM wiki page: LNG Nghi Son power station
+# URL: https://www.gem.wiki/LNG_Nghi_Son_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''LNG Nghi Son power station''' is a power station in Nghi Sơn, Thanh Hóa, Vietnam with multiple units of varying statuses, none of which are currently operating.
+It is also known as LNG Thanh Hoa.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| LNG Nghi Son power station
+| Nghi Sơn, Thanh Hóa, Vietnam
+| 19.437793, 105.768091 (approximate)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/dir//T%C4%A9nh+Gia+District,+Thanh+Hoa,+Vietnam/@19.4377141,105.7630767,16.37z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3137a80318ea149b:0xe857a33fb975b2f5!2m2!1d105.7745131!2d19.43838!3e0}}</ref>
+|}
+{{
+#display_map:
+19.437793, 105.768091
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Pre-construction<ref name="autoref_1">{{cite web |url=https://vir.com.vn/bidding-cancelled-a-third-time-on-lng-fired-power-plant-152228.html}}</ref><ref name="autoref_2">{{cite web |url=https://theinvestor.vn/4-bln-lng-to-power-mekong-delta-project-targets-2029-completion-d5792.html |archive-url=https://web.archive.org/web/20230718124214/https://theinvestor.vn/4-bln-lng-to-power-mekong-delta-project-targets-2029-completion-d5792.html |archive-date=2023-07-18}}</ref><ref name="autoref_3">{{cite web |url=https://drive.google.com/file/d/1JZFdET1TWcWImuaGmcTfqLMqRboSEENR/view |title=Vietnam Power Development Plan VIII, July 2022 |access-date=2022-07-01 00:00:00 |archive-url=https://web.archive.org/web/20230127142848/https://drive.google.com/file/d/1JZFdET1TWcWImuaGmcTfqLMqRboSEENR/view |archive-date=2023-01-27 |url-status=live}}</ref><ref name="autoref_4">{{cite web |url=http://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf |archive-url=https://web.archive.org/web/20220929124148/https://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf |archive-date=2022-09-29}}</ref><ref name="autoref_5">{{cite web |url=https://en.vneconomy.vn/nghi-son-lng-power-project-sees-new-developments.htm}}</ref><ref name="autoref_6">{{cite web |url=https://drive.google.com/open?id=11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw&usp=drive_fs |title=Vietnam Power Development Plan VIII, December 2022 |access-date=2022-12-01 00:00:00 |archive-url=https://web.archive.org/web/20230919154845/https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw%26usp%3Ddrive_fs&followup=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw%26usp%3Ddrive_fs&ifkv=AYZoVhcr7TPfSGs0F6xAt6YYGrwIYWEqSCLp9rL0HmP6t09y-JdKO9uqRI3yOlfY6kKg_sfboBx5&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1929632269%3A1695138525231013&theme=glif |archive-date=2023-09-19 |url-status=live}}</ref><ref name="autoref_7">{{cite web |url=https://tuoitrenews.vn/news/society/20240822/vietnam-to-select-investor-for-25-bln-nghi-son-lng-power-plant-by-october/81569.html |archive-url=https://web.archive.org/web/20250106221413/https://tuoitrenews.vn/news/society/20240822/vietnam-to-select-investor-for-25-bln-nghi-son-lng-power-plant-by-october/81569.html |archive-date=2025-01-06}}</ref><ref name="autoref_8">{{cite web |url=https://www.wfw.com/articles/vietnam-makes-major-updates-to-power-development-plan-viii/}}</ref><ref name="autoref_9">{{cite web |url=https://thuvienphapluat.vn/van-ban/Thuong-mai/Quyet-dinh-500-QD-TTg-2023-Quy-hoach-phat-trien-dien-luc-quoc-gia-2021-2030-tam-nhin-2050-566461.aspx |archive-url=https://web.archive.org/web/20230731150906/https://thuvienphapluat.vn/van-ban/Thuong-mai/Quyet-dinh-500-QD-TTg-2023-Quy-hoach-phat-trien-dien-luc-quoc-gia-2021-2030-tam-nhin-2050-566461.aspx |archive-date=2023-07-31}}</ref><ref name="autoref_10">{{cite web |url=https://vietnamnews.vn/Economy/1716448/thanh-hoa-launches-international-bidding-for-mega-project-worth-2-11-billion.html}}</ref><ref name="autoref_11">{{cite web |url=https://vir.com.vn/commitment-made-to-bring-nghi-son-lng-thermal-power-plant-into-operation-in-2030-103915.html |archive-url=https://web.archive.org/web/20230801141508/https://vir.com.vn/commitment-made-to-bring-nghi-son-lng-thermal-power-plant-into-operation-in-2030-103915.html |archive-date=2023-08-01}}</ref>
+| fossil gas: LNG<ref name="autoref_4" /><ref name="autoref_6" />
+| 750<ref name="autoref_4" /><ref name="autoref_12">{{cite web |url=https://dataenergy.com.vn/vi/news/cac-du-an-dien-khi-lng-tai-viet-nam-n36 |archive-url=https://web.archive.org/web/20240607181723/https://dataenergy.com.vn/vi/news/cac-du-an-dien-khi-lng-tai-viet-nam-n36 |archive-date=2024-06-07}}</ref><ref name="autoref_6" /><ref name="autoref_3" />
+| combined cycle<ref name="autoref_4" /><ref name="autoref_3" />
+| not found
+| 2031 (planned)<ref name="autoref_6" /><ref name="autoref_4" /><ref name="autoref_3" /><ref name="autoref_8" /><ref name="autoref_9" /><ref name="autoref_11" />
+| no
+|-
+| 2
+| Pre-construction<ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_4" /><ref name="autoref_5" /><ref name="autoref_6" /><ref name="autoref_7" /><ref name="autoref_13">{{cite web |url=https://vietnamnews.vn/economy/1651194/major-investors-vie-for-2-4-billion-lng-nghi-son-thermal-power-plant-in-thanh-hoa-province.html |title=Major investors vie for $2.4 billion LNG Nghi Sơn thermal power plant in Thanh Hóa Province |website=vietnamnews.vn |access-date=2024-06-06 |archive-url=https://web.archive.org/web/20240611181122/https://vietnamnews.vn/economy/1651194/major-investors-vie-for-2-4-billion-lng-nghi-son-thermal-power-plant-in-thanh-hoa-province.html |archive-date=2024-06-11}}</ref><ref name="autoref_8" /><ref name="autoref_9" /><ref name="autoref_10" /><ref name="autoref_11" />
+| fossil gas: LNG<ref name="autoref_4" /><ref name="autoref_6" />
+| 750<ref name="autoref_4" /><ref name="autoref_3" /><ref name="autoref_12" /><ref name="autoref_6" />
+| combined cycle<ref name="autoref_4" /><ref name="autoref_3" /><ref name="autoref_6" />
+| not found
+| 2031 (planned)<ref name="autoref_6" /><ref name="autoref_4" /><ref name="autoref_3" /><ref name="autoref_8" /><ref name="autoref_9" /><ref name="autoref_11" />
+| no
+|-
+| 3
+| Cancelled<ref name="autoref_4" /><ref name="autoref_9" />
+| fossil gas: LNG<ref name="autoref_4" />
+| 800<ref name="autoref_4" />
+| combined cycle<ref name="autoref_4" />
+| not found
+| –
+| no
+|-
+| 4
+| Cancelled<ref name="autoref_4" /><ref name="autoref_9" />
+| fossil gas: LNG<ref name="autoref_4" />
+| 800<ref name="autoref_4" />
+| combined cycle<ref name="autoref_4" />
+| not found
+| –
+| no
+|-
+| 5
+| Cancelled<ref name="autoref_4" /><ref name="autoref_9" />
+| fossil gas: LNG<ref name="autoref_4" />
+| 800<ref name="autoref_4" />
+| combined cycle<ref name="autoref_4" />
+| not found
+| –
+| no
+|-
+| 6
+| Cancelled<ref name="autoref_4" /><ref name="autoref_9" />
+| fossil gas: LNG<ref name="autoref_4" />
+| 800<ref name="autoref_4" />
+| combined cycle<ref name="autoref_4" />
+| not found
+| –
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| JERA Co Inc [100%]<ref name="autoref_11" />
+| Chubu Electric Power Co Inc [50.0%]; Tokyo Electric Power Co [50.0%]
+|-
+| 3
+| –
+|  [100.0%]
+|-
+| 4
+| –
+|  [100.0%]
+|-
+| 5
+| –
+|  [100.0%]
+|-
+| 6
+| –
+|  [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+The cost of the project has been estimated at US$2.4 billion. Although the bidding process for selecting project investors was cancelled in October 2024, Nhgi Son is one of several proposed thermal plants that are under instruction from Vietnamese Prime Minister Pham Minh Chinh for a construction start before the end of 2025.<ref>[https://vir.com.vn/bidding-cancelled-for-proposed-24-billion-nghi-son-lng-power-plant-116025.html Bidding cancelled for proposed $2.4 billion Nghi Son LNG power plant], Vietnam Investment Review, Oct. 16, 2024</ref><ref>Tri Duc, [https://theinvestor.vn/vietnam-pm-orders-construction-of-2-lng-fired-power-plants-to-begin-in-q2-d14027.html Vietnam PM orders construction of 2 LNG-fired power plants to begin in Q2], The Investor, Jan. 3, 2025</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Vietnam]]

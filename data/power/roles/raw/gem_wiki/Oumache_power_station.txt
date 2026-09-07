@@ -1,0 +1,165 @@
+# GEM wiki page: Oumache power station
+# URL: https://www.gem.wiki/Oumache_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Oumache power station''' (محطة كهرباء أوماش) is an operating power station of at least 1456-megawatts (MW) in Oumache, Biskra, Algeria with multiple units, some of which are not currently operating.
+It is also known as Biskra Combined-Cycle Power Plant, Centrale Oumache I, Centrale Turbine a Gaz de Biskra.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Oumache power station
+| Oumache, Biskra, Biskra, Algeria
+| 34.441042, 5.889285 (exact)<ref name="autoref_0">{{cite web |url=https://www.africa-energy.com/database/oumache-gas-ii |archive-url=https://web.archive.org/web/20210623172025/https://www.africa-energy.com/database/oumache-gas-ii |archive-date=2021-06-23}}</ref><ref name="autoref_1">{{cite web |url=https://www.google.com/maps/place/Centrale+Turbine+a+Gaz+de+Biskra/@34.4410464,5.8870963,922m/data=!3m1!1e3!4m5!3m4!1s0x12f586116c4104d7:0x2aeb5ab2c0a90fed!8m2!3d34.4410526!4d5.8839718}}</ref>
+|}
+{{
+#display_map:
+34.441042, 5.889285
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1-1, 1-2, 2-1, 2-2, 3-1 "أوماش 03"''': 34.441042, 5.889285
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1-1
+| Operating<ref name="autoref_2">{{cite web |url=https://www.spe.dz/index.php/fr/partenaires/plan-developpement |archive-url=https://web.archive.org/web/20211024210458/https://www.spe.dz/index.php/fr/partenaires/plan-developpement |archive-date=2021-10-24}}</ref><ref name="autoref_3">{{cite web |url=http://wilayabiskra.dz/?p=4894 |archive-url=https://web.archive.org/web/20230207142746/http://wilayabiskra.dz/?p=4894 |archive-date=2023-02-07}}</ref>
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_4">{{cite web |url=https://www.annasronline.com/index.php/2014-08-25-12-15-24/2015-09-23-21-25-42/189059-458-2 |archive-url=https://web.archive.org/web/20220709121212/https://www.annasronline.com/index.php/2014-08-25-12-15-24/2015-09-23-21-25-42/189059-458-2 |archive-date=2022-07-09}}</ref><ref name="autoref_5">{{cite web |url=https://www.power-technology.com/projects/biskra-combined-cycle-power-plant/ |archive-url=https://web.archive.org/web/20220706050011/https://www.power-technology.com/projects/biskra-combined-cycle-power-plant/ |archive-date=2022-07-06}}</ref><ref name="autoref_6">{{cite web |url=https://auptde.org/file-download/download/public/88 |title=Manual Of Power Stations |website=Arab Union of Electricity |access-date=July 23, 2021 |archive-url=https://web.archive.org/web/20220120153235/https://auptde.org/file-download/download/public/88 |archive-date=2022-01-20 |url-status=live}}</ref>
+| 500<ref name="autoref_7">{{cite web |url=https://www.spe.dz/index.php/fr/plan-developpement |archive-url=https://web.archive.org/web/20220121233950/https://www.spe.dz/index.php/fr/plan-developpement |archive-date=2022-01-21}}</ref>
+| combined cycle<ref name="autoref_5" />
+| yes<ref name="autoref_8">{{cite web |url=https://www.globaldata.com/store/report/spe-oumache-combined-cycle-gas-fired-power-plant-1328-mw-algeria/}}</ref>
+| 2021<ref name="autoref_4" /><ref name="autoref_9">{{cite web |url=https://www.facebook.com/watch/?v=428403428790588}}</ref><ref name="autoref_2" />
+| GE Vernova: 9F<ref name="autoref_10">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-biskra-combined-cycle-power-plant-algeria/}}</ref>
+| no
+|-
+| 1-2
+| Operating<ref name="autoref_2" /><ref name="autoref_3" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_4" /><ref name="autoref_5" /><ref name="autoref_6" />
+| 500<ref name="autoref_7" />
+| combined cycle<ref name="autoref_5" />
+| yes<ref name="autoref_8" />
+| 2022<ref name="autoref_2" />
+| GE Vernova: 9F<ref name="autoref_11">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-biskra-simple-cycle-power-plant-algeria/}}</ref>
+| no
+|-
+| 2-1
+| Operating<ref name="autoref_12">{{cite web |url=https://www.spe.dz/index.php/fr/organisation |archive-url=https://web.archive.org/web/20220122000755/https://www.spe.dz/index.php/fr/organisation |archive-date=2022-01-22}}</ref><ref name="autoref_0" /><ref name="autoref_3" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_13">{{cite web |url=http://wilayabiskra.dz/?p=4890 |archive-url=https://web.archive.org/web/20220926214617/http://wilayabiskra.dz/?p=4890 |archive-date=2022-09-26}}</ref><ref name="autoref_0" /><ref name="autoref_6" />
+| 228<ref name="autoref_2" />
+| gas turbine<ref name="autoref_14">{{cite web |url=https://www.spe.dz/images/PDF/parc-spe-actu.pdf |archive-url=https://web.archive.org/web/20220818144411/https://www.spe.dz/images/PDF/parc-spe-actu.pdf |archive-date=2022-08-18}}</ref>
+| not found
+| 2016<ref name="autoref_15">{{cite web |url=https://www.spe.dz/index.php/fr/rapports-annuels |archive-url=https://web.archive.org/web/20220121235132/https://www.spe.dz/index.php/fr/rapports-annuels |archive-date=2022-01-21}}</ref>
+| Siemens Energy: SGT5-4000F<ref name="autoref_11" />
+| no
+|-
+| 2-2
+| Operating<ref name="autoref_12" /><ref name="autoref_0" /><ref name="autoref_3" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_0" /><ref name="autoref_6" />
+| 228<ref name="autoref_2" />
+| gas turbine<ref name="autoref_14" />
+| not found
+| 2017<ref name="autoref_7" />
+| Siemens Energy: SGT5-4000F<ref name="autoref_11" />
+| no
+|-
+| 3-1 "أوماش 03"
+| Construction<ref name="autoref_16">{{cite web |url=https://www.afrigatenews.net/article/%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1-%D8%A7%D9%84%D8%AA%D8%B3%D8%B1%D9%8A%D8%B9-%D9%81%D9%8A-%D8%A5%D9%86%D8%AC%D8%A7%D8%B2-%D9%85%D8%AD%D8%B7%D8%A7%D8%AA-%D8%AA%D9%88%D9%84%D9%8A%D8%AF-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9/http://wilayabiskra.dz/?p=4890}}</ref><ref name="autoref_17">{{cite web |url=https://www.bncnetwork.net/project/Umashe-3-Combined-Cycle-Power-Plant/MTg0NzY2/}}</ref><ref name="autoref_18">{{cite web |url=http://wilayabiskra.dz/?p=7649}}</ref><ref name="autoref_19">{{cite web |url=http://www.businesskorea.co.kr/news/articleView.html?idxno=40206 |archive-url=https://web.archive.org/web/20210727213907/http://www.businesskorea.co.kr/news/articleView.html?idxno=40206 |archive-date=2021-07-27}}</ref>
+| fossil gas: natural gas<ref name="autoref_20">{{cite web |url=http://www.ech-chaab.com/ar/%D8%A7%D9%84%D8%AD%D8%AF%D8%AB/%D8%A7%D9%84%D9%85%D8%AD%D9%84%D9%8A/item/168692-%D9%85%D8%AD%D8%B7%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A8%D8%A3%D9%88%D9%85%D8%A7%D8%B4-%D8%A8%D8%A8%D8%B3%D9%83%D8%B1%D8%A9.html |archive-url=https://web.archive.org/web/20220709091015/http://www.ech-chaab.com/ar/%D8%A7%D9%84%D8%AD%D8%AF%D8%AB/%D8%A7%D9%84%D9%85%D8%AD%D9%84%D9%8A/item/168692-%D9%85%D8%AD%D8%B7%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%84%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A8%D8%A3%D9%88%D9%85%D8%A7%D8%B4-%D8%A8%D8%A8%D8%B3%D9%83%D8%B1%D8%A9.html |archive-date=2022-07-09}}</ref><ref name="autoref_21">{{cite web |url=https://www.africa-energy.com/database/oumache-gas-iii |archive-url=https://web.archive.org/web/20210727220353/https://www.africa-energy.com/database/oumache-gas-iii |archive-date=2021-07-27}}</ref>
+| 1294<ref name="autoref_22">{{cite web |url=https://www.google.com/search?q=%D9%85%D8%AD%D8%B7%D8%A9+%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1+%D8%A3%D9%88%D9%85%D8%A7%D8%B4&sca_esv=895494ce73fddbb7&sxsrf=AHTn8zqL3d8ktoNTPrtaxbSr40ddhSvc1Q%3A1741994766980&ei=DrvUZ8HIO4vn5NoPtsGggAE&ved=0ahUKEwjBh6Wa3IqMAxWLM1kFHbYgCBAQ4dUDCBA&uact=5&oq=%D9%85%D8%AD%D8%B7%D8%A9+%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1+%D8%A3%D9%88%D9%85%D8%A7%D8%B4&gs_lp=Egxnd3Mtd2l6LXNlcnAiINmF2K3Yt9ipINmD2YfYsdio2KfYoSDYo9mI2YXYp9i0MgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigAUjOC1CNCViNCXADeAGQAQCYAVygAVyqAQExuAEDyAEA-AEC-AEBmAIEoAJwwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAhkQLhiABBiwAxjRAxhDGMcBGMgDGIoF2AEBmAMAiAYBkAYNugYECAEYCJIHATSgB9MD&sclient=gws-wiz-serp}}</ref><ref name="autoref_19" />
+| combined cycle<ref name="autoref_19" />
+| not found
+| –<ref name="autoref_23">{{cite web |url=https://www.alseyassi-dz.com/ara/sejut.php?ID=137471 |title=هذا موعد استلام محطة توليد الكهرباء( أوماش 3) |website=www.alseyassi-dz.com |access-date=2024-09-04 |archive-url=https://web.archive.org/web/20240912183629/https://www.alseyassi-dz.com/ara/sejut.php?ID=137471 |archive-date=2024-09-12}}</ref><ref name="autoref_13" /><ref name="autoref_9" /><ref name="autoref_19" />
+| GE Power: 9FA<ref name="autoref_10" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1-1
+| Société Algérienne de Production de l'Electricité SpA [100%]<ref name="autoref_14" />
+| Sonelgaz SpA [100.0%]
+|-
+| 1-2
+| Société Algérienne de Production de l'Electricité SpA [100%]<ref name="autoref_14" />
+| Sonelgaz SpA [100.0%]
+|-
+| 2-1
+| Société Algérienne de Production de l'Electricité SpA [100%]<ref name="autoref_14" />
+| Sonelgaz SpA [100.0%]
+|-
+| 2-2
+| Société Algérienne de Production de l'Electricité SpA [100%]<ref name="autoref_14" />
+| Sonelgaz SpA [100.0%]
+|-
+| 3-1 "أوماش 03"
+| Hyunson Engineering & Construction SpA [100%]<ref name="autoref_19" />
+| Sonelgaz SpA [51.0%]; Hyundai Engineering & Construction Co Ltd [36.6%]; small shareholder(s) [7.3%]; Hyundai Engineering Co Ltd [1.4%]; Hyundai Glovis Co Ltd [1.4%]; Hyundai Mobis Co Ltd [1.1%]; Kia Corp [1.1%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_24">{{cite web |url=https://www.annasronline.com/index.php/2014-08-25-12-15-24/2015-09-23-21-25-42/42748-2016-04-18-22-03-59 |archive-url=https://web.archive.org/web/20220709093458/https://www.annasronline.com/index.php/2014-08-25-12-15-24/2015-09-23-21-25-42/42748-2016-04-18-22-03-59 |archive-date=2022-07-09}}</ref><ref name="autoref_20" />
+* '''Captive industry''': Other<ref name="autoref_24" /><ref name="autoref_20" />
+* '''Non-industry use''': power<ref name="autoref_24" /><ref name="autoref_20" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Algeria]]
+
+__NOTOC__

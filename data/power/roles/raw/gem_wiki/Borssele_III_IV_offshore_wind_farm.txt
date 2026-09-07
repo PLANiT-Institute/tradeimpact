@@ -1,0 +1,93 @@
+# GEM wiki page: Borssele III & IV offshore wind farm
+# URL: https://www.gem.wiki/Borssele_III_&_IV_offshore_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' Borssele Wind Zone
+
+'''Borssele III & IV offshore wind farm''' is an operating wind farm in Zeeland, Netherlands.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Borssele III & IV offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://www.offshore-mag.com/renewable-energy/article/14197954/borssele-iii-iv-wind-farm-offshore-the-netherlands-reaches-full-capacity |archive-url=https://web.archive.org/web/20240126141821/https://www.offshore-mag.com/renewable-energy/article/14197954/borssele-iii-iv-wind-farm-offshore-the-netherlands-reaches-full-capacity |archive-date=2024-01-26}}</ref>
+| 2021<ref name="autoref_0" />
+| 360 MW<ref name="autoref_1">{{cite web |url=https://www.enerdata.net/publications/daily-energy-news/shell-divests-stake-borssele-3-4-wind-projects-netherlands.html |archive-url=https://web.archive.org/web/20240126023929/https://www.enerdata.net/publications/daily-energy-news/shell-divests-stake-borssele-3-4-wind-projects-netherlands.html |archive-date=2024-01-26}}</ref>
+| Offshore hard mount<ref name="autoref_2">{{cite web |url=https://www.blauwwind.nl/en/about/about-blauwwind, https://www.offshore-mag.com/renewable-energy/article/14181255/borssele-iii-iv-wind-farm-produces-first-power-offshore-the-netherlands}}</ref>
+| Royal Van Oord [10%]; Eneco NV [10%]; Luxcara GmbH; Shell PLC [20%]; Nuveen Infrastructure [15%]; INPEX Corp; Octopus Energy [10%]; Diamond Generating Corp [15%] (株式会社INPEX)<ref name="autoref_3">{{cite web |url=https://renews.biz/80483/partners-group-to-sell-a-20-stake-in-borssele-three-and-four/, https://www.shell.com/energy-and-innovation/new-energies/wind/offshore-windfarm-borssele-iii-iv-now-fully-operational.html, https://www.rvo.nl/sites/default/files/2023-11/KiCdPayqFKa36nM1EBHlRdiJwgIneUZgPPy3N0_Q6KI.pdf, https://renews.biz/80483/partners-group-to-sell-a-20-stake-in-borssele-three-and-four/, https://www.shell.com/energy-and-innovation/new-energies/wind/offshore-windfarm-borssele-iii-iv-now-fully-operational.html, https://renews.biz/86877/nuveen-bags-15-stake-in-borssele-3-4/, https://renews.biz/80483/partners-group-to-sell-a-20-stake-in-borssele-three-and-four/, https://www.shell.com/energy-and-innovation/new-energies/wind/offshore-windfarm-borssele-iii-iv-now-fully-operational.html, https://renews.biz/80483/partners-group-to-sell-a-20-stake-in-borssele-three-and-four/, https://www.shell.com/energy-and-innovation/new-energies/wind/offshore-windfarm-borssele-iii-iv-now-fully-operational.html, https://renews.biz/88262/octopus-takes-stake-in-borssele-34/, https://www.rvo.nl/sites/default/files/2023-11/KiCdPayqFKa36nM1EBHlRdiJwgIneUZgPPy3N0_Q6KI.pdf}}</ref>
+| Blauwwind Consortium<ref name="autoref_4">{{cite web |url=https://www.shell.com/energy-and-innovation/new-energies/wind/offshore-windfarm-borssele-iii-iv-now-fully-operational.html |archive-url=https://web.archive.org/web/20240126141937/https://www.shell.com/energy-and-innovation/new-energies/wind/offshore-windfarm-borssele-iii-iv-now-fully-operational.html |archive-date=2024-01-26}}</ref>
+|-
+| 2
+| Operating<ref name="autoref_4" />
+| 2021<ref name="autoref_4" />
+| 380 MW<ref name="autoref_1" />
+| Offshore hard mount<ref name="autoref_5">{{cite web |url=https://www.blauwwind.nl/en/about/about-blauwwind |archive-url=https://web.archive.org/web/20240404104427/https://www.blauwwind.nl/en/about/about-blauwwind |archive-date=2024-04-04}}</ref>
+| Royal Van Oord [10%]; Eneco NV [10%]; Luxcara GmbH; Shell PLC [20%]; Nuveen Infrastructure [15%]; INPEX Corp; Octopus Energy [10%]; Diamond Generating Corp [15%] (株式会社INPEX)<ref name="autoref_3" />
+| Blauwwind Consortium<ref name="autoref_4" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Borssele III & IV offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Zeeland, Netherlands<ref name="autoref_6">{{cite web |url=https://www.offshorewind.biz/2021/02/18/borssele-3-and-4-fully-up-and-running/ |archive-url=https://web.archive.org/web/20240131224639/https://www.offshorewind.biz/2021/02/18/borssele-3-and-4-fully-up-and-running/ |archive-date=2024-01-31}}</ref>
+| 52.6878, 4.2486 (approximate)<ref name="autoref_6" />
+|-
+| 2
+| Zeeland, Netherlands<ref name="autoref_6" />
+| 52.6878, 4.2486 (approximate)<ref name="autoref_6" />
+|}
+The map below shows the approximate locations of the wind farm phases:
+{{
+#display_map:
+52.6878, 4.2486~ ~ ~ ~ ~Phases 1, 2
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Netherlands]]
+
+__NOTOC__

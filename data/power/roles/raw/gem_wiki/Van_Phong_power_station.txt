@@ -1,0 +1,192 @@
+# GEM wiki page: Van Phong power station
+# URL: https://www.gem.wiki/Van_Phong_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Van Phong power station''' is an operating power station of at least 1432-megawatts (MW) in Nihh Hoa, Khánh Hòa, Vietnam with multiple units, some of which are not currently operating.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Van Phong power station
+| Nihh Hoa, Khánh Hòa, Vietnam
+| 12.47704, 109.29244 (exact)
+|}
+{{
+#display_map:
+12.47704, 109.29244
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Phase 1 Unit 1, Phase 1 Unit 2, Phase 2 Unit 1, Phase 2 Unit 2''': 12.47704, 109.29244
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Phase 1 Unit 1
+| Operating<ref name="autoref_0">{{cite web |url=https://baoxaydung.com.vn/hoi-dong-chap-thuan-ket-qua-nghiem-thu-hoan-thanh-du-an-nha-may-nhiet-dien-van-phong-1-367510.html |title=Hội đồng chấp thuận kết quả nghiệm thu hoàn thành dự án Nhà máy Nhiệt điện Vân Phong 1 |date=2023-12-30 |website=Báo Xây dựng |access-date=2024-01-25 |archive-url=https://web.archive.org/web/20240219010844/https://baoxaydung.com.vn/hoi-dong-chap-thuan-ket-qua-nghiem-thu-hoan-thanh-du-an-nha-may-nhiet-dien-van-phong-1-367510.html |archive-date=2024-02-19}}</ref>
+| coal: bituminous<ref name="autoref_0" /><ref name="autoref_1">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 716
+| supercritical
+| 2023<ref name="autoref_0" />
+| False
+|-
+| Phase 1 Unit 2
+| Operating<ref name="autoref_2">{{cite web |url=https://e.vnexpress.net/news/news/2-5b-thermal-power-plant-goes-online-in-central-vietnam-4722421.html}}</ref>
+| coal: bituminous<ref name="autoref_0" /><ref name="autoref_1" />
+| 716
+| supercritical
+| 2024<ref name="autoref_2" />
+| False
+|-
+| Phase 2 Unit 1
+| Cancelled
+| coal: unknown<ref name="autoref_1" />
+| 660
+| unknown
+| –
+| False
+|-
+| Phase 2 Unit 2
+| Cancelled
+| coal: unknown<ref name="autoref_1" />
+| 660
+| unknown
+| –
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Phase 1 Unit 1
+| Van Phong Power Co Ltd [100%]<ref name="autoref_3">{{cite web |url=https://www.jbic.go.jp/en/information/press/press-2019/0419-012106.html |title=Project Finance for Van Phong 1 Coal-Fired Power Generation Project in the Republic of Vietnam | JBIC Japan Bank for International Cooperation |date=2019-04-19 |website=www.jbic.go.jp |access-date=2024-01-29 |archive-url=https://web.archive.org/web/20240219014150/https://www.jbic.go.jp/en/information/press/press-2019/0419-012106.html |archive-date=2024-02-19}}</ref>
+| Sumitomo Corp [50.0%]; Aboitiz Power Corp [25.0%]; Electricity Generating Authority of Thailand [25.0%]
+|-
+| Phase 1 Unit 2
+| Van Phong Power Co Ltd [100%]<ref name="autoref_3" />
+| Sumitomo Corp [50.0%]; Aboitiz Power Corp [25.0%]; Electricity Generating Authority of Thailand [25.0%]
+|-
+| Phase 2 Unit 1
+| Keangnam Enterprises Ltd [50%]; Hanoi Industrial Construction and Investment [50%]
+| Hanoi Industrial Construction and Investment [50.0%]; Samra Co Ltd [50.0%]
+|-
+| Phase 2 Unit 2
+| Keangnam Enterprises Ltd [50%]; Hanoi Industrial Construction and Investment [50%]
+| Hanoi Industrial Construction and Investment [50.0%]; Samra Co Ltd [50.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+In January 2011, the Van Phong Economic Zone Management Authority approved a plan by the [[Sumitomo Corporation]] to build the two-unit, $2 billion, 1,320-MW, coal-fired Vân Phong-1, as part of a port-industrial complex being planned in Vân Phong Bay.<ref>[http://www.vir.com.vn/news/en/coverage/green-light-for-van-phong-projects.html Green Light for Van Phong Projects], ''Vietnam Investment Review'', Jan. 16, 2011.</ref> In November 2012, with only site clearing completed, the Vietnamese government urged Sumitomo to line up investors by June 2013 or risk having the project ceded to other investors.<ref>[http://www.vinacomin.vn/en/news/Home-News/Power-investors-set-to-enter-last-chance-saloon-386.html Power Investors Set to Enter Last Chance Saloon], Vinacomin website, Nov. 26, 2012.</ref> 
+
+In August 2013, Sumitomo contracted Finnish company [[Pöyry]] to build the plant.<ref>[http://www.poyry.com/news-events/news/poyry-awarded-owners-engineer-services-assignment-van-phong-1-coal-fired-power Pöyry Awarded Owner's Engineer Services Assignment for Van Phong 1 Coal-Fired Power Plant Project in Vietnam], Pöyry press release, Aug. 1, 2013.</ref> As of November 2013, however, Sumitomo was still having trouble with negotiations with the Vietnamese government; the current plan is for construction to begin in April 2015, and for the plant to go online in 2019.<ref>[http://www.vir.com.vn/news/en/corporate/sumitomo-red-tape-tangle-delays-power-plant-project.html Sumitomo Red Tape Tangle Delays Power Plant Project], ''Vietnam Investment Review'', Nov. 25, 2013.</ref> However, this timeline involved Sumitomo signing a BOT contract in early 2014, and getting the final license in July 2014; as of November 2014, though, the BOT contract had not yet been finalized.<ref>[http://vietnamnews.vn/economy/262956/red-tape-thwarts-energy-investors.html Red tape thwarts energy investors], Viet Nam News, 19 Nov. 2014.</ref>
+
+As of April 2016, Sumitomo was having trouble with compensation, and some families were still living on the project's site.<ref>[http://www.baokhanhhoa.com.vn/kinh-te/201604/du-an-nha-may-nhiet-dien-van-phong-1-chua-the-khoi-cong-2430128/ Dự án Nhà máy Nhiệt điện Vân Phong 1: Chưa thể khởi công], Bao Khanh Hoa, 4 Apr. 2016.</ref> In July 2016, Sumitomo negotiated the location of a transmission line with provincial officials.<ref>[http://www.khpc.com.vn/Chitiettin/tabid/65/id/324/Du-an-nha-may-nhiet-dien-BOT-Van-Phong-1/Default.aspx Dự án nhà máy nhiệt điện BOT Vân Phong 1], EVN Khanh Hoa press release, 5 July 2016.</ref> In August 2016, the provincial premier met with the Ministry of Industry & Trade to push for the acceleration of the project. At the time, the schedule called for construction by the end of 2017, and completion in 2021.<ref>[http://vanphong.khanhhoa.gov.vn/article/tin-van/khoi-sac-o-nam-van-phong.html Khởi sắc ở Nam Vân Phong], Van Phong Economic Zone website, 2 Nov. 2016.</ref>
+
+In a March 2017 meeting with provincial officials, Sumitomo said its schedule was to apply for investment certificates by the end of June, and to begin construction by the end of the year.<ref>[http://baocongthuong.com.vn/nhiet-dien-van-phong-1-se-khoi-cong-cuoi-nam-2017.html Nhiệt điện Vân Phong 1 sẽ khởi công cuối năm 2017], Cong Thuong, 2 Mar. 2017.</ref>
+
+In May 2017, Sumitomo signed and investment agreement with the Ministry of Industry and Trade, and December 2017 the company received an investment certificate to development the plant. Work will start in 2018.<ref>[http://english.vietnamnet.vn/fms/business/191494/japanese-firm-gets-nod-to-build-us-2-58-billion-thermal-power-plant.html "Japanese firm gets nod to build US$2.58-billion thermal power plant,"] Vietnam.net, 4 December 2017</ref>
+
+In March 2018, the environmental impact assessment was approved.<ref name=mfmar>[https://www.marketforces.org.au/research/vietnam/van-phong-1/ "Van Phong 1 (1320 MW),"] Market Forces, updated March 24, 2018</ref>
+
+In June 2019 the completion date for Unit 1 was delayed to 2023 and the completion date for Unit 2 was delayed to 2024 in the Ministry Of Industry And Trade's report on the implementation of the revised seventh Power Development Plan (PDP7).<ref>[http://vepg.vn/wp-content/uploads/2019/06/MOIT_Report_58_BC_BCT.pdf Implementation of Power Projects iIn the Revised Power Development Plan 7], Ministry of Industry and Trade, Republic of Vietnam, Jun. 4, 2019</ref>
+
+In August 2019 Sumitomo announced that construction of Vân Phong-1 had begun.<ref>[https://www.sumitomocorp.com/en/jp/news/release/2019/group/12310 Construction Commences on Van Phong 1 Coal-fired Power Project in Vietnam], Sumitomo Corporation, Aug. 26, 2019</ref> However satellite photography from [https://www.planet.com/stories/van-phong-1-power-station-az2Ew2yWR Planet] shows only ground-clearing occurring between July 2019 and December 2019, not actual construction. As of December 2019 GreenID continued to list the plant as Permitted.<ref>Communication with GreenID, December 2019</ref> In February 2020 the National Steering Committee on power development stated that Unit 1 was scheduled to be commissioned in November 2023 and Unit 2 in March 2024.<ref name=vl>[http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/tinh-hinh-thuc-hien-cac-du-an-dien-theo-hinh-thuc-bot-o-viet-nam.html Tình hình thực hiện các dự án điện theo hình thức BOT ở Việt Nam], Feb. 14, 2020</ref> In May 2020 it was reported that engineering plans and the procurement of supplies and materials from China are being delayed because of Covid-19-related travel restrictions and logistical problems.<ref name=bdt>[https://baodauthau.vn/dau-tu/covid19-tac-dong-toi-tien-do-nhieu-du-an-dien-128323.html Covid-19 tác động tới tiến độ nhiều dự án điện], Bao Dau Thau, May 6, 2020</ref>
+
+In April 2021, construction began on the steel structure for Van Phong-1 Unit 1's coal-fired boiler. Lilama 18 Joint Stock Company is the contractor in charge of installing 2 boilers, each with capacity of 660 MW, and each with a contract value of USD 28.6 million.<ref>[https://congthuong.vn/khoi-cong-lap-dat-ket-cau-thep-lo-hoi-so-1-du-an-nhiet-dien-van-phong-1-155723.html Commencement of installation of steel structure for boiler No. 1 of Van Phong 1 điện thermal power project], Báo Công Thương, Apr. 20, 2021</ref>
+
+According to PDP7, phase I of the project is scheduled for completion in 2022 and 2023. Phase II of the project is cancelled.<ref name=PDP>DANH MỤC CÁC DỰ ÁN NGUỒN ĐIỆN VÀO VẬN HÀNH GIAI ĐOẠN 2016 - 2030, Ban hành kèm theo Quyết định số 428/QĐ-TTg ngày 18 tháng 3 năm 2016 của Thủ tướng Chính phủ (''LIST OF POWER PROJECT IN OPERATION PERIOD 2016 - 2030, Issued together with Decision No. 428 / QD - TTg of March 18, 2016 by the Prime Minister'')</ref>
+
+On July 4, 2022, the Ministry of Industry and Trade appeared to provide an update on the draft PDP. The document’s list of major power projects planned for 2021-2030 (PDF pages 18-20) includes the project with target completion dates of 2023 and 2024 for units 1 and 2 respectively. Construction was reportedly 70.52% complete.<ref>[https://ia601508.us.archive.org/4/items/pdp-8-jul-22/PDP8%20-%20jul%2022.pdf “Draft National Power Development Plan VIII,”] MOIT, July 4, 2022</ref>
+
+In October 2022, the project's related substation and transmission lines were reportedly nearing completion. According to scheduling approved by the project's investors, these elements must be finished by December 26, 2022.<ref>[https://www.evn.com.vn/d6/news/Cum-cong-trinh-giai-toa-cong-suat-Nha-may-Nhiet-dien-BOT-Van-Phong-1-Nuoc-rut-ve-dich-6-13-31328.aspx “Cụm công trình giải tỏa công suất Nhà máy Nhiệt điện BOT Vân Phong 1: ‘Nước rút’ về đích,”] EVN, October 3, 2022</ref>
+
+In December 2022, the project was reportedly 87% complete. Commercial operation for Units 1 and 2 was expected in August 2023 and December 2023 respectively.<ref>[https://tuoitre.vn/thang-8-2023-nha-may-nhiet-dien-bot-van-phong-1-chinh-thuc-phat-dien-thuong-mai-20221218094256842.htm “Tháng 8-2023, Nhà máy nhiệt điện BOT Vân Phong 1 chính thức phát điện thương mại,”] TuoiTre, December 18, 2022</ref>
+
+In May 2023, Vietnam officially approved the updated power development plan (PDP8). Under this plan, the country will domestically generate 20% of its electricity needs with coal by 2030 and fully phase out coal-fired power stations by 2050. The plan involved increasing energy generation using coal to a peak of 30 GW and replacing all other outstanding coal projects with LNG or renewables. PDP8 listed Van Phong I among the projects under construction, with an updated capacity of 1,432 MW.<ref>[https://media.licdn.com/dms/document/D561FAQGybqltmh4EvA/feedshare-document-pdf-analyzed/0/1684231974788?e=1684972800&v=beta&t=PweOeGMVDy7VIQ2LFiSwUZPv9fwqhx2v7mtSCqnSChg Approving the national electricity development plan for the period of 2021-2030, with a vision to 2050], Prime Minister of Vietnam, May 16, 2023</ref> 
+
+In September 2023, construction of Unit 1 was completed. Final inspection work was underway to prepare for commercial operation.<ref>[https://www.erav.vn/tin-tuc/t2672/du-an-nha-may-nhiet-dien-bot-van-phong-1-chap-thuan-ket-qua-nghiem-thu-hoan-thanh-cua-chu-dau-tu-doi-voi-to-may-so-1-va-cac-hang-muc-dung-chung.html “Dự án Nhà máy nhiệt điện BOT Vân Phong 1: Chấp thuận kết quả nghiệm thu hoàn thành của Chủ đầu tư đối với Tổ máy số 1 và các hạng mục dùng chung,”] Cục Điều tiết điện lực, September 17, 2023</ref>
+
+===Operation begins===
+In October 2023, Unit 1 was approved for commercial operation. In December 2023, Unit 2 was approved for commercial operation. Unit 1 was officially inaugurated in December 2023.<ref>[https://baoxaydung.com.vn/hoi-dong-chap-thuan-ket-qua-nghiem-thu-hoan-thanh-du-an-nha-may-nhiet-dien-van-phong-1-367510.html "Hội đồng chấp thuận kết quả nghiệm thu hoàn thành dự án Nhà máy Nhiệt điện Vân Phong 1,"] Báo điện tử Xây dựng, December 30, 2023</ref> Unit 2 was officially inaugurated in March 2024.<ref>[https://e.vnexpress.net/news/news/2-5b-thermal-power-plant-goes-online-in-central-vietnam-4722421.html "$2.5B thermal power plant goes online in central Vietnam,"] VnExpress, March 14, 2024</ref>
+
+In August 2024, a contract was signed for major repairs to Unit 1 of Van Phong power station.<ref>[http://pvps.vn/du-an/10798/pvps-ky-ket-hop-dong-cung-cap-dich-vu-sua-chua-lon---cap-do-b-cho-to-may-so-1-nam-2024-nha-may-nhiet-dien-bot-van-phong-1-cong-suat-tinh-1320-mw.html "PVPS ký kết Hợp đồng cung cấp dịch vụ sửa chữa lớn - cấp độ B cho Tổ máy số 1 năm 2024 Nhà máy nhiệt điện BOT Vân Phong 1 công suất tinh 1.320 MW,"] PetroVietnam Power Services, August 12, 2024</ref> In October 2024, construction began. In November 2024, the repairs were completed.<ref>[https://petrovietnam.petrotimes.vn/pv-power-services-hoan-thanh-sua-chua-nha-may-nhiet-dien-bot-van-phong-1-trong-26-ngay-721359.html PV Power Services hoàn thành sửa chữa Nhà máy Nhiệt điện BOT Vân Phong 1 trong 26 ngày], PetroTimes, November 30, 2024</ref>
+
+In May 2025, Sumitomo announced intention to transfer a 50% stake in Van Phong Power Company to an undisclosed entity.<ref>[https://doanhnhan.baophapluat.vn/sumitomo-chuyen-nhuong-50-co-phan-tai-du-an-nhiet-dien-van-phong-1-82768.html Sumitomo chuyển nhượng 50% cổ phần tại dự án Nhiệt điện Vân Phong 1], Báo Mới, May 6, 2025</ref>
+
+As of July 2025, Vân Phong-1 was reportedly not operating at full capacity.<ref>[https://tapchicongthuong.vn/thu-truong-nguyen-hoang-long-tham-va-lam-viec-voi-nha-may-nhiet-dien-bot-van-phong-1-150424.htm Thứ trưởng Nguyễn Hoàng Long thăm và làm việc với Nhà máy nhiệt điện BOT Vân Phong 1], Tạp chí Công Thương, July 23, 2025</ref>
+
+In September 2025, Vietnam’s Ministry of Finance proposed exempting the foreign owners of seven coal power plants from the requirement to pay a 15% global minimum corporate tax rate set by the OECD. The list of coal plants, which were developed under “build-operate-transfer” (BOT) contracts, included [https://www.gem.wiki/Mong_Duong_power_station Mông Dương-2], [https://www.gem.wiki/Vinh_Tan_power_station Vĩnh Tân-1], [https://www.gem.wiki/Nghi_Son_coal_power_station Nghi Sơn-2], Vân Phong-1, [https://www.gem.wiki/Vung_Ang_power_station Vũng Áng-2], [[Hai Duong Thermal Power Plant]], and [https://www.gem.wiki/Duyen_Hai_Power_Generation_Complex Duyên Hải-2].<ref>[https://vneconomy.vn/de-xuat-mien-tru-thue-toi-thieu-toan-cau-cho-du-an-bot-dien-co-bao-lanh-chinh-phu.htm “Đề xuất miễn trừ thuế tối thiểu toàn cầu cho dự án BOT điện có bảo lãnh Chính phủ,”] VnEconomy, September 11, 2025</ref> The Ministry argued that imposing the 15% minimum tax could trigger compensation obligations that “would expose the Vietnamese government to the risk of having to pay compensation that exceeds the tax revenues.”<ref>[https://www.reuters.com/sustainability/boards-policy-regulation/vietnam-exempt-mitsubishi-kepco-other-coal-power-plant-operators-global-tax-2025-09-12/ “Vietnam to exempt Mitsubishi, Kepco, other coal power plant operators from global tax, document shows,”] Reuters, September 11, 2025</ref>
+
+In October 2025, Aboitiz Power agreed to buy a 25% stake in Van Phong Power from Sumitomo for about US$220 million, subject to regulatory approval.<ref>[https://business.inquirer.net/555428/aboitiz-power-buying-25-stake-in-vietnam-coal-plant “Aboitiz Power buying 25% stake in Vietnam coal plant for $220M,”] Philippine Daily Inquirer, October 30, 2025</ref>
+
+In January 2026, Vân Phong power station Unit 2 reportedly experienced a transformer malfunction.<ref>[https://www.evn.com.vn/d/vi-VN/news/Nha-may-Nhiet-dien-BOT-Van-Phong-1-duoc-cac-don-vi-truyen-tai-trong-EVN-ho-tro-khac-phuc-su-co-kip-thoi--60-12-506363 Nhà máy Nhiệt điện BOT Vân Phong 1 được các đơn vị truyền tải trong EVN hỗ trợ khắc phục sự cố kịp thời], Tập đoàn Điện lực Việt Nam (EVN), January 7, 2026</ref>
+
+===Financing===
+In August 2018, a report by Market Forces found that Vân Phong-1 may not be eligible for financing from the Japanese banks SMBC, MUFG, and Mizuho because of their policies that rule out financing supercritical coal plants.<ref>[https://www.bloomberg.com/news/articles/2018-08-27/these-3-coal-plants-might-not-get-japan-funds-under-new-rules These 3 Coal Plants Might Not Get Japan Funds Under New Rules], Bloomberg, Aug. 27, 2018</ref> 
+
+In April 2019, the Japanese Bank For International Cooperation (JBIC) agreed to loan up to approximately USD 1.199 million to Van Phong Power Company Limited (VAN PHONG) for Van Phong-1. The loan is co-financed with Sumitomo Mitsui Banking Corporation, MUFG Bank, Ltd., Mizuho Bank, Ltd., Sumitomo Mitsui Trust Bank, Limited, Oversea-Chinese Banking Corporation Limited and DBS Bank Ltd., and the Bank of China, with a total co-financing amount of approximately USD 1.998 million.<ref>[https://www.jbic.go.jp/en/information/press/press-2019/0419-012106.html Project Finance for Van Phong 1 Coal-Fired Power Generation Project in the Republic of Vietnam], JBIC, Apr. 19, 2019</ref> US$1,001 million in equity was provided by the Sumitomo Corporation. The Sumitomo Mitsui Banking Corporation acted as financial adviser to the sponsor. Nippon Export and Investment Insurance (NEXI) provided political risk coverage for the deal.<ref name=":0">{{Cite web|url=https://ijglobal.com/data/transaction/19252/van-phong-1-coal-fired-power-plant-132gw-ipp|title=Preview of Van Phong 1 Coal-Fired Power Plant (1.32GW) IPP {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-11-20}}</ref>
+
+*'''Source of financing:''' Vân Phong-1: [[Japan Bank for International Cooperation]] (US$1.5-US$1.8 billion); <ref>[http://www.researchviews.com/energy/power/fossil-fuels/DealReport.aspx?sector=Fossil%20Fuels&DealID=209229 Sumitomo and Hanoinco Plan Project Financing for Van Phong I Thermal Power Plant in Vietnam], ResearchViews, Nov. 26, 2012.</ref><ref name=mfmar>[https://www.marketforces.org.au/research/vietnam/van-phong-1/ "Van Phong 1 (1320 MW),"] Market Forces, updated March 24, 2018</ref> Sumitomo Mitsui Financial Group (SMFG), Mizuho Financial Group (Mizuho), Mitsubishi UFJ Financial Group (MUFG), DBS Bank, OCBC Bank, Bank of China (US$ 1.998 million);<ref>[https://www.marketforces.org.au/research/vietnam/van-phong-1/ Japanese Banks: Respect Your Committments], Market Forces, Apr. 19, 2019</ref> US$1,001 million in equity from Sumitomo Corporation<ref name=":0">{{Cite web|url=https://ijglobal.com/data/transaction/19252/van-phong-1-coal-fired-power-plant-132gw-ipp|title=Preview of Van Phong 1 Coal-Fired Power Plant (1.32GW) IPP {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-11-20}}</ref>
+
+===Sumitomo's Coal Policy===
+In August 2019 a group of Japanese NGO's including JACSES, Kiko-Network, FOE Japan, Mekong Watch and 350 Japan released a statement calling on Sumitomo to withdraw from Vân Phong-1 because the project conflicts with Sumitomo's policies on coal plant construction.<ref name="foe">[http://www.foejapan.org/en/aid/pdf/190821_en.pdf Sumitomo Corporation Must Aim at Complete Coal Phase-Out to Combat Climate Change], FOE Japan, Aug. 21, 2019</ref> Sumitomo had stated a general policy of not developing new coal-fired plants in its "Integrated Report 2019," but also stated that it might support individual projects on a case-by-case basis.<ref name="foe">[http://www.foejapan.org/en/aid/pdf/190821_en.pdf Sumitomo Corporation Must Aim at Complete Coal Phase-Out to Combat Climate Change], FOE Japan, Aug. 21, 2019</ref>
+
+==Vân Phong-2==
+
+In October 2014, Korean company [[Keangnam Enterprises]] and Vietnamese company Hanoi Industrial Construction and Investment JSC signed an initial agreement with Khanh Hoa provincial government to build the additional two-unit, 1,320-MW coal-fired Vân Phong-2 power plant. The next step for the potential developers was to undertake a feasibility study. Construction was scheduled to begin in 2017, and completion was scheduled for 2020.<ref>[http://www.baokhanhhoa.com.vn/xa-hoi/201410/nha-may-nhiet-dien-van-phong-2-du-kien-khoi-cong-vao-nam-2017-2348071/ Nhà máy nhiệt điện Vân Phong 2: Dự kiến khởi công vào năm 2017], Khanh Hoa Online, 28 Oct. 2014.</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Vietnam]]

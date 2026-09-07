@@ -1,0 +1,79 @@
+# GEM wiki page: Jirau hydroelectric plant
+# URL: https://www.gem.wiki/Jirau_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Jirau hydroelectric plant''' (Usina Hidrelétrica Jirau) is an operating hydroelectric power plant in Porto Velho, Região Geográfica Intermediária de Porto Velho, Rondônia, Brazil.
+
+==Project Details==
+==== '''Table 1:''' Project details for Jirau hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Turbines
+!Technology type
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://app.powerbi.com/view?r=eyJrIjoiNjc4OGYyYjQtYWM2ZC00YjllLWJlYmEtYzdkNTQ1MTc1NjM2IiwidCI6IjQwZDZmOWI4LWVjYTctNDZhMi05MmQ0LWVhNGU5YzAxNzBlMSIsImMiOjR9 |archive-url=https://web.archive.org/web/20240125090259/https://app.powerbi.com/view?r=eyJrIjoiNjc4OGYyYjQtYWM2ZC00YjllLWJlYmEtYzdkNTQ1MTc1NjM2IiwidCI6IjQwZDZmOWI4LWVjYTctNDZhMi05MmQ0LWVhNGU5YzAxNzBlMSIsImMiOjR9 |archive-date=2024-01-25}}</ref>
+| 2013<ref name="autoref_0" />
+| 3750 MW<ref name="autoref_0" />
+| 50 x 75 MW<ref name="autoref_1">{{cite web |url=https://www.engie.com/en/journalists/press-releases/jirau-brazil-hydropower |archive-url=https://web.archive.org/web/20220704222036/https://www.engie.com/en/journalists/press-releases/jirau-brazil-hydropower |archive-date=2022-07-04}}</ref><ref name="autoref_2">{{cite web |url=https://g1.globo.com/ro/rondonia/noticia/2014/11/aneel-autoriza-16-turbina-na-hidreletrica-de-jirau-em-rondonia.html |archive-url=https://web.archive.org/web/20220625023511/https://g1.globo.com/ro/rondonia/noticia/2014/11/aneel-autoriza-16-turbina-na-hidreletrica-de-jirau-em-rondonia.html |archive-date=2022-06-25}}</ref>
+| Run-of-river<ref name="autoref_3">{{cite web |url=https://www.engie.com/en/activites/renouvelables/hydroelectricite |archive-url=https://web.archive.org/web/20221004232304/https://www.engie.com/en/activites/renouvelables/hydroelectricite |archive-date=2022-10-04}}</ref><ref name="autoref_4">{{cite web |url=https://www.hydropower.org/sediment-management-case-studies/brazil-jirau |archive-url=https://web.archive.org/web/20220815073624/https://www.hydropower.org/sediment-management-case-studies/brazil-jirau |archive-date=2022-08-15}}</ref><ref name="autoref_5">{{cite web |url=https://www.mitsui.com/jp/en/topics/2017/1222283_10834.html |archive-url=https://web.archive.org/web/20220625043711/https://www.mitsui.com/jp/en/topics/2017/1222283_10834.html |archive-date=2022-06-25}}</ref>
+| Companhia Hidro Elétrica do São Francisco SA (CHESF) [20%]; Eletrobras Eletrosul [20%]; Mitsui & Co Ltd [20%]; Engie Brasil Energia SA [40%] (三井物産株式会社)<ref name="autoref_0" /><ref name="autoref_5" /><ref name="autoref_6">{{cite web |url=https://www.engie.com.br/en/activities/generation-complex/ |archive-url=https://web.archive.org/web/20220625043631/https://www.engie.com.br/en/activities/generation-complex/ |archive-date=2022-06-25}}</ref><ref name="autoref_0" /><ref name="autoref_5" /><ref name="autoref_6" /><ref name="autoref_0" /><ref name="autoref_5" /><ref name="autoref_6" /><ref name="autoref_0" /><ref name="autoref_5" /><ref name="autoref_6" />
+| Energia Sustentável Do Brasil<ref name="autoref_0" />
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Jirau hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Porto Velho, Região Geográfica Intermediária de Porto Velho, Rondônia, Brazil<ref name="autoref_0" />
+| Rio Madeira<ref name="autoref_0" />
+| -9.2675, -64.6461 (exact)<ref name="autoref_0" />
+|}
+The map below shows the exact location of the hydroelectric power plant:
+{{
+#display_map:
+-9.2675, -64.6461~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Brazil]]
+
+__NOTOC__

@@ -1,0 +1,88 @@
+# GEM wiki page: Can Duoc power station (KEPCO and Vinakobalt)
+# URL: https://www.gem.wiki/Can_Duoc_power_station_(KEPCO_and_Vinakobalt)
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Can Duoc power station (KEPCO and Vinakobalt)''' is a cancelled power station in Can Duoc, Long An, Vietnam.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Can Duoc power station (KEPCO and Vinakobalt)
+| Can Duoc, Long An, Vietnam
+| 10.539167, 106.609167 (approximate)
+|}
+{{
+#display_map:
+10.539167, 106.609167
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Cancelled
+| coal: unknown
+| 1600
+| unknown
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Owner
+!Parent
+|-
+| Long An Vinakobalt Ltd Co [50%]; Korea Electric Power Corp [50%]
+| Korea Electric Power Corp [50.0%]; Long An Vinakobalt Ltd Co [50.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+According to press reports in 2015, the Ministry of Industry and Trade is seeking approval from the government to build a US$3.1 billion 1,600 MW coal plant in Cần Đước district, Long An province. The project would be built under a BOT (build, operate, transfer) arrangement by Korean Electric Power Corporation and Vinakobalt Long An.<Ref>[http://www.talkvietnam.com/2015/10/major-coal-fired-power-plant-near-ho-chi-minh-city-likely/ "Major coal-fired power plant near Ho Chi Minh City likely,"] Thanhiennews, October 9, 2015</ref> As of November 2019 there has been no progress in over years, including no mention in Vietnam's long-range planning documents, and it appears that the project is cancelled.
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Vietnam]]

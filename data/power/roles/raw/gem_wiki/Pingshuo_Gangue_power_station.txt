@@ -1,0 +1,157 @@
+# GEM wiki page: Pingshuo Gangue power station
+# URL: https://www.gem.wiki/Pingshuo_Gangue_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Pingshuo Gangue power station''' (山西国际能源平朔煤矸石发电厂) is an operating power station of at least 600-megawatts (MW) in Pinglu, Shuozhou, Shanxi, China with multiple units, some of which are not currently operating.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Pingshuo Gangue power station
+| Pinglu, Pinglu, Shuozhou, Shanxi, China
+| 39.473261, 112.320541 (exact)
+|}
+<display_map width=600 height=500 type=satellite>
+39.473261, 112.320541
+39.4727567, 112.3225046
+</display_map>
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 39.473261, 112.320541
+* '''Unit 3, Unit 4''': 39.4727567, 112.3225046
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit 1
+| Retired
+| coal: waste coal<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 50
+| subcritical
+| –
+| 2004
+| 2020
+| False
+|-
+| Unit 2
+| Retired
+| coal: waste coal<ref name="autoref_0" />
+| 50
+| subcritical
+| –
+| 2005
+| 2020
+| False
+|-
+| Unit 3
+| Operating
+| coal: waste coal<ref name="autoref_0" />
+| 300
+| subcritical
+| yes
+| 2009
+| –
+| False
+|-
+| Unit 4
+| Operating
+| coal: waste coal<ref name="autoref_0" />
+| 300
+| subcritical
+| yes
+| 2009
+| –
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Shanxi Pingshuo Gangue Power Generation Co Ltd [100%]
+| China Coal Pingshuo Coal Industry [33.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [28.3%]; KEPCO Shanxi International [22.8%]; Electric Power Development Co Ltd [4.7%]; Shanxi Gemeng International Energy Group Co Ltd [3.1%]; KEPCO Woori Sprott Global Private Equity Fund [2.7%]; Korea Electric Power Corp [2.7%]; unknown [2.7%]
+|-
+| Unit 2
+| Shanxi Pingshuo Gangue Power Generation Co Ltd [100%]
+| China Coal Pingshuo Coal Industry [33.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [28.3%]; KEPCO Shanxi International [22.8%]; Electric Power Development Co Ltd [4.7%]; Shanxi Gemeng International Energy Group Co Ltd [3.1%]; KEPCO Woori Sprott Global Private Equity Fund [2.7%]; Korea Electric Power Corp [2.7%]; unknown [2.7%]
+|-
+| Unit 3
+| Shanxi Pingshuo Gangue Power Generation Co Ltd [100%]
+| China Coal Pingshuo Coal Industry [33.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [28.3%]; KEPCO Shanxi International [22.8%]; Electric Power Development Co Ltd [4.7%]; Shanxi Gemeng International Energy Group Co Ltd [3.1%]; KEPCO Woori Sprott Global Private Equity Fund [2.7%]; Korea Electric Power Corp [2.7%]; unknown [2.7%]
+|-
+| Unit 4
+| Shanxi Pingshuo Gangue Power Generation Co Ltd [100%]
+| China Coal Pingshuo Coal Industry [33.0%]; Shanxi State-Owned Capital Investment and Operation Co Ltd [28.3%]; KEPCO Shanxi International [22.8%]; Electric Power Development Co Ltd [4.7%]; Shanxi Gemeng International Energy Group Co Ltd [3.1%]; KEPCO Woori Sprott Global Private Equity Fund [2.7%]; Korea Electric Power Corp [2.7%]; unknown [2.7%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjU5MThbIkNoaW5hIENvYWwgUGluZ3NodW88YnI+Q29hbCBJbmR1c3RyeSJdIC0tMzMuMCUtLT4gMTAwMDAwMTIyOTIxCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tNTAuMCUtLT4gMTAwMDAwMTI1OTY3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMjUwNDEKICAgIDEwMDAwMjAyNTA0MVsiTWluaXN0cnkgb2YgSGVhbHRoPGJyPmFuZCBXZWxmYXJlIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDAwNzMwCiAgICAxMDAwMDEwMDA3MzBbIk5hdGlvbmFsIFBlbnNpb248YnI+U2VydmljZSAoU291dGg8YnI+S29yZWEpIl0gLS01MC4wJS0tPiAxMDAwMDAxMjU5NjcKICAgIDEwMDAwMDEyNTk2N1siS0VQQ08gV29vcmkgU3Byb3R0PGJyPkdsb2JhbCBQcml2YXRlPGJyPkVxdWl0eSBGdW5kIl0gLS04LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTI1OTY5WyJLRVBDTyBTaGFueGk8YnI+SW50ZXJuYXRpb25hbCJdIC0tMzQuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc2Ljg4JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTEyLjI1JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43NyUtLT4gMTAwMDAwMDAwNjQxCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4xJS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMDAwMDY0MVsiRWxlY3RyaWMgUG93ZXI8YnI+RGV2ZWxvcG1lbnQgQ28gTHRkIl0gLS03LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTI1NTI4WyJTaGFueGkgUHJvdmluY2lhbDxicj5EZXBhcnRtZW50IG9mPGJyPkZpbmFuY2UiXSAtLTEwLjAlLS0+IDEwMDAwMDEyMzgyMwogICAgMTAwMDAwMTI1Njc4WyJTaGFueGkgUHJvdmluY2lhbDxicj5QZW9wbGUncyBHb3Zlcm5tZW50PGJyPlN0YXRlLW93bmVkIEFzc2V0czxicj5TdXBlcnZpc2lvbiBhbmQ8YnI+QWRtaW5pc3RyYXRpb248YnI+Q29tbWlzc2lvbiJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMTY2MwogICAgMTAwMDAwMDAxNjYzWyJTaGFueGkgU3RhdGUtT3duZWQ8YnI+Q2FwaXRhbCBJbnZlc3RtZW50PGJyPmFuZCBPcGVyYXRpb24gQ28gTHRkIl0gLS05MC4wJS0tPiAxMDAwMDAxMjM4MjMKICAgIDEwMDAwMDEyMzgyM1siU2hhbnhpIEdlbWVuZzxicj5JbnRlcm5hdGlvbmFsIEVuZXJneTxicj5Hcm91cCBDbyBMdGQiXSAtLTQ3LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTMyMzg4XzFbInVua25vd24iXSAtLTQuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMjM2OTlbIkdlbWVuZyBJbnRlcm5hdGlvbmFsPGJyPkVuZXJneSBDbyBMdGQiXSAtLTY3LjAlLS0+IDEwMDAwMDEyMjkyMQogICAgMTAwMDAwMTIyOTIxWyJTaGFueGkgUGluZ3NodW88YnI+R2FuZ3VlIFBvd2VyPGJyPkdlbmVyYXRpb24gQ28gTHRkIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwMTUwMQogICAgUDEwMDAwMDEwMTUwMVsiUGluZ3NodW8gR2FuZ3VlPGJyPnBvd2VyIHN0YXRpb24iXQo=}}
+
+==Background==
+
+The Pingshuo Gangue power station was commissioned in 2004 and 2005 with two units of 50 MW and an initial investment of 714.25 million RMB from the Shanxi International Energy Group, ChinaCoal, and Gemeng International.<ref name=":0">{{Cite web|url=https://www.qixin.com/company/a82861c2-ae1d-4e8f-9637-1bf0bb58707b?section=reports|title=山西平朔煤矸石发电有限责任公司|last=|first=|date=|website=Qixin|url-status=live|archive-url=|archive-date=|access-date=2021-06-04}}</ref> The plant is located in Shanxi Province, China.<ref>{{Cite web|url=http://wikimapia.org/31292925/Pingshuo-Gangue-Power-Station|title=Pingshuo Gangue Power Station - Wikimapia|last=|first=|date=|website=Wikimapia|language=en|url-status=live|archive-url=|archive-date=|access-date=2021-06-04}}</ref>
+The Environmental Protection Bureau of Shanxi Province accepted the first phase project in March 2006. The second phase of the project's construction, which involved 2×300MW units, was put into trial operation in August 2009 and June 2009 respectively.<ref>{{Cite web|url=https://news.bjx.com.cn/html/20150206/588832.shtml|title=山西平朔煤矸石发电有限责任公司2015年自行监测方案 - 北极星火力发电网|last=Polaris Power Network|date=February 6, 2015|website=BJX News|url-status=live|archive-url=|archive-date=|access-date=2021-06-04}}</ref> The first two units were retired sometime between 2015 and 2020.<ref>[http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/BOND/2021/2021-1/2021-01-14/15434672.PDF 格盟国际能源有限公司2021 年度第一期超短期融资券募集说明书], 发行人：格盟国际能源有限公司, January 2021</ref> Units 3 and 4 have a shut-down date scheduled in 2037.<ref name=":0">{{Cite web|url=https://www.qixin.com/company/a82861c2-ae1d-4e8f-9637-1bf0bb58707b?section=reports|title=山西平朔煤矸石发电有限责任公司|last=|first=|date=|website=Qixin|url-status=live|archive-url=|archive-date=|access-date=2021-06-04}}</ref>
+
+In 2021, the operating company of the plant (under Gemeng International) changed its name from the "China Coal Pingshuo #1 Coal Gangue Power Generation Co., Ltd." officially changed its name to "Sujin Shuozhou Coal Gangue Power Generation Co., Ltd."
+
+==Pollution Controls==
+
+In 2014, the Pingshuo Gangue power station operators hired consultants from the China Building Materials Industry Planning and Research Institute to deal with their ash emission overflow. The consultants decreased the cost of ash storage and advised using ash for other construction or domestic power generation projects.<ref>{{Cite web|url=http://www.cbm.com.cn/index.php?m=home&c=View&a=index&aid=14433|title=中煤平朔第一煤矸石发电有限公司灰渣综合利用方案_咨询案例|last=|first=|date=May 28, 2020|website=China Development Strategy Institute for Building Materials Industry|url-status=live|archive-url=|archive-date=|access-date=2021-06-04}}</ref> In 2015, the company completed the ultra-low emission transformation of its 2×300MW units, adding flue gas desulfurization and dust removal equipment.<ref>{{Cite web|url=https://news.bjx.com.cn/html/20151019/672657.shtml|title=清新环境与山西平朔煤矸石发电签署超低排放改造项目合同（附公告） - 北极星火力发电网|last=|first=|date=October 19, 2015|website=BJX News|url-status=live|archive-url=|archive-date=|access-date=2021-06-04}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

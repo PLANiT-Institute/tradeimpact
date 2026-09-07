@@ -1,0 +1,201 @@
+# GEM wiki page: Qurayyah CC power plant
+# URL: https://www.gem.wiki/Qurayyah_CC_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Qurayyah CC power plant''' (مشروع القُريَّة المستقل لإنتاج الكهرباء، محطة كهرباء القرية ، محطة كهرباء القرية المركبة) is an operating power station of at least 4098-megawatts (MW) in Al-Khobar, Eastern, Saudi Arabia with multiple units, some of which are not currently operating.
+It is also known as Steam Village Station, Hajr for Electricity Production Co. Station, Al-Qurayyah IPP.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Qurayyah CC power plant
+| Al-Khobar, Eastern, Saudi Arabia
+| 25.8446231, 50.1264074 (exact)<ref name="autoref_0">{{cite web |url=https://maps.app.goo.gl/9YWokA9RDbkfPMsh8 |title=Qurayyah IPP · R4WG+863 36210, Saudi Arabia |website=Qurayyah IPP · R4WG+863 36210, Saudi Arabia |access-date=2024-05-16 |archive-url=https://web.archive.org/web/20240517004050/https://www.google.com/maps/place/Qurayyah+IPP/@25.8443156,50.125409,1114m/data=!3m1!1e3!4m6!3m5!1s0x3e482c174810e41d:0x6b34b73b30068c56!8m2!3d25.8457725!4d50.1255442!16s%2Fm%2F0_xclp9?entry=tts&g_ep=EgoyMDI0MDUwOC4wKgBIAVAD |archive-date=2024-05-17}}</ref><ref name="autoref_1">{{cite web |url=https://github.com/wri/global-power-plant-database/blob/13b6a3baaca73e84b1a549d14c274981abec775b/raw_source_files/WRI/Saudi%20Arabia.csv |archive-url=https://web.archive.org/web/20210624171139/https://github.com/wri/global-power-plant-database/blob/13b6a3baaca73e84b1a549d14c274981abec775b/raw_source_files/WRI/Saudi%20Arabia.csv |archive-date=2021-06-24}}</ref>
+|}
+{{
+#display_map:
+25.8446231, 50.1264074
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, 3, 4, 5, 6, Expansion''': 25.8446231, 50.1264074
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_2">{{cite web |url=https://datasource.kapsarc.org/explore/dataset/electricity-generation-by-station-capacities-in-saudi-arabia/export/ |archive-url=https://web.archive.org/web/20220123152836/https://datasource.kapsarc.org/explore/dataset/electricity-generation-by-station-capacities-in-saudi-arabia/export/ |archive-date=2022-01-23}}</ref><ref name="autoref_3">{{cite web |url=https://acwapower.com/en/projects/hajr-ipp/ |archive-url=https://web.archive.org/web/20230405011014/https://acwapower.com/en/projects/hajr-ipp/ |archive-date=2023-04-05}}</ref><ref name="autoref_4">{{cite web |url=https://www.youtube.com/watch?v=sU4tctrmzUQ}}</ref>
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_5">{{cite web |url=https://www.acwapower.com/ar/projects/qurayyah-ipp/ |archive-url=https://web.archive.org/web/20220813213705/https://acwapower.com/ar/projects/qurayyah-ipp/ |archive-date=2022-08-13}}</ref><ref name="autoref_1" />
+| 683<ref name="autoref_4" /><ref name="autoref_1" />
+| combined cycle<ref name="autoref_6">{{cite web |url=https://www.powermag.com/qurayyah-combined-cycle-power-plant-qurayyah-saudi-arabia-owneroperator-hajr-electricity-production-co/ |archive-url=https://web.archive.org/web/20221207042341/https://www.powermag.com/qurayyah-combined-cycle-power-plant-qurayyah-saudi-arabia-owneroperator-hajr-electricity-production-co/ |archive-date=2022-12-07}}</ref><ref name="autoref_7">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-qurayyah-combined-cycle-power-plant-saudi-arabia/}}</ref>
+| not found
+| 2014<ref name="autoref_6" /><ref name="autoref_1" />
+| –
+| no
+|-
+| 2
+| Operating<ref name="autoref_2" /><ref name="autoref_7" /><ref name="autoref_3" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_5" /><ref name="autoref_1" />
+| 683<ref name="autoref_4" /><ref name="autoref_1" />
+| combined cycle<ref name="autoref_6" />
+| not found
+| 2014<ref name="autoref_1" />
+| –
+| no
+|-
+| 3
+| Operating<ref name="autoref_2" /><ref name="autoref_7" /><ref name="autoref_3" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_1" />
+| 683<ref name="autoref_5" /><ref name="autoref_1" />
+| combined cycle<ref name="autoref_6" />
+| not found
+| 2014<ref name="autoref_1" />
+| –
+| no
+|-
+| 4
+| Operating<ref name="autoref_2" /><ref name="autoref_7" /><ref name="autoref_3" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_1" />
+| 683<ref name="autoref_5" /><ref name="autoref_1" />
+| combined cycle<ref name="autoref_6" />
+| not found
+| 2014<ref name="autoref_1" />
+| –
+| no
+|-
+| 5
+| Operating<ref name="autoref_2" /><ref name="autoref_7" /><ref name="autoref_3" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_1" />
+| 683<ref name="autoref_5" /><ref name="autoref_1" />
+| combined cycle<ref name="autoref_6" />
+| not found
+| 2014<ref name="autoref_1" />
+| –
+| no
+|-
+| 6
+| Operating<ref name="autoref_2" /><ref name="autoref_7" /><ref name="autoref_3" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_1" />
+| 683<ref name="autoref_5" /><ref name="autoref_1" />
+| combined cycle<ref name="autoref_6" />
+| not found
+| 2015<ref name="autoref_6" /><ref name="autoref_1" />
+| –
+| no
+|-
+| Expansion
+| Construction<ref name="autoref_8">{{cite web |url=https://gulffire.com/jv-wins-usd-2-6-billion-epc-contract-for-3gw-gas-fired-power-expansion-in-saudi-arabia/}}</ref><ref name="autoref_9">{{cite web |url=https://www.argaam.com/ar/article/articledetail/id/1791809}}</ref>
+| fossil gas: natural gas<ref name="autoref_9" />
+| 3010<ref name="autoref_10">{{cite web |url=https://www.doosanenerbility.com/en/about/news_board_view?id=21000721}}</ref><ref name="autoref_9" />
+| combined cycle<ref name="autoref_9" />
+| –
+| 2028 (planned)<ref name="autoref_11">{{cite web |url=https://www.doosan.com/en/media-center/press-release_view/?id=20172258&page=0& |archive-url=https://web.archive.org/web/20210918010657/https://www.doosan.com/en/media-center/press-release_view?id=20172258&page=0& |archive-date=2021-09-18}}</ref>
+| GE Vernova: 7HA.03, GE Vernova: 7HA.02<ref name="autoref_12">{{cite web |url=https://www.zawya.com/en/press-release/companies-news/ge-vernovas-h-class-gas-turbines-to-expand-qurayyah-power-plant-in-saudi-arabia-cu9yf6r4}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Operator
+!Owner
+!Parent
+|-
+| 1
+| –
+| Hajr Electricity Production Co [100%]<ref name="autoref_1" />
+| Saudi Electricity Co [50.0%]; ACWA Power Co [22.5%]; MENA Infrastructure Fund Ltd [15.0%]; Samsung C&T Corp [12.5%]
+|-
+| 2
+| –
+| Hajr Electricity Production Co [100%]<ref name="autoref_1" />
+| Saudi Electricity Co [50.0%]; ACWA Power Co [22.5%]; MENA Infrastructure Fund Ltd [15.0%]; Samsung C&T Corp [12.5%]
+|-
+| 3
+| –
+| Hajr Electricity Production Co [100%]<ref name="autoref_1" />
+| Saudi Electricity Co [50.0%]; ACWA Power Co [22.5%]; MENA Infrastructure Fund Ltd [15.0%]; Samsung C&T Corp [12.5%]
+|-
+| 4
+| –
+| Hajr Electricity Production Co [100%]<ref name="autoref_1" />
+| Saudi Electricity Co [50.0%]; ACWA Power Co [22.5%]; MENA Infrastructure Fund Ltd [15.0%]; Samsung C&T Corp [12.5%]
+|-
+| 5
+| –
+| Hajr Electricity Production Co [100%]<ref name="autoref_1" />
+| Saudi Electricity Co [50.0%]; ACWA Power Co [22.5%]; MENA Infrastructure Fund Ltd [15.0%]; Samsung C&T Corp [12.5%]
+|-
+| 6
+| –
+| Hajr Electricity Production Co [100%]<ref name="autoref_1" />
+| Saudi Electricity Co [50.0%]; ACWA Power Co [22.5%]; MENA Infrastructure Fund Ltd [15.0%]; Samsung C&T Corp [12.5%]
+|-
+| Expansion
+| ACWA Power; Saudi Electricity<ref name="autoref_9" /><ref name="autoref_9" />
+| ACWA Power Co [40%]; Saudi Electricity Co [40%]<ref name="autoref_9" /><ref name="autoref_9" />
+| ACWA Power Co [40.0%]; Saudi Electricity Co [40.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_6" /><ref name="autoref_4" />
+* '''Captive industry''': Chemicals<ref name="autoref_6" /><ref name="autoref_4" />
+* '''Non-industry use''': power<ref name="autoref_6" /><ref name="autoref_4" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Saudi Arabia]]
+
+__NOTOC__

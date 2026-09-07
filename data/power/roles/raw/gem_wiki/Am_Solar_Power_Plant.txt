@@ -1,0 +1,80 @@
+# GEM wiki page: Am Solar Power Plant
+# URL: https://www.gem.wiki/Am_Solar_Power_Plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Al Manakher
+
+'''Am Solar Power Plant''' is an operating solar photovoltaic (PV) farm in Al-Manakher, Marka Sub-District, Marka District, Amman, Jordan.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Am Solar Power Plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://nebras-power.com/assets/listing/am-solar |archive-url=https://web.archive.org/web/20240207090804/https://nebras-power.com/assets/listing/am-solar |archive-date=2024-02-07}}</ref>
+| 2019<ref name="autoref_0" />
+| 52 MWac<ref name="autoref_1">{{cite web |url=https://wiki-solar.org/ |title=Wiki-Solar Database |date=2023-04 |access-date=2024-02-28 |archive-url=https://web.archive.org/web/20240402052142/https://wiki-solar.org/ |archive-date=2024-04-02}}</ref>
+| PV<ref name="autoref_1" />
+| AES Corp; Nebras Power QPSC; Mitsui & Co Ltd (三井物産株式会社)<ref name="autoref_2">{{cite web |url=https://renewablesnow.com/news/aes-to-sell-interest-in-power-plants-of-21-gw-in-jordan-uk-652038/, https://nebras-power.com/assets/listing/am-solar, https://renewablesnow.com/news/aes-to-sell-interest-in-power-plants-of-21-gw-in-jordan-uk-652038/, https://nebras-power.com/assets/listing/am-solar, https://renewablesnow.com/news/aes-to-sell-interest-in-power-plants-of-21-gw-in-jordan-uk-652038/, https://nebras-power.com/assets/listing/am-solar}}</ref>
+| Nebras Power<ref name="autoref_3">{{cite web |url=http://nebras-power.com/media/news/2019/03/nebras-expands-jordans-power-sector |archive-url=https://web.archive.org/web/20240206172422/https://nebras-power.com/media/news/2019/03/nebras-expands-jordans-power-sector |archive-date=2024-02-06}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Am Solar Power Plant ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Al-Manakher, Marka Sub-District, Marka District, Amman, Jordan<ref name="autoref_4">{{cite web |url=https://goo.gl/maps/fvFhKRKw99WyU7q79 |archive-url=https://web.archive.org/web/20210704180721/https://www.google.com/maps/place/AM+Solar/@31.9057074,36.0941376,3326m/data=!3m2!1e3!4b1!4m5!3m4!1s0x151b43caa980f7df:0x5b02141178e85dd7!8m2!3d31.9056895!4d36.1028924?shorturl=1 |archive-date=04 July 2021}}</ref>
+| 31.9090, 36.1017 (exact)<ref name="autoref_4" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+31.909, 36.1017~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Jordan]]
+[[Category:PV solar farms]]
+
+__NOTOC__

@@ -1,0 +1,79 @@
+# GEM wiki page: Kidston Renewable Energy Hub wind farm
+# URL: https://www.gem.wiki/Kidston_Renewable_Energy_Hub_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' K-3 Wind Project
+
+'''Kidston Renewable Energy Hub wind farm''' is a wind farm in pre-construction in Queensland, Australia.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Kidston Renewable Energy Hub wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+|-
+| 3
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://company-announcements.afr.com/asx/gnx/6b25a3b1-6b79-11ed-869e-9add0a948378.pdf |archive-url=https://web.archive.org/web/20240126064409/https://company-announcements.afr.com/asx/gnx/6b25a3b1-6b79-11ed-869e-9add0a948378.pdf |archive-date=2024-01-26}}</ref>
+| 2026 (planned)<ref name="autoref_1">{{cite web |url=https://www.queenslandconservation.org.au/analysis_reveals_renewable_save_qlders_500_per_year |archive-url=https://web.archive.org/web/20240815022556/https://www.queenslandconservation.org.au/analysis_reveals_renewable_save_qlders_500_per_year |archive-date=2024-08-15}}</ref>
+| 258 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_2">{{cite web |url=https://esdnews.com.au/j-power-and-genex-collaborate-on-kidston-wind-project/ |archive-url=https://web.archive.org/web/20240126113103/https://esdnews.com.au/j-power-and-genex-collaborate-on-kidston-wind-project/ |archive-date=2024-01-26}}</ref>
+| Genex Power [50%]; Electric Power Development Co Ltd [50%] (電源開発株式会社)<ref name="autoref_3">{{cite web |url=https://reneweconomy.com.au/genex-kick-starts-kidston-wind-project-securing-partnership-with-j-power-38168/, https://renewablesnow.com/news/genex-secures-stanwell-as-off-taker-of-258-mw-kidston-wind-project-842683/, https://reneweconomy.com.au/genex-kick-starts-kidston-wind-project-securing-partnership-with-j-power-38168/, https://renewablesnow.com/news/genex-secures-stanwell-as-off-taker-of-258-mw-kidston-wind-project-842683/}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Kidston Renewable Energy Hub wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 3
+| Queensland, Australia<ref name="autoref_4">{{cite web |url=https://www.northqueenslandregister.com.au/story/7263047/fnq-renewable-sector-promises-hundreds-of-jobs/ |archive-url=https://web.archive.org/web/20240201031315/https://www.northqueenslandregister.com.au/story/7263047/fnq-renewable-sector-promises-hundreds-of-jobs/ |archive-date=2024-02-01}}</ref>
+| -27.4714, 153.0294 (approximate)<ref name="autoref_4" />
+|}
+The map below shows the approximate location of the wind farm:
+{{
+#display_map:
+-27.4714, 153.0294~ ~ ~ ~ ~Phase 3
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Australia]]
+
+__NOTOC__

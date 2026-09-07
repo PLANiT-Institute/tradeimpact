@@ -1,0 +1,101 @@
+# GEM wiki page: San Mariano Biomass power station
+# URL: https://www.gem.wiki/San_Mariano_Biomass_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalBioenergyPowerTracker}}
+'''San Mariano Biomass power station''' is an operating power station of at least 19-megawatts (MW) in Philippines.
+It is also known as San Mariano Ethanol Steam Cogen Plant.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| San Mariano Biomass power station
+| Philippines
+| 16.98847434479664, 21.99458206487878 (exact)<ref name="autoref_0">{{cite web |url=https://www.greenfutureinnovations.com/products/}}</ref>
+|}
+{{
+#display_map:
+16.98847434479664, 21.99458206487878
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''''': 16.98847434479664, 21.99458206487878
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!CHP
+!Start year
+|-
+| Operating<ref name="autoref_1">{{cite web |url=https://legacy.doe.gov.ph/sites/default/files/pdf/renewable_energy/Awarded%20Biomass%20as%20of%20April%202025.pdf}}</ref>
+| bioenergy: agricultural waste (solids)<ref name="autoref_0" /><ref name="autoref_2">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-san-mariano-biomass-power-plant-philippines/}}</ref>
+| 19<ref name="autoref_1" />
+| yes<ref name="autoref_0" />
+| 2012<ref name="autoref_2" />
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Owner
+!Parent
+|-
+| Green Future Innovations Inc<ref name="autoref_2" />
+| GCO; ITOCHU Corp; JGC Holdings Corp; Philippine Bioethanol and Energy Investments Corp
+|}
+'''Project-level captive use details'''
+* '''Captive industry use (heat or power)''': both<ref name="autoref_0" />
+* '''Captive industry''': Sugar<ref name="autoref_0" />
+* '''Non-industry use''': power<ref name="autoref_0" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMTY3NjJbIkdDTyJdIC0tPiAxMDAwMDIwMTYwOTkKICAgIDEwMDAwMTAxNTU4N18xWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjkuODIlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuNDQlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE2NDk4WyJNaXRzdWJpc2hpIFVGSjxicj5GaW5hbmNpYWwgR3JvdXAgSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI1CiAgICAxMDAwMDEwMTYxMjVbIk1pdHN1YmlzaGkgVUZKIFRydXN0PGJyPmFuZCBCYW5raW5nIENvcnAiXSAtLTQ2LjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi45MyUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTYuODQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgSG9sZGluZ3MgSW5jIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjMlLS0+IDEwMDAwMDAwMTIzNwogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny42OSUtLT4gMTAwMDAwMDAxMjM3CiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLTExLjg4JS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMTAxNjEyN1siQk5ZTSBBUyBBR1QvIENMVFMgMTA8YnI+UGVyY2VudCJdIC0tOS4wNCUtLT4gMTAwMDAwMDAxMjM3CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjA5JS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMDAwMTIzN1siSVRPQ0hVIENvcnAiXSAtLT4gMTAwMDAyMDE2MDk5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE4LjAyJS0tPiAxMDAwMDEwMDAzODMKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tMTEuOTElLS0+IDEwMDAwMTAwMDM4MwogICAgMTAwMDAyMDA0ODU4WyJKR0MgVHJhZGluZyAmPGJyPlNlcnZpY2VzIENvIEx0ZCJdIC0tNS4wMSUtLT4gMTAwMDAxMDAwMzgzCiAgICAxMDAwMDEwMDAzODNbIkpHQyBIb2xkaW5ncyBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAxMzU1CiAgICAxMDAwMDAwMDEzNTVbIkpHQyBDb3JwIl0gLS0+IDEwMDAwMjAxNjA5OQogICAgMTAwMDAyMDE2NzYxWyJQaGlsaXBwaW5lPGJyPkJpb2V0aGFub2wgYW5kPGJyPkVuZXJneSBJbnZlc3RtZW50czxicj5Db3JwIl0gLS0+IDEwMDAwMjAxNjA5OQogICAgMTAwMDAyMDE2MDk5WyJHcmVlbiBGdXR1cmU8YnI+SW5ub3ZhdGlvbnMgSW5jIl0gLS0+IFAxMDAwMDEwNDc3MzcKICAgIFAxMDAwMDEwNDc3MzdbIlNhbiBNYXJpYW5vIEJpb21hc3M8YnI+cG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of bioenergy power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-bioenergy-power-tracker/ Global Bioenergy Power Tracker] on the Global Energy Monitor website.
+[[Category:Bioenergy power stations]][[Category:Bioenergy power stations in Philippines]]

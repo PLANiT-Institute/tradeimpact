@@ -1,0 +1,161 @@
+# GEM wiki page: Safi power station
+# URL: https://www.gem.wiki/Safi_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Show badges |Navbar-Global_Coal_Plant_Tracker| Navbar-GlobalBioenergyPowerTracker}}
+'''Safi power station''' (Usina de biomassa Safi) is an operating power station of at least 1390-megawatts (MW) in Cap Ghir Safi, Marrakesh-Safi, Morocco.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Safi power station
+| Cap Ghir Safi, Marrakesh-Safi, Morocco
+| 32.149115, -9.282294 (exact)
+|}
+{{
+#display_map:
+32.149115, -9.282294
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Biomass, Unit 1, Unit 2''': 32.149115, -9.282294
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Biomass
+| Operating<ref name="autoref_0">{{cite web |url=https://dadosabertos.aneel.gov.br/dataset/siga-sistema-de-informacoes-de-geracao-da-aneel/resource/11ec447d-698d-4ab8-977f-b424d5deee6a?filters=DscOrigemCombustivel%3ABiomassa}}</ref>
+| bioenergy: agricultural waste (solids)<ref name="autoref_0" />
+| 4.6<ref name="autoref_0" />
+| –
+| 2007<ref name="autoref_0" />
+| False
+|-
+| Unit 1
+| Operating
+| coal: unknown<ref name="autoref_1">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref><ref name="autoref_2">{{cite web |url=https://www.worldcoal.com/coal/24092013/morocco_set_to_increase_coal_imports_69/}}</ref>
+| 693
+| ultra-supercritical
+| 2018
+| False
+|-
+| Unit 2
+| Operating
+| coal: unknown<ref name="autoref_1" /><ref name="autoref_2" />
+| 693
+| ultra-supercritical
+| 2018
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Biomass
+| Safi Energy Company SA [100%]
+| Nareva Holding SA [50.7%]; Mitsui & Co Ltd [30.0%]; ENGIE SA [19.3%]
+|-
+| Unit 1
+| Safi Energy Company SA [100%]
+| Nareva Holding SA [50.7%]; Mitsui & Co Ltd [30.0%]; ENGIE SA [19.3%]
+|-
+| Unit 2
+| Safi Energy Company SA [100%]
+| Nareva Holding SA [50.7%]; Mitsui & Co Ltd [30.0%]; ENGIE SA [19.3%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjA5MTBbIk5hcmV2YSBIb2xkaW5nIFNBIl0gLS01MC42NiUtLT4gMTAwMDAwMTIxMjMxCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTcwLjQ3JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMTAwMDA3OVsiR292ZXJubWVudCBvZiBGcmFuY2UiXSAtLTIzLjY0JS0tPiAxMDAwMDAwMDAzODIKICAgIDEwMDAwMTAxNTgzM1siQmxhY2tyb2NrIEFkdmlzb3JzPGJyPkxMQyJdIC0tNS4wNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTg2LjI3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tOC42NiUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMDAzNDhbIkJsYWNrUm9jayBJbmMiXSAtLTUuODklLS0+IDEwMDAwMDAwMDM4MgogICAgMTAwMDAwMDAwMzgyWyJFTkdJRSBTQSJdIC0tMTkuMzQlLS0+IDEwMDAwMDEyMTIzMQogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDAwMzgyCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTE2MTcKICAgIDEwMDAwMTAxMTYxN1siTWVpamkgWWFzdWRhIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxNjQ5MgogICAgMTAwMDAxMDE2NDkyWyJOb3JpbmNodWtpbiBCYW5rIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDE2MTI2CiAgICAxMDAwMDEwMTYxMjZbIlRoZSBOb3JpbmNodWtpbjxicj5UcnVzdCAmIEJhbmtpbmcgQ288YnI+THRkIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuODYlLS0+IDEwMDAwMTAxNjQ5OAogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny45NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBHcm91cCJdIC0tMzMuMyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4wNiUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTEzLjEzJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQzJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTY3LjUlLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS02LjElLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTkuOTclLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAwMDAwNjUxWyJNaXRzdWkgJiBDbyBMdGQiXSAtLTMwLjAlLS0+IDEwMDAwMDEyMTIzMQogICAgMTAwMDAwMTIxMjMxWyJTYWZpIEVuZXJneSBDb21wYW55PGJyPlNBIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwMzA1MwogICAgUDEwMDAwMDEwMzA1M1siU2FmaSBwb3dlciBzdGF0aW9uIl0K}}
+
+==Background==
+
+GDF Suez (now Engie) and Nareva won the US$2.68 billion tender to build and operate the plant in 2010, and Mitsui joined the venture in 2013, and became the Safi Energy Company. In September 2013, L'Office National de l’Electricité et de l’Eau Potable (ONEE) and Safi Energy Company entered into a 30-year "Power Purchase Agreement" for the Safi coal-fired power project. The project includes the construction and operation of a 2 × 693 MW ultra-supercritical coal-fired power plant in the coastal Safi region and the sale of electricity to Morocco's national utility ONEE for 30 years following completion of the plant.<ref>[http://www.gdfsuez.com/en/journalists/press-releases/power-purchase-agreement-signed-for-safi-independent-power-project-morocco/ "Power Purchase Agreement signed for Safi independent power project (2x693 MW) in Morocco,"] GDF Suez, September 10, 2013</ref>
+
+Construction began in 2015 and was carried out by Daewoo Engineering & Construction, with O&M provided by Safi Energy Company. The total investment was US$2.6 billion.<ref>[http://www.heidelbergcement.com/en/safi-power-plant "Safi Power Plant, Morocco,"] Heidelberg Cement, accessed May 2017</ref> This plant is the first coal-fired power station in Africa to use ultra-supercritical technology.<ref>[https://lkakhadma.com/Entreprises/safiec-safi-energy-company/ "SAFIEC (SAFI ENERGY COMPANY),"] lkakhadma, August 17, 2021</ref>
+
+In February 2018, it was reported that plant contractor Daewoo Engineering and Construction was expected to face losses of up to US$400 million in the US$1.8 billion project as the heating facilities of the plant broke during test operations under construction.<ref>[https://www.koreatimes.co.kr/www/tech/2018/02/693_243812.html "Daewoo E&C faces big loss in Morocco,"] Korea Times, February 8, 2018</ref>
+
+The plant began operation in December 2018.<ref>[https://www.montelnews.com/de/story/spain-to-build-700-mw-cable-with-morocco-amid-import-surge/981521 "Spain to build 700 MW cable with Morocco amid import surge,"] Montel, February 15, 2019</ref><ref>[https://www.spglobal.com/platts/en/market-insights/latest-news/electric-power/050919-spain-could-use-by-pass-clause-to-fend-off-moroccan-power-exports "Spain could use by-pass clause to fend off Moroccan power exports,"] S&P Global, May 9, 2019</ref>
+
+In November 2022, Reclaim Finance reported that Engie was considering selling its stake in the Safi power station.<ref>[https://reclaimfinance.org/site/en/2022/11/16/engie-replacing-one-problem-with-another/ "ENGIE’s dirty coal phase-out: replacing one problem with another,"] Reclaim Finance, November 16, 2022</ref>
+
+In April 2024, Engie stated that they intended to sell their 33% stake in the Safi coal plant by 2027.<ref>[https://www.reuters.com/business/energy/engie-divest-moroccos-safi-coal-plant-before-2027-2024-04-26/ "Engie to divest from Morocco's Safi coal plant before 2027,"] Reuters, April 26, 2024</ref>
+
+In January 2025, Engie finalized the sale of 15.66% of its stake in the Safi Energy Company to another shareowner, Nareva. Engie retained a 17.67% stake in the project, and reportedly reaffirmed its commitment to exit coal worldwide by 2027.<ref>[https://lematin.ma/economie/centrale-thermique-de-safi-engie-cede-1566-de-sa-participation-a-nareva/269443 “Centrale thermique de Safi : Engie cède 15,66% de sa participation à Nareva,”] Le Matin, March 21, 2025</ref><ref>[https://www.engie.com/sites/default/files/assets/documents/2025-03/Rapport%20d%27activit%C3%A9%20et%20Etats%20financiers%20consolid%C3%A9s%20annuels%202024.pdf “Rapport d’Activité et États Financiers Consolidés Annuels 2024,”] Engie, March 2025</ref> In October 2025, it was indicated by African Intelligence that full control of the Safi plant would be taken by the Moroccan holding company Al Mada following ENGIE’s withdrawal.<ref>[https://www.africaintelligence.com/north-africa/2025/10/21/al-mada-set-to-extend-stranglehold-on-safi-coal-fired-power-station,110537314-art, "Al Mada set to extend stranglehold on Safi coal-fired power station,"] African Intelligence, November 10, 2025</ref>
+
+==Financing==
+
+In September 2014, a financing agreement for the project closed. US$2,103 million in loans were provided by Japan Bank for International Cooperation, Mizuho Financial Group, Sumitomo Mitsui Banking Corporation, Sumitomo Mitsui Financial Group, Societe Generale, Credit Agricole Group, BNP Paribas, MUFG Bank, Islamic Development Bank, Attijariwafa Bank, and Banque Centrale Populaire de Maroc. US$520 million in equity was provided by Nareva Holding, Engie, and Mitsui & Co. HSBC acted as the financial adviser to the National Electricity Office.<ref name=":0">[https://ijglobal.com/data/transaction/17640/safi-coal-fired-power-plant-ipp-1320mw|title=Preview of Safi Coal-fired Power Plant (IPP) (1320MW),"] IJGlobal, accessed December 10, 2020</ref> The private banks participating in the financing package received insurance coverage from Nippon Export and Investment Insurance.<ref>[http://web.archive.org/web/20160804193237/http://nexi.go.jp/topics/newsrelease/005476.html "モロッコ王国/Safi高効率火力発電プロジェクト(融資保険の引受),"] Nippon Export and Investment Insurance, September 30, 2014</ref>
+
+In November 2021, it was reported that Safi Energy Company (Safiec) failed to renew the guarantee that Standard Chartered Bank had made available to it at the time of the syndicated financing.<ref>[https://mobile.ledesk.ma/2021/11/21/centrale-thermique-de-safi-la-garantie-de-standard-chartered-bank-na-pas-ete-renouvelee/ "Centrale thermique de Safi : la garantie de Standard Chartered Bank n’a pas été renouvelée,"] le Desk, November 21, 2021 (paywall)</ref>
+
+==Opposition==
+
+On March 29, 2014, hundreds demonstrated on the Atlantic coast of Morocco, against the establishment of the Safi power station. Protestors argued that it could increase air pollution for years. The Safi power station is near one of the most important ports country as well as an industrial complex of transformation of phosphate.<ref>[https://observers.france24.com/fr/20140402-installation-une-centrale-thermique-usine-trop-marocains-safi "The thermal power station which revolts the Moroccans of Safi,"] France 24, April 2, 2014</ref> On September 21st, 2014, the Network for the Defense of the Environment organized a protest against the Safi plant, in relation to a United Nations Climate Summit. The Environmental Defense Network also denounced the Safi thermal project and called on citizens to join the opposition. They cited concerns for carbon emissions and chemical gases.<ref>[https://www.hespress.com/%d8%b4%d8%a8%d9%83%d8%a9-%d9%85%d8%ad%d9%84%d9%8a%d8%a9-%d8%aa%d9%86%d8%aa%d9%82%d8%af-%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%a7%d9%84%d8%b7%d8%a7%d9%82%d8%a9-%d8%a7%d9%84%d8%ad%d8%b1%d8%a7%d8%b1%d9%8a-187905.html "A local network criticizes the Safi Thermal Power Project,"] Ibrahim Maghraoui, September 22, 2014</ref>
+
+In mid-2017, residents near the Safi power plant opposed the plant in fear of the greed of companies and seizure of lands. They also feared mysterious fumes in the neighborhood.<ref>[https://lakome2.com/societe/24466 "The coal burning experiments at the Safi Thermal Station raise residents’ fears of their mysterious fumes,"] Lakome2, September 19, 2017</ref>
+
+In 2019, private citizens also posted on Facebook, regarding the Safi power plant and opposition.<ref>[https://www.facebook.com/permalink.php?story_fbid=705894789896297&id=307104036442043 "Facebook Posts,"] حملة خنقتونا بآسفي, October 18, 2019</ref>
+
+A private citizen also released an article, highlighting how they are tired of pollution and exploitations from the city of Safi, resulting in unemployment and lack of political action. They cite that a number of city activists have protested the Safi thermal station as an extreme danger to the environment and a possible cause of air pollution.<ref>[https://anwalpress.com/ثالوث-التلوث،-انھیار-المآثر-والبطالة/ "Triad of pollution…,"] Anwal Press</ref>
+
+In June 2023, a human rights group in Safi announced that they were suing the general director of the Safi Energy Company for “systematic abuse of the environment and the population” caused by the power station.<ref>[https://al3omk.com/852807.html “حقوقيون يقاضون مدير“آسفي للطاقة” ويدرسون رفع دعوى أمام القضاء البلجيكي,”] June 25, 2023</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including interactive maps of the power stations, downloadable datasets, and summary data, please visit the [https://globalenergymonitor.org/projects/global-bioenergy-power-tracker/ Global Bioenergy Power Tracker] and the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Morocco]][[Category:Bioenergy power stations]][[Category:Bioenergy power stations in Morocco]]

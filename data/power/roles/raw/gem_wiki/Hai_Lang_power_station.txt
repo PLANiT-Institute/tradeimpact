@@ -1,0 +1,128 @@
+# GEM wiki page: Hai Lang power station
+# URL: https://www.gem.wiki/Hai_Lang_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Hai Lang power station''' is a power station in not found, Quảng Trị, Vietnam with multiple units of varying statuses, none of which are currently operating.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Hai Lang power station
+| not found, Quảng Trị, Vietnam
+| 16.994429, 107.115361 (approximate)<ref name="autoref_0">{{cite web |url=https://vietnambiz.vn/du-an-dien-khi-lng-hai-lang-45-ty-usd-duoc-bo-sung-quy-hoach-phat-trien-dien-luc-quoc-gia-20210127161413592.htm |archive-url=https://web.archive.org/web/20210311020910/https://vietnambiz.vn/du-an-dien-khi-lng-hai-lang-45-ty-usd-duoc-bo-sung-quy-hoach-phat-trien-dien-luc-quoc-gia-20210127161413592.htm |archive-date=2021-03-11}}</ref>
+|}
+{{
+#display_map:
+16.994429, 107.115361
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1-1
+| Pre-construction<ref name="autoref_1">{{cite web |url=https://vir.com.vn/hai-lang-lng-power-plant-revises-timeline-targets-2029-launch-134653.html}}</ref><ref name="autoref_2">{{cite web |url=https://laodong.vn/kinh-doanh/sau-khoi-cong-hon-1-nam-du-an-dien-khi-23-ti-usd-o-quang-tri-the-nao-1212253.ldo |title=Sau khởi công hơn 1 năm, dự án điện khí 2,3 tỉ USD ở Quảng Trị thế nào? |date=2023-07-03 |website=laodong.vn |access-date=2024-06-10 |archive-url=https://web.archive.org/web/20240611184604/https://laodong.vn/kinh-doanh/sau-khoi-cong-hon-1-nam-du-an-dien-khi-23-ti-usd-o-quang-tri-the-nao-1212253.ldo |archive-date=2024-06-11}}</ref><ref name="autoref_3">{{cite web |url=https://drive.google.com/open?id=11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw&usp=drive_fs |title=Vietnam Power Development Plan VIII, December 2022 |access-date=2022-12-01 00:00:00 |archive-url=https://web.archive.org/web/20230919154845/https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw%26usp%3Ddrive_fs&followup=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw%26usp%3Ddrive_fs&ifkv=AYZoVhcr7TPfSGs0F6xAt6YYGrwIYWEqSCLp9rL0HmP6t09y-JdKO9uqRI3yOlfY6kKg_sfboBx5&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1929632269%3A1695138525231013&theme=glif |archive-date=2023-09-19 |url-status=live}}</ref><ref name="autoref_4">{{cite web |url=https://theinvestor.vn/quang-tri-province-seeks-to-speed-up-major-lng-power-project-d6189.html |archive-url=https://web.archive.org/web/20230920101035/https://theinvestor.vn/quang-tri-province-seeks-to-speed-up-major-lng-power-project-d6189.html |archive-date=2023-09-20}}</ref><ref name="autoref_5">{{cite web |url=https://www.lexology.com/library/detail.aspx?g=a7f5719d-93ef-4415-9e28-961b311daf35 |archive-url=https://web.archive.org/web/20221204065013/https://www.lexology.com/library/detail.aspx?g=a7f5719d-93ef-4415-9e28-961b311daf35 |archive-date=2022-12-04}}</ref><ref name="autoref_6">{{cite web |url=https://vietnambiz.vn/du-an-dien-khi-lng-hai-lang-45-ty-usd-duoc-bo-sung-quy-hoach-phat-trien-dien-luc-quoc-gia-20210127161413592.htm,http://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf}}</ref><ref name="autoref_0" /><ref name="autoref_7">{{cite web |url=https://thuvienphapluat.vn/van-ban/Thuong-mai/Quyet-dinh-500-QD-TTg-2023-Quy-hoach-phat-trien-dien-luc-quoc-gia-2021-2030-tam-nhin-2050-566461.aspx |archive-url=https://web.archive.org/web/20230731150906/https://thuvienphapluat.vn/van-ban/Thuong-mai/Quyet-dinh-500-QD-TTg-2023-Quy-hoach-phat-trien-dien-luc-quoc-gia-2021-2030-tam-nhin-2050-566461.aspx |archive-date=2023-07-31}}</ref><ref name="autoref_8">{{cite web |url=https://theinvestor.vn/hanwha-energy-kogas-invested-23-bln-lng-power-plant-targets-commercial-operations-in-2029-d8197.html |title=Hanwha Energy, Kogas-invested $2.3 bln LNG power plant targets commercial operations in 2029 |website=theinvestor.vn |access-date=2024-06-06 |archive-url=https://web.archive.org/web/20240607181844/https://theinvestor.vn/hanwha-energy-kogas-invested-23-bln-lng-power-plant-targets-commercial-operations-in-2029-d8197.html |archive-date=2024-06-07}}</ref><ref name="autoref_9">{{cite web |url=https://netzero.vn/en/hai-lang-lng-power-plant-revises-timeline-targets-2029-launch/}}</ref><ref name="autoref_10">{{cite web |url=https://theinvestor.vn/central-vietnam-based-hai-lang-lng-power-project-behind-schedule-authority-d15425.html}}</ref><ref name="autoref_11">{{cite web |url=https://www.lngindustry.com/liquid-natural-gas/27062023/tt-to-develop-lng-and-hydrogen-projects-with-korean-companies/ |archive-url=https://web.archive.org/web/20240607181909/https://www.lngindustry.com/liquid-natural-gas/27062023/tt-to-develop-lng-and-hydrogen-projects-with-korean-companies/ |archive-date=2024-06-07}}</ref>
+| fossil gas: LNG<ref name="autoref_5" /><ref name="autoref_0" /><ref name="autoref_7" /><ref name="autoref_3" />
+| 1500<ref name="autoref_5" /><ref name="autoref_0" /><ref name="autoref_7" /><ref name="autoref_3" />
+| combined cycle<ref name="autoref_12">{{cite web |url=http://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf |archive-url=https://web.archive.org/web/20220929124148/https://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf |archive-date=2022-09-29}}</ref>
+| not found
+| 2029 (planned)<ref name="autoref_10" /><ref name="autoref_7" />
+| not found
+| no
+|-
+| 1-2
+| Cancelled<ref name="autoref_12" /><ref name="autoref_0" /><ref name="autoref_13">{{cite web |url=https://moit.gov.vn/upload/2005517/20210707/du-thao-dien-viii35c6.rar |title=Vietnamese Ministry of Ministry of Industry and Trade,Draft National Power Development Plan for the period of 2021-2030, with a vision to 2045 |access-date=February 1, 2021 |archive-url=https://web.archive.org/web/20220119144528/https://moit.gov.vn/upload/2005517/20210707/du-thao-dien-viii35c6.rar |archive-date=2022-01-19 |url-status=live}}</ref>
+| fossil gas: LNG<ref name="autoref_0" /><ref name="autoref_13" />
+| 1500<ref name="autoref_0" /><ref name="autoref_13" />
+| combined cycle<ref name="autoref_12" />
+| not found
+| –
+| –
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1-1
+| T&T Group JSC [40%]; Hanwha Energy Corp [20%]; Korea Gas Corp [20%]; Korea Southern Power Co Ltd [20%]<ref name="autoref_4" /><ref name="autoref_14">{{cite web |url=https://www.vir.com.vn/tt-group-proposes-lng-project-in-quang-tri-72669.html |archive-url=https://web.archive.org/web/20210311020010/https://www.vir.com.vn/tt-group-proposes-lng-project-in-quang-tri-72669.html |archive-date=2021-03-11}}</ref><ref name="autoref_4" /><ref name="autoref_14" /><ref name="autoref_4" /><ref name="autoref_14" /><ref name="autoref_15">{{cite web |url=https://www.nsenergybusiness.com/projects/hai-lang-lng-power-centre/}}</ref><ref name="autoref_16">{{cite web |url=http://www.newsworld.co.kr/detail.htm?no=8406 |title=newworld |website=newworld |access-date=2025-07-22 |archive-url=https://web.archive.org/web/20260402173321/http://www.newsworld.co.kr/detail.htm?no=8406 |archive-date=2026-04-02}}</ref>
+| T&T Group JSC [40.0%]; Korea Electric Power Corp [20.0%]; Korea Gas Corp [20.0%]; natural person(s) [16.0%]; unknown [4.0%]
+|-
+| 1-2
+| T&T Group JSC [40%]; Hanwha Energy Corp [20%]; Korea Gas Corp [20%]; Korea Southern Power Co Ltd [20%]<ref name="autoref_4" /><ref name="autoref_14" /><ref name="autoref_4" /><ref name="autoref_14" /><ref name="autoref_4" /><ref name="autoref_14" /><ref name="autoref_15" /><ref name="autoref_16" />
+| T&T Group JSC [40.0%]; Korea Electric Power Corp [20.0%]; Korea Gas Corp [20.0%]; natural person(s) [16.0%]; unknown [4.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTM0LjA5JS0tPiAxMDAwMDEwMTEwNjYKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTguMiUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMDQ1NjkKICAgIDEwMDAwMjAwNDU2OVsiS29yZWEgRGV2ZWxvcG1lbnQ8YnI+QmFuayBDbyJdIC0tMzIuOSUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ4LjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTQ3WyJLb3JlYSBFbGVjdHJpYyBQb3dlcjxicj5Db3JwIl0gLS0yMC40NyUtLT4gMTAwMDAxMDExMDY2CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTM3Ljc2JS0tPiAxMDAwMDEwMTEwNjYKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTAwLjAlLS0+IDEwMDAwMjAyNTA0MQogICAgMTAwMDAyMDI1MDQxWyJNaW5pc3RyeSBvZiBIZWFsdGg8YnI+YW5kIFdlbGZhcmUiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDA3MzAKICAgIDEwMDAwMTAwMDczMFsiTmF0aW9uYWwgUGVuc2lvbjxicj5TZXJ2aWNlIChTb3V0aDxicj5Lb3JlYSkiXSAtLTcuNjglLS0+IDEwMDAwMTAxMTA2NgogICAgMTAwMDAxMDExMDY2WyJLb3JlYSBHYXMgQ29ycCJdIC0tMjAuMCUtLT4gUDEwMDAwMDQwNTk3NgogICAgMTAwMDAwMDAwOTQ3WyJLb3JlYSBFbGVjdHJpYyBQb3dlcjxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAyMTExCiAgICAxMDAwMDAwMDIxMTFbIktvcmVhIFNvdXRoZXJuIFBvd2VyPGJyPkNvIEx0ZCJdIC0tMjAuMCUtLT4gUDEwMDAwMDQwNTk3NgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS04MC4wJS0tPiAxMDAwMDAwMDA5NDAKICAgIDEwMDAwMDEzMjM4OF8xWyJ1bmtub3duIl0gLS0yMC4wJS0tPiAxMDAwMDAwMDA5NDAKICAgIDEwMDAwMDAwMDk0MFsiSGFud2hhIEVuZXJneSBDb3JwIl0gLS0yMC4wJS0tPiBQMTAwMDAwNDA1OTc2CiAgICAxMDAwMDAxODg4MTJbIlQmVCBHcm91cCBKU0MiXSAtLTQwLjAlLS0+IFAxMDAwMDA0MDU5NzYKICAgIFAxMDAwMDA0MDU5NzZbIkhhaSBMYW5nIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background==
+
+An investment decision from the Quang Tri Provincial People’s Committee for the US$2.3 billion project was taken in October 2021.
+<ref>[https://en.nhandan.vn/investment-policy-decision-offered-to-hai-lang-lng-electricity-centre-post104943.html Investment policy decision offered to Hai Lang LNG Electricity Centre], Nhan Dan, Oct. 8, 2021</ref>
+
+In January 2024, ''The Investor'' reported that the joint South Korean and Vietnamese sponsors of the project were targeting 2029 for operation of an entire LNG-to-power complex, including the [[Hai Lang LNG Terminal]]. Despite construction on the power plant beginning in 2022, little progress had been made.<ref>{{Cite web|url=https://theinvestor.vn/hanwha-energy-kogas-invested-23-bln-lng-power-plant-targets-commercial-operations-in-2029-d8197.html|title=Hanwha Energy, Kogas-invested $2.3 bln LNG power plant targets commercial operations in 2029|last=theinvestor.vn|website=theinvestor.vn|language=en|access-date=2024-07-16}}</ref>
+
+In May 2024, ''Gas Outlook'' said that "the project has been mired in controversy amid concerns over its economic feasibility." An analysis by the South Korean group Solutions for our Climate (SFOC) found that, based on an internal economic feasibility study, Vietnam's state utility EVN could end up spending up to US$1 billion per year buying electricity generated from the Hai Lang gas plant. In addition, the SFOC report found that the South Korean project developers plan to set electricity prices from the plant at 2,596.5 VND/kWh (US$108.8/MWh), which is 70% higher than the average price of electricity generated at major coal plants in Vietnam.<ref>{{Cite web|url=https://gasoutlook.com/analysis/corporate-self-interest-drives-vietnam-lng-development/|title=Corporate self-interest drives Vietnam LNG development|website=Gas Outlook|language=en-US|access-date=2024-07-16}}</ref>
+
+In November 2024, it was reported that the target construction restart date for the plant was January 2026 by which time a range of challenges were expected to be solved. On this timeline, construction is hoped to be completed by April 2029.<ref> Tri Duc, [https://theinvestor.vn/construction-of-23-bln-central-vietnam-lng-power-plant-to-restart-in-2026-d13366.html Construction of $2.3 bln central Vietnam LNG power plant to restart in 2026], The Investor, Nov. 17, 2024</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Vietnam]]

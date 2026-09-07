@@ -1,0 +1,110 @@
+# GEM wiki page: Al Hidd Power and Water Station
+# URL: https://www.gem.wiki/Al_Hidd_Power_and_Water_Station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Al Hidd Power and Water Station''' (محطة الحد لإنتاج الكهرباء) is an operating power station of at least 987-megawatts (MW) in Al Hidd, Muharraq, Bahrain.
+It is also known as Al-Hidd IWPP, Al Hidd power plant.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Al Hidd Power and Water Station
+| Al Hidd, Muharraq, Bahrain
+| 26.2223, 50.6621 (exact)<ref name="autoref_0">{{cite web |url=https://www.industryabout.com/country-territories-3/1323-bahrain/fossil-fuels-energy/18637-al-hidd-ii-gas-power-plant}}</ref><ref name="autoref_1">{{cite web |url=https://www.industryabout.com/country-territories-3/1323-bahrain/fossil-fuels-energy/18636-al-hidd-i-gas-power-plant}}</ref><ref name="autoref_2">{{cite web |url=http://hpc.com.bh/contactus.asp |archive-url=https://web.archive.org/web/20210624170046/https://hpc.com.bh/contactus.asp |archive-date=2021-06-24}}</ref><ref name="autoref_3">{{cite web |url=https://www.google.com/maps/place/Hidd+Power+Company/@26.2226058,50.6582553,1003m/data=!3m1!1e3!4m5!3m4!1s0x3e49a9cb13afd5b5:0xc7d384548ac74990!8m2!3d26.2224598!4d50.6625151?hl=en-US}}</ref>
+|}
+{{
+#display_map:
+26.2223, 50.6621
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 26.2223, 50.6621
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_4">{{cite web |url=https://cms.malakoff.com.my/WebLITE/Applications/WCM/uploaded/docs/annual-reports/Malakoff_AR2019_Full_Final.pdf |archive-url=https://web.archive.org/web/20211025154350/https://cms.malakoff.com.my/WebLITE/Applications/WCM/uploaded/docs/annual-reports/Malakoff_AR2019_Full_Final.pdf |archive-date=2021-10-25}}</ref>
+| fossil gas: natural gas<ref name="autoref_5">{{cite web |url=http://www.ewa.bh/en/AboutUs/AnnualReport/statistics%202018.pdf |archive-url=https://web.archive.org/web/20220224145415/https://www.ewa.bh/en/AboutUs/AnnualReport/statistics%202018.pdf |archive-date=2022-02-24}}</ref><ref name="autoref_6">{{cite web |url=https://www.powerengineeringint.com/renewables/hydroelectric/independent-power-amp-water-plants-serving-up-success/ |archive-url=https://web.archive.org/web/20210919083514/https://www.powerengineeringint.com/renewables/hydroelectric/independent-power-amp-water-plants-serving-up-success/ |archive-date=2021-09-19}}</ref>
+| 987<ref name="autoref_5" /><ref name="autoref_7">{{cite web |url=https://www.ewa.bh/ar/AboutUs/Documents/StatisticalBook2003.pdf |archive-url=https://web.archive.org/web/20210412120816/https://www.ewa.bh/ar/AboutUs/Documents/StatisticalBook2003.pdf |archive-date=2021-04-12}}</ref>
+| combined cycle<ref name="autoref_4" />
+| not found
+| 2003<ref name="autoref_5" />
+| alstom: 13E2, alstom: Steam turbine<ref name="autoref_8">{{cite web |url=https://www.ewa.bh/en/AboutUs/AnnualReport/2022.pdf}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| ACWA Power Co [30%]; Hidd Power Company BSC [70%]<ref name="autoref_6" /><ref name="autoref_2" /><ref name="autoref_9">{{cite web |url=https://www.acwapower.com/news/acwa-power-completes-acquisition-of-major-power-and-water-desalination-assets-in-bahrain-with-kuwait-to-follow/}}</ref>
+| ACWA Power Co [30.0%]; Malakoff Corporation Bhd [28.0%]; ENGIE SA [21.0%]; Sumitomo Corp [21.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_10">{{cite web |url=https://www.power-eng.com/gas/combined-cycle/bahrain-selects-ip-consortium-for-al-hidd/ |archive-url=https://web.archive.org/web/20210813160305/https://www.power-eng.com/gas/combined-cycle/bahrain-selects-ip-consortium-for-al-hidd/ |archive-date=2021-08-13}}</ref>
+* '''Captive industry''': Chemicals<ref name="autoref_10" />
+* '''Non-industry use''': power<ref name="autoref_10" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAxOThbIkdvdmVybm1lbnQgb2YgU2F1ZGk8YnI+QXJhYmlhIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAxMzU4CiAgICAxMDAwMDAwMDEzNThbIlB1YmxpYyBJbnZlc3RtZW50PGJyPkZ1bmQgKFNhdWRpIEFyYWJpYSkiXSAtLTQ0LjE2JS0tPiAxMDAwMDAwMDA4ODIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tPiAxMDAwMDIwMjE4NjkKICAgIDEwMDAwMjAyMTg2OVsiQWJ1bmF5eWFuIEhvbGRpbmcgQ28iXSAtLT4gMTAwMDAwMDAwODkzCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAyMDIxODcwCiAgICAxMDAwMDIwMjE4NzBbIkFsIE11aGFpZGliIEdyb3VwIl0gLS0+IDEwMDAwMDAwMDg5MwogICAgMTAwMDAwMDAwODkzWyJWaXNpb24gSW50ZXJuYXRpb25hbDxicj5JbnZlc3RtZW50IENvIl0gLS0yMi43NSUtLT4gMTAwMDAwMDAwODgyCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTMzLjA5JS0tPiAxMDAwMDAwMDA4ODIKICAgIDEwMDAwMDAwMDg4MlsiQUNXQSBQb3dlciBDbyJdIC0tMzAuMCUtLT4gUDEwMDAwMDQwNTQ1NwogICAgMTAwMDAwMTIzMjYxXzNbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS05OS45JS0tPiAxMDAwMDIwMjE5NzEKICAgIDEwMDAwMjAyMTk3MVsiSW5kcmEgQ2l0YSBTZG4gQmhkIl0gLS05OS45JS0tPiAxMDAwMDEwMDAzNjgKICAgIDEwMDAwMTAwMDM2OFsiU2VhcG9ydCBUZXJtaW5hbDxicj4oSm9ob3JlKSBTZG4gQmhkIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAwNjk5CiAgICAxMDAwMDAwMDA2OTlbIk1NQyBDb3Jwb3JhdGlvbiBCaGQiXSAtLTM4LjQ1JS0tPiAxMDAwMDAwMDM1MjcKICAgIDEwMDAwMTAxMDY0M1siR292ZXJubWVudCBvZjxicj5NYWxheXNpYSJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxMDg1NgogICAgMTAwMDAxMDEwODU2WyJVcnVzYWhhcnRhIEphbWFhaDxicj5TZG4gQmhkIl0gLS0xMC4yMSUtLT4gMTAwMDAwMDAzNTI3CiAgICAxMDAwMDIwMjIwNDhbIllheWFzYW4gUGVsYWJ1cmFuPGJyPkJ1bWlwdXRyYSJdIC0tPiAxMDAwMDEwMTA4NTUKICAgIDEwMDAwMTAxMDg1NVsiUGVybW9kYWxhbiBOYXNpb25hbDxicj5CaGQiXSAtLTExLjglLS0+IDEwMDAwMDAwMzUyNwogICAgMTAwMDAxMDEwNjQzWyJHb3Zlcm5tZW50IG9mPGJyPk1hbGF5c2lhIl0gLS0+IDEwMDAwMDAwMjAwOAogICAgMTAwMDAwMDAyMDA4WyJFbXBsb3llZXMgUHJvdmlkZW50PGJyPkZ1bmQgb2YgTWFsYXlzaWEiXSAtLTEwLjA1JS0tPiAxMDAwMDAwMDM1MjcKICAgIDEwMDAwMTAxMDY0M1siR292ZXJubWVudCBvZjxicj5NYWxheXNpYSJdIC0tPiAxMDAwMDEwMDA0MTQKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDQxNAogICAgMTAwMDAxMDAwNDE0WyJLdW1wdWxhbiBXYW5nPGJyPlBlcnNhcmFhbiJdIC0tOS4yNSUtLT4gMTAwMDAwMDAzNTI3CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTIwLjI0JS0tPiAxMDAwMDAwMDM1MjcKICAgIDEwMDAwMDAwMzUyN1siTWFsYWtvZmYgQ29ycG9yYXRpb248YnI+QmhkIl0gLS0+IDEwMDAwMDAwMzIxMgogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02OS4yNSUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N181WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tOS40NiUtLT4gMTAwMDAwMDAwNjU3CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfN1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS01Ny44NSUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMjMyNjFfNFsibmF0dXJhbCBwZXJzb24ocykiXSAtLTIxLjEzJS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEzNDIyMlsiTWl6dWhvIEZpbmFuY2lhbDxicj5Hcm91cCBJbmMiXSAtLTI3LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTYuNSUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuMTYlLS0+IDEwMDAwMDAwMDY1NwogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjEzJS0tPiAxMDAwMDAwMDA2NTcKICAgIDEwMDAwMDAwMDY1N1siU3VtaXRvbW8gQ29ycCJdIC0tPiAxMDAwMDAwMDMyMTIKICAgIDEwMDAwMDAwMDg4MlsiQUNXQSBQb3dlciBDbyJdIC0tPiAxMDAwMDAwMDMyMTIKICAgIDEwMDAwMDAwMzIxMlsiSGlkZCBQb3dlciBDb21wYW55PGJyPkJTQyJdIC0tNzAuMCUtLT4gUDEwMDAwMDQwNTQ1NwogICAgUDEwMDAwMDQwNTQ1N1siQWwgSGlkZCBQb3dlciBhbmQ8YnI+V2F0ZXIgU3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Bahrain]]

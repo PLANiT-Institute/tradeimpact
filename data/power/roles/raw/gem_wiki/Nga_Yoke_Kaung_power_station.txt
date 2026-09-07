@@ -1,0 +1,103 @@
+# GEM wiki page: Nga Yoke Kaung power station
+# URL: https://www.gem.wiki/Nga_Yoke_Kaung_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Nga Yoke Kaung power station''' is a cancelled power station in Nga Yoke Kaung, Ngapudaw Township, Ayeyarwady, Myanmar.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Nga Yoke Kaung power station
+| Nga Yoke Kaung, Ngapudaw Township, Ayeyarwady, Myanmar
+| 16.537778, 94.693611 (approximate)
+|}
+{{
+#display_map:
+16.537778, 94.693611
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Cancelled
+| coal: unknown<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 300
+| ultra-supercritical
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Owner
+!Parent
+|-
+| Mitsubishi Corporation Energy Solutions Ltd [50%]; A1 Group Inc [50%]
+| A1 Group Inc [50.0%]; Mitsubishi Corp [50.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+In September 2014, the Burma Ministry of Electric Power, the A1 Group of Companies, and a consortium of Japanese companies including Mitsubishi announced they would partner to build the Nga Yoke Kaung coal power plant, with a total installed capacity of 300 MW.<ref name=irr>[http://www.irrawaddy.org/business/locals-block-coal-plant-survey-mitsubishi-promises-japan-study-trip.html "After Locals Block Coal Plant Survey, Mitsubishi Promises Japan Study Trip,"] The Irrawaddy, February 3, 2015</ref> 
+
+In February 2015, employees of the A1 Group of Companies were met by more than 200 residents of the coastal region of Nga Yoke Kaung. The employees left the area before completing the preliminary project survey work after being told the project did not have local support. Around 200 acres of land would have been required to build the power plant, and affected villagers would have needed to be relocated.<ref name=irr>[http://www.irrawaddy.org/business/locals-block-coal-plant-survey-mitsubishi-promises-japan-study-trip.html "After Locals Block Coal Plant Survey, Mitsubishi Promises Japan Study Trip,"] The Irrawaddy, February 3, 2015</ref>
+
+In July 2015, Irrawaddy Division’s Electricity and Industry Minister confirmed feasibility studies on the project had been suspended due to local opposition, although the chairman of the A1 Group of Companies said it was due to the monsoon season.<ref>[http://www.irrawaddy.org/burma/irrawaddy-division-coal-power-plant-grounded-on-local-pushback.html "Irrawaddy Division Coal Power Plant Grounded on Local Pushback,"] Irrawaddy, July 6, 2015</ref>
+
+==Funding==
+
+The Japanese consortium and A1 Group were set to fund 30 percent of the power plant, with the remainder to be funded by loans from the World Bank (WB) and Asian Development Bank (ADB), according to A1 Group chairman Yan Win in 2015. However, the WB and ADB did not confirm their involvement.<ref name=irr>[http://www.irrawaddy.org/business/locals-block-coal-plant-survey-mitsubishi-promises-japan-study-trip.html "After Locals Block Coal Plant Survey, Mitsubishi Promises Japan Study Trip,"] The Irrawaddy, February 3, 2015</ref>
+
+==Coal source==
+
+Coal for the plant was to be imported from Indonesia and Australia, with A1 announcing that a deep sea port catering to bulk carriers of up to 80,000 tonnes capacity would be built next to the power station.<ref name=irr>[http://www.irrawaddy.org/business/locals-block-coal-plant-survey-mitsubishi-promises-japan-study-trip.html "After Locals Block Coal Plant Survey, Mitsubishi Promises Japan Study Trip,"] The Irrawaddy, February 3, 2015</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Myanmar]]

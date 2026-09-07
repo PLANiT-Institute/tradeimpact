@@ -1,0 +1,197 @@
+# GEM wiki page: Long An power station
+# URL: https://www.gem.wiki/Long_An_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Show badges |Navbar-GOGPT-tracker|Navbar-Global_Coal_Plant_Tracker}}
+'''Long An power station''' is a power station in Phuoc Vinh Dong, Can Giuoc, Long An, Vietnam with multiple units of varying statuses, none of which are currently operating.
+It is also known as Can Duoc-1 power station (Phase I Unit 1, Phase I Unit 2), Can Duoc-2 power station (Phase II Unit 1, Phase II Unit 2), Can Duoc power station.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Long An power station
+| Phuoc Vinh Dong, Can Giuoc, Long An, Vietnam
+| 10.5716, 106.73406 (exact)
+|}
+{{
+#display_map:
+10.5716, 106.73406
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, Phase I Unit 1, Phase I Unit 2, Phase II Unit 1, Phase II Unit 2''': 10.5716, 106.73406
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Announced<ref name="autoref_0">{{cite web |url=https://vietnamnews.vn/economy/1717846/long-an-to-commence-construction-of-bridges-and-lng-power-plants-in-q3.html}}</ref><ref name="autoref_1">{{cite web |url=https://theinvestor.vn/4-bln-lng-to-power-mekong-delta-project-targets-2029-completion-d5792.html |archive-url=https://web.archive.org/web/20230718124214/https://theinvestor.vn/4-bln-lng-to-power-mekong-delta-project-targets-2029-completion-d5792.html |archive-date=2023-07-18}}</ref><ref name="autoref_2">{{cite web |url=https://drive.google.com/open?id=11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw&usp=drive_fs |title=Vietnam Power Development Plan VIII, December 2022 |access-date=2022-12-01 00:00:00 |archive-url=https://web.archive.org/web/20230919154845/https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw%26usp%3Ddrive_fs&followup=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw%26usp%3Ddrive_fs&ifkv=AYZoVhcr7TPfSGs0F6xAt6YYGrwIYWEqSCLp9rL0HmP6t09y-JdKO9uqRI3yOlfY6kKg_sfboBx5&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1929632269%3A1695138525231013&theme=glif |archive-date=2023-09-19 |url-status=live}}</ref><ref name="autoref_3">{{cite web |url=http://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf |archive-url=https://web.archive.org/web/20220929124148/https://vepg.vn/wp-content/uploads/2021/09/5.9.2021-Draft-PDP8_En.pdf |archive-date=2022-09-29}}</ref><ref name="autoref_4">{{cite web |url=https://theinvestor.vn/southern-vietnam-province-completes-site-clearance-for-3-bln-lng-power-project-d12917.html |archive-url=https://web.archive.org/web/20250529205402/https://theinvestor.vn/southern-vietnam-province-completes-site-clearance-for-3-bln-lng-power-project-d12917.html |archive-date=2025-05-29}}</ref><ref name="autoref_5">{{cite web |url=https://vietnamenergy.vn/proposing-to-convert-fuel-from-coal-to-lng-for-long-an-1-2-tpps-23985.html |archive-url=https://web.archive.org/web/20210825214716/https://vietnamenergy.vn/proposing-to-convert-fuel-from-coal-to-lng-for-long-an-1-2-tpps-23985.html |archive-date=2021-08-25}}</ref><ref name="autoref_6">{{cite web |url=https://thuvienphapluat.vn/van-ban/Thuong-mai/Quyet-dinh-500-QD-TTg-2023-Quy-hoach-phat-trien-dien-luc-quoc-gia-2021-2030-tam-nhin-2050-566461.aspx |archive-url=https://web.archive.org/web/20230731150906/https://thuvienphapluat.vn/van-ban/Thuong-mai/Quyet-dinh-500-QD-TTg-2023-Quy-hoach-phat-trien-dien-luc-quoc-gia-2021-2030-tam-nhin-2050-566461.aspx |archive-date=2023-07-31}}</ref><ref name="autoref_7">{{cite web |url=https://vir.com.vn/lackadaisical-lng-progress-hinders-plans-111685.html |title=Lackadaisical LNG progress hinders plans |date=2024-06-06 |website=Vietnam Investment Review - VIR |access-date=2024-06-06 |archive-url=https://web.archive.org/web/20240607184203/https://vir.com.vn/lackadaisical-lng-progress-hinders-plans-111685.html |archive-date=2024-06-07}}</ref><ref name="autoref_8">{{cite web |url=https://theinvestor.vn/southern-vietnam-province-announces-further-delay-of-1500-mw-lng-to-power-project-d11751.html |title=Southern Vietnam province announces further delay of 1,500-MW LNG-to-power project |website=theinvestor.vn |access-date=2024-10-17 |archive-url=https://web.archive.org/web/20250519200716/https://theinvestor.vn/southern-vietnam-province-announces-further-delay-of-1500-mw-lng-to-power-project-d11751.html |archive-date=2025-05-19}}</ref>
+| fossil gas: LNG<ref name="autoref_9">{{cite web |url=http://nangluongvietnam.vn/news/en/electricity/proposing-to-convert-fuel-from-coal-to-lng-for-long-an-1-2-tpps.html |archive-url=https://web.archive.org/web/20210310161746/http://nangluongvietnam.vn/news/en/electricity/proposing-to-convert-fuel-from-coal-to-lng-for-long-an-1-2-tpps.html |archive-date=2021-03-10}}</ref>
+| 1500<ref name="autoref_10">{{cite web |url=https://insightplus.bakermckenzie.com/bm/energy-mining-infrastructure_1/vietnam-key-highlights-of-new-draft-of-national-power-development-plan-draft-pdp8 |archive-url=https://web.archive.org/web/20240405045547/https://insightplus.bakermckenzie.com/bm/energy-mining-infrastructure_1/vietnam-key-highlights-of-new-draft-of-national-power-development-plan-draft-pdp8 |archive-date=2024-04-05}}</ref><ref name="autoref_11">{{cite web |url=https://www.vir.com.vn/long-an-1-and-2-thermal-power-plants-to-switch-to-lng-model-76308.html |archive-url=https://web.archive.org/web/20220712085309/http://vir.com.vn/long-an-1-and-2-thermal-power-plants-to-switch-to-lng-model-76308.html |archive-date=2022-07-12}}</ref>
+| unknown
+| not found
+| 2029 (planned)<ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_12">{{cite web |url=https://www.lexology.com/library/detail.aspx?g=a7f5719d-93ef-4415-9e28-961b311daf35 |archive-url=https://web.archive.org/web/20221204065013/https://www.lexology.com/library/detail.aspx?g=a7f5719d-93ef-4415-9e28-961b311daf35 |archive-date=2022-12-04}}</ref><ref name="autoref_6" /><ref name="autoref_8" />
+| no
+|-
+| 2
+| Announced<ref name="autoref_0" /><ref name="autoref_1" /><ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_5" /><ref name="autoref_6" /><ref name="autoref_7" />
+| fossil gas: LNG<ref name="autoref_9" />
+| 1500<ref name="autoref_10" /><ref name="autoref_11" /><ref name="autoref_8" />
+| unknown
+| not found
+| 2035 (planned)<ref name="autoref_2" /><ref name="autoref_3" /><ref name="autoref_12" /><ref name="autoref_13">{{cite web |url=https://www.frasersvn.com/api/uploads/Legal_Update_The_Revised_PDP_8_EN_April_2025_5cec48fd6d.pdf |archive-url=https://web.archive.org/web/20250529205325/https://www.frasersvn.com/api/uploads/Legal_Update_The_Revised_PDP_8_EN_April_2025_5cec48fd6d.pdf |archive-date=2025-05-29}}</ref><ref name="autoref_6" /><ref name="autoref_8" />
+| no
+|-
+| Phase I Unit 1
+| Cancelled
+| coal: bituminous
+| 600
+| unknown
+| –
+| –
+| no
+|-
+| Phase I Unit 2
+| Cancelled
+| coal: bituminous
+| 600
+| unknown
+| –
+| –
+| no
+|-
+| Phase II Unit 1
+| Cancelled
+| coal: bituminous
+| 800
+| unknown
+| –
+| 2026
+| no
+|-
+| Phase II Unit 2
+| Cancelled
+| coal: bituminous
+| 800
+| unknown
+| –
+| 2027
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| VinaCapital Group Ltd [100%]<ref name="autoref_11" />
+| VinaCapital Group Ltd [100.0%]
+|-
+| 2
+| VinaCapital Group Ltd [100%]<ref name="autoref_11" />
+| VinaCapital Group Ltd [100.0%]
+|-
+| Phase I Unit 1
+| Daewoo Engineering & Construction Co Ltd [100%]
+| Daewoo Engineering & Construction Co Ltd [100.0%]
+|-
+| Phase I Unit 2
+| Daewoo Engineering & Construction Co Ltd [100%]
+| Daewoo Engineering & Construction Co Ltd [100.0%]
+|-
+| Phase II Unit 1
+| Daewoo Engineering & Construction Co Ltd [100%]
+| Daewoo Engineering & Construction Co Ltd [100.0%]
+|-
+| Phase II Unit 2
+| Daewoo Engineering & Construction Co Ltd [100%]
+| Daewoo Engineering & Construction Co Ltd [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Background==
+
+The proposal was initially a 1,200 (MW) coal plant, with a second phase of 1,600 MW. In October 2018 the central government conceded to provincial government opposition to using coal as the fuel for the plant. The provincial government is supporting the use of LNG for the proposed plant.<ref name="oct18">[https://vietnamnews.vn/society/468524/southern-provinces-want-environmentally-friendly-lng-power-not-coal-power.html "Southern provinces want environmentally-friendly LNG power, not coal power"], ''Viet Nam News'', October 25, 2018.</ref>
+
+In 2007, ITA-Power Company, a subsidiary of the [[Tan Tao Group]], announced that it was planning to build a 600-MW coal power plant in the Cần Đước district of Long An province, scheduled for completion in 2013. In August, 2007, the Vietnam Infrastructure Limited investment fund announced that it would be responsible for 40% of the $700-800 million required to build the plant, and in October ITA-Power stated that it would be investing $270 million of its own funds in the project.<ref>[http://vccinews.com/news_detail.asp?news_id=11366 ITA-Power to Build 600-MW Thermo-Power Plant in Southern Vietnam], ''Vietnam Business Forum'', Oct. 4, 2007.</ref><ref>[http://www.reuters.com/article/2007/08/14/vietnam-fund-power-idUKB27643220070814 Vietnam Infrastructure, ITACO to Build Power Plant], ''Reuters'', Aug. 14, 2007.</ref>
+
+In July 2009, a 218-hectare site for the proposed plant, in Long Hựu Tây commune, was approved by Vietnam Deputy Prime Minister Hoang Trung Hai.<ref>[http://www.qdnd.vn/qdndsubsite/en-US/75/72/182/156/189/82266/Default.aspx 2 More Thermo-Power Projects to Be Erected in Bac Giang and Long An], ''People's Army Newspaper'', July 1, 2009.</ref> For years afterwards, there were no further reports on the project's progress.
+
+In April 2015, the project was revived, now as a two-unit, 1,200-MW coal-fired plant, after the provincial government threw its support behind a new proposal by [[Daewoo Engineering & Construction]], following a visit by Daewoo E&C representatives to the province. Provincial officials stressed that the plant must include environmental controls, however.<ref>[http://www.vir.com.vn/daewoo-ec-proposes-long-an-thermal-power-plant.html Daewoo E&C proposes Long An thermal power plant], Vietnam Investment Review, 21 Apr. 2015.</ref> 
+
+In July 2016, following a meeting between Daewoo and provincial officials, both parties said they would be moving forward with the proposal. A different location was chosen for the plant, in Phuoc Vinh Dong Commune, Can Giuoc District. The new site is significantly closer to Ho Chi Minh City — now only about 20 km from the center of the city.<ref name="nangluong">[http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/thong-nhat-dia-diem-xay-dung-du-an-nhiet-dien-long-an-i.html Thống nhất địa điểm xây dựng dự án nhiệt điện Long An I], Nang Luong Vietnam, 30 July 2016.</ref> The proposal would cost $2.7 billion, with completion scheduled for 2020.<ref>[http://www.tmhpp.com.vn/d4/news/Han-Quoc-dau-tu-nha-may-nhiet-dien-than-27-ti-USD-tai-Long-An-1-2599.aspx Hàn Quốc đầu tư nhà máy nhiệt điện than 2,7 tỉ USD tại Long An], EVN Electrical Industry News, 1 Aug. 2017.</ref><ref>[http://baolongan.vn/long-an-lam-viec-voi-tap-doan-daewoo-e-c-han-quoc-a22624.html Long An làm việc với Tập đoàn Daewoo E&C Hàn Quốc], Bao Long An, 29 July 2016.</ref>
+
+In March 2017, in consultations with the Ministry of Industry & Trade, Long An provincial officials again recommended the Phước Vĩnh Đông site — but Ho Chi Minh City officials pushed back against the site, fearing that it would expose the city to pollution.<ref>[http://moitruong.net.vn/xay-nhiet-dien-5-ty-usd-o-long/ Xây nhiệt điện 5 tỷ USD ở Long An], Moi Truong, 17 Mar. 2017.</ref>
+
+In May 2017, the Long An provincial government proposed switching the plant from coal to liquefied natural gas (LNG).<ref>[http://bluevn.info/de-nghi-chuyen-nhiet-dien-long-tu-sang-khi.html Đề nghị chuyển nhiệt điện Long An từ than sang khí], Blue VN, 13 May 2017.</ref>
+
+After initially refusing to allow Long An Province to block the plants, Vietnam's powerful Ministry of Energy and other agencies conceded in October 2018 that they “respect” the decision to oppose the plants by provincial authorities. The decision follows the national government agreeing in late 2016 to scrap the proposed 1200 MW Than Bạc Lieu power station after the province stated its opposition to the coal plants and its preference for an LNG fired project. The Long An provincial government is in discussions with companies potentially interested in building a US$5 billion plant run on liquified natural gas at the same site.<ref name="oct18">[https://vietnamnews.vn/society/468524/southern-provinces-want-environmentally-friendly-lng-power-not-coal-power.html "Southern provinces want environmentally-friendly LNG power, not coal power"], ''Viet Nam News'', October 25, 2018.</ref>
+
+In 2020, VinaCapital Group Ltd. and other investors were put in charge of the gas project. In March 2021, it was announced that the province of Long An had licensed the 3,000 MW liquefied natural gas power plant to be built by South Korea's GS Energy and fund management company VinaCapital. With an overall cost of US$3 billion, it will comprise two combined-cycle power plants, Long An 1 and 2, with a capacity of 1,500 MW each. Long An 1 is anticipated to go on stream in December 2025, and Long An 2 a year later.<ref name=VNE> Thuy Thien, [https://e.vnexpress.net/news/business/industries/long-an-province-licenses-3-bln-lng-power-plant-4252076.html Long An Province licenses $3-bln LNG power plant], VNE Express International, Mar. 22, 2021</ref> In 2021, the two unit, 3,000 MW Long An liquefied natural gas power plant was licensed by the province of Long An.<ref name=VNE> Thuy Thien, [https://e.vnexpress.net/news/business/industries/long-an-province-licenses-3-bln-lng-power-plant-4252076.html Long An Province licenses $3-bln LNG power plant], VNE Express International, Mar. 22, 2021</ref>
+
+However, draft PDP8 from February 2021 pushed the first phase's start year to 2029-2030 and notes the proposal hasn't "yet had enough investment". There is no discussion of the second phase so its status is now shelved.<ref name='draftPDP8'>[https://moit.gov.vn/upload/2005517/20210707/du-thao-dien-viii35c6.rar Draft National Power Development Plan for the period of 2021-2030, with a vision to 2045], Vietnamese Ministry of Ministry of Industry and Trade, February 2021</ref>
+
+==Financing==
+
+In June 2023, the Export-Import Bank of Korea signed a memorandum of understanding with Vietnam’s VinaCapital Group and Korea’s GS Energy to finance the US$3.13 billion Long An 1 and 2 gas units.<ref>Nguyen Thuy, [https://theinvestor.vn/korea-eximbank-to-fund-3-bln-lng-power-complex-in-southern-vietnam-d5513.html Korea Eximbank to fund $3 bln LNG power complex in southern Vietnam], The Investor, Jun. 23, 2023</ref> As of October 2024, financing deals for the project did not appear to have been concluded but it was reported that Long An province had completed site clearance for the project.<ref>Tri Duc, [https://theinvestor.vn/southern-vietnam-province-completes-site-clearance-for-3-bln-lng-power-project-d12917.html Southern Vietnam province completes site clearance for $3 bln LNG power project], The Investor, Oct. 17, 2024</ref>
+
+==Alternate location==
+
+[[File:Long An.jpg|thumb|right|upright=2|Photo courtesy of ilovemountains.org.]]
+In response to concerns about the proposed location of the project in Cần Giuộc district, the People's Committee of Ho Chi Minh City has supported a new location in Cần Đước, as shown in the map.<ref>[http://www.bbc.com/vietnamese/vietnam-39288571 "Nhiệt điện Long An: Bộ Công Thương trấn an dư luận?"] BBC, 20 March 2017.</ref>
+
+==Opposition==
+
+Prof. Nguyen Dinh Tuan, a professor at the Ho Chi Minh City University of Natural Resources and Environment, argued against the plant's construction in March 2017, arguing that its location — about 20 km from the center of Ho Chi Minh City — would mean that the plant would cause respiratory disease for people living in the city. The Ministry of Industry & Trade was apparently open to the idea of considering alternate locations.<ref>[http://www.baomoi.com/xay-nha-may-nhiet-dien-o-long-an-se-anh-huong-den-nguoi-dan-quan-1-8-va-phu-my-hung/c/21816428.epi Xây nhà máy nhiệt điện ở Long An sẽ ảnh hưởng đến người dân quận 1, 8 và Phú Mỹ Hưng], Bao Moi, 21 Mar. 2017.</ref> Local officials, as well as officials in Ho Chi Minh City, have also expressed concerns.<ref>[http://cafef.vn/ban-khoan-du-an-nhiet-dien-ty-do-tai-long-an-2017040407092993.chn Băn khoăn dự án nhiệt điện tỷ đô tại Long An], Cafe F, 4 Apr. 2017.</ref><ref>[http://vnexpress.net/tin-tuc/thoi-su/tp-hcm-lo-ngai-nhiet-dien-5-ty-usd-o-long-an-gay-o-nhiem-3556218.html TP HCM lo ngại nhiệt điện 5 tỷ USD ở Long An gây ô nhiễm], VN Express, 16 Mar. 2017.</ref><ref>[http://tuoitre.vn/tin/chinh-tri-xa-hoi/20170427/cu-tri-long-an-lo-lang-viec-xay-nha-may-nhiet-dien/1305501.html Cử tri Long An lo lắng việc xây nhà máy nhiệt điện], Tuoi Tre, 27 Apr. 2017.</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including interactive maps of the power stations, downloadable datasets, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] and the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Vietnam]][[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Vietnam]]

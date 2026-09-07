@@ -1,0 +1,179 @@
+# GEM wiki page: Mong Duong power station
+# URL: https://www.gem.wiki/Mong_Duong_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Mong Duong power station''' is an operating power station of at least 2320-megawatts (MW) in Mong Duong, Cam Pha, Quảng Ninh, Vietnam.
+
+==Location==
+==== '''Table 1:''' Project-level location details ====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Mong Duong power station
+| Mong Duong, Cam Pha, Quảng Ninh, Vietnam
+| 21.07324, 107.34847 (exact)
+|}
+{{
+#display_map:
+21.07324, 107.34847
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Phase 1 Unit 1, Phase 1 Unit 2, Phase 2 Unit 1, Phase 2 Unit 2''': 21.07324, 107.34847
+
+==Project Details==
+==== '''Table 2:''' Unit-level details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Phase 1 Unit 1
+| Operating
+| coal: anthracite<ref name="autoref_0">{{cite web |url=https://baoquangninh.vn/tap-trung-pha-tron-than-cap-cho-nganh-dien-3360063.html}}</ref>
+| 540
+| subcritical
+| 2015
+| False
+|-
+| Phase 1 Unit 2
+| Operating
+| coal: anthracite<ref name="autoref_0" />
+| 540
+| subcritical
+| 2015
+| False
+|-
+| Phase 2 Unit 1
+| Operating
+| coal: anthracite<ref name="autoref_0" />
+| 620
+| subcritical
+| 2015
+| False
+|-
+| Phase 2 Unit 2
+| Operating
+| coal: anthracite<ref name="autoref_0" />
+| 620
+| subcritical
+| 2015
+| False
+|}
+==== '''Table 3:''' Unit-level ownership and operator details ====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Phase 1 Unit 1
+| Vietnam Electricity LLC [100%]
+| Vietnam Electricity LLC [100.0%]
+|-
+| Phase 1 Unit 2
+| Vietnam Electricity LLC [100%]
+| Vietnam Electricity LLC [100.0%]
+|-
+| Phase 2 Unit 1
+| AES-VCM Mong Dong Power Co Ltd [100%]
+| Indenelem establishment [51.0%]; POSCO International Corp [30.0%]; China Investment Corp [19.0%]
+|-
+| Phase 2 Unit 2
+| AES-VCM Mong Dong Power Co Ltd [100%]
+| Indenelem establishment [51.0%]; POSCO International Corp [30.0%]; China Investment Corp [19.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic/imported
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+==Financing==
+
+*'''Source of financing:''' Mông Dương-1: Export-Import Bank of Korea 40%, [[Asian Development Bank]] 60%;<ref name=Korea>[http://www.businesswire.com/news/home/20150511005348/en/AES-Achieves-Commercial-Operation-1240-MW-Mong#.VeJfwVNViko AES Achieves Commercial Operation of 1,240 MW Mong Duong 2 Plant in Vietnam], AES Corp press release, 11 May 2015.</ref>
+
+Mông Dương-2: '''US$1,461.29 million''' in debt from HSBC, ING Group, Sumitomo Mitsui Banking Corporation, BNP Paribas, Standard Chartered Bank, CIC Bank, Natixis, Societe Generale, Credit Agricole Group, UniCredit, DZ Bank, Mizuho Financial Group, and Export-Import Bank of Korea; '''US$487 million''' in equity from POSCO, AES Corporation, and China Investment Corporation;<ref name = ij>{{Cite web|url=https://ijglobal.com/data/transaction/17814/mong-duong-2-coal-fired-power-plant-124gw-ipp|title=Preview of Mong Duong 2 Coal-Fired Power Plant (1.24GW) IPP {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-11-30}}</ref> '''US$1,163.91 million''' in refinancing debt from HSBC, SMBC Nikko Securities, Citigroup, and Standard Chartered Bank<ref>{{Cite web|url=https://ijglobal.com/data/transaction/47453/mong-duong-2-coal-fired-power-plant-124gw-refinancing-2019|title=Preview of Mong Duong 2 Coal-Fired Power Plant (1.24GW) Refinancing 2019 {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-11-30}}</ref>
+
+==Background==
+
+===Mông Dương-1===
+In 2006, the Vietnamese government applied for a loan from the [[Asian Development Bank]] for the construction of Mông Dương-1, a proposed two-unit, 1,080-MW, mine-to-mouth coal-fired power plant in the Mông Dương district of Cẩm Phả city, in the heart of Vietnam's coal mining region. At the time, [[Electricity of Vietnam]] (EVN), the sponsor of Mông Dương-1, was going through privatization.<ref>[https://www.devex.com/projects/tenders/mong-duong-1-thermal-power-project-in-vietnam/40828 Mong Duong 1 Thermal Power Project In Vietnam], Devex website, accessed Jan. 2014.</ref><ref>[http://www.amchamvietnam.com/1697/adb-electric-power-investment-in-vietnam/ ADB Electric Power Investment in Vietnam], U.S. Chamber of Commerce Vietnam, Sept. 21, 2007.</ref> 
+
+In October 2011, after years of apparent delays, construction on Mông Dương-1 broke ground, with Hyundai Construction & Engineering, a subsidiary of [[Hyundai Motor Group]], serving as engineering & construction contractor.<ref>[http://www.pecc1.com.vn/Nhiet-dien_34/Nhiet-dien-Mong-Duong-1_691.aspx Nhiệt điện Mông Dương 1], Power Engineering Consulting JSC I website, accessed Jan. 2014.</ref> The first unit went online in March 2015, and the second unit in October 2015.<ref>[http://www.quangninh.gov.vn/en-us/Pages/Tin%20chi%20ti%E1%BA%BFt.aspx?newsid=1226&dt=2013-08-30&cid=1 Mong Duong 1 Thermal-Power Plant: 1B Steam Drum Successfully Installed], Quanh Ninh provincial website, Aug. 30, 2013.</ref><ref>[http://vneconomictimes.com/article/business/mong-duong-thermal-power-plant-1-to-soon-connect-to-grid Mong Duong Thermal Power Plant 1 to soon connect to grid], Vietnam Economic Times, 10 Jan. 2015.</ref> By May 2015, both units had been successfully tested;<ref>[http://www.genco3.com/d4/news/To-may-so-2-Du-an-Nhiet-dien-Mong-Duong-lan-dau-hoa-luoi-dien-Quoc-gia-thanh-cong-1-255.aspx Tổ máy số 2 Dự án Nhiệt điện Mông Dương lần đầu hòa lưới điện Quốc gia thành công], EVN press release, 29 May 2015.</ref> however, both units were apparently still under construction at that point.
+
+In December 2014, a financing agreement for the project was closed. The Asian Development Bank and Export-Import Bank of Korea provided US$1,440.85 million in loans.<ref>{{Cite web|url=https://ijglobal.com/data/transaction/16009/mong-duong-1-thermal-power-plant|title=Preview of Mong Duong 1 Thermal Power Plant {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-11-30}}</ref>
+
+Unit 1 was completed in September 2015 and Unit 2 was completed in December 2015.<Ref>Jung Min-hee, [http://businesskorea.co.kr/english/news/industry/13604-vietnamese-thermal-power-plant-hyundai-ec-completes-mong-duong-1-thermal-power "Vietnamese Thermal Power Plant - Hyundai E&C Completes Mong Duong 1 Thermal Power Plant Construction in Vietnam,"] Business Korea, 19 January 2016</ref>
+
+In August 2025, Mông Dương-1 Unit 1 was reportedly undergoing a 60 day mechanical overhaul.<ref>[https://www.evn.com.vn/d/vi-VN/news/To-may-S1-Nhiet-dien-Mong-Duong-1-se-duoc-dai-tu-trong-60-ngay-60-14-503805 Tổ máy S1 Nhiệt điện Mông Dương 1 sẽ được đại tu trong 60 ngày], Tập đoàn Điện lực Việt Nam, July 24, 2025</ref> In March 2026, a major overhaul was planned for the second generator.<ref>[https://tuoitre.vn/nha-may-nhiet-dien-mong-duong-1-san-sang-cho-cao-diem-dien-mua-kho-20260314182314687.htm Nhà máy nhiệt điện Mông Dương 1 sẵn sàng cho cao điểm điện mùa khô], Tuổi Trẻ, March 14, 2026</ref>
+
+===Mông Dương-2===
+In December 2008, the Vietnamese government agreed to grant an investment license to AES-VCM Mong Duong Power Company — a joint venture of U.S. company [[AES]], Korea's [[POSCO]], and [[China Power Investment Corporation]] — to build the 1,200-MW Mông Dương-2.<ref>[http://www.reuters.com/article/2008/12/29/vietnam-aes-plant-idUSHAN41981920081229 Vietnam to Approve AES Coal-Fired Power Plant], ''Reuters'', Dec. 28, 2008.</ref> The project is also listed at 1240 MW (2 x 620 MW).<ref name=Power>[http://www.power-eng.com/articles/2010/12/doosan-heavy-to-build.html Doosan Heavy to Build 1240 MW Coal Power Plant in Vietnam], ''Power Engineering'', Dec. 14, 2010.</ref> In Dec. 2010, with all necessary permits in hand, AES hired Korea's Dooson Heavy Industries, a subsidiary of the [[Doosan Group]], to build the plant, with completion scheduled for 2015.<ref name=Power>[http://www.power-eng.com/articles/2010/12/doosan-heavy-to-build.html Doosan Heavy to Build 1240 MW Coal Power Plant in Vietnam], ''Power Engineering'', Dec. 14, 2010.</ref> 
+
+AES began construction in Sept. 2011, after gaining $1.5 billion in financing from 14 banks & credit agencies for the $2 billion project.<ref>[http://energyasia.com/public-stories/vietnam-aes-starts-building-mong-duong-ii-power-plant-after-securing-us15-billion-financing/ AES Starts Building Mong Duong II Power Plant After Securing US$1.5 billion Financing], EnergyAsia, Sept. 2, 2011.</ref><ref name=bao>[http://baoquangninh.com.vn/chinh-tri/201402/to-may-so-1-nha-may-nhiet-dien-mong-duong-ii-tien-hanh-dot-dau-lan-dau-vao-ngay-27-va-28-2-2221756/ Tổ máy số 1, Nhà máy Nhiệt điện Mông Dương II tiến hành đốt dầu lần đầu vào ngày 27 và 28-2], Bao Quang Ninh, Feb. 15, 2014.</ref> Korea Trade Insurance Corporation (K-Sure) provided US$839 million in coverage for the portion of the financing provided by private banks, leaving US$280 million uninsured. The Export-Import Bank of Korea provided US$342 million of the total debt financing.<ref name = ij>{{Cite web|url=https://ijglobal.com/data/transaction/17814/mong-duong-2-coal-fired-power-plant-124gw-ipp|title=Preview of Mong Duong 2 Coal-Fired Power Plant (1.24GW) IPP {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-11-30}}</ref> 
+
+The plant will revert to Vietnamese government ownership after 25 years of operation.<ref>[http://www.vietnambreakingnews.com/2013/10/bot-power-plant-to-start-operation-next-year/#.UtRR9GRDvmE BOT Power Plant to Start Operation Next Year], Vietnam Breaking News, Oct. 17, 2013.</ref> Unit 1 was completed in March 2015,<ref name=times>[http://www.vinacomin.vn/en/news/Home-News/Mong-Duong-coal-fired-power-plant-enters-operation-1910.html Mong Duong coal-fired power plant enters operation], Vinacomin press release, 12 Mar. 2015.</ref> and Unit 2 was completed in May 2015.<ref name=Korea>[http://www.businesswire.com/news/home/20150511005348/en/AES-Achieves-Commercial-Operation-1240-MW-Mong#.VeJfwVNViko AES Achieves Commercial Operation of 1,240 MW Mong Duong 2 Plant in Vietnam], AES Corp press release, 11 May 2015.</ref>
+
+In August 2019 a refinancing package for Mông Dương-2 was announced.<ref>[https://www.globalcapital.com/article/b1gp9r3rqdpl69/mong-duong-finance-eyes-$485m-to-take-out-project-financing Mong Duong Finance eyes $485m to take out project financing], Global Capital Asia, 12 Aug 2019.</ref> This involves a US$1.1 billion new debt package aimed at refinancing the remaining outstanding loan for the plant, whereby the proceeds from a new loan and bond issue will be used by AES-VCM Mong Duong Power Company to purchase the original project loan from the existing lenders. Citi, HSBC, Standard Chartered and Sumitomo Mitsui Finance Group are the main arranging banks on the refinancing package.
+
+In January 2021, AES announced its intention to sell the entirety of its 51% equity stake in the Mong Duong II power station, in line with its goals to make its operations more sustainable. The purchaser was said to be "a consortium led by a U.S.-based investor", but specific entities were not named. The transaction was expected to be finalized by late 2021 or early 2022.<ref>[https://e.vnexpress.net/news/business/economy/us-energy-giant-to-pull-out-of-northern-coal-fired-power-plant-4216917.html US energy giant to pull out of northern coal-fired power plant], VnExpress, Jan. 7, 2021</ref>
+
+According to AES' annual SEC report, published in February 2022, the sale was expected to close in early 2023. The agreement was subject to approval by the Vietnam government.<ref>[https://sec.report/Document/0000874761-22-000022/ Form 10-K Aes Corp], United States Securities and Exchange Commission, February 28, 2022</ref>
+
+AES' 2022 annual report, published in May 2023, stated that the transaction had not closed in time and was therefore terminated. AES retained its majority interest in Mông Dương-2.<ref>[https://www.aes.com/sites/aesvault.com/files/2023-05/2022%20Annual%20Report.pdf 2022 Annual Report], AES, May 15, 2023</ref>
+
+In November 2023, AES was negotiating the potential sale of its 51% stake in the power station to Sev.en Global Investments, a part of the Czech energy firm Sev.en Group. POSCO was reportedly also considering selling its 30% stake in the power station.<ref name=Reuters_1123>[https://www.reuters.com/business/energy/aes-talks-sell-major-coal-fired-power-plant-vietnam-sources-2023-11-17/ Exclusive: AES in talks to sell major coal-fired power plant in Vietnam - sources], Reuters, November 17, 2023</ref> Later in the month, AES announced it had agreed to sell its stake in Mông Dương-2 to Sev.en Global Investments. Pending approval from the Vietnamese government, AES anticipated the sale would be finalized by the end of 2025.<ref>[https://aescorporation2023cr.q4web.com/press-releases/news-details/2023/AES-Announces-Sale-of-Mong-Duong-2-Plant-in-Vietnam-in-Next-Decarbonization-Milestone/default.aspx AES Announces Sale of Mong Duong 2 Plant in Vietnam in Next Decarbonization Milestone], AES Corporation, November 30, 2023</ref> The plan to sell by the end of 2025 was reiterated in AES' 2023 Annual Report.<ref>[https://s202.q4cdn.com/986265382/files/doc_financials/2023/ar/2023-annual-report-wrap-10-K-FINAL.pdf 2023 Annual Report], AES, accessed May 10, 2024</ref>
+
+As of June 2024, Mông Dương-2 reportedly had 273 employees.<ref>[http://nhietdiencaongan.vn/tham-quan-hoc-hoi-kinh-nghiem-tai-nha-may-nhiet-dien-mong-duong-2/ THAM QUAN, HỌC HỎI KINH NGHIỆM TẠI NHÀ MÁY NHIỆT ĐIỆN MÔNG DƯƠNG 2], Nhiệt điện cao ngạn, June 4, 2024</ref>
+
+As of January 2025, the sale to Sev.en was not yet final.<ref>[https://theleader.vn/ve-dep-cua-nhiet-dien-mong-duong-2-trong-mat-nha-dau-tu-sec-d38667.html Vẻ đẹp của nhiệt điện Mông Dương 2 trong mắt nhà đầu tư Séc], The Leader, January 11, 2025</ref> In March 2025, the sale was expected to be completed in early 2026.<ref>[https://theinvestor.vn/aes-earns-34-mln-from-coal-fired-power-plant-in-vietnam-in-2024-3rd-consecutive-fall-d15003.html AES earns $34 mln from coal-fired power plant in Vietnam in 2024, 3rd consecutive fall], The Investor, March 25, 2025</ref> As of August 2025, however, the sale agreement would reportedly expire in November.<ref>[https://cafef.vn/dai-gia-nang-luong-my-do-be-ke-hoach-thoai-von-nha-may-nhiet-dien-21-ty-usd-tai-quang-ninh-18825081007055086.chn Đại gia năng lượng Mỹ đổ bể kế hoạch thoái vốn nhà máy nhiệt điện 2,1 tỷ USD tại Quảng Ninh?], CafeF, August 10, 2025</ref>
+
+In September 2025, Vietnam’s Ministry of Finance proposed exempting the foreign owners of seven coal power plants from the requirement to pay a 15% global minimum corporate tax rate set by the OECD. The list of coal plants, which were developed under “build-operate-transfer” (BOT) contracts, included Mông Dương-2, [https://www.gem.wiki/Vinh_Tan_power_station Vĩnh Tân-1], [https://www.gem.wiki/Nghi_Son_coal_power_station Nghi Sơn-2], [https://www.gem.wiki/Van_Phong_power_station Vân Phong-1], [https://www.gem.wiki/Vung_Ang_power_station Vũng Áng-2], [[Hai Duong Thermal Power Plant]], and [https://www.gem.wiki/Duyen_Hai_Power_Generation_Complex Duyên Hải-2].<ref>[https://vneconomy.vn/de-xuat-mien-tru-thue-toi-thieu-toan-cau-cho-du-an-bot-dien-co-bao-lanh-chinh-phu.htm “Đề xuất miễn trừ thuế tối thiểu toàn cầu cho dự án BOT điện có bảo lãnh Chính phủ,”] VnEconomy, September 11, 2025</ref> The Ministry argued that imposing the 15% minimum tax could trigger compensation obligations that “would expose the Vietnamese government to the risk of having to pay compensation that exceeds the tax revenues.”<ref>[https://www.reuters.com/sustainability/boards-policy-regulation/vietnam-exempt-mitsubishi-kepco-other-coal-power-plant-operators-global-tax-2025-09-12/ “Vietnam to exempt Mitsubishi, Kepco, other coal power plant operators from global tax, document shows,”] Reuters, September 11, 2025</ref>
+
+In April 2026, nearby residents alleged that a local road being used to transport fly ash from Mông Dương-2 was causing frequent dust and noise pollution.<ref>[https://vtv.vn/quang-ninh-lam-ro-phan-anh-ve-viec-su-dung-tuyen-duong-van-chuyen-tro-xi-tai-xa-hai-hoa-100260401173957759.htm Quảng Ninh: Làm rõ phản ánh về việc sử dụng tuyến đường vận chuyển tro xỉ tại xã Hải Hòa], VTV.vn, April 4, 2026</ref>
+
+==Typhoon Yagi==
+
+In September 2024, Mông Dương-1 and Mông Dương-2 were proactively taken offline in anticipation of Typhoon Yagi. The units were out of service and were not immediately brought back into operation.<ref>[https://baotintuc.vn/kinh-te/som-dua-cac-to-may-phat-dien-tro-lai-nhanh-nhat-20240908130812019.htm Sớm đưa các tổ máy phát điện trở lại nhanh nhất], Tin tức, September 8, 2024</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Vietnam]]

@@ -1,0 +1,73 @@
+# GEM wiki page: Acebuche solar farm
+# URL: https://www.gem.wiki/Acebuche_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Acebuche solar farm''' is a solar photovoltaic (PV) farm in pre-construction in Brazatortas, Ciudad Real, Castilla-La Mancha, Spain.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Acebuche solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://energiaestrategica.es/castilla-la-mancha-dio-luz-verde-a-mas-de-3-gw-renovables-durante-el-2023/ |title=Castilla-La Mancha dio luz verde a más de 3 GW renovables durante el 2023 - Energía Estratégica España - Noticias sobre energías renovables del mercado ibérico |date=2023-12-15 |website=Energía Estratégica |access-date=2024-04-07 |archive-url=https://web.archive.org/web/20240411033515/https://energiaestrategica.es/castilla-la-mancha-dio-luz-verde-a-mas-de-3-gw-renovables-durante-el-2023/ |archive-date=2024-04-11}}</ref>
+| 50 MWp/dc<ref name="autoref_0" />
+| PV<ref name="autoref_1">{{cite web |url=https://docm.jccm.es/docm/descargarArchivo.do?ruta=2023/03/21/pdf/2023_2388.pdf&tipo=rutaDocm |title=Resolución de 24/02/2023, de la Dirección General de Transición Energética, de autorización administrativa previa y de construcción de la instalación solar fotovoltaica denominada FV Acebuche, infraestructuras auxiliares y de evacuación (referencia: 2703/01188). [2023/2388] |date=2023-03-21 |access-date=2024-04-15 |archive-url=https://web.archive.org/web/20240421005909/https://docm.jccm.es/docm/descargarArchivo.do?ruta=2023%252F03%252F21%252Fpdf%252F2023_2388.pdf&tipo=rutaDocm |archive-date=2024-04-21}}</ref>
+| Hanwha Energy Corp (한화에너지)<ref name="autoref_0" />
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Acebuche solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Brazatortas, Ciudad Real, Castilla-La Mancha, Spain<ref name="autoref_2">{{cite web |url=https://docm.jccm.es/docm/descargarArchivo.do?ruta=2023/03/21/pdf/2023_2388.pdf&tipo=rutaDocm, https://maps.app.goo.gl/CDWNcmjV3topweCS9}}</ref>
+| 38.6590, -4.2902 (approximate)<ref name="autoref_2" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+38.6589855, -4.2902484~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Spain]]
+[[Category:PV solar farms]]
+
+__NOTOC__

@@ -1,0 +1,75 @@
+# GEM wiki page: The Northwester 2 Offshore Wind Project
+# URL: https://www.gem.wiki/The_Northwester_2_Offshore_Wind_Project
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''The Northwester 2 Offshore Wind Project''' is an operating wind farm in Blankenberge, Belgium.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for The Northwester 2 Offshore Wind Project ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.belgianoffshoreplatform.be/en/projects/northwester-2/ |archive-url=https://web.archive.org/web/20240125205751/https://www.belgianoffshoreplatform.be/en/projects/northwester-2/ |archive-date=2024-01-25}}</ref>
+| 2020<ref name="autoref_0" />
+| 219 MW<ref name="autoref_0" />
+| Offshore hard mount<ref name="autoref_1">{{cite web |url=https://www.thewindpower.net/windfarm_en_12055.php |archive-url=https://web.archive.org/web/20240126091939/https://www.thewindpower.net/windfarm_en_12055.php |archive-date=2024-01-26}}</ref>
+| Parkwind NV [70%]; Sumitomo Corp [30%] (住友商事株式会社)<ref name="autoref_2">{{cite web |url=https://www.power-technology.com/projects/northwester-2-offshore-wind-farm/, https://www.power-technology.com/projects/northwester-2-offshore-wind-farm/}}</ref>
+| Parkwind<ref name="autoref_3">{{cite web |url=https://www.nsenergybusiness.com/projects/northwester-2-offshore-wind-farm/ |archive-url=https://web.archive.org/web/20240131043038/https://www.nsenergybusiness.com/projects/northwester-2-offshore-wind-farm/ |archive-date=2024-01-31}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for The Northwester 2 Offshore Wind Project ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Blankenberge, Belgium<ref name="autoref_4">{{cite web |url=https://www.nortonrosefulbright.com/en-de/knowledge/publications/816b71d7/global-offshore-wind-belgium, https://www.thewindpower.net/windfarm_en_12055.php}}</ref>
+| 51.6860, 2.7570 (exact)<ref name="autoref_4" />
+|}
+The map below shows the exact location of the wind farm:
+{{
+#display_map:
+51.686, 2.757~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Belgium]]
+
+__NOTOC__

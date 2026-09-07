@@ -1,0 +1,73 @@
+# GEM wiki page: Ossian Offshore wind farm
+# URL: https://www.gem.wiki/Ossian_Offshore_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' Plan Option Area E1, SSE Renewables-Marubeni-CIP, Ossian (E1-1)
+
+'''Ossian Offshore wind farm''' is a wind farm in pre-construction in Scotland, United Kingdom.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Ossian Offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Type
+!Owner
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://www.ossianwindfarm.com/news, https://www.4coffshore.com/windfarms/united-kingdom/ossian-united-kingdom-uk98.html, https://renews.biz/80030/sse-marubeni-cip-name-26gw-scotwind-site/}}</ref>
+| 3600 MW<ref name="autoref_1">{{cite web |url=https://www.4coffshore.com/windfarms/united-kingdom/ossian-united-kingdom-uk98.html, https://www.sserenewables.com/offshore-wind/projects/ossian/}}</ref>
+| Offshore floating<ref name="autoref_2">{{cite web |url=https://www.ossianwindfarm.com/planning-and-consent |title=Planning & Consent |website=Ossian |access-date=2024-03-05 |archive-url=https://web.archive.org/web/20240321234527/https://www.ossianwindfarm.com/planning-and-consent |archive-date=2024-03-21}}</ref>
+| SSE Renewables; Marubeni Corp; Copenhagen Infrastructure Partners P/S (丸紅株式会社)<ref name="autoref_3">{{cite web |url=https://www.ossianwindfarm.com/partnership, https://www.ossianwindfarm.com/partnership, https://www.ossianwindfarm.com/partnership}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Ossian Offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Scotland, United Kingdom<ref name="autoref_4">{{cite web |url=https://www.4coffshore.com/windfarms/united-kingdom/ossian-united-kingdom-uk98.html |archive-url=https://web.archive.org/web/20240126062520/https://www.4coffshore.com/windfarms/united-kingdom/ossian-united-kingdom-uk98.html |archive-date=2024-01-26}}</ref>
+| 56.5150, -1.3787 (approximate)<ref name="autoref_4" />
+|}
+The map below shows the approximate location of the wind farm:
+{{
+#display_map:
+56.515, -1.3787~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in United Kingdom]]
+
+__NOTOC__

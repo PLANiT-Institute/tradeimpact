@@ -1,0 +1,77 @@
+# GEM wiki page: Pacifico wind farm (Mexico)
+# URL: https://www.gem.wiki/Pacifico_wind_farm_(Mexico)
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' Eoliatec Istmo, Eoliatec del Pacifico Wind Farm
+
+'''Pacifico wind farm (Mexico)''' (Parque Eólico Pacifico) is an operating wind farm in Juchitan de Zaragoza, Oaxaca, Mexico.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Pacifico wind farm (Mexico) ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.thewindpower.net/windfarm_en_2919.php |archive-url=https://web.archive.org/web/20240125173426/https://www.thewindpower.net/windfarm_en_2919.php |archive-date=2024-01-25}}</ref>
+| 2013<ref name="autoref_1">{{cite web |url=https://ppi.worldbank.org/en/snapshots/project/eoliatec-del-pacifico-wind-power-plant-7918 |archive-url=https://web.archive.org/web/20240126160150/https://ppi.worldbank.org/en/snapshots/project/eoliatec-del-pacifico-wind-power-plant-7918 |archive-date=2024-01-26}}</ref>
+| 160 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_0" />
+| EDF Renewables; Mitsui & Co Ltd (三井物産株式会社; 法國電力再生能源公司)<ref name="autoref_2">{{cite web |url=https://ppi.worldbank.org/en/snapshots/project/eoliatec-del-pacifico-wind-power-plant-7918, https://ppi.worldbank.org/en/snapshots/project/eoliatec-del-pacifico-wind-power-plant-7918}}</ref>
+| EDF Renewables (法國電力再生能源公司)<ref name="autoref_0" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Pacifico wind farm (Mexico) ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Juchitan de Zaragoza, Oaxaca, Mexico<ref name="autoref_0" />
+| 16.4380, -95.0271 (approximate)<ref name="autoref_0" />
+|}
+The map below shows the approximate location of the wind farm:
+{{
+#display_map:
+16.438, -95.0271~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Mexico]]
+
+__NOTOC__

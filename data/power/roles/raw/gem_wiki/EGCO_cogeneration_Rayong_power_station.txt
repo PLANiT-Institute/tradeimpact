@@ -1,0 +1,101 @@
+# GEM wiki page: EGCO cogeneration (Rayong) power station
+# URL: https://www.gem.wiki/EGCO_cogeneration_(Rayong)_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''EGCO cogeneration (Rayong) power station''' is an operating power station of at least 117-megawatts (MW) in Map Kha, Rayong, Thailand.
+It is also known as Rayong TLP.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| EGCO cogeneration (Rayong) power station
+| Map Kha, Rayong, Thailand
+| 12.794063, 101.199347 (exact)<ref name="autoref_0">{{cite web |url=https://www.google.com/maps/place/Egco+cogeneration+Power+Plant/@12.7935396,101.1973967,635m/data=!3m1!1e3!4m13!1m7!3m6!1s0x0:0x0!2zMTLCsDQ3JzM1LjYiTiAxMDHCsDExJzQ2LjAiRQ!3b1!8m2!3d12.79321!4d101.19612!3m4!1s0x3102e507abd86d47:0xb57a68c637f0908!8m2!3d12.7932082!4d101.1983058}}</ref>
+|}
+{{
+#display_map:
+12.794063, 101.199347
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 12.794063, 101.199347
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.egco.com/en/business-group/Thailand/all/ |archive-url=https://web.archive.org/web/20220701174523/https://www.egco.com/en/business-group/Thailand/all/ |archive-date=2022-07-01}}</ref>
+| fossil gas: natural gas<ref name="autoref_1" />
+| 117<ref name="autoref_1" />
+| combined cycle<ref name="autoref_2">{{cite web |url=https://www.egco.com/uploads/finder/files/EIA/EGCO_Cogen/EIA_EGCO_Cogen.pdf |archive-url=https://web.archive.org/web/20220709130938/https://www.egco.com/uploads/finder/files/EIA/EGCO_Cogen/EIA_EGCO_Cogen.pdf |archive-date=2022-07-09}}</ref>
+| yes<ref name="autoref_1" />
+| 2003<ref name="autoref_1" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Electricity Generating PCL [80%]; J-POWER Holdings (Thailand) Co Ltd [20%]<ref name="autoref_1" /><ref name="autoref_1" />
+| Electricity Generating PCL [80.0%]; Electric Power Development Co Ltd [20.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc2Ljg4JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTIuMjUlLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01Ljc3JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjElLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAwMDAwNjQxWyJFbGVjdHJpYyBQb3dlcjxicj5EZXZlbG9wbWVudCBDbyBMdGQiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDMzMzMKICAgIDEwMDAwMDAwMzMzM1siSi1QT1dFUiBIb2xkaW5nczxicj4oVGhhaWxhbmQpIENvIEx0ZCJdIC0tMjAuMCUtLT4gUDEwMDAwMDQwNTM3MwogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNDUuOTYlLS0+IDEwMDAwMDAwMjEzMAogICAgMTAwMDAxMDAwMTUzWyJHb3Zlcm5tZW50IG9mPGJyPlRoYWlsYW5kIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAyMTI5CiAgICAxMDAwMDAwMDIxMjlbIkVsZWN0cmljaXR5PGJyPkdlbmVyYXRpbmcgQXV0aG9yaXR5PGJyPm9mIFRoYWlsYW5kIl0gLS0yNS40MSUtLT4gMTAwMDAwMDAyMTMwCiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE1LjA1JS0tPiAxMDAwMDAwMDA2MzAKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43NSUtLT4gMTAwMDAwMDAwNjMwCiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS4yJS0tPiAxMDAwMDAwMDA2MzAKICAgIDEwMDAwMDAwMDYzMFsiQ2h1YnUgRWxlY3RyaWMgUG93ZXI8YnI+Q28gSW5jIl0gLS01MC4wJS0tPiAxMDAwMDAwMDE1MzMKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tNS41MyUtLT4gMTAwMDAwMDAwNjU5CiAgICAxMDAwMDEwMTU1ODdfMTJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0zOS43MiUtLT4gMTAwMDAwMDAwNjU5CiAgICAxMDAwMDEwMTExMzZbIkdvdmVybm1lbnQgb2YgSmFwYW4iXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDA4OTQKICAgIDEwMDAwMTAwMDg5NFsiTnVjbGVhciBEYW1hZ2U8YnI+Q29tcGVuc2F0aW9uIGFuZDxicj5EZWNvbW1pc3Npb25pbmc8YnI+RmFjaWxpdGF0aW9uIENvcnAiXSAtLTU0Ljc1JS0tPiAxMDAwMDAwMDA2NTkKICAgIDEwMDAwMDAwMDY1OVsiVG9reW8gRWxlY3RyaWMgUG93ZXI8YnI+Q28iXSAtLTEwMC4wJS0tPiAxMDAwMDAxOTI1MjkKICAgIDEwMDAwMDE5MjUyOVsiVEVQQ08gRnVlbCAmIFBvd2VyPGJyPkluYyJdIC0tNTAuMCUtLT4gMTAwMDAwMDAxNTMzCiAgICAxMDAwMDAwMDE1MzNbIkpFUkEgQ28gSW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDIyMDgxCiAgICAxMDAwMDIwMjIwODFbIkpFUkEgUG93ZXI8YnI+TWFuYWdlbWVudCBBc2lhIEJWIl0gLS01MC4wJS0tPiAxMDAwMDEwMTExMTQKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNSUtLT4gMTAwMDAwMDAwNjUwCiAgICAxMDAwMDEwMTU1ODdfMTNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS4yJS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS4zJS0tPiAxMDAwMDAwMDA2NTAKICAgIDEwMDAwMDAwMDY1MFsiTWl0c3ViaXNoaSBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDIyMDgzCiAgICAxMDAwMDIwMjIwODNbIkRHQSBUaGFpbGFuZCBCViJdIC0tMjUuMCUtLT4gMTAwMDAxMDExMTE0CiAgICAxMDAwMDEwMTU1ODdfMTRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OC4yJS0tPiAxMDAwMDAwMDA2NDgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNSUtLT4gMTAwMDAwMDAwNjQ4CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTYuMyUtLT4gMTAwMDAwMDAwNjQ4CiAgICAxMDAwMDAwMDA2NDhbIkt5dXNodSBFbGVjdHJpYzxicj5Qb3dlciBDbyBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMjIwODQKICAgIDEwMDAwMjAyMjA4NFsiS3l1ZGVuIEludGVybmF0aW9uYWw8YnI+RXVyb3BlIEJWIl0gLS0yNS4wJS0tPiAxMDAwMDEwMTExMTQKICAgIDEwMDAwMTAxMTExNFsiVEVQRElBIEdlbmVyYXRpbmcgQlYiXSAtLTIyLjQyJS0tPiAxMDAwMDAwMDIxMzAKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDExMTE1CiAgICAxMDAwMDEwMTExMTVbIkVsZWN0cmljaXR5PGJyPkdlbmVyYXRpbmcgQXV0aG9yaXR5PGJyPm9mIFRoYWlsYW5kIFNhdmluZyAmPGJyPkNyZWRpdCBDb29wZXJhdGl2ZTxicj5MdGQiXSAtLTYuMjElLS0+IDEwMDAwMDAwMjEzMAogICAgMTAwMDAwMDAyMTMwWyJFbGVjdHJpY2l0eTxicj5HZW5lcmF0aW5nIFBDTCJdIC0tODAuMCUtLT4gUDEwMDAwMDQwNTM3MwogICAgUDEwMDAwMDQwNTM3M1siRUdDTyBjb2dlbmVyYXRpb248YnI+KFJheW9uZykgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Thailand]]

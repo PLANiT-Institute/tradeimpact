@@ -1,0 +1,111 @@
+# GEM wiki page: KEPCO Subic Bay power station
+# URL: https://www.gem.wiki/KEPCO_Subic_Bay_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''KEPCO Subic Bay power station''' is a cancelled power station in Subic Bay Freeport Zone, Zambales, Central Luzon, Philippines.
+It is also known as Subic-Freeport-2.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| KEPCO Subic Bay power station
+| Subic Bay Freeport Zone, Zambales, Central Luzon, Philippines
+| 14.850474, 120.205317 (approximate)
+|}
+{{
+#display_map:
+14.850474, 120.205317
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Cancelled
+| coal: unknown
+| 200
+| subcritical
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Owner
+!Parent
+|-
+| KEPCO Philippines Corp [100%]
+| Korea Electric Power Corp [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMTAxOAogICAgMTAwMDAxMDAxMDE4WyJLRVBDTyBQaGlsaXBwaW5lczxicj5Db3JwIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwMzE3MgogICAgUDEwMDAwMDEwMzE3MlsiS0VQQ08gU3ViaWMgQmF5PGJyPnBvd2VyIHN0YXRpb24iXQo=}}
+
+==Background==
+
+In 2011 KEPCO Philippines Corp. (a subsidiary of the KEPCO|Korean Electric Power Company) announced it was planning to put up a 200- to 300-megawatt coal plant in the Subic Bay Freeport Zone, to supply electricity for ship builder Hanjin Heavy Industries located in Subic Bay.<ref name=ab>Anthony Bayarong, [http://www.sunstar.com.ph/pampanga/local-news/2011/11/22/another-coal-powered-plant-eyed-subic-191998 "Another coal-powered plant eyed in Subic,"] Sun Star, November 22, 2011.</ref> (This project is separate from another proposed plant in the area, the 600 MW [[Subic power station]] by Redondo Peninsula Energy.)
+
+In Nov. 2011, an official with the Subic Bay Metropolitan Authority (SBMA) confirmed that KEPCO Philippines Corp. had applied to build a coal plant in Subic Bay -- in addition to [[Redondo Peninsula Energy]]'s [[Subic power station]], which was already proposed and facing public opposition.<ref>[http://subictimes.com/2011/11/22/another-coal-plant-eyed-in-subic/ Another Coal Plant Eyed in Subic], ''Subic Times'', Nov. 22, 2011.</ref> The official confirmed that SBMA received a request for a feasibility study for the project, but said, “I doubt it is feasible to produce power for one locator only."<ref name=ab>Anthony Bayarong, [http://www.sunstar.com.ph/pampanga/local-news/2011/11/22/another-coal-powered-plant-eyed-subic-191998 "Another coal-powered plant eyed in Subic,"] Sun Star, November 22, 2011.</ref>
+
+On Dec. 6, 2012, at an energy investment summit, KEPCO Philippines President Kyu-Beng Hwang stated that the company was still planning on building a coal plant in the Philippines — although he did state that the project site "has yet to be determined."<ref>[http://business.inquirer.net/96933/kepco-to-push-through-with-200-mw-power-project KEPCO to Push Through with 200 MW Power Project], ''Philippine Daily Inquirer'', Dec. 7, 2012.</ref> Several days later, the chair of the SBMA, Roberto Garcia, stated that the construction of KEPCO's additional coal plant in Subic Bay was "not going to happen. We won't allow that." Garcia also stated that "as I understand it, they have already changed the location of the project to Bataan."<ref>[http://newsinfo.inquirer.net/320971/sbma-coal-plant-means-subics-death SBMA: Coal Plant Means Subic's Death], ''Inquirer'', Dec. 8, 2012.</ref>
+In 2013 it was reported that a memorandum of understanding allowing the proposed power station was signed between the Philippine and Korean governments in 2011, but KEPCO later decided to consider another location for its proposed coal facility, and was looking at potential sites in Luzon, the largest island in the Philippines.<ref>[http://business.inquirer.net/117847/kepco-in-search-of-power-plant-site#ixzz2oF2sEi6F "Kepco in search of power plant site,"] Philippine Daily Inquirer, April 21, 2013.</ref>
+
+In March 2015, after several years without any mention of this project, KEPCO again stated that it was planning on pursuing the project. It is unclear whether the difficulties that faced the plant earlier have been surmounted.<ref>Ritchie Horario, [http://www.manilatimes.net/2-new-kephilco-power-plants-to-add-500-mw/169599/ 2 new Kephilco power plants to add 500 MW], ''Manila Times'', 15 Mar. 2015.</ref>
+
+According to a March 2015 article in ''Philippine Star'', KEPCO is "keen on" working with Hanjin Heavy Industries and Construction Co. to build a 200 MW coal plant that will cater to the electricity requirements of Hanjin in the Subic Bay Economic Zone.<ref>Iris C. Gonzales, [http://www.philstar.com/business/2015/03/16/1434029/kepco-gears-new-philippine-project "Kepco gears up for new Philippine project,"] Philippine Star, March 16, 2015</ref>
+
+However, as of May 2019 there have been no developments on the project. With only an expression of interest in March 2015, the project appears to be cancelled.
+
+==Opposition==
+
+With President Benigno Aquino III supporting the KEPCO (Korean Electric Power Corporation) power plant, environmental activists expressed strong opposition. For example, the national coordinator of Kalikasan People’s Network for the Environment, Clemente Bautista, said that “the Aquino administration is 100% promoting and supporting dirty and pollutive coal power plants as a source of energy in the country.” Cebu residents and environmental groups, such as the Central Visayas Fisherfolk Development Center, Inc (FIDEC) and the Network Opposed to Coal Fired Power Plant (NO to Coal Power) also led protests against the KEPCO plant, citing risks for the environment and local populations’ health.<ref>[https://www.bulatlat.com/2011/07/01/aquino-support-for-coal-fired-plants-slammed-groups-say-he-lacks-environmental-leadership/ “Aquino support for coal-fired plants slammed; groups say he lacks ‘environmental leadership’”], Bulatlat, July 1, 2011.</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Philippines]]

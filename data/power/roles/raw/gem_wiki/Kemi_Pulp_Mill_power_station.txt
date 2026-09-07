@@ -1,0 +1,92 @@
+# GEM wiki page: Kemi Pulp Mill power station
+# URL: https://www.gem.wiki/Kemi_Pulp_Mill_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalBioenergyPowerTracker}}
+'''Kemi Pulp Mill power station''' is a retired power station in Lapland, Finland.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Kemi Pulp Mill power station
+| Lapland, Finland
+| 65.7602, 24.5293 (exact)<ref name="autoref_0">{{cite web |url=https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-pulp-mill/ |archive-url=https://web.archive.org/web/20220722105525/https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-pulp-mill/ |archive-date=2022-07-22}}</ref>
+|}
+{{
+#display_map:
+65.7602, 24.5293
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''''': 65.7602, 24.5293
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Start year
+!Retired year
+|-
+| Retired<ref name="autoref_1">{{cite web |url=https://www.metsagroup.com/metsafibre/news-and-publications/news/2023/demolition-project-of-metsa-fibres-old-kemi-pulp-mill-starts/}}</ref><ref name="autoref_0" />
+| bioenergy: paper mill wastes, bioenergy: wood & other biomass (solids)<ref name="autoref_0" />
+| 83<ref name="autoref_2">{{cite web |url=https://www.ieabioenergy.com/installations/ |title=Installations | Bioenergy |date=2016-01-21 |access-date=2024-03-29 |archive-url=https://web.archive.org/web/20220919152525/https://www.ieabioenergy.com/installations/ |archive-date=2022-09-19}}</ref>
+| 1980<ref name="autoref_3">{{cite web |url=https://yle.fi/uutiset/3-10756127 |archive-url=https://web.archive.org/web/20220923191946/https://yle.fi/uutiset/3-10756127 |archive-date=2022-09-23}}</ref>
+| 2023<ref name="autoref_1" />
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Operator
+!Owner
+!Parent
+|-
+| Metsä Fibre<ref name="autoref_4">{{cite web |url=https://www.eib.org/en/stories/kemi-bioproduct-mill |archive-url=https://web.archive.org/web/20220720081553/https://www.eib.org/en/stories/kemi-bioproduct-mill |archive-date=2022-07-20}}</ref>
+| Metsä Fibre Oy [100%]<ref name="autoref_0" />
+| Metsäliitto Cooperative [50.1%]; ITOCHU Corp [25.0%]; Metsä Board Oyj [24.9%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAwNTNbIk1ldHPDpGxpaXR0bzxicj5Db29wZXJhdGl2ZSJdIC0tNTAuMSUtLT4gMTAwMDAxMDAwMDUyCiAgICAxMDAwMDEwMDAwNTNbIk1ldHPDpGxpaXR0bzxicj5Db29wZXJhdGl2ZSJdIC0tNTEuODMlLS0+IDEwMDAwMTAwMDA1NAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC4xNyUtLT4gMTAwMDAxMDAwMDU0CiAgICAxMDAwMDEwMDAwNTRbIk1ldHPDpCBCb2FyZCBPeWoiXSAtLTI0LjklLS0+IDEwMDAwMTAwMDA1MgogICAgMTAwMDAxMDE1NTg3XzJbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS02OS44MiUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMzMuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny40NCUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjkzJS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tNi44NCUtLT4gMTAwMDAxMDE2MjU1CiAgICAxMDAwMDEwMTYyNTVbIlN1bWl0b21vIE1pdHN1aTxicj5UcnVzdCBIb2xkaW5ncyBJbmMiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTZbIlJlc29uYSBCYW5rIEx0ZCJdIC0tMTYuNyUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTUuMyUtLT4gMTAwMDAwMDAxMjM3CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3LjY5JS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMTEuODglLS0+IDEwMDAwMDAwMTIzNwogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS05LjA0JS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTYuMDklLS0+IDEwMDAwMDAwMTIzNwogICAgMTAwMDAwMDAxMjM3WyJJVE9DSFUgQ29ycCJdIC0tMjUuMCUtLT4gMTAwMDAxMDAwMDUyCiAgICAxMDAwMDEwMDAwNTJbIk1ldHPDpCBGaWJyZSBPeSJdIC0tMTAwLjAlLS0+IFAxMDAwMDAyMDAyNTcKICAgIFAxMDAwMDAyMDAyNTdbIktlbWkgUHVscCBNaWxsIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of bioenergy power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-bioenergy-power-tracker/ Global Bioenergy Power Tracker] on the Global Energy Monitor website.
+[[Category:Bioenergy power stations]][[Category:Bioenergy power stations in Finland]]

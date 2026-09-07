@@ -1,0 +1,175 @@
+# GEM wiki page: Kamanga power station
+# URL: https://www.gem.wiki/Kamanga_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Kamanga power station''' is an operating power station of at least 210-megawatts (MW) in Kamanga, Maasim, Sarangani, Soccsksargen, Philippines.
+It is also known as SM200 project or Southern Mindanao power station.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Kamanga power station
+| Kamanga, Maasim, Sarangani, Soccsksargen, Philippines
+| 5.86868, 125.079818 (exact)
+|}
+{{
+#display_map:
+5.86868, 125.079818
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 5.86868, 125.079818
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: subbituminous<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 105
+| subcritical
+| 2016
+| False
+|-
+| Unit 2
+| Operating
+| coal: subbituminous<ref name="autoref_0" />
+| 105
+| subcritical
+| 2019
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Sarangani Energy Corp [100%]
+| Alsons Consolidated Resources Inc [37.5%]; Manila Electric Co [37.5%]; Toyota Tsusho Corp [25.0%]
+|-
+| Unit 2
+| Sarangani Energy Corp [100%]
+| Alsons Consolidated Resources Inc [37.5%]; Manila Electric Co [37.5%]; Toyota Tsusho Corp [25.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ3LjU2JS0tPiAxMDAwMDAwMDA2NjIKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tPiAxMDAwMDEwMTYyMDgKICAgIDEwMDAwMTAxNjIwOFsiVG95b3RhIE1vdG9yIENvcnAiXSAtLTIxLjY5JS0tPiAxMDAwMDAwMDA2NjIKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTEzLjk1JS0tPiAxMDAwMDAwMDA2NjIKICAgIDEwMDAwMTAxNjIwOVsiVG95b3RhIEluZHVzdHJpZXM8YnI+Q29ycCJdIC0tMTEuMTglLS0+IDEwMDAwMDAwMDY2MgogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjYyJS0tPiAxMDAwMDAwMDA2NjIKICAgIDEwMDAwMDAwMDY2MlsiVG95b3RhIFRzdXNobyBDb3JwIl0gLS0yNS4wJS0tPiAxMDAwMDAxMjEyNDUKICAgIDEwMDAwMjAyMjA2OVsiTWV0cm8gUGFjaWZpYzxicj5Ib2xkaW5ncyBJbmMiXSAtLTU1LjYlLS0+IDEwMDAwMTAwMDEwNQogICAgMTAwMDAyMDIyMDcwWyJHVCBDYXBpdGFsIEhvbGRpbmdzPGJyPkluYyJdIC0tMTUuNiUtLT4gMTAwMDAxMDAwMTA1CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQzJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAxNTU4N18xMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTY3LjUlLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS02LjElLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAwMTM2MTA4WyJTdGF0ZSBTdHJlZXQgQmFuazxicj5hbmQgVHJ1c3QgQ28iXSAtLTkuOTclLS0+IDEwMDAwMDAwMDY1MQogICAgMTAwMDAwMDAwNjUxWyJNaXRzdWkgJiBDbyBMdGQiXSAtLTIwLjAlLS0+IDEwMDAwMTAwMDEwNQogICAgMTAwMDAxMDAwMTA1WyJNZXRybyBQYWNpZmljPGJyPkludmVzdG1lbnRzIENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMDAxMDMKICAgIDEwMDAwMTAwMDEwM1siQmVhY29uIEVsZWN0cmljPGJyPkFzc2V0IEhvbGRpbmdzIEluYyJdIC0tMzQuOTYlLS0+IDEwMDAwMDAwMDgxMwogICAgMTAwMDAxMDAwMTA1WyJNZXRybyBQYWNpZmljPGJyPkludmVzdG1lbnRzIENvcnAiXSAtLTEwLjUlLS0+IDEwMDAwMDAwMDgxMwogICAgMTAwMDAxMDE1NTg3XzEyWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuOTUlLS0+IDEwMDAwMTAwMDEwNAogICAgMTAwMDAwMTIzMjYxXzJbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0+IDEwMDAwMjAwMDE0MQogICAgMTAwMDAyMDAwMTQxWyJHb2tvbmd3ZWkgQnJvdGhlcnM8YnI+Rm91bmRhdGlvbiBJbmMiXSAtLTI3Ljg4JS0tPiAxMDAwMDEwMDAxMDQKICAgIDEwMDAwMDEyMzI2MV8zWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMTQuMTclLS0+IDEwMDAwMTAwMDEwNAogICAgMTAwMDAxMDAwMTA0WyJKRyBTdW1taXQgSG9sZGluZ3M8YnI+SW5jIl0gLS0yOS41NiUtLT4gMTAwMDAwMDAwODEzCiAgICAxMDAwMDEwMTU1ODdfMTNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0yNC45OCUtLT4gMTAwMDAwMDAwODEzCiAgICAxMDAwMDAwMDA4MTNbIk1hbmlsYSBFbGVjdHJpYyBDbyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAwMDYwMQogICAgMTAwMDAxMDAwNjAxWyJNZXJhbGNvIFBvd2VyZ2VuPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAwMDA4MTEKICAgIDEwMDAwMDAwMDgxMVsiR2xvYmFsIEJ1c2luZXNzPGJyPlBvd2VyIENvcnAiXSAtLTUwLjAlLS0+IDEwMDAwMTAxMDg1MgogICAgMTAwMDAyMDE2MDg2WyJBbHNvbnMgQ29ycCJdIC0tNDEuMjElLS0+IDEwMDAwMTAxMTE0MwogICAgMTAwMDAwMTIwMDQ2WyJBbGNhbnRhcmEgR3JvdXAiXSAtLT4gMTAwMDAwMDAxNzEyCiAgICAxMDAwMDAwMDE3MTJbIkFsc29ucyBQb3dlcjxicj5Ib2xkaW5ncyBDb3JwIl0gLS0xOS44NyUtLT4gMTAwMDAxMDExMTQzCiAgICAxMDAwMDIwMTYwODhbIkFsc29ucyBEZXZlbG9wbWVudDxicj5hbmQgSW52ZXN0bWVudCBDb3JwIl0gLS0xOC44OSUtLT4gMTAwMDAxMDExMTQzCiAgICAxMDAwMDIwMjI5MTFbIlBoaWxpcHBpbmUgRGVhbGluZzxicj5TeXN0ZW0gSG9sZGluZ3MgQ29ycCJdIC0tOTcuNzIlLS0+IDEwMDAwMjAyMjQwNgogICAgMTAwMDAyMDIyOTEyWyJJbnZlc3RtZW50IEhvdXNlPGJyPkFzc29jaWF0aW9uIG9mIHRoZTxicj5QaGlsaXBwaW5lcyJdIC0tMi4yOCUtLT4gMTAwMDAyMDIyNDA2CiAgICAxMDAwMDIwMjI0MDZbIlBoaWxpcHBpbmU8YnI+RGVwb3NpdG9yeSBhbmQgVHJ1c3Q8YnI+Q29ycCJdIC0tPiAxMDAwMDIwMDgxODIKICAgIDEwMDAwMjAwODE4MlsiUENEIE5vbWluZWU8YnI+KEZpbGlwaW5vKSBDb3JwIl0gLS0xOC4xMiUtLT4gMTAwMDAxMDExMTQzCiAgICAxMDAwMDEwMTU1ODdfMTRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xLjkxJS0tPiAxMDAwMDEwMTExNDMKICAgIDEwMDAwMTAxMTE0M1siQWxzb25zIENvbnNvbGlkYXRlZDxicj5SZXNvdXJjZXMgSW5jIl0gLS01MC4wJS0tPiAxMDAwMDEwMTA4NTIKICAgIDEwMDAwMTAxMDg1MlsiQWxzb25zIFRoZXJtYWw8YnI+RW5lcmd5IENvcnAiXSAtLTc1LjAlLS0+IDEwMDAwMDEyMTI0NQogICAgMTAwMDAwMTIxMjQ1WyJTYXJhbmdhbmkgRW5lcmd5PGJyPkNvcnAiXSAtLTEwMC4wJS0tPiBQMTAwMDAwMTAzMTk3CiAgICBQMTAwMDAwMTAzMTk3WyJLYW1hbmdhIHBvd2VyPGJyPnN0YXRpb24iXQo=}}
+
+==Background==
+
+The '''Kamanga power station''' (also known as the '''Southern Mindanao power station''' or the '''SM200 project''') is a 210-megawatt (MW) coal-fired power station owned by [[Sarangani Energy Corp]] on the coast of Sarangani province, Mindanao, the Philippines. The proponent of the power station is [[Conal Holdings]], a 40:60 joint venture between Electricity Generating Public Company Limited of Thailand and the [[Alcantara Group]]. 
+
+The power station is located just 500 meters from the Kamanga marine ecotourism park.<ref>[https://www.cao-ombudsman.org/sites/default/files/downloads/CAO%20Compliance%20Investigation_RCBC-01_Philippines_Nov%202021.pdf "Compliance Investigation Report"], Office of the Compliance Advisor Ombudsman, November 19, 2021.</ref>
+
+===Initial announcement===
+In 2008 it was reported that Conal had reached an agreement with the Sultan Mining and Energy Development Corporation for the supply of coal for the project.<ref>[http://www.industrialinfo.com/showAbstract.jsp?newsitemID=135694 "Conal Holdings Plans $450 Million, 200-Megawatt Coal-Based Power Project in Philippines"], ''Industrial Info Resources'', July 21, 2008.</ref>
+
+In June 2008, Gregorio Gonzales, Conal's project manager for the plant, announced that Conal would begin building the $450-million 200-MW coal-fired plant in mid-2010; this schedule was significantly delayed.<ref>[http://www.gmanetwork.com/news/story/98890/economy/200-mw-coal-power-plant-to-rise-in-saranggani 200-MW coal power plant to rise in Saranggani], GMA News, 3 June 2008.</ref> In October 2010, [[Conal Holdings]] Vice President Joseph C. Nocos announced the company will start construction of the $450-million Kamanga power station in the first quarter of 2011 to plug a "chronic power supply deficit" expected to hit Mindanao by 2014, as well as address an expected rise in the power of electricity due to the privatization of local hydropower plants. Nocos said the coal-fired power plant, which is staunchly opposed by the local Catholic Church and environmental groups over human health and the environmental concerns, can be developed in three to five years.<ref name=bw>[http://www.bworldonline.com/main/content.php?id=20009 "Conal Holdings to start work on coal plant early next year"] Business World, Oct. 24, 2010.</ref>
+
+===Unit 1===
+Financing for Unit 1 was secured in December 2012, and the notice to proceed was issued shortly thereafter.<ref name=DOE>[http://www.doe.gov.ph/doe_files/pdf/01_Energy_Situationer/2014-Private-Sector-Initiated-Power-Projects-Mindanao%20Committed-September-30.pdf Private Sector Initiated Power Projects (Mindanao),] Philippines Department of Energy, Sept. 2014.</ref> In March 2013, Korean company Daelim Industrial took over the project as engineering, procurement, and construction (EPC) contractor; construction began shortly thereafter.<ref>[http://www.alcantaragroup.com/news.php?news_id=14&start=0&category_id=0&parent_id=0&arcyear=2013&arcmonth=3 105 Mega Watts from Sarangani Energy Plant Assured by September 2015], Alcantara Group press release, 22 Mar. 2013.</ref> Construction was 54% complete as of September 2014. A June 2015 press report stated that the first unit was "on target" for completion by the end of 2015.<ref>Edwin Espejo, [http://www.rappler.com/business/industries/173-power-and-energy/96193-sarangani-coal-fired-power-plant-completed-end-2015 "Sarangani to be completed end-2015,"] Rappler, June 12, 2015</ref>
+
+In April 2016, Alsons reported that key tests had been completed in the commissioning of the first 105 MW unit of the plant and that it was now waiting for the certificate of compliance (COC) from the Energy Regulatory Commission.<ref>[http://www.bworldonline.com/content.php?section=Corporate&title=alsons-sarangani-coal-plant-awaits-erc-go-signal&id=126173 "Alsons' Sarangani coal plant awaits ERC go-signal,"] BusinessWorld Online, April 18, 2016</ref> 
+
+Unit 1 started commercial operations in April 2016. The plant was ceremonially switched on by Pres. Duterte in January 2017, after it had already been operating for eight months.<ref name=minda>[http://www.mindanews.com/top-stories/2017/02/firm-begins-construction-of-coal-fired-power-plant-in-sarangani/ Firm begins construction of coal-fired power plant in Sarangani], Minda News, 17 Feb. 2017.</ref><ref>[http://conceptnewscentral.com/index.php/2017/01/26/duterte-switch-power-plant-sarangani/ Duterte to switch on power plant in Sarangani], Concept Central, 26 Jan. 2017.</ref>
+
+===Unit 2===
+In May 2016, company executive vice president and COO Tirso Santillan said that Alsons expected to award the engineering procurement and construction contract for Unit 2 "within the next few days."<ref>Daneesa Rivera, [http://www.philstar.com/business/2016/05/28/1587543/alsons-keen-starting-3-power-projects-mindanao-year-end "Alsons keen on starting 3 power projects in Mindanao by year-end,"] Philippine Star, May 28, 2016</ref>
+
+In August 2016 Alsons signed a US$280 million (P13.17 billion) deal with Japan’s JGC Corp. for the engineering, procurement and construction (EPC) development of the second unit. Unit 2 was planned for operation in 2019.<ref>[http://www.ibtimes.ph/jgc-inks-deal-develop-alsons-210-mw-power-plant-sarangani-280-m-3275 "JGC Inks Deal To Develop Alsons’ 210-MW Power Plant In Sarangani For $280-M,"] International Business Times, Aug 4, 2016</ref>
+
+Construction on Unit 2 began in February 2017. The second unit was then scheduled to be brought online Q1 2019.<ref name=minda>[http://www.mindanews.com/top-stories/2017/02/firm-begins-construction-of-coal-fired-power-plant-in-sarangani/ Firm begins construction of coal-fired power plant in Sarangani], Minda News, 17 Feb. 2017.</ref> In January 2018 Power Philippines listed a target date for commissioning the plant of December 2018 and a target date for commercial operations of January 2019.<ref>[http://powerphilippines.com/2018/01/31/big-impact-power-projects-2018/ Here are the big impact power projects for 2018], Power Philippines, Jan. 31, 2018</ref>
+
+The DOE's list of new power projects for September 2018 listed a target commissioning date of February 2019.<ref>[https://www.doe.gov.ph/sites/default/files/pdf/electric_power/mindanao_committed_sept_2018.pdf PRIVATE SECTOR INITIATED POWER PROJECTS AS OF SEPTEMBER 2018], Department of Energy, Republic of the Philippines, September 2018</ref>
+
+The DOE's list of new power projects for March 2019 listed a target commissioning date of June 2019.<ref>[https://www.doe.gov.ph/sites/default/files/pdf/electric_power/mindanao_committed_march_2019.pdf PRIVATE SECTOR INITIATED POWER PROJECTS (MINDANAO) COMMITTED], Philippine Department of Energy, March 2019</ref> Unit 2 was commissioned in October 2019.<ref>[http://www.manilastandard.net/business/power-technology/307170/sarangani-energy-opens-another-105-mw-coal-plant.html Sarangani Energy opens another 105-MW coal plant], Manila Standard, Oct. 11, 2019</ref>
+
+===Rate issues and local power market===
+According to Nocos, currently the South Cotabato Electric Cooperative (Socoteco) II charges about P6.00 per kilowatt-hour to its consumers in the city, the whole of Sarangani province and parts of South Cotabato province. Mr. Nocos said higher power rates would take a toll on consumers with the privatization of National Power Corporation’s power plants as required by the Electric Power Industry Reform Act of 2001 (Republic Act 9136). Nocos said privatization of the Agus and Pulangi hydropower plants will lead to higher power costs as new power plant investors will have to recover their investment. More than half of Mindanao’s power requirement comes from the hydropower plants, thus consumers in the area depend on lower power rates compared with Luzon and the Visayas.<ref name=bw>[http://www.bworldonline.com/main/content.php?id=20009 "Conal Holdings to start work on coal plant early next year"] Business World, Oct. 24, 2010.</ref> 
+
+Secretary Lualhati R. Antonino, chairwoman of the Mindanao Development Authority, said the government has not arrived on a firm decision to sell the hydropower plants to the private sector. She cited the proposal of the Philippine Chamber of Commerce and Industry to stop the privatization of the hydropower plants. Once Conal Holdings’ coal-fired power plant goes on stream, consumers in the service area of Socoteco II will enjoy at least a peso reduction in power rates as the company will directly connect to the transmission facilities of the cooperative, Mr. Nocos said.<ref name=bw>[http://www.bworldonline.com/main/content.php?id=20009 "Conal Holdings to start work on coal plant early next year"] Business World, Oct. 24, 2010.</ref>
+
+==Public opposition==
+
+On November 21, 2010, a 75-boat flotilla and a human banner formed by around 800 villagers from the town of Maasim in Sarangani province in Mindanao spelled out the words "No To Coal" on the grounds of a local elementary school. The activities were part of a campaign by Maasim People’s Coalition on climate change (MP3C) and [[Greenpeace International]]. The flotilla was composed of outrigger-boats of local fishers while the human banner that spelled out "NO TO COAL" was composed of students, activists and residents.<ref name=lp>Louie O. Pacardo, [http://www.bworldonline.com/main/content.php?id=21594 "Residents oppose coal-fired power plant project"] BusinessWorld, Nov. 22, 2010.</ref> 
+
+Amalie Conchelle H. Obusan, climate and energy campaigner of Greenpeace, said collaboration with local groups is part of the campaign to localize the advocacy against the use of coal as industrial fuel: "Greenpeace seeks for 50% renewable energy efficiency in the country by the year 2020," adding it "will ask President [Benigno S. C.] Aquino’s support to achieve this." Fr. Apollo G. Salazar of the Iglesia Filipina Independiente, a religious group opposing the coal plant, said in his talk at the event that there is a need to augment sources of power in Mindanao but "it must be from a sustainable and clean source, not coal."<ref name=lp>Louie O. Pacardo, [http://www.bworldonline.com/main/content.php?id=21594 "Residents oppose coal-fired power plant project"] BusinessWorld, Nov. 22, 2010.</ref>
+
+The coal-fed plant is said to stabilize the energy grid in Mindanao that currently relies on hydropower, or over 50% as power source. Conal Holdings’ officials claimed on the Sarangani provincial government’s Web site that "the P20-billion facility... is the answer to [a] projected power shortage on the island in 2012." Nerissa B. Tongco, MP3C officer said: "The coal project is part of what is called the holy trinity of development aggression in Soccsksargen (South Cotabato, North Cotabato, Sultan Kudarat, Sarangani, General Santos)." The other two are the Tampakan copper project of Sagittarius Mines, Inc. and a coal-mining project under San Miguel Corp. in Lake Sebu, both in South Cotabato.<ref name=lp>Louie O. Pacardo, [http://www.bworldonline.com/main/content.php?id=21594 "Residents oppose coal-fired power plant project"] BusinessWorld, Nov. 22, 2010.</ref>
+
+In May 2014, local scuba divers reported that the ongoing construction of the Kamanga plant was destroying pristine coral reefs in Sarangani Bay. The project manager said he would "look into the matter."<ref>Edwin Espejo. [http://www.interaksyon.com/article/86538/ongoing-construction-of-power-plant-in-sarangani-destroying-corals-divers-say Ongoing construction of power plant in Sarangani destroying corals, divers say]. Inter Aksyon, 11 May 2014.</ref>
+
+===Complaints Filed by Community===
+In February 2023, it was reported that the Philippine Movement for Climate Justice (PMCJ) and the people’s organization Sanlakas had filed a complaint against Sarangani Energy Corporation (SEC) for environmental violations committed by the Kamanga coal-fired power plant.<ref name=localcomplaints>[https://mindanaogoldstardaily.com/archives/135975 "Sarangani B’laans file plaint vs power plant"] Mindanao Gold Star Daily, Feb. 14, 2023.</ref> The local people's groups also decried the Department of Environment and Natural Resources (DENR) for "its inaction in holding SEC accountable" for violations against the Environmental Compliance Certificate issued by the DENR.<ref name=localcomplaints>[https://mindanaogoldstardaily.com/archives/135975 "Sarangani B’laans file plaint vs power plant"] Mindanao Gold Star Daily, Feb. 14, 2023.</ref> The environmental violations stated in the complaint included constant noise violations and mismanagement of soot and coal ash emissions, which locals would consistently find settled on their furniture and walls of their homes.<ref name=localcomplaints>[https://mindanaogoldstardaily.com/archives/135975 "Sarangani B’laans file plaint vs power plant"] Mindanao Gold Star Daily, Feb. 14, 2023.</ref>
+
+==Plant ownership==
+
+The Kamanga power station is operated by Sarangani Energy Corporation (SEC), which has undergone several changes in ownership over the lifetime of the project. SEC was initially a wholly owned subsidiary of Conal Holdings Group, which was a joint venture between EGCO International Ltd, a wholly-owned subsidiary of Thailand's Electricity Generating Public Co. Ltd, and Alsons Consolidated Resources (ACR), a subsidiary of the Alcantra Group.<ref>[https://newsinfo.inquirer.net/101537/sarangani-traders-hail-coal-fired-power-plant https://newsinfo.inquirer.net/101537/sarangani-traders-hail-coal-fired-power-plant], Mindanao Inquirer, Nov. 28, 2011</ref>. In 2012, Toyota Tsusho purchased a 25% stake in SEC and provided $25 million twoard the construction of Unit 1.<ref>Amy R. Remo, [https://business.inquirer.net/97779/toyota-trading-unit-buys-stake-in-sarangani-plant Toyota trading unit buys stake in Sarangani plant], Philippine Daily Inquirer, Dec. 12, 2012</ref> In 2013 ACR bought out its Thai partner to become the sole owner of Conal Holdings Group, thereby attaining full ownership of Conal's 75% stake in SEC.<ref>Iris Gonzales, [https://www.philstar.com/business/2013/07/10/963539/alsons-buys-out-thai-partner-conal-holdings Alsons buys out Thai partner in Conal Holdings], Philstar Global, July 10, 2013</ref> In 2017, Global Business Power Corp. acquired a 50% stake in Alsons Consolidated Resources, which included 50% of ACR's stake in SEC.<ref>Chrisee Dela Paz, [https://www.rappler.com/business/global-business-power-acquire-stake-alsons-consolidated-resources Global Business Power to acquire 50% stake in Alsons], Rappler, Jun. 5, 2017</ref>. Then, in December of 2020, Meralco PowerGen Corp. announced that it had purchased full ownership of Global Business Power Corp. for P34.466 billion (approx. 720 million USD).<ref>Alena Mae S. Flores, [https://www.manilastandard.net/business/power-technology/343089/meralco-says-sale-price-of-gbpc-is-fair-reasonable.html Meralco says sale price of GBPC is fair, reasonable], Manila Standard, Dec. 28, 2020</ref> As a result of these transfers, Saragani Energy Corporation's parent companies are now: Alcantara Group, parent of Alsons Consolidated Resources, with a 37.5% stake; Meralco PowerGen Corp., parent of Global Business Power Corp., with a 37.5% stake; and Toyota Tsusho Inc. with a 25% stake.
+
+==Financing==
+
+In November 2014, Alsons announced that it had received US$73.5 million loan from a consortium of Philippine and foreign banks, which it would use to partially fund its power development projects in Mindanao - the Zamboanga and [[Kamanga power station|Kamanga]] coal-fired power stations. Alsons would also use the loan to repay some of its debts. UBS Singapore acted as the lead arranger for the transaction.<ref name = fin>[https://alsonspower.com/alsons-consolidated-resources-inc-secures-73-5-million-loan/ Alsons Consolidated Resources, Inc. Secures $73.5 Million Loan], Alsons Power Group, November 2014</ref> This transaction appears to be separate from the full project financing arrangement.
+
+In May 2017, Sarangani Energy Corp. (SEC) signed a P10.5-billion (approximately US$210 million) syndicated loan with a consortium of local banks for the construction of Unit 2 of the Kamanga power station. The consortium of local banks was comprised of BDO Universal Bank (BDO), Asia United Bank (AUB), Rizal Commercial Banking Corp. (RCBC), United Coconut Planters Bank (UCPB), Philippine Business Bank, China Bank Savings and Robinsons Bank Corp.<ref>[https://energycentral.com/news/sarangani-energy-corp-signs-p105-b-loan-local-banks Sarangani Energy Corp. signs P10.5-B loan with local banks], Business Mirror, May 11, 2017</ref>
+
+In 2017, the Philippine Movement for Climate Justice lodged a formal complaint against the International Finance Corporation (IFC) for its involvement in Philippine coal-fired power stations. The complaint alleged that the IFC had funded these projects through its financial support to Rizal Commercial Banking Corporation (RCBC). The Kamanga power station was one of 11 power stations for which the IFC's involvement was found to be sufficient to trigger the IFC's internal accountability process.<ref>[http://www.cao-ombudsman.org/cases/document-links/documents/CAOAssessmentReport_RCBC-01_Philippines_April2019_English.pdf CAO ASSESSMENT REPORT Regarding Concerns in Relation to IFC’s Investment in Rizal Commercial Banking Corporation (RCBC) – 01 (#30235, #32853, #34115, #37489) in the Philippines], IFC Compliance Advisor Ombudsman, April 2019</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Philippines]]

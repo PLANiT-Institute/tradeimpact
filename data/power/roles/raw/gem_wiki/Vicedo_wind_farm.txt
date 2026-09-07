@@ -1,0 +1,75 @@
+# GEM wiki page: Vicedo wind farm
+# URL: https://www.gem.wiki/Vicedo_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Vicedo wind farm''' is an operating wind farm in A Mariña Occidental, Galicia, Spain.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Vicedo wind farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.aeeolica.org/sobre-la-eolica/la-eolica-espana/mapa-de-parques-eolicos/galicia/vicedo-2018-05-06-06-07-14 |archive-url=https://web.archive.org/web/20210910014659/https://www.aeeolica.org/sobre-la-eolica/la-eolica-espana/mapa-de-parques-eolicos/galicia/vicedo-2018-05-06-06-07-14 |archive-date=10 September 2021}}</ref>
+| 1998<ref name="autoref_1">{{cite web |url=http://www.inega.gal/sites/default/descargas/enerxia_galicia/centrais_eolicas.pdf |archive-url=https://web.archive.org/web/20240126042123/https://www.inega.gal/sites/default/descargas/enerxia_galicia/centrais_eolicas.pdf |archive-date=2024-01-26}}</ref>
+| 25 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_0" />
+| Eurus Energy [100%] (株式会社ユーラスエナジーホールディングス)<ref name="autoref_2">{{cite web |url=https://www.eurus-europe.com/projects-overview/?wpv_view_count=87-TCPID82&wpv-wpcf-type-of-energy=wind&wpv-wpcf-mhz=0&wpv-wpcf-country=Spain&wpv-wpcf-year-for-filter= |archive-url=https://web.archive.org/web/20240131154413/https://eurus-europe.com/projects-overview/?wpv_view_count=87-TCPID82&wpv-wpcf-type-of-energy=wind&wpv-wpcf-mhz=0&wpv-wpcf-country=Spain&wpv-wpcf-year-for-filter= |archive-date=2024-01-31}}</ref>
+| Parque Eólico de Vicedo<ref name="autoref_0" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Vicedo wind farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| A Mariña Occidental, Galicia, Spain<ref name="autoref_3">{{cite web |url=https://www.thewindpower.net/windfarm_en_1976.php |archive-url=https://web.archive.org/web/20240201024112/https://www.thewindpower.net/windfarm_en_1976.php |archive-date=2024-02-01}}</ref>
+| 43.6920, -7.6718 (exact)<ref name="autoref_3" />
+|}
+The map below shows the exact location of the wind farm:
+{{
+#display_map:
+43.692, -7.6718~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Spain]]
+
+__NOTOC__

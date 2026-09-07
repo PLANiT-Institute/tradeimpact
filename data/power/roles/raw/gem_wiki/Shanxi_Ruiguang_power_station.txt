@@ -1,0 +1,154 @@
+# GEM wiki page: Shanxi Ruiguang power station
+# URL: https://www.gem.wiki/Shanxi_Ruiguang_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Shanxi Ruiguang power station''' (山西国际能源瑞光热电公司热电联产) is an operating power station of at least 660-megawatts (MW) in Wujinshan, Yuci, Jinzhong, Shanxi, China with multiple units, some of which are not currently operating.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Shanxi Ruiguang power station
+| Wujinshan, Yuci, Jinzhong, Shanxi, China
+| 37.784571, 112.719866 (exact)
+|}
+{{
+#display_map:
+37.784571, 112.719866
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Phase I Unit 1, Phase I Unit 2, Phase II Unit 3, Phase II Unit 4''': 37.784571, 112.719866
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| Phase I Unit 1
+| Operating
+| coal: bituminous<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 330
+| subcritical
+| yes
+| 2011
+| False
+|-
+| Phase I Unit 2
+| Operating
+| coal: bituminous<ref name="autoref_0" />
+| 330
+| subcritical
+| yes
+| 2012
+| False
+|-
+| Phase II Unit 3
+| Cancelled
+| coal: bituminous<ref name="autoref_0" />
+| 600
+| unknown
+| yes
+| –
+| False
+|-
+| Phase II Unit 4
+| Cancelled
+| coal: bituminous<ref name="autoref_0" />
+| 600
+| unknown
+| yes
+| –
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Phase I Unit 1
+| Shanxi Ruiguang Power Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [42.3%]; KEPCO Shanxi International [34.0%]; Electric Power Development Co Ltd [7.0%]; Shanxi Gemeng International Energy Group Co Ltd [4.7%]; KEPCO Woori Sprott Global Private Equity Fund [4.0%]; Korea Electric Power Corp [4.0%]; unknown [4.0%]
+|-
+| Phase I Unit 2
+| Shanxi Ruiguang Power Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [42.3%]; KEPCO Shanxi International [34.0%]; Electric Power Development Co Ltd [7.0%]; Shanxi Gemeng International Energy Group Co Ltd [4.7%]; KEPCO Woori Sprott Global Private Equity Fund [4.0%]; Korea Electric Power Corp [4.0%]; unknown [4.0%]
+|-
+| Phase II Unit 3
+| Shanxi Ruiguang Power Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [42.3%]; KEPCO Shanxi International [34.0%]; Electric Power Development Co Ltd [7.0%]; Shanxi Gemeng International Energy Group Co Ltd [4.7%]; KEPCO Woori Sprott Global Private Equity Fund [4.0%]; Korea Electric Power Corp [4.0%]; unknown [4.0%]
+|-
+| Phase II Unit 4
+| Shanxi Ruiguang Power Co Ltd [100%]
+| Shanxi State-Owned Capital Investment and Operation Co Ltd [42.3%]; KEPCO Shanxi International [34.0%]; Electric Power Development Co Ltd [7.0%]; Shanxi Gemeng International Energy Group Co Ltd [4.7%]; KEPCO Woori Sprott Global Private Equity Fund [4.0%]; Korea Electric Power Corp [4.0%]; unknown [4.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tNTAuMCUtLT4gMTAwMDAwMTI1OTY3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMjUwNDEKICAgIDEwMDAwMjAyNTA0MVsiTWluaXN0cnkgb2YgSGVhbHRoPGJyPmFuZCBXZWxmYXJlIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDAwNzMwCiAgICAxMDAwMDEwMDA3MzBbIk5hdGlvbmFsIFBlbnNpb248YnI+U2VydmljZSAoU291dGg8YnI+S29yZWEpIl0gLS01MC4wJS0tPiAxMDAwMDAxMjU5NjcKICAgIDEwMDAwMDEyNTk2N1siS0VQQ08gV29vcmkgU3Byb3R0PGJyPkdsb2JhbCBQcml2YXRlPGJyPkVxdWl0eSBGdW5kIl0gLS04LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTI1OTY5WyJLRVBDTyBTaGFueGk8YnI+SW50ZXJuYXRpb25hbCJdIC0tMzQuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc2Ljg4JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzZbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTEyLjI1JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43NyUtLT4gMTAwMDAwMDAwNjQxCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4xJS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMDAwMDY0MVsiRWxlY3RyaWMgUG93ZXI8YnI+RGV2ZWxvcG1lbnQgQ28gTHRkIl0gLS03LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTI1NTI4WyJTaGFueGkgUHJvdmluY2lhbDxicj5EZXBhcnRtZW50IG9mPGJyPkZpbmFuY2UiXSAtLTEwLjAlLS0+IDEwMDAwMDEyMzgyMwogICAgMTAwMDAwMTI1Njc4WyJTaGFueGkgUHJvdmluY2lhbDxicj5QZW9wbGUncyBHb3Zlcm5tZW50PGJyPlN0YXRlLW93bmVkIEFzc2V0czxicj5TdXBlcnZpc2lvbiBhbmQ8YnI+QWRtaW5pc3RyYXRpb248YnI+Q29tbWlzc2lvbiJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMTY2MwogICAgMTAwMDAwMDAxNjYzWyJTaGFueGkgU3RhdGUtT3duZWQ8YnI+Q2FwaXRhbCBJbnZlc3RtZW50PGJyPmFuZCBPcGVyYXRpb24gQ28gTHRkIl0gLS05MC4wJS0tPiAxMDAwMDAxMjM4MjMKICAgIDEwMDAwMDEyMzgyM1siU2hhbnhpIEdlbWVuZzxicj5JbnRlcm5hdGlvbmFsIEVuZXJneTxicj5Hcm91cCBDbyBMdGQiXSAtLTQ3LjAlLS0+IDEwMDAwMDEyMzY5OQogICAgMTAwMDAwMTMyMzg4XzFbInVua25vd24iXSAtLTQuMCUtLT4gMTAwMDAwMTIzNjk5CiAgICAxMDAwMDAxMjM2OTlbIkdlbWVuZyBJbnRlcm5hdGlvbmFsPGJyPkVuZXJneSBDbyBMdGQiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMjI4NzIKICAgIDEwMDAwMDEyMjg3MlsiU2hhbnhpIFJ1aWd1YW5nPGJyPlBvd2VyIENvIEx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDE1MTEKICAgIFAxMDAwMDAxMDE1MTFbIlNoYW54aSBSdWlndWFuZzxicj5wb3dlciBzdGF0aW9uIl0K}}
+
+==Background==
+
+The two existing coal-fired units of Shanxi Ruiguang power station, totaling 660 MW, were brought online between 2011 and 2012. The plant is owned by [[Shanxi International Electricity Group]].<ref>[http://bit.ly/1sdFQ4i "关于山西瑞光热电有限责任公司一期(2×300MW)供热机组进入商业运营的批复"], 山西省人民政府, 2012-07-23</ref><ref>[http://bit.ly/Zg59rK "省经信委胡玉亭主任一行到山西国际能源(格盟国际)瑞光热电公司调研"], 国际能源网, 2013-07-11</ref>
+
+==Description of Expansion==
+
+Shanxi International Energy Group is currently planning to build two additional coal-fired units at this plant, with a total planned capacity of 1,200 MW.<ref>[http://bit.ly/1tt2Ji9 "瑞光热电1号机组圆满通过168小时试运行"], 国际能源网, 2011-12-23</ref>
+
+However, with no developments since 2011, the expansion appears to be cancelled.
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

@@ -1,0 +1,91 @@
+# GEM wiki page: Bull Creek wind farm (United States)
+# URL: https://www.gem.wiki/Bull_Creek_wind_farm_(United_States)
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Bull Creek wind farm (United States)''' is an operating wind farm in Borden County, Texas, United States.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Bull Creek wind farm (United States) ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/ |title=Preliminary Monthly Electric Generator Inventory (based on Form EIA-860M as a supplement to Form EIA-860) - U.S. Energy Information Administration (EIA) |website=www.eia.gov |access-date=2025-01-06 |archive-url=https://web.archive.org/web/20230509053328/https://www.eia.gov/electricity/data/eia860m/ |archive-date=2023-05-09}}</ref>
+| 2008<ref name="autoref_0" />
+| 180 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_1">{{cite web |url=https://www.eia.gov/electricity/data/eia860/ |title=U.S. Energy Information Administration, Form EIA-860 detailed data with previous form data (EIA-860A/860B), 2012 |access-date=2023-11-01 00:00:00 |archive-url=https://web.archive.org/web/20221028021258/https://www.eia.gov/electricity/data/eia860/ |archive-date=2022-10-28}}</ref>
+| Eurus Energy [100%] (株式会社ユーラスエナジーホールディングス)<ref name="autoref_2">{{cite web |url=http://www.bnbrenewables.com/bull-creek-wind |archive-url=https://web.archive.org/web/20240131092022/http://www.bnbrenewables.com/bull-creek-wind |archive-date=2024-01-31}}</ref>
+| Eurus Energy (株式会社ユーラスエナジーホールディングス)<ref name="autoref_3">{{cite web |url=https://www.thewindpower.net/windfarm_en_4326.php |archive-url=https://web.archive.org/web/20240131003928/https://www.thewindpower.net/windfarm_en_4326.php |archive-date=2024-01-31}}</ref>
+|-
+| RP
+| Announced<ref name="autoref_4">{{cite web |url=https://www.renewableenergymagazine.com/wind/deutsche-windtechnik-secures-repowering-contracts-for-eurus-20250306}}</ref>
+| –
+| 179 MW<ref name="autoref_5">{{cite web |url=https://www.dwtglobal.com/us/news/press-releases/detail/repowering-om-contracts-for-bull-creek-wind-farm/}}</ref>
+| Onshore<ref name="autoref_4" />
+| Eurus Energy (株式会社ユーラスエナジーホールディングス)<ref name="autoref_4" />
+| –
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Bull Creek wind farm (United States) ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Borden County, Texas, United States<ref name="autoref_0" />
+| 32.9341, -101.5901 (exact)<ref name="autoref_0" />
+|-
+| RP
+| Borden County, Texas, United States<ref name="autoref_0" />
+| 32.9341, -101.5901 (exact)<ref name="autoref_0" />
+|}
+The map below shows the exact locations of the wind farm phases:
+{{
+#display_map:
+32.9341, -101.5901~ ~ ~ ~ ~Phases 1, RP
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in United States]]
+
+__NOTOC__

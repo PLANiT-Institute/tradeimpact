@@ -1,0 +1,74 @@
+# GEM wiki page: Bridgeman solar farm
+# URL: https://www.gem.wiki/Bridgeman_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Bridgman
+
+'''Bridgeman solar farm''' is an announced solar  farm in Bridgeman, New South Wales, Australia.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Bridgeman solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| Announced<ref name="autoref_0">{{cite web |url=https://reneweconomy.com.au/bon-dieu-hunter-valley-solar-and-battery-project-seeks-approval-for-site-surrounded-by-coal-mines/}}</ref>
+| 50 MW<ref name="autoref_0" />
+| Assumed PV
+| Mitsubishi Corp<ref name="autoref_0" />
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Bridgeman solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Bridgeman, New South Wales, Australia<ref name="autoref_1">{{cite web |url=https://maps.app.goo.gl/aKVAHsMqxURgonF89, https://www.planning.nsw.gov.au/sites/default/files/2023-04/rixs-creek-north-and-rixs-creek-south-ccc-annual-report-2021.pdf}}</ref>
+| -32.4880, 151.1520 (approximate)<ref name="autoref_1" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+-32.48800802061478, 151.15197947180795~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Australia]]
+
+__NOTOC__

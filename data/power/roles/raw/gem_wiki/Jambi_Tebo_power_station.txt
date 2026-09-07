@@ -1,0 +1,120 @@
+# GEM wiki page: Jambi Tebo power station
+# URL: https://www.gem.wiki/Jambi_Tebo_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Jambi Tebo power station''' is a cancelled power station in Tebo, Sumatera, Indonesia.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Jambi Tebo power station
+| Tebo, Sumatera, Indonesia
+| -1.39, 102.42 (approximate)
+|}
+{{
+#display_map:
+-1.39, 102.42
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Emergency/Backup
+|-
+| Unit 1
+| Cancelled
+| coal: unknown
+| 200
+| unknown
+| False
+|-
+| Unit 2
+| Cancelled
+| coal: unknown
+| 200
+| unknown
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Korea South-East Power Co Ltd [100%]
+| Korea Electric Power Corp [100.0%]
+|-
+| Unit 2
+| Korea South-East Power Co Ltd [100%]
+| Korea Electric Power Corp [100.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTE4LjIlLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTYyWyJHb3Zlcm5tZW50IG9mIFNvdXRoPGJyPktvcmVhIl0gLS0xMDAuMCUtLT4gMTAwMDAyMDA0NTY5CiAgICAxMDAwMDIwMDQ1NjlbIktvcmVhIERldmVsb3BtZW50PGJyPkJhbmsgQ28iXSAtLTMyLjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS00OC45JS0tPiAxMDAwMDAwMDA5NDcKICAgIDEwMDAwMDAwMDk0N1siS29yZWEgRWxlY3RyaWMgUG93ZXI8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMjExMAogICAgMTAwMDAwMDAyMTEwWyJLb3JlYSBTb3V0aC1FYXN0PGJyPlBvd2VyIENvIEx0ZCJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDI3NDMKICAgIFAxMDAwMDAxMDI3NDNbIkphbWJpIFRlYm8gcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Background on Project==
+
+In March 2008, it was announced that Korean investors were exploring a plan to build a 100-MW coal-fired power plant in Sarolangun Regency in Sumatra's Jambi Province. The plan was apparently to build a mine-to-mouth plant.<ref>[http://berita.ohapa.com/28/06/41/korea-siap-bangun-pltu-berkapasitas-100-mw-di-jambi.htm Korea Siap Bangun PLTU Berkapasitas 100 MW di Jambi Jambi], Antara News, March 2008.</ref> 
+
+In October 2013, after years of delays, a memorandum of understanding was signed between the provincial government of Jambi and Korean company Korea South-East Power Company (KOSEP), a subsidiary of Korean state-owned power producer [[KEPCO]], to build what had by then become a two-unit, 400-MW coal-fired power plant in Jambi's Tebo Regency. The cost was projected at $750 million. Groundbreaking was expected in mid-2014.<ref>[http://www.metrojambi.com/v1/metro/22556-korsel-investasi-rp-8-triliun-untuk-pembangunan-pltu-tebo-.html Korsel Investasi Rp 8 Triliun untuk Pembangunan PLTU Tebo], Metro Jambi, 15 Oct. 2013.</ref><ref>Jon Afrizal, [http://www.thejakartapost.com/news/2013/05/22/south-korean-investors-build-steam-power-plant-jambi.html South Korean investors to build steam power plant in Jambi], ''Jakarta Post'', 22 May 2013.</ref>
+
+In November 2014, with permitting for the project stalled, Jambi Gov. Hasan Bagri Agus and South Korean businesspeople travelled to Jakarta and met with Indonesia Vice Pres. Muhammad Jusuf Kalla, urging him to help speed approval of the plant. The project was apparently waiting for approval by [[PLN]], which needed to agree to purchase the plant's power.<ref>[http://harianjayapos.com/detail-7827-gubernur-jambi-terus-perjuangkan-izin-pembangunan-pltu-tebo.html Gubernur Jambi Terus Perjuangkan Izin Pembangunan PLTU Tebo], Jayapos, 8 Nov. 2014.</ref><ref>[http://www.antarajambi.com/berita/305852/pembangunan-pltu-tebo-tunggu-rekomendasi-bkpm Pembangunan PLTU Tebo tunggu rekomendasi BKPM], Antara News, 13 Feb. 2015.</ref> In February 2015, a KOSEP executive reiterated the company's willingness to build the plant.<ref>[http://jambi.tribunnews.com/2015/02/12/pengusaha-korea-selatan-serius-bangun-pltu-tebo Pengusaha Korea Selatan Serius Bangun PLTU Tebo], ''Tribun Jambi'', 12 Feb. 2015.</ref>
+
+According to a February 2015 news release, Jambi is waiting for a recommendation from the Investment Coordinating Board (BKPM). The Governor of Jambi, Hasan Basri Agus, said he is committed to developing the plant. According to Hasan, there has been approval from the central government as well as a feasibility study process at the BKPM. The missing step has been a license from PLN.<ref>[http://www.onlinebusinessbureau.com/newsDetails.cfm?id=02-13-2015_38873 "Jambi Invites South Korean Investor,"] Online Business Bureau, February 13, 2015</ref>
+
+In June 2016, it was reported that the project remained in limbo and still lacked permits. Otto Riadi, the head of BPMD-PPT, the regional investment and licensing board, said that more study of the arrangements between the sponsor and the government was needed, in order to clarify who would be the focal point for the project.<ref>[http://economy.okezone.com/read/2016/06/07/320/1408648/pembangunan-pltu-tebo-belum-ada-kejelasan "Pembangunan PLTU Tebo Belum Ada Kejelasan,"] Okezone Finance, 7 June 2016</ref> 
+
+As of December 2018 there is no additional news about the project and it appears to be cancelled.
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Indonesia]]

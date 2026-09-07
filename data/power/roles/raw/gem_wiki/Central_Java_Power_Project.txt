@@ -1,0 +1,242 @@
+# GEM wiki page: Central Java Power Project
+# URL: https://www.gem.wiki/Central_Java_Power_Project
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Central Java Power Project''' is an operating power station of at least 1900-megawatts (MW) in Ujungnegoro, Kandeman, Batang, Jawa, Indonesia.
+It is also known as 中爪哇燃煤发电项目, PLTU Batang.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Central Java Power Project
+| Ujungnegoro, Kandeman, Batang, Jawa, Indonesia
+| -6.900828, 109.803685 (exact)
+|}
+{{
+#display_map:
+-6.900828, 109.803685
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': -6.900828, 109.803685
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: subbituminous<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 950
+| ultra-supercritical
+| 2022
+| False
+|-
+| Unit 2
+| Operating
+| coal: subbituminous<ref name="autoref_0" />
+| 950
+| ultra-supercritical
+| 2022
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| PT Bhimasena Power Indonesia [100%]
+| Electric Power Development Co Ltd [34.0%]; PT Alamtri Resources Indonesia Tbk [34.0%]; ITOCHU Corp [32.0%]
+|-
+| Unit 2
+| PT Bhimasena Power Indonesia [100%]
+| Electric Power Development Co Ltd [34.0%]; PT Alamtri Resources Indonesia Tbk [34.0%]; ITOCHU Corp [32.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc2Ljg4JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTIuMjUlLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01Ljc3JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjElLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAwMDAwNjQxWyJFbGVjdHJpYyBQb3dlcjxicj5EZXZlbG9wbWVudCBDbyBMdGQiXSAtLTM0LjAlLS0+IDEwMDAwMDEyMDE1NAogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjE0JS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTY4LjIxJS0tPiAxMDAwMDAwMDEyMzcKICAgIDEwMDAwMTAxNjEyN1siQk5ZTSBBUyBBR1QvIENMVFMgMTA8YnI+UGVyY2VudCJdIC0tMTAuMjklLS0+IDEwMDAwMDAwMTIzNwogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNi4zNiUtLT4gMTAwMDAwMDAxMjM3CiAgICAxMDAwMDAwMDEyMzdbIklUT0NIVSBDb3JwIl0gLS0zMi4wJS0tPiAxMDAwMDAxMjAxNTQKICAgIDEwMDAwMTAxNTU4N18xMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ3LjkxJS0tPiAxMDAwMDEwMDA3ODIKICAgIDEwMDAwMjAyMjA3OFsiUFQgQWRhcm8gU3RyYXRlZ2ljPGJyPkNhcGl0YWwiXSAtLTc0LjkzJS0tPiAxMDAwMDEwMTA0MzIKICAgIDEwMDAwMjAyMjA3N1siUFQgQWRhcm8gU3RyYXRlZ2ljPGJyPkxlc3RhcmkiXSAtLTI1LjA3JS0tPiAxMDAwMDEwMTA0MzIKICAgIDEwMDAwMTAxMDQzMlsiUFQgQWRhcm8gU3RyYXRlZ2ljPGJyPkludmVzdG1lbnRzIl0gLS00NS42NiUtLT4gMTAwMDAxMDAwNzgyCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLTYuNDMlLS0+IDEwMDAwMTAwMDc4MgogICAgMTAwMDAxMDAwNzgyWyJQVCBBbGFtdHJpIFJlc291cmNlczxicj5JbmRvbmVzaWEgVGJrIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTIwMDI5CiAgICAxMDAwMDAxMjAwMjlbIlBUIEFkYXJvIFBvd2VyIl0gLS0zNC4wJS0tPiAxMDAwMDAxMjAxNTQKICAgIDEwMDAwMDEyMDE1NFsiUFQgQmhpbWFzZW5hIFBvd2VyPGJyPkluZG9uZXNpYSJdIC0tMTAwLjAlLS0+IFAxMDAwMDAxMDI3MDkKICAgIFAxMDAwMDAxMDI3MDlbIkNlbnRyYWwgSmF2YSBQb3dlcjxicj5Qcm9qZWN0Il0K}}
+
+==Financing==
+
+*'''Source of financing:''' '''US$33.9 million''' government guarantee from the World Bank; '''US$3.4 billion''' in debt from Japan Bank for International Cooperation (JBIC), MUFG Bank, Mizuho Financial Group, Mitsubishi UFJ Trust and Banking, Norinchukin Bank, Shinsei Bank, Sumitomo Mitsui Trust Holdings, Sumitomo Mitsui Banking Corporation, DBS Bank and Oversea-Chinese Banking Corporation; '''US$879 million''' in equity from Adaro Energy, Itochu and J-Power
+
+==Background==
+
+In October 2011, two Japanese companies (utility [[J-POWER]] and [[Itochu]], a conglomerate with major coal interests) teamed up with Indonesia-based [[Adaro Power]] (a subsidiary of [[Adaro Energy]]) to build a large coal-fired power plant using advanced [[ultra-supercritical]] technology. The three companies formed [[PT Bhimasena Power Indonesia]] to operate the plant, with power being sold to [[PT Perusahaan Listrik Negara]] (PT PLN), Indonesia's state-owned utility. Originally, the plan was for the first 1,000 MW unit to begin operating in late 2016, followed by the second 1,000 MW unit in 2017. If built, it will be the largest coal plant in Indonesia.<ref name="Bloomberg">Emi Urabe, Tsuyoshi Inajima and Fitri Wulandari, [http://www.bloomberg.com/news/2013-10-04/j-power-partners-delay-4-billion-indonesia-coal-power-plant.html "J-Power, Partners Delay $4 Billion Indonesia Coal Power Plant,"] Bloomberg News, October 3, 2013</ref>
+
+The project was initially planned for commissioning by 2016, but has faced opposition from landowners and environmental groups,<ref name="nar">[http://asia.nikkei.com/Business/Business-Briefs/Adaro-venture-backs-out-of-Central-Java-power-project "Adaro venture backs out of Central Java power project,"] Nikei Asian Review, July 8, 2014.</ref> and delays in acquiring land and completing environmental assessments.<ref name="Bloomberg">Emi Urabe, Tsuyoshi Inajima and Fitri Wulandari, [http://www.bloomberg.com/news/2013-10-04/j-power-partners-delay-4-billion-indonesia-coal-power-plant.html "J-Power, Partners Delay $4 Billion Indonesia Coal Power Plant,"] Bloomberg News, October 3, 2013</ref> To override local opposition, the government invoked the 2012 Land Acquisition Law, which enables land procurement in the name of the public interest. In April 2015 the government said it would start the construction on the plant at the end of the month, despite protests by local people.<ref name="rc">Raras Cahyafitri, [http://www.thejakartapost.com/news/2015/04/08/construction-batang-power-plant-start-end-month.html#sthash.F8DV7N1k.dpuf "Construction of Batang power plant to start end of this month,"] The Jakarta Post, April 08 2015</ref> Unit 1 is now planned for commissioning in 2018, and Unit 2 in 2019.<ref name="LT">[http://energy-indonesia.com/03dge/0140317pln.pdf “PLN Long Term Electricity Plan (2013-2023),”] presentation by Moch. Sofyan, Head of New & Renewable Division of PT PLN (Persero), 06 March 2014</ref> 
+
+On April 30, 2015, Masayoshi Kitamura, president of J-Power, said, "We will start construction as soon as possible, at least by Oct. 6."<ref>Fitri Wulandari and Emi Urabe, [http://www.bloomberg.com/news/articles/2015-05-04/how-not-to-build-a-power-plant-a-tale-from-java-island "How not to build a power plant: a tale from Java Island,"] Bloomberg Business, 4 May 2015</ref> On August 28, 2015, President Joko Widodo performed a ground-breaking ceremony at the plant site.<ref>[http://en.tempo.co/read/news/2015/08/26/056695170/Batang-Steam-Power-Plant-to-Kick-off-Friday "Batang Steam Power Plant to Kick off Friday,"] Tempo, 26 August 2015</ref> Activists denounced the ceremony as a publicity stunt, pointing out that in reality landowners continued to refuse to sell about 10 percent of the 226 hectares needed by the project.<ref>Arif Fiyanto, [http://www.thejakartapost.com/news/2015/09/04/jokowi-s-misleading-view-batang-plant.html "Jokowi’s misleading view of Batang plant,"] Jakarta Post, 4 September 2015</ref>
+
+In late September 2015, J-Power said it would miss the Oct. 6 deadline to provide initial funding for the plant due to long-running land disputes.<ref>[http://af.reuters.com/article/energyOilNews/idAFL3N11Y10W20150928?pageNumber=1&virtualBrandChannel=0 "Indonesia to miss funding deadline for $4 bln power plant,"] Reuters, Sep 28, 2015</ref>
+
+In February 2016, the Supreme Court rejected a challenge by residents against lower court approval of the siting of the plant in central Java. The community is considering other legal options. The first unit is now planned for 2020.<ref name="fs">Fedina S. Sundaryani, [http://www.thejakartapost.com/news/2016/03/02/supreme-court-ruling-paves-way-batang-megaproject.html#sthash.XEnL4n0R.p72mofxa.dpuf "Supreme Court ruling paves way for Batang megaproject,"] The Jakarta Post, March 02 2016</ref> In March 2016, it was reported the plant was beginning the construction phase.<ref>[http://www.rambuenergy.com/2016/03/giant-power-plant-pltu-batang-enters-construction-phase/ "Giant power plant PLTU Batang enters construction phase,"] Rambu Energy, March 25, 2016</ref> In June 2016, JBIC approved a US$3.4 billion loan agreement for the plant.<ref>[http://www.banktrack.org/show/news/banktrack_condemns_japanese_and_singapore_bank_financing_of_batang_coal_project_in_indonesia_as_reckless_to_people_and_climate "BankTrack condemns Japanese and Singapore bank financing of Batang coal project in Indonesia as reckless to people and climate,"] Banktrack, June 6, 2016</ref> The project would consist of two 950 MW units.<ref name="LTP">[http://www.djk.esdm.go.id/pdf/RUPTL/RUPTL%20PLN%202016-2025.pdf “Rencana Usaha Penyediaan Tenaga Listrik, PT PLN (Persero), 2016-2025,”] Kementerian Energi Dan Sumber Daya Mineral, June 2016</ref>
+
+In March 2018, PT Bhimasena stated that construction was 40% complete.<ref>[http://industri.bisnis.com/read/20180318/44/751181/pltu-batang-ditargetkan-mulai-beroperasi-penuh-pada-2020 PLTU Batang Ditargetkan Mulai Beroperasi Penuh Pada 2020], Industri, Mar. 18, 2018</ref>
+
+In February 2019, the government's long-range plan for 2019-2028 listed the project with a completion date of 2020.<ref name="RUPTL2019">[http://listrik.org/pln/ruptl/ Rencana Usaha Penyediaan Tenaga Listrik (RUPTL) 2019-2028,] PT PLN Persero, V-43</ref> In October 2019, construction was reportedly 83% complete and the plant was expected to be commissioned in 2020.<ref name="tjp1">[https://www.thejakartapost.com/news/2019/10/04/indonesia-s-largest-power-plant-schedule-operate-next-year.html Indonesia’s largest power plant on schedule to operate next year], The Jakarta Post, Oct. 4, 2019</ref> In April 2020, a House of Representatives faction of the Bataang regency recommended to the national government that construction of the plant be temporarily halted due to the Covid-19 pandemic.<ref>[https://ekonomi.bisnis.com/read/20200414/44/1226763/dprd-batang-usul-proyek-pltu-disetop-sementara-ini-kata-bupati DPRD Batang Usul Proyek PLTU Disetop Sementara, Ini Kata Bupati], Ekonomi, Apr. 14, 2020</ref> Construction was 93.6% complete as of Q1 2020.<ref>[https://market.bisnis.com/read/20200708/192/1263394/di-balik-riuhnya-kawasan-industri-batang-adaro-adro-pacu-penyelesaian-pltu-bpi Di Balik Riuhnya Kawasan Industri Batang, Adaro (ADRO) Pacu Penyelesaian PLTU BPI], Bisnis, Jul. 8, 2020</ref>
+
+In October 2020, Adaro announced a target start date of the end of 2021.<ref name=cnbc2020>[https://www.cnbcindonesia.com/market/20201020171701-17-195804/tertunda-adaro-targetkan-pltu-batang-beroperasi-akhir-2021 Tertunda, Adaro Targetkan PLTU Batang Beroperasi Akhir 2021], CNBC Indonesia, Oct. 20, 2020</ref> In April 2021, it was reported that construction was more than 94% complete.<ref name=bisnis>[https://market.bisnis.com/read/20210420/192/1383712/adaro-adro-targetkan-pltu-batang-rampung-awal-2022 Adaro Targets PLTU Batang Completion in Early 2022], Bisnis, Apr. 20, 2021</ref>
+
+In August 2022, the power station appeared to be in the testing phase for commercial operation or COD. Both units were reportedly 97.7% complete.<ref>[https://market.bisnis.com/read/20220802/192/1561854/adaro-adro-persiapkan-cod-pltu-batang-2x11000-mw-tambah-cuan Adaro ADRO Persiapkan COD PLTU Batang 2x1.1000 MW, Tambah Cuan], Bisnis, Aug. 2, 2022</ref>
+
+In an October 2022 weekly newsletter, the power station was mentioned as officially operational since August 31, 2022.<ref name =kpbu>[https://kpbu.kemenkeu.go.id/read/1100-1263/umum/newsletter-kantor-bersama-kpbu PPP Joint Office Newsletter: 145th Edition], Kerjasama Pemerintah dan Badan Usaha, October 2022</ref>
+
+In early 2023, the power station was listed as a 2022 achievement.<ref>phttps://voi.id/ekonomi/249884/progres-proyek-listrik-35-gw-baru-47-persen-hingga-desember-2022 "Progres Proyek Listrik 35 GW Baru 47 Persen hingga Desember 2022,"] VOI, Feb. 1, 2023</ref>
+
+In November 2024, the Ministry of Energy and Mineral Resources designated Central Java Power Project as a Objek Vital Nasional (national vital object).<ref>[https://www.suara.com/bisnis/2024/11/07/131833/pltu-batang-jadi-pilar-strategis-energi-nasional-dan-pendorong-perekonomian-daerah "PLTU Batang Jadi Pilar Strategis Energi Nasional dan Pendorong Perekonomian Daerah,"] Suara.com, November 7, 2024</ref>
+
+==Funding==
+
+===World Bank Support===
+The [[World Bank and coal|World Bank's]] Indonesia Infrastructure Guarantee Fund (IIGF) awarded its first government guarantee of US$33.9 million to the project. The bank also served as the transaction advisor for the project, arranging financing and promoting the project to investors.<ref name="Price">[http://priceofoil.org/content/uploads/2013/09/OCI_World_Bank_Indonesia_Coal_09_2013.pdf "World Bank Accelerating Coal Development in Indonesia,"] Oil Change International, September 2013</ref>
+====Critics accuse World Bank of using "back door means" to skirt restrictions and avoid transparency====
+All of the World Bank Group’s activities surrounding the Central Java Power Project add up to as much or more involvement than is typically expended for a direct project investment by the World Bank Group. However, because the World Bank Group has approached this project through back door means, i.e., financial intermediaries and off-budget grants for technical assistance, this mega coal project did not have to meet the World Bank Group’s criteria for coal lending, including full consideration of alternatives, internalizing the cost of carbon, and optimizing energy efficiency and conservation measures. Such an approach has also resulted in less international scrutiny and transparency than is typically involved in Bank-supported coal developments.<ref name="Price">[http://priceofoil.org/content/uploads/2013/09/OCI_World_Bank_Indonesia_Coal_09_2013.pdf "World Bank Accelerating Coal Development in Indonesia,"] Oil Change International, September 2013</ref>
+===JBIC===
+In August 2014 it was reported that the Japanese Bank for International Cooperation (JBIC) was considering funding 60% (over 400 billion yen) of the plant’s construction, using public funds.<ref>[http://sekitan.jp/jbic/?p=648&lang=en "Standing up against Japan’s coal-fired power plant export: Locals affected by the Batang coal-fired power plant project speak out,"] No Coal, Go Green, August 19, 2014.</ref>
+
+In June 2016, JBIC approved a US$3.4 billion loan agreement for the 2,000 MW project, joined by a string of commercial banks: Japanese banks MUFG Bank, Mizuho Financial Group, Mitsubishi UFJ Trust and Banking, Norinchukin Bank, Shinsei Bank, Sumitomo Mitsui Trust Holdings, and Sumitomo Mitsui Banking Corporation, and two Singapore based banks, DBS Bank and Oversea-Chinese Banking Corporation.<ref>[http://www.banktrack.org/show/news/banktrack_condemns_japanese_and_singapore_bank_financing_of_batang_coal_project_in_indonesia_as_reckless_to_people_and_climate "BankTrack condemns Japanese and Singapore bank financing of Batang coal project in Indonesia as reckless to people and climate,"] Banktrack, June 6, 2016</ref><ref name="IJGlobal"> [https://ijglobal.com/data/transaction/19236/central-java-coal-fired-power-plant-2000mw-ppp "Central Java Coal-Fired Power Plant (2000MW) PPP"], IJGlobal, accessed Sep. 16, 2020</ref> 
+
+===Equity===
+Adaro Energy, Itochu and J-Power provided US$879 million in equity for the project.<ref name="IJGlobal"> [https://ijglobal.com/data/transaction/19236/central-java-coal-fired-power-plant-2000mw-ppp "Central Java Coal-Fired Power Plant (2000MW) PPP"], IJGlobal, accessed Sep. 16, 2020</ref>
+
+==Environmental Impacts==
+
+According to Greenpeace Indonesia, the planned site for the plant is in the Ujungnegoro-Roban coastal area, which is a marine conservation area and was declared an area for development of marine tourism under Government Regulation No. 26/2008. The plant will infringe upon a protected area, in direct contravention of Central Java provincial bylaw No 6/2010 on spatial planning. If construction of this coal plant goes ahead at least five villages in the Batang area will be demolished, and hundreds of hectares of jasmine, plantations and paddy fields will be destroyed. Arif Fiyanto of Greenpeace Indonesia said, “The planned coal plant will pollute rich coastal fishing waters and threaten the livelihoods of more than 10,000 small-scale fishermen.” Greenpeace also reported that the plant will emit 226 kg of mercury per year.<ref>Siaran Pers, [http://www.greenpeace.org/seasia/id/press/releases/Batang-Coal-fired-Power-Plant-Will-destroy-health-and-livelihoods/ "Batang coal-fired power plant will destroy health and livelihoods,"] Greenpeace Indonesia, April 3, 2013</ref>
+
+In July 2025, Indonesia’s Ministry of Marine Affairs and Fisheries granted permission for the Central Java Power Project to use seawater for cooling, raising concerns from marine experts on the impact of heated discharge on coastal ecosystems and fisheries. The power station reportedly used approximately 3 billion cubic meters of seawater each year. The People’s Coalition for Fisheries Justice (KIARA) called for an environmental impact assessment “to ensure that the seawater intake and discharge of heated water from the power plant’s operations do not pollute or damage the surrounding marine ecosystem and do not harm the livelihoods of traditional fishers in the area.”<ref>[https://news.mongabay.com/2025/07/batang-coal-plants-seawater-permit-imperils-marine-life-fishing-communities/ “Batang coal plant’s seawater permit imperils marine life, fishing communities,”] Mongabay, July 26, 2025</ref>
+
+==Opposition==
+
+Around 7,000 residents of the five villages affected by the project are strongly opposed to its construction. In addition, a range of environmental and human rights groups have protested the project.<ref>Kate Sheppard, [http://www.huffingtonpost.com/2013/09/25/world-bank-coal_n_3986125.html "World Bank Aids New Coal Project Abroad, Defying Policy, Environmental Group Says,"] Huffington Post, September 25, 2013</ref> About 74 farmers from four villages in Central Java’s Batang regency have refused to sell their land for the project.<ref>[http://www.bloomberg.com/news/articles/2015-05-04/how-not-to-build-a-power-plant-a-tale-from-java-island "How Not to Build a Power Plant: a Tale From Java Island,"] Bloomberg, May 4, 2015</ref> 
+
+===December 2015: National Human Rights Commission===
+In December 2015, the National Human Rights Commission, an Indonesian state-sanctioned but independent group, sent letters to Prime Minister Abe and the Japanese parliament requesting that greater attention be paid to human rights issues associated with the plant. The letter stated that since 2013, a pressure campaign had been conducted against hold-out landowners “including intimidations and physical and mental threats.” According to additional comments by commissioner Dianto Bachriadi, heavy machines driven by military soldiers hired by the government and the consortium made canals surrounding the properties of local people who were refusing to sell. “It has made them isolated. People from outside can’t go in and the residents can’t bring their products out,” he said. According to Bachriadi, the commission had previously recommended that the project site be moved to a less-populated and less-conflicted area, but the recommendation was ignored.<ref>[http://www.japantimes.co.jp/news/2016/01/09/national/indonesian-rights-commission-tells-japan-review-power-project/#.VyvkwBUrKem "Indonesian rights commission tells Japan to review power project,"] Japan Times, January 9, 2016</ref>
+
+===July 2015: JBIC protest===
+In July 2015, three villagers affected by the proposed plant traveled to Tokyo to personally deliver an official objection to the Japan Bank for International Cooperation (JBIC), the public financial institution considering funding the project. The objection filed with JBIC was signed by 23 leaders of the local community organization known as Paguyuban UKPWR. The communities also filed a complaint against Japanese companies Itochu and J-Power under the OECD Guidelines for Multinational Enterprises. The communities allege that JBIC has violated its social and environmental guidelines in proceeding with the project.<ref>[http://endcoal.org/2015/08/in-japan-indonesian-villagers-file-official-complaints-on-batang-coal-plant/ "In Japan, Indonesian Villagers File Official Complaints on Batang Coal Plant,"] EndCoal, August 12, 2015</ref> 
+
+===Protest at Japanese embassy (July 22, 2013)===
+[[File:July 22-2013-Jakarta-protest.jpg|thumb|right|upright=2|"Reject Batang Power Plant," July 22, 2013 protest at Japanese embassy in Jakarta. Photo courtesy of GreenpeaceIndonesia]]
+On July 22, 2013, about 150 people protested against the project in front of the Japanese Embassy in Jakarta. The protesters were members of Paguyuban Rakyat Batang Berjuang Untuk Konservasi, supported by Yayasan Lembaga Bantuan Hukum Indonesia (YLBHI), or Indonesia Legal Aid Foundation (YLBHI). According to protesters, the project would heavily impact the livelihoods of thousands of fishermen due to its effects on coral reefs and other environmentally sensitive areas. In addition, the 200-500 acres used by the project would destroy irrigated rice fields and tens of thousands of trees. Among the protesters was M. Ali Tafrihan of Roban village, who reported being jailed for six months as a result of his opposition to the project.<ref>Siaran Pers, [http://www.greenpeace.org/seasia/id/press/releases/stop-investasi-jahat-jepang-di-pltu-batang/ "Stop Investasi Jahat Jepang di PLTU Batang,"] Greenpeace Indonesia press release, July 22, 2013</ref>
+
+===Human Rights Violations===
+According to Lembaga Bantuan Hukum (LBH) Semarang, a legal aid organization that has been working with residents at the project site, thugs as well as police and members of the military have used intimidation tactics against those who have refused to sell their land.<ref name="Monga">Diana Parker, [http://news.mongabay.com/2013/0326-parker-coal-plant-java.html "Indonesia's largest coal plant will be built despite protests, minister says,"] Mongabay.com, May 26, 2013</ref>
+
+===Other Opposition===
+
+From 2011-2014, over 7,000 villagers near the Batang power plant staged more than 22 protests against the construction of Southeast Asia’s largest coal-fired power plant. Citing how the World Bank and Japan are helping fund the Batang power plant, Greenpeace joined the Batang communities and created a report in opposition to “investing in dirty fossil fuels.”<ref>[https://www.banktrack.org/download/the_true_cost_of_coal/the_true_cost_of_coal_greenpeace.pdf/ "The True Cost of Coal,"] ''Greenpeace'', Mar. 2014</ref>
+
+On May 6, 2014, local residents of Batang, Central Java province in Indonesia protested against the Batang power plant in front of the Batang State Attorney Office. The protests resulted in a violent class with local police. Protestors believe that the power plant would have negative impacts on the community near Batang.<ref>[https://sekitan.jp/jbic/en/2014/05/12/578/ "Human Rights Violations Continue, Residents Attacked Again in Violent Clash with Police,"] ''Stop Japanese Coal Finance'', 12 May. 2014</ref>
+
+On May 1, 2015, a petition started to call the Indonesian president, Jokowi Widodo, to stop the construction of the Batang coal power plant. Citing how local villagers near Batang and rice farmers have refused to cooperate with the coal plant project, the petition demands that the Indonesian government stop “this dirty project.” The project is believed to eventually harm rice fields, destroy fisheries, and emit toxic air pollution.<ref>[https://secure.avaaz.org/community_petitions/en/Indonesian_President_Joko_Widodo_Stop_the_Central_Java_Coal_Plant/?nkHCqjb/ "Stop the Central Java Coal Plant!"] ''Avaaz.org'', 1 May. 2015</ref>
+
+In May 2016, about 3,500 people staged a protest in the capital of Indonesia against the development of the Batang power plant. Organized by environmental groups, the protest started from the Japanese Embassy to the presidential palace.<ref>[https://ejatlas.org/conflict/batang-coal-mining-central-java-indonesia/ "Batang coal fired power plant, Central Java, Indonesia,"] ''Environmental Justice Atlas'', 21 Sep. 2017</ref>
+
+On March 30, 2017, activists stopped construction at the Batang power plant for 13 hours. Activists demand for the Indonesian government and the Japan Bank for International Cooperation (JBIC) to pull their financial support of the coal plant. The protestors are motivated by how the Batang plant would “contribute to 6500 premature deaths in Nindonesia every year linked to air pollution from burning coal.” Furthermore, local fishermen joined the activists’ blockade because the coal plant has made it harder to catch fish.<ref>[https://dominicantoday.com/dr/world/2017/03/30/activists-stop-construction-at-southeast-asias-biggest-planned-coal-plant/ "Activists stop construction at Southeast Asia's biggest planned coal plant,"] ''Dominican Today'', 30 Mar. 2017</ref> Activists from Greenpeace, Indonesian Forum for Environment (WALHI) and Mining Advocacy Network (JATAM) also joined the blockade of the coal plant.<ref>[https://jakartaglobe.id/multimedia/protests-coal-fired-power-plant-central-java/ "Protests Against Coal-Fired Power Plant in Central Java,"] ''Jakarta Globe'', 31 Mar. 2017</ref>
+
+In January 2023, former landowners continued to protest at the entrance of the power station. According to organizers, residents were underpaid for their land in 2012, and they would continue actions under their demands were met.<ref>[https://jateng.inews.id/berita/ratusan-warga-demo-di-pintu-masuk-pltu-batang-ini-tuntutannya "Ratusan Warga Demo di Pintu Masuk PLTU Batang, Ini Tuntutannya,"] ''iNews Jateng'', January 17, 2023</ref>
+
+==Delays==
+
+In July 2013 Bloomberg reported that the plant was delayed due to difficulties acquiring land, environmental assessments, and local opposition. As a result of the problems, the onset of construction was reportedly postposed by two years, from October 2012 to October 2014.<ref name="Bloomberg">Emi Urabe, Tsuyoshi Inajima and Fitri Wulandari, [http://www.bloomberg.com/news/2013-10-04/j-power-partners-delay-4-billion-indonesia-coal-power-plant.html "J-Power, Partners Delay $4 Billion Indonesia Coal Power Plant,"] Bloomberg News, October 3, 2013</ref> According to a spokesman for J-POWER, 80 percent of land needed for the project had been acquired.<ref name="Bloomberg">Emi Urabe, Tsuyoshi Inajima and Fitri Wulandari, [http://www.bloomberg.com/news/2013-10-04/j-power-partners-delay-4-billion-indonesia-coal-power-plant.html "J-Power, Partners Delay $4 Billion Indonesia Coal Power Plant,"] Bloomberg News, October 3, 2013</ref>
+
+===Local landowners could derail project===
+[[File:Central_Java_protest.jpg|thumb|right|upright=2|Protest against Central Java Power Project, (undated) Photo courtesy of GreenpeaceIndonesia]]
+{{#ev:youtube|WyEkfzBjEi4|600|right|Residents speak out against Central Java Project, November 25, 2013. Courtesy of GreenpeaceIndonesia.}}
+According to a July 2013 story in the Japan Times, around 50 landowners at the project site were refusing to sell 40 hectares, an amount of land amounting to 20 percent of the land needed to build the project. If the land purchase was not completed by October 6, the sponsors of the project would lose the right to build the project and a new round of bidding would need to be conducted. According to an unnamed Indonesian official, completing the acquisition by the October deadline would be virtually impossible.<ref name="Times">[http://bit.ly/KhJY1k "Locals stall $4 billion Indonesia power plant,"] Japan Times, July 20, 2013</ref> According to a report in the environmental blog Mongabay, opponents of the plant were disputing government claims regarding the amount of land that had been secured. Roidhi, a resident of Karanggenang, one of the villages affected by the project, told Mongabay that "70 percent of our land still belongs to us." "When you look at the data mentioned by Hatta Rajasa...and Lucy Eko Wuryanto it is very clear that the data mentioned is a mere claim. Each person is reporting different data," said Wahyu Nandang Herawan, a staff member of Lembaga Bantuan Hukum (LBH) Semarang, a legal aid organization that has been working with the community. <ref name="Monga">Diana Parker, [http://news.mongabay.com/2013/0326-parker-coal-plant-java.html "Indonesia's largest coal plant will be built despite protests, minister says,"] Mongabay.com, May 26, 2013</ref>
+
+===Project wins one-year extension===
+In October 2013, a decree by President Susilo Bambang Yudhoyono revised a regulation that required the project one year after signing its contract to secure financial backing. Following the extension, the Jakarta Post reported that the consortium sponsoring the project and the government "are working on a persuasive approach to win the hearts of local residents." Garibaldi Thohir, president of Adaro Energy, said, "The important thing now is how to approach the community. I myself, along with Pak Ganjar will take part in the socialization program." Ganjar Pranowo is the governor of Centra Java.<ref>[http://www.thejakartapost.com/news/2013/11/04/consortium-use-new-approach-stalled-plant.html "Consortium to use new approach in stalled plant,"] Jakarta Post, November 4, 2013</ref>
+
+===BPI declares force majeure===
+In June 2014 PT Adaro said Bhimasena Power Indonesia (BPI), the project's joint venture between Japan's J-Power, Itochu, and Adaro subsidiary Adaro Power, declared force majeure with suppliers and Indonesia state-owned electricity company PLN on June 27, 2014, due to delays in acquiring the necessary land. Force majeure is a legal clause that allows companies to walk away from contracts soured by external events.<ref name="nar">[http://asia.nikkei.com/Business/Business-Briefs/Adaro-venture-backs-out-of-Central-Java-power-project "Adaro venture backs out of Central Java power project,"] Nikei Asian Review, July 8, 2014.</ref> 
+
+In a statement, BPI said the consortium had acquired more than 85 percent of the land needed for the project as well as approval for its environmental impact assessment and other necessary permits but, "due to the instability of the situation at the site, the acquisition of the remaining plots of land are beyond the reasonable ability of a private company, like BPI, to acquire and may be acquired only with government support.”<ref name="nar">[http://asia.nikkei.com/Business/Business-Briefs/Adaro-venture-backs-out-of-Central-Java-power-project "Adaro venture backs out of Central Java power project,"] Nikei Asian Review, July 8, 2014.</ref>
+
+BPI is committed to continue the project, the statement said.<ref name="nar">[http://asia.nikkei.com/Business/Business-Briefs/Adaro-venture-backs-out-of-Central-Java-power-project "Adaro venture backs out of Central Java power project,"] Nikei Asian Review, July 8, 2014.</ref>
+
+==Cost Escalation==
+
+Originally the project was estimated to cost US$3.2 billion. In October 2013, Boy Garibaldi Thohir, president director of Adaro Energy, said that the cost of the project had risen significantly. Boy declined to state an exact figure but said that the total was not more than $5 billion. The cost increases have delayed the financial closing of the project.<ref>Retno Ayuningtyas, [http://www.thejakartaglobe.com/business/investment-for-central-java-power-plant-to-soar/ "Investment for Central Java Power Plant to Soar,"] Jakarta Globe, October 17, 2013</ref>
+
+In 2015 the cost was estimated at US$4 billion.<ref name="rc">Raras Cahyafitri, [http://www.thejakartapost.com/news/2015/04/08/construction-batang-power-plant-start-end-month.html#sthash.F8DV7N1k.dpuf "Construction of Batang power plant to start end of this month,"] The Jakarta Post, April 08 2015</ref>
+
+==High Efficiency Technology and Japan's International Economic Strategy==
+
+The project will use [[ultra-supercritical]] technology, which offers combustion efficiency of 43 percent. The relative reduction in carbon dioxide emissions provided by the high efficiency of the combustion technology has been cited by Japan's prime minister Shinzo Abe, among others, as an argument for constructing the plant.<ref>[http://www.kantei.go.jp/foreign/96_abe/statement/201310/07koen_e.html "Keynote Address by Prime Minister Shinzo Abe at the APEC CEO Summit 2013,"] Prime Minister of Japan and His Cabinet website, October 7, 2013</ref> According to the Nikkei Asian Review, promoting of ultra-supercritical technology as a climate change solution is linked to Japanese government efforts to assist Japanese businesses against Chinese rivals for coveted overseas power plant construction contracts. "We want to make the Central Java project a showcase that will open the door to more projects," said an official at Japan's Ministry of Economy, Trade, and Industry.<ref>Hirofumi Matsuo, [http://asia.nikkei.com/Business/Trends/Prospects-dimming-for-key-Japanese-power-plant-in-Indonesia "Prospects dimming for key Japanese power plant in Indonesia,"] Nikkei Asian Review, November 28, 2013</ref>
+
+==Timeline==
+
+*October 2011 - joint venture formed
+*October 2012 - original plan for beginning of construction
+*October 2013 - companies announce that construction would be delayed at least two years due to environmental assessments, local opposition, and difficulties acquiring land.
+*April 2014 - Coordinating Economic Minister Hatta Rajasa says 29 ha of land are still in question from the 226 ha needed for the megaproject.
+*June 2014 - Bhimasena Power Indonesia declares force majeure, a legal clause that allows companies to walk away from contracts soured by external events.
+*Mar 2015 - Batang residents and Greenpeace Indonesia activists protest a statement made by President Jokowi in which he claimed that obstacles hampering the construction of the plant had been overcome.<ref name="fs">Fedina S. Sundaryani, [http://www.thejakartapost.com/news/2016/03/02/supreme-court-ruling-paves-way-batang-megaproject.html#sthash.XEnL4n0R.p72mofxa.dpuf "Supreme Court ruling paves way for Batang megaproject,"] The Jakarta Post, March 02 2016</ref>
+*Aug. 28, 2015 - Jokowi officiates the ground-breaking ceremony for the project, although 11.1 ha of land still needed.<ref name="fs">Fedina S. Sundaryani, [http://www.thejakartapost.com/news/2016/03/02/supreme-court-ruling-paves-way-batang-megaproject.html#sthash.XEnL4n0R.p72mofxa.dpuf "Supreme Court ruling paves way for Batang megaproject,"] The Jakarta Post, March 02 2016</ref>
+*April 2017 - Construction described as "30 percent from completion" by PT Adaro Energy president Garibaldi Thohir<ref>[https://www.rambuenergy.com/2017/04/adaro-mega-power-plant-pltu-batang-making-good-progress/ "Adaro: mega power plant PLTU Batang making good progress,"] RambuEnergy, 27 April 2017</ref>
+*September 2018 - Construction described as 50 percent complete, with a target date of 2020 for commissioning.<ref>[https://industri.kontan.co.id/news/adaro-energy-adro-pastikan-proyek-pltu-bakal-rampung-tepat-waktu Adaro Energy (ADRO) pastikan proyek PLTU bakal rampung tepat waktu], Kontan, Sep. 23, 2018</ref>
+*December 2018 - Construction described as 63 percent complete.<ref>[http://akurat.co/ekonomi/id-420273-read-rini-dorong-perkembangan-industri-di-batang-pasca-pembangunan-pltu Rini Dorong Perkembangan Industri di Batang Pasca Pembangunan PLTU], Akurat, Dec. 5, 2018</ref>
+*October 2019 - Construction described as 83 percent complete.<ref name="tjp1">[https://www.thejakartapost.com/news/2019/10/04/indonesia-s-largest-power-plant-schedule-operate-next-year.html Indonesia’s largest power plant on schedule to operate next year], The Jakarta Post, Oct. 4, 2019</ref>
+*April 2021 - Construction described as 94 percent complete.<ref name=bisnis>[https://market.bisnis.com/read/20210420/192/1383712/adaro-adro-targetkan-pltu-batang-rampung-awal-2022 Adaro Targets PLTU Batang Completion in Early 2022], Bisnis, Apr. 20, 2021</ref>
+*August 2022 - The power station was operational.<ref name =kpbu>[https://kpbu.kemenkeu.go.id/read/1100-1263/umum/newsletter-kantor-bersama-kpbu PPP Joint Office Newsletter: 145th Edition], Kerjasama Pemerintah dan Badan Usaha, October 2022</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Indonesia]]

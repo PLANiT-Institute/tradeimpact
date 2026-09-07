@@ -1,0 +1,77 @@
+# GEM wiki page: Mphanda Nkuwa hydroelectric plant
+# URL: https://www.gem.wiki/Mphanda_Nkuwa_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Mphanda Nkuwa hydroelectric plant''' is a hydroelectric power plant in pre-construction in Marara, Tete Province, Mozambique.
+
+==Project Details==
+==== '''Table 1:''' Project details for Mphanda Nkuwa hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Turbines
+!Technology type
+!Owner
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://developmentreimagined.com/wp-content/uploads/2024/03/Mozambique.pdf}}</ref>
+| 2031 (planned)<ref name="autoref_1">{{cite web |url=https://climatechangenews.com/2023/03/06/world-bank-backs-mega-dam-threatening-to-displace-thousands-in-mozambique/ |archive-url=https://web.archive.org/web/20230308114219/https://www.climatechangenews.com/2023/03/06/world-bank-backs-mega-dam-threatening-to-displace-thousands-in-mozambique/ |archive-date=2023-03-08}}</ref>
+| 1500 MW<ref name="autoref_2">{{cite web |url=https://www.hcb.co.mz/hydroelectricity/ |archive-url=https://web.archive.org/web/20221007173619/https://www.hcb.co.mz/hydroelectricity/ |archive-date=2022-10-07}}</ref>
+| 4 x 375 MW<ref name="autoref_3">{{cite web |url=https://macua.blogs.com/files/mphanda-nkuwa_brochure_a5-7.pdf |archive-url=https://web.archive.org/web/20221005164609/https://macua.blogs.com/files/mphanda-nkuwa_brochure_a5-7.pdf |archive-date=2022-10-05}}</ref>
+| Run-of-river<ref name="autoref_4">{{cite web |url=https://www.nsenergybusiness.com/projects/mphanda-nkuwa-hydropower-project/ |archive-url=https://web.archive.org/web/20221007175029/https://www.nsenergybusiness.com/projects/mphanda-nkuwa-hydropower-project/ |archive-date=2022-10-07}}</ref>
+| TotalEnergies SE [30%]; Sumitomo Corp [30%]; EDF Renewables [40%] (法國電力再生能源公司; 住友商事株式会社)<ref name="autoref_5">{{cite web |url=https://www.hydroreview.com/business-finance/business/consortium-selected-to-develop-1-5-gw-mphanda-nkuwa-hydropower-project-in-mozambique/}}</ref><ref name="autoref_5" /><ref name="autoref_5" />
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Mphanda Nkuwa hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Location
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Marara, Tete Province, Mozambique<ref name="autoref_3" />
+| Zambezi River<ref name="autoref_1" />
+| -15.9998, 33.4347 (exact)<ref name="autoref_3" />
+|}
+The map below shows the exact location of the hydroelectric power plant:
+{{
+#display_map:
+-15.9998, 33.4347~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in Mozambique]]
+
+__NOTOC__

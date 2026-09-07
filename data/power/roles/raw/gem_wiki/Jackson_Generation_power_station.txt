@@ -1,0 +1,116 @@
+# GEM wiki page: Jackson Generation power station
+# URL: https://www.gem.wiki/Jackson_Generation_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Jackson Generation power station''' is an operating power station of at least 1288-megawatts (MW) in Elwood, Will, Illinois, United States.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Jackson Generation power station
+| Elwood, Will, Illinois, United States
+| 41.438536, -88.11063 (exact)<ref name="autoref_0">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (November 2019) |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20200612191408/https://www.eia.gov/electricity/data/eia860m/archive/xls/november_generator2019.xlsx |archive-date=2020-06-12 |url-status=live}}</ref>
+|}
+{{
+#display_map:
+41.438536, -88.11063
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2''': 41.438536, -88.11063
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=https://www.nsenergybusiness.com/news/j-power-usa-jackson-generation-facility/ |archive-url=https://web.archive.org/web/20220709063719/https://www.nsenergybusiness.com/news/j-power-usa-jackson-generation-facility/ |archive-date=2022-07-09}}</ref><ref name="autoref_2">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (July 2021) |access-date=October 13, 2021 |archive-url=https://web.archive.org/web/20211122185052/https://www.eia.gov/electricity/data/eia860m/archive/xls/july_generator2021.xlsx |archive-date=2021-11-22 |url-status=live}}</ref>
+| fossil gas: natural gas<ref name="autoref_0" />
+| 644<ref name="autoref_3">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/xls/april_generator2022.xlsx |title=U.S. Energy Information Administration, Preliminary Monthly Electric Generator Inventory (April 2022) |access-date=June 10, 2022 |archive-url=https://web.archive.org/web/20220712171434/https://www.eia.gov/electricity/data/eia860m/xls/april_generator2022.xlsx |archive-date=2022-07-12 |url-status=live}}</ref>
+| combined cycle<ref name="autoref_0" />
+| no<ref name="autoref_4">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2020.xlsx |title=U.S. Energy Information Administration, Form EIA-860 detailed data with previous form data (EIA-860A/860B), 2020 |access-date=October 13, 2021 |archive-url=https://web.archive.org/web/20210418200451/https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2020.xlsx |archive-date=2021-04-18 |url-status=live}}</ref>
+| 2022<ref name="autoref_0" />
+| Mitsubishi Power: M501JAC<ref name="autoref_5">{{cite web |url=https://www.powermag.com/jackson-generation-pioneers-north-americas-first-m501jac-gas-turbines/?utm_source=omeda&utm_medium=email&utm_campaign=pwrgasdirect+eletter&oly_enc_id=2515H1512489C1W |title=Jackson Generation Pioneers North America’s First M501JAC Gas Turbines |date=2024-10-01 |website=POWER Magazine |access-date=2024-10-18 |archive-url=https://web.archive.org/web/20250519205238/https://www.powermag.com/jackson-generation-pioneers-north-americas-first-m501jac-gas-turbines/?oly_enc_id=2515H1512489C1W |archive-date=2025-05-19}}</ref>
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil gas: natural gas<ref name="autoref_0" />
+| 644<ref name="autoref_3" />
+| combined cycle<ref name="autoref_0" />
+| no<ref name="autoref_4" />
+| 2022<ref name="autoref_0" />
+| Mitsubishi Power: M501JAC<ref name="autoref_5" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Jackson Generation LLC [100%]<ref name="autoref_6">{{cite web |url=https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2018.xlsx |title=U.S. Energy Information Administration, Form EIA-860 detailed data with previous form data (EIA-860A/860B), 2018 |access-date=September 10, 2021 |archive-url=https://web.archive.org/web/20191116210428/https://www.eia.gov/electricity/data/eia860m/archive/xls/december_generator2018.xlsx |archive-date=2019-11-16 |url-status=live}}</ref>
+| J-POWER Jackson Partners LLC [51.0%]; Gulf Energy USA LLC [49.0%]
+|-
+| 2
+| Jackson Generation LLC [100%]<ref name="autoref_6" />
+| J-POWER Jackson Partners LLC [51.0%]; Gulf Energy USA LLC [49.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMjQ0NTVbIkotUE9XRVIgSmFja3Nvbjxicj5QYXJ0bmVycyBMTEMiXSAtLTUxLjAlLS0+IDEwMDAwMDAwMzM1NgogICAgMTAwMDAyMDI0NDU2WyJHdWxmIEVuZXJneSBVU0EgTExDIl0gLS00OS4wJS0tPiAxMDAwMDAwMDMzNTYKICAgIDEwMDAwMDAwMzM1NlsiSmFja3NvbiBHZW5lcmF0aW9uPGJyPkxMQyJdIC0tMTAwLjAlLS0+IFAxMDAwMDA0MDI0MTIKICAgIFAxMDAwMDA0MDI0MTJbIkphY2tzb24gR2VuZXJhdGlvbjxicj5wb3dlciBzdGF0aW9uIl0K}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in United States]]

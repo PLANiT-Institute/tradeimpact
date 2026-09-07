@@ -1,0 +1,134 @@
+# GEM wiki page: Shuqaiq 2 Independent Water and Power Project
+# URL: https://www.gem.wiki/Shuqaiq_2_Independent_Water_and_Power_Project
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Shuqaiq 2 Independent Water and Power Project''' (محطة كهرباء الشقيق المستقلة) is an operating power station of at least 1020-megawatts (MW) in Al Shuqaiq, Jizan, Saudi Arabia.
+It is also known as Shuqaiq 2 IWPP.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Shuqaiq 2 Independent Water and Power Project
+| Al Shuqaiq, Jizan, Saudi Arabia
+| 17.659601, 42.07608 (exact)<ref name="autoref_0">{{cite web |url=https://goo.gl/maps/gELugW729pBaKCsy6}}</ref>
+|}
+{{
+#display_map:
+17.659601, 42.07608
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1, 2, 3''': 17.659601, 42.07608
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_1">{{cite web |url=http://www.sqwec.com/?q=content/about-sqwec |archive-url=https://web.archive.org/web/20221207141018/http://sqwec.com/?q=content/about-sqwec |archive-date=2022-12-07}}</ref><ref name="autoref_2">{{cite web |url=https://www.power-technology.com/data-insights/power-plant-profile-shuqaiq-phase-2-iwpp-saudi-arabia/ |title=Power plant profile: Shuqaiq Phase 2 IWPP, Saudi Arabia |date=2023-04-23 |access-date=2024-04-03 |archive-url=https://web.archive.org/web/20240413042309/https://www.power-technology.com/data-insights/power-plant-profile-shuqaiq-phase-2-iwpp-saudi-arabia/ |archive-date=2024-04-13}}</ref>
+| fossil liquids: heavy fuel oil<ref name="autoref_1" /><ref name="autoref_3">{{cite web |url=https://www.nomac.com/en/our-operations/nomac-globally/shuqaiq-iwpp/ |archive-url=https://web.archive.org/web/20210118224830/https://nomac.com/en/our-operations/nomac-globally/shuqaiq-iwpp/ |archive-date=2021-01-18}}</ref>
+| 340<ref name="autoref_3" />
+| steam turbine<ref name="autoref_1" />
+| not found
+| 2010<ref name="autoref_1" />
+| no
+|-
+| 2
+| Operating<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil liquids: heavy fuel oil<ref name="autoref_1" /><ref name="autoref_3" />
+| 340<ref name="autoref_3" />
+| steam turbine<ref name="autoref_1" />
+| not found
+| 2010<ref name="autoref_1" />
+| no
+|-
+| 3
+| Operating<ref name="autoref_1" /><ref name="autoref_2" />
+| fossil liquids: heavy fuel oil<ref name="autoref_1" /><ref name="autoref_3" />
+| 340<ref name="autoref_3" />
+| steam turbine<ref name="autoref_1" />
+| not found
+| 2010<ref name="autoref_1" />
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Gulf Investment Corp [20%]; Saudi Electricity Co [8%]; Mitsubishi Corp [6%]; ACWA Power Co [34%]; Public Investment Fund (Saudi Arabia) [32%]<ref name="autoref_4">{{cite web |url=https://www.ijglobal.com/articles/39367/saudi-arabias-shuqaiq-iwpp}}</ref><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" />
+| ACWA Power Co [34.0%]; Public Investment Fund (Saudi Arabia) [32.0%]; Gulf Investment Corp [20.0%]; Saudi Electricity Co [8.0%]; Mitsubishi Corp [6.0%]
+|-
+| 2
+| Gulf Investment Corp [20%]; Saudi Electricity Co [8%]; Mitsubishi Corp [6%]; ACWA Power Co [34%]; Public Investment Fund (Saudi Arabia) [32%]<ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" />
+| ACWA Power Co [34.0%]; Public Investment Fund (Saudi Arabia) [32.0%]; Gulf Investment Corp [20.0%]; Saudi Electricity Co [8.0%]; Mitsubishi Corp [6.0%]
+|-
+| 3
+| Gulf Investment Corp [20%]; Saudi Electricity Co [8%]; Mitsubishi Corp [6%]; ACWA Power Co [34%]; Public Investment Fund (Saudi Arabia) [32%]<ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" /><ref name="autoref_4" />
+| ACWA Power Co [34.0%]; Public Investment Fund (Saudi Arabia) [32.0%]; Gulf Investment Corp [20.0%]; Saudi Electricity Co [8.0%]; Mitsubishi Corp [6.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': both<ref name="autoref_1" />
+* '''Captive industry''': Chemicals<ref name="autoref_1" />
+* '''Non-industry use''': power<ref name="autoref_1" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMDAxOThbIkdvdmVybm1lbnQgb2YgU2F1ZGk8YnI+QXJhYmlhIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAxMzU4CiAgICAxMDAwMDAwMDEzNThbIlB1YmxpYyBJbnZlc3RtZW50PGJyPkZ1bmQgKFNhdWRpIEFyYWJpYSkiXSAtLTMyLjAlLS0+IFAxMDAwMDA0MDgyNDgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N18yWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzNbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N181WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNSUtLT4gMTAwMDAwMDAwNjUwCiAgICAxMDAwMDEwMTU1ODdfOVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjIlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjMlLS0+IDEwMDAwMDAwMDY1MAogICAgMTAwMDAwMDAwNjUwWyJNaXRzdWJpc2hpIENvcnAiXSAtLTYuMCUtLT4gUDEwMDAwMDQwODI0OAogICAgMTAwMDAxMDAwMjEwWyJHb3Zlcm5tZW50IG9mIEt1d2FpdCJdIC0tMTYuNjclLS0+IDEwMDAwMDAwMDY3NQogICAgMTAwMDAwMDAwNzc3WyJHb3Zlcm5tZW50IG9mIE9tYW4iXSAtLTE2LjY3JS0tPiAxMDAwMDAwMDA2NzUKICAgIDEwMDAwMTAwMDIwOVsiR292ZXJubWVudCBvZjxicj5CYWhyYWluIl0gLS0xNi42NyUtLT4gMTAwMDAwMDAwNjc1CiAgICAxMDAwMDEwMDAxOThbIkdvdmVybm1lbnQgb2YgU2F1ZGk8YnI+QXJhYmlhIl0gLS0xNi42NyUtLT4gMTAwMDAwMDAwNjc1CiAgICAxMDAwMDEwMDAyMTFbIkdvdmVybm1lbnQgb2YgVW5pdGVkPGJyPkFyYWIgRW1pcmF0ZXMiXSAtLTE2LjY3JS0tPiAxMDAwMDAwMDA2NzUKICAgIDEwMDAwMDAwMDgzOVsiR292ZXJubWVudCBvZiBRYXRhciJdIC0tMTYuNjclLS0+IDEwMDAwMDAwMDY3NQogICAgMTAwMDAwMDAwNjc1WyJHdWxmIEludmVzdG1lbnQgQ29ycCJdIC0tMjAuMCUtLT4gUDEwMDAwMDQwODI0OAogICAgMTAwMDAwMDAxMzU4WyJQdWJsaWMgSW52ZXN0bWVudDxicj5GdW5kIChTYXVkaSBBcmFiaWEpIl0gLS00NC4xNiUtLT4gMTAwMDAwMDAwODgyCiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAyMDIxODY5CiAgICAxMDAwMDIwMjE4NjlbIkFidW5heXlhbiBIb2xkaW5nIENvIl0gLS0+IDEwMDAwMDAwMDg5MwogICAgMTAwMDAwMTIzMjYxXzNbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0+IDEwMDAwMjAyMTg3MAogICAgMTAwMDAyMDIxODcwWyJBbCBNdWhhaWRpYiBHcm91cCJdIC0tPiAxMDAwMDAwMDA4OTMKICAgIDEwMDAwMDAwMDg5M1siVmlzaW9uIEludGVybmF0aW9uYWw8YnI+SW52ZXN0bWVudCBDbyJdIC0tMjIuNzUlLS0+IDEwMDAwMDAwMDg4MgogICAgMTAwMDAxMDE1NTg3XzEwWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMzMuMDklLS0+IDEwMDAwMDAwMDg4MgogICAgMTAwMDAwMDAwODgyWyJBQ1dBIFBvd2VyIENvIl0gLS0zNC4wJS0tPiBQMTAwMDAwNDA4MjQ4CiAgICAxMDAwMDEwMDAxOThbIkdvdmVybm1lbnQgb2YgU2F1ZGk8YnI+QXJhYmlhIl0gLS04MS40OCUtLT4gMTAwMDAwMDAwODg4CiAgICAxMDAwMDEwMTU1ODdfMTFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xOC41MiUtLT4gMTAwMDAwMDAwODg4CiAgICAxMDAwMDAwMDA4ODhbIlNhdWRpIEFyYWJpYW4gT2lsIENvIl0gLS0xMDAuMCUtLT4gMTAwMDAxMDAwMzIyCiAgICAxMDAwMDEwMDAzMjJbIlNhdWRpIEFyYW1jbyBQb3dlcjxicj5DbyJdIC0tNi45MyUtLT4gMTAwMDAwMDAwODkwCiAgICAxMDAwMDAwMDEzNThbIlB1YmxpYyBJbnZlc3RtZW50PGJyPkZ1bmQgKFNhdWRpIEFyYWJpYSkiXSAtLTc0LjMxJS0tPiAxMDAwMDAwMDA4OTAKICAgIDEwMDAwMTAxNTU4N18xMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTE4LjglLS0+IDEwMDAwMDAwMDg5MAogICAgMTAwMDAwMDAwODkwWyJTYXVkaSBFbGVjdHJpY2l0eSBDbyJdIC0tOC4wJS0tPiBQMTAwMDAwNDA4MjQ4CiAgICBQMTAwMDAwNDA4MjQ4WyJTaHVxYWlxIDI8YnI+SW5kZXBlbmRlbnQgV2F0ZXI8YnI+YW5kIFBvd2VyIFByb2plY3QiXQo=}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Saudi Arabia]]

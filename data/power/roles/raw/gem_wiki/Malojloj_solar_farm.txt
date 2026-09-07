@@ -1,0 +1,77 @@
+# GEM wiki page: Malojloj solar farm
+# URL: https://www.gem.wiki/Malojloj_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Hanwha Dandan solar farm
+
+'''Malojloj solar farm''' is a solar photovoltaic (PV) farm in pre-construction in Malojloj-Dandan, Inalåhan, Guam.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Malojloj solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://www.guampdn.com/news/hanwha-energy-solar-project-in-jeopardy-company-may-back-out-of-contract/article_66047456-3a33-11ed-86d5-1f4804c4abd8.html, https://www.guampdn.com/news/gpa-will-work-to-salvage-unfinished-solar-farm-project/article_d06277a2-bbe3-11ee-aaa9-3b7ecd475f40.html}}</ref>
+| 60 MW<ref name="autoref_1">{{cite web |url=https://guampowerauthority.com/gpa_authority/investors/annual_rpts/GPA%20AR2021-062822(web).pdf |archive-url=https://web.archive.org/web/20220825182404/https://guampowerauthority.com/gpa_authority/investors/annual_rpts/GPA%20AR2021-062822%28web%29.pdf |archive-date=25 August 2022}}</ref>
+| PV<ref name="autoref_1" />
+| Hanwha Energy Corp [100%] (한화에너지)<ref name="autoref_2">{{cite web |url=http://www.businesskorea.co.kr/news/articleView.html?idxno=18556, https://www.agacgfm.org/AGA/About/GPA_2020_CCR.pdf}}</ref>
+| Hanwha Energy (한화에너지)<ref name="autoref_3">{{cite web |url=http://www.businesskorea.co.kr/news/articleView.html?idxno=18556 |archive-url=https://web.archive.org/web/20240206184238/https://www.businesskorea.co.kr/news/articleView.html?idxno=18556 |archive-date=2024-02-06}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Malojloj solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Malojloj-Dandan, Inalåhan, Guam<ref name="autoref_4">{{cite web |url=https://www.agacgfm.org/AGA/About/GPA_2020_CCR.pdf |archive-url=https://web.archive.org/web/20220126182252/https://www.agacgfm.org/AGA/About/GPA_2020_CCR.pdf |archive-date=26 January 2022}}</ref>
+| 13.4501, 144.7576 (approximate)<ref name="autoref_4" />
+|}
+The map below shows the approximate location of the solar farm:
+{{
+#display_map:
+13.4501, 144.7576~
+|width=600
+|height=500
+|zoom=7
+|service=leaflet
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Guam]]
+[[Category:PV solar farms]]
+
+__NOTOC__

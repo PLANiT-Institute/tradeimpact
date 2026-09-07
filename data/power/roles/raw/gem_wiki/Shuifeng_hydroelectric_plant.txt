@@ -1,0 +1,82 @@
+# GEM wiki page: Shuifeng hydroelectric plant
+# URL: https://www.gem.wiki/Shuifeng_hydroelectric_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalHydropowerTracker}}
+'''Other names:''' Sup'ung Dam hydroelectric plant
+
+'''Shuifeng hydroelectric plant''' (水丰水电站) is an operating hydroelectric power plant on the border of Liaoning, China and , North Korea.
+
+==Project Details==
+==== '''Table 1:''' Project details for Shuifeng hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Turbines
+!Technology type
+!Owner
+|-
+| Operating<ref name="autoref_0">{{cite web |url=http://mm.chinapower.com.cn/zx/zxbg/20210809/93754.html |archive-url=https://web.archive.org/web/20220714074938/http://mm.chinapower.com.cn/zx/zxbg/20210809/93754.html |archive-date=2022-07-14}}</ref>
+| 1941<ref name="autoref_1">{{cite web |url=http://www.neidri.com.cn/engineering_view.aspx?id=200 |archive-url=https://web.archive.org/web/20220922043026/http://www.neidri.com.cn/engineering_view.aspx?id=200 |archive-date=2022-09-22}}</ref>
+| 630 MW<ref name="autoref_0" />
+| 7 x 90 MW<ref name="autoref_0" />
+| Conventional storage<ref name="autoref_1" />
+| China-Korea Hydropower Company [100%] (中朝水力发电公司)<ref name="autoref_2">{{cite web |url=http://webcache.googleusercontent.com/search?q=cache:lMUQI9AO_CgJ:zfxxgk.nea.gov.cn/1310587762_16520656046881n.docx&cd=16&hl=zh-TW&ct=clnk&gl=tw |archive-url=https://web.archive.org/web/20220922045806/http://webcache.googleusercontent.com/search?q=cache:lMUQI9AO_CgJ:zfxxgk.nea.gov.cn%2F1310587762_16520656046881n.docx&cd=16&hl=zh-TW&ct=clnk&gl=tw |archive-date=2022-09-22}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Location details for Shuifeng hydroelectric plant ====
+
+{| class="wikitable"
+|+
+!Cross-border location 1
+!Cross-border location 2
+!River
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Changdian, Kuandian, Dandong, Liaoning, China<ref name="autoref_3">{{cite web |url=https://www.openstreetmap.org/?mlat=40.461667&mlon=124.9625&zoom=12 |archive-url=https://web.archive.org/web/20220922065120/https://www.openstreetmap.org/?mlat=40.461667&mlon=124.9625&zoom=12 |archive-date=2022-09-22}}</ref>
+| Sakju County, North Pyongan, North Korea<ref name="autoref_3" />
+| Yalu River<ref name="autoref_1" />
+| 40.4615, 124.9629 (exact)<ref name="autoref_3" />
+|}
+The map below shows the exact location of the hydroelectric power plant:
+{{
+#display_map:
+40.4615, 124.9629~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-hydropower-tracker/tracker-map/ interactive map] of global hydroelectric power plants, a downloadable [https://globalenergymonitor.org/projects/global-hydropower-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-hydropower-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-hydropower-tracker/ Global Hydropower Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Hydroelectric power plants]]
+[[Category:Hydroelectric power plants in China]]
+[[Category:Hydroelectric power plants in North Korea]]
+
+__NOTOC__

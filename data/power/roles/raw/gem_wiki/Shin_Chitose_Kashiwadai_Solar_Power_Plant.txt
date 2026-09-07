@@ -1,0 +1,78 @@
+# GEM wiki page: Shin Chitose Kashiwadai Solar Power Plant
+# URL: https://www.gem.wiki/Shin_Chitose_Kashiwadai_Solar_Power_Plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Shin-Chitose Kashiwadai, LSIS Shin Chitose megasolar PV Park, Chitose Solar Power Plant, New Chitose Kashiwadai Solar Power Plant
+
+'''Shin Chitose Kashiwadai Solar Power Plant''' (千歳太陽光発電, 新千歳柏台太陽光発電所) is an operating solar photovoltaic (PV) farm in Chitose, Japan.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Shin Chitose Kashiwadai Solar Power Plant ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+|-
+| Operating<ref name="autoref_0">{{cite web |url=http://tanakasj.sakura.ne.jp/pdf/h28_r1tnksj.pdf |archive-url=https://web.archive.org/web/20240207150942/http://tanakasj.sakura.ne.jp/pdf/h28_r1tnksj.pdf |archive-date=2024-02-07}}</ref>
+| 2017<ref name="autoref_1">{{cite web |url=https://new.abb.com/news/detail/45910/abb-technologies-to-help-stabilize-generation-at-new-mega-solar-power-plant-in-the-land-of-the-rising-sun |archive-url=https://web.archive.org/web/20240201123015/https://new.abb.com/news/detail/45910/abb-technologies-to-help-stabilize-generation-at-new-mega-solar-power-plant-in-the-land-of-the-rising-sun |archive-date=2024-02-01}}</ref>
+| 28 MWp/dc<ref name="autoref_1" />
+| PV<ref name="autoref_2">{{cite web |url=https://wiki-solar.org/ |title=Wiki-Solar Database |date=2023-04 |access-date=2024-02-28 |archive-url=https://web.archive.org/web/20240402052142/https://wiki-solar.org/ |archive-date=2024-04-02}}</ref>
+| Japan's Energy Products Corp; Korea Electric Power Corp (한국전력공사)<ref name="autoref_3">{{cite web |url=https://new.abb.com/news/detail/45910/abb-technologies-to-help-stabilize-generation-at-new-mega-solar-power-plant-in-the-land-of-the-rising-sun, https://new.abb.com/news/detail/45910/abb-technologies-to-help-stabilize-generation-at-new-mega-solar-power-plant-in-the-land-of-the-rising-sun}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Shin Chitose Kashiwadai Solar Power Plant ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Chitose, Japan<ref name="autoref_4">{{cite web |url=https://www.google.com/maps/place/%E6%96%B0%E5%8D%83%E6%AD%B3%E6%9F%8F%E5%8F%B0%E5%A4%AA%E9%99%BD%E5%85%89%E7%99%BA%E9%9B%BB%E6%89%80/@42.8032477,141.6776231,2874m/data=!3m2!1e3!4b1!4m5!3m4!1s0x5f75207edf2c3de7:0x9672c8f681199aa1!8m2!3d42.8032323!4d141.6863564}}</ref>
+| 42.8033, 141.6864 (exact)<ref name="autoref_4" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+42.8033, 141.6864~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Japan]]
+[[Category:PV solar farms]]
+
+__NOTOC__

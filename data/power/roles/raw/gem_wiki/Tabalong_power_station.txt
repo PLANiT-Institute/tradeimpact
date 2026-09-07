@@ -1,0 +1,135 @@
+# GEM wiki page: Tabalong power station
+# URL: https://www.gem.wiki/Tabalong_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Tabalong power station''' is an operating power station of at least 200-megawatts (MW) in Adaro's Tanjung coal mine, Tabalong, Kalimantan, Indonesia.
+It is also known as Kalsel FTP2.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Tabalong power station
+| Adaro's Tanjung coal mine, Tabalong, Kalimantan, Indonesia
+| -2.163427, 115.440814 (exact)
+|}
+{{
+#display_map:
+-2.163427, 115.440814
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': -2.163427, 115.440814
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: lignite<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 100
+| subcritical
+| 2019
+| False
+|-
+| Unit 2
+| Operating
+| coal: lignite<ref name="autoref_0" />
+| 100
+| subcritical
+| 2019
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| PT Tanjung Power Indonesia [100%]
+| PT Alamtri Resources Indonesia Tbk [65.0%]; Korea Electric Power Corp [35.0%]
+|-
+| Unit 2
+| PT Tanjung Power Indonesia [100%]
+| PT Alamtri Resources Indonesia Tbk [65.0%]; Korea Electric Power Corp [35.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ3LjkxJS0tPiAxMDAwMDEwMDA3ODIKICAgIDEwMDAwMjAyMjA3OFsiUFQgQWRhcm8gU3RyYXRlZ2ljPGJyPkNhcGl0YWwiXSAtLTc0LjkzJS0tPiAxMDAwMDEwMTA0MzIKICAgIDEwMDAwMjAyMjA3N1siUFQgQWRhcm8gU3RyYXRlZ2ljPGJyPkxlc3RhcmkiXSAtLTI1LjA3JS0tPiAxMDAwMDEwMTA0MzIKICAgIDEwMDAwMTAxMDQzMlsiUFQgQWRhcm8gU3RyYXRlZ2ljPGJyPkludmVzdG1lbnRzIl0gLS00NS42NiUtLT4gMTAwMDAxMDAwNzgyCiAgICAxMDAwMDAxMjMyNjFfMVsibmF0dXJhbCBwZXJzb24ocykiXSAtLTYuNDMlLS0+IDEwMDAwMTAwMDc4MgogICAgMTAwMDAxMDAwNzgyWyJQVCBBbGFtdHJpIFJlc291cmNlczxicj5JbmRvbmVzaWEgVGJrIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTIwMDI5CiAgICAxMDAwMDAxMjAwMjlbIlBUIEFkYXJvIFBvd2VyIl0gLS02NS4wJS0tPiAxMDAwMDAxMjEwNzgKICAgIDEwMDAwMDAwMDk2MlsiR292ZXJubWVudCBvZiBTb3V0aDxicj5Lb3JlYSJdIC0tMTguMiUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDAwMDA5NjJbIkdvdmVybm1lbnQgb2YgU291dGg8YnI+S29yZWEiXSAtLTEwMC4wJS0tPiAxMDAwMDIwMDQ1NjkKICAgIDEwMDAwMjAwNDU2OVsiS29yZWEgRGV2ZWxvcG1lbnQ8YnI+QmFuayBDbyJdIC0tMzIuOSUtLT4gMTAwMDAwMDAwOTQ3CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTQ4LjklLS0+IDEwMDAwMDAwMDk0NwogICAgMTAwMDAwMDAwOTQ3WyJLb3JlYSBFbGVjdHJpYyBQb3dlcjxicj5Db3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAwOTQ2CiAgICAxMDAwMDAwMDA5NDZbIktvcmVhIEVhc3QtV2VzdDxicj5Qb3dlciBDbyBMdGQiXSAtLTk5Ljk5JS0tPiAxMDAwMDEwMDEwNDUKICAgIDEwMDAwMTAwMTA0NVsiUFQgRWFzdC1XZXN0IFBvd2VyPGJyPkluZG9uZXNpYSJdIC0tMzUuMCUtLT4gMTAwMDAwMTIxMDc4CiAgICAxMDAwMDAxMjEwNzhbIlBUIFRhbmp1bmcgUG93ZXI8YnI+SW5kb25lc2lhIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwMjc4NQogICAgUDEwMDAwMDEwMjc4NVsiVGFiYWxvbmcgcG93ZXI8YnI+c3RhdGlvbiJdCg==}}
+
+==Background==
+
+In October 2014, PT Tanjung Power Indonesia signed a power purchase agreement with [[PLN]] for the construction of a two-unit, 200-MW coal-fired power plant in South Kalimantan Province. Tanjung Power, the project's developer, is a joint venture between [[Adaro Indonesia]] and Korea East-West Power (a subsidiary of Korea Electric Power Corporation, or [[KEPCO]]). The plant would be located near Adaro's [[Tabalong coal concession]], and would cost $450-550 million. The project is part of Phase II of Indonesia's Fast Track Program, and would be built under a Build, Own, Operate, & Transfer (BOOT) agreement with PLN. Financing is scheduled to be finalized by late 2015, and the plant is scheduled for completion in 2019.<ref>[http://bisnisuntung7.blogspot.com/2014/10/pltu-2-x-100-mw-kabupaten-tabalong.html PLTU 2 x 100 MW Kabupaten Tabalong Kalsel Akan Dibangun], Bisnis Energi, 17 Oct. 2014.</ref><ref>[http://energitoday.com/2014/11/28/adaro-bangun-pltu-2x100-mw-di-tabalong-us-550-juta/ Adaro Bangun PLTU 2×100 MW di Tabalong US$ 550 Juta], Energi Today, 28 Nov. 2014.</ref><ref>[http://www.pln.co.id/blog/pln-tandatangani-kesepatakan-dengan-dua-pengembang-swasta/ "PLN Tandatangani Kesepatakan Dengan Dua Pengembang Swasta,"] October 15, 2014</ref>
+
+In January 2017, it was reported that construction of the plant was 30% complete.<ref>[https://finance.detik.com/energi/3404026/pembangunan-pltu-tabalong-2x100-mw-di-kalsel-capai-30 Pembangunan PLTU Tabalong 2x100 MW di Kalsel Capai 30%], ''Detik Finance'', Jan. 24, 2017</ref> In August 2017 a building on the construction site collapsed and injured 7 workers.<ref>[https://kumparan.com/@kumparannews/bangunan-pltu-di-kalimantan-selatan-ambruk-7-orang-terluka Bangunan PLTU di Kalimantan Selatan Ambruk, 7 Orang Terluka] ''Kumparan'', Aug. 21, 2017</ref> Construction was expected to be complete in Q3 of 2018.<ref>[http://www.jsbmarketresearch.com/construction/tpi-kalsel-coal-fired-power-plant-200-mw-south-kalimantan-project-profile TPI – Kalsel Coal-Fired Power Plant 200 MW – South Kalimantan - Project Profile
+], JBS Market Research, Mar. 26, 2018</ref> In September 2018 it was reported that construction of the plant was 85% complete.<ref>[https://industri.kontan.co.id/news/adaro-energy-adro-pastikan-proyek-pltu-bakal-rampung-tepat-waktu Adaro Energy (ADRO) pastikan proyek PLTU bakal rampung tepat waktu], Kontan, Sep. 23, 2018</ref> In June 2019 Adaro announced that the plant would be commissioned in the second half of 2019.<ref>[https://katadata.co.id/berita/2019/06/28/adaro-pastikan-pltu-tanjung-beroperasi-tahun-ini Adaro Pastikan PLTU Tanjung Beroperasi Tah], Katadata, Jun. 28, 2019</ref> Unit 1 was commissioned in September 2019 and Unit 2 was commissioned in December 2019.<ref>[http://www.adaro.com/pages/read/7/24/Ketenagalistrikan Adaro Power Making Progress Downstream], Adaro, accessed November 2020</ref>
+
+In October 2022, the Institute for Essential Services Reform listed Tabalong power station as a strong candidate for early retirement.<ref>[https://databoks.katadata.co.id/datapublish/2022/10/21/ini-daftar-pltu-yang-layak-pensiun-dini-pada-2023-menurut-iesr Ini Daftar PLTU yang Layak Pensiun Dini pada 2023 menurut IESR], Katadata, October 21, 2022</ref>
+
+In May 2024, PT Tanjung Power Indonesia signed a Memorandum of Understanding with the Tabalong Regency Government for the co-firing of municipal waste at their coal-fired power station in Tabalong.<ref>[https://www.antaranews.com/berita/4125738/tabalong-gandeng-swasta-manfaatkan-sampah-organik-bahan-bakar-pltu Tabalong gandeng swasta manfaatkan sampah organik bahan bakar PLTU], Antara News, May 28, 2024</ref>
+
+In July 2025, an article recounted the negative public health impacts attributed to Tabalong power station and [[Tabalong Wisesa power station]].<ref>[https://mongabay.co.id/2025/07/20/pekat-jerubu-pltu-batubara-selimuti-komplek-purnawirawan/ Pekat Jerubu PLTU Batubara Selimuti Komplek Purnawirawan], Mongabay, July 20, 2025</ref>
+
+As of January 2026, the AlamTri Power website stated that Tabalog power station had a 25-year power purchase agreement.<ref>[https://www.alamtri.com/pages/read/7/24/Power AlamTri Power], AlamTri, accessed January 5, 2026</ref>
+
+==Financing==
+
+In October 2015, Adaro Energy secured financing for the proposed plant.<ref>[http://jakartaglobe.beritasatu.com/business/adaro-secures-540m-loan-s-kalimantan-power-project/ "Adaro Secures $540m Loan for S. Kalimantan Power Project,"] Jakarta Globe, October 09, 2015</ref> The project reached financial closure after it secured US$540 million in loans from Korea Development Bank, MUFG Bank, DBS Bank, Mizuho Financial Group, Sumitomo Mitsui Banking Corporation, and HSBC. The financial advisor for the project is DBS Bank.<ref name=":0">{{Cite web|url=https://ijglobal.com/data/transaction/32622/kalsel-coal-fired-power-plant-200mw-ipp|title=Preview of KalSel Coal-Fired Power Plant (200MW) IPP {{!}} Transaction {{!}} IJGlobal|website=ijglobal.com|access-date=2020-09-17}}</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in Indonesia]]

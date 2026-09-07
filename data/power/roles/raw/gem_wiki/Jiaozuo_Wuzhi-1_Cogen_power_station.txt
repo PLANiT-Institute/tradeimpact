@@ -1,0 +1,122 @@
+# GEM wiki page: Jiaozuo Wuzhi-1 Cogen power station
+# URL: https://www.gem.wiki/Jiaozuo_Wuzhi-1_Cogen_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Jiaozuo Wuzhi-1 Cogen power station''' (焦作韩电公司武陟热电厂) is an operating power station of at least 100-megawatts (MW) in Wuzhi, Jiaozuo, Henan, China.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Jiaozuo Wuzhi-1 Cogen power station
+| Wuzhi, Jiaozuo, Henan, China
+| 35.12455, 113.38887 (exact)
+|}
+{{
+#display_map:
+35.12455, 113.38887
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1, Unit 2''': 35.12455, 113.38887
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Emergency/Backup
+|-
+| Unit 1
+| Operating
+| coal: waste coal<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 50
+| subcritical
+| yes
+| 2006
+| False
+|-
+| Unit 2
+| Operating
+| coal: waste coal<ref name="autoref_0" />
+| 50
+| subcritical
+| yes
+| 2006
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Jiaozuo Kepco POWER Co Ltd [100%]
+| China Electric Equipment Group Co Ltd [77.0%]; Wuzhi Zhongjia Investment Operation Group Co Ltd [20.7%]; Wuzhi County Investment Group Co Ltd [2.3%]
+|-
+| Unit 2
+| Jiaozuo Kepco POWER Co Ltd [100%]
+| China Electric Equipment Group Co Ltd [77.0%]; Wuzhi Zhongjia Investment Operation Group Co Ltd [20.7%]; Wuzhi County Investment Group Co Ltd [2.3%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDAxMjU1MTJbIkhlbmFuIFByb3ZpbmNpYWw8YnI+RGVwYXJ0bWVudCBvZjxicj5GaW5hbmNlIl0gLS0xMC4wJS0tPiAxMDAwMDAxMjQ3MTEKICAgIDEwMDAwMDEyNTc3N1siV3V6aGkgQ291bnR5IEZpbmFuY2U8YnI+QnVyZWF1IChTdGF0ZS1vd25lZDxicj5Bc3NldHMgU3VwZXJ2aXNpb248YnI+YW5kIEFkbWluaXN0cmF0aW9uPGJyPkNvbW1pc3Npb24gb2YgV3V6aGk8YnI+Q291bnR5IFBlb3BsZSdzPGJyPkdvdmVybm1lbnQpIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTI1MTQzCiAgICAxMDAwMDAxMjUxNDNbIld1emhpIFpob25namlhPGJyPkludmVzdG1lbnQgT3BlcmF0aW9uPGJyPkdyb3VwIENvIEx0ZCJdIC0tOTAuMCUtLT4gMTAwMDAwMTI0NzExCiAgICAxMDAwMDAxMjQ3MTFbIld1emhpIENvdW50eTxicj5JbnZlc3RtZW50IEdyb3VwIENvPGJyPkx0ZCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEyNDE0NwogICAgMTAwMDAwMTI0MTQ3WyJXdXpoaSBDb3VudHkgVXJiYW48YnI+Q29uc3RydWN0aW9uPGJyPkludmVzdG1lbnQ8YnI+RGV2ZWxvcG1lbnQgQ28gTHRkIl0gLS0yMy4wJS0tPiAxMDAwMDAxMjIwNjgKICAgIDEwMDAwMDEyNDkwM1siQ2hpbmEgRWxlY3RyaWM8YnI+RXF1aXBtZW50IEdyb3VwIENvPGJyPkx0ZCJdIC0tMTAwLjAlLS0+IDEwMDAwMDEyNDE0NgogICAgMTAwMDAwMTI0MTQ2WyJYSiBHcm91cCBDb3JwIl0gLS03Ny4wJS0tPiAxMDAwMDAxMjIwNjgKICAgIDEwMDAwMDEyMjA2OFsiSmlhb3p1byBLZXBjbyBQT1dFUjxicj5DbyBMdGQiXSAtLTEwMC4wJS0tPiBQMTAwMDAwMTAwNjgxCiAgICBQMTAwMDAwMTAwNjgxWyJKaWFvenVvIFd1emhpLTE8YnI+Q29nZW4gcG93ZXIgc3RhdGlvbiJdCg==}}
+
+==Background==
+
+Jiaozuo Cogen power station is a two-unit coal-fired power plant with a total capacity of 100 MW. The plant was completed in 2006, and is owned by [[KEPCO]].<ref>[http://enipedia.tudelft.nl/wiki/Jiaozuo_Cogen_Powerplant Jiaozuo Cogen Powerplant], Enipedia, accessed Sept. 2015.</ref><ref>[http://finance.qq.com/a/20081030/003595.htm "焦作9千万韩资热电站巨亏 欲1美元卖给许继,"] finance.qq.com, 2008年10月30日</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in China]]

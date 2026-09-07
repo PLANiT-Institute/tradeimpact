@@ -1,0 +1,93 @@
+# GEM wiki page: Seuil De Bapaume wind farm
+# URL: https://www.gem.wiki/Seuil_De_Bapaume_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' Le Transloy
+
+'''Seuil De Bapaume wind farm''' is an operating wind farm in Le Transloy, Pas-de-Calais, France.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Seuil De Bapaume wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+!Operator
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://www.edf-renouvelables.com/en/project/seuil-de-bapaume/ |archive-url=https://web.archive.org/web/20240126000556/https://edf-renouvelables.com/en/projet/seuil-de-bapaume/ |archive-date=2024-01-26}}</ref>
+| 2014<ref name="autoref_0" />
+| 15 MW<ref name="autoref_0" />
+| Onshore<ref name="autoref_0" />
+| EDF Renewables; Diamond Generating Europe (法國電力再生能源公司)<ref name="autoref_1">{{cite web |url=https://www.edf-renouvelables.com/en/project/seuil-de-bapaume/, https://www.edf-renouvelables.com/en/project/seuil-de-bapaume/}}</ref>
+| EDF Renewables (法國電力再生能源公司)<ref name="autoref_0" />
+|-
+| extension
+| Operating<ref name="autoref_2">{{cite web |url=https://www.boralex.com/our-projects-and-sites/?refinementList%5Bcountry%5D%5B0%5D=France&refinementList%5Benergy_types%5D%5B0%5D=wind |archive-url=https://web.archive.org/web/20240125214747/https://www.boralex.com/our-projects-and-sites/?refinementList%5Bcountry%5D%5B0%5D=France&refinementList%5Benergy_types%5D%5B0%5D=wind |archive-date=2024-01-25}}</ref>
+| 2020<ref name="autoref_2" />
+| 17 MW<ref name="autoref_2" />
+| Onshore<ref name="autoref_2" />
+| Boralex Inc<ref name="autoref_3">{{cite web |url=https://www.prnewswire.com/news-releases/boralex-commissions-two-new-wind-farms-in-france-301188477.html |archive-url=https://web.archive.org/web/20240131055608/https://www.prnewswire.com/news-releases/boralex-commissions-two-new-wind-farms-in-france-301188477.html |archive-date=2024-01-31}}</ref>
+| Boralex<ref name="autoref_3" />
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Seuil De Bapaume wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Le Transloy, Pas-de-Calais, France<ref name="autoref_0" />
+| 50.0531, 2.8908 (approximate)<ref name="autoref_0" />
+|-
+| extension
+| Le Transloy, Pas-de-Calais, France<ref name="autoref_0" />
+| 50.0531, 2.8908 (approximate)<ref name="autoref_0" />
+|}
+The map below shows the approximate locations of the wind farm phases:
+{{
+#display_map:
+50.0531, 2.8908~ ~ ~ ~ ~Phases 1, extension
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in France]]
+
+__NOTOC__

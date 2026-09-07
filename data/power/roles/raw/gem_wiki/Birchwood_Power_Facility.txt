@@ -1,0 +1,155 @@
+# GEM wiki page: Birchwood Power Facility
+# URL: https://www.gem.wiki/Birchwood_Power_Facility
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-Global_Coal_Plant_Tracker}}
+'''Birchwood Power Facility''' is a retired power station in Sealston, King George, Virginia, United States.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Birchwood Power Facility
+| Sealston, King George, Virginia, United States
+| 38.266442, -77.314014 (exact)
+|}
+{{
+#display_map:
+38.266442, -77.314014
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''Unit 1''': 38.266442, -77.314014
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!Start year
+!Retired year
+!Emergency/Backup
+|-
+| Unit 1
+| Retired
+| coal: bituminous<ref name="autoref_0">{{cite web |url=https://www.gem.wiki/Coal_source_methodology_for_the_Global_Coal_Plant_Tracker}}</ref>
+| 258
+| subcritical
+| 1996
+| 2021
+| False
+|}
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| Unit 1
+| Birchwood Power Partners LP [100%]
+| Electric Power Development Co Ltd [50.0%]; General Electric Co [50.0%]
+|}
+
+'''Project-level coal details'''
+* '''Coal source(s)''': domestic
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc2Ljg4JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzcuOTQlLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzRbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03OS40NyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDIwMjIyMDNbIkRhaWljaGkgTGlmZSBHcm91cDxicj5JbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzM1NDIKICAgIDEwMDAwMDEzMzU0MlsiVGhlIERhaS1pY2hpIExpZmU8YnI+SW5zdXJhbmNlIENvIEx0ZCJdIC0tOC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNjI1N1siQXNhaGkgTXV0dWFsIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE1NTg3XzVbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0xMC4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNTcuODUlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTIzMjYxXzFbIm5hdHVyYWwgcGVyc29uKHMpIl0gLS0yMS4xMyUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDAxMzQyMjJbIk1penVobyBGaW5hbmNpYWw8YnI+R3JvdXAgSW5jIl0gLS0yNy4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzlbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01LjcyJS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTIuMjUlLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS01Ljc3JS0tPiAxMDAwMDAwMDA2NDEKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS01LjElLS0+IDEwMDAwMDAwMDY0MQogICAgMTAwMDAwMDAwNjQxWyJFbGVjdHJpYyBQb3dlcjxicj5EZXZlbG9wbWVudCBDbyBMdGQiXSAtLT4gMTAwMDAxMDAxMjA5CiAgICAxMDAwMDAxMjMyNjFfMlsibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAxMDE0ODQ5CiAgICAxMDAwMDEwMTQ4NDlbIkZNUiBMTEMiXSAtLTYuMTUlLS0+IDEwMDAwMDAwMTIyMwogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS03LjYlLS0+IDEwMDAwMDAwMTIyMwogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjEzJS0tPiAxMDAwMDAwMDEyMjMKICAgIDEwMDAwMTAxNTU4N18xMFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjEyJS0tPiAxMDAwMDAwMDEyMjMKICAgIDEwMDAwMDAwMTIyM1siR2VuZXJhbCBFbGVjdHJpYyBDbyJdIC0tPiAxMDAwMDEwMDEyMDkKICAgIDEwMDAwMTAwMTIwOVsiQmlyY2h3b29kIFBvd2VyPGJyPlBhcnRuZXJzIExQIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDEwNDIzMAogICAgUDEwMDAwMDEwNDIzMFsiQmlyY2h3b29kIFBvd2VyPGJyPkZhY2lsaXR5Il0K}}
+
+==Unit Retirement==
+
+On February 24, 2020, it was reported that the power plant will retire in February 2021 due to its inability to compete with lower-cost electricity produced by natural gas and renewable energy.<ref name=patch220>[https://patch.com/virginia/fredericksburg/king-george-coal-fired-power-plant-close-2021-report "King George Coal-Fired Power Plant To Close In 2021: Report,"] Patch.com, Feb 24, 2020</ref>
+
+According to PJM deactivations, the power plant retired on March 1, 2021.<ref name=pjm>[https://www.pjm.com/planning/services-requests/gen-deactivations "Generation Deactivations"] PJM.com, accessed April 9, 2021.</ref>
+
+==Emissions Data==
+
+*'''2006 CO<sub>2</sub> Emissions''': 0 tons
+*'''2006 SO<sub>2</sub> Emissions''':
+*'''2006 SO<sub>2</sub> Emissions per MWh''':
+*'''2006 NO<sub>x</sub> Emissions''':
+*'''2005 Mercury Emissions''':
+
+===Death and disease attributable to fine particle pollution from Birchwood Power Facility===
+
+In 2010, Abt Associates issued a study commissioned by the Clean Air Task Force, a nonprofit research and advocacy organization, quantifying the deaths and other health effects attributable to [[Particulates and coal|fine particle pollution]] from coal-fired power plants.<ref>[http://www.catf.us/resources/publications/files/The_Toll_from_Coal.pdf "The Toll from Coal: An Updated Assessment of Death and Disease from America's Dirtiest Energy Source,"] Clean Air Task Force, September 2010.</ref> Fine particle pollution consists of a complex mixture of [[soot]], [[Heavy metals and coal|heavy metals]], [[Sulfur dioxide and coal|sulfur dioxide]], and [[Nitrogen oxide|nitrogen oxides]]. Among these particles, the most dangerous are those less than 2.5 microns in diameter, which are so tiny that they can evade the lung's natural defenses, enter the bloodstream, and be transported to vital organs. Impacts are especially severe among the elderly, children, and those with respiratory disease. The study found that over 13,000 deaths and tens of thousands of cases of chronic bronchitis, acute bronchitis, asthma, congestive heart failure, acute myocardial infarction, dysrhythmia, ischemic heart disease, chronic lung disease, and pneumonia each year are attributable to fine particle pollution from U.S. coal plant emissions. These deaths and illnesses are major examples of coal's [[External costs of coal|external costs]], i.e. uncompensated harms inflicted upon the public at large. [[Coal plants near residential areas|Low-income and minority populations]] are disproportionately impacted as well, due to the tendency of companies to avoid locating power plants upwind of affluent communities. To monetize the health impact of fine particle pollution from each coal plant, Abt assigned a value of $7,300,000 to each 2010 mortality, based on a range of government and private studies. Valuations of illnesses ranged from $52 for an asthma episode to $440,000 for a case of chronic bronchitis.<ref>[http://www.catf.us/resources/publications/files/Abt-Technical_Support_Document_for_the_Powerplant_Impact_Estimator_Software_Tool.pdf "Technical Support Document for the Powerplant Impact Estimator Software Tool,"] Prepared for the Clean Air Task Force by Abt Associates, July 2010</ref>
+
+====Table 1: Death and disease attributable to fine particle pollution from Birchwood Power Facility====
+
+{| class="wikitable"
+!width="120"| Type of Impact!! width="120" | Annual Incidence !! width = "120" | Valuation
+|-
+| Deaths||align="right" |7||align="right" |$53,000,000 
+|-
+| Heart attacks||align="right" |12||align="right" |$1,300,000 
+|-
+| Asthma attacks||align="right" |120||align="right" |$6,000 
+|-
+| Hospital admissions||align="right" |6||align="right" |$130,000 
+|-
+| Chronic bronchitis||align="right" |4||align="right" |$2,000,000 
+|-
+| Asthma ER visits||align="right" |6||align="right" |$2,000 
+|}
+
+Source: [http://www.catf.us/coal/problems/power_plants/existing/ "Find Your Risk from Power Plant Pollution,"] Clean Air Task Force interactive table, accessed February 2011
+
+==Citizen groups==
+
+*[http://www.nolongview.org/index.html Citizens for Alternatives to Longview Power]
+*[http://www.crmw.net/ Coal River Mountain Watch]
+*[http://www.greenbrier.org/ Greenbrier River Watershed Association]
+*[http://www.mountainkeeper.org Keeper of the Mountains Foundation]
+*[[Ohio Valley Environmental Coalition]]
+*[http://westvirginia.sierraclub.org/index.html Sierra Club West Virginia Chapter]
+*[http://www.wvecouncil.org/index.html West Virginia Environmental Council]
+*[http://www.wvhighlands.org/ West Virginia Highlands Conservancy]
+*[http://www.wvrivers.org/ West Virginia Rivers Coalition]
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of coal-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-coal-plant-tracker/ Global Coal Plant Tracker] on the Global Energy Monitor website.
+[[Category:Coal power stations]][[Category:Coal power stations in United States]]

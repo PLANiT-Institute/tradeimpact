@@ -1,0 +1,108 @@
+# GEM wiki page: Ibri Independent power plant
+# URL: https://www.gem.wiki/Ibri_Independent_power_plant
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Ibri Independent power plant''' (محطة كهرباء عبري) is an operating power station of at least 1539-megawatts (MW) in Ibri, A’Dhahirah, Oman.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Ibri Independent power plant
+| Ibri, A’Dhahirah, Oman
+| 23.365562, 56.283718 (exact)<ref name="autoref_0">{{cite web |url=https://www.acwapower.com/en/projects/ibri-ipp/ |archive-url=https://web.archive.org/web/20220702140142/https://acwapower.com/en/projects/ibri-ipp/ |archive-date=2022-07-02}}</ref>
+|}
+{{
+#display_map:
+23.365562, 56.283718
+|width=600
+|height=500
+|type=satellite
+|zoom=16
+}}
+
+'''Unit-level coordinates''' ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84]):
+* '''1''': 23.365562, 56.283718
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Operating<ref name="autoref_0" />
+| fossil gas: natural gas, fossil liquids: fuel oil<ref name="autoref_1">{{cite web |url=https://www.omanpwp.om/PDF/7%20Year%20Statement%202019-2025%20New.pdf |archive-url=https://web.archive.org/web/20221025083615/https://omanpwp.om/PDF/7%20Year%20Statement%202019-2025%20New.pdf |archive-date=2022-10-25}}</ref>
+| 1539<ref name="autoref_2">{{cite web |url=https://eeoman.com/?p=1036 |title=انظمة شبكات الكهرباء في الوقت الحالي - الطاقة في سلطنة عمان |date=2024-04-02 |access-date=2024-11-04 |archive-url=https://web.archive.org/web/20250701024407/https://eeoman.com/?p=1036 |archive-date=2025-07-01}}</ref><ref name="autoref_3">{{cite web |url=http://nomac-staging.thetribestaging.com/ar/our-operations/nomac-globally/ibri-ipp/}}</ref><ref name="autoref_0" />
+| combined cycle<ref name="autoref_1" /><ref name="autoref_0" />
+| not found
+| 2019<ref name="autoref_0" />
+| Ansaldo Energia: GT26, Ansaldo Energia: GT26, Ansaldo Energia: GT26, Ansaldo Energia: GT26<ref name="autoref_4">{{cite web |url=https://www.power-technology.com/projects/ibri-independent-power-project/?cf-view}}</ref>
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Ad Dhahirah Generation Company SAOC [100%]<ref name="autoref_5">{{cite web |url=https://www.omanpwp.om/PDF/OPWP%20Annual%20Report%202017_ENG_FINAL.pdf |archive-url=https://web.archive.org/web/20211128142323/https://omanpwp.om/PDF/OPWP%20Annual%20Report%202017_ENG_FINAL.pdf |archive-date=2021-11-28}}</ref>
+| Mitsui & Co Ltd [50.1%]; ACWA Power Co [44.9%]; Dhofar International Development & Investment Holding Company SAOG [5.0%]
+|}
+
+===Project-level captive use details===
+* '''Captive industry use (heat or power)''': power<ref name="autoref_6">{{cite web |url=https://www.raya.com/2019/06/23/%d8%b9%d9%8f%d9%85%d8%a7%d9%86-%d8%aa%d8%a8%d8%af%d8%a3-%d8%aa%d8%b4%d8%ba%d9%8a%d9%84-%d9%85%d8%ad%d8%b7%d8%a9-%d9%83%d9%87%d8%b1%d8%a8%d8%a7%d8%a1-%d8%ac%d8%af%d9%8a%d8%af%d8%a9/ |archive-url=https://web.archive.org/web/20220711152218/https://www.raya.com/2019/06/23/%D8%B9%D9%8F%D9%85%D8%A7%D9%86-%D8%AA%D8%A8%D8%AF%D8%A3-%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D9%85%D8%AD%D8%B7%D8%A9-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/ |archive-date=2022-07-11}}</ref>
+* '''Non-industry use''': power<ref name="autoref_6" />
+
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMDAzODIKICAgIDEwMDAwMTAwMDM4MlsiTmlwcG9uIExpZmU8YnI+SW5zdXJhbmNlIENvIl0gLS0zMy41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAxMTYxNwogICAgMTAwMDAxMDExNjE3WyJNZWlqaSBZYXN1ZGEgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDE2NDkyCiAgICAxMDAwMDEwMTY0OTJbIk5vcmluY2h1a2luIEJhbmsiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjYKICAgIDEwMDAwMTAxNjEyNlsiVGhlIE5vcmluY2h1a2luPGJyPlRydXN0ICYgQmFua2luZyBDbzxicj5MdGQiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAxMDE1NTg3XzFbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03Ny44NiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMTAxNjI1NVsiU3VtaXRvbW8gTWl0c3VpPGJyPlRydXN0IEdyb3VwIl0gLS0zMy4zJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N18zWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzkuNDclLS0+IDEwMDAwMjAyMjIwMwogICAgMTAwMDAyMDIyMjAzWyJEYWlpY2hpIExpZmUgR3JvdXA8YnI+SW5jIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTMzNTQyCiAgICAxMDAwMDAxMzM1NDJbIlRoZSBEYWktaWNoaSBMaWZlPGJyPkluc3VyYW5jZSBDbyBMdGQiXSAtLTguMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTYyNTdbIkFzYWhpIE11dHVhbCBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tNS4wJS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAxNTU4N180WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc4LjA2JS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NVsiVGhlIFZhbmd1YXJkIEdyb3VwPGJyPkluYyJdIC0tMTMuMTMlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDE1ODMzWyJCbGFja3JvY2sgQWR2aXNvcnM8YnI+TExDIl0gLS01LjA3JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAxNTU4N183WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tODYuMjclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS04LjY2JS0tPiAxMDAwMDEwMDAzNDgKICAgIDEwMDAwMTAwMDM0OFsiQmxhY2tSb2NrIEluYyJdIC0tOC44MSUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTA1OTZbIlN0YXRlIFN0cmVldCBDb3JwIl0gLS0xMDAuMCUtLT4gMTAwMDAwMTM2MTA4CiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tNi41JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N184WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzEuNzIlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAyMDExMjg1WyJSZXNvbmFjIEhvbGRpbmdzPGJyPkNvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYyNTYKICAgIDEwMDAwMTAxNjI1NlsiUmVzb25hIEJhbmsgTHRkIl0gLS0xNi43JS0tPiAxMDAwMDEwMDAxNzkKICAgIDEwMDAwMTAwMDE3OVsiQ3VzdG9keSBCYW5rIG9mPGJyPkphcGFuIEx0ZCJdIC0tNS43MiUtLT4gMTAwMDAxMDE2NDk4CiAgICAxMDAwMDEwMTY0OThbIk1pdHN1YmlzaGkgVUZKPGJyPkZpbmFuY2lhbCBHcm91cCBJbmMiXSAtLTEwMC4wJS0tPiAxMDAwMDEwMTYxMjUKICAgIDEwMDAwMTAxNjEyNVsiTWl0c3ViaXNoaSBVRkogVHJ1c3Q8YnI+YW5kIEJhbmtpbmcgQ29ycCJdIC0tNDYuNSUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQzJS0tPiAxMDAwMDAwMDA2NTEKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjcuNSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDEwMDAxNzlbIkN1c3RvZHkgQmFuayBvZjxicj5KYXBhbiBMdGQiXSAtLTYuMSUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDAxMzYxMDhbIlN0YXRlIFN0cmVldCBCYW5rPGJyPmFuZCBUcnVzdCBDbyJdIC0tOS45NyUtLT4gMTAwMDAwMDAwNjUxCiAgICAxMDAwMDAwMDA2NTFbIk1pdHN1aSAmIENvIEx0ZCJdIC0tNTAuMSUtLT4gMTAwMDAwMDAyMzk4CiAgICAxMDAwMDEwMDAxOThbIkdvdmVybm1lbnQgb2YgU2F1ZGk8YnI+QXJhYmlhIl0gLS0xMDAuMCUtLT4gMTAwMDAwMDAxMzU4CiAgICAxMDAwMDAwMDEzNThbIlB1YmxpYyBJbnZlc3RtZW50PGJyPkZ1bmQgKFNhdWRpIEFyYWJpYSkiXSAtLTQ0LjE2JS0tPiAxMDAwMDAwMDA4ODIKICAgIDEwMDAwMDEyMzI2MV8yWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tPiAxMDAwMDIwMjE4NjkKICAgIDEwMDAwMjAyMTg2OVsiQWJ1bmF5eWFuIEhvbGRpbmcgQ28iXSAtLT4gMTAwMDAwMDAwODkzCiAgICAxMDAwMDAxMjMyNjFfM1sibmF0dXJhbCBwZXJzb24ocykiXSAtLT4gMTAwMDAyMDIxODcwCiAgICAxMDAwMDIwMjE4NzBbIkFsIE11aGFpZGliIEdyb3VwIl0gLS0+IDEwMDAwMDAwMDg5MwogICAgMTAwMDAwMDAwODkzWyJWaXNpb24gSW50ZXJuYXRpb25hbDxicj5JbnZlc3RtZW50IENvIl0gLS0yMi43NSUtLT4gMTAwMDAwMDAwODgyCiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0zMy4wOSUtLT4gMTAwMDAwMDAwODgyCiAgICAxMDAwMDAwMDA4ODJbIkFDV0EgUG93ZXIgQ28iXSAtLTQ0LjklLS0+IDEwMDAwMDAwMjM5OAogICAgMTAwMDAwMDAwNzc2WyJEaG9mYXIgSW50ZXJuYXRpb25hbDxicj5EZXZlbG9wbWVudCAmPGJyPkludmVzdG1lbnQgSG9sZGluZzxicj5Db21wYW55IFNBT0ciXSAtLTUuMCUtLT4gMTAwMDAwMDAyMzk4CiAgICAxMDAwMDAwMDIzOThbIkFkIERoYWhpcmFoPGJyPkdlbmVyYXRpb24gQ29tcGFueTxicj5TQU9DIl0gLS0xMDAuMCUtLT4gUDEwMDAwMDQwNTUwOAogICAgUDEwMDAwMDQwNTUwOFsiSWJyaSBJbmRlcGVuZGVudDxicj5wb3dlciBwbGFudCJdCg==}}
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Oman]]

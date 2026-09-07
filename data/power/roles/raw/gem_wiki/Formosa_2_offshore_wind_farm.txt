@@ -1,0 +1,75 @@
+# GEM wiki page: Formosa 2 offshore wind farm
+# URL: https://www.gem.wiki/Formosa_2_offshore_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' Hai Neng (Formosa II) Offshore Wind Power Plan
+
+'''Formosa 2 offshore wind farm''' (海能風場, 海能离岸风力发电计画, 海能離岸風力發電計畫) is an operating wind farm in Zhunan Town, Miaoli County, Taiwan.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Formosa 2 offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://formosa2windpower.com/en/%E6%B5%B7%E8%83%BD%E9%A2%A8%E9%9B%BB%E7%A9%A9%E5%AE%9A%E6%8E%A8%E9%80%B2%E5%B7%A5%E7%A8%8B%E9%80%B2%E5%BA%A6-%E5%AE%8C%E6%88%9012%E6%94%AF%E9%A2%A8%E6%A9%9F%E5%AE%89%E8%A3%9D-%E5%B7%B2%E6%96%BC/, https://ubrand.udn.com/ubrand/story/12117/7183992}}</ref>
+| 2023<ref name="autoref_1">{{cite web |url=https://ubrand.udn.com/ubrand/story/12117/7183992 |archive-url=https://web.archive.org/web/20240125195107/https://ubrand.udn.com/ubrand/story/12117/7183992 |archive-date=2024-01-25}}</ref>
+| 376 MW<ref name="autoref_2">{{cite web |url=https://ubrand.udn.com/ubrand/story/12117/7183992, https://sreglobal.com/formosa-ll/, https://www.siemensgamesa.com/-/media/siemensgamesa/downloads/en/newsroom/2019/10/pressrelease-siemens-gemesa-of-tw-formosa-2-en.pdf}}</ref>
+| Offshore hard mount<ref name="autoref_3">{{cite web |url=https://www.siemensgamesa.com/-/media/siemensgamesa/downloads/en/newsroom/2019/10/pressrelease-siemens-gemesa-of-tw-formosa-2-en.pdf |archive-url=https://web.archive.org/web/20240125195235/https://www.siemensgamesa.com/-/media/siemensgamesa/downloads/en/newsroom/2019/10/pressrelease-siemens-gemesa-of-tw-formosa-2-en.pdf |archive-date=2024-01-25}}</ref>
+| J&V Energy Technology Co Ltd [26%]; Synera Renewable Energy Co Ltd [25%]; JERA Co Inc [49%] (株式会社JERA; 雲豹能源科技股份有限公司; 風睿能源股份有限公司)<ref name="autoref_4">{{cite web |url=https://sreglobal.com/milestones/, https://formosa2windpower.com/en/about/, https://www.swancor-renewable.com/en/formosa-ll/, https://sreglobal.com/milestones/, https://formosa2windpower.com/en/about/, https://www.swancor-renewable.com/en/formosa-ll/, https://renewablesnow.com/news/jv-energy-unit-to-buy-macquarie-ams-stake-in-formosa-2-1269861/?utm_campaign=daily-newsletter-by-renewables-now&utm_medium=email&utm_edition=202501270330&utm_source=newsletter}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Formosa 2 offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Zhunan Town, Miaoli County, Taiwan<ref name="autoref_5">{{cite web |url=https://sreglobal.com/formosa-ll/, https://eiger.law/wind-energy/, https://formosa2windpower.com/en/about/}}</ref>
+| 24.7720, 120.6472 (approximate)<ref name="autoref_5" />
+|}
+The map below shows the approximate location of the wind farm:
+{{
+#display_map:
+24.771971, 120.647249~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Taiwan]]
+
+__NOTOC__

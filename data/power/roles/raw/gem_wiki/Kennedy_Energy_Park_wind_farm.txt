@@ -1,0 +1,89 @@
+# GEM wiki page: Kennedy Energy Park wind farm
+# URL: https://www.gem.wiki/Kennedy_Energy_Park_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Kennedy Energy Park wind farm''' is an operating wind farm in Queensland, Australia.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for Kennedy Energy Park wind farm ====
+
+{| class="wikitable"
+|+
+!Phase name
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+|-
+| 1
+| Operating<ref name="autoref_0">{{cite web |url=https://kennedyenergypark.com.au/ |archive-url=https://web.archive.org/web/20240126152425/https://kennedyenergypark.com.au/ |archive-date=2024-01-26}}</ref>
+| 2024<ref name="autoref_1">{{cite web |url=https://aemo.com.au/en/energy-systems/electricity/national-electricity-market-nem/nem-forecasting-and-planning/forecasting-and-planning-data/generation-information |title=Generation information |date=2023 |website=Australian Energy Market Operator |access-date=2023-10-12 |archive-url=https://web.archive.org/web/20240125152934/https://aemo.com.au/en/energy-systems/electricity/national-electricity-market-nem/nem-forecasting-and-planning/forecasting-and-planning-data/generation-information |archive-date=2024-01-25}}</ref>
+| 43 MW<ref name="autoref_2">{{cite web |url=https://www.thewindpower.net/windfarm_en_26595.php |archive-url=https://web.archive.org/web/20240126064532/https://www.thewindpower.net/windfarm_en_26595.php |archive-date=2024-01-26}}</ref>
+| Onshore<ref name="autoref_3">{{cite web |url=https://opennem.org.au/facilities/au/ |archive-url=https://web.archive.org/web/20240126112433/https://opennem.org.au/facilities/au/ |archive-date=2024-01-26}}</ref>
+| Windlab Pty Ltd; Eurus Energy (株式会社ユーラスエナジーホールディングス)<ref name="autoref_4">{{cite web |url=https://www.ecogeneration.com.au/wp-content/uploads/2021/01/WindMap-202102.pdf, https://www.ecogeneration.com.au/wp-content/uploads/2021/01/WindMap-202102.pdf}}</ref>
+|-
+| 2
+| Announced<ref name="autoref_5">{{cite web |url=https://arena.gov.au/projects/kennedy-energy-park/, https://www.power-technology.com/uncategorized/power-plant-profile-kennedy-energy-park-ii-australia/}}</ref>
+| 2029 (planned)<ref name="autoref_6">{{cite web |url=https://www.power-technology.com/uncategorized/power-plant-profile-kennedy-energy-park-ii-australia/}}</ref>
+| 900 MW<ref name="autoref_6" />
+| Onshore<ref name="autoref_6" />
+| Windlab Pty Ltd [100%]<ref name="autoref_7">{{cite web |url=https://www.ecogeneration.com.au/wp-content/uploads/2021/01/WindMap-202102.pdf |title=Wind Map of Australia 2021 |date=2021-01 |website=ecogeneration |access-date=2021-06-07 |archive-url=https://web.archive.org/web/20240125152627/https://www.ecogeneration.com.au/wp-content/uploads/2021/01/WindMap-202102.pdf |archive-date=2024-01-25}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for Kennedy Energy Park wind farm ====
+
+{| class="wikitable"
+|+
+!Phase Name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| 1
+| Queensland, Australia<ref name="autoref_2" />
+| -20.9240, 144.3780 (exact)<ref name="autoref_2" />
+|-
+| 2
+| North Queensland, Queensland, Australia<ref name="autoref_8">{{cite web |url=https://kennedyenergypark.com.au/project-details/ |archive-url=https://web.archive.org/web/20240201031221/https://kennedyenergypark.com.au/project-details/ |archive-date=2024-02-01}}</ref>
+| -25.4860, 152.0891 (approximate)<ref name="autoref_8" />
+|}
+The map below shows the locations of the wind farm phases:
+<display_map width=600 height=500 type=satellite>
+-20.924, 144.378~ ~ ~ ~ ~Phase 1
+-25.486, 152.0891~ ~ ~ ~ ~Phase 2
+</display_map>
+
+==Related Projects==
+This project is related to the following project:
+* GEM ID: 00000827547
+
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Australia]]
+
+__NOTOC__

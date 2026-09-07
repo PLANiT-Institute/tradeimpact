@@ -221,7 +221,11 @@ supplier, O&M, lender, ECA cover) with the **phase** and **share** as data colum
 across roles; the emission factor is the destination's own where on file and the IPCC 2006
 default otherwise; the benchmark is the destination grid under S1 (observed trend) and S2
 (the destination's NDC target machine-read from Climate Watch's structured NDC content, hand rows
-on top). Results are published per unit with coordinates and per company × role, with a
+on top). Roles sit in five separate phases — development, construction, investment (equity),
+operation (O&M) and finance — and come from four sources in order of standing: the hand register,
+the companies' own disclosures and project pages (each row citing the saved page that states the
+role and the page that states the share, with the sentence quoted), the tracker's own owner,
+parent and operator fields, and the GEM wiki sentences read by keyword. Results are published per unit with coordinates and per company × role, with a
 sensitivity table, in `data/power/database/tradeimpact_power.sqlite`, and read by the interactive
 report `data/power/report/ti_power_report.html` (eight story tabs including the unit × company
 world map; serve with `.venv/bin/python script/auto/serve_dashboard.py --root power --port 8766`).

@@ -1,0 +1,108 @@
+# GEM wiki page: Quang Ninh Combined Cycle power station
+# URL: https://www.gem.wiki/Quang_Ninh_Combined_Cycle_power_station
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GOGPT-tracker}}
+'''Quang Ninh Combined Cycle power station''' is a power station in pre-construction in Cam Pha, Cam Thinh, Quảng Ninh, Vietnam.
+It is also known as Quang Ninh 2.
+
+==Location==
+
+===='''Table 1:''' Project-level location details====
+
+{| class="wikitable"
+|+
+!Plant name
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Quang Ninh Combined Cycle power station
+| Cam Pha, Cam Thinh, Quảng Ninh, Vietnam
+| 21.004545, 107.35511 (approximate)<ref name="autoref_0">{{cite web |url=http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/ky-bien-ban-ghi-nho-phat-trien-du-an-nha-may-dien-khi-lng-quang-ninh.html |archive-url=https://web.archive.org/web/20210312024449/http://nangluongvietnam.vn/news/vn/dien-luc-viet-nam/ky-bien-ban-ghi-nho-phat-trien-du-an-nha-may-dien-khi-lng-quang-ninh.html |archive-date=2021-03-12}}</ref>
+|}
+{{
+#display_map:
+21.004545, 107.35511
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+
+==Project Details==
+
+===='''Table 2:''' Unit-level details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Status
+!Fuel(s)
+!Capacity (MW)
+!Technology
+!CHP
+!Start year
+!Equipment
+!Emergency/Backup
+|-
+| 1
+| Pre-construction<ref name="autoref_1">{{cite web |url=https://laodong.vn/kinh-doanh/quang-ninh-yeu-cau-khoi-cong-du-an-nha-may-dien-khi-2272-ti-usd-quy-32024-1307619.ldo |title=Quảng Ninh yêu cầu khởi công dự án Nhà máy điện khí 2,272 tỉ USD quý 3.2024 |date=2024-02-24 |website=laodong.vn |access-date=2024-06-06 |archive-url=https://web.archive.org/web/20240607184538/https://laodong.vn/kinh-doanh/quang-ninh-yeu-cau-khoi-cong-du-an-nha-may-dien-khi-2272-ti-usd-quy-32024-1307619.ldo |archive-date=2024-06-07}}</ref><ref name="autoref_2">{{cite web |url=https://www.vietnam.vn/en/tang-toc-du-an-nha-may-dien-khi-lng-quang-ninh}}</ref><ref name="autoref_3">{{cite web |url=https://baoxaydung.com.vn/du-an-nha-may-dien-khi-lng-quang-ninh-se-khoi-cong-trong-quy-iii2024-370456.html |title=Dự án Nhà máy điện khí LNG Quảng Ninh sẽ khởi công trong quý III/2024 |date=2024-02-25 |website=Báo Xây dựng |access-date=2024-06-10 |archive-url=https://web.archive.org/web/20240611184714/https://baoxaydung.com.vn/du-an-nha-may-dien-khi-lng-quang-ninh-se-khoi-cong-trong-quy-iii2024-370456.html |archive-date=2024-06-11}}</ref><ref name="autoref_4">{{cite web |url=https://lngprime.com/asia/marubeni-tokyo-gas-petrovietnam-establish-quang-ninh-lng-power-jv/65723/ |archive-url=https://web.archive.org/web/20221206213235/https://lngprime.com/asia/marubeni-tokyo-gas-petrovietnam-establish-quang-ninh-lng-power-jv/65723/ |archive-date=2022-12-06}}</ref><ref name="autoref_5">{{cite web |url=https://vietnamnews.vn/economy/1403290/quang-ninh-lng-power-project-slow.html |archive-url=https://web.archive.org/web/20231002033425/https://vietnamnews.vn/economy/1403290/quang-ninh-lng-power-project-slow.html |archive-date=2023-10-02}}</ref><ref name="autoref_6">{{cite web |url=https://vir.com.vn/construction-of-2-billion-quang-ninh-lng-plant-kicked-off-88650.html |archive-url=https://web.archive.org/web/20230315104914/https://vir.com.vn/construction-of-2-billion-quang-ninh-lng-plant-kicked-off-88650.html |archive-date=2023-03-15}}</ref><ref name="autoref_7">{{cite web |url=https://drive.google.com/open?id=11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw&usp=drive_fs |title=Vietnam Power Development Plan VIII, December 2022 |access-date=2022-12-01 00:00:00 |archive-url=https://web.archive.org/web/20230919154845/https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw%26usp%3Ddrive_fs&followup=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D11uBx_yeN7tUPT5kl34D_qrHgvk4LNPpw%26usp%3Ddrive_fs&ifkv=AYZoVhcr7TPfSGs0F6xAt6YYGrwIYWEqSCLp9rL0HmP6t09y-JdKO9uqRI3yOlfY6kKg_sfboBx5&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1929632269%3A1695138525231013&theme=glif |archive-date=2023-09-19 |url-status=live}}</ref><ref name="autoref_0" /><ref name="autoref_8">{{cite web |url=https://mbs.com.vn/media/jaho3fj4/power_20250221_e.pdf}}</ref><ref name="autoref_9">{{cite web |url=https://www.rivieramm.com/news-content-hub/news-content-hub/lng-a-pivotal-force-in-vietnams-energy-transition-83755}}</ref><ref name="autoref_10">{{cite web |url=https://thuvienphapluat.vn/van-ban/Thuong-mai/Quyet-dinh-500-QD-TTg-2023-Quy-hoach-phat-trien-dien-luc-quoc-gia-2021-2030-tam-nhin-2050-566461.aspx |archive-url=https://web.archive.org/web/20230731150906/https://thuvienphapluat.vn/van-ban/Thuong-mai/Quyet-dinh-500-QD-TTg-2023-Quy-hoach-phat-trien-dien-luc-quoc-gia-2021-2030-tam-nhin-2050-566461.aspx |archive-date=2023-07-31}}</ref><ref name="autoref_11">{{cite web |url=https://theinvestor.vn/construction-of-first-northern-vietnam-lng-power-project-must-start-in-q3-quang-ninh-authorities-d8734.html}}</ref><ref name="autoref_12">{{cite web |url=https://www.wfw.com/articles/vietnam-makes-major-updates-to-power-development-plan-viii/}}</ref><ref name="autoref_13">{{cite web |url=https://vietnamnews.vn/economy/1722860/quang-ninh-accelerates-progress-on-2-2-billion-lng-power-project.html}}</ref>
+| fossil gas: LNG<ref name="autoref_0" /><ref name="autoref_6" /><ref name="autoref_7" />
+| 1500<ref name="autoref_14">{{cite web |url=https://dataenergy.com.vn/vi/news/cac-du-an-dien-khi-lng-tai-viet-nam-n36 |archive-url=https://web.archive.org/web/20240607181723/https://dataenergy.com.vn/vi/news/cac-du-an-dien-khi-lng-tai-viet-nam-n36 |archive-date=2024-06-07}}</ref><ref name="autoref_0" /><ref name="autoref_6" /><ref name="autoref_7" />
+| combined cycle<ref name="autoref_0" /><ref name="autoref_6" /><ref name="autoref_7" />
+| not found
+| 2027 (planned)<ref name="autoref_2" /><ref name="autoref_0" /><ref name="autoref_6" /><ref name="autoref_7" /><ref name="autoref_8" /><ref name="autoref_12" />
+| not found
+| no
+|}
+CHP is an abbreviation for Combined Heat and Power. It is a technology that produces electricity and thermal energy at high efficiencies. Coal units track this information in the Captive Use section when known.
+
+===='''Table 3:''' Unit-level ownership and operator details====
+
+{| class="wikitable"
+|+
+!Unit name
+!Owner
+!Parent
+|-
+| 1
+| Quang Ninh LNG Power JSC [100%]<ref name="autoref_15">{{cite web |url=https://theinvestor.vn/19-bln-lng-power-project-in-northern-vietnam-calls-for-mine-clearance-bids-d14586.html}}</ref>
+| Marubeni Corp [25.0%]; Tokyo Gas Co Ltd [25.0%]; Vietnam Mechanical Assembly JSC [25.0%]; Vietnam Oil and Gas Group Co [25.0%]
+|}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+
+==Ownership Tree==
+
+This ownership tree is part of the [https://globalenergymonitor.org/projects/global-energy-ownership-tracker/ Global Energy Ownership Tracker], a project of Global Energy Monitor.
+
+{{#widget:ObservableOwnershipTree|data=Zmxvd2NoYXJ0IFRCCiAgICAxMDAwMDEwMTU1ODdfMVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljk0JS0tPiAxMDAwMDEwMTYyNTUKICAgIDEwMDAwMjAwMTk3NFsibWVtYmVyL2VtcGxveWVlPGJyPm93bmVkIl0gLS0+IDEwMDAwMTAwMDM4MgogICAgMTAwMDAxMDAwMzgyWyJOaXBwb24gTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTMzLjUlLS0+IDEwMDAwMTAwMDE3OAogICAgMTAwMDAyMDAxOTc0WyJtZW1iZXIvZW1wbG95ZWU8YnI+b3duZWQiXSAtLT4gMTAwMDAxMDExNjE3CiAgICAxMDAwMDEwMTE2MTdbIk1laWppIFlhc3VkYSBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDIwMDE5NzRbIm1lbWJlci9lbXBsb3llZTxicj5vd25lZCJdIC0tPiAxMDAwMDEwMTY0OTIKICAgIDEwMDAwMTAxNjQ5MlsiTm9yaW5jaHVraW4gQmFuayJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNgogICAgMTAwMDAxMDE2MTI2WyJUaGUgTm9yaW5jaHVraW48YnI+VHJ1c3QgJiBCYW5raW5nIENvPGJyPkx0ZCJdIC0tMTAuMCUtLT4gMTAwMDAxMDAwMTc4CiAgICAxMDAwMDEwMTU1ODdfMlsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc3Ljg2JS0tPiAxMDAwMDEwMTY0OTgKICAgIDEwMDAwMTAxNjQ5OFsiTWl0c3ViaXNoaSBVRko8YnI+RmluYW5jaWFsIEdyb3VwIEluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjEyNQogICAgMTAwMDAxMDE2MTI1WyJNaXRzdWJpc2hpIFVGSiBUcnVzdDxicj5hbmQgQmFua2luZyBDb3JwIl0gLS00Ni41JS0tPiAxMDAwMDEwMDAxNzgKICAgIDEwMDAwMTAwMDE3OFsiVGhlIE1hc3RlciBUcnVzdDxicj5CYW5rIG9mIEphcGFuIEx0ZCJdIC0tMTUuNDElLS0+IDEwMDAwMTAxNjI1NQogICAgMTAwMDAxMDE2MjU1WyJTdW1pdG9tbyBNaXRzdWk8YnI+VHJ1c3QgR3JvdXAiXSAtLTMzLjMlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS4yMyUtLT4gMTAwMDAyMDIyMjAzCiAgICAxMDAwMDEwMTU1ODdfM1sic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTc5LjQ3JS0tPiAxMDAwMDIwMjIyMDMKICAgIDEwMDAwMjAyMjIwM1siRGFpaWNoaSBMaWZlIEdyb3VwPGJyPkluYyJdIC0tMTAwLjAlLS0+IDEwMDAwMDEzMzU0MgogICAgMTAwMDAwMTMzNTQyWyJUaGUgRGFpLWljaGkgTGlmZTxicj5JbnN1cmFuY2UgQ28gTHRkIl0gLS04LjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDE2MjU3WyJBc2FoaSBNdXR1YWwgTGlmZTxicj5JbnN1cmFuY2UgQ28iXSAtLTUuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMTU1ODdfNFsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTEwLjAlLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS40NiUtLT4gMTAwMDAwMTM0MjIyCiAgICAxMDAwMDEwMTU1ODdfNVsic21hbGwgc2hhcmVob2xkZXIocykiXSAtLTU3Ljg1JS0tPiAxMDAwMDAxMzQyMjIKICAgIDEwMDAwMDEyMzI2MV8xWyJuYXR1cmFsIHBlcnNvbihzKSJdIC0tMjEuMTMlLS0+IDEwMDAwMDEzNDIyMgogICAgMTAwMDAwMTM0MjIyWyJNaXp1aG8gRmluYW5jaWFsPGJyPkdyb3VwIEluYyJdIC0tMjcuMCUtLT4gMTAwMDAxMDAwMTc5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjQ3JS0tPiAxMDAwMDIwMTEyODUKICAgIDEwMDAwMTAxNTU4N182WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzguMDYlLS0+IDEwMDAwMTAxMDU5NgogICAgMTAwMDAxMDEwNTk1WyJUaGUgVmFuZ3VhcmQgR3JvdXA8YnI+SW5jIl0gLS0xMy4xMyUtLT4gMTAwMDAxMDEwNTk2CiAgICAxMDAwMDEwMTU4MzNbIkJsYWNrcm9jayBBZHZpc29yczxicj5MTEMiXSAtLTUuMDclLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDE1NTg3XzdbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS04Ni4yNyUtLT4gMTAwMDAxMDAwMzQ4CiAgICAxMDAwMDEwMTA1OTVbIlRoZSBWYW5ndWFyZCBHcm91cDxicj5JbmMiXSAtLTguNjYlLS0+IDEwMDAwMTAwMDM0OAogICAgMTAwMDAxMDAwMzQ4WyJCbGFja1JvY2sgSW5jIl0gLS04LjgxJS0tPiAxMDAwMDEwMTA1OTYKICAgIDEwMDAwMTAxMDU5NlsiU3RhdGUgU3RyZWV0IENvcnAiXSAtLTEwMC4wJS0tPiAxMDAwMDAxMzYxMDgKICAgIDEwMDAwMDEzNjEwOFsiU3RhdGUgU3RyZWV0IEJhbms8YnI+YW5kIFRydXN0IENvIl0gLS02LjUlLS0+IDEwMDAwMjAxMTI4NQogICAgMTAwMDAxMDE1NTg3XzhbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS03MS43MiUtLT4gMTAwMDAyMDExMjg1CiAgICAxMDAwMDIwMTEyODVbIlJlc29uYWMgSG9sZGluZ3M8YnI+Q29ycCJdIC0tMTAwLjAlLS0+IDEwMDAwMTAxNjI1NgogICAgMTAwMDAxMDE2MjU2WyJSZXNvbmEgQmFuayBMdGQiXSAtLTE2LjclLS0+IDEwMDAwMTAwMDE3OQogICAgMTAwMDAxMDAwMTc5WyJDdXN0b2R5IEJhbmsgb2Y8YnI+SmFwYW4gTHRkIl0gLS02LjU2JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMTAxNTU4N185WyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNjYuNzUlLS0+IDEwMDAwMDAwMDY0OQogICAgMTAwMDAxMDE2MTI3WyJCTllNIEFTIEFHVC8gQ0xUUyAxMDxicj5QZXJjZW50Il0gLS0xMC4xNCUtLT4gMTAwMDAwMDAwNjQ5CiAgICAxMDAwMDEwMDAxNzhbIlRoZSBNYXN0ZXIgVHJ1c3Q8YnI+QmFuayBvZiBKYXBhbiBMdGQiXSAtLTE2LjU1JS0tPiAxMDAwMDAwMDA2NDkKICAgIDEwMDAwMDAwMDY0OVsiTWFydWJlbmkgQ29ycCJdIC0tMjAuMCUtLT4gMTAwMDAyMDE2NzUzCiAgICAxMDAwMDEwMDAyMDRbIkdvdmVybm1lbnQgb2Y8YnI+VmlldG5hbSJdIC0tMTAwLjAlLS0+IDEwMDAwMDAwMTMzNwogICAgMTAwMDAwMDAxMzM3WyJWaWV0bmFtIE9pbCBhbmQgR2FzPGJyPkdyb3VwIENvIl0gLS03OS45NyUtLT4gMTAwMDAwMDAzODA5CiAgICAxMDAwMDEwMTU1ODdfMTBbInNtYWxsIHNoYXJlaG9sZGVyKHMpIl0gLS0yMC4wNiUtLT4gMTAwMDAwMDAzODA5CiAgICAxMDAwMDAwMDM4MDlbIlBldHJvVmlldG5hbSBQb3dlcjxicj5Db3Jwb3JhdGlvbiBKU0MiXSAtLTMwLjAlLS0+IDEwMDAwMjAxNjc1MwogICAgMTAwMDAxMDE1NTg3XzExWyJzbWFsbCBzaGFyZWhvbGRlcihzKSJdIC0tNzUuNjclLS0+IDEwMDAwMDAwMDY2MAogICAgMTAwMDAxMDAwMTc4WyJUaGUgTWFzdGVyIFRydXN0PGJyPkJhbmsgb2YgSmFwYW4gTHRkIl0gLS0xNS44NyUtLT4gMTAwMDAwMDAwNjYwCiAgICAxMDAwMDEwMDAzODJbIk5pcHBvbiBMaWZlPGJyPkluc3VyYW5jZSBDbyJdIC0tOC40NiUtLT4gMTAwMDAwMDAwNjYwCiAgICAxMDAwMDAwMDA2NjBbIlRva3lvIEdhcyBDbyBMdGQiXSAtLTIwLjAlLS0+IDEwMDAwMjAxNjc1MwogICAgMTAwMDAyMDE2NzU0WyJWaWV0bmFtIE1lY2hhbmljYWw8YnI+QXNzZW1ibHkgSlNDIl0gLS0+IDEwMDAwMjAxNjc1MwogICAgMTAwMDAyMDE2NzUzWyJRdWFuZyBOaW5oIExORyBQb3dlcjxicj5KU0MiXSAtLTEwMC4wJS0tPiBQMTAwMDAwNDA1OTc5CiAgICBQMTAwMDAwNDA1OTc5WyJRdWFuZyBOaW5oIENvbWJpbmVkPGJyPkN5Y2xlIHBvd2VyIHN0YXRpb24iXQo=}}
+
+==Background==
+
+The overall cost of the project was estimated in February 2024 to be US$2.23 billion.<ref>Vy Anh, Minh Hue, [https://theinvestor.vn/construction-of-first-northern-vietnam-lng-power-project-must-start-in-q3-quang-ninh-authorities-d8734.html Construction of first northern Vietnam LNG power project must start in Q3: Quang Ninh authorities,] The Investor, Feb. 26, 2024</ref>
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===References===
+
+<references />
+
+===Additional data===
+
+To access additional data, including an interactive map of gas-fired power stations, a downloadable dataset, and summary data, please visit the [https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker/ Global Oil and Gas Plant Tracker] on the Global Energy Monitor website.
+[[Category:Oil & Gas power stations]][[Category:Oil & Gas power stations in Vietnam]]

@@ -1,0 +1,75 @@
+# GEM wiki page: GoliatVind Offshore wind farm
+# URL: https://www.gem.wiki/GoliatVind_Offshore_wind_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalWindPowerTracker}}
+'''Other names:''' Goliat platform offshore wind farm
+
+'''GoliatVind Offshore wind farm''' is a wind farm in pre-construction in Norway.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for GoliatVind Offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Type
+!Owner
+|-
+| Pre-construction<ref name="autoref_0">{{cite web |url=https://www.rivieramm.com/news-content-hub/eia-approved-for-what-could-be-norways-first-floating-wind-project-82940, https://sourcegalileo.com/news/japanese-energy-giant-kansai-joins-floating-offshore-wind-project-norway}}</ref>
+| 2027 (planned)<ref name="autoref_1">{{cite web |url=https://sourcegalileo.com/news/japanese-energy-giant-kansai-joins-floating-offshore-wind-project-norway}}</ref>
+| 75 MW<ref name="autoref_2">{{cite web |url=https://goliatvind.no/om-prosjektet}}</ref>
+| Offshore floating<ref name="autoref_1" />
+| Odfjell Oceanwind; Vår Energi AS; Source Galileo; Kansai Electric Power Co (関西電力株式会社)<ref name="autoref_3">{{cite web |url=https://sourcegalileo.com/news/japanese-energy-giant-kansai-joins-floating-offshore-wind-project-norway, https://sourcegalileo.com/news/japanese-energy-giant-kansai-joins-floating-offshore-wind-project-norway, https://sourcegalileo.com/news/japanese-energy-giant-kansai-joins-floating-offshore-wind-project-norway, https://sourcegalileo.com/news/japanese-energy-giant-kansai-joins-floating-offshore-wind-project-norway}}</ref>
+|}
+
+==Location==
+==== '''Table 2:''' Phase-level location details for GoliatVind Offshore wind farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Norway<ref name="autoref_1" />
+| 70.8424, 23.7296 (approximate)<ref name="autoref_1" />
+|}
+The map below shows the approximate location of the wind farm:
+{{
+#display_map:
+70.8423723, 23.7295801~ ~ ~ ~ ~
+|width=600
+|height=500
+|type=normal
+|zoom=7
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-wind-power-tracker/tracker-map/ interactive map] of global wind farms, a downloadable [https://globalenergymonitor.org/projects/global-wind-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-wind-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-wind-power-tracker/ Global Wind Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Wind farms]]
+[[Category:Wind farms in Norway]]
+
+__NOTOC__

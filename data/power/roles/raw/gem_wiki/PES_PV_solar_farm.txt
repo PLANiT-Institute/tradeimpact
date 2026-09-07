@@ -1,0 +1,80 @@
+# GEM wiki page: PES PV solar farm
+# URL: https://www.gem.wiki/PES_PV_solar_farm
+# Fetched: 2026-09-07 from https://www.gem.wiki/w/api.php?action=parse&prop=wikitext
+# Publisher: Global Energy Monitor (gem.wiki). Licence: CC BY 4.0.
+# Read by: script/power/roles/extract_wiki_roles.py -> data/power/roles/processed/gem_wiki_roles.csv
+# The text below the marker is the page source exactly as the API returned it.
+--- wikitext as returned by the API ---
+<!---
+	COMMENT 1: THIS PAGE'S SOURCE CODE IS PARTIALLY GENERATED USING SCRIPTING CODE.
+		CHANGES TO THE WIKI PAGE MAY BE OVERWRITTEN UNLESS MADE IN DESIGNATED AREAS.
+		IF CHANGES WITHIN THE SCRIPT-GENERATED SECTIONS NEED TO BE MADE, PLEASE REACH OUT TO THE DATA TEAM.
+-->
+{{Navbar-GlobalSolarPowerTracker}}
+'''Other names:''' Zlataritsa PV, SDN-KEPCO Veliko Tarnovo Solar Plant
+
+'''PES PV solar farm''' is an operating solar photovoltaic (PV) farm in Veliko Tarnovo, Bulgaria.
+
+==Project Details==
+==== '''Table 1:''' Phase-level project details for PES PV solar farm ====
+
+{| class="wikitable"
+|+
+!Status
+!Commissioning year
+!Nameplate capacity
+!Technology
+!Owner
+!Operator
+|-
+| Operating<ref name="autoref_0">{{cite web |url=https://www.unicreditbulbank.bg/en/about-us/media/news/unicredit-bulbank-partner-project-building-solar-p/ |archive-url=https://web.archive.org/web/20240206150147/https://www.unicreditbulbank.bg/en/about-us/media/news/unicredit-bulbank-partner-project-building-solar-p/ |archive-date=2024-02-06}}</ref>
+| 2012<ref name="autoref_1">{{cite web |url=https://renewablesnow.com/news/south-koreas-sdn-kosep-launch-solar-parks-worth-total-154-mln-euro-in-bulgaria-259691/ |archive-url=https://web.archive.org/web/20240201200857/https://renewablesnow.com/news/south-koreas-sdn-kosep-launch-solar-parks-worth-total-154-mln-euro-in-bulgaria-259691/ |archive-date=2024-02-01}}</ref>
+| 21 MWp/dc<ref name="autoref_1" />
+| PV<ref name="autoref_1" />
+| SDN Co Ltd [50%]; Korea South-East Power Co Ltd [50%] (한국남동발전(주))<ref name="autoref_2">{{cite web |url=https://ppi.worldbank.org/en/snapshots/project/SDN-KEPCO-Veliko-Tarnovo-Solar-Plant-6665, https://www.kimchang.com/en/insights/detail.kc?sch_section=2&idx=9379, https://ppi.worldbank.org/en/snapshots/project/SDN-KEPCO-Veliko-Tarnovo-Solar-Plant-6665, https://www.kimchang.com/en/insights/detail.kc?sch_section=2&idx=9379}}</ref>
+| RES<ref name="autoref_3">{{cite web |url=https://www.kimchang.com/en/insights/detail.kc?sch_section=2&idx=9379 |archive-url=https://web.archive.org/web/20240206181720/https://www.kimchang.com/en/insights/detail.kc?sch_section=2&idx=9379 |archive-date=2024-02-06}}</ref>
+|}
+Read more about [[Solar capacity ratings]].
+
+==Location==
+==== '''Table 2:''' Phase-level location details for PES PV solar farm ====
+
+{| class="wikitable"
+|+
+!Location
+!Coordinates ([https://en.wikipedia.org/wiki/World_Geodetic_System WGS 84])
+|-
+| Veliko Tarnovo, Bulgaria<ref name="autoref_4">{{cite web |url=https://www.google.com/maps/place/RES+PV+Power+Plant/@43.0214023,25.890963,1439m/data=!3m1!1e3!4m13!1m7!3m6!1s0x40a8d05ceb5bc519:0x56f4a1a8b710f04e!2s5090+Zlataritsa,+Bulgaria!3b1!8m2!3d43.0495626!4d25.8926662!3m4!1s0x40a8dbdeee0937d7:0xf85f896afc034ec7!8m2!3d43.02111!4d25.8941439}}</ref>
+| 43.0214, 25.8943 (exact)<ref name="autoref_4" />
+|}
+The map below shows the exact location of the solar farm:
+{{
+#display_map:
+43.0214, 25.8943~
+|width=600
+|height=500
+|zoom=16
+|service=leaflet
+|layers=Esri.WorldImagery
+}}
+<!---
+	COMMENT 2: CHANGES MADE IN SECTIONS BETWEEN THIS AND "COMMENT 3" WILL NOT BE OVERWRITTEN.
+		PLEASE ENSURE NO DUPLICATE SECTION HEADERS.
+-->
+<!---
+	COMMENT 3: CHANGES MADE BELOW THIS COMMENT WILL BE OVERWRITTEN.
+		PLEASE DO NOT MANUALLY EDIT BELOW THIS COMMENT.
+-->
+
+==Articles and Resources==
+
+===Additional data===
+To access additional data, including an [https://globalenergymonitor.org/projects/global-solar-power-tracker/tracker-map/ interactive map] of global solar farms, a downloadable [https://globalenergymonitor.org/projects/global-solar-power-tracker/download-data/ dataset], and [https://globalenergymonitor.org/projects/global-solar-power-tracker/summary-tables/ summary data], please visit the [https://globalenergymonitor.org/projects/global-solar-power-tracker/ Global Solar Power Tracker] on the Global Energy Monitor website.
+
+===References===
+<references />
+[[Category:Solar farms]]
+[[Category:Solar farms in Bulgaria]]
+[[Category:PV solar farms]]
+
+__NOTOC__
