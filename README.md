@@ -216,8 +216,9 @@ turning a committed-policy addition into an avoidance.
 companies — the generating units they own, built, supplied or financed — measured year by year
 against the grid of the country they feed (`methodology/TI_Power_Technical_Guideline_v1.0.md`,
 `data/power/output/method.md`). The unit of analysis is a generating unit from the Global Energy
-Monitor tracker; attribution is per **tier-1 role** (developer, equity owner, EPC contractor,
-equipment supplier, O&M, lender, ECA cover) with the **phase**, the **tier-2 scope** the source
+Monitor tracker; attribution is per **tier-1 role** (developer, EPC contractor, equipment
+supplier, owner's engineer, commissioning contractor, equity owner, O&M contractor, lender, ECA
+cover) with the **phase**, the **tier-2 scope** the source
 states (EPC lead, civil works, boiler supply, equity direct, buyer's credit, …) and the **share**
 as data columns, never pooled across roles; the emission factor is the destination's own where on file and the IPCC 2006
 default otherwise; the benchmark is the destination grid under S1 (observed trend) and S2

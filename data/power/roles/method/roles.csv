@@ -23,3 +23,8 @@ loan_unspecified,lender,finance,debt_share,"Named as lending to or financing the
 insurance_cover,eca_cover,finance,cover_share,Insured the commercial lenders' loans
 guarantee,eca_cover,finance,cover_share,Guaranteed the project's debt
 cover_unspecified,eca_cover,finance,cover_share,"Named as covering or guaranteeing the debt, without the instrument being clear"
+lease_finance,lender,finance,none,"Owns the plant as lessor under a finance lease and transfers it to the offtaker at the end of the lease; the offtaker operates it"
+construction_supervision,owners_engineer,construction,none,"Owner's engineer: design review, bid support and construction supervision for the project owner"
+technical_advisory,owners_engineer,construction,none,"Technical advisory contract with the project company covering construction management or operating know-how"
+commissioning_service,commissioning_contractor,construction,none,"Commissioned the plant under a service contract, without holding the EPC contract"
+maintenance_support,om_contractor,operation,contract_share,"Provides plant maintenance or technical support to the operator, short of holding the full O&M contract"

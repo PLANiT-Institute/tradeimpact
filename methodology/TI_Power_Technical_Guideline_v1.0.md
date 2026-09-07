@@ -152,8 +152,8 @@ role, three levels of that role and the share:
 | level | symbol | values |
 |---|---|---|
 | phase | *φ* | development, construction, investment, operation, finance |
-| tier-1 role | *ρ* | developer, EPC contractor, equipment supplier, equity owner, O&M contractor, lender, ECA cover |
-| tier-2 scope | *σ* | the scope as the source states it: EPC lead, EPC consortium member, civil works, port works, balance of plant, boiler supply, steam or gas turbine supply, generator supply, equity direct, equity through a parent, O&M contract, operator of record, project loan, buyer's credit, insurance cover, guarantee — or a *scope not stated* key where the source names the tier-1 role only |
+| tier-1 role | *ρ* | developer, EPC contractor, equipment supplier, owner's engineer, commissioning contractor, equity owner, O&M contractor, lender, ECA cover |
+| tier-2 scope | *σ* | the scope as the source states it: EPC lead, EPC consortium member, civil works, port works, balance of plant, boiler supply, steam or gas turbine supply, generator supply, equity direct, equity through a parent, O&M contract, maintenance support, operator of record, construction supervision, technical advisory, commissioning service, project loan, buyer's credit, finance lease, insurance cover, guarantee — or a *scope not stated* key where the source names the tier-1 role only |
 
 with the **share** *s* the firm carried (equity fraction, contract fraction, scope fraction, debt
 fraction), each with the page it was read from.

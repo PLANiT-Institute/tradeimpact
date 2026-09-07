@@ -87,16 +87,8 @@ G100000910908,Van Gogh Windpark,NL,wind,operating,no start year or capacity in t
 G100001051109,South Taranaki Bight (Parkwind) offshore wind farm,NZ,wind,announced,no start year or capacity in the tracker
 G100001051112,Taranaki Bight offshore wind farm,NZ,wind,announced,no start year or capacity in the tracker
 G100000411259,Aboitiz Cebu LNG power station,PH,gas,cancelled,status cancelled: never built
-G100001053578,Ilijan power station,PH,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
-G100001053579,Ilijan power station,PH,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
-G100001053580,Ilijan power station,PH,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
-G100001053581,Ilijan power station,PH,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
-G100001053582,Ilijan power station,PH,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
-G100001053583,Ilijan power station,PH,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
 G100000105677,KEPCO Subic Bay power station,PH,coal,cancelled,status cancelled: never built
 G100000405948,Lloyds Energy power station,PH,gas,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
-G100000107174,Naga power station,PH,coal,cancelled,status cancelled: never built
-G100000107175,Naga power station,PH,coal,cancelled,status cancelled: never built
 G100000107750,Panay power plant (Kepco),PH,coal,cancelled,status cancelled: never built
 G100000114104,Panay power plant (Kepco),PH,coal,cancelled,status cancelled: never built
 G100000113917,Sual KEPCO Power Station,PH,coal,cancelled,status cancelled: never built
@@ -142,10 +134,6 @@ G100000106394,Long An power station,VN,coal,cancelled,status cancelled: never bu
 G100000408645,Phu My 3.1 Thermal power station,VN,gas,cancelled,status cancelled: never built
 G100000113291,Quang Tri power station,VN,coal,cancelled,status cancelled: never built
 G100000113292,Quang Tri power station,VN,coal,cancelled,status cancelled: never built
-G100000109516,Song Hau Thermal Power Plant,VN,coal,shelved,status shelved: never built
-G100000109517,Song Hau Thermal Power Plant,VN,coal,shelved,status shelved: never built
-G100000109518,Song Hau Thermal Power Plant,VN,coal,cancelled,status cancelled: never built
-G100000109519,Song Hau Thermal Power Plant,VN,coal,cancelled,status cancelled: never built
 G100000109920,Tan Thanh power station,VN,coal,cancelled,status cancelled: never built
 G100000109921,Tan Thanh power station,VN,coal,cancelled,status cancelled: never built
 G100000109922,Tan Thanh power station,VN,coal,cancelled,status cancelled: never built
@@ -154,8 +142,6 @@ G100000110051,Than Bac Lieu power station,VN,coal,cancelled,status cancelled: ne
 G100000110052,Than Bac Lieu power station,VN,coal,cancelled,status cancelled: never built
 G100000406009,Van Phong Combined Cycle power station,VN,gas,cancelled,status cancelled: never built
 G100000406010,Van Phong Combined Cycle power station,VN,gas,cancelled,status cancelled: never built
-G100000110554,Van Phong power station,VN,coal,cancelled,status cancelled: never built
-G100000110555,Van Phong power station,VN,coal,cancelled,status cancelled: never built
 G100000407264,Richards Bay (Mhlathuze Energy) power station,ZA,gas,shelved,status shelved: never built
 G100000800262,Mongu solar farm,ZM,solar,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
 G100000800341,Sesheke solar farm,ZM,solar,shelved - inferred 2 y,status shelved - inferred 2 y: never built

@@ -365,6 +365,40 @@ def test_company_register_rejects_a_row_whose_page_is_not_on_disk() -> None:
     assert ir.validate([unsourced_share], vocab, companies, pages)
 
 
+def test_a_register_quote_must_be_the_pages_own_words(tmp_path: Path) -> None:
+    """A paraphrase, an invented sentence or a station-level key is rejected."""
+    page = tmp_path / "release.html"
+    page.write_text(
+        "<html><body><p>Sumitomo Corporation recently commenced construction in Vietnam on "
+        "the Van Phong 1 coal-fired power project through its wholly-owned subsidiary.</p>"
+        "</body></html>"
+    )
+    vocab = {v["role_tier2"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
+    companies = {c["company_id"]: c for c in read(DATA / "companies" / "method" / "companies.csv")}
+    pages = {"release": {"url": "https://example.org/r", "file": "release.html"}}
+    good = {
+        "company_id": "sumitomo_corp", "gem_unit_id": "G1", "gem_location_id": "",
+        "plant_name": "Van Phong", "country": "VN", "role_tier2": "equity_direct", "share": "",
+        "from_year": "", "to_year": "", "role_as_stated": "wholly owned subsidiary",
+        "role_source_key": "release", "role_source_url": "https://example.org/r",
+        "role_quote": "commenced construction in Vietnam on the Van Phong 1 coal-fired power "
+        "project through its wholly-owned subsidiary",
+        "share_source_key": "", "share_source_url": "", "share_quote": "",
+        "accessed_date": "2026-09-07", "note": "",
+    }  # fmt: skip
+    assert ir.validate([good], vocab, companies, pages, page_dir=tmp_path) == []
+    elided = {**good, "role_quote": "Sumitomo Corporation ... its wholly-owned subsidiary"}
+    assert ir.validate([elided], vocab, companies, pages, page_dir=tmp_path) == []
+    paraphrase = {**good, "role_quote": "Sumitomo began building the Van Phong 1 coal plant"}
+    problems = ir.validate([paraphrase], vocab, companies, pages, page_dir=tmp_path)
+    assert any("not in release.html" in m for m in problems)
+    station_level = {**good, "gem_unit_id": "", "gem_location_id": "L1"}
+    assert any(
+        "needs gem_unit_id" in m
+        for m in ir.validate([station_level], vocab, companies, pages, page_dir=tmp_path)
+    )
+
+
 def test_merge_prefers_sourced_rows_and_drops_domestic_ones() -> None:
     """Register beats company_ir beats tracker beats wiki, per company x plant x tier-1 role."""
     companies = {c["company_id"]: c for c in read(DATA / "companies" / "method" / "companies.csv")}

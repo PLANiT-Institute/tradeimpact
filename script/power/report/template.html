@@ -252,11 +252,11 @@ const FUELS = ['coal', 'gas', 'oil', 'nuclear', 'hydro', 'wind', 'solar', 'bioen
 const FUEL_COLOR = Object.fromEntries(FUELS.map((f) => [f, 'var(--' + f + ')']));
 const STATUS_GROUPS = {operating: ['operating', 'mothballed'], planned: ['construction', 'pre-construction', 'announced'], retired: ['retired']};
 const STATUS_LABEL = {operating: 'operating', planned: 'construction & planned', retired: 'retired'};
-const ROLE_LABEL = {developer: 'developer', equity_owner: 'equity owner', epc_contractor: 'EPC contractor', equipment_supplier: 'equipment supplier', om_contractor: 'O&M contractor', lender: 'lender', eca_cover: 'ECA cover'};
+const ROLE_LABEL = {developer: 'developer', equity_owner: 'equity owner', epc_contractor: 'EPC contractor', equipment_supplier: 'equipment supplier', owners_engineer: "owner's engineer", commissioning_contractor: 'commissioning contractor', om_contractor: 'O&M contractor', lender: 'lender', eca_cover: 'ECA cover'};
 const PHASES = ['development', 'construction', 'investment', 'operation', 'finance'];
 /* Tier-2 scopes arrive pipe-separated; *_unspecified means the source named the tier-1 role only. */
 const scopeText = (v) => !v ? '&mdash;' : String(v).split('|').map((t) => esc(t.replace(/_/g, ' ').replace(' unspecified', ' (scope not stated)'))).join(', ');
-const PHASE_ROLES = {development: ['developer'], construction: ['epc_contractor', 'equipment_supplier'], investment: ['equity_owner'], operation: ['om_contractor'], finance: ['lender', 'eca_cover']};
+const PHASE_ROLES = {development: ['developer'], construction: ['epc_contractor', 'equipment_supplier', 'owners_engineer', 'commissioning_contractor'], investment: ['equity_owner'], operation: ['om_contractor'], finance: ['lender', 'eca_cover']};
 const PHASE_COLOR = {development: 'var(--phev)', construction: 'var(--gas)', investment: 'var(--accent)', operation: 'var(--wind)', finance: 'var(--nuclear)'};
 const ORIGIN_LABEL = {register: 'hand register', company_ir: 'company disclosure', gem: 'tracker field', gem_wiki: 'wiki sentence'};
 const HOME_NAME = {KR: 'Korea', JP: 'Japan'};

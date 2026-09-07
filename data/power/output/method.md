@@ -24,9 +24,9 @@ by a company ([`roles`](../roles/method/method.md)). The result set therefore ha
 
 1. **Attribution is per role, never pooled, in five separate phases.** A unit's trade impact is
    attributed separately to each role, and the five phases are kept apart:
-   **development** (developer), **construction** (EPC contractor, equipment supplier),
-   **investment** (equity owner), **operation** (O&M contractor) and **finance** (lender, ECA
-   cover). Equity is investment, not operation: a utility that both owns and runs a plant carries
+   **development** (developer), **construction** (EPC contractor, equipment supplier, owner's
+   engineer, commissioning contractor), **investment** (equity owner), **operation** (O&M
+   contractor) and **finance** (lender, ECA cover, finance lessor). Equity is investment, not operation: a utility that both owns and runs a plant carries
    two rows, one in each phase (project lead, 2026-09-07). Roles carry three levels: the phase,
    the **tier-1 role** the unit is attributed at, and the **tier-2 scope** as the source states it
    (`epc_lead`, `epc_civil_works`, `boiler_supply`, `equity_direct`, `buyers_credit`, … or a
@@ -54,7 +54,7 @@ by a company ([`roles`](../roles/method/method.md)). The result set therefore ha
 3. **Roles come from four sources, in order of standing** ([`roles`](../roles/method/method.md)):
    the hand register; the companies' own disclosures and project pages, each row citing the page
    on disk that states the role and, separately, the page that states the share, with the sentence
-   quoted (tier A); the tracker's own `Owner`, `Parent` and `Operator` fields (tier B); and the GEM
+   quoted, and every quote checked against the saved page's own text (tier A); the tracker's own `Owner`, `Parent` and `Operator` fields (tier B); and the GEM
    wiki sentences read by keyword (tier C, and always a `*_unspecified` scope — a narrative
    sentence supports the group, not the scope). A sourced reading always replaces a machine one for
    the same company × plant × tier-1 role, and the origins that agree with it are listed in
@@ -173,8 +173,8 @@ are tabulated in [`script/power/README.md`](../../../script/power/README.md).
 
 ## Status (2026-09-07)
 
-The pipeline runs end to end on the August 2026 tracker (v3). 735 overseas units in
-71 countries are in scope — 575 carry an S1 result and 470 an S2 one, on the
+The pipeline runs end to end on the August 2026 tracker (v3). 704 overseas units in
+71 countries are in scope — 558 carry an S1 result and 461 an S2 one, on the
 43 of 71 destinations whose latest NDC states a level a pathway can be read from. Four of
 those units (Vung Ang 2 Phase 2 Units 1 and 2, Banten Suralaya Units 9 and 10, the Jawa 9 and 10
 project) are in scope only because the company register names them: the tracker's owner field

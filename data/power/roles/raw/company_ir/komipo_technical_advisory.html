@@ -1,0 +1,4706 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	
+
+
+
+
+
+<title>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			한국중부발전(주)
+		
+	
+</title>
+	
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://www.komipo.co.kr:443/main_new4/contents/images/favicon.ico">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<link rel="stylesheet" type="text/css" href="/main_new4/contents/ko23_css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="/main_new4/contents/ko23_css/slick.css">
+    <script>
+  	//브라우저별 css 다르게 먹이기
+	if((navigator.userAgent).indexOf("rv:") > -1){ //익스플로러
+		document.write('<link rel="stylesheet" type="text/css" href="/main_new4/contents/ko23_css/ko23_ie_sub.css">');
+	} else { //익스플로러 외 사이트
+		document.write('<link rel="stylesheet" type="text/css" href="/main_new4/contents/ko23_css/ko23_sub.css">');
+		document.write('<link rel="stylesheet" type="text/css" href="/main_new4/contents/ko23_css/ko23_rwd_sub.css">');
+	}
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<script src="/main_new4/contents/ko23_js/jquery-1.11.3.min.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9"></script>
+	
+	<script src="/main_new4/contents/ko23_js/jquery-ui.min.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9"></script>
+	<script>
+  	//브라우저별 js 다르게 먹이기
+	if((navigator.userAgent).indexOf("rv:") > -1){ //익스플로러
+		document.write('<script src=\"/main_new4/contents/ko23_js/ko23_ie_common.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9\"><\/script>');
+	} else { //익스플로러 외 사이트
+		document.write('<script src=\"/main_new4/contents/ko23_js/ko23_common.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9\"><\/script>');
+	}
+    </script>
+	<script src="/main_new4/contents/ko23_js/ko23_sub.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9"></script>
+	<script src="/main_new4/contents/ko23_js/slick.min.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9"></script>
+	
+	<!--  기존 스크립트(choose단 삭제) -->
+	<script src="/js/selectivizr-min.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9"></script><!-- IE 하위버젼 nth-child요소 적용 -->
+	<script src="/js/jquery.wookmark.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9"></script>
+	<script src="/js/fr/cm.front.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9"></script>
+	<script src="/js/scrolloverflow.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9"></script>
+	<script src="/js/mobileIcon.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9"></script>
+	<script src="/js/fr/shared.js"></script>
+	<!--[if lt IE 9]>
+	<script src="/js/html5shiv.min.js">
+	<script src="/js/html5shiv-printshiv.min.js">
+	</script>
+	<![endif]-->
+
+	<link href="/main_new4/contents/ko23_js/print-preview.css?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9" rel="stylesheet" type="text/css" printpreview="print"/>
+	<script src="/main_new4/contents/ko23_js/jquery.print-preview.js?cb=542d7a9b-8e84-48a4-af8d-75d1650ab6f9" type="text/javascript"></script>
+	
+	
+</head>
+    
+<body id="top_body_id">
+	<div title="스킵메뉴" class="skipMenu">
+        <a href="#gnbmenu"><span>주메뉴 바로가기</span></a>
+        <a href="#content"><span>본문 바로가기</span></a>
+        <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+	
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script  src="/js/search/add.js"></script>
+<script  src="/js/search/search.js"></script>
+<script  src="/js/search/xmlhttp.js"></script>
+<!-- $cm 때문에 추가 -->
+<script  src="/js/ko23/cm.front.js"></script>
+
+<script>
+//MIR-Suggester Java Script
+function codesearch(query,temp1,temp2,temp3,temp4,temp5){
+	var fnm=document.frSearch;
+	fnm.Keyword2.value=query;
+	fnm.submit();
+}
+
+var emod;                           //이벤트 모델을 저장할 변수
+
+var inputbox_id = "Keyword2";          // 입력창의 ID를 지정합니다.
+var display_id  = "suggestDiv2";     // 자동완성단어들을 출력할 Layer ID를 지정합니다.
+var form_id     = "frSearch";       // 자동완성단어에 의해 검색하게되는 Form의 ID
+var line_id     = "suggestions2";    // 추천된 단어별 라인 ID
+
+var inputbox_elem;
+var display_elem;
+var form_elem;
+var temp_key;
+var FireFoxTimer=null;
+
+var selectedIndex=-1;
+var useTimer=null;
+var useLock=false;
+
+
+//=============================================================================
+// 추천창에서 현재 선택된 라인을 선택하거나 선택안한 것으로 표시합니다.
+// 마우스 오버 되었거나 키보드 상하 키로 선택되었을 때 호출 됩니다.
+//=============================================================================
+function updateSelection(n) {
+	var suggestions=document.getElementsByName('asgst2');
+	if ( selectedIndex >= 0 ) {
+		var line = suggestions[selectedIndex];
+		if ( line ){
+			line.style.backgroundColor = "#ffffff";
+			line.style.color = "";
+		}
+	}
+	selectedIndex = n;
+	var line = suggestions[selectedIndex];
+	if ( line ){
+		line.style.backgroundColor = '#f3f3f3';
+	}
+}
+
+//=============================================================================
+// 추천창에서 위방향키를 선택한 경우 실행
+//=============================================================================
+function moveSelectionUp() {
+	var suggestions=document.getElementsByName(line_id);
+	if ( selectedIndex > 0 ) {
+		updateSelection(selectedIndex - 1);
+		var line = suggestions[selectedIndex];
+		inputbox_elem.value=line.title;
+	}
+}
+
+//=============================================================================
+// 추천창에서 아래방향키를 선택한 경우 실행
+//=============================================================================
+function moveSelectionDown() {
+	var suggestions=document.getElementsByName(line_id);
+	if ( selectedIndex < (suggestions.length - 1)  ) {
+		updateSelection(selectedIndex + 1);
+		var line = suggestions[selectedIndex];
+		inputbox_elem.value=line.title;
+	}
+}
+
+//=============================================================================
+// OnKeydown Event Handler
+// 키입력을 검사하고 상하키처리를 하며 검색어를 suggest에 전송한다.
+//=============================================================================
+function keywordKeyDown(e)
+{
+	var keyCode = -1;
+
+	// 20초간 입력이 없으면 열렸던 추천 창을 닫는다.
+	if(useTimer!=null) clearTimeout(useTimer);
+	useTimer=setTimeout(hiddenSearchKeywordResult, 20000);
+	if(FireFoxTimer!=null) clearTimeout(FireFoxTimer);
+
+	// 사용자가 입력한 키값을 얻어 온다.
+	if(window.event) {
+		keyCode = window.event.keyCode;
+	} else {
+		keyCode = e.which;
+	}
+	// 키값에 따른 처리
+	if(keyCode ==  9)   return;     // Tab   키 무시
+	if(keyCode == 16)   return;     // Shift 키 무시
+	if(keyCode == 16)   return;     // Ctrl  키 무시
+	if(keyCode == 18)   return;     // Alt   키 무시
+	if(keyCode == 45)   return;     // Ins   키 무시
+	if(keyCode == 46)   return;     // Del   키 무시
+	if(keyCode == 33)   return;     // PgUp  키 무시
+	if(keyCode == 34)   return;     // PgDn  키 무시
+	if(keyCode == 35)   return;     // End   키 무시
+	if(keyCode == 36)   return;     // Home  키 무시
+	if(keyCode == 13)   return;     // Enter 키 무시
+	if(keyCode == 38) {           	// Up	   키 처리
+		moveSelectionUp();
+		return;
+	}
+	if(keyCode == 40) {	            // Down  키 처리
+		moveSelectionDown();
+		return;
+	}
+
+	if(keyCode >= 37 && keyCode <= 40)   return;   // 그외 방향키 무시
+	// FireFox에서 한글 입력시 229값이 들어온다.
+	if(keyCode == 229) FirefoxKeyDown();
+	selectedIndex=-1;
+	// Keydown 이벤트 발생 시점에는 아직 Input Box에 사용자가 입력한 키 값이
+	// 설정되지 않았기 때문에 브라우저가 이벤트에 반응하여 값을 설정할때
+	// 까지 잠시 기다린다.
+	setTimeout('submitSearchKeyword()', 250);
+}
+
+//=============================================================================
+// FireFox에서 한글 처리를 위한 함수
+//=============================================================================
+function FirefoxKeyDown()
+{
+	if (temp_key != inputbox_elem.title) {
+		setTimeout('submitSearchKeyword()', 250);
+		temp_key = inputbox_elem.title;
+	}
+	FireFoxTimer = setTimeout("FirefoxKeyDown()", 10);
+}
+
+//=============================================================================
+// OnLoad Event Handler
+// 브라우져의 이벤트 모델을 알아내고 입력창에 keydown 이벤트를 바인드합니다.
+//=============================================================================
+function onloadH(e)
+{
+	inputbox_elem   = document.getElementById(inputbox_id);
+	display_elem    = document.getElementById(display_id);
+	form_elem       = document.getElementById(form_id);
+
+	emod = (e) ? (e.eventPhase) ? "W3C" : "NN4" : (window.event) ? "IE4+" : "unknown";
+	switch (emod)
+	{
+	case "W3C":
+		inputbox_elem.addEventListener("keydown", keywordKeyDown, true);
+		break;
+	case "NN4":
+		document.onkeydown = keywordKeyDown;
+		break;
+	case "IE4+":
+		inputbox_elem.onkeydown = keywordKeyDown;
+		break;
+	}
+	return true;
+}
+
+//=============================================================================
+// OnLoad Event Binding
+//=============================================================================
+/* window.onload = onloadH; */
+
+//=============================================================================
+// 검색키워드를 Suggester에 전송하여 화면을 만들어 냅니다.
+//=============================================================================
+function submitSearchKeyword()
+{
+	var url = '/fr/search/sgst.do';
+	var queryString = formData2QueryString(form_elem);
+	var resultProcessMethod = 'viewSearchKeywordResult';
+	if(inputbox_elem.value.length==0){
+		viewSearchKeywordResult("");
+		return;
+	}
+	if(useLock==false) {
+		xmlHttpPost(url, queryString, resultProcessMethod);
+	}
+}
+
+//=============================================================================
+// Suggest Layer창에 결과를 출력하여 표시합니다.
+//=============================================================================
+function viewSearchKeywordResult(result)
+{
+	if(result == "") {
+		var searchKeywordDiv = display_elem;
+		searchKeywordDiv.innerHTML = "";
+		searchKeywordDiv.style.visibility = "hidden";
+	} else {
+		result=decodeURIComponent(result);
+		var jarr=JSON.parse(result);
+
+		var view = '';
+
+		for(var i=0;i<jarr.length;i++){
+			var q=decodeURIComponent(jarr[i].query);
+			var high=decodeURIComponent(jarr[i].high);
+			view+="<li value='"+q+"' title='"+q+"' name='suggestions2' id='suggestions2' onMouseOver='updateSelection("+i+")' onClick='selectSubmit("+i+")'><a name='asgst2' href='javascript:codesearch('"+q+"','','','','0','');' >"+high+"</a></li>";
+		}
+
+		var searchKeywordDiv = display_elem;
+// 		view = view.replace("<", "&lt;");
+// 		view = view.replace(">", "&gt;");
+// 		view = view.replace("&", "&amp;");
+// 		view = view.replace("\"", "&quot;");
+// 		searchKeywordDiv.innerHTML = view;
+		searchKeywordDiv.style.visibility = "visible";
+	}
+	if(useLock==true) useLock=false;
+}
+
+//=============================================================================
+// Suggest Layer창을 감춥니다.
+//=============================================================================
+function hiddenSearchKeywordResult()
+{
+	var searchKeywordDiv = display_elem;
+	searchKeywordDiv.innerHTML = "";
+	searchKeywordDiv.style.visibility = "hidden";
+	if(useTimer!=null) {
+		clearTimeout(useTimer);
+		useTimer=null;
+	}
+}
+
+//=============================================================================
+// Suggest Layer창에 한 라인을 클릭했을때 호출되는 함수입니다.
+// 검색창에 현재 검색어를 입력하고 검색처리합니다.
+//=============================================================================
+function selectSubmit(n)
+{
+	var suggestions=document.getElementsByName(line_id);
+	var span=suggestions[selectedIndex];
+	inputbox_elem.value=span.title;
+	//alert('검색처리');
+	form_elem.submit();
+}
+
+//최근검색어
+var getNewSearchKeyword = function() {
+	var url = "/fr/search/getNewSearchKeyword.json";
+	url = encodeURI(url);
+
+	$.getJSON(url, function(result) {
+			if(typeof(result.myQuery) == "object") {
+				$.each(result.myQuery, function(intIndex, StrValue) {
+					var thisData = result.myQuery[intIndex];
+
+					var objLi = $("<li/>");
+					var objHref = "javascript:codesearch('"+thisData.myquery+"','total','','','0','score');"
+					var objA = $("<a/>").attr("href",objHref).html(thisData.myquery);
+
+					objLi.append(objA);
+					$("#newKeyword").append(objLi);
+				});
+			}
+		});
+	}
+
+//인기검색어
+var getFavoriteQuery = function() {
+	var url = "/fr/search/getFavoriteQuery.json";
+	url = encodeURI(url);
+
+	$.getJSON(url, function(result) {
+			if(typeof(result.ranking) == "object") {
+				$.each(result.ranking, function(intIndex, StrValue) {
+					var thisData = result.ranking[intIndex];
+						if(thisData.ranking != ""){
+
+						var objLi = $("<li/>");
+						var objHref = "javascript:codesearch('"+thisData.ranking+"','total','','','0','score');"
+						var objA = $("<a/>").attr("href",objHref).html(thisData.ranking);
+
+						objLi.append(objA);
+						$("#favoriteQuery").append(objLi);
+					}
+				});
+			}
+		});
+	}
+
+//많이 찾는 메뉴
+var getPopularMenu = function() {
+	var url = "/fr/search/getPopularMenu.json";
+	url = encodeURI(url);
+
+	$.getJSON(url, function(result) {
+			if(typeof(result.popmenu) == "object") {
+				$.each(result.popmenu, function(intIndex, StrValue) {
+					var thisData = result.popmenu[intIndex];
+
+					var objLi = $("<li/>");
+					var objHref = thisData.linkurl;
+					var objA = $("<a/>").attr("href",objHref).attr("target","_balnk").html(thisData.menu);
+
+					objLi.append(objA);
+					$("#popularMenu").append(objLi);
+				});
+			}
+		});
+	}
+
+var gnb = {
+	goPage : function(menuDivn, linkUrl, menuCd){
+		$cm.goPage(menuDivn, linkUrl);
+	}
+}
+
+//강조키워드
+function selectTab(tab){
+	$(".highlight").each(function(){
+		var users = $(this).data("users");
+		if(users != 'undefined' && users != '') {
+			var usersArr = users.split(",");
+			var target = false;
+			$.each(usersArr, function(key, user){
+				if(user != tab){
+				}else {
+					target = true;
+					return false;
+				}
+    		});
+
+			if(target == true){
+				$(this).attr({"class" : "highlight current","title" : "고객별 맞춤 콘텐츠 입니다."	});
+
+			}else{
+				$(this).attr({"class" : "highlight","title" : ""});
+			}
+		}else{
+			$(this).attr({"class" : "highlight","title" : ""});
+		}
+	});
+}
+
+//통합검색닫기
+function CommonSearchClose(){
+	$(".commonSearch .searchBtn").attr("title","통합검색 레이어 열림");
+	$(".commonSearch .searchBtn").parent().removeClass("on");
+	$(".header_bg_box").removeClass("on");
+	$(".gnb_close_bg").removeClass("gnb_on");
+};
+
+//통합검색열기
+function CommonSearchOpen(){
+	var windowWidth = $(window).width();
+	if(windowWidth > 1139) {
+		if($(".commonSearch .searchBtn").parent().hasClass("on")){
+			CommonSearchClose();
+		} else {
+			$(".commonSearch .searchBtn").attr("title","통합검색 레이어 닫힘");
+			$(".commonSearch .searchBtn").parent().addClass("on");
+			var commonSearchHeight = $(".commonSearch_open_box").outerHeight();
+			$(".header_bg_box").removeClass("gnb_on").addClass("on");
+			$(".header_bg_box").css("height",commonSearchHeight);
+			$(".gnb_cont").hide();
+			$(".pc .gnb_depth1 > li").removeClass("current");
+			$(".gnb_close_bg").addClass("gnb_on");
+		}
+	} else {
+		//링크붙여주세요
+		location.href= "/fr/search/search.do";
+	}
+
+};
+
+//gnb 닫기 PC / Tablet
+$(document).on({
+	click:function(){
+		$(".pc .gnb_depth1 > li").removeClass("current");
+		$(".header_bg_box").removeClass("gnb_on");
+		$(".gnb_close_bg").removeClass("gnb_on");
+		$(".commonSearch .searchBtn").parent().removeClass("on");
+		$(".header_bg_box").removeClass("on");
+		$(this).next(".gnb_cont").hide();
+	}
+}, ".gnbArea.pc .btn_gnb_close, .gnb_close_bg");
+
+
+$(document).on({
+    click:function(){
+		var bgHeight = $("body").outerHeight();
+		if ($(this).hasClass("on")){
+			$("body").css("overflow","visible");
+			$(this).removeClass("on");
+			$(".gnbArea.mobile .gnb_cont").hide();
+			$(".gnbArea.mobile .btn_gnbToggle_close").hide();
+			$(this).attr("title","GNB 메뉴 레이어 열림");
+		} else {
+			$("body").css("overflow","hidden");
+			$(".gnbArea.mobile").css({
+				"height" : bgHeight,
+				"width" : "100%",
+			});
+			$(this).addClass("on");
+			$(".gnbArea.mobile .gnb_cont").show();
+			$(".gnbArea.mobile .btn_gnbToggle_close").show();
+			$(this).attr("title","GNB 메뉴 레이어 닫힘");
+		}
+    }
+}, ".gnbArea.mobile .gnbToggle");
+//gnb 뎁스열기
+$(document).on({
+    click:function(){
+		if($(this).parent().hasClass("current")){
+
+			$(this).parent().removeClass("current");
+			$(this).next().hide();
+		}else{
+			if($(this).hasClass("depth1")){
+				$(".gnbArea.mobile .gnb_cont li").removeClass("current");
+			}else if($(this).hasClass("depth2")){
+				$(".gnbArea.mobile .gnb_depth2 li").removeClass("current");
+			};
+			$(this).parent().addClass("current");
+			$(this).next().show();
+		}
+    }
+}, ".gnbArea.mobile li > button");
+// gnb 닫기 Tablet / Mobile
+$(document).on({
+    click:function(){
+    	$(this).hide();
+    	$("body").css("overflow","visible");
+		$(".gnbArea.mobile").css({
+			"height" : "auto",
+			"width" : "auto",
+		});
+		$(".gnbArea.mobile .gnbToggle").removeClass("on");
+		$(".gnbArea.mobile .gnb_cont").hide();
+		$(".gnbArea.mobile .gnbToggle").attr("title","GNB 메뉴 레이어 열림");
+    }
+}, ".gnbArea.mobile .btn_gnbToggle_close");
+$(document).ready(function(){
+	//gnb 구현  PC / Tablet : 포커스 이동 추가
+	$(".pc .gnb_depth2 > li:first-child").addClass("current");
+	$(".pc .gnb_depth1 .depth1").on('mouseenter focus', function(){
+		$(this).parent().siblings().removeClass("current");
+		$(this).parent().addClass("current");
+		$(this).next(".gnb_cont").show();
+		$(this).parent().find(".gnb_depth2 li").removeClass("current");
+		$(this).parent().find(".gnb_depth2 li:eq(0)").addClass("current");
+		//$(this).next(".gnb_cont").append(btnGnbClose);
+
+		var gnbHeight = $(this).next(".gnb_cont").outerHeight();
+		$(".header_bg_box").addClass("gnb_on");
+		$(".header_bg_box").css("height",gnbHeight);
+		$(".gnb_close_bg").addClass("gnb_on");
+
+		//통합검색이 열려있을경우
+		if($(".commonSearch").hasClass("on")){
+			CommonSearchClose();
+		}
+
+		if ($(this).parent().hasClass("current")){
+			$(this).parent().siblings(":not('.current')").find(".gnb_cont").hide();
+		}
+
+	});
+	//gnb depth2 PC / Tablet
+	$(".pc .gnb_depth2 .depth2").on('mouseenter focus', function(){
+		if ($(this).parent().hasClass("current")){
+			//아무일도 일어나지 않음
+		} else {
+			$(this).parent().siblings().removeClass("current");
+			$(this).parent().addClass("current");
+			$(this).next(".gnb_depth3").show();
+		}
+	});
+
+	//통합검색열기 선언
+	$(".commonSearch .searchBtn").on({
+		click : function(){CommonSearchOpen();},
+		focusin : function(){CommonSearchOpen();}
+	});
+
+	//통합검색닫기 선언
+	$(".commonSearch .searchBtnClose").on({
+		click : function(){CommonSearchClose();},
+		focusout : function(){CommonSearchClose();}
+	});
+
+	$(".commonSearch_input input").focus(function(){
+		$(this).val("");
+	}).blur(function(){
+		if($(this).val() == ""){
+			$(this).val("검색어를 입력하세요");
+		}
+	});
+
+	//전체메뉴 레이어 열기 - 모바일없음
+	$(".menuOpen").on({
+		click : function(){
+			//gnb가 열려있을경우
+			$(".header_bg_box").removeClass("on");
+			$(".header_bg_box").removeClass("gnb_on");
+			$(".pc .gnb_depth1 > li").removeClass("current");
+			$(".gnb_cont").hide();
+
+			//통합검색이 열려있을경우
+			CommonSearchClose();
+
+			$(this).addClass("on");
+		}
+	});
+
+	//전체메뉴닫기
+	$(".btn_generalMenu_close").on({
+		click : function(){
+			$(".menuOpen").removeClass("on");
+		}
+	});
+});
+</script>
+
+
+
+
+<header id="header">
+	<div class="header_top">
+		<div class="wrap">
+			<ul class="quick_link">
+				<li><a href="/fr/reserve/apply/main.do?mnCd=FN100402&pageSize=10" class="apply">견학신청</a></li>
+				<li><a href="https://visit.komipo.co.kr:8070" target="_blank"
+					title="한국중부발전 출입신청 새창 열림">출입신청</a></li>
+				<li><a href="https://mail.komipo.co.kr" target="_blank"
+					title="중부인메일 새창 열림">중부메일</a></li>
+				<li><a href="https://newrec.komipo.co.kr/service/main" target="_blank" title ="RPS·REC 새창 열림">RPS·REC</a></li>
+				<li><a href="https://www.komipo.co.kr/kor/content/493/main.do?mnCd=FN091501" title ="KOLAS분석의뢰">KOLAS분석의뢰</a></li>
+				<li><a href="/fr/content/128/main.do?mnCd=FN130201" style="color:#1864cb; font-weight:500;">개인정보처리방침</a></li>
+			</ul>
+			<!-- .family_pop(전력사이트 + 언어 + 팝업) -->
+			<ul class="family_pop">
+				<li class="popup_zone"><button type="button" title="알립니다 팝업 열기">알립니다!</button>
+					<div class="popup_list pop_wrap">
+						<div class="pop_slide inner">
+							<p class="title">알립니다!</p>
+							<ul>
+							
+                        		
+                        			
+                        				
+                        					
+                        					
+                        						<li><a href="http://www.moef.go.kr/sns/2020/emgncEcnmyMtg.do" target="_blank" title="새창열림"><img src="https://www.komipo.co.kr:443/atch/getImage.do?atchFileId=FILE000000000000914620200417100408" alt="기획재정부 신속한 위기대응 및 경제 살리기 코로나19 경제지원 비상경제회의 위기대응의 중심이 되어 최선을 다하겠습니다."/></a></li>
+                        					
+                        				
+                        			
+                        				
+                        					
+                        					
+                        						<li><a href="https://www.komipo.co.kr/kor/board/BRD_000087/boardMain.do?mnCd=FN100904" target="_blank" title="새창열림"><img src="https://www.komipo.co.kr:443/atch/getImage.do?atchFileId=FILE000000000000236620171108140317" alt="정규직 전환 알림방 중부발전 비정규직의 정규직 전화에 대한 빠르고 정확한 정보를 제공합니다. 자세히보기"/></a></li>
+                        					
+                        				
+                        			
+                        		
+                        		
+                        	
+							</ul>
+						</div>
+						<button type="button" class="close_btn" title="알립니다 팝업 닫기">닫기</button>
+					</div>
+				</li>
+				<li class="lang"><button type="button" title="언어선택 열기">Language</button>
+					<ul>
+						<li><span class="on">KOREA</span></li>
+						<li><a href="/eng/main/main.do" target="_blank"
+							title="영문페이지 새창 열림">ENGLISH</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- // .family_pop(전력사이트 + 언어 + 팝업) -->
+		</div>
+	</div>
+	<div class="header_btm wrap">
+		<h1 class="logo">
+			<a title="메인페이지로 이동" href="/kor/main/main.do">KOMIPO 한국중부발전 로고</a>
+		</h1>
+		<button type="button" class="open_btn nav_open" data-name="MENU"
+			title="메뉴열기">
+			<span class="line line01"></span> <span class="line line02"></span> <span
+				class="line line03"></span>
+		</button>
+		<!-- gnbmenu -->
+
+		<nav class="gnbmenu" id="gnbmenu">
+		    <!-- gnbMenu S -->
+			<ul class="depth1">
+				<!-- 소통채널, 회사소개, 기업지원 등 대메뉴 -->
+				
+					
+						<!-- ESG경영이 아니면 -->
+							<li class="menu01 more_depth">
+							<!-- 각 대메뉴의 첫메뉴로 가기 -->
+							<a href="
+							
+							/kor/board/BRD_000035/boardMain.do?mnCd=FN010901&pageSize=10
+							
+							
+							
+							
+							
+							
+							" data-name="소통채널" >소통채널</a>
+						
+						
+					
+					<!-- 퀵 메뉴 시작 -->
+                    <div class="depth2">
+                        <div class="left_quick">
+                            <p class="title">소통채널</p>
+                            <span>한국중부발전이 공유하는 정보는<br>
+국민 여러분과의 소통 에너지입니다.</span>
+                            <!-- 퀵 메뉴 버튼  -->
+                            
+	                            
+	                            <a href="/kor/content/484/main.do?mnCd=FN011702" class="quick_menu link02">
+	                                <dl>
+	                                    <dt>신문고</dt>
+	                                    <dd>갑질 및 민원사항, 칭찬 사례 등 여러분의 의견을 듣겠습니다.</dd>
+	                                </dl>
+	                            </a>
+	                            <a href="/kor/content/136/main.do?mnCd=FN012001" class="quick_menu link03">
+	                                <dl>
+	                                    <dt>인재채용</dt>
+	                                    <dd>한국중부발전의 가장 큰 자원은 사람입니다.</dd>
+	                                </dl>
+	                            </a>
+	                            <a href="https://crm.komipo.co.kr:8281/cmsmain.do?pcode=000218&pstate=L3" target="_blank" title="에코톡 새창 열림" class="quick_menu link15">
+	                            	<dl>
+	                                    <dt>에코톡</dt>
+	                                    <dd>환경정책 제안, 환경민원 등 상시 국민의견 수렴을 통해 국민이 체감하는 환경영영을 실현합니다.</dd>
+	                                </dl>
+	                            </a>
+	                            
+	                            
+	                            
+	                            
+
+								 
+
+
+
+	                            
+	                        
+                        </div>
+                        <!-- lnb시작 -->
+						<ul>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>반부패청렴센터</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000035/boardMain.do?mnCd=FN010901','FN010901');" ><span>내부감사결과</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000036/boardMain.do?mnCd=FN010902','FN010902');" ><span>외부감사결과</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/12/main.do?mnCd=FN010903','FN010903');" ><span>부패관련 징계 현황 공개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/13/main.do?mnCd=FN010905','FN010905');" ><span>종합청렴도 평가 결과</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000131/boardMain.do?mnCd=FN010907','FN010907');" ><span>365일 생활 속 청렴 활동</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000126/boardMain.do?mnCd=FN010908','FN010908');" ><span>청렴 365 자료실</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>신고채널</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/84/main.do?mnCd=FN011701','FN011701');" ><span>레드휘슬(익명신고)</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/484/main.do?mnCd=FN011702','FN011702');" ><span>신문고(실명신고)</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/85/main.do?mnCd=FN011703','FN011703');" ><span>공익신고</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/460/main.do?mnCd=FN011704','FN011704');" ><span>이해충돌신고</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>프라이버시센터</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/445/main.do?mnCd=FN011801','FN011801');" ><span>프라이버시센터 소개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/446/main.do?mnCd=FN011802','FN011802');" ><span>개인정보 보호 정책</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/447/main.do?mnCd=FN011803','FN011803');" ><span>개인정보 보호 활동</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('PROGRAM','/kor/privacyCenter/main.do?mnCd=FN011804','FN011804');" ><span>개인정보 처리요구</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>공공데이터</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://api.komipo.co.kr:443/" target="_blank" title="새창 열림"><span>공공데이터</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/191/main.do?mnCd=FN011402','FN011402');" ><span>아이디어 공유 및 제안</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more line2 "><p>열린혁신 아이디어 발전소</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('PROGRAM','/kor/acceptance/main.do?mnCd=FN011901','FN011901');" ><span>열린혁신 아이디어 발전소</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/482/main.do?mnCd=FN011902','FN011902');" ><span>규제혁신 아이디어제안</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>인재채용</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/563/main.do?mnCd=FN012001','FN012001');" ><span>인사제도 안내</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/161/main.do?mnCd=FN012002','FN012002');" ><span>지원가이드</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000018/boardMain.do?mnCd=FN012003','FN012003');" ><span>채용문의</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000053/boardMain.do?mnCd=FN012004','FN012004');" ><span>채용공고</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000106/boardMain.do?mnCd=FN012005','FN012005');" ><span>친인척 채용인원 공개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('PROGRAM','/fr/regularWorker/apply/main.do?mnCd=FN012006','FN012006');" ><span>채용정보 알림 신청</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                        </ul>
+                    </div>
+                
+					
+						<!-- ESG경영이 아니면 -->
+							<li class=" more_depth">
+							<!-- 각 대메뉴의 첫메뉴로 가기 -->
+							<a href="
+							
+							
+							
+							
+							
+							
+							/kor/content/177/main.do?mnCd=FN140801
+							
+							" data-name="정보공개" >정보공개</a>
+						
+						
+					
+					<!-- 퀵 메뉴 시작 -->
+                    <div class="depth2">
+                        <div class="left_quick">
+                            <p class="title">정보공개</p>
+                            <span>한국중부발전이 공유하는 정보는<br>
+국민 여러분과의 소통 에너지입니다.</span>
+                            <!-- 퀵 메뉴 버튼  -->
+                            
+	                            
+	                            
+								<a href="http://www.alio.go.kr/" target="_blank" title="알리오 홈페이지 새창 열림" class="quick_menu link01">
+	                                <dl>
+	                                    <dt>알리오(ALIO)</dt>
+	                                    <dd>경영에 대한 중요한 정보를 국민에게 제공하고 있습니다.</dd>
+	                                </dl>
+	                            </a>
+	                            
+	                            
+	                            
+
+								 
+
+
+
+	                            
+	                        
+                        </div>
+                        <!-- lnb시작 -->
+						<ul>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>정보공개</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/179/main.do?mnCd=FN140801','FN140801');" ><span>정보공개제도 안내</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000064/boardMain.do?mnCd=FN140802','FN140802');" ><span>정보공개 처리기준</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/181/main.do?mnCd=FN140803','FN140803');" ><span>정보공개 담당자</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000066/boardMain.do?mnCd=FN140805','FN140805');" ><span>과거 정보목록</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://www.open.go.kr" target="_blank" title="새창 열림"><span>정보공개 청구</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000094/boardMain.do?mnCd=FN140806','FN140806');" ><span>비공개정보 세부기준</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>사전정보공표</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('PROGRAM','/fr/kor/announceInfo/main.do?mnCd=FN140901','FN140901');" ><span>사전정보공표</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>경영공시 개요</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/6/main.do?mnCd=FN141101','FN141101');" ><span>경영공시 안내</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/7/main.do?mnCd=FN141102','FN141102');" ><span>공시기준</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>경영공시</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/489/main.do?mnCd=FN141201','FN141201');" ><span>통합공시(ALIO)</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/518/main.do?mnCd=FN141202','FN141202');" ><span>경영공시(기관)</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>행정정보공표</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('PROGRAM','/kor/board/BRD_000065/boardMain.do?mnCd=FN141301','FN141301');" ><span>업무추진비</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000056/boardMain.do?mnCd=FN141302','FN141302');" ><span>사규</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('PROGRAM','/fr/regulations/main.do?mnCd=FN141303','FN141303');" ><span>사규 제·개정 예고</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               			<li ><a href="/fr/kor/announceInfo/main.do?schTabCd=KH041005&mnCd=FN141312"><span>계약정보공개</span></a></li>
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000039/boardMain.do?mnCd=FN141305','FN141305');" ><span>해외출장 및 연수보고</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000041/boardMain.do?mnCd=FN141306','FN141306');" ><span>상품권 관리내역</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000042/boardMain.do?mnCd=FN141307','FN141307');" ><span>인건비 예산과 집행현황</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000043/boardMain.do?mnCd=FN141308','FN141308');" ><span>복지시설현황</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000052/boardMain.do?mnCd=FN141309','FN141309');" ><span>친환경상품 구매실적/이행계획</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000112/boardMain.do?mnCd=FN141310','FN141310');" ><span>협력기업 하도급 현황</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000133/boardMain.do?mnCd=FN141311','FN141311');" ><span>그 밖에 공공기관의 경영에 관한 중요한 사항으로서 기획재정부장관이 공시하도록 요청한 사항</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>사업실명제</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/177/main.do?mnCd=FN140701','FN140701');" ><span>대상사업</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('PROGRAM','/fr/realName/main.do?mnCd=FN140702','FN140702');" ><span>실명제목록</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                        </ul>
+                    </div>
+                
+					
+						<!-- ESG경영이 아니면 -->
+							<li class=" more_depth">
+							<!-- 각 대메뉴의 첫메뉴로 가기 -->
+							<a href="
+							
+							
+							/kor/content/14/main.do?mnCd=FN020101
+							
+							
+							
+							
+							
+							" data-name="회사소개" >회사소개</a>
+						
+						
+					
+					<!-- 퀵 메뉴 시작 -->
+                    <div class="depth2">
+                        <div class="left_quick">
+                            <p class="title">회사소개</p>
+                            <span>꿈을 향한 아름다운 변화, <br>한국중부발전이 이어갑니다.</span>
+                            <!-- 퀵 메뉴 버튼  -->
+                            
+	                            
+	                            
+	                            
+								 <a href="/kor/content/28/main.do?mnCd=FN021101" class="quick_menu link04">
+                                <dl>
+                                    <dt>발전소 소개</dt>
+                                    <dd>고품질의 안정적인 전력을 공급 하고 있습니다.</dd>
+                                </dl>
+	                            </a>
+	                            <a href="/kor/content/44/main.do?mnCd=FN021401" class="quick_menu link05">
+	                                <dl>
+	                                    <dt>해외발전사업 개척현황</dt>
+	                                    <dd>기술력으로 해외시장을 개척해 나가고 있습니다.</dd>
+	                                </dl>
+	                            </a>
+	                            
+	                            
+
+								 
+
+
+
+	                            
+	                        
+                        </div>
+                        <!-- lnb시작 -->
+						<ul>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>회사개요</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/14/main.do?mnCd=FN020101','FN020101');" ><span>소개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/15/main.do?mnCd=FN020102','FN020102');" ><span>연혁</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/16/main.do?mnCd=FN020103','FN020103');" ><span>조직도</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/151/main.do?mnCd=FN020107','FN020107');" ><span>분장업무</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/17/main.do?mnCd=FN020104','FN020104');" ><span>정관</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/49/main.do?mnCd=FN020108','FN020108');" ><span>상징/캐릭터</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>CEO</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/19/main.do?mnCd=FN020301','FN020301');" ><span>CEO</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>이사회</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/403/main.do?mnCd=FN021701','FN021701');" ><span>경영진소개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/404/main.do?mnCd=FN021702','FN021702');" ><span>개최현황</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/406/main.do?mnCd=FN021703','FN021703');" ><span>제도소개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000113/boardMain.do?mnCd=FN021706','FN021706');" ><span>임원추천위원회</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000122/boardMain.do?mnCd=FN021707','FN021707');" ><span>이사회 경영 제언 관리</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>2040 비전</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/21/main.do?mnCd=FN020501','FN020501');" ><span>KOMIPO 경영전략체계</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/22/main.do?mnCd=FN020502','FN020502');" ><span>KOMIPO 4 Way</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>투자정보</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/23/main.do?mnCd=FN020607','FN020607');" ><span>재무현황</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/24/main.do?mnCd=FN020605','FN020605');" ><span>재무제표</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/25/main.do?mnCd=FN020604','FN020604');" ><span>외부감사보고서</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/26/main.do?mnCd=FN020606','FN020606');" ><span>결산공고</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000008/boardMain.do?mnCd=FN020602','FN020602');" ><span>IR자료실</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/27/main.do?mnCd=FN020603','FN020603');" ><span>신용등급</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>사업장소개</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/28/main.do?mnCd=FN021101','FN021101');" ><span>발전소소개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/29/main.do?mnCd=FN021102','FN021102');" ><span>보령발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/35/main.do?mnCd=FN021108','FN021108');" ><span>신보령발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/32/main.do?mnCd=FN021105','FN021105');" ><span>신서천발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/30/main.do?mnCd=FN021103','FN021103');" ><span>인천발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/31/main.do?mnCd=FN021104','FN021104');" ><span>서울발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/34/main.do?mnCd=FN021107','FN021107');" ><span>세종발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/33/main.do?mnCd=FN021106','FN021106');" ><span>제주발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/36/main.do?mnCd=FN021109','FN021109');" ><span>발전설비현황</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/37/main.do?mnCd=FN021110','FN021110');" ><span>발전실적 및 계획</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>국내사업</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/38/main.do?mnCd=FN021301','FN021301');" ><span>국내사업 소개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/39/main.do?mnCd=FN021302','FN021302');" ><span>화력발전소 운영</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/40/main.do?mnCd=FN021303','FN021303');" ><span>재생에너지</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/41/main.do?mnCd=FN021304','FN021304');" ><span>발전소건설</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/42/main.do?mnCd=FN021305','FN021305');" ><span>SPC사업</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>해외사업</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/44/main.do?mnCd=FN021401','FN021401');" ><span>해외사업개요</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/45/main.do?mnCd=FN021402','FN021402');" ><span>해외발전사업</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/46/main.do?mnCd=FN021403','FN021403');" ><span>해외재생에너지사업</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/47/main.do?mnCd=FN021404','FN021404');" ><span>기술자문분야</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>부서별 전화번호</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/169/main.do?mnCd=FN021601','FN021601');" ><span>부서별 전화번호</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>찾아오시는길</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/53/main.do?mnCd=FN020909','FN020909');" ><span>본사</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/54/main.do?mnCd=FN020901','FN020901');" ><span>보령발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/55/main.do?mnCd=FN020902','FN020902');" ><span>인천발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/56/main.do?mnCd=FN020903','FN020903');" ><span>서울발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/57/main.do?mnCd=FN020904','FN020904');" ><span>신서천발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/58/main.do?mnCd=FN020905','FN020905');" ><span>제주발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/59/main.do?mnCd=FN020906','FN020906');" ><span>원주그린열병합발전소</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/60/main.do?mnCd=FN020907','FN020907');" ><span>세종발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/61/main.do?mnCd=FN020908','FN020908');" ><span>신보령발전본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/631/main.do?mnCd=FN020910','FN020910');" ><span>함안건설본부</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                        </ul>
+                    </div>
+                
+					
+						<!-- ESG경영이 아니면 -->
+							<li class=" more_depth">
+							<!-- 각 대메뉴의 첫메뉴로 가기 -->
+							<a href="
+							
+							
+							
+							/kor/content/62/main.do?mnCd=FN090101
+							
+							
+							
+							
+							" data-name="기업지원" >기업지원</a>
+						
+						
+					
+					<!-- 퀵 메뉴 시작 -->
+                    <div class="depth2">
+                        <div class="left_quick">
+                            <p class="title">기업지원</p>
+                            <span>건강한 기업생태계 조성과<br>
+발전을 위해 상생의 마음으로<br> 
+중소기업을 지원하고 있습니다.
+</span>
+                            <!-- 퀵 메뉴 버튼  -->
+                            
+	                            
+	                            
+	                            
+	                            
+								 <a href="https://www.komipo.co.kr/KomipoWwg/" target="_blank" title="중소기업 동반성장 페이지 새창 열림" class="quick_menu link06">
+                                <dl>
+                                    <dt>중소기업 동반성장</dt>
+                                    <dd>중소기업 동반성장 홈페이지로 이동하실 수 있습니다.</dd>
+                                </dl>
+	                            </a>
+	                            <a href="http://srm.kepco.net" target="_blank" title="입찰공고 페이지 새창 열림" class="quick_menu link07">
+	                                <dl>
+	                                    <dt>입찰공고</dt>
+	                                    <dd>한국중부발전에서 사용하는 입찰시스템 이용 안내입니다.</dd>
+	                                </dl>
+	                            </a>
+								<a href="/kor/content/419/main.do?mnCd=FN090901" class="quick_menu link08">
+	                                <dl>
+	                                    <dt>규제혁신센터(기업성장응답센터)</dt>
+	                                    <dd>한국중부발전에서 운영하는 규제혁신센터 소개입니다.</dd>
+	                                </dl>
+	                            </a>
+	                            
+	                            <!--a href="/career/careerMain.do" target="_blank" title="퇴직자 경력증명서 발급시스템 페이지 새창 열림" class="quick_menu link10">
+	                                <dl>
+	                                    <dt>퇴직자 경력증명서 발급시스템</dt>
+	                                    <dd>중부발전 퇴직자를 위한 경력증명서 온라인 신청ㆍ발급 서비스 입니다.</dd>
+	                                </dl>
+	                            </a-->
+	                            
+
+								 
+
+
+
+	                            
+	                        
+                        </div>
+                        <!-- lnb시작 -->
+						<ul>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>업무지원시스템</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://withu.ewp.co.kr:8443/user" target="_blank" title="새창 열림"><span>정비적격업체 통합관리</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://easyu.kospo.co.kr/easyuUser/user/login" target="_blank" title="새창 열림"><span>기자재 공급 유자격 통합관리</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://cemp.komipo.co.kr:6010" target="_blank" title="새창 열림"><span>온실가스 외부감축 관리시스템</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://crm.komipo.co.kr:5010/" target="_blank" title="새창 열림"><span>신기술거래소</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>동반성장오픈플랫폼</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://www.komipo.co.kr/KomipoWwg/cmsmain.do?scode=S01&pcode=main" target="_blank" title="새창 열림"><span>동반성장오픈플랫폼</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>입찰정보</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/62/main.do?mnCd=FN090101','FN090101');" ><span>입찰안내</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="http://srm.kepco.net" target="_blank" title="새창 열림"><span>입찰공고·일반계약 정보공개</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/132/main.do?mnCd=FN090104','FN090104');" ><span>수의계약 정보공개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000029/boardMain.do?mnCd=FN090105','FN090105');" ><span>업무중첩도 평가자료 공개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('PROGRAM','/fr/BRD_000128/boardMain.do?mnCd=FN090108','FN090108');" ><span>간이공사 예정공고</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>선금 · 실적증명시스템</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://crm.komipo.co.kr:7441/" target="_blank" title="새창 열림"><span>선금 · 실적증명시스템</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>재생에너지 관리시스템</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://newrec.komipo.co.kr/service/main" target="_blank" title="새창 열림"><span>RPS·REC 관리시스템</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://vppinfo.komipo.co.kr" target="_blank" title="새창 열림"><span>전력중개플랫폼</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>품질검사 협업시스템</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://crm.komipo.co.kr:4758/CoWorkInt/" target="_blank" title="새창 열림"><span>품질검사 협업시스템</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>규제혁신센터</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/419/main.do?mnCd=FN090901','FN090901');" ><span>규제혁신센터 소개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/420/main.do?mnCd=FN090902','FN090902');" ><span>규제애로신고</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/437/main.do?mnCd=FN090905','FN090905');" ><span>규제입증신청</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/421/main.do?mnCd=FN090903','FN090903');" ><span>기업민원 보호ㆍ서비스 헌장</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>KOLAS 분석의뢰</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/493/main.do?mnCd=FN091501','FN091501');" ><span>KOMIPO 정밀분석센터</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>비즈니스파트너 등록 시스템</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://businesspartner.komipo.co.kr:8150" target="_blank" title="새창 열림"><span>비즈니스파트너 등록 시스템</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                        </ul>
+                    </div>
+                
+					
+						<!-- ESG경영이 아니면 -->
+							<li class=" more_depth">
+							<!-- 각 대메뉴의 첫메뉴로 가기 -->
+							<a href="
+							
+							
+							
+							
+							/kor/board/BRD_000020/boardMain.do?mnCd=FN100101&pageSize=10
+							
+							
+							
+							" data-name="고객지원" >고객지원</a>
+						
+						
+					
+					<!-- 퀵 메뉴 시작 -->
+                    <div class="depth2">
+                        <div class="left_quick">
+                            <p class="title">고객지원</p>
+                            <span>한마음으로 더 좋은 미래를 열어가는<br> 
+중부인은 다양한 모습으로<br> 
+고객을 지원하고 있습니다.</span>
+                            <!-- 퀵 메뉴 버튼  -->
+                            
+	                            
+	                            
+	                            
+	                            
+
+								 
+								 <a href="/kor/content/78/main.do?mnCd=FN100401" class="quick_menu link09">
+                                <dl>
+                                    <dt>발전소 견학신청</dt>
+                                    <dd>전기가 어떤 과정을 거쳐 생산 되는지 궁금하셨죠?</dd>
+                                </dl>
+	                            </a>
+								 
+
+
+
+	                            
+	                        
+                        </div>
+                        <!-- lnb시작 -->
+						<ul>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>공지사항</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000020/boardMain.do?mnCd=FN100101','FN100101');" ><span>공지사항</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>출입신청/안전시스템</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://visit.komipo.co.kr:8070/" target="_blank" title="새창 열림"><span>출입신청</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://advsnet.komipo.co.kr:19091" target="_blank" title="새창 열림"><span>안전작업허가서 발행(K-Safety Net)</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://safeon.komipo.co.kr:7016" target="_blank" title="새창 열림"><span>안전-ON</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://sdmpub.komipo.co.kr:1615/" target="_blank" title="새창 열림"><span>스마트 재난감시</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>보령에너지월드</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/197/main.do?mnCd=FN100305','FN100305');" ><span>에너지월드 소개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/77/main.do?mnCd=FN100304','FN100304');" ><span>찾아오시는 길</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>서울 코미포 에너지움</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/476/main.do?mnCd=FN101501','FN101501');" ><span>KOMIPO ENERGEUM 소개</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/478/main.do?mnCd=FN101503','FN101503');" ><span>찾아오시는 길</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>발전소 견학</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/78/main.do?mnCd=FN100401','FN100401');" ><span>견학안내</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('PROGRAM','/fr/reserve/apply/main.do?mnCd=FN100402','FN100402');" ><span>견학신청</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('PROGRAM','/fr/reserve/status/main.do?mnCd=FN100403','FN100403');" ><span>예약현황</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/81/main.do?mnCd=FN100404','FN100404');" ><span>견학도움자료</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>퇴직자 경력증명</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="/career/careerMain.do?mnCd=FN101801" target="_blank" title="새창 열림"><span>퇴직자 경력증명서 발급시스템</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>고객문의</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000047/boardMain.do?mnCd=FN100802','FN100802');" ><span>Q&A</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>시설물 이용신청</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/660/main.do?mnCd=FN101301','FN101301');" ><span>이용안내</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                        </ul>
+                    </div>
+                
+					
+						
+						<!-- ESG경영이면 -->
+							<li><a href="/esg/main/main.do" target="_blank" title="새창 열림" data-name="ESG경영">ESG경영</a>
+						
+					
+					<!-- 퀵 메뉴 시작 -->
+                    <div class="depth2">
+                        <div class="left_quick">
+                            <p class="title">ESG경영</p>
+                            <span>환경과 사회, 사람을 중시하는 미래가치<br/>
+창출에 앞장서겠습니다.</span>
+                            <!-- 퀵 메뉴 버튼  -->
+                            
+	                            
+	                            
+	                            
+	                            
+
+								 
+
+
+
+	                            
+	                        
+                        </div>
+                        <!-- lnb시작 -->
+						<ul>
+                           
+                        </ul>
+                    </div>
+                
+					
+						<!-- ESG경영이 아니면 -->
+							<li class=" more_depth">
+							<!-- 각 대메뉴의 첫메뉴로 가기 -->
+							<a href="
+							
+							
+							
+							
+							
+							/kor/board/BRD_000021/boardMain.do?mnCd=FN120101&pageSize=10
+							
+							
+							" data-name="기업홍보" >기업홍보</a>
+						
+						
+					
+					<!-- 퀵 메뉴 시작 -->
+                    <div class="depth2">
+                        <div class="left_quick">
+                            <p class="title">기업홍보</p>
+                            <span>고객과의 진정한 소통을 통한<br> 
+열린경영을 실현하겠습니다.
+</span>
+                            <!-- 퀵 메뉴 버튼  -->
+                            
+	                            
+	                            
+	                            
+	                            
+
+								 
+
+
+
+	                            
+	                            <a href="/kor/content/215/main.do?mnCd=FN120403" class="quick_menu link11">
+                                <dl>
+                                    <dt>KOMIPO 영상뉴스</dt>
+                                    <dd>눈부신 경제성장의 핵심동력인 KOMIPO 전력산업 뉴스입니다.</dd>
+                                </dl>
+	                            </a>
+	                            <a href="/kor/content/390/main.do?mnCd=FN120203" class="quick_menu link12">
+	                                <dl>
+	                                    <dt>지역 농ㆍ수ㆍ축산물 코너</dt>
+	                                    <dd>보령의 다양한 농ㆍ수ㆍ축산물을 소개합니다.</dd>
+	                                </dl>
+	                            </a>
+	                            <a href="/kor/content/422/main.do?mnCd=FN120901" class="quick_menu link13">
+	                                <dl>
+	                                    <dt>비대면 문화예술제</dt>
+	                                    <dd>지역사회 문화예술인들과 함께하는 한국중부발전 비대면 문화예술제</dd>
+	                                </dl>
+	                            </a>
+	                            
+	                        
+                        </div>
+                        <!-- lnb시작 -->
+						<ul>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>보도자료</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000021/boardMain.do?mnCd=FN120101','FN120101');" ><span>보도자료</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>상생소식</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/390/main.do?mnCd=FN120203','FN120203');" ><span>지역농수축산물 코너</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/544/main.do?mnCd=FN120205','FN120205');" ><span>보령 시정소식</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>SNS</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/135/main.do?mnCd=FN120301','FN120301');" ><span>SNS</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>홍보영상</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/126/main.do?mnCd=FN120402','FN120402');" ><span>홍보영상</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/215/main.do?mnCd=FN120403','FN120403');" ><span>KOMIPO MEDIA</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>기업광고</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000023/boardMain.do?mnCd=FN120501','FN120501');" ><span>이미지광고</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>사업우수사례</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="https://www.komipo.co.kr/popup/20260730/index.html" target="_blank" title="새창 열림"><span>사업우수사례</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>국민과 함께 만드는 변화와 혁신</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000134/boardMain.do?mnCd=FN121201','FN121201');" ><span>국정과제</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000135/boardMain.do?mnCd=FN121202','FN121202');" ><span>혁신과제</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>사보</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000107/boardMain.do?mnCd=FN120701','FN120701');" ><span>사보PDF(1호~현재)</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                               		
+                               			
+                               			
+	                                	
+	                               			<li ><a href="http://komipo-webzine.co.kr" target="_blank" title="새창 열림"><span>사보웹진(102호~현재)</span></a></li>
+	                               		
+	                               		
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>비대면 문화예술제</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('CONTENT','/kor/content/422/main.do?mnCd=FN120901','FN120901');" ><span>비대면 문화예술제</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                            <!-- 중메뉴 -->
+							
+                            <li class="more  "><p>온라인교육</p>
+                               <ul class="depth3">
+                               <!-- 소메뉴 -->
+                               
+                               		
+                               			
+                               			
+	                                	
+	                               		
+	                               		
+	                               			<li ><a href="javascript:gnb.goPage('BOARD','/kor/board/BRD_000129/boardMain.do?mnCd=FN121001','FN121001');" ><span>온라인교육</span></a></li>
+	                               		
+                               		
+                               		
+
+                          	   
+                       		   </ul>
+                    		</li>
+                           
+                        </ul>
+                    </div>
+                
+			</ul>
+		</nav>
+
+        <!-- <div class="nav_bg">
+            <div class="wrap">
+                <p class="title">KOMIPO<br/><strong>한국중부발전</strong></p>
+                <p class="text">한국중부발전</p>
+            </div>
+        </div> -->
+        <!-- //gnbmenu -->
+        <!-- util_Box -->
+        <div class="util_Box">
+            <ul>
+                 <li class="hd_search">
+                	<form name="frSearch" id="frSearch" onsubmit="return goSearch2();" action="/fr/search/search.do" enctype="application/x-www-form-urlencoded" method="POST" accept-charset="utf-8">
+                    <label for="Keyword2">
+                    	<input name="query" tabindex="0" title="검색어를 입력해 주세요" id="Keyword2" type="text" placeholder="검색어를 입력해 주세요" aria-label="검색어를 입력하세요">
+
+                    </label>
+                    </form>
+                    <button type="button" class="top_search_btn" onclick="javascript:document.frSearch.submit(); return false" >검색하기</button>
+                </li>
+                <li><button type="button" onclick="location.href='/kor/sitemap.do'" class="util_sitemap">사이트맵 열기</button></li>
+            </ul>
+            <div class="top_searchBox">
+                <div class="inner">
+                    <div class="search_wrap">
+                        <label for="searchtext2">
+                            <input type="text" id="searchtext2" placeholder="검색어를 입력해 주세요" aria-label="검색어를 입력하세요">
+                        </label>
+                        <button type="button" onclick="javascript:document.frSearch.submit(); return false" class="top_search_btn">검색하기</button>
+                    </div>
+                    <dl>
+                        <dt>ㆍ 인기 검색어</dt>
+                        <dd><a href="#n">윤준석</a></dd>
+                        <dd><a href="#n">대기배출사업장 청정연료전황 지원사업</a></dd>
+                        <dd><a href="#n">메탄올</a></dd>
+                        <dd><a href="#n">지역할당</a></dd>
+                    </dl>
+                </div>
+                <button type="button" class="close_btn" title="알립니다 팝업 닫기">닫기</button>
+            </div>
+        </div>
+        <!-- //util_Box -->
+    </div>
+    <div class="shadow2"></div>
+</header>
+<div class="shadow"></div>
+<div class="shadow3"></div>
+
+
+
+
+	
+
+	<script>
+	$( document ).ready( function(e) {
+		var windowWidth = $( window).width();
+		if(windowWidth < 767) {
+			// 모바일인경우, 페이징 5개씩 처리
+			$("#pageSize").val("5");
+		}
+	});
+	</script>
+
+	
+	<section class="container">
+		<div class="wrap">				
+			<input type="hidden" name="pageSize" value="10" id="pageSize"/>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<div class="left_menu">
+	<!-- 대메뉴 -->
+    <div class="left_title">
+	
+    
+     
+    	<p>ETC</p>
+    	
+    
+    </div>
+    
+    
+    
+        
+    <ul class="depth_01">
+        <li><a href="/fr/search/search.do" >통합검색</a></li>
+        <li><a href="/fr/content/128/main.do?mnCd=FN130201" ><span>개인정보처리방침</span></a></li>
+        <li><a href="/fr/content/446/main.do?mnCd=FN130202" ><span>그림으로 보는 개인정보 처리방침</span></a></li>
+        <li><a href="/kor/sitemap.do" ><span>사이트 맵</span></a></li>
+    </ul>
+	
+</div>
+			<!-- LNB -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script >
+	$(document).ready(function() {
+		var depth1Cd = "";
+		var depth2Cd = "";
+		var depth3Cd = "";
+
+		fncGetMenuList(3, "FN", "");
+		fncGetMenuList(4, depth1Cd, "");
+		fncGetMenuList(5, depth2Cd, "");
+		//setClassSelected();
+		//setFaceBookMeta();
+		
+		//$("#shareUri").val(document.location.href);
+	});
+
+
+	var fncGetMenuList = function(menuLvl, menuCd, parMenuCd) {
+		$.getJSON("/fr/menu/frontMenuList.json?menuLvl="+ menuLvl +"&parMenuCd=" + menuCd, function (result) {
+			var mLvl = 0;
+			var ref_menulv = "0";
+			if(typeof(result.resultList) == "object") {
+				ref_menulv = "0"+(Number(menuLvl)-2);
+				//console.log(ref_menulv);
+				$(".depth" + ref_menulv+ " .lnb_more").empty();
+				
+				$.each(result.resultList, function(intIndex, StrValue) {
+					var thisData = result.resultList[intIndex];
+	
+					var objLi = "";
+					if(menuLvl==3){
+						if("" == thisData.menuCd){
+							objLi = $("<li class='now'/>");
+						}else{
+							objLi = $("<li/>");
+						}
+					}else if(menuLvl>3){
+						if(menuLvl==4){
+							if("" == thisData.menuCd){
+								objLi = $("<li class='now'/>");
+							}else{
+								objLi = $("<li/>");
+							}
+						}else if(menuLvl==5){
+							if("" == thisData.menuCd){
+								objLi = $("<li class='now'/>");
+							}else{
+								objLi = $("<li/>");
+							}
+						}
+						
+					}
+					var objHref = "javascript:";
+					var objA = "";
+					
+					if(menuLvl == 4 && thisData.frontMenuList != 'undefined' && thisData.frontMenuList.length > 0){ // 2Depth 선택시 3Depth 첫번째로 이동
+						
+						//for (var key in thisData.frontMenuList) {
+						//    console.log(thisData.frontMenuList[key]);
+						//}
+						//console.log(thisData);
+						
+						if(thisData.frontMenuList[0].linkTgt=="_blank" || (thisData.frontMenuList[0].menuDivn == "LINK" && thisData.frontMenuList[0].linkUrl.indexOf("http") > -1)){
+							objA = $("<a/>").attr("href", thisData.frontMenuList[0].linkUrl).attr("target", "_blank").attr("title", "새창 열림").html(thisData.menuNm);
+						}else{
+							objA = $("<a/>").attr("href", thisData.frontMenuList[0].linkUrl).html(thisData.menuNm);
+						}
+						
+					}else{
+						mLvl = menuLvl + 1;
+						var objScript1 = "fncGetMenuList("+ mLvl +", '"+thisData.menuCd+"', '"+thisData.parMenuCd+"')";
+						var objScript2 = "setMenuNav("+ menuLvl +", '"+thisData.menuNm+"')";
+	
+						if(thisData.childCnt > 0 && menuLvl != 5 ) {
+							if(thisData.linkTgt=="_blank" || (thisData.menuDivn == "LINK" && thisData.linkUrl.indexOf("http") > -1)){
+								objA = $("<a/>").attr("href", objHref + objScript1 + ";" + objScript2).attr("target", thisData.linkTgt).attr("title", "새창 열림").html(thisData.menuNm);
+							}else{
+								objA = $("<a/>").attr("href", objHref + objScript1 + ";" + objScript2).html(thisData.menuNm);
+							}
+							
+						} else {
+							if(thisData.linkTgt=="_blank" || thisData.menuDivn == "LINK"){
+								objA = $("<a/>").attr("href", thisData.linkUrl).attr("target", thisData.linkTgt).attr("title", "새창 열림").html(thisData.menuNm);
+							}else{
+								objA = $("<a/>").attr("href", thisData.linkUrl).html(thisData.menuNm);
+							}
+							
+						}
+					}
+					objLi.append(objA);
+					//$("#depth" + menuLvl).append(objLi);	
+					$(".depth" + ref_menulv+ " .lnb_more").append(objLi);	
+				});
+				
+				
+			}
+			
+			var now_cnt = 0;
+			
+			$(".depth"+ref_menulv+" .lnb_more li").each(function() {
+				var row_atext = $(this).find("a").text(); 
+				if($(this).hasClass("now")){
+					now_cnt++;
+				}
+
+			});
+			//console.log("ref_menulv::"+ref_menulv);
+			//console.log("now_cnt::"+now_cnt);
+			//console.log("menuLvl::"+menuLvl);
+			if(now_cnt==0){
+				if(parMenuCd!=""){
+					$("#nav"+menuLvl).html($(".depth"+ref_menulv+" .lnb_more li").eq(0).find("a").text());
+					$(".depth"+ref_menulv+" .lnb_more").show();
+				}
+				
+				
+			}
+		});
+	};
+
+	var setMenuNav = function(menuLvl, menuNm) {
+		$("#nav"+menuLvl).html(menuNm);
+		$(".depth0"+(Number(menuLvl)-2)+" .lnb_more li").each(function() {
+			var row_atext = $(this).find("a").text(); 
+			if(row_atext==menuNm){
+				$(this).addClass("now");
+			}else{
+				$(this).removeClass("now");
+			}
+
+		});
+	};
+</script>
+
+<div class="lnb">
+    <div class="wrap">
+        <ul class="lnb_inner">
+            <li class="home"><a href="/kor/main/main.do">home</a></li>
+            <li class="depth01">
+                <a href="#n" id="nav3"><span></span></a>
+                <ul class="lnb_more"></ul>
+            </li>
+            
+            <li class="depth02">
+                <a href="#n" id="nav4"><span></span></a>
+                <ul class="lnb_more"></ul>
+            </li>
+            <li class="depth03">
+                <a href="#n" id="nav5"><span></span></a>
+                <ul class="lnb_more"></ul>
+            </li>
+        </ul>
+        <ul class="share_box">
+            <li><button type="button" class="share_btn" title="공유 목록 열기">공유하기</button>
+                <ul class="share_list">
+                    <li><button type="button" class="share_urlbtn" onclick="javascript:shareUrl();">URL로 공유하기</button></li>
+                    <li><button type="button" class="share_facebookbtn" onclick="javascript:shareFacebook();" title="새창열림">Facebook으로 공유하기</button></li>
+                    <li><button type="button" class="share_mailbtn" onclick="javascript:openModal('shareEmail', this);">메일로 공유하기</button></li>
+                </ul>
+            </li>
+            <li><button type="button" class="print_btn">프린트하기</button></li>
+        </ul>
+    </div>
+</div>
+			<!-- //LNB-->
+			<div id="content" class="contents">
+				
+
+
+<script type="text/javascript" src="/js/ko23/shared.js" ></script> 
+
+
+
+
+
+
+
+
+
+
+
+<!-- .sub01:소통채널 / .sub02:회사소개 / .sub03:기업지원 / .sub04:고객지원 / .sub05:기업홍보 / .sub06:etc  / .sub07:ESG경영 -->
+<!-- 메뉴따라 이미지 바꾸기 -->
+
+
+<div class="sub_visual
+	
+		
+		
+		
+		
+		
+		
+		sub06
+		
+	">
+	<div class="inner_background"></div>
+    <div class="inner">
+        
+      	
+        
+        <h3>
+	        
+	    	
+	    	
+	    	    	
+        </h3>
+        <ol class="path">
+            <li><a href="/kor/main/main.do" class="home">home</a></li> 
+            <li><p>
+            		            
+	            	
+		            
+		            	ETC
+		            
+		                      	
+	            	</p></li>
+	            <li><p>
+	            	            
+		            
+		            
+		            	통합검색
+		            	
+		            	                        
+		            </p></li>
+	            <li><p>
+	            	
+	            	
+		            
+		            	통합검색
+		            
+		            
+	            </p></li>
+        </ol>
+		
+       	
+        <ul class="share_box">
+            <li><button type="button" class="share_btn" title="공유 목록 열기">공유하기</button>
+                <ul class="share_list">
+                    <li><button type="button" class="share_urlbtn" onclick="javascript:shareUrl();">>URL로 공유하기</button></li>
+                    <li><button type="button" class="share_facebookbtn" onclick="javascript:shareFacebook();" title="새창열림">Facebook으로 공유하기</button></li>
+                    <li><button type="button" class="share_mailbtn" onclick="javascript:openModal('shareEmail', this);">메일로 공유하기</button></li>
+                </ul>
+            </li>
+            <!-- <li><button type="button" class="print_btn" id="print_btn_sub" onclick="printPreview();">프린트하기</button></li> -->
+            <li><button type="button" class="print_btn" id="print_btn_sub">프린트하기</button></li>
+        </ul>
+    </div>
+</div>
+
+
+<script type='text/javascript'>
+
+	
+//브라우저 정보
+function getBrowserKomipo(){
+	var r = { name : "???", version : -1, realVersion : -1 }; //브라우저정보
+	var nav = navigator;
+	//브라우저 체크
+	var agt = nav.userAgent.toLowerCase();
+	if(nav.appName=="Microsoft Internet Explorer"){ // IE10이하 && IE11문서모드변경시
+		r.name = "Internet Explorer";
+	}else if(nav.appName=="Netscape" && agt.indexOf("trident")!=-1){ //IE11
+		r.name = "Internet Explorer";
+	}else{ //기타
+		if (agt.indexOf("chrome") != -1) { r.name = "Chrome"; 
+		} else if (agt.indexOf("opera") != -1) { r.name = "Opera"; 
+		} else if (agt.indexOf("staroffice") != -1) { r.name = "Star Office"; 
+		} else if (agt.indexOf("webtv") != -1) { r.name = "WebTV"; 
+		} else if (agt.indexOf("beonex") != -1) { r.name = "Beonex"; 
+		} else if (agt.indexOf("chimera") != -1) { r.name = "Chimera"; 
+		} else if (agt.indexOf("netpositive") != -1) { r.name = "NetPositive"; 
+		} else if (agt.indexOf("phoenix") != -1) { r.name = "Phoenix"; 
+		} else if (agt.indexOf("firefox") != -1) { r.name = "Firefox"; 
+		} else if (agt.indexOf("safari") != -1) { r.name = "Safari"; 
+		} else if (agt.indexOf("skipstone") != -1) { r.name = "SkipStone"; 
+		} else if (agt.indexOf("msie") != -1) { r.name = "Internet Explorer"; 
+		} else if (agt.indexOf("netscape") != -1) { r.name = "Netscape"; 
+		} else if (agt.indexOf("mozilla/5.0") != -1) { r.name = "Mozilla";
+		}
+	}
+	
+	//버전체크
+	if(r.name=="Internet Explorer"){
+		r.version = getInternetExplorerVersion(nav);
+		r.realVersion = getInternetExplorerVersion(nav);
+	}else{
+		//추후 필요시 추가...
+	}
+	
+	return r;
+}	
+	
+/*function printPreview(){
+   //alert("all");
+  // $.fn.printPreview(".inner","1");
+   $('#print_btn_sub').printPreview("#top_body_id","1");
+	    	if (!$('#print-modal').length) {
+		        $.printPreview.loadPrintPreview("");
+		    }
+
+}
+
+*/
+$(function(){
+	var local_url = location.href;
+	console.log("");
+	//console.log(local_url.indexOf("search.do"));
+	if(local_url.indexOf("search.do") == -1){
+		$('#print_btn_sub').printPreview("#top_body_id","0.6");
+		//console.log($("head link[media^='print']").length);
+		//console.log(local_url);
+		$('#print_btn_sub').click( function() {
+	    	if (!$('#print-modal').length) {
+		        $.printPreview.loadPrintPreview("");
+		    }
+		
+		});
+	}
+		
+	
+	/*$('#print_btn_sub').focus( function() {
+    	if (!$('#print-modal').length) {
+	        $.printPreview.loadPrintPreview("");
+	    }
+	
+	});	*/
+	
+	
+	
+});
+
+
+</script>
+				<!-- .contents>.inner 본문내용 시작 -->
+                
+
+                <div class="inner"> 
+	                <div class="inner_top">
+	                	
+
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- wrap_sitemap -->
+<iframe name="fileDown" frameborder="0" style="display:none" title="다운로드용 아이프레임"></iframe>
+
+<script defer="defer">
+var board = {
+	download : function(atchFileId, fileSn) {
+		$("#boardCd").val("content");
+		$("#atchFileId").val(atchFileId);
+		$("#fileSn").val(fileSn); 
+		$("#downloadFrm").attr({"action" : "/atch/fileDown.do", "target" : "fileDown" }).submit();
+	},
+	view : function(selectSeq, tabCd) {
+		console.log(selectSeq+" "+tabCd);
+		$("#apiSeq").val(selectSeq);
+		$("#schTabCd").val(tabCd);
+		$("#defaultFrm").attr({
+			"action" : "/fr/kor/fileData/view.do",
+			"target" : "_self"
+		}).submit();
+		
+		$('#defaultFrm').submit();
+	}
+};
+
+var geoCode = function(addrType) {
+	var url = "/fr/getNaverGeocode.do?addrType=" + addrType; 
+	url = encodeURI(url); 
+			
+	$.getJSON(url, function(data) {
+			var str = JSON.parse(data.string)
+			if(typeof(str) == "object") {
+				var result = str.result; 
+				$.each(result.items, function(intIndex, StrValue) {
+					var thisData = result.items[intIndex]; 
+					var x = thisData.point.x;
+					var y = thisData.point.y;
+
+					var mapOptions = {
+						    center: new naver.maps.Point(x, y),
+						    zoom:11
+					};
+					var map = new naver.maps.Map('map', mapOptions);	
+					
+					var marker = new naver.maps.Marker({
+					    position: new naver.maps.Point(x, y),
+					    map: map
+					});
+
+				});
+			}
+		}); 
+	}	
+</script>
+<form id="downloadFrm" name="downloadFrm" action="/kor/content/47/main.do" method="post">
+<input type="hidden" name="boardCd" id="boardCd"/>
+<input type="hidden" name="atchFileId" id="atchFileId"/>
+<input type="hidden" name="fileSn" id="fileSn"/>
+</form>
+<div class="titleBig">
+                            <p>기술 노하우를 통한 부가수익 창출</p>
+                        </div>
+                        <!---p class="textA2">전력수급 안정과 함께 다음 세대를 위한 환경책임에 대한 요구가 증가되고 있는 오늘날, 한국중부발전은 고객의 수요에 부응하여 지속적인 미래 성장동력 확보를 위한<br>사회기반 시설을 제공하는 것을 목표로 합니다. 이러한 목표와 더불어 우리의 경험과 기술적인 전문지식을 통해 전 세계의 고객들에게<br>전력공급의 안정성 향상과 전력부문 개발원조 및 세계 환경문제 해결을 위한 기술자문 서비스를 제공하고 있습니다.</p--->
+                        
+
+                        <div class="overseas_development02">
+                            <p class="titleA">인도네시아 자와 9,10 화력발전 기술자문사업</p>
+                            <p class="titleB">사업개요</p>
+                            <p class="textB">자와 9,10 발전사업은 인도네시아 자바섬 자카르타 서쪽 수랄라야 대규모 발전단지에 건설되는 설비용량 2,000MW(1000 × 2기) 규모의 초초임계압 화력발전 사업입니다. 본 사업에서 중부발전은 2020년 10월 자와 9,10 발전사업의 현지법인(IRT)과 건설관리 및 운영·정비를 수행하는 기술자문계약을 체결하였으며, 향후 15년간 발전운영기술 수출을 통해 500억원의 기술자문수익을 획득할 예정입니다. <br>또한, 본 사업은 대규모 한국계 콘텐츠(대주단, 사업주, 건설공사, 운영·정비)를 활용한 협업사업으로, 국내 중소기업의 기자재 해외 판로확대 및 일자리 창출에 크게 기여할 것으로 기대하고 있습니다.</p>
+                            <div class="imgArea flexImg text_img w2 mt25">
+                                <div><img src="/main_new4/contents/images/sub/tech_advice_img01.png" alt="인도네시아 자와 9,10 화력발전 기술자문사업 사진1" style="max-width: 450px;"></div>
+                                <div><img src="/main_new4/contents/images/sub/tech_advice_img02.png" alt="인도네시아 자와 9,10 화력발전 기술자문사업 사진2" style="max-width: 450px;"></div>
+                                <span class="name">인도네시아 자와 9,10 화력발전</span>
+                            </div>
+                            <table class="tableA mt30">
+                                <caption><strong>인도네시아 자와 9,10 화력발전 기술자문사업개요</strong><p>로 구성된 표입니다.</p></caption>
+                                <colgroup>
+                                    <col style="width: 20%;min-width: 110px;">
+                                    <col style="width: 80%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">계약기간</th>
+                                        <td class="t_left">2020.10 (건설착공) ~ 2035.7, (상업운전 후 10.5년)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">현지법인</th>
+                                        <td class="t_left">PT.IRT (Indo Raya Tenega)</td>
+                                    </tr>            
+                                    <tr>
+                                        <th scope="row">사업방식</th>
+                                        <td class="t_left">발전소 운영 및 정비 (Operation &amp; Maintenance)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">용량 및 연료</th>
+                                        <td class="t_left">2,000MW (1000MW × 2기)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">발전소명</th>
+                                        <td class="t_left">Jawa 9&amp;10 (자와 9,10)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">제공내용</th>
+                                        <td class="t_left">건설관리 및 기술지원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">발주자</th>
+                                        <td class="t_left">인도네시아 전력공사(PT. PLN)</td>
+                                    </tr>           
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!---div class="txt_layout addImg c1 bottom">
+                            <div class="txtArea">
+                                <p class="titleA">두바이 제벨알리</p>
+                                <p class="titleB">사업개요</p>
+                                <p class="textB">한국중부발전은 두바이 수전력청이 발주한 제벨알리 프로젝트의 EPC 계약자로서 선정된 현대건설에 전문적인 컨설팅서비스를 제공하였습니다. 이 프로젝트로 현대건설은 총 20개월 동안 1,200MW용량의 발전소와 5,500Gallon의 담수발전소를 건설하였습니다.</p>
+                            </div>
+                            <div class="imgArea">
+                                <div>
+                                    <img src="/main_new4/contents/images/sub/tech_advice_img03.png" alt="두바이 제벨알리 담수발전소 사진">
+                                </div>
+                            </div>                   
+                        </div>
+                        <table class="tableA mt30">
+                            <caption><strong>두바이 제벨알리 사업개요</strong><p>로 구성된 표입니다.</p></caption>
+                            <colgroup>
+                                <col style="width: 20%;min-width: 110px;">
+                                <col style="width: 80%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">사업기간</th>
+                                    <td class="t_left">용역기간 : 2007.10 ~ 2008.02</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">발주자</th>
+                                    <td class="t_left">현대건설 (EPC계약자)</td>
+                                </tr>            
+                                <tr>
+                                    <th scope="row">제공용역</th>
+                                    <td class="t_left">
+                                        <ul class="bullet_wrap">
+                                            <li class="bullet01">
+                                                <p class="p0">발전소 시운전</p>
+                                            </li>
+                                            <li class="bullet01">
+                                                <p class="p0">시운전 기술자문</p>
+                                            </li>
+                                            <li class="bullet01">
+                                                <p class="p0">운전원 교육</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>        
+                            </tbody>
+                        </table>
+
+                        
+                        <div class="txtArea">
+                            <p class="titleA">UAE Shuweihat S2 Project</p>
+                            <p class="titleB">사업개요</p>
+                            <p class="textB">담수발전에 대한 요구가 증가함에 따라 아부다비 수전력공사(ADWEA)에 의해 개발이 계획된 S2 담수발전소는 26개월의 건설기간(2008.07 ~ 2011.09)을 거쳐 1,500MW 전력과 담수 454,610톤을 생산하게 됩니다. 발전설비의 EPC계약은 삼성물산이 선정되었고, 한국중부발전은 이 프로젝트에서 전문적인 컨설팅 서비스를 제공하였습니다.</p>
+                        </div>
+                        <table class="tableA mt30">
+                            <caption><strong>UAE Shuweihat S2 Project 사업개요</strong><p>로 구성된 표입니다.</p></caption>
+                            <colgroup>
+                                <col style="width: 20%;min-width: 110px;">
+                                <col style="width: 80%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">사업기간</th>
+                                    <td class="t_left">용역기간 : 2010.01 ~ 2011.11</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">발주자</th>
+                                    <td class="t_left">삼성건설 (EPC계약자)</td>
+                                </tr>            
+                                <tr>
+                                    <th scope="row">제공용역</th>
+                                    <td class="t_left">
+                                        <ul class="bullet_wrap">
+                                            <li class="bullet01">
+                                                <p class="p0">발전소 시운전</p>
+                                            </li>
+                                            <li class="bullet01">
+                                                <p class="p0">시운전 기술자문</p>
+                                            </li>
+                                            <li class="bullet01">
+                                                <p class="p0">운전원 교육</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>        
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="txtArea">
+                            <p class="titleA">몽골 달란자가드발전소 기술평가</p>
+                            <p class="titleB">사업개요</p>
+                            <p class="textB">몽골의 달란자가드 열병합발전소는 설비용량 6MW로 지난 2,000년 한국의 경제개발합작 기금으로 지어졌습니다. 그러나 이후 9년간 시설투자 등 유지보수가 제대로 이루어지지 않아 전력생산이 거의 불가능한 상태에 이르렀습니다. 한국중부발전은 달란자가드 발전소의 표준화를 위한 기술평가계약을 체결하고, 발전소 운영에 대한 풍부한 전문지식을 갖춘 내부전문가들이 발전소 성능 개선을 위한 각종 문제들을 해결하였습니다.</p>
+                        </div>
+                        <table class="tableA mt30">
+                            <caption><strong>몽골 달란자가드발전소 기술평가 사업개요</strong><p>로 구성된 표입니다.</p></caption>
+                            <colgroup>
+                                <col style="width: 20%;min-width: 110px;">
+                                <col style="width: 80%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">사업기간</th>
+                                    <td class="t_left">용역기간 : 2008.07 ~ 2008.10</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">발주자</th>
+                                    <td class="t_left">한국수출입은행(K-EXIM)</td>
+                                </tr>            
+                                <tr>
+                                    <th scope="row">제공용역</th>
+                                    <td class="t_left">
+                                        <ul class="bullet_wrap">
+                                            <li class="bullet01">
+                                                <p class="p0">현장방문 및 공정보고</p>
+                                            </li>
+                                            <li class="bullet01">
+                                                <p class="p0">기술용역보고서</p>
+                                            </li>
+                                            <li class="bullet01">
+                                                <p class="p0">운영감리수행</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>        
+                            </tbody>
+                        </table>
+
+                        
+                        <div class="txtArea">
+                            <p class="titleA">직원교류 프로그램</p>
+                            <p class="titleB">사업개요</p>
+                            <p class="textB">한국중부발전은 해외사업 관계 공무원, 기술자 초청교육훈련 및 직원교류프로그램과 같은 진취적인 기술정보의 교류를 통해 견실한 해외사업을 위한 사전기반을 마련하고 있습니다. 한국중부발전은 이러한 프로그램 운영을 통해서 관계국과의 친밀한 협력관계를 형성해 나가고 있습니다.</p>
+                        </div>
+                        <table class="tableA mt30">
+                            <caption><strong>직원교류 프로그램 사업개요</strong><p>로 구성된 표입니다.</p></caption>
+                            <colgroup>
+                                <col style="width: 20%;min-width: 110px;">
+                                <col style="width: 80%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">활동사항</th>
+                                    <td class="t_left">
+
+                                        <ul class="bullet_wrap">
+                                            <li class="bullet01">
+                                                <p class="p0">발전산업 분야 개발관련</p>
+                                            </li>
+                                            <li class="bullet01">
+                                                <p class="p0">발전분야의 경험 및 정보교환을 위한 관리 및 기술 직원교</p>
+                                            </li>
+                                            <li class="bullet01">
+                                                <p class="p0">직원교류프로그램을 통한 관련 인적자원개발</p>
+                                            </li>
+                                            <li class="bullet01">
+                                                <p class="p0">발전프로젝트 개발을 위한 자금조달 및 투자와 관련된 논의 및 지식교류</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>      
+                            </tbody>
+                        </table--->
+
+					<!-- 페이징 처리 시작 -->
+					
+					<!-- 페이징 처리 끝 -->
+					
+					</div>
+					
+	                
+	                <!-- 담당부서: .manager / 전화번호: .tel_num / 팩스번호: .fax_num / 이메일: .email_adr -->
+					<section class="satisfaction">
+						
+						<h4 class="hide">담당자 및 홈페이지 만족도조사</h4>
+						<div class="top">
+						    <dl class="manager">
+						        <dt>담당부서</dt>
+						        <dd></dd>
+						    </dl>
+						    <dl class="tel_num">
+						        <dt>전화번호</dt>
+						        <dd><a href="#n" tabindex="-1" class="mobile_telNo" data-tel="tel:"></a></dd>
+						    </dl>
+						</div>
+	               		
+						
+	               		
+
+
+
+
+
+<script>
+	$(document).ready(function(){
+		$("#surveyResult").click(function (){
+			var researchCd = $("#researchCd").val();
+			var researchVal = $("input:radio[name=star]:checked").val();
+			var applyCont = "";
+			
+			if (researchVal == null || researchVal == ""){
+				alert("만족도 점수를 체크해주세요.");
+				return;
+			}
+			
+			if(researchCd == "FN011301"){
+				applyCont = $("#applyCont").val();
+				var contCk = applyCont.trim();
+				
+				if(contCk == null || contCk == ""){
+					alert("개선의견을 작성해주세요.");
+					return;
+				}
+			}
+			
+			$.ajax({
+				url: "/fr/kor/research/research.do",
+				data: {"menu_code" : researchCd, "research_value" : researchVal, "opinion" : applyCont},
+				dataType:"json",
+				success : function(data) {
+					if(data.string != undefined && data.string != '') {
+						alert(data.string);
+					}
+					$("input:radio[name=researchVal]").prop("checked", false);
+					$("#applyCont").val("");
+				},error:function(request, status, error){
+					alert("알 수 없는 에러가 발생했습니다. 관리자에게 문의해주세요.");
+				}
+			})
+			}
+		)
+	});
+</script>
+<!-- 담당부서: .manager / 전화번호: .tel_num / 팩스번호: .fax_num / 이메일: .email_adr -->
+<input type="hidden" name="researchCd" id="researchCd" value="">
+	<div class="btm">
+	    <div>
+	        <p>홈페이지 만족도 <span>현재 페이지의 만족도를 평가해 주십시요. 의견을 수렴하여 빠른 시일 내에 반영하겠습니다.</span></p>
+	        <div class="radiobox">
+	            <div>
+	                <input type="radio" value="5" name="star" id="star05" checked>
+	                <label for="star05">매우만족</label>
+	            </div>
+	            <div>
+	                <input type="radio" value="4" name="star" id="star04">
+	                <label for="star04">만족</label>
+	            </div>
+	            <div>
+	                <input type="radio" value="3" name="star" id="star03">
+	                <label for="star03">보통</label>
+	            </div>
+	            <div>
+	                <input type="radio" value="2" name="star" id="star02">
+	                <label for="star02">불만족</label>
+	            </div>
+	            <div>
+	                <input type="radio" value="1" name="star" id="star01">
+	                <label for="star01">매우불만족</label>
+	            </div>
+	        </div>
+	    </div>
+	
+	    <p class="satis_btn">
+	    	<button class="blue_btn" id="surveyResult" onclick="javascript:btn('만족도 참여를 해주셔서 감사합니다.\n더 발전하는 한국중부발전이 되겠습니다.')" >등록하기</button>
+	    </p>
+	
+	</div>
+
+
+	                </section>
+	                
+                </div>
+				
+                <!-- .contents>.inner 본문내용 끝 -->
+			</div>
+		</div>
+	</section>
+	
+		
+	
+
+
+
+
+<div class="footer">
+    <!-- 관련기관 배너 -->
+    <section class="footer_banner">
+        <div class="wrap">
+            <h3 class="hide">관련기관 배너</h3>
+            <div class="banner">
+                <ul class="banner_slide">
+                    <li><a href="https://www.mcee.go.kr/" target="_blank" title="기후에너지환경부 페이지로 새창 열림" tabindex="0"><img
+                                src="/main_new4/contents/images/common/banner01.jpg" alt="기후에너지환경부" style="margin-top:8px;"></a></li>
+                    <li><a href="http://www.gov.kr" target="_blank" title="정부24 페이지로 새창열림" tabindex="0"><img
+                                src="/main_new4/contents/images/common/banner02.jpg" alt="정부24"></a></li>
+                    <li><a href="http://www.alio.go.kr" target="_blank" title="ALIO 공공기관 경영정보 공개시스템 페이지로 새창열림"
+                            tabindex="0"><img src="/main_new4/contents/images/common/banner03.jpg" alt="ALIO 공공기관 경영정보 공개시스템"></a></li>
+                    <li><a href="http://www.service.go.kr" target="_blank" title="대한민국 정부포털 나에게 필요한 공공서비스 페이지로 새창열림"
+                            tabindex="0"><img src="/main_new4/contents/images/common/banner04.jpg" alt="대한민국 정부포털 나에게 필요한 공공서비스"></a>
+                    </li>
+                    <li><a href="https://www.komipo.co.kr/kor/content/390/main.do?mnCd=FN120203" target="_blank"
+                            title="지역 특산물 코너 페이지로 새창열림" tabindex="0"><img src="/main_new4/contents/images/common/banner05.jpg"
+                                alt="지역 농·수·축산물 코너"></a></li>
+                    <li><a href="http://www.nongsarang.co.kr/" target="_blank" title="농사랑 페이지로 새창열림" tabindex="0"><img
+                                src="/main_new4/contents/images/common/banner06.jpg" alt="충남 농사랑"></a></li>
+                    <li><a href="http://1398.acrc.go.kr/case/ISGAcase" target="_blank" title="청탁금지법 통합검색 페이지로 새창열림"
+                            tabindex="0"><img src="/main_new4/contents/images/common/banner07.jpg" alt="청탁금지법 통합검색"></a></li>
+                    <li><a href="https://1398.acrc.go.kr/hpg/corr/hpgCorrtReqStep1.do" target="_blank" title="국민권익위원회가 운영하는 청렴포털 부패공익신고 페이지로 새창열림"><img src="/main_new4/contents/images/common/banner08.jpg" alt="국민권익위원회가 운영하는 청렴포털 부패공익신고"></a></li>
+                    <li><a href="http://www.acrc.go.kr/acrc/board.do?command=searchDetail&menuId=050205" target="_blank"
+                            title="청렴 신문고 부패방지·공익보호 청탁금지위반신고 페이지로 새창열림" tabindex="0"><img src="/main_new4/contents/images/common/banner09.jpg"
+                                alt="청렴 신문고 부패방지·공익보호 청탁금지위반신고"></a></li>
+<!--                     <li><a href="http://www.epeople.go.kr/jsp/user/bw/front/UBwIntroduction.jsp" target="_blank" -->
+<!--                             title="예산낭비 신고센터 페이지로 새창열림" tabindex="0"><img src="/main_new4/contents/images/common/banner10.jpg" -->
+<!--                                 alt="예산낭비 신고센터"></a></li> -->
+                    <li><a href="https://1398.acrc.go.kr/hpg/req/hpgPssStep1.do" target="_blank"
+                            title="국민권익위원회 복지·보조금 부정 신고센터 페이지로 새창열림" tabindex="0"><img src="/main_new4/contents/images/common/banner11.jpg"
+                                alt="국민권익위원회 복지·보조금 부정 신고센터"></a></li>
+                    <li><a href="http://tv.mpss.go.kr/web/main/main.do" target="_blank" title="국민안전방송 페이지로 새창열림"
+                            tabindex="0"><img src="/main_new4/contents/images/common/banner12.jpg" alt="국민안전방송"></a></li>
+                </ul>
+                <div class="control">
+                    <button type="button" class="prev_btn">이전 슬라이드로 이동</button>
+                    <button type="button" class="next_btn">다음 슬라이드로 이동</button>
+                    <button type="button" class="ctr_btn pause">일시정지</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //관련기관 배너 -->
+    <footer id="footer">
+        <div class="top">
+            <div class="wrap">
+                <div class="left">
+                    <a href="/fr/content/128/main.do?mnCd=FN130201" class="pointC">ㆍ개인정보처리방침</a>
+                    <a href="/fr/content/53/main.do?mnCd=FN020909">ㆍ찾아오시는 길</a>
+                    <a href="/kor/sitemap.do" class="f_sitemap">ㆍ사이트 맵</a>
+                    <a href="/kor/content/169/main.do?mnCd=FN021601">ㆍ부서별 전화번호</a>
+
+                                        <div class="family_pop famliysite">
+                        <button type="button" title="관련(공공기관)사이트 열기">ㆍ관련(공공기관)사이트</button>
+                        <!-- 관련(공공기관)사이트 -->
+                        <div class="family_site pop_wrap">
+                            <div class="inner">
+                                <p class="title">관련(공공기관)사이트</p>
+                                <dl>
+                                    <dt>기업지원시스템</dt>
+                                    <dd>
+                                        <a href="http://srm.kepco.net/" target="_blank" title="입찰정보 시스템 새창 열림">입찰정보 시스템</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://crm.komipo.co.kr:7441/" target="_blank" title="계약이행 실적증명발급 새창 열림">계약이행 실적증명발급</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://easyu.kospo.co.kr/easyuUser/;jsessionid=Rfx8xNwd1brJnz7FqgdiQJyVAQtAZOpMdP9Ex3McT18KqCneg2eYxdLTUhhjghwU.nbcwwas1_servlet_EAS1" target="_blank" title="기자재 공급 유자격 통합관리 새창 열림">기자재 공급 유자격 통합관리</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://withu.ewp.co.kr:8443/user" target="_blank" title="정비적격업체 통합관리 새창 열림">정비적격업체 통합관리</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://crm.komipo.co.kr:8030" target="_blank" title="시험성적서 검증 시스템 새창 열림">시험성적서 검증 시스템</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://rec.komipo.co.kr:8557/WebContent/jsp/main/main.jsp" target="_blank" title="공급인증서(REC)거래 새창 열림">공급인증서(REC)거래</a>
+                                    </dd>
+                                </dl>
+                                <dl class="type2">
+                                    <dt>전력그룹사</dt>
+                                    <dd>
+                                        <a href="http://www.kepco.co.kr" target="_blank" title="한국전력공사 새창 열림">한국전력공사</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.khnp.co.kr" target="_blank" title="한국수력원자력㈜ 새창 열림">한국수력원자력㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kdn.com" target="_blank" title="한전KDN㈜ 새창 열림">한전KDN㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.koenergy.kr" target="_blank" title="한국남동발전㈜ 새창 열림">한국남동발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kepco-enc.com" target="_blank" title="한국전력기술㈜ 새창 열림">한국전력기술㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.iwest.co.kr" target="_blank" title="한국서부발전㈜ 새창 열림">한국서부발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kps.co.kr" target="_blank" title="한전KPS㈜ 새창 열림">한전KPS㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kospo.co.kr" target="_blank" title="한국남부발전㈜ 새창 열림">한국남부발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.knfc.co.kr" target="_blank" title="한전원자력연료㈜ 새창 열림">한전원자력연료㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.ewp.co.kr" target="_blank" title="한국동서발전㈜ 새창 열림">한국동서발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kepid.co.kr" target="_blank" title="한전산업개발㈜ 새창 열림">한전산업개발㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kpx.or.kr" target="_blank" title="한국전력거래소 새창 열림">한국전력거래소</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>국내유관기관</dt>
+                                    <dd>
+                                        <a href="https://www.mcee.go.kr" target="_blank" title="기후에너지환경부 새창 열림">기후에너지환경부</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.acrc.go.kr" target="_blank" title="국민권익위원회 새창 열림">국민권익위원회</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.korea.go.kr" target="_blank" title="대한민국정부포털 새창 열림">대한민국정부포털</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.gov30.go.kr" target="_blank" title="정부3.0 새창 열림">정부3.0</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.data.go.kr" target="_blank" title="공공데이터포털 새창 열림">공공데이터포털</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.alio.go.kr" target="_blank" title="ALIO 새창 열림">ALIO</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.law.go.kr" target="_blank" title="법령정보센터 새창 열림">법령정보센터</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.moi.go.kr/frt/sub/a05/gwanboMain/screen.do" target="_blank" title="대한민국전자관보 새창 열림">대한민국전자관보</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <button type="button" class="close_btn" title="관련(공공기관)사이트 닫기">닫기</button>
+                        </div>
+                        <!-- //관련(공공기관)사이트 -->
+                    </div>
+                </div>
+                <ul class="footer_link">
+                    <li><a href="https://blog.naver.com/komipo_official" target="_blank" title="BLOG 페이지 새창 열림" class="blog_tit">한국중부발전 공식 블로그</a></li>
+                    <li><a href="https://www.facebook.com/komipo" target="_blank" title="FACEBOOK 페이지 새창 열림" class="facebook_tit">한국중부발전 페이스북</a></li>
+                    <li><a href="https://www.instagram.com/komipo_official" target="_blank" title="INSTAGRAM 페이지 새창 열림" class="instagram_tit">한국중부발전 인스타그램</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCew6PRDs_1tIZ0tGvqgpDWw" target="_blank" title="YOUTUBE 페이지 새창 열림" class="youtube_tit">한국중부발전 유튜브</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="btm">
+            <div class="wrap">
+                <div class="address">
+                    <a href="/kor/main/main.do" class="foot_logo">KOMIPO 한국중부발전</a>
+                    <address>
+                        <p>본사 : (33439)충청남도 보령시 보령북로 160 / </p><br/>
+                        <p>대표자명 : 이영조 / </p>
+                        <p>사업자등록번호 : 120-86-19170 / </p><br/>
+                        <p>대표전화 : <a href="#n" tabindex="-1" data-tel="tel:070-7511-1114" class="mobile_telNo">070-7511-1114</a> / </p>
+                        <p>FAX : 070-7511-1191</p>
+                        <p class="copyright">COPYRIGHT © 2023 KOREA MIDLAND POWER Co., LTD. <br/>ALL RIGHTS RESERVED.</p>
+                    </address>
+                </div>
+                <div class="mark">
+                 <!--   <a href="javascript:void(0);" onclick="popup_opendata();" title="공공데이터 품질 인증서 새창열림" class="opendata">공공데이터 품질 인증마크</a>-->
+                    <a href="http://webwatch.or.kr" target="_blank"
+                        title="WA 품질인증 마크, 웹와치(WebWatch) 2026.04.28 ~ 2027.04.27 바로가기_새창" class="accessibility" aria-lable="과학기술정보통신부 WA(WEB접근성) 품질인증 마크 웹와치(WebEatch) 2026.04.28 ~ 2027.04.27">국가공인 정보통신접근성 품질인증마크</a>
+                    <a href="javascript:void(0);" onclick="popup_ismsp();" title="ISMSP 인증서 새창열림" class="isms-p">ISMSP 인증마크</a>
+                    <a href="/kor/BRD_000021/boardView.do?boardSeq=13479&mnCd=FN120101" title="S&P 보도자료 상세보기" class="awards_logo">S&P logo</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<!--탑으로 이동버튼-->
+    <button type="button" class="top_move">
+        <span class="arrow">상단으로 이동</span>
+    </button>
+	<!--//탑으로 이동버튼-->
+</div>
+
+<script>
+function popup_ismsp(){
+	var _width = "700";
+	var _height = "1200";
+	var _left = Math.ceil((window.screen.width - _width)/2);
+	var _top = Math.ceil((window.screen.width - _height)/2);
+
+	popwindow  = window.open('<c:out value=""/>/images/common/img_pop_ismp.png','popup_ismsp','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,height='+_height+',width='+_width+',left='+_left+',top='+_top);
+  	popwindow.opener = self;
+}
+
+function popup_opendata(){
+	var _width = "700";
+	var _height = "1200";
+	var _left = Math.ceil((window.screen.width - _width)/2);
+	var _top = Math.ceil((window.screen.width - _height)/2);
+
+	popwindow  = window.open('<c:out value=""/>/images/common/img_pop_data.png','popup_opendata','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,height='+_height+',width='+_width+',left='+_left+',top='+_top);
+  	popwindow.opener = self;
+}
+
+</script>
+
+
+		
+	
+	<script>
+		
+        // 규제애로 배너 슬라이드
+        var regulation_banner = $('.regulation_cts .imgArea ul').slick({
+            draggable: false,
+            infinite: true,
+            speed: 600,
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            dots: true,
+            pauseOnHover: true,
+            pauseOnFocus: false,
+            arrows:false,
+            useAutoplayToggleButton: false                               
+        });
+    	
+    	
+        // 배너 컨트롤러
+        $('.regulation_cts .ctr_btn').on('click', function () {
+            var status = $(this).hasClass('pause');
+            if (status == true) {
+                $(this).removeClass('pause');
+                $(this).addClass('play');
+                $(this).text('재생');
+                regulation_banner.slick('slickPause');
+            } else {
+                $(this).removeClass('play');
+                $(this).addClass('pause');
+                $(this).text('일시정지');
+                regulation_banner.slick('slickPlay');
+            }
+        });
+        
+        //모바일로 볼 때 현재 탭 메뉴 표시하기
+        $("#mob_current_btn").html($('.tab_wrap').find("li[class=current]").find("a").html());
+        
+        //페이징
+        $(document).ready(function() {
+		
+		});
+        
+		//TODO : PageindexS
+		function PageindexS(TotalCount, show_rows,
+				TotalPageCount, curr_page, formname, action,
+				formele, imgcon_root){
+			
+			
+			var pagestr = "";
+			var reapAmount= 10;
+			var indexSize = 10;		
+			var currs_page = parseInt(curr_page,10);
+		
+			/* 여기부터 */
+			var fromPage = 1;
+			var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+			if(isMobile){
+				indexSize = 5;
+				fromPage= ((currs_page) - ((currs_page - 1) % indexSize)); 
+			}else{
+				fromPage= ((currs_page) - ((currs_page - 1) % indexSize)); 
+			}
+			
+			
+		       if(TotalPageCount==0){
+		    	   TotalPageCount = 1;
+		       }
+		       var toPage = TotalPageCount;
+		       if (toPage > (fromPage + indexSize - 1)){
+		  	       toPage = (fromPage + indexSize - 1);
+		  	   }    
+		    /* 여기까지 */  
+		    
+		      var prevPage =0;
+		      var reapPrevPage =0;
+		      var prevDisabled = false; 
+		      var reapPrevDisabled = false; 
+		      if(0<(currs_page-1)){
+		         prevPage = currs_page-1;
+		      }else{
+		         prevDisabled = true;
+		      }
+		      if(0<(currs_page-reapAmount)){
+		         reapPrevPage = currs_page-reapAmount;
+		      }else{
+		         reapPrevDisabled = true;
+		      }
+		
+		      
+		      pagestr = pagestr +"<button class=\"first\" onclick=\"board.paging(1);return false;\">"
+		    		  + "첫 페이지로 가기</button>";
+		      
+		      if(!prevDisabled){
+		    	  pagestr = pagestr +"<button class=\"prev\" onclick=\"board.paging("+prevPage+");return false;\">"
+			    		+ "이전 페이지로 가기</button>";
+		      }else{
+		    	  pagestr = pagestr +"<button class=\"prev\" onclick=\"return false;\">이전페이지 보기</button>";
+		      }
+		      
+		      for(var k=fromPage;k<=toPage;k++){ 
+		    	  var index = k;
+		    	  var isCurrentPage = (index == currs_page);  
+				
+		    	  if(isCurrentPage){
+		    		  pagestr = pagestr +"\n<a href=\"#\" class=\"num on\" onclick=\"return false;\">"+index+"</a>";
+		    	  }
+		  
+		    	  if(!isCurrentPage){
+		    		  pagestr = pagestr +"\n<a href=\"#\" class=\"num\" onclick=\"board.paging("+index+");return false;\" >"+index+"</a>";
+		    	  }
+		    	  
+		    	  if(k!=toPage){
+		    		  pagestr = pagestr +" ";
+		    	  }
+		      }
+		      
+		
+		      var nextPage =0;
+		      var reapNextPage =0;
+		      var nextDisabled = false; 
+		      var reapNextDisabled = false; 
+		      if((currs_page+1)<=TotalPageCount){
+		         nextPage = currs_page+1;
+		      }else{
+		         nextDisabled = true;
+		      }
+		      if((currs_page+reapAmount)<=TotalPageCount){
+		         reapNextPage = currs_page+reapAmount;
+		      }else{
+		         reapNextDisabled = true;
+		      }
+		
+		      if(!nextDisabled){  
+		    	  pagestr = pagestr +"<button class=\"next\" onclick=\"board.paging("+nextPage+");return false;\">"
+				    		+ "다음 페이지로 가기</button>";
+		    	  
+		      }else{
+			      pagestr = pagestr +"<button class=\"next\" onclick=\"return false;\">다음 페이지로 가기</button>"; 
+		      }
+		      
+		      pagestr = pagestr +"<button class=\"last\" onclick=\"board.paging("+TotalPageCount+");return false;\">"
+		    		  + "마지막페이지 가기</button>";	      
+			
+			return pagestr;
+		}
+	
+	//]]>
+    </script>
+</body>
+</html>

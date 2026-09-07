@@ -7,11 +7,17 @@ Input   roles/raw/company_ir_roles.csv          the register: one row per compan
         companies/method/companies.csv
 Output  roles/processed/company_ir_roles.csv
 
-Every row must name a known company and role, carry a share in (0, 1] or blank, at least one
-tracker id, and — the point of this register — a ``role_source_key`` that exists in the fetched
-page index whose URL matches the row's ``role_source_url``; the same for ``share_source_key``
-wherever a share is stated. A row that cites a page not on disk is rejected, so no role and no
-share can enter the model without a page a reader can open.
+Every row must name a known company and role, carry a share in (0, 1] or blank, a ``gem_unit_id``,
+and — the point of this register — a ``role_source_key`` that exists in the fetched page index
+whose URL matches the row's ``role_source_url``; the same for ``share_source_key`` wherever a share
+is stated. **The quote is checked against the page**: every substantial fragment of
+``role_quote`` and ``share_quote`` has to appear in the saved file's own text, so a sentence
+cannot be paraphrased into the register or invented. A row that cites a page not on disk is
+rejected, so no role and no share can enter the model without a page a reader can open.
+
+Rows are keyed to units, not to stations. A company page states a role on a named project - "Nghi
+Son II", "Matarbari Phase I", "Mong Duong 2" - and a station often carries phases that project
+never touched, so a station-level row would attribute units the source says nothing about.
 
 This register outranks the machine readings (tracker fields, wiki sentences) in
 ``aggregate_roles.py``: a company's own words, or a project page quoted with its sentence, beat a
@@ -26,9 +32,13 @@ Run from the repository root:  .venv/bin/python script/power/roles/extract_compa
 
 from __future__ import annotations
 
+import html
 import re
 import sys
+import unicodedata
 from pathlib import Path
+
+from pypdf import PdfReader
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "model"))
 from power_io import DATA, REPO, num, read_csv, write_csv  # noqa: E402
@@ -60,6 +70,36 @@ FIELDS = [
     "accessed_date",
 ]
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+#: A quote may elide the middle of a sentence; each remaining fragment must still be on the page.
+ELLIPSIS = re.compile(r"\.\.\.|\u2026")
+#: Fragments shorter than this are too weak to be worth checking against the page.
+MIN_FRAGMENT = 24
+
+
+def page_text(path: Path) -> str:
+    """The readable text of a saved page: tags and scripts out, whitespace collapsed."""
+    if path.suffix.lower() == ".pdf":
+        text = " ".join((page.extract_text() or "") for page in PdfReader(path).pages)
+    else:
+        raw = path.read_text(errors="replace")
+        raw = re.sub(r"<script.*?</script>|<style.*?</style>", " ", raw, flags=re.S)
+        text = html.unescape(re.sub(r"<[^>]+>", " ", raw))
+    return normalise(text)
+
+
+def normalise(text: str) -> str:
+    """Text with compatibility forms, curly quotes and runs of whitespace flattened."""
+    text = unicodedata.normalize("NFKC", text)
+    for a, b in (("\u2018", "'"), ("\u2019", "'"), ("\u201c", '"'), ("\u201d", '"')):
+        text = text.replace(a, b)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def quote_is_on_the_page(quote: str, text: str) -> bool:
+    """Whether every substantial fragment of the quote appears in the page's own text."""
+    fragments = [f.strip() for f in ELLIPSIS.split(normalise(quote))]
+    checked = [f for f in fragments if len(f) >= MIN_FRAGMENT]
+    return all(f in text for f in checked or fragments)
 
 
 def validate(
@@ -67,6 +107,7 @@ def validate(
     vocab: dict[str, dict[str, str]],
     companies: dict[str, dict[str, str]],
     pages: dict[str, dict[str, str]],
+    page_dir: Path | None = None,
 ) -> list[str]:
     """Problems found in the register, one message per failing row and check."""
     problems = []
@@ -79,8 +120,11 @@ def validate(
         share = num(r["share"])
         if r["share"] and (share is None or not 0 < share <= 1):
             problems.append(f"{where}: share must be blank or in (0, 1]")
-        if not r["gem_unit_id"] and not r["gem_location_id"]:
-            problems.append(f"{where}: needs gem_unit_id or gem_location_id")
+        if not r["gem_unit_id"]:
+            problems.append(
+                f"{where}: needs gem_unit_id - a company page states a role on a named project, "
+                "so the row is keyed to that project's units, never to a whole station"
+            )
         if not DATE.match(r["accessed_date"]):
             problems.append(f"{where}: accessed_date must be YYYY-MM-DD")
         for kind in ("role", "share"):
@@ -97,8 +141,16 @@ def validate(
                 problems.append(f"{where}: {kind}_source_key {key!r} is not in the page index")
             elif page["url"] != url:
                 problems.append(f"{where}: {kind}_source_url does not match the page index")
-            if not r[f"{kind}_quote"].strip():
+            quote = r[f"{kind}_quote"].strip()
+            if not quote:
                 problems.append(f"{where}: {kind}_quote is required (the sentence read)")
+            elif page is not None and page_dir is not None:
+                path = page_dir / page["file"]
+                if path.exists() and not quote_is_on_the_page(quote, page_text(path)):
+                    problems.append(
+                        f"{where}: {kind}_quote is not in {page['file']} - a quote has to be the "
+                        "page's own words"
+                    )
     return problems
 
 
@@ -112,7 +164,7 @@ def main() -> None:
     pages = {p["source_key"]: p for p in read_csv(PAGES)} if PAGES.exists() else {}
     vocab = {v["role_tier2"]: v for v in read_csv(VOCAB)}
     companies = {c["company_id"]: c for c in read_csv(COMPANIES)}
-    problems = validate(rows, vocab, companies, pages)
+    problems = validate(rows, vocab, companies, pages, page_dir=PAGES.parent)
     if problems:
         raise SystemExit("company register rejected:\n  " + "\n  ".join(problems))
     out: list[dict[str, object]] = []

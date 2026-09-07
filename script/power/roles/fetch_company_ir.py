@@ -18,8 +18,10 @@ from __future__ import annotations
 
 import hashlib
 import ssl
+import subprocess
 import sys
 import time
+import urllib.error
 import urllib.request
 from datetime import date
 from pathlib import Path
@@ -50,8 +52,13 @@ INDEX_FIELDS = [
     "bytes",
     "sha256",
     "fetched",
+    "fetched_with",
     "what_it_states",
 ]
+#: Some Korean utility sites serve an incomplete certificate chain or refuse Python's handshake.
+#: The system curl, which verifies against the operating system's trust store, still reaches them,
+#: so it is the documented fallback rather than turning verification off.
+CURL = "/usr/bin/curl"
 
 
 def fetch(url: str, context: ssl.SSLContext) -> tuple[bytes, str]:
@@ -59,6 +66,21 @@ def fetch(url: str, context: ssl.SSLContext) -> tuple[bytes, str]:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(request, context=context, timeout=120) as response:
         return response.read(), response.headers.get("Content-Type", "")
+
+
+def fetch_with_curl(url: str, into: Path) -> tuple[bytes, str]:
+    """The page bytes and content type via the system curl, which still verifies the certificate."""
+    proc = subprocess.run(
+        [
+            CURL, "--silent", "--show-error", "--fail", "--location", "--max-time", "120",
+            "--user-agent", USER_AGENT, "--write-out", "%{content_type}",
+            "--output", str(into), url,
+        ],
+        capture_output=True,
+        check=True,
+        text=True,
+    )  # fmt: skip
+    return into.read_bytes(), proc.stdout.strip()
 
 
 def main() -> None:
@@ -76,8 +98,24 @@ def main() -> None:
         if key in known and path.exists():
             index.append({**known[key], "what_it_states": source["what_it_states"]})
             continue
+        transport = "urllib"
         try:
             body, content_type = fetch(source["url"], context)
+        except urllib.error.URLError as exc:
+            if not isinstance(exc.reason, ssl.SSLError):
+                print(f"  FAILED {key}: {exc}")
+                failed += 1
+                continue
+            # An incomplete certificate chain or a handshake Python refuses: try the system curl,
+            # which verifies against the operating system's trust store.
+            print(f"  {key}: python TLS failed ({exc.reason}); retrying with the system curl")
+            try:
+                body, content_type = fetch_with_curl(source["url"], path)
+                transport = "curl_system_trust"
+            except Exception as curl_exc:  # noqa: BLE001 - one unreachable page must not stop us
+                print(f"  FAILED {key}: {curl_exc}")
+                failed += 1
+                continue
         except Exception as exc:  # noqa: BLE001 - one unreachable page must not stop the run
             print(f"  FAILED {key}: {exc}")
             failed += 1
@@ -94,6 +132,7 @@ def main() -> None:
                 "bytes": len(body),
                 "sha256": hashlib.sha256(body).hexdigest(),
                 "fetched": date.today().isoformat(),
+                "fetched_with": transport,
                 "what_it_states": source["what_it_states"],
             }
         )
