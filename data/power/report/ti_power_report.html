@@ -583,6 +583,8 @@ function computeFacts() {
   const jp = one("SELECT company_name, units, ti_lifetime_full_tco2 f, ti_lifetime_weighted_tco2 w FROM ti_power_company WHERE scenario = 'S1' AND role_tier1 = 'equity_owner' ORDER BY ABS(ti_lifetime_full_tco2 - COALESCE(ti_lifetime_weighted_tco2, 0)) DESC LIMIT 1");
   f.gap_company = jp.company_name; f.gap_full = fmt(jp.f / 1e6, 0); f.gap_weighted = fmt(jp.w / 1e6, 0); f.gap_units = fmtN(jp.units);
   f.default_share = pct(one("SELECT AVG(CASE WHEN heat_rate_source = 'default' OR heat_rate_source = 'not_applicable' THEN 1.0 ELSE 0 END) s FROM ti_power_by_unit WHERE scenario = 'S1'").s, 0);
+  f.country_cf_share = pct(one("SELECT AVG(CASE WHEN cf_source = 'country_implied' THEN 1.0 ELSE 0 END) s FROM ti_power_by_unit WHERE scenario = 'S1'").s, 0);
+  f.national_ef_share = pct(one("SELECT AVG(CASE WHEN ef_basis IN ('national', 'national_adopted') THEN 1.0 ELSE 0 END) s FROM ti_power_by_unit WHERE scenario = 'S1' AND ef_basis <> 'not_applicable'").s, 0);
   f.as_of = one('SELECT MAX(accessed_date) d FROM sources WHERE accessed_date <> ""').d;
   f.n_sources = one('SELECT COUNT(*) n FROM sources').n;
   f.n_tables = one("SELECT COUNT(*) n FROM tables WHERE kind = 'output'").n;
@@ -642,9 +644,12 @@ the share stays a column beside the full figure, so any weighting is a query rat
 largest gap between full and share-weighted attribution is <span data-f="gap_company"></span>:
 <span data-f="gap_full"></span> Mt at full attribution across <span data-f="gap_units"></span> units,
 <span data-f="gap_weighted"></span> Mt at the stated shares &mdash; minority stakes in many plants.</p>
-<div class="callout"><p><b>Data quality.</b> The August 2026 tracker publishes no unit-level heat rate or capacity factor,
-so <span data-f="default_share"></span> of assessed units run on technology defaults, and every fossil unit on IPCC
-default factors until the destination's own inventory factor is filed: Layer 2 is tier C throughout.</p></div>`,
+<div class="callout"><p><b>Data quality.</b> The August 2026 tracker publishes no unit-level heat rate or capacity
+factor. Both gaps are now filled from published data rather than from one global number:
+<span data-f="country_cf_share"></span> of assessed units take their destination's own capacity factor for that fuel,
+and <span data-f="national_ef_share"></span> of the units that burn something take their destination's own emission
+factor. What is left is the heat rate, a class default on <span data-f="default_share"></span> of assessed units,
+and that is what holds every combustion unit's Layer 2 at tier C.</p></div>`,
   benchmarks: `<h2>4 &middot; What each destination's grid emits, and where its government says it is going</h2>
 <p class="lead">The benchmark is the destination's grid intensity: observed to the latest Ember year, then moved
 along <b>S1</b>, the log-linear trend since 2015, and <b>S2</b>, the pathway read from the destination's NDC as
