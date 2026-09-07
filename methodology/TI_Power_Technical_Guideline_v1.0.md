@@ -199,10 +199,23 @@ reported under S1 and listed in the S2 exclusions with the reason.
 
 ### 5.2 Mandatory sensitivity parameters
 
-Lifetime (technology default ± the tracker's observed retirement spread), capacity factor
-(default vs tracker), emission factor (IPCC lower and upper bounds), and, where a national factor
-exists, national vs IPCC. Reported as ranges around the central value; no variant is a new
-central value.
+Four dimensions, each varied one at a time and only for the units whose value is a class default:
+
+| dimension | band | applies to |
+|---|---|---|
+| operating lifetime | the technology default's low and high years | units with no published retirement year |
+| capacity factor | the technology default's low and high | units with no published capacity factor |
+| thermal efficiency | the technology default's low and high net-calorific-value efficiency, which moves the heat rate 3.6/η and so the unit's intensity | units with no published heat rate |
+| fuel emission factor | the IPCC 95 % lower and upper bound | fossil units on an IPCC default factor |
+
+Where a national emission factor exists, national vs IPCC is the fifth comparison. Results are
+reported as ranges around the central value; **no variant is a new central value**.
+
+Every class default has to be checked against a document a reader can open. The efficiency check
+is machine-run: the heat rate is read out of the cited report's own text, converted from the
+higher heating value the report uses to the net calorific value the IPCC factors are stated on,
+and compared with the transcription, with the gap published per class. A class the documents on
+file do not cover is labelled an assumption rather than a citation.
 
 ### 5.3 Data quality declaration
 

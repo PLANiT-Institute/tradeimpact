@@ -462,28 +462,30 @@ def test_sensitivity_varies_one_input_at_a_time_around_the_published_value() -> 
         "gem_unit_id": "G1", "scenario": "S2", "capacity_mw": "600", "capacity_factor": "0.55",
         "intensity_gco2_per_kwh": "873.231", "start_year": "2024", "end_year": "2063",
         "analysis_year": "2026", "lifetime_source": "default", "cf_source": "default",
-        "heat_rate_mj_per_kwh": "9.2308", "ef_kgco2_per_tj": "94600",
+        "heat_rate_mj_per_kwh": "9.2308", "heat_rate_source": "default",
+        "ef_kgco2_per_tj": "94600",
         "ef_basis": "ipcc_default",
         "biogenic": "no", "fuel_type": "coal", "fuel_id": "bituminous",
         "technology": "supercritical",
     }  # fmt: skip
     d = {"fuel_type": "coal", "technology_pattern": "super", "lifetime_years": "40",
          "lifetime_low_years": "30", "lifetime_high_years": "50", "capacity_factor": "0.55",
-         "cf_low": "0.40", "cf_high": "0.75"}  # fmt: skip
+         "cf_low": "0.40", "cf_high": "0.75", "efficiency_lhv": "0.39",
+         "efficiency_low_lhv": "0.363", "efficiency_high_lhv": "0.417"}  # fmt: skip
     bound = {"ef_low_kgco2_per_tj": "89500", "ef_high_kgco2_per_tj": "99700"}
     rows = sens.variants_for(unit, d, bound, grid)
     by = {(r["dimension"], r["variant"]): r for r in rows}
-    assert {k[0] for k in by} == {"lifetime", "capacity_factor", "emission_factor"}
-    central = {
-        by[(dim, "central")]["ti_lifetime_tco2"]
-        for dim in ("lifetime", "capacity_factor", "emission_factor")
-    }
+    dims = ("lifetime", "capacity_factor", "efficiency", "emission_factor")
+    assert {k[0] for k in by} == set(dims)
+    central = {by[(dim, "central")]["ti_lifetime_tco2"] for dim in dims}
     assert len(central) == 1  # one published value, restated identically on every dimension
     c = central.pop()
-    for dim in ("lifetime", "capacity_factor", "emission_factor"):
+    for dim in dims:
         lo, hi = by[(dim, "low")]["ti_lifetime_tco2"], by[(dim, "high")]["ti_lifetime_tco2"]
         assert min(lo, hi) < c < max(lo, hi), dim
     assert by[("lifetime", "high")]["parameter"] == 50
+    # A higher efficiency burns less fuel per kWh, so it lowers the emissions added.
+    assert by[("efficiency", "high")]["ti_lifetime_tco2"] < c
 
 
 @pytest.mark.skipif(not REPORT.exists(), reason="report not built")

@@ -1,0 +1,6 @@
+fuel_type,technology_pattern,source_key,document_technology,heat_rate_basis,hhv_to_lhv_ratio,note
+coal,ultra-?super|USC,eia_capital_cost_performance,Ultra Supercritical Coal (USC),hhv,1.05,"EIA Table 1 states the nominal heat rate for a 650 MW ultra-supercritical unit; the ratio converts the higher heating value the US convention uses to the net (lower) heating value the IPCC emission factors are stated on"
+gas,combined|CCGT|ICCC|ISCC|AFC,eia_capital_cost_performance,Natural Gas Combined Cycle (NGCC),hhv,1.108,"EIA Table 1, 702 MW combined cycle; the gas HHV/LHV ratio is the IPCC 2006 convention for natural gas"
+gas,gas turbine|open|OCGT|simple|peaker,eia_capital_cost_performance,Combustion Turbine (CT),hhv,1.108,"EIA Table 1, 100 MW combustion turbine"
+gas,internal combustion|engine,eia_capital_cost_performance,Reciprocating Internal Combustion Engine (RICE),hhv,1.108,"EIA Table 1, 85 MW reciprocating engine"
+bioenergy,.*,eia_capital_cost_performance,Biomass (BBFB),hhv,1.06,"EIA Table 1, 50 MW bubbling fluidised-bed biomass unit; the wood HHV/LHV ratio"

@@ -22,3 +22,6 @@ ti_power_by_role,origin,gem_wiki,C,role read from a GEM wiki sentence by keyword
 ti_power_by_role,origin,company_ir,A,role or share read from a company disclosure or project page that is on disk and hash-recorded
 company_ir_roles,role_tier2,.*,A,read from a page in raw/company_ir with the sentence quoted on the row
 ti_power_by_role,role_tier2,.*_unspecified,C,the source names the tier-1 role but not which scope within it
+technology_defaults_check,verdict,agrees,B,class efficiency confirmed against a heat rate read out of a document on disk (within 10 % relative)
+technology_defaults_check,verdict,differs,C,class efficiency more than 10 % from the document's own heat rate for that class
+technology_defaults_check,verdict,no_document_value,C,no document on file states a heat rate for this technology class

@@ -33,12 +33,14 @@ FETCH = [
     "geography/fetch_map_geometry.py",
     "roles/fetch_gem_wiki.py",
     "roles/fetch_company_ir.py",
+    "projects/fetch_technology_documents.py",
 ]
 STEPS = [
     "geography/extract_country_codes.py",
     "grid/extract_owid_grid.py",
     "emission_factors/extract_emission_factors.py",
     "projects/extract_gem_tracker.py",
+    "projects/verify_technology_defaults.py",
     "roles/extract_gem_roles.py",
     "roles/extract_wiki_roles.py",
     "roles/extract_roles.py",

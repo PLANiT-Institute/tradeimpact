@@ -18,6 +18,8 @@ that only a person can obtain.
 | extract | `grid/extract_owid_grid.py` | raw CSV, codes | `grid/processed/grid_intensity.csv` |
 | extract | `emission_factors/extract_emission_factors.py` | IPCC transcription (verified against the PDF), national factors (hand) | `emission_factors/processed/emission_factors.csv` |
 | extract | `projects/extract_gem_tracker.py` | GEM tracker xlsx (**hand**), column map, overrides, companies, roles | `projects/processed/projects_gem.csv` |
+| fetch | `projects/fetch_technology_documents.py` | the documents listed in `projects/method/technology_documents.csv` | `projects/raw/technology_documents/*` + `index.csv` |
+| extract | `projects/verify_technology_defaults.py` | technology defaults, the document map, the fetched documents | `projects/processed/technology_defaults_check.csv` (document heat rate vs the transcription) |
 | fetch | `roles/fetch_gem_wiki.py` | GEM wiki API (page per plant) | `roles/raw/gem_wiki/*.txt` + `index.csv` |
 | fetch | `roles/fetch_company_ir.py` | the pages listed in `roles/method/company_ir_sources.csv` | `roles/raw/company_ir/*` + `index.csv` |
 | extract | `roles/extract_gem_roles.py` | projects (owner, parent, operator), companies, vocabulary | `roles/processed/gem_tracker_roles.csv` (investment and operation) |
@@ -29,7 +31,7 @@ that only a person can obtain.
 | derive | `targets/derive_power_rates.py` | grid, projects, anchors | `targets/processed/emission_targets_power.csv` + exclusions |
 | model | `model/build_reference_power.py` | grid, rates, projects, defaults | `output/reference_power.csv` |
 | model | `model/build_ti_power.py` | projects, defaults, factors, reference | `output/ti_power_annual.csv`, `ti_power_by_unit.csv`, `ti_power_excluded.csv` |
-| model | `model/aggregate_roles.py` | register, GEM ownership, by-unit results, scope | `output/ti_power_by_role.csv`, `ti_power_company.csv` |
+| model | `model/aggregate_roles.py` | the four role registers, by-unit results, vocabulary, scope | `output/ti_power_by_role.csv`, `ti_power_company.csv` |
 | model | `model/build_sensitivity_power.py` | by-unit results, reference, defaults, factors | `output/ti_power_sensitivity.csv` |
 | model | `model/build_database.py` | every CSV, value tiers, geometry | `database/tradeimpact_power.sqlite` |
 | report | `report/build_report.py` + `template.html` | (constants only; the page reads the database) | `report/ti_power_report.html` |

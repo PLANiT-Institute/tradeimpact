@@ -34,11 +34,32 @@ on disk, `run_all.py` stops at this step with `[hand]`.
   found and fails naming any required field it cannot find.
 - `method/country_name_overrides.csv` — tracker country names that do not match the geography
   table's common or official name. The extractor stops and lists any name still unmapped.
-- `method/technology_defaults.csv` — **HAND-TRANSCRIBED defaults, tier C**: expected lifetime,
-  capacity factor and LHV efficiency by fuel and combustion technology, each with the document
-  it is read from and `verified = no` until checked against it. Used only where the tracker
+- `method/technology_defaults.csv` — **HAND-TRANSCRIBED class defaults, tier C on the unit**:
+  expected lifetime, capacity factor and net-calorific-value efficiency by fuel and combustion
+  technology, each with a low and high band the sensitivity varies. Used only where the tracker
   publishes no unit-level heat rate or capacity factor; the result cell then carries
-  `heat_rate_source = default` / `cf_source = default`.
+  `heat_rate_source = default` / `cf_source = default`. The `verified` column says what stands
+  behind the row:
+
+  | verified | meaning |
+  |---|---|
+  | `document` | the efficiency is checked against a heat rate read out of a document in `raw/technology_documents/` by `verify_technology_defaults.py`; the gap is published in `processed/technology_defaults_check.csv` |
+  | `assumption` | no document on file states a heat rate for that technology class; the value keeps the efficiency order against the classes that are covered |
+  | `publisher_page` | a zero-stack fuel whose lifetime and capacity factor are read from the publisher's page cited, not machine-checked |
+
+  Two corrections came out of that check (2026-09-07). The IEA-ETSAP E01/E02 technology briefs
+  the first version cited are **no longer served** — iea-etsap.org redirects those PDF paths to
+  its home page — so the efficiency citation moved to the EIA report, which is live and
+  machine-readable, and the bioenergy efficiency became the document-derived 0.268 in place of a
+  transcribed 0.30. And the 40-year coal lifetime is a **project assumption**, not the Global
+  Energy Monitor convention it was attributed to: GEM's own method page states 35 years for its
+  lifetime CO2 estimates. 35 sits inside the 30–50 year sensitivity band; the 0.55 capacity factor
+  is the global average that same page states for 2023.
+- `method/technology_documents.csv` / `method/technology_document_values.csv` — the documents to
+  download and, per technology class, which number in which document the transcription is checked
+  against and on which heating value it is stated.
+- `raw/technology_documents/` — those documents as served, with `index.csv` carrying each one's
+  URL, size and SHA-256 (`fetch_technology_documents.py`).
 
 ## Processed output
 

@@ -43,7 +43,14 @@ by a company ([`roles`](../roles/method/method.md)). The result set therefore ha
    ([`emission_factors`](../emission_factors/method/method.md), tier A) and the IPCC 2006 default
    otherwise (tier C, with the IPCC bounds carried for the sensitivity). Heat rate and capacity
    factor: the tracker's unit-level estimate where published (tier B), the technology default
-   otherwise (tier C). Every choice is a column on the result row.
+   otherwise (tier C). Every choice is a column on the result row. The class defaults are checked
+   against the documents they are cited from: `projects/verify_technology_defaults.py` reads the
+   heat rate out of the EIA report's own text, converts it to the net-calorific-value basis the
+   IPCC factors use and publishes the gap per class in
+   `projects/processed/technology_defaults_check.csv`. That check retired two claims — the
+   IEA-ETSAP briefs cited first are no longer served, and the 40-year coal lifetime is this
+   project's assumption rather than the Global Energy Monitor convention (GEM's method page states
+   35 years, inside the sensitivity band).
 3. **Roles come from four sources, in order of standing** ([`roles`](../roles/method/method.md)):
    the hand register; the companies' own disclosures and project pages, each row citing the page
    on disk that states the role and, separately, the page that states the share, with the sentence
@@ -132,11 +139,16 @@ switch as a filter. Changing a setting and re-running the pipeline is the whole 
 
 ## Sensitivity
 
-`ti_power_sensitivity.csv` varies, one at a time, the operating lifetime and the capacity factor
-over the technology-default bands and the fuel emission factor over the IPCC 95 % bounds, for
-every unit whose input is a default, under both scenarios; each dimension carries a central row
-identical to the published result. Units with a published retirement year are not varied on
-lifetime.
+`ti_power_sensitivity.csv` varies one input at a time, for every unit whose input is a class
+default, under both scenarios; each dimension carries a central row identical to the published
+result, and no variant is a new central value:
+
+| dimension | band | not varied where |
+|---|---|---|
+| lifetime | the technology default's low and high years | the tracker publishes a retirement year |
+| capacity_factor | the technology default's low and high | the tracker publishes a capacity factor |
+| efficiency | the default's low and high net-calorific-value efficiency, which moves the heat rate 3.6/η and so the intensity | the tracker publishes a heat rate, or the fuel has no stack CO2 |
+| emission_factor | the IPCC 95 % lower and upper bound | a national factor is on file, or the CO2 is biogenic |
 
 ## Database and report
 
@@ -153,15 +165,16 @@ read, other inputs, annual impact, total impact by company and role, sources) wi
 ## Run order
 
 `script/power/run_all.py [--fetch]`: geography → grid → emission factors → projects → GEM ownership
-→ wiki roles → hand roles → NDC anchors → rates → reference → unit impact → attribution →
+→ default check → GEM ownership → wiki roles → hand roles → company roles → NDC anchors → rates
+→ reference → unit impact → attribution →
 sensitivity → database → report → ruff → pytest. Exit 3 with `[hand]` when a
 hand-gathered file is missing; exit 1 on any other failure. Scripts and their inputs and outputs
 are tabulated in [`script/power/README.md`](../../../script/power/README.md).
 
 ## Status (2026-09-07)
 
-The pipeline runs end to end on the August 2026 tracker (v3). 711 overseas units in
-71 countries are in scope — 553 carry an S1 result and 458 an S2 one, on the
+The pipeline runs end to end on the August 2026 tracker (v3). 735 overseas units in
+71 countries are in scope — 575 carry an S1 result and 470 an S2 one, on the
 43 of 71 destinations whose latest NDC states a level a pathway can be read from. Four of
 those units (Vung Ang 2 Phase 2 Units 1 and 2, Banten Suralaya Units 9 and 10, the Jawa 9 and 10
 project) are in scope only because the company register names them: the tracker's owner field

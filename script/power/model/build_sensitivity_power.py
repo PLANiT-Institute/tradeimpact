@@ -3,7 +3,8 @@
 Inputs
     output/ti_power_by_unit.csv                  the central inputs of every assessed unit
     output/reference_power.csv                   destination grid path per scenario
-    projects/method/technology_defaults.csv      low / high bands for lifetime and capacity factor
+    projects/method/technology_defaults.csv      low / high bands for lifetime, capacity factor
+                                                 and thermal efficiency
     emission_factors/processed/emission_factors.csv   IPCC 95 % bounds per fuel
 Output
     output/ti_power_sensitivity.csv
@@ -12,6 +13,8 @@ Output
 Dimensions (guideline v1.0 §5.2), each with a central row identical to the published result:
     lifetime          technology default -> lifetime_low_years / lifetime_high_years
     capacity_factor   technology default -> cf_low / cf_high
+    efficiency        technology default -> efficiency_low_lhv / efficiency_high_lhv, which move
+                      the heat rate 3.6/eta and so the unit's intensity (default heat rates only)
     emission_factor   IPCC default -> its lower / upper bound (fossil, non-biogenic units only)
 No variant is a new central value; the published table carries the ranges beside the result.
 
@@ -25,7 +28,12 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_ti_power import HOURS, intensity_gco2_per_kwh, unit_flow  # noqa: E402
+from build_ti_power import (  # noqa: E402
+    HOURS,
+    MJ_PER_KWH,
+    intensity_gco2_per_kwh,
+    unit_flow,
+)
 from power_io import DATA, OUT, REPO, hand_file_required, num, read_csv, write_csv  # noqa: E402
 
 BY_UNIT = OUT / "ti_power_by_unit.csv"
@@ -114,6 +122,15 @@ def variants_for(
             result = totals(capacity, alt_cf, intensity, path, years, analysis_year)
             out.append(row(u, "capacity_factor", variant, alt_cf, result))
     heat = num(u["heat_rate_mj_per_kwh"])
+    # Efficiency: only where the heat rate is a technology default. A published heat rate is the
+    # unit's own and is not varied; a zero-stack fuel has no intensity to move.
+    if d and heat and u["heat_rate_source"] == "default" and d["efficiency_lhv"]:
+        out.append(row(u, "efficiency", "central", float(d["efficiency_lhv"]), central))
+        for variant, key in (("low", "efficiency_low_lhv"), ("high", "efficiency_high_lhv")):
+            eta = float(d[key])
+            alt_i = intensity_gco2_per_kwh(MJ_PER_KWH / eta, float(u["ef_kgco2_per_tj"]))
+            result = totals(capacity, cf, alt_i, path, years, analysis_year)
+            out.append(row(u, "efficiency", variant, eta, result))
     if bound and heat and u["biogenic"] != "yes":
         out.append(row(u, "emission_factor", "central", float(u["ef_kgco2_per_tj"]), central))
         for variant, key in (("low", "ef_low_kgco2_per_tj"), ("high", "ef_high_kgco2_per_tj")):
