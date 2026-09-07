@@ -32,16 +32,14 @@ Run from the repository root:  .venv/bin/python script/power/roles/extract_compa
 
 from __future__ import annotations
 
-import html
 import re
 import sys
-import unicodedata
 from pathlib import Path
 
-from pypdf import PdfReader
-
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "model"))
 from power_io import DATA, REPO, num, read_csv, write_csv  # noqa: E402
+from provenance import page_text, quote_is_on_the_page  # noqa: E402
 
 DATASET = DATA / "roles"
 RAW = DATASET / "raw" / "company_ir_roles.csv"
@@ -70,36 +68,6 @@ FIELDS = [
     "accessed_date",
 ]
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-#: A quote may elide the middle of a sentence; each remaining fragment must still be on the page.
-ELLIPSIS = re.compile(r"\.\.\.|\u2026")
-#: Fragments shorter than this are too weak to be worth checking against the page.
-MIN_FRAGMENT = 24
-
-
-def page_text(path: Path) -> str:
-    """The readable text of a saved page: tags and scripts out, whitespace collapsed."""
-    if path.suffix.lower() == ".pdf":
-        text = " ".join((page.extract_text() or "") for page in PdfReader(path).pages)
-    else:
-        raw = path.read_text(errors="replace")
-        raw = re.sub(r"<script.*?</script>|<style.*?</style>", " ", raw, flags=re.S)
-        text = html.unescape(re.sub(r"<[^>]+>", " ", raw))
-    return normalise(text)
-
-
-def normalise(text: str) -> str:
-    """Text with compatibility forms, curly quotes and runs of whitespace flattened."""
-    text = unicodedata.normalize("NFKC", text)
-    for a, b in (("\u2018", "'"), ("\u2019", "'"), ("\u201c", '"'), ("\u201d", '"')):
-        text = text.replace(a, b)
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def quote_is_on_the_page(quote: str, text: str) -> bool:
-    """Whether every substantial fragment of the quote appears in the page's own text."""
-    fragments = [f.strip() for f in ELLIPSIS.split(normalise(quote))]
-    checked = [f for f in fragments if len(f) >= MIN_FRAGMENT]
-    return all(f in text for f in checked or fragments)
 
 
 def validate(

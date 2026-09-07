@@ -46,6 +46,7 @@ ir = load("roles/extract_company_ir_roles.py")
 anchors = load("targets/extract_ndc_anchors.py")
 wiki = load("roles/extract_wiki_roles.py")
 cf_country = load("utilisation/extract_capacity_factors.py")
+provenance = load("../provenance.py")
 
 
 def read(path: Path) -> list[dict[str, str]]:
@@ -389,6 +390,18 @@ def test_a_unit_on_its_destinations_capacity_factor_carries_that_countrys_band()
             continue
         low, high = float(r["cf_low"]), float(r["cf_high"])
         assert 0 < low <= float(r["capacity_factor"]) <= high <= 1, r["gem_unit_id"]
+
+
+def test_the_quote_checker_flattens_typography_and_honours_elisions(tmp_path: Path) -> None:
+    """Curly quotes, non-breaking spaces and line breaks must not fail an honest quote."""
+    page = tmp_path / "release.html"
+    page.write_text(
+        "<p>The consortium\u2019s scope covers\u00a0the boiler\nand its auxiliaries.</p>"
+    )
+    text = provenance.page_text(page)
+    assert provenance.quote_is_on_the_page("The consortium's scope covers the boiler", text)
+    assert provenance.quote_is_on_the_page("The consortium's scope ... its auxiliaries", text)
+    assert not provenance.quote_is_on_the_page("The consortium supplied the turbine hall", text)
 
 
 def test_a_register_quote_must_be_the_pages_own_words(tmp_path: Path) -> None:
