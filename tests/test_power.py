@@ -148,13 +148,13 @@ def test_ndc_sentences_are_read_the_way_the_rule_says() -> None:
 
 
 def test_wiki_sentences_are_read_by_company_type_and_role_words() -> None:
-    """EPC words for a builder, loan words for a bank; a bare name or news noise reads nothing."""
+    """A wiki sentence gives the tier-1 role only, so the tier-2 key is always *_unspecified."""
     epc = "In March 2013, Korean company Daelim Industrial took over the project as EPC contractor."
-    assert wiki.classify(epc, "epc_contractor", (30, 47)) == "epc_contractor"
+    assert wiki.classify(epc, "epc_contractor", (30, 47)) == "epc_unspecified"
     loan = "In June 2016, JBIC approved a US$3.4 billion loan agreement for the plant."
-    assert wiki.classify(loan, "eca_bank", (14, 18)) == "lender"
+    assert wiki.classify(loan, "eca_bank", (14, 18)) == "loan_unspecified"
     cover = "The commercial bank loans are being insured by Kexim and NEXI."
-    assert wiki.classify(cover, "eca_insurer", (57, 61)) == "eca_cover"  # an insurer covers
+    assert wiki.classify(cover, "eca_insurer", (57, 61)) == "cover_unspecified"  # insurer covers
     named_only = "Affected firms would include Kepco and Korea Trade Insurance Corporation."
     assert wiki.classify(named_only, "eca_insurer", (38, 72)) is None
     noise = "JBIC was considering funding 60% of the plant's construction."
@@ -167,7 +167,7 @@ def test_wiki_sentences_are_read_by_company_type_and_role_words() -> None:
 
 
 def test_roles_are_attributed_separately_and_shares_stay_columns() -> None:
-    """Two roles on one unit give two rows, totals stay per role, weighted = share x full."""
+    """Two tier-1 roles on one unit give two rows, totals per role, weighted = share x full."""
     unit = {
         "gem_unit_id": "G1",
         "gem_location_id": "L1",
@@ -192,7 +192,9 @@ def test_roles_are_attributed_separately_and_shares_stay_columns() -> None:
             "company_country": "KR",
             "gem_unit_id": "G1",
             "gem_location_id": "",
-            "role": "epc_contractor",
+            "role_tier1": "epc_contractor",
+            "role_tier2": "epc_lead",
+            "role_tier2_all": "epc_lead|epc_civil_works",
             "phase": "construction",
             "share": "0.5",
             "share_basis": "contract_share",
@@ -204,8 +206,10 @@ def test_roles_are_attributed_separately_and_shares_stay_columns() -> None:
             "company_country": "KR",
             "gem_unit_id": "",
             "gem_location_id": "L1",
-            "role": "equity_owner",
-            "phase": "operation",
+            "role_tier1": "equity_owner",
+            "role_tier2": "equity_direct",
+            "role_tier2_all": "equity_direct",
+            "phase": "investment",
             "share": "",
             "share_basis": "equity_share",
             "source_url": "https://example.org",
@@ -213,24 +217,27 @@ def test_roles_are_attributed_separately_and_shares_stay_columns() -> None:
     ]
     rows = agg.attribute(role_rows, [unit])
     assert len(rows) == 2
-    epc = next(r for r in rows if r["role"] == "epc_contractor")
+    epc = next(r for r in rows if r["role_tier1"] == "epc_contractor")
     assert epc["ti_lifetime_full_tco2"] == 1000.0 and epc["ti_lifetime_weighted_tco2"] == 500.0
-    owner = next(r for r in rows if r["role"] == "equity_owner")
+    assert epc["role_tier2"] == "epc_lead"  # the most specific scope on file is the primary
+    owner = next(r for r in rows if r["role_tier1"] == "equity_owner")
     assert owner["ti_lifetime_weighted_tco2"] == ""  # no share on file: blank, never assumed
     totals = agg.company_totals(rows)
-    assert {(t["company_id"], t["role"]) for t in totals} == {
+    assert {(t["company_id"], t["role_tier1"]) for t in totals} == {
         ("doosan_enerbility", "epc_contractor"),
         ("kepco", "equity_owner"),
     }
+    epc_total = next(t for t in totals if t["company_id"] == "doosan_enerbility")
+    assert epc_total["role_tier2_all"] == "epc_civil_works|epc_lead"
 
 
 def test_role_register_validation_names_the_failing_row() -> None:
-    vocab = {"epc_contractor": {"phase": "construction", "share_basis": "contract_share"}}
+    vocab = {"epc_lead": {"phase": "construction", "share_basis": "contract_share"}}
     companies = {"doosan_enerbility": {}}
     good = {
         "company_id": "doosan_enerbility",
         "plant_name": "P",
-        "role": "epc_contractor",
+        "role_tier2": "epc_lead",
         "phase": "construction",
         "share": "0.5",
         "share_basis": "contract_share",
@@ -313,7 +320,7 @@ def test_tracker_fields_yield_investment_and_operation_rows() -> None:
         ("Korea Midland Power Co Ltd", None),
     ]
     companies = read(DATA / "companies" / "method" / "companies.csv")
-    vocab = {v["role"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
+    vocab = {v["role_tier2"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
     unit = {
         "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "Nghi Son", "country": "VN",
         "owner": "Nghi Son 2 Power LLC [100%]",
@@ -322,10 +329,12 @@ def test_tracker_fields_yield_investment_and_operation_rows() -> None:
         "wiki_url": "https://www.gem.wiki/x",
     }  # fmt: skip
     rows = own.tracker_rows([unit], companies, vocab)
-    assert {(r["company_id"], r["role"], r["phase"], r["share"]) for r in rows} == {
-        ("marubeni", "equity_owner", "investment", 0.5),
-        ("kepco", "equity_owner", "investment", 0.5),
-        ("kepco", "om_contractor", "operation", ""),
+    assert {
+        (r["company_id"], r["role_tier1"], r["role_tier2"], r["phase"], r["share"]) for r in rows
+    } == {
+        ("marubeni", "equity_owner", "equity_parent", "investment", 0.5),
+        ("kepco", "equity_owner", "equity_parent", "investment", 0.5),
+        ("kepco", "om_contractor", "operator_of_record", "operation", ""),
     }
     domestic = {**unit, "country": "JP"}
     assert {r["company_id"] for r in own.tracker_rows([domestic], companies, vocab)} == {"kepco"}
@@ -333,12 +342,13 @@ def test_tracker_fields_yield_investment_and_operation_rows() -> None:
 
 def test_company_register_rejects_a_row_whose_page_is_not_on_disk() -> None:
     """Every role and every share must cite a page in the fetched index, by key and by URL."""
-    vocab = {v["role"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
+    vocab = {v["role_tier2"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
     companies = {c["company_id"]: c for c in read(DATA / "companies" / "method" / "companies.csv")}
     pages = {"kepco_page": {"url": "https://example.org/kepco", "sha256": "x"}}
     good = {
         "company_id": "kepco", "gem_unit_id": "G1", "gem_location_id": "", "plant_name": "P",
-        "country": "VN", "role": "equity_owner", "share": "0.4", "from_year": "", "to_year": "",
+        "country": "VN", "role_tier2": "equity_direct", "share": "0.4", "from_year": "",
+        "to_year": "",
         "role_as_stated": "acquired a 40% stake", "role_source_key": "kepco_page",
         "role_source_url": "https://example.org/kepco", "role_quote": "KEPCO acquired 40%",
         "share_source_key": "kepco_page", "share_source_url": "https://example.org/kepco",
@@ -356,41 +366,73 @@ def test_company_register_rejects_a_row_whose_page_is_not_on_disk() -> None:
 
 
 def test_merge_prefers_sourced_rows_and_drops_domestic_ones() -> None:
-    """Register beats company_ir beats tracker beats wiki, per company x plant x role."""
+    """Register beats company_ir beats tracker beats wiki, per company x plant x tier-1 role."""
     companies = {c["company_id"]: c for c in read(DATA / "companies" / "method" / "companies.csv")}
-    vocab = {v["role"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
+    vocab = {v["role_tier2"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
     company_ir = [{
         "company_id": "kepco", "company_name": "KEPCO", "company_country": "KR",
         "company_type": "utility", "gem_unit_id": "U1", "gem_location_id": "", "plant_name": "P",
-        "country": "VN", "role": "equity_owner", "phase": "investment", "share": "0.4",
+        "country": "VN", "role_tier2": "equity_direct", "phase": "investment", "share": "0.4",
         "share_basis": "equity_share", "from_year": "", "to_year": "",
         "source_url": "https://example.org", "source_note": "", "accessed_date": "2026-09-07",
     }]  # fmt: skip
     tracker = [
         {"company_id": "kepco", "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "P",
-         "country": "VN", "role": "equity_owner", "share": "0.5", "level": "parent",
+         "country": "VN", "role_tier2": "equity_parent", "share": "0.5", "level": "parent",
          "entity": "Korea Electric Power Corp", "source_url": ""},
         {"company_id": "marubeni", "gem_unit_id": "U1", "gem_location_id": "L1", "plant_name": "P",
-         "country": "VN", "role": "equity_owner", "share": "0.5", "level": "parent",
+         "country": "VN", "role_tier2": "equity_parent", "share": "0.5", "level": "parent",
          "entity": "Marubeni Corp", "source_url": ""},
         {"company_id": "marubeni", "gem_unit_id": "U9", "gem_location_id": "L9", "plant_name": "Q",
-         "country": "JP", "role": "equity_owner", "share": "1.0", "level": "owner",
+         "country": "JP", "role_tier2": "equity_direct", "share": "1.0", "level": "owner",
          "entity": "Marubeni Corp", "source_url": ""},
     ]  # fmt: skip
     wiki = [
         {"company_id": "doosan_enerbility", "gem_location_id": "L1", "plant_name": "P",
-         "country": "VN", "role": "epc_contractor", "share": "", "sentence": "Doosan built it",
-         "source_url": "https://www.gem.wiki/P"},
+         "country": "VN", "role_tier2": "epc_unspecified", "share": "",
+         "sentence": "Doosan built it", "source_url": "https://www.gem.wiki/P"},
+        {"company_id": "doosan_enerbility", "gem_location_id": "L1", "plant_name": "P",
+         "country": "VN", "role_tier2": "equipment_unspecified", "share": "",
+         "sentence": "Doosan supplied the boilers", "source_url": "https://www.gem.wiki/P"},
     ]  # fmt: skip
     merged, domestic = agg.merge_registers(
         [], tracker, wiki, companies, vocab, exclude_home=True, company_ir=company_ir
     )
     assert domestic == 1  # Marubeni's Japanese unit is not a trade
-    assert [(r["company_id"], r["role"], r["origin"], r["share"]) for r in merged] == [
-        ("kepco", "equity_owner", "company_ir", "0.4"),
-        ("marubeni", "equity_owner", "gem", "0.5"),
-        ("doosan_enerbility", "epc_contractor", "gem_wiki", ""),
+    assert [
+        (r["company_id"], r["role_tier1"], r["role_tier2"], r["origin"], r["share"]) for r in merged
+    ] == [
+        ("kepco", "equity_owner", "equity_direct", "company_ir", "0.4"),
+        ("marubeni", "equity_owner", "equity_parent", "gem", "0.5"),
+        ("doosan_enerbility", "epc_contractor", "epc_unspecified", "gem_wiki", ""),
+        ("doosan_enerbility", "equipment_supplier", "equipment_unspecified", "gem_wiki", ""),
     ]
+    # The tracker also states KEPCO's equity, at a lower standing: the row is not repeated, the
+    # agreement is recorded instead.
+    assert merged[0]["also_stated_by"] == "gem"
+
+
+def test_two_scopes_of_one_tier1_role_are_one_row_with_both_scopes_named() -> None:
+    """Sumitomo's civil works and port works at Matarbari are one EPC role, not two."""
+    companies = {c["company_id"]: c for c in read(DATA / "companies" / "method" / "companies.csv")}
+    vocab = {v["role_tier2"]: v for v in read(DATA / "roles" / "method" / "roles.csv")}
+    base = {
+        "company_id": "sumitomo_corp", "company_name": "Sumitomo Corporation",
+        "company_country": "JP", "company_type": "trading_house", "gem_unit_id": "U1",
+        "gem_location_id": "", "plant_name": "Matarbari", "country": "BD", "phase": "construction",
+        "share": "", "share_basis": "contract_share", "from_year": "", "to_year": "",
+        "source_url": "https://example.org", "source_note": "", "accessed_date": "2026-09-07",
+    }  # fmt: skip
+    company_ir = [
+        {**base, "role_tier2": "epc_unspecified"},
+        {**base, "role_tier2": "epc_civil_works"},
+        {**base, "role_tier2": "epc_port_works"},
+    ]
+    merged, _ = agg.merge_registers([], [], [], companies, vocab, company_ir=company_ir)
+    assert len(merged) == 1
+    assert merged[0]["role_tier1"] == "epc_contractor"
+    assert merged[0]["role_tier2"] == "epc_civil_works"  # a stated scope outranks *_unspecified
+    assert merged[0]["role_tier2_all"] == "epc_unspecified|epc_civil_works|epc_port_works"
 
 
 def test_ipcc_transcription_check_finds_numbers_as_the_pdf_renders_them() -> None:
@@ -481,6 +523,6 @@ def test_published_unit_results_state_both_sides_and_carry_coordinates() -> None
 @pytest.mark.skipif(not (OUT / "ti_power_company.csv").exists(), reason="roles not on disk")
 def test_published_company_table_never_sums_across_roles() -> None:
     rows = read(OUT / "ti_power_company.csv")
-    keys = [(r["company_id"], r["role"], r["scenario"]) for r in rows]
+    keys = [(r["company_id"], r["role_tier1"], r["scenario"]) for r in rows]
     assert len(keys) == len(set(keys))
-    assert all(r["role"] for r in rows)
+    assert all(r["role_tier1"] and r["phase"] for r in rows)

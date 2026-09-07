@@ -154,6 +154,8 @@ G100000110051,Than Bac Lieu power station,VN,coal,cancelled,status cancelled: ne
 G100000110052,Than Bac Lieu power station,VN,coal,cancelled,status cancelled: never built
 G100000406009,Van Phong Combined Cycle power station,VN,gas,cancelled,status cancelled: never built
 G100000406010,Van Phong Combined Cycle power station,VN,gas,cancelled,status cancelled: never built
+G100000110554,Van Phong power station,VN,coal,cancelled,status cancelled: never built
+G100000110555,Van Phong power station,VN,coal,cancelled,status cancelled: never built
 G100000407264,Richards Bay (Mhlathuze Energy) power station,ZA,gas,shelved,status shelved: never built
 G100000800262,Mongu solar farm,ZM,solar,cancelled - inferred 4 y,status cancelled - inferred 4 y: never built
 G100000800341,Sesheke solar farm,ZM,solar,shelved - inferred 2 y,status shelved - inferred 2 y: never built

@@ -16,8 +16,9 @@ by a company ([`roles`](../roles/method/method.md)). The result set therefore ha
 
 - `ti_power_by_unit.csv` — unit × scenario: what the unit adds to or avoids from its
   destination's inventory over its life, with latitude and longitude, so the map is unit by unit.
-- `ti_power_by_role.csv` — company × role × unit × scenario: the same unit result attributed to
-  each company that held a role on it; `ti_power_company.csv` sums it per company × role.
+- `ti_power_by_role.csv` — company × tier-1 role × unit × scenario: the same unit result
+  attributed to each company that held a role on it, with the tier-2 scope the source states;
+  `ti_power_company.csv` sums it per company × tier-1 role.
 
 ## Decisions (project lead, 2026-09-05)
 
@@ -26,8 +27,13 @@ by a company ([`roles`](../roles/method/method.md)). The result set therefore ha
    **development** (developer), **construction** (EPC contractor, equipment supplier),
    **investment** (equity owner), **operation** (O&M contractor) and **finance** (lender, ECA
    cover). Equity is investment, not operation: a utility that both owns and runs a plant carries
-   two rows, one in each phase (project lead, 2026-09-07). The register carries the role, the
-   phase and the share as data columns; the model reports each role row twice, the unit's full
+   two rows, one in each phase (project lead, 2026-09-07). Roles carry three levels: the phase,
+   the **tier-1 role** the unit is attributed at, and the **tier-2 scope** as the source states it
+   (`epc_lead`, `epc_civil_works`, `boiler_supply`, `equity_direct`, `buyers_credit`, … or a
+   `*_unspecified` key where the source names the group only). Attribution happens at tier 1, so a
+   contractor whose release names two scopes on one unit carries that unit once with both scopes
+   named beside it in `role_tier2_all` (project lead, 2026-09-07). The register carries the role,
+   the phase and the share as data columns; the model reports each role row twice, the unit's full
    figure and the share-weighted figure, and never adds rows of different roles into one company
    total, so the weighting can be revisited later without re-collecting. A blank share yields a
    blank weighted figure, not an assumed one. The report's Companies → Role matrix is this table
@@ -42,8 +48,10 @@ by a company ([`roles`](../roles/method/method.md)). The result set therefore ha
    the hand register; the companies' own disclosures and project pages, each row citing the page
    on disk that states the role and, separately, the page that states the share, with the sentence
    quoted (tier A); the tracker's own `Owner`, `Parent` and `Operator` fields (tier B); and the GEM
-   wiki sentences read by keyword (tier C). A sourced reading always replaces a machine one for the
-   same company × plant × role. The register's unit ids also bring units into scope: the tracker's
+   wiki sentences read by keyword (tier C, and always a `*_unspecified` scope — a narrative
+   sentence supports the group, not the scope). A sourced reading always replaces a machine one for
+   the same company × plant × tier-1 role, and the origins that agree with it are listed in
+   `also_stated_by` rather than repeated as rows. The register's unit ids also bring units into scope: the tracker's
    owner field names only the project company on Vung Ang 2 and only PLN and Barito on Jawa 9 and
    10, so without the register the Korean and Japanese sponsors of those four 660–1,000 MW coal
    units would be missing from the result set entirely.

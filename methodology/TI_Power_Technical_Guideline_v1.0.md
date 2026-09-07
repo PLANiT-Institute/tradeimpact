@@ -147,19 +147,28 @@ that starts below its grid it is the year the grid falls past it.
 ### 4.3 Attribution by role — the power-specific rule
 
 A power project has several firms in several capacities. The register records, per firm × unit ×
-role: the **role** *ρ* (developer, equity owner, EPC contractor, equipment supplier, O&M
-contractor, lender, ECA cover), its **phase** *φ* (development, construction, operation,
-finance) and the **share** *s* the firm carried (equity fraction, contract fraction, scope
-fraction, debt fraction), each with the page it was read from.
+role, three levels of that role and the share:
 
-For every role row the model reports two figures side by side:
+| level | symbol | values |
+|---|---|---|
+| phase | *φ* | development, construction, investment, operation, finance |
+| tier-1 role | *ρ* | developer, EPC contractor, equipment supplier, equity owner, O&M contractor, lender, ECA cover |
+| tier-2 scope | *σ* | the scope as the source states it: EPC lead, EPC consortium member, civil works, port works, balance of plant, boiler supply, steam or gas turbine supply, generator supply, equity direct, equity through a parent, O&M contract, operator of record, project loan, buyer's credit, insurance cover, guarantee — or a *scope not stated* key where the source names the tier-1 role only |
+
+with the **share** *s* the firm carried (equity fraction, contract fraction, scope fraction, debt
+fraction), each with the page it was read from.
+
+**Attribution is at tier 1**, so the unit enters a firm's account once per tier-1 role:
 
 $$ TI_{firm,\rho,u}^{full} = TI_u, \qquad TI_{firm,\rho,u}^{weighted} = s \cdot TI_u $$
 
-A blank share yields a blank weighted figure. Rows of **different roles are never summed** into
-one firm total; the firm table is keyed by firm × role × scenario. Because role, phase and share
-are columns, any later weighting convention (equity-only, construction-only, phase-weighted) is
-a query on the published table, not a re-collection.
+A firm whose source names several scopes of one tier-1 role on a unit — civil works and port
+works under the same EPC contract — carries one row, with the most specific scope in *σ* and every
+stated scope listed beside it. A blank share yields a blank weighted figure. Rows of **different
+tier-1 roles are never summed** into one firm total; the firm table is keyed by firm × tier-1 role
+× scenario. Because phase, role, scope and share are all columns, any later weighting convention
+(equity-only, construction-only, phase-weighted, EPC-lead-only) is a query on the published table,
+not a re-collection.
 
 ### 4.4 Phase distinction
 
@@ -183,8 +192,8 @@ reported under S1 and listed in the S2 exclusions with the reason.
 |---|---|---|
 | `ti_power_annual` | unit × scenario × year | generation, grid, both sides, gap, cumulative |
 | `ti_power_by_unit` | unit × scenario | inputs used with their sources and tiers, lifetime and remaining TI, crossover, coordinates |
-| `ti_power_by_role` | firm × role × unit × scenario | full and share-weighted TI, phase, share, source |
-| `ti_power_company` | firm × role × scenario | sums per role, both weightings, units with and without a share |
+| `ti_power_by_role` | firm × tier-1 role × unit × scenario | full and share-weighted TI, phase, tier-2 scope(s), share, origin, source |
+| `ti_power_company` | firm × tier-1 role × scenario | sums per role, both weightings, scopes on file, units with and without a share |
 | `ti_power_excluded` | unit | reason no result exists |
 | `emission_targets_power` (+ exclusions) | destination × scenario | rate, anchor, derivation |
 
@@ -230,7 +239,7 @@ non-inventory factor for another in the same country without recording both base
 
 1. **Project registry** — Global Energy Monitor Global Integrated Power Tracker (download form;
    hand file). Keep the tracker ids; they are the join key for everything else.
-2. **Role register** — per firm × unit × role from the GEM wiki page, the firm's release, the
+2. **Role register** — per firm × unit × tier-1 role from the GEM wiki page, the firm's release, the
    lender's project page; one source link per row; blank share where unpublished.
 3. **Benchmark** — grid series (scripted fetch) and committed anchors (hand transcription).
 4. **Factors** — IPCC chapter (scripted fetch, transcription verified against the PDF text) and
@@ -257,12 +266,15 @@ non-inventory factor for another in the same country without recording both base
 | *r_c^S* | annual fractional decline of *g* | 1/year |
 | *L* | operating lifetime | years |
 | *y₀* | commissioning year | — |
-| *ρ, φ, s* | role, phase, share | —, —, fraction |
+| *ρ, σ, φ, s* | tier-1 role, tier-2 scope, phase, share | —, —, —, fraction |
 
 ## Appendix B — Common errors
 
 - Summing a firm's roles into one number ("KEPCO's projects") — the roles overlap on the same
-  units and the figure double counts. Report per role.
+  units and the figure double counts. Report per tier-1 role.
+- Counting a unit twice against one firm because a source names two scopes of the same tier-1 role
+  (an EPC contract's civil works and its port works). The scopes are detail on one role row, not
+  two roles.
 - Filling a blank share with 1 or with an average — a blank stays blank.
 - Reading a BAU-relative NDC as a pathway — it has no level to read.
 - Counting bioenergy CO₂ in the fossil total.

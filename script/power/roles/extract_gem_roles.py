@@ -9,9 +9,10 @@ Output  data/power/roles/processed/gem_tracker_roles.csv
 
 The tracker states two of the five project roles itself:
 
-    Owner(s) / Parent(s)  ->  equity_owner   (investment phase), with the share it prints in
-                              brackets: ``Marubeni Corp [50.0%]; Chubu Electric [50.0%]``
-    Operator(s)           ->  om_contractor  (operation phase); the tracker prints no share here
+    Owner(s)     ->  equity_direct       (tier 1 equity_owner, investment phase), with the share
+                     it prints in brackets: ``Marubeni Corp [50.0%]; Chubu Electric [50.0%]``
+    Parent(s)    ->  equity_parent       (the same tier 1, held through a subsidiary)
+    Operator(s)  ->  operator_of_record  (tier 1 om_contractor, operation phase; no share printed)
 
 Both are a third party's compilation of company disclosures, so both are tier B and need no hand
 transcription. Development, construction (EPC and equipment) and finance are not in the tracker:
@@ -38,14 +39,19 @@ OUT = DATA / "roles" / "processed" / "gem_tracker_roles.csv"
 SOURCE_ID = "gem_global_integrated_power_tracker"
 TOKEN = re.compile(r"^\s*(?P<name>.*?)\s*(?:\[(?P<share>[\d.]+)\s*%\])?\s*$")
 #: Tracker column -> the role it states, in the order a company's rows are preferred.
-LEVEL_ROLES = (("owner", "equity_owner"), ("parent", "equity_owner"), ("operator", "om_contractor"))
+LEVEL_ROLES = (
+    ("owner", "equity_direct"),
+    ("parent", "equity_parent"),
+    ("operator", "operator_of_record"),
+)
 FIELDS = [
     "company_id",
     "gem_unit_id",
     "gem_location_id",
     "plant_name",
     "country",
-    "role",
+    "role_tier1",
+    "role_tier2",
     "phase",
     "level",
     "entity",
@@ -83,9 +89,10 @@ def tracker_rows(
     for u in units:
         found: dict[tuple[str, str], dict[str, object]] = {}
         for level, role in LEVEL_ROLES:
+            tier1 = vocab[role]["role_tier1"]
             for entity, share in parse_entities(u.get(level, "")):
                 for cid, home, pattern in matchers:
-                    key = (cid, role)
+                    key = (cid, tier1)
                     if home == u["country"] or not pattern.search(entity) or key in found:
                         continue
                     found[key] = {
@@ -94,7 +101,8 @@ def tracker_rows(
                         "gem_location_id": u["gem_location_id"],
                         "plant_name": u["plant_name"],
                         "country": u["country"],
-                        "role": role,
+                        "role_tier1": tier1,
+                        "role_tier2": role,
                         "phase": vocab[role]["phase"],
                         "level": level,
                         "entity": entity,
@@ -111,12 +119,13 @@ def main() -> None:
     """Write the tracker-derived investment and operation register."""
     if not PROJECTS.exists():
         hand_file_required(PROJECTS, "run script/power/projects/extract_gem_tracker.py")
-    vocab = {v["role"]: v for v in read_csv(VOCAB)}
+    vocab = {v["role_tier2"]: v for v in read_csv(VOCAB)}
     rows = tracker_rows(read_csv(PROJECTS), read_csv(COMPANIES), vocab)
     write_csv(OUT, FIELDS, rows)
     by_role: dict[str, int] = {}
     for r in rows:
-        by_role[str(r["role"])] = by_role.get(str(r["role"]), 0) + 1
+        key = f"{r['role_tier1']}/{r['role_tier2']}"
+        by_role[key] = by_role.get(key, 0) + 1
     with_share = sum(1 for r in rows if r["share"] != "")
     print(
         f"{OUT.relative_to(REPO)}: {len(rows)} company x unit x role rows, {with_share} with a "

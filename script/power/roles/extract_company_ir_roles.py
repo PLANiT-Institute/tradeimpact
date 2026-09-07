@@ -15,7 +15,9 @@ share can enter the model without a page a reader can open.
 
 This register outranks the machine readings (tracker fields, wiki sentences) in
 ``aggregate_roles.py``: a company's own words, or a project page quoted with its sentence, beat a
-keyword match. The unit ids here also bring their units into scope in
+keyword match — and it is the only source that can name a **specific** tier-2 scope (boiler
+supply, civil works, a buyer's credit) rather than the ``*_unspecified`` role a keyword read
+gives. The unit ids here also bring their units into scope in
 ``projects/extract_gem_tracker.py``, which is how projects the tracker's owner field misses — the
 Korean and Japanese sponsors of Vung Ang 2 and Jawa 9-10, for instance — enter the result set.
 
@@ -46,7 +48,8 @@ FIELDS = [
     "gem_location_id",
     "plant_name",
     "country",
-    "role",
+    "role_tier1",
+    "role_tier2",
     "phase",
     "share",
     "share_basis",
@@ -68,11 +71,11 @@ def validate(
     """Problems found in the register, one message per failing row and check."""
     problems = []
     for i, r in enumerate(rows, start=2):
-        where = f"row {i} ({r.get('company_id')} / {r.get('plant_name')} / {r.get('role')})"
+        where = f"row {i} ({r.get('company_id')} / {r.get('plant_name')} / {r.get('role_tier2')})"
         if r["company_id"] not in companies:
             problems.append(f"{where}: unknown company_id")
-        if r["role"] not in vocab:
-            problems.append(f"{where}: unknown role")
+        if r["role_tier2"] not in vocab:
+            problems.append(f"{where}: unknown role_tier2 (see method/roles.csv)")
         share = num(r["share"])
         if r["share"] and (share is None or not 0 < share <= 1):
             problems.append(f"{where}: share must be blank or in (0, 1]")
@@ -107,7 +110,7 @@ def main() -> None:
         return
     rows = read_csv(RAW)
     pages = {p["source_key"]: p for p in read_csv(PAGES)} if PAGES.exists() else {}
-    vocab = {v["role"]: v for v in read_csv(VOCAB)}
+    vocab = {v["role_tier2"]: v for v in read_csv(VOCAB)}
     companies = {c["company_id"]: c for c in read_csv(COMPANIES)}
     problems = validate(rows, vocab, companies, pages)
     if problems:
@@ -130,10 +133,11 @@ def main() -> None:
                 "gem_location_id": r["gem_location_id"],
                 "plant_name": r["plant_name"],
                 "country": r["country"],
-                "role": r["role"],
-                "phase": vocab[r["role"]]["phase"],
+                "role_tier1": vocab[r["role_tier2"]]["role_tier1"],
+                "role_tier2": r["role_tier2"],
+                "phase": vocab[r["role_tier2"]]["phase"],
                 "share": r["share"],
-                "share_basis": vocab[r["role"]]["share_basis"],
+                "share_basis": vocab[r["role_tier2"]]["share_basis"],
                 "from_year": r["from_year"],
                 "to_year": r["to_year"],
                 "source_url": r["role_source_url"],
@@ -144,7 +148,8 @@ def main() -> None:
     write_csv(OUT, FIELDS, out)
     by_role: dict[str, int] = {}
     for r in out:
-        by_role[str(r["role"])] = by_role.get(str(r["role"]), 0) + 1
+        key = f"{r['role_tier1']}/{r['role_tier2']}"
+        by_role[key] = by_role.get(key, 0) + 1
     companies_named = {str(r["company_id"]) for r in out}
     print(
         f"{OUT.relative_to(REPO)}: {len(out)} rows for {len(companies_named)} companies from "

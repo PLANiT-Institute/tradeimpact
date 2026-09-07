@@ -14,10 +14,11 @@ emission_targets_power,target_level,observed_trend,A,log-linear fit of the publi
 emission_targets_power,target_level,power_prorata.*,B,committed target applied pro rata to grid intensity
 emission_targets_power,target_level,economy_prorata.*,B,economy-wide target applied pro rata to grid intensity (boundary assumption)
 project_roles,share_basis,.*,B,share read by hand from a project page or company release; C where the source_note says press report
-gem_ownership,level,.*,B,equity share read from the tracker's owner/parent string (third-party compilation of company disclosures)
-gem_wiki_roles,role,.*,C,role read from a GEM wiki sentence by keyword; unverified narrative text
+gem_tracker_roles,role_tier2,.*,B,equity or operator role read from the tracker's owner/parent/operator string (third-party compilation of company disclosures)
+gem_wiki_roles,role_tier2,.*,C,role read from a GEM wiki sentence by keyword; the tier-2 scope is *_unspecified because narrative text rarely states it
 ti_power_by_role,origin,register,B,hand-transcribed role row with a source link
 ti_power_by_role,origin,gem,B,equity share from the tracker's owner string
 ti_power_by_role,origin,gem_wiki,C,role read from a GEM wiki sentence by keyword; unverified
 ti_power_by_role,origin,company_ir,A,role or share read from a company disclosure or project page that is on disk and hash-recorded
-company_ir_roles,role,.*,A,read from a page in raw/company_ir with the sentence quoted on the row
+company_ir_roles,role_tier2,.*,A,read from a page in raw/company_ir with the sentence quoted on the row
+ti_power_by_role,role_tier2,.*_unspecified,C,the source names the tier-1 role but not which scope within it

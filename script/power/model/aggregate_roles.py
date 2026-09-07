@@ -8,23 +8,41 @@ Inputs
                                            Owner / Parent / Operator fields
     roles/processed/gem_wiki_roles.csv     development, construction and finance rows from the
                                            wiki pages
+    roles/method/roles.csv                 the role vocabulary: tier 2 -> tier 1 -> phase
     companies/method/companies.csv         names and HQ for the tracker-derived rows
     output/ti_power_by_unit.csv            unit x scenario lifetime results
 Outputs
-    output/ti_power_by_role.csv            one row per role row x unit x scenario: the unit's full
-                                           figure and the share-weighted figure side by side
-    output/ti_power_company.csv            company x role x scenario totals, both weightings
+    output/ti_power_by_role.csv            one row per company x unit x tier-1 role x scenario:
+                                           the unit's full figure and the share-weighted figure
+    output/ti_power_company.csv            company x tier-1 role x scenario totals, both weightings
 
 Attribution rule (project lead, 2026-09-05): every role is attributed separately. A company's
 rows of different roles are never added together, and the share stays a column, so the weighting
 can be changed later without re-collecting. A plant-level role (gem_location_id, no unit id)
-applies to every unit at that location. Rows come from two origins, kept in the ``origin``
-column: ``register`` (hand-gathered, any role), ``company_ir`` (read from a company disclosure or
-project page that is on disk and hash-recorded), ``gem`` (investment and operation rows from the
-tracker's own fields) and ``gem_wiki`` (development, construction and finance rows read from the
-wiki pages). Precedence is register, then company_ir, then tracker, then wiki, per company x plant
-x role, so a sourced reading always replaces a machine one of the same role. A row whose company is
-headquartered in the unit's country is a domestic role, not a trade, and is dropped and counted.
+applies to every unit at that location.
+
+Roles carry three levels, from ``roles/method/roles.csv``:
+
+    phase       development / construction / investment / operation / finance
+    role_tier1  developer, epc_contractor, equipment_supplier, equity_owner, om_contractor,
+                lender, eca_cover
+    role_tier2  the scope as the source states it: epc_lead, epc_civil_works, boiler_supply,
+                equity_direct, buyers_credit, ... or the ``*_unspecified`` key where the source
+                names the tier 1 role without saying which scope
+
+**Attribution is at tier 1**: a company holds one epc_contractor role on a unit even where its
+own release names two scopes (Sumitomo's civil works and port works at Matarbari, for example),
+so the unit's figure is never counted twice. The scopes stay visible in ``role_tier2`` (the most
+specific one on file) and ``role_tier2_all`` (every scope that source states, pipe-separated).
+
+Rows come from four origins, kept in the ``origin`` column: ``register`` (hand-gathered, any
+role), ``company_ir`` (read from a company disclosure or project page that is on disk and
+hash-recorded), ``gem`` (investment and operation rows from the tracker's own fields) and
+``gem_wiki`` (development, construction and finance rows read from the wiki pages). Precedence is
+register, then company_ir, then tracker, then wiki, per company x plant x tier-1 role, so a
+sourced reading always replaces a machine one of the same role; the origins that agree with it are
+listed in ``also_stated_by``. A row whose company is headquartered in the unit's country is a
+domestic role, not a trade, and is dropped and counted.
 
 The five phases are separate and never pooled: **development**, **construction** (EPC and
 equipment), **investment** (equity), **operation** (O&M) and **finance** (debt and cover). A
@@ -51,15 +69,20 @@ SCOPE = DATA / "registry" / "scope.csv"
 BY_UNIT = OUT / "ti_power_by_unit.csv"
 BY_ROLE = OUT / "ti_power_by_role.csv"
 COMPANY = OUT / "ti_power_company.csv"
+#: A tier-2 key that says only "this tier 1, scope not stated"; a specific key outranks it.
+UNSPECIFIED_SUFFIX = "_unspecified"
 ROLE_FIELDS = [
     "company_id",
     "company_name",
     "company_country",
-    "role",
     "phase",
+    "role_tier1",
+    "role_tier2",
+    "role_tier2_all",
     "share",
     "share_basis",
     "origin",
+    "also_stated_by",
     "gem_unit_id",
     "gem_location_id",
     "plant_name",
@@ -83,8 +106,9 @@ COMPANY_FIELDS = [
     "company_id",
     "company_name",
     "company_country",
-    "role",
     "phase",
+    "role_tier1",
+    "role_tier2_all",
     "scenario",
     "units",
     "units_with_share",
@@ -106,6 +130,11 @@ def weighted(value: float, share: float | None) -> float | str:
     return round(value * share, 3) if share is not None else ""
 
 
+def is_specific(role_tier2: str) -> bool:
+    """Whether the tier-2 key names a scope rather than only its tier-1 group."""
+    return not role_tier2.endswith(UNSPECIFIED_SUFFIX)
+
+
 def attribute(roles: list[dict[str, str]], units: list[dict[str, str]]) -> list[dict[str, object]]:
     """Join role rows to unit results by unit id, or by location id for plant-wide roles."""
     by_unit: dict[str, list[dict[str, str]]] = {}
@@ -115,12 +144,19 @@ def attribute(roles: list[dict[str, str]], units: list[dict[str, str]]) -> list[
         if u["gem_location_id"]:
             by_location.setdefault(u["gem_location_id"], []).append(u)
     out: list[dict[str, object]] = []
+    # Guard: one company holds one tier-1 role on a unit once. A register row keyed to a unit and
+    # another keyed to its location would otherwise attribute the same unit twice.
+    seen: set[tuple[str, str, str, str]] = set()
     for r in roles:
         targets = by_unit.get(r["gem_unit_id"], []) if r["gem_unit_id"] else []
         if not targets and r["gem_location_id"]:
             targets = by_location.get(r["gem_location_id"], [])
         share = num(r["share"])
         for u in targets:
+            key = (r["company_id"], r["role_tier1"], u["gem_unit_id"], u["scenario"])
+            if key in seen:
+                continue
+            seen.add(key)
             full = float(u["ti_lifetime_tco2"])
             remaining = float(u["ti_remaining_tco2"])
             out.append(
@@ -128,11 +164,14 @@ def attribute(roles: list[dict[str, str]], units: list[dict[str, str]]) -> list[
                     "company_id": r["company_id"],
                     "company_name": r["company_name"],
                     "company_country": r["company_country"],
-                    "role": r["role"],
                     "phase": r["phase"],
+                    "role_tier1": r["role_tier1"],
+                    "role_tier2": r["role_tier2"],
+                    "role_tier2_all": r.get("role_tier2_all", r["role_tier2"]),
                     "share": share if share is not None else "",
                     "share_basis": r["share_basis"],
                     "origin": r.get("origin", "register"),
+                    "also_stated_by": r.get("also_stated_by", ""),
                     "gem_unit_id": u["gem_unit_id"],
                     "gem_location_id": u["gem_location_id"],
                     "plant_name": u["plant_name"],
@@ -157,22 +196,25 @@ def attribute(roles: list[dict[str, str]], units: list[dict[str, str]]) -> list[
 
 
 def company_totals(rows: list[dict[str, object]]) -> list[dict[str, object]]:
-    """Sums per company x role x scenario; roles are never added to each other."""
+    """Sums per company x tier-1 role x scenario; roles are never added to each other."""
     groups: dict[tuple[str, str, str], list[dict[str, object]]] = {}
     for r in rows:
-        key = (str(r["company_id"]), str(r["role"]), str(r["scenario"]))
+        key = (str(r["company_id"]), str(r["role_tier1"]), str(r["scenario"]))
         groups.setdefault(key, []).append(r)
     out: list[dict[str, object]] = []
-    for (cid, role, scenario), rs in sorted(groups.items()):
+    for (cid, tier1, scenario), rs in sorted(groups.items()):
         full = sum(float(r["ti_lifetime_full_tco2"]) for r in rs)
         with_share = [r for r in rs if r["share"] != ""]
+        scopes = sorted({s for r in rs for s in str(r["role_tier2_all"]).split("|") if s})
+        specific = [s for s in scopes if is_specific(s)]
         out.append(
             {
                 "company_id": cid,
                 "company_name": rs[0]["company_name"],
                 "company_country": rs[0]["company_country"],
-                "role": role,
                 "phase": rs[0]["phase"],
+                "role_tier1": tier1,
+                "role_tier2_all": "|".join(specific or scopes),
                 "scenario": scenario,
                 "units": len({str(r["gem_unit_id"]) for r in rs}),
                 "units_with_share": len({str(r["gem_unit_id"]) for r in with_share}),
@@ -205,6 +247,55 @@ def company_totals(rows: list[dict[str, object]]) -> list[dict[str, object]]:
     return out
 
 
+def as_role_row(
+    row: dict[str, str],
+    origin: str,
+    companies: dict[str, dict[str, str]],
+    vocab: dict[str, dict[str, str]],
+) -> dict[str, str]:
+    """One source row in the shape ``attribute()`` reads, whichever origin it came from."""
+    tier2 = row["role_tier2"]
+    tier1 = vocab[tier2]["role_tier1"]
+    if origin in ("register", "company_ir"):
+        return {
+            **row,
+            "role_tier1": tier1,
+            "role_tier2_all": tier2,
+            "origin": origin,
+            "also_stated_by": "",
+        }
+    company = companies[row["company_id"]]
+    unit = row.get("gem_unit_id", "")
+    note = (
+        f"tracker {row['level']} field: {row['entity']}"
+        if origin == "gem"
+        else f"GEM wiki sentence: {row.get('sentence', '')[:200]}"
+    )
+    return {
+        "company_id": row["company_id"],
+        "company_name": company["name_en"],
+        "company_country": company["country"],
+        "company_type": company["type"],
+        "gem_unit_id": unit,
+        "gem_location_id": row["gem_location_id"] if not unit else "",
+        "plant_name": row["plant_name"],
+        "country": row["country"],
+        "phase": vocab[tier2]["phase"],
+        "role_tier1": tier1,
+        "role_tier2": tier2,
+        "role_tier2_all": tier2,
+        "share": row["share"],
+        "share_basis": vocab[tier2]["share_basis"],
+        "from_year": "",
+        "to_year": "",
+        "source_url": row["source_url"],
+        "source_note": note,
+        "accessed_date": "",
+        "origin": origin,
+        "also_stated_by": "",
+    }
+
+
 def merge_registers(
     register: list[dict[str, str]],
     tracker: list[dict[str, str]],
@@ -214,67 +305,56 @@ def merge_registers(
     exclude_home: bool = True,
     company_ir: list[dict[str, str]] | None = None,
 ) -> tuple[list[dict[str, str]], int]:
-    """Register rows, then tracker rows, then wiki rows, one per company x plant x role.
+    """One row per company x plant x tier-1 role, from the highest-standing source that states it.
 
-    Domestic rows (the company's own country) are dropped and counted. A machine-read row is
-    skipped where a source of higher standing already states that company's role on that plant.
+    Sources are read in order of standing: the hand register, then company disclosures, then the
+    tracker's own fields, then the wiki sentences. A later source that states a tier-1 role already
+    on file does not add a row; it is recorded in ``also_stated_by``. Where the same source names
+    several scopes of one tier-1 role, the most specific becomes ``role_tier2`` and all of them are
+    kept in ``role_tier2_all``. Domestic rows (the company's own HQ country) are dropped and
+    counted.
     """
-    out: list[dict[str, str]] = []
+    groups: list[dict[str, str]] = []
+    index: dict[tuple[str, str, str], int] = {}
     domestic = 0
-    seen: set[tuple[str, str, str]] = set()
 
-    def keys(company: str, unit: str, location: str, role: str) -> list[tuple[str, str, str]]:
-        return [(company, place, role) for place in (unit, location) if place]
+    def keys(row: dict[str, str], tier1: str) -> list[tuple[str, str, str]]:
+        places = (row.get("gem_unit_id", ""), row.get("gem_location_id", ""))
+        return [(row["company_id"], place, tier1) for place in places if place]
 
-    for origin, rows in (("register", register), ("company_ir", company_ir or [])):
-        for r in rows:
-            if exclude_home and r["country"] and r["company_country"] == r["country"]:
+    for origin, rows in (
+        ("register", register),
+        ("company_ir", company_ir or []),
+        ("gem", tracker),
+        ("gem_wiki", wiki),
+    ):
+        for source_row in rows:
+            home = companies[source_row["company_id"]]["country"]
+            if exclude_home and source_row["country"] and home == source_row["country"]:
                 domestic += 1
                 continue
-            candidate = keys(r["company_id"], r["gem_unit_id"], r["gem_location_id"], r["role"])
-            if any(k in seen for k in candidate):
+            row = as_role_row(source_row, origin, companies, vocab)
+            candidate = keys(row, row["role_tier1"])
+            hit = next((index[k] for k in candidate if k in index), None)
+            if hit is None:
+                groups.append(row)
+                index.update(dict.fromkeys(candidate, len(groups) - 1))
                 continue
-            out.append({**r, "origin": origin})
-            seen.update(candidate)
-    for origin, rows in (("gem", tracker), ("gem_wiki", wiki)):
-        for g in rows:
-            c = companies[g["company_id"]]
-            if exclude_home and c["country"] == g["country"]:
-                domestic += 1
+            held = groups[hit]
+            if held["origin"] != origin:
+                stated = [o for o in held["also_stated_by"].split("|") if o]
+                if origin not in stated:
+                    held["also_stated_by"] = "|".join([*stated, origin])
                 continue
-            unit = g.get("gem_unit_id", "")
-            candidate = keys(g["company_id"], unit, g["gem_location_id"], g["role"])
-            if any(k in seen for k in candidate):
-                continue
-            seen.update(candidate)
-            note = (
-                f"tracker {g['level']} field: {g['entity']}"
-                if origin == "gem"
-                else f"GEM wiki sentence: {g.get('sentence', '')[:200]}"
-            )
-            out.append(
-                {
-                    "company_id": g["company_id"],
-                    "company_name": c["name_en"],
-                    "company_country": c["country"],
-                    "company_type": c["type"],
-                    "gem_unit_id": unit,
-                    "gem_location_id": g["gem_location_id"] if not unit else "",
-                    "plant_name": g["plant_name"],
-                    "country": g["country"],
-                    "role": g["role"],
-                    "phase": vocab[g["role"]]["phase"],
-                    "share": g["share"],
-                    "share_basis": vocab[g["role"]]["share_basis"],
-                    "from_year": "",
-                    "to_year": "",
-                    "source_url": g["source_url"],
-                    "source_note": note,
-                    "accessed_date": "",
-                    "origin": origin,
-                }
-            )
-    return out, domestic
+            scopes = [s for s in held["role_tier2_all"].split("|") if s]
+            if row["role_tier2"] not in scopes:
+                scopes.append(row["role_tier2"])
+            if is_specific(row["role_tier2"]) and not is_specific(held["role_tier2"]):
+                row["also_stated_by"] = held.get("also_stated_by", "")
+                groups[hit] = row
+                held = groups[hit]
+            held["role_tier2_all"] = "|".join(scopes)
+    return groups, domestic
 
 
 def main() -> None:
@@ -292,7 +372,7 @@ def main() -> None:
         read_csv(GEM_TRACKER),
         read_csv(GEM_WIKI) if GEM_WIKI.exists() else [],
         companies,
-        {v["role"]: v for v in read_csv(VOCAB)},
+        {v["role_tier2"]: v for v in read_csv(VOCAB)},
         exclude_home=scope.get("exclude_home_country", "yes") == "yes",
         company_ir=read_csv(COMPANY_IR) if COMPANY_IR.exists() else [],
     )
@@ -300,10 +380,13 @@ def main() -> None:
     write_csv(BY_ROLE, ROLE_FIELDS, rows)
     totals = company_totals(rows)
     write_csv(COMPANY, COMPANY_FIELDS, totals)
+    by_origin: dict[str, int] = {}
+    for r in merged:
+        by_origin[r["origin"]] = by_origin.get(r["origin"], 0) + 1
     print(
-        f"{BY_ROLE.relative_to(REPO)}: {len(rows)} role x unit x scenario rows from "
-        f"{len(merged)} role rows ({domestic} domestic dropped); {COMPANY.name}: {len(totals)} "
-        "company x role x scenario rows"
+        f"{BY_ROLE.relative_to(REPO)}: {len(rows)} company x unit x tier-1 role x scenario rows "
+        f"from {len(merged)} role rows {dict(sorted(by_origin.items()))} "
+        f"({domestic} domestic dropped); {COMPANY.name}: {len(totals)} company x role x scenario"
     )
 
 

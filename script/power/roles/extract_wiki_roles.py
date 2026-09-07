@@ -13,7 +13,9 @@ Method: the page text (markup, references, templates and tables removed) is spli
 a sentence that names an in-scope company is classified by the company's type and the role words
 it contains — EPC / turnkey / contractor for a builder, boiler / turbine / supply for an equipment
 maker, loan / debt / financing for a lender, insurance / guarantee for export-credit cover,
-"operation and maintenance" for an operator, stake / equity / consortium for an owner. Sentences
+"operation and maintenance" for an operator, stake / equity / consortium for an owner. A keyword
+read never says which scope, so every row lands on an ``*_unspecified`` tier-2 role under the
+right tier-1 role; a sourced register row is what upgrades it to a specific scope. Sentences
 about intentions, protests, scandals, memoranda or quotations are skipped. The developer role is
 read only from an explicit development statement ("developed the project", "project developer",
 "the sponsors are"), never from a proposal or a short-list. A share
@@ -47,7 +49,8 @@ FIELDS = [
     "gem_location_id",
     "plant_name",
     "country",
-    "role",
+    "role_tier1",
+    "role_tier2",
     "phase",
     "share",
     "share_basis",
@@ -57,29 +60,31 @@ FIELDS = [
 ]
 #: Role words by role; the company's type decides which roles a sentence may support.
 WORDS = {
-    "epc_contractor": re.compile(
+    "epc_unspecified": re.compile(
         r"\bEPC\b|engineering, procurement|turnkey|contractor|construction contract|"
         r"\b(?:build|built|construct(?:ed|ing)?) (?:the|a) (?:plant|project|station|units?)|"
         r"awarded",
         re.IGNORECASE,
     ),
-    "equipment_supplier": re.compile(
+    "equipment_unspecified": re.compile(
         r"boiler|turbine|generator|equipment|suppl(?:y|ied|ier)|shipped|technology|manufactur",
         re.IGNORECASE,
     ),
-    "lender": re.compile(
+    "loan_unspecified": re.compile(
         r"\bloans?\b|lend|debt|financ(?:e|ed|ing)\b|funding|credit facility", re.IGNORECASE
     ),
-    "eca_cover": re.compile(r"insur|guarantee|cover(?:age)?\b|export credit", re.IGNORECASE),
-    "om_contractor": re.compile(
+    "cover_unspecified": re.compile(
+        r"insur|guarantee|cover(?:age)?\b|export credit", re.IGNORECASE
+    ),
+    "om_contract": re.compile(
         r"operation and maintenance|O&M|\boperator\b|operated by", re.IGNORECASE
     ),
-    "equity_owner": re.compile(
+    "equity_unspecified": re.compile(
         r"\bstakes?\b|equity|sharehold|owner|owned|acquir|consortium|sponsor|joint venture|"
         r"\bpartner|\bsold\b|\bbought\b|\bshares?\b",
         re.IGNORECASE,
     ),
-    "developer": re.compile(
+    "project_development": re.compile(
         r"develop(?:ed|ing) (?:the|this) (?:plant|project|station)|"
         r"\bdeveloper of\b|project developer|co-?developer|sponsors? (?:of|are|include)",
         re.IGNORECASE,
@@ -87,14 +92,14 @@ WORDS = {
 }
 #: Roles a company of each type may be read into, in order of preference.
 ROLES_BY_TYPE = {
-    "eca_bank": ["lender", "eca_cover"],
-    "eca_insurer": ["eca_cover", "lender"],
-    "epc_contractor": ["epc_contractor", "equipment_supplier", "equity_owner"],
-    "equipment_supplier": ["equipment_supplier", "epc_contractor", "equity_owner"],
-    "utility": ["equity_owner", "om_contractor", "developer"],
-    "genco": ["equity_owner", "om_contractor", "developer"],
-    "trading_house": ["equity_owner", "om_contractor", "developer"],
-    "developer": ["equity_owner", "om_contractor", "developer"],
+    "eca_bank": ["loan_unspecified", "cover_unspecified"],
+    "eca_insurer": ["cover_unspecified", "loan_unspecified"],
+    "epc_contractor": ["epc_unspecified", "equipment_unspecified", "equity_unspecified"],
+    "equipment_supplier": ["equipment_unspecified", "epc_unspecified", "equity_unspecified"],
+    "utility": ["equity_unspecified", "om_contract", "project_development"],
+    "genco": ["equity_unspecified", "om_contract", "project_development"],
+    "trading_house": ["equity_unspecified", "om_contract", "project_development"],
+    "developer": ["equity_unspecified", "om_contract", "project_development"],
 }
 NOISE = re.compile(
     r"consider|protest|demand|object|withdr|pull(?:ed|ing)? (?:out|their)|cancel|bribe|scandal|"
@@ -134,7 +139,7 @@ def classify(sentence: str, company_type: str, name_span: tuple[int, int] = (0, 
     if NOISE.search(sentence):
         return None
     rest = sentence[: name_span[0]] + " " + sentence[name_span[1] :]
-    for role in ROLES_BY_TYPE.get(company_type, ["equity_owner"]):
+    for role in ROLES_BY_TYPE.get(company_type, ["equity_unspecified"]):
         if WORDS[role].search(rest):
             return role
     return None
@@ -185,7 +190,7 @@ def read_roles(
                 for lid, plant, country in locations:
                     if country == home:
                         continue
-                    key = (cid, lid, role)
+                    key = (cid, lid, vocab[role]["role_tier1"])
                     if key in out and (share is None or out[key]["share"] != ""):
                         continue
                     out[key] = {
@@ -193,7 +198,8 @@ def read_roles(
                         "gem_location_id": lid,
                         "plant_name": plant,
                         "country": country,
-                        "role": role,
+                        "role_tier1": vocab[role]["role_tier1"],
+                        "role_tier2": role,
                         "phase": vocab[role]["phase"],
                         "share": share if share is not None else "",
                         "share_basis": vocab[role]["share_basis"],
@@ -202,7 +208,8 @@ def read_roles(
                         "source_id": SOURCE_ID,
                     }
     return sorted(
-        out.values(), key=lambda r: (str(r["company_id"]), str(r["plant_name"]), str(r["role"]))
+        out.values(),
+        key=lambda r: (str(r["company_id"]), str(r["plant_name"]), str(r["role_tier2"])),
     )
 
 
@@ -225,12 +232,13 @@ def main() -> None:
     for u in read_csv(PROJECTS):
         if u["wiki_url"]:
             units_by_url.setdefault(u["wiki_url"], []).append(u)
-    vocab = {v["role"]: v for v in read_csv(VOCAB)}
+    vocab = {v["role_tier2"]: v for v in read_csv(VOCAB)}
     rows = read_roles(pages, units_by_url, read_csv(COMPANIES), vocab)
     write_csv(OUT, FIELDS, rows)
     by_role: dict[str, int] = {}
     for r in rows:
-        by_role[str(r["role"])] = by_role.get(str(r["role"]), 0) + 1
+        key = f"{r['role_tier1']}/{r['role_tier2']}"
+        by_role[key] = by_role.get(key, 0) + 1
     print(
         f"{OUT.relative_to(REPO)}: {len(rows)} company x location x role rows read from "
         f"{len(pages)} page files; by role {dict(sorted(by_role.items()))}"

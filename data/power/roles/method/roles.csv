@@ -1,8 +1,25 @@
-role,phase,share_basis,definition
-developer,development,none,Originated or developed the project before financial close; often becomes an equity owner and then carries a second row
-equity_owner,investment,equity_share,"Holds equity in the project company; the share is the fraction of equity held (0 to 1). Investment, not operation: the same company may or may not also run the plant"
-epc_contractor,construction,contract_share,"Engineering-procurement-construction or turnkey contractor; share is the fraction of the EPC contract carried within a consortium, 1 when sole"
-equipment_supplier,construction,scope_share,"Supplied main equipment (boiler, steam turbine, gas turbine, generator, nuclear island); share is the fraction of capacity supplied or blank when not stated"
-om_contractor,operation,contract_share,Operates and maintains the plant over its operating life; the tracker's Operator(s) field states this directly
-lender,finance,debt_share,Provided project debt; share is the fraction of total project debt
-eca_cover,finance,cover_share,Export credit agency insurance or guarantee cover; share is the fraction of total project debt covered
+role_tier2,role_tier1,phase,share_basis,definition
+project_development,developer,development,none,Originated or developed the project; the detail is not stated more closely
+sponsor_award,developer,development,award_share,Won the tender or was awarded the project as sponsor; the share is the sponsor consortium's split at award
+epc_lead,epc_contractor,construction,contract_share,"Main or turnkey EPC contractor, alone or leading the consortium"
+epc_consortium_member,epc_contractor,construction,contract_share,"Member of the consortium that signed the EPC contract, without a stated lead"
+epc_civil_works,epc_contractor,construction,contract_share,"Civil works, auxiliary equipment or site construction within the EPC scope"
+epc_port_works,epc_contractor,construction,contract_share,"Port, jetty or dredging works within the project's construction scope"
+epc_balance_of_plant,epc_contractor,construction,contract_share,Balance-of-plant scope within the EPC contract
+epc_unspecified,epc_contractor,construction,contract_share,Built or contracted to build the plant; the source does not say which scope
+boiler_supply,equipment_supplier,construction,scope_share,Supplied or installed the boiler or steam generator
+steam_turbine_supply,equipment_supplier,construction,scope_share,Supplied or installed the steam turbine
+gas_turbine_supply,equipment_supplier,construction,scope_share,Supplied or installed the gas turbine
+generator_supply,equipment_supplier,construction,scope_share,Supplied or installed the generator
+equipment_unspecified,equipment_supplier,construction,scope_share,Supplied main equipment or technology; the source does not say which
+equity_direct,equity_owner,investment,equity_share,"Holds equity in the project company directly, as the source states it"
+equity_parent,equity_owner,investment,equity_share,Holds equity through a subsidiary or as the ultimate parent of a direct owner
+equity_unspecified,equity_owner,investment,equity_share,"Named as an owner, shareholder or sponsor without the holding level being clear"
+om_contract,om_contractor,operation,contract_share,"Holds the operation and maintenance contract, or states operation as its role"
+operator_of_record,om_contractor,operation,none,"Named as the plant's operator in the registry, without a contract share"
+project_loan,lender,finance,debt_share,Provided project debt directly
+buyers_credit,lender,finance,debt_share,Provided a buyer's credit or export loan to the project
+loan_unspecified,lender,finance,debt_share,"Named as lending to or financing the project, without the instrument being clear"
+insurance_cover,eca_cover,finance,cover_share,Insured the commercial lenders' loans
+guarantee,eca_cover,finance,cover_share,Guaranteed the project's debt
+cover_unspecified,eca_cover,finance,cover_share,"Named as covering or guaranteeing the debt, without the instrument being clear"

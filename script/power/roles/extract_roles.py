@@ -36,7 +36,8 @@ FIELDS = [
     "gem_location_id",
     "plant_name",
     "country",
-    "role",
+    "role_tier1",
+    "role_tier2",
     "phase",
     "share",
     "share_basis",
@@ -57,12 +58,12 @@ def validate(
     """Problems found in the register, one message per failing row and check."""
     problems = []
     for i, r in enumerate(rows, start=2):
-        where = f"row {i} ({r.get('company_id')} / {r.get('plant_name')} / {r.get('role')})"
+        where = f"row {i} ({r.get('company_id')} / {r.get('plant_name')} / {r.get('role_tier2')})"
         if r["company_id"] not in companies:
             problems.append(f"{where}: unknown company_id")
-        role = vocab.get(r["role"])
+        role = vocab.get(r["role_tier2"])
         if role is None:
-            problems.append(f"{where}: unknown role")
+            problems.append(f"{where}: unknown role_tier2 (see method/roles.csv)")
         else:
             if r["phase"] != role["phase"]:
                 problems.append(f"{where}: phase must be {role['phase']}")
@@ -93,7 +94,7 @@ def main() -> None:
             "roles come from the tracker's owner shares (roles/processed/gem_ownership.csv)"
         )
         return
-    vocab = {v["role"]: v for v in read_csv(VOCAB)}
+    vocab = {v["role_tier2"]: v for v in read_csv(VOCAB)}
     companies = {c["company_id"]: c for c in read_csv(COMPANIES)}
     problems = validate(rows, vocab, companies)
     if problems:
@@ -104,15 +105,17 @@ def main() -> None:
         out.append(
             {
                 **{k: r.get(k, "") for k in FIELDS},
+                "role_tier1": vocab[r["role_tier2"]]["role_tier1"],
                 "company_name": c["name_en"],
                 "company_country": c["country"],
                 "company_type": c["type"],
             }
         )
     write_csv(OUT, FIELDS, out)
-    roles = {}
+    roles: dict[str, int] = {}
     for r in out:
-        roles[str(r["role"])] = roles.get(str(r["role"]), 0) + 1
+        key = f"{r['role_tier1']}/{r['role_tier2']}"
+        roles[key] = roles.get(key, 0) + 1
     print(f"{OUT.relative_to(REPO)}: {len(out)} rows; by role {dict(sorted(roles.items()))}")
 
 
