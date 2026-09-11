@@ -3,6 +3,9 @@
 No network here: whether a link still resolves is `script/reference/check_references.py`, which
 is run on demand. These tests are the structural ones — a duplicate key, a reference nobody
 cites, a citation to a document that does not exist, a family the landscape note never defines.
+
+The documents themselves are a local reading library that git does not carry, so a file that is
+not on disk is not a failure; a file that is on disk and does not match its recorded hash is.
 """
 
 from __future__ import annotations
@@ -113,13 +116,11 @@ def test_every_reference_is_either_on_disk_or_explains_why_not() -> None:
         entry = index.get(row["key"])
         assert entry is not None, f"{row['key']}: not in reference/raw/index.csv"
         if entry["file"]:
-            path = RAW / entry["file"]
-            assert path.exists(), f"{row['key']}: {entry['file']} is missing"
             assert len(entry["sha256"]) == 64, f"{row['key']}: no hash for the file on disk"
-            body = path.read_bytes()
-            if body.startswith(b"version https://git-lfs"):
-                continue  # a clone without `git lfs pull` holds the pointer, not the document
-            digest = hashlib.sha256(body).hexdigest()
+            path = RAW / entry["file"]
+            if not path.exists():
+                continue  # the library is local; a clone rebuilds it with the fetcher
+            digest = hashlib.sha256(path.read_bytes()).hexdigest()
             assert digest == entry["sha256"], (
                 f"{row['key']}: {entry['file']} is not the hashed file"
             )
@@ -132,5 +133,7 @@ def test_every_reference_is_either_on_disk_or_explains_why_not() -> None:
 def test_no_document_sits_in_the_library_without_a_reference() -> None:
     """A file nobody cites is a file nobody can check."""
     keys = {r["key"] for r in register()}
+    if not RAW.exists():
+        pytest.skip("the local library has not been fetched")
     on_disk = {p.stem for p in RAW.iterdir() if p.is_file() and p.name != "index.csv"}
     assert on_disk <= keys, f"documents with no register row: {sorted(on_disk - keys)}"

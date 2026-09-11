@@ -7,3 +7,11 @@ __pycache__/
 .mypy_cache/
 *.egg-info/
 outputs/
+
+# The reference library is local: the register and the index say what it holds and where each
+# document came from, and script/reference/fetch_references.py rebuilds it.
+reference/raw/*
+!reference/raw/index.csv
+
+# The databases are built by the pipelines from the data in this repository.
+data/*/database/*.sqlite
