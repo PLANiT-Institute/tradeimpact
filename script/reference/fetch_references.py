@@ -18,6 +18,11 @@ Licences differ per document and are carried per row from the register's ``acces
 the per-file ``licence`` note: several of these are free to read and not free to redistribute.
 The copies here are the working library for this research, not a republication.
 
+Documents behind a bot wall. Several publishers refuse any automated request, and two of them
+answer with a captcha, which is not something to work around. Those are fetched by hand: open
+the URL in a browser, save the file into ``reference/raw/`` as ``<key>.pdf``, and run this again
+- a file already sitting under a reference's key is adopted, hashed and indexed like any other.
+
 Run from the repository root:
     .venv/bin/python script/reference/fetch_references.py [--refresh] [--key KEY ...]
 """
@@ -159,6 +164,28 @@ def main() -> None:
         previous = known.get(key)
         if previous and previous.get("file") and (RAW / previous["file"]).exists() and not refresh:
             index.append(previous)
+            continue
+        # A file already sitting here under the reference's key is adopted and hashed. That is
+        # how a document behind a bot wall gets into the library: open it in a browser, save it
+        # as <key>.pdf, run this again.
+        by_hand = next((f for f in sorted(RAW.glob(f"{key}.*")) if f.name != "index.csv"), None)
+        if by_hand and not refresh:
+            body = by_hand.read_bytes()
+            index.append(
+                {
+                    "key": key,
+                    "file": by_hand.name,
+                    "source_url": row.get("file_url", "") or row["url"],
+                    "content_type": "application/pdf" if body[:5] == b"%PDF-" else "text/html",
+                    "bytes": len(body),
+                    "sha256": hashlib.sha256(body).hexdigest(),
+                    "access": row["access"],
+                    "fetched": date.today().isoformat(),
+                    "fetched_with": "by_hand",
+                    "note": "saved from a browser: the publisher refuses automated requests",
+                }
+            )
+            saved += 1
             continue
         url = row.get("file_url", "").strip()
         record: dict[str, object] = {
