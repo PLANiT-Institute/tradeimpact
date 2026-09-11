@@ -90,3 +90,38 @@ def test_every_family_in_the_register_is_defined_in_the_landscape_note() -> None
     text = LANDSCAPE.read_text()
     for family in sorted({r["family"] for r in register()}):
         assert f"`{family}`" in text, f"family {family!r} is used but never defined"
+
+
+# ---------------------------------------------------------------- the library on disk
+
+
+RAW = REFERENCE / "raw"
+RAW_INDEX = RAW / "index.csv"
+
+
+def raw_index() -> list[dict[str, str]]:
+    with RAW_INDEX.open(newline="") as f:
+        return list(csv.DictReader(f))
+
+
+@pytest.mark.skipif(not RAW_INDEX.exists(), reason="the documents have not been fetched")
+def test_every_reference_is_either_on_disk_or_explains_why_not() -> None:
+    """No silent gaps: a reference has its document, or a reason a reader can act on."""
+    index = {r["key"]: r for r in raw_index()}
+    for row in register():
+        entry = index.get(row["key"])
+        assert entry is not None, f"{row['key']}: not in reference/raw/index.csv"
+        if entry["file"]:
+            assert (RAW / entry["file"]).exists(), f"{row['key']}: {entry['file']} is missing"
+            assert len(entry["sha256"]) == 64, f"{row['key']}: no hash for the file on disk"
+        else:
+            assert entry["note"].startswith("not_saved: "), f"{row['key']}: unexplained gap"
+            assert len(entry["note"]) > 40, f"{row['key']}: the reason is too thin to act on"
+
+
+@pytest.mark.skipif(not RAW_INDEX.exists(), reason="the documents have not been fetched")
+def test_no_document_sits_in_the_library_without_a_reference() -> None:
+    """A file nobody cites is a file nobody can check."""
+    keys = {r["key"] for r in register()}
+    on_disk = {p.stem for p in RAW.iterdir() if p.is_file() and p.name != "index.csv"}
+    assert on_disk <= keys, f"documents with no register row: {sorted(on_disk - keys)}"

@@ -6,7 +6,9 @@ difference in tonnes with a sign. Every part of that sentence exists somewhere i
 literature. The combination does not. This note says which parts come from where, what each
 neighbour would say about TI, and what the register's own contents demand that TI change.
 
-Keys in `backticks` are rows in [`references.csv`](references.csv).
+Keys in `backticks` are rows in [`references.csv`](references.csv), and the document behind each
+one is in `raw/` where the publisher allowed it to be downloaded - 59 of the 83, with the reason
+recorded for the rest.
 
 ## Three questions, not one
 
