@@ -21,7 +21,7 @@ Rules: [`sales/method/method.md`](../../data/auto/sales/method/method.md).
 | File | Status | Rows |
 |---|---|---|
 | `sales/processed/sales_eea_eu27_2024.csv` | exists | 1,226 — Hyundai and Kia EU27 first registrations, 2024 (Toyota and Honda snapshots pinned, out of scope) |
-| `sales/processed/sales_kia_ir_2026.csv` | exists | 287 — Kia IR retail sales, 2026 year to date |
+| `sales/processed/sales_kia_ir_2024.csv`, `…_2025.csv`, `…_2026.csv` | exists | 287 / 314 / 290 — Kia IR retail sales; 2024 covers January–October, 2025 the full year, 2026 the year to July |
 | `sales/processed/sales_hyundai_plant_2025.csv` | exists | 113 — Hyundai IR plant-side sales, 2025 (reconciliation and non-US destinations only) |
 | `sales/processed/sales_hyundai_us.csv` | exists | 41 — Hyundai IR US sales by model 2024 and 2025, Hyundai and Genesis, brand total incl. fleet |
 | `sales/processed/sales_kia_us.csv` | exists | 23 — Kia America US sales by model, full-year 2024 and 2025 |

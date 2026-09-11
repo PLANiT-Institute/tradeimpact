@@ -20,7 +20,7 @@ needs per-model values.
 |---|---|---|---|---|---|
 | `SRC-01` | EEA CO2 monitoring of new passenger cars, 2024 final — Toyota EU27 | `sales`, `vehicle_technology` | api (snapshot pinned) | Country × commercial name × powertrain; no production origin | EEA re-use policy; acknowledge EEA, check item-specific terms |
 | `SRC-02` | Same, Hyundai EU27 | `sales`, `vehicle_technology` | api (snapshot pinned) | As above | As above |
-| `SRC-04` | Kia IR retail sales by model and market, 2026 year to date | `sales` | document (hand-gathered workbook) | Model × market, market being an IR **region** in most columns | Company IR disclosure; redistribution not cleared |
+| `SRC-04` | Kia IR retail sales by model and market, 2024 (ten months), 2025, 2026 year to date | `sales` | api (listing endpoint → xlsx) | Model × market, market being an IR **region** in most columns | Company IR disclosure; redistribution not cleared |
 | `SRC-05` | Hyundai IR global plant sales, 2025 | `sales` | document (hand-gathered workbook) | Model × plant, with a domestic/export split — production side | Company IR disclosure; redistribution not cleared |
 | `SRC-20` | Archived EU27 destination inputs snapshot | `vehicle_usage`, `country_emissions`, `emission_targets` | held file | Per EU27 country: VKT, operating life, stock, fleet intensity base, grid intensity, S1/S2/S3 rates, each with tier and derivation | Derived work product of the prior build; underlying sources individually licensed |
 | `SRC-24` | Archived source register and published lifetime results | ST07, ST11 | held files | 26 registered sources; one published EU27 2024 cohort result set | Prior work product; used as a register seed and a regression baseline |

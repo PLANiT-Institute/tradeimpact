@@ -97,14 +97,16 @@ previously published EU27 result exactly when fed the archived inputs (see
 | US, 2025 brand sales | Hyundai | 98.4 % | −1.50 | **+9.63** |
 | US, 2025 brand sales | Kia | 98.2 % | −0.001 | **+10.52** |
 | US, 2025 brand sales | Nissan | 100.0 % | −1.36 | **+9.65** |
-| US, Jan–Jun 2026 retail | Kia | 98.0 % | **+0.49** | **+5.81** |
+| US, Jan–Jul 2026 retail | Kia | 98.0 % | **+0.57** | **+6.83** |
 | Japan, 2024 registrations | Toyota | 99.3 % | −1.07 | **+3.50** |
 | Japan, 2024 registrations | Nissan | 93.7 % | −0.35 | **+0.47** |
 | Japan, 2025 registrations | Toyota | 100.0 % | −1.13 | **+3.53** |
 | Japan, 2025 registrations | Nissan | 94.6 % | −0.24 | **+0.41** |
 | Korea, 2024 domestic sales | Hyundai | 94.7 % | −5.02 | **+4.24** |
 | Korea, 2025 domestic sales | Hyundai | 94.4 % | −4.84 | **+4.06** |
-| Korea, Jan–Jun 2026 retail | Kia | 98.7 % | −1.86 | **+1.65** |
+| Korea, Jan–Oct 2024 retail | Kia | 99.3 % | −2.00 | **+3.81** |
+| Korea, 2025 retail | Kia | 99.3 % | −2.79 | **+4.36** |
+| Korea, Jan–Jul 2026 retail | Kia | 99.5 % | −2.40 | **+1.85** |
 
 ### How much of worldwide sales this captures
 
@@ -113,16 +115,19 @@ previously published EU27 result exactly when fed the archived inputs (see
 | Toyota | 2024 | 10.16 M | 38.5 % | 42.6 % | 28 |
 | Hyundai | 2024 | 4.17 M | 42.4 % | 48.7 % | 28 |
 | Nissan | 2024 | 3.35 M | 38.1 % | 40.3 % | 28 |
-| Kia | 2026 H1 | 1.62 M | 44.2 % | 100.0 % | 2 |
+| Kia | 2025 | 3.10 M | 44.6 % | 100.0 % | 2 |
 
 `Assessed` is units carrying a result over the company's own worldwide figure; `Held` is every
 unit the project holds for those brands, assessed or not, so the gap between the two is sales we
-have but cannot yet price. The denominator covers the brands the company reports together, and
+have but cannot yet assess. The denominator covers the brands the company reports together, and
 the cohorts hold Lexus, Infiniti and Genesis apart, so those units sit in `Held` and are named
 in `brands_out_of_scope`. Toyota's and Nissan's worldwide figures are their own published
 totals; Hyundai's is derived from its three workbooks because it publishes no single total, and
-Kia's is the sum of every destination in its retail release. Full detail, including the 2025
-cohorts where only the United States is assessed, is in `ti_global_coverage.csv`.
+Kia's is the sum of every destination in its retail release — which is also why Kia's held share
+is 100 %: that release is both the denominator and the file, so a car is never counted twice.
+A share only counts when both sides cover the same months, which `share_comparable` records:
+Kia's 2024 row is marked `no`, its IR node having stopped in October. Full detail, including the
+2025 and 2026 cohorts, is in `ti_global_coverage.csv`.
 
 The `Covered` column in the tables above is the sales coverage within a market: units carrying a
 result over units in the source.
@@ -150,7 +155,7 @@ one column per calendar year.
 
 Read the US rows with their caveats: the cohorts are the companies' own US releases (Hyundai
 IR "US Retail Sales" 2024 and 2025, imports included, brand total despite the label; Kia
-America full years 2024 and 2025; Kia IR Jan–Jun 2026, a half year); the US S1 benchmark is
+America full years 2024 and 2025; Kia IR Jan–Jul 2026, a part year); the US S1 benchmark is
 the all-light-duty fleet including pickups (217 gCO₂/km, declining 1.1 %/yr) with the segment
 ratio set to 1.0, which is why compact crossovers and hybrids sit below it — a segment-matched
 benchmark would raise or reverse the S1 avoidances; and nameplates the releases do not split

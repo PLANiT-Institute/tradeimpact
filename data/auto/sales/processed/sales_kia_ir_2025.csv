@@ -1,0 +1,315 @@
+company,destination,destination_level,origin,cohort_year,period,model,powertrain,units,basis,source_file
+kia,CN,country,CN,2025,2025-01..2025-12,Carnival,,1280,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,CN,2025,2025-01..2025-12,EV5,,3192,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,CN,2025,2025-01..2025-12,EV5,,94,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,CN,2025,2025-01..2025-12,EV5,,5723,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,CN,2025,2025-01..2025-12,EV5,,1370,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,CN,2025,2025-01..2025-12,EV5,,57,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,CN,2025,2025-01..2025-12,Forte,,9386,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,CN,2025,2025-01..2025-12,K3,,6525,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,CN,2025,2025-01..2025-12,K5,,1770,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,CN,2025,2025-01..2025-12,K5,,4100,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,CN,2025,2025-01..2025-12,KX1,,21186,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,CN,2025,2025-01..2025-12,KX1,,2,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,CN,2025,2025-01..2025-12,KX3 / Seltos,,19388,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,CN,2025,2025-01..2025-12,KX3 / Seltos,,15844,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,CN,2025,2025-01..2025-12,KX3 / Seltos,,1808,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,CN,2025,2025-01..2025-12,KX3 / Seltos,,775,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,CN,2025,2025-01..2025-12,KX3 / Seltos,,10437,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,CN,2025,2025-01..2025-12,KX3 / Seltos,,11021,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,CN,2025,2025-01..2025-12,Pegas,,139,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,CN,2025,2025-01..2025-12,Pegas,,2670,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,CN,2025,2025-01..2025-12,Pegas,,1595,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,CN,2025,2025-01..2025-12,Pegas,,104,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,CN,2025,2025-01..2025-12,Pegas,,26249,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,CN,2025,2025-01..2025-12,Pegas,,33682,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,CN,2025,2025-01..2025-12,Sonet,,961,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,CN,2025,2025-01..2025-12,Sonet,,13697,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,CN,2025,2025-01..2025-12,Sonet,,1448,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,CN,2025,2025-01..2025-12,Sonet,,6437,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,CN,2025,2025-01..2025-12,Sonet,,16,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,CN,2025,2025-01..2025-12,Sonet,,13878,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,CN,2025,2025-01..2025-12,Sonet,,5672,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,CN,2025,2025-01..2025-12,Sportage,,15561,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,CN,2025,2025-01..2025-12,Sportage,,12805,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,CN,2025,2025-01..2025-12,Zhipao,,1771,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,IN,country,IN,2025,2025-01..2025-12,Carens MPV,,73269,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,IN,2025,2025-01..2025-12,Carens MPV,,369,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,IN,2025,2025-01..2025-12,Carens MPV,,442,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,IN,2025,2025-01..2025-12,Carens MPV,,565,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,IN,2025,2025-01..2025-12,Carens MPV,,2289,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,IN,2025,2025-01..2025-12,Carens MPV,,3245,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,IN,country,IN,2025,2025-01..2025-12,Carens MPV EV,,2862,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,IN,country,IN,2025,2025-01..2025-12,Carnival (CKD),,1439,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,IN,country,IN,2025,2025-01..2025-12,Seltos,,69346,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,IN,2025,2025-01..2025-12,Seltos,,2688,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,IN,2025,2025-01..2025-12,Seltos,,1000,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,IN,2025,2025-01..2025-12,Seltos,,1744,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,IN,2025,2025-01..2025-12,Seltos,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,IN,country,IN,2025,2025-01..2025-12,Sonet,,108025,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,IN,2025,2025-01..2025-12,Sonet,,10823,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,IN,2025,2025-01..2025-12,Sonet,,1697,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,IN,2025,2025-01..2025-12,Sonet,,630,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,IN,2025,2025-01..2025-12,Sonet,,11,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,IN,country,IN,2025,2025-01..2025-12,Syros,,24237,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Bongo,,31088,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,Bongo,,2160,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Bongo,,3165,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Bongo,,440,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Bongo,,12544,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,Bongo,,19174,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Bongo EV,,4942,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Bongo EV,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Bus,,1411,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,KR,2025,2025-01..2025-12,Carnival,,5645,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Carnival,,78218,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,KR,2025,2025-01..2025-12,Carnival,,71917,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,Carnival,,374,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Carnival,,15393,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Carnival,,244,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Carnival,,1668,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,Carnival,,4446,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,EV3,,21212,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,EV3,,170,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,EV3,,2956,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,EV3,,7488,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,EV3,,65202,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,EV3,,364,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,EV3,,257,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,EV4,,8110,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,EV4,,17,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,EV4,,681,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,EV5,,2193,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,EV5,,1120,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,KR,2025,2025-01..2025-12,EV6,,382,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CN,country,KR,2025,2025-01..2025-12,EV6,,23,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,IN,country,KR,2025,2025-01..2025-12,EV6,,470,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,EV6,,9368,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,KR,2025,2025-01..2025-12,EV6,,102,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,KR,2025,2025-01..2025-12,EV6,,4282,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,EV6,,114,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,EV6,,635,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,EV6,,1727,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,EV6,,16218,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,EV6,,44,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,EV6,,123,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,KR,2025,2025-01..2025-12,EV9,,4121,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,IN,country,KR,2025,2025-01..2025-12,EV9,,9,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,EV9,,1594,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,KR,2025,2025-01..2025-12,EV9,,1803,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,EV9,,42,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,EV9,,473,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,EV9,,153,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,EV9,,9648,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,EV9,,71,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,EV9,,95,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,KR,2025,2025-01..2025-12,K3,,27,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,KR,2025,2025-01..2025-12,K3,,3,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,K3,,203,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,K3,,1135,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,K3,,130,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,K3,,19,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,K3,,545,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,K5,,36598,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,KR,2025,2025-01..2025-12,K5,,72748,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,K5,,10,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,K5,,24,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,K5,,63,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,K5,,23,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,K5,,147,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,K5,,9232,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,K8,,28154,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,K8,,4,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,K8,,5,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,K8,,186,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,K8,,792,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,K9,,1581,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,K9,,39,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,K9,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Mohave,,77,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Morning / Picanto,,16297,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,Morning / Picanto,,9993,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Morning / Picanto,,9318,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Morning / Picanto,,1204,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,Morning / Picanto,,62504,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Morning / Picanto,,19073,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,Morning / Picanto,,10862,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,KR,2025,2025-01..2025-12,Niro,,6701,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Niro,,13305,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,KR,2025,2025-01..2025-12,Niro,,888,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,KR,2025,2025-01..2025-12,Niro,,25002,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,Niro,,697,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Niro,,1362,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Niro,,55,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,Niro,,38974,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Niro,,3086,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,Niro,,6042,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,KR,2025,2025-01..2025-12,Niro EV,,3320,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Niro EV,,294,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,KR,2025,2025-01..2025-12,Niro EV,,6180,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,Niro EV,,17,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Niro EV,,159,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Niro EV,,28,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,Niro EV,,7560,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Niro EV,,78,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,Niro EV,,4,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,Niro Plus,,2,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Niro Plus,,8,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Niro Plus EV,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Niro Plus EV,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,PV5,,3836,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,PV5,,3,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,PV5,,1430,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,PV5,,3,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Ray,,39384,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Ray EV,,9270,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,KR,2025,2025-01..2025-12,Seltos,,21276,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Seltos,,55917,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,KR,2025,2025-01..2025-12,Seltos,,56798,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Seltos,,12478,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Seltos,,1620,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Seltos,,6044,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,Seltos,,2664,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,KR,2025,2025-01..2025-12,Sorento,,4431,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Sorento,,100002,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,KR,2025,2025-01..2025-12,Sorento,,20488,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,Sorento,,844,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Sorento,,11443,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Sorento,,3726,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,Sorento,,11985,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Sorento,,2107,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,Sorento,,18146,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,KR,2025,2025-01..2025-12,Soul,,704,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,KR,2025,2025-01..2025-12,Soul,,28,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,KR,2025,2025-01..2025-12,Soul,,50133,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Soul,,65,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Soul,,367,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Soul,,2886,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,Soul EV,,53,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Soul EV,,7,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,KR,2025,2025-01..2025-12,Sportage,,23906,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Sportage,,74517,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,KR,2025,2025-01..2025-12,Sportage,,7133,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,KR,2025,2025-01..2025-12,Sportage,,71512,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Sportage,,25259,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Sportage,,4305,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Sportage,,7913,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,Sportage,,445,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,Stinger,,2,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,Stinger,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,Stonic,,3728,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Stonic,,8398,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,KR,2025,2025-01..2025-12,Stonic,,3481,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,KR,2025,2025-01..2025-12,Stonic,,53288,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Stonic,,2290,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,Stonic,,3209,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,KR,2025,2025-01..2025-12,Tasman,,8484,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,KR,2025,2025-01..2025-12,Tasman,,23,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,KR,2025,2025-01..2025-12,Tasman,,4594,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,KR,2025,2025-01..2025-12,Tasman,,749,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,KR,2025,2025-01..2025-12,Tasman,,429,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,MX,2025,2025-01..2025-12,K3,,28,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,MX,2025,2025-01..2025-12,K3,,56612,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,MX,2025,2025-01..2025-12,K3,,406,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,MX,2025,2025-01..2025-12,K3,,81,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,MX,2025,2025-01..2025-12,K3,,2,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,MX,2025,2025-01..2025-12,K3,,8,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,MX,2025,2025-01..2025-12,K3,,18077,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,MX,2025,2025-01..2025-12,K3,,6243,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,MX,2025,2025-01..2025-12,K4,,13984,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,MX,2025,2025-01..2025-12,K4,,14763,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,MX,2025,2025-01..2025-12,K4,,140108,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,MX,2025,2025-01..2025-12,K4,,246,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,MX,2025,2025-01..2025-12,K4,,6649,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,MX,2025,2025-01..2025-12,K4,,7,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,MX,2025,2025-01..2025-12,K4,,468,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,MX,2025,2025-01..2025-12,K4,,975,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,MX,2025,2025-01..2025-12,K4,,6259,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,MX,2025,2025-01..2025-12,Rio (Pride),,3,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,MX,2025,2025-01..2025-12,Rio (Pride),,2,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,MX,2025,2025-01..2025-12,Rio (Pride),,2,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,RU,2025,2025-01..2025-12,Rio (Pride),,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,SG,2025,2025-01..2025-12,EV5,,71,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,SK,2025,2025-01..2025-12,Cee'd,,155,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,SK,2025,2025-01..2025-12,Cee'd,,220,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,SK,2025,2025-01..2025-12,Cee'd,,3303,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,SK,2025,2025-01..2025-12,Cee'd,,61424,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,SK,2025,2025-01..2025-12,Cee'd,,29,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,SK,2025,2025-01..2025-12,Cee'd CUV,,1060,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,SK,2025,2025-01..2025-12,Cee'd CUV,,2959,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,SK,2025,2025-01..2025-12,Cee'd CUV,,23326,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,SK,2025,2025-01..2025-12,Cee'd CUV,,125,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,SK,2025,2025-01..2025-12,EV4,,3936,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,SK,2025,2025-01..2025-12,Sportage,,9465,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,SK,2025,2025-01..2025-12,Sportage,,10762,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,SK,2025,2025-01..2025-12,Sportage,,149677,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,SK,2025,2025-01..2025-12,Sportage,,3647,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,SK,2025,2025-01..2025-12,Sportage,,16560,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,US,2025,2025-01..2025-12,EV6,,809,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,US,2025,2025-01..2025-12,EV6,,8651,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,US,2025,2025-01..2025-12,EV9,,13248,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,US,2025,2025-01..2025-12,EV9,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,US,2025,2025-01..2025-12,EV9,,14,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,US,2025,2025-01..2025-12,Optima / K5,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,US,2025,2025-01..2025-12,Optima / K5,,3,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,US,2025,2025-01..2025-12,Sorento,,7114,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,US,2025,2025-01..2025-12,Sorento,,1731,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,US,2025,2025-01..2025-12,Sorento,,74284,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,US,2025,2025-01..2025-12,Sorento,,11,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,US,2025,2025-01..2025-12,Sorento,,662,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,US,2025,2025-01..2025-12,Sportage,,111311,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,US,2025,2025-01..2025-12,Sportage,,999,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,CA,country,US,2025,2025-01..2025-12,Telluride,,2170,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,MX,country,US,2025,2025-01..2025-12,Telluride,,371,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,US,2025,2025-01..2025-12,Telluride,,123281,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,US,2025,2025-01..2025-12,Telluride,,44,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,US,2025,2025-01..2025-12,Telluride,,196,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,US,2025,2025-01..2025-12,Telluride,,722,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,Bongo,,10386,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,ckd,2025,2025-01..2025-12,Bongo,,3009,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,Carens MPV,,4146,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,Carnival,,6209,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,K3,,1704,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,ckd,2025,2025-01..2025-12,K3,,3363,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,K5,,242,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,Morning / Picanto,,263,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,ckd,2025,2025-01..2025-12,Morning / Picanto,,1287,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,Pegas,,323,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,Seltos,,6678,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,ckd,2025,2025-01..2025-12,Seltos,,124,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,Sonet,,6178,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,ckd,2025,2025-01..2025-12,Sonet,,18298,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,ckd,2025,2025-01..2025-12,Sonet,,3209,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,Sorento,,1239,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,ckd,2025,2025-01..2025-12,Sorento,,41,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,ckd,2025,2025-01..2025-12,Sorento,,1483,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,ckd,2025,2025-01..2025-12,Soul,,77,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,ckd,2025,2025-01..2025-12,Sportage,,2471,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,ckd,2025,2025-01..2025-12,Sportage,,9458,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,ckd,2025,2025-01..2025-12,Sportage,,4209,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,ckd,2025,2025-01..2025-12,Stonic,,3331,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,special_vehicle,2025,2025-01..2025-12,Bongo,,72,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,special_vehicle,2025,2025-01..2025-12,Bongo,,295,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,special_vehicle,2025,2025-01..2025-12,Bongo,,50,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,special_vehicle,2025,2025-01..2025-12,Bongo,,8,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,special_vehicle,2025,2025-01..2025-12,Bongo (CKD),,120,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,special_vehicle,2025,2025-01..2025-12,Bongo (CKD),,660,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,special_vehicle,2025,2025-01..2025-12,Bongo (CKD),,460,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,special_vehicle,2025,2025-01..2025-12,Bus (CKD),,327,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,KR,country,special_vehicle,2025,2025-01..2025-12,Millitary,,2429,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,special_vehicle,2025,2025-01..2025-12,Millitary,,357,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,special_vehicle,2025,2025-01..2025-12,Millitary,,3,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,special_vehicle,2025,2025-01..2025-12,Millitary,,76,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,special_vehicle,2025,2025-01..2025-12,Millitary,,34,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,special_vehicle,2025,2025-01..2025-12,Millitary,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,US,country,special_vehicle,2025,2025-01..2025-12,Millitary (CKD),,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,special_vehicle,2025,2025-01..2025-12,Millitary (CKD),,6,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,special_vehicle,2025,2025-01..2025-12,Millitary (CKD),,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,eastern_europe,region,special_vehicle,2025,2025-01..2025-12,Millitary (CKD),,118,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,special_vehicle,2025,2025-01..2025-12,Millitary (CKD),,2,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,latin_america,region,special_vehicle,2025,2025-01..2025-12,Millitary (CKD),,2,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,special_vehicle,2025,2025-01..2025-12,Millitary (CKD),,570,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,africa,region,special_vehicle,2025,2025-01..2025-12,Tasman,,22,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,asia_pacific,region,special_vehicle,2025,2025-01..2025-12,Tasman,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,europe,region,special_vehicle,2025,2025-01..2025-12,Tasman,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx
+kia,middle_east,region,special_vehicle,2025,2025-01..2025-12,Tasman,,1,retail_sales,kia_2025_retail_sales_by_model_market.xlsx

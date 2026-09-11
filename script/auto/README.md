@@ -6,7 +6,8 @@ One directory per dataset, mirroring `data/auto/`. A script reads only from its 
 `data/auto/output/`.
 
 ```text
-sales/                extract_eea_registrations.py, extract_kia_ir.py, extract_hyundai_ir.py
+sales/                fetch_kia_ir.py, fetch_hyundai_ir.py, fetch_kia_america.py, …
+                      extract_eea_registrations.py, extract_kia_ir.py, extract_hyundai_ir.py
 country_emissions/    extract_eu27_snapshot.py
 emission_targets/     derive_eu27_rates.py, derive_us_rates.py, derive_au_rates.py
 vehicle_usage/        extract_eu27_eurostat.py

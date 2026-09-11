@@ -33,7 +33,12 @@ US_SALES_FILES = (
     "sales_nissan_us.csv",
 )
 #: Processed sales files behind the Korea market cohort (destination KR rows).
-KR_SALES_FILES = ("sales_hyundai_kr.csv", "sales_kia_ir_2026.csv")
+KR_SALES_FILES = (
+    "sales_hyundai_kr.csv",
+    "sales_kia_ir_2024.csv",
+    "sales_kia_ir_2025.csv",
+    "sales_kia_ir_2026.csv",
+)
 JP_SALES_FILES = ("sales_jada_jp.csv",)
 
 

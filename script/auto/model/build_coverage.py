@@ -18,8 +18,14 @@ are used only where no market-side file covers that company and destination at a
 labelled as such; ``export_shipments`` rows (Korea plant-side exports without a stated
 destination) are never counted here — they serve the trade-flow reconciliation.
 
+Two market-side files can cover the same company, destination and year — Kia's US volume is in
+both its own newsroom export and the Korean IR retail workbook. Only the file the cohort was
+actually built from carries the assessed units; the other is ``not_in_cohort``, so a destination
+is never counted twice.
+
 Inputs   sales/processed/sales_*.csv, sales/method/companies.csv,
-         output/destination_parameters_*.csv, output/ti_by_model.csv, output/ti_withheld.csv
+         output/destination_parameters_*.csv, output/cohorts.csv, output/ti_by_model.csv,
+         output/ti_withheld.csv
 Output   output/ti_coverage.csv
 
 Run from the repository root:  .venv/bin/python script/auto/model/build_coverage.py
@@ -117,6 +123,11 @@ def main() -> None:
             if r["basis"] in MARKET_SIDE:
                 market_side_covered.add((r["company"], r["destination"]))
 
+    used_files: dict[tuple[str, str, int], set[str]] = defaultdict(set)
+    for r in read_csv(OUT_DIR / "cohorts.csv"):
+        key = (r["company"], r["destination"], int(r["cohort_year"]))
+        used_files[key].add(r["sales_source_file"])
+
     assessed: dict[tuple[str, str, int], int] = defaultdict(int)
     scenarios_seen: dict[tuple[str, str, int], set[str]] = defaultdict(set)
     by_model = read_csv(OUT_DIR / "ti_by_model.csv")
@@ -159,7 +170,7 @@ def main() -> None:
             note = dest_notes.get(dest, "no destination benchmark built yet for this country")
         elif p == 0 and w > 0:
             status, note = "withheld", "; ".join(sorted(reasons[key]))
-        elif p == 0:
+        elif p == 0 or (used_files[key] and source_file not in used_files[key]):
             status, note = (
                 "not_in_cohort",
                 "destination assessed elsewhere; this file is not a cohort source",

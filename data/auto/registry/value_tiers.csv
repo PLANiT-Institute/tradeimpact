@@ -27,7 +27,7 @@ epa_trends_powertrain_share_my2024,make,.*,B,EPA certification production volume
 sales_eea_eu27_2024,basis,registrations,A,EEA first registrations by member state (registration authority)
 sales_hyundai_us|sales_kia_us|sales_hyundai_kr|sales_toyota_us|sales_nissan_us,basis,brand_total_sales|domestic_sales,A,company's own market-side release for the destination
 sales_hyundai_kr,basis,export_shipments,C,plant-side shipments without a stated destination; reconciliation only
-sales_kia_ir_2026,basis,retail_sales,A,company's own market-side IR release (regions and countries as published)
+sales_kia_ir_\d{4},basis,retail_sales,A,company's own market-side IR release (regions and countries as published)
 sales_hyundai_plant_2025,basis,plant_sales,B,plant-side sales: units built at the destination's plants; imports from other plants are not in the source
 trade_flows,quantity_flag,reported,A,customs declarations as reported to UN Comtrade
 trade_flows,quantity_flag,estimated|member_state_sum|not_reported,B,quantity estimated by Comtrade or summed from member-state reporters

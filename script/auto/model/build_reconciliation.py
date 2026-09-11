@@ -10,8 +10,10 @@ Output   output/ti_source_reconciliation.csv
 
     basis_side          market (registrations, retail, brand total, domestic sales) or plant
     used_by_cohort      yes where this file feeds the assessed cohort for that market
-    spread_vs_used_pct  difference from the used file, market-side sources only; blank where the
-                        bases are not comparable
+    spread_vs_used_pct  difference from the used file, market-side sources only, over the
+                        brands the second publication covers (its own brand unless the
+                        cross-check names more); blank where no used market-side figure
+                        exists for that company, destination and year
 
 Run from the repository root:  .venv/bin/python script/auto/model/build_reconciliation.py
 """
@@ -42,7 +44,12 @@ COHORT_FILES = {
         "sales_toyota_us.csv",
         "sales_nissan_us.csv",
     },
-    "KR": {"sales_hyundai_kr.csv", "sales_kia_ir_2026.csv"},
+    "KR": {
+        "sales_hyundai_kr.csv",
+        "sales_kia_ir_2024.csv",
+        "sales_kia_ir_2025.csv",
+        "sales_kia_ir_2026.csv",
+    },
 }
 EU27 = {
     "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
@@ -149,8 +156,14 @@ def main() -> None:
     for r in rows:
         # A group figure covers brands the cohort holds apart (Lexus from Toyota, Infiniti from
         # Nissan, Genesis from Hyundai), so it is compared against the same set of brands.
-        brands = str(r["boundary_companies"]).split(";") if r["boundary_companies"] else []
-        if not brands or r["used_by_cohort"] == "yes" or r["basis_side"] != "market":
+        # With no stated boundary the publication covers the row's own brand, which is the
+        # case that matters most: a company's two market-side releases for the same country.
+        brands = (
+            str(r["boundary_companies"]).split(";")
+            if r["boundary_companies"]
+            else [str(r["company"])]
+        )
+        if r["used_by_cohort"] == "yes" or r["basis_side"] != "market":
             continue
         reference = sum(
             used_units.get((brand, str(r["destination"]), int(str(r["cohort_year"]))), 0)

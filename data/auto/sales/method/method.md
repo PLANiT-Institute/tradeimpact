@@ -38,9 +38,13 @@ obtained, access date, licence). In short:
   API (<https://co2cars.apps.eea.europa.eu/>) with one shared query (brand term swapped) by
   `script/auto/sales/fetch_eea_registrations.py`; each JSON holds the exact query and
   response hash. All four exporters are therefore on one EU27 boundary for 2024.
-- `kia_2026_retail_sales_by_model_market.xlsx`, `hyundai_2025_global_plant_sales.xlsx` —
-  **local files only, gathered by hand** from the Kia and Hyundai IR sales-results pages
-  into Google Drive `Trade/Arc_Trade_Data/Auto/`; exact download links not recorded.
+- `kia_2024_retail_sales_by_model_market.xlsx`, `kia_2025_…`, `kia_2026_…` — Kia IR "Retail
+  Sales by Country", one workbook per calendar year, downloaded by
+  `script/auto/sales/fetch_kia_ir.py` (see below). These replace the hand-gathered 2026 copy
+  that the first cut of this dataset used; the two are cell-identical for the months they share.
+- `hyundai_2025_global_plant_sales.xlsx` — **local file only, gathered by hand** from the
+  Hyundai IR sales-results page into Google Drive `Trade/Arc_Trade_Data/Auto/`; exact download
+  link not recorded.
 
 ## Sales-results workbook families (Hyundai IR)
 
@@ -59,8 +63,24 @@ markets and the registration-versus-retail timing.
 
 Kia America's newsroom serves an xlsx per month
 (`salesbymonthexport?month=12&year=YYYY&yeartocompare=YYYY-1`, Referer required), fetched by
-`script/auto/sales/fetch_kia_america.py`. Kia Corporation's IR workbook (`kia_2026_retail_sales_by_model_market.xlsx`)
-remains hand-gathered: the IR page is a client-rendered application with no file list endpoint.
+`script/auto/sales/fetch_kia_america.py`.
+
+## Sales-results workbook families (Kia IR)
+
+Kia's IR library page is a client-rendered application, but its own script lists the files
+through `GET https://worldwide.kia.com/api/investors/business-sales-results?year=YYYY&page=0&language=en`,
+which returns one `sales` node per year with four workbook paths served from
+`https://worldwide.kia.com/files/<path>`: `Retail Sales` (market-side, by model and
+destination), `Sales by Model`, `Export Sales by Region` and `Overseas Plant Sale` (both
+plant-side). `script/auto/sales/fetch_kia_ir.py` downloads the retail workbook only — the
+other three feed no extractor — into `raw/kia_<year>_retail_sales_by_model_market.xlsx`. The
+Korean-language node (`language=ko`) carries byte-different but cell-identical copies.
+
+Each node is overwritten monthly, so the current year's workbook is the year to date and
+superseded editions are not retained. **Kia's 2024 node was last refreshed in October 2024
+and was never replaced with a December edition**, so the 2024 workbook covers January to
+October only; every row built from it carries that period and the partial-year coverage note.
+The 2025 workbook is a complete calendar year.
 
 ## Processed files
 
@@ -69,7 +89,7 @@ All share the schema above; one file per raw source, written by the script named
 | processed file | script | rows | note |
 |---|---|---|---|
 | `sales_eea_eu27_2024.csv` | `script/auto/sales/extract_eea_registrations.py` | see script output | in-scope brands only: Hyundai 429,936 and Kia 414,677 registrations (Toyota 803,094 and Honda 40,270 are pinned but excluded); powertrain from EEA; `ICE_OTHER` → `ICE` |
-| `sales_kia_ir_2026.csv` | `script/auto/sales/extract_kia_ir.py` | 287 | Jan–Jun 2026 year-to-date; markets are IR regions except KR/US/CA/MX/IN/CN; `origin` = plant block; zero cells dropped |
+| `sales_kia_ir_2024.csv`, `sales_kia_ir_2025.csv`, `sales_kia_ir_2026.csv` | `script/auto/sales/extract_kia_ir.py` | 287, 314, 290 | one file per workbook: Jan–Oct 2024, the full year 2025, Jan–Jul 2026 year to date; markets are IR regions except KR/US/CA/MX/IN/CN; `origin` = plant block; zero cells dropped, and the one net-negative cell (2025 Rio, Asia Pacific, −4 — returns exceeding sales) dropped with it |
 | `sales_hyundai_plant_2025.csv` | `script/auto/sales/extract_hyundai_ir.py` | 113 | overseas plants only, 2025; destination known for Domestic (plant country) and Korea segments, `export` otherwise; plant-side, so it is the only source for India, Brazil, China, Türkiye, Vietnam, Indonesia and Singapore and is never a US cohort |
 | `sales_hyundai_us.csv` | `script/auto/sales/extract_hyundai_us_retail.py` | 41 | Hyundai IR "US Retail Sales by Model" 2024 and 2025: Hyundai and Genesis nameplates, imports and US-built together. The sheet is labelled retail but its 2024 total (911,805) equals HMA total sales incl. fleet (836,802) plus Genesis (75,003), hence `brand_total_sales`; Genesis rows carry `company = genesis` (out of scope in `companies.csv`); powertrain only where the nameplate states it, the rest split by `us_model_map.csv` rule `epa_share_my2024` |
 | `sales_kia_us.csv` | `script/auto/sales/extract_kia_america.py` | 23 | Kia America December exports, full-year 2024 and 2025 by model (`brand_total_sales`); K4 and Forte on one row as published; EV6 and EV9 BEV, the rest split downstream |
@@ -89,19 +109,28 @@ Scripts in `script/auto/sales/`. One script per raw source; each writes a CSV to
 
 1. EEA snapshots: flatten the `response` evidence rows for the brands in scope; powertrain
    classes as recorded by EEA; basis = `registrations`.
-2. Kia workbook: `Total` sheet, Retail Sales block — model × market annual totals; map
-   market labels to ISO codes; basis = `retail_sales`. Powertrain must be joined from the
-   vehicle_technology dataset (the workbook carries model names only).
+2. Kia workbooks: `Total` sheet, Retail Sales block — model × market totals for the period
+   the workbook covers; map market labels to ISO codes; basis = `retail_sales`. Powertrain
+   must be joined from the vehicle_technology dataset (the workbook carries model names
+   only). The row labels drift between editions — the 2024 workbook writes `K5 / Optima`,
+   `Carnival / Sedona`, `Bongo / Frontier` where later editions write the domestic name —
+   so `kr_labels.csv` carries both spellings and resolves them to the same nameplate.
 3. Hyundai workbook: plant sales are production-side, not destination sales — use only
    where destination sales are absent, and record the basis honestly.
 
 ## Coverage and gaps
 
 - EU27 2024: complete for both exporters (EEA registrations by country, model, powertrain).
+- Korea: both exporters have a domestic cohort for 2024 and 2025 — Hyundai from its own
+  "Unit Sales by Model" Korea block, Kia from the Korea column of the retail workbook. Kia's
+  2024 covers January–October only, the period its workbook stops at.
 - United States: the Kia IR workbook's U.S.A column gives Kia retail sales by model for
-  January–June 2026 (a partial year, no powertrain split); the Hyundai IR workbook gives only
-  US-built cars sold in the US (HMMA and HMGMA Domestic segments), so imports from Korea are
-  missing from the Hyundai US cohort. A Hyundai monthly sales-by-region file would complete it.
+  January–July 2026 (a partial year, no powertrain split); for 2024 and 2025 the US cohort
+  uses the Kia America release instead, and the IR column stands beside it in
+  `output/ti_source_reconciliation.csv` rather than being added to it. The Hyundai IR
+  workbook gives only US-built cars sold in the US (HMMA and HMGMA Domestic segments), so
+  imports from Korea are missing from the Hyundai US cohort. A Hyundai monthly
+  sales-by-region file would complete it.
 - Australia: deferred; the gathered files report Kia's Asia-Pacific region only.
 
 ## Rules

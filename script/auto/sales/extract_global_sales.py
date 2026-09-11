@@ -1,8 +1,8 @@
 """Worldwide sales per company and year: the denominator for global coverage.
 
 Output  data/auto/sales/processed/global_sales_totals.csv
-        company, cohort_year, units, basis, brands_covered, derived, derivation, source_id,
-        source_file
+        company, cohort_year, period, units, basis, brands_covered, derived, derivation,
+        source_id, source_file
 
 Where each figure comes from, and what it counts.
 
@@ -14,8 +14,9 @@ Where each figure comes from, and what it counts.
              shipments exported from Korea plus sales by the overseas plants, each from its own
              Hyundai workbook. Counts the Hyundai and Genesis brands. The export leg is
              shipments rather than sales, so the figure is approximate and marked derived.
-    kia      the retail workbook's every-destination total for the half year in scope. Counts
-             the Kia brand.
+    kia      each retail workbook's every-destination total, for the period that workbook
+             covers. Counts the Kia brand. Kia's 2024 node was never refreshed past October,
+             so the 2024 figure is ten months and the period says so.
 
 Run from the repository root:  .venv/bin/python script/auto/sales/extract_global_sales.py
 """
@@ -36,6 +37,7 @@ OUT = PROCESSED / "global_sales_totals.csv"
 FIELDS = [
     "company",
     "cohort_year",
+    "period",
     "units",
     "basis",
     "brands_covered",
@@ -46,7 +48,7 @@ FIELDS = [
 ]
 TOYOTA_FILE = RAW / "toyota_global_sales_202512.xlsx"
 NISSAN_FILE = RAW / "nissan_global_sales_2025.csv"
-KIA_FILE = PROCESSED / "sales_kia_ir_2026.csv"
+KIA_GLOB = "sales_kia_ir_*.csv"
 HYUNDAI_KR = PROCESSED / "sales_hyundai_kr.csv"
 
 
@@ -83,6 +85,7 @@ def toyota_rows() -> list[dict[str, object]]:
             {
                 "company": "toyota",
                 "cohort_year": year,
+                "period": f"{year}-01..{year}-12",
                 "units": int(value),
                 "basis": "worldwide_sales",
                 "brands_covered": "toyota;lexus",
@@ -111,6 +114,7 @@ def nissan_rows() -> list[dict[str, object]]:
             {
                 "company": "nissan",
                 "cohort_year": year,
+                "period": f"{year}-01..{year}-12",
                 "units": int(r[column]),
                 "basis": "worldwide_sales",
                 "brands_covered": "nissan;infiniti",
@@ -154,6 +158,7 @@ def hyundai_rows() -> list[dict[str, object]]:
             {
                 "company": "hyundai",
                 "cohort_year": year,
+                "period": f"{year}-01..{year}-12",
                 "units": domestic + exports + overseas,
                 "basis": "worldwide_sales_derived",
                 "brands_covered": "hyundai;genesis",
@@ -171,30 +176,31 @@ def hyundai_rows() -> list[dict[str, object]]:
 
 
 def kia_rows() -> list[dict[str, object]]:
-    """Kia worldwide retail for the period its retail workbook covers."""
-    rows = read_csv(KIA_FILE)
-    years = {int(r["cohort_year"]) for r in rows}
+    """Kia worldwide retail, one row per retail workbook, for the period each one covers."""
     out: list[dict[str, object]] = []
-    for year in sorted(years):
-        mine = [r for r in rows if int(r["cohort_year"]) == year]
-        period = mine[0]["period"]
-        out.append(
-            {
-                "company": "kia",
-                "cohort_year": year,
-                "units": sum(int(r["units"]) for r in mine),
-                "basis": "worldwide_retail",
-                "brands_covered": "kia",
-                "derived": "yes",
-                "derivation": (
-                    f"every destination in the retail workbook summed, period {period}; the "
-                    "workbook is the company's own every-market release, so the sum is its "
-                    "worldwide retail for that period"
-                ),
-                "source_id": "kia_ir_retail_sales",
-                "source_file": KIA_FILE.name,
-            }
-        )
+    for path in sorted(PROCESSED.glob(KIA_GLOB)):
+        rows = read_csv(path)
+        for year in sorted({int(r["cohort_year"]) for r in rows}):
+            mine = [r for r in rows if int(r["cohort_year"]) == year]
+            period = mine[0]["period"]
+            out.append(
+                {
+                    "company": "kia",
+                    "cohort_year": year,
+                    "period": period,
+                    "units": sum(int(r["units"]) for r in mine),
+                    "basis": "worldwide_retail",
+                    "brands_covered": "kia",
+                    "derived": "yes",
+                    "derivation": (
+                        f"every destination in the retail workbook summed, period {period}; the "
+                        "workbook is the company's own every-market release, so the sum is its "
+                        "worldwide retail for that period"
+                    ),
+                    "source_id": "kia_ir_retail_sales",
+                    "source_file": path.name,
+                }
+            )
     return out
 
 

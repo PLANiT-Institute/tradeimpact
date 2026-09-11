@@ -14,7 +14,7 @@ built when the step that consumes it became ready, and none covers a market outs
 
 | Stage | Dataset | Raw on hand | Processed on hand | Scripts |
 |---|---|---|---|---|
-| ST02 | `sales` | 4 files | 3 tables | `extract_eea_registrations.py`, `extract_kia_ir.py`, `extract_hyundai_ir.py` |
+| ST02 | `sales` | 6 files | 5 tables | `extract_eea_registrations.py`, `extract_kia_ir.py`, `extract_hyundai_ir.py` |
 | ST03 | `country_emissions` | via the EU27 snapshot | `country_emissions_eu27.csv` | `extract_eu27_snapshot.py` |
 | ST04 | `emission_targets` | `eu_climate_targets.csv` | `emission_targets_eu27.csv` | `derive_eu27_rates.py` |
 | ST05 | `vehicle_usage` | `destination_eu27_inputs.json` | `vehicle_usage_eu27.csv` | `extract_eu27_eurostat.py` |
@@ -37,7 +37,7 @@ Rules: [`sales/method/method.md`](../../data/auto/sales/method/method.md).
 | Source | Locator | What is fetched | Route |
 |---|---|---|---|
 | `SRC-01` EEA CO2 monitoring of new passenger cars (Reg. (EU) 2019/631) | `https://co2cars.apps.eea.europa.eu/` | 2024 **Final** data, EU27, filtered by manufacturer (`Mk=TOYOTA`, `Mk=HYUNDAI`); response is an aggregation of country → commercial name → powertrain with summed registrations | Downloadable via the portal API; two hash-pinned snapshots already held as `raw/eea_toyota_2024_final.json` and `raw/eea_hyundai_2024_final.json` |
-| `SRC-04` Kia IR retail sales by model and market | Kia IR disclosure (`(기아차) 2026 현지판매실적.xlsx`), Drive `Trade/Arc_Trade_Data/Auto/` | Monthly sheets plus a `Total` year-to-date sheet: model × market units, in blocks by production plant | **Hand-gathered** from the IR release; no API. Held as `raw/kia_2026_retail_sales_by_model_market.xlsx` |
+| `SRC-04` Kia IR retail sales by model and market | Kia IR, Library > Performance and Plans (`https://worldwide.kia.com/en/company/investor-relations/library/performance-and-plans`) | One workbook per calendar year: monthly sheets plus a `Total` sheet, model × market units in blocks by production plant | **API.** The page's own listing endpoint `GET /api/investors/business-sales-results?year=YYYY&page=0&language=en` names the file; `script/auto/sales/fetch_kia_ir.py` downloads it. Held as `raw/kia_<year>_retail_sales_by_model_market.xlsx` for 2024, 2025, 2026. The 2024 node was never refreshed past October, so that workbook is ten months |
 | `SRC-05` Hyundai IR global plant sales | Hyundai IR disclosure (`hmc-global-plant-sales-dec-y2025.xlsx`), same Drive folder | Monthly plant-side sales by model and plant, with a domestic/export split | **Hand-gathered**. Held as `raw/hyundai_2025_global_plant_sales.xlsx` |
 | `SRC-03` EEA, Kia and Honda brands | as `SRC-01` | Same query pattern, `Mk=KIA` and `Mk=HONDA` | Downloadable — **not yet fetched** |
 | `SRC-06` United States volumes by model and powertrain | Company IR; EPA certification data | Model-level registrations or sales | **Unresolved.** Experian and WardsAuto are paywalled and therefore out of scope (`X-02`); the fallback route is unproven |
@@ -48,7 +48,7 @@ Rules: [`sales/method/method.md`](../../data/auto/sales/method/method.md).
 | Script | Reads | Writes | What it does |
 |---|---|---|---|
 | `script/auto/sales/extract_eea_registrations.py` | the two EEA snapshots | `processed/sales_eea_eu27_2024.csv` — 1,286 rows (Toyota 660, Hyundai 626) | Flattens the aggregation; powertrain classes as EEA records them (ICE, HEV, PHEV, BEV, FCEV); `basis = registrations`; `destination_level = country` for all rows |
-| `script/auto/sales/extract_kia_ir.py` | the Kia workbook, `method/kia_labels.csv` | `processed/sales_kia_ir_2026.csv` — 287 rows | Reads the `Total` sheet, skips plant subtotal rows, resolves market labels through the label map: `destination_level = region` for Kia's IR regions (Europe, Eastern Europe, Latin America, Middle East, Africa, Asia Pacific — 206 rows) and `country` for the rest (81 rows); `basis = retail_sales`; `powertrain` empty, to be joined from ST06 |
+| `script/auto/sales/extract_kia_ir.py` | every Kia workbook on disk, `method/kia_labels.csv` | `processed/sales_kia_ir_2024.csv` (287), `…_2025.csv` (314), `…_2026.csv` (290) | Reads each `Total` sheet, skips plant subtotal rows, resolves market labels through the label map: `destination_level = region` for Kia's IR regions (Europe, Eastern Europe, Latin America, Middle East, Africa, Asia Pacific) and `country` for the rest; `basis = retail_sales`; `powertrain` empty, to be joined from ST06 |
 | `script/auto/sales/extract_hyundai_ir.py` | the Hyundai workbook, `method/hyundai_plant_codes.csv` | `processed/sales_hyundai_plant_2025.csv` — 113 rows | Maps plant codes to the producing country in `origin`; `basis = plant_sales`; `destination_level = unknown` for the 46 domestic/export split rows, which name no destination at all |
 
 One script per raw source, one processed table per source — never a silently merged file. Bases

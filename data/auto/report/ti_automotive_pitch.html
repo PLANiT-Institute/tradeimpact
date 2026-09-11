@@ -385,6 +385,7 @@ function slideFour() {
   // A dash in the table is a missing sales year, not a missing company: say which, and say
   // what that pair does have, so nobody reads absence as a result.
   const inCohort = new Set(rows.map((r) => r.company + '|' + r.market));
+  let said_gaps = '';
   const gaps = Q('SELECT company, market, MIN(cohort_year) y FROM ti_company GROUP BY company, market')
     .filter((r) => !inCohort.has(r.company + '|' + r.market));
   if (gaps.length) {
@@ -394,11 +395,20 @@ function slideFour() {
       return esc(NAME[g.company] || g.company) + ' in ' + esc(MARKET[g.market] || g.market) +
         ' (' + esc(p.period || g.y) + ')';
     }).join(', ');
-    put('missing_note', 'A dash is a sales year this cohort does not cover, not a company absent ' +
+    said_gaps = 'A dash is a sales year this cohort does not cover, not a company absent ' +
       'from the market. On file but outside it: ' + said + '. Those sit in a later cohort and a ' +
       'shorter reporting period, so they are read on their own rather than folded into this ' +
-      'comparison.');
+      'comparison.';
   }
+  // A cell whose source stops short of December is a shorter year than the rest of the column.
+  const part = Q("SELECT DISTINCT company, market, period FROM ti_coverage WHERE cohort_year = ?" +
+    " AND status = 'assessed' AND period NOT LIKE '%-12'", [COHORT])
+    .filter((r) => inCohort.has(r.company + '|' + r.market));
+  const said_part = part.map((r) => esc(NAME[r.company] || r.company) + ' in ' +
+    esc(MARKET[r.market] || r.market) + ' (' + esc(r.period) + ')').join(', ');
+  put('missing_note', [said_gaps, part.length ? 'One source stops short of the full year: ' +
+    said_part + '. Its volume and its impact are that many months, not twelve, and are not ' +
+    'scaled up to a year they do not cover.' : ''].filter(Boolean).join(' '));
   const worst = Object.entries(bym).sort((a, b) => a[1].S1 - b[1].S1)[0];
   put('slope_note', 'The weakest observed trend is ' + esc(MARKET[worst[0]] || worst[0]) +
     ' at ' + fmt(worst[1].S1, 1) + ' per cent a year — a fleet that is barely moving, or moving ' +
@@ -409,7 +419,7 @@ function slideFour() {
 /* ---------------------------------------------------------------- slide 5 */
 function slideFive() {
   const cov = one('SELECT MIN(assessed_share_of_global)*100 lo, MAX(assessed_share_of_global)*100 hi' +
-    ' FROM ti_global_coverage WHERE cohort_year = ?', [COHORT]);
+    " FROM ti_global_coverage WHERE cohort_year = ? AND share_comparable = 'yes'", [COHORT]);
   put('coverage', 'Between ' + fmt(cov.lo, 0) + ' and ' + fmt(cov.hi, 0) + ' per cent');
   const life = one(
     "SELECT MIN(total)/1e6 lo, MAX(total)/1e6 hi FROM (SELECT variant, SUM(ti_tco2e) total" +

@@ -48,8 +48,15 @@ kia,Sorento,Sorento,,unsplit,passenger_car,ICE and HEV on one row
 kia,Sportage,Sportage,,unsplit,passenger_car,ICE and HEV on one row
 kia,Tasman,Tasman,,unsplit,freight,"Tasman is a freight vehicle, assessed against the Korean freight benchmark"
 kia,Bongo,Bongo,,unsplit,freight,"Bongo is a freight vehicle, assessed against the Korean freight benchmark"
-kia,Bongo EV,Bongo EV,,unsplit,freight,"Bongo EV is a freight vehicle, assessed against the Korean freight benchmark"
+kia,Bongo EV,Bongo,BEV,explicit,freight,"the battery-electric Bongo, certified in the KEA label list as Bongo BEV; a freight vehicle assessed against the Korean freight benchmark"
 kia,Bus,Bus,,unsplit,bus,"Bus is a bus vehicle, assessed against the Korean bus benchmark"
 kia,Millitary,,,out_of_scope,passenger_car,military vehicles as labelled in the IR file
 hyundai,LCV,Porter,,unsplit,freight,"the IR file reports light commercial vehicles as one class; assessed on the Porter, the nameplate that dominates it, with an all-hybrid bound as for any unsplit row"
 hyundai,HCV,,,out_of_scope,freight,"heavy trucks and coaches above 3.5 t: Korea's fuel-economy labelling scheme does not certify them, so no product intensity exists; counted and withheld"
+kia,K3,K3,ICE,explicit,passenger_car,sold in Korea to 2024; the Korean K3 is petrol only
+kia,K5 / Optima,K5,,unsplit,passenger_car,the 2024 workbook spells the K5 row with its export name; ICE and HEV on one row
+kia,"K7,8 / Cadenza",K8,,unsplit,passenger_car,"the 2024 workbook keeps the K7 in the K8 row; the K7 left the Korean price list in 2021, so the volume is assessed on the K8 label, ICE and HEV on one row"
+kia,Mohave / Borrego,Mohave,ICE,explicit,passenger_car,sold in Korea to 2024; diesel only
+kia,Carnival / Sedona,Carnival,,unsplit,passenger_car,the 2024 workbook spells the Carnival row with its export name; ICE and HEV on one row
+kia,Bongo / Frontier,Bongo,,unsplit,freight,the 2024 workbook spells the Bongo row with its export name; a freight vehicle assessed against the Korean freight benchmark
+kia,Niro Plus EV,,,unallocated,passenger_car,the raised-roof taxi derivative of the previous-generation Niro EV; the KEA label list carries no Niro Plus row so no certified intensity is on hand

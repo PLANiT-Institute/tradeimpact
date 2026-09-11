@@ -715,7 +715,7 @@ function computeFacts() {
   const ptTotal = pt.reduce((a, r) => a + r.u, 0);
   const ptShare = (p) => pct(((pt.find((r) => r.powertrain === p) || {u: 0}).u) / ptTotal, 0);
   f.hev_share = ptShare('HEV'); f.bev_share = ptShare('BEV'); f.ice_share = ptShare('ICE');
-  const gl = Q('SELECT assessed_share_of_global s FROM ti_global_coverage');
+  const gl = Q("SELECT assessed_share_of_global s FROM ti_global_coverage WHERE share_comparable = 'yes'");
   f.global_lo = pct(Math.min(...gl.map((r) => r.s)), 0); f.global_hi = pct(Math.max(...gl.map((r) => r.s)), 0);
   f.eu_states = one("SELECT COUNT(DISTINCT destination) n FROM ti_country WHERE market = 'EU27'").n;
   const xr = Q('SELECT market, scenario, SUM(units) u, SUM(CASE WHEN crossover_year IS NOT NULL THEN units ELSE 0 END) uw, ' +
@@ -780,7 +780,8 @@ segment and nameplate.</p></div>`,
 (<span data-f="units"></span> vehicles); <span data-f="withheld_units"></span> are counted and withheld. Withheld
 units are never absorbed into a total and never assumed to behave like the units that do.</p>
 <p>The assessed units are <span data-f="global_lo"></span> to <span data-f="global_hi"></span> of each company's
-worldwide sales in the same year: the rest goes to markets without a usable destination benchmark (no national car
+worldwide sales over the same months &mdash; the rows where the two sides count the same period; the rest goes to
+markets without a usable destination benchmark (no national car
 CO&#8322; series, no registered stock, or only a plant-side sales source). Every input also carries a data tier
 &mdash; A directly sourced, B derived, C proxied &mdash; and every result cell the worst of its inputs.</p>
 <div class="callout"><p><b>Reading the gaps.</b> Plug-in hybrids have no sourced utility factor; fuel-cell vehicles

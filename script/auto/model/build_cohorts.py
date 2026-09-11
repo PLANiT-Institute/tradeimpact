@@ -8,7 +8,7 @@ Inputs
     sales/method/companies.csv                                     exporters in scope
     sales/method/us_model_map.csv                                  IR model name -> EPA base model
     sales/processed/sales_eea_eu27_2024.csv                        EU27 registrations
-    sales/processed/sales_kia_ir_2026.csv                          Kia IR retail sales
+    sales/processed/sales_kia_ir_<year>.csv                        Kia IR retail sales
     sales/processed/sales_hyundai_plant_2025.csv                   Hyundai IR plant sales
     vehicle_technology/processed/vehicle_technology_eea_2024.csv   certified WLTP values
     vehicle_technology/processed/vehicle_technology_us_epa.csv     EPA label values
@@ -55,7 +55,10 @@ DATA = REPO / "data" / "auto"
 COMPANIES = DATA / "sales" / "method" / "companies.csv"
 US_MODEL_MAP = DATA / "sales" / "method" / "us_model_map.csv"
 SALES_EU27 = DATA / "sales" / "processed" / "sales_eea_eu27_2024.csv"
-#: Market-side US sales files (plant-side files are reconciliation only, never cohorts).
+#: Market-side US sales files (plant-side files are reconciliation only, never cohorts). The
+#: Kia IR workbook feeds the US cohort only for 2026, the year Kia America publishes no
+#: model-level export; for 2024 and 2025 the US volume comes from the Kia America release and
+#: the IR file stands beside it in the reconciliation table.
 SALES_US = (
     DATA / "sales" / "processed" / "sales_hyundai_us.csv",
     DATA / "sales" / "processed" / "sales_kia_us.csv",
@@ -69,6 +72,8 @@ TECH_US = DATA / "vehicle_technology" / "processed" / "vehicle_technology_us_epa
 #: Korea: market-side domestic sales (Hyundai IR with trim codes; Kia IR without) and KEA labels.
 SALES_KR = (
     DATA / "sales" / "processed" / "sales_hyundai_kr.csv",
+    DATA / "sales" / "processed" / "sales_kia_ir_2024.csv",
+    DATA / "sales" / "processed" / "sales_kia_ir_2025.csv",
     DATA / "sales" / "processed" / "sales_kia_ir_2026.csv",
 )
 KR_LABELS = DATA / "sales" / "method" / "kr_labels.csv"
@@ -547,7 +552,8 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
     Hyundai's IR file states the powertrain in the trim code (``stated`` rows take it from the
     sales row); Kia's IR file does not, so nameplates sold as ICE and HEV (``unsplit``) are
     assessed as ICE centrally with an ``all_hev`` variant as the upper bound, and single-powertrain
-    labels are ``explicit``. Rows outside the passenger-car class are ``out_of_scope``.
+    labels are ``explicit``. Rows the map holds out of the cohort — a vehicle class out of scope,
+    or a nameplate the label list does not certify — carry the map row's own reason.
 
     Args:
         companies: Exporters in scope.
@@ -623,7 +629,7 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
                 hold(s, s.get("powertrain", ""), NO_KR_LABEL, note)
                 continue
             rule = m["powertrain_rule"]
-            if rule == OUT_OF_SCOPE:
+            if rule in HELD_RULES:
                 hold(s, "", f"{rule}: {m['note']}", note)
                 continue
             pt = s["powertrain"] if rule == "stated" else (m["powertrain"] or "ICE")
