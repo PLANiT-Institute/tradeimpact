@@ -48,6 +48,17 @@ fails the check.
 Either TI borrows something specific from the reference, or it departs from it on a stated point,
 or the reference is the ground for an objection TI has to answer.
 
+**Approaches, not datasets.** This register holds the methods, standards and studies TI is
+measured against. The datasets the model actually reads are registered per sector, in
+`data/<sector>/registry/sources.csv` with the licence and access date, and in
+`raw_files.csv` with the hash of every file on disk. Two rows here are exceptions and say so in
+their relation column: the NDC registry and the IEA outlook, which the methodology cites as the
+origin of the benchmark concept rather than as files it loads.
+
+**A DOI year and a citation year can differ.** An online-first paper carries both. Put the
+citation year in `year` and the other in `edition` - the checker looks in both, so a correctly
+documented pair passes silently and an undocumented mismatch does not.
+
 ## Adding a reference
 
 1. Check it is not already here. Extend the row rather than adding a second one.

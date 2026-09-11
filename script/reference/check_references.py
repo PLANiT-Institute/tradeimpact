@@ -223,7 +223,8 @@ def check(row: dict[str, str], context: ssl.SSLContext, fetch: bool) -> dict[str
             result["note"] = (
                 f"the DOI is registered to {title!r}, which is not the work this row describes"
             )
-        elif year and row.get("year") and year != row["year"].strip():
+        elif year and year not in f"{row.get('year', '')} {row.get('edition', '')}":
+            # An online-first paper has two years; the register carries both, one in `edition`.
             result["note"] = f"the DOI gives the year as {year}, the register says {row['year']}"
         return result
     try:
@@ -261,7 +262,14 @@ def main() -> None:
         results.append(check(row, context, fetch))
         time.sleep(PAUSE_SECONDS)
     if wanted and OUT.exists():
-        keep = [r for r in csv.DictReader(OUT.open(newline="")) if r["key"] not in wanted]
+        # Carry the rows this run did not check, but drop any whose reference has since left
+        # the register: a stale row would report a dead link for something nobody cites.
+        registered = {r["key"] for r in read_register()}
+        keep = [
+            r
+            for r in csv.DictReader(OUT.open(newline=""))
+            if r["key"] not in wanted and r["key"] in registered
+        ]
         results = keep + results
     with OUT.open("w", newline="") as f:
         writer = csv.DictWriter(f, FIELDS)

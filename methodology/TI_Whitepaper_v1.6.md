@@ -297,43 +297,54 @@ The exponential benchmark model may underestimate near-term benchmark decline in
 
 ## 10. References
 
-**GHG Accounting Standards**
+The framework's literature base is the register at [`reference/references.csv`](../reference/references.csv),
+which holds every work cited here together with what it states, where TI departs from it, and a
+link that is machine-checked on every run. [`reference/landscape.md`](../reference/landscape.md)
+sets out the families of approach and where TI sits among them. This section names the works this
+whitepaper leans on; the register is the home for the citation itself.
 
-GHG Protocol (2011). *Corporate Value Chain (Scope 3) Accounting and Reporting Standard.* World Resources Institute / WBCSD.
+**The absolute inventory TI sits beside.** GHG Protocol's Corporate Value Chain (Scope 3)
+Standard and its 2013 technical guidance define Category 11 and require that any avoided-emissions
+estimate be reported separately from the inventory rather than deducted from it
+(`ghgp_scope3_standard` §9.5). IFRS S2 is where a listed company publishes the result
+(`ifrs_s2`).
 
-GHG Protocol (2013). *Technical Guidance for Calculating Scope 3 Emissions, Chapter 11: Use of Sold Products.* World Resources Institute.
+**The counterfactual machinery.** The GHG Protocol's Project Protocol and Policy and Action
+Standard are the formal analogues of TI's benchmark (`ghgp_project_protocol`,
+`ghgp_policy_action_standard`); the Protocol's Actions and Market Instruments work proposes the
+separate consequential statement TI would report under (`ghgp_ami_white_paper`). The
+attributional-consequential distinction is set out in `brander_attributional_consequential`.
 
-WBCSD (2023). *Avoided Emissions Guidance.* World Business Council for Sustainable Development.
+**Avoided emissions and its critics.** `wri_comparative_emissions_impacts`,
+`wbcsd_avoided_emissions_v2` and `carbone4_nzi_pillar_b` are the reference texts;
+`young_ferris_scope4_claims`, `okeeffe_brander_avoided_landscape` and `okeeffe_brander_comparison`
+are the critique TI must answer. The Science Based Targets initiative excludes product-level
+avoided emissions from recognition outright (`sbti_corporate_net_zero_v2`).
 
-**Carbon Lock-In**
+**The destination benchmark, as others build it.** The multilateral banks compute project
+emissions net of a country grid baseline (`ifi_ghg_accounting_renewables`) and test operations
+against the destination's own NDC (`mdb_paris_alignment_direct_investment`); the Clean Development
+Mechanism standardised the displaced-grid emission factor two decades ago
+(`cdm_tool07_grid_emission_factor`).
 
-Seto, K.C. et al. (2016). Carbon lock-in: types, causes, and policy implications. *Annual Review of Environment and Resources*, 41, 425–452. https://doi.org/10.1146/annurev-environ-110615-085934
+**Carbon lock-in.** `seto_carbon_lock_in`, `tong_committed_emissions`, `davis_future_co2`,
+`davis_socolow_commitment_accounting` and `cui_coal_plant_lifetimes`.
 
-Tong, D. et al. (2019). Committed emissions from existing energy infrastructure jeopardize 1.5 °C climate target. *Nature*, 572, 373–377. https://doi.org/10.1038/s41586-019-1364-3
+**Trade, export and embodied carbon.** `oecd_co2_embodied_trade` and
+`davis_caldeira_consumption_based` for the family TI is confused with,
+`steininger_consumption_based` and `afionis_consumption_based_future` for its critique, and
+`newman_used_vehicle_exports`, `guo_overseas_coal_emissions` and `carbon_majors` for the export
+and producer-side work closest to TI's own question.
 
-Davis, S.J., Caldeira, K. and Matthews, H.D. (2010). Future CO₂ emissions and climate change from existing energy infrastructure. *Science*, 329(5997), 1330–1333. https://doi.org/10.1126/science.1188566
+**The benchmark's own sources.** `unfccc_ndc_registry` and `iea_weo_2024`.
 
-**Scope 4 / Avoided Emissions**
-
-Bjørn, A., Lloyd, S.M. and Matthews, H.D. (2024). Making things (that don't exist) count: A study of Scope 4 emissions accounting claims. *Journal of Industrial Ecology*. https://doi.org/10.1111/jiec.13483
-
-WBCSD (2023). *Avoided Emissions Guidance 2.0.* World Business Council for Sustainable Development. https://www.wbcsd.org/Programs/Climate-and-Energy/Climate/SOS-1.5/Resources/Avoided-Emissions-Guidance
-
-**Trade and Embodied Carbon**
-
-OECD (2020). *CO₂ Emissions Embodied in International Trade and Domestic Final Demand.* https://doi.org/10.1787/8f2963b8-en
-
-Steininger, K.W. et al. (2020). Consumption-based carbon accounting: sense and sensibility. *Climate Policy*, 21(3), 278–285. https://doi.org/10.1080/14693062.2020.1728208
-
-**NDC and Sector Decarbonisation**
-
-ITF-OECD (2019). *Transport in Nationally Determined Contributions.* https://www.itf-oecd.org
-
-IEA (2024). *World Energy Outlook 2024.* https://www.iea.org/reports/world-energy-outlook-2024
-
-Ember (2024). *Global Electricity Review 2024.* https://ember-climate.org
-
-UNFCCC NDC Registry. https://unfccc.int/NDCREG
+> **Citation correction (September 2026).** Earlier versions of this section attributed *Making
+> things (that don't exist) count: a study of Scope 4 emissions accounting claims* to Bjørn, Lloyd
+> and Matthews in the *Journal of Industrial Ecology*, with a DOI belonging to an unrelated paper
+> on building-stock modelling. The work is by Young-Ferris, Malik, Calderbank and Jacob-John,
+> published in *Accounting, Auditing and Accountability Journal* 38(1), 60-89, 2024. The register
+> carries the corrected entry as `young_ferris_scope4_claims`, and the link checker that found the
+> error runs over every reference.
 
 ---
 

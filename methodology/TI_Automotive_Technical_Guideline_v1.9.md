@@ -581,31 +581,25 @@ TI measures use-phase emissions only. Manufacturing-phase emission differences a
 
 ## Appendix G — References
 
-GHG Protocol (2011). *Corporate Value Chain (Scope 3) Accounting and Reporting Standard.* World Resources Institute / WBCSD.
+The register at [`reference/references.csv`](../reference/references.csv) is the home for every
+citation, with what each work states, where TI departs from it, and a machine-checked link;
+[`reference/landscape.md`](../reference/landscape.md) places them. The works this guideline leans
+on, by the parameter they bear on:
 
-GHG Protocol (2013). *Technical Guidance for Calculating Scope 3 Emissions, Chapter 11.* World Resources Institute.
+| parameter | reference keys |
+|---|---|
+| Category 11 boundary and lifetime convention | `ghgp_scope3_standard`, `ghgp_scope3_technical_guidance`, `cdp_scope3_relevance` |
+| test-cycle to real-world correction | `icct_real_world_co2_2026`, `icct_lab_to_road_international`, `ec_obfcm_first_report`, `te_phev_gap_2025` |
+| vehicle lifetime and distance by age | `lu_vehicle_survivability`, `icct_global_lca_cars_2021`, `sbti_automotive_standard_draft` |
+| grid intensity over a vehicle's life | `icct_global_lca_cars_2021`, `sbti_automotive_standard_draft`, `iea_global_ev_outlook` |
+| benchmarking a manufacturer against a market | `tpi_automotive_carbon_performance`, `te_ev_progress_2026`, `icct_global_automaker_rating`, `pacta_changing_gear` |
+| exported vehicles as a climate question | `newman_used_vehicle_exports`, `unep_used_vehicles_2020`, `unep_used_vehicles_2024`, `kim_used_vehicles_co2` |
+| carbon lock-in | `seto_carbon_lock_in`, `tong_committed_emissions`, `davis_future_co2` |
+| the benchmark's own sources | `unfccc_ndc_registry`, `iea_weo_2024` |
 
-Seto, K.C. et al. (2016). Carbon lock-in: types, causes, and policy implications. *Annual Review of Environment and Resources*, 41, 425–452. https://doi.org/10.1146/annurev-environ-110615-085934
-
-Tong, D. et al. (2019). Committed emissions from existing energy infrastructure jeopardize 1.5 °C climate target. *Nature*, 572, 373–377. https://doi.org/10.1038/s41586-019-1364-3
-
-Davis, S.J., Caldeira, K. and Matthews, H.D. (2010). Future CO₂ emissions and climate change from existing energy infrastructure. *Science*, 329(5997), 1330–1333. https://doi.org/10.1126/science.1188566
-
-ICCT (2020). *Real-world usage of plug-in hybrid electric vehicles.* https://theicct.org
-
-Transport & Environment (2024). *Smoke screen: the growing PHEV emissions scandal.* https://www.transportenvironment.org
-
-Gao, Y. et al. (2023). Electric vehicle lifecycle carbon emission reduction: a review. *Carbon Neutralization*, 2(5), 528–550. https://doi.org/10.1002/cnl2.81
-
-ICCT (2023). *Mind the Gap 2023.* https://theicct.org
-
-IEA (2024). *Global EV Outlook 2024.* https://www.iea.org/reports/global-ev-outlook-2024
-
-ITF-OECD (2019). *Transport in Nationally Determined Contributions.* https://www.itf-oecd.org
-
-Ember (2024). *Global Electricity Review 2024.* https://ember-climate.org
-
-UNFCCC NDC Registry. https://unfccc.int/NDCREG
+Two parameter choices in this guideline are contradicted by the references above — the operating
+life taken from the destination's mean fleet age, and the flat annual distance. See
+[`reference/landscape.md`](../reference/landscape.md), final section, point 6.
 
 ---
 

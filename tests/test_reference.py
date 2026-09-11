@@ -77,9 +77,11 @@ def test_a_citation_names_a_methodology_document_that_exists() -> None:
 
 @pytest.mark.skipif(not LANDSCAPE.exists(), reason="landscape note not written yet")
 def test_the_landscape_note_only_cites_keys_that_are_in_the_register() -> None:
-    keys = {r["key"] for r in register()}
+    """A slug in the note is a registered reference or a family name, never a dangling one."""
+    rows = register()
+    known = {r["key"] for r in rows} | {r["family"] for r in rows}
     cited = set(re.findall(r"`([a-z0-9_]{4,})`", LANDSCAPE.read_text()))
-    unknown = {k for k in cited if k not in keys and "_" in k}
+    unknown = {k for k in cited if k not in known and "_" in k}
     assert not unknown, f"the landscape note cites keys that are not registered: {sorted(unknown)}"
 
 
