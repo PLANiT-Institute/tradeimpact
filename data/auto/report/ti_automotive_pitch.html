@@ -185,7 +185,8 @@ ul.plain { margin: 0; padding-left: 18px; } ul.plain li { margin: 7px 0; }
   <div class="two">
     <div class="card"><h3>Per vehicle, by destination and company</h3>
       <div class="sub">tonnes CO<sub>2</sub>e against the committed path</div>
-      <div id="tab-market"></div></div>
+      <div id="tab-market"></div>
+      <p class="note" data-f="missing_note"></p></div>
     <div class="card"><h3>How fast each benchmark falls</h3>
       <div class="sub">annual rate of decline in fleet emission intensity</div>
       <div id="tab-slope"></div>
@@ -381,6 +382,23 @@ function slideFour() {
      {k: 'S1', h: 'Observed', f: (v) => fmt(v, 1) + '%/yr'},
      {k: 'S2', h: 'Committed', f: (v) => fmt(v, 1) + '%/yr'}],
     Object.keys(bym).map((m) => Object.assign({name: MARKET[m] || m}, bym[m])));
+  // A dash in the table is a missing sales year, not a missing company: say which, and say
+  // what that pair does have, so nobody reads absence as a result.
+  const inCohort = new Set(rows.map((r) => r.company + '|' + r.market));
+  const gaps = Q('SELECT company, market, MIN(cohort_year) y FROM ti_company GROUP BY company, market')
+    .filter((r) => !inCohort.has(r.company + '|' + r.market));
+  if (gaps.length) {
+    const said = gaps.map((g) => {
+      const p = one('SELECT period FROM ti_coverage WHERE company = ? AND destination = ?' +
+        ' AND cohort_year = ? LIMIT 1', [g.company, g.market, g.y]);
+      return esc(NAME[g.company] || g.company) + ' in ' + esc(MARKET[g.market] || g.market) +
+        ' (' + esc(p.period || g.y) + ')';
+    }).join(', ');
+    put('missing_note', 'A dash is a sales year this cohort does not cover, not a company absent ' +
+      'from the market. On file but outside it: ' + said + '. Those sit in a later cohort and a ' +
+      'shorter reporting period, so they are read on their own rather than folded into this ' +
+      'comparison.');
+  }
   const worst = Object.entries(bym).sort((a, b) => a[1].S1 - b[1].S1)[0];
   put('slope_note', 'The weakest observed trend is ' + esc(MARKET[worst[0]] || worst[0]) +
     ' at ' + fmt(worst[1].S1, 1) + ' per cent a year — a fleet that is barely moving, or moving ' +
