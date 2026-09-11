@@ -45,6 +45,14 @@ library for the research, not a re-publication of it.
 .venv/bin/python script/reference/fetch_references.py --refresh  # re-fetch everything
 ```
 
+**Documents behind a bot wall are fetched by hand.** Four publishers refuse every automated
+request and two of them answer with a captcha, which is not something to work around. Open the
+URL in a browser, save the file into `reference/raw/` as `<key>.pdf`, and run the fetcher again:
+a file sitting under a reference's key is adopted, hashed and indexed like any other.
+
+**The files are in git-lfs.** `*.pdf` and `*.xlsx` are tracked there, so a clone gets the
+pointers and `git lfs pull` gets the documents.
+
 **Every link is checked, and a dead one fails the run.** A reference with a DOI is checked
 against the DOI system's own handle API rather than by scraping the publisher: Wiley, Science,
 Annual Reviews and OECD iLibrary all answer an automated request with 403 while the article sits

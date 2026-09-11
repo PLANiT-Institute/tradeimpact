@@ -8,6 +8,7 @@ cites, a citation to a document that does not exist, a family the landscape note
 from __future__ import annotations
 
 import csv
+import hashlib
 import re
 from pathlib import Path
 
@@ -112,8 +113,16 @@ def test_every_reference_is_either_on_disk_or_explains_why_not() -> None:
         entry = index.get(row["key"])
         assert entry is not None, f"{row['key']}: not in reference/raw/index.csv"
         if entry["file"]:
-            assert (RAW / entry["file"]).exists(), f"{row['key']}: {entry['file']} is missing"
+            path = RAW / entry["file"]
+            assert path.exists(), f"{row['key']}: {entry['file']} is missing"
             assert len(entry["sha256"]) == 64, f"{row['key']}: no hash for the file on disk"
+            body = path.read_bytes()
+            if body.startswith(b"version https://git-lfs"):
+                continue  # a clone without `git lfs pull` holds the pointer, not the document
+            digest = hashlib.sha256(body).hexdigest()
+            assert digest == entry["sha256"], (
+                f"{row['key']}: {entry['file']} is not the hashed file"
+            )
         else:
             assert entry["note"].startswith("not_saved: "), f"{row['key']}: unexplained gap"
             assert len(entry["note"]) > 40, f"{row['key']}: the reason is too thin to act on"
