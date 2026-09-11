@@ -337,5 +337,5 @@ UNFCCC NDC Registry. https://unfccc.int/NDCREG
 
 ---
 
-*End of Whitepaper v1.5 — PLANiT Institute, May 2026.*
+*End of Whitepaper v1.6 — PLANiT Institute, September 2026.*
 *Published at transitionarc.climatearc.org under GNU GPL v3.*

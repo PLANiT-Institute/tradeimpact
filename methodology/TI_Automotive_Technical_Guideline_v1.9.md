@@ -609,5 +609,5 @@ UNFCCC NDC Registry. https://unfccc.int/NDCREG
 
 ---
 
-*End of document. Version 1.8 — PLANiT Institute, May 2026.*
+*End of document. Version 1.9 — PLANiT Institute, September 2026.*
 *Published at transitionarc.climatearc.org under GNU GPL v3.*
