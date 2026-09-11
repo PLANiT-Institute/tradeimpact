@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #14161a; --muted: #5f6873; --rule: #d9dee5; --bg: #f4f6f8; --paper: #ffffff;
+  --panel: #eef1f5; --accent: #1f4e79;
+  --added: #b23a3a; --avoided: #1f7a5a;
+  --s1: #4a6fa5; --s2: #b06a1f;
+  --ice: #8a8f98; --hev: #3f7fb3; --bev: #1f7a5a;
+  --shadow: 0 1px 2px rgba(0,0,0,0.05), 0 8px 24px rgba(0,0,0,0.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ink: #e7eaef; --muted: #9ba5b3; --rule: #313845; --bg: #0f1216; --paper: #171b21;
+    --panel: #1e242c; --accent: #8fb8e6;
+    --added: #e07a72; --avoided: #4fc39a;
+    --s1: #86ade0; --s2: #dda65f;
+    --ice: #a0a6b0; --hev: #66aadb; --bev: #4fc39a; --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.55 ui-sans-serif, -apple-system, "Segoe UI", Inter, Roboto, sans-serif; }
+code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; }
+
+/* ---- chrome ---- */
+.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 20; display: flex; gap: 14px;
+  align-items: center; padding: 9px 20px; background: var(--paper);
+  border-bottom: 1px solid var(--rule); }
+.brand { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.dots { display: flex; gap: 7px; margin-left: auto; }
+.dot { width: 26px; height: 5px; border-radius: 3px; border: 0; background: var(--rule);
+  cursor: pointer; padding: 0; }
+.dot.on { background: var(--accent); }
+.status { font-size: 11.5px; color: var(--muted); }
+.err { color: var(--added); }
+
+/* ---- slides ---- */
+main { scroll-snap-type: y mandatory; height: 100vh; overflow-y: auto; scroll-behavior: smooth; }
+section { scroll-snap-align: start; min-height: 100vh; display: flex; align-items: center;
+  padding: 64px 20px 40px; }
+.slide { max-width: 1120px; margin: 0 auto; width: 100%; }
+.kicker { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted);
+  margin-bottom: 10px; }
+h1 { font-size: clamp(26px, 3.4vw, 40px); line-height: 1.18; margin: 0 0 12px; letter-spacing: -0.01em; }
+h2 { font-size: clamp(22px, 2.6vw, 31px); line-height: 1.2; margin: 0 0 10px; letter-spacing: -0.01em; }
+.lead { font-size: clamp(16px, 1.35vw, 18px); color: var(--muted); margin: 0 0 22px; max-width: 78ch; }
+.note { font-size: 13.5px; color: var(--muted); margin-top: 14px; max-width: 90ch; }
+b.added { color: var(--added); } b.avoided { color: var(--avoided); }
+
+/* ---- pieces ---- */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;
+  margin: 6px 0 18px; }
+.stat { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 16px 18px; box-shadow: var(--shadow); }
+.stat .v { font-size: clamp(28px, 3.6vw, 44px); font-weight: 640; letter-spacing: -0.02em;
+  line-height: 1.05; font-variant-numeric: tabular-nums; }
+.stat .k { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+.two { display: grid; grid-template-columns: 1.15fr 1fr; gap: 22px; align-items: start; }
+@media (max-width: 900px) { .two { grid-template-columns: 1fr; } }
+.card { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 16px 18px; box-shadow: var(--shadow); }
+.card h3 { margin: 0 0 4px; font-size: 14px; }
+.card .sub { font-size: 12.5px; color: var(--muted); margin-bottom: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+th, td { padding: 7px 9px; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+thead th { font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted);
+  border-bottom: 1px solid var(--ink); }
+tbody tr:last-child td { border-bottom: 0; }
+.pos { color: var(--added); } .neg { color: var(--avoided); }
+svg { display: block; width: 100%; height: auto; overflow: visible; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted);
+  margin-top: 8px; }
+.legend i { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 5px;
+  vertical-align: -1px; }
+ul.plain { margin: 0; padding-left: 18px; } ul.plain li { margin: 7px 0; }
+
+/* ---- opener ---- */
+#opener { position: fixed; inset: 0; z-index: 40; display: grid; place-items: center;
+  background: var(--bg); padding: 24px; text-align: center; }
+#opener .box { max-width: 560px; }
+.hidden { display: none !important; }
+
+@media print {
+  .bar, #opener { display: none !important; }
+  main { height: auto; overflow: visible; }
+  section { min-height: auto; page-break-after: always; padding: 22px 0; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+
+<div class="bar" id="chrome">
+  <span class="brand">PLANiT Institute &middot; Trade Impact</span>
+  <span class="status" id="status">opening __DB_FILE__…</span>
+  <span class="dots" id="dots"></span>
+</div>
+
+<div id="opener"><div class="box">
+  <h2>The deck reads the database beside it</h2>
+  <p class="lead" id="opener-msg">Serve this directory and reload, or pick
+    <code>__DB_FILE__</code>.</p>
+  <p><input type="file" id="dbfile" accept=".sqlite"></p>
+  <p class="note">Serve with <code>.venv/bin/python script/auto/serve_dashboard.py</code>, then open
+    <code>__SERVE_URL__</code>.</p>
+</div></div>
+
+<main id="deck" class="hidden">
+
+<section id="s1"><div class="slide">
+  <div class="kicker">The question</div>
+  <h1>A car sold today is a <b class="added">commitment</b> the destination country
+      has to live with for its whole life.</h1>
+  <p class="lead">Trade Impact measures that commitment against the trajectory the destination
+     itself is on. For every vehicle, every year of its operating life: what it emits, minus what
+     the destination's own fleet path implies for the same distance. Positive is emissions added
+     above that path; negative is emissions avoided against it.</p>
+  <div class="stats">
+    <div class="stat"><div class="v" data-f="units"></div>
+      <div class="k">vehicles assessed, <span data-f="cohort"></span> sales cohort,
+        <span data-f="companies"></span> companies across <span data-f="markets"></span> markets</div></div>
+    <div class="stat"><div class="v neg" data-f="s1"></div>
+      <div class="k">against each market's <b>observed trend</b> — what the fleet is actually doing</div></div>
+    <div class="stat"><div class="v pos" data-f="s2"></div>
+      <div class="k">against each market's <b>committed path</b> — what its climate pledge implies</div></div>
+  </div>
+  <p class="note">Same vehicles, same year, same arithmetic. Only the benchmark changes, and the
+     sign changes with it. That gap is the finding, and everything after this slide is an attempt
+     to say which of the two a decision-maker should act on.</p>
+</div></section>
+
+<section id="s2"><div class="slide">
+  <div class="kicker">By company</div>
+  <h2>Every company in the set is a net adder against the committed path.</h2>
+  <p class="lead">Lifetime impact of one year's sales, in megatonnes of CO<sub>2</sub>e, under both
+     benchmarks. The ranking under the observed trend is a ranking of hybrid share; the ranking
+     under the committed path is a ranking of how many combustion vehicles were sold.</p>
+  <div class="two">
+    <div class="card"><h3>Lifetime impact of the cohort</h3>
+      <div class="sub">megatonnes CO<sub>2</sub>e &middot; left of zero is avoided, right is added</div>
+      <div id="fig-company"></div>
+      <div class="legend"><span><i style="background:var(--s1)"></i>observed trend</span>
+        <span><i style="background:var(--s2)"></i>committed path</span></div></div>
+    <div class="card"><h3>Per vehicle sold</h3>
+      <div class="sub">tonnes CO<sub>2</sub>e over the vehicle's life</div>
+      <div id="tab-company"></div></div>
+  </div>
+  <p class="note" data-f="company_note"></p>
+</div></section>
+
+<section id="s3"><div class="slide">
+  <div class="kicker">Where it comes from</div>
+  <h2>The hybrid flips sign. Against the committed path it stops being a contribution.</h2>
+  <p class="lead">The same vehicles, split by powertrain, per vehicle sold. Battery vehicles stay
+     well below either benchmark and combustion vehicles stay above both — neither is in question.
+     The hybrid is the item that changes its answer, and since it is the second largest block of
+     units in the set, it changes the ranking of the companies with it.</p>
+  <div class="two">
+    <div class="card"><h3>Per vehicle, by powertrain</h3>
+      <div class="sub">tonnes CO<sub>2</sub>e over the vehicle's life, sales-weighted across the markets assessed</div>
+      <div id="fig-powertrain"></div>
+      <div class="legend"><span><i style="background:var(--s1)"></i>observed trend</span>
+        <span><i style="background:var(--s2)"></i>committed path</span></div></div>
+    <div class="card"><h3>What each company sold</h3>
+      <div class="sub">share of assessed units by powertrain</div>
+      <div id="tab-powertrain"></div></div>
+  </div>
+  <p class="note" data-f="powertrain_note"></p>
+</div></section>
+
+<section id="s4"><div class="slide">
+  <div class="kicker">By destination</div>
+  <h2>The same car is a different answer in each market, because each market is on a different path.</h2>
+  <p class="lead">Per vehicle, by destination. A market whose fleet is barely improving forgives
+     almost any modern car; a market with a steep pledge forgives none. This is why the metric is
+     computed per destination and never averaged into one global score.</p>
+  <div class="two">
+    <div class="card"><h3>Per vehicle, by destination and company</h3>
+      <div class="sub">tonnes CO<sub>2</sub>e against the committed path</div>
+      <div id="tab-market"></div></div>
+    <div class="card"><h3>How fast each benchmark falls</h3>
+      <div class="sub">annual rate of decline in fleet emission intensity</div>
+      <div id="tab-slope"></div>
+      <p class="note" data-f="slope_note"></p></div>
+  </div>
+</div></section>
+
+<section id="s5"><div class="slide">
+  <div class="kicker">What this does not say</div>
+  <h2>Four limits, stated before anyone else states them.</h2>
+  <div class="two">
+    <div class="card"><h3>The limits</h3><ul class="plain">
+      <li><b>It is not a company total.</b> <span data-f="coverage"></span> of each company's
+        global sales sits inside the assessed markets. Everything here is that slice.</li>
+      <li><b>The benchmark is allocated, not published.</b> No climate pledge in these markets
+        carries a transport sub-target, so the sector path is taken pro rata from the
+        economy-wide one — which flatters combustion, because transport decarbonises slower
+        than the economy.</li>
+      <li><b>Vehicle lifetime moves the answer most.</b> Varying it alone takes the committed-path
+        total from <span data-f="life_lo"></span> to <span data-f="life_hi"></span>.</li>
+      <li><b>It is a distance, not a displacement.</b> The number says where a product sits
+        relative to a published path. It is not a claim that the sale caused a change, and it is
+        never netted against a Scope 3 inventory.</li>
+    </ul></div>
+    <div class="card"><h3>What it is for</h3>
+      <p class="sub" style="font-size:13.5px">Three uses it can carry, and one it cannot.</p>
+      <ul class="plain">
+        <li><b>Monitoring</b> — the trajectory implied by a named set of sold products, against a
+          named destination path.</li>
+        <li><b>Targeting</b> — which market and which product class sits furthest from the path.</li>
+        <li><b>Comparison</b> — the same benchmark applied to every company selling into the
+          same market.</li>
+        <li><b>Not evaluation</b> — no pre-period, no control group, no causal claim.</li>
+      </ul>
+      <p class="note">Every figure in this deck is a query on
+        <code>__DB_FILE__</code>, run when the page opened. The full analysis, its sources and its
+        assumption register are in the report beside it.</p></div>
+  </div>
+</div></section>
+
+</main>
+
+<script src="__SQLJS_DIR__sql-wasm.js" integrity="__SQLJS_SRI__" crossorigin="anonymous"
+  referrerpolicy="no-referrer" onerror="window.__sqljsFailed=true"></script>
+<script src="__D3_SRC__" integrity="__D3_SRI__" crossorigin="anonymous"
+  referrerpolicy="no-referrer" onerror="window.__d3Failed=true"></script>
+<script>
+'use strict';
+const SQLJS_VERSION = '__SQLJS_VERSION__';
+const CDN_DIR = '__SQLJS_DIR__';
+const DB_FILE = '__DB_FILE__';
+const DB_RELATIVE = '__DB_RELATIVE__';
+const SERVED_DB = '__SERVED_DB__';
+const SERVE_PORT = '__SERVE_PORT__';
+const NAME = {hyundai: 'Hyundai', kia: 'Kia', toyota: 'Toyota', nissan: 'Nissan'};
+const MARKET = {US: 'United States', EU27: 'European Union', KR: 'Korea', JP: 'Japan'};
+const PT = {BEV: 'battery', HEV: 'hybrid', PHEV: 'plug-in hybrid', ICE: 'combustion', FCEV: 'fuel cell'};
+let SQL = null, DB = null, COHORT = null;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+const fmt = (v, d = 1) => v == null || v === '' ? '—' : Number(v).toLocaleString('en-US', {minimumFractionDigits: d, maximumFractionDigits: d});
+const fmtN = (v) => v == null ? '—' : Number(v).toLocaleString('en-US');
+const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + fmt(Math.abs(v), d);
+const cls = (v) => v > 0 ? 'pos' : v < 0 ? 'neg' : '';
+
+function Q(sql, params) {
+  const out = [];
+  const st = DB.prepare(sql);
+  if (params) st.bind(params);
+  while (st.step()) out.push(st.getAsObject());
+  st.free();
+  return out;
+}
+const one = (sql, params) => Q(sql, params)[0] || {};
+
+/* ---------------------------------------------------------------- slide 1 */
+function slideOne() {
+  COHORT = one('SELECT MIN(cohort_year) y FROM ti_company WHERE status = ?', ['reported']).y;
+  const head = one(
+    "SELECT SUM(CASE WHEN scenario = 'S1' THEN covered_units END) units," +
+    " SUM(CASE WHEN scenario = 'S1' THEN ti_tco2e END) s1," +
+    " SUM(CASE WHEN scenario = 'S2' THEN ti_tco2e END) s2," +
+    ' COUNT(DISTINCT company) companies, COUNT(DISTINCT market) markets' +
+    ' FROM ti_company WHERE cohort_year = ?', [COHORT]);
+  put('units', fmtN(head.units));
+  put('cohort', COHORT);
+  put('companies', head.companies);
+  put('markets', head.markets);
+  put('s1', signed(head.s1 / 1e6) + ' Mt');
+  put('s2', signed(head.s2 / 1e6) + ' Mt');
+}
+function put(key, value) {
+  document.querySelectorAll('[data-f="' + key + '"]').forEach((el) => { el.innerHTML = value; });
+}
+
+/* ---------------------------------------------------------------- slide 2 */
+function slideTwo() {
+  const rows = Q(
+    'SELECT company,' +
+    " SUM(CASE WHEN scenario = 'S1' THEN ti_tco2e END)/1e6 s1," +
+    " SUM(CASE WHEN scenario = 'S2' THEN ti_tco2e END)/1e6 s2," +
+    " SUM(CASE WHEN scenario = 'S1' THEN covered_units END) units" +
+    ' FROM ti_company WHERE cohort_year = ? GROUP BY company ORDER BY s2 DESC', [COHORT]);
+  bars('#fig-company', rows.map((r) => ({
+    label: NAME[r.company] || r.company, sub: fmtN(r.units) + ' vehicles',
+    values: [{key: 's1', v: r.s1}, {key: 's2', v: r.s2}],
+  })), 'Mt');
+  table('#tab-company',
+    [{k: 'name', h: 'Company', l: true}, {k: 'units', h: 'Vehicles', f: (v) => fmtN(v)},
+     {k: 'p1', h: 'Observed', f: (v) => signed(v), c: true},
+     {k: 'p2', h: 'Committed', f: (v) => signed(v), c: true}],
+    rows.map((r) => ({name: NAME[r.company] || r.company, units: r.units,
+      p1: r.s1 * 1e6 / r.units, p2: r.s2 * 1e6 / r.units})));
+  const top = rows[0], low = rows[rows.length - 1];
+  const below = rows.filter((r) => r.s2 < 0).length;
+  put('company_note', 'Under the observed trend the order is ' +
+    rows.slice().sort((a, b) => a.s1 - b.s1).map((r) => esc(NAME[r.company] || r.company)).join(', ') +
+    '. Under the committed path it is ' + rows.map((r) => esc(NAME[r.company] || r.company)).join(', ') +
+    ' — ' + esc(NAME[top.company]) + ' carries the largest added quantity, ' +
+    esc(NAME[low.company]) + ' the smallest, and ' +
+    (below === 0 ? 'not one of them is below zero' : below + ' of them sit below zero') +
+    '. The reordering between the two columns is the point: it is not a disagreement about the ' +
+    'cars, it is a disagreement about what they should be measured against.');
+}
+
+/* ---------------------------------------------------------------- slide 3 */
+function slideThree() {
+  const rows = Q(
+    'SELECT powertrain,' +
+    " SUM(CASE WHEN scenario = 'S1' THEN ti_tco2e END) / SUM(CASE WHEN scenario = 'S1' THEN units END) s1," +
+    " SUM(CASE WHEN scenario = 'S2' THEN ti_tco2e END) / SUM(CASE WHEN scenario = 'S2' THEN units END) s2," +
+    " SUM(CASE WHEN scenario = 'S1' THEN units END) units" +
+    ' FROM ti_powertrain WHERE cohort_year = ? GROUP BY powertrain ORDER BY s2 DESC', [COHORT]);
+  bars('#fig-powertrain', rows.map((r) => ({
+    label: (PT[r.powertrain] || r.powertrain), sub: fmtN(r.units) + ' vehicles',
+    values: [{key: 's1', v: r.s1}, {key: 's2', v: r.s2}],
+  })), 't');
+  const mix = Q(
+    "SELECT company, powertrain, SUM(units) u FROM ti_powertrain WHERE cohort_year = ? AND scenario = 'S1'" +
+    ' GROUP BY company, powertrain', [COHORT]);
+  const kinds = [...new Set(mix.map((r) => r.powertrain))].sort();
+  const byCo = {};
+  mix.forEach((r) => { (byCo[r.company] = byCo[r.company] || {})[r.powertrain] = r.u; });
+  const cols = [{k: 'name', h: 'Company', l: true}].concat(kinds.map((k) => ({
+    k, h: PT[k] || k, f: (v) => v == null ? '—' : fmt(v, 0) + '%'})));
+  table('#tab-powertrain', cols, Object.keys(byCo).map((c) => {
+    const total = Object.values(byCo[c]).reduce((a, b) => a + b, 0);
+    const row = {name: NAME[c] || c};
+    kinds.forEach((k) => { row[k] = byCo[c][k] == null ? null : byCo[c][k] / total * 100; });
+    return row;
+  }));
+  const hev = rows.find((r) => r.powertrain === 'HEV');
+  const ice = rows.find((r) => r.powertrain === 'ICE');
+  if (hev && ice) {
+    const spread = Q(
+      "SELECT market, SUM(ti_tco2e)/SUM(units) t FROM ti_powertrain WHERE cohort_year = ?" +
+      " AND powertrain = 'HEV' AND scenario = 'S2' GROUP BY market ORDER BY t", [COHORT]);
+    const best = spread[0], worst = spread[spread.length - 1];
+    put('powertrain_note', 'A hybrid is worth ' + signed(hev.s1) +
+      ' tonnes against what the fleet is actually doing and ' + signed(hev.s2) +
+      ' tonnes against what the country pledged — the credit does not shrink, it reverses. ' +
+      'And the reversal is a property of the destination, not of the car: the same hybrid is ' +
+      signed(best.t) + ' tonnes in ' + esc(MARKET[best.market] || best.market) + ' and ' +
+      signed(worst.t) + ' tonnes in ' + esc(MARKET[worst.market] || worst.market) +
+      '. A combustion vehicle reads ' + signed(ice.s1) + ' and ' + signed(ice.s2) +
+      ' tonnes on the same two benchmarks, and it is the volume item in every company here.');
+  }
+}
+
+/* ---------------------------------------------------------------- slide 4 */
+function slideFour() {
+  const rows = Q(
+    "SELECT market, company, ti_per_vehicle_kgco2e/1000.0 t FROM ti_company" +
+    " WHERE cohort_year = ? AND scenario = 'S2'", [COHORT]);
+  const markets = [...new Set(rows.map((r) => r.market))];
+  const companies = [...new Set(rows.map((r) => r.company))].sort();
+  const grid = {};
+  rows.forEach((r) => { (grid[r.market] = grid[r.market] || {})[r.company] = r.t; });
+  table('#tab-market',
+    [{k: 'name', h: 'Destination', l: true}].concat(companies.map((c) => ({
+      k: c, h: NAME[c] || c, f: (v) => v == null ? '—' : signed(v), c: true}))),
+    markets.map((m) => Object.assign({name: MARKET[m] || m}, grid[m])));
+  const slopes = Q(
+    "SELECT 'US' market, scenario, AVG(r_fleet) r FROM reference_trajectories_us GROUP BY scenario" +
+    " UNION ALL SELECT 'EU27', scenario, AVG(r_fleet) FROM reference_trajectories_eu27 GROUP BY scenario" +
+    " UNION ALL SELECT 'KR', scenario, AVG(r_fleet) FROM reference_trajectories_kr GROUP BY scenario" +
+    " UNION ALL SELECT 'JP', scenario, AVG(r_fleet) FROM reference_trajectories_jp GROUP BY scenario");
+  const bym = {};
+  slopes.forEach((r) => { (bym[r.market] = bym[r.market] || {})[r.scenario] = r.r * 100; });
+  table('#tab-slope',
+    [{k: 'name', h: 'Destination', l: true},
+     {k: 'S1', h: 'Observed', f: (v) => fmt(v, 1) + '%/yr'},
+     {k: 'S2', h: 'Committed', f: (v) => fmt(v, 1) + '%/yr'}],
+    Object.keys(bym).map((m) => Object.assign({name: MARKET[m] || m}, bym[m])));
+  const worst = Object.entries(bym).sort((a, b) => a[1].S1 - b[1].S1)[0];
+  put('slope_note', 'The weakest observed trend is ' + esc(MARKET[worst[0]] || worst[0]) +
+    ' at ' + fmt(worst[1].S1, 1) + ' per cent a year — a fleet that is barely moving, or moving ' +
+    'the wrong way, against a pledge of ' + fmt(worst[1].S2, 1) + ' per cent. Nothing about the ' +
+    'cars explains the difference in that market; the benchmark does.');
+}
+
+/* ---------------------------------------------------------------- slide 5 */
+function slideFive() {
+  const cov = one('SELECT MIN(assessed_share_of_global)*100 lo, MAX(assessed_share_of_global)*100 hi' +
+    ' FROM ti_global_coverage WHERE cohort_year = ?', [COHORT]);
+  put('coverage', 'Between ' + fmt(cov.lo, 0) + ' and ' + fmt(cov.hi, 0) + ' per cent');
+  const life = one(
+    "SELECT MIN(total)/1e6 lo, MAX(total)/1e6 hi FROM (SELECT variant, SUM(ti_tco2e) total" +
+    " FROM ti_sensitivity WHERE dimension = 'lifetime' AND scenario = 'S2' AND cohort_year = ?" +
+    ' GROUP BY variant)', [COHORT]);
+  put('life_lo', signed(life.lo) + ' Mt');
+  put('life_hi', signed(life.hi) + ' Mt');
+}
+
+/* ---------------------------------------------------------------- drawing */
+function bars(sel, rows, unit) {
+  const host = document.querySelector(sel);
+  host.textContent = '';
+  if (!rows.length || window.__d3Failed) return;
+  const rowH = 46, padL = 108, padR = 16, padT = 8, padB = 26;
+  const w = Math.max(360, host.clientWidth || 480);
+  const h = padT + padB + rows.length * rowH;
+  const all = rows.flatMap((r) => r.values.map((v) => v.v));
+  const max = Math.max(1e-9, ...all.map(Math.abs));
+  const x = d3.scaleLinear().domain([-max * 1.12, max * 1.12]).range([padL, w - padR]);
+  const svg = d3.select(host).append('svg').attr('viewBox', [0, 0, w, h]).attr('role', 'img');
+  svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', padT).attr('y2', h - padB)
+    .attr('stroke', 'var(--rule)');
+  rows.forEach((r, i) => {
+    const top = padT + i * rowH;
+    svg.append('text').attr('x', padL - 10).attr('y', top + 17).attr('text-anchor', 'end')
+      .attr('font-size', 13).attr('font-weight', 600).attr('fill', 'var(--ink)').text(r.label);
+    svg.append('text').attr('x', padL - 10).attr('y', top + 33).attr('text-anchor', 'end')
+      .attr('font-size', 11).attr('fill', 'var(--muted)').text(r.sub);
+    r.values.forEach((v, j) => {
+      const y = top + 6 + j * 15;
+      svg.append('rect').attr('x', Math.min(x(0), x(v.v))).attr('y', y)
+        .attr('width', Math.abs(x(v.v) - x(0))).attr('height', 11).attr('rx', 2)
+        .attr('fill', v.key === 's1' ? 'var(--s1)' : 'var(--s2)');
+      svg.append('text').attr('x', v.v >= 0 ? x(v.v) + 6 : x(v.v) - 6).attr('y', y + 9.5)
+        .attr('text-anchor', v.v >= 0 ? 'start' : 'end').attr('font-size', 11.5)
+        .attr('font-variant-numeric', 'tabular-nums').attr('fill', 'var(--muted)')
+        .text(signed(v.v) + ' ' + unit);
+    });
+  });
+  svg.append('text').attr('x', x(0)).attr('y', h - 8).attr('text-anchor', 'middle')
+    .attr('font-size', 11).attr('fill', 'var(--muted)').text('0');
+}
+
+function table(sel, cols, rows) {
+  const head = '<tr>' + cols.map((c) => '<th>' + esc(c.h) + '</th>').join('') + '</tr>';
+  const body = rows.map((r) => '<tr>' + cols.map((c) => {
+    const v = r[c.k];
+    const text = c.f ? c.f(v) : esc(v == null ? '—' : v);
+    return '<td class="' + (c.c && typeof v === 'number' ? cls(v) : '') + '">' + text + '</td>';
+  }).join('') + '</tr>').join('');
+  document.querySelector(sel).innerHTML = '<table><thead>' + head + '</thead><tbody>' + body + '</tbody></table>';
+}
+
+/* ---------------------------------------------------------------- navigation */
+function navigation() {
+  const sections = [...document.querySelectorAll('main section')];
+  const dots = $('dots');
+  sections.forEach((s, i) => {
+    const b = document.createElement('button');
+    b.className = 'dot' + (i === 0 ? ' on' : '');
+    b.title = 'Slide ' + (i + 1);
+    b.addEventListener('click', () => s.scrollIntoView());
+    dots.appendChild(b);
+  });
+  const deck = $('deck');
+  const mark = () => {
+    const i = Math.round(deck.scrollTop / deck.clientHeight);
+    [...dots.children].forEach((d, j) => d.classList.toggle('on', j === i));
+  };
+  deck.addEventListener('scroll', mark, {passive: true});
+  document.addEventListener('keydown', (e) => {
+    const i = Math.round(deck.scrollTop / deck.clientHeight);
+    if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') {
+      sections[Math.min(i + 1, sections.length - 1)].scrollIntoView(); e.preventDefault();
+    } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+      sections[Math.max(i - 1, 0)].scrollIntoView(); e.preventDefault();
+    }
+  });
+}
+
+/* ---------------------------------------------------------------- boot */
+function setStatus(html, isErr) { $('status').innerHTML = (isErr ? '<span class="err">' : '') + html + (isErr ? '</span>' : ''); }
+function engineReady() {
+  if (SQL) return Promise.resolve(SQL);
+  if (window.__sqljsFailed || typeof window.initSqlJs !== 'function') {
+    return Promise.reject(new Error('sql.js ' + SQLJS_VERSION + ' could not be loaded from cdnjs'));
+  }
+  return window.initSqlJs({locateFile: (f) => CDN_DIR + f}).then((m) => { SQL = m; return m; });
+}
+function openBytes(buffer, name) {
+  return engineReady().then((sql) => {
+    DB = new sql.Database(new Uint8Array(buffer));
+    DB.exec('SELECT 1');
+    slideOne(); slideTwo(); slideThree(); slideFour(); slideFive();
+    $('opener').classList.add('hidden');
+    $('deck').classList.remove('hidden');
+    navigation();
+    const as_of = one("SELECT MAX(accessed_date) d FROM sources").d || '';
+    setStatus('<b>' + esc(name) + '</b> · every figure here is a query on that file' +
+      (as_of ? ' · data as of ' + esc(as_of) : ''));
+    window.addEventListener('resize', () => { slideTwo(); slideThree(); });
+  });
+}
+function showOpener(msg) { $('opener-msg').innerHTML = msg; $('opener').classList.remove('hidden'); setStatus('no database open', true); }
+function openPicked(file) {
+  if (!file) return;
+  file.arrayBuffer().then((b) => openBytes(b, file.name)).catch((err) => showOpener('<span class="err">' + esc(err.message) + '</span>'));
+}
+function boot() {
+  $('dbfile').addEventListener('change', (e) => openPicked(e.target.files[0]));
+  if (window.__sqljsFailed) { showOpener('<span class="err">sql.js could not be loaded from cdnjs.</span>'); return; }
+  const source = location.protocol === 'file:' ? SERVED_DB : DB_RELATIVE;
+  setStatus('reading ' + esc(DB_FILE) + '…');
+  const stop = new AbortController();
+  const timer = setTimeout(() => stop.abort(), 4000);
+  fetch(source, {cache: 'no-store', signal: stop.signal})
+    .then((res) => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.arrayBuffer(); })
+    .then((buf) => { clearTimeout(timer); return openBytes(buf, DB_FILE); })
+    .catch((err) => { clearTimeout(timer);
+      showOpener(location.protocol === 'file:'
+        ? 'This page was opened from the file system, where the browser blocks reading <code>' + esc(DB_FILE) + '</code> beside it, and no local server answered on port ' + SERVE_PORT + '.'
+        : '<span class="err">Could not read ' + esc(DB_FILE) + ': ' + esc(err.message) + '</span>'); });
+}
+document.addEventListener('DOMContentLoaded', boot);
+</script>
+</body>
+</html>

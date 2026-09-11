@@ -498,3 +498,38 @@ def test_database_flags_every_input_value_with_a_tier() -> None:
         ).fetchone()[0]
         assert missing == 0, (name, missing)
     conn.close()
+
+
+PITCH = DATA / "report" / "ti_automotive_pitch.html"
+
+
+def test_pitch_deck_carries_no_data_of_its_own() -> None:
+    """The five-slide deck is a reader of the database, like the report it sits beside.
+
+    A pitch is where a stale number does the most damage, because it is the artefact that travels
+    without its author. So the same rule applies: no figure is written into the file at build
+    time. The headline totals, the company ranking, the powertrain split and the limits on the
+    last slide are all queries run when the page opens.
+    """
+    assert PITCH.exists(), PITCH
+    html = PITCH.read_text(encoding="utf-8")
+    assert html.count("data-f=") >= 10
+    assert "tradeimpact_auto.sqlite" in html
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
+    text = re.sub(r"<[^>]+>", " ", text)
+    assert not re.search(r"[+−-]\d+\.\d+ ?Mt", text), "a total is baked into the deck"
+    assert not re.search(r"\d+(\.\d+)? ?%", text), "a percentage is baked into the deck"
+    assert not re.search(r"\b\d+ of \d+\b", text), "a count is baked into the deck"
+
+
+def test_pitch_deck_pins_its_libraries_and_states_its_limits() -> None:
+    """Every external script is pinned with a hash, and the deck never drops the caveats."""
+    html = PITCH.read_text(encoding="utf-8")
+    pattern = r"<script src=\"([^\"]+)\"[^>]*integrity=\"(sha(?:384|512)-[^\"]+)\""
+    scripts = re.findall(pattern, html)
+    assert len(scripts) == 2, scripts
+    assert all(src.startswith("https://cdnjs.cloudflare.com/ajax/libs/") for src, _ in scripts)
+    assert "<img" not in html and "<iframe" not in html
+    # The last slide is not optional: a deck that drops the limits is the failure mode.
+    for phrase in ("not a company total", "pro rata", "not a claim that the sale caused"):
+        assert phrase in html, f"the limits slide no longer says {phrase!r}"

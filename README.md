@@ -189,6 +189,14 @@ into the file. Serve `data/auto` with `.venv/bin/python script/auto/serve_dashbo
 <http://127.0.0.1:8765/report/ti_automotive_report.html>; opened from disk the page offers a
 file picker for the database instead.
 
+`data/auto/report/ti_automotive_pitch.html` is the short version of the same thing: five slides
+for the ten minutes before someone opens the report — the headline comparison, the four companies
+under both benchmarks, the powertrain decomposition, the per-destination reading, and a closing
+slide of what the result does not say. It is built by `script/auto/report/build_pitch.py` with
+`pitch_template.html`, reads the same database at open, and is held to the same rule by test: no
+figure is written into the file. Arrow keys or the dots move between slides, and it prints one
+slide per page.
+
 The story runs left to right across seven main tabs, in the order the analysis is built, and each
 tab opens sub-tabs (one per company, per market or per view); a filter bar — scenario, company,
 market, cohort year — redraws the tab in view while the story text stays on the whole set:
