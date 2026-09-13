@@ -69,7 +69,7 @@ main { padding: 16px; }
 .wrap .cap { padding: 10px 16px; font-size: 12.5px; color: var(--muted); border-bottom: 1px solid var(--rule);
   background: var(--panel); }
 .scroll { overflow: auto; max-height: calc(100vh - 220px); }
-table { border-collapse: collapse; width: 100%; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+table { border-collapse: collapse; width: max-content; min-width: 100%; font-size: 12.5px; font-variant-numeric: tabular-nums; }
 th, td { padding: 6px 10px; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; }
 th:first-child, td:first-child { text-align: left; position: sticky; left: 0; background: var(--paper); }
 thead th { position: sticky; top: 0; z-index: 2; background: var(--panel); color: var(--muted);
@@ -78,7 +78,7 @@ thead th:first-child { z-index: 3; background: var(--panel); }
 tbody tr:hover td { background: var(--accent-soft); }
 tbody tr:hover td:first-child { background: var(--accent-soft); }
 td.num { text-align: right; }
-td.txt { text-align: left; white-space: normal; max-width: 42ch; color: var(--muted); font-size: 11.5px; }
+td.txt { text-align: left; white-space: nowrap; max-width: 300px; overflow: hidden; text-overflow: ellipsis; color: var(--muted); font-size: 11.5px; }
 .pos { color: var(--added); } .neg { color: var(--avoided); }
 .pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; }
 .st-current { background: var(--green-soft); color: var(--a); }
@@ -102,6 +102,14 @@ svg { display: block; width: 100%; height: auto; overflow: visible; }
 .kv { display: flex; flex-wrap: wrap; gap: 6px 22px; padding: 12px 16px; font-size: 12.5px; }
 .kv div span { color: var(--muted); }
 .hint { font-size: 12px; color: var(--muted); padding: 0 16px 14px; }
+td.clip, td.txt.clip { cursor: help; }
+span.clip { display: inline-block; max-width: 240px; overflow: hidden; text-overflow: ellipsis;
+  white-space: nowrap; vertical-align: bottom; cursor: help; }
+#tip { position: fixed; z-index: 60; max-width: 380px; background: var(--ink); color: var(--paper);
+  padding: 8px 11px; border-radius: 8px; font-size: 12px; line-height: 1.5; box-shadow: var(--shadow);
+  white-space: normal; }
+.tier { overflow: hidden; }
+a { color: var(--accent); }
 .hidden { display: none !important; }
 
 /* ---- opener + editor dialog ---- */
@@ -142,6 +150,8 @@ dialog::backdrop { background: rgba(0,0,0,.4); }
   <p class="hint" style="padding:0">Serve with <code>.venv/bin/python script/auto/app/serve_app.py</code>,
     then open <code>http://127.0.0.1:8770/app.html</code>.</p>
 </div></div>
+
+<div id="tip" class="hidden"></div>
 
 <div id="app" class="hidden">
   <div class="tabs" id="tabs-main"></div>
@@ -184,7 +194,7 @@ const DATASET_KO = {sales:'판매 Sales', vehicle_technology:'차량기술 Techn
   emission_targets:'배출목표 Targets'};
 let SQL=null, DB=null, EDITS=[];
 const state = {mode:'input', inMain:null, inYear:null, dbMain:null, dbTable:null,
-  resYear:null, resScenario:'S2', resCountry:null};
+  inMarket:'all', resYear:null, resScenario:'S2', resCountry:null};
 
 const $ = (id)=>document.getElementById(id);
 const esc = (s)=>String(s==null?'':s).replace(/[&<>"']/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -192,6 +202,21 @@ const fmt = (v,d=1)=>v==null||v===''||isNaN(v)?'—':Number(v).toLocaleString('e
 const fmtN = (v)=>v==null||v===''?'—':Number(v).toLocaleString('en-US');
 const signed = (v,d=1)=>(v>0?'+':v<0?'−':'')+fmt(Math.abs(v),d);
 const cls = (v)=>v>0?'pos':v<0?'neg':'';
+let SOURCES = {};
+function num2(v){ if(v===''||v==null) return ''; const n=Number(v);
+  if(v===true||v===false||!isFinite(n)||String(v).trim()==='') return v;
+  return Number.isInteger(n) ? String(n) : String(Number(n.toFixed(2))); }
+function tdNum(v){ return '<td class="num">'+esc(num2(v))+'</td>'; }
+function tdTier(v){ return '<td class="num">'+(['A','B','C'].includes(v)
+  ? '<span class="tier tier-'+v+'">'+v+'</span>' : (v?'<span class="clip" data-full="'+esc(v)+'">'+esc(v)+'</span>':'—'))+'</td>'; }
+function tdClip(text){ const s=String(text==null?'':text), e=esc(s);
+  return s.length<=30 ? '<td class="txt">'+e+'</td>' : '<td class="txt clip" data-full="'+e+'">'+e+'</td>'; }
+function srcLinks(ids){ if(!ids) return '—';
+  return String(ids).split(';').map((raw)=>{ const id=raw.trim(); if(!id) return '';
+    const s=SOURCES[id];
+    if(s && s.url) return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener" data-full="'+esc(s.title||id)+'">'+esc(id)+'</a>';
+    return '<span data-full="'+esc(id)+'">'+esc(id)+'</span>'; }).filter(Boolean).join(', '); }
+function tdSrc(ids){ const inner=srcLinks(ids); return '<td class="txt clip">'+inner+'</td>'; }
 function setStatus(html,bad){ $('status').innerHTML=html; $('status').classList.toggle('err',!!bad); }
 
 function Q(sql,params){ const out=[]; const st=DB.prepare(sql); if(params) st.bind(params);
@@ -218,31 +243,43 @@ function renderInputTabs() {
   $('tabs-main').querySelectorAll('.tab').forEach((b)=>b.onclick=()=>{state.inMain=b.dataset.d; drawInput();});
   const years = saleYears();
   if (!state.inYear) state.inYear = years[0];
-  $('tabs-sub').innerHTML = '<span class="lbl">Sale year</span>' + years.map((y)=>
-    '<button class="chip'+(y===state.inYear?' on':'')+'" data-y="'+y+'">'+y+'</button>').join('') +
-    '<span class="spacer"></span><span class="hint" style="padding:0">' +
-    EDITS.length + ' queued edit(s)</span>';
-  $('tabs-sub').querySelectorAll('.chip').forEach((b)=>b.onclick=()=>{state.inYear=+b.dataset.y; drawInput();});
+  const markets = Q('SELECT DISTINCT market FROM data_readiness WHERE dataset=? AND cohort_year=? ORDER BY market',
+    [state.inMain, state.inYear]).map((r)=>r.market);
+  if (state.inMarket!=='all' && !markets.includes(state.inMarket)) state.inMarket='all';
+  const yearChips = years.map((y)=>'<button class="chip'+(y===state.inYear?' on':'')+'" data-y="'+y+'">'+y+'</button>').join('');
+  const mktChips = ['all'].concat(markets).map((m)=>'<button class="chip mkt'+(m===state.inMarket?' on':'')+'" data-m="'+m+'">'+
+    (m==='all'?'All markets':esc(MARKET[m]||m))+'</button>').join('');
+  $('tabs-sub').innerHTML = '<span class="lbl">Sale year</span>'+yearChips+
+    '<span style="width:14px"></span><span class="lbl">Market</span>'+mktChips+
+    '<span class="spacer"></span><span class="hint" style="padding:0">'+EDITS.length+' queued edit(s)</span>';
+  $('tabs-sub').querySelectorAll('.chip[data-y]').forEach((b)=>b.onclick=()=>{state.inYear=+b.dataset.y; drawInput();});
+  $('tabs-sub').querySelectorAll('.chip[data-m]').forEach((b)=>b.onclick=()=>{state.inMarket=b.dataset.m; drawInput();});
 }
 
 function drawInput() {
   renderInputTabs();
-  const rows = Q('SELECT * FROM data_readiness WHERE dataset=? AND cohort_year=? ' +
-    'ORDER BY country, parameter',[state.inMain,state.inYear]);
+  const rows = state.inMarket==='all'
+    ? Q('SELECT * FROM data_readiness WHERE dataset=? AND cohort_year=? ORDER BY market, country, parameter',
+        [state.inMain,state.inYear])
+    : Q('SELECT * FROM data_readiness WHERE dataset=? AND cohort_year=? AND market=? ORDER BY country, parameter',
+        [state.inMain,state.inYear,state.inMarket]);
   const head = ['Country','Parameter','Value','Obs. year','Lag','Status','Tier','Source'];
   const body = rows.map((r)=>{
     const editable = r.dataset!=='sales';
+    const val = num2(r.value);
     const valCell = editable
-      ? '<td class="num edit" data-edit=\''+esc(JSON.stringify({cohort_year:r.cohort_year,dataset:r.dataset,country:r.country,parameter:r.parameter,old:r.value}))+'\'>'+esc(r.value)+'</td>'
-      : '<td class="num">'+esc(r.value)+'</td>';
-    return '<tr><td>'+esc(MARKET[r.country]||r.country)+'</td>'+
+      ? '<td class="num edit" data-edit=\''+esc(JSON.stringify({cohort_year:r.cohort_year,dataset:r.dataset,country:r.country,parameter:r.parameter,old:r.value}))+'\'>'+esc(val)+'</td>'
+      : '<td class="num">'+esc(val)+'</td>';
+    const name = (MARKET[r.country]||r.country) + (r.market!==r.country && r.market!=='EU27' ? '' : (r.market==='EU27'&&r.country!=='EU27'?' ('+r.country+')':''));
+    const note = r.note ? ' data-full="'+esc(r.note)+'"' : '';
+    return '<tr><td'+note+' class="'+(r.note?'clip':'')+'">'+esc(name)+'</td>'+
       '<td class="txt" style="color:var(--ink)">'+esc(r.parameter)+'</td>'+
       valCell+
       '<td class="num">'+esc(r.observation_year)+'</td>'+
       '<td class="num">'+(r.lag_years===''||r.lag_years==null?'—':(r.lag_years>0?'−'+r.lag_years:'0'))+'</td>'+
       '<td class="num"><span class="pill st-'+r.status+'">'+r.status.replace(/_/g,' ')+'</span></td>'+
-      '<td class="num">'+(r.tier?'<span class="tier tier-'+r.tier+'">'+r.tier+'</span>':'—')+'</td>'+
-      '<td class="txt">'+esc((r.source_id||'').split(';')[0])+'</td></tr>';
+      tdTier(r.tier)+
+      tdSrc(r.source_id)+'</tr>';
   }).join('');
   const carried = rows.filter((r)=>r.status==='carried_forward').length;
   const stale = rows.filter((r)=>['stale','no_observation_year'].includes(r.status)).length;
@@ -286,11 +323,14 @@ function drawDb() {
   const c = cols(state.dbTable);
   const rows = Q('SELECT * FROM "'+state.dbTable+'" LIMIT 2000');
   const numeric = new Set(c.filter((k)=>rows.length && rows.every((r)=>r[k]===''||r[k]==null||!isNaN(r[k]))));
-  const head = c.map((k)=>'<th'+(numeric.has(k)?' class="num"':'')+'>'+esc(k)+'</th>').join('');
+  const isSrc = (k)=>/(^|_)source_id$|source_ids/.test(k);
+  const head = c.map((k)=>'<th'+(numeric.has(k)&&!isSrc(k)?' class="num"':'')+'>'+esc(k)+'</th>').join('');
   const body = rows.map((r)=>'<tr>'+c.map((k)=>{
-    const tierCls = (k==='tier') && r[k] ? ' '+('tier tier-'+r[k]) : '';
-    if (k==='tier' && r[k]) return '<td class="num"><span class="tier tier-'+r[k]+'">'+esc(r[k])+'</span></td>';
-    return '<td class="'+(numeric.has(k)?'num':'txt')+'">'+esc(r[k])+'</td>';
+    const v=r[k];
+    if (k==='tier') return tdTier(v);
+    if (isSrc(k)) return tdSrc(v);
+    if (numeric.has(k)) return tdNum(v);
+    return tdClip(v);
   }).join('')+'</tr>').join('');
   $('view').innerHTML =
     '<div class="wrap"><h2>'+esc(state.dbTable)+'</h2>'+
@@ -435,6 +475,7 @@ function engineReady() {
 function openBytes(buffer,name) {
   return engineReady().then((sql)=>{
     DB = new sql.Database(new Uint8Array(buffer)); DB.exec('SELECT 1');
+    SOURCES = {}; Q('SELECT source_id, url, title FROM sources').forEach((r)=>{ SOURCES[r.source_id]={url:r.url,title:r.title}; });
     $('opener').classList.add('hidden'); $('app').classList.remove('hidden');
     const as_of = one('SELECT MAX(accessed_date) d FROM sources').d || '';
     setStatus('<b>'+esc(name)+'</b>'+(as_of?' · data as of '+esc(as_of):''));
@@ -458,6 +499,14 @@ function boot() {
       ? 'Opened from the file system, where the browser blocks reading <code>'+esc(DB_FILE)+'</code>. Run serve_app.py.'
       : '<span class="err-msg">Could not read '+esc(DB_FILE)+': '+esc(err.message)+'</span>'); });
 }
+(function(){ const tip=$('tip');
+  document.addEventListener('mouseover',(e)=>{ const el=e.target.closest('[data-full]'); if(!el) return;
+    tip.textContent=el.getAttribute('data-full'); tip.classList.remove('hidden'); });
+  document.addEventListener('mousemove',(e)=>{ if(tip.classList.contains('hidden')) return;
+    const x=Math.min(e.clientX+14, window.innerWidth-tip.offsetWidth-12);
+    tip.style.left=Math.max(8,x)+'px'; tip.style.top=(e.clientY+16)+'px'; });
+  document.addEventListener('mouseout',(e)=>{ if(e.target.closest('[data-full]')) tip.classList.add('hidden'); });
+})();
 document.addEventListener('DOMContentLoaded', boot);
 </script>
 </body>

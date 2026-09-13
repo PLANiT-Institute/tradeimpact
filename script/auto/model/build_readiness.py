@@ -177,12 +177,12 @@ def target_rows() -> list[dict[str, object]]:
                         "observation_year": observation if observation is not None else "",
                         "lag_years": cohort_year - observation if observation is not None else "",
                         "status": status_of(cohort_year, observation, seen),
-                        "tier": t["target_level"],
+                        "tier": "A" if t["target_level"] == "observed_trend" else "B",
                         "source_id": t["source_id"],
                         "note": (
-                            "vintage is the year the policy was announced (S1: the last observed "
-                            "year); a later sale year is measured against a policy that has not "
-                            "changed since"
+                            "policy basis " + t["target_level"] + "; vintage is the year the "
+                            "policy was announced (S1: the last observed year); a later sale year "
+                            "is measured against a policy that has not changed since"
                         ),
                     }
                 )
