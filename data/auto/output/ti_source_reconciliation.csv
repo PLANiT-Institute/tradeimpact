@@ -51,9 +51,11 @@ kia,AT,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market
 kia,BE,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market,17605,yes,,yes,
 kia,BG,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market,2706,yes,,yes,
 kia,CA,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales,market,75927,yes,,no,
+kia,CA,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales_estimated,market,11082,yes,,no,
 kia,CA,2025,kia_ir_retail_sales,sales_kia_ir_2025.csv,retail_sales,market,94622,yes,,no,
 kia,CA,2026,kia_ir_retail_sales,sales_kia_ir_2026.csv,retail_sales,market,56978,yes,,no,
 kia,CN,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales,market,64755,yes,,no,
+kia,CN,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales_estimated,market,14105,yes,,no,
 kia,CN,2025,kia_ir_retail_sales,sales_kia_ir_2025.csv,retail_sales,market,81182,yes,,no,
 kia,CN,2026,kia_ir_retail_sales,sales_kia_ir_2026.csv,retail_sales,market,42520,yes,,no,
 kia,CY,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market,2840,yes,,yes,
@@ -69,10 +71,12 @@ kia,HR,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market
 kia,HU,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market,6478,yes,,yes,
 kia,IE,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market,8983,yes,,yes,
 kia,IN,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales,market,200290,yes,,no,
+kia,IN,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales_estimated,market,48670,yes,,no,
 kia,IN,2025,kia_ir_retail_sales,sales_kia_ir_2025.csv,retail_sales,market,279657,yes,,no,
 kia,IN,2026,kia_ir_retail_sales,sales_kia_ir_2026.csv,retail_sales,market,183205,yes,,no,
 kia,IT,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market,47627,yes,,yes,
 kia,KR,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales,market,447622,yes,,yes,
+kia,KR,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales_estimated,market,91163,yes,,yes,
 kia,KR,2025,kia_ir_retail_sales,sales_kia_ir_2025.csv,retail_sales,market,548205,yes,,yes,
 kia,KR,2026,kia_ir_retail_sales,sales_kia_ir_2026.csv,retail_sales,market,351164,yes,,yes,
 kia,LT,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market,2241,yes,,yes,
@@ -80,6 +84,7 @@ kia,LU,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market
 kia,LV,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market,801,yes,,yes,
 kia,MT,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market,515,yes,,yes,
 kia,MX,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales,market,85164,yes,,no,
+kia,MX,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales_estimated,market,19365,yes,,no,
 kia,MX,2025,kia_ir_retail_sales,sales_kia_ir_2025.csv,retail_sales,market,111172,yes,,no,
 kia,MX,2026,kia_ir_retail_sales,sales_kia_ir_2026.csv,retail_sales,market,64159,yes,,no,
 kia,NL,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market,34774,yes,,yes,
@@ -92,6 +97,7 @@ kia,SK,2024,eea_co2_monitoring_2024,sales_eea_eu27_2024.csv,registrations,market
 kia,US,2024,company_us_totals_cross_check,company_us_totals_cross_check.csv,brand_total_sales,market,796488,yes,kia,no,0.0
 kia,US,2024,kia_america_sales_by_month,sales_kia_us.csv,brand_total_sales,market,796488,yes,kia,yes,
 kia,US,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales,market,677250,yes,kia,no,-14.97
+kia,US,2024,kia_ir_retail_sales,sales_kia_ir_2024.csv,retail_sales_estimated,market,141189,yes,kia,no,-82.274
 kia,US,2025,kia_america_sales_by_month,sales_kia_us.csv,brand_total_sales,market,852155,yes,,yes,
 kia,US,2025,kia_ir_retail_sales,sales_kia_ir_2025.csv,retail_sales,market,852156,yes,,no,0.0
 kia,US,2026,kia_ir_retail_sales,sales_kia_ir_2026.csv,retail_sales,market,506584,yes,,yes,

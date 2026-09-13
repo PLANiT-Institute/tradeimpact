@@ -56,7 +56,13 @@ CELLS = DATA / "output" / "ti_by_model.csv"
 COHORTS = DATA / "output" / "cohorts.csv"
 OUT = DATA / "output" / "ti_global_coverage.csv"
 
-MARKET_SIDE = {"registrations", "retail_sales", "brand_total_sales", "domestic_sales"}
+MARKET_SIDE = {
+    "registrations",
+    "retail_sales",
+    "retail_sales_estimated",
+    "brand_total_sales",
+    "domestic_sales",
+}
 FIELDS = [
     "company",
     "cohort_year",
@@ -82,6 +88,23 @@ def read_csv(path: Path) -> list[dict[str, str]]:
     """All rows of a CSV as dicts."""
     with path.open(newline="") as f:
         return list(csv.DictReader(f))
+
+
+def span(periods: list[str]) -> str:
+    """Earliest month to latest month over a set of ``YYYY-MM..YYYY-MM`` periods.
+
+    A company's cohorts can sit in several files with different periods — a full-year
+    registration set beside a part-year release, or one file's observed months beside its
+    estimated remainder — and what matters for a share is the months they cover between them.
+
+    Args:
+        periods: Periods to span, each ``start..end``.
+
+    Returns:
+        The spanning period, or an empty string when there is nothing to span.
+    """
+    months = sorted(m for p in periods for m in p.split("..") if m)
+    return f"{months[0]}..{months[-1]}" if months else ""
 
 
 def held_for(
@@ -162,7 +185,7 @@ def main() -> None:
         if not assessed_units and not held_units:
             continue
         cohort_periods = sorted(periods.get(key, set()))
-        comparable = "yes" if cohort_periods == [g["period"]] else "no"
+        comparable = "yes" if span(cohort_periods) == g["period"] else "no"
         rows.append(
             {
                 "company": company,

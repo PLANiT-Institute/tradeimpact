@@ -41,8 +41,10 @@ from dataclasses import dataclass
 
 from model_io import (
     ALL_HEV,
+    ENERGY_POWERTRAINS,
     OUT_DIR,
     REPO,
+    carrier_factor,
     certified,
     load_cohorts,
     load_params,
@@ -142,13 +144,13 @@ def crossover(
         i0: Fleet benchmark intensity at t=0 (kgCO2e/km).
         rf: Annual fractional decline of the fleet benchmark (1/year).
         rp: Annual fractional decline of the grid (1/year).
-        e_prod0: For ICE/HEV, the ratio E_prod / E_ref(0) (-); unused for BEV.
-        eta_g0: For BEV, the product intensity at t=0 (kgCO2e/km); unused otherwise.
+        e_prod0: For ICE/HEV, the ratio E_prod / E_ref(0) (-); unused for BEV and FCEV.
+        eta_g0: For BEV and FCEV, the product intensity at t=0 (kgCO2e/km); unused otherwise.
 
     Returns:
         (t*, None) when a finite non-negative crossover exists, else (None, reason).
     """
-    if pt == "BEV":
+    if pt in ENERGY_POWERTRAINS:
         a, b = 1.0 - rf, 1.0 - rp
         if eta_g0 <= 0 or i0 <= 0:
             return None, "non-positive intensity"
@@ -157,7 +159,7 @@ def crossover(
         t = math.log(eta_g0 / i0) / math.log(a / b)
         if t >= 0:
             return t, None
-        # t* < 0 has two different meanings for a BEV, so name the right one.
+        # t* < 0 has two different meanings for a grid-fuelled car, so name the right one.
         if eta_g0 > i0:
             return None, "crossover before sale year (product already above benchmark at t=0)"
         return None, (
@@ -255,8 +257,8 @@ def cohort_total(
         for t in range(life):
             e_ref = e_ref0 * (1 - rf) ** t
             e_prod = (
-                (c.cert / 1000.0 * rw * g0 * (1 - rp) ** t * vkt)
-                if c.powertrain == "BEV"
+                (c.cert / 1000.0 * carrier_factor(c.powertrain) * rw * g0 * (1 - rp) ** t * vkt)
+                if c.powertrain in ENERGY_POWERTRAINS
                 else (c.cert * rw / 1000.0 * vkt)
             )
             cumulative += e_prod - e_ref
@@ -291,12 +293,18 @@ def build_crossovers(
         for scenario in scenarios[c.market]:
             rf, rp = rates[(c.market, c.destination, c.segment, scenario)]
             e_prod_const = c.cert * rw / 1000.0 * vkt
-            eta_g0 = c.cert / 1000.0 * rw * g0
-            ratio = e_prod_const / (i0 * vkt) if c.powertrain != "BEV" else 0.0
+            eta_g0 = c.cert / 1000.0 * carrier_factor(c.powertrain) * rw * g0
+            ratio = (
+                e_prod_const / (i0 * vkt) if c.powertrain not in ENERGY_POWERTRAINS else 0.0
+            )
             t_star, reason = crossover(c.powertrain, i0, rf, rp, ratio, eta_g0)
             cumulative = sum(
                 i0 * vkt * (1 - rf) ** t
-                - ((eta_g0 * (1 - rp) ** t * vkt) if c.powertrain == "BEV" else e_prod_const)
+                - (
+                    (eta_g0 * (1 - rp) ** t * vkt)
+                    if c.powertrain in ENERGY_POWERTRAINS
+                    else e_prod_const
+                )
                 for t in range(life)
             )
             rows.append(

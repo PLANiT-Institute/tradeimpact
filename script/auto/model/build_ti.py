@@ -23,11 +23,14 @@ Outputs (data/auto/output/)
 
 Algorithm (whitepaper §3.2-3.5, guideline §3.3-3.4, §4):
     $$ E_{prod}(t) = \\begin{cases} I_{cert}\\,f_{rw}\\,D_c & \\text{ICE, HEV}\\\\
-       \\eta_{cert}\\,f_{rw}\\, G_c(t)\\, D_c & \\text{BEV} \\end{cases},\\qquad
+       \\eta_{cert}\\,k\\,f_{rw}\\, G_c(t)\\, D_c & \\text{BEV, FCEV} \\end{cases},\\qquad
        TI_{v} = \\sum_{t=0}^{T_c-1}\\big(E_{prod}(t)-E_{ref,c}(t)\\big),\\qquad
        TI_{cell} = TI_v \\cdot N / 1000 $$
     ASCII: E_prod = tailpipe_gco2_km*factor/1000*vkt [kgCO2e/vehicle-yr] for ICE/HEV;
-           E_prod(t) = energy_wh_km/1000 * factor * G(t) * vkt for BEV (G in kgCO2e/kWh);
+           E_prod(t) = energy_wh_km/1000 * k * factor * G(t) * vkt for BEV and FCEV
+               (G in kgCO2e/kWh; k = 1 for a BEV, and for an FCEV the electricity an
+               electrolyser draws per unit of hydrogen energy delivered, from
+               vehicle_technology/method/hydrogen_supply.csv);
            TI_v = sum_{t=0}^{T-1} (E_prod(t) - E_ref(t)) [kgCO2e/vehicle];
            TI = TI_v*units/1000 [t]
     I_cert  certified tailpipe intensity (gCO2/km), eta_cert certified consumption (Wh/km),
@@ -49,8 +52,10 @@ from collections import defaultdict
 from model_io import (
     COHORTS_WITHHELD,
     DATA,
+    ENERGY_POWERTRAINS,
     OUT_DIR,
     REPO,
+    carrier_factor,
     certified,
     load_cohorts,
     load_params,
@@ -261,6 +266,7 @@ def main() -> None:
             continue
         vkt, life = float(p["vkt_km"]), int(p["lifetime_years"])
         cert = certified(c)
+        carrier = carrier_factor(powertrain)
         rw = factors[(c["test_cycle"], powertrain)]["factor"]
         for t in range(life):
             surviving[(market, c["company"], cohort_year)][cohort_year + t] += units
@@ -271,8 +277,8 @@ def main() -> None:
             e_prod0 = 0.0
             for t in range(life):
                 e_ref, grid = trajectory[t]
-                if powertrain == "BEV":
-                    e_prod = cert / 1000.0 * rw * grid * vkt
+                if powertrain in ENERGY_POWERTRAINS:
+                    e_prod = cert / 1000.0 * carrier * rw * grid * vkt
                 else:
                     e_prod = cert * rw / 1000.0 * vkt
                 if t == 0:
@@ -387,13 +393,17 @@ def tiers(
 
     Layer 1 is the worst of the destination's distance, fleet-intensity, grid and lifetime tiers
     and of the scenario's rate tier; Layer 2 is the worst of the certified-value tier (by test
-    cycle) and the powertrain-attribution tier (by rule). ``tier`` is the worst of both layers.
+    cycle, and never better than C for a fuel-cell vehicle whose fuel pathway is assumed) and the
+    powertrain-attribution tier (by rule). ``tier`` is the worst of both layers.
     """
     rate = rate_tiers.get((country, scenario), "")
     layer1 = worst(
         p["vkt_tier"], p["fleet_intensity_tier"], p["grid_tier"], p["lifetime_tier"], rate
     )
-    tech = TECHNOLOGY_TIER.get(c["test_cycle"], "C")
+    # A fuel-cell vehicle's certified hydrogen consumption is as well measured as any label
+    # value, but the emissions behind that hydrogen are an assumed electrolytic pathway rather
+    # than a destination-observed supply intensity, so Layer 2 cannot be better than tier C.
+    tech = "C" if c["powertrain"] == "FCEV" else TECHNOLOGY_TIER.get(c["test_cycle"], "C")
     pt = powertrain_tier(c["powertrain_rule"])
     layer2 = worst(tech, pt)
     return {

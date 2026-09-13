@@ -24,7 +24,7 @@ formula and the anchor of the whole analysis (research process step 1–2).
 | model | text | — | commercial name as reported |
 | powertrain | text | — | ICE / HEV / PHEV / BEV / FCEV, or empty when the source does not state it (joined later from vehicle_technology) |
 | units | int | vehicles | sales or registrations |
-| basis | text | — | `registrations` (EEA), `retail_sales` (Kia IR), `brand_total_sales` (Hyundai IR US sheet and Kia America: brand total including fleet), `domestic_sales` (Hyundai IR Korea domestic), `plant_sales` (Hyundai IR: production-side by plant), `export_shipments` (Hyundai IR Korea export block: plant-side, destination not stated) — never mixed silently. Market-side bases form cohorts; plant-side bases are reconciliation only |
+| basis | text | — | `registrations` (EEA), `retail_sales` (Kia IR), `retail_sales_estimated` (the months a Kia IR node never received, grown from the observed months by the next year's own ratio), `brand_total_sales` (Hyundai IR US sheet and Kia America: brand total including fleet), `domestic_sales` (Hyundai IR Korea domestic), `plant_sales` (Hyundai IR: production-side by plant), `export_shipments` (Hyundai IR Korea export block: plant-side, destination not stated) — never mixed silently. Market-side bases form cohorts; plant-side bases are reconciliation only |
 | source_file | text | — | raw file the row came from |
 
 ## Raw files and sources
@@ -77,10 +77,26 @@ other three feed no extractor — into `raw/kia_<year>_retail_sales_by_model_mar
 Korean-language node (`language=ko`) carries byte-different but cell-identical copies.
 
 Each node is overwritten monthly, so the current year's workbook is the year to date and
-superseded editions are not retained. **Kia's 2024 node was last refreshed in October 2024
-and was never replaced with a December edition**, so the 2024 workbook covers January to
-October only; every row built from it carries that period and the partial-year coverage note.
-The 2025 workbook is a complete calendar year.
+superseded editions are not retained. **Kia's 2024 node was last refreshed in October 2024 and
+was never replaced with a December edition**, and all four of its 2024 workbooks stop at the same
+month, so the year is closed short at the source and no amount of waiting completes it.
+
+Rather than leave a two-month hole in a calendar-year cohort, the extractor completes it from
+Kia's own later data: each observed cell is grown by the ratio the same destination showed
+between January–October and the full year in the **2025** workbook's monthly sheets. The estimate
+is written as its own rows carrying `basis = retail_sales_estimated` and the period
+`2024-11..2024-12`, so it is visible in every downstream table, tiered C, and removable by anyone
+who would rather have the hole. It is 16.7 % of the 2024 units.
+
+Two checks on the method. Kia's 2025 whole-company ratio is **1.200**, which is a flat
+twelve-tenths to three decimals, and Korea's is 1.204 — the year-end months are not unusual.
+And the completed Korean total, 538,785, lands 0.3 % under the 540,205 Kia reports as its 2024
+Korean domestic sales. The per-destination ratios do differ (Canada 1.146, India 1.243), which is
+why the destination's own ratio is used rather than one number for the company.
+
+The 2026 workbook is a year still running, not a year abandoned: its missing months have not
+happened yet, so it is left as a year to date and never completed. A year is only completed when
+a later year's workbook sits beside it on disk, which is the evidence that it is closed.
 
 ## Processed files
 
@@ -89,7 +105,7 @@ All share the schema above; one file per raw source, written by the script named
 | processed file | script | rows | note |
 |---|---|---|---|
 | `sales_eea_eu27_2024.csv` | `script/auto/sales/extract_eea_registrations.py` | see script output | in-scope brands only: Hyundai 429,936 and Kia 414,677 registrations (Toyota 803,094 and Honda 40,270 are pinned but excluded); powertrain from EEA; `ICE_OTHER` → `ICE` |
-| `sales_kia_ir_2024.csv`, `sales_kia_ir_2025.csv`, `sales_kia_ir_2026.csv` | `script/auto/sales/extract_kia_ir.py` | 287, 314, 290 | one file per workbook: Jan–Oct 2024, the full year 2025, Jan–Jul 2026 year to date; markets are IR regions except KR/US/CA/MX/IN/CN; `origin` = plant block; zero cells dropped, and the one net-negative cell (2025 Rio, Asia Pacific, −4 — returns exceeding sales) dropped with it |
+| `sales_kia_ir_2024.csv`, `sales_kia_ir_2025.csv`, `sales_kia_ir_2026.csv` | `script/auto/sales/extract_kia_ir.py` | 566, 314, 290 | one file per workbook: 2024 as Jan–Oct observed plus Nov–Dec estimated (`retail_sales_estimated`, 279 of the 566 rows), the full year 2025, Jan–Jul 2026 year to date; markets are IR regions except KR/US/CA/MX/IN/CN; `origin` = plant block; zero cells dropped, and the one net-negative cell (2025 Rio, Asia Pacific, −4 — returns exceeding sales) dropped with it |
 | `sales_hyundai_plant_2025.csv` | `script/auto/sales/extract_hyundai_ir.py` | 113 | overseas plants only, 2025; destination known for Domestic (plant country) and Korea segments, `export` otherwise; plant-side, so it is the only source for India, Brazil, China, Türkiye, Vietnam, Indonesia and Singapore and is never a US cohort |
 | `sales_hyundai_us.csv` | `script/auto/sales/extract_hyundai_us_retail.py` | 41 | Hyundai IR "US Retail Sales by Model" 2024 and 2025: Hyundai and Genesis nameplates, imports and US-built together. The sheet is labelled retail but its 2024 total (911,805) equals HMA total sales incl. fleet (836,802) plus Genesis (75,003), hence `brand_total_sales`; Genesis rows carry `company = genesis` (out of scope in `companies.csv`); powertrain only where the nameplate states it, the rest split by `us_model_map.csv` rule `epa_share_my2024` |
 | `sales_kia_us.csv` | `script/auto/sales/extract_kia_america.py` | 23 | Kia America December exports, full-year 2024 and 2025 by model (`brand_total_sales`); K4 and Forte on one row as published; EV6 and EV9 BEV, the rest split downstream |
@@ -122,8 +138,8 @@ Scripts in `script/auto/sales/`. One script per raw source; each writes a CSV to
 
 - EU27 2024: complete for both exporters (EEA registrations by country, model, powertrain).
 - Korea: both exporters have a domestic cohort for 2024 and 2025 — Hyundai from its own
-  "Unit Sales by Model" Korea block, Kia from the Korea column of the retail workbook. Kia's
-  2024 covers January–October only, the period its workbook stops at.
+  "Unit Sales by Model" Korea block, Kia from the Korea column of the retail workbook, with
+  Kia's November and December 2024 estimated as above.
 - United States: the Kia IR workbook's U.S.A column gives Kia retail sales by model for
   January–July 2026 (a partial year, no powertrain split); for 2024 and 2025 the US cohort
   uses the Kia America release instead, and the IR column stands beside it in

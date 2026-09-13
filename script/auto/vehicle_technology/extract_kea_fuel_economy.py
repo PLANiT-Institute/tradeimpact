@@ -78,6 +78,11 @@ FUEL_WORDS = {"diesel": "디젤"}
 CONVERSION = "개조차"
 
 
+#: Energy content of one kilogramme of hydrogen, the basis the EPA label uses (1 kg = 1 gge).
+#: Kept identical to vehicle_technology/method/hydrogen_supply.csv so the Korean km/kg label and
+#: the EPA kWh/100 mi label land on one scale.
+H2_ENERGY_WH_PER_KG = 33700.0
+
 def powertrain(name: str, has_range: bool) -> str:
     """Powertrain from the trim string and the presence of an electric range."""
     u = name.upper()
@@ -137,7 +142,15 @@ def main() -> None:
         return factors[fuel_of(row["모델명"])] / row["fe"]
 
     df["tailpipe"] = df.apply(tailpipe, axis=1)
-    df["wh_km"] = df.apply(lambda r: 1000.0 / r["fe"] if r["powertrain"] == "BEV" else None, axis=1)
+    def energy(row: pd.Series) -> float | None:
+        """Wh/km at the vehicle: electricity for a BEV, hydrogen energy content for an FCEV."""
+        if row["powertrain"] == "BEV":
+            return 1000.0 / row["fe"]  # label km/kWh
+        if row["powertrain"] == "FCEV":
+            return H2_ENERGY_WH_PER_KG / row["fe"]  # label km/kg, on the EPA gge basis
+        return None
+
+    df["wh_km"] = df.apply(energy, axis=1)
     grp = df.groupby(["company", "segment", "model_en", "powertrain"], as_index=False).agg(
         tailpipe_gco2_km=("tailpipe", "mean"),
         energy_wh_km=("wh_km", "mean"),

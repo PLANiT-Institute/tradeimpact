@@ -50,7 +50,13 @@ EU27_MEMBERS = {
     "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE",
 }  # fmt: skip
 NAMED_GROUPS = {"US": "US", "IN": "IN"}
-MARKET_SIDE = {"registrations", "retail_sales", "brand_total_sales", "domestic_sales"}
+MARKET_SIDE = {
+    "registrations",
+    "retail_sales",
+    "retail_sales_estimated",
+    "brand_total_sales",
+    "domestic_sales",
+}
 PLANT_SIDE = {"plant_sales"}
 
 FIELDS = [

@@ -48,7 +48,7 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
-from model_io import LIGHT_DUTY, PASSENGER_CAR
+from model_io import ENERGY_POWERTRAINS, LIGHT_DUTY, PASSENGER_CAR
 
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
@@ -103,9 +103,12 @@ HEV = "HEV"
 #: Powertrains that carry no defensible product intensity anywhere yet (guideline A-06).
 WITHHELD_POWERTRAIN = {
     "PHEV": "no sourced utility factor: the sales data publish only combined values",
-    "FCEV": "no sourced hydrogen supply emissions intensity for the destination",
 }
 NO_CERTIFIED_EU27 = "the registration dataset reports no certified intensity for this cell"
+NO_CERTIFIED_EU27_FCEV = (
+    "the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no "
+    "hydrogen consumption, so there is no certified value to put a supply pathway behind"
+)
 NO_KR_LABEL = (
     "no row in sales/method/kr_labels.csv: the IR label is not resolved to a KEA model, so no "
     "certified intensity can be attached"
@@ -177,7 +180,8 @@ def coverage_note(basis: str, period: str) -> str:
     so a new sales file inherits the right caveat without a per-file branch.
 
     Args:
-        basis: `registrations`, `retail_sales`, `brand_total_sales` or `plant_sales`.
+        basis: `registrations`, `retail_sales`, `retail_sales_estimated`, `brand_total_sales`
+            or `plant_sales`.
         period: Months covered, e.g. `2026-01..2026-06`.
 
     Returns:
@@ -191,6 +195,12 @@ def coverage_note(basis: str, period: str) -> str:
         )
     if basis == "retail_sales":
         notes.append("retail sales as published by the exporter's investor-relations release")
+    if basis == "retail_sales_estimated":
+        notes.append(
+            "estimated months: the exporter's investor-relations node for this year stopped "
+            "before December and was never refreshed, so these units are the observed months "
+            "grown by the ratio the same destination showed in the next year's workbook"
+        )
     if basis == "domestic_sales":
         notes.append("Korea domestic sales as published in the exporter's IR release")
     if basis == "brand_total_sales":
@@ -270,11 +280,10 @@ def build_eu27(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[
         t = tech.get((s["company"], s["destination"], s["model"], s["powertrain"]))
         tailpipe = t["tailpipe_gco2_km"] if t else ""
         energy = t["energy_wh_km"] if t else ""
-        certified = energy if s["powertrain"] == "BEV" else tailpipe
+        certified = energy if s["powertrain"] in ENERGY_POWERTRAINS else tailpipe
         if t is None or not certified:
-            withheld.append(
-                {**identity, "units": units, "reason": NO_CERTIFIED_EU27, "coverage_note": note}
-            )
+            reason = NO_CERTIFIED_EU27_FCEV if s["powertrain"] == "FCEV" else NO_CERTIFIED_EU27
+            withheld.append({**identity, "units": units, "reason": reason, "coverage_note": note})
             continue
         cohorts.append(
             {
@@ -510,7 +519,9 @@ def us_cohort_row(
         return None
     cohort_year = int(s["cohort_year"])
     year, values = pick_model_year(by_year, cohort_year)
-    certified = values["energy_wh_km"] if powertrain == "BEV" else values["tailpipe_gco2_km"]
+    certified = (
+        values["energy_wh_km"] if powertrain in ENERGY_POWERTRAINS else values["tailpipe_gco2_km"]
+    )
     if certified is None:
         return None
     return {
@@ -590,7 +601,7 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
         t = tech.get((s["company"], segment, model, pt))
         if t is None:
             return None
-        certified = t["energy_wh_km"] if pt == "BEV" else t["tailpipe_gco2_km"]
+        certified = t["energy_wh_km"] if pt in ENERGY_POWERTRAINS else t["tailpipe_gco2_km"]
         if not certified:
             return None
         return {

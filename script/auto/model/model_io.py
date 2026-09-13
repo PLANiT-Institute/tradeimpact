@@ -15,6 +15,7 @@ from __future__ import annotations
 import csv
 from collections import defaultdict
 from collections.abc import Iterable
+from functools import lru_cache
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
@@ -210,9 +211,38 @@ def load_cohorts(variant: str | None = CENTRAL) -> list[dict[str, str]]:
     return rows if variant is None else [r for r in rows if r["variant"] == variant]
 
 
+#: Powertrains whose certified value is an energy consumption rather than a tailpipe intensity:
+#: electricity at the vehicle for a BEV, hydrogen energy content for an FCEV.
+ENERGY_POWERTRAINS = ("BEV", "FCEV")
+HYDROGEN_SUPPLY = DATA / "vehicle_technology" / "method" / "hydrogen_supply.csv"
+
+
+@lru_cache(maxsize=1)
+def hydrogen_electricity_ratio() -> float:
+    """Electricity drawn per unit of hydrogen energy delivered to a fuel-cell vehicle.
+
+    A fuel-cell vehicle's certified value is the energy content of the hydrogen it burns, so it
+    is not comparable with a battery vehicle's electricity until the supply chain is put back in.
+    The hydrogen is treated as electrolytic and made on the destination's own grid, which is the
+    rule the battery vehicles already carry: neither powertrain is assumed to run on clean
+    electricity the destination does not have.
+
+    Returns:
+        Wh of electricity per Wh of hydrogen energy, from method/hydrogen_supply.csv.
+    """
+    values = {r["parameter"]: float(r["value"]) for r in read_csv(HYDROGEN_SUPPLY)}
+    return values["electrolysis_wh_per_kg"] / values["h2_energy_wh_per_kg"]
+
+
+def carrier_factor(powertrain: str) -> float:
+    """Electricity per unit of certified energy: 1 for a BEV, the hydrogen chain for an FCEV."""
+    return hydrogen_electricity_ratio() if powertrain == "FCEV" else 1.0
+
+
 def certified(row: dict[str, str]) -> float:
-    """Certified product parameter of a cohort row: Wh/km for BEV, else gCO2/km."""
-    return float(row["energy_wh_km"] if row["powertrain"] == "BEV" else row["tailpipe_gco2_km"])
+    """Certified product parameter of a cohort row: Wh/km for BEV and FCEV, else gCO2/km."""
+    energy = row["powertrain"] in ENERGY_POWERTRAINS
+    return float(row["energy_wh_km"] if energy else row["tailpipe_gco2_km"])
 
 
 def write_csv(path: Path, fields: list[str], rows: list[dict[str, object]]) -> None:

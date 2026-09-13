@@ -49,7 +49,7 @@ powertrain (`source_id` `eea_co2_monitoring_2024`). Real-world correction factor
 |---|---|---|
 | `vehicle_technology_eea_2024.csv` | `script/auto/vehicle_technology/extract_eea_certified.py` | one row per company × destination × model × powertrain for the companies in scope (EU27 2024; WLTP); rows without a certified value are kept with an empty value and withheld downstream |
 | `epa_trends_powertrain_share_my2024.csv` | `script/auto/vehicle_technology/extract_epa_trends.py` | one row per make × nameplate × powertrain from the EPA Automotive Trends MY2024 carline file: certification production volume (deduplicated on CAFE manufacturer, division, carline code and model-type index), share within the nameplate, volume-weighted label combined MPG; nameplates mapped through `method/epa_carline_map.csv` to the labels the company sales releases use. Supplies the powertrain split the releases withhold (assumption A-US-PT in `output/method.md`); production volumes are never a cohort |
-| `vehicle_technology_kr_kea.csv` | `script/auto/vehicle_technology/extract_kea_fuel_economy.py` | one row per company × model × powertrain from the KEA label fuel-economy file (passenger-car rows, converter-built rows excluded): trim-mean tailpipe gCO2/km derived from label km/L with `method/fuel_carbon_factors.csv` (gasoline 2,348, diesel 2,689, LPG 1,511 gCO2/L), BEV Wh/km = 1000 / label km/kWh; Korean base names mapped to the IR labels by `method/kr_model_map.csv`; `test_cycle = KR_5CYCLE` (label values are 5-cycle corrected, real-world factor 1.0). PHEV and FCEV rows carry no value and are withheld downstream |
+| `vehicle_technology_kr_kea.csv` | `script/auto/vehicle_technology/extract_kea_fuel_economy.py` | one row per company × model × powertrain from the KEA label fuel-economy file (passenger-car rows, converter-built rows excluded): trim-mean tailpipe gCO2/km derived from label km/L with `method/fuel_carbon_factors.csv` (gasoline 2,348, diesel 2,689, LPG 1,511 gCO2/L), BEV Wh/km = 1000 / label km/kWh, FCEV Wh/km = 33,700 / label km/kg (the hydrogen's energy content, `method/hydrogen_supply.csv`); Korean base names mapped to the IR labels by `method/kr_model_map.csv`; `test_cycle = KR_5CYCLE` (label values are 5-cycle corrected, real-world factor 1.0). PHEV rows carry no value and are withheld downstream |
 | `vehicle_technology_us_epa.csv` | `script/auto/vehicle_technology/extract_epa_fueleconomy.py` | one row per company × model year (2024–2025) × EPA model name × powertrain for the companies in scope; EPA combined-cycle CO2 (g/mile → g/km) and electricity (kWh/100 mi → Wh/km), unweighted mean over trims with the trim count; `base_model` is the join key to model-level sales |
 
 ## Sources
@@ -94,3 +94,22 @@ km/kWh; battery-electric rows are identified by the charging-range column.
 The file is a live snapshot of trims on sale (no model year). Deriving CO2 from the 5-cycle label
 value gives the EPA-comparable figure, not the 2-cycle regulatory CO2 that Korean compliance
 documents show (roughly 20 % lower).
+
+## Hydrogen (`method/hydrogen_supply.csv`)
+
+A fuel-cell car emits nothing at the tailpipe, which would make it look costless against any
+benchmark. What it actually costs is the electricity behind its hydrogen, so it is assessed the
+way a battery car already is: on the destination's own grid, not on hydrogen the destination does
+not yet have.
+
+| parameter | value | what it is |
+|---|---|---|
+| `h2_energy_wh_per_kg` | 33,700 Wh/kg | the gasoline-gallon-equivalent basis of the EPA label, which the Korean km/kg label is converted onto so both markets sit on one scale |
+| `electrolysis_wh_per_kg` | 51,200 Wh/kg | IRENA (2020) *Green hydrogen cost reduction*, p.11: an alkaline electrolyser at nominal capacity is 65 % efficient, an LHV of 51.2 kWh/kgH₂ |
+
+The ratio of the two (1.52 Wh of electricity per Wh of hydrogen) multiplies the certified value
+before the grid intensity is applied, in `build_ti.py`. **Station compression to 700 bar, storage
+and delivery are not included**, so the electricity per kilometre is a floor and every fuel-cell
+figure understates its own emissions. Layer 2 is therefore never better than tier C for a
+fuel-cell cell, however well measured the label is. Green hydrogen is not assumed: a destination
+whose grid is clean gets a clean fuel-cell result without being given one it has not built.

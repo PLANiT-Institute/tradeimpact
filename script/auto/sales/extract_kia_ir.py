@@ -14,6 +14,14 @@ write ``K5``), so the map carries both spellings.
 A cell can be negative when returns in the period exceed sales of a model the market no longer
 takes; those cells are dropped rather than carried as volume, and the count is printed.
 
+Kia's 2024 node was never refreshed past October, so that workbook is ten months. The missing
+months are estimated rather than left as a hole: each cell is grown by the ratio the same
+destination showed between the same months and the full year in the next year's workbook — Kia's
+own monthly sheets, not an outside assumption. The estimate is written as separate rows carrying
+``basis = retail_sales_estimated`` and the months they stand for, so it is visible in every table
+and can be dropped by anyone who would rather have the hole. As a check on the method, the
+2025 whole-company factor is 1.200 against a flat twelve-tenths of 1.200, and Korea's is 1.204.
+
 Run from the repository root:  .venv/bin/python script/auto/sales/extract_kia_ir.py
 """
 
@@ -33,6 +41,7 @@ PROCESSED = DATASET / "processed"
 
 COMPANY = "kia"
 BASIS = "retail_sales"
+BASIS_ESTIMATED = "retail_sales_estimated"
 HEADER_ROW = 4
 FIRST_MARKET_COL = 7  # column H; column G is the derived "Total"
 TOTAL_COL = 6  # column G
@@ -90,6 +99,41 @@ def months_with_data(wb) -> list[int]:  # noqa: ANN001 - openpyxl workbook
     return found
 
 
+def completion_factors(reference: Path, observed_months: int) -> dict[str, float]:
+    """Per-destination ratio of a full year to its first ``observed_months``, from one workbook.
+
+    Args:
+        reference: A retail workbook that does cover twelve months.
+        observed_months: How many months the workbook being completed carries.
+
+    Returns:
+        {market label: full-year units / units of the first ``observed_months``}. A destination
+        the reference year records no volume for is absent, and the caller falls back.
+    """
+    wb = load_workbook(reference, data_only=True, read_only=True)
+    header = list(wb[TOTAL_SHEET].iter_rows(values_only=True))[HEADER_ROW - 1]
+    columns = {
+        col: clean(header[col]) for col in range(FIRST_MARKET_COL, len(header)) if header[col]
+    }
+    early: dict[int, float] = dict.fromkeys(columns, 0.0)
+    whole: dict[int, float] = dict.fromkeys(columns, 0.0)
+    for i, sheet in enumerate(wb.sheetnames[1:13], start=1):
+        for row in wb[sheet].iter_rows(values_only=True):
+            if row[BLOCK_COL] and clean(row[BLOCK_COL]).lower() == "total":
+                for col in columns:
+                    value = row[col] if isinstance(row[col], int | float) else 0.0
+                    whole[col] += value
+                    if i <= observed_months:
+                        early[col] += value
+                break
+    wb.close()
+    return {
+        columns[col]: whole[col] / early[col]
+        for col in columns
+        if early[col] > 0 and whole[col] > 0
+    }
+
+
 def extract(path: Path, markets: dict[str, tuple[str, str]], plants: dict[str, str]) -> Path:
     """Flatten one workbook's Total sheet to one row per model x market with units > 0.
 
@@ -126,6 +170,7 @@ def extract(path: Path, markets: dict[str, tuple[str, str]], plants: dict[str, s
         market_cols.append((col, code, level))
 
     out: list[dict[str, object]] = []
+    labels: list[str] = []  # the market label of out[i], for the completion step
     returns = 0
     pending: list[tuple[str, list[object]]] = []
     for row in rows[HEADER_ROW:]:
@@ -145,6 +190,7 @@ def extract(path: Path, markets: dict[str, tuple[str, str]], plants: dict[str, s
                     if int(units) < 0:
                         returns += 1
                         continue
+                    labels.append(clean(header[col]))
                     out.append(
                         {
                             "company": COMPANY,
@@ -167,7 +213,11 @@ def extract(path: Path, markets: dict[str, tuple[str, str]], plants: dict[str, s
     if pending:
         raise SystemExit(f"{len(pending)} model rows without a closing plant subtotal")
 
-    out.sort(key=lambda r: (str(r["origin"]), str(r["model"]), str(r["destination"])))
+    estimated = complete_the_year(path, out, labels, year, months)
+    out = out + estimated
+    out.sort(
+        key=lambda r: (str(r["basis"]), str(r["origin"]), str(r["model"]), str(r["destination"]))
+    )
     dest = PROCESSED / f"sales_kia_ir_{year}.csv"
     dest.parent.mkdir(parents=True, exist_ok=True)
     with dest.open("w", newline="") as f:
@@ -177,8 +227,58 @@ def extract(path: Path, markets: dict[str, tuple[str, str]], plants: dict[str, s
 
     total = sum(int(r["units"]) for r in out)
     tail = f", {returns} net-negative cell(s) dropped" if returns else ""
+    if estimated:
+        share = sum(int(r["units"]) for r in estimated) / total
+        tail += f"; {len(estimated)} estimated row(s), {share:.1%} of the units"
     print(f"{dest.relative_to(REPO)}: {len(out)} rows, {total:,} units, period {period}{tail}")
     return dest
+
+
+def complete_the_year(
+    path: Path,
+    observed: list[dict[str, object]],
+    labels: list[str],
+    year: int,
+    months: list[int],
+) -> list[dict[str, object]]:
+    """Rows standing for the months a truncated workbook never received.
+
+    Kia overwrites one node per year, so a year whose node stopped early is never completed at
+    the source. A year with no later workbook beside it is still running and is left alone.
+    Each observed cell is grown by the ratio the same destination showed between the same months
+    and the full year in the next year's workbook; where that year records no volume for the
+    destination, the whole-company ratio stands in.
+
+    Args:
+        path: The workbook being completed.
+        observed: The rows already extracted from it.
+        labels: The market label of each observed row, aligned with it.
+        year: The workbook's calendar year.
+        months: Month numbers the workbook carries.
+
+    Returns:
+        One row per observed cell with a non-zero estimate, carrying ``retail_sales_estimated``
+        and the months it stands for. Empty when the workbook is a full year.
+    """
+    if months == list(range(1, 13)):
+        return []
+    # A later year's workbook on disk is the evidence that this year is over and was abandoned
+    # short. Without one the year is simply still running, and its missing months have not
+    # happened yet: a year to date is completed by waiting, never by estimating.
+    reference = RAW_DIR / f"kia_{year + 1}_retail_sales_by_model_market.xlsx"
+    if not reference.exists():
+        print(f"  {path.name}: {len(months)} months, year still in progress; not completed")
+        return []
+    factors = completion_factors(reference, len(months))
+    default = 12.0 / len(months)
+    period = f"{year}-{months[-1] + 1:02d}..{year}-12"
+    estimated: list[dict[str, object]] = []
+    for row, label in zip(observed, labels, strict=True):
+        units = int(round(int(str(row["units"])) * (factors.get(label, default) - 1.0)))
+        if units <= 0:
+            continue
+        estimated.append({**row, "period": period, "units": units, "basis": BASIS_ESTIMATED})
+    return estimated
 
 
 def main() -> None:

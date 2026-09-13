@@ -32,7 +32,13 @@ RAW_FILES = DATA / "registry" / "raw_files.csv"
 CROSS_CHECK = DATA / "sales" / "raw" / "company_us_totals_cross_check.csv"
 OUT = DATA / "output" / "ti_source_reconciliation.csv"
 
-MARKET_SIDE = {"registrations", "retail_sales", "brand_total_sales", "domestic_sales"}
+MARKET_SIDE = {
+    "registrations",
+    "retail_sales",
+    "retail_sales_estimated",
+    "brand_total_sales",
+    "domestic_sales",
+}
 PLANT_SIDE = {"plant_sales", "export_shipments"}
 #: The processed file each market's cohort is built from (build_cohorts.py).
 COHORT_FILES = {

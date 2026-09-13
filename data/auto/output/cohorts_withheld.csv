@@ -1,7 +1,7 @@
 market,company,destination,segment,cohort_year,model,powertrain,units,reason,coverage_note
 EU27,hyundai,AT,passenger_car,2024,SANTA FE,PHEV,140,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,AT,passenger_car,2024,TUCSON IX35,PHEV,312,no sourced utility factor: the sales data publish only combined values,
-EU27,hyundai,BE,passenger_car,2024,NEXO,FCEV,2,no sourced hydrogen supply emissions intensity for the destination,
+EU27,hyundai,BE,passenger_car,2024,NEXO,FCEV,2,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,hyundai,BE,passenger_car,2024,SANTA FE,PHEV,44,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,BE,passenger_car,2024,TUCSON IX35,PHEV,1192,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,BG,passenger_car,2024,SANTA FE,PHEV,31,no sourced utility factor: the sales data publish only combined values,
@@ -25,8 +25,8 @@ EU27,hyundai,DE,passenger_car,2024,ME,BEV,4,the registration dataset reports no 
 EU27,hyundai,DE,passenger_car,2024,MX-5,PHEV,2,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,DE,passenger_car,2024,NE PE,BEV,5,the registration dataset reports no certified intensity for this cell,
 EU27,hyundai,DE,passenger_car,2024,NE-N,BEV,2,the registration dataset reports no certified intensity for this cell,
-EU27,hyundai,DE,passenger_car,2024,NEXO,FCEV,8,no sourced hydrogen supply emissions intensity for the destination,
-EU27,hyundai,DE,passenger_car,2024,NH2,FCEV,2,no sourced hydrogen supply emissions intensity for the destination,
+EU27,hyundai,DE,passenger_car,2024,NEXO,FCEV,8,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
+EU27,hyundai,DE,passenger_car,2024,NH2,FCEV,2,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,hyundai,DE,passenger_car,2024,PALISADE,HEV,2,the registration dataset reports no certified intensity for this cell,
 EU27,hyundai,DE,passenger_car,2024,PALISADE,ICE,1,the registration dataset reports no certified intensity for this cell,
 EU27,hyundai,DE,passenger_car,2024,SANTA FE,PHEV,845,no sourced utility factor: the sales data publish only combined values,
@@ -37,12 +37,12 @@ EU27,hyundai,DK,passenger_car,2024,SANTA FE,PHEV,47,no sourced utility factor: t
 EU27,hyundai,DK,passenger_car,2024,TUCSON IX35,PHEV,205,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,EE,passenger_car,2024,SANTA FE,PHEV,7,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,EE,passenger_car,2024,TUCSON IX35,PHEV,19,no sourced utility factor: the sales data publish only combined values,
-EU27,hyundai,ES,passenger_car,2024,NEXO,FCEV,7,no sourced hydrogen supply emissions intensity for the destination,
+EU27,hyundai,ES,passenger_car,2024,NEXO,FCEV,7,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,hyundai,ES,passenger_car,2024,SANTA FE,PHEV,363,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,ES,passenger_car,2024,TUCSON IX35,PHEV,2249,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,FI,passenger_car,2024,SANTA FE,PHEV,29,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,FI,passenger_car,2024,TUCSON IX35,PHEV,337,no sourced utility factor: the sales data publish only combined values,
-EU27,hyundai,FR,passenger_car,2024,NEXO,FCEV,1,no sourced hydrogen supply emissions intensity for the destination,
+EU27,hyundai,FR,passenger_car,2024,NEXO,FCEV,1,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,hyundai,FR,passenger_car,2024,SANTA FE,PHEV,814,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,FR,passenger_car,2024,TUCSON IX35,PHEV,1642,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,GR,passenger_car,2024,SANTA FE,PHEV,8,no sourced utility factor: the sales data publish only combined values,
@@ -71,7 +71,7 @@ EU27,hyundai,PT,passenger_car,2024,TUCSON IX35,PHEV,213,no sourced utility facto
 EU27,hyundai,RO,passenger_car,2024,SANTA FE,PHEV,85,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,RO,passenger_car,2024,TUCSON IX35,PHEV,490,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,RO,passenger_car,2024,TUCSON IX35 LM,ICE,1,the registration dataset reports no certified intensity for this cell,
-EU27,hyundai,SE,passenger_car,2024,NEXO,FCEV,2,no sourced hydrogen supply emissions intensity for the destination,
+EU27,hyundai,SE,passenger_car,2024,NEXO,FCEV,2,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,hyundai,SE,passenger_car,2024,SANTA FE,PHEV,149,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,SE,passenger_car,2024,TUCSON IX35,PHEV,334,no sourced utility factor: the sales data publish only combined values,
 EU27,hyundai,SI,passenger_car,2024,SANTA FE,PHEV,19,no sourced utility factor: the sales data publish only combined values,
@@ -215,12 +215,12 @@ EU27,nissan,DE,passenger_car,2024,Z,ICE,3,the registration dataset reports no ce
 EU27,nissan,RO,passenger_car,2024,QASHQAI,ICE,2,the registration dataset reports no certified intensity for this cell,
 EU27,nissan,RO,passenger_car,2024,X-TRAIL,ICE,1,the registration dataset reports no certified intensity for this cell,
 EU27,toyota,AT,passenger_car,2024,TOYOTA C-HR,PHEV,96,no sourced utility factor: the sales data publish only combined values,
-EU27,toyota,AT,passenger_car,2024,TOYOTA MIRAI,FCEV,1,no sourced hydrogen supply emissions intensity for the destination,
+EU27,toyota,AT,passenger_car,2024,TOYOTA MIRAI,FCEV,1,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,toyota,AT,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,59,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,AT,passenger_car,2024,TOYOTA RAV4,PHEV,196,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,BE,passenger_car,2024,BZ4X,BEV,1,the registration dataset reports no certified intensity for this cell,
 EU27,toyota,BE,passenger_car,2024,TOYOTA C-HR,PHEV,158,no sourced utility factor: the sales data publish only combined values,
-EU27,toyota,BE,passenger_car,2024,TOYOTA MIRAI,FCEV,4,no sourced hydrogen supply emissions intensity for the destination,
+EU27,toyota,BE,passenger_car,2024,TOYOTA MIRAI,FCEV,4,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,toyota,BE,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,74,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,BE,passenger_car,2024,TOYOTA RAV4,PHEV,691,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,BG,passenger_car,2024,TOYOTA C-HR,PHEV,66,no sourced utility factor: the sales data publish only combined values,
@@ -242,7 +242,7 @@ EU27,toyota,DE,passenger_car,2024,SEQUOIA TRD PRO HYBRID,HEV,1,the registration 
 EU27,toyota,DE,passenger_car,2024,TOYOTA 4-RUNNER,ICE,1,the registration dataset reports no certified intensity for this cell,
 EU27,toyota,DE,passenger_car,2024,TOYOTA C-HR,PHEV,946,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,DE,passenger_car,2024,TOYOTA COROLLA GR,ICE,1,the registration dataset reports no certified intensity for this cell,
-EU27,toyota,DE,passenger_car,2024,TOYOTA MIRAI,FCEV,148,no sourced hydrogen supply emissions intensity for the destination,
+EU27,toyota,DE,passenger_car,2024,TOYOTA MIRAI,FCEV,148,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,toyota,DE,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,198,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,DE,passenger_car,2024,TOYOTA RAV4,PHEV,702,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,DE,passenger_car,2024,TOYOTA SEQUOIA,HEV,1,the registration dataset reports no certified intensity for this cell,
@@ -251,7 +251,7 @@ EU27,toyota,DK,passenger_car,2024,TOYOTA C-HR,PHEV,171,no sourced utility factor
 EU27,toyota,DK,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,55,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,DK,passenger_car,2024,TOYOTA RAV4,PHEV,268,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,EE,passenger_car,2024,TOYOTA C-HR,PHEV,32,no sourced utility factor: the sales data publish only combined values,
-EU27,toyota,EE,passenger_car,2024,TOYOTA MIRAI,FCEV,5,no sourced hydrogen supply emissions intensity for the destination,
+EU27,toyota,EE,passenger_car,2024,TOYOTA MIRAI,FCEV,5,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,toyota,EE,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,17,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,EE,passenger_car,2024,TOYOTA RAV4,PHEV,119,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,ES,passenger_car,2024,TOYOTA C-HR,PHEV,2154,no sourced utility factor: the sales data publish only combined values,
@@ -260,7 +260,7 @@ EU27,toyota,FI,passenger_car,2024,TOYOTA C-HR,PHEV,252,no sourced utility factor
 EU27,toyota,FI,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,131,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,FI,passenger_car,2024,TOYOTA RAV4,PHEV,738,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,FR,passenger_car,2024,TOYOTA C-HR,PHEV,1383,no sourced utility factor: the sales data publish only combined values,
-EU27,toyota,FR,passenger_car,2024,TOYOTA MIRAI,FCEV,530,no sourced hydrogen supply emissions intensity for the destination,
+EU27,toyota,FR,passenger_car,2024,TOYOTA MIRAI,FCEV,530,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,toyota,FR,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,639,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,FR,passenger_car,2024,TOYOTA RAV4,PHEV,1886,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,GR,passenger_car,2024,TOYOTA C-HR,PHEV,226,no sourced utility factor: the sales data publish only combined values,
@@ -271,7 +271,7 @@ EU27,toyota,HR,passenger_car,2024,TOYOTA C-HR,PHEV,32,no sourced utility factor:
 EU27,toyota,HR,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,16,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,HR,passenger_car,2024,TOYOTA RAV4,PHEV,48,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,HU,passenger_car,2024,TOYOTA C-HR,PHEV,105,no sourced utility factor: the sales data publish only combined values,
-EU27,toyota,HU,passenger_car,2024,TOYOTA MIRAI,FCEV,1,no sourced hydrogen supply emissions intensity for the destination,
+EU27,toyota,HU,passenger_car,2024,TOYOTA MIRAI,FCEV,1,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,toyota,HU,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,41,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,HU,passenger_car,2024,TOYOTA PRIUS PHV,PHEV,1,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,HU,passenger_car,2024,TOYOTA RAV4,PHEV,73,no sourced utility factor: the sales data publish only combined values,
@@ -279,7 +279,7 @@ EU27,toyota,IE,passenger_car,2024,TOYOTA C-HR,PHEV,236,no sourced utility factor
 EU27,toyota,IE,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,151,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,IE,passenger_car,2024,TOYOTA RAV4,PHEV,542,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,IT,passenger_car,2024,TOYOTA C-HR,PHEV,1805,no sourced utility factor: the sales data publish only combined values,
-EU27,toyota,IT,passenger_car,2024,TOYOTA MIRAI,FCEV,1,no sourced hydrogen supply emissions intensity for the destination,
+EU27,toyota,IT,passenger_car,2024,TOYOTA MIRAI,FCEV,1,"the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no hydrogen consumption, so there is no certified value to put a supply pathway behind",
 EU27,toyota,IT,passenger_car,2024,TOYOTA PRIUS PHEV,PHEV,226,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,IT,passenger_car,2024,TOYOTA RAV4,PHEV,660,no sourced utility factor: the sales data publish only combined values,
 EU27,toyota,LT,passenger_car,2024,TOYOTA C-HR,PHEV,29,no sourced utility factor: the sales data publish only combined values,
@@ -318,22 +318,20 @@ JP,nissan,JP,passenger_car,2025,Kicks,,9595,"no certified row in either fuel-eco
 JP,toyota,JP,passenger_car,2024,JPN Taxi,,8103,"no certified row in either fuel-economy-list edition on hand for this nameplate, so the units are counted and left unassessed (out of scope of the technology tables read: an LPG hybrid, certified in the LPG passenger-car workbook, which this build does not read)",
 KR,hyundai,KR,freight,2024,HCV,,26864,"out_of_scope: heavy trucks and coaches above 3.5 t: Korea's fuel-economy labelling scheme does not certify them, so no product intensity exists; counted and withheld",Korea domestic sales as published in the exporter's IR release
 KR,hyundai,KR,freight,2025,HCV,,26799,"out_of_scope: heavy trucks and coaches above 3.5 t: Korea's fuel-economy labelling scheme does not certify them, so no product intensity exists; counted and withheld",Korea domestic sales as published in the exporter's IR release
-KR,hyundai,KR,passenger_car,2025,NEXO  (NH2),FCEV,5003,no sourced hydrogen supply emissions intensity for the destination,Korea domestic sales as published in the exporter's IR release
-KR,hyundai,KR,passenger_car,2024,NEXO (FE),FCEV,2751,no sourced hydrogen supply emissions intensity for the destination,Korea domestic sales as published in the exporter's IR release
-KR,hyundai,KR,passenger_car,2025,NEXO (FE),FCEV,675,no sourced hydrogen supply emissions intensity for the destination,Korea domestic sales as published in the exporter's IR release
 KR,kia,KR,bus,2024,Bus,ICE,1152,no KEA label row for Bus ICE in vehicle_technology_kr_kea.csv,"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2024-01..2024-10 only, not the full cohort year"
+KR,kia,KR,bus,2024,Bus,ICE,235,no KEA label row for Bus ICE in vehicle_technology_kr_kea.csv,"estimated months: the exporter's investor-relations node for this year stopped before December and was never refreshed, so these units are the observed months grown by the ratio the same destination showed in the next year's workbook; partial year: the source covers 2024-11..2024-12 only, not the full cohort year"
 KR,kia,KR,bus,2025,Bus,ICE,1411,no KEA label row for Bus ICE in vehicle_technology_kr_kea.csv,retail sales as published by the exporter's investor-relations release
 KR,kia,KR,bus,2026,Bus,ICE,832,no KEA label row for Bus ICE in vehicle_technology_kr_kea.csv,"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2026-01..2026-07 only, not the full cohort year"
 KR,kia,KR,passenger_car,2024,Millitary,,1697,out_of_scope: military vehicles as labelled in the IR file,"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2024-01..2024-10 only, not the full cohort year"
+KR,kia,KR,passenger_car,2024,Millitary,,346,out_of_scope: military vehicles as labelled in the IR file,"estimated months: the exporter's investor-relations node for this year stopped before December and was never refreshed, so these units are the observed months grown by the ratio the same destination showed in the next year's workbook; partial year: the source covers 2024-11..2024-12 only, not the full cohort year"
 KR,kia,KR,passenger_car,2025,Millitary,,2429,out_of_scope: military vehicles as labelled in the IR file,retail sales as published by the exporter's investor-relations release
 KR,kia,KR,passenger_car,2026,Millitary,,781,out_of_scope: military vehicles as labelled in the IR file,"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2026-01..2026-07 only, not the full cohort year"
 KR,kia,KR,passenger_car,2024,Niro Plus EV,,406,unallocated: the raised-roof taxi derivative of the previous-generation Niro EV; the KEA label list carries no Niro Plus row so no certified intensity is on hand,"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2024-01..2024-10 only, not the full cohort year"
+KR,kia,KR,passenger_car,2024,Niro Plus EV,,83,unallocated: the raised-roof taxi derivative of the previous-generation Niro EV; the KEA label list carries no Niro Plus row so no certified intensity is on hand,"estimated months: the exporter's investor-relations node for this year stopped before December and was never refreshed, so these units are the observed months grown by the ratio the same destination showed in the next year's workbook; partial year: the source covers 2024-11..2024-12 only, not the full cohort year"
 KR,kia,KR,passenger_car,2025,Niro Plus EV,,1,unallocated: the raised-roof taxi derivative of the previous-generation Niro EV; the KEA label list carries no Niro Plus row so no certified intensity is on hand,retail sales as published by the exporter's investor-relations release
 US,hyundai,US,light_duty,2024,IONIQ 5 Robo Taxi,,49,out_of_scope: fleet robotaxi vehicles (16 and 49 units); not a retail passenger-car cohort,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
 US,hyundai,US,light_duty,2025,IONIQ 5 Robo Taxi,,16,out_of_scope: fleet robotaxi vehicles (16 and 49 units); not a retail passenger-car cohort,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
 US,hyundai,US,light_duty,2025,IONIQ 9,BEV,5189,no EPA technology row for Ioniq 9 BEV at or before model year 2025 in vehicle_technology_us_epa.csv,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
-US,hyundai,US,light_duty,2024,Nexo,FCEV,94,no sourced hydrogen supply emissions intensity for the destination,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
-US,hyundai,US,light_duty,2025,Nexo,FCEV,5,no sourced hydrogen supply emissions intensity for the destination,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
 US,hyundai,US,light_duty,2024,Tucson,PHEV,8433,no sourced utility factor: the sales data publish only combined values,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total); powertrain split with EPA Automotive Trends MY2024 production shares (A-US-PT)
 US,hyundai,US,light_duty,2025,Tucson,PHEV,9582,no sourced utility factor: the sales data publish only combined values,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total); powertrain split with EPA Automotive Trends MY2024 production shares (A-US-PT)
 US,kia,US,light_duty,2024,Niro,PHEV,3186,no sourced utility factor: the sales data publish only combined values,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total); powertrain split with EPA Automotive Trends MY2024 production shares (A-US-PT)
@@ -350,8 +348,6 @@ US,kia,US,light_duty,2026,Sportage,PHEV,3046,no sourced utility factor: the sale
 US,kia,US,light_duty,2026,Sportage,PHEV,3392,no sourced utility factor: the sales data publish only combined values,"retail sales as published by the exporter's investor-relations release; partial year: the source covers 2026-01..2026-07 only, not the full cohort year; powertrain split with EPA Automotive Trends MY2024 production shares (A-US-PT)"
 US,nissan,US,light_duty,2025,Maxima,ICE,14,no EPA technology row for Maxima ICE at or before model year 2025 in vehicle_technology_us_epa.csv,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
 US,nissan,US,light_duty,2024,Maxima,ICE,942,no EPA technology row for Maxima ICE at or before model year 2024 in vehicle_technology_us_epa.csv,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
-US,toyota,US,light_duty,2025,MIRAI,FCEV,210,no sourced hydrogen supply emissions intensity for the destination,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
-US,toyota,US,light_duty,2024,MIRAI,FCEV,499,no sourced hydrogen supply emissions intensity for the destination,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
 US,toyota,US,light_duty,2025,OTHER (NOT PRINTED AS A MODEL ROW),,6,unallocated: the release's division total exceeds the model rows it prints; the difference is kept and withheld,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
 US,toyota,US,light_duty,2024,OTHER (NOT PRINTED AS A MODEL ROW),,15,unallocated: the release's division total exceeds the model rows it prints; the difference is kept and withheld,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)
 US,toyota,US,light_duty,2025,PRIUS,PHEV,15503,no sourced utility factor: the sales data publish only combined values,brand total sales including fleet as published by the company's US release (the Hyundai IR sheet is labelled retail but equals the brand total)

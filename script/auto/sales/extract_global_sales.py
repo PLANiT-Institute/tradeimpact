@@ -182,7 +182,10 @@ def kia_rows() -> list[dict[str, object]]:
         rows = read_csv(path)
         for year in sorted({int(r["cohort_year"]) for r in rows}):
             mine = [r for r in rows if int(r["cohort_year"]) == year]
-            period = mine[0]["period"]
+            # One file can carry two periods (observed months and the estimated remainder), so
+            # the workbook's period is their span, not whichever row happens to come first.
+            bounds = sorted(m for r in mine for m in r["period"].split(".."))
+            period = f"{bounds[0]}..{bounds[-1]}"
             out.append(
                 {
                     "company": "kia",

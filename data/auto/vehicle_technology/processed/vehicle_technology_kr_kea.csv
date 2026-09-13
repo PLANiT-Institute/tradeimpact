@@ -27,7 +27,7 @@ hyundai,passenger_car,Kona,HEV,125.83,,5,KR_5CYCLE,kea_fuel_economy_labels,kea_v
 hyundai,passenger_car,Kona,ICE,187.87,,29,KR_5CYCLE,kea_fuel_economy_labels,kea_vehicle_fuel_economy_labels.csv
 hyundai,freight,Korean Commercial 0.9t EV,BEV,,476.19,1,KR_5CYCLE,kea_fuel_economy_labels,kea_vehicle_fuel_economy_labels.csv
 hyundai,freight,Korean Commercial 1t EV,BEV,,370.37,1,KR_5CYCLE,kea_fuel_economy_labels,kea_vehicle_fuel_economy_labels.csv
-hyundai,passenger_car,NEXO,FCEV,,,7,KR_5CYCLE,kea_fuel_economy_labels,kea_vehicle_fuel_economy_labels.csv
+hyundai,passenger_car,NEXO,FCEV,,344.2,7,KR_5CYCLE,kea_fuel_economy_labels,kea_vehicle_fuel_economy_labels.csv
 hyundai,passenger_car,Palisade,HEV,186.91,,15,KR_5CYCLE,kea_fuel_economy_labels,kea_vehicle_fuel_economy_labels.csv
 hyundai,passenger_car,Palisade,ICE,249.34,,71,KR_5CYCLE,kea_fuel_economy_labels,kea_vehicle_fuel_economy_labels.csv
 hyundai,freight,Porter,BEV,,322.58,4,KR_5CYCLE,kea_fuel_economy_labels,kea_vehicle_fuel_economy_labels.csv

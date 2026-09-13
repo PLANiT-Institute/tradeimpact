@@ -102,9 +102,9 @@ previously published EU27 result exactly when fed the archived inputs (see
 | Japan, 2024 registrations | Nissan | 93.7 % | −0.35 | **+0.47** |
 | Japan, 2025 registrations | Toyota | 100.0 % | −1.13 | **+3.53** |
 | Japan, 2025 registrations | Nissan | 94.6 % | −0.24 | **+0.41** |
-| Korea, 2024 domestic sales | Hyundai | 94.7 % | −5.02 | **+4.24** |
-| Korea, 2025 domestic sales | Hyundai | 94.4 % | −4.84 | **+4.06** |
-| Korea, Jan–Oct 2024 retail | Kia | 99.3 % | −2.00 | **+3.81** |
+| Korea, 2024 domestic sales | Hyundai | 95.2 % | −5.02 | **+4.25** |
+| Korea, 2025 domestic sales | Hyundai | 95.4 % | −4.84 | **+4.08** |
+| Korea, 2024 retail | Kia | 99.3 % | −2.41 | **+4.59** |
 | Korea, 2025 retail | Kia | 99.3 % | −2.79 | **+4.36** |
 | Korea, Jan–Jul 2026 retail | Kia | 99.5 % | −2.40 | **+1.85** |
 
@@ -115,7 +115,7 @@ previously published EU27 result exactly when fed the archived inputs (see
 | Toyota | 2024 | 10.16 M | 38.5 % | 42.6 % | 28 |
 | Hyundai | 2024 | 4.17 M | 42.4 % | 48.7 % | 28 |
 | Nissan | 2024 | 3.35 M | 38.1 % | 40.3 % | 28 |
-| Kia | 2025 | 3.10 M | 44.6 % | 100.0 % | 2 |
+| Kia | 2024 | 3.01 M | 56.3 % | 100.0 % | 28 |
 
 `Assessed` is units carrying a result over the company's own worldwide figure; `Held` is every
 unit the project holds for those brands, assessed or not, so the gap between the two is sales we
@@ -125,9 +125,8 @@ in `brands_out_of_scope`. Toyota's and Nissan's worldwide figures are their own 
 totals; Hyundai's is derived from its three workbooks because it publishes no single total, and
 Kia's is the sum of every destination in its retail release — which is also why Kia's held share
 is 100 %: that release is both the denominator and the file, so a car is never counted twice.
-A share only counts when both sides cover the same months, which `share_comparable` records:
-Kia's 2024 row is marked `no`, its IR node having stopped in October. Full detail, including the
-2025 and 2026 cohorts, is in `ti_global_coverage.csv`.
+A share only counts when both sides cover the same months, which `share_comparable` records on
+every row. Full detail, including the 2025 and 2026 cohorts, is in `ti_global_coverage.csv`.
 
 The `Covered` column in the tables above is the sales coverage within a market: units carrying a
 result over units in the source.
