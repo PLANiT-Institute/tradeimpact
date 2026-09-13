@@ -128,7 +128,7 @@ E_target,transport,c = E_total,target,c × transport_share,c
 I_fleet,seg,c(t) = I_fleet,seg,c(0) × (1 − r_fleet,c)^t
 ```
 
-Three-scenario rates: S1 from IEA STEPS transport; S2 from UNFCCC NDC unconditional target; S3 from IEA NZE transport.
+Two-scenario rates: S1 from the country's own observed series; S2 from the furthest target its government has committed to; see §2.3 for the S3 retirement.
 
 > **⚠ Caveat — Pro-rata bias:** Where no transport sub-target exists, pro-rata allocation assumes all sectors decarbonise at equal rates. Transport typically decarbonises more slowly than electricity. Pro-rata overstates r_fleet,c, understating lock-in liability for ICE vehicles in affected markets. Disclose in the data quality declaration; use S1 as conservative cross-check.
 
@@ -249,15 +249,21 @@ This is the firm's total annual climate impact from all vehicles currently in op
 
 ### 4.7 Three-scenario architecture
 <a id="rule-g4.7-three-scenarios"></a>
-All results reported under three scenarios. Each scenario specifies r_fleet,c and r_power,c independently:
+All results reported under two scenarios, both from what the operating country itself publishes.
+Each scenario specifies r_fleet,c and r_power,c independently:
 
 | Scenario | Label | r_fleet,c source | r_power,c source |
 |---|---|---|---|
-| S1 | Low — current policies | IEA WEO STEPS transport | IEA WEO STEPS electricity |
-| S2 | Central — NDC | UNFCCC NDC unconditional transport | UNFCCC NDC power sector |
-| S3 | High — 1.5°C | IEA NZE transport | IEA NZE electricity |
+| S1 | Observed trend | log-linear fit to the country's own road or car CO₂ series | log-linear fit to observed grid intensity |
+| S2 | Committed path | the furthest target the government has committed to, pro rata to the sector where no sector sub-target exists | the same target applied to the power sector |
 
-Never report S2 alone. Always report S1, S2, S3.
+Never report one alone: the sign of TI can change between them, and that is the finding.
+
+**S3 retired, 2026-09-04.** The earlier third scenario was 1.5 °C-aligned on the IEA NZE
+trajectory — a modelled construction no government published. The claim this framework makes is a
+comparison against what a state has itself committed to, so a benchmark nobody is accountable for
+cannot carry it. The IEA WEO world anchors were the only input it needed and were retired with
+it.
 
 ---
 
@@ -265,9 +271,9 @@ Never report S2 alone. Always report S1, S2, S3.
 
 ### 5.1 Required outputs
 
-1. **TI_cohort,F,Y₀,S** — single-cohort total lifetime TI [tCO₂e], S1/S2/S3
-2. **TI_annual time-series** — annual TI for the cohort, t = 0 to T−1 [tCO₂e/yr], S1/S2/S3
-3. **TI_portfolio,F,τ,S** — rolling portfolio annual TI [tCO₂e/yr], S1/S2/S3
+1. **TI_cohort,F,Y₀,S** — single-cohort total lifetime TI [tCO₂e], S1/S2
+2. **TI_annual time-series** — annual TI for the cohort, t = 0 to T−1 [tCO₂e/yr], S1/S2
+3. **TI_portfolio,F,τ,S** — rolling portfolio annual TI [tCO₂e/yr], S1/S2
 4. **Decomposition by operating country and powertrain** — mandatory alongside all headline numbers
 
 ### 5.2 Mandatory sensitivity parameters
@@ -277,7 +283,7 @@ Never report S2 alone. Always report S1, S2, S3.
 | Vehicle lifetime T | T ± 3 years minimum |
 | Utility Factor UF (PHEV) | UF ± 0.15 |
 | Real-world correction factor | Range per Appendix C |
-| NDC scenario | S1, S2, S3 all reported |
+| Scenario | S1 and S2 both reported |
 | Segment intensity ratio | Range per Appendix A |
 
 ### 5.3 Data quality declaration template
@@ -287,10 +293,10 @@ Firm: [F] | Cohort year: [Y₀] | Analysis level: [Level 1 / Level 2]
 
 Layer 1 — fleet benchmark:
   Method: [A/B/C] | I_fleet,seg,c(0): [value] kgCO₂e/km | Segment ratio: [value, source]
-  r_fleet,c: S1=[v1] | S2=[v2] | S3=[v3] %/yr | Source: [NDC document, date]
+  r_fleet,c: S1=[v1] | S2=[v2] %/yr | Source: [target document, date]
 
 Layer 2:
-  BEV: η_EV [value] kWh/km | G_c(0) [value] kgCO₂e/kWh | r_power [S1/S2/S3]
+  BEV: η_EV [value] kWh/km | G_c(0) [value] kgCO₂e/kWh | r_power [S1/S2]
   ICE: I_export,ICE [value] kgCO₂e/km | Correction applied: [standard, factor]
   PHEV: UF [value] | η_elec [value] kWh/km | I_ICE_mode [value] kgCO₂e/km
 
@@ -298,7 +304,7 @@ Volume: V_c,BEV [value] | V_c,PHEV [value] | V_c,ICE [value]
   Source: [registration database, year] | Tier: [A/B]
 
 Results:
-  TI_cohort (S1/S2/S3): [v1] / [v2] / [v3] tCO₂e
+  TI_cohort (S1/S2): [v1] / [v2] tCO₂e
   TI_annual t=0 (S2): [value] tCO₂e/yr
   TI_annual t=T (S2): [value] tCO₂e/yr — trend: [narrowing / widening / stable]
 ```
@@ -330,7 +336,7 @@ TI must never net out or reduce the firm's Scope 3 Category 11 absolute emission
 Before applying Method B:
 1. Confirm this is the most recent NDC submission (UNFCCC NDC Registry)
 2. Does an explicit transport sub-target exist, or is pro-rata allocation required?
-3. Is the stated target unconditional or conditional? Use unconditional for S2; conditional for S3.
+3. Is the stated target unconditional or conditional? Use the unconditional target for S2; record the conditional one without using it.
 4. What is the base year and base-year emission level?
 5. What is the target year? Apply the same derived annual rate for years beyond the target year — document this extrapolation.
 
@@ -389,8 +395,8 @@ Output: V_p,c,v — vehicles produced in country p of type v operating in countr
 **Step 4:** Collect national road transport CO₂ (IEA), total in-use fleet size (OICA), and annual VKT from national transport statistics. Compute I_all_vehicles,c(0). Apply segment ratio from Appendix A.
 Output: I_fleet,seg,c(0) per operating country.
 
-**Step 5:** Download NDC for each operating country from UNFCCC NDC Registry. Extract transport sector target or apply pro-rata per Section 6.2. Derive r_fleet,c for S1, S2, S3.
-Output: r_fleet,c [S1, S2, S3] per operating country.
+**Step 5:** Download NDC for each operating country from UNFCCC NDC Registry. Extract transport sector target or apply pro-rata per Section 6.2. Derive r_fleet,c for S1 and S2.
+Output: r_fleet,c [S1, S2] per operating country.
 
 ### Phase 3 — Layer 2 parameters
 
@@ -400,7 +406,7 @@ Output: r_fleet,c [S1, S2, S3] per operating country.
 
 **Step 8:** PHEV parameters — I_ICE_mode from charge-sustaining certified CO₂ with correction; η_elec from charge-depleting energy with correction; UF from Appendix C.
 
-**Step 9:** G_c(0) from Ember Global Electricity Review. r_power,c from NDC power sector target — derived independently from r_fleet,c. Three scenarios [S1/S2/S3].
+**Step 9:** G_c(0) from Ember Global Electricity Review. r_power,c from NDC power sector target — derived independently from r_fleet,c. Two scenarios [S1/S2].
 
 ### Phase 4 — Calculation
 
@@ -463,7 +469,6 @@ Source: National transport statistics or IEA regional defaults. Document source 
 |---|---|---|---|
 | UN Comtrade HS 8703 | Level 2 production flows; fallback V_c,v | comtrade.un.org | Free |
 | IEA CO₂ from Fuel Combustion | National transport CO₂ — Layer 1 base | iea.org | Partial free |
-| IEA World Energy Outlook | STEPS and NZE trajectories (S1, S3) | iea.org | Free summary |
 | IEA Global EV Data Explorer | EV share by country | iea.org | Free |
 | Ember Global Electricity Review | G_c(0) country grid carbon intensity | ember-climate.org | Free |
 | UNFCCC NDC Registry | r_fleet,c and r_power,c source | unfccc.int/NDCREG | Free |
@@ -537,7 +542,7 @@ Source: national VKT statistics (FHWA — USA; BITRE — Australia; EEA Transpor
 | τ | Calendar year | year |
 | UF | PHEV Utility Factor | 0–1 |
 | Y₀ | Sales cohort base year | year |
-| S1 / S2 / S3 | Scenarios: Low (current policies) / Central (NDC) / High (1.5°C) | — |
+| S1 / S2 | Scenarios: the observed trend / the committed path | — |
 
 ---
 
@@ -549,7 +554,7 @@ Source: national VKT statistics (FHWA — USA; BITRE — Australia; EEA Transpor
 | Using a static or global-average benchmark for Layer 1 | A static benchmark cannot capture the temporal value of early adoption or the escalating lock-in of conventional products | Use operating-country NDC-derived fleet trajectory |
 | Using regional or global average for G_c(0) | Grid intensity varies enormously across countries; averages are analytically misleading | Country-specific Ember value for each operating country |
 | Reporting TI as a single number without decomposition | The headline hides which markets and powertrains are driving the result | Always accompany headline TI with decomposition by operating country and powertrain type |
-| Reporting single-scenario TI only | Single-scenario results do not convey NDC implementation sensitivity | Always report S1, S2, S3. Label S2 as central. |
+| Reporting single-scenario TI only | Single-scenario results do not convey NDC implementation sensitivity | Always report S1 and S2; the sign can change between them. |
 | Reporting single-cohort and rolling portfolio interchangeably | Single-cohort = consequence of one year's decisions; rolling portfolio = all active cohorts simultaneously | Label clearly which output type is reported |
 | Netting TI against Scope 3 | TI is a comparative trajectory metric, not an offset or credit | Separate additional disclosure only. Never subtracted from Scope 3 Category 11. |
 | Pro-rata NDC allocation without caveat | Assumes equal decarbonisation rates across sectors — inconsistent with observed patterns | Disclose pro-rata use; use S1 as conservative cross-check |

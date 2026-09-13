@@ -1,4 +1,4 @@
-"""Derive S1/S2/S3 annual decline rates for Korea (whitepaper §3.1, guideline §2.3).
+"""Derive S1 and S2 annual decline rates for Korea (whitepaper §3.1, guideline §2.3).
 
 Inputs
     country_emissions/processed/country_emissions_kr.csv        car_co2 (derived, tier C)

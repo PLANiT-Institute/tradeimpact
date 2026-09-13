@@ -181,11 +181,13 @@ RATE_TIER = {
     "observed_trend": "A",
     "ndc_prorata": "B",
     "ndc_prorata_s1_floor": "B",
-    "1p5c_prorata": "B",
-    "world_prorata": "C",
+    "net_zero_2050": "B",
+    "gx_2040_prorata": "B",
 }
-#: Tier of the certified product value by the test cycle it comes from.
-TECHNOLOGY_TIER = {"WLTP": "A", "EPA": "A", "KR_5CYCLE": "B"}
+#: Tier of the certified product value by the test cycle it comes from. A cycle that publishes
+#: gCO2/km directly is tier A; one whose CO2 has to be derived from a published fuel economy with
+#: carbon factors is tier B, because the conversion is ours and not the certificate's.
+TECHNOLOGY_TIER = {"WLTP": "A", "EPA": "A", "WLTC_JP": "A", "KR_5CYCLE": "B"}
 
 
 def worst(*tiers: str) -> str:
@@ -194,13 +196,30 @@ def worst(*tiers: str) -> str:
     return max(ranked, key=lambda t: TIER_ORDER[t]) if ranked else ""
 
 
+#: Tier of the volume-to-powertrain step, by the rule that made it. A: the source states the
+#: powertrain, or the nameplate has only one. B: the volume is split by a published share, or
+#: a nameplate that folds two powertrains is assessed as the heavier one with the lighter one
+#: carried as a bound. There is no C here: a cell whose powertrain cannot be established at all
+#: is withheld rather than assessed on a guess.
+POWERTRAIN_TIER = {
+    "explicit": "A",
+    "stated": "A",
+    "jp_certified_single": "A",
+    "epa_share": "B",
+    "jp_jada_fuel_share": "B",
+    "kr_unsplit_central_ice": "B",
+}
+
+
 def powertrain_tier(rule: str) -> str:
     """Tier of the volume-to-powertrain step from the cohort's powertrain rule."""
-    if rule.startswith(("explicit", "stated")):
-        return "A"
-    if rule.startswith("epa_share"):
-        return "B"
-    return "C"
+    for prefix, tier in POWERTRAIN_TIER.items():
+        if rule.startswith(prefix):
+            return tier
+    raise SystemExit(
+        f"powertrain rule {rule!r} has no tier rule; add it to POWERTRAIN_TIER rather than "
+        "letting an attribution step take a default tier"
+    )
 
 
 def load_rate_tiers() -> dict[tuple[str, str], str]:
@@ -209,7 +228,12 @@ def load_rate_tiers() -> dict[tuple[str, str], str]:
     for path in sorted((DATA / "emission_targets" / "processed").glob("emission_targets_*.csv")):
         for r in read_csv(path):
             key = (r["country"], r["scenario"])
-            out[key] = worst(out.get(key, ""), RATE_TIER.get(r["target_level"], "C"))
+            if r["target_level"] not in RATE_TIER:
+                raise SystemExit(
+                    f"{path.name}: target_level {r['target_level']!r} has no tier rule. A rate's "
+                    "tier is a decision about how it was derived, never a default."
+                )
+            out[key] = worst(out.get(key, ""), RATE_TIER[r["target_level"]])
     return out
 
 
@@ -413,7 +437,12 @@ def tiers(
     # A fuel-cell vehicle's certified hydrogen consumption is as well measured as any label
     # value, but the emissions behind that hydrogen are an assumed electrolytic pathway rather
     # than a destination-observed supply intensity, so Layer 2 cannot be better than tier C.
-    tech = "C" if c["powertrain"] == "FCEV" else TECHNOLOGY_TIER.get(c["test_cycle"], "C")
+    if c["test_cycle"] not in TECHNOLOGY_TIER:
+        raise SystemExit(
+            f"test cycle {c['test_cycle']!r} has no tier rule; add it to TECHNOLOGY_TIER rather "
+            "than letting a certified value take a default tier"
+        )
+    tech = "C" if c["powertrain"] == "FCEV" else TECHNOLOGY_TIER[c["test_cycle"]]
     pt = powertrain_tier(c["powertrain_rule"])
     layer2 = worst(tech, pt)
     return {

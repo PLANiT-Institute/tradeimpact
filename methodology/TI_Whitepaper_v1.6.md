@@ -90,10 +90,19 @@ Where:
 - `r_sector,c` = annual sector benchmark reduction rate derived from the operating country's NDC
 - t = years elapsed since sale (t = 0 at year of sale)
 
-Three-scenario rates for r_sector,c:
-- **S1:** Current enacted policies — IEA WEO STEPS sector trajectory
-- **S2:** NDC unconditional target — UNFCCC NDC Registry
-- **S3:** 1.5°C-aligned — IEA NZE sector trajectory
+Two-scenario rates for r_sector,c, both taken from what the operating country itself has on the
+record:
+- **S1:** the observed trend — a log-linear fit to the country's own published sector series,
+  which is what the sector is actually doing rather than what a model says current policy implies
+- **S2:** the furthest target the country's own government has committed to, applied pro rata to
+  the sector where it publishes no sector sub-target, with the pro-rata step disclosed
+
+> **S3 retired, 2026-09-04.** Earlier versions carried a third scenario, 1.5 °C-aligned on the
+> IEA NZE trajectory. It was removed because it is a modelled construction no government
+> published, while the claim this framework makes is a comparison against what a state has itself
+> committed to. A benchmark nobody is accountable for cannot carry that claim. S1 was re-anchored
+> on each country's own observed series at the same time, for the same reason. The decision and
+> the rates it produced are in `claude-docs/log/README.md`.
 
 ### 3.2 Layer 2 — Sold product emissions
 <a id="eq-3.2-product"></a>
@@ -179,7 +188,7 @@ This is the firm's total annual climate impact from all products currently in op
 
 **Positive TI:** The firm's active product fleet emits more than the benchmarks. Trade activities add emissions and represent a net lock-in liability relative to the countries' NDC commitments.
 
-**Rising TI (even if still negative):** The firm's portfolio is not keeping pace with the operating countries' decarbonisation commitments. The S1–S3 spread signals the degree of policy risk exposure: a wide spread means the firm's TI position is highly sensitive to how ambitiously operating countries implement their NDCs.
+**Rising TI (even if still negative):** The firm's portfolio is not keeping pace with the operating countries' decarbonisation commitments. The S1–S2 spread signals the degree of policy risk exposure: a wide spread means the firm's TI position is highly sensitive to whether operating countries deliver what they have committed to or continue on the trend they are on.
 
 ---
 
@@ -197,7 +206,7 @@ The production country is outside the Layer 1 and Layer 2 calculation boundary. 
 
 ### 4.3 Temporal boundary
 
-The TI assessment spans the product's full operational lifetime T. Results must be reported under all three scenarios (S1/S2/S3). Product lifetime T and its sensitivity range are specified in sector Technical Guidelines.
+The TI assessment spans the product's full operational lifetime T. Results must be reported under both scenarios (S1 and S2); a single-scenario figure hides the fact that the sign can change with the benchmark, which is the finding. Product lifetime T and its sensitivity range are specified in sector Technical Guidelines.
 
 ### 4.4 Product boundary
 
@@ -220,7 +229,7 @@ Manufacturing and end-of-life emissions are outside the TI boundary, consistent 
 Every reported TI output must carry:
 - Data tier for Layer 1 (NDC benchmark) and Layer 2 (product emissions) independently
 - Analysis level: Level 1 or Level 2
-- NDC scenario (S1/S2/S3) with source document and version cited
+- Scenario (S1/S2) with source document and version cited
 - Volume data source and tier
 - Product operational lifetime T and sensitivity bounds
 - Whether results represent single-cohort or rolling portfolio
@@ -249,14 +258,14 @@ The TI Framework applies to any sector where firms sell energy-using products th
 
 ### 7.1 Required outputs
 
-1. **TI_cohort,F,Y₀,S** — single-cohort total lifetime TI [tCO₂e], S1/S2/S3
-2. **TI_annual time-series** — annual TI for the single cohort, t = 0 to T−1 [tCO₂e/yr], S1/S2/S3
-3. **TI_portfolio,F,τ,S** — rolling portfolio annual TI [tCO₂e/yr], S1/S2/S3
+1. **TI_cohort,F,Y₀,S** — single-cohort total lifetime TI [tCO₂e], S1/S2
+2. **TI_annual time-series** — annual TI for the single cohort, t = 0 to T−1 [tCO₂e/yr], S1/S2
+3. **TI_portfolio,F,τ,S** — rolling portfolio annual TI [tCO₂e/yr], S1/S2
 4. **Decomposition by operating country and product type** — mandatory alongside all headline numbers
 
 ### 7.2 Recommended presentation
 
-- **Headline chart:** Rolling portfolio TI time-series with S1/S2/S3 band, showing trajectory over time.
+- **Headline chart:** Rolling portfolio TI time-series with the S1–S2 band, showing trajectory over time.
 - **Decomposition charts:** TI by operating country and by product type — identifies where the firm's portfolio climate impact is concentrated.
 - **Single-cohort time-series:** Annual TI for the most recent cohort, t = 0 to T−1. Shows how the current year's sales decisions play out over their full lifetime.
 - **Data quality table:** Tier declarations for all inputs.

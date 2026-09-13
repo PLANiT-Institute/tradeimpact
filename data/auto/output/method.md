@@ -665,7 +665,17 @@ for that country, on the population the model uses); **B** estimated or derived 
 sources for the country plus a documented step: unit or fuel-factor conversion, pro-rata of a
 sector target, split by production shares, a close but not identical population, a rounding
 rule); **C** proxy (another population, market, year or average; a share whose level disagrees
-with the national one; an old survival schedule; an ICE-central assumption; a world pathway).
+with the national one; an old survival schedule; an assumed fuel supply pathway).
+
+**No tier is a default.** Every lookup that assigns one — the scenario rate by how it was derived,
+the certified value by its test cycle, the powertrain attribution by its rule — stops the build on
+a key it does not know, rather than quietly writing C. Three tiers were being assigned by omission
+until 2026-09-14 and are now assigned by rule: Korea's and Japan's committed-path rates (a
+government's own published pathway applied pro-rata, tier B, as the EU's already was), Japan's
+certified values (the MLIT list publishes gCO2/km directly and converts nothing, tier A) and
+Japan's powertrain attribution (a certified single-powertrain nameplate is A, a JADA fuel-mix
+split is B). Japan's cells are tier B throughout as a result. Nothing about the data changed;
+what changed is that the flags now say what the data is.
 
 Where the flags live. (1) Every row of every processed input table (country_emissions_*,
 vehicle_usage_*, emission_targets_*, vehicle_technology_*, sales_*, trade_flows) carries `tier`
@@ -681,7 +691,7 @@ company, market and cohort year. A test asserts that every cell and every input 
 
 **Two tier-C measures, and why both are published.** `ti_data_quality.csv` carries them side by
 side and the column names say which is which, because they answer different questions and
-diverge sharply — outside the EU27 the first is 0 % while the second is 100 %.
+diverge sharply — in the United States and Korea the first is 0 % while the second is 100 %.
 `vkt_tier_c_units` / `vkt_tier_c_share` count units whose destination's **distance** tier is C;
 that is the guideline's own suppression rule and the only input to `directional_only`, because a
 proxied distance scales the whole result and above the threshold only the direction is
