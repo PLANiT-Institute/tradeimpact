@@ -44,7 +44,16 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from model_io import LIGHT_DUTY, PARAM_FIELDS, REF_FIELDS, latest, read_csv, read_long, write_csv
+from model_io import (
+    LIGHT_DUTY,
+    PARAM_FIELDS,
+    REF_FIELDS,
+    cohort_years,
+    latest,
+    read_csv,
+    read_long,
+    write_csv,
+)
 
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
@@ -161,18 +170,13 @@ def main() -> None:
     parser.add_argument(
         "--cohort-year",
         type=int,
-        default=2025,
-        help="earliest sale year the trajectories are applied to (they are indexed on t)",
-    )
-    parser.add_argument(
-        "--observation-cap",
-        type=int,
-        default=2024,
-        help="highest observation year any parameter may be read from",
+        action="append",
+        help="sale year to build (repeatable); defaults to every year with a US cohort",
     )
     args = parser.parse_args()
-    year0: int = args.cohort_year
-    cap: int = args.observation_cap
+    years = sorted(args.cohort_year) if args.cohort_year else cohort_years(MARKET)
+    if not years:
+        raise SystemExit(f"no {MARKET} cohorts in cohorts.csv, so there is no sale year to build")
 
     usage = read_long(USAGE)
     emissions = read_long(EMISSIONS)
@@ -180,6 +184,35 @@ def main() -> None:
     lifetime_series = read_long(LIFETIME)
     rates, excluded = read_rates(TARGETS)
 
+    params: list[dict[str, object]] = []
+    ref_rows: list[dict[str, object]] = []
+    # One pass per sale year, with the observation cap set to the sale year itself.
+    for year0 in years:
+        cap = year0
+        params_year, ref_year = build_year(
+            year0, cap, usage, emissions, grid_series, lifetime_series, rates, excluded
+        )
+        params.extend(params_year)
+        ref_rows.extend(ref_year)
+    write_csv(OUT_PARAMS, PARAM_FIELDS, params)
+    write_csv(OUT_REF, REF_FIELDS, ref_rows)
+    print(
+        f"{OUT_REF.relative_to(REPO)}: {len(ref_rows)} rows, sale years {years}, "
+        f"scenarios {sorted({str(r['scenario']) for r in ref_rows})}"
+    )
+
+
+def build_year(  # noqa: PLR0913 - one call site; the alternative is a parameter object
+    year0: int,
+    cap: int,
+    usage: dict,
+    emissions: dict,
+    grid_series: dict,
+    lifetime_series: dict,
+    rates: dict,
+    excluded: dict,
+) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    """The US parameter row and trajectory set for one sale year."""
     warnings = [WARN_VKT_TIER, WARN_LIFETIME_TIER]
 
     stock = summed_series(usage, STOCK_SERIES, cap)
@@ -255,7 +288,6 @@ def main() -> None:
         "warnings": " | ".join(warnings),
         "source_ids": ";".join(SOURCE_IDS),
     }
-    write_csv(OUT_PARAMS, PARAM_FIELDS, [params])
 
     ref_rows: list[dict[str, object]] = []
     for scenario in scenarios:
@@ -267,6 +299,7 @@ def main() -> None:
                     "market": MARKET,
                     "country": COUNTRY,
                     "segment": LIGHT_DUTY,
+                    "cohort_year": year0,
                     "scenario": scenario,
                     "t": t,
                     "calendar_year": year0 + t,
@@ -279,18 +312,13 @@ def main() -> None:
                     "grid_kgco2_per_kwh": round(grid[1] / 1000 * (1 - r_power) ** t, 9),
                 }
             )
-    write_csv(OUT_REF, REF_FIELDS, ref_rows)
-
     print(
-        f"{OUT_PARAMS.relative_to(REPO)}: 1 market; vkt {vkt:,.0f} km/yr (tier {VKT_TIER}, "
-        f"{traffic[0]}), fleet intensity {fleet_intensity:.1f} gCO2/km from {co2_name} "
-        f"{co2_year}, grid {grid[1]:.1f} gCO2/kWh ({grid[0]}), T {life} y "
+        f"{year0}: vkt {vkt:,.0f} km/yr (tier {VKT_TIER}, {traffic[0]}), fleet intensity "
+        f"{fleet_intensity:.1f} gCO2/km from {co2_name} {co2_year}, grid {grid[1]:.1f} "
+        f"gCO2/kWh ({grid[0]}), T {life} y "
         f"[{life - LIFETIME_DELTA_Y}, {life + LIFETIME_DELTA_Y}]"
     )
-    print(
-        f"{OUT_REF.relative_to(REPO)}: {len(ref_rows)} rows, scenarios {scenarios}; "
-        f"excluded {sorted(excluded) or 'none'}"
-    )
+    return [params], ref_rows
 
 
 if __name__ == "__main__":

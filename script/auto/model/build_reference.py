@@ -28,7 +28,7 @@ import argparse
 import csv
 from pathlib import Path
 
-from model_io import PARAM_FIELDS, PASSENGER_CAR, REF_FIELDS, latest, read_long
+from model_io import PARAM_FIELDS, PASSENGER_CAR, REF_FIELDS, cohort_years, latest, read_long
 
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
@@ -115,11 +115,18 @@ def quantile(values: list[float], q: float) -> float:
 
 
 def main() -> None:
-    """Build destination parameters and reference trajectories for every EU27 market."""
+    """Build destination parameters and trajectories for every EU27 market and sale year."""
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    parser.add_argument("--cohort-year", type=int, default=2024, help="analysis (sale) year")
+    parser.add_argument(
+        "--cohort-year",
+        type=int,
+        action="append",
+        help="sale year to build (repeatable); defaults to every year with an EU27 cohort",
+    )
     args = parser.parse_args()
-    year0: int = args.cohort_year
+    years = sorted(args.cohort_year) if args.cohort_year else cohort_years(EU)
+    if not years:
+        raise SystemExit(f"no {EU} cohorts in cohorts.csv, so there is no sale year to build")
 
     usage = read_long(USAGE)
     emissions = read_long(EMISSIONS)
@@ -128,6 +135,43 @@ def main() -> None:
         for row in csv.DictReader(f):
             rates[(row["country"], row["scenario"], row["rate"])] = float(row["value"])
 
+    # One pass per sale year: the observation cap is the sale year itself, so a 2024 cohort is
+    # measured against what each member state had published by 2024 and a 2025 cohort by 2025.
+    rows: list[dict[str, object]] = []
+    ref_rows: list[dict[str, object]] = []
+    incomplete: list[str] = []
+    for year0 in years:
+        year_rows, year_ref, year_incomplete = build_year(year0, usage, emissions, rates)
+        rows.extend(year_rows)
+        ref_rows.extend(year_ref)
+        incomplete.extend(year_incomplete)
+
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    with OUT_PARAMS.open("w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=PARAM_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+    with OUT_REF.open("w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=REF_FIELDS)
+        writer.writeheader()
+        writer.writerows(ref_rows)
+
+    tiers = {t: sum(1 for r in rows if r["vkt_tier"] == t) for t in ("A", "B", "C")}
+    print(
+        f"{OUT_PARAMS.relative_to(REPO)}: {len(rows)} rows over sale years {years}; "
+        f"vkt tiers {tiers}"
+    )
+    note = f"; incomplete: {sorted(set(incomplete))}" if incomplete else ""
+    print(f"{OUT_REF.relative_to(REPO)}: {len(ref_rows)} rows{note}")
+
+
+def build_year(
+    year0: int,
+    usage: dict,
+    emissions: dict,
+    rates: dict[tuple[str, str, str], float],
+) -> tuple[list[dict[str, object]], list[dict[str, object]], list[str]]:
+    """Every EU27 member state's parameters and trajectories for one sale year."""
     countries = sorted({c for (c, s) in emissions if s == "car_co2" and c != EU})
     pooled = pooled_age_bands(usage, countries, year0)
 
@@ -247,12 +291,6 @@ def main() -> None:
         r["warnings"] = " | ".join(r.pop("_warnings"))  # type: ignore[arg-type]
         r["source_ids"] = ";".join(r.pop("_sources"))  # type: ignore[arg-type]
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    with OUT_PARAMS.open("w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=PARAM_FIELDS)
-        writer.writeheader()
-        writer.writerows(rows)
-
     ref_rows: list[dict[str, object]] = []
     incomplete: list[str] = []
     for r in rows:
@@ -273,6 +311,7 @@ def main() -> None:
                         "market": EU,
                         "country": c,
                         "segment": PASSENGER_CAR,
+                        "cohort_year": year0,
                         "scenario": s,
                         "t": t,
                         "calendar_year": year0 + t,
@@ -285,15 +324,7 @@ def main() -> None:
                         "grid_kgco2_per_kwh": round(grid0 / 1000 * (1 - rp) ** t, 9),  # type: ignore[operator]
                     }
                 )
-    with OUT_REF.open("w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=REF_FIELDS)
-        writer.writeheader()
-        writer.writerows(ref_rows)
-
-    tiers = {t: sum(1 for r in rows if r["vkt_tier"] == t) for t in ("A", "B", "C")}
-    print(f"{OUT_PARAMS.relative_to(REPO)}: {len(rows)} markets; vkt tiers {tiers}")
-    note = f"; incomplete: {incomplete}" if incomplete else ""
-    print(f"{OUT_REF.relative_to(REPO)}: {len(ref_rows)} rows{note}")
+    return rows, ref_rows, incomplete
 
 
 if __name__ == "__main__":

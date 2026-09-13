@@ -56,6 +56,7 @@ from model_io import (
     PARAM_FIELDS,
     PASSENGER_CAR,
     REF_FIELDS,
+    cohort_years,
     latest,
     read_csv,
     read_long,
@@ -133,12 +134,18 @@ def read_rates(path: Path) -> tuple[dict[tuple[str, str], float], dict[str, str]
 
 
 def main() -> None:
-    """Build one destination-parameter row and one trajectory set per Japanese segment."""
+    """Build a destination-parameter row and a trajectory set per Japanese segment and sale year."""
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    parser.add_argument("--cohort-year", type=int, default=2024)
-    parser.add_argument("--observation-cap", type=int, default=2024)
+    parser.add_argument(
+        "--cohort-year",
+        type=int,
+        action="append",
+        help="sale year to build (repeatable); defaults to every year with a Japanese cohort",
+    )
     args = parser.parse_args()
-    year0, cap = args.cohort_year, args.observation_cap
+    years = sorted(args.cohort_year) if args.cohort_year else cohort_years(MARKET)
+    if not years:
+        raise SystemExit(f"no {MARKET} cohorts in cohorts.csv, so there is no sale year to build")
 
     usage = read_long(USAGE)
     lifetime = read_long(LIFETIME)
@@ -146,9 +153,6 @@ def main() -> None:
     grid_series = read_long(GRID)
     rates, excluded = read_rates(TARGETS)
 
-    grid = latest(grid_series.get((COUNTRY, "grid_intensity"), {}), cap)
-    if grid is None:
-        raise SystemExit(f"{GRID.relative_to(REPO)}: no JP grid intensity at or before {cap}")
     scenarios = sorted({s for (s, _rate) in rates})
     missing = [s for s in scenarios if (s, "r_fleet") not in rates or (s, "r_power") not in rates]
     if missing:
@@ -156,7 +160,12 @@ def main() -> None:
 
     params: list[dict[str, object]] = []
     ref_rows: list[dict[str, object]] = []
-    for segment in BUILT_SEGMENTS:
+    # One pass per sale year, with the observation cap set to the sale year itself.
+    for year0, segment in ((y, s) for y in years for s in BUILT_SEGMENTS):
+        cap = year0
+        grid = latest(grid_series.get((COUNTRY, "grid_intensity"), {}), cap)
+        if grid is None:
+            raise SystemExit(f"{GRID.relative_to(REPO)}: no JP grid intensity at or before {cap}")
         co2 = latest(emissions.get((COUNTRY, f"co2_{segment}"), {}), cap)
         if co2 is None:
             raise SystemExit(f"{EMISSIONS.name}: no co2_{segment} at or before {cap}")
@@ -237,6 +246,7 @@ def main() -> None:
                         "market": MARKET,
                         "country": COUNTRY,
                         "segment": segment,
+                        "cohort_year": year0,
                         "scenario": scenario,
                         "t": t,
                         "calendar_year": year0 + t,

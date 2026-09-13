@@ -273,7 +273,7 @@ def main() -> None:
             "model": c["model"],
             "powertrain": powertrain,
         }
-        p = params.get((market, country, segment))
+        p = params.get((market, country, segment, cohort_year))
         if p is None:
             withheld.append(
                 {
@@ -302,7 +302,7 @@ def main() -> None:
         for t in range(life):
             surviving[(market, c["company"], cohort_year)][cohort_year + t] += units
         for scenario in scenarios[market]:
-            trajectory = reference[(market, country, segment, scenario)]
+            trajectory = reference[(market, country, segment, cohort_year, scenario)]
             tier_flags = tiers(p, c, country, scenario, rate_tiers)
             cumulative = 0.0
             e_prod0 = 0.0
@@ -468,14 +468,14 @@ def build_exclusions(
     scenario is never a silent gap in the result tables.
 
     Args:
-        params: (market, country) -> destination parameters.
+        params: (market, country, segment, sale year) -> destination parameters.
         cells: Assessed cells, used for the affected unit counts and cohort years.
 
     Returns:
         Exclusion rows sorted by market, company, scenario.
     """
     reasons: dict[str, dict[str, str]] = defaultdict(dict)
-    for (market, _country, _segment), p in params.items():
+    for (market, _country, _segment, _year), p in params.items():
         for entry in filter(None, p["scenario_exclusion_reason"].split(" | ")):
             scenario, _, reason = entry.partition(": ")
             reasons[market][scenario] = reason

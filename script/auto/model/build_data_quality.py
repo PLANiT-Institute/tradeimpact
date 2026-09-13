@@ -120,7 +120,7 @@ def main() -> None:
         countries = {c["destination"] for c in mine}
         # Every assessed cell names its own (destination, segment), and each of those has its
         # own benchmark row, so the tier counts are taken over those pairs.
-        keys = {(market, c["destination"], c["segment"]) for c in mine}
+        keys = {(market, c["destination"], c["segment"], int(c["cohort_year"])) for c in mine}
         vkt_tiers = Counter(params[k]["vkt_tier"] for k in keys)
         fleet_c = sum(1 for k in keys if params[k]["fleet_intensity_tier"] == "C")
         reasons: dict[str, int] = defaultdict(int)
@@ -141,8 +141,8 @@ def main() -> None:
         market_warnings = sorted(
             {
                 w.split(":")[0]
-                for (m, _c, _seg), p in params.items()
-                if m == market
+                for (m, _c, _seg, y), p in params.items()
+                if m == market and y == int(cohort_year)
                 for w in p["warnings"].split(" | ")
                 if w
             }

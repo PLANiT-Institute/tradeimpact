@@ -97,6 +97,7 @@ REF_FIELDS = [
     "market",
     "country",
     "segment",
+    "cohort_year",
     "scenario",
     "t",
     "calendar_year",
@@ -128,23 +129,56 @@ def latest(series: dict[int, float], not_after: int) -> tuple[int, float] | None
     return max(pairs) if pairs else None
 
 
-def load_params() -> dict[tuple[str, str, str], dict[str, str]]:
-    """(market, country, segment) -> destination parameters, pooled over every market file."""
-    out: dict[tuple[str, str, str], dict[str, str]] = {}
+def cohort_years(market: str) -> list[int]:
+    """Sale years a market has cohorts for, read off the cohort table the sales step wrote.
+
+    Every downstream parameter is built once per sale year, so this is what decides how many
+    times a reference builder runs. A market with no cohorts yet returns an empty list and the
+    builder says so rather than inventing a year.
+
+    Args:
+        market: Market key, e.g. `EU27`.
+
+    Returns:
+        The distinct sale years, ascending.
+    """
+    path = OUT_DIR / "cohorts.csv"
+    if not path.exists():
+        raise SystemExit(f"{path.name} does not exist: run build_cohorts.py first")
+    return sorted({int(r["cohort_year"]) for r in read_csv(path) if r["market"] == market})
+
+
+def load_params() -> dict[tuple[str, str, str, int], dict[str, str]]:
+    """(market, country, segment, sale year) -> destination parameters, over every market file.
+
+    A sale year is a key and not a label: the parameters behind a 2024 sale are the observations
+    published by 2024, and a 2025 sale is measured against what was known by 2025. The two are
+    different numbers and the model must not be able to confuse them.
+    """
+    out: dict[tuple[str, str, str, int], dict[str, str]] = {}
     for path in sorted(OUT_DIR.glob(PARAMS_GLOB)):
         for row in read_csv(path):
-            out[(row["market"], row["country"], row["segment"])] = row
+            out[(row["market"], row["country"], row["segment"], int(row["cohort_year"]))] = row
     if not out:
         raise SystemExit(f"no {PARAMS_GLOB} in {OUT_DIR}: run the reference builders first")
     return out
 
 
-def load_reference() -> dict[tuple[str, str, str, str], dict[int, tuple[float, float]]]:
-    """(market, country, segment, scenario) -> {t: (e_ref kgCO2e/vehicle-year, grid kg/kWh)}."""
-    out: dict[tuple[str, str, str, str], dict[int, tuple[float, float]]] = defaultdict(dict)
+def load_reference() -> dict[tuple[str, str, str, int, str], dict[int, tuple[float, float]]]:
+    """(market, country, segment, sale year, scenario) -> {t: (e_ref, grid)}.
+
+    e_ref is kgCO2e per vehicle-year and grid is kgCO2e per kWh.
+    """
+    out: dict[tuple[str, str, str, int, str], dict[int, tuple[float, float]]] = defaultdict(dict)
     for path in sorted(OUT_DIR.glob(REFERENCE_GLOB)):
         for row in read_csv(path):
-            key = (row["market"], row["country"], row["segment"], row["scenario"])
+            key = (
+                row["market"],
+                row["country"],
+                row["segment"],
+                int(row["cohort_year"]),
+                row["scenario"],
+            )
             out[key][int(row["t"])] = (
                 float(row["e_ref_kgco2_per_vehicle"]),
                 float(row["grid_kgco2_per_kwh"]),
@@ -154,12 +188,19 @@ def load_reference() -> dict[tuple[str, str, str, str], dict[int, tuple[float, f
     return dict(out)
 
 
-def load_rates() -> dict[tuple[str, str, str, str], tuple[float, float]]:
-    """(market, country, segment, scenario) -> (r_fleet, r_power) from the year-0 row."""
-    out: dict[tuple[str, str, str, str], tuple[float, float]] = {}
+def load_rates() -> dict[tuple[str, str, str, int, str], tuple[float, float]]:
+    """(market, country, segment, sale year, scenario) -> (r_fleet, r_power) from the t=0 row."""
+    out: dict[tuple[str, str, str, int, str], tuple[float, float]] = {}
     for path in sorted(OUT_DIR.glob(REFERENCE_GLOB)):
         for row in read_csv(path):
-            out[(row["market"], row["country"], row["segment"], row["scenario"])] = (
+            key = (
+                row["market"],
+                row["country"],
+                row["segment"],
+                int(row["cohort_year"]),
+                row["scenario"],
+            )
+            out[key] = (
                 float(row["r_fleet"]),
                 float(row["r_power"]),
             )

@@ -195,7 +195,9 @@ def assessed_cells(
     """Cohort rows that carry a published result — the same rule step 4 applies."""
     out: list[Cell] = []
     for row in cohorts:
-        p = params.get((row["market"], row["destination"], row["segment"]))
+        p = params.get(
+            (row["market"], row["destination"], row["segment"], int(row["cohort_year"]))
+        )
         if p is None or "FLEET_INTENSITY_IMPLAUSIBLE" in p["warnings"]:
             continue
         out.append(to_cell(row))
@@ -254,14 +256,14 @@ def cohort_total(
     for c in cells:
         if c.market != market:
             continue
-        p = params[(c.market, c.destination, c.segment)]
+        p = params[(c.market, c.destination, c.segment, c.cohort_year)]
         vkt = float(p["vkt_km"])
         if vkt_key and p["vkt_tier"] == "C" and p[vkt_key]:
             vkt = float(p[vkt_key])
         i0 = float(p["fleet_intensity_gco2_km"]) / 1000.0
         e_ref0 = i0 * float(p["vkt_km"])  # benchmark per car: distance cancels
         life = max(1, int(p["lifetime_years"]) + life_delta)
-        rf, rp = rates[(c.market, c.destination, c.segment, scenario)]
+        rf, rp = rates[(c.market, c.destination, c.segment, c.cohort_year, scenario)]
         rw = factors[(c.test_cycle, c.powertrain)][rw_key]
         g0 = float(p["grid_gco2_kwh"]) / 1000.0
         cumulative = 0.0
@@ -298,14 +300,14 @@ def build_crossovers(
     """Closed-form crossover year and lifetime gap for every assessed cell x scenario."""
     rows: list[dict[str, object]] = []
     for c in cells:
-        p = params[(c.market, c.destination, c.segment)]
+        p = params[(c.market, c.destination, c.segment, c.cohort_year)]
         vkt = float(p["vkt_km"])
         i0 = float(p["fleet_intensity_gco2_km"]) / 1000.0
         g0 = float(p["grid_gco2_kwh"]) / 1000.0
         life = int(p["lifetime_years"])
         rw = factors[(c.test_cycle, c.powertrain)]["factor"]
         for scenario in scenarios[c.market]:
-            rf, rp = rates[(c.market, c.destination, c.segment, scenario)]
+            rf, rp = rates[(c.market, c.destination, c.segment, c.cohort_year, scenario)]
             e_prod_const = c.cert * rw / 1000.0 * vkt
             eta_g0 = c.cert / 1000.0 * carrier_factor(c.powertrain) * rw * g0
             grid_leg = c.electric / 1000.0 * g0

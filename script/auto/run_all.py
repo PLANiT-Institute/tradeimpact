@@ -80,6 +80,7 @@ MODEL = [
     "model/build_target_set.py",
     "model/build_reconciliation.py",
     "model/build_global_coverage.py",
+    "model/build_readiness.py",
     "model/build_database.py",
     "model/build_dashboard.py",
     "report/build_report.py",
