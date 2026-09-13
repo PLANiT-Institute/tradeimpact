@@ -27,6 +27,12 @@ report/
   build_index.py        the front door: data/auto/index.html, what this is and what it is for
   build_report.py       the analysis, read out of the database
   build_pitch.py        five slides
+app/
+  build_app.py          the workbench: data/auto/app.html, three modes over one database
+  serve_app.py          serves the workbench and queues edits (source + note required) to
+                        data/auto/edits.csv; the only write path in the sector
+  model/build_readiness.py  data_readiness.csv: what each sale year actually received, and how
+                            old it is (current / carried forward / stale), per country
 ```
 
 `run_all.py` runs every step above in order, then `ruff check` and `pytest`, and stops at the

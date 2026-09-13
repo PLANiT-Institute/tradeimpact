@@ -580,3 +580,50 @@ def test_front_door_pins_its_library_and_points_at_every_artefact() -> None:
     # The uses are the spine of the page, and the one it cannot carry is part of them.
     for phrase in ("Monitoring", "Targeting", "Comparison", "Not evaluation"):
         assert f">{phrase}<" in html, f"the front door no longer names {phrase!r}"
+
+
+APP = DATA / "app.html"
+
+
+def test_workbench_carries_no_data_and_has_three_modes() -> None:
+    """The workbench reads the database like every other page and offers the three modes.
+
+    It is the page a user spends time in, so it is the one where a baked-in number would be
+    trusted longest. Every figure — the readiness grid, the table browser, the impact and the
+    reference trajectory — is a query run when the page opens.
+    """
+    assert APP.exists(), APP
+    html = APP.read_text(encoding="utf-8")
+    assert html.count("data-f=") == 0  # this page builds its grids in JS, not by data-f slots
+    assert "tradeimpact_auto.sqlite" in html
+    for mode in ("data-mode=\"input\"", "data-mode=\"database\"", "data-mode=\"results\""):
+        assert mode in html, f"the workbench is missing {mode}"
+    # The sale year and the scenario are the axes the user complained were hidden.
+    assert "data_readiness" in html and "cohort_year" in html
+    assert "reference_trajectories_" in html and "vintage_year" in html
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
+    text = re.sub(r"<[^>]+>", " ", text)
+    assert not re.search(r"[+−-]\d+\.\d+ ?Mt", text), "a total is baked into the workbench"
+
+
+def test_workbench_edit_queue_requires_a_source_and_a_note() -> None:
+    """A value can never enter the edit queue unattributed; the server enforces it."""
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location(
+        "serve_app", REPO / "script" / "auto" / "app" / "serve_app.py"
+    )
+    assert spec and spec.loader
+    serve_app = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(serve_app)
+
+    good = {
+        "cohort_year": 2026, "dataset": "country_emissions", "country": "KR",
+        "parameter": "fleet_intensity_gco2_km (passenger_car)", "new_value": "201.0",
+        "source_id": "gir_inventory_co2", "note": "2024 road CO2 now published",
+    }
+    for missing in ("source_id", "note"):
+        with pytest.raises(ValueError, match="required"):
+            serve_app.append_edit({**good, missing: "  "})
+    with pytest.raises(ValueError, match="missing"):
+        serve_app.append_edit({"cohort_year": 2026})
