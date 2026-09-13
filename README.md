@@ -108,6 +108,12 @@ previously published EU27 result exactly when fed the archived inputs (see
 | Korea, 2025 retail | Kia | 99.3 % | −2.79 | **+4.36** |
 | Korea, Jan–Jul 2026 retail | Kia | 99.5 % | −2.40 | **+1.85** |
 
+**Start here.** `data/auto/index.html` is the front door: what Trade Impact measures, what the
+current result says, what it can and cannot be used for, and a link to every other artefact. Serve
+it with `.venv/bin/python script/auto/serve_dashboard.py` and open
+<http://127.0.0.1:8765/index.html>. Like the dashboard, the report and the deck, it carries no
+figure of its own — it queries `tradeimpact_auto.sqlite` when it opens.
+
 ### How much of worldwide sales this captures
 
 | Company | Cohort | Worldwide sales | Assessed | Held | Countries assessed |
@@ -143,7 +149,7 @@ benchmark. The opposite convention is common in avoided-emissions reporting — 
 not use it. Markets are never summed: different sales bases, test cycles and benchmarks. Withheld units — Korean heavy trucks and
 coaches that the labelling scheme does not certify, Japanese nameplates absent from the
 fuel-economy list, discontinued US models without an EPA row, Luxembourg's implausible
-benchmark, the Genesis brand — are listed, not absorbed. They are 1.2 % of the units held.
+benchmark, the Genesis brand — are listed, not absorbed. They are 0.6 % of every unit held across the cohorts on file.
 
 The tables above are lifetime totals. Every one of them has an annual twin that carries both
 sides of the comparison in each calendar year rather than only the net figure —

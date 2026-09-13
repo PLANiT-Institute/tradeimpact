@@ -23,6 +23,10 @@ model/
   aggregate_country.py  step 5: country, powertrain and company x market totals + decomposition
   build_data_quality.py step 5b: guideline §5.3 data-quality declaration per company x market
   build_database.py     final: every CSV under data/auto -> data/auto/database/tradeimpact_auto.sqlite
+report/
+  build_index.py        the front door: data/auto/index.html, what this is and what it is for
+  build_report.py       the analysis, read out of the database
+  build_pitch.py        five slides
 ```
 
 `run_all.py` runs every step above in order, then `ruff check` and `pytest`, and stops at the

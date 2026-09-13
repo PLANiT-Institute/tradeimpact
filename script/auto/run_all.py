@@ -84,6 +84,7 @@ MODEL = [
     "model/build_dashboard.py",
     "report/build_report.py",
     "report/build_pitch.py",
+    "report/build_index.py",
 ]
 CHECKS = [
     [PY, "-m", "ruff", "check", "script", "tests"],
