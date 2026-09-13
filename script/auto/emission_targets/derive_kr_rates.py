@@ -54,6 +54,7 @@ FIELDS = [
     "rate",
     "value",
     "target_level",
+    "vintage_year",
     "base_year",
     "target_year",
     "derivation",
@@ -122,6 +123,7 @@ def main() -> None:
                 "rate": rate,
                 "value": round(value, 9),
                 "target_level": "observed_trend",
+                "vintage_year": y1,
                 "base_year": y0,
                 "target_year": y1,
                 "derivation": derivation,
@@ -166,6 +168,7 @@ def main() -> None:
                 "rate": rate,
                 "value": round(value, 9),
                 "target_level": level,
+                "vintage_year": int(t["announced"][:4]),
                 "base_year": t["base_year"],
                 "target_year": t["target_year"],
                 "derivation": (

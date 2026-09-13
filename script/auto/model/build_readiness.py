@@ -21,8 +21,7 @@ Inputs
     output/reference_trajectories_*.csv     the scenario rates actually applied
     output/cohorts.csv                      the sales period behind each cohort
     vehicle_technology/processed/*.csv      the certified values, and the vintage each publishes
-    emission_targets/processed/*.csv        the committed path and the target it was read from
-    registry/sources.csv                    when each source was last accessed
+    emission_targets/processed/*.csv        the committed path, its target_level and vintage
 Output
     output/data_readiness.csv
 
@@ -38,7 +37,6 @@ from model_io import DATA, OUT_DIR, REPO, read_csv, write_csv
 OUT = OUT_DIR / "data_readiness.csv"
 TECHNOLOGY = DATA / "vehicle_technology" / "processed"
 TARGETS = DATA / "emission_targets" / "processed"
-SOURCES = DATA / "registry" / "sources.csv"
 
 #: How far behind the sale year an observation may be before it is called stale.
 BEHIND_YEARS = 2
@@ -139,8 +137,13 @@ def parameter_rows() -> list[dict[str, object]]:
     return rows
 
 
-def target_rows(accessed: dict[str, str]) -> list[dict[str, object]]:
-    """Readiness rows for the scenario rates, one per sale year the trajectories carry."""
+def target_rows() -> list[dict[str, object]]:
+    """Readiness rows for the scenario rates, one per sale year the trajectories carry.
+
+    Each rate now carries a ``vintage_year`` — the year its policy was announced (an observed
+    S1 trend's vintage is its last observation). A sale year later than the vintage is measured
+    against a policy that has not moved since, which is exactly the carried-forward case.
+    """
     markets = {
         "emission_targets_eu27.csv": "EU27",
         "emission_targets_us.csv": "US",
@@ -160,11 +163,7 @@ def target_rows(accessed: dict[str, str]) -> list[dict[str, object]]:
             continue
         for cohort_year in sorted(built.get(market, set())):
             for t in read_csv(path):
-                source = t["source_id"].split(";")[0]
-                # The target has no vintage of its own yet, so the nearest honest stand-in is
-                # when the register last went and looked at it.
-                seen_year = accessed.get(source, "")
-                observation = int(seen_year[:4]) if seen_year[:4].isdigit() else None
+                observation = int(t["vintage_year"]) if t.get("vintage_year") else None
                 key = (t["country"], t["scenario"], t["rate"])
                 seen = observation is not None and observation in used[key]
                 rows.append(
@@ -181,9 +180,9 @@ def target_rows(accessed: dict[str, str]) -> list[dict[str, object]]:
                         "tier": t["target_level"],
                         "source_id": t["source_id"],
                         "note": (
-                            "the target carries no vintage of its own: this is the date the "
-                            "register last read the policy, so every sale year is measured "
-                            "against the policy as it stands today rather than as it stood then"
+                            "vintage is the year the policy was announced (S1: the last observed "
+                            "year); a later sale year is measured against a policy that has not "
+                            "changed since"
                         ),
                     }
                 )
@@ -269,8 +268,7 @@ def sales_rows() -> list[dict[str, object]]:
 
 def main() -> None:
     """Write the readiness ledger and print what is not current."""
-    accessed = {r["source_id"]: r["accessed_date"] for r in read_csv(SOURCES)}
-    rows = parameter_rows() + target_rows(accessed) + technology_rows() + sales_rows()
+    rows = parameter_rows() + target_rows() + technology_rows() + sales_rows()
     rows.sort(
         key=lambda r: (
             int(str(r["cohort_year"])),
