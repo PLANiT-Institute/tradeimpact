@@ -5,14 +5,15 @@ does, so serving is the same static, no-store, loopback-only handler the dashboa
 this server adds is the one thing a static page cannot do: persist a correction.
 
     GET  /edits   the queued edits so far, as JSON
-    POST /edit    append one edit (JSON body) to data/auto/edits.csv, return the full queue
+    POST /edit    append one override (JSON body) to data/auto/overrides.csv, return the full list
 
 An edit never touches a raw source. It is a staged instruction — sale year, dataset, country,
-parameter, old value, new value, and a mandatory source id and note — written to an auditable
-CSV for a person to review and the pipeline to ingest. Raw data stays immutable and every
-change carries who said so and why, which is the same discipline the registries already keep.
+parameter, old value, new value, and a mandatory source id and note — written to
+data/auto/overrides.csv, which the pipeline applies on the next run
+(script/auto/model/apply_overrides.py) with the value, its source and its note. Raw data stays
+immutable and every change carries who said so and why, the same discipline the registries keep.
 
-The server is loopback only and writes exactly one file, ``data/auto/edits.csv``. It refuses a
+The server is loopback only and writes exactly one file, ``data/auto/overrides.csv``. It refuses a
 body without both a source and a note, so a value can never enter the queue unattributed.
 
 Run from the repository root:  .venv/bin/python script/auto/app/serve_app.py
@@ -37,7 +38,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[3]
 ROOT = REPO / "data" / "auto"
 PAGE = "app.html"
-EDITS = ROOT / "edits.csv"
+EDITS = ROOT / "overrides.csv"
 HOST = "127.0.0.1"
 PORT = 8770
 EDIT_FIELDS = [
@@ -181,7 +182,7 @@ def serve(port: int = PORT, open_browser: bool = False) -> None:
     with bind(handler, port) as httpd:
         port = httpd.server_address[1]
         print(f"serving {ROOT.relative_to(REPO)} at http://{HOST}:{port}/{PAGE}", flush=True)
-        print(f"edits queue → {EDITS.relative_to(REPO)}", flush=True)
+        print(f"overrides → {EDITS.relative_to(REPO)}", flush=True)
         print("Ctrl-C to stop", flush=True)
         if open_browser:
             threading.Timer(0.5, webbrowser.open, [f"http://{HOST}:{port}/{PAGE}"]).start()

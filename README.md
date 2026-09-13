@@ -108,11 +108,13 @@ previously published EU27 result exactly when fed the archived inputs (see
 | Korea, 2025 retail | Kia | 99.3 % | −2.79 | **+4.36** |
 | Korea, Jan–Jul 2026 retail | Kia | 99.5 % | −2.40 | **+1.85** |
 
-**Start here.** `data/auto/index.html` is the front door: what Trade Impact measures, what the
-current result says, what it can and cannot be used for, and a link to every other artefact. Serve
-it with `.venv/bin/python script/auto/serve_dashboard.py` and open
-<http://127.0.0.1:8765/index.html>. Like the dashboard, the report and the deck, it carries no
-figure of its own — it queries `tradeimpact_auto.sqlite` when it opens.
+**Start here.** `data/auto/app.html` is the workbench — one page, three modes: **data** (what
+each sale year holds, per country, with a click to queue a correction), **database** (every table
+in the file), and **results** (the impact with the sale year and the benchmark made explicit).
+Serve it with `.venv/bin/python script/auto/app/serve_app.py` and open
+<http://127.0.0.1:8770/app.html>; that server also accepts the queued corrections. The report,
+the pitch deck and the map dashboard link from its top bar. Every page queries
+`tradeimpact_auto.sqlite` at open and carries no figure of its own.
 
 ### How much of worldwide sales this captures
 

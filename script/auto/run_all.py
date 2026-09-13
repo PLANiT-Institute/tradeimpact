@@ -67,6 +67,7 @@ DERIVE = [
     "emission_targets/derive_jp_rates.py",
 ]
 MODEL = [
+    "model/apply_overrides.py",
     "model/build_cohorts.py",
     "model/build_reference.py",
     "model/build_reference_us.py",
@@ -85,7 +86,6 @@ MODEL = [
     "model/build_dashboard.py",
     "report/build_report.py",
     "report/build_pitch.py",
-    "report/build_index.py",
     "app/build_app.py",
 ]
 CHECKS = [

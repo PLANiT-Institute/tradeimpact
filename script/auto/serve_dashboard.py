@@ -26,7 +26,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 #: Sector directory under data/ -> the page the server announces.
-SECTOR_PAGES = {"auto": "index.html", "power": "report/ti_power_report.html"}
+SECTOR_PAGES = {"auto": "app.html", "power": "report/ti_power_report.html"}
 ROOT = REPO / "data" / "auto"
 PAGE = SECTOR_PAGES["auto"]
 HOST = "127.0.0.1"

@@ -15,6 +15,3 @@ reference/raw/*
 
 # The databases are built by the pipelines from the data in this repository.
 data/*/database/*.sqlite
-
-# workbench edit queue: staged corrections, not a committed input
-data/auto/edits.csv

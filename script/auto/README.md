@@ -24,7 +24,6 @@ model/
   build_data_quality.py step 5b: guideline §5.3 data-quality declaration per company x market
   build_database.py     final: every CSV under data/auto -> data/auto/database/tradeimpact_auto.sqlite
 report/
-  build_index.py        the front door: data/auto/index.html, what this is and what it is for
   build_report.py       the analysis, read out of the database
   build_pitch.py        five slides
 app/
@@ -33,6 +32,9 @@ app/
                         data/auto/edits.csv; the only write path in the sector
   model/build_readiness.py  data_readiness.csv: what each sale year actually received, and how
                             old it is (current / carried forward / stale), per country
+  model/apply_overrides.py  applies data/auto/overrides.csv (the workbench's queued corrections,
+                            each with a source and a note) onto the built parameters, targets and
+                            trajectories, before the cohorts are joined; a no-op when there are none
 ```
 
 `run_all.py` runs every step above in order, then `ruff check` and `pytest`, and stops at the
