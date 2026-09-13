@@ -23,7 +23,9 @@ Outputs (data/auto/output/)
 
 Algorithm (whitepaper §3.2-3.5, guideline §3.3-3.4, §4):
     $$ E_{prod}(t) = \\begin{cases} I_{cert}\\,f_{rw}\\,D_c & \\text{ICE, HEV}\\\\
-       \\eta_{cert}\\,k\\,f_{rw}\\, G_c(t)\\, D_c & \\text{BEV, FCEV} \\end{cases},\\qquad
+       \\eta_{cert}\\,k\\,f_{rw}\\, G_c(t)\\, D_c & \\text{BEV, FCEV}\\\\
+       \\big(I_{cert}\\,f_{rw} + \\eta_{cert}\\,G_c(t)\\big) D_c & \\text{PHEV}
+       \\end{cases},\\qquad
        TI_{v} = \\sum_{t=0}^{T_c-1}\\big(E_{prod}(t)-E_{ref,c}(t)\\big),\\qquad
        TI_{cell} = TI_v \\cdot N / 1000 $$
     ASCII: E_prod = tailpipe_gco2_km*factor/1000*vkt [kgCO2e/vehicle-yr] for ICE/HEV;
@@ -31,6 +33,8 @@ Algorithm (whitepaper §3.2-3.5, guideline §3.3-3.4, §4):
                (G in kgCO2e/kWh; k = 1 for a BEV, and for an FCEV the electricity an
                electrolyser draws per unit of hydrogen energy delivered, from
                vehicle_technology/method/hydrogen_supply.csv);
+           E_prod(t) = (tailpipe_gco2_km*factor/1000 + energy_wh_km/1000*G(t)) * vkt for PHEV,
+               both legs already utility-factor weighted by the type-approval procedure;
            TI_v = sum_{t=0}^{T-1} (E_prod(t) - E_ref(t)) [kgCO2e/vehicle];
            TI = TI_v*units/1000 [t]
     I_cert  certified tailpipe intensity (gCO2/km), eta_cert certified consumption (Wh/km),
@@ -52,11 +56,13 @@ from collections import defaultdict
 from model_io import (
     COHORTS_WITHHELD,
     DATA,
+    DUAL_CARRIER,
     ENERGY_POWERTRAINS,
     OUT_DIR,
     REPO,
     carrier_factor,
     certified,
+    certified_pair,
     load_cohorts,
     load_params,
     load_real_world,
@@ -265,7 +271,8 @@ def main() -> None:
             )
             continue
         vkt, life = float(p["vkt_km"]), int(p["lifetime_years"])
-        cert = certified(c)
+        cert = 0.0 if powertrain == DUAL_CARRIER else certified(c)
+        fuel, electric = certified_pair(c) if powertrain == DUAL_CARRIER else (0.0, 0.0)
         carrier = carrier_factor(powertrain)
         rw = factors[(c["test_cycle"], powertrain)]["factor"]
         for t in range(life):
@@ -277,7 +284,10 @@ def main() -> None:
             e_prod0 = 0.0
             for t in range(life):
                 e_ref, grid = trajectory[t]
-                if powertrain in ENERGY_POWERTRAINS:
+                if powertrain == DUAL_CARRIER:
+                    # Both legs are already utility-factor weighted, so they add to one km.
+                    e_prod = (fuel * rw / 1000.0 + electric / 1000.0 * grid) * vkt
+                elif powertrain in ENERGY_POWERTRAINS:
                     e_prod = cert / 1000.0 * carrier * rw * grid * vkt
                 else:
                     e_prod = cert * rw / 1000.0 * vkt

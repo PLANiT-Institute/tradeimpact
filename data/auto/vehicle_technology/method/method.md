@@ -27,7 +27,18 @@ Real-world correction factors are a separate small input keyed on test cycle × 
 (`method/real_world_correction.csv`, each row with its own `source_id`): WLTP values get the
 EEA OBFCM factors and range; EPA label values are already 5-cycle adjusted, so their factor is
 1.0 at both ends. They are applied in the model step, never folded into the certified columns.
-PHEV utility factors are still unsourced, so PHEV stays withheld.
+
+A plug-in hybrid carries both certified legs at once — the utility-factor-weighted tailpipe and
+the utility-factor-weighted electricity — and they are added, never chosen between, because each
+is that carrier's contribution to the same kilometre. The weighting is the type-approval one, and
+the evidence is that it overstates electric driving: ifeu and Oeko-Institut (2025), Table 1,
+measure the average real-world fuel consumption of plug-in hybrids registered under the rules in
+force to 2024 at over 300 % above type approval, and Table 5 puts the observed energy utility
+factor at 27.5 % for Hyundai, 34.8 % for Kia and 42.8 % for Toyota across about a million
+vehicles. Re-weighting on those numbers would need a type-approval utility factor per car, which
+neither the European nor the US dataset publishes here, so the certified weighting stands and the
+**plug-in hybrid figure is a floor with its direction stated** — the same treatment, and the same
+one-sided honesty, as the battery-electric row that passes its certified consumption through.
 
 ## Raw files and sources
 
@@ -58,9 +69,10 @@ powertrain (`source_id` `eea_co2_monitoring_2024`). Real-world correction factor
   row — the primary EU technology source, already joined to volumes.
 - Real-world correction: ICCT lab-to-road series (`References/ICCT_2018_LabToRoad.pdf`,
   `ICCT_2024_realworld_CO2_Europe_Jan2024.pdf` in the Drive folder).
-- PHEV utility factors: T&E 2023 PHEV report (Drive `References/TE_2023_PHEVs_2_report.pdf`);
-  publish PHEV results only when a sourced UF exists (they were withheld in the EU27 run
-  for exactly this reason).
+- PHEV utility factors: ifeu/Oeko-Institut (2025), registered as `ifeu_phev_2025`, is the
+  disclosure behind the plug-in hybrid floor. What would replace the floor with a figure: a
+  type-approval utility factor per vehicle — the EPA fuel-economy file does publish one
+  (`combinedUF`), the EEA monitoring dataset does not — paired with the observed factor above.
 - US: EPA certification data by model.
 
 ## Processing method

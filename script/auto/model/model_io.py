@@ -214,6 +214,8 @@ def load_cohorts(variant: str | None = CENTRAL) -> list[dict[str, str]]:
 #: Powertrains whose certified value is an energy consumption rather than a tailpipe intensity:
 #: electricity at the vehicle for a BEV, hydrogen energy content for an FCEV.
 ENERGY_POWERTRAINS = ("BEV", "FCEV")
+#: A plug-in hybrid burns both carriers, so it carries both certified values at once.
+DUAL_CARRIER = "PHEV"
 HYDROGEN_SUPPLY = DATA / "vehicle_technology" / "method" / "hydrogen_supply.csv"
 
 
@@ -237,6 +239,15 @@ def hydrogen_electricity_ratio() -> float:
 def carrier_factor(powertrain: str) -> float:
     """Electricity per unit of certified energy: 1 for a BEV, the hydrogen chain for an FCEV."""
     return hydrogen_electricity_ratio() if powertrain == "FCEV" else 1.0
+
+
+def certified_pair(row: dict[str, str]) -> tuple[float, float]:
+    """Both certified legs of a plug-in hybrid: (tailpipe gCO2/km, electricity Wh/km).
+
+    Both values are already utility-factor weighted by the type-approval procedure, so they are
+    the two carriers' contributions to one kilometre and are added, never chosen between.
+    """
+    return float(row["tailpipe_gco2_km"]), float(row["energy_wh_km"])
 
 
 def certified(row: dict[str, str]) -> float:

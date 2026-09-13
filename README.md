@@ -85,26 +85,26 @@ previously published EU27 result exactly when fed the archived inputs (see
 
 | Market, cohort | Company | Covered | S1 current | S2 committed policy |
 |---|---|---|---|---|
-| EU27, 2024 registrations | Toyota | 96.8 % | **+1.68 MtCO₂e** | **+14.37** |
-| EU27, 2024 registrations | Hyundai | 95.4 % | **+1.66** | **+8.00** |
-| EU27, 2024 registrations | Kia | 91.4 % | **+1.52** | **+7.37** |
+| EU27, 2024 registrations | Toyota | 99.8 % | **+1.28** | **+14.30** |
+| EU27, 2024 registrations | Hyundai | 99.7 % | **+1.43** | **+8.00** |
+| EU27, 2024 registrations | Kia | 99.6 % | **+1.05** | **+7.30** |
 | EU27, 2024 registrations | Nissan | 99.8 % | **+1.44** | **+4.43** |
-| US, 2024 brand sales | Toyota | 97.8 % | −5.53 | **+19.00** |
-| US, 2024 brand sales | Hyundai | 99.0 % | −1.56 | **+8.84** |
-| US, 2024 brand sales | Kia | 98.0 % | −1.01 | **+8.77** |
+| US, 2024 brand sales | Toyota | 100.0 % | −6.48 | **+18.55** |
+| US, 2024 brand sales | Hyundai | 100.0 % | −1.67 | **+8.82** |
+| US, 2024 brand sales | Kia | 99.8 % | −1.24 | **+8.71** |
 | US, 2024 brand sales | Nissan | 99.9 % | −2.26 | **+8.63** |
-| US, 2025 brand sales | Toyota | 98.3 % | −8.07 | **+18.60** |
-| US, 2025 brand sales | Hyundai | 98.4 % | −1.50 | **+9.63** |
-| US, 2025 brand sales | Kia | 98.2 % | −0.001 | **+10.52** |
+| US, 2025 brand sales | Toyota | 100.0 % | −8.89 | **+18.19** |
+| US, 2025 brand sales | Hyundai | 99.4 % | −1.62 | **+9.62** |
+| US, 2025 brand sales | Kia | 100.0 % | −0.31 | **+10.38** |
 | US, 2025 brand sales | Nissan | 100.0 % | −1.36 | **+9.65** |
-| US, Jan–Jul 2026 retail | Kia | 98.0 % | **+0.57** | **+6.83** |
+| US, Jan–Jul 2026 retail | Kia | 100.0 % | **+0.37** | **+6.74** |
 | Japan, 2024 registrations | Toyota | 99.3 % | −1.07 | **+3.50** |
 | Japan, 2024 registrations | Nissan | 93.7 % | −0.35 | **+0.47** |
 | Japan, 2025 registrations | Toyota | 100.0 % | −1.13 | **+3.53** |
 | Japan, 2025 registrations | Nissan | 94.6 % | −0.24 | **+0.41** |
 | Korea, 2024 domestic sales | Hyundai | 95.2 % | −5.02 | **+4.25** |
-| Korea, 2025 domestic sales | Hyundai | 95.4 % | −4.84 | **+4.08** |
 | Korea, 2024 retail | Kia | 99.3 % | −2.41 | **+4.59** |
+| Korea, 2025 domestic sales | Hyundai | 95.4 % | −4.84 | **+4.08** |
 | Korea, 2025 retail | Kia | 99.3 % | −2.79 | **+4.36** |
 | Korea, Jan–Jul 2026 retail | Kia | 99.5 % | −2.40 | **+1.85** |
 
@@ -112,10 +112,10 @@ previously published EU27 result exactly when fed the archived inputs (see
 
 | Company | Cohort | Worldwide sales | Assessed | Held | Countries assessed |
 |---|---|---|---|---|---|
-| Toyota | 2024 | 10.16 M | 38.5 % | 42.6 % | 28 |
-| Hyundai | 2024 | 4.17 M | 42.4 % | 48.7 % | 28 |
+| Toyota | 2024 | 10.16 M | 39.1 % | 42.6 % | 28 |
+| Hyundai | 2024 | 4.17 M | 43.1 % | 48.7 % | 28 |
 | Nissan | 2024 | 3.35 M | 38.1 % | 40.3 % | 28 |
-| Kia | 2024 | 3.01 M | 56.3 % | 100.0 % | 28 |
+| Kia | 2024 | 3.01 M | 57.9 % | 100.0 % | 28 |
 
 `Assessed` is units carrying a result over the company's own worldwide figure; `Held` is every
 unit the project holds for those brands, assessed or not, so the gap between the two is sales we
@@ -140,8 +140,10 @@ same cell side by side.
 an inventory reads: **positive = tonnes added** over the vehicles' lifetime, emissions the
 destination is locked into (bold in the table above); **negative = tonnes avoided** against the
 benchmark. The opposite convention is common in avoided-emissions reporting — this project does
-not use it. Markets are never summed: different sales bases, test cycles and benchmarks. Withheld units (PHEV, FCEV, no certified value, Luxembourg's
-implausible benchmark, the Genesis brand, Ioniq 9 without an EPA row) are listed, not absorbed.
+not use it. Markets are never summed: different sales bases, test cycles and benchmarks. Withheld units — Korean heavy trucks and
+coaches that the labelling scheme does not certify, Japanese nameplates absent from the
+fuel-economy list, discontinued US models without an EPA row, Luxembourg's implausible
+benchmark, the Genesis brand — are listed, not absorbed. They are 1.2 % of the units held.
 
 The tables above are lifetime totals. Every one of them has an annual twin that carries both
 sides of the comparison in each calendar year rather than only the net figure —

@@ -139,7 +139,7 @@ replacement of the central factor, never on top of it.
 1. **Luxembourg** — its fleet intensity (391 gCO2/km) fails the 80–320 plausibility band
    because fuel sold in LU is burned by cars registered elsewhere. The market is withheld
    from every company result with its unit count (`ti_withheld.csv`, reason
-   "destination benchmark withheld"), the same treatment as PHEV. The sensitivity step
+   "destination benchmark withheld"). The sensitivity step
    applies the same rule, so each dimension's central variant now equals the published total
    (before the two-market generalisation the sensitivity still assessed Luxembourg and its
    central variant sat about 1 % above the headline).
@@ -156,16 +156,26 @@ replacement of the central factor, never on top of it.
    the US Mirai 4,403 against 3,878 — a fuel-cell car on grid-made hydrogen is above the fleet
    average, not below it. 8,429 units in Korea and 808 in the United States; the 712 EU27 units
    stay withheld because the EEA monitoring dataset publishes no hydrogen consumption at all.
-3. **Segment intensity ratio** — set to 1.0 (all-passenger-car fleet average) and disclosed;
+3. **Plug-in hybrids carry both carriers.** The certified tailpipe and the certified
+   electricity are each weighted by the type-approval utility factor, so they are the petrol and
+   the grid contribution to the same kilometre and are added. That weighting is known to
+   overstate electric driving — ifeu and Oeko-Institut (2025) measure real-world fuel consumption
+   for plug-in hybrids registered under the rules in force to 2024 at over 300 % above type
+   approval, against an observed energy utility factor of 27.5 % (Hyundai), 34.8 % (Kia) and
+   42.8 % (Toyota) — but re-weighting needs a type-approval utility factor per car, which the
+   European dataset does not publish. So the certified weighting stands, the plug-in hybrid
+   figure is a floor, and the direction of the error is named here rather than left to be found.
+   213,764 units across the EU27 and the United States.
+4. **Segment intensity ratio** — set to 1.0 (all-passenger-car fleet average) and disclosed;
    no sourced segment split exists for the EU27 in-use fleet. For crossover-heavy portfolios
    this understates the benchmark and is therefore conservative for the exporter.
-4. **S2 grid when the pro-rata target is already met** — committed policy is never read as
+5. **S2 grid when the pro-rata target is already met** — committed policy is never read as
    less ambitious than the current trajectory: S2 power is floored at each market's observed
    S1 grid trend (`target_level = ndc_prorata_s1_floor`) instead of being held flat. BEV S2
    is therefore no longer below BEV S1.
-5. **Age-band year** — the mean-age partition is taken at or before the cohort year, the
+6. **Age-band year** — the mean-age partition is taken at or before the cohort year, the
    same cap as stock, CO2 and grid; the "one year ahead" exception is gone.
-6. **Companies in scope** — Hyundai, Kia, Toyota and Nissan (`companies.csv`). "The second
+7. **Companies in scope** — Hyundai, Kia, Toyota and Nissan (`companies.csv`). "The second
    Japanese maker" has three different answers and the lead chose on 2026-09-04: Honda is second
    by worldwide sales (3.52 M in 2025 against Suzuki 3.30 M and Nissan 3.20 M), Suzuki is second
    by worldwide production and by Japanese sales including kei cars, and Nissan is second by
@@ -176,7 +186,7 @@ replacement of the central factor, never on top of it.
    separate make in the registration data, counted and excluded rather than folded in. Genesis is listed as its own
    company with `in_scope = no`, so Genesis nameplates inside Hyundai's IR files (US and Korea)
    are counted and excluded, never folded into the Hyundai brand.
-7. **A-US-PT: powertrain split of US nameplates** — the company US releases publish one row per
+8. **A-US-PT: powertrain split of US nameplates** — the company US releases publish one row per
    nameplate (Tucson, Santa Fe, Sportage, Sorento, Niro, Elantra, Sonata, Kona, Carnival) and
    do not split ICE, HEV and PHEV. The units are divided with the EPA Automotive Trends
    model-year-2024 production-for-US-sale shares of the same nameplate
@@ -188,7 +198,7 @@ replacement of the central factor, never on top of it.
    MY2024 (Carnival Hybrid, Palisade Hybrid) is not in the central case. The `powertrain_mix`
    sensitivity keeps the all-hybrid bound for every split nameplate. Where a release separates
    the electric variant (Kia IR: Niro EV) only the remaining shares are applied.
-8. **Cohort years are never pooled.** Every aggregate (`ti_annual`, `ti_country`,
+9. **Cohort years are never pooled.** Every aggregate (`ti_annual`, `ti_country`,
    `ti_powertrain`, `ti_company`, `ti_sensitivity`, `ti_data_quality`, `ti_exclusions`) carries
    `cohort_year`; a 2024 cohort, a 2025 cohort and the 2026 year to date are separate rows,
    and the period each one covers travels with it.
@@ -228,8 +238,9 @@ authority, so its coverage caveats are part of the result and travel on every ro
    nameplate carries it (IONIQ 5/6/9, EV6, EV9, Nexo). `sales/method/us_model_map.csv`
    resolves every published name to an EPA `base_model` and either fixes the powertrain
    (`explicit`) or splits the nameplate with the EPA Automotive Trends MY2024 production shares
-   (`epa_share_my2024`, decision 6 above); the PHEV part of a split is withheld like every
-   PHEV, and the `powertrain_mix` sensitivity reprices every split nameplate as all-hybrid.
+   (`epa_share_my2024`, decision 7 above); the plug-in hybrid part of a split carries both its
+   certified legs like any other, and the `powertrain_mix` sensitivity reprices every split
+   nameplate as all-hybrid.
    Rio (1,917 units, 2024) and IONIQ 9 (5,189 units, 2025) are withheld because no EPA
    technology row exists at or before their cohort year.
 5. **Technology is EPA label data.** `vehicle_technology_us_epa.csv` values are trim-weighted
@@ -512,15 +523,15 @@ assessable, which `ti_coverage.csv` lists destination by destination.
 
 | Company | Cohort | Worldwide covers | Worldwide | Assessed | Held | Countries |
 |---|---|---|---|---|---|---|
-| Hyundai | 2024 | 2024-01..2024-12 | 4,165,543 | 42.4 % | 49 % | 28 |
-| Hyundai | 2025 | 2025-01..2025-12 | 4,110,382 | 35.0 % | 41 % | 2 |
-| Kia | 2024 | 2024-01..2024-12 | 3,008,502 | 56.3 % | 100 % | 28 |
-| Kia | 2025 | 2025-01..2025-12 | 3,096,598 | 44.6 % | 100 % | 2 |
-| Kia | 2026 | 2026-01..2026-07 | 1,904,864 | 44.4 % | 100 % | 2 |
+| Hyundai | 2024 | 2024-01..2024-12 | 4,165,543 | 43.1 % | 49 % | 28 |
+| Hyundai | 2025 | 2025-01..2025-12 | 4,110,382 | 35.2 % | 41 % | 2 |
+| Kia | 2024 | 2024-01..2024-12 | 3,008,502 | 57.9 % | 100 % | 28 |
+| Kia | 2025 | 2025-01..2025-12 | 3,096,598 | 45.1 % | 100 % | 2 |
+| Kia | 2026 | 2026-01..2026-07 | 1,904,864 | 44.9 % | 100 % | 2 |
 | Nissan | 2024 | 2024-01..2024-12 | 3,348,692 | 38.1 % | 40 % | 28 |
 | Nissan | 2025 | 2025-01..2025-12 | 3,202,137 | 32.6 % | 35 % | 2 |
-| Toyota | 2024 | 2024-01..2024-12 | 10,159,336 | 38.5 % | 43 % | 28 |
-| Toyota | 2025 | 2025-01..2025-12 | 10,536,807 | 31.5 % | 35 % | 2 |
+| Toyota | 2024 | 2024-01..2024-12 | 10,159,336 | 39.1 % | 43 % | 28 |
+| Toyota | 2025 | 2025-01..2025-12 | 10,536,807 | 31.9 % | 35 % | 2 |
 
 The 2025 rows are lower than the 2024 rows for one reason only: the EU27 cohort is a 2024
 registration year, so a 2025 row is the United States and, for the Korean makers, Korea. Kia's

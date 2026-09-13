@@ -41,11 +41,13 @@ from dataclasses import dataclass
 
 from model_io import (
     ALL_HEV,
+    DUAL_CARRIER,
     ENERGY_POWERTRAINS,
     OUT_DIR,
     REPO,
     carrier_factor,
     certified,
+    certified_pair,
     load_cohorts,
     load_params,
     load_rates,
@@ -96,10 +98,13 @@ class Cell:
         destination: Importing country (ISO 3166-1 alpha-2).
         segment: Vehicle segment, which decides the benchmark the cell is assessed against.
         model: Commercial model name as the sales source reports it.
-        powertrain: ICE / HEV / BEV.
+        powertrain: ICE / HEV / BEV / PHEV / FCEV.
         cohort_year: Sale year.
         units: Vehicles in the cell.
-        cert: Certified parameter — gCO2/km for ICE and HEV, Wh/km for BEV.
+        cert: Certified parameter — gCO2/km for ICE and HEV, Wh/km for BEV and FCEV, and the
+            tailpipe leg for a PHEV, whose electricity leg is ``electric``.
+        electric: A plug-in hybrid's certified electricity (Wh/km); zero for every other
+            powertrain, which carries one carrier and puts it in ``cert``.
         test_cycle: Cycle the certified value is measured on (WLTP or EPA).
         rule: Powertrain rule from the cohort table.
     """
@@ -113,6 +118,7 @@ class Cell:
     cohort_year: int
     units: int
     cert: float
+    electric: float
     test_cycle: str
     rule: str
 
@@ -128,7 +134,8 @@ def to_cell(row: dict[str, str]) -> Cell:
         powertrain=row["powertrain"],
         cohort_year=int(row["cohort_year"]),
         units=int(row["units"]),
-        cert=certified(row),
+        cert=certified_pair(row)[0] if row["powertrain"] == DUAL_CARRIER else certified(row),
+        electric=certified_pair(row)[1] if row["powertrain"] == DUAL_CARRIER else 0.0,
         test_cycle=row["test_cycle"],
         rule=row["powertrain_rule"],
     )
@@ -150,6 +157,10 @@ def crossover(
     Returns:
         (t*, None) when a finite non-negative crossover exists, else (None, reason).
     """
+    if pt == DUAL_CARRIER:
+        # Two carriers on one kilometre: one constant leg and one that follows the grid. The
+        # crossing has no closed form, so it is named rather than solved.
+        return None, "dual carrier: petrol and grid legs have no closed-form crossing"
     if pt in ENERGY_POWERTRAINS:
         a, b = 1.0 - rf, 1.0 - rp
         if eta_g0 <= 0 or i0 <= 0:
@@ -256,11 +267,14 @@ def cohort_total(
         cumulative = 0.0
         for t in range(life):
             e_ref = e_ref0 * (1 - rf) ** t
-            e_prod = (
-                (c.cert / 1000.0 * carrier_factor(c.powertrain) * rw * g0 * (1 - rp) ** t * vkt)
-                if c.powertrain in ENERGY_POWERTRAINS
-                else (c.cert * rw / 1000.0 * vkt)
-            )
+            if c.powertrain == DUAL_CARRIER:
+                e_prod = (c.cert * rw / 1000.0 + c.electric / 1000.0 * g0 * (1 - rp) ** t) * vkt
+            elif c.powertrain in ENERGY_POWERTRAINS:
+                e_prod = (
+                    c.cert / 1000.0 * carrier_factor(c.powertrain) * rw * g0 * (1 - rp) ** t * vkt
+                )
+            else:
+                e_prod = c.cert * rw / 1000.0 * vkt
             cumulative += e_prod - e_ref
         out[(c.company, c.cohort_year)] += cumulative * c.units / 1000.0
     return dict(out)
@@ -294,14 +308,15 @@ def build_crossovers(
             rf, rp = rates[(c.market, c.destination, c.segment, scenario)]
             e_prod_const = c.cert * rw / 1000.0 * vkt
             eta_g0 = c.cert / 1000.0 * carrier_factor(c.powertrain) * rw * g0
-            ratio = (
-                e_prod_const / (i0 * vkt) if c.powertrain not in ENERGY_POWERTRAINS else 0.0
-            )
+            grid_leg = c.electric / 1000.0 * g0
+            ratio = e_prod_const / (i0 * vkt) if c.powertrain not in ENERGY_POWERTRAINS else 0.0
             t_star, reason = crossover(c.powertrain, i0, rf, rp, ratio, eta_g0)
             cumulative = sum(
                 i0 * vkt * (1 - rf) ** t
                 - (
-                    (eta_g0 * (1 - rp) ** t * vkt)
+                    (e_prod_const + grid_leg * (1 - rp) ** t * vkt)
+                    if c.powertrain == DUAL_CARRIER
+                    else (eta_g0 * (1 - rp) ** t * vkt)
                     if c.powertrain in ENERGY_POWERTRAINS
                     else e_prod_const
                 )

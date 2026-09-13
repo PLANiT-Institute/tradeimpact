@@ -48,7 +48,7 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
-from model_io import ENERGY_POWERTRAINS, LIGHT_DUTY, PASSENGER_CAR
+from model_io import DUAL_CARRIER, ENERGY_POWERTRAINS, LIGHT_DUTY, PASSENGER_CAR
 
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data" / "auto"
@@ -101,9 +101,10 @@ HELD_RULES = (OUT_OF_SCOPE, "unallocated")
 HEV = "HEV"
 
 #: Powertrains that carry no defensible product intensity anywhere yet (guideline A-06).
-WITHHELD_POWERTRAIN = {
-    "PHEV": "no sourced utility factor: the sales data publish only combined values",
-}
+#: Powertrains no market can yet assess. Empty: plug-in hybrids now carry both certified legs
+#: and fuel-cell cars carry the electricity behind their hydrogen. Kept because a market that
+#: publishes a powertrain without a usable product value must still be able to name it.
+WITHHELD_POWERTRAIN: dict[str, str] = {}
 NO_CERTIFIED_EU27 = "the registration dataset reports no certified intensity for this cell"
 NO_CERTIFIED_EU27_FCEV = (
     "the EEA monitoring dataset records a fuel-cell car's tailpipe as zero and publishes no "
@@ -280,7 +281,10 @@ def build_eu27(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[
         t = tech.get((s["company"], s["destination"], s["model"], s["powertrain"]))
         tailpipe = t["tailpipe_gco2_km"] if t else ""
         energy = t["energy_wh_km"] if t else ""
-        certified = energy if s["powertrain"] in ENERGY_POWERTRAINS else tailpipe
+        if s["powertrain"] == DUAL_CARRIER:
+            certified = tailpipe and energy  # a plug-in hybrid needs both legs to be assessed
+        else:
+            certified = energy if s["powertrain"] in ENERGY_POWERTRAINS else tailpipe
         if t is None or not certified:
             reason = NO_CERTIFIED_EU27_FCEV if s["powertrain"] == "FCEV" else NO_CERTIFIED_EU27
             withheld.append({**identity, "units": units, "reason": reason, "coverage_note": note})
@@ -519,9 +523,14 @@ def us_cohort_row(
         return None
     cohort_year = int(s["cohort_year"])
     year, values = pick_model_year(by_year, cohort_year)
-    certified = (
-        values["energy_wh_km"] if powertrain in ENERGY_POWERTRAINS else values["tailpipe_gco2_km"]
-    )
+    if powertrain == DUAL_CARRIER:
+        certified = values["tailpipe_gco2_km"] and values["energy_wh_km"]
+    else:
+        certified = (
+            values["energy_wh_km"]
+            if powertrain in ENERGY_POWERTRAINS
+            else values["tailpipe_gco2_km"]
+        )
     if certified is None:
         return None
     return {
@@ -601,7 +610,10 @@ def build_kr(companies: set[str]) -> tuple[list[dict[str, object]], list[dict[st
         t = tech.get((s["company"], segment, model, pt))
         if t is None:
             return None
-        certified = t["energy_wh_km"] if pt in ENERGY_POWERTRAINS else t["tailpipe_gco2_km"]
+        if pt == DUAL_CARRIER:
+            certified = t["tailpipe_gco2_km"] and t["energy_wh_km"]
+        else:
+            certified = t["energy_wh_km"] if pt in ENERGY_POWERTRAINS else t["tailpipe_gco2_km"]
         if not certified:
             return None
         return {
