@@ -241,15 +241,15 @@ baseline.
 | id | Deliverable | Stage | Status | Acceptance test |
 |---|---|---|---|---|
 | `D-01` | Methodology white paper | ST12, ST14 | Not started | Not run |
-| `D-02` | Automotive case study | ST14 | Not started; EU27 result set in place but unverified | Not run |
+| `D-02` | Automotive case study | ST14 | In progress — four markets, four companies, 22 assessed targets and the §6.3 criteria evaluated; the analysis report, the five-slide deck and the front door all read the database at open. Missing: the working-paper form and the open-access locator |
 | `D-03` | Power generation case study | ST15, ST14 | Not started — same Month 7 milestone as `D-02` (`F-03`) | Not run |
 | `D-04` | Shipbuilding case study | ST15, ST14 | Not started | Not run |
 | `D-05` | Climate Arc integration specification | ST13 | Not started | Not run |
-| `D-06` | Open-source TI model | ST13 | In progress — nine scripts across five datasets and the model step; no tests, no release packaging | Not run |
+| `D-06` | Open-source TI model | ST13 | In progress — the whole pipeline re-runs end to end from `run_all.py` (extraction, derivation, model, database, dashboard, report, deck, front door) with 58 tests and a clean ruff gate; release packaging and licence headers not done | Not run |
 | `D-07` | Final synthesis report | ST14 | Not started | Not run |
 | `D-08` | Prototype dashboard public release | ST13 | Not started; `B-08` open | Not run |
 | `D-09` | Policy brief | ST14 | Not started | Not run |
-| `D-10` | Open dataset | ST02–ST07 | In progress — EU27 tables exist; IR workbook redistribution not cleared | Not run |
+| `D-10` | Open dataset | ST02–ST07 | In progress — every dataset has processed tables with a tier and a reason on each row, and the database carries them all; company IR workbook redistribution still not cleared, so the raw workbooks cannot be republished even though the derived tables can | Not run |
 
 ## 6. Process conformance
 

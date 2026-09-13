@@ -538,3 +538,45 @@ def test_pitch_deck_pins_its_libraries_and_states_its_limits() -> None:
     # The last slide is not optional: a deck that drops the limits is the failure mode.
     for phrase in ("not a company total", "pro rata", "not a claim that the sale caused"):
         assert phrase in html, f"the limits slide no longer says {phrase!r}"
+
+
+INDEX = DATA / "index.html"
+
+
+def test_front_door_carries_no_data_of_its_own() -> None:
+    """The index explains the result; it does not remember it.
+
+    This is the page most likely to be read without the others and least likely to be rebuilt
+    when someone is in a hurry, so it is the page where a baked-in figure would survive longest.
+    Every number on it — the cohort totals, the company table, the coverage range, the tier
+    shares, the furthest product class from the path — is a query run when the page opens.
+    """
+    assert INDEX.exists(), INDEX
+    html = INDEX.read_text(encoding="utf-8")
+    assert html.count("data-f=") >= 10
+    assert "tradeimpact_auto.sqlite" in html
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
+    text = re.sub(r"<[^>]+>", " ", text)
+    assert not re.search(r"[+−-]\d+\.\d+ ?Mt", text), "a total is baked into the front door"
+    assert not re.search(r"\d+(\.\d+)? ?%", text), "a percentage is baked into the front door"
+
+
+def test_front_door_pins_its_library_and_points_at_every_artefact() -> None:
+    """One pinned script, and a link to each artefact it is the front door for."""
+    html = INDEX.read_text(encoding="utf-8")
+    pattern = r"<script src=\"([^\"]+)\"[^>]*integrity=\"(sha(?:384|512)-[^\"]+)\""
+    scripts = re.findall(pattern, html)
+    assert len(scripts) == 1, scripts  # no chart library: this page draws nothing
+    assert scripts[0][0].startswith("https://cdnjs.cloudflare.com/ajax/libs/")
+    assert "<img" not in html and "<iframe" not in html
+    for target in (
+        "database/dashboard.html",
+        "report/ti_automotive_report.html",
+        "report/ti_automotive_pitch.html",
+        "output/method.md",
+        "database/tradeimpact_auto.sqlite",
+    ):
+        assert f'href="{target}' in html, f"the front door no longer links to {target}"
+    # The uses are the spine of the page, and the one it cannot carry is part of them.
+    for phrase in ("Monitoring", "Targeting", "Comparison", "Not evaluation"):
+        assert f">{phrase}<" in html, f"the front door no longer names {phrase!r}"
