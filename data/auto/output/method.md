@@ -33,6 +33,7 @@ different sales bases, different test cycles and different national benchmarks.
 | `ti_global_coverage.csv` | 5e | `build_global_coverage.py` | company × cohort year: the company's own worldwide sales and what covers it, units assessed and their share of worldwide, the markets and country count assessed, units held and their share, and the brands inside the denominator that the cohorts hold apart |
 | `ti_source_reconciliation.csv` | 5d | `build_reconciliation.py` | company × destination × cohort year × source file: units, basis and which side of the market it counts, whether the cohort was built from it, the brands a group figure covers, and the like-for-like spread against the file used |
 | `ti_coverage.csv` | 5c | `build_coverage.py` | company × destination (every destination in the market-side sales files, worldwide) × cohort year × basis: `destination_group` (EU27, US, the company's home country KR or JP, IN, others), `home_country`, units, assessed units, withheld units, status (`assessed`, `withheld`, `no_benchmark`, `plant_side_only`, `region_unassessed`, `destination_unknown`), market — the coverage picture a reader filters countries from |
+| `target_set.csv` | 1 | `build_target_set.py` | the unit of analysis — company × market × cohort year, with the operating life, the period, the volumes held and assessed, and each of guideline §6.3's four market-selection criteria marked met or failed |
 | `ti_data_quality.csv` | 5b | `build_data_quality.py` | company × market × cohort year, including `countries` (the destination codes covered), `countries_covered`, `countries_withheld` and `covered_share` (the sales coverage): analysis level, benchmark method, sales basis, test cycles, covered/withheld units, the two tier-C measures (`vkt_tier_c_share`, which drives the `directional_only` flag under guideline §5.3 at a 50 % threshold, and `cell_tier_c_share`, the worst-of-cell measure), central lifetime, scenarios reported and excluded, markets by distance tier, withheld reasons, coverage notes, warnings |
 
 `cohorts.csv` carries a `variant` column. `central` is the published cohort; every other value
@@ -483,6 +484,42 @@ Result: 873,293 covered units in 2025 (100.0 %), S1 −1.36 MtCO₂e, S2 +9.65. 
 publishes the split of its US volumes into North American production and imports
 (`us_release_origin_split.csv`, 760,213 against 113,094 in 2025), which no other company in
 scope discloses.
+
+## The target set against the guideline's own selection rules
+
+`target_set.csv` is the unit of analysis written down — which exporter, into which market, in
+which cohort year, over what operating life — and then tested against guideline §6.3, which does
+not merely ask for that list but sets four conditions a market selection must meet. Every
+condition is answered from the data, and a condition that fails is written down as failing.
+
+**§6.3-2 fails for every firm, and it is the one that matters.** The rule asks for markets
+covering at least 70 % of the firm's worldwide sales across at least three of them. The three-market
+part is met in 2024; the 70 % is not, by a wide margin — Kia reaches 57.9 %, Hyundai 43.1 %,
+Toyota 39.1 %, Nissan 38.1 %. The reason is not a choice made here: model-level volumes are free
+in the EU27 (the EEA monitoring database) and Japan (the JADA ranking), and nowhere else among
+these firms' large markets. India, Canada, Mexico, Brazil, China and the Middle East are held as
+company-reported volumes and counted in `ti_coverage.csv`, but none of them can carry a
+destination benchmark on free data. Any reading of these results has to carry that: they speak
+for the third to the half of each firm's sales that sits in markets whose own statistics are
+public.
+
+**§6.3-4(c) fails in the United States and Korea.** The rule asks each selected market for an
+accessible registration database. The EU27 and Japan have one and the cohorts are built on it.
+The United States and Korea do not, on free terms, so their cohorts are built on the companies'
+own market-side releases — which is a different and weaker thing, and is marked as failing rather
+than read as equivalent. It is also why those markets have a source-reconciliation row and the
+registration markets do not.
+
+**§6.3-3 is met in 2024 and fails in 2025.** The rule wants a high- and a low-grid-intensity
+market in the selection. The guideline defines neither word, so the rule applied here is a
+spread of at least a factor of two across the destinations a firm assesses in that year, and it
+is our rule, not the guideline's. The 2024 selections include the EU27, whose member states span
+35 to 608 gCO₂/kWh, so the spread is 17.4 and the criterion is met. The 2025 selections are the
+United States with Korea or Japan — 384, 416 and 483 gCO₂/kWh — a spread of 1.1 to 1.3, so it
+fails, and a 2025 result cannot be read as spanning grid conditions.
+
+**§6.3-1 is met throughout**: the markets are ranked by assessed volume within each firm and each
+cohort year, and the ranking is in the table.
 
 ## A company against its own second publication
 

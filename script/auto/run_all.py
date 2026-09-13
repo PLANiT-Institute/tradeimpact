@@ -77,6 +77,7 @@ MODEL = [
     "model/aggregate_country.py",
     "model/build_data_quality.py",
     "model/build_coverage.py",
+    "model/build_target_set.py",
     "model/build_reconciliation.py",
     "model/build_global_coverage.py",
     "model/build_database.py",
