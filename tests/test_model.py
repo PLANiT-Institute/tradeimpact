@@ -641,3 +641,20 @@ def test_every_table_has_a_health_verdict_and_every_source_a_licence() -> None:
     } - allowed
     assert not unknown, f"raw files with an unknown verdict: {sorted(unknown)}"
     conn.close()
+
+
+def test_dbreview_points_the_catalogue_at_the_served_route() -> None:
+    """The reviewer rewrites exactly the three database constants and finds both databases."""
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location("dbreview", REPO / "script" / "dbreview.py")
+    assert spec and spec.loader
+    dbreview = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(dbreview)
+
+    html = dbreview.page_html(DATA / "database" / "tradeimpact_auto.sqlite").decode()
+    assert "DB_RELATIVE='/db.sqlite'" in html and "SERVED_DB='/db.sqlite'" in html
+    assert "DB_FILE='tradeimpact_auto.sqlite'" in html
+    assert "database/tradeimpact_auto.sqlite" not in html.split("DB_RELATIVE=")[1][:60]
+    names = {p.name for p in dbreview.find_databases()}
+    assert {"tradeimpact_auto.sqlite", "tradeimpact_power.sqlite"} <= names

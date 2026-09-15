@@ -30,6 +30,8 @@ app/
   build_app.py          the workbench: data/auto/app.html, three modes over one database
   build_catalogue.py    the data catalogue: data/auto/catalogue.html — the whole database on one
                         page, its structure drawn, every table's columns and its health
+script/dbreview.py      serves the catalogue against any SQLite file at one fixed route; the
+                        repo-root dbreview.command is its double-click launcher
   serve_app.py          serves the workbench and queues edits (source + note required) to
                         data/auto/edits.csv; the only write path in the sector
   model/build_readiness.py  data_readiness.csv: what each sale year actually received, and how

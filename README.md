@@ -108,6 +108,11 @@ previously published EU27 result exactly when fed the archived inputs (see
 | Korea, 2025 retail | Kia | 99.3 % | −2.79 | **+4.36** |
 | Korea, Jan–Jul 2026 retail | Kia | 99.5 % | −2.40 | **+1.85** |
 
+**To look at a database, double-click `dbreview.command`.** It opens the automotive database in
+the data catalogue — every table, its columns, its joins drawn, its health. Give it a path to
+open another file: `./dbreview.command data/power/database/tradeimpact_power.sqlite`. A file that
+carries no catalogue of its own is described on the fly.
+
 **Start here.** `data/auto/app.html` is the workbench — one page, three modes: **data** (what
 each sale year holds, per country, with a click to queue a correction), **database** (every table
 in the file), and **results** (the impact with the sale year and the benchmark made explicit).

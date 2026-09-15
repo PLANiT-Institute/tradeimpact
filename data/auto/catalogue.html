@@ -175,6 +175,8 @@ const CDN_DIR='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/', DB_FILE='
 const SERVED_DB='http://127.0.0.1:8770/database/tradeimpact_auto.sqlite', SERVE_PORT='8770';
 let SQL=null, DB=null;
 let TABLES=[], COLUMNS=[], RELATIONS=[], LICENCES={}, PROVIDERS={};
+let DERIVED=false;              // true when the file carries no catalogue of its own
+const COLCACHE={};              // table -> columns, computed on demand in derived mode
 const state={mode:'overview', dataset:'all', layer:'all', health:'all', q:''};
 const LAYERS=['input','catalogue','processed','result'];
 const LAYER_LABEL={input:'입력 Input', catalogue:'카탈로그 Catalogue', processed:'처리 Processed', result:'결과 Result'};
@@ -189,6 +191,78 @@ const pct=(v)=>v===''||v==null?'—':(Number(v)*100).toFixed(0)+'%';
 function Q(sql,p){const o=[];const st=DB.prepare(sql);if(p)st.bind(p);
   while(st.step())o.push(st.getAsObject());st.free();return o;}
 function setStatus(h,bad){$('status').innerHTML=h;$('status').classList.toggle('err',!!bad);}
+const has=(t)=>Q("SELECT 1 FROM sqlite_master WHERE type='table' AND name=?",[t]).length>0;
+
+/* A database that carries no schema_* catalogue — any SQLite file the user opens — is described
+   here instead. Table facts are cheap and computed now; column statistics are not, so they are
+   computed when a table's detail is opened and cached. */
+function deriveCatalogue(){
+  DERIVED=true;
+  const names=Q("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name").map((r)=>r.name);
+  TABLES=names.map((n)=>{
+    const rows=(Q('SELECT COUNT(*) c FROM "'+n+'"')[0]||{}).c||0;
+    const cols=Q('PRAGMA table_info("'+n+'")');
+    const years=[];
+    cols.forEach((c)=>{ if(/(^|_)(year|vintage)$/i.test(c.name)){
+      const r=Q('SELECT MIN(CAST("'+c.name+'" AS INTEGER)) lo, MAX(CAST("'+c.name+'" AS INTEGER)) hi FROM "'+n+'" WHERE "'+c.name+'" != \'\'')[0]||{};
+      if(r.lo>1900) years.push(r.lo,r.hi); } });
+    return {table:n, dataset:'(file)', kind:'table', layer:'processed',
+      description:'', grain:cols.filter((c)=>c.pk).map((c)=>c.name).join(';'),
+      rows:rows, columns:cols.length,
+      data_year_min:years.length?Math.min(...years):'', data_year_max:years.length?Math.max(...years):'',
+      tier_a:0, tier_b:0, tier_c:0, tier_c_share:'', source_path:'', licences:'',
+      raw_redistribution:'', health:rows?'ok':'empty',
+      health_reason:rows?'rows present':'no rows'};
+  });
+  RELATIONS=deriveRelations(names);
+  COLUMNS=[];
+}
+
+/* Relations for a foreign database: its own foreign keys where it declares them, and otherwise
+   a name match — a column that is another table's primary key, which is how an export like the
+   Arc exchange layer carries its joins. Both are labelled so neither is mistaken for the other. */
+function deriveRelations(names){
+  const out=[], seen=new Set();
+  const pkOf={};
+  names.forEach((n)=>{ const pks=Q('PRAGMA table_info("'+n+'")').filter((c)=>c.pk).map((c)=>c.name);
+    if(pks.length===1) pkOf[pks[0]]=n; });
+  names.forEach((n)=>{
+    Q('PRAGMA foreign_key_list("'+n+'")').forEach((fk)=>{
+      const k=n+'>'+fk.table+'|'+fk.from; if(seen.has(k))return; seen.add(k);
+      out.push({from_table:n, from_columns:fk.from, to_table:fk.table, to_columns:fk.to||fk.from, kind:'foreign key'}); });
+    Q('PRAGMA table_info("'+n+'")').forEach((c)=>{
+      const target=pkOf[c.name];
+      if(!target||target===n) return;
+      const k=n+'>'+target+'|'+c.name; if(seen.has(k))return; seen.add(k);
+      out.push({from_table:n, from_columns:c.name, to_table:target, to_columns:c.name, kind:'inferred'}); });
+  });
+  return out;
+}
+
+/* Column statistics for one table, from the catalogue when the file has one and computed here
+   when it does not. */
+function columnsFor(table){
+  if(!DERIVED) return COLUMNS.filter((c)=>c.table===table);
+  if(COLCACHE[table]) return COLCACHE[table];
+  const info=Q('PRAGMA table_info("'+table+'")');
+  const total=(Q('SELECT COUNT(*) c FROM "'+table+'"')[0]||{}).c||0;
+  const rows=info.map((c,i)=>{
+    const type=(c.type||'TEXT').toUpperCase();
+    const numeric=type.includes('INT')||type.includes('REAL')||type.includes('NUM')||type.includes('FLOA')||type.includes('DOUB');
+    let blanks=0, distinct=0, lo='', hi='', example='';
+    if(total){
+      const s=Q('SELECT COUNT(DISTINCT "'+c.name+'") d, SUM(CASE WHEN "'+c.name+'" IS NULL OR "'+c.name+'"=\'\' THEN 1 ELSE 0 END) b FROM "'+table+'"')[0]||{};
+      distinct=s.d||0; blanks=s.b||0;
+      if(numeric){ const m=Q('SELECT MIN("'+c.name+'") lo, MAX("'+c.name+'") hi FROM "'+table+'"')[0]||{}; lo=m.lo==null?'':m.lo; hi=m.hi==null?'':m.hi; }
+      const e=Q('SELECT "'+c.name+'" v FROM "'+table+'" WHERE "'+c.name+'" IS NOT NULL AND "'+c.name+'"!=\'\' LIMIT 1')[0];
+      example=e?String(e.v).slice(0,80):'';
+    }
+    return {table:table, column:c.name, position:i+1, type:type, role:c.pk?'key':(numeric?'measure':'dimension'),
+      blanks:blanks, blank_share:total?blanks/total:'', distinct:distinct, min:lo, max:hi, example:example, references:''};
+  });
+  COLCACHE[table]=rows;
+  return rows;
+}
 function clip(t){const s=String(t==null?'':t);return s.length<=40?'<td class="txt">'+esc(s)+'</td>'
   :'<td class="txt clip" data-full="'+esc(s)+'">'+esc(s)+'</td>';}
 
@@ -203,7 +277,7 @@ function drawOverview(){
   const h=(k)=>TABLES.filter((t)=>t.health===k).length;
   const years=TABLES.map((t)=>+t.data_year_min).filter((y)=>y>1900);
   const kpis=[
-    [fmtN(rows),'tables'],[fmtN(allRows),'rows'],[fmtN(COLUMNS.length),'columns'],
+    [fmtN(rows),'tables'],[fmtN(allRows),'rows'],[fmtN(DERIVED?TABLES.reduce((a,t)=>a+ +t.columns,0):COLUMNS.length),'columns'],
     [fmtN(Object.keys(byDs).length),'datasets'],
     [h('ok'),'healthy'],[h('watch')+h('stale'),'watch / stale'],
     [h('unlicensed')+h('empty'),'unlicensed / empty'],
@@ -335,10 +409,18 @@ function drawTables(){
 
 /* ------------------------------------------------------------ sources */
 function drawSources(){
+  if(!has('data_providers')||!has('licences')){
+    $('view').innerHTML='<div class="card"><h3>No licence catalogue in this file</h3>'+
+      '<div class="sub">This database carries no <code>data_providers</code> or <code>licences</code> '+
+      'table, so there is nothing to report on where its data came from or what may be '+
+      'republished. The Trade database carries both; a file exported from elsewhere generally '+
+      'does not.</div></div>';
+    return;
+  }
   const provs=Q('SELECT * FROM data_providers ORDER BY provider_name');
-  const counts={}; Q('SELECT provider_id, COUNT(*) n FROM sources GROUP BY provider_id')
+  const counts={}; if(has('sources')) Q('SELECT provider_id, COUNT(*) n FROM sources GROUP BY provider_id')
     .forEach((r)=>counts[r.provider_id]=r.n);
-  const files={}; Q('SELECT provider_id, COUNT(*) n FROM redistribution GROUP BY provider_id')
+  const files={}; if(has('redistribution')) Q('SELECT provider_id, COUNT(*) n FROM redistribution GROUP BY provider_id')
     .forEach((r)=>files[r.provider_id]=r.n);
   const licRows=Q('SELECT * FROM licences ORDER BY raw_redistribution, licence_name');
   const verdict=(v)=>'<span class="h h-'+(v==='open'?'ok':v==='derived_only'?'watch':'unlicensed')+'">'+esc(v)+'</span>';
@@ -367,7 +449,7 @@ function drawSources(){
 /* ------------------------------------------------------------ detail */
 function openDetail(table){
   const t=TABLES.find((x)=>x.table===table); if(!t) return;
-  const cols=COLUMNS.filter((c)=>c.table===table);
+  const cols=columnsFor(table);
   const out=RELATIONS.filter((r)=>r.from_table===table);
   const inn=RELATIONS.filter((r)=>r.to_table===table);
   $('d-name').textContent=table;
@@ -423,14 +505,20 @@ function engineReady(){ if(SQL) return Promise.resolve(SQL);
 function openBytes(buffer,name){
   return engineReady().then((sql)=>{
     DB=new sql.Database(new Uint8Array(buffer)); DB.exec('SELECT 1');
-    TABLES=Q('SELECT * FROM schema_tables ORDER BY "table"');
-    COLUMNS=Q('SELECT * FROM schema_columns ORDER BY "table", CAST(position AS INTEGER)');
-    RELATIONS=Q('SELECT * FROM schema_relations');
-    Q('SELECT * FROM licences').forEach((l)=>LICENCES[l.licence_id]=l);
-    Q('SELECT * FROM data_providers').forEach((p)=>PROVIDERS[p.provider_id]=p);
+    DERIVED=false; LICENCES={}; PROVIDERS={}; Object.keys(COLCACHE).forEach((k)=>delete COLCACHE[k]);
+    if(has('schema_tables')){
+      TABLES=Q('SELECT * FROM schema_tables ORDER BY "table"');
+      COLUMNS=Q('SELECT * FROM schema_columns ORDER BY "table", CAST(position AS INTEGER)');
+      RELATIONS=has('schema_relations')?Q('SELECT * FROM schema_relations'):[];
+    } else {
+      deriveCatalogue();
+    }
+    if(has('licences')) Q('SELECT * FROM licences').forEach((l)=>LICENCES[l.licence_id]=l);
+    if(has('data_providers')) Q('SELECT * FROM data_providers').forEach((p)=>PROVIDERS[p.provider_id]=p);
     $('opener').classList.add('hidden'); $('app').classList.remove('hidden');
-    const as_of=(Q('SELECT MAX(accessed_date) d FROM sources')[0]||{}).d||'';
-    setStatus('<b>'+esc(name)+'</b>'+(as_of?' · as of '+esc(as_of):''));
+    const as_of=has('sources')?((Q('SELECT MAX(accessed_date) d FROM sources')[0]||{}).d||''):'';
+    setStatus('<b>'+esc(name)+'</b>'+(as_of?' · as of '+esc(as_of):'')+
+      (DERIVED?' · <span style="color:var(--warn)">described on the fly</span>':''));
     const start=['overview','structure','tables','sources'].includes(location.hash.slice(1))
       ? location.hash.slice(1):'overview';
     setMode(start);
