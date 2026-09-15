@@ -117,7 +117,21 @@ def fetch(dataset: str, filters: dict[str, str]) -> tuple[str, dict]:
     return url, payload
 
 
-def register(path: Path, dataset: str, url: str, description: str, accessed: str) -> None:
+def source_id_for(dataset: str, filters: dict[str, str]) -> str:
+    """The sources.csv id a cube belongs to.
+
+    env_air_gge is one Eurostat cube but three registered sources here, one per CRF category,
+    because each category is a different inventory line with its own use; the CRF code in the
+    filter names which one. Every other cube is one source per dataset code.
+    """
+    if dataset == "env_air_gge" and "src_crf" in filters:
+        return f"eurostat_{dataset}_{filters['src_crf'].lower()}"
+    return f"eurostat_{dataset}"
+
+
+def register(
+    path: Path, dataset: str, filters: dict[str, str], url: str, description: str, accessed: str
+) -> None:
     """Upsert this file's row in data/auto/registry/raw_files.csv (link, hash, access date)."""
     registry = DATA / "registry" / "raw_files.csv"
     rows = list(csv.DictReader(registry.open(newline="")))
@@ -125,7 +139,7 @@ def register(path: Path, dataset: str, url: str, description: str, accessed: str
     row = {
         "dataset": path.parent.parent.name,
         "file": path.name,
-        "source_id": f"eurostat_{dataset}",
+        "source_id": source_id_for(dataset, filters),
         "original_name": f"{dataset} (JSON-stat 2.0)",
         "sha256": digest,
         "note": (
@@ -154,7 +168,7 @@ def main() -> None:
         url, payload = fetch(dataset, filters)
         snapshot = {
             "accessed_date": accessed,
-            "source_id": f"eurostat_{dataset}",
+            "source_id": source_id_for(dataset, filters),
             "dataset": dataset,
             "description": description,
             "dataset_page": BROWSER.format(dataset=dataset),
@@ -164,7 +178,7 @@ def main() -> None:
         }
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(snapshot, indent=1, sort_keys=True) + "\n")
-        register(out, dataset, url, description, accessed)
+        register(out, dataset, filters, url, description, accessed)
         print(
             f"{out.relative_to(REPO)}: {len(payload['value']):,} values; "
             f"updated {payload.get('updated', '')}"

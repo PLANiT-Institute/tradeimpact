@@ -1,0 +1,32 @@
+provider_id,provider_name,provider_type,website,licence_id
+eea,European Environment Agency,Government agency,https://www.eea.europa.eu,cc_by_4_0
+eurostat,Eurostat,Government agency,https://ec.europa.eu/eurostat,eurostat_reuse
+ec,European Commission,Government,https://commission.europa.eu,eur_lex_reuse
+eu,European Union (EUR-Lex),Government,https://eur-lex.europa.eu,eur_lex_reuse
+owid,Our World in Data (Ember),Not-for-profit,https://ourworldindata.org,cc_by_4_0
+us_epa,US Environmental Protection Agency,Government agency,https://www.epa.gov,us_public_domain
+us_nhtsa,US National Highway Traffic Safety Administration,Government agency,https://www.nhtsa.gov,us_public_domain
+us_fhwa,US Federal Highway Administration,Government agency,https://highways.dot.gov,us_public_domain
+abs,Australian Bureau of Statistics,Government agency,https://www.abs.gov.au,cc_by_4_0
+dcceew,Australian Government DCCEEW,Government,https://www.dcceew.gov.au,cc_by_4_0
+unsd,United Nations Statistics Division (Comtrade),IGO,https://comtradeplus.un.org,un_comtrade
+unfccc,UNFCCC,IGO,https://unfccc.int,unfccc_public_domain
+kr_2050cnc,2050 Carbon Neutrality and Green Growth Commission (Korea),Government,https://www.2050cnc.go.kr,kr_gov_publication
+kr_molit,"Korea Ministry of Land, Infrastructure and Transport",Government,https://www.molit.go.kr,kr_public_data
+kr_gir,Korea Greenhouse Gas Inventory and Research Center,Government agency,https://www.gir.go.kr,kr_public_data
+kr_kotsa,Korea Transportation Safety Authority,Government agency,https://www.kotsa.or.kr,kr_public_data
+kr_kea,Korea Energy Agency,Government agency,https://www.energy.or.kr,kr_public_data
+kr_nier,Korea National Institute of Environmental Research,Government agency,https://www.nier.go.kr,kr_public_data
+jp_gio,Greenhouse Gas Inventory Office of Japan (NIES),Government agency,https://www.nies.go.jp,jp_gov_publication
+jp_mlit,"Japan Ministry of Land, Infrastructure, Transport and Tourism",Government,https://www.mlit.go.jp,mlit_terms
+jp_estat,Japan e-Stat (Statistics Bureau),Government agency,https://www.e-stat.go.jp,jp_estat_terms
+jp_airia,Automobile Inspection and Registration Information Association,Not-for-profit,https://www.airia.or.jp,airia_terms
+jp_jada,Japan Automobile Dealers Association,Industry association,https://www.jada.or.jp,jada_terms
+irena,International Renewable Energy Agency,IGO,https://www.irena.org,publisher_attribution
+ifeu,ifeu / Oeko-Institut,Research institute,https://www.ifeu.de,publisher_attribution
+hyundai,Hyundai Motor Company,Company,https://www.hyundai.com,company_ir
+kia,Kia Corporation,Company,https://www.kia.com,company_ir
+toyota,Toyota Motor Corporation,Company,https://www.toyota.com,company_ir
+nissan,Nissan Motor Corporation,Company,https://www.nissan-global.com,company_ir
+topojson,topojson / world-atlas (Natural Earth),Open-source project,https://github.com/topojson/world-atlas,isc
+mledoze,mledoze/world-countries,Open-source project,https://github.com/mledoze/countries,odbl_1_0

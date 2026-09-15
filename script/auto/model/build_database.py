@@ -175,11 +175,10 @@ def load_geometry(conn: sqlite3.Connection, geometry: Path = GEOMETRY) -> int:
 
 def main() -> None:
     """Rebuild the database from every CSV under data/auto."""
+    # Every registry table loads, so a new catalogue file (licences, providers, redistribution,
+    # schema) appears in the database without this list having to know about it.
     plan: list[tuple[Path, str, str]] = [
-        (REGISTRY / "sources.csv", "registry", "auto"),
-        (REGISTRY / "raw_files.csv", "registry", "auto"),
-        (TIERS, "registry", "auto"),
-        (VALUE_TIERS, "registry", "auto"),
+        (path, "registry", "auto") for path in sorted(REGISTRY.glob("*.csv"))
     ]
     rules = load_tier_rules()
     for dataset in DATASETS:
