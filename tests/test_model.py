@@ -585,3 +585,59 @@ def test_workbench_edit_queue_requires_a_source_and_a_note() -> None:
             serve_app.append_edit({**good, missing: "  "})
     with pytest.raises(ValueError, match="missing"):
         serve_app.append_edit({"cohort_year": 2026})
+
+
+CATALOGUE = DATA / "catalogue.html"
+
+
+def test_catalogue_carries_no_data_and_offers_four_views() -> None:
+    """The data catalogue describes the database by querying it, not by remembering it."""
+    assert CATALOGUE.exists(), CATALOGUE
+    html = CATALOGUE.read_text(encoding="utf-8")
+    assert "tradeimpact_auto.sqlite" in html
+    for view in ("overview", "structure", "tables", "sources"):
+        assert f'data-mode="{view}"' in html, f"the catalogue is missing the {view} view"
+    # It reads the three schema tables and the licence catalogue rather than hardcoding them.
+    for table in ("schema_tables", "schema_columns", "schema_relations", "licences",
+                  "data_providers"):
+        assert table in html, f"the catalogue no longer reads {table}"
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
+    text = re.sub(r"<code>.*?</code>|<[^>]+>", " ", text, flags=re.S)
+    # a count renders with thousands separators and a share with a per-cent sign; neither may
+    # be written into the file, because both would be a figure that cannot go stale visibly
+    assert not re.search(r"\d,\d{3}", text), "a row count is baked into the catalogue"
+    assert not re.search(r"\d+(\.\d+)? ?%", text), "a share is baked into the catalogue"
+
+
+def test_every_table_has_a_health_verdict_and_every_source_a_licence() -> None:
+    """The catalogue tables are complete: nothing unflagged, nothing unlicensed by omission."""
+    import sqlite3
+
+    conn = sqlite3.connect(DATA / "database" / "tradeimpact_auto.sqlite")
+    verdicts = {"ok", "watch", "stale", "unlicensed", "empty"}
+    bad = [
+        r[0]
+        for r in conn.execute("SELECT \"table\", health FROM schema_tables")
+        if r[1] not in verdicts
+    ]
+    assert not bad, f"tables with no health verdict: {bad}"
+
+    # every source resolves to a provider, and every provider to a licence
+    unmapped = conn.execute(
+        "SELECT COUNT(*) FROM sources s LEFT JOIN data_providers p "
+        "ON s.provider_id = p.provider_id WHERE p.provider_id IS NULL"
+    ).fetchone()[0]
+    assert unmapped == 0, f"{unmapped} sources resolve to no provider"
+    orphan = conn.execute(
+        "SELECT COUNT(*) FROM data_providers p LEFT JOIN licences l "
+        "ON p.licence_id = l.licence_id WHERE l.licence_id IS NULL"
+    ).fetchone()[0]
+    assert orphan == 0, f"{orphan} providers resolve to no licence"
+
+    # and every raw file to a redistribution verdict that is one of the three we defined
+    allowed = {"open", "derived_only", "no"}
+    unknown = {
+        r[0] for r in conn.execute("SELECT DISTINCT raw_redistribution FROM redistribution")
+    } - allowed
+    assert not unknown, f"raw files with an unknown verdict: {sorted(unknown)}"
+    conn.close()

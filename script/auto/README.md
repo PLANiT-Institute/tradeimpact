@@ -28,10 +28,16 @@ report/
   build_pitch.py        five slides
 app/
   build_app.py          the workbench: data/auto/app.html, three modes over one database
+  build_catalogue.py    the data catalogue: data/auto/catalogue.html — the whole database on one
+                        page, its structure drawn, every table's columns and its health
   serve_app.py          serves the workbench and queues edits (source + note required) to
                         data/auto/edits.csv; the only write path in the sector
   model/build_readiness.py  data_readiness.csv: what each sale year actually received, and how
                             old it is (current / carried forward / stale), per country
+  registry/build_catalog.py  the licence and provider catalogue, and a redistribution verdict
+                             per raw file (deliverable D-10)
+  registry/build_schema.py   schema_tables / schema_columns / schema_relations: what every table
+                             is, what is in it, how it joins, and how healthy it is
   model/apply_overrides.py  applies data/auto/overrides.csv (the workbench's queued corrections,
                             each with a source and a note) onto the built parameters, targets and
                             trajectories, before the cohorts are joined; a no-op when there are none

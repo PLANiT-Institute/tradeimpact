@@ -84,10 +84,12 @@ MODEL = [
     "model/build_readiness.py",
     "registry/build_catalog.py",
     "model/build_database.py",
+    "registry/build_schema.py",
     "model/build_dashboard.py",
     "report/build_report.py",
     "report/build_pitch.py",
     "app/build_app.py",
+    "app/build_catalogue.py",
 ]
 CHECKS = [
     [PY, "-m", "ruff", "check", "script", "tests"],
