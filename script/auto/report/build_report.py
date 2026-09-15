@@ -38,7 +38,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "model"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "app"))
 from build_dashboard import (  # noqa: E402
     D3_SRC,
     D3_SRI,

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trade Impact — automotive</title>
+<title>__TITLE__</title>
 <link rel="icon" href="data:,">
 <style>
 :root {
@@ -330,7 +330,7 @@ dialog::backdrop { background: rgba(0,0,0,.4); }
 
 <div id="opener"><div class="box">
   <h2>Open the database</h2>
-  <p id="opener-msg">This page holds no data of its own. Choose <code>tradeimpact_auto.sqlite</code> from this
+  <p id="opener-msg">This page holds no data of its own. Choose <code>__DB_FILE__</code> from this
     directory — or any other SQLite file. It never leaves your machine.</p>
   <div class="drop" id="drop">
     <input type="file" id="dbfile" accept=".sqlite,.db,.sqlite3">
@@ -372,11 +372,11 @@ dialog::backdrop { background: rgba(0,0,0,.4); }
   <button class="x" id="d-close" type="button">Close</button></div>
   <div class="db" id="d-body"></div></dialog>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js" integrity="sha512-+6Q7hv5pGUBXOuHWw8OdQx3ac7DzM3oJhYqz7SHDku0yl9EBdMqegoPed4GsHRoNF/VQYK2LTYewAIEBrEf/3w==" crossorigin="anonymous"
+<script src="__SQLJS_DIR__sql-wasm.js" integrity="__SQLJS_SRI__" crossorigin="anonymous"
   referrerpolicy="no-referrer" onerror="window.__sqljsFailed=true"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"
+<script src="__D3_SRC__" integrity="__D3_SRI__" crossorigin="anonymous"
   referrerpolicy="no-referrer" onerror="window.__d3Failed=true"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha384-9dCJK6nh7skY14HrcvlLYlFga9/MehJjL9ONWRflmiXNRuf8p2jiF4Y5PR881PTq" crossorigin="anonymous"
+<script src="__TOPOJSON_SRC__" integrity="__TOPOJSON_SRI__" crossorigin="anonymous"
   referrerpolicy="no-referrer" onerror="window.__d3Failed=true"></script>
 <script>
 (function () {
@@ -384,14 +384,14 @@ dialog::backdrop { background: rgba(0,0,0,.4); }
 
 /* Constants written by the builder; every other value on this page is read from the database
    at view time. */
-const CDN_DIR = 'https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/';
-const SQLJS_VERSION = '1.10.3';
-const DB_FILE = 'tradeimpact_auto.sqlite';
-const DEFAULT_PIVOT = {"agg":"sum","cols":"scenario","rows":["market","company","powertrain","model"],"table":"ti_by_model","vals":["ti_tco2e"]};
-const YEARLY_PIVOT = {"agg":"sum","cols":"calendar_year","rows":["market","company","cohort_year","scenario"],"table":"ti_annual","vals":["e_ref_tco2e","e_prod_tco2e","ti_tco2e"]};
-const STAGES = ["raw","method","processed","output"];
-const DATASET_ORDER = ["sales","vehicle_technology","vehicle_usage","country_emissions","emission_targets","model","auto"];
-const MODEL_STEPS = [["3a cohorts",["cohorts"]],["3 reference",["destination_parameters","reference_trajectories"]],["4 impact",["ti_by_model","ti_annual_by_model","ti_annual","ti_withheld","ti_exclusions"]],["4b crossover and sensitivity",["ti_crossover","ti_sensitivity"]],["5 aggregates and data quality",["ti_country","ti_powertrain","ti_company","ti_annual_country","ti_annual_powertrain","ti_data","ti_coverage","ti_source","ti_global"]]];
+const CDN_DIR = '__SQLJS_DIR__';
+const SQLJS_VERSION = '__SQLJS_VERSION__';
+const DB_FILE = '__DB_FILE__';
+const DEFAULT_PIVOT = __DEFAULT_PIVOT__;
+const YEARLY_PIVOT = __YEARLY_PIVOT__;
+const STAGES = __STAGES__;
+const DATASET_ORDER = __DATASET_ORDER__;
+const MODEL_STEPS = __MODEL_STEPS__;
 
 const NAME = {hyundai: 'Hyundai', kia: 'Kia', toyota: 'Toyota', nissan: 'Nissan'};
 const MARKET = {EU27: 'European Union', US: 'United States', KR: 'Korea', JP: 'Japan'};

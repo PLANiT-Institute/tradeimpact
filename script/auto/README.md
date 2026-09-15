@@ -27,22 +27,18 @@ report/
   build_report.py       the analysis, read out of the database
   build_pitch.py        five slides
 app/
-  build_app.py          the workbench: data/auto/app.html, three modes over one database
-  build_catalogue.py    the data catalogue: data/auto/catalogue.html — the whole database on one
-                        page, its structure drawn, every table's columns and its health
-script/dbreview.py      serves the catalogue against any SQLite file at one fixed route; the
-                        repo-root dbreview.command is its double-click launcher
-  serve_app.py          serves the workbench and queues edits (source + note required) to
-                        data/auto/edits.csv; the only write path in the sector
+  build_dashboard.py    the one page: data/auto/database/dashboard.html — data input, the data
+                        catalogue and the explorer, and the results, over the database beside it;
+                        also the CDN pins every page shares
   model/build_readiness.py  data_readiness.csv: what each sale year actually received, and how
                             old it is (current / carried forward / stale), per country
+  model/apply_overrides.py  applies data/auto/overrides.csv (the corrections the page queued, each
+                            with a source and a note) onto the built parameters, targets and
+                            trajectories, before the cohorts are joined; a no-op when there are none
   registry/build_catalog.py  the licence and provider catalogue, and a redistribution verdict
                              per raw file (deliverable D-10)
   registry/build_schema.py   schema_tables / schema_columns / schema_relations: what every table
                              is, what is in it, how it joins, and how healthy it is
-  model/apply_overrides.py  applies data/auto/overrides.csv (the workbench's queued corrections,
-                            each with a source and a note) onto the built parameters, targets and
-                            trajectories, before the cohorts are joined; a no-op when there are none
 ```
 
 `run_all.py` runs every step above in order, then `ruff check` and `pytest`, and stops at the

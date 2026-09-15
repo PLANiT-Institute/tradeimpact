@@ -22,7 +22,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "auto" / "model"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "auto" / "app"))
 from build_dashboard import (  # noqa: E402
     D3_SRC,
     D3_SRI,

@@ -187,6 +187,10 @@ def main() -> None:
                 plan.append((path, kind, dataset))
     for path in sorted((DATA / "output").glob("*.csv")):
         plan.append((path, "output", "model"))
+    # The reviewed overrides ride along as a registry table, so the page that queues a new one
+    # can show what is already applied and write the complete file back.
+    if (DATA / "overrides.csv").exists():
+        plan.append((DATA / "overrides.csv", "registry", "auto"))
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     if OUT.exists():

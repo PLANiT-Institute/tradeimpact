@@ -540,73 +540,68 @@ def test_pitch_deck_pins_its_libraries_and_states_its_limits() -> None:
         assert phrase in html, f"the limits slide no longer says {phrase!r}"
 
 
-APP = DATA / "app.html"
+DASHBOARD = DATA / "database" / "dashboard.html"
 
 
-def test_workbench_carries_no_data_and_has_three_modes() -> None:
-    """The workbench reads the database like every other page and offers the three modes.
+def test_dashboard_is_one_page_over_the_database_with_every_view() -> None:
+    """One page replaced four, and it still offers everything the four offered.
 
     It is the page a user spends time in, so it is the one where a baked-in number would be
-    trusted longest. Every figure — the readiness grid, the table browser, the impact and the
-    reference trajectory — is a query run when the page opens.
+    trusted longest: every figure — the readiness grid, the catalogue, the impact, the reference
+    trajectory — is a query run when the page opens.
     """
-    assert APP.exists(), APP
-    html = APP.read_text(encoding="utf-8")
-    assert html.count("data-f=") == 0  # this page builds its grids in JS, not by data-f slots
+    assert DASHBOARD.exists(), DASHBOARD
+    html = DASHBOARD.read_text(encoding="utf-8")
     assert "tradeimpact_auto.sqlite" in html
-    for mode in ("data-mode=\"input\"", "data-mode=\"database\"", "data-mode=\"results\""):
-        assert mode in html, f"the workbench is missing {mode}"
-    # The sale year and the scenario are the axes the user complained were hidden.
+    for mode in ("input", "database", "results"):
+        assert f'data-mode="{mode}"' in html, f"the page is missing the {mode} section"
+    # the catalogue's four views and the explorer's five, by the ids the router accepts
+    for view in ("overview", "structure", "tables", "sources", "lineage", "browse", "pivot",
+                 "sql", "company", "year", "lifetime", "map"):
+        assert f"'{view}'" in html, f"the page is missing the {view} view"
+    # the axes the sale year turns on, and the catalogue tables it reads
     assert "data_readiness" in html and "cohort_year" in html
     assert "reference_trajectories_" in html and "vintage_year" in html
-    text = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
-    text = re.sub(r"<[^>]+>", " ", text)
-    assert not re.search(r"[+−-]\d+\.\d+ ?Mt", text), "a total is baked into the workbench"
-
-
-def test_workbench_edit_queue_requires_a_source_and_a_note() -> None:
-    """A value can never enter the edit queue unattributed; the server enforces it."""
-    import importlib.util
-
-    spec = importlib.util.spec_from_file_location(
-        "serve_app", REPO / "script" / "auto" / "app" / "serve_app.py"
-    )
-    assert spec and spec.loader
-    serve_app = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(serve_app)
-
-    good = {
-        "cohort_year": 2026, "dataset": "country_emissions", "country": "KR",
-        "parameter": "fleet_intensity_gco2_km (passenger_car)", "new_value": "201.0",
-        "source_id": "gir_inventory_co2", "note": "2024 road CO2 now published",
-    }
-    for missing in ("source_id", "note"):
-        with pytest.raises(ValueError, match="required"):
-            serve_app.append_edit({**good, missing: "  "})
-    with pytest.raises(ValueError, match="missing"):
-        serve_app.append_edit({"cohort_year": 2026})
-
-
-CATALOGUE = DATA / "catalogue.html"
-
-
-def test_catalogue_carries_no_data_and_offers_four_views() -> None:
-    """The data catalogue describes the database by querying it, not by remembering it."""
-    assert CATALOGUE.exists(), CATALOGUE
-    html = CATALOGUE.read_text(encoding="utf-8")
-    assert "tradeimpact_auto.sqlite" in html
-    for view in ("overview", "structure", "tables", "sources"):
-        assert f'data-mode="{view}"' in html, f"the catalogue is missing the {view} view"
-    # It reads the three schema tables and the licence catalogue rather than hardcoding them.
     for table in ("schema_tables", "schema_columns", "schema_relations", "licences",
                   "data_providers"):
-        assert table in html, f"the catalogue no longer reads {table}"
+        assert table in html, f"the page no longer reads {table}"
     text = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
     text = re.sub(r"<code>.*?</code>|<[^>]+>", " ", text, flags=re.S)
-    # a count renders with thousands separators and a share with a per-cent sign; neither may
-    # be written into the file, because both would be a figure that cannot go stale visibly
-    assert not re.search(r"\d,\d{3}", text), "a row count is baked into the catalogue"
-    assert not re.search(r"\d+(\.\d+)? ?%", text), "a share is baked into the catalogue"
+    assert not re.search(r"\d,\d{3}", text), "a row count is baked into the page"
+    assert not re.search(r"\d+(\.\d+)? ?%", text), "a share is baked into the page"
+    assert not re.search(r"[+\u2212-]\d+\.\d+ ?Mt", text), "a total is baked into the page"
+
+
+def test_dashboard_needs_nothing_behind_it() -> None:
+    """No server, no port, no write endpoint: the page reads the file beside it, or one picked.
+
+    The write endpoint is gone with the servers. A correction leaves the page as overrides.csv —
+    the same file, with the same mandatory source and note — which the pipeline applies.
+    """
+    html = DASHBOARD.read_text(encoding="utf-8")
+    assert "127.0.0.1" not in html and "localhost" not in html
+    assert "method:'POST'" not in html and 'method: "POST"' not in html
+    assert "'/edit'" not in html and "/edits" not in html
+    # the only fetch is the sibling file, by name
+    assert html.count("fetch(") == 1 and "fetch(DB_FILE" in html
+    # a file the reader picks needs no server either
+    assert 'type="file"' in html and "arrayBuffer()" in html
+
+
+def test_a_queued_correction_is_the_file_the_pipeline_applies() -> None:
+    """The page's overrides.csv carries exactly the columns apply_overrides.py reads back."""
+    html = DASHBOARD.read_text(encoding="utf-8")
+    fields = re.search(r"const OVERRIDE_FIELDS = \[(.*?)\]", html, flags=re.S)
+    assert fields, "the page no longer declares the overrides.csv columns"
+    written = [f.strip().strip("'\"") for f in fields.group(1).split(",")]
+    required = ["queued_at", "cohort_year", "dataset", "country", "parameter", "old_value",
+                "new_value", "source_id", "note"]
+    assert written == required, written
+    # and the value can never leave unattributed
+    assert "Source and note are both required." in html
+    applier = (REPO / "script" / "auto" / "model" / "apply_overrides.py").read_text()
+    for column in ("new_value", "source_id", "note", "cohort_year", "country", "parameter"):
+        assert column in applier, f"apply_overrides.py no longer reads {column}"
 
 
 def test_every_table_has_a_health_verdict_and_every_source_a_licence() -> None:
@@ -641,20 +636,3 @@ def test_every_table_has_a_health_verdict_and_every_source_a_licence() -> None:
     } - allowed
     assert not unknown, f"raw files with an unknown verdict: {sorted(unknown)}"
     conn.close()
-
-
-def test_dbreview_points_the_catalogue_at_the_served_route() -> None:
-    """The reviewer rewrites exactly the three database constants and finds both databases."""
-    import importlib.util
-
-    spec = importlib.util.spec_from_file_location("dbreview", REPO / "script" / "dbreview.py")
-    assert spec and spec.loader
-    dbreview = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(dbreview)
-
-    html = dbreview.page_html(DATA / "database" / "tradeimpact_auto.sqlite").decode()
-    assert "DB_RELATIVE='/db.sqlite'" in html and "SERVED_DB='/db.sqlite'" in html
-    assert "DB_FILE='tradeimpact_auto.sqlite'" in html
-    assert "database/tradeimpact_auto.sqlite" not in html.split("DB_RELATIVE=")[1][:60]
-    names = {p.name for p in dbreview.find_databases()}
-    assert {"tradeimpact_auto.sqlite", "tradeimpact_power.sqlite"} <= names

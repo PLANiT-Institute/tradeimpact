@@ -5,7 +5,7 @@ Steps (each is a standalone script; see script/auto/README.md):
     derivation   S1/S2 rates per market
     model        reference, impact, sensitivity, aggregation, data quality
     database     every CSV under data/auto -> data/auto/database/tradeimpact_auto.sqlite
-    dashboard    static reader of the database file -> data/auto/database/dashboard.html
+    dashboard    the one page over the database -> data/auto/database/dashboard.html
     report       the analysis report read out of the database -> data/auto/report/
     checks       ruff (lint) and pytest (numerical and consistency tests)
 
@@ -85,11 +85,9 @@ MODEL = [
     "registry/build_catalog.py",
     "model/build_database.py",
     "registry/build_schema.py",
-    "model/build_dashboard.py",
+    "app/build_dashboard.py",
     "report/build_report.py",
     "report/build_pitch.py",
-    "app/build_app.py",
-    "app/build_catalogue.py",
 ]
 CHECKS = [
     [PY, "-m", "ruff", "check", "script", "tests"],

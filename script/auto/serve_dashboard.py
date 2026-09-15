@@ -1,8 +1,7 @@
 """Serve data/auto over HTTP so dashboard.html can read the database beside it.
 
 ``data/auto/database/dashboard.html`` carries no data: it fetches ``tradeimpact_auto.sqlite`` from
-its
-own directory, which the browser only allows over HTTP (a page opened from ``file://`` is
+its own directory, which the browser only allows over HTTP (a page opened from ``file://`` is
 refused and falls back to its file picker). This starts a stdlib server on the loopback
 interface, prints the URL and serves that one directory.
 
@@ -26,7 +25,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 #: Sector directory under data/ -> the page the server announces.
-SECTOR_PAGES = {"auto": "app.html", "power": "report/ti_power_report.html"}
+SECTOR_PAGES = {"auto": "database/dashboard.html", "power": "report/ti_power_report.html"}
 ROOT = REPO / "data" / "auto"
 PAGE = SECTOR_PAGES["auto"]
 HOST = "127.0.0.1"

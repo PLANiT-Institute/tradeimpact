@@ -745,7 +745,9 @@ which input is responsible; the single `tier` says how far the cell is from full
 ## Reading the dashboard
 
 `data/auto/database/dashboard.html` is a plain HTML file with no data of its own; it reads
-`tradeimpact_auto.sqlite`. One command connects it and keeps it connected:
+`tradeimpact_auto.sqlite` beside it. It is the only page over the database — data input, the
+data catalogue, the explorer and the results in one file, with no server behind it. One command
+connects it and keeps it connected:
 
 ```bash
 .venv/bin/python script/auto/serve_dashboard.py --open
@@ -816,12 +818,14 @@ the per-market reference builders cannot drift apart on schema.
 `build_database.py` writes `data/auto/database/tradeimpact_auto.sqlite` — every raw table, lookup,
 processed dataset and output table, the source registry, raw-file provenance, a `tables`
 manifest (dataset, stage, source path, rows, hash) and a `columns` dictionary (type, non-null,
-distinct, example). `build_dashboard.py` writes `data/auto/database/dashboard.html`, a reader for that
-database carrying no data of its own (about 55 KB): it fetches `tradeimpact_auto.sqlite` from
+distinct, example). `app/build_dashboard.py` writes `data/auto/database/dashboard.html`, a reader for that
+database carrying no data of its own: it fetches `tradeimpact_auto.sqlite` from
 its own directory and reads the manifest, the dictionary, the source registry and the raw-file
-provenance out of it with SQL. Views: lineage per data type (raw → method → processed → output
-with source links), results and results by year, a pivot over any table, a browse view and a
-read-only SQL console. Serve the directory with `.venv/bin/python
+provenance out of it with SQL. Views: the sale-year data grids (with the correction queue), the data
+catalogue (overview, structure, tables, sources), lineage per data type (raw → method →
+processed → output with source links), the results by company, by year and lifetime, the map, a
+pivot over any table, a browse view and a read-only SQL console. Any other SQLite file opens in
+the same page and is described from its own structure. Serve the directory with `.venv/bin/python
 script/auto/serve_dashboard.py` and open <http://127.0.0.1:8765/dashboard.html>; opened
 straight from disk the browser blocks the sibling read, so the page then offers a file picker
 and a drag-and-drop zone for the database instead. The network is needed only for the sql.js

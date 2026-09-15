@@ -55,15 +55,18 @@ data/auto/         one directory per dataset, each with:
                          per-value tier flags, sources, raw-file provenance, the map geometry,
                          a tables manifest and a column dictionary. Built by the pipeline and
                          kept out of git - run `script/auto/run_all.py` to make it. Beside it,
-                         dashboard.html: reader for that database, no data of its own: lineage,
-                         results, results by year, map by country, pivot, browse, read-only SQL
+                         dashboard.html: the one page over that database, no data of its own -
+                         data input and the correction queue, the data catalogue and the
+                         explorer, the results, the map
 script/auto/       all Python, one directory per dataset plus model/
   <dataset>/             extraction scripts: raw/ -> processed/
   model/                 build_cohorts, build_reference (EU27), build_reference_us, build_ti,
                          build_sensitivity, aggregate_country, build_data_quality,
-                         build_database, build_dashboard
+                         build_database, apply_overrides
+  app/build_dashboard.py the one page beside the database, and the CDN pins every page shares
   serve_dashboard.py     serves data/auto on http://127.0.0.1:8765 so database/dashboard.html
-                         can read the database beside it and the map geometry
+                         can read the database beside it with no clicking (it works from disk
+                         too, by asking for the file)
 data/power/        the power case study, same raw/processed/method triple per dataset:
                          companies, projects (Global Energy Monitor, hand download), roles (hand
                          register), grid, emission_factors, targets, geography; output/ and
@@ -108,18 +111,28 @@ previously published EU27 result exactly when fed the archived inputs (see
 | Korea, 2025 retail | Kia | 99.3 % | −2.79 | **+4.36** |
 | Korea, Jan–Jul 2026 retail | Kia | 99.5 % | −2.40 | **+1.85** |
 
-**To look at a database, double-click `dbreview.command`.** It opens the automotive database in
-the data catalogue — every table, its columns, its joins drawn, its health. Give it a path to
-open another file: `./dbreview.command data/power/database/tradeimpact_power.sqlite`. A file that
-carries no catalogue of its own is described on the fly.
+**Start here: `data/auto/database/dashboard.html`.** One page, beside the database it reads,
+with nothing behind it — no server, no backend, no write endpoint. Three sections:
 
-**Start here.** `data/auto/app.html` is the workbench — one page, three modes: **data** (what
-each sale year holds, per country, with a click to queue a correction), **database** (every table
-in the file), and **results** (the impact with the sale year and the benchmark made explicit).
-Serve it with `.venv/bin/python script/auto/app/serve_app.py` and open
-<http://127.0.0.1:8770/app.html>; that server also accepts the queued corrections. The report,
-the pitch deck and the map dashboard link from its top bar. Every page queries
-`tradeimpact_auto.sqlite` at open and carries no figure of its own.
+- **데이터 입력 · Data** — what each sale year holds, per country, with the observation year, how
+  far behind the sale year it is, its status (current / carried forward / stale), its tier and its
+  source. Click a value to queue a correction; the queue downloads as `overrides.csv`, which
+  `script/auto/model/apply_overrides.py` applies on the next run with its mandatory source and
+  note. Raw data is never edited.
+- **데이터 분석 · Database** — the data catalogue (overview, the join structure drawn, every table
+  with its columns and health, the licence and provider catalogue) and the explorer over it
+  (lineage, browse, pivot, read-only SQL).
+- **결과 분석 · Results** — the impact by company and market with the sale year and the benchmark
+  as explicit controls, the reference trajectory each result is measured against, the year-by-year
+  and lifetime pivots, and the world map.
+
+Double-click the file and pick the database when the browser asks (a page opened from disk may not
+read the file beside it); or serve the directory with
+`.venv/bin/python script/auto/serve_dashboard.py --open`, which loads it with no clicking. The
+report and the deck link from its top bar. **Any other SQLite file opens in the same page** —
+"Open another file", or drag it on: a file carrying the project's catalogue tables is described
+from them, and one that does not is described from its own structure. Every page in this
+repository queries the database at open and carries no figure of its own.
 
 ### How much of worldwide sales this captures
 
