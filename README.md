@@ -125,11 +125,17 @@ with nothing behind it — no server, no backend, no write endpoint. Three secti
 - **결과 분석 · Results** — the impact by company and market with the sale year and the benchmark
   as explicit controls, the reference trajectory each result is measured against, the year-by-year
   and lifetime pivots, and the world map.
+- **분석 · Analysis** — the full seven-tab analysis: sales, coverage, destination benchmarks, the
+  other inputs, annual impact, total impact, sources — with the scenario / company / market /
+  sale-year filter bar across all of them.
+- **브리핑 · Briefing** — five slides for the ten minutes before someone opens the analysis, ending
+  on what the result does not say. It prints one slide per page.
 
-Double-click the file and pick the database when the browser asks (a page opened from disk may not
-read the file beside it); or serve the directory with
-`.venv/bin/python script/auto/serve_dashboard.py --open`, which loads it with no clicking. The
-report and the deck link from its top bar. **Any other SQLite file opens in the same page** —
+The database is read **once**, when the page opens: moving between sections never re-reads it and
+never reloads the page. Double-click the file and pick the database when the browser asks (a page
+opened from disk may not read the file beside it); or serve the directory with
+`.venv/bin/python script/auto/serve_dashboard.py --open`, which loads it with no clicking.
+**Any other SQLite file opens in the same page** —
 "Open another file", or drag it on: a file carrying the project's catalogue tables is described
 from them, and one that does not is described from its own structure. Every page in this
 repository queries the database at open and carries no figure of its own.
@@ -209,29 +215,18 @@ government stated, a month before it notified withdrawal from the Paris Agreemen
 appear as a row in `ti_company.csv` and `ti_exclusions.csv`, never as a silent gap. EU27 magnitudes are proxy-heavy (48 % of covered units on an EU-average distance,
 guideline §5.3 threshold 50 %).
 
-## The analysis report
+## The analysis, inside the same page
 
-`data/auto/report/ti_automotive_report.html` is an interactive, tabbed analysis of the result
-set, built by `script/auto/report/build_report.py` (with `template.html` beside it) and rebuilt
-by `run_all.py` with everything else. Like the dashboard it carries no data of its own: it opens
-`tradeimpact_auto.sqlite` in the browser (sql.js, d3 and topojson pinned on cdnjs with integrity
-hashes) and computes every sentence, chart and table with SQL at read time, so a rebuild after a
-data change moves the words as well as the figures, and a test asserts that no figure is written
-into the file. Serve `data/auto` with `.venv/bin/python script/auto/serve_dashboard.py` and open
-<http://127.0.0.1:8765/report/ti_automotive_report.html>; opened from disk the page offers a
-file picker for the database instead.
+The **분석 · Analysis** section is the full report: it opens on a story paragraph whose every
+figure is a query, and a filter bar — scenario, company, market, sale year, home markets — redraws
+the tab in view while the story text stays on the whole set. The **브리핑 · Briefing** section is
+the short version: five slides for the ten minutes before someone opens the analysis — the
+headline comparison, the four companies under both benchmarks, the powertrain decomposition, the
+per-destination reading, and a closing slide of what the result does not say. Arrow keys or the
+dots move between slides, and it prints one slide per page.
 
-`data/auto/report/ti_automotive_pitch.html` is the short version of the same thing: five slides
-for the ten minutes before someone opens the report — the headline comparison, the four companies
-under both benchmarks, the powertrain decomposition, the per-destination reading, and a closing
-slide of what the result does not say. It is built by `script/auto/report/build_pitch.py` with
-`pitch_template.html`, reads the same database at open, and is held to the same rule by test: no
-figure is written into the file. Arrow keys or the dots move between slides, and it prints one
-slide per page.
-
-The story runs left to right across seven main tabs, in the order the analysis is built, and each
-tab opens sub-tabs (one per company, per market or per view); a filter bar — scenario, company,
-market, cohort year — redraws the tab in view while the story text stays on the whole set:
+The story runs left to right across seven tabs, in the order the analysis is built, and each tab
+opens sub-tabs (one per company, per market or per view):
 
 1. **Sales** — what each company sold into which market, by powertrain, segment and nameplate,
    with the sales basis every row rests on.

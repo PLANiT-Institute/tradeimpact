@@ -416,46 +416,45 @@ def test_the_two_tier_c_measures_are_named_for_their_basis() -> None:
     )
 
 
-REPORT = DATA / "report" / "ti_automotive_report.html"
+DASHBOARD = DATA / "database" / "dashboard.html"
 
 
-def test_report_carries_no_data_of_its_own() -> None:
-    """The analysis report is a reader of the database, not a copy of it.
+def test_the_page_states_no_figure_of_its_own() -> None:
+    """Every sentence of the analysis and the briefing is filled from the database at read time.
 
-    What is tested is the property that keeps it honest: no figure is written into the file at
-    build time. Every number a reader sees is a query on ``tradeimpact_auto.sqlite`` at read time,
-    so the page cannot disagree with the tables under it. The only digits allowed in the file are
-    those of the pinned library versions, CSS geometry and the JavaScript itself; a total, a
-    percentage or a cohort count would be a data leak.
+    The analysis and the five-slide briefing used to be their own files; they are sections of the
+    one page now, and the rule that held for them still holds: no figure is written into the file
+    at build time, so a rebuild after a data change moves the words as well as the numbers.
     """
-    assert REPORT.exists(), REPORT
-    html = REPORT.read_text(encoding="utf-8")
-    # Every fact in the prose is a placeholder the page fills from the database.
-    assert html.count("data-f=") >= 30
+    assert DASHBOARD.exists(), DASHBOARD
+    html = DASHBOARD.read_text(encoding="utf-8")
     assert "tradeimpact_auto.sqlite" in html
-    # The prose never states a result: no signed megatonne figure, no percentage, no "N of 20".
+    assert html.count("data-f=") >= 40  # the slots the briefing fills from the database
     text = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
-    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"<code>.*?</code>|<[^>]+>", " ", text, flags=re.S)
     assert not re.search(r"[+\u2212-]\d+\.\d+ ?Mt", text), "a lifetime total is baked in"
     assert not re.search(r"\d+(\.\d+)? ?%", text), "a percentage is baked in"
     assert not re.search(r"\b\d+ of \d+\b", text), "a cohort count is baked in"
+    assert not re.search(r"\d,\d{3}", text), "a row count is baked in"
 
 
-def test_report_pins_its_libraries_with_integrity() -> None:
-    """The page loads exactly the dashboard's pinned libraries, each with a subresource hash.
+def test_the_page_pins_its_libraries_with_integrity() -> None:
+    """Three libraries, each pinned on cdnjs with a subresource hash, loaded once for the page.
 
-    The report and the dashboard share one set of pins (build_report imports them), so a library
-    upgrade is one edit; and every external script carries an integrity attribute, so a changed
-    file on the CDN fails closed rather than running.
+    One page means one engine and one copy of each library: a changed file on the CDN fails
+    closed rather than running, and no section fetches anything of its own.
     """
-    html = REPORT.read_text(encoding="utf-8")
+    html = DASHBOARD.read_text(encoding="utf-8")
     pattern = r"<script src=\"([^\"]+)\"[^>]*integrity=\"(sha(?:384|512)-[^\"]+)\""
     scripts = re.findall(pattern, html)
     assert len(scripts) == 3, scripts
     assert all(src.startswith("https://cdnjs.cloudflare.com/ajax/libs/") for src, _ in scripts)
     assert "<img" not in html and "<iframe" not in html
-    # The map geometry comes out of the database, never from a second fetch.
+    # the map geometry comes out of the database, never from a second fetch
     assert "map_geometry" in html
+    # and the briefing never drops its caveats
+    for phrase in ("not a company total", "pro rata", "not a claim that the sale caused"):
+        assert phrase in html, f"the limits slide no longer says {phrase!r}"
 
 
 def test_every_company_row_says_whether_it_is_a_home_market(
@@ -503,44 +502,6 @@ def test_database_flags_every_input_value_with_a_tier() -> None:
         ).fetchone()[0]
         assert missing == 0, (name, missing)
     conn.close()
-
-
-PITCH = DATA / "report" / "ti_automotive_pitch.html"
-
-
-def test_pitch_deck_carries_no_data_of_its_own() -> None:
-    """The five-slide deck is a reader of the database, like the report it sits beside.
-
-    A pitch is where a stale number does the most damage, because it is the artefact that travels
-    without its author. So the same rule applies: no figure is written into the file at build
-    time. The headline totals, the company ranking, the powertrain split and the limits on the
-    last slide are all queries run when the page opens.
-    """
-    assert PITCH.exists(), PITCH
-    html = PITCH.read_text(encoding="utf-8")
-    assert html.count("data-f=") >= 10
-    assert "tradeimpact_auto.sqlite" in html
-    text = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
-    text = re.sub(r"<[^>]+>", " ", text)
-    assert not re.search(r"[+−-]\d+\.\d+ ?Mt", text), "a total is baked into the deck"
-    assert not re.search(r"\d+(\.\d+)? ?%", text), "a percentage is baked into the deck"
-    assert not re.search(r"\b\d+ of \d+\b", text), "a count is baked into the deck"
-
-
-def test_pitch_deck_pins_its_libraries_and_states_its_limits() -> None:
-    """Every external script is pinned with a hash, and the deck never drops the caveats."""
-    html = PITCH.read_text(encoding="utf-8")
-    pattern = r"<script src=\"([^\"]+)\"[^>]*integrity=\"(sha(?:384|512)-[^\"]+)\""
-    scripts = re.findall(pattern, html)
-    assert len(scripts) == 2, scripts
-    assert all(src.startswith("https://cdnjs.cloudflare.com/ajax/libs/") for src, _ in scripts)
-    assert "<img" not in html and "<iframe" not in html
-    # The last slide is not optional: a deck that drops the limits is the failure mode.
-    for phrase in ("not a company total", "pro rata", "not a claim that the sale caused"):
-        assert phrase in html, f"the limits slide no longer says {phrase!r}"
-
-
-DASHBOARD = DATA / "database" / "dashboard.html"
 
 
 def test_dashboard_is_one_page_over_the_database_with_every_view() -> None:

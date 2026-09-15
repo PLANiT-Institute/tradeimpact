@@ -23,13 +23,11 @@ model/
   aggregate_country.py  step 5: country, powertrain and company x market totals + decomposition
   build_data_quality.py step 5b: guideline §5.3 data-quality declaration per company x market
   build_database.py     final: every CSV under data/auto -> data/auto/database/tradeimpact_auto.sqlite
-report/
-  build_report.py       the analysis, read out of the database
-  build_pitch.py        five slides
 app/
   build_dashboard.py    the one page: data/auto/database/dashboard.html — data input, the data
-                        catalogue and the explorer, and the results, over the database beside it;
-                        also the CDN pins every page shares
+                        catalogue and the explorer, the results, the seven-tab analysis and the
+                        five-slide briefing, all over one database read once; also the CDN pins
+  dashboard_template.html  that page's markup, styles and script — the only page source there is
   model/build_readiness.py  data_readiness.csv: what each sale year actually received, and how
                             old it is (current / carried forward / stale), per country
   model/apply_overrides.py  applies data/auto/overrides.csv (the corrections the page queued, each

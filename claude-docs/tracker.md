@@ -31,8 +31,10 @@ Lifetime TI by cohort, MtCO₂e, S1 / S2:
 Totals across the 20 cohorts: **S1 −29.01 MtCO₂e avoided, S2 +151.48 MtCO₂e added** — every
 cohort adds emissions against its own government's pathway. Worldwide-sales coverage of the 2024
 cohorts: Hyundai 42.4 %, Toyota 38.5 %, Nissan 38.1 %. Deliverables now include an interactive,
-tabbed analysis report at `data/auto/report/ti_automotive_report.html` that reads the database in
-the browser (seven story tabs with sub-tabs and a scenario / company / market / year filter).
+tabbed analysis — the 분석 · Analysis section of `data/auto/database/dashboard.html` — that reads
+the database in the browser (seven story tabs with sub-tabs and a scenario / company / market /
+sale-year filter), beside the data-input, catalogue, results and briefing sections of the same
+page.
 
 > The dated paragraphs below are the acquisition narrative in the order it happened. They quote
 > the scenarios and signs in force when each was written — several mention S3 and the pre-

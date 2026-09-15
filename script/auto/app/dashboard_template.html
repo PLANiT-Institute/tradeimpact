@@ -16,6 +16,9 @@
   --ok: #1f7a5a; --ok-soft: #e2f2ea; --warn: #b07a12; --warn-soft: #fbf1d8;
   --bad: #b23a3a; --bad-soft: #f7e3e1;
   --l-input: #6b7b8c; --l-catalogue: #8a6d3b; --l-processed: #2f6f52; --l-result: #8a3b52;
+  --accent-ink: #ffffff; --band: rgba(120,140,170,0.18); --s1: #4a6fa5; --s2: #b06a1f;
+  --ice: #8a8f98; --hev: #3f7fb3; --bev: #1f7a5a; --phev: #9a6fb0; --fcev: #b0894a;
+  --held: #cfd4db; --topbar: 45px;
   --raw-fg: #7a4a00; --raw-bg: #fbeed7; --raw-br: #dfb877;
   --method-fg: #513a9c; --method-bg: #ebe6fa; --method-br: #b3a4e6;
   --processed-fg: #0c6147; --processed-bg: #d9efe6; --processed-br: #79c3aa;
@@ -35,6 +38,9 @@
     --ok: #4fc39a; --ok-soft: #13271e; --warn: #d7a94a; --warn-soft: #322a12;
     --bad: #e07a72; --bad-soft: #2e1816;
     --l-input: #9fb0c2; --l-catalogue: #d0ab6a; --l-processed: #6fc39a; --l-result: #dd8ba0;
+    --accent-ink: #0f1216; --band: rgba(140,170,210,0.16); --s1: #86ade0; --s2: #dda65f;
+    --ice: #a0a6b0; --hev: #66aadb; --bev: #4fc39a; --phev: #b993d2; --fcev: #d1aa6b;
+    --held: #3a424e;
     --raw-fg: #e8bf7c; --raw-bg: #35291356; --raw-br: #6b5222;
     --method-fg: #bda9f5; --method-bg: #26204056; --method-br: #4c3f7d;
     --processed-fg: #6fd0b0; --processed-bg: #10322956; --processed-br: #2c6b58;
@@ -309,6 +315,417 @@ dialog::backdrop { background: rgba(0,0,0,.4); }
 .dh .x { margin-left: auto; border: 1px solid var(--rule); background: var(--paper);
   border-radius: 8px; padding: 4px 10px; color: var(--muted); }
 .db { padding: 16px 20px; overflow: auto; max-height: calc(88vh - 60px); }
+
+/* ================= the analysis section, folded in from the report page ================= */
+
+
+
+
+
+
+#r-root a { color: var(--accent); }
+
+#r-root code { font: 0.92em ui-monospace, "SF Mono", Menlo, monospace; }
+
+#r-root button { font: inherit; }
+
+
+/* ---- header: brand, status, filters, main tabs ---- */
+#r-root .top { position: sticky; top: 0; z-index: 30; background: var(--paper);
+  border-bottom: 1px solid var(--rule); box-shadow: var(--shadow); }
+
+#r-root .top .inner { max-width: 1280px; margin: 0 auto; padding: 10px 20px 0; }
+
+#r-root .brandrow { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
+
+#r-root .brand .kicker { font-size: 11px; letter-spacing: 0.09em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700; }
+
+#r-root .brand h1 { font-size: 18px; margin: 0; font-weight: 700; letter-spacing: -0.01em; }
+
+#r-root .status { font-size: 12px; color: var(--muted); text-align: right; max-width: 46%; }
+
+#r-root .status b { color: var(--ink); font-weight: 600; }
+
+#r-root .filters { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; padding: 8px 0;
+  font-size: 13px; }
+
+#r-root .fgroup { display: flex; align-items: center; gap: 5px; }
+
+#r-root .fgroup .lbl { color: var(--muted); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.06em; margin-right: 2px; }
+
+#r-root .chip { border: 1px solid var(--rule); background: var(--paper); color: var(--ink);
+  padding: 2px 10px; border-radius: 999px; cursor: pointer; font-size: 13px; line-height: 1.35; }
+
+#r-root .chip:hover { border-color: var(--accent); }
+
+#r-root .chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+#r-root .chip.s1.on { background: var(--s1); border-color: var(--s1); color: #fff; }
+
+#r-root .chip.s2.on { background: var(--s2); border-color: var(--s2); color: #fff; }
+
+#r-root .chip.reset { color: var(--muted); border-style: dashed; }
+
+#r-root .showing { color: var(--muted); font-size: 12px; margin-left: auto; }
+
+#r-root .tabs { display: flex; gap: 2px; overflow-x: auto; border-top: 1px solid var(--rule); }
+
+#r-root .tabs button { background: none; border: 0; border-bottom: 3px solid transparent; padding: 10px 14px;
+  cursor: pointer; color: var(--muted); font-weight: 600; font-size: 14px; white-space: nowrap; }
+
+#r-root .tabs button .n { display: inline-block; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--panel); color: var(--muted); font-size: 12px; line-height: 20px;
+  text-align: center; margin-right: 7px; font-variant-numeric: tabular-nums; }
+
+#r-root .tabs button:hover { color: var(--ink); }
+
+#r-root .tabs button.on { color: var(--ink); border-bottom-color: var(--accent); }
+
+#r-root .tabs button.on .n { background: var(--accent); color: var(--accent-ink); }
+
+
+/* ---- body ---- */
+#r-root .r-wrap { max-width: 1280px; margin: 0 auto; padding: 18px 20px 80px; }
+
+#r-root .story { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 20px 26px; margin-bottom: 14px; box-shadow: var(--shadow); }
+
+#r-root .story h2 { margin: 0 0 6px; font-size: 24px; letter-spacing: -0.01em; }
+
+#r-root .story p { margin: 0 0 8px; max-width: 86ch; }
+
+#r-root .story p.lead { font-size: 16.5px; line-height: 1.5; }
+
+#r-root .callout { background: var(--panel); border-left: 3px solid var(--accent); padding: 10px 14px;
+  border-radius: 6px; margin: 10px 0 0; max-width: 88ch; }
+
+#r-root .callout p:last-child { margin-bottom: 0; }
+
+#r-root .subtabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+
+#r-root .subtabs button { border: 1px solid var(--rule); background: var(--paper); color: var(--muted);
+  padding: 6px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 13.5px; }
+
+#r-root .subtabs button:hover { color: var(--ink); border-color: var(--accent); }
+
+#r-root .subtabs button.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+#r-root .panel { display: grid; gap: 14px; }
+
+#r-root .card { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 18px 22px; box-shadow: var(--shadow); min-width: 0; }
+
+#r-root .card h3 { margin: 0 0 4px; font-size: 16px; }
+
+#r-root .card p { margin: 0 0 8px; max-width: 86ch; }
+
+#r-root .card .sub { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+
+#r-root .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+@media (max-width: 960px) { #r-root .row2 { grid-template-columns: 1fr; }
+ }
+
+#r-root .muted { color: var(--muted); }
+ #r-root .small { font-size: 13px; }
+
+#r-root .f { font-variant-numeric: tabular-nums; font-weight: 600; }
+
+#r-root .f.added { color: var(--added); }
+ #r-root .f.avoided { color: var(--avoided); }
+
+
+/* ---- KPI tiles ---- */
+#r-root .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;
+  margin: 6px 0 4px; }
+
+#r-root .kpi { background: var(--panel); border-radius: 10px; padding: 11px 13px; }
+
+#r-root .kpi .v { font-size: 24px; font-weight: 700; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums; line-height: 1.1; }
+
+#r-root .kpi .v.added { color: var(--added); }
+ #r-root .kpi .v.avoided { color: var(--avoided); }
+
+#r-root .kpi .l { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+
+/* ---- charts ---- */
+#r-root .fig { margin: 6px 0 4px; }
+
+#r-root .ctl { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 13px;
+  margin-bottom: 6px; }
+
+#r-root .ctl select { font: inherit; padding: 3px 6px; border: 1px solid var(--rule); border-radius: 6px;
+  background: var(--paper); color: var(--ink); max-width: 100%; }
+
+#r-root .fig svg { width: 100%; height: auto; display: block; }
+
+#r-root .cap { font-size: 12.5px; color: var(--muted); margin-top: 6px; max-width: 100ch; }
+
+#r-root .cap b { color: var(--ink); }
+
+#r-root .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12.5px; color: var(--muted);
+  margin: 4px 0 6px; }
+
+#r-root .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px;
+  margin-right: 5px; vertical-align: -1px; }
+
+#r-root svg text { font: 11px ui-sans-serif, system-ui, sans-serif; fill: var(--ink); }
+
+#r-root svg .tick text { fill: var(--muted); font-size: 10.5px; }
+
+#r-root svg .grid line { stroke: var(--rule); stroke-width: 0.7; }
+
+#r-root svg .zero { stroke: var(--ink); stroke-width: 1.1; }
+
+#r-root svg .bar, #r-root svg .dot, #r-root svg .country { cursor: pointer; }
+
+#r-root svg .bar:hover, #r-root svg .dot:hover, #r-root svg .country:hover { filter: brightness(1.12); stroke: var(--ink);
+  stroke-width: 1; }
+
+#r-root svg .country { stroke: var(--paper); stroke-width: 0.6; }
+
+#r-root svg .sphere { fill: var(--panel); }
+
+#r-root svg .scrub { stroke: var(--ink); stroke-dasharray: 3 3; }
+
+#r-root .tip { position: fixed; z-index: 50; pointer-events: none; background: var(--ink);
+  color: var(--paper); padding: 7px 10px; border-radius: 8px; font-size: 12.5px; line-height: 1.4;
+  max-width: 320px; box-shadow: 0 6px 22px rgba(0,0,0,0.25); display: none; }
+
+#r-root .readout { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px;
+  margin: 8px 0; }
+
+#r-root .readout div { background: var(--panel); border-radius: 8px; padding: 8px 10px; font-size: 13px; }
+
+#r-root .readout .v { font-weight: 700; font-variant-numeric: tabular-nums; font-size: 16px; }
+
+#r-root .readout .v.added { color: var(--added); }
+ #r-root .readout .v.avoided { color: var(--avoided); }
+
+#r-root .multiples { display: grid; grid-template-columns: 150px repeat(var(--cols), 1fr); gap: 6px 10px;
+  align-items: center; }
+
+#r-root .multiples .hd { font-size: 12px; color: var(--muted); text-align: center; font-weight: 600; }
+
+#r-root .multiples .rl { font-size: 13px; font-weight: 600; }
+
+#r-root .multiples .cell { background: var(--panel); border-radius: 8px; padding: 4px; min-height: 70px;
+  cursor: pointer; }
+
+#r-root .multiples .cell:hover { outline: 2px solid var(--accent); }
+
+#r-root .multiples .cell.empty { background: transparent; border: 1px dashed var(--rule); cursor: default; }
+
+#r-root .multiples .cell .t { font-size: 11px; color: var(--muted); text-align: center; }
+
+#r-root .multiples .cell svg { width: 100%; height: auto; display: block; }
+
+
+/* ---- tables ---- */
+#r-root .tbl { overflow-x: auto; margin: 6px 0; }
+
+#r-root .tbl.short { max-height: 420px; overflow: auto; }
+
+#r-root table { border-collapse: collapse; width: 100%; font-size: 13px; }
+
+#r-root th, #r-root td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--rule);
+  white-space: nowrap; }
+
+#r-root th:first-child, #r-root td:first-child, #r-root .l { text-align: left; }
+
+#r-root thead th { font-weight: 600; color: var(--muted); cursor: pointer; user-select: none;
+  position: sticky; top: 0; background: var(--paper); z-index: 1; }
+
+#r-root thead th:hover, #r-root thead th.sorted { color: var(--ink); }
+
+#r-root thead th.sorted::after { content: " \25BE"; font-size: 10px; }
+
+#r-root thead th.sorted.asc::after { content: " \25B4"; }
+
+#r-root tbody tr:hover { background: var(--panel); }
+
+#r-root td.added { color: var(--added); font-variant-numeric: tabular-nums; }
+
+#r-root td.avoided { color: var(--avoided); font-variant-numeric: tabular-nums; }
+
+#r-root td.num { font-variant-numeric: tabular-nums; }
+
+#r-root td.wrap { white-space: normal; min-width: 240px; }
+
+#r-root tfoot td { font-weight: 600; border-top: 1.5px solid var(--ink); }
+
+#r-root .tier { display: inline-block; min-width: 18px; text-align: center; border-radius: 4px;
+  font-size: 11px; font-weight: 700; padding: 0 4px; }
+
+#r-root .tier.A { background: var(--avoided); color: #fff; }
+ #r-root .tier.B { background: var(--hev); color: #fff; }
+
+#r-root .tier.C { background: var(--added); color: #fff; }
+
+
+/* ---- opener ---- */
+#r-root .opener { border: 2px dashed var(--rule); border-radius: 12px; padding: 22px; text-align: center;
+  background: var(--paper); }
+
+#r-root .opener.drag { border-color: var(--accent); background: var(--panel); }
+
+#r-root .opener input { display: none; }
+
+#r-root .opener label.btn { display: inline-block; background: var(--accent); color: var(--accent-ink);
+  padding: 8px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+
+#r-root .opener code { background: var(--panel); padding: 2px 6px; border-radius: 4px; }
+
+#r-root .err { color: var(--added); }
+
+#r-root .hidden { display: none !important; }
+
+@media print {
+  #r-root .top .filters, #r-root .tabs, #r-root .subtabs, #r-root .ctl { display: none !important; }
+
+  #r-root .top { position: static; box-shadow: none; }
+
+  
+  #r-root .card, #r-root .story { box-shadow: none; break-inside: avoid; }
+
+}
+
+
+/* ================= the briefing section, folded in from the deck ================= */
+
+
+
+
+
+#p-root code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; }
+
+
+/* ---- chrome ---- */
+#p-root .bar { position: fixed; top: 0; left: 0; right: 0; z-index: 20; display: flex; gap: 14px;
+  align-items: center; padding: 9px 20px; background: var(--paper);
+  border-bottom: 1px solid var(--rule); }
+
+#p-root .brand { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+#p-root .dots { display: flex; gap: 7px; margin-left: auto; }
+
+#p-root .dot { width: 26px; height: 5px; border-radius: 3px; border: 0; background: var(--rule);
+  cursor: pointer; padding: 0; }
+
+#p-root .dot.on { background: var(--accent); }
+
+#p-root .status { font-size: 11.5px; color: var(--muted); }
+
+#p-root .err { color: var(--added); }
+
+
+/* ---- slides ---- */
+#p-root main { scroll-snap-type: y mandatory; height: 100vh; overflow-y: auto; scroll-behavior: smooth; }
+
+#p-root section { scroll-snap-align: start; min-height: 100vh; display: flex; align-items: center;
+  padding: 64px 20px 40px; }
+
+#p-root .slide { max-width: 1120px; margin: 0 auto; width: 100%; }
+
+#p-root .kicker { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted);
+  margin-bottom: 10px; }
+
+#p-root h1 { font-size: clamp(26px, 3.4vw, 40px); line-height: 1.18; margin: 0 0 12px; letter-spacing: -0.01em; }
+
+#p-root h2 { font-size: clamp(22px, 2.6vw, 31px); line-height: 1.2; margin: 0 0 10px; letter-spacing: -0.01em; }
+
+#p-root .lead { font-size: clamp(16px, 1.35vw, 18px); color: var(--muted); margin: 0 0 22px; max-width: 78ch; }
+
+#p-root .note { font-size: 13.5px; color: var(--muted); margin-top: 14px; max-width: 90ch; }
+
+#p-root b.added { color: var(--added); }
+ #p-root b.avoided { color: var(--avoided); }
+
+
+/* ---- pieces ---- */
+#p-root .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;
+  margin: 6px 0 18px; }
+
+#p-root .stat { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 16px 18px; box-shadow: var(--shadow); }
+
+#p-root .stat .v { font-size: clamp(28px, 3.6vw, 44px); font-weight: 640; letter-spacing: -0.02em;
+  line-height: 1.05; font-variant-numeric: tabular-nums; }
+
+#p-root .stat .k { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+
+#p-root .two { display: grid; grid-template-columns: 1.15fr 1fr; gap: 22px; align-items: start; }
+
+@media (max-width: 900px) { #p-root .two { grid-template-columns: 1fr; }
+ }
+
+#p-root .card { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 16px 18px; box-shadow: var(--shadow); }
+
+#p-root .card h3 { margin: 0 0 4px; font-size: 14px; }
+
+#p-root .card .sub { font-size: 12.5px; color: var(--muted); margin-bottom: 10px; }
+
+#p-root table { border-collapse: collapse; width: 100%; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+
+#p-root th, #p-root td { padding: 7px 9px; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; }
+
+#p-root th:first-child, #p-root td:first-child { text-align: left; }
+
+#p-root thead th { font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted);
+  border-bottom: 1px solid var(--ink); }
+
+#p-root tbody tr:last-child td { border-bottom: 0; }
+
+#p-root .pos { color: var(--added); }
+ #p-root .neg { color: var(--avoided); }
+
+#p-root svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+#p-root .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted);
+  margin-top: 8px; }
+
+#p-root .legend i { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 5px;
+  vertical-align: -1px; }
+
+#p-root ul.plain { margin: 0; padding-left: 18px; }
+ #p-root ul.plain li { margin: 7px 0; }
+
+
+/* ---- opener ---- */
+#p-root #opener { position: fixed; inset: 0; z-index: 40; display: grid; place-items: center;
+  background: var(--bg); padding: 24px; text-align: center; }
+
+#p-root #opener .box { max-width: 560px; }
+
+#p-root .hidden { display: none !important; }
+
+
+@media print {
+  #p-root .bar, #p-root #opener { display: none !important; }
+
+  #p-root main { height: auto; overflow: visible; }
+
+  #p-root section { min-height: auto; page-break-after: always; padding: 22px 0; }
+
+  
+}
+
+
+/* ---- seating the two folded sections under the shell's own bar ---- */
+#r-root { font: 14px/1.55 ui-sans-serif, -apple-system, "Segoe UI", Inter, Roboto, sans-serif; }
+#r-root .top { position: sticky; top: var(--topbar); box-shadow: none; }
+#r-root .top .inner { max-width: none; padding: 8px 18px 0; }
+#r-root .r-wrap { max-width: none; padding: 16px 18px 60px; }
+#p-root { font: 14px/1.55 ui-sans-serif, -apple-system, "Segoe UI", Inter, Roboto, sans-serif; }
+#p-root .bar { position: sticky; top: var(--topbar); border-top: 1px solid var(--rule); }
+#p-root main { height: calc(100vh - var(--topbar) - 40px); }
+#p-root section { min-height: calc(100vh - var(--topbar) - 40px); }
+@media print { #p-root main, #p-root section { height: auto; min-height: auto; } }
 </style>
 </head>
 <body>
@@ -319,10 +736,10 @@ dialog::backdrop { background: rgba(0,0,0,.4); }
     <button class="mode on" data-mode="input">데이터 입력 · Data</button>
     <button class="mode" data-mode="database">데이터 분석 · Database</button>
     <button class="mode" data-mode="results">결과 분석 · Results</button>
+    <button class="mode" data-mode="report">분석 · Analysis</button>
+    <button class="mode" data-mode="brief">브리핑 · Briefing</button>
   </div>
   <span class="links">
-    <a href="../report/ti_automotive_report.html">Report</a>
-    <a href="../report/ti_automotive_pitch.html">Pitch</a>
     <button id="reopen" type="button">Open another file</button>
   </span>
   <span class="status" id="status">starting</span>
@@ -347,6 +764,156 @@ dialog::backdrop { background: rgba(0,0,0,.4); }
   <div class="tabs" id="tabs-main"></div>
   <div class="tabs sub" id="tabs-sub"></div>
   <main id="view"></main>
+  <div id="r-root" class="hidden">
+<div class="tip" id="r-tip"></div>
+
+<header class="top">
+  <div class="inner">
+    <div class="filters" id="r-filters">
+      <div class="fgroup"><span class="lbl">Scenario</span><span id="r-f-scenario"></span></div>
+      <div class="fgroup"><span class="lbl">Company</span><span id="r-f-company"></span></div>
+      <div class="fgroup"><span class="lbl">Market</span><span id="r-f-market"></span></div>
+      <div class="fgroup"><span class="lbl">Sale year</span><span id="r-f-year"></span></div>
+      <div class="fgroup"><span class="lbl">Home markets</span><span id="r-f-home"></span></div>
+      <button class="chip reset" id="r-f-reset">reset</button>
+      <span class="showing" id="r-showing"></span>
+    </div>
+    <nav class="tabs" id="r-tabs"></nav>
+  </div>
+</header>
+
+<div class="r-wrap">
+  <div id="r-content">
+    <section class="story" id="r-story"></section>
+    <div class="subtabs" id="r-subtabs"></div>
+    <div class="panel" id="r-panel"></div>
+  </div>
+</div>
+
+  </div>
+  <div id="p-root" class="hidden">
+
+<div class="bar" id="p-chrome">
+  <span class="dots" id="p-dots"></span>
+</div>
+
+<main id="p-deck">
+
+<section id="p-s1"><div class="slide">
+  <div class="kicker">The question</div>
+  <h1>A car sold today is a <b class="added">commitment</b> the destination country
+      has to live with for its whole life.</h1>
+  <p class="lead">Trade Impact measures that commitment against the trajectory the destination
+     itself is on. For every vehicle, every year of its operating life: what it emits, minus what
+     the destination's own fleet path implies for the same distance. Positive is emissions added
+     above that path; negative is emissions avoided against it.</p>
+  <div class="stats">
+    <div class="stat"><div class="v" data-f="units"></div>
+      <div class="k">vehicles assessed, <span data-f="cohort"></span> sales cohort,
+        <span data-f="companies"></span> companies across <span data-f="markets"></span> markets</div></div>
+    <div class="stat"><div class="v neg" data-f="s1"></div>
+      <div class="k">against each market's <b>observed trend</b> — what the fleet is actually doing</div></div>
+    <div class="stat"><div class="v pos" data-f="s2"></div>
+      <div class="k">against each market's <b>committed path</b> — what its climate pledge implies</div></div>
+  </div>
+  <p class="note">Same vehicles, same year, same arithmetic. Only the benchmark changes, and the
+     sign changes with it. That gap is the finding, and everything after this slide is an attempt
+     to say which of the two a decision-maker should act on.</p>
+</div></section>
+
+<section id="p-s2"><div class="slide">
+  <div class="kicker">By company</div>
+  <h2>Every company in the set is a net adder against the committed path.</h2>
+  <p class="lead">Lifetime impact of one year's sales, in megatonnes of CO<sub>2</sub>e, under both
+     benchmarks. The ranking under the observed trend is a ranking of hybrid share; the ranking
+     under the committed path is a ranking of how many combustion vehicles were sold.</p>
+  <div class="two">
+    <div class="card"><h3>Lifetime impact of the cohort</h3>
+      <div class="sub">megatonnes CO<sub>2</sub>e &middot; left of zero is avoided, right is added</div>
+      <div id="p-fig-company"></div>
+      <div class="legend"><span><i style="background:var(--s1)"></i>observed trend</span>
+        <span><i style="background:var(--s2)"></i>committed path</span></div></div>
+    <div class="card"><h3>Per vehicle sold</h3>
+      <div class="sub">tonnes CO<sub>2</sub>e over the vehicle's life</div>
+      <div id="p-tab-company"></div></div>
+  </div>
+  <p class="note" data-f="company_note"></p>
+</div></section>
+
+<section id="p-s3"><div class="slide">
+  <div class="kicker">Where it comes from</div>
+  <h2>The hybrid flips sign. Against the committed path it stops being a contribution.</h2>
+  <p class="lead">The same vehicles, split by powertrain, per vehicle sold. Battery vehicles stay
+     well below either benchmark and combustion vehicles stay above both — neither is in question.
+     The hybrid is the item that changes its answer, and since it is the second largest block of
+     units in the set, it changes the ranking of the companies with it.</p>
+  <div class="two">
+    <div class="card"><h3>Per vehicle, by powertrain</h3>
+      <div class="sub">tonnes CO<sub>2</sub>e over the vehicle's life, sales-weighted across the markets assessed</div>
+      <div id="p-fig-powertrain"></div>
+      <div class="legend"><span><i style="background:var(--s1)"></i>observed trend</span>
+        <span><i style="background:var(--s2)"></i>committed path</span></div></div>
+    <div class="card"><h3>What each company sold</h3>
+      <div class="sub">share of assessed units by powertrain</div>
+      <div id="p-tab-powertrain"></div></div>
+  </div>
+  <p class="note" data-f="powertrain_note"></p>
+</div></section>
+
+<section id="p-s4"><div class="slide">
+  <div class="kicker">By destination</div>
+  <h2>The same car is a different answer in each market, because each market is on a different path.</h2>
+  <p class="lead">Per vehicle, by destination. A market whose fleet is barely improving forgives
+     almost any modern car; a market with a steep pledge forgives none. This is why the metric is
+     computed per destination and never averaged into one global score.</p>
+  <div class="two">
+    <div class="card"><h3>Per vehicle, by destination and company</h3>
+      <div class="sub">tonnes CO<sub>2</sub>e against the committed path</div>
+      <div id="p-tab-market"></div>
+      <p class="note" data-f="missing_note"></p></div>
+    <div class="card"><h3>How fast each benchmark falls</h3>
+      <div class="sub">annual rate of decline in fleet emission intensity</div>
+      <div id="p-tab-slope"></div>
+      <p class="note" data-f="slope_note"></p></div>
+  </div>
+</div></section>
+
+<section id="p-s5"><div class="slide">
+  <div class="kicker">What this does not say</div>
+  <h2>Four limits, stated before anyone else states them.</h2>
+  <div class="two">
+    <div class="card"><h3>The limits</h3><ul class="plain">
+      <li><b>It is not a company total.</b> <span data-f="coverage"></span> of each company's
+        global sales sits inside the assessed markets. Everything here is that slice.</li>
+      <li><b>The benchmark is allocated, not published.</b> No climate pledge in these markets
+        carries a transport sub-target, so the sector path is taken pro rata from the
+        economy-wide one — which flatters combustion, because transport decarbonises slower
+        than the economy.</li>
+      <li><b>Vehicle lifetime moves the answer most.</b> Varying it alone takes the committed-path
+        total from <span data-f="life_lo"></span> to <span data-f="life_hi"></span>.</li>
+      <li><b>It is a distance, not a displacement.</b> The number says where a product sits
+        relative to a published path. It is not a claim that the sale caused a change, and it is
+        never netted against a Scope 3 inventory.</li>
+    </ul></div>
+    <div class="card"><h3>What it is for</h3>
+      <p class="sub" style="font-size:13.5px">Three uses it can carry, and one it cannot.</p>
+      <ul class="plain">
+        <li><b>Monitoring</b> — the trajectory implied by a named set of sold products, against a
+          named destination path.</li>
+        <li><b>Targeting</b> — which market and which product class sits furthest from the path.</li>
+        <li><b>Comparison</b> — the same benchmark applied to every company selling into the
+          same market.</li>
+        <li><b>Not evaluation</b> — no pre-period, no control group, no causal claim.</li>
+      </ul>
+      <p class="note">Every figure in this deck is a query on
+        <code>__DB_FILE__</code>, run when the page opened. The full analysis, its sources and its
+        assumption register are in the report beside it.</p></div>
+  </div>
+</div></section>
+
+</main>
+
+  </div>
 </div>
 
 <dialog id="editor">
@@ -405,7 +972,9 @@ const SECTIONS = {
   input: {views: null},
   database: {views: [['overview', '한눈에 Overview'], ['structure', '구조 Structure'], ['tables', '테이블 Tables'],
     ['sources', '소스 Sources'], ['lineage', '계보 Lineage'], ['browse', '조회 Browse'], ['pivot', '피벗 Pivot'], ['sql', 'SQL']]},
-  results: {views: [['company', '기업별 By company'], ['year', '연도별 By year'], ['lifetime', '생애 Lifetime pivot'], ['map', '지도 Map']]}
+  results: {views: [['company', '기업별 By company'], ['year', '연도별 By year'], ['lifetime', '생애 Lifetime pivot'], ['map', '지도 Map']]},
+  report: {views: null, module: () => window.__report, root: 'r-root', needs: 'ti_company'},
+  brief: {views: null, module: () => window.__deck, root: 'p-root', needs: 'ti_company'}
 };
 /* The columns of data/auto/overrides.csv, in order; apply_overrides.py reads exactly these. */
 const OVERRIDE_FIELDS = ['queued_at', 'cohort_year', 'dataset', 'country', 'parameter', 'old_value', 'new_value', 'source_id', 'note'];
@@ -1747,11 +2316,37 @@ main.addEventListener('input', (e) => {
 });
 
 /* ============================================================ shell: sections, views, routing */
+/* The two folded sections keep their own markup and their own state; the shell only shows them
+   and hands over the open database, once. Coming back to one never re-reads anything. */
+function showFolded(sec) {
+  ['r-root', 'p-root'].forEach((id) => $(id).classList.toggle('hidden', SECTIONS[sec].root !== id));
+  main.classList.add('hidden');
+  $('tabs-main').classList.add('hidden');
+  subBar('');
+  const mod = SECTIONS[sec].module();
+  if (!mod) return;
+  if (mod.mounted) { mod.route(); return; }
+  const cannot = (title, why) => {
+    $(SECTIONS[sec].root).classList.add('hidden');
+    main.classList.remove('hidden');
+    main.innerHTML = noteCard(title, why);
+  };
+  if (!has(SECTIONS[sec].needs)) {
+    cannot('Nothing to show for this file', '<p>This section reads the result tables — ' +
+      '<code>' + esc(SECTIONS[sec].needs) + '</code> and what hangs off it — which this database does not carry.</p>');
+    return;
+  }
+  try { mod.mount(DB); } catch (e) { cannot('This section could not be built from this file', '<p>' + esc(e.message || e) + '</p>'); }
+}
 function render() {
   const sec = state.section, view = state.view[sec];
   $('modes').querySelectorAll('.mode').forEach((b) => b.classList.toggle('on', b.dataset.mode === sec));
   const key = sec + '/' + view;
   if (key !== lastKey) { shellKey = ''; lastKey = key; }
+  if (SECTIONS[sec].root) { showFolded(sec); return; }
+  ['r-root', 'p-root'].forEach((id) => $(id).classList.add('hidden'));
+  main.classList.remove('hidden');
+  $('tabs-main').classList.remove('hidden');
   if (sec === 'input') { drawInput(); return; }
   const views = SECTIONS[sec].views;
   $('tabs-main').innerHTML = views.map(([id, label]) => '<button class="tab' + (id === view ? ' on' : '') + '" data-v="' + id + '">' + esc(label) + '</button>').join('');
@@ -1775,6 +2370,7 @@ function applyHash() {
   const parts = (location.hash || '').replace(/^#\/?/, '').split('/').filter(Boolean);
   let sec = parts[0];
   if (!SECTIONS[sec]) sec = has('data_readiness') ? 'input' : 'database';
+  if (SECTIONS[sec].root) { state.section = sec; render(); return; }
   let view = parts[1] ? decodeURIComponent(parts[1]) : null;
   if (sec === 'input') { if (!INPUT_TABS.includes(view)) view = state.view.input || INPUT_TABS[0]; }
   else { const ids = SECTIONS[sec].views.map((v) => v[0]); if (!ids.includes(view)) view = state.view[sec] || ids[0]; }
@@ -1810,6 +2406,7 @@ function openBytes(buffer, name) {
     dstate.pivot = defaultPivot(dstate.table);
     dstate.browse = {page: 0, sort: null, dir: 'asc', q: ''};
     dstate.view = 'lineage'; shellKey = ''; lastKey = '';
+    [window.__report, window.__deck].forEach((m) => { if (m && m.reset) m.reset(); });
     state.view = {input: null, database: null, results: null};
     state.inYear = null; state.resYear = null; state.resCountry = null;
     hideOpener();
@@ -1870,6 +2467,1647 @@ function boot() {
   document.addEventListener('mouseout', (e) => { if (e.target.closest && e.target.closest('[data-full]')) tip.classList.add('hidden'); });
 })();
 document.addEventListener('DOMContentLoaded', boot);
+})();
+</script>
+
+<script>
+/* ==============================================================================================
+   분석 · Analysis — the seven-tab analysis, reading the database the shell already opened.
+   ============================================================================================== */
+(function () {
+'use strict';
+
+/* ============================================================================================
+   The page is a reader of the database. Every figure below is a query result at read time.
+   ============================================================================================ */
+
+const MARKET_NAME = {EU27: 'European Union (27)', US: 'United States', JP: 'Japan', KR: 'Korea'};
+const MARKET_ORDER = ['EU27', 'US', 'JP', 'KR'];
+const MARKET_TABLE = {EU27: 'eu27', US: 'us', JP: 'jp', KR: 'kr'};
+const COMPANY_NAME = {toyota: 'Toyota', hyundai: 'Hyundai', kia: 'Kia', nissan: 'Nissan'};
+const COMPANY_ORDER = ['toyota', 'hyundai', 'kia', 'nissan'];
+const SC_NAME = {S1: 'S1 observed trajectory', S2: 'S2 committed policy'};
+const SC_COLOR = {S1: 'var(--s1)', S2: 'var(--s2)'};
+const PT_ORDER = ['ICE', 'HEV', 'PHEV', 'BEV', 'FCEV'];
+const PT_COLOR = {ICE: 'var(--ice)', HEV: 'var(--hev)', PHEV: 'var(--phev)', BEV: 'var(--bev)',
+  FCEV: 'var(--fcev)'};
+const SEG_NAME = {passenger_car: 'passenger car', light_duty: 'light duty', freight: 'freight',
+  bus: 'bus', special: 'special'};
+
+const TABS = [
+  {id: 'sales', title: 'Sales', subs: () => [['all', 'All companies'],
+    ...ALL.companies.map((c) => [c, COMPANY_NAME[c]])]},
+  {id: 'coverage', title: 'Coverage', subs: () => [['assessed', 'Assessed vs withheld'],
+    ['global', 'Share of worldwide sales'], ['withheld', 'Why units are withheld'],
+    ['quality', 'Data quality tiers']]},
+  {id: 'benchmarks', title: 'Destination benchmarks', subs: () => ALL.markets.map((m) => [m, MARKET_NAME[m]])},
+  {id: 'inputs', title: 'Other inputs', subs: () => [['usage', 'Distance and stock'],
+    ['lifetime', 'Vehicle lifetime'], ['technology', 'Product intensities'],
+    ['realworld', 'Real-world correction']]},
+  {id: 'annual', title: 'Annual impact', subs: () => [['grid', 'Company × market'],
+    ['profile', 'One cohort, year by year'], ['country', 'By destination (EU27)'],
+    ['powertrain', 'By powertrain']]},
+  {id: 'total', title: 'Total impact', subs: () => [['company', 'By company'],
+    ['pervehicle', 'Per vehicle'], ['crossover', 'Crossover year'], ['nameplate', 'Same car, different market'],
+    ['sensitivity', 'Sensitivity'], ['table', 'Result table']]},
+  {id: 'sources', title: 'Sources', subs: () => [['tables', 'Output tables'], ['sources', 'Data sources']]},
+];
+
+let SQL = null, DB = null, GEO = null, CODES = null;
+const state = {tab: 'sales', sub: {}, scenario: 'S2', companies: new Set(), markets: new Set(),
+  year: 'all', home: 'include', cohort: null, scrub: null, pick: {}};
+const ALL = {companies: [], markets: [], years: []};
+let FACTS = {};
+
+/* ---------------------------------------------------------------- helpers */
+const $ = (id) => document.getElementById('r-' + id);
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({
+  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+const MINUS = '−';
+function fmt(v, dp = 2, signed = true) {
+  if (v == null || Number.isNaN(v)) return '—';
+  let places = dp;
+  while (places < dp + 3 && v !== 0 && Math.abs(v) < 0.5 * Math.pow(10, -places)) places += 1;
+  const s = Math.abs(v).toLocaleString('en-US', {minimumFractionDigits: places,
+    maximumFractionDigits: places});
+  if (!signed) return (v < 0 ? MINUS : '') + s;
+  return (v < 0 ? MINUS : '+') + s;
+}
+const fmtN = (v, dp = 0) => v == null || v === '' ? '—' : Number(v).toLocaleString('en-US',
+  {minimumFractionDigits: dp, maximumFractionDigits: dp});
+const pct = (v, dp = 1) => v == null || v === '' ? '—' : (Number(v) * 100).toFixed(dp) + ' %';
+const cls = (v) => v > 0 ? 'added' : (v < 0 ? 'avoided' : '');
+const label = (m, y, c) => m + ' ' + y + ' ' + (COMPANY_NAME[c] || c);
+const seg = (s) => SEG_NAME[s] || s;
+const tierTag = (t) => t ? '<span class="tier ' + esc(t) + '">' + esc(t) + '</span>' : '—';
+const quoted = (s) => "'" + String(s).replace(/'/g, "''") + "'";
+
+function Q(sql, params) {
+  const stmt = DB.prepare(sql);
+  if (params) stmt.bind(params);
+  const out = [];
+  while (stmt.step()) out.push(stmt.getAsObject());
+  stmt.free();
+  return out;
+}
+function one(sql, params) { return Q(sql, params)[0] || {}; }
+function hasTable(name) {
+  return Q("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = ?", [name]).length > 0;
+}
+function inList(col, values) {
+  const arr = [...values];
+  if (!arr.length) return ' AND 0';
+  return ' AND ' + col + ' IN (' + arr.map(quoted).join(',') + ')';
+}
+/* Home markets: Hyundai and Kia in KR, Toyota and Nissan in JP (companies table). Excluding them
+   leaves the export impact. */
+function homeClause(prefix) {
+  if (state.home !== 'exclude' || !ALL.home) return '';
+  const pairs = Object.entries(ALL.home).map(([c, m]) => '(' + prefix + 'company = ' + quoted(c) + ' AND ' + prefix + 'market = ' + quoted(m) + ')');
+  return pairs.length ? ' AND NOT (' + pairs.join(' OR ') + ')' : '';
+}
+function whereFilters(withYear = true, prefix = '') {
+  let w = homeClause(prefix);
+  if (state.companies.size) w += inList(prefix + 'company', state.companies);
+  if (state.markets.size) w += inList(prefix + 'market', state.markets);
+  if (withYear && state.year !== 'all') w += ' AND ' + prefix + 'cohort_year = ' + Number(state.year);
+  return w;
+}
+/* The cohort year the cross-market views draw when the filter says "all": the first year every
+   market has (2024) where the filtered set has it, otherwise the earliest year the set has. */
+function focusYear() {
+  if (state.year !== 'all') return Number(state.year);
+  const years = Q('SELECT DISTINCT cohort_year y FROM ti_company WHERE 1' + whereFilters(false) + ' ORDER BY y').map((r) => r.y);
+  return years.includes(2024) || !years.length ? 2024 : years[0];
+}
+const sub = () => state.sub[state.tab];
+function pick(key, fallback) { return state.pick[key] == null ? fallback : state.pick[key]; }
+
+/* ---------------------------------------------------------------- tooltip */
+const tipEl = $('tip');
+function tip(ev, html) {
+  tipEl.innerHTML = html;
+  tipEl.style.display = 'block';
+  const pad = 14, w = tipEl.offsetWidth, h = tipEl.offsetHeight;
+  let x = ev.clientX + pad, y = ev.clientY + pad;
+  if (x + w > window.innerWidth - 8) x = ev.clientX - w - pad;
+  if (y + h > window.innerHeight - 8) y = ev.clientY - h - pad;
+  tipEl.style.left = x + 'px';
+  tipEl.style.top = y + 'px';
+}
+function untip() { tipEl.style.display = 'none'; }
+
+/* ---------------------------------------------------------------- DOM kit */
+function el(tag, klass, html) {
+  const e = document.createElement(tag);
+  if (klass) e.className = klass;
+  if (html != null) e.innerHTML = html;
+  return e;
+}
+function card(parent, title, subtitle) {
+  const c = el('div', 'card');
+  if (title) c.appendChild(el('h3', null, title));
+  if (subtitle) c.appendChild(el('div', 'sub', subtitle));
+  parent.appendChild(c);
+  return c;
+}
+function fig(parent) { const f = el('div', 'fig'); parent.appendChild(f); return f; }
+function caption(parent, html) { parent.appendChild(el('div', 'cap', html)); }
+function legend(parent, items) {
+  parent.appendChild(el('div', 'legend', items.map(([n, c]) => '<span><i style="background:' + c +
+    '"></i>' + esc(n) + '</span>').join('')));
+}
+function kpis(parent, tiles) {
+  parent.appendChild(el('div', 'kpis', tiles.map(([v, l, k]) => '<div class="kpi"><div class="v ' +
+    (k || '') + '">' + v + '</div><div class="l">' + l + '</div></div>').join('')));
+}
+function select(parent, labelText, options, value, onChange) {
+  const wrap = el('label', null, esc(labelText) + ' ');
+  const s = document.createElement('select');
+  for (const [v, l] of options) {
+    const o = document.createElement('option');
+    o.value = v; o.textContent = l; if (String(v) === String(value)) o.selected = true;
+    s.appendChild(o);
+  }
+  s.addEventListener('change', () => onChange(s.value));
+  wrap.appendChild(s);
+  parent.appendChild(wrap);
+  return s;
+}
+function ctl(parent) { const c = el('div', 'ctl'); parent.appendChild(c); return c; }
+
+/* ---------------------------------------------------------------- chart kit (d3) */
+function niceLimit(v) {
+  if (v <= 0) return 1;
+  const mag = Math.pow(10, Math.floor(Math.log10(v)));
+  for (const s of [1, 1.5, 2, 2.5, 3, 4, 5, 7.5, 10]) if (v <= s * mag) return s * mag;
+  return 10 * mag;
+}
+function xDomain(values) {
+  const lo = Math.min(0, ...values), hi = Math.max(0, ...values);
+  const a = lo < 0 ? niceLimit(-lo) : 0, b = hi > 0 ? niceLimit(hi) : 0;
+  return [-a, b || (a ? 0 : 1)];
+}
+function svgIn(parent, width, height) {
+  return d3.select(parent).append('svg').attr('viewBox', '0 0 ' + width + ' ' + height).attr('role', 'img');
+}
+function xAxis(g, x, y0, y1, unit, width) {
+  const ticks = x.ticks(x.range()[1] - x.range()[0] > 600 ? 8 : 5);
+  g.append('g').attr('class', 'grid').selectAll('line').data(ticks).join('line')
+    .attr('x1', (d) => x(d)).attr('x2', (d) => x(d)).attr('y1', y0).attr('y2', y1);
+  const dp = ticks.some((t) => Math.abs(t % 1) > 1e-9) ? 1 : 0;
+  const wide = Math.max(...ticks.map(Math.abs)) >= 1e4;
+  const compact = d3.format('~s');
+  g.append('g').attr('class', 'tick').selectAll('text').data(ticks).join('text')
+    .attr('x', (d) => x(d)).attr('y', y1 + 14).attr('text-anchor', 'middle')
+    .text((d) => wide ? compact(d).replace('G', 'B') : fmtN(d, dp));
+  g.append('line').attr('class', 'zero').attr('x1', x(0)).attr('x2', x(0)).attr('y1', y0).attr('y2', y1);
+  g.append('text').attr('x', width - 4).attr('y', 11).attr('text-anchor', 'end').attr('class', 'tick').text(unit);
+}
+function empty(parent, msg) { caption(parent, msg || 'Nothing in view for these filters.'); }
+
+/* Horizontal bars: rows of one or more series, coloured by meaning unless the series says. */
+function barsH(parent, rows, opts) {
+  const o = Object.assign({labelW: 190, band: 12, unit: '', dp: 1, onClick: null, colour: null,
+    tipHtml: null, signed: true}, opts);
+  if (!rows.length) { empty(parent); return; }
+  const nSeries = Math.max(1, ...rows.map((r) => r.series.length));
+  const rowH = o.band * nSeries + 8, top = 24, bottom = 30, width = 880;
+  const height = top + rows.length * rowH + bottom;
+  const plotW = width - o.labelW - 70;
+  const vals = rows.flatMap((r) => r.series.map((s) => s.value));
+  const x = d3.scaleLinear().domain(o.signed ? xDomain(vals) : [0, niceLimit(Math.max(...vals, 1e-9))])
+    .range([o.labelW, o.labelW + plotW]);
+  const svg = svgIn(parent, width, height);
+  xAxis(svg, x, top - 6, top + rows.length * rowH, o.unit, width);
+  const g = svg.append('g');
+  rows.forEach((r, i) => {
+    const y = top + i * rowH;
+    g.append('text').attr('x', o.labelW - 8).attr('y', y + rowH / 2 + 4).attr('text-anchor', 'end').text(r.label);
+    r.series.forEach((s, j) => {
+      const yy = y + 4 + j * o.band, v = s.value;
+      const x0 = Math.min(x(0), x(v)), w = Math.max(Math.abs(x(v) - x(0)), 0.8);
+      const fill = o.colour ? o.colour(s, r) : (v > 0 ? 'var(--added)' : 'var(--avoided)');
+      g.append('rect').attr('class', 'bar').attr('x', x0).attr('y', yy).attr('width', w)
+        .attr('height', o.band - 3).attr('fill', fill).attr('rx', 1.5)
+        .on('mousemove', (ev) => tip(ev, o.tipHtml ? o.tipHtml(s, r) : '<b>' + esc(r.label) + '</b><br>' +
+          esc(s.key) + ': ' + fmt(v, o.dp, o.signed) + ' ' + esc(o.unit)))
+        .on('mouseleave', untip)
+        .on('click', () => o.onClick && o.onClick(r, s));
+      const overflow = v >= 0 ? x(v) + 40 > width - 4 : x(v) - 40 < o.labelW;
+      const inside = overflow && w > 44;
+      let tx = inside ? (v >= 0 ? x(v) - 4 : x(v) + 4) : (v >= 0 ? x(v) + 4 : x(v) - 4);
+      let anchor = (v >= 0) !== inside ? 'start' : 'end';
+      if (v < 0 && overflow && !inside) { tx = x(0) + 4; anchor = 'start'; }
+      g.append('text').attr('x', tx).attr('y', yy + o.band - 5).attr('text-anchor', anchor)
+        .attr('fill', inside ? '#fff' : 'var(--ink)').style('font-size', '10px').text(fmt(v, o.dp, o.signed));
+    });
+  });
+}
+
+/* Stacked horizontal bars (positive quantities such as units). */
+function stackedH(parent, rows, keys, opts) {
+  const o = Object.assign({labelW: 190, band: 18, unit: '', colour: (k) => PT_COLOR[k] || 'var(--held)',
+    fmtV: (v) => fmtN(v), onClick: null}, opts);
+  if (!rows.length) { empty(parent); return; }
+  const rowH = o.band + 8, top = 24, bottom = 30, width = 880;
+  const height = top + rows.length * rowH + bottom;
+  const plotW = width - o.labelW - 90;
+  const totals = rows.map((r) => keys.reduce((a, k) => a + (r.values[k] || 0), 0));
+  const x = d3.scaleLinear().domain([0, niceLimit(Math.max(...totals, 1e-9))]).range([o.labelW, o.labelW + plotW]);
+  const svg = svgIn(parent, width, height);
+  xAxis(svg, x, top - 6, top + rows.length * rowH, o.unit, width);
+  rows.forEach((r, i) => {
+    const y = top + i * rowH;
+    svg.append('text').attr('x', o.labelW - 8).attr('y', y + rowH / 2 + 4).attr('text-anchor', 'end').text(r.label);
+    let acc = 0;
+    for (const k of keys) {
+      const v = r.values[k] || 0;
+      if (!v) continue;
+      svg.append('rect').attr('class', 'bar').attr('x', x(acc)).attr('y', y + 4).attr('width', Math.max(x(acc + v) - x(acc), 0.5))
+        .attr('height', o.band).attr('fill', o.colour(k))
+        .on('mousemove', (ev) => tip(ev, '<b>' + esc(r.label) + '</b><br>' + esc(k) + ': ' + o.fmtV(v) + ' ' +
+          esc(o.unit) + ' (' + pct(v / totals[i]) + ')<br>total ' + o.fmtV(totals[i])))
+        .on('mouseleave', untip)
+        .on('click', () => o.onClick && o.onClick(r, k));
+      acc += v;
+    }
+    svg.append('text').attr('x', x(totals[i]) + 5).attr('y', y + rowH / 2 + 4).style('font-size', '10px').text(o.fmtV(totals[i]));
+  });
+}
+
+/* Dot plot with stems from zero. */
+function dots(parent, rows, opts) {
+  const o = Object.assign({labelW: 60, unit: '', dp: 1, tipHtml: null, colour: null, signed: true}, opts);
+  if (!rows.length) { empty(parent); return; }
+  const rowH = 16, top = 24, bottom = 30, width = 880;
+  const height = top + rows.length * rowH + bottom;
+  const plotW = width - o.labelW - 80;
+  const vals = rows.map((r) => r.value);
+  const x = d3.scaleLinear().domain(o.signed ? xDomain(vals) : [0, niceLimit(Math.max(...vals, 1e-9))])
+    .range([o.labelW, o.labelW + plotW]);
+  const svg = svgIn(parent, width, height);
+  xAxis(svg, x, top - 6, top + rows.length * rowH, o.unit, width);
+  rows.forEach((r, i) => {
+    const y = top + i * rowH + rowH / 2;
+    const fill = o.colour ? o.colour(r) : (r.value > 0 ? 'var(--added)' : 'var(--avoided)');
+    svg.append('line').attr('x1', x(0)).attr('x2', x(r.value)).attr('y1', y).attr('y2', y).attr('stroke', 'var(--rule)');
+    svg.append('circle').attr('class', 'dot').attr('cx', x(r.value)).attr('cy', y).attr('r', 4.5).attr('fill', fill)
+      .on('mousemove', (ev) => tip(ev, o.tipHtml ? o.tipHtml(r) : '<b>' + esc(r.label) + '</b><br>' +
+        fmt(r.value, o.dp, o.signed) + ' ' + esc(o.unit)))
+      .on('mouseleave', untip);
+    svg.append('text').attr('x', o.labelW - 8).attr('y', y + 4).attr('text-anchor', 'end').style('font-size', '10.5px').text(r.label);
+    svg.append('text').attr('x', x(r.value) + (r.value >= 0 ? 8 : -8)).attr('y', y + 4)
+      .attr('text-anchor', r.value >= 0 ? 'start' : 'end').style('font-size', '10px').text(fmt(r.value, o.dp, o.signed));
+  });
+}
+
+/* Range (tornado) bars with a central mark. */
+function ranges(parent, rows, opts) {
+  const o = Object.assign({labelW: 260, unit: '', dp: 1}, opts);
+  if (!rows.length) { empty(parent); return; }
+  const rowH = 24, top = 24, bottom = 30, width = 880;
+  const height = top + rows.length * rowH + bottom;
+  const plotW = width - o.labelW - 130;
+  const x = d3.scaleLinear().domain(xDomain(rows.flatMap((r) => [r.low, r.mid, r.high]))).range([o.labelW, o.labelW + plotW]);
+  const svg = svgIn(parent, width, height);
+  xAxis(svg, x, top - 6, top + rows.length * rowH, o.unit, width);
+  rows.forEach((r, i) => {
+    const y = top + i * rowH, a = Math.min(r.low, r.high), b = Math.max(r.low, r.high);
+    svg.append('rect').attr('class', 'bar').attr('x', x(a)).attr('y', y + 5).attr('width', Math.max(x(b) - x(a), 1))
+      .attr('height', rowH - 12).attr('fill', 'var(--band)').attr('stroke', 'var(--rule)')
+      .on('mousemove', (ev) => tip(ev, '<b>' + esc(r.label) + '</b><br>' + fmt(a, o.dp) + ' to ' + fmt(b, o.dp) + ' ' +
+        esc(o.unit) + '<br>central ' + fmt(r.mid, o.dp)))
+      .on('mouseleave', untip);
+    svg.append('line').attr('x1', x(r.mid)).attr('x2', x(r.mid)).attr('y1', y + 3).attr('y2', y + rowH - 4)
+      .attr('stroke', 'var(--ink)').attr('stroke-width', 1.6);
+    svg.append('text').attr('x', o.labelW - 8).attr('y', y + rowH / 2 + 4).attr('text-anchor', 'end').style('font-size', '10.5px').text(r.label);
+    svg.append('text').attr('x', x(b) + 6).attr('y', y + rowH / 2 + 4).style('font-size', '10px').text(fmt(a, o.dp) + ' to ' + fmt(b, o.dp));
+  });
+}
+
+/* Time series over numeric years: series = [{key, points: [[year, value]], colour, dashed}]. */
+function tsChart(parent, series, opts) {
+  const o = Object.assign({unit: '', dp: 1, height: 300, zero: true, band: null, scrub: null, onScrub: null}, opts);
+  const pts = series.flatMap((s) => s.points);
+  if (!pts.length) { empty(parent); return; }
+  const width = 880, height = o.height, left = 64, right = 16, top = 18, bottom = 36;
+  const plotW = width - left - right, plotH = height - top - bottom;
+  const years = [...new Set(pts.map((p) => p[0]))].sort((a, b) => a - b);
+  const vals = pts.map((p) => p[1]);
+  const lo = Math.min(o.zero ? 0 : Math.min(...vals), ...vals), hi = Math.max(o.zero ? 0 : Math.max(...vals), ...vals);
+  const y = d3.scaleLinear().domain(o.zero ? [lo < 0 ? -niceLimit(-lo) : 0, hi > 0 ? niceLimit(hi) : 1] : [lo, hi]).nice()
+    .range([top + plotH, top]);
+  const x = d3.scaleLinear().domain([years[0], years[years.length - 1]]).range([left, left + plotW]);
+  const svg = svgIn(parent, width, height);
+  svg.append('g').attr('class', 'grid').selectAll('line').data(y.ticks(6)).join('line')
+    .attr('x1', left).attr('x2', left + plotW).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+  svg.append('g').attr('class', 'tick').selectAll('text').data(y.ticks(6)).join('text')
+    .attr('x', left - 8).attr('y', (d) => y(d) + 4).attr('text-anchor', 'end').text((d) => fmtN(d, o.dp));
+  const xt = x.ticks(Math.min(12, years.length)).filter((t) => Number.isInteger(t));
+  svg.append('g').attr('class', 'tick').selectAll('text').data(xt).join('text')
+    .attr('x', (d) => x(d)).attr('y', top + plotH + 16).attr('text-anchor', 'middle').text((d) => d);
+  if (o.zero && lo < 0) svg.append('line').attr('class', 'zero').attr('x1', left).attr('x2', left + plotW).attr('y1', y(0)).attr('y2', y(0));
+  if (o.band) {
+    const a = series.find((s) => s.key === o.band[0]), b = series.find((s) => s.key === o.band[1]);
+    if (a && b) {
+      const bm = new Map(b.points);
+      const area = d3.area().x((p) => x(p[0])).y0((p) => y(p[1])).y1((p) => y(bm.get(p[0]) == null ? p[1] : bm.get(p[0])));
+      svg.append('path').attr('d', area(a.points.filter((p) => bm.has(p[0])))).attr('fill', 'var(--band)');
+    }
+  }
+  const line = d3.line().x((p) => x(p[0])).y((p) => y(p[1])).defined((p) => p[1] != null);
+  for (const s of series) {
+    svg.append('path').attr('d', line(s.points)).attr('fill', 'none').attr('stroke', s.colour)
+      .attr('stroke-width', s.width || 2).attr('stroke-dasharray', s.dashed ? '5 4' : null);
+    if (s.points.length < 40) {
+      svg.append('g').selectAll('circle').data(s.points).join('circle').attr('cx', (p) => x(p[0])).attr('cy', (p) => y(p[1]))
+        .attr('r', 2.2).attr('fill', s.colour);
+    }
+  }
+  svg.append('text').attr('x', width - 4).attr('y', 11).attr('text-anchor', 'end').attr('class', 'tick').text(o.unit);
+  const marker = svg.append('line').attr('class', 'scrub').attr('y1', top).attr('y2', top + plotH).style('display', 'none');
+  const markDots = svg.append('g');
+  function place(yr) {
+    marker.style('display', null).attr('x1', x(yr)).attr('x2', x(yr));
+    const at = series.map((s) => [s, s.points.find((p) => p[0] === yr)]).filter((d) => d[1]);
+    markDots.selectAll('circle').data(at).join('circle').attr('cx', x(yr)).attr('cy', (d) => y(d[1][1])).attr('r', 4).attr('fill', (d) => d[0].colour);
+  }
+  const nearest = (ev) => {
+    const px = d3.pointer(ev)[0];
+    let best = years[0], bd = Infinity;
+    for (const yr of years) { const d = Math.abs(x(yr) - px); if (d < bd) { bd = d; best = yr; } }
+    return best;
+  };
+  if (o.scrub != null) place(o.scrub);
+  svg.append('rect').attr('x', left).attr('y', top).attr('width', plotW).attr('height', plotH).attr('fill', 'transparent')
+    .style('cursor', 'crosshair')
+    .on('mousemove', (ev) => {
+      const yr = nearest(ev);
+      place(yr);
+      tip(ev, '<b>' + yr + '</b><br>' + series.map((s) => { const p = s.points.find((q) => q[0] === yr);
+        return p ? esc(s.key) + ': ' + fmtN(p[1], o.dp) : null; }).filter(Boolean).join('<br>'));
+      if (o.onScrub) o.onScrub(yr, false);
+    })
+    .on('click', (ev) => { if (o.onScrub) o.onScrub(nearest(ev), true); })
+    .on('mouseleave', () => { untip(); if (o.scrub != null) { place(o.scrub); if (o.onScrub) o.onScrub(o.scrub, false); }
+      else marker.style('display', 'none'), markDots.selectAll('circle').remove(); });
+}
+
+/* Small bar strip for the company x market grid. */
+function miniBars(parent, rows, amp) {
+  const width = 200, height = 62, left = 4, right = 4, top = 6, bottom = 14;
+  const plotH = height - top - bottom, mid = top + plotH / 2;
+  const svg = svgIn(parent, width, height);
+  const x = d3.scaleBand().domain(rows.map((r) => r.calendar_year)).range([left, width - right]).padding(0.15);
+  const y = d3.scaleLinear().domain([-amp, amp]).range([top + plotH, top]);
+  svg.append('line').attr('x1', left).attr('x2', width - right).attr('y1', mid).attr('y2', mid).attr('stroke', 'var(--rule)');
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.calendar_year)).attr('width', x.bandwidth())
+    .attr('y', (r) => Math.min(y(0), y(r.ti_tco2e))).attr('height', (r) => Math.max(Math.abs(y(r.ti_tco2e) - y(0)), 0.5))
+    .attr('fill', (r) => r.ti_tco2e > 0 ? 'var(--added)' : 'var(--avoided)');
+  svg.append('text').attr('x', left).attr('y', height - 3).style('font-size', '9px').attr('fill', 'var(--muted)').text(rows[0].calendar_year);
+  svg.append('text').attr('x', width - right).attr('y', height - 3).attr('text-anchor', 'end').style('font-size', '9px')
+    .attr('fill', 'var(--muted)').text(rows[rows.length - 1].calendar_year);
+}
+
+/* Sortable table. cols: [{key, label, num, fmt, cls}] */
+function table(parent, cols, rows, opts) {
+  const o = Object.assign({foot: null, sort: null, dir: 'desc', short: false}, opts);
+  const wrap = el('div', 'tbl' + (o.short ? ' short' : ''));
+  parent.appendChild(wrap);
+  let sortKey = o.sort, dir = o.dir;
+  function render() {
+    const data = rows.slice();
+    if (sortKey) {
+      const c = cols.find((k) => k.key === sortKey);
+      data.sort((a, b) => {
+        const va = a[sortKey], vb = b[sortKey];
+        if (c && c.num) return (dir === 'asc' ? 1 : -1) * ((Number(va) || 0) - (Number(vb) || 0));
+        return (dir === 'asc' ? 1 : -1) * String(va == null ? '' : va).localeCompare(String(vb == null ? '' : vb));
+      });
+    }
+    let h = '<table><thead><tr>' + cols.map((c) => '<th data-k="' + esc(c.key) + '" class="' + (c.num ? '' : 'l ') +
+      (sortKey === c.key ? 'sorted ' + dir : '') + '">' + esc(c.label) + '</th>').join('') + '</tr></thead><tbody>';
+    for (const r of data) {
+      h += '<tr>' + cols.map((c) => {
+        const v = r[c.key];
+        const text = c.fmt ? c.fmt(v, r) : esc(v);
+        const k = c.cls ? c.cls(v, r) : (c.num ? 'num' : 'l') + (c.wrap ? ' wrap' : '');
+        return '<td class="' + k + '">' + text + '</td>';
+      }).join('') + '</tr>';
+    }
+    h += '</tbody>';
+    if (o.foot) h += '<tfoot><tr>' + o.foot.map((t, i) => '<td class="' + (cols[i] && cols[i].num ? 'num' : 'l') + '">' + t +
+      '</td>').join('') + '</tr></tfoot>';
+    wrap.innerHTML = h + '</table>';
+    wrap.querySelectorAll('th').forEach((th) => th.addEventListener('click', () => {
+      const k = th.dataset.k;
+      if (sortKey === k) dir = dir === 'asc' ? 'desc' : 'asc'; else { sortKey = k; dir = 'desc'; }
+      render();
+    }));
+  }
+  render();
+}
+const cellMt = (v) => fmt(v / 1e6, 2);
+const cellT = (v) => fmt(v / 1000, 1);
+const signCls = (v) => cls(Number(v)) || 'num';
+const clip = (n) => (v) => '<span class="small" title="' + esc(v) + '">' + esc(String(v == null ? '' : v).slice(0, n)) +
+  (String(v == null ? '' : v).length > n ? '…' : '') + '</span>';
+
+/* ---------------------------------------------------------------- facts (whole result set) */
+function computeFacts() {
+  const f = {};
+  const rep = Q("SELECT * FROM ti_company WHERE status = 'reported'");
+  f.cohorts = new Set(rep.map((r) => r.market + '|' + r.company + '|' + r.cohort_year)).size;
+  f.markets_n = new Set(rep.map((r) => r.market)).size;
+  f.companies_n = new Set(rep.map((r) => r.company)).size;
+  const s1 = rep.filter((r) => r.scenario === 'S1'), s2 = rep.filter((r) => r.scenario === 'S2');
+  const covered = s1.reduce((a, r) => a + r.covered_units, 0), withheld = s1.reduce((a, r) => a + r.withheld_units, 0);
+  f.units = fmtN(covered);
+  f.withheld_units = fmtN(withheld);
+  f.sold_units = fmtN(covered + withheld);
+  f.covered_share = pct(covered / (covered + withheld), 1);
+  f.years = ALL.years.join(', ').replace(/, (\d+)$/, ' and $1');
+  f.s1_total_v = s1.reduce((a, r) => a + r.ti_tco2e, 0) / 1e6;
+  f.s2_total_v = s2.reduce((a, r) => a + r.ti_tco2e, 0) / 1e6;
+  f.s1_total = fmt(f.s1_total_v, 1);
+  f.s2_total = fmt(f.s2_total_v, 1);
+  f.s1_avoiding = s1.filter((r) => r.ti_tco2e < 0).length;
+  f.s1_adding = s1.filter((r) => r.ti_tco2e > 0).length;
+  f.s2_adding = s2.filter((r) => r.ti_tco2e > 0).length;
+  f.s1_adding_markets = [...new Set(s1.filter((r) => r.ti_tco2e > 0).map((r) => MARKET_NAME[r.market] || r.market))]
+    .join(' and ') || 'no market';
+  const pt = Q("SELECT powertrain, SUM(units) u FROM cohorts WHERE variant = 'central' GROUP BY powertrain");
+  const ptTotal = pt.reduce((a, r) => a + r.u, 0);
+  const ptShare = (p) => pct(((pt.find((r) => r.powertrain === p) || {u: 0}).u) / ptTotal, 0);
+  f.hev_share = ptShare('HEV'); f.bev_share = ptShare('BEV'); f.ice_share = ptShare('ICE');
+  const gl = Q("SELECT assessed_share_of_global s FROM ti_global_coverage WHERE share_comparable = 'yes'");
+  f.global_lo = pct(Math.min(...gl.map((r) => r.s)), 0); f.global_hi = pct(Math.max(...gl.map((r) => r.s)), 0);
+  f.eu_states = one("SELECT COUNT(DISTINCT destination) n FROM ti_country WHERE market = 'EU27'").n;
+  const xr = Q('SELECT market, scenario, SUM(units) u, SUM(CASE WHEN crossover_year IS NOT NULL THEN units ELSE 0 END) uw, ' +
+    'SUM(CASE WHEN crossover_year IS NOT NULL THEN crossover_year * units ELSE 0 END) ws FROM ti_crossover GROUP BY market, scenario');
+  f.crossings = {}; f.crossRows = xr;
+  for (const r of xr) f.crossings[r.market + '|' + r.scenario] = r.uw ? r.ws / r.uw : null;
+  const s2x = Object.entries(f.crossings).filter(([k, v]) => k.endsWith('|S2') && v != null).map(([, v]) => v);
+  f.x_s2_min = Math.min(...s2x).toFixed(1); f.x_s2_max = Math.max(...s2x).toFixed(1);
+  const xs1 = (m) => f.crossings[m + '|S1'] == null ? 'no' : Math.round(f.crossings[m + '|S1']);
+  f.x_s1_us = xs1('US'); f.x_s1_jp = xs1('JP'); f.x_s1_eu = xs1('EU27');
+  const rates = [], grid = [];
+  for (const m of ALL.markets) {
+    for (const r of Q("SELECT rate, value FROM emission_targets_" + MARKET_TABLE[m] + " WHERE scenario = 'S2'")) {
+      (r.rate === 'r_fleet' ? rates : grid).push(Math.abs(r.value));
+    }
+  }
+  f.s2_rate_min = (Math.min(...rates) * 100).toFixed(1); f.s2_rate_max = (Math.max(...rates) * 100).toFixed(1);
+  f.s2_grid_min = (Math.min(...grid) * 100).toFixed(1); f.s2_grid_max = (Math.max(...grid) * 100).toFixed(1);
+  const lifes = [], vkts = [], fleet = [];
+  for (const m of ALL.markets) for (const r of Q('SELECT lifetime_years l, vkt_km v, fleet_intensity_gco2_km g FROM destination_parameters_' + MARKET_TABLE[m])) {
+    lifes.push(r.l); vkts.push(r.v); fleet.push(r.g);
+  }
+  f.life_min = Math.min(...lifes); f.life_max = Math.max(...lifes);
+  f.vkt_min = fmtN(Math.min(...vkts)); f.vkt_max = fmtN(Math.max(...vkts));
+  f.fleet_min = fmtN(Math.min(...fleet), 0); f.fleet_max = fmtN(Math.max(...fleet), 0);
+  const eu = Q("SELECT SUM(ti_tco2e) * 1000.0 / SUM(units) pv FROM ti_country WHERE market = 'EU27' AND scenario = 'S1' AND cohort_year = 2024 GROUP BY destination");
+  const pvs = eu.map((r) => r.pv);
+  f.eu_spread = pvs.length ? fmtN((Math.max(...pvs) - Math.min(...pvs)) / 1000, 0) : '—';
+  const sens = Q("SELECT dimension, MAX(ABS(ti_tco2e - c.ti)) d FROM ti_sensitivity s JOIN (SELECT company, market, cohort_year, scenario, ti_tco2e ti " +
+    "FROM ti_sensitivity WHERE variant = 'central' AND dimension = 'lifetime') c USING (company, market, cohort_year, scenario) GROUP BY dimension ORDER BY d DESC");
+  f.sens_top = sens.length ? sens[0].dimension.replace('_', ' ') : '—';
+  f.as_of = one('SELECT MAX(accessed_date) d FROM sources').d;
+  f.n_sources = one('SELECT COUNT(*) n FROM sources').n;
+  f.n_tables = one("SELECT COUNT(*) n FROM tables WHERE kind = 'output'").n;
+  return f;
+}
+function fillFacts(root) {
+  root.querySelectorAll('[data-f]').forEach((e) => {
+    const k = e.dataset.f, v = FACTS[k];
+    e.textContent = v == null ? '—' : v;
+    if (k === 's1_total' || k === 's2_total') e.className = 'f ' + cls(FACTS[k + '_v']);
+  });
+}
+
+/* ---------------------------------------------------------------- story text per tab */
+const STORY = {
+  sales: `<h2>1 &middot; What the four companies sold, and where</h2>
+<p class="lead">Two Korean and two Japanese carmakers &mdash; Hyundai, Kia, Toyota, Nissan &mdash; sold
+<span data-f="sold_units"></span> vehicles into four destination markets in the cohort years assessed
+(<span data-f="years"></span>): the European Union, the United States, Japan and Korea. Every unit is a
+cohort row &mdash; a company, a destination, a sale year, a nameplate and a powertrain &mdash; read from the
+company's own release or the destination's registration record, never from an estimate.</p>
+<p>Across the whole set <span data-f="ice_share"></span> of units are conventional, <span data-f="hev_share"></span>
+hybrid and <span data-f="bev_share"></span> battery-electric. The sales basis differs by market and is carried
+on every row: EU registrations by member state, US brand-total sales, Japanese registrations, Korean domestic
+sales. Markets are never summed into one company figure because those bases do not add.</p>
+<div class="callout"><p><b>Why start here.</b> A trade impact is a property of a sale into a place, not of a
+company. The same nameplate sold into two markets is two cohorts. Pick a company to see its mix by market,
+segment and nameplate.</p></div>`,
+  coverage: `<h2>2 &middot; Which units carry a result</h2>
+<p class="lead"><span data-f="covered_share"></span> of the units sold into the four markets carry a result
+(<span data-f="units"></span> vehicles); <span data-f="withheld_units"></span> are counted and withheld. Withheld
+units are never absorbed into a total and never assumed to behave like the units that do.</p>
+<p>The assessed units are <span data-f="global_lo"></span> to <span data-f="global_hi"></span> of each company's
+worldwide sales over the same months &mdash; the rows where the two sides count the same period; the rest goes to
+markets without a usable destination benchmark (no national car
+CO&#8322; series, no registered stock, or only a plant-side sales source). Every input also carries a data tier
+&mdash; A directly sourced, B derived, C proxied &mdash; and every result cell the worst of its inputs.</p>
+<div class="callout"><p><b>Reading the gaps.</b> Plug-in hybrids have no sourced utility factor; fuel-cell vehicles
+no hydrogen supply intensity; Japanese battery-electric units no published electricity rating; Korean heavy trucks
+no certified intensity at all. Each is a listed reason, not a rounding.</p></div>`,
+  benchmarks: `<h2>3 &middot; What each destination's fleet emits, and where it is going</h2>
+<p class="lead">A trade impact is only as meaningful as the benchmark behind it. Each destination's benchmark is its
+own fleet &mdash; <span data-f="fleet_min"></span> to <span data-f="fleet_max"></span> gCO&#8322;/km across the
+segments and states assessed &mdash; built from the country's own emissions inventory and registered stock, then
+moved along two pathways.</p>
+<p><b>S1</b>, the observed trajectory, is a log-linear trend of the national road-CO&#8322; series and grid
+intensity since 2015. <b>S2</b>, committed policy, is each government's own pathway to its furthest stated year
+&mdash; the EU 2040 target, the US 2035 NDC as communicated, Japan's GX 2040 target, Korea's 2050 carbon-neutral
+scenarios &mdash; applied pro rata: the fleet benchmark falls <span data-f="s2_rate_min"></span> to
+<span data-f="s2_rate_max"></span> per cent a year, the grid <span data-f="s2_grid_min"></span> to
+<span data-f="s2_grid_max"></span>. Where a pathway is already met by the observed trend, S2 is floored at S1.
+There is no third scenario.</p>
+<div class="callout"><p><b>Known biases, disclosed not corrected.</b> The US benchmark is the all-light-duty fleet
+including pickups (generous to the companies). Japan's already contains hybrids and kei cars (hard to beat). Korea's
+car share of road CO&#8322; is a proxied split (tier C).</p></div>`,
+  inputs: `<h2>4 &middot; The other inputs: distance, life, product, real world</h2>
+<p class="lead">Four numbers turn an intensity gap into tonnes. Annual distance runs from
+<span data-f="vkt_min"></span> to <span data-f="vkt_max"></span> km a year across the markets; the expected
+vehicle life from <span data-f="life_min"></span> to <span data-f="life_max"></span> years. Both are the
+destination's, not the company's.</p>
+<p>The product side is the certified tailpipe intensity of each nameplate and powertrain in the destination's own
+test procedure (WLTP, EPA, Japan's WLTC, Korea's 5-cycle), corrected to real-world driving where a published
+on-board measurement exists. Battery-electric intensities follow the destination grid year by year; they are the one
+product whose emissions are not fixed at the point of sale.</p>
+<div class="callout"><p><b>The weakest link differs by market.</b> The United States: lifetime (a survival
+schedule fitted to 1977&ndash;2002). Korea: fleet intensity and lifetime. Japan: the powertrain split and a real-world
+factor borrowed from the European programme. The EU: distance in thirteen states and the lifetime everywhere.</p></div>`,
+  annual: `<h2>5 &middot; The flat line and the falling line, year by year</h2>
+<p class="lead">A vehicle's tailpipe intensity is fixed at manufacture; the benchmark it is measured against falls
+every year. Whatever margin a cohort starts with is spent at the benchmark's rate of decline. Under committed policy
+a cohort stops beating its benchmark <span data-f="x_s2_min"></span> to <span data-f="x_s2_max"></span> years after
+sale &mdash; in every market, whatever the product mix.</p>
+<p>Under the observed trend the crossovers are far apart: <span data-f="x_s1_us"></span> years in the United States,
+<span data-f="x_s1_jp"></span> in Japan, <span data-f="x_s1_eu"></span> in the EU27, and in Korea no crossover at all,
+because Korea's observed road CO&#8322; is flat. That is what S1 measures &mdash; not the product's quality but the
+destination's inertia. Every year of every cohort is in <code>ti_annual.csv</code>, with both sides of the
+comparison.</p>
+<div class="callout"><p><b>The horizon is the finding.</b> A cohort's cumulative figure is at its best a few years
+in, then crosses. A report that stopped there would call it a contribution; a report that runs to the end of the
+vehicles' life &mdash; which is what a lock-in claim means &mdash; calls it a liability.</p></div>`,
+  total: `<h2>6 &middot; The lifetime result, and what moves it</h2>
+<p class="lead">Against what each destination is actually doing (S1), <span data-f="s1_avoiding"></span> of
+<span data-f="cohorts"></span> cohorts avoid emissions over their lifetime, <span data-f="s1_total"></span>
+MtCO&#8322;e net. Against what each destination's government has committed to (S2), <b>every cohort adds
+emissions</b> &mdash; <span data-f="s2_adding"></span> of <span data-f="cohorts"></span>,
+<span data-f="s2_total"></span> MtCO&#8322;e. Same cars; the gap between the two numbers is the finding.</p>
+<p><b>Sign convention:</b> trade impact is the product's emissions minus the benchmark's, so a
+<span class="f added">positive</span> figure is tonnes <b>added</b> (a lock-in liability) and a
+<span class="f avoided">negative</span> figure is tonnes <b>avoided</b>. Hybrids avoid more than any other powertrain
+against the trend and add against the target; battery-electric is the only powertrain that avoids under both. Inside
+Europe the same companies' cohorts span <span data-f="eu_spread"></span> tonnes a vehicle by member state &mdash;
+wider than the gap between any two powertrains in one country. The input that moves the result most is
+<span data-f="sens_top"></span>; no variant turns a committed-policy addition into an avoidance.</p>
+<div class="callout"><p><b>The policy reading.</b> If a market asks "are these sales better than our current
+fleet?", hybrids answer yes. If it asks "are these sales consistent with the pathway we have committed to?", only
+zero-tailpipe products answer yes, and only where the grid is on its own committed pathway too.</p></div>`,
+  sources: `<h2>7 &middot; Reproduce, and the sources</h2>
+<p class="lead">Everything on this page is computed from <code>data/auto/database/tradeimpact_auto.sqlite</code> as
+you read it: <span data-f="n_tables"></span> output tables built from <span data-f="n_sources"></span> sources, data
+as of <span data-f="as_of"></span>. The database is rebuilt from the raw sources by
+<code>.venv/bin/python script/auto/run_all.py</code>, which also runs the tests.</p>
+<p>Every raw file has a link to where it was fetched, or a note that it was gathered by hand where no link exists
+(company IR workbooks). Every processed table names its source rows; every output table names its content hash.</p>`,
+};
+
+/* ---------------------------------------------------------------- tab 1: sales */
+function renderSales(panel) {
+  const s = sub();
+  const years = state.year === 'all' ? '' : ' AND cohort_year = ' + Number(state.year);
+  if (s === 'all') {
+    const rows = Q("SELECT company, market, powertrain, SUM(units) u FROM cohorts WHERE variant = 'central'" + years +
+      whereFilters(false) + ' GROUP BY company, market, powertrain');
+    const held = Q('SELECT company, market, SUM(units) u FROM ti_withheld WHERE 1' + years + whereFilters(false) + ' GROUP BY company, market');
+    const c = card(panel, 'Units by company and market, stacked by powertrain',
+      'Assessed units from <code>cohorts.csv</code> (central variant); withheld units in grey from <code>ti_withheld.csv</code>. Click a bar to open that company.');
+    const f = fig(c);
+    legend(f, [...PT_ORDER.filter((p) => rows.some((r) => r.powertrain === p)).map((p) => [p, PT_COLOR[p]]), ['withheld', 'var(--held)']]);
+    const grid = [];
+    for (const co of COMPANY_ORDER) for (const m of MARKET_ORDER) {
+      const v = {};
+      for (const r of rows.filter((r) => r.company === co && r.market === m)) v[r.powertrain] = r.u;
+      const h = held.find((r) => r.company === co && r.market === m);
+      if (h) v.withheld = h.u;
+      if (Object.keys(v).length) grid.push({label: COMPANY_NAME[co] + ' → ' + m, values: v, company: co});
+    }
+    stackedH(f, grid, [...PT_ORDER, 'withheld'], {unit: 'vehicles' + (state.year === 'all' ? ', all cohort years' : ', ' + state.year),
+      onClick: (r) => setSub(r.company)});
+    caption(f, 'Cohort years differ by market: the EU27 cohort is 2024 only (the registration dataset’s latest final year), the US and Japan carry 2024 and 2025, Korea 2024–2026 with the 2026 rows a half year. Where the filter says “all” the bars pool the years a market has.');
+    const c2 = card(panel, 'Sales basis by market and cohort year', 'What the unit count in each market actually measures.');
+    table(c2, [
+      {key: 'market', label: 'Market'}, {key: 'company', label: 'Company', fmt: (v) => COMPANY_NAME[v] || v},
+      {key: 'cohort_year', label: 'Year', num: true, fmt: (v) => v}, {key: 'basis', label: 'Basis'},
+      {key: 'period', label: 'Period'}, {key: 'test_cycle', label: 'Test cycle'},
+      {key: 'u', label: 'Assessed units', num: true, fmt: (v) => fmtN(v)},
+      {key: 'n', label: 'Cohort rows', num: true, fmt: (v) => fmtN(v)},
+    ], Q("SELECT market, company, cohort_year, basis, period, test_cycle, SUM(units) u, COUNT(*) n FROM cohorts WHERE variant = 'central'" +
+      years + whereFilters(false) + ' GROUP BY market, company, cohort_year, basis, period, test_cycle ORDER BY market, company, cohort_year'), {short: true});
+    return;
+  }
+  const co = s;
+  const rows = Q("SELECT market, cohort_year, powertrain, SUM(units) u FROM cohorts WHERE variant = 'central' AND company = ?" + years +
+    ' GROUP BY market, cohort_year, powertrain', [co]);
+  const held = Q('SELECT market, cohort_year, powertrain, SUM(units) u FROM ti_withheld WHERE company = ?' + years + ' GROUP BY market, cohort_year, powertrain', [co]);
+  const gl = Q('SELECT * FROM ti_global_coverage WHERE company = ? ORDER BY cohort_year', [co]);
+  const total = rows.reduce((a, r) => a + r.u, 0), heldTotal = held.reduce((a, r) => a + r.u, 0);
+  const hev = rows.filter((r) => r.powertrain === 'HEV').reduce((a, r) => a + r.u, 0);
+  const bev = rows.filter((r) => r.powertrain === 'BEV').reduce((a, r) => a + r.u, 0);
+  const c0 = card(panel, COMPANY_NAME[co] + ' in the four markets');
+  kpis(c0, [
+    [fmtN(total + heldTotal), 'vehicles sold into assessed markets'],
+    [fmtN(total), 'of which assessed'], [fmtN(heldTotal), 'counted and withheld'],
+    [pct(hev / (total || 1), 0), 'hybrid share of assessed units'], [pct(bev / (total || 1), 0), 'battery-electric share'],
+    [gl.length ? gl.map((g) => g.cohort_year + ': ' + pct(g.assessed_share_of_global, 0)).join(' · ') : '—', 'assessed share of worldwide sales'],
+  ]);
+  const c1 = card(panel, 'Units by market and cohort year, stacked by powertrain', 'Withheld units in grey. Hover for shares.');
+  const f1 = fig(c1);
+  legend(f1, [...PT_ORDER.filter((p) => rows.some((r) => r.powertrain === p) || held.some((r) => r.powertrain === p)).map((p) => [p, PT_COLOR[p]]), ['withheld', 'var(--held)']]);
+  const grid = [];
+  for (const m of MARKET_ORDER) for (const y of ALL.years) {
+    const v = {};
+    for (const r of rows.filter((r) => r.market === m && r.cohort_year === y)) v[r.powertrain] = r.u;
+    const h = held.filter((r) => r.market === m && r.cohort_year === y).reduce((a, r) => a + r.u, 0);
+    if (h) v.withheld = h;
+    if (Object.keys(v).length) grid.push({label: m + ' ' + y, values: v});
+  }
+  stackedH(f1, grid, [...PT_ORDER, 'withheld'], {unit: 'vehicles', labelW: 110});
+  const r2 = el('div', 'row2'); panel.appendChild(r2);
+  const c2 = card(r2, 'By segment', 'Trucks are measured as trucks: each row carries the benchmark built for its population.');
+  const segRows = Q("SELECT market, segment, SUM(units) u FROM cohorts WHERE variant = 'central' AND company = ?" + years + ' GROUP BY market, segment ORDER BY u DESC', [co]);
+  barsH(fig(c2), segRows.map((r) => ({label: r.market + ' · ' + seg(r.segment), series: [{key: 'units', value: r.u}]})),
+    {unit: 'vehicles', dp: 0, signed: false, labelW: 170, band: 14, colour: () => 'var(--accent)'});
+  const c3 = card(r2, 'Withheld by powertrain and market', 'Units with no result, and the count of cohort rows behind them.');
+  table(c3, [
+    {key: 'market', label: 'Market'}, {key: 'powertrain', label: 'Powertrain'},
+    {key: 'u', label: 'Units', num: true, fmt: (v) => fmtN(v)}, {key: 'n', label: 'Rows', num: true, fmt: (v) => fmtN(v)},
+  ], Q('SELECT market, powertrain, SUM(units) u, COUNT(*) n FROM ti_withheld WHERE company = ?' + years + ' GROUP BY market, powertrain ORDER BY u DESC', [co]), {short: true});
+  const c4 = card(panel, 'Nameplates', 'Every assessed cohort row for ' + COMPANY_NAME[co] + ', with the certified intensity it enters the model with. Sort any column; the EU27 rows are per member state.');
+  table(c4, [
+    {key: 'market', label: 'Market'}, {key: 'destination', label: 'Dest.'}, {key: 'cohort_year', label: 'Year', num: true, fmt: (v) => v},
+    {key: 'segment', label: 'Segment', fmt: (v) => esc(seg(v))}, {key: 'model', label: 'Nameplate'}, {key: 'powertrain', label: 'Drive'},
+    {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)},
+    {key: 'tailpipe_gco2_km', label: 'gCO2/km', num: true, fmt: (v) => v == null || v === '' ? '—' : fmtN(v, 1)},
+    {key: 'energy_wh_km', label: 'Wh/km', num: true, fmt: (v) => v == null || v === '' ? '—' : fmtN(v, 0)},
+    {key: 'test_cycle', label: 'Cycle'}, {key: 'tier', label: 'Tier', fmt: tierTag},
+  ], Q("SELECT * FROM cohorts WHERE variant = 'central' AND company = ?" + years, [co]), {sort: 'units', short: true});
+}
+
+/* ---------------------------------------------------------------- tab 2: coverage */
+function renderCoverage(panel) {
+  const s = sub();
+  if (s === 'assessed') {
+    const rep = Q("SELECT * FROM ti_company WHERE scenario = 'S1'" + whereFilters());
+    const c = card(panel, 'Assessed and withheld units per cohort', 'From <code>ti_company.csv</code>. Coverage is the share of the source’s units that carry a result.');
+    const f = fig(c);
+    legend(f, [['assessed', 'var(--accent)'], ['withheld', 'var(--held)']]);
+    stackedH(f, rep.sort((a, b) => MARKET_ORDER.indexOf(a.market) - MARKET_ORDER.indexOf(b.market) || a.cohort_year - b.cohort_year ||
+      COMPANY_ORDER.indexOf(a.company) - COMPANY_ORDER.indexOf(b.company)).map((r) => ({label: label(r.market, r.cohort_year, r.company),
+      values: {assessed: r.covered_units, withheld: r.withheld_units}})), ['assessed', 'withheld'],
+      {unit: 'vehicles', colour: (k) => k === 'assessed' ? 'var(--accent)' : 'var(--held)', labelW: 170});
+    table(c, [
+      {key: 'market', label: 'Market'}, {key: 'cohort_year', label: 'Year', num: true, fmt: (v) => v},
+      {key: 'company', label: 'Company', fmt: (v) => COMPANY_NAME[v] || v}, {key: 'status', label: 'Status'},
+      {key: 'covered_units', label: 'Assessed', num: true, fmt: (v) => fmtN(v)}, {key: 'withheld_units', label: 'Withheld', num: true, fmt: (v) => fmtN(v)},
+      {key: 'covered_share', label: 'Coverage', num: true, fmt: (v) => pct(v)},
+    ], rep, {foot: ['All in view', '', '', '', fmtN(rep.reduce((a, r) => a + r.covered_units, 0)), fmtN(rep.reduce((a, r) => a + r.withheld_units, 0)),
+      pct(rep.reduce((a, r) => a + r.covered_units, 0) / (rep.reduce((a, r) => a + r.covered_units + r.withheld_units, 0) || 1))]});
+  } else if (s === 'global') {
+    const gl = Q('SELECT * FROM ti_global_coverage WHERE 1' + (state.companies.size ? inList('company', state.companies) : '') + ' ORDER BY company, cohort_year');
+    const c = card(panel, 'Assessed units as a share of worldwide sales', 'The denominator is the company’s own worldwide figure for the brands it reports together; brands out of scope are named.');
+    barsH(fig(c), gl.map((g) => ({label: COMPANY_NAME[g.company] + ' ' + g.cohort_year, series: [{key: 'assessed share', value: g.assessed_share_of_global * 100}]})),
+      {unit: '% of worldwide sales', dp: 0, signed: false, labelW: 130, band: 16, colour: () => 'var(--accent)'});
+    table(c, [
+      {key: 'company', label: 'Company', fmt: (v) => COMPANY_NAME[v] || v}, {key: 'cohort_year', label: 'Year', num: true, fmt: (v) => v},
+      {key: 'global_units', label: 'Worldwide', num: true, fmt: (v) => fmtN(v)}, {key: 'global_basis', label: 'Basis'},
+      {key: 'brands_in_denominator', label: 'Brands'}, {key: 'assessed_units', label: 'Assessed', num: true, fmt: (v) => fmtN(v)},
+      {key: 'assessed_share_of_global', label: 'Share', num: true, fmt: (v) => pct(v)}, {key: 'assessed_markets', label: 'Markets'},
+      {key: 'held_units', label: 'Held elsewhere', num: true, fmt: (v) => fmtN(v)}, {key: 'held_share_of_global', label: 'Share', num: true, fmt: (v) => pct(v)},
+    ], gl);
+    const c2 = card(panel, 'Destinations outside the four markets', 'Units the sources place in other countries or regions, and why no result is built there.');
+    table(c2, [
+      {key: 'company', label: 'Company', fmt: (v) => COMPANY_NAME[v] || v}, {key: 'destination', label: 'Destination'}, {key: 'destination_level', label: 'Level'},
+      {key: 'cohort_year', label: 'Year', num: true, fmt: (v) => v}, {key: 'basis', label: 'Basis'}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)},
+      {key: 'status', label: 'Status'}, {key: 'note', label: 'Note', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'},
+    ], Q("SELECT * FROM ti_coverage WHERE status <> 'assessed'" + (state.companies.size ? inList('company', state.companies) : '') + ' ORDER BY units DESC'), {short: true});
+  } else if (s === 'withheld') {
+    const rows = Q('SELECT market, reason, SUM(units) units, COUNT(*) cells FROM ti_withheld WHERE 1' + whereFilters() + ' GROUP BY market, reason ORDER BY units DESC');
+    const c = card(panel, 'Why units are withheld', 'Each reason is a listed condition, never a rounding. The largest by far is the plug-in hybrid utility factor.');
+    barsH(fig(c), rows.slice(0, 12).map((r) => ({label: r.market + ' · ' + r.reason.split(':')[0].slice(0, 42), series: [{key: 'units', value: r.units}]})),
+      {unit: 'vehicles withheld', dp: 0, signed: false, labelW: 330, band: 14, colour: () => 'var(--held)'});
+    table(c, [
+      {key: 'market', label: 'Market'}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)}, {key: 'cells', label: 'Rows', num: true, fmt: (v) => fmtN(v)},
+      {key: 'reason', label: 'Reason', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'},
+    ], rows, {short: true});
+  } else {
+    const rows = Q('SELECT * FROM ti_data_quality WHERE 1' + whereFilters());
+    const c = card(panel, 'Data quality by cohort', 'Two tier-C measures: <code>vkt_tier_c_share</code> is the guideline’s suppression rule (above 50 % of units on a proxied distance, only the direction is publishable); <code>cell_tier_c_share</code> is units whose worst-of tier is C for any reason.');
+    const f = fig(c);
+    legend(f, [['tier A', 'var(--avoided)'], ['tier B', 'var(--hev)'], ['tier C', 'var(--added)']]);
+    stackedH(f, rows.map((r) => ({label: label(r.market, r.cohort_year, r.company), values: {'tier A': r.cell_tier_a_units, 'tier B': r.cell_tier_b_units, 'tier C': r.cell_tier_c_units}})),
+      ['tier A', 'tier B', 'tier C'], {unit: 'assessed units by worst-of-cell tier', labelW: 170,
+        colour: (k) => ({'tier A': 'var(--avoided)', 'tier B': 'var(--hev)', 'tier C': 'var(--added)'})[k]});
+    table(c, [
+      {key: 'market', label: 'Market'}, {key: 'company', label: 'Company', fmt: (v) => COMPANY_NAME[v] || v}, {key: 'cohort_year', label: 'Year', num: true, fmt: (v) => v},
+      {key: 'sales_basis', label: 'Sales basis'}, {key: 'test_cycles', label: 'Cycle'},
+      {key: 'vkt_tier_c_share', label: 'Proxied-distance C', num: true, fmt: (v) => pct(v)},
+      {key: 'directional_only', label: 'Directional only', fmt: (v) => /1|true/i.test(String(v)) ? 'yes' : 'no'},
+      {key: 'cell_tier_c_share', label: 'Worst-of-cell C', num: true, fmt: (v) => pct(v)},
+      {key: 'lifetime_t_central_years', label: 'Life yr', num: true, fmt: (v) => v},
+      {key: 'warnings', label: 'Warnings', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'},
+    ], rows, {short: true});
+  }
+}
+
+/* ---------------------------------------------------------------- tab 3: benchmarks */
+function renderBenchmarks(panel) {
+  const m = sub(), t = MARKET_TABLE[m];
+  const params = Q('SELECT * FROM destination_parameters_' + t);
+  const isEU = m === 'EU27';
+  const countries = isEU ? params.map((p) => p.country).sort() : [m];
+  const country = isEU ? pick('bm_country_' + m, countries.includes('DE') ? 'DE' : countries[0]) : m;
+  const segments = [...new Set(params.filter((p) => p.country === country).map((p) => p.segment))];
+  const segment = pick('bm_segment_' + m, segments[0]);
+
+  const c0 = card(panel, MARKET_NAME[m] + ': the benchmark inputs', isEU ? 'One row per member state (the 2024 cohort). Choose a state for the charts below.' :
+    'One row per segment assessed.');
+  if (isEU) {
+    const cc = ctl(c0);
+    select(cc, 'Member state', countries.map((c) => [c, c + ' — ' + ((CODES && [...CODES.values()].find((x) => x.alpha2 === c) || {}).name || c)]), country,
+      (v) => { state.pick['bm_country_' + m] = v; renderPanel(); });
+  }
+  table(c0, [
+    {key: 'country', label: 'Country'}, {key: 'segment', label: 'Segment', fmt: (v) => esc(seg(v))},
+    {key: 'fleet_intensity_gco2_km', label: 'Fleet gCO2/km', num: true, fmt: (v) => fmtN(v, 1)}, {key: 'fleet_intensity_tier', label: 'T', fmt: tierTag},
+    {key: 'co2_year', label: 'CO2 yr', num: true, fmt: (v) => v}, {key: 'stock', label: 'Stock', num: true, fmt: (v) => fmtN(v)},
+    {key: 'vkt_km', label: 'km/yr', num: true, fmt: (v) => fmtN(v)}, {key: 'vkt_tier', label: 'T', fmt: tierTag},
+    {key: 'grid_gco2_kwh', label: 'Grid gCO2/kWh', num: true, fmt: (v) => fmtN(v)}, {key: 'grid_tier', label: 'T', fmt: tierTag},
+    {key: 'mean_age_years', label: 'Mean age', num: true, fmt: (v) => v == null || v === '' ? '—' : fmtN(v, 2)},
+    {key: 'lifetime_years', label: 'Life yr [low, high]', num: true, fmt: (v, r) => v + ' [' + r.lifetime_low_years + ', ' + r.lifetime_high_years + ']'},
+    {key: 'lifetime_tier', label: 'T', fmt: tierTag}, {key: 'tier', label: 'Cell', fmt: tierTag},
+    {key: 'warnings', label: 'Warnings', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'},
+  ], params, {sort: 'fleet_intensity_gco2_km', short: isEU});
+
+  if (isEU) {
+    const c1 = card(panel, 'Member states on the map', 'Colour a benchmark input across the EU27. Hover a state.');
+    const metric = pick('bm_map_metric', 'fleet_intensity_gco2_km');
+    const METRICS = [['fleet_intensity_gco2_km', 'fleet intensity, gCO2/km'], ['vkt_km', 'annual distance, km'], ['lifetime_years', 'expected lifetime, years'],
+      ['grid_gco2_kwh', 'grid intensity, gCO2/kWh'], ['mean_age_years', 'mean fleet age, years']];
+    select(ctl(c1), 'Input', METRICS, metric, (v) => { state.pick.bm_map_metric = v; renderPanel(); });
+    const byC = new Map(params.map((p) => [p.country, p]));
+    euMap(fig(c1), (alpha2) => { const p = byC.get(alpha2); return p ? Number(p[metric]) : null; }, {
+      sequential: true, unit: METRICS.find((x) => x[0] === metric)[1],
+      tipHtml: (alpha2, name) => { const p = byC.get(alpha2); return '<b>' + esc(name) + '</b><br>' + esc(METRICS.find((x) => x[0] === metric)[1]) + ': ' +
+        fmtN(p[metric], metric === 'mean_age_years' ? 2 : 0) + '<br>tiers: fleet ' + p.fleet_intensity_tier + ' · distance ' + p.vkt_tier + ' · life ' + p.lifetime_tier; },
+      onClick: (alpha2) => { if (byC.has(alpha2)) { state.pick['bm_country_' + m] = alpha2; renderPanel(); } },
+    });
+  }
+
+  const r2 = el('div', 'row2'); panel.appendChild(r2);
+  const emis = Q('SELECT series, unit, year, value, tier FROM country_emissions_' + t + ' WHERE country = ? ORDER BY series, year', [country]);
+  const emSeries = [...new Set(emis.map((r) => r.series))];
+  const emSel = pick('bm_series_' + m, emSeries.includes('road_co2') ? 'road_co2' : (emSeries.includes('car_co2') ? 'car_co2' : emSeries[0]));
+  const c2 = card(r2, 'Observed emissions series', 'The national inventory rows the S1 trend is fitted to (2015 onward, excluding 2020–2021). Tier ' +
+    esc((emis.find((r) => r.series === emSel) || {}).tier || '—') + '.');
+  select(ctl(c2), 'Series', emSeries.map((x) => [x, x + ' (' + (emis.find((r) => r.series === x) || {}).unit + ')']), emSel, (v) => { state.pick['bm_series_' + m] = v; renderPanel(); });
+  const pts = emis.filter((r) => r.series === emSel).map((r) => [r.year, r.value]);
+  tsChart(fig(c2), [{key: emSel, points: pts, colour: 'var(--accent)'}], {unit: (emis.find((r) => r.series === emSel) || {}).unit || '', dp: 0, height: 260});
+  if (isEU && emSeries.includes('transport_ghg')) caption(c2, 'EU-wide series (transport_ghg, power_co2) sit under country EU27; pick that in the state list to see them.');
+
+  const gridRows = isEU ? Q("SELECT year, value FROM country_emissions_eu27 WHERE country = ? AND series = 'grid_intensity' ORDER BY year", [country])
+    : Q("SELECT year, value FROM country_emissions_owid_grid WHERE country = ? AND series = 'grid_intensity' ORDER BY year", [m]);
+  const c3 = card(r2, 'Grid carbon intensity', 'What a battery-electric product’s emissions follow, and the series the grid trend is fitted to.');
+  tsChart(fig(c3), [{key: 'grid intensity', points: gridRows.map((r) => [r.year, r.value]), colour: 'var(--bev)'}], {unit: 'gCO2/kWh', dp: 0, height: 260});
+
+  const c4 = card(panel, 'The two pathways for the benchmark fleet', 'Per-vehicle benchmark emissions each year, S1 observed trend and S2 committed policy, for the ' +
+    esc(seg(segment)) + ' segment' + (isEU ? ' in ' + esc(country) : '') + '. The selected scenario in the top bar is drawn solid.');
+  if (segments.length > 1) select(ctl(c4), 'Segment', segments.map((x) => [x, seg(x)]), segment, (v) => { state.pick['bm_segment_' + m] = v; renderPanel(); });
+  const traj = Q('SELECT scenario, calendar_year, e_ref_kgco2_per_vehicle e, fleet_intensity_gco2_km fi, r_fleet, r_power, grid_kgco2_per_kwh g FROM reference_trajectories_' + t +
+    ' WHERE country = ? AND segment = ? ORDER BY scenario, calendar_year', [country, segment]);
+  tsChart(fig(c4), ['S1', 'S2'].map((sc) => ({key: SC_NAME[sc], points: traj.filter((r) => r.scenario === sc).map((r) => [r.calendar_year, r.e]), colour: SC_COLOR[sc],
+    dashed: sc !== state.scenario, width: sc === state.scenario ? 2.6 : 1.6})), {unit: 'kgCO2 per benchmark vehicle per year', dp: 0, height: 280, zero: true});
+  const rates = Q('SELECT * FROM emission_targets_' + t + (isEU ? ' WHERE country = ?' : '') + ' ORDER BY scenario, rate', isEU ? [country] : undefined);
+  table(c4, [
+    {key: 'scenario', label: 'Scenario'}, {key: 'rate', label: 'Rate'}, {key: 'value', label: 'Per year', num: true, fmt: (v) => fmt(v * 100, 2) + ' %'},
+    {key: 'target_level', label: 'Anchor'}, {key: 'base_year', label: 'Window', num: true, fmt: (v, r) => v + '–' + r.target_year},
+    {key: 'tier', label: 'T', fmt: tierTag}, {key: 'derivation', label: 'Derivation', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'},
+  ], rates);
+}
+
+/* EU27 choropleth from the database geometry. valueOf(alpha2) -> number|null. */
+function euMap(parent, valueOf, opts) {
+  const o = Object.assign({sequential: false, unit: '', tipHtml: null, onClick: null}, opts);
+  const geo = loadGeo();
+  if (!geo) { caption(parent, 'The map needs d3 and topojson from cdnjs; this machine appears to be offline.'); return; }
+  const features = topojson.feature(geo, geo.objects.countries).features;
+  const width = 880, height = 500;
+  const vals = [];
+  const feats = features.map((f) => { const c = CODES.get(String(f.id).padStart(3, '0')); const v = c ? valueOf(c.alpha2) : null;
+    if (v != null) vals.push(v); return {f, c, v}; });
+  if (!vals.length) { empty(parent); return; }
+  // Fit to mainland Europe: fitting to the member states themselves would span French Guiana.
+  const frame = {type: 'MultiPoint', coordinates: [[-11, 34.5], [32, 34.5], [32, 71], [-11, 71]]};
+  const projection = d3.geoConicConformal().rotate([-10, 0]).fitExtent([[20, 20], [width - 20, height - 20]], frame);
+  const path = d3.geoPath(projection);
+  let colour;
+  if (o.sequential) colour = d3.scaleSequential([Math.min(...vals), Math.max(...vals)], d3.interpolateBlues);
+  else { const amp = Math.max(1e-9, ...vals.map(Math.abs)); colour = d3.scaleSequential([amp, -amp], d3.interpolateRdBu); }
+  const svg = svgIn(parent, width, height);
+  svg.append('rect').attr('width', width).attr('height', height).attr('class', 'sphere').attr('rx', 10);
+  for (const d of feats) {
+    svg.append('path').attr('class', 'country').attr('d', path(d.f)).attr('fill', d.v != null ? colour(d.v) : 'var(--rule)')
+      .on('mousemove', (ev) => { if (d.v == null) return; tip(ev, o.tipHtml ? o.tipHtml(d.c.alpha2, d.c.name) : '<b>' + esc(d.c.name) + '</b><br>' + fmtN(d.v, 1) + ' ' + esc(o.unit)); })
+      .on('mouseleave', untip).on('click', () => o.onClick && d.c && o.onClick(d.c.alpha2));
+  }
+  const lg = svg.append('g').attr('transform', 'translate(24,' + (height - 44) + ')');
+  const steps = 12, w = 14;
+  const lo = Math.min(...colour.domain()), hi = Math.max(...colour.domain());
+  const lab = (v) => o.sequential ? fmtN(v, 1) : fmt(v, 1);
+  for (let i = 0; i < steps; i++) lg.append('rect').attr('x', i * w).attr('width', w).attr('height', 10).attr('fill', colour(lo + (hi - lo) * (i + 0.5) / steps));
+  lg.append('text').attr('x', 0).attr('y', 24).style('font-size', '10px').text(lab(lo));
+  lg.append('text').attr('x', steps * w).attr('y', 24).attr('text-anchor', 'end').style('font-size', '10px').text(lab(hi));
+  lg.append('text').attr('x', steps * w + 10).attr('y', 9).style('font-size', '10px').attr('fill', 'var(--muted)').text(o.unit);
+}
+function loadGeo() {
+  if (GEO) return GEO;
+  if (window.__d3Failed || window.__topoFailed || typeof topojson === 'undefined') return null;
+  try { GEO = JSON.parse(Q('SELECT topojson FROM map_geometry LIMIT 1')[0].topojson); } catch (e) { GEO = null; }
+  return GEO;
+}
+function loadCodes() {
+  CODES = new Map();
+  for (const r of Q('SELECT iso_numeric, alpha2, name FROM country_codes')) CODES.set(String(r.iso_numeric).padStart(3, '0'), {alpha2: r.alpha2, name: r.name});
+}
+
+/* ---------------------------------------------------------------- tab 4: other inputs */
+function renderInputs(panel) {
+  const s = sub();
+  if (s === 'usage') {
+    const c = card(panel, 'Annual distance per vehicle, by destination and segment', 'From <code>destination_parameters_*.csv</code>: the km a benchmark vehicle drives each year, with its tier and the low/high band used in the sensitivity.');
+    let rows = [];
+    for (const m of ALL.markets) rows = rows.concat(Q("SELECT '" + m + "' market, country, segment, vkt_km, vkt_low_km, vkt_high_km, vkt_tier, vkt_year, vkt_derivation FROM destination_parameters_" + MARKET_TABLE[m]));
+    rows.sort((a, b) => b.vkt_km - a.vkt_km);
+    dots(fig(c), rows.map((r) => ({label: r.country + (r.segment !== 'passenger_car' ? ' ' + seg(r.segment) : ''), value: r.vkt_km, r})),
+      {unit: 'km per vehicle per year', dp: 0, signed: false, labelW: 90, colour: (d) => ({A: 'var(--avoided)', B: 'var(--hev)', C: 'var(--added)'})[d.r.vkt_tier] || 'var(--ice)',
+        tipHtml: (d) => '<b>' + esc(d.label) + '</b><br>' + fmtN(d.value) + ' km/yr (tier ' + d.r.vkt_tier + ', ' + d.r.vkt_year + ')<br>band ' + fmtN(d.r.vkt_low_km) + '–' + fmtN(d.r.vkt_high_km)});
+    legend(c, [['tier A', 'var(--avoided)'], ['tier B', 'var(--hev)'], ['tier C', 'var(--added)']]);
+    table(c, [
+      {key: 'market', label: 'Market'}, {key: 'country', label: 'Country'}, {key: 'segment', label: 'Segment', fmt: (v) => esc(seg(v))},
+      {key: 'vkt_km', label: 'km/yr', num: true, fmt: (v) => fmtN(v)}, {key: 'vkt_low_km', label: 'low', num: true, fmt: (v) => fmtN(v)}, {key: 'vkt_high_km', label: 'high', num: true, fmt: (v) => fmtN(v)},
+      {key: 'vkt_tier', label: 'T', fmt: tierTag}, {key: 'vkt_year', label: 'Year', num: true, fmt: (v) => v},
+      {key: 'vkt_derivation', label: 'Derivation', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'},
+    ], rows, {short: true});
+    const c2 = card(panel, 'Usage series behind those figures', 'Latest year of every traffic, stock and age series read for each market. Full series are in the <code>vehicle_usage_*</code> tables.');
+    let us = [];
+    for (const m of ALL.markets) {
+      us = us.concat(Q("SELECT '" + m + "' market, country, series, unit, year, value, tier FROM vehicle_usage_" + MARKET_TABLE[m] +
+        " v WHERE year = (SELECT MAX(year) FROM vehicle_usage_" + MARKET_TABLE[m] + " w WHERE w.country = v.country AND w.series = v.series)" +
+        (m === 'EU27' ? " AND country IN ('DE','FR','IT','ES','PL','NL','BE','SE','AT','CZ')" : '')));
+      for (const extra of ['vehicle_usage_' + MARKET_TABLE[m] + '_lifetime', 'vehicle_usage_' + MARKET_TABLE[m] + '_traffic']) {
+        if (hasTable(extra)) us = us.concat(Q("SELECT '" + m + "' market, country, series, unit, year, value, tier FROM " + extra + ' v WHERE year = (SELECT MAX(year) FROM ' + extra + ' w WHERE w.country = v.country AND w.series = v.series)'));
+      }
+    }
+    table(c2, [
+      {key: 'market', label: 'Market'}, {key: 'country', label: 'Country'}, {key: 'series', label: 'Series'},
+      {key: 'value', label: 'Value', num: true, fmt: (v) => fmtN(v, Math.abs(v) < 100 ? 2 : 0)}, {key: 'unit', label: 'Unit'},
+      {key: 'year', label: 'Year', num: true, fmt: (v) => v}, {key: 'tier', label: 'T', fmt: tierTag},
+    ], us, {sort: 'market', dir: 'asc', short: true});
+    if (ALL.markets.includes('EU27')) caption(c2, 'For the EU27 the ten largest markets are listed here; every member state is in the table.');
+  } else if (s === 'lifetime') {
+    let rows = [];
+    for (const m of ALL.markets) rows = rows.concat(Q("SELECT '" + m + "' market, country, segment, lifetime_years, lifetime_low_years, lifetime_high_years, lifetime_tier, mean_age_years, mean_age_year, mean_age_tier FROM destination_parameters_" + MARKET_TABLE[m]));
+    const c = card(panel, 'Expected vehicle lifetime by destination', 'The number of years of benchmark decline a vehicle must survive, and the multiplier on every year’s gap: it enters the result twice. The bar is the low–high band used in the sensitivity.');
+    ranges(fig(c), rows.sort((a, b) => b.lifetime_years - a.lifetime_years).map((r) => ({label: r.country + (r.segment !== 'passenger_car' ? ' ' + seg(r.segment) : '') + ' (tier ' + r.lifetime_tier + ')',
+      low: r.lifetime_low_years, mid: r.lifetime_years, high: r.lifetime_high_years})), {unit: 'years', dp: 0, labelW: 150});
+    table(c, [
+      {key: 'market', label: 'Market'}, {key: 'country', label: 'Country'}, {key: 'segment', label: 'Segment', fmt: (v) => esc(seg(v))},
+      {key: 'lifetime_years', label: 'Life yr', num: true, fmt: (v) => v}, {key: 'lifetime_low_years', label: 'low', num: true, fmt: (v) => v}, {key: 'lifetime_high_years', label: 'high', num: true, fmt: (v) => v},
+      {key: 'lifetime_tier', label: 'T', fmt: tierTag}, {key: 'mean_age_years', label: 'Mean fleet age', num: true, fmt: (v) => v == null || v === '' ? '—' : fmtN(v, 2)},
+      {key: 'mean_age_year', label: 'Year', num: true, fmt: (v) => v || '—'}, {key: 'mean_age_tier', label: 'T', fmt: tierTag},
+    ], rows, {short: true});
+    const c2 = card(panel, 'Where the lifetimes come from', 'The published series each market’s lifetime is derived from. Japan publishes mean years of use; the United States a survival schedule; the EU and Korea a fleet age distribution.');
+    let src = [];
+    for (const tname of ['vehicle_usage_us_lifetime', 'vehicle_usage_jp_lifetime']) if (hasTable(tname)) src = src.concat(Q('SELECT country, series, year, value, unit, tier, tier_reason FROM ' + tname));
+    src = src.concat(Q("SELECT country, series, year, value, unit, tier, tier_reason FROM vehicle_usage_kr WHERE series LIKE 'mean_age%' AND year = (SELECT MAX(year) FROM vehicle_usage_kr)"));
+    src = src.concat(Q("SELECT country, series, year, value, unit, tier, tier_reason FROM vehicle_usage_eu27 WHERE series LIKE 'car_stock_age%' AND country IN ('DE','FR','IT') AND year = (SELECT MAX(year) FROM vehicle_usage_eu27 WHERE series LIKE 'car_stock_age%')"));
+    table(c2, [
+      {key: 'country', label: 'Country'}, {key: 'series', label: 'Series'}, {key: 'value', label: 'Value', num: true, fmt: (v) => fmtN(v, Math.abs(v) < 100 ? 2 : 0)},
+      {key: 'unit', label: 'Unit'}, {key: 'year', label: 'Year', num: true, fmt: (v) => v}, {key: 'tier', label: 'T', fmt: tierTag},
+      {key: 'tier_reason', label: 'Tier reason', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'},
+    ], src, {short: true});
+  } else if (s === 'technology') {
+    const m = pick('tech_market', ALL.markets[0]);
+    const c = card(panel, 'Certified product intensities by nameplate', 'What each nameplate enters the model with, in the destination’s own test procedure. Points are cohort rows weighted by nothing: one dot per nameplate and powertrain.');
+    const cc = ctl(c);
+    select(cc, 'Market', ALL.markets.map((x) => [x, MARKET_NAME[x]]), m, (v) => { state.pick.tech_market = v; renderPanel(); });
+    const comps = COMPANY_ORDER.filter((co) => Q("SELECT 1 FROM cohorts WHERE market = ? AND company = ? LIMIT 1", [m, co]).length);
+    const co = pick('tech_company_' + m, comps[0]);
+    select(cc, 'Company', comps.map((x) => [x, COMPANY_NAME[x]]), co, (v) => { state.pick['tech_company_' + m] = v; renderPanel(); });
+    const rows = Q("SELECT model, powertrain, test_cycle, SUM(units) units, SUM(tailpipe_gco2_km * units) / SUM(units) g, SUM(COALESCE(energy_wh_km, 0) * units) / SUM(units) wh, MIN(tier) tier " +
+      "FROM cohorts WHERE variant = 'central' AND market = ? AND company = ? GROUP BY model, powertrain, test_cycle ORDER BY g DESC", [m, co]);
+    legend(c, PT_ORDER.filter((p) => rows.some((r) => r.powertrain === p)).map((p) => [p, PT_COLOR[p]]));
+    dots(fig(c), rows.filter((r) => r.g != null && r.g > 0).map((r) => ({label: String(r.model || '(unnamed)').slice(0, 22) + ' ' + r.powertrain, value: r.g, r})),
+      {unit: 'certified tailpipe gCO2/km, ' + (rows[0] || {}).test_cycle, dp: 0, signed: false, labelW: 190, colour: (d) => PT_COLOR[d.r.powertrain] || 'var(--ice)',
+        tipHtml: (d) => '<b>' + esc(d.r.model || '(unnamed)') + ' ' + d.r.powertrain + '</b><br>' + fmtN(d.value, 1) + ' gCO2/km (' + esc(d.r.test_cycle) + ')<br>' + fmtN(d.r.units) + ' units'});
+    caption(c, 'Battery-electric nameplates carry no tailpipe figure and sit at zero here; their Wh/km rating is in the table and their emissions follow the grid.');
+    table(c, [
+      {key: 'model', label: 'Nameplate'}, {key: 'powertrain', label: 'Drive'}, {key: 'test_cycle', label: 'Cycle'}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)},
+      {key: 'g', label: 'gCO2/km', num: true, fmt: (v) => v ? fmtN(v, 1) : '—'}, {key: 'wh', label: 'Wh/km', num: true, fmt: (v) => v ? fmtN(v, 0) : '—'}, {key: 'tier', label: 'T', fmt: tierTag},
+    ], rows, {sort: 'units', short: true});
+  } else {
+    const rows = Q('SELECT * FROM real_world_correction ORDER BY test_cycle, powertrain');
+    const c = card(panel, 'Real-world correction factors', 'Multiplier from the certified value to on-road emissions, by test procedure and powertrain, with the low/high band used in the sensitivity. A factor of 1 means no published on-board measurement is applied.');
+    ranges(fig(c), rows.filter((r) => r.factor_high !== r.factor_low || r.factor !== 1).map((r) => ({label: r.test_cycle + ' ' + r.powertrain, low: r.factor_low, mid: r.factor, high: r.factor_high})),
+      {unit: 'real-world / certified', dp: 3, labelW: 140});
+    table(c, [
+      {key: 'test_cycle', label: 'Cycle'}, {key: 'powertrain', label: 'Drive'}, {key: 'factor', label: 'Factor', num: true, fmt: (v) => fmtN(v, 3)},
+      {key: 'factor_low', label: 'low', num: true, fmt: (v) => fmtN(v, 3)}, {key: 'factor_high', label: 'high', num: true, fmt: (v) => fmtN(v, 3)},
+      {key: 'source_id', label: 'Source', fmt: (v) => '<code>' + esc(v) + '</code>'}, {key: 'derivation', label: 'Derivation', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'},
+    ], rows);
+  }
+}
+
+/* ---------------------------------------------------------------- tab 5: annual */
+function cohortKey(o) { return [o.market, o.company, o.cohort_year].join('|'); }
+function cohortOptions() {
+  return Q('SELECT DISTINCT market, company, cohort_year FROM ti_annual WHERE 1' + whereFilters())
+    .sort((a, b) => MARKET_ORDER.indexOf(a.market) - MARKET_ORDER.indexOf(b.market) || a.cohort_year - b.cohort_year || COMPANY_ORDER.indexOf(a.company) - COMPANY_ORDER.indexOf(b.company));
+}
+function ensureCohort() {
+  const opts = cohortOptions();
+  if (!opts.length) return null;
+  if (!state.cohort || !opts.some((o) => cohortKey(o) === state.cohort)) {
+    const p = opts.find((o) => o.market === 'US' && o.company === 'toyota' && o.cohort_year === 2024) || opts[0];
+    state.cohort = cohortKey(p); state.scrub = null;
+  }
+  return opts;
+}
+function renderAnnual(panel) {
+  const s = sub(), sc = state.scenario;
+  if (s === 'grid') {
+    const y = focusYear();
+    const rows = Q('SELECT company, market, calendar_year, ti_tco2e FROM ti_annual WHERE scenario = ? AND cohort_year = ?' + whereFilters(false) + ' ORDER BY company, market, calendar_year', [sc, y]);
+    const c = card(panel, 'Annual trade impact, company × market, ' + y + ' cohorts under ' + SC_NAME[sc],
+      'Each strip is one cohort’s year-by-year trade impact over its operating life on a shared scale: red above the line adds emissions, green below avoids. Click a strip to open the cohort.');
+    const comps = COMPANY_ORDER.filter((co) => rows.some((r) => r.company === co)), mkts = MARKET_ORDER.filter((m) => rows.some((r) => r.market === m));
+    if (!comps.length) { empty(c); return; }
+    const amp = Math.max(1e-9, ...rows.map((r) => Math.abs(r.ti_tco2e)));
+    const g = el('div', 'multiples'); g.style.setProperty('--cols', mkts.length); c.appendChild(g);
+    g.appendChild(el('div', 'hd', ''));
+    for (const m of mkts) g.appendChild(el('div', 'hd', esc(MARKET_NAME[m])));
+    for (const co of comps) {
+      g.appendChild(el('div', 'rl', esc(COMPANY_NAME[co])));
+      for (const m of mkts) {
+        const cellRows = rows.filter((r) => r.company === co && r.market === m);
+        if (!cellRows.length) { g.appendChild(el('div', 'cell empty')); continue; }
+        const cell = el('div', 'cell');
+        const total = cellRows.reduce((a, r) => a + r.ti_tco2e, 0);
+        miniBars(cell, cellRows, amp);
+        cell.appendChild(el('div', 't', 'lifetime <span class="' + cls(total) + '">' + fmt(total / 1e6, 2) + '</span> Mt'));
+        cell.addEventListener('click', () => { state.cohort = [m, co, y].join('|'); state.scrub = null; setSub('profile'); });
+        cell.addEventListener('mousemove', (ev) => { const first = cellRows[0], last = cellRows[cellRows.length - 1];
+          tip(ev, '<b>' + esc(label(m, y, co)) + '</b><br>' + first.calendar_year + ': ' + fmt(first.ti_tco2e / 1e6, 3) + ' Mt<br>' + last.calendar_year + ': ' + fmt(last.ti_tco2e / 1e6, 3) + ' Mt<br>lifetime ' + fmt(total / 1e6, 2) + ' Mt'); });
+        cell.addEventListener('mouseleave', untip);
+        g.appendChild(cell);
+      }
+    }
+    caption(c, 'Shared vertical scale: ±' + fmtN(amp / 1e6, 2) + ' MtCO₂e a year. Choose a cohort year in the top bar; the EU27 has 2024 only.');
+    const c2 = card(panel, 'Annual roll-up across the cohorts in view', 'The year-by-year sum of every cohort in view under both scenarios, from <code>ti_annual.csv</code>: the two lines are the two yardsticks.');
+    const roll = Q('SELECT scenario, calendar_year, SUM(ti_tco2e) ti FROM ti_annual WHERE 1' + whereFilters() + ' GROUP BY scenario, calendar_year ORDER BY calendar_year');
+    tsChart(fig(c2), ['S1', 'S2'].map((k) => ({key: SC_NAME[k], points: roll.filter((r) => r.scenario === k).map((r) => [r.calendar_year, r.ti / 1e6]), colour: SC_COLOR[k]})),
+      {unit: 'MtCO2e added (+) or avoided (−) in the year', dp: 2, height: 280});
+  } else if (s === 'profile') {
+    const opts = ensureCohort();
+    if (!opts) { empty(card(panel, 'One cohort, year by year')); return; }
+    const [m, co, yr] = state.cohort.split('|');
+    const c = card(panel, 'One cohort, year by year', 'The product line is flat by construction (battery-electric units follow the grid), the benchmark falls by commitment; the shaded band is the gap under ' + SC_NAME[sc] + '. Hover for a year, click to pin it.');
+    const cc = ctl(c);
+    select(cc, 'Cohort', opts.map((o) => [cohortKey(o), label(o.market, o.cohort_year, o.company)]), state.cohort, (v) => { state.cohort = v; state.scrub = null; renderPanel(); });
+    const rows = Q('SELECT * FROM ti_annual WHERE market = ? AND company = ? AND cohort_year = ? ORDER BY scenario, calendar_year', [m, co, Number(yr)]);
+    const s1 = rows.filter((r) => r.scenario === 'S1'), s2 = rows.filter((r) => r.scenario === 'S2');
+    const focus = sc === 'S1' ? s1 : s2;
+    if (state.scrub == null || !focus.some((r) => r.calendar_year === state.scrub)) state.scrub = focus[0].calendar_year;
+    legend(c, [['product (fixed at sale)', 'var(--ink)'], ['benchmark, S2 committed policy', SC_COLOR.S2], ['benchmark, S1 observed trend', SC_COLOR.S1]]);
+    const f = fig(c);
+    const readout = el('div', 'readout'); c.appendChild(readout);
+    function show(y) {
+      const r = focus.find((q) => q.calendar_year === y);
+      if (!r) return;
+      readout.innerHTML = [[y, 'year'], [fmtN(r.surviving_vehicles), 'vehicles on the road'], [fmtN(r.e_ref_tco2e / 1e6, 3), 'MtCO₂e the benchmark fleet would emit'],
+        [fmtN(r.e_prod_tco2e / 1e6, 3), 'MtCO₂e the products emit'], [fmt(r.ti_tco2e / 1e6, 3), 'MtCO₂e trade impact in the year', cls(r.ti_tco2e)],
+        [fmt(r.cumulative_ti_tco2e / 1e6, 2), 'MtCO₂e cumulative to date', cls(r.cumulative_ti_tco2e)],
+      ].map(([v, l, k]) => '<div><div class="v ' + (k || '') + '">' + v + '</div><div class="muted">' + l + '</div></div>').join('');
+    }
+    tsChart(f, [
+      {key: 'product', points: focus.map((r) => [r.calendar_year, r.e_prod_tco2e / 1e6]), colour: 'var(--ink)', width: 2.4},
+      {key: 'benchmark S2', points: s2.map((r) => [r.calendar_year, r.e_ref_tco2e / 1e6]), colour: SC_COLOR.S2, dashed: sc !== 'S2'},
+      {key: 'benchmark S1', points: s1.map((r) => [r.calendar_year, r.e_ref_tco2e / 1e6]), colour: SC_COLOR.S1, dashed: sc !== 'S1'},
+    ], {unit: 'MtCO2e per year', dp: 2, band: ['benchmark ' + sc, 'product'], scrub: state.scrub, onScrub: (y, commit) => { if (commit) state.scrub = y; show(y); }});
+    caption(f, esc(label(m, yr, co)) + ', ' + fmtN(focus[0].surviving_vehicles) + ' vehicles: what they emit each year against what the benchmark fleet would have. Source: <code>ti_annual.csv</code>.');
+    show(state.scrub);
+    const r2 = el('div', 'row2'); panel.appendChild(r2);
+    const c2 = card(r2, 'Trade impact in each year', 'Avoided while the product sits below the benchmark, added once the benchmark has fallen past it.');
+    barsH(fig(c2), focus.map((r) => ({label: String(r.calendar_year), series: [{key: 'annual TI', value: r.ti_tco2e / 1e6}]})), {unit: 'MtCO2e, ' + SC_NAME[sc], dp: 3, labelW: 60, band: 11});
+    const c3 = card(r2, 'Cumulative trade impact', 'Where a report stops decides what it finds: the cumulative figure is at its best a few years in, then crosses.');
+    tsChart(fig(c3), ['S1', 'S2'].map((k) => ({key: SC_NAME[k], points: (k === 'S1' ? s1 : s2).map((r) => [r.calendar_year, r.cumulative_ti_tco2e / 1e6]), colour: SC_COLOR[k], dashed: k !== sc})),
+      {unit: 'MtCO2e cumulative', dp: 2, height: 280});
+  } else if (s === 'country') {
+    const y = focusYear();
+    const comp = state.companies.size ? inList('company', state.companies) : '';
+    const rows = Q("SELECT destination, SUM(units) units, SUM(ti_tco2e) ti, SUM(ti_tco2e) * 1000.0 / SUM(units) pv FROM ti_country WHERE market = 'EU27' AND scenario = ? AND cohort_year = ?" + comp + ' GROUP BY destination', [sc, y]).sort((a, b) => b.pv - a.pv);
+    const c = card(panel, 'EU27 member states, ' + y + ' cohorts under ' + SC_NAME[sc], 'Per-vehicle lifetime trade impact by destination: red adds, blue avoids, grey has no cohort in view or is withheld (Luxembourg). Click a state for its year-by-year line.');
+    if (!rows.length) { empty(c, 'No EU27 cohort in view: the EU27 has a 2024 cohort only, so choose 2024 or all years, and keep the EU27 in the market filter.'); return; }
+    const byC = new Map(rows.map((r) => [r.destination, r]));
+    const params = new Map(Q('SELECT * FROM destination_parameters_eu27').map((r) => [r.country, r]));
+    const dest = pick('country_dest', byC.has('DE') ? 'DE' : rows[0].destination);
+    euMap(fig(c), (a2) => byC.has(a2) ? byC.get(a2).pv / 1000 : null, {unit: 'tCO2e per vehicle',
+      tipHtml: (a2, name) => { const r = byC.get(a2), p = params.get(a2); return '<b>' + esc(name) + '</b><br>' + fmt(r.pv / 1000, 1) + ' t per vehicle · ' + fmt(r.ti / 1e6, 2) + ' Mt over ' + fmtN(r.units) + ' units' +
+        (p ? '<br>fleet ' + fmtN(p.fleet_intensity_gco2_km, 0) + ' g/km · ' + fmtN(p.vkt_km) + ' km/yr · life ' + p.lifetime_years + ' y' : ''); },
+      onClick: (a2) => { if (byC.has(a2)) { state.pick.country_dest = a2; renderPanel(); } }});
+    const r2 = el('div', 'row2'); panel.appendChild(r2);
+    const c2 = card(r2, 'Worst to best, per vehicle', 'Each member state carries its own fleet intensity, trend, distance and fleet age; under S2 the spread narrows because the committed pathway is EU-wide.');
+    dots(fig(c2), rows.map((r) => ({label: r.destination, value: r.pv / 1000, r})), {unit: 'tCO2e per vehicle, lifetime', dp: 1, labelW: 50,
+      tipHtml: (d) => '<b>' + esc(d.label) + '</b><br>' + fmt(d.value, 1) + ' t per vehicle over ' + fmtN(d.r.units) + ' units'});
+    const c3 = card(r2, 'Year by year in ' + dest, 'From <code>ti_annual_country.csv</code>: annual trade impact of the ' + y + ' cohorts sold into ' + dest + ', both scenarios.');
+    select(ctl(c3), 'Member state', rows.map((r) => [r.destination, r.destination]).sort(), dest, (v) => { state.pick.country_dest = v; renderPanel(); });
+    const ann = Q("SELECT scenario, calendar_year, SUM(ti_tco2e) ti, SUM(cumulative_ti_tco2e) cum FROM ti_annual_country WHERE market = 'EU27' AND destination = ? AND cohort_year = ?" + comp + ' GROUP BY scenario, calendar_year ORDER BY calendar_year', [dest, y]);
+    tsChart(fig(c3), ['S1', 'S2'].map((k) => ({key: SC_NAME[k], points: ann.filter((r) => r.scenario === k).map((r) => [r.calendar_year, r.ti / 1e3]), colour: SC_COLOR[k], dashed: k !== sc})),
+      {unit: 'ktCO2e in the year', dp: 1, height: 260});
+  } else {
+    const y = focusYear();
+    const opts = Q('SELECT DISTINCT market, company FROM ti_annual_powertrain WHERE cohort_year = ?' + whereFilters(false), [y])
+      .sort((a, b) => MARKET_ORDER.indexOf(a.market) - MARKET_ORDER.indexOf(b.market) || COMPANY_ORDER.indexOf(a.company) - COMPANY_ORDER.indexOf(b.company));
+    const c = card(panel, 'By powertrain, year by year', 'From <code>ti_annual_powertrain.csv</code>. Hybrids sit below the trend for a few years and above the committed pathway soon after; battery-electric units follow the grid down.');
+    if (!opts.length) { empty(c); return; }
+    const key = pick('pt_cohort_' + y, opts.some((o) => o.market === 'US' && o.company === 'toyota') ? 'US|toyota' : opts[0].market + '|' + opts[0].company);
+    select(ctl(c), 'Cohort', opts.map((o) => [o.market + '|' + o.company, label(o.market, y, o.company)]), key, (v) => { state.pick['pt_cohort_' + y] = v; renderPanel(); });
+    const [m, co] = key.split('|');
+    const rows = Q('SELECT powertrain, scenario, calendar_year, units, ti_tco2e, cumulative_ti_tco2e, e_prod_kgco2e_per_vehicle ep, e_ref_kgco2e_per_vehicle er FROM ti_annual_powertrain WHERE market = ? AND company = ? AND cohort_year = ? AND scenario = ? ORDER BY powertrain, calendar_year', [m, co, y, sc]);
+    const pts = PT_ORDER.filter((p) => rows.some((r) => r.powertrain === p));
+    legend(c, pts.map((p) => [p, PT_COLOR[p]]));
+    const r2 = el('div', 'row2'); c.appendChild(r2);
+    const fa = el('div', 'fig'); r2.appendChild(fa);
+    tsChart(fa, pts.map((p) => ({key: p + ' per vehicle', points: rows.filter((r) => r.powertrain === p).map((r) => [r.calendar_year, (r.ep - r.er) / 1000]), colour: PT_COLOR[p]})),
+      {unit: 'tCO2e per vehicle in the year (product − benchmark), ' + SC_NAME[sc], dp: 2, height: 280});
+    const fb = el('div', 'fig'); r2.appendChild(fb);
+    tsChart(fb, pts.map((p) => ({key: p + ' cumulative', points: rows.filter((r) => r.powertrain === p).map((r) => [r.calendar_year, r.cumulative_ti_tco2e / 1e6]), colour: PT_COLOR[p]})),
+      {unit: 'MtCO2e cumulative, ' + SC_NAME[sc], dp: 2, height: 280});
+    caption(c, esc(label(m, y, co)) + '. Left: the per-vehicle gap each year. Right: the cumulative trade impact of all the units of that powertrain.');
+  }
+}
+
+/* ---------------------------------------------------------------- tab 6: total */
+function renderTotal(panel) {
+  const s = sub(), sc = state.scenario;
+  if (s === 'company') {
+    const rep = Q("SELECT * FROM ti_company WHERE status = 'reported'" + whereFilters());
+    const s1 = rep.filter((r) => r.scenario === 'S1'), s2 = rep.filter((r) => r.scenario === 'S2');
+    const t1 = s1.reduce((a, r) => a + r.ti_tco2e, 0) / 1e6, t2 = s2.reduce((a, r) => a + r.ti_tco2e, 0) / 1e6;
+    const c0 = card(panel, 'Cohorts in view');
+    kpis(c0, [[fmtN(new Set(rep.map((r) => r.market + r.company + r.cohort_year)).size), 'cohorts'], [fmtN(s1.reduce((a, r) => a + r.covered_units, 0)), 'vehicles assessed'],
+      [fmt(t1, 2), 'MtCO₂e, S1 observed trajectory', cls(t1)], [fmt(t2, 2), 'MtCO₂e, S2 committed policy', cls(t2)],
+      [s2.filter((r) => r.ti_tco2e > 0).length + ' / ' + s2.length, 'cohorts adding emissions under S2'], [s1.filter((r) => r.ti_tco2e < 0).length + ' / ' + s1.length, 'cohorts avoiding under S1']]);
+    const by = new Map();
+    for (const r of rep) { const k = r.market + '|' + r.cohort_year + '|' + r.company; if (!by.has(k)) by.set(k, {market: r.market, year: r.cohort_year, company: r.company}); by.get(k)[r.scenario] = r; }
+    const rows = [...by.values()].sort((a, b) => COMPANY_ORDER.indexOf(a.company) - COMPANY_ORDER.indexOf(b.company) || MARKET_ORDER.indexOf(a.market) - MARKET_ORDER.indexOf(b.market) || a.year - b.year);
+    const c = card(panel, 'Lifetime trade impact of every cohort, both scenarios', 'Grouped by company; markets are never summed into one company figure. Click a bar to open the cohort’s year-by-year profile.');
+    const f = fig(c);
+    legend(f, [[SC_NAME.S1, SC_COLOR.S1], [SC_NAME.S2, SC_COLOR.S2]]);
+    barsH(f, rows.map((r) => ({label: COMPANY_NAME[r.company] + ' → ' + r.market + ' ' + r.year, row: r, series: ['S1', 'S2'].filter((k) => r[k]).map((k) => ({key: SC_NAME[k], sc: k, value: r[k].ti_tco2e / 1e6}))})), {
+      unit: 'MtCO2e over the operating lifetime', dp: 2, labelW: 190, colour: (x) => SC_COLOR[x.sc],
+      tipHtml: (x, r) => '<b>' + esc(r.label) + '</b><br>' + esc(x.key) + '<br>' + fmt(x.value, 2) + ' MtCO₂e · ' + fmt(r.row[x.sc].ti_per_vehicle_kgco2e / 1000, 1) + ' t per vehicle<br>' +
+        fmtN(r.row[x.sc].covered_units) + ' units, coverage ' + pct(r.row[x.sc].covered_share) + '<br><i>click to open the yearly profile</i>',
+      onClick: (r) => { state.cohort = [r.row.market, r.row.company, r.row.year].join('|'); state.scrub = null; go('annual', 'profile'); }});
+    const c2 = card(panel, 'By company and market', 'Units-weighted per-vehicle figures across the cohort years in view; the markets stay separate.');
+    const cm = Q("SELECT company, market, scenario, SUM(covered_units) u, SUM(ti_tco2e) ti FROM ti_company WHERE status = 'reported'" + whereFilters() + ' GROUP BY company, market, scenario');
+    const grid = [];
+    for (const co of COMPANY_ORDER) for (const m of MARKET_ORDER) {
+      const a = cm.find((r) => r.company === co && r.market === m && r.scenario === 'S1'), b = cm.find((r) => r.company === co && r.market === m && r.scenario === 'S2');
+      if (a && b) grid.push({company: COMPANY_NAME[co], market: m, u: a.u, s1: a.ti, s1v: a.ti * 1000 / a.u, s2: b.ti, s2v: b.ti * 1000 / b.u});
+    }
+    table(c2, [
+      {key: 'company', label: 'Company'}, {key: 'market', label: 'Market'}, {key: 'u', label: 'Units', num: true, fmt: (v) => fmtN(v)},
+      {key: 's1', label: 'S1 Mt', num: true, fmt: cellMt, cls: signCls}, {key: 's1v', label: 'S1 t/veh', num: true, fmt: cellT, cls: signCls},
+      {key: 's2', label: 'S2 Mt', num: true, fmt: cellMt, cls: signCls}, {key: 's2v', label: 'S2 t/veh', num: true, fmt: cellT, cls: signCls},
+    ], grid);
+  } else if (s === 'pervehicle') {
+    const rows = Q("SELECT * FROM ti_company WHERE status = 'reported' AND scenario = ?" + whereFilters(), [sc]).sort((a, b) => b.ti_per_vehicle_kgco2e - a.ti_per_vehicle_kgco2e);
+    const c = card(panel, 'Per-vehicle lifetime trade impact under ' + SC_NAME[sc] + ', worst first', 'The size tracks the destination’s committed decline, its vehicle life and its annual distance before it tracks the product mix. Switch the scenario in the top bar.');
+    barsH(fig(c), rows.map((r) => ({label: label(r.market, r.cohort_year, r.company), row: r, series: [{key: 't per vehicle', value: r.ti_per_vehicle_kgco2e / 1000}]})), {
+      unit: 'tCO2e per vehicle over the lifetime', dp: 1, labelW: 170, band: 14,
+      tipHtml: (x, r) => '<b>' + esc(r.label) + '</b><br>' + fmt(x.value, 1) + ' t per vehicle<br>' + fmt(r.row.ti_tco2e / 1e6, 2) + ' MtCO₂e over ' + fmtN(r.row.covered_units) + ' units'});
+    const y = focusYear();
+    const pt = Q('SELECT market, powertrain, scenario, SUM(units) units, SUM(ti_tco2e) ti, SUM(ti_tco2e) * 1000.0 / SUM(units) pv FROM ti_powertrain WHERE cohort_year = ?' + whereFilters(false) + ' GROUP BY market, powertrain, scenario', [y]);
+    const c2 = card(panel, 'By market and powertrain, ' + y + ' cohorts', 'Hybrids beat the trend and not the target; battery-electric avoids under both. Cohort years are never pooled: choose a year in the top bar.');
+    const f2 = fig(c2);
+    legend(f2, [[SC_NAME.S1, SC_COLOR.S1], [SC_NAME.S2, SC_COLOR.S2]]);
+    const groups = [];
+    for (const m of MARKET_ORDER) for (const p of PT_ORDER) {
+      const ser = ['S1', 'S2'].map((k) => pt.find((r) => r.market === m && r.powertrain === p && r.scenario === k)).filter(Boolean);
+      if (ser.length) groups.push({label: m + ' ' + p, series: ser.map((r) => ({key: SC_NAME[r.scenario], sc: r.scenario, value: r.pv / 1000, r}))});
+    }
+    barsH(f2, groups, {unit: 'tCO2e per vehicle, lifetime', dp: 1, labelW: 110, colour: (x) => SC_COLOR[x.sc],
+      tipHtml: (x, r) => '<b>' + esc(r.label) + '</b><br>' + esc(x.key) + '<br>' + fmt(x.value, 1) + ' t per vehicle · ' + fmt(x.r.ti / 1e6, 2) + ' Mt over ' + fmtN(x.r.units) + ' units'});
+  } else if (s === 'crossover') {
+    const rows = [];
+    for (const m of MARKET_ORDER) { if (state.markets.size && !state.markets.has(m)) continue;
+      for (const k of ['S1', 'S2']) { const v = FACTS.crossings[m + '|' + k]; if (v != null) rows.push({label: m + ' ' + k, value: v, m, k}); } }
+    const c = card(panel, 'Years after sale until a cohort stops beating its benchmark', 'Units-weighted across all cohorts, from <code>ti_crossover.csv</code>. Korea S1 has no dot: no Korean unit crosses under the observed trend, because Korea’s observed road CO₂ is flat.');
+    const f = fig(c);
+    legend(f, [[SC_NAME.S1, SC_COLOR.S1], [SC_NAME.S2, SC_COLOR.S2]]);
+    dots(f, rows, {unit: 'years after sale', dp: 1, labelW: 80, signed: false, colour: (r) => SC_COLOR[r.k],
+      tipHtml: (r) => { const x = FACTS.crossRows.find((q) => q.market === r.m && q.scenario === r.k) || {}; return '<b>' + esc(MARKET_NAME[r.m]) + ' · ' + esc(SC_NAME[r.k]) + '</b><br>units-weighted crossover ' +
+        r.value.toFixed(1) + ' years<br>' + fmtN(x.uw) + ' of ' + fmtN(x.u) + ' units cross at all'; }});
+    const c2 = card(panel, 'By cohort row', 'Every nameplate × powertrain × destination row under ' + SC_NAME[sc] + ', with the reason where no crossover exists.');
+    table(c2, [
+      {key: 'market', label: 'Market'}, {key: 'company', label: 'Company', fmt: (v) => COMPANY_NAME[v] || v}, {key: 'destination', label: 'Dest.'}, {key: 'model', label: 'Nameplate'},
+      {key: 'powertrain', label: 'Drive'}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)},
+      {key: 'ti_per_vehicle_kgco2e', label: 't/veh', num: true, fmt: cellT, cls: signCls},
+      {key: 'crossover_year', label: 'Crossover yr', num: true, fmt: (v) => v == null ? '—' : fmtN(v, 1)}, {key: 'crossover_calendar_year', label: 'Calendar', num: true, fmt: (v) => v == null ? '—' : v},
+      {key: 'reason', label: 'Reason', wrap: true, fmt: (v) => '<span class="small">' + esc(v) + '</span>'},
+    ], Q('SELECT * FROM ti_crossover WHERE scenario = ?' + whereFilters(false), [sc]), {sort: 'units', short: true});
+  } else if (s === 'nameplate') {
+    const y = focusYear();
+    const companies = COMPANY_ORDER.filter((c) => ALL.companies.includes(c) && (!state.companies.size || state.companies.has(c)));
+    const c = card(panel, 'The same nameplate, sold in the same year into different markets', 'Four market parameters do the work and none is a property of the car: the benchmark level, the annual distance, the vehicle life, and the rate at which the committed benchmark falls.');
+    if (!companies.length) { empty(c); return; }
+    const co = pick('np_company', companies[0]);
+    const names = Q('SELECT model, COUNT(*) n, SUM(u) u, MIN(u) minu FROM (SELECT model, market, SUM(units) u FROM ti_by_model WHERE company = ? AND cohort_year = ? AND scenario = ? ' +
+      'GROUP BY model, market) GROUP BY model HAVING n >= 2 ORDER BY minu DESC', [co, y, sc]);
+    const np = names.some((r) => r.model === pick('np_model_' + co, null)) ? pick('np_model_' + co) : (names[0] || {}).model;
+    const cc = ctl(c);
+    select(cc, 'Company', companies.map((x) => [x, COMPANY_NAME[x]]), co, (v) => { state.pick.np_company = v; renderPanel(); });
+    select(cc, 'Nameplate in two or more markets, ' + y, names.map((r) => [r.model, r.model + ' (' + r.n + ' markets, ' + fmtN(r.u) + ' units, smallest market ' + fmtN(r.minu) + ')']), np, (v) => { state.pick['np_model_' + co] = v; renderPanel(); });
+    if (!np) { empty(c, 'No nameplate of this company is sold in two or more markets in ' + y + '. Nameplates are matched by name, so a market that names the same car differently does not join.'); return; }
+    const rows = Q('SELECT market, powertrain, SUM(units) units, SUM(e_prod_year0_kgco2e * units) / SUM(units) prod0, SUM(e_ref_year0_kgco2e * units) / SUM(units) ref0, ' +
+      'SUM(ti_per_vehicle_kgco2e * units) / SUM(units) pv, AVG(lifetime_years) life, AVG(vkt_km) vkt FROM ti_by_model WHERE company = ? AND model = ? AND cohort_year = ? AND scenario = ? GROUP BY market, powertrain ORDER BY powertrain, market', [co, np, y, sc]);
+    barsH(fig(c), rows.map((r) => ({label: MARKET_NAME[r.market] + ' · ' + r.powertrain, row: r, series: [{key: 't per vehicle', value: r.pv / 1000}]})), {
+      unit: 'tCO2e per vehicle, lifetime, ' + SC_NAME[sc], dp: 1, labelW: 210, band: 16,
+      tipHtml: (x, r) => '<b>' + esc(r.label) + '</b><br>' + fmtN(r.row.units) + ' units<br>product ' + fmtN(r.row.prod0) + ' vs benchmark ' + fmtN(r.row.ref0) + ' kg/yr at sale<br>' + Math.round(r.row.life) + ' years, ' + fmtN(r.row.vkt) + ' km/yr'});
+    table(c, [
+      {key: 'market', label: 'Market', fmt: (v) => esc(MARKET_NAME[v])}, {key: 'powertrain', label: 'Drive'}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)},
+      {key: 'prod0', label: 'Product kg/yr at sale', num: true, fmt: (v) => fmtN(v)}, {key: 'ref0', label: 'Benchmark kg/yr at sale', num: true, fmt: (v) => fmtN(v)},
+      {key: 'life', label: 'Life yr', num: true, fmt: (v) => Math.round(v)}, {key: 'vkt', label: 'km/yr', num: true, fmt: (v) => fmtN(v)},
+      {key: 'pv', label: 't/veh', num: true, fmt: cellT, cls: signCls},
+    ], rows);
+  } else if (s === 'sensitivity') {
+    const y = focusYear();
+    const rows = Q('SELECT company, market, dimension, variant, ti_tco2e FROM ti_sensitivity WHERE scenario = ? AND cohort_year = ?' + whereFilters(false), [sc, y]);
+    const g = new Map();
+    for (const r of rows) { const k = r.company + '|' + r.market + '|' + r.dimension; if (!g.has(k)) g.set(k, {company: r.company, market: r.market, dimension: r.dimension, v: {}}); g.get(k).v[r.variant] = r.ti_tco2e; }
+    const NAMES = {lifetime: 'vehicle lifetime, ±3 years', vkt_proxy: 'proxied distance, quartile band', realworld: 'real-world correction, low/high', powertrain_mix: 'powertrain mix, all-hybrid bound'};
+    const out = [];
+    for (const e of g.values()) {
+      const c = e.v.central; if (c == null) continue;
+      const others = Object.entries(e.v).filter(([k]) => k !== 'central').map(([, v]) => v);
+      if (!others.length) continue;
+      const lo = Math.min(c, ...others), hi = Math.max(c, ...others);
+      if (Math.abs(hi - lo) < 1e-9) continue;
+      out.push({label: e.market + ' ' + COMPANY_NAME[e.company] + ' — ' + (NAMES[e.dimension] || e.dimension), low: lo / 1e6, mid: c / 1e6, high: hi / 1e6, dimension: e.dimension});
+    }
+    out.sort((a, b) => Math.abs(b.high - b.low) - Math.abs(a.high - a.low));
+    const c = card(panel, 'What would change the answer: ' + y + ' cohorts under ' + SC_NAME[sc], 'Four inputs varied one at a time over their documented ranges, every cohort recomputed. The bar is the range, the mark the published central value; dimensions that leave a cohort unchanged are omitted. Widest first.');
+    ranges(fig(c), out.slice(0, 20), {unit: 'MtCO2e over the lifetime', dp: 2});
+    caption(c, 'Vehicle lifetime dominates everywhere: it is both the number of years of benchmark decline a vehicle must survive and the multiplier on every year’s gap. No variant turns a committed-policy addition into an avoidance.');
+    table(c, [
+      {key: 'label', label: 'Cohort — dimension'}, {key: 'low', label: 'Low Mt', num: true, fmt: (v) => fmt(v, 2), cls: signCls}, {key: 'mid', label: 'Central Mt', num: true, fmt: (v) => fmt(v, 2), cls: signCls},
+      {key: 'high', label: 'High Mt', num: true, fmt: (v) => fmt(v, 2), cls: signCls}, {key: 'span', label: 'Range Mt', num: true, fmt: (v) => fmtN(v, 2)},
+    ], out.map((r) => ({...r, span: Math.abs(r.high - r.low)})), {sort: 'span', short: true});
+  } else {
+    const rep = Q("SELECT * FROM ti_company WHERE status = 'reported'" + whereFilters());
+    const by = new Map();
+    for (const r of rep) { const k = r.market + '|' + r.cohort_year + '|' + r.company; if (!by.has(k)) by.set(k, {market: r.market, year: r.cohort_year, company: r.company}); by.get(k)[r.scenario] = r; }
+    const flat = [...by.values()].filter((r) => r.S1 && r.S2).map((r) => ({market: r.market, year: r.year, company: COMPANY_NAME[r.company], units: r.S1.covered_units, withheld: r.S1.withheld_units, cov: r.S1.covered_share,
+      s1: r.S1.ti_tco2e, s1v: r.S1.ti_per_vehicle_kgco2e, s2: r.S2.ti_tco2e, s2v: r.S2.ti_per_vehicle_kgco2e, dir: r.S2.direction}));
+    const c = card(panel, 'The result set', 'One row per cohort, from <code>ti_company.csv</code>. Per-vehicle figures are tonnes over the whole operating life. Sort any column.');
+    table(c, [
+      {key: 'market', label: 'Market'}, {key: 'year', label: 'Year', num: true, fmt: (v) => v}, {key: 'company', label: 'Company'},
+      {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)}, {key: 'withheld', label: 'Withheld', num: true, fmt: (v) => fmtN(v)}, {key: 'cov', label: 'Coverage', num: true, fmt: (v) => pct(v)},
+      {key: 's1', label: 'S1 Mt', num: true, fmt: cellMt, cls: signCls}, {key: 's1v', label: 'S1 t/veh', num: true, fmt: cellT, cls: signCls},
+      {key: 's2', label: 'S2 Mt', num: true, fmt: cellMt, cls: signCls}, {key: 's2v', label: 'S2 t/veh', num: true, fmt: cellT, cls: signCls}, {key: 'dir', label: 'S2 verdict'},
+    ], flat, {foot: ['Cohorts in view', '', String(flat.length), fmtN(flat.reduce((a, r) => a + r.units, 0)), fmtN(flat.reduce((a, r) => a + r.withheld, 0)), '',
+      fmt(flat.reduce((a, r) => a + r.s1, 0) / 1e6, 2), '', fmt(flat.reduce((a, r) => a + r.s2, 0) / 1e6, 2), '', flat.filter((r) => r.s2 > 0).length + ' add']});
+    const c2 = card(panel, 'By segment', 'Trucks are measured as trucks: Korea’s one-tonne trucks against Korean goods vehicles, Japan’s goods segment on the same principle.');
+    table(c2, [
+      {key: 'market', label: 'Market'}, {key: 'segment', label: 'Segment', fmt: (v) => esc(seg(v))}, {key: 'scenario', label: 'Scenario'}, {key: 'units', label: 'Units', num: true, fmt: (v) => fmtN(v)},
+      {key: 'ti', label: 'Mt', num: true, fmt: cellMt, cls: signCls}, {key: 'pv', label: 't/veh', num: true, fmt: cellT, cls: signCls},
+    ], Q('SELECT market, segment, scenario, SUM(units) units, SUM(ti_tco2e) ti, SUM(ti_tco2e) * 1000.0 / SUM(units) pv FROM ti_by_model WHERE 1' + whereFilters() + ' GROUP BY market, segment, scenario ORDER BY market, segment, scenario'));
+  }
+}
+
+/* ---------------------------------------------------------------- tab 7: sources */
+function renderSources(panel) {
+  if (sub() === 'tables') {
+    const c = card(panel, 'Tables in the database', 'Every CSV the build writes, by kind, with its row count and content hash. The output tables are what this page reads.');
+    table(c, [
+      {key: 'kind', label: 'Kind'}, {key: 'dataset', label: 'Dataset'}, {key: 'table', label: 'Table', fmt: (v) => '<code>' + esc(v) + '</code>'},
+      {key: 'rows', label: 'Rows', num: true, fmt: (v) => fmtN(v)}, {key: 'source_path', label: 'Path', fmt: clip(60)},
+      {key: 'sha256', label: 'SHA-256', fmt: (v) => '<code class="small">' + esc(String(v).slice(0, 16)) + '…</code>'},
+    ], Q('SELECT * FROM tables ORDER BY kind, "table"'), {sort: 'kind', dir: 'asc', short: true});
+  } else {
+    const c = card(panel, 'Data sources', 'Every source the build reads: its publisher, how it was obtained, when, and under what licence. A source without a link was gathered by hand and says so.');
+    table(c, [
+      {key: 'source_id', label: 'Source', fmt: (v, r) => r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener"><code>' + esc(v) + '</code></a>' : '<code>' + esc(v) + '</code>'},
+      {key: 'publisher', label: 'Publisher', fmt: clip(40)}, {key: 'title', label: 'Title', fmt: clip(90)}, {key: 'how_obtained', label: 'Obtained', fmt: clip(40)},
+      {key: 'accessed_date', label: 'Accessed'}, {key: 'license', label: 'Licence', fmt: clip(36)}, {key: 'used_by', label: 'Used by', fmt: clip(50)},
+    ], Q('SELECT * FROM sources ORDER BY source_id'), {sort: 'source_id', dir: 'asc', short: true});
+    const c2 = card(panel, 'Raw files', 'Each raw drop with its fetch route and hash; the method notes in the repository state where a file has no link.');
+    if (hasTable('raw_files')) {
+      const cols = Q('PRAGMA table_info(raw_files)').map((r) => r.name);
+      table(c2, cols.map((k) => ({key: k, label: k, fmt: k === 'sha256' ? (v) => '<code class="small">' + esc(String(v).slice(0, 16)) + '…</code>' : clip(60)})), Q('SELECT * FROM raw_files'), {short: true});
+    }
+  }
+}
+
+/* ---------------------------------------------------------------- shell: tabs, filters, hash */
+const RENDER = {sales: renderSales, coverage: renderCoverage, benchmarks: renderBenchmarks, inputs: renderInputs, annual: renderAnnual, total: renderTotal, sources: renderSources};
+function tabDef() { return TABS.find((t) => t.id === state.tab) || TABS[0]; }
+function renderTabs() {
+  $('tabs').innerHTML = TABS.map((t, i) => '<button data-t="' + t.id + '" class="' + (t.id === state.tab ? 'on' : '') + '"><span class="n">' + (i + 1) + '</span>' + esc(t.title) + '</button>').join('');
+  $('tabs').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => go(b.dataset.t)));
+}
+function renderSubtabs() {
+  const subs = tabDef().subs();
+  if (!subs.some(([k]) => k === state.sub[state.tab])) state.sub[state.tab] = subs[0][0];
+  $('subtabs').innerHTML = subs.map(([k, l]) => '<button data-s="' + esc(k) + '" class="' + (k === state.sub[state.tab] ? 'on' : '') + '">' + esc(l) + '</button>').join('');
+  $('subtabs').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => setSub(b.dataset.s)));
+}
+function renderStory() {
+  $('story').innerHTML = STORY[state.tab] || '';
+  fillFacts($('story'));
+}
+function renderPanel() {
+  const panel = $('panel');
+  panel.innerHTML = '';
+  try { RENDER[state.tab](panel); }
+  catch (err) { panel.appendChild(el('div', 'card err', 'This view could not be drawn: ' + esc(err.message))); console.error(err); }
+  const rep = Q("SELECT COUNT(DISTINCT market || company || cohort_year) n FROM ti_company WHERE status = 'reported'" + whereFilters())[0].n;
+  $('showing').textContent = 'filters select ' + rep + ' of ' + FACTS.cohorts + ' cohorts';
+  writeHash();
+}
+function renderView() { renderTabs(); renderSubtabs(); renderStory(); renderPanel(); }
+function go(tab, s) { state.tab = tab; if (s) state.sub[tab] = s; renderView(); window.scrollTo({top: 0}); }
+function setSub(s) { state.sub[state.tab] = s; renderSubtabs(); renderPanel(); }
+
+function chips(id, items, isOn, onToggle, klass) {
+  $(id).innerHTML = items.map(([v, l]) => '<button class="chip ' + (klass ? klass(v) : '') + (isOn(v) ? ' on' : '') + '" data-v="' + esc(v) + '">' + esc(l) + '</button>').join('');
+  $(id).querySelectorAll('button').forEach((b) => b.addEventListener('click', () => onToggle(b.dataset.v)));
+}
+function toggleSet(set, v, all) {
+  if (!set.size) all.forEach((x) => set.add(x));
+  if (set.has(v)) set.delete(v); else set.add(v);
+  if (!set.size || set.size === all.length) set.clear();
+}
+function renderFilters() {
+  chips('f-scenario', [['S1', 'S1 observed'], ['S2', 'S2 committed']], (v) => state.scenario === v, (v) => { state.scenario = v; renderFilters(); renderPanel(); }, (v) => v.toLowerCase());
+  chips('f-company', ALL.companies.map((c) => [c, COMPANY_NAME[c] || c]), (v) => !state.companies.size || state.companies.has(v), (v) => { toggleSet(state.companies, v, ALL.companies); renderFilters(); renderPanel(); });
+  chips('f-market', ALL.markets.map((m) => [m, m]), (v) => !state.markets.size || state.markets.has(v), (v) => { toggleSet(state.markets, v, ALL.markets); renderFilters(); renderPanel(); });
+  chips('f-year', [['all', 'all'], ...ALL.years.map((y) => [String(y), String(y)])], (v) => state.year === v, (v) => { state.year = v; renderFilters(); renderPanel(); });
+  chips('f-home', [['include', 'include'], ['exclude', 'exclude (export impact)']], (v) => state.home === v, (v) => { state.home = v; renderFilters(); renderPanel(); });
+  $('f-reset').onclick = () => { state.scenario = 'S2'; state.companies.clear(); state.markets.clear(); state.year = 'all'; state.home = 'include'; renderFilters(); renderPanel(); };
+}
+function writeHash() {
+  const parts = ['sc=' + state.scenario];
+  if (state.companies.size) parts.push('c=' + [...state.companies].join(','));
+  if (state.markets.size) parts.push('m=' + [...state.markets].join(','));
+  if (state.year !== 'all') parts.push('y=' + state.year);
+  if (state.home === 'exclude') parts.push('hm=exclude');
+  history.replaceState(null, '', '#report/' + state.tab + '/' + (state.sub[state.tab] || '') + '?' + parts.join('&'));
+}
+function readHash() {
+  if (location.hash.indexOf('#report/') !== 0) return;
+  const h = location.hash.replace(/^#report\//, '');
+  if (!h) return;
+  const [path, q] = h.split('?');
+  const [tab, s] = path.split('/');
+  if (TABS.some((t) => t.id === tab)) { state.tab = tab; if (s) state.sub[tab] = s; }
+  if (!q) return;
+  for (const kv of q.split('&')) {
+    const [k, v] = kv.split('=');
+    if (k === 'sc' && (v === 'S1' || v === 'S2')) state.scenario = v;
+    if (k === 'c') v.split(',').filter((x) => ALL.companies.includes(x)).forEach((x) => state.companies.add(x));
+    if (k === 'm') v.split(',').filter((x) => ALL.markets.includes(x)).forEach((x) => state.markets.add(x));
+    if (k === 'y' && ALL.years.map(String).includes(v)) state.year = v;
+    if (k === 'hm' && v === 'exclude') state.home = 'exclude';
+  }
+}
+
+/* ---------------------------------------------------------------- mount
+   The shell opens the database once and hands it here; this section never fetches anything and
+   never re-reads the file when the reader comes back to it. */
+window.__report = {
+  mounted: false,
+  mount: function (db) {
+    DB = db;
+    ALL.companies = COMPANY_ORDER.filter((c) => Q('SELECT 1 FROM ti_company WHERE company = ? LIMIT 1', [c]).length);
+    ALL.markets = MARKET_ORDER.filter((m) => Q('SELECT 1 FROM ti_company WHERE market = ? LIMIT 1', [m]).length);
+    ALL.years = Q('SELECT DISTINCT cohort_year y FROM ti_company ORDER BY y').map((r) => r.y);
+    ALL.home = Object.fromEntries(Q("SELECT company, country FROM companies WHERE in_scope = 'yes'").map((r) => [r.company, r.country]));
+    loadCodes();
+    readHash();
+    FACTS = computeFacts();
+    renderFilters();
+    renderView();
+    this.mounted = true;
+  },
+  /* The shell may hand back an address that names a tab — #report/total/company — after this
+     section is already built; re-reading it costs a render, never a re-read of the file. */
+  route: function () { if (!this.mounted) return; readHash(); renderFilters(); renderView(); },
+  reset: function () { this.mounted = false; GEO = null; CODES = null; }
+};
+})();
+</script>
+
+<script>
+/* ==============================================================================================
+   브리핑 · Briefing — five slides over the same open database.
+   ============================================================================================== */
+(function () {
+'use strict';
+
+const NAME = {hyundai: 'Hyundai', kia: 'Kia', toyota: 'Toyota', nissan: 'Nissan'};
+const MARKET = {US: 'United States', EU27: 'European Union', KR: 'Korea', JP: 'Japan'};
+const PT = {BEV: 'battery', HEV: 'hybrid', PHEV: 'plug-in hybrid', ICE: 'combustion', FCEV: 'fuel cell'};
+let SQL = null, DB = null, COHORT = null;
+
+const ROOT = document.getElementById('p-root');
+const $ = (id) => document.getElementById('p-' + id);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+const fmt = (v, d = 1) => v == null || v === '' ? '—' : Number(v).toLocaleString('en-US', {minimumFractionDigits: d, maximumFractionDigits: d});
+const fmtN = (v) => v == null ? '—' : Number(v).toLocaleString('en-US');
+const signed = (v, d = 1) => (v > 0 ? '+' : v < 0 ? '−' : '') + fmt(Math.abs(v), d);
+const cls = (v) => v > 0 ? 'pos' : v < 0 ? 'neg' : '';
+
+function Q(sql, params) {
+  const out = [];
+  const st = DB.prepare(sql);
+  if (params) st.bind(params);
+  while (st.step()) out.push(st.getAsObject());
+  st.free();
+  return out;
+}
+const one = (sql, params) => Q(sql, params)[0] || {};
+
+/* ---------------------------------------------------------------- slide 1 */
+function slideOne() {
+  COHORT = one('SELECT MIN(cohort_year) y FROM ti_company WHERE status = ?', ['reported']).y;
+  const head = one(
+    "SELECT SUM(CASE WHEN scenario = 'S1' THEN covered_units END) units," +
+    " SUM(CASE WHEN scenario = 'S1' THEN ti_tco2e END) s1," +
+    " SUM(CASE WHEN scenario = 'S2' THEN ti_tco2e END) s2," +
+    ' COUNT(DISTINCT company) companies, COUNT(DISTINCT market) markets' +
+    ' FROM ti_company WHERE cohort_year = ?', [COHORT]);
+  put('units', fmtN(head.units));
+  put('cohort', COHORT);
+  put('companies', head.companies);
+  put('markets', head.markets);
+  put('s1', signed(head.s1 / 1e6) + ' Mt');
+  put('s2', signed(head.s2 / 1e6) + ' Mt');
+}
+function put(key, value) {
+  ROOT.querySelectorAll('[data-f="' + key + '"]').forEach((el) => { el.innerHTML = value; });
+}
+
+/* ---------------------------------------------------------------- slide 2 */
+function slideTwo() {
+  const rows = Q(
+    'SELECT company,' +
+    " SUM(CASE WHEN scenario = 'S1' THEN ti_tco2e END)/1e6 s1," +
+    " SUM(CASE WHEN scenario = 'S2' THEN ti_tco2e END)/1e6 s2," +
+    " SUM(CASE WHEN scenario = 'S1' THEN covered_units END) units" +
+    ' FROM ti_company WHERE cohort_year = ? GROUP BY company ORDER BY s2 DESC', [COHORT]);
+  bars('#p-fig-company', rows.map((r) => ({
+    label: NAME[r.company] || r.company, sub: fmtN(r.units) + ' vehicles',
+    values: [{key: 's1', v: r.s1}, {key: 's2', v: r.s2}],
+  })), 'Mt');
+  table('#p-tab-company',
+    [{k: 'name', h: 'Company', l: true}, {k: 'units', h: 'Vehicles', f: (v) => fmtN(v)},
+     {k: 'p1', h: 'Observed', f: (v) => signed(v), c: true},
+     {k: 'p2', h: 'Committed', f: (v) => signed(v), c: true}],
+    rows.map((r) => ({name: NAME[r.company] || r.company, units: r.units,
+      p1: r.s1 * 1e6 / r.units, p2: r.s2 * 1e6 / r.units})));
+  const top = rows[0], low = rows[rows.length - 1];
+  const below = rows.filter((r) => r.s2 < 0).length;
+  put('company_note', 'Under the observed trend the order is ' +
+    rows.slice().sort((a, b) => a.s1 - b.s1).map((r) => esc(NAME[r.company] || r.company)).join(', ') +
+    '. Under the committed path it is ' + rows.map((r) => esc(NAME[r.company] || r.company)).join(', ') +
+    ' — ' + esc(NAME[top.company]) + ' carries the largest added quantity, ' +
+    esc(NAME[low.company]) + ' the smallest, and ' +
+    (below === 0 ? 'not one of them is below zero' : below + ' of them sit below zero') +
+    '. The reordering between the two columns is the point: it is not a disagreement about the ' +
+    'cars, it is a disagreement about what they should be measured against.');
+}
+
+/* ---------------------------------------------------------------- slide 3 */
+function slideThree() {
+  const rows = Q(
+    'SELECT powertrain,' +
+    " SUM(CASE WHEN scenario = 'S1' THEN ti_tco2e END) / SUM(CASE WHEN scenario = 'S1' THEN units END) s1," +
+    " SUM(CASE WHEN scenario = 'S2' THEN ti_tco2e END) / SUM(CASE WHEN scenario = 'S2' THEN units END) s2," +
+    " SUM(CASE WHEN scenario = 'S1' THEN units END) units" +
+    ' FROM ti_powertrain WHERE cohort_year = ? GROUP BY powertrain ORDER BY s2 DESC', [COHORT]);
+  bars('#p-fig-powertrain', rows.map((r) => ({
+    label: (PT[r.powertrain] || r.powertrain), sub: fmtN(r.units) + ' vehicles',
+    values: [{key: 's1', v: r.s1}, {key: 's2', v: r.s2}],
+  })), 't');
+  const mix = Q(
+    "SELECT company, powertrain, SUM(units) u FROM ti_powertrain WHERE cohort_year = ? AND scenario = 'S1'" +
+    ' GROUP BY company, powertrain', [COHORT]);
+  const kinds = [...new Set(mix.map((r) => r.powertrain))].sort();
+  const byCo = {};
+  mix.forEach((r) => { (byCo[r.company] = byCo[r.company] || {})[r.powertrain] = r.u; });
+  const cols = [{k: 'name', h: 'Company', l: true}].concat(kinds.map((k) => ({
+    k, h: PT[k] || k, f: (v) => v == null ? '—' : fmt(v, 0) + '%'})));
+  table('#p-tab-powertrain', cols, Object.keys(byCo).map((c) => {
+    const total = Object.values(byCo[c]).reduce((a, b) => a + b, 0);
+    const row = {name: NAME[c] || c};
+    kinds.forEach((k) => { row[k] = byCo[c][k] == null ? null : byCo[c][k] / total * 100; });
+    return row;
+  }));
+  const hev = rows.find((r) => r.powertrain === 'HEV');
+  const ice = rows.find((r) => r.powertrain === 'ICE');
+  if (hev && ice) {
+    const spread = Q(
+      "SELECT market, SUM(ti_tco2e)/SUM(units) t FROM ti_powertrain WHERE cohort_year = ?" +
+      " AND powertrain = 'HEV' AND scenario = 'S2' GROUP BY market ORDER BY t", [COHORT]);
+    const best = spread[0], worst = spread[spread.length - 1];
+    put('powertrain_note', 'A hybrid is worth ' + signed(hev.s1) +
+      ' tonnes against what the fleet is actually doing and ' + signed(hev.s2) +
+      ' tonnes against what the country pledged — the credit does not shrink, it reverses. ' +
+      'And the reversal is a property of the destination, not of the car: the same hybrid is ' +
+      signed(best.t) + ' tonnes in ' + esc(MARKET[best.market] || best.market) + ' and ' +
+      signed(worst.t) + ' tonnes in ' + esc(MARKET[worst.market] || worst.market) +
+      '. A combustion vehicle reads ' + signed(ice.s1) + ' and ' + signed(ice.s2) +
+      ' tonnes on the same two benchmarks, and it is the volume item in every company here.');
+  }
+}
+
+/* ---------------------------------------------------------------- slide 4 */
+function slideFour() {
+  const rows = Q(
+    "SELECT market, company, ti_per_vehicle_kgco2e/1000.0 t FROM ti_company" +
+    " WHERE cohort_year = ? AND scenario = 'S2'", [COHORT]);
+  const markets = [...new Set(rows.map((r) => r.market))];
+  const companies = [...new Set(rows.map((r) => r.company))].sort();
+  const grid = {};
+  rows.forEach((r) => { (grid[r.market] = grid[r.market] || {})[r.company] = r.t; });
+  table('#p-tab-market',
+    [{k: 'name', h: 'Destination', l: true}].concat(companies.map((c) => ({
+      k: c, h: NAME[c] || c, f: (v) => v == null ? '—' : signed(v), c: true}))),
+    markets.map((m) => Object.assign({name: MARKET[m] || m}, grid[m])));
+  const slopes = Q(
+    "SELECT 'US' market, scenario, AVG(r_fleet) r FROM reference_trajectories_us GROUP BY scenario" +
+    " UNION ALL SELECT 'EU27', scenario, AVG(r_fleet) FROM reference_trajectories_eu27 GROUP BY scenario" +
+    " UNION ALL SELECT 'KR', scenario, AVG(r_fleet) FROM reference_trajectories_kr GROUP BY scenario" +
+    " UNION ALL SELECT 'JP', scenario, AVG(r_fleet) FROM reference_trajectories_jp GROUP BY scenario");
+  const bym = {};
+  slopes.forEach((r) => { (bym[r.market] = bym[r.market] || {})[r.scenario] = r.r * 100; });
+  table('#p-tab-slope',
+    [{k: 'name', h: 'Destination', l: true},
+     {k: 'S1', h: 'Observed', f: (v) => fmt(v, 1) + '%/yr'},
+     {k: 'S2', h: 'Committed', f: (v) => fmt(v, 1) + '%/yr'}],
+    Object.keys(bym).map((m) => Object.assign({name: MARKET[m] || m}, bym[m])));
+  // A dash in the table is a missing sales year, not a missing company: say which, and say
+  // what that pair does have, so nobody reads absence as a result.
+  const inCohort = new Set(rows.map((r) => r.company + '|' + r.market));
+  let said_gaps = '';
+  const gaps = Q('SELECT company, market, MIN(cohort_year) y FROM ti_company GROUP BY company, market')
+    .filter((r) => !inCohort.has(r.company + '|' + r.market));
+  if (gaps.length) {
+    const said = gaps.map((g) => {
+      const p = one('SELECT period FROM ti_coverage WHERE company = ? AND destination = ?' +
+        ' AND cohort_year = ? LIMIT 1', [g.company, g.market, g.y]);
+      return esc(NAME[g.company] || g.company) + ' in ' + esc(MARKET[g.market] || g.market) +
+        ' (' + esc(p.period || g.y) + ')';
+    }).join(', ');
+    said_gaps = 'A dash is a sales year this cohort does not cover, not a company absent ' +
+      'from the market. On file but outside it: ' + said + '. Those sit in a later cohort and a ' +
+      'shorter reporting period, so they are read on their own rather than folded into this ' +
+      'comparison.';
+  }
+  // A cell whose source stops short of December is a shorter year than the rest of the column.
+  const part = Q("SELECT DISTINCT company, market, period FROM ti_coverage WHERE cohort_year = ?" +
+    " AND status = 'assessed' AND period NOT LIKE '%-12'", [COHORT])
+    .filter((r) => inCohort.has(r.company + '|' + r.market));
+  const said_part = part.map((r) => esc(NAME[r.company] || r.company) + ' in ' +
+    esc(MARKET[r.market] || r.market) + ' (' + esc(r.period) + ')').join(', ');
+  put('missing_note', [said_gaps, part.length ? 'One source stops short of the full year: ' +
+    said_part + '. Its volume and its impact are that many months, not twelve, and are not ' +
+    'scaled up to a year they do not cover.' : ''].filter(Boolean).join(' '));
+  const worst = Object.entries(bym).sort((a, b) => a[1].S1 - b[1].S1)[0];
+  put('slope_note', 'The weakest observed trend is ' + esc(MARKET[worst[0]] || worst[0]) +
+    ' at ' + fmt(worst[1].S1, 1) + ' per cent a year — a fleet that is barely moving, or moving ' +
+    'the wrong way, against a pledge of ' + fmt(worst[1].S2, 1) + ' per cent. Nothing about the ' +
+    'cars explains the difference in that market; the benchmark does.');
+}
+
+/* ---------------------------------------------------------------- slide 5 */
+function slideFive() {
+  const cov = one('SELECT MIN(assessed_share_of_global)*100 lo, MAX(assessed_share_of_global)*100 hi' +
+    " FROM ti_global_coverage WHERE cohort_year = ? AND share_comparable = 'yes'", [COHORT]);
+  put('coverage', 'Between ' + fmt(cov.lo, 0) + ' and ' + fmt(cov.hi, 0) + ' per cent');
+  const life = one(
+    "SELECT MIN(total)/1e6 lo, MAX(total)/1e6 hi FROM (SELECT variant, SUM(ti_tco2e) total" +
+    " FROM ti_sensitivity WHERE dimension = 'lifetime' AND scenario = 'S2' AND cohort_year = ?" +
+    ' GROUP BY variant)', [COHORT]);
+  put('life_lo', signed(life.lo) + ' Mt');
+  put('life_hi', signed(life.hi) + ' Mt');
+}
+
+/* ---------------------------------------------------------------- drawing */
+function bars(sel, rows, unit) {
+  const host = ROOT.querySelector(sel);
+  host.textContent = '';
+  if (!rows.length || window.__d3Failed) return;
+  const rowH = 46, padL = 108, padR = 16, padT = 8, padB = 26;
+  const w = Math.max(360, host.clientWidth || 480);
+  const h = padT + padB + rows.length * rowH;
+  const all = rows.flatMap((r) => r.values.map((v) => v.v));
+  const max = Math.max(1e-9, ...all.map(Math.abs));
+  const x = d3.scaleLinear().domain([-max * 1.12, max * 1.12]).range([padL, w - padR]);
+  const svg = d3.select(host).append('svg').attr('viewBox', [0, 0, w, h]).attr('role', 'img');
+  svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', padT).attr('y2', h - padB)
+    .attr('stroke', 'var(--rule)');
+  rows.forEach((r, i) => {
+    const top = padT + i * rowH;
+    svg.append('text').attr('x', padL - 10).attr('y', top + 17).attr('text-anchor', 'end')
+      .attr('font-size', 13).attr('font-weight', 600).attr('fill', 'var(--ink)').text(r.label);
+    svg.append('text').attr('x', padL - 10).attr('y', top + 33).attr('text-anchor', 'end')
+      .attr('font-size', 11).attr('fill', 'var(--muted)').text(r.sub);
+    r.values.forEach((v, j) => {
+      const y = top + 6 + j * 15;
+      svg.append('rect').attr('x', Math.min(x(0), x(v.v))).attr('y', y)
+        .attr('width', Math.abs(x(v.v) - x(0))).attr('height', 11).attr('rx', 2)
+        .attr('fill', v.key === 's1' ? 'var(--s1)' : 'var(--s2)');
+      svg.append('text').attr('x', v.v >= 0 ? x(v.v) + 6 : x(v.v) - 6).attr('y', y + 9.5)
+        .attr('text-anchor', v.v >= 0 ? 'start' : 'end').attr('font-size', 11.5)
+        .attr('font-variant-numeric', 'tabular-nums').attr('fill', 'var(--muted)')
+        .text(signed(v.v) + ' ' + unit);
+    });
+  });
+  svg.append('text').attr('x', x(0)).attr('y', h - 8).attr('text-anchor', 'middle')
+    .attr('font-size', 11).attr('fill', 'var(--muted)').text('0');
+}
+
+function table(sel, cols, rows) {
+  const head = '<tr>' + cols.map((c) => '<th>' + esc(c.h) + '</th>').join('') + '</tr>';
+  const body = rows.map((r) => '<tr>' + cols.map((c) => {
+    const v = r[c.k];
+    const text = c.f ? c.f(v) : esc(v == null ? '—' : v);
+    return '<td class="' + (c.c && typeof v === 'number' ? cls(v) : '') + '">' + text + '</td>';
+  }).join('') + '</tr>').join('');
+  ROOT.querySelector(sel).innerHTML = '<table><thead>' + head + '</thead><tbody>' + body + '</tbody></table>';
+}
+
+/* ---------------------------------------------------------------- navigation */
+function navigation() {
+  const sections = [...ROOT.querySelectorAll('main section')];
+  const dots = $('dots');
+  sections.forEach((s, i) => {
+    const b = document.createElement('button');
+    b.className = 'dot' + (i === 0 ? ' on' : '');
+    b.title = 'Slide ' + (i + 1);
+    b.addEventListener('click', () => s.scrollIntoView());
+    dots.appendChild(b);
+  });
+  const deck = $('deck');
+  const mark = () => {
+    const i = Math.round(deck.scrollTop / deck.clientHeight);
+    [...dots.children].forEach((d, j) => d.classList.toggle('on', j === i));
+  };
+  deck.addEventListener('scroll', mark, {passive: true});
+  document.addEventListener('keydown', (e) => {
+    if (ROOT.classList.contains('hidden')) return;
+    const i = Math.round(deck.scrollTop / deck.clientHeight);
+    if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') {
+      sections[Math.min(i + 1, sections.length - 1)].scrollIntoView(); e.preventDefault();
+    } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+      sections[Math.max(i - 1, 0)].scrollIntoView(); e.preventDefault();
+    }
+  });
+}
+
+/* ---------------------------------------------------------------- mount
+   The shell hands over the database it already opened; the deck computes its five slides once. */
+window.__deck = {
+  mounted: false,
+  mount: function (db) {
+    DB = db;
+    slideOne(); slideTwo(); slideThree(); slideFour(); slideFive();
+    if (!this.wired) { navigation(); this.wired = true; }
+    window.addEventListener('resize', () => { if (!ROOT.classList.contains('hidden')) { slideTwo(); slideThree(); } });
+    this.mounted = true;
+  },
+  route: function () {},
+  reset: function () { this.mounted = false; }
+};
 })();
 </script>
 </body>
